@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Baloxavir acid Cmax simulation differs from reported values, and V2/F is missing from the extracted parameters.
+> The Cmax simulation exceeded the paper value by a ratio of 68.7535, and the V2/F parameter was missing from coverage.
 
 <div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Kim2022_reference" status="needs_review" stale="false" population="healthy Korean and Japanese adults" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
@@ -66,9 +66,9 @@ Kim Y, Lee S, Kim Y, Jang IJ, Lee S. Pharmacokinetics and safety of a novel infl
 
 ### Reviewer guidance
 
-**Baloxavir acid Cmax simulation differs from reported values, and V2/F is missing from the extracted parameters.**
+**The Cmax simulation exceeded the paper value by a ratio of 68.7535, and the V2/F parameter was missing from coverage.**
 
-The simulated peak concentration deviated from the paper's expected value by a ratio of 68.7535, indicating a failure to match observed exposure. The record is incomplete because the volume of distribution for the first peripheral compartment, V2/F, was not extracted or defaulted. Additionally, the apparent clearance and bioavailability values disagree with the second reader's assessment of the source data. Extracted — baloxavir acid: CLm/F 4.5 L/h, Q/F 9.8 L/h, Q2/F 2.86 L/h, V1/F 9 L, V2/F 4.7 L, V3/F 228 L, Fab 9.6, kabs 11.3 1/h, … (+2).
+The model failed the peak concentration check with a ratio of 68.7535 between the simulated and reported values. The parameter coverage check indicated that V2/F was neither emitted nor included in the defaulted list. The record was held because the defined covariate effects were not simulated during the verification process. Extracted — baloxavir acid: CLm/F 4.5 L/h, Q/F 9.8 L/h, Q2/F 2.86 L/h, V1/F 9 L, V2/F 4.7 L, V3/F 228 L, Fab 9.6, kabs 11.3 1/h, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[alag1].value`: this record has 12.7, the second reading 0.175; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -196,6 +196,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped |  | 0.001911 |  | non-numeric value |
 | T1_cmax | reference | skipped |  | 0.001911 |  | non-numeric value |
 | T1_cmax | reference | skipped |  | 0.001911 |  | non-numeric value |

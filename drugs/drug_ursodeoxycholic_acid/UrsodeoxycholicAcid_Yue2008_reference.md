@@ -40,7 +40,7 @@ Yue PF, Yuan HL, Xie H, Xiao XH, Yang M, Liao MX et al. Preparation, characteriz
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Yue PF, Yuan HL, Xie H, Xiao XH, Yang M, Liao MX et al. Preparation, characteriz
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ursodeoxycholic acid, the second reading UDCA-PLC; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ursodeoxycholic acid, the second reading UDCA-PLC; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -92,17 +92,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc]` | 4.736 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c]` | 0.0576 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t]` | 1.9144 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | ursodeoxycholic acid | UDCA-PLC | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | ursodeoxycholic acid | ursodeoxycholic_acid | mismatch |
+| `gpt-oss-120b` | `parameters[auc]` | 4.736 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` | 0.0576 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t]` | 1.9144 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ursodeoxycholic acid | UDCA-PLC | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ursodeoxycholic acid | ursodeoxycholic_acid | mismatch |
 
 </details>
 

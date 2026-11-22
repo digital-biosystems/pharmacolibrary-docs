@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01L&quot;,&quot;href&quot;:&quot;atc/S01L.md&quot;},{&quot;label&quot;:&quot;ranibizumab&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/&quot;},{&quot;label&quot;:&quot;Crawshaw_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranibizumab_Crass2025_reference&quot;,&quot;label&quot;:&quot;Crass_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ranibizumab_Diack2024v2_reference&quot;,&quot;label&quot;:&quot;Diack_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Diack2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ranibizumab_Fidler2020_estimated_value_rse_interval&quot;,&quot;label&quot;:&quot;Fidler_2020_estimated_value_rse_interval&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Fidler2020_estimated_value_rse_interval.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Diack_2021_BCVA&quot;,&quot;label&quot;:&quot;Diack_2021 \u00b7 BCVA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/pd_Diack_2021_BCVA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranibizumab_Fidler2020_estimated_value_rse_interval&quot;,&quot;label&quot;:&quot;Fidler_2020_estimated_value_rse_interval&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Fidler2020_estimated_value_rse_interval.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ranibizumab_Crass2025_reference&quot;,&quot;label&quot;:&quot;Crass_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ranibizumab_Diack2024v2_reference&quot;,&quot;label&quot;:&quot;Diack_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Diack2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Diack_2021_BCVA&quot;,&quot;label&quot;:&quot;Diack_2021 \u00b7 BCVA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/pd_Diack_2021_BCVA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> The 1-day half-life calculated from the 0.102 day-1 elimination rate constant is physiologically implausible for ranibizumab in macaques.
+> Ranibizumab was rejected because its reported total clearance of 0.450 mL/day is outside the physiological window, consistent with a unit/scale extraction error.
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Crawshaw2025_reference" status="rejected" stale="false" population="cynomolgus macaques" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Crawshaw JR, Gaffney EA, Gertz M, Maini PK, Caruso A. Modeling the Ocular Pharma
 
 ### Reviewer guidance
 
-**The 1-day half-life calculated from the 0.102 day-1 elimination rate constant is physiologically implausible for ranibizumab in macaques.**
+**Ranibizumab was rejected because its reported total clearance of 0.450 mL/day is outside the physiological window, consistent with a unit/scale extraction error.**
 
-The extraction records a clearance of 0.450 mL/day and a volume of distribution of 0.502 mL, both magnitudes far below physiological limits for this molecule. A second reader also reported conflicting parameter values, such as a clearance of 1.007, indicating instability in the extraction process. Extracted — ranibizumab: kel 0.102 1/day, koff 1.07, KD 0.008, CL 0.45 mL/day, V 0.502 mL, kabs 0.0528 days−1.
+The record lists ranibizumab total clearance as 0.450 mL/day and volume of distribution as 0.502 mL; the finding describes the clearance/volume magnitude as physiologically implausible. A second reader reported clearance as 1.007, so the recorded clearance value is disputed. Extracted — ranibizumab: kel 0.102 1/day, koff 1.07, KD 0.008, CL 0.45 mL/day, V 0.502 mL, kabs 0.0528 days−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading ranibizumab → vr (interconversion); vr → rvr (interconversion); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

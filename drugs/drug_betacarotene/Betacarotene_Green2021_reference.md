@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;betacarotene&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/&quot;},{&quot;label&quot;:&quot;Green_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Retinol is an unreachable metabolite because its formation from retinyl acetate lacks a defined rate constant.
+> The record was rejected with retinol flagged as unreachable in the betacarotene model, which reports betacarotene absolute bioavailability (Fab) of 9.5%.
 
 <div class="pk-model-meta" hidden drug="betacarotene" model-id="Betacarotene_Green2021_reference" status="rejected" stale="false" population="healthy older adults" measured-compound="betacarotene" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -17,7 +17,7 @@ Green MH, Ford JL, Green JB. A Compartmental Model Describing the Kinetics of β
 
 ## Population and dosing
 
-**Population:** healthy older adults · condition healthy · age group elderly · n = , 5.
+**Population:** healthy older adults · condition healthy · age group elderly.
 
 ## Model
 
@@ -39,7 +39,7 @@ Green MH, Ford JL, Green JB. A Compartmental Model Describing the Kinetics of β
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Green MH, Ford JL, Green JB. A Compartmental Model Describing the Kinetics of β
 
 ### Reviewer guidance
 
-**Retinol is an unreachable metabolite because its formation from retinyl acetate lacks a defined rate constant.**
+**The record was rejected with retinol flagged as unreachable in the betacarotene model, which reports betacarotene absolute bioavailability (Fab) of 9.5%.**
 
-The model structure defines a hydrolysis link from retinyl acetate to retinol, but this link has no assigned parameter. This structural flaw makes retinol an orphan compartment, as there is no valid path from the betacarotene dose to this metabolite. Additionally, the record relies on abstract-only summary statistics rather than a fitted model. Extracted — betacarotene: Fab 9.5 %, CL 7.67 L/h/kg, V 8.83 L/kg, kabs 1.3 h-1, tlag 0.39 h.
+Retinol is listed as a betacarotene metabolite with a metabolism link, but the record also has a retinyl acetate hydrolysis link to retinol, and retinol is flagged as unreachable or orphaned. The record was built from the abstract alone, so the reported 9.5% bioavailability is a summary statistic standing in for a fitted-model estimate; no value for the metabolism rate constant Kfm is listed. The second reader disagreed about the compound and metabolite link interpretations and whether 9.5% represented mean absorption or bioavailability, and identified bioefficacy as 7.3. Extracted — betacarotene: Fab 9.5 %, CL 7.67 L/h/kg, V 8.83 L/kg, kabs 1.3 h-1, tlag 0.39 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has betacarotene, the second reading β-carotene; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has betacarotene, the second reading β-carotene; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -100,18 +100,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['betacarotene', 'retinol', 'metabolism'], ['retinyl acetate', 'retinol', 'hydrolysis']] | [['β-carotene', 'β-carotene-derived retinol', 'metabolism'], ['retinyl acetate', 'retinyl acetate-derived retinol', 'hydrolysis'], ['β-carotene-derived retinol', 'retinol', 'interconversion']] | mismatch |
-| `gpt-oss:120b` | `parameters[bioefficacy]` |  | 7.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean (range) β-carotene absorption]` | 9.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[β-carotene absorption]` |  | 9.5 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | betacarotene | β-carotene | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | betacarotene | β-carotene | mismatch |
+| `gpt-oss-120b` | `model.links` | [['betacarotene', 'retinol', 'metabolism'], ['retinyl acetate', 'retinol', 'hydrolysis']] | [['β-carotene', 'β-carotene-derived retinol', 'metabolism'], ['retinyl acetate', 'retinyl acetate-derived retinol', 'hydrolysis'], ['β-carotene-derived retinol', 'retinol', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[bioefficacy]` |  | 7.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean (range) β-carotene absorption]` | 9.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β-carotene absorption]` |  | 9.5 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | betacarotene | β-carotene | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | betacarotene | β-carotene | mismatch |
 
 </details>
 

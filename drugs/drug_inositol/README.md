@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;inositol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2016_reference&quot;,&quot;label&quot;:&quot;Phelps_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Taghizadeh_2022_IP1&quot;,&quot;label&quot;:&quot;Taghizadeh_2022 \u00b7 IP1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/pd_Taghizadeh_2022_IP1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2016_reference&quot;,&quot;label&quot;:&quot;Phelps_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Taghizadeh_2022_IP1&quot;,&quot;label&quot;:&quot;Taghizadeh_2022 \u00b7 IP1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/pd_Taghizadeh_2022_IP1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # inositol
 
@@ -26,13 +26,13 @@ Inositol is a vitamin B compound classified as a sugar alcohol. It is given oral
 
 ## Start here
 
-> **Phelps_2016_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> preterm infants. [Run it in the simulator](drugs/drug_inositol/Inositol_Phelps2016_reference.md?tab=Simulation) · [record](drugs/drug_inositol/Inositol_Phelps2016_reference.md)
+> **Phelps_2016_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> preterm infants. [Run it in the simulator](drugs/drug_inositol/Inositol_Phelps2016_reference.md?tab=Simulation) · [record](drugs/drug_inositol/Inositol_Phelps2016_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Phelps_2016 · CL ·/kg</text><circle cx="412.1" cy="30.0" r="4" fill="#2e7d32"><title>Phelps_2016 · CL ·/kg: 4.312 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Phelps_2013 · CL ·/kg</text><circle cx="426.9" cy="46.0" r="4" fill="#ef6c00"><title>Phelps_2013 · CL ·/kg: 4.753 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Phelps_2013 · V ·/kg</text><circle cx="383.9" cy="30.0" r="4" fill="#ef6c00"><title>Phelps_2013 · V ·/kg: 35.81 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Phelps_2013 · V ·/kg</text><circle cx="383.9" cy="46.0" r="4" fill="#ef6c00"><title>Phelps_2013 · V ·/kg: 35.81 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Phelps_2016 · V ·/kg</text><circle cx="397.9" cy="62.0" r="4" fill="#2e7d32"><title>Phelps_2016 · V ·/kg: 39.27 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Phelps_2016 · CL ·/kg</text><circle cx="412.1" cy="30.0" r="4" fill="#ef6c00"><title>Phelps_2016 · CL ·/kg: 4.312 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Phelps_2013 · CL ·/kg</text><circle cx="426.9" cy="46.0" r="4" fill="#ef6c00"><title>Phelps_2013 · CL ·/kg: 4.753 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Phelps_2013 · V ·/kg</text><circle cx="383.9" cy="30.0" r="4" fill="#ef6c00"><title>Phelps_2013 · V ·/kg: 35.81 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Phelps_2013 · V ·/kg</text><circle cx="383.9" cy="46.0" r="4" fill="#ef6c00"><title>Phelps_2013 · V ·/kg: 35.81 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Phelps_2016 · V ·/kg</text><circle cx="397.9" cy="62.0" r="4" fill="#ef6c00"><title>Phelps_2016 · V ·/kg: 39.27 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -40,27 +40,16 @@ Inositol is a vitamin B compound classified as a sugar alcohol. It is given oral
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Phelps_2016_reference](drugs/drug_inositol/Inositol_Phelps2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Phelps DL et al., Safety and pharmacokinetics of multiple…, Pediatric research (2016) | [10.1038/pr.2016.97](https://doi.org/10.1038/pr.2016.97) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Phelps_2013_covariate_estimate_standard_error](drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md) | — | 1-compartment (no model) | 1 | Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013) | [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q367 — no SI value to build from</sub> | [↳ estimate](drugs/drug_inositol/Inositol_Phelps2013_estimate.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Antonowski_2022_reference](drugs/drug_inositol/Inositol_Antonowski2022_reference.md) | — | 1-compartment (no model) | 7 | Antonowski T et al., Pharmacokinetics of, International journal of mo… (2022) | [10.3390/ijms231911246](https://doi.org/10.3390/ijms231911246) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Phelps_2016_reference](drugs/drug_inositol/Inositol_Phelps2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Phelps DL et al., Safety and pharmacokinetics of multiple…, Pediatric research (2016) | [10.1038/pr.2016.97](https://doi.org/10.1038/pr.2016.97) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Antonowski_2022_reference](drugs/drug_inositol/Inositol_Antonowski2022_reference.md) | — | 1-compartment (no model) | 7 | Antonowski T et al., Pharmacokinetics of, International journal of mo… (2022) | [10.3390/ijms231911246](https://doi.org/10.3390/ijms231911246) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Taghizadeh_2022_IP1](drugs/drug_inositol/pd_Taghizadeh_2022_IP1.md) | IP1 ← inositol phosphate · direct Emax (saturable) effect | ▶ model + simulator | Taghizadeh MS et al., Discovery of the cyclotide caripe 11 as…, Scientific reports (2022) | [10.1038/s41598-022-13142-z](https://doi.org/10.1038/s41598-022-13142-z) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=inositol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: APP (inhibitor), SLC5A3 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -74,13 +63,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:36 | 2:46 | 3/1/0 | 1/0/0 | 0/0/0 | 220,332/10,421 | einfracz / qwen3.8-27b | 9 | 1/8 | 9/0 | 1 |
+| 2026-10-07 16:36 | 2:46 | 3/1/0 | 1/0/0 | 0/0/0 | 220,332/10,421 | einfracz / qwen3.8-27b | 9 | 1/8 | 9/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1137 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

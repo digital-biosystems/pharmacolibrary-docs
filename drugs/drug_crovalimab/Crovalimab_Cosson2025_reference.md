@@ -16,7 +16,7 @@ Cosson V, Fu R, Kulasekararaj A, Nishimura JI, Panse J, Röth A et al. Pharmacok
 
 ## Population and dosing
 
-**Population:** patients with paroxysmal nocturnal haemoglobinuria · condition paroxysmal nocturnal haemoglobinuria · age group adult · n = +430.
+**Population:** patients with paroxysmal nocturnal haemoglobinuria · condition paroxysmal nocturnal haemoglobinuria · age group adult.
 
 ## Model
 

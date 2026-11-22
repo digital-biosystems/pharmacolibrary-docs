@@ -4,11 +4,11 @@
 
 # lidocaine — `Lidocaine_Kim2021_lha_0_3_sc`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 14:38 UTC (Rejected), but the paper was screened again on 2026-10-06 03:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because the record lacks distribution volume and clearance, and the metabolite compartments are unreachable from the dose.
+> Monoethylglycylxylidide is unreachable because the model lacks a dose input for lidocaine.
 
-<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_lha_0_3_sc" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_lha_0_3_sc" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Metabolite Pharmacokinetics in Hyaluronic Acid Injection. Pharmaceutics 13(2) (2021).
@@ -41,7 +41,7 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**Rejected because the record lacks distribution volume and clearance, and the metabolite compartments are unreachable from the dose.**
+**Monoethylglycylxylidide is unreachable because the model lacks a dose input for lidocaine.**
 
-The extracted parameters include terminal half-life, Cmax, Tmax, and AUC, but omit the distribution volume and elimination clearance needed for a compartmental model. The metabolites monoethylglycylxylidide and glycylxylidide are listed with no compartment assignment, rendering the metabolic pathway unreachable from the parent drug. One reported parameter unit could not be converted to SI units, preventing a standard value from being calculated. Extracted — lidocaine: t1/2z 0.98 h, Cmax 80 ng/mL, tmax 0.81 h, AUC∞ 197 h × ng/mL.
+The metabolism links connect lidocaine to monoethylglycylxylidide, but lidocaine has no dose compartment. Consequently, the metabolite is an orphan with no path from the administration site. The second reader accepted these links, but the structural flaw caused the rejection. Extracted — lidocaine: t1/2z 0.98 h, Cmax 80 ng/mL, tmax 0.81 h, AUC∞ 197 h × ng/mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism). That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism). That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -126,13 +126,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['megx', 'gx', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['megx', 'gx', 'metabolism']] | mismatch |
 
 </details>
 

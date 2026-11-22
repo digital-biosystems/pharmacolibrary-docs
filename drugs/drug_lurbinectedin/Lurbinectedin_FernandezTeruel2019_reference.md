@@ -17,7 +17,7 @@ Fernandez-Teruel C, Gonzalez I, Trocóniz IF, Lubomirov R, Soto A, Fudio S. Popu
 
 ## Population and dosing
 
-**Population:** patients with solid and hematologic malignancies · condition cancer · age group adult · n = &gt;&lt;443.
+**Population:** patients with solid and hematologic malignancies · condition cancer · age group adult.
 
 ## Model
 

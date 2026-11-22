@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir alafenamide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # tenofovir alafenamide
 
@@ -30,7 +29,7 @@ The medication is taken by mouth in tablet form and is well absorbed orally. It 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Beliveau_2026_estimate](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_estimate.md) | — | general linear (no model) | 5 | Beliveau M et al., Population pharmacokinetics of tenofovi…, Scientific reports (2026) | [10.1038/s41598-026-48746-2](https://doi.org/10.1038/s41598-026-48746-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Beliveau_2026_estimate](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_estimate.md) | — | general linear (no model) | 5 | Beliveau M et al., Population pharmacokinetics of tenofovi…, Scientific reports (2026) | [10.1038/s41598-026-48746-2](https://doi.org/10.1038/s41598-026-48746-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ group_1one_taf_implant](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_group_1one_taf_implant.md) | — | general linear (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ group_2_aone_taf_implant](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_group_2_aone_taf_implant.md) | — | general linear (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ group_2_ctwo_taf_implants](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_group_2_ctwo_taf_implants.md) | — | general linear (no model) | 0 |  |  |
@@ -42,28 +41,7 @@ The medication is taken by mouth in tablet form and is well absorbed orally. It 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vegas_2025_CD4](drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_CD4.md) | CD4+ T cell count ← tenofovir alafenamide/tenofovir (TAF/TFV) · direct sigmoid Emax (Hill) effect | — | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Vegas_2025_HIV_RNA](drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA (viral load) ← tenofovir alafenamide/tenofovir (TAF/TFV) · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tenofovir_alafenamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | liver | `CES1` substrate, `CYP3A4` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `ABCC4` substrate, `SLC22A6` substrate, `SLC22A8` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCC4` substrate, `ABCG2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AK1 (substrate), AK2 (substrate), CTSA (substrate), NME1 (substrate), NME2 (substrate).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Vegas_2025_HIV_RNA](drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA (viral load) ← tenofovir alafenamide/tenofovir (TAF/TFV) · direct sigmoid Emax (Hill) effect | — | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -77,13 +55,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:31 | 4:24 | 0/6/0 | 1/0/0 | 0/0/0 | 189,623/21,453 | ollama / glm-5.3-flash | 8 | 2/6 | 8/0 | 0 |
+| 2026-10-07 16:31 | 4:24 | 0/6/0 | 2/0/0 | 0/0/0 | 189,623/21,453 | ollama / glm-5.3-flash | 8 | 2/6 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 54 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 6  ·  extracted 0  ·  needs review 0  ·  rejected 6  ·  stale 1
+- **records:** 6  ·  extracted 0  ·  needs review 0  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

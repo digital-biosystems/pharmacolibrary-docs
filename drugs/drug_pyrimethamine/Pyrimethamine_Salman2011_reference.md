@@ -4,11 +4,11 @@
 
 # pyrimethamine — `Pyrimethamine_Salman2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 08:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The pyrimethamine volume of distribution of 1330.0 liters was rejected for a dimension mismatch on a structural parameter.
+> The record is rejected because the area under the concentration-time curve for pyrimethamine (2844) and sulfadoxine (1460) uses incorrect mass-time-volume dimensions.
 
-<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Salman2011_reference" status="rejected" stale="true" population="Papua New Guinean infants aged 2 to 13 months" measured-compound="pyrimethamine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Salman2011_reference" status="rejected" stale="false" population="Papua New Guinean infants aged 2 to 13 months" measured-compound="pyrimethamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Salman S, Griffin S, Kose K, Pitus N, Winmai J, Moore B et al. Pharmacokinetic properties of conventional and double-dose sulfadoxine-pyrimethamine given as intermittent preventive treatment in infancy. Antimicrobial agents and chemotherapy 55(4):1693–1700 (2011).
@@ -39,7 +39,7 @@ Salman S, Griffin S, Kose K, Pitus N, Winmai J, Moore B et al. Pharmacokinetic p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Salman S, Griffin S, Kose K, Pitus N, Winmai J, Moore B et al. Pharmacokinetic p
 
 ### Reviewer guidance
 
-**The pyrimethamine volume of distribution of 1330.0 liters was rejected for a dimension mismatch on a structural parameter.**
+**The record is rejected because the area under the concentration-time curve for pyrimethamine (2844) and sulfadoxine (1460) uses incorrect mass-time-volume dimensions.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. A check identified a dimension mismatch on this structural parameter, leading to rejection. The second reader could not locate the volume of distribution value in the source text, unlike the initial extraction which recorded it as 1330.0 liters. Extracted — pyrimethamine: AUC∞ 2.84e+03 μg/day/liter, V 1.33e+03 liters; sulfadoxine: AUC∞ 1.46e+03 mg/day/liter, Frel 32 %.
+The extracted parameters for the area under the curve for both pyrimethamine and sulfadoxine have units that dimensionally conflict with the parameter definition. Additionally, the record relies on abstract-only summary statistics, such as the 32% reduction in sulfadoxine relative bioavailability, rather than fitted model estimates. Extracted — pyrimethamine: AUC∞ 2.84e+03 μg/day/liter, V 1.33e+03 liters; sulfadoxine: AUC∞ 1.46e+03 mg/day/liter, Frel 32 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc(0-inf) double dose pyr: this record has none, the second reading 4915; it also differs on 6 more fields. That field does not shape the model.
 

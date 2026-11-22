@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;immunoglobulins, normal human, for extravascular adm.&quot;,&quot;href&quot;:&quot;drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/&quot;},{&quot;label&quot;:&quot;Zhang_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe&quot;,&quot;label&quot;:&quot;Zhang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe&quot;,&quot;label&quot;:&quot;Zhang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # immunoglobulins, normal human, for extravascular adm. — `ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="immunoglobulins, normal human, for extravascular adm." model-id="ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe" status="simulated" stale="false" population="patients with primary immunodeficiency" measured-compound="serum IgG" parameterization="mechanistic" topology="2C"></div>
+> The record was held back because a second reader could not verify the clearance and volume parameters from the abstract-only source.
+
+<div class="pk-model-meta" hidden drug="immunoglobulins, normal human, for extravascular adm." model-id="ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe" status="needs_review" stale="false" population="patients with primary immunodeficiency" measured-compound="serum IgG" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Zhang Y, Baheti G, Chapdelaine H, Hofmann J, Rojavin M, Tortorici M et al. Population pharmacokinetic analysis of weekly and biweekly IgPro20 (Hizentra®) dosing in patients with primary immunodeficiency. International immunopharmacology 81:106005 (2020).
@@ -15,7 +17,7 @@ Zhang Y, Baheti G, Chapdelaine H, Hofmann J, Rojavin M, Tortorici M et al. Popul
 
 ## Population and dosing
 
-**Population:** patients with primary immunodeficiency · n = , "condition": "primary immunodeficiency", "species": "human", "compounds": ["IgPro20 (Hizentra) | parent | yes | yes | yes"], "links": "none.
+**Population:** patients with primary immunodeficiency.
 
 **Dosed compound ≠ measured compound:** dosed IgPro20 (Hizentra), measured serum IgG.
 
@@ -29,6 +31,8 @@ Zhang Y, Baheti G, Chapdelaine H, Hofmann J, Rojavin M, Tortorici M et al. Popul
 <figure class="pk-models-diagram"><img src="drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe.svg" alt="ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance (% inter-individual variability) | CL | 0.138 | L/day |
@@ -38,7 +42,7 @@ Zhang Y, Baheti G, Chapdelaine H, Hofmann J, Rojavin M, Tortorici M et al. Popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ Zhang Y, Baheti G, Chapdelaine H, Hofmann J, Rojavin M, Tortorici M et al. Popul
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held back because a second reader could not verify the clearance and volume parameters from the abstract-only source.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is immunoglobulins normal human for extravascular adm's own; they describe serum IgG.
+The model for serum IgG in primary immunodeficiency patients was built from summary statistics reported in the abstract rather than fitted individual data. A second reader disagreed on the dose compound, primary analyte, and all four pharmacokinetic parameters, finding them absent or unverified. This lack of agreement resulted in a cross-check failure with an agreement ratio of 0.167. Extracted — serum IgG: CL 0.138 L/day, V1 3.95 L, Q 0.26 L/day, V2 4.44 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has IgPro20 (Hizentra), the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -133,14 +137,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=serum IgG) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=serum IgG) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

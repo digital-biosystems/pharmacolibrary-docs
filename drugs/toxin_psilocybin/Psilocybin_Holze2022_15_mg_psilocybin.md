@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Psilocybin&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/&quot;},{&quot;label&quot;:&quot;Holze_2022 \u00b7 15_mg_psilocybin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Psilocybin_Becker2022_reference&quot;,&quot;label&quot;:&quot;Becker_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Becker2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Becker2025_reference&quot;,&quot;label&quot;:&quot;Becker_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Becker2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Brown2017_reference&quot;,&quot;label&quot;:&quot;Brown_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Brown2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Holze2022_15_mg_psilocybin&quot;,&quot;label&quot;:&quot;Holze_2022_15_mg_psilocybin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Holze2022_15_mg_psilocybin.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Psilocybin_Holze2022_30_mg_psilocybin&quot;,&quot;label&quot;:&quot;Holze_2022_30_mg_psilocybin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Holze2022_30_mg_psilocybin.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_4_hiaa&quot;,&quot;label&quot;:&quot;Ley_2023_4_hiaa&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_4_hiaa.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_psilocin&quot;,&quot;label&quot;:&quot;Ley_2023_psilocin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_psilocin.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_psilocin_glucuronide&quot;,&quot;label&quot;:&quot;Ley_2023_psilocin_glucuronide&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_psilocin_glucuronide.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_MadridGambin2023_reference&quot;,&quot;label&quot;:&quot;Madrid-Gambin_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_MadridGambin2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Meshkat2025_reference&quot;,&quot;label&quot;:&quot;Meshkat_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Meshkat2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Otto2025_reference&quot;,&quot;label&quot;:&quot;Otto_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Otto2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Psilocybin_Becker2022_reference&quot;,&quot;label&quot;:&quot;Becker_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Becker2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Brown2017_reference&quot;,&quot;label&quot;:&quot;Brown_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Brown2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_MadridGambin2023_reference&quot;,&quot;label&quot;:&quot;Madrid-Gambin_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_MadridGambin2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Becker2025_reference&quot;,&quot;label&quot;:&quot;Becker_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Becker2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Holze2022_15_mg_psilocybin&quot;,&quot;label&quot;:&quot;Holze_2022_15_mg_psilocybin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Holze2022_15_mg_psilocybin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Psilocybin_Holze2022_30_mg_psilocybin&quot;,&quot;label&quot;:&quot;Holze_2022_30_mg_psilocybin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Holze2022_30_mg_psilocybin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_4_hiaa&quot;,&quot;label&quot;:&quot;Ley_2023_4_hiaa&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_4_hiaa.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_psilocin&quot;,&quot;label&quot;:&quot;Ley_2023_psilocin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_psilocin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_psilocin_glucuronide&quot;,&quot;label&quot;:&quot;Ley_2023_psilocin_glucuronide&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_psilocin_glucuronide.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Meshkat2025_reference&quot;,&quot;label&quot;:&quot;Meshkat_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Meshkat2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Otto2025_reference&quot;,&quot;label&quot;:&quot;Otto_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Otto2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Psilocybin — `Psilocybin_Holze2022_15_mg_psilocybin`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 1.9e-06, model 0.997); the model does not reproduce the paper's time of the peak (tmax) (paper 1.6, model 0.0481) (+1 more).
 
-<div class="pk-model-meta" hidden drug="Psilocybin" model-id="Psilocybin_Holze2022_15_mg_psilocybin" status="extracted" stale="false" population="healthy subjects" measured-compound="Psilocybin" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Psilocybin" model-id="Psilocybin_Holze2022_15_mg_psilocybin" status="needs_review" stale="false" population="healthy subjects" measured-compound="Psilocybin" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Holze F, Ley L, Müller F, Becker AM, Straumann I, Vizeli P et al. Direct comparison of the acute effects of lysergic acid diethylamide and psilocybin in a double-blind placebo-controlled study in healthy subjects. Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology 47(6):1180–1187 (2022).
@@ -29,6 +29,8 @@ Holze F, Ley L, Müller F, Becker AM, Straumann I, Vizeli P et al. Direct compar
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Time to maximal effect (h) | tmax | 2.1 | h |
@@ -39,7 +41,7 @@ Holze F, Ley L, Müller F, Becker AM, Straumann I, Vizeli P et al. Direct compar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ Holze F, Ley L, Müller F, Becker AM, Straumann I, Vizeli P et al. Direct compar
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 1.9e-06, model 0.997); the model does not reproduce the paper's time of the peak (tmax) (paper 1.6, model 0.0481) (+1 more).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — psilocybin: tmax 2.1 h, t1/2z 4.3 h, CL 4.7 L/hour, V 4 L/kg, tlag 0 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -107,6 +115,26 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 4.7 L/h | ['Hampsey_2026:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 280 L | ['Oster_2023:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Psilocybin) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 1.9e-06 | 0.9975 | 5.25e+05 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.3e-05 | 0.9975 | 7.673e+04 | ng/ml→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | pass | 4.3 | 4.3 | 1 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.4 | 4.3 | 1.792 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 4 | 4.3 | 1.075 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.5 | 4.3 | 1.72 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2 | 4.3 | 2.15 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.6 | 0.0481 | 0.0301 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.3 | 0.0481 | 0.0209 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

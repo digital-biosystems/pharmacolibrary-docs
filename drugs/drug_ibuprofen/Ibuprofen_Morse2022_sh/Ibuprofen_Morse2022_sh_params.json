@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ibuprofen_Morse2022_sh",
+ "molar_masses": {
+  "central.C": 0.2062808
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1000.0
+ ],
+ "parameters": {
+  "Cl": 8.000000000000001e-06,
+  "F": 0.9,
+  "MM": 0.2062808,
+  "Tlag": 534.0,
+  "VdPerKg": 0.00031,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "k12": 0.0003251408090117767,
+  "k21": 0.0004465541490857946,
+  "ka": 0.0001822777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7591.479846792661
+ },
+ "reference_peaks": {
+  "central.C": 0.005947029233578644
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

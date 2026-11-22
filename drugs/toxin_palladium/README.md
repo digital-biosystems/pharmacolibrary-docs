@@ -30,7 +30,7 @@ Palladium is a rare and lustrous silvery-white metal. Palladium has the lowest m
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhao_2022_palladium](drugs/toxin_palladium/pd_Zhao_2022_palladium.md) | palladium ← palladium · model not identified | — | Zhao R et al., Recent Advances in the Development of N…, Bioinorganic chemistry and… (2022) | [10.1155/2022/2444516](https://doi.org/10.1155/2022/2444516) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.95).">in vitro</span> | [Zhao_2022_palladium](drugs/toxin_palladium/pd_Zhao_2022_palladium.md) | palladium ← palladium · model not identified | — | Zhao R et al., Recent Advances in the Development of N…, Bioinorganic chemistry and… (2022) | [10.1155/2022/2444516](https://doi.org/10.1155/2022/2444516) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

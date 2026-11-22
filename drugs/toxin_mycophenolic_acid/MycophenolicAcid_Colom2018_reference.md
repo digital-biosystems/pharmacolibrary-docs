@@ -163,30 +163,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_mycophenolic_acid/MycophenolicAcid_Colom2018_reference/MycophenolicAcid_Colom2018_reference_matlab.zip" download>MycophenolicAcid_Colom2018_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_mycophenolic_acid/MycophenolicAcid_Colom2018_reference/MycophenolicAcid_Colom2018_reference_sbml.zip" download>MycophenolicAcid_Colom2018_reference_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_mycophenolic_acid/MycophenolicAcid_Colom2018_reference/MycophenolicAcid_Colom2018_reference_cellml.zip" download>MycophenolicAcid_Colom2018_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Colom H, Andreu F, van Gelder T, Hesselink DA, de Winter BCM, Bestard O et al. Prediction of Free from Total Mycophenolic Acid Concentrations in Stable Renal Transplant Patients: A Population-Based Approach. Clinical pharmacokinetics 57(7):877-893 (2018). [doi:10.1007/s40262-017-0603-8](https://doi.org/10.1007/s40262-017-0603-8)
-
-**This record:** Pharmacolibrary, model `MycophenolicAcid_Colom2018_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_mycophenolic_acid/MycophenolicAcid_Colom2018_reference>
-
-```bibtex
-@misc{pharmacolibrary_MycophenolicAcidColom2018reference,
-  title  = {{Pharmacolibrary model MycophenolicAcid_Colom2018_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_mycophenolic_acid/MycophenolicAcid_Colom2018_reference},
-  note   = {Parameters from doi:10.1007/s40262-017-0603-8},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

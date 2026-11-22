@@ -4,11 +4,11 @@
 
 # orciprenaline — `Orciprenaline_Dengler1976_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-07 14:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the 10 percent renal clearance parameter is dimensionally mismatched with the 1400 ml/min total clearance.
+> Orciprenaline’s renal clearance value of 10% was rejected for a dimensional mismatch with clearance units of volume per time.
 
-<div class="pk-model-meta" hidden drug="orciprenaline" model-id="Orciprenaline_Dengler1976_reference" status="rejected" stale="true" population="healthy adults (man) plus rat, rabbit, cat" measured-compound="orciprenaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="orciprenaline" model-id="Orciprenaline_Dengler1976_reference" status="rejected" stale="false" population="healthy adults (man) plus rat, rabbit, cat" measured-compound="orciprenaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dengler HG, Hengstmann JH. Metabolism and pharmacokinetics of orciprenaline in various animal species and man. Archives internationales de pharmacodynamie et de therapie 223(1):71–87 (1976).
@@ -38,7 +38,7 @@ Dengler HG, Hengstmann JH. Metabolism and pharmacokinetics of orciprenaline in v
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Dengler HG, Hengstmann JH. Metabolism and pharmacokinetics of orciprenaline in v
 
 ### Reviewer guidance
 
-**The record was rejected because the 10 percent renal clearance parameter is dimensionally mismatched with the 1400 ml/min total clearance.**
+**Orciprenaline’s renal clearance value of 10% was rejected for a dimensional mismatch with clearance units of volume per time.**
 
-The total clearance is reported as 1400 ml/min, a volumetric rate, while the renal clearance is listed as 10 percent, a dimensionless fraction. This discrepancy means the structural parameter lacks the required volume units to align with the total clearance definition. Additionally, the record relies on abstract-only summary statistics, so these values stand in for a fitted model. Extracted — orciprenaline: t1/2z 15 hr, V 700 liters, CL 1.4e+03 ml/min, CLR 10 per cent.
+The record defines renal clearance as the renal portion of total clearance, so 10% is a proportion, while the rejection flags it as dimensionless where volume per time was expected. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader placed the value 10 under renal clearance contribution and left renal clearance null. Extracted — orciprenaline: t1/2z 15 hr, V 700 liters, CL 1.4e+03 ml/min, CLR 10 per cent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of renal clearance: this record has 10, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

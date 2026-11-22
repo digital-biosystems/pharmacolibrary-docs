@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;amoxicillin&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/&quot;},{&quot;label&quot;:&quot;Barker_2023 \u00b7 amoxicillin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amoxicillin_Baklouti2026_reference&quot;,&quot;label&quot;:&quot;Baklouti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Baklouti2026_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Abulfathi2021_reference&quot;,&quot;label&quot;:&quot;Abulfathi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Abulfathi2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_AlbanellFernndez2025_reference&quot;,&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Isla2011_reference&quot;,&quot;label&quot;:&quot;Isla_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Isla2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_van2026_amoxicillin&quot;,&quot;label&quot;:&quot;van_2026_amoxicillin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_van2026_amoxicillin.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_van2026_clavulanate&quot;,&quot;label&quot;:&quot;van_2026_clavulanate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_van2026_clavulanate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Barker2023_amoxicillin&quot;,&quot;label&quot;:&quot;Barker_2023_amoxicillin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amoxicillin_Barker2023_parameter_estimates_amoxicillin_model&quot;,&quot;label&quot;:&quot;Barker_2023_parameter_estimates_amoxicillin_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Barker2023_parameter_estimates_amoxicillin_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Bijleveld2018_final&quot;,&quot;label&quot;:&quot;Bijleveld_2018_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Bijleveld2018_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carlier2013_reference&quot;,&quot;label&quot;:&quot;Carlier_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carlier2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_reference&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Echizen2016_reference&quot;,&quot;label&quot;:&quot;Echizen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Fournier2018_base&quot;,&quot;label&quot;:&quot;Fournier_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Fournier2018_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Mellon2020_reference&quot;,&quot;label&quot;:&quot;Mellon_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Mellon2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Mellon2020_value&quot;,&quot;label&quot;:&quot;Mellon_2020_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Mellon2020_value.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Muller2009_reference&quot;,&quot;label&quot;:&quot;Muller_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Muller2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Park2016_reference&quot;,&quot;label&quot;:&quot;Park_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Park2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Pullen2006_reference&quot;,&quot;label&quot;:&quot;Pullen_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Pullen2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Qiao2026_reference&quot;,&quot;label&quot;:&quot;Qiao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Qiao2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Rambaud2020_reference&quot;,&quot;label&quot;:&quot;Rambaud_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Rambaud2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Vegas2021_reference&quot;,&quot;label&quot;:&quot;Vegas_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Vegas2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Wu2021_reference&quot;,&quot;label&quot;:&quot;Wu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Lacampagne2026_reference&quot;,&quot;label&quot;:&quot;Lacampagne_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Lacampagne2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_1994_6&quot;,&quot;label&quot;:&quot;Li_1994 \u00b7 6&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/pd_Li_1994_6.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_1994_cfu_mL&quot;,&quot;label&quot;:&quot;Li_1994 \u00b7 cfu/mL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/pd_Li_1994_cfu_mL.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amoxicillin_Baklouti2026_reference&quot;,&quot;label&quot;:&quot;Baklouti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Baklouti2026_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Isla2011_reference&quot;,&quot;label&quot;:&quot;Isla_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Isla2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Mellon2020_basic_model_value&quot;,&quot;label&quot;:&quot;Mellon_2020_basic_model_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Mellon2020_basic_model_value.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_van2026_amoxicillin&quot;,&quot;label&quot;:&quot;van_2026_amoxicillin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_van2026_amoxicillin.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Barker2023_parameter_estimates_amoxicillin_model&quot;,&quot;label&quot;:&quot;Barker_2023_parameter_estimates_amoxicillin_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Barker2023_parameter_estimates_amoxicillin_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carceles1995v2_clavulanic_acid_sheep&quot;,&quot;label&quot;:&quot;Carceles_1995_2_clavulanic_acid_sheep&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carceles1995v2_clavulanic_acid_sheep.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carlier2013_reference&quot;,&quot;label&quot;:&quot;Carlier_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carlier2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Charles1997_reference&quot;,&quot;label&quot;:&quot;Charles_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Charles1997_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_reference&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Fournier2018_base&quot;,&quot;label&quot;:&quot;Fournier_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Fournier2018_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Fournier2018_full&quot;,&quot;label&quot;:&quot;Fournier_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Fournier2018_full.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Muller2009_reference&quot;,&quot;label&quot;:&quot;Muller_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Muller2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Pullen2006_reference&quot;,&quot;label&quot;:&quot;Pullen_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Pullen2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Spyker1977_this_study&quot;,&quot;label&quot;:&quot;Spyker_1977_this_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Spyker1977_this_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Spyker1977_zarowny&quot;,&quot;label&quot;:&quot;Spyker_1977_zarowny&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Spyker1977_zarowny.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Vegas2021_reference&quot;,&quot;label&quot;:&quot;Vegas_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Vegas2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Wu2021_reference&quot;,&quot;label&quot;:&quot;Wu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Abulfathi2021_reference&quot;,&quot;label&quot;:&quot;Abulfathi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Abulfathi2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Echizen2016_reference&quot;,&quot;label&quot;:&quot;Echizen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for amoxicillin was held back because intercompartmental clearances k13 and k31 were left at library defaults rather than extracted from the paper.
+> Km has no unit.
 
-<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Barker2023_amoxicillin" status="needs_review" stale="false" population="neonates and paediatric patients" measured-compound="amoxicillin" parameterization="apparent" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Barker2023_amoxicillin" status="needs_review" stale="false" population="neonates and paediatric patients" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Barker CIS, Kipper K, Lonsdale DO, Wright K, Thompson G, Kim M et al. The Neonatal and Paediatric Pharmacokinetics of Antimicrobials study (NAPPA): investigating amoxicillin, benzylpenicillin, flucloxacillin and piperacillin pharmacokinetics from birth to adolescence. The Journal of antimicrobial chemotherapy 78(9):2148-2161 (2023).
@@ -17,16 +17,14 @@ Barker CIS, Kipper K, Lonsdale DO, Wright K, Thompson G, Kim M et al. The Neonat
 
 ## Population and dosing
 
-**Population:** neonates and paediatric patients · condition infections · age group mixed · n = 370.
+**Population:** neonates and paediatric patients · condition mixed infections · age group mixed · n = 370.
 
 ## Model
 
-**Structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
 **Parameters:** 8 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin.svg" alt="Amoxicillin_Barker2023_amoxicillin diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -35,16 +33,16 @@ Barker CIS, Kipper K, Lonsdale DO, Wright K, Thompson G, Kim M et al. The Neonat
 |---|---|---|---|
 | TVCL | CL | 16.4 | L/h |
 | TVV | V | 46.2 | L |
-| T50 | tmax | 42.6 | h |
+| T50 | Css | 42.6 | mg/L |
+| M | Km | 0.516 |  |
 | TVQ | Q | 6.84 | L/h |
 | TVV2 | V2 | 14 | L |
-| Apparent Vd* | V/F | 44.6 | L |
 | ka (h−1) | kabs | 0.17 | h−1 |
 | tlag [h] | tlag | 0.125 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +52,13 @@ Barker CIS, Kipper K, Lonsdale DO, Wright K, Thompson G, Kim M et al. The Neonat
 
 ### Reviewer guidance
 
-**The record for amoxicillin was held back because intercompartmental clearances k13 and k31 were left at library defaults rather than extracted from the paper.**
+**Km has no unit.**
 
-The failed check identified that k13 and k31, which represent the transfer rates between central and peripheral compartments, used default values instead of estimates from Barker_2023. Additionally, the second reader disagreed on whether the model parameterization was apparent or mechanistic. There was also disagreement on the presence of specific parameters such as apparent volume of distribution, t50, and additive residual error, which the second reader did not confirm. Extracted — amoxicillin: CL 16.4 L/h, V 46.2 L, tmax 42.6 h, Q 6.84 L/h, V2 14 L, V/F 44.6 L, kabs 0.17 h−1, tlag 0.125 h.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Css), so that value has no SI equivalent. Extracted — amoxicillin: CL 16.4 L/h, V 46.2 L, Css 42.6 mg/L, Km 0.516, Q 6.84 L/h, V2 14 L, kabs 0.17 h−1, tlag 0.125 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of m: this record has 0.516, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -68,10 +66,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 |---|---|---|---|---|---|---|---|---|
 | TVCL | `Q22` · CL | 16.4 | L/h | 4.556e-06 | m3/s | L/h | tv_prefix (0.95) | dkad196-T6:row2:col1, dkad196-T6:row2:col3, Barker_2023_table_S4:row0:col1 |
 | TVV | `Q61` · V | 46.2 | L | 0.0462 | m3 | L | tv_prefix (0.95) | dkad196-T6:row3:col1, dkad196-T6:row3:col3, Barker_2023_table_S4:row1:col1 |
-| T50 | `Q56` · tmax | 42.6 | h | 1.534e+05 | s | h | llm (0.6) | dkad196-T6:row9:col1, dkad196-T6:row9:col2, dkad196-T6:row9:col3, Barker_2023_table_S4:row9:col1 |
+| T50 | `Q34` · Css | 42.6 | mg/L |  |  | mg/L | llm (0.6) | dkad196-T6:row9:col1, dkad196-T6:row9:col2, dkad196-T6:row9:col3, Barker_2023_table_S4:row9:col1 |
+| M | `Q1` · Km | 0.516 |  |  |  |  | llm (0.6) | dkad196-T6:row11:col1, dkad196-T6:row11:col2, dkad196-T6:row11:col3 |
 | TVQ | `Q30` · Q | 6.84 | L/h | 1.9e-06 | m3/s | L/h | tv_prefix (0.95) | Barker_2023_table_S4:row2:col1 |
 | TVV2 | `Q64` · V2 | 14 | L | 0.014 | m3 | L | tv_prefix (0.95) | Barker_2023_table_S4:row3:col1 |
-| Apparent Vd* | `Q76` · V/F | 44.6 | L | 0.0446 | m3 | L | llm_corrected (0.6) | Barker_2023_table_S4:row4:col1 |
 | ka (h−1) | `Q49` · kabs | 0.17 | h−1 | 4.722e-05 | 1/s | 1/h | review_gapfill (0.7) | Baklouti_2026:review |
 | tlag [h] | `Q83` · tlag | 0.125 | h | 450 | s | h | review_gapfill (0.7) | Franck_2021:review |
 
@@ -81,10 +79,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['k13', 'k31']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - table representations disagree for 'TVCL'; source reconciliation required
@@ -96,21 +90,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 - table representations disagree for 'Hill'; source reconciliation required
 - table representations disagree for 'M'; source reconciliation required
 - table representations disagree for 'Creat on CL'; source reconciliation required
-- routed 'Var prop RE' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - dropped PD-category row 'Hill' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['dkad196-T6:row10:col1', 'dkad196-T6:row10:col2', 'dkad196-T6:row10:col3', 'Barker_2023_table_S4:row10:col1'])
-- dropped unlinked row (NIL): 'M' — extend the ontology if this is a real PK parameter (source ['dkad196-T6:row11:col1', 'dkad196-T6:row11:col2', 'dkad196-T6:row11:col3'])
-- dropped duplicate Q22 ('Creat on CL', value '-0.302') — already have one for this compound
-- implicit units: 'TVCL' → L/h (from the popPK convention: 'Total clearance (CL) in population PK models is conventionally expressed in L/h, consistent with the value magnitude for')
-- implicit units: 'TVV' → L (from the popPK convention: 'Volume of distribution (V) in population PK models is conventionally expressed in L, consistent with the value magnitude')
-- implicit units: 'T50' → h (from the popPK convention: 'tmax (time to maximum concentration) is a time parameter, conventionally expressed in hours.')
-- implicit units: 'TVQ' → L/h (from the popPK convention: 'Intercompartmental clearance (Q) in population PK models is conventionally expressed in L/h.')
-- implicit units: 'TVV2' → L (from the popPK convention: 'Peripheral volume of distribution (V2) in population PK models is conventionally expressed in L.')
-- implicit units: 'Apparent Vd*' → L (from the popPK convention: 'Apparent volume of distribution (Vd/F) in population PK models is conventionally expressed in L.')
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amoxicillin
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- dropped 'Creat on CL' → Q22 = -0.302: a clearance of -0.302 is not a parameter value (source ['dkad196-T6:row13:col1', 'dkad196-T6:row13:col2', 'dkad196-T6:row13:col3', 'Barker_2023_table_S4:row11:col1'])
+- dropped duplicate Q61 ('Apparent Vd*', value '44.6') — already have one for this compound
+- implicit units: 'TVCL' → L/h (from the popPK convention: 'TVCL (Typical Total Clearance) is a clearance parameter. In population PK models for penicillins, clearance is conventio')
+- implicit units: 'TVV' → L (from the popPK convention: 'TVV (Typical Central Volume of Distribution) is a volume parameter. Volumes of distribution in PK are conventionally exp')
+- implicit units: 'T50' → mg/L (from the popPK convention: 'T50 in this context refers to the Michaelis constant (Km) or maximum capacity parameter in a saturation kinetics model (')
+- implicit units: 'M' — the LLM proposed '1/h', whose dimension does not fit Q1; left unset
+- implicit units: 'TVQ' → L/h (from the popPK convention: 'TVQ (Typical Intercompartmental Clearance) is a clearance parameter describing flow between compartments. It is conventi')
+- implicit units: 'TVV2' → L (from the popPK convention: 'TVV2 (Typical Peripheral Volume of Distribution) is a volume parameter. It is conventionally expressed in liters (L). Th')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amoxicillin
 - status held at "Needs review" — not promoted
 - population split: 'amoxicillin' subgroup of Barker_2023 (paper reports 12 populations: abdose (icu age 0.008–85)y), amoxicillin, benzylpenicillin, neonates/infants(age 1 – 37 d,ga 28–41 wk), nicu (age 2 to 5 d,ga 36 – 42 wk), parameter estimates / amoxicillin model, parameter estimates / flucloxacillin model, picu (age 1m to 15y), preterm and term infants (aged 10 to 52 days), preterm and term neonates (25-42 wks ga), this study: nappa (aged 1 – 5711 weeks), vlbw neonates (&lt;32 wks, &lt;1500g))
-- re-normalised: 'Var add RE' was linked to Q1 (Km) — a residual_error label, moved to residual_error
 - gap-filled Q49 (kabs) from Baklouti_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Franck_2021's review values (primary lacked it)
 
@@ -128,21 +119,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[apparent vd*]` | 44.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m]` | 0.516 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t50]` | 42.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[var add re]` | 0.013 |  | only_one_extracted |
 
 </details>
 
@@ -161,30 +150,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['dkad196-T6:row2:col1', 'dkad196-T6:row2:col3', 'Barker_2023_table_S4:row0:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Barker_2023_table_S4:row2:col1'] |
+| C5_dimension_Q34 | pass | [mass] / [length] ** 3 |  | ['dkad196-T6:row9:col1', 'dkad196-T6:row9:col2', 'dkad196-T6:row9:col3', 'Barker_2023_table_S4:row9:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Baklouti_2026:review'] |
-| C5_dimension_Q56 | pass | [time] |  | ['dkad196-T6:row9:col1', 'dkad196-T6:row9:col2', 'dkad196-T6:row9:col3', 'Barker_2023_table_S4:row9:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['dkad196-T6:row3:col1', 'dkad196-T6:row3:col3', 'Barker_2023_table_S4:row1:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Barker_2023_table_S4:row3:col1'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Barker_2023_table_S4:row4:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Franck_2021:review'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 |  | ['dkad196-T6:row11:col1', 'dkad196-T6:row11:col2', 'dkad196-T6:row11:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.4 | ['dkad196-T6:row2:col1', 'dkad196-T6:row2:col3', 'Barker_2023_table_S4:row0:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 16.4 L/h | ['dkad196-T6:row2:col1', 'dkad196-T6:row2:col3', 'Barker_2023_table_S4:row0:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 46.2 L | ['dkad196-T6:row3:col1', 'dkad196-T6:row3:col3', 'Barker_2023_table_S4:row1:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 14 L | ['Barker_2023_table_S4:row3:col1'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 44.6 L | ['Barker_2023_table_S4:row4:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=amoxicillin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -201,41 +177,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_modelica.zip" download>Amoxicillin_Barker2023_amoxicillin_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_fmi.zip" download>Amoxicillin_Barker2023_amoxicillin_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_3C_enteral.fmu" download>PK_3C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_fmi.zip" download>Amoxicillin_Barker2023_amoxicillin_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_matlab.zip" download>Amoxicillin_Barker2023_amoxicillin_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_matlab_simbio.zip" download>Amoxicillin_Barker2023_amoxicillin_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_sbml.zip" download>Amoxicillin_Barker2023_amoxicillin_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_cellml.zip" download>Amoxicillin_Barker2023_amoxicillin_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_3C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3654 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 450 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0015 | kg |
-| input | model | `Cl` | 4.556e-06 | m3/s |
-| input | model | `VdPerKg` | 0.00066 | m3/kg |
-| input | model | `k12` | 4.113e-05 | 1/s |
-| input | model | `k21` | 0.0001357 | 1/s |
-| input | model | `ka` | 4.722e-05 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_3C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -256,14 +205,10 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1500 mg, single dose, first-order absorption (ka 0.17 /h, lag 7.5 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1500 mg oral (J01CA04) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_params.json" metaurl="assets/fmu/PK_3C_enteral.vr.json" wasmurl="assets/fmu/PK_3C_enteral.js" controlsurl="drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin/Amoxicillin_Barker2023_amoxicillin_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_3C_enteral` · parameters `Amoxicillin_Barker2023_amoxicillin_params.json` · controls `Amoxicillin_Barker2023_amoxicillin_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamoxicillin%5D%20Amoxicillin_Barker2023_amoxicillin&body=Drug%3A%20amoxicillin%0ARecord%3A%20Amoxicillin_Barker2023_amoxicillin%0APaper%3A%20Barker_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amoxicillin/Amoxicillin_Barker2023_amoxicillin%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 14:07 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:49 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Potts_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT\u2010B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_stimulating_35S_GTP_S_binding_to_membranes_expres&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 stimulating [35S]GTP\u03b3S binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Yocca_2025_stimulating_35S_GTP_S_binding_to_membranes_expres.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_stimulating_arrestin_binding_to_membranes_express&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 stimulating \u03b2-arrestin binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Yocca_2025_stimulating_arrestin_binding_to_membranes_express.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT\u2010B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_stimulating_35S_GTP_S_binding_to_membranes_expres&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 stimulating [35S]GTP\u03b3S binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Yocca_2025_stimulating_35S_GTP_S_binding_to_membranes_expres.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_stimulating_arrestin_binding_to_membranes_express&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 stimulating \u03b2-arrestin binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Yocca_2025_stimulating_arrestin_binding_to_membranes_express.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonidine — `Clonidine_Potts2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:15 UTC (Rejected), but the paper was screened again on 2026-10-09 06:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the clearance unit is unrecognizable and the peripheral compartment is structurally disconnected from the dose.
+> Clonidine clearance uses an incompatible velocity unit, and the model lacks a flow parameter connecting the two compartments.
 
-<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="true" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="false" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Potts AL, Larsson P, Eksborg S, Warman G, Lönnqvist PA, Anderson BJ. Clonidine disposition in children; a population analysis. Paediatric anaesthesia 17(10):924–933 (2007).
@@ -41,7 +41,7 @@ Potts AL, Larsson P, Eksborg S, Warman G, Lönnqvist PA, Anderson BJ. Clonidine 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Potts AL, Larsson P, Eksborg S, Warman G, Lönnqvist PA, Anderson BJ. Clonidine 
 
 ### Reviewer guidance
 
-**The record was rejected because the clearance unit is unrecognizable and the peripheral compartment is structurally disconnected from the dose.**
+**Clonidine clearance uses an incompatible velocity unit, and the model lacks a flow parameter connecting the two compartments.**
 
-The total clearance is listed as 0.262 with unit 'c', a designation that cannot be interpreted as a standard volume or flow metric. The model structure identifies the peripheral compartment as an orphan, meaning it lacks a path from the administration site. The second reader disputed the identification of the clearance and absorption parameters but did not resolve the unit ambiguity or structural isolation. Extracted — clonidine: kabs 24.5 h, tlag 73.2 min, CL 0.262 c, V1 1.23, V2 1.26.
+The total clearance of 0.262 is recorded in units of 'c', which represents a velocity rather than the volume per time required for this parameter. Additionally, the two-compartment structure is missing the intercompartmental clearance parameter, leaving the peripheral compartment disconnected from the central one. Extracted — clonidine: kabs 24.5 h, tlag 73.2 min, CL 0.262 c, V1 1.23, V2 1.26.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

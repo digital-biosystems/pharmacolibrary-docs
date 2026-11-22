@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bisoprolol's creatinine clearance is mislabeled as a PK parameter, and the model's terminal half-life (58.4 h) deviates from the paper's reported 24.2 h.
+> Bisoprolol’s modeled terminal half-life of 58.4 h conflicts with the paper’s 24.2 h, and its clearance entry is labeled as creatinine clearance.
 
 <div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2018_reference" status="rejected" stale="false" population="patients with stable coronary artery disease" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ ValentinaNNikolic valentina@medfak.ni.ac.rs Ó Springer International Publishing
 
 ### Reviewer guidance
 
-**Bisoprolol's creatinine clearance is mislabeled as a PK parameter, and the model's terminal half-life (58.4 h) deviates from the paper's reported 24.2 h.**
+**Bisoprolol’s modeled terminal half-life of 58.4 h conflicts with the paper’s 24.2 h, and its clearance entry is labeled as creatinine clearance.**
 
-The record lists creatinine clearance (0.0341 ml/min) as a bisoprolol parameter, which is a physiological covariate rather than a drug kinetic constant. The model's calculated terminal half-life of 58.4 hours significantly exceeds the paper's reported 24.2 hours, indicating a structural mismatch. Additionally, the second reader disagreed on the extracted values for oral clearance and volume of distribution. Extracted — bisoprolol: CL/F 2.54 l/h, V 214 l, CL 0.0341 ml/min, IIV 0.0803.
+The model does not reproduce the paper's terminal half-life (paper 24.2, model 58.4). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The total-clearance parameter’s label says creatinine clearance (ml/min), although its stated meaning is total drug clearance; its value is 0.0341 ml/min. Absorption was not reported: ka and Tlag were defaulted, and first-order depot input was used with F=1, Fm=1 and no molar correction; the second reader disputed the record, reporting 0.0385 rather than 0.0341 ml/min for clearance, 2.83 rather than 2.54 l/h for oral clearance, and 247.13 rather than 214.08 l for volume. Extracted — bisoprolol: CL/F 2.54 l/h, V 214 l, CL 0.0341 ml/min, IIV 0.0803.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[creatinine clearance].value`: this record has 0.0341, the second reading 0.0385; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=bisoprolol) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 24.2 | 58.41 | 2.414 | h→SI vs simulated h |
 
 <details class="legend">

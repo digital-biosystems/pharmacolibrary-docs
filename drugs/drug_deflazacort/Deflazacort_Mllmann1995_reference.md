@@ -4,11 +4,11 @@
 
 # deflazacort — `Deflazacort_Mllmann1995_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:47 UTC (Rejected), but the paper was screened again on 2026-10-07 09:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="deflazacort" model-id="Deflazacort_Mllmann1995_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="21-desacetyldeflazacort" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="deflazacort" model-id="Deflazacort_Mllmann1995_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="21-desacetyldeflazacort" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Möllmann H, Hochhaus G, Rohatagi S, Barth J, Derendorf H. Pharmacokinetic/pharmacodynamic evaluation of deflazacort in comparison to methylprednisolone and prednisolone. Pharmaceutical research 12(7):1096–1100 (1995).
@@ -37,7 +37,7 @@ Möllmann H, Hochhaus G, Rohatagi S, Barth J, Derendorf H. Pharmacokinetic/pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Möllmann H, Hochhaus G, Rohatagi S, Barth J, Derendorf H. Pharmacokinetic/pharm
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — deflazacort: AUC 280 ng/ml.h, t1/2z 1.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deflazacort, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

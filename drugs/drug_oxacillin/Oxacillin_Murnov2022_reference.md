@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;oxacillin&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/&quot;},{&quot;label&quot;:&quot;Mur\u00ednov\u00e1_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxacillin_Lee2026_reference&quot;,&quot;label&quot;:&quot;Lee_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxacillin_Murnov2022_reference&quot;,&quot;label&quot;:&quot;Mur\u00ednov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Rodriguez_2010_E&quot;,&quot;label&quot;:&quot;Rodriguez_2010 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/pd_Rodriguez_2010_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rodriguez_2010_E_2&quot;,&quot;label&quot;:&quot;Rodriguez_2010 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/pd_Rodriguez_2010_E_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxacillin_Lee2026_reference&quot;,&quot;label&quot;:&quot;Lee_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxacillin_Murnov2022_reference&quot;,&quot;label&quot;:&quot;Mur\u00ednov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Rodriguez_2010_E&quot;,&quot;label&quot;:&quot;Rodriguez_2010 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/pd_Rodriguez_2010_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rodriguez_2010_E_2&quot;,&quot;label&quot;:&quot;Rodriguez_2010 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/pd_Rodriguez_2010_E_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Murínová I, Švidrnoch M, Gucký T, Hlaváč J, Michálek P, Slanař O et al. 
 
 ## Population and dosing
 
-**Population:** patients with staphylococcal infections · condition staphylococcal infection · age group adult · n = ?.
+**Population:** patients with staphylococcal infections · condition staphylococcal infection · age group adult.
 
 ## Model
 
@@ -125,6 +125,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_t_half_beta | reference | fail | 0.6 | 1.031 | 1.718 | h→SI vs simulated h |
 
 <details class="legend">

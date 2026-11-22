@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Manganese chloride&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/&quot;},{&quot;label&quot;:&quot;Wooten_2017 \u00b7 uptake_of_52mn_id_g_intravenous&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseChloride_Grnecker2013_reference&quot;,&quot;label&quot;:&quot;Gr\u00fcnecker_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Grnecker2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ManganeseChloride_Lewis2005_rat&quot;,&quot;label&quot;:&quot;Lewis_2005_rat&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Lewis2005_rat.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ManganeseChloride_Newland1987_reference&quot;,&quot;label&quot;:&quot;Newland_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Newland1987_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseChloride_Grnecker2013_reference&quot;,&quot;label&quot;:&quot;Gr\u00fcnecker_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Grnecker2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ManganeseChloride_Lewis2005_rat&quot;,&quot;label&quot;:&quot;Lewis_2005_rat&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Lewis2005_rat.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ManganeseChloride_Newland1987_reference&quot;,&quot;label&quot;:&quot;Newland_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Newland1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The volume of distribution for Manganese-52 in mice is implausibly low at 5.5 mL, suggesting a scale or unit extraction error.
 
 <div class="pk-model-meta" hidden drug="Manganese chloride" model-id="ManganeseChloride_Wooten2017_uptake_of_52mn_id_g_intravenous" status="rejected" stale="false" population="mice" measured-compound="Manganese-52 (52Mn)" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,7 +48,13 @@ Wooten AL, Aweda TA, Lewis BC, Gross RB, Lapi SE. Biodistribution and PET Imagin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The volume of distribution for Manganese-52 in mice is implausibly low at 5.5 mL, suggesting a scale or unit extraction error.**
+
+The model specifies a volume of distribution of 5.5 mL for Manganese-52. This magnitude is physiologically implausible for a systemic compartment in mice. The review identified this as an extraction error rather than a valid pharmacokinetic parameter. Extracted — Manganese-52 (52Mn): t1/2z 5.6 d, V 5.5 mL.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

@@ -45,7 +45,7 @@ The avermectins are a series of macrocyclic lactone derivatives with potent anth
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-10 22:34 | 28:18 | 0/1/0 | 2/0/0 | 0/0/0 | 517,575/34,971 | einfracz / qwen3.8-27b | 28 | 4/10 | 28/0 | 0 |
+| 2026-11-10 22:34 | 28:18 | 0/1/0 | 3/0/0 | 0/0/0 | 517,575/34,971 | einfracz / qwen3.8-27b | 28 | 4/10 | 28/0 | 0 |
 
 ## Coverage
 

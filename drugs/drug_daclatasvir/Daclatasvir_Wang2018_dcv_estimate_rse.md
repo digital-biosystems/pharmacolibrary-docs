@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;daclatasvir&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/&quot;},{&quot;label&quot;:&quot;Wang_2018 \u00b7 dcv_estimate_rse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclatasvir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daclatasvir_Wang2018_dcv_estimate_rse&quot;,&quot;label&quot;:&quot;Wang_2018_dcv_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Wang2018_dcv_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ueno_2018_SVR12&quot;,&quot;label&quot;:&quot;Ueno_2018 \u00b7 SVR12&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/pd_Ueno_2018_SVR12.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclatasvir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daclatasvir_Wang2018_dcv_estimate_rse&quot;,&quot;label&quot;:&quot;Wang_2018_dcv_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Wang2018_dcv_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ueno_2018_SVR12&quot;,&quot;label&quot;:&quot;Ueno_2018 \u00b7 SVR12&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/pd_Ueno_2018_SVR12.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oral bioavailability F and intercompartmental clearance k12 for daclatasvir were left at library defaults rather than estimated in the two-compartment model.
+> Daclatasvir's bioavailability and elimination rate constant lack paper-derived estimates, relying instead on unverified model placeholders.
 
 <div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_Wang2018_dcv_estimate_rse" status="needs_review" stale="false" population="healthy subjects and adults with genotype 1 chronic hepatitis C" measured-compound="daclatasvir" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,9 +53,9 @@ Wang HC, Ren YP, Qiu Y, Zheng J, Li GL, Hu CP et al. Integrated pharmacokinetic/
 
 ### Reviewer guidance
 
-**Oral bioavailability F and intercompartmental clearance k12 for daclatasvir were left at library defaults rather than estimated in the two-compartment model.**
+**Daclatasvir's bioavailability and elimination rate constant lack paper-derived estimates, relying instead on unverified model placeholders.**
 
-The model structure requires these parameters, but the record provides no extracted values for F or k12. Consequently, library placeholders were used instead of paper-supported estimates, causing the review to flag these parameters as defaults. The second reader also noted the dose compound might include asunaprevir, but the primary refusal cause remains the missing parameter estimates. Extracted — daclatasvir: CL 5.24 L/h, V1 42.9 L, Q 2.62 L/h, V2 25 L, kabs 1.17 h⁻¹.
+The oral bioavailability (F) and elimination rate constant (k12) were not extracted from the paper, so generic library values were used instead of specific estimates. A second reader disputed the record, arguing the dose compound should include asunaprevir alongside daclatasvir. Extracted — daclatasvir: CL 5.24 L/h, V1 42.9 L, Q 2.62 L/h, V2 25 L, kabs 1.17 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daclatasvir, the second reading daclatasvir, asunaprevir. That field shapes the model, so the record is marked disputed.
 
@@ -143,14 +143,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=daclatasvir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=daclatasvir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.929, 0 of 1 reader(s) agree | 0.929 | cross-check disputed by a second reader: verdict disputed, agreement 0.929, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

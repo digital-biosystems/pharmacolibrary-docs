@@ -5,11 +5,11 @@
 
 # insulin (human) — `InsulinHuman_Vlund1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-04 22:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The insulin-to-C-peptide link has no defined rate constant, leaving the metabolite compartment unreachable from the dose.
+> The C-peptide distribution volume of 12.3 L is misattributed to insulin human, creating an orphan metabolite structure.
 
-<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Vlund1987_reference" status="rejected" stale="true" population="conscious dogs" measured-compound="insulin_human" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Vlund1987_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="insulin_human" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Vølund A, Polonsky KS, Bergman RN. Calculated pattern of intraportal insulin appearance without independent assessment of C-peptide kinetics. Diabetes 36(10):1195–1202 (1987).
@@ -17,7 +17,7 @@ Vølund A, Polonsky KS, Bergman RN. Calculated pattern of intraportal insulin ap
 
 ## Population and dosing
 
-**Population:** conscious dogs · condition healthy · n = &gt;=11.
+**Population:** conscious dogs · condition healthy.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -38,7 +38,7 @@ Vølund A, Polonsky KS, Bergman RN. Calculated pattern of intraportal insulin ap
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Vølund A, Polonsky KS, Bergman RN. Calculated pattern of intraportal insulin ap
 
 ### Reviewer guidance
 
-**The insulin-to-C-peptide link has no defined rate constant, leaving the metabolite compartment unreachable from the dose.**
+**The C-peptide distribution volume of 12.3 L is misattributed to insulin human, creating an orphan metabolite structure.**
 
-The record describes an interconversion link from insulin human to C-peptide but lists no link parameter value or kind. This structural gap makes the C-peptide compartment an orphan with no path from the administered dose. Additionally, the record was built from the abstract alone, so the reported half-life and distribution volume stand in for a fitted model. Extracted — insulin human: t1/2z 6.9 min, V 12.3 L.
+The record assigns the C-peptide distribution volume of 12.3 L to the insulin_human compound, while the C-peptide itself lacks any parameters. This mismatch leaves the C-peptide compartment unlinked and orphaned within the model structure. Additionally, the second reader did not detect the insulin-to-C-peptide interconversion or the specific parameter values. Extracted — insulin human: t1/2z 6.9 min, V 12.3 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has insulin_human, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_human, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -90,18 +90,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (1/7 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.143 (1/7 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['insulin_human', 'c-peptide', 'interconversion']] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[c-peptide distribution volume]` | 12.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c-peptide distribution volume]` |  | 12.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | 6.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | insulin_human | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | insulin_human | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['insulin_human', 'c-peptide', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[c-peptide distribution volume]` | 12.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c-peptide distribution volume]` |  | 12.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 6.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | insulin_human | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | insulin_human | unknown | mismatch |
 
 </details>
 

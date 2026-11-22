@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefixime&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/&quot;},{&quot;label&quot;:&quot;Almela-Ferrer_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefixime_Edwina2023_reference&quot;,&quot;label&quot;:&quot;Edwina_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Edwina2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_AlmelaFerrer2026_reference&quot;,&quot;label&quot;:&quot;Almela-Ferrer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_AlmelaFerrer2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefixime_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefixime_AlmelaFerrer2026_reference&quot;,&quot;label&quot;:&quot;Almela-Ferrer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_AlmelaFerrer2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefixime_Edwina2023_reference&quot;,&quot;label&quot;:&quot;Edwina_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Edwina2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefixime — `Cefixime_AlmelaFerrer2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The model was held back because the deviation checks for dose adequacy and time-to-maximum concentration were not acceptable.
-
-<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_AlmelaFerrer2026_reference" status="needs_review" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_AlmelaFerrer2026_reference" status="simulated" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Almela-Ferrer MDR, Nieto-Toboso MC, Montoya-Azpeitia E, López-de Munain J, Hernández-Ragpa L, Gorostiza I et al. Molecular epidemiology and pharmacokinetic-pharmacodynamic analysis of Neisseria gonorrhoeae strains in Northern Spain. European journal of clinical microbiology & infectious diseases : official publication of the European Society of Clinical Microbiology (2026).
@@ -29,8 +27,6 @@ Almela-Ferrer MDR, Nieto-Toboso MC, Montoya-Azpeitia E, López-de Munain J, Hern
 <figure class="pk-models-diagram"><img src="drugs/drug_cefixime/Cefixime_AlmelaFerrer2026_reference/Cefixime_AlmelaFerrer2026_reference.svg" alt="Cefixime_AlmelaFerrer2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 144.0 | L/h |
@@ -39,7 +35,7 @@ Almela-Ferrer MDR, Nieto-Toboso MC, Montoya-Azpeitia E, López-de Munain J, Hern
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +45,11 @@ Almela-Ferrer MDR, Nieto-Toboso MC, Montoya-Azpeitia E, López-de Munain J, Hern
 
 ### Reviewer guidance
 
-**The model was held back because the deviation checks for dose adequacy and time-to-maximum concentration were not acceptable.**
+**Every check that could be run on this record passed.**
 
-The review found the dose and time-to-maximum checks to be unacceptable, triggering the deviation rule. The model builder used a default value for the absorption lag time instead of an explicit estimate. Additionally, the bioavailability was assumed to be one without a molar correction, which may affect the clearance interpretation. Extracted — cefixime: CL/F 144 L/h, V 14.7 L, kabs 1 h⁻¹.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q322: this record has 0.25, the second reading none. That field does not shape the model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q322: this record has 0.25, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
-
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -82,20 +76,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q322]` | 0.25 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q40]` | 0.42 | 0.42 | mismatch |
-| `gpt-oss-120b` | `values[Q46]` | 0.05 | 0.05 | mismatch |
 
 </details>
 
@@ -122,15 +114,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=cefixime) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | D1: not acceptable; D2: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=cefixime) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -32,7 +32,7 @@ Cefpirome is a fourth-generation cephalosporin antibiotic used to treat infectio
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Malerczyk_1987_reference](drugs/drug_cefpirome/Cefpirome_Malerczyk1987_reference.md) | — | 1-compartment (no model) | 2 | Malerczyk V et al., Single and multiple dose pharmacokineti…, Infection (1987) | [10.1007/BF01646053](https://doi.org/10.1007/BF01646053) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Malerczyk_1987_reference](drugs/drug_cefpirome/Cefpirome_Malerczyk1987_reference.md) | — | 1-compartment (no model) | 2 | Malerczyk V et al., Single and multiple dose pharmacokineti…, Infection (1987) | [10.1007/BF01646053](https://doi.org/10.1007/BF01646053) |
 | <span class="pk-rf" hidden data-species="cattle" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88, Q22 — no SI value to build from</sub> | [Rajput_2008_reference](drugs/drug_cefpirome/Cefpirome_Rajput2008_reference.md) | — | 1-compartment (no model) | 4 | Rajput N et al., Influence of experimentally induced fev…, Environmental toxicology an… (2008) | [10.1016/j.etap.2008.06.003](https://doi.org/10.1016/j.etap.2008.06.003) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Haseeb_2022_reference](drugs/drug_cefpirome/Cefpirome_Haseeb2022_reference.md) | — | 2-compartment (no model) | 3 | Haseeb A et al., Dose optimization of β-lactams antibiot…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964005](https://doi.org/10.3389/fphar.2022.964005) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nakayama_1992_reference](drugs/drug_cefpirome/Cefpirome_Nakayama1992_reference.md) | — | 1-compartment (no model) | 0 | Nakayama I et al., Single- and multiple-dose pharmacokinet…, Journal of clinical pharmac… (1992) | [10.1002/j.1552-4604.1992.tb03834.x](https://doi.org/10.1002/j.1552-4604.1992.tb03834.x) |
@@ -50,13 +50,13 @@ Cefpirome is a fourth-generation cephalosporin antibiotic used to treat infectio
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:10 | 6:22 | 2/3/0 | 0/0/0 | 0/0/0 | 207,422/11,835 | einfracz / qwen3.8-27b | 7 | 2/3 | 7/0 | 1 |
+| 2026-10-07 11:10 | 6:22 | 2/3/0 | 0/0/0 | 0/0/0 | 207,422/11,835 | einfracz / qwen3.8-27b | 7 | 2/3 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 54 matched, 46 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 1
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

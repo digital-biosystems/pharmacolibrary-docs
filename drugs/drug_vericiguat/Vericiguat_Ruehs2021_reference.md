@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;vericiguat&quot;,&quot;href&quot;:&quot;drugs/drug_vericiguat/&quot;},{&quot;label&quot;:&quot;Ruehs_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vericiguat_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vericiguat_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vericiguat — `Vericiguat_Ruehs2021_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="vericiguat" model-id="Vericiguat_Ruehs2021_reference" status="simulated" stale="false" population="adults with heart failure and reduced ejection fraction" measured-compound="vericiguat" parameterization="apparent" topology="1C"></div>
+> The record for vericiguat was held back because covariate effects were not simulated and the second reader disputed the structural and bioavailability assignments.
+
+<div class="pk-model-meta" hidden drug="vericiguat" model-id="Vericiguat_Ruehs2021_reference" status="needs_review" stale="false" population="adults with heart failure and reduced ejection fraction" measured-compound="vericiguat" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ruehs H, Klein D, Frei M, Grevel J, Austin R, Becker C et al. Population Pharmacokinetics and Pharmacodynamics of Vericiguat in Patients with Heart Failure and Reduced Ejection Fraction. Clinical pharmacokinetics 60(11):1407–1421 (2021).
@@ -29,6 +31,8 @@ Ruehs H, Klein D, Frei M, Grevel J, Austin R, Becker C et al. Population Pharmac
 <figure class="pk-models-diagram"><img src="drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference/Vericiguat_Ruehs2021_reference.svg" alt="Vericiguat_Ruehs2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | CL/F (L/h) | CL/F | 1.3 | L/h | 8.33 | 25.1 (None% RSE) |
@@ -45,7 +49,7 @@ Ruehs H, Klein D, Frei M, Grevel J, Austin R, Becker C et al. Population Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.64). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.64). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +59,13 @@ Ruehs H, Klein D, Frei M, Grevel J, Austin R, Becker C et al. Population Pharmac
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The record for vericiguat was held back because covariate effects were not simulated and the second reader disputed the structural and bioavailability assignments.**
 
-The base model was simulated, not the covariate effects the record defines.
+Covariate effects for sex, creatinine, body weight, and albumin were defined in the record, but only the reference individual was simulated. A second reader disagreed on model links, assigning a bioavailability value of 1.08 instead of leaving it null, and relocated the sex covariate effect from volume to clearance. The apparent bioavailability was assumed to be 1, and the lag time was left at its default value. Extracted — vericiguat: CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -184,15 +188,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=vericiguat) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=vericiguat) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.64, 0 of 1 reader(s) agree | 0.64 | cross-check disputed by a second reader: verdict disputed, agreement 0.64, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

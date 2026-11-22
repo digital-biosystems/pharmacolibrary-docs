@@ -4,11 +4,11 @@
 
 # navitoclax — `Navitoclax_Polepally2026_navitoclax`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:36 UTC (Needs review), but the paper was screened again on 2026-10-06 21:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Kabs and CL_ratio have no unit.
+> Kabs has no unit.
 
-<div class="pk-model-meta" hidden drug="navitoclax" model-id="Navitoclax_Polepally2026_navitoclax" status="needs_review" stale="true" population="patients with myelofibrosis" measured-compound="navitoclax" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="navitoclax" model-id="Navitoclax_Polepally2026_navitoclax" status="needs_review" stale="false" population="patients with myelofibrosis" measured-compound="navitoclax" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Polepally AR, Goebel A, Patel M, Biesdorf C, Potluri J, Menon RM et al. Semi-Mechanistic PK/PD Modeling of Platelets and Spleen Volume With Navitoclax in Combination With Ruxolitinib in Patients With Myelofibrosis. CPT: pharmacometrics & systems pharmacology 15(5):e70260 (2026).
@@ -42,7 +42,7 @@ Polepally AR, Goebel A, Patel M, Biesdorf C, Potluri J, Menon RM et al. Semi-Mec
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Polepally AR, Goebel A, Patel M, Biesdorf C, Potluri J, Menon RM et al. Semi-Mec
 
 ### Reviewer guidance
 
-**Kabs and CL_ratio have no unit.**
+**Kabs has no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — navitoclax: CL/F 137 L/day, V1/F 38.3 L, kabs 4.7, Q/F 77.4 L/day, V2/F 78.3 L, tlag 0.0479 day, CL_ratio 0.828.
 

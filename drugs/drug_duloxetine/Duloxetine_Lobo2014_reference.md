@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;duloxetine&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/&quot;},{&quot;label&quot;:&quot;Lobo_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # duloxetine — `Duloxetine_Lobo2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:02 UTC (Rejected), but the paper was screened again on 2026-10-06 22:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record's Cavg parameter value of 30% for duloxetine causes a dimension mismatch, and it was rejected because the record was built from the abstract alone.
+> Duloxetine’s average concentration (Cavg) is recorded as 30%, a dimensionless value incompatible with concentration, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Lobo2014_reference" status="rejected" stale="true" population="children and adolescents with MDD" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Lobo2014_reference" status="rejected" stale="false" population="children and adolescents with MDD" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lobo ED, Quinlan T, Prakash A. Pharmacokinetics of orally administered duloxetine in children and adolescents with major depressive disorder. Clinical pharmacokinetics 53(8):731–740 (2014).
@@ -39,7 +39,7 @@ Lobo ED, Quinlan T, Prakash A. Pharmacokinetics of orally administered duloxetin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Lobo ED, Quinlan T, Prakash A. Pharmacokinetics of orally administered duloxetin
 
 ### Reviewer guidance
 
-**The record's Cavg parameter value of 30% for duloxetine causes a dimension mismatch, and it was rejected because the record was built from the abstract alone.**
+**Duloxetine’s average concentration (Cavg) is recorded as 30%, a dimensionless value incompatible with concentration, so the record was rejected.**
 
-The Cavg parameter is labeled as 'average steady-state duloxetine concentration lower in pediatric population' but is assigned a value of 30% instead of a concentration unit. This creates a structural parameter dimension mismatch since a percentage is not a valid concentration measure for the model. The record is abstract-only, meaning the reported summary statistics stand in for a fitted model, and the second reader disagreed on the presence of Cavg, Vd/F, and Ka parameters in the record. Extracted — duloxetine: CL/F 79.7 L/h, V/F 1.2e+03 L, t1/2z 10.4 h, Cavg 30 %, kabs 1.46 h-1.
+Cavg is defined as average drug concentration, but the record gives it as 30% and the finding identifies the unit as dimensionless rather than concentration. Only the abstract was read, so reported summary statistics stood in for a fitted model. A second reader did not identify Cavg, the absorption rate constant, or V/F at 1200 L, and instead reported between-patient variability in V/F of 87. Extracted — duloxetine: CL/F 79.7 L/h, V/F 1.2e+03 L, t1/2z 10.4 h, Cavg 30 %, kabs 1.46 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average steady-state duloxetine concentration lower in pediatric population: this record has 30, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

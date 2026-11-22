@@ -17,7 +17,7 @@ Brossard P, Laveille C. Population Pharmacokinetics of the Anti-Interferon-Gamma
 
 ## Population and dosing
 
-**Population:** patients with primary HLH or MAS in sJIA · condition primary hemophagocytic lymphohistiocytosis (HLH) or macrophage activation syndrome (MAS) in systemic juvenile idiopathic arthritis (sJIA) · age group mixed · n = Yes, I can help with that. Please provide the text you'd like me to work with..
+**Population:** patients with primary HLH or MAS in sJIA · condition primary hemophagocytic lymphohistiocytosis (HLH) or macrophage activation syndrome (MAS) in systemic juvenile idiopathic arthritis (sJIA) · age group mixed.
 
 **Dosing:** 70, 210, 420, 700 mg, iv, multiple, every 72 h.
 

@@ -16,7 +16,7 @@ Li X, Liu J, Sheng C, Chen H, Cui D, Chen G et al. Clinical Evaluation of the To
 
 ## Population and dosing
 
-**Population:** healthy Chinese adults · condition healthy · age group adult · n = &gt;=27.
+**Population:** healthy Chinese adults · condition healthy · age group adult.
 
 ## Model
 

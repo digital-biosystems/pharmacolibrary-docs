@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> Ajmaline absorption rate ka was defaulted, causing the model's terminal half-life (4.0568630723939645 h) to deviate from the paper's 0.22333333333333333 h.
+> The ajmaline model's simulated terminal half-life (4.06 h) mismatches the paper's value (0.223 h), and absorption rate was defaulted.
 
 <div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Iven1977_reference" status="needs_review" stale="false" population="mice" measured-compound="ajmaline" parameterization="apparent" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Iven H. The pharmacokinetics and organ distribution of ajmaline and quindine in 
 
 ### Reviewer guidance
 
-**Ajmaline absorption rate ka was defaulted, causing the model's terminal half-life (4.0568630723939645 h) to deviate from the paper's 0.22333333333333333 h.**
+**The ajmaline model's simulated terminal half-life (4.06 h) mismatches the paper's value (0.223 h), and absorption rate was defaulted.**
 
-The record lacks an explicit estimate for the absorption rate, forcing reliance on library defaults rather than paper data. This omission results in a simulated terminal half-life of 4.0568630723939645 h, which is 18.1651 times the 0.22333333333333333 h reported in the study. The model structure uses apparent parameterization with assumed full bioavailability, but the primary failure is the unreported absorption kinetics. Extracted — ajmaline: CL 6 ml/min, V/F 2.1e+03 ml.
+The simulated terminal half-life is 4.0568630723932815 hours, whereas the expected value from the paper is 0.22333333333333333 hours. The absorption rate constant was not reported in the source, leading to the use of library defaults instead of specific estimates. A second reader disputed the verdict with an agreement score of 0.714. Extracted — ajmaline: CL 6 ml/min, V/F 2.1e+03 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -151,6 +151,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 0.2233 | 4.057 | 18.17 | min→SI vs simulated h |
 
 <details class="legend">

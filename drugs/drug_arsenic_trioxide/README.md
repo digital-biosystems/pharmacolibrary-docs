@@ -20,13 +20,13 @@ Arsenic trioxide is an antineoplastic agent used to treat acute promyelocytic le
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| arsenic_trioxide (arsenic trioxide) | metabolite | 197.84 | As2O3 | DrugBank | [261004](https://pubchem.ncbi.nlm.nih.gov/compound/261004) | Hua_2011 |
+| arsenic trioxide (arsenic_trioxide) | parent | 197.84 | As2O3 | DrugBank | [261004](https://pubchem.ncbi.nlm.nih.gov/compound/261004) | Hua_2011 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hua_2011_reference](drugs/drug_arsenic_trioxide/ArsenicTrioxide_Hua2011_reference.md) | — | 1-compartment (no model) | 7 | Hua H et al., Pharmacokinetics of arsenic trioxide (A…, Asian Pacific journal of ca… (2011) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hua_2011_reference](drugs/drug_arsenic_trioxide/ArsenicTrioxide_Hua2011_reference.md) | — | 1-compartment (no model) | 7 | Hua H et al., Pharmacokinetics of arsenic trioxide (A…, Asian Pacific journal of ca… (2011) | — |
 
 ## Pharmacogenomics (PGx)
 
@@ -43,24 +43,6 @@ Arsenic trioxide is an antineoplastic agent used to treat acute promyelocytic le
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=arsenic_trioxide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor, `ABCC2` inducer | DrugBank actor |
-| distribution | blood | `ALB` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor, `NQO1` metabolism | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor, `ABCC2` inducer | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor, `ABCC2` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC5 (transport), AKT1 (inducer), AS3MT (metabolism), CCND1 (target), CDKN1A (activator), IKBKB (inducer), JUN (inducer), MAPK1 (inducer), MAPK3 (inducer), MT1A (safety_allele), PML (degradation), TXNRD1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,7 +62,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 38 matched, 38 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -16,7 +16,7 @@ Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex difference
 
 ## Population and dosing
 
-**Population:** healthy Korean adults · condition healthy · age group adult · n = n_subjects (numeric or 'unknown').
+**Population:** healthy Korean adults · condition healthy · age group adult.
 
 **Dosing:** 50 mg, oral, single.
 

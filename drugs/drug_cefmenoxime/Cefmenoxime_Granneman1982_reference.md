@@ -16,7 +16,7 @@ Granneman GR, Sennello LT, Steinberg FJ, Sonders RC. Intramuscular and intraveno
 
 ## Population and dosing
 
-**Population:** healthy subjects · condition healthy · age group adult · n = This is a pre-1988 study of cefmenoxime, a new broad-spectrum cephalosporin, in healthy subjects. It describes the single-dose pharmacokinetics after intramuscular and intravenous administration. The study used 15 subjects who received all three doses for one route. The kinetics were linear and best described by a two-compartment open model with a beta-phase half-life of 0.91 h. Plasma clearance was route and dose independent, averaging 254 ml/min. The primary mechanism of elimination was renal, with tubular secretion predominating..
+**Population:** healthy subjects · condition healthy · age group adult.
 
 ## Model
 

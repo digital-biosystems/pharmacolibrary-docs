@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;lincomycin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lincomycin_Adam1979_reference&quot;,&quot;label&quot;:&quot;Adam_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # lincomycin
 
@@ -22,12 +23,18 @@ Lincomycin is a lincosamide antibiotic that treats staphylococcal and pneumococc
 |---|---|---|---|---|---|---|
 | lincomycin | parent | 406.54 | C18H34N2O6S | DrugBank | [3000540](https://pubchem.ncbi.nlm.nih.gov/compound/3000540) | Adam_1979, Sreeshitha_2014 |
 
+## Start here
+
+> **Adam_1979_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy adults, n = 10. [Run it in the simulator](drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md?tab=Simulation) · [record](drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Adam_1979_reference](drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md) | — | 1-compartment (no model) | 3 | Adam D et al., [Serum concentration and kinetics after…, Arzneimittel-Forschung (1979) | — |
-| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Sreeshitha_2014_reference](drugs/drug_lincomycin/Lincomycin_Sreeshitha2014_reference.md) | — | 1-compartment (no model) | 4 | Sreeshitha Gouri S et al., Pharmacokinetics of lincomycin followin…, Tropical animal health and… (2014) | [10.1007/s11250-014-0595-4](https://doi.org/10.1007/s11250-014-0595-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Adam_1979_reference](drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Adam D et al., [Serum concentration and kinetics after…, Arzneimittel-Forschung (1979) | — |
+| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Sreeshitha_2014_reference](drugs/drug_lincomycin/Lincomycin_Sreeshitha2014_reference.md) | — | 1-compartment (no model) | 4 | Sreeshitha Gouri S et al., Pharmacokinetics of lincomycin followin…, Tropical animal health and… (2014) | [10.1007/s11250-014-0595-4](https://doi.org/10.1007/s11250-014-0595-4) |
 
 ## Pharmacodynamics (PD)
 
@@ -35,17 +42,6 @@ Lincomycin is a lincosamide antibiotic that treats staphylococcal and pneumococc
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Guo_2016_3_gross_photosynthesis_oxygen_evolution_rate](drugs/drug_lincomycin/pd_Guo_2016_3_gross_photosynthesis_oxygen_evolution_rate.md) | gross photosynthesis (oxygen evolution rate) ← lincomycin · direct sigmoid Emax (Hill) effect | — | Guo J et al., Effects of Antibiotics on the Growth an…, Archives of environmental c… (2016) | [10.1007/s00244-016-0305-5](https://doi.org/10.1007/s00244-016-0305-5) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Guo_2016_3_growth_cell_density](drugs/drug_lincomycin/pd_Guo_2016_3_growth_cell_density.md) | growth (cell density) ← lincomycin · direct sigmoid Emax (Hill) effect | — | Guo J et al., Effects of Antibiotics on the Growth an…, Archives of environmental c… (2016) | [10.1007/s00244-016-0305-5](https://doi.org/10.1007/s00244-016-0305-5) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lincomycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ORM1` binder | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +55,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 11:16 | 6:30 | 2/0/0 | 1/0/0 | 0/0/0 | 289,366/28,781 | einfracz / qwen3.8-27b | 7 | 2/5 | 7/0 | 0 |
+| 2026-10-13 11:16 | 6:30 | 2/0/0 | 2/0/0 | 0/0/0 | 289,366/28,781 | einfracz / qwen3.8-27b | 7 | 2/5 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 9  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 2
+- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

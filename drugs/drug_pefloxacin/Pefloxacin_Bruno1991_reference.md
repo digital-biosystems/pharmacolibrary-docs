@@ -4,11 +4,11 @@
 
 # pefloxacin — `Pefloxacin_Bruno1991_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 11:50 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Bruno1991_reference" status="needs_review" stale="true" population="patients with renal or hepatic impairment" measured-compound="pefloxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Bruno1991_reference" status="needs_review" stale="false" population="patients with renal or hepatic impairment" measured-compound="pefloxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bruno R, Rosier P, Iliadis A, Le Roux Y, Montay G, Frydman A et al. Evaluation of Bayesian estimation to discriminate subpopulations of patients with altered pharmacokinetics using fragmentary data: a pilot study with pefloxacin. European journal of drug metabolism and pharmacokinetics Spec No 3:338–345 (1991).
@@ -33,7 +33,7 @@ Bruno R, Rosier P, Iliadis A, Le Roux Y, Montay G, Frydman A et al. Evaluation o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,9 +43,9 @@ Bruno R, Rosier P, Iliadis A, Le Roux Y, Montay G, Frydman A et al. Evaluation o
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pefloxacin: t1/2z 22 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pefloxacin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

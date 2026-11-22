@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Clindamycin clearance and volume are apparent parameters, assuming unit bioavailability with no molar correction.
+> The review found a disagreement on the clindamycin absorption rate constant value, which caused the record to be held back for further examination.
 
 <div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Mimram2022_reference" status="needs_review" stale="false" population="adults with prosthetic joint infections" measured-compound="clindamycin" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Mimram L, Magréault S, Kerroumi Y, Salmon D, Kably B, Marmor S et al. Populatio
 
 ## Population and dosing
 
-**Population:** adults with prosthetic joint infections · condition prosthetic joint infection · age group adult · n = : "20".
+**Population:** adults with prosthetic joint infections · condition prosthetic joint infection · age group adult.
 
 **Dosing:** 750, 900, 1200 mg, oral, multiple, every 8 h.
 
@@ -51,9 +51,9 @@ Mimram L, Magréault S, Kerroumi Y, Salmon D, Kably B, Marmor S et al. Populatio
 
 ### Reviewer guidance
 
-**Clindamycin clearance and volume are apparent parameters, assuming unit bioavailability with no molar correction.**
+**The review found a disagreement on the clindamycin absorption rate constant value, which caused the record to be held back for further examination.**
 
-The model treats bioavailability as exactly 1, ignoring the distinction between oral dose and systemic concentration. No explicit estimate was extracted for the absorption lag time, so a placeholder value was used. A second reader also recorded the absorption rate constant as 3.71 /h, conflicting with the 3.53 /h in the record. Extracted — clindamycin: CL/F 23 L/h, V/F 103 L, kabs 3.53 /h.
+The extracted absorption rate constant was 3.53 /h, but the second reader identified a value of 3.71 for the same parameter. This mismatch created a disputed cross-check outcome with an agreement of 0.857. Additionally, the time to lag was not explicitly estimated and relied on default conventions. Extracted — clindamycin: CL/F 23 L/h, V/F 103 L, kabs 3.53 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[ka].value`: this record has 3.53, the second reading 3.71. That field shapes the model, so the record is marked disputed.
 
@@ -145,15 +145,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=clindamycin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=clindamycin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

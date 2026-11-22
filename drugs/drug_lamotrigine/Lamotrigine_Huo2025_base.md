@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Lamotrigine model was held because bioavailability and lag time were left at defaults, lacking paper support.
+> For lamotrigine, bioavailability (F) had no reported estimate and was left at library defaults, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Huo2025_base" status="needs_review" stale="false" population="Chinese epileptic patients during the peripregnancy period" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Huo J, Liu Y, Yang J, Chen M, Yang L, Wang L et al. Dosing Optimization of Lamot
 
 ## Population and dosing
 
-**Population:** Chinese epileptic patients during the peripregnancy period · condition epilepsy · age group adult · n = , 128.
+**Population:** Chinese epileptic patients during the peripregnancy period · condition epilepsy · age group adult.
 
 **Dosing:** 25, 800 mg, oral, multiple.
 
@@ -51,13 +51,13 @@ Huo J, Liu Y, Yang J, Chen M, Yang L, Wang L et al. Dosing Optimization of Lamot
 
 ### Reviewer guidance
 
-**Lamotrigine model was held because bioavailability and lag time were left at defaults, lacking paper support.**
+**For lamotrigine, bioavailability (F) had no reported estimate and was left at library defaults, so the record was held back.**
 
-The record notes that bioavailability (F) and lag time (Tlag) were not explicitly estimated for this study, causing the model to rely on standard library values. These assumed parameters affect the simulated concentration profile but are not directly supported by the reported data for this Chinese epileptic patient population. A secondary reviewer also disagreed on the specific analyte identification, further complicating the validation of the dose administration details. Extracted — lamotrigine: kabs 1.93 h−1, V 68.8 L, CL 3.43 L/h.
+F used library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. The model builder also defaulted Tlag. A second reader disputed the dose-compound and primary-analyte assignments, marking both as unknown. Extracted — lamotrigine: kabs 1.93 h−1, V 68.8 L, CL 3.43 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lamotrigine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -147,14 +147,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=lamotrigine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=lamotrigine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

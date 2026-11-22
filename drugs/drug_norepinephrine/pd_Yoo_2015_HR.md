@@ -1,8 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;norepinephrine&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/&quot;},{&quot;label&quot;:&quot;Yoo_2015 \u00b7 PD Heart rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Yoo_2015_BI&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 BI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/pd_Yoo_2015_BI.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_DAP&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 DAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/pd_Yoo_2015_DAP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_HR&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/pd_Yoo_2015_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Yoo_2015_SAP&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/pd_Yoo_2015_SAP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Drow&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Drow&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/pd_Yoo_2015_SE_Drow.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Drug&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Drug&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/pd_Yoo_2015_SE_Drug.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Perf&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Perf&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/pd_Yoo_2015_SE_Perf.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Heart rate — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:glm-5.3-flash (not confirmed, agreement 0.5), einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+# Heart rate — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.5), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +15,7 @@
 
 **As extracted:** Norepinephrine (concentrations from the PK model of Li_2024) drives Heart rate (in beats/min): direct sigmoid Emax (Hill) effect.
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 > Plasma norepinephrine concentrations, linked via an effect compartment, drive heart rate through a sigmoidal Emax model where norepinephrine stimulates heart rate. The key parameters are an EC50 of 30.6 nmol/L, a ke0 of 4.6 h⁻¹, a γ of 1.7, and an Emax of 191 beats/min.
 >
@@ -47,50 +46,23 @@ Yoo H et al., Mechanism-based population pharmacokine…, European journal of cl
 </details>
 
 
-## Exposure-response model
-
-`Norepinephrine_Yoo2015_PD_hr` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 50.5 beats/min | — |
-| Emax | 191 beats/min | — |
-| EC50 | 30.6 nmol/L | 3.06e-05 mol/m3 |
-| gamma | 1.7 | — |
-
-Closed-form check points (response, SI): `at_0` = 50.5, `at_EC50` = 146, `at_inf` = 241.5
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response rises, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | pass | nothing defaulted |
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:glm-5.3-flash` | not confirmed | 0.5 (5/10 fields) | 5 |
-| `einfracz:gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
+| `glm-5.3-flash` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:glm-5.3-flash` | `parameters[Q100]` |  | 50.5 (7.5) | only_one_extracted |
-| `einfracz:glm-5.3-flash` | `parameters[Q321].value` | 30.6 | 30.6 (44.1) | mismatch |
-| `einfracz:glm-5.3-flash` | `parameters[Q324]` | 50.5 |  | only_one_extracted |
-| `einfracz:glm-5.3-flash` | `parameters[Q325].value` | 1.7 | 1.7 (49.2) | mismatch |
-| `einfracz:glm-5.3-flash` | `parameters[Q326].value` | 4.6 | 4.6 (74.8) | mismatch |
+| `glm-5.3-flash` | `parameters[Q100]` |  | 50.5 (7.5) | only_one_extracted |
+| `glm-5.3-flash` | `parameters[Q321].value` | 30.6 | 30.6 (44.1) | mismatch |
+| `glm-5.3-flash` | `parameters[Q324]` | 50.5 |  | only_one_extracted |
+| `glm-5.3-flash` | `parameters[Q325].value` | 1.7 | 1.7 (49.2) | mismatch |
+| `glm-5.3-flash` | `parameters[Q326].value` | 4.6 | 4.6 (74.8) | mismatch |
 
 </details>
 
@@ -106,54 +78,19 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_norepinephrine/Norepinephrine_Yoo2015_PD_hr/Norepinephrine_Yoo2015_PD_hr_modelica.zip" download>Norepinephrine_Yoo2015_PD_hr_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_norepinephrine/Norepinephrine_Yoo2015_PD_hr/Norepinephrine_Yoo2015_PD_hr_fmi.zip" download>Norepinephrine_Yoo2015_PD_hr_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_norepinephrine/Norepinephrine_Yoo2015_PD_hr/Norepinephrine_Yoo2015_PD_hr_matlab.zip" download>Norepinephrine_Yoo2015_PD_hr_matlab.zip</a> <span class="pk-size">(1.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_norepinephrine/Norepinephrine_Yoo2015_PD_hr/Norepinephrine_Yoo2015_PD_hr_sbml.zip" download>Norepinephrine_Yoo2015_PD_hr_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_norepinephrine/Norepinephrine_Yoo2015_PD_hr/Norepinephrine_Yoo2015_PD_hr_cellml.zip" download>Norepinephrine_Yoo2015_PD_hr_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | model | `E0` | 50.5 |  |
-| input | model | `EC50` | 3.06e-05 |  |
-| input | model | `Emax` | 191 |  |
-| input | model | `exposure_per_s` | 1e-06 |  |
-| input | model | `gamma` | 1.7 |  |
-| output | concentration | `response` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `Norepinephrine_Yoo2015_PD_hr`. <https://pharmacolibrary.github.io/#/drugs/drug_norepinephrine/pd_Yoo_2015_HR>
-
-```bibtex
-@misc{pharmacolibrary_NorepinephrineYoo2015PDhr,
-  title  = {{Pharmacolibrary model Norepinephrine_Yoo2015_PD_hr}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_norepinephrine/pd_Yoo_2015_HR},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_norepinephrine/Norepinephrine_Yoo2015_PD_hr/Norepinephrine_Yoo2015_PD_hr_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_norepinephrine/Norepinephrine_Yoo2015_PD_hr/Norepinephrine_Yoo2015_PD_hr_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Norepinephrine_Yoo2015_PD_hr_params.json` · controls `Norepinephrine_Yoo2015_PD_hr_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

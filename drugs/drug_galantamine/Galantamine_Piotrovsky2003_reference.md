@@ -4,11 +4,11 @@
 
 # galantamine — `Galantamine_Piotrovsky2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 01:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent metabolite clearance parameter is assigned a dimensionless 60% reduction value instead of a required rate constant.
+> The apparent metabolite clearance parameter was assigned a 60% unit instead of volumetric flow, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="galantamine" model-id="Galantamine_Piotrovsky2003_reference" status="rejected" stale="true" population="patients with Alzheimer&#39;s disease" measured-compound="galantamine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="galantamine" model-id="Galantamine_Piotrovsky2003_reference" status="rejected" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="galantamine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Piotrovsky V, Van Peer A, Van Osselaer N, Armstrong M, Aerssens J. Galantamine population pharmacokinetics in patients with Alzheimer's disease: modeling and simulations. Journal of clinical pharmacology 43(5):514–523 (2003).
@@ -34,7 +34,7 @@ Piotrovsky V, Van Peer A, Van Osselaer N, Armstrong M, Aerssens J. Galantamine p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Piotrovsky V, Van Peer A, Van Osselaer N, Armstrong M, Aerssens J. Galantamine p
 
 ### Reviewer guidance
 
-**The apparent metabolite clearance parameter is assigned a dimensionless 60% reduction value instead of a required rate constant.**
+**The apparent metabolite clearance parameter was assigned a 60% unit instead of volumetric flow, causing a dimension mismatch.**
 
-The parameter labeled CLm/F, defined as apparent metabolite clearance, contains the value 60 with unit '%'. This represents a 60% reduction in metabolic clearance, not an absolute clearance value in volume per time. Consequently, the structural parameter lacks the correct physical dimensions for a clearance term. Extracted — galantamine: CL 14.8 L/h, CLm/F 60 %.
+The record lists the parameter as a 60% reduction in metabolic clearance rather than a specific clearance value. The review identified a unit conflict where the dimensionless percentage symbol conflicted with the required cubic volume per time dimension. Additionally, the second reader disputed the assignment of the male clearance value to the general clearance field. Extracted — galantamine: CL 14.8 L/h, CLm/F 60 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

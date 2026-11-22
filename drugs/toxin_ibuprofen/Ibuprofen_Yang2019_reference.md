@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Ibuprofen&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/&quot;},{&quot;label&quot;:&quot;Yang_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Chin2014_alkanones&quot;,&quot;label&quot;:&quot;Chin_2014_alkanones&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_alkanones.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_arylpropionic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_arylpropionic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_arylpropionic_acid.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_enolic_acids&quot;,&quot;label&quot;:&quot;Chin_2014_enolic_acids&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_enolic_acids.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_heteroaryl_acetic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_heteroaryl_acetic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_heteroaryl_acetic_acid.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_indole_acetic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_indole_acetic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_indole_acetic_acid.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Yang2019_reference&quot;,&quot;label&quot;:&quot;Yang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Yang2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ibuprofen_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Chin2014_alkanones&quot;,&quot;label&quot;:&quot;Chin_2014_alkanones&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_alkanones.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_arylpropionic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_arylpropionic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_arylpropionic_acid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_enolic_acids&quot;,&quot;label&quot;:&quot;Chin_2014_enolic_acids&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_enolic_acids.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_heteroaryl_acetic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_heteroaryl_acetic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_heteroaryl_acetic_acid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_indole_acetic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_indole_acetic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_indole_acetic_acid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Yang2019_reference&quot;,&quot;label&quot;:&quot;Yang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Yang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ibuprofen_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ibuprofen — `Ibuprofen_Yang2019_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The return rate constant k21 was assigned a library default rather than an estimated value from the paper.
 
-<div class="pk-model-meta" hidden drug="Ibuprofen" model-id="Ibuprofen_Yang2019_reference" status="extracted" stale="false" population="" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Ibuprofen" model-id="Ibuprofen_Yang2019_reference" status="needs_review" stale="false" population="" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yang H, Wang M, Huang Y, Qiao Q, Zhao C, Zhao M. In vitro and in vivo evaluation of a novel mitomycin nanomicelle delivery system. RSC advances 9(26):14708–14717 (2019).
@@ -31,6 +31,8 @@ Yang H, Wang M, Huang Y, Qiao Q, Zhao C, Zhao M. In vitro and in vivo evaluation
 <figure class="pk-models-diagram"><img src="drugs/toxin_ibuprofen/Ibuprofen_Yang2019_reference/Ibuprofen_Yang2019_reference.svg" alt="Ibuprofen_Yang2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL MMC | CL | 27.17 | L h−1 kg−1 |
@@ -39,7 +41,7 @@ Yang H, Wang M, Huang Y, Qiao Q, Zhao C, Zhao M. In vitro and in vivo evaluation
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ Yang H, Wang M, Huang Y, Qiao Q, Zhao C, Zhao M. In vitro and in vivo evaluation
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The return rate constant k21 was assigned a library default rather than an estimated value from the paper.**
+
+The model record for ibuprofen lacks an explicit estimate for the intercompartmental return rate constant k21. This parameter was populated with a generic placeholder value, making the simulated profile unsupported by the specific data in Yang_2019. Extracted — ibuprofen: CL 27.2 L h−1 kg−1, V 6.75e+03 L, Q 1 ml min−1.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -87,6 +95,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.9e+03 L/h | ['Yang_2019:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 6.75e+03 L | ['Yang_2019:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ibuprofen) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

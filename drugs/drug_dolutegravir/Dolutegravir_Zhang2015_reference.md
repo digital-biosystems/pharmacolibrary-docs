@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Apparent PK assumption of unit bioavailability contradicts the explicit bioavailability covariate model in the dolutegravir record.
+> Second-reader disagreements on dolutegravir parameters, including absorption lag time (32.7 vs 0.262 h) and clearance (2.11 vs 0.901 L/h), caused the record to be held for review.
 
 <div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Zhang2015_reference" status="needs_review" stale="false" population="HIV-infected treatment-naive adults" measured-compound="dolutegravir" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population p
 
 ### Reviewer guidance
 
-**Apparent PK assumption of unit bioavailability contradicts the explicit bioavailability covariate model in the dolutegravir record.**
+**Second-reader disagreements on dolutegravir parameters, including absorption lag time (32.7 vs 0.262 h) and clearance (2.11 vs 0.901 L/h), caused the record to be held for review.**
 
-The model assumes absolute bioavailability is 1, yet the record includes a bioavailability parameter with a value of 3.27 covarying with gender. This inconsistency renders the model structure unacceptable for review. Second reader disagreements on clearance and volume values further highlight the uncertainty in the extracted parameters. Extracted — dolutegravir: CL/F 2.11 l h–1, V/F 2.49 l, kabs 15.4 h–1, tlag 32.7 h, Fab 3.27, CL 2.45 L/h.
+The model was held because a second reader disagreed with the extracted values for all key dolutegravir parameters, resulting in a low agreement score. Specifically, the absorption lag time was recorded as 32.7 h, while the second reader identified it as 0.262 h. Additionally, the clearance values differed substantially, with this record listing 2.11 L/h and 2.45 L/h, compared to the second reader's 0.901 L/h and 1.16 L/h. These significant numerical conflicts across the pharmacokinetic profile prevented verification of the model parameters. Extracted — dolutegravir: CL/F 2.11 l h–1, V/F 2.49 l, kabs 15.4 h–1, tlag 32.7 h, Fab 3.27, CL 2.45 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dolutegravir, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -194,17 +194,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=dolutegravir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 3.67 | 0 | unresolved concentration unit (exp 'µg ml–1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 3.62 | 0 | unresolved concentration unit (exp 'µg ml–1', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=dolutegravir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 3.67 | 0 |  | unresolved concentration unit (exp 'µg ml–1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3.62 | 0 |  | unresolved concentration unit (exp 'µg ml–1', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

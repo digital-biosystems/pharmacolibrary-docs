@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;palivizumab&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/&quot;},{&quot;label&quot;:&quot;Hardiansyah_2018_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > This paper's disposition core is incomplete; q2 has no unit (+1 more).
 
-<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Hardiansyah2018v2_reference" status="needs_review" stale="false" population="normal volunteers and FIHH patients" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Hardiansyah2018v2_reference" status="needs_review" stale="false" population="normal volunteers and FIHH patient" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hardiansyah D, Ng CM. Two-Pore Minimum Physiologically-based Pharmacokinetic Model to Describe the Disposition of Therapeutic Monoclonal IgG Antibody in Humans. Pharmaceutical research 35(3):47 (2018).
@@ -25,7 +25,7 @@ Hardiansyah D, Ng CM. Two-Pore Minimum Physiologically-based Pharmacokinetic Mod
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,9 +35,8 @@ Hardiansyah D, Ng CM. Two-Pore Minimum Physiologically-based Pharmacokinetic Mod
 |---|---|---|---|
 | 2 | Q2 | -282 |  |
 | 6 | equation variable | 0 |  |
-| median estimated creatinine clearance | CL | 126.0 | mL/min |
+| CL reported in a population PK analysis for adults | CL | 198.0 | ml/day |
 | Volume of distribution | V | 65.8 | L |
-| k a | kabs | 0.373 | day Ϫ1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -53,7 +52,7 @@ Hardiansyah D, Ng CM. Two-Pore Minimum Physiologically-based Pharmacokinetic Mod
 
 **This paper's disposition core is incomplete; q2 has no unit (+1 more).**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Huang_2017, Robbie_2012, unknown_2020) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — palivizumab: Q2 -282, CL 126 mL/min, V 65.8 L, kabs 0.373 day Ϫ1.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Basu_2020, unknown_2020) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — palivizumab: Q2 -282, CL 198 ml/day, V 65.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has palivizumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -65,9 +64,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | 2 | `Q99` · Q2 | -282 |  |  |  |  | llm (0.6) | Hardiansyah_2018_2_table_p7_1:row6:col2, Hardiansyah_2018_2_table_p7_1:row6:col3, Hardiansyah_2018_2_table_p7_1:row7:col3, Hardiansyah_2018_2_table_p7_1:row8:col2, Hardiansyah_2018_2_table_p7_1:row8:col3, Hardiansyah_2018_2_table_p7_1:row9:col3, Hardiansyah_2018_2_table_p7_1:row10:col2, Hardiansyah_2018_2_table_p7_1:row10:col3, Hardiansyah_2018_2_table_p7_1:row11:col2, Hardiansyah_2018_2_table_p7_1:row11:col3 |
 | 6 | `Q900` · equation variable | 0 |  |  |  |  | llm (0.6) | Hardiansyah_2018_2_table_p7_1:row28:col2, Hardiansyah_2018_2_table_p7_1:row28:col3, Hardiansyah_2018_2_table_p7_1:row29:col2, Hardiansyah_2018_2_table_p7_1:row29:col3, Hardiansyah_2018_2_table_p7_1:row30:col2, Hardiansyah_2018_2_table_p7_1:row30:col3, Hardiansyah_2018_2_table_p7_1:row31:col2, Hardiansyah_2018_2_table_p7_1:row31:col3, Hardiansyah_2018_2_table_p7_1:row32:col2, Hardiansyah_2018_2_table_p7_1:row32:col3 |
-| median estimated creatinine clearance | `Q22` · CL | 126.0 | mL/min | 2.1e-06 | m3/s | L/h | review_gapfill (0.7) | Huang_2017:review |
+| CL reported in a population PK analysis for adults | `Q22` · CL | 198.0 | ml/day | 2.292e-09 | m3/s | L/h | review_gapfill (0.7) | Basu_2020:review |
 | Volume of distribution | `Q61` · V | 65.8 | L | 0.0658 | m3 | L | review_gapfill (0.7) | unknown_2020:review |
-| k a | `Q49` · kabs | 0.373 | day Ϫ1 | 4.317e-06 | 1/s | 1/h | review_gapfill (0.7) | Robbie_2012:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -86,11 +84,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=palivizumab
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - molar mass: none found for 'palivizumab' — its concentrations stay mass-only
-- gap-filled Q22 (CL) from Huang_2017's review values (primary lacked it)
+- gap-filled Q22 (CL) from Basu_2020's review values (primary lacked it)
 - gap-filled Q61 (V) from unknown_2020's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Robbie_2012's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -130,13 +127,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Huang_2017:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Robbie_2012:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Basu_2020:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['unknown_2020:review'] |
 | C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['Hardiansyah_2018_2_table_p7_1:row6:col2', 'Hardiansyah_2018_2_table_p7_1:row6:col3', 'Hardiansyah_2018_2_table_p7_1:row7:col3', 'Hardiansyah_2018_2_table_p7_1:row8:col2', 'Hardiansyah_2018_2_table_p7_1:row8:col3', 'Hardiansyah_2018_2_table_p7_1:row9:col3', 'Hardiansyah_2018_2_table_p7_1:row10:col2', 'Hardiansyah_2018_2_table_p7_1:row10:col3', 'Hardiansyah_2018_2_table_p7_1:row11:col2', 'Hardiansyah_2018_2_table_p7_1:row11:col3'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 126 | ['Huang_2017:review'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 198 | ['Basu_2020:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.56 L/h | ['Huang_2017:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00825 L/h | ['Basu_2020:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 65.8 L | ['unknown_2020:review'] |
 
 <details class="legend">
@@ -171,4 +167,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20Palivizumab_Hardiansyah2018v2_reference&body=Drug%3A%20palivizumab%0ARecord%3A%20Palivizumab_Hardiansyah2018v2_reference%0APaper%3A%20Hardiansyah_2018_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/Palivizumab_Hardiansyah2018v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 06:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:55 UTC</sub>

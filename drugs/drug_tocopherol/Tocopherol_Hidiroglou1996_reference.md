@@ -4,11 +4,11 @@
 
 # Tocopherol — `Tocopherol_Hidiroglou1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 16:57 UTC (Rejected), but the paper was screened again on 2026-10-07 17:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tocopherol record lacked clearance or volume, so no compartmental model was built.
+> The record was rejected because the elimination half-life parameter (42.4) has units of /h, a dimension mismatch for a time quantity.
 
-<div class="pk-model-meta" hidden drug="Tocopherol" model-id="Tocopherol_Hidiroglou1996_reference" status="rejected" stale="true" population="sheep" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Tocopherol" model-id="Tocopherol_Hidiroglou1996_reference" status="rejected" stale="false" population="sheep" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hidiroglou M. Pharmacokinetic profile of plasma tocopherol following intramuscular administration of acetylated alpha-tocopherol to sheep. Journal of dairy science 79(6):1027–1030 (1996).
@@ -16,7 +16,7 @@ Hidiroglou M. Pharmacokinetic profile of plasma tocopherol following intramuscul
 
 ## Population and dosing
 
-**Population:** sheep · condition healthy · n = &gt;=5.
+**Population:** sheep · condition healthy.
 
 **Dosed compound ≠ measured compound:** dosed dl-alpha-tocopherol acetate, measured alpha-tocopherol.
 
@@ -41,7 +41,7 @@ Hidiroglou M. Pharmacokinetic profile of plasma tocopherol following intramuscul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Hidiroglou M. Pharmacokinetic profile of plasma tocopherol following intramuscul
 
 ### Reviewer guidance
 
-**Tocopherol record lacked clearance or volume, so no compartmental model was built.**
+**The record was rejected because the elimination half-life parameter (42.4) has units of /h, a dimension mismatch for a time quantity.**
 
-The abstract reported AUC 290 micrograms/h per ml and elimination half-life 42.4 /h but provided no distribution volume or clearance. Consequently, the record could not represent a compartmental population pharmacokinetic model. The second reader also disputed the identification of the dose compound and the existence of an absorption rate constant. Extracted — tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
+The elimination half-life parameter is assigned units of /h, which conflict with the required [time] dimension for this structural parameter. Additionally, the second reader disagreed on several fields, identifying a second elimination half-life of 21.2 that is missing from the primary record. The record relied on abstract-only data, meaning summary statistics stood in for a fitted model. Extracted — tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant, ka1: this record has 0.29, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

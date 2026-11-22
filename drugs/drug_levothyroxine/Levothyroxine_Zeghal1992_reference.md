@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Zeghal_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Latif2015_reference&quot;,&quot;label&quot;:&quot;Latif_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Latif2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Levothyroxine clearance recorded as 0.187 ml/h and volume as 3.59 ml are physiologically implausible.
+> Levothyroxine clearance of 0.187 ml/h is physiologically implausible, indicating a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Zeghal1992_reference" status="rejected" stale="false" population="" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Zeghal N, Gondran F, Redjem M, Giudicelli MD, Aissouni Y, Vigouroux E. Iodide an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Zeghal N, Gondran F, Redjem M, Giudicelli MD, Aissouni Y, Vigouroux E. Iodide an
 
 ### Reviewer guidance
 
-**Levothyroxine clearance recorded as 0.187 ml/h and volume as 3.59 ml are physiologically implausible.**
+**Levothyroxine clearance of 0.187 ml/h is physiologically implausible, indicating a unit or scale extraction error.**
 
-The extracted clearance and volume values are orders of magnitude smaller than typical human pharmacokinetic parameters, indicating a likely unit or scale extraction error. The record lacks a value for the primary pharmacokinetic parameter, with the second reader reporting 73.5 where the record shows null. The volume of distribution also conflicts, with the record stating 3.59 ml while the second reader identified 1.81. Extracted — levothyroxine: CL 0.187 ml/h, V 3.59 ml.
+The recorded clearance value is 0.187 ml/h, which is far below the expected physiological range for levothyroxine. The volume of distribution is listed as 3.59 ml, compounding the implausibility. The record was rejected because these magnitudes suggest an error in unit conversion or extraction rather than a valid PK estimate. Extracted — levothyroxine: CL 0.187 ml/h, V 3.59 ml.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.406, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.406, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -76,25 +76,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
+| `gpt-oss-120b` | partly confirmed | 0.308 (4/13 fields) | 9 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q1]` | 0.406 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q302]` | 0.303 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q336]` |  | 0.374 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q350]` |  | 73.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q327]` |  | 80.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` |  | 0.105 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q47]` |  | 0.406 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q48]` |  | 0.303 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q56]` |  | 0.105 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q61]` | 3.59 | 1.81 | mismatch |
+| `gpt-oss-120b` | `values[Q63]` |  | 1.81 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q66]` | 4.19 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q900]` | 0.422 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q99]` | 0.31 |  | only_one_extracted |
@@ -143,4 +141,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D%20Levothyroxine_Zeghal1992_reference&body=Drug%3A%20levothyroxine%0ARecord%3A%20Levothyroxine_Zeghal1992_reference%0APaper%3A%20Zeghal_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/Levothyroxine_Zeghal1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 00:23 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 01:10 UTC</sub>

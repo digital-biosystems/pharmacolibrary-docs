@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;epirubicin&quot;,&quot;href&quot;:&quot;drugs/drug_epirubicin/&quot;},{&quot;label&quot;:&quot;Tjuljandin_1990 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epirubicin_Robert1994_reference&quot;,&quot;label&quot;:&quot;Robert_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epirubicin/Epirubicin_Robert1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epirubicin_Robert1994_reference&quot;,&quot;label&quot;:&quot;Robert_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epirubicin/Epirubicin_Robert1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # epirubicin — `Epirubicin_Tjuljandin1990_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:31 UTC (Rejected), but the paper was screened again on 2026-10-06 17:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Tjuljandin1990_reference" status="needs_review" stale="true" population="patients with a variety of malignancies" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Tjuljandin1990_reference" status="needs_review" stale="false" population="patients with a variety of malignancies" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tjuljandin SA, Doig RG, Sobol MM, Watson DM, Sheridan WP, Morstyn G et al. Pharmacokinetics and toxicity of two schedules of high dose epirubicin. Cancer research 50(16):5095–5101 (1990).
@@ -37,7 +37,7 @@ Tjuljandin SA, Doig RG, Sobol MM, Watson DM, Sheridan WP, Morstyn G et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Tjuljandin SA, Doig RG, Sobol MM, Watson DM, Sheridan WP, Morstyn G et al. Pharm
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — epirubicin: tmax 12 min, tss 55 min, t1/2α 10 min, t1/2z 42 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of concentrations approached the steady state: this record has 55, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

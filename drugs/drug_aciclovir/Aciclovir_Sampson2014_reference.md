@@ -16,7 +16,7 @@ Sampson MR, Bloom BT, Lenfestey RW, Harper B, Kashuba AD, Anand R et al. Populat
 
 ## Population and dosing
 
-**Population:** preterm and term infants · condition herpes infections · age group neonate · n = ..
+**Population:** preterm and term infants · condition herpes infections · age group neonate.
 
 ## Model
 

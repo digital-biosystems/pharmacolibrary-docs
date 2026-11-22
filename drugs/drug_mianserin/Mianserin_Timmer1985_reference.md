@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;mianserin&quot;,&quot;href&quot;:&quot;drugs/drug_mianserin/&quot;},{&quot;label&quot;:&quot;Timmer_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mianserin_Timmer1985_reference&quot;,&quot;label&quot;:&quot;Timmer_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mianserin/Mianserin_Timmer1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mianserin_Timmer1985_reference&quot;,&quot;label&quot;:&quot;Timmer_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mianserin/Mianserin_Timmer1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mianserin — `Mianserin_Timmer1985_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="mianserin" model-id="Mianserin_Timmer1985_reference" status="simulated" stale="false" population="healthy male adults" measured-compound="mianserin" parameterization="mechanistic" topology="1C"></div>
+> The record was held back after disagreement over mianserin’s solution absolute bioavailability of 22%, alongside untested covariate effects and abstract-only evidence.
+
+<div class="pk-model-meta" hidden drug="mianserin" model-id="Mianserin_Timmer1985_reference" status="needs_review" stale="false" population="healthy male adults" measured-compound="mianserin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailability of mianserin tablets and solution in healthy humans. European journal of drug metabolism and pharmacokinetics 10(4):315–323 (1985).
@@ -29,6 +31,8 @@ Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailabil
 <figure class="pk-models-diagram"><img src="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference.svg" alt="Mianserin_Timmer1985_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean plasma clearance of mianserin | CL | 19 | l h-1 |
@@ -43,7 +47,7 @@ Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailabil
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +57,13 @@ Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailabil
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The record was held back after disagreement over mianserin’s solution absolute bioavailability of 22%, alongside untested covariate effects and abstract-only evidence.**
 
-The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader assigned the 22% value to absolute bioavailability generally, not specifically to the solution, and also disagreed about the elimination half-life mapping and the unreported mean absorption half-life; agreement was 0.615, with 0 of 1 reader agreeing. Only the abstract was read, so reported summary statistics stood in for a fitted model. Extracted — mianserin: CL 19 l h-1, V 444 l, Vss 242 l, t1/2z 33 h, Fab 22 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mianserin hydrochloride, the second reading mianserin HCl; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -136,14 +140,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=mianserin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=mianserin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.615, 0 of 1 reader(s) agree | 0.615 | cross-check disputed by a second reader: verdict disputed, agreement 0.615, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

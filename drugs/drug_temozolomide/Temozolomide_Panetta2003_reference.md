@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant defaults were used for temozolomide because the record relied on abstract-only data, preventing extraction of actual kinetic estimates.
+> Oral absorption rate constant ka and lag time Tlag lacked reported values, forcing reliance on library defaults.
 
 <div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Panetta2003_reference" status="needs_review" stale="false" population="infants and children with primary central nervous system tumors" measured-compound="temozolomide" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Panetta JC, Kirstein MN, Gajjar A, Nair G, Fouladi M, Heideman RL et al. Populat
 
 ### Reviewer guidance
 
-**Absorption rate constant defaults were used for temozolomide because the record relied on abstract-only data, preventing extraction of actual kinetic estimates.**
+**Oral absorption rate constant ka and lag time Tlag lacked reported values, forcing reliance on library defaults.**
 
-The absorption rate constant and lag time were not reported in the source, so library placeholders were applied. Because the model was built from summary statistics alone, these parameters stand in for a fitted model. This means the simulated absorption profile is based on assumptions rather than data from this specific population of infants and children. Extracted — temozolomide: CL/F 5.4 l/h, V/F 14 l, Cmax 9.1 mg/l, AUC 1 microg/ml.h.
+The record was constructed from the abstract only, so reported summary statistics stood in for a fitted model. Consequently, the absorption rate constant (ka) and lag time were set to library defaults rather than values derived from this study. This means the simulated absorption profile is not supported by the specific data reported in the source. Extracted — temozolomide: CL/F 5.4 l/h, V/F 14 l, Cmax 9.1 mg/l, AUC 1 microg/ml.h.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -125,15 +125,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=temozolomide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=temozolomide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;clofarabine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # clofarabine
 
@@ -25,7 +25,7 @@ Clofarabine is a purine analogue antimetabolite used primarily for acute lymphob
 
 ## Start here
 
-> **Bonate_2011_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adult and pediatric patients with cancer. [Run it in the simulator](drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md?tab=Simulation) · [record](drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md)
+> **Bonate_2011_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adult and pediatric patients with cancer. [Run it in the simulator](drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md?tab=Simulation) · [record](drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,8 +33,8 @@ Clofarabine is a purine analogue antimetabolite used primarily for acute lymphob
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Bonate_2011_reference](drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Bonate PL et al., Population pharmacokinetics of clofarab…, Cancer chemotherapy and pha… (2011) | [10.1007/s00280-010-1376-z](https://doi.org/10.1007/s00280-010-1376-z) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bonate_2004_reference](drugs/drug_clofarabine/Clofarabine_Bonate2004_reference.md) | — | 3-compartment (no model) | 6 | Bonate PL et al., Population pharmacokinetics of clofarab…, Journal of clinical pharmac… (2004) | [10.1177/0091270004269236](https://doi.org/10.1177/0091270004269236) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Bonate_2011_reference](drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Bonate PL et al., Population pharmacokinetics of clofarab…, Cancer chemotherapy and pha… (2011) | [10.1007/s00280-010-1376-z](https://doi.org/10.1007/s00280-010-1376-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bonate_2004_reference](drugs/drug_clofarabine/Clofarabine_Bonate2004_reference.md) | — | 3-compartment (no model) | 6 | Bonate PL et al., Population pharmacokinetics of clofarab…, Journal of clinical pharmac… (2004) | [10.1177/0091270004269236](https://doi.org/10.1177/0091270004269236) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Nijstad_2021_reference](drugs/drug_clofarabine/Clofarabine_Nijstad2021_reference.md) | — | 1-compartment (no model) | 2 | Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal of clinical… (2021) | [10.1111/bcp.14738](https://doi.org/10.1111/bcp.14738) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_2019_reference](drugs/drug_clofarabine/Clofarabine_Wang2019_reference.md) | — | 1-compartment (no model) | 0 | Wang H et al., Population Pharmacokinetics of Clofarab…, Biology of blood and marrow… (2019) | [10.1016/j.bbmt.2019.04.017](https://doi.org/10.1016/j.bbmt.2019.04.017) |
 
@@ -50,21 +50,6 @@ Clofarabine is a purine analogue antimetabolite used primarily for acute lymphob
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clofarabine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | testis | `ABCG2` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | `ABCG2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DCK (metabolism), DCK (substrate), DNA (other/unknown), POLA1 (inhibitor), RRM1 (inhibitor), RRM2 (inhibitor), RRM2B (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -84,7 +69,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 25 matched, 25 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **records:** 4  ·  extracted 1  ·  needs review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

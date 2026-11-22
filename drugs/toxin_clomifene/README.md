@@ -51,25 +51,6 @@ A triphenyl ethylene stilbene derivative which is an estrogen agonist or antagon
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Kovar_2022_reference](drugs/toxin_clomifene/Clomifene_Kovar2022_reference.md) | — | general linear (no model) | 1 | Kovar C et al., Prediction of Drug-Drug-Gene Interactio…, Pharmaceutics (2022) | [10.3390/pharmaceutics14122604](https://doi.org/10.3390/pharmaceutics14122604) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Miller_2019_reference](drugs/toxin_clomifene/Clomifene_Miller2019_reference.md) | — | 1-compartment (no model) | 0 | Miller GD et al., Hypothalamic-Pituitary-Testicular Axis…, The Journal of clinical end… (2019) | [10.1210/jc.2018-01159](https://doi.org/10.1210/jc.2018-01159) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clomifene).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-| — | adrenal gland | `CYP17A1` inhibitor | DrugBank actor |
-| — | testis | `CYP17A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ESR1 (target), ESR2 (target).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Li_2024 \u00b7 doxorubicin_solution_5_mg_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Frenay1989_reference&quot;,&quot;label&quot;:&quot;Frenay_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Joerger2007_reference&quot;,&quot;label&quot;:&quot;Joerger_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Joerger2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kontny2013_reference&quot;,&quot;label&quot;:&quot;Kontny_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kontny2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kunarajah2017_reference&quot;,&quot;label&quot;:&quot;Kunarajah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kunarajah2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Liang2016_reference&quot;,&quot;label&quot;:&quot;Liang_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Liang2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_w&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 w&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Choi_2021_w.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Andrean_2025_N_t&quot;,&quot;label&quot;:&quot;Andrean_2025 \u00b7 N(t)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Andrean_2025_N_t.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Luo2019_reference&quot;,&quot;label&quot;:&quot;Luo_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Luo2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Qiu2017_reference&quot;,&quot;label&quot;:&quot;Qiu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Qiu2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Yoshida1994_non_hd_group&quot;,&quot;label&quot;:&quot;Yoshida_1994_non_hd_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Yoshida1994_non_hd_group.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Doxorubicin volume of distribution (295.09 mL) was rejected as an implausibly small value for a rat or mouse.
+> The extracted volume of distribution value of 295.09 mL is outside the physiological window for doxorubicin in rats and mice.
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Li2024_doxorubicin_solution_5_mg_kg" status="rejected" stale="false" population="rats and mice" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,11 +17,9 @@ Li Z, Kovshova T, Malinovskaya J, Knoll J, Shanehsazzadeh S, Osipova N et al. Bl
 
 ## Population and dosing
 
-**Population:** rats and mice · condition healthy and tumor-bearing · age group adult.
+**Population:** rats and mice · condition healthy and tumor-bearing.
 
 **Dosing:** 70, 350, 420 mg, iv, single.
-
-**Dosed compound ≠ measured compound:** dosed doxorubicin-loaded nanocarriers, measured doxorubicin.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -29,7 +27,7 @@ Li Z, Kovshova T, Malinovskaya J, Knoll J, Shanehsazzadeh S, Osipova N et al. Bl
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -37,13 +35,14 @@ Li Z, Kovshova T, Malinovskaya J, Knoll J, Shanehsazzadeh S, Osipova N et al. Bl
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| kperi_out (h⁻¹) | kout_peripheral | 0.16 | h⁻¹ |
+| fbrain (%) | fu | 1.240 | % |
+| kperi_in (h⁻¹) | kout_peripheral | 0.73 | h⁻¹ |
 | ke_plasma (h⁻¹) | kel | 0.96 | h⁻¹ |
 | Vplasma (mL) | V | 295.09 | mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +52,11 @@ Li Z, Kovshova T, Malinovskaya J, Knoll J, Shanehsazzadeh S, Osipova N et al. Bl
 
 ### Reviewer guidance
 
-**Doxorubicin volume of distribution (295.09 mL) was rejected as an implausibly small value for a rat or mouse.**
+**The extracted volume of distribution value of 295.09 mL is outside the physiological window for doxorubicin in rats and mice.**
 
-The recorded volume of distribution is 295.09 mL, a magnitude that is physiologically impossible for the stated rodent population. The elimination rate constant is reported as 0.96 h⁻¹, while the second reader did not extract a value for this parameter. The second reader also disagreed on the presence of other parameters, noting the record lacks a brain elimination constant and a half-life. Extracted — doxorubicin: kout_peripheral 0.16 h⁻¹, kel 0.96 h⁻¹, V 295 mL.
+The record lists a volume of distribution based on drug concentration of 295.09 mL for doxorubicin. This value was flagged as having an implausible magnitude, suggesting a unit or scale extraction error. Additionally, the review identified a mismatch in the elimination rate constant for the peripheral compartment and a disagreement regarding the brain unbound fraction value. Extracted — doxorubicin: fu 1.24 %, kout_peripheral 0.73 h⁻¹, kel 0.96 h⁻¹, V 295 mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doxorubicin-loaded nanocarriers, the second reading doxorubicin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading doxil® → doxorubicin (interconversion); pbca nanoparticles → doxorubicin (interconversion); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -65,7 +64,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| kperi_out (h⁻¹) | `Q346` · kout_peripheral | 0.16 | h⁻¹ | 4.444e-05 | 1/s | 1/h | llm (0.6) | Li_2024_table_1:row4:col1 |
+| fbrain (%) | `Q46` · fu | 1.240 | % | 0.0124 |  | % | llm (0.6) | Li_2024_table_1:row1:col1 |
+| kperi_in (h⁻¹) | `Q346` · kout_peripheral | 0.73 | h⁻¹ | 0.0002028 | 1/s | 1/h | llm (0.6) | Li_2024_table_1:row3:col1 |
 | ke_plasma (h⁻¹) | `Q47` · kel | 0.96 | h⁻¹ | 0.0002667 | 1/s | 1/h | llm (0.6) | Li_2024_table_1:row7:col1 |
 | Vplasma (mL) | `Q61` · V | 295.09 | mL | 0.0002951 | m3 | ml | llm (0.6) | Li_2024_table_1:row10:col1 |
 
@@ -78,12 +78,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Body weight (g)' — extend the ontology if this is a real PK parameter (source ['Li_2024_table_1:row0:col1'])
-- dropped unlinked row (NIL): 'fbrain (%)' — extend the ontology if this is a real PK parameter (source ['Li_2024_table_1:row1:col1'])
-- dropped unlinked row (NIL): 'kperi_in (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Li_2024_table_1:row3:col1'])
-- dropped duplicate Q346 ('kB_out (h⁻¹)', value '0.035') — already have one for this compound
+- dropped duplicate Q346 ('kperi_out (h⁻¹)', value '0.16') — already have one for this compound
+- dropped PD-category row 'kB_out (h⁻¹)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Li_2024_table_1:row6:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - amount-only peripheral compartment: a peripheral output rate (kout_peripheral) is present with no reported volume — model its AMOUNT; concentration is not identifiable without an assumed volume
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Vplasma (mL)' is the general volume)
 - population split: 'doxorubicin solution (5 mg·kg⁻¹)' subgroup of Li_2024 (paper reports 4 populations: doxil® (stealth liposome) (6 mg•kg−1), doxorubicin solution (5 mg·kg⁻¹), doxorubicin solution (6 mg·kg⁻¹), pbca nanoparticle with tween 80 (5 mg•kg−1))
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -102,18 +102,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ke_brain]` |  | 0.32 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ke_plasma]` | 0.96 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kperi_out]` | 0.16 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` |  | 40.12 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vplasma]` | 295.09 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | doxorubicin-loaded nanocarriers | doxorubicin | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['doxil®', 'doxorubicin', 'interconversion'], ['pbca nanoparticles', 'doxorubicin', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[fbrain]` | 1.240 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kperi_in].parameter_id` | Q346 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[kperi_out]` |  | 0.16 | only_one_extracted |
 
 </details>
 
@@ -127,10 +125,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q346 | pass | 1 / [time] |  | ['Li_2024_table_1:row4:col1'] |
+| C5_dimension_Q346 | pass | 1 / [time] |  | ['Li_2024_table_1:row3:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Li_2024_table_1:row7:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Li_2024_table_1:row10:col1'] |
 | C8_topology | pass |  |  |  |
@@ -158,4 +156,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Li2024_doxorubicin_solution_5_mg_kg&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Li2024_doxorubicin_solution_5_mg_kg%0APaper%3A%20Li_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Li2024_doxorubicin_solution_5_mg_kg%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 15:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:01 UTC</sub>

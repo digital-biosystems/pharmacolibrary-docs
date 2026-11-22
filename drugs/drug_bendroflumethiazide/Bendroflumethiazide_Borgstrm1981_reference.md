@@ -4,11 +4,11 @@
 
 # bendroflumethiazide — `Bendroflumethiazide_Borgstrm1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:20 UTC (Rejected), but the paper was screened again on 2026-10-06 15:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the abstract-only source lacked a distribution volume or elimination rate, providing only a half-life of 3.1 hours and renal clearance of 30 ml.
+> Renal clearance of bendroflumethiazide was recorded with volume units instead of required volume-per-time dimensions, causing a dimensional rejection.
 
-<div class="pk-model-meta" hidden drug="bendroflumethiazide" model-id="Bendroflumethiazide_Borgstrm1981_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bendroflumethiazide" model-id="Bendroflumethiazide_Borgstrm1981_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Borgström L, Johansson CG, Larsson H, Lenander R. Pharmacokinetics of bendroflumethiazide after low oral doses. Journal of pharmacokinetics and biopharmaceutics 9(4):431–441 (1981).
@@ -16,7 +16,7 @@ Borgström L, Johansson CG, Larsson H, Lenander R. Pharmacokinetics of bendroflu
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = &gt;=9.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Borgström L, Johansson CG, Larsson H, Lenander R. Pharmacokinetics of bendroflu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Borgström L, Johansson CG, Larsson H, Lenander R. Pharmacokinetics of bendroflu
 
 ### Reviewer guidance
 
-**The record was rejected because the abstract-only source lacked a distribution volume or elimination rate, providing only a half-life of 3.1 hours and renal clearance of 30 ml.**
+**Renal clearance of bendroflumethiazide was recorded with volume units instead of required volume-per-time dimensions, causing a dimensional rejection.**
 
-The model is missing the structural parameters required for a compartmental population pharmacokinetic model, specifically distribution volume and total clearance. Instead, it reports summary statistics from the abstract: a terminal half-life of 3.1 hours and a renal clearance of 30 ml for bendroflumethiazide. A dimension mismatch was also identified on a structural parameter. A second reader disagreed that the dose compound, primary analyte, and specific parameter values were correctly extracted from the text. Extracted — bendroflumethiazide: t1/2z 3.1 hr, CLR 30 ml.
+The renal clearance parameter has a value of 30 with the unit ml, which is dimensionally incompatible with clearance requiring volume per time. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader identified conflicts regarding the identified dose compound and primary analyte. Extracted — bendroflumethiazide: t1/2z 3.1 hr, CLR 30 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bendroflumethiazide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

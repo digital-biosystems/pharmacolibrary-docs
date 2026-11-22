@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> The record was rejected because the paraoxon metabolite compartment is unreachable from the dose.
+> The record was rejected because paraoxon’s abstract-derived absorption rate, 0.162 1/h, accompanies a structure with an unreachable compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="paraoxon" model-id="Paraoxon_Abbas1997_reference" status="rejected" stale="false" population="rainbow trout" measured-compound="paraoxon" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Abbas R, Hayton WL. A physiologically based pharmacokinetic and pharmacodynamic 
 
 ### Reviewer guidance
 
-**The record was rejected because the paraoxon metabolite compartment is unreachable from the dose.**
+**The record was rejected because paraoxon’s abstract-derived absorption rate, 0.162 1/h, accompanies a structure with an unreachable compartment or unlinked metabolite.**
 
-The model defines a hydrolysis pathway from paraoxon to a metabolite, but no input or elimination link connects the metabolite to the rest of the system, leaving it orphaned. Additionally, the record relies on abstract summary statistics rather than fitted model data. A second reader disagreed on the specific enzyme linked to hydrolysis and could not verify the absorption and volume of distribution values. Extracted — paraoxon: CL 0.651 L/h, V 11.7 L, kabs 0.162 1/h.
+Only the abstract was read, so reported summary statistics stand in for a fitted model; the record lists paraoxon clearance of 0.651 L/h, distribution volume of 11.7 L, and absorption rate of 0.162 1/h. The stated structural failure is an unreachable or orphan compartment or an unlinked metabolite, but the record does not identify which. A second reader disputed the recorded links and gave no values for the recorded absorption rate or distribution volume. Extracted — paraoxon: CL 0.651 L/h, V 11.7 L, kabs 0.162 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has paraoxon → ache (inhibition); paraoxon → paraoxon_metabolite (hydrolysis), the second reading paraoxon → carboxylesterase (hydrolysis); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

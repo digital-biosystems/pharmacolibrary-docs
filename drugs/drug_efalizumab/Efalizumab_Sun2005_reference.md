@@ -16,7 +16,7 @@ Sun YN, Lu JF, Joshi A, Compton P, Kwon P, Bruno RA. Population pharmacokinetics
 
 ## Population and dosing
 
-**Population:** psoriasis subjects · condition psoriasis · age group adult · n = ?"n_subjects": "1088",.
+**Population:** psoriasis subjects · condition psoriasis · age group adult.
 
 ## Model
 

@@ -5,11 +5,11 @@
 
 # mirogabalin — `Mirogabalin_Yin2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:35 UTC (Rejected), but the paper was screened again on 2026-10-07 06:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Mirogabalin clearance was recorded as 25 percent, a dimensionless unit incompatible with the required volume-per-time unit for the elimination parameter.
+> Record rejected because clearance, Cmax, and AUC values are reported as percentages, which are dimensionless and cannot represent mass, volume, or concentration units.
 
-<div class="pk-model-meta" hidden drug="mirogabalin" model-id="Mirogabalin_Yin2016_reference" status="rejected" stale="true" population="subjects with varying degrees of renal function" measured-compound="mirogabalin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="mirogabalin" model-id="Mirogabalin_Yin2016_reference" status="rejected" stale="false" population="subjects with varying degrees of renal function" measured-compound="mirogabalin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Yin OQ, Merante D, Truitt K, Miller R. Population pharmacokinetic modeling and simulation for assessing renal impairment effect on the pharmacokinetics of mirogabalin. Journal of clinical pharmacology 56(2):203–212 (2016).
@@ -37,7 +37,7 @@ Yin OQ, Merante D, Truitt K, Miller R. Population pharmacokinetic modeling and s
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Yin OQ, Merante D, Truitt K, Miller R. Population pharmacokinetic modeling and s
 
 ### Reviewer guidance
 
-**Mirogabalin clearance was recorded as 25 percent, a dimensionless unit incompatible with the required volume-per-time unit for the elimination parameter.**
+**Record rejected because clearance, Cmax, and AUC values are reported as percentages, which are dimensionless and cannot represent mass, volume, or concentration units.**
 
-The abstract-only source provided percentage changes for clearance, maximum concentration, and steady-state AUC rather than absolute fitted model parameters. The 25 percent value assigned to total clearance creates a dimension mismatch, as clearance cannot be represented by a simple percentage without a reference value. The review flagged this structural parameter incompatibility as the specific cause for rejection. Extracted — mirogabalin: CL 25 %, Cmax 37 %, AUCSS 26 %.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The parameters total clearance (25%), Cmax (37%), and AUCSS (26%) are all assigned the unit '%', which is dimensionless. This conflicts with the required physical dimensions for these parameters: [length]**3/[time] for clearance, [mass]/[length]**3 for concentration, and [mass]*[time]/[length]**3 for AUC. Extracted — mirogabalin: CL 25 %, Cmax 37 %, AUCSS 26 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucss higher (%) mild renal impairment: this record has none, the second reading 26; it also differs on 7 more fields. That field does not shape the model.
 

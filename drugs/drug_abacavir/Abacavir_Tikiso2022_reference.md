@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Tikiso_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Cella2011_model_1_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_1_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_1_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Archary2019_reference&quot;,&quot;label&quot;:&quot;Archary_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Archary2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Cella2011_model_2_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_2_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_2_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2023_reference&quot;,&quot;label&quot;:&quot;Chupradit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Rabie2020_reference&quot;,&quot;label&quot;:&quot;Rabie_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Rabie2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Cella2011_model_1_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_1_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_1_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Cella2011_model_2_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_2_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_2_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2023_reference&quot;,&quot;label&quot;:&quot;Chupradit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Jullien2005_reference&quot;,&quot;label&quot;:&quot;Jullien_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Jullien2005_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Rabie2020_typical_value_value&quot;,&quot;label&quot;:&quot;Rabie_2020_typical_value_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Rabie2020_typical_value_value.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2012_reference&quot;,&quot;label&quot;:&quot;Zhao_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Archary2019_reference&quot;,&quot;label&quot;:&quot;Archary_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Archary2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The abacavir record was rejected because a reported unit could not be converted to SI units, and covariate effects produced negative clearance or volume values.
+> The number of absorption transit compartments was assigned the dimensionless unit '4:1' instead of a time unit, creating a structural dimension conflict.
 
-<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Tikiso2022_reference" status="rejected" stale="false" population="HIV-infected African children" measured-compound="abacavir" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Tikiso2022_reference" status="rejected" stale="false" population="African children living with HIV" measured-compound="abacavir" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Tikiso T, McIlleron H, Burger D, Gibb D, Rabie H, Lee J et al. Abacavir pharmacokinetics in African children living with HIV: A pooled analysis describing the effects of age, malnutrition and common concomitant medications. British journal of clinical pharmacology 88(2):403–415 (2022).
@@ -17,7 +17,7 @@ Tikiso T, McIlleron H, Burger D, Gibb D, Rabie H, Lee J et al. Abacavir pharmaco
 
 ## Population and dosing
 
-**Population:** HIV-infected African children · condition HIV · age group child · n = 230.
+**Population:** African children living with HIV · age group child.
 
 **Dosing:** 560 mg, oral, multiple, every 12 h.
 
@@ -25,7 +25,7 @@ Tikiso T, McIlleron H, Burger D, Gibb D, Rabie H, Lee J et al. Abacavir pharmaco
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 9 extracted, plus 3 covariate effects.  
+**Parameters:** 11 extracted, plus 3 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -39,17 +39,18 @@ Tikiso T, McIlleron H, Burger D, Gibb D, Rabie H, Lee J et al. Abacavir pharmaco
 | Relative oral bioavailability [F] | Frel | 1 | F |
 | Peripheral volume of distribution (L)a | V2 | 3.33 | L |
 | Inter-compartmental clearance (L/h)a | Q | 1.10 | L/h |
-| PMAGE50 b (months) | equation variable | 8.10 | months |
-| Mean absorption transit time (mins) | MAT | 6.24 | mins |
+| PMAGE50 b (months) | allometric_exponent | 8.10 | months |
+| Mean absorption transit time (mins) | MRT | 6.24 | mins |
 | Number of absorption transit compartments | n_transit | 11.9 | 4:1 |
-| Change in F of malnourished children at start of supplementation (%) | fe | +115 |  |
+| Change in CL when on EFV (%) | CL_ratio | +12.0 | % |
+| Malnutrition effect half-life d (/day) | t1/2z | 12.2 | 4:1 |
 | theta_cl_category | theta_cl_category | -18.4 | L/h |
 | theta_kabs_category | theta_kabs_category | -24.9 | 1/h |
 | theta_q83_category | theta_q83_category | 2.52 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,11 +60,11 @@ Tikiso T, McIlleron H, Burger D, Gibb D, Rabie H, Lee J et al. Abacavir pharmaco
 
 ### Reviewer guidance
 
-**The abacavir record was rejected because a reported unit could not be converted to SI units, and covariate effects produced negative clearance or volume values.**
+**The number of absorption transit compartments was assigned the dimensionless unit '4:1' instead of a time unit, creating a structural dimension conflict.**
 
-A parameter value arrived without a recognized unit system, so its magnitude could not be evaluated in standard pharmacokinetic terms. The covariate adjustments for specific patient subgroups, such as age or nutritional status, resulted in calculated clearance or volume estimates that were negative, which is physically impossible. Second readers disagreed on the presence and values of parameters related to efavirenz co-administration and malnutrition, leaving parts of the model definition unresolved. Extracted — abacavir: CL 10.7 L/h, V1 11 L, kabs 2.29 1/h, Frel 1 F, V2 3.33 L, Q 1.1 L/h, MAT 6.24 mins, n_transit 11.9 4:1, … (+1).
+The record lists the number of transit compartments as 11.9 with the unit '4:1', which is dimensionless and conflicts with the required time dimension for transit parameters. This unit mismatch, combined with a negative clearance value identified in a covariate scenario, caused the rejection of the model. Extracted — abacavir: CL 10.7 L/h, V1 11 L, kabs 2.29 1/h, Frel 1 F, V2 3.33 L, Q 1.1 L/h, allometric_exponent 8.1 months, MRT 6.24 mins, … (+3).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of change in cl when on efv: this record has none, the second reading +12.0; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[change in cl when on efv].covariate_forms`: this record has none, the second reading ['additive_shift']; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -77,10 +78,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | Relative oral bioavailability [F] | `Q87` · Frel | 1 | F |  |  |  | llm_confirmed (0.6) | Tikiso_2022_table_p9_1:row4:col1 |
 | Peripheral volume of distribution (L)a | `Q64` · V2 | 3.33 | L | 0.00333 | m3 | l | boundary_compartment (0.9) | Tikiso_2022_table_p9_1:row5:col1 |
 | Inter-compartmental clearance (L/h)a | `Q30` · Q | 1.10 | L/h | 3.056e-07 | m3/s | l/h | llm_confirmed (0.6) | Tikiso_2022_table_p9_1:row6:col1 |
-| PMAGE50 b (months) | `Q900` · equation variable | 8.10 | months |  |  | month | llm (0.6) | Tikiso_2022_table_p9_1:row8:col1 |
-| Mean absorption transit time (mins) | `Q73` · MAT | 6.24 | mins |  |  | min | llm_corrected (0.6) | Tikiso_2022_table_p9_1:row9:col1 |
+| PMAGE50 b (months) | `Q319` · allometric_exponent | 8.10 | months |  |  | month | llm (0.6) | Tikiso_2022_table_p9_1:row8:col1 |
+| Mean absorption transit time (mins) | `Q53` · MRT | 6.24 | mins | 374.4 | s | min | llm_corrected (0.6) | Tikiso_2022_table_p9_1:row9:col1 |
 | Number of absorption transit compartments | `Q311` · n_transit | 11.9 | 4:1 |  |  | 4 | llm_corrected (0.6) | Tikiso_2022_table_p9_1:row10:col1 |
-| Change in F of malnourished children at start of supplementation (%) | `Q44` · fe | +115 |  |  |  |  | llm (0.6) | Tikiso_2022_table_p9_1:row16:col1 |
+| Change in CL when on EFV (%) | `Q31` · CL_ratio | +12.0 | % | 0.12 |  | % | llm_corrected (0.6) | Tikiso_2022_table_p9_1:row15:col1 |
+| Malnutrition effect half-life d (/day) | `Q57` · t1/2z | 12.2 | 4:1 |  |  | 4 | llm (0.6) | Tikiso_2022_table_p9_1:row18:col1 |
 | theta_cl_category | `Q900` · theta_cl_category | -18.4 | L/h |  |  |  |  | Tikiso_2022_table_p9_1:row14:col1 |
 | theta_kabs_category | `Q900` · theta_kabs_category | -24.9 | 1/h |  |  |  |  | Tikiso_2022_table_p9_1:row19:col1 |
 | theta_q83_category | `Q900` · theta_q83_category | 2.52 |  |  |  |  |  | Tikiso_2022_table_p9_1:row20:col1 |
@@ -95,38 +97,42 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'y_maturation functionb' — extend the ontology if this is a real PK parameter (source ['Tikiso_2022_table_p9_1:row7:col1'])
 - dropped unlinked row (NIL): 'Change in F when on rifampicin + super-boosted lopinavir' — extend the ontology if this is a real PK parameter (source ['Tikiso_2022_table_p9_1:row13:col1'])
-- dropped duplicate Q22 ('Change in CL when on EFV (%)', value '+12.0') — already have one for this compound
-- dropped duplicate Q22 ('Change in CL of malnourished children at start of supplementation (%)', value '-64.0') — already have one for this compound
-- dropped PD-category row 'Malnutrition effect half-life d (/day)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tikiso_2022_table_p9_1:row18:col1'])
+- dropped unlinked row (NIL): 'Change in F of malnourished children at start of supplementation (%)' — extend the ontology if this is a real PK parameter (source ['Tikiso_2022_table_p9_1:row16:col1'])
+- dropped 'Change in CL of malnourished children at start of supplementation (%)' → Q22 = -64.0: a clearance of -64.0 is not a parameter value (source ['Tikiso_2022_table_p9_1:row17:col1'])
+- unit_dimension_mismatch: 'Malnutrition effect half-life d (/day)' → Q57 (unit 'dimensionless' vs ontology '[time]') — route to review
 - routed 'Extra BVV CL in MATCH (fold change)' → Q313 (IOV) to iov — variability estimate, not a structural parameter
 - covariate effect for Q83 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=abacavir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
+- base model from table(s) without population columns (Tikiso_2022:discussion_prose, Tikiso_2022:other_prose, Tikiso_2022:results_prose, Tikiso_2022_table_p9_1); populations abacavir pooled analysis / arrow 18, abacavir pooled analysis / chapas‐3 19, abacavir pooled analysis / combined, abacavir pooled analysis / dndi 20, abacavir pooled analysis / match 21 kept as separate records
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - table Tikiso_2022_table_p9_1: unparsed_numeric_cell
-- LLM selected parameter table(s) 1
+- companion parameter table 4 transcribed (64 record(s))
+- LLM selected parameter table(s) 4
 - skipped illustrative/example figure caption(s) bcp14984-fig-0002 — per-individual fit, not model parameters
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.818 (18/22 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.75 (18/24 fields) | 6 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[change in cl when on efv]` |  | +12.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[change in f of malnourished children at start of supplementation]` | +115 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[malnutrition effect half-life d]` |  | 12.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[change in cl when on efv].covariate_forms` | [] | ['additive_shift'] | mismatch |
+| `gpt-oss-120b` | `parameters[clearance (l/h) [cl]a].covariate_forms` | ['additive_shift'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[mean absorption transit time].parameter_id` | Q53 | Q73 | mismatch |
 | `gpt-oss-120b` | `parameters[pmage50 b]` | 8.10 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_category]` | -18.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_ratio_category]` |  | -18.4 | only_one_extracted |
 
 </details>
 
@@ -140,16 +146,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 11 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_sign_Q22_category | fail | -7.7 |  | base 10.7 + shift -18.4 (category) |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tikiso_2022_table_p9_1:row0:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tikiso_2022_table_p9_1:row6:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tikiso_2022_table_p9_1:row3:col1'] |
+| C5_dimension_Q53 | pass | [time] |  | ['Tikiso_2022_table_p9_1:row9:col1'] |
+| C5_dimension_Q57 | fail | [time] | 4:1 (dimensionless) | ['Tikiso_2022_table_p9_1:row18:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tikiso_2022_table_p9_1:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tikiso_2022_table_p9_1:row5:col1'] |
-| C5_dimension_Q73 | pass | [time] |  | ['Tikiso_2022_table_p9_1:row9:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.7 | ['Tikiso_2022_table_p9_1:row0:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 10.7 L/h | ['Tikiso_2022_table_p9_1:row0:col1'] |
@@ -178,4 +185,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Tikiso2022_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Tikiso2022_reference%0APaper%3A%20Tikiso_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Tikiso2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 08:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:49 UTC</sub>

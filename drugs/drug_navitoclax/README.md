@@ -26,7 +26,7 @@ Navitoclax is an experimental antineoplastic agent and Bcl-2 inhibitor being dev
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub> | [Polepally_2026_navitoclax](drugs/drug_navitoclax/Navitoclax_Polepally2026_navitoclax.md) | — | 2-compartment (no model) | 7 | Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub> | [Polepally_2026_navitoclax](drugs/drug_navitoclax/Navitoclax_Polepally2026_navitoclax.md) | — | 2-compartment (no model) | 7 | Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ population_estimate](drugs/drug_navitoclax/Navitoclax_Polepally2026_population_estimate.md) | — | 1-compartment (no model) | 3 (+2 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
@@ -37,15 +37,6 @@ Navitoclax is an experimental antineoplastic agent and Bcl-2 inhibitor being dev
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kaefer_2014_PLT](drugs/drug_navitoclax/pd_Kaefer_2014_PLT.md) | platelet counts ← navitoclax · disease-progression model | — | Kaefer A et al., Mechanism-based pharmacokinetic/pharmac…, Cancer chemotherapy and pha… (2014) | [10.1007/s00280-014-2530-9](https://doi.org/10.1007/s00280-014-2530-9) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polepally_2026_PLT](drugs/drug_navitoclax/pd_Polepally_2026_PLT.md) | platelet count ← navitoclax · inhibition effect | — | Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polepally_2026_SV](drugs/drug_navitoclax/pd_Polepally_2026_SV.md) | spleen volume ← navitoclax · indirect response — drug inhibits the loss of spleen volume | — | Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=navitoclax).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: BAD (unknown), BCL2 (inhibitor), BCL2L1 (inhibitor), BCL2L2 (inhibitor), CCND1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +50,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:09 | 1:42 | 2/0/0 | 3/0/0 | 0/0/0 | 121,087/11,524 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 21:09 | 1:42 | 2/0/0 | 4/0/0 | 0/0/0 | 121,087/11,524 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

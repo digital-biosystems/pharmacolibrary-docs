@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;quinidine&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/&quot;},{&quot;label&quot;:&quot;Rakhit_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -37,7 +37,7 @@ Rakhit A, Holford NH, Guentert TW, Maloney K, Riegelman S. Pharmacokinetics of q
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +47,11 @@ Rakhit A, Holford NH, Guentert TW, Maloney K, Riegelman S. Pharmacokinetics of q
 
 ### Reviewer guidance
 
-**The abstract-only record for quinidine lacks a simulated model and has parameter values disputed by a second reader.**
+**Record for quinidine was held back because the simulation failed and the second reader could not verify any extracted parameters.**
 
-The record relies on abstract summary statistics rather than fitted model parameters, and the model has not been simulated. A second reader disagrees with the extracted values for bioavailability (0.78), clearance (3.86 mL/min/kg), and the metabolite formation rate constant (0.0012 min⁻¹), citing them as null. Additionally, the elimination rate constant was not fully covered by the extraction process. Extracted — quinidine: V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, Fab 0.78.
+The model structure includes three metabolites linked to quinidine, but the parameter coverage check found that the elimination rate constant for quinidine was missing. The record was constructed from the abstract alone, so the reported summary statistics, such as clearance of 3.86 ml/min/kg, stand in for a fitted model. A second reader disagreed with all extracted parameter values, including bioavailability of 0.78 and the formation rate constant for 3-hydroxy quinidine. Extracted — quinidine: V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, Fab 0.78.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.78, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 0.78, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -94,18 +94,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.4 (4/10 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.4 (4/10 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 0.78 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[3-hydroxy quinidine: formation rate constant kmf]` | 0.0012 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` | 0.78 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 3.86 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination rate constant, kmu]` | 0.003 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vl]` | 0.37 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 0.78 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[3-hydroxy quinidine: formation rate constant kmf]` | 0.0012 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 0.78 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 3.86 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant, kmu]` | 0.003 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vl]` | 0.37 |  | only_one_extracted |
 
 </details>
 
@@ -133,14 +133,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered | neither emitted nor in defaulted[]: ['kel'] |
-| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['kel'] |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

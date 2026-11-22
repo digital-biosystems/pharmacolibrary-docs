@@ -5,11 +5,11 @@
 
 # sodium iodide (131I) — `SodiumIodide131i_Hardiansyah2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-07 19:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; λ1 and λ2 have no unit.
 
-<div class="pk-model-meta" hidden drug="sodium iodide (131I)" model-id="SodiumIodide131i_Hardiansyah2025_reference" status="needs_review" stale="true" population="patients with benign thyroid disease" measured-compound="sodium_iodide_131i" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium iodide (131I)" model-id="SodiumIodide131i_Hardiansyah2025_reference" status="needs_review" stale="false" population="patients with benign thyroid disease" measured-compound="sodium_iodide_131i" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hardiansyah D, Riana A, Hänscheid H, Beer AJ, Lassmann M, Glatting G. Non-linear mixed-effects modelling and population-based model selection for. EJNMMI physics 12(1):37 (2025).
@@ -40,7 +40,7 @@ Hardiansyah D, Riana A, Hänscheid H, Beer AJ, Lassmann M, Glatting G. Non-linea
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Hardiansyah D, Riana A, Hänscheid H, Beer AJ, Lassmann M, Glatting G. Non-linea
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; λ1 and λ2 have no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — sodium iodide 131i: λ1 10, λ2 7, kabs 3.39 h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of ka: this record has 3.39, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

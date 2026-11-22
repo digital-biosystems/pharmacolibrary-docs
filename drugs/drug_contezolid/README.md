@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Contezolid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Contezolid_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/Contezolid_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wu_2020_QTcF&quot;,&quot;label&quot;:&quot;Wu_2020 \u00b7 \u0394QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/pd_Wu_2020_QTcF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Contezolid_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/Contezolid_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wu_2020_QTcF&quot;,&quot;label&quot;:&quot;Wu_2020 \u00b7 \u0394QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/pd_Wu_2020_QTcF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Contezolid
 
@@ -23,15 +23,9 @@
 |---|---|---|---|---|---|---|
 | MRX-1320 (contezolid) | metabolite | 408.3 | C18H15F3N4O4 | PubChem | [25184541](https://pubchem.ncbi.nlm.nih.gov/compound/25184541) | Bulitta_2024 |
 
-## Start here
-
-> **Fu_2024_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_contezolid/Contezolid_Fu2024_reference.md?tab=Simulation) · [record](drugs/drug_contezolid/Contezolid_Fu2024_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Liu_2026 · CL</text><circle cx="408.9" cy="30.0" r="4" fill="#ef6c00"><title>Liu_2026 · CL: 4.22 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bulitta_2024 · CL</text><circle cx="442.9" cy="46.0" r="4" fill="#ef6c00"><title>Bulitta_2024 · CL: 5.28 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Fu_2024 · CL</text><circle cx="442.9" cy="62.0" r="4" fill="#78909c"><title>Fu_2024 · CL: 5.28 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Fu_2024 · V</text><circle cx="203.0" cy="30.0" r="4" fill="#78909c"><title>Fu_2024 · V: 10.89 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bulitta_2024 · V</text><circle cx="421.3" cy="46.0" r="4" fill="#ef6c00"><title>Bulitta_2024 · V: 45.8 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Liu_2026 · V</text><circle cx="421.3" cy="62.0" r="4" fill="#ef6c00"><title>Liu_2026 · V: 45.8 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Liu_2026 · CL</text><circle cx="408.9" cy="30.0" r="4" fill="#ef6c00"><title>Liu_2026 · CL: 4.22 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bulitta_2024 · CL</text><circle cx="442.9" cy="46.0" r="4" fill="#ef6c00"><title>Bulitta_2024 · CL: 5.28 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bulitta_2024 · V</text><circle cx="421.3" cy="30.0" r="4" fill="#ef6c00"><title>Bulitta_2024 · V: 45.8 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Liu_2026 · V</text><circle cx="421.3" cy="46.0" r="4" fill="#ef6c00"><title>Liu_2026 · V: 45.8 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,9 +33,9 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Fu_2024_reference](drugs/drug_contezolid/Contezolid_Fu2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Fu G et al., An insight into pharmacokinetics and do…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1396994](https://doi.org/10.3389/fphar.2024.1396994) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Bulitta_2024_reference](drugs/drug_contezolid/Contezolid_Bulitta2024_reference.md) | — | general linear (no model) | 3 | Bulitta JB et al., Population pharmacokinetic rationale fo…, Antimicrobial agents and ch… (2024) | [10.1128/aac.01400-23](https://doi.org/10.1128/aac.01400-23) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Liu_2026_reference](drugs/drug_contezolid/Contezolid_Liu2026_reference.md) | — | 1-compartment (no model) | 2 | Liu T et al., Advances in Therapeutic Drug Monitoring…, Clinical interventions in a… (2026) | [10.2147/CIA.S587530](https://doi.org/10.2147/CIA.S587530) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Fu_2024_reference](drugs/drug_contezolid/Contezolid_Fu2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Fu G et al., An insight into pharmacokinetics and do…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1396994](https://doi.org/10.3389/fphar.2024.1396994) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wu_2026_reference](drugs/drug_contezolid/Contezolid_Wu2026_reference.md) | — | 1-compartment (no model) | 0 | Wu H et al., Evaluation of the clinical efficacy, sa…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01033-25](https://doi.org/10.1128/aac.01033-25) |
 
 ## Pharmacodynamics (PD)
@@ -62,13 +56,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-22 10:21 | 2:46 | 3/1/0 | 1/0/0 | 0/0/0 | 137,220/11,267 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-22 10:21 | 2:46 | 2/2/0 | 1/0/0 | 0/0/0 | 137,220/11,267 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 48 matched, 37 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a quantitative pharmacodynamic model, mechanism, or PK/PD parameters for the 1,10-phenanthroline ruthenium compounds acting on tumor volume. It only reports that doses of 2 and 4 mg/kg significantly reduced tumor volume in a dose-dependent manner without providing potency or rate constants.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Anchuri_2012`
 - **model family:** `unknown`
 - **driver:** `dose_only`

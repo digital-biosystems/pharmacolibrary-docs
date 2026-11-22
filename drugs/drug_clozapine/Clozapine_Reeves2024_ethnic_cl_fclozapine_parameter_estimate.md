@@ -5,11 +5,11 @@
 
 # clozapine — `Clozapine_Reeves2024_ethnic_cl_fclozapine_parameter_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:29 UTC (Rejected), but the paper was screened again on 2026-10-06 15:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit for clozapine's absorption rate constant, 0.69, could not be converted to standard SI units.
+> Norclozapine C0 of 0.02 mg L−1 was rejected because its concentration unit conflicts with the structural parameter’s expected concentration-time dimension.
 
-<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_ethnic_cl_fclozapine_parameter_estimate" status="rejected" stale="true" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_ethnic_cl_fclozapine_parameter_estimate" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pharmacokinetic model to guide clozapine dose selection, based on age, sex, ethnicity, body weight and smoking status. British journal of clinical pharmacology 90(1):135–145 (2024).
@@ -38,7 +38,7 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 ### Reviewer guidance
 
-**The record was rejected because the unit for clozapine's absorption rate constant, 0.69, could not be converted to standard SI units.**
+**Norclozapine C0 of 0.02 mg L−1 was rejected because its concentration unit conflicts with the structural parameter’s expected concentration-time dimension.**
 
-The parameter kabs is defined as the absorption rate constant for clozapine with a value of 0.69. Its reported unit, 'h À1', could not be interpreted or converted into the standard seconds-based system required for model validation. Consequently, the dimensional inconsistency prevented the structural parameter from being accepted. Extracted — norclozapine: C0 0.02 mg L−1; clozapine: V/F 0.66, kabs 0.69 h À1, CL/F 23.2 L h À1.
+The record defines C0 as observed norclozapine concentration extrapolated to time zero, but its reported mg L−1 unit has mass-per-volume dimensions rather than the expected mass-times-time-per-volume dimensions. The reported unit could not be converted to SI, leaving C0 without an SI value. Extracted — norclozapine: C0 0.02 mg L−1; clozapine: V/F 0.66, kabs 0.69 h À1, CL/F 23.2 L h À1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

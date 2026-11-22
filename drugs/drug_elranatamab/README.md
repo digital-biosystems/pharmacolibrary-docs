@@ -17,7 +17,7 @@ Elranatamab is a bispecific monoclonal antibody that engages T-cells to treat mu
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hibma_2026_reference](drugs/drug_elranatamab/Elranatamab_Hibma2026_reference.md) | — | 2-compartment (no model) | 7 (+2 cov.) | Hibma JE et al., Elranatamab Population Pharmacokinetics…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01663-z](https://doi.org/10.1007/s40262-026-01663-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hibma_2026_reference](drugs/drug_elranatamab/Elranatamab_Hibma2026_reference.md) | — | 2-compartment (no model) | 7 (+2 cov.) | Hibma JE et al., Elranatamab Population Pharmacokinetics…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01663-z](https://doi.org/10.1007/s40262-026-01663-z) |
 
 ## Pharmacodynamics (PD)
 
@@ -28,15 +28,6 @@ Elranatamab is a bispecific monoclonal antibody that engages T-cells to treat mu
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lon_2025_DOR](drugs/drug_elranatamab/pd_Lon_2025_DOR.md) | duration of response ← elranatamab · time-to-event model | — | Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (2025) | [10.1007/s11523-025-01168-y](https://doi.org/10.1007/s11523-025-01168-y) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lon_2025_ORR](drugs/drug_elranatamab/pd_Lon_2025_ORR.md) | objective response rate ← elranatamab · categorical (graded) response model | — | Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (2025) | [10.1007/s11523-025-01168-y](https://doi.org/10.1007/s11523-025-01168-y) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lon_2025_PFS](drugs/drug_elranatamab/pd_Lon_2025_PFS.md) | progression-free survival ← elranatamab · time-to-event model | — | Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (2025) | [10.1007/s11523-025-01168-y](https://doi.org/10.1007/s11523-025-01168-y) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=elranatamab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD3D (antibody), TNFRSF17 (antibody).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +41,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:35 | 2:46 | 0/1/0 | 2/0/0 | 0/0/0 | 76,165/14,176 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 12:35 | 2:46 | 0/1/0 | 5/0/0 | 0/0/0 | 76,165/14,176 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

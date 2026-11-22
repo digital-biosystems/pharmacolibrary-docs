@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> End-tidal isoflurane concentrations inhibit electromyographic (EMG) activity via a sigmoidal Emax mechanism, characterized by an EC50 of 1.04%, a maximum inhibition (Emax) of 0.38%, a baseline activity (E0) of 26.1%, and a Hill coefficient (gamma) of 8.61.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Sousa_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

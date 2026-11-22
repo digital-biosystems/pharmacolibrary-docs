@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model uses an apparent parameterization (F=1) for luspatercept and failed to simulate the defined weight and albumin covariate effects.
+> Record for luspatercept was held back because a second reader could not confirm the reported clearance, volume, or covariate parameters.
 
 <div class="pk-model-meta" hidden drug="luspatercept" model-id="Luspatercept_Chen2021_reference" status="needs_review" stale="false" population="adults with beta-thalassemia" measured-compound="luspatercept" parameterization="apparent" topology="1C"></div>
 
@@ -48,7 +48,7 @@ Chen N, Kassir N, Laadem A, Giuseppi AC, Shetty J, Maxwell SE et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,11 +58,11 @@ Chen N, Kassir N, Laadem A, Giuseppi AC, Shetty J, Maxwell SE et al. Population 
 
 ### Reviewer guidance
 
-**The model uses an apparent parameterization (F=1) for luspatercept and failed to simulate the defined weight and albumin covariate effects.**
+**Record for luspatercept was held back because a second reader could not confirm the reported clearance, volume, or covariate parameters.**
 
-The model builder substituted F=1 and Fm=1, assuming apparent parameters rather than estimating bioavailability, which was deemed an unacceptable assumption. Additionally, the defined covariate effects for weight and albumin on clearance and volume were not exercised during simulation, limiting the record's validity. Extracted — luspatercept: CL/F 0.532 L/day, V/F 8.39 L, kabs 0.41 1/day.
+The primary review noted that covariate scenarios were not simulated. However, a second reader disagreed with the verdict, finding the dose compound, primary analyte, and all parameter values to be unknown or null. This resulted in a cross-check agreement ratio of 0.125, confirming the dispute. Extracted — luspatercept: CL/F 0.532 L/day, V/F 8.39 L, kabs 0.41 1/day.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has luspatercept, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has luspatercept, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -125,26 +125,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 
 <details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[albumin_g_l_on_cl_f]` | -0.886 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | 0.532 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` |  | 0.532 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 0.410 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` |  | 0.410 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_albumin]` |  | -0.886 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v1_f_weight]` |  | 0.718 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1/f]` | 8.39 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1/f]` |  | 8.39 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[weight_kg_on_cl_f]` | 0.809 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[weight_kg_on_cl_f]` |  | 0.809 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[weight_kg_on_v1_f]` | 0.718 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | luspatercept | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | luspatercept | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[albumin_g_l_on_cl_f]` | -0.886 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 0.532 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 0.532 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.410 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 0.410 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_albumin]` |  | -0.886 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_f_weight]` |  | 0.718 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` | 8.39 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` |  | 8.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_kg_on_cl_f]` | 0.809 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_kg_on_cl_f]` |  | 0.809 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_kg_on_v1_f]` | 0.718 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | luspatercept | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | luspatercept | unknown | mismatch |
 
 </details>
 
@@ -172,15 +172,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=luspatercept) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=luspatercept) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

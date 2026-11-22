@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The Vmax of 1.03 microM/kg/min for iopanoic acid has a concentration-based unit rather than the required mass-based dimension.
 
 <div class="pk-model-meta" hidden drug="Iopanoic acid" model-id="IopanoicAcid_Moss1980_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="Iopanoic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,13 @@ Moss AA, Lin SK, Riegelman S. Gastrointestinal radiology. Pharmacokinetics of io
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The Vmax of 1.03 microM/kg/min for iopanoic acid has a concentration-based unit rather than the required mass-based dimension.**
+
+The Vmax parameter for iopanoic acid is recorded as 1.03 microM/kg/min, which represents a molar concentration flux rather than a mass flux. This creates a dimensional conflict because maximum metabolism rates must be expressed in mass per time. The record was also built solely from the paper abstract, using summary statistics instead of fitted model parameters. Extracted — iopanoic acid: Vmax 1.03 microM/kg/min, Cmax 0.253.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

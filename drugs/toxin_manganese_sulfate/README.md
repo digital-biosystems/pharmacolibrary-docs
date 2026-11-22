@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Manganese sulfate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseSulfate_Vitarella2000_reference&quot;,&quot;label&quot;:&quot;Vitarella_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseSulfate_Vitarella2000_reference&quot;,&quot;label&quot;:&quot;Vitarella_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Manganese sulfate
 
@@ -36,7 +36,7 @@ LD50: 146 mg/kg (Subcutaneous, Mouse)
 
 ## Start here
 
-> **Vitarella_2000_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> Adult CD rats. [Run it in the simulator](drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md?tab=Simulation) · [record](drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md)
+> **Vitarella_2000_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> Adult CD rats. [Run it in the simulator](drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md?tab=Simulation) · [record](drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -44,7 +44,7 @@ LD50: 146 mg/kg (Subcutaneous, Mouse)
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Vitarella_2000_reference](drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Vitarella D et al., Pulmonary clearance of manganese phosph…, Inhalation toxicology (2000) | [10.1080/08958370050138003](https://doi.org/10.1080/08958370050138003) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Vitarella_2000_reference](drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Vitarella D et al., Pulmonary clearance of manganese phosph…, Inhalation toxicology (2000) | [10.1080/08958370050138003](https://doi.org/10.1080/08958370050138003) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Dorman_2001_reference](drugs/toxin_manganese_sulfate/ManganeseSulfate_Dorman2001_reference.md) | — | 1-compartment (no model) | 0 | Dorman DC et al., Influence of dietary manganese on the p…, Toxicological sciences : an… (2001) | [10.1093/toxsci/60.2.242](https://doi.org/10.1093/toxsci/60.2.242) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Dorman_2001_2_reference](drugs/toxin_manganese_sulfate/ManganeseSulfate_Dorman2001v2_reference.md) | — | 1-compartment (no model) | 0 | Dorman DC et al., Influence of particle solubility on the…, Toxicology and applied phar… (2001) | [10.1006/taap.2000.9088](https://doi.org/10.1006/taap.2000.9088) |
 
@@ -73,7 +73,7 @@ LD50: 146 mg/kg (Subcutaneous, Mouse)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-18 11:23 | 3:59 | 1/2/0 | 0/1/0 | 0/0/0 | 37,872/4,754 | einfracz / qwen3.8-flash-next | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-18 11:23 | 3:59 | 1/2/0 | 0/8/0 | 0/0/0 | 37,872/4,754 | einfracz / qwen3.8-flash-next | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 

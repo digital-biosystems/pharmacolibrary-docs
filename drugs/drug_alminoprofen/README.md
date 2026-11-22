@@ -25,7 +25,7 @@ This substance is a non-steroidal anti-inflammatory drug, a group that generally
 
 ## Start here
 
-> **Tod_1995_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with knee effusion, n = &gt;&lt;. [Run it in the simulator](drugs/drug_alminoprofen/Alminoprofen_Tod1995_reference.md?tab=Simulation) · [record](drugs/drug_alminoprofen/Alminoprofen_Tod1995_reference.md)
+> **Tod_1995_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with knee effusion. [Run it in the simulator](drugs/drug_alminoprofen/Alminoprofen_Tod1995_reference.md?tab=Simulation) · [record](drugs/drug_alminoprofen/Alminoprofen_Tod1995_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Chae_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Baek2013_reference&quot;,&quot;label&quot;:&quot;Baek_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Baek2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Bajcetic2007_reference&quot;,&quot;label&quot;:&quot;Bajcetic_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Bajcetic2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Chen2013_reference&quot;,&quot;label&quot;:&quot;Chen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chen2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Wells2010_reference&quot;,&quot;label&quot;:&quot;Wells_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Wells2010_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_plasma_potassium&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 plasma potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_plasma_potassium.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Baek2013_reference&quot;,&quot;label&quot;:&quot;Baek_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Baek2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Bajcetic2007_reference&quot;,&quot;label&quot;:&quot;Bajcetic_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Bajcetic2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Chae2018_reference&quot;,&quot;label&quot;:&quot;Chae_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Duncton2016_reference&quot;,&quot;label&quot;:&quot;Duncton_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Duncton2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_2_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_4_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_4_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_4_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_8_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_8_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_8_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Wells2010_reference&quot;,&quot;label&quot;:&quot;Wells_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Wells2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_plasma_potassium&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 plasma potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_plasma_potassium.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telmisartan — `Telmisartan_Chae2018_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Chae2018_reference" status="not_modelled" stale="false" population="healthy volunteers" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
+> Telmisartan bioavailability F is missing, so the model uses library defaults instead of the paper's estimate.
+
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Chae2018_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chae D, Son M, Kim Y, Son H, Park K. Mechanistic Model for Blood Pressure and Heart Rate Changes Produced by Telmisartan in Human Beings. Basic & clinical pharmacology & toxicology 122(1):139–148 (2018).
@@ -15,7 +17,7 @@ Chae D, Son M, Kim Y, Son H, Park K. Mechanistic Model for Blood Pressure and He
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 80 mg, oral, multiple, every 24 h.
 
@@ -23,11 +25,13 @@ Chae D, Son M, Kim Y, Son H, Park K. Mechanistic Model for Blood Pressure and He
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
-**Availability:** Model withheld: a core parameter is unspecified.
+**Parameters:** 7 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_telmisartan/Telmisartan_Chae2018_reference/Telmisartan_Chae2018_reference.svg" alt="Telmisartan_Chae2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
@@ -37,10 +41,11 @@ Chae D, Son M, Kim Y, Son H, Park K. Mechanistic Model for Blood Pressure and He
 | V 3 (L) | V3 | 835 | L | 7.0 |
 | Ka (/h) | kabs | 4.53 | /h | 40.4 |
 | Tlag (h) | tlag | 0.25 | h | 0.8 |
+| volume of distribution | V | 500.0 | L |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +55,13 @@ Chae D, Son M, Kim Y, Son H, Park K. Mechanistic Model for Blood Pressure and He
 
 ### Reviewer guidance
 
-**No model has been built from this record yet; the model does not reproduce the paper's terminal half-life (paper 10.3, model 15.7).**
+**Telmisartan bioavailability F is missing, so the model uses library defaults instead of the paper's estimate.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — telmisartan: CL 22 L/h, V2 67.9 L, Q 19.1 L/h, V3 835 L, kabs 4.53 /h, tlag 0.25 h.
+The record lacks an explicit value for the bioavailability parameter F. Consequently, the review flagged the use of default conventions rather than paper-supported estimates. This unreported parameter affects the simulated profile but is not justified by the source data. Extracted — telmisartan: CL 22 L/h, V2 67.9 L, Q 19.1 L/h, V3 835 L, kabs 4.53 /h, tlag 0.25 h, V 500 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -68,6 +73,7 @@ Independently confirmed by `gpt-oss-120b`.
 | V 3 (L) | `Q77` · V3 | 835 | L | 0.835 | m3 | l | 7.0 | space_fold (0.95) | tab_1:row5:col1 |
 | Ka (/h) | `Q49` · kabs | 4.53 | /h | 0.001258 | 1/s | 1/h | 40.4 | exact (1) | tab_1:row6:col1 |
 | Tlag (h) | `Q83` · tlag | 0.25 | h | 900 | s | h | 0.8 | exact (1) | tab_1:row7:col1 |
+| volume of distribution | `Q61` · V | 500.0 | L | 0.5 | m3 | L |  | review_gapfill (0.7) | Jeong_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,10 +82,13 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F']
+
 **Interpretation flags:**
 - table section residual_error: 'RUV (%)' routed out of structural estimates ('Residual variability (CV, %)')
 - routed 'PPV CL (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- dropped duplicate Q22 ('CL-V2', value '0.95') — already have one for this compound
+- dropped unlinked row (NIL): 'CL-V2' — extend the ontology if this is a real PK parameter (source ['tab_1:row10:col1'])
 - routed 'PPV V2 (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - dropped duplicate Q30 ('CL-Q', value '0.80') — already have one for this compound
 - dropped duplicate Q30 ('V2-Q', value '0.95') — already have one for this compound
@@ -88,6 +97,7 @@ Independently confirmed by `gpt-oss-120b`.
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/h)); Q64 (V 2 (L)); Q30 (Q (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=telmisartan
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- gap-filled Q61 (V) from Jeong_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -119,25 +129,27 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row2:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_1:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_1:row6:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Jeong_2025:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_1:row3:col1'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['tab_1:row5:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['tab_1:row7:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 22.04 | ['tab_1:row2:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 22 L/h | ['tab_1:row2:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 500 L | ['Jeong_2025:review'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 67.9 L | ['tab_1:row3:col1'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=telmisartan) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | skipped |  |  |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | fail | 10.3 | 15.72 | 1.526 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 15.72 |  | non-numeric value |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=telmisartan) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,7 +166,7 @@ _All readers agree on the compared fields of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -165,10 +177,14 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 80 mg, single dose, first-order absorption (ka 4.53 /h, lag 15 min, F 0.9). Dose in the paper: 80 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_telmisartan/Telmisartan_Chae2018_reference/Telmisartan_Chae2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_telmisartan/Telmisartan_Chae2018_reference/Telmisartan_Chae2018_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Telmisartan_Chae2018_reference_params.json` · controls `Telmisartan_Chae2018_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Chae2018_reference&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Chae2018_reference%0APaper%3A%20Chae_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Chae2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 16:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 09:29 UTC</sub>

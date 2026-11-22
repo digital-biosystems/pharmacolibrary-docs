@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;cisatracurium&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/&quot;},{&quot;label&quot;:&quot;Sorooshian_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisatracurium_Liu2012_reference&quot;,&quot;label&quot;:&quot;Liu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/Cisatracurium_Liu2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisatracurium_Tran1998_reference&quot;,&quot;label&quot;:&quot;Tran_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/Cisatracurium_Tran1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisatracurium_Liu2012_reference&quot;,&quot;label&quot;:&quot;Liu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/Cisatracurium_Liu2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisatracurium_Tran1998_reference&quot;,&quot;label&quot;:&quot;Tran_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/Cisatracurium_Tran1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisatracurium — `Cisatracurium_Sorooshian1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:54 UTC (Rejected), but the paper was screened again on 2026-10-07 02:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The plasma volume of distribution unit '1' is dimensionally inconsistent with the apparent volume value of 13.28.
+> Apparent volume of distribution for cisatracurium has a dimensionless unit instead of volume, causing a structural mismatch.
 
-<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Sorooshian1996_reference" status="rejected" stale="true" population="young and elderly adult patients" measured-compound="cisatracurium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Sorooshian1996_reference" status="rejected" stale="false" population="young and elderly adult patients" measured-compound="cisatracurium" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sorooshian SS, Stafford MA, Eastwood NB, Boyd AH, Hull CJ, Wright PM. Pharmacokinetics and pharmacodynamics of cisatracurium in young and elderly adult patients. Anesthesiology 84(5):1083–1091 (1996).
@@ -17,7 +17,7 @@ Sorooshian SS, Stafford MA, Eastwood NB, Boyd AH, Hull CJ, Wright PM. Pharmacoki
 
 ## Population and dosing
 
-**Population:** young and elderly adult patients · condition anesthesia · age group mixed · n = &gt;&lt;/.
+**Population:** young and elderly adult patients · condition anesthesia · age group mixed.
 
 ## Model
 
@@ -36,7 +36,7 @@ Sorooshian SS, Stafford MA, Eastwood NB, Boyd AH, Hull CJ, Wright PM. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Sorooshian SS, Stafford MA, Eastwood NB, Boyd AH, Hull CJ, Wright PM. Pharmacoki
 
 ### Reviewer guidance
 
-**The plasma volume of distribution unit '1' is dimensionally inconsistent with the apparent volume value of 13.28.**
+**Apparent volume of distribution for cisatracurium has a dimensionless unit instead of volume, causing a structural mismatch.**
 
-The record lists cisatracurium with an apparent volume of distribution of 13.28 unit '1'. This unit is dimensionally mismatched with a structural parameter representing volume. Because the record was abstract-only, these summary statistics stand in for a fitted model. Extracted — cisatracurium: CL 319 ml/min, V/F 13.3 1.
+The record lists the apparent volume of distribution as 13.28 with a dimensionless unit rather than a volume unit. This creates a conflict because a volume parameter must have cubic length dimensions. The record was also built from the abstract alone, so these summary statistics stand in for a fitted model. Extracted — cisatracurium: CL 319 ml/min, V/F 13.3 1.
 
 Independently confirmed by `gpt-oss-120b`.
 

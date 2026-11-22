@@ -62,7 +62,7 @@ Diaxozon is a toxic metabolic product of the insecticide Diazinon. Diazinon is a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-10 01:01 | 6:24 | 2/0/0 | 1/1/0 | 0/0/0 | 136,673/9,535 | einfracz / qwen3.8-27b | 3 | 1/1 | 3/0 | 0 |
+| 2026-11-10 01:01 | 6:24 | 2/0/0 | 2/1/0 | 0/0/0 | 136,673/9,535 | einfracz / qwen3.8-27b | 3 | 1/1 | 3/0 | 0 |
 
 ## Coverage
 

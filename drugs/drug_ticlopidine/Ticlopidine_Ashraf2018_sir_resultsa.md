@@ -4,11 +4,11 @@
 
 # ticlopidine — `Ticlopidine_Ashraf2018_sir_resultsa`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:31 UTC (Rejected), but the paper was screened again on 2026-10-05 16:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The S-ketamine intrinsic clearance of 304 L/h was rejected because its unit could not be converted to a standard metric.
+> Ticlopidine record rejected due to dimensional mismatch for S-ketamine intercompartmental clearance Q, which uses volume/time instead of volume/mass/time.
 
-<div class="pk-model-meta" hidden drug="ticlopidine" model-id="Ticlopidine_Ashraf2018_sir_resultsa" status="rejected" stale="true" population="healthy adults" measured-compound="S-ketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ticlopidine" model-id="Ticlopidine_Ashraf2018_sir_resultsa" status="rejected" stale="false" population="healthy adults" measured-compound="S-ketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ashraf MW, Peltoniemi MA, Olkkola KT, Neuvonen PJ, Saari TI. Semimechanistic Population Pharmacokinetic Model to Predict the Drug-Drug Interaction Between S-ketamine and Ticlopidine in Healthy Human Volunteers. CPT: pharmacometrics & systems pharmacology 7(10):687–697 (2018).
@@ -38,7 +38,7 @@ Ashraf MW, Peltoniemi MA, Olkkola KT, Neuvonen PJ, Saari TI. Semimechanistic Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Ashraf MW, Peltoniemi MA, Olkkola KT, Neuvonen PJ, Saari TI. Semimechanistic Pop
 
 ### Reviewer guidance
 
-**The S-ketamine intrinsic clearance of 304 L/h was rejected because its unit could not be converted to a standard metric.**
+**Ticlopidine record rejected due to dimensional mismatch for S-ketamine intercompartmental clearance Q, which uses volume/time instead of volume/mass/time.**
 
-The record reports the intrinsic clearance as 304 L/h, but this specific unit format was not recognized by the system for calculation. This prevented the parameter from being processed with a valid standard value, triggering a dimension mismatch error. Consequently, the S-ketamine model was rejected despite containing other valid parameters such as volume of distribution of 14.4 L. Extracted — ticlopidine: CLint 304 L/h, V 14.4 L, Q 288 L/h.
+The parameter Q, representing intercompartmental clearance between central and peripheral compartments, is specified with a value of 288 in units of L/h. This unit dimension conflicts with the required clearance dimension of volume/mass/time, causing a structural check failure. Although the measured compound is S-ketamine, the record is associated with the drug ticlopidine, highlighting a compound-label inconsistency. Extracted — ticlopidine: CLint 304 L/h, V 14.4 L, Q 288 L/h.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

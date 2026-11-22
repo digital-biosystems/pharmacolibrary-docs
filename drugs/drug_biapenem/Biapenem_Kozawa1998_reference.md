@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;biapenem&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/&quot;},{&quot;label&quot;:&quot;Kozawa_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biapenem_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biapenem_Akashita2015_reference&quot;,&quot;label&quot;:&quot;Akashita_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Akashita2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biapenem_Chen2024v2_reference&quot;,&quot;label&quot;:&quot;Chen_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Chen2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biapenem_Akashita2015_reference&quot;,&quot;label&quot;:&quot;Akashita_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Akashita2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biapenem_Chen2024v2_reference&quot;,&quot;label&quot;:&quot;Chen_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Chen2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biapenem_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # biapenem — `Biapenem_Kozawa1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:54 UTC (Rejected), but the paper was screened again on 2026-10-07 10:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Kozawa1998_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Kozawa1998_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kozawa O, Uematsu T, Matsuno H, Niwa M, Takiguchi Y, Matsumoto S et al. Pharmacokinetics and safety of a new parenteral carbapenem antibiotic, biapenem (L-627), in elderly subjects. Antimicrobial agents and chemotherapy 42(6):1433–1436 (1998).
@@ -17,7 +17,7 @@ Kozawa O, Uematsu T, Matsuno H, Niwa M, Takiguchi Y, Matsumoto S et al. Pharmaco
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group mixed · n = ?n/a: 15.
+**Population:** healthy volunteers · condition healthy · age group mixed.
 
 ## Model
 
@@ -36,7 +36,7 @@ Kozawa O, Uematsu T, Matsuno H, Niwa M, Takiguchi Y, Matsumoto S et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Kozawa O, Uematsu T, Matsuno H, Niwa M, Takiguchi Y, Matsumoto S et al. Pharmaco
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — biapenem: t1/2β 1.51 h, kabs 0.5 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % ur: this record has none, the second reading 52.6; it also differs on 1 more field. That field does not shape the model.
 

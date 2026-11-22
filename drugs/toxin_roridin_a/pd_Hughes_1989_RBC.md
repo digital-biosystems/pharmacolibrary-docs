@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a mechanistic description for the pharmacodynamic model, as the model family and effect form are classified as unknown. No specific pharmacokinetic or pharmacodynamic parameters (such as IC50, Imax, or rate constants) are available for roridin_a acting on the RBC response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Hughes_1989`
 - **model family:** `unknown`
 - **driver:** `dose_only`

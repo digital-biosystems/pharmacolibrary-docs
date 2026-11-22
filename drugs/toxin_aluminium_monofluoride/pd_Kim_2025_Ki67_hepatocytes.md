@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> SIRP-EV administration led to an increase in Ki67+ hepatocytes, indicative of liver regeneration. The mechanism involves binding to and suppressing CD47 on necroptotic hepatocytes and promoting macrophage efferocytosis.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kim_2025`
 - **model family:** `unknown`
 - **driver:** `dose_only`

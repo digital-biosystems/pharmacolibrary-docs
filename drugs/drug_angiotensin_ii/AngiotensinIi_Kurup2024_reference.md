@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;angiotensin II&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/&quot;},{&quot;label&quot;:&quot;Kurup_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ghatta_2004_Ang_II&quot;,&quot;label&quot;:&quot;Ghatta_2004 \u00b7 Ang II&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Ghatta_2004_Ang_II.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_DBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_SBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Saris_2000_FBF&quot;,&quot;label&quot;:&quot;Saris_2000 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Saris_2000_FBF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xu_2014_Aldo&quot;,&quot;label&quot;:&quot;Xu_2014 \u00b7 Aldo&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Xu_2014_Aldo.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baan_1997_FBF&quot;,&quot;label&quot;:&quot;Baan_1997 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Baan_1997_FBF.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ghatta_2004_Ang_II&quot;,&quot;label&quot;:&quot;Ghatta_2004 \u00b7 Ang II&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Ghatta_2004_Ang_II.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_DBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_SBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Saris_2000_FBF&quot;,&quot;label&quot;:&quot;Saris_2000 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Saris_2000_FBF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xu_2014_Aldo&quot;,&quot;label&quot;:&quot;Xu_2014 \u00b7 Aldo&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Xu_2014_Aldo.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baan_1997_FBF&quot;,&quot;label&quot;:&quot;Baan_1997 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Baan_1997_FBF.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
-> Total clearance for angiotensin ii was rejected as 0.000412 L/h because this value is physiologically implausible.
+> Angiotensin II was rejected because its reported total clearance, 0.000412 L/h, has an implausible magnitude consistent with a unit/scale extraction error.
 
 <div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Kurup2024_reference" status="rejected" stale="false" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="2C"></div>
 
@@ -40,7 +40,7 @@ Kurup S, de Mendizabal NV, Becker S, Bolella E, De Sousa D, Fätkenheuer G et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Kurup S, de Mendizabal NV, Becker S, Bolella E, De Sousa D, Fätkenheuer G et al
 
 ### Reviewer guidance
 
-**Total clearance for angiotensin ii was rejected as 0.000412 L/h because this value is physiologically implausible.**
+**Angiotensin II was rejected because its reported total clearance, 0.000412 L/h, has an implausible magnitude consistent with a unit/scale extraction error.**
 
-The extracted clearance parameter for angiotensin ii is listed as 0.000412 L/h, which falls outside the physiological window for this molecule. A second reader disagreed on the extracted value for this parameter, identifying a potential unit or scale extraction error. This implausible magnitude for angiotensin ii clearance triggered the rejection of the model record. Extracted — angiotensin ii: CL 0.000412 L/h, V1 3.08 L, V2 4.36 L, Q 0.0359 L/h.
+The record reports total clearance of 0.000412 L/h, central and peripheral volumes of 3.08 L and 4.36 L, and intercompartmental clearance of 0.0359 L/h. A second reader supplied no corresponding values for total clearance or intercompartmental clearance, so those reported values are disputed. Extracted — angiotensin ii: CL 0.000412 L/h, V1 3.08 L, V2 4.36 L, Q 0.0359 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.000412, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.000412, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -85,20 +85,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/8 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.0 (0/8 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 0.000412 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q30]` | 0.0359 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q312]` | 26.7 | 0.0225 | mismatch |
-| `gpt-oss:120b` | `values[Q319]` |  | 0.85 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q45]` | 1.0 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q61]` | 0.0364 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q63]` | 3.08 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q64]` | 4.36 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 0.000412 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` | 0.0359 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 26.7 | 0.0225 | mismatch |
+| `gpt-oss-120b` | `values[Q319]` |  | 0.85 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q45]` | 1.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 0.0364 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 3.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` | 4.36 |  | only_one_extracted |
 
 </details>
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ciclosporin&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/&quot;},{&quot;label&quot;:&quot;Kauv_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Albitar_2022_eGFR&quot;,&quot;label&quot;:&quot;Albitar_2022 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wan_2025_EASI&quot;,&quot;label&quot;:&quot;Wan_2025 \u00b7 EASI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Wan_2025_EASI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wan_2025_o_SCORAD&quot;,&quot;label&quot;:&quot;Wan_2025 \u00b7 o-SCORAD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Wan_2025_o_SCORAD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Albitar_2022_eGFR&quot;,&quot;label&quot;:&quot;Albitar_2022 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wan_2025_EASI&quot;,&quot;label&quot;:&quot;Wan_2025 \u00b7 EASI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Wan_2025_EASI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wan_2025_o_SCORAD&quot;,&quot;label&quot;:&quot;Wan_2025 \u00b7 o-SCORAD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Wan_2025_o_SCORAD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciclosporin — `Ciclosporin_Kauv2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Kauv2025_reference" status="simulated" stale="false" population="" measured-compound="ciclosporin" parameterization="apparent" topology="2C"></div>
+> Ciclosporin CL/F of 14.3 L/h was refused because Kauv_2025 studies mycophenolic acid, with ciclosporin only a co-medication or covariate.
+
+<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Kauv2025_reference" status="rejected" stale="false" population="" measured-compound="ciclosporin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Kauv J, Feuillet S, Barrail-Tran A, Delemos A, Legrand T, Verstuyft C et al. Population pharmacokinetics of mycophenolic acid and Bayesian estimator in lung transplant adults recipients in the early post-transplant period. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 214:107290 (2025).
@@ -27,6 +29,8 @@ Kauv J, Feuillet S, Barrail-Tran A, Delemos A, Legrand T, Verstuyft C et al. Pop
 <figure class="pk-models-diagram"><img src="drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference/Ciclosporin_Kauv2025_reference.svg" alt="Ciclosporin_Kauv2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) (a) | CL/F | 14.3 | L/h |
@@ -38,7 +42,7 @@ Kauv J, Feuillet S, Barrail-Tran A, Delemos A, Legrand T, Verstuyft C et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +52,13 @@ Kauv J, Feuillet S, Barrail-Tran A, Delemos A, Legrand T, Verstuyft C et al. Pop
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Ciclosporin CL/F of 14.3 L/h was refused because Kauv_2025 studies mycophenolic acid, with ciclosporin only a co-medication or covariate.**
+
+The record reports ciclosporin CL/F as 14.3 L/h, but the paper focuses on mycophenolic acid pharmacokinetics and mentions ciclosporin only as a co-administered immunosuppressant or covariate. The record also assumes F=1 and Fm=1, with no molar correction, under apparent parameterization. A second reader disputed the verdict (agreement 0.5; 0 of 1 agreed) and disagreed on several extracted values. Extracted — ciclosporin: CL/F 14.3 L/h, V1 27.4 L, V2 6.6e+03 L, Q 1.2 mL/min, kabs 1.21 h -1, tlag 0.25 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 30, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -127,15 +133,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ciclosporin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | ciclosporin (or metabolite) | paper about another drug |  | paper subject is not ciclosporin: the paper is about another drug; this one is a co-medication or covariate: The study focuses on the pharmacokinetics of mycophenolate acid (MPA), with ciclosporin only mentioned as a co-administered immunosuppressant or a covariate aff |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=ciclosporin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,63 +154,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference/Ciclosporin_Kauv2025_reference_modelica.zip" download>Ciclosporin_Kauv2025_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference/Ciclosporin_Kauv2025_reference_fmi.zip" download>Ciclosporin_Kauv2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference/Ciclosporin_Kauv2025_reference_matlab.zip" download>Ciclosporin_Kauv2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference/Ciclosporin_Kauv2025_reference_matlab_simbio.zip" download>Ciclosporin_Kauv2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference/Ciclosporin_Kauv2025_reference_sbml.zip" download>Ciclosporin_Kauv2025_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference/Ciclosporin_Kauv2025_reference_cellml.zip" download>Ciclosporin_Kauv2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 1.203 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 900 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.00025 | kg |
-| input | model | `Cl` | 3.972e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0003914 | m3/kg |
-| input | model | `k12` | 7.299e-07 | 1/s |
-| input | model | `k21` | 3.032e-09 | 1/s |
-| input | model | `ka` | 0.0003361 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Kauv J, Feuillet S, Barrail-Tran A, Delemos A, Legrand T, Verstuyft C et al. Population pharmacokinetics of mycophenolic acid and Bayesian estimator in lung transplant adults recipients in the early post-transplant period. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 214:107290 (2025). [doi:10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290)
-
-**This record:** Pharmacolibrary, model `Ciclosporin_Kauv2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_CiclosporinKauv2025reference,
-  title  = {{Pharmacolibrary model Ciclosporin_Kauv2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference},
-  note   = {Parameters from doi:10.1016/j.ejps.2025.107290},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

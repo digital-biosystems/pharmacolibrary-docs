@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;esomeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/&quot;},{&quot;label&quot;:&quot;Chung_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Esomeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Esomeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # esomeprazole — `Esomeprazole_Chung2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Esomeprazole clearance was 221.0 L/h, central volume 121.0 L, and absorption rate 0.95 h−1, with bioavailability assumed to be 1.
-
-<div class="pk-model-meta" hidden drug="esomeprazole" model-id="Esomeprazole_Chung2022_reference" status="needs_review" stale="false" population="" measured-compound="esomeprazole" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="esomeprazole" model-id="Esomeprazole_Chung2022_reference" status="simulated" stale="false" population="" measured-compound="esomeprazole" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Chung TK, Lee HA, Lee KR, Jang SB, Yu KS, Lee H. A population PK-PD model of YH4808, a novel P-CAB, and intragastric pH that incorporated negative feedback by increased intragastric pH onto the systemic exposure to YH4808. CPT: pharmacometrics & systems pharmacology 11(9):1223–1233 (2022).
@@ -29,8 +27,6 @@ Chung TK, Lee HA, Lee KR, Jang SB, Yu KS, Lee H. A population PK-PD model of YH4
 <figure class="pk-models-diagram"><img src="drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference/Esomeprazole_Chung2022_reference.svg" alt="Esomeprazole_Chung2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 221.0 | L/h |
@@ -39,7 +35,7 @@ Chung TK, Lee HA, Lee KR, Jang SB, Yu KS, Lee H. A population PK-PD model of YH4
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +45,11 @@ Chung TK, Lee HA, Lee KR, Jang SB, Yu KS, Lee H. A population PK-PD model of YH4
 
 ### Reviewer guidance
 
-**Esomeprazole clearance was 221.0 L/h, central volume 121.0 L, and absorption rate 0.95 h−1, with bioavailability assumed to be 1.**
-
-The model used an apparent parameterization where bioavailability and metabolic availability were set to 1, ignoring molar correction. This assumption caused the deviation check to fail because the values did not align with standard expectations. The second reader disagreed on a specific value, citing 0.26 where the record listed null. No value was extracted for the lag time, so a placeholder was used instead. Extracted — esomeprazole: CL/F 221 L/h, V1/F 121 L, kabs 0.95 h−1.
+**Every check that could be run on this record passed.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q83: this record has none, the second reading 0.26. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -120,15 +114,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=esomeprazole) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-2: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=esomeprazole) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -198,7 +193,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 30 mg, single dose, first-order absorption (ka 0.95 /h, F 1). Doses in the paper: 30, 50, 100, 200, 400, 600, 800 mg.
+**Administration: oral** — 30 mg, single dose, first-order absorption (ka 0.95 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 30 mg oral (A02BC05) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference/Esomeprazole_Chung2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference/Esomeprazole_Chung2022_reference_sim_controls.json"></dbs-fmusim>
 

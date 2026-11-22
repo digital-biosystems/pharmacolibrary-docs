@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/&quot;},{&quot;label&quot;:&quot;Chigutsa_2020 \u00b7 nca_200_mg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 Tumor size (sum of longest diameters of target lesions)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because abemaciclib metabolites M2 and M20 have no metabolic rate constant linking them to the parent drug.
+> Abemaciclib’s metabolism links to M2 and M20 have no formation-parameter value, leaving both metabolites unreachable and the record rejected.
 
 <div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_nca_200_mg" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -55,11 +54,11 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 ### Reviewer guidance
 
-**Rejected because abemaciclib metabolites M2 and M20 have no metabolic rate constant linking them to the parent drug.**
+**Abemaciclib’s metabolism links to M2 and M20 have no formation-parameter value, leaving both metabolites unreachable and the record rejected.**
 
-The record shows both metabolites M2 and M20 are formed from abemaciclib but lack a defined formation rate parameter. The metabolic links are specified as 'none', indicating the model structure fails to connect the metabolites to the parent drug via a valid kinetic parameter. Extracted — abemaciclib: Fab 0.448 F, t1/2z 29.3 h, AUC∞ 3.73e+03 ng·h/mL, Cmax 114 ng/mL, CL 22.8 L/h, kabs 0.31 1/h); M2 (LSN2839567): t1/2z 72.6 h, AUC∞ 1.45e+03 ng.h/mL.
+Both metabolites are listed with zero compartments, and their formation from abemaciclib has no parameter value specified. A reported unit could not be converted to SI, but the record does not identify which parameter used that unit. Extracted — abemaciclib: Fab 0.448 F, t1/2z 29.3 h, AUC∞ 3.73e+03 ng·h/mL, Cmax 114 ng/mL, CL 22.8 L/h, kabs 0.31 1/h); M2 (LSN2839567): t1/2z 72.6 h, AUC∞ 1.45e+03 ng.h/mL.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

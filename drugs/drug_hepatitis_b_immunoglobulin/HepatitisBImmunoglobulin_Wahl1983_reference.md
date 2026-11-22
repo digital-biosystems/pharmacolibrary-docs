@@ -16,7 +16,7 @@ Wahl M, Hermodsson S, Kjellman H, Iwarson S. Recovery and turnover rate of hepat
 
 ## Population and dosing
 
-**Population:** healthy female volunteers · condition healthy · age group adult · n = https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2351158/.
+**Population:** healthy female volunteers · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed hepatitis B immunoglobulin, measured anti-HBs.
 

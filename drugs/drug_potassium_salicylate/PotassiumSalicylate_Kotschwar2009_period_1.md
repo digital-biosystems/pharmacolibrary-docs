@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Salicylate bioavailability used default values instead of paper estimates, and the model's terminal half-life exceeded the reported 0.615 h value.
+> The model's terminal half-life is 3.15 hours versus the paper's 0.615 hours, and bioavailability F was left at defaults rather than extracted from the study.
 
 <div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_period_1" status="needs_review" stale="false" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,9 +56,9 @@ Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesi
 
 ### Reviewer guidance
 
-**Salicylate bioavailability used default values instead of paper estimates, and the model's terminal half-life exceeded the reported 0.615 h value.**
+**The model's terminal half-life is 3.15 hours versus the paper's 0.615 hours, and bioavailability F was left at defaults rather than extracted from the study.**
 
-The record lacks an explicit bioavailability estimate, leaving that parameter at library defaults unsupported by the data. Simulating the model with the paper's dosing regimen yielded a terminal half-life of 3.15 h, deviating from the reported 0.615 h. A second reader also disagreed on the extraction of several parameter values, including absorption and clearance constants. Extracted — potassium salicylate: V 0.2 L/kg, CLb 4.3 mL/min/kg, kabs 0.22 h−1, tlag 2.81 h.
+The simulated terminal half-life of 3.15 hours is over five times the 0.615 hours reported in the paper, failing the consistency check by a wide margin. Additionally, the bioavailability (F) parameter was not extracted from the source and remains at a library default, meaning the model assumes a value not supported by the specific study data. A second reader disagreed with several parameter extractions, including the absence of F and the specific values for clearance and absorption, further complicating the record's validity. Extracted — potassium salicylate: V 0.2 L/kg, CLb 4.3 mL/min/kg, kabs 0.22 h−1, tlag 2.81 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1: this record has none, the second reading 6; it also differs on 5 more fields. That field does not shape the model.
 
@@ -156,6 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 0.615 | 3.151 | 5.123 | min→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 0.63 | 3.151 | 5.001 | h→SI vs simulated h |
 

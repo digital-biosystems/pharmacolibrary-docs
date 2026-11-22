@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Geola_1981 \u00b7 after_therapy_a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Latif2015_reference&quot;,&quot;label&quot;:&quot;Latif_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Latif2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Levothyroxine — `Levothyroxine_Geola1981_after_therapy_a`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:40 UTC (Rejected), but the paper was screened again on 2026-11-04 00:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The levothyroxine clearance parameter of 24.13 mL/min/kg failed the dimensional consistency check for its structural role.
+> The T4 metabolic clearance rate of 1.02 liters/day has incorrect dimensions for a rate constant, causing a dimension mismatch rejection.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Geola1981_after_therapy_a" status="rejected" stale="true" population="hypothyroid patient with Hashimoto&#39;s thyroiditis" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Geola1981_after_therapy_a" status="rejected" stale="false" population="53-year-old male with hypothyroidism" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone autoantibodies in a hypothyroid patient: effect on thyroxine metabolic clearance rate. The Journal of clinical endocrinology and metabolism 53(3):580–586 (1981).
@@ -17,7 +17,7 @@ Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone aut
 
 ## Population and dosing
 
-**Population:** hypothyroid patient with Hashimoto's thyroiditis · condition hypothyroidism · age group adult · n = The provided text is a case report describing a single 53-year-old male patient. The title and abstract explicitly refer to 'a Hypothyroid Patient' and 'In a 53-yr-old man'. No other subjects are mentioned in the available text..
+**Population:** hypothyroid patient with Hashimoto's thyroiditis · condition hypothyroidism · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed levothyroxine, measured thyroxine.
 
@@ -34,12 +34,12 @@ Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone aut
 | label | parameter | value | unit |
 |---|---|---|---|
 | T4 MCR (liters/day) | kmet | 1.02 | liters/day |
-| MS437 = | CL | 24.13 | mL/min/kg |
+| plasma clearance | CL | 24.13 | mL/min/kg |
 | V* | V | 47.0 | liter |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone aut
 
 ### Reviewer guidance
 
-**The levothyroxine clearance parameter of 24.13 mL/min/kg failed the dimensional consistency check for its structural role.**
+**The T4 metabolic clearance rate of 1.02 liters/day has incorrect dimensions for a rate constant, causing a dimension mismatch rejection.**
 
-The record lists the total clearance as 24.13 mL/min/kg, a mass-normalized unit that conflicts with the system volume of 47.0 liters. This specific unit mismatch caused the structural parameter check to fail, leading to the record's rejection. Additionally, the reviewer identified unextracted T3 concentration and T3 uptake parameters with values of 96 and 0.88 respectively. Extracted — levothyroxine: kmet 1.02 liters/day, CL 24.1 mL/min/kg, V 47 liter.
+The parameter is defined as a metabolite elimination rate constant, which requires reciprocal time units. The recorded value of 1.02 liters/day includes a volume dimension that conflicts with the required rate dimension. This unit conflict triggered the structural parameter dimension check failure. Extracted — levothyroxine: kmet 1.02 liters/day, CL 24.1 mL/min/kg, V 47 liter.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levothyroxine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -62,7 +62,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | T4 MCR (liters/day) | `Q51` · kmet | 1.02 | liters/day |  |  | l/d | llm (0.6) | Geola_1981_table_1:row12:col2 |
-| MS437 = | `Q22` · CL | 24.13 | mL/min/kg | 2.815e-05 | m3/s | L/h | review_gapfill (0.7) | Latif_2015:review |
+| plasma clearance | `Q22` · CL | 24.13 | mL/min/kg | 2.815e-05 | m3/s | L/h | review_gapfill (0.7) | Latif_2015:review |
 | V* | `Q61` · V | 47.0 | liter | 0.047 | m3 | L | review_gapfill (0.7) | Inada_1975:review |
 
 <details class="legend">
@@ -160,4 +160,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D%20Levothyroxine_Geola1981_after_therapy_a&body=Drug%3A%20levothyroxine%0ARecord%3A%20Levothyroxine_Geola1981_after_therapy_a%0APaper%3A%20Geola_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/Levothyroxine_Geola1981_after_therapy_a%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 00:26 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 01:13 UTC</sub>

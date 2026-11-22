@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;nordazepam&quot;,&quot;href&quot;:&quot;drugs/drug_nordazepam/&quot;},{&quot;label&quot;:&quot;L\u00f6scher_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nordazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nordazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nordazepam — `Nordazepam_Lscher1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-06 19:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because oxazepam and 3-hydroxydiazepam are orphan compartments with no elimination path.
+> Oxazepam and 3-hydroxydiazepam are isolated compartments with no metabolic link to their parent compounds.
 
-<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Lscher1981_reference" status="rejected" stale="true" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Lscher1981_reference" status="rejected" stale="false" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internationales de pharmacodynamie et de therapie 254(2):180–195 (1981).
@@ -38,7 +38,7 @@ Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internati
 
 ### Reviewer guidance
 
-**Record rejected because oxazepam and 3-hydroxydiazepam are orphan compartments with no elimination path.**
+**Oxazepam and 3-hydroxydiazepam are isolated compartments with no metabolic link to their parent compounds.**
 
-The model structure includes oxazepam and 3-hydroxydiazepam as metabolites, but no parameters define their elimination. Since the paper is an exposure/outcome study, it lacks the volume and clearance required for a compartmental model. The recorded bioavailability of 74-100% could not be reconciled with the abstract-only data. Extracted — nordazepam: t1/2β 3.2 hr, Fab 74-100% %; oxazepam: t1/2z 5.7 hr.
+The structural description places oxazepam and 3-hydroxydiazepam in the system without a connecting path from the parent drug diazepam. The metabolic link from nordazepam to oxazepam is missing, leaving oxazepam unreachable from the dose. Because the record relies solely on the abstract, these structural gaps prevented a coherent pharmacokinetic model from being formed. Extracted — nordazepam: t1/2β 3.2 hr, Fab 74-100% %; oxazepam: t1/2z 5.7 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (nordazepam) (metabolism); desmethyldiazepam (nordazepam) → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

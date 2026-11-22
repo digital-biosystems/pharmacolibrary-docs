@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> Digitoxin volume of distribution 0.241 L was rejected as physiologically implausible for cats.
+> The digitoxin volume of distribution of 0.241 L is physiologically implausible, causing the model's rejection.
 
 <div class="pk-model-meta" hidden drug="digitoxin" model-id="Digitoxin_Flasch1979_reference" status="rejected" stale="false" population="cats" measured-compound="digitoxin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -36,7 +36,7 @@ Flasch H, Heniz N. Pharmacokinetics of dihydrodigitoxin in the cat. A comparison
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Flasch H, Heniz N. Pharmacokinetics of dihydrodigitoxin in the cat. A comparison
 
 ### Reviewer guidance
 
-**Digitoxin volume of distribution 0.241 L was rejected as physiologically implausible for cats.**
+**The digitoxin volume of distribution of 0.241 L is physiologically implausible, causing the model's rejection.**
 
-The record assigns a 0.241 L volume of distribution to digitoxin, a magnitude far outside the physiological range for feline pharmacokinetics. The second reader indicated this value likely refers to dihydrodigitoxin, the metabolite linked in the structure. The review relied on abstract-only data, meaning these summary statistics stand in for fitted model parameters. Extracted — digitoxin: V 0.241 L.
+The record links dihydrodigitoxin to dihydrodigitoxinic acid but assigns the volume of distribution value of 0.241 L to digitoxin. The clearance and volume check flagged this value as outside the physiological window, indicating a unit or scale extraction error. Additionally, the second reader identified the primary analyte as dihydrodigitoxin rather than digitoxin, highlighting a compound attribution discrepancy. Extracted — digitoxin: V 0.241 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digitoxin, the second reading dihydrodigitoxin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has digitoxin, the second reading dihydrodigitoxin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,18 +93,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[biological half-life of dh-dgt]` |  | 0.12 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[biological half-lives of dihydrodigitoxin]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution of dh-dgt]` | 0.241 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution of dh-dgt]` |  | 0.241 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | digitoxin | dihydrodigitoxin | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | digitoxin | dihydrodigitoxin | mismatch |
+| `gpt-oss-120b` | `parameters[biological half-life of dh-dgt]` |  | 0.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[biological half-lives of dihydrodigitoxin]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of dh-dgt]` | 0.241 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of dh-dgt]` |  | 0.241 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | digitoxin | dihydrodigitoxin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | digitoxin | dihydrodigitoxin | mismatch |
 
 </details>
 

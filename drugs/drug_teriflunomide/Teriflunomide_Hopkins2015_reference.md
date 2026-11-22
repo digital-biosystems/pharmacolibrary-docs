@@ -16,7 +16,7 @@ Hopkins AM, Wiese MD, Proudman SM, O'Doherty CE, Foster D, Upton RN. Semiphysiol
 
 ## Population and dosing
 
-**Population:** adults with rheumatoid arthritis · condition rheumatoid arthritis · age group adult · n = ? (The prompt requested YAML keys but the override demanded JSON. I will provide the JSON object as per the explicit 'OUTPUT FORMAT OVERRIDE' which takes precedence over the 'Worked example' format, but I must ensure all values correspond to the screening data provided.).
+**Population:** adults with rheumatoid arthritis · condition rheumatoid arthritis · age group adult.
 
 **Dosing:** 7, 10, 14, 20 mg, oral, multiple, every 24 h.
 

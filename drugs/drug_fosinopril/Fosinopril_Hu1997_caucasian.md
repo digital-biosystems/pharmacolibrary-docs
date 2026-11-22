@@ -4,11 +4,11 @@
 
 # fosinopril — `Fosinopril_Hu1997_caucasian`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-07 06:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. A dimension mismatch on a structural parameter caused the record rejection, as the fractional excretion unit could not be converted to SI.
+> The fosinoprilat record was rejected because macro-rate and elimination constants carry volume per time units instead of reciprocal time.
 
-<div class="pk-model-meta" hidden drug="fosinopril" model-id="Fosinopril_Hu1997_caucasian" status="rejected" stale="true" population="healthy Chinese and white men" measured-compound="fosinoprilat" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fosinopril" model-id="Fosinopril_Hu1997_caucasian" status="rejected" stale="false" population="healthy Chinese and white men" measured-compound="fosinoprilat" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hu OY, Ding PY, Huang CS, Hwang GM, Chu KM. Pharmacokinetics of fosinoprilat in Chinese and whites after intravenous administration. Journal of clinical pharmacology 37(9):834–840 (1997).
@@ -46,7 +46,7 @@ Hu OY, Ding PY, Huang CS, Hwang GM, Chu KM. Pharmacokinetics of fosinoprilat in 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.235). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.235). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Hu OY, Ding PY, Huang CS, Hwang GM, Chu KM. Pharmacokinetics of fosinoprilat in 
 
 ### Reviewer guidance
 
-**A dimension mismatch on a structural parameter caused the record rejection, as the fractional excretion unit could not be converted to SI.**
+**The fosinoprilat record was rejected because macro-rate and elimination constants carry volume per time units instead of reciprocal time.**
 
-The parameter representing the fraction of the dose excreted unchanged is reported with a value of 45.90 but carries a unit of 'n = 9', which is a sample count rather than a valid measurement unit. This non-standard unit prevented the value from being converted to standard SI units, resulting in a dimension mismatch error. The record was rejected despite other parameters like clearance and volume of distribution being present with correct units. Extracted — fosinoprilat: λ1 3.85 L/hr, kel 0.55 L/hr, t1/2α 0.33 hr, t1/2β 1.58 hr, t1/2γ 8.24 hr, V 58.1 mL/kg, Vss 1.16e+04 mL, AUC∞ 3.42e+03 ng · hr/mL, … (+3).
+The fast-phase macro-rate constant is 3.85 L/hr and the elimination rate constant is 0.55 L/hr, both dimensionally invalid for rate constants. Additionally, the fraction excreted unchanged in urine, reported as 45.90%, is stored with the unit 'n = 9'. A second reader also disagreed on the presence of values for several parameters, including AUC∞ and clearance. Extracted — fosinoprilat: λ1 3.85 L/hr, kel 0.55 L/hr, t1/2α 0.33 hr, t1/2β 1.58 hr, t1/2γ 8.24 hr, V 58.1 mL/kg, Vss 1.16e+04 mL, AUC∞ 3.42e+03 ng · hr/mL, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf: this record has 3423, the second reading none; it also differs on 12 more fields. That field does not shape the model.
 

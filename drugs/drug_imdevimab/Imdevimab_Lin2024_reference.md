@@ -4,11 +4,11 @@
 
 # Imdevimab — `Imdevimab_Lin2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 14:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Imdevimab clearance of 0.2359 L/day was rejected due to a dimensional mismatch from an unconvertible unit on the absorption rate constant.
+> Absorption rate constant units were unconvertible, triggering a dimension mismatch that rejected the record.
 
-<div class="pk-model-meta" hidden drug="Imdevimab" model-id="Imdevimab_Lin2024_reference" status="rejected" stale="true" population="pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts" measured-compound="imdevimab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Imdevimab" model-id="Imdevimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts" measured-compound="imdevimab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Pharmacokinetics of Casirivimab and Imdevimab in Pediatric and Adult Non-Infected Individuals, Pediatric and Adult Ambulatory or Hospitalized Patients or Household Contacts of Patients Infected with SARS-COV-2. Pharmaceutical research 41(10):1933–1949 (2024).
@@ -16,7 +16,7 @@ Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Ph
 
 ## Population and dosing
 
-**Population:** pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts · condition SARS-CoV-2 infection · age group mixed · n = ..
+**Population:** pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts · condition SARS-CoV-2 infection · age group mixed.
 
 **Dosing:** 300, 600, 1200, 8000 mg, iv, sc, single.
 
@@ -47,7 +47,7 @@ Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.559). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.559). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Ph
 
 ### Reviewer guidance
 
-**Imdevimab clearance of 0.2359 L/day was rejected due to a dimensional mismatch from an unconvertible unit on the absorption rate constant.**
+**Absorption rate constant units were unconvertible, triggering a dimension mismatch that rejected the record.**
 
-The absorption rate constant and bioavailability were extracted with units labeled only as 'units', preventing conversion to standard SI units. This limitation resulted in a dimension mismatch for the clearance parameter, leading to the record's rejection. A second reader additionally noted that this record is missing several covariate effects on clearance and a specific pediatric bioavailability value present in the source. Extracted — imdevimab: CL 0.236 L/day, V1 3.82 L, Q 0.403 L/day, V2 3.2 L, kabs 0.235 units, Fab 0.662 units.
+The record lists the absorption rate constant with the unit string 'units', which cannot be converted to SI seconds. This caused a structural validation failure because the unit dimension conflicted with the required time inverse dimension. Consequently, the model was held back due to this unresolvable unit conversion error. Extracted — imdevimab: CL 0.236 L/day, V1 3.82 L, Q 0.403 L/day, V2 3.2 L, kabs 0.235 units, Fab 0.662 units.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has casirivimab/imdevimab, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 

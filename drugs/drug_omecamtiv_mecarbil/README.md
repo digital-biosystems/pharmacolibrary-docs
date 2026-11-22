@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;omecamtiv mecarbil&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;OmecamtivMecarbil_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vu_2015_LVOTSV&quot;,&quot;label&quot;:&quot;Vu_2015 \u00b7 LVOTSV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/pd_Vu_2015_LVOTSV.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;OmecamtivMecarbil_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vu_2015_LVOTSV&quot;,&quot;label&quot;:&quot;Vu_2015 \u00b7 LVOTSV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/pd_Vu_2015_LVOTSV.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # omecamtiv mecarbil
 
@@ -25,7 +25,7 @@ Omecamtiv mecarbil is a cardiac stimulant acting as a calcium sensitizer for the
 
 ## Start here
 
-> **Chen_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy subjects and patients with heart failure with reduced ejection fraction, n = : 4346. [Run it in the simulator](drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md?tab=Simulation) · [record](drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md)
+> **Chen_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy subjects and patients with heart failure with reduced ejection fraction. [Run it in the simulator](drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md?tab=Simulation) · [record](drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Omecamtiv mecarbil is a cardiac stimulant acting as a calcium sensitizer for the
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Chen_2022_reference](drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Chen PW et al., Population Pharmacokinetic Properties o…, Journal of cardiovascular p… (2022) | [10.1097/FJC.0000000000001207](https://doi.org/10.1097/FJC.0000000000001207) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Chen_2022_reference](drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Chen PW et al., Population Pharmacokinetic Properties o…, Journal of cardiovascular p… (2022) | [10.1097/FJC.0000000000001207](https://doi.org/10.1097/FJC.0000000000001207) |
 
 ## Pharmacodynamics (PD)
 
@@ -45,15 +45,6 @@ Omecamtiv mecarbil is a cardiac stimulant acting as a calcium sensitizer for the
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Ting_2023_INa_T](drugs/drug_omecamtiv_mecarbil/pd_Ting_2023_INa_T.md) | transient component of voltage-gated Na+ current ← omecamtiv mecarbil · direct sigmoid Emax (Hill) effect | — | Ting CY et al., Characterization of Stimulatory Action…, Biomedicines (2023) | [10.3390/biomedicines11051351](https://doi.org/10.3390/biomedicines11051351) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vu_2015_SET](drugs/drug_omecamtiv_mecarbil/pd_Vu_2015_SET.md) | systolic ejection time (SET) ← omecamtiv mecarbil · direct Emax (saturable) effect | — | Vu T et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2015) | [10.1002/jcph.538](https://doi.org/10.1002/jcph.538) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Vu_2015_LVOTSV](drugs/drug_omecamtiv_mecarbil/pd_Vu_2015_LVOTSV.md) | Doppler-derived left ventricular outflow tract stroke volume (LVOTSV) ← omecamtiv mecarbil · direct linear effect | ▶ model + simulator | Vu T et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2015) | [10.1002/jcph.538](https://doi.org/10.1002/jcph.538) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=omecamtiv_mecarbil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: MYBPC3 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -67,13 +58,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 12:48 | 0:07 | 1/0/0 | 3/0/0 | 0/0/0 | 7,096/587 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-13 12:48 | 0:07 | 1/0/0 | 6/0/0 | 0/0/0 | 7,096/587 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 3  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

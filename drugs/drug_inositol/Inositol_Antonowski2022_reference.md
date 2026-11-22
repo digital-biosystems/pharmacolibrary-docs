@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;inositol&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/&quot;},{&quot;label&quot;:&quot;Antonowski_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2016_reference&quot;,&quot;label&quot;:&quot;Phelps_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Taghizadeh_2022_IP1&quot;,&quot;label&quot;:&quot;Taghizadeh_2022 \u00b7 IP1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/pd_Taghizadeh_2022_IP1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2016_reference&quot;,&quot;label&quot;:&quot;Phelps_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Taghizadeh_2022_IP1&quot;,&quot;label&quot;:&quot;Taghizadeh_2022 \u00b7 IP1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/pd_Taghizadeh_2022_IP1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # inositol — `Inositol_Antonowski2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 16:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The AUC/dose parameter for myo-inositol uses a non-standard unit, preventing consistent dimensional analysis and rejecting the record.
+> The AUC/dose parameter for myo-inositol was rejected because its unit, mg/L·h/kg, caused a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Antonowski2022_reference" status="rejected" stale="true" population="Wistar rats" measured-compound="myo-inositol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Antonowski2022_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="myo-inositol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Antonowski T, Osowski A, Szczesny D, Szablińska-Piernik J, Juśkiewicz J, Lahuta L et al. Pharmacokinetics of. International journal of molecular sciences 23(19) (2022).
@@ -17,7 +17,7 @@ Antonowski T, Osowski A, Szczesny D, Szablińska-Piernik J, Juśkiewicz J, Lahut
 
 ## Population and dosing
 
-**Population:** Wistar rats · condition healthy · n = &gt;= 27.
+**Population:** Wistar rats · condition healthy.
 
 **Dosing:** 140000 mg, oral, single.
 
@@ -45,7 +45,7 @@ Antonowski T, Osowski A, Szczesny D, Szablińska-Piernik J, Juśkiewicz J, Lahut
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Antonowski T, Osowski A, Szczesny D, Szablińska-Piernik J, Juśkiewicz J, Lahut
 
 ### Reviewer guidance
 
-**The AUC/dose parameter for myo-inositol uses a non-standard unit, preventing consistent dimensional analysis and rejecting the record.**
+**The AUC/dose parameter for myo-inositol was rejected because its unit, mg/L·h/kg, caused a dimension mismatch.**
 
-The reported AUC/dose value of 2.34 is expressed in mg/L·h/kg, a unit that could not be standardized to SI units. This lack of standardization caused a dimension mismatch on a structural parameter. As a result, the model record was rejected because the parameter lacked a valid, consistent unit representation. Extracted — inositol: V/F 5.1 L, CL/F 0.853 L/h, kabs 1.89 1/h, C0 10 mg/L, kel 0.17 1/h, t1/2z 4.08 h, AUC/dose 2.34 mg/L·h/kg.
+The record lists the dose-normalised area under the concentration time curve for myo-inositol as 2.34 mg/L·h/kg. A dimension check identified a conflict between this mass-volume-time-mass unit and the expected dimension for the parameter. Consequently, the parameter was excluded from the review due to this unit inconsistency. Extracted — inositol: V/F 5.1 L, CL/F 0.853 L/h, kabs 1.89 1/h, C0 10 mg/L, kel 0.17 1/h, t1/2z 4.08 h, AUC/dose 2.34 mg/L·h/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 

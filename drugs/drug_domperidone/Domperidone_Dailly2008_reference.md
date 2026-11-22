@@ -16,7 +16,7 @@ Dailly E, Drouineau MH, Gournay V, Rozé JC, Jolliet P. Population pharmacokinet
 
 ## Population and dosing
 
-**Population:** preterm neonates · condition preterm · age group neonate · n = &gt;=32.
+**Population:** preterm neonates · condition preterm · age group neonate.
 
 ## Model
 
@@ -36,7 +36,7 @@ Dailly E, Drouineau MH, Gournay V, Rozé JC, Jolliet P. Population pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Dailly E, Drouineau MH, Gournay V, Rozé JC, Jolliet P. Population pharmacokinet
 
 The record lists a clearance of 0.92 L/h and a volume of distribution of 0.405 L for domperidone. These magnitudes fall outside the physiological window for the preterm neonate population. The values were derived from summary statistics in the abstract rather than a fitted model, leading to the rejection. Extracted — domperidone: CL 0.92 L/h, V 0.405 L, kabs 0.0843 h(-1).
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,7 +87,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
 _All readers agree on the compared fields of this record._
 

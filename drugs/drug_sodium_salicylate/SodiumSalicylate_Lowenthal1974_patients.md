@@ -4,11 +4,11 @@
 
 # sodium salicylate — `SodiumSalicylate_Lowenthal1974_patients`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:20 UTC (Rejected), but the paper was screened again on 2026-10-07 06:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The 0.00879 min⁻¹ rate constant was rejected because its unit could not be converted to SI, causing a dimension mismatch.
+> The model was rejected because the terminal elimination rate constant was provided with a unit dimension that conflicted with its required rate constant dimension.
 
-<div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_patients" status="rejected" stale="true" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_patients" status="rejected" stale="false" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric patients. The Journal of clinical investigation 54(5):1221–1226 (1974).
@@ -47,7 +47,7 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 
 ### Reviewer guidance
 
-**The 0.00879 min⁻¹ rate constant was rejected because its unit could not be converted to SI, causing a dimension mismatch.**
+**The model was rejected because the terminal elimination rate constant was provided with a unit dimension that conflicted with its required rate constant dimension.**
 
-The record reports a micro-rate constant (k₆₁) of 0.00879 min⁻¹. Although the unit is standard, it was not recognized by the review system, so the parameter lacked a valid SI value. This prevented the dimensional consistency check from passing, resulting in the model's rejection. Extracted — sodium salicylate: λ1 0.408 min⁻¹, kel 0.0026 1/min, k13 0.281 min⁻¹, k31 0.121 min⁻¹, kcomp 0.00879 min⁻¹, V 0.05 liter/kg, Vnorm 0.168 liter/kg, t1/2z 266 min, … (+1).
+The elimination rate constant for salicylic acid is reported as 0.00260 min⁻¹. The verification process flagged a conflict between the reported unit and the expected dimension for this structural parameter. Additionally, the specific unit notation was not recognized by the conversion system, preventing the derivation of a valid SI value for the parameter. Extracted — sodium salicylate: λ1 0.408 min⁻¹, kel 0.0026 1/min, k13 0.281 min⁻¹, k31 0.121 min⁻¹, kcomp 0.00879 min⁻¹, V 0.05 liter/kg, Vnorm 0.168 liter/kg, t1/2z 266 min, … (+1).
 
 <sub>reviewed by qwen3.8-27b</sub>
 

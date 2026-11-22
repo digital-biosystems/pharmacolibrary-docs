@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Vortioxetine bioavailability, clearance, and absorption lag time lacked extracted values, forcing the use of library placeholders.
+> Vortioxetine bioavailability, clearance, and lag time were missing, and the model structure omitted the required peripheral compartment.
 
 <div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="model_quarantined" stale="false" population="adults" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -65,9 +65,9 @@ Frederiksen T, Areberg J, Schmidt E, Bjerregaard Stage T, Brøsen K. Quantificat
 
 ### Reviewer guidance
 
-**Vortioxetine bioavailability, clearance, and absorption lag time lacked extracted values, forcing the use of library placeholders.**
+**Vortioxetine bioavailability, clearance, and lag time were missing, and the model structure omitted the required peripheral compartment.**
 
-The record was quarantined because key vortioxetine parameters—bioavailability, clearance, and absorption lag time—were missing, resulting in defaulted values rather than explicit estimates. Additionally, the model builder substituted these parameters with generic defaults because no specific fitted numbers were available for the parent drug. The topology defined as a parent-metabolite system did not align with the simulated single-compartment enteral structure, further contributing to the record's rejection. Extracted — vortioxetine: kabs 0.16 1/h, V1 1.51e+03 L, Q 21.1 L/h, V2 571 L, tlag 0.966 h; Lu AA34443: kabs 0.281 1/h, fm 0.19, Q 7.69 L/h, V1 155 L, CL 22.5 L/h, V2 211 L.
+The record lacks explicit values for vortioxetine bioavailability, total clearance, and absorption lag time, resulting in placeholder values. The defined parent-metabolite topology with a peripheral compartment does not match the single-central-compartment structure actually simulated. Additionally, covariate effects for weight and CYP2D6 were defined but not exercised in the simulations. Extracted — vortioxetine: kabs 0.16 1/h, V1 1.51e+03 L, Q 21.1 L/h, V2 571 L, tlag 0.966 h; Lu AA34443: kabs 0.281 1/h, fm 0.19, Q 7.69 L/h, V1 155 L, CL 22.5 L/h, V2 211 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of lbm on clother: this record has none, the second reading 1.36; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -208,14 +208,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 10 scholar param(s) emitted or defaulted | 10 covered | all structural parameters accounted for |
-| T3_topology_template |  | fail | parent_metabolite_hepatic → PK_3M_3C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 10 scholar param(s) emitted or defaulted | 10 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite_hepatic → PK_3M_3C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.789, 0 of 1 reader(s) agree | 0.789 | cross-check disputed by a second reader: verdict disputed, agreement 0.789, 0 of 1 reader(s) agree |
+| T1_t_half_beta | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -233,30 +234,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference/Vortioxetine_Frederiksen2021v2_reference_matlab.zip" download>Vortioxetine_Frederiksen2021v2_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference/Vortioxetine_Frederiksen2021v2_reference_matlab_simbio.zip" download>Vortioxetine_Frederiksen2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference/Vortioxetine_Frederiksen2021v2_reference_sbml.zip" download>Vortioxetine_Frederiksen2021v2_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference/Vortioxetine_Frederiksen2021v2_reference_cellml.zip" download>Vortioxetine_Frederiksen2021v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Frederiksen T, Areberg J, Schmidt E, Bjerregaard Stage T, Brøsen K. Quantification of In Vivo Metabolic Activity of CYP2D6 Genotypes and Alleles Through Population Pharmacokinetic Analysis of Vortioxetine. Clinical pharmacology and therapeutics 109(1):150–159 (2021). [doi:10.1002/cpt.1972](https://doi.org/10.1002/cpt.1972)
-
-**This record:** Pharmacolibrary, model `Vortioxetine_Frederiksen2021v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference>
-
-```bibtex
-@misc{pharmacolibrary_VortioxetineFrederiksen2021v2reference,
-  title  = {{Pharmacolibrary model Vortioxetine_Frederiksen2021v2_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference},
-  note   = {Parameters from doi:10.1002/cpt.1972},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

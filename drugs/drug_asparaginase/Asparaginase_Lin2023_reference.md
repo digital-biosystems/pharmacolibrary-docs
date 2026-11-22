@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;asparaginase&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/&quot;},{&quot;label&quot;:&quot;Lin_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hoeben_2026_TV&quot;,&quot;label&quot;:&quot;Hoeben_2026 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/pd_Hoeben_2026_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hoeben_2026_TV&quot;,&quot;label&quot;:&quot;Hoeben_2026 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/pd_Hoeben_2026_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # asparaginase — `Asparaginase_Lin2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:25 UTC (Rejected), but the paper was screened again on 2026-10-07 23:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Absorption rate constant units mismatch, blocking review of asparaginase pharmacokinetics.
+> Asparaginase absorption rate constant has inconsistent units, and body surface area covariate on volume was not extracted.
 
-<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="true" population="patients with acute lymphoblastic leukemia/lymphoblastic lymphoma" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="false" population="patients with acute lymphoblastic leukemia/lymphoblastic lymphoma" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmacokinetics of intramuscular recombinant Erwinia chrysanthemi asparaginase (JZP458) in patients with acute lymphoblastic leukemia. Clinical and translational science 16(5):898–909 (2023).
@@ -17,7 +17,7 @@ Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmaco
 
 ## Population and dosing
 
-**Population:** patients with acute lymphoblastic leukemia/lymphoblastic lymphoma · condition acute lymphoblastic leukemia/lymphoblastic lymphoma · age group mixed · n = &gt;=166.
+**Population:** patients with acute lymphoblastic leukemia/lymphoblastic lymphoma · condition acute lymphoblastic leukemia/lymphoblastic lymphoma · age group mixed.
 
 **Dosing:** 25, 37.5, 50 mg/m2, im, multiple.
 
@@ -43,7 +43,7 @@ Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmaco
 
 ### Reviewer guidance
 
-**Absorption rate constant units mismatch, blocking review of asparaginase pharmacokinetics.**
+**Asparaginase absorption rate constant has inconsistent units, and body surface area covariate on volume was not extracted.**
 
-The absorption rate constant is listed in l/h, a unit not convertible to SI, preventing the dimension check. This caused the reviewer to reject the record. A second reader disagreed on the identification of the dosing compound and primary analyte. Extracted — JZP458: CL 146 mL/h, V 445 mL, kabs 0.0369 l/h, Frel 0.359.
+The absorption rate constant is recorded as 0.0369 l/h, a unit that does not match the required 1/time dimension. Additionally, the body surface area covariate on central volume, with a value of 1.61, was missing from this record. The second reader also disagreed that the dose compound and primary analyte were identified. Extracted — JZP458: CL 146 mL/h, V 445 mL, kabs 0.0369 l/h, Frel 0.359.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has JZP458, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

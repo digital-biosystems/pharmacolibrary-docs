@@ -4,11 +4,11 @@
 
 # potassium chloride — `PotassiumChloride_Li2025_literature_1_granules_64_meq`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 17:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because it lacks volume of distribution and clearance parameters, preventing construction of a compartmental population PK model for potassium chloride.
+> The record lacks volume of distribution and clearance, so it is not a compartmental population PK model for potassium.
 
-<div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_literature_1_granules_64_meq" status="rejected" stale="true" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_literature_1_granules_64_meq" status="rejected" stale="false" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium chloride extended-release tablets and potassium citrate granules in patients with cardiovascular emergencies. Frontiers in cardiovascular medicine 12:1636090 (2025).
@@ -16,7 +16,7 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 ## Population and dosing
 
-**Population:** patients with cardiovascular emergencies · age group adult · n = &gt;=330.
+**Population:** patients with cardiovascular emergencies · age group adult.
 
 **Dosing:** 500, 1000 mg, oral, multiple.
 
@@ -41,7 +41,7 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 ### Reviewer guidance
 
-**Record rejected because it lacks volume of distribution and clearance parameters, preventing construction of a compartmental population PK model for potassium chloride.**
+**The record lacks volume of distribution and clearance, so it is not a compartmental population PK model for potassium.**
 
-The record contains no distribution volume or elimination clearance, identifying it as an exposure/outcome paper rather than a full pharmacokinetic model. Additionally, a structural parameter encountered a dimension mismatch, and an associated unit could not be converted to SI units, so the value lacked a standard SI representation. The second reader disagreed on the specific identification of the dose compound and the assignment of the absorption rate constant value. Extracted — potassium chloride: C0 4.6 mmol/L, tmax 1 h, Cmax 5.8 mmol/L, kabs 0.1 h-1.
+The parameter list includes C0, tmax, Cmax, and kabs, but omits the essential distribution volume and elimination clearance required for a one-compartment structural model. Although the paper reports a 5.8 mmol/L Cmax, these exposure metrics alone do not define the PK structure. The absence of elimination parameters means the record cannot describe the disposition of potassium chloride in patients with cardiovascular emergencies. Extracted — potassium chloride: C0 4.6 mmol/L, tmax 1 h, Cmax 5.8 mmol/L, kabs 0.1 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

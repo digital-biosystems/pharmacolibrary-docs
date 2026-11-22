@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;rupatadine&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/&quot;},{&quot;label&quot;:&quot;Santamar\u00eda_2017 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rupatadine_Santamara2017_base&quot;,&quot;label&quot;:&quot;Santamar\u00eda_2017_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/Rupatadine_Santamara2017_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rupatadine_Santamara2017_base&quot;,&quot;label&quot;:&quot;Santamar\u00eda_2017_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/Rupatadine_Santamara2017_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rupatadine — `Rupatadine_Santamara2017_base`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="rupatadine" model-id="Rupatadine_Santamara2017_base" status="simulated" stale="false" population="6-11 year olds with allergic rhinitis" measured-compound="rupatadine" parameterization="apparent" topology="2C"></div>
+> Rupatadine’s apparent clearance (CL/F), 547 L/h, is held back because a second reader could not confirm rupatadine as the dose compound or primary analyte.
+
+<div class="pk-model-meta" hidden drug="rupatadine" model-id="Rupatadine_Santamara2017_base" status="needs_review" stale="false" population="6-11 year olds with allergic rhinitis" measured-compound="rupatadine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Santamaría E, Estévez JA, Riba J, Izquierdo I, Valle M. Population pharmacokinetic modelling of rupatadine solution in 6-11 year olds and optimisation of the experimental design in younger children. PloS one 12(4):e0176091 (2017).
@@ -29,6 +31,8 @@ Santamaría E, Estévez JA, Riba J, Izquierdo I, Valle M. Population pharmacokin
 <figure class="pk-models-diagram"><img src="drugs/drug_rupatadine/Rupatadine_Santamara2017_base/Rupatadine_Santamara2017_base.svg" alt="Rupatadine_Santamara2017_base diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | ka (h–1) | kabs | 0.53 | h–1 |  |
@@ -40,7 +44,7 @@ Santamaría E, Estévez JA, Riba J, Izquierdo I, Valle M. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +54,13 @@ Santamaría E, Estévez JA, Riba J, Izquierdo I, Valle M. Population pharmacokin
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Rupatadine’s apparent clearance (CL/F), 547 L/h, is held back because a second reader could not confirm rupatadine as the dose compound or primary analyte.**
+
+The second reader marked both the dose compound and primary analyte as unknown; agreement was 0.8, with 0 of 1 reader agreeing. The record assumes F=1 and Fm=1 with no molar correction, and reports no parameter-specific failure. Extracted — rupatadine: kabs 0.53 h–1, tlag 0.22 h, CL/F 547 L/h, V1/F 102 L, Q/F 208 L/h, V2/F 1.54e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rupatadine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -130,15 +136,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=rupatadine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=rupatadine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

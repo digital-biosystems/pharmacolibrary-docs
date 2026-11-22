@@ -4,11 +4,11 @@
 
 # flupirtine — `Flupirtine_Giorgi2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:54 UTC (Rejected), but the paper was screened again on 2026-10-07 06:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="flupirtine" model-id="Flupirtine_Giorgi2016_reference" status="needs_review" stale="true" population="healthy adult mares" measured-compound="flupirtine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flupirtine" model-id="Flupirtine_Giorgi2016_reference" status="needs_review" stale="false" population="healthy adult mares" measured-compound="flupirtine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Giorgi M, De Vito V, Poapolathep A, Rychshanova R, Sgorbini M, Owen H. Pharmacokinetics and disposition of flupirtine in the horse. Veterinary journal (London, England : 1997) 208:76–80 (2016).
@@ -16,7 +16,7 @@ Giorgi M, De Vito V, Poapolathep A, Rychshanova R, Sgorbini M, Owen H. Pharmacok
 
 ## Population and dosing
 
-**Population:** healthy adult mares · condition healthy · age group adult · n = &gt; 6.
+**Population:** healthy adult mares · condition healthy · age group adult.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -37,7 +37,7 @@ Giorgi M, De Vito V, Poapolathep A, Rychshanova R, Sgorbini M, Owen H. Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Giorgi M, De Vito V, Poapolathep A, Rychshanova R, Sgorbini M, Owen H. Pharmacok
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flupirtine: t1/2z 10.3 h, Fab 71.4 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flupirtine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

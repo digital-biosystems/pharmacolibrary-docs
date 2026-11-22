@@ -5,11 +5,11 @@
 
 # bretylium tosilate — `BretyliumTosilate_Narang1980_b_b`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:54 UTC (Rejected), but the paper was screened again on 2026-10-08 16:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The renal clearance value of 0.709 L/h/kg for bretylium was rejected because its mass-normalized unit prevented standardization to SI units.
+> The rejection does not identify a specific bretylium parameter or value: it alleges a mismatch between hr⁻¹ and 1/time, which are dimensionally equivalent.
 
-<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_b_b" status="rejected" stale="true" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_b_b" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretylium in man after intravenous administration. Journal of pharmacokinetics and biopharmaceutics 8(4):363–372 (1980).
@@ -17,7 +17,7 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ## Population and dosing
 
-**Population:** normal male volunteers · condition healthy · age group adult · n = &gt;=4.
+**Population:** normal male volunteers · condition healthy · age group adult.
 
 **Dosing:** 280 mg, iv, single.
 
@@ -51,7 +51,7 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,13 +61,13 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ### Reviewer guidance
 
-**The renal clearance value of 0.709 L/h/kg for bretylium was rejected because its mass-normalized unit prevented standardization to SI units.**
+**The rejection does not identify a specific bretylium parameter or value: it alleges a mismatch between hr⁻¹ and 1/time, which are dimensionally equivalent.**
 
-The record lists the renal clearance as 0.709 L/h/kg, a unit that does not convert directly to the standard SI unit of volume per time. This inability to convert the mass-normalized unit caused a dimension mismatch during the structural parameter check. Consequently, the model was refused due to this fundamental unit incompatibility. Extracted — bretylium tosilate: λ1 2.16 hr⁻¹, t1/2α 19.3 min, kel 0.1 hr⁻¹, t1/2β 6.93 hr, k12 1.24 hr⁻¹, k21 0.384 hr⁻¹, kabs 0.018 hr⁻¹, V1 1.37 liters/kg, … (+5).
+The record lists bretylium rate parameters λ1 (2.16 hr⁻¹), kel (0.100 hr⁻¹), k12 (1.242 hr⁻¹), k21 (0.384 hr⁻¹), and kabs (0.018 hr⁻¹), but does not say which one the finding concerns. The stated dimensions, hr⁻¹ and 1/time, agree, so the reported dimensional mismatch is inconclusive. The record also says a reported unit could not be converted to SI, without identifying the affected parameter. Extracted — bretylium tosilate: λ1 2.16 hr⁻¹, t1/2α 19.3 min, kel 0.1 hr⁻¹, t1/2β 6.93 hr, k12 1.24 hr⁻¹, k21 0.384 hr⁻¹, kabs 0.018 hr⁻¹, V1 1.37 liters/kg, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has bretylium, the second reading bretylium_tosilate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

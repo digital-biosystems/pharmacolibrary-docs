@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fluorouracil_Jarugula1997_50_mg_kg",
+ "molar_masses": {
+  "central.C": 0.1300772
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0,
+  3500.0,
+  7000.0
+ ],
+ "parameters": {
+  "Cl": 4.2777777777777785e-05,
+  "F": 0.9,
+  "MM": 0.1300772,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002298571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "ka": 3.611111111111111e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9080.485915411984
+ },
+ "reference_peaks": {
+  "central.C": 0.0003885350258264619
+ },
+ "stop_time": 97200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -17,7 +17,7 @@ Sharma S, Caritis S, Hankins G, Miodovnik M, Hebert MF, Mattison D et al. Popula
 
 ## Population and dosing
 
-**Population:** pregnant women with singleton gestation · condition pregnancy · age group adult · n = &gt;$61&lt;.
+**Population:** pregnant women with singleton gestation · condition pregnancy · age group adult.
 
 ## Model
 

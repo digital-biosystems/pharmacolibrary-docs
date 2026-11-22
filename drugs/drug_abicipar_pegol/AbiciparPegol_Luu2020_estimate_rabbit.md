@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The kout_peripheral value of 34300 1/h is physiologically implausible, triggering a rejection for a clearance magnitude error.
+> Abicipar pegol was rejected for an implausible clearance/volume magnitude, with its peripheral elimination rate reported as 34300 1/h.
 
 <div class="pk-model-meta" hidden drug="abicipar pegol" model-id="AbiciparPegol_Luu2020_estimate_rabbit" status="rejected" stale="false" population="patients with diabetic macular edema and neovascular age-related macular degeneration" measured-compound="abicipar_pegol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Luu KT, Seal JR, Attar M. A Mechanistic and Translational Pharmacokinetic-Pharma
 
 ### Reviewer guidance
 
-**The kout_peripheral value of 34300 1/h is physiologically implausible, triggering a rejection for a clearance magnitude error.**
+**Abicipar pegol was rejected for an implausible clearance/volume magnitude, with its peripheral elimination rate reported as 34300 1/h.**
 
-The extracted elimination rate constant for the peripheral compartment is 34300 1/h, a value that far exceeds physiological limits. This magnitude suggests a unit or scale extraction error rather than a valid kinetic parameter. While the vitreous volume is recorded as 4.4 ml, the excessive elimination rate invalidates the model's physiological consistency. Extracted — abicipar pegol: kout_peripheral 3.43e+04 1/h, kint 404 1/h, V 4.4 ml.
+The record reports a peripheral-compartment elimination rate of 34300 1/h, and the stated reason attributes the out-of-range clearance/volume magnitude to a unit or scale extraction error; no clearance/volume value is given. A second reader disputed the extracted peripheral elimination rate and proposed values for other parameter entries, but their meanings are not specified in the record. Extracted — abicipar pegol: kout_peripheral 3.43e+04 1/h, kint 404 1/h, V 4.4 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abicipar_pegol, the second reading abicipar pegol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

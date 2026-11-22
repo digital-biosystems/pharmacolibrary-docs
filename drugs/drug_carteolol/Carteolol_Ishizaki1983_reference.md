@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record held back because inter-compartmental transfer rates for carteolol use library placeholders rather than estimates, and summary statistics remain unvalidated.
+> Carteolol’s record was held back because k12 and k21 lack estimates, while its reported terminal half-life is 4.7 h.
 
 <div class="pk-model-meta" hidden drug="carteolol" model-id="Carteolol_Ishizaki1983_reference" status="needs_review" stale="false" population="normal volunteers" measured-compound="carteolol" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Ishizaki T, Ohnishi A, Sasaki T, Kushida K, Horai Y, Chiba K et al. Pharmacokine
 
 ## Population and dosing
 
-**Population:** normal volunteers · condition healthy · age group adult · n = &gt;=8.
+**Population:** normal volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -53,13 +53,13 @@ Ishizaki T, Ohnishi A, Sasaki T, Kushida K, Horai Y, Chiba K et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Record held back because inter-compartmental transfer rates for carteolol use library placeholders rather than estimates, and summary statistics remain unvalidated.**
+**Carteolol’s record was held back because k12 and k21 lack estimates, while its reported terminal half-life is 4.7 h.**
 
-The inter-compartmental transfer rates were not extracted from the abstract, so generic defaults were used instead of paper-specific estimates. The second reader could not confirm the dose compound or primary analyte, marking them as unknown. All reported values, including 10.13 ml/min/kg clearance and 83.7% bioavailability, were flagged as unreadable by the second reader, indicating a failure to verify the extracted statistics. Extracted — carteolol: t1/2β 4.7 h, V1 0.74 l/kg, V 4.05 l/kg, CL 10.1 ml/min/kg, CLR 6.56 ml/min/kg, CLNR 3.57 ml/min/kg, Fab 83.7 %.
+The record substitutes library defaults for k12 and k21, which affect the simulated profile but are unsupported by this paper. Because only the abstract was read, summary statistics stand in for a fitted model. Absolute bioavailability is recorded as 83.7%, although the second reader disputes whether that value belongs under the plasma-data bioavailability field. Extracted — carteolol: t1/2β 4.7 h, V1 0.74 l/kg, V 4.05 l/kg, CL 10.1 ml/min/kg, CLR 6.56 ml/min/kg, CLNR 3.57 ml/min/kg, Fab 83.7 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absolute bioavailability: this record has none, the second reading 83.7; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -137,14 +137,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=carteolol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=carteolol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

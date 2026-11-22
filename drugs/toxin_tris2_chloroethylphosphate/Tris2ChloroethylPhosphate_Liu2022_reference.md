@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record for tris(2-chloroethyl)phosphate in Daphnia magna contains only an exposure concentration, lacking essential kinetic parameters like rate constants, volume, or clearance.
 
 <div class="pk-model-meta" hidden drug="Tris(2-chloroethyl)phosphate" model-id="Tris2ChloroethylPhosphate_Liu2022_reference" status="rejected" stale="false" population="Daphnia magna" measured-compound="Tris(2-chloroethyl)phosphate" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Liu W, Zhang H, Ding J, He W, Zhu L, Feng J. Waterborne and Dietary Bioaccumulat
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record for tris(2-chloroethyl)phosphate in Daphnia magna contains only an exposure concentration, lacking essential kinetic parameters like rate constants, volume, or clearance.**
+
+The sole parameter provided is Ct (21.72 µg/L), which represents the measured exposure concentration at time t. The record is rejected because it contains no kinetic quantities, such as half-life, rate constants, volume, or clearance, reflecting an exposure/outcome study design rather than a fitted pharmacokinetic model. Extracted — Tris(2-chloroethyl)phosphate: Ct 21.7 μg/L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

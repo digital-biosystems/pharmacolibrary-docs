@@ -4,11 +4,11 @@
 
 # perindopril — `Perindopril_Parker2005_single_dose`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 06:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the binding capacity unit for perindoprilat could not be interpreted, blocking validation of the structural parameter.
+> Q was mislabeled as intercompartmental clearance but has units of 1/time, and kabs was mislabeled as absorption rate constant but has units of time.
 
-<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_single_dose" status="rejected" stale="true" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_single_dose" status="rejected" stale="false" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprilat in normal volunteers and patients: influence of age and disease state. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 26(1):104–113 (2005).
@@ -42,7 +42,7 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 ### Reviewer guidance
 
-**The record was rejected because the binding capacity unit for perindoprilat could not be interpreted, blocking validation of the structural parameter.**
+**Q was mislabeled as intercompartmental clearance but has units of 1/time, and kabs was mislabeled as absorption rate constant but has units of time.**
 
-The maximum binding capacity is listed as 2.5 g/L, a unit that could not be converted to standard SI units for dimensional analysis. This inability to standardize the unit prevented the validation of the apparent intercompartmental clearance between central and peripheral compartments. A second reader also disagreed on the values for the maximum binding capacity and the absorption rate constant. Extracted — perindoprilat: V 6.4 L, CLm/F 7 L h -1, Bmax 2.5 g L -1, Q 1.3 h -1, kabs 6.6 h.
+The intercompartmental clearance parameter has units of h^-1, which is dimensionally incompatible with clearance. The absorption rate constant parameter has units of h, which is dimensionally incompatible with a rate constant. These unit mismatches indicate the values were assigned to the wrong parameters. Extracted — perindoprilat: V 6.4 L, CLm/F 7 L h -1, Bmax 2.5 g L -1, Q 1.3 h -1, kabs 6.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

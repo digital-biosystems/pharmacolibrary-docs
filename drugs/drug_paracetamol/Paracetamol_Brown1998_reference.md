@@ -1,13 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Brown_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_estimate&quot;,&quot;label&quot;:&quot;Anderson_2005_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_estimate.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Imaizumi2017_reference&quot;,&quot;label&quot;:&quot;Imaizumi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Mian2019_reference&quot;,&quot;label&quot;:&quot;Mian_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Mian2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Brown1998_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Brown1998_reference" status="not_modelled" stale="false" population="febrile children" measured-compound="acetaminophen" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Brown1998_reference" status="curated_candidate" stale="false" population="febrile children" measured-compound="acetaminophen" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Brown RD, Kearns GL, Wilson JT. Integrated pharmacokinetic-pharmacodynamic model for acetaminophen, ibuprofen, and placebo antipyresis in children. Journal of pharmacokinetics and biopharmaceutics 26(5):559–579 (1998).
@@ -15,7 +15,7 @@ Brown RD, Kearns GL, Wilson JT. Integrated pharmacokinetic-pharmacodynamic model
 
 ## Population and dosing
 
-**Population:** febrile children · condition fever · age group child · n = 102.
+**Population:** febrile children · age group child.
 
 **Dosing:** 350, 700, 875 mg, oral, single.
 
@@ -29,22 +29,19 @@ Brown RD, Kearns GL, Wilson JT. Integrated pharmacokinetic-pharmacodynamic model
 <figure class="pk-models-diagram"><img src="drugs/drug_paracetamol/Paracetamol_Brown1998_reference/Paracetamol_Brown1998_reference.svg" alt="Paracetamol_Brown1998_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t_lag (hr) x̄ | tlag | 0.08 | hr |
 | kₐ (hr⁻¹) x̄ | kabs | 9.18 | hr⁻¹ |
 | β (hr⁻¹) x̄ | kel | 0.44 | hr⁻¹ |
 | T₁/₂ (hr) x̄ | t1/2z | 1.82 | hr |
-| Total n | equation variable | 35 |  |
 | AUC₀–∞ (µg/ml*hr) x̄ | AUC∞ | 35.79 | µg/ml*hr |
 | Va/F (L/kg) x̄ | V/F | 0.98 | L/kg |
 | Clp/F (L/kg/hr) x̄ | CL/F | 0.42 | L/kg/hr |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +51,9 @@ Brown RD, Kearns GL, Wilson JT. Integrated pharmacokinetic-pharmacodynamic model
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Every check that could be run on this record passed.**
 
-A reported unit could not be converted (AUC∞), so that value has no SI equivalent.
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of total n: this record has 35, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetaminophen, the second reading paracetamol; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,9 +64,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | t_lag (hr) x̄ | `Q83` · tlag | 0.08 | hr | 288 | s | h | exact (1) | Brown_1998_table_3:row0:col1 |
 | kₐ (hr⁻¹) x̄ | `Q49` · kabs | 9.18 | hr⁻¹ | 0.00255 | 1/s | 1/h | exact (1) | Brown_1998_table_3:row0:col3 |
 | β (hr⁻¹) x̄ | `Q47` · kel | 0.44 | hr⁻¹ | 0.0001222 | 1/s | 1/h | exact (1) | Brown_1998_table_3:row0:col5 |
-| T₁/₂ (hr) x̄ | `Q57` · t1/2z | 1.82 | hr | 6552 | s | h | exact (1) | Brown_1998_table_3:row0:col7 |
-| Total n | `Q900` · equation variable | 35 |  |  |  |  | llm (0.6) | Brown_1998_table_3:row0:col9, Brown_1998_table_4:row0:col7 |
-| AUC₀–∞ (µg/ml*hr) x̄ | `Q17` · AUC∞ | 35.79 | µg/ml*hr |  |  | µg/(h·ml) | exact (1) | Brown_1998_table_4:row0:col1 |
+| T₁/₂ (hr) x̄ | `Q57` · t1/2z | 1.82 | hr | 6552 | s | h | half_life_rule (0.95) | Brown_1998_table_3:row0:col7 |
+| AUC₀–∞ (µg/ml*hr) x̄ | `Q17` · AUC∞ | 35.79 | µg/ml*hr | 128.8 | kg*s/m3 | µg/(h·ml) | exact (1) | Brown_1998_table_4:row0:col1 |
 | Va/F (L/kg) x̄ | `Q76` · V/F | 0.98 | L/kg | 0.0686 | m3 | l/kg | exact (1) | Brown_1998_table_4:row0:col3 |
 | Clp/F (L/kg/hr) x̄ | `Q27` · CL/F | 0.42 | L/kg/hr | 8.167e-06 | m3/s | l/(h·kg) | special_case (0.95) | Brown_1998_table_4:row0:col5 |
 
@@ -83,7 +77,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
@@ -91,6 +84,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - dropped unlinked row (NIL): 'kₐ (hr⁻¹) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row0:col4'])
 - dropped unlinked row (NIL): 'β (hr⁻¹) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row0:col6'])
 - dropped unlinked row (NIL): 'T₁/₂ (hr) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row0:col8'])
+- dropped unlinked row (NIL): 'Total n' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row0:col9', 'Brown_1998_table_4:row0:col7'])
 - dropped unlinked row (NIL): 'AUC₀–∞ (µg/ml*hr) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_4:row0:col2'])
 - dropped unlinked row (NIL): 'Va/F (L/kg) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_4:row0:col4'])
 - dropped unlinked row (NIL): 'Clp/F (L/kg/hr) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_4:row0:col6'])
@@ -99,7 +93,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 3, 4
 - transposed table Brown_1998_table_3: logical view retains original source coordinates
 - transposed table Brown_1998_table_4: logical view retains original source coordinates
@@ -107,18 +100,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.917 (11/12 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[total n]` | 35 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 35.79 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` |  | 35.79 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clp/f]` | 0.42 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clp/f]` |  | 0.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 9.18 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 9.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 1.82 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  | 1.82 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t_lag]` | 0.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t_lag]` |  | 0.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[va/f]` | 0.98 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[va/f]` |  | 0.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.44 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` |  | 0.44 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | acetaminophen | paracetamol | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | acetaminophen | paracetamol | mismatch |
 
 </details>
 
@@ -136,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 1.82 | 1.617 | 0.8885 | 0.25 | reported t½β |
-| C5_dimension_Q17 | pass | [time] * [mass] / [length] ** 3 |  |  |  | ['Brown_1998_table_4:row0:col1'] |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['Brown_1998_table_4:row0:col1'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['Brown_1998_table_4:row0:col5'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  |  |  | ['Brown_1998_table_3:row0:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Brown_1998_table_3:row0:col3'] |
@@ -150,19 +158,27 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | skipped |  |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | skipped | 1.82 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.44 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.37 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.83 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.75 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 2.15 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=acetaminophen) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_cmax | reference | skipped |  | 0.004372 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.004372 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.004372 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.004372 |  | non-numeric value |
+| T1_t_half_terminal | reference | pass | 1.82 | 1.624 | 0.8925 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.44 | 1.624 | 1.128 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.37 | 1.624 | 1.186 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.83 | 1.624 | 0.8876 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.75 | 1.624 | 0.9282 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.15 | 1.624 | 0.7555 | hr→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.5411 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -197,7 +213,7 @@ The parameters this record sets on the template, in the template's SI units, and
 |---|---|---|---|---|
 | input | compound | `MM` | 0.1512 | kg/mol |
 | input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `Tlag` | 288 | s |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.00035 | kg |
@@ -232,7 +248,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 350 mg, single dose, first-order absorption (ka 9.18 /h, F 1). Doses in the paper: 350, 700, 875 mg.
+**Administration: oral** — 350 mg, single dose, first-order absorption (ka 9.18 /h, lag 4.8 min, F 1). Doses in the paper: 350, 700, 875 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_paracetamol/Paracetamol_Brown1998_reference/Paracetamol_Brown1998_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_paracetamol/Paracetamol_Brown1998_reference/Paracetamol_Brown1998_reference_sim_controls.json"></dbs-fmusim>
 
@@ -242,4 +258,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Brown1998_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Brown1998_reference%0APaper%3A%20Brown_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Brown1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 07:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:56 UTC</sub>

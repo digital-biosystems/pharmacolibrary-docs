@@ -66,16 +66,6 @@ Plasma heparin concentrations may be increased and activated partial thromboplas
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kemme_2002_t_PA](drugs/toxin_heparin/pd_Kemme_2002_t_PA.md) | t-PA antigen ← heparin · inhibition effect | — | Kemme MJ et al., Quantification of heparin-induced TFPI…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.t01-1-01705.x](https://doi.org/10.1046/j.1365-2125.2002.t01-1-01705.x) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Edrich_2015_ACT](drugs/toxin_heparin/pd_Edrich_2015_ACT.md) | activated clotting time ← heparin · direct linear effect | model (no simulator) | Edrich T et al., Heparin requirements for full anticoagu…, Clinical pharmacology : adv… (2015) | [10.2147/cpaa.s72185](https://doi.org/10.2147/cpaa.s72185) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=heparin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: F10 (inhibitor), FGF1 (activator), FGF19 (activator), FGF2 (activator), FGF4 (activator), FGFR1 (activator), FGFR2 (activator), FGFR4 (unknown), HGF (allosteric modulator), HPSE (substrate), PF4 (allosteric modulator), SELP (inhibitor), SERPINC1 (potentiator).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -88,7 +78,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-10 12:48 | 2:07:48 | 7/2/0 | 2/0/0 | 0/0/0 | 1,637,970/66,987 | einfracz / qwen3.8-27b | 71 | 9/54 | 70/1 | 0 |
+| 2026-11-10 12:48 | 2:07:48 | 7/2/0 | 3/0/0 | 0/0/0 | 1,637,970/66,987 | einfracz / qwen3.8-27b | 71 | 9/54 | 70/1 | 0 |
 
 ## Coverage
 

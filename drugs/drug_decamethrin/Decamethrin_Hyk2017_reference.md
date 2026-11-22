@@ -4,11 +4,11 @@
 
 # decamethrin — `Decamethrin_Hyk2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 12:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="decamethrin" model-id="Decamethrin_Hyk2017_reference" status="needs_review" stale="true" population="male broiler chickens" measured-compound="deltamethrin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="decamethrin" model-id="Decamethrin_Hyk2017_reference" status="needs_review" stale="false" population="male broiler chickens" measured-compound="deltamethrin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hüyük R, Eraslan G. Toxicokinetics of the broad-spectrum pyrethroid insecticide deltamethrin in broiler chickens. British poultry science 58(1):95–99 (2017).
@@ -42,7 +42,7 @@ Hüyük R, Eraslan G. Toxicokinetics of the broad-spectrum pyrethroid insecticid
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Hüyük R, Eraslan G. Toxicokinetics of the broad-spectrum pyrethroid insecticid
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — decamethrin: t1/2β 4 h, MRT 4.65 h, AUC∞ 702 h·ng/mL, t1/2α 0.18 h, Cmax 19.6 ng/ml, tmax 0.7 h, Fab 21.8 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deltamethrin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

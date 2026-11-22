@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;cisplatin&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/&quot;},{&quot;label&quot;:&quot;Urien_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisplatin — `Cisplatin_Urien2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:06 UTC (Rejected), but the paper was screened again on 2026-10-07 22:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the renal clearance portion for irreversibly protein-bound platinum has an impossible negative value.
+> The record was rejected because irreversibly protein-bound platinum has a negative renal-clearance fraction (CLR −0.36), while its formation-rate constant kfm is reported as 0.017 l−1.
 
-<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="true" population="adult patients treated with cisplatin for various malignancies" measured-compound="unbound platinum (cisplatin)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="false" population="adult patients treated with cisplatin for various malignancies" measured-compound="unbound platinum (cisplatin)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Urien S, Lokiec F. Population pharmacokinetics of total and unbound plasma cisplatin in adult patients. British journal of clinical pharmacology 57(6):756–763 (2004).
@@ -49,7 +49,7 @@ Urien S, Lokiec F. Population pharmacokinetics of total and unbound plasma cispl
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.04), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.04), gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +59,13 @@ Urien S, Lokiec F. Population pharmacokinetics of total and unbound plasma cispl
 
 ### Reviewer guidance
 
-**The record was rejected because the renal clearance portion for irreversibly protein-bound platinum has an impossible negative value.**
+**The record was rejected because irreversibly protein-bound platinum has a negative renal-clearance fraction (CLR −0.36), while its formation-rate constant kfm is reported as 0.017 l−1.**
 
-The parameter representing the renal portion of total clearance is listed as -0.36, which is physically implausible for any clearance measure. Additionally, the fraction of drug converted to the metabolite is recorded as -2, another negative value that contradicts pharmacokinetic principles. A dimension mismatch was also identified for a structural parameter, and a reported unit could not be converted to standard SI units, preventing value standardization. Extracted — irreversibly protein-bound platinum: kfm 0.017 l -1, fm -2, CLR -0.36, kel 0.014 h -1, t1/2z 50 h; unbound platinum (cisplatin): V1 23.4 l, CL 35.6 l h -1, allometric_exponent 0.83, Q 8.64 l h -1, V2 12 l, t1/2α 0.34 h.
+For irreversibly protein-bound platinum, kfm is defined as a first-order formation-rate constant, but its reported unit l−1 conflicts with the expected inverse-time dimension; that unit could not be converted to SI. CLR is defined as the renal portion of total clearance and is recorded as −0.36, matching the finding of a negative clearance or volume in a covariate scenario or base, though the finding does not specify which. Extracted — irreversibly protein-bound platinum: kfm 0.017 l -1, fm -2, CLR -0.36, kel 0.014 h -1, t1/2z 50 h; unbound platinum (cisplatin): V1 23.4 l, CL 35.6 l h -1, allometric_exponent 0.83, Q 8.64 l h -1, V2 12 l, t1/2α 0.34 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has unbound platinum (cisplatin), the second reading unbound cisplatin; it also differs on 23 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -124,14 +124,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `qwen3.8-27b` | not confirmed | 0.04 (1/25 fields) | 24 |
-| `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
 <details><summary>26 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[f m /v m , q dosem]` | 0.16 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[f m /v m , q dosem]` | 0.16 |  | only_one_extracted |
 | `qwen3.8-27b` | `model.links` | [['cisplatin (unbound platinum)', 'irreversibly protein-bound platinum', 'metabolism']] | [['cisplatin', 'protein-bound platinum', 'interconversion']] | mismatch |
 | `qwen3.8-27b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `qwen3.8-27b` | `parameters[cl m0 /v m]` | 0.014 |  | only_one_extracted |

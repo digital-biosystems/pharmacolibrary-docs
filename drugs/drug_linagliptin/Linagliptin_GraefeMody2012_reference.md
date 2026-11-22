@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Graefe-Mody_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4_activity&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4 activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4_activity.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linagliptin — `Linagliptin_GraefeMody2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-05 00:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is an exposure/outcome paper lacking clearance and volume, with a dimension mismatch on terminal half-life.
+> The area under the concentration-time curve for linagliptin is reported as 150 nmol·h/L, a mass concentration unit incompatible with the parameter’s substance concentration dimension.
 
-<div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Graefe-Mody U, Retlich S, Friedrich C. Clinical pharmacokinetics and pharmacodynamics of linagliptin. Clinical pharmacokinetics 51(7):411–427 (2012).
@@ -40,7 +39,7 @@ Graefe-Mody U, Retlich S, Friedrich C. Clinical pharmacokinetics and pharmacodyn
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +49,9 @@ Graefe-Mody U, Retlich S, Friedrich C. Clinical pharmacokinetics and pharmacodyn
 
 ### Reviewer guidance
 
-**The record is an exposure/outcome paper lacking clearance and volume, with a dimension mismatch on terminal half-life.**
+**The area under the concentration-time curve for linagliptin is reported as 150 nmol·h/L, a mass concentration unit incompatible with the parameter’s substance concentration dimension.**
 
-The paper reports no distribution volume or clearance, indicating it is not a compartmental population PK model. A dimension mismatch occurred for the terminal half-life parameter. A second reader could not verify the AUC, urinary excretion, or terminal half-life values extracted from the abstract. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
+The record lists the area under the curve as 150 nmol·h/L, which measures mass concentration over time rather than the substance concentration required for this parameter. Because the source text was abstract-only, these summary statistics stand in for a fitted model. A second reader failed to extract the same value, along with bioavailability, renal excretion, and absorption rate constant, leaving several parameters unverified. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 150, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 

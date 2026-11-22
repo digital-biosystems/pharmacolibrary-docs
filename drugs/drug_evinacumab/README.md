@@ -23,18 +23,8 @@ Evinacumab is a monoclonal antibody lipid-modifying agent used to treat homozygo
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Bihorel_2025_LDL_C](drugs/drug_evinacumab/pd_Bihorel_2025_LDL_C.md) | LDL-C ← evinacumab · indirect response — drug inhibits the production of LDL-C | model (no simulator) | Bihorel S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70016](https://doi.org/10.1002/psp4.70016) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Pu_2021_LDL_C](drugs/drug_evinacumab/pd_Pu_2021_LDL_C.md) | low-density lipoprotein cholesterol ← evinacumab · indirect response — drug inhibits the production of low-density lipoprotein cholesterol | model (no simulator) | Pu X et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12711](https://doi.org/10.1002/psp4.12711) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=evinacumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ANGPTL3 (antibody), ANGPTL3 (binder), ANGPTL3 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Bihorel_2025_LDL_C](drugs/drug_evinacumab/pd_Bihorel_2025_LDL_C.md) | LDL-C ← evinacumab · indirect response — drug inhibits the production of LDL-C | — | Bihorel S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70016](https://doi.org/10.1002/psp4.70016) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Pu_2021_LDL_C](drugs/drug_evinacumab/pd_Pu_2021_LDL_C.md) | low-density lipoprotein cholesterol ← evinacumab · indirect response — drug inhibits the production of low-density lipoprotein cholesterol | — | Pu X et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12711](https://doi.org/10.1002/psp4.12711) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

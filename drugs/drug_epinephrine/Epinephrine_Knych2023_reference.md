@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;epinephrine&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/&quot;},{&quot;label&quot;:&quot;Knych_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Yoo_2015_BI&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 BI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_BI.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_DAP&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 DAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_DAP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_HR&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SAP&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SAP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Drow&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Drow&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Drow.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Drug&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Drug&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Drug.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Perf&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Perf&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Perf.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The epinephrine two-compartment model was rejected because a compartment is unreachable, and parameter values are disputed.
+> Rejected due to an unreachable peripheral compartment and a mismatch between the extracted inter-compartmental clearances of 15 and 8452.6 mL/min.
 
 <div class="pk-model-meta" hidden drug="epinephrine" model-id="Epinephrine_Knych2023_reference" status="rejected" stale="false" population="" measured-compound="epinephrine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,9 +49,9 @@ Knych HK, Katzman S, McKemie DS, Arthur RM, Blea J. Pharmacokinetics and metabol
 
 ### Reviewer guidance
 
-**The epinephrine two-compartment model was rejected because a compartment is unreachable, and parameter values are disputed.**
+**Rejected due to an unreachable peripheral compartment and a mismatch between the extracted inter-compartmental clearances of 15 and 8452.6 mL/min.**
 
-The review identified an unreachable or orphan compartment in the two-compartment structure, meaning a compartment has no path from the dose. The second reader disagreed with the central volume of 410.4 L, arguing it should be 8452.6 L. Additionally, the second reader contested the peripheral volume, citing 1579.7 L in the record versus 3.97 L in their reading. Two further parameters, likely inter-compartmental or elimination rate constants, were recorded as null but assigned values of 0.071 and 0.361 by the second reader. Extracted — epinephrine: CL 15 mL/min, V 410 L, V2 1.58e+03 L, kabs 1.92 1/h.
+The two-compartment structure for epinephrine was flagged for containing a peripheral compartment with no path from the dose. A second reader disagreed on the extracted values for the inter-compartmental clearance, recording 15 instead of 8452.6 mL/min. Additionally, the peripheral volume parameter was missing, conflicting with the second reader’s value of 0.361 L. Extracted — epinephrine: CL 15 mL/min, V 410 L, V2 1.58e+03 L, kabs 1.92 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 15, the second reading 8452.6; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

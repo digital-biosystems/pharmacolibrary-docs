@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sodium hypochlorite aerosol exposure at concentrations of 0.22, 0.67, and 2.00 mg/L caused significant decreases in body weight gain in male and female Sprague-Dawley rats, with effects observed primarily on days 2, 4, and 8 post-exposure. The paper describes a toxicological observation of body weight loss and subsequent recovery without providing a specific quantitative pharmacodynamic model or mechanism values such as EC50 or Emax.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kim_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

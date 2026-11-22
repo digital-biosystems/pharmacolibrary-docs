@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artenimol&quot;,&quot;href&quot;:&quot;drugs/drug_artenimol/&quot;},{&quot;label&quot;:&quot;Ding_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artenimol_Ding2024_reference&quot;,&quot;label&quot;:&quot;Ding_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artenimol/Artenimol_Ding2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artenimol_Ding2024_reference&quot;,&quot;label&quot;:&quot;Ding_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artenimol/Artenimol_Ding2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # artenimol — `Artenimol_Ding2024_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:19 UTC (Simulated), but the paper was screened again on 2026-10-07 06:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The paper's PK parameters describe amodiaquine and piperaquine, while artenimol is only a co-medication.
 
-<div class="pk-model-meta" hidden drug="artenimol" model-id="Artenimol_Ding2024_reference" status="extracted" stale="true" population="" measured-compound="artenimol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="artenimol" model-id="Artenimol_Ding2024_reference" status="rejected" stale="false" population="" measured-compound="artenimol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pharmacokinetics of amodiaquine and piperaquine in African pregnant women with uncomplicated Plasmodium falciparum infections. CPT: pharmacometrics & systems pharmacology 13(11):1893–1903 (2024).
@@ -29,6 +29,8 @@ Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pha
 <figure class="pk-models-diagram"><img src="drugs/drug_artenimol/Artenimol_Ding2024_reference/Artenimol_Ding2024_reference.svg" alt="Artenimol_Ding2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL (pooled PK analysis, typical 70-kg adult patient) | CL | 55.4 | L/h |
@@ -36,7 +38,7 @@ Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.444), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by glm-5.3-flash (partly confirmed, agreement 0.667), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +48,13 @@ Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pha
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The paper's PK parameters describe amodiaquine and piperaquine, while artenimol is only a co-medication.**
 
-A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q21: this record has 10.0, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+The review found the subject drug is amodiaquine, with artenimol listed only as a co-medication. The extracted clearance value of 55.4 L/h and volume of 2165.9758 L likely belong to the other drug. A secondary reader disagreed on the values of two parameters, identifying them as null or inconsistent. Extracted — artenimol: CL 55.4 L/h, V 2.17e+03 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q21: this record has 10.0, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -72,22 +76,20 @@ A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parame
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `glm-5.3-flash` | partly confirmed | 0.667 (6/9 fields) | 3 |
 | `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `glm-5.3-flash` | `values[Q21]` | 10.0 |  | only_one_extracted |
-| `glm-5.3-flash` | `values[Q319]` | 0.75 | 0.75 | mismatch |
 | `glm-5.3-flash` | `values[Q336]` | 676 |  | only_one_extracted |
-| `glm-5.3-flash` | `values[Q75]` | 20.7 | 20.7 | mismatch |
 | `glm-5.3-flash` | `values[Q88]` |  | 10.0 | only_one_extracted |
 
 </details>
@@ -114,14 +116,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=artenimol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | artenimol (or metabolite) | paper about another drug |  | paper subject is not artenimol: the paper is about another drug; this one is a co-medication or covariate: The population PK models and parameters (CL/F, V/F, Q/F, ka) are for amodiaquine/desethylamodiaquine and piperaquine; dihydroartemisinin (artenimol) is only the |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=artenimol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -133,59 +136,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_artenimol/Artenimol_Ding2024_reference/Artenimol_Ding2024_reference_modelica.zip" download>Artenimol_Ding2024_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_artenimol/Artenimol_Ding2024_reference/Artenimol_Ding2024_reference_fmi.zip" download>Artenimol_Ding2024_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_artenimol/Artenimol_Ding2024_reference/Artenimol_Ding2024_reference_matlab.zip" download>Artenimol_Ding2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_artenimol/Artenimol_Ding2024_reference/Artenimol_Ding2024_reference_matlab_simbio.zip" download>Artenimol_Ding2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_artenimol/Artenimol_Ding2024_reference/Artenimol_Ding2024_reference_sbml.zip" download>Artenimol_Ding2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_artenimol/Artenimol_Ding2024_reference/Artenimol_Ding2024_reference_cellml.zip" download>Artenimol_Ding2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2844 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 1.539e-05 | m3/s |
-| input | model | `VdPerKg` | 0.03094 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pharmacokinetics of amodiaquine and piperaquine in African pregnant women with uncomplicated Plasmodium falciparum infections. CPT: pharmacometrics & systems pharmacology 13(11):1893–1903 (2024). [doi:10.1002/psp4.13211](https://doi.org/10.1002/psp4.13211)
-
-**This record:** Pharmacolibrary, model `Artenimol_Ding2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_artenimol/Artenimol_Ding2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_ArtenimolDing2024reference,
-  title  = {{Pharmacolibrary model Artenimol_Ding2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_artenimol/Artenimol_Ding2024_reference},
-  note   = {Parameters from doi:10.1002/psp4.13211},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

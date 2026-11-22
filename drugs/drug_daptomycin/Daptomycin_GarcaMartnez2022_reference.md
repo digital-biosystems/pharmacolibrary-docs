@@ -5,11 +5,11 @@
 
 # daptomycin — `Daptomycin_GarcaMartnez2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:01 UTC (Rejected), but the paper was screened again on 2026-10-07 11:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Peripheral volume recorded as 21 L/h causes a unit mismatch and unconvertible scale, rejecting the daptomycin model.
+> V2 uses L/h units for a volume of distribution, causing a dimension mismatch and physiological range flag on CL.
 
-<div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_GarcaMartnez2022_reference" status="rejected" stale="true" population="patients with normal and impaired renal function" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_GarcaMartnez2022_reference" status="rejected" stale="false" population="patients with normal and impaired renal function" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 García-Martínez T, Bellés-Medall MD, García-Cremades M, Ferrando-Piqueres R, Mangas-Sanjuán V, Merino-Sanjuan M. Population Pharmacokinetic/Pharmacodynamic Modelling of Daptomycin for Schedule Optimization in Patients with Renal Impairment. Pharmaceutics 14(10) (2022).
@@ -17,7 +17,7 @@ García-Martínez T, Bellés-Medall MD, García-Cremades M, Ferrando-Piqueres R,
 
 ## Population and dosing
 
-**Population:** patients with normal and impaired renal function · condition renal impairment · age group adult · n = . 157 observations from 46 patients.
+**Population:** patients with normal and impaired renal function · condition renal impairment · age group adult.
 
 ## Model
 
@@ -41,7 +41,7 @@ García-Martínez T, Bellés-Medall MD, García-Cremades M, Ferrando-Piqueres R,
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ García-Martínez T, Bellés-Medall MD, García-Cremades M, Ferrando-Piqueres R,
 
 ### Reviewer guidance
 
-**Peripheral volume recorded as 21 L/h causes a unit mismatch and unconvertible scale, rejecting the daptomycin model.**
+**V2 uses L/h units for a volume of distribution, causing a dimension mismatch and physiological range flag on CL.**
 
-The peripheral compartment volume is reported in L/h, a clearance unit, creating a dimensional error. This value could not be converted to a valid SI volume unit. The second reader disagrees with multiple extracted parameter values, including the central clearance and dissociation constant. Extracted — daptomycin: CL 6.98 L/h, V1 0.95 L, Q 1.96 L/h, V2 21 L/h, Bmax 160 mg/L, KD 3.56 mg/L.
+The parameter V2 is a volume of distribution but its record shows unit L/h, which conflicts with the required volume dimension. The value 6.98 L/h for clearance CL falls outside the plausible physiological window for daptomycin. A reported unit could not be converted to standard SI units, preventing proper validation. A second reader disagrees on CL, V1, V2, Q, KD, Bmax, and the renal covariate effect, indicating major extraction inconsistencies. Extracted — daptomycin: CL 6.98 L/h, V1 0.95 L, Q 1.96 L/h, V2 21 L/h, Bmax 160 mg/L, KD 3.56 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[bmax].value`: this record has 160, the second reading 26; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -5,11 +5,11 @@
 
 # cycloserine — `Cycloserine_Alghamdi2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-07 12:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance covariate parameter beta_CL was recorded as a negative value (-0.660), rendering the model implausible for TB patients.
+> The clearance covariate parameter beta_CL was recorded as a negative value (-0.660), rendering the model implausible for TB patients.
 
-<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Alghamdi2019_reference" status="rejected" stale="true" population="TB patients and healthy subjects" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Alghamdi2019_reference" status="rejected" stale="false" population="TB patients and healthy subjects" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Alghamdi WA, Alsultan A, Al-Shaer MH, An G, Ahmed S, Alkabab Y et al. Cycloserine Population Pharmacokinetics and Pharmacodynamics in Patients with Tuberculosis. Antimicrobial agents and chemotherapy 63(5) (2019).
@@ -42,7 +42,7 @@ Alghamdi WA, Alsultan A, Al-Shaer MH, An G, Ahmed S, Alkabab Y et al. Cycloserin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -16,7 +16,7 @@ Druml W, Grimm G, Laggner AN, Lenz K, Schneeweiss B. Lactic acid kinetics in res
 
 ## Population and dosing
 
-**Population:** ventilated ICU patients with neurologic or neuromuscular diseases · age group adult · n = &gt; 2025-02-10T00:00:00Z.
+**Population:** ventilated ICU patients with neurologic or neuromuscular diseases · age group adult.
 
 ## Model
 

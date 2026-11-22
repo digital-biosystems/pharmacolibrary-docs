@@ -4,18 +4,18 @@
 
 # dextran — `Dextran_Schwarz1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:47 UTC (Rejected), but the paper was screened again on 2026-10-05 21:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The terminal half-life of 24 hours was assigned to the wrong dextran molecular weight in this abstract-only summary.
+> The record was rejected because the reported fraction of the dose excreted in urine has a mass dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schwarz JA, Koch W, Bühler V, Kaumeier S. Pharmacokinetics of low molecular (monovalent) dextran (Dx 1) in volunteers. International journal of clinical pharmacology, therapy, and toxicology 19(8):358–367 (1981).
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -36,7 +36,7 @@ Schwarz JA, Koch W, Bühler V, Kaumeier S. Pharmacokinetics of low molecular (mo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Schwarz JA, Koch W, Bühler V, Kaumeier S. Pharmacokinetics of low molecular (mo
 
 ### Reviewer guidance
 
-**The terminal half-life of 24 hours was assigned to the wrong dextran molecular weight in this abstract-only summary.**
+**The record was rejected because the reported fraction of the dose excreted in urine has a mass dimension mismatch.**
 
-The record links a terminal half-life of 24 hours, explicitly labeled for dextran 60 (Macrodex), to the compound dextran 1. Because the data source was the paper's abstract, these summary statistics were used to populate the model parameters without a fitted model. Additionally, the second reader disagreed on the specific parameter identifier used for the urinary excretion amount. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
+The value of 75 % for the mean cumulative asymptotic elimination of dextran in the urine is dimensionless, but the parameter definition requires a mass unit. This structural dimension conflict caused the review to fail. Additionally, the record was built from the abstract only, so reported summary statistics stood in for a fitted model. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[mean cumulative asymptotic elimination of dextran in the urine].parameter_id`: this record has Q91, the second reading Q44. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[mean cumulative asymptotic elimination of dextran in the urine].parameter_id`: this record has Q91, the second reading Q44. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,13 +93,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[mean cumulative asymptotic elimination of dextran in the urine].parameter_id` | Q91 | Q44 | mismatch |
+| `gpt-oss-120b` | `parameters[mean cumulative asymptotic elimination of dextran in the urine].parameter_id` | Q91 | Q44 | mismatch |
 
 </details>
 

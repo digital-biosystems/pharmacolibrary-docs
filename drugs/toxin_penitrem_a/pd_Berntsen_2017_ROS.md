@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Penitrem A stimulates ROS production via a direct additive Emax effect, with a maximal increase of 330% over basal levels and an EC50 of 3.8 μM.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Berntsen_2017`
 - **model family:** `emax`
 - **driver:** `cited_pk`

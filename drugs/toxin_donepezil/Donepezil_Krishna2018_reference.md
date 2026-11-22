@@ -162,30 +162,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_donepezil/Donepezil_Krishna2018_reference/Donepezil_Krishna2018_reference_matlab.zip" download>Donepezil_Krishna2018_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_donepezil/Donepezil_Krishna2018_reference/Donepezil_Krishna2018_reference_sbml.zip" download>Donepezil_Krishna2018_reference_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_donepezil/Donepezil_Krishna2018_reference/Donepezil_Krishna2018_reference_cellml.zip" download>Donepezil_Krishna2018_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Krishna KV, Saha RN, Singhvi G, Dubey SK. Pre-clinical pharmacokinetic-pharmacodynamic modelling and biodistribution studies of donepezil hydrochloride by a validated HPLC method. RSC advances 8(44):24740–24749 (2018). [doi:10.1039/c8ra03379j](https://doi.org/10.1039/c8ra03379j)
-
-**This record:** Pharmacolibrary, model `Donepezil_Krishna2018_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_donepezil/Donepezil_Krishna2018_reference>
-
-```bibtex
-@misc{pharmacolibrary_DonepezilKrishna2018reference,
-  title  = {{Pharmacolibrary model Donepezil_Krishna2018_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_donepezil/Donepezil_Krishna2018_reference},
-  note   = {Parameters from doi:10.1039/c8ra03379j},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

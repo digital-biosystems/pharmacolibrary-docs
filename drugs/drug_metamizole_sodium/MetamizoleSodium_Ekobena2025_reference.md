@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;metamizole sodium&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/&quot;},{&quot;label&quot;:&quot;Ekobena_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metamizole sodium — `MetamizoleSodium_Ekobena2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for metamizole sodium was held back because the bioavailability parameter F was not extracted from the paper, so a generic placeholder value would have been used.
+> Metamizole sodium clearance (0.46 L/h) comes from a paper about another drug, and defaulted bioavailability and lag time made the record unacceptable.
 
-<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Ekobena2025_reference" status="needs_review" stale="false" population="" measured-compound="metamizole_sodium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Ekobena2025_reference" status="rejected" stale="false" population="" measured-compound="metamizole_sodium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ekobena P, Briki M, Dao K, Marzolini C, Andre P, Buclin T et al. Population pharmacokinetics of bictegravir in real-world people with HIV. The Journal of antimicrobial chemotherapy 80(10):2782-2789 (2025).
@@ -29,7 +29,7 @@ Ekobena P, Briki M, Dao K, Marzolini C, Andre P, Buclin T et al. Population phar
 <figure class="pk-models-diagram"><img src="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference.svg" alt="MetamizoleSodium_Ekobena2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +39,7 @@ Ekobena P, Briki M, Dao K, Marzolini C, Andre P, Buclin T et al. Population phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Ekobena P, Briki M, Dao K, Marzolini C, Andre P, Buclin T et al. Population phar
 
 ### Reviewer guidance
 
-**The record for metamizole sodium was held back because the bioavailability parameter F was not extracted from the paper, so a generic placeholder value would have been used.**
+**Metamizole sodium clearance (0.46 L/h) comes from a paper about another drug, and defaulted bioavailability and lag time made the record unacceptable.**
 
-The model builder defaulted the bioavailability (F) and lag time (Tlag) parameters instead of reporting explicit estimates. Although the established finding confirms that F uses library defaults not supported by this paper, the record still contains specific values for clearance (0.46 L/h) and volume (10.9 L). A second reader disagreed with the record on several numerical fields, including a value of 1.3 for a parameter the second reader could not identify. Extracted — metamizole sodium: CL 0.46 L/h, V 10.9 L, kabs 0.64 h−1.
+Neither the title nor abstract names metamizole sodium, and the paper was rejected as irrelevant because it concerns another drug. The model also used defaults rather than explicit estimates for bioavailability and absorption lag time. Extracted — metamizole sodium: CL 0.46 L/h, V 10.9 L, kabs 0.64 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q27: this record has 0.504, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -130,12 +130,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | note |
 |---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | metamizole_sodium (or metabolite) | paper about another drug | paper subject is not metamizole_sodium: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=metamizole_sodium) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,61 +148,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_modelica.zip" download>MetamizoleSodium_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_fmi.zip" download>MetamizoleSodium_Ekobena2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_matlab.zip" download>MetamizoleSodium_Ekobena2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_matlab_simbio.zip" download>MetamizoleSodium_Ekobena2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_sbml.zip" download>MetamizoleSodium_Ekobena2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_cellml.zip" download>MetamizoleSodium_Ekobena2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3333 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.003 | kg |
-| input | model | `Cl` | 1.278e-07 | m3/s |
-| input | model | `VdPerKg` | 0.0001557 | m3/kg |
-| input | model | `ka` | 0.0001778 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Ekobena P, Briki M, Dao K, Marzolini C, Andre P, Buclin T et al. Population pharmacokinetics of bictegravir in real-world people with HIV. The Journal of antimicrobial chemotherapy 80(10):2782-2789 (2025). [doi:10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297)
-
-**This record:** Pharmacolibrary, model `MetamizoleSodium_Ekobena2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_MetamizoleSodiumEkobena2025reference,
-  title  = {{Pharmacolibrary model MetamizoleSodium_Ekobena2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference},
-  note   = {Parameters from doi:10.1093/jac/dkaf297},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

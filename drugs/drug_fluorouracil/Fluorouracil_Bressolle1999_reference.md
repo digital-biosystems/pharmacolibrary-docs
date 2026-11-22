@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Bressolle_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Kobuchi2013_day_3_07_00_h&quot;,&quot;label&quot;:&quot;Kobuchi_2013_day_3_07_00_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Kobuchi2013_day_3_07_00_h.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kobuchi_2013_TV&quot;,&quot;label&quot;:&quot;Kobuchi_2013 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Kobuchi_2013_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Arshad_2020_WBC&quot;,&quot;label&quot;:&quot;Arshad_2020 \u00b7 WBC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Arshad_2020_WBC.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_L&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 L&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_L.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kobuchi_2014_Hb&quot;,&quot;label&quot;:&quot;Kobuchi_2014 \u00b7 Hb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Kobuchi_2014_Hb.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kobuchi_2014_Hct&quot;,&quot;label&quot;:&quot;Kobuchi_2014 \u00b7 Hct&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Kobuchi_2014_Hct.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Trump_1991_frequency_of_stomatitis&quot;,&quot;label&quot;:&quot;Trump_1991 \u00b7 frequency of stomatitis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Trump_1991_frequency_of_stomatitis.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Trump_1991_frequency_of_stomatitis_2&quot;,&quot;label&quot;:&quot;Trump_1991 \u00b7 frequency of stomatitis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Trump_1991_frequency_of_stomatitis_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Trump_1991_percentage_reduction_in_WBC&quot;,&quot;label&quot;:&quot;Trump_1991 \u00b7 percentage reduction in WBC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Trump_1991_percentage_reduction_in_WBC.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Trump_1991_percentage_reduction_in_WBC_2&quot;,&quot;label&quot;:&quot;Trump_1991 \u00b7 percentage reduction in WBC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Trump_1991_percentage_reduction_in_WBC_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Trump_1991_percentage_reduction_in_WBC_3&quot;,&quot;label&quot;:&quot;Trump_1991 \u00b7 percentage reduction in WBC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Trump_1991_percentage_reduction_in_WBC_3.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_beaty_31&quot;,&quot;label&quot;:&quot;Deyme_2019_beaty_31&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_beaty_31.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_berg_37&quot;,&quot;label&quot;:&quot;Deyme_2019_berg_37&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_berg_37.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_bressolle_33&quot;,&quot;label&quot;:&quot;Deyme_2019_bressolle_33&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_bressolle_33.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_foulladi_30&quot;,&quot;label&quot;:&quot;Deyme_2019_foulladi_30&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_foulladi_30.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_khoo_24&quot;,&quot;label&quot;:&quot;Deyme_2019_khoo_24&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_khoo_24.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_klein_38&quot;,&quot;label&quot;:&quot;Deyme_2019_klein_38&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_klein_38.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_porta_oltra_34&quot;,&quot;label&quot;:&quot;Deyme_2019_porta_oltra_34&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_porta_oltra_34.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_poujol_27&quot;,&quot;label&quot;:&quot;Deyme_2019_poujol_27&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_poujol_27.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_thompson_28&quot;,&quot;label&quot;:&quot;Deyme_2019_thompson_28&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_thompson_28.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_van_kuilenburg_36&quot;,&quot;label&quot;:&quot;Deyme_2019_van_kuilenburg_36&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_van_kuilenburg_36.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Deyme2019_woloch_35&quot;,&quot;label&quot;:&quot;Deyme_2019_woloch_35&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Deyme2019_woloch_35.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Jarugula1997_100_mg_kg&quot;,&quot;label&quot;:&quot;Jarugula_1997_100_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Jarugula1997_100_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Jarugula1997_10_mg_kg&quot;,&quot;label&quot;:&quot;Jarugula_1997_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Jarugula1997_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Jarugula1997_50_mg_kg&quot;,&quot;label&quot;:&quot;Jarugula_1997_50_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Jarugula1997_50_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Joel2004_reference&quot;,&quot;label&quot;:&quot;Joel_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Joel2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Kobuchi2013_day_3_07_00_h&quot;,&quot;label&quot;:&quot;Kobuchi_2013_day_3_07_00_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Kobuchi2013_day_3_07_00_h.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Tan2026_woloch_20127&quot;,&quot;label&quot;:&quot;Tan_2026_woloch_20127&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Tan2026_woloch_20127.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Arshad_2020_WBC&quot;,&quot;label&quot;:&quot;Arshad_2020 \u00b7 WBC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Arshad_2020_WBC.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -23,7 +23,7 @@ Bressolle F, Joulia JM, Pinguet F, Ychou M, Astre C, Duffour J et al. Circadian 
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,13 +33,11 @@ Bressolle F, Joulia JM, Pinguet F, Ychou M, Astre C, Duffour J et al. Circadian 
 |---|---|---|---|---|
 | V (l) | V | 18.4 | l | 114 (None% RSE) |
 | CL (l/h) | CL | 128 | l/h | 56 (None% RSE) |
-| θ1 (l/h) | Q | 60.2 | l/h |  |
-| θ2 (l/h) | Q2 | 65.0 | l/h |  |
-| Ka, Absorption rate constant (h−1) | kabs | 0.757 | h−1 |  |
+| absorption rate | kabs | 0.13 | 1/h |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +49,9 @@ Bressolle F, Joulia JM, Pinguet F, Ychou M, Astre C, Duffour J et al. Circadian 
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: V 18.4 l, CL 128 l/h, Q 60.2 l/h, Q2 65 l/h, kabs 0.757 h−1.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: V 18.4 l, CL 128 l/h, kabs 0.13 1/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θ1: this record has 60.2, the second reading none; it also differs on 1 more field. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,9 +61,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 |---|---|---|---|---|---|---|---|---|---|
 | V (l) | `Q61` · V | 18.4 | l | 0.0184 | m3 | l | exact (1) | Bressolle_1999_table_p4_2:row1:col1, Bressolle_1999_table_p4_2:row1:col3, Bressolle_1999_table_p4_2:row1:col5 | 114 (None% RSE) |
 | CL (l/h) | `Q22` · CL | 128 | l/h | 3.556e-05 | m3/s | l/h | exact (1) | Bressolle_1999_table_p4_2:row2:col1 | 56 (None% RSE) |
-| θ1 (l/h) | `Q30` · Q | 60.2 | l/h | 1.672e-05 | m3/s | l/h | llm (0.6) | Bressolle_1999_table_p4_2:row4:col5 |  |
-| θ2 (l/h) | `Q99` · Q2 | 65.0 | l/h | 1.806e-05 | m3/s | l/h | llm (0.6) | Bressolle_1999_table_p4_2:row5:col5 |  |
-| Ka, Absorption rate constant (h−1) | `Q49` · kabs | 0.757 | h−1 | 0.0002103 | 1/s | 1/h | review_gapfill (0.7) | Bae_2026:review |  |
+| absorption rate | `Q49` · kabs | 0.13 | 1/h | 3.611e-05 | 1/s | 1/h | review_gapfill (0.7) | Valderrama_2025:review |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,12 +78,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - competing summary columns for 'Residual variability'; not population strata
 - competing summary columns for 'Objective function'; not population strata
 - dropped duplicate Q22 ('CLmean (l/h)', value '99.2') — already have one for this compound
+- unit_dimension_mismatch: 'θ1 (l/h)' → Q61 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q61 ('θ1 (l/h)', value '60.2') — already have one for this compound
+- dropped unlinked row (NIL): 'θ2 (l/h)' — extend the ontology if this is a real PK parameter (source ['Bressolle_1999_table_p4_2:row5:col5'])
 - dropped unlinked row (NIL): 'Objective function' — extend the ontology if this is a real PK parameter (source ['Bressolle_1999_table_p4_2:row7:col1', 'Bressolle_1999_table_p4_2:row7:col3', 'Bressolle_1999_table_p4_2:row7:col5'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluorouracil
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Bae_2026's review values (primary lacked it)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Valderrama_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - table Bressolle_1999_table_p4_2: competing_summary_estimates
@@ -95,21 +94,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[θ1]` | 60.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ2]` | 65.0 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -121,14 +113,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bressolle_1999_table_p4_2:row2:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Bressolle_1999_table_p4_2:row4:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Valderrama_2025:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Bressolle_1999_table_p4_2:row1:col1', 'Bressolle_1999_table_p4_2:row1:col3', 'Bressolle_1999_table_p4_2:row1:col5'] |
-| C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Bressolle_1999_table_p4_2:row5:col5'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 128 | ['Bressolle_1999_table_p4_2:row2:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 128 L/h | ['Bressolle_1999_table_p4_2:row2:col1'] |
@@ -166,4 +156,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Bressolle1999_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Bressolle1999_reference%0APaper%3A%20Bressolle_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Bressolle1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 21:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:51 UTC</sub>

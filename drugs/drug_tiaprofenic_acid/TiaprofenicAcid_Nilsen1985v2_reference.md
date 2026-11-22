@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record refused because only the abstract was read, resulting in summary statistics rather than fitted parameters, and an unemitted distribution rate constant.
+> A distribution rate constant was recorded but never extracted, and no second reader agreed on the single-compartment parameters derived from the abstract.
 
 <div class="pk-model-meta" hidden drug="tiaprofenic acid" model-id="TiaprofenicAcid_Nilsen1985v2_reference" status="needs_review" stale="false" population="elderly patients" measured-compound="tiaprofenic acid" parameterization="apparent" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Nilsen OG, Jacobsen G, Walstad RA. Steady state pharmacokinetics of tiaprofenic 
 
 ## Population and dosing
 
-**Population:** elderly patients · age group elderly · n = &gt;=8.
+**Population:** elderly patients · age group elderly.
 
 ## Model
 
@@ -51,9 +51,9 @@ Nilsen OG, Jacobsen G, Walstad RA. Steady state pharmacokinetics of tiaprofenic 
 
 ### Reviewer guidance
 
-**Record refused because only the abstract was read, resulting in summary statistics rather than fitted parameters, and an unemitted distribution rate constant.**
+**A distribution rate constant was recorded but never extracted, and no second reader agreed on the single-compartment parameters derived from the abstract.**
 
-The record is abstract-only, so reported summary statistics stand in for a fitted model, and the model builder assumed full bioavailability and no molar correction. The distribution rate constant (kcomp) was not emitted or defaulted, leaving a gap in parameter coverage. All six parameters were missing in the second reader's review, confirming the extraction was inconclusive due to the abstract-only source. Extracted — tiaprofenic acid: tlag 0.23 h, kabs 4.32 h-1, kcomp 1.31 h-1, t1/2z 4.66 h, CL 30 ml/min, V/F 11.8 l.
+The record lists a distribution rate constant of 1.31 h-1, yet the extraction process only covered four of the expected five parameters, excluding this specific value. The model was constructed solely from the abstract, so summary statistics were used in place of fitted model outputs. A second reader failed to agree on any of the reported parameter values, leaving the record without independent verification. Extracted — tiaprofenic acid: tlag 0.23 h, kabs 4.32 h-1, kcomp 1.31 h-1, t1/2z 4.66 h, CL 30 ml/min, V/F 11.8 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tiaprofenic acid, the second reading tiaprofenic_acid; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -83,6 +83,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tiaprofenic acid
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- derived CL/F=1.75518 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Nilsen_1985_2_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -143,15 +144,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=tiaprofenic acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['kcomp'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=tiaprofenic acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['kcomp'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -190,7 +193,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0006 | kg |
-| input | model | `Cl` | 5e-07 | m3/s |
+| input | model | `Cl` | 4.875e-07 | m3/s |
 | input | model | `VdPerKg` | 0.0001686 | m3/kg |
 | input | model | `ka` | 0.0012 | 1/s |
 | input | subject | `weight` | 70 | kg |

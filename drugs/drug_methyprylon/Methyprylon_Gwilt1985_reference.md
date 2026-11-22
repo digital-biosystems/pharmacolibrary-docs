@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate and lag time lack source estimates, forcing the record to use placeholder values unsupported by the paper.
+> Methyprylon's absorption rate constant lacks a reported value, forcing reliance on unverified library defaults for the model.
 
 <div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="methyprylon" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Gwilt PR, Pankaskie MC, Thornburg JE, Zustiak R, Shoenthal DR. Pharmacokinetics 
 
 ### Reviewer guidance
 
-**Absorption rate and lag time lack source estimates, forcing the record to use placeholder values unsupported by the paper.**
+**Methyprylon's absorption rate constant lacks a reported value, forcing reliance on unverified library defaults for the model.**
 
-The record relies on abstract summary statistics rather than fitted model parameters. Absorption rate and lag time were not reported, so the record uses standard placeholder values instead of explicit estimates. Additionally, apparent steady-state volume (0.97 L/kg) was used as the distribution volume, which cannot reproduce the early distribution phase. Extracted — methyprylon: t1/2z 9.2 h, CL/F 11.9 mL/h/kg, Vss 0.97 L/kg.
+The record was constructed solely from the paper's abstract, where absorption kinetics were not reported, leading the builder to default the absorption rate constant and lag time. This resulted in a 'needs review' verdict because the simulated early profile depends on invented absorption parameters rather than measured data. Additionally, the model uses steady-state volume of distribution in place of central volume, which fails to capture the early distribution phase. Extracted — methyprylon: t1/2z 9.2 h, CL/F 11.9 mL/h/kg, Vss 0.97 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent clearance: this record has 11.91, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
@@ -129,15 +129,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=methyprylon) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; deviation_id=vss_as_v: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=methyprylon) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.556, 0 of 1 reader(s) agree | 0.556 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

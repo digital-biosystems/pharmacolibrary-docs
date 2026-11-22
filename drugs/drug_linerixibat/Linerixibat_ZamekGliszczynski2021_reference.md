@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;linerixibat&quot;,&quot;href&quot;:&quot;drugs/drug_linerixibat/&quot;},{&quot;label&quot;:&quot;Zamek-Gliszczynski_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linerixibat_ZamekGliszczynski2021_reference&quot;,&quot;label&quot;:&quot;Zamek-Gliszczynski_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linerixibat_ZamekGliszczynski2021_reference&quot;,&quot;label&quot;:&quot;Zamek-Gliszczynski_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linerixibat — `Linerixibat_ZamekGliszczynski2021_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="linerixibat" model-id="Linerixibat_ZamekGliszczynski2021_reference" status="simulated" stale="false" population="healthy male volunteers" measured-compound="linerixibat" parameterization="mechanistic" topology="1C"></div>
+> The record for linerixibat was held back because the second reader found the absolute oral bioavailability, first-pass gut fraction, hepatic extraction ratio, clearance, and volume of distribution unverifiable.
+
+<div class="pk-model-meta" hidden drug="linerixibat" model-id="Linerixibat_ZamekGliszczynski2021_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="linerixibat" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zamek-Gliszczynski MJ, Kenworthy D, Bershas DA, Sanghvi M, Pereira AI, Mudunuru J et al. Pharmacokinetics and ADME Characterization of Intravenous and Oral [14C]-Linerixibat in Healthy Male Volunteers. Drug metabolism and disposition: the biological fate of chemicals 49(12):1109–1117 (2021).
@@ -27,6 +29,8 @@ Zamek-Gliszczynski MJ, Kenworthy D, Bershas DA, Sanghvi M, Pereira AI, Mudunuru 
 <figure class="pk-models-diagram"><img src="drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference/Linerixibat_ZamekGliszczynski2021_reference.svg" alt="Linerixibat_ZamekGliszczynski2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | high systemic clearance | CL | 61.9 | l/h |
@@ -37,7 +41,7 @@ Zamek-Gliszczynski MJ, Kenworthy D, Bershas DA, Sanghvi M, Pereira AI, Mudunuru 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +51,13 @@ Zamek-Gliszczynski MJ, Kenworthy D, Bershas DA, Sanghvi M, Pereira AI, Mudunuru 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record for linerixibat was held back because the second reader found the absolute oral bioavailability, first-pass gut fraction, hepatic extraction ratio, clearance, and volume of distribution unverifiable.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the paper's abstract alone, so reported summary statistics stand in for a fitted model. The second reader assigned null values to the absolute oral bioavailability of 0.05%, fraction escaping first-pass gut metabolism of 100%, hepatic extraction ratio of 77.0%, total clearance of 61.9 l/h, and volume of distribution of 16.3 l. Because the second reader disagreed on these specific parameters, the cross-check agreement was 0.333, resulting in a needs_review verdict. Extracted — linerixibat: CL 61.9 l/h, V 16.3 l, Fab 0.05 %, FG 100 %, EH 77 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.05, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 0.05, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -99,20 +103,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 0.05 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absolute oral bioavailability of linerixibat]` | 0.05 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fraction escaping first-pass gut metabolism]` | 100 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[hepatic extraction ratio]` | 77.0 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[high systemic clearance]` | 61.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[human hepatic clearance]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[longer oral versus intravenous half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[low volume of distribution]` | 16.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 0.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute oral bioavailability of linerixibat]` | 0.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction escaping first-pass gut metabolism]` | 100 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[hepatic extraction ratio]` | 77.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[high systemic clearance]` | 61.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[human hepatic clearance]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[longer oral versus intravenous half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[low volume of distribution]` | 16.3 |  | only_one_extracted |
 
 </details>
 
@@ -139,14 +143,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=linerixibat) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=linerixibat) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

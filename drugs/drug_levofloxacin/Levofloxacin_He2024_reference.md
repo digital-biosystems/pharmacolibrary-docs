@@ -17,7 +17,7 @@ He YY, Sun J, Wu YE, Wang YB, van den Anker J, Hao GX et al. Population pharmaco
 
 ## Population and dosing
 
-**Population:** elderly patients with pneumonia · condition pneumonia · age group elderly · n = &gt;=51.
+**Population:** elderly patients with pneumonia · condition pneumonia · age group elderly.
 
 ## Model
 

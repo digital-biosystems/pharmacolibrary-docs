@@ -4,11 +4,11 @@
 
 # testosterone — `Testosterone_Pastuszak2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:18 UTC (Rejected), but the paper was screened again on 2026-10-07 08:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent clearance parameter was assigned a value of 0.572 mg/h, which is dimensionally inconsistent with clearance units.
+> Record rejected because two testosterone clearance parameters are labeled with volume/time units instead of mass/time units.
 
-<div class="pk-model-meta" hidden drug="testosterone" model-id="Testosterone_Pastuszak2021_reference" status="rejected" stale="true" population="adult males with hypogonadism" measured-compound="testosterone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="testosterone" model-id="Testosterone_Pastuszak2021_reference" status="rejected" stale="false" population="adult males with hypogonadism" measured-compound="testosterone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Pastuszak AW, Bush M, Curd L, Vijayan S, Priestley T, Xiang Q et al. Population Pharmacokinetic Modeling and Simulations to Evaluate a Potential Dose Regimen of Testosterone Undecanoate in Hypogonadal Males. Journal of clinical pharmacology 61(12):1618–1625 (2021).
@@ -44,7 +44,7 @@ Pastuszak AW, Bush M, Curd L, Vijayan S, Priestley T, Xiang Q et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.55). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.55). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Pastuszak AW, Bush M, Curd L, Vijayan S, Priestley T, Xiang Q et al. Population 
 
 ### Reviewer guidance
 
-**The apparent clearance parameter was assigned a value of 0.572 mg/h, which is dimensionally inconsistent with clearance units.**
+**Record rejected because two testosterone clearance parameters are labeled with volume/time units instead of mass/time units.**
 
-The record lists a parameter with the meaning of apparent metabolite clearance but assigns it a value of 0.572 with units of mg/h. This mass-per-time unit does not match the required volume-per-time dimension for clearance, resulting in a dimension mismatch. Although another clearance value of 197 L/h is present, the 0.572 mg/h entry violates pharmacokinetic dimensional consistency. Extracted — testosterone: CLm/F 197 L/h, kabs 0.001 L/h, CLm/F 0.572 mg/h, Q 10 L/h.
+The apparent clearance of testosterone, 0.572 mg/h, and the intercompartmental clearance, 10 L/h, are both recorded with volume/time units. This conflicts with the mass/time dimension required for apparent clearance and creates ambiguity for the intercompartmental parameter. Extracted — testosterone: CLm/F 197 L/h, kabs 0.001 L/h, CLm/F 0.572 mg/h, Q 10 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has testosterone undecanoate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -4,11 +4,11 @@
 
 # sampeginterferon beta-1a — `SampeginterferonBeta1a_Hu2017_estimated_value`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-06 23:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Intercompartment clearance Q2 (435 L) lacks an SI-convertible unit, causing a dimension mismatch that rejected the model.
+> Record rejected because Q2, an intercompartment clearance, is assigned a volume unit (L) instead of a flow unit (L/h).
 
-<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2017_estimated_value" status="rejected" stale="true" population="adults with relapsing multiple sclerosis" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2017_estimated_value" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hu X, Hang Y, Cui Y, Zhang J, Liu S, Seddighzadeh A et al. Population-Based Pharmacokinetic and Exposure-Efficacy Analyses of Peginterferon Beta-1a in Patients With Relapsing Multiple Sclerosis. Journal of clinical pharmacology 57(8):1005–1016 (2017).
@@ -38,7 +38,7 @@ Hu X, Hang Y, Cui Y, Zhang J, Liu S, Seddighzadeh A et al. Population-Based Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Hu X, Hang Y, Cui Y, Zhang J, Liu S, Seddighzadeh A et al. Population-Based Phar
 
 ### Reviewer guidance
 
-**Intercompartment clearance Q2 (435 L) lacks an SI-convertible unit, causing a dimension mismatch that rejected the model.**
+**Record rejected because Q2, an intercompartment clearance, is assigned a volume unit (L) instead of a flow unit (L/h).**
 
-Parameter θ2 represents the intercompartment clearance between the central and peripheral compartments with a value of 435 L. The reported unit could not be converted to SI, resulting in a dimension mismatch for this structural parameter. A second reader also disagreed on the identification of the dose compound and primary analyte, listing both as unknown. Extracted — peginterferon beta-1a: CL 3.28 L/h, Q2 435 L.
+The parameter Q2, defined as the apparent intercompartment clearance between central and peripheral compartments, has a unit of L, which is dimensionally inconsistent with a clearance parameter. A clearance value must have dimensions of volume per time, such as L/h, not just volume. Additionally, the second reader disagrees on the identification of the dose compound, primary analyte, and specific parameter values for θ2, θ4, and θ5. Extracted — peginterferon beta-1a: CL 3.28 L/h, Q2 435 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has peginterferon beta-1a, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

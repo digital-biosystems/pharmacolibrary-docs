@@ -5,11 +5,11 @@
 
 # methyprylon — `Methyprylon_Gwilt1982_control`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-06 21:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vss of 8.37 liters is physically inconsistent with the smaller Vd of 9.37 liters in this two-compartment model.
+> Methyprylon model rejected because the central volume unit was not standard, causing a dimensional mismatch in the elimination rate constant check.
 
-<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_control" status="rejected" stale="true" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_control" status="rejected" stale="false" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposition of methyprylon in intoxicated dogs. Canadian Anaesthetists' Society journal 29(4):381–383 (1982).
@@ -47,7 +47,7 @@ Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposit
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposit
 
 ### Reviewer guidance
 
-**Vss of 8.37 liters is physically inconsistent with the smaller Vd of 9.37 liters in this two-compartment model.**
+**Methyprylon model rejected because the central volume unit was not standard, causing a dimensional mismatch in the elimination rate constant check.**
 
-The record reports a steady-state volume of distribution (Vss) of 8.37 liters. It simultaneously lists a terminal volume of distribution (Vd) of 9.37 liters. In a two-compartment model, the steady-state volume must be equal to or greater than the terminal volume, making this structural parameter set invalid. Extracted — methyprylon: λ1 7.43 hr-1, kel 0.23 hr-1, k12 4.81 hr-1, k21 1.83 hr-1, V1 3.5 liter, V 9.37 liter, Vss 8.37 liter, CL 2.09 liter/hr, … (+1).
+The central volume of distribution is listed as 3.50 liter, a unit that could not be converted to the standard SI form. This prevented the validation of the elimination rate constant, which is reported as 0.23 hr-1. The dimensional conflict between the structural parameters led to the record's rejection. Extracted — methyprylon: λ1 7.43 hr-1, kel 0.23 hr-1, k12 4.81 hr-1, k21 1.83 hr-1, V1 3.5 liter, V 9.37 liter, Vss 8.37 liter, CL 2.09 liter/hr, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 

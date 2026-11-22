@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;oxcarbazepine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxcarbazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxcarbazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # oxcarbazepine
 
@@ -25,17 +25,10 @@ Oxcarbazepine is an anticonvulsant medication used to treat epilepsy, mood disor
 | 10-monohydroxy derivative | metabolite | — (mass units only) | — | — | — | — |
 | MHD | metabolite | 254.289 | C15H14N2O2 | PubChem | [114709](https://pubchem.ncbi.nlm.nih.gov/compound/114709) | Wu_2024 |
 
-## Start here
-
-> **Yu_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md?tab=Simulation) · [record](drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Yu_2025_reference](drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yu L et al., Development and Validation of a Populat…, Drug design, development an… (2025) | [10.2147/DDDT.S499085](https://doi.org/10.2147/DDDT.S499085) |
 | <span class="pk-rf" hidden data-species="unknown" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chen_2021_reference](drugs/drug_oxcarbazepine/Oxcarbazepine_Chen2021_reference.md) | — | parent + metabolite (no model) | 0 | Chen YT et al., Population pharmacokinetics of oxcarbaz…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1917377](https://doi.org/10.1080/17512433.2021.1917377) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Faison_2020_n](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_n.md) | — | parent + metabolite (no model) | 0 | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ pop](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_pop.md) | — | parent + metabolite (no model) | 0 |  |  |
@@ -44,6 +37,7 @@ Oxcarbazepine is an anticonvulsant medication used to treat epilepsy, mood disor
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Sinha_2026_bsv_estimates_cv](drugs/drug_oxcarbazepine/Oxcarbazepine_Sinha2026_bsv_estimates_cv.md) | — | general linear (no model) | 0 | Sinha J et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01579-0](https://doi.org/10.1007/s40262-025-01579-0) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ population_estimates](drugs/drug_oxcarbazepine/Oxcarbazepine_Sinha2026_population_estimates.md) | — | general linear (no model) | 6 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Wu_2024_reference](drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference.md) | — | 1-compartment (no model) | 5 | Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharmacolo… (2024) | [10.1111/bcpt.14000](https://doi.org/10.1111/bcpt.14000) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Yu_2025_reference](drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yu L et al., Development and Validation of a Populat…, Drug design, development an… (2025) | [10.2147/DDDT.S499085](https://doi.org/10.2147/DDDT.S499085) |
 
 ## Pharmacodynamics (PD)
 
@@ -54,26 +48,6 @@ Oxcarbazepine is an anticonvulsant medication used to treat epilepsy, mood disor
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Faison_2020_PCH_2](drugs/drug_oxcarbazepine/pd_Faison_2020_PCH_2.md) | percent change from baseline 28-day seizure frequency ← monohydroxy derivative · direct log-linear effect | model (no simulator) | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Faison_2020_PCH_3](drugs/drug_oxcarbazepine/pd_Faison_2020_PCH_3.md) | percent change from baseline 28-day seizure frequency ← monohydroxy derivative · direct log-linear effect | model (no simulator) | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Faison_2020_PCH_4](drugs/drug_oxcarbazepine/pd_Faison_2020_PCH_4.md) | percent change from baseline 28-day seizure frequency ← monohydroxy derivative · direct log-linear effect | model (no simulator) | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxcarbazepine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inducer/inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inducer/inhibitor, `CYP3A5` inducer/inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor, `CYP3A5` inducer/inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AKR1C1 (substrate), AKR1C2 (substrate), AKR1C3 (substrate), AKR1C4 (substrate), CBR1 (substrate), CBR3 (substrate), SCN11A (blocker), SCN1A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -87,13 +61,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:15 | 3:35 | 1/8/0 | 2/0/0 | 0/0/0 | 172,224/15,743 | einfracz / qwen3.8-27b | 12 | 10/2 | 4/0 | 0 |
+| 2026-10-07 07:15 | 3:35 | 0/9/0 | 5/0/0 | 0/0/0 | 172,224/15,743 | einfracz / qwen3.8-27b | 12 | 10/2 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 58 matched, 16 returned
 - **screened:** 12  ·  **relevant:** 3
-- **records:** 9  ·  extracted 0  ·  needs review 1  ·  rejected 8  ·  stale 0
+- **records:** 9  ·  extracted 0  ·  needs review 0  ·  rejected 9  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

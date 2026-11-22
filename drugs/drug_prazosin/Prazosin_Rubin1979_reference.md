@@ -5,11 +5,11 @@
 
 # prazosin — `Prazosin_Rubin1979_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:16 UTC (Needs review), but the paper was screened again on 2026-10-06 14:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Prazosin clearance has no reported value and was left to a placeholder, so this abstract-only record was held back rather than published.
 
-<div class="pk-model-meta" hidden drug="prazosin" model-id="Prazosin_Rubin1979_reference" status="extracted" stale="true" population="dogs" measured-compound="prazosin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prazosin" model-id="Prazosin_Rubin1979_reference" status="model_quarantined" stale="false" population="dogs" measured-compound="prazosin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rubin P, Yee YG, Anderson M, Blaschke T. Prazosin first-pass metabolism and hepatic extraction in the dog. Journal of cardiovascular pharmacology 1(6):641–647 (1979).
@@ -23,12 +23,14 @@ Rubin P, Yee YG, Anderson M, Blaschke T. Prazosin first-pass metabolism and hepa
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | bioavailability of prazosin | Fab | 0.38 |  |
@@ -38,7 +40,7 @@ Rubin P, Yee YG, Anderson M, Blaschke T. Prazosin first-pass metabolism and hepa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +50,13 @@ Rubin P, Yee YG, Anderson M, Blaschke T. Prazosin first-pass metabolism and hepa
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Prazosin clearance has no reported value and was left to a placeholder, so this abstract-only record was held back rather than published.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — prazosin: Fab 0.38, t1/2α 3.9 min, t1/2z 153 min, Vss 48.6 liters.
+No value for prazosin's clearance. The model was built, but prazosin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The abstract alone supplied summary statistics in place of a fitted model; in the one-compartment model, steady-state distribution volume (48.6 liters) was used as the distribution volume, reproducing AUC and terminal half-life but not the early distribution phase. A second reader disputed the record, with agreement 0.231 and 0 of 1 readers agreeing, including disagreements about prazosin attribution and reported bioavailability (0.38) and fast half-life (3.9 min). Extracted — prazosin: Fab 0.38, t1/2α 3.9 min, t1/2z 153 min, Vss 48.6 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prazosin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -127,6 +129,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Rubin_1979:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q65 | pass | volume within physiological range | 48.6 L | ['Rubin_1979:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

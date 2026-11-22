@@ -4,11 +4,11 @@
 
 # nelfinavir — `Nelfinavir_Hirt2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 17:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The M8 formation clearance of 62 is recorded in liters/h, dimensionally inconsistent with its percent label.
+> The model was rejected because the nelfinavir initial concentration parameter was assigned ng/ml units, which conflict with the required volume dimension.
 
-<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006_reference" status="rejected" stale="true" population="pregnant and nonpregnant women with HIV infection" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006_reference" status="rejected" stale="false" population="pregnant and nonpregnant women with HIV infection" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-related effects on nelfinavir-M8 pharmacokinetics: a population study with 133 women. Antimicrobial agents and chemotherapy 50(6):2079–2086 (2006).
@@ -41,7 +41,7 @@ Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-rel
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-rel
 
 ### Reviewer guidance
 
-**The M8 formation clearance of 62 is recorded in liters/h, dimensionally inconsistent with its percent label.**
+**The model was rejected because the nelfinavir initial concentration parameter was assigned ng/ml units, which conflict with the required volume dimension.**
 
-The structural parameter for M8 formation clearance is assigned a value of 62 with the unit liters/h. This unit conflicts with the parameter's verbatim label of percent, creating a dimensional mismatch that prevents the model from being published. The record was rejected on this basis. Extracted — nelfinavir: V 596 liters, CL 35.5 liters/h, C0 1.17 ng/ml; M8: kel 0.51 h Ϫ1, Ct 0.27 ng/ml, CL 62 liters/h.
+A dimension mismatch was found on the structural parameter for nelfinavir initial concentration, where the recorded unit ng/ml conflicts with the parameter's required volume dimension. This unit conflict indicates the parameter is incorrectly defined or labeled within the model structure. A second reader also disagreed on the specific values extracted for multiple parameters, including the total clearance and volume of distribution. Extracted — nelfinavir: V 596 liters, CL 35.5 liters/h, C0 1.17 ng/ml; M8: kel 0.51 h Ϫ1, Ct 0.27 ng/ml, CL 62 liters/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl 10].value`: this record has 35.5, the second reading 29.4; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

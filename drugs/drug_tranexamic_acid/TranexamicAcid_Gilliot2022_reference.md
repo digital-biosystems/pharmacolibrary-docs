@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;tranexamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/&quot;},{&quot;label&quot;:&quot;Gilliot_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_reference&quot;,&quot;label&quot;:&quot;Gilliot_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Li_2021_maximum_lysis&quot;,&quot;label&quot;:&quot;Li_2021 \u00b7 maximum lysis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Li_2021_maximum_lysis.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zufferey_2021_postoperative_blood_loss&quot;,&quot;label&quot;:&quot;Zufferey_2021 \u00b7 postoperative blood loss&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Zufferey_2021_postoperative_blood_loss.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_reference&quot;,&quot;label&quot;:&quot;Gilliot_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;TranexamicAcid_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_2021_maximum_lysis&quot;,&quot;label&quot;:&quot;Li_2021 \u00b7 maximum lysis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Li_2021_maximum_lysis.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zufferey_2021_postoperative_blood_loss&quot;,&quot;label&quot;:&quot;Zufferey_2021 \u00b7 postoperative blood loss&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Zufferey_2021_postoperative_blood_loss.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 1.85, model 11.1); the covariate scenarios were not simulated.
+> The two-compartment model for tranexamic acid yields a terminal half-life of 11.104047416780787, conflicting with the paper's reported 1.8499999999999999, and covariate effects were not simulated.
 
 <div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Gilliot2022_reference" status="needs_review" stale="false" population="parturients undergoing hemorrhagic cesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Gilliot S, Ducloy-Bouthors AS, Loingeville F, Hennart B, Allorge D, Lebuffe G et
 
 ## Population and dosing
 
-**Population:** parturients undergoing hemorrhagic cesarean delivery · condition postpartum hemorrhage · age group adult · n = &gt;=79.
+**Population:** parturients undergoing hemorrhagic cesarean delivery · condition postpartum hemorrhage · age group adult.
 
 **Dosing:** 500, 1000 mg, iv, single.
 
@@ -47,7 +47,7 @@ Gilliot S, Ducloy-Bouthors AS, Loingeville F, Hennart B, Allorge D, Lebuffe G et
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +57,13 @@ Gilliot S, Ducloy-Bouthors AS, Loingeville F, Hennart B, Allorge D, Lebuffe G et
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 1.85, model 11.1); the covariate scenarios were not simulated.**
+**The two-compartment model for tranexamic acid yields a terminal half-life of 11.104047416780787, conflicting with the paper's reported 1.8499999999999999, and covariate effects were not simulated.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — tranexamic acid: CL 0.077 L/min, V1 9.25 L, Q 0.32 L/min, V2 9.49 L.
+The simulated terminal half-life is 11.104047416780787, which is a ratio of 6.0022 compared to the paper's reported value of 1.8499999999999999, indicating a significant mismatch in elimination kinetics. The model defines covariate effects that were not exercised during simulation, leaving their impact unverified. A second reader disagreed with the initial review, specifically challenging the extraction of several parameters including total clearance and volume of distribution. Extracted — tranexamic acid: CL 0.077 L/min, V1 9.25 L, Q 0.32 L/min, V2 9.49 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -128,25 +128,25 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
 <details><summary>13 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[a1]` |  | 0.44 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θcl]` | 0.077 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θcl]` |  | 0.077 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θpurine]` | 0.54 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θpurine]` |  | 0.54 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θq]` | 0.32 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θq]` |  | 0.32 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θv1]` | 9.25 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θv1]` |  | 9.25 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θv2]` | 9.49 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θv2]` |  | 9.49 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | tranexamic acid | tranexamic_acid | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | tranexamic acid | tranexamic_acid | mismatch |
+| `gpt-oss-120b` | `parameters[a1]` |  | 0.44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θcl]` | 0.077 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θcl]` |  | 0.077 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θpurine]` | 0.54 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θpurine]` |  | 0.54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θq]` | 0.32 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θq]` |  | 0.32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θv1]` | 9.25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θv1]` |  | 9.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θv2]` | 9.49 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θv2]` |  | 9.49 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tranexamic acid | tranexamic_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tranexamic acid | tranexamic_acid | mismatch |
 
 </details>
 
@@ -183,6 +183,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 1.85 | 11.1 | 6.002 | min→SI vs simulated h |
 
 <details class="legend">

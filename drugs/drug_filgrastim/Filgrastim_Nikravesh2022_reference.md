@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Filgrastim clearance of 43.3 ml/h/kg and volume of 7.4338 L were rejected due to unsupported defaulting of lag time and apparent parameterization.
+> The filgrastim clearance of 43.3 ml/h/kg was disputed by a second reader who reported 3.3, preventing final approval.
 
 <div class="pk-model-meta" hidden drug="filgrastim" model-id="Filgrastim_Nikravesh2022_reference" status="needs_review" stale="false" population="neutropenic rats" measured-compound="filgrastim" parameterization="apparent" topology="1C"></div>
 
@@ -53,9 +53,9 @@ Nikravesh FY, Shirkhani S, Bayat E, Talebkhan Y, Mirabzadeh E, Sabzalinejad M et
 
 ### Reviewer guidance
 
-**Filgrastim clearance of 43.3 ml/h/kg and volume of 7.4338 L were rejected due to unsupported defaulting of lag time and apparent parameterization.**
+**The filgrastim clearance of 43.3 ml/h/kg was disputed by a second reader who reported 3.3, preventing final approval.**
 
-The model uses apparent parameters with bioavailability fixed at 1 and lacks a molar correction. Additionally, the lag time parameter was left at its default value rather than being explicitly estimated. A secondary review also flagged multiple extracted values, such as the clearance, for potential transcription errors. Extracted — filgrastim: CL/F 43.3 ml/h/kg, V/F 7.43 L, kabs 1.22 h−1.
+A cross-check failure resulted from a disagreement between the first and second reader regarding the extracted parameter values. The second reader disagreed on multiple fields, including the clearance value which they recorded as 3.3 instead of 43.3. Other values, such as 2315.33 and 6232.1, were also contested, with the second reader reporting null for several of them. The model also relied on a defaulted lag time and an assumption of complete bioavailability. Extracted — filgrastim: CL/F 43.3 ml/h/kg, V/F 7.43 L, kabs 1.22 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2315.33, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -130,15 +130,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=filgrastim) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=filgrastim) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # repaglinide — `Repaglinide_Ruzilawati2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 16:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Repaglinide's volume of distribution is recorded as 23.09 L/h, an implausible value for a volume parameter, causing the model to be rejected.
+> Rejected because the elimination rate constant has dimensionally incompatible time units and the volume of distribution has incorrect rate units.
 
-<div class="pk-model-meta" hidden drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="true" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="false" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ruzilawati AB, Mohd Suhaimi AW, Gan SH. Population pharmacokinetic modelling of repaglinide in healthy volunteers by using Non-Parametric Adaptive Grid Algorithm. Journal of clinical pharmacy and therapeutics 35(1):105–112 (2010).
@@ -16,7 +16,7 @@ Ruzilawati AB, Mohd Suhaimi AW, Gan SH. Population pharmacokinetic modelling of 
 
 ## Population and dosing
 
-**Population:** healthy Malaysian volunteers · condition healthy · age group adult · n = &lt;unk&gt;.
+**Population:** healthy Malaysian volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Ruzilawati AB, Mohd Suhaimi AW, Gan SH. Population pharmacokinetic modelling of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Ruzilawati AB, Mohd Suhaimi AW, Gan SH. Population pharmacokinetic modelling of 
 
 ### Reviewer guidance
 
-**Repaglinide's volume of distribution is recorded as 23.09 L/h, an implausible value for a volume parameter, causing the model to be rejected.**
+**Rejected because the elimination rate constant has dimensionally incompatible time units and the volume of distribution has incorrect rate units.**
 
-The record lists the volume of distribution as 23.09 with units of L/h, which is a rate unit rather than a volume unit, making the magnitude physiologically impossible. Additionally, the second reader disagreed on whether the elimination rate constant and volume values were correctly assigned to their respective parameters, noting nulls where values were expected. The record was constructed solely from the paper's abstract, meaning these summary statistics stand in for a fully fitted pharmacokinetic model. Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
+The elimination rate constant (kel) value of 0.58 was assigned the unit 'h' instead of the required '1/h', causing a dimensional mismatch. The volume of distribution (V) value of 23.09 was assigned the unit 'L/h' instead of 'L', also causing a dimensional conflict. These unit errors led to the parameters falling outside the physiological window, invalidating the structural model. Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has repaglinide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

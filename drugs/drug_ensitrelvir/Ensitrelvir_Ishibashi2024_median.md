@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ensitrelvir model fails to match paper peak concentration and uses unreported absorption defaults.
+> Ensitrelvir model failed Cmax verification (model 0.00128 vs paper 0.943) and used default absorption parameters.
 
 <div class="pk-model-meta" hidden drug="ensitrelvir" model-id="Ensitrelvir_Ishibashi2024_median" status="needs_review" stale="false" population="healthy participants and participants infected with SARS-CoV-2" measured-compound="ensitrelvir" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Ishibashi T, Shimizu R, Kubota R. Population Pharmacokinetics of Ensitrelvir in 
 
 ### Reviewer guidance
 
-**Ensitrelvir model fails to match paper peak concentration and uses unreported absorption defaults.**
+**Ensitrelvir model failed Cmax verification (model 0.00128 vs paper 0.943) and used default absorption parameters.**
 
-The simulated peak concentration of 0.00128 kg/m3 is only 0.0014 times the reported paper value of 0.943. Absorption rate and lag time were not extracted from the paper, so standard placeholders were used. A reported concentration unit could not be converted to standard units, preventing accurate parameter scaling. Extracted — ensitrelvir: CL/F 0.198 L/h, V/F 14.1 L, Cmax 47.7 μg/mL, AUC 887 μg*h/mL, Ct 34.2 μg/mL, AUCt 1.2e+03 μg*h/mL.
+The model's simulated peak concentration for ensitrelvir was 0.00128 kg/m3, deviating significantly from the paper's reported 0.943 kg/m3. The first-order absorption rate constant and lag time were not reported in the source and were left at library defaults. These unsubstantiated defaults distorted the simulated concentration profile, leading to the failed peak concentration check. Extracted — ensitrelvir: CL/F 0.198 L/h, V/F 14.1 L, Cmax 47.7 μg/mL, AUC 887 μg*h/mL, Ct 34.2 μg/mL, AUCt 1.2e+03 μg*h/mL.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of c24_d1: this record has 34.2, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
@@ -203,6 +203,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
 | T1_cmax | reference | fail | 0.943 | 0.001279 | 0.0014 | μg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0234 | 0.001279 | 0.0547 | μg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.005 | 0.001279 | 0.2559 | μg/mL→SI vs simulated kg/m3 |

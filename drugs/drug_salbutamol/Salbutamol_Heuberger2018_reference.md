@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Heuberger_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024_reference&quot;,&quot;label&quot;:&quot;Marques_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_fixed_effects&quot;,&quot;label&quot;:&quot;Walsh_2023_fixed_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_fixed_effects.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_random_effects&quot;,&quot;label&quot;:&quot;Walsh_2023_random_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_random_effects.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_PASS&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 PASS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_PASS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_glucose.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_tachycardia&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 tachycardia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_tachycardia.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Boger_2019_FEV1&quot;,&quot;label&quot;:&quot;Boger_2019 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Boger_2019_FEV1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Venkatasubramanian_2020_TPR&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 TPR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Venkatasubramanian_2020_TPR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Cullum_2023_Emax&quot;,&quot;label&quot;:&quot;Cullum_2023 \u00b7 Emax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Cullum_2023_Emax.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Cullum_2023_IRmax&quot;,&quot;label&quot;:&quot;Cullum_2023 \u00b7 IRmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Cullum_2023_IRmax.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_estimate&quot;,&quot;label&quot;:&quot;Marques_2024_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Heuberger2018_reference&quot;,&quot;label&quot;:&quot;Heuberger_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Heuberger2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Boger_2019_FEV1&quot;,&quot;label&quot;:&quot;Boger_2019 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Boger_2019_FEV1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Venkatasubramanian_2020_TPR&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 TPR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Venkatasubramanian_2020_TPR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Heuberger2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This paper's disposition core is incomplete.
+> Salbutamol's gut bioavailability and lag time used library defaults, and the cardiac output parameter was misclassified as intercompartmental clearance.
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Heuberger2018_reference" status="needs_review" stale="false" population="healthy adults (simulated)" measured-compound="salbutamol" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Heuberger2018_reference" status="rejected" stale="false" population="virtual adult subjects (extrapolated from dog model, validated in humans)" measured-compound="salbutamol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Heuberger JAAC, van Dijkman SC, Cohen AF. Futility of current urine salbutamol doping control. British journal of clinical pharmacology 84(8):1830-1838 (2018).
@@ -17,33 +17,38 @@ Heuberger JAAC, van Dijkman SC, Cohen AF. Futility of current urine salbutamol d
 
 ## Population and dosing
 
-**Population:** healthy adults (simulated) · condition healthy · age group adult · n = 13.
+**Population:** virtual adult subjects (extrapolated from dog model, validated in humans) · condition healthy · age group adult.
 
-**Dosing:** 8, 800 mixed, inhaled; oral, multiple, every 12 h.
+**Dosing:** 8, 800 mg, oral and inhaled, multiple, every 12 h.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 10 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_salbutamol/Salbutamol_Heuberger2018_reference/Salbutamol_Heuberger2018_reference.svg" alt="Salbutamol_Heuberger2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cardiac output (×weight 0.79 ) (l min −1 ) | Q | 0.166 | l min −1 |
-| Bio‐availability Gut (%) | FG | 80 |  |
+| Bio‐availability Gut (%) | FG | 80 | % |
 | Absorption lag gut (h) | tlag | 1.5 | h |
 | Renal clearance salbutamol (l h −1 ) | CL | 17.5 | l h −1 |
 | Renal clearance S‐SAL (l h −1 ) | CL | 5.91 | l h −1 |
-| Volume of distribution | V | 211.0 | L |
-| Absorption constant gut (h −1 ) | kabs | 0.5 | h −1 |
+| Cardiac output (*weight0.79) (L/min) | Qb | 0.166 | L/min |
+| Absorption constant gut (h-1) | kabs | 0.5 | h-1 |
+| Renal clearance salbutamol (L/h) | CLR | 17.5 | L/h |
+| Central volume salbutamol (L/kg) | V1 | 1.4 | L/kg |
+| Peripheral volume salbutamol (L/kg) | V2 | 4.8 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,25 +58,28 @@ Heuberger JAAC, van Dijkman SC, Cohen AF. Futility of current urine salbutamol d
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Salbutamol's gut bioavailability and lag time used library defaults, and the cardiac output parameter was misclassified as intercompartmental clearance.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Wen_2026) cannot stand in for this paper's evidence. Extracted — salbutamol: Q 0.166 l min −1, FG 80, tlag 1.5 h, CL 17.5 l h −1, V 211 L, kabs 0.5 h −1; sulphated salbutamol: CL 5.91 l h −1.
+The record contains no extracted value for overall oral bioavailability or absorption lag, so library placeholders were used instead of paper-specific estimates. Additionally, the parameter labeled as cardiac output was interpreted as intercompartmental clearance, contradicting the paper's definition of cardiac output. This mismatch indicates a failure in correctly mapping the physiological parameters to their intended pharmacokinetic roles. Extracted — salbutamol: Q 0.166 l min −1, FG 80 %, tlag 1.5 h, CL 17.5 l h −1, Qb 0.166 L/min, kabs 0.5 h-1, CLR 17.5 L/h, V1 1.4 L/kg, … (+1); sulphated salbutamol: CL 5.91 l h −1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cardiac output (×weight 0.79 ): this record has 0.166, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cardiac output (*weight0.79): this record has 0.166, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Cardiac output (×weight 0.79 ) (l min −1 ) | `Q30` · Q | 0.166 | l min −1 | 2.767e-06 | m3/s | l/min | llm (0.6) | bcp13619-tbl-0001:row1:col1 |
-| Bio‐availability Gut (%) | `Q41` · FG | 80 |  |  |  |  | llm (0.6) | bcp13619-tbl-0001:row3:col1 |
-| Absorption lag gut (h) | `Q83` · tlag | 1.5 | h | 5400 | s | h | llm_confirmed (0.6) | bcp13619-tbl-0001:row5:col1 |
+| Bio‐availability Gut (%) | `Q41` · FG | 80 | % | 0.8 |  | % | llm (0.6) | bcp13619-tbl-0001:row3:col1 |
+| Absorption lag gut (h) | `Q83` · tlag | 1.5 | h | 5400 | s | h | llm_confirmed (0.6) | bcp13619-tbl-0001:row5:col1, Heuberger_2018_table_S1:row4:col1 |
 | Renal clearance salbutamol (l h −1 ) | `Q22` · CL | 17.5 | l h −1 | 4.861e-06 | m3/s | l/h | exact (1) | bcp13619-tbl-0001:row6:col1 |
 | Renal clearance S‐SAL (l h −1 ) | `Q22` · CL | 5.91 | l h −1 | 1.642e-06 | m3/s | l/h | exact (1) | bcp13619-tbl-0001:row7:col1 |
-| Volume of distribution | `Q61` · V | 211.0 | L | 0.211 | m3 | L | review_gapfill (0.7) | Wen_2026:review |
-| Absorption constant gut (h −1 ) | `Q49` · kabs | 0.5 | h −1 | 0.0001389 | 1/s | 1/h | review_gapfill (0.7) | Heuberger_2018:review |
+| Cardiac output (*weight0.79) (L/min) | `Q54` · Qb | 0.166 | L/min | 2.767e-06 | m3/s | l/min | llm (0.6) | Heuberger_2018_table_S1:row0:col1 |
+| Absorption constant gut (h-1) | `Q49` · kabs | 0.5 | h-1 | 0.0001389 | 1/s | 1/h | exact (1) | Heuberger_2018_table_S1:row3:col1, Heuberger_2018_table_S1:row3:col2 |
+| Renal clearance salbutamol (L/h) | `Q26` · CLR | 17.5 | L/h | 4.861e-06 | m3/s | l/h | llm_confirmed (0.6) | Heuberger_2018_table_S1:row5:col1 |
+| Central volume salbutamol (L/kg) | `Q63` · V1 | 1.4 | L/kg | 0.098 | m3 | l/kg | llm_confirmed (0.6) | Heuberger_2018_table_S1:row7:col1, Heuberger_2018_table_S1:row7:col2 |
+| Peripheral volume salbutamol (L/kg) | `Q64` · V2 | 4.8 | L/kg | 0.336 | m3 | l/kg | llm_confirmed (0.6) | Heuberger_2018_table_S1:row8:col1, Heuberger_2018_table_S1:row8:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,20 +88,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Haematocrit' — extend the ontology if this is a real PK parameter (source ['bcp13619-tbl-0001:row2:col1'])
-- dropped value-less row: 'Lung absorbed amount'
-- dropped value-less row: 'amount absorbed from the gut'
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q30 (Cardiac output (×weight 0.79 ) (l min −1 )); Q22 (Renal clearance salbutamol (l h −1 )); Q22 (Renal clearance S‐SAL (l h −1 ))
+- dropped unlinked row (NIL): 'Haematocrit' — extend the ontology if this is a real PK parameter (source ['bcp13619-tbl-0001:row2:col1', 'Heuberger_2018_table_S1:row1:col1'])
+- dropped duplicate Q41 ('Bio-availability Gut (%)', value '80') — already have one for this compound
+- dropped duplicate Q22 ('Renal clearance S-SAL (L/h)', value '5.91') — already have one for this compound
+- dropped duplicate Q30 ('Intercompartmental clearance (L/h)', value '1.4') — already have one for this compound
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q30 (Cardiac output (×weight 0.79 ) (l min −1 )); Q22 (Renal clearance salbutamol (l h −1 )); Q22 (Renal clearance S‐SAL (l h −1 )); Q63 (Central volume salbutamol (L/kg)); Q64 (Peripheral volume salbutamol (L/kg))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salbutamol
-- template fit: none — pbpk model — not a compartmental parent–metabolite model
-- base model from table(s) without population columns (Heuberger_2018:other_prose, bcp13619-fig-0001:caption, bcp13619-tbl-0001); populations adjusted value, original value kept as separate records
-- row roles (LLM): model_class=pbpk; 19/19 row label(s) assigned, 14 linked by role; re-tagged parent→sulphated salbutamol ×4, salbutamol→parent ×3
-- molar mass: no plausible PubChem entry for 'sulphated salbutamol' ('sulphated salbutamol') — left in mass units
-- molar mass: none found for 'sulphated salbutamol' — its concentrations stay mass-only
-- gap-filled Q61 (V) from Wen_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Heuberger_2018's review values (primary lacked it)
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 14 linked by role; re-tagged parent→sulphated salbutamol ×4
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - table bcp13619-tbl-0001: conflicting_units
@@ -109,13 +116,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.786 (11/14 fields) | 3 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cardiac output (*weight0.79)]` | 0.166 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cardiac output (×weight 0.79 )]` | 0.166 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 1.4 | only_one_extracted |
 
 </details>
 
@@ -129,20 +138,40 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 10 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['bcp13619-tbl-0001:row6:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['bcp13619-tbl-0001:row7:col1'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Heuberger_2018_table_S1:row5:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['bcp13619-tbl-0001:row1:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Heuberger_2018:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Wen_2026:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['bcp13619-tbl-0001:row5:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Heuberger_2018_table_S1:row3:col1', 'Heuberger_2018_table_S1:row3:col2'] |
+| C5_dimension_Q54 | pass | [length] ** 3 / [time] |  | ['Heuberger_2018_table_S1:row0:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Heuberger_2018_table_S1:row7:col1', 'Heuberger_2018_table_S1:row7:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Heuberger_2018_table_S1:row8:col1', 'Heuberger_2018_table_S1:row8:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['bcp13619-tbl-0001:row5:col1', 'Heuberger_2018_table_S1:row4:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17.5 | ['bcp13619-tbl-0001:row6:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 17.5 L/h | ['bcp13619-tbl-0001:row6:col1'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.91 L/h | ['bcp13619-tbl-0001:row7:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 211 L | ['Wen_2026:review'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 98 L | ['Heuberger_2018_table_S1:row7:col1', 'Heuberger_2018_table_S1:row7:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 336 L | ['Heuberger_2018_table_S1:row8:col1', 'Heuberger_2018_table_S1:row8:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | fail | Metabolite_C (measured=salbutamol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 6 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_shared_parameters |  | pass | 1 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.786, 0 of 1 reader(s) agree | 0.786 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped |  | 4.146e-05 |  | non-numeric value |
+| T1_cmax | reference | skipped | 100 | 4.146e-05 |  | unresolved concentration unit (exp 'ng ml⁻¹', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,26 +183,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 8 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). Doses in the paper: 8, 800 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_salbutamol/Salbutamol_Heuberger2018_reference/Salbutamol_Heuberger2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_salbutamol/Salbutamol_Heuberger2018_reference/Salbutamol_Heuberger2018_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Salbutamol_Heuberger2018_reference_params.json` · controls `Salbutamol_Heuberger2018_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Heuberger2018_reference&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Heuberger2018_reference%0APaper%3A%20Heuberger_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Heuberger2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 09:07 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 03:24 UTC</sub>

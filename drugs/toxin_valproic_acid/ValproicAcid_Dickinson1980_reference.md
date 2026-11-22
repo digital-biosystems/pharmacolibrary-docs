@@ -157,29 +157,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_valproic_acid/ValproicAcid_Dickinson1980_reference/ValproicAcid_Dickinson1980_reference_matlab.zip" download>ValproicAcid_Dickinson1980_reference_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_valproic_acid/ValproicAcid_Dickinson1980_reference/ValproicAcid_Dickinson1980_reference_sbml.zip" download>ValproicAcid_Dickinson1980_reference_sbml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_valproic_acid/ValproicAcid_Dickinson1980_reference/ValproicAcid_Dickinson1980_reference_cellml.zip" download>ValproicAcid_Dickinson1980_reference_cellml.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Dickinson RG, Lawyer CH, Kaufman SN, Lynn RK, Gerber N, Novy MJ et al. Materno-fetal pharmacokinetics and fetal distribution of valproic acid in a pregnant rhesus monkey. Pediatric pharmacology (New York, N.Y.) 1(1):71–83 (1980).
-
-**This record:** Pharmacolibrary, model `ValproicAcid_Dickinson1980_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_valproic_acid/ValproicAcid_Dickinson1980_reference>
-
-```bibtex
-@misc{pharmacolibrary_ValproicAcidDickinson1980reference,
-  title  = {{Pharmacolibrary model ValproicAcid_Dickinson1980_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_valproic_acid/ValproicAcid_Dickinson1980_reference},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

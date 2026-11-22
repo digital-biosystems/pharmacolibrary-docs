@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;calcitriol&quot;,&quot;href&quot;:&quot;drugs/drug_calcitriol/&quot;},{&quot;label&quot;:&quot;Yaghooti_2021 \u00b7 PGx VDR&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# VDR — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by glm-5.3-flash (confirmed, agreement 1.0), gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-checked ✓</span>
+# VDR — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by glm-5.3-flash (confirmed, agreement 1.0), gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -35,7 +35,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `glm-5.3-flash` | confirmed | 1.0 (4/4 fields) | none |
-| `gpt-oss:120b` | no answer | – | – (extracted nothing for this PGx record) |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PGx record) |
 
 _All readers agree on the compared fields of this PGx record._
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ribavirin record defines a 1.50 race covariate effect, but only the reference individual was simulated, leaving the covariate effect unverified and causing refusal.
+> Ribavirin’s race_factor effect (1.50) was not simulated across covariate scenarios, and the record was held for review after a disputed second reading.
 
 <div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Jin2012_population_mean_in_final_pk_model" status="needs_review" stale="false" population="adults with chronic hepatitis C genotype 1 infection" measured-compound="ribavirin" parameterization="apparent" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Jin R, Fossler MJ, McHutchison JG, Howell CD, Dowling TC. Population pharmacokin
 
 ### Reviewer guidance
 
-**Ribavirin record defines a 1.50 race covariate effect, but only the reference individual was simulated, leaving the covariate effect unverified and causing refusal.**
+**Ribavirin’s race_factor effect (1.50) was not simulated across covariate scenarios, and the record was held for review after a disputed second reading.**
 
-The model uses apparent parameters (F=1) for clearance and volume, with a lag time lacking an explicit estimate. Although a race factor of 1.50 is defined, the simulation did not test this covariate scenario. A second reader disagreed on the identity of the dose compound and primary analyte. The deviations were adjudicated as not acceptable. Extracted — ribavirin: CL/F 19 L/h, V1/F 1.13e+03 L, V2/F 4.02e+03 L, Q/F 38.6 L/h, kabs 0.86 h⁻¹.
+The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader disputed the record (agreement 0.818; 0 of 1 reader agreed) and identified the dose compound and primary analyte as unknown. Tlag was defaulted rather than explicitly estimated; the apparent parameterization assumed F=1 and Fm=1, with no molar correction. Extracted — ribavirin: CL/F 19 L/h, V1/F 1.13e+03 L, V2/F 4.02e+03 L, Q/F 38.6 L/h, kabs 0.86 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ribavirin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -153,15 +153,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=ribavirin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev_2: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=ribavirin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

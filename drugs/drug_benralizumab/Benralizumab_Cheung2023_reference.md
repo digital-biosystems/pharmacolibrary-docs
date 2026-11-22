@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Benralizumab absorption rate and lag time were unreported, forcing arbitrary placeholder values and an unsupported full bioavailability assumption.
+> Benralizumab clearance lacks explicit absorption rate and lag time values, forcing the use of library defaults instead of paper-supported estimates.
 
 <div class="pk-model-meta" hidden drug="benralizumab" model-id="Benralizumab_Cheung2023_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="benralizumab" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Cheung TT, Mai TH, Chia YL, Yap DYH, Lee CH, Chen CC et al. Safety, Tolerability
 
 ### Reviewer guidance
 
-**Benralizumab absorption rate and lag time were unreported, forcing arbitrary placeholder values and an unsupported full bioavailability assumption.**
+**Benralizumab clearance lacks explicit absorption rate and lag time values, forcing the use of library defaults instead of paper-supported estimates.**
 
-The first-order absorption rate constant and lag time were not provided in the source, so arbitrary placeholders were used instead of estimates. The model assumes full bioavailability (F=1) with apparent clearance and volume, implying oral administration. A second reader could not verify the extracted values for clearance and volume of distribution. Extracted — benralizumab: CL/F 407 mL/day, V/F 8.9 L.
+The record's apparent parameterization requires absorption kinetics, but the source paper does not report values for the absorption rate constant or lag time. Consequently, library placeholder defaults were used for these parameters rather than explicit estimates, leading to the record being held back. Additionally, a second reader failed to extract specific numerical values associated with the model's volume parameters. Extracted — benralizumab: CL/F 407 mL/day, V/F 8.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 24583.8, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
@@ -120,15 +120,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=benralizumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=dev-1: not acceptable; deviation_id=dev-2: not acceptable; deviation_id=dev-3: not acceptable; deviation_id=dev-4: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=benralizumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

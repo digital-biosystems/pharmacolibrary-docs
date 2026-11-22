@@ -4,11 +4,11 @@
 
 # solifenacin — `Solifenacin_Tannenbaum2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-07 09:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Solifenacin’s Fab is recorded as 1.12 A, causing a unit mismatch that rejects the model.
+> Bioavailability was recorded as 1.12 Amperes, an impossible value and unit that exceeds the physical limit of 1.
 
-<div class="pk-model-meta" hidden drug="solifenacin" model-id="Solifenacin_Tannenbaum2020_reference" status="rejected" stale="true" population="pediatric patients with overactive bladder or neurogenic detrusor overactivity" measured-compound="solifenacin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="solifenacin" model-id="Solifenacin_Tannenbaum2020_reference" status="rejected" stale="false" population="pediatric patients with overactive bladder or neurogenic detrusor overactivity" measured-compound="solifenacin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Tannenbaum S, den Adel M, Krauwinkel W, Meijer J, Hollestein-Havelaar A, Verheggen F et al. Pharmacokinetics of solifenacin in pediatric populations with overactive bladder or neurogenic detrusor overactivity. Pharmacology research & perspectives 8(6):e00684 (2020).
@@ -47,7 +47,7 @@ Tannenbaum S, den Adel M, Krauwinkel W, Meijer J, Hollestein-Havelaar A, Verhegg
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Tannenbaum S, den Adel M, Krauwinkel W, Meijer J, Hollestein-Havelaar A, Verhegg
 
 ### Reviewer guidance
 
-**Solifenacin’s Fab is recorded as 1.12 A, causing a unit mismatch that rejects the model.**
+**Bioavailability was recorded as 1.12 Amperes, an impossible value and unit that exceeds the physical limit of 1.**
 
-The absolute bioavailability Fab is listed with a value of 1.12 and a unit of 'A', which is not a valid pharmacokinetic unit. This missing SI conversion prevents the parameter from being processed, leading to the rejection. The second reader found no corresponding values for most parameters, confirming the extraction failures. Extracted — solifenacin: CL/F 8.81 L h–1, V2/F 162 L, kabs 0.742 h–1, tlag 0.834 h, Q/F 98.1 L h–1, V3/F 174 L, Fab 1.12 A, AUC/dose 96.7 ng h mL–1 mg–1, … (+4).
+The absolute bioavailability (Fab) is listed as 1.12 with the unit 'A', which is an electrical current unit not a dimensionless fraction. This value exceeds the maximum possible bioavailability of 1, indicating a critical extraction error. Consequently, the model was rejected due to these fundamental parameter inconsistencies. Extracted — solifenacin: CL/F 8.81 L h–1, V2/F 162 L, kabs 0.742 h–1, tlag 0.834 h, Q/F 98.1 L h–1, V3/F 174 L, Fab 1.12 A, AUC/dose 96.7 ng h mL–1 mg–1, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has solifenacin, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -4,11 +4,11 @@
 
 # neomycin — `Neomycin_Samuel1968_placebo`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-04 02:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; λ1, t1/2α and t1/2z have no unit.
 
-<div class="pk-model-meta" hidden drug="neomycin" model-id="Neomycin_Samuel1968_placebo" status="needs_review" stale="true" population="adults with hypercholesterolemia" measured-compound="cholesterol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="neomycin" model-id="Neomycin_Samuel1968_placebo" status="needs_review" stale="false" population="adults with hypercholesterolemia" measured-compound="cholesterol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Samuel P, Holtzman CH, Meilman E, Perl W. Effect of neomycin on exchangeable pools of cholesterol in the steady state. The Journal of clinical investigation 47(8):1806–1818 (1968).
@@ -40,7 +40,7 @@ Samuel P, Holtzman CH, Meilman E, Perl W. Effect of neomycin on exchangeable poo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Samuel P, Holtzman CH, Meilman E, Perl W. Effect of neomycin on exchangeable poo
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; λ1, t1/2α and t1/2z have no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — neomycin: λ1 13.9, t1/2α 1.19, t1/2z 5.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has neomycin, the second reading neomycin sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

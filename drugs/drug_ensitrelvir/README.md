@@ -61,7 +61,7 @@ The medication is administered orally. Ensitrelvir is currently an investigation
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:32 | 9:49 | 2/0/0 | 1/0/0 | 0/0/0 | 205,123/52,347 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-07 15:32 | 9:49 | 2/0/0 | 2/0/0 | 0/0/0 | 205,123/52,347 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
 
 ## Coverage
 

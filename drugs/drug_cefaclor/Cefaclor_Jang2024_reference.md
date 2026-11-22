@@ -17,7 +17,7 @@ Jang JH, Jeong SH. Structure-Based Analysis of Cefaclor Pharmacokinetic Diversit
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = — 24.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 

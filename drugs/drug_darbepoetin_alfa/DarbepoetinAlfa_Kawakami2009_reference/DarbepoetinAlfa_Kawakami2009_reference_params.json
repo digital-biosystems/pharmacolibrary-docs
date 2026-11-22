@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "DarbepoetinAlfa_Kawakami2009_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
@@ -16,12 +17,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 86400.0
+  "central.C": 163450.1002004008
  },
  "reference_peaks": {
-  "central.C": 0.0037057365779751047
+  "central.C": 0.004327185716576487
  },
- "stop_time": 86400.0,
+ "stop_time": 1382400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

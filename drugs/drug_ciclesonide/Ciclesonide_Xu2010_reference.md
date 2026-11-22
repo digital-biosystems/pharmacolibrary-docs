@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The ciclesonide record was rejected because the parent-to-metabolite clearance link was missing and the model structure did not match the parent-metabolite topology.
+> Desisobutyryl-ciclesonide clearance is inconsistently reported as 202 L/h and 890 L/h within the abstract-derived record.
 
 <div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Xu2010_reference" status="rejected" stale="false" population="adults with persistent asthma" measured-compound="desisobutyryl-ciclesonide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,9 +53,9 @@ Xu J, Nave R, Lahu G, Derom E, Derendorf H. Population pharmacokinetics and phar
 
 ### Reviewer guidance
 
-**The ciclesonide record was rejected because the parent-to-metabolite clearance link was missing and the model structure did not match the parent-metabolite topology.**
+**Desisobutyryl-ciclesonide clearance is inconsistently reported as 202 L/h and 890 L/h within the abstract-derived record.**
 
-The record lists two apparent clearance values for desisobutyryl-ciclesonide (890 L/h and 202 L/h) but lacks a value for the metabolism rate constant connecting ciclesonide to its metabolite. Additionally, the model structure was built as a simple one-compent oral model rather than a parent-metabolite system, which is inconsistent with the study design. Because the data came only from the paper's abstract, these summary statistics were treated as fitted parameters, and the missing metabolic link prevented a valid parent-metabolite simulation. Extracted — desisobutyryl-ciclesonide: kel 4.07 1/h, CLm/F 890 L/h, V 9.8e+03 L; ciclesonide: kabs 2.63 1/h, CLm/F 202 L/h.
+Two distinct values exist for the metabolite's apparent clearance: 202 L/h (non-CIC treatment) and 890 L/h. A second reader disagreed on the existence of the metabolism link and the clearance value (202 L/h vs null). The abstract-only source meant summary statistics replaced the fitted model. Extracted — desisobutyryl-ciclesonide: kel 4.07 1/h, CLm/F 890 L/h, V 9.8e+03 L; ciclesonide: kabs 2.63 1/h, CLm/F 202 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has ciclesonide → desisobutyryl-ciclesonide (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -147,15 +147,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=desisobutyryl-ciclesonide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | D1: not acceptable; D2: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=desisobutyryl-ciclesonide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

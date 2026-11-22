@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies zinc propionate as stimulating maternal circulating metabolites, but the pharmacodynamic model family, effect form, and specific mechanistic parameters are not described in the available text.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Jackson_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

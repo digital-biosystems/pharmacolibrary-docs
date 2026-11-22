@@ -4,11 +4,11 @@
 
 # tanezumab — `Tanezumab_Jonsson2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-07 06:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tanezumab total clearance (CL) of 0.135 l day–1 has a dimension mismatch.
+> Tanezumab Vmax unit μg/day was unrecognized, preventing SI conversion and causing rejection despite a dimension check failure.
 
-<div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="true" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="false" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jonsson EN, Xie R, Marshall SF, Arends RH. Population pharmacokinetics of tanezumab in phase 3 clinical trials for osteoarthritis pain. British journal of clinical pharmacology 81(4):688–699 (2016).
@@ -16,7 +16,7 @@ Jonsson EN, Xie R, Marshall SF, Arends RH. Population pharmacokinetics of tanezu
 
 ## Population and dosing
 
-**Population:** adults with osteoarthritis · condition osteoarthritis · age group adult · n = # 1608.
+**Population:** adults with osteoarthritis · condition osteoarthritis · age group adult.
 
 **Dosing:** 2.5, 5, 10 mg, iv, multiple, every 560 h.
 
@@ -46,7 +46,7 @@ Jonsson EN, Xie R, Marshall SF, Arends RH. Population pharmacokinetics of tanezu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.619). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.619). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Jonsson EN, Xie R, Marshall SF, Arends RH. Population pharmacokinetics of tanezu
 
 ### Reviewer guidance
 
-**Tanezumab total clearance (CL) of 0.135 l day–1 has a dimension mismatch.**
+**Tanezumab Vmax unit μg/day was unrecognized, preventing SI conversion and causing rejection despite a dimension check failure.**
 
-The structural parameter CL is reported with units of l day–1, which is a volumetric flow rate rather than a volume, creating a fundamental dimension mismatch for a total clearance value. Additionally, the ng ml–1 unit for Km could not be converted to standard SI units, leaving the parameter without a valid value. The second reader also disagreed on the covariate assignments for gender and weight effects on clearance and volumes. Extracted — tanezumab: CL 0.135 l day –1, V1 2.71 l, Q 0.371 l day –1, V2 1.98 l, Km 27.7 ng ml –1, Vmax 8.03 μg day –1.
+The Vmax value of 8.03 μg/day could not be converted to SI units, leaving the parameter without a valid numeric value for modeling. This unit incompatibility triggered a dimension mismatch error during validation. Additionally, there were disagreements between readers on the assignment of covariate effects for weight and gender to specific pharmacokinetic parameters. Extracted — tanezumab: CL 0.135 l day –1, V1 2.71 l, Q 0.371 l day –1, V2 1.98 l, Km 27.7 ng ml –1, Vmax 8.03 μg day –1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of gender_on_cl: this record has 0.143, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

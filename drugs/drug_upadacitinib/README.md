@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Upadacitinib_Klnder2018_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # upadacitinib
 
@@ -22,9 +23,15 @@ Upadacitinib is a selective immunosuppressant and Janus kinase inhibitor used to
 |---|---|---|---|---|---|---|
 | upadacitinib | parent | 380.375 | C17H19F3N6O | DrugBank | — | Klünder_2018, Klünder_2019 |
 
+## Start here
+
+> **Klünder_2018_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy subjects and subjects with rheumatoid arthritis, n = 573. [Run it in the simulator](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md?tab=Simulation) · [record](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Klünder_2018 · CL/F</text><circle cx="399.6" cy="30.0" r="4" fill="#78909c"><title>Klünder_2018 · CL/F: 39.7 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Klünder_2019 · CL/F</text><circle cx="404.1" cy="46.0" r="4" fill="#ef6c00"><title>Klünder_2019 · CL/F: 40.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Klünder_2018 · V1/F</text><circle cx="247.5" cy="30.0" r="4" fill="#78909c"><title>Klünder_2018 · V1/F: 146 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Klünder_2019 · V1/F</text><circle cx="257.6" cy="46.0" r="4" fill="#ef6c00"><title>Klünder_2019 · V1/F: 156 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Klünder_2018 · CL/F</text><circle cx="399.6" cy="30.0" r="4" fill="#ef6c00"><title>Klünder_2018 · CL/F: 39.7 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Klünder_2019 · CL/F</text><circle cx="404.1" cy="46.0" r="4" fill="#ef6c00"><title>Klünder_2019 · CL/F: 40.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Klünder_2018 · V1/F</text><circle cx="247.5" cy="30.0" r="4" fill="#ef6c00"><title>Klünder_2018 · V1/F: 146 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Klünder_2019 · V1/F</text><circle cx="257.6" cy="46.0" r="4" fill="#ef6c00"><title>Klünder_2019 · V1/F: 156 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -32,8 +39,8 @@ Upadacitinib is a selective immunosuppressant and Janus kinase inhibitor used to
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Klünder_2018_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md) | — | 2-compartment (no model) | 7 (+2 cov.) | Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0605-6](https://doi.org/10.1007/s40262-017-0605-6) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q1 — no SI value to build from</sub> | [Klünder_2019_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md) | — | 2-compartment (no model) | 10 (+3 cov.) | Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00739-3](https://doi.org/10.1007/s40262-019-00739-3) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Klünder_2018_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+2 cov.) | Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0605-6](https://doi.org/10.1007/s40262-017-0605-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q1 — no SI value to build from</sub> | [Klünder_2019_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md) | — | 2-compartment (no model) | 10 (+3 cov.) | Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00739-3](https://doi.org/10.1007/s40262-019-00739-3) |
 
 ## Pharmacodynamics (PD)
 
@@ -49,31 +56,11 @@ Upadacitinib is a selective immunosuppressant and Janus kinase inhibitor used to
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2020_CDAI_150](drugs/drug_upadacitinib/pd_Mohamed_2020_CDAI_150.md) | CDAI &lt; 150 ← upadacitinib · categorical (graded) response model | — | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1668](https://doi.org/10.1002/cpt.1668) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2020_CR](drugs/drug_upadacitinib/pd_Mohamed_2020_CR.md) | Clinical response ← upadacitinib · categorical (graded) response model | — | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1668](https://doi.org/10.1002/cpt.1668) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2020_CR_2_8_1_0](drugs/drug_upadacitinib/pd_Mohamed_2020_CR_2_8_1_0.md) | Clinical remission 2.8 of 1.0 ← upadacitinib · categorical (graded) response model | — | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1668](https://doi.org/10.1002/cpt.1668) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2021_EASI_75](drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_75.md) | EASI-75 ← upadacitinib · direct Emax (saturable) effect | — | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1782](https://doi.org/10.1002/jcph.1782) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2021_EASI_90](drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_90.md) | EASI-90 ← upadacitinib · direct Emax (saturable) effect | — | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1782](https://doi.org/10.1002/jcph.1782) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2021_IGA_0_1](drugs/drug_upadacitinib/pd_Mohamed_2021_IGA_0_1.md) | IGA 0/1 ← upadacitinib · direct Emax (saturable) effect | — | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1782](https://doi.org/10.1002/jcph.1782) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2021_EASI_75](drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_75.md) | EASI-75 ← upadacitinib · direct Emax (saturable) effect | model (no simulator) | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1782](https://doi.org/10.1002/jcph.1782) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2021_EASI_90](drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_90.md) | EASI-90 ← upadacitinib · direct Emax (saturable) effect | model (no simulator) | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1782](https://doi.org/10.1002/jcph.1782) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mohamed_2021_IGA_0_1](drugs/drug_upadacitinib/pd_Mohamed_2021_IGA_0_1.md) | IGA 0/1 ← upadacitinib · direct Emax (saturable) effect | model (no simulator) | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1782](https://doi.org/10.1002/jcph.1782) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nader_2020_ACR20_50_70](drugs/drug_upadacitinib/pd_Nader_2020_ACR20_50_70.md) | ACR20/50/70 response ← upadacitinib · categorical (graded) response model | — | Nader A et al., Exposure-Response Analyses of Upadaciti…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1671](https://doi.org/10.1002/cpt.1671) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nader_2020_LDA_CR](drugs/drug_upadacitinib/pd_Nader_2020_LDA_CR.md) | low disease activity (LDA; defined as DAS28-CRP ≤ 3.2)/clinical remission (CR; defined as DAS28-CRP &lt; 2.6) responses ← upadacitinib · categorical (graded) response model | — | Nader A et al., Exposure-Response Analyses of Upadaciti…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1671](https://doi.org/10.1002/cpt.1671) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=upadacitinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: JAK1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -87,13 +74,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:03 | 3:10 | 2/0/0 | 3/0/0 | 0/0/0 | 377,018/20,806 | einfracz / qwen3.8-27b | 13 | 4/9 | 13/0 | 0 |
+| 2026-10-07 01:03 | 3:10 | 2/0/0 | 15/0/0 | 0/0/0 | 377,018/20,806 | einfracz / qwen3.8-27b | 13 | 4/9 | 13/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 32 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

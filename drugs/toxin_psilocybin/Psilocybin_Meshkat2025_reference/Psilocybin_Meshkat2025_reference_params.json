@@ -8,6 +8,22 @@
  "observables": [
   "retainedFraction"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Meshkat_2025:other_prose",
+    "value_si": 5.29e-05
+   },
+   {
+    "source": "Meshkat_2025:other_prose",
+    "value_si": 0.000198
+   },
+   {
+    "source": "Meshkat_2025:other_prose",
+    "value_si": 0.000243
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "MM": 0.20427299999999998,

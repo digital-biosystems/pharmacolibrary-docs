@@ -16,7 +16,7 @@ Luo MM, Zhu PP, Nnane I, Xiong Y, Merlini G, Comenzo RL et al. Population Pharma
 
 ## Population and dosing
 
-**Population:** adults with light-chain amyloidosis · age group adult · n = condition.
+**Population:** adults with light-chain amyloidosis · age group adult.
 
 ## Model
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fusaric Acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusaricAcid_Stack2014_reference&quot;,&quot;label&quot;:&quot;Stack_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusaricAcid_Stack2014_reference&quot;,&quot;label&quot;:&quot;Stack_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Fusaric Acid
 
@@ -31,7 +31,7 @@ Fusaric acid is a mycotoxin found in various Fusarium species such as Fusarium m
 
 ## Start here
 
-> **Stack_2014_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> Male Sprague-Dawley rats. [Run it in the simulator](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md?tab=Simulation) · [record](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md)
+> **Stack_2014_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> Male Sprague-Dawley rats. [Run it in the simulator](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md?tab=Simulation) · [record](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,7 +39,7 @@ Fusaric acid is a mycotoxin found in various Fusarium species such as Fusarium m
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Stack_2014_reference](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Stack BC et al., Determination of oral bioavailability o…, Drugs in R&D (2014) | [10.1007/s40268-014-0051-y](https://doi.org/10.1007/s40268-014-0051-y) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_tmax</sub> | [Stack_2014_reference](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Stack BC et al., Determination of oral bioavailability o…, Drugs in R&D (2014) | [10.1007/s40268-014-0051-y](https://doi.org/10.1007/s40268-014-0051-y) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ average](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_average.md) | — | 2-compartment (no model) | 8 |  |  |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ dose_10_mg_kg](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_dose_10_mg_kg.md) | — | 1-compartment (no model) | 4 |  |  |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ dose_25_mg_kg](drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_dose_25_mg_kg.md) | — | 1-compartment (no model) | 4 |  |  |
@@ -63,7 +63,7 @@ Fusaric acid is a mycotoxin found in various Fusarium species such as Fusarium m
 
 - **PubMed hits:** 20 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 5  ·  extracted 1  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

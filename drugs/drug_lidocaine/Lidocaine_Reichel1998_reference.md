@@ -38,7 +38,7 @@ Reichel C, Skodra T, Nacke A, Spengler U, Sauerbruch T. The lignocaine metabolit
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Reichel C, Skodra T, Nacke A, Spengler U, Sauerbruch T. The lignocaine metabolit
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. None of the extracted parameters is lidocaine's own; they describe MEGX. Extracted — MEGX: CL 7.5 ml min -1 kg -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lignocaine → megx (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lignocaine → megx (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -87,14 +87,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.6 (3/5 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['lignocaine', 'megx', 'metabolism']] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[lignocaine plasma clearance]` | 7.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['lignocaine', 'megx', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[lignocaine plasma clearance]` | 7.5 |  | only_one_extracted |
 
 </details>
 

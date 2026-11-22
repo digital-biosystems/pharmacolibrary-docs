@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;apomorphine&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/&quot;},{&quot;label&quot;:&quot;Gancher_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Nasser_2024_UPDRS_Part_III&quot;,&quot;label&quot;:&quot;Nasser_2024 \u00b7 UPDRS Part III&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Nasser_2024_UPDRS_Part_III.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Patel_1995_single_pulse_stimulated_dopamine_release&quot;,&quot;label&quot;:&quot;Patel_1995 \u00b7 single pulse stimulated dopamine release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Patel_1995_single_pulse_stimulated_dopamine_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # apomorphine — `Apomorphine_Gancher1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-07 09:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Gancher1989_reference" status="needs_review" stale="true" population="patients with parkinsonism" measured-compound="apomorphine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Gancher1989_reference" status="needs_review" stale="false" population="patients with parkinsonism" measured-compound="apomorphine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gancher ST, Woodward WR, Boucher B, Nutt JG. Peripheral pharmacokinetics of apomorphine in humans. Annals of neurology 26(2):232–238 (1989).
@@ -17,7 +16,7 @@ Gancher ST, Woodward WR, Boucher B, Nutt JG. Peripheral pharmacokinetics of apom
 
 ## Population and dosing
 
-**Population:** patients with parkinsonism · condition parkinsonism · age group adult · n = &lt;null&gt;.
+**Population:** patients with parkinsonism · condition parkinsonism · age group adult.
 
 ## Model
 
@@ -37,7 +36,7 @@ Gancher ST, Woodward WR, Boucher B, Nutt JG. Peripheral pharmacokinetics of apom
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +46,9 @@ Gancher ST, Woodward WR, Boucher B, Nutt JG. Peripheral pharmacokinetics of apom
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — apomorphine: t1/2α 5 minutes, t1/2z 33 minutes, kabs 14.9 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apomorphine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

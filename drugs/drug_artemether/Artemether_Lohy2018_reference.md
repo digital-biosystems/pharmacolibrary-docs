@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artemether&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/&quot;},{&quot;label&quot;:&quot;Lohy_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Lohy_2018_EFF&quot;,&quot;label&quot;:&quot;Lohy_2018 \u00b7 EFF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/pd_Lohy_2018_EFF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Lohy_2018_EFF&quot;,&quot;label&quot;:&quot;Lohy_2018 \u00b7 EFF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/pd_Lohy_2018_EFF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # artemether — `Artemether_Lohy2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 05:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model does not reproduce the paper's terminal half-life (paper 96, model 12); t3_output_variable (+3 more).
+> MTT has no unit.
 
-<div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Lohy2018_reference" status="needs_review" stale="true" population="pregnant women with uncomplicated Plasmodium falciparum malaria (Rwanda)" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Lohy2018_reference" status="needs_review" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria (Rwanda)" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Lohy Das J, Rulisa S, de Vries PJ, Mens PF, Kaligirwa N, Agaba S et al. Population Pharmacokinetics of Artemether, Dihydroartemisinin, and Lumefantrine in Rwandese Pregnant Women Treated for Uncomplicated Plasmodium falciparum Malaria. Antimicrobial agents and chemotherapy 62(10) (2018).
@@ -25,12 +25,10 @@ Lohy Das J, Rulisa S, de Vries PJ, Mens PF, Kaligirwa N, Agaba S et al. Populati
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** CL/F, Q/F, V/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 12 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_artemether/Artemether_Lohy2018_reference/Artemether_Lohy2018_reference.svg" alt="Artemether_Lohy2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -52,7 +50,7 @@ Lohy Das J, Rulisa S, de Vries PJ, Mens PF, Kaligirwa N, Agaba S et al. Populati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,13 +60,13 @@ Lohy Das J, Rulisa S, de Vries PJ, Mens PF, Kaligirwa N, Agaba S et al. Populati
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 96, model 12); t3_output_variable (+3 more).**
+**MTT has no unit.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — lumefantrine: Fab 1, MTT 0.738 h, CL/F 4.49 liters/h, V1/F 139 liters, Q/F 0.924 liters/h, V2/F 111 liters; artemether: CL/F 467 liters/h, V/F 3e+03 liters, kabs 0.0577 h−1, tlag 1.31 h; dihydroartemisinin: CL/F 611 liters/h, V1/F 137 liters.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — lumefantrine: Fab 1, MTT 0.738 h, CL/F 4.49 liters/h, V1/F 139 liters, Q/F 0.924 liters/h, V2/F 111 liters; artemether: CL/F 467 liters/h, V/F 3e+03 liters, kabs 0.0577 h−1, tlag 1.31 h; dihydroartemisinin: CL/F 611 liters/h, V1/F 137 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemether-lumefantrine, the second reading artemether/lumefantrine; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -94,9 +92,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
 - table section iiv: 'MTT (h)' routed out of structural estimates ('BSV/BOV, % CV (% RSE)')
 - table section iiv: 'Vc/F (liters)' routed out of structural estimates ('BSV/BOV, % CV (% RSE)')
@@ -118,7 +113,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 17 linked by role; re-tagged parent→lumefantrine ×16, parent→artemether ×7, parent→dihydroartemisinin ×4
 - gap-filled Q49 (kabs) from Kloprogge_2015's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Kloprogge_2015's review values (primary lacked it)
-- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - unparsed cell T2:row2:col3 = '144 (19.7)b'
@@ -222,21 +216,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C9_phys_window_Q76 | pass | volume within physiological range | 3e+03 L | ['T2:row17:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 111 L | ['T2:row9:col1'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable |  | fail | Metabolite_C (measured=artemether) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | fail | 10 scholar param(s) emitted or defaulted | 9 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | fail | 96 | 12.02 | 0.1252 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 30.4 | 12.02 | 0.3953 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 30.6 | 12.02 | 0.3927 | h→SI vs simulated h |
-
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -252,7 +231,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -263,11 +242,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 80 mg, single dose, first-order absorption (ka 0.0577 /h, lag 78.6 min, F 1). Dose in the paper: 80 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_artemether/Artemether_Lohy2018_reference/Artemether_Lohy2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_artemether/Artemether_Lohy2018_reference/Artemether_Lohy2018_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Artemether_Lohy2018_reference_params.json` · controls `Artemether_Lohy2018_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

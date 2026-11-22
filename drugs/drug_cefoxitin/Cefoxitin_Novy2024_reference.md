@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefoxitin&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/&quot;},{&quot;label&quot;:&quot;Novy_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefoxitin_Chabert2022_reference&quot;,&quot;label&quot;:&quot;Chabert_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/Cefoxitin_Chabert2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefoxitin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/Cefoxitin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefoxitin_Novy2024_reference&quot;,&quot;label&quot;:&quot;Novy_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/Cefoxitin_Novy2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefoxitin_Soback1988_reference&quot;,&quot;label&quot;:&quot;Soback_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/Cefoxitin_Soback1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ferro_2015_M_abscessus_kill_rate&quot;,&quot;label&quot;:&quot;Ferro_2015 \u00b7 M. abscessus kill rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/pd_Ferro_2015_M_abscessus_kill_rate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ferro_2015_M_fortuitum_kill_rate&quot;,&quot;label&quot;:&quot;Ferro_2015 \u00b7 M. fortuitum kill rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/pd_Ferro_2015_M_fortuitum_kill_rate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefoxitin_Chabert2022_reference&quot;,&quot;label&quot;:&quot;Chabert_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/Cefoxitin_Chabert2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefoxitin_Novy2024_reference&quot;,&quot;label&quot;:&quot;Novy_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/Cefoxitin_Novy2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefoxitin_Soback1988_reference&quot;,&quot;label&quot;:&quot;Soback_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/Cefoxitin_Soback1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefoxitin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/Cefoxitin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ferro_2015_M_abscessus_kill_rate&quot;,&quot;label&quot;:&quot;Ferro_2015 \u00b7 M. abscessus kill rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/pd_Ferro_2015_M_abscessus_kill_rate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ferro_2015_M_fortuitum_kill_rate&quot;,&quot;label&quot;:&quot;Ferro_2015 \u00b7 M. fortuitum kill rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefoxitin/pd_Ferro_2015_M_fortuitum_kill_rate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cefoxitin bioavailability and lag time defaulted to library placeholders, as abstract-only extraction lacked these estimates.
+> Bioavailability and lag time were defaulted because the abstract lacks these estimates, while clearance and absorption rate values were extracted inconsistently.
 
 <div class="pk-model-meta" hidden drug="cefoxitin" model-id="Cefoxitin_Novy2024_reference" status="needs_review" stale="false" population="obese patients undergoing elective bariatric surgery" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Novy E, Liu X, Hernández-Mitre MP, Belveyre T, Scala-Bertola J, Roberts JA et a
 
 ### Reviewer guidance
 
-**Cefoxitin bioavailability and lag time defaulted to library placeholders, as abstract-only extraction lacked these estimates.**
+**Bioavailability and lag time were defaulted because the abstract lacks these estimates, while clearance and absorption rate values were extracted inconsistently.**
 
-Bioavailability (F) and absorption lag time (Tlag) were not explicitly reported in the abstract, so the model builder applied library defaults. The record was built from the abstract alone, meaning reported summary statistics like 10.9 L/h clearance stood in for a fitted model. A second reader disagreed on the presence of clearance and absorption rate constant values, highlighting extraction ambiguity. Extracted — cefoxitin: CL 10.9 L/h, V 23.4 L, kabs 9.78 h−1.
+The record relies on abstract summary statistics to stand in for a fitted model, leading to the substitution of default values for bioavailability and lag time. A discrepancy exists in the extracted parameters: clearance is listed as 10.9 L/h in one record version but missing in another, and the absorption rate constant is 9.78 h⁻¹ in one version but null in the other. Extracted — cefoxitin: CL 10.9 L/h, V 23.4 L, kabs 9.78 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 10.9; it also differs on 2 more fields. That field does not shape the model.
 
@@ -127,14 +127,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cefoxitin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cefoxitin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

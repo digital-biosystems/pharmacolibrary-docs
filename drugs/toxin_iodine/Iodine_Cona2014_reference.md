@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Iodine&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/&quot;},{&quot;label&quot;:&quot;Cona_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iodine_Cona2014_reference&quot;,&quot;label&quot;:&quot;Cona_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Cona2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Iodine_Ibragimova2025_reference&quot;,&quot;label&quot;:&quot;Ibragimova_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Ibragimova2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iodine_Ravichandran2016_estimated_whole_body_residence_time&quot;,&quot;label&quot;:&quot;Ravichandran_2016_estimated_whole_body_residence_time_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Ravichandran2016_estimated_whole_body_residence_time.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iodine_Ravichandran2016_estimated_whole_body_residence_time&quot;,&quot;label&quot;:&quot;Ravichandran_2016_estimated_whole_body_residence_time_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Ravichandran2016_estimated_whole_body_residence_time.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iodine_Cona2014_reference&quot;,&quot;label&quot;:&quot;Cona_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Cona2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Iodine_Ibragimova2025_reference&quot;,&quot;label&quot;:&quot;Ibragimova_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Ibragimova2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Iodine — `Iodine_Cona2014_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">rat</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life (paper 13.2, model 193).
 
-<div class="pk-model-meta" hidden drug="Iodine" model-id="Iodine_Cona2014_reference" status="extracted" stale="false" population="rats with re-perfused partial liver infarction (RPLI)" measured-compound="Iodine-123-labeled monoiodohypericin (123I-Hyp)" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Iodine" model-id="Iodine_Cona2014_reference" status="needs_review" stale="false" population="rats with re-perfused partial liver infarction (RPLI)" measured-compound="Iodine-123-labeled monoiodohypericin (123I-Hyp)" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Cona MM, Koole M, Feng Y, Liu Y, Verbruggen A, Oyen R et al. Biodistribution and radiation dosimetry of radioiodinated hypericin as a cancer therapeutic. International journal of oncology 44(3):819–829 (2014).
@@ -31,6 +31,8 @@ Cona MM, Koole M, Feng Y, Liu Y, Verbruggen A, Oyen R et al. Biodistribution and
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | half-life of 123 I | t1/2z | 13.2 | h |
@@ -39,7 +41,7 @@ Cona MM, Koole M, Feng Y, Liu Y, Verbruggen A, Oyen R et al. Biodistribution and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ Cona MM, Koole M, Feng Y, Liu Y, Verbruggen A, Oyen R et al. Biodistribution and
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (paper 13.2, model 193).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is iodine's own; they describe Iodine-123-labeled monoiodohypericin (123I-Hyp). Extracted — Iodine-123-labeled monoiodohypericin (123I-Hyp): t1/2z 13.2 h, t1/2β 8.06 days, CL 0.576 mL/min/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -127,6 +135,19 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.576 | ['Karim_2025:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 2.42 L/h | ['Karim_2025:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Iodine-123-labeled monoiodohypericin (123I-Hyp)) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | pass | 193.4 | 193.4 | 0.9999 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 13.2 | 193.4 | 14.65 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

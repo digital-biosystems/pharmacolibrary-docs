@@ -26,7 +26,7 @@ Rolitetracycline is a tetracycline antibiotic used to treat bacterial and protoz
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Lashev_1995_reference](drugs/drug_rolitetracycline/Rolitetracycline_Lashev1995_reference.md) | — | 1-compartment (no model) | 1 | Lashev L et al., Species specific pharmacokinetics of ro…, Zentralblatt fur Veterinarm… (1995) | [10.1111/j.1439-0442.1995.tb00371.x](https://doi.org/10.1111/j.1439-0442.1995.tb00371.x) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Lashev_1995_reference](drugs/drug_rolitetracycline/Rolitetracycline_Lashev1995_reference.md) | — | 1-compartment (no model) | 1 | Lashev L et al., Species specific pharmacokinetics of ro…, Zentralblatt fur Veterinarm… (1995) | [10.1111/j.1439-0442.1995.tb00371.x](https://doi.org/10.1111/j.1439-0442.1995.tb00371.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ Rolitetracycline is a tetracycline antibiotic used to treat bacterial and protoz
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

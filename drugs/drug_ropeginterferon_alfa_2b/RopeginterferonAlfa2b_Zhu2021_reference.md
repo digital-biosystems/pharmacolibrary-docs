@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The body-weight effect on clearance was not simulated, and a parameter unit prevented conversion to standard SI units, blocking analysis.
+> Ropeginterferon alfa 2b’s body-weight effect (0.927) was not exercised, and disagreement over the assigned dose compound and primary analyte left the record needing review.
 
 <div class="pk-model-meta" hidden drug="ropeginterferon alfa-2b" model-id="RopeginterferonAlfa2b_Zhu2021_reference" status="needs_review" stale="false" population="healthy Caucasian and Chinese adults" measured-compound="ropeginterferon_alfa_2b" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Zhu M, Wang MX, Li ZR, Wang W, Su X, Jiao Z. Population Pharmacokinetics of Rope
 
 ### Reviewer guidance
 
-**The body-weight effect on clearance was not simulated, and a parameter unit prevented conversion to standard SI units, blocking analysis.**
+**Ropeginterferon alfa 2b’s body-weight effect (0.927) was not exercised, and disagreement over the assigned dose compound and primary analyte left the record needing review.**
 
-The record defines a body weight covariate on clearance with a value of 0.927, but the model was only simulated for the reference individual, omitting the covariate scenarios. One parameter’s unit could not be converted to standard SI units, so it lacked a usable numerical value. A second reader was unable to confirm the primary analyte identification. Extracted — ropeginterferon alfa 2b: CL/F 0.778 L/day, V/F 2.32 L, kabs 0.14 1/day, tlag 0.426 h, kint 0.0788 h−1, KD 0.142 ng/ml.
+The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader marked the dose compound and primary analyte as unknown, disputing the record’s assignment of ropeginterferon alfa 2b for both; agreement was 0.882, with 0 of 1 reader agreeing. The model builder assumed F=1 and Fm=1 with no molar correction, and one reported unit could not be converted to SI. Extracted — ropeginterferon alfa 2b: CL/F 0.778 L/day, V/F 2.32 L, kabs 0.14 1/day, tlag 0.426 h, kint 0.0788 h−1, KD 0.142 ng/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ropeginterferon_alfa_2b, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -163,15 +163,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=ropeginterferon_alfa_2b) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=ropeginterferon_alfa_2b) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.882, 0 of 1 reader(s) agree | 0.882 | cross-check disputed by a second reader: verdict disputed, agreement 0.882, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

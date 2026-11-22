@@ -4,11 +4,11 @@
 
 # exenatide — `Exenatide_Cirincione2017_combined_single_and_multiple_dose_m`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-22 09:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Exenatide clearance of 0.059 L/h has a unit that could not be converted to standard SI units, causing a dimension mismatch.
+> The exenatide record was rejected because the apparent intercompartmental clearance unit (L/day) conflicts with its required dimension.
 
-<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017_combined_single_and_multiple_dose_m" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017_combined_single_and_multiple_dose_m" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Release Formulation of Exenatide Following Single- and Multiple-Dose Administration. The AAPS journal 19(2):487–496 (2017).
@@ -47,7 +47,7 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.609). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.609). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 ### Reviewer guidance
 
-**Exenatide clearance of 0.059 L/h has a unit that could not be converted to standard SI units, causing a dimension mismatch.**
+**The exenatide record was rejected because the apparent intercompartmental clearance unit (L/day) conflicts with its required dimension.**
 
-The total clearance value of 0.059 L/h was flagged for a structural parameter dimension mismatch. The reported unit L/h could not be converted to SI units, so no valid value was generated for the model. Consequently, the record was held back from publication. Extracted — exenatide: kabs 3.85 1/day, CLint 110 L/day, V 7.03 L, Fab 1.18 %, ktr 0.57 1/day, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
+The apparent intercompartmental clearance (Q) is assigned a value of 89.3 with units of L/day, which the review identified as a dimension mismatch against the required mass-based clearance dimension. Additionally, a reported unit could not be converted to standard SI units, leaving a parameter without a standardized value during processing. A second reader disagreed on multiple fields, including the dose compound, primary analyte, and several parameter values such as the EGFR power covariate effect and the bioavailability fraction. Extracted — exenatide: kabs 3.85 1/day, CLint 110 L/day, V 7.03 L, Fab 1.18 %, ktr 0.57 1/day, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

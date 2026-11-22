@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin aspart&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/&quot;},{&quot;label&quot;:&quot;Clausen_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_R_ppel_2017_GIR&quot;,&quot;label&quot;:&quot;R\u00fcppel_2017 \u00b7 GIR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/pd_R_ppel_2017_GIR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +16,7 @@ Clausen WH, De Gaetano A, Vølund A. Within-patient variation of the pharmacokin
 
 ## Population and dosing
 
-**Population:** type 1 diabetes subjects · condition type 1 diabetes · age group adult · n = &gt;=20.
+**Population:** type 1 diabetes subjects · condition type 1 diabetes · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed biphasic insulin aspart, measured insulin aspart.
 
@@ -42,7 +41,7 @@ Clausen WH, De Gaetano A, Vølund A. Within-patient variation of the pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +55,7 @@ Clausen WH, De Gaetano A, Vølund A. Within-patient variation of the pharmacokin
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — insulin aspart: AUC 475 hpmoll−1, AUC/dose 6.1 10−3hl−1, kel 0.0126 min−1, V 1.04 l/kg, CL 0.0114 L/min/kg, tlag 0.48 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has biphasic insulin aspart, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has biphasic insulin aspart, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -109,29 +108,29 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.105 (2/19 fields) | 17 |
+| `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
 
 <details><summary>17 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[a2 k (min-1) model1]` |  | 0.0104 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[a3 k (min-1) model1]` |  | 0.0004 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc (hpmoll-1) injection1]` |  | 474.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc:dose (10-3hl-1) injection1]` |  | 6.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc:dose]` | 6.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc]` | 474.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl (lmin-1kg-1) model1]` |  | 0.0114 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 0.0114 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dose (nmol) injection1]` |  | 78.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f-value]` |  | 36.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k (min-1) model1]` |  | 0.0126 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k (min-1)]` | 0.0126 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v (l/kg) model1]` |  | 1.0403 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v(l/kg)]` | 1.0403 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[x v (l/kg) subject104 model2]` |  | 1.5771 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | biphasic insulin aspart | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | insulin aspart | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[a2 k (min-1) model1]` |  | 0.0104 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a3 k (min-1) model1]` |  | 0.0004 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc (hpmoll-1) injection1]` |  | 474.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc:dose (10-3hl-1) injection1]` |  | 6.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc:dose]` | 6.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 474.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl (lmin-1kg-1) model1]` |  | 0.0114 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.0114 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose (nmol) injection1]` |  | 78.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f-value]` |  | 36.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k (min-1) model1]` |  | 0.0126 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k (min-1)]` | 0.0126 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v (l/kg) model1]` |  | 1.0403 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v(l/kg)]` | 1.0403 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[x v (l/kg) subject104 model2]` |  | 1.5771 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | biphasic insulin aspart | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | insulin aspart | unknown | mismatch |
 
 </details>
 

@@ -16,7 +16,7 @@ Sadaf A, Dong M, Pfeiffer A, Latham T, Kalfa T, Vinks AA et al. A Population Pha
 
 ## Population and dosing
 
-**Population:** patients with sickle cell disease and healthy volunteers · condition sickle cell disease · age group mixed · n = &gt;= 20.
+**Population:** patients with sickle cell disease and healthy volunteers · condition sickle cell disease · age group mixed.
 
 **Dosing:** 7000, 21000, 42000 mg, oral, multiple.
 

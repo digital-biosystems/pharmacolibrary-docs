@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;ketorolac&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/&quot;},{&quot;label&quot;:&quot;Drover_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketorolac_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Cohen2011_reference&quot;,&quot;label&quot;:&quot;Cohen_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cohen2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Drover2012_reference&quot;,&quot;label&quot;:&quot;Drover_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Drover2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ketorolac_Villa2015_reference&quot;,&quot;label&quot;:&quot;Villa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Villa2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketorolac_Cohen2011_reference&quot;,&quot;label&quot;:&quot;Cohen_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cohen2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Cerreta2019_reference&quot;,&quot;label&quot;:&quot;Cerreta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cerreta2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Drover2012_reference&quot;,&quot;label&quot;:&quot;Drover_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Drover2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ketorolac_Villa2015_reference&quot;,&quot;label&quot;:&quot;Villa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Villa2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ketorolac — `Ketorolac_Drover2012_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Drover2012_reference" status="simulated" stale="false" population="adolescent surgical patients" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
+> Ketorolac’s bioavailability (F) has no reported estimate and was defaulted, so the record was held back despite its reported clearance of 2.05 L/h.
+
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Drover2012_reference" status="needs_review" stale="false" population="adolescent surgical patients" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Drover DR, Hammer GB, Anderson BJ. The pharmacokinetics of ketorolac after single postoperative intranasal administration in adolescent patients. Anesthesia and analgesia 114(6):1270–1276 (2012).
@@ -27,6 +29,8 @@ Drover DR, Hammer GB, Anderson BJ. The pharmacokinetics of ketorolac after singl
 <figure class="pk-models-diagram"><img src="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference.svg" alt="Ketorolac_Drover2012_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance (CL/F) | CL | 2.05 | L/h |
@@ -36,7 +40,7 @@ Drover DR, Hammer GB, Anderson BJ. The pharmacokinetics of ketorolac after singl
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Drover DR, Hammer GB, Anderson BJ. The pharmacokinetics of ketorolac after singl
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Ketorolac’s bioavailability (F) has no reported estimate and was defaulted, so the record was held back despite its reported clearance of 2.05 L/h.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+F used library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper. Tlag was also defaulted, and the record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disputed the ketorolac identification and reported parameter values, with agreement of 0.167 and 0 of 1 reader agreeing. Extracted — ketorolac: CL 2.05 L/h, V 15.2 L, t1/2ka 0.173 hour, tmax 52 minutes.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketorolac, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -133,14 +137,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ketorolac) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ketorolac) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

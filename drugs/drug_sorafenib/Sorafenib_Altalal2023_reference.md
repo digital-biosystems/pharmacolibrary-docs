@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sorafenib&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/&quot;},{&quot;label&quot;:&quot;Altalal_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sorafenib_Altalal2023_reference&quot;,&quot;label&quot;:&quot;Altalal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Altalal2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sorafenib_Huh2021_nexavar_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_nexavar_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_nexavar_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_parameter_estimates_relative_standard_erro&quot;,&quot;label&quot;:&quot;Huh_2021_parameter_estimates_relative_standard_error&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_100_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_100_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_100_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_150_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_150_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_150_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Jain2011_reference&quot;,&quot;label&quot;:&quot;Jain_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Jain2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Liu2018_reference&quot;,&quot;label&quot;:&quot;Liu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Liu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_tumor_growth_inhibition&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 tumor-growth inhibition&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/pd_Choi_2021_tumor_growth_inhibition.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sorafenib_Altalal2023_reference&quot;,&quot;label&quot;:&quot;Altalal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Altalal2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sorafenib_Huh2021_nexavar_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_nexavar_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_nexavar_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_100_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_100_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_100_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_150_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_150_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_150_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Liu2018_reference&quot;,&quot;label&quot;:&quot;Liu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Liu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_tumor_growth_inhibition&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 tumor-growth inhibition&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/pd_Choi_2021_tumor_growth_inhibition.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Absorption rate constant and lag time for sorafenib were not reported in the source, so library placeholders were used instead of estimates.
+> Sorafenib’s absorption-rate constant (ka) has no reported value and was defaulted, leaving the record’s absorption estimate unsupported and held back.
 
 <div class="pk-model-meta" hidden drug="sorafenib" model-id="Sorafenib_Altalal2023_reference" status="needs_review" stale="false" population="Wistar rats" measured-compound="sorafenib" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Altalal A, Almomen A, Alkholief M, Binkhathlan Z, Alzoman NZ, Alshamsan A. Devel
 
 ### Reviewer guidance
 
-**Absorption rate constant and lag time for sorafenib were not reported in the source, so library placeholders were used instead of estimates.**
+**Sorafenib’s absorption-rate constant (ka) has no reported value and was defaulted, leaving the record’s absorption estimate unsupported and held back.**
 
-The record provides CL/F of 1.8 L/h/kg and V/F of 9288.9363 L but omits explicit values for the absorption rate constant and lag time. The model builder indicated these parameters were not reported in the source and were therefore left without specific estimates. This results in a simulated absorption profile relying on generic defaults rather than paper-specific data. Extracted — sorafenib: CL/F 1.8 L/h/kg, V/F 9.29e+03 L.
+Ka uses library defaults rather than estimates from this paper, and the defaulted values affect the simulated profile; Tlag was also defaulted. The model assumed F=1 and Fm=1, with no molar correction, and used first-order depot input for apparent oral dosing. Extracted — sorafenib: CL/F 1.8 L/h/kg, V/F 9.29e+03 L.
 
 Independently confirmed by `qwen3.8-27b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -117,15 +117,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=sorafenib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=sorafenib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

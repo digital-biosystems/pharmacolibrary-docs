@@ -5,18 +5,18 @@
 
 # etofylline nicotinate — `EtofyllineNicotinate_Lcker1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-06 20:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The etofylline record lacks volume and clearance, is not a compartmental model, and contains an unreachable metabolite.
+> Record rejected because the parent etofylline clofibrate lacks elimination parameters and the record is abstract-only.
 
-<div class="pk-model-meta" hidden drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Lcker1980_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Lcker1980_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Lücker PW, Wetzelsberger K, Erking W, Donike M. [Metabolism and pharmacokinetics of etofylline clofibrate, new antilipemic]. Arzneimittel-Forschung 30(11b):2045–2053 (1980).
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=7.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed etofylline clofibrate, measured etofylline.
 
@@ -36,7 +36,7 @@ Lücker PW, Wetzelsberger K, Erking W, Donike M. [Metabolism and pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Lücker PW, Wetzelsberger K, Erking W, Donike M. [Metabolism and pharmacokinetic
 
 ### Reviewer guidance
 
-**The etofylline record lacks volume and clearance, is not a compartmental model, and contains an unreachable metabolite.**
+**Record rejected because the parent etofylline clofibrate lacks elimination parameters and the record is abstract-only.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. It reports no distribution volume or clearance, confirming it is not a compartmental population PK model. Additionally, the etofylline metabolite is unreachable because its formation link from etofylline clofibrate lacks a defined rate parameter. Extracted — etofylline nicotinate: t1/2z 12.1 h.
+The model structure defines hydrolysis links from etofylline clofibrate to etofylline and clofibric acid, but no elimination half-life parameter exists for the parent compound. The record was built from the abstract only, so summary statistics stood in for a fitted model, and the second reader disputed the primary analyte identification. Extracted — etofylline nicotinate: t1/2z 12.1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etofylline clofibrate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -81,7 +81,7 @@ Methanol (also called methyl alcohol, wood alcohol, and wood spirit, amongst oth
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-15 16:55 | 2:30:48 | 6/1/0 | 6/0/0 | 0/0/0 | 4,304,634/257,244 | einfracz / qwen3.8-flash-next | 105 | 11/81 | 104/1 | 0 |
+| 2026-11-15 16:55 | 2:30:48 | 6/1/0 | 8/0/0 | 0/0/0 | 4,304,634/257,244 | einfracz / qwen3.8-flash-next | 105 | 11/81 | 104/1 | 0 |
 
 ## Coverage
 

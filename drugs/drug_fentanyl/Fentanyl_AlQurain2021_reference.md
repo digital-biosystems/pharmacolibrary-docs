@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Al-Qurain_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_elderly&quot;,&quot;label&quot;:&quot;Ariano_2001_elderly&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_elderly.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_young&quot;,&quot;label&quot;:&quot;Ariano_2001_young&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_young.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Grimsrud2020_reference&quot;,&quot;label&quot;:&quot;Grimsrud_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Grimsrud2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_SaizRodrguez2019_reference&quot;,&quot;label&quot;:&quot;Saiz-Rodr\u00edguez_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_SaizRodrguez2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Scholz1996v2_reference&quot;,&quot;label&quot;:&quot;Scholz_1996_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Scholz1996v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Vller2019_reference&quot;,&quot;label&quot;:&quot;V\u00f6ller_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Vller2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_EEG&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_EEG.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_SaizRodrguez2019_reference&quot;,&quot;label&quot;:&quot;Saiz-Rodr\u00edguez_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_SaizRodrguez2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_elderly&quot;,&quot;label&quot;:&quot;Ariano_2001_elderly&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_elderly.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_reference&quot;,&quot;label&quot;:&quot;Ariano_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_young&quot;,&quot;label&quot;:&quot;Ariano_2001_young&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_young.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Grimsrud2020_reference&quot;,&quot;label&quot;:&quot;Grimsrud_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Grimsrud2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Vller2019_reference&quot;,&quot;label&quot;:&quot;V\u00f6ller_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Vller2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The clearance value of -8.76 is negative, making the fentanyl model physically impossible and leading to its rejection.
+> Fentanyl Tag was misidentified as a concentration, creating a unit mismatch against its expected mass-volume dimension.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_AlQurain2021_reference" status="rejected" stale="false" population="older acute care patients" measured-compound="fentanyl" parameterization="apparent" topology="1C"></div>
 
@@ -17,15 +17,15 @@ Al-Qurain AA, Upton R, Williams DB, Mackenzie L, Phillips C, Russell PT et al. P
 
 ## Population and dosing
 
-**Population:** older acute care patients · condition acute pain · age group elderly · n = 21.
+**Population:** older acute care patients · condition acute pain · age group elderly.
 
-**Dosing:** 0.05, 0.075 mg, subcutaneous, multiple, every 5 h.
+**Dosing:** 0.05, 0.075 mg, subcutaneous, multiple.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,13 +33,14 @@ Al-Qurain AA, Upton R, Williams DB, Mackenzie L, Phillips C, Russell PT et al. P
 
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
-| CCI effects on CL/F | CL/F | -8.76 |  | 0.693 (None% RSE) |
+| Tag, (h) | Ct | 0.648 | h |  |
 | ka, (h⁻¹) | kabs | 0.124 | h⁻¹ | 0.482 (None% RSE) |
 | V/F, (L) | V/F | 5.31 | L | 0.336 (None% RSE) |
+| CL/F, (L.h⁻¹) | CL/F | 9.08 | L.h⁻¹ | 0.693 (None% RSE) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +50,11 @@ Al-Qurain AA, Upton R, Williams DB, Mackenzie L, Phillips C, Russell PT et al. P
 
 ### Reviewer guidance
 
-**The clearance value of -8.76 is negative, making the fentanyl model physically impossible and leading to its rejection.**
+**Fentanyl Tag was misidentified as a concentration, creating a unit mismatch against its expected mass-volume dimension.**
 
-The record lists a total clearance parameter with a value of -8.76. Because clearance must be a positive quantity in pharmacokinetics, this negative value is considered implausible. Consequently, the model failed its structural validity check and was rejected. Extracted — fentanyl: CL/F -8.76, kabs 0.124 h⁻¹, V/F 5.31 L.
+The parameter labeled 'Tag, (h)' has a value of 0.648 h, yet its meaning defines it as a drug concentration. This causes a conflict between the assigned time unit and the required mass-volume dimension for a concentration. The record was rejected due to this structural dimension mismatch on the Tag parameter. Extracted — fentanyl: Ct 0.648 h, kabs 0.124 h⁻¹, V/F 5.31 L, CL/F 9.08 L.h⁻¹.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[tag,].parameter_id`: this record has Q75, the second reading Q83. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -61,9 +62,10 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| CCI effects on CL/F | `Q27` · CL/F | -8.76 |  |  |  |  | llm_confirmed (0.6) | tab_1:row2:col1, tab_1:row2:col2 | 0.693 (None% RSE) |
+| Tag, (h) | `Q75` · Ct | 0.648 | h |  |  | h | llm (0.6) | Al-Qurain_2021_table_p6_2:row0:col1, Al-Qurain_2021_table_p6_2:row0:col3 |  |
 | ka, (h⁻¹) | `Q49` · kabs | 0.124 | h⁻¹ | 3.444e-05 | 1/s | 1/h | llm_confirmed (0.6) | Al-Qurain_2021_table_p6_2:row1:col1, Al-Qurain_2021_table_p6_2:row1:col3 | 0.482 (None% RSE) |
 | V/F, (L) | `Q76` · V/F | 5.31 | L | 0.00531 | m3 | l | llm_confirmed (0.6) | Al-Qurain_2021_table_p6_2:row2:col1, Al-Qurain_2021_table_p6_2:row2:col3 | 0.336 (None% RSE) |
+| CL/F, (L.h⁻¹) | `Q27` · CL/F | 9.08 | L.h⁻¹ | 2.522e-06 | m3/s | l/h | llm_confirmed (0.6) | Al-Qurain_2021_table_p6_2:row3:col1, Al-Qurain_2021_table_p6_2:row3:col3 | 0.693 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,11 +75,12 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'population' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Base' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col1'])
-- dropped unlinked row (NIL): 'Tag, (h)' — extend the ontology if this is a real PK parameter (source ['Al-Qurain_2021_table_p6_2:row0:col1', 'Al-Qurain_2021_table_p6_2:row0:col3'])
-- dropped duplicate Q27 ('CL/F, (L.h⁻¹)', value '9.08') — already have one for this compound
+- dropped unlinked row (NIL): 'CCI effects on CL/F' — extend the ontology if this is a real PK parameter (source ['tab_1:row2:col1', 'tab_1:row2:col2'])
+- unit_dimension_mismatch: 'Tag, (h)' → Q75 (unit '[time]' vs ontology '[mass] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=fentanyl
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -90,14 +93,20 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[tag,].parameter_id` | Q75 | Q83 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -109,15 +118,16 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_base_sign_Q27 | fail |  | -8.76 |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Al-Qurain_2021_table_p6_2:row3:col1', 'Al-Qurain_2021_table_p6_2:row3:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Al-Qurain_2021_table_p6_2:row1:col1', 'Al-Qurain_2021_table_p6_2:row1:col3'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | h ([time]) | ['Al-Qurain_2021_table_p6_2:row0:col1', 'Al-Qurain_2021_table_p6_2:row0:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Al-Qurain_2021_table_p6_2:row2:col1', 'Al-Qurain_2021_table_p6_2:row2:col3'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] |  | ['tab_1:row2:col1', 'tab_1:row2:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 9.08 L/h | ['Al-Qurain_2021_table_p6_2:row3:col1', 'Al-Qurain_2021_table_p6_2:row3:col3'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 5.31 L | ['Al-Qurain_2021_table_p6_2:row2:col1', 'Al-Qurain_2021_table_p6_2:row2:col3'] |
 
 <details class="legend">
@@ -142,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_AlQurain2021_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_AlQurain2021_reference%0APaper%3A%20Al-Qurain_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_AlQurain2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 18:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 04:27 UTC</sub>

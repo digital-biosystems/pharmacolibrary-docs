@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Umeclidinium bromide volume of distribution and absorption lag time lacked values, causing the model to be quarantined.
+> Umeclidinium bromide’s Vd and Tlag lacked values, while its V2/F of 268 L was not covered; the defaults led to quarantine.
 
 <div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Mehta2018_historical_model_parameter_est" status="model_quarantined" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**Umeclidinium bromide volume of distribution and absorption lag time lacked values, causing the model to be quarantined.**
+**Umeclidinium bromide’s Vd and Tlag lacked values, while its V2/F of 268 L was not covered; the defaults led to quarantine.**
 
-The model builder left volume of distribution and absorption lag time at library placeholders instead of using explicit estimates. Additionally, the central compartment volume parameter was not emitted or covered, leaving a structural gap. A second reader also disagreed on several parameter values, such as clearance and intercompartmental clearance. Extracted — umeclidinium bromide: CL/F 40.9 L/h, V2/F 268 L, Q/F 118 L/h, V3/F 1.24e+03 L, kabs 18.8 1/h.
+No value for umeclidinium bromide’s volume of distribution and absorption lag time was available; a library placeholder stood in, so the model was held back rather than published with an invented number. Although the record lists V2/F as 268 L, the coverage finding says it was neither emitted nor defaulted, and the use of defaulted parameters was deemed unacceptable. The model builder also assumed F=1 and Fm=1, with no molar correction, for apparent parameterization. A second reader disputed the dose compound and parameter values, reporting CL/F 218 rather than 40.9, kabs 39.1 rather than 18.8, Q/F 873 rather than 118, V2/F 1160 rather than 268, and V3/F 30200 rather than 1240; the reader also identified the primary analyte as “umeclidium.” Extracted — umeclidinium bromide: CL/F 40.9 L/h, V2/F 268 L, Q/F 118 L/h, V3/F 1.24e+03 L, kabs 18.8 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading umeclidinium; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -138,15 +138,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -16,7 +16,7 @@ Raijmakers P, Temmerman OP, Saridin CP, Heyligers IC, Becking AG, van Lingen A e
 
 ## Population and dosing
 
-**Population:** adults with bone surgery and healthy volunteers · condition bone surgery · age group adult · n = &gt;=22.
+**Population:** adults with bone surgery and healthy volunteers · condition bone surgery · age group adult.
 
 ## Model
 

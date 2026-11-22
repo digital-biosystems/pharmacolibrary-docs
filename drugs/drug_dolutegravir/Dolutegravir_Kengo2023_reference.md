@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dolutegravir record held because lag time was defaulted and abstract-only statistics stand in for fitted parameters.
+> Dolutegravir clearance of 1.87 L/h was disputed by a second reader who reported it as null.
 
 <div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="needs_review" stale="false" population="adults with TB and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Kengo A, Nabisere R, Gausi K, Musaazi J, Buzibye A, Omali D et al. Dolutegravir 
 
 ### Reviewer guidance
 
-**Dolutegravir record held because lag time was defaulted and abstract-only statistics stand in for fitted parameters.**
+**Dolutegravir clearance of 1.87 L/h was disputed by a second reader who reported it as null.**
 
-The lag time parameter was not extracted from the paper, so a library placeholder was used instead of an explicit estimate. Because only the abstract was read, the reported values for clearance, volume of distribution, and absorption rate constant are summary statistics rather than fitted model estimates. A second reader could not confirm the specific numeric values for dolutegravir, marking them as unknown. Extracted — dolutegravir: AUC 32.3 mg·h/L, CL 1.87 L/h, kabs 1.42 h-1, V 12.4 L, Fab 2.3 %.
+The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the dose compound and primary analyte, marking them as unknown. They also failed to extract values for clearance, absorption rate constant, and volume of distribution. Extracted — dolutegravir: AUC 32.3 mg·h/L, CL 1.87 L/h, kabs 1.42 h-1, V 12.4 L, Fab 2.3 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dolutegravir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -144,14 +144,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=dolutegravir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=dolutegravir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

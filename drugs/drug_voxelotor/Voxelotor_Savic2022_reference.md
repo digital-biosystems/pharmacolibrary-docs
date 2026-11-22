@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;voxelotor&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/&quot;},{&quot;label&quot;:&quot;Savic_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # voxelotor — `Voxelotor_Savic2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> Voxelotor record refused because covariate scenarios were not simulated and the model builder defaulted the absorption lag time (Tlag) and assumed apparent bioavailability (F=1, Fm=1) without a molar correction.
-
-<div class="pk-model-meta" hidden drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="needs_review" stale="false" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="simulated" stale="false" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug development of voxelotor in sickle cell disease: Population pharmacokinetics in whole blood and plasma. CPT: pharmacometrics & systems pharmacology 11(6):687–697 (2022).
@@ -17,7 +15,7 @@ Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug develop
 
 ## Population and dosing
 
-**Population:** adults and adolescents with sickle cell disease · condition sickle cell disease · age group mixed · n = &gt;=12 years.
+**Population:** adults and adolescents with sickle cell disease · condition sickle cell disease · age group mixed.
 
 **Dosing:** 500, 600, 900, 1000, 1500 mg, oral, multiple, every 24 h.
 
@@ -31,8 +29,6 @@ Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug develop
 <figure class="pk-models-diagram"><img src="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference.svg" alt="Voxelotor_Savic2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | CL/F (L/h) | CL/F | 6.14 | L/h | 2.8 | 0.1 (123% RSE) |
@@ -49,7 +45,7 @@ Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug develop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,11 +55,11 @@ Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug develop
 
 ### Reviewer guidance
 
-**Voxelotor record refused because covariate scenarios were not simulated and the model builder defaulted the absorption lag time (Tlag) and assumed apparent bioavailability (F=1, Fm=1) without a molar correction.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The record defines a CYP3A4 inducer effect on apparent clearance, but the covariate scenarios were not simulated, only the base model. The model builder substituted defaults for the absorption lag time (Tlag) rather than using an explicit estimate. Additionally, the model builder assumed apparent bioavailability parameters (F=1, Fm=1) and omitted a molar correction, a deviation deemed unacceptable during review. Extracted — voxelotor: CL/F 6.14 L/h, V1/F 333 L, Q/F 0.39 L/h, V2/F 72.3 L, kel 0.43 1/h, kabs 2.38 1/h.
+The base model was simulated, not the covariate effects the record defines.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -144,7 +140,8 @@ The record defines a CYP3A4 inducer effect on apparent clearance, but the covari
 | T3_output_variable |  | pass | C_central (measured=voxelotor) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

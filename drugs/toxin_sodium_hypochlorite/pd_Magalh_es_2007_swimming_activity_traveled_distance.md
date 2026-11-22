@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes that swimming activity (traveled distance) is measured as a function of sodium hypochlorite concentrations expressed as a percentage of the LC50, but the specific pharmacodynamic mechanism and kinetic parameters are not provided.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Magalhães_2007`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

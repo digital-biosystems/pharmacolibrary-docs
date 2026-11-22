@@ -4,11 +4,11 @@
 
 # obinutuzumab — `Obinutuzumab_Zhai2017_fl`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:59 UTC (Rejected), but the paper was screened again on 2026-10-07 18:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Obinutuzumab clearance was rejected because its unit could not be standardized, and the dose-normalised Cmax unit was unconvertible.
+> The record was rejected because the Cmax/dose value 416 μg ml−1 mg−1 has a unit dimension conflicting with the expected mass/volume dimension.
 
-<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_fl" status="rejected" stale="true" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_fl" status="rejected" stale="false" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzumab in Chinese patients with B-cell lymphomas. British journal of clinical pharmacology 83(7):1446–1456 (2017).
@@ -16,7 +16,7 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 ## Population and dosing
 
-**Population:** Chinese patients with B-cell lymphomas · condition B-cell lymphomas · age group adult · n = &gt;=48.
+**Population:** Chinese patients with B-cell lymphomas · condition B-cell lymphomas · age group adult.
 
 **Dosing:** 1000 mg, iv, multiple, every 168 h.
 
@@ -40,7 +40,7 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 ### Reviewer guidance
 
-**Obinutuzumab clearance was rejected because its unit could not be standardized, and the dose-normalised Cmax unit was unconvertible.**
+**The record was rejected because the Cmax/dose value 416 μg ml−1 mg−1 has a unit dimension conflicting with the expected mass/volume dimension.**
 
-The clearance value of 0.584 L/day failed a structural dimension check because the unit was not recognizable for standard conversion. The dose-normalised Cmax of 416 μg ml−1 mg−1 also lacked a valid standard unit. A second reader noted a missing dose value of 601, while disagreeing that the clearance was missing. Extracted — obinutuzumab: Cmax 0.751 μg ml−1, Cmax/dose 416 μg ml−1 mg−1, Ctrough 0.52 μg ml−1, AUCt 11.4 day·μg ml−1, CL 0.584 L/day.
+The dimension check flagged the Cmax/dose parameter (416 μg ml−1 mg−1) as having units of 1/[length]³, which conflicts with the required [mass]/[length]³ dimension. This mismatch prevented the unit from being converted to SI, leaving the parameter without a valid value. A second reader also disagreed on the primary analyte and the clearance value (0.584 L/day), marking them as unknown or null. Extracted — obinutuzumab: Cmax 0.751 μg ml−1, Cmax/dose 416 μg ml−1 mg−1, Ctrough 0.52 μg ml−1, AUCt 11.4 day·μg ml−1, CL 0.584 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has obinutuzumab, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

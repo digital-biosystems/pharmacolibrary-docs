@@ -4,11 +4,11 @@
 
 # Casirivimab — `Casirivimab_Lin2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-07 16:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance parameter has a dimensional mismatch, preventing conversion to standard units for the casirivimab model.
+> The bioavailability parameter for casirivimab was rejected because its dimensionless unit failed a time-based dimensional check.
 
-<div class="pk-model-meta" hidden drug="Casirivimab" model-id="Casirivimab_Lin2024_reference" status="rejected" stale="true" population="pediatric and adult non-infected individuals and SARS-CoV-2 infected patients or household contacts" measured-compound="casirivimab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Casirivimab" model-id="Casirivimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals and SARS-CoV-2 infected patients or household contacts" measured-compound="casirivimab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Pharmacokinetics of Casirivimab and Imdevimab in Pediatric and Adult Non-Infected Individuals, Pediatric and Adult Ambulatory or Hospitalized Patients or Household Contacts of Patients Infected with SARS-COV-2. Pharmaceutical research 41(10):1933–1949 (2024).
@@ -49,7 +49,7 @@ Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.543). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.543). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,9 +59,9 @@ Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Ph
 
 ### Reviewer guidance
 
-**The intercompartmental clearance parameter has a dimensional mismatch, preventing conversion to standard units for the casirivimab model.**
+**The bioavailability parameter for casirivimab was rejected because its dimensionless unit failed a time-based dimensional check.**
 
-The record lists the intercompartmental clearance as 0.4029 L/day, a unit that could not be converted to SI, causing a dimension mismatch failure. This structural parameter's inability to reach a consistent SI value resulted in the record's rejection. Additionally, the second reader identified missing covariate effects for clearance, age, albumin, and hepatic function that were not present in the primary record. Extracted — casirivimab: CL 0.236 L/day, V1 3.82 L, Q 0.403 L/day, V2 3.2 L, kabs 0.235 units, Fab 0.662 units.
+The record lists the bioavailability unit as generic 'units' rather than a dimensionless quantity, triggering a mismatch against a required inverse time dimension. This dimensional error on a structural parameter caused the automatic rejection of the model record. A secondary reviewer disagreed with the single-analyte classification, noting the compound is administered with imdevimab. Extracted — casirivimab: CL 0.236 L/day, V1 3.82 L, Q 0.403 L/day, V2 3.2 L, kabs 0.235 units, Fab 0.662 units.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has casirivimab, the second reading casirivimab and imdevimab; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

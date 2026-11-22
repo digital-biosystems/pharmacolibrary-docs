@@ -4,11 +4,11 @@
 
 # chlorhexidine — `Chlorhexidine_Sherertz1993_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-03 23:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Chlorhexidine's volume of distribution is 5.0 mL, an implausibly small value for a rabbit, violating physiological bounds.
+> Chlorhexidine's volume of distribution is 5.0 mL, an implausibly small value for a rabbit, violating physiological bounds.
 
-<div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Sherertz1993_reference" status="rejected" stale="true" population="rabbits" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Sherertz1993_reference" status="rejected" stale="false" population="rabbits" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sherertz RJ, Carruth WA, Hampton AA, Byron MP, Solomon DD. Efficacy of antibiotic-coated catheters in preventing subcutaneous Staphylococcus aureus infection in rabbits. The Journal of infectious diseases 167(1):98–106 (1993).
@@ -38,7 +38,7 @@ Sherertz RJ, Carruth WA, Hampton AA, Byron MP, Solomon DD. Efficacy of antibioti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

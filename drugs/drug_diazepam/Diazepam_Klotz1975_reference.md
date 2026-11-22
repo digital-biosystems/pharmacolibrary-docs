@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Klotz_1975 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Jahn2018_reference&quot;,&quot;label&quot;:&quot;Jahn_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Jahn2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Norman1997_reference&quot;,&quot;label&quot;:&quot;Norman_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Norman1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Visser_2003_EEG&quot;,&quot;label&quot;:&quot;Visser_2003 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Visser_2003_EEG.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_1989_13_30_Hz_EEG&quot;,&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 % 13-30 Hz EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Greenblatt_1989_13_30_Hz_EEG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Jahn2018_reference&quot;,&quot;label&quot;:&quot;Jahn_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Jahn2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Norman1997_reference&quot;,&quot;label&quot;:&quot;Norman_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Norman1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Capacio2001_seizure&quot;,&quot;label&quot;:&quot;Capacio_2001_seizure&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Capacio2001_seizure.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Capacio2001_seizure_not&quot;,&quot;label&quot;:&quot;Capacio_2001_seizure_not&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Capacio2001_seizure_not.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diazepam_Lukey1991_diazepam_mean&quot;,&quot;label&quot;:&quot;Lukey_1991_diazepam_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Lukey1991_diazepam_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Klotz1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:48 UTC (Rejected), but the paper was screened again on 2026-11-03 21:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Diazepam blood clearance unit L/h could not be converted to SI, causing a dimension mismatch on a structural parameter.
+> Diazepam apparent clearance values 26.6 ml/min and 13.0 ml/min lack supporting absorption rate estimates, forcing use of library defaults for Ka.
 
-<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Klotz1975_reference" status="rejected" stale="true" population="adults with normal liver function and liver disease" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Klotz1975_reference" status="needs_review" stale="false" population="healthy adults and liver disease patients" measured-compound="diazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Klotz U, Avant GR, Hoyumpa A, Schenker S, Wilkinson GR. The effects of age and liver disease on the disposition and elimination of diazepam in adult man. The Journal of clinical investigation 55(2):347–359 (1975).
@@ -17,32 +17,32 @@ Klotz U, Avant GR, Hoyumpa A, Schenker S, Wilkinson GR. The effects of age and l
 
 ## Population and dosing
 
-**Population:** adults with normal liver function and liver disease · condition liver disease and healthy controls · age group mixed · n = 54.
+**Population:** healthy adults and liver disease patients · condition healthy and liver disease · age group adult · n = 33.
 
-**Dosing:** 0.1, 10 mg, iv, oral, single.
+**Dosing:** 0.1, 10 mg/kg and mg, intravenous and oral, single.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
-**Availability:** No model was generated from this record.
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 4 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_diazepam/Diazepam_Klotz1975_reference/Diazepam_Klotz1975_reference.svg" alt="Diazepam_Klotz1975_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| B. S.* | equation variable | 70.8 | B |
-| B. S.† | t1/2z | 47.4 | B |
-| M. C.† | t1/2β | 62.2 | B |
-| the drug clearance | CL | 13.0 | ml/min |
-| blood clearance of diazepam in alcoholic cirrhosis | CLb | 24.8 | L/h |
-| volume of distribution | V | 4.7 | L/kg |
+| drug clearance | CL | 13.0 | ml/min |
+| Vd(os)/kg, liter/kg | V | 1.13 | liter/kg |
+| Plasma clearance. ml/min | CL/F | 26.6 | ml/min |
+| Blood clearance, ml/misn | CLb | 44.8 | ml/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,11 @@ Klotz U, Avant GR, Hoyumpa A, Schenker S, Wilkinson GR. The effects of age and l
 
 ### Reviewer guidance
 
-**Diazepam blood clearance unit L/h could not be converted to SI, causing a dimension mismatch on a structural parameter.**
+**Diazepam apparent clearance values 26.6 ml/min and 13.0 ml/min lack supporting absorption rate estimates, forcing use of library defaults for Ka.**
 
-The record lists blood clearance as 24.8 L/h for diazepam. This unit could not be converted to SI, leaving the parameter without a valid value. Consequently, a dimension mismatch failed the structural parameter check. Extracted — diazepam: t1/2z 47.4 B, t1/2β 62.2 B, CL 13 ml/min, CLb 24.8 L/h, V 4.7 L/kg.
+The record defines total clearance as 13.0 ml/min and apparent oral clearance as 26.6 ml/min, but the absorption rate constant was not reported in the source. Consequently, standard library placeholders were substituted for the missing absorption parameter, rendering the simulation unsupported by the paper's data. A second reader further contested the recorded blood clearance value of 44.8 ml/min, indicating uncertainty in the extracted parameters. Extracted — diazepam: CL 13 ml/min, V 1.13 liter/kg, CL/F 26.6 ml/min, CLb 44.8 ml/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b. s.: this record has 47.4, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -64,12 +64,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| B. S.* | `Q900` · equation variable | 70.8 | B |  |  | b | llm (0.6) | Klotz_1975_table_p9_1:row1:col1, Klotz_1975_table_p9_1:row1:col2, Klotz_1975_table_p9_1:row1:col3, Klotz_1975_table_p9_1:row1:col5, Klotz_1975_table_p9_1:row1:col6 |
-| B. S.† | `Q57` · t1/2z | 47.4 | B |  |  | b | llm (0.6) | Klotz_1975_table_p9_1:row2:col1, Klotz_1975_table_p9_1:row2:col2, Klotz_1975_table_p9_1:row2:col3, Klotz_1975_table_p9_1:row2:col4, Klotz_1975_table_p9_1:row2:col5, Klotz_1975_table_p9_1:row2:col6 |
-| M. C.† | `Q60` · t1/2β | 62.2 | B |  |  | b | llm (0.6) | Klotz_1975_table_p9_1:row4:col1, Klotz_1975_table_p9_1:row4:col2, Klotz_1975_table_p9_1:row4:col3, Klotz_1975_table_p9_1:row4:col4, Klotz_1975_table_p9_1:row4:col5, Klotz_1975_table_p9_1:row4:col6 |
-| the drug clearance | `Q22` · CL | 13.0 | ml/min | 2.167e-07 | m3/s | L/h | boundary (0.8) | Klotz_1975:other_prose |
-| blood clearance of diazepam in alcoholic cirrhosis | `Q23` · CLb | 24.8 | L/h | 6.889e-06 | m3/s | L/h | boundary (0.8) | Klotz_1975:other_prose |
-| volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | m3 | L | review_gapfill (0.7) | Cavallaro_2026:review |
+| drug clearance | `Q22` · CL | 13.0 | ml/min | 2.167e-07 | m3/s | L/h | boundary (0.8) | Klotz_1975:other_prose |
+| Vd(os)/kg, liter/kg | `Q61` · V | 1.13 | liter/kg | 0.0791 | m3 | L | boundary (0.8) | Klotz_1975:discussion_prose |
+| Plasma clearance. ml/min | `Q27` · CL/F | 26.6 | ml/min | 4.433e-07 | m3/s | L/h | fuzzy (0.91) | Klotz_1975:discussion_prose |
+| Blood clearance, ml/misn | `Q23` · CLb | 44.8 | ml/min | 7.467e-07 | m3/s | L/h | boundary (0.8) | Klotz_1975:discussion_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,31 +76,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
-- column 'bilirubin' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'ldh' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'alkaline phosphatase' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'albumin' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'sgot' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- unit_dimension_mismatch: 'B. S.†' → Q57 (unit '[length] ** 2' vs ontology '[time]') — route to review
-- dropped unlinked row (NIL): 'M. C.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row3:col1', 'Klotz_1975_table_p9_1:row3:col2', 'Klotz_1975_table_p9_1:row3:col3', 'Klotz_1975_table_p9_1:row3:col5', 'Klotz_1975_table_p9_1:row3:col6'])
-- unit_dimension_mismatch: 'M. C.†' → Q60 (unit '[length] ** 2' vs ontology '[time]') — route to review
-- dropped unlinked row (NIL): 'J. H.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row5:col1', 'Klotz_1975_table_p9_1:row5:col2', 'Klotz_1975_table_p9_1:row5:col3', 'Klotz_1975_table_p9_1:row5:col5', 'Klotz_1975_table_p9_1:row5:col6'])
-- dropped unlinked row (NIL): 'J. H.†' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row6:col1', 'Klotz_1975_table_p9_1:row6:col2', 'Klotz_1975_table_p9_1:row6:col3', 'Klotz_1975_table_p9_1:row6:col4', 'Klotz_1975_table_p9_1:row6:col5', 'Klotz_1975_table_p9_1:row6:col6'])
-- dropped duplicate Q900 ('J. H.§', value '36.0') — already have one for this compound
-- dropped unlinked row (NIL): 'J. M.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row8:col1', 'Klotz_1975_table_p9_1:row8:col2', 'Klotz_1975_table_p9_1:row8:col3', 'Klotz_1975_table_p9_1:row8:col5', 'Klotz_1975_table_p9_1:row8:col6'])
-- dropped unlinked row (NIL): 'J. M.†' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row9:col1', 'Klotz_1975_table_p9_1:row9:col2', 'Klotz_1975_table_p9_1:row9:col3', 'Klotz_1975_table_p9_1:row9:col4', 'Klotz_1975_table_p9_1:row9:col5', 'Klotz_1975_table_p9_1:row9:col6'])
-- dropped unlinked row (NIL): 'J. J.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row10:col1', 'Klotz_1975_table_p9_1:row10:col2', 'Klotz_1975_table_p9_1:row10:col5', 'Klotz_1975_table_p9_1:row10:col6'])
-- dropped unlinked row (NIL): 'J. J.†' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row11:col1', 'Klotz_1975_table_p9_1:row11:col2', 'Klotz_1975_table_p9_1:row11:col3', 'Klotz_1975_table_p9_1:row11:col4', 'Klotz_1975_table_p9_1:row11:col5', 'Klotz_1975_table_p9_1:row11:col6'])
-- dropped unlinked row (NIL): 'Upper normal limit' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row12:col1', 'Klotz_1975_table_p9_1:row12:col2', 'Klotz_1975_table_p9_1:row12:col3', 'Klotz_1975_table_p9_1:row12:col4', 'Klotz_1975_table_p9_1:row12:col5'])
-- salvaged Q22 ('the drug clearance'=13.0) from results prose — parameter table was unreadable
-- salvaged Q23 ('blood clearance of diazepam in alcoholic cirrhosis'=24.8) from results prose — parameter table was unreadable
-- implicit units: 'blood clearance of diazepam in alcoholic cirrhosis' → L/h (from the popPK convention: "The paper reports plasma clearance in ml/min (e.g., '13.8±2.4 vs. 26.6+4.1 ml/min'). Blood clearance is a type of cleara")
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diazepam
+- substance matrix Klotz_1975_table_p9_1 ('TABLE IV Correlation between Hepatic Function Tests and t1/2(B) of Diazepam in the Same Pa'): no row names this substance — its 12 row(s) (B. S.*, B. S.†, M. C.*, M. C.†, J. H.*, J. H.†, J. H.§, J. M.*) are other substances' values; none taken
+- salvaged Q22 ('drug clearance'=13.0) from results prose — parameter table was unreadable
+- salvaged Q61 ('Vd(os)/kg, liter/kg'=1.13) from results prose — parameter table was unreadable
+- salvaged Q27 ('Plasma clearance. ml/min'=26.6) from results prose — parameter table was unreadable
+- salvaged Q23 ('Blood clearance, ml/misn'=44.8) from results prose — parameter table was unreadable
+- implicit units: 'Blood clearance, ml/misn' → ml/min (from the paper text: "The input field name is 'Blood clearance, ml/misn' (a typo for ml/min). Furthermore, the paper text explicitly states: '")
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=diazepam
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
-- gap-filled Q61 (V) from Cavallaro_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -113,26 +102,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.308 (4/13 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[b. s.*]` | 70.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[b. s.]` | 47.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[blood clearance of diazepam in alcoholic cirrhosis]` | 24.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[blood clearance of diazepam]` |  | 24.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[j. h.]` |  | 36.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[m. c.*]` |  | 94.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[m. c.]` | 62.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance of diazepam]` |  | 20 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the drug clearance]` | 13.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[blood clearance, ml/misn]` | 44.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[calculated blood clearance of diazepam]` |  | 24.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance value]` |  | 43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[drug clearance]` | 13.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance.]` | 26.6 |  | only_one_extracted |
 
 </details>
 
@@ -148,16 +134,28 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Klotz_1975:other_prose'] |
-| C5_dimension_Q57 | fail | [time] | B ([length] ** 2) | ['Klotz_1975_table_p9_1:row2:col1', 'Klotz_1975_table_p9_1:row2:col2', 'Klotz_1975_table_p9_1:row2:col3', 'Klotz_1975_table_p9_1:row2:col4', 'Klotz_1975_table_p9_1:row2:col5', 'Klotz_1975_table_p9_1:row2:col6'] |
-| C5_dimension_Q60 | fail | [time] | B ([length] ** 2) | ['Klotz_1975_table_p9_1:row4:col1', 'Klotz_1975_table_p9_1:row4:col2', 'Klotz_1975_table_p9_1:row4:col3', 'Klotz_1975_table_p9_1:row4:col4', 'Klotz_1975_table_p9_1:row4:col5', 'Klotz_1975_table_p9_1:row4:col6'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cavallaro_2026:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13 | ['Klotz_1975:other_prose'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Klotz_1975:discussion_prose'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.78 L/h | ['Klotz_1975:other_prose'] |
-| C9_phys_window_Q23 | pass | clearance within physiological range | 24.8 L/h | ['Klotz_1975:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 329 L | ['Cavallaro_2026:review'] |
+| C9_phys_window_Q23 | pass | clearance within physiological range | 2.69 L/h | ['Klotz_1975:discussion_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.6 L/h | ['Klotz_1975:discussion_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 79.1 L | ['Klotz_1975:discussion_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=diazepam) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| T1_t_half_terminal | reference | skipped | 105.6 | 70.28 | unresolved time unit '±15.2' |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -169,16 +167,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (N05BA01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_diazepam/Diazepam_Klotz1975_reference/Diazepam_Klotz1975_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_diazepam/Diazepam_Klotz1975_reference/Diazepam_Klotz1975_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Diazepam_Klotz1975_reference_params.json` · controls `Diazepam_Klotz1975_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiazepam%5D%20Diazepam_Klotz1975_reference&body=Drug%3A%20diazepam%0ARecord%3A%20Diazepam_Klotz1975_reference%0APaper%3A%20Klotz_1975%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diazepam/Diazepam_Klotz1975_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 21:24 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:27 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Iodine&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/&quot;},{&quot;label&quot;:&quot;Ibragimova_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iodine_Cona2014_reference&quot;,&quot;label&quot;:&quot;Cona_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Cona2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iodine_Ibragimova2025_reference&quot;,&quot;label&quot;:&quot;Ibragimova_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Ibragimova2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Iodine_Ravichandran2016_estimated_whole_body_residence_time&quot;,&quot;label&quot;:&quot;Ravichandran_2016_estimated_whole_body_residence_time_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Ravichandran2016_estimated_whole_body_residence_time.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iodine_Ravichandran2016_estimated_whole_body_residence_time&quot;,&quot;label&quot;:&quot;Ravichandran_2016_estimated_whole_body_residence_time_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Ravichandran2016_estimated_whole_body_residence_time.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iodine_Cona2014_reference&quot;,&quot;label&quot;:&quot;Cona_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Cona2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iodine_Ibragimova2025_reference&quot;,&quot;label&quot;:&quot;Ibragimova_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_iodine/Iodine_Ibragimova2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Iodine — `Iodine_Ibragimova2025_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 2.44, model 0.997); the model does not reproduce the paper's time of the peak (tmax) (paper 4, model 0.183).
 
-<div class="pk-model-meta" hidden drug="Iodine" model-id="Iodine_Ibragimova2025_reference" status="extracted" stale="false" population="mice" measured-compound="iodine-dextrin complex (PA)" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Iodine" model-id="Iodine_Ibragimova2025_reference" status="needs_review" stale="false" population="mice" measured-compound="iodine-dextrin complex (PA)" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Ibragimova N, Aitynova A, Turganbay S, Lyu M, Ilin A, Vassilyeva K et al. A Novel Iodine-Dextrin Complex Exhibits No Acute or Subacute Toxicity and Enhances Azithromycin Efficacy in an LPS-Induced Sepsis Model. Pharmaceutics 17(8) (2025).
@@ -31,6 +31,8 @@ Ibragimova N, Aitynova A, Turganbay S, Lyu M, Ilin A, Vassilyeva K et al. A Nove
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | tmax | tmax | 4 | h |
@@ -39,7 +41,7 @@ Ibragimova N, Aitynova A, Turganbay S, Lyu M, Ilin A, Vassilyeva K et al. A Nove
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ Ibragimova N, Aitynova A, Turganbay S, Lyu M, Ilin A, Vassilyeva K et al. A Nove
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 2.44, model 0.997); the model does not reproduce the paper's time of the peak (tmax) (paper 4, model 0.183).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. None of the extracted parameters is iodine's own; they describe iodine-dextrin complex (PA). Extracted — iodine-dextrin complex (PA): tmax 4 h, t1/2z 21.1 h, Frel 37.5.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -106,6 +114,22 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q56 | pass | [time] |  | ['pharmaceutics-17-01040-t005:row3:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['pharmaceutics-17-01040-t005:row4:col1'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=iodine-dextrin complex (PA)) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 2.438 | 0.9973 | 0.4091 | μg/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | skipped |  | 21.1 |  | non-numeric value |
+| T1_t_half_terminal | reference | pass | 21.1 | 21.1 | 0.9999 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 21 | 21.1 | 1.005 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 4 | 0.1833 | 0.0458 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

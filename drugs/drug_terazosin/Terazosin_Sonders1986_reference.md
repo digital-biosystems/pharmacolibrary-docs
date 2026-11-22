@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Terazosin absorption rate and lag time are library defaults, not estimates from this paper, invalidating the apparent oral model.
+> Absorption rate constant and lag time were defaulted because the abstract lacked values, rendering the oral PK profile unsupported.
 
 <div class="pk-model-meta" hidden drug="terazosin" model-id="Terazosin_Sonders1986_reference" status="needs_review" stale="false" population="human volunteers, hypertensive patients, elderly volunteers, patients with congestive heart failure" measured-compound="terazosin" parameterization="apparent" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Sonders RC. Pharmacokinetics of terazosin. The American journal of medicine 80(5
 
 ### Reviewer guidance
 
-**Terazosin absorption rate and lag time are library defaults, not estimates from this paper, invalidating the apparent oral model.**
+**Absorption rate constant and lag time were defaulted because the abstract lacked values, rendering the oral PK profile unsupported.**
 
-The paper reports total clearance (80 L/h), renal clearance (10 L/h), volume of distribution (25 L), and half-life (12 h), but does not report absorption parameters. Consequently, the model uses default values for the absorption rate and lag time instead of paper-derived estimates. This reliance on assumptions prevents the apparent oral parameters from representing the specific pharmacokinetics of terazosin in the studied population. Extracted — terazosin: fu 90 percent, V 25 liters, CL/F 80 L/h, CLR 10 L/h, t1/2β 12 hours.
+The record was built from the paper's abstract, so summary statistics stood in for a fitted model. The absorption rate constant (ka) and lag time (Tlag) were not reported, requiring library defaults that are not supported by the source data. A second reader disputed the verdict, disagreeing on the parameterization and identifying several extracted parameter values as null. Extracted — terazosin: fu 90 percent, V 25 liters, CL/F 80 L/h, CLR 10 L/h, t1/2β 12 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has terazosin, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -148,15 +148,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=terazosin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=terazosin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.077, 0 of 1 reader(s) agree | 0.077 | cross-check disputed by a second reader: verdict disputed, agreement 0.077, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

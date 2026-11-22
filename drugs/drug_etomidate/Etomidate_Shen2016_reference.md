@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;etomidate&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/&quot;},{&quot;label&quot;:&quot;Shen_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etomidate_Kaneda2011_reference&quot;,&quot;label&quot;:&quot;Kaneda_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Kaneda2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Shen2016_reference&quot;,&quot;label&quot;:&quot;Shen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Shen2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etomidate_van1983_reference&quot;,&quot;label&quot;:&quot;van_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_van1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Van1978_reference&quot;,&quot;label&quot;:&quot;Van_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Van1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ranna_2006_GABA_induced_currents&quot;,&quot;label&quot;:&quot;Ranna_2006 \u00b7 GABA-induced currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etomidate_Kaneda2011_reference&quot;,&quot;label&quot;:&quot;Kaneda_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Kaneda2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Shen2016_reference&quot;,&quot;label&quot;:&quot;Shen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Shen2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etomidate_Van1978_reference&quot;,&quot;label&quot;:&quot;Van_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Van1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_van1983_reference&quot;,&quot;label&quot;:&quot;van_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_van1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ranna_2006_GABA_induced_currents&quot;,&quot;label&quot;:&quot;Ranna_2006 \u00b7 GABA-induced currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # etomidate — `Etomidate_Shen2016_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Shen2016_reference" status="simulated" stale="false" population="pediatric patients with tetralogy of Fallot and normal cardiac anatomy" measured-compound="etomidate" parameterization="mechanistic" topology="2C"></div>
+> The etomidate record from Shen_2016 was held back because the second reader could not confirm the extracted clearance and volume parameters.
+
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Shen2016_reference" status="needs_review" stale="false" population="pediatric patients with tetralogy of Fallot and normal cardiac anatomy" measured-compound="etomidate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Shen Y, Cai MH, Ji W, Bai J, Huang Y, Sun Y et al. Unrepaired Tetralogy of Fallot-related Pathophysiologic Changes Reduce Systemic Clearance of Etomidate in Children. Anesthesia and analgesia 123(3):722–730 (2016).
@@ -27,6 +29,8 @@ Shen Y, Cai MH, Ji W, Bai J, Huang Y, Sun Y et al. Unrepaired Tetralogy of Fallo
 <figure class="pk-models-diagram"><img src="drugs/drug_etomidate/Etomidate_Shen2016_reference/Etomidate_Shen2016_reference.svg" alt="Etomidate_Shen2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | etomidate Cl1 in children with TOF | CL | 1.67 | L/min |
@@ -38,7 +42,7 @@ Shen Y, Cai MH, Ji W, Bai J, Huang Y, Sun Y et al. Unrepaired Tetralogy of Fallo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ Shen Y, Cai MH, Ji W, Bai J, Huang Y, Sun Y et al. Unrepaired Tetralogy of Fallo
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The etomidate record from Shen_2016 was held back because the second reader could not confirm the extracted clearance and volume parameters.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The model record relies on summary statistics from the abstract rather than a full fitted model, limiting the verifiable basis for the values. The second reader disagreed with the recorded etomidate clearance of 1.67 L/min and the intercompartmental clearances of 3.35 L/min and 0.563 L/min, finding them absent from the text. This disagreement, along with the inability to confirm the primary analyte, resulted in a verdict of needs_review due to cross-check dispute. Extracted — etomidate: CL 1.67 L/min, V1 8.05 L, V2 13.7 L, V3 41.3 L, Q 3.35 L/min, Q3 0.563 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etomidate, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -140,14 +144,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=etomidate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=etomidate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

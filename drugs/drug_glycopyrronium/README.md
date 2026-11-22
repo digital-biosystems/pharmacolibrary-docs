@@ -25,7 +25,7 @@ Glycopyrronium is a muscarinic antagonist used to treat peptic ulcer disease and
 
 ## Start here
 
-> **Bartels_2013_population_mean_cv** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers, n = &gt;$n_subjects&lt;/unknown. [Run it in the simulator](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md?tab=Simulation) · [record](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md)
+> **Bartels_2013_population_mean_cv** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers. [Run it in the simulator](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md?tab=Simulation) · [record](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,11 +39,11 @@ Glycopyrronium is a muscarinic antagonist used to treat peptic ulcer disease and
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_terminal</sub> | [Bartels_2013_model_based](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based.md) | ▶ model + simulator | 1-compartment, oral | 5 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Bartels_2013_model_based](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based.md) | ▶ model + simulator | 1-compartment, oral | 5 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ noncompartmental](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_noncompartmental.md) | ▶ model + simulator | 1-compartment, IV | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ population_mean_cv](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md) | ▶ model + simulator | 2-compartment, oral | 8 |  |  |
 | <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Marchiori_2026_reference](drugs/drug_glycopyrronium/Glycopyrronium_Marchiori2026_reference.md) | — | 1-compartment (no model) | 2 | Marchiori J et al., Pharmacokinetics of Intramuscular and I…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70061](https://doi.org/10.1111/jvp.70061) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Bartels_2021_reference](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_reference.md) | — | 1-compartment (no model) | 3 (+4 cov.) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Bartels_2021_reference](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_reference.md) | — | 1-compartment (no model) | 3 (+4 cov.) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Pariser_2021_oral_glycopyrrolateaadult](drugs/drug_glycopyrronium/Glycopyrronium_Pariser2021_oral_glycopyrrolateaadult.md) | — | 1-compartment (no model) | 0 | Pariser DM et al., Limited Systemic Exposure with Topical…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00975-y](https://doi.org/10.1007/s40262-020-00975-y) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ topical_glycopyrronium_tosylateadult](drugs/drug_glycopyrronium/Glycopyrronium_Pariser2021_topical_glycopyrronium_tosylatead.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ topical_glycopyrronium_tosylatepediatric](drugs/drug_glycopyrronium/Glycopyrronium_Pariser2021_topical_glycopyrronium_tosylatepe.md) | — | 1-compartment (no model) | 0 |  |  |
@@ -54,25 +54,6 @@ Glycopyrronium is a muscarinic antagonist used to treat peptic ulcer disease and
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Penttilä_2001_HF_CCV](drugs/drug_glycopyrronium/pd_Penttil_2001_HF_CCV.md) | Hayano index of the high frequency variability of RRI (HF CCV) ← glycopyrrolate · direct sigmoid Emax (Hill) effect | — | Penttilä J et al., Pharmacokinetic-pharmacodynamic model f…, European journal of clinica… (2001) | [10.1007/s002280100288](https://doi.org/10.1007/s002280100288) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Penttilä_2001_RRI](drugs/drug_glycopyrronium/pd_Penttil_2001_RRI.md) | mean R-R interval (RRI) ← glycopyrrolate · direct sigmoid Emax (Hill) effect | — | Penttilä J et al., Pharmacokinetic-pharmacodynamic model f…, European journal of clinica… (2001) | [10.1007/s002280100288](https://doi.org/10.1007/s002280100288) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glycopyrronium).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` unknown, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A2` substrate, `SLC47A1` substrate | DrugBank actor |
-| excretion | liver | `SLC47A1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), CYP2C18 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -86,13 +67,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:33 | 2:17 | 4/4/0 | 1/0/0 | 0/0/0 | 194,545/17,551 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-07 19:33 | 2:17 | 4/4/0 | 2/0/0 | 0/0/0 | 194,545/17,551 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 31 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 8  ·  extracted 0  ·  needs review 4  ·  rejected 4  ·  stale 1
+- **records:** 8  ·  extracted 0  ·  needs review 4  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -145,29 +145,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_thiotepa/Thiotepa_Egorin1984_reference/Thiotepa_Egorin1984_reference_matlab.zip" download>Thiotepa_Egorin1984_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_thiotepa/Thiotepa_Egorin1984_reference/Thiotepa_Egorin1984_reference_sbml.zip" download>Thiotepa_Egorin1984_reference_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_thiotepa/Thiotepa_Egorin1984_reference/Thiotepa_Egorin1984_reference_cellml.zip" download>Thiotepa_Egorin1984_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Egorin MJ, Akman SR, Gutierrez PL. Plasma pharmacokinetics and tissue distribution of thiotepa in mice. Cancer treatment reports 68(10):1265–1268 (1984).
-
-**This record:** Pharmacolibrary, model `Thiotepa_Egorin1984_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_thiotepa/Thiotepa_Egorin1984_reference>
-
-```bibtex
-@misc{pharmacolibrary_ThiotepaEgorin1984reference,
-  title  = {{Pharmacolibrary model Thiotepa_Egorin1984_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_thiotepa/Thiotepa_Egorin1984_reference},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

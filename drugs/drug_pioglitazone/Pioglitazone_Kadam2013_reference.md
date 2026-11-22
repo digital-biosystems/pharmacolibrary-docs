@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The one-compartment model is structurally invalid because the only volume parameter is incorrectly defined as belonging to a non-existent peripheral compartment.
+> Record rejected because the peripheral compartment has no connection from the dose, leaving the extracted V2/F value of 22.1 L structurally unreachable.
 
 <div class="pk-model-meta" hidden drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="rejected" stale="false" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="1C"></div>
 
@@ -46,9 +46,9 @@ Kadam R, Bourne D, Kompella U, Aquilante C. Effect of Cytochrome P450 2C8*3 on t
 
 ### Reviewer guidance
 
-**The one-compartment model is structurally invalid because the only volume parameter is incorrectly defined as belonging to a non-existent peripheral compartment.**
+**Record rejected because the peripheral compartment has no connection from the dose, leaving the extracted V2/F value of 22.1 L structurally unreachable.**
 
-The record defines the structure as a single central compartment (1C), yet the sole extracted parameter, V2/F, is explicitly described as the volume of distribution of the peripheral compartment. The second reader further identified missing values for the absorption rate constant and another volume parameter, indicating incomplete data extraction for this simplified model. Extracted — pioglitazone: V2/F 22.1 L.
+The one-compartment structure contains an orphan compartment with no path from the administered dose. Consequently, the listed volume of distribution for the peripheral compartment (22.1 L) is disconnected from the drug's entry point. Although a second reader identified missing values for the central volume (26.3 L) and absorption rate, the primary structural defect remains. Extracted — pioglitazone: V2/F 22.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k a (h -1 )=θ 5: this record has none, the second reading 2.08; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

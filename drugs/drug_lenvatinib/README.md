@@ -34,9 +34,9 @@ Lenvatinib is a protein kinase inhibitor used to treat renal cell carcinoma and 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Gupta_2016_reference](drugs/drug_lenvatinib/Lenvatinib_Gupta2016_reference.md) | — | 1-compartment (no model) | 2 | Gupta A et al., Population pharmacokinetic analysis of…, British journal of clinical… (2016) | [10.1111/bcp.12907](https://doi.org/10.1111/bcp.12907) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Hu_2022_reference](drugs/drug_lenvatinib/Lenvatinib_Hu2022_reference.md) | — | 1-compartment (no model) | 1 | Hu Y et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2103](https://doi.org/10.1002/jcph.2103) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Majid_2024_reference](drugs/drug_lenvatinib/Lenvatinib_Majid2024_reference.md) | — | 2-compartment (no model) | 9 (+2 cov.) | Majid O et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13130](https://doi.org/10.1002/psp4.13130) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Tamai_2017_base](drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base.md) | — | 1-compartment (no model) | 3 (+1 cov.) | Tamai T et al., Dose Finding of Lenvatinib in Subjects…, Journal of clinical pharmac… (2017) | [10.1002/jcph.917](https://doi.org/10.1002/jcph.917) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_lenvatinib/Lenvatinib_Tamai2017_final.md) | — | 1-compartment (no model) | 3 (+3 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Majid_2024_reference](drugs/drug_lenvatinib/Lenvatinib_Majid2024_reference.md) | — | 2-compartment (no model) | 9 (+2 cov.) | Majid O et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13130](https://doi.org/10.1002/psp4.13130) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Tamai_2017_base](drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base.md) | — | 1-compartment (no model) | 3 (+1 cov.) | Tamai T et al., Dose Finding of Lenvatinib in Subjects…, Journal of clinical pharmac… (2017) | [10.1002/jcph.917](https://doi.org/10.1002/jcph.917) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_lenvatinib/Lenvatinib_Tamai2017_final.md) | — | 1-compartment (no model) | 3 (+3 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -51,26 +51,6 @@ Lenvatinib is a protein kinase inhibitor used to treat renal cell carcinoma and 
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Majid_2024_VEGF](drugs/drug_lenvatinib/pd_Majid_2024_VEGF.md) | VEGF ← lenvatinib · indirect response — drug inhibits the loss of VEGF | — | Majid O et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13130](https://doi.org/10.1002/psp4.13130) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tamai_2017_TEAEs](drugs/drug_lenvatinib/pd_Tamai_2017_TEAEs.md) | occurrence of TEAEs leading to study drug withdrawal or dose reduction during cycle 1 ← lenvatinib · categorical (graded) response model | — | Tamai T et al., Dose Finding of Lenvatinib in Subjects…, Journal of clinical pharmac… (2017) | [10.1002/jcph.917](https://doi.org/10.1002/jcph.917) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lenvatinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `AOX1` substrate, `CYP1A2` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `SLC22A2` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` inhibitor, `ABCG2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: FGFR1 (inhibitor), FGFR2 (inhibitor), FGFR3 (inhibitor), FGFR4 (inhibitor), FLT1 (inhibitor), FLT4 (inhibitor), KDR (inhibitor), KIT (inhibitor), PDGFRA (inhibitor), RET (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -83,13 +63,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:46 | 9:06 | 2/3/0 | 3/0/0 | 0/0/0 | 236,336/48,456 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-07 02:46 | 9:06 | 2/3/0 | 8/0/0 | 0/0/0 | 236,336/48,456 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 15 matched, 14 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 3
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

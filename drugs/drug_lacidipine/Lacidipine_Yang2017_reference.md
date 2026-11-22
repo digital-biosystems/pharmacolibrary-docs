@@ -4,11 +4,11 @@
 
 # lacidipine — `Lacidipine_Yang2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-07 03:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; cmax, AUCt and AUC∞ have no unit.
 
-<div class="pk-model-meta" hidden drug="lacidipine" model-id="Lacidipine_Yang2017_reference" status="needs_review" stale="true" population="healthy beagle dogs" measured-compound="lacidipine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lacidipine" model-id="Lacidipine_Yang2017_reference" status="needs_review" stale="false" population="healthy beagle dogs" measured-compound="lacidipine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yang B, Wu C, Ji B, Wu M, He Z, Shang L et al. Virtual population pharmacokinetic using physiologically based pharmacokinetic model for evaluating bioequivalence of oral lacidipine formulations in dogs. Asian journal of pharmaceutical sciences 12(1):98–104 (2017).
@@ -43,7 +43,7 @@ Yang B, Wu C, Ji B, Wu M, He Z, Shang L et al. Virtual population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Yang B, Wu C, Ji B, Wu M, He Z, Shang L et al. Virtual population pharmacokineti
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; cmax, AUCt and AUC∞ have no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — lacidipine: Cmax 1.1, AUCt 0.94, AUC∞ 0.95, tmax 1.79 h, t1/2z 5.2 h, Fab 111.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-24].value`: this record has 0.94, the second reading 0.826; it also differs on 2 more fields. That field does not shape the model.
 

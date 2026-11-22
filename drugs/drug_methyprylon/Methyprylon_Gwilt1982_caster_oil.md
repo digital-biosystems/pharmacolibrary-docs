@@ -5,11 +5,11 @@
 
 # methyprylon — `Methyprylon_Gwilt1982_caster_oil`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-06 21:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The steady-state volume of distribution for methyprylon was rejected due to a dimension mismatch on the structural parameter.
+> The macro-rate constant λ1 (9.71 hr-1) was rejected because its reported unit could not be processed into standard SI units.
 
-<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_caster_oil" status="rejected" stale="true" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_caster_oil" status="rejected" stale="false" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposition of methyprylon in intoxicated dogs. Canadian Anaesthetists' Society journal 29(4):381–383 (1982).
@@ -47,7 +47,7 @@ Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposit
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposit
 
 ### Reviewer guidance
 
-**The steady-state volume of distribution for methyprylon was rejected due to a dimension mismatch on the structural parameter.**
+**The macro-rate constant λ1 (9.71 hr-1) was rejected because its reported unit could not be processed into standard SI units.**
 
-The record lists the steady-state volume of distribution as 7.11 liter. The reported unit for this value could not be converted to standard SI units, leaving the parameter without a valid SI value. Consequently, the structural parameter failed dimensionality validation, leading to the rejection of the model. Extracted — methyprylon: λ1 9.71 hr-1, kel 0.21 hr-1, k12 6.64 hr-1, k21 1.55 hr-1, V1 3.11 liter, V 7.85 liter, Vss 7.11 liter, CL 1.95 liter/hr, … (+1).
+Although the parameter value and unit are consistent with a rate constant, the specific unit representation was not recognized for conversion. This prevented the system from validating the dimension and assigning a standard SI value, resulting in a mismatch error. Extracted — methyprylon: λ1 9.71 hr-1, kel 0.21 hr-1, k12 6.64 hr-1, k21 1.55 hr-1, V1 3.11 liter, V 7.85 liter, Vss 7.11 liter, CL 1.95 liter/hr, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 

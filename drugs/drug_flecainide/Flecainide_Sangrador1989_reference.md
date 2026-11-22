@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Sangrador_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Horie2014_reference&quot;,&quot;label&quot;:&quot;Horie_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Horie2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sllstrm2014_reference&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_S_llstr_m_2014_QRS&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014 \u00b7 QRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/pd_S_llstr_m_2014_QRS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Horie2014_reference&quot;,&quot;label&quot;:&quot;Horie_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Horie2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sllstrm2014_reference&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_S_llstr_m_2014_QRS&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014 \u00b7 QRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/pd_S_llstr_m_2014_QRS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flecainide — `Flecainide_Sangrador1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:41 UTC (Rejected), but the paper was screened again on 2026-10-08 17:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a dimension mismatch occurred on a structural parameter, preventing valid calculation of terminal half-life from the reported values.
+> Flecainide's volume of distribution, 7.99 1/kg, has dimensionless units that conflict with the parameter's volume dimension.
 
-<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Sangrador1989_reference" status="rejected" stale="true" population="critically ill patients with acute myocardial infarction" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Sangrador1989_reference" status="rejected" stale="false" population="critically ill patients with acute myocardial infarction" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sangrador G, Sánchez-Alcaraz A, Rodriguez M, Ibáñez P. Clinical pharmacokinetics of intravenous flecainide in critically ill patients. Journal of clinical pharmacy and therapeutics 14(4):309–314 (1989).
@@ -17,7 +17,7 @@ Sangrador G, Sánchez-Alcaraz A, Rodriguez M, Ibáñez P. Clinical pharmacokinet
 
 ## Population and dosing
 
-**Population:** critically ill patients with acute myocardial infarction · condition acute myocardial infarction · age group adult · n = &gt;=10.
+**Population:** critically ill patients with acute myocardial infarction · condition acute myocardial infarction · age group adult.
 
 ## Model
 
@@ -38,7 +38,7 @@ Sangrador G, Sánchez-Alcaraz A, Rodriguez M, Ibáñez P. Clinical pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Sangrador G, Sánchez-Alcaraz A, Rodriguez M, Ibáñez P. Clinical pharmacokinet
 
 ### Reviewer guidance
 
-**The record was rejected because a dimension mismatch occurred on a structural parameter, preventing valid calculation of terminal half-life from the reported values.**
+**Flecainide's volume of distribution, 7.99 1/kg, has dimensionless units that conflict with the parameter's volume dimension.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model, lacking the structural details needed for a complete two-compartment analysis. The volume of distribution is reported as 7.99 1/kg and clearance as 1.72 L/h, but the terminal half-life of 22.0 h cannot be derived from these values under a standard one-compartment structural assumption. A second reader disagreed on the assignment of terminal phase parameters, noting null values where this record listed 22.0 h and 7.99 1/kg, further highlighting the ambiguity in the abstract-only data. Extracted — flecainide: t1/2β 22 h, V 7.99 1/kg, CL 1.72 L/h, kabs 0.62 h À1.
+The abstract-only record reports a volume of distribution of 7.99 1/kg, a unit that is dimensionless but conflicts with the volume dimension required for the parameter. A dimensionality check failed on this structural parameter due to the unit mismatch. The second reader disagreed on several parameter values, noting discrepancies for the volume, clearance, and absorption rate constant. Extracted — flecainide: t1/2β 22 h, V 7.99 1/kg, CL 1.72 L/h, kabs 0.62 h À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1: this record has none, the second reading 2.67; it also differs on 5 more fields. That field does not shape the model.
 

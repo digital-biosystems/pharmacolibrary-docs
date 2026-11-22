@@ -5,11 +5,11 @@
 
 # potassium salicylate — `PotassiumSalicylate_Kotschwar2009_mean_se`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> This record was reviewed on 2026-11-07 15:34 UTC (Rejected), but the paper was screened again on 2026-10-07 07:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because the absorption rate constant for salicylate lacks a compatible unit, leaving its SI value undefined.
+> Salicylate concentration C0 unit mg/L conflicts with AUC dimension [mass]·[time]·[length]⁻³ in the record.
 
-<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_mean_se" status="rejected" stale="true" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_mean_se" status="rejected" stale="false" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesic efficacy of sodium salicylate in an amphotericin B-induced bovine synovitis-arthritis model. Journal of dairy science 92(8):3731–3743 (2009).
@@ -49,7 +49,7 @@ Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,9 +59,9 @@ Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesi
 
 ### Reviewer guidance
 
-**Rejected because the absorption rate constant for salicylate lacks a compatible unit, leaving its SI value undefined.**
+**Salicylate concentration C0 unit mg/L conflicts with AUC dimension [mass]·[time]·[length]⁻³ in the record.**
 
-The parameter labeled 'ka capsule' has a value of 0.22 but no unit extracted, unlike other parameters with explicit units. This omission prevents conversion to standard SI units, causing a dimension mismatch. Consequently, the model builder received no valid SI value for this structural parameter. Extracted — potassium salicylate: AUC 1.21e+04 min × mg/L, t1/2z 36.9 min, kel 0.02, C0 227 mg/L, CLb 4.3 mL/min•kg, V 0.2 L/kg, MRT 53.2 min, kabs 0.22 h−1, … (+1).
+The record lists the time-zero concentration C0 as 226.9 mg/L, while AUC is reported in min × mg/L. The dimension mismatch flagged the C0 unit as mass/volume rather than the expected mass·time/volume. Consequently, the model was rejected due to this structural parameter inconsistency. Extracted — potassium salicylate: AUC 1.21e+04 min × mg/L, t1/2z 36.9 min, kel 0.02, C0 227 mg/L, CLb 4.3 mL/min•kg, V 0.2 L/kg, MRT 53.2 min, kabs 0.22 h−1, … (+1).
 
 <sub>reviewed by qwen3.8-27b</sub>
 

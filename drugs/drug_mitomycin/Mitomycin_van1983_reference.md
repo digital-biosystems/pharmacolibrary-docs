@@ -4,11 +4,11 @@
 
 # mitomycin — `Mitomycin_van1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:48 UTC (Rejected), but the paper was screened again on 2026-10-06 18:58 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_van1983_reference" status="needs_review" stale="true" population="patients receiving mitomycin C alone or in combination with other chemotherapeutic drugs" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_van1983_reference" status="needs_review" stale="false" population="patients receiving mitomycin C alone or in combination with other chemotherapeutic drugs" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Hazel GA, Scott M, Rubin J, Moertel CG, Eagan RT, O'Connell MJ et al. Pharmacokinetics of mitomycin C in patients receiving the drug alone or in combination. Cancer treatment reports 67(9):805–810 (1983).
@@ -35,7 +35,7 @@ van Hazel GA, Scott M, Rubin J, Moertel CG, Eagan RT, O'Connell MJ et al. Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ van Hazel GA, Scott M, Rubin J, Moertel CG, Eagan RT, O'Connell MJ et al. Pharma
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: t1/2α 8.2 mins, t1/2β 51.8 mins, CLnorm 333 mL/min.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[total body clearance].parameter_id`: this record has Q354, the second reading Q22. That field shapes the model, so the record is marked disputed.
 

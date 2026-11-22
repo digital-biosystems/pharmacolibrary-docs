@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;Orphenadrine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Orphenadrine_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Orphenadrine_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Orphenadrine
 
@@ -24,7 +24,7 @@ Orphenadrine is a centrally acting anticholinergic muscle relaxant used to treat
 
 ## Start here
 
-> **Elghazali_2008_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> camels, n = 6. [Run it in the simulator](drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md?tab=Simulation) · [record](drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md)
+> **Elghazali_2008_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> camels, n = 6. [Run it in the simulator](drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md?tab=Simulation) · [record](drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -32,7 +32,7 @@ Orphenadrine is a centrally acting anticholinergic muscle relaxant used to treat
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="camelid" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span> | [Elghazali_2008_reference](drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md) | ▶ model + simulator | 1-compartment, IV | 6 | Elghazali M et al., Pharmacokinetic, metabolism and withdra…, Research in veterinary scie… (2008) | [10.1016/j.rvsc.2008.01.006](https://doi.org/10.1016/j.rvsc.2008.01.006) |
+| <span class="pk-rf" hidden data-species="camelid" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span><br><sub>blocking: cross_check_disputed</sub> | [Elghazali_2008_reference](drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md) | ▶ model + simulator | 1-compartment, IV | 6 | Elghazali M et al., Pharmacokinetic, metabolism and withdra…, Research in veterinary scie… (2008) | [10.1016/j.rvsc.2008.01.006](https://doi.org/10.1016/j.rvsc.2008.01.006) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,20 +44,6 @@ Orphenadrine is a centrally acting anticholinergic muscle relaxant used to treat
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">rat</span> | [Reidy_1989_16_beta_hydroxylase_2](drugs/drug_orphenadrine/pd_Reidy_1989_16_beta_hydroxylase_2.md) | androstenedione 16 beta-hydroxylase activity ← orphenadrine · inhibition effect | — | Reidy GF et al., Inhibition of oxidative drug metabolism…, Molecular pharmacology (1989) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">rat</span> | [Reidy_1989_pentoxyresorufin_O_depentylation](drugs/drug_orphenadrine/pd_Reidy_1989_pentoxyresorufin_O_depentylation.md) | pentoxyresorufin O-depentylation ← orphenadrine · inhibition effect | — | Reidy GF et al., Inhibition of oxidative drug metabolism…, Molecular pharmacology (1989) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">rat</span> | [Reidy_1989_pentoxyresorufin_O_depentylation_2](drugs/drug_orphenadrine/pd_Reidy_1989_pentoxyresorufin_O_depentylation_2.md) | pentoxyresorufin O-depentylation ← orphenadrine · inhibition effect | — | Reidy GF et al., Inhibition of oxidative drug metabolism…, Molecular pharmacology (1989) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=orphenadrine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` binder/regulator | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: GRIN1 (target), GRIN2D (target), GRIN3A (target), GRIN3B (target), HRH1 (target), SCN10A (inhibitor), SLC6A2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,13 +57,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:38 | 6:59 | 1/0/0 | 2/0/0 | 0/0/0 | 88,430/6,033 | einfracz / qwen3.8-27b | 4 | 1/1 | 4/0 | 0 |
+| 2026-10-07 02:38 | 6:59 | 1/0/0 | 6/0/0 | 0/0/0 | 88,430/6,033 | einfracz / qwen3.8-27b | 4 | 1/1 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 62 matched, 62 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

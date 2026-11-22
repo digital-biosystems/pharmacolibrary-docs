@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;nordazepam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nordazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nordazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # nordazepam
 
@@ -29,7 +29,7 @@ Nordazepam is a benzodiazepine derivative used primarily to treat anxiety disord
 
 ## Start here
 
-> **Klotz_1975_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md?tab=Simulation) · [record](drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md)
+> **Klotz_1975_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md?tab=Simulation) · [record](drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -37,10 +37,10 @@ Nordazepam is a benzodiazepine derivative used primarily to treat anxiety disord
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Klotz_1975_reference](drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: cross_check_disputed</sub> | [Klotz_1975_reference](drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub> | [Wilensky_1978_reference](drugs/drug_nordazepam/Nordazepam_Wilensky1978_reference.md) | held back | 1-compartment, oral | 4 | Wilensky AJ et al., Clorazepate kinetics in treated epilept…, Clinical pharmacology and t… (1978) | [10.1002/cpt197824122](https://doi.org/10.1002/cpt197824122) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Bertler_1983_reference](drugs/drug_nordazepam/Nordazepam_Bertler1983_reference.md) | — | general linear (no model) | 2 | Bertler A et al., Pharmacokinetics of chlorazepate after…, Psychopharmacology (1983) | [10.1007/BF00436160](https://doi.org/10.1007/BF00436160) |
-| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Löscher_1981_reference](drugs/drug_nordazepam/Nordazepam_Lscher1981_reference.md) | — | general linear (no model) | 3 | Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981) | — |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Löscher_1981_reference](drugs/drug_nordazepam/Nordazepam_Lscher1981_reference.md) | — | general linear (no model) | 3 | Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_2020_2_reference](drugs/drug_nordazepam/Nordazepam_Wang2020v2_reference.md) | — | parent + metabolite (no model) | 0 | Wang LL et al., An Experimental Pharmacokinetics Study…, Journal of analytical toxic… (2020) | [10.1093/jat/bkz101](https://doi.org/10.1093/jat/bkz101) |
 
 ## Pharmacodynamics (PD)
@@ -48,15 +48,6 @@ Nordazepam is a benzodiazepine derivative used primarily to treat anxiety disord
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Iwaya_1989_qEEG](drugs/drug_nordazepam/pd_Iwaya_1989_qEEG.md) | quantitative EEG change corresponding to sedation ← N-desmethyldiazepam · inhibition effect | — | Iwaya N et al., Determination of pharmacodynamics of di…, The Japanese journal of psy… (1989) | [10.1111/j.1440-1819.1989.tb03102.x](https://doi.org/10.1111/j.1440-1819.1989.tb03102.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nordazepam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -76,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 77 matched, 74 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01J&quot;,&quot;href&quot;:&quot;atc/S01J.md&quot;},{&quot;label&quot;:&quot;fluorescein&quot;,&quot;href&quot;:&quot;drugs/drug_fluorescein/&quot;},{&quot;label&quot;:&quot;Min_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorescein_Min2015_reference&quot;,&quot;label&quot;:&quot;Min_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorescein/Fluorescein_Min2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorescein_Min2015_reference&quot;,&quot;label&quot;:&quot;Min_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorescein/Fluorescein_Min2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorescein — `Fluorescein_Min2015_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-<div class="pk-model-meta" hidden drug="fluorescein" model-id="Fluorescein_Min2015_reference" status="simulated" stale="false" population="" measured-compound="fluorescein" parameterization="mechanistic" topology="2C"></div>
+> Cross-check failed with 0.538 agreement because the second reader disputed the values for V1, Q, and V2.
+
+<div class="pk-model-meta" hidden drug="fluorescein" model-id="Fluorescein_Min2015_reference" status="needs_review" stale="false" population="" measured-compound="fluorescein" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Min T, Sun J, Yi Y, Wang HX, Hang F, Ai YW et al. Microanalysis, Pharmacokinetics and Tissue Distribution of Polysaccharide-Protein Complexes from Longan Pulp in Mice. International journal of molecular sciences 16(10):24403–24416 (2015).
@@ -29,6 +31,8 @@ Min T, Sun J, Yi Y, Wang HX, Hang F, Ai YW et al. Microanalysis, Pharmacokinetic
 <figure class="pk-models-diagram"><img src="drugs/drug_fluorescein/Fluorescein_Min2015_reference/Fluorescein_Min2015_reference.svg" alt="Fluorescein_Min2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL1 (L/h/kg) | CL | 0.53 | L/h/kg |
@@ -38,7 +42,7 @@ Min T, Sun J, Yi Y, Wang HX, Hang F, Ai YW et al. Microanalysis, Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +52,13 @@ Min T, Sun J, Yi Y, Wang HX, Hang F, Ai YW et al. Microanalysis, Pharmacokinetic
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Cross-check failed with 0.538 agreement because the second reader disputed the values for V1, Q, and V2.**
+
+The record lists V1 as 0.09 L/kg, Q as 0.6 L/h/kg, and V2 as 0.26 L/kg, but the second reader assigned nulls or conflicting values to these fields. This disagreement across multiple pharmacokinetic parameters resulted in a cross-check agreement score of 0.538, below the required threshold. Consequently, the record was marked for review due to this unresolved conflict in the parameter extraction. Extracted — fluorescein: CL 0.53 L/h/kg, V1 0.09 L/kg, V2 0.26 L/kg, Q 0.6 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q290: this record has none, the second reading 0.09; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -121,14 +127,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=fluorescein) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=fluorescein) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | cross-check disputed by a second reader: verdict disputed, agreement 0.538, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

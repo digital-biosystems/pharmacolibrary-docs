@@ -4,11 +4,11 @@
 
 # amsacrine — `Amsacrine_Kestell1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 22:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Amsacrine's Vss of 3.3 L/kg is dimensionally mismatched with the model structure.
+> Amsacrine parameters Km, Vmax, and AUC were rejected because their molar units are dimensionally inconsistent with the expected mass-based quantities.
 
-<div class="pk-model-meta" hidden drug="amsacrine" model-id="Amsacrine_Kestell1990_reference" status="rejected" stale="true" population="male B6D2F1 mice" measured-compound="amsacrine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amsacrine" model-id="Amsacrine_Kestell1990_reference" status="rejected" stale="false" population="male B6D2F1 mice" measured-compound="amsacrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kestell P, Paxton JW, Evans PC, Young D, Jurlina JL, Robertson IG et al. Disposition of amsacrine and its analogue 9-([2-methoxy-4-[(methylsulfonyl)amino]phenyl]amino)-N,5-dimethyl-4- acridinecarboxamide (CI-921) in plasma, liver, and Lewis lung tumors in mice. Cancer research 50(3):503–508 (1990).
@@ -39,7 +39,7 @@ Kestell P, Paxton JW, Evans PC, Young D, Jurlina JL, Robertson IG et al. Disposi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Kestell P, Paxton JW, Evans PC, Young D, Jurlina JL, Robertson IG et al. Disposi
 
 ### Reviewer guidance
 
-**Amsacrine's Vss of 3.3 L/kg is dimensionally mismatched with the model structure.**
+**Amsacrine parameters Km, Vmax, and AUC were rejected because their molar units are dimensionally inconsistent with the expected mass-based quantities.**
 
-The record was built from the abstract only, so reported summary statistics like AUC (31 µmol·h/L) stood in for a fitted model. The second reader disagreed on the free drug fraction field name, though the value 0.63 was consistent across readings. No dose parameter was extracted in this record, despite the second reader identifying 57.7. Extracted — amsacrine: Km 3.7 mumol/liter, Vmax 18 mumol/h/kg, Vss 3.3 liter/kg, AUC 31 mumol.h/liter, fu 0.63.
+The recorded Km (3.7 µmol/liter), Vmax (18 µmol/h/kg), and AUC (31 µmol·h/liter) use molar units, which conflict with the mass dimensions required for these structural parameters. Although the second reader identified a dose of 57.7 and a free drug fraction of 0.63, the primary rejection stems from the unit type mismatch. This dimensional error persists despite the record being derived solely from the paper's abstract, where these summary statistics stand in for a fitted model. Extracted — amsacrine: Km 3.7 mumol/liter, Vmax 18 mumol/h/kg, Vss 3.3 liter/kg, AUC 31 mumol.h/liter, fu 0.63.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 57.7; it also differs on 2 more fields. That field does not shape the model.
 

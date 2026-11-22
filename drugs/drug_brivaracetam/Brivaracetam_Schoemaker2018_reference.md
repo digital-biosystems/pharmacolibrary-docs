@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;brivaracetam&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/&quot;},{&quot;label&quot;:&quot;Schoemaker_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brivaracetam_Klein2026_reference&quot;,&quot;label&quot;:&quot;Klein_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_all_patients&quot;,&quot;label&quot;:&quot;Pressler_2024_all_patients&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_all_patients.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_individual_patient_data&quot;,&quot;label&quot;:&quot;Pressler_2024_individual_patient_data&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brivaracetam_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_all_patients&quot;,&quot;label&quot;:&quot;Pressler_2024_all_patients&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_all_patients.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_individual_patient_data&quot;,&quot;label&quot;:&quot;Pressler_2024_individual_patient_data&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brivaracetam_Klein2026_reference&quot;,&quot;label&quot;:&quot;Klein_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The brivaracetam record is held back because the absorption lag time was missing, forcing a default that conflicts with the paper's explicit parameters.
+> Second reader disagrees on model diagnostic values, with nulls versus -95.6 and 260.2, causing verdict dispute.
 
 <div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Schoemaker2018_reference" status="needs_review" stale="false" population="" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Schoemaker R, Wade JR, Stockis A. Extrapolation of a Brivaracetam Exposure-Respo
 
 ### Reviewer guidance
 
-**The brivaracetam record is held back because the absorption lag time was missing, forcing a default that conflicts with the paper's explicit parameters.**
+**Second reader disagrees on model diagnostic values, with nulls versus -95.6 and 260.2, causing verdict dispute.**
 
-The record lacks an explicit value for the absorption lag time, so a library placeholder would have been used instead of a fitted estimate. This omission triggered a deviation flag for using defaults rather than reported data. Additionally, a second reader disagreed with several numeric entries, such as reporting -95.6 instead of 260.2, further complicating the verification of the model's parameters. Extracted — brivaracetam: CL/F 3.38 L/h, V/F 48.7 L, kabs 2.98 1/h.
+The cross-check failed with an agreement of 0.545, as 0 of 1 readers agreed with the initial assessment. The second reader identified specific discrepancies in diagnostic values, such as -95.6 versus 260.2 and 2.75 versus 31.4. Additional fields were null in the record but contained values like -14.8, 0.337, and 0.442 for the second reader. Extracted — brivaracetam: CL/F 3.38 L/h, V/F 48.7 L, kabs 2.98 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has -95.6, the second reading 260.2; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -124,15 +124,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=brivaracetam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=brivaracetam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

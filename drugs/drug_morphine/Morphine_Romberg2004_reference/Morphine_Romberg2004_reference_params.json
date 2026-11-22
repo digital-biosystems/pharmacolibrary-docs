@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Morphine_Romberg2004_reference",
+ "molar_masses": {
+  "central.C": 0.461
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  21.0
+ ],
+ "parameters": {
+  "Cl": 2.2166666666666665e-06,
+  "F": 1.0,
+  "MM": 0.461,
+  "Tlag": 0.0,
+  "VdPerKg": 5.2e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.1e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3516.891978029681
+ },
+ "reference_peaks": {
+  "central.C": 0.000849134504598761
+ },
+ "stop_time": 111600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -86,25 +86,6 @@ Interpatient variable and may be dependent on the administration technique
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">other organism</span> | [Pasić_1987_membrane_hyperpolarization](drugs/toxin_dihydroergotamine/pd_Pasi_1987_membrane_hyperpolarization.md) | membrane hyperpolarization ← dihydroergotamine · inhibition effect | — | Pasić M et al., Interaction between some ergot alkaloid…, Neuropharmacology (1987) | [10.1016/0028-3908(87)90225-5](https://doi.org/10.1016/0028-3908(87)90225-5) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_1986_CV](drugs/toxin_dihydroergotamine/pd_de_1986_CV.md) | pressure dependent venous capacitance (CV) of the calf ← dihydroergotamine · delayed effect through an effect compartment | — | de Marées H et al., Relationship between the venoconstricto…, European journal of clinica… (1986) | [10.1007/BF00608216](https://doi.org/10.1007/BF00608216) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dihydroergotamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), ADRB3 (target), DRD2 (target), DRD3 (target), DRD4 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR4 (target).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -117,7 +98,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-14 15:26 | 23:57 | 13/14/0 | 3/0/0 | 0/0/0 | 541,400/44,099 | einfracz / qwen3.8-flash-next | 10 | 0/9 | 10/0 | 0 |
+| 2026-11-14 15:26 | 23:57 | 13/14/0 | 4/0/0 | 0/0/0 | 541,400/44,099 | einfracz / qwen3.8-flash-next | 10 | 0/9 | 10/0 | 0 |
 
 ## Coverage
 

@@ -13,6 +13,18 @@
   3.934,
   7.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Schertz_2018:other_prose",
+    "value_si": 2.0
+   },
+   {
+    "source": "Schertz_2018:other_prose",
+    "value_si": 3.3
+   }
+  ]
+ },
  "parameters": {
   "Cl": 3.5000000000000004e-05,
   "F": 1.0,

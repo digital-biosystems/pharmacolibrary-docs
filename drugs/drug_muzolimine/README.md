@@ -26,7 +26,7 @@ Muzolimine is a high-ceiling loop diuretic used to treat hypertension. It was wi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Brørs_1979_reference](drugs/drug_muzolimine/Muzolimine_Brrs1979_reference.md) | — | 1-compartment (no model) | 2 | Brørs O et al., Pharmacokinetics of a single oral dose…, European journal of clinica… (1979) | [10.1007/BF00609872](https://doi.org/10.1007/BF00609872) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Brørs_1979_reference](drugs/drug_muzolimine/Muzolimine_Brrs1979_reference.md) | — | 1-compartment (no model) | 2 | Brørs O et al., Pharmacokinetics of a single oral dose…, European journal of clinica… (1979) | [10.1007/BF00609872](https://doi.org/10.1007/BF00609872) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ Muzolimine is a high-ceiling loop diuretic used to treat hypertension. It was wi
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

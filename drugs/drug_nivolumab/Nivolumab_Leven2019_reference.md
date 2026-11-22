@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The nivolumab record was rejected because its two-compartment structure contains an unreachable peripheral compartment.
+> Nivolumab’s peripheral-compartment volume (V2) is 4.15 L, but its two-compartment model was rejected for an unreachable compartment.
 
 <div class="pk-model-meta" hidden drug="nivolumab" model-id="Nivolumab_Leven2019_reference" status="rejected" stale="false" population="melanoma patients" measured-compound="nivolumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Leven C, Padelli M, Carré JL, Bellissant E, Misery L. Immune Checkpoint Inhibit
 
 ### Reviewer guidance
 
-**The nivolumab record was rejected because its two-compartment structure contains an unreachable peripheral compartment.**
+**Nivolumab’s peripheral-compartment volume (V2) is 4.15 L, but its two-compartment model was rejected for an unreachable compartment.**
 
-The record defines a central volume of 3.11 L and a peripheral volume of 4.15 L, but the structural check identified the peripheral compartment as orphan. This means the peripheral compartment has no valid path from the dose site, rendering the 4.15 L volume pharmacokinetically inaccessible. Extracted — nivolumab: CL 0.36 L/day, V1 3.11 L, V2 4.15 L.
+The record also reports total clearance of 0.36 L/day and central-compartment volume of 3.11 L. The rejection means a compartment or metabolite has no path from the dose. A second reader disagreed on additional extracted values, whose parameter meanings are not given in the record. Extracted — nivolumab: CL 0.36 L/day, V1 3.11 L, V2 4.15 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has none, the second reading 24.5; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

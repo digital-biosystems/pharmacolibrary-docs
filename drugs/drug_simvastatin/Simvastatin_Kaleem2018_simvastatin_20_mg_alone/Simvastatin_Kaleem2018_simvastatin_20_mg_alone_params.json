@@ -15,13 +15,29 @@
  "paper_reference": {
   "cmax": [
    {
-    "source": "Kaleem_2018:other_prose",
+    "source": "Kaleem_2018:discussion_prose",
+    "value_si": 2.3
+   },
+   {
+    "source": "Kaleem_2018:discussion_prose",
+    "value_si": 2.47
+   },
+   {
+    "source": "Kaleem_2018:discussion_prose",
     "value_si": 5.66
+   },
+   {
+    "source": "Kaleem_2018:discussion_prose",
+    "value_si": 23.4
+   },
+   {
+    "source": "Kaleem_2018:discussion_prose",
+    "value_si": 4.16
    }
   ]
  },
  "parameters": {
-  "Cl": 6.436111111111112e-06,
+  "Cl": 0.0004505277777777779,
   "F": 0.9,
   "MM": 0.4185662,
   "Tlag": 763.1999999999999,
@@ -29,16 +45,16 @@
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 2e-05,
-  "ka": 0.0002777777777777778,
+  "ka": 8.333333333333333e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 19392.38476953908
+  "central.C": 10735.07014028056
  },
  "reference_peaks": {
-  "central.C": 4.917294090153452e-06
+  "central.C": 1.491022445044096e-06
  },
- "stop_time": 2419200.0,
+ "stop_time": 86400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

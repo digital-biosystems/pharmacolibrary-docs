@@ -4,11 +4,11 @@
 
 # sorbitol — `Sorbitol_Nau1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-04 17:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sorbitol clearance is recorded with incorrect time-based units rather than volume-based units.
+> The record was rejected because sorbitol’s Cmax of 3116 mg/1, clearance of 31.7 1/hr, and terminal half-life of 15.4 1 have units inconsistent with concentration, clearance, and time.
 
-<div class="pk-model-meta" hidden drug="sorbitol" model-id="Sorbitol_Nau1992_reference" status="rejected" stale="true" population="adults with brain edema due to cerebrovascular disease" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sorbitol" model-id="Sorbitol_Nau1992_reference" status="rejected" stale="false" population="adults with brain edema due to cerebrovascular disease" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nau R, Dreyhaupt T, Kolenda H, Prange HW. Low blood-to-cerebrospinal fluid passage of sorbitol after intravenous infusion. Stroke 23(9):1276–1279 (1992).
@@ -16,7 +16,7 @@ Nau R, Dreyhaupt T, Kolenda H, Prange HW. Low blood-to-cerebrospinal fluid passa
 
 ## Population and dosing
 
-**Population:** adults with brain edema due to cerebrovascular disease · condition brain edema due to cerebrovascular disease · age group adult · n = &gt;=6.
+**Population:** adults with brain edema due to cerebrovascular disease · condition brain edema due to cerebrovascular disease · age group adult.
 
 **Dosing:** 50000 mg, iv, single.
 
@@ -40,7 +40,7 @@ Nau R, Dreyhaupt T, Kolenda H, Prange HW. Low blood-to-cerebrospinal fluid passa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Nau R, Dreyhaupt T, Kolenda H, Prange HW. Low blood-to-cerebrospinal fluid passa
 
 ### Reviewer guidance
 
-**Sorbitol clearance is recorded with incorrect time-based units rather than volume-based units.**
+**The record was rejected because sorbitol’s Cmax of 3116 mg/1, clearance of 31.7 1/hr, and terminal half-life of 15.4 1 have units inconsistent with concentration, clearance, and time.**
 
-The structural parameter for total sorbitol clearance is listed as 31.7 with units of 1/hr. This dimensional mismatch prevents the parameter from representing the required volume per time relationship. The record was derived from the abstract, so these summary statistics stand in for a fitted model. Extracted — sorbitol: Cmax 3.12e+03 mg/1, AUC 33.8 mg*h/L, CL 31.7 1/hr, t1/2z 15.4 1, t1/2α 0.1 hour.
+The reported Cmax unit has mass but lacks the volume dimension required for concentration; the clearance unit is inverse time rather than volume per time, and the terminal half-life unit is dimensionless rather than time. The record was built from the abstract alone, so its summary statistics stand in for a fitted model. The second reader supplied no corresponding values for the reported parameters, leaving those values uncorroborated. Extracted — sorbitol: Cmax 3.12e+03 mg/1, AUC 33.8 mg*h/L, CL 31.7 1/hr, t1/2z 15.4 1, t1/2α 0.1 hour.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 33.8, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 33.8, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -108,19 +108,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc]` | 33.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 31.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 3116 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[rapid initial decline (t 1/2o :]` | 0.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tl/2]` | 15.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 33.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 31.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 3116 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rapid initial decline (t 1/2o :]` | 0.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tl/2]` | 15.4 |  | only_one_extracted |
 
 </details>
 

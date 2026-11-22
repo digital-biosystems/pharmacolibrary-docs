@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;L-Carnitine&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/&quot;},{&quot;label&quot;:&quot;Haarhuis_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LCarnitine_Haarhuis2026_reference&quot;,&quot;label&quot;:&quot;Haarhuis_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Haarhuis2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;LCarnitine_Nguyen2022_reference&quot;,&quot;label&quot;:&quot;Nguyen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Nguyen2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Parnetti1992_reference&quot;,&quot;label&quot;:&quot;Parnetti_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Parnetti1992_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Sahajwalla1995_reference&quot;,&quot;label&quot;:&quot;Sahajwalla_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Sahajwalla1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Shimizu2018_reference&quot;,&quot;label&quot;:&quot;Shimizu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LCarnitine_Nguyen2022_reference&quot;,&quot;label&quot;:&quot;Nguyen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Nguyen2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Parnetti1992_reference&quot;,&quot;label&quot;:&quot;Parnetti_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Parnetti1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Sahajwalla1995_reference&quot;,&quot;label&quot;:&quot;Sahajwalla_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Sahajwalla1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Haarhuis2026_reference&quot;,&quot;label&quot;:&quot;Haarhuis_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Haarhuis2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;LCarnitine_Shimizu2018_reference&quot;,&quot;label&quot;:&quot;Shimizu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # L-Carnitine — `LCarnitine_Haarhuis2026_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 21.6, model 0.0782).
 
-<div class="pk-model-meta" hidden drug="L-Carnitine" model-id="LCarnitine_Haarhuis2026_reference" status="extracted" stale="false" population="healthy, omnivorous adults" measured-compound="TMAO" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="L-Carnitine" model-id="LCarnitine_Haarhuis2026_reference" status="needs_review" stale="false" population="healthy, omnivorous adults" measured-compound="TMAO" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Haarhuis JE, Ahn-Jarvis J, Savva GM, Day-Walsh PE, Ferns C, Hughes S et al. Effect of a polyphenol-rich pomegranate extract on plasma trimethylamine N-oxide levels following an oral carnitine challenge: a randomized controlled crossover trial in healthy adults. Frontiers in nutrition 13:1822840 (2026).
@@ -31,6 +31,8 @@ Haarhuis JE, Ahn-Jarvis J, Savva GM, Day-Walsh PE, Ferns C, Hughes S et al. Effe
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | β | kel | 0.0067 | 1/h |
@@ -38,7 +40,7 @@ Haarhuis JE, Ahn-Jarvis J, Savva GM, Day-Walsh PE, Ferns C, Hughes S et al. Effe
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +48,13 @@ Haarhuis JE, Ahn-Jarvis J, Savva GM, Day-Walsh PE, Ferns C, Hughes S et al. Effe
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's time of the peak (tmax) (paper 21.6, model 0.0782).**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. None of the extracted parameters is l carnitine's own; they describe TMAO. Extracted — TMAO: kel 0.0067 1/h, t1/2z 7.8 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -94,6 +102,24 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Haarhuis_2026:other_prose'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=TMAO) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 0.7 | 0.9973 |  | unresolved concentration unit (exp 'μmol/L', sim 'kg/m3') |
+| T1_t_half_terminal | reference | pass | 7.8 | 7.8 | 1 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 8.6 | 7.8 | 0.907 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 21.6 | 0.07816 | 0.0036 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 25.8 | 0.07816 | 0.003 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 20 | 0.07816 | 0.0039 | h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.07816 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

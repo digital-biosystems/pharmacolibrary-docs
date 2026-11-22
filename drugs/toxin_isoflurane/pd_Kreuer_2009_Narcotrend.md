@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Isoflurane concentrations (expressed in MAC) inhibit the Narcotrend index via a sigmoid Emax model with an effect-site equilibration rate constant (ke0) of 0.18 min-1. The paper excerpts are unavailable, so specific potency values such as IC50 or Imax are not reported.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kreuer_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

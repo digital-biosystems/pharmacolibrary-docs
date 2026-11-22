@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;protamine&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/&quot;},{&quot;label&quot;:&quot;Butterworth_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protamine_Butterworth2002_reference&quot;,&quot;label&quot;:&quot;Butterworth_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/Protamine_Butterworth2002_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protamine_Butterworth2002_reference&quot;,&quot;label&quot;:&quot;Butterworth_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/Protamine_Butterworth2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # protamine — `Protamine_Butterworth2002_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="protamine" model-id="Protamine_Butterworth2002_reference" status="simulated" stale="false" population="healthy volunteers" measured-compound="protamine" parameterization="mechanistic" topology="1C"></div>
+> Second reader disputes the record built from abstract-only data, specifically challenging the dose compound identification and the 3.04 L volume parameter.
+
+<div class="pk-model-meta" hidden drug="protamine" model-id="Protamine_Butterworth2002_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="protamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Butterworth J, Lin YA, Prielipp R, Bennett J, James R. The pharmacokinetics and cardiovascular effects of a single intravenous dose of protamine in normal volunteers. Anesthesia and analgesia 94(3):514 (2002).
@@ -27,6 +29,8 @@ Butterworth J, Lin YA, Prielipp R, Bennett J, James R. The pharmacokinetics and 
 <figure class="pk-models-diagram"><img src="drugs/drug_protamine/Protamine_Butterworth2002_reference/Protamine_Butterworth2002_reference.svg" alt="Protamine_Butterworth2002_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | volume of distribution at steady state | Vss | 12.3 | L |
@@ -36,7 +40,7 @@ Butterworth J, Lin YA, Prielipp R, Bennett J, James R. The pharmacokinetics and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Butterworth J, Lin YA, Prielipp R, Bennett J, James R. The pharmacokinetics and 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Second reader disputes the record built from abstract-only data, specifically challenging the dose compound identification and the 3.04 L volume parameter.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The model relies on abstract summary statistics rather than fitted data, limiting parameter precision. A second reader disagreed that the dose compound was protamine instead of protamine sulfate. Additionally, the second reader could not locate the 3.04 L volume of distribution value in the abstract, leading to a null result for that parameter. Extracted — protamine: Vss 12.3 L, CL 2.2 L/min, t1/2z 7.4 min, V 3.04 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has protamine, the second reading protamine sulfate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -124,14 +128,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=protamine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=protamine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

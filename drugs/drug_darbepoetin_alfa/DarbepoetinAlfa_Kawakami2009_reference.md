@@ -15,7 +15,7 @@ Kawakami K, Takama H, Nakashima D, Tanaka H, Uchida E, Akizawa T. Population pha
 
 ## Population and dosing
 
-**Population:** peritoneal dialysis and non-dialysis patients with chronic kidney disease · condition chronic kidney disease · age group adult · n = &gt;=64.
+**Population:** peritoneal dialysis and non-dialysis patients with chronic kidney disease · condition chronic kidney disease · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Kawakami K, Takama H, Nakashima D, Tanaka H, Uchida E, Akizawa T. Population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Kawakami K, Takama H, Nakashima D, Tanaka H, Uchida E, Akizawa T. Population pha
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -91,20 +91,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.0376 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` |  | 0.0376 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent clearance]` | 0.158 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of central compartment (v(1)/f)]` | 13.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` |  | 0.158 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v(1)/f]` |  | 13.7 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | darbepoetin_alfa | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | darbepoetin_alfa | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.0376 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 0.0376 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | 0.158 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of central compartment (v(1)/f)]` | 13.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 0.158 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v(1)/f]` |  | 13.7 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | darbepoetin_alfa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | darbepoetin_alfa | unknown | mismatch |
 
 </details>
 
@@ -140,6 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

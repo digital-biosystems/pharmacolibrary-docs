@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ofloxacin/&quot;},{&quot;label&quot;:&quot;Zhuo_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ofloxacin_AlShaer2019_reference&quot;,&quot;label&quot;:&quot;Al-Shaer_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ofloxacin/Ofloxacin_AlShaer2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ofloxacin_Zhuo1994_reference&quot;,&quot;label&quot;:&quot;Zhuo_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ofloxacin/Ofloxacin_Zhuo1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ofloxacin_AlShaer2019_reference&quot;,&quot;label&quot;:&quot;Al-Shaer_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ofloxacin/Ofloxacin_AlShaer2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ofloxacin_Zhuo1994_reference&quot;,&quot;label&quot;:&quot;Zhuo_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ofloxacin/Ofloxacin_Zhuo1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F and lag time Tlag use placeholder defaults unsupported by the abstract, and the second reader could not verify the extracted summary statistics.
+> Ofloxacin oral bioavailability and lag time were missing from the abstract, forcing reliance on library placeholder values.
 
 <div class="pk-model-meta" hidden drug="ofloxacin" model-id="Ofloxacin_Zhuo1994_reference" status="needs_review" stale="false" population="patients with respiratory tract infections" measured-compound="ofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Zhuo HT, Lu JZ, Xia XR, Ling SS. Pharmacokinetics of ofloxacin through three adm
 
 ### Reviewer guidance
 
-**Bioavailability F and lag time Tlag use placeholder defaults unsupported by the abstract, and the second reader could not verify the extracted summary statistics.**
+**Ofloxacin oral bioavailability and lag time were missing from the abstract, forcing reliance on library placeholder values.**
 
-The model builder substituted placeholder values for F and Tlag instead of explicit estimates, so the simulated profile relies on unverified assumptions. The abstract-only source means reported summary statistics, such as AUC of 16 h.µg/mL, stand in for a fitted model. Consequently, the second reader could not locate any values for the extracted parameters, disagreeing with all reported estimates. Extracted — ofloxacin: t1/2β 6 h, V 58 L, Cmax 3.9 micrograms.ml-1, AUC 16 h.micrograms.ml-1, CL 13 L.h-1, kabs 2.95 h−1.
+Because only the abstract was read, the model lacks explicit estimates for bioavailability (F) and lag time (Tlag), so library placeholders were used instead. The second reader disputed the record, failing to identify the dose compound or verify the reported concentration values. Extracted — ofloxacin: t1/2β 6 h, V 58 L, Cmax 3.9 micrograms.ml-1, AUC 16 h.micrograms.ml-1, CL 13 L.h-1, kabs 2.95 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ofloxacin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -146,14 +146,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ofloxacin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ofloxacin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

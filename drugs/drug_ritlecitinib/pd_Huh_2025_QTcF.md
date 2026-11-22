@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ritlecitinib&quot;,&quot;href&quot;:&quot;drugs/drug_ritlecitinib/&quot;},{&quot;label&quot;:&quot;Huh_2025 \u00b7 PD change from baseline heart rate\u2013 corrected QTcF (\u2206QTcF)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Huh_2025_QTcF&quot;,&quot;label&quot;:&quot;Huh_2025 \u00b7 \u2206QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ritlecitinib/pd_Huh_2025_QTcF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # change from baseline heart rate– corrected QTcF (∆QTcF) — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,7 +15,7 @@
 
 **As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023::study_1_30_mg_qd) drives change from baseline heart rate– corrected QTcF (∆QTcF) (in ms): direct linear effect.
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 > A linear PK/PD model describes the additive effect of ritlecitinib plasma concentrations (ng/mL) on the change from baseline heart rate–corrected QTcF (∆QTcF) in ms, with an estimated slope of 0.000213 ms/ng/mL. The paper does not describe a specific physiological mechanism (such as inhibition of elimination) for this concentration-response relationship, but rather specifies a linear association using a pre-specified statistical model.
 >
@@ -43,91 +42,25 @@ Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & 
 </details>
 
 
-## Exposure-response model
-
-`Ritlecitinib_Huh2025_PD_qtcf` — linear, `response = E0 + slope*exposure`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| slope | 0.000213 ms/ng/mL | 0.213 meter ** 3 * second / kilogram |
-
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.213
-
-Deviations:
-
-- `defaulted_parameters` — E0
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | skipped | a line has no plateau to compare |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
-
-
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_modelica.zip" download>Ritlecitinib_Huh2025_PD_qtcf_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_fmi.zip" download>Ritlecitinib_Huh2025_PD_qtcf_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_LinearSweep.fmu" download>PD_LinearSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_matlab.zip" download>Ritlecitinib_Huh2025_PD_qtcf_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_sbml.zip" download>Ritlecitinib_Huh2025_PD_qtcf_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_cellml.zip" download>Ritlecitinib_Huh2025_PD_qtcf_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | model | `E0` | 0 |  |
-| input | model | `exposure_per_s` | 1e-06 |  |
-| input | model | `slope` | 0.213 |  |
-| output | concentration | `response` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `Ritlecitinib_Huh2025_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_ritlecitinib/pd_Huh_2025_QTcF>
-
-```bibtex
-@misc{pharmacolibrary_RitlecitinibHuh2025PDqtcf,
-  title  = {{Pharmacolibrary model Ritlecitinib_Huh2025_PD_qtcf}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ritlecitinib/pd_Huh_2025_QTcF},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Ritlecitinib_Huh2025_PD_qtcf_params.json` · controls `Ritlecitinib_Huh2025_PD_qtcf_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

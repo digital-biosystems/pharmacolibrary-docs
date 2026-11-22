@@ -4,11 +4,11 @@
 
 # delavirdine — `Delavirdine_Smith2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:53 UTC (Rejected), but the paper was screened again on 2026-10-07 15:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for delavirdine was rejected because the parameter V was incorrectly labeled as volume of distribution but assigned a value of 1376 mg/day.
+> Record rejected because parameter V is dimensionally inconsistent, assigned 1376 mg/day instead of a volume unit.
 
-<div class="pk-model-meta" hidden drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="true" population="HIV-infected adults (ACTG 260/261)" measured-compound="delavirdine" parameterization="apparent" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="false" population="HIV-infected adults (ACTG 260/261)" measured-compound="delavirdine" parameterization="apparent" topology="manual_model_class"></div>
 
 ## Citation
 Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population pharmacokinetics of delavirdine and N-delavirdine in HIV-infected individuals. Clinical pharmacokinetics 44(1):99–109 (2005).
@@ -38,7 +38,7 @@ Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population
 
 ### Reviewer guidance
 
-**The record for delavirdine was rejected because the parameter V was incorrectly labeled as volume of distribution but assigned a value of 1376 mg/day.**
+**Record rejected because parameter V is dimensionally inconsistent, assigned 1376 mg/day instead of a volume unit.**
 
-The record defines parameter V as 'Volume of distribution based on drug concentration' but assigns it a value of 1376 mg/day. A unit of mass per time is dimensionally inconsistent with a volume, indicating a structural parameter mismatch. Additionally, the record relies on abstract-only data, meaning the summary statistics stand in for a fitted model, and readers disagreed on the extraction of this parameter. Extracted — delavirdine: Vss 67.6 L, CL/F 19.8 L/h, Km 6.3 micromol/L, V/F 24.7 L, V 1.38e+03 mg/day.
+The parameter labeled V is defined as volume of distribution but carries units of mg/day, creating a dimension mismatch with its structural role. This conflict prevents valid model construction. Additionally, the record relies solely on abstract summary statistics rather than a fitted model, and reviewers disagreed on whether the value 1376 was correctly extracted for this parameter. Extracted — delavirdine: Vss 67.6 L, CL/F 19.8 L/h, Km 6.3 micromol/L, V/F 24.7 L, V 1.38e+03 mg/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of v: this record has 1376, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

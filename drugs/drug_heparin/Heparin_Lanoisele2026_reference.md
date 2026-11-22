@@ -17,7 +17,7 @@ Lanoiselée J, Gibert A, Gouin-Thibault I, Mansour A, Pontis A, Morizot C et al.
 
 ## Population and dosing
 
-**Population:** adult patients scheduled for CPB-assisted cardiac surgery · condition cardiac surgery · age group adult · n = &gt;=68.
+**Population:** adult patients scheduled for CPB-assisted cardiac surgery · condition cardiac surgery · age group adult.
 
 **Dosing:** 200 mg, iv, single.
 

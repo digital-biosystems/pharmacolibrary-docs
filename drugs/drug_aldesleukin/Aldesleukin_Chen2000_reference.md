@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> Vss was substituted for central volume, preventing accurate simulation of the early distribution phase for aldesleukin.
+> The record is held after disagreement over aldesleukin (interleukin-2) clearance: it lists 5.9 ml/h/kg for PEG-IL-2, while the second reader reports 300.
 
 <div class="pk-model-meta" hidden drug="aldesleukin" model-id="Aldesleukin_Chen2000_reference" status="needs_review" stale="false" population="Yorkshire pigs" measured-compound="interleukin-2" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Chen SA, Sawchuk RJ, Brundage RC, Horvath C, Mendenhall HV, Gunther RA et al. Pl
 
 ### Reviewer guidance
 
-**Vss was substituted for central volume, preventing accurate simulation of the early distribution phase for aldesleukin.**
+**The record is held after disagreement over aldesleukin (interleukin-2) clearance: it lists 5.9 ml/h/kg for PEG-IL-2, while the second reader reports 300.**
 
-The record defines Vss as 370 ml/kg but lacks a reported central volume, forcing the use of steady-state volume as the distribution parameter. This substitution allows reproduction of AUC and terminal half-life but fails to model the initial distribution phase. Additionally, the model was built from the abstract, and covariate scenarios were not simulated, leaving those effects unexercised. Extracted — interleukin-2: AUC ratio 0.67, FG 100 %, CL 5.9 ml/h/kg, Vss 370 ml/kg.
+The cross-reader comparison was disputed (agreement 0.133; 0 of 1 reader agreed); the second reader reported clearance 300, whereas the parameter list gives CL 5.9 ml/h/kg for PEG-IL-2. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Vss 370 ml/kg was used as the distribution volume because no Vc/V was reported; AUC and terminal half-life were reproduced, but the early distribution phase was not. The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. Extracted — interleukin-2: AUC ratio 0.67, FG 100 %, CL 5.9 ml/h/kg, Vss 370 ml/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has interleukin-2, the second reading IL-2; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -159,14 +159,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=interleukin-2) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=interleukin-2) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

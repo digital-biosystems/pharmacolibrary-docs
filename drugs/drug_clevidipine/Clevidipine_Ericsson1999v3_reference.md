@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;clevidipine&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/&quot;},{&quot;label&quot;:&quot;Ericsson_1999_3 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clevidipine_Bailey2002_reference&quot;,&quot;label&quot;:&quot;Bailey_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Ericsson2001_reference&quot;,&quot;label&quot;:&quot;Ericsson_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Ericsson2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Vuylsteke2000_reference&quot;,&quot;label&quot;:&quot;Vuylsteke_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clevidipine_Vuylsteke2000_reference&quot;,&quot;label&quot;:&quot;Vuylsteke_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Bailey2002_reference&quot;,&quot;label&quot;:&quot;Bailey_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Ericsson2001_reference&quot;,&quot;label&quot;:&quot;Ericsson_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Ericsson2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clevidipine — `Clevidipine_Ericsson1999v3_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 15:51 UTC (Rejected), but the paper was screened again on 2026-10-07 02:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record for clevidipine was rejected because it lacks volume and clearance, and the metabolite H 152/81 is an unreachable compartment.
+> The clevidipine model lacks a metabolic rate constant, leaving metabolite H 152/81 unreachable and orphaned from the drug's dose.
 
-<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v3_reference" status="rejected" stale="true" population="rats, rabbits, and dogs" measured-compound="clevidipine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v3_reference" status="rejected" stale="false" population="rats, rabbits, and dogs" measured-compound="clevidipine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Ericsson H, Tholander B, Björkman JA, Nordlander M, Regårdh CG. Pharmacokinetics of new calcium channel antagonist clevidipine in the rat, rabbit, and dog and pharmacokinetic/pharmacodynamic relationship in anesthetized dogs. Drug metabolism and disposition: the biological fate of chemicals 27(5):558–564 (1999).
@@ -37,7 +37,7 @@ Ericsson H, Tholander B, Björkman JA, Nordlander M, Regårdh CG. Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Ericsson H, Tholander B, Björkman JA, Nordlander M, Regårdh CG. Pharmacokineti
 
 ### Reviewer guidance
 
-**Record for clevidipine was rejected because it lacks volume and clearance, and the metabolite H 152/81 is an unreachable compartment.**
+**The clevidipine model lacks a metabolic rate constant, leaving metabolite H 152/81 unreachable and orphaned from the drug's dose.**
 
-The paper is an exposure/outcome study that did not fit a compartmental model, resulting in missing parameters for distribution volume and clearance. The metabolite H 152/81 is defined but lacks a path from the dose, rendering it an orphan compartment. Additionally, the source text was abstract-only, meaning the reported half-lives of 12 s and 20 s are summary statistics rather than fitted values. Extracted — clevidipine: t1/2z 12 s, t1/2α 20 s.
+The hydrolysis link from clevidipine to metabolite H 152/81 has no assigned rate parameter, meaning no path exists from the dose to the metabolite. The record includes half-life values of 12 s and 20 s, but these do not constitute a functional elimination or formation mechanism. A second reader could not identify any valid model links or specific parameter values for these half-lives in the abstract. Extracted — clevidipine: t1/2z 12 s, t1/2α 20 s.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (hydrolysis), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

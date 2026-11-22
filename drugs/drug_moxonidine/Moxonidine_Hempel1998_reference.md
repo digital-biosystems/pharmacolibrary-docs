@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;moxonidine&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/&quot;},{&quot;label&quot;:&quot;Hempel_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxonidine_Hempel1998_reference&quot;,&quot;label&quot;:&quot;Hempel_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Bohmann_1994_S_I_outflow&quot;,&quot;label&quot;:&quot;Bohmann_1994 \u00b7 S-I outflow&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Bohmann_1994_S_I_outflow.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hempel_1998_DBP&quot;,&quot;label&quot;:&quot;Hempel_1998 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Hempel_1998_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Troc_niz_2000_DBP&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Troc_niz_2000_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxonidine_Hempel1998_reference&quot;,&quot;label&quot;:&quot;Hempel_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Bohmann_1994_S_I_outflow&quot;,&quot;label&quot;:&quot;Bohmann_1994 \u00b7 S-I outflow&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Bohmann_1994_S_I_outflow.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hempel_1998_DBP&quot;,&quot;label&quot;:&quot;Hempel_1998 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Hempel_1998_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Troc_niz_2000_DBP&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Troc_niz_2000_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # moxonidine — `Moxonidine_Hempel1998_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="moxonidine" model-id="Moxonidine_Hempel1998_reference" status="simulated" stale="false" population="patients with hypertension" measured-compound="moxonidine" parameterization="mechanistic" topology="1C"></div>
+> Moxonidine clearance and volume values from the abstract were disputed by a second reader who could not verify the dose compound or primary analyte.
+
+<div class="pk-model-meta" hidden drug="moxonidine" model-id="Moxonidine_Hempel1998_reference" status="needs_review" stale="false" population="patients with hypertension" measured-compound="moxonidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hempel G, Karlsson MO, de Alwis DP, Toublanc N, McNay J, Schaefer HG. Population pharmacokinetic-pharmacodynamic modeling of moxonidine using 24-hour ambulatory blood pressure measurements. Clinical pharmacology and therapeutics 64(6):622–635 (1998).
@@ -27,6 +29,8 @@ Hempel G, Karlsson MO, de Alwis DP, Toublanc N, McNay J, Schaefer HG. Population
 <figure class="pk-models-diagram"><img src="drugs/drug_moxonidine/Moxonidine_Hempel1998_reference/Moxonidine_Hempel1998_reference.svg" alt="Moxonidine_Hempel1998_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean moxonidine clearance | CL | 35 | L/h |
@@ -34,7 +38,7 @@ Hempel G, Karlsson MO, de Alwis DP, Toublanc N, McNay J, Schaefer HG. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Hempel G, Karlsson MO, de Alwis DP, Toublanc N, McNay J, Schaefer HG. Population
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Moxonidine clearance and volume values from the abstract were disputed by a second reader who could not verify the dose compound or primary analyte.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was derived solely from the paper's abstract, so its summary statistics replaced fitted model estimates. A second reader disagreed on the identified dose compound and primary analyte, finding them unknown rather than moxonidine. Consequently, the extracted clearance (35 L/h) and volume of distribution (132 L) were not corroborated, leading to a cross-check dispute with an agreement ratio of 0.222. Extracted — moxonidine: CL 35 L/h, V 132 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has moxonidine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -121,14 +125,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=moxonidine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=moxonidine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

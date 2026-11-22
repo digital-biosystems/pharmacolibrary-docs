@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected because the Km value for imipramine uses a concentration unit (μM) incompatible with the required mass-per-volume dimension.
 
 <div class="pk-model-meta" hidden drug="Imipramine" model-id="Imipramine_Akanuma2022_reference" status="rejected" stale="false" population="rats and TR-BBB13 cells" measured-compound="Imipramine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,7 +47,13 @@ Akanuma SI, Han M, Murayama Y, Kubo Y, Hosoya KI. Differences in Cerebral Distri
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected because the Km value for imipramine uses a concentration unit (μM) incompatible with the required mass-per-volume dimension.**
+
+The parameter Km is assigned the value 37.6 with the unit μM. However, the model's dimensional check flags a conflict where the unit for Km is defined as mass per volume. This creates a structural mismatch where the extracted concentration unit does not align with the expected physical dimension for this parameter. Extracted — imipramine: CL 0.322 L/h, CLint 0.313 min·g brain, Km 37.6 μM, V 0.13 L/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

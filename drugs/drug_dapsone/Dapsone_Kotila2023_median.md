@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Kotila_2023 \u00b7 median&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Kotila2023_mean&quot;,&quot;label&quot;:&quot;Kotila_2023_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_mean.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Mirochnick2001_reference&quot;,&quot;label&quot;:&quot;Mirochnick_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Mirochnick2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Kotila2023_median&quot;,&quot;label&quot;:&quot;Kotila_2023_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vage_1994_MetHgb&quot;,&quot;label&quot;:&quot;Vage_1994 \u00b7 MetHgb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/pd_Vage_1994_MetHgb.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vage_1994_MetHgb_2&quot;,&quot;label&quot;:&quot;Vage_1994 \u00b7 MetHgb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/pd_Vage_1994_MetHgb_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vage_1994_MetHgb_3&quot;,&quot;label&quot;:&quot;Vage_1994 \u00b7 MetHgb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/pd_Vage_1994_MetHgb_3.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vage_1994_MetHgb_4&quot;,&quot;label&quot;:&quot;Vage_1994 \u00b7 MetHgb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/pd_Vage_1994_MetHgb_4.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Kotila2023_mean&quot;,&quot;label&quot;:&quot;Kotila_2023_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_mean.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Kotila2023_median&quot;,&quot;label&quot;:&quot;Kotila_2023_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dapsone_Mirochnick2001_reference&quot;,&quot;label&quot;:&quot;Mirochnick_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Mirochnick2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vage_1994_MetHgb&quot;,&quot;label&quot;:&quot;Vage_1994 \u00b7 MetHgb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/pd_Vage_1994_MetHgb.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vage_1994_MetHgb_2&quot;,&quot;label&quot;:&quot;Vage_1994 \u00b7 MetHgb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/pd_Vage_1994_MetHgb_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vage_1994_MetHgb_3&quot;,&quot;label&quot;:&quot;Vage_1994 \u00b7 MetHgb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/pd_Vage_1994_MetHgb_3.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vage_1994_MetHgb_4&quot;,&quot;label&quot;:&quot;Vage_1994 \u00b7 MetHgb&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/pd_Vage_1994_MetHgb_4.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Apparent clearance 1.52 L/h and absorption rate constant 0.09 h−1 were derived from population summary statistics rather than fitted individual data.
+> The record lacks explicit bioavailability and absorption lag values, causing a second reader to dispute the model's parameterization and specific AUC estimates.
 
 <div class="pk-model-meta" hidden drug="dapsone" model-id="Dapsone_Kotila2023_median" status="needs_review" stale="false" population="healthy Nigerians" measured-compound="dapsone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Kotila OA, Ajayi DT, Masimirembwa C, Thelingwani R, Odetunde A, Falusi AG et al.
 
 ## Population and dosing
 
-**Population:** healthy Nigerians · age group adult · n = 11.
+**Population:** healthy Nigerians · age group adult.
 
 **Dosing:** 50 mg, oral, single.
 
@@ -57,9 +57,9 @@ Kotila OA, Ajayi DT, Masimirembwa C, Thelingwani R, Odetunde A, Falusi AG et al.
 
 ### Reviewer guidance
 
-**Apparent clearance 1.52 L/h and absorption rate constant 0.09 h−1 were derived from population summary statistics rather than fitted individual data.**
+**The record lacks explicit bioavailability and absorption lag values, causing a second reader to dispute the model's parameterization and specific AUC estimates.**
 
-The record stores summary statistics like AUC∞ 32.91 h.µg/mL and Cmax 1.18 µg/mL for dapsone in healthy Nigerians. The model builder defaulted the lag time and assumed complete bioavailability, treating the parameters as apparent rather than mechanistic. A second reader disputed the parameterization and failed to identify the corresponding summary statistic values in the paper. Extracted — dapsone: Cmax 1.18 µg/mL, tmax 3 h, AUClast 29.3 h.µg/mL, AUC∞ 32.9 h.µg/mL, kel 0.028 h−1, t1/2z 24.8 h, CL/F 1.52 L/h, V/F 55.6 L, … (+1).
+The model builder defaulted the absorption lag time and assumed full bioavailability (F=1), treating the clearance and volume parameters as apparent rather than mechanistic. A second reader disagreed on this parameterization and provided conflicting values for the area under the curve parameters, including AUC0-inf and AUC0-last. This disagreement resulted in a low agreement score, preventing the record from passing the required cross-check. Extracted — dapsone: Cmax 1.18 µg/mL, tmax 3 h, AUClast 29.3 h.µg/mL, AUC∞ 32.9 h.µg/mL, kel 0.028 h−1, t1/2z 24.8 h, CL/F 1.52 L/h, V/F 55.6 L, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -175,7 +175,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=dapsone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 30.23 | 25.34 | 0.8382 | h→SI vs simulated h |
 | T1_t_half_beta | reference | pass | 30 | 25.34 | 0.8446 | h→SI vs simulated h |
 

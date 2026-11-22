@@ -4,11 +4,11 @@
 
 # ramipril — `Ramipril_Trobec2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-07 07:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The ramipril record was rejected because the intercompartmental clearance unit L⁻¹ is dimensionally inconsistent with its structural role.
+> Ramipril's intercompartmental clearance parameter Q is assigned volume units (L⁻¹) instead of the required flow units (L h⁻¹), causing a dimensional mismatch.
 
-<div class="pk-model-meta" hidden drug="ramipril" model-id="Ramipril_Trobec2024_reference" status="rejected" stale="true" population="patients with chronic heart failure" measured-compound="ramipril" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ramipril" model-id="Ramipril_Trobec2024_reference" status="rejected" stale="false" population="patients with chronic heart failure" measured-compound="ramipril" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Trobec KČ, Grabnar I, Trontelj J, Lainščak M, Kos MK. Population pharmacokinetics of ramipril in patients with chronic heart failure: A real-world longitudinal study. Acta pharmaceutica (Zagreb, Croatia) 74(2):315–328 (2024).
@@ -44,7 +44,7 @@ Trobec KČ, Grabnar I, Trontelj J, Lainščak M, Kos MK. Population pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Trobec KČ, Grabnar I, Trontelj J, Lainščak M, Kos MK. Population pharmacokine
 
 ### Reviewer guidance
 
-**The ramipril record was rejected because the intercompartmental clearance unit L⁻¹ is dimensionally inconsistent with its structural role.**
+**Ramipril's intercompartmental clearance parameter Q is assigned volume units (L⁻¹) instead of the required flow units (L h⁻¹), causing a dimensional mismatch.**
 
-The parameter Q, representing apparent intercompartmental clearance between central and peripheral compartments, is listed with a value of 74.6 and unit L⁻¹, which is dimensionally incorrect for a clearance term. This unit could not be converted to standard SI units, preventing a valid dimensional check. Additionally, the second reader disagreed with the record on multiple parameter values, including the total clearance of 194, absorption rate constant of 1.80, and volume of distribution V2 of 442, noting these were unknown in the source. Extracted — ramipril: kabs 1.8 h⁻¹, CL 194 L h⁻¹, V1 52.3 L, V2 442 L, Q 74.6 L⁻¹; ramiprilat: CL 11.4 L h⁻¹, V 91 L, CLm/F 0.00988.
+The record lists Q as 74.6 with the unit L⁻¹, which is a dimension of reciprocal volume, not the clearance dimension of volume per time. This structural parameter error renders the model's connection between the central and peripheral compartments dimensionally invalid. Additionally, the covariate effect on ramiprilat clearance is labeled ambiguously as a 'b Effect of MDRD4 on CLm' rather than a clear physiological relationship. Extracted — ramipril: kabs 1.8 h⁻¹, CL 194 L h⁻¹, V1 52.3 L, V2 442 L, Q 74.6 L⁻¹; ramiprilat: CL 11.4 L h⁻¹, V 91 L, CLm/F 0.00988.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ramipril, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

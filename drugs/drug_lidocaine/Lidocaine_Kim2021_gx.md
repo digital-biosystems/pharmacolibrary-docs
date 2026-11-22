@@ -4,11 +4,11 @@
 
 # lidocaine — `Lidocaine_Kim2021_gx`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 14:38 UTC (Rejected), but the paper was screened again on 2026-10-06 03:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks distribution volume and clearance, and reports an unrealistic t1/2z of 61.78 h for lidocaine in rats.
+> Lidocaine's metabolite monoethylglycylxylidide is an orphan with no elimination path, and its half-life unit prevented standard conversion.
 
-<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_gx" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_gx" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Metabolite Pharmacokinetics in Hyaluronic Acid Injection. Pharmaceutics 13(2) (2021).
@@ -40,7 +40,7 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance, and reports an unrealistic t1/2z of 61.78 h for lidocaine in rats.**
+**Lidocaine's metabolite monoethylglycylxylidide is an orphan with no elimination path, and its half-life unit prevented standard conversion.**
 
-The model is rejected because it lacks the distribution volume and clearance or elimination rate necessary for a compartmental population PK model. Furthermore, the reported terminal half-life of 61.78 hours is inconsistent with the expected pharmacokinetics of lidocaine in male Sprague-Dawley rats. The metabolite glycylxylidide is also identified as an orphan compartment with no path from the dose. Extracted — lidocaine: t1/2z 61.8 h, Cmax 0.33 ng/mL, tmax 1.79e+03 h.
+The model structure defines monoethylglycylxylidide as a metabolite of lidocaine that forms glycylxylidide, but it lacks a direct elimination route. Additionally, the terminal half-life of 61.78 h uses a unit that could not be converted to standard SI units. These issues resulted in the record being rejected. Extracted — lidocaine: t1/2z 61.8 h, Cmax 0.33 ng/mL, tmax 1.79e+03 h.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;van_2020 \u00b7 8_to_10_years&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Choi2020_reference&quot;,&quot;label&quot;:&quot;Choi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Choi2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Hong2021_mb1_estimates&quot;,&quot;label&quot;:&quot;Hong_2021_mb1_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Hong2021_mb1_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Hong2021_mb2_estimates&quot;,&quot;label&quot;:&quot;Hong_2021_mb2_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Hong2021_mb2_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_drug_amlodipine&quot;,&quot;label&quot;:&quot;Karalis_2023_drug_amlodipine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_drug_amlodipine.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Rohatagi2008_population_mean_se&quot;,&quot;label&quot;:&quot;Rohatagi_2008_population_mean_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Rohatagi2008_population_mean_se.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zuo2014_reference&quot;,&quot;label&quot;:&quot;Zuo_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zuo2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_1_to_3_years&quot;,&quot;label&quot;:&quot;van_2020_1_to_3_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_1_to_3_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_8_to_10_years&quot;,&quot;label&quot;:&quot;van_2020_8_to_10_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_8_to_10_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_van2020_point_estimate&quot;,&quot;label&quot;:&quot;van_2020_point_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_point_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_total&quot;,&quot;label&quot;:&quot;van_2020_total&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_total.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Heo_2016_DBP&quot;,&quot;label&quot;:&quot;Heo_2016 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Heo_2016_DBP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Heo_2016_SBP&quot;,&quot;label&quot;:&quot;Heo_2016 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Heo_2016_SBP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Darvari_2004_Jnet&quot;,&quot;label&quot;:&quot;Darvari_2004 \u00b7 Jnet&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Darvari_2004_Jnet.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Donnelly_1993_SBP&quot;,&quot;label&quot;:&quot;Donnelly_1993 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Donnelly_1993_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rohatagi_2008_SeDBP&quot;,&quot;label&quot;:&quot;Rohatagi_2008 \u00b7 \u0394SeDBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Rohatagi_2008_SeDBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tan_2025_total_worm_burden&quot;,&quot;label&quot;:&quot;Tan_2025 \u00b7 total worm burden&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Tan_2025_total_worm_burden.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Choi2020_reference&quot;,&quot;label&quot;:&quot;Choi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Choi2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_drug&quot;,&quot;label&quot;:&quot;Vlachou_2021_drug&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_drug.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zuo2014_reference&quot;,&quot;label&quot;:&quot;Zuo_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zuo2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_point_estimate&quot;,&quot;label&quot;:&quot;van_2020_point_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_point_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Hong2021_mb1_estimates&quot;,&quot;label&quot;:&quot;Hong_2021_mb1_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Hong2021_mb1_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Hong2021_mb2_estimates&quot;,&quot;label&quot;:&quot;Hong_2021_mb2_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Hong2021_mb2_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Park2019_reference&quot;,&quot;label&quot;:&quot;Park_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Park2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Rohatagi2008_population_mean_se&quot;,&quot;label&quot;:&quot;Rohatagi_2008_population_mean_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Rohatagi2008_population_mean_se.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_1_to_3_years&quot;,&quot;label&quot;:&quot;van_2020_1_to_3_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_1_to_3_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_8_to_10_years&quot;,&quot;label&quot;:&quot;van_2020_8_to_10_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_8_to_10_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_van2020_total&quot;,&quot;label&quot;:&quot;van_2020_total&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_total.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_drug_amlodipine&quot;,&quot;label&quot;:&quot;Karalis_2023_drug_amlodipine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_drug_amlodipine.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Heo_2016_DBP&quot;,&quot;label&quot;:&quot;Heo_2016 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Heo_2016_DBP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Heo_2016_SBP&quot;,&quot;label&quot;:&quot;Heo_2016 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Heo_2016_SBP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Darvari_2004_Jnet&quot;,&quot;label&quot;:&quot;Darvari_2004 \u00b7 Jnet&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Darvari_2004_Jnet.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rohatagi_2008_SeDBP&quot;,&quot;label&quot;:&quot;Rohatagi_2008 \u00b7 \u0394SeDBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Rohatagi_2008_SeDBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Amlodipine inter-compartmental rate constants were left at library placeholders instead of using paper-reported values.
+> Inter-compartmental rate constants k12 and k21 for amlodipine were set to library defaults rather than values reported in the paper.
 
-<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_van2020_8_to_10_years" status="needs_review" stale="false" population="children with hypertension" measured-compound="amlodipine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_van2020_8_to_10_years" status="needs_review" stale="false" population="hypertensive children" measured-compound="amlodipine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 van der Vossen AC, Cransberg K, de Winter BCM, Schreuder MF, van Rooij-Kouwenhoven RWG, Vulto AG et al. Use of amlodipine oral solution for the treatment of hypertension in children. International journal of clinical pharmacy 42(3):848–852 (2020).
@@ -17,7 +17,7 @@ van der Vossen AC, Cransberg K, de Winter BCM, Schreuder MF, van Rooij-Kouwenhov
 
 ## Population and dosing
 
-**Population:** children with hypertension · condition hypertension · age group child · n = &gt;= 0.
+**Population:** hypertensive children · condition hypertension · age group child · n = 9.
 
 **Dosing:** 10.5 mg, oral, multiple, every 24 h.
 
@@ -40,12 +40,12 @@ van der Vossen AC, Cransberg K, de Winter BCM, Schreuder MF, van Rooij-Kouwenhov
 | Vd, L | V | 405 | L |
 | Vd_WT, L/kg | V/F | 14.8 | L/kg |
 | Elimination half-life, h | t1/2z | 37.8 | h |
-| Ka (h-1) | kabs | 1.46 | h-1 |
+| ka (h−1) | kabs | 0.69 | h−1 |
 | ALAG (h) | tlag | 0.87 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ van der Vossen AC, Cransberg K, de Winter BCM, Schreuder MF, van Rooij-Kouwenhov
 
 ### Reviewer guidance
 
-**Amlodipine inter-compartmental rate constants were left at library placeholders instead of using paper-reported values.**
+**Inter-compartmental rate constants k12 and k21 for amlodipine were set to library defaults rather than values reported in the paper.**
 
-The record includes apparent clearance and volume parameters but omits explicit estimates for the rate constants linking the central and peripheral compartments. Because these structural parameters were defaulted, the two-compartment model's simulated profile is not fully supported by the data in the paper. A second reader also disagreed with the apparent parameterization classification and the weight-adjusted parameter values. Extracted — amlodipine: CL 10.8 L/h, CL/F 0.42 L/h/kg, V 405 L, V/F 14.8 L/kg, t1/2z 37.8 h, kabs 1.46 h-1, tlag 0.87 h.
+The model builder substituted default values for k12 and k21 because these parameters were not reported in the source study. The established cause confirms these inter-compartmental rates are unsupported by the paper's data. Additionally, the record assumes an apparent parameterization with unit bioavailability, despite the paper reporting weight-normalized clearance and volume. Extracted — amlodipine: CL 10.8 L/h, CL/F 0.42 L/h/kg, V 405 L, V/F 14.8 L/kg, t1/2z 37.8 h, kabs 0.69 h−1, tlag 0.87 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -71,8 +71,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 | CL_WT, L/h/kg | `Q27` · CL/F | 0.42 | L/h/kg | 8.167e-06 | m3/s | l/(h·kg) | llm (0.6) | tab_1:row2:col2 |
 | Vd, L | `Q61` · V | 405 | L | 0.405 | m3 | l | exact (1) | tab_1:row3:col2 |
 | Vd_WT, L/kg | `Q76` · V/F | 14.8 | L/kg | 1.036 | m3 | l/kg | llm (0.6) | tab_1:row4:col2 |
-| Elimination half-life, h | `Q57` · t1/2z | 37.8 | h | 1.361e+05 | s | h | llm (0.6) | tab_1:row5:col2 |
-| Ka (h-1) | `Q49` · kabs | 1.46 | h-1 | 0.0004056 | 1/s | 1/h | review_gapfill (0.7) | Chen_2024:review |
+| Elimination half-life, h | `Q57` · t1/2z | 37.8 | h | 1.361e+05 | s | h | half_life_rule (0.95) | tab_1:row5:col2 |
+| ka (h−1) | `Q49` · kabs | 0.69 | h−1 | 0.0001917 | 1/s | 1/h | review_gapfill (0.7) | Courlet_2021:review |
 | ALAG (h) | `Q83` · tlag | 0.87 | h | 3132 | s | h | review_gapfill (0.7) | Courlet_2021:review |
 
 <details class="legend">
@@ -90,7 +90,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amlodipine
 - structure disagreement: deterministic 2C vs LLM 1C — review compartment count
 - population split: '8 to &lt; 10 years (n = 4)' subgroup of van_2020 (paper reports 4 populations: 1 to &lt; 3 years (n = 5), 8 to &lt; 10 years (n = 4), point estimate, total (n = 9))
-- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Courlet_2021's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Courlet_2021's review values (primary lacked it)
 
 **Extraction notes:**
@@ -108,7 +108,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
@@ -116,7 +116,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[cl_wt]` | 0.42 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd_wt]` | 14.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd_wt].parameter_id` | Q76 | Q352 | mismatch |
 
 </details>
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row1:col2'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_1:row2:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Courlet_2021:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['tab_1:row5:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_1:row3:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_1:row4:col2'] |
@@ -157,7 +157,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable | pass | C_central (measured=amlodipine) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=apparent_assumption: not acceptable; deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -198,7 +199,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminMass` | 1.05e-05 | kg |
 | input | model | `Cl` | 3e-06 | m3/s |
 | input | model | `VdPerKg` | 0.005786 | m3/kg |
-| input | model | `ka` | 0.0004056 | 1/s |
+| input | model | `ka` | 0.0001917 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -227,7 +228,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10.5 mg, single dose, first-order absorption (ka 1.46 /h, lag 52.2 min, F 1). Dose in the paper: 10.5 mg.
+**Administration: oral** — 10.5 mg, single dose, first-order absorption (ka 0.69 /h, lag 52.2 min, F 1). Dose in the paper: 10.5 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_amlodipine/Amlodipine_van2020_8_to_10_years/Amlodipine_van2020_8_to_10_years_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_amlodipine/Amlodipine_van2020_8_to_10_years/Amlodipine_van2020_8_to_10_years_sim_controls.json"></dbs-fmusim>
 
@@ -237,4 +238,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamlodipine%5D%20Amlodipine_van2020_8_to_10_years&body=Drug%3A%20amlodipine%0ARecord%3A%20Amlodipine_van2020_8_to_10_years%0APaper%3A%20van_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amlodipine/Amlodipine_van2020_8_to_10_years%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 10:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:51 UTC</sub>

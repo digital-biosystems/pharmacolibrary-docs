@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;venetoclax&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/&quot;},{&quot;label&quot;:&quot;Zhao_2024 \u00b7 minocha_201817&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Venetoclax_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_deng_201915&quot;,&quot;label&quot;:&quot;Zhao_2024_deng_201915&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_deng_201915.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_gong_202316&quot;,&quot;label&quot;:&quot;Zhao_2024_gong_202316&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_gong_202316.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_jones_201611&quot;,&quot;label&quot;:&quot;Zhao_2024_jones_201611&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_jones_201611.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_minocha_201817&quot;,&quot;label&quot;:&quot;Zhao_2024_minocha_201817&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_minocha_201817.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_samineni_2022a18&quot;,&quot;label&quot;:&quot;Zhao_2024_samineni_2022a18&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022a18.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_samineni_2022b19&quot;,&quot;label&quot;:&quot;Zhao_2024_samineni_2022b19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dave_2019_B_lymphocytes&quot;,&quot;label&quot;:&quot;Dave_2019 \u00b7 B-lymphocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/pd_Dave_2019_B_lymphocytes.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Venetoclax_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_minocha_201817&quot;,&quot;label&quot;:&quot;Zhao_2024_minocha_201817&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_minocha_201817.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_deng_201915&quot;,&quot;label&quot;:&quot;Zhao_2024_deng_201915&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_deng_201915.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_gong_202316&quot;,&quot;label&quot;:&quot;Zhao_2024_gong_202316&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_gong_202316.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_jones_201611&quot;,&quot;label&quot;:&quot;Zhao_2024_jones_201611&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_jones_201611.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_samineni_2022a18&quot;,&quot;label&quot;:&quot;Zhao_2024_samineni_2022a18&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022a18.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_samineni_2022b19&quot;,&quot;label&quot;:&quot;Zhao_2024_samineni_2022b19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dave_2019_B_lymphocytes&quot;,&quot;label&quot;:&quot;Dave_2019 \u00b7 B-lymphocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/pd_Dave_2019_B_lymphocytes.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # venetoclax — `Venetoclax_Zhao2024_minocha_201817`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Record refused because venetoclax absorption lag time was defaulted to zero and apparent bioavailability was assumed to be one.
-
-<div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Zhao2024_minocha_201817" status="needs_review" stale="false" population="adults with hematologic malignancies" measured-compound="venetoclax" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Zhao2024_minocha_201817" status="simulated" stale="false" population="adults with hematologic malignancies" measured-compound="venetoclax" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Zhao Y, Guo N, Zhu Y, Shang J, Chen J, Luo X et al. Population Pharmacokinetic Models of Venetoclax in Hematologic Malignancies: A Systematic Review. Drug design, development and therapy 18:1771–1784 (2024).
@@ -31,8 +29,6 @@ Zhao Y, Guo N, Zhu Y, Shang J, Chen J, Luo X et al. Population Pharmacokinetic M
 <figure class="pk-models-diagram"><img src="drugs/drug_venetoclax/Venetoclax_Zhao2024_minocha_201817/Venetoclax_Zhao2024_minocha_201817.svg" alt="Venetoclax_Zhao2024_minocha_201817 diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/Day) | CL/F | 391.2 | L/Day |
@@ -43,7 +39,7 @@ Zhao Y, Guo N, Zhu Y, Shang J, Chen J, Luo X et al. Population Pharmacokinetic M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +49,11 @@ Zhao Y, Guo N, Zhu Y, Shang J, Chen J, Luo X et al. Population Pharmacokinetic M
 
 ### Reviewer guidance
 
-**Record refused because venetoclax absorption lag time was defaulted to zero and apparent bioavailability was assumed to be one.**
-
-The record lists an apparent volume of distribution of 181.0 L and an absorption rate constant of 0.16 /h, but the absorption lag time parameter is missing and was replaced by a standard default. Additionally, the model assumes a bioavailability of 1, meaning the clearance and volume parameters are not corrected for oral absorption efficiency. Extracted — venetoclax: CL/F 391 L/Day, Q/F 88.8 L/ Day, V3/F 122 L, V/F 181 L, kabs 0.16 /h.
+**Every check that could be run on this record passed.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution: this record has 181.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -141,15 +135,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=venetoclax) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=venetoclax) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

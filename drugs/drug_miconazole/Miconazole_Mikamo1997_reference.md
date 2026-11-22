@@ -4,11 +4,11 @@
 
 # miconazole — `Miconazole_Mikamo1997_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-04 02:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="miconazole" model-id="Miconazole_Mikamo1997_reference" status="needs_review" stale="true" population="patients after radical hysterectomy and pelvic lymphadenectomy" measured-compound="miconazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="miconazole" model-id="Miconazole_Mikamo1997_reference" status="needs_review" stale="false" population="patients after radical hysterectomy and pelvic lymphadenectomy" measured-compound="miconazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mikamo H, Kawazoe K, Sato Y, Ito K, Tamaya T. Pharmacokinetics of miconazole in serum and exudate of pelvic retroperitoneal space after radical hysterectomy and pelvic lymphadenectomy. International journal of antimicrobial agents 9(3):207–211 (1997).
@@ -36,7 +36,7 @@ Mikamo H, Kawazoe K, Sato Y, Ito K, Tamaya T. Pharmacokinetics of miconazole in 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Mikamo H, Kawazoe K, Sato Y, Ito K, Tamaya T. Pharmacokinetics of miconazole in 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; aUC has no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — miconazole: Cmax 6.26 mg/l, t1/2z 8.86 h, AUC 19.1 mg/h per l.
 
 Independently confirmed by `gpt-oss-120b`.
 

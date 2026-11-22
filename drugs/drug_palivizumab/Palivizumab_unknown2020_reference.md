@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;palivizumab&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/&quot;},{&quot;label&quot;:&quot;unknown_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # palivizumab — `Palivizumab_unknown2020_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_unknown2020_reference" status="not_modelled" stale="false" population="" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></div>
+> Palivizumab clearance of 12.5 L/h was recorded from a paper about another drug.
+
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_unknown2020_reference" status="rejected" stale="false" population="" measured-compound="palivizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Selected Abstracts from Pharmacology 2019. British journal of clinical pharmacology 86(6):1180-1228 (2020).
@@ -19,24 +21,25 @@ Selected Abstracts from Pharmacology 2019. British journal of clinical pharmacol
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference.svg" alt="Palivizumab_unknown2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | Mean clearance | CL | 12.5 | L/h |
 | Volume of distribution | V | 65.8 | L |
+| flow rate | Q | 350.0 | μL/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +49,13 @@ Selected Abstracts from Pharmacology 2019. British journal of clinical pharmacol
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Palivizumab clearance of 12.5 L/h was recorded from a paper about another drug.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has 40, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+The source paper does not name palivizumab, so the parameters are not valid for this molecule. The intercompartmental clearance was set to 350.0 µL/min using a default value rather than an explicit estimate. A second reader disagreed on the clearance value and the intercompartmental flow rate. Extracted — palivizumab: CL 12.5 L/h, V 65.8 L, Q 350 μL/min.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 457.03; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -58,6 +63,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 |---|---|---|---|---|---|---|---|---|
 | Mean clearance | `Q22` · CL | 12.5 | L/h | 3.472e-06 | m3/s | L/h | review (0.7) | unknown_2020:review |
 | Volume of distribution | `Q61` · V | 65.8 | L | 0.0658 | m3 | L | review (0.7) | unknown_2020:review |
+| flow rate | `Q30` · Q | 350.0 | μL/min | 5.833e-09 | m3/s | L/h | review (0.7) | unknown_2020:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -66,26 +72,37 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['k21']
+
 **Interpretation flags:**
 - built from REVIEW reference values (unknown_2020) — secondary source
 - volume reported by review
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.267 (4/15 fields) | 11 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss-120b` | `values[Q17]` |  | 457.03 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` |  | 417.93 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q21]` |  | 1.02 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` | 350 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q320]` | 40 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q321]` | 1.78 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q322]` | 11.75 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | 4.61 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q322]` | 1.78 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | 1.04 | 1.06 | mismatch |
+| `gpt-oss-120b` | `values[Q61]` | 65.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 417.93 |  | only_one_extracted |
 
 </details>
 
@@ -99,10 +116,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['unknown_2020:review'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['unknown_2020:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['unknown_2020:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.5 | ['unknown_2020:review'] |
 | C8_topology | pass |  |  |  |
@@ -111,12 +129,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | note |
-|---|---|---|
-| T0_analyte_identity | pass | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped | no covariate effects in record |
-| T3_param_coverage | skipped | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | palivizumab (or metabolite) | paper about another drug |  | paper subject is not palivizumab: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=palivizumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.267, 0 of 1 reader(s) agree | 0.267 | cross-check disputed by a second reader: verdict disputed, agreement 0.267, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -128,69 +149,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_modelica.zip" download>Palivizumab_unknown2020_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_fmi.zip" download>Palivizumab_unknown2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_matlab.zip" download>Palivizumab_unknown2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_matlab_simbio.zip" download>Palivizumab_unknown2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_sbml.zip" download>Palivizumab_unknown2020_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_cellml.zip" download>Palivizumab_unknown2020_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 3.472e-06 | m3/s |
-| input | model | `VdPerKg` | 0.00094 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Selected Abstracts from Pharmacology 2019. British journal of clinical pharmacology 86(6):1180-1228 (2020). [doi:10.1111/bcp.14266](https://doi.org/10.1111/bcp.14266)
-
-**This record:** Pharmacolibrary, model `Palivizumab_unknown2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_palivizumab/Palivizumab_unknown2020_reference>
-
-```bibtex
-@misc{pharmacolibrary_Palivizumabunknown2020reference,
-  title  = {{Pharmacolibrary model Palivizumab_unknown2020_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_palivizumab/Palivizumab_unknown2020_reference},
-  note   = {Parameters from doi:10.1111/bcp.14266},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 **Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_palivizumab/Palivizumab_unknown2020_reference/Palivizumab_unknown2020_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Palivizumab_unknown2020_reference_params.json` · controls `Palivizumab_unknown2020_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `Palivizumab_unknown2020_reference_params.json` · controls `Palivizumab_unknown2020_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20Palivizumab_unknown2020_reference&body=Drug%3A%20palivizumab%0ARecord%3A%20Palivizumab_unknown2020_reference%0APaper%3A%20unknown_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/Palivizumab_unknown2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 06:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:54 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;prednisone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/&quot;},{&quot;label&quot;:&quot;Magee_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Prednisolone parameters are abstract-only summary statistics with an unacceptable apparent assumption, refusing the record.
+> Prednisolone apparent clearance (13.5 L/h) was incorrectly bound to the model structure, and abstract-only statistics were disputed by a second reader.
 
 <div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_Magee2002_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Magee MH, Blum RA, Lates CD, Jusko WJ. Pharmacokinetic/pharmacodynamic model for
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=32.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 18.9 mg, oral, single.
 
@@ -56,9 +56,9 @@ Magee MH, Blum RA, Lates CD, Jusko WJ. Pharmacokinetic/pharmacodynamic model for
 
 ### Reviewer guidance
 
-**Prednisolone parameters are abstract-only summary statistics with an unacceptable apparent assumption, refusing the record.**
+**Prednisolone apparent clearance (13.5 L/h) was incorrectly bound to the model structure, and abstract-only statistics were disputed by a second reader.**
 
-The record is abstract-only, so the values like the apparent clearance of 13.5 L/h and AUC of 1638 ng·h/mL are not from a fitted model. The builder assumed F=1 and Fm=1 without molar correction, which the review flagged as an unacceptable apparent assumption. This deviation caused the record to be held back for further review. Extracted — prednisolone: kabs 5.62 1/h, tlag 0.283 h, V/F 44.8 l, CLm/F 13.5 L/h, t1/2z 2.33 h, AUC 1.64e+03 ng·h/mL.
+The apparent clearance value did not align with the model's required calculations. The record uses summary statistics from the abstract rather than fitted parameters. A second reader disputed the primary analyte and could not confirm the absorption rate constant of 5.62 1/h. Extracted — prednisolone: kabs 5.62 1/h, tlag 0.283 h, V/F 44.8 l, CLm/F 13.5 L/h, t1/2z 2.33 h, AUC 1.64e+03 ng·h/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -107,6 +107,7 @@ c
 - row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 48 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'prednisolone', not prednisone — the review values are the parent's
+- derived CL/F=13.3275 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from cached Magee_2002_extracted.txt (64 record(s)); values are summary statistics, not a fitted model
@@ -166,15 +167,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=prednisolone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | fail | 1 deterministic parameter derivation(s) emitted | not correctly bound: ['CL/F'] |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=prednisolone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

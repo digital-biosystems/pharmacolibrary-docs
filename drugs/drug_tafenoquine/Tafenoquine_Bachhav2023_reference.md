@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;tafenoquine&quot;,&quot;href&quot;:&quot;drugs/drug_tafenoquine/&quot;},{&quot;label&quot;:&quot;Bachhav_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tafenoquine_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tafenoquine/Tafenoquine_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tafenoquine_Watson2022_reference&quot;,&quot;label&quot;:&quot;Watson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tafenoquine_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tafenoquine/Tafenoquine_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tafenoquine — `Tafenoquine_Bachhav2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:34 UTC (Rejected), but the paper was screened again on 2026-10-07 08:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tafenoquine clearance of 3.4 L/h was rejected due to a dimension mismatch error in the one-compartment structural model.
+> The AUC parameter was rejected for a unit mismatch, and the model is an abstract-only approximation.
 
-<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Bachhav2023_reference" status="rejected" stale="true" population="paediatric patients with P. vivax malaria" measured-compound="tafenoquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Bachhav2023_reference" status="rejected" stale="false" population="paediatric patients with P. vivax malaria" measured-compound="tafenoquine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bachhav SS, Taylor M, Martin A, Green JA, Duparc S, Rolfe K et al. A pharmacometrics approach to assess the feasibility of capillary microsampling to replace venous sampling in clinical studies: Tafenoquine case study. British journal of clinical pharmacology 89(3):1187–1197 (2023).
@@ -39,7 +39,7 @@ Bachhav SS, Taylor M, Martin A, Green JA, Duparc S, Rolfe K et al. A pharmacomet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Bachhav SS, Taylor M, Martin A, Green JA, Duparc S, Rolfe K et al. A pharmacomet
 
 ### Reviewer guidance
 
-**Tafenoquine clearance of 3.4 L/h was rejected due to a dimension mismatch error in the one-compartment structural model.**
+**The AUC parameter was rejected for a unit mismatch, and the model is an abstract-only approximation.**
 
-The record relies on abstract-only summary statistics, such as an AUC infinity of 100.7%, to represent the fitted model. A dimensional consistency check failed for the structural clearance parameter. A second reader disagreed with the extraction of all parameter values, including the clearance and lag time. Extracted — tafenoquine: CL 3.4 L/h, AUC∞ 101 %, Cmax_ratio 79.7 %, tlag 0.147 h.
+The record lists the area under the concentration-time curve with a unit of percent, which conflicts with the required mass-volume-time dimensions. Consequently, the model was built from the paper's abstract rather than a fitted dataset, meaning the reported summary statistics stand in for actual parameter estimates. Extracted — tafenoquine: CL 3.4 L/h, AUC∞ 101 %, Cmax_ratio 79.7 %, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tafenoquine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

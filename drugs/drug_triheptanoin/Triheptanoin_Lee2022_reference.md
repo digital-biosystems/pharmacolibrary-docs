@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Heptanoate apparent clearance (1.07 L/h) and volume (5.56 L) rely on an unacceptable assumption of unity for bioavailability and metabolite formation fraction.
+> The record for triheptanoin is held back because a second reader disputed the verdict, disagreeing on the apparent parameterization and the absence of a maximum dose value.
 
 <div class="pk-model-meta" hidden drug="triheptanoin" model-id="Triheptanoin_Lee2022_reference" status="needs_review" stale="false" population="healthy adults and patients with long-chain fatty acid oxidation disorders" measured-compound="heptanoate" parameterization="apparent" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Lee SK, Gosselin NH, Jomphe C, McKeever K, Putnam W. Population Pharmacokinetics
 
 ### Reviewer guidance
 
-**Heptanoate apparent clearance (1.07 L/h) and volume (5.56 L) rely on an unacceptable assumption of unity for bioavailability and metabolite formation fraction.**
+**The record for triheptanoin is held back because a second reader disputed the verdict, disagreeing on the apparent parameterization and the absence of a maximum dose value.**
 
-The record lists absolute bioavailability as 0.562 for heptanoate, yet the model parameterization assumes both bioavailability and metabolite formation fraction are unity. This deviation renders the reported clearance and volume apparent values rather than true pharmacokinetic parameters. A second reviewer also disagreed on whether the model is mechanistic or apparent, and identified the dose compound as triheptanoin rather than trihexanoin. Extracted — heptanoate: Fab 0.562, kabs 0.425 h−1, tlag 3.74 h, CLm/F 1.07 L/h, V 5.56 L.
+The model describes heptanoate using apparent clearance and volume parameters, while the second reader argued for a mechanistic interpretation. Additionally, the reviewer noted that the record is missing a maximum dose value, whereas a second maximum dose value of 0.450 was identified. The cross-check failed to reach agreement, with the second reader disputing the classification of the dose compound and the specific parameter identifications. Extracted — heptanoate: Fab 0.562, kabs 0.425 h−1, tlag 3.74 h, CLm/F 1.07 L/h, V 5.56 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trihexanoin, the second reading triheptanoin; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -154,15 +154,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=heptanoate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=heptanoate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

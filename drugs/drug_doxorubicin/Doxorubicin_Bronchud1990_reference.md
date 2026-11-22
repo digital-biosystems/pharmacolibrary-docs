@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Bronchud_1990 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Frenay1989_reference&quot;,&quot;label&quot;:&quot;Frenay_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Joerger2007_reference&quot;,&quot;label&quot;:&quot;Joerger_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Joerger2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kontny2013_reference&quot;,&quot;label&quot;:&quot;Kontny_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kontny2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kunarajah2017_reference&quot;,&quot;label&quot;:&quot;Kunarajah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kunarajah2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Liang2016_reference&quot;,&quot;label&quot;:&quot;Liang_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Liang2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_w&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 w&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Choi_2021_w.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Andrean_2025_N_t&quot;,&quot;label&quot;:&quot;Andrean_2025 \u00b7 N(t)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Andrean_2025_N_t.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Luo2019_reference&quot;,&quot;label&quot;:&quot;Luo_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Luo2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Qiu2017_reference&quot;,&quot;label&quot;:&quot;Qiu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Qiu2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Yoshida1994_non_hd_group&quot;,&quot;label&quot;:&quot;Yoshida_1994_non_hd_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Yoshida1994_non_hd_group.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_Bronchud1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:26 UTC (Rejected), but the paper was screened again on 2026-11-03 15:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the doxorubicinol AUC of 2.14 µMhL⁻¹ uses a non-standard unit, preventing standardization and causing a dimension mismatch.
+> Doxorubicin AUC parameter was mislabeled as doxorubicinol and Cmax dimension was mismatched, causing rejection.
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bronchud1990_reference" status="rejected" stale="true" population="patients with metastatic breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bronchud1990_reference" status="rejected" stale="false" population="patients with metastatic breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bronchud MH, Margison JM, Howell A, Lind M, Lucas SB, Wilkinson PM. Comparative pharmacokinetics of escalating doses of doxorubicin in patients with metastatic breast cancer. Cancer chemotherapy and pharmacology 25(6):435–439 (1990).
@@ -17,7 +17,7 @@ Bronchud MH, Margison JM, Howell A, Lind M, Lucas SB, Wilkinson PM. Comparative 
 
 ## Population and dosing
 
-**Population:** patients with metastatic breast cancer · condition metastatic breast cancer · age group adult · n = &gt;=0.
+**Population:** patients with metastatic breast cancer · condition metastatic breast cancer · age group adult.
 
 **Dosing:** 75, 100, 125, 150 mg/m 2, iv, multiple, every 144 h.
 
@@ -38,11 +38,11 @@ Bronchud MH, Margison JM, Howell A, Lind M, Lucas SB, Wilkinson PM. Comparative 
 | Clearance (ml/min) | CL | 1173 | ml/min |
 | Doxorubicin AUC (µMhL⁻¹) | AUC∞ | 3.06 | µMhL⁻¹ |
 | Doxorubicinol AUC (µMhL⁻¹) | AUC | 2.14 | µMhL⁻¹ |
-| Volume of distribution (L/kg) | V | 4.05 | L/kg |
+| V c [l] (%CV) | V | 0.0764 | l |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Bronchud MH, Margison JM, Howell A, Lind M, Lucas SB, Wilkinson PM. Comparative 
 
 ### Reviewer guidance
 
-**The record was rejected because the doxorubicinol AUC of 2.14 µMhL⁻¹ uses a non-standard unit, preventing standardization and causing a dimension mismatch.**
+**Doxorubicin AUC parameter was mislabeled as doxorubicinol and Cmax dimension was mismatched, causing rejection.**
 
-The reported unit µMhL⁻¹ for doxorubicinol AUC could not be interpreted as a valid standard metric, leaving the parameter without a defined SI value. This inability to standardize the area under the curve resulted in a structural dimension mismatch for the record. A second reader also disagreed on the specific identification code assigned to the doxorubicin AUC parameter. Extracted — doxorubicin: Cmax 3.5 µM, t1/2z 30.7 hours, CL 1.17e+03 ml/min, AUC∞ 3.06 µMhL⁻¹, AUC 2.14 µMhL⁻¹, V 4.05 L/kg.
+The AUC parameter for doxorubicinol (2.14 µMhL⁻¹) was incorrectly attributed to doxorubicin in the record. The Cmax parameter (3.5 µM) had a unit dimension conflict during validation. A second reader disagreed on the AUC assignment and noted the doxorubicinol AUC was missing. Extracted — doxorubicin: Cmax 3.5 µM, t1/2z 30.7 hours, CL 1.17e+03 ml/min, AUC∞ 3.06 µMhL⁻¹, AUC 2.14 µMhL⁻¹, V 0.0764 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[doxorubicin auc].parameter_id`: this record has Q17, the second reading Q88; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -69,7 +69,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 | Clearance (ml/min) | `Q22` · CL | 1173 | ml/min | 1.955e-05 | m3/s | ml/min | exact (1) | Bronchud_1990_table_1:row0:col4, Bronchud_1990_table_1:row1:col4, Bronchud_1990_table_1:row2:col4, Bronchud_1990_table_1:row3:col4 |
 | Doxorubicin AUC (µMhL⁻¹) | `Q17` · AUC∞ | 3.06 | µMhL⁻¹ |  |  | 1/(h·l·µM) | llm_corrected (0.6) | Bronchud_1990_table_1:row0:col5, Bronchud_1990_table_1:row1:col5, Bronchud_1990_table_1:row2:col5, Bronchud_1990_table_1:row3:col5 |
 | Doxorubicinol AUC (µMhL⁻¹) | `Q88` · AUC | 2.14 | µMhL⁻¹ |  |  | 1/(h·l·µM) | llm_confirmed (0.6) | Bronchud_1990_table_1:row0:col6, Bronchud_1990_table_1:row1:col6, Bronchud_1990_table_1:row2:col6, Bronchud_1990_table_1:row3:col6 |
-| Volume of distribution (L/kg) | `Q61` · V | 4.05 | L/kg | 0.2835 | m3 | L | review_gapfill (0.7) | Béguin_2024:review |
+| V c [l] (%CV) | `Q61` · V | 0.0764 | l | 7.64e-05 | m3 | L | review_gapfill (0.7) | Choi_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -88,7 +88,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- gap-filled Q61 (V) from Béguin_2024's review values (primary lacked it)
+- gap-filled Q61 (V) from Choi_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -131,13 +131,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bronchud_1990_table_1:row0:col4', 'Bronchud_1990_table_1:row1:col4', 'Bronchud_1990_table_1:row2:col4', 'Bronchud_1990_table_1:row3:col4'] |
 | C5_dimension_Q32 | fail | [mass] / [length] ** 3 | µM ([length]) | ['Bronchud_1990_table_1:row0:col2', 'Bronchud_1990_table_1:row1:col2', 'Bronchud_1990_table_1:row2:col2', 'Bronchud_1990_table_1:row3:col2'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bronchud_1990_table_1:row0:col3', 'Bronchud_1990_table_1:row1:col3', 'Bronchud_1990_table_1:row2:col3', 'Bronchud_1990_table_1:row3:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Béguin_2024:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Choi_2021:review'] |
 | C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | µMhL⁻¹ | ['Bronchud_1990_table_1:row0:col5', 'Bronchud_1990_table_1:row1:col5', 'Bronchud_1990_table_1:row2:col5', 'Bronchud_1990_table_1:row3:col5'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | µMhL⁻¹ | ['Bronchud_1990_table_1:row0:col6', 'Bronchud_1990_table_1:row1:col6', 'Bronchud_1990_table_1:row2:col6', 'Bronchud_1990_table_1:row3:col6'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1173 | ['Bronchud_1990_table_1:row0:col4', 'Bronchud_1990_table_1:row1:col4', 'Bronchud_1990_table_1:row2:col4', 'Bronchud_1990_table_1:row3:col4'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 70.4 L/h | ['Bronchud_1990_table_1:row0:col4', 'Bronchud_1990_table_1:row1:col4', 'Bronchud_1990_table_1:row2:col4', 'Bronchud_1990_table_1:row3:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 284 L | ['Béguin_2024:review'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.0764 L | ['Choi_2021:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -161,4 +161,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Bronchud1990_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Bronchud1990_reference%0APaper%3A%20Bronchud_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Bronchud1990_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 15:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:01 UTC</sub>

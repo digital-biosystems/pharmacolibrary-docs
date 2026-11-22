@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Lanreotide absorption parameters were missing from the abstract, forcing the model to use placeholder defaults for Ka.
+> Lanreotide’s absorption-rate constant (ka) had no reported value and was defaulted, so this abstract-only record was held back.
 
 <div class="pk-model-meta" hidden drug="lanreotide" model-id="Lanreotide_BuilBruna2016v2_reference" status="needs_review" stale="false" population="patients with gastroenteropancreatic neuroendocrine tumors" measured-compound="lanreotide" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Buil-Bruna N, Garrido MJ, Dehez M, Manon A, Nguyen TX, Gomez-Panzani EL et al. P
 
 ## Population and dosing
 
-**Population:** patients with gastroenteropancreatic neuroendocrine tumors · condition gastroenteropancreatic neuroendocrine tumors · age group adult · n = &gt;290&lt;.
+**Population:** patients with gastroenteropancreatic neuroendocrine tumors · condition gastroenteropancreatic neuroendocrine tumors · age group adult.
 
 ## Model
 
@@ -48,13 +48,13 @@ Buil-Bruna N, Garrido MJ, Dehez M, Manon A, Nguyen TX, Gomez-Panzani EL et al. P
 
 ### Reviewer guidance
 
-**Lanreotide absorption parameters were missing from the abstract, forcing the model to use placeholder defaults for Ka.**
+**Lanreotide’s absorption-rate constant (ka) had no reported value and was defaulted, so this abstract-only record was held back.**
 
-The source text was limited to the paper's abstract, which reported apparent volume of distribution and clearance but not absorption kinetics. Consequently, the absorption rate constant and lag time were left as unreported placeholders rather than using paper-specific estimates. These placeholders simulate an absorption profile that is not supported by the source data. Extracted — lanreotide: V/F 18.3 L, CL 513 L/day.
+Ka used a library default, not an estimate from this paper; this value affects the simulated profile but is unsupported by the paper. The lag time (Tlag) was also defaulted, and absorption was represented as first-order depot input with apparent bioavailability assumptions of F=1 and Fm=1. Only the abstract was read, so reported summary statistics stood in for a fitted model. Extracted — lanreotide: V/F 18.3 L, CL 513 L/day.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,15 +122,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=lanreotide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=lanreotide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

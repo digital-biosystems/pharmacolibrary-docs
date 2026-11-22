@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was quarantined because no values were extracted for gentamicin's clearance and volume of distribution, resulting in placeholder defaults.
+> Gentamicin clearance and volume-of-distribution estimates have no value (despite Vnorm 0.429 L/kg), so placeholder defaults led to quarantine.
 
 <div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_AlbanellFernndez2025_jensen_et_al_1992_61" status="model_quarantined" stale="false" population="neonates and infants with no previous pathologies" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Albanell-Fernández M, Rodríguez-Reyes M, Bastida C, Soy D. A Review of Vancomy
 
 ### Reviewer guidance
 
-**The model was quarantined because no values were extracted for gentamicin's clearance and volume of distribution, resulting in placeholder defaults.**
+**Gentamicin clearance and volume-of-distribution estimates have no value (despite Vnorm 0.429 L/kg), so placeholder defaults led to quarantine.**
 
-The record identifies gentamicin clearance and volume of distribution as having no extracted values, meaning the model relied on library placeholders instead of specific estimates. Although a normalized volume of distribution of 0.429 L/kg is listed, the primary central compartment volume and total clearance lacked explicit figures. Consequently, the model builder applied default parameters for these key covariates, leading to the quarantine status. The second reader also noted disagreements regarding the specific parameter identifiers for clearance, but both confirmed the missing value fields for the standard volume parameters. Extracted — gentamicin: Vnorm 0.429 L/kg.
+No value for gentamicin's clearance and volume of distribution. The model was built, but gentamicin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A second reader disputed the parameter identification and verdict; agreement was 0.636, with 0 of 1 readers agreeing. Extracted — gentamicin: Vnorm 0.429 L/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl equation].parameter_id`: this record has Q22, the second reading Q900; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -173,13 +173,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | cross-check disputed by a second reader: verdict disputed, agreement 0.636, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

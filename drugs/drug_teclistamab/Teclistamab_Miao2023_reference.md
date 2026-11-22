@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's time of the peak (tmax) (paper 139, model 366).
+> The teclistamab model was held back: its absorption-rate constant was 0.133 day−1, yet simulated peak time was 366 hours versus 139 hours in the paper.
 
 <div class="pk-model-meta" hidden drug="teclistamab" model-id="Teclistamab_Miao2023_reference" status="needs_review" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="teclistamab" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Miao X, Wu LS, Lin SXW, Xu Y, Chen Y, Iwaki Y et al. Population Pharmacokinetics
 
 ## Population and dosing
 
-**Population:** patients with relapsed/refractory multiple myeloma · condition relapsed/refractory multiple myeloma · age group adult · n = &gt;=338.
+**Population:** patients with relapsed/refractory multiple myeloma · condition relapsed/refractory multiple myeloma · age group adult.
 
 **Dosing:** 0.021, 0.7, 1.344, 1.4, 4.2, 5.6, 16.8, 50.4, 105, 140, 420, 2100, 10500, 21000 mg, iv, sc, multiple, every 168 h.
 
@@ -55,13 +55,13 @@ Miao X, Wu LS, Lin SXW, Xu Y, Chen Y, Iwaki Y et al. Population Pharmacokinetics
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's time of the peak (tmax) (paper 139, model 366).**
+**The teclistamab model was held back: its absorption-rate constant was 0.133 day−1, yet simulated peak time was 366 hours versus 139 hours in the paper.**
 
-Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — teclistamab: CL 0.449 L/day, CLb 0.547 L/day, V1 4.13 L, Q 0.039 L/day, V2 1.34 L, kabs 0.133 day–1, Fab 0.718.
+The model does not reproduce the paper's time of the peak (tmax) (paper 139, model 366). Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The model builder defaulted Tlag, the absorption lag time, rather than using an explicit estimate. A second reader disputed the record, with agreement 0.789 and no readers agreeing. Extracted — teclistamab: CL 0.449 L/day, CLb 0.547 L/day, V1 4.13 L, Q 0.039 L/day, V2 1.34 L, kabs 0.133 day–1, Fab 0.718.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has teclistamab, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -165,6 +165,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.789, 0 of 1 reader(s) agree | 0.789 | cross-check disputed by a second reader: verdict disputed, agreement 0.789, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 4.2 | 4.389e-07 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 15 | 4.389e-07 |  | unresolved concentration unit (exp 'days', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 41 | 4.389e-07 |  | unresolved concentration unit (exp 'days', sim 'kg/m3') |

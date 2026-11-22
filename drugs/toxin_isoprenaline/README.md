@@ -59,25 +59,6 @@ Isopropyl analog of epinephrine; beta-sympathomimetic that acts on the heart, br
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Madders_2025_cAMP_2](drugs/toxin_isoprenaline/pd_Madders_2025_cAMP_2.md) | intracellular cAMP ← PEG-Iso · direct Emax (saturable) effect | model (no simulator) | Madders GWP et al., Distinct functions of cardiac β-adrener…, eLife (2025) | [10.7554/elife.84243](https://doi.org/10.7554/elife.84243) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Marazziti_2009_AC](drugs/toxin_isoprenaline/pd_Marazziti_2009_AC.md) | Adenylate-cyclase (AC) activity ← Isoprenaline · direct Emax (saturable) effect | — | Marazziti D et al., Adenylate-cyclase activity in platelets…, Neuropsychiatric disease an… (2009) | [10.2147/ndt.s4956](https://doi.org/10.2147/ndt.s4956) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=isoprenaline).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
-| metabolism | brain | `COMT` substrate | DrugBank actor |
-| metabolism | kidney | `COMT` substrate | DrugBank actor |
-| metabolism | liver | `BCHE` inhibitor, `COMT` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` inducer/inhibitor, `CYP1B1` inducer | DrugBank actor |
-| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inducer/inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target), IL12B (modulator), SOD1 (stabilization).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -90,7 +71,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-15 03:04 | 53:59 | 2/2/0 | 3/4/0 | 0/0/0 | 1,088,773/69,062 | einfracz / qwen3.8-flash-next | 42 | 5/26 | 42/0 | 0 |
+| 2026-11-15 03:04 | 53:59 | 2/2/0 | 6/7/0 | 0/0/0 | 1,088,773/69,062 | einfracz / qwen3.8-flash-next | 42 | 5/26 | 42/0 | 0 |
 
 ## Coverage
 

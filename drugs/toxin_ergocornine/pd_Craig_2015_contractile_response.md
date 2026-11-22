@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ergocornine acts on bovine lateral saphenous vein contractile response via an Emax mechanism, with a reported EC50 of 4.0 × 10−5 ± 2.3 × 10−5 M and Emax of 57.2 ± 9.9%. The paper describes the physiological context of ergot alkaloids' vasoconstrictive ability but does not detail the specific molecular PD mechanism beyond the observation of contractile response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Craig_2015`
 - **model family:** `emax`
 - **driver:** `not_resolved`

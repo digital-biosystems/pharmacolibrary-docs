@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic model or provide potency or rate parameters for magnesium nitrate acting on cell viability. Magnesium nitrate is used solely as a chemical precursor for synthesizing mesoporous Whitlockite particles, which are then evaluated for cytocompatibility using an MTT assay on MG-63 cells.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Sharukh_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

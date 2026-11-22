@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Jiang_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Wang2025_reference&quot;,&quot;label&quot;:&quot;Wang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Kim2009_reference&quot;,&quot;label&quot;:&quot;Kim_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Kim2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Simon2015_reference&quot;,&quot;label&quot;:&quot;Simon_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Simon2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2026v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2026_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2026v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Danielak2017_reference&quot;,&quot;label&quot;:&quot;Danielak_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clopidogrel record rejected due to dimension mismatches in flow, formation clearance, and affinity units plus an unreachable metabolite.
+> Record rejected due to dimension mismatches in the maximum metabolism rate and Michaelis constant units.
 
-<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Jiang2016_reference" status="rejected" stale="false" population="healthy adults" measured-compound="clopidogrel" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Jiang2016_reference" status="rejected" stale="false" population="healthy adults" measured-compound="clopidogrel" parameterization="mechanistic" topology="manual_model_class"></div>
 
 ## Citation
 Jiang XL, Samant S, Lewis JP, Horenstein RB, Shuldiner AR, Yerges-Armstrong LM et al. Development of a physiology-directed population pharmacokinetic and pharmacodynamic model for characterizing the impact of genetic and demographic factors on clopidogrel response in healthy adults. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 82:64–78 (2016).
@@ -19,37 +19,34 @@ Jiang XL, Samant S, Lewis JP, Horenstein RB, Shuldiner AR, Yerges-Armstrong LM e
 
 **Population:** healthy adults · condition healthy · age group adult.
 
-**Dosing:** 75, 300 mg, oral, multiple, every 24 h.
+**Dosing:** 75, 150, 300 mg, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** nonlinear / manual; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 11 extracted, plus 1 covariate effect.  
+**Parameters:** 10 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% |
-|---|---|---|---|---|
-| QH (Harrison and Gibaldi, 1977) | QH | 50 | L/h | 0 |
-| VH (Harrison and Gibaldi, 1977) | VH | 1.5 | L | 0 |
-| Fa (Sanofi-Aventis, 2011) | Fab | 50 | % | 0 |
-| fu,p_CLOP (Sanofi-Aventis, 2011) | fu | 2 | % | 0 |
-| τ | t1/2z | 11.0 | 1/h | 6.6 |
-| V3 | V2 | 82.2 | L | 17.3 |
-| TVVmax-CYP | CLfm | 680 | μmol/h | 13.3 |
-| Km-CYP | Km | 0.154 | μM | 34 |
-| CLint, CES1_AM | CL | 93.1 | L/h | 12.1 |
-| V5 (Frank and Gray, 1953) | V | 3 | L | 0 |
-| kirre | ktr | 62.4 | (1/μM/h) | 4.5 |
-| θAGE on TVMPA0 | equation variable | 0.117 | – | 34.5 |
-| theta_q314_im | theta_q314_im | 73.8 |  | 13.7 |
+| label | parameter | value | unit | RSE% | IIV |
+|---|---|---|---|---|---|
+| QH (Harrison and Gibaldi, 1977) | QH | 50 | L/h | 0 |  |
+| VH (Harrison and Gibaldi, 1977) | VH | 1.5 | L | 0 |  |
+| fu,p_CLOP (Sanofi-Aventis, 2011) | fu | 2 | % | 0 |  |
+| fu,p_AM (Sanofi-Aventis, 2011) | fu | 6 | % | 0 |  |
+| τ | kabs | 11.0 | 1/h | 6.6 |  |
+| V3 | V1 | 82.2 | L | 17.3 |  |
+| TVVmax-CYP | Vmax | 680 | μmol/h | 13.3 | 18.8 (14.4% RSE) |
+| Km-CYP | Km | 0.154 | μM | 34 |  |
+| CLint, CES1_AM | CL | 93.1 | L/h | 12.1 |  |
+| V5 (Frank and Gray, 1953) | V | 3 | L | 0 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.448). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,62 +56,62 @@ Jiang XL, Samant S, Lewis JP, Horenstein RB, Shuldiner AR, Yerges-Armstrong LM e
 
 ### Reviewer guidance
 
-**Clopidogrel record rejected due to dimension mismatches in flow, formation clearance, and affinity units plus an unreachable metabolite.**
+**Record rejected due to dimension mismatches in the maximum metabolism rate and Michaelis constant units.**
 
-The record defines hepatic blood flow (QH) with units of L/h that conflict with the expected time dimension, and formation clearance (CLfm) with units of μmol/h conflicting with volume/time. Metabolic affinity (Km) is assigned units of μM, which are incompatible with the required mass/volume dimension for the model equations. Furthermore, the clopidogrel active metabolite compartment is structurally unreachable from the dose site, meaning the model cannot simulate metabolite exposure. A reported unit could not be converted to SI, leaving the parameter without a valid standardized value for the review. Extracted — clopidogrel: QH 50 L/h, VH 1.5 L, Fab 50 %, fu 2 %, t1/2z 11 1/h, V2 82.2 L, Km 0.154 μM, ktr 62.4 (1/μM/h); clopidogrel active metabolite: CLfm 680 μmol/h, CL 93.1 L/h, V 3 L.
+The maximum metabolism rate is recorded as 680 μmol/h, which conflicts with the required mass per time dimension. Additionally, the Michaelis constant is listed as 0.154 μM, which conflicts with the required mass per volume dimension. These structural parameter inconsistencies triggered the rejection of the clopidogrel model record. Extracted — clopidogrel: QH 50 L/h, VH 1.5 L, fu 2 %, kabs 11 1/h, V1 82.2 L; clopidogrel active metabolite: fu 6 %, Vmax 680 μmol/h, Km 0.154 μM, CL 93.1 L/h, V 3 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fa: this record has none, the second reading 50; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clopidogrel → clopidogrel active metabolite (metabolism), the second reading none; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
-|---|---|---|---|---|---|---|---|---|---|
-| QH (Harrison and Gibaldi, 1977) | `Q369` · QH | 50 | L/h | 1.389e-05 | m3/s | l/h | 0 | hepatic_exchange (0.9) | T2:row1:col2 |
-| VH (Harrison and Gibaldi, 1977) | `Q368` · VH | 1.5 | L | 0.0015 | m3 | l | 0 | exact (1) | T2:row2:col2 |
-| Fa (Sanofi-Aventis, 2011) | `Q40` · Fab | 50 | % | 0.5 |  | % | 0 | llm (0.6) | T2:row3:col2 |
-| fu,p_CLOP (Sanofi-Aventis, 2011) | `Q46` · fu | 2 | % | 0.02 |  | % | 0 | llm_confirmed (0.6) | T2:row4:col2 |
-| τ | `Q57` · t1/2z | 11.0 | 1/h |  |  | 1/h | 6.6 | llm (0.6) | T2:row6:col2 |
-| V3 | `Q64` · V2 | 82.2 | L | 0.0822 | m3 | l | 17.3 | exact (1) | T2:row7:col2 |
-| TVVmax-CYP | `Q370` · CLfm | 680 | μmol/h |  |  | (µM·ol)/h | 13.3 | exact (1) | T2:row8:col2 |
-| Km-CYP | `Q1` · Km | 0.154 | μM |  |  | µM | 34 | llm_confirmed (0.6) | T2:row9:col2 |
-| CLint, CES1_AM | `Q22` · CL | 93.1 | L/h | 2.586e-05 | m3/s | l/h | 12.1 | exact (1) | T2:row11:col2 |
-| V5 (Frank and Gray, 1953) | `Q61` · V | 3 | L | 0.003 | m3 | l | 0 | exact (1) | T2:row12:col2 |
-| kirre | `Q306` · ktr | 62.4 | (1/μM/h) |  |  | 1/(h·µM) | 4.5 | llm (0.6) | T2:row16:col2 |
-| θAGE on TVMPA0 | `Q900` · equation variable | 0.117 | – | 0.117 |  | - | 34.5 | llm (0.6) | T2:row21:col2 |
-| theta_q314_im | `Q900` · theta_q314_im | 73.8 |  |  |  |  | 13.7 |  | T2:row18:col2 |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| QH (Harrison and Gibaldi, 1977) | `Q369` · QH | 50 | L/h | 1.389e-05 | m3/s | l/h | 0 | hepatic_exchange (0.9) | T2:row1:col2 |  |
+| VH (Harrison and Gibaldi, 1977) | `Q368` · VH | 1.5 | L | 0.0015 | m3 | l | 0 | exact (1) | T2:row2:col2 |  |
+| fu,p_CLOP (Sanofi-Aventis, 2011) | `Q46` · fu | 2 | % | 0.02 |  | % | 0 | llm_confirmed (0.6) | T2:row4:col2 |  |
+| fu,p_AM (Sanofi-Aventis, 2011) | `Q46` · fu | 6 | % | 0.06 |  | % | 0 | llm_confirmed (0.6) | T2:row5:col2 |  |
+| τ | `Q49` · kabs | 11.0 | 1/h | 0.003056 | 1/s | 1/h | 6.6 | exact (1) | T2:row6:col2 |  |
+| V3 | `Q63` · V1 | 82.2 | L | 0.0822 | m3 | l | 17.3 | exact (1) | T2:row7:col2 |  |
+| TVVmax-CYP | `Q66` · Vmax | 680 | μmol/h |  |  | (µM·ol)/h | 13.3 | llm (0.6) | T2:row8:col2 | 18.8 (14.4% RSE) |
+| Km-CYP | `Q1` · Km | 0.154 | μM |  |  | µM | 34 | llm_confirmed (0.6) | T2:row9:col2 |  |
+| CLint, CES1_AM | `Q22` · CL | 93.1 | L/h | 2.586e-05 | m3/s | l/h | 12.1 | exact (1) | T2:row11:col2 |  |
+| V5 (Frank and Gray, 1953) | `Q61` · V | 3 | L | 0.003 | m3 | l | 0 | exact (1) | T2:row12:col2 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - linked 'QH (Harrison and Gibaldi, 1977)' → Q369 (QH): hepatic ⇄ central exchange of a hepatic-compartment model, not the peripheral Q
-- dropped unlinked row (NIL): 'fu,p_AM (Sanofi-Aventis, 2011)' — extend the ontology if this is a real PK parameter (source ['T2:row5:col2'])
-- unit_dimension_mismatch: 'τ' → Q57 (unit '1 / [time]' vs ontology '[time]') — route to review
-- unit_dimension_mismatch: 'TVVmax-CYP' → Q370 (unit '[substance] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped unlinked row (NIL): 'Fa (Sanofi-Aventis, 2011)' — extend the ontology if this is a real PK parameter (source ['T2:row3:col2'])
+- linked 'τ' as 'ka' → Q49 (kabs) for  — compound marker removed
+- unit_dimension_mismatch: 'TVVmax-CYP' → Q66 (unit '[substance] / [time]' vs ontology '[mass] / [time]') — route to review
 - unit_dimension_mismatch: 'Km-CYP' → Q1 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped unlinked row (NIL): 'TVMPA0' — extend the ontology if this is a real PK parameter (source ['T2:row13:col2'])
 - dropped PD-category row 'kin' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row14:col2'])
 - dropped PD-category row 'kout' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row15:col2'])
-- unit_dimension_mismatch: 'kirre' → Q306 (unit '1 / [length] / [time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'θCYP2C19-PM on TVVmax-CYP' — extend the ontology if this is a real PK parameter (source ['T2:row17:col2'])
+- dropped biomarker row 'kirre' → Q900 (platelet) — the endogenous biomarker's turnover belongs to scholarpd, not the drug's PK model (source ['T2:row16:col2'])
+- dropped unlinked row (NIL): 'θCYP2C19-IM on TVVmax-CYP' — extend the ontology if this is a real PK parameter (source ['T2:row18:col2'])
 - dropped unlinked row (NIL): 'θCES1-TC on TVCLint,CES1' — extend the ontology if this is a real PK parameter (source ['T2:row19:col2'])
-- routed 'θBMI on TVVmax-CYP' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- unit_dimension_unknown: '–' (equation variable)
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'θBMI on TVVmax-CYP' — extend the ontology if this is a real PK parameter (source ['T2:row20:col2'])
+- dropped biomarker row 'θAGE on TVMPA0' → Q319 (platelet) — the endogenous biomarker's turnover belongs to scholarpd, not the drug's PK model (source ['T2:row21:col2'])
 - metabolite volume: 'V5 (Frank and Gray, 1953)' Q63→Q61 for clopidogrel active metabolite — it is 1-compartment, so its central volume is its only volume
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (V3); Q22 (CLint, CES1_AM); Q61 (V5 (Frank and Gray, 1953))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clopidogrel
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: none — turnover model — not a compartmental parent–metabolite model (site hepatic: 'the record carries a hepatic compartment parameter (Q368, Q369)')
-- pharmacogenetic covariate 'theta_q314_im' (im) — PGx domain
+- topology: prose indicates saturable/MM/TMDD/time-varying kinetics — manual_model_class
+- template fit: none — nonlinear / manual model class
 - status held at "Needs review" — not promoted
-- row roles: 2 per-group rows of clopidogrel active metabolite covariate_effect but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=turnover; 23/23 row label(s) assigned, 7 linked by role; re-tagged parent→clopidogrel active metabolite ×8
+- row roles: per-genotype parameters — typical value from the reference group: θCYP2C19-IM on TVVmax-CYP
+- row roles (LLM): model_class=pbpk; 23/23 row label(s) assigned, 6 linked by role; re-tagged parent→clopidogrel active metabolite ×8, parent→platelet ×6
+- skipped review gap-fill of V2: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - table T2: ambiguous_numeric_format
@@ -128,23 +125,28 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (22/33 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.448 (13/29 fields) | 16 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['clopidogrel', 'clopidogrel active metabolite', 'metabolism']] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[clint, ces1_am]` |  | 93.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clint, ces1_am]` | 93.1 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fa]` |  | 50 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kirre]` |  | 62.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fu,p_am]` | 6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km-cyp]` |  | 0.154 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[km-cyp]` | 0.154 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q900_im]` | 73.8 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_vmax_im]` |  | 73.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvvmax-cyp].parameter_id` | Q66 | Q305 | mismatch |
-| `gpt-oss-120b` | `parameters[θage on tvmpa0]` | 0.117 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θbmi on tvvmax-cyp].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[θbmi on tvvmax-cyp].parameter_id` | Q319 | Q66 | mismatch |
-| `gpt-oss-120b` | `parameters[τ].parameter_id` | Q86 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_vmax_pm]` |  | 60.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvmpa0]` |  | 75.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvvmax-cyp]` |  | 680 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvvmax-cyp]` | 680 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3].parameter_id` | Q63 | Q77 | mismatch |
+| `gpt-oss-120b` | `parameters[v5]` |  | 3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v5]` | 3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[τ].parameter_id` | Q49 | Q47 | mismatch |
 
 </details>
 
@@ -158,22 +160,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 11 |  |
+| C0_has_structural_params | pass |  | 10 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | fail | [mass] / [length] ** 3 | μM ([length]) | ['T2:row9:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T2:row11:col2'] |
-| C5_dimension_Q306 | fail | 1 / [time] | (1/μM/h) (1 / [length] / [time]) | ['T2:row16:col2'] |
 | C5_dimension_Q368 | pass | [length] ** 3 |  | ['T2:row2:col2'] |
 | C5_dimension_Q369 | pass | [length] ** 3 / [time] |  | ['T2:row1:col2'] |
-| C5_dimension_Q370 | fail | [length] ** 3 / [time] | μmol/h ([substance] / [time]) | ['T2:row8:col2'] |
-| C5_dimension_Q57 | fail | [time] | 1/h (1 / [time]) | ['T2:row6:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['T2:row6:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['T2:row12:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['T2:row7:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['T2:row7:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | μmol/h ([substance] / [time]) | ['T2:row8:col2'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 93.1 L/h | ['T2:row11:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 3 L | ['T2:row12:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 82.2 L | ['T2:row7:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 82.2 L | ['T2:row7:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -197,4 +198,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Jiang2016_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Jiang2016_reference%0APaper%3A%20Jiang_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Jiang2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 23:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 05:52 UTC</sub>

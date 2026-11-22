@@ -4,11 +4,11 @@
 
 # thioctic acid — `ThiocticAcid_Field2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-05 12:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="thioctic acid" model-id="ThiocticAcid_Field2021_reference" status="needs_review" stale="true" population="healthy rehabilitated California sea lions" measured-compound="alpha lipoic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="thioctic acid" model-id="ThiocticAcid_Field2021_reference" status="needs_review" stale="false" population="healthy rehabilitated California sea lions" measured-compound="alpha lipoic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Field CL, Whoriskey ST, Zhao X, Papich MG. PHARMACOKINETICS OF SUBCUTANEOUS ALPHA LIPOIC ACID, A PROPOSED THERAPEUTIC AID FOR DOMOIC ACID INTOXICATION IN CALIFORNIA SEA LIONS (. Journal of zoo and wildlife medicine : official publication of the American Association of Zoo Veterinarians 52(3):872–879 (2021).
@@ -36,7 +36,7 @@ Field CL, Whoriskey ST, Zhao X, Papich MG. PHARMACOKINETICS OF SUBCUTANEOUS ALPH
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Field CL, Whoriskey ST, Zhao X, Papich MG. PHARMACOKINETICS OF SUBCUTANEOUS ALPH
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — thioctic acid: t1/2z 40 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alpha lipoic acid, the second reading thioctic_acid; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

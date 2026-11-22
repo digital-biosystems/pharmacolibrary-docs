@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;zolpidem&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/&quot;},{&quot;label&quot;:&quot;Cha_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolpidem_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zolpidem_Kim2026_reference&quot;,&quot;label&quot;:&quot;Kim_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Kim2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zolpidem_Yoon2021_reference&quot;,&quot;label&quot;:&quot;Yoon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Yoon2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2026_DSST&quot;,&quot;label&quot;:&quot;Kim_2026 \u00b7 DSST&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/pd_Kim_2026_DSST.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Perrais_1999_mIPSC_duration&quot;,&quot;label&quot;:&quot;Perrais_1999 \u00b7 mIPSC duration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/pd_Perrais_1999_mIPSC_duration.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolpidem_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zolpidem_Yoon2021_reference&quot;,&quot;label&quot;:&quot;Yoon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Yoon2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2026_DSST&quot;,&quot;label&quot;:&quot;Kim_2026 \u00b7 DSST&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/pd_Kim_2026_DSST.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Perrais_1999_mIPSC_duration&quot;,&quot;label&quot;:&quot;Perrais_1999 \u00b7 mIPSC duration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/pd_Perrais_1999_mIPSC_duration.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Zolpidem model tmax deviates from the paper's 3.36 h, and apparent bioavailability assumptions conflict with second-reader parameter values.
+> Zolpidem’s absorption rate constant, kabs 5.41 1/h, accompanies a model whose simulated peak time fails to match the paper, so the record was held for review.
 
 <div class="pk-model-meta" hidden drug="zolpidem" model-id="Zolpidem_Cha2024_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="zolpidem" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Cha HJ, Han S, Pak KC, Kim H. Development of a Web Application for Simulating Pl
 
 ### Reviewer guidance
 
-**Zolpidem model tmax deviates from the paper's 3.36 h, and apparent bioavailability assumptions conflict with second-reader parameter values.**
+**Zolpidem’s absorption rate constant, kabs 5.41 1/h, accompanies a model whose simulated peak time fails to match the paper, so the record was held for review.**
 
-The simulated time to peak concentration differs from the paper's reported 3.36 h, with a ratio of 0.3224. The model builder assumed bioavailability F=1, which conflicts with second-reader values for absorption, clearance, and distribution parameters. Extracted — zolpidem: kabs 5.41 1/h, V/F 61.7 L, CL/F 16.9 L/h, tlag 0.394 h.
+The model does not reproduce the paper's time of the peak (tmax). Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance: 1.0831064783182076 h versus 3.36 h. The model builder assumed F=1 and Fm=1, with no molar correction. A second reader disputed the analyte identification and parameter values, reporting unknown for the analyte, 0.385 for lag time, 14.29 for clearance adjusted for bioavailability, 3.24 for absorption rate constant, and 54.89 for volume adjusted for bioavailability; the cross-reader agreement was 0.583, with 0 of 1 reader(s) agreeing. Extracted — zolpidem: kabs 5.41 1/h, V/F 61.7 L, CL/F 16.9 L/h, tlag 0.394 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has zolpidem, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -159,7 +159,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=zolpidem) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
 | T1_tmax | reference | skipped |  | 1.083 |  | non-numeric value |
 | T1_tmax | reference | fail | 3.36 | 1.083 | 0.3224 | h→SI vs simulated h |
 

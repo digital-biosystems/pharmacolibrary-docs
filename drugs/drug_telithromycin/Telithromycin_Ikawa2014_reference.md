@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;telithromycin&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/&quot;},{&quot;label&quot;:&quot;Ikawa_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telithromycin_Lee2025_reference&quot;,&quot;label&quot;:&quot;Lee_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Lee2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telithromycin_Barsam2017_reference&quot;,&quot;label&quot;:&quot;Barsam_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Barsam2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telithromycin_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telithromycin_Ikawa2014_reference&quot;,&quot;label&quot;:&quot;Ikawa_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Ikawa2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telithromycin_Yaeger2021_reference&quot;,&quot;label&quot;:&quot;Yaeger_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Yaeger2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telithromycin_Ikawa2014_reference&quot;,&quot;label&quot;:&quot;Ikawa_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Ikawa2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telithromycin_Barsam2017_reference&quot;,&quot;label&quot;:&quot;Barsam_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Barsam2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telithromycin_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telithromycin_Lee2025_reference&quot;,&quot;label&quot;:&quot;Lee_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Lee2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telithromycin_Yaeger2021_reference&quot;,&quot;label&quot;:&quot;Yaeger_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telithromycin/Telithromycin_Yaeger2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telithromycin — `Telithromycin_Ikawa2014_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="telithromycin" model-id="Telithromycin_Ikawa2014_reference" status="not_modelled" stale="false" population="adults" measured-compound="telithromycin" parameterization="apparent" topology="2C"></div>
+> The transfer rate constants k12 and k21 for telithromycin are set to library defaults rather than values reported in the abstract.
+
+<div class="pk-model-meta" hidden drug="telithromycin" model-id="Telithromycin_Ikawa2014_reference" status="needs_review" stale="false" population="adults" measured-compound="telithromycin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Ikawa K, Kikuchi E, Kikuchi J, Nishimura M, Derendorf H, Morikawa N. Pharmacokinetic modelling of serum and bronchial concentrations for clarithromycin and telithromycin, and site-specific pharmacodynamic simulation for their dosages. Journal of clinical pharmacy and therapeutics 39(4):411–417 (2014).
@@ -27,7 +29,7 @@ Ikawa K, Kikuchi E, Kikuchi J, Nishimura M, Derendorf H, Morikawa N. Pharmacokin
 <figure class="pk-models-diagram"><img src="drugs/drug_telithromycin/Telithromycin_Ikawa2014_reference/Telithromycin_Ikawa2014_reference.svg" alt="Telithromycin_Ikawa2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -41,7 +43,7 @@ Ikawa K, Kikuchi E, Kikuchi J, Nishimura M, Derendorf H, Morikawa N. Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +53,13 @@ Ikawa K, Kikuchi E, Kikuchi J, Nishimura M, Derendorf H, Morikawa N. Pharmacokin
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The transfer rate constants k12 and k21 for telithromycin are set to library defaults rather than values reported in the abstract.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record lists k12 as 0.0026 1/h, but the review identified k12 and k21 as unreported parameters replaced by model builder defaults. Consequently, these inter-compartmental rates lack explicit estimates from the source text, relying instead on placeholder values. Since the record is abstract-only, these default substitutions stand in for fitted model parameters that were not extracted. Extracted — telithromycin: V/F 205 L, CL 34.4 L/h, kabs 0.68 1/h, V1/F 370 L, CL/F 89.5 L/h, k12 0.0026 1/h, AUC ratio 7.8 ratio.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -100,20 +102,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.68 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | 89.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 34.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution volumes of central, peripheral and elf compartments]` | 204.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k12 , k21 , k13 and k31]` | 0.0026 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean elf/serum ratio in the area under drug concentration-time curve]` | 7.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1 /f, v2 /f and v3 /f]` | 370.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.68 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 89.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 34.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volumes of central, peripheral and elf compartments]` | 204.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12 , k21 , k13 and k31]` | 0.0026 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elf/serum ratio in the area under drug concentration-time curve]` | 7.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1 /f, v2 /f and v3 /f]` | 370.3 |  | only_one_extracted |
 
 </details>
 
@@ -145,13 +147,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | obtained | note |
-|---|---|---|---|
-| T0_analyte_identity | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  | no covariate effects in record |
-| T3_apparent_invariant | pass | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=telithromycin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

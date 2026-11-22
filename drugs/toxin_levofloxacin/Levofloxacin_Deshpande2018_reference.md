@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Levofloxacin&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/&quot;},{&quot;label&quot;:&quot;Deshpande_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levofloxacin_Cen2023_control_group&quot;,&quot;label&quot;:&quot;Cen_2023_control_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/Levofloxacin_Cen2023_control_group.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Cen2023_pro_group&quot;,&quot;label&quot;:&quot;Cen_2023_pro_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/Levofloxacin_Cen2023_pro_group.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Le2023_reference&quot;,&quot;label&quot;:&quot;Le_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/Levofloxacin_Le2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Zhu2016_reference&quot;,&quot;label&quot;:&quot;Zhu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/Levofloxacin_Zhu2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levofloxacin_Cen2023_control_group&quot;,&quot;label&quot;:&quot;Cen_2023_control_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/Levofloxacin_Cen2023_control_group.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Cen2023_pro_group&quot;,&quot;label&quot;:&quot;Cen_2023_pro_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/Levofloxacin_Cen2023_pro_group.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Le2023_reference&quot;,&quot;label&quot;:&quot;Le_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/Levofloxacin_Le2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Zhu2016_reference&quot;,&quot;label&quot;:&quot;Zhu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_levofloxacin/Levofloxacin_Zhu2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Levofloxacin clearance of 0.04 L/h and volume of 0.4674 L are physiologically implausible, indicating a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="Levofloxacin" model-id="Levofloxacin_Deshpande2018_reference" status="rejected" stale="false" population="" measured-compound="levofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Deshpande D, Pasipanodya JG, Mpagama SG, Bendet P, Srivastava S, Koeuth T et al.
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Levofloxacin clearance of 0.04 L/h and volume of 0.4674 L are physiologically implausible, indicating a unit or scale extraction error.**
+
+The recorded clearance of 0.04 L/h and volume of 0.4674 L fall outside the physiological window for levofloxacin. Such low magnitudes suggest a unit or scaling error during extraction from the review secondary source. The model was rejected due to these implausible parameter values. Extracted — levofloxacin: CL 0.04 L/hr, V 0.467 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

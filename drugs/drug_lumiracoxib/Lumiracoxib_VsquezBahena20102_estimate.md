@@ -4,11 +4,11 @@
 
 # lumiracoxib — `Lumiracoxib_VsquezBahena20102_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 01:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The transit rate constant was recorded in seconds instead of inverse hours, creating a dimension mismatch that caused the model rejection.
+> Lumiracoxib COX-2 dissociation constant (0.89 h-1) and transit time (14.3 s) have conflicting units and meanings.
 
-<div class="pk-model-meta" hidden drug="lumiracoxib" model-id="Lumiracoxib_VsquezBahena20102_estimate" status="rejected" stale="true" population="female Wistar rats with carrageenan-induced hyperalgesia" measured-compound="lumiracoxib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lumiracoxib" model-id="Lumiracoxib_VsquezBahena20102_estimate" status="rejected" stale="false" population="female Wistar rats with carrageenan-induced hyperalgesia" measured-compound="lumiracoxib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Vásquez-Bahena DA, Salazar-Morales UE, Ortiz MI, Castañeda-Hernández G, Trocóniz IF. Pharmacokinetic-pharmacodynamic modelling of the analgesic effects of lumiracoxib, a selective inhibitor of cyclooxygenase-2, in rats. British journal of pharmacology 159(1):176–187 (2010).
@@ -45,7 +45,7 @@ Vásquez-Bahena DA, Salazar-Morales UE, Ortiz MI, Castañeda-Hernández G, Troc�
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Vásquez-Bahena DA, Salazar-Morales UE, Ortiz MI, Castañeda-Hernández G, Troc�
 
 ### Reviewer guidance
 
-**The transit rate constant was recorded in seconds instead of inverse hours, creating a dimension mismatch that caused the model rejection.**
+**Lumiracoxib COX-2 dissociation constant (0.89 h-1) and transit time (14.3 s) have conflicting units and meanings.**
 
-The parameter labeled LT0 was assigned a value of 14.3 with the unit 's', yet its defined meaning identifies it as a first-order transit rate constant expected in inverse hours. This incompatible unit prevented the value from being interpreted as a rate constant, resulting in a dimension mismatch. Additionally, the second reader disagreed on the extracted absorption rate constant, finding it missing where the record listed 92 h^-1. Extracted — lumiracoxib: KD 0.89 h -1, ktr 14.3 s, CL 0.16 L/h, V 39 L, Q 0.42 L/h, kabs 92 h -1, Frel 50.
+The COX-2 parameter is labeled as a dissociation constant but assigned a first-order rate unit of h-1, creating a dimension mismatch. The transit parameter is labeled LT0 but assigned a time unit of s instead of a rate constant. These conflicts render the structural parameter values inconsistent with their pharmacokinetic definitions. Extracted — lumiracoxib: KD 0.89 h -1, ktr 14.3 s, CL 0.16 L/h, V 39 L, Q 0.42 L/h, kabs 92 h -1, Frel 50.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lumiracoxib, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

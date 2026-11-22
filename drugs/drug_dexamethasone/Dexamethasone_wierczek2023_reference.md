@@ -17,7 +17,7 @@
 
 ## Population and dosing
 
-**Population:** adults with COVID-19 · condition COVID-19 · age group adult · n = &gt;=27.
+**Population:** adults with COVID-19 · condition COVID-19 · age group adult.
 
 **Dosing:** 6 mg, oral, multiple, every 24 h.
 

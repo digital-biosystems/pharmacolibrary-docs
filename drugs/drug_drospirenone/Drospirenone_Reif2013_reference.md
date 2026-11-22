@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was quarantined because drospirenone's central volume of distribution was missing, leaving a placeholder in place of a fitted value for this molecule.
+> The model was held back because no explicit value was extracted for the central compartment volume of distribution, forcing reliance on a library placeholder for drospirenone's PK profile.
 
 <div class="pk-model-meta" hidden drug="drospirenone" model-id="Drospirenone_Reif2013_reference" status="model_quarantined" stale="false" population="healthy young women" measured-compound="drospirenone and ethinylestradiol" parameterization="apparent" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Reif S, Snelder N, Blode H. Characterisation of the pharmacokinetics of ethinyle
 
 ### Reviewer guidance
 
-**The model was quarantined because drospirenone's central volume of distribution was missing, leaving a placeholder in place of a fitted value for this molecule.**
+**The model was held back because no explicit value was extracted for the central compartment volume of distribution, forcing reliance on a library placeholder for drospirenone's PK profile.**
 
-All extracted parameters, including clearance and absorption rates, are explicitly assigned to the compound 'drospirenone and ethinylestradiol', not to drospirenone alone. Consequently, no specific volume of distribution value was available for the single-compartment drospirenone model, forcing the use of a standard library placeholder instead of an estimated number. A secondary review also noted discrepancies where specific parameter values were recorded as null despite the second reader identifying values in the source. Extracted — drospirenone and ethinylestradiol: CL/F 3.52 L/h, V2/F 51.6 L, V3/F 204 L, Q3/F 17.5 L/h, kabs 2.18 1/h, tlag 0.372 h, Fab 1, CLnorm 0.672 L/h/kg, … (+2).
+All ten extracted parameters are attributed to the combination of drospirenone and ethinylestradiol, leaving the central compartment volume without an explicit estimate for drospirenone alone. Consequently, a generic library value was substituted instead of a fitted parameter. A second reader disagreed on the primary analyte, identifying drospirenone rather than the combination, which further complicates the attribution of these parameters. Extracted — drospirenone and ethinylestradiol: CL/F 3.52 L/h, V2/F 51.6 L, V3/F 204 L, Q3/F 17.5 L/h, kabs 2.18 1/h, tlag 0.372 h, Fab 1, CLnorm 0.672 L/h/kg, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has drospirenone and ethinylestradiol, the second reading drospirenone; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -197,14 +197,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-001-defaulted-Vd: not acceptable; dev-002-apparent-assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.12, 0 of 1 reader(s) agree | 0.12 | cross-check disputed by a second reader: verdict disputed, agreement 0.12, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

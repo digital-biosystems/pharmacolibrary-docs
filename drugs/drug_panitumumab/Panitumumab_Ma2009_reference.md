@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the two-compartment structure contains an unreachable compartment, and it was built from the abstract alone.
+> Panitumumab’s two-compartment record was rejected for an unreachable compartment, despite listing peripheral volume V2 as 2.59 L.
 
 <div class="pk-model-meta" hidden drug="panitumumab" model-id="Panitumumab_Ma2009_reference" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="panitumumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Ma P, Yang BB, Wang YM, Peterson M, Narayanan A, Sutjandra L et al. Population p
 
 ### Reviewer guidance
 
-**The record was rejected because the two-compartment structure contains an unreachable compartment, and it was built from the abstract alone.**
+**Panitumumab’s two-compartment record was rejected for an unreachable compartment, despite listing peripheral volume V2 as 2.59 L.**
 
-The structural check identified an orphan compartment, meaning one of the model's two volumes has no path from the dose. Because the paper was abstract-only, the reported summary statistics for clearance and volumes stand in for a fitted model. The second reader disagreed on multiple parameter fields, including the central volume of distribution and linear clearance, which this record left as null. Extracted — panitumumab: CL 0.273 L/d, V1 3.95 L, V2 2.59 L, Km 0.426 mcg/mL.
+The record gives panitumumab a peripheral volume of distribution of 2.59 L and flags an unreachable or orphan compartment, but does not identify which compartment is unreachable. Because only the abstract was read, reported summary statistics stand in for a fitted model. A second reader disagreed about whether the record reported CL 0.273 L/d, central volume 3.95 L, peripheral volume 2.59 L, and Km 0.426 mcg/mL. Extracted — panitumumab: CL 0.273 L/d, V1 3.95 L, V2 2.59 L, Km 0.426 mcg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc difference: this record has none, the second reading 8; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -16,7 +16,7 @@ Taguchi M, Fujiki A, Iwamoto J, Inoue H, Tahara K, Saigusa K et al. Nonlinear mi
 
 ## Population and dosing
 
-**Population:** Japanese patients with arrhythmias · condition arrhythmias · age group adult · n = &gt;=38.
+**Population:** Japanese patients with arrhythmias · condition arrhythmias · age group adult.
 
 **Dosing:** 100, 150, 200 mg, oral, multiple, every 24 h.
 

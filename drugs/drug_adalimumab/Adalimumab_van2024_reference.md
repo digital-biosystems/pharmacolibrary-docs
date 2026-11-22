@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Adalimumab's absorption rate constant was not reported in the source, forcing the use of unsupported library defaults instead of a measured value.
+> Adalimumab’s absorption-rate constant ka is unreported, so the record was held back rather than treating it as a paper-supported estimate.
 
 <div class="pk-model-meta" hidden drug="adalimumab" model-id="Adalimumab_van2024_reference" status="needs_review" stale="false" population="patients with psoriasis" measured-compound="adalimumab" parameterization="apparent" topology="1C"></div>
 
@@ -38,7 +38,7 @@ van Huizen A, Bank P, van der Kraaij G, Musters A, Busard C, Menting S et al. Qu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ van Huizen A, Bank P, van der Kraaij G, Musters A, Busard C, Menting S et al. Qu
 
 ### Reviewer guidance
 
-**Adalimumab's absorption rate constant was not reported in the source, forcing the use of unsupported library defaults instead of a measured value.**
+**Adalimumab’s absorption-rate constant ka is unreported, so the record was held back rather than treating it as a paper-supported estimate.**
 
-The record includes apparent clearance of 0.365 l/day/82 kg and volume of distribution of 14.7 l/82 kg, but lacks an explicit estimate for the absorption rate constant. Consequently, the model builder applied library defaults for absorption and lag time rather than using data from the review. These unreported defaults are not supported by the source text and invalidate the apparent first-order absorption structure. Extracted — adalimumab: CL/F 0.365 l/day/82 kg, V/F 14.7 l/82 kg.
+Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by the paper and need to be extracted or explicitly justified as conventions. Tlag was also defaulted, and the model assumed F=1, Fm=1, no molar correction, and first-order depot input under apparent (/F) parameterization. Extracted — adalimumab: CL/F 0.365 l/day/82 kg, V/F 14.7 l/82 kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q319: this record has 1, the second reading 1. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -82,20 +82,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q319]` | 1 | 1 | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -119,15 +113,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=adalimumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=adalimumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

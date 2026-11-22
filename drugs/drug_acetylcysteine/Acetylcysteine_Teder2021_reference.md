@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the second peripheral compartment is orphaned, and the central clearance and bioavailability parameters are missing or invalid.
+> N-acetylcysteine’s V3 peripheral-compartment volume (8.62 L) leaves a compartment unreachable in the recorded 1C structure, so the model was rejected.
 
 <div class="pk-model-meta" hidden drug="acetylcysteine" model-id="Acetylcysteine_Teder2021_reference" status="rejected" stale="false" population="intensive care unit patients" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Teder K, Maddison L, Soeorg H, Meos A, Karjagin J. The Pharmacokinetic Profile a
 
 ## Population and dosing
 
-**Population:** intensive care unit patients · condition pneumonia, acute brain injury, abdominal sepsis · age group adult · n = &gt;54.
+**Population:** intensive care unit patients · condition pneumonia, acute brain injury, abdominal sepsis · age group adult.
 
 **Dosing:** 600 mg, iv, oral, single.
 
@@ -51,13 +51,13 @@ Teder K, Maddison L, Soeorg H, Meos A, Karjagin J. The Pharmacokinetic Profile a
 
 ### Reviewer guidance
 
-**The record was rejected because the second peripheral compartment is orphaned, and the central clearance and bioavailability parameters are missing or invalid.**
+**N-acetylcysteine’s V3 peripheral-compartment volume (8.62 L) leaves a compartment unreachable in the recorded 1C structure, so the model was rejected.**
 
-The model defines two peripheral compartments (V2 and V3) but lacks a clear intercompartmental clearance linking the second peripheral compartment to the central compartment, rendering it an orphan. Additionally, the central clearance and the intercompartmental clearance between the central and first peripheral compartments were not extracted, leaving key distribution and elimination pathways undefined. The bioavailability parameter (Fab) is recorded as a negative value (-2.03) with an invalid unit, and the absorption rate constant (tvka) was omitted by the second reader despite being present in the record. Extracted — acetylcysteine: t1/2ka 0.33 Standard Error, Fab -2.03 Standard Error, V2 12 L, V3 8.62 L, Q3 43.8 L/h, kabs 0.14 h−1.
+The 1C structure conflicts with V2 (12.0 L) and V3 (8.62 L), which describe peripheral-compartment volumes, and Q3 (43.8 L/h), a central-to-peripheral distribution clearance; this matches the finding of an unreachable compartment. The reported “Standard Error” units for the absorption half-life (0.33) and absolute bioavailability (-2.03) could not be converted to SI, leaving those values without SI values. A second reader also disagreed about the absorption-rate estimate, retaining no value where this record gives 0.14 h−1. Extracted — acetylcysteine: t1/2ka 0.33 Standard Error, Fab -2.03 Standard Error, V2 12 L, V3 8.62 L, Q3 43.8 L/h, kabs 0.14 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has N-acetylcysteine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;thiopental&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/&quot;},{&quot;label&quot;:&quot;Russo_1997_3 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiopental_Marsot2013_reference&quot;,&quot;label&quot;:&quot;Marsot_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Marsot2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_Russo1997v3_reference&quot;,&quot;label&quot;:&quot;Russo_1997_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Russo1997v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Thiopental_SolanaAltabella2025_reference&quot;,&quot;label&quot;:&quot;Solana-Altabella_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_SolanaAltabella2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiopental_Marsot2013_reference&quot;,&quot;label&quot;:&quot;Marsot_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Marsot2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_Russo1997v3_reference&quot;,&quot;label&quot;:&quot;Russo_1997_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Russo1997v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Thiopental_SolanaAltabella2025_reference&quot;,&quot;label&quot;:&quot;Solana-Altabella_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_SolanaAltabella2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Thiopental bioavailability and lag time use library defaults, and the abstract-only source prevented extracting these values from pediatric clearance data.
+> Thiopental record held back because bioavailability and lag time lacked explicit estimates, so standard placeholder values were used instead of data from the paper.
 
 <div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Russo1997v3_reference" status="needs_review" stale="false" population="pediatric patients with increased intracranial pressure" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Russo H, Bressolle F, Duboin MP. Pharmacokinetics of high-dose thiopental in ped
 
 ### Reviewer guidance
 
-**Thiopental bioavailability and lag time use library defaults, and the abstract-only source prevented extracting these values from pediatric clearance data.**
+**Thiopental record held back because bioavailability and lag time lacked explicit estimates, so standard placeholder values were used instead of data from the paper.**
 
-The record lacks explicit estimates for bioavailability and lag time, forcing reliance on placeholder values rather than paper-derived data. The model was built solely from the abstract, so summary statistics stand in for a fitted model. Consequently, the absorption rate constant of 1.68 h−1 and elimination half-life of 11.7 h are reported without corresponding bioavailability support. Extracted — thiopental: t1/2z 11.7 h, CL 2.42 ml/min/kg, V 2.18 L/kg, kabs 1.68 h−1.
+The record was derived from the abstract alone, meaning summary statistics replaced a fitted model. While the elimination half-life was 11.7 h, clearance was 2.42 ml/min/kg, and absorption rate constant was 1.68 h−1, bioavailability and lag time were not specified in the source. Consequently, generic defaults were applied to these parameters rather than extracting specific values. A second reader also disagreed on the inclusion of a 33% decrease in elimination half-life and the absorption rate constant. Extracted — thiopental: t1/2z 11.7 h, CL 2.42 ml/min/kg, V 2.18 L/kg, kabs 1.68 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 33% decrease of the elimination half-life: this record has none, the second reading 33; it also differs on 1 more field. That field does not shape the model.
 
@@ -130,14 +130,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=thiopental) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=thiopental) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

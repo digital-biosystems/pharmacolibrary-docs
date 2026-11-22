@@ -16,7 +16,7 @@ Liu L, Ding Y, Jiao Z, Wu M, Li C, Liu J et al. Clinical Evaluation of the Toler
 
 ## Population and dosing
 
-**Population:** healthy Chinese adults · condition healthy · age group adult · n = &gt;=12.
+**Population:** healthy Chinese adults · condition healthy · age group adult.
 
 ## Model
 
@@ -36,7 +36,7 @@ Liu L, Ding Y, Jiao Z, Wu M, Li C, Liu J et al. Clinical Evaluation of the Toler
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Liu L, Ding Y, Jiao Z, Wu M, Li C, Liu J et al. Clinical Evaluation of the Toler
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eptifibatide: tmax 13 minutes, t1/2z 148 minutes, CL 0.11 L/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has eptifibatide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eptifibatide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -83,20 +83,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[mean terminal elimination half-life]` | 148.19 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean terminal elimination half-life]` |  | 148.19 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median time to maximum concentration]` | 13 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median time to maximum concentration]` |  | 13 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical value of clearance]` | 0.11 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical value of clearance]` |  | 0.11 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | eptifibatide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | eptifibatide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[mean terminal elimination half-life]` | 148.19 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean terminal elimination half-life]` |  | 148.19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median time to maximum concentration]` | 13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median time to maximum concentration]` |  | 13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical value of clearance]` | 0.11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical value of clearance]` |  | 0.11 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | eptifibatide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | eptifibatide | unknown | mismatch |
 
 </details>
 

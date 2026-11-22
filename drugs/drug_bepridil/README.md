@@ -26,7 +26,7 @@ Bepridil is a nonselective calcium channel blocker that was used to treat angina
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nielsen-Kudsk_1988_reference](drugs/drug_bepridil/Bepridil_NielsenKudsk1988_reference.md) | — | 1-compartment (no model) | 2 | Nielsen-Kudsk F et al., Bepridil, myocardial accumulation kinet…, Pharmacology & toxicology (1988) | [10.1111/j.1600-0773.1988.tb00923.x](https://doi.org/10.1111/j.1600-0773.1988.tb00923.x) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nielsen-Kudsk_1988_reference](drugs/drug_bepridil/Bepridil_NielsenKudsk1988_reference.md) | — | 1-compartment (no model) | 2 | Nielsen-Kudsk F et al., Bepridil, myocardial accumulation kinet…, Pharmacology & toxicology (1988) | [10.1111/j.1600-0773.1988.tb00923.x](https://doi.org/10.1111/j.1600-0773.1988.tb00923.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Taguchi_2006_reference](drugs/drug_bepridil/Bepridil_Taguchi2006_reference.md) | — | 1-compartment (no model) | 1 | Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2006) | [10.1248/bpb.29.517](https://doi.org/10.1248/bpb.29.517) |
 
 ## Pharmacogenomics (PGx)
@@ -42,25 +42,6 @@ Bepridil is a nonselective calcium channel blocker that was used to treat angina
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bepridil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` metabolism | PGx paper |
-| metabolism | liver | `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` substrate, `CYP3A5` metabolism | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` metabolism | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ATP1A1 (inhibitor), CACNA1A (inhibitor), CACNA1H (inhibitor), CACNA2D2 (inhibitor), CALM1 (binder), KCNH2 (inhibitor), KCNQ1 (inhibitor), PDE1A (inhibitor), PDE1B (inhibitor), TNNC1 (other).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 122 matched, 65 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

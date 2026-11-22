@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The model was rejected because two imipramine concentration parameters have units of reciprocal volume, dimensionally inconsistent with concentration.
 
 <div class="pk-model-meta" hidden drug="Imipramine" model-id="Imipramine_elYazigi1988_reference" status="rejected" stale="false" population="Saudi patients" measured-compound="Imipramine" parameterization="mechanistic" topology="retention"></div>
 
@@ -47,7 +47,13 @@ el-Yazigi A, Chaleby K. Steady-state kinetics of doxepin and imipramine in Saudi
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model was rejected because two imipramine concentration parameters have units of reciprocal volume, dimensionally inconsistent with concentration.**
+
+The mean steady-state concentration parameters report a value of 25.8 and 68.3 with units of ng/ml per mg/kg. These units simplify to inverse volume, conflicting with the required mass per volume dimension for concentration. The model structure was inferred from an abstract, utilizing reported summary statistics instead of fitted pharmacokinetic parameters. Extracted — imipramine: Cavg 25.8 ng.ml-1/mg.kg-1, kel 2.53 1.h-1.kg-1, Css 68.3 ng.ml-1/mg.kg-1, kel 1.62 1.h-1, V 0.13 L/kg; Desipramine: fm 0.489.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Diisobutyl phthalate&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/&quot;},{&quot;label&quot;:&quot;Palacios-Arreola_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiisobutylPhthalate_Koch2012_reference&quot;,&quot;label&quot;:&quot;Koch_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DiisobutylPhthalate_PalaciosArreola2022_reference&quot;,&quot;label&quot;:&quot;Palacios-Arreola_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiisobutylPhthalate_Koch2012_reference&quot;,&quot;label&quot;:&quot;Koch_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DiisobutylPhthalate_PalaciosArreola2022_reference&quot;,&quot;label&quot;:&quot;Palacios-Arreola_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Diisobutyl phthalate — `DiisobutylPhthalate_PalaciosArreola2022_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Diisobutyl phthalate" model-id="DiisobutylPhthalate_PalaciosArreola2022_reference" status="extracted" stale="false" population="unknown" measured-compound="Diisobutyl phthalate" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Diisobutyl phthalate" model-id="DiisobutylPhthalate_PalaciosArreola2022_reference" status="simulated" stale="false" population="unknown" measured-compound="Diisobutyl phthalate" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Palacios-Arreola MI, De Vizcaya-Ruiz A, Morales-Montor J, Amador-Muñoz O. Toxicokinetic assessment of inhalatory absorption of Diisobutyl phthalate (DiBP) using a novel thermal desorption-GC-MS method to determine phthalate diesters in blood plasma. Environmental toxicology and pharmacology 90:103813 (2022).
@@ -34,7 +32,7 @@ Palacios-Arreola MI, De Vizcaya-Ruiz A, Morales-Montor J, Amador-Muñoz O. Toxic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,7 +40,13 @@ Palacios-Arreola MI, De Vizcaya-Ruiz A, Morales-Montor J, Amador-Muñoz O. Toxic
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -88,6 +92,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Palacios-Arreola_2022:abstract', 'Palacios-Arreola_2022:abstract'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | retainedFraction (measured=Diisobutyl phthalate) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

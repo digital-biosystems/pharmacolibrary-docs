@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01L&quot;,&quot;href&quot;:&quot;atc/S01L.md&quot;},{&quot;label&quot;:&quot;ranibizumab&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/&quot;},{&quot;label&quot;:&quot;Xu_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranibizumab_Crass2025_reference&quot;,&quot;label&quot;:&quot;Crass_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ranibizumab_Diack2024v2_reference&quot;,&quot;label&quot;:&quot;Diack_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Diack2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ranibizumab_Fidler2020_estimated_value_rse_interval&quot;,&quot;label&quot;:&quot;Fidler_2020_estimated_value_rse_interval&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Fidler2020_estimated_value_rse_interval.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Diack_2021_BCVA&quot;,&quot;label&quot;:&quot;Diack_2021 \u00b7 BCVA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/pd_Diack_2021_BCVA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranibizumab_Fidler2020_estimated_value_rse_interval&quot;,&quot;label&quot;:&quot;Fidler_2020_estimated_value_rse_interval&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Fidler2020_estimated_value_rse_interval.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ranibizumab_Crass2025_reference&quot;,&quot;label&quot;:&quot;Crass_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ranibizumab_Diack2024v2_reference&quot;,&quot;label&quot;:&quot;Diack_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/Ranibizumab_Diack2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Diack_2021_BCVA&quot;,&quot;label&quot;:&quot;Diack_2021 \u00b7 BCVA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ranibizumab/pd_Diack_2021_BCVA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ranibizumab — `Ranibizumab_Xu2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:42 UTC (Rejected), but the paper was screened again on 2026-10-07 21:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ranibizumab intravitreal clearance was extracted as 0.023 mL/h, an implausibly small value that failed the physiological plausibility check.
+> Ranibizumab clearance of 0.023 mL/h relative to its 4.0 mL vitreous volume was judged physiologically implausible, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Xu2013_reference" status="rejected" stale="true" population="patients with neovascular age-related macular degeneration" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Xu2013_reference" status="rejected" stale="false" population="patients with neovascular age-related macular degeneration" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xu L, Lu T, Tuomi L, Jumbe N, Lu J, Eppler S et al. Pharmacokinetics of ranibizumab in patients with neovascular age-related macular degeneration: a population approach. Investigative ophthalmology & visual science 54(3):1616–1624 (2013).
@@ -39,7 +39,7 @@ Xu L, Lu T, Tuomi L, Jumbe N, Lu J, Eppler S et al. Pharmacokinetics of ranibizu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Xu L, Lu T, Tuomi L, Jumbe N, Lu J, Eppler S et al. Pharmacokinetics of ranibizu
 
 ### Reviewer guidance
 
-**Ranibizumab intravitreal clearance was extracted as 0.023 mL/h, an implausibly small value that failed the physiological plausibility check.**
+**Ranibizumab clearance of 0.023 mL/h relative to its 4.0 mL vitreous volume was judged physiologically implausible, so the record was rejected.**
 
-The record was built from the paper abstract only, so summary statistics were used in place of a fitted model. The abstract reports systemic-to-vitreous exposure as a 1:90,000 ratio, which is not a standard pharmacokinetic parameter. A second reader could not confirm the extracted values for intravitreal clearance, absorption rate constant, half-life, or vitreous volume. Extracted — ranibizumab: t1/2z 9 DAYS, AUC ratio 9e+04 1: 90,000, CL 0.023 mL/h, V 4 mL, kabs 0.0528 days−1.
+The rejection finding identifies the clearance-to-volume relationship as outside the physiological window, consistent with a unit or scale extraction error. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; a second reader did not identify a clearance value. Extracted — ranibizumab: t1/2z 9 DAYS, AUC ratio 9e+04 1: 90,000, CL 0.023 mL/h, V 4 mL, kabs 0.0528 days−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ranibizumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

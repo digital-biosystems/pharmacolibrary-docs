@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;sufentanil&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/&quot;},{&quot;label&quot;:&quot;Nie_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sufentanil_Hahn2019_final&quot;,&quot;label&quot;:&quot;Hahn_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Hahn2019_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_reference&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Pokorn2021_reference&quot;,&quot;label&quot;:&quot;Pokorn\u00e1_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Pokorn2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Pypendop2014_reference&quot;,&quot;label&quot;:&quot;Pypendop_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Pypendop2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Borsuk2017_reference&quot;,&quot;label&quot;:&quot;Borsuk_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Borsuk2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Cox_1998_EEG&quot;,&quot;label&quot;:&quot;Cox_1998 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/pd_Cox_1998_EEG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sufentanil_Pypendop2014_reference&quot;,&quot;label&quot;:&quot;Pypendop_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Pypendop2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Borsuk2017_reference&quot;,&quot;label&quot;:&quot;Borsuk_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Borsuk2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Hahn2019_final&quot;,&quot;label&quot;:&quot;Hahn_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Hahn2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_reference&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Pokorn2021_reference&quot;,&quot;label&quot;:&quot;Pokorn\u00e1_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Pokorn2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Cox_1998_EEG&quot;,&quot;label&quot;:&quot;Cox_1998 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/pd_Cox_1998_EEG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Sufentanil record rejected because total clearance (176 L/h) and central volume (519 L) are physiologically implausible.
+> The record was rejected for implausible sufentanil clearance and volume magnitudes, reporting total clearance of 176 L/h and central volume of 519 L.
 
 <div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Nie2025_reference" status="rejected" stale="false" population="laboring women" measured-compound="sufentanil" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Nie Y, Sun X, Cao R, Tang S, Zhou Q, Zhou M et al. Population Pharmacokinetic of
 
 ## Population and dosing
 
-**Population:** laboring women · condition labor · age group adult · n = &gt;$41&lt;.
+**Population:** laboring women · condition labor · age group adult.
 
 **Dosing:** 0.015, 0.03 mg, epidural, multiple.
 
@@ -50,13 +50,13 @@ Nie Y, Sun X, Cao R, Tang S, Zhou Q, Zhou M et al. Population Pharmacokinetic of
 
 ### Reviewer guidance
 
-**Sufentanil record rejected because total clearance (176 L/h) and central volume (519 L) are physiologically implausible.**
+**The record was rejected for implausible sufentanil clearance and volume magnitudes, reporting total clearance of 176 L/h and central volume of 519 L.**
 
-The extracted total clearance of 176 L/h and central volume of 519 L fall outside the physiological window for sufentanil. These magnitudes indicate a probable unit or scale extraction error rather than actual pharmacokinetic behavior. Extracted — sufentanil: CL 176 L/h, V1 519 L, Q 0.0134 L/h, V2 0.187 L.
+The record lists sufentanil total clearance as 176 L/h and central volume of distribution as 519 L. It also reports intercompartmental clearance of 0.0134 L/h and peripheral volume of distribution of 0.187 L; the stated finding attributes the rejection to an implausible clearance/volume magnitude, consistent with a unit or scale extraction error. Extracted — sufentanil: CL 176 L/h, V1 519 L, Q 0.0134 L/h, V2 0.187 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

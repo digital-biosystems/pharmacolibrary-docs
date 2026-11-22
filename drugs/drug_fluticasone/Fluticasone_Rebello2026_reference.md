@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Apparent parameterization with F=1 conflicts with a relative bioavailability of 34.2, causing the model to simulate zero peak concentration.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 1.4e-07, model 0); the model does not reproduce the paper's time of the peak (tmax) (paper 1.84, model 0).
 
 <div class="pk-model-meta" hidden drug="fluticasone" model-id="Fluticasone_Rebello2026_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="fluticasone propionate" parameterization="apparent" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Rebello J, Shukla S, Naidu K, Patil J, Morde N, Ducharme MP. Understanding Pulmo
 
 ### Reviewer guidance
 
-**Apparent parameterization with F=1 conflicts with a relative bioavailability of 34.2, causing the model to simulate zero peak concentration.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 1.4e-07, model 0); the model does not reproduce the paper's time of the peak (tmax) (paper 1.84, model 0).**
 
-The record lists a relative bioavailability of 34.2, yet the model builder assumed F=1 and Fm=1 in an apparent parameterization. The second reader identified a 34.5% systemic exposure value from central lung absorption missing from this record. Consequently, the model fails to reproduce the paper's reported Cmax and tmax values. Extracted — fluticasone propionate: V1/F 70.3 L, V2/F 84.4 L, V3/F 46.2 L, CL/F 27 L/h, Q/F 60.2 L/h, kabs 46.8 1/h, tlag 31.6 h, Frel 34.2.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. None of the extracted parameters is fluticasone's own; they describe fluticasone propionate. Extracted — fluticasone propionate: V1/F 70.3 L, V2/F 84.4 L, V3/F 46.2 L, CL/F 27 L/h, Q/F 60.2 L/h, kabs 46.8 1/h, tlag 31.6 h, Frel 34.2.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % systemic exposure due to central lung absorption: this record has none, the second reading 34.5; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -177,7 +177,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=fluticasone propionate) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.867, 0 of 1 reader(s) agree | 0.867 | a second reader did not contradict the extraction |
 | T1_cmax | reference | fail | 1.403e-07 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 1.557e-07 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 1.313e-07 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |

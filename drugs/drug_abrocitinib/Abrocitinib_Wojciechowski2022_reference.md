@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Abrocitinib bioavailability and absorption lag were defaulted to library placeholders instead of paper estimates, causing the simulated peak concentration to exceed the paper's reported value.
+> Absolute bioavailability and lag time defaulted to library placeholders, and the simulated peak concentration ratio was 1.4763, exceeding the paper's reported Cmax.
 
 <div class="pk-model-meta" hidden drug="abrocitinib" model-id="Abrocitinib_Wojciechowski2022_reference" status="needs_review" stale="false" population="healthy individuals and patients with psoriasis or atopic dermatitis" measured-compound="abrocitinib" parameterization="mechanistic" topology="2C"></div>
 
@@ -64,9 +64,9 @@ Wojciechowski J, Malhotra BK, Wang X, Fostvedt L, Valdez H, Nicholas T. Populati
 
 ### Reviewer guidance
 
-**Abrocitinib bioavailability and absorption lag were defaulted to library placeholders instead of paper estimates, causing the simulated peak concentration to exceed the paper's reported value.**
+**Absolute bioavailability and lag time defaulted to library placeholders, and the simulated peak concentration ratio was 1.4763, exceeding the paper's reported Cmax.**
 
-The record lacks explicit values for absolute bioavailability and absorption lag, so library defaults were used for the simulation. This resulted in a simulated peak concentration of 0.00166, which deviates significantly from the paper's reported peak of 0.00112. Additionally, the record defines several covariate effects, but only the reference individual was simulated, leaving these structural components unverified. Extracted — abrocitinib: CL 21.7 L/h, V1 86.3 L, Q 1.13 L/h, V2 8.11 L, R1 73.1 mg/h, kabs 3.99 h−1, Fab 1.3.
+The record relies on library defaults for absolute bioavailability and lag time, which are not supported by the paper's estimates. Simulating the model with the paper's dosing profile produced a peak concentration of 0.001657846988037878, while the paper reports 0.0011229999999999999, yielding a ratio of 1.4763. Additionally, the model structure includes covariate effects, such as female sex reducing bioavailability by 0.348, that were not exercised in the simulation. Extracted — abrocitinib: CL 21.7 L/h, V1 86.3 L, Q 1.13 L/h, V2 8.11 L, R1 73.1 mg/h, kabs 3.99 h−1, Fab 1.3.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].covariate_forms`: this record has ['linear_fractional', 'linear_fractional'], the second reading ['linear_fractional']; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -247,7 +247,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=abrocitinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.393, 0 of 1 reader(s) agree | 0.393 | cross-check disputed by a second reader: verdict disputed, agreement 0.393, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.001123 | 0.001658 | 1.476 | ng/mL→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | skipped | 21.6 | 2.967 |  | unresolved time unit '14.5, 28.7' |
 

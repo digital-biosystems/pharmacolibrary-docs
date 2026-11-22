@@ -103,20 +103,6 @@ Bioavailability is 87%-98% following epidural administration.
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Khaw_2001_Anesthesia_was_successful](drugs/toxin_ropivacaine/pd_Khaw_2001_Anesthesia_was_successful.md) | Anesthesia was successful ← ropivacaine · categorical (graded) response model | — | Khaw KS et al., Spinal ropivacaine for cesarean section…, Anesthesiology (2001) | [10.1097/00000542-200112000-00011](https://doi.org/10.1097/00000542-200112000-00011) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lee_2001_ED50_response](drugs/toxin_ropivacaine/pd_Lee_2001_ED50_response.md) | Analgesia (defined as ≥50% reduction in visual analog scale pain score) ← ropivacaine · categorical (graded) response model | — | Lee BB et al., Dose-response study of epidural ropivac…, Anesthesiology (2001) | [10.1097/00000542-200105000-00013](https://doi.org/10.1097/00000542-200105000-00013) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ropivacaine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ORM1` binder | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: SCN10A (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -129,7 +115,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-13 17:21 | 2:30:03 | 7/7/0 | 29/0/0 | 0/0/0 | 2,081,880/132,415 | einfracz / qwen3.8-flash-next | 63 | 4/54 | 63/0 | 0 |
+| 2026-11-13 17:21 | 2:30:03 | 7/7/0 | 33/0/0 | 0/0/0 | 2,081,880/132,415 | einfracz / qwen3.8-flash-next | 63 | 4/54 | 63/0 | 0 |
 
 ## Coverage
 

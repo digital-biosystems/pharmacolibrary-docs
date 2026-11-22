@@ -69,7 +69,7 @@ LD50: 3222 mg/kg (Intraperitoneal, Mouse)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-13 03:44 | 24:47 | 0/1/0 | 4/0/0 | 0/0/0 | 734,475/32,060 | einfracz / qwen3.8-flash-next | 32 | 9/13 | 32/0 | 0 |
+| 2026-11-13 03:44 | 24:47 | 0/1/0 | 6/0/0 | 0/0/0 | 734,475/32,060 | einfracz / qwen3.8-flash-next | 32 | 9/13 | 32/0 | 0 |
 
 ## Coverage
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;riluzole&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/&quot;},{&quot;label&quot;:&quot;Chow_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riluzole_Berges2015_reference&quot;,&quot;label&quot;:&quot;Berges_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/Riluzole_Berges2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Riluzole_Nguyen2021_reference&quot;,&quot;label&quot;:&quot;Nguyen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/Riluzole_Nguyen2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhao_2016_FMP_blue_fluorescence&quot;,&quot;label&quot;:&quot;Zhao_2016 \u00b7 FMP blue fluorescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/pd_Zhao_2016_FMP_blue_fluorescence.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riluzole_Nguyen2021_reference&quot;,&quot;label&quot;:&quot;Nguyen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/Riluzole_Nguyen2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Riluzole_Berges2015_reference&quot;,&quot;label&quot;:&quot;Berges_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/Riluzole_Berges2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhao_2016_FMP_blue_fluorescence&quot;,&quot;label&quot;:&quot;Zhao_2016 \u00b7 FMP blue fluorescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/pd_Zhao_2016_FMP_blue_fluorescence.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # riluzole — `Riluzole_Chow2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:07 UTC (Rejected), but the paper was screened again on 2026-10-07 04:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The abstract-derived record incorrectly assigns a 12-hour AUC summary statistic to the total AUCt parameter.
+> The record was rejected because the volume of distribution parameter was assigned incorrect dimensions.
 
-<div class="pk-model-meta" hidden drug="riluzole" model-id="Riluzole_Chow2012_reference" status="rejected" stale="true" population="adults with acute spinal cord injury" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="riluzole" model-id="Riluzole_Chow2012_reference" status="rejected" stale="false" population="adults with acute spinal cord injury" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chow DS, Teng Y, Toups EG, Aarabi B, Harrop JS, Shaffrey CI et al. Pharmacology of riluzole in acute spinal cord injury. Journal of neurosurgery. Spine 17(1 Suppl):129–140 (2012).
@@ -41,7 +41,7 @@ Chow DS, Teng Y, Toups EG, Aarabi B, Harrop JS, Shaffrey CI et al. Pharmacology 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Chow DS, Teng Y, Toups EG, Aarabi B, Harrop JS, Shaffrey CI et al. Pharmacology 
 
 ### Reviewer guidance
 
-**The abstract-derived record incorrectly assigns a 12-hour AUC summary statistic to the total AUCt parameter.**
+**The record was rejected because the volume of distribution parameter was assigned incorrect dimensions.**
 
-The record was built from the abstract alone, so reported summary statistics stand in for a fitted model. The AUC(0-12) value of 982.0 ng·h/mL was assigned to the AUCt parameter, which the dimension check flagged as a mismatch. A second reader could not verify the 521.0 ng·h/mL value or the 5.0 /h absorption constant from the abstract. Extracted — riluzole: Cmax 129 ng/ml, Cmin 45.6 ng/ml, AUC 982 ng·h/mL, AUCt 521 ng·h/mL, CL 49.5 L/hour, V 557 /L, kabs 5 /h.
+The volume of distribution for riluzole, reported as 557.1, carries a unit of /L which conflicts with the expected cubic length dimension. Additionally, the record was constructed solely from the paper's abstract, so the values are summary statistics rather than fitted model parameters. A second reader also disagreed on the presence of the Day 14 AUC and absorption rate constant values. Extracted — riluzole: Cmax 129 ng/ml, Cmin 45.6 ng/ml, AUC 982 ng·h/mL, AUCt 521 ng·h/mL, CL 49.5 L/hour, V 557 /L, kabs 5 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc(0-12) on day 14: this record has 521.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

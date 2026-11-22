@@ -17,7 +17,7 @@ Hallén B, Karlsson MO, Stromberg S, Norén B. Bioavailability and disposition o
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = ??: The abstract mentions 10 volunteers in one study and 6 in another, but the specific number for the final analysis is not clearly a single integer provided in the text for the main parameter estimation context, although 10 is the primary group. I will use 10 as the primary group described for the main parameters..
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

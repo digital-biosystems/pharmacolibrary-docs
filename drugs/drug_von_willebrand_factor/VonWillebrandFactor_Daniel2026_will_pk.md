@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;von Willebrand factor&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/&quot;},{&quot;label&quot;:&quot;Daniel_2026 \u00b7 will_pk&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_NPPH&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 NPPH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_NPPH.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_NTP&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 NTP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_NTP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_NTPH&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 NTPH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_NTPH.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_NPPH&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 NPPH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_NPPH.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_NTP&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 NTP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_NTP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_NTPH&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 NTPH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_NTPH.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # von Willebrand factor — `VonWillebrandFactor_Daniel2026_will_pk`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:23 UTC (Rejected), but the paper was screened again on 2026-10-05 20:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance value of 447 mL/h for von Willebrand factor is physiologically implausible, indicating a unit or scale extraction error.
+> The von Willebrand factor record was rejected because Q is 3290 mL despite representing intercompartmental clearance, and CL is 447 mL/h with implausible magnitude.
 
-<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_will_pk" status="rejected" stale="true" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_will_pk" status="rejected" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeling response to high-purity von Willebrand factor: toward tailored dosing during surgery in von Willebrand disease. Blood advances 10(3):903–914 (2026).
@@ -17,7 +17,7 @@ Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeli
 
 ## Population and dosing
 
-**Population:** patients with von Willebrand disease · condition von Willebrand disease · age group mixed · n = &gt;=74.
+**Population:** patients with von Willebrand disease · condition von Willebrand disease · age group mixed.
 
 **Dosing:** 50 IU/kg, iv, single.
 
@@ -41,7 +41,7 @@ Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeli
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeli
 
 ### Reviewer guidance
 
-**The clearance value of 447 mL/h for von Willebrand factor is physiologically implausible, indicating a unit or scale extraction error.**
+**The von Willebrand factor record was rejected because Q is 3290 mL despite representing intercompartmental clearance, and CL is 447 mL/h with implausible magnitude.**
 
-The record reports a total clearance of 447 mL/h, which fails the physiological plausibility check for this molecule. Additionally, the volume of distribution V2 is listed as 0.30 mL, a magnitude inconsistent with typical pharmacokinetic parameters. These discrepancies caused the model to be rejected due to dimension mismatches and implausible magnitudes. Extracted — von willebrand factor: V2 0.3 mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
+Q's reported mL conflicts with its meaning as intercompartmental clearance, which requires volume per time; a reported unit could not be converted to SI. CL at 447 mL/h was flagged as outside the physiological window, with a likely unit or scale extraction error. The second reader disputed the recorded clearance and instead listed 74.2 and 157.6 for clearance-related fields. Extracted — von willebrand factor: V2 0.3 mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has von Willebrand factor, the second reading high-purity VWF concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has von Willebrand factor, the second reading high-purity VWF concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,21 +122,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.1 (1/10 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['von willebrand factor', 'fviii', 'interconversion']] | [['vwf:ag', 'fviii:c', 'interconversion'], ['vwf:ag', 'vwf:act', 'interconversion']] | mismatch |
-| `gpt-oss:120b` | `parameters[bbbbbbbbbbbbbbbbvvvvvv]` | 447 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clvwf o blood group]` |  | 157.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clvwf]` |  | 74.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[qqvvvvvv]` | 3290 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vvvvvvvv 2]` | 0.30 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vvwf]` |  | 4537 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | von Willebrand factor | high-purity VWF concentrate | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | von Willebrand factor | VWF:Ag | mismatch |
+| `gpt-oss-120b` | `model.links` | [['von willebrand factor', 'fviii', 'interconversion']] | [['vwf:ag', 'fviii:c', 'interconversion'], ['vwf:ag', 'vwf:act', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[bbbbbbbbbbbbbbbbvvvvvv]` | 447 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clvwf o blood group]` |  | 157.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clvwf]` |  | 74.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qqvvvvvv]` | 3290 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vvvvvvvv 2]` | 0.30 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vvwf]` |  | 4537 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | von Willebrand factor | high-purity VWF concentrate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | von Willebrand factor | VWF:Ag | mismatch |
 
 </details>
 

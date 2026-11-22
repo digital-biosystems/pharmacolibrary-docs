@@ -4,11 +4,11 @@
 
 # clazosentan — `Clazosentan_van2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-06 19:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="clazosentan" model-id="Clazosentan_van2007_reference" status="needs_review" stale="true" population="healthy Caucasian and Japanese adults" measured-compound="clazosentan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clazosentan" model-id="Clazosentan_van2007_reference" status="needs_review" stale="false" population="healthy Caucasian and Japanese adults" measured-compound="clazosentan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Giersbergen PL, Gunawardena KA, Dingemanse J. Influence of ethnic origin and sex on the pharmacokinetics of clazosentan. Journal of clinical pharmacology 47(11):1374–1380 (2007).
@@ -16,7 +16,7 @@ van Giersbergen PL, Gunawardena KA, Dingemanse J. Influence of ethnic origin and
 
 ## Population and dosing
 
-**Population:** healthy Caucasian and Japanese adults · condition healthy · age group adult · n = &gt;=24.
+**Population:** healthy Caucasian and Japanese adults · condition healthy · age group adult.
 
 ## Model
 
@@ -34,7 +34,7 @@ van Giersbergen PL, Gunawardena KA, Dingemanse J. Influence of ethnic origin and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ van Giersbergen PL, Gunawardena KA, Dingemanse J. Influence of ethnic origin and
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clazosentan: t1/2z 6 minutes.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clazosentan, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

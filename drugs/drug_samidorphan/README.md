@@ -26,7 +26,7 @@ Samidorphan is an opioid antagonist primarily used in combination with olanzapin
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sun_2021_reference](drugs/drug_samidorphan/Samidorphan_Sun2021_reference.md) | — | 2-compartment (no model) | 6 (+13 cov.) | Sun L et al., Population Pharmacokinetics of Olanzapi…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1911](https://doi.org/10.1002/jcph.1911) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sun_2021_reference](drugs/drug_samidorphan/Samidorphan_Sun2021_reference.md) | — | 2-compartment (no model) | 6 (+13 cov.) | Sun L et al., Population Pharmacokinetics of Olanzapi…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1911](https://doi.org/10.1002/jcph.1911) |
 
 ## Pharmacodynamics (PD)
 
@@ -35,20 +35,6 @@ Samidorphan is an opioid antagonist primarily used in combination with olanzapin
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Tan_2022_DOR_occupancy](drugs/drug_samidorphan/pd_Tan_2022_DOR_occupancy.md) | DOR receptor occupancy ← samidorphan · direct sigmoid Emax (Hill) effect | — | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Tan_2022_KOR_occupancy](drugs/drug_samidorphan/pd_Tan_2022_KOR_occupancy.md) | KOR receptor occupancy ← samidorphan · direct sigmoid Emax (Hill) effect | — | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Tan_2022_MOR_occupancy](drugs/drug_samidorphan/pd_Tan_2022_MOR_occupancy.md) | MOR receptor occupancy ← samidorphan · direct sigmoid Emax (Hill) effect | — | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=samidorphan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: OPRD1 (partial agonist), OPRK1 (partial agonist), OPRM1 (inhibitor), OPRM1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,13 +48,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:19 | 3:04 | 0/1/0 | 1/0/0 | 0/0/0 | 107,574/7,746 | ollama / glm-5.3-flash | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-06 17:19 | 3:04 | 0/1/0 | 3/0/0 | 0/0/0 | 107,574/7,746 | ollama / glm-5.3-flash | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

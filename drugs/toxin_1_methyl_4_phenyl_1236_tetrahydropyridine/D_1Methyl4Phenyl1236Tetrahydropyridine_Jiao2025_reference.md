@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;1-Methyl-4-phenyl-1,2,3,6-tetrahydropyridine&quot;,&quot;href&quot;:&quot;drugs/toxin_1_methyl_4_phenyl_1236_tetrahydropyridine/&quot;},{&quot;label&quot;:&quot;Jiao_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_1Methyl4Phenyl1236Tetrahydropyridine_Riachi1989_reference&quot;,&quot;label&quot;:&quot;Riachi_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_methyl_4_phenyl_1236_tetrahydropyridine/D_1Methyl4Phenyl1236Tetrahydropyridine_Riachi1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_1Methyl4Phenyl1236Tetrahydropyridine_Riachi1989_reference&quot;,&quot;label&quot;:&quot;Riachi_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_methyl_4_phenyl_1236_tetrahydropyridine/D_1Methyl4Phenyl1236Tetrahydropyridine_Riachi1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> MPTP clearance 0.2 µL/min and volume 0 L are physiologically implausible, indicating unit or extraction errors.
 
 <div class="pk-model-meta" hidden drug="1-Methyl-4-phenyl-1,2,3,6-tetrahydropyridine" model-id="D_1Methyl4Phenyl1236Tetrahydropyridine_Jiao2025_reference" status="rejected" stale="false" population="" measured-compound="1_methyl_4_phenyl_1236_tetrahydropyridine" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,13 @@ Jiao YY, Tian T, Zhu Z, Cao L, Liu Y, Wang RA et al. Extracellular LCN2 Binding 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**MPTP clearance 0.2 µL/min and volume 0 L are physiologically implausible, indicating unit or extraction errors.**
+
+The MPTP clearance is reported as 0.2 µL/min, an extremely low value inconsistent with the drug's pharmacokinetics. The volume of distribution is recorded as 0 L, a value derived from clearance and half-life that cannot be physically meaningful. These magnitudes fall outside the physiological window, confirming a unit or scale extraction error. Extracted — 1 methyl 4 phenyl 1236 tetrahydropyridine: CL 0.2 µl min−1, V 0 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

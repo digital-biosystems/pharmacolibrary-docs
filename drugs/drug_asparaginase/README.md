@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;asparaginase&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hoeben_2026_TV&quot;,&quot;label&quot;:&quot;Hoeben_2026 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/pd_Hoeben_2026_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hoeben_2026_TV&quot;,&quot;label&quot;:&quot;Hoeben_2026 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/pd_Hoeben_2026_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # asparaginase
 
@@ -16,7 +16,7 @@ Asparaginase is an enzyme antineoplastic medication used to treat lymphoblastic 
 
 ## Start here
 
-> **Borghorst_2012_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> pediatric patients with previously untreated acute lymphoblastic leukemia, n = 32. [Run it in the simulator](drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md?tab=Simulation) · [record](drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md)
+> **Borghorst_2012_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> pediatric patients with previously untreated acute lymphoblastic leukemia, n = 32. [Run it in the simulator](drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md?tab=Simulation) · [record](drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -24,12 +24,12 @@ Asparaginase is an enzyme antineoplastic medication used to treat lymphoblastic 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Borghorst_2012_reference](drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Borghorst S et al., Population pharmacokinetics of native E…, Pediatric hematology and on… (2012) | [10.3109/08880018.2011.627978](https://doi.org/10.3109/08880018.2011.627978) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Lin_2021_reference](drugs/drug_asparaginase/Asparaginase_Lin2021_reference.md) | — | 1-compartment (no model) | 4 | Lin T et al., Population Pharmacokinetic Model Develo…, Clinical pharmacology in dr… (2021) | [10.1002/cpdd.1002](https://doi.org/10.1002/cpdd.1002) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Borghorst_2012_reference](drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Borghorst S et al., Population pharmacokinetics of native E…, Pediatric hematology and on… (2012) | [10.3109/08880018.2011.627978](https://doi.org/10.3109/08880018.2011.627978) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub> | [Lin_2021_reference](drugs/drug_asparaginase/Asparaginase_Lin2021_reference.md) | held back | 1-compartment, oral | 4 | Lin T et al., Population Pharmacokinetic Model Develo…, Clinical pharmacology in dr… (2021) | [10.1002/cpdd.1002](https://doi.org/10.1002/cpdd.1002) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_t_half_terminal</sub> | [Sassen_2017_estimate](drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md) | ▶ model + simulator | 2-compartment, IV | 4 | Sassen SD et al., Population pharmacokinetics of intraven…, Haematologica (2017) | [10.3324/haematol.2016.149195](https://doi.org/10.3324/haematol.2016.149195) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_t_half_terminal</sub> | [↳ median](drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md) | ▶ model + simulator | 2-compartment, IV | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hempel_2010_reference](drugs/drug_asparaginase/Asparaginase_Hempel2010_reference.md) | — | 1-compartment (no model) | 0 | Hempel G et al., A population pharmacokinetic model for…, British journal of haematol… (2010) | [10.1111/j.1365-2141.2009.07923.x](https://doi.org/10.1111/j.1365-2141.2009.07923.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lin_2023_reference](drugs/drug_asparaginase/Asparaginase_Lin2023_reference.md) | — | 1-compartment (no model) | 4 (+1 cov.) | Lin T et al., Population pharmacokinetics of intramus…, Clinical and translational… (2023) | [10.1111/cts.13499](https://doi.org/10.1111/cts.13499) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lin_2023_reference](drugs/drug_asparaginase/Asparaginase_Lin2023_reference.md) | — | 1-compartment (no model) | 4 (+1 cov.) | Lin T et al., Population pharmacokinetics of intramus…, Clinical and translational… (2023) | [10.1111/cts.13499](https://doi.org/10.1111/cts.13499) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Völler_2018_reference](drugs/drug_asparaginase/Asparaginase_Vller2018_reference.md) | — | 2-compartment (no model) | 4 | Völler S et al., Pharmacokinetics of recombinant asparag…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-017-3492-5](https://doi.org/10.1007/s00280-017-3492-5) |
 
 ## Pharmacodynamics (PD)
@@ -37,15 +37,6 @@ Asparaginase is an enzyme antineoplastic medication used to treat lymphoblastic 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Hoeben_2026_TV](drugs/drug_asparaginase/pd_Hoeben_2026_TV.md) | tumor volume ← plasma asparaginase activity · disease-progression model | ▶ model + simulator | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=asparaginase).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: L-asparagine (other/unknown), SERPINA7 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,7 +56,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 44 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 7  ·  extracted 2  ·  needs review 2  ·  rejected 3  ·  stale 2
+- **records:** 7  ·  extracted 0  ·  needs review 4  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

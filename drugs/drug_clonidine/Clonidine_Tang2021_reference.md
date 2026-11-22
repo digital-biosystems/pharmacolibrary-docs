@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Tang_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT\u2010B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_stimulating_35S_GTP_S_binding_to_membranes_expres&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 stimulating [35S]GTP\u03b3S binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Yocca_2025_stimulating_35S_GTP_S_binding_to_membranes_expres.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_stimulating_arrestin_binding_to_membranes_express&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 stimulating \u03b2-arrestin binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Yocca_2025_stimulating_arrestin_binding_to_membranes_express.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT\u2010B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_stimulating_35S_GTP_S_binding_to_membranes_expres&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 stimulating [35S]GTP\u03b3S binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Yocca_2025_stimulating_35S_GTP_S_binding_to_membranes_expres.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_stimulating_arrestin_binding_to_membranes_express&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 stimulating \u03b2-arrestin binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/pd_Yocca_2025_stimulating_arrestin_binding_to_membranes_express.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonidine — `Clonidine_Tang2021_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Tang2021_reference" status="simulated" stale="false" population="neonates/infants with neonatal opioid withdrawal syndrome" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
+> The clonidine record was held because the second reader disagreed with the extracted total clearance and volume of distribution values.
+
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Tang2021_reference" status="needs_review" stale="false" population="neonates/infants with neonatal opioid withdrawal syndrome" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tang F, Ng CM, Bada HS, Leggas M. Clinical pharmacology and dosing regimen optimization of neonatal opioid withdrawal syndrome treatments. Clinical and translational science 14(4):1231–1249 (2021).
@@ -29,6 +31,8 @@ Tang F, Ng CM, Bada HS, Leggas M. Clinical pharmacology and dosing regimen optim
 <figure class="pk-models-diagram"><img src="drugs/drug_clonidine/Clonidine_Tang2021_reference/Clonidine_Tang2021_reference.svg" alt="Clonidine_Tang2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | total clearance | CL | 75.0 | L/h |
@@ -36,7 +40,7 @@ Tang F, Ng CM, Bada HS, Leggas M. Clinical pharmacology and dosing regimen optim
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.375). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.375). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Tang F, Ng CM, Bada HS, Leggas M. Clinical pharmacology and dosing regimen optim
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The clonidine record was held because the second reader disagreed with the extracted total clearance and volume of distribution values.**
+
+The cross-check agreement ratio of 0.375 fell below the required 0.5 threshold, indicating a failure in the verification process. The second reader could not confirm the total clearance value of 75.0 L/h or the volume of distribution value of 2.8 L/kg. Consequently, the model record was flagged as needing further review due to these specific parameter discrepancies. Extracted — clonidine: CL 75 L/h, V 2.8 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 75, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -113,14 +119,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=clonidine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=clonidine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check agreement 0.375 is below 0.5: verdict partial, agreement 0.375, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

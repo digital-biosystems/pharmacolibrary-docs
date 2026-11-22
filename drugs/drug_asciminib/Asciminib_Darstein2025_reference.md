@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Asciminib absorption and lag times are missing, forcing library defaults that invalidate the one-compartment steady-state volume substitution.
+> Asciminib’s ka was unreported and defaulted, so this record was held back despite listing CL/F at 6.84 L/h.
 
 <div class="pk-model-meta" hidden drug="asciminib" model-id="Asciminib_Darstein2025_reference" status="needs_review" stale="false" population="patients with CML and Ph+ acute lymphoblastic leukemia" measured-compound="asciminib" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Darstein C, Yoon D, Yang Y, Kapoor S, Dasgupta K, Wu S et al. Population pharmac
 
 ### Reviewer guidance
 
-**Asciminib absorption and lag times are missing, forcing library defaults that invalidate the one-compartment steady-state volume substitution.**
+**Asciminib’s ka was unreported and defaulted, so this record was held back despite listing CL/F at 6.84 L/h.**
 
-The paper abstract does not report an absorption rate constant or lag time, so placeholder values were used. Consequently, a steady-state volume of 110 L was treated as a single volume, which cannot reproduce the early distribution phase. Extracted — asciminib: CL/F 6.84 L/h, Vss 110 L.
+The record came from the abstract alone, so reported summary statistics stood in for a fitted model. Ka and Tlag were defaulted rather than estimated from this paper; ka therefore lacks paper support and affects the simulated profile. First-order depot absorption was imposed with F=1 and Fm=1, and Vss of 110 L was used as the distribution volume; this reproduces AUC and terminal half-life but not the early distribution phase. The record has no steady-state daily AUC, whereas the second reader reports 12. Extracted — asciminib: CL/F 6.84 L/h, Vss 110 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of steady-state daily auc: this record has none, the second reading 12. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -126,15 +126,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=asciminib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=asciminib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

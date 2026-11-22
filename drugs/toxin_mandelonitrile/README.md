@@ -53,7 +53,7 @@ Mandelonitrile is a chemical compound of the cyanohydrin class. Small amounts of
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

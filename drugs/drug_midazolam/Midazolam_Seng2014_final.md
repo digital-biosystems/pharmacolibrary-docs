@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;midazolam&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/&quot;},{&quot;label&quot;:&quot;Seng_2014 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midazolam_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Briassoulis1998_reference&quot;,&quot;label&quot;:&quot;Briassoulis_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Briassoulis1998_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Hall1988_reference&quot;,&quot;label&quot;:&quot;Hall_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Hall1988_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_index_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_index_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Gupta2023_reference&quot;,&quot;label&quot;:&quot;Gupta_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gupta2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_McCann2025_reference&quot;,&quot;label&quot;:&quot;McCann_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_McCann2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Sathe2021_reference&quot;,&quot;label&quot;:&quot;Sathe_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Sathe2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_clausen_et_al_9&quot;,&quot;label&quot;:&quot;Tolia_1991_clausen_et_al_9&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_clausen_et_al_9.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_payne_et_al_6&quot;,&quot;label&quot;:&quot;Tolia_1991_payne_et_al_6&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_payne_et_al_6.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_present_study&quot;,&quot;label&quot;:&quot;Tolia_1991_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_salonen_et_al_5&quot;,&quot;label&quot;:&quot;Tolia_1991_salonen_et_al_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Gade2020_reference&quot;,&quot;label&quot;:&quot;Gade_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gade2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Kim2026_final&quot;,&quot;label&quot;:&quot;Kim_2026_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Kim2026_final.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Kim2026_final_on_ecmo_support_final_model_estimate&quot;,&quot;label&quot;:&quot;Kim_2026_final_on_ecmo_support_final_model_estimate_rse_or_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Kim2026_final_on_ecmo_support_final_model_estimate.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Xie2025_base&quot;,&quot;label&quot;:&quot;Xie_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Xie2025_base.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Xie2025_final&quot;,&quot;label&quot;:&quot;Xie_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Xie2025_final.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_van2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Flores_P_rez_2023_BIS&quot;,&quot;label&quot;:&quot;Flores-P\u00e9rez_2023 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Flores_P_rez_2023_BIS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hoyo_Vadillo_1995_EEG_effect&quot;,&quot;label&quot;:&quot;Hoyo-Vadillo_1995 \u00b7 EEG effect&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Hoyo_Vadillo_1995_EEG_effect.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_1994_TNW12_30&quot;,&quot;label&quot;:&quot;Lu_1994 \u00b7 TNW12-30&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Lu_1994_TNW12_30.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT-B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_1989_EEG_13_30_Hz&quot;,&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 EEG 13-30 Hz %&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Greenblatt_1989_EEG_13_30_Hz.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koopmans_1988_EEG_alpha&quot;,&quot;label&quot;:&quot;Koopmans_1988 \u00b7 EEG-alpha&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Koopmans_1988_EEG_alpha.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koopmans_1988_VER_P100&quot;,&quot;label&quot;:&quot;Koopmans_1988 \u00b7 VER-P100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Koopmans_1988_VER_P100.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mandema_1991_2_EEG_beta_amplitude&quot;,&quot;label&quot;:&quot;Mandema_1991_2 \u00b7 EEG beta amplitude&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Mandema_1991_2_EEG_beta_amplitude.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midazolam_Aarons1991_individual_fitb_x&quot;,&quot;label&quot;:&quot;Aarons_1991_individual_fitb_x&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Aarons1991_individual_fitb_x.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Breimer1991_reference&quot;,&quot;label&quot;:&quot;Breimer_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Breimer1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Briassoulis1998_reference&quot;,&quot;label&quot;:&quot;Briassoulis_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Briassoulis1998_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Koopmans1988_reference&quot;,&quot;label&quot;:&quot;Koopmans_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Koopmans1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Langlois1987_reference&quot;,&quot;label&quot;:&quot;Langlois_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Langlois1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_RousseauBlass2021_reference&quot;,&quot;label&quot;:&quot;Rousseau-Blass_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_RousseauBlass2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_van2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Aarons1991_population_fita_estimate&quot;,&quot;label&quot;:&quot;Aarons_1991_population_fita_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Aarons1991_population_fita_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_index_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_index_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Dholakia2020_reference&quot;,&quot;label&quot;:&quot;Dholakia_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Dholakia2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Gade2020_reference&quot;,&quot;label&quot;:&quot;Gade_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gade2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Hall1988_reference&quot;,&quot;label&quot;:&quot;Hall_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Hall1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Kim2026_final&quot;,&quot;label&quot;:&quot;Kim_2026_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Kim2026_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Kim2026_final_on_ecmo_support_final_model_estimate&quot;,&quot;label&quot;:&quot;Kim_2026_final_on_ecmo_support_final_model_estimate_rse_or_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Kim2026_final_on_ecmo_support_final_model_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_McCann2025_reference&quot;,&quot;label&quot;:&quot;McCann_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_McCann2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Sathe2021_reference&quot;,&quot;label&quot;:&quot;Sathe_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Sathe2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_clausen_et_al_9&quot;,&quot;label&quot;:&quot;Tolia_1991_clausen_et_al_9&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_clausen_et_al_9.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_payne_et_al_6&quot;,&quot;label&quot;:&quot;Tolia_1991_payne_et_al_6&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_payne_et_al_6.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_present_study&quot;,&quot;label&quot;:&quot;Tolia_1991_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_salonen_et_al_5&quot;,&quot;label&quot;:&quot;Tolia_1991_salonen_et_al_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Xie2025_base&quot;,&quot;label&quot;:&quot;Xie_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Xie2025_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Xie2025_final&quot;,&quot;label&quot;:&quot;Xie_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Xie2025_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Gupta2023_reference&quot;,&quot;label&quot;:&quot;Gupta_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gupta2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Neupane2022_reference&quot;,&quot;label&quot;:&quot;Neupane_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Neupane2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Flores_P_rez_2023_BIS&quot;,&quot;label&quot;:&quot;Flores-P\u00e9rez_2023 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Flores_P_rez_2023_BIS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_1994_TNW12_30&quot;,&quot;label&quot;:&quot;Lu_1994 \u00b7 TNW12-30&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Lu_1994_TNW12_30.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT-B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_1989_EEG_13_30_Hz&quot;,&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 EEG 13-30 Hz&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Greenblatt_1989_EEG_13_30_Hz.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koopmans_1988_EEG_alpha&quot;,&quot;label&quot;:&quot;Koopmans_1988 \u00b7 EEG alpha&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Koopmans_1988_EEG_alpha.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
 
-<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Seng2014_final" status="not_simulated" stale="false" population="Asian cancer patients" measured-compound="midazolam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Seng2014_final" status="not_simulated" stale="false" population="adult Asian cancer patients" measured-compound="midazolam" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Seng KY, Hee KH, Soon GH, Sapari NS, Soong R, Goh BC et al. CYP3A5*3 and bilirubin predict midazolam population pharmacokinetics in Asian cancer patients. Journal of clinical pharmacology 54(2):215–224 (2014).
@@ -15,15 +15,15 @@ Seng KY, Hee KH, Soon GH, Sapari NS, Soong R, Goh BC et al. CYP3A5*3 and bilirub
 
 ## Population and dosing
 
-**Population:** Asian cancer patients · condition cancer · age group adult · n = 24.
+**Population:** adult Asian cancer patients · condition cancer · age group adult · n = 24.
 
 **Dosing:** 1 mg, iv, single.
 
 ## Model
 
-**Structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 12 extracted, plus 5 covariate effects.  
+**Parameters:** 10 extracted, plus 5 covariate effects.  
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
@@ -32,22 +32,21 @@ Seng KY, Hee KH, Soon GH, Sapari NS, Soong R, Goh BC et al. CYP3A5*3 and bilirub
 | label | parameter | value | unit |
 |---|---|---|---|
 | CLMDZ (L h-1) | CL | 14.5 | L h-1 |
-| VMDZ,C (L) | V | 27.3 | L |
+| VMDZ,C (L) | equation variable | 27.3 | L |
 | Q (L h-1) | Q | 18.3 | L h-1 |
-| VMDZ,P (L) | V2 | 36.1 | L |
+| VMDZ,P (L) | Vss | 36.1 | L |
 | F1OHM/MDZ | fm | 0.6 |  |
 | CL1OHM (L h-1) | CL | 138 | L h-1 |
 | V1OHM (L) | V | 90.0 | L |
-| FHMG/1OHM | fm | 0.265 |  |
+| FHMG/1OHM | kfm | 0.265 | 1/h |
 | CLHMG (L h-1) | CL | 2.01 | L h-1 |
 | VHMG (L) | V | 1 | L |
-| theta_cl_cyp3a5 | theta_cl_cyp3a5 | 0.783 |  |
-| theta_cl_bilirubin | theta_cl_bilirubin | -0.449 |  |
-| theta_cl_bodyweight | theta_cl_bodyweight | 1.55 |  |
-| theta_q319_bodyweight | theta_q319_bodyweight | 1.96 |  |
-| theta_cl_creatinine | theta_cl_creatinine | 0.627 |  |
-| Ka (1/h) | kabs | 0.14 | 1/h |
-| t,l2f (h) | tlag | 1.9 | h |
+| effect_of_cyp3a5_3_on_clmdz | effect_of_cyp3a5_3_on_clmdz | 0.783 | L |
+| effect_of_total_bilirubin_on_clmdz | effect_of_total_bilirubin_on_clmdz | -0.449 | L |
+| effect_of_bodyweight_v1ohm | effect_of_bodyweight_v1ohm | 1.96 | L |
+| effect_of_creatinine_clearance_on_clhmg | effect_of_creatinine_clearance_on_clhmg | 0.627 | L |
+| theta_q319_bodyweight | theta_q319_bodyweight | 1.55 |  |
+| ka (h-1) | kabs | 0.52 | h-1 |
 
 ## Caveats
 
@@ -55,7 +54,7 @@ Seng KY, Hee KH, Soon GH, Sapari NS, Soong R, Goh BC et al. CYP3A5*3 and bilirub
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.321). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.219). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,11 +64,11 @@ Seng KY, Hee KH, Soon GH, Sapari NS, Soong R, Goh BC et al. CYP3A5*3 and bilirub
 
 ### Reviewer guidance
 
-**The midazolam pharmacokinetic record is unsimulated, with missing coverage for V2, kabs, and tlag.**
+**The record was refused because absorption rate constant and glucuronide clearance values were missing, and covariate scenarios were not simulated.**
 
-The simulation process stopped after building the model, leaving the covariate scenarios for body weight and renal function untested. Seven parameters were covered, while the extraction for V2, kabs, and tlag failed to emit values or defaults. A second reader disagreed on the metabolite naming and could not confirm several parameter values including midazolam clearance of 14.5 L/h. Extracted — midazolam: CL 14.5 L h-1, V 27.3 L, Q 18.3 L h-1, V2 36.1 L, kabs 0.14 1/h, tlag 1.9 h; 1'-hydroxymidazolam: fm 0.6, CL 138 L h-1, V 90 L; 1'-hydroxymidazolam glucuronide: fm 0.265, CL 2.01 L h-1, V 1 L.
+The absorption rate constant (0.52 1/h) was not extracted, leaving the input model incomplete for simulation. The total clearance of 1'-hydroxymidazolam glucuronide (2.01 L/h) is present in the facts but was recorded as null in the model. The record includes covariate effects, such as CYP3A5 genotype influencing midazolam clearance (0.783), but these specific scenarios were never executed. Extracted — midazolam: CL 14.5 L h-1, Q 18.3 L h-1, Vss 36.1 L, kabs 0.52 h-1; 1'-hydroxymidazolam: fm 0.6, CL 138 L h-1, V 90 L; 1'-hydroxymidazolam glucuronide: kfm 0.265 1/h, CL 2.01 L h-1, V 1 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has midazolam → 1'-hydroxymidazolam (metabolism); 1'-hydroxymidazolam → 1'-hydroxymidazolam glucuronide (metabolism), the second reading none; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has midazolam → 1'-hydroxymidazolam (metabolism); 1'-hydroxymidazolam → 1'-hydroxymidazolam glucuronide (metabolism), the second reading none; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -78,22 +77,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | CLMDZ (L h-1) | `Q22` · CL | 14.5 | L h-1 | 4.028e-06 | m3/s | l/h | exact (1) | Seng_2014_table_p5_1:row1:col2 |
-| VMDZ,C (L) | `Q61` · V | 27.3 | L | 0.0273 | m3 | l | llm (0.6) | Seng_2014_table_p5_1:row2:col2 |
+| VMDZ,C (L) | `Q900` · equation variable | 27.3 | L |  |  | l | llm (0.6) | Seng_2014_table_p5_1:row2:col2 |
 | Q (L h-1) | `Q30` · Q | 18.3 | L h-1 | 5.083e-06 | m3/s | l/h | exact (1) | Seng_2014_table_p5_1:row3:col2 |
-| VMDZ,P (L) | `Q64` · V2 | 36.1 | L | 0.0361 | m3 | l | exact (1) | Seng_2014_table_p5_1:row4:col2 |
-| F1OHM/MDZ | `Q45` · fm | 0.6 |  |  |  |  | exact (1) | Seng_2014_table_p5_1:row5:col2 |
+| VMDZ,P (L) | `Q65` · Vss | 36.1 | L | 0.0361 | m3 | l | llm (0.6) | Seng_2014_table_p5_1:row4:col2 |
+| F1OHM/MDZ | `Q45` · fm | 0.6 |  | 0.6 |  |  | exact (1) | Seng_2014_table_p5_1:row5:col2 |
 | CL1OHM (L h-1) | `Q22` · CL | 138 | L h-1 | 3.833e-05 | m3/s | l/h | exact (1) | Seng_2014_table_p5_1:row6:col2 |
 | V1OHM (L) | `Q61` · V | 90.0 | L | 0.09 | m3 | l | exact (1) | Seng_2014_table_p5_1:row7:col2 |
-| FHMG/1OHM | `Q45` · fm | 0.265 |  |  |  |  | exact (1) | Seng_2014_table_p5_1:row8:col2 |
+| FHMG/1OHM | `Q305` · kfm | 0.265 | 1/h | 7.361e-05 | 1/s | 1/h | exact (1) | Seng_2014_table_p5_1:row8:col2 |
 | CLHMG (L h-1) | `Q22` · CL | 2.01 | L h-1 | 5.583e-07 | m3/s | l/h | exact (1) | Seng_2014_table_p5_1:row9:col2 |
 | VHMG (L) | `Q61` · V | 1 | L | 0.001 | m3 | l | exact (1) | Seng_2014_table_p5_1:row10:col2 |
-| theta_cl_cyp3a5 | `Q900` · theta_cl_cyp3a5 | 0.783 |  |  |  |  |  | Seng_2014_table_p5_1:row12:col2 |
-| theta_cl_bilirubin | `Q900` · theta_cl_bilirubin | -0.449 |  |  |  |  |  | Seng_2014_table_p5_1:row13:col2 |
-| theta_cl_bodyweight | `Q900` · theta_cl_bodyweight | 1.55 |  |  |  |  |  | Seng_2014_table_p5_1:row14:col2 |
-| theta_q319_bodyweight | `Q900` · theta_q319_bodyweight | 1.96 |  |  |  |  |  | Seng_2014_table_p5_1:row15:col2 |
-| theta_cl_creatinine | `Q900` · theta_cl_creatinine | 0.627 |  |  |  |  |  | Seng_2014_table_p5_1:row16:col2 |
-| Ka (1/h) | `Q49` · kabs | 0.14 | 1/h | 3.889e-05 | 1/s | 1/h | review_gapfill (0.7) | Jia_2026:review |
-| t,l2f (h) | `Q83` · tlag | 1.9 | h | 6840 | s | h | review_gapfill (0.7) | Heizmann_1983:review |
+| effect_of_cyp3a5_3_on_clmdz | `Q900` · effect_of_cyp3a5_3_on_clmdz | 0.783 | L |  |  | l |  | Seng_2014_table_p5_1:row12:col2 |
+| effect_of_total_bilirubin_on_clmdz | `Q900` · effect_of_total_bilirubin_on_clmdz | -0.449 | L |  |  | l |  | Seng_2014_table_p5_1:row13:col2 |
+| effect_of_bodyweight_v1ohm | `Q900` · effect_of_bodyweight_v1ohm | 1.96 | L |  |  | l |  | Seng_2014_table_p5_1:row15:col2 |
+| effect_of_creatinine_clearance_on_clhmg | `Q900` · effect_of_creatinine_clearance_on_clhmg | 0.627 | L |  |  | l |  | Seng_2014_table_p5_1:row16:col2 |
+| theta_q319_bodyweight | `Q900` · theta_q319_bodyweight | 1.55 |  |  |  |  |  | Seng_2014_table_p5_1:row14:col2 |
+| ka (h-1) | `Q49` · kabs | 0.52 | h-1 | 0.0001444 | 1/s | 1/h | review_gapfill (0.7) | Langlois_1987:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -101,6 +99,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
 - table section iiv: 'CLMDZ (%CV)' routed out of structural estimates ('Interindividual variability')
@@ -115,18 +116,28 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - table section residual_error: 'MDZ (SD)' routed out of structural estimates ('Residual error')
 - table section residual_error: '1OHM (SD)' routed out of structural estimates ('Residual error')
 - table section residual_error: 'HMG (SD)' routed out of structural estimates ('Residual error')
-- linked 'VMDZ,P (L)' as 'Vp' → Q64 (V2) for  — compound marker removed
+- covariate level 'Effect of CYP3A5* 3 on CLMDZ' → Q900:effect_of_cyp3a5_3_on_clmdz = 0.783 (linear_fractional on Q22)
+- covariate level 'Effect of total bilirubin on CLMDZ' → Q900:effect_of_total_bilirubin_on_clmdz = -0.449 (linear_fractional on Q22)
+- covariate level 'Effect of bodyweight V1OHM' → Q900:effect_of_bodyweight_v1ohm = 1.96 (linear_fractional on Q22)
+- covariate level 'Effect of creatinine clearance on CLHMG' → Q900:effect_of_creatinine_clearance_on_clhmg = 0.627 (linear_fractional on Q22)
+- unit inherited for effect_of_cyp3a5_3_on_clmdz (Q900): 'L' from a same-Q-code sibling (this row's label had no unit)
+- unit inherited for effect_of_total_bilirubin_on_clmdz (Q900): 'L' from a same-Q-code sibling (this row's label had no unit)
+- unit inherited for effect_of_bodyweight_v1ohm (Q900): 'L' from a same-Q-code sibling (this row's label had no unit)
+- unit inherited for effect_of_creatinine_clearance_on_clhmg (Q900): 'L' from a same-Q-code sibling (this row's label had no unit)
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'FHMG/1OHM' → 1/h (from the popPK convention: 'The parameter FHMG/1OHM describes the formation rate from 1OHM to HMG. Although the text does not explicitly state the u')
 - metabolite volume: 'V1OHM (L)' Q63→Q61 for 1'-hydroxymidazolam — it is 1-compartment, so its central volume is its only volume
 - metabolite volume: 'VHMG (L)' Q63→Q61 for 1'-hydroxymidazolam glucuronide — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=midazolam
+- edge 1'-hydroxymidazolam → 1'-hydroxymidazolam glucuronide: 'Fm' (Q45) relinked to Q305, the formation parameter the metabolite carries
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- template fit: none — a metabolite is formed from another metabolite (a chain) (site presystemic: 'Keywords cancer, cytochrome P450 3A, midazolam, pharmacogenetics, population pharmacokinetics, Asian patients Cytochrome')
-- pharmacogenetic covariate 'theta_cl_cyp3a5' (cyp3a5) — PGx domain
+- template fit: none — only the metabolite is modelled — no parent compartment (site presystemic: 'Keywords cancer, cytochrome P450 3A, midazolam, pharmacogenetics, population pharmacokinetics, Asian patients Cytochrome')
+- pharmacogenetic covariate 'effect_of_cyp3a5_3_on_clmdz' (cyp3a5) — PGx domain
 - model-stage split: 'final model' is the final model of Seng_2014 (paper reports 2 stages: base model, final model); same population, different model-building step
 - row roles (LLM): model_class=compartmental; 27/27 row label(s) assigned, 20 linked by role; re-tagged parent→1'-hydroxymidazolam ×14, parent→1'-hydroxymidazolam glucuronide ×11
-- gap-filled Q49 (kabs) from Jia_2026's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Heizmann_1983's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Langlois_1987's review values (primary lacked it)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -138,9 +149,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.321 (9/28 fields) | 19 |
+| `gpt-oss-120b` | not confirmed | 0.219 (7/32 fields) | 25 |
 
-<details><summary>19 field discrepancies</summary>
+<details><summary>25 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -149,20 +160,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[clhmg]` |  | 2.01 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clhmg]` | 2.01 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clmdz].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[effect_of_bodyweight_v1ohm]` | 1.96 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_creatinine_clearance_on_clhmg]` | 0.627 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_cyp3a5_3_on_clmdz]` | 0.783 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_total_bilirubin_on_clmdz]` | -0.449 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f1ohm/mdz]` |  | 0.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f1ohm/mdz]` | 0.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fhmg/1ohm]` |  | 0.265 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fhmg/1ohm]` | 0.265 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_bilirubin]` |  | -0.449 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_cl_bodyweight]` |  | 1.55 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_bodyweight]` | 1.55 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_creatinine]` | 0.627 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_cyp3a5]` |  | 0.783 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_clh_creatinine]` |  | 0.627 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_bodyweight]` | 1.96 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_bodyweight]` | 1.55 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_v1_bodyweight]` |  | 1.96 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1ohm]` | 90.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vhmg]` |  | 1 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vhmg]` | 1 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vmdz,c].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[vmdz,c].parameter_id` | Q61 | Q63 | mismatch |
-| `gpt-oss-120b` | `parameters[vmdz,p].parameter_id` | Q64 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[vmdz,c].parameter_id` | Q900 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[vmdz,p].parameter_id` | Q65 | Q61 | mismatch |
 
 </details>
 
@@ -176,7 +193,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 10 |  |
+| C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
@@ -184,21 +201,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Seng_2014_table_p5_1:row6:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Seng_2014_table_p5_1:row9:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Seng_2014_table_p5_1:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Jia_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Seng_2014_table_p5_1:row2:col2'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['Seng_2014_table_p5_1:row8:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Langlois_1987:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Seng_2014_table_p5_1:row7:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Seng_2014_table_p5_1:row10:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Seng_2014_table_p5_1:row4:col2'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Heizmann_1983:review'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Seng_2014_table_p5_1:row4:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14.5 | ['Seng_2014_table_p5_1:row1:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 14.5 L/h | ['Seng_2014_table_p5_1:row1:col2'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 138 L/h | ['Seng_2014_table_p5_1:row6:col2'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 2.01 L/h | ['Seng_2014_table_p5_1:row9:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 27.3 L | ['Seng_2014_table_p5_1:row2:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 90 L | ['Seng_2014_table_p5_1:row7:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1 L | ['Seng_2014_table_p5_1:row10:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 36.1 L | ['Seng_2014_table_p5_1:row4:col2'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 36.1 L | ['Seng_2014_table_p5_1:row4:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -206,10 +221,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 10 scholar param(s) emitted or defaulted | 7 covered | neither emitted nor in defaulted[]: ['V2', 'kabs', 'tlag'] |
+| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 6 covered | neither emitted nor in defaulted[]: ['kabs'] |
+| T3_rate_constant_conversion |  | pass | Fm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
 | T3_shared_parameters |  | pass | 9 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
 | T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -260,4 +277,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmidazolam%5D%20Midazolam_Seng2014_final&body=Drug%3A%20midazolam%0ARecord%3A%20Midazolam_Seng2014_final%0APaper%3A%20Seng_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_midazolam/Midazolam_Seng2014_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 03:08 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 03:13 UTC</sub>

@@ -16,7 +16,7 @@ Thorsteinsson B, Fugleberg S, Binder C. Kinetics of human and porcine insulins i
 
 ## Population and dosing
 
-**Population:** normal and type I diabetic subjects · condition healthy and type I diabetes · age group adult · n = &gt;=10.
+**Population:** normal and type I diabetic subjects · condition healthy and type I diabetes · age group adult.
 
 ## Model
 
@@ -34,7 +34,7 @@ Thorsteinsson B, Fugleberg S, Binder C. Kinetics of human and porcine insulins i
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ Thorsteinsson B, Fugleberg S, Binder C. Kinetics of human and porcine insulins i
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — insulin pork: CL 31 ml.kg-1.min-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has insulin_pork, the second reading porcine insulin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_pork, the second reading porcine insulin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,16 +80,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[median clearance rate of insulin in normal subjects]` | 31 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median clearance rate of insulin in normal subjects]` |  | 31 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | insulin_pork | porcine insulin | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | insulin_pork | porcine insulin | mismatch |
+| `gpt-oss-120b` | `parameters[median clearance rate of insulin in normal subjects]` | 31 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median clearance rate of insulin in normal subjects]` |  | 31 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | insulin_pork | porcine insulin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | insulin_pork | porcine insulin | mismatch |
 
 </details>
 

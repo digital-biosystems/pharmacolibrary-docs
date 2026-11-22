@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;lithium chloride&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LithiumChloride_Rosenthal1986_reference&quot;,&quot;label&quot;:&quot;Rosenthal_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # lithium chloride
 
@@ -22,13 +23,19 @@ Lithium chloride is an antimanic agent used for treating mood disorders. It is a
 |---|---|---|---|---|---|---|
 | lithium_chloride | metabolite | 42.39 | ClLi | DrugBank | — | Hatfield_2001, Martin_2018, Rosenthal_1986 |
 
+## Start here
+
+> **Rosenthal_1986_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adult dogs, n = 8. [Run it in the simulator](drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference.md?tab=Simulation) · [record](drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Not simulated</sub> | [Rosenthal_1986_reference](drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference.md) | — | 1-compartment (no model) | 3 | Rosenthal RC et al., Pharmacokinetics of lithium in the dog, Journal of veterinary pharm… (1986) | [10.1111/j.1365-2885.1986.tb00015.x](https://doi.org/10.1111/j.1365-2885.1986.tb00015.x) |
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hatfield_2001_reference](drugs/drug_lithium_chloride/LithiumChloride_Hatfield2001_reference.md) | — | 1-compartment (no model) | 2 | Hatfield CL et al., Pharmacokinetics and toxic effects of l…, American journal of veterin… (2001) | [10.2460/ajvr.2001.62.1387](https://doi.org/10.2460/ajvr.2001.62.1387) |
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Martin_2018_reference](drugs/drug_lithium_chloride/LithiumChloride_Martin2018_reference.md) | — | 1-compartment (no model) | 6 | Martin LM et al., Pharmacokinetics of intravenous lithium…, Equine veterinary journal (2018) | [10.1111/evj.12778](https://doi.org/10.1111/evj.12778) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: cross_check_disputed</sub> | [Rosenthal_1986_reference](drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Rosenthal RC et al., Pharmacokinetics of lithium in the dog, Journal of veterinary pharm… (1986) | [10.1111/j.1365-2885.1986.tb00015.x](https://doi.org/10.1111/j.1365-2885.1986.tb00015.x) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hatfield_2001_reference](drugs/drug_lithium_chloride/LithiumChloride_Hatfield2001_reference.md) | — | 1-compartment (no model) | 2 | Hatfield CL et al., Pharmacokinetics and toxic effects of l…, American journal of veterin… (2001) | [10.2460/ajvr.2001.62.1387](https://doi.org/10.2460/ajvr.2001.62.1387) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Martin_2018_reference](drugs/drug_lithium_chloride/LithiumChloride_Martin2018_reference.md) | — | 1-compartment (no model) | 6 | Martin LM et al., Pharmacokinetics of intravenous lithium…, Equine veterinary journal (2018) | [10.1111/evj.12778](https://doi.org/10.1111/evj.12778) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,15 +43,6 @@ Lithium chloride is an antimanic agent used for treating mood disorders. It is a
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Repetto_2001_cell_proliferation_total_protein_content](drugs/drug_lithium_chloride/pd_Repetto_2001_cell_proliferation_total_protein_content.md) | cell proliferation (total protein content) ← lithium chloride · stimulation effect | — | Repetto G et al., In vitro effects of lithium and nickel…, Toxicology in vitro : an in… (2001) | [10.1016/s0887-2333(01)00037-6](https://doi.org/10.1016/s0887-2333(01)00037-6) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Peters_2008_Inhibition_of_D3_embryonic_stem_cell_differentiation_into_cardiomyocytes](drugs/drug_lithium_chloride/pd_Peters_2008_Inhibition_of_D3_embryonic_stem_cell_differentia.md) | Inhibition of D3 embryonic stem cell differentiation into cardiomyocytes ← lithium chloride · inhibition effect | — | Peters AK et al., Evaluation of the embryotoxic potency o…, Toxicological sciences : an… (2008) | [10.1093/toxsci/kfn126](https://doi.org/10.1093/toxsci/kfn126) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lithium_chloride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: GSK3A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,7 +62,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 29 matched, 27 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 3
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

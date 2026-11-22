@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;amantadine&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/&quot;},{&quot;label&quot;:&quot;Riley_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amantadine_Jaber2021_reference&quot;,&quot;label&quot;:&quot;Jaber_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Jaber2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amantadine_Ohk2022_reference&quot;,&quot;label&quot;:&quot;Ohk_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Ohk2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amantadine_Riley2026_reference&quot;,&quot;label&quot;:&quot;Riley_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Riley2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amantadine_Kornhuber2006_reference&quot;,&quot;label&quot;:&quot;Kornhuber_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Kornhuber2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amantadine_Riley2026_reference&quot;,&quot;label&quot;:&quot;Riley_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Riley2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amantadine_Jaber2021_reference&quot;,&quot;label&quot;:&quot;Jaber_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Jaber2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amantadine_Ohk2022_reference&quot;,&quot;label&quot;:&quot;Ohk_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Ohk2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Model tmax 0.791 h mismatches paper 0.63 h; bioavailability and lag time use placeholder defaults not from paper.
+> Amantadine model's simulated peak time differs from the paper's, and bioavailability uses library defaults.
 
 <div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Riley2026_reference" status="needs_review" stale="false" population="healthy adult horses" measured-compound="amantadine" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,9 +58,9 @@ Riley HL, Mama KR, Jacobs ME, McKemie DS, Kass PH, Knych HK. Assessment of pharm
 
 ### Reviewer guidance
 
-**Model tmax 0.791 h mismatches paper 0.63 h; bioavailability and lag time use placeholder defaults not from paper.**
+**Amantadine model's simulated peak time differs from the paper's, and bioavailability uses library defaults.**
 
-The simulated time to peak concentration (0.791 h) deviates from the paper-reported value (0.63 h) by a ratio of 1.2549. Bioavailability fraction and absorption lag time were not extracted from the paper, so library placeholders were used instead of fitted estimates. A second reader could not confirm the intercompartmental clearance value of 6.78 mL/min/kg. Extracted — amantadine: kabs 3.16 1/h, V 3.19 L/kg, V2 2.17 L/kg, CL 22.4 mL/min/kg, Q2 6.78 mL/min/kg, Fab 23.2, t1/2z 1.64 h, Vss 5.36 L/kg.
+The simulated time of the peak (0.790571545715297) exceeds the paper's reported value (0.63). The bioavailability parameter is set to a library default rather than an explicit estimate from the paper. The intercompartment clearance value of 6.78 mL/min/kg was not confirmed by the second reader. Extracted — amantadine: kabs 3.16 1/h, V 3.19 L/kg, V2 2.17 L/kg, CL 22.4 mL/min/kg, Q2 6.78 mL/min/kg, Fab 23.2, t1/2z 1.64 h, Vss 5.36 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tvcl2: this record has 6.78, the second reading none. That field does not shape the model.
 
@@ -169,6 +169,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.947, 0 of 1 reader(s) agree | 0.947 | a second reader did not contradict the extraction |
 | T1_cmax | reference | pass | 0.0004789 | 0.000549 | 1.147 | ng/mL→SI vs simulated kg/m3 |
 | T1_tmax | reference | pass | 1 | 0.7906 | 0.7906 | h→SI vs simulated h |
 | T1_tmax | reference | fail | 0.63 | 0.7906 | 1.255 | h→SI vs simulated h |

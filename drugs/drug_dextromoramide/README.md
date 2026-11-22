@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;dextromoramide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dextromoramide_Lanon1989_reference&quot;,&quot;label&quot;:&quot;Lan\u00e7on_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dextromoramide_Lanon1989_reference&quot;,&quot;label&quot;:&quot;Lan\u00e7on_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # dextromoramide
 
@@ -25,7 +25,7 @@ Dextromoramide is a potent opioid analgesic used to treat severe pain. It is pre
 
 ## Start here
 
-> **Lançon_1989_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> surgical patients, n = &lt;|user|&gt; 9. [Run it in the simulator](drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md?tab=Simulation) · [record](drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md)
+> **Lançon_1989_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> surgical patients. [Run it in the simulator](drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md?tab=Simulation) · [record](drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Dextromoramide is a potent opioid analgesic used to treat severe pain. It is pre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Lançon_1989_reference](drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Lançon JP et al., [Pharmacokinetics of dextromoramide in…, Annales francaises d'anesth… (1989) | [10.1016/s0750-7658(89)80015-2](https://doi.org/10.1016/s0750-7658(89)80015-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Lançon_1989_reference](drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Lançon JP et al., [Pharmacokinetics of dextromoramide in…, Annales francaises d'anesth… (1989) | [10.1016/s0750-7658(89)80015-2](https://doi.org/10.1016/s0750-7658(89)80015-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Dextromoramide is a potent opioid analgesic used to treat severe pain. It is pre
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

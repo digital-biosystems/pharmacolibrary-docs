@@ -17,7 +17,7 @@ Sabo JP, Lamson MJ, Leitz G, Yong CL, MacGregor TR. Pharmacokinetics of nevirapi
 
 ## Population and dosing
 
-**Population:** HIV-1 infected patients · age group adult · n = condition.
+**Population:** HIV-1 infected patients · age group adult.
 
 ## Model
 

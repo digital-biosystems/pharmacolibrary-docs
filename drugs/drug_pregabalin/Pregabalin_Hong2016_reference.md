@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;pregabalin&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/&quot;},{&quot;label&quot;:&quot;Hong_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pregabalin_Bae2016_reference&quot;,&quot;label&quot;:&quot;Bae_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chan_2021_LSR28&quot;,&quot;label&quot;:&quot;Chan_2021 \u00b7 LSR28&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/pd_Chan_2021_LSR28.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Miller_2003_monthly_seizure_frequency&quot;,&quot;label&quot;:&quot;Miller_2003 \u00b7 monthly seizure frequency&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/pd_Miller_2003_monthly_seizure_frequency.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pregabalin_Bae2016_reference&quot;,&quot;label&quot;:&quot;Bae_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chan_2021_LSR28&quot;,&quot;label&quot;:&quot;Chan_2021 \u00b7 LSR28&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/pd_Chan_2021_LSR28.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Miller_2003_monthly_seizure_frequency&quot;,&quot;label&quot;:&quot;Miller_2003 \u00b7 monthly seizure frequency&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/pd_Miller_2003_monthly_seizure_frequency.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pregabalin — `Pregabalin_Hong2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:19 UTC (Needs review), but the paper was screened again on 2026-10-07 07:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. CL has no unit.
+> CL and MTT have no unit.
 
-<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Hong2016_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="pregabalin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Hong2016_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="pregabalin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hong T, Han S, Lee J, Jeon S, Yim DS. Comparison of oral absorption models for pregabalin: usefulness of transit compartment model. Drug design, development and therapy 10:3995–4003 (2016).
@@ -46,7 +46,7 @@ Hong T, Han S, Lee J, Jeon S, Yim DS. Comparison of oral absorption models for p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Hong T, Han S, Lee J, Jeon S, Yim DS. Comparison of oral absorption models for p
 
 ### Reviewer guidance
 
-**CL has no unit.**
+**CL and MTT have no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — pregabalin: CL 0.511, V2/F 18 L, Q/F 26.5 L/h, V3/F 27 L, MTT 0.879, n_transit 3.61, V/F 109 L, kabs 2 h À1, … (+1).
 

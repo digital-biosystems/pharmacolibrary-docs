@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Kumpulainen_2010_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_Kumpulainen2010v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-07 14:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is not a compartmental popPK model because it lacks distribution volume and clearance/elimination parameters.
+> The flurbiprofen record is rejected because the source paper reports exposure/outcome data without a compartmental population pharmacokinetic model.
 
-<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Kumpulainen2010v2_reference" status="rejected" stale="true" population="children aged 3 months to 13 years" measured-compound="flurbiprofen" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Kumpulainen2010v2_reference" status="rejected" stale="false" population="children aged 3 months to 13 years" measured-compound="flurbiprofen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Kumpulainen E, Välitalo P, Kokki M, Lehtonen M, Hooker A, Ranta VP et al. Plasma and cerebrospinal fluid pharmacokinetics of flurbiprofen in children. British journal of clinical pharmacology 70(4):557–566 (2010).
@@ -17,7 +17,7 @@ Kumpulainen E, Välitalo P, Kokki M, Lehtonen M, Hooker A, Ranta VP et al. Plasm
 
 ## Population and dosing
 
-**Population:** children aged 3 months to 13 years · condition healthy · age group child · n = ? The text says '64 healthy children', but n_subjects expects an integer..
+**Population:** children aged 3 months to 13 years · condition healthy · age group child.
 
 **Dosing:** 63, 70 mg, oral, iv, single.
 
@@ -50,7 +50,7 @@ Kumpulainen E, Välitalo P, Kokki M, Lehtonen M, Hooker A, Ranta VP et al. Plasm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,9 +60,9 @@ Kumpulainen E, Välitalo P, Kokki M, Lehtonen M, Hooker A, Ranta VP et al. Plasm
 
 ### Reviewer guidance
 
-**The record is not a compartmental popPK model because it lacks distribution volume and clearance/elimination parameters.**
+**The flurbiprofen record is rejected because the source paper reports exposure/outcome data without a compartmental population pharmacokinetic model.**
 
-The model structure includes a parent-metabolite link from flurbiprofen axetil to flurbiprofen, but no elimination or clearance terms are defined for the measured compound. Additionally, the uptake to CSF parameter has a non-standard unit that could not be converted to SI, leading to a dimension mismatch on a structural parameter. The paper is an exposure/outcome study rather than a standard pharmacokinetic modeling effort. Extracted — flurbiprofen: Fab 0.81, k12 5.5 l h⁻¹, tlag 0.11 h, kabs 29 l h⁻¹, fu 0.00031, Q 0.12 l h⁻¹, kuptake 6.8 UPTK.
+The established reason is that the paper lacks a distribution volume and any clearance or elimination rate constant, meaning it does not define a compartmental pharmacokinetic structure. Additionally, the reported unit 'l h⁻¹' for the intercompartmental clearance parameter could not be converted to standard SI units. The second reader disagreed on the identification of the dose compound and the existence of a metabolism link to flurbiprofen axetil. Extracted — flurbiprofen: Fab 0.81, k12 5.5 l h⁻¹, tlag 0.11 h, kabs 29 l h⁻¹, fu 0.00031, Q 0.12 l h⁻¹, kuptake 6.8 UPTK.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen axetil; flurbiprofen, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -4,11 +4,11 @@
 
 # eplontersen — `Eplontersen_Diep2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:49 UTC (Rejected), but the paper was screened again on 2026-10-07 04:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Eplontersen record was rejected because the absorption rate constant of 29.6% is dimensionally invalid for a rate parameter.
+> Eplontersen’s absorption rate constant is reported as 29.6%, a dimensionless value incompatible with a rate constant, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="eplontersen" model-id="Eplontersen_Diep2022_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="eplontersen" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="eplontersen" model-id="Eplontersen_Diep2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="eplontersen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Diep JK, Yu RZ, Viney NJ, Schneider E, Guo S, Henry S et al. Population pharmacokinetic/pharmacodynamic modelling of eplontersen, an antisense oligonucleotide in development for transthyretin amyloidosis. British journal of clinical pharmacology 88(12):5389–5398 (2022).
@@ -35,7 +35,7 @@ Diep JK, Yu RZ, Viney NJ, Schneider E, Guo S, Henry S et al. Population pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +45,13 @@ Diep JK, Yu RZ, Viney NJ, Schneider E, Guo S, Henry S et al. Population pharmaco
 
 ### Reviewer guidance
 
-**Eplontersen record was rejected because the absorption rate constant of 29.6% is dimensionally invalid for a rate parameter.**
+**Eplontersen’s absorption rate constant is reported as 29.6%, a dimensionless value incompatible with a rate constant, so the record was rejected.**
 
-The record lacks volume of distribution and clearance, identifying it as an exposure/outcome summary rather than a compartmental model. The absorption rate constant is assigned a value of 29.6 with units of percent, which is dimensionally inconsistent with a first-order rate constant. The second reader noted the absence of a defined metabolic link between eplontersen and transthyretin. Extracted — eplontersen: kabs 29.6 %, t1/2z 25.5 days.
+The paper was read from its abstract alone, so reported summary statistics stood in for a fitted model. The record links eplontersen to transthyretin (TTR) through metabolism, whereas the second reader recorded no such link; the recorded abdomen/arm ratio is absent, while the second reader reported 1.18. Extracted — eplontersen: kabs 29.6 %, t1/2z 25.5 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has eplontersen → transthyretin (ttr) (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

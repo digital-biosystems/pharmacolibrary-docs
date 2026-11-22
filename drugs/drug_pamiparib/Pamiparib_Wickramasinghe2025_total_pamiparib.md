@@ -4,11 +4,11 @@
 
 # pamiparib — `Pamiparib_Wickramasinghe2025_total_pamiparib`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-06 22:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pamiparib's record was refused because the peripheral volume parameter V2/F=17 L failed a dimension check and the model structure contains an unreachable compartment.
+> PCC unit for time-zero concentration is dimensionally wrong, and a compartment lacks a dose path.
 
-<div class="pk-model-meta" hidden drug="pamiparib" model-id="Pamiparib_Wickramasinghe2025_total_pamiparib" status="rejected" stale="true" population="glioblastoma patients" measured-compound="pamiparib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pamiparib" model-id="Pamiparib_Wickramasinghe2025_total_pamiparib" status="rejected" stale="false" population="glioblastoma patients" measured-compound="pamiparib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Wickramasinghe C, Kim S, Jiang Y, Bao X, Yue Y, Jiang J et al. Population Pharmacokinetic Modeling of Total and Unbound Pamiparib in Glioblastoma Patients: Insights into Drug Disposition and Dosing Optimization. Pharmaceutics 17(4) (2025).
@@ -16,7 +16,7 @@ Wickramasinghe C, Kim S, Jiang Y, Bao X, Yue Y, Jiang J et al. Population Pharma
 
 ## Population and dosing
 
-**Population:** glioblastoma patients · condition glioblastoma · age group adult · n = $41.
+**Population:** glioblastoma patients · condition glioblastoma · age group adult.
 
 **Dosing:** 60 mg, oral, multiple, every 12 h.
 
@@ -43,7 +43,7 @@ Wickramasinghe C, Kim S, Jiang Y, Bao X, Yue Y, Jiang J et al. Population Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Wickramasinghe C, Kim S, Jiang Y, Bao X, Yue Y, Jiang J et al. Population Pharma
 
 ### Reviewer guidance
 
-**Pamiparib's record was refused because the peripheral volume parameter V2/F=17 L failed a dimension check and the model structure contains an unreachable compartment.**
+**PCC unit for time-zero concentration is dimensionally wrong, and a compartment lacks a dose path.**
 
-The review identified a dimension mismatch for the volume of distribution of the peripheral compartment adjusted for bioavailability. Additionally, the model topology includes a compartment that has no path from the dose administration site. Some parameter values in the record, such as the unbound fraction fu, could not be processed into a standard unit format. Extracted — pamiparib: kabs 1.71 h−1, V2/F 17 L, CL/F 7.76 L/h, fu 0.041 Fu, C0 0.0089 PCC, Vmax 0.35, V/F 44 L.
+The time-zero concentration (0.0089) uses unit PCC, which implies volume but requires mass concentration, causing a dimension conflict. The model structure includes an orphan compartment with no path from the dose. The PCC unit could not be converted to standard SI units, so the parameter value was not processed. A second reader also disagreed on several parameter values, including the time-zero concentration (0.0094 vs 0.0089). Extracted — pamiparib: kabs 1.71 h−1, V2/F 17 L, CL/F 7.76 L/h, fu 0.041 Fu, C0 0.0089 PCC, Vmax 0.35, V/F 44 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pamiparib, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

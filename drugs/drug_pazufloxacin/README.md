@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;pazufloxacin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazufloxacin_Umezaki2022_reference&quot;,&quot;label&quot;:&quot;Umezaki_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazufloxacin_Umezaki2022_reference&quot;,&quot;label&quot;:&quot;Umezaki_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # pazufloxacin
 
@@ -25,7 +25,7 @@ Pazufloxacin is a fluoroquinolone antibiotic used to treat tuberculosis. It is a
 
 ## Start here
 
-> **Umezaki_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> infected neutropenic mice. [Run it in the simulator](drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md?tab=Simulation) · [record](drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md)
+> **Umezaki_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> infected neutropenic mice. [Run it in the simulator](drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md?tab=Simulation) · [record](drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,15 +33,7 @@ Pazufloxacin is a fluoroquinolone antibiotic used to treat tuberculosis. It is a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Umezaki_2022_reference](drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Umezaki Y et al., Concentration-Dependent Activity of Paz…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11070982](https://doi.org/10.3390/antibiotics11070982) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pazufloxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: cross_check_disputed</sub> | [Umezaki_2022_reference](drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Umezaki Y et al., Concentration-Dependent Activity of Paz…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11070982](https://doi.org/10.3390/antibiotics11070982) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +53,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

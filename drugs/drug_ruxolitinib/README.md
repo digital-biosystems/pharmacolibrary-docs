@@ -37,7 +37,7 @@ Ruxolitinib is a Janus kinase inhibitor used to treat conditions such as myelofi
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Appeldoorn_2023_reference](drugs/drug_ruxolitinib/Ruxolitinib_Appeldoorn2023_reference.md) | — | 2-compartment (no model) | 4 | Appeldoorn TYJ et al., Pharmacokinetics and Pharmacodynamics o…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01225-7](https://doi.org/10.1007/s40262-023-01225-7) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hurwitz_2021_reference](drugs/drug_ruxolitinib/Ruxolitinib_Hurwitz2021_reference.md) | — | 1-compartment (no model) | 0 | Hurwitz SJ et al., Pharmacokinetics of Ruxolitinib in HIV…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1930](https://doi.org/10.1002/jcph.1930) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Isberner_2021_reference](drugs/drug_ruxolitinib/Ruxolitinib_Isberner2021_reference.md) | — | 1-compartment (no model) | 0 | Isberner N et al., Ruxolitinib exposure in patients with a…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04351-w](https://doi.org/10.1007/s00280-021-04351-w) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Tachet_2026_reference](drugs/drug_ruxolitinib/Ruxolitinib_Tachet2026_reference.md) | — | 1-compartment (no model) | 4 | Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70367](https://doi.org/10.1002/cpt.70367) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Tachet_2026_reference](drugs/drug_ruxolitinib/Ruxolitinib_Tachet2026_reference.md) | — | 1-compartment (no model) | 4 | Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70367](https://doi.org/10.1002/cpt.70367) |
 
 ## Pharmacodynamics (PD)
 
@@ -45,21 +45,6 @@ Ruxolitinib is a Janus kinase inhibitor used to treat conditions such as myelofi
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polepally_2026_PLT](drugs/drug_ruxolitinib/pd_Polepally_2026_PLT.md) | platelet count ← ruxolitinib · indirect response — drug inhibits the loss of platelet count | model (no simulator) | Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polepally_2026_SV](drugs/drug_ruxolitinib/pd_Polepally_2026_SV.md) | spleen volume ← ruxolitinib · indirect response — drug inhibits the production of spleen volume | model (no simulator) | Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ruxolitinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: JAK1 (inhibitor), JAK2 (inhibitor), JAK3 (inhibitor), PLAUR (inhibitor), TYK2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,13 +58,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:57 | 5:27 | 1/4/0 | 1/0/0 | 0/0/0 | 257,583/19,693 | einfracz / qwen3.8-27b | 9 | 3/6 | 7/2 | 0 |
+| 2026-10-07 07:57 | 5:27 | 1/4/0 | 2/0/0 | 0/0/0 | 257,583/19,693 | einfracz / qwen3.8-27b | 9 | 3/6 | 7/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 16 matched, 15 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 1  ·  needs review 0  ·  rejected 4  ·  stale 1
+- **records:** 5  ·  extracted 1  ·  needs review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

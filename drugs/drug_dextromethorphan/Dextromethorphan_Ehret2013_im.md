@@ -4,11 +4,11 @@
 
 # dextromethorphan — `Dextromethorphan_Ehret2013_im`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:15 UTC (Rejected), but the paper was screened again on 2026-10-06 22:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Dextromethorphan's hepatic bioavailability parameter was recorded with a count unit (n = 16) instead of a dimensionless fraction, causing a dimension mismatch.
+> The elimination rate constant for dextromethorphan was recorded as a half-life (0.028 h), creating a dimension mismatch between time and inverse time.
 
-<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_im" status="rejected" stale="true" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_im" status="rejected" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ehret GB, Daali Y, Chabert J, Rebsamen M, Wolff A, Forster A et al. Influence of CYP2D6 activity on pre-emptive analgesia by the N-methyl-D-aspartate antagonist dextromethorphan in a randomized controlled trial of acute pain. Pain physician 16(1):45–56 (2013).
@@ -37,7 +37,7 @@ Ehret GB, Daali Y, Chabert J, Rebsamen M, Wolff A, Forster A et al. Influence of
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Ehret GB, Daali Y, Chabert J, Rebsamen M, Wolff A, Forster A et al. Influence of
 
 ### Reviewer guidance
 
-**Dextromethorphan's hepatic bioavailability parameter was recorded with a count unit (n = 16) instead of a dimensionless fraction, causing a dimension mismatch.**
+**The elimination rate constant for dextromethorphan was recorded as a half-life (0.028 h), creating a dimension mismatch between time and inverse time.**
 
-The record lists hepatic bioavailability as 13.2 with the unit 'n = 16', which is incompatible with the required dimensionless fraction for a bioavailability parameter. This inconsistency triggered a dimension mismatch failure during the review of the structural parameters. A second reader also disagreed on the identity of the dextromethorphan terminal half-life parameter, but the primary rejection was due to the unit error. Extracted — dextromethorphan: CL 34 l/h, kel 0.028 h, FH 13.2 n = 16.
+The parameter labeled 't1/2 DM (h)' has a value of 0.028 with units of hours, indicating it is a half-life. Its defined meaning is the elimination rate constant, which requires units of inverse time (1/h). This conflict between the time dimension of the value and the inverse time dimension of the parameter caused the record to be rejected. Extracted — dextromethorphan: CL 34 l/h, kel 0.028 h, FH 13.2 n = 16.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t1/2 dm].parameter_id`: this record has Q47, the second reading Q59. That field shapes the model, so the record is marked disputed.
 

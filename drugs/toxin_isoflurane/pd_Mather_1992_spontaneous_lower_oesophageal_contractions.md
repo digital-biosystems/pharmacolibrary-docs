@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Isoflurane inhibits spontaneous lower oesophageal contractions. The model includes EC50 and EC95 values of 1.27% and 2.13%, respectively.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Mather_1992`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

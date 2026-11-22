@@ -4,11 +4,11 @@
 
 # vosoritide — `Vosoritide_Qi2024_median`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 03:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant was recorded in undefined units, preventing dimensional consistency and causing rejection.
+> Vosoritide’s absorption rate constant kabs (2.3) has a dimensionally incompatible, unconvertible unit, contributing to the record’s rejection.
 
-<div class="pk-model-meta" hidden drug="vosoritide" model-id="Vosoritide_Qi2024_median" status="rejected" stale="true" population="children with achondroplasia" measured-compound="vosoritide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vosoritide" model-id="Vosoritide_Qi2024_median" status="rejected" stale="false" population="children with achondroplasia" measured-compound="vosoritide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Qi Y, Chan ML, Mould DR, Larimore K, Fisheleva E, Cherukuri A et al. Development of a Weight-Band Dosing Approach for Vosoritide in Children with Achondroplasia Using a Population Pharmacokinetic Model. Clinical pharmacokinetics 63(5):707–719 (2024).
@@ -16,7 +16,7 @@ Qi Y, Chan ML, Mould DR, Larimore K, Fisheleva E, Cherukuri A et al. Development
 
 ## Population and dosing
 
-**Population:** children with achondroplasia · condition achondroplasia · age group child · n = &lt;unknown&gt;.
+**Population:** children with achondroplasia · condition achondroplasia · age group child.
 
 **Dosing:** 0.175, 0.525, 1.05, 2.1 mg, sc, multiple, every 24 h.
 
@@ -41,7 +41,7 @@ Qi Y, Chan ML, Mould DR, Larimore K, Fisheleva E, Cherukuri A et al. Development
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Qi Y, Chan ML, Mould DR, Larimore K, Fisheleva E, Cherukuri A et al. Development
 
 ### Reviewer guidance
 
-**The absorption rate constant was recorded in undefined units, preventing dimensional consistency and causing rejection.**
+**Vosoritide’s absorption rate constant kabs (2.3) has a dimensionally incompatible, unconvertible unit, contributing to the record’s rejection.**
 
-The parameter labeled Ka1 has a value of 2.3 with units listed as 'units', which is not a standard pharmacokinetic unit, creating a dimension mismatch. The clearance and volume parameters have valid units (L/h and L), but the absorption constant's ambiguous unit prevents proper model validation. A second reader also disputed the presence of a second absorption rate constant (0.06) and covariate effects for weight. Extracted — vosoritide: CL/F 47.7 L/h, V/F 18.4 L, kabs 2.3 units, λ2 0.06 units.
+The record reports kabs as 2.3 and λ2 as 0.06, both with the unit “units”; for both, that unit has dimensions of luminosity per length squared rather than inverse time, and could not be converted to SI. A second reader disputed λ2=0.06, reporting no value, and identified a change point of 0.3 and a time effect on bioavailability of 0.21, neither of which appears in this record. Extracted — vosoritide: CL/F 47.7 L/h, V/F 18.4 L, kabs 2.3 units, λ2 0.06 units.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of change-point: this record has none, the second reading 0.3; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -4,11 +4,11 @@
 
 # daridorexant — `Daridorexant_Krause2023_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:49 UTC (Rejected), but the paper was screened again on 2026-10-06 20:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The daridorexant record was rejected due to a dimension mismatch on a structural parameter caused by an unconvertible unit.
+> Daridorexant’s Vmax, the maximum metabolic rate, was reported as 6.94 mg/h and cited for a unit-dimension mismatch, though both stated dimensions are mass/time.
 
-<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_final" status="rejected" stale="true" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_final" status="rejected" stale="false" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokinetic modeling of daridorexant, a novel dual orexin receptor antagonist. CPT: pharmacometrics & systems pharmacology 12(1):74–86 (2023).
@@ -51,7 +51,7 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,13 +61,13 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 ### Reviewer guidance
 
-**The daridorexant record was rejected due to a dimension mismatch on a structural parameter caused by an unconvertible unit.**
+**Daridorexant’s Vmax, the maximum metabolic rate, was reported as 6.94 mg/h and cited for a unit-dimension mismatch, though both stated dimensions are mass/time.**
 
-The review identified a dimensional inconsistency in a structural parameter because its reported unit could not be converted to standard SI units. Consequently, the parameter lacks a valid standardized value for the two-compartment model. This prevents the calculation of accurate volume or clearance estimates for the drug. Extracted — daridorexant: Fab 0.41, tlag 0.41 h, kabs 1.05 1/h, V1 14.6 L, V2 13.7 L, Q 3.58 L/h, Vmax 6.94 mg/h, Km 2.36 μg/ml.
+The recorded mismatch assigns mg/h to a structural parameter and compares mass/time with mass/time, so the stated dimensions do not show a mismatch. A reported unit could not be converted to SI, but the record does not identify which unit. A second reader disagreed with the reported intercompartmental clearance of 3.58 and the lean-body-weight effect on central volume of 0.49. Extracted — daridorexant: Fab 0.41, tlag 0.41 h, kabs 1.05 1/h, V1 14.6 L, V2 13.7 L, Q 3.58 L/h, Vmax 6.94 mg/h, Km 2.36 μg/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daridorexant, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

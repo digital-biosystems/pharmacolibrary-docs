@@ -16,7 +16,7 @@ Lalonde RL, O'Rear TL, Wainer IW, Drda KD, Herring VL, Bottorff MB. Labetalol ph
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=9.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 

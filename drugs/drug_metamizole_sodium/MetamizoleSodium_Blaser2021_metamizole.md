@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;metamizole sodium&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/&quot;},{&quot;label&quot;:&quot;Blaser_2021 \u00b7 metamizole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metamizole sodium — `MetamizoleSodium_Blaser2021_metamizole`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-22 11:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No metabolic clearance values were provided for the links between metamizole sodium and its four metabolites, leaving those compartments unreachable from the dose.
+> 4-methylaminoantipyrine’s apparent intercompartmental clearance Q was reported as 0.030 1/h, a rate unit rather than a volume-per-time unit.
 
-<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_metamizole" status="rejected" stale="true" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_metamizole" status="rejected" stale="false" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al. Comparative Effects of Metamizole (Dipyrone) and Naproxen on Renal Function and Prostacyclin Synthesis in Salt-Depleted Healthy Subjects - A Randomized Controlled Parallel Group Study. Frontiers in pharmacology 12:620635 (2021).
@@ -17,7 +17,7 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 ## Population and dosing
 
-**Population:** healthy salt-depleted adults · condition healthy · age group adult · n = &gt; 15.
+**Population:** healthy salt-depleted adults · condition healthy · age group adult.
 
 **Dosing:** 1000 mg, oral, multiple, every 8 h.
 
@@ -53,7 +53,7 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.054). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.054). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,13 +63,13 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 ### Reviewer guidance
 
-**No metabolic clearance values were provided for the links between metamizole sodium and its four metabolites, leaving those compartments unreachable from the dose.**
+**4-methylaminoantipyrine’s apparent intercompartmental clearance Q was reported as 0.030 1/h, a rate unit rather than a volume-per-time unit.**
 
-The record lacks quantitative rate constants for the metabolic pathways connecting the parent drug to its four metabolites. Without these specific parameters, the model structure contains orphan compartments that have no path from the administered dose. This structural gap causes the metabolites to be disconnected from the dosing event. Extracted — 4-methylaminoantipyrine: kabs 2.53 1/h, V1/F 71.2 L, Q 0.03 1/h, kel 0.178 1/h, t1/2z 0.36 h; 4-aminoantipyrine: V1/F 35.6 L, Q 0.552 1/h, kel 0.008 1/h, t1/2z 2.39 h; 4-acetylaminoantipyrine: V1/F 55.1 L, kel 0.074 1/h, t1/2z 10.3 h; 4-formylaminoantipyrine: V1/F 11.5 L, kel 0.567 1/h, t1/2z 6.95 h.
+The record gives Q a meaning of apparent intercompartmental clearance, but its reported 1/h unit conflicts with the required volume-per-time dimension. The unit could not be converted to an SI value, so this clearance lacked an SI value. The findings also flag an unreachable compartment or unlinked metabolite, although the recorded metabolism links connect metamizole sodium to each listed metabolite. Extracted — 4-methylaminoantipyrine: kabs 2.53 1/h, V1/F 71.2 L, Q 0.03 1/h, kel 0.178 1/h, t1/2z 0.36 h; 4-aminoantipyrine: V1/F 35.6 L, Q 0.552 1/h, kel 0.008 1/h, t1/2z 2.39 h; 4-acetylaminoantipyrine: V1/F 55.1 L, kel 0.074 1/h, t1/2z 10.3 h; 4-formylaminoantipyrine: V1/F 11.5 L, kel 0.567 1/h, t1/2z 6.95 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 4-methylaminoantipyrine, the second reading 4-MAA; it also differs on 34 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

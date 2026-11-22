@@ -4,11 +4,11 @@
 
 # avalglucosidase alfa — `AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:10 UTC (Rejected), but the paper was screened again on 2026-10-05 10:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for avalglucosidase alfa was rejected due to a dimension mismatch on the total clearance parameter.
+> The record was rejected because the dimension of the intercompartmental clearance parameter conflicted with its assigned unit of mass per time.
 
-<div class="pk-model-meta" hidden drug="avalglucosidase alfa" model-id="AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv" status="rejected" stale="true" population="pediatric and adult patients with Pompe disease" measured-compound="avalglucosidase_alfa" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="avalglucosidase alfa" model-id="AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv" status="rejected" stale="false" population="pediatric and adult patients with Pompe disease" measured-compound="avalglucosidase_alfa" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Tiraboschi G, Marchionni D, Tuffal G, Fabre D, Martinez JM, Haack KA et al. Population pharmacokinetic modeling and dosing simulation of avalglucosidase alfa for selecting alternative dosing regimen in pediatric patients with late-onset pompe disease. Journal of pharmacokinetics and pharmacodynamics 50(6):461–474 (2023).
@@ -16,7 +16,7 @@ Tiraboschi G, Marchionni D, Tuffal G, Fabre D, Martinez JM, Haack KA et al. Popu
 
 ## Population and dosing
 
-**Population:** pediatric and adult patients with Pompe disease · condition Pompe disease · age group mixed · n = &gt;=91.
+**Population:** pediatric and adult patients with Pompe disease · condition Pompe disease · age group mixed.
 
 **Dosing:** 1400, 2800 mg, iv, multiple, every 336 h.
 
@@ -46,7 +46,7 @@ Tiraboschi G, Marchionni D, Tuffal G, Fabre D, Martinez JM, Haack KA et al. Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Tiraboschi G, Marchionni D, Tuffal G, Fabre D, Martinez JM, Haack KA et al. Popu
 
 ### Reviewer guidance
 
-**The record for avalglucosidase alfa was rejected due to a dimension mismatch on the total clearance parameter.**
+**The record was rejected because the dimension of the intercompartmental clearance parameter conflicted with its assigned unit of mass per time.**
 
-The check identified a dimension mismatch specifically affecting the total clearance parameter, valued at 0.808 L/h. This structural parameter issue triggered the rejection verdict. Additionally, the second reader disagreed with several covariate effect values, including the weight effect on volume of distribution, suggesting further inconsistencies in the parameter assignment. Extracted — avalglucosidase alfa: CL 0.808 L/h, V1 3.37 L, Vmax 12 mg/h, Km 0.541 µg/mL, Q 0.254 L/h, V2 296 L, Q3 1.87 L/h, V3 1.31 L.
+The structural parameter representing intercompartmental clearance between the central and second peripheral compartments was labeled with a unit of mass per time, specifically 12 mg/h. This dimension is incompatible with clearance, which requires a volume per time dimension such as liters per hour. Although the peripheral volume is correctly listed as 296 L, the unit assignment for the clearance term creates a fundamental dimensional error in the model structure. Extracted — avalglucosidase alfa: CL 0.808 L/h, V1 3.37 L, Vmax 12 mg/h, Km 0.541 µg/mL, Q 0.254 L/h, V2 296 L, Q3 1.87 L/h, V3 1.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has avalglucosidase_alfa, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

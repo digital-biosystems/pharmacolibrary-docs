@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;caplacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/&quot;},{&quot;label&quot;:&quot;Jansen_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caplacizumab_Fan2025_reference&quot;,&quot;label&quot;:&quot;Fan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caplacizumab_Fan2025_reference&quot;,&quot;label&quot;:&quot;Fan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model for caplacizumab was rejected because the peripheral compartment, with volume 4730 mL, lacks a connection to the central compartment.
+> Caplacizumab’s reported peripheral volume, V2 (4730 mL), appears in a record rejected for an unreachable or orphan compartment.
 
 <div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_Jansen2026_reference" status="rejected" stale="false" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Jansen E, Bockstal V, Herschke F, Olsson Gisleskog P, Rinaldi M, Boerboom A et a
 
 ### Reviewer guidance
 
-**The two-compartment model for caplacizumab was rejected because the peripheral compartment, with volume 4730 mL, lacks a connection to the central compartment.**
+**Caplacizumab’s reported peripheral volume, V2 (4730 mL), appears in a record rejected for an unreachable or orphan compartment.**
 
-The structural check identified an orphan compartment, meaning the peripheral volume of 4730 mL is not linked to the central compartment. Although clearances and central volume are provided, the absence of an inter-compartmental link renders the topology invalid. A second reader disagreed with the extracted clearance value of 16.4 mL/h, citing a null finding, and identified an additional parameter of 71.8 mL/h not present in the record. Extracted — caplacizumab: CL 16.4 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
+The record describes a two-compartment model, with V1 of 3620 mL and V2 of 4730 mL. The stated reason means a compartment has no path from the dose, but the finding does not identify which compartment, so it does not explicitly link the issue to V2. Extracted — caplacizumab: CL 16.4 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 16.4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

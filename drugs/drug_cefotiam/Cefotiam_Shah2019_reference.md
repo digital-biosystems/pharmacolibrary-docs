@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefotiam&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/&quot;},{&quot;label&quot;:&quot;Shah_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefotiam_Burlot2026_reference&quot;,&quot;label&quot;:&quot;Burlot_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Burlot2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefotiam_Irby2021_reference&quot;,&quot;label&quot;:&quot;Irby_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Irby2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefotiam_Shah2019_reference&quot;,&quot;label&quot;:&quot;Shah_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Shah2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefotiam_Shah2019_reference&quot;,&quot;label&quot;:&quot;Shah_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Shah2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefotiam_Burlot2026_reference&quot;,&quot;label&quot;:&quot;Burlot_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Burlot2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefotiam_Irby2021_reference&quot;,&quot;label&quot;:&quot;Irby_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Irby2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefotiam — `Cefotiam_Shah2019_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Shah2019_reference" status="simulated" stale="false" population="patients with cystic fibrosis and healthy volunteers" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
+> Cefotiam’s unbound steady-state volume of distribution (27.1 L) was classified differently by the second reader, leaving the record under review.
+
+<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Shah2019_reference" status="needs_review" stale="false" population="patients with cystic fibrosis and healthy volunteers" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shah NR, Bulitta JB, Kinzig M, Landersdorfer CB, Jiao Y, Sutaria DS et al. Novel Population Pharmacokinetic Approach to Explain the Differences between Cystic Fibrosis Patients and Healthy Volunteers via Protein Binding. Pharmaceutics 11(6) (2019).
@@ -29,6 +31,8 @@ Shah NR, Bulitta JB, Kinzig M, Landersdorfer CB, Jiao Y, Sutaria DS et al. Novel
 <figure class="pk-models-diagram"><img src="drugs/drug_cefotiam/Cefotiam_Shah2019_reference/Cefotiam_Shah2019_reference.svg" alt="Cefotiam_Shah2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Unbound total clearance | CLu | 34.8 | L/h |
@@ -41,7 +45,7 @@ Shah NR, Bulitta JB, Kinzig M, Landersdorfer CB, Jiao Y, Sutaria DS et al. Novel
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +55,13 @@ Shah NR, Bulitta JB, Kinzig M, Landersdorfer CB, Jiao Y, Sutaria DS et al. Novel
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Cefotiam’s unbound steady-state volume of distribution (27.1 L) was classified differently by the second reader, leaving the record under review.**
 
-The base model was simulated, not the covariate effects the record defines.
+The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. A second reader assigned a different parameter identity to cefotiam’s 27.1 L volume of distribution at steady state; cross-reader agreement was 0.875, with 0 of 1 reader agreeing. Extracted — cefotiam: CLu 34.8 L/h, V 27.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[unbound volume of distribution at steady-state].parameter_id`: this record has Q61, the second reading Q65. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -128,15 +132,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=cefotiam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | skipped | 14 | 0.3535 | unresolved time unit '%' |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=cefotiam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
+| T1_t_half_beta | reference | skipped | 14 | 0.3535 |  | unresolved time unit '%' |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # dextromethorphan — `Dextromethorphan_Ehret2013_pm`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:16 UTC (Rejected), but the paper was screened again on 2026-10-06 22:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant has a time unit inconsistent with a rate, causing a dimension mismatch rejection.
+> The dextromethorphan elimination half-life of 0.073 h is assigned as a rate constant, creating a time vs inverse-time dimensional conflict.
 
-<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_pm" status="rejected" stale="true" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_pm" status="rejected" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ehret GB, Daali Y, Chabert J, Rebsamen M, Wolff A, Forster A et al. Influence of CYP2D6 activity on pre-emptive analgesia by the N-methyl-D-aspartate antagonist dextromethorphan in a randomized controlled trial of acute pain. Pain physician 16(1):45–56 (2013).
@@ -37,7 +37,7 @@ Ehret GB, Daali Y, Chabert J, Rebsamen M, Wolff A, Forster A et al. Influence of
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Ehret GB, Daali Y, Chabert J, Rebsamen M, Wolff A, Forster A et al. Influence of
 
 ### Reviewer guidance
 
-**The elimination rate constant has a time unit inconsistent with a rate, causing a dimension mismatch rejection.**
+**The dextromethorphan elimination half-life of 0.073 h is assigned as a rate constant, creating a time vs inverse-time dimensional conflict.**
 
-The parameter labeled as the elimination rate constant has a value of 0.073 in hours, which corresponds to a half-life rather than a rate. This discrepancy resulted in a dimension mismatch on a structural parameter because the unit could not be converted to SI units. A second reader disagreed on the specific parameter identifier, but the dimensional error stands. Extracted — dextromethorphan: CL 17 l/h, kel 0.073 h, FH 26.2 n = 4.
+The record lists dextromethorphan with a parameter labeled t1/2 DM, value 0.073, and unit h, yet defines it as the elimination rate constant. The reviewer found the unit hour (time) incompatible with the rate constant (inverse-time) requirement. Additionally, the hepatic bioavailability parameter has unit n = 4, which is not a standard dimensionless identifier, suggesting a data entry error. Extracted — dextromethorphan: CL 17 l/h, kel 0.073 h, FH 26.2 n = 4.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t1/2 dm].parameter_id`: this record has Q47, the second reading Q59. That field shapes the model, so the record is marked disputed.
 

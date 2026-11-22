@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Sukeishi_2022 \u00b7 final_model_1485&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_estimates&quot;,&quot;label&quot;:&quot;Sukeishi_2022_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_estimates.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_estimates&quot;,&quot;label&quot;:&quot;Sukeishi_2022_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_final_model_1485&quot;,&quot;label&quot;:&quot;Sukeishi_2022_final_model_1485&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_final_model_1485.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Sukeishi2022_final_model_1485`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The remdesivir metabolite model was rejected because the apparent clearance value of 11.8 L/h failed plausibility checks.
+> The absorption rate constant for remdesivir was defaulted rather than estimated, making the input assumptions unsupported.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Sukeishi2022_final_model_1485" status="rejected" stale="false" population="Japanese patients with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Sukeishi2022_final_model_1485" status="needs_review" stale="false" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sukeishi A, Itohara K, Yonezawa A, Sato Y, Matsumura K, Katada Y et al. Population pharmacokinetic modeling of GS-441524, the active metabolite of remdesivir, in Japanese COVID-19 patients with renal dysfunction. CPT: pharmacometrics & systems pharmacology 11(1):94–103 (2022).
@@ -17,7 +17,7 @@ Sukeishi A, Itohara K, Yonezawa A, Sato Y, Matsumura K, Katada Y et al. Populati
 
 ## Population and dosing
 
-**Population:** Japanese patients with COVID-19 and renal dysfunction · condition COVID-19 · age group adult · n = 37.
+**Population:** Japanese adults with COVID-19 and renal dysfunction · condition COVID-19, renal dysfunction · age group adult · n = 37.
 
 **Dosing:** 100, 200 mg, iv, multiple, every 24 h.
 
@@ -25,23 +25,24 @@ Sukeishi A, Itohara K, Yonezawa A, Sato Y, Matsumura K, Katada Y et al. Populati
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
-**Availability:** No model was generated from this record.
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 2 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_remdesivir/Remdesivir_Sukeishi2022_final_model_1485/Remdesivir_Sukeishi2022_final_model_1485.svg" alt="Remdesivir_Sukeishi2022_final_model_1485 diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | θCL (L/h) | CLm/F | 11.8 | L/h |
 | θv (L) | V | 382 | L |
-| θAge ≥ 75,V | Vm/F | -0.429 | V |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +52,11 @@ Sukeishi A, Itohara K, Yonezawa A, Sato Y, Matsumura K, Katada Y et al. Populati
 
 ### Reviewer guidance
 
-**The remdesivir metabolite model was rejected because the apparent clearance value of 11.8 L/h failed plausibility checks.**
+**The absorption rate constant for remdesivir was defaulted rather than estimated, making the input assumptions unsupported.**
 
-The record lists an apparent clearance of 11.8 L/h for GS-441524, a value flagged as implausible during review. Additionally, the volume parameter's unit, 'V', could not be converted to standard units, preventing valid calculation of the model's behavior. The second reader also disagreed on the model's mechanistic classification and the existence of a specific age-based covariate value. Extracted — GS-441524: CLm/F 11.8 L/h, V 382 L, Vm/F -0.429 V.
+The record explicitly flags absorption rate constant and lag time as defaulted parameters instead of values derived from the source data. Consequently, the model relies on library conventions for input kinetics that are not supported by the paper's estimates. This lack of empirical support for the absorption parameters prevented the record from being approved. Extracted — GS-441524: CLm/F 11.8 L/h, V 382 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -65,7 +66,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 |---|---|---|---|---|---|---|---|---|
 | θCL (L/h) | `Q351` · CLm/F | 11.8 | L/h | 3.278e-06 | m3/s | l/h | exact (1) | Sukeishi_2022_table_p6_1:row1:col1 |
 | θv (L) | `Q61` · V | 382 | L | 0.382 | m3 | l | exact (1) | Sukeishi_2022_table_p6_1:row4:col1 |
-| θAge ≥ 75,V | `Q367` · Vm/F | -0.429 | V |  |  | v | llm (0.6) | Sukeishi_2022_table_p6_1:row5:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,30 +74,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - table section iiv: 'IIV for CL' routed out of structural estimates ('Interindividual variability, CV% Variance RSE, % Shrinkage')
 - table section iiv: 'IIV for Vd' routed out of structural estimates ('Interindividual variability, CV% Variance RSE, % Shrinkage')
 - table section residual_error: 'Proportional error' routed out of structural estimates ('Residual variability, CV% Variance RSE, % Shrinkage')
 - dropped duplicate Q22 ('θeGFRnon-indexed, CL', value '1.09') — already have one for this compound
-- unit_dimension_unknown: 'V' (V)
+- 'θAge ≥ 75,V': unit 'V' is a parameter symbol — dropped
+- dropped 'θAge ≥ 75,V' → Q61 = -0.429: a volume of -0.429 is not a parameter value (source ['Sukeishi_2022_table_p6_1:row5:col1'])
 - metabolite gs-441524: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite gs-441524: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite volume: 'θv (L)' Q63→Q61 for GS-441524 — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=GS-441524
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: none — only the metabolite is modelled — no parent compartment
-- status held at "Needs review" — not promoted
 - population split: 'final model: 1485' subgroup of Sukeishi_2022 (paper reports 2 populations: estimates, final model: 1485)
-- row roles: 3 per-group rows of GS-441524 summary_statistic but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 4 linked by role
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 4 linked by role
 - review gap-fill skipped: this record measures 'GS-441524', not remdesivir — the review values are the parent's
 
 **Extraction notes:**
 - table Sukeishi_2022_table_p6_1: unbound_uncertainty
-- table Sukeishi_2022_table_3: ragged_grid
-- transposed table Sukeishi_2022_table_3: logical view retains original source coordinates
-- companion parameter table 3 transcribed (13 record(s))
-- LLM selected parameter table(s) 2, 3
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -106,14 +106,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[θage ≥ 75,v]` | -0.429 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[θcl].parameter_id` | Q351 | Q22 | mismatch |
 
 </details>
@@ -128,16 +127,27 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_base_sign_Q367 | fail |  | -0.429 |  |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Sukeishi_2022_table_p6_1:row1:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Sukeishi_2022_table_p6_1:row4:col1'] |
-| C5_unit_missing_Q367 | fail | [length] ** 3 | V | ['Sukeishi_2022_table_p6_1:row5:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 382 L | ['Sukeishi_2022_table_p6_1:row4:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=GS-441524) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,16 +159,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 100, 200 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_remdesivir/Remdesivir_Sukeishi2022_final_model_1485/Remdesivir_Sukeishi2022_final_model_1485_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_remdesivir/Remdesivir_Sukeishi2022_final_model_1485/Remdesivir_Sukeishi2022_final_model_1485_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Remdesivir_Sukeishi2022_final_model_1485_params.json` · controls `Remdesivir_Sukeishi2022_final_model_1485_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Sukeishi2022_final_model_1485&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Sukeishi2022_final_model_1485%0APaper%3A%20Sukeishi_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Sukeishi2022_final_model_1485%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 11:19 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:04 UTC</sub>

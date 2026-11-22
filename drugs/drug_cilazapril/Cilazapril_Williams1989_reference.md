@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Williams_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Deget1991_reference&quot;,&quot;label&quot;:&quot;Deget_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Deget1991_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Williams1989v2_reference&quot;,&quot;label&quot;:&quot;Williams_1989_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Meredith1989_reference&quot;,&quot;label&quot;:&quot;Meredith_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Williams1989v2_reference&quot;,&quot;label&quot;:&quot;Williams_1989_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
 
-<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Williams1989_reference" status="not_modelled" stale="false" population="healthy males" measured-compound="cilazapril" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Williams1989_reference" status="not_simulated" stale="false" population="healthy males" measured-compound="cilazapril" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Williams PE, Brown AN, Rajaguru S, Francis RJ, Walters GE, McEwen J et al. The pharmacokinetics and bioavailability of cilazapril in normal man. British journal of clinical pharmacology 27 Suppl 2(Suppl 2):181S–188S (1989).
@@ -36,7 +36,7 @@ Williams PE, Brown AN, Rajaguru S, Francis RJ, Walters GE, McEwen J et al. The p
 | t₁/₂ (1-8 h) | t1/2z | 1.32 | h |
 | Plasma clearance | CL | 14.3 | l h-1 |
 | Distribution volume | V | 25.4 | l |
-| Ego-onset ( h) | tlag | 1.2 | h |
+| Ego-onset ( h) | tlag | -1.6 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -50,7 +50,7 @@ Williams PE, Brown AN, Rajaguru S, Francis RJ, Walters GE, McEwen J et al. The p
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The model was built but has not been simulated yet.**
 
 A reported unit could not be converted (Cmax), so that value has no SI equivalent.
 
@@ -67,7 +67,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | t₁/₂ (1-8 h) | `Q57` · t1/2z | 1.32 | h | 4752 | s | h | exact (1) | Williams_1989_table_2:row2:col2, Williams_1989_table_2:row2:col3 |
 | Plasma clearance | `Q22` · CL | 14.3 | l h-1 | 3.972e-06 | m3/s | L/h | llm_confirmed (0.6) | Williams_1989_table_2:row3:col2, Williams_1989_table_2:row3:col3 |
 | Distribution volume | `Q61` · V | 25.4 | l | 0.0254 | m3 | L | exact (1) | Williams_1989_table_2:row4:col2, Williams_1989_table_2:row4:col3 |
-| Ego-onset ( h) | `Q83` · tlag | 1.2 | h | 4320 | s | h | review_gapfill (0.7) | Massarella_1989:review |
+| Ego-onset ( h) | `Q83` · tlag | -1.6 | h | -5760 | s | h | review_gapfill (0.7) | Massarella_1989:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -159,9 +159,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|
 | T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_param_coverage |  | skipped |  |  | no emitted model to inspect (engineer build absent) |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 | T1_cmax | reference | skipped | 194 |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | skipped | 1.8 |  | no simulated metric for this quantity (single reference sim) |
@@ -221,4 +223,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcilazapril%5D%20Cilazapril_Williams1989_reference&body=Drug%3A%20cilazapril%0ARecord%3A%20Cilazapril_Williams1989_reference%0APaper%3A%20Williams_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cilazapril/Cilazapril_Williams1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 11:13 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:17 UTC</sub>

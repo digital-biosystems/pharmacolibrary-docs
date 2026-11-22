@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;Du_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Magnesium sulfate's clearance, volume, and intercompartmental clearance had no extracted values, so the model was quarantined.
+> Magnesium sulfate clearance is reported as 3.72 L/h, but clearance, distribution volume and central-to-peripheral rate were left at placeholders, so the model was held back.
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Du2019_reference" status="model_quarantined" stale="false" population="pregnant women with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Du L, Wenning L, Migoya E, Xu Y, Carvalho B, Brookfield K et al. Population Phar
 
 ## Population and dosing
 
-**Population:** pregnant women with preeclampsia · condition preeclampsia · age group adult · n = &gt;$92.
+**Population:** pregnant women with preeclampsia · condition preeclampsia · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed magnesium sulfate, measured magnesium.
 
@@ -57,13 +57,13 @@ Du L, Wenning L, Migoya E, Xu Y, Carvalho B, Brookfield K et al. Population Phar
 
 ### Reviewer guidance
 
-**Magnesium sulfate's clearance, volume, and intercompartmental clearance had no extracted values, so the model was quarantined.**
+**Magnesium sulfate clearance is reported as 3.72 L/h, but clearance, distribution volume and central-to-peripheral rate were left at placeholders, so the model was held back.**
 
-Although the record lists specific numbers for these parameters, no values were actually extracted, resulting in placeholder values being used instead of the paper's estimates. Consequently, the model could not be published with valid pharmacokinetic constants. Additionally, the defined covariate effects for serum creatinine and weight were not simulated in the model runs. Extracted — magnesium sulfate: CL 3.72 L/h, V1 15.4 L, Q 3.66 L/h, V2 17 L.
+No value for magnesium sulfate's clearance, volume of distribution and central→peripheral rate constant was carried into the built model: the record lists clearance 3.72 L/h, central volume 15.4 L, intercompartmental clearance 3.66 L/h and peripheral volume 17.0 L, but the model builder defaulted clearance, distribution volume and central-to-peripheral rate, so library placeholders stood in and the model was held back rather than published with an invented number. The covariate scenarios were not simulated; only the base model was simulated despite the recorded serum-creatinine effect on clearance of -0.731. A second reader disputed that effect's assignment, placing -0.731 on a creatinine power for clearance instead of the serum-creatinine exponent. Extracted — magnesium sulfate: CL 3.72 L/h, V1 15.4 L, Q 3.66 L/h, V2 17 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of serum_creatinine_exponent_for_cl: this record has -0.731, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -142,13 +142,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,30 +167,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference/MagnesiumSulfate_Du2019_reference_matlab.zip" download>MagnesiumSulfate_Du2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference/MagnesiumSulfate_Du2019_reference_matlab_simbio.zip" download>MagnesiumSulfate_Du2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference/MagnesiumSulfate_Du2019_reference_sbml.zip" download>MagnesiumSulfate_Du2019_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference/MagnesiumSulfate_Du2019_reference_cellml.zip" download>MagnesiumSulfate_Du2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Du L, Wenning L, Migoya E, Xu Y, Carvalho B, Brookfield K et al. Population Pharmacokinetic Modeling to Evaluate Standard Magnesium Sulfate Treatments and Alternative Dosing Regimens for Women With Preeclampsia. Journal of clinical pharmacology 59(3):374–385 (2019). [doi:10.1002/jcph.1328](https://doi.org/10.1002/jcph.1328)
-
-**This record:** Pharmacolibrary, model `MagnesiumSulfate_Du2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference>
-
-```bibtex
-@misc{pharmacolibrary_MagnesiumSulfateDu2019reference,
-  title  = {{Pharmacolibrary model MagnesiumSulfate_Du2019_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference},
-  note   = {Parameters from doi:10.1002/jcph.1328},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The cobimetinib model was held back because the simulated peak time was 1.43 hours, failing to match the paper's reported 2.4 hours.
+> The model predicts a cobimetinib time to peak of 1.43 hours, failing to reproduce the paper's 2.4 hours due to a mismatch between an apparent and mechanistic parameterization.
 
 <div class="pk-model-meta" hidden drug="cobimetinib" model-id="Cobimetinib_Duong2026_model_pkpd_h" status="needs_review" stale="false" population="in silico tumor-cell populations" measured-compound="cobimetinib" parameterization="apparent" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Duong NH, Do TN, Nguyen TT, Phan KQ, Nguyen LT. Cellular Heterogeneity in Drug U
 
 ### Reviewer guidance
 
-**The cobimetinib model was held back because the simulated peak time was 1.43 hours, failing to match the paper's reported 2.4 hours.**
+**The model predicts a cobimetinib time to peak of 1.43 hours, failing to reproduce the paper's 2.4 hours due to a mismatch between an apparent and mechanistic parameterization.**
 
-The model's predicted time of the peak (tmax) was 1.43 hours, significantly lower than the 2.4 hours reported in the study, resulting in a ratio of 0.5963. The record lists clearance as 35.5 mL/min/kg and volume of distribution as 806 L. A second reader disagreed on the parameterization type and failed to identify the absorption rate constant or clearance, while suggesting additional distribution parameters not present in the record. Extracted — cobimetinib: V/F 806 L, kabs 2 h⁻1, CL 35.5 mL/min/kg.
+The record lists apparent clearance of 35.5 mL/min/kg and a volume of 806 L, but the second reader identifies this as an incorrect interpretation of the paper's mechanistic model, which instead specifies inter-compartmental clearances. This parameterization conflict leaves the absorption rate constant without a clear source, as the second reader reports it as missing while the record lists 2.0 h⁻1. Consequently, the simulated time to peak diverges significantly from the reported value, rendering the model structure incompatible with the source data. Extracted — cobimetinib: V/F 806 L, kabs 2 h⁻1, CL 35.5 mL/min/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -152,7 +152,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=cobimetinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=1: not acceptable; deviation_id=2: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
 | T1_tmax | reference | fail | 2.4 | 1.431 | 0.5963 | h→SI vs simulated h |
 
 <details class="legend">

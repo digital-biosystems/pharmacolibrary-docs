@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;basiliximab&quot;,&quot;href&quot;:&quot;drugs/drug_basiliximab/&quot;},{&quot;label&quot;:&quot;Kovarik_1999_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Basiliximab_Kovarik1999_reference&quot;,&quot;label&quot;:&quot;Kovarik_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_basiliximab/Basiliximab_Kovarik1999_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Basiliximab_Kovarik1999v2_reference&quot;,&quot;label&quot;:&quot;Kovarik_1999_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_basiliximab/Basiliximab_Kovarik1999v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Basiliximab_Kovarik2001_reference&quot;,&quot;label&quot;:&quot;Kovarik_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_basiliximab/Basiliximab_Kovarik2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Basiliximab_Kovarik1999_reference&quot;,&quot;label&quot;:&quot;Kovarik_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_basiliximab/Basiliximab_Kovarik1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Basiliximab_Kovarik1999v2_reference&quot;,&quot;label&quot;:&quot;Kovarik_1999_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_basiliximab/Basiliximab_Kovarik1999v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Basiliximab_Kovarik2001_reference&quot;,&quot;label&quot;:&quot;Kovarik_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_basiliximab/Basiliximab_Kovarik2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # basiliximab — `Basiliximab_Kovarik1999v2_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="basiliximab" model-id="Basiliximab_Kovarik1999v2_reference" status="simulated" stale="false" population="renal transplant patients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></div>
+> Basiliximab record failed cross-check due to conflicting parameter assignments where distribution volume and clearance values were inconsistently attributed between readers.
+
+<div class="pk-model-meta" hidden drug="basiliximab" model-id="Basiliximab_Kovarik1999v2_reference" status="needs_review" stale="false" population="renal transplant patients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kovarik JM, Moore R, Wolf P, Abendroth D, Landsberg D, Soulillou JP et al. Screening for basiliximab exposure-response relationships in renal allotransplantation. Clinical transplantation 13(1 Pt 1):32–38 (1999).
@@ -15,7 +17,7 @@ Kovarik JM, Moore R, Wolf P, Abendroth D, Landsberg D, Soulillou JP et al. Scree
 
 ## Population and dosing
 
-**Population:** renal transplant patients · condition renal transplantation · age group adult · n = ? The prompt says 'n_subjects':          # number of subjects in the analysis (a plain integer), or unknown. I will output the integer 40..
+**Population:** renal transplant patients · condition renal transplantation · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Kovarik JM, Moore R, Wolf P, Abendroth D, Landsberg D, Soulillou JP et al. Scree
 <figure class="pk-models-diagram"><img src="drugs/drug_basiliximab/Basiliximab_Kovarik1999v2_reference/Basiliximab_Kovarik1999v2_reference.svg" alt="Basiliximab_Kovarik1999v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | The basiliximab distribution volume was | V | 7.5 | L |
@@ -35,7 +39,7 @@ Kovarik JM, Moore R, Wolf P, Abendroth D, Landsberg D, Soulillou JP et al. Scree
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +49,13 @@ Kovarik JM, Moore R, Wolf P, Abendroth D, Landsberg D, Soulillou JP et al. Scree
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Basiliximab record failed cross-check due to conflicting parameter assignments where distribution volume and clearance values were inconsistently attributed between readers.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The model builder assigned a distribution volume of 7.5 L and a clearance of 33 mL/h, but the second reader could not extract these specific values from the abstract text. Conversely, the second reader identified 7.5 and 33 under different field labels, resulting in a mismatch where the primary record's values were not found in the secondary extraction. This discrepancy, combined with the abstract-only source, prevented a consensus on the specific pharmacokinetic parameters. Extracted — basiliximab: V 7.5 L, t1/2z 7.5 d, CL 33 mL/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of and the clearance: this record has 33, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -125,14 +129,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=basiliximab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=basiliximab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.364, 0 of 1 reader(s) agree | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial, agreement 0.364, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

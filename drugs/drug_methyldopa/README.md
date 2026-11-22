@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;Methyldopa&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Brogden1988_reference&quot;,&quot;label&quot;:&quot;Brogden_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methyldopa_Singh1985_reference&quot;,&quot;label&quot;:&quot;Singh_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Singh1985_reference&quot;,&quot;label&quot;:&quot;Singh_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methyldopa_Brogden1988_reference&quot;,&quot;label&quot;:&quot;Brogden_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # Methyldopa
 
@@ -24,42 +24,19 @@ This central alpha-adrenergic agent treats high blood pressure. It is normally s
 
 ## Start here
 
-> **Brogden_1988_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md?tab=Simulation) · [record](drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md)
+> **Singh_1985_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md?tab=Simulation) · [record](drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Singh_1985 · CL</text><circle cx="388.5" cy="30.0" r="4" fill="#78909c"><title>Singh_1985 · CL: 36.9 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Brogden_1988 · CL ·/kg</text><circle cx="451.9" cy="46.0" r="4" fill="#78909c"><title>Brogden_1988 · CL ·/kg: 56 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Brogden_1988 · V ·/kg</text><circle cx="244.9" cy="30.0" r="4" fill="#78909c"><title>Brogden_1988 · V ·/kg: 143.5 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Singh_1985 · V/F ·/kg</text><circle cx="207.2" cy="46.0" r="4" fill="#78909c"><title>Singh_1985 · V/F ·/kg: 112 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Brogden_1988_reference](drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Brogden RN et al., Captopril. An update of its pharmacodyn…, Drugs (1988) | [10.2165/00003495-198836050-00003](https://doi.org/10.2165/00003495-198836050-00003) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Singh_1985_reference](drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Singh BN et al., Acebutolol. A review of its pharmacolog…, Drugs (1985) | [10.2165/00003495-198529060-00003](https://doi.org/10.2165/00003495-198529060-00003) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Jorga_1997_reference](drugs/drug_methyldopa/Methyldopa_Jorga1997_reference.md) | — | parent + metabolite (no model) | 4 | Jorga KM et al., Optimizing levodopa pharmacokinetics wi…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90033-3](https://doi.org/10.1016/S0009-9236(97)90033-3) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Jorga_1997_reference](drugs/drug_methyldopa/Methyldopa_Jorga1997_reference.md) | — | parent + metabolite (no model) | 4 | Jorga KM et al., Optimizing levodopa pharmacokinetics wi…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90033-3](https://doi.org/10.1016/S0009-9236(97)90033-3) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Singh_1985_reference](drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Singh BN et al., Acebutolol. A review of its pharmacolog…, Drugs (1985) | [10.2165/00003495-198529060-00003](https://doi.org/10.2165/00003495-198529060-00003) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Brogden_1988_reference](drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Brogden RN et al., Captopril. An update of its pharmacodyn…, Drugs (1988) | [10.2165/00003495-198836050-00003](https://doi.org/10.2165/00003495-198836050-00003) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Liu_2025_reference](drugs/drug_methyldopa/Methyldopa_Liu2025_reference.md) | — | 1-compartment (no model) | 0 | Liu X et al., Determining the Optimal Dosing of Methy…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01523-2](https://doi.org/10.1007/s40262-025-01523-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=methyldopa).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | brain | `COMT` substrate | DrugBank actor |
-| metabolism | kidney | `COMT` substrate | DrugBank actor |
-| metabolism | liver | `COMT` substrate, `SULT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `SULT1A1` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ADRA2A (target), DBH (substrate), DDC (inhibitor), DDC (substrate), DRD2 (target), PNMT (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,13 +50,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-10 17:37 | 23:16 | 3/2/0 | 0/0/0 | 0/0/0 | 1,409,526/136,392 | einfracz / qwen3.8-27b | 38 | 35/5 | 4/34 | 0 |
+| 2026-10-10 17:37 | 23:16 | 2/3/0 | 0/0/0 | 0/0/0 | 1,409,526/136,392 | einfracz / qwen3.8-27b | 38 | 35/5 | 4/34 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 112 matched, 74 returned
 - **screened:** 39  ·  **relevant:** 2
-- **records:** 5  ·  extracted 2  ·  needs review 1  ·  rejected 2  ·  stale 2
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

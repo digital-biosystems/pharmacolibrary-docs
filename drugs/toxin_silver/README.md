@@ -72,7 +72,7 @@ Silver is widely distributed in the earth's crust and is found in soil, fresh an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-16 05:28 | 1:34:45 | 4/2/0 | 3/1/0 | 0/0/0 | 2,768,497/149,461 | einfracz / qwen3.8-flash-next | 100 | 12/78 | 100/0 | 0 |
+| 2026-11-16 05:28 | 1:34:45 | 4/2/0 | 4/1/0 | 0/0/0 | 2,768,497/149,461 | einfracz / qwen3.8-flash-next | 100 | 12/78 | 100/0 | 0 |
 
 ## Coverage
 

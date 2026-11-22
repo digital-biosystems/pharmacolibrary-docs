@@ -8,6 +8,22 @@
  "observables": [
   "retainedFraction"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Bergquist_2022:other_prose",
+    "value_si": 0.007344
+   },
+   {
+    "source": "Bergquist_2022:other_prose",
+    "value_si": 0.007133
+   },
+   {
+    "source": "Bergquist_2022:other_prose",
+    "value_si": 0.007071999999999999
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "MM": 0.19719,

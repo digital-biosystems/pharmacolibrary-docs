@@ -143,30 +143,13 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_thiamine/Thiamine_Sheng2021_mad_600_mg_day_1/Thiamine_Sheng2021_mad_600_mg_day_1_matlab.zip" download>Thiamine_Sheng2021_mad_600_mg_day_1_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_thiamine/Thiamine_Sheng2021_mad_600_mg_day_1/Thiamine_Sheng2021_mad_600_mg_day_1_matlab_simbio.zip" download>Thiamine_Sheng2021_mad_600_mg_day_1_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_thiamine/Thiamine_Sheng2021_mad_600_mg_day_1/Thiamine_Sheng2021_mad_600_mg_day_1_sbml.zip" download>Thiamine_Sheng2021_mad_600_mg_day_1_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_thiamine/Thiamine_Sheng2021_mad_600_mg_day_1/Thiamine_Sheng2021_mad_600_mg_day_1_cellml.zip" download>Thiamine_Sheng2021_mad_600_mg_day_1_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Sheng L, Cao W, Lin P, Chen W, Xu H, Zhong C et al. Safety, Tolerability and Pharmacokinetics of Single and Multiple Ascending Doses of Benfotiamine in Healthy Subjects. Drug design, development and therapy 15:1101–1110 (2021). [doi:10.2147/DDDT.S296197](https://doi.org/10.2147/DDDT.S296197)
-
-**This record:** Pharmacolibrary, model `Thiamine_Sheng2021_mad_600_mg_day_1`. <https://pharmacolibrary.github.io/#/drugs/toxin_thiamine/Thiamine_Sheng2021_mad_600_mg_day_1>
-
-```bibtex
-@misc{pharmacolibrary_ThiamineSheng2021mad600mgday1,
-  title  = {{Pharmacolibrary model Thiamine_Sheng2021_mad_600_mg_day_1}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_thiamine/Thiamine_Sheng2021_mad_600_mg_day_1},
-  note   = {Parameters from doi:10.2147/DDDT.S296197},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

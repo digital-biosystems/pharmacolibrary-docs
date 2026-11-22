@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Psilocybin&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/&quot;},{&quot;label&quot;:&quot;Becker_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Psilocybin_Becker2022_reference&quot;,&quot;label&quot;:&quot;Becker_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Becker2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Becker2025_reference&quot;,&quot;label&quot;:&quot;Becker_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Becker2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Psilocybin_Brown2017_reference&quot;,&quot;label&quot;:&quot;Brown_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Brown2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Holze2022_15_mg_psilocybin&quot;,&quot;label&quot;:&quot;Holze_2022_15_mg_psilocybin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Holze2022_15_mg_psilocybin.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Holze2022_30_mg_psilocybin&quot;,&quot;label&quot;:&quot;Holze_2022_30_mg_psilocybin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Holze2022_30_mg_psilocybin.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_4_hiaa&quot;,&quot;label&quot;:&quot;Ley_2023_4_hiaa&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_4_hiaa.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_psilocin&quot;,&quot;label&quot;:&quot;Ley_2023_psilocin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_psilocin.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_psilocin_glucuronide&quot;,&quot;label&quot;:&quot;Ley_2023_psilocin_glucuronide&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_psilocin_glucuronide.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_MadridGambin2023_reference&quot;,&quot;label&quot;:&quot;Madrid-Gambin_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_MadridGambin2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Meshkat2025_reference&quot;,&quot;label&quot;:&quot;Meshkat_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Meshkat2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Otto2025_reference&quot;,&quot;label&quot;:&quot;Otto_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Otto2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Psilocybin_Becker2022_reference&quot;,&quot;label&quot;:&quot;Becker_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Becker2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Brown2017_reference&quot;,&quot;label&quot;:&quot;Brown_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Brown2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_MadridGambin2023_reference&quot;,&quot;label&quot;:&quot;Madrid-Gambin_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_MadridGambin2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Becker2025_reference&quot;,&quot;label&quot;:&quot;Becker_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Becker2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Psilocybin_Holze2022_15_mg_psilocybin&quot;,&quot;label&quot;:&quot;Holze_2022_15_mg_psilocybin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Holze2022_15_mg_psilocybin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Holze2022_30_mg_psilocybin&quot;,&quot;label&quot;:&quot;Holze_2022_30_mg_psilocybin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Holze2022_30_mg_psilocybin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_4_hiaa&quot;,&quot;label&quot;:&quot;Ley_2023_4_hiaa&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_4_hiaa.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_psilocin&quot;,&quot;label&quot;:&quot;Ley_2023_psilocin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_psilocin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Ley2023_psilocin_glucuronide&quot;,&quot;label&quot;:&quot;Ley_2023_psilocin_glucuronide&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Ley2023_psilocin_glucuronide.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Meshkat2025_reference&quot;,&quot;label&quot;:&quot;Meshkat_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Meshkat2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Psilocybin_Otto2025_reference&quot;,&quot;label&quot;:&quot;Otto_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_psilocybin/Psilocybin_Otto2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Psilocybin — `Psilocybin_Becker2025_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> Absorption rate (ka) for psilocybin was assigned a library default rather than an estimate, causing the model to be held for review.
 
-<div class="pk-model-meta" hidden drug="Psilocybin" model-id="Psilocybin_Becker2025_reference" status="extracted" stale="false" population="" measured-compound="psilocybin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Psilocybin" model-id="Psilocybin_Becker2025_reference" status="needs_review" stale="false" population="" measured-compound="psilocybin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Becker AM, Humbert-Droz M, Mueller L, Jelušić A, Tolev A, Straumann I et al. Acute Effects and Pharmacokinetics of LSD after Paroxetine or Placebo Pre-Administration in a Randomized, Double-Blind, Cross-Over Phase I Trial. Clinical pharmacology and therapeutics 117(6):1784–1792 (2025).
@@ -29,6 +29,8 @@ Becker AM, Humbert-Droz M, Mueller L, Jelušić A, Tolev A, Straumann I et al. A
 <figure class="pk-models-diagram"><img src="drugs/toxin_psilocybin/Psilocybin_Becker2025_reference/Psilocybin_Becker2025_reference.svg" alt="Psilocybin_Becker2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 6.8 | L/h |
@@ -36,7 +38,7 @@ Becker AM, Humbert-Droz M, Mueller L, Jelušić A, Tolev A, Straumann I et al. A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +46,13 @@ Becker AM, Humbert-Droz M, Mueller L, Jelušić A, Tolev A, Straumann I et al. A
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Absorption rate (ka) for psilocybin was assigned a library default rather than an estimate, causing the model to be held for review.**
+
+The record lacks a specific ka value for psilocybin, instead using a placeholder default. This assumption creates an unverified absorption profile, as the parameter was not extracted from the source text. The model builder also assumed complete bioavailability without explicit justification. Extracted — psilocybin: CL/F 6.8 L/h, V/F 34 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -85,6 +93,18 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 6.8 L/h | ['Becker_2025:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 34 L | ['Becker_2025:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=psilocybin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

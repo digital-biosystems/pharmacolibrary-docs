@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ka use library defaults, not estimates from this paper; t6_deviations.
+> Isavuconazole absorption rate and lag time were assigned generic library values instead of estimates from the paper.
 
 <div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Kovanda2016_im" status="needs_review" stale="false" population="patients with invasive fungal disease" measured-compound="isavuconazole" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Kovanda LL, Desai AV, Lu Q, Townsend RW, Akhtar S, Bonate P et al. Isavuconazole
 
 ### Reviewer guidance
 
-**Ka use library defaults, not estimates from this paper; t6_deviations.**
+**Isavuconazole absorption rate and lag time were assigned generic library values instead of estimates from the paper.**
 
-These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — isavuconazole: CLm/F 3 L/h, V 364 L, Fab 95.
+The record explicitly notes that absorption rate and lag time were defaulted because they were not reported in the source. This reliance on standard placeholders creates an absorption profile unsupported by the study data. Consequently, the model was held for review as the unreported kinetics prevent validation against the observed drug exposure. Extracted — isavuconazole: CLm/F 3 L/h, V 364 L, Fab 95.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -138,15 +138,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=isavuconazole) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=isavuconazole) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

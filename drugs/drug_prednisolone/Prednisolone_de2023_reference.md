@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;de_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisolone — `Prednisolone_de2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-04 03:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The dissociation constant KD for prednisolone was rejected because its unit, nmol, prevented conversion to standard units.
+> Prednisolone’s KD of 0.0095 nmol was dimensionally incompatible with the expected concentration dimension, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="true" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolone pharmacokinetics after oral prednisone administration in paediatric patients with kidney transplant. British journal of clinical pharmacology 89(5):1532–1540 (2023).
@@ -17,7 +17,7 @@ de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolo
 
 ## Population and dosing
 
-**Population:** paediatric kidney transplant recipients · condition kidney transplant · age group child · n = &gt;=39.
+**Population:** paediatric kidney transplant recipients · condition kidney transplant · age group child.
 
 **Dosing:** 14 mg, oral, multiple, every 24 h.
 
@@ -44,7 +44,7 @@ de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +54,13 @@ de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolo
 
 ### Reviewer guidance
 
-**The dissociation constant KD for prednisolone was rejected because its unit, nmol, prevented conversion to standard units.**
+**Prednisolone’s KD of 0.0095 nmol was dimensionally incompatible with the expected concentration dimension, so the record was rejected.**
 
-The KD value of 0.0095 nmol represents the drug-target binding affinity. Because the unit nanomole could not be converted to standard SI units, the parameter lacked a valid physical value. This resulted in a dimension mismatch error during the structural parameter validation, leading to the record's refusal. Extracted — prednisolone: kabs 12.5 h-1, tlag 0.63 h, V 101 L/70 kg, CLm,norm/F 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol.
+KD is the equilibrium dissociation constant for drug–target binding, but its reported nmol unit is amount, whereas the structural-parameter check expected mass per volume. The reported unit could not be converted to SI, so no SI value was available. Extracted — prednisolone: kabs 12.5 h-1, tlag 0.63 h, V 101 L/70 kg, CLm,norm/F 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -109,17 +109,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.688 (11/16 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.688 (11/16 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[clu].parameter_id` | Q375 | Q22 | mismatch |
-| `gpt-oss:120b` | `parameters[mtt].parameter_id` | Q83 | Q81 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | prednisone | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | prednisolone | unknown | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[clu].parameter_id` | Q375 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[mtt].parameter_id` | Q83 | Q81 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | prednisone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | prednisolone | unknown | mismatch |
 
 </details>
 

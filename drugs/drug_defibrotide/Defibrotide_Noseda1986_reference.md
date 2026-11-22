@@ -15,13 +15,7 @@ Noseda G, Fragiacomo C, Ferrari D. Pharmacokinetics of defibrotide in healthy vo
 
 ## Population and dosing
 
-**Population:** healthy volunteers · age group adult · n = ,
-  "condition": "healthy",
-  "species": "human",
-  "compounds": [
-    {"name": "defibrotide", "role": "parent", "dosed": "yes", "measured": "yes", "has_parameters": "yes"}
-  ],
-  "links": []}  # Note: JSON cannot contain lists of strings separated by pipes as per YAML schema, converting to array of objects or strings as appropriate for JSON schema. The prompt asks for JSON object matching supplied schema. I will format the compounds as a list of strings or objects based on standard JSON interpretation of the requested format. Given the strict instruction "Put each value in its OWN named field", I will use a list of objects for compounds to be safe, or a list of strings if the schema implies simple values. The prompt example shows a YAML list. I will convert to a JSON array of strings to match the 'flat' nature or objects. Let's use objects for clarity or strings if that's how 'flat' is interpreted in JSON. Usually 'flat' JSON means no deep nesting. I will use an array of objects for compounds. Wait, the prompt says "Output ONLY a JSON object matching the supplied schema." It doesn't give the schema, but implies a key-value structure. I will map the keys directly. For compounds and links, I will use arrays..
+**Population:** healthy volunteers · age group adult.
 
 **Dosing:** 0.5, 4, 16, 200, 600 mg/kg, mg, iv, single.
 
@@ -119,15 +113,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
-| T3_output_variable | pass | C_central (measured=defibrotide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=defibrotide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

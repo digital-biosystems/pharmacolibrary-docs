@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Canrenone absorption parameters were left at library defaults because the abstract did not report elimination or lag time.
+> Absorption parameters for canrenone defaulted to library placeholders and cross-reader agreement was too low to publish the abstract-only summary statistics.
 
 <div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Suyagh2013_reference" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Potassium
 
 ### Reviewer guidance
 
-**Canrenone absorption parameters were left at library defaults because the abstract did not report elimination or lag time.**
+**Absorption parameters for canrenone defaulted to library placeholders and cross-reader agreement was too low to publish the abstract-only summary statistics.**
 
-The record was built from the abstract alone, so summary statistics like 1.11 l/h clearance stood in for a fitted model. The model builder used library defaults for absorption rate and lag time since the source did not provide estimates. This resulted in an unreported model parameter default that prevents publication. Extracted — canrenone: CLm/F 1.11 l/h, Vm/F 20.5 l, t1/2z 20 h.
+The record lacks reported absorption rate values, forcing the use of placeholder defaults unsupported by the paper. Only one reader could confirm the reported clearance and volume parameters, resulting in a 0.4 agreement ratio that fell below the required 0.5 threshold. Because the source material was abstract-only, the extracted summary statistics lacked sufficient consistency to validate the model structure. Extracted — canrenone: CLm/F 1.11 l/h, Vm/F 20.5 l, t1/2z 20 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has none, the second reading 1.11; it also differs on 5 more fields. That field does not shape the model.
 
@@ -137,15 +137,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=canrenone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=canrenone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

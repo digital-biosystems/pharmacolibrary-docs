@@ -25,7 +25,7 @@ Cefbuperazone is a second-generation cephalosporin antibiotic. It is currently e
 
 ## Start here
 
-> **Watanabe_1984_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients undergoing postoperative drainage, n = , "condition": "postoperative state",. [Run it in the simulator](drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md?tab=Simulation) · [record](drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md)
+> **Watanabe_1984_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients undergoing postoperative drainage. [Run it in the simulator](drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md?tab=Simulation) · [record](drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 

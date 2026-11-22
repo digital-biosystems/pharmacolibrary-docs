@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefalexin&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/&quot;},{&quot;label&quot;:&quot;Koroleva_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefalexin_Prados2014_base&quot;,&quot;label&quot;:&quot;Prados_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefalexin_Prados2014_final&quot;,&quot;label&quot;:&quot;Prados_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefalexin_Prados2014_base&quot;,&quot;label&quot;:&quot;Prados_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefalexin_Prados2014_final&quot;,&quot;label&quot;:&quot;Prados_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_final.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefalexin — `Cefalexin_Koroleva1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 10:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cephalexin maximum concentration is incorrectly recorded as 1.1 hours instead of a concentration unit, preventing a valid compartmental model fit.
+> Cephalexin Cmax of 1.1 hours is dimensionally incompatible with concentration, while absent distribution volume and clearance leave no compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Koroleva1981_reference" status="rejected" stale="true" population="rats and dogs" measured-compound="cephalexin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Koroleva1981_reference" status="rejected" stale="false" population="rats and dogs" measured-compound="cephalexin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Koroleva VG, Vasil'ev VK, Danilova VI, Firsov AA. [Cephalexin pharmacokinetics]. Antibiotiki 26(3):113–116 (1981).
@@ -37,7 +37,7 @@ Koroleva VG, Vasil'ev VK, Danilova VI, Firsov AA. [Cephalexin pharmacokinetics].
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Koroleva VG, Vasil'ev VK, Danilova VI, Firsov AA. [Cephalexin pharmacokinetics].
 
 ### Reviewer guidance
 
-**Cephalexin maximum concentration is incorrectly recorded as 1.1 hours instead of a concentration unit, preventing a valid compartmental model fit.**
+**Cephalexin Cmax of 1.1 hours is dimensionally incompatible with concentration, while absent distribution volume and clearance leave no compartmental population PK model.**
 
-The record lists the maximum concentration value of 1.1 with the unit hour, which is a dimension mismatch for a peak plasma concentration parameter. Because the source text is abstract-only, these summary statistics replace a fitted model, and the paper reports no distribution volume or clearance. Consequently, the record fails to constitute a compartmental population pharmacokinetic model. Extracted — cefalexin: t1/2ka 0.2 hour, Cmax 1.1 hour.
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Abstract-only reporting supplies summary statistics rather than a fitted model: cephalexin absorption half-life of 0.2 hour and Cmax of 1.1 hour; the Cmax unit is time, not concentration, and conflicts with mass per volume dimensions. The second reader marked the dose compound and primary analyte unknown and did not retain either reported parameter. Extracted — cefalexin: t1/2ka 0.2 hour, Cmax 1.1 hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cephalexin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

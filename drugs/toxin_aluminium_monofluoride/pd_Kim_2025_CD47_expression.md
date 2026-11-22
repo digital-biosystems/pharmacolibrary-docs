@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a pharmacodynamic model for aluminium monofluoride, but instead describes how SIRP-EV treatment (using extracellular vesicles expressing SIRPα) blocks CD47 signaling to decrease CD47 expression in necroptotic hepatocytes. No potency or rate constants (e.g., IC50, EC50, kin, kout) are stated in the excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kim_2025`
 - **model family:** `unknown`
 - **driver:** `dose_only`

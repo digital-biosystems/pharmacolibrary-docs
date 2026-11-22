@@ -4,11 +4,11 @@
 
 # imetelstat — `Imetelstat_GonzlezSales2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:49 UTC (Rejected), but the paper was screened again on 2026-10-06 20:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the covariate effect of MM malignancy on central volume is -0.233, which implies a negative volume in certain patient scenarios.
+> The record was rejected because the covariate effect of MM malignancy on central volume is -0.233, which implies a negative volume in certain patient scenarios.
 
-<div class="pk-model-meta" hidden drug="imetelstat" model-id="Imetelstat_GonzlezSales2024_reference" status="rejected" stale="true" population="adults with solid tumors or hematologic malignancies" measured-compound="imetelstat" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="imetelstat" model-id="Imetelstat_GonzlezSales2024_reference" status="rejected" stale="false" population="adults with solid tumors or hematologic malignancies" measured-compound="imetelstat" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 González-Sales M, Lennox AL, Huang F, Pamulapati C, Wan Y, Sun L et al. Population pharmacokinetics of imetelstat, a first-in-class oligonucleotide telomerase inhibitor. CPT: pharmacometrics & systems pharmacology 13(7):1264–1277 (2024).
@@ -45,7 +45,7 @@ González-Sales M, Lennox AL, Huang F, Pamulapati C, Wan Y, Sun L et al. Populat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.76). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.76). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

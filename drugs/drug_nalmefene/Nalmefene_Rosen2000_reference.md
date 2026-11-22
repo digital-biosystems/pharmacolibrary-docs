@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;nalmefene&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/&quot;},{&quot;label&quot;:&quot;Rosen_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalmefene_Kyhl2016_reference&quot;,&quot;label&quot;:&quot;Kyhl_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalmefene_Rosen2000_reference&quot;,&quot;label&quot;:&quot;Rosen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalmefene_Rosen2000_reference&quot;,&quot;label&quot;:&quot;Rosen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Nalmefene_Kyhl2016_reference&quot;,&quot;label&quot;:&quot;Kyhl_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nalmefene — `Nalmefene_Rosen2000_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Nalmefene's steady-state volume of distribution (7.21 L/kg) was improperly used as central volume in a one-compartment model.
-
-<div class="pk-model-meta" hidden drug="nalmefene" model-id="Nalmefene_Rosen2000_reference" status="needs_review" stale="false" population="children aged 2-12 years undergoing cardiothoracic surgery" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nalmefene" model-id="Nalmefene_Rosen2000_reference" status="simulated" stale="false" population="children aged 2-12 years undergoing cardiothoracic surgery" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rosen DA, Morris JL, Rosen KR, Nelson ER, Steelman RJ, Gustafson RA et al. Nalmefene to prevent epidural narcotic side effects in pediatric patients: a pharmacokinetic and safety study. Pharmacotherapy 20(7):745–749 (2000).
@@ -29,8 +27,6 @@ Rosen DA, Morris JL, Rosen KR, Nelson ER, Steelman RJ, Gustafson RA et al. Nalme
 <figure class="pk-models-diagram"><img src="drugs/drug_nalmefene/Nalmefene_Rosen2000_reference/Nalmefene_Rosen2000_reference.svg" alt="Nalmefene_Rosen2000_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t(1/2alpha) | t1/2α | 0.36 | hour |
@@ -40,7 +36,7 @@ Rosen DA, Morris JL, Rosen KR, Nelson ER, Steelman RJ, Gustafson RA et al. Nalme
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +46,13 @@ Rosen DA, Morris JL, Rosen KR, Nelson ER, Steelman RJ, Gustafson RA et al. Nalme
 
 ### Reviewer guidance
 
-**Nalmefene's steady-state volume of distribution (7.21 L/kg) was improperly used as central volume in a one-compartment model.**
+**Every check that could be run on this record passed.**
 
-The record, derived solely from the abstract, substituted steady-state volume for central volume, which distorts the early distribution phase. This limitation means the model cannot accurately reproduce the rapid initial phase defined by the 0.36 hour half-life. Additionally, a second reader disagreed on the mapping of the initial disposition half-life value of 0.36. Extracted — nalmefene: t1/2α 0.36 hour, t1/2β 8.7 hours, CL 0.729 L/kg/hr, Vss 7.21 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of initial disposition half-life (t(1/2alpha)): this record has none, the second reading 0.36; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -130,14 +126,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=nalmefene) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=nalmefene) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

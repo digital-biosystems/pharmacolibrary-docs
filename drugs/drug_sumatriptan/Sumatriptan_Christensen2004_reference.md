@@ -16,7 +16,7 @@ Christensen ML, Mottern RK, Jabbour JT, Fuseau E. Pharmacokinetics of sumatripta
 
 ## Population and dosing
 
-**Population:** children with migraine · condition migraine · age group child · n = — 33.
+**Population:** children with migraine · condition migraine · age group child.
 
 ## Model
 

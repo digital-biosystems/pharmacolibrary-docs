@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;angiotensin II&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/&quot;},{&quot;label&quot;:&quot;Steichert_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ghatta_2004_Ang_II&quot;,&quot;label&quot;:&quot;Ghatta_2004 \u00b7 Ang II&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Ghatta_2004_Ang_II.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_DBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_SBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Saris_2000_FBF&quot;,&quot;label&quot;:&quot;Saris_2000 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Saris_2000_FBF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xu_2014_Aldo&quot;,&quot;label&quot;:&quot;Xu_2014 \u00b7 Aldo&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Xu_2014_Aldo.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baan_1997_FBF&quot;,&quot;label&quot;:&quot;Baan_1997 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Baan_1997_FBF.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ghatta_2004_Ang_II&quot;,&quot;label&quot;:&quot;Ghatta_2004 \u00b7 Ang II&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Ghatta_2004_Ang_II.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_DBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_SBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Saris_2000_FBF&quot;,&quot;label&quot;:&quot;Saris_2000 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Saris_2000_FBF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xu_2014_Aldo&quot;,&quot;label&quot;:&quot;Xu_2014 \u00b7 Aldo&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Xu_2014_Aldo.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baan_1997_FBF&quot;,&quot;label&quot;:&quot;Baan_1997 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Baan_1997_FBF.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record refused because lag time was defaulted to a placeholder instead of an extracted value, and the apparent clearance and volume parameters were incorrectly interpreted as total physiological values.
+> Angiotensin II’s apparent intercompartmental clearance (Q/F) is recorded as 6.38 L/h, but a disputed second reading kept the record under review.
 
 <div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Steichert2025_reference" status="needs_review" stale="false" population="" measured-compound="angiotensin_ii" parameterization="apparent" topology="2C"></div>
 
@@ -43,7 +43,7 @@ Steichert M, Cawello W, Burckhardt BB, Suessenbach FK, Laeer S. Angiotensin II/A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Steichert M, Cawello W, Burckhardt BB, Suessenbach FK, Laeer S. Angiotensin II/A
 
 ### Reviewer guidance
 
-**Record refused because lag time was defaulted to a placeholder instead of an extracted value, and the apparent clearance and volume parameters were incorrectly interpreted as total physiological values.**
+**Angiotensin II’s apparent intercompartmental clearance (Q/F) is recorded as 6.38 L/h, but a disputed second reading kept the record under review.**
 
-The lag time parameter was not extracted from the source, forcing the use of a library default. The clearance value of 36.39 L/h and central volume of 223.71 L were extracted with bioavailability adjustments, yet the model was built assuming full bioavailability and apparent parameterization. A second reader also identified a conflicting value for the peripheral volume parameter, reading 2.02 against the record’s null entry. Extracted — angiotensin ii: CL/F 36.4 L/h, V1/F 224 L, V2/F 108 L, Q/F 6.38 L/h, kabs 1.19 h−1.
+The second-reader comparison was disputed (agreement 0.875; 0 of 1 reader agreed): one field differed between 33.7 and 72.89, and another was absent in this record versus 2.02 in the second reading. The model defaulted the lag time rather than using an explicit estimate, and assumed F=1, Fm=1, with no molar correction. Extracted — angiotensin ii: CL/F 36.4 L/h, V1/F 224 L, V2/F 108 L, Q/F 6.38 L/h, kabs 1.19 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 33.7, the second reading 72.89; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 33.7, the second reading 72.89; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -93,14 +93,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.875 (14/16 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.875 (14/16 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q312]` | 33.7 | 72.89 | mismatch |
-| `gpt-oss:120b` | `values[Q343]` |  | 2.02 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 33.7 | 72.89 | mismatch |
+| `gpt-oss-120b` | `values[Q343]` |  | 2.02 | only_one_extracted |
 
 </details>
 
@@ -130,15 +130,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=angiotensin_ii) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=angiotensin_ii) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

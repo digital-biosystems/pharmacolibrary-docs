@@ -5,11 +5,11 @@
 
 # vigabatrin — `Vigabatrin_Nhr2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-07 08:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vigabatrin record lacks volume and clearance, and its maximal oral absorption rate (64.6 mmol/min) is dimensionally mismatched.
+> The vigabatrin record was rejected because the abstract-only derivation provided summary statistics with dimensionally incompatible units for Km and Vmax.
 
-<div class="pk-model-meta" hidden drug="vigabatrin" model-id="Vigabatrin_Nhr2015_reference" status="rejected" stale="true" population="Sprague Dawley rats" measured-compound="vigabatrin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vigabatrin" model-id="Vigabatrin_Nhr2015_reference" status="rejected" stale="false" population="Sprague Dawley rats" measured-compound="vigabatrin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nøhr MK, Juul RV, Thale ZI, Holm R, Kreilgaard M, Nielsen CU. Is oral absorption of vigabatrin carrier-mediated?. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 69:10–18 (2015).
@@ -39,7 +39,7 @@ Nøhr MK, Juul RV, Thale ZI, Holm R, Kreilgaard M, Nielsen CU. Is oral absorptio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Nøhr MK, Juul RV, Thale ZI, Holm R, Kreilgaard M, Nielsen CU. Is oral absorptio
 
 ### Reviewer guidance
 
-**Vigabatrin record lacks volume and clearance, and its maximal oral absorption rate (64.6 mmol/min) is dimensionally mismatched.**
+**The vigabatrin record was rejected because the abstract-only derivation provided summary statistics with dimensionally incompatible units for Km and Vmax.**
 
-The record is from an exposure/outcome paper that reports no distribution volume or clearance, so it is not a compartmental population PK model. A structural check found a dimension mismatch on the maximal oral absorption rate (Vmax) of 64.6 mmol/min. Because the record was built from the abstract alone, summary statistics stood in for a fitted model, contributing to the rejection. Extracted — vigabatrin: Km 32.8 mM, Vmax 64.6 mmol/min, Fab 60.9 %.
+The record was constructed from the paper's abstract, meaning the reported values stand in for a fitted model. The dimension check failed because the Km unit mM was interpreted as a length dimension instead of molar concentration, and the Vmax unit mmol/min did not match the required mass flow dimension. A second reader also disagreed on the assignment of the dose compound and primary analyte, flagging them as unknown. Extracted — vigabatrin: Km 32.8 mM, Vmax 64.6 mmol/min, Fab 60.9 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vigabatrin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

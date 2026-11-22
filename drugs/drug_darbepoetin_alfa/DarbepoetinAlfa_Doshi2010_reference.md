@@ -36,7 +36,7 @@ Doshi S, Chow A, Pérez Ruixo JJ. Exposure-response modeling of darbepoetin alfa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Doshi S, Chow A, Pérez Ruixo JJ. Exposure-response modeling of darbepoetin alfa
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 44, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 44, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -91,17 +91,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 44 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absolute bioavailability]` | 44 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 3.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total mean absorption time]` | 52 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 5.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 44 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | 44 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 3.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total mean absorption time]` | 52 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 5.9 |  | only_one_extracted |
 
 </details>
 
@@ -136,6 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

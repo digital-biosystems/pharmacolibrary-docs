@@ -30,6 +30,10 @@
    {
     "source": "Lanke_2019:discussion_prose",
     "value_si": 15.0
+   },
+   {
+    "source": "Lanke_2019:discussion_prose",
+    "value_si": 96.0
    }
   ]
  },
@@ -42,16 +46,16 @@
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 1.5e-05,
-  "ka": 0.00037222222222222225,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 7618.436873747495
+  "central.C": 14089.77955911824
  },
  "reference_peaks": {
-  "central.C": 0.0001083373155394035
+  "central.C": 8.799981672023e-05
  },
- "stop_time": 118800.0,
+ "stop_time": 111600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

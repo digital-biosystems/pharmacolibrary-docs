@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Abouellil_2023 \u00b7 remdesivir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_estimates&quot;,&quot;label&quot;:&quot;Sukeishi_2022_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_estimates.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_estimates&quot;,&quot;label&quot;:&quot;Sukeishi_2022_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_final_model_1485&quot;,&quot;label&quot;:&quot;Sukeishi_2022_final_model_1485&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_final_model_1485.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model’s terminal half-life is 4.3 hours, failing to reproduce the paper’s reported 29.4 hours for remdesivir in healthy adults.
+> The model does not reproduce the paper's time of the peak (tmax); the model does not reproduce the paper's terminal half-life (paper 29.4, model 4.3) (+1 more).
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Abouellil2023_remdesivir" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Abouellil2023_remdesivir" status="needs_review" stale="false" population="healthy subjects" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of remdesivir and its major metabolites based on published mean values from healthy subjects. Naunyn-Schmiedeberg's archives of pharmacology 396(1):73–82 (2023).
@@ -17,7 +17,7 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult.
+**Population:** healthy subjects · condition healthy · age group adult.
 
 **Dosing:** 3, 10, 30, 75, 150, 225 mg, iv, single.
 
@@ -50,13 +50,13 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 
 ### Reviewer guidance
 
-**The model’s terminal half-life is 4.3 hours, failing to reproduce the paper’s reported 29.4 hours for remdesivir in healthy adults.**
+**The model does not reproduce the paper's time of the peak (tmax); the model does not reproduce the paper's terminal half-life (paper 29.4, model 4.3) (+1 more).**
 
-The calculated terminal half-life of 4.3 hours deviates from the paper’s value of 29.4 hours, exceeding the acceptable tolerance. Additionally, the central and peripheral volume of distribution parameters were not extracted from the record, leaving them at placeholder defaults. These two central volume values are absent from the parameter coverage, indicating incomplete data extraction for the compartmental structure. Extracted — remdesivir: V1 4.89 L, V2 46.5 L, Q 13.2 L/h, CL 18.1 L/h.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — remdesivir: V1 4.89 L, V2 46.5 L, Q 13.2 L/h, CL 18.1 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -75,10 +75,11 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'remdesivir' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — a metabolite is formed from another metabolite (a chain)
-- population split: 'remdesivir' subgroup of Abouellil_2023 (paper reports 2 populations: gs‐441524, remdesivir)
+- population split: 'remdesivir' subgroup of Abouellil_2023 (paper reports 3 populations: gs‐441524, gs‐704277, remdesivir)
 - row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 15 linked by role; re-tagged remdesivir→parent ×4, parent→GS-704277 ×3
 
 **Extraction notes:**
@@ -128,11 +129,14 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | fail | 4 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['V1', 'V2'] |
 | T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
 | T1_cmax | reference | skipped | 13.7 | 0.01262 |  | unresolved concentration unit (exp 'µM', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 807 | 0.01262 |  | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 726 | 0.01262 |  | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 645.5 | 0.01262 |  | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
 | T1_t_half_terminal | reference | fail | 29.36 | 4.303 | 0.1466 | h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -183,4 +187,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Abouellil2023_remdesivir&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Abouellil2023_remdesivir%0APaper%3A%20Abouellil_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 11:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:04 UTC</sub>

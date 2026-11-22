@@ -16,7 +16,7 @@ Götz KM, Kreuer S, Volz A-K, Parker SL, Roberts JA, Dimopoulos G et al. Populat
 
 ## Population and dosing
 
-**Population:** critically ill patients with and without kidney replacement therapy · condition critical illness / renal impairment · age group adult · n = &gt;=45.
+**Population:** critically ill patients with and without kidney replacement therapy · condition critical illness / renal impairment · age group adult.
 
 **Dosing:** 12000, 24000 mg, iv, multiple, every 8 h.
 

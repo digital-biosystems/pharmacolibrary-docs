@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;natalizumab&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/&quot;},{&quot;label&quot;:&quot;van_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Natalizumab_Moes2022_reference&quot;,&quot;label&quot;:&quot;Moes_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Moes2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Quan2025_reference&quot;,&quot;label&quot;:&quot;Quan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Quan2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Natalizumab_Moes2022_reference&quot;,&quot;label&quot;:&quot;Moes_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Moes2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Quan2025_reference&quot;,&quot;label&quot;:&quot;Quan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Quan2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # natalizumab — `Natalizumab_van2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:33 UTC (Rejected), but the paper was screened again on 2026-10-06 22:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected due to a unit conversion failure for the absorption rate constant of natalizumab, which lacks an SI value.
+> Natalizumab Vmax unit mg/d could not be converted to SI, causing rejection.
 
-<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_van2025_reference" status="rejected" stale="true" population="patients with multiple sclerosis" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_van2025_reference" status="rejected" stale="false" population="patients with multiple sclerosis" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 van den Berg SPH, Toorop AA, Hooijberg F, Wolbink G, Voelkner NMF, Gelissen LMY et al. Pharmacokinetic Model-Informed Precision Dosing of Natalizumab in Multiple Sclerosis. CPT: pharmacometrics & systems pharmacology 14(6):1032–1041 (2025).
@@ -46,7 +46,7 @@ van den Berg SPH, Toorop AA, Hooijberg F, Wolbink G, Voelkner NMF, Gelissen LMY 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ van den Berg SPH, Toorop AA, Hooijberg F, Wolbink G, Voelkner NMF, Gelissen LMY 
 
 ### Reviewer guidance
 
-**Record rejected due to a unit conversion failure for the absorption rate constant of natalizumab, which lacks an SI value.**
+**Natalizumab Vmax unit mg/d could not be converted to SI, causing rejection.**
 
-The reported unit for the absorption rate constant (kabs) could not be converted to SI units, leaving the parameter without a valid numeric value for the model. This structural issue caused the record to fail validation. Additionally, a second reader disagreed on the value for the Michaelis constant (Km), reporting 0.85 mg/L instead of the recorded 0.875 mg/L. Extracted — natalizumab: CL 0.164 L/d, V1 3.48 L, V2 3.48 L, Q 0.4 L/d, Vmax 2.86 mg/d, Km 0.875 mg/L, kabs 0.213 /day, tlag 2.61 h.
+The model specifies a maximum elimination rate (Vmax) of 2.86 mg/d, but this unit could not be converted to SI. Additionally, the second reader disagreed on the value for Km, recording 0.85 mg/L instead of the listed 0.875 mg/L. The record also contains duplicate entries for a body weight covariate effect with values 0.6 and 0.26. Extracted — natalizumab: CL 0.164 L/d, V1 3.48 L, V2 3.48 L, Q 0.4 L/d, Vmax 2.86 mg/d, Km 0.875 mg/L, kabs 0.213 /day, tlag 2.61 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has natalizumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

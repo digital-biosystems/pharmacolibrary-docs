@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes the effect of 110_phenanthroline administered at doses of 2 and 4 mg/kg on tumor progression in mice, but it does not provide a quantitative pharmacodynamic model or mechanism relating these doses to the specific response of non-viable tumor cell counts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Anchuri_2012`
 - **model family:** `unknown`
 - **driver:** `dose_only`

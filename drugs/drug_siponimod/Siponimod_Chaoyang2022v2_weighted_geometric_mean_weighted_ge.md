@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;siponimod&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/&quot;},{&quot;label&quot;:&quot;Chaoyang_2022_2 \u00b7 weighted_geometric_mean_weighted_geometric_coefficient_of_variation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_estimates_rse&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_weighted_geometric_mean_weighted_geometric_coefficient_of_variation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_estimates_rse&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_weighted_geometric_mean_weighted_geometric_coefficient_of_variation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record held back because apparent clearance 3.17 L/h and absorption constant 0.38 h−1 were not independently verified by the second reader.
+> The record for siponimod was held back because a second reader disagreed with the extracted clearance, volume, and absorption parameters.
 
 <div class="pk-model-meta" hidden drug="siponimod" model-id="Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge" status="needs_review" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="siponimod" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Chaoyang C, Xiu D, Ran W, Lingyun M, Simiao Z, Ruoming L et al. Pharmacokinetic 
 
 ## Population and dosing
 
-**Population:** healthy volunteers and patients with multiple sclerosis · condition healthy and multiple sclerosis · age group adult · n = /&gt; 501, or unknown.
+**Population:** healthy volunteers and patients with multiple sclerosis · condition healthy and multiple sclerosis · age group adult.
 
 **Dosing:** 0.25, 0.5, 10, 20 mg, oral, multiple, every 24 h.
 
@@ -51,9 +51,9 @@ Chaoyang C, Xiu D, Ran W, Lingyun M, Simiao Z, Ruoming L et al. Pharmacokinetic 
 
 ### Reviewer guidance
 
-**Record held back because apparent clearance 3.17 L/h and absorption constant 0.38 h−1 were not independently verified by the second reader.**
+**The record for siponimod was held back because a second reader disagreed with the extracted clearance, volume, and absorption parameters.**
 
-The review flagged model builder deviations, specifically assuming bioavailability of 1 and defaulting the absorption delay (Tlag) to a standard value. A second review pass returned 'unknown' or null for the dose compound, primary analyte, and all parameter values. Consequently, the extracted values for siponimod clearance, volume of distribution, and absorption rate could not be confirmed against the source. Extracted — siponimod: CL/F 3.17 L/h, V/F 113 L, kabs 0.38 h−1.
+A cross-check found zero agreement between the original record and the second reader, who reported unknown values for all three parameters. The record lists CL/F as 3.17 L/h, V/F as 112.7 L, and Ka as 0.38 h−1, while the second reader identified none of these values. Additionally, the model builder defaulted the absorption lag time and assumed bioavailability was 1. Extracted — siponimod: CL/F 3.17 L/h, V/F 113 L, kabs 0.38 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has siponimod, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -160,16 +160,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=siponimod) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev_01: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 2.04 | 1.802e-06 | unresolved concentration unit (exp 'times', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=siponimod) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 2.04 | 1.802e-06 |  | unresolved concentration unit (exp 'times', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

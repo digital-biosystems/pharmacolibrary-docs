@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Dasabuvir was rejected because its clearance of 3770 L/day and other parameters were unverified, and the model structure mismatched the parent-metabolite design.
+> Dasabuvir’s V2/F estimate of 5110 L was omitted, and its parent–metabolite disposition was represented by a one-compartment model with the wrong output compartment.
 
 <div class="pk-model-meta" hidden drug="dasabuvir" model-id="Dasabuvir_Mensing2016_reference" status="rejected" stale="false" population="adults with chronic HCV genotype 1 infection" measured-compound="dasabuvir" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Mensing S, Polepally AR, König D, Khatri A, Liu W, Podsadecki TJ et al. Populat
 
 ### Reviewer guidance
 
-**Dasabuvir was rejected because its clearance of 3770 L/day and other parameters were unverified, and the model structure mismatched the parent-metabolite design.**
+**Dasabuvir’s V2/F estimate of 5110 L was omitted, and its parent–metabolite disposition was represented by a one-compartment model with the wrong output compartment.**
 
-The record claims a two-compartment model for dasabuvir with a parent-to-metabolite link to paritaprevir, but the model structure was built as a one-compartment absorption model instead. Furthermore, a second reviewer disagreed with the extracted parameter values, including CL/F of 3770 L/day and kabs of 5.97 day⁻¹, citing that they were not found in the paper. Additionally, the output variable did not match the measured compound, and the peripheral volume parameter was missing from the model coverage. Extracted — dasabuvir: kabs 5.97 day -1, CL/F 3.77e+03 L/day, V1/F 638 L, Q/F 254 L/day, V2/F 5.11e+03 L.
+Only four of five parameters were covered, leaving V2/F unrepresented; the recorded parent–metabolite structure was represented as one-compartment oral disposition, and the output was the central compartment rather than measured dasabuvir. The model builder defaulted Tlag and assumed F=1 and Fm=1, with no molar correction. The second reader disputed the verdict, with agreement 0.083 and 0 of 1 readers agreeing. Extracted — dasabuvir: kabs 5.97 day -1, CL/F 3.77e+03 L/day, V1/F 638 L, Q/F 254 L/day, V2/F 5.11e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dasabuvir, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -149,16 +149,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | fail | Metabolite_C (measured=dasabuvir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 34% higher | 1.449e-05 | unresolved concentration unit (exp 'females vs males', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | fail | Metabolite_C (measured=dasabuvir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.083, 0 of 1 reader(s) agree | 0.083 | cross-check disputed by a second reader: verdict disputed, agreement 0.083, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 34% higher | 1.449e-05 |  | unresolved concentration unit (exp 'females vs males', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

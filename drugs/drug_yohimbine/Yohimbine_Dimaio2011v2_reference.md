@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Vss of 3.3 L/kg was used as the single volume for yohimbine in a one-compartment model.
+> Yohimbine’s systemic clearance of 13.5 mL/min/kg remains under review because the abstract-only record’s parameter attribution was disputed.
 
 <div class="pk-model-meta" hidden drug="yohimbine" model-id="Yohimbine_Dimaio2011v2_reference" status="needs_review" stale="false" population="healthy adult horses" measured-compound="yohimbine" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Dimaio Knych HK, Steffey EP, Deuel JL, Shepard RA, Stanley SD. Pharmacokinetics 
 
 ## Population and dosing
 
-**Population:** healthy adult horses · condition healthy · age group adult · n = No.
+**Population:** healthy adult horses · condition healthy · age group adult.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -51,13 +51,13 @@ Dimaio Knych HK, Steffey EP, Deuel JL, Shepard RA, Stanley SD. Pharmacokinetics 
 
 ### Reviewer guidance
 
-**Vss of 3.3 L/kg was used as the single volume for yohimbine in a one-compartment model.**
+**Yohimbine’s systemic clearance of 13.5 mL/min/kg remains under review because the abstract-only record’s parameter attribution was disputed.**
 
-The steady-state volume of distribution is used as the distribution volume, which is not acceptable for a single-compartment model. Since the record is abstract-only, the summary statistics stand in for a fitted model, and the early distribution phase is not reproduced. Extracted — yohimbine: CL 13.5 mL/min/kg, Vss 3.3 L/kg, t1/2z 4.4 h.
+The abstract alone supplied summary statistics in place of a fitted model; cross-reader agreement was 0.4, below 0.5, with 0 of 1 reader agreeing. The second reader listed the same values under the corresponding parameter names but disagreed with their attribution as mean ± SD entries. The steady-state volume of distribution, 3.3 L/kg, was used as the distribution volume because no central volume was reported; this 1-compartment structure reproduces AUC and terminal half-life, but not the early distribution phase. Extracted — yohimbine: CL 13.5 mL/min/kg, Vss 3.3 L/kg, t1/2z 4.4 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mean ± sd steady-state volume of distribution: this record has 3.3, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -131,14 +131,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=yohimbine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=yohimbine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

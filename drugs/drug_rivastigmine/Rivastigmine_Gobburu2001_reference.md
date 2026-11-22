@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rivastigmine model rejected because the absorption rate constant was missing and defaulted, and the output was the central compartment rather than the measured drug.
+> The rivastigmine record was rejected because absorption parameters were defaulted and the model structure did not match the parent-metabolite relationship.
 
 <div class="pk-model-meta" hidden drug="rivastigmine" model-id="Rivastigmine_Gobburu2001_reference" status="rejected" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="rivastigmine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,9 +51,9 @@ Gobburu JV, Tammara V, Lesko L, Jhee SS, Sramek JJ, Cutler NR et al. Pharmacokin
 
 ### Reviewer guidance
 
-**Rivastigmine model rejected because the absorption rate constant was missing and defaulted, and the output was the central compartment rather than the measured drug.**
+**The rivastigmine record was rejected because absorption parameters were defaulted and the model structure did not match the parent-metabolite relationship.**
 
-The record was built from the abstract alone, so summary statistics for rivastigmine clearance (120 L/h) and metabolite clearance (100 L/h) replaced a fitted model. The absorption rate constant was not reported in the source, so a library placeholder was used instead of an extracted value. Furthermore, the model output was set to the central compartment concentration instead of the measured analyte, rivastigmine. Extracted — rivastigmine: CL/F 120 L/h, V 236 L, Frel 140 %; ZNS 114-666 (NAP 226-90): CL 100 L/h, V 256 L.
+Absorption rate constants were left at library defaults rather than extracted from the paper, and the assumed model structure did not align with the defined parent-metabolite topology. The abstract-only source meant summary statistics stood in for fitted parameters, and the second reader disagreed with all extracted values, resulting in a cross-check agreement ratio of 0.235. Extracted — rivastigmine: CL/F 120 L/h, V 236 L, Frel 140 %; ZNS 114-666 (NAP 226-90): CL 100 L/h, V 256 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has rivastigmine → zns 114-666 (nap 226-90) (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -156,15 +156,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=rivastigmine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=rivastigmine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.235, 0 of 1 reader(s) agree | 0.235 | cross-check disputed by a second reader: verdict disputed, agreement 0.235, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

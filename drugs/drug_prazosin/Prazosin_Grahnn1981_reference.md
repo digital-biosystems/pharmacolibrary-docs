@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Prazosin's absorption rate constant and bioavailability were left at library defaults because the record was abstract-only, rendering the model unfit for review.
+> Prazosin’s absorption-rate constant (ka) had no reported value and was defaulted, so this abstract-only record was held back.
 
 <div class="pk-model-meta" hidden drug="prazosin" model-id="Prazosin_Grahnn1981_reference" status="needs_review" stale="false" population="patients with hypertension" measured-compound="prazosin" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Grahnén A, Seideman P, Lindström B, Haglund K, von Bahr C. Prazosin kinetics i
 
 ## Population and dosing
 
-**Population:** patients with hypertension · condition hypertension · age group adult · n = &gt;=8.
+**Population:** patients with hypertension · condition hypertension · age group adult.
 
 ## Model
 
@@ -49,13 +49,13 @@ Grahnén A, Seideman P, Lindström B, Haglund K, von Bahr C. Prazosin kinetics i
 
 ### Reviewer guidance
 
-**Prazosin's absorption rate constant and bioavailability were left at library defaults because the record was abstract-only, rendering the model unfit for review.**
+**Prazosin’s absorption-rate constant (ka) had no reported value and was defaulted, so this abstract-only record was held back.**
 
-The source text provided only summary statistics, forcing the builder to default the absorption rate constant and lag time rather than extract estimates. A second reader disputed the record's bioavailability value and identified the dose compound as unknown. Consequently, the apparent volume of distribution and clearance values lack support from a fitted model. Extracted — prazosin: t1/2β 3 hr, V/F 0.6 l/kg, CL 0.14 L/h.
+Ka used library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by the paper, and Tlag was also defaulted. Only the abstract was read, so its summary statistics stood in for a fitted model; the model also assumed F=1, Fm=1, no molar correction, and first-order depot input for apparent-parameterization extravascular dosing. Extracted — prazosin: t1/2β 3 hr, V/F 0.6 l/kg, CL 0.14 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % of dose recovered unchanged in urine: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -140,15 +140,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=prazosin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=prazosin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

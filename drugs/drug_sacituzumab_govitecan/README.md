@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;sacituzumab govitecan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SacituzumabGovitecan_Sathe2025_reference&quot;,&quot;label&quot;:&quot;Sathe_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SacituzumabGovitecan_Sathe2025_reference&quot;,&quot;label&quot;:&quot;Sathe_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sacituzumab govitecan
 
@@ -25,7 +25,7 @@ Sacituzumab govitecan is an antibody-drug conjugate used to treat metastatic tri
 
 ## Start here
 
-> **Sathe_2025_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> patients with HR+/HER2− mBC, mTNBC, or other solid tumors, n = &gt;=789. [Run it in the simulator](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md?tab=Simulation) · [record](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md)
+> **Sathe_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with HR+/HER2− mBC, mTNBC, or other solid tumors. [Run it in the simulator](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md?tab=Simulation) · [record](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Sacituzumab govitecan is an antibody-drug conjugate used to treat metastatic tri
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>caveat: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per…</sub><br><sub>stale — current check: Not simulated</sub> | [Sathe_2025_reference](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 13 (+8 cov.) | Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and translational… (2025) | [10.1111/cts.70291](https://doi.org/10.1111/cts.70291) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>caveat: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per…</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: T3_topology_template</sub> | [Sathe_2025_reference](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 13 (+8 cov.) | Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and translational… (2025) | [10.1111/cts.70291](https://doi.org/10.1111/cts.70291) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Sathe_2024_final](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2024_final.md) | — | general linear (no model) | 8 (+7 cov.) | Sathe AG et al., Population Pharmacokinetics of Sacituzu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ final_final_model_estimatea_rse](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r.md) | — | general linear (no model) | 3 (+1 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ untransformed_estimate](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2024_untransformed_estimate.md) | — | general linear (no model) | 0 |  |  |
@@ -51,18 +51,6 @@ Sacituzumab govitecan is an antibody-drug conjugate used to treat metastatic tri
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sathe_2025_2_time_to_first_dose_reduction](drugs/drug_sacituzumab_govitecan/pd_Sathe_2025_2_time_to_first_dose_reduction.md) | time to first dose reduction ← sacituzumab govitecan · time-to-event model | — | Sathe AG et al., Exposure-Response Analyses of Sacituzum…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3495](https://doi.org/10.1002/cpt.3495) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sathe_2025_2_vomiting](drugs/drug_sacituzumab_govitecan/pd_Sathe_2025_2_vomiting.md) | vomiting ← sacituzumab govitecan · categorical (graded) response model | — | Sathe AG et al., Exposure-Response Analyses of Sacituzum…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3495](https://doi.org/10.1002/cpt.3495) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sacituzumab_govitecan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: FUBP1 (inhibitor), TACSTD2 (antibody), TOP1 (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -75,13 +63,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 20:03 | 6:42 | 1/3/0 | 1/0/0 | 0/0/0 | 160,561/12,615 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-07 20:03 | 6:42 | 1/3/0 | 8/0/0 | 0/0/0 | 160,561/12,615 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 1  ·  needs review 0  ·  rejected 3  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

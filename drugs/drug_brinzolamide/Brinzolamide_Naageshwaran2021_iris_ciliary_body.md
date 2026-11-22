@@ -4,11 +4,11 @@
 
 # brinzolamide — `Brinzolamide_Naageshwaran2021_iris_ciliary_body`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 16:26 UTC (Rejected), but the paper was screened again on 2026-10-07 19:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the 673 µL apparent volume of distribution for brinzolamide failed a dimension check and was outside the physiological range.
+> Brinzolamide’s reported clearance of 4.12 µL/min and apparent distribution volume of 673 µL were rejected as physiologically implausible, with a unit-scale extraction error implicated.
 
-<div class="pk-model-meta" hidden drug="brinzolamide" model-id="Brinzolamide_Naageshwaran2021_iris_ciliary_body" status="rejected" stale="true" population="New Zealand White rabbits" measured-compound="brinzolamide" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="brinzolamide" model-id="Brinzolamide_Naageshwaran2021_iris_ciliary_body" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="brinzolamide" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Naageshwaran V, Ranta VP, Gum G, Bhoopathy S, Urtti A, Del Amo EM. Comprehensive Ocular and Systemic Pharmacokinetics of Brinzolamide in Rabbits After Intracameral, Topical, and Intravenous Administration. Journal of pharmaceutical sciences 110(1):529–535 (2021).
@@ -46,7 +46,7 @@ Naageshwaran V, Ranta VP, Gum G, Bhoopathy S, Urtti A, Del Amo EM. Comprehensive
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,13 +56,13 @@ Naageshwaran V, Ranta VP, Gum G, Bhoopathy S, Urtti A, Del Amo EM. Comprehensive
 
 ### Reviewer guidance
 
-**Record rejected because the 673 µL apparent volume of distribution for brinzolamide failed a dimension check and was outside the physiological range.**
+**Brinzolamide’s reported clearance of 4.12 µL/min and apparent distribution volume of 673 µL were rejected as physiologically implausible, with a unit-scale extraction error implicated.**
 
-The extracted parameters include an apparent volume of distribution at steady-state of 673 µL and a clearance of 4.12 µL/min. The review identified a dimension mismatch on this structural parameter and determined its magnitude was implausible. Additionally, a reported unit could not be converted to SI, preventing a proper standardization of the parameter. Extracted — brinzolamide: Cmax 1.96e+03 ng/g, tmax 0.5 h, t1/2z 13 h, AUCt 7.22e+03 h*ng/g, AUC∞ 8.84e+03 h*ng/g, AUC/dose 2 h* /g, CL 4.12 µL/min, V/F 673 µL, … (+1).
+The reported Cmax of 1964 ng/g was flagged for a dimension mismatch, as were AUC values of 7225 and 8839 h*ng/g; their recorded units did not match the expected concentration and concentration-time dimensions. A reported unit could not be converted to SI, leaving the clearance and volume comparison vulnerable to a unit-scale error. A second reader disagreed with several reported estimates, including Cmax (11050), AUC values (17780 and 17836), and terminal half-life (3.4 h). Extracted — brinzolamide: Cmax 1.96e+03 ng/g, tmax 0.5 h, t1/2z 13 h, AUCt 7.22e+03 h*ng/g, AUC∞ 8.84e+03 h*ng/g, AUC/dose 2 h* /g, CL 4.12 µL/min, V/F 673 µL, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has brinzolamide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

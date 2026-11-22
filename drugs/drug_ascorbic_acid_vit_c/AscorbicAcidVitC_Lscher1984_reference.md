@@ -16,7 +16,7 @@ Löscher W, Jaeschke G, Keller H. Pharmacokinetics of ascorbic acid in horses. E
 
 ## Population and dosing
 
-**Population:** horses · condition healthy · age group adult · n = &gt;=29.
+**Population:** horses · condition healthy · age group adult.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 

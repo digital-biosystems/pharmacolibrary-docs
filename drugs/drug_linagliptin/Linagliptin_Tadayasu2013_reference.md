@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Tadayasu_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4_activity&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4 activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4_activity.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linagliptin — `Linagliptin_Tadayasu2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-05 00:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. A structural parameter failed a dimensional check, and one compartment had no path from the dose.
+> Record rejected due to dimension mismatch in intercompartmental clearance and an unreachable compartment for linagliptin.
 
-<div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_Tadayasu2013_reference" status="rejected" stale="true" population="Japanese patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_Tadayasu2013_reference" status="rejected" stale="false" population="Japanese patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Tadayasu Y, Sarashina A, Tsuda Y, Tatami S, Friedrich C, Retlich S et al. Population pharmacokinetic/pharmacodynamic analysis of the DPP-4 inhibitor linagliptin in Japanese patients with type 2 diabetes mellitus. Journal of pharmacy & pharmaceutical sciences : a publication of the Canadian Society for Pharmaceutical Sciences, Societe canadienne des sciences pharmaceutiques 16(5):708–721 (2013).
@@ -17,7 +16,7 @@ Tadayasu Y, Sarashina A, Tsuda Y, Tatami S, Friedrich C, Retlich S et al. Popula
 
 ## Population and dosing
 
-**Population:** Japanese patients with type 2 diabetes mellitus · condition type 2 diabetes mellitus · age group adult · n = &gt;=36.
+**Population:** Japanese patients with type 2 diabetes mellitus · condition type 2 diabetes mellitus · age group adult.
 
 **Dosing:** 2.5, 10 mg, oral, multiple, every 24 h.
 
@@ -44,7 +43,7 @@ Tadayasu Y, Sarashina A, Tsuda Y, Tatami S, Friedrich C, Retlich S et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +53,9 @@ Tadayasu Y, Sarashina A, Tsuda Y, Tatami S, Friedrich C, Retlich S et al. Popula
 
 ### Reviewer guidance
 
-**A structural parameter failed a dimensional check, and one compartment had no path from the dose.**
+**Record rejected due to dimension mismatch in intercompartmental clearance and an unreachable compartment for linagliptin.**
 
-The review flagged a mismatch in the dimensions of a structural parameter within the model for linagliptin. Additionally, the topology contained an unreachable compartment, meaning it was not connected to the dose. The extraction record also lists a parameter with no value, whereas the second reader identified a value of 534 for that parameter. Extracted — linagliptin: Fab 1, kabs 1.63 1/h, CL/F 121 L/h, V2/F 633 L, Q3/F 73 L/h, V3/F 683 L, Bmax 6.07 nmol/L, KD 0.108 nmol/L.
+The apparent intercompartmental clearance between the central and third compartments was flagged as dimensionally inconsistent with its substance concentration unit. Additionally, the three-compartment topology contained an orphan compartment with no dose pathway. The second reader also noted a discrepancy where the amax2/f1 parameter was recorded as null despite a value of 534 being identified. Extracted — linagliptin: Fab 1, kabs 1.63 1/h, CL/F 121 L/h, V2/F 633 L, Q3/F 73 L/h, V3/F 683 L, Bmax 6.07 nmol/L, KD 0.108 nmol/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

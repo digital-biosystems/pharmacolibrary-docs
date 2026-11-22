@@ -4,11 +4,11 @@
 
 # bendroflumethiazide — `Bendroflumethiazide_SchferKorting1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:20 UTC (Rejected), but the paper was screened again on 2026-10-06 15:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="bendroflumethiazide" model-id="Bendroflumethiazide_SchferKorting1985_reference" status="needs_review" stale="true" population="rats" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bendroflumethiazide" model-id="Bendroflumethiazide_SchferKorting1985_reference" status="needs_review" stale="false" population="rats" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schäfer-Korting M. Skin blister fluid--an access to the peripheral compartment. Implications of a study on the behaviour of bendroflumethiazide in rats. Arzneimittel-Forschung 35(12):1828–1831 (1985).
@@ -36,7 +36,7 @@ Schäfer-Korting M. Skin blister fluid--an access to the peripheral compartment.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Schäfer-Korting M. Skin blister fluid--an access to the peripheral compartment.
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bendroflumethiazide: t1/2z 152 min, fu 84 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of maximum: this record has none, the second reading 60; it also differs on 2 more fields. That field does not shape the model.
 

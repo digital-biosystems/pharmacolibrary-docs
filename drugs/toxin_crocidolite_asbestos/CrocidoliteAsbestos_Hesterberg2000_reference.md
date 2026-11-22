@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Crocidolite Asbestos&quot;,&quot;href&quot;:&quot;drugs/toxin_crocidolite_asbestos/&quot;},{&quot;label&quot;:&quot;Hesterberg_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CrocidoliteAsbestos_Berry2009_reference&quot;,&quot;label&quot;:&quot;Berry_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_crocidolite_asbestos/CrocidoliteAsbestos_Berry2009_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CrocidoliteAsbestos_Hesterberg2000_reference&quot;,&quot;label&quot;:&quot;Hesterberg_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_crocidolite_asbestos/CrocidoliteAsbestos_Hesterberg2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CrocidoliteAsbestos_Berry2009_reference&quot;,&quot;label&quot;:&quot;Berry_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_crocidolite_asbestos/CrocidoliteAsbestos_Berry2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CrocidoliteAsbestos_Hesterberg2000_reference&quot;,&quot;label&quot;:&quot;Hesterberg_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_crocidolite_asbestos/CrocidoliteAsbestos_Hesterberg2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Terminal half-life for crocidolite was set to 10.5 days, the midpoint of a printed range, derived solely from abstract summary statistics.
 
 <div class="pk-model-meta" hidden drug="Crocidolite Asbestos" model-id="CrocidoliteAsbestos_Hesterberg2000_reference" status="needs_review" stale="false" population="rats exposed nose-only" measured-compound="Crocidolite Asbestos" parameterization="mechanistic" topology="retention"></div>
 
@@ -45,7 +45,13 @@ Hesterberg TW, Hart GA. Lung Biopersistence and in Vitro Dissolution Rate Predic
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Terminal half-life for crocidolite was set to 10.5 days, the midpoint of a printed range, derived solely from abstract summary statistics.**
+
+The model relies on a terminal half-life of 10.5 days for crocidolite, which was not a fitted parameter but the midpoint of a range reported in the abstract. Because the record was built from abstract-only data, these summary statistics substituted for a proper pharmacokinetic fit. This lack of underlying raw data or model fitting prevents validation of the selected value. Extracted — crocidolite asbestos: t1/2z 10.5 days.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

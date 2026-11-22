@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record is held back because the Ctrough parameter lacks a unit, and the clearance estimate is dimensioned without a unit.
+> Voriconazole Ctrough at -2.0763 lacks a unit, and this paper lacks a complete disposition core, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="voriconazole" model-id="Voriconazole_Tilen2022_reference" status="needs_review" stale="false" population="pediatric patients with invasive fungal infections" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Tilen R, Paioni P, Goetschi AN, Goers R, Seibert I, Müller D et al. Pharmacogen
 
 ## Population and dosing
 
-**Population:** pediatric patients with invasive fungal infections · condition invasive fungal infections · age group child · n = &lt;null&gt;.
+**Population:** pediatric patients with invasive fungal infections · condition invasive fungal infections · age group child.
 
 ## Model
 
@@ -55,13 +55,13 @@ Tilen R, Paioni P, Goetschi AN, Goers R, Seibert I, Müller D et al. Pharmacogen
 
 ### Reviewer guidance
 
-**The record is held back because the Ctrough parameter lacks a unit, and the clearance estimate is dimensioned without a unit.**
+**Voriconazole Ctrough at -2.0763 lacks a unit, and this paper lacks a complete disposition core, so the record was held back.**
 
-The Ctrough value of -2.0763 has no unit, so it cannot be converted for use in the model. The clearance value of 9.16 is dimensioned but lacks a unit, making it unusable. Additionally, the model relies on borrowed values from another paper to fill the disposition core, which is not permitted for this record. Extracted — voriconazole: Ctrough -2.08, allometric_exponent 1.14 surface area, m2, CL 9.16 L/h.
+This paper's disposition core is incomplete: a volume and a clearance/elimination estimate from this paper are needed to build its model, and review values from other papers (Yang_2021) cannot stand in for this paper's evidence. Ctrough has no unit, so its value cannot be converted and the model cannot use it. The reference comparison reported failure without computing a ratio, so it is inconclusive rather than a demonstrated fault. Extracted — voriconazole: Ctrough -2.08, allometric_exponent 1.14 surface area, m2, CL 9.16 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has voriconazole, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

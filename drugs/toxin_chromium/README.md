@@ -88,7 +88,7 @@ Chronic Oral: 0.001 mg/kg/day (Hexavalent chromium)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-13 03:07 | 1:38:23 | 2/1/0 | 10/1/0 | 0/0/0 | 2,713,027/154,780 | einfracz / qwen3.8-flash-next | 117 | 20/89 | 113/3 | 0 |
+| 2026-11-13 03:07 | 1:38:23 | 2/1/0 | 18/1/0 | 0/0/0 | 2,713,027/154,780 | einfracz / qwen3.8-flash-next | 117 | 20/89 | 113/3 | 0 |
 
 ## Coverage
 

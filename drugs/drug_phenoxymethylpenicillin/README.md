@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;phenoxymethylpenicillin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenoxymethylpenicillin_Obura2025_reference&quot;,&quot;label&quot;:&quot;Obura_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Obura2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenoxymethylpenicillin_Obura2025_reference&quot;,&quot;label&quot;:&quot;Obura_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Obura2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # phenoxymethylpenicillin
 
@@ -23,15 +23,9 @@ Phenoxymethylpenicillin, commonly known as penicillin V, is a beta-lactam antibi
 |---|---|---|---|---|---|---|
 | phenoxymethylpenicillin | parent | 350.39 | C16H18N2O5S | DrugBank | [6869](https://pubchem.ncbi.nlm.nih.gov/compound/6869) | Rawson_2021 |
 
-## Start here
-
-> **Obura_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Obura2025_reference.md?tab=Simulation) · [record](drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Obura2025_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Obura_2025 · CL</text><circle cx="405.4" cy="30.0" r="4" fill="#78909c"><title>Obura_2025 · CL: 41.24 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rawson_2021 · CL</text><circle cx="533.5" cy="46.0" r="4" fill="#ef6c00"><title>Rawson_2021 · CL: 95.79 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Rawson_2021 · CL</text><circle cx="536.7" cy="62.0" r="4" fill="#ef6c00"><title>Rawson_2021 · CL: 97.88 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rawson_2021 · V</text><circle cx="380.8" cy="30.0" r="4" fill="#ef6c00"><title>Rawson_2021 · V: 35.08 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rawson_2021 · V</text><circle cx="423.2" cy="46.0" r="4" fill="#ef6c00"><title>Rawson_2021 · V: 46.39 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Obura_2025 · V1</text><circle cx="266.6" cy="62.0" r="4" fill="#78909c"><title>Obura_2025 · V1: 16.55 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rawson_2021 · CL</text><circle cx="533.5" cy="30.0" r="4" fill="#ef6c00"><title>Rawson_2021 · CL: 95.79 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rawson_2021 · CL</text><circle cx="536.7" cy="46.0" r="4" fill="#ef6c00"><title>Rawson_2021 · CL: 97.88 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rawson_2021 · V</text><circle cx="380.8" cy="30.0" r="4" fill="#ef6c00"><title>Rawson_2021 · V: 35.08 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rawson_2021 · V</text><circle cx="423.2" cy="46.0" r="4" fill="#ef6c00"><title>Rawson_2021 · V: 46.39 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,9 +33,9 @@ Phenoxymethylpenicillin, commonly known as penicillin V, is a beta-lactam antibi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Obura_2025_reference](drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Obura2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Obura B et al., Pharmacokinetics of Intrapartum Benzylp…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70072](https://doi.org/10.1002/psp4.70072) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Rawson_2021_mean](drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Rawson2021_mean.md) | — | 1-compartment (no model) | 6 | Rawson TM et al., Exploring the Pharmacokinetics of Pheno…, Open forum infectious disea… (2021) | [10.1093/ofid/ofab573](https://doi.org/10.1093/ofid/ofab573) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [↳ median](drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Rawson2021_median.md) | — | 1-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Obura_2025_reference](drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Obura2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Obura B et al., Pharmacokinetics of Intrapartum Benzylp…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70072](https://doi.org/10.1002/psp4.70072) |
 
 ## Pharmacodynamics (PD)
 
@@ -49,16 +43,6 @@ Phenoxymethylpenicillin, commonly known as penicillin V, is a beta-lactam antibi
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darkes_2002_clinical_cure_rate](drugs/drug_phenoxymethylpenicillin/pd_Darkes_2002_clinical_cure_rate.md) | clinical cure rate ← phenoxymethylpenicillin · model not identified | — | Darkes MJ et al., Cefditoren pivoxil, Drugs (2002) | [10.2165/00003495-200262020-00006](https://doi.org/10.2165/00003495-200262020-00006) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ellison_2009_clinical_outcome_success_failure](drugs/drug_phenoxymethylpenicillin/pd_Ellison_2009_clinical_outcome_success_failure.md) | clinical outcome (success/failure) ← phenoxymethylpenicillin · model not identified | — | Ellison SJ, The role of phenoxymethylpenicillin, am…, British dental journal (2009) | [10.1038/sj.bdj.2009.257](https://doi.org/10.1038/sj.bdj.2009.257) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phenoxymethylpenicillin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` transporter | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -72,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:14 | 1:34 | 3/0/0 | 2/0/0 | 0/0/0 | 108,713/7,621 | einfracz / qwen3.8-27b | 5 | 0/2 | 4/1 | 0 |
+| 2026-10-07 10:14 | 1:34 | 2/1/0 | 2/0/0 | 0/0/0 | 108,713/7,621 | einfracz / qwen3.8-27b | 5 | 0/2 | 4/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 38 matched, 14 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

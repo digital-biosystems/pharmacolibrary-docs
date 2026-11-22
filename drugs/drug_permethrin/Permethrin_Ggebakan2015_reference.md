@@ -4,11 +4,11 @@
 
 # permethrin — `Permethrin_Ggebakan2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> This record was reviewed on 2026-11-07 16:18 UTC (Rejected), but the paper was screened again on 2026-10-07 11:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a dimension mismatch was found in the structural parameter for permethrin.
+> The permethrin AUC∞ unit mg/h/l is dimensionally invalid for an area-under-curve parameter.
 
-<div class="pk-model-meta" hidden drug="permethrin" model-id="Permethrin_Ggebakan2015_reference" status="rejected" stale="true" population="broiler chickens" measured-compound="permethrin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="permethrin" model-id="Permethrin_Ggebakan2015_reference" status="rejected" stale="false" population="broiler chickens" measured-compound="permethrin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gögebakan T, Eraslan G. Single-dose toxicokinetics of permethrin in broiler chickens. British poultry science 56(5):605–611 (2015).
@@ -43,7 +43,7 @@ Gögebakan T, Eraslan G. Single-dose toxicokinetics of permethrin in broiler chi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Gögebakan T, Eraslan G. Single-dose toxicokinetics of permethrin in broiler chi
 
 ### Reviewer guidance
 
-**The record was rejected because a dimension mismatch was found in the structural parameter for permethrin.**
+**The permethrin AUC∞ unit mg/h/l is dimensionally invalid for an area-under-curve parameter.**
 
-The model structure was a single compartment, yet the record included an absorption lag time of 18.5 h and a bioavailability of 0.11. Since the record was built from the abstract alone, these summary statistics stood in for a fitted model. A second reader could not confirm several parameter values or the identity of the measured compound. Extracted — permethrin: t1/2z 4.73 h, MRT 5.06 h, AUC∞ 16.4 mg/h/l, Cmax 0.6 μg/ml, tmax 0.55 h, Fab 0.11, CL 6.94 L/h, tlag 18.5 h.
+The record lists the permethrin AUC∞ as 16.45 mg/h/l, which has dimensions of mass per time per volume rather than concentration-time. Because the model was built from the abstract alone, these summary statistics stand in for a fitted model, and the second reader could not locate the reported values for AUC∞, bioavailability, Cmax, MRT, terminal half-life, or lag time in the source. Extracted — permethrin: t1/2z 4.73 h, MRT 5.06 h, AUC∞ 16.4 mg/h/l, Cmax 0.6 μg/ml, tmax 0.55 h, Fab 0.11, CL 6.94 L/h, tlag 18.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has permethrin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

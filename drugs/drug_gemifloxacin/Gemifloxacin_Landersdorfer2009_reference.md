@@ -16,7 +16,7 @@ Landersdorfer CB, Kirkpatrick CM, Kinzig M, Bulitta JB, Holzgrabe U, Drusano GL 
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=17.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

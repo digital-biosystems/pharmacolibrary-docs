@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;zalcitabine&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/&quot;},{&quot;label&quot;:&quot;Adams_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zalcitabine_Adams1998_reference&quot;,&quot;label&quot;:&quot;Adams_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zalcitabine_Ibrahim1991_reference&quot;,&quot;label&quot;:&quot;Ibrahim_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zalcitabine_Adams1998_reference&quot;,&quot;label&quot;:&quot;Adams_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zalcitabine_Ibrahim1991_reference&quot;,&quot;label&quot;:&quot;Ibrahim_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # zalcitabine — `Zalcitabine_Adams1998_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Adams1998_reference" status="simulated" stale="false" population="HIV-infected patients" measured-compound="zalcitabine" parameterization="apparent" topology="1C"></div>
+> Zalcitabine's absorption rate constant (50.0 h-1) was missing for a second reader, and the abstract-only source hindered agreement.
+
+<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Adams1998_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="zalcitabine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Adams JM, Shelton MJ, Hewitt RG, DeRemer M, DiFrancesco R, Grasela TH et al. Zalcitabine population pharmacokinetics: application of radioimmunoassay. Antimicrobial agents and chemotherapy 42(2):409–413 (1998).
@@ -27,6 +29,8 @@ Adams JM, Shelton MJ, Hewitt RG, DeRemer M, DiFrancesco R, Grasela TH et al. Zal
 <figure class="pk-models-diagram"><img src="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference.svg" alt="Zalcitabine_Adams1998_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | estimated creatinine clearance | CLR | 89.1 | ml/min |
@@ -36,7 +40,7 @@ Adams JM, Shelton MJ, Hewitt RG, DeRemer M, DiFrancesco R, Grasela TH et al. Zal
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Adams JM, Shelton MJ, Hewitt RG, DeRemer M, DiFrancesco R, Grasela TH et al. Zal
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Zalcitabine's absorption rate constant (50.0 h-1) was missing for a second reader, and the abstract-only source hindered agreement.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The model is based solely on the paper's abstract, meaning summary statistics substitute for a fitted model. A second reader disagreed on the identity of the creatinine clearance parameter and failed to extract the 50.0 h-1 absorption rate constant. These discrepancies resulted in a cross-check agreement of 0.778 with no reader concurrence. Extracted — zalcitabine: CLR 89.1 ml/min, CL/F 14.8 liters/h, V 87.6 liters, kabs 50 h-1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[estimated creatinine clearance].parameter_id`: this record has Q26, the second reading Q22; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -131,15 +135,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=zalcitabine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=zalcitabine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

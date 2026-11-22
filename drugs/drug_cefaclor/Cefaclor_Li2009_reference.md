@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the absorption rate constant for cefaclor was defaulted to a library value rather than taken from the source.
+> Cefaclor clearance of 347.0 ml/min lacks a reported absorption rate, so library defaults were used for ka and Tlag.
 
 <div class="pk-model-meta" hidden drug="cefaclor" model-id="Cefaclor_Li2009_reference" status="needs_review" stale="false" population="" measured-compound="cefaclor" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Li M, Andrew MA, Wang J, Salinger DH, Vicini P, Grady RW et al. Effects of cranb
 
 ### Reviewer guidance
 
-**The record was held back because the absorption rate constant for cefaclor was defaulted to a library value rather than taken from the source.**
+**Cefaclor clearance of 347.0 ml/min lacks a reported absorption rate, so library defaults were used for ka and Tlag.**
 
-The model builder substituted standard library defaults for the absorption rate constant and lag time because the source paper did not report these estimates. Although the apparent clearance was recorded as 347.0 ml/min, the missing absorption parameters were not justified by the available text. A second reader also disagreed on several other extracted values, such as the apparent clearance and volume of distribution, further reducing confidence in the record. Extracted — cefaclor: CL/F 347 ml/min, V/F 28.9 liters.
+The record defines cefaclor clearance (347.0 ml/min) and volume of distribution (28.9 liters) but omits the absorption rate constant. Consequently, the model builder defaulted ka and Tlag to library values rather than extracting estimates from the source. A second reader disputed the verification, failing to confirm these parameter assignments. Extracted — cefaclor: CL/F 347 ml/min, V/F 28.9 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 218, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -125,15 +125,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=cefaclor) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=cefaclor) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.462, 0 of 1 reader(s) agree | 0.462 | cross-check disputed by a second reader: verdict disputed, agreement 0.462, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

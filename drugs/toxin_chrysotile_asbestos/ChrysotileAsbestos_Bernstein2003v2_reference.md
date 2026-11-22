@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Chrysotile asbestos&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/&quot;},{&quot;label&quot;:&quot;Bernstein_2003_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2003_reference&quot;,&quot;label&quot;:&quot;Bernstein_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2003_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2003v2_reference&quot;,&quot;label&quot;:&quot;Bernstein_2003_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2003v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2004_reference&quot;,&quot;label&quot;:&quot;Bernstein_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2004_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2005_reference&quot;,&quot;label&quot;:&quot;Bernstein_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2005_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2005v2_reference&quot;,&quot;label&quot;:&quot;Bernstein_2005_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2005v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2008_group_2_chrysotile&quot;,&quot;label&quot;:&quot;Bernstein_2008_group_2_chrysotile&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2008_group_2_chrysotile.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2008_group_3_chrysotile_and_powd&quot;,&quot;label&quot;:&quot;Bernstein_2008_group_3_chrysotile_and_powderb&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2008_group_3_chrysotile_and_powd.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Finkelstein1999_reference&quot;,&quot;label&quot;:&quot;Finkelstein_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Finkelstein1999_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Oberdrster1994_reference&quot;,&quot;label&quot;:&quot;Oberd\u00f6rster_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Oberdrster1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2003_reference&quot;,&quot;label&quot;:&quot;Bernstein_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2003_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2003v2_reference&quot;,&quot;label&quot;:&quot;Bernstein_2003_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2003v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2004_reference&quot;,&quot;label&quot;:&quot;Bernstein_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2004_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2005_reference&quot;,&quot;label&quot;:&quot;Bernstein_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2005_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2005v2_reference&quot;,&quot;label&quot;:&quot;Bernstein_2005_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2005v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2008_group_2_chrysotile&quot;,&quot;label&quot;:&quot;Bernstein_2008_group_2_chrysotile&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2008_group_2_chrysotile.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Bernstein2008_group_3_chrysotile_and_powd&quot;,&quot;label&quot;:&quot;Bernstein_2008_group_3_chrysotile_and_powderb&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Bernstein2008_group_3_chrysotile_and_powd.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Finkelstein1999_reference&quot;,&quot;label&quot;:&quot;Finkelstein_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Finkelstein1999_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ChrysotileAsbestos_Oberdrster1994_reference&quot;,&quot;label&quot;:&quot;Oberd\u00f6rster_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_chrysotile_asbestos/ChrysotileAsbestos_Oberdrster1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Chrysotile asbestos — `ChrysotileAsbestos_Bernstein2003v2_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Chrysotile asbestos" model-id="ChrysotileAsbestos_Bernstein2003v2_reference" status="extracted" stale="false" population="animals (species not specified in abstract, typically rats in such studies)" measured-compound="Chrysotile asbestos" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Chrysotile asbestos" model-id="ChrysotileAsbestos_Bernstein2003v2_reference" status="simulated" stale="false" population="animals (species not specified in abstract, typically rats in such studies)" measured-compound="Chrysotile asbestos" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Bernstein DM, Rogers R, Smith P. The biopersistence of Canadian chrysotile asbestos following inhalation. Inhalation toxicology 15(13):1247–1274 (2003).
@@ -35,7 +33,7 @@ Bernstein DM, Rogers R, Smith P. The biopersistence of Canadian chrysotile asbes
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,7 +41,13 @@ Bernstein DM, Rogers R, Smith P. The biopersistence of Canadian chrysotile asbes
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -83,6 +87,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Bernstein_2003_2:abstract'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | retainedFraction (measured=Chrysotile asbestos) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

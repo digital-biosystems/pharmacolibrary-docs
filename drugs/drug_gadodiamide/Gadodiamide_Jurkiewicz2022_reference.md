@@ -4,11 +4,11 @@
 
 # gadodiamide — `Gadodiamide_Jurkiewicz2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:16 UTC (Rejected), but the paper was screened again on 2026-10-07 17:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The peripheral compartment in the gadodiamide two-compartment model is structurally orphaned, rendering it unreachable from the dose.
+> Gadodiamide record rejected due to an unreachable peripheral compartment and a disputed parameter value.
 
-<div class="pk-model-meta" hidden drug="gadodiamide" model-id="Gadodiamide_Jurkiewicz2022_reference" status="rejected" stale="true" population="" measured-compound="gadodiamide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="gadodiamide" model-id="Gadodiamide_Jurkiewicz2022_reference" status="rejected" stale="false" population="" measured-compound="gadodiamide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jurkiewicz E, Tsvetkova S, Grinberg A, Pasquiers B. Pharmacokinetics, Safety, and Efficacy of Gadopiclenol in Pediatric Patients Aged 2 to 17 Years. Investigative radiology 57(8):510-516 (2022).
@@ -36,7 +36,7 @@ Jurkiewicz E, Tsvetkova S, Grinberg A, Pasquiers B. Pharmacokinetics, Safety, an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by glm-5.3-flash (partly confirmed, agreement 0.857), qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by glm-5.3-flash (partly confirmed, agreement 0.857), qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Jurkiewicz E, Tsvetkova S, Grinberg A, Pasquiers B. Pharmacokinetics, Safety, an
 
 ### Reviewer guidance
 
-**The peripheral compartment in the gadodiamide two-compartment model is structurally orphaned, rendering it unreachable from the dose.**
+**Gadodiamide record rejected due to an unreachable peripheral compartment and a disputed parameter value.**
 
-The record specifies a two-compartment structure for gadodiamide but the peripheral compartment has no connection to the central compartment. Consequently, there is no kinetic path linking the administered dose to the peripheral volume, leaving that compartment isolated. Extracted — gadodiamide: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
+The record failed a structural check because the peripheral compartment had no path from the dose. The volume of distribution for the central compartment was extracted as 0.12 L/kg, but the second reader identified a different value of 0.08 for that parameter. Extracted — gadodiamide: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q354: this record has none, the second reading 0.08. That field does not shape the model.
 

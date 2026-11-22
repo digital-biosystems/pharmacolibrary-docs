@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The necitumumab model was rejected because the peripheral compartment is unreachable from the central dose compartment.
+> The two-compartment necitumumab model was rejected because the peripheral compartment is structurally unreachable from the central dose compartment.
 
 <div class="pk-model-meta" hidden drug="necitumumab" model-id="Necitumumab_Long2017_reference" status="rejected" stale="false" population="cancer patients" measured-compound="necitumumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -16,7 +16,7 @@ Long A, Chigutsa E, Wallin J. Population Pharmacokinetics of Necitumumab in Canc
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · age group adult · n = #807.
+**Population:** cancer patients · condition cancer · age group adult.
 
 **Dosing:** 600, 800 mg, iv, multiple.
 
@@ -48,9 +48,9 @@ Long A, Chigutsa E, Wallin J. Population Pharmacokinetics of Necitumumab in Canc
 
 ### Reviewer guidance
 
-**The necitumumab model was rejected because the peripheral compartment is unreachable from the central dose compartment.**
+**The two-compartment necitumumab model was rejected because the peripheral compartment is structurally unreachable from the central dose compartment.**
 
-The record lists a central volume of 3.6 L and a peripheral volume of 3.31 L, but the elimination parameter is mislabeled as Inter-compartmental CL with a value of 0.0198 L/h. This mismatch indicates that total clearance was not correctly distinguished from the flow between compartments, likely rendering the peripheral compartment unlinked. Extracted — necitumumab: V1 3.6 L, CL 0.0198 L/h, V2 3.31 L.
+Although parameters for central volume (3.6 L), peripheral volume (3.31 L), and clearance (0.0198 L/h) are present, the model structure defines an orphan peripheral compartment. This means there is no pharmacokinetic path connecting the dose to the peripheral space, rendering the volume of distribution of the peripheral compartment physiologically meaningless. Additionally, the recorded clearance value of 0.0198 L/h corresponds to the inter-compartmental label rather than total elimination, causing a second reader to identify a discrepancy with an expected value of 0.0141. Extracted — necitumumab: V1 3.6 L, CL 0.0198 L/h, V2 3.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central volume of distribution, v 1 (l)b: this record has 3.6, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

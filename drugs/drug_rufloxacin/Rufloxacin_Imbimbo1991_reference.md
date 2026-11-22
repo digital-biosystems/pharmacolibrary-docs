@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant defaults replace rufloxacin estimates, invalidating the oral model despite reported clearance of 53.0 ml/min.
+> The rufloxacin absorption rate constant used placeholder values instead of estimates from the paper, causing the model to be held back.
 
 <div class="pk-model-meta" hidden drug="rufloxacin" model-id="Rufloxacin_Imbimbo1991_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Imbimbo BP, Broccali G, Cesana M, Crema F, Attardo-Parrinello G. Inter- and intr
 
 ### Reviewer guidance
 
-**Absorption rate constant defaults replace rufloxacin estimates, invalidating the oral model despite reported clearance of 53.0 ml/min.**
+**The rufloxacin absorption rate constant used placeholder values instead of estimates from the paper, causing the model to be held back.**
 
-The model structure assumes first-order absorption, but the absorption rate constant and lag time were set to library defaults instead of values from the Imbimbo_1991 paper. The second reader disagreed on several extracted values, including 142.9 and 110.8, further undermining confidence in the record. Consequently, the apparent clearance of 53.0 ml/min and volume of 155.0 liters cannot be reliably linked to the simulated profile. Extracted — rufloxacin: CL/F 53 ml/min, V/F 155 liters.
+The record shows the absorption rate constant and lag time were not extracted from the source text, leaving the model without paper-supported absorption parameters. This deviation triggered a failure of the review criteria, and a second reader disputed the overall verdict with an agreement score of 0.467. Extracted — rufloxacin: CL/F 53 ml/min, V/F 155 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 142.9, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -126,15 +126,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=rufloxacin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=rufloxacin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.467, 0 of 1 reader(s) agree | 0.467 | cross-check disputed by a second reader: verdict disputed, agreement 0.467, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

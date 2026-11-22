@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record lacks kinetic parameters, reporting only an excreted amount of 1.3 mg, and features an unlinked Lead metabolite with a default 30,000 MW.
 
 <div class="pk-model-meta" hidden drug="Lead acetate" model-id="LeadAcetate_Stauber1994_reference" status="rejected" stale="false" population="unknown" measured-compound="Lead" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -45,7 +45,13 @@ Stauber JL, Florence TM, Gulson BL, Dale LS. Percutaneous absorption of inorgani
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record lacks kinetic parameters, reporting only an excreted amount of 1.3 mg, and features an unlinked Lead metabolite with a default 30,000 MW.**
+
+The entry contains no rate constants, volumes, or clearances, relying instead on a static urinary excretion amount of 1.3 mg. The Lead metabolite is structurally disconnected from the dose pathway, rendering it an orphan compartment. Additionally, the molecular weight of Lead was set to 30,000 by default, which is physically inconsistent for a lead ion, indicating a failure to extract valid physical constants. Extracted — lead acetate: Ae 1.3 mg, MW 3e+04.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

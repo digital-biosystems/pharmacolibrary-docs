@@ -26,18 +26,7 @@ It can be taken orally or rectally. A water-soluble lysine salt form can be give
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Delbeke_1994_reference](drugs/drug_alclofenac/Alclofenac_Delbeke1994_reference.md) | — | 1-compartment (no model) | 2 | Delbeke FT et al., Disposition of human drug preparations…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00258.x](https://doi.org/10.1111/j.1365-2885.1994.tb00258.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alclofenac).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: PTGS2 (target).</sub>
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Delbeke_1994_reference](drugs/drug_alclofenac/Alclofenac_Delbeke1994_reference.md) | — | 1-compartment (no model) | 2 | Delbeke FT et al., Disposition of human drug preparations…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00258.x](https://doi.org/10.1111/j.1365-2885.1994.tb00258.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +46,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

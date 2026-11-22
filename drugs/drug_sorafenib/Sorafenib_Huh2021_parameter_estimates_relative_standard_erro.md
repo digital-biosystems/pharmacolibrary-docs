@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sorafenib&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/&quot;},{&quot;label&quot;:&quot;Huh_2021 \u00b7 parameter_estimates_relative_standard_error&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sorafenib_Altalal2023_reference&quot;,&quot;label&quot;:&quot;Altalal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Altalal2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_nexavar_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_nexavar_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_nexavar_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_parameter_estimates_relative_standard_erro&quot;,&quot;label&quot;:&quot;Huh_2021_parameter_estimates_relative_standard_error&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_100_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_100_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_100_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_150_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_150_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_150_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Jain2011_reference&quot;,&quot;label&quot;:&quot;Jain_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Jain2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Liu2018_reference&quot;,&quot;label&quot;:&quot;Liu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Liu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_tumor_growth_inhibition&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 tumor-growth inhibition&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/pd_Choi_2021_tumor_growth_inhibition.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sorafenib_Altalal2023_reference&quot;,&quot;label&quot;:&quot;Altalal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Altalal2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_nexavar_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_nexavar_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_nexavar_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_100_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_100_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_100_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_150_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_150_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_150_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Liu2018_reference&quot;,&quot;label&quot;:&quot;Liu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Liu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_tumor_growth_inhibition&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 tumor-growth inhibition&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/pd_Choi_2021_tumor_growth_inhibition.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sorafenib — `Sorafenib_Huh2021_parameter_estimates_relative_standard_erro`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:02 UTC (Needs review), but the paper was screened again on 2026-10-07 07:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model does not reproduce the paper's terminal half-life (paper 20, model 1.29).
+> MTT has no unit.
 
-<div class="pk-model-meta" hidden drug="sorafenib" model-id="Sorafenib_Huh2021_parameter_estimates_relative_standard_erro" status="needs_review" stale="true" population="healthy volunteers" measured-compound="sorafenib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sorafenib" model-id="Sorafenib_Huh2021_parameter_estimates_relative_standard_erro" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sorafenib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Huh KY, Hwang S, Park SY, Lim HJ, Jin M, Oh J et al. Population Pharmacokinetic Modelling and Simulation to Determine the Optimal Dose of Nanoparticulated Sorafenib to the Reference Sorafenib. Pharmaceutics 13(5) (2021).
@@ -23,12 +23,10 @@ Huh KY, Hwang S, Park SY, Lim HJ, Jin M, Oh J et al. Population Pharmacokinetic 
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 9 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro.svg" alt="Sorafenib_Huh2021_parameter_estimates_relative_standard_erro diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -47,7 +45,7 @@ Huh KY, Hwang S, Park SY, Lim HJ, Jin M, Oh J et al. Population Pharmacokinetic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.864). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.864). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +55,9 @@ Huh KY, Hwang S, Park SY, Lim HJ, Jin M, Oh J et al. Population Pharmacokinetic 
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 20, model 1.29).**
+**MTT has no unit.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — sorafenib: Frel 1.62, MTT 3.24 h, n_transit 1.72, kabs 1.6 h−1, CL 3.33 L/h, V 8.17 L, Fab 0.215, kel 0.212 h−1, … (+1).
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — sorafenib: Frel 1.62, MTT 3.24 h, n_transit 1.72, kabs 1.6 h−1, CL 3.33 L/h, V 8.17 L, Fab 0.215, kel 0.212 h−1, … (+1).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of fent: this record has 0.215, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
@@ -85,9 +83,6 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
 
 **Interpretation flags:**
 - dropped duplicate Q57 ('Tgb2 (h)', value '12.2') — already have one for this compound
@@ -160,20 +155,6 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.33 L/h | ['pharmaceutics-13-00629-t002:row5:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 8.17 L | ['pharmaceutics-13-00629-t002:row6:col1'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=sorafenib) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 22 | 0.01242 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_t_half_beta | reference | fail | 20 | 1.292 | 0.0646 | h→SI vs simulated h |
-| T1_tmax | reference | skipped | 4 | 1.249 |  | unresolved time unit 'h post-dose' |
-
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -189,39 +170,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_modelica.zip" download>Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_fmi.zip" download>Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_fmi.zip" download>Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_fmi.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_matlab.zip" download>Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_matlab_simbio.zip" download>Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_sbml.zip" download>Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_cellml.zip" download>Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4648 | kg/mol |
-| input | dosing | `F` | 1.62 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 9.25e-07 | m3/s |
-| input | model | `VdPerKg` | 0.0001167 | m3/kg |
-| input | model | `ka` | 0.0004444 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -242,11 +198,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.6 /h, F 1.62). Doses in the paper: 100, 150, 200 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_params.json` · controls `Sorafenib_Huh2021_parameter_estimates_relative_standard_erro_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

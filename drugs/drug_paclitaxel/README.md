@@ -25,7 +25,7 @@ Paclitaxel is a taxane chemotherapy agent used to treat cancers of the breast, o
 
 ## Start here
 
-> **De_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with peritoneal metastasis, n = _subjects": 20,. [Run it in the simulator](drugs/drug_paclitaxel/Paclitaxel_De2026_reference.md?tab=Simulation) · [record](drugs/drug_paclitaxel/Paclitaxel_De2026_reference.md)
+> **De_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with peritoneal metastasis. [Run it in the simulator](drugs/drug_paclitaxel/Paclitaxel_De2026_reference.md?tab=Simulation) · [record](drugs/drug_paclitaxel/Paclitaxel_De2026_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -44,9 +44,9 @@ Paclitaxel is a taxane chemotherapy agent used to treat cancers of the breast, o
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Ait-Oudhia_2012_reference](drugs/drug_paclitaxel/Paclitaxel_AitOudhia2012_reference.md) | — | 1-compartment (no model) | 1 | Ait-Oudhia S et al., Meta-analysis of nanoparticulate paclit…, Pharmaceutical research (2012) | [10.1007/s11095-012-0775-8](https://doi.org/10.1007/s11095-012-0775-8) |
 | <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chen_2014_reference](drugs/drug_paclitaxel/Paclitaxel_Chen2014_reference.md) | — | 1-compartment (no model) | 0 | Chen (2014) | — |
 | <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">mouse</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Cheng_2021_reference](drugs/drug_paclitaxel/Paclitaxel_Cheng2021_reference.md) | — | 1-compartment (no model) | 0 | Cheng S et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutics (2021) | [10.3390/pharmaceutics13010092](https://doi.org/10.3390/pharmaceutics13010092) |
-| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Friberg_2002_reference](drugs/drug_paclitaxel/Paclitaxel_Friberg2002_reference.md) | — | parent + metabolite (no model) | 2 | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
+| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Friberg_2002_reference](drugs/drug_paclitaxel/Paclitaxel_Friberg2002_reference.md) | — | parent + metabolite (no model) | 2 | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
 | <span class="pk-rf" hidden data-species="unknown" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Li_2021_reference](drugs/drug_paclitaxel/Paclitaxel_Li2021_reference.md) | — | 1-compartment (no model) | 0 | Li (2021) | — |
-| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Tsushima_2020_reference](drugs/drug_paclitaxel/Paclitaxel_Tsushima2020_reference.md) | — | 1-compartment (no model) | 7 | Tsushima (2020) | — |
+| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Tsushima_2020_reference](drugs/drug_paclitaxel/Paclitaxel_Tsushima2020_reference.md) | — | 1-compartment (no model) | 7 | Tsushima (2020) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -56,31 +56,6 @@ Paclitaxel is a taxane chemotherapy agent used to treat cancers of the breast, o
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kearns_1995_neutropenia](drugs/drug_paclitaxel/pd_Kearns_1995_neutropenia.md) | neutropenia ← paclitaxel · direct sigmoid Emax (Hill) effect | — | Kearns CM et al., Paclitaxel pharmacokinetics and pharmac…, Seminars in oncology (1995) | — |
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Sun_2025_CIPN8](drugs/drug_paclitaxel/pd_Sun_2025_CIPN8.md) | CIPN8 ← paclitaxel · delayed effect through an effect compartment | ▶ model + simulator | Sun Y et al., Pharmacokinetic-Pharmacodynamic Model o…, Clinical and translational… (2025) | [10.1111/cts.70404](https://doi.org/10.1111/cts.70404) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Castor_2005_Tumor_size](drugs/drug_paclitaxel/pd_Castor_2005_Tumor_size.md) | Tumor growth biomarker turnover ← paclitaxel | — | Castor TP, Phospholipid nanosomes, Current drug delivery (2005) | [10.2174/156720105774370195](https://doi.org/10.2174/156720105774370195) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=paclitaxel).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCC2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCC1` inhibitor | DrugBank actor |
-| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | lung | `CYP1B1` inhibitor | DrugBank actor |
-| metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `ABCC2` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` inhibitor/substrate, `ABCC2` substrate | DrugBank actor |
-| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
-| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
-| — | testis | `CYP19A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC10 (substrate), BCL2 (inhibitor), NR1I2 (inducer), TUBB1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -100,7 +75,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 257 matched, 20 returned
 - **screened:** 18  ·  **relevant:** 4
-- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 2
+- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The glycopyrronium bromide model's terminal half-life is 1.67 hours, failing to match the paper's 52.5 hours.
+> Using a steady-state volume of 102 L for glycopyrronium resulted in a simulated terminal half-life of 1.67 h, significantly deviating from the reported 52.5 h.
 
 <div class="pk-model-meta" hidden drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_noncompartmental" status="needs_review" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></div>
 
@@ -41,7 +41,7 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 ### Reviewer guidance
 
-**The glycopyrronium bromide model's terminal half-life is 1.67 hours, failing to match the paper's 52.5 hours.**
+**Using a steady-state volume of 102 L for glycopyrronium resulted in a simulated terminal half-life of 1.67 h, significantly deviating from the reported 52.5 h.**
 
-The model builder substituted the steady-state volume of distribution for the central volume because no central volume was reported. This substitution caused the simulated terminal half-life to be 1.67 hours, while the paper reports 52.5 hours. The check failed with a ratio of 0.0318. Extracted — glycopyrronium bromide: CL 42.5 L/h, Vss 102 L, t1/2z 0.45 h.
+The extracted volume of 102 L was used as the distribution volume because a central volume was not reported. Simulating the model with this parameter yielded a terminal half-life of 1.67 h, which is substantially lower than the 52.5 h and 57.2 h values reported in the source paper. This discrepancy indicates the model structure fails to capture the terminal elimination phase characteristics described in the study. Extracted — glycopyrronium bromide: CL 42.5 L/h, Vss 102 L, t1/2z 0.45 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -110,23 +110,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
 <details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[0]` |  | 5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[gi tract absorption half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intermediate lung absorption half-life]` | 0.45 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic clearance]` | 42.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic clearance]` |  | 42.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 102 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` |  | 102 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | glycopyrronium | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | glycopyrronium | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[0]` |  | 5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gi tract absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intermediate lung absorption half-life]` | 0.45 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | 42.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` |  | 42.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | 102 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 102 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | glycopyrronium | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | glycopyrronium | unknown | mismatch |
 
 </details>
 
@@ -160,7 +160,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=glycopyrronium) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | vss_as_v: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 52.5 | 1.67 | 0.0318 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 57.2 | 1.67 | 0.0292 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 84 | 1.67 | 0.0199 | days→SI vs simulated h |

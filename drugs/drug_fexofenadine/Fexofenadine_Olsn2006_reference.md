@@ -5,11 +5,11 @@
 
 # fexofenadine — `Fexofenadine_Olsn2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 15:17 UTC (Rejected), but the paper was screened again on 2026-10-07 23:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bioavailability was extracted as a percentage (2.6%) rather than a fraction, causing a dimension mismatch.
+> The area under the plasma concentration-time curve parameter, listed at 27%, has an incompatible dimension for a structural volume parameter.
 
-<div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Olsn2006_reference" status="rejected" stale="true" population="horses" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Olsn2006_reference" status="rejected" stale="false" population="horses" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Olsén L, Ingvast-Larsson C, Larsson P, Broström H, Bondesson U, Sundqvist M et al. Fexofenadine in horses: pharmacokinetics, pharmacodynamics and effect of ivermectin pretreatment. Journal of veterinary pharmacology and therapeutics 29(2):129–135 (2006).
@@ -41,7 +41,7 @@ Olsén L, Ingvast-Larsson C, Larsson P, Broström H, Bondesson U, Sundqvist M et
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Olsén L, Ingvast-Larsson C, Larsson P, Broström H, Bondesson U, Sundqvist M et
 
 ### Reviewer guidance
 
-**Bioavailability was extracted as a percentage (2.6%) rather than a fraction, causing a dimension mismatch.**
+**The area under the plasma concentration-time curve parameter, listed at 27%, has an incompatible dimension for a structural volume parameter.**
 
-The record lists the absolute bioavailability as 2.6%, but pharmacokinetic parameters require a dimensionless fraction between 0 and 1. This unit error creates a structural inconsistency in the one-compartment model. The review notes the record was built from the abstract alone, so these summary statistics replaced fitted parameter estimates. Extracted — fexofenadine: t1/2z 2.4 h, V/F 0.8 L/kg, CL 0.8 L/h/kg, Fab 2.6 %, AUC 27 %.
+The record defines the terminal half-life (2.4 h), apparent volume of distribution (0.8 L/kg), and total clearance (0.8 L/h/kg). The area under the plasma concentration-time curve is recorded with a value of 27 and a unit of percent, which is dimensionless. This conflicts with the required mass, time, and length dimensions for the parameter, causing the model to be rejected. The findings were derived solely from the paper abstract, meaning summary statistics stood in for a fitted model. Extracted — fexofenadine: t1/2z 2.4 h, V/F 0.8 L/kg, CL 0.8 L/h/kg, Fab 2.6 %, AUC 27 %.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of area under the plasma concentration-time curve decreased: this record has 27, the second reading none. That field does not shape the model.
 

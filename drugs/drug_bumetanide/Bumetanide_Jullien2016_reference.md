@@ -16,7 +16,7 @@ Jullien V, Pressler RM, Boylan G, Blennow M, Marlow N, Chiron C et al. Pilot eva
 
 ## Population and dosing
 
-**Population:** term newborn infants with seizures · condition seizures caused by hypoxic-ischemic encephalopathy · age group neonate · n = &gt;=14.
+**Population:** term newborn infants with seizures · condition seizures caused by hypoxic-ischemic encephalopathy · age group neonate.
 
 ## Model
 

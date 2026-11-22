@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;T2 Toxin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;T2Toxin_Beasley1986_reference&quot;,&quot;label&quot;:&quot;Beasley_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;T2Toxin_Beasley1986_reference&quot;,&quot;label&quot;:&quot;Beasley_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # T2 Toxin
 
@@ -48,7 +48,7 @@ LD50: 0.24 mg/kg (Inhalation, Rat)
 
 ## Start here
 
-> **Beasley_1986_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> growing gilts and heifers. [Run it in the simulator](drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md?tab=Simulation) · [record](drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md)
+> **Beasley_1986_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> growing gilts and heifers. [Run it in the simulator](drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md?tab=Simulation) · [record](drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -56,7 +56,7 @@ LD50: 0.24 mg/kg (Inhalation, Rat)
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Beasley_1986_reference](drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Beasley VR et al., Pharmacokinetics of the trichothecene m…, Toxicon : official journal… (1986) | [10.1016/0041-0101(86)90161-3](https://doi.org/10.1016/0041-0101(86)90161-3) |
+| <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Beasley_1986_reference](drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Beasley VR et al., Pharmacokinetics of the trichothecene m…, Toxicon : official journal… (1986) | [10.1016/0041-0101(86)90161-3](https://doi.org/10.1016/0041-0101(86)90161-3) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bunner_1989_reference](drugs/toxin_t2_toxin/T2Toxin_Bunner1989_reference.md) | — | 1-compartment (no model) | 0 | Bunner BL et al., Cutaneous absorption and decontaminatio…, Journal of toxicology and e… (1989) | [10.1080/15287398909531265](https://doi.org/10.1080/15287398909531265) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pace_1986_reference](drugs/toxin_t2_toxin/T2Toxin_Pace1986_reference.md) | — | 1-compartment (no model) | 2 | Pace JG, Metabolism and clearance of T-2 mycotox…, Fundamental and applied tox… (1986) | [10.1016/0272-0590(86)90092-8](https://doi.org/10.1016/0272-0590(86)90092-8) |
 

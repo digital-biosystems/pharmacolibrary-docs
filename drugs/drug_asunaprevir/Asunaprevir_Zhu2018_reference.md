@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;asunaprevir&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/&quot;},{&quot;label&quot;:&quot;Zhu_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # asunaprevir — `Asunaprevir_Zhu2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> The record was held back because the covariate effects for weight and race were not simulated, and the bioavailability assumption was adjudicated as not acceptable.
-
-<div class="pk-model-meta" hidden drug="asunaprevir" model-id="Asunaprevir_Zhu2018_reference" status="needs_review" stale="false" population="adults with chronic HCV infection" measured-compound="asunaprevir" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="asunaprevir" model-id="Asunaprevir_Zhu2018_reference" status="simulated" stale="false" population="adults with chronic HCV infection" measured-compound="asunaprevir" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokinetic Analysis of Asunaprevir in Subjects with Hepatitis C Virus Infection. Infectious diseases and therapy 7(2):261–275 (2018).
@@ -31,8 +29,6 @@ Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokineti
 <figure class="pk-models-diagram"><img src="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference.svg" alt="Asunaprevir_Zhu2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CL/F (L/h) | CL/F | 50.8 | L/h | 4.1 |
@@ -51,7 +47,7 @@ Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,13 +57,13 @@ Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**The record was held back because the covariate effects for weight and race were not simulated, and the bioavailability assumption was adjudicated as not acceptable.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The model builder assumed a relative bioavailability of 1, which was flagged as not acceptable. Although weight and race are defined with power covariates, the simulations only ran for the reference individual, leaving these effects unverified. The absorption lag time was also left at a default value rather than being explicitly estimated. Extracted — asunaprevir: CL/F 50.8 L/h, V1/F 47.6 L, kabs 0.484 1/h, Q/F 21.6 L/h, V2/F 561 L, D1 1.12 h, Frel 0.65.
+The base model was simulated, not the covariate effects the record defines.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -200,18 +196,19 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=asunaprevir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmin_ss | reference | skipped | 55 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 16 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 19 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=asunaprevir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_cmin_ss | reference | skipped | 55 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 16 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 19 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

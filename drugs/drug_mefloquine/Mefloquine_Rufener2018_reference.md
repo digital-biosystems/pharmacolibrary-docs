@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;mefloquine&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/&quot;},{&quot;label&quot;:&quot;Rufener_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mefloquine_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rattanapunya2015_reference&quot;,&quot;label&quot;:&quot;Rattanapunya_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rufener2018_reference&quot;,&quot;label&quot;:&quot;Rufener_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mefloquine_Rattanapunya2015_reference&quot;,&quot;label&quot;:&quot;Rattanapunya_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rufener2018_reference&quot;,&quot;label&quot;:&quot;Rufener_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Mefloquine_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The model's simulated terminal half-life and peak concentration differ from the paper's values by factors of 38.3232 and 29.1366.
+> The model does not reproduce the paper's terminal half-life (paper 580, model 2.22e+04); the model does not reproduce the paper's peak concentration (Cmax).
 
 <div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Rufener2018_reference" status="needs_review" stale="false" population="mice infected with E. multilocularis eggs" measured-compound="mefloquine" parameterization="apparent" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Rufener R, Ritler D, Zielinski J, Dick L, da Silva ET, da Silva Araujo A et al. 
 
 ### Reviewer guidance
 
-**The model's simulated terminal half-life and peak concentration differ from the paper's values by factors of 38.3232 and 29.1366.**
+**The model does not reproduce the paper's terminal half-life (paper 580, model 2.22e+04); the model does not reproduce the paper's peak concentration (Cmax).**
 
-The simulated terminal half-life is 22227.462948041186 hours, while the expected value is 580.0 hours, yielding a ratio of 38.3232. The simulated peak concentration is 0.07662929016038568, whereas the expected value is 0.00263, with a ratio of 29.1366. These discrepancies indicate the model parameters do not accurately reflect the pharmacokinetic profile described in the study. Extracted — mefloquine: kabs 0.3 h -1, CL/F 0.014 L/h, Q/F 0.027 L/h, V1/F 1.04 L, V2/F 7.39 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — mefloquine: kabs 0.3 h -1, CL/F 0.014 L/h, Q/F 0.027 L/h, V1/F 1.04 L, V2/F 7.39 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=mefloquine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviated_parameters: not acceptable; apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped |  | 0.07663 |  | non-numeric value |
 | T1_cmax | reference | fail | 0.00263 | 0.07663 | 29.14 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.00263 | 0.07663 | 29.14 | mg/L→SI vs simulated kg/m3 |

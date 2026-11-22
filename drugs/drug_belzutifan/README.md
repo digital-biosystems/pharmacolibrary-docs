@@ -40,26 +40,9 @@ Belzutifan is an antineoplastic agent indicated for von Hippel-Lindau disease an
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Marathe_2023_absolute_parameter_value](drugs/drug_belzutifan/Belzutifan_Marathe2023_absolute_parameter_value.md) | — | 1-compartment (no model) | 2 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T6_deviations</sub> | [↳ arithmetic_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub> | [↳ arithmetic_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub> | [↳ geometric_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [↳ estimate](drugs/drug_belzutifan/Belzutifan_Marathe2023_estimate.md) | — | 1-compartment (no model) | 7 (+4 cov.) |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=belzutifan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP3A4` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate, `UGT2B17` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT2B17` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` substrate, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: EPAS1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

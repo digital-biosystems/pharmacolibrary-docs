@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;carmustine&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/&quot;},{&quot;label&quot;:&quot;Russo_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carmustine_Levin1978_reference&quot;,&quot;label&quot;:&quot;Levin_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Levin1978_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carmustine_Russo1981_reference&quot;,&quot;label&quot;:&quot;Russo_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Russo1981_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carmustine_Levin1978_reference&quot;,&quot;label&quot;:&quot;Levin_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Levin1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carmustine_Russo1981_reference&quot;,&quot;label&quot;:&quot;Russo_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Russo1981_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carmustine — `Carmustine_Russo1981_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_Russo1981_reference" status="simulated" stale="false" population="patients with lung cancer" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
+> BCNU’s terminal elimination half-life of 1413 mins, distribution volume of 2.59 liters/kg, and clearance of 16.7 ml/min/kg were held for review because the second reader disputed all three.
+
+<div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_Russo1981_reference" status="needs_review" stale="false" population="patients with lung cancer" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Russo R, Bartosek I, Piazza E, Santi AM, Libretti A, Garattini S. Differential pulse polarographic determination of BCNU pharmacokinetics in patients with lung cancer. Cancer treatment reports 65(7-8):555–562 (1981).
@@ -28,6 +30,8 @@ Russo R, Bartosek I, Piazza E, Santi AM, Libretti A, Garattini S. Differential p
 <figure class="pk-models-diagram"><img src="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference.svg" alt="Carmustine_Russo1981_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | half-life of BCNU added to plasma in vitro | t1/2z | 1413 | mins |
@@ -36,7 +40,7 @@ Russo R, Bartosek I, Piazza E, Santi AM, Libretti A, Garattini S. Differential p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Russo R, Bartosek I, Piazza E, Santi AM, Libretti A, Garattini S. Differential p
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**BCNU’s terminal elimination half-life of 1413 mins, distribution volume of 2.59 liters/kg, and clearance of 16.7 ml/min/kg were held for review because the second reader disputed all three.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record is based on the abstract alone, so reported summary statistics stood in for a fitted model. The second reader reported no values for all three parameters, while this record reported 1413 mins, 2.59 liters/kg, and 16.7 ml/min/kg. Cross-check agreement was 0.4, below 0.5, with 0 of 1 reader(s) agreeing. Extracted — carmustine: t1/2z 1.41e+03 mins, V 2.59 liters/kg, CL 16.7 ml/min/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of half-life of bcnu added to plasma in vitro: this record has 1413, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,14 +126,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=BCNU) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=BCNU) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

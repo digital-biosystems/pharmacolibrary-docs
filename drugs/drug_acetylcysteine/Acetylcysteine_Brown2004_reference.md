@@ -4,11 +4,11 @@
 
 # acetylcysteine — `Acetylcysteine_Brown2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 22:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The 23% exercise effect on clearance was stored as a drug interaction ratio parameter, creating a dimensional mismatch that led to rejection.
+> The record was rejected because N-acetylcysteine’s clearance-ratio parameter was reported as 23%, triggering a structural-parameter dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="acetylcysteine" model-id="Acetylcysteine_Brown2004_reference" status="rejected" stale="true" population="healthy men" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="acetylcysteine" model-id="Acetylcysteine_Brown2004_reference" status="rejected" stale="false" population="healthy men" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Brown M, Bjorksten A, Medved I, McKenna M. Pharmacokinetics of intravenous N-acetylcysteine in men at rest and during exercise. European journal of clinical pharmacology 60(10):717–723 (2004).
@@ -16,7 +16,7 @@ Brown M, Bjorksten A, Medved I, McKenna M. Pharmacokinetics of intravenous N-ace
 
 ## Population and dosing
 
-**Population:** healthy men · condition healthy · age group adult · n = &gt;&lt;/&gt;24.
+**Population:** healthy men · condition healthy · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Brown M, Bjorksten A, Medved I, McKenna M. Pharmacokinetics of intravenous N-ace
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Brown M, Bjorksten A, Medved I, McKenna M. Pharmacokinetics of intravenous N-ace
 
 ### Reviewer guidance
 
-**The 23% exercise effect on clearance was stored as a drug interaction ratio parameter, creating a dimensional mismatch that led to rejection.**
+**The record was rejected because N-acetylcysteine’s clearance-ratio parameter was reported as 23%, triggering a structural-parameter dimension mismatch.**
 
-The record defines 'CL_ratio' as a proportionality factor for drug interactions, yet it stores the 23% reduction in N-acetylcysteine clearance due to exercise. This mismatch between the parameter's intended pharmacokinetic meaning and the specific physiological effect was the primary cause of the failure. Additionally, the model was based only on abstract summary statistics, and a second reader could not confirm the values for clearance, volume of distribution, or absorption rate. Extracted — acetylcysteine: CL 0.58 l kg(-1) h(-1), V 0.064 l kg(-1), CL_ratio 23 %, kabs 0.14 h−1.
+The exercise-related reduction in clearance is represented as a clearance ratio for N-acetylcysteine, with value 23 and unit %. The unit was dimensionless, while the structural parameter’s dimension was recorded as None, producing the mismatch. Only the abstract was read, so reported summary statistics stood in for a fitted model; the second reader did not confirm the 23 estimate. Extracted — acetylcysteine: CL 0.58 l kg(-1) h(-1), V 0.064 l kg(-1), CL_ratio 23 %, kabs 0.14 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has N-acetylcysteine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

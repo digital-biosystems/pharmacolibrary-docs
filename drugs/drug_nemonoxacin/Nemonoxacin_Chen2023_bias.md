@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nemonoxacin clearance is zero and bioavailability and volume of distribution are missing, causing the model to use placeholders and be held back.
+> Nemonoxacin's bioavailability and volume of distribution lacked extracted values, forcing the use of unvalidated placeholders that led to the model's quarantine.
 
 <div class="pk-model-meta" hidden drug="nemonoxacin" model-id="Nemonoxacin_Chen2023_bias" status="model_quarantined" stale="false" population="Chinese patients with community-acquired pneumonia and healthy subjects" measured-compound="nemonoxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Chen Y, Wu X, Tsai C, Chang L, Yu J, Cao G et al. Integrative population pharmac
 
 ## Population and dosing
 
-**Population:** Chinese patients with community-acquired pneumonia and healthy subjects · condition community-acquired pneumonia · age group adult · n = &gt;=100.
+**Population:** Chinese patients with community-acquired pneumonia and healthy subjects · condition community-acquired pneumonia · age group adult.
 
 **Dosing:** 500, 750 mg, other, multiple, every 24 h.
 
@@ -51,9 +51,9 @@ Chen Y, Wu X, Tsai C, Chang L, Yu J, Cao G et al. Integrative population pharmac
 
 ### Reviewer guidance
 
-**Nemonoxacin clearance is zero and bioavailability and volume of distribution are missing, causing the model to use placeholders and be held back.**
+**Nemonoxacin's bioavailability and volume of distribution lacked extracted values, forcing the use of unvalidated placeholders that led to the model's quarantine.**
 
-The record lists nemonoxacin's total clearance as 0 L/h, while the second reader reports it as 1. Nemonoxacin's bioavailability and volume of distribution lack explicit values, resulting in library placeholders. The second reader also disagrees on absorption rate and lag time values. Extracted — nemonoxacin: CL 0 L/h, V2 0 L, Q 1 L/h, V3 0 L, kabs 6 1/h, tlag -2 h.
+The record contains no estimated figures for nemonoxacin's bioavailability or total volume of distribution, meaning standard library values replaced specific pharmacokinetic data. A secondary review also challenged other parameter values, including a clearance of 0 L/h and a lag time of -2 h, which differ from the reviewer's estimates. Extracted — nemonoxacin: CL 0 L/h, V2 0 L, Q 1 L/h, V3 0 L, kabs 6 1/h, tlag -2 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0, the second reading 1; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -162,30 +162,31 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev_1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 0.151 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 7.32 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 4.9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 16.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 90 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.125 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.25 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 74 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 83 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 56.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 22.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 73 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 25 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 32 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.235, 0 of 1 reader(s) agree | 0.235 | cross-check disputed by a second reader: verdict disputed, agreement 0.235, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 0.151 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 7.32 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 4.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 16.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 90 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.125 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.25 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 74 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 83 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 12 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 56.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 22.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 73 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 25 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 32 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

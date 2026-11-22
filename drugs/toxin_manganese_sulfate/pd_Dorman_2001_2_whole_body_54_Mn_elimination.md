@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Manganese sulfate&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/&quot;},{&quot;label&quot;:&quot;Dorman_2001_2 \u00b7 PD whole-body (54)Mn elimination&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseSulfate_Vitarella2000_reference&quot;,&quot;label&quot;:&quot;Vitarella_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseSulfate_Vitarella2000_reference&quot;,&quot;label&quot;:&quot;Vitarella_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # whole-body (54)Mn elimination — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Manganese_sulfate drives whole-body (54)Mn elimination (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The record indicates manganese sulfate concentrations (mg Mn/m³) act on whole-body (54)Mn elimination with a stimulatory effect, though the specific pharmacodynamic mechanism is not resolved.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Dorman_2001_2`
 - **model family:** `unknown`

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Carlsson_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Liraglutide_Woodward2014_reference&quot;,&quot;label&quot;:&quot;Woodward_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_reference&quot;,&quot;label&quot;:&quot;Carlsson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_reference&quot;,&quot;label&quot;:&quot;Overgaard_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Guo_2025_Weight&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 \u0394\u0394Weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/pd_Guo_2025_Weight.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_reference&quot;,&quot;label&quot;:&quot;Carlsson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_reference&quot;,&quot;label&quot;:&quot;Overgaard_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Woodward2014_reference&quot;,&quot;label&quot;:&quot;Woodward_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Guo_2025_Weight&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 \u0394\u0394Weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/pd_Guo_2025_Weight.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # liraglutide — `Liraglutide_Carlsson2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> The liraglutide record failed because covariate effects on apparent clearance were not simulated, and a duplication exists for the body weight power parameter.
-
-<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Carlsson2021_reference" status="needs_review" stale="false" population="children, adolescents and adults with obesity" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Carlsson2021_reference" status="simulated" stale="false" population="children, adolescents and adults with obesity" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Carlsson Petri KC, Hale PM, Hesse D, Rathor N, Mastrandrea LD. Liraglutide pharmacokinetics and exposure-response in adolescents with obesity. Pediatric obesity 16(10):e12799 (2021).
@@ -31,8 +29,6 @@ Carlsson Petri KC, Hale PM, Hesse D, Rathor N, Mastrandrea LD. Liraglutide pharm
 <figure class="pk-models-diagram"><img src="drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference/Liraglutide_Carlsson2021_reference.svg" alt="Liraglutide_Carlsson2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | Absorption rate constant | kabs | 0.0804 | 1/h |  |  |
@@ -50,7 +46,7 @@ Carlsson Petri KC, Hale PM, Hesse D, Rathor N, Mastrandrea LD. Liraglutide pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,13 +56,13 @@ Carlsson Petri KC, Hale PM, Hesse D, Rathor N, Mastrandrea LD. Liraglutide pharm
 
 ### Reviewer guidance
 
-**The liraglutide record failed because covariate effects on apparent clearance were not simulated, and a duplication exists for the body weight power parameter.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The record defines covariates for sex, age, and body weight affecting apparent clearance, but only the reference individual was simulated, leaving these effects untested. Additionally, two different values (0.762 and 0.587) are recorded for the body weight power parameter, which is a deviation. Tlag was also left at its default value rather than being explicitly estimated. Extracted — liraglutide: kabs 0.0804 1/h, CL/F 1.07 L/h, V/F 13.1 L.
+The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has liraglutide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has liraglutide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -124,19 +120,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.562 (9/16 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.562 (9/16 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[age_contrast_adolescent_adult_on_cl_f]` | 1.06 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[age_contrast_child_adult_on_cl_f]` | 1.11 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[sex_contrast_male_female_on_cl_f]` | 1.12 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_age]` |  | 1.11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_sex]` |  | 1.12 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | liraglutide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | liraglutide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[age_contrast_adolescent_adult_on_cl_f]` | 1.06 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[age_contrast_child_adult_on_cl_f]` | 1.11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[sex_contrast_male_female_on_cl_f]` | 1.12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_age]` |  | 1.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_sex]` |  | 1.12 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | liraglutide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | liraglutide | unknown | mismatch |
 
 </details>
 
@@ -172,7 +168,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=liraglutide) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev_001: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

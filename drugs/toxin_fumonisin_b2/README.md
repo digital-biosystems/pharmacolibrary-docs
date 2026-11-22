@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fumonisin B2&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FumonisinB2_Shephard1995_reference&quot;,&quot;label&quot;:&quot;Shephard_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FumonisinB2_Shephard1995_reference&quot;,&quot;label&quot;:&quot;Shephard_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Fumonisin B2
 
@@ -32,7 +32,7 @@ Fumonisin B2 is from Fusarium moniliforme Fumonisin B2 is a fumonisin mycotoxin 
 
 ## Start here
 
-> **Shephard_1995_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> male BD IX rats. [Run it in the simulator](drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md?tab=Simulation) · [record](drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md)
+> **Shephard_1995_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> male BD IX rats. [Run it in the simulator](drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md?tab=Simulation) · [record](drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -40,7 +40,7 @@ Fumonisin B2 is from Fusarium moniliforme Fumonisin B2 is a fumonisin mycotoxin 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Shephard_1995_reference](drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Shephard GS et al., Toxicokinetics of the mycotoxin fumonis…, Food and chemical toxicolog… (1995) | [10.1016/0278-6915(95)00022-t](https://doi.org/10.1016/0278-6915(95)00022-t) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Shephard_1995_reference](drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Shephard GS et al., Toxicokinetics of the mycotoxin fumonis…, Food and chemical toxicolog… (1995) | [10.1016/0278-6915(95)00022-t](https://doi.org/10.1016/0278-6915(95)00022-t) |
 | <span class="pk-rf" hidden data-species="other animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Benlashehr_2011_reference](drugs/toxin_fumonisin_b2/FumonisinB2_Benlashehr2011_reference.md) | held back | 1-compartment, IV | 3 | Benlashehr I et al., Toxicokinetics of fumonisin B2 in ducks…, Poultry science (2011) | [10.3382/ps.2011-01434](https://doi.org/10.3382/ps.2011-01434) |
 
 ## Pharmacodynamics (PD)

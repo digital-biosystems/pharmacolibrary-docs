@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper excerpt discusses the pharmacokinetics and bioavailability of fosfomycin salts (trometamol and calcium) but does not describe a pharmacodynamic model, mechanism of action, or potency parameters linking drug concentrations to a measured response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Isla_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

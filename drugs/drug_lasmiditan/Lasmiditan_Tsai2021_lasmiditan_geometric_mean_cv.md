@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Lasmiditan model tmax is 4.3 h versus 1.5 h in the paper, and clearance is 48.9 L/h versus 107 L/h per the second reader.
+> Lasmiditan's simulated tmax of 4.3 h differs from the paper's reported 1.5 h, and clearance values conflict with the second reader's data.
 
 <div class="pk-model-meta" hidden drug="lasmiditan" model-id="Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv" status="needs_review" stale="false" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics
 
 ## Population and dosing
 
-**Population:** pediatric patients with migraine · condition migraine · age group child · n = ,n_subjects.
+**Population:** pediatric patients with migraine · condition migraine · age group child.
 
 **Dosing:** 100, 200 mg, oral, single.
 
@@ -54,9 +54,9 @@ Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Lasmiditan model tmax is 4.3 h versus 1.5 h in the paper, and clearance is 48.9 L/h versus 107 L/h per the second reader.**
+**Lasmiditan's simulated tmax of 4.3 h differs from the paper's reported 1.5 h, and clearance values conflict with the second reader's data.**
 
-The model's predicted time to peak concentration (4.3 h) fails to match the paper's reported tmax (1.5 h), with a ratio of 2.8671. The second reader identified a major discrepancy for apparent clearance, finding 107 L/h compared to the 48.9 L/h in the record. Additionally, the reader disagreed on AUC values, reporting null where the record lists 2220 and 2050 ng*h/mL. Extracted — lasmiditan: Cmax 426 ng/mL, AUClast 2.22e+03 ng*h/mL, AUC∞ 2.05e+03 ng*h/mL, CL/F 48.9 L/h, V/F 261 L, kabs 0.295 1/h.
+The one-compartment model's predicted time to peak concentration of 4.3 h deviates from the paper's reported tmax of 1.5 h, indicating a structural mismatch. The second reader disputes the extraction, reporting a clearance of 107 L/h instead of 48.9 L/h and identifying a missing additive covariate. Additional discrepancies exist for AUC and Cmax values, where the second reader found no corresponding data in the source. Extracted — lasmiditan: Cmax 426 ng/mL, AUClast 2.22e+03 ng*h/mL, AUC∞ 2.05e+03 ng*h/mL, CL/F 48.9 L/h, V/F 261 L, kabs 0.295 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf: this record has 2050, the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -166,7 +166,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=lasmiditan) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.263, 0 of 1 reader(s) agree | 0.263 | cross-check disputed by a second reader: verdict disputed, agreement 0.263, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 4 | 3.889 | 0.9721 | h→SI vs simulated h |
 | T1_t_half_beta | reference | pass | 4 | 3.889 | 0.9721 | h→SI vs simulated h |
 | T1_tmax | reference | fail | 1.5 | 4.301 | 2.867 | h→SI vs simulated h |

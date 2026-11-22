@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Imaizumi_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_estimate&quot;,&quot;label&quot;:&quot;Anderson_2005_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_estimate.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Imaizumi2017_reference&quot;,&quot;label&quot;:&quot;Imaizumi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Paracetamol_Mian2019_reference&quot;,&quot;label&quot;:&quot;Mian_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Mian2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Imaizumi2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The acetaminophen model was rejected because its two-compartment structure lacks the metabolic elimination pathways for its glucuronide, sulfate, and cysteine metabolites.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Imaizumi2017_reference" status="rejected" stale="false" population="Japanese patients undergoing elective surgery" measured-compound="acetaminophen" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Imaizumi2017_reference" status="needs_review" stale="false" population="Japanese patients undergoing elective surgery" measured-compound="acetaminophen" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Imaizumi T, Obara S, Mogami M, Iseki Y, Hasegawa M, Murakawa M. Population pharmacokinetics of intravenous acetaminophen in Japanese patients undergoing elective surgery. Journal of anesthesia 31(3):380–388 (2017).
@@ -17,31 +17,34 @@ Imaizumi T, Obara S, Mogami M, Iseki Y, Hasegawa M, Murakawa M. Population pharm
 
 ## Population and dosing
 
-**Population:** Japanese patients undergoing elective surgery · condition elective surgery · age group mixed.
+**Population:** Japanese patients undergoing elective surgery · condition elective surgery · age group adult.
 
 **Dosing:** 1000 mg, iv, single.
 
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 6 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference/Paracetamol_Imaizumi2017_reference.svg" alt="Paracetamol_Imaizumi2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | IIV |
-|---|---|---|---|---|
-| V1 (L) TVV1 | V1 | 10.5 | L | 45.6 (None% RSE) |
-| V2 (L) TVV2 | V2 | 27.1 | L | 21 (None% RSE) |
-| CL1 (L/min) TVCL1 | CL | 0.21 | L/min |  |
-| ka | kabs | 9.76 | h -1 |  |
-| Tlag | tlag | 4.2 | min |  |
+| label | parameter | value | unit |
+|---|---|---|---|
+| V1 (L) TVV1 | V1 | 10.5 | L |
+| V2 (L) TVV2 | V2 | 27.1 | L |
+| CL1 (L/min) TVCL1 | CL | 0.21 | L/min |
+| CL2 (L/min) TVCL2 | Q2 | 1.1 | L/min |
+| ka | kabs | 9.76 | h -1 |
+| Tlag | tlag | 4.2 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,30 +54,34 @@ Imaizumi T, Obara S, Mogami M, Iseki Y, Hasegawa M, Murakawa M. Population pharm
 
 ### Reviewer guidance
 
-**The acetaminophen model was rejected because its two-compartment structure lacks the metabolic elimination pathways for its glucuronide, sulfate, and cysteine metabolites.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The review flagged an unreachable compartment, indicating the model structure does not correctly handle the drug's elimination. While a second reader identified missing metabolic links for the glucuronide, sulfate, and cysteine metabolites, the current record contains no such links. The record lists typical parameters like volume and clearance, but these are disconnected from the necessary metabolic processes. Extracted — paracetamol: V1 10.5 L, V2 27.1 L, CL 0.21 L/min, kabs 9.76 h -1, tlag 4.2 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — paracetamol: V1 10.5 L, V2 27.1 L, CL 0.21 L/min, Q2 1.1 L/min, kabs 9.76 h -1, tlag 4.2 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading acetaminophen → acetaminophen glucuronide (metabolism); acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen cysteine+mercapturate (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading acetaminophen → acetaminophen glucuronide (metabolism); acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen cysteine+mercapturate (metabolism); it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|
-| V1 (L) TVV1 | `Q63` · V1 | 10.5 | L | 0.0105 | m3 | l | llm_confirmed (0.6) | tab_2:row2:col1, tab_2:row2:col2 | 45.6 (None% RSE) |
-| V2 (L) TVV2 | `Q64` · V2 | 27.1 | L | 0.0271 | m3 | l | llm_confirmed (0.6) | tab_2:row3:col1, tab_2:row3:col2 | 21 (None% RSE) |
-| CL1 (L/min) TVCL1 | `Q22` · CL | 0.21 | L/min | 3.5e-06 | m3/s | l/min | llm (0.6) | tab_2:row4:col1, tab_2:row4:col2 |  |
-| ka | `Q49` · kabs | 9.76 | h -1 | 0.002711 | 1/s | 1/h | review_gapfill (0.7) | Anderson_1998:review |  |
-| Tlag | `Q83` · tlag | 4.2 | min | 252 | s | h | review_gapfill (0.7) | Gibb_2008:review |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| V1 (L) TVV1 | `Q63` · V1 | 10.5 | L | 0.0105 | m3 | l | llm_confirmed (0.6) | tab_2:row2:col1, tab_2:row2:col2 |
+| V2 (L) TVV2 | `Q64` · V2 | 27.1 | L | 0.0271 | m3 | l | llm_confirmed (0.6) | tab_2:row3:col1, tab_2:row3:col2 |
+| CL1 (L/min) TVCL1 | `Q22` · CL | 0.21 | L/min | 3.5e-06 | m3/s | l/min | llm (0.6) | tab_2:row4:col1, tab_2:row4:col2 |
+| CL2 (L/min) TVCL2 | `Q99` · Q2 | 1.1 | L/min | 1.833e-05 | m3/s | l/min | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2 |
+| ka | `Q49` · kabs | 9.76 | h -1 | 0.002711 | 1/s | 1/h | review_gapfill (0.7) | Anderson_1998:review |
+| Tlag | `Q83` · tlag | 4.2 | min | 252 | s | h | review_gapfill (0.7) | Gibb_2008:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
 - table section iiv: 'ωV1' routed out of structural estimates ('Inter-individual variability (%)')
@@ -88,7 +95,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - table representations disagree for 'Additive (μg/ml)'; source reconciliation required
 - table representations disagree for 'Proportional (%)'; source reconciliation required
 - table representations disagree for 'Objective function'; source reconciliation required
-- dropped unlinked row (NIL): 'CL2 (L/min) TVCL2' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col2'])
 - dropped unlinked row (NIL): 'Additive (μg/ml)' — extend the ontology if this is a real PK parameter (source ['tab_2:row12:col1', 'tab_2:row12:col2'])
 - dropped unlinked row (NIL): 'Proportional (%)' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col1', 'tab_2:row13:col2'])
 - dropped unlinked row (NIL): 'Objective function' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col1', 'tab_2:row16:col2'])
@@ -110,9 +116,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -120,6 +126,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[1]` |  | 1 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl1 (l/min) tvcl1]` |  | 0.21 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl1 (l/min) tvcl1]` | 0.21 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2 (l/min) tvcl2]` |  | 1.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2 (l/min) tvcl2]` | 1.1 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1 (l) tvv1]` |  | 10.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1 (l) tvv1]` | 10.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v2 (l) tvv2]` |  | 27.1 | only_one_extracted |
@@ -137,7 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
@@ -145,11 +153,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gibb_2008:review'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['tab_2:row5:col1', 'tab_2:row5:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.21 | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
-| C8_topology | fail |  |  |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 12.6 L/h | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 10.5 L | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 27.1 L | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=acetaminophen) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -161,16 +182,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 9.76 /h, lag 4.2 min, F 0.9). Dose in the paper: 1000 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference/Paracetamol_Imaizumi2017_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference/Paracetamol_Imaizumi2017_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Paracetamol_Imaizumi2017_reference_params.json` · controls `Paracetamol_Imaizumi2017_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Imaizumi2017_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Imaizumi2017_reference%0APaper%3A%20Imaizumi_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 07:35 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 03:00 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Mc_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Croxtall_1994_A549_cell_proliferation&quot;,&quot;label&quot;:&quot;Croxtall_1994 \u00b7 A549 cell proliferation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Croxtall_1994_A549_cell_proliferation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Montenegro_2011_vasorelaxation&quot;,&quot;label&quot;:&quot;Montenegro_2011 \u00b7 vasorelaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Montenegro_2011_vasorelaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Mc2024_reference" status="rejected" stale="false" population="tamoxifen-treated patients" measured-compound="Z-endoxifen" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Mc2024_reference" status="rejected" stale="false" population="tamoxifen-treated patients from the CEPAM cohort" measured-compound="Z-endoxifen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Mc Laughlin AM, Helland T, Klima F, Koolen SLW, van Schaik RHN, Mathijssen RHJ et al. Nonlinear Mixed-Effects Model of Z-Endoxifen Concentrations in Tamoxifen-Treated Patients from the CEPAM Cohort. Clinical pharmacology and therapeutics 116(3):690–702 (2024).
@@ -17,7 +17,7 @@ Mc Laughlin AM, Helland T, Klima F, Koolen SLW, van Schaik RHN, Mathijssen RHJ e
 
 ## Population and dosing
 
-**Population:** tamoxifen-treated patients · condition breast cancer · age group adult.
+**Population:** tamoxifen-treated patients from the CEPAM cohort · condition breast cancer · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed tamoxifen, measured Z-endoxifen.
 
@@ -59,7 +59,7 @@ Independently confirmed by `gpt-oss-120b`.
 - column 'parameter [unit]' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - table representations disagree for 'Fixed effects'; source reconciliation required
 - table representations disagree for 'Random effects'; source reconciliation required
-- routed 'Fixed effects' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Fixed effects' — extend the ontology if this is a real PK parameter (source ['Mc_2024_table_p7_1:row0:col1', 'Mc_2024_table_p7_1:row0:col3', 'Mc_2024_table_p7_1:row1:col3', 'Mc_2024_table_p7_1:row2:col3', 'Mc_2024_table_p7_1:row3:col1', 'Mc_2024_table_p7_1:row3:col3', 'Mc_2024_table_p7_1:row4:col3', 'Mc_2024_table_p7_1:row5:col1', 'Mc_2024_table_p7_1:row5:col3', 'Mc_2024_table_p7_1:row6:col1', 'Mc_2024_table_p7_1:row6:col3', 'Mc_2024_table_p7_1:row7:col1', 'Mc_2024_table_p7_1:row7:col3', 'Mc_2024_table_p7_1:row8:col1', 'Mc_2024_table_p7_1:row8:col3', 'Mc_2024_table_p7_1:row9:col1', 'Mc_2024_table_p7_1:row9:col3', 'Mc_2024_table_p7_1:row10:col1', 'Mc_2024_table_p7_1:row10:col3', 'Mc_2024_table_p7_1:row11:col1', 'Mc_2024_table_p7_1:row11:col3', 'Mc_2024_table_p7_1:row12:col1', 'Mc_2024_table_p7_1:row12:col3', 'Mc_2024_table_p7_1:row13:col1', 'Mc_2024_table_p7_1:row13:col3', 'Mc_2024_table_p7_1:row14:col3', 'Mc_2024_table_p7_1:row15:col3', 'Mc_2024_table_p7_1:row16:col3'])
 - dropped unlinked row (NIL): 'Random effects' — extend the ontology if this is a real PK parameter (source ['Mc_2024_table_p7_1:row17:col1', 'Mc_2024_table_p7_1:row18:col1', 'Mc_2024_table_p7_1:row20:col3', 'Mc_2024_table_p7_1:row21:col3', 'Mc_2024_table_p7_1:row22:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=Z-endoxifen
 - template fit: none — only the metabolite is modelled — no parent compartment
@@ -122,4 +122,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_Mc2024_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_Mc2024_reference%0APaper%3A%20Mc_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 12:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:48 UTC</sub>

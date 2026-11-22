@@ -16,7 +16,7 @@ Pilbrant A, Norlén LJ. Pharmacokinetics and pharmacodynamics of emepronium brom
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=3.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed emepronium bromide, measured emepronium.
 
@@ -34,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has emepronium, the second reading emepronium bromide; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has emepronium, the second reading emepronium bromide; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,15 +68,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | primary re-run | 0.5 (3/6 fields) | 3 |
+| `gpt-oss-120b` | primary re-run | 0.5 (3/6 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[serum concentrations]` |  | 50 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total serum clearance]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | emepronium | emepronium bromide | mismatch |
+| `gpt-oss-120b` | `parameters[serum concentrations]` |  | 50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total serum clearance]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | emepronium | emepronium bromide | mismatch |
 
 </details>
 

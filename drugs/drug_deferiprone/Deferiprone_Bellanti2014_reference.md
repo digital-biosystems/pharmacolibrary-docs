@@ -4,11 +4,11 @@
 
 # deferiprone — `Deferiprone_Bellanti2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 18:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the extracted V/F value of 20 represents a gender difference percentage, not a volume of distribution, causing a dimension mismatch.
+> The record was rejected because the gender difference in apparent volume of distribution (20%) has units incompatible with a volume parameter.
 
-<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Bellanti2014_reference" status="rejected" stale="true" population="healthy adults" measured-compound="deferiprone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Bellanti2014_reference" status="rejected" stale="false" population="healthy adults" measured-compound="deferiprone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bellanti F, Danhof M, Della Pasqua O. Population pharmacokinetics of deferiprone in healthy subjects. British journal of clinical pharmacology 78(6):1397–1406 (2014).
@@ -36,7 +36,7 @@ Bellanti F, Danhof M, Della Pasqua O. Population pharmacokinetics of deferiprone
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Bellanti F, Danhof M, Della Pasqua O. Population pharmacokinetics of deferiprone
 
 ### Reviewer guidance
 
-**The record was rejected because the extracted V/F value of 20 represents a gender difference percentage, not a volume of distribution, causing a dimension mismatch.**
+**The record was rejected because the gender difference in apparent volume of distribution (20%) has units incompatible with a volume parameter.**
 
-The record is based on the paper's abstract, so summary statistics stand in for a fitted model. The parameter labeled 'Gender differences in the apparent volume of distribution' has a value of 20 with units of %, which is a relative difference rather than an absolute pharmacokinetic volume. The second reader agreed the 20 was a percentage difference but noted the actual apparent volume of distribution was not extracted as a separate parameter with appropriate units. Extracted — deferiprone: AUC 45.8 mg·h/L, Cmax 17.6 mg l(-1), V/F 20 %.
+Only the paper's abstract was read, so summary statistics like AUC (45.8 mg·h/L) stood in for a fitted model. The parameter labeled as a volume of distribution percentage (20%) failed a dimensional check requiring cubic length units. Additionally, a second reader disagreed with the extracted values for Cmax, AUC, and the volume of distribution, citing them as null or misidentified in this record. Extracted — deferiprone: AUC 45.8 mg·h/L, Cmax 17.6 mg l(-1), V/F 20 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deferiprone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

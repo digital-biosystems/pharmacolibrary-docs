@@ -15,6 +15,26 @@
   3080.0,
   3500.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kir_2025:discussion_prose",
+    "value_si": 0.877
+   },
+   {
+    "source": "Kir_2025:discussion_prose",
+    "value_si": 1.0
+   },
+   {
+    "source": "Kir_2025:discussion_prose",
+    "value_si": 0.23
+   },
+   {
+    "source": "Kir_2025:discussion_prose",
+    "value_si": 0.17
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.7299999999999993e-06,
   "F": 0.683,

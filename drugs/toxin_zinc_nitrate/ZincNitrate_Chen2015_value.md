@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The tissue partition coefficient Kp for zinc nitrate has the erroneous unit L·h−1 instead of being dimensionless, and the record lacks essential kinetic parameters.
 
 <div class="pk-model-meta" hidden drug="Zinc nitrate" model-id="ZincNitrate_Chen2015_value" status="rejected" stale="false" population="mice" measured-compound="Zinc-65" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,7 +52,13 @@ Chen WY, Cheng YH, Hsieh NH, Wu BC, Chou WC, Ho CC et al. Physiologically based 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The tissue partition coefficient Kp for zinc nitrate has the erroneous unit L·h−1 instead of being dimensionless, and the record lacks essential kinetic parameters.**
+
+The parameter Kp, representing the tissue-to-plasma partition coefficient, was extracted with the unit L·h−1, which conflicts with its definition as a dimensionless ratio. Additionally, the record is missing critical kinetic quantities such as half-life, clearance, or rate constants, indicating it describes exposure outcomes rather than a fitted pharmacokinetic model. Extracted — zinc nitrate: allometric_exponent 0.032 kg, Kp 9.03 L·h−1, Vnorm 0.004 L/kg, VH 0.007 L/kg, FG 0.014.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

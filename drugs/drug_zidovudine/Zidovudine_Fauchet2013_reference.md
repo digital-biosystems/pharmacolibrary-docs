@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> T3_output_variable; t3_topology_template.
+> The record rejected a parent-metabolite model for zidovudine because the model structure lacked the metabolite compartment and the output variable was misassigned to the parent drug.
 
 <div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Fauchet2013_reference" status="rejected" stale="false" population="HIV-1-infected children" measured-compound="zidovudine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Fauchet F, Treluyer JM, Frange P, Urien S, Foissac F, Bouazza N et al. Populatio
 
 ### Reviewer guidance
 
-**T3_output_variable; t3_topology_template.**
+**The record rejected a parent-metabolite model for zidovudine because the model structure lacked the metabolite compartment and the output variable was misassigned to the parent drug.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — zidovudine: kabs 2.86 h(-1), CL 89.7 liters · h(-1), V/F 229 liters; G-ZDV (3′-azido-3′-deoxy-5′-glucuronylthymidine): kfm 12.6 h(-1), kel 2.27 h(-1).
+The reported structure for the G-ZDV metabolite is incompatible with the applied one-compartment model, and the output variable was identified as the parent drug rather than the measured metabolite. Only the abstract was available, so the clearance and volume parameters are summary statistics rather than fitted values, with lag time and bioavailability left at default assumptions. A second reader disagreed on the parameter extraction for the metabolite formation and elimination rate constants, resulting in a disputed cross-check with 0 of 1 readers agreeing. Extracted — zidovudine: kabs 2.86 h(-1), CL 89.7 liters · h(-1), V/F 229 liters; G-ZDV (3′-azido-3′-deoxy-5′-glucuronylthymidine): kfm 12.6 h(-1), kel 2.27 h(-1).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has zidovudine → g-zdv (3′-azido-3′-deoxy-5′-glucuronylthymidine) (metabolism), the second reading zidovudine → g-zdv (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -142,16 +142,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=zidovudine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=zidovudine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;abatacept&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Li_2019_DAS28&quot;,&quot;label&quot;:&quot;Li_2019 \u00b7 DAS28&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abatacept/pd_Li_2019_DAS28.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # abatacept
 
@@ -19,27 +18,16 @@ Abatacept is a selective immunosuppressant and disease-modifying antirheumatic d
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Emery_2025_reference](drugs/drug_abatacept/Abatacept_Emery2025_reference.md) | — | 1-compartment (no model) | 0 | Emery P et al., Association Between Abatacept Exposure…, The Journal of rheumatology (2025) | [10.3899/jrheum.2024-0498](https://doi.org/10.3899/jrheum.2024-0498) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Gandhi_2021_reference](drugs/drug_abatacept/Abatacept_Gandhi2021_reference.md) | — | 2-compartment (no model) | 8 (+8 cov.) | Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1797](https://doi.org/10.1002/jcph.1797) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Gandhi_2021_reference](drugs/drug_abatacept/Abatacept_Gandhi2021_reference.md) | — | 2-compartment (no model) | 8 (+8 cov.) | Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1797](https://doi.org/10.1002/jcph.1797) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Li_2019_DAS28](drugs/drug_abatacept/pd_Li_2019_DAS28.md) | Disease Activity Score in 28 joints ← abatacept · direct Emax (saturable) effect | ▶ model + simulator | Li X et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1308](https://doi.org/10.1002/jcph.1308) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Li_2019_DAS28](drugs/drug_abatacept/pd_Li_2019_DAS28.md) | Disease Activity Score in 28 joints ← abatacept · direct Emax (saturable) effect | — | Li X et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1308](https://doi.org/10.1002/jcph.1308) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Roy_2007_IL_6](drugs/drug_abatacept/pd_Roy_2007_IL_6.md) | interleukin-6 ← abatacept · indirect response — drug inhibits the loss of interleukin-6 | — | Roy A et al., Modeling and simulation of abatacept ex…, Journal of clinical pharmac… (2007) | [10.1177/0091270007307573](https://doi.org/10.1177/0091270007307573) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2019_ACR20_50_70](drugs/drug_abatacept/pd_Li_2019_ACR20_50_70.md) | American College of Rheumatology response criteria for 20/50/70% improvement ← abatacept · categorical (graded) response model | — | Li X et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1308](https://doi.org/10.1002/jcph.1308) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Lon_2013_DIS](drugs/drug_abatacept/pd_Lon_2013_DIS.md) | paw swelling biomarker turnover ← abatacept | — | Lon HK et al., Modeling pharmacokinetics/pharmacodynam…, Journal of pharmacokinetics… (2013) | [10.1007/s10928-013-9341-1](https://doi.org/10.1007/s10928-013-9341-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=abatacept).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CD80 (target), CD86 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +41,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:33 | 1:14 | 0/2/0 | 3/0/0 | 0/0/0 | 119,609/4,400 | einfracz / qwen3.8-27b | 5 | 1/4 | 4/1 | 0 |
+| 2026-10-06 23:33 | 1:14 | 0/2/0 | 4/0/0 | 0/0/0 | 119,609/4,400 | einfracz / qwen3.8-27b | 5 | 1/4 | 4/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 24 matched, 14 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not specify a pharmacodynamic model, mechanism, or potency/rate parameters for total blood mercury's effect on diabetes. Only a cross-sectional association is implied without kinetic or dose-response data.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Zhang_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

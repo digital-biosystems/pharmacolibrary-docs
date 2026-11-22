@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;etoposide&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/&quot;},{&quot;label&quot;:&quot;Urien_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean_with_covariables&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean_with_covariables&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean_with_covariables&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean_with_covariables&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral compartment is structurally disconnected because the intercompartmental clearance Q is missing a numeric value in the parameter list.
+> Etoposide was rejected because its two-compartment model has an unreachable compartment, despite reporting intercompartmental clearance Q of 0.68 L/h/70 kg.
 
 <div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Urien2011_reference" status="rejected" stale="false" population="pediatric cancer patients" measured-compound="etoposide" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Urien S, Doz F, Giraud C, Rey E, Gentet JC, Chastagner P et al. Developmental ph
 
 ### Reviewer guidance
 
-**The peripheral compartment is structurally disconnected because the intercompartmental clearance Q is missing a numeric value in the parameter list.**
+**Etoposide was rejected because its two-compartment model has an unreachable compartment, despite reporting intercompartmental clearance Q of 0.68 L/h/70 kg.**
 
-The record defines Q as the intercompartmental clearance between central and peripheral compartments but only lists a label without an extracted value. This missing link creates an unreachable peripheral compartment, failing the structural connectivity check. Additionally, the second reader disagreed on the identity of the allometric exponent parameter, recording null for both records. Extracted — etoposide: allometric_exponent 2.05.
+The finding indicates that a compartment has no path from the dose, but does not identify which compartment. The record reports a central volume of 9.3 L/70 kg, Q of 0.68 L/h/70 kg, and a peripheral volume of 5.7 L/70 kg. Extracted — etoposide: allometric_exponent 2.05.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 2.05x: this record has none, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

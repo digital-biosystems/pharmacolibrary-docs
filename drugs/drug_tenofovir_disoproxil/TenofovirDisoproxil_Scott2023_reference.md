@@ -5,11 +5,11 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Scott2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-07 16:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tenofovir's apparent clearance of 16.7 L/h and peripheral volume of 190 L are implausible magnitudes indicating a unit or scale error.
+> The model was rejected because the peripheral volume parameter (190 L) has the incorrect unit of L/h and a central clearance value is missing.
 
-<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Scott2023_reference" status="rejected" stale="true" population="cisgender women at risk of HIV (PrEP), pregnancy simulation" measured-compound="tenofovir (TFV)" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Scott2023_reference" status="rejected" stale="false" population="cisgender women at risk of HIV (PrEP), pregnancy simulation" measured-compound="tenofovir (TFV)" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Scott RK, Yu Y, Marzinke MA, Coleman JS, Hendrix CW, Bies R. Clinical trial simulation to evaluate tenofovir disoproxil fumarate/emtricitabine HIV pre-exposure prophylaxis dosing during pregnancy. Frontiers in reproductive health 5:1224580 (2023).
@@ -43,7 +43,7 @@ Scott RK, Yu Y, Marzinke MA, Coleman JS, Hendrix CW, Bies R. Clinical trial simu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Scott RK, Yu Y, Marzinke MA, Coleman JS, Hendrix CW, Bies R. Clinical trial simu
 
 ### Reviewer guidance
 
-**Tenofovir's apparent clearance of 16.7 L/h and peripheral volume of 190 L are implausible magnitudes indicating a unit or scale error.**
+**The model was rejected because the peripheral volume parameter (190 L) has the incorrect unit of L/h and a central clearance value is missing.**
 
-The record lists tenofovir's apparent clearance as 16.7 L/h and peripheral volume of distribution as 190 L, which are physiologically implausible for this compound. These values suggest an extraction error where units or scales were misinterpreted, leading to the rejection for failing physiological plausibility checks. Extracted — tenofovir (TFV): CLm/F 16.7 L/h, V1/F 58.8 L, Q/F 13.8 L/h, V2/F 190 L/h, kabs 0.616 /h.
+The record assigns a unit of L/h to the peripheral volume of distribution (V2/F), which conflicts with the required volume dimension. Additionally, the second reader identified that the central clearance (CL/F) and absorption rate (kabs) parameters were not captured in the initial review, despite having valid values in the data. Extracted — tenofovir (TFV): CLm/F 16.7 L/h, V1/F 58.8 L, Q/F 13.8 L/h, V2/F 190 L/h, kabs 0.616 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tenofovir disoproxil fumarate/emtricitabine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

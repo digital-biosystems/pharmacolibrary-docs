@@ -33,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (primary re-run, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (primary re-run, agreement 0.8), gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of volume of distribution: this record has none, the second reading 19.5. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of volume of distribution: this record has none, the second reading 19.5. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -100,13 +100,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `qwen3.8-27b` | primary re-run | 0.8 (4/5 fields) | 1 |
-| `gpt-oss:120b` | not confirmed | 0.8 (4/5 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 19.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 19.5 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[volume of distribution]` |  | 19.5 | only_one_extracted |
 
 </details>

@@ -4,11 +4,11 @@
 
 # cinoxacin — `Cinoxacin_Barbhaiya1982_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:53 UTC (Rejected), but the paper was screened again on 2026-10-13 11:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="cinoxacin" model-id="Cinoxacin_Barbhaiya1982_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="cinoxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cinoxacin" model-id="Cinoxacin_Barbhaiya1982_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="cinoxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Barbhaiya RH, Gerber AU, Craig WA, Welling PG. Influence of urinary pH on the pharmacokinetics of cinoxacin in humans and on antibacterial activity in vitro. Antimicrobial agents and chemotherapy 21(3):472–480 (1982).
@@ -16,7 +16,7 @@ Barbhaiya RH, Gerber AU, Craig WA, Welling PG. Influence of urinary pH on the ph
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = &gt;=9.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Barbhaiya RH, Gerber AU, Craig WA, Welling PG. Influence of urinary pH on the ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +45,11 @@ Barbhaiya RH, Gerber AU, Craig WA, Welling PG. Influence of urinary pH on the ph
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cinoxacin: t1/2z 1.1 h, CLR 76 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cinoxacin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cinoxacin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,18 +81,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[mean elimination half-life of cinoxacin in plasma]` | 1.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean elimination half-life of cinoxacin in plasma]` |  | 1.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean renal clearance of cinoxacin]` | 76 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean renal clearance of cinoxacin]` |  | 76 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | cinoxacin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | cinoxacin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[mean elimination half-life of cinoxacin in plasma]` | 1.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination half-life of cinoxacin in plasma]` |  | 1.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean renal clearance of cinoxacin]` | 76 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean renal clearance of cinoxacin]` |  | 76 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cinoxacin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cinoxacin | unknown | mismatch |
 
 </details>
 

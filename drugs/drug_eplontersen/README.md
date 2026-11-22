@@ -17,24 +17,13 @@ Eplontersen is an antisense oligonucleotide used to treat transthyretin-mediated
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Diep_2022_reference](drugs/drug_eplontersen/Eplontersen_Diep2022_reference.md) | — | parent + metabolite (no model) | 2 | Diep JK et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15468](https://doi.org/10.1111/bcp.15468) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Diep_2022_reference](drugs/drug_eplontersen/Eplontersen_Diep2022_reference.md) | — | parent + metabolite (no model) | 2 | Diep JK et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15468](https://doi.org/10.1111/bcp.15468) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Diep_2022_TTR](drugs/drug_eplontersen/pd_Diep_2022_TTR.md) | serum TTR concentration ← eplontersen · indirect response — drug inhibits the production of serum TTR concentration | — | Diep JK et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15468](https://doi.org/10.1111/bcp.15468) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eplontersen).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: TTR (other/unknown), Transthyretin mRNA (antisense oligonucleotide).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +43,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

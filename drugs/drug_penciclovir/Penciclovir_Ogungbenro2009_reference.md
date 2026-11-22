@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06B&quot;,&quot;href&quot;:&quot;atc/D06B.md&quot;},{&quot;label&quot;:&quot;penciclovir&quot;,&quot;href&quot;:&quot;drugs/drug_penciclovir/&quot;},{&quot;label&quot;:&quot;Ogungbenro_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Penciclovir_Ogungbenro2009_reference&quot;,&quot;label&quot;:&quot;Ogungbenro_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_penciclovir/Penciclovir_Ogungbenro2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Penciclovir_Ogungbenro2009_reference&quot;,&quot;label&quot;:&quot;Ogungbenro_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_penciclovir/Penciclovir_Ogungbenro2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # penciclovir — `Penciclovir_Ogungbenro2009_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="penciclovir" model-id="Penciclovir_Ogungbenro2009_reference" status="simulated" stale="false" population="adults and children" measured-compound="penciclovir" parameterization="mechanistic" topology="1C"></div>
+> Penciclovir clearance (31.2 l h(-1) 70 kg(-1)) and distribution volume (83.1 l.70 kg(-1)) remain under review because their status as fitted-model estimates is disputed.
+
+<div class="pk-model-meta" hidden drug="penciclovir" model-id="Penciclovir_Ogungbenro2009_reference" status="needs_review" stale="false" population="adults and children" measured-compound="penciclovir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ogungbenro K, Matthews I, Looby M, Kaiser G, Graham G, Aarons L. Population pharmacokinetics and optimal design of paediatric studies for famciclovir. British journal of clinical pharmacology 68(4):546–560 (2009).
@@ -29,6 +31,8 @@ Ogungbenro K, Matthews I, Looby M, Kaiser G, Graham G, Aarons L. Population phar
 <figure class="pk-models-diagram"><img src="drugs/drug_penciclovir/Penciclovir_Ogungbenro2009_reference/Penciclovir_Ogungbenro2009_reference.svg" alt="Penciclovir_Ogungbenro2009_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 31.2 | l h(-1) 70 kg(-1) |
@@ -36,7 +40,7 @@ Ogungbenro K, Matthews I, Looby M, Kaiser G, Graham G, Aarons L. Population phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Ogungbenro K, Matthews I, Looby M, Kaiser G, Graham G, Aarons L. Population phar
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Penciclovir clearance (31.2 l h(-1) 70 kg(-1)) and distribution volume (83.1 l.70 kg(-1)) remain under review because their status as fitted-model estimates is disputed.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader called the parameterization apparent rather than mechanistic and disputed whether clearance 31.2 and distribution volume 83.1 belonged in the record. Agreement was 0.375, with 0 of 1 reader agreeing. Extracted — penciclovir: CL 31.2 l h(-1) 70 kg(-1), V 83.1 l.70 kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -120,14 +124,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=penciclovir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=penciclovir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

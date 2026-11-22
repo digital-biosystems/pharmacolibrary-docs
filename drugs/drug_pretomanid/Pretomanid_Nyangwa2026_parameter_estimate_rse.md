@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;pretomanid&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/&quot;},{&quot;label&quot;:&quot;Nyangwa_2026 \u00b7 parameter_estimate_rse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pretomanid_Zou2022_reference&quot;,&quot;label&quot;:&quot;Zou_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Zou2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pretomanid_Nyangwa2026_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Nyangwa_2026_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Nyangwa2026_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Abdelwahab_2026_QTcF&quot;,&quot;label&quot;:&quot;Abdelwahab_2026 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Abdelwahab_2026_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ngara_2025_Pretomanid&quot;,&quot;label&quot;:&quot;Ngara_2025 \u00b7 Pretomanid&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Ngara_2025_Pretomanid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pretomanid_Nyangwa2026_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Nyangwa_2026_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Nyangwa2026_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Abdelwahab_2026_QTcF&quot;,&quot;label&quot;:&quot;Abdelwahab_2026 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Abdelwahab_2026_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ngara_2025_Pretomanid&quot;,&quot;label&quot;:&quot;Ngara_2025 \u00b7 Pretomanid&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Ngara_2025_Pretomanid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pretomanid — `Pretomanid_Nyangwa2026_parameter_estimate_rse`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Nyangwa2026_parameter_estimate_rse" status="not_modelled" stale="false" population="rifampicin-resistant tuberculosis patients" measured-compound="pretomanid" parameterization="apparent" topology="1C"></div>
+> The record was held because a second reader disagreed on the dose compound and primary analyte, marking the cross-check as disputed.
+
+<div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Nyangwa2026_parameter_estimate_rse" status="needs_review" stale="false" population="rifampicin-resistant tuberculosis patients" measured-compound="pretomanid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Nyang'wa BT, Motta I, Moodliar R, Solodovnikova V, Rajaram S, Rasool M et al. Population pharmacokinetics and target attainment of pretomanid in rifampicin-resistant tuberculosis patients. Scientific reports 16(1) (2026).
@@ -15,7 +17,7 @@ Nyang'wa BT, Motta I, Moodliar R, Solodovnikova V, Rajaram S, Rasool M et al. Po
 
 ## Population and dosing
 
-**Population:** rifampicin-resistant tuberculosis patients · condition rifampicin-resistant tuberculosis · age group adult · n = &gt;$-0x2d.
+**Population:** rifampicin-resistant tuberculosis patients · condition rifampicin-resistant tuberculosis · age group adult.
 
 **Dosing:** 200 mg, oral, multiple, every 24 h.
 
@@ -29,7 +31,7 @@ Nyang'wa BT, Motta I, Moodliar R, Solodovnikova V, Rajaram S, Rasool M et al. Po
 <figure class="pk-models-diagram"><img src="drugs/drug_pretomanid/Pretomanid_Nyangwa2026_parameter_estimate_rse/Pretomanid_Nyangwa2026_parameter_estimate_rse.svg" alt="Pretomanid_Nyangwa2026_parameter_estimate_rse diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
@@ -39,7 +41,7 @@ Nyang'wa BT, Motta I, Moodliar R, Solodovnikova V, Rajaram S, Rasool M et al. Po
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +51,13 @@ Nyang'wa BT, Motta I, Moodliar R, Solodovnikova V, Rajaram S, Rasool M et al. Po
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The record was held because a second reader disagreed on the dose compound and primary analyte, marking the cross-check as disputed.**
+
+Although the parameters for pretomanid (kabs 0.316 hr− 1, CL/F 3.10 L/hr, V/F 102 L) were extracted, the review failed due to reviewer disagreement. The second reader marked both the dose compound and primary analyte as unknown, conflicting with the record's identification of pretomanid. Consequently, the cross-check verdict was disputed with an agreement ratio of 0.8. Extracted — pretomanid: kabs 0.316 hr− 1, CL/F 3.1 L/hr, V/F 102 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pretomanid, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -128,13 +132,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | obtained | note |
-|---|---|---|---|
-| T0_analyte_identity | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  | no covariate effects in record |
-| T3_apparent_invariant | pass | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=pretomanid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

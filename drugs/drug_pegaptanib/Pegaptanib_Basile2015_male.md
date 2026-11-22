@@ -4,11 +4,11 @@
 
 # pegaptanib — `Pegaptanib_Basile2015_male`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:41 UTC (Rejected), but the paper was screened again on 2026-10-07 21:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="pegaptanib" model-id="Pegaptanib_Basile2015_male" status="needs_review" stale="true" population="patients with diabetic macular edema" measured-compound="pegaptanib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pegaptanib" model-id="Pegaptanib_Basile2015_male" status="needs_review" stale="false" population="patients with diabetic macular edema" measured-compound="pegaptanib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Basile AS, Hutmacher MM, Kowalski KG, Gandelman KY, Nickens DJ. Population pharmacokinetics of pegaptanib sodium (Macugen(®)) in patients with diabetic macular edema. Clinical ophthalmology (Auckland, N.Z.) 9:323–335 (2015).
@@ -16,7 +16,7 @@ Basile AS, Hutmacher MM, Kowalski KG, Gandelman KY, Nickens DJ. Population pharm
 
 ## Population and dosing
 
-**Population:** patients with diabetic macular edema · age group adult · n = &gt;=.
+**Population:** patients with diabetic macular edema · age group adult.
 
 **Dosing:** 0.3, 1, 3 mg, intravitreal, multiple, every 3024 h.
 
@@ -39,7 +39,7 @@ Basile AS, Hutmacher MM, Kowalski KG, Gandelman KY, Nickens DJ. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Basile AS, Hutmacher MM, Kowalski KG, Gandelman KY, Nickens DJ. Population pharm
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC∞ and Cmax), so that value has no SI equivalent.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (AUC∞ and Cmax), so that value has no SI equivalent. Extracted — pegaptanib: AUC∞ 1.64e+03 ng·h/mL, Cmax 5 ng/mL, tmax 81.4 h, t1/2z 6.5 d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pegaptanib, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

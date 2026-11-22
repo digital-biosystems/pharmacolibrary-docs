@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because a compartment or metabolite lacks a connection path from the dose.
+> Nivolumab’s two-compartment model was rejected for an unreachable compartment, despite intercompartmental clearance Q of 0.77 L/day and peripheral volume V2 of 2.78 L.
 
 <div class="pk-model-meta" hidden drug="nivolumab" model-id="Nivolumab_Shang2022_reference" status="rejected" stale="false" population="patients with multiple tumor types" measured-compound="nivolumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Shang J, Huang L, Huang J, Ren X, Liu Y, Feng Y. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**The model was rejected because a compartment or metabolite lacks a connection path from the dose.**
+**Nivolumab’s two-compartment model was rejected for an unreachable compartment, despite intercompartmental clearance Q of 0.77 L/day and peripheral volume V2 of 2.78 L.**
 
-The record describes a two-compartment model for nivolumab, but the structural check failed due to an orphan or unlinked element. Second readers disagreed on whether nivolumab was the dose compound, identifying it as unknown instead. Despite these disagreements, the structural defect remained the primary reason for refusal. Extracted — nivolumab: Q 0.77 L/Day, V2 2.78 L.
+The record flags a compartment with no path from the dose but does not identify which compartment. It lists no values for total clearance CL or central volume V1. The record identifies nivolumab as the drug and measured compound, while the second reader marked the dose compound and primary analyte as unknown. Extracted — nivolumab: Q 0.77 L/Day, V2 2.78 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nivolumab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

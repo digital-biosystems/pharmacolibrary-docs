@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;rocuronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/&quot;},{&quot;label&quot;:&quot;Ji_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RocuroniumBromide_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;RocuroniumBromide_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RocuroniumBromide_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;RocuroniumBromide_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rocuronium bromide — `RocuroniumBromide_Ji2023_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:45 UTC (Simulated), but the paper was screened again on 2026-10-07 02:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Cross-checking failed because the second reader disagreed on intercompartmental clearance and volume of distribution values for rocuronium.
 
-<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Ji2023_reference" status="extracted" stale="true" population="" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Ji2023_reference" status="needs_review" stale="false" population="" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Ji SH, Huh KY, Oh J, Jeong HJ, Jang YE, Kim EH et al. Reversal of rocuronium-induced intense neuromuscular blockade by sugammadex in Korean children: A pharmacokinetic and pharmacodynamic analysis. Clinical and translational science 16(1):92–103 (2023).
@@ -29,6 +29,8 @@ Ji SH, Huh KY, Oh J, Jeong HJ, Jang YE, Kim EH et al. Reversal of rocuronium-ind
 <figure class="pk-models-diagram"><img src="drugs/drug_rocuronium_bromide/RocuroniumBromide_Ji2023_reference/RocuroniumBromide_Ji2023_reference.svg" alt="RocuroniumBromide_Ji2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL (L∙min−1) | CL | 0.07 | L∙min−1 |
@@ -38,7 +40,7 @@ Ji SH, Huh KY, Oh J, Jeong HJ, Jang YE, Kim EH et al. Reversal of rocuronium-ind
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.684), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.684), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +50,13 @@ Ji SH, Huh KY, Oh J, Jeong HJ, Jang YE, Kim EH et al. Reversal of rocuronium-ind
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Cross-checking failed because the second reader disagreed on intercompartmental clearance and volume of distribution values for rocuronium.**
+
+The agreement ratio was 0.684, with zero readers agreeing on the verdict. The second reader assigned 1.1 to the peripheral volume, whereas the record listed 1.5. Additionally, the second reader provided values for the central volume and clearances that were missing in the original record. Extracted — rocuronium bromide: CL 0.07 L∙min−1, V1 1.49 L, V2 2.26 L, Q 0.188 L∙min−1.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has none, the second reading 66.7; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -122,14 +126,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=rocuronium_bromide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=rocuronium_bromide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.684, 0 of 1 reader(s) agree | 0.684 | cross-check disputed by a second reader: verdict disputed, agreement 0.684, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

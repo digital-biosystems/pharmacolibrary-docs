@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The naldemedine model was quarantined because its clearance and absorption rate constant parameters had no extracted values.
+> Naldemedine clearance and absorption rate constant lacked extracted values, forcing placeholder use that led to the model's quarantine.
 
 <div class="pk-model-meta" hidden drug="naldemedine" model-id="Naldemedine_Kubota2018_estimate" status="model_quarantined" stale="false" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></div>
 
@@ -44,7 +44,7 @@ Kubota R, Fukumura K, Wajima T. Population Pharmacokinetics and Exposure-Respons
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,11 @@ Kubota R, Fukumura K, Wajima T. Population Pharmacokinetics and Exposure-Respons
 
 ### Reviewer guidance
 
-**The naldemedine model was quarantined because its clearance and absorption rate constant parameters had no extracted values.**
+**Naldemedine clearance and absorption rate constant lacked extracted values, forcing placeholder use that led to the model's quarantine.**
 
-The record lists apparent clearance and absorption rate constant without numerical estimates, so library placeholders were used instead of fitted values. This lack of explicit parameters for the key pharmacokinetic processes triggered the quarantine. Additionally, defined covariate effects were not simulated, as only the reference individual was run. Extracted — naldemedine: V1/F 83.6 L, Q/F 4.77 L/h, V2/F 41.8 L, tlag 0.195 hr.
+The record lists clearance and absorption rate constant without specific numerical estimates, resulting in unquantified parameters. A second reader disputed the parameter extraction, achieving only 0.692 agreement. Covariate effects defined in the record were not simulated, leaving their impact on the model unverified. Extracted — naldemedine: V1/F 83.6 L, Q/F 4.77 L/h, V2/F 41.8 L, tlag 0.195 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose: this record has none, the second reading 0.2; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 0.2; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -145,16 +145,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.692 (9/13 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.692 (9/13 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[dose]` |  | 0.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[max]` |  | 51.36 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta]` | -0.195 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc/f].value` | 83.6 |  | mismatch |
+| `gpt-oss-120b` | `parameters[dose]` |  | 0.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[max]` |  | 51.36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta]` | -0.195 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f].value` | 83.6 |  | mismatch |
 
 </details>
 
@@ -184,14 +184,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | cross-check disputed by a second reader: verdict disputed, agreement 0.692, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # prucalopride — `Prucalopride_van2016_spd555_303`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:16 UTC (Rejected), but the paper was screened again on 2026-10-04 16:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a 1-compartment model was paired with a peripheral volume parameter of 207 l, making that compartment unreachable.
+> The dimensional finding conflicts with prucalოპride AUC 100.3: it reports concentration instead of concentration×time, although the record lists concentration×time.
 
-<div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_spd555_303" status="rejected" stale="true" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_spd555_303" status="rejected" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a population pharmacokinetic model of prucalopride in children with functional constipation. Pharmacology research & perspectives 4(4):e00236 (2016).
@@ -40,7 +40,7 @@ van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a popu
 
 ### Reviewer guidance
 
-**The record was rejected because a 1-compartment model was paired with a peripheral volume parameter of 207 l, making that compartment unreachable.**
+**The dimensional finding conflicts with prucalოპride AUC 100.3: it reports concentration instead of concentration×time, although the record lists concentration×time.**
 
-The model structure is explicitly defined as 1C, yet the parameter V2 (volume of distribution of the peripheral compartment) is listed with a value of 207 l, creating a structural inconsistency. The second reader disagreed with the extracted values for AUC (100.3 ng mL−1 h), C0 (2.64 ng mL−1), and Css (4.18 ng mL−1), marking them as null. Additionally, the second reader identified a bioavailability fraction (0.858) and absorption rate (0.792 h−1) that were omitted from this record. Extracted — prucalopride: CL 11.7 l h−1, V2 207 l, AUC 100 ng mL−1 h, Css 4.18 ng mL−1, C0 2.64 ng mL−1.
+The finding’s concentration unit does not match the listed AUC unit, ng mL−1 h, so the mismatch cannot be attributed to the listed AUC from these facts. A reported unit could not be converted to SI, leaving its parameter without an SI value. The model also has an orphan compartment, meaning that compartment has no path from the dose. Extracted — prucalopride: CL 11.7 l h−1, V2 207 l, AUC 100 ng mL−1 h, Css 4.18 ng mL−1, C0 2.64 ng mL−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 100.3, the second reading none; it also differs on 11 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 100.3, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -98,24 +98,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.25 (4/16 fields) | 12 |
+| `gpt-oss-120b` | partly confirmed | 0.25 (4/16 fields) | 12 |
 
 <details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc]` | 100.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c 0 h]` | 2.64 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c ss]` | 4.18 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 11.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clpru‐usa‐12 (l h-1)a]` |  | 22.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f1]` |  | 0.858 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k a1]` |  | 0.792 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mtime]` |  | 0.734 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q (l h-1)a]` |  | 16.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2 (l)a]` |  | 446 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2]` | 207 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v3 (l)a]` |  | 248 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 100.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c 0 h]` | 2.64 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c ss]` | 4.18 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 11.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clpru‐usa‐12 (l h-1)a]` |  | 22.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1]` |  | 0.858 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a1]` |  | 0.792 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtime]` |  | 0.734 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q (l h-1)a]` |  | 16.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2 (l)a]` |  | 446 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 207 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3 (l)a]` |  | 248 | only_one_extracted |
 
 </details>
 

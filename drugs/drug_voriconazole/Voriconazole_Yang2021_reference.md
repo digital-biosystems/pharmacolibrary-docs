@@ -17,7 +17,7 @@ Yang P, Liu W, Zheng J, Zhang Y, Yang L, He N et al. Predicting the Outcome of V
 
 ## Population and dosing
 
-**Population:** hospitalized patients with invasive fungal infections · age group adult · n = condition: invasive fungal infection.
+**Population:** hospitalized patients with invasive fungal infections · age group adult.
 
 **Dosing:** 200 mg, oral, multiple, every 12 h.
 

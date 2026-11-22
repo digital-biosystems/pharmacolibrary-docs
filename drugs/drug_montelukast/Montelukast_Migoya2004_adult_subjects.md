@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Migoya_2004 \u00b7 adult_subjects&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Graff2003_reference&quot;,&quot;label&quot;:&quot;Graff_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Graff2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Ramakrishnan2005_reference&quot;,&quot;label&quot;:&quot;Ramakrishnan_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Durdagi_2022_Mpro_activity&quot;,&quot;label&quot;:&quot;Durdagi_2022 \u00b7 Mpro activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/pd_Durdagi_2022_Mpro_activity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_G_bel_2019_PPAR&quot;,&quot;label&quot;:&quot;G\u00f6bel_2019 \u00b7 PPAR\u03b3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/pd_G_bel_2019_PPAR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Graff2003_reference&quot;,&quot;label&quot;:&quot;Graff_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Graff2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Ramakrishnan2005_reference&quot;,&quot;label&quot;:&quot;Ramakrishnan_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_G_bel_2019_PPAR&quot;,&quot;label&quot;:&quot;G\u00f6bel_2019 \u00b7 PPAR\u03b3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/pd_G_bel_2019_PPAR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Migoya2004_adult_subjects" status="needs_review" stale="false" population="asthmatic patients 6 to 24 months old" measured-compound="montelukast" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Migoya2004_adult_subjects" status="needs_review" stale="false" population="asthmatic patients 6 to 24 months old" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Migoya E, Kearns GL, Hartford A, Zhao J, van Adelsberg J, Tozzi CA et al. Pharmacokinetics of montelukast in asthmatic patients 6 to 24 months old. Journal of clinical pharmacology 44(5):487–494 (2004).
@@ -24,8 +24,8 @@ Migoya E, Kearns GL, Hartford A, Zhao J, van Adelsberg J, Tozzi CA et al. Pharma
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 7 extracted.  
+**Parameterization:** mechanistic.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -37,13 +37,11 @@ Migoya E, Kearns GL, Hartford A, Zhao J, van Adelsberg J, Tozzi CA et al. Pharma
 | Population tmax (h) | tmax | 3.4 | h |
 | Population t1/2 (h) | t1/2z | 4.1 | h |
 | Observed C24 h (ng/mL) | Ct | 9.7 | ng/mL |
-| CL/F | CL/F | 20.7 | mL/min |
-| V/F | V/F | 3940.0 | L |
-| Ka | kabs | 0.357 | h−1 |
+| CL/F for montelukast clearance in pediatric patients | CL | 20.7 | mL/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +51,11 @@ Migoya E, Kearns GL, Hartford A, Zhao J, van Adelsberg J, Tozzi CA et al. Pharma
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Zhu_2024) cannot stand in for this paper's evidence. A reported unit could not be converted (Cmax and Ct), so that value has no SI equivalent. Extracted — montelukast: Cmax 279 ng/mL, tmax 3.4 h, t1/2z 4.1 h, Ct 9.7 ng/mL, CL/F 20.7 mL/min, V/F 3.94e+03 L, kabs 0.357 h−1.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — montelukast: Cmax 279 ng/mL, tmax 3.4 h, t1/2z 4.1 h, Ct 9.7 ng/mL, CL 20.7 mL/min.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,13 +63,11 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Population Cmax (ng/mL) | `Q32` · Cmax | 279.0 | ng/mL |  |  | ng/ml | llm_confirmed (0.6) | Migoya_2004_table_5:row0:col2 |
+| Population Cmax (ng/mL) | `Q32` · Cmax | 279.0 | ng/mL | 0.000279 | kg/m3 | ng/ml | llm_confirmed (0.6) | Migoya_2004_table_5:row0:col2 |
 | Population tmax (h) | `Q56` · tmax | 3.4 | h | 1.224e+04 | s | h | llm_confirmed (0.6) | Migoya_2004_table_5:row0:col3 |
 | Population t1/2 (h) | `Q57` · t1/2z | 4.1 | h | 1.476e+04 | s | h | llm_confirmed (0.6) | Migoya_2004_table_5:row0:col4 |
-| Observed C24 h (ng/mL) | `Q75` · Ct | 9.7 | ng/mL |  |  | ng/ml | llm (0.6) | Migoya_2004_table_5:row0:col5 |
-| CL/F | `Q27` · CL/F | 20.7 | mL/min | 3.45e-07 | m3/s | L/h | exact (1) | Migoya_2004:other_prose |
-| V/F | `Q76` · V/F | 3940.0 | L | 3.94 | m3 | L | review_gapfill (0.7) | Zhu_2024:review |
-| Ka | `Q49` · kabs | 0.357 | h−1 | 9.917e-05 | 1/s | 1/h | review_gapfill (0.7) | Zhu_2024:review |
+| Observed C24 h (ng/mL) | `Q75` · Ct | 9.7 | ng/mL | 9.7e-06 | kg/m3 | ng/ml | llm (0.6) | Migoya_2004_table_5:row0:col5 |
+| CL/F for montelukast clearance in pediatric patients | `Q22` · CL | 20.7 | mL/min | 3.45e-07 | m3/s | L/h | boundary (0.8) | Migoya_2004:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,18 +77,15 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q27 ('CL/F'=20.7) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=montelukast
+- salvaged Q22 ('CL/F for montelukast clearance in pediatric patients'=20.7) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=montelukast
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - population split: 'adult subjects' subgroup of Migoya_2004 (paper reports 5 populations: adult subjects, pediatric ≥ 6 to &lt; 24 months old, population mean ratio, ≥ 12 to &lt; 24 months old, ≥ 6 to &lt; 12 months old)
-- gap-filled Q76 (V/F) from Zhu_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Zhu_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 3, 4, 5
 - table Migoya_2004_table_3: unbound_uncertainty
 - table Migoya_2004_table_3: units_need_context
@@ -101,14 +94,23 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f for montelukast clearance in pediatric patients]` | 20.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population cl/f values (adult) normalized for weight]` |  | 0.92 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population estimate for cl/f for montelukast clearance]` |  | 20.7 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -124,15 +126,12 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Migoya_2004_table_5:row0:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Zhu_2024:review'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Migoya_2004_table_5:row0:col3'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Migoya_2004_table_5:row0:col4'] |
 | C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['Migoya_2004_table_5:row0:col5'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Zhu_2024:review'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 20.7 | ['Migoya_2004:other_prose'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.24 L/h | ['Migoya_2004:other_prose'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 3.94e+03 L | ['Zhu_2024:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.24 L/h | ['Migoya_2004:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,4 +165,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmontelukast%5D%20Montelukast_Migoya2004_adult_subjects&body=Drug%3A%20montelukast%0ARecord%3A%20Montelukast_Migoya2004_adult_subjects%0APaper%3A%20Migoya_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_montelukast/Montelukast_Migoya2004_adult_subjects%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 04:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 09:50 UTC</sub>

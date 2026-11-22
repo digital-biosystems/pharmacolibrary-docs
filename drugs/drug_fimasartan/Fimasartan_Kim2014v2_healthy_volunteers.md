@@ -5,11 +5,11 @@
 
 # fimasartan — `Fimasartan_Kim2014v2_healthy_volunteers`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:31 UTC (Rejected), but the paper was screened again on 2026-10-07 15:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant kel is recorded with units of hours instead of reciprocal hours, causing a dimensional error that invalidates the model.
+> The record was rejected because the terminal elimination rate constant for fimasartan had a unit of hours, conflicting with its required dimension of inverse time.
 
-<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_healthy_volunteers" status="rejected" stale="true" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_healthy_volunteers" status="rejected" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on the pharmacokinetics of fimasartan: a single-dose, open-label, Phase I study. Drug design, development and therapy 8:1723–1731 (2014).
@@ -17,7 +17,7 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ## Population and dosing
 
-**Population:** patients with renal impairment and healthy volunteers · condition renal impairment · age group adult · n = &gt;=16.
+**Population:** patients with renal impairment and healthy volunteers · condition renal impairment · age group adult.
 
 **Dosing:** 120 mg, oral, single.
 
@@ -41,7 +41,7 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ### Reviewer guidance
 
-**The elimination rate constant kel is recorded with units of hours instead of reciprocal hours, causing a dimensional error that invalidates the model.**
+**The record was rejected because the terminal elimination rate constant for fimasartan had a unit of hours, conflicting with its required dimension of inverse time.**
 
-The elimination rate constant for fimasartan is listed as 0.071 with a unit of hours, but rate constants must be expressed in reciprocal time units. This unit mismatch prevents the value from being converted to standard International System units, leaving the model incomplete. Additionally, a secondary reviewer disputed the classification of the parameters, arguing the record should be considered mechanistic rather than apparent. Extracted — fimasartan: Cmax 282 μg/L, AUClast 914 hr×μg/L, CL/F 140 L/h, kel 0.071 h, t1/2z 9.8 h.
+The elimination rate constant is listed with a value of 0.071 and a unit of hours. A rate constant must have dimensions of inverse time, but the provided unit implies a duration. Additionally, the paper reports apparent pharmacokinetic metrics like Cmax and AUClast, whereas the second reader identified mechanistic parameters that were not included in the record. Extracted — fimasartan: Cmax 282 μg/L, AUClast 914 hr×μg/L, CL/F 140 L/h, kel 0.071 h, t1/2z 9.8 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

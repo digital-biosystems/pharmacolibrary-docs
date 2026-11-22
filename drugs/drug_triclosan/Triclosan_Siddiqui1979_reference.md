@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was held back because absorption parameters for triclosan were not reported, forcing reliance on unsupported library defaults.
+> Triclosan’s absorption-rate constant (ka) had no reported value and was defaulted, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="triclosan" model-id="Triclosan_Siddiqui1979_reference" status="needs_review" stale="false" population="sexually mature virgin Wistar rats" measured-compound="triclosan" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Siddiqui WH, Buttar HS. Pharmacokinetics of triclosan in rat after intravenous a
 
 ### Reviewer guidance
 
-**The record was held back because absorption parameters for triclosan were not reported, forcing reliance on unsupported library defaults.**
+**Triclosan’s absorption-rate constant (ka) had no reported value and was defaulted, so the record was held back.**
 
-The study reported only summary statistics like apparent volume of distribution (42 L) and blood clearance (77.5 ml/kg/hr) without fitting a pharmacokinetic model. Consequently, the absorption rate constant and lag time were assigned library placeholder values instead of being estimated from data. This deviation means the simulated absorption profile lacks support from the source paper's specific findings. Extracted — triclosan: V/F 42 L, t1/2β 8.8 hr, CLb 77.5 ml/kg/hr.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Ka and Tlag were defaulted rather than estimated from the paper; ka was not reported, and first-order depot input was imposed, implying extravascular dosing. Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper. The parameterization also assumed F=1 and Fm=1, with no molar correction. Extracted — triclosan: V/F 42 L, t1/2β 8.8 hr, CLb 77.5 ml/kg/hr.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -125,15 +125,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=triclosan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_id: not acceptable; invented_absorption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=triclosan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

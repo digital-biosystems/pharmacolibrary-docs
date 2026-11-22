@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record incorrectly lists creatinine clearance as a drug pharmacokinetic parameter, and all absorption parameters were defaulted.
+> The record confuses a creatinine clearance biomarker value with fexofenadine clearance.
 
 <div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Gaspar2025_reference" status="rejected" stale="false" population="hospitalized patients and healthy volunteers" measured-compound="fexofenadine" parameterization="apparent" topology="2C"></div>
 
@@ -53,9 +53,9 @@ Gaspar F, Jacost-Descombes C, Gosselin P, Reny JL, Guidi M, Csajka C et al. Impr
 
 ### Reviewer guidance
 
-**The record incorrectly lists creatinine clearance as a drug pharmacokinetic parameter, and all absorption parameters were defaulted.**
+**The record confuses a creatinine clearance biomarker value with fexofenadine clearance.**
 
-The clearance parameter is labeled 'mean estimated creatinine clearance' with a value of 77.2 mL/min, which is a renal biomarker rather than fexofenadine elimination. Additionally, the absorption rate constant (ka) and time to max concentration (Tlag) were not reported in the source, forcing the use of library defaults. The model builder also assumed bioavailability (F) and metabolite fraction (Fm) were 1 without explicit estimation. The second reader disputed the creatinine clearance value, indicating it is not a valid pharmacokinetic estimate for the drug. Extracted — fexofenadine: CL 77.2 mL/min, CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
+The parameter labeled CL has the value 77.2 mL/min, but its verbatim label is 'mean estimated creatinine clearance,' which is a renal function metric, not the drug’s total clearance. This biomarker was incorrectly identified as the analyte for fexofenadine. Additionally, absorption parameters (ka and Tlag) were not reported in the source and were left at defaults. Extracted — fexofenadine: CL 77.2 mL/min, CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of mean estimated creatinine clearance: this record has 77.2, the second reading none. That field does not shape the model.
 
@@ -152,15 +152,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | fexofenadine (or metabolite) | mean estimated creatinine clearance | disposition label(s) name a biomarker, not fexofenadine: 'mean estimated creatinine clearance' |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=fexofenadine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | fexofenadine (or metabolite) | mean estimated creatinine clearance |  | disposition label(s) name a biomarker, not fexofenadine: 'mean estimated creatinine clearance' |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=fexofenadine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

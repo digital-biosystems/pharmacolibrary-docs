@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:M11: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span>
 
-> Fruquintinib's terminal half-life calculation fails, and metabolite M11 lacks a defined molar mass.
+> The model's simulated terminal half-life (43.2 h) deviates from the paper's reported value, and the metabolite M11 lacks a molar mass.
 
 <div class="pk-model-meta" hidden drug="fruquintinib" model-id="Fruquintinib_Zhou2025_estimate" status="needs_review" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -64,9 +64,9 @@ Zhou X, Yang X, Grinshpun B, Taylor A, Strong L, Dasari A et al. Population Phar
 
 ### Reviewer guidance
 
-**Fruquintinib's terminal half-life calculation fails, and metabolite M11 lacks a defined molar mass.**
+**The model's simulated terminal half-life (43.2 h) deviates from the paper's reported value, and the metabolite M11 lacks a molar mass.**
 
-The terminal half-life check shows an expected value of 0.275 but obtained 43.22364907201835. Metabolite M11 has a molar mass of 0.0, causing mass-based formation rather than molecular conversion. The record also omits relative standard errors for most parameters. Extracted — fruquintinib: CL/F 0.808 L/h, V/F 50.4 L, kabs 2.52 1/h, tlag 0.463 h; M11: CL/F 0.161 L/h, V1/F 11.7 L.
+The simulation produced a terminal half-life of 43.2 h, which differs from the expected 0.275 h by a ratio of 157.1769, indicating the model does not reproduce the paper's kinetics. Additionally, the record lacks a molar mass for metabolite M11, resulting in a mass-based conversion where 1 mg of parent forms 1 mg of metabolite instead of molecule-to-molecule. The model also failed to exercise the defined body weight covariate effects, simulating only the reference individual. Extracted — fruquintinib: CL/F 0.808 L/h, V/F 50.4 L, kabs 2.52 1/h, tlag 0.463 h; M11: CL/F 0.161 L/h, V1/F 11.7 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl/f].rse_percent`: this record has none, the second reading 1.2; it also differs on 8 more fields. That field does not shape the model.
 
@@ -207,6 +207,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | ≤2 | 1.919e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | ≤2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | pass | 43.2 | 43.22 | 1 | h→SI vs simulated h |

@@ -4,11 +4,11 @@
 
 # artemotil — `Artemotil_Benakis1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-07 06:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Artemotil record rejected because the structural parameter t1/2ka (0.3 h) has a dimension mismatch, and all values are abstract-only summary statistics.
+> AUC unit ng/ml/h conflicts with required volume-time dimensions, causing rejection of the arteether model record.
 
-<div class="pk-model-meta" hidden drug="artemotil" model-id="Artemotil_Benakis1991_reference" status="rejected" stale="true" population="beagle dogs" measured-compound="arteether" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="artemotil" model-id="Artemotil_Benakis1991_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="arteether" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Benakis A, Schopfer C, Paris M, Plessas CT, Karayannakos PE, Dondas I et al. Pharmacokinetics of arteether in dog. European journal of drug metabolism and pharmacokinetics 16(4):325–328 (1991).
@@ -40,7 +40,7 @@ Benakis A, Schopfer C, Paris M, Plessas CT, Karayannakos PE, Dondas I et al. Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Benakis A, Schopfer C, Paris M, Plessas CT, Karayannakos PE, Dondas I et al. Pha
 
 ### Reviewer guidance
 
-**Artemotil record rejected because the structural parameter t1/2ka (0.3 h) has a dimension mismatch, and all values are abstract-only summary statistics.**
+**AUC unit ng/ml/h conflicts with required volume-time dimensions, causing rejection of the arteether model record.**
 
-The record is abstract-only, meaning the extracted parameters (Cmax 110 ng/ml, AUC 2797 ng/ml/h, CL/F 1.69 ml/min) are summary statistics rather than fitted model parameters. The specific structural parameter t1/2ka (0.3 h) failed a dimension mismatch check. The second reader disagreed on the dose compound and primary analyte, marking them as unknown instead of arteether. Extracted — artemotil: t1/2ka 0.3 h, t1/2z 27.9 h, Cmax 110 ng/ml, CL/F 1.69 ml/min, AUC 2.8e+03 ng/ml/h.
+The AUC parameter for arteether is listed with a unit of ng/ml/h, which is dimensionally inconsistent with the expected volume-time units for area under the curve. This unit mismatch prevented the validation of the structural parameter, leading to the record's rejection. Additionally, the model was derived from an abstract-only source, meaning the reported summary statistics stand in for a fitted model rather than representing individual-level data. Extracted — artemotil: t1/2ka 0.3 h, t1/2z 27.9 h, Cmax 110 ng/ml, CL/F 1.69 ml/min, AUC 2.8e+03 ng/ml/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has arteether, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

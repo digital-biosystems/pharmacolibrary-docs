@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Ohara_2019 \u00b7 p_values_compared_with_white_patients&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Davies2010_reference&quot;,&quot;label&quot;:&quot;Davies_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Davies2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ferrari2017_reference&quot;,&quot;label&quot;:&quot;Ferrari_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ferrari2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_Ohara2019_p_values_compared_with_white_patients`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This paper's disposition core is incomplete; cL has no unit.
+> S-warfarin clearance was extracted as 0.010 mL/min, an implausibly low value indicating a unit or scale error.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohara2019_p_values_compared_with_white_patients" status="needs_review" stale="false" population="Asian, African American and White outpatients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohara2019_p_values_compared_with_white_patients" status="rejected" stale="false" population="adult outpatients (Asian, White, African American)" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ohara M, Suzuki Y, Shinohara S, Gong IY, Schmerk CL, Tirona RG et al. Differences in Warfarin Pharmacodynamics and Predictors of Response Among Three Racial Populations. Clinical pharmacokinetics 58(8):1077–1089 (2019).
@@ -17,7 +17,9 @@ Ohara M, Suzuki Y, Shinohara S, Gong IY, Schmerk CL, Tirona RG et al. Difference
 
 ## Population and dosing
 
-**Population:** Asian, African American and White outpatients · condition anticoagulation · age group adult · n = ?309.
+**Population:** adult outpatients (Asian, White, African American) · age group adult.
+
+**Dosing:** 3, 4.5, 6 mg/day, oral, multiple.
 
 **Dosed compound ≠ measured compound:** dosed warfarin, measured S-warfarin.
 
@@ -29,18 +31,18 @@ Ohara M, Suzuki Y, Shinohara S, Gong IY, Schmerk CL, Tirona RG et al. Difference
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Creatinine clearance, mL/min (mean ± SD)b | CL | 0.010 |  |
+| Creatinine clearance, mL/min (mean ± SD)b | CL | 0.010 | mL/min |
 | Vd | V | 14.3 | L |
 | ka (1/h) | kabs | 0.214 | 1/h |
 | Lag (h) | tlag | 1.29 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,19 +52,19 @@ Ohara M, Suzuki Y, Shinohara S, Gong IY, Schmerk CL, Tirona RG et al. Difference
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; cL has no unit.**
+**S-warfarin clearance was extracted as 0.010 mL/min, an implausibly low value indicating a unit or scale error.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aoyama_2022, Gomeni_2026) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — warfarin: CL 0.01; S-warfarin: V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+The record lists a clearance parameter for S-warfarin with a value of 0.010 mL/min, derived from a label explicitly identifying it as creatinine clearance. This magnitude is physiologically impossible for total drug clearance, triggering a rejection for an out-of-window magnitude. A second reader could not confirm the extraction of this specific parameter value, noting it as null in their assessment. Extracted — S-warfarin: CL 0.01 mL/min, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has S-warfarin, the second reading warfarin. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has S-warfarin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Creatinine clearance, mL/min (mean ± SD)b | `Q22` · CL | 0.010 |  |  |  |  | llm_confirmed (0.6) | Ohara_2019_table_1:row4:col4, Ohara_2019_table_1:row4:col6 |
+| Creatinine clearance, mL/min (mean ± SD)b | `Q22` · CL | 0.010 | mL/min | 1.667e-10 | m3/s | L/h | llm_confirmed (0.6) | Ohara_2019_table_1:row4:col4, Ohara_2019_table_1:row4:col6 |
 | Vd | `Q61` · V | 14.3 | L | 0.0143 | m3 | L | review_gapfill (0.7) | Aoyama_2022:review |
 | ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Gomeni_2026:review |
 | Lag (h) | `Q83` · tlag | 1.29 | h | 4644 | s | h | review_gapfill (0.7) | Gomeni_2026:review |
@@ -87,6 +89,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 - dropped unlinked row (NIL): 'VKORC1 rs9923231 (-1639 G&gt;A)' — extend the ontology if this is a real PK parameter (source ['Ohara_2019_table_1:row22:col6'])
 - dropped unlinked row (NIL): 'CYP4F2*3 rs2108622 (1297 C&gt;T)' — extend the ontology if this is a real PK parameter (source ['Ohara_2019_table_1:row23:col4'])
 - table mostly unlinked (10/11 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
+- implicit units: 'Creatinine clearance, mL/min (mean ± SD)b' → mL/min (from the paper text: "The parameter list explicitly states: '1. Creatinine clearance, mL/min (mean ± SD)b'.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=S-warfarin
 - status held at "Needs review" — not promoted
 - population split: 'p values compared with white patients' subgroup of Ohara_2019 (paper reports 6 populations: african american patients [n = 60], all [n = 309], asian patients [n = 195], original data set mean, p values compared with white patients, white patients [n = 54])
@@ -109,13 +112,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.primary_analyte` | S-warfarin | warfarin | mismatch |
+| `gpt-oss-120b` | `parameters[creatinine clearance, ml/min (mean ± sd)b]` | 0.010 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance, ml/min (mean ± sd)b]` |  | 0.010 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | S-warfarin | unknown | mismatch |
 
 </details>
 
@@ -132,12 +137,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Ohara_2019_table_1:row4:col4', 'Ohara_2019_table_1:row4:col6'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gomeni_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aoyama_2022:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gomeni_2026:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['Ohara_2019_table_1:row4:col4', 'Ohara_2019_table_1:row4:col6'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.01 | ['Ohara_2019_table_1:row4:col4', 'Ohara_2019_table_1:row4:col6'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | fail | clearance within physiological range | 0.0006 L/h | ['Ohara_2019_table_1:row4:col4', 'Ohara_2019_table_1:row4:col6'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 14.3 L | ['Aoyama_2022:review'] |
 
 <details class="legend">
@@ -150,19 +156,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -172,4 +168,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Ohara2019_p_values_compared_with_white_patients&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Ohara2019_p_values_compared_with_white_patients%0APaper%3A%20Ohara_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Ohara2019_p_values_compared_with_white_patients%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 15:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:24 UTC</sub>

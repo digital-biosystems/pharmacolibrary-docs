@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Hydroxocobalamin&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/&quot;},{&quot;label&quot;:&quot;Houeto_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_Forsyth1993_reference&quot;,&quot;label&quot;:&quot;Forsyth_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/Hydroxocobalamin_Forsyth1993_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_reference&quot;,&quot;label&quot;:&quot;Houeto_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxocobalamin_Williams1990_reference&quot;,&quot;label&quot;:&quot;Williams_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/Hydroxocobalamin_Williams1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_Forsyth1993_reference&quot;,&quot;label&quot;:&quot;Forsyth_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/Hydroxocobalamin_Forsyth1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_Williams1990_reference&quot;,&quot;label&quot;:&quot;Williams_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/Hydroxocobalamin_Williams1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_reference&quot;,&quot;label&quot;:&quot;Houeto_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Hydroxocobalamin — `Hydroxocobalamin_Houeto1996_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The hydroxocobalamin model was held back because absorption parameters (ka, Tlag) were defaulted rather than extracted, invalidating the extravascular assumption.
 
-<div class="pk-model-meta" hidden drug="Hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="extracted" stale="false" population="smoke inhalation victims" measured-compound="Hydroxocobalamin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="needs_review" stale="false" population="smoke inhalation victims" measured-compound="Hydroxocobalamin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Houeto P, Borron SW, Sandouk P, Imbert M, Levillain P, Baud FJ. Pharmacokinetics of hydroxocobalamin in smoke inhalation victims. Journal of toxicology. Clinical toxicology 34(4):397–404 (1996).
@@ -29,6 +29,8 @@ Houeto P, Borron SW, Sandouk P, Imbert M, Levillain P, Baud FJ. Pharmacokinetics
 <figure class="pk-models-diagram"><img src="drugs/toxin_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference.svg" alt="Hydroxocobalamin_Houeto1996_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Distribution half-life | t1/2α | 1.86 | h |
@@ -39,7 +41,7 @@ Houeto P, Borron SW, Sandouk P, Imbert M, Levillain P, Baud FJ. Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ Houeto P, Borron SW, Sandouk P, Imbert M, Levillain P, Baud FJ. Pharmacokinetics
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The hydroxocobalamin model was held back because absorption parameters (ka, Tlag) were defaulted rather than extracted, invalidating the extravascular assumption.**
+
+The record derived from abstract summary statistics assumed extravascular dosing but lacked explicit estimates for ka and Tlag, forcing the use of library placeholders. This invented absorption path conflicts with the apparent parameterization, causing the model to fail acceptance. Extracted — hydroxocobalamin: t1/2α 1.86 h, t1/2z 26.2 h, V/F 0.45 L/kg, CLR 0.31 L/h, CL 0.83 L/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -107,6 +115,19 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.83 L/h | ['Houeto_1996:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 31.5 L | ['Houeto_1996:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=Hydroxocobalamin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

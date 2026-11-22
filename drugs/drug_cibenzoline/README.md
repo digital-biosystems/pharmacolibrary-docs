@@ -26,7 +26,7 @@ Cibenzoline is a Class Ia antiarrhythmic agent intended to treat heart rhythm di
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Brazzell_1985_reference](drugs/drug_cibenzoline/Cibenzoline_Brazzell1985_reference.md) | — | 1-compartment (no model) | 7 | Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1985) | [10.1002/j.1552-4604.1985.tb02869.x](https://doi.org/10.1002/j.1552-4604.1985.tb02869.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Brazzell_1985_reference](drugs/drug_cibenzoline/Cibenzoline_Brazzell1985_reference.md) | — | 1-compartment (no model) | 7 | Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1985) | [10.1002/j.1552-4604.1985.tb02869.x](https://doi.org/10.1002/j.1552-4604.1985.tb02869.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -65,13 +65,13 @@ Cibenzoline is a Class Ia antiarrhythmic agent intended to treat heart rhythm di
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-08 17:04 | 18:20 | 0/1/0 | 11/0/0 | 0/0/0 | 331,718/38,627 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 17/1 | 6/9 | 0 |
+| 2026-10-08 17:04 | 18:20 | 0/1/0 | 20/0/0 | 0/0/0 | 331,718/38,627 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 17/1 | 6/9 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 41 matched, 40 returned
 - **screened:** 8  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

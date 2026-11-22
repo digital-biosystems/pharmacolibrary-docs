@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The retention structure for Enniatin B1 lacks compartment identifiers A1 and A2, preventing the definition of a valid terminal elimination function.
 
 <div class="pk-model-meta" hidden drug="Enniatin B1" model-id="EnniatinB1_Devreese2014_reference" status="needs_review" stale="false" population="Pigs" measured-compound="Enniatin B1" parameterization="mechanistic" topology="retention"></div>
 
@@ -48,7 +48,13 @@ Devreese M, Broekaert N, De Mil T, Fraeyman S, De Backer P, Croubels S. Pilot to
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The retention structure for Enniatin B1 lacks compartment identifiers A1 and A2, preventing the definition of a valid terminal elimination function.**
+
+The model uses a retention disposition structure but omits the specific compartment assignments (A1, A2) required to define the terminal phase. Without these identifiers, the half-life parameters cannot be correctly mapped to the appropriate compartments in the physiological model. Extracted — enniatin b1: t1/2z 0.15 h, t1/2α 0.15 h, t1/2β 1.57 h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

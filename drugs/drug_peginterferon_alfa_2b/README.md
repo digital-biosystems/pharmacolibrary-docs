@@ -24,24 +24,11 @@ Peginterferon alfa-2b is an interferon used to treat melanoma and hepatitis C. I
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Jian_2026_PLT](drugs/drug_peginterferon_alfa_2b/pd_Jian_2026_PLT.md) | Platelet ← peginterferon_alfa_2b · indirect response — drug inhibits the production of Platelet | model (no simulator) | Jian W et al., Drug Repositioning of Pegbing® for Esse…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70079](https://doi.org/10.1002/cpt.70079) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Jian_2026_WBC](drugs/drug_peginterferon_alfa_2b/pd_Jian_2026_WBC.md) | White blood cell ← peginterferon_alfa_2b · indirect response — drug inhibits the production of White blood cell | model (no simulator) | Jian W et al., Drug Repositioning of Pegbing® for Esse…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70079](https://doi.org/10.1002/cpt.70079) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Jian_2026_PLT](drugs/drug_peginterferon_alfa_2b/pd_Jian_2026_PLT.md) | Platelet ← peginterferon_alfa_2b · indirect response — drug inhibits the production of Platelet | — | Jian W et al., Drug Repositioning of Pegbing® for Esse…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70079](https://doi.org/10.1002/cpt.70079) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Jian_2026_WBC](drugs/drug_peginterferon_alfa_2b/pd_Jian_2026_WBC.md) | White blood cell ← peginterferon_alfa_2b · indirect response — drug inhibits the production of White blood cell | — | Jian W et al., Drug Repositioning of Pegbing® for Esse…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70079](https://doi.org/10.1002/cpt.70079) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rozenberg_2009_2_HCV_RNA](drugs/drug_peginterferon_alfa_2b/pd_Rozenberg_2009_2_HCV_RNA.md) | HCV viral load ← peginterferon_alfa_2b · inhibition effect | — | Rozenberg L et al., Therapeutic response to peg-IFN-alpha-2…, AIDS (London, England) (2009) | [10.1097/QAD.0b013e32832ff1c0](https://doi.org/10.1097/QAD.0b013e32832ff1c0) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Talal_2006_2_HCV_RNA](drugs/drug_peginterferon_alfa_2b/pd_Talal_2006_2_HCV_RNA.md) | HCV RNA ← peginterferon_alfa_2b · disease-progression model | — | Talal AH et al., Pharmacodynamics of PEG-IFN alpha diffe…, Hepatology (Baltimore, Md.) (2006) | [10.1002/hep.21136](https://doi.org/10.1002/hep.21136) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Vinogradova_2015_2_HCV](drugs/drug_peginterferon_alfa_2b/pd_Vinogradova_2015_2_HCV.md) | HCV production ← PEG-IFN · direct Emax (saturable) effect | — | Vinogradova SV et al., Prediction of long-term treatment outco…, Journal of theoretical biol… (2015) | [10.1016/j.jtbi.2015.06.041](https://doi.org/10.1016/j.jtbi.2015.06.041) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=peginterferon_alfa_2b).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2C9` inducer, `CYP2D6` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: IFNA2 (modulator), IFNAR1 (target), IFNAR2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +42,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:11 | 1:11 | 1/1/0 | 3/1/0 | 0/0/0 | 118,915/10,724 | einfracz / qwen3.8-27b | 18 | 4/0 | 4/0 | 0 |
+| 2026-10-06 23:11 | 1:11 | 1/1/0 | 4/1/0 | 0/0/0 | 118,915/10,724 | einfracz / qwen3.8-27b | 18 | 4/0 | 4/0 | 0 |
 
 ## Coverage
 

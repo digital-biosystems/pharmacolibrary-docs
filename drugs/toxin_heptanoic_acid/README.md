@@ -29,7 +29,7 @@ Heptanoic acid, also called enanthic acid, is an organic compound composed of a 
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lee_2022 · V</text><circle cx="197.4" cy="30.0" r="4" fill="#78909c"><title>Lee_2022 · V: 1.05 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lee_2022 · V1</text><circle cx="474.8" cy="46.0" r="4" fill="#78909c"><title>Lee_2022 · V1: 6.51 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lee_2022 · V</text><circle cx="197.4" cy="30.0" r="4" fill="#ef6c00"><title>Lee_2022 · V: 1.05 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lee_2022 · V1</text><circle cx="474.8" cy="46.0" r="4" fill="#ef6c00"><title>Lee_2022 · V1: 6.51 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -37,16 +37,7 @@ Heptanoic acid, also called enanthic acid, is an organic compound composed of a 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lee_2022_reference](drugs/toxin_heptanoic_acid/HeptanoicAcid_Lee2022_reference.md) | held back | 1-compartment, oral | 5 | Lee SK et al., Population Pharmacokinetics of Heptanoa…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1145](https://doi.org/10.1002/cpdd.1145) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=heptanoic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: PLA2G1B (inhibitor).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: F, Cl left at base-class defaults</sub> | [Lee_2022_reference](drugs/toxin_heptanoic_acid/HeptanoicAcid_Lee2022_reference.md) | held back | 1-compartment, oral | 5 | Lee SK et al., Population Pharmacokinetics of Heptanoa…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1145](https://doi.org/10.1002/cpdd.1145) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,7 +57,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 32949 matched, 135 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

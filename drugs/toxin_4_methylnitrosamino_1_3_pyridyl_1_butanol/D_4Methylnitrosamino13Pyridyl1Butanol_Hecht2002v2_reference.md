@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/&quot;},{&quot;label&quot;:&quot;Hecht_2002_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4Methylnitrosamino13Pyridyl1Butanol_Adams1985_reference&quot;,&quot;label&quot;:&quot;Adams_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/D_4Methylnitrosamino13Pyridyl1Butanol_Adams1985_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc&quot;,&quot;label&quot;:&quot;Goniewicz_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4Methylnitrosamino13Pyridyl1Butanol_Adams1985_reference&quot;,&quot;label&quot;:&quot;Adams_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/D_4Methylnitrosamino13Pyridyl1Butanol_Adams1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc&quot;,&quot;label&quot;:&quot;Goniewicz_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The NNAL-Gluc metabolite lacks defined parent-compartment links and retention coefficients, as it is reported only via abstract half-lives without fitted kinetics.
 
 <div class="pk-model-meta" hidden drug="4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol" model-id="D_4Methylnitrosamino13Pyridyl1Butanol_Hecht2002v2_reference" status="needs_review" stale="false" population="male nonsmokers, snuff dippers and tobacco chewers" measured-compound="4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol" parameterization="mechanistic" topology="retention"></div>
 
@@ -47,7 +47,13 @@ Hecht SS, Carmella SG, Ye M, Le KA, Jensen JA, Zimmerman CL et al. Quantitation 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The NNAL-Gluc metabolite lacks defined parent-compartment links and retention coefficients, as it is reported only via abstract half-lives without fitted kinetics.**
+
+The model structure is incomplete because the retention function for the NNAL-Gluc metabolite is missing the required input amounts A1 and A2. Consequently, the system cannot compute the elimination or distribution rates for the glucuronide, despite having reported terminal half-lives of 26.1 days for NNAL-Gluc and 26.3 days for the parent NNAL. The record relies on abstract-only summary statistics rather than a fitted model, preventing the derivation of the necessary structural parameters from the provided half-life data. Extracted — 4 methylnitrosamino 1 3 pyridyl 1 butanol: t1/2α 1.32 days, t1/2β 26.3 days; NNAL-Gluc: t1/2α 1.53 days, t1/2β 26.1 days.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

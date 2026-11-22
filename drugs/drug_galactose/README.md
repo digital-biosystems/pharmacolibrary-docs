@@ -26,22 +26,13 @@ Galactose is a simple sugar used as a diagnostic agent to test liver function or
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Henderson_1982_reference](drugs/drug_galactose/Galactose_Henderson1982_reference.md) | — | 1-compartment (no model) | 6 | Henderson JM et al., First-order clearance of plasma galacto…, Gastroenterology (1982) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Henderson_1982_reference](drugs/drug_galactose/Galactose_Henderson1982_reference.md) | — | 1-compartment (no model) | 6 | Henderson JM et al., First-order clearance of plasma galacto…, Gastroenterology (1982) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Boehm_2019_sensor_reaction_rate_enzyme_kinetic_response_of_amperometric_GOx_sensor_to_galactose](drugs/drug_galactose/pd_Boehm_2019_sensor_reaction_rate_enzyme_kinetic_response_of_a.md) | sensor reaction rate (enzyme kinetic response of amperometric GOx sensor to galactose) ← galactose · direct sigmoid Emax (Hill) effect | — | Boehm R et al., In Vitro Sugar Interference Testing Wit…, Journal of diabetes science… (2019) | [10.1177/1932296818791538](https://doi.org/10.1177/1932296818791538) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=galactose).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +52,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 105 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

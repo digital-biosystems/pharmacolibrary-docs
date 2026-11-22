@@ -16,7 +16,7 @@ Sennello LT, Quinn D, Rollins DE, Tolman KG, Sonders RC. Effect of probenecid on
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &lt;unknown&gt;.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 

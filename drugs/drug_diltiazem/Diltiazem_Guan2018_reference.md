@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The diltiazem record was held back because absorption lag time was not extracted and the model assumed complete bioavailability.
+> Diltiazem’s apparent oral clearance of 92.4 L/h remains under review because the abstract-only record’s parameter extraction was disputed by the second reader.
 
 <div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Guan2018_reference" status="needs_review" stale="false" population="Chinese renal transplant recipients" measured-compound="diltiazem" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Guan XF, Li DY, Yin WJ, Ding JJ, Zhou LY, Wang JL et al. Population Pharmacokine
 
 ### Reviewer guidance
 
-**The diltiazem record was held back because absorption lag time was not extracted and the model assumed complete bioavailability.**
+**Diltiazem’s apparent oral clearance of 92.4 L/h remains under review because the abstract-only record’s parameter extraction was disputed by the second reader.**
 
-The absorption lag time (Tlag) was not provided in the abstract, so no explicit estimate was available for the model. The parameterization also assumes bioavailability (F) and metabolic bioavailability (Fm) equal to 1, with no molar correction. These deviations mean the model uses placeholder values and apparent parameter assumptions rather than explicit fitted estimates for the reported oral clearance, volume, and absorption rate. Extracted — diltiazem: kabs 1.96 /h, V/F 3.55e+03 L, CL/F 92.4 L/h.
+The second reader disputed the dose compound and primary analyte (both recorded as diltiazem but returned as unknown) and did not agree with the listed apparent oral clearance (92.4 L/h), absorption rate constant (1.96 /h), or V/F (3550 L); agreement was 0.2, with 0 of 1 reader agreeing. Because only the abstract was read, its summary statistics stood in for a fitted model. Tlag was defaulted rather than explicitly estimated, and the apparent parameterization assumed F=1 and Fm=1, with no molar correction. Extracted — diltiazem: kabs 1.96 /h, V/F 3.55e+03 L, CL/F 92.4 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -133,15 +133,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=diltiazem) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=diltiazem) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

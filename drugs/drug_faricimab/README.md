@@ -17,17 +17,7 @@ It is given as an intravitreal injection directly into the eye by an ophthalmolo
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Diack_2024_2_reference](drugs/drug_faricimab/Faricimab_Diack2024v2_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Diack C et al., Ocular Pharmacokinetics of Faricimab Fo…, Translational vision scienc… (2024) | [10.1167/tvst.13.11.14](https://doi.org/10.1167/tvst.13.11.14) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=faricimab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ANGPT2 (target), VEGFA (target).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Diack_2024_2_reference](drugs/drug_faricimab/Faricimab_Diack2024v2_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Diack C et al., Ocular Pharmacokinetics of Faricimab Fo…, Translational vision scienc… (2024) | [10.1167/tvst.13.11.14](https://doi.org/10.1167/tvst.13.11.14) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +37,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

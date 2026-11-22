@@ -5,11 +5,11 @@
 
 # docetaxel — `Docetaxel_Wang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:16 UTC (Rejected), but the paper was screened again on 2026-10-07 17:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for docetaxel lacks distribution volume and clearance, rendering it non-compartmental, and its reported unit failed conversion.
+> Docetaxel AUC is recorded as 80% despite a concentration-dimension assignment, and the paper reports no volume or clearance, so it is not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Wang2024_reference" status="rejected" stale="true" population="patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Wang2024_reference" status="rejected" stale="false" population="patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wang D, Jackson C, Hung N, Hung T, Kwan R, Chan WK et al. Oral docetaxel plus encequidar - A pharmacokinetic model and evaluation against IV docetaxel. Journal of pharmacokinetics and pharmacodynamics 51(4):335–352 (2024).
@@ -17,7 +17,7 @@ Wang D, Jackson C, Hung N, Hung T, Kwan R, Chan WK et al. Oral docetaxel plus en
 
 ## Population and dosing
 
-**Population:** patients · age group adult · n = No.
+**Population:** patients · age group adult.
 
 **Dosing:** 150, 300, 400, 550, 600 mg, oral, multiple, every 24 h.
 
@@ -38,7 +38,7 @@ Wang D, Jackson C, Hung N, Hung T, Kwan R, Chan WK et al. Oral docetaxel plus en
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Wang D, Jackson C, Hung N, Hung T, Kwan R, Chan WK et al. Oral docetaxel plus en
 
 ### Reviewer guidance
 
-**The record for docetaxel lacks distribution volume and clearance, rendering it non-compartmental, and its reported unit failed conversion.**
+**Docetaxel AUC is recorded as 80% despite a concentration-dimension assignment, and the paper reports no volume or clearance, so it is not a compartmental population PK model.**
 
-The paper is an exposure/outcome study that does not provide pharmacokinetic structural parameters like clearance or elimination rate. The 8% bioavailability value reached the model builder without an SI value due to a missing unit conversion. Consequently, the structure was identified as lacking essential elimination kinetics, leading to its rejection as a valid compartmental model. Extracted — docetaxel: Fab 8 %, AUC 80 %.
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. AUC means area under the concentration-time curve, but the recorded 80% is dimensionless and conflicts with its assigned concentration dimension; the percent unit could not be expressed in SI units, leaving the parameter without an SI value. Extracted — docetaxel: Fab 8 %, AUC 80 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has docetaxel, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

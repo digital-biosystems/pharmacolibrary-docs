@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Timolol clearance had no estimated value, and steady-state volume was used as total volume, quarantining the abstract-only record.
+> The timolol model was quarantined because its clearance was left as a placeholder, despite an abstract-derived AUC of 265.7 ng/ml.h.
 
 <div class="pk-model-meta" hidden drug="timolol" model-id="Timolol_Ji1993_reference" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="timolol" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,9 +47,9 @@ Ji XF, Ping QN, Liu GJ, Yu ST. [The bioavailability of transdermal therapeutic s
 
 ### Reviewer guidance
 
-**Timolol clearance had no estimated value, and steady-state volume was used as total volume, quarantining the abstract-only record.**
+**The timolol model was quarantined because its clearance was left as a placeholder, despite an abstract-derived AUC of 265.7 ng/ml.h.**
 
-The record contained no explicit clearance estimate for timolol, so a placeholder value stood in for a fitted parameter. Steady-state volume (120.0 L) was substituted for total distribution volume because central volume was not reported. Since the record relied solely on the abstract, summary statistics like AUC (265.7 ng/ml.h) replaced full model fitting. A second review failed to confirm any of the extracted values, marking them as null or unknown. Extracted — timolol: tmax 18.8 h, Cmax 11.2 ng/ml, AUC 266 ng/ml.h, Vss 120 L, kel 0.084 h-1.
+The record was constructed solely from the paper's abstract, using summary statistics like Cmax (11.2 ng/ml) and AUC (265.7 ng/ml.h) in place of fitted parameters. Consequently, the clearance parameter lacked an explicit estimate, forcing the use of a default value that prevented publication. A second reader also disputed the model's validity, finding agreement of only 0.143 and failing to confirm any of the extracted parameters. Extracted — timolol: tmax 18.8 h, Cmax 11.2 ng/ml, AUC 266 ng/ml.h, Vss 120 L, kel 0.084 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has timolol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -133,13 +133,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=1: not acceptable; deviation_id=2: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

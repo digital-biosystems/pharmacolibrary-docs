@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were not reported, so library placeholders were used for this oprelvekin record.
+> Bioavailability (F) and lag time were left at library defaults rather than extracted from the Kheifetz paper for oprelvekin.
 
 <div class="pk-model-meta" hidden drug="oprelvekin" model-id="Oprelvekin_Kheifetz2014_1_comp_pe_model" status="needs_review" stale="false" population="healthy males" measured-compound="oprelvekin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Kheifetz Y, Elishmereni M, Agur Z. Complex pattern of interleukin-11-induced inf
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were not reported, so library placeholders were used for this oprelvekin record.**
+**Bioavailability (F) and lag time were left at library defaults rather than extracted from the Kheifetz paper for oprelvekin.**
 
-The model defaults for bioavailability (F) and lag time (Tlag) lack values from the paper, causing the record to be held back. Although clearance is 13.3 l/h and volume is 173 l, the missing bioavailability parameters undermine the validity of the one-compartment structure. A second reader also disagreed with the reported absorption rate constant of 0.152 1/h. Extracted — oprelvekin: CL 13.3 l·h⁻¹, V 173 l, kabs 0.152 1/h.
+The record lacks explicit estimates for bioavailability and lag time, causing the model to rely on unsupported placeholder values. Although the second reader flagged the absorption rate constant of 0.152 1/h for disagreement, the primary reason for holding the model is the use of default parameters. The established clearance (13.3 l·h⁻¹) and volume (173 l) are not contested, but the missing bioavailability prevents accurate profile simulation. Extracted — oprelvekin: CL 13.3 l·h⁻¹, V 173 l, kabs 0.152 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.152, the second reading none. That field does not shape the model.
 
@@ -135,15 +135,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=oprelvekin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped |  | 9.124 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=oprelvekin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 9.124 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

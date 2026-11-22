@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Allegaert_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_estimate&quot;,&quot;label&quot;:&quot;Anderson_2005_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_estimate.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Imaizumi2017_reference&quot;,&quot;label&quot;:&quot;Imaizumi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Mian2019_reference&quot;,&quot;label&quot;:&quot;Mian_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Mian2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment is an unreachable orphan compartment.
+> The record is rejected because the peripheral volume of distribution parameter, valued at 45.0 l·kg⁻¹, belongs to an unreachable compartment.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Allegaert2014_reference" status="rejected" stale="false" population="neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="2C"></div>
 
@@ -33,9 +33,9 @@ Allegaert K, van de Velde M, van den Anker J. Neonatal clinical pharmacology. Pa
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| 0.03 | CL | 0.03 | l.min−1 |
+| former 27 weeks postmenstrual age with a postnatal age of 10 days | CL | 0.035 | l.min−1 |
 | distribution volume | V | 0.6 | l.kg-1 |
-| peripheral volume of distribution | V2 | 45.0 | l .70 kg−1 |
+| peripheral volume of distribution decreases from 27 weeks postmenstrual age | V2 | 45.0 | l .70 kg−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -49,11 +49,11 @@ Allegaert K, van de Velde M, van den Anker J. Neonatal clinical pharmacology. Pa
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment is an unreachable orphan compartment.**
+**The record is rejected because the peripheral volume of distribution parameter, valued at 45.0 l·kg⁻¹, belongs to an unreachable compartment.**
 
-The record specifies a two-compartment structure, listing a peripheral volume of distribution of 45.0 l.70 kg−1. A structural check identified that this peripheral compartment is unreachable from the dose. Consequently, the parameterized peripheral volume represents an isolated compartment with no path from the administration site. Extracted — paracetamol: CL 0.03 l.min−1, V 0.6 l.kg-1, V2 45 l .70 kg−1.
+The model structure contains a compartment with no path from the dose, rendering the peripheral volume parameter unreachable. Additionally, the second reader disagreed on the clearance value, reporting 0.029 instead of 0.035 l·min⁻¹. A second parameter value was also disputed, with the second reader citing 22 where the record shows null. Extracted — paracetamol: CL 0.035 l.min−1, V 0.6 l.kg-1, V2 45 l .70 kg−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.03, the second reading 0.029; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.035, the second reading 0.029; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -61,9 +61,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| 0.03 | `Q22` · CL | 0.03 | l.min−1 | 5e-07 | m3/s | L/h | review (0.7) | Allegaert_2014:review |
+| former 27 weeks postmenstrual age with a postnatal age of 10 days | `Q22` · CL | 0.035 | l.min−1 | 5.833e-07 | m3/s | L/h | review (0.7) | Allegaert_2014:review |
 | distribution volume | `Q61` · V | 0.6 | l.kg-1 | 0.042 | m3 | L | review (0.7) | Allegaert_2014:review |
-| peripheral volume of distribution | `Q64` · V2 | 45.0 | l .70 kg−1 | 3.15 | m3 | L | review (0.7) | Allegaert_2014:review |
+| peripheral volume of distribution decreases from 27 weeks postmenstrual age | `Q64` · V2 | 45.0 | l .70 kg−1 | 0.045 | m3 | L | review (0.7) | Allegaert_2014:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -89,8 +89,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q22]` | 0.03 | 0.029 | mismatch |
-| `gpt-oss-120b` | `values[Q54]` |  | 3 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 0.035 | 0.029 | mismatch |
+| `gpt-oss-120b` | `values[Q45]` |  | 22 | only_one_extracted |
 
 </details>
 
@@ -110,11 +110,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Allegaert_2014:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Allegaert_2014:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Allegaert_2014:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.03 | ['Allegaert_2014:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.035 | ['Allegaert_2014:review'] |
 | C8_topology | fail |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.8 L/h | ['Allegaert_2014:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.1 L/h | ['Allegaert_2014:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 42 L | ['Allegaert_2014:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.15e+03 L | ['Allegaert_2014:review'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 45 L | ['Allegaert_2014:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>

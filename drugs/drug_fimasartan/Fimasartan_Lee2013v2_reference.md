@@ -17,7 +17,7 @@ Lee H, Jang IJ, Yu KS, Choi J, Oh BH. A Population Pharmacokinetic Analysis of F
 
 ## Population and dosing
 
-**Population:** healthy Caucasian subjects and Korean patients with hypertension · condition healthy, hypertension · age group adult · n = &gt;$=69.
+**Population:** healthy Caucasian subjects and Korean patients with hypertension · condition healthy, hypertension · age group adult.
 
 ## Model
 

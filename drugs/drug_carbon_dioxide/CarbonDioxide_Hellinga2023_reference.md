@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;carbon dioxide&quot;,&quot;href&quot;:&quot;drugs/drug_carbon_dioxide/&quot;},{&quot;label&quot;:&quot;Hellinga_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CarbonDioxide_Hellinga2023_reference&quot;,&quot;label&quot;:&quot;Hellinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CarbonDioxide_Hellinga2023_reference&quot;,&quot;label&quot;:&quot;Hellinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carbon dioxide — `CarbonDioxide_Hellinga2023_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="carbon dioxide" model-id="CarbonDioxide_Hellinga2023_reference" status="simulated" stale="false" population="" measured-compound="carbon_dioxide" parameterization="mechanistic" topology="2C"></div>
+> Carbon dioxide record held back due to second-reader cross-check dispute with an agreement ratio of 0.471.
+
+<div class="pk-model-meta" hidden drug="carbon dioxide" model-id="CarbonDioxide_Hellinga2023_reference" status="needs_review" stale="false" population="" measured-compound="carbon_dioxide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Hellinga M, Algera MH, Olofsen E, van der Schrier R, Sarton E, van Velzen M et al. Oral Oxycodone-Induced Respiratory Depression During Normocapnia and Hypercapnia: A Pharmacokinetic-Pharmacodynamic Modeling Study. Clinical pharmacology and therapeutics 113(5):1080–1088 (2023).
@@ -27,6 +29,8 @@ Hellinga M, Algera MH, Olofsen E, van der Schrier R, Sarton E, van Velzen M et a
 <figure class="pk-models-diagram"><img src="drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference/CarbonDioxide_Hellinga2023_reference.svg" alt="CarbonDioxide_Hellinga2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance | CL | 76.0 | L/h |
@@ -36,7 +40,7 @@ Hellinga M, Algera MH, Olofsen E, van der Schrier R, Sarton E, van Velzen M et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Hellinga M, Algera MH, Olofsen E, van der Schrier R, Sarton E, van Velzen M et a
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Carbon dioxide record held back due to second-reader cross-check dispute with an agreement ratio of 0.471.**
+
+The second reader disagreed with the record on multiple extracted values, resulting in zero agreement out of one reader. For instance, the record contains a value of 0.95 for one parameter while the second reader assigned null. Another discrepancy showed the record with 0.05 against the second reader's value of 5. Extracted — carbon dioxide: CL 76 L/h, V1 37 L, V2 411 L, Q 510 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has 0.95, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -122,14 +128,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=carbon_dioxide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=carbon_dioxide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

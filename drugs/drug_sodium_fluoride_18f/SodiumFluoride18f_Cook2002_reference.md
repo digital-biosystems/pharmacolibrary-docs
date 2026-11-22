@@ -16,7 +16,7 @@ Cook GJ, Blake GM, Marsden PK, Cronin B, Fogelman I. Quantification of skeletal 
 
 ## Population and dosing
 
-**Population:** patients with vertebral Paget's disease · condition Paget's disease · age group adult · n = &gt;=7.
+**Population:** patients with vertebral Paget's disease · condition Paget's disease · age group adult.
 
 ## Model
 

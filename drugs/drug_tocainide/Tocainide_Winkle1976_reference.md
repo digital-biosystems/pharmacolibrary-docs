@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;tocainide&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/&quot;},{&quot;label&quot;:&quot;Winkle_1976 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tocainide_Harron1987_reference&quot;,&quot;label&quot;:&quot;Harron_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Harron1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Oltmanns1983_reference&quot;,&quot;label&quot;:&quot;Oltmanns_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Oltmanns1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Wiegers1983_reference&quot;,&quot;label&quot;:&quot;Wiegers_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Wiegers1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tocainide_Harron1987_reference&quot;,&quot;label&quot;:&quot;Harron_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Harron1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Oltmanns1983_reference&quot;,&quot;label&quot;:&quot;Oltmanns_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Oltmanns1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Wiegers1983_reference&quot;,&quot;label&quot;:&quot;Wiegers_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Wiegers1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -36,7 +36,7 @@ Winkle RA, Meffin PJ, Fitzgerald JW, Harrison DC. Clinical efficacy and pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Winkle RA, Meffin PJ, Fitzgerald JW, Harrison DC. Clinical efficacy and pharmaco
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — tocainide: CL 720 ml/min, V 748 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q174: this record has none, the second reading 2.3; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q174: this record has none, the second reading 2.3; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,19 +79,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q174]` |  | 2.3 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q32]` | 2.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q34]` |  | 1.7 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q44]` | 40.6 | 40.6 | mismatch |
-| `gpt-oss:120b` | `values[Q56]` | 1.3 | 1.3 | mismatch |
-| `gpt-oss:120b` | `values[Q57]` | 12 | 13.5 | mismatch |
-| `gpt-oss:120b` | `values[Q71]` | 5.65 | 5.65 | mismatch |
+| `gpt-oss-120b` | `values[Q174]` |  | 2.3 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 2.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q34]` |  | 1.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` | 40.6 | 40.6 | mismatch |
+| `gpt-oss-120b` | `values[Q56]` | 1.3 | 1.3 | mismatch |
+| `gpt-oss-120b` | `values[Q57]` | 12 | 13.5 | mismatch |
+| `gpt-oss-120b` | `values[Q71]` | 5.65 | 5.65 | mismatch |
 
 </details>
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;Orphenadrine&quot;,&quot;href&quot;:&quot;drugs/drug_orphenadrine/&quot;},{&quot;label&quot;:&quot;Elghazali_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Orphenadrine_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Orphenadrine_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Orphenadrine — `Orphenadrine_Elghazali2008_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-<div class="pk-model-meta" hidden drug="Orphenadrine" model-id="Orphenadrine_Elghazali2008_reference" status="simulated" stale="false" population="camels" measured-compound="orphenadrine" parameterization="mechanistic" topology="1C"></div>
+> Held for review because the dose-compound assignment for orphenadrine is disputed: this record names orphenadrine, while the second reader marked it unknown.
+
+<div class="pk-model-meta" hidden drug="Orphenadrine" model-id="Orphenadrine_Elghazali2008_reference" status="needs_review" stale="false" population="camels" measured-compound="orphenadrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Elghazali M, Wasfi IA, Abdel Hadi AA, Latum AM. Pharmacokinetic, metabolism and withdrawal time of orphenadrine in camels (Camelus dromedarius) after intravenous administration. Research in veterinary science 85(3):563–569 (2008).
@@ -29,6 +31,8 @@ Elghazali M, Wasfi IA, Abdel Hadi AA, Latum AM. Pharmacokinetic, metabolism and 
 <figure class="pk-models-diagram"><img src="drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference/Orphenadrine_Elghazali2008_reference.svg" alt="Orphenadrine_Elghazali2008_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | distribution half-life (t(1/2)(alpha)) | t1/2α | 0.5 | h |
@@ -40,7 +44,7 @@ Elghazali M, Wasfi IA, Abdel Hadi AA, Latum AM. Pharmacokinetic, metabolism and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +54,13 @@ Elghazali M, Wasfi IA, Abdel Hadi AA, Latum AM. Pharmacokinetic, metabolism and 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Held for review because the dose-compound assignment for orphenadrine is disputed: this record names orphenadrine, while the second reader marked it unknown.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, so reported summary statistics stand in for a fitted model. The second reader disagreed with the dose-compound assignment; agreement was 0.9, with 0 of 1 reader agreeing. Extracted — orphenadrine: t1/2α 0.5 h, t1/2β 3.57 h, AUC 1.03 mg*h/L, Vss 1.92 lkg(-1), V 0.87 lkg(-1), CL 0.6 l/hkg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has orphenadrine, the second reading unknown. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -134,14 +138,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=orphenadrine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=orphenadrine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | cross-check disputed by a second reader: verdict disputed, agreement 0.9, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

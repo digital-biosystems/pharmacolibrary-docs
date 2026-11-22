@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Total mercury concentrations in whole blood are linearly related to methylmercury concentrations with slopes of 0.88 and 1.01 µg/L per µg/L. The paper does not describe a pharmacodynamic mechanism involving inhibition, elimination, or direct effect compartments, but instead models this relationship statistically to predict methylmercury exposure from total mercury measurements.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wells_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The zolmitriptan model was rejected because the unreported absorption rate constant used library defaults and the structure did not match the measured parent compound.
+> Zolmitriptan’s apparent clearance (CL/F, 121 L/h) and apparent volume (V/F, 136 L) sit in a rejected record whose output and one-compartment topology conflict with its parent–metabolite structure.
 
 <div class="pk-model-meta" hidden drug="zolmitriptan" model-id="Zolmitriptan_Zhou2017_reference" status="rejected" stale="false" population="adults and adolescents with migraine" measured-compound="zolmitriptan" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -48,13 +48,13 @@ Zhou W, Li J, Birmingham B, Xu H, Lillieborg S, Zhou D et al. Population Pharmac
 
 ### Reviewer guidance
 
-**The zolmitriptan model was rejected because the unreported absorption rate constant used library defaults and the structure did not match the measured parent compound.**
+**Zolmitriptan’s apparent clearance (CL/F, 121 L/h) and apparent volume (V/F, 136 L) sit in a rejected record whose output and one-compartment topology conflict with its parent–metabolite structure.**
 
-The absorption rate constant was set to a library placeholder rather than being estimated from the paper, and the model assumed first-order depot input without reported data. Additionally, the model structure failed to align with the measured zolmitriptan analyte, as it used a single compartment instead of the required parent-metabolite topology. A second reader also disagreed with the apparent parameterization and could not verify the clearance and volume values from the abstract-only source. Extracted — zolmitriptan: V/F 136 L, CL/F 121 L/h.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Its output was central concentration rather than the measured zolmitriptan compartment, and its one-compartment enteral structure did not represent the recorded parent-to-183C91 metabolism. Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. The builder also defaulted Tlag, assumed F=1 and Fm=1 with no molar correction, and used first-order depot input; a second reader disputed the dose compound, primary analyte, metabolic link, and reported estimates, with agreement 0.1. Extracted — zolmitriptan: V/F 136 L, CL/F 121 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has zolmitriptan, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -137,15 +137,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=zolmitriptan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=zolmitriptan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

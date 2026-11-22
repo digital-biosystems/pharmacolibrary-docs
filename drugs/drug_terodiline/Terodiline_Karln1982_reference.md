@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption parameters were defaulted because the record was built from the abstract alone, leaving ka and Tlag without source-supported estimates.
+> The terodiline absorption rate constant was defaulted because the abstract-only source provided no estimate, causing the model to be held for review.
 
 <div class="pk-model-meta" hidden drug="terodiline" model-id="Terodiline_Karln1982_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="terodiline" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Karlén B, Andersson KE, Ekman G, Strömberg S, Ulmsten U. Pharmacokinetics of t
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = ?9.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -51,9 +51,9 @@ Karlén B, Andersson KE, Ekman G, Strömberg S, Ulmsten U. Pharmacokinetics of t
 
 ### Reviewer guidance
 
-**Absorption parameters were defaulted because the record was built from the abstract alone, leaving ka and Tlag without source-supported estimates.**
+**The terodiline absorption rate constant was defaulted because the abstract-only source provided no estimate, causing the model to be held for review.**
 
-The source provided only summary statistics for terodiline, such as a 4.8 l/h clearance and 63 h terminal half-life, but did not report absorption rate data. Consequently, the model builder assigned library defaults to the absorption rate constant (ka) and lag time (Tlag) rather than using fitted values. This lack of explicit pharmacokinetic support for the absorption phase resulted in the record being flagged for review. Extracted — terodiline: t1/2α 0.3 h, t1/2z 63 h, CL 4.8 l/h, V/F 417 l, Fab 92 %.
+The record notes that the absorption rate constant and lag time were left at library defaults as they were not reported in the source text. The second reader disputed all extracted parameters, including the 0.3 h distribution half-life and 4.8 l/h clearance, marking them as unknown. Because the data relied solely on abstract statistics, the model builder also assumed first-order absorption despite the use of apparent parameters. Extracted — terodiline: t1/2α 0.3 h, t1/2z 63 h, CL 4.8 l/h, V/F 417 l, Fab 92 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has terodiline, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -88,6 +88,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- derived CL/F=4.58797 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Karlén_1982_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -144,15 +145,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=terodiline) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev1: not acceptable; dev2: not acceptable; dev3: not acceptable; dev4: not acceptable; dev5: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=terodiline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -191,7 +194,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 5e-05 | kg |
-| input | model | `Cl` | 1.333e-06 | m3/s |
+| input | model | `Cl` | 1.274e-06 | m3/s |
 | input | model | `VdPerKg` | 0.005957 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |

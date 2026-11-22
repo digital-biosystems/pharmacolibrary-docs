@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Belantamab mafodotin clearance was missing, and the model used a placeholder value instead of the extracted 0.926 L/day.
+> Belantamab mafodotin clearance was held back: the only estimate, initial systemic CL 0.926 L/day, describes the ADC and cys-mcMMAF, not belantamab mafodotin.
 
 <div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Papathanasiou2025_cys_mcmmaf_changeb" status="model_quarantined" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin ADC and cys-mcMMAF" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -56,11 +56,11 @@ Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Populati
 
 ### Reviewer guidance
 
-**Belantamab mafodotin clearance was missing, and the model used a placeholder value instead of the extracted 0.926 L/day.**
+**Belantamab mafodotin clearance was held back: the only estimate, initial systemic CL 0.926 L/day, describes the ADC and cys-mcMMAF, not belantamab mafodotin.**
 
-The extracted clearance parameter of 0.926 L/day was assigned to the ADC and its metabolite, not the drug itself. Consequently, the drug's clearance was left at library defaults, causing the model to be quarantined. Additionally, the defined covariate effects were not simulated in the base model. Extracted — belantamab_mafodotin ADC and cys-mcMMAF: V 10.8 L.
+No value for belantamab mafodotin's clearance — the 1 extracted parameter describes belantamab_mafodotin ADC and cys-mcMMAF, not belantamab mafodotin. The model was built, but belantamab mafodotin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The record describes a parent–metabolite structure, but the built structure was one-compartment rather than the expected parent–metabolite structure. The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. Extracted — belantamab_mafodotin ADC and cys-mcMMAF: V 10.8 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -232,6 +232,7 @@ The extracted clearance parameter of 0.926 L/day was assigned to the ADC and its
 | T3_shared_parameters |  | pass | 2 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 | T1_cmax | reference | skipped | 43.7 |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.498 |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.976 |  | no simulated metric for this quantity (single reference sim) |

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Aarons_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_Aarons1991_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Aarons1991_reference" status="simulated" stale="false" population="rheumatoid arthritis patients" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></div>
+> The record was held back because the second reader disagreed on the flurbiprofen clearance, volume of distribution, and half-life values, resulting in a cross-check agreement of 0.4.
+
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Aarons1991_reference" status="needs_review" stale="false" population="rheumatoid arthritis patients" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Aarons L. The kinetics of flurbiprofen in synovial fluid. Journal of pharmacokinetics and biopharmaceutics 19(3):265–269 (1991).
@@ -15,7 +17,7 @@ Aarons L. The kinetics of flurbiprofen in synovial fluid. Journal of pharmacokin
 
 ## Population and dosing
 
-**Population:** rheumatoid arthritis patients · age group adult · n = &gt;.
+**Population:** rheumatoid arthritis patients · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Aarons L. The kinetics of flurbiprofen in synovial fluid. Journal of pharmacokin
 <figure class="pk-models-diagram"><img src="drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference/Flurbiprofen_Aarons1991_reference.svg" alt="Flurbiprofen_Aarons1991_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | plasma parameters, clearance | CL | 1.75 | L hr-1 |
@@ -35,7 +39,7 @@ Aarons L. The kinetics of flurbiprofen in synovial fluid. Journal of pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +49,13 @@ Aarons L. The kinetics of flurbiprofen in synovial fluid. Journal of pharmacokin
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held back because the second reader disagreed on the flurbiprofen clearance, volume of distribution, and half-life values, resulting in a cross-check agreement of 0.4.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+This record was built from the abstract alone, so the reported summary statistics stood in for a fitted model. The second reader disagreed on the specific parameter values, recording nulls where this record listed 1.75 L/hr for clearance, 11.9 L for volume of distribution, and 4.8 hr for half-life. This conflict lowered the cross-check agreement to 0.4, which is below the 0.5 threshold required for acceptance. Extracted — flurbiprofen: CL 1.75 L hr-1, V 11.9 L, t1/2z 4.8 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 1.75; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -123,14 +127,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=flurbiprofen) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=flurbiprofen) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

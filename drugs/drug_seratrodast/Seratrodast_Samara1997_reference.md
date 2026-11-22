@@ -16,7 +16,7 @@ Samara E, Cao G, Locke C, Granneman GR, Dean R, Killian A. Population analysis o
 
 ## Population and dosing
 
-**Population:** patients with mild to moderate asthma · age group adult · n = condition.
+**Population:** patients with mild to moderate asthma · age group adult.
 
 ## Model
 

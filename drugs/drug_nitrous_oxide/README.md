@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;nitrous oxide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NitrousOxide_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NitrousOxide_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # nitrous oxide
 
@@ -23,18 +23,12 @@ Nitrous oxide is a general anesthetic and non-opioid analgesic used for pain rel
 |---|---|---|---|---|---|---|
 | nitrous_oxide | metabolite | 44.0128 | N2O | DrugBank | [948](https://pubchem.ncbi.nlm.nih.gov/compound/948) | Lindholm_2026 |
 
-## Start here
-
-> **Hampsey_2026_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md?tab=Simulation) · [record](drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Hampsey_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hampsey E et al., A systematic review of the pharmacokine…, Journal of psychopharmacolo… (2026) | [10.1177/02698811261453938](https://doi.org/10.1177/02698811261453938) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lindholm_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Lindholm2026_reference.md) | — | 1-compartment (no model) | 6 | Lindholm AØ et al., Concentration and Detection Time of Nit…, Drug testing and analysis (2026) | [10.1002/dta.70053](https://doi.org/10.1002/dta.70053) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Hampsey_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hampsey E et al., A systematic review of the pharmacokine…, Journal of psychopharmacolo… (2026) | [10.1177/02698811261453938](https://doi.org/10.1177/02698811261453938) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lindholm_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Lindholm2026_reference.md) | — | 1-compartment (no model) | 6 | Lindholm AØ et al., Concentration and Detection Time of Nit…, Drug testing and analysis (2026) | [10.1002/dta.70053](https://doi.org/10.1002/dta.70053) |
 
 ## Pharmacodynamics (PD)
 
@@ -54,13 +48,13 @@ Nitrous oxide is a general anesthetic and non-opioid analgesic used for pain rel
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:21 | 24:46 | 1/1/0 | 0/1/0 | 0/0/0 | 957,683/43,590 | einfracz / qwen3.8-27b | 34 | 7/25 | 34/0 | 0 |
+| 2026-10-07 04:21 | 24:46 | 0/2/0 | 0/1/0 | 0/0/0 | 957,683/43,590 | einfracz / qwen3.8-27b | 34 | 7/25 | 34/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 747 matched, 152 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

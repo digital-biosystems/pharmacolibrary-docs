@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 30 mg oral (A02BC05)",
  "model_id": "Esomeprazole_Chung2022_reference",
  "molar_masses": {
   "central.C": 0.345416
@@ -7,16 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  30.0,
-  50.0,
-  100.0,
-  200.0,
-  400.0,
-  600.0,
-  800.0
  ],
  "parameters": {
   "Cl": 6.138888888888889e-05,
@@ -31,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3068.250294234026
+  "central.C": 3068.250294233861
  },
  "reference_peaks": {
-  "central.C": 6.336934546021229e-05
+  "central.C": 6.336934546021471e-05
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

@@ -15,7 +15,7 @@ Beckermann B, Bock E, Kamp R, Dell HD. [Plasma level studies in volunteers after
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;12.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed etofenamate, measured fenamate.
 

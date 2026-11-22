@@ -5,11 +5,11 @@
 
 # Lumefantrine — `Lumefantrine_Ezzet1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:45 UTC (Rejected), but the paper was screened again on 2026-10-07 07:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ezzet1998_reference" status="needs_review" stale="true" population="malaria patients (Thai clinical trial)" measured-compound="lumefantrine (benflumetol)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ezzet1998_reference" status="needs_review" stale="false" population="malaria patients (Thai clinical trial)" measured-compound="lumefantrine (benflumetol)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ezzet F, Mull R, Karbwang J. Population pharmacokinetics and therapeutic response of CGP 56697 (artemether + benflumetol) in malaria patients. British journal of clinical pharmacology 46(6):553–561 (1998).
@@ -40,7 +40,7 @@ Ezzet F, Mull R, Karbwang J. Population pharmacokinetics and therapeutic respons
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Ezzet F, Mull R, Karbwang J. Population pharmacokinetics and therapeutic respons
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is lumefantrine's own; they describe lumefantrine (benflumetol) and artemether.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is lumefantrine's own; they describe lumefantrine (benflumetol) and artemether. Extracted — lumefantrine (benflumetol): t1/2ka 5.3 h, tmax 10 h, t1/2z 4.5 days; artemether: t1/2z 1.9 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemether + lumefantrine (benflumetol, CGP 56697), the second reading artemether + benflumetol; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

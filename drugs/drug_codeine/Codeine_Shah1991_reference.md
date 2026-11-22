@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Shah_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Guay1988_reference&quot;,&quot;label&quot;:&quot;Guay_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Shah J, Mason WD. A dose-ranging study of the pharmacokinetics of codeine phosph
 
 ## Population and dosing
 
-**Population:** male Sprague-Dawley rats · condition healthy · n = 12.
+**Population:** male Sprague-Dawley rats · condition healthy.
 
 **Dosing:** 70, 105, 210, 280 mg, iv, single.
 
@@ -27,7 +27,7 @@ Shah J, Mason WD. A dose-ranging study of the pharmacokinetics of codeine phosph
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -37,12 +37,11 @@ Shah J, Mason WD. A dose-ranging study of the pharmacokinetics of codeine phosph
 |---|---|---|---|
 | CL, Uh/kg | CL | 6.6 | Uh/kg |
 | Vd,, Ukg | V | 4.9 | L/kg |
-| Ka (hour−1) | kabs | 19.3 | hour−1 |
 | tlapo | tlag | 2.35 | (h) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +53,9 @@ Shah J, Mason WD. A dose-ranging study of the pharmacokinetics of codeine phosph
 
 **CL has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — codeine: CL 6.6 Uh/kg, V 4.9 L/kg, kabs 19.3 hour−1, tlag 2.35 (h).
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — codeine: CL 6.6 Uh/kg, V 4.9 L/kg, tlag 2.35 (h).
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has codeine, the second reading codeine phosphate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,7 +65,6 @@ Independently confirmed by `gpt-oss-120b`.
 |---|---|---|---|---|---|---|---|---|
 | CL, Uh/kg | `Q22` · CL | 6.6 | Uh/kg |  |  | Uh/kg | boundary (0.8) | Shah_1991:discussion_prose |
 | Vd,, Ukg | `Q61` · V | 4.9 | L/kg | 0.343 | m3 | L | boundary (0.8) | Shah_1991:discussion_prose |
-| Ka (hour−1) | `Q49` · kabs | 19.3 | hour−1 | 0.005361 | 1/s | 1/h | review_gapfill (0.7) | Gretler_2020:review |
 | tlapo | `Q83` · tlag | 2.35 | (h) | 8460 | s | h | review_gapfill (0.7) | Persson_1992:review |
 
 <details class="legend">
@@ -79,30 +77,36 @@ Independently confirmed by `gpt-oss-120b`.
 **Interpretation flags:**
 - salvaged Q22 ('CL, Uh/kg'=6.6) from results prose — parameter table was unreadable
 - salvaged Q61 ('Vd,, Ukg'=4.9) from results prose — parameter table was unreadable
-- implicit units: 'Vd,, Ukg' → L/kg (from the paper text: "The text states 'The mean Vd, was 5.49 * 1.11 L * kg-' and 'Vd,, for codeine averaged 3.96 t 0.80 L kg-'. The table head")
+- implicit units: 'Vd,, Ukg' → L/kg (from the paper text: "The text explicitly lists the units for related volume parameters in the Results section: 'The mean Vd, was 5.49 * 1.11 ")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=codeine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Gretler_2020's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Persson_1992's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
 - table Shah_1991_table_1: unknown_column_role
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl, uh/kg]` | 6.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd,, ukg]` | 4.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | codeine | codeine phosphate | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -117,7 +121,6 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gretler_2020:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Shah_1991:discussion_prose'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Persson_1992:review'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | Uh/kg | ['Shah_1991:discussion_prose'] |
@@ -157,4 +160,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Shah1991_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Shah1991_reference%0APaper%3A%20Shah_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Shah1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 19:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:58 UTC</sub>

@@ -16,7 +16,7 @@ D'Agate S, Ruiz Gabarre D, Della Pasqua O. Population pharmacokinetics and dose 
 
 ## Population and dosing
 
-**Population:** term and pre-term neonates with herpes · condition herpes · age group neonate · n = &gt;&lt;/string&gt;28.
+**Population:** term and pre-term neonates with herpes · condition herpes · age group neonate.
 
 **Dosing:** 30, 45, 60 mg/kg/day, iv, multiple.
 

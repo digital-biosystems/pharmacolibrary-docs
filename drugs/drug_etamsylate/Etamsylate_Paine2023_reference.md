@@ -16,7 +16,7 @@ Paine SW, Harding C, Waller CC, Zemenova J, Viljanto M, Habershon Butcher J et a
 
 ## Population and dosing
 
-**Population:** Thoroughbred horses · condition healthy · age group adult · n = ,.
+**Population:** Thoroughbred horses · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed etamsylate, measured 2,5-dihydroxybenzene sulphonate.
 
@@ -39,7 +39,7 @@ Paine SW, Harding C, Waller CC, Zemenova J, Viljanto M, Habershon Butcher J et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Paine SW, Harding C, Waller CC, Zemenova J, Viljanto M, Habershon Butcher J et a
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is etamsylate's own; they describe 2,5-dihydroxybenzene sulphonate. Extracted — 2,5-dihydroxybenzene sulphonate: CLm,norm/F 2 mL/min/kg, FG 28 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has etamsylate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etamsylate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -93,18 +93,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[2,5-hbsa bioavailability]` | 28 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[2,5-hbsa clearance].parameter_id` | Q375 | Q22 | mismatch |
-| `gpt-oss:120b` | `parameters[bioavailability]` |  | 28 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | etamsylate | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | 2,5-dihydroxybenzene sulphonate | unknown | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[2,5-hbsa bioavailability]` | 28 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[2,5-hbsa clearance].parameter_id` | Q375 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability]` |  | 28 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | etamsylate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 2,5-dihydroxybenzene sulphonate | unknown | mismatch |
 
 </details>
 

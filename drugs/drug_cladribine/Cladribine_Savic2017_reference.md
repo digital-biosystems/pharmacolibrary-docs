@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/&quot;},{&quot;label&quot;:&quot;Savic_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cladribine — `Cladribine_Savic2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 16:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record failed coherence and dimensional checks, and the second reader disagreed on two missing parameter values.
+> Record rejected due to inconsistent apparent clearance units and missing bioavailability value for 2-chloroadenine.
 
-<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="true" population="adults with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="false" population="adults with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokinetics of Cladribine in Patients with Multiple Sclerosis. Clinical pharmacokinetics 56(10):1245–1253 (2017).
@@ -17,7 +17,7 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 
 ## Population and dosing
 
-**Population:** adults with multiple sclerosis · condition multiple sclerosis · age group adult · n = &gt; 173.
+**Population:** adults with multiple sclerosis · condition multiple sclerosis · age group adult.
 
 **Dosing:** 3, 10 mg, oral, iv, single.
 
@@ -51,7 +51,7 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.921). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.921). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,9 +61,9 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 
 ### Reviewer guidance
 
-**The record failed coherence and dimensional checks, and the second reader disagreed on two missing parameter values.**
+**Record rejected due to inconsistent apparent clearance units and missing bioavailability value for 2-chloroadenine.**
 
-A coherence check flagged double correction of apparent parameters, and a dimensional check found a structural parameter with mismatched units. One reported unit could not be converted to standard SI units, leaving that parameter without a valid value. The second reader disagreed with this record on the values for the metabolite's elimination rate constant and a covariate fold-increase in non-renal clearance. Extracted — cladribine: CL 3.52 μg/h, CLNR 23.4 L/h, V1 44 L, Q 14.3 L/h, Q2 53.7 L/h, V2 347 L, V3 89.5 L, kabs 1.08 h−1, … (+3); 2-chloroadenine: CL 0.0028 μg/h, CL/F 653 L/h, V1/F 365 L.
+The record assigns a mass-flow unit to an apparent volume parameter, creating a dimensional conflict. Bioavailability is listed but null, yet apparent clearance values are provided. A second reader identified a missing metabolic rate constant and covariate effect. Extracted — cladribine: CL 3.52 μg/h, CLNR 23.4 L/h, V1 44 L, Q 14.3 L/h, Q2 53.7 L/h, V2 347 L, V3 89.5 L, kabs 1.08 h−1, … (+3); 2-chloroadenine: CL 0.0028 μg/h, CL/F 653 L/h, V1/F 365 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clr e (km): this record has none, the second reading 0.0114; it also differs on 2 more fields. That field does not shape the model.
 

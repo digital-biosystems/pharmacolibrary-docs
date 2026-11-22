@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ergonovine&quot;,&quot;href&quot;:&quot;drugs/toxin_ergonovine/&quot;},{&quot;label&quot;:&quot;Balki_2014 \u00b7 PD motility index&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergonovine_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergonovine/Ergonovine_de1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergonovine_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergonovine/Ergonovine_de1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # motility index — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span>
@@ -17,6 +17,10 @@
 **As extracted:** Ergonovine (concentrations from the PK model of de_1994) drives motility index (in √g·c·10 min(-1)) (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The provided record indicates that ergonovine concentrations act to stimulate the motility index (MI), measured in √g·c·10 min(-1). The paper does not specify the PD mechanism, model family, or specific potency and rate constants.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Balki_2014`
 - **model family:** `unknown`

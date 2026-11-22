@@ -4,11 +4,11 @@
 
 # thiamphenicol — `Thiamphenicol_Fang2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-07 10:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks distribution volume and clearance, preventing a compartmental population PK model, and reports AUC units as mg/kg·h.
+> The record was rejected because the AUC unit mg/kg·h has mass dimensions, conflicting with the required concentration-time dimension of concentration times time.
 
-<div class="pk-model-meta" hidden drug="thiamphenicol" model-id="Thiamphenicol_Fang2013_reference" status="rejected" stale="true" population="Pacific white shrimp (Litopenaeus vannamei) in freshwater" measured-compound="thiamphenicol and florfenicol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="thiamphenicol" model-id="Thiamphenicol_Fang2013_reference" status="rejected" stale="false" population="Pacific white shrimp (Litopenaeus vannamei) in freshwater" measured-compound="thiamphenicol and florfenicol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fang W, Li G, Zhou S, Li X, Hu L, Zhou J. Pharmacokinetics and tissue distribution of thiamphenicol and florfenicol in Pacific white shrimp Litopenaeus vannamei in freshwater following oral administration. Journal of aquatic animal health 25(2):83–89 (2013).
@@ -42,7 +42,7 @@ Fang W, Li G, Zhou S, Li X, Hu L, Zhou J. Pharmacokinetics and tissue distributi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Fang W, Li G, Zhou S, Li X, Hu L, Zhou J. Pharmacokinetics and tissue distributi
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance, preventing a compartmental population PK model, and reports AUC units as mg/kg·h.**
+**The record was rejected because the AUC unit mg/kg·h has mass dimensions, conflicting with the required concentration-time dimension of concentration times time.**
 
-The paper is abstract-only, so summary statistics stand in for a fitted model. The AUC value of 29.10 is reported in mg/kg·h, which conflicts with the dimension of mass·time/length³. The record identifies both thiamphenicol and florfenicol as measured compounds, which a second reader could not confirm. Extracted — thiamphenicol and florfenicol: Cmax 7.96 μg/mL, tmax 2 h, t1/2ka 0.666 h, t1/2β 10.7 h, AUCt 29.1 mg/kg·h, MRT 9.77 h, t1/2z 6.84 h.
+The reported AUC value of 29.10 mg/kg·h for thiamphenicol and florfenicol is a mass-based unit that cannot be converted to the standard concentration-time dimension. This dimensional mismatch on a structural parameter rendered the model invalid. Additionally, the second reader disagreed with the extraction of all provided pharmacokinetic parameters, marking them as unknown or null. Extracted — thiamphenicol and florfenicol: Cmax 7.96 μg/mL, tmax 2 h, t1/2ka 0.666 h, t1/2β 10.7 h, AUCt 29.1 mg/kg·h, MRT 9.77 h, t1/2z 6.84 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thiamphenicol and florfenicol, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

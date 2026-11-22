@@ -5,11 +5,11 @@
 
 # lasmiditan — `Lasmiditan_Tsai2021_population_mean_see`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:45 UTC (Needs review), but the paper was screened again on 2026-10-07 06:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lasmiditan's central volume of distribution and absorption lag time were not extracted, so library placeholders were used and the model was quarantined.
+> MTT has no unit.
 
-<div class="pk-model-meta" hidden drug="lasmiditan" model-id="Lasmiditan_Tsai2021_population_mean_see" status="needs_review" stale="true" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lasmiditan" model-id="Lasmiditan_Tsai2021_population_mean_see" status="needs_review" stale="false" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics, Safety, and Tolerability of Lasmiditan in Pediatric Patients with Migraine. Clinical pharmacokinetics 60(6):819-828 (2021).
@@ -17,16 +17,16 @@ Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics
 
 ## Population and dosing
 
-**Population:** pediatric patients with migraine · condition migraine · age group child · n = ,n_subjects.
+**Population:** pediatric patients with migraine · condition migraine · age group child.
 
 **Dosing:** 100, 200 mg, oral, single.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 6 extracted, plus 2 covariate effects.  
-**Availability:** Model withheld: a core parameter is unspecified.
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -42,13 +42,9 @@ Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics
 | theta_q319_body_weight | theta_q319_body_weight | 0.877 |  |
 | theta_v2_f_body_weight | theta_v2_f_body_weight | 1.15 | L |
 
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,13 +54,13 @@ Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Lasmiditan's central volume of distribution and absorption lag time were not extracted, so library placeholders were used and the model was quarantined.**
+**MTT has no unit.**
 
-The record lists parameters for a two-compartment model, yet the volume of distribution and absorption lag time were missing, causing the system to rely on defaults instead of explicit estimates. Additionally, the covariate effects defined in the record were not exercised during simulation, only the reference individual was modeled. A second reader noted that relative standard errors for parameters like clearance were missing in this record but estimated in the source, further highlighting incomplete data extraction. Extracted — lasmiditan: kabs 0.295 1/h, CL/F 107 L/h, V2/F 127 L, Q/F 21.2 L/h, V3/F 172 L, MTT 0.436 h.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT and theta_v2_f_body_weight), so that value has no SI equivalent. Extracted — lasmiditan: kabs 0.295 1/h, CL/F 107 L/h, V2/F 127 L, Q/F 21.2 L/h, V3/F 172 L, MTT 0.436 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].rse_percent`: this record has none, the second reading 22.7; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -153,21 +149,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 107 L/h | ['Tab3:row2:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 127 L | ['Tab3:row3:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | skipped | 4 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 4 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.5–2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

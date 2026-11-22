@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The grepafloxacin total clearance parameter of 0.01 ml/min is implausibly low, suggesting a unit or scale extraction error.
+> The extracted clearance value of 0.01 ml/min for grepafloxacin is physiologically implausible for rabbits, triggering a magnitude error rejection.
 
 <div class="pk-model-meta" hidden drug="grepafloxacin" model-id="Grepafloxacin_Pfister2003_reference" status="rejected" stale="false" population="rabbits with experimental pneumococcal meningitis" measured-compound="grepafloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Pfister M, Zhang L, Hammarlund-Udenaes M, Sheiner LB, Gerber CM, Täuber MG et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Pfister M, Zhang L, Hammarlund-Udenaes M, Sheiner LB, Gerber CM, Täuber MG et a
 
 ### Reviewer guidance
 
-**The grepafloxacin total clearance parameter of 0.01 ml/min is implausibly low, suggesting a unit or scale extraction error.**
+**The extracted clearance value of 0.01 ml/min for grepafloxacin is physiologically implausible for rabbits, triggering a magnitude error rejection.**
 
-The recorded bulk clearance of 0.01 ml/min for grepafloxacin in rabbits with meningitis falls outside the physiological range for total drug elimination. A second reader identified blood-CSF diffusion clearance and average influx clearance values not present in the current record, while disagreeing that the 0.01 ml/min value should be null. These discrepancies indicate the extracted clearance parameter does not correctly represent the model's elimination or diffusion mechanisms. Extracted — grepafloxacin: CL 0.01 ml/min.
+The record lists a total clearance of 0.01 ml/min, which falls outside the physiological window for the rabbit population, indicating a likely unit or scale extraction error. A second reader disputed the extraction, citing a value of 0.0088 for average influx clearance while marking the bulk clearance as null. This disagreement highlights uncertainty in the parameter assignment, though the primary rejection stems from the implausible magnitude of the extracted clearance. Extracted — grepafloxacin: CL 0.01 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of average influx clearance: this record has none, the second reading 0.0088; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average influx clearance: this record has none, the second reading 0.0088; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,14 +87,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[average influx clearance]` |  | 0.0088 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl bulk]` | 0.01 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[average influx clearance]` |  | 0.0088 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl bulk]` | 0.01 |  | only_one_extracted |
 
 </details>
 

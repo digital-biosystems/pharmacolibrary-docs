@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;Celardo_1987 \u00b7 before_renal_failure&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_van_2007_HR&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_van_2007_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2007_HR_2&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_van_2007_HR_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_DBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_SBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_SBP.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atenolol — `Atenolol_Celardo1987_before_renal_failure`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:02 UTC (Rejected), but the paper was screened again on 2026-10-06 23:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Atenolol clearance (0.58 L/h) and volume (0.48 L) are physiologically implausible, indicating a unit or scale extraction error.
+> Atebrolol clearance and volume parameters were rejected for falling outside physiological windows.
 
-<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Celardo1987_before_renal_failure" status="rejected" stale="true" population="rabbits on continuous peritoneal dialysis" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Celardo1987_before_renal_failure" status="rejected" stale="false" population="rabbits on continuous peritoneal dialysis" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Celardo A, Traina GL, Arboix M, Puigdemont A, Bonati M. Pharmacokinetic and pharmacodynamic modelling of atenolol in rabbits maintained on continuous peritoneal dialysis. European journal of drug metabolism and pharmacokinetics 12(1):41–48 (1987).
@@ -17,7 +16,7 @@ Celardo A, Traina GL, Arboix M, Puigdemont A, Bonati M. Pharmacokinetic and phar
 
 ## Population and dosing
 
-**Population:** rabbits on continuous peritoneal dialysis · age group adult · n = &gt;=5.
+**Population:** rabbits on continuous peritoneal dialysis · age group adult.
 
 **Dosing:** 210 mg, iv, single.
 
@@ -55,7 +54,7 @@ Celardo A, Traina GL, Arboix M, Puigdemont A, Bonati M. Pharmacokinetic and phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,9 +64,9 @@ Celardo A, Traina GL, Arboix M, Puigdemont A, Bonati M. Pharmacokinetic and phar
 
 ### Reviewer guidance
 
-**Atenolol clearance (0.58 L/h) and volume (0.48 L) are physiologically implausible, indicating a unit or scale extraction error.**
+**Atebrolol clearance and volume parameters were rejected for falling outside physiological windows.**
 
-The record reports a total clearance of 0.58 L/h and a volume of distribution of 0.48 L, which fall outside the physiological window for this molecule. Additionally, the second reader failed to extract the blood clearance (0.54 L/h) and renal clearance (0.36 L/h), marking them as null. These discrepancies confirm that the parameter values are likely affected by a scale or unit conversion failure. Extracted — atenolol: λ1 4.36, λ2 0.32, t1/2α 0.18 h, t1/2β 2.22 h, V 0.48 L, Vss 1.56 L, CL 0.58 L/h, AUC 5.34 mg·h/L, … (+9).
+The clearance values of 0.58 L/h and 0.54 L/h, along with volumes of 0.48 L and 1.56 L, were flagged as implausible. The AUC value of 5.34 mg·h/L was also identified as outside expected physiological ranges. A second reader confirmed the presence of these specific parameter values in the record. Extracted — atenolol: λ1 4.36, λ2 0.32, t1/2α 0.18 h, t1/2β 2.22 h, V 0.48 L, Vss 1.56 L, CL 0.58 L/h, AUC 5.34 mg·h/L, … (+9).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc d: this record has 5.34, the second reading none; it also differs on 13 more fields. That field does not shape the model.
 

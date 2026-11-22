@@ -41,7 +41,7 @@ Dermatan sulfate is an antithrombotic agent currently under investigation for us
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 12:56 | 12:37 | 0/1/0 | 2/0/0 | 0/0/0 | 335,008/49,546 | einfracz / qwen3.8-27b | 35 | 26/24 | 19/16 | 0 |
+| 2026-10-13 12:56 | 12:37 | 0/1/0 | 4/0/0 | 0/0/0 | 335,008/49,546 | einfracz / qwen3.8-27b | 35 | 26/24 | 19/16 | 0 |
 
 ## Coverage
 

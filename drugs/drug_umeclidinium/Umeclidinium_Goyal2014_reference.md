@@ -5,11 +5,11 @@
 
 # umeclidinium — `Umeclidinium_Goyal2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:07 UTC (Rejected), but the paper was screened again on 2026-10-07 15:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The one-compartment model has an orphan peripheral compartment, and the extracted covariate effect percentages lack central parameter values.
+> Record rejected because abstract-only source lacks structural parameters, causing dimension mismatches for V2/F and CL/F, and leaving the peripheral compartment unreachable.
 
-<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Goyal2014_reference" status="rejected" stale="true" population="patients with COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Goyal2014_reference" status="rejected" stale="false" population="patients with COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharmacokinetics of inhaled umeclidinium and vilanterol in patients with chronic obstructive pulmonary disease. Clinical pharmacokinetics 53(7):637–648 (2014).
@@ -37,7 +37,7 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 ### Reviewer guidance
 
-**The one-compartment model has an orphan peripheral compartment, and the extracted covariate effect percentages lack central parameter values.**
+**Record rejected because abstract-only source lacks structural parameters, causing dimension mismatches for V2/F and CL/F, and leaving the peripheral compartment unreachable.**
 
-The structure is defined as one compartment, yet the V2/F parameter implies a peripheral compartment that has no path from the dose. The covariate values of 6%, 7%, and 3% are recorded without corresponding central clearance or volume values. Because the record was abstract-only, these summary statistics stand in for a fitted model. The second reader noted missing central values and an additional compound, but the structural and dimensional mismatches remain. Extracted — umeclidinium: V2/F 6 %, CL/F 7 %.
+The record was built from the abstract alone, so summary statistics stood in for a fitted model, resulting in no base parameter values. The extracted values of 6 and 7 percent were assigned to structural parameters V2/F and CL/F, causing a dimension mismatch as percentages are dimensionless while these parameters require volume or clearance units. Additionally, the model structure left the peripheral compartment unreachable from the dose. Extracted — umeclidinium: V2/F 6 %, CL/F 7 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium, the second reading umeclidinium, vilanterol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

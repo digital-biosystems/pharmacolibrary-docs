@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;tremelimumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tremelimumab_Baverel2019_reference&quot;,&quot;label&quot;:&quot;Baverel_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/Tremelimumab_Baverel2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tremelimumab_Wang2014_reference&quot;,&quot;label&quot;:&quot;Wang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Song_2023_CD8_Ki67_T_cells&quot;,&quot;label&quot;:&quot;Song_2023 \u00b7 CD8+Ki67+ T cells&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/pd_Song_2023_CD8_Ki67_T_cells.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tremelimumab_Baverel2019_reference&quot;,&quot;label&quot;:&quot;Baverel_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/Tremelimumab_Baverel2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tremelimumab_Wang2014_reference&quot;,&quot;label&quot;:&quot;Wang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Song_2023_CD8_Ki67_T_cells&quot;,&quot;label&quot;:&quot;Song_2023 \u00b7 CD8+Ki67+ T cells&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/pd_Song_2023_CD8_Ki67_T_cells.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tremelimumab
 
@@ -16,13 +16,13 @@ Tremelimumab is a monoclonal antibody used to treat hepatocellular carcinoma and
 
 ## Start here
 
-> **Wang_2014_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with metastatic melanoma, n = &gt;=654. [Run it in the simulator](drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference.md?tab=Simulation) · [record](drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference.md)
+> **Baverel_2019_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_tremelimumab/Tremelimumab_Baverel2019_reference.md?tab=Simulation) · [record](drugs/drug_tremelimumab/Tremelimumab_Baverel2019_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Baverel_2019 · CL</text><circle cx="202.2" cy="30.0" r="4" fill="#78909c"><title>Baverel_2019 · CL: 0.01083 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wang_2014 · CL</text><circle cx="202.2" cy="46.0" r="4" fill="#78909c"><title>Wang_2014 · CL: 0.01083 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Hwang_2023 · CL</text><circle cx="211.2" cy="62.0" r="4" fill="#ef6c00"><title>Hwang_2023 · CL: 0.0115 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wang_2014 · V</text><circle cx="399.6" cy="30.0" r="4" fill="#78909c"><title>Wang_2014 · V: 3.97 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Baverel_2019 · V1</text><circle cx="399.6" cy="46.0" r="4" fill="#78909c"><title>Baverel_2019 · V1: 3.97 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Baverel_2019 · CL</text><circle cx="202.2" cy="30.0" r="4" fill="#78909c"><title>Baverel_2019 · CL: 0.01083 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wang_2014 · CL</text><circle cx="202.2" cy="46.0" r="4" fill="#ef6c00"><title>Wang_2014 · CL: 0.01083 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Hwang_2023 · CL</text><circle cx="211.2" cy="62.0" r="4" fill="#ef6c00"><title>Hwang_2023 · CL: 0.0115 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wang_2014 · V</text><circle cx="399.6" cy="30.0" r="4" fill="#ef6c00"><title>Wang_2014 · V: 3.97 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Baverel_2019 · V1</text><circle cx="399.6" cy="46.0" r="4" fill="#78909c"><title>Baverel_2019 · V1: 3.97 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -31,8 +31,8 @@ Tremelimumab is a monoclonal antibody used to treat hepatocellular carcinoma and
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Baverel_2019_reference](drugs/drug_tremelimumab/Tremelimumab_Baverel2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Baverel P et al., Exposure-Response Analysis of Overall S…, Clinical and translational… (2019) | [10.1111/cts.12633](https://doi.org/10.1111/cts.12633) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Wang_2014_reference](drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang E et al., Population pharmacokinetic and pharmaco…, Journal of clinical pharmac… (2014) | [10.1002/jcph.309](https://doi.org/10.1002/jcph.309) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Hwang_2023_reference](drugs/drug_tremelimumab/Tremelimumab_Hwang2023_reference.md) | — | 1-compartment (no model) | 1 | Hwang M et al., Population pharmacokinetic modelling of…, British journal of clinical… (2023) | [10.1111/bcp.15622](https://doi.org/10.1111/bcp.15622) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Wang_2014_reference](drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang E et al., Population pharmacokinetic and pharmaco…, Journal of clinical pharmac… (2014) | [10.1002/jcph.309](https://doi.org/10.1002/jcph.309) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,15 +43,6 @@ Tremelimumab is a monoclonal antibody used to treat hepatocellular carcinoma and
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [He_2023_OS](drugs/drug_tremelimumab/pd_He_2023_OS.md) | overall survival ← tremelimumab · time-to-event model | — | He JZ et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2023) | [10.1002/cpt.3063](https://doi.org/10.1002/cpt.3063) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [He_2023_PFS](drugs/drug_tremelimumab/pd_He_2023_PFS.md) | progression-free survival ← tremelimumab · time-to-event model | — | He JZ et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2023) | [10.1002/cpt.3063](https://doi.org/10.1002/cpt.3063) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Song_2023_CD8_Ki67_T_cells](drugs/drug_tremelimumab/pd_Song_2023_CD8_Ki67_T_cells.md) | CD8+Ki67+ T-cell count ← tremelimumab · direct Emax (saturable) effect | ▶ model + simulator | Song X et al., Exposure-Response Analyses of Tremelimu…, Clinical cancer research :… (2023) | [10.1158/1078-0432.CCR-22-1983](https://doi.org/10.1158/1078-0432.CCR-22-1983) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tremelimumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CTLA4 (antibody), CTLA4 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:18 | 2:45 | 3/0/0 | 3/0/0 | 0/0/0 | 76,885/4,717 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 22:18 | 2:45 | 3/0/0 | 5/0/0 | 0/0/0 | 76,885/4,717 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

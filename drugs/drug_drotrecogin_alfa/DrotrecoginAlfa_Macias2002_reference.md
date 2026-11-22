@@ -36,7 +36,7 @@ Macias WL, Dhainaut JF, Yan SC, Helterbrand JD, Seger M, Johnson G et al. Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Macias WL, Dhainaut JF, Yan SC, Helterbrand JD, Seger M, Johnson G et al. Pharma
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Abboud_2009) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — drotrecogin alfa: Css 44.9 ng/mL, CL 40.1 L/h, V 7.9 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has drotrecogin alfa (activated), the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has drotrecogin alfa (activated), the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -89,19 +89,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[less than 30% from the mean cl]` |  | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median c]` | 44.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median c]` |  | 44.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median plasma clearance (cl(p))]` | 40.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median plasma clearance (cl(p))]` |  | 40.1 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | drotrecogin alfa (activated) | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | drotrecogin alfa (activated) | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[less than 30% from the mean cl]` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median c]` | 44.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median c]` |  | 44.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median plasma clearance (cl(p))]` | 40.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median plasma clearance (cl(p))]` |  | 40.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | drotrecogin alfa (activated) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | drotrecogin alfa (activated) | unknown | mismatch |
 
 </details>
 

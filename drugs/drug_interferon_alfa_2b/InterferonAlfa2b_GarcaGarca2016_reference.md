@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for interferon alfa-2b was held back because the zero-order absorption duration, estimated at 5.71 hours by a second reader, was missing from the primary extraction.
+> Readers disputed the identity of interferon alfa 2b’s S0 parameter, reported as 33.9 ng/mL, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="interferon alfa-2b" model-id="InterferonAlfa2b_GarcaGarca2016_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="interferon_alfa_2b" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ García-García I, Hernández-González I, Díaz-Machado A, González-Delgado CA
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = : 9.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 **Dosing:** 24.5 10^6 IU, im, single.
 
@@ -56,13 +56,13 @@ García-García I, Hernández-González I, Díaz-Machado A, González-Delgado CA
 
 ### Reviewer guidance
 
-**The record for interferon alfa-2b was held back because the zero-order absorption duration, estimated at 5.71 hours by a second reader, was missing from the primary extraction.**
+**Readers disputed the identity of interferon alfa 2b’s S0 parameter, reported as 33.9 ng/mL, so the record was held back.**
 
-The model structure includes absorption and a baseline intercept of 33.9 ng/mL, but the duration of the zero-order input phase is absent from the primary parameter set. A secondary assessment identified a value of 5.71 for this duration, which conflicts with the record's null state. This discrepancy triggers a review deviation because the absorption profile is incomplete without the explicit timing of the input phase. Extracted — interferon alfa 2b: kabs 0.15 h–1, Fab 0.22, V 38.4 L, kel 0.21 h−1, CL 1.8 L/h.
+The second reader also differed on the dose and primary-analyte descriptions, and supplied a value of 5.71 for a parameter absent from the record. Tlag was defaulted rather than explicitly estimated. A reported unit could not be converted to SI, but the record does not identify which parameter had that unit, so its effect is inconclusive. Extracted — interferon alfa 2b: kabs 0.15 h–1, Fab 0.22, V 38.4 L, kel 0.21 h−1, CL 1.8 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has interferon_alfa_2b and interferon_gamma, the second reading interferon alpha-2b and interferon gamma (co-formulated); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -146,14 +146,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=interferon_alfa_2b) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev_1: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=interferon_alfa_2b) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | cross-check disputed by a second reader: verdict disputed, agreement 0.692, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

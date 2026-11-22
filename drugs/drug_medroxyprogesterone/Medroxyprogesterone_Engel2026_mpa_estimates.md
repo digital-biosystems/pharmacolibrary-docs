@@ -5,11 +5,11 @@
 
 # medroxyprogesterone — `Medroxyprogesterone_Engel2026_mpa_estimates`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 08:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a reported pharmacokinetic unit could not be converted to standard units, causing a dimension mismatch.
+> Medroxyprogesterone acetate elimination rate constant β=6.3 h⁻¹ failed dimensional checks.
 
-<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_mpa_estimates" status="rejected" stale="true" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_mpa_estimates" status="rejected" stale="false" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and Subcutaneous Pharmacokinetic Modeling to Support the Development of Long-Acting Multipurpose Prevention Technology for HIV and Pregnancy. Biomedicines 14(4) (2026).
@@ -43,7 +43,7 @@ Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and S
 
 ### Reviewer guidance
 
-**The record was rejected because a reported pharmacokinetic unit could not be converted to standard units, causing a dimension mismatch.**
+**Medroxyprogesterone acetate elimination rate constant β=6.3 h⁻¹ failed dimensional checks.**
 
-The record includes medroxyprogesterone acetate and cabotegravir, though the second reader identifies medroxyprogesterone acetate as the primary analyte. A specific unit for a parameter was not recognized, preventing its conversion to standard units. Additionally, the second reader disagreed with the extracted value of 21 ng/mL for the amplitude variable, indicating it should not have been included. Extracted — medroxyprogesterone: λ1 23 h−1, kel 6.3 h−1.
+The elimination rate constant, meaning the terminal phase disposition, was recorded as 6.3 h⁻¹, a unit that the system could not convert to SI. This lack of a valid SI value caused a dimensional mismatch during the structural parameter validation. Additionally, a second reader could not identify the value 21 ng/mL in the source, and disagreed on the primary analyte designation. Extracted — medroxyprogesterone: λ1 23 h−1, kel 6.3 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cabotegravir, medroxyprogesterone acetate, the second reading medroxyprogesterone acetate (MPA), cabotegravir (CAB); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

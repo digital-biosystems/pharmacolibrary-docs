@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the specific pharmacodynamic mechanism or potency parameters for the inhibition of aqueous humor inflow by alpha-ergocryptine. Consequently, no mechanistic model (e.g., direct Emax or indirect response) or associated kinetic values are available from the provided excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Puras_2002`
 - **model family:** `unknown`
 - **driver:** `dose_only`

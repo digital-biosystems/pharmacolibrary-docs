@@ -4,11 +4,11 @@
 
 # hydroflumethiazide — `Hydroflumethiazide_Brrs1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-06 16:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="hydroflumethiazide" model-id="Hydroflumethiazide_Brrs1979_reference" status="needs_review" stale="true" population="healthy subjects" measured-compound="hydroflumethiazide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="hydroflumethiazide" model-id="Hydroflumethiazide_Brrs1979_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="hydroflumethiazide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Brørs O, Jacobsen S. Distribution of elimination of hydroflumethiazide in man. European journal of clinical pharmacology 16(2):125–131 (1979).
@@ -34,7 +34,7 @@ Brørs O, Jacobsen S. Distribution of elimination of hydroflumethiazide in man. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Brørs O, Jacobsen S. Distribution of elimination of hydroflumethiazide in man. 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — hydroflumethiazide: t1/2β 5.2 h.
 
 Independently confirmed by `gpt-oss-120b`.
 

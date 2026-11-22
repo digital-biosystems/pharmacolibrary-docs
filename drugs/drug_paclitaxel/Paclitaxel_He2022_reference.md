@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Paclitaxel's bioavailability, volume of distribution, and absorption lag time lacked explicit values, causing the model to use generic placeholders and leading to quarantine.
+> Paclitaxel's bioavailability, volume of distribution, and lag time lacked values, forcing placeholder use that prevented publication.
 
 <div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_He2022_reference" status="model_quarantined" stale="false" population="adults with advanced/metastatic solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ He J, Jackson CGCA, Deva S, Hung T, Clarke K, Segelov E et al. Population pharma
 
 ## Population and dosing
 
-**Population:** adults with advanced/metastatic solid tumors · condition advanced/metastatic solid tumors · age group adult · n = No.
+**Population:** adults with advanced/metastatic solid tumors · condition advanced/metastatic solid tumors · age group adult.
 
 **Dosing:** 205 mg/m2, oral, multiple, every 24 h.
 
@@ -57,9 +57,9 @@ He J, Jackson CGCA, Deva S, Hung T, Clarke K, Segelov E et al. Population pharma
 
 ### Reviewer guidance
 
-**Paclitaxel's bioavailability, volume of distribution, and absorption lag time lacked explicit values, causing the model to use generic placeholders and leading to quarantine.**
+**Paclitaxel's bioavailability, volume of distribution, and lag time lacked values, forcing placeholder use that prevented publication.**
 
-The record lists a central volume of 855 L but lacks values for absolute bioavailability, total volume of distribution, and absorption lag time. These missing parameters meant the model relied on standard defaults instead of specific estimates. The second reader also identified a race effect on peripheral volume that was not included in the record. Extracted — paclitaxel: CL 33.7 L/h, V2 50.7 L, Q 40.6 L/h, V3 855 L, kabs 0.724 1/h, Fab 0.119.
+The record omits explicit values for absolute bioavailability, central volume, and lag time, so library defaults were substituted. Covariate effects defined in the model were not exercised during simulation. A second reader identified missing parameters like absorption lag time and specific covariate terms, highlighting inconsistencies in the extracted data. Extracted — paclitaxel: CL 33.7 L/h, V2 50.7 L, Q 40.6 L/h, V3 855 L, kabs 0.724 1/h, Fab 0.119.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alag1: this record has none, the second reading 0.215; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -149,13 +149,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

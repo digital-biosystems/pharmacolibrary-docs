@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;indinavir&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/&quot;},{&quot;label&quot;:&quot;Solas_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indinavir_Csajka2004_reference&quot;,&quot;label&quot;:&quot;Csajka_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Csajka2004_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Cressey2011_reference&quot;,&quot;label&quot;:&quot;Cressey_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Cressey2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Kappelhoff2005_reference&quot;,&quot;label&quot;:&quot;Kappelhoff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indinavir_Cressey2011_reference&quot;,&quot;label&quot;:&quot;Cressey_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Cressey2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Csajka2004_reference&quot;,&quot;label&quot;:&quot;Csajka_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Csajka2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Kappelhoff2005_reference&quot;,&quot;label&quot;:&quot;Kappelhoff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Solas C, Simon N, Drogoul MP, Quaranta S, Frixon-Marin V, Bourgarel-Rey V et al.
 
 ## Population and dosing
 
-**Population:** HIV-infected patients · condition HIV infection · age group adult · n = &gt;=28.
+**Population:** HIV-infected patients · condition HIV infection · age group adult.
 
 ## Model
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;bempedoic acid&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/&quot;},{&quot;label&quot;:&quot;Jadhav_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BempedoicAcid_Amore2023_reference&quot;,&quot;label&quot;:&quot;Amore_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BempedoicAcid_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BempedoicAcid_Amore2023_reference&quot;,&quot;label&quot;:&quot;Amore_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BempedoicAcid_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bempedoic acid — `BempedoicAcid_Jadhav2023_reference`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
+> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Jadhav2023_reference" status="not_modelled" stale="false" population="healthy subjects and patients with dyslipidemia" measured-compound="bempedoic acid" parameterization="apparent" topology="parent_metabolite"></div>
+> For bempedoic acid, the distribution rate constant kcomp (0.184 h−1) was omitted, while the parent–metabolite model was represented as a single-compartment oral model.
+
+<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Jadhav2023_reference" status="rejected" stale="false" population="healthy subjects and patients with dyslipidemia" measured-compound="bempedoic acid" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Jadhav SB, Amore BM, Bockbrader H, Crass RL, Chapel S, Sasiela WJ et al. Population pharmacokinetic and pharmacokinetic-pharmacodynamic modeling of bempedoic acid and low-density lipoprotein cholesterol in healthy subjects and patients with dyslipidemia. Journal of pharmacokinetics and pharmacodynamics 50(5):351–364 (2023).
@@ -29,7 +31,7 @@ Jadhav SB, Amore BM, Bockbrader H, Crass RL, Chapel S, Sasiela WJ et al. Populat
 <figure class="pk-models-diagram"><img src="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference.svg" alt="BempedoicAcid_Jadhav2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
@@ -46,7 +48,7 @@ Jadhav SB, Amore BM, Bockbrader H, Crass RL, Chapel S, Sasiela WJ et al. Populat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,13 +58,13 @@ Jadhav SB, Amore BM, Bockbrader H, Crass RL, Chapel S, Sasiela WJ et al. Populat
 
 ### Reviewer guidance
 
-**No model has been built from this record yet; the covariate scenarios were not simulated.**
+**For bempedoic acid, the distribution rate constant kcomp (0.184 h−1) was omitted, while the parent–metabolite model was represented as a single-compartment oral model.**
 
-The base model was simulated, not the covariate effects the record defines. No model template covers this structure.
+The explicit distribution rate constant kcomp for bempedoic acid was 0.184 h−1, but it was not emitted or defaulted; central-compartment concentration was used instead of the measured bempedoic acid compartment. The model also defaulted Tlag and assumed F=1, Fm=1, with no molar correction. The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. Extracted — bempedoic acid: CL/F 0.755 L/h, V1/F 19.1 L, kabs 1.41 h−1, kcomp 0.184 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of turn: this record has none, the second reading 85.8. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -237,13 +239,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | obtained | note |
-|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations |  | pass |  | no engineer deviations to adjudicate |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | fail | Metabolite_C (measured=bempedoic acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['kcomp'] |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.944, 0 of 1 reader(s) agree | 0.944 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -255,61 +260,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_modelica.zip" download>BempedoicAcid_Jadhav2023_reference_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_fmi.zip" download>BempedoicAcid_Jadhav2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_matlab.zip" download>BempedoicAcid_Jadhav2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_matlab_simbio.zip" download>BempedoicAcid_Jadhav2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_sbml.zip" download>BempedoicAcid_Jadhav2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_cellml.zip" download>BempedoicAcid_Jadhav2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3445 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.00018 | kg |
-| input | model | `Cl` | 2.097e-07 | m3/s |
-| input | model | `VdPerKg` | 0.0002729 | m3/kg |
-| input | model | `ka` | 0.0003917 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Jadhav SB, Amore BM, Bockbrader H, Crass RL, Chapel S, Sasiela WJ et al. Population pharmacokinetic and pharmacokinetic-pharmacodynamic modeling of bempedoic acid and low-density lipoprotein cholesterol in healthy subjects and patients with dyslipidemia. Journal of pharmacokinetics and pharmacodynamics 50(5):351–364 (2023). [doi:10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w)
-
-**This record:** Pharmacolibrary, model `BempedoicAcid_Jadhav2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference>
-
-```bibtex
-@misc{pharmacolibrary_BempedoicAcidJadhav2023reference,
-  title  = {{Pharmacolibrary model BempedoicAcid_Jadhav2023_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference},
-  note   = {Parameters from doi:10.1007/s10928-023-09864-w},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

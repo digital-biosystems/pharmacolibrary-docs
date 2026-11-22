@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Tsiros_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Jahn2018_reference&quot;,&quot;label&quot;:&quot;Jahn_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Jahn2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Norman1997_reference&quot;,&quot;label&quot;:&quot;Norman_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Norman1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Visser_2003_EEG&quot;,&quot;label&quot;:&quot;Visser_2003 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Visser_2003_EEG.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_1989_13_30_Hz_EEG&quot;,&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 % 13-30 Hz EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Greenblatt_1989_13_30_Hz_EEG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Jahn2018_reference&quot;,&quot;label&quot;:&quot;Jahn_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Jahn2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Norman1997_reference&quot;,&quot;label&quot;:&quot;Norman_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Norman1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Capacio2001_seizure&quot;,&quot;label&quot;:&quot;Capacio_2001_seizure&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Capacio2001_seizure.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Capacio2001_seizure_not&quot;,&quot;label&quot;:&quot;Capacio_2001_seizure_not&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Capacio2001_seizure_not.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Lukey1991_diazepam_mean&quot;,&quot;label&quot;:&quot;Lukey_1991_diazepam_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Lukey1991_diazepam_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Tsiros2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:48 UTC (Needs review), but the paper was screened again on 2026-11-03 21:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; q2 and CLint have no unit.
+> This paper's disposition core is incomplete; q2 and CLint have no unit.
 
-<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Tsiros2019_reference" status="needs_review" stale="true" population="adults" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Tsiros2019_reference" status="needs_review" stale="false" population="adults" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tsiros P, Bois FY, Dokoumetzidis A, Tsiliki G, Sarimveis H. Population pharmacokinetic reanalysis of a Diazepam PBPK model: a comparison of Stan and GNU MCSim. Journal of pharmacokinetics and pharmacodynamics 46(2):173–192 (2019).
@@ -37,12 +37,12 @@ Tsiros P, Bois FY, Dokoumetzidis A, Tsiliki G, Sarimveis H. Population pharmacok
 | s[1] | equation variable | 0.223 |  |
 | s[3] | CLint | 0.410 |  |
 | C[1,2] | Kp | 0.131 |  |
-| low clearance | CL | 0.651 | L/h/kg |
-| volume of distribution | V | 4.7 | L/kg |
+| CL (ml/min/kg) | CL | 0.5 | ml/min/kg |
+| V. (L/kg) | V | 0.13 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Tsiros P, Bois FY, Dokoumetzidis A, Tsiliki G, Sarimveis H. Population pharmacok
 
 **This paper's disposition core is incomplete; q2 and CLint have no unit.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Cavallaro_2026) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — diazepam: Q2 0.0013, CLint 0.41, Kp 0.131, CL 0.651 L/h/kg, V 4.7 L/kg.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Greenblatt_1989) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — diazepam: Q2 0.0013, CLint 0.41, Kp 0.131, CL 0.5 ml/min/kg, V 0.13 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of c[1,2]: this record has 0.131, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
@@ -68,8 +68,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | s[1] | `Q900` · equation variable | 0.223 |  |  |  |  | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col10, Tsiros_2019_table_9:row4:col1, Tsiros_2019_table_9:row4:col2, Tsiros_2019_table_9:row4:col9, Tsiros_2019_table_9:row4:col10 |
 | s[3] | `Q3` · CLint | 0.410 |  |  |  |  | llm (0.6) | tab_2:row7:col1, tab_2:row7:col2, tab_2:row7:col10, Tsiros_2019_table_9:row6:col1, Tsiros_2019_table_9:row6:col2, Tsiros_2019_table_9:row6:col9, Tsiros_2019_table_9:row6:col10 |
 | C[1,2] | `Q410` · Kp | 0.131 |  |  |  |  | llm (0.6) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col10 |
-| low clearance | `Q22` · CL | 0.651 | L/h/kg | 1.266e-05 | m3/s | L/h | review_gapfill (0.7) | Cavallaro_2026:review |
-| volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | m3 | L | review_gapfill (0.7) | Cavallaro_2026:review |
+| CL (ml/min/kg) | `Q22` · CL | 0.5 | ml/min/kg | 5.833e-07 | m3/s | L/h | review_gapfill (0.7) | Greenblatt_1989:review |
+| V. (L/kg) | `Q61` · V | 0.13 | L/kg | 0.0091 | m3 | L | review_gapfill (0.7) | Greenblatt_1989:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -107,8 +107,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - dropped unlinked row (NIL): 'theta_tr[5,1]' — extend the ontology if this is a real PK parameter (source ['Tsiros_2019_table_9:row19:col1', 'Tsiros_2019_table_9:row19:col2', 'Tsiros_2019_table_9:row19:col9', 'Tsiros_2019_table_9:row19:col10'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diazepam
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- gap-filled Q22 (CL) from Cavallaro_2026's review values (primary lacked it)
-- gap-filled Q61 (V) from Cavallaro_2026's review values (primary lacked it)
+- gap-filled Q22 (CL) from Greenblatt_1989's review values (primary lacked it)
+- gap-filled Q61 (V) from Greenblatt_1989's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -153,16 +153,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cavallaro_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cavallaro_2026:review'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [mass] / [time] |  | ['tab_2:row7:col1', 'tab_2:row7:col2', 'tab_2:row7:col10', 'Tsiros_2019_table_9:row6:col1', 'Tsiros_2019_table_9:row6:col2', 'Tsiros_2019_table_9:row6:col9', 'Tsiros_2019_table_9:row6:col10'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Greenblatt_1989:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Greenblatt_1989:review'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] |  | ['tab_2:row7:col1', 'tab_2:row7:col2', 'tab_2:row7:col10', 'Tsiros_2019_table_9:row6:col1', 'Tsiros_2019_table_9:row6:col2', 'Tsiros_2019_table_9:row6:col9', 'Tsiros_2019_table_9:row6:col10'] |
 | C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['tab_2:row3:col2', 'tab_2:row3:col10', 'Tsiros_2019_table_9:row2:col2', 'Tsiros_2019_table_9:row2:col9', 'Tsiros_2019_table_9:row2:col10'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.651 | ['Cavallaro_2026:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.5 | ['Greenblatt_1989:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 45.6 L/h | ['Cavallaro_2026:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 329 L | ['Cavallaro_2026:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.1 L/h | ['Greenblatt_1989:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 9.1 L | ['Greenblatt_1989:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -196,4 +195,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiazepam%5D%20Diazepam_Tsiros2019_reference&body=Drug%3A%20diazepam%0ARecord%3A%20Diazepam_Tsiros2019_reference%0APaper%3A%20Tsiros_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diazepam/Diazepam_Tsiros2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 21:24 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:21 UTC</sub>

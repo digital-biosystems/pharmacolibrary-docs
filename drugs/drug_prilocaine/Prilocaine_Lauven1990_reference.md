@@ -15,7 +15,7 @@ Lauven PM, Witow R, Lussi C, Lühr HG. [The blood level and a pharmacokinetic mo
 
 ## Population and dosing
 
-**Population:** adults undergoing hand surgery · condition hand surgery · age group adult · n = # integer or 'unknown', e.g. 150.
+**Population:** adults undergoing hand surgery · condition hand surgery · age group adult.
 
 ## Model
 

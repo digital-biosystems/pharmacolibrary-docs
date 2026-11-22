@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Guaifenesin&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/&quot;},{&quot;label&quot;:&quot;Matthews_1997 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guaifenesin_Abdelgawad2022_reference&quot;,&quot;label&quot;:&quot;Abdelgawad_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Abdelgawad2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guaifenesin_Knych2016_reference&quot;,&quot;label&quot;:&quot;Knych_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Knych2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guaifenesin_Thompson2016_reference&quot;,&quot;label&quot;:&quot;Thompson_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Thompson2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guaifenesin_Abdelgawad2022_reference&quot;,&quot;label&quot;:&quot;Abdelgawad_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Abdelgawad2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guaifenesin_Knych2016_reference&quot;,&quot;label&quot;:&quot;Knych_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Knych2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guaifenesin_Thompson2016_reference&quot;,&quot;label&quot;:&quot;Thompson_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Thompson2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The guaifenesin clearance of 546 mL/h.kg carries a mass term in its unit, conflicting with the expected volume over time dimension for this structural parameter.
 
 <div class="pk-model-meta" hidden drug="Guaifenesin" model-id="Guaifenesin_Matthews1997_reference" status="rejected" stale="false" population="Five donkeys and three horses" measured-compound="Guaifenesin" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,13 @@ Matthews NS, Peck KE, Mealey KL, Taylor TS, Ray AC. Pharmacokinetics and cardiop
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The guaifenesin clearance of 546 mL/h.kg carries a mass term in its unit, conflicting with the expected volume over time dimension for this structural parameter.**
+
+The model builder extracted a clearance value of 546 mL/h.kg for guaifenesin, a unit containing a per-kilogram mass term. This conflicts with the structural definition of clearance, which requires dimensions of volume per time without normalization by weight. Additionally, the model was constructed using only abstract summary statistics rather than a fitted population pharmacokinetic model. Extracted — guaifenesin: CL 546 mL/h.kg, V 678 mL/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

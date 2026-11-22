@@ -4,11 +4,11 @@
 
 # mexiletine — `Mexiletine_Vozeh1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:10 UTC (Rejected), but the paper was screened again on 2026-10-08 19:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution parameter for mexiletine used a non-standard unit, causing a dimension mismatch that led to rejection.
+> The normalized volume of distribution for mexiletine was rejected because its unit (1/kg) conflicts with the required cubic dimension.
 
-<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Vozeh1982_reference" status="rejected" stale="true" population="patients treated for arrhythmias" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Vozeh1982_reference" status="rejected" stale="false" population="patients treated for arrhythmias" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Vozeh S, Katz G, Steiner V, Follath F. Population pharmacokinetic parameters in patients treated with oral mexiletine. European journal of clinical pharmacology 23(5):445–451 (1982).
@@ -16,7 +16,7 @@ Vozeh S, Katz G, Steiner V, Follath F. Population pharmacokinetic parameters in 
 
 ## Population and dosing
 
-**Population:** patients treated for arrhythmias · condition arrhythmias · age group elderly · n = &gt;=58.
+**Population:** patients treated for arrhythmias · condition arrhythmias · age group elderly.
 
 **Dosing:** 400, 600 mg, oral, single.
 
@@ -38,7 +38,7 @@ Vozeh S, Katz G, Steiner V, Follath F. Population pharmacokinetic parameters in 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Vozeh S, Katz G, Steiner V, Follath F. Population pharmacokinetic parameters in 
 
 ### Reviewer guidance
 
-**The volume of distribution parameter for mexiletine used a non-standard unit, causing a dimension mismatch that led to rejection.**
+**The normalized volume of distribution for mexiletine was rejected because its unit (1/kg) conflicts with the required cubic dimension.**
 
-The record lists a volume of distribution normalized to body size with a value of 5.3 and a unit of 1/kg. This unit could not be interpreted or converted to standard SI units, leaving the parameter without a valid value. Consequently, a dimension mismatch check on this structural parameter failed, preventing the model from being accepted. Extracted — mexiletine: Vnorm 5.3 1/kg, kabs 3.1 h-1, V 74 L.
+The record lists Vnorm with a value of 5.3 and a unit of 1/kg, but the model structure requires a volumetric parameter with cubic dimensions. This dimensional mismatch prevented the unit from being converted to SI, causing the parameter to fail validation. The second reader also disagreed on the identity of the dose compound and primary analyte, both of which were identified as mexiletine in the original record. Extracted — mexiletine: Vnorm 5.3 1/kg, kabs 3.1 h-1, V 74 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mexiletine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mexiletine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -103,17 +103,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[c1 [1/h/kg]]` |  | 0.38 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[to [h]]` |  | 0.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd [1/kg]].parameter_id` | Q352 | Q61 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | mexiletine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | mexiletine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[c1 [1/h/kg]]` |  | 0.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[to [h]]` |  | 0.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd [1/kg]].parameter_id` | Q352 | Q61 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | mexiletine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | mexiletine | unknown | mismatch |
 
 </details>
 

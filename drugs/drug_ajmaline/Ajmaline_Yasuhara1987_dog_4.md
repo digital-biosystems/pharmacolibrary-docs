@@ -5,11 +5,11 @@
 
 # ajmaline — `Ajmaline_Yasuhara1987_dog_4`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 15:36 UTC (Rejected), but the paper was screened again on 2026-10-08 15:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. C5 dimension mismatch on a structural parameter.
+> Total clearance for ajmaline was rejected because its specific mass-normalized unit was unrecognized, preventing conversion to standard SI units.
 
-<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_4" status="rejected" stale="true" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_4" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajmaline disposition and pharmacologic response in beagle dogs. Journal of pharmacokinetics and biopharmaceutics 15(1):39–55 (1987).
@@ -17,7 +17,7 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ## Population and dosing
 
-**Population:** healthy beagle dogs · condition healthy · age group adult · n = &gt;=4.
+**Population:** healthy beagle dogs · condition healthy · age group adult.
 
 **Dosing:** 45 mg, iv, single.
 
@@ -43,7 +43,7 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ### Reviewer guidance
 
-**C5 dimension mismatch on a structural parameter.**
+**Total clearance for ajmaline was rejected because its specific mass-normalized unit was unrecognized, preventing conversion to standard SI units.**
 
-A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — ajmaline: V 15 L/kg, λ1 0.21 min-1, k21 0.304 min-1, kel 0.0213 min-1, CL 3 ml/min/kg.
+The record provides a total clearance of 3.00 ml/min/kg for ajmaline. This unit was not recognized by the system, so it remained unconverted. Consequently, the model could not establish a valid SI value for this structural parameter, leading to rejection. Extracted — ajmaline: V 15 L/kg, λ1 0.21 min-1, k21 0.304 min-1, kel 0.0213 min-1, CL 3 ml/min/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

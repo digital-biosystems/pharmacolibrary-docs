@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01C&quot;,&quot;href&quot;:&quot;atc/H01C.md&quot;},{&quot;label&quot;:&quot;octreotide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Octreotide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_octreotide/Octreotide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Octreotide_Choe2017_reference&quot;,&quot;label&quot;:&quot;Choe_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_octreotide/Octreotide_Choe2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Octreotide_Choe2017_reference&quot;,&quot;label&quot;:&quot;Choe_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_octreotide/Octreotide_Choe2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Octreotide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_octreotide/Octreotide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # octreotide
 
@@ -22,26 +22,14 @@ Octreotide is a somatostatin analogue used to treat acromegaly, carcinoid syndro
 |---|---|---|---|---|---|---|
 | octreotide | parent | 1019.25 | C49H66N10O10S2 | PubChem | [448601](https://pubchem.ncbi.nlm.nih.gov/compound/448601) | Ding_2004, Ma_2005, Zhou_2000 |
 
-## Start here
-
-> **Min_2025_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> review reference. [Run it in the simulator](drugs/drug_octreotide/Octreotide_Min2025_reference.md?tab=Simulation) · [record](drugs/drug_octreotide/Octreotide_Min2025_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Choe_2017 · CL/F</text><circle cx="434.6" cy="30.0" r="4" fill="#ef6c00"><title>Choe_2017 · CL/F: 5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ma_2005 · CL/F</text><circle cx="506.1" cy="46.0" r="4" fill="#ef6c00"><title>Ma_2005 · CL/F: 8 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Min_2025 · CL/F</text><circle cx="525.7" cy="62.0" r="4" fill="#78909c"><title>Min_2025 · CL/F: 9.1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Min_2025 · V/F</text><circle cx="348.1" cy="30.0" r="4" fill="#78909c"><title>Min_2025 · V/F: 28.3 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Choe_2017 · V/F</text><circle cx="540.0" cy="46.0" r="4" fill="#ef6c00"><title>Choe_2017 · V/F: 100 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Ma_2005 · V/F</text><circle cx="540.0" cy="62.0" r="4" fill="#ef6c00"><title>Ma_2005 · V/F: 100 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Min_2025_reference](drugs/drug_octreotide/Octreotide_Min2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Choe_2017_reference](drugs/drug_octreotide/Octreotide_Choe2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Choe S et al., Parameter estimation for sigmoid E&lt;sub&gt;…, Translational and clinical… (2017) | [10.12793/tcp.2017.25.2.74](https://doi.org/10.12793/tcp.2017.25.2.74) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ding_2004_reference](drugs/drug_octreotide/Octreotide_Ding2004_reference.md) | — | 1-compartment (no model) | 6 | Ding JS et al., [Determination of octreotide in human p…, Yao xue xue bao = Acta phar… (2004) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ding_2004_reference](drugs/drug_octreotide/Octreotide_Ding2004_reference.md) | — | 1-compartment (no model) | 6 | Ding JS et al., [Determination of octreotide in human p…, Yao xue xue bao = Acta phar… (2004) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Ma_2005_reference](drugs/drug_octreotide/Octreotide_Ma2005_reference.md) | — | 1-compartment (no model) | 3 | Ma P et al., Pharmacokinetic-pharmacodynamic compari…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2005.04.003](https://doi.org/10.1016/j.clpt.2005.04.003) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Choe_2017_reference](drugs/drug_octreotide/Octreotide_Choe2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Choe S et al., Parameter estimation for sigmoid E&lt;sub&gt;…, Translational and clinical… (2017) | [10.12793/tcp.2017.25.2.74](https://doi.org/10.12793/tcp.2017.25.2.74) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Min_2025_reference](drugs/drug_octreotide/Octreotide_Min2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Zhou_2000_reference](drugs/drug_octreotide/Octreotide_Zhou2000_reference.md) | — | 1-compartment (no model) | 2 | Zhou H et al., Population PK and PK/PD modelling of mi…, British journal of clinical… (2000) | [10.1046/j.1365-2125.2000.00297.x](https://doi.org/10.1046/j.1365-2125.2000.00297.x) |
 
 ## Pharmacodynamics (PD)
@@ -50,26 +38,6 @@ Octreotide is a somatostatin analogue used to treat acromegaly, carcinoid syndro
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ma_2005_GH](drugs/drug_octreotide/pd_Ma_2005_GH.md) | growth hormone ← octreotide · direct Emax (saturable) effect | — | Ma P et al., Pharmacokinetic-pharmacodynamic compari…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2005.04.003](https://doi.org/10.1016/j.clpt.2005.04.003) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhou_2000_IGF_1](drugs/drug_octreotide/pd_Zhou_2000_IGF_1.md) | serum IGF-1 ← octreotide · direct Emax (saturable) effect | — | Zhou H et al., Population PK and PK/PD modelling of mi…, British journal of clinical… (2000) | [10.1046/j.1365-2125.2000.00297.x](https://doi.org/10.1046/j.1365-2125.2000.00297.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=octreotide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` substrate, `ABCC2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `ABCC2` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCC2` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MPO (inhibitor), SSTR2 (binder), Somatostatin receptor (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -83,13 +51,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:49 | 18:48 | 4/1/0 | 2/0/0 | 0/0/0 | 712,235/24,480 | einfracz / qwen3.8-27b | 27 | 4/22 | 27/0 | 0 |
+| 2026-10-07 09:49 | 18:48 | 2/3/0 | 2/0/0 | 0/0/0 | 712,235/24,480 | einfracz / qwen3.8-27b | 27 | 4/22 | 27/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 319 matched, 119 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 1  ·  needs review 3  ·  rejected 1  ·  stale 2
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

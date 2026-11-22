@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir alafenamide&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/&quot;},{&quot;label&quot;:&quot;Kawuma_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tenofovir-diphosphate is an unlinked orphan metabolite, and the apparent clearance parameter is actually a reported creatinine clearance value of 120 mL/min.
+> The record was rejected because tenofovir-diphosphate is a metabolism target but is absent from the modeled metabolite list; tenofovir CLm/F is reported as 120 mL/min.
 
 <div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Kawuma2023_reference" status="rejected" stale="false" population="South African adults living with HIV" measured-compound="tenofovir" parameterization="apparent" topology="general_linear"></div>
 
@@ -49,13 +48,13 @@ Kawuma AN, Wasmann RE, Sinxadi P, Sokhela SM, Chandiwana N, Venter WDF et al. Po
 
 ### Reviewer guidance
 
-**Tenofovir-diphosphate is an unlinked orphan metabolite, and the apparent clearance parameter is actually a reported creatinine clearance value of 120 mL/min.**
+**The record was rejected because tenofovir-diphosphate is a metabolism target but is absent from the modeled metabolite list; tenofovir CLm/F is reported as 120 mL/min.**
 
-The model structure includes tenofovir-diphosphate as a metabolite, but it lacks a defined formation path from the parent drug, leaving it orphaned. The parameter labeled as apparent clearance of tenofovir is actually a reported creatinine clearance value of 120 mL/min. A second reader disagreed on the model links, noting that the extraction incorrectly identified links for tenofovir disoproxil fumarate and tenofovir-diphosphate. Extracted — tenofovir: CLm/F 120 mL/min.
+The listed metabolite is tenofovir with n_cmt 0, while a metabolism link points from tenofovir to tenofovir-diphosphate, which has no metabolite entry. CLm/F for tenofovir means apparent metabolite clearance divided by the fraction of parent converted to it; its reported value is 120 mL/min. Extracted — tenofovir: CLm/F 120 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tenofovir alafenamide, the second reading tenofovir alafenamide (TAF) / tenofovir disoproxil fumarate (TDF); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

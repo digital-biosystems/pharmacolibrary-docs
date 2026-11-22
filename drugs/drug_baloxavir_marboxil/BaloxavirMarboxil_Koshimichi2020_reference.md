@@ -5,11 +5,11 @@
 
 # baloxavir marboxil — `BaloxavirMarboxil_Koshimichi2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:07 UTC (Rejected), but the paper was screened again on 2026-10-07 15:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for baloxavir acid was rejected because its unit, liters/h, is incompatible with the expected dimension of the parameter.
+> Q/F units were recorded as liters/h, conflicting with the required 1/h dimension for intercompartmental clearance.
 
-<div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="true" population="influenza patients including those at high risk of complications" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="false" population="influenza patients including those at high risk of complications" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Koshimichi H, Retout S, Cosson V, Duval V, De Buck S, Tsuda Y et al. Population Pharmacokinetics and Exposure-Response Relationships of Baloxavir Marboxil in Influenza Patients at High Risk of Complications. Antimicrobial agents and chemotherapy 64(7) (2020).
@@ -51,7 +51,7 @@ Koshimichi H, Retout S, Cosson V, Duval V, De Buck S, Tsuda Y et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,9 +61,9 @@ Koshimichi H, Retout S, Cosson V, Duval V, De Buck S, Tsuda Y et al. Population 
 
 ### Reviewer guidance
 
-**The absorption rate constant for baloxavir acid was rejected because its unit, liters/h, is incompatible with the expected dimension of the parameter.**
+**Q/F units were recorded as liters/h, conflicting with the required 1/h dimension for intercompartmental clearance.**
 
-The absorption rate constant for baloxavir acid is assigned a value of 0.905 with units of liters/h, whereas this pharmacokinetic parameter requires units of 1/h. This dimensional mismatch renders the structural model parameter invalid. Additionally, a discrepancy exists regarding covariate parameter assignments, where a value of 0.743 was attributed to a weight effect on volume rather than a distinct covariate, and the number of linear fractional covariate forms for the central volume was contested between readers. Extracted — baloxavir acid: CLm/F 10.4 liters/h, V1/F 528 liters, Q/F 10.3 liters/h, V2/F 130 liters, Q2/F 1.25 liters/h, V3/F 131 liters, kabs 0.905 liters/h, tlag 0.323 h.
+The recorded unit for the intercompartmental clearance (Q/F) is liters/h, which has dimensions of volume over time. This conflicts with the parameter's required dimension of reciprocal time (1/h). Additionally, the second reader disagrees on whether the weight covariate value of 0.743 applies to the intercompartmental or central volume parameters. Extracted — baloxavir acid: CLm/F 10.4 liters/h, V1/F 528 liters, Q/F 10.3 liters/h, V2/F 130 liters, Q2/F 1.25 liters/h, V3/F 131 liters, kabs 0.905 liters/h, tlag 0.323 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of theta_q76_wt: this record has none, the second reading 0.743; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

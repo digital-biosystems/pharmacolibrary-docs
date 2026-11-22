@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;midecamycin&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/&quot;},{&quot;label&quot;:&quot;DAgate_2021 \u00b7 model_building&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midecamycin_DAgate2021_model_building&quot;,&quot;label&quot;:&quot;DAgate_2021_model_building&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midecamycin_DAgate2021_secondary_external_validation&quot;,&quot;label&quot;:&quot;DAgate_2021_secondary_external_validation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midecamycin_DAgate2021_model_building&quot;,&quot;label&quot;:&quot;DAgate_2021_model_building&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midecamycin_DAgate2021_secondary_external_validation&quot;,&quot;label&quot;:&quot;DAgate_2021_secondary_external_validation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # midecamycin — `Midecamycin_DAgate2021_model_building`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="midecamycin" model-id="Midecamycin_DAgate2021_model_building" status="not_modelled" stale="false" population="unknown" measured-compound="unknown" parameterization="mechanistic" topology="1C"></div>
+> The record was rejected because the paper models a different drug, and the model's simulated peak concentration (1.09) far exceeds the paper's reported value (0.0144).
+
+<div class="pk-model-meta" hidden drug="midecamycin" model-id="Midecamycin_DAgate2021_model_building" status="rejected" stale="false" population="unknown" measured-compound="unknown" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 D'Agate S, Musuamba FT, Jacqz-Aigrain E, Della Pasqua O. Simplified Dosing Regimens for Gentamicin in Neonatal Sepsis. Frontiers in pharmacology 12:624662 (2021).
@@ -27,7 +29,7 @@ D'Agate S, Musuamba FT, Jacqz-Aigrain E, Della Pasqua O. Simplified Dosing Regim
 <figure class="pk-models-diagram"><img src="drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building/Midecamycin_DAgate2021_model_building.svg" alt="Midecamycin_DAgate2021_model_building diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -36,7 +38,7 @@ D'Agate S, Musuamba FT, Jacqz-Aigrain E, Della Pasqua O. Simplified Dosing Regim
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +48,13 @@ D'Agate S, Musuamba FT, Jacqz-Aigrain E, Della Pasqua O. Simplified Dosing Regim
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The record was rejected because the paper models a different drug, and the model's simulated peak concentration (1.09) far exceeds the paper's reported value (0.0144).**
 
-None of the extracted parameters is midecamycin's own; they describe unknown.
+The source paper's subject is not midecamycin, as its title and abstract do not name the drug. The model's clearance (0.089 L/h) and volume of distribution (0.908 L) produce a peak concentration ratio of 75.8593 compared to the paper's observation. Extracted — unknown: CL 0.089 L/h, V 0.908 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -113,14 +115,17 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | note |
-|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  | no covariate effects in record |
-| T3_param_coverage |  | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations |  | pass |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 14.4 | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 0.66 | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | fail | midecamycin (or metabolite) | paper about another drug |  | paper subject is not midecamycin: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=unknown) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.0144 | 1.092 | 75.86 | mg/L→SI vs simulated kg/m3 |
+| T1_cmin_ss | reference | skipped | 0.66 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -132,58 +137,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building/Midecamycin_DAgate2021_model_building_modelica.zip" download>Midecamycin_DAgate2021_model_building_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building/Midecamycin_DAgate2021_model_building_fmi.zip" download>Midecamycin_DAgate2021_model_building_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building/Midecamycin_DAgate2021_model_building_matlab.zip" download>Midecamycin_DAgate2021_model_building_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building/Midecamycin_DAgate2021_model_building_matlab_simbio.zip" download>Midecamycin_DAgate2021_model_building_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building/Midecamycin_DAgate2021_model_building_sbml.zip" download>Midecamycin_DAgate2021_model_building_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building/Midecamycin_DAgate2021_model_building_cellml.zip" download>Midecamycin_DAgate2021_model_building_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.001 | kg |
-| input | model | `Cl` | 2.472e-08 | m3/s |
-| input | model | `VdPerKg` | 1.297e-05 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): D'Agate S, Musuamba FT, Jacqz-Aigrain E, Della Pasqua O. Simplified Dosing Regimens for Gentamicin in Neonatal Sepsis. Frontiers in pharmacology 12:624662 (2021). [doi:10.3389/fphar.2021.624662](https://doi.org/10.3389/fphar.2021.624662)
-
-**This record:** Pharmacolibrary, model `Midecamycin_DAgate2021_model_building`. <https://pharmacolibrary.github.io/#/drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building>
-
-```bibtex
-@misc{pharmacolibrary_MidecamycinDAgate2021modelbuilding,
-  title  = {{Pharmacolibrary model Midecamycin_DAgate2021_model_building}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building},
-  note   = {Parameters from doi:10.3389/fphar.2021.624662},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

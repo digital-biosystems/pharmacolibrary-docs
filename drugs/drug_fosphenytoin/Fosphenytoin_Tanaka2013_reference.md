@@ -16,7 +16,7 @@ Tanaka J, Kasai H, Shimizu K, Shimasaki S, Kumagai Y. Population pharmacokinetic
 
 ## Population and dosing
 
-**Population:** pediatric patients, adult patients, and healthy volunteers · condition healthy, neurosurgical, and epileptic · age group mixed · n = &gt;-19.
+**Population:** pediatric patients, adult patients, and healthy volunteers · condition healthy, neurosurgical, and epileptic · age group mixed.
 
 **Dosing:** 15, 18, 22.5, 375, 563, 750 mg, iv, single.
 

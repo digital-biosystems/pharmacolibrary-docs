@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The isavuconazole clearance parameter was left without a value, causing the two-compartment model to be quarantined.
+> The record was quarantined because no explicit value was extracted for isavuconazole's total clearance, forcing the use of a placeholder instead of a fitted estimate.
 
 <div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Chen2023_reference" status="model_quarantined" stale="false" population="adults (healthy volunteers and patients with invasive fungal infections)" measured-compound="isavuconazole" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,9 +50,9 @@ Chen N, Wang X, Li Y, Yang P, Huang M, Lu X. Population Pharmacokinetics of Isav
 
 ### Reviewer guidance
 
-**The isavuconazole clearance parameter was left without a value, causing the two-compartment model to be quarantined.**
+**The record was quarantined because no explicit value was extracted for isavuconazole's total clearance, forcing the use of a placeholder instead of a fitted estimate.**
 
-The record lists total clearance as 1.99 L/h but lacks the specific clearance estimate for the isavuconazole molecule. Consequently, the model was held back because a placeholder value would have been used instead of an explicit estimate. The second reader also noted a discrepancy for the peripheral volume of distribution, finding 341 L compared to the recorded 263.0 L. Extracted — isavuconazole: V1 50.3 L, Q 33.7 L/h, V2 263 L.
+Although the facts list a total clearance of 1.99 L/h, the clearance parameter was treated as having no valid extraction, so a library placeholder stood in. A second reader disagreed on several values, including the central volume of 50.3 L and the peripheral volume of 263.0 L, while also identifying a steady-state volume of distribution of 288.78 L missing from the primary record. The cross-check agreement was low at 0.455, with zero readers agreeing on the dispute. Extracted — isavuconazole: V1 50.3 L, Q 33.7 L/h, V2 263 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -163,14 +163,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | 1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmin_ss | reference | skipped | 3.5 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
+| T1_cmin_ss | reference | skipped | 3.5 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

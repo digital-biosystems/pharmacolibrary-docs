@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:daunorubicinol: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span>
 
-> Daunorubicin's clearance parameter lacks an explicit value, forcing the model to use library placeholders and resulting in quarantine.
+> Daunorubicin clearance was missing, and daunorubicinol volume, clearance, and formation rate lacked extracted values.
 
 <div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Drevin2022_reference" status="model_quarantined" stale="false" population="adults with acute myeloid leukaemia" measured-compound="daunorubicin and daunorubicinol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,7 +54,7 @@ Drevin G, Briet M, Bazzoli C, Gyan E, Schmidt A, Dombret H et al. Daunorubicin a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:daunorubicinol: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.045), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:daunorubicinol: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.045), gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,9 +64,9 @@ Drevin G, Briet M, Bazzoli C, Gyan E, Schmidt A, Dombret H et al. Daunorubicin a
 
 ### Reviewer guidance
 
-**Daunorubicin's clearance parameter lacks an explicit value, forcing the model to use library placeholders and resulting in quarantine.**
+**Daunorubicin clearance was missing, and daunorubicinol volume, clearance, and formation rate lacked extracted values.**
 
-The record lists parameters for the parent drug but omits the specific clearance estimate, which the model builder substituted with defaults. Additionally, the model builder defined daunorubicinol as a metabolite with specific volumes and clearances, yet the system recorded these as zero because they were not properly linked or emitted. Consequently, the metabolite's pharmacokinetic profile was not constructed as intended, leaving the model structurally incomplete. Extracted — daunorubicin and daunorubicinol: V1 21.1 L; daunorubicin: V2 1.45e+03 L, V3 323 L, Q 69.4 L/h, Q2 125 L/h; daunorubicinol: Q 591 L/h, V2 536 L, kfm 3.73 1/h, CL 41.3 L/h.
+The absence of an estimated value for daunorubicin's total clearance meant a placeholder value would have been used instead of a fitted parameter. Although the paper provided estimates for daunorubicinol's volume, clearance, and formation rate, these specific fields were not captured in the record. Consequently, the metabolite compartment would have been built without these essential parameters. Extracted — daunorubicin and daunorubicinol: V1 21.1 L; daunorubicin: V2 1.45e+03 L, V3 323 L, Q 69.4 L/h, Q2 125 L/h; daunorubicinol: Q 591 L/h, V2 536 L, kfm 3.73 1/h, CL 41.3 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has daunorubicin and daunorubicinol, the second reading daunorubicin; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -116,7 +116,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `qwen3.8-27b` | not confirmed | 0.045 (1/22 fields) | 21 |
-| `gpt-oss:120b` | confirmed | 1.0 (12/12 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (12/12 fields) | none |
 
 <details><summary>21 field discrepancies</summary>
 
@@ -177,18 +177,19 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_metabolite_built[daunorubicinol] |  | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} | daunorubicinol: V, CL, formation not set — the metabolite's compartment would be the template default |
-| T3_metabolite_output[daunorubicinol] |  | skipped |  |  | the simulation recorded no per-molecule outputs |
-| T3_molar_mass[daunorubicinol] |  | fail |  | {'MW': 0, 'MW_m1': 0} | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
-| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2', 'V2'] |
-| T3_rate_constant_conversion |  | pass | none (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_shared_parameters |  | pass | 7 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | D01: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_metabolite_built[daunorubicinol] |  | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} |  | daunorubicinol: V, CL, formation not set — the metabolite's compartment would be the template default |
+| T3_metabolite_output[daunorubicinol] |  | skipped |  |  |  | the simulation recorded no per-molecule outputs |
+| T3_molar_mass[daunorubicinol] |  | fail |  | {'MW': 0, 'MW_m1': 0} |  | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2', 'V2'] |
+| T3_rate_constant_conversion |  | pass | none (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_shared_parameters |  | pass | 7 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.045, 1 of 2 reader(s) agree | 0.045 | cross-check disputed by a second reader: verdict disputed, agreement 0.045, 1 of 2 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -206,30 +207,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_matlab.zip" download>Daunorubicin_Drevin2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_matlab_simbio.zip" download>Daunorubicin_Drevin2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_sbml.zip" download>Daunorubicin_Drevin2022_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_cellml.zip" download>Daunorubicin_Drevin2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Drevin G, Briet M, Bazzoli C, Gyan E, Schmidt A, Dombret H et al. Daunorubicin and Its Active Metabolite Pharmacokinetic Profiles in Acute Myeloid Leukaemia Patients: A Pharmacokinetic Ancillary Study of the BIG-1 Trial. Pharmaceutics 14(4) (2022). [doi:10.3390/pharmaceutics14040792](https://doi.org/10.3390/pharmaceutics14040792)
-
-**This record:** Pharmacolibrary, model `Daunorubicin_Drevin2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference>
-
-```bibtex
-@misc{pharmacolibrary_DaunorubicinDrevin2022reference,
-  title  = {{Pharmacolibrary model Daunorubicin_Drevin2022_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference},
-  note   = {Parameters from doi:10.3390/pharmaceutics14040792},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

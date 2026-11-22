@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;g-strophanthin&quot;,&quot;href&quot;:&quot;drugs/drug_g_strophanthin/&quot;},{&quot;label&quot;:&quot;Citterio_2021 \u00b7 PGx HSD3B1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# HSD3B1 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.75), gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.01).">human + animal</span>
+# HSD3B1 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.75), gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.01).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +38,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `glm-5.3-flash` | not confirmed | 0.75 (3/4 fields) | 1 |
-| `gpt-oss:120b` | no answer | – | – (extracted nothing for this PGx record) |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PGx record) |
 
 <details><summary>1 field discrepancy</summary>
 

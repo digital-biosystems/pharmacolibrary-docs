@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # oxycodone
 
@@ -25,13 +25,13 @@ Oxycodone is a semi-synthetic opioid analgesic prescribed for moderate to severe
 
 ## Start here
 
-> **Shi_2026_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md?tab=Simulation) · [record](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md)
+> **Morse_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> preterm neonates to adults. [Run it in the simulator](drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md?tab=Simulation) · [record](drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">100</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shi_2026 · CL</text><circle cx="257.7" cy="30.0" r="4" fill="#78909c"><title>Shi_2026 · CL: 38.03 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Morse_2021 · CL ·/kg</text><circle cx="485.4" cy="46.0" r="4" fill="#ef6c00"><title>Morse_2021 · CL ·/kg: 3402 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shi_2026 · V</text><circle cx="259.9" cy="30.0" r="4" fill="#78909c"><title>Shi_2026 · V: 250.8 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Morse_2021 · V1 ·/kg</text><circle cx="511.5" cy="46.0" r="4" fill="#ef6c00"><title>Morse_2021 · V1 ·/kg: 6874 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">100</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shi_2026 · CL</text><circle cx="257.7" cy="30.0" r="4" fill="#ef6c00"><title>Shi_2026 · CL: 38.03 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Morse_2021 · CL ·/kg</text><circle cx="485.4" cy="46.0" r="4" fill="#ef6c00"><title>Morse_2021 · CL ·/kg: 3402 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shi_2026 · V</text><circle cx="259.9" cy="30.0" r="4" fill="#ef6c00"><title>Shi_2026 · V: 250.8 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Morse_2021 · V1 ·/kg</text><circle cx="511.5" cy="46.0" r="4" fill="#ef6c00"><title>Morse_2021 · V1 ·/kg: 6874 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -39,12 +39,12 @@ Oxycodone is a semi-synthetic opioid analgesic prescribed for moderate to severe
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Shi_2026_reference](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub> | [Morse_2021_reference](drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 8 | Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthesia (2021) | [10.1111/pan.14283](https://doi.org/10.1111/pan.14283) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Shi_2026_reference](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chaw_2023_reference](drugs/drug_oxycodone/Oxycodone_Chaw2023_reference.md) | — | 1-compartment (no model) | 0 | Chaw SH et al., Population Pharmacokinetics and Dosing…, European journal of drug me… (2023) | [10.1007/s13318-022-00795-4](https://doi.org/10.1007/s13318-022-00795-4) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ladebo_2020_reference](drugs/drug_oxycodone/Oxycodone_Ladebo2020_reference.md) | — | 1-compartment (no model) | 6 | Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical pharmacolo… (2020) | [10.1111/bcpt.13330](https://doi.org/10.1111/bcpt.13330) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Saari_2012_covariate_model](drugs/drug_oxycodone/Oxycodone_Saari2012_covariate_model.md) | — | 1-compartment (no model) | 7 | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ population_estimates](drugs/drug_oxycodone/Oxycodone_Saari2012_population_estimates.md) | — | 1-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ladebo_2020_reference](drugs/drug_oxycodone/Oxycodone_Ladebo2020_reference.md) | — | 1-compartment (no model) | 6 | Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical pharmacolo… (2020) | [10.1111/bcpt.13330](https://doi.org/10.1111/bcpt.13330) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Saari_2012_covariate_model](drugs/drug_oxycodone/Oxycodone_Saari2012_covariate_model.md) | — | 1-compartment (no model) | 7 | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ population_estimates](drugs/drug_oxycodone/Oxycodone_Saari2012_population_estimates.md) | — | 1-compartment (no model) | 7 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -54,21 +54,6 @@ Oxycodone is a semi-synthetic opioid analgesic prescribed for moderate to severe
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ing_2012_somatic_pain](drugs/drug_oxycodone/pd_Ing_2012_somatic_pain.md) | somatic pain ← oxycodone · delayed effect through an effect compartment | — | Ing Lorenzini K et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2012) | [10.1111/j.1742-7843.2011.00814.x](https://doi.org/10.1111/j.1742-7843.2011.00814.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ing_2012_visceral_pain](drugs/drug_oxycodone/pd_Ing_2012_visceral_pain.md) | visceral pain ← oxycodone · direct linear effect | — | Ing Lorenzini K et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2012) | [10.1111/j.1742-7843.2011.00814.x](https://doi.org/10.1111/j.1742-7843.2011.00814.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Nallani_2022_drug_liking](drugs/drug_oxycodone/pd_Nallani_2022_drug_liking.md) | drug liking ← oxycodone · direct sigmoid Emax (Hill) effect | — | Nallani SC et al., Concentration-Response Model of Immedia…, Pain medicine (Malden, Mass… (2022) | [10.1093/pm/pnab339](https://doi.org/10.1093/pm/pnab339) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxycodone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CACNA1B (inhibitor), OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -82,13 +67,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:58 | 2:54 | 2/4/0 | 2/0/0 | 0/0/0 | 166,181/9,083 | einfracz / qwen3.8-27b | 17 | 5/2 | 6/1 | 0 |
+| 2026-10-07 14:58 | 2:54 | 2/4/0 | 4/0/0 | 0/0/0 | 166,181/9,083 | einfracz / qwen3.8-27b | 17 | 5/2 | 6/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 95 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 6  ·  extracted 1  ·  needs review 1  ·  rejected 4  ·  stale 3
+- **records:** 6  ·  extracted 0  ·  needs review 2  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

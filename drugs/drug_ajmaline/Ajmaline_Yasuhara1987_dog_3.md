@@ -5,11 +5,11 @@
 
 # ajmaline — `Ajmaline_Yasuhara1987_dog_3`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 15:35 UTC (Rejected), but the paper was screened again on 2026-10-08 15:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit L/kg for ajmaline's volume of distribution could not be converted to standard SI units.
+> The elimination rate constant was recorded in milliliters per minute per kilogram instead of reciprocal minutes.
 
-<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_3" status="rejected" stale="true" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_3" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajmaline disposition and pharmacologic response in beagle dogs. Journal of pharmacokinetics and biopharmaceutics 15(1):39–55 (1987).
@@ -17,7 +17,7 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ## Population and dosing
 
-**Population:** healthy beagle dogs · condition healthy · age group adult · n = &gt;=4.
+**Population:** healthy beagle dogs · condition healthy · age group adult.
 
 **Dosing:** 45 mg, iv, single.
 
@@ -43,7 +43,7 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ### Reviewer guidance
 
-**The record was rejected because the unit L/kg for ajmaline's volume of distribution could not be converted to standard SI units.**
+**The elimination rate constant was recorded in milliliters per minute per kilogram instead of reciprocal minutes.**
 
-The volume of distribution is recorded as 14.0 L/kg. This unit was not recognized as convertible to standard SI units, causing a dimension mismatch for this structural parameter. Consequently, the model lacked a valid SI value for this parameter and was refused. Extracted — ajmaline: V 14 L/kg, λ1 0.183 min-1, k21 0.444 min-1, kel 0.0389 min-1, CL 2.09 ml/min/kg.
+The record lists the elimination rate constant with a value of 0.0389 and units of ml/min/kg. This unit represents a mass-normalized volumetric flow rate, conflicting with the reciprocal time dimension required for a first-order rate constant. Extracted — ajmaline: V 14 L/kg, λ1 0.183 min-1, k21 0.444 min-1, kel 0.0389 min-1, CL 2.09 ml/min/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 

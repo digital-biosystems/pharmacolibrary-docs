@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;clofarabine&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/&quot;},{&quot;label&quot;:&quot;Bonate_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clofarabine — `Clofarabine_Bonate2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Vss (92.9 L) was substituted for the central volume in a one-compartment clofarabine model, which fails to describe the fast distribution phase.
-
-<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2011_reference" status="needs_review" stale="false" population="adult and pediatric patients with cancer" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2011_reference" status="simulated" stale="false" population="adult and pediatric patients with cancer" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bonate PL, Cunningham CC, Gaynon P, Jeha S, Kadota R, Lam GN et al. Population pharmacokinetics of clofarabine and its metabolite 6-ketoclofarabine in adult and pediatric patients with cancer. Cancer chemotherapy and pharmacology 67(4):875–890 (2011).
@@ -29,8 +27,6 @@ Bonate PL, Cunningham CC, Gaynon P, Jeha S, Kadota R, Lam GN et al. Population p
 <figure class="pk-models-diagram"><img src="drugs/drug_clofarabine/Clofarabine_Bonate2011_reference/Clofarabine_Bonate2011_reference.svg" alt="Clofarabine_Bonate2011_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | bioavailability | Fab | 57.5 | % |
@@ -41,7 +37,7 @@ Bonate PL, Cunningham CC, Gaynon P, Jeha S, Kadota R, Lam GN et al. Population p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +47,13 @@ Bonate PL, Cunningham CC, Gaynon P, Jeha S, Kadota R, Lam GN et al. Population p
 
 ### Reviewer guidance
 
-**Vss (92.9 L) was substituted for the central volume in a one-compartment clofarabine model, which fails to describe the fast distribution phase.**
+**Every check that could be run on this record passed.**
 
-The abstract-only record lists both a fast distribution half-life (0.9 h) and a terminal half-life (4.4 h), yet defines a one-compartment structure. The model builder substituted the steady-state volume (92.9 L) for the central volume because no specific central volume was reported. This structural mismatch means the model cannot accurately reproduce the initial rapid decline in drug concentrations. Extracted — clofarabine: Fab 57.5 %, CL 18.3 L/h, Vss 92.9 L, t1/2α 0.9 h, t1/2β 4.4 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average apparent half-life: this record has none, the second reading 4.9; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -145,14 +141,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=clofarabine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=clofarabine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

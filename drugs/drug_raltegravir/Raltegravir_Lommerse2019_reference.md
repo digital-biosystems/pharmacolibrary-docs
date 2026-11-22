@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Raltegravir's volume of distribution and absorption lag time lacked extracted values, forcing placeholders and resulting in quarantine.
+> The model was withheld because raltegravir's total volume of distribution and absorption lag time lacked estimated values, requiring the use of generic library placeholders.
 
 <div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Lommerse2019_reference" status="model_quarantined" stale="false" population="mothers and neonates with in utero raltegravir exposure" measured-compound="raltegravir" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Lommerse J, Clarke D, Kerbusch T, Merdjan H, Witjes H, Teppler H et al. Maternal
 
 ### Reviewer guidance
 
-**Raltegravir's volume of distribution and absorption lag time lacked extracted values, forcing placeholders and resulting in quarantine.**
+**The model was withheld because raltegravir's total volume of distribution and absorption lag time lacked estimated values, requiring the use of generic library placeholders.**
 
-The record omits explicit estimates for the volume of distribution and absorption lag time, so library defaults stood in and the model was held back. A second reader disagreed on multiple parameter values, including clearance (9.44 vs 11.8 L/h) and bioavailability (0.517 vs 0.734). The reader also identified a missing intercompartmental clearance value (15.9) not present in this record. Extracted — raltegravir: V2 7.04 L, V3 10.3 L, CL 9.44 L/h, Q 0.786 L/h, kabs 0.43 1/h, Fab 0.517.
+While specific peripheral volumes of distribution (7.04 L and 10.3 L) were provided, the record did not contain explicit estimates for total volume of distribution or absorption lag time. Instead of fitted numbers, these parameters were filled with standard library defaults, preventing publication. A second reviewer also disputed several extracted values, such as clearance and bioavailability, highlighting inconsistencies in the parameter extraction. Extracted — raltegravir: V2 7.04 L, V3 10.3 L, CL 9.44 L/h, Q 0.786 L/h, kabs 0.43 1/h, Fab 0.517.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has raltegravir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -164,13 +164,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

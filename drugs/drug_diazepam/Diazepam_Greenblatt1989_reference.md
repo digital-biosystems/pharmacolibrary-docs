@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Jahn2018_reference&quot;,&quot;label&quot;:&quot;Jahn_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Jahn2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Norman1997_reference&quot;,&quot;label&quot;:&quot;Norman_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Norman1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Visser_2003_EEG&quot;,&quot;label&quot;:&quot;Visser_2003 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Visser_2003_EEG.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_1989_13_30_Hz_EEG&quot;,&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 % 13-30 Hz EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Greenblatt_1989_13_30_Hz_EEG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diazepam_Jahn2018_reference&quot;,&quot;label&quot;:&quot;Jahn_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Jahn2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Norman1997_reference&quot;,&quot;label&quot;:&quot;Norman_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Norman1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Capacio2001_seizure&quot;,&quot;label&quot;:&quot;Capacio_2001_seizure&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Capacio2001_seizure.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Capacio2001_seizure_not&quot;,&quot;label&quot;:&quot;Capacio_2001_seizure_not&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Capacio2001_seizure_not.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Lukey1991_diazepam_mean&quot;,&quot;label&quot;:&quot;Lukey_1991_diazepam_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Lukey1991_diazepam_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Greenblatt1989_reference" status="simulated" stale="false" population="healthy volunteers" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Greenblatt1989_reference" status="simulated" stale="false" population="healthy adults" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Greenblatt DJ, Ehrenberg BL, Gunderman J, Locniskar A, Scavone JM, Harmatz JS et al. Pharmacokinetic and electroencephalographic study of intravenous diazepam, midazolam, and placebo. Clinical pharmacology and therapeutics 45(4):356–365 (1989).
@@ -15,13 +15,15 @@ Greenblatt DJ, Ehrenberg BL, Gunderman J, Locniskar A, Scavone JM, Harmatz JS et
 
 ## Population and dosing
 
-**Population:** review reference.
+**Population:** healthy adults · condition healthy · age group adult · n = 11.
+
+**Dosing:** 7, 10.5 mg, iv, single.
 
 ## Model
 
 **Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 7 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_diazepam/Diazepam_Greenblatt1989_reference/Diazepam_Greenblatt1989_reference.svg" alt="Diazepam_Greenblatt1989_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -29,12 +31,17 @@ Greenblatt DJ, Ehrenberg BL, Gunderman J, Locniskar A, Scavone JM, Harmatz JS et
 ## Parameters
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL (ml/min/kg) | CL | 0.5 | ml/min/kg |
-| V. (L/kg) | V | 0.13 | L/kg |
+| Vc (L/kg) | V | 0.13 | L/kg |
+| Varea (L/kg) | Vnorm | 1.24 | L/kg |
+| Varea (L/kg) | Vnorm | 2.32 | L/kg |
+| Elimination t1/2 (hr) | t1/2z | 33 | hr |
+| Elimination t1/2 (hr) | t1/2z | 2.79 | hr |
+| CL (ml/min/kg) | CL | 0.50 | ml/min/kg |
+| CL (ml/min/kg) | CL | 11.0 | ml/min/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,16 +53,19 @@ Greenblatt DJ, Ehrenberg BL, Gunderman J, Locniskar A, Scavone JM, Harmatz JS et
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has none, the second reading 0.13; it also differs on 3 more fields. That field does not shape the model.
-
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL (ml/min/kg) | `Q22` · CL | 0.5 | ml/min/kg | 5.833e-07 | m3/s | L/h | review (0.7) | Greenblatt_1989:review |
-| V. (L/kg) | `Q61` · V | 0.13 | L/kg | 0.0091 | m3 | L | review (0.7) | Greenblatt_1989:review |
+| Vc (L/kg) | `Q61` · V | 0.13 | L/kg | 0.0091 | m3 | l/kg | exact (1) | Greenblatt_1989_table_1:row0:col1 |
+| Varea (L/kg) | `Q352` · Vnorm | 1.24 | L/kg | 0.0868 | m3 | l/kg | llm (0.6) | Greenblatt_1989_table_1:row1:col1 |
+| Varea (L/kg) | `Q352` · Vnorm | 2.32 | L/kg | 0.1624 | m3 | l/kg | llm (0.6) | Greenblatt_1989_table_1:row1:col2 |
+| Elimination t1/2 (hr) | `Q57` · t1/2z | 33 | hr | 1.188e+05 | s | h | half_life_rule (0.95) | Greenblatt_1989_table_1:row2:col1 |
+| Elimination t1/2 (hr) | `Q57` · t1/2z | 2.79 | hr | 1.004e+04 | s | h | half_life_rule (0.95) | Greenblatt_1989_table_1:row2:col2 |
+| CL (ml/min/kg) | `Q22` · CL | 0.50 | ml/min/kg | 5.833e-07 | m3/s | ml/(min·kg) | exact (1) | Greenblatt_1989_table_1:row3:col1 |
+| CL (ml/min/kg) | `Q22` · CL | 11.0 | ml/min/kg | 1.283e-05 | m3/s | ml/(min·kg) | exact (1) | Greenblatt_1989_table_1:row3:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -65,48 +75,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Departures & gaps
 
 **Interpretation flags:**
-- built from REVIEW reference values (Greenblatt_1989) — secondary source
-- volume reported by review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diazepam
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Vc (L/kg)' is the general volume)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 1
+- table Greenblatt_1989_table_1: unparsed_numeric_cell
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
-
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q320]` |  | 0.13 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q321]` |  | 269 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q60]` |  | 2.79 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q61]` | 0.13 |  | only_one_extracted |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Greenblatt_1989:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Greenblatt_1989:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.5 | ['Greenblatt_1989:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Greenblatt_1989_table_1:row3:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Greenblatt_1989_table_1:row3:col2'] |
+| C5_dimension_Q352 | pass | [length] ** 3 |  | ['Greenblatt_1989_table_1:row1:col1'] |
+| C5_dimension_Q352 | pass | [length] ** 3 |  | ['Greenblatt_1989_table_1:row1:col2'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Greenblatt_1989_table_1:row2:col1'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Greenblatt_1989_table_1:row2:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Greenblatt_1989_table_1:row0:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.5 | ['Greenblatt_1989_table_1:row3:col1'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.1 L/h | ['Greenblatt_1989:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 9.1 L | ['Greenblatt_1989:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.1 L/h | ['Greenblatt_1989_table_1:row3:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 46.2 L/h | ['Greenblatt_1989_table_1:row3:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 9.1 L | ['Greenblatt_1989_table_1:row0:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -115,9 +115,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=diazepam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,7 +155,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
+| input | dosing | `adminMass` | 7e-06 | kg |
 | input | model | `Cl` | 5.833e-07 | m3/s |
 | input | model | `VdPerKg` | 0.00013 | m3/kg |
 | input | subject | `weight` | 70 | kg |
@@ -185,7 +186,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg parenteral (N05BA01) (defined daily dose)._
+**Administration: intravenous** — 7 mg infusion over 10 min, single dose. Doses in the paper: 7, 10.5 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_diazepam/Diazepam_Greenblatt1989_reference/Diazepam_Greenblatt1989_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_diazepam/Diazepam_Greenblatt1989_reference/Diazepam_Greenblatt1989_reference_sim_controls.json"></dbs-fmusim>
 
@@ -195,4 +196,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiazepam%5D%20Diazepam_Greenblatt1989_reference&body=Drug%3A%20diazepam%0ARecord%3A%20Diazepam_Greenblatt1989_reference%0APaper%3A%20Greenblatt_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diazepam/Diazepam_Greenblatt1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 21:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:27 UTC</sub>

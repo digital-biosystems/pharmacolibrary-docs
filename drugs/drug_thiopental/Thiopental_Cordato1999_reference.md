@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;thiopental&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/&quot;},{&quot;label&quot;:&quot;Cordato_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiopental_Marsot2013_reference&quot;,&quot;label&quot;:&quot;Marsot_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Marsot2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_Russo1997v3_reference&quot;,&quot;label&quot;:&quot;Russo_1997_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Russo1997v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_SolanaAltabella2025_reference&quot;,&quot;label&quot;:&quot;Solana-Altabella_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_SolanaAltabella2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiopental_Marsot2013_reference&quot;,&quot;label&quot;:&quot;Marsot_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Marsot2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_Russo1997v3_reference&quot;,&quot;label&quot;:&quot;Russo_1997_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Russo1997v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_SolanaAltabella2025_reference&quot;,&quot;label&quot;:&quot;Solana-Altabella_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_SolanaAltabella2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Cordato DJ, Mather LE, Gross AS, Herkes GK. Pharmacokinetics of thiopental enant
 
 ## Population and dosing
 
-**Population:** patients · age group adult · n = — 20 patients received... data from 18 patients were fitted.
+**Population:** patients · age group adult.
 
 ## Model
 

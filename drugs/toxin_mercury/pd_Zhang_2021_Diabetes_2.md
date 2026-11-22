@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates an association between blood methylmercury concentration (µg/L) and the binary response Diabetes, but no pharmacodynamic mechanism or mathematical model is specified. No potency or rate parameters are reported as the mechanism remains unknown.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Zhang_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

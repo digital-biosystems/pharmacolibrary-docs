@@ -4,18 +4,18 @@
 
 # cefotetan — `Cefotetan_Sugiyama1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:08 UTC (Needs review), but the paper was screened again on 2026-10-07 10:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; aUC∞ has no unit.
+> AUC∞ has no unit.
 
-<div class="pk-model-meta" hidden drug="cefotetan" model-id="Cefotetan_Sugiyama1986_reference" status="needs_review" stale="true" population="adult patients with excoriated skin wounds" measured-compound="cefotetan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefotetan" model-id="Cefotetan_Sugiyama1986_reference" status="needs_review" stale="false" population="adult patients with excoriated skin wounds" measured-compound="cefotetan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sugiyama H, Hatano T, Takayanagi K, Aoyama H, Kikuchi Y. [Transfer of cefotetan into exudates from excoriated skin wounds]. The Japanese journal of antibiotics 39(5):1297–1301 (1986).
 
 ## Population and dosing
 
-**Population:** adult patients with excoriated skin wounds · condition excoriated skin wounds · age group adult · n = Yes.
+**Population:** adult patients with excoriated skin wounds · condition excoriated skin wounds · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Sugiyama H, Hatano T, Takayanagi K, Aoyama H, Kikuchi Y. [Transfer of cefotetan 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Sugiyama H, Hatano T, Takayanagi K, Aoyama H, Kikuchi Y. [Transfer of cefotetan 
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance; aUC∞ has no unit.**
+**AUC∞ has no unit.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefotetan: t1/2β 2.38 hours, AUC∞ 1e+03 micrograms X hr/ml, V 164 ml/kg, tmax 1.05 hours, Cmax 131 micrograms/ml.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefotetan: t1/2β 2.38 hours, AUC∞ 1e+03 micrograms X hr/ml, V 164 ml/kg, tmax 1.05 hours, Cmax 131 micrograms/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefotetan, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

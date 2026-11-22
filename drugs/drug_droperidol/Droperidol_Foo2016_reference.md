@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Droperidol record held because bioavailability F and lag time Tlag used standard placeholders instead of estimates from the paper.
+> Bioavailability and absorption delay were not reported, so library defaults were used for droperidol instead of paper-derived estimates.
 
 <div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Foo2016_reference" status="needs_review" stale="false" population="acutely agitated patients" measured-compound="droperidol" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Foo LK, Duffull SB, Calver L, Schneider J, Isbister GK. Population pharmacokinet
 
 ### Reviewer guidance
 
-**Droperidol record held because bioavailability F and lag time Tlag used standard placeholders instead of estimates from the paper.**
+**Bioavailability and absorption delay were not reported, so library defaults were used for droperidol instead of paper-derived estimates.**
 
-No explicit values for bioavailability F or absorption lag time Tlag were provided in the source data, so generic defaults were applied. The second reader could not confirm the specific parameter values extracted from the text. Since the record was built from the abstract alone, the reported summary statistics stand in for a fitted model. Extracted — droperidol: kabs 10 h-1, t1/2ka 5 min, CL 41.9 l h-1, V 73.6 l, t1/2α 0.32 h, t1/2β 3 h.
+The model includes bioavailability and a lag time that were not extracted from the abstract, meaning a library placeholder would have been used. Since the record was built from abstract-only data, these specific pharmacokinetic values are not supported by the source text. Additionally, the second reader disagreed with the record, finding the dose compound and all parameter values unconfirmed. Extracted — droperidol: kabs 10 h-1, t1/2ka 5 min, CL 41.9 l h-1, V 73.6 l, t1/2α 0.32 h, t1/2β 3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has droperidol, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -149,14 +149,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=droperidol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=droperidol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

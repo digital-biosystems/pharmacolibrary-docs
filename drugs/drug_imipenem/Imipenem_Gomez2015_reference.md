@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Imipenem&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/&quot;},{&quot;label&quot;:&quot;Gomez_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imipenem_Chu2010_reference&quot;,&quot;label&quot;:&quot;Chu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Chu2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Gomez2015_reference&quot;,&quot;label&quot;:&quot;Gomez_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gomez2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imipenem_Gruber1985_reference&quot;,&quot;label&quot;:&quot;Gruber_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gruber1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Gomez2015_reference&quot;,&quot;label&quot;:&quot;Gomez_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gomez2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Imipenem_Chu2010_reference&quot;,&quot;label&quot;:&quot;Chu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Chu2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Imipenem — `Imipenem_Gomez2015_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Gomez2015_reference" status="simulated" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></div>
+> The imipenem record was held back because a second reader disputed the parameter values, agreeing on none of the extracted pharmacokinetic quantities.
+
+<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Gomez2015_reference" status="needs_review" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gomez DS, Sanches-Giraud C, Silva CV, Oliveira AM, da Silva JM, Gemperli R et al. Imipenem in burn patients: pharmacokinetic profile and PK/PD target attainment. The Journal of antibiotics 68(3):143–147 (2015).
@@ -27,6 +29,8 @@ Gomez DS, Sanches-Giraud C, Silva CV, Oliveira AM, da Silva JM, Gemperli R et al
 <figure class="pk-models-diagram"><img src="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference.svg" alt="Imipenem_Gomez2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | plasma clearance | CL | 17.8 | l h -1 |
@@ -34,7 +38,7 @@ Gomez DS, Sanches-Giraud C, Silva CV, Oliveira AM, da Silva JM, Gemperli R et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Gomez DS, Sanches-Giraud C, Silva CV, Oliveira AM, da Silva JM, Gemperli R et al
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The imipenem record was held back because a second reader disputed the parameter values, agreeing on none of the extracted pharmacokinetic quantities.**
+
+The automated cross-check recorded zero agreement between the original extraction and the second reader's assessment. Specific conflicts arose where the second reader found values such as 50 and 0.8 that were absent from the initial record. Conversely, the second reader found no value where the initial record listed 2.9 or 1.01. Extracted — imipenem: CL 17.8 l h -1, V/F 1.01 l kg -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has none, the second reading 50; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -113,14 +119,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=imipenem) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=imipenem) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

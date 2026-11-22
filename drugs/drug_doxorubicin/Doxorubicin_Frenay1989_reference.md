@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Frenay_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Frenay1989_reference&quot;,&quot;label&quot;:&quot;Frenay_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Joerger2007_reference&quot;,&quot;label&quot;:&quot;Joerger_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Joerger2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kontny2013_reference&quot;,&quot;label&quot;:&quot;Kontny_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kontny2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kunarajah2017_reference&quot;,&quot;label&quot;:&quot;Kunarajah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kunarajah2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Liang2016_reference&quot;,&quot;label&quot;:&quot;Liang_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Liang2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_w&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 w&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Choi_2021_w.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Andrean_2025_N_t&quot;,&quot;label&quot;:&quot;Andrean_2025 \u00b7 N(t)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Andrean_2025_N_t.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Luo2019_reference&quot;,&quot;label&quot;:&quot;Luo_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Luo2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Qiu2017_reference&quot;,&quot;label&quot;:&quot;Qiu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Qiu2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Yoshida1994_non_hd_group&quot;,&quot;label&quot;:&quot;Yoshida_1994_non_hd_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Yoshida1994_non_hd_group.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_Frenay1989_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:26 UTC (Not simulated), but the paper was screened again on 2026-11-03 15:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The doxorubicin AUC record was rejected due to a dimension mismatch in its unit 'nM/l·h' and the omission of a central volume value of 1073.
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Frenay1989_reference" status="extracted" stale="true" population="patients with advanced breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Frenay1989_reference" status="rejected" stale="false" population="adults with advanced breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Frenay M, Milano G, Renee N, Pons D, Khater R, François E et al. Pharmacokinetics of weekly low dose doxorubicin. European journal of cancer & clinical oncology 25(2):191–195 (1989).
@@ -17,26 +17,33 @@ Frenay M, Milano G, Renee N, Pons D, Khater R, François E et al. Pharmacokineti
 
 ## Population and dosing
 
-**Population:** review reference.
+**Population:** adults with advanced breast cancer · condition advanced breast cancer · age group adult · n = 28.
+
+**Dosing:** 12 mg/m2, iv, multiple, every 168 h.
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference.svg" alt="Doxorubicin_Frenay1989_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 7 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| Mean Cl(l/h) | CL | 55.4 | l/h |
-| V (derived from CL·t½/ln2) | V | 831.2232 | L |
+| t1/2α (h) | t1/2α | 0.095 | h |
+| t1/2β (h) | t1/2β | 12.8 | h |
+| AUC (nM/l·h) | AUC | 3957 | nM/l·h |
+| Cl (l/h) | CL | 46.7 | l/h |
+| Vd (l) | V | 934 | l |
+| t1/2 (h) | t1/2z | 31 | h |
+| R† | AUC ratio | 42.3 | 45 mg/m² |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--neutral" title="glm-5.3-flash, gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917), glm-5.3-flash (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,16 +53,25 @@ Frenay M, Milano G, Renee N, Pons D, Khater R, François E et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The doxorubicin AUC record was rejected due to a dimension mismatch in its unit 'nM/l·h' and the omission of a central volume value of 1073.**
 
-<sub>reviewed by rule template (no LLM)</sub>
+The review flagged the AUC value of 3957 because the unit 'nM/l·h' conflicts with the expected dimensional requirements for the parameter. Furthermore, the record lacked a value for the central volume, despite a second reader identifying a specific value of 1073, leaving the model without this essential structural parameter. Extracted — doxorubicin: t1/2α 0.095 h, t1/2β 12.8 h, AUC 3.96e+03 nM/l·h, CL 46.7 l/h, V 934 l, t1/2z 31 h, AUC ratio 42.3 45 mg/m².
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cext: this record has none, the second reading 1073. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Mean Cl(l/h) | `Q22` · CL | 55.4 | l/h | 1.539e-05 | m3/s | L/h | review (0.7) | Frenay_1989:review |
-| V (derived from CL·t½/ln2) | `Q61` · V | 831.2232 | L | 0.8312 | m3 | L | review (0.7) | Frenay_1989:review |
+| t1/2α (h) | `Q59` · t1/2α | 0.095 | h | 342 | s | h | half_life_rule (0.95) | Frenay_1989_table_p3_1:row1:col2, Frenay_1989_table_p3_1:row4:col2, Frenay_1989_table_p3_1:row5:col2, Frenay_1989_table_p3_1:row6:col2, Frenay_1989_table_p3_1:row8:col2 |
+| t1/2β (h) | `Q60` · t1/2β | 12.8 | h | 4.608e+04 | s | h | half_life_rule (0.95) | Frenay_1989_table_p3_1:row1:col3, Frenay_1989_table_p3_1:row4:col3, Frenay_1989_table_p3_1:row5:col3, Frenay_1989_table_p3_1:row6:col3, Frenay_1989_table_p3_1:row8:col3 |
+| AUC (nM/l·h) | `Q88` · AUC | 3957 | nM/l·h |  |  | nM/(h·l) | exact (1) | Frenay_1989_table_p3_1:row1:col4, Frenay_1989_table_p3_1:row4:col4, Frenay_1989_table_p3_1:row5:col4, Frenay_1989_table_p3_1:row6:col4, Frenay_1989_table_p3_1:row8:col4, Frenay_1989_table_p3_1:row10:col4 |
+| Cl (l/h) | `Q22` · CL | 46.7 | l/h | 1.297e-05 | m3/s | l/h | exact (1) | Frenay_1989_table_p3_1:row1:col5, Frenay_1989_table_p3_1:row4:col5, Frenay_1989_table_p3_1:row5:col5, Frenay_1989_table_p3_1:row6:col5, Frenay_1989_table_p3_1:row8:col5 |
+| Vd (l) | `Q61` · V | 934 | l | 0.934 | m3 | l | exact (1) | Frenay_1989_table_p3_1:row1:col6, Frenay_1989_table_p3_1:row4:col6, Frenay_1989_table_p3_1:row5:col6, Frenay_1989_table_p3_1:row6:col6, Frenay_1989_table_p3_1:row8:col6 |
+| t1/2 (h) | `Q57` · t1/2z | 31 | h | 1.116e+05 | s | h | half_life_rule (0.95) | Frenay_1989_table_p3_1:row1:col7, Frenay_1989_table_p3_1:row4:col7, Frenay_1989_table_p3_1:row5:col7, Frenay_1989_table_p3_1:row6:col7, Frenay_1989_table_p3_1:row8:col7 |
+| R† | `Q21` · AUC ratio | 42.3 | 45 mg/m² |  |  | 45mg/m2 | llm (0.6) | Frenay_1989_table_p3_1:row1:col9, Frenay_1989_table_p3_1:row4:col9, Frenay_1989_table_p3_1:row5:col9, Frenay_1989_table_p3_1:row6:col9, Frenay_1989_table_p3_1:row8:col9 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -65,20 +81,45 @@ Frenay M, Milano G, Renee N, Pons D, Khater R, François E et al. Pharmacokineti
 ## Departures & gaps
 
 **Interpretation flags:**
-- built from REVIEW reference values (Frenay_1989) — secondary source
-- central volume derived from CL·t½/ln2
+- column 'ber' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'dur' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'nel' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'statistical comparison‡ wld-dox with wld-dox patients with normal liver function tests' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Cext (nM)' — extend the ontology if this is a real PK parameter (source ['Frenay_1989_table_p3_1:row1:col1', 'Frenay_1989_table_p3_1:row4:col1', 'Frenay_1989_table_p3_1:row6:col1', 'Frenay_1989_table_p3_1:row10:col1'])
+- unit_dimension_mismatch: 'AUC (nM/l·h)' → Q88 (unit '[time] / [length] ** 2' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'AUC (nM/l h)' → Q88 (unit '[time] / [length] ** 2' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped duplicate Q88 ('AUC (nM/l h)', value '2719') — already have one for this compound
+- unit_dimension_unknown: '45 mg/m²' (AUC ratio)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- table Frenay_1989_table_p3_1: ambiguous_numeric_format
+- table Frenay_1989_table_p3_1: unbound_uncertainty
+- transposed table Frenay_1989_table_p3_1: logical view retains original source coordinates
+- LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.917 (11/12 fields) | 1 |
 | `glm-5.3-flash` | no answer | – | – (extracted nothing for this record) |
-| `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
 
-_No second reader extracted anything for this record; it is not cross-checked._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cext]` |  | 1073 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -90,24 +131,19 @@ _No second reader extracted anything for this record; it is not cross-checked._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Frenay_1989:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Frenay_1989:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 55.4 | ['Frenay_1989:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Frenay_1989_table_p3_1:row1:col5', 'Frenay_1989_table_p3_1:row4:col5', 'Frenay_1989_table_p3_1:row5:col5', 'Frenay_1989_table_p3_1:row6:col5', 'Frenay_1989_table_p3_1:row8:col5'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Frenay_1989_table_p3_1:row1:col7', 'Frenay_1989_table_p3_1:row4:col7', 'Frenay_1989_table_p3_1:row5:col7', 'Frenay_1989_table_p3_1:row6:col7', 'Frenay_1989_table_p3_1:row8:col7'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Frenay_1989_table_p3_1:row1:col2', 'Frenay_1989_table_p3_1:row4:col2', 'Frenay_1989_table_p3_1:row5:col2', 'Frenay_1989_table_p3_1:row6:col2', 'Frenay_1989_table_p3_1:row8:col2'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Frenay_1989_table_p3_1:row1:col3', 'Frenay_1989_table_p3_1:row4:col3', 'Frenay_1989_table_p3_1:row5:col3', 'Frenay_1989_table_p3_1:row6:col3', 'Frenay_1989_table_p3_1:row8:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Frenay_1989_table_p3_1:row1:col6', 'Frenay_1989_table_p3_1:row4:col6', 'Frenay_1989_table_p3_1:row5:col6', 'Frenay_1989_table_p3_1:row6:col6', 'Frenay_1989_table_p3_1:row8:col6'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | nM/l·h ([time] / [length] ** 2) | ['Frenay_1989_table_p3_1:row1:col4', 'Frenay_1989_table_p3_1:row4:col4', 'Frenay_1989_table_p3_1:row5:col4', 'Frenay_1989_table_p3_1:row6:col4', 'Frenay_1989_table_p3_1:row8:col4', 'Frenay_1989_table_p3_1:row10:col4'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 46.7 | ['Frenay_1989_table_p3_1:row1:col5', 'Frenay_1989_table_p3_1:row4:col5', 'Frenay_1989_table_p3_1:row5:col5', 'Frenay_1989_table_p3_1:row6:col5', 'Frenay_1989_table_p3_1:row8:col5'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 55.4 L/h | ['Frenay_1989:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 831 L | ['Frenay_1989:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | note |
-|---|---|---|
-| T0_analyte_identity | pass | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped | no covariate effects in record |
-| T3_param_coverage | skipped | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass | no engineer deviations to adjudicate |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 46.7 L/h | ['Frenay_1989_table_p3_1:row1:col5', 'Frenay_1989_table_p3_1:row4:col5', 'Frenay_1989_table_p3_1:row5:col5', 'Frenay_1989_table_p3_1:row6:col5', 'Frenay_1989_table_p3_1:row8:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 934 L | ['Frenay_1989_table_p3_1:row1:col6', 'Frenay_1989_table_p3_1:row4:col6', 'Frenay_1989_table_p3_1:row5:col6', 'Frenay_1989_table_p3_1:row6:col6', 'Frenay_1989_table_p3_1:row8:col6'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -119,70 +155,16 @@ _No second reader extracted anything for this record; it is not cross-checked._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference_modelica.zip" download>Doxorubicin_Frenay1989_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference_fmi.zip" download>Doxorubicin_Frenay1989_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference_matlab.zip" download>Doxorubicin_Frenay1989_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference_matlab_simbio.zip" download>Doxorubicin_Frenay1989_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference_sbml.zip" download>Doxorubicin_Frenay1989_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference_cellml.zip" download>Doxorubicin_Frenay1989_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.5435 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 1.539e-05 | m3/s |
-| input | model | `VdPerKg` | 0.01187 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Frenay M, Milano G, Renee N, Pons D, Khater R, François E et al. Pharmacokinetics of weekly low dose doxorubicin. European journal of cancer & clinical oncology 25(2):191–195 (1989). [doi:10.1016/0277-5379(89)90007-2](https://doi.org/10.1016/0277-5379(89)90007-2)
-
-**This record:** Pharmacolibrary, model `Doxorubicin_Frenay1989_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference>
-
-```bibtex
-@misc{pharmacolibrary_DoxorubicinFrenay1989reference,
-  title  = {{Pharmacolibrary model Doxorubicin_Frenay1989_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference},
-  note   = {Parameters from doi:10.1016/0277-5379(89)90007-2},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference/Doxorubicin_Frenay1989_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Doxorubicin_Frenay1989_reference_params.json` · controls `Doxorubicin_Frenay1989_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Frenay1989_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Frenay1989_reference%0APaper%3A%20Frenay_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 15:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:01 UTC</sub>

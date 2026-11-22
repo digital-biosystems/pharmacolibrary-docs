@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Diethyltoluamide&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/&quot;},{&quot;label&quot;:&quot;Chen_2026 \u00b7 PD Depression risk (DEET)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diethyltoluamide_Qiu1997_reference&quot;,&quot;label&quot;:&quot;Qiu_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/Diethyltoluamide_Qiu1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diethyltoluamide_Qiu1997_reference&quot;,&quot;label&quot;:&quot;Qiu_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/Diethyltoluamide_Qiu1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Depression risk (DEET) — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span>
@@ -17,6 +17,10 @@
 **As extracted:** DEET (measured concentrations) drives Depression risk (DEET) (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> This study utilizes survey-weighted logistic regression and Bayesian kernel machine regression to assess the association between urinary DEET concentrations (μg/L) and depression odds ratios, but it does not define a mechanistic pharmacodynamic model or provide potency parameters such as EC50 or Imax. The analysis reports descriptive statistical associations (e.g., adjusted ORs for sex- and age-specific vulnerabilities) rather than a formal PK/PD model linking drug concentration to a response via inhibition or direct effect.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2026`
 - **model family:** `unknown`

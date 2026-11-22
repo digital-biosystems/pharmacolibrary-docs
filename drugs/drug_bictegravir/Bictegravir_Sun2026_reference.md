@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;Bictegravir&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/&quot;},{&quot;label&quot;:&quot;Sun_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bictegravir_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bictegravir_Khoei2026_reference&quot;,&quot;label&quot;:&quot;Khoei_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bictegravir_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bictegravir_Khoei2026_reference&quot;,&quot;label&quot;:&quot;Khoei_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Bictegravir — `Bictegravir_Sun2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:13 UTC (Rejected), but the paper was screened again on 2026-10-07 15:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bictegravir's apparent clearance and volume are wrongly recorded as percentages instead of volumetric flow and volume units.
+> CL/F and V/F are reported in percent units, which conflicts with the dimensional requirements for clearance and volume in the one-compartment model.
 
-<div class="pk-model-meta" hidden drug="Bictegravir" model-id="Bictegravir_Sun2026_reference" status="rejected" stale="true" population="pregnant and postpartum women with HIV" measured-compound="bictegravir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Bictegravir" model-id="Bictegravir_Sun2026_reference" status="rejected" stale="false" population="pregnant and postpartum women with HIV" measured-compound="bictegravir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sun S, Nikanjam M, Mirochnick M, Powis KM, Eke AC, Stek A et al. Population Pharmacokinetics of Bictegravir During Pregnancy and Postpartum: Role of Adherence in Maintaining Therapeutic Exposure. Journal of clinical pharmacology 66(1):e70134 (2026).
@@ -38,7 +38,7 @@ Sun S, Nikanjam M, Mirochnick M, Powis KM, Eke AC, Stek A et al. Population Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Sun S, Nikanjam M, Mirochnick M, Powis KM, Eke AC, Stek A et al. Population Phar
 
 ### Reviewer guidance
 
-**Bictegravir's apparent clearance and volume are wrongly recorded as percentages instead of volumetric flow and volume units.**
+**CL/F and V/F are reported in percent units, which conflicts with the dimensional requirements for clearance and volume in the one-compartment model.**
 
-The record lists bictegravir's apparent clearance as 61 % and apparent volume of distribution as 32 %. These values describe the magnitude of the parameters but carry an incorrect unit of percentage. Because the source text was abstract-only, summary statistics stood in for a fitted model, compounding the dimensional inconsistency. Extracted — bictegravir: CL/F 61 %, V/F 32 %, AUC%ext 43.7 %, kabs 0.64 h−1.
+The record was rejected because the units for apparent clearance and apparent volume of distribution are listed as percent, a dimensionless unit, rather than volume per time and volume, respectively. Additionally, the second reader was unable to extract the absorption rate constant or the clearance value from the abstract-only source text. Extracted — bictegravir: CL/F 61 %, V/F 32 %, AUC%ext 43.7 %, kabs 0.64 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent clearance: this record has 61, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

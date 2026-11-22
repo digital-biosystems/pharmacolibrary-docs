@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;clofarabine&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/&quot;},{&quot;label&quot;:&quot;Bonate_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clofarabine — `Clofarabine_Bonate2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 16:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clofarabine model was rejected because the normalized clearance parameter (0.75 kg) has a mass unit, which is dimensionally incorrect for a rate constant.
+> Clofarabine’s normalized clearance (0.75 kg) and distribution volume (1.0 kg) were recorded with mass units, conflicting with their pharmacokinetic dimensions and leading to rejection.
 
-<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="true" population="pediatric patients with acute leukemias" measured-compound="clofarabine" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="false" population="pediatric patients with acute leukemias" measured-compound="clofarabine" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Bonate PL, Craig A, Gaynon P, Gandhi V, Jeha S, Kadota R et al. Population pharmacokinetics of clofarabine, a second-generation nucleoside analog, in pediatric patients with acute leukemia. Journal of clinical pharmacology 44(11):1309–1322 (2004).
@@ -41,7 +41,7 @@ Bonate PL, Craig A, Gaynon P, Gandhi V, Jeha S, Kadota R et al. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.615). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.615). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Bonate PL, Craig A, Gaynon P, Gandhi V, Jeha S, Kadota R et al. Population pharm
 
 ### Reviewer guidance
 
-**The clofarabine model was rejected because the normalized clearance parameter (0.75 kg) has a mass unit, which is dimensionally incorrect for a rate constant.**
+**Clofarabine’s normalized clearance (0.75 kg) and distribution volume (1.0 kg) were recorded with mass units, conflicting with their pharmacokinetic dimensions and leading to rejection.**
 
-The record lists the total clearance normalized to a standard body size with a value of 0.75 and units of kilograms. A clearance value should have units of volume per time, such as liters per hour, making this a dimension mismatch. Additionally, the terminal elimination half-life parameter lacks a numerical value, leaving the model incomplete. The second reader disagreed on several fields, including the volume-related term and the reference patient weight, but the dimensional error on clearance is the primary structural flaw. Extracted — clofarabine: CLnorm 0.75 kg, V 1 kg, CL 32.8 L/h, V1 115 L, Q 20.5 L/h, V2 94.5 L.
+The clearance term should have volume-per-time dimensions and the distribution volume should have volume dimensions, but both are given in kg. Only the abstract was read, so summary statistics stood in for a fitted model; the second reader did not identify these terms or the 40 kg reference patient, and reported an average predicted concentration of 11.6 where this record has none. Extracted — clofarabine: CLnorm 0.75 kg, V 1 kg, CL 32.8 L/h, V1 115 L, Q 20.5 L/h, V2 94.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average predicted concentration: this record has none, the second reading 11.6; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

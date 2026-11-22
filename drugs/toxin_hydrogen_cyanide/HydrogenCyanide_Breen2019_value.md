@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Hydrogen cyanide&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/&quot;},{&quot;label&quot;:&quot;Breen_2019 \u00b7 value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HydrogenCyanide_Bhandari2014_reference&quot;,&quot;label&quot;:&quot;Bhandari_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Bhandari2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;HydrogenCyanide_Bonanno2021_reference&quot;,&quot;label&quot;:&quot;Bonanno_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Bonanno2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;HydrogenCyanide_Breen2019_value&quot;,&quot;label&quot;:&quot;Breen_2019_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Breen2019_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;HydrogenCyanide_Michaelis1991_reference&quot;,&quot;label&quot;:&quot;Michaelis_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Michaelis1991_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;HydrogenCyanide_Sousa2003_reference&quot;,&quot;label&quot;:&quot;Sousa_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Sousa2003_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;HydrogenCyanide_Hall1987_reference&quot;,&quot;label&quot;:&quot;Hall_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Hall1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HydrogenCyanide_Bhandari2014_reference&quot;,&quot;label&quot;:&quot;Bhandari_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Bhandari2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;HydrogenCyanide_Michaelis1991_reference&quot;,&quot;label&quot;:&quot;Michaelis_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Michaelis1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;HydrogenCyanide_Sousa2003_reference&quot;,&quot;label&quot;:&quot;Sousa_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Sousa2003_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;HydrogenCyanide_Bonanno2021_reference&quot;,&quot;label&quot;:&quot;Bonanno_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Bonanno2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;HydrogenCyanide_Breen2019_value&quot;,&quot;label&quot;:&quot;Breen_2019_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Breen2019_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;HydrogenCyanide_Hall1987_reference&quot;,&quot;label&quot;:&quot;Hall_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_cyanide/HydrogenCyanide_Hall1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Hydrogen cyanide — `HydrogenCyanide_Breen2019_value`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life.
 
-<div class="pk-model-meta" hidden drug="Hydrogen cyanide" model-id="HydrogenCyanide_Breen2019_value" status="extracted" stale="false" population="Marine fish Amphiprion ocellaris" measured-compound="Thiocyanate" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Hydrogen cyanide" model-id="HydrogenCyanide_Breen2019_value" status="needs_review" stale="false" population="Marine fish Amphiprion ocellaris" measured-compound="Thiocyanate" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Breen NE, Bonanno JA, Hunt S, Grossman J, Brown J, Nolte H et al. On the half-life of thiocyanate in the plasma of the marine fish Amphiprion ocellaris: implications for cyanide detection. PeerJ 7:e6644 (2019).
@@ -31,6 +31,8 @@ Breen NE, Bonanno JA, Hunt S, Grossman J, Brown J, Nolte H et al. On the half-li
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | (t1/2)1 (hours) | t1/2z | 0.35 | hours |
@@ -40,7 +42,7 @@ Breen NE, Bonanno JA, Hunt S, Grossman J, Brown J, Nolte H et al. On the half-li
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +50,13 @@ Breen NE, Bonanno JA, Hunt S, Grossman J, Brown J, Nolte H et al. On the half-li
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (A1), so that value has no SI equivalent. None of the extracted parameters is hydrogen cyanide's own; they describe Thiocyanate. Extracted — Thiocyanate: t1/2z 0.35 hours, A1 305 ppm, λ1 1.97 hours−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -96,6 +104,26 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q57 | pass | [time] |  | ['Breen_2019_table_2:row0:col1'] |
 | C5_dimension_Q67 | pass | 1 / [time] |  | ['Breen_2019_table_2:row4:col1'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Thiocyanate) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | skipped |  | 2.353 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 432 | 2.353 | 0.0054 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 24.24 | 2.353 | 0.0971 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 2.353 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 8.4 | 2.353 | 0.2801 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 50.16 | 2.353 | 0.0469 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.4 | 2.353 | 0.2801 | day→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.005556 | 2.353 | 423.5 | s→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 2.353 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

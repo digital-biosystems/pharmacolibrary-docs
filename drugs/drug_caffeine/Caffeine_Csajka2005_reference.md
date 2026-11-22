@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;caffeine&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/&quot;},{&quot;label&quot;:&quot;Csajka_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caffeine_Guo2020_reference&quot;,&quot;label&quot;:&quot;Guo_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/Caffeine_Guo2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Caffeine_Thompson2025_reference&quot;,&quot;label&quot;:&quot;Thompson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/Caffeine_Thompson2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caffeine_Guo2020_reference&quot;,&quot;label&quot;:&quot;Guo_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/Caffeine_Guo2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Caffeine_Thompson2025_reference&quot;,&quot;label&quot;:&quot;Thompson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/Caffeine_Thompson2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # caffeine — `Caffeine_Csajka2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:07 UTC (Rejected), but the paper was screened again on 2026-10-07 07:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for caffeine is incorrectly assigned a volumetric unit (l min(-1)) instead of a time inverse.
+> The caffeine absorption rate constant was recorded with incorrect volume-based units, causing a dimension mismatch that rejected the record.
 
-<div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Csajka2005_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="caffeine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="caffeine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelling of ephedrine, norephedrine and caffeine in healthy subjects. British journal of clinical pharmacology 59(3):335–345 (2005).
@@ -41,7 +41,7 @@ Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelli
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelli
 
 ### Reviewer guidance
 
-**The absorption rate constant for caffeine is incorrectly assigned a volumetric unit (l min(-1)) instead of a time inverse.**
+**The caffeine absorption rate constant was recorded with incorrect volume-based units, causing a dimension mismatch that rejected the record.**
 
-The record lists the caffeine absorption rate constant as 0.064 l min(-1), a unit mismatch for a first-order rate parameter. Since the record was built from the abstract alone, these summary statistics stood in for a fitted model. Additionally, the second reader disagreed on the assignment of the dose compound and primary analyte. Extracted — caffeine: CL 0.083 l min(-1), V 38.6 l, kabs 0.064 l min(-1); ephedrine: CL 0.34 l min(-1), Frel 32 %.
+The record lists caffeine's absorption rate constant as 0.064 l min(-1), a unit representing volume flow rather than inverse time. This dimensional conflict prevented the model structure from validating, leading to the rejection of the parameter. Additionally, the record was built from abstract-only data, so reported summary statistics stood in for a fitted model. Extracted — caffeine: CL 0.083 l min(-1), V 38.6 l, kabs 0.064 l min(-1); ephedrine: CL 0.34 l min(-1), Frel 32 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has caffeine and ephedrine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -4,11 +4,11 @@
 
 # cyfluthrin — `Cyfluthrin_Rodrguez2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:53 UTC (Rejected), but the paper was screened again on 2026-10-07 12:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="cyfluthrin" model-id="Cyfluthrin_Rodrguez2018_reference" status="needs_review" stale="true" population="rats" measured-compound="cyfluthrin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cyfluthrin" model-id="Cyfluthrin_Rodrguez2018_reference" status="needs_review" stale="false" population="rats" measured-compound="cyfluthrin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rodríguez JL, Ares I, Martínez M, Martínez-Larrañaga MR, Anadón A, Martínez MA. Bioavailability and nervous tissue distribution of pyrethroid insecticide cyfluthrin in rats. Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association 118:220–226 (2018).
@@ -40,7 +40,7 @@ Rodríguez JL, Ares I, Martínez M, Martínez-Larrañaga MR, Anadón A, Martíne
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Rodríguez JL, Ares I, Martínez M, Martínez-Larrañaga MR, Anadón A, Martíne
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cyfluthrin: AUC 6.11 h*ng/mL, Cmax 0.385 μg/mL, t1/2β 17.1 h, Fab 71.6 %, AUCt 19.4 h*ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cyfluthrin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

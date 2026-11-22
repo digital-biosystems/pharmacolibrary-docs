@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ponesimod absorption rate and lag time were replaced with library defaults because the paper only provided clearance and volume of distribution.
+> The apparent clearance and volume of distribution are abstract-only values, with absorption rate defaulted and the steady-state volume misidentified.
 
 <div class="pk-model-meta" hidden drug="ponesimod" model-id="Ponesimod_Valenzuela2021_reference" status="needs_review" stale="false" population="patients with multiple sclerosis" measured-compound="ponesimod" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Valenzuela B, Pérez-Ruixo JJ, Leirens Q, Ouwerkerk-Mahadevan S, Poggesi I. Effe
 
 ### Reviewer guidance
 
-**Ponesimod absorption rate and lag time were replaced with library defaults because the paper only provided clearance and volume of distribution.**
+**The apparent clearance and volume of distribution are abstract-only values, with absorption rate defaulted and the steady-state volume misidentified.**
 
-The record contains no estimates for the absorption rate constant or lag time, forcing the use of library defaults. A second reader also disagreed on the correct identification of the reported volume of distribution parameter. Extracted — ponesimod: CL/F 5.52 L/h, Vss 239 L.
+The record derives apparent clearance of 5.52 L/h and steady-state volume of 239 L solely from the paper's abstract, lacking a fitted model structure. Absorption parameters were left at library defaults because the source did not report them, and the steady-state volume was substituted for central volume. A second reader disputed the identification of the volume parameter, agreeing with the primary review in only 0.857 instances. Extracted — ponesimod: CL/F 5.52 L/h, Vss 239 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[moderate mean apparent volume of distribution at steady state].parameter_id`: this record has Q65, the second reading Q76. That field shapes the model, so the record is marked disputed.
 
@@ -125,15 +125,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ponesimod) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=1: not acceptable; deviation_id=2: not acceptable; deviation_id=3: not acceptable; deviation_id=4: not acceptable; deviation_id=5: not acceptable; deviation_id=6: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=ponesimod) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;morphine&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/&quot;},{&quot;label&quot;:&quot;Venkatasubramanian_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Ihmsen2021_reference&quot;,&quot;label&quot;:&quot;Ihmsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Ihmsen2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_f&quot;,&quot;label&quot;:&quot;Andersen_1986_f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_f.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_j&quot;,&quot;label&quot;:&quot;Andersen_1986_j&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_j.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_k&quot;,&quot;label&quot;:&quot;Andersen_1986_k&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_k.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Venkatasubramanian2014_reference&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Morphine_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Romberg2004_reference&quot;,&quot;label&quot;:&quot;Romberg_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Romberg2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # morphine — `Morphine_Venkatasubramanian2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Tlag has no unit.
-
-<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Venkatasubramanian2014_reference" status="needs_review" stale="false" population="children undergoing outpatient adenotonsillectomy" measured-compound="morphine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Venkatasubramanian2014_reference" status="simulated" stale="false" population="children undergoing outpatient adenotonsillectomy" measured-compound="morphine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. ABCC3 and OCT1 genotypes influence pharmacokinetics of morphine in children. Pharmacogenomics 15(10):1297–1309 (2014).
@@ -17,18 +15,18 @@ Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. 
 
 ## Population and dosing
 
-**Population:** children undergoing outpatient adenotonsillectomy · condition outpatient adenotonsillectomy · age group child · n = $220$ subjects in the final PK analysis.
+**Population:** children undergoing outpatient adenotonsillectomy · condition healthy (adenotonsillectomy) · age group child · n = 220.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** parent–metabolite model: parent with 2 compartment(s); metabolite morphine-6-glucuronide: 1 compartment(s); metabolite morphine-3-glucuronide: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 11 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 10 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference/Morphine_Venkatasubramanian2014_reference.svg" alt="Morphine_Venkatasubramanian2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 1.3 | L/h |
@@ -41,11 +39,10 @@ Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. 
 | FCLM6G | CLfm | 0.045 | L/h |
 | VM6G § | V | 30 | L |
 | CLM6G § | CL | 0.097 | L/h |
-| Kdelay | tlag | 0.069 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +52,7 @@ Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. 
 
 ### Reviewer guidance
 
-**Tlag has no unit.**
-
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — morphine: CL 1.3 L/h, V1 6.28 L, Q 2.1 L/h, V2 29.3 L, tlag 0.069; morphine-3-glucuronide: CLfm 0.34 L/h, V 23 L, CL 0.29 L/h; morphine-6-glucuronide: CLfm 0.045 L/h, V 30 L, CL 0.097 L/h.
+**Every check that could be run on this record passed.**
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,7 +70,6 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 | FCLM6G | `Q370` · CLfm | 0.045 | L/h | 1.25e-08 | m3/s | L/h | exact (1) | T4:row10:col1 |
 | VM6G § | `Q61` · V | 30 | L | 0.03 | m3 | L | exact (1) | T4:row11:col1 |
 | CLM6G § | `Q22` · CL | 0.097 | L/h | 2.694e-08 | m3/s | L/h | exact (1) | T4:row12:col1 |
-| Kdelay | `Q83` · tlag | 0.069 |  |  |  |  | llm (0.6) | T4:row13:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -91,20 +85,19 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 - table section residual_error: 'ε M' routed out of structural estimates ('Residual error')
 - table section residual_error: 'ε M3G' routed out of structural estimates ('Residual error')
 - table section residual_error: 'ε M6G' routed out of structural estimates ('Residual error')
-- implicit units: 'CL' → L/h (from the popPK convention: 'The paper describes a two-compartment model parameterized in terms of CL for morphine. The value 1.3 is consistent with ')
-- implicit units: 'V1' → L (from the popPK convention: 'V1 is the volume of distribution of the central compartment. Standard unit for volume is L. The value 6.28 is consistent')
-- implicit units: 'Q' → L/h (from the popPK convention: 'Q is the intercompartmental clearance. Standard unit is L/h.')
-- implicit units: 'V2' → L (from the popPK convention: 'V2 is the volume of distribution of the peripheral compartment. Standard unit is L.')
-- implicit units: 'FCLM3G' → L/h (from the popPK convention: 'FCLM3G is the formation clearance. Standard unit is L/h.')
-- implicit units: 'VM3G §' → L (from the popPK convention: 'VM3G is the volume of distribution for the metabolite M3G. Standard unit is L.')
-- implicit units: 'CLM3G §' → L/h (from the popPK convention: 'CLM3G is the clearance of the metabolite M3G. Standard unit is L/h.')
-- implicit units: 'FCLM6G' → L/h (from the popPK convention: 'FCLM6G is the formation clearance. Standard unit is L/h.')
-- implicit units: 'VM6G §' → L (from the popPK convention: 'VM6G is the volume of distribution for the metabolite M6G. Standard unit is L.')
-- implicit units: 'CLM6G §' → L/h (from the popPK convention: 'CLM6G is the clearance of the metabolite M6G. Standard unit is L/h.')
-- implicit units: 'Kdelay' — the LLM proposed '1/h', whose dimension does not fit Q83; left unset
-- metabolite volume: 'VM3G §' Q63→Q61 for morphine-3-glucuronide — it is 1-compartment, so its central volume is its only volume
+- dropped unlinked row (NIL): 'Kdelay' — extend the ontology if this is a real PK parameter (source ['T4:row13:col1'])
+- implicit units: 'CL' → L/h (from the popPK convention: 'CL (clearance) in pediatric population PK studies is conventionally expressed in L/h. The value (1.3) is consistent with')
+- implicit units: 'V1' → L (from the popPK convention: 'V1 (central volume of distribution) in population PK is conventionally expressed in L. The value (6.28) is consistent wi')
+- implicit units: 'Q' → L/h (from the popPK convention: 'Q (intercompartmental clearance) in population PK is conventionally expressed in L/h. The value (2.1) is consistent with')
+- implicit units: 'V2' → L (from the popPK convention: 'V2 (peripheral volume of distribution) in population PK is conventionally expressed in L. The value (29.31) is consisten')
+- implicit units: 'FCLM3G' → L/h (from the popPK convention: 'FCLM3G (formation clearance) is a clearance parameter. In population PK, clearances are conventionally expressed in L/h.')
+- implicit units: 'VM3G §' → L (from the popPK convention: 'VM3G (volume of distribution for metabolite M3G) is a volume parameter. In population PK, volumes are conventionally exp')
+- implicit units: 'CLM3G §' → L/h (from the popPK convention: 'CLM3G (clearance of metabolite M3G) is a clearance parameter. In population PK, clearances are conventionally expressed ')
+- implicit units: 'FCLM6G' → L/h (from the popPK convention: 'FCLM6G (formation clearance) is a clearance parameter. In population PK, clearances are conventionally expressed in L/h.')
+- implicit units: 'VM6G §' → L (from the popPK convention: 'VM6G (volume of distribution for metabolite M6G) is a volume parameter. In population PK, volumes are conventionally exp')
+- implicit units: 'CLM6G §' → L/h (from the popPK convention: 'CLM6G (clearance of metabolite M6G) is a clearance parameter. In population PK, clearances are conventionally expressed ')
 - metabolite volume: 'VM6G §' Q63→Q61 for morphine-6-glucuronide — it is 1-compartment, so its central volume is its only volume
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL); Q63 (V1); Q30 (Q); Q64 (V2); Q61 (VM3G §); Q22 (CLM3G §); Q61 (VM6G §); Q22 (CLM6G §)
+- metabolite volume: 'VM3G §' Q63→Q61 for morphine-3-glucuronide — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=morphine
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [1, 1]
@@ -119,7 +112,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 11 |  |
+| C0_has_structural_params | pass |  | 10 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T4:row3:col1'] |
@@ -132,7 +125,6 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['T4:row11:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['T4:row4:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['T4:row6:col1'] |
-| C5_unit_missing_Q83 | fail | [time] |  | ['T4:row13:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.3 | ['T4:row3:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.3 L/h | ['T4:row3:col1'] |
@@ -142,6 +134,25 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 | C9_phys_window_Q61 | pass | volume within physiological range | 30 L | ['T4:row11:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 6.28 L | ['T4:row4:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 29.3 L | ['T4:row6:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_metabolite_built[morphine-3-glucuronide] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.023, 'CL': 8.055555555555555e-08, 'formation': 9.444444444444445e-08} | morphine-3-glucuronide = compartment M2 with its own numbers |
+| T3_metabolite_built[morphine-6-glucuronide] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.03, 'CL': 2.6944444444444443e-08, 'formation': 1.25e-08} | morphine-6-glucuronide = compartment M1 with its own numbers |
+| T3_metabolite_output[morphine-3-glucuronide] | pass |  | 0.0002786 | C_M2 (morphine-3-glucuronide) must rise above 0 when the parent is dosed |
+| T3_metabolite_output[morphine-6-glucuronide] | pass |  | 3.329e-05 | C_M1 (morphine-6-glucuronide) must rise above 0 when the parent is dosed |
+| T3_molar_mass[morphine-3-glucuronide] | pass |  | {'MW': 0.28533769999999997, 'MW_m2': 0.4615} | formation is molecule-for-molecule |
+| T3_molar_mass[morphine-6-glucuronide] | pass |  | {'MW': 0.28533769999999997, 'MW_m1': 0.4615} | formation is molecule-for-molecule |
+| T3_output_variable | pass | C_central (measured=morphine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 8 scholar param(s) emitted or defaulted | 8 covered | all structural parameters accounted for |
+| T3_shared_parameters | skipped |  |  | parent–metabolite template: every compound has its own slot |
+| T3_topology_template | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,7 +169,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -169,10 +180,14 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 30 mg infusion over 10 min into the parent central compartment, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 30 mg parenteral (N02AA01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference/Morphine_Venkatasubramanian2014_reference_params.json" metaurl="assets/fmu/PK_3M_9C.vr.json" wasmurl="assets/fmu/PK_3M_9C.js" controlsurl="drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference/Morphine_Venkatasubramanian2014_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_3M_9C` · parameters `Morphine_Venkatasubramanian2014_reference_params.json` · controls `Morphine_Venkatasubramanian2014_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmorphine%5D%20Morphine_Venkatasubramanian2014_reference&body=Drug%3A%20morphine%0ARecord%3A%20Morphine_Venkatasubramanian2014_reference%0APaper%3A%20Venkatasubramanian_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 10:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 07:21 UTC</sub>

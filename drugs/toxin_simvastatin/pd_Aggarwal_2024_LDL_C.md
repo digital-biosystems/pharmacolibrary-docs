@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Simvastatin&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/&quot;},{&quot;label&quot;:&quot;Aggarwal_2024 \u00b7 PD LDL-C&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # LDL-C — PD  <span class="pk-badge pk-badge--blue">Simulated</span>
@@ -17,6 +17,10 @@
 **As extracted:** Simvastatin (the dose) drives LDL-C (in mg/dL): direct Emax (saturable) effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
+
+> Simvastatin dose exhibits a direct, additive inhibitory effect on LDL-C levels, characterized by a mean Emax of 79.8 mg/dL and an ED50 of 13.1 mg relative to a baseline (E0) of 149.6 mg/dL.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Aggarwal_2024`
 - **model family:** `emax`

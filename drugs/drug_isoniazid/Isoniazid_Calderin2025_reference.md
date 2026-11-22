@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;isoniazid&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/&quot;},{&quot;label&quot;:&quot;Calderin_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isoniazid_Deshpande2018_reference&quot;,&quot;label&quot;:&quot;Deshpande_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/Isoniazid_Deshpande2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_AlShaer2019_reference&quot;,&quot;label&quot;:&quot;Al-Shaer_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/Isoniazid_AlShaer2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/Isoniazid_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Isoniazid_Tikiso2022_reference&quot;,&quot;label&quot;:&quot;Tikiso_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/Isoniazid_Tikiso2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isoniazid_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/Isoniazid_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Isoniazid_Deshpande2018_reference&quot;,&quot;label&quot;:&quot;Deshpande_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/Isoniazid_Deshpande2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Tikiso2022_reference&quot;,&quot;label&quot;:&quot;Tikiso_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/Isoniazid_Tikiso2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_AlShaer2019_reference&quot;,&quot;label&quot;:&quot;Al-Shaer_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isoniazid/Isoniazid_AlShaer2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and transit time were left at library defaults, so the isoniazid absorption model lacks paper-supported values.
+> Bioavailability and lag time for isoniazid were set to library defaults instead of paper-specific estimates, preventing publication.
 
 <div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Calderin2025_reference" status="needs_review" stale="false" population="South African adults with tuberculous meningitis" measured-compound="pyrazinamide, isoniazid" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Calderin JM, Wasserman S, Resendiz-Galvan JE, Abdelgawad N, Davis A, Stek C et a
 
 ## Population and dosing
 
-**Population:** South African adults with tuberculous meningitis · condition tuberculous meningitis · age group adult · n = /&gt;49.
+**Population:** South African adults with tuberculous meningitis · condition tuberculous meningitis · age group adult.
 
 **Dosing:** 350, 1750 mg, oral, multiple, every 24 h.
 
@@ -53,9 +53,9 @@ Calderin JM, Wasserman S, Resendiz-Galvan JE, Abdelgawad N, Davis A, Stek C et a
 
 ### Reviewer guidance
 
-**Bioavailability and transit time were left at library defaults, so the isoniazid absorption model lacks paper-supported values.**
+**Bioavailability and lag time for isoniazid were set to library defaults instead of paper-specific estimates, preventing publication.**
 
-The record identifies that F and Tlag were not reported, causing the model builder to use standard placeholders. Consequently, the simulated profile relies on these generic values instead of explicit estimates from the Calderin paper. This deviation from the paper's specific findings is the primary reason the model was held back for review. Extracted — pyrazinamide, isoniazid: CL 4.19 L/h, V 45 L, kabs 2.95 h−1.
+The bioavailability parameter (Fab) was not extracted from the study and was instead assigned a placeholder value, meaning the model assumes a fractional absorption not supported by the text. The lag time (Tlag) was similarly defaulted, affecting the time to peak concentration in the simulated profile. Additionally, a second reviewer disagreed with the classification of pyrazinamide as a primary analyte and the associated parameter values, disputing the record's overall validity. Extracted — pyrazinamide, isoniazid: CL 4.19 L/h, V 45 L, kabs 2.95 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pyrazinamide, isoniazid, rifampicin, the second reading pyrazinamide and isoniazid; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -147,14 +147,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pyrazinamide, isoniazid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pyrazinamide, isoniazid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.3, 0 of 1 reader(s) agree | 0.3 | cross-check disputed by a second reader: verdict disputed, agreement 0.3, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

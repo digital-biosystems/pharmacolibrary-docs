@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Loratadine&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/&quot;},{&quot;label&quot;:&quot;Zhang_2021 \u00b7 mean_con_in_humans_ltd_tablet_10_mg_40&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Loratadine_Geha2001_reference&quot;,&quot;label&quot;:&quot;Geha_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Geha2001_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Lin1995_reference&quot;,&quot;label&quot;:&quot;Lin_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Lin1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Matzke1990_reference&quot;,&quot;label&quot;:&quot;Matzke_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Matzke1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2003_reference&quot;,&quot;label&quot;:&quot;Zhang_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2003_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_beagles_dl_tablet_10_mg_39&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_beagles_dl_tablet_10_mg_39&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_beagles_dl_tablet_10_mg_39.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_beagles_ltd_tablet_10_mg&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_beagles_ltd_tablet_10_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_beagles_ltd_tablet_10_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_humans_dl_tablet_10_mg_41&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_humans_dl_tablet_10_mg_41&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_humans_dl_tablet_10_mg_41.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_humans_ltd_tablet_10_mg_40&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Loratadine_Zhang2021_reference&quot;,&quot;label&quot;:&quot;Zhang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_deVries2019_reference&quot;,&quot;label&quot;:&quot;deVries_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_deVries2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Hilbert1987_reference&quot;,&quot;label&quot;:&quot;Hilbert_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Hilbert1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Radwanski1987_reference&quot;,&quot;label&quot;:&quot;Radwanski_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Radwanski1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Loratadine_Geha2001_reference&quot;,&quot;label&quot;:&quot;Geha_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Geha2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Lin1995_reference&quot;,&quot;label&quot;:&quot;Lin_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Lin1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Matzke1990_reference&quot;,&quot;label&quot;:&quot;Matzke_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Matzke1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2003_reference&quot;,&quot;label&quot;:&quot;Zhang_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2003_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Hilbert1987_reference&quot;,&quot;label&quot;:&quot;Hilbert_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Hilbert1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Radwanski1987_reference&quot;,&quot;label&quot;:&quot;Radwanski_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Radwanski1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_beagles_dl_tablet_10_mg_39&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_beagles_dl_tablet_10_mg_39&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_beagles_dl_tablet_10_mg_39.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_beagles_ltd_tablet_10_mg&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_beagles_ltd_tablet_10_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_beagles_ltd_tablet_10_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_humans_dl_tablet_10_mg_41&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_humans_dl_tablet_10_mg_41&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_humans_dl_tablet_10_mg_41.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_humans_ltd_tablet_10_mg_40&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Loratadine_Zhang2021_reference&quot;,&quot;label&quot;:&quot;Zhang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_deVries2019_reference&quot;,&quot;label&quot;:&quot;deVries_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_deVries2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Loratadine — `Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's time of the peak (tmax); the model does not reproduce the paper's peak concentration (Cmax) (+1 more).
 
-<div class="pk-model-meta" hidden drug="Loratadine" model-id="Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40" status="extracted" stale="false" population="male beagles" measured-compound="Loratadine" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Loratadine" model-id="Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40" status="needs_review" stale="false" population="male beagles" measured-compound="Loratadine" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Zhang Y, Zhang J, Xu Q, Wang Y, Wu W, Wang W et al. Simultaneous Determination of Loratadine and Its Metabolite Desloratadine in Beagle Plasma by LC-MS/MS and Application for Pharmacokinetics Study of Loratadine Tablets and Omeprazole‑Induced Drug-Drug Interaction. Drug design, development and therapy 15:5109–5122 (2021).
@@ -31,6 +31,8 @@ Zhang Y, Zhang J, Xu Q, Wang Y, Wu W, Wang W et al. Simultaneous Determination o
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax (ng/mL) | Cmax | 5.467 | ng/mL |
@@ -41,7 +43,7 @@ Zhang Y, Zhang J, Xu Q, Wang Y, Wu W, Wang W et al. Simultaneous Determination o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +51,13 @@ Zhang Y, Zhang J, Xu Q, Wang Y, Wu W, Wang W et al. Simultaneous Determination o
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's time of the peak (tmax); the model does not reproduce the paper's peak concentration (Cmax) (+1 more).**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — loratadine: Cmax 5.47 ng/mL, AUCt 19.6 ng. h/mL, AUC∞ 21 ng. h/mL, tmax 1.14 h, t1/2z 12.4 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -108,6 +116,89 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q56 | pass | [time] |  | ['Zhang_2021_table_6:row5:col4', 'Zhang_2021_table_6:row5:col5'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Zhang_2021_table_6:row6:col4', 'Zhang_2021_table_6:row6:col5'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Loratadine) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped |  | 0.9964 |  | non-numeric value |
+| T1_cmax | reference | fail | 3.717e-06 | 0.9964 | 2.681e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.941e-06 | 0.9964 | 2.528e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.777e-06 | 0.9964 | 2.638e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000472 | 0.9964 | 2111 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0004465 | 0.9964 | 2232 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0004969 | 0.9964 | 2005 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 1.524 | 0.9964 |  | unresolved concentration unit (exp 'nmol/mL', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.442 | 0.9964 |  | unresolved concentration unit (exp 'nmol/mL', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.605 | 0.9964 |  | unresolved concentration unit (exp 'nmol/mL', sim 'kg/m3') |
+| T1_cmax | reference | fail | 0.000472 | 0.9964 | 2111 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.717e-06 | 0.9964 | 2.681e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.717e-06 | 0.9964 | 2.681e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000472 | 0.9964 | 2111 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0003932 | 0.9964 | 2534 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 5.467e-06 | 0.9964 | 1.823e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.114e-06 | 0.9964 | 3.2e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.42e-06 | 0.9964 | 4.117e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.717e-06 | 0.9964 | 2.681e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.914e-06 | 0.9964 | 2.546e+05 | ng/ mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.777e-06 | 0.9964 | 2.638e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped |  | 0.9964 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.9964 |  | non-numeric value |
+| T1_cmax | reference | fail | 3.812e-06 | 0.9964 | 2.614e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.276e-06 | 0.9964 | 4.378e+05 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0004718 | 0.9964 | 2112 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0003581 | 0.9964 | 2783 | ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | skipped |  | 12.35 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 7.554 | 12.35 | 1.635 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7.131 | 12.35 | 1.732 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7.743 | 12.35 | 1.595 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 10.54 | 12.35 | 1.172 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 10.27 | 12.35 | 1.203 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 11.07 | 12.35 | 1.115 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 10.54 | 12.35 | 1.172 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 10.26 | 12.35 | 1.204 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 11.07 | 12.35 | 1.115 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 10.54 | 12.35 | 1.172 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7.554 | 12.35 | 1.635 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.775 | 12.35 | 1.823 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 10.54 | 12.35 | 1.172 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 11.19 | 12.35 | 1.104 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.354 | 12.35 | 5.248 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 22.23 | 12.35 | 0.5557 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 23.25 | 12.35 | 0.5313 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7.475 | 12.35 | 1.653 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.686 | 12.35 | 1.422 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 10.62 | 12.35 | 1.163 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 16.4 | 12.35 | 0.7533 | h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.1443 |  | non-numeric value |
+| T1_tmax | reference | fail | 90 | 0.1443 | 0.0016 | →SI vs simulated h |
+| T1_tmax | reference | fail | 0.389 | 0.1443 | 0.3709 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.389 | 0.1443 | 0.3709 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.463 | 0.1443 | 0.3116 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.759 | 0.1443 | 0.1901 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.157 | 0.1443 | 0.1247 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.111 | 0.1443 | 0.1299 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.759 | 0.1443 | 0.1901 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.157 | 0.1443 | 0.1247 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.111 | 0.1443 | 0.1299 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.389 | 0.1443 | 0.3709 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.795 | 0.1443 | 0.1815 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.389 | 0.1443 | 0.3709 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.759 | 0.1443 | 0.1901 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 3.21 | 0.1443 | 0.0449 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.44 | 0.1443 | 0.1002 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.462 | 0.1443 | 0.0987 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.85 | 0.1443 | 0.0506 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.414 | 0.1443 | 0.3485 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.225 | 0.1443 | 0.1178 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.009 | 0.1443 | 0.143 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.812 | 0.1443 | 0.0513 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

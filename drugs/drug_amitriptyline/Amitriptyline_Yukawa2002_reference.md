@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/&quot;},{&quot;label&quot;:&quot;Yukawa_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amitriptyline — `Amitriptyline_Yukawa2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Amitriptyline absorption rate constant was left at library defaults rather than extracted from the source, preventing publication.
+> The record was refused because it attributes amitriptyline CL/F of 141.65 L/h to a paper about haloperidol, where amitriptyline was only a covariate.
 
-<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Yukawa2002_reference" status="needs_review" stale="false" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Yukawa2002_reference" status="rejected" stale="false" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yukawa E, Hokazono T, Yukawa M, Ichimaru R, Maki T, Matsunaga K et al. Population pharmacokinetics of haloperidol using routine clinical pharmacokinetic data in Japanese patients. Clinical pharmacokinetics 41(2):153–159 (2002).
@@ -29,7 +29,7 @@ Yukawa E, Hokazono T, Yukawa M, Ichimaru R, Maki T, Matsunaga K et al. Populatio
 <figure class="pk-models-diagram"><img src="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference.svg" alt="Amitriptyline_Yukawa2002_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Yukawa E, Hokazono T, Yukawa M, Ichimaru R, Maki T, Matsunaga K et al. Populatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Yukawa E, Hokazono T, Yukawa M, Ichimaru R, Maki T, Matsunaga K et al. Populatio
 
 ### Reviewer guidance
 
-**Amitriptyline absorption rate constant was left at library defaults rather than extracted from the source, preventing publication.**
+**The record was refused because it attributes amitriptyline CL/F of 141.65 L/h to a paper about haloperidol, where amitriptyline was only a covariate.**
 
-The record lists oral clearance of 141.65 L/h and volume of distribution of 9.5 L/kg for amitriptyline. However, the absorption rate constant and lag time were not reported in the source, so default values were applied. The second reader could not verify several extracted values, including the absorption rate constant, further highlighting the lack of source-supported estimates for the absorption phase. Extracted — amitriptyline: CL/F 142 L/h, V 9.5 L/kg.
+The record lists amitriptyline apparent clearance of 141.65 L/h and volume of distribution of 9.5 L/kg, but the paper studied haloperidol and reported no amitriptyline pharmacokinetic parameters. The model builder defaulted the absorption rate and lag time, assumed F=1 and Fm=1, and used first-order depot input although the absorption rate was not reported. The second reader did not agree with the recorded estimates; the reported agreement was 0.0. Extracted — amitriptyline: CL/F 142 L/h, V 9.5 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.39, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -125,15 +125,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=amitriptyline) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | amitriptyline (or metabolite) | paper about another drug |  | paper subject is not amitriptyline: the paper is about another drug; this one is a co-medication or covariate: This is a population-PK study of haloperidol; amitriptyline appears only as a co-administered CYP2D6 substrate covariate, with no amitriptyline PK parameters re |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=amitriptyline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check agreement 0.0 is below 0.5: verdict partial, agreement 0.0, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,61 +146,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_modelica.zip" download>Amitriptyline_Yukawa2002_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_fmi.zip" download>Amitriptyline_Yukawa2002_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_matlab.zip" download>Amitriptyline_Yukawa2002_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_matlab_simbio.zip" download>Amitriptyline_Yukawa2002_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_sbml.zip" download>Amitriptyline_Yukawa2002_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_cellml.zip" download>Amitriptyline_Yukawa2002_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2774 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 7.5e-05 | kg |
-| input | model | `Cl` | 3.935e-05 | m3/s |
-| input | model | `VdPerKg` | 0.0095 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Yukawa E, Hokazono T, Yukawa M, Ichimaru R, Maki T, Matsunaga K et al. Population pharmacokinetics of haloperidol using routine clinical pharmacokinetic data in Japanese patients. Clinical pharmacokinetics 41(2):153–159 (2002). [doi:10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006)
-
-**This record:** Pharmacolibrary, model `Amitriptyline_Yukawa2002_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference>
-
-```bibtex
-@misc{pharmacolibrary_AmitriptylineYukawa2002reference,
-  title  = {{Pharmacolibrary model Amitriptyline_Yukawa2002_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference},
-  note   = {Parameters from doi:10.2165/00003088-200241020-00006},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

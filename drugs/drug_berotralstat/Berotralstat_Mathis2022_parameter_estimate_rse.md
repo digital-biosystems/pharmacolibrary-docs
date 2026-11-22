@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the inter-compartmental rate constant kcomp was not counted as covered, despite its listed value of 0.0812.
+> The record was held back because the transfer rate constant between central and peripheral compartments was not extracted, and the allometric exponent value was disputed by a second reader.
 
 <div class="pk-model-meta" hidden drug="berotralstat" model-id="Berotralstat_Mathis2022_parameter_estimate_rse" status="needs_review" stale="false" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,7 +45,7 @@ Mathis A, Sale M, Cornpropst M, Sheridan WP, Ma SC. Population pharmacokinetic m
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +55,11 @@ Mathis A, Sale M, Cornpropst M, Sheridan WP, Ma SC. Population pharmacokinetic m
 
 ### Reviewer guidance
 
-**The record was held back because the inter-compartmental rate constant kcomp was not counted as covered, despite its listed value of 0.0812.**
+**The record was held back because the transfer rate constant between central and peripheral compartments was not extracted, and the allometric exponent value was disputed by a second reader.**
 
-The validation check identified only four of the five required parameters as covered, specifically failing to account for kcomp even though the record provides a value of 0.0812 1/h. Additionally, a second reader disagreed with the allometric exponent value of 0.480, recording it as null. This discrepancy between the recorded parameter coverage and the extracted values caused the model to require review. Extracted — berotralstat: CL 47.3 L/h, V 1.65e+03 L, kabs 1.12 1/h, kcomp 0.0812 1/h, tlag 0.468 h, Fab 0.497, allometric_exponent 0.48.
+The review found that only four of five expected parameters were accounted for, specifically noting that the micro-rate constant governing distribution (0.0812 1/h) was neither emitted nor included in defaults. Additionally, a second reader disagreed with the recorded allometric exponent of 0.480 for weight-dependent clearance, providing a null value instead. Extracted — berotralstat: CL 47.3 L/h, V 1.65e+03 L, kabs 1.12 1/h, kcomp 0.0812 1/h, tlag 0.468 h, Fab 0.497, allometric_exponent 0.48.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance as a function of weight: this record has 0.480, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance as a function of weight: this record has 0.480, the second reading none. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -107,13 +107,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.944 (17/18 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.944 (17/18 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance as a function of weight]` | 0.480 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance as a function of weight]` | 0.480 |  | only_one_extracted |
 
 </details>
 
@@ -142,14 +142,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=berotralstat) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['kcomp'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=berotralstat) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['kcomp'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial, agreement 0.944, 0 of 1 reader(s) agree | 0.944 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

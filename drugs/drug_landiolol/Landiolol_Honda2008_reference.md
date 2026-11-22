@@ -17,7 +17,7 @@ Honda N, Nakade S, Kasai H, Hashimoto Y, Ohno T, Kitagawa J et al. Population ph
 
 ## Population and dosing
 
-**Population:** healthy male subjects · condition healthy · age group adult · n = &gt;=47.
+**Population:** healthy male subjects · condition healthy · age group adult.
 
 ## Model
 

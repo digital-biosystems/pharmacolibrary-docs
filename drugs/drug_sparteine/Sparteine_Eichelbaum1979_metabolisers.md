@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;sparteine&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/&quot;},{&quot;label&quot;:&quot;Eichelbaum_1979 \u00b7 metabolisers&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sparteine_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/Sparteine_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sparteine_ChoSchultz2009_reference&quot;,&quot;label&quot;:&quot;Cho-Schultz_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/Sparteine_ChoSchultz2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sparteine_Eichelbaum1997_reference&quot;,&quot;label&quot;:&quot;Eichelbaum_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/Sparteine_Eichelbaum1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sparteine_Gross1996_reference&quot;,&quot;label&quot;:&quot;Gross_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/Sparteine_Gross1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sparteine_Eichelbaum1997_reference&quot;,&quot;label&quot;:&quot;Eichelbaum_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/Sparteine_Eichelbaum1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sparteine_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/Sparteine_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sparteine_ChoSchultz2009_reference&quot;,&quot;label&quot;:&quot;Cho-Schultz_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/Sparteine_ChoSchultz2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sparteine_Gross1996_reference&quot;,&quot;label&quot;:&quot;Gross_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparteine/Sparteine_Gross1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The three-compartment model was rejected because one compartment is unreachable, and the dissociation constant lacks a clearance unit.
+> Sparteine's non-renal clearance parameter lacks a unit, and the second reader found missing parameter values.
 
 <div class="pk-model-meta" hidden drug="sparteine" model-id="Sparteine_Eichelbaum1979_metabolisers" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="sparteine" parameterization="mechanistic" topology="3C"></div>
 
@@ -17,7 +17,7 @@ Eichelbaum M, Spannbrucker N, Dengler HJ. Influence of the defective metabolism 
 
 ## Population and dosing
 
-**Population:** healthy adult male volunteers · condition healthy · age group adult · n = &gt;=5.
+**Population:** healthy adult male volunteers · condition healthy · age group adult.
 
 **Dosing:** 200 mg, iv, single.
 
@@ -44,7 +44,7 @@ Eichelbaum M, Spannbrucker N, Dengler HJ. Influence of the defective metabolism 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,11 @@ Eichelbaum M, Spannbrucker N, Dengler HJ. Influence of the defective metabolism 
 
 ### Reviewer guidance
 
-**The three-compartment model was rejected because one compartment is unreachable, and the dissociation constant lacks a clearance unit.**
+**Sparteine's non-renal clearance parameter lacks a unit, and the second reader found missing parameter values.**
 
-The model structure includes a third compartment that has no path from the dose, making it an orphan compartment. The dissociation constant KD is recorded as 0.00929 with no unit, failing to represent a valid rate constant. Additionally, the non-renal clearance parameter is identified by the wrong parameter code for that pharmacokinetic definition. Extracted — sparteine: AUC 255, V2 436 L, k21 0.0774 1/h, k12 0.0661 1/h, KD 0.00929, V1 59.4 L, V 99.3 L, CLNR 126 ml/min.
+The non-renal clearance parameter for sparteine has a value of 126.3 but no specified unit, preventing conversion to standard units. The second reader identified multiple parameter entries with missing values that were not captured in this record. The model was rejected due to an unreachable compartment, though the specific structural defect is not detailed in the findings. Extracted — sparteine: AUC 255, V2 436 L, k21 0.0774 1/h, k12 0.0661 1/h, KD 0.00929, V1 59.4 L, V 99.3 L, CLNR 126 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of /3: this record has none, the second reading 0.0046; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of /3: this record has none, the second reading 0.0046; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -136,20 +136,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.6 (12/20 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.6 (12/20 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[/3]` |  | 0.0046 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[0-2]` |  | 16.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[24-36]` |  | 96.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[36-48]` |  | 99.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[6-9]` |  | 55.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[60]` |  | 540 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clre n].parameter_id` | Q79 | Q26 | mismatch |
-| `gpt-oss:120b` | `parameters[urine]` |  | 471 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[/3]` |  | 0.0046 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[0-2]` |  | 16.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[24-36]` |  | 96.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[36-48]` |  | 99.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[6-9]` |  | 55.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[60]` |  | 540 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clre n].parameter_id` | Q79 | Q26 | mismatch |
+| `gpt-oss-120b` | `parameters[urine]` |  | 471 | only_one_extracted |
 
 </details>
 

@@ -16,7 +16,7 @@ Puri T, Blake GM, Frost ML, Siddique M, Moore AE, Marsden PK et al. Comparison o
 
 ## Population and dosing
 
-**Population:** healthy postmenopausal women · condition healthy · age group adult · n = &gt;=12.
+**Population:** healthy postmenopausal women · condition healthy · age group adult.
 
 ## Model
 

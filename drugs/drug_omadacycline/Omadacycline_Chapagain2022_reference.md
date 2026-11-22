@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01A&quot;,&quot;href&quot;:&quot;atc/J01A.md&quot;},{&quot;label&quot;:&quot;omadacycline&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/&quot;},{&quot;label&quot;:&quot;Chapagain_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omadacycline_Chapagain2022_reference&quot;,&quot;label&quot;:&quot;Chapagain_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Chapagain2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Omadacycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omadacycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Singh_2024_CFU_mL&quot;,&quot;label&quot;:&quot;Singh_2024 \u00b7 CFU/mL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/pd_Singh_2024_CFU_mL.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_VanScoy_2020_change_in_the_log10_CFU_ml_from_baseline_at_24_&quot;,&quot;label&quot;:&quot;VanScoy_2020 \u00b7 change in the log10 CFU/ml from baseline at 24 h&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/pd_VanScoy_2020_change_in_the_log10_CFU_ml_from_baseline_at_24_.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omadacycline_Chapagain2022_reference&quot;,&quot;label&quot;:&quot;Chapagain_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Chapagain2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Omadacycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omadacycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Singh_2024_CFU_mL&quot;,&quot;label&quot;:&quot;Singh_2024 \u00b7 CFU/mL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/pd_Singh_2024_CFU_mL.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_VanScoy_2020_change_in_the_log10_CFU_ml_from_baseline_at_24_&quot;,&quot;label&quot;:&quot;VanScoy_2020 \u00b7 change in the log10 CFU/ml from baseline at 24 h&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/pd_VanScoy_2020_change_in_the_log10_CFU_ml_from_baseline_at_24_.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # omadacycline — `Omadacycline_Chapagain2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Chapagain2022_reference" status="simulated" stale="false" population="simulated healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
+> Second reader disputes central volume 21.1 L, clearance 10.3 L/h, and peripheral volume 79.9 L values, halting publication.
+
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Chapagain2022_reference" status="needs_review" stale="false" population="simulated healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omadacycline efficacy in the hollow fibre system model of pulmonary Mycobacterium avium complex and potency at clinically attainable doses. The Journal of antimicrobial chemotherapy 77(6):1694–1705 (2022).
@@ -15,7 +17,7 @@ Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omada
 
 ## Population and dosing
 
-**Population:** simulated healthy adults · condition pulmonary Mycobacterium avium complex (MAC) · age group adult · n = ?unknown.
+**Population:** simulated healthy adults · condition pulmonary Mycobacterium avium complex (MAC) · age group adult.
 
 **Dosing:** 300, 450 mg, oral, multiple, every 24 h.
 
@@ -29,6 +31,8 @@ Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omada
 <figure class="pk-models-diagram"><img src="drugs/drug_omadacycline/Omadacycline_Chapagain2022_reference/Omadacycline_Chapagain2022_reference.svg" alt="Omadacycline_Chapagain2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Clearance (L/h) | CL | 10.3 | L/h |
@@ -38,7 +42,7 @@ Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omada
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +52,13 @@ Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omada
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Second reader disputes central volume 21.1 L, clearance 10.3 L/h, and peripheral volume 79.9 L values, halting publication.**
+
+The review was held back because a second reader failed to verify the extracted pharmacokinetic parameters for the two-compartment model. This second reader reported different values for the central volume (95.28 L), total clearance (22.40 L/h), and peripheral volume (26.96 L) compared to the primary extraction. Additionally, the second reader could not locate a corresponding value for the intercompartmental clearance, which was recorded as 0.12 mL/min. Extracted — omadacycline: CL 10.3 L/h, V1 21.1 L, V2 79.9 L, Q 0.12 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[central volume].value`: this record has 21.1, the second reading 95.28; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -126,14 +132,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=omadacycline) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=omadacycline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

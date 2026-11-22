@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The camrelizumab pharmacokinetic model was quarantined because clearance, volume of distribution, and rate constants lacked extracted values and relied on library placeholders.
+> No values were extracted for camrelizumab clearance or volume of distribution, so placeholders were used and the model was held back.
 
 <div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Shang2022_reference" status="model_quarantined" stale="false" population="patients with multiple tumor types" measured-compound="camrelizumab" parameterization="mechanistic" topology="3C"></div>
 
@@ -50,9 +50,9 @@ Shang J, Huang L, Huang J, Ren X, Liu Y, Feng Y. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**The camrelizumab pharmacokinetic model was quarantined because clearance, volume of distribution, and rate constants lacked extracted values and relied on library placeholders.**
+**No values were extracted for camrelizumab clearance or volume of distribution, so placeholders were used and the model was held back.**
 
-The record shows null values for the primary pharmacokinetic parameters, forcing the model to use default constants. Although the record lists typical estimates for clearance and central volume, the specific model coefficients were not explicitly provided. A second reader disagreed with the extraction of derived volumes, confirming the ambiguity in the source data. Extracted — camrelizumab: Q 0.703 L/day, V2 2.78 L, V 6.8 L.
+The record contains no extracted values for clearance, volume of distribution, or the transfer rate constants between compartments. Consequently, the model relied on generic placeholder values instead of specific estimates for this patient population. A second reader identified alternative values for inter-compartmental clearance and peripheral volume, disagreeing with the record's null entries for these fields. Extracted — camrelizumab: Q 0.703 L/day, V2 2.78 L, V 6.8 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
@@ -145,13 +145,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 3C → PK_3C* | PK_3C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 3C → PK_3C* | PK_3C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial, agreement 0.417, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

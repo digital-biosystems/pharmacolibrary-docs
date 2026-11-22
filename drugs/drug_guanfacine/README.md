@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;guanfacine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guanfacine_Knebel2015_reference&quot;,&quot;label&quot;:&quot;Knebel_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guanfacine_Knebel2015_reference&quot;,&quot;label&quot;:&quot;Knebel_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # guanfacine
 
@@ -25,7 +25,7 @@ Guanfacine is a centrally acting antihypertensive and alpha-2 agonist used to tr
 
 ## Start here
 
-> **Knebel_2015_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> pediatric patients. [Run it in the simulator](drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md?tab=Simulation) · [record](drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md)
+> **Knebel_2015_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> pediatric patients. [Run it in the simulator](drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md?tab=Simulation) · [record](drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Guanfacine is a centrally acting antihypertensive and alpha-2 agonist used to tr
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Knebel_2015_reference](drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Knebel W et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0245-7](https://doi.org/10.1007/s40262-015-0245-7) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Knebel_2015_reference](drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Knebel W et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0245-7](https://doi.org/10.1007/s40262-015-0245-7) |
 | <span class="pk-rf" hidden data-species="unknown" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Cherruault_1986_reference](drugs/drug_guanfacine/Guanfacine_Cherruault1986_reference.md) | — | 1-compartment (no model) | 0 | Cherruault Y et al., A three-compartment open model with fir…, International journal of bi… (1986) | [10.1016/0020-7101(86)90023-1](https://doi.org/10.1016/0020-7101(86)90023-1) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Li_2018_reference](drugs/drug_guanfacine/Guanfacine_Li2018_reference.md) | — | 1-compartment (no model) | 0 | Li A et al., Correction to: Development of Guanfacin…, Paediatric drugs (2018) | [10.1007/s40272-017-0275-8](https://doi.org/10.1007/s40272-017-0275-8) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Tsuda_2019_all](drugs/drug_guanfacine/Guanfacine_Tsuda2019_all.md) | — | 2-compartment (no model) | 4 | Tsuda Y et al., Population pharmacokinetic and exposure…, Drug metabolism and pharmac… (2019) | [10.1016/j.dmpk.2019.07.001](https://doi.org/10.1016/j.dmpk.2019.07.001) |
@@ -59,23 +59,6 @@ Guanfacine is a centrally acting antihypertensive and alpha-2 agonist used to tr
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=guanfacine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` transport | PGx paper |
-| distribution | blood-brain barrier | `ABCB1` transport | PGx paper |
-| distribution | placenta | `ABCB1` transport | PGx paper |
-| distribution | testis | `ABCB1` transport | PGx paper |
-| metabolism | liver | `CYP2C19` substrate, `CYP3A4` substrate, `SLC22A1` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` transport, `SLC22A2` substrate, `SLC47A1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` transport, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA2A (target), ADRA2B (binder).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -94,7 +77,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 40 matched, 37 returned
 - **screened:** 17  ·  **relevant:** 1
-- **records:** 6  ·  extracted 1  ·  needs review 0  ·  rejected 5  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs review 1  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

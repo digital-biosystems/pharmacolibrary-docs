@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Isoniazid&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/&quot;},{&quot;label&quot;:&quot;Yunivita_2024 \u00b7 acetylator_phenotypea_slow&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isoniazid_Courtney2026_reference&quot;,&quot;label&quot;:&quot;Courtney_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Courtney2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Yunivita2024_acetylator_phenotypea_non_slow&quot;,&quot;label&quot;:&quot;Yunivita_2024_acetylator_phenotypea_non_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_non_slow.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Yunivita2024_acetylator_phenotypea_slow&quot;,&quot;label&quot;:&quot;Yunivita_2024_acetylator_phenotypea_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_slow.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Isoniazid_Amaeze2023_reference&quot;,&quot;label&quot;:&quot;Amaeze_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Amaeze2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isoniazid_Courtney2026_reference&quot;,&quot;label&quot;:&quot;Courtney_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Courtney2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Amaeze2023_reference&quot;,&quot;label&quot;:&quot;Amaeze_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Amaeze2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Yunivita2024_acetylator_phenotypea_non_slow&quot;,&quot;label&quot;:&quot;Yunivita_2024_acetylator_phenotypea_non_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_non_slow.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Yunivita2024_acetylator_phenotypea_slow&quot;,&quot;label&quot;:&quot;Yunivita_2024_acetylator_phenotypea_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_slow.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Isoniazid — `Isoniazid_Yunivita2024_acetylator_phenotypea_slow`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0085, model 0.0146).
 
-<div class="pk-model-meta" hidden drug="Isoniazid" model-id="Isoniazid_Yunivita2024_acetylator_phenotypea_slow" status="extracted" stale="false" population="Indonesian adults aged 18-65 years treated for pulmonary RR/MDR-TB" measured-compound="Isoniazid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Isoniazid" model-id="Isoniazid_Yunivita2024_acetylator_phenotypea_slow" status="needs_review" stale="false" population="Indonesian adults aged 18-65 years treated for pulmonary RR/MDR-TB" measured-compound="Isoniazid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yunivita V, Gafar F, Santoso P, Chaidir L, Soeroto AY, Meirina TN et al. Pharmacokinetics and pharmacodynamics of high-dose isoniazid for the treatment of rifampicin- or multidrug-resistant tuberculosis in Indonesia. The Journal of antimicrobial chemotherapy 79(5):977–986 (2024).
@@ -31,6 +31,8 @@ Yunivita V, Gafar F, Santoso P, Chaidir L, Soeroto AY, Meirina TN et al. Pharmac
 <figure class="pk-models-diagram"><img src="drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_slow/Isoniazid_Yunivita2024_acetylator_phenotypea_slow.svg" alt="Isoniazid_Yunivita2024_acetylator_phenotypea_slow diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | AUC0–24, h·mg/L | AUClast | 68.7 | h·mg/L |
@@ -43,7 +45,7 @@ Yunivita V, Gafar F, Santoso P, Chaidir L, Soeroto AY, Meirina TN et al. Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +53,13 @@ Yunivita V, Gafar F, Santoso P, Chaidir L, Soeroto AY, Meirina TN et al. Pharmac
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0085, model 0.0146).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — isoniazid: AUClast 68.7 h·mg/L, Cmax 11.3 mg/L, kel 0.2 1/h, t1/2z 3.7 h, CL/F 7.7 L/h, V/F 41.5 L, kabs 4.23 h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -118,6 +126,30 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 7.7 L/h | ['Yunivita_2024_table_2:row6:col2'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 41.5 L | ['Yunivita_2024_table_2:row7:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=Isoniazid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 0.0085 | 0.0146 | 1.718 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | -32.3 | 0.0146 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | -32.5 | 0.0146 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | -34 | 0.0146 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | fail | 0.0085 | 0.0146 | 1.718 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0045 | 0.0146 | 3.244 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 5.3 | 0.0146 |  | unresolved concentration unit (exp 'null', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 19.2 | 0.0146 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | fail | 0.007 | 0.0146 | 2.086 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped |  | 0.0146 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0146 |  | non-numeric value |
+| T1_cmax | reference | skipped | 19 | 0.0146 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

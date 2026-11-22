@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;sulpiride&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/&quot;},{&quot;label&quot;:&quot;Helmy_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Peris_1988_3H_ASP_release&quot;,&quot;label&quot;:&quot;Peris_1988 \u00b7 [3H]ASP release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Peris_1988_3H_ASP_release&quot;,&quot;label&quot;:&quot;Peris_1988 \u00b7 [3H]ASP release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sulpiride — `Sulpiride_Helmy2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:57 UTC (Rejected), but the paper was screened again on 2026-10-06 17:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sulpiride's peripheral volume unit is L/kg (dimension mismatch), and the peripheral compartment is unreachable from the dose.
+> The peripheral volume of distribution for sulpiride is reported as 392.0 L/kg, a physiologically implausible unit and value that conflicts with the central volume of 45.1 L.
 
-<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Helmy2013_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="sulpiride" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Helmy2013_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="sulpiride" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Helmy SA. Therapeutic drug monitoring and pharmacokinetic compartmental analysis of sulpiride double-peak absorption profile after oral administration to human volunteers. Biopharmaceutics & drug disposition 34(5):288–301 (2013).
@@ -44,7 +44,7 @@ Helmy SA. Therapeutic drug monitoring and pharmacokinetic compartmental analysis
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.929). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.929). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Helmy SA. Therapeutic drug monitoring and pharmacokinetic compartmental analysis
 
 ### Reviewer guidance
 
-**Sulpiride's peripheral volume unit is L/kg (dimension mismatch), and the peripheral compartment is unreachable from the dose.**
+**The peripheral volume of distribution for sulpiride is reported as 392.0 L/kg, a physiologically implausible unit and value that conflicts with the central volume of 45.1 L.**
 
-The record lists the peripheral compartment volume as 392.0 L/kg, a unit inconsistent with the central volume's liters. The two-compartment structure includes a peripheral compartment with no path from the dose, rendering it orphaned. The model was built from the abstract alone, so summary statistics stood in for a fitted model. Extracted — sulpiride: kel 0.079 h(-1), t1/2z 9 h, V/F 330 L, CL/F 38.2 L/h, AUC∞ 1.4e+03 ng.h/mL, k21 0.68 h(-1), kabs 0.7 h(-1), V1/F 45.1 L, … (+2).
+The record lists the peripheral compartment volume of distribution for sulpiride as 392.0 L/kg, whereas the central compartment volume is 45.1 L. The peripheral value’s unit of L/kg is inconsistent with the central volume’s unit of L and yields a non-physiological magnitude. Additionally, the review notes the peripheral compartment was unreachable from the dose, and the model relied solely on abstract-only summary statistics rather than fitted data. Extracted — sulpiride: kel 0.079 h(-1), t1/2z 9 h, V/F 330 L, CL/F 38.2 L/h, AUC∞ 1.4e+03 ng.h/mL, k21 0.68 h(-1), kabs 0.7 h(-1), V1/F 45.1 L, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vp,sul/f: this record has 392.0, the second reading none. That field does not shape the model.
 

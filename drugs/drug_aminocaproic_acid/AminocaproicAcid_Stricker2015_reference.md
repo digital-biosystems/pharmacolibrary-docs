@@ -38,7 +38,7 @@ Stricker PA, Gastonguay MR, Singh D, Fiadjoe JE, Sussman EM, Pruitt EY et al. Po
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Stricker PA, Gastonguay MR, Singh D, Fiadjoe JE, Sussman EM, Pruitt EY et al. Po
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — aminocaproic acid: CL 153 ml min(-1) 70 kg(-1), Q 200 ml min(-1) 70 kg(-1), V1 8.78 litre 70 kg(-1), V2 15.8 litre 70 kg(-1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has aminocaproic_acid, the second reading ε-aminocaproic acid; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminocaproic_acid, the second reading ε-aminocaproic acid; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,22 +86,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[central volume of distribution]` | 8.78 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[central volume of distribution]` |  | 8.78 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 200 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` |  | 200 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution]` | 15.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution]` |  | 15.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[plasma clearance]` | 153 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[plasma clearance]` |  | 153 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | aminocaproic_acid | ε-aminocaproic acid | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | aminocaproic_acid | ε-aminocaproic acid | mismatch |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | 8.78 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 8.78 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 200 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 200 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 15.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` |  | 15.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | 153 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` |  | 153 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | aminocaproic_acid | ε-aminocaproic acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | aminocaproic_acid | ε-aminocaproic acid | mismatch |
 
 </details>
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;sufentanil&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/&quot;},{&quot;label&quot;:&quot;Pokorn\u00e1_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sufentanil_Hahn2019_final&quot;,&quot;label&quot;:&quot;Hahn_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Hahn2019_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_reference&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Pokorn2021_reference&quot;,&quot;label&quot;:&quot;Pokorn\u00e1_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Pokorn2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sufentanil_Pypendop2014_reference&quot;,&quot;label&quot;:&quot;Pypendop_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Pypendop2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Borsuk2017_reference&quot;,&quot;label&quot;:&quot;Borsuk_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Borsuk2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Cox_1998_EEG&quot;,&quot;label&quot;:&quot;Cox_1998 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/pd_Cox_1998_EEG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sufentanil_Pypendop2014_reference&quot;,&quot;label&quot;:&quot;Pypendop_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Pypendop2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Borsuk2017_reference&quot;,&quot;label&quot;:&quot;Borsuk_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Borsuk2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Hahn2019_final&quot;,&quot;label&quot;:&quot;Hahn_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Hahn2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_reference&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Pokorn2021_reference&quot;,&quot;label&quot;:&quot;Pokorn\u00e1_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/Sufentanil_Pokorn2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Cox_1998_EEG&quot;,&quot;label&quot;:&quot;Cox_1998 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sufentanil/pd_Cox_1998_EEG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sufentanil — `Sufentanil_Pokorn2021_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Pokorn2021_reference" status="simulated" stale="false" population="ventilated full-term neonates" measured-compound="sufentanil" parameterization="mechanistic" topology="1C"></div>
+> Sufentanil’s reported volume of distribution (4.7 L/kg) and clearance (0.651 L/h/kg) remain disputed, so this abstract-only record was held for review.
+
+<div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Pokorn2021_reference" status="needs_review" stale="false" population="ventilated full-term neonates" measured-compound="sufentanil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pokorná P, Šíma M, Koch B, Tibboel D, Slanař O. Sufentanil Disposition and Pharmacokinetic Model-Based Dosage Regimen for Sufentanil in Ventilated Full-Term Neonates. Pharmacology 106(7-8):384–389 (2021).
@@ -27,6 +29,8 @@ Pokorná P, Šíma M, Koch B, Tibboel D, Slanař O. Sufentanil Disposition and P
 <figure class="pk-models-diagram"><img src="drugs/drug_sufentanil/Sufentanil_Pokorn2021_reference/Sufentanil_Pokorn2021_reference.svg" alt="Sufentanil_Pokorn2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | central volume of distribution (Vdc) | V | 4.7 | L/kg |
@@ -34,7 +38,7 @@ Pokorná P, Šíma M, Koch B, Tibboel D, Slanař O. Sufentanil Disposition and P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Pokorná P, Šíma M, Koch B, Tibboel D, Slanař O. Sufentanil Disposition and P
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Sufentanil’s reported volume of distribution (4.7 L/kg) and clearance (0.651 L/h/kg) remain disputed, so this abstract-only record was held for review.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record uses summary statistics from the abstract rather than a fitted model. The second reader marked the dose compound and primary analyte as unknown and did not confirm the parameter values; the cross-check was disputed, with agreement of 0.25 and 0 of 1 readers agreeing. Extracted — sufentanil: V 4.7 L/kg, CL 0.651 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sufentanil, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -120,14 +124,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=sufentanil) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=sufentanil) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

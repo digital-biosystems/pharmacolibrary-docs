@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Two inter-compartmental rate constants were left at defaults, leaving the flumequine distribution profile structurally unsupported for the three calf ages.
+> K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Mevius1990_reference" status="needs_review" stale="false" population="1-, 5- and 18-week-old veal calves" measured-compound="flumequine" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Mevius DJ, Breukink HJ, Guelen PJ, Jansen T, De Grève B. Pharmacokinetics, meta
 
 ### Reviewer guidance
 
-**Two inter-compartmental rate constants were left at defaults, leaving the flumequine distribution profile structurally unsupported for the three calf ages.**
+**K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record provides clearance and volume values but lacks explicit estimates for the transfer rates between central and peripheral compartments. Consequently, the model relies on library placeholders for these rates rather than values derived from the Mevius_1990 data. Additionally, the source was abstract-only, meaning summary statistics like Cmax stand in for a fully fitted pharmacokinetic model. Extracted — flumequine: Vss 1.07 l/kg, CLb 1.78 ml/min/kg, V 1.89 l/kg, V1 1.57 l/kg, Cmax 9.27 micrograms/ml.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flumequine: Vss 1.07 l/kg, CLb 1.78 ml/min/kg, V 1.89 l/kg, V1 1.57 l/kg, Cmax 9.27 micrograms/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clb: this record has none, the second reading 1.78; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,14 +149,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=flumequine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=flumequine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

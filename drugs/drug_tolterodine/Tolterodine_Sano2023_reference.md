@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model was held back because apparent clearance of 5-hydroxymethyl tolterodine was assumed with F=1, Fm=1, and no molar correction.
+> The record was held back because covariate scenarios were not simulated and a second reader disputed the review.
 
 <div class="pk-model-meta" hidden drug="tolterodine" model-id="Tolterodine_Sano2023_reference" status="needs_review" stale="false" population="pediatric patients with neurogenic detrusor overactivity" measured-compound="5-hydroxymethyl tolterodine" parameterization="apparent" topology="1C"></div>
 
@@ -64,9 +64,9 @@ Sano Y, Shoji S, Shahin M, Sweeney K, Darekar A, Malhotra BK. Population Pharmac
 
 ### Reviewer guidance
 
-**The model was held back because apparent clearance of 5-hydroxymethyl tolterodine was assumed with F=1, Fm=1, and no molar correction.**
+**The record was held back because covariate scenarios were not simulated and a second reader disputed the review.**
 
-The model builder assumed apparent parameterization for the metabolite, setting bioavailability and metabolite formation fraction to unity. This assumption triggered an unacceptable deviation flag that required manual review. Additionally, covariate scenarios for weight and sex were defined but not simulated in the base model. Extracted — 5-hydroxymethyl tolterodine: CLm/F 71.4 L/h, V/F 73.7 L, kabs 0.0902 h−1, tlag 0.279 h, fe 0.65.
+Although the record defines covariate effects like theta_cl_f_weight (0.75) and theta_q76_sex (0.635), only the reference individual was simulated. A second reader disagreed with the verdict, resulting in an agreement ratio of 0.643 with zero readers agreeing. The record also lacks a numerical value for the relative bioavailability parameter. Extracted — 5-hydroxymethyl tolterodine: CLm/F 71.4 L/h, V/F 73.7 L, kabs 0.0902 h−1, tlag 0.279 h, fe 0.65.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-hydroxymethyl tolterodine, the second reading 5-HMT; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -200,7 +200,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=5-hydroxymethyl tolterodine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.643, 0 of 1 reader(s) agree | 0.643 | cross-check disputed by a second reader: verdict disputed, agreement 0.643, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 2.55 | 1.98e-06 |  | unresolved concentration unit (exp 'h', sim 'kg/m3') |
 | T1_t_half_terminal | reference | pass | 7.73 | 7.683 | 0.9939 | h→SI vs simulated h |
 

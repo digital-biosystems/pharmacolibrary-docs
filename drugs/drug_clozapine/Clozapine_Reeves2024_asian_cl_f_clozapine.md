@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the total oral clearance estimate for clozapine is a negative value of -0.19.
+> The record was rejected because clozapine’s oral clearance adjusted for bioavailability (CL/F) was estimated at -0.19, an implausible negative value.
 
 <div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_asian_cl_f_clozapine" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -45,13 +45,13 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 ### Reviewer guidance
 
-**The record was rejected because the total oral clearance estimate for clozapine is a negative value of -0.19.**
+**The record was rejected because clozapine’s oral clearance adjusted for bioavailability (CL/F) was estimated at -0.19, an implausible negative value.**
 
-The parameter representing total clearance following oral administration adjusted for bioavailability is explicitly listed with a value of -0.19. A negative clearance is physiologically implausible and indicates an error in the estimated value or its unit. The record also includes a metabolite, norclozapine, linked to the parent drug, but the invalid parent clearance renders the model unusable. Extracted — clozapine: CL/F -0.19.
+The listed CL/F parameter represents total clearance following oral administration adjusted for bioavailability, and its recorded value is -0.19. The finding identifies this negative clearance estimate as implausible. The second reader disagreed about whether -0.19 was present as the ethnic CL/F estimate. Extracted — clozapine: CL/F -0.19.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clozapine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -4,11 +4,11 @@
 
 # darifenacin — `Darifenacin_Kerbusch2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:47 UTC (Rejected), but the paper was screened again on 2026-10-07 09:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The darifenacin record was rejected because the negative distribution rate constant kcomp (-0.555 h⁻¹) is physically impossible.
+> Darifenacin distribution rate constant K23 was extracted as -0.555 h, conflicting with its required rate dimension.
 
-<div class="pk-model-meta" hidden drug="darifenacin" model-id="Darifenacin_Kerbusch2003_reference" status="rejected" stale="true" population="healthy subjects and patients with OAB" measured-compound="darifenacin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="darifenacin" model-id="Darifenacin_Kerbusch2003_reference" status="rejected" stale="false" population="healthy subjects and patients with OAB" measured-compound="darifenacin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Kerbusch T, Wählby U, Milligan PA, Karlsson MO. Population pharmacokinetic modelling of darifenacin and its hydroxylated metabolite using pooled data, incorporating saturable first-pass metabolism, CYP2D6 genotype and formulation-dependent bioavailability. British journal of clinical pharmacology 56(6):639–652 (2003).
@@ -16,7 +16,7 @@ Kerbusch T, Wählby U, Milligan PA, Karlsson MO. Population pharmacokinetic mode
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with OAB · condition healthy and overactive bladder (OAB) · age group adult · n = # 337.
+**Population:** healthy subjects and patients with OAB · condition healthy and overactive bladder (OAB) · age group adult.
 
 **Dosing:** 1, 45 mg, oral, multiple.
 
@@ -40,7 +40,7 @@ Kerbusch T, Wählby U, Milligan PA, Karlsson MO. Population pharmacokinetic mode
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Kerbusch T, Wählby U, Milligan PA, Karlsson MO. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**The darifenacin record was rejected because the negative distribution rate constant kcomp (-0.555 h⁻¹) is physically impossible.**
+**Darifenacin distribution rate constant K23 was extracted as -0.555 h, conflicting with its required rate dimension.**
 
-The value -0.555 for the micro-rate constant governing distribution is negative, violating pharmacokinetic principles. This structural parameter error caused a dimension mismatch that prevented unit conversion. Consequently, the model lacked a valid SI value for this key compartmental transfer. Extracted — darifenacin: CL 24.8 L/h, V 0.519 l, kcomp -0.555 h -1, kabs 0.972 h.
+The record labels the distribution rate constant as having units of hours, yet the dimension check requires a reciprocal time unit. A second reader identified the correct value for this parameter as 6.86, rejecting the recorded negative value. The mismatch between the extracted parameter value and the physically required units caused the model's rejection. Extracted — darifenacin: CL 24.8 L/h, V 0.519 l, kcomp -0.555 h -1, kabs 0.972 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[k 23].value`: this record has -0.555, the second reading 6.86; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

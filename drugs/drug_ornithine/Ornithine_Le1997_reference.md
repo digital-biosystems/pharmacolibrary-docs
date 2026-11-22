@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;Ornithine&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/&quot;},{&quot;label&quot;:&quot;Le_1997 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ornithine — `Ornithine_Le1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:01 UTC (Rejected), but the paper was screened again on 2026-10-07 19:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on the formation clearance parameter, compounded by reliance on abstract-only data where summary statistics replaced fitted model parameters.
+> Rejected because ornithine's elimination half-life of 89 min has mismatched units against its structural parameters, and the record is abstract-only.
 
-<div class="pk-model-meta" hidden drug="Ornithine" model-id="Ornithine_Le1997_reference" status="rejected" stale="true" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Ornithine" model-id="Ornithine_Le1997_reference" status="rejected" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Ornithine alpha-ketoglutarate metabolism after enteral administration in burn patients: bolus compared with continuous infusion. The American journal of clinical nutrition 65(2):512–518 (1997).
@@ -43,7 +43,7 @@ Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Or
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Or
 
 ### Reviewer guidance
 
-**The record was rejected due to a dimension mismatch on the formation clearance parameter, compounded by reliance on abstract-only data where summary statistics replaced fitted model parameters.**
+**Rejected because ornithine's elimination half-life of 89 min has mismatched units against its structural parameters, and the record is abstract-only.**
 
-The model structure lists a formation clearance parameter linking ornithine alpha-ketoglutarate to metabolites, yet no numerical value for this clearance is provided in the parameter list. Because the record was derived solely from the paper's abstract, summary statistics such as AUC and half-life were used in place of fitted compartmental model estimates. Additionally, there is a discrepancy in the terminal elimination half-life parameter identification, with one reader assigning it a different code than the second reader. Extracted — ornithine: kabs 0.028 min-1, t1/2z 89 min, CL 0.133 L/h, V 7.22 L; proline: AUCt 41.4 mmol.min/L; glutamine: AUCt 20.4 mmol.min/L; arginine: AUC 7.3 mmol.min/L.
+The elimination half-life parameter for ornithine is assigned a value of 89 min, which conflicts dimensionally with the structural parameters' units. Additionally, the record was built from the abstract alone, so reported summary statistics stood in for a fitted model, limiting the model's validity. Extracted — ornithine: kabs 0.028 min-1, t1/2z 89 min, CL 0.133 L/h, V 7.22 L; proline: AUCt 41.4 mmol.min/L; glutamine: AUCt 20.4 mmol.min/L; arginine: AUC 7.3 mmol.min/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ornithine alpha-ketoglutarate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

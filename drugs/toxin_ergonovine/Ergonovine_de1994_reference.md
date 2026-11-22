@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ergonovine&quot;,&quot;href&quot;:&quot;drugs/toxin_ergonovine/&quot;},{&quot;label&quot;:&quot;de_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergonovine_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergonovine/Ergonovine_de1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergonovine_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergonovine/Ergonovine_de1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ergonovine — `Ergonovine_de1994_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> Bioavailability (F) and lag time (Tlag) were unreported in the abstract and filled with library defaults, lacking extraction or justification for ergonovine.
 
-<div class="pk-model-meta" hidden drug="Ergonovine" model-id="Ergonovine_de1994_reference" status="extracted" stale="false" population="six human male subjects" measured-compound="ergonovine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Ergonovine" model-id="Ergonovine_de1994_reference" status="needs_review" stale="false" population="six human male subjects" measured-compound="ergonovine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 de Groot AN, Vree TB, Hekster YA, van den Biggelaar-Martea M, van Dongen PW, van Roosmalen J. Pharmacokinetics and bioavailability of oral ergometrine in male volunteers. Biopharmaceutics & drug disposition 15(1):65–73 (1994).
@@ -29,6 +29,8 @@ de Groot AN, Vree TB, Hekster YA, van den Biggelaar-Martea M, van Dongen PW, van
 <figure class="pk-models-diagram"><img src="drugs/toxin_ergonovine/Ergonovine_de1994_reference/Ergonovine_de1994_reference.svg" alt="Ergonovine_de1994_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | The distribution half-life t1/2 alpha | t1/2α | 0.18 | h |
@@ -39,7 +41,7 @@ de Groot AN, Vree TB, Hekster YA, van den Biggelaar-Martea M, van Dongen PW, van
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ de Groot AN, Vree TB, Hekster YA, van den Biggelaar-Martea M, van Dongen PW, van
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Bioavailability (F) and lag time (Tlag) were unreported in the abstract and filled with library defaults, lacking extraction or justification for ergonovine.**
+
+The model was built from abstract summary statistics, lacking a fitted model for these structural parameters. While clearance, volumes, and half-lives were extracted, bioavailability and lag time were not, necessitating the use of unconstrained placeholder values. This substitution prevents validation of the simulated ergonovine profile against the actual study data. Extracted — ergonovine: t1/2α 0.18 h, t1/2β 2.06 h, CL 35.9 l h-1, Vss 73.4 L, t1/2ka 0.19 h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -106,6 +114,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 35.9 L/h | ['de_1994:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 73.4 L | ['de_1994:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ergonovine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

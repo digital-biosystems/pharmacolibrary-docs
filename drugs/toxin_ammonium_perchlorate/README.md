@@ -67,7 +67,7 @@ LD50: 1900 mg/kg (Oral, Rabbit)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-17 09:38 | 11:43 | 2/1/0 | 0/1/0 | 0/0/0 | 268,527/16,290 | einfracz / qwen3.8-flash-next | 8 | 1/6 | 8/0 | 0 |
+| 2026-11-17 09:38 | 11:43 | 2/1/0 | 0/3/0 | 0/0/0 | 268,527/16,290 | einfracz / qwen3.8-flash-next | 8 | 1/6 | 8/0 | 0 |
 
 ## Coverage
 

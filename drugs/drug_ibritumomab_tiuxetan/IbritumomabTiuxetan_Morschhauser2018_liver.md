@@ -4,11 +4,11 @@
 
 # ibritumomab tiuxetan — `IbritumomabTiuxetan_Morschhauser2018_liver`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 16:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance for ibritumomab tiuxetan used unconvertible minutes, and inter-compartmental rate constants were not extracted from the record.
+> The model was rejected because the reported clearance unit 'ml.min' was not recognized, preventing conversion to SI units.
 
-<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_liver" status="rejected" stale="true" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_liver" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al. A new pharmacokinetic model for 90Y-ibritumomab tiuxetan based on 3-dimensional dosimetry. Scientific reports 8(1):14860 (2018).
@@ -41,7 +41,7 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 ### Reviewer guidance
 
-**Clearance for ibritumomab tiuxetan used unconvertible minutes, and inter-compartmental rate constants were not extracted from the record.**
+**The model was rejected because the reported clearance unit 'ml.min' was not recognized, preventing conversion to SI units.**
 
-The clearance value of 1.03 was reported in minutes, a time unit not supported for standard conversion, causing a dimensional error. A second reader identified inter-compartmental rate constants (0.033, 0.738, 0.516, 0.167) and a liver volume that were missing from this record. The record also showed a mismatch between the labeled antibody and the specific radioisotope analytes. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+The review identified a dimension mismatch for the clearance parameter (CL), as the provided unit 'ml.min' did not align with the expected volumetric flow dimensions. The second reader disputed the record by extracting a value of 485 for the blood volume in corresponding volume, which the primary record left null. Additionally, the clearance value of 1.03 was associated with the unrecognized unit, leaving the parameter without an SI value. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of blood in corresponding volume*: this record has none, the second reading 485. That field does not shape the model.
 

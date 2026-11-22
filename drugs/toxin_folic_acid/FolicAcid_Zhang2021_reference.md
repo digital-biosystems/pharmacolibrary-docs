@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Folic acid clearance of 0.001 L/h/kg and volume of 0.2393 L yielded implausible pharmacokinetics, suggesting unit or scale extraction errors.
 
 <div class="pk-model-meta" hidden drug="Folic acid" model-id="FolicAcid_Zhang2021_reference" status="rejected" stale="false" population="Sprague-Dawley (SD) rats" measured-compound="folic_acid" parameterization="apparent" topology="1C"></div>
 
@@ -47,7 +47,13 @@ Zhang Y, Zhao J, Jing J, Zhang R, Zhou X, Gao J et al. Effects of Simulated Weig
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Folic acid clearance of 0.001 L/h/kg and volume of 0.2393 L yielded implausible pharmacokinetics, suggesting unit or scale extraction errors.**
+
+The recorded folic acid clearance is 0.001 L/h/kg. The volume of distribution is recorded as 0.2393 L. The combination of these specific values fell outside the physiological window, indicating a likely error in the extraction of units or scaling for these parameters. Extracted — folic acid: CL/F 0.001 L/h/kg, V/F 0.239 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

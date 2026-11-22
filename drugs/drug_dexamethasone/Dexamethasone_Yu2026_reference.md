@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Dexamethasone unbound clearance of 494 mL/h and volume of distribution of 16.9 mL are physiologically implausible, triggering rejection for magnitude error.
+> The extracted volume of distribution for dexamethasone is 16.9 mL, a physiologically implausible magnitude that triggers rejection.
 
 <div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Yu2026_reference" status="rejected" stale="false" population="horses" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Yu R, Toutain PL, Ekstrand C, Jusko WJ. Meta-Analysis and Physiologically-Based 
 
 ### Reviewer guidance
 
-**Dexamethasone unbound clearance of 494 mL/h and volume of distribution of 16.9 mL are physiologically implausible, triggering rejection for magnitude error.**
+**The extracted volume of distribution for dexamethasone is 16.9 mL, a physiologically implausible magnitude that triggers rejection.**
 
-The extracted unbound clearance is 494 mL/h, and the volume of distribution is 16.9 mL. These values fall outside the physiological window for dexamethasone, indicating a unit or scale extraction error. The second reader failed to confirm these values, assigning nulls to both parameters during cross-checking. Extracted — dexamethasone: CLu 494 mL/h, V 16.9 mL, kabs 2.95 h -1.
+The record lists the volume of distribution as 16.9 mL, a value far below typical human physiological ranges, indicating a scale or unit extraction error. The second reader identified significant discrepancies in extracted values, specifically assigning 494 to the volume field where 16.9 was recorded, suggesting the parameters may be misaligned or incorrectly mapped. The source text is identified as secondary review material, which often presents summary statistics rather than fitted model parameters, increasing the likelihood of transcription errors. Extracted — dexamethasone: CLu 494 mL/h, V 16.9 mL, kabs 2.95 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CLu: this record has 494, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

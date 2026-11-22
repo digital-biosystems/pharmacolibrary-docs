@@ -138,30 +138,13 @@ _All readers agree on the compared fields of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_olopatadine/Olopatadine_Meier2017_multiple_dose_olopatadine_0_77/Olopatadine_Meier2017_multiple_dose_olopatadine_0_77_matlab.zip" download>Olopatadine_Meier2017_multiple_dose_olopatadine_0_77_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_olopatadine/Olopatadine_Meier2017_multiple_dose_olopatadine_0_77/Olopatadine_Meier2017_multiple_dose_olopatadine_0_77_sbml.zip" download>Olopatadine_Meier2017_multiple_dose_olopatadine_0_77_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_olopatadine/Olopatadine_Meier2017_multiple_dose_olopatadine_0_77/Olopatadine_Meier2017_multiple_dose_olopatadine_0_77_cellml.zip" download>Olopatadine_Meier2017_multiple_dose_olopatadine_0_77_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Meier E, Narvekar A, Iyer GR, DuBiner HB, Vutikullird A, Wirta D et al. Pharmacokinetics and safety of olopatadine hydrochloride 0.77% in healthy subjects with asymptomatic eyes: data from 2 independent clinical studies. Clinical ophthalmology (Auckland, N.Z.) 11:669–681 (2017). [doi:10.2147/OPTH.S126690](https://doi.org/10.2147/OPTH.S126690)
-
-**This record:** Pharmacolibrary, model `Olopatadine_Meier2017_multiple_dose_olopatadine_0_77`. <https://pharmacolibrary.github.io/#/drugs/toxin_olopatadine/Olopatadine_Meier2017_multiple_dose_olopatadine_0_77>
-
-```bibtex
-@misc{pharmacolibrary_OlopatadineMeier2017multipledoseolopatadine077,
-  title  = {{Pharmacolibrary model Olopatadine_Meier2017_multiple_dose_olopatadine_0_77}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_olopatadine/Olopatadine_Meier2017_multiple_dose_olopatadine_0_77},
-  note   = {Parameters from doi:10.2147/OPTH.S126690},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

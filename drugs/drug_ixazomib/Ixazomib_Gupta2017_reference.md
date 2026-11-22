@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;ixazomib&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/&quot;},{&quot;label&quot;:&quot;Gupta_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ixazomib_Gupta2017_reference&quot;,&quot;label&quot;:&quot;Gupta_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Srimani_2022_platelet_count&quot;,&quot;label&quot;:&quot;Srimani_2022 \u00b7 platelet count&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/pd_Srimani_2022_platelet_count.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srimani_2022_M_protein&quot;,&quot;label&quot;:&quot;Srimani_2022 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/pd_Srimani_2022_M_protein.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ixazomib_Gupta2017_reference&quot;,&quot;label&quot;:&quot;Gupta_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Srimani_2022_platelet_count&quot;,&quot;label&quot;:&quot;Srimani_2022 \u00b7 platelet count&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/pd_Srimani_2022_platelet_count.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srimani_2022_M_protein&quot;,&quot;label&quot;:&quot;Srimani_2022 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/pd_Srimani_2022_M_protein.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ixazomib — `Ixazomib_Gupta2017_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="ixazomib" model-id="Ixazomib_Gupta2017_reference" status="simulated" stale="false" population="adults with multiple myeloma" measured-compound="ixazomib" parameterization="mechanistic" topology="2C"></div>
+> Cross-check disagreement: the second reader could not confirm any of the eight parameter values or the dose and analyte assignments for ixazomib.
+
+<div class="pk-model-meta" hidden drug="ixazomib" model-id="Ixazomib_Gupta2017_reference" status="needs_review" stale="false" population="adults with multiple myeloma" measured-compound="ixazomib" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gupta N, Diderichsen PM, Hanley MJ, Berg D, van de Velde H, Harvey RD et al. Population Pharmacokinetic Analysis of Ixazomib, an Oral Proteasome Inhibitor, Including Data from the Phase III TOURMALINE-MM1 Study to Inform Labelling. Clinical pharmacokinetics 56(11):1355–1368 (2017).
@@ -15,7 +17,7 @@ Gupta N, Diderichsen PM, Hanley MJ, Berg D, van de Velde H, Harvey RD et al. Pop
 
 ## Population and dosing
 
-**Population:** adults with multiple myeloma · age group adult · n = condition: "multiple myeloma",.
+**Population:** adults with multiple myeloma · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Gupta N, Diderichsen PM, Hanley MJ, Berg D, van de Velde H, Harvey RD et al. Pop
 <figure class="pk-models-diagram"><img src="drugs/drug_ixazomib/Ixazomib_Gupta2017_reference/Ixazomib_Gupta2017_reference.svg" alt="Ixazomib_Gupta2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | Absorption rate constant (log K a) | kabs | -1.09 | 1/h | 8 |
@@ -41,7 +45,7 @@ Gupta N, Diderichsen PM, Hanley MJ, Berg D, van de Velde H, Harvey RD et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +55,13 @@ Gupta N, Diderichsen PM, Hanley MJ, Berg D, van de Velde H, Harvey RD et al. Pop
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Cross-check disagreement: the second reader could not confirm any of the eight parameter values or the dose and analyte assignments for ixazomib.**
 
-A reported unit could not be converted (Fab), so that value has no SI equivalent.
+The first reader assigned values (e.g., kabs -1.09, CL 0.62, V1 2.62) to an ixazomib citrate model in multiple myeloma patients, but the second reader returned no values for any parameter. In addition, the second reader identified the dose compound and primary analyte as unknown rather than ixazomib. Because the second reader did not corroborate a single parameter or the identity of the measured molecule, the verdict was held back for review. Extracted — ixazomib: kabs -1.09 1/h, CL 0.62 L/h, V1 2.62 L, Fab -0.55 log F, Q3 1.65 L/h, V2 5.73 L, Q 3.26 L/h, V3 5.32 L, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ixazomib, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -180,17 +184,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=ixazomib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | skipped | 9.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 9.53 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 9.35 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=ixazomib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| T1_t_half_beta | reference | skipped | 9.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 9.53 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 9.35 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

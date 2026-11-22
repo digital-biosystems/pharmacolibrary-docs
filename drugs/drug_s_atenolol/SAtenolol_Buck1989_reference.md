@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;s-atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/&quot;},{&quot;label&quot;:&quot;Buck_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_van_2007_HR&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/pd_van_2007_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_van_2007_HR&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/pd_van_2007_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # s-atenolol — `SAtenolol_Buck1989_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="s-atenolol" model-id="SAtenolol_Buck1989_reference" status="simulated" stale="false" population="children" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
+> S-atenolol terminal elimination half-life 4.56 hours was missed by the second reader, causing cross-check disagreement.
+
+<div class="pk-model-meta" hidden drug="s-atenolol" model-id="SAtenolol_Buck1989_reference" status="needs_review" stale="false" population="children" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Buck ML, Wiest D, Gillette PC, Trippel D, Krull J, O'Neal W. Pharmacokinetics and pharmacodynamics of atenolol in children. Clinical pharmacology and therapeutics 46(6):629–633 (1989).
@@ -15,7 +17,7 @@ Buck ML, Wiest D, Gillette PC, Trippel D, Krull J, O'Neal W. Pharmacokinetics an
 
 ## Population and dosing
 
-**Population:** children · condition cardiac electrophysiologic studies · age group child · n = &gt;=10.
+**Population:** children · condition cardiac electrophysiologic studies · age group child.
 
 ## Model
 
@@ -27,6 +29,8 @@ Buck ML, Wiest D, Gillette PC, Trippel D, Krull J, O'Neal W. Pharmacokinetics an
 <figure class="pk-models-diagram"><img src="drugs/drug_s_atenolol/SAtenolol_Buck1989_reference/SAtenolol_Buck1989_reference.svg" alt="SAtenolol_Buck1989_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | total body clearance | CL | 0.15 | L/hr/kg |
@@ -37,7 +41,7 @@ Buck ML, Wiest D, Gillette PC, Trippel D, Krull J, O'Neal W. Pharmacokinetics an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +51,13 @@ Buck ML, Wiest D, Gillette PC, Trippel D, Krull J, O'Neal W. Pharmacokinetics an
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**S-atenolol terminal elimination half-life 4.56 hours was missed by the second reader, causing cross-check disagreement.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record contains a terminal elimination half-life of 4.56 hours for S-atenolol, but the second reader returned null for this value. Additionally, the second reader disagreed on the identifier for the distributive elimination half-life. Since the data was derived solely from the abstract, these summary statistics were not independently verified by the second reader. Extracted — s atenolol: CL 0.15 L/hr/kg, V 0.33 L/kg, Vss 0.83 L/kg, t1/2α 0.29 hour, t1/2z 4.56 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[distributive elimination half-life].parameter_id`: this record has Q59, the second reading Q57; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -126,14 +130,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=atenolol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=atenolol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

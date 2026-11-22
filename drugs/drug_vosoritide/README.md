@@ -25,8 +25,8 @@ Vosoritide is a peptide that treats achondroplasia, a condition that causes shor
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Qi_2024_median](drugs/drug_vosoritide/Vosoritide_Qi2024_median.md) | — | 1-compartment (no model) | 4 (+2 cov.) | Qi Y et al., Development of a Weight-Band Dosing App…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01371-6](https://doi.org/10.1007/s40262-024-01371-6) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ typical_value](drugs/drug_vosoritide/Vosoritide_Qi2024_typical_value.md) | — | 1-compartment (no model) | 4 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Qi_2024_median](drugs/drug_vosoritide/Vosoritide_Qi2024_median.md) | — | 1-compartment (no model) | 4 (+2 cov.) | Qi Y et al., Development of a Weight-Band Dosing App…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01371-6](https://doi.org/10.1007/s40262-024-01371-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ typical_value](drugs/drug_vosoritide/Vosoritide_Qi2024_typical_value.md) | — | 1-compartment (no model) | 4 (+2 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -40,15 +40,6 @@ Vosoritide is a peptide that treats achondroplasia, a condition that causes shor
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chan_2022_cGMP_2](drugs/drug_vosoritide/pd_Chan_2022_cGMP_2.md) | maximum increase in urine cGMP/Cr ← vosoritide · direct Emax (saturable) effect | — | Chan ML et al., Pharmacokinetics and Exposure-Response…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01059-1](https://doi.org/10.1007/s40262-021-01059-1) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chan_2022_AGV](drugs/drug_vosoritide/pd_Chan_2022_AGV.md) | annualized growth velocity ← vosoritide · direct sigmoid Emax (Hill) effect | — | Chan ML et al., Pharmacokinetics and Exposure-Response…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01059-1](https://doi.org/10.1007/s40262-021-01059-1) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vosoritide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: NPR2 (target).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -61,13 +52,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:24 | 1:12 | 0/2/0 | 1/0/0 | 0/0/0 | 93,480/11,578 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-07 03:24 | 1:12 | 0/2/0 | 7/0/0 | 0/0/0 | 93,480/11,578 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral volume of 2.42 L is disconnected from the daclizumab dose, rendering the compartment unreachable in the two-compartment structure.
+> Daclizumab was rejected because its two-compartment structure has an unreachable compartment; its reported total clearance is 0.212 L/day.
 
 <div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Diao2016_reference" status="rejected" stale="false" population="healthy volunteers and subjects with multiple sclerosis" measured-compound="daclizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Diao L, Hang Y, Othman AA, Nestorov I, Tran JQ. Population Pharmacokinetics of D
 
 ### Reviewer guidance
 
-**The peripheral volume of 2.42 L is disconnected from the daclizumab dose, rendering the compartment unreachable in the two-compartment structure.**
+**Daclizumab was rejected because its two-compartment structure has an unreachable compartment; its reported total clearance is 0.212 L/day.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disagreed with the extracted values, marking parameters such as CL, V1, and Fab as null. This lack of confirmation leaves the structural integrity of the model unverified. Extracted — daclizumab: CL 0.212 L/day, V1 3.92 L, V2 2.42 L, tlag 1.61 h, MAT 7.2 days, Fab 88 %, t1/2z 21 days.
+The unreachable compartment has no path from the dose. Only the abstract was read, so reported summary statistics stand in for a fitted model; the second reader supplied no values for total clearance, central volume, absorption lag time, mean absorption time, terminal half-life, or bioavailability, and did not identify the dose compound or primary analyte. Extracted — daclizumab: CL 0.212 L/day, V1 3.92 L, V2 2.42 L, tlag 1.61 h, MAT 7.2 days, Fab 88 %, t1/2z 21 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daclizumab, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

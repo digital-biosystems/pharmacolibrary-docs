@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Emodin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emodin_Song2022_reference&quot;,&quot;label&quot;:&quot;Song_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_emodin/Emodin_Song2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emodin_Song2022_reference&quot;,&quot;label&quot;:&quot;Song_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_emodin/Emodin_Song2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Emodin
 
@@ -32,7 +32,7 @@ Emodin is found in dock. Emodin is present in Cascara sagrada.Emodin is a purgat
 
 ## Start here
 
-> **Song_2022_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> rats. [Run it in the simulator](drugs/toxin_emodin/Emodin_Song2022_reference.md?tab=Simulation) · [record](drugs/toxin_emodin/Emodin_Song2022_reference.md)
+> **Song_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> rats. [Run it in the simulator](drugs/toxin_emodin/Emodin_Song2022_reference.md?tab=Simulation) · [record](drugs/toxin_emodin/Emodin_Song2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -40,7 +40,7 @@ Emodin is found in dock. Emodin is present in Cascara sagrada.Emodin is a purgat
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Song_2022_reference](drugs/toxin_emodin/Emodin_Song2022_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Song Y et al., Pharmacokinetics and metabolism of tran…, Journal of ethnopharmacology (2022) | [10.1016/j.jep.2022.115123](https://doi.org/10.1016/j.jep.2022.115123) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Song_2022_reference](drugs/toxin_emodin/Emodin_Song2022_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Song Y et al., Pharmacokinetics and metabolism of tran…, Journal of ethnopharmacology (2022) | [10.1016/j.jep.2022.115123](https://doi.org/10.1016/j.jep.2022.115123) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Cheng_2022_aloe_emodin](drugs/toxin_emodin/Emodin_Cheng2022_aloe_emodin.md) | — | retention function (no model) | 6 | Cheng W et al., Pharmacokinetics, Tissue Distribution,…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.827668](https://doi.org/10.3389/fphar.2022.827668) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ emodin](drugs/toxin_emodin/Emodin_Cheng2022_emodin.md) | — | retention function (no model) | 4 |  |  |
 
@@ -48,16 +48,7 @@ Emodin is found in dock. Emodin is present in Cascara sagrada.Emodin is a purgat
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hasan_1998_viability](drugs/toxin_emodin/pd_Hasan_1998_viability.md) | seed viability biomarker turnover ← emodin | — | Hasan HA, Studies on toxigenic fungi in roasted f…, Folia microbiologica (1998) | [10.1007/BF02818578](https://doi.org/10.1007/BF02818578) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=emodin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: AHR (target), CSNK2A1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">other organism</span> | [Hasan_1998_viability](drugs/toxin_emodin/pd_Hasan_1998_viability.md) | seed viability biomarker turnover ← emodin | — | Hasan HA, Studies on toxigenic fungi in roasted f…, Folia microbiologica (1998) | [10.1007/BF02818578](https://doi.org/10.1007/BF02818578) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefepime&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefepime_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/Cefepime_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefepime_Valadez2025_reference&quot;,&quot;label&quot;:&quot;Valadez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/Cefepime_Valadez2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefepime_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/Cefepime_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefepime_Valadez2025_reference&quot;,&quot;label&quot;:&quot;Valadez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/Cefepime_Valadez2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # cefepime
 
@@ -25,13 +25,13 @@ Cefepime is a fourth-generation cephalosporin antibiotic used to treat pneumonia
 
 ## Start here
 
-> **Principe_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_cefepime/Cefepime_Principe2022_reference.md?tab=Simulation) · [record](drugs/drug_cefepime/Cefepime_Principe2022_reference.md)
+> **Principe_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_cefepime/Cefepime_Principe2022_reference.md?tab=Simulation) · [record](drugs/drug_cefepime/Cefepime_Principe2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Valadez_2025 · CL</text><circle cx="363.0" cy="30.0" r="4" fill="#78909c"><title>Valadez_2025 · CL: 3.12 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Principe_2022 · CL</text><circle cx="472.2" cy="46.0" r="4" fill="#78909c"><title>Principe_2022 · CL: 6.4 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Principe_2022 · V</text><circle cx="295.4" cy="30.0" r="4" fill="#78909c"><title>Principe_2022 · V: 20 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Valadez_2025 · V</text><circle cx="316.6" cy="46.0" r="4" fill="#78909c"><title>Valadez_2025 · V: 23 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Valadez_2025 · CL</text><circle cx="363.0" cy="30.0" r="4" fill="#ef6c00"><title>Valadez_2025 · CL: 3.12 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Principe_2022 · CL</text><circle cx="472.2" cy="46.0" r="4" fill="#ef6c00"><title>Principe_2022 · CL: 6.4 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Principe_2022 · V</text><circle cx="295.4" cy="30.0" r="4" fill="#ef6c00"><title>Principe_2022 · V: 20 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Valadez_2025 · V</text><circle cx="316.6" cy="46.0" r="4" fill="#ef6c00"><title>Valadez_2025 · V: 23 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,8 +39,8 @@ Cefepime is a fourth-generation cephalosporin antibiotic used to treat pneumonia
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Principe_2022_reference](drugs/drug_cefepime/Cefepime_Principe2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Principe L et al., Microbiological, Clinical, and PK/PD Fe…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15040463](https://doi.org/10.3390/ph15040463) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Valadez_2025_reference](drugs/drug_cefepime/Cefepime_Valadez2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Valadez A et al., Individual target pharmacokinetic/pharm…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00102-25](https://doi.org/10.1128/aac.00102-25) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Principe_2022_reference](drugs/drug_cefepime/Cefepime_Principe2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Principe L et al., Microbiological, Clinical, and PK/PD Fe…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15040463](https://doi.org/10.3390/ph15040463) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Valadez_2025_reference](drugs/drug_cefepime/Cefepime_Valadez2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Valadez A et al., Individual target pharmacokinetic/pharm…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00102-25](https://doi.org/10.1128/aac.00102-25) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Barreto_2023_reference](drugs/drug_cefepime/Cefepime_Barreto2023_reference.md) | — | 1-compartment (no model) | 0 | Barreto EF et al., Population pharmacokinetic model of cef…, Antimicrobial agents and ch… (2023) | [10.1128/aac.00810-23](https://doi.org/10.1128/aac.00810-23) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Capparelli_2005_reference](drugs/drug_cefepime/Cefepime_Capparelli2005_reference.md) | — | 1-compartment (no model) | 0 | Capparelli E et al., Population pharmacokinetics of cefepime…, Antimicrobial agents and ch… (2005) | [10.1128/AAC.49.7.2760-2766.2005](https://doi.org/10.1128/AAC.49.7.2760-2766.2005) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Walker_2005_reference](drugs/drug_cefepime/Cefepime_Walker2005_reference.md) | — | 1-compartment (no model) | 0 | Walker P et al., Subcutaneous administration of cefepime, Journal of pain and symptom… (2005) | [10.1016/j.jpainsymman.2005.03.007](https://doi.org/10.1016/j.jpainsymman.2005.03.007) |
@@ -50,18 +50,6 @@ Cefepime is a fourth-generation cephalosporin antibiotic used to treat pneumonia
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.50).">mouse</span> | [Muller_2022_1_log10_kill](drugs/drug_cefepime/pd_Muller_2022_1_log10_kill.md) | 1 log10 kill ← cefepime · direct sigmoid Emax (Hill) effect | — | Muller AE et al., Cefepime pharmacodynamic targets agains…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac349](https://doi.org/10.1093/jac/dkac349) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefepime).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `SLC15A1` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -81,7 +69,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 143 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 2  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

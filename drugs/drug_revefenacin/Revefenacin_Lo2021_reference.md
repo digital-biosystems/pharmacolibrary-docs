@@ -4,11 +4,11 @@
 
 # revefenacin — `Revefenacin_Lo2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-07 14:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because revefenacin's absorption rate constant has a unit mismatch.
+> Absorption rate constant is reported in L/h instead of 1/h, conflicting with its dimension.
 
-<div class="pk-model-meta" hidden drug="revefenacin" model-id="Revefenacin_Lo2021_reference" status="rejected" stale="true" population="patients with chronic obstructive pulmonary disease" measured-compound="revefenacin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="revefenacin" model-id="Revefenacin_Lo2021_reference" status="rejected" stale="false" population="patients with chronic obstructive pulmonary disease" measured-compound="revefenacin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Lo A, Borin MT, Bourdet DL. Population Pharmacokinetics of Revefenacin in Patients with Chronic Obstructive Pulmonary Disease. Clinical pharmacokinetics 60(3):391–401 (2021).
@@ -16,7 +16,7 @@ Lo A, Borin MT, Bourdet DL. Population Pharmacokinetics of Revefenacin in Patien
 
 ## Population and dosing
 
-**Population:** patients with chronic obstructive pulmonary disease · condition chronic obstructive pulmonary disease · age group adult · n = # 935.
+**Population:** patients with chronic obstructive pulmonary disease · condition chronic obstructive pulmonary disease · age group adult.
 
 **Dosing:** 0.022, 0.7 mg, inhaled, multiple, every 24 h.
 
@@ -47,7 +47,7 @@ Lo A, Borin MT, Bourdet DL. Population Pharmacokinetics of Revefenacin in Patien
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.136). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.136). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Lo A, Borin MT, Bourdet DL. Population Pharmacokinetics of Revefenacin in Patien
 
 ### Reviewer guidance
 
-**The record was rejected because revefenacin's absorption rate constant has a unit mismatch.**
+**Absorption rate constant is reported in L/h instead of 1/h, conflicting with its dimension.**
 
-The absorption rate constant for revefenacin is listed with a value of 200 and units of L/h. A rate constant should be expressed as a reciprocal time, so volume units are dimensionally incorrect. A second reader disagreed on the values for several parameters, including V1/F (867 L vs. 26.9) and Fmet (0.21 vs. 0). Extracted — revefenacin: CL 668 L/h, V1/F 867 L, Q/F 2.61e+03 L/h, V2/F 1.55e+04 L, kabs 200 L/h, Fab 0.553; THRX-195518: CL 53.2 L/h, V1/F 20.4 L, Q/F 36.3 L/h, V2/F 35.8 L, fm 0.21.
+The absorption rate constant has a value of 200 with the unit L/h, but its meaning identifies it as a rate constant requiring 1/time. This mismatch causes a dimension conflict because L/h is a volume flow rate, not a rate constant. Consequently, the record was rejected for a dimensional error on a structural parameter. Extracted — revefenacin: CL 668 L/h, V1/F 867 L, Q/F 2.61e+03 L/h, V2/F 1.55e+04 L, kabs 200 L/h, Fab 0.553; THRX-195518: CL 53.2 L/h, V1/F 20.4 L, Q/F 36.3 L/h, V2/F 35.8 L, fm 0.21.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has revefenacin, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ergotamine&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/&quot;},{&quot;label&quot;:&quot;Perrin_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Ibraheem1982_reference&quot;,&quot;label&quot;:&quot;Ibraheem_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Perrin1985_reference&quot;,&quot;label&quot;:&quot;Perrin_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Perrin1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Ibraheem1982_reference&quot;,&quot;label&quot;:&quot;Ibraheem_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Perrin1985_reference&quot;,&quot;label&quot;:&quot;Perrin_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Perrin1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Abstract-only summary statistics replace a fitted model; the half-life is a range midpoint rather than a precise value.
 
 <div class="pk-model-meta" hidden drug="Ergotamine" model-id="Ergotamine_Perrin1985_reference" status="needs_review" stale="false" population="migraine and cluster headache patients and normal volunteers" measured-compound="Ergotamine" parameterization="mechanistic" topology="retention"></div>
 
@@ -45,7 +45,13 @@ Perrin VL. Clinical pharmacokinetics of ergotamine in migraine and cluster heada
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Abstract-only summary statistics replace a fitted model; the half-life is a range midpoint rather than a precise value.**
+
+The record derives from an abstract, so population summary statistics substitute for individual fitted parameters. The terminal half-life is recorded as 2.25 hours, which represents the midpoint of a reported range rather than a specific estimate. This lack of precise parameter estimation limits the model's mechanistic utility. Extracted — ergotamine: t1/2z 2.25 hours, CL 18.7 mL/min, V 2.9 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

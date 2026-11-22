@@ -5,11 +5,11 @@
 
 # nifedipine — `Nifedipine_Blea1997_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 15:32 UTC (Needs review), but the paper was screened again on 2026-10-07 03:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_Blea1997_reference" status="needs_review" stale="true" population="pregnant ewes" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_Blea1997_reference" status="needs_review" stale="false" population="pregnant ewes" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Blea CW, Barnard JM, Magness RR, Phernetton TM, Hendricks SK. Effect of nifedipine on fetal and maternal hemodynamics and blood gases in the pregnant ewe. American journal of obstetrics and gynecology 176(4):922–930 (1997).
@@ -38,7 +38,7 @@ Blea CW, Barnard JM, Magness RR, Phernetton TM, Hendricks SK. Effect of nifedipi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

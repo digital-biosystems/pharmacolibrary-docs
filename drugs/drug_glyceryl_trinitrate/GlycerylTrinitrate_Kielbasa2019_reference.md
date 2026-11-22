@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;glyceryl trinitrate&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/&quot;},{&quot;label&quot;:&quot;Kielbasa_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycerylTrinitrate_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycerylTrinitrate_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycerylTrinitrate_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycerylTrinitrate_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # glyceryl trinitrate — `GlycerylTrinitrate_Kielbasa2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for glyceryl trinitrate was held back because its parameter deviations were deemed not acceptable by adjudication.
+> Glyceryl trinitrate’s reported CL/F of 0.008 L/h was rejected because the paper reviews monoclonal-antibody pharmacokinetics, not glyceryl trinitrate.
 
-<div class="pk-model-meta" hidden drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Kielbasa2019_reference" status="needs_review" stale="false" population="" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Kielbasa2019_reference" status="rejected" stale="false" population="" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kielbasa W, Helton DL. A new era for migraine: Pharmacokinetic and pharmacodynamic insights into monoclonal antibodies with a focus on galcanezumab, an anti-CGRP antibody. Cephalalgia : an international journal of headache 39(10):1284-1297 (2019).
@@ -31,7 +31,7 @@ Kielbasa W, Helton DL. A new era for migraine: Pharmacokinetic and pharmacodynam
 <figure class="pk-models-diagram"><img src="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference.svg" alt="GlycerylTrinitrate_Kielbasa2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -41,7 +41,7 @@ Kielbasa W, Helton DL. A new era for migraine: Pharmacokinetic and pharmacodynam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Kielbasa W, Helton DL. A new era for migraine: Pharmacokinetic and pharmacodynam
 
 ### Reviewer guidance
 
-**The record for glyceryl trinitrate was held back because its parameter deviations were deemed not acceptable by adjudication.**
+**Glyceryl trinitrate’s reported CL/F of 0.008 L/h was rejected because the paper reviews monoclonal-antibody pharmacokinetics, not glyceryl trinitrate.**
 
-The record lists total clearance of 0.008 L/h and volume of distribution of 6.5 L, but specific deviations were flagged as unacceptable. The model builder defaulted the lag time and assumed bioavailability was 1. A second reader disagreed on three numeric fields, identifying values of 3, 26, and null against their readings. Extracted — glyceryl trinitrate: CL/F 0.008 L/h, V/F 6.5 L, kabs 0.02 h−1.
+The paper concerns monoclonal antibodies used for migraine, and glyceryl trinitrate is mentioned only as a co-medication or covariate. The record also defaulted Tlag and assumed F=1, Fm=1, with no molar correction; a second reader disputed the verdict, with agreement 0.727. Extracted — glyceryl trinitrate: CL/F 0.008 L/h, V/F 6.5 L, kabs 0.02 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q56: this record has 3, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has 3, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -89,15 +89,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q56]` | 3 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q57]` | 26 | 1263 | mismatch |
-| `gpt-oss:120b` | `values[Q87]` |  | 82 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 26 | 1263 | mismatch |
+| `gpt-oss-120b` | `values[Q87]` |  | 82 | only_one_extracted |
 
 </details>
 
@@ -124,15 +124,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=glyceryl_trinitrate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev1: not acceptable; dev2: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | glyceryl_trinitrate (or metabolite) | paper about another drug |  | paper subject is not glyceryl_trinitrate: the paper is about another drug; this one is a co-medication or covariate: The paper is a review of pharmacokinetics for monoclonal antibodies (galcanezumab, etc.) used for migraine, and glyceryl trinitrate is only mentioned as a trigg |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=glyceryl_trinitrate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,61 +145,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference_modelica.zip" download>GlycerylTrinitrate_Kielbasa2019_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference_fmi.zip" download>GlycerylTrinitrate_Kielbasa2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference_matlab.zip" download>GlycerylTrinitrate_Kielbasa2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference_matlab_simbio.zip" download>GlycerylTrinitrate_Kielbasa2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference_sbml.zip" download>GlycerylTrinitrate_Kielbasa2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference_cellml.zip" download>GlycerylTrinitrate_Kielbasa2019_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2271 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 5e-06 | kg |
-| input | model | `Cl` | 2.222e-09 | m3/s |
-| input | model | `VdPerKg` | 9.286e-05 | m3/kg |
-| input | model | `ka` | 5.556e-06 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Kielbasa W, Helton DL. A new era for migraine: Pharmacokinetic and pharmacodynamic insights into monoclonal antibodies with a focus on galcanezumab, an anti-CGRP antibody. Cephalalgia : an international journal of headache 39(10):1284-1297 (2019). [doi:10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780)
-
-**This record:** Pharmacolibrary, model `GlycerylTrinitrate_Kielbasa2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference>
-
-```bibtex
-@misc{pharmacolibrary_GlycerylTrinitrateKielbasa2019reference,
-  title  = {{Pharmacolibrary model GlycerylTrinitrate_Kielbasa2019_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference},
-  note   = {Parameters from doi:10.1177/0333102419840780},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

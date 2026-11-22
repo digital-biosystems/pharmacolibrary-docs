@@ -5,11 +5,11 @@
 
 # oseltamivir — `Oseltamivir_Wang2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Needs review), but the paper was screened again on 2026-10-07 18:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Q and Vmax have no unit.
+> Q and Vmax have no unit.
 
-<div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Wang2026_reference" status="needs_review" stale="true" population="infants and toddlers (birth through 23 months) with influenza virus infection" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Wang2026_reference" status="needs_review" stale="false" population="infants and toddlers (birth through 23 months) with influenza virus infection" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Wang K, Kimberlin DW, Whitley RJ, Acosta EP. Oseltamivir drug-disease modelling in infants with influenza virus infection. British journal of clinical pharmacology (2026).
@@ -49,7 +49,7 @@ Wang K, Kimberlin DW, Whitley RJ, Acosta EP. Oseltamivir drug-disease modelling 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

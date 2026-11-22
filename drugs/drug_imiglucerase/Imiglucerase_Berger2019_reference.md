@@ -4,11 +4,11 @@
 
 # imiglucerase — `Imiglucerase_Berger2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 17:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="imiglucerase" model-id="Imiglucerase_Berger2019_reference" status="needs_review" stale="true" population="patients with Gaucher disease type 1" measured-compound="imiglucerase" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="imiglucerase" model-id="Imiglucerase_Berger2019_reference" status="needs_review" stale="false" population="patients with Gaucher disease type 1" measured-compound="imiglucerase" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Berger J, Vigan M, Pereira B, Nguyen TT, Froissart R, Belmatoug N et al. Intra-monocyte Pharmacokinetics of Imiglucerase Supports a Possible Personalized Management of Gaucher Disease Type 1. Clinical pharmacokinetics 58(4):469–482 (2019).
@@ -16,7 +16,7 @@ Berger J, Vigan M, Pereira B, Nguyen TT, Froissart R, Belmatoug N et al. Intra-m
 
 ## Population and dosing
 
-**Population:** patients with Gaucher disease type 1 · age group adult · n = n_subjects_int.
+**Population:** patients with Gaucher disease type 1 · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Berger J, Vigan M, Pereira B, Nguyen TT, Froissart R, Belmatoug N et al. Intra-m
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Berger J, Vigan M, Pereira B, Nguyen TT, Froissart R, Belmatoug N et al. Intra-m
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — imiglucerase: t1/2α 0.36 days, t1/2z 9.7 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has imiglucerase, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

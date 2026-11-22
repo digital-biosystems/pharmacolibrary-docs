@@ -16,7 +16,7 @@ Ofatumumab is a monoclonal antibody used to treat multiple sclerosis and chronic
 
 ## Start here
 
-> **Struemper_2014_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with chronic lymphocytic leukemia, follicular lymphoma, and rheumatoid arthritis, n = &gt;=477. [Run it in the simulator](drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md?tab=Simulation) · [record](drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md)
+> **Struemper_2014_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with chronic lymphocytic leukemia, follicular lymphoma, and rheumatoid arthritis. [Run it in the simulator](drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md?tab=Simulation) · [record](drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -24,18 +24,9 @@ Ofatumumab is a monoclonal antibody used to treat multiple sclerosis and chronic
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Struemper_2014_reference](drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Struemper H et al., Population pharmacokinetics of ofatumum…, Journal of clinical pharmac… (2014) | [10.1002/jcph.268](https://doi.org/10.1002/jcph.268) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Struemper_2014_reference](drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Struemper H et al., Population pharmacokinetics of ofatumum…, Journal of clinical pharmac… (2014) | [10.1002/jcph.268](https://doi.org/10.1002/jcph.268) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Coiffier_2010_reference](drugs/drug_ofatumumab/Ofatumumab_Coiffier2010_reference.md) | — | 1-compartment (no model) | 2 | Coiffier B et al., Pharmacokinetics and pharmacokinetic/ph…, British journal of haematol… (2010) | [10.1111/j.1365-2141.2010.08193.x](https://doi.org/10.1111/j.1365-2141.2010.08193.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yu_2022_reference](drugs/drug_ofatumumab/Ofatumumab_Yu2022_reference.md) | — | 2-compartment (no model) | 10 | Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022) | [10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ofatumumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: MS4A1 (antibody), MS4A1 (regulator).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yu_2022_reference](drugs/drug_ofatumumab/Ofatumumab_Yu2022_reference.md) | — | 2-compartment (no model) | 10 | Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022) | [10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +46,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

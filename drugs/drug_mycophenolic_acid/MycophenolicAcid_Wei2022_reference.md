@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The mycophenolic acid model simulates a terminal half-life of 1.217930798022114 hours, failing the paper's expected value of 17.0 hours.
+> The model's terminal half-life for mycophenolic acid is 1.22 hours, not the 17 hours reported in the paper.
 
 <div class="pk-model-meta" hidden drug="mycophenolic acid" model-id="MycophenolicAcid_Wei2022_reference" status="needs_review" stale="false" population="pediatric patients after liver transplantation" measured-compound="mycophenolic acid" parameterization="apparent" topology="1C"></div>
 
@@ -60,9 +60,9 @@ Wei Y, Wu D, Chen Y, Dong C, Qi J, Wu Y et al. Population pharmacokinetics of my
 
 ### Reviewer guidance
 
-**The mycophenolic acid model simulates a terminal half-life of 1.217930798022114 hours, failing the paper's expected value of 17.0 hours.**
+**The model's terminal half-life for mycophenolic acid is 1.22 hours, not the 17 hours reported in the paper.**
 
-The ratio between the obtained and expected half-life values is 0.0716, indicating a significant discrepancy. The model failed to cover the peripheral volume parameter, leaving the two-compartment structure incomplete. Additionally, the absorption lag time was defaulted rather than explicitly estimated, and covariate scenarios were not simulated. Extracted — mycophenolic acid: CLm/F 14.8 L/h, kabs 2 h−1, V1/F 6 L, V2/F 269 L, Q/F 15.4 L/h.
+The simulation produced a terminal half-life of 1.22 hours, which is only 0.0716 of the 17 hours reported in the paper. Additionally, the parameter V2/F was not included in the final set of covered parameters. The record also lacks simulated covariate scenarios, so only the reference individual was tested. Extracted — mycophenolic acid: CLm/F 14.8 L/h, kabs 2 h−1, V1/F 6 L, V2/F 269 L, Q/F 15.4 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -157,7 +157,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=mycophenolic acid) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | D1: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_t_half_terminal | reference | fail | 17 | 1.218 | 0.0716 | h→SI vs simulated h |
 
 <details class="legend">

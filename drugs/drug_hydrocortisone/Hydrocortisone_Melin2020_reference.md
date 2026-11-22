@@ -16,7 +16,7 @@ Melin J, Parra-Guillen ZP, Michelet R, Truong T, Huisinga W, Hartung N et al. Ph
 
 ## Population and dosing
 
-**Population:** pediatric patients with congenital adrenal hyperplasia · age group child · n = 30.
+**Population:** pediatric patients with congenital adrenal hyperplasia · age group child.
 
 **Dosed compound ≠ measured compound:** dosed hydrocortisone, measured cortisol.
 

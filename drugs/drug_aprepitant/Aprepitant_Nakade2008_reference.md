@@ -5,11 +5,11 @@
 
 # aprepitant — `Aprepitant_Nakade2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-04 13:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance parameter for aprepitant is incorrectly recorded with units of percent, causing a dimension mismatch that invalidates the model.
+> The dexamethasone clearance parameter in the aprepitant model is assigned a value of 24.7 with unit %.
 
-<div class="pk-model-meta" hidden drug="aprepitant" model-id="Aprepitant_Nakade2008_reference" status="rejected" stale="true" population="Japanese cancer patients and healthy volunteers" measured-compound="aprepitant" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aprepitant" model-id="Aprepitant_Nakade2008_reference" status="rejected" stale="false" population="Japanese cancer patients and healthy volunteers" measured-compound="aprepitant" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Nakade S, Ohno T, Kitagawa J, Hashimoto Y, Katayama M, Awata H et al. Population pharmacokinetics of aprepitant and dexamethasone in the prevention of chemotherapy-induced nausea and vomiting. Cancer chemotherapy and pharmacology 63(1):75–83 (2008).
@@ -39,7 +39,7 @@ Nakade S, Ohno T, Kitagawa J, Hashimoto Y, Katayama M, Awata H et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,11 @@ Nakade S, Ohno T, Kitagawa J, Hashimoto Y, Katayama M, Awata H et al. Population
 
 ### Reviewer guidance
 
-**The clearance parameter for aprepitant is incorrectly recorded with units of percent, causing a dimension mismatch that invalidates the model.**
+**The dexamethasone clearance parameter in the aprepitant model is assigned a value of 24.7 with unit %.**
 
-The model structure is a one-compartment model, but it assigns a clearance value of 24.7% to aprepitant. This unit is dimensionally incompatible with clearance, which must be a rate of volume over time. Although the record also lists a correctly unit-correct oral clearance of 1.54 L/h for aprepitant, the conflicting parameter causes the model to be rejected. Extracted — aprepitant: CL/F 1.54 L/h, V/F 72.1 L, kabs 0.893 /h, tlag 0.295 h, CL 24.7 %.
+This unit is dimensionless, which conflicts with the expected dimensions of volume per time required for a clearance parameter. The record was built from the abstract only, so these summary statistics stand in for a fitted model. The second reader also disagreed on the presence of a drug interaction link between aprepitant and dexamethasone. Extracted — aprepitant: CL/F 1.54 L/h, V/F 72.1 L, kabs 0.893 /h, tlag 0.295 h, CL 24.7 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading aprepitant → dexamethasone (interaction); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading aprepitant → dexamethasone (interaction); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -95,15 +95,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['aprepitant', 'dexamethasone', 'interaction']] | mismatch |
-| `gpt-oss:120b` | `parameters[cl/f]` |  | 1.54 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral clearance (cl/f) of aprepitant]` | 1.54 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['aprepitant', 'dexamethasone', 'interaction']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 1.54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral clearance (cl/f) of aprepitant]` | 1.54 |  | only_one_extracted |
 
 </details>
 

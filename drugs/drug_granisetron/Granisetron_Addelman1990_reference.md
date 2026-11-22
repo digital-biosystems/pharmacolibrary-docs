@@ -35,7 +35,7 @@ Addelman M, Erlichman C, Fine S, Warr D, Murray C. Phase I/II trial of granisetr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Addelman M, Erlichman C, Fine S, Warr D, Murray C. Phase I/II trial of granisetr
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — granisetron: AUC 277 ng.h/mL, CL 0.319 L/kg/hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has granisetron, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has granisetron, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,18 +81,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[area under the plasma concentration curve]` |  | 277 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the area under the plasma concentration curve]` | 277 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the total body clearance]` | 0.319 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total body clearance]` |  | 0.319 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | granisetron | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | granisetron | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[area under the plasma concentration curve]` |  | 277 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the area under the plasma concentration curve]` | 277 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the total body clearance]` | 0.319 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` |  | 0.319 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | granisetron | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | granisetron | unknown | mismatch |
 
 </details>
 

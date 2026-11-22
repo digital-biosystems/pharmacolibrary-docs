@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01X&quot;,&quot;href&quot;:&quot;atc/J01X.md&quot;},{&quot;label&quot;:&quot;linezolid&quot;,&quot;href&quot;:&quot;drugs/drug_linezolid/&quot;},{&quot;label&quot;:&quot;Ngara_2025 \u00b7 estimates_rse_2&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linezolid_BandnVilar2022_reference&quot;,&quot;label&quot;:&quot;Band\u00edn-Vilar_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linezolid/Linezolid_BandnVilar2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linezolid_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linezolid/Linezolid_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vera_Yunca_2025_bacterial_load&quot;,&quot;label&quot;:&quot;Vera-Yunca_2025 \u00b7 bacterial load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linezolid/pd_Vera_Yunca_2025_bacterial_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linezolid_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linezolid/Linezolid_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linezolid_BandnVilar2022_reference&quot;,&quot;label&quot;:&quot;Band\u00edn-Vilar_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linezolid/Linezolid_BandnVilar2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vera_Yunca_2025_bacterial_load&quot;,&quot;label&quot;:&quot;Vera-Yunca_2025 \u00b7 bacterial load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linezolid/pd_Vera_Yunca_2025_bacterial_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linezolid — `Linezolid_Ngara2025_estimates_rse_2`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 15:27 UTC (Rejected), but the paper was screened again on 2026-10-13 12:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The oral absorption lag time was rejected because its reported unit, days inverse, was not present in the available conversion reference.
+> The absorption lag time parameter was rejected because its value of 6.75 was recorded with units of inverse days, conflicting with the required time dimension.
 
-<div class="pk-model-meta" hidden drug="linezolid" model-id="Linezolid_Ngara2025_estimates_rse_2" status="rejected" stale="true" population="mice with tuberculosis" measured-compound="linezolid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="linezolid" model-id="Linezolid_Ngara2025_estimates_rse_2" status="rejected" stale="false" population="mice with tuberculosis" measured-compound="linezolid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational Modeling of BTZ-043 to Predict Phase 2A Efficacy and Evaluate Drug-Drug Interactions With Bedaquiline, Pretomanid, and Linezolid in Murine Models. The Journal of infectious diseases 231(5):e901–e911 (2025).
@@ -43,7 +43,7 @@ Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational M
 
 ### Reviewer guidance
 
-**The oral absorption lag time was rejected because its reported unit, days inverse, was not present in the available conversion reference.**
+**The absorption lag time parameter was rejected because its value of 6.75 was recorded with units of inverse days, conflicting with the required time dimension.**
 
-The record for linezolid in mice includes a structural parameter defined as the drug absorption lag time with a value of 6.75. The findings identify a dimension mismatch for this parameter because the specific unit used could not be converted to the standard SI system. The second reader disagreed on several parameter values, including clearance, volume of distribution, and the absorption rate constant, but the primary rejection cause remained the unit conversion failure. Extracted — linezolid: CL/F 0.01 L/h, V/F 0.73 L, kabs 0.77 h−1, fe 34, tlag 6.75 d−1.
+The recorded lag time of 6.75 was assigned a unit of d−1, which represents a rate rather than a time duration, causing a structural dimensional mismatch. Consequently, the model structure was rejected due to this fundamental unit conflict on the absorption delay parameter. A secondary reader also identified conflicting values for clearance and absorption rate, but the primary rejection stemmed from the invalid lag time unit. Extracted — linezolid: CL/F 0.01 L/h, V/F 0.73 L, kabs 0.77 h−1, fe 34, tlag 6.75 d−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (not captured); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

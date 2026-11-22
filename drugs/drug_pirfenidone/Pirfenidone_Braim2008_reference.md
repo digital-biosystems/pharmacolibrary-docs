@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;pirfenidone&quot;,&quot;href&quot;:&quot;drugs/drug_pirfenidone/&quot;},{&quot;label&quot;:&quot;Braim_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirfenidone_Braim2008_reference&quot;,&quot;label&quot;:&quot;Braim_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirfenidone_Braim2008_reference&quot;,&quot;label&quot;:&quot;Braim_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pirfenidone — `Pirfenidone_Braim2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Pirfenidone's Vss (0.791 L/kg) was incorrectly used as the central volume in a one-compartment model, failing the topology check.
-
-<div class="pk-model-meta" hidden drug="pirfenidone" model-id="Pirfenidone_Braim2008_reference" status="needs_review" stale="false" population="adult horses" measured-compound="pirfenidone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pirfenidone" model-id="Pirfenidone_Braim2008_reference" status="simulated" stale="false" population="adult horses" measured-compound="pirfenidone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Braim AE, Macdonald MH, Bruss ML, Stanley SD, Giri JK, Giri SN. Pharmacokinetics and clinical effects of pirfenidone administered intravenously in horses. American journal of veterinary research 69(7):952–960 (2008).
@@ -31,8 +29,6 @@ Braim AE, Macdonald MH, Bruss ML, Stanley SD, Giri JK, Giri SN. Pharmacokinetics
 <figure class="pk-models-diagram"><img src="drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference/Pirfenidone_Braim2008_reference.svg" alt="Pirfenidone_Braim2008_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean +/- SEM elimination half-life | t1/2z | 86.0 | minutes |
@@ -41,7 +37,7 @@ Braim AE, Macdonald MH, Bruss ML, Stanley SD, Giri JK, Giri SN. Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +47,13 @@ Braim AE, Macdonald MH, Bruss ML, Stanley SD, Giri JK, Giri SN. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Pirfenidone's Vss (0.791 L/kg) was incorrectly used as the central volume in a one-compartment model, failing the topology check.**
+**Every check that could be run on this record passed.**
 
-The record was built from the abstract only, so summary statistics stood in for a fitted model. The model builder substituted the steady-state volume of distribution (0.791 L/kg) for the missing central volume of distribution. This deviation meant the model could reproduce AUC and terminal half-life but failed to capture the early distribution phase, resulting in a refused verdict. Extracted — pirfenidone: t1/2z 86 minutes, CL 6.54 mL/kg/min, Vss 0.791 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -120,14 +116,15 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pirfenidone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pirfenidone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

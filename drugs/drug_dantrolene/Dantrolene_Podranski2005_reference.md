@@ -16,7 +16,7 @@ Podranski T, Bouillon T, Schumacher PM, Taguchi A, Sessler DI, Kurz A. Compartme
 
 ## Population and dosing
 
-**Population:** adults · condition healthy · age group adult · n = &gt;= 55.
+**Population:** adults · condition healthy · age group adult.
 
 ## Model
 

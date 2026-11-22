@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;rifapentine&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/&quot;},{&quot;label&quot;:&quot;Liu_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifapentine_Hibma2020_reference&quot;,&quot;label&quot;:&quot;Hibma_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gewitz_2021_TTP&quot;,&quot;label&quot;:&quot;Gewitz_2021 \u00b7 TTP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/pd_Gewitz_2021_TTP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Radtke_2021_CFU&quot;,&quot;label&quot;:&quot;Radtke_2021 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/pd_Radtke_2021_CFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifapentine — `Rifapentine_Liu2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 12:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record contains a 70.4% drug interaction ratio and a 21-day steady-state time instead of clearance or volume parameters.
+> Rifapentine record lacks volume and clearance parameters, failing to form a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Liu2025_reference" status="rejected" stale="true" population="children with latent tuberculosis infection" measured-compound="rifapentine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Liu2025_reference" status="rejected" stale="false" population="children with latent tuberculosis infection" measured-compound="rifapentine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Liu W, Xu N, Li W, Mak WY, He T, Qin H et al. Pharmacokinetics and safety of rifapentine in children: dosing for latent tuberculosis infection. The Journal of antimicrobial chemotherapy 80(4):1022–1030 (2025).
@@ -36,7 +35,7 @@ Liu W, Xu N, Li W, Mak WY, He T, Qin H et al. Pharmacokinetics and safety of rif
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +45,9 @@ Liu W, Xu N, Li W, Mak WY, He T, Qin H et al. Pharmacokinetics and safety of rif
 
 ### Reviewer guidance
 
-**The record contains a 70.4% drug interaction ratio and a 21-day steady-state time instead of clearance or volume parameters.**
+**Rifapentine record lacks volume and clearance parameters, failing to form a compartmental population PK model.**
 
-Because the data were extracted only from the paper's abstract, summary statistics stood in for a fitted model. Consequently, the record lacks the distribution volume and elimination clearance required for a compartmental population pharmacokinetic model. The reported 70.4% increase in clearance functions as a drug interaction parameter rather than a primary structural estimate. Extracted — rifapentine: tss 21 days, CL_ratio 70.4 %.
+The record omits distribution volume and clearance, which are essential for a one-compartment population pharmacokinetic model. It reports a 70.4% clearance ratio and a 21-day plateau time, but these do not constitute a complete PK parameter set. The second reader disputed the presence of the 70.4% value and the 21-day plateau in the extracted parameters. Extracted — rifapentine: tss 21 days, CL_ratio 70.4 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of increasing clearance: this record has 70.4, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

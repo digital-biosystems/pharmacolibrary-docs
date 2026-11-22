@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide sufficient information to define the pharmacodynamic mechanism or specific potency and rate parameters for sodium hypochlorite acting on LD50 titer. The record indicates an unknown model family and effect form, with no numerical values or mechanistic descriptions available in the excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Brown_1982`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Tetrabromobisphenol A&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/&quot;},{&quot;label&quot;:&quot;Kuester_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2014_reference&quot;,&quot;label&quot;:&quot;Knudsen_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2018_reference&quot;,&quot;label&quot;:&quot;Knudsen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Kang2009_reference&quot;,&quot;label&quot;:&quot;Kang_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Kang2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2014_reference&quot;,&quot;label&quot;:&quot;Knudsen_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2018_reference&quot;,&quot;label&quot;:&quot;Knudsen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Kang2009_reference&quot;,&quot;label&quot;:&quot;Kang_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Kang2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The AUC value of 1440 min/ml lacks mass in its unit, causing a dimension mismatch for clearance calculations.
 
 <div class="pk-model-meta" hidden drug="Tetrabromobisphenol A" model-id="TetrabromobisphenolA_Kuester2007_reference" status="rejected" stale="false" population="male F-344 rats" measured-compound="Tetrabromobisphenol A" parameterization="apparent" topology="1C"></div>
 
@@ -48,7 +48,13 @@ Kuester RK, Sólyom AM, Rodriguez VP, Sipes IG. The effects of dose, route, and 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The AUC value of 1440 min/ml lacks mass in its unit, causing a dimension mismatch for clearance calculations.**
+
+The record reports an AUC of 1440 with the unit min/ml, which is dimensionally incomplete because it omits the mass component. This unit inconsistency conflicts with the expected dimensions for clearance, preventing valid model calibration. Additionally, the model was rejected because it relied solely on abstract summary statistics rather than fitted parameters. Extracted — tetrabromobisphenol a: t1/2β 82 min, AUC∞ 1.44e+03 min/ml, CL/F 2.44 ml/min, kabs 0.95 1/hr.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;spironolactone&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/&quot;},{&quot;label&quot;:&quot;Lass_2024 \u00b7 model_2&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Zhou2010_reference&quot;,&quot;label&quot;:&quot;Zhou_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Zhou2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Zhou2010_reference&quot;,&quot;label&quot;:&quot;Zhou_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Zhou2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Spironolactone elimination clearance was missing from the record, so the model was quarantined because a placeholder value would have been required.
+> Spironolactone elimination clearance lacks a value, forcing a placeholder, while the second reader disputed the metabolite links and parameter assignments.
 
 <div class="pk-model-meta" hidden drug="spironolactone" model-id="Spironolactone_Lass2024_model_2" status="model_quarantined" stale="false" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -17,7 +17,7 @@ Lass J, Leroux S, Kõrgvee LT, Varendi H, Kipper K, Takkis K et al. Pharmacokine
 
 ## Population and dosing
 
-**Population:** infants with chronic heart failure, ascites and/or oedema · condition chronic heart failure, ascites and/or oedema · age group infant · n = &gt;=23.
+**Population:** infants with chronic heart failure, ascites and/or oedema · condition chronic heart failure, ascites and/or oedema · age group infant.
 
 **Dosing:** 70 mg, oral, single.
 
@@ -49,9 +49,9 @@ Lass J, Leroux S, Kõrgvee LT, Varendi H, Kipper K, Takkis K et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Spironolactone elimination clearance was missing from the record, so the model was quarantined because a placeholder value would have been required.**
+**Spironolactone elimination clearance lacks a value, forcing a placeholder, while the second reader disputed the metabolite links and parameter assignments.**
 
-The record lists a clearance of 78 L/h for the metabolite 7 alphathiomethylspironolactone, but provides no value for spironolactone's own elimination clearance. Because this essential parameter was not extracted from the paper, the system could not calculate the model using explicit estimates. Consequently, the model was held back rather than published with an invented number. Extracted — 7 alphathiomethylspironolactone: V 103 L, CL 78 L/h; spironolactone: kabs 1.63 h -1.
+The record failed a parameter coverage check, finding that the absorption rate constant was neither emitted nor included in the defaulted list. The second reader disagreed with the extracted metabolite formation links and identified conflicting values for the volume of distribution and clearance of 7 alphathiomethylspironolactone and canrenone. Consequently, the cross-check recorded a low agreement ratio of 0.333, with zero readers agreeing on the record's content. Extracted — 7 alphathiomethylspironolactone: V 103 L, CL 78 L/h; spironolactone: kabs 1.63 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has spironolactone → 7 alphathiomethylspironolactone (metabolism); spironolactone → canrenone (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -143,18 +143,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_param_coverage |  | fail | 3 scholar param(s) emitted or defaulted | 2 covered | neither emitted nor in defaulted[]: ['kabs'] |
-| T3_shared_parameters |  | pass | 2 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | skipped | 1.4 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.4 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 2.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.1 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage |  | fail | 3 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['kabs'] |
+| T3_shared_parameters |  | pass | 2 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| T1_t_half_beta | reference | skipped | 1.4 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.4 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 2.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.1 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -172,30 +173,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_spironolactone/Spironolactone_Lass2024_model_2/Spironolactone_Lass2024_model_2_matlab.zip" download>Spironolactone_Lass2024_model_2_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_spironolactone/Spironolactone_Lass2024_model_2/Spironolactone_Lass2024_model_2_matlab_simbio.zip" download>Spironolactone_Lass2024_model_2_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_spironolactone/Spironolactone_Lass2024_model_2/Spironolactone_Lass2024_model_2_sbml.zip" download>Spironolactone_Lass2024_model_2_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_spironolactone/Spironolactone_Lass2024_model_2/Spironolactone_Lass2024_model_2_cellml.zip" download>Spironolactone_Lass2024_model_2_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Lass J, Leroux S, Kõrgvee LT, Varendi H, Kipper K, Takkis K et al. Pharmacokinetics of oral spironolactone in infants up to 2 years of age. European journal of clinical pharmacology 80(2):239–248 (2024). [doi:10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w)
-
-**This record:** Pharmacolibrary, model `Spironolactone_Lass2024_model_2`. <https://pharmacolibrary.github.io/#/drugs/drug_spironolactone/Spironolactone_Lass2024_model_2>
-
-```bibtex
-@misc{pharmacolibrary_SpironolactoneLass2024model2,
-  title  = {{Pharmacolibrary model Spironolactone_Lass2024_model_2}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_spironolactone/Spironolactone_Lass2024_model_2},
-  note   = {Parameters from doi:10.1007/s00228-023-03599-w},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

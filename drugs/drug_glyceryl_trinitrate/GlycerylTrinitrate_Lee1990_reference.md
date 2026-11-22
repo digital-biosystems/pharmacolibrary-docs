@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;glyceryl trinitrate&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/&quot;},{&quot;label&quot;:&quot;Lee_1990 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycerylTrinitrate_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycerylTrinitrate_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycerylTrinitrate_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycerylTrinitrate_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> The glyceryl trinitrate record was rejected because it mixes apparent oral parameters like clearance and bioavailability in a single structural model, causing double correction.
+> The record was rejected because glyceryl trinitrate’s bioavailability (Fab 0.015) is paired with bioavailability-adjusted clearance (CL/F 16) and volume (V/F 6.5), creating double correction.
 
 <div class="pk-model-meta" hidden drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Lee1990_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="general_linear"></div>
 
@@ -40,7 +40,7 @@ Lee FW, Salmonson T, Metzler CH, Benet LZ. Pharmacokinetics and pharmacodynamics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Lee FW, Salmonson T, Metzler CH, Benet LZ. Pharmacokinetics and pharmacodynamics
 
 ### Reviewer guidance
 
-**The glyceryl trinitrate record was rejected because it mixes apparent oral parameters like clearance and bioavailability in a single structural model, causing double correction.**
+**The record was rejected because glyceryl trinitrate’s bioavailability (Fab 0.015) is paired with bioavailability-adjusted clearance (CL/F 16) and volume (V/F 6.5), creating double correction.**
 
-The record contains both a fractional bioavailability of 0.015 and apparent oral clearance of 16 ml/min/kg, which represent the same systemic exposure adjustment. Using both simultaneously in a general linear model creates an incoherent parameterization where bioavailability is corrected twice. Additionally, the record was built from the abstract alone, so these summary statistics stand in for a fitted model. Extracted — glyceryl trinitrate: Fab 0.015 mg/kg, t1/2z 45 min, CL/F 16 ml/min/kg, V/F 6.5 L, kabs 0.02 h−1.
+CL/F and V/F are defined as adjusted for bioavailability, while Fab separately gives the fraction reaching systemic circulation. Only the abstract was read, so its summary statistics stand in for a fitted model. Extracted — glyceryl trinitrate: Fab 0.015 mg/kg, t1/2z 45 min, CL/F 16 ml/min/kg, V/F 6.5 L, kabs 0.02 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -100,19 +100,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 0.015 |  | only_one_extracted |
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[apparent clearances]` | 16 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability of oral gtn]` | 0.015 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-lives]` | 45 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 0.02 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | 6.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 0.015 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearances]` | 16 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of oral gtn]` | 0.015 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-lives]` | 45 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.02 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 6.5 |  | only_one_extracted |
 
 </details>
 

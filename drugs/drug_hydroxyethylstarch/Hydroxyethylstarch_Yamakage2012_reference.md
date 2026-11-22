@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;hydroxyethylstarch&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/&quot;},{&quot;label&quot;:&quot;Yamakage_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxyethylstarch_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Yamakage2012_reference&quot;,&quot;label&quot;:&quot;Yamakage_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxyethylstarch_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxyethylstarch_Yamakage2012_reference&quot;,&quot;label&quot;:&quot;Yamakage_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxyethylstarch_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,7 +15,7 @@ Yamakage M, Bepperling F, Wargenau M, Miyao H. Pharmacokinetics and safety of 6�
 
 ## Population and dosing
 
-**Population:** healthy male Japanese volunteers · condition healthy · age group adult · n = &gt;=12.
+**Population:** healthy male Japanese volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Yamakage M, Bepperling F, Wargenau M, Miyao H. Pharmacokinetics and safety of 6�
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Yamakage M, Bepperling F, Wargenau M, Miyao H. Pharmacokinetics and safety of 6�
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is hydroxyethylstarch's own; they describe hydroxyethylstarch 130/0.4.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has hydroxyethylstarch 130/0.4, the second reading hydroxyethyl starch; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydroxyethylstarch 130/0.4, the second reading hydroxyethyl starch; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,21 +86,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[rapid and slow elimination half-lives]` | 1.12 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[rapid elimination half-life]` |  | 1.12 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[slow elimination half-life]` |  | 9.98 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total plasma clearance]` |  | 1.14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total plasma clearance]` | 1.14 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 4.76 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 4.76 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | hydroxyethylstarch 130/0.4 | hydroxyethyl starch | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | hydroxyethylstarch 130/0.4 | hydroxyethyl starch | mismatch |
+| `gpt-oss-120b` | `parameters[rapid and slow elimination half-lives]` | 1.12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rapid elimination half-life]` |  | 1.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slow elimination half-life]` |  | 9.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` |  | 1.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | 1.14 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 4.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 4.76 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | hydroxyethylstarch 130/0.4 | hydroxyethyl starch | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | hydroxyethylstarch 130/0.4 | hydroxyethyl starch | mismatch |
 
 </details>
 
@@ -135,6 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

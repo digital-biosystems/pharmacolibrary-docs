@@ -4,11 +4,11 @@
 
 # prethcamide — `Prethcamide_Brya1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-07 18:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Blood clearance was recorded in reciprocal minutes while absorption rate was in reciprocal hours, causing a dimension mismatch in the prethcamide pharmacokinetic record.
+> Prethcamide’s reported blood clearance, 0.05 1/min, has inverse-time units rather than the volume-per-time units required for clearance.
 
-<div class="pk-model-meta" hidden drug="prethcamide" model-id="Prethcamide_Brya1985_reference" status="rejected" stale="true" population="rabbits" measured-compound="prethcamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prethcamide" model-id="Prethcamide_Brya1985_reference" status="rejected" stale="false" population="rabbits" measured-compound="prethcamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bryła P, Szumiło T. Pharmacokinetics of prethcamide following rapid intravenous injection and oral administration in rabbits. Polish journal of pharmacology and pharmacy 37(5):653–661 (1985).
@@ -38,7 +38,7 @@ Bryła P, Szumiło T. Pharmacokinetics of prethcamide following rapid intravenou
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Bryła P, Szumiło T. Pharmacokinetics of prethcamide following rapid intravenou
 
 ### Reviewer guidance
 
-**Blood clearance was recorded in reciprocal minutes while absorption rate was in reciprocal hours, causing a dimension mismatch in the prethcamide pharmacokinetic record.**
+**Prethcamide’s reported blood clearance, 0.05 1/min, has inverse-time units rather than the volume-per-time units required for clearance.**
 
-The record lists blood clearance for prethcamide as 0.05 1/min but the absorption rate constant as 0.033 1/h, which are incompatible time scales. Additionally, the primary analyte was recorded as prethcamide, whereas a second reader identified ethyl butamide and propyl butamide. Because the model was derived from the paper abstract alone, the extracted summary statistics could not be verified against a full fitted dataset. Extracted — prethcamide: t1/2β 43.1 min, CLb 0.05 1/min, kabs 0.033 1/h, tmax 30 min.
+The record defines CLb as blood clearance, but its 1/min unit conflicts with the volume-per-time dimension of clearance, and the model was rejected. Only the abstract was read, so reported summary statistics stood in for a fitted model. The second reader disputed the analyte identity, naming ethyl butamide and propyl butamide, and disagreed over whether the parameter values were present. Extracted — prethcamide: t1/2β 43.1 min, CLb 0.05 1/min, kabs 0.033 1/h, tmax 30 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has prethcamide, the second reading ethyl butamide and propyl butamide; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

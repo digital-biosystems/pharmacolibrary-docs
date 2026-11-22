@@ -26,7 +26,7 @@ Pasireotide is a somatostatin analogue that treats Cushing’s disease and acrom
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nedelman_2018_reference](drugs/drug_pasireotide/Pasireotide_Nedelman2018_reference.md) | — | 1-compartment (no model) | 0 | Nedelman J et al., Population Pharmacokinetics of Subcutan…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0600-y](https://doi.org/10.1007/s40262-017-0600-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nedelman_2018_reference](drugs/drug_pasireotide/Pasireotide_Nedelman2018_reference.md) | — | 1-compartment (no model) | 0 | Nedelman J et al., Population Pharmacokinetics of Subcutan…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0600-y](https://doi.org/10.1007/s40262-017-0600-y) |
 
 ## Pharmacodynamics (PD)
 
@@ -34,19 +34,6 @@ Pasireotide is a somatostatin analogue that treats Cushing’s disease and acrom
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Streuli_2018_Binding](drugs/drug_pasireotide/pd_Streuli_2018_Binding.md) | Binding ← pasireotide · direct sigmoid Emax (Hill) effect | — | Streuli J et al., Cellular effects of AP102, a somatostat…, Neuropeptides (2018) | [10.1016/j.npep.2018.02.005](https://doi.org/10.1016/j.npep.2018.02.005) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Streuli_2018_cAMP](drugs/drug_pasireotide/pd_Streuli_2018_cAMP.md) | cAMP accumulation ← pasireotide · direct sigmoid Emax (Hill) effect | — | Streuli J et al., Cellular effects of AP102, a somatostat…, Neuropeptides (2018) | [10.1016/j.npep.2018.02.005](https://doi.org/10.1016/j.npep.2018.02.005) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pasireotide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: SSTR1 (inhibitor), SSTR2 (inhibitor), SSTR3 (inhibitor), SSTR5 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,13 +47,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:50 | 1:11 | 0/1/0 | 1/0/0 | 0/0/0 | 126,539/7,621 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-07 09:50 | 1:11 | 0/1/0 | 2/0/0 | 0/0/0 | 126,539/7,621 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

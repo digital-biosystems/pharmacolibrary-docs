@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ribavirin's bioavailability, volume of distribution, and absorption lag time lacked extracted values, forcing the use of placeholder parameters that halted publication.
+> Ribavirin’s bioavailability, volume of distribution, and absorption lag time have no values; although V2 is 769 L, the model was quarantined.
 
 <div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Mulder2025_reference" status="model_quarantined" stale="false" population="adult solid organ transplant recipients with chronic hepatitis E virus infection" measured-compound="ribavirin" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Mulder MB, van Noort M, de Man RA, Kamar N, de Bruijne J, Knoester M et al. Deve
 
 ### Reviewer guidance
 
-**Ribavirin's bioavailability, volume of distribution, and absorption lag time lacked extracted values, forcing the use of placeholder parameters that halted publication.**
+**Ribavirin’s bioavailability, volume of distribution, and absorption lag time have no values; although V2 is 769 L, the model was quarantined.**
 
-The record defines a three-compartment structure, yet the bioavailability, central volume of distribution, and lag time remained unset, necessitating default placeholders. Although the model included covariate effects for eGFR and sex on clearance and intercompartmental clearance, the simulation ran only for the reference individual, leaving these scenarios unverified. Furthermore, the peripheral volume V2 was not covered by the extraction, creating a parameter mismatch between the defined structure and the available data. Extracted — ribavirin: kabs 2.91 h−1, CL 26.4 L/h, V2 769 L, Q 104 L/h, V3 3.57e+03 L, t1/2z 6.4e+03 h, kel 0.0123 h−1.
+No value for ribavirin's bioavailability, volume of distribution and absorption lag time. The model was built, but ribavirin's bioavailability, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The covariate scenarios were not simulated: the base model was simulated, not the covariate effects the record defines. Although V2 is recorded as 769 L, parameter coverage says V2 was neither emitted nor defaulted; the second reader disputed the verdict and disagreed about the recorded covariate effects, including the 1.32 eGFR-on-clearance effect and the 0.732 sex effect. Extracted — ribavirin: kabs 2.91 h−1, CL 26.4 L/h, V2 769 L, Q 104 L/h, V3 3.57e+03 L, t1/2z 6.4e+03 h, kel 0.0123 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of egfr_on_cl: this record has 1.32, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -162,13 +162,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

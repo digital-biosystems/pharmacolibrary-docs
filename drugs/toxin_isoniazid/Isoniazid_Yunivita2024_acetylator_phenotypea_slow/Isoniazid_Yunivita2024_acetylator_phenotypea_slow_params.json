@@ -13,6 +13,34 @@
   700.0,
   1050.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Yunivita_2024:other_prose",
+    "value_si": 0.0085
+   },
+   {
+    "source": "Yunivita_2024:other_prose",
+    "value_si": 0.0045000000000000005
+   },
+   {
+    "source": "Yunivita_2024:other_prose",
+    "value_si": 5.3
+   },
+   {
+    "source": "Yunivita_2024:other_prose",
+    "value_si": 19.2
+   },
+   {
+    "source": "Yunivita_2024:other_prose",
+    "value_si": 0.007
+   },
+   {
+    "source": "Yunivita_2024:discussion_prose",
+    "value_si": 19.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.138888888888889e-06,
   "F": 1.0,

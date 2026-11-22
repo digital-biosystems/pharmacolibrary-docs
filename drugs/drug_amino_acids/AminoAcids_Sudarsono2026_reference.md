@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05B&quot;,&quot;href&quot;:&quot;atc/B05B.md&quot;},{&quot;label&quot;:&quot;amino acids&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/&quot;},{&quot;label&quot;:&quot;Sudarsono_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminoAcids_Krieger2025_reference&quot;,&quot;label&quot;:&quot;Krieger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Krieger2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminoAcids_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminoAcids_Thorsted2026_reference&quot;,&quot;label&quot;:&quot;Thorsted_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meera_2023_GABAAR_mediated_currents&quot;,&quot;label&quot;:&quot;Meera_2023 \u00b7 GABAAR-mediated currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/pd_Meera_2023_GABAAR_mediated_currents.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminoAcids_Krieger2025_reference&quot;,&quot;label&quot;:&quot;Krieger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Krieger2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminoAcids_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminoAcids_Thorsted2026_reference&quot;,&quot;label&quot;:&quot;Thorsted_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meera_2023_GABAAR_mediated_currents&quot;,&quot;label&quot;:&quot;Meera_2023 \u00b7 GABAAR-mediated currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/pd_Meera_2023_GABAAR_mediated_currents.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> Amino acids clearance 0.03 L/h and volume 0.2 L fail physiological plausibility checks.
+> Clearance and volume of distribution for amino acids are implausibly low, indicating a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Sudarsono2026_reference" status="rejected" stale="false" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Sudarsono LM, Wenker SAM, Liu X, Brink J, van den Berg D-J, van Hasselt JGC et a
 
 ### Reviewer guidance
 
-**Amino acids clearance 0.03 L/h and volume 0.2 L fail physiological plausibility checks.**
+**Clearance and volume of distribution for amino acids are implausibly low, indicating a unit or scale extraction error.**
 
-The record cites a one-compartment model with a clearance of 0.03 L/h and a volume of 0.2 L. These values fall outside the expected physiological range, indicating a likely scale or unit error in the extraction. A second reader also noted minor discrepancies in other parameter values, suggesting potential transcription inconsistencies. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
+The estimated total clearance of 0.03 L/h and volume of distribution of 0.2 L are far below physiological expectations for an oral amino acid supplement. These magnitudes are inconsistent with the expected pharmacokinetics of a small molecule distributed throughout body water. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
 
 Independently confirmed by `gpt-oss-120b`.
 

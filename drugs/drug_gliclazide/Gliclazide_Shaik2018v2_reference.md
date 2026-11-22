@@ -17,7 +17,7 @@ Shaik M, Shaik S, Kilari EK. Population pharmacokinetics of gliclazide in normal
 
 ## Population and dosing
 
-**Population:** normal and diabetic rabbits · condition healthy and type 2 diabetes · age group adult · n = * 90.
+**Population:** normal and diabetic rabbits · condition healthy and type 2 diabetes · age group adult.
 
 > **Species: rabbit.** This record comes from an animal study (rabbit), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 

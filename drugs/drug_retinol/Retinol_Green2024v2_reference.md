@@ -4,11 +4,11 @@
 
 # retinol — `Retinol_Green2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:07 UTC (Rejected), but the paper was screened again on 2026-10-05 08:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The retinyl acetate parent compound is unreachable from the dose, and a volume parameter used an unconverted unit.
+> Volume parameters for retinol use molar amount units, and the second peripheral compartment is unreachable from the dose.
 
-<div class="pk-model-meta" hidden drug="retinol" model-id="Retinol_Green2024v2_reference" status="rejected" stale="true" population="Ghanaian women of reproductive age" measured-compound="retinol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="retinol" model-id="Retinol_Green2024v2_reference" status="rejected" stale="false" population="Ghanaian women of reproductive age" measured-compound="retinol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Green MH, Lopez-Teros V, Green JB, Lietz G, Kumordzie SM, Oxley A et al. Use of Population-Based Compartmental Modeling and Retinol Isotope Dilution to Study Vitamin A Kinetics and Total Body Stores among Ghanaian Women of Reproductive Age. Current developments in nutrition 8(11):104484 (2024).
@@ -16,7 +16,7 @@ Green MH, Lopez-Teros V, Green JB, Lietz G, Kumordzie SM, Oxley A et al. Use of 
 
 ## Population and dosing
 
-**Population:** Ghanaian women of reproductive age · condition healthy · age group adult · n = &gt;=87.
+**Population:** Ghanaian women of reproductive age · condition healthy · age group adult.
 
 **Dosing:** 2 mg, oral, single.
 
@@ -41,7 +41,7 @@ Green MH, Lopez-Teros V, Green JB, Lietz G, Kumordzie SM, Oxley A et al. Use of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Green MH, Lopez-Teros V, Green JB, Lietz G, Kumordzie SM, Oxley A et al. Use of 
 
 ### Reviewer guidance
 
-**The retinyl acetate parent compound is unreachable from the dose, and a volume parameter used an unconverted unit.**
+**Volume parameters for retinol use molar amount units, and the second peripheral compartment is unreachable from the dose.**
 
-The model defines retinol as a metabolite formed from retinyl acetate, but no input link connects the dose to the retinyl acetate compartment. Additionally, the central volume of distribution (3.362 μmol) carries a molar unit that was not converted to standard units. This prevents the model from being evaluated with valid dimensioned parameters. Extracted — retinol: V1 3.36 μmol, V2 920 μmol, V3 52.7 μmol, CLm/F 0.651 μmol/d.
+V1, V2, and V3 are assigned values of 3.362, 920.458, and 52.6608 μmol respectively, which represent substance amount rather than physical volume, causing a dimension mismatch for a one-compartment model. The record specifies a three-compartment structure with V3, yet the model topology lacks a pathway connecting this second peripheral compartment to the dose administration site. Consequently, the structural definition of the model is inconsistent with its parameter list and compartment connectivity. Extracted — retinol: V1 3.36 μmol, V2 920 μmol, V3 52.7 μmol, CLm/F 0.651 μmol/d.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has retinyl acetate, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has retinyl acetate, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -126,28 +126,28 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.158 (3/19 fields) | 16 |
+| `gpt-oss-120b` | not confirmed | 0.158 (3/19 fields) | 16 |
 
 <details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[91]` |  | 3875 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dr]` |  | 1.303 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dt(3)]` |  | 0.129438 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[l(0,1)]` |  | 9.99 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[l(0,6)]` |  | 0.00070779 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[l(2,1)]` |  | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[l(4,3)]` |  | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[l(8,5)]` |  | 0.19378 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[m(5)].parameter_id` | Q63 | Q30 | mismatch |
-| `gpt-oss:120b` | `parameters[m(6)]` | 920.458 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[m(7)].parameter_id` | Q77 | Q54 | mismatch |
-| `gpt-oss:120b` | `parameters[max]` |  | 2.73 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[r(8,5)]` | 0.651488 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | retinyl acetate | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | retinol | unknown | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[91]` |  | 3875 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dr]` |  | 1.303 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dt(3)]` |  | 0.129438 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[l(0,1)]` |  | 9.99 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[l(0,6)]` |  | 0.00070779 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[l(2,1)]` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[l(4,3)]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[l(8,5)]` |  | 0.19378 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m(5)].parameter_id` | Q63 | Q30 | mismatch |
+| `gpt-oss-120b` | `parameters[m(6)]` | 920.458 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m(7)].parameter_id` | Q77 | Q54 | mismatch |
+| `gpt-oss-120b` | `parameters[max]` |  | 2.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[r(8,5)]` | 0.651488 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | retinyl acetate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | retinol | unknown | mismatch |
 
 </details>
 

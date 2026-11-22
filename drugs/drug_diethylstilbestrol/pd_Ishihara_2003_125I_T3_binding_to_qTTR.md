@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G03C&quot;,&quot;href&quot;:&quot;atc/G03C.md&quot;},{&quot;label&quot;:&quot;diethylstilbestrol&quot;,&quot;href&quot;:&quot;drugs/drug_diethylstilbestrol/&quot;},{&quot;label&quot;:&quot;Ishihara_2003 \u00b7 PD [125I]triiodothyronine binding to purified Japanese quail transthyretin&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# [125I]triiodothyronine binding to purified Japanese quail transthyretin — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:glm-5.3-flash (not confirmed, agreement 0.8), einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">bird</span>
+# [125I]triiodothyronine binding to purified Japanese quail transthyretin — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.8), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">bird</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -42,14 +42,14 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:glm-5.3-flash` | not confirmed | 0.8 (4/5 fields) | 1 |
-| `einfracz:gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
+| `glm-5.3-flash` | not confirmed | 0.8 (4/5 fields) | 1 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:glm-5.3-flash` | `parameters[Q322]` |  | &lt; 0.4 | only_one_extracted |
+| `glm-5.3-flash` | `parameters[Q322]` |  | &lt; 0.4 | only_one_extracted |
 
 </details>
 

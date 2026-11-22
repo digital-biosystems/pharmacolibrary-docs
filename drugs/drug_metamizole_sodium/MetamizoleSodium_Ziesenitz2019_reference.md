@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;metamizole sodium&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/&quot;},{&quot;label&quot;:&quot;Ziesenitz_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metamizole sodium — `MetamizoleSodium_Ziesenitz2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-22 11:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for metamizole sodium was rejected because it lacks clearance and volume parameters, containing only an AUC summary statistic.
+> The record was rejected because 4-methylaminoantipyrine AUC∞ of 29.9 mg/L/h is dimensionally inconsistent, and the paper reports no compartmental volume or clearance.
 
-<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Ziesenitz2019_reference" status="rejected" stale="true" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Ziesenitz2019_reference" status="rejected" stale="false" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dose evaluation of intravenous metamizole (dipyrone) in infants and children: a prospective population pharmacokinetic study. European journal of clinical pharmacology 75(11):1491–1502 (2019).
@@ -17,7 +17,7 @@ Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dos
 
 ## Population and dosing
 
-**Population:** infants and children · condition postoperative pain · age group mixed · n = &gt;=25.
+**Population:** infants and children · condition postoperative pain · age group mixed.
 
 **Dosed compound ≠ measured compound:** dosed metamizole, measured 4-methylaminoantipyrine.
 
@@ -37,7 +37,7 @@ Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dos
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dos
 
 ### Reviewer guidance
 
-**The record for metamizole sodium was rejected because it lacks clearance and volume parameters, containing only an AUC summary statistic.**
+**The record was rejected because 4-methylaminoantipyrine AUC∞ of 29.9 mg/L/h is dimensionally inconsistent, and the paper reports no compartmental volume or clearance.**
 
-The source is abstract-only, so the reported AUC of 29.9 mg/L/h for 4-methylaminoantipyrine stands in for a fitted model. Crucially, no distribution volume or clearance values were extracted, making a compartmental population PK model impossible. A dimension mismatch was also found on a structural parameter. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The listed mg/L/h unit is mass per volume per time, whereas AUC∞ is concentration multiplied by time. The record was based on the abstract alone, so reported summary statistics stood in for a fitted model; a second reader disputed whether the AUC value was 29.9 or absent. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metamizole, the second reading metamizole_sodium; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

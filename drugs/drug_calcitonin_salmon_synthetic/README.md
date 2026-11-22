@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H05B&quot;,&quot;href&quot;:&quot;atc/H05B.md&quot;},{&quot;label&quot;:&quot;calcitonin (salmon synthetic)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalcitoninSalmonSynthetic_Beveridge1976_reference&quot;,&quot;label&quot;:&quot;Beveridge_1976_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # calcitonin (salmon synthetic)
 
@@ -22,25 +23,18 @@ Salmon calcitonin is an anti-parathyroid hormone used to treat osteoporosis. It 
 | calcitonin_salmon_synthetic | metabolite | 3431.89 | C145H240N44O48S2 | PubChem | [16133812](https://pubchem.ncbi.nlm.nih.gov/compound/16133812) | Beveridge_1976, Huwyler_1979 |
 | synthetic salmon calcitonin | metabolite | 3431.89 | C145H240N44O48S2 | PubChem | [16220016](https://pubchem.ncbi.nlm.nih.gov/compound/16220016) | Beveridge_1976 |
 
+## Start here
+
+> **Beveridge_1976_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients. [Run it in the simulator](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md?tab=Simulation) · [record](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Beveridge_1976_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md) | — | 1-compartment (no model) | 2 | Beveridge T et al., Pharmacokinetic study with synthetic sa…, Zeitschrift fur Gastroenter… (1976) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub> | [Huwyler_1979_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Huwyler1979_reference.md) | — | 1-compartment (no model) | 2 | Huwyler R et al., Plasma kinetics and urinary excretion o…, The American journal of phy… (1979) | [10.1152/ajpendo.1979.236.1.E15](https://doi.org/10.1152/ajpendo.1979.236.1.E15) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=calcitonin_salmon_synthetic).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CALCR (target).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Beveridge_1976_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Beveridge T et al., Pharmacokinetic study with synthetic sa…, Zeitschrift fur Gastroenter… (1976) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub> | [Huwyler_1979_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Huwyler1979_reference.md) | — | 1-compartment (no model) | 2 | Huwyler R et al., Plasma kinetics and urinary excretion o…, The American journal of phy… (1979) | [10.1152/ajpendo.1979.236.1.E15](https://doi.org/10.1152/ajpendo.1979.236.1.E15) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,7 +54,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 80 matched, 25 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

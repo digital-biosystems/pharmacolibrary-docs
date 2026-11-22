@@ -1,8 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin aspart&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/&quot;},{&quot;label&quot;:&quot;R\u00fcppel_2017 \u00b7 PD glucose infusion rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_R_ppel_2017_GIR&quot;,&quot;label&quot;:&quot;R\u00fcppel_2017 \u00b7 GIR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/pd_R_ppel_2017_GIR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# glucose infusion rate — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--neutral" title="einfracz:glm-5.3-flash, einfracz:gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
+# glucose infusion rate — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--neutral" title="glm-5.3-flash, gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +15,7 @@
 
 **As extracted:** Insulin drives glucose infusion rate (in mg/kg/min): direct sigmoid Emax (Hill) effect.
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 > Insulin concentrations in an effect compartment stimulate glucose infusion rate (GIR) via a sigmoid Emax model with a baseline GIR of 2.7 mg/kg/min, a maximum GIR of 11.9 mg/kg/min, an EC50 of 152 mU/L, and a gamma of 1.8. The model includes first-order rate constants for effect compartment equilibration (Kin and Kout) both set to 1.24 1/h.
 >
@@ -51,40 +50,13 @@ Rüppel D et al., A Population Dose-Response Model for In…, CPT: pharmacometri
 </details>
 
 
-## Exposure-response model
-
-`InsulinAspart_Rppel2017_PD_gir` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 2.7 mg/kg/min | 4.5e-08 1/s |
-| Emax | 11.9 mg/kg/min | 1.983e-07 1/s |
-| EC50 | 152 mU/L | 2.524e-25 kg/m3 |
-| gamma | 1.8 | — |
-
-Closed-form check points (response, SI): `at_0` = 4.5e-08, `at_EC50` = 1.442e-07, `at_inf` = 2.433e-07
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response rises, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | pass | nothing defaulted |
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:glm-5.3-flash` | no answer | – | – (extracted nothing for this PD record) |
-| `einfracz:gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
+| `glm-5.3-flash` | no answer | – | – (extracted nothing for this PD record) |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
 _No second reader extracted anything for this PD record; it is not cross-checked._
 
@@ -100,54 +72,19 @@ _No second reader extracted anything for this PD record; it is not cross-checked
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_insulin_aspart/InsulinAspart_Rppel2017_PD_gir/InsulinAspart_Rppel2017_PD_gir_modelica.zip" download>InsulinAspart_Rppel2017_PD_gir_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_insulin_aspart/InsulinAspart_Rppel2017_PD_gir/InsulinAspart_Rppel2017_PD_gir_fmi.zip" download>InsulinAspart_Rppel2017_PD_gir_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_insulin_aspart/InsulinAspart_Rppel2017_PD_gir/InsulinAspart_Rppel2017_PD_gir_matlab.zip" download>InsulinAspart_Rppel2017_PD_gir_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_insulin_aspart/InsulinAspart_Rppel2017_PD_gir/InsulinAspart_Rppel2017_PD_gir_sbml.zip" download>InsulinAspart_Rppel2017_PD_gir_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_insulin_aspart/InsulinAspart_Rppel2017_PD_gir/InsulinAspart_Rppel2017_PD_gir_cellml.zip" download>InsulinAspart_Rppel2017_PD_gir_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | model | `E0` | 4.5e-08 |  |
-| input | model | `EC50` | 2.524e-25 |  |
-| input | model | `Emax` | 1.983e-07 |  |
-| input | model | `exposure_per_s` | 1.661e-27 |  |
-| input | model | `gamma` | 1.8 |  |
-| output | concentration | `response` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `InsulinAspart_Rppel2017_PD_gir`. <https://pharmacolibrary.github.io/#/drugs/drug_insulin_aspart/pd_R_ppel_2017_GIR>
-
-```bibtex
-@misc{pharmacolibrary_InsulinAspartRppel2017PDgir,
-  title  = {{Pharmacolibrary model InsulinAspart_Rppel2017_PD_gir}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_insulin_aspart/pd_R_ppel_2017_GIR},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_insulin_aspart/InsulinAspart_Rppel2017_PD_gir/InsulinAspart_Rppel2017_PD_gir_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_insulin_aspart/InsulinAspart_Rppel2017_PD_gir/InsulinAspart_Rppel2017_PD_gir_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `InsulinAspart_Rppel2017_PD_gir_params.json` · controls `InsulinAspart_Rppel2017_PD_gir_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

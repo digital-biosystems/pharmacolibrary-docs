@@ -23,10 +23,10 @@ Mosunetuzumab is a monoclonal antibody used to treat follicular lymphoma. The dr
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Li_2025_china_study_yo43555](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_china_study_yo43555.md) | — | 1-compartment (no model) | 5 | Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translational… (2025) | [10.1111/cts.70211](https://doi.org/10.1111/cts.70211) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [↳ global_study_go29781_group_b_dose_expansion_cohort_patients_with_r_r_fl](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_global_study_go29781_group_b_dose_expan.md) | — | 1-compartment (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [↳ mean](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_mean.md) | — | 1-compartment (no model) | 4 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bender_2024_reference](drugs/drug_mosunetuzumab/Mosunetuzumab_Bender2024_reference.md) | — | 2-compartment (no model) | 6 | Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and translational… (2024) | [10.1111/cts.13825](https://doi.org/10.1111/cts.13825) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Li_2025_china_study_yo43555](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_china_study_yo43555.md) | — | 1-compartment (no model) | 5 | Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translational… (2025) | [10.1111/cts.70211](https://doi.org/10.1111/cts.70211) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [↳ global_study_go29781_group_b_dose_expansion_cohort_patients_with_r_r_fl](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_global_study_go29781_group_b_dose_expan.md) | — | 1-compartment (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [↳ mean](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_mean.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bender_2024_reference](drugs/drug_mosunetuzumab/Mosunetuzumab_Bender2024_reference.md) | — | 2-compartment (no model) | 6 | Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and translational… (2024) | [10.1111/cts.13825](https://doi.org/10.1111/cts.13825) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,15 +36,6 @@ Mosunetuzumab is a monoclonal antibody used to treat follicular lymphoma. The dr
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2025_2_CRS](drugs/drug_mosunetuzumab/pd_Li_2025_2_CRS.md) | Grade ≥ 2 cytokine release syndrome ← mosunetuzumab · direct linear effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2025_2_Log2_IFN_CFBLmax](drugs/drug_mosunetuzumab/pd_Li_2025_2_Log2_IFN_CFBLmax.md) | Log2 maximal fold change from pre-dose baseline of IFN-γ ← mosunetuzumab · stimulation effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2025_2_ORR](drugs/drug_mosunetuzumab/pd_Li_2025_2_ORR.md) | Objective response rate ← mosunetuzumab · direct Emax (saturable) effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mosunetuzumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD3E (binder), MS4A1 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,13 +49,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:19 | 9:44 | 3/1/0 | 1/0/0 | 0/0/0 | 171,023/24,435 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 4/0 | 0 |
+| 2026-10-07 17:19 | 9:44 | 3/1/0 | 4/0/0 | 0/0/0 | 171,023/24,435 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 4
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

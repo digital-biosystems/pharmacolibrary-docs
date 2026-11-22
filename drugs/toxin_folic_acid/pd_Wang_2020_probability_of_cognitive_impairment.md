@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record lists folic acid as the driver for the probability of cognitive impairment but does not specify the pharmacodynamic model family, effect direction, effect form, or any mechanistic parameters.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

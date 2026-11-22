@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bevacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/&quot;},{&quot;label&quot;:&quot;Lobet_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bevacizumab — `Bevacizumab_Lobet2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:38 UTC (Rejected), but the paper was screened again on 2026-10-07 10:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bevacizumab lacks volume and clearance parameters, with a dimension mismatch on the 10 nM dissociation constant.
+> The bevacizumab record lacks standard elimination parameters and contains a unit conflict for the dissociation constant.
 
-<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Lobet2024_reference" status="rejected" stale="true" population="metastatic colorectal cancer patients" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Lobet2024_reference" status="rejected" stale="false" population="metastatic colorectal cancer patients" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lobet S, Caulet M, Paintaud G, Azzopardi N, Desvignes C, Chautard R et al. Confounding mitigation for the exposure-response relationship of bevacizumab in colorectal cancer patients. British journal of clinical pharmacology 90(4):976–986 (2024).
@@ -36,7 +36,7 @@ Lobet S, Caulet M, Paintaud G, Azzopardi N, Desvignes C, Chautard R et al. Confo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Lobet S, Caulet M, Paintaud G, Azzopardi N, Desvignes C, Chautard R et al. Confo
 
 ### Reviewer guidance
 
-**Bevacizumab lacks volume and clearance parameters, with a dimension mismatch on the 10 nM dissociation constant.**
+**The bevacizumab record lacks standard elimination parameters and contains a unit conflict for the dissociation constant.**
 
-The record omits distribution volume and clearance because the paper is an exposure/outcome study rather than a compartmental model. A dimension mismatch occurred for the structural parameter representing the equilibrium dissociation constant. The second reader disagreed on which label corresponds to the 10 nM binding affinity value and the 0.52 day-1 internalization rate. Extracted — bevacizumab: KD 10 nM, kint 0.52 day-1.
+The model omits distribution volume and clearance, confirming it is not a compartmental population PK model. Additionally, the 10 nM dissociation constant presents a unit dimension mismatch with the expected mass concentration dimensions. As the record was abstract-only, these structural deficiencies led to rejection. Extracted — bevacizumab: KD 10 nM, kint 0.52 day-1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of antibody-target complexes elimination constant: this record has 0.52, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

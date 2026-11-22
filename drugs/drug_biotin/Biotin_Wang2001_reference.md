@@ -17,7 +17,7 @@ Wang KS, Kearns GL, Mock DM. The clearance and metabolism of biotin administered
 
 ## Population and dosing
 
-**Population:** Landrace-Cambrough pigs · condition healthy · n = , 11.
+**Population:** Landrace-Cambrough pigs · condition healthy.
 
 > **Species: pig.** This record comes from an animal study (pig), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has biotin, the second reading unknown; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has biotin, the second reading unknown; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,15 +70,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | primary re-run | 0.4 (2/5 fields) | 3 |
+| `gpt-oss-120b` | primary re-run | 0.4 (2/5 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[mean half-life values]` |  | 0.11 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | biotin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | biotin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[mean half-life values]` |  | 0.11 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | biotin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | biotin | unknown | mismatch |
 
 </details>
 

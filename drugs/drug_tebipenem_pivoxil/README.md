@@ -26,7 +26,7 @@ Tebipenem pivoxil is a carbapenem antibiotic used to treat complicated urinary t
 
 ## Start here
 
-> **Ganesan_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with cUTI/AP and healthy adults, n = condition. [Run it in the simulator](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md?tab=Simulation) · [record](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md)
+> **Ganesan_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with cUTI/AP and healthy adults. [Run it in the simulator](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md?tab=Simulation) · [record](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -34,7 +34,7 @@ Tebipenem pivoxil is a carbapenem antibiotic used to treat complicated urinary t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Ganesan_2023_reference](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Ganesan H et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2023) | [10.1128/aac.01451-22](https://doi.org/10.1128/aac.01451-22) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Ganesan_2023_reference](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Ganesan H et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2023) | [10.1128/aac.01451-22](https://doi.org/10.1128/aac.01451-22) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

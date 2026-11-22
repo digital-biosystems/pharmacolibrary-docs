@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The study describes a linear concentration-response relationship where increasing mercury concentrations (mg-Hg(II)/L) directly correlate with fish mortality over a 72-hour exposure period. The potency is characterized by an LC50 of 0.1453 mg-Hg(II)/L for Oreochromis niloticus, though the paper does not specify the molecular mechanism of toxicity.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Suhendrayatna_2019`
 - **model family:** `linear`
 - **driver:** `cited_pk`

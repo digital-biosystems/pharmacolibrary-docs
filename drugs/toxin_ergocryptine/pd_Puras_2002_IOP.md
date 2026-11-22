@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism of action for alpha-ergocryptine's effect on intraocular pressure. Key potency and rate parameters such as Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are not stated in the available excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Puras_2002`
 - **model family:** `unknown`
 - **driver:** `dose_only`

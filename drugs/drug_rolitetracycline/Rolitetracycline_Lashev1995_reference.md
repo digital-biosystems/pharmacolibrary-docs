@@ -4,11 +4,11 @@
 
 # rolitetracycline — `Rolitetracycline_Lashev1995_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-07 10:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="rolitetracycline" model-id="Rolitetracycline_Lashev1995_reference" status="needs_review" stale="true" population="sheep, pigs, rabbits, chickens and pigeons" measured-compound="rolitetracycline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rolitetracycline" model-id="Rolitetracycline_Lashev1995_reference" status="needs_review" stale="false" population="sheep, pigs, rabbits, chickens and pigeons" measured-compound="rolitetracycline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lashev L, Pashov D, Kanelov I. Species specific pharmacokinetics of rolitetracycline. Zentralblatt fur Veterinarmedizin. Reihe A 42(3):201–208 (1995).
@@ -36,7 +36,7 @@ Lashev L, Pashov D, Kanelov I. Species specific pharmacokinetics of rolitetracyc
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Lashev L, Pashov D, Kanelov I. Species specific pharmacokinetics of rolitetracyc
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rolitetracycline: t1/2β 1.51 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of elimination half-life: this record has 1.51, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

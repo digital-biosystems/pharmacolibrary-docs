@@ -66,7 +66,7 @@ LD50: 30.7 g/kg (Intraperitoneal, Rat)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-17 22:51 | 43:33 | 0/3/0 | 1/2/0 | 0/0/0 | 1,248,322/62,531 | einfracz / qwen3.8-flash-next | 58 | 9/36 | 58/0 | 0 |
+| 2026-11-17 22:51 | 43:33 | 0/3/0 | 3/2/0 | 0/0/0 | 1,248,322/62,531 | einfracz / qwen3.8-flash-next | 58 | 9/36 | 58/0 | 0 |
 
 ## Coverage
 

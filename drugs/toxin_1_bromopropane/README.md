@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;1-Bromopropane&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_1Bromopropane_Garner2014_reference&quot;,&quot;label&quot;:&quot;Garner_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_bromopropane/D_1Bromopropane_Garner2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_1Bromopropane_Garner2014_reference&quot;,&quot;label&quot;:&quot;Garner_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_bromopropane/D_1Bromopropane_Garner2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # 1-Bromopropane
 
@@ -34,7 +34,7 @@ LC50: 7000 ppm over 4 hours (Inhalation, Rat)
 
 ## Start here
 
-> **Garner_2014_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> F-344 rats and B6C3F1 mice. [Run it in the simulator](drugs/toxin_1_bromopropane/D_1Bromopropane_Garner2014_reference.md?tab=Simulation) · [record](drugs/toxin_1_bromopropane/D_1Bromopropane_Garner2014_reference.md)
+> **Garner_2014_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> F-344 rats and B6C3F1 mice. [Run it in the simulator](drugs/toxin_1_bromopropane/D_1Bromopropane_Garner2014_reference.md?tab=Simulation) · [record](drugs/toxin_1_bromopropane/D_1Bromopropane_Garner2014_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -42,7 +42,7 @@ LC50: 7000 ppm over 4 hours (Inhalation, Rat)
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Garner_2014_reference](drugs/toxin_1_bromopropane/D_1Bromopropane_Garner2014_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Garner CE et al., Species and sex-dependent toxicokinetic…, Xenobiotica; the fate of fo… (2014) | [10.3109/00498254.2013.879624](https://doi.org/10.3109/00498254.2013.879624) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Garner_2014_reference](drugs/toxin_1_bromopropane/D_1Bromopropane_Garner2014_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Garner CE et al., Species and sex-dependent toxicokinetic…, Xenobiotica; the fate of fo… (2014) | [10.3109/00498254.2013.879624](https://doi.org/10.3109/00498254.2013.879624) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

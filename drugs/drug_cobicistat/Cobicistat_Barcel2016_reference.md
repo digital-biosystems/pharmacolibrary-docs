@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cobicistat model was rejected because bioavailability was left at library defaults, and the model structure did not match the claimed parent-metabolite topology.
+> Bioavailability was unreported and left at defaults, and the one-compartment structure ignored the required parent-metabolite link to elvitegravir.
 
 <div class="pk-model-meta" hidden drug="cobicistat" model-id="Cobicistat_Barcel2016_reference" status="rejected" stale="false" population="HIV-1-infected adults" measured-compound="cobicistat" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -49,9 +49,9 @@ Barceló C, Gaspar F, Aouri M, Panchaud A, Rotger M, Guidi M et al. Population p
 
 ### Reviewer guidance
 
-**Cobicistat model was rejected because bioavailability was left at library defaults, and the model structure did not match the claimed parent-metabolite topology.**
+**Bioavailability was unreported and left at defaults, and the one-compartment structure ignored the required parent-metabolite link to elvitegravir.**
 
-The bioavailability parameter (F) was not reported in the abstract and was therefore filled with library placeholders rather than paper-derived estimates. The model builder also defaulted the absorption lag time (Tlag), introducing further unsupported assumptions. Additionally, the second reader disagreed with the recorded metabolism link to elvitegravir and the value of the absorption rate constant. Extracted — cobicistat: CL 7.6 L/h, V 61 L, kabs 0.306 h−1.
+The bioavailability fraction was not extracted from the abstract, so a placeholder value was used instead of an estimate. The model structure was a simple one-compartment model rather than a parent-metabolite topology linking cobicistat to elvitegravir. The output compartment was incorrectly set to the central compartment instead of the measured metabolite. Extracted — cobicistat: CL 7.6 L/h, V 61 L, kabs 0.306 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has cobicistat → elvitegravir (metabolism), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -134,14 +134,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | fail | Metabolite_C (measured=cobicistat) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | fail | Metabolite_C (measured=cobicistat) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

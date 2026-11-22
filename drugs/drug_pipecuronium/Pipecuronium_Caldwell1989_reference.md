@@ -5,11 +5,11 @@
 
 # Pipecuronium — `Pipecuronium_Caldwell1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 02:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pipecuronium clearance value of 2.4 was assigned incorrect units of minutes, causing a structural dimension mismatch.
+> The plasma clearance of pipecuronium was recorded as 2.4 min, a time unit incompatible with volume per time.
 
-<div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Caldwell1989_reference" status="rejected" stale="true" population="patients with normal renal function and end-stage renal disease" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Caldwell1989_reference" status="rejected" stale="false" population="patients with normal renal function and end-stage renal disease" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The influence of renal failure on the pharmacokinetics and duration of action of pipecuronium bromide in patients anesthetized with halothane and nitrous oxide. Anesthesiology 70(1):7–12 (1989).
@@ -37,7 +37,7 @@ Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The
 
 ### Reviewer guidance
 
-**Pipecuronium clearance value of 2.4 was assigned incorrect units of minutes, causing a structural dimension mismatch.**
+**The plasma clearance of pipecuronium was recorded as 2.4 min, a time unit incompatible with volume per time.**
 
-The record lists plasma clearance as 2.4 minutes, a unit that describes time rather than volume per time. This error triggered a dimension mismatch rejection on the structural parameter. The review was built from the abstract alone, so these summary statistics stood in for a fitted model. A second reader disagreed that the compound identity and parameter values were correctly extracted. Extracted — pipecuronium: Vss 309 ml.kg-1, CL 2.4 min, t1/2z 137 min.
+Plasma clearance was extracted as 2.4 min, which has the dimension of time rather than volume per time. Consequently, a dimensional consistency check failed for this structural parameter. The record was derived solely from the abstract, so the reported summary statistics were used without verification of a fitted model. Extracted — pipecuronium: Vss 309 ml.kg-1, CL 2.4 min, t1/2z 137 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipecuronium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

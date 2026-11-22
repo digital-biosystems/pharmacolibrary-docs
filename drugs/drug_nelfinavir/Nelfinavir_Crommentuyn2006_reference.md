@@ -4,11 +4,11 @@
 
 # nelfinavir — `Nelfinavir_Crommentuyn2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 17:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Nelfinavir's volume of distribution (281) is recorded with units of L/h instead of L.
+> The volume of distribution parameter for nelfinavir has unit L/h instead of volume, causing a dimensional mismatch and implausible clearance ratio.
 
-<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Crommentuyn2006_reference" status="rejected" stale="true" population="HIV-1-infected children" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Crommentuyn2006_reference" status="rejected" stale="false" population="HIV-1-infected children" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Crommentuyn KM, Scherpbier HJ, Kuijpers TW, Mathôt RA, Huitema AD, Beijnen JH. Population pharmacokinetics and pharmacodynamics of nelfinavir and its active metabolite M8 in HIV-1-infected children. The Pediatric infectious disease journal 25(6):538–543 (2006).
@@ -35,7 +35,7 @@ Crommentuyn KM, Scherpbier HJ, Kuijpers TW, Mathôt RA, Huitema AD, Beijnen JH. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Crommentuyn KM, Scherpbier HJ, Kuijpers TW, Mathôt RA, Huitema AD, Beijnen JH. 
 
 ### Reviewer guidance
 
-**Nelfinavir's volume of distribution (281) is recorded with units of L/h instead of L.**
+**The volume of distribution parameter for nelfinavir has unit L/h instead of volume, causing a dimensional mismatch and implausible clearance ratio.**
 
-The record lists the volume of distribution as 281 L/h, but this parameter physiologically represents a volume (L), not a rate. This unit error creates a dimension mismatch and places the value in an implausible range. Additionally, the record derives from an abstract, so these summary statistics stand in for a fitted model. Extracted — nelfinavir: CL 32.6 L/h, V 281 L/h.
+The volume of distribution (V/F) is assigned a value of 281 with unit L/h, which is dimensionally incorrect for a volume parameter. This unit error triggers a structural parameter check failure and places the calculated clearance-to-volume ratio outside the physiological window. Additionally, the record is based only on the paper's abstract, so the reported summary statistics stand in for a fitted model, and a second reader found the extracted parameters and metabolite link to be unsupported by the source text. Extracted — nelfinavir: CL 32.6 L/h, V 281 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has nelfinavir → m8 (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

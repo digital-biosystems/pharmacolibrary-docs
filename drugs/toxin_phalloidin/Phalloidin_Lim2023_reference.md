@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> No kinetic quantity was reported; the record was rejected as an exposure/outcome paper with no fitted model parameters.
 
 <div class="pk-model-meta" hidden drug="Phalloidin" model-id="Phalloidin_Lim2023_reference" status="rejected" stale="false" population="mice" measured-compound="Phalloidin" parameterization="mechanistic" topology="1C"></div>
 
@@ -42,7 +42,13 @@ _No resolved parameters._
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**No kinetic quantity was reported; the record was rejected as an exposure/outcome paper with no fitted model parameters.**
+
+Although volume, clearance, and bioavailability are listed, the reason states no half-life, rate constant, volume, or clearance were reported. The model was built from an abstract alone, so reported summary statistics replaced a fitted model.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 

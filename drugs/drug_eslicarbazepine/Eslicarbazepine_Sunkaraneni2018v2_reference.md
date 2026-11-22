@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Absorption rate and lag time were defaulted, and covariate scenarios for eslicarbazepine were not simulated.
+> The absorption rate constant is an unsupported library default, and covariate scenarios were not simulated despite having model effects.
 
 <div class="pk-model-meta" hidden drug="eslicarbazepine" model-id="Eslicarbazepine_Sunkaraneni2018v2_reference" status="needs_review" stale="false" population="pediatric patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Sunkaraneni S, Ludwig E, Fiedler-Kelly J, Hopkins S, Galluppi G, Blum D. Modelin
 
 ## Population and dosing
 
-**Population:** pediatric patients with partial-onset seizures · condition partial-onset seizures · age group mixed · n = ,.
+**Population:** pediatric patients with partial-onset seizures · condition partial-onset seizures · age group mixed.
 
 **Dosing:** 5, 15, 30 mg/kg/day, oral, multiple, every 24 h.
 
@@ -59,9 +59,9 @@ Sunkaraneni S, Ludwig E, Fiedler-Kelly J, Hopkins S, Galluppi G, Blum D. Modelin
 
 ### Reviewer guidance
 
-**Absorption rate and lag time were defaulted, and covariate scenarios for eslicarbazepine were not simulated.**
+**The absorption rate constant is an unsupported library default, and covariate scenarios were not simulated despite having model effects.**
 
-The absorption rate constant and lag time were not reported in the source, so library defaults were used instead of explicit estimates. Although the record defines covariate effects, only the reference individual was simulated, leaving the covariate scenarios unexercised. Extracted — eslicarbazepine: CLm/F 2.92 L/h, V/F 4.78 L, Frel 6.76.
+The absorption rate constant was not reported in the source, so a library placeholder was used instead of an estimate. Although the record defines covariate effects for eslicarbazepine, the model builder only simulated the reference individual. Therefore, the specific impacts of the defined covariates on the pharmacokinetic profile were never exercised or validated. Extracted — eslicarbazepine: CLm/F 2.92 L/h, V/F 4.78 L, Frel 6.76.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -155,15 +155,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=eslicarbazepine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=eslicarbazepine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

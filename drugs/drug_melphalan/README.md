@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;melphalan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melphalan_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melphalan/Melphalan_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melphalan_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melphalan/Melphalan_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # melphalan
 
@@ -25,13 +25,13 @@ Melphalan is an alkylating agent chemotherapy medication used to treat multiple 
 
 ## Start here
 
-> **Li_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> pediatric patients undergoing hematopoietic cell transplantation, n = ,"condition":"unknown","species":"human","compounds":["melphalan | parent | yes | yes | yes"],"links":"none"}. [Run it in the simulator](drugs/drug_melphalan/Melphalan_Li2022_reference.md?tab=Simulation) · [record](drugs/drug_melphalan/Melphalan_Li2022_reference.md)
+> **Li_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> pediatric patients undergoing hematopoietic cell transplantation. [Run it in the simulator](drugs/drug_melphalan/Melphalan_Li2022_reference.md?tab=Simulation) · [record](drugs/drug_melphalan/Melphalan_Li2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shah_2022 · V</text><circle cx="324.3" cy="30.0" r="4" fill="#ef6c00"><title>Shah_2022 · V: 24.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2022 · V1 ·/kg</text><circle cx="321.8" cy="46.0" r="4" fill="#78909c"><title>Li_2022 · V1 ·/kg: 23.8 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shah_2022 · V</text><circle cx="324.3" cy="30.0" r="4" fill="#ef6c00"><title>Shah_2022 · V: 24.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2022 · V1 ·/kg</text><circle cx="321.8" cy="46.0" r="4" fill="#ef6c00"><title>Li_2022 · V1 ·/kg: 23.8 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -39,8 +39,8 @@ Melphalan is an alkylating agent chemotherapy medication used to treat multiple 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Li_2022_reference](drugs/drug_melphalan/Melphalan_Li2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Li S et al., Population Pharmacokinetics of Melphala…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2030](https://doi.org/10.1002/jcph.2030) |
-| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Buitrago_2016_reference](drugs/drug_melphalan/Melphalan_Buitrago2016_reference.md) | — | 1-compartment (no model) | 2 | Buitrago E et al., Pharmacokinetics of Melphalan After Int…, Journal of ocular pharmacol… (2016) | [10.1089/jop.2015.0088](https://doi.org/10.1089/jop.2015.0088) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Buitrago_2016_reference](drugs/drug_melphalan/Melphalan_Buitrago2016_reference.md) | — | 1-compartment (no model) | 2 | Buitrago E et al., Pharmacokinetics of Melphalan After Int…, Journal of ocular pharmacol… (2016) | [10.1089/jop.2015.0088](https://doi.org/10.1089/jop.2015.0088) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Li_2022_reference](drugs/drug_melphalan/Melphalan_Li2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Li S et al., Population Pharmacokinetics of Melphala…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2030](https://doi.org/10.1002/jcph.2030) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Shah_2022_reference](drugs/drug_melphalan/Melphalan_Shah2022_reference.md) | — | 1-compartment (no model) | 1 | Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chandra_2022_reference](drugs/drug_melphalan/Melphalan_Chandra2022_reference.md) | — | 1-compartment (no model) | 0 | Chandra S et al., Test-dose pharmacokinetics guided melph…, British journal of clinical… (2022) | [10.1111/bcp.14932](https://doi.org/10.1111/bcp.14932) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nath_2007_reference](drugs/drug_melphalan/Melphalan_Nath2007_reference.md) | — | 1-compartment (no model) | 0 | Nath CE et al., Population pharmacokinetics of melphala…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02862.x](https://doi.org/10.1111/j.1365-2125.2007.02862.x) |
@@ -50,22 +50,6 @@ Melphalan is an alkylating agent chemotherapy medication used to treat multiple 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cho_2018_ANC](drugs/drug_melphalan/pd_Cho_2018_ANC.md) | absolute neutrophil count (ANC) biomarker turnover ← melphalan | — | Cho YK et al., Pharmacokinetic-Pharmacodynamic Model o…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12345](https://doi.org/10.1002/psp4.12345) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=melphalan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), SLC7A10 (substrate), SLC7A5 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -85,7 +69,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 114 matched, 63 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 1
+- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

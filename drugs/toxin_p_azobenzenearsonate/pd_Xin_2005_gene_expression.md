@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that the drug _p_azobenzenearsonate (or ABA) acts on gene expression, but no specific pharmacodynamic model, mechanism, or potency values are described in the available data.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Xin_2005`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

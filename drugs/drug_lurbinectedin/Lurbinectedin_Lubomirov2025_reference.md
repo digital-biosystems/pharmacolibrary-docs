@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The inter-compartmental clearance parameters for lurbinectedin were not reported and were substituted with library defaults.
+> Intercompartmental rate constants k12 and k21 were left at library defaults, so the two-compartment model lacks paper-supported estimates for its transfer rates.
 
 <div class="pk-model-meta" hidden drug="lurbinectedin" model-id="Lurbinectedin_Lubomirov2025_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="lurbinectedin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,9 +52,9 @@ Lubomirov R, Pérez-Ramos L, Fudio S, Asín-Prieto E, Ibarra-Gómez L, Zubiaur P
 
 ### Reviewer guidance
 
-**The inter-compartmental clearance parameters for lurbinectedin were not reported and were substituted with library defaults.**
+**Intercompartmental rate constants k12 and k21 were left at library defaults, so the two-compartment model lacks paper-supported estimates for its transfer rates.**
 
-The model structure requires inter-compartmental clearances between the central and peripheral compartments, but these values are missing from the record. Consequently, the model uses placeholder values rather than estimates derived from the cancer patient data. A second reader also flagged discrepancies regarding the identification of the primary analyte and several parameter values. Extracted — lurbinectedin: V 438 L, V1 11.6 L, CL 11.2 L/h.
+The record provides values for clearance, central volume, and steady-state volume, but the intercompartmental constants were defaulted rather than extracted. One parameter with units of ng × h/L could not be converted to standard SI units, preventing validation. A second reader disputed the identification of the dose compound and primary analyte, and could not locate several extracted parameter values. Extracted — lurbinectedin: V 438 L, V1 11.6 L, CL 11.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lurbinectedin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -151,14 +151,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=lurbinectedin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=lurbinectedin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

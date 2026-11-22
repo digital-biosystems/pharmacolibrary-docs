@@ -16,7 +16,7 @@ Jonkman K, Duma A, Olofsen E, Henthorn T, van Velzen M, Mooren R et al. Pharmaco
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = /&gt;.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

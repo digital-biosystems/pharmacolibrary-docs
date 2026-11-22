@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;cafedrine&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/&quot;},{&quot;label&quot;:&quot;Dings_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cafedrine_Dings2026_reference&quot;,&quot;label&quot;:&quot;Dings_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/Cafedrine_Dings2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Dings_2024_DBP&quot;,&quot;label&quot;:&quot;Dings_2024 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2024_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2024_HR&quot;,&quot;label&quot;:&quot;Dings_2024 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2024_HR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2024_SBP&quot;,&quot;label&quot;:&quot;Dings_2024 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2024_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2026_HR&quot;,&quot;label&quot;:&quot;Dings_2026 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2026_HR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2026_MAP&quot;,&quot;label&quot;:&quot;Dings_2026 \u00b7 MAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2026_MAP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2026_SBP&quot;,&quot;label&quot;:&quot;Dings_2026 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2026_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cafedrine_Dings2026_reference&quot;,&quot;label&quot;:&quot;Dings_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/Cafedrine_Dings2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Dings_2024_DBP&quot;,&quot;label&quot;:&quot;Dings_2024 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2024_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2024_HR&quot;,&quot;label&quot;:&quot;Dings_2024 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2024_HR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2024_SBP&quot;,&quot;label&quot;:&quot;Dings_2024 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2024_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2026_HR&quot;,&quot;label&quot;:&quot;Dings_2026 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2026_HR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2026_MAP&quot;,&quot;label&quot;:&quot;Dings_2026 \u00b7 MAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2026_MAP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dings_2026_SBP&quot;,&quot;label&quot;:&quot;Dings_2026 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cafedrine/pd_Dings_2026_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cafedrine — `Cafedrine_Dings2026_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="cafedrine" model-id="Cafedrine_Dings2026_reference" status="simulated" stale="false" population="" measured-compound="cafedrine" parameterization="mechanistic" topology="1C"></div>
+> Cafedrine’s total clearance of 0.0971 L/min is disputed by the second reader, leaving the record under review.
+
+<div class="pk-model-meta" hidden drug="cafedrine" model-id="Cafedrine_Dings2026_reference" status="needs_review" stale="false" population="" measured-compound="cafedrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dings C, Lehr T, Kranke P, Vojnar B, Gaik C, Koch T et al. Pharmacometric Analysis of Cafedrine/Theodrenaline Versus Ephedrine on Maternal Hemodynamics and Neonatal Acidosis During Cesarean Section. Pharmaceutics 18(3) (2026).
@@ -29,6 +31,8 @@ Dings C, Lehr T, Kranke P, Vojnar B, Gaik C, Koch T et al. Pharmacometric Analys
 <figure class="pk-models-diagram"><img src="drugs/drug_cafedrine/Cafedrine_Dings2026_reference/Cafedrine_Dings2026_reference.svg" alt="Cafedrine_Dings2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Clearance Cl | CL | 0.0971 | L/min |
@@ -36,7 +40,7 @@ Dings C, Lehr T, Kranke P, Vojnar B, Gaik C, Koch T et al. Pharmacometric Analys
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Dings C, Lehr T, Kranke P, Vojnar B, Gaik C, Koch T et al. Pharmacometric Analys
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Cafedrine’s total clearance of 0.0971 L/min is disputed by the second reader, leaving the record under review.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.0971, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+The second reader supplied no corresponding clearance value, and the cross-check reports 0 of 1 reader agreeing. The record therefore remains disputed on cafedrine clearance. Extracted — cafedrine: CL 0.0971 L/min, V 1 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.0971, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -77,19 +83,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/7 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.0 (0/7 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 0.0971 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q306]` | 0.107 | 0.107 | mismatch |
-| `gpt-oss:120b` | `values[Q316]` | 13 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q321]` | 5.63 | 5.63 | mismatch |
-| `gpt-oss:120b` | `values[Q326]` | 0.171 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q47]` | -1.74 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q61]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 0.0971 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q306]` | 0.107 | 0.107 | mismatch |
+| `gpt-oss-120b` | `values[Q316]` | 13 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | 5.63 | 5.63 | mismatch |
+| `gpt-oss-120b` | `values[Q326]` | 0.171 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | -1.74 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 1 |  | only_one_extracted |
 
 </details>
 
@@ -115,14 +121,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cafedrine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cafedrine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

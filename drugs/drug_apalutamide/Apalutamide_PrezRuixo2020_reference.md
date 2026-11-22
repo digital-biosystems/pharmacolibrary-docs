@@ -16,7 +16,7 @@ Pérez-Ruixo C, Pérez-Blanco JS, Chien C, Yu M, Ouellet D, Pérez-Ruixo JJ et a
 
 ## Population and dosing
 
-**Population:** healthy males and castration-resistant prostate cancer subjects · condition healthy and castration-resistant prostate cancer · age group adult · n = n_subjects_int_1092.
+**Population:** healthy males and castration-resistant prostate cancer subjects · condition healthy and castration-resistant prostate cancer · age group adult.
 
 ## Model
 

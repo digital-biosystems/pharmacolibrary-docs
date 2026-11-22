@@ -4,11 +4,11 @@
 
 # aprindine — `Aprindine_Kobari1984_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-08 15:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="aprindine" model-id="Aprindine_Kobari1984_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="aprindine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aprindine" model-id="Aprindine_Kobari1984_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="aprindine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kobari T, Itoh T, Hirakawa T, Namekawa H, Suzuki T, Satoh T et al. Dose-dependent pharmacokinetics of aprindine in healthy volunteers. European journal of clinical pharmacology 26(1):129–131 (1984).
@@ -34,7 +34,7 @@ Kobari T, Itoh T, Hirakawa T, Namekawa H, Suzuki T, Satoh T et al. Dose-dependen
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Kobari T, Itoh T, Hirakawa T, Namekawa H, Suzuki T, Satoh T et al. Dose-dependen
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — aprindine: t1/2β 8 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of t 1/2 beta: this record has 8.0, the second reading none. That field does not shape the model.
 

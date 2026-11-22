@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;oxaliplatin&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/&quot;},{&quot;label&quot;:&quot;Zhu_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxaliplatin_Deyme2019_reference&quot;,&quot;label&quot;:&quot;Deyme_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/Oxaliplatin_Deyme2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxaliplatin_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/Oxaliplatin_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxaliplatin_Zhu2023_reference&quot;,&quot;label&quot;:&quot;Zhu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/Oxaliplatin_Zhu2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Zhu_2023_PDTO&quot;,&quot;label&quot;:&quot;Zhu_2023 \u00b7 PDTO&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/pd_Zhu_2023_PDTO.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxaliplatin_Zhu2023_reference&quot;,&quot;label&quot;:&quot;Zhu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/Oxaliplatin_Zhu2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxaliplatin_Deyme2019_reference&quot;,&quot;label&quot;:&quot;Deyme_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/Oxaliplatin_Deyme2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxaliplatin_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/Oxaliplatin_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhu_2023_PDTO&quot;,&quot;label&quot;:&quot;Zhu_2023 \u00b7 PDTO&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxaliplatin/pd_Zhu_2023_PDTO.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record refused because oxaliplatin's peripheral-to-central transfer rate was left at a library default rather than using a value from the paper.
+> The record was refused because the transfer rate from the peripheral to central compartment was not estimated from the paper.
 
 <div class="pk-model-meta" hidden drug="oxaliplatin" model-id="Oxaliplatin_Zhu2023_reference" status="needs_review" stale="false" population="adults with colorectal cancer" measured-compound="oxaliplatin" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,9 +49,9 @@ Zhu J, Zhang Y, Zhao Y, Zhang J, Hao K, He H. Translational Pharmacokinetic/Phar
 
 ### Reviewer guidance
 
-**Record refused because oxaliplatin's peripheral-to-central transfer rate was left at a library default rather than using a value from the paper.**
+**The record was refused because the transfer rate from the peripheral to central compartment was not estimated from the paper.**
 
-The intercompartmental clearance from central to peripheral is 49.3 L/h, but the reverse rate is missing from the record and defaulted. A second reader also disagreed on the peripheral-to-central value, citing 0.0156 instead of 0.0527. Additional disagreements exist for the elimination rate (0.35 vs missing) and volume (72.1 L vs missing). Extracted — oxaliplatin: CL 5.96 L/h, V 49.9 L, Q 49.3 L/h.
+The model defines an intercompartmental clearance of 49.3 L/h, but the reverse rate constant was not extracted. Consequently, a generic placeholder value was used instead of a paper-specific estimate. A second reader also disagreed with the record's reported parameters, including a value of 0.0527 for one parameter against a reading of 0.0156. Extracted — oxaliplatin: CL 5.96 L/h, V 49.9 L, Q 49.3 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 0.0527, the second reading 0.0156; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -128,14 +128,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=oxaliplatin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=oxaliplatin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.286, 0 of 1 reader(s) agree | 0.286 | cross-check disputed by a second reader: verdict disputed, agreement 0.286, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

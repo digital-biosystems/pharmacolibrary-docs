@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;pregabalin&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/&quot;},{&quot;label&quot;:&quot;Bender_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pregabalin_Bae2016_reference&quot;,&quot;label&quot;:&quot;Bae_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chan_2021_LSR28&quot;,&quot;label&quot;:&quot;Chan_2021 \u00b7 LSR28&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/pd_Chan_2021_LSR28.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Miller_2003_monthly_seizure_frequency&quot;,&quot;label&quot;:&quot;Miller_2003 \u00b7 monthly seizure frequency&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/pd_Miller_2003_monthly_seizure_frequency.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pregabalin_Bae2016_reference&quot;,&quot;label&quot;:&quot;Bae_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chan_2021_LSR28&quot;,&quot;label&quot;:&quot;Chan_2021 \u00b7 LSR28&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/pd_Chan_2021_LSR28.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Miller_2003_monthly_seizure_frequency&quot;,&quot;label&quot;:&quot;Miller_2003 \u00b7 monthly seizure frequency&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/pd_Miller_2003_monthly_seizure_frequency.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Pregabalin total clearance of 0.034 L/hr is physiologically implausible for rats, indicating an extraction or unit error.
+> Pregabalin clearance of 0.034 L/hr was rejected as physiologically implausible in relation to distribution volume, consistent with a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Bender2009_reference" status="rejected" stale="false" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,41 +17,7 @@ Bender G, Gosset J, Florian J, Tan K, Field M, Marshall S et al. Population phar
 
 ## Population and dosing
 
-**Population:** rats · n = ,
-  "condition": "healthy",
-  "species": "rat",
-  "compounds": [
-    {
-      "name": "pregabalin",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    },
-    {
-      "name": "sildenafil",
-      "role": "co-administered",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "no"
-    },
-    {
-      "name": "sildenafil active metabolite",
-      "role": "metabolite",
-      "dosed": "no",
-      "measured": "yes",
-      "has_parameters": "no"
-    }
-  ],
-  "links": [
-    {
-      "from": "sildenafil",
-      "to": "sildenafil active metabolite",
-      "relation": "metabolism",
-      "link_parameter": "none"
-    }
-  ]
-}.
+**Population:** rats.
 
 **Dosing:** 4, 10 mg/kg/hr, iv, single.
 
@@ -89,13 +55,13 @@ Bender G, Gosset J, Florian J, Tan K, Field M, Marshall S et al. Population phar
 
 ### Reviewer guidance
 
-**Pregabalin total clearance of 0.034 L/hr is physiologically implausible for rats, indicating an extraction or unit error.**
+**Pregabalin clearance of 0.034 L/hr was rejected as physiologically implausible in relation to distribution volume, consistent with a unit or scale extraction error.**
 
-The clearance of 0.034 L/hr and volume of distribution of 0.270 L fall outside expected physiological ranges for the rat population. A second reader failed to compute parameter comparisons, leaving the validation inconclusive despite the primary magnitude check. Extracted — pregabalin: CL 0.034 L/hr, V1 0.27 L, Q 0.0225 L/hr, V2 6.75 L, kabs 2 h À1, tlag 0.495 hour.
+The record reports clearance of 0.034 L/hr, central volume of 0.270 L, and peripheral volume of 6.75 L; the stated reason for rejection is an implausible clearance-to-volume magnitude attributed to unit or scale extraction. The second reader did not confirm the reported absorption rate of 2.0, lag time of 0.495 hour, or coefficient of 0.302. Extracted — pregabalin: CL 0.034 L/hr, V1 0.27 L, Q 0.0225 L/hr, V2 6.75 L, kabs 2 h À1, tlag 0.495 hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 2.0, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

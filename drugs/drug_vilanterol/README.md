@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Kempsford_2014_HR&quot;,&quot;label&quot;:&quot;Kempsford_2014 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Kempsford_2014_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kempsford_2014_QTcF&quot;,&quot;label&quot;:&quot;Kempsford_2014 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Llanos_Paez_2023_FEV1&quot;,&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Vilanterol
 
@@ -43,29 +42,9 @@ Vilanterol is an ultra-long-acting beta-2 adrenergic agonist used to treat chron
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gong_2022_trough_FEV1](drugs/drug_vilanterol/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← vilanterol/umeclidinium · stimulation effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Kempsford_2014_HR](drugs/drug_vilanterol/pd_Kempsford_2014_HR.md) | maximal heart rate ← VI · direct linear effect | ▶ model + simulator | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Kempsford_2014_QTcF](drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md) | maximal QTcF ← VI · direct linear effect | ▶ model + simulator | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Llanos-Paez_2023_FEV1](drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md) | forced expiratory volume in one second ← vilanterol · direct Emax (saturable) effect | ▶ model + simulator | Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09853-z](https://doi.org/10.1007/s10928-023-09853-z) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vilanterol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRB2 (target).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Kempsford_2014_HR](drugs/drug_vilanterol/pd_Kempsford_2014_HR.md) | maximal heart rate ← VI · direct linear effect | — | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Kempsford_2014_QTcF](drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md) | maximal QTcF ← VI · direct linear effect | — | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Llanos-Paez_2023_FEV1](drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md) | forced expiratory volume in one second ← vilanterol · direct Emax (saturable) effect | model (no simulator) | Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09853-z](https://doi.org/10.1007/s10928-023-09853-z) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 12:52 | 9:21 | 2/2/0 | 3/0/0 | 0/0/0 | 147,504/36,989 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 0/19 | 19/0 | 1 |
+| 2026-10-13 12:52 | 9:21 | 2/2/0 | 4/0/0 | 0/0/0 | 147,504/36,989 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 0/19 | 19/0 | 1 |
 
 ## Coverage
 

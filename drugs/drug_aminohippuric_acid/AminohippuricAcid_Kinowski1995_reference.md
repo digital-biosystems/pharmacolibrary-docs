@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;aminohippuric acid&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/&quot;},{&quot;label&quot;:&quot;Kinowski_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminohippuricAcid_Kinowski1995_reference&quot;,&quot;label&quot;:&quot;Kinowski_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminohippuricAcid_Kinowski1995_reference&quot;,&quot;label&quot;:&quot;Kinowski_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # aminohippuric acid — `AminohippuricAcid_Kinowski1995_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Kinowski1995_reference" status="simulated" stale="false" population="patients with and without renal insufficiency" measured-compound="aminohippuric_acid" parameterization="mechanistic" topology="1C"></div>
+> Aminohippuric acid clearance of 30.7 L/h and volume of 10.6 L lacked second-reader agreement.
+
+<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Kinowski1995_reference" status="needs_review" stale="false" population="patients with and without renal insufficiency" measured-compound="aminohippuric_acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kinowski JM, Rodier M, Bressolle F, Fabre D, Augey V, Richard JL et al. Bayesian estimation of p-aminohippurate clearance by a limited sampling strategy. Journal of pharmaceutical sciences 84(3):307–311 (1995).
@@ -27,6 +29,8 @@ Kinowski JM, Rodier M, Bressolle F, Fabre D, Augey V, Richard JL et al. Bayesian
 <figure class="pk-models-diagram"><img src="drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference/AminohippuricAcid_Kinowski1995_reference.svg" alt="AminohippuricAcid_Kinowski1995_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 30.7 | L/h |
@@ -34,7 +38,7 @@ Kinowski JM, Rodier M, Bressolle F, Fabre D, Augey V, Richard JL et al. Bayesian
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Kinowski JM, Rodier M, Bressolle F, Fabre D, Augey V, Richard JL et al. Bayesian
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Aminohippuric acid clearance of 30.7 L/h and volume of 10.6 L lacked second-reader agreement.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The abstract-only source meant reported summary statistics stood in for a fitted model, limiting validation depth. A second reader could not verify the specific aminohippuric acid values or compound identity, citing them as unknown or null. This resulted in a cross-check agreement ratio of 0.25, with zero of one reader agreeing. Extracted — aminohippuric acid: CL 30.7 L/h, V 10.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminohippuric_acid, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -119,14 +123,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=aminohippuric_acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=aminohippuric_acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

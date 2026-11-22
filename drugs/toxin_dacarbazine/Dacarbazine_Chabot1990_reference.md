@@ -134,30 +134,13 @@ The model uses a retention function lacking initial amounts for both compartment
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_dacarbazine/Dacarbazine_Chabot1990_reference/Dacarbazine_Chabot1990_reference_matlab.zip" download>Dacarbazine_Chabot1990_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_dacarbazine/Dacarbazine_Chabot1990_reference/Dacarbazine_Chabot1990_reference_sbml.zip" download>Dacarbazine_Chabot1990_reference_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_dacarbazine/Dacarbazine_Chabot1990_reference/Dacarbazine_Chabot1990_reference_cellml.zip" download>Dacarbazine_Chabot1990_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Chabot GG, Flaherty LE, Valdivieso M, Baker LH. Alteration of dacarbazine pharmacokinetics after interleukin-2 administration in melanoma patients. Cancer chemotherapy and pharmacology 27(2):157–160 (1990). [doi:10.1007/BF00689102](https://doi.org/10.1007/BF00689102)
-
-**This record:** Pharmacolibrary, model `Dacarbazine_Chabot1990_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_dacarbazine/Dacarbazine_Chabot1990_reference>
-
-```bibtex
-@misc{pharmacolibrary_DacarbazineChabot1990reference,
-  title  = {{Pharmacolibrary model Dacarbazine_Chabot1990_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_dacarbazine/Dacarbazine_Chabot1990_reference},
-  note   = {Parameters from doi:10.1007/BF00689102},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

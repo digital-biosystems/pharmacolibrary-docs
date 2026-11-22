@@ -5,11 +5,11 @@
 
 # canagliflozin — `Canagliflozin_Elenjickal2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-04 22:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The abstract-only record rejected the 1000 transit compartments value due to a dimension mismatch and lack of fitted model data.
+> Steady-state AUC (66%) and transit compartments (1000) in canagliflozin have dimension mismatch, invalidating the record.
 
-<div class="pk-model-meta" hidden drug="canagliflozin" model-id="Canagliflozin_Elenjickal2025_reference" status="rejected" stale="true" population="patients with advanced chronic kidney disease" measured-compound="canagliflozin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="canagliflozin" model-id="Canagliflozin_Elenjickal2025_reference" status="rejected" stale="false" population="patients with advanced chronic kidney disease" measured-compound="canagliflozin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Elenjickal EJ, Mavrakanas TA, Gritsas A, Suri RS, Marsot A. Population Pharmacokinetic Modeling of Canagliflozin in Advanced Chronic Kidney Disease. Clinical pharmacokinetics 64(11):1693–1708 (2025).
@@ -17,7 +17,7 @@ Elenjickal EJ, Mavrakanas TA, Gritsas A, Suri RS, Marsot A. Population Pharmacok
 
 ## Population and dosing
 
-**Population:** patients with advanced chronic kidney disease · condition advanced chronic kidney disease · age group adult · n = &gt;=23.
+**Population:** patients with advanced chronic kidney disease · condition advanced chronic kidney disease · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Elenjickal EJ, Mavrakanas TA, Gritsas A, Suri RS, Marsot A. Population Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +47,11 @@ Elenjickal EJ, Mavrakanas TA, Gritsas A, Suri RS, Marsot A. Population Pharmacok
 
 ### Reviewer guidance
 
-**The abstract-only record rejected the 1000 transit compartments value due to a dimension mismatch and lack of fitted model data.**
+**Steady-state AUC (66%) and transit compartments (1000) in canagliflozin have dimension mismatch, invalidating the record.**
 
-The source text is an abstract, so summary statistics stand in for a fitted model. A parameter for the number of transit compartments is listed with a value of 1000 and a unit of 'bootstrap', which is a dimension mismatch for a dimensionless count. Second readers disputed the values for the transit compartment count, apparent volume of distribution, and steady-state AUC. Extracted — canagliflozin: n_transit 1e+03 bootstrap, V/F 80.7 L, AUCSS 66 %.
+The record lists steady-state AUC as 66%, a dimensionless unit, but the parameter requires dimensions of mass·time/length³. Transit compartments are recorded as 1000 'bootstrap', which is an invalid unit for a dimensionless count. These dimension conflicts on structural parameters caused the rejection. Extracted — canagliflozin: n_transit 1e+03 bootstrap, V/F 80.7 L, AUCSS 66 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has canagliflozin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has canagliflozin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,20 +93,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[apparent volume of distribution]` |  | 80.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[canagliflozin dose]` |  | 100 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[n]` | 1000 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady-state auc]` | 66 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady-state auc]` |  | 66 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | 80.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | canagliflozin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | canagliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  | 80.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[canagliflozin dose]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[n]` | 1000 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state auc]` | 66 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state auc]` |  | 66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 80.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | canagliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | canagliflozin | unknown | mismatch |
 
 </details>
 

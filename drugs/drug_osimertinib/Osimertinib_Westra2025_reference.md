@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;osimertinib&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/&quot;},{&quot;label&quot;:&quot;Westra_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Osimertinib_Rodier2022_reference&quot;,&quot;label&quot;:&quot;Rodier_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Westra2025_reference&quot;,&quot;label&quot;:&quot;Westra_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Osimertinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_TGI&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 TGI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_TGI.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pEGFR&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_pEGFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Osimertinib_Rodier2022_reference&quot;,&quot;label&quot;:&quot;Rodier_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Westra2025_reference&quot;,&quot;label&quot;:&quot;Westra_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Osimertinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_TGI&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 TGI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_TGI.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pEGFR&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_pEGFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # osimertinib — `Osimertinib_Westra2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Westra2025_reference" status="simulated" stale="false" population="patients with NSCLC in the OSIBOOST cohort" measured-compound="osimertinib" parameterization="apparent" topology="parent_metabolite"></div>
+> Record was held back because the second reader disputed the extracted osimertinib parameters, resulting in zero agreement on key values like clearance and absorption rate.
+
+<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Westra2025_reference" status="needs_review" stale="false" population="patients with NSCLC in the OSIBOOST cohort" measured-compound="osimertinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Westra N, Kruithof PD, Croes S, van Geel RMJM, Hendriks LEL, Touw DJ et al. Osimertinib Cost Minimization in Non-Small Cell Lung Cancer (NSCLC) Treatment: Hypothesis Generation for a Population Pharmacokinetic Approach for Equivalent Dose Optimization of Osimertinib in Combination with Cobicistat. Journal of clinical pharmacology 65(12):1687–1698 (2025).
@@ -29,6 +31,8 @@ Westra N, Kruithof PD, Croes S, van Geel RMJM, Hendriks LEL, Touw DJ et al. Osim
 <figure class="pk-models-diagram"><img src="drugs/drug_osimertinib/Osimertinib_Westra2025_reference/Osimertinib_Westra2025_reference.svg" alt="Osimertinib_Westra2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Ka (/h) b | kabs | 0.24 | 1/h |
@@ -41,7 +45,7 @@ Westra N, Kruithof PD, Croes S, van Geel RMJM, Hendriks LEL, Touw DJ et al. Osim
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +55,13 @@ Westra N, Kruithof PD, Croes S, van Geel RMJM, Hendriks LEL, Touw DJ et al. Osim
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Record was held back because the second reader disputed the extracted osimertinib parameters, resulting in zero agreement on key values like clearance and absorption rate.**
 
-A reported unit could not be converted (AUC ratio and Cmax_ratio), so that value has no SI equivalent.
+The cross-check failed with an agreement score of 0.357 because the second reader disagreed with the extraction of osimertinib's clearance, absorption rate constant, and volume of distribution. Additionally, the record listed cobicistat as a dose compound alongside osimertinib, which the second reader identified as incorrect. These conflicting interpretations of the extracted values and drug list prevented a consensus verdict. Extracted — osimertinib: kabs 0.24 1/h, V/F 966 L, CL/F 19 L/h, AUC ratio 1 DL 1, Cmax_ratio 1 DL 1; AZ5104: V1/F 181 L, CL/F 46.3 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has osimertinib and cobicistat, the second reading osimertinib; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -184,19 +188,20 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_metabolite_built[AZ5104] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.181, 'CL': 1.2861111111111112e-05, 'formation': 5.277777777777778e-06} | AZ5104 = compartment M1 with its own numbers |
-| T3_metabolite_output[AZ5104] | pass |  | 2.508e-05 | C_M1 (AZ5104) must rise above 0 when the parent is dosed |
-| T3_molar_mass[AZ5104] | pass |  | {'MW': 0.49961900000000004, 'MW_m1': 0.48559199999999997} | formation is molecule-for-molecule |
-| T3_output_variable | pass | C_central (measured=osimertinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_metabolite_built[AZ5104] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.181, 'CL': 1.2861111111111112e-05, 'formation': 5.277777777777778e-06} |  | AZ5104 = compartment M1 with its own numbers |
+| T3_metabolite_output[AZ5104] | pass |  | 2.508e-05 |  | C_M1 (AZ5104) must rise above 0 when the parent is dosed |
+| T3_molar_mass[AZ5104] | pass |  | {'MW': 0.49961900000000004, 'MW_m1': 0.48559199999999997} |  | formation is molecule-for-molecule |
+| T3_output_variable | pass | C_central (measured=osimertinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.357, 0 of 1 reader(s) agree | 0.357 | cross-check disputed by a second reader: verdict disputed, agreement 0.357, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

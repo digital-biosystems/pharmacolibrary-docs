@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for topiramate was held back because absorption rates were defaulted rather than extracted from the Lee_2024 abstract.
+> Topiramate absorption parameters ka and Tlag were defaulted because the abstract-only record lacked explicit estimates.
 
 <div class="pk-model-meta" hidden drug="topiramate" model-id="Topiramate_Lee2024_reference" status="needs_review" stale="false" population="adults with epilepsy" measured-compound="topiramate" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Lee S, Kim HC, Jang Y, Lee HS, Ahn SJ, Lee ST et al. Topiramate dosage optimizat
 
 ## Population and dosing
 
-**Population:** adults with epilepsy · condition epilepsy · age group adult · n = &gt;=389.
+**Population:** adults with epilepsy · condition epilepsy · age group adult.
 
 ## Model
 
@@ -51,9 +51,9 @@ Lee S, Kim HC, Jang Y, Lee HS, Ahn SJ, Lee ST et al. Topiramate dosage optimizat
 
 ### Reviewer guidance
 
-**The record for topiramate was held back because absorption rates were defaulted rather than extracted from the Lee_2024 abstract.**
+**Topiramate absorption parameters ka and Tlag were defaulted because the abstract-only record lacked explicit estimates.**
 
-The absorption rate constant and lag time were set to library defaults instead of using explicit estimates from the source. This reliance on placeholders occurred because the record was built solely from the abstract, using summary statistics rather than a fitted model. Extracted — topiramate: Cmax 4.2 mg/L, Cmin 3 mg/L, AUCt 87.7 h∙mg/L, CL/F 2.1 L/h, V/F 82.4 L.
+The record used library placeholders for absorption rate (ka) and lag time (Tlag) instead of values derived from the Lee_2024 abstract. A second reader disagreed with the extracted summary statistics, including Cmax of 4.2 mg/L and CL/F of 2.1 L/h, resulting in a 0.125 agreement ratio. Consequently, the apparent parameterization with F=1 relies on unsupported absorption assumptions for this one-compartment model. Extracted — topiramate: Cmax 4.2 mg/L, Cmin 3 mg/L, AUCt 87.7 h∙mg/L, CL/F 2.1 L/h, V/F 82.4 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has topiramate, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -152,15 +152,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=topiramate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=topiramate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

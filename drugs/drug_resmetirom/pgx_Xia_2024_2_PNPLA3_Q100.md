@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;resmetirom&quot;,&quot;href&quot;:&quot;drugs/drug_resmetirom/&quot;},{&quot;label&quot;:&quot;Xia_2024_2 \u00b7 PGx PNPLA3&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PNPLA3 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.5), gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# PNPLA3 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.5), gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +37,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `glm-5.3-flash` | not confirmed | 0.5 (2/4 fields) | 2 |
-| `gpt-oss:120b` | no answer | – | – (extracted nothing for this PGx record) |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PGx record) |
 
 <details><summary>2 field discrepancies</summary>
 

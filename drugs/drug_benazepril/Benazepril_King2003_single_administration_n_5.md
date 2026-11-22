@@ -4,11 +4,11 @@
 
 # benazepril — `Benazepril_King2003_single_administration_n_5`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-07 05:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Benazeprilat volume of distribution 0.0005 L/kg is implausibly small, and one parameter's unit could not be converted to standard units.
+> Benazeprilat’s kel of 0.0001 h was associated with an implausible clearance/volume magnitude, and its time unit conflicts with its rate-constant meaning.
 
-<div class="pk-model-meta" hidden drug="benazepril" model-id="Benazepril_King2003_single_administration_n_5" status="rejected" stale="true" population="cats" measured-compound="benazeprilat" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="benazepril" model-id="Benazepril_King2003_single_administration_n_5" status="rejected" stale="false" population="cats" measured-compound="benazeprilat" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the disposition and effect of benazepril and benazeprilat in cats. Journal of veterinary pharmacology and therapeutics 26(3):213–224 (2003).
@@ -47,7 +47,7 @@ King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +57,13 @@ King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the 
 
 ### Reviewer guidance
 
-**Benazeprilat volume of distribution 0.0005 L/kg is implausibly small, and one parameter's unit could not be converted to standard units.**
+**Benazeprilat’s kel of 0.0001 h was associated with an implausible clearance/volume magnitude, and its time unit conflicts with its rate-constant meaning.**
 
-The reported volume of distribution (V/F) for benazeprilat is 0.0005 L/kg, which is physiologically implausible and indicates a magnitude or unit extraction error. The record was rejected because a unit associated with a parameter was not recognized, preventing conversion to standard SI units. Consequently, the model lacks a valid value for that parameter. Extracted — benazeprilat: V/F 0.0005 L/kg, kel 0.0001 h, Bmax 104 ng/mL, Cmax 25.1 nmol/L, KD 0.0019 ng/mL, Fab 10.4 n ¼ 5, kabs 0.62 h, AUC∞ 434 n ¼ 5.
+The record defines kel as a terminal elimination rate constant but reports 0.0001 h; likewise, kabs is defined as an absorption rate constant but has 0.62 h. Cmax is defined as the highest observed concentration, but its value of 25.1 nmol/L conflicts with the dimensional finding expecting mass per volume. Readers disagreed on whether kabs was extracted as 0.62 or absent, and a reported unit could not be converted to SI, leaving that parameter without an SI value. Extracted — benazeprilat: V/F 0.0005 L/kg, kel 0.0001 h, Bmax 104 ng/mL, Cmax 25.1 nmol/L, KD 0.0019 ng/mL, Fab 10.4 n ¼ 5, kabs 0.62 h, AUC∞ 434 n ¼ 5.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of t 1/2 k a: this record has none, the second reading 0.62; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

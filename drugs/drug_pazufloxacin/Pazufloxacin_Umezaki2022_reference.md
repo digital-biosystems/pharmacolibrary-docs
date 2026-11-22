@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;pazufloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_pazufloxacin/&quot;},{&quot;label&quot;:&quot;Umezaki_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazufloxacin_Umezaki2022_reference&quot;,&quot;label&quot;:&quot;Umezaki_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazufloxacin_Umezaki2022_reference&quot;,&quot;label&quot;:&quot;Umezaki_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pazufloxacin — `Pazufloxacin_Umezaki2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-<div class="pk-model-meta" hidden drug="pazufloxacin" model-id="Pazufloxacin_Umezaki2022_reference" status="simulated" stale="false" population="infected neutropenic mice" measured-compound="pazufloxacin" parameterization="mechanistic" topology="1C"></div>
+> Pazufloxacin clearance and volume values were disputed and units could not be standardized to SI.
+
+<div class="pk-model-meta" hidden drug="pazufloxacin" model-id="Pazufloxacin_Umezaki2022_reference" status="needs_review" stale="false" population="infected neutropenic mice" measured-compound="pazufloxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Umezaki Y, Matsumoto K, Ikawa K, Yokoyama Y, Enoki Y, Shigemi A et al. Concentration-Dependent Activity of Pazufloxacin against. Antibiotics (Basel, Switzerland) 11(7) (2022).
@@ -31,6 +33,8 @@ Umezaki Y, Matsumoto K, Ikawa K, Yokoyama Y, Enoki Y, Shigemi A et al. Concentra
 <figure class="pk-models-diagram"><img src="drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference/Pazufloxacin_Umezaki2022_reference.svg" alt="Pazufloxacin_Umezaki2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax (µg/mL) | Cmax | 0.63 | µg/mL |
@@ -40,7 +44,7 @@ Umezaki Y, Matsumoto K, Ikawa K, Yokoyama Y, Enoki Y, Shigemi A et al. Concentra
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +54,13 @@ Umezaki Y, Matsumoto K, Ikawa K, Yokoyama Y, Enoki Y, Shigemi A et al. Concentra
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Pazufloxacin clearance and volume values were disputed and units could not be standardized to SI.**
 
-A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent.
+The second reader disagreed with the extracted clearance of 2.0 L/h and volume of 0.84 L/kg, marking them as null. One reported unit could not be converted to SI, leaving that parameter without a standardized value. The reader also identified the dose compound and primary analyte as unknown. Extracted — pazufloxacin: Cmax 0.63 µg/mL, AUC∞ 1.35 µg∙h/mL, CL 2 L/h, V 0.84 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pazufloxacin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -131,15 +135,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=pazufloxacin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 0.65 | 0.002968 | unresolved concentration unit (exp 'R2', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=pazufloxacin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 0.65 | 0.002968 |  | unresolved concentration unit (exp 'R2', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

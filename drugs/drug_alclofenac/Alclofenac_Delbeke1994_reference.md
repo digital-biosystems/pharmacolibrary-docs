@@ -4,11 +4,11 @@
 
 # alclofenac — `Alclofenac_Delbeke1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 00:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="alclofenac" model-id="Alclofenac_Delbeke1994_reference" status="needs_review" stale="true" population="horses" measured-compound="alclofenac" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alclofenac" model-id="Alclofenac_Delbeke1994_reference" status="needs_review" stale="false" population="horses" measured-compound="alclofenac" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Delbeke FT, Landuyt J, Debackere M. Disposition of human drug preparations in the horse. III. Orally administered alclofenac. Journal of veterinary pharmacology and therapeutics 17(5):353–358 (1994).
@@ -37,7 +37,7 @@ Delbeke FT, Landuyt J, Debackere M. Disposition of human drug preparations in th
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Delbeke FT, Landuyt J, Debackere M. Disposition of human drug preparations in th
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — alclofenac: t1/2α 1 h, t1/2β 6.9 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alclofenac, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

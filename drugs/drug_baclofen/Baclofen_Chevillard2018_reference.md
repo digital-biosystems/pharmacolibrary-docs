@@ -17,7 +17,7 @@ Chevillard L, Sabo N, Tod M, Labat L, Chasport C, Chevaleyre C et al. Population
 
 ## Population and dosing
 
-**Population:** alcoholic-dependent adult patients · condition alcohol dependence · age group adult · n = : 143.
+**Population:** alcoholic-dependent adult patients · condition alcohol dependence · age group adult.
 
 ## Model
 

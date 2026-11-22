@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;toloxatone&quot;,&quot;href&quot;:&quot;drugs/drug_toloxatone/&quot;},{&quot;label&quot;:&quot;Benedetti_1982 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Toloxatone_Vistelle1992_reference&quot;,&quot;label&quot;:&quot;Vistelle_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Toloxatone_Vistelle1992_reference&quot;,&quot;label&quot;:&quot;Vistelle_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # toloxatone — `Toloxatone_Benedetti1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-06 23:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Toloxatone record rejected because it lacks distribution volume and clearance values, making it an exposure/outcome study rather than a compartmental model.
+> Toloxatone record lacks distribution volume and clearance values, preventing construction of a compartmental population pharmacokinetic model.
 
-<div class="pk-model-meta" hidden drug="toloxatone" model-id="Toloxatone_Benedetti1982_reference" status="rejected" stale="true" population="healthy adult volunteers" measured-compound="toloxatone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="toloxatone" model-id="Toloxatone_Benedetti1982_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="toloxatone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Benedetti MS, Rovei V, Dencker SJ, Nagy A, Johansson R. Pharmacokinetics of toloxatone in man following intravenous and oral administrations. Arzneimittel-Forschung 32(3):276–280 (1982).
@@ -34,7 +34,7 @@ Benedetti MS, Rovei V, Dencker SJ, Nagy A, Johansson R. Pharmacokinetics of tolo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Benedetti MS, Rovei V, Dencker SJ, Nagy A, Johansson R. Pharmacokinetics of tolo
 
 ### Reviewer guidance
 
-**Toloxatone record rejected because it lacks distribution volume and clearance values, making it an exposure/outcome study rather than a compartmental model.**
+**Toloxatone record lacks distribution volume and clearance values, preventing construction of a compartmental population pharmacokinetic model.**
 
-The established findings confirm the paper is an exposure/outcome study that reports no distribution volume or clearance, so it is not a compartmental population pharmacokinetic model. The record was built from the abstract alone, meaning reported summary statistics stood in for a fitted model. A structural parameter dimension mismatch was also noted, though the missing clearance and volume are the primary reasons for rejection. The second reader disagreed on whether the model parameterization should be labeled apparent or mechanistic. Extracted — toloxatone: fu 50 %.
+The paper reports summary statistics for toloxatone but provides no fitted values for distribution volume or clearance, rendering it unsuitable for compartmental modeling. Additionally, the reported plasma clearance unit (l/h . kg) conflicts dimensionally with the expected volume-per-time structure for that parameter. Extracted — toloxatone: fu 50 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has toloxatone, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

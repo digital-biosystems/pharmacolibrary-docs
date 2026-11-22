@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The daunorubicin model was held back because the elimination rate constant from central to peripheral compartment was left at library defaults rather than using a paper-specific estimate.
+> The inter-compartmental clearance k12 was left at library defaults, and the primary analyte was incorrectly recorded as a three-drug mixture.
 
 <div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_KroghMadsen2012_daunorubicin" status="needs_review" stale="false" population="patients with acute myeloid leukemia" measured-compound="cytarabine, etoposide, and daunorubicin" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,9 +54,9 @@ Krogh-Madsen M, Bender B, Jensen MK, Nielsen OJ, Friberg LE, Honoré PH. Populat
 
 ### Reviewer guidance
 
-**The daunorubicin model was held back because the elimination rate constant from central to peripheral compartment was left at library defaults rather than using a paper-specific estimate.**
+**The inter-compartmental clearance k12 was left at library defaults, and the primary analyte was incorrectly recorded as a three-drug mixture.**
 
-The record lists daunorubicin alongside cytarabine and etoposide, but only daunorubicin parameters were extracted, causing a disagreement on the primary analyte. The missing parameter means the model relied on placeholder values for the transfer between central and peripheral compartments. Consequently, the simulated profile lacks support from the paper’s specific estimates for this interaction. Extracted — daunorubicin: CL 28 L/h, CL 129 L/h, V1 22 L, V1 453 L, Q 152 L/h, V2 911 L.
+The record includes k12 among the unreported parameters, meaning its value relies on software conventions rather than an estimate from the study. Additionally, the measured compound field lists cytarabine, etoposide, and daunorubicin, but a second reader agreed the primary analyte is only daunorubicin. This discrepancy in drug identification conflicts with the specific pharmacokinetic parameters provided for daunorubicin alone. Extracted — daunorubicin: CL 28 L/h, CL 129 L/h, V1 22 L, V1 453 L, Q 152 L/h, V2 911 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has cytarabine, etoposide, and daunorubicin, the second reading daunorubicin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -141,14 +141,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cytarabine, etoposide, and daunorubicin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cytarabine, etoposide, and daunorubicin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

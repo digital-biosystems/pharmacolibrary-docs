@@ -4,11 +4,11 @@
 
 # desipramine — `Desipramine_DeVane1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:07 UTC (Rejected), but the paper was screened again on 2026-09-23 20:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Desipramine clearance (1.86 1/kg/h) was rejected because its units could not be converted to standard SI units.
+> The desipramine clearance and volume of distribution parameters were rejected due to unit dimension mismatches with their structural definitions.
 
-<div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_DeVane1981_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="desipramine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_DeVane1981_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="desipramine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 DeVane CL, Savett M, Jusko WJ. Desipramine and 2-hydroxy-desipramine pharmacokinetics in normal volunteers. European journal of clinical pharmacology (1981).
@@ -43,7 +43,7 @@ DeVane CL, Savett M, Jusko WJ. Desipramine and 2-hydroxy-desipramine pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ DeVane CL, Savett M, Jusko WJ. Desipramine and 2-hydroxy-desipramine pharmacokin
 
 ### Reviewer guidance
 
-**Desipramine clearance (1.86 1/kg/h) was rejected because its units could not be converted to standard SI units.**
+**The desipramine clearance and volume of distribution parameters were rejected due to unit dimension mismatches with their structural definitions.**
 
-The record lists total clearance as 1.86 1/kg/h, a unit format that the review system could not interpret for standardization. Consequently, the parameter lacked a valid SI value needed for structural validation. A second reader also disagreed on the volume of distribution and absorption half-life values, but the clearance unit issue was the primary cause for refusal. Extracted — desipramine: Cmax 11.5 ng/ml, t1/2ka 0.74, CL 1.86 1/kg/h, Vnorm 22.4 1/kg, t1/2z 21.8 h, AUC 487, Ct 11.8 ng/ml, AUCt 391.
+The total clearance parameter was recorded in 1/kg/h, which conflicts with the required volume per time dimension, while the normalized volume of distribution was recorded in 1/kg, conflicting with the required volume dimension. A missing unit conversion prevented the generation of valid SI values for these parameters. Additionally, there were discrepancies in the extraction of absorption rate constants and AUC values between the primary record and the second reader. Extracted — desipramine: Cmax 11.5 ng/ml, t1/2ka 0.74, CL 1.86 1/kg/h, Vnorm 22.4 1/kg, t1/2z 21.8 h, AUC 487, Ct 11.8 ng/ml, AUCt 391.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc [h -ng/ml] 243: this record has 391, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

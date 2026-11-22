@@ -4,11 +4,11 @@
 
 # fleroxacin — `Fleroxacin_Miller1992_serum`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-07 11:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The central-to-peripheral transfer rate constant has the unconverted unit 'W-', causing a dimension mismatch that rejected the fleroxacin record.
+> Fleroxacin Cmax unit pg/mi caused dimension mismatch, triggering record rejection.
 
-<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_serum" status="rejected" stale="true" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_serum" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin pharmacokinetics in aqueous and vitreous humors determined by using complete concentration-time data from individual rabbits. Antimicrobial agents and chemotherapy 36(1):32–38 (1992).
@@ -42,7 +42,7 @@ Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,11 @@ Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin 
 
 ### Reviewer guidance
 
-**The central-to-peripheral transfer rate constant has the unconverted unit 'W-', causing a dimension mismatch that rejected the fleroxacin record.**
+**Fleroxacin Cmax unit pg/mi caused dimension mismatch, triggering record rejection.**
 
-The rate constant for drug movement from the central to the peripheral compartment is recorded with the unit 'W-'. This unit is not recognized as a standard time unit, so its value could not be interpreted for model calculation. This inconsistency in parameter dimensions on a structural rate constant led to the rejection of the record. Extracted — fleroxacin: t1/2α 2.34 h, kel 0.554 h-', AUC 23.5 mg h/liter, Cmax 13.1 pg/mi, tmax 0 h, k12 0.59 W-, k21 0.97 h-'.
+Cmax (13.05) is recorded as pg/mi, which does not resolve to a valid volume dimension. The elimination rate constant kel (0.554 h-1) and transfer rate constant k21 (0.97 h-1) were unreadable to the second reader, appearing as null. The half-life t1/2α (2.340 h) was assigned an inconsistent identifier by the second reader. Extracted — fleroxacin: t1/2α 2.34 h, kel 0.554 h-', AUC 23.5 mg h/liter, Cmax 13.1 pg/mi, tmax 0 h, k12 0.59 W-, k21 0.97 h-'.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ice: this record has 0.554, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ice: this record has 0.554, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -107,15 +107,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (9/12 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.75 (9/12 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[ice]` | 0.554 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k2l]` | 0.97 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tl,2|].parameter_id` | Q59 | Q57 | mismatch |
+| `gpt-oss-120b` | `parameters[ice]` | 0.554 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k2l]` | 0.97 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tl,2|].parameter_id` | Q59 | Q57 | mismatch |
 
 </details>
 

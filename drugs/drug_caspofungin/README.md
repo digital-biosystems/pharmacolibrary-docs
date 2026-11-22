@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J02A&quot;,&quot;href&quot;:&quot;atc/J02A.md&quot;},{&quot;label&quot;:&quot;caspofungin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caspofungin_AbdulAziz2025_reference&quot;,&quot;label&quot;:&quot;Abdul-Aziz_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caspofungin/Caspofungin_AbdulAziz2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Caspofungin_BorsukDe2020_reference&quot;,&quot;label&quot;:&quot;Borsuk-De_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caspofungin/Caspofungin_BorsukDe2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Caballero_2023_N&quot;,&quot;label&quot;:&quot;Caballero_2023 \u00b7 N&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_caspofungin/pd_Caballero_2023_N.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caspofungin_BorsukDe2020_reference&quot;,&quot;label&quot;:&quot;Borsuk-De_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caspofungin/Caspofungin_BorsukDe2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Caspofungin_AbdulAziz2025_reference&quot;,&quot;label&quot;:&quot;Abdul-Aziz_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caspofungin/Caspofungin_AbdulAziz2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Caballero_2023_N&quot;,&quot;label&quot;:&quot;Caballero_2023 \u00b7 N&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_caspofungin/pd_Caballero_2023_N.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # caspofungin
 
@@ -25,13 +25,13 @@ Caspofungin is a lipopeptide antifungal from the echinocandin class used to trea
 
 ## Start here
 
-> **Abdul-Aziz_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> critically ill patients receiving ECMO, n = 8. [Run it in the simulator](drugs/drug_caspofungin/Caspofungin_AbdulAziz2025_reference.md?tab=Simulation) · [record](drugs/drug_caspofungin/Caspofungin_AbdulAziz2025_reference.md)
+> **Borsuk-De_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> intensive care unit patients. [Run it in the simulator](drugs/drug_caspofungin/Caspofungin_BorsukDe2020_reference.md?tab=Simulation) · [record](drugs/drug_caspofungin/Caspofungin_BorsukDe2020_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Abdul-Aziz_2025 · CL</text><circle cx="449.1" cy="30.0" r="4" fill="#78909c"><title>Abdul-Aziz_2025 · CL: 0.55 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Borsuk-De_2020 · CL</text><circle cx="452.7" cy="46.0" r="4" fill="#78909c"><title>Borsuk-De_2020 · CL: 0.563 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Abdul-Aziz_2025 · V</text><circle cx="508.5" cy="30.0" r="4" fill="#78909c"><title>Abdul-Aziz_2025 · V: 8.13 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Borsuk-De_2020 · V1</text><circle cx="463.4" cy="46.0" r="4" fill="#78909c"><title>Borsuk-De_2020 · V1: 6.04 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Abdul-Aziz_2025 · CL</text><circle cx="449.1" cy="30.0" r="4" fill="#ef6c00"><title>Abdul-Aziz_2025 · CL: 0.55 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Borsuk-De_2020 · CL</text><circle cx="452.7" cy="46.0" r="4" fill="#78909c"><title>Borsuk-De_2020 · CL: 0.563 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Abdul-Aziz_2025 · V</text><circle cx="508.5" cy="30.0" r="4" fill="#ef6c00"><title>Abdul-Aziz_2025 · V: 8.13 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Borsuk-De_2020 · V1</text><circle cx="463.4" cy="46.0" r="4" fill="#78909c"><title>Borsuk-De_2020 · V1: 6.04 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,8 +39,8 @@ Caspofungin is a lipopeptide antifungal from the echinocandin class used to trea
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Abdul-Aziz_2025_reference](drugs/drug_caspofungin/Caspofungin_AbdulAziz2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Abdul-Aziz MH et al., Population pharmacokinetics of caspofun…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01435-24](https://doi.org/10.1128/aac.01435-24) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Borsuk-De_2020_reference](drugs/drug_caspofungin/Caspofungin_BorsukDe2020_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Borsuk-De Moor A et al., Nonstationary Pharmacokinetics of Caspo…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.00345-20](https://doi.org/10.1128/AAC.00345-20) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Abdul-Aziz_2025_reference](drugs/drug_caspofungin/Caspofungin_AbdulAziz2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Abdul-Aziz MH et al., Population pharmacokinetics of caspofun…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01435-24](https://doi.org/10.1128/aac.01435-24) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Albanell-Fernández_2025_reference](drugs/drug_caspofungin/Caspofungin_AlbanellFernndez2025_reference.md) | — | 2-compartment (no model) | 3 | Albanell-Fernández M, Echinocandins Pharmacokinetics: A Compr…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01461-5](https://doi.org/10.1007/s40262-024-01461-5) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wu_2022_reference](drugs/drug_caspofungin/Caspofungin_Wu2022_reference.md) | — | 1-compartment (no model) | 0 | Wu Z et al., Population Pharmacokinetics of Caspofun…, Antimicrobial agents and ch… (2022) | [10.1128/aac.02249-21](https://doi.org/10.1128/aac.02249-21) |
 
@@ -49,22 +49,6 @@ Caspofungin is a lipopeptide antifungal from the echinocandin class used to trea
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Caballero_2023_N](drugs/drug_caspofungin/pd_Caballero_2023_N.md) | Number of viable Candida cells ← caspofungin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Caballero U et al., PK/PD modeling and simulation of the in…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12949](https://doi.org/10.1002/psp4.12949) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=caspofungin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor, `SLC22A1` unknown, `SLCO1B1` inhibitor, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -84,7 +68,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 63 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 2  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 3, model 3.91).
+> The amikacin model's central volume (30.2 L/70kg) is disputed by a second reader who identified 8.63 L.
 
 <div class="pk-model-meta" hidden drug="amikacin" model-id="Amikacin_Alhadab2018_reference" status="needs_review" stale="false" population="pediatric cancer patients" measured-compound="amikacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -42,7 +42,7 @@ Alhadab AA, Ahmed MA, Brundage RC. Amikacin Pharmacokinetic-Pharmacodynamic Anal
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.923), gpt-oss:120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.923), gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +52,13 @@ Alhadab AA, Ahmed MA, Brundage RC. Amikacin Pharmacokinetic-Pharmacodynamic Anal
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 3, model 3.91).**
+**The amikacin model's central volume (30.2 L/70kg) is disputed by a second reader who identified 8.63 L.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — amikacin: CL 11.1 liter/h/70 kg, V1 30.2 liter/70 kg, Q 4.26 liter/h/70 kg, V2 14.9 liter/70 kg.
+A second reader disagreed with the extracted central volume of distribution, identifying 8.63 L instead of 30.2 L/70 kg. The reviewer also assigned the value 1.66 to the central volume rather than the intercompartmental clearance. Although the terminal half-life check failed, the primary issue is the conflicting parameter assignments for the central compartment. Extracted — amikacin: CL 11.1 liter/h/70 kg, V1 30.2 liter/70 kg, Q 4.26 liter/h/70 kg, V2 14.9 liter/70 kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[v 1 a].parameter_id`: this record has Q63, the second reading Q352. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -99,15 +99,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `qwen3.8-27b` | not confirmed | 0.923 (12/13 fields) | 1 |
-| `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[central volume of distribution]` |  | 8.63 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` |  | 1.66 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q]` | 1.66 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 8.63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 1.66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 1.66 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[v 1 a].parameter_id` | Q63 | Q352 | mismatch |
 
 </details>
@@ -145,6 +145,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.923, 0 of 2 reader(s) agree | 0.923 | cross-check disputed by a second reader: verdict disputed, agreement 0.923, 0 of 2 reader(s) agree |
 | T1_cmax | reference | skipped | 23.7 | 0.02546 |  | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
 | T1_cmax | reference | skipped | Ն8 | 0.02546 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | Ն8 | 0.02546 |  | unresolved concentration unit (exp '', sim 'kg/m3') |

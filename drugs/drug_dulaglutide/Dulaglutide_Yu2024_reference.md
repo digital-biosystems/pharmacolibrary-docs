@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dulaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/&quot;},{&quot;label&quot;:&quot;Yu_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dulaglutide_Admiraal2023_reference&quot;,&quot;label&quot;:&quot;Admiraal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Ng2018_reference&quot;,&quot;label&quot;:&quot;Ng_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dulaglutide_Zheng2023_reference&quot;,&quot;label&quot;:&quot;Zheng_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zheng_2023_EI&quot;,&quot;label&quot;:&quot;Zheng_2023 \u00b7 EI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/pd_Zheng_2023_EI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dulaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Admiraal2023_reference&quot;,&quot;label&quot;:&quot;Admiraal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Ng2018_reference&quot;,&quot;label&quot;:&quot;Ng_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Zheng_2023_EI&quot;,&quot;label&quot;:&quot;Zheng_2023 \u00b7 EI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/pd_Zheng_2023_EI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dulaglutide — `Dulaglutide_Yu2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Dulaglutide's absorption lag time lacks an explicit estimate, forcing the use of a library placeholder that held back the model.
+> The record was rejected because the source paper describes cotadutide, not dulaglutide, so the extracted PK parameters do not belong to the intended drug.
 
-<div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Yu2024_reference" status="needs_review" stale="false" population="" measured-compound="dulaglutide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Yu2024_reference" status="rejected" stale="false" population="" measured-compound="dulaglutide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response modeling for nausea incidence for cotadutide using a Markov modeling approach. CPT: pharmacometrics & systems pharmacology 13(9):1582-1594 (2024).
@@ -29,7 +29,7 @@ Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response
 <figure class="pk-models-diagram"><img src="drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference/Dulaglutide_Yu2024_reference.svg" alt="Dulaglutide_Yu2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +39,7 @@ Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,11 @@ Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response
 
 ### Reviewer guidance
 
-**Dulaglutide's absorption lag time lacks an explicit estimate, forcing the use of a library placeholder that held back the model.**
+**The record was rejected because the source paper describes cotadutide, not dulaglutide, so the extracted PK parameters do not belong to the intended drug.**
 
-The model assumes unit bioavailability and no molar correction, relying on apparent pharmacokinetic parameters. Instead of a fitted absorption delay, a default value was applied. A second reader confirmed the numerical values, so the hold stems from this unspecified absorption delay and the associated apparent assumption. Extracted — dulaglutide: CL/F 1.05 L/h, V/F 20 L, kabs 0.38 h−1.
+The failed analyte identity check confirmed the study subject was cotadutide, a dual GLP-1/glucagon agonist, rather than dulaglutide. Consequently, the reported CL/F (1.05 L/h) and V/F (20.0 L) values cannot be attributed to dulaglutide. The model builder also assumed F=1 and Fm=1 without explicit estimates. Extracted — dulaglutide: CL/F 1.05 L/h, V/F 20 L, kabs 0.38 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q36: this record has 6148, the second reading 6148; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has 24, the second reading none. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,19 +82,18 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q36]` | 6148 | 6148 | mismatch |
-| `gpt-oss:120b` | `values[Q56]` | 24 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 24 |  | only_one_extracted |
 
 </details>
 
@@ -123,13 +122,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | note |
 |---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | dulaglutide (or metabolite) | paper about another drug | paper subject is not dulaglutide: the paper is about another drug; this one is a co-medication or covariate: The study focuses on cotadutide, a different drug (dual GLP-1/glucagon agonist), not dulaglutide. |
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=dulaglutide) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -141,60 +141,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference/Dulaglutide_Yu2024_reference_modelica.zip" download>Dulaglutide_Yu2024_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference/Dulaglutide_Yu2024_reference_fmi.zip" download>Dulaglutide_Yu2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference/Dulaglutide_Yu2024_reference_matlab.zip" download>Dulaglutide_Yu2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference/Dulaglutide_Yu2024_reference_matlab_simbio.zip" download>Dulaglutide_Yu2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference/Dulaglutide_Yu2024_reference_sbml.zip" download>Dulaglutide_Yu2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference/Dulaglutide_Yu2024_reference_cellml.zip" download>Dulaglutide_Yu2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 2.917e-07 | m3/s |
-| input | model | `VdPerKg` | 0.0002857 | m3/kg |
-| input | model | `ka` | 0.0001056 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response modeling for nausea incidence for cotadutide using a Markov modeling approach. CPT: pharmacometrics & systems pharmacology 13(9):1582-1594 (2024). [doi:10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194)
-
-**This record:** Pharmacolibrary, model `Dulaglutide_Yu2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_DulaglutideYu2024reference,
-  title  = {{Pharmacolibrary model Dulaglutide_Yu2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference},
-  note   = {Parameters from doi:10.1002/psp4.13194},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

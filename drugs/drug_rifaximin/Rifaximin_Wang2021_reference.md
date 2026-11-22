@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;rifaximin&quot;,&quot;href&quot;:&quot;drugs/drug_rifaximin/&quot;},{&quot;label&quot;:&quot;Wang_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifaximin_Francis2019_reference&quot;,&quot;label&quot;:&quot;Francis_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifaximin/Rifaximin_Francis2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifaximin_Francis2019_reference&quot;,&quot;label&quot;:&quot;Francis_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifaximin/Rifaximin_Francis2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifaximin — `Rifaximin_Wang2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 16:31 UTC (Rejected), but the paper was screened again on 2026-10-04 18:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The rifaximin clearance of 0.29 L/h and AUC unit h·μg/g were rejected due to an unconvertible unit and physiological implausibility.
+> Rifaximin's terminal half-life (5.98 h) contradicts its beta half-life (0.11 h), and AUC/Cmax units are dimensionally invalid.
 
-<div class="pk-model-meta" hidden drug="rifaximin" model-id="Rifaximin_Wang2021_reference" status="rejected" stale="true" population="mice with S. aureus-induced mastitis" measured-compound="rifaximin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="rifaximin" model-id="Rifaximin_Wang2021_reference" status="rejected" stale="false" population="mice with S. aureus-induced mastitis" measured-compound="rifaximin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang H, Chen C, Chen X, Zhang J, Liu Y, Li X. PK/PD Modeling to Assess Rifaximin Clinical Dosage in a Mouse Model of Staphylococcus aureus-Induced Mastitis. Frontiers in veterinary science 8:651369 (2021).
@@ -48,7 +48,7 @@ Wang H, Chen C, Chen X, Zhang J, Liu Y, Li X. PK/PD Modeling to Assess Rifaximin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,9 +58,9 @@ Wang H, Chen C, Chen X, Zhang J, Liu Y, Li X. PK/PD Modeling to Assess Rifaximin
 
 ### Reviewer guidance
 
-**The rifaximin clearance of 0.29 L/h and AUC unit h·μg/g were rejected due to an unconvertible unit and physiological implausibility.**
+**Rifaximin's terminal half-life (5.98 h) contradicts its beta half-life (0.11 h), and AUC/Cmax units are dimensionally invalid.**
 
-The clearance value of 0.29 L/h falls outside the plausible physiological window for mice, indicating a likely unit or scale extraction error. The AUC unit h·μg/g could not be converted to SI units, preventing dimensional validation of the structural parameters. These combined errors made the model structurally inconsistent and rejected. Extracted — rifaximin: V1 2.15 L, V2 0.46 L, CL 0.29 L/h, Q 0.89 L/h, λ1 2.38, t1/2β 0.11 h, t1/2z 5.98 h, MRT 6.66 h, … (+2).
+The recorded terminal half-life (t1/2z) of 5.98 h conflicts with the beta half-life (t1/2β) of 0.11 h. Additionally, the area under the curve (176.83 h·μg/g) and maximum concentration (25.82 μg/g) units are dimensionally inconsistent with standard pharmacokinetic expectations. The clearance value (0.29 L/h) also falls outside physiological plausibility limits. Extracted — rifaximin: V1 2.15 L, V2 0.46 L, CL 0.29 L/h, Q 0.89 L/h, λ1 2.38, t1/2β 0.11 h, t1/2z 5.98 h, MRT 6.66 h, … (+2).
 
 <sub>reviewed by qwen3.8-27b</sub>
 

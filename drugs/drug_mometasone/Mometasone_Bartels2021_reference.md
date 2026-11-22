@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D07A&quot;,&quot;href&quot;:&quot;atc/D07A.md&quot;},{&quot;label&quot;:&quot;mometasone&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/&quot;},{&quot;label&quot;:&quot;Bartels_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mometasone_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/Mometasone_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Llanos_Paez_2023_FEV1&quot;,&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Llanos_Paez_2023_FEV1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2002_constitutive_human_eosinophil_apoptosis&quot;,&quot;label&quot;:&quot;Zhang_2002 \u00b7 constitutive human eosinophil apoptosis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zhang_2002_constitutive_human_eosinophil_apoptosis.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2002_human_neutrophil_apoptosis&quot;,&quot;label&quot;:&quot;Zhang_2002 \u00b7 human neutrophil apoptosis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zhang_2002_human_neutrophil_apoptosis.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zvidzayi_2021_AUEC&quot;,&quot;label&quot;:&quot;Zvidzayi_2021 \u00b7 AUEC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zvidzayi_2021_AUEC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mometasone_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/Mometasone_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Llanos_Paez_2023_FEV1&quot;,&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Llanos_Paez_2023_FEV1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2002_constitutive_human_eosinophil_apoptosis&quot;,&quot;label&quot;:&quot;Zhang_2002 \u00b7 constitutive human eosinophil apoptosis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zhang_2002_constitutive_human_eosinophil_apoptosis.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2002_human_neutrophil_apoptosis&quot;,&quot;label&quot;:&quot;Zhang_2002 \u00b7 human neutrophil apoptosis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zhang_2002_human_neutrophil_apoptosis.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zvidzayi_2021_AUEC&quot;,&quot;label&quot;:&quot;Zvidzayi_2021 \u00b7 AUEC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zvidzayi_2021_AUEC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mometasone — `Mometasone_Bartels2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:36 UTC (Rejected), but the paper was screened again on 2026-10-08 00:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for mometasone furoate is rejected due to an absorption rate constant unit error and an orphaned peripheral compartment.
+> Mometasone furoate was rejected because its absorption rate constant (kabs) is 50 L/h, a volume-per-time unit rather than inverse time.
 
-<div class="pk-model-meta" hidden drug="mometasone" model-id="Mometasone_Bartels2021_reference" status="rejected" stale="true" population="patients with asthma" measured-compound="mometasone furoate" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mometasone" model-id="Mometasone_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="mometasone furoate" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analysis of Indacaterol/Glycopyrronium/Mometasone Furoate After Administration of Combination Therapies Using the Breezhaler. European journal of drug metabolism and pharmacokinetics 46(4):487–504 (2021).
@@ -17,7 +17,7 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 ## Population and dosing
 
-**Population:** patients with asthma · condition asthma · age group adult · n = &gt;=698.
+**Population:** patients with asthma · condition asthma · age group adult.
 
 **Dosing:** 0.05, 0.08, 0.15, 0.16 mg, inhaled, multiple, every 12 h.
 
@@ -44,7 +44,7 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +54,13 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 ### Reviewer guidance
 
-**The record for mometasone furoate is rejected due to an absorption rate constant unit error and an orphaned peripheral compartment.**
+**Mometasone furoate was rejected because its absorption rate constant (kabs) is 50 L/h, a volume-per-time unit rather than inverse time.**
 
-The absorption rate constant is listed as 50 with a unit of L/h, which is dimensionally incorrect for a rate constant. The model structure specifies a peripheral compartment, yet no inter-compartmental clearance parameter is present, rendering the compartment unreachable from the dose. The second reader disagreed on the extraction of several body weight covariate exponents and clearance values. Extracted — mometasone: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h, CL/F 370 ml/min.
+The record reports kabs as 50 L/h, and that reported unit could not be converted to SI, leaving no SI value. It also flags an unreachable or orphan compartment, meaning a compartment has no path from the dose. A second reader disputed the extracted body-weight effects and CL/F value of 370.0, and attributed the body-weight-effect values 0.75 and 1 to alternative parameters. Extracted — mometasone: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h, CL/F 370 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of body_weight_on_cl_f: this record has 0.75, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

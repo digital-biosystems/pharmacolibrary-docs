@@ -27,12 +27,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 12958.996193448467
+  "central.C": 12958.9977179332
  },
  "reference_peaks": {
-  "central.C": 0.0029335759276020766
+  "central.C": 0.002933575835900516
  },
- "stop_time": 165600.0,
+ "stop_time": 147600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

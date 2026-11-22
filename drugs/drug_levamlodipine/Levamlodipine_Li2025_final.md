@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Levamlodipine besylate record held for unreported bioavailability and absorption delay defaults that are not supported by the paper.
+> Bioavailability and absorption lag lacked paper estimates, so generic placeholders would be used, and the second reader could not identify the dose compound.
 
 <div class="pk-model-meta" hidden drug="levamlodipine" model-id="Levamlodipine_Li2025_final" status="needs_review" stale="false" population="smoking patients" measured-compound="levamlodipine besylate" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Li G, Guan Y, Yang Y, Xiang Q, Chen S, Shao J et al. Model-Informed Precision Do
 
 ## Population and dosing
 
-**Population:** smoking patients · condition hypertension · age group adult · n = &gt;=43.
+**Population:** smoking patients · condition hypertension · age group adult.
 
 **Dosing:** 2.5, 5 mg, oral, multiple, every 24 h.
 
@@ -51,9 +51,9 @@ Li G, Guan Y, Yang Y, Xiang Q, Chen S, Shao J et al. Model-Informed Precision Do
 
 ### Reviewer guidance
 
-**Levamlodipine besylate record held for unreported bioavailability and absorption delay defaults that are not supported by the paper.**
+**Bioavailability and absorption lag lacked paper estimates, so generic placeholders would be used, and the second reader could not identify the dose compound.**
 
-The model builder used library placeholder values for the bioavailability fraction and absorption lag time instead of estimates from the study. These defaults affect the simulated concentration profile but are not supported by the paper's data. A second reader also disagreed on the extraction of the dose compound, primary analyte, clearance, and volume of distribution values. Extracted — levamlodipine: kabs 0.79 1/h, V 3.57e+03 L, CL 59.6 L/h.
+The record does not report values for bioavailability or absorption lag, requiring the use of standard library defaults that are not supported by the levamlodipine besylate data. A second reader could not identify the specific dose compound or primary analyte, disagreeing with the record's classification. This disagreement resulted in zero agreement, flagging the reliability of the levamlodipine besylate parameter extraction. Extracted — levamlodipine: kabs 0.79 1/h, V 3.57e+03 L, CL 59.6 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levamlodipine besylate, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -150,14 +150,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=levamlodipine besylate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=levamlodipine besylate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

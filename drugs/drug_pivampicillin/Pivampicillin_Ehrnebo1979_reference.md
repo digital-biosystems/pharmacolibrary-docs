@@ -16,7 +16,7 @@ Ehrnebo M, Nilsson SO, Boréus LO. Pharmacokinetics of ampicillin and its prodru
 
 ## Population and dosing
 
-**Population:** healthy fasting male subjects · condition healthy · age group adult · n = text.
+**Population:** healthy fasting male subjects · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed pivampicillin, ampicillin, bacampicillin, measured ampicillin.
 

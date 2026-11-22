@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;clonazepam&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/&quot;},{&quot;label&quot;:&quot;Kruizinga_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_reference&quot;,&quot;label&quot;:&quot;Kruizinga_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonazepam_Hampton2024_reference&quot;,&quot;label&quot;:&quot;Hampton_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Hampton2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_reference&quot;,&quot;label&quot;:&quot;Kruizinga_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonazepam — `Clonazepam_Kruizinga2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Kruizinga2022_reference" status="simulated" stale="false" population="healthy adults" measured-compound="clonazepam" parameterization="mechanistic" topology="2C"></div>
+> Clonazepam record omits the maximum ratio parameter and failed to convert a reported unit to standard SI, causing a cross-check dispute.
+
+<div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Kruizinga2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="clonazepam" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kruizinga MD, Zuiker RGJA, Bergmann KR, Egas AC, Cohen AF, Santen GWE et al. Population pharmacokinetics of clonazepam in saliva and plasma: Steps towards noninvasive pharmacokinetic studies in vulnerable populations. British journal of clinical pharmacology 88(5):2236–2245 (2022).
@@ -15,7 +17,7 @@ Kruizinga MD, Zuiker RGJA, Bergmann KR, Egas AC, Cohen AF, Santen GWE et al. Pop
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = $number.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 0.5, 1 mg, oral, single.
 
@@ -29,6 +31,8 @@ Kruizinga MD, Zuiker RGJA, Bergmann KR, Egas AC, Cohen AF, Santen GWE et al. Pop
 <figure class="pk-models-diagram"><img src="drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference/Clonazepam_Kruizinga2022_reference.svg" alt="Clonazepam_Kruizinga2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | θ V D central (L) | V1 | 11.5 | L | 10.4 |
@@ -40,7 +44,7 @@ Kruizinga MD, Zuiker RGJA, Bergmann KR, Egas AC, Cohen AF, Santen GWE et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.824). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.824). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +54,13 @@ Kruizinga MD, Zuiker RGJA, Bergmann KR, Egas AC, Cohen AF, Santen GWE et al. Pop
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Clonazepam record omits the maximum ratio parameter and failed to convert a reported unit to standard SI, causing a cross-check dispute.**
 
-A reported unit could not be converted (Km), so that value has no SI equivalent.
+The second reader identified a maximum ratio value of 0.031, whereas this record lists the parameter as null. Additionally, one parameter had a reported unit that could not be converted to standard SI, leaving it without a standardized value for the model. The second reader also disagreed that the primary analyte was clonazepam, labeling it unknown instead. Extracted — clonazepam: V1 11.5 L, CL 0.16 L h−1, V2 12.9 L, Q 11.2 L h−1, kel 0.12 h−1, Km 0.74 μg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonazepam, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -144,14 +148,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=clonazepam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=clonazepam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.824, 0 of 1 reader(s) agree | 0.824 | cross-check disputed by a second reader: verdict disputed, agreement 0.824, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

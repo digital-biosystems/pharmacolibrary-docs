@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 Tumor size (sum of longest diameters of target lesions)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # abemaciclib
 
@@ -37,44 +36,23 @@ Abemaciclib is a protein kinase inhibitor that targets cyclin-dependent kinases 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.4156)</sub> | [Tate_2018_base](drugs/drug_abemaciclib/Abemaciclib_Tate2018_base.md) | — | 1-compartment (no model) | 5 | Tate SC et al., A Population Pharmacokinetic and Pharma…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0559-8](https://doi.org/10.1007/s40262-017-0559-8) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.4481)</sub> | [↳ final](drugs/drug_abemaciclib/Abemaciclib_Tate2018_final.md) | — | 1-compartment (no model) | 5 (+1 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chigutsa_2020_estimate_see](drugs/drug_abemaciclib/Abemaciclib_Chigutsa2020_estimate_see.md) | — | general linear (no model) | 13 (+6 cov.) | Chigutsa E et al., Development and Application of a Mechan…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12544](https://doi.org/10.1002/psp4.12544) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chigutsa_2020_estimate_see](drugs/drug_abemaciclib/Abemaciclib_Chigutsa2020_estimate_see.md) | — | general linear (no model) | 13 (+6 cov.) | Chigutsa E et al., Development and Application of a Mechan…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12544](https://doi.org/10.1002/psp4.12544) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ external_validation_with_phase_iii_data](drugs/drug_abemaciclib/Abemaciclib_Chigutsa2020_external_validation_with_phase_iii.md) | — | general linear (no model) | 8 (+2 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ nca_200_mg](drugs/drug_abemaciclib/Abemaciclib_Chigutsa2020_nca_200_mg.md) | — | general linear (no model) | 8 (+1 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ semimechanistic_model_development](drugs/drug_abemaciclib/Abemaciclib_Chigutsa2020_semimechanistic_model_development.md) | — | general linear (no model) | 8 (+2 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ variability_a_a_see](drugs/drug_abemaciclib/Abemaciclib_Chigutsa2020_variability_a_a_see.md) | — | general linear (no model) | 10 (+3 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ variability_a_a_see](drugs/drug_abemaciclib/Abemaciclib_Chigutsa2020_variability_a_a_see.md) | — | general linear (no model) | 10 (+3 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fleisher_2021_reference](drugs/drug_abemaciclib/Abemaciclib_Fleisher2021_reference.md) | — | general linear (no model) | 3 | Fleisher B et al., In vitro to Clinical Translation of Com…, Breast cancer (Dove Medical… (2021) | [10.2147/BCTT.S292161](https://doi.org/10.2147/BCTT.S292161) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_lesions](drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md) | Tumor size (sum of longest diameters of target lesions) ← abemaciclib · delayed effect through transit (transduction) compartments | ▶ model + simulator | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_lesions](drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md) | Tumor size (sum of longest diameters of target lesions) ← abemaciclib · delayed effect through transit (transduction) compartments | — | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fleisher_2021_Cells_invitro](drugs/drug_abemaciclib/pd_Fleisher_2021_Cells_invitro.md) | in vitro cancer cell viability ← abemaciclib (ABE) · delayed effect through transit (transduction) compartments | — | Fleisher B et al., In vitro to Clinical Translation of Com…, Breast cancer (Dove Medical… (2021) | [10.2147/BCTT.S292161](https://doi.org/10.2147/BCTT.S292161) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fleisher_2021_cell_viability](drugs/drug_abemaciclib/pd_Fleisher_2021_cell_viability.md) | percent cellular viability (MDA-MB-231) ← abemaciclib (ABE) · direct sigmoid Emax (Hill) effect | — | Fleisher B et al., In vitro to Clinical Translation of Com…, Breast cancer (Dove Medical… (2021) | [10.2147/BCTT.S292161](https://doi.org/10.2147/BCTT.S292161) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fleisher_2021_cell_viability_2](drugs/drug_abemaciclib/pd_Fleisher_2021_cell_viability_2.md) | percent cellular viability (MDA-MB-468) ← abemaciclib (ABE) · direct sigmoid Emax (Hill) effect | — | Fleisher B et al., In vitro to Clinical Translation of Com…, Breast cancer (Dove Medical… (2021) | [10.2147/BCTT.S292161](https://doi.org/10.2147/BCTT.S292161) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fleisher_2021_pRb](drugs/drug_abemaciclib/pd_Fleisher_2021_pRb.md) | pRb protein expression (fold change from control) ← abemaciclib (ABE) · delayed effect through transit (transduction) compartments | — | Fleisher B et al., In vitro to Clinical Translation of Com…, Breast cancer (Dove Medical… (2021) | [10.2147/BCTT.S292161](https://doi.org/10.2147/BCTT.S292161) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chigutsa_2026_PFS](drugs/drug_abemaciclib/pd_Chigutsa_2026_PFS.md) | Progression-free survival ← abemaciclib · time-to-event model | — | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=abemaciclib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `SLC22A2` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CDK4 (inhibitor), CDK6 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -88,13 +66,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:26 | 12:23 | 2/6/0 | 2/0/0 | 0/0/0 | 243,336/60,799 | openai / gpt-6-luna | 5 | 0/5 | 4/1 | 0 |
+| 2026-10-06 20:26 | 12:23 | 2/6/0 | 6/0/0 | 0/0/0 | 243,336/60,799 | openai / gpt-6-luna | 5 | 0/5 | 4/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 2
+- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

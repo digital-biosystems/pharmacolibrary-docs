@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;colistin&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/&quot;},{&quot;label&quot;:&quot;Boonyasiri_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colistin_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/Colistin_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colistin_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/Colistin_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Boonyasiri A, Fuhs DT, Naorungroj T, Wang L, Wang J, Ratanarat R et al. Disposit
 
 ## Population and dosing
 
-**Population:** critically-ill patients on sustained low-efficiency dialysis · condition critically-ill, sustained low-efficiency dialysis · age group adult · n = &gt;=13.
+**Population:** critically-ill patients on sustained low-efficiency dialysis · condition critically-ill, sustained low-efficiency dialysis · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed colistin methanesulphonate, measured colistin.
 

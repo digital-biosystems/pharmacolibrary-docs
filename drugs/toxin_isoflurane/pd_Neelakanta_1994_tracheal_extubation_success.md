@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Isoflurane inhibits the binary response of tracheal extubation success. The paper specifies the potency as a Minimum Alveolar Concentration (MAC) of 1.27% end-tidal concentration, but does not provide the underlying mechanism or kinetic rate parameters.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Neelakanta_1994`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

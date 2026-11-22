@@ -4,11 +4,11 @@
 
 # perindopril — `Perindopril_Parker2005_model_2`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 06:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance parameter, Q, has a dimension mismatch as its unit is hours inverse, which is a rate constant not a clearance.
+> Perindoprilat intercompartmental clearance was extracted with a rate constant unit of h-1, conflicting with its volume clearance dimension.
 
-<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_model_2" status="rejected" stale="true" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_model_2" status="rejected" stale="false" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprilat in normal volunteers and patients: influence of age and disease state. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 26(1):104–113 (2005).
@@ -42,7 +42,7 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 ### Reviewer guidance
 
-**The intercompartmental clearance parameter, Q, has a dimension mismatch as its unit is hours inverse, which is a rate constant not a clearance.**
+**Perindoprilat intercompartmental clearance was extracted with a rate constant unit of h-1, conflicting with its volume clearance dimension.**
 
-The record lists parameter Q with a label of k12 and a value of 1.3, but its unit is hours inverse. The pharmacokinetic meaning of Q is defined as apparent intercompartmental clearance, which requires a unit of volume per time. This discrepancy between the defined parameter meaning and the provided unit caused the record to be rejected. Extracted — perindoprilat: Bmax 0.95 g L -1, Fab 426, V 6.4 L, CLm/F 7 L h -1, Q 1.3 h -1.
+The parameter labeled k12 (1.3 h-1) represents apparent intercompartmental clearance, which requires volumetric units, but was recorded with a first-order rate unit. This dimension mismatch prevented conversion to SI units, causing the structural check to fail. Consequently, the pharmacokinetic model for perindoprilat was rejected due to incompatible parameter definitions. Extracted — perindoprilat: Bmax 0.95 g L -1, Fab 426, V 6.4 L, CLm/F 7 L h -1, Q 1.3 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

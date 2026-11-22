@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01A&quot;,&quot;href&quot;:&quot;atc/J01A.md&quot;},{&quot;label&quot;:&quot;omadacycline&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/&quot;},{&quot;label&quot;:&quot;Yang_2022 \u00b7 oral_administration_a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omadacycline_Chapagain2022_reference&quot;,&quot;label&quot;:&quot;Chapagain_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Chapagain2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omadacycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omadacycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Singh_2024_CFU_mL&quot;,&quot;label&quot;:&quot;Singh_2024 \u00b7 CFU/mL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/pd_Singh_2024_CFU_mL.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_VanScoy_2020_change_in_the_log10_CFU_ml_from_baseline_at_24_&quot;,&quot;label&quot;:&quot;VanScoy_2020 \u00b7 change in the log10 CFU/ml from baseline at 24 h&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/pd_VanScoy_2020_change_in_the_log10_CFU_ml_from_baseline_at_24_.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omadacycline_Chapagain2022_reference&quot;,&quot;label&quot;:&quot;Chapagain_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Chapagain2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omadacycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omadacycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/Omadacycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Singh_2024_CFU_mL&quot;,&quot;label&quot;:&quot;Singh_2024 \u00b7 CFU/mL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/pd_Singh_2024_CFU_mL.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_VanScoy_2020_change_in_the_log10_CFU_ml_from_baseline_at_24_&quot;,&quot;label&quot;:&quot;VanScoy_2020 \u00b7 change in the log10 CFU/ml from baseline at 24 h&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omadacycline/pd_VanScoy_2020_change_in_the_log10_CFU_ml_from_baseline_at_24_.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # omadacycline — `Omadacycline_Yang2022_oral_administration_a`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 10:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The parameter labeled t1/2ka contains the value 0.967 in units of h-1, which is dimensionally inconsistent with the stated meaning of a half-life.
+> The oral absorption rate constant for omadacycline was rejected due to a unit dimension mismatch conflicting with its half-life meaning.
 
-<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Yang2022_oral_administration_a" status="rejected" stale="true" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Yang2022_oral_administration_a" status="rejected" stale="false" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yang H, Huang Z, Chen Y, Zhu Y, Cao G, Wang J et al. Pharmacokinetics, Safety and Pharmacokinetics/Pharmacodynamics Analysis of Omadacycline in Chinese Healthy Subjects. Frontiers in pharmacology 13:869237 (2022).
@@ -43,7 +43,7 @@ Yang H, Huang Z, Chen Y, Zhu Y, Cao G, Wang J et al. Pharmacokinetics, Safety an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.923). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.923). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Yang H, Huang Z, Chen Y, Zhu Y, Cao G, Wang J et al. Pharmacokinetics, Safety an
 
 ### Reviewer guidance
 
-**The parameter labeled t1/2ka contains the value 0.967 in units of h-1, which is dimensionally inconsistent with the stated meaning of a half-life.**
+**The oral absorption rate constant for omadacycline was rejected due to a unit dimension mismatch conflicting with its half-life meaning.**
 
-The record lists t1/2ka with a value of 0.967 and units of h-1, but defines it as the half-life of the absorption phase. A half-life must have units of time (e.g., hours), not inverse time. Additionally, the terminal half-life (t1/2z) is recorded without a value or unit, leaving a gap in the elimination phase description. Extracted — omadacycline: V1 110 L, V2 215 L, CL 14.5 L/h, Q 38.8 L/h, t1/2ka 0.967 h −1, tlag 0.678 h, AUC∞ 5.7.
+The record lists the parameter as a half-life (t1/2ka) with a meaning describing absorption time, but the assigned identifier expects a first-order rate constant. The recorded value of 0.967 is given in units of h⁻¹, which contradicts the required dimension of [time] for a half-life parameter. Extracted — omadacycline: V1 110 L, V2 215 L, CL 14.5 L/h, Q 38.8 L/h, t1/2ka 0.967 h −1, tlag 0.678 h, AUC∞ 5.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[k a1].parameter_id`: this record has Q95, the second reading Q49. That field shapes the model, so the record is marked disputed.
 

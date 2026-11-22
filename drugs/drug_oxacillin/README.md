@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;oxacillin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxacillin_Lee2026_reference&quot;,&quot;label&quot;:&quot;Lee_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxacillin_Murnov2022_reference&quot;,&quot;label&quot;:&quot;Mur\u00ednov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rodriguez_2010_E&quot;,&quot;label&quot;:&quot;Rodriguez_2010 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/pd_Rodriguez_2010_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rodriguez_2010_E_2&quot;,&quot;label&quot;:&quot;Rodriguez_2010 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/pd_Rodriguez_2010_E_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxacillin_Lee2026_reference&quot;,&quot;label&quot;:&quot;Lee_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxacillin_Murnov2022_reference&quot;,&quot;label&quot;:&quot;Mur\u00ednov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rodriguez_2010_E&quot;,&quot;label&quot;:&quot;Rodriguez_2010 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/pd_Rodriguez_2010_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rodriguez_2010_E_2&quot;,&quot;label&quot;:&quot;Rodriguez_2010 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/pd_Rodriguez_2010_E_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # oxacillin
 
@@ -25,13 +25,13 @@ Oxacillin is a beta-lactam antibiotic used to treat various bacterial infections
 
 ## Start here
 
-> **Lee_2026_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> preterm and term neonates and infants. [Run it in the simulator](drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md?tab=Simulation) · [record](drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md)
+> **Lee_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> preterm and term neonates and infants. [Run it in the simulator](drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md?tab=Simulation) · [record](drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lee_2026 · V</text><circle cx="237.6" cy="30.0" r="4" fill="#78909c"><title>Lee_2026 · V: 1.87 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Murínová_2022 · V</text><circle cx="373.6" cy="46.0" r="4" fill="#ef6c00"><title>Murínová_2022 · V: 11.2 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lee_2026 · V</text><circle cx="237.6" cy="30.0" r="4" fill="#ef6c00"><title>Lee_2026 · V: 1.87 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Murínová_2022 · V</text><circle cx="373.6" cy="46.0" r="4" fill="#ef6c00"><title>Murínová_2022 · V: 11.2 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,7 +39,7 @@ Oxacillin is a beta-lactam antibiotic used to treat various bacterial infections
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Lee_2026_reference](drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Lee A et al., Population pharmacokinetics and safety…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01777-25](https://doi.org/10.1128/aac.01777-25) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Lee_2026_reference](drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Lee A et al., Population pharmacokinetics and safety…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01777-25](https://doi.org/10.1128/aac.01777-25) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_beta</sub> | [Murínová_2022_reference](drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Murínová I et al., Population Pharmacokinetic Analysis Pro…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11121736](https://doi.org/10.3390/antibiotics11121736) |
 
 ## Pharmacodynamics (PD)
@@ -49,15 +49,6 @@ Oxacillin is a beta-lactam antibiotic used to treat various bacterial infections
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Baudoux_2007_CFU](drugs/drug_oxacillin/pd_Baudoux_2007_CFU.md) | log(10) colony-forming unit changes at 24 h ← oxacillin · direct sigmoid Emax (Hill) effect | — | Baudoux P et al., Combined effect of pH and concentration…, The Journal of antimicrobia… (2007) | [10.1093/jac/dkl489](https://doi.org/10.1093/jac/dkl489) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Rodriguez_2010_E](drugs/drug_oxacillin/pd_Rodriguez_2010_E.md) | net antibacterial effect (log10 CFU/g) after 24 h of treatment ← oxacillin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Rodriguez CA et al., In vitro and in vivo comparison of the…, BMC infectious diseases (2010) | [10.1186/1471-2334-10-153](https://doi.org/10.1186/1471-2334-10-153) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Rodriguez_2010_E_2](drugs/drug_oxacillin/pd_Rodriguez_2010_E_2.md) | net antibacterial effect (log10 CFU/g) after 24 h of treatment ← oxacillin · inhibition effect | ▶ model + simulator | Rodriguez CA et al., In vitro and in vivo comparison of the…, BMC infectious diseases (2010) | [10.1186/1471-2334-10-153](https://doi.org/10.1186/1471-2334-10-153) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxacillin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` binder/inhibitor | DrugBank actor |
-| excretion | kidney | `SLC15A2` binder/inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,13 +62,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:12 | 2:56 | 2/0/0 | 2/0/0 | 0/0/0 | 173,814/8,335 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-07 10:12 | 2:56 | 2/0/0 | 3/0/0 | 0/0/0 | 173,814/8,335 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 17 matched, 17 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

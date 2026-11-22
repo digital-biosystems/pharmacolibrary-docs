@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Beauvericin&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/&quot;},{&quot;label&quot;:&quot;Yuan_2022 \u00b7 rlm_bea&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Beauvericin_Yuan2022_clm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_clm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_clm_bea.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_dlm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_dlm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_dlm_bea.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_hlm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_hlm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_hlm_bea.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_i_v&quot;,&quot;label&quot;:&quot;Yuan_2022_i_v&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_i_v.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_mlm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_mlm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_mlm_bea.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_p_o&quot;,&quot;label&quot;:&quot;Yuan_2022_p_o&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_p_o.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_rlm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_rlm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_rlm_bea.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_reference&quot;,&quot;label&quot;:&quot;Yuan_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Beauvericin_Yuan2022_clm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_clm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_clm_bea.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_dlm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_dlm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_dlm_bea.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_hlm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_hlm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_hlm_bea.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_i_v&quot;,&quot;label&quot;:&quot;Yuan_2022_i_v&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_i_v.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_mlm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_mlm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_mlm_bea.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_p_o&quot;,&quot;label&quot;:&quot;Yuan_2022_p_o&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_p_o.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_reference&quot;,&quot;label&quot;:&quot;Yuan_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Beauvericin_Yuan2022_rlm_bea&quot;,&quot;label&quot;:&quot;Yuan_2022_rlm_bea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beauvericin/Beauvericin_Yuan2022_rlm_bea.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Beauvericin — `Beauvericin_Yuan2022_rlm_bea`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000454, model 0.975).
 
-<div class="pk-model-meta" hidden drug="Beauvericin" model-id="Beauvericin_Yuan2022_rlm_bea" status="extracted" stale="false" population="rats" measured-compound="Beauvericin" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Beauvericin" model-id="Beauvericin_Yuan2022_rlm_bea" status="needs_review" stale="false" population="rats" measured-compound="Beauvericin" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Yuan Y, Meng G, Li Y, Wu C. Study on In Vitro Metabolism and In Vivo Pharmacokinetics of Beauvericin. Toxins 14(7) (2022).
@@ -31,6 +31,8 @@ Yuan Y, Meng G, Li Y, Wu C. Study on In Vitro Metabolism and In Vivo Pharmacokin
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | T1/2 (min) | t1/2z | 25.6 | min |
@@ -39,7 +41,7 @@ Yuan Y, Meng G, Li Y, Wu C. Study on In Vitro Metabolism and In Vivo Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ Yuan Y, Meng G, Li Y, Wu C. Study on In Vitro Metabolism and In Vivo Pharmacokin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000454, model 0.975).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — beauvericin: t1/2z 25.6 min, CLint 54.2 μL/min/mg, V 33.9 L/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -100,6 +108,29 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Behr_2025:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 2.37e+03 L | ['Behr_2025:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Beauvericin) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 0.000454 | 0.9749 | 2147 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 4.16e-05 | 0.9749 | 2.344e+04 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 1 | 0.9749 |  | unresolved concentration unit (exp 'h', sim 'kg/m3') |
+| T1_t_half_beta | reference | skipped | 5.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 5.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

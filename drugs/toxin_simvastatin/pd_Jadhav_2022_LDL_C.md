@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Simvastatin&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/&quot;},{&quot;label&quot;:&quot;Jadhav_2022 \u00b7 PD LDL-C&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # LDL-C — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** Simvastatin (the dose) drives LDL-C (in mg/dL): indirect response — drug inhibits the loss of LDL-C.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
+
+> Simvastatin dose acts on LDL-C concentration via an indirect response inhibition mechanism that reduces the baseline production or increases the elimination of LDL-C, characterized by a baseline LDL-C of 160.4 mg/dL, an elimination rate constant (kout) of 0.01 h–1, a maximum inhibition effect (Emax) of -0.787, an ED50 of 30.5 mg, and a Hill coefficient of 0.451.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Jadhav_2022`
 - **model family:** `indirect_response_ii`

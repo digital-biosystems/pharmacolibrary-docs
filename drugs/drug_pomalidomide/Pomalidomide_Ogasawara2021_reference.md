@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;pomalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/&quot;},{&quot;label&quot;:&quot;Ogasawara_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pomalidomide_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Ogasawara2021_reference&quot;,&quot;label&quot;:&quot;Ogasawara_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pomalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pomalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Ogasawara2021_reference&quot;,&quot;label&quot;:&quot;Ogasawara_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pomalidomide_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pomalidomide — `Pomalidomide_Ogasawara2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Ogasawara2021_reference" status="curated_candidate" stale="false" population="pediatric patients with recurrent or progressive primary brain tumors" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
+> The record was held for review because the second reader disagreed with the recorded absorption and absorption rate constant values.
+
+<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Ogasawara2021_reference" status="needs_review" stale="false" population="pediatric patients with recurrent or progressive primary brain tumors" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ogasawara K, Kassir N, Wang X, Benettaib B, Zhou S, Palmisano M et al. Recurrent or progressive pediatric brain tumors: population pharmacokinetics and exposure-response analysis of pomalidomide. Pediatric research 90(4):832–839 (2021).
@@ -15,7 +17,7 @@ Ogasawara K, Kassir N, Wang X, Benettaib B, Zhou S, Palmisano M et al. Recurrent
 
 ## Population and dosing
 
-**Population:** pediatric patients with recurrent or progressive primary brain tumors · condition recurrent or progressive pediatric brain tumors · age group child · n = &gt;$70$ patients.
+**Population:** pediatric patients with recurrent or progressive primary brain tumors · condition recurrent or progressive pediatric brain tumors · age group child.
 
 **Dosing:** 1.9, 2.6, 3.4 mg/m2, oral, multiple, every 24 h.
 
@@ -29,6 +31,8 @@ Ogasawara K, Kassir N, Wang X, Benettaib B, Zhou S, Palmisano M et al. Recurrent
 <figure class="pk-models-diagram"><img src="drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference/Pomalidomide_Ogasawara2021_reference.svg" alt="Pomalidomide_Ogasawara2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 3.92 | L/h |
@@ -38,7 +42,7 @@ Ogasawara K, Kassir N, Wang X, Benettaib B, Zhou S, Palmisano M et al. Recurrent
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +52,13 @@ Ogasawara K, Kassir N, Wang X, Benettaib B, Zhou S, Palmisano M et al. Recurrent
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held for review because the second reader disagreed with the recorded absorption and absorption rate constant values.**
+
+The recorded absolute bioavailability is 0.380, but the second reader identified it as 0.454. The recorded absorption rate constant is 0.759 h-1, while the second reader read it as 1.45. This discrepancy in the core pharmacokinetic parameters caused the cross-check to fail with an agreement of 0.75. Extracted — pomalidomide: CL/F 3.92 L/h, V/F 42.7 L, kabs 0.759 h -1, Fab 0.38.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[absorption].value`: this record has 0.380, the second reading 0.454; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -150,6 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 7.33 | 7.549 | 1.03 | h→SI vs simulated h |
 
 <details class="legend">

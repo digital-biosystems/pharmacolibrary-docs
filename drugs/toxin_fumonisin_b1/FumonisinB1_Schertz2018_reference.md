@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fumonisin B1&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/&quot;},{&quot;label&quot;:&quot;Schertz_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FumonisinB1_Guerre2015_reference&quot;,&quot;label&quot;:&quot;Guerre_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Guerre2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FumonisinB1_Schertz2018_reference&quot;,&quot;label&quot;:&quot;Schertz_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Schertz2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;FumonisinB1_Shephard1992_reference&quot;,&quot;label&quot;:&quot;Shephard_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Shephard1992_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FumonisinB1_Vudathala1994_reference&quot;,&quot;label&quot;:&quot;Vudathala_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Vudathala1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FumonisinB1_Antonissen2015_reference&quot;,&quot;label&quot;:&quot;Antonissen_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Antonissen2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FumonisinB1_Guerre2015_reference&quot;,&quot;label&quot;:&quot;Guerre_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Guerre2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FumonisinB1_Shephard1992_reference&quot;,&quot;label&quot;:&quot;Shephard_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Shephard1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FumonisinB1_Vudathala1994_reference&quot;,&quot;label&quot;:&quot;Vudathala_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Vudathala1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FumonisinB1_Antonissen2015_reference&quot;,&quot;label&quot;:&quot;Antonissen_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Antonissen2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FumonisinB1_Schertz2018_reference&quot;,&quot;label&quot;:&quot;Schertz_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b1/FumonisinB1_Schertz2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Fumonisin B1 — `FumonisinB1_Schertz2018_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life (paper 0.57, model 2.36); the model does not reproduce the paper's time of the peak (tmax) (paper 9.5, model 0.183).
 
-<div class="pk-model-meta" hidden drug="Fumonisin B1" model-id="FumonisinB1_Schertz2018_reference" status="extracted" stale="false" population="barrows" measured-compound="Fumonisin B1" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Fumonisin B1" model-id="FumonisinB1_Schertz2018_reference" status="needs_review" stale="false" population="barrows" measured-compound="Fumonisin B1" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schertz H, Kluess J, Frahm J, Schatzmayr D, Dohnal I, Bichl G et al. Oral and Intravenous Fumonisin Exposure in Pigs-A Single-Dose Treatment Experiment Evaluating Toxicokinetics and Detoxification. Toxins 10(4) (2018).
@@ -33,6 +33,8 @@ Schertz H, Kluess J, Frahm J, Schatzmayr D, Dohnal I, Bichl G et al. Oral and In
 <figure class="pk-models-diagram"><img src="drugs/toxin_fumonisin_b1/FumonisinB1_Schertz2018_reference/FumonisinB1_Schertz2018_reference.svg" alt="FumonisinB1_Schertz2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | t1/2α | t1/2α | 0.08 | h |
@@ -44,7 +46,7 @@ Schertz H, Kluess J, Frahm J, Schatzmayr D, Dohnal I, Bichl G et al. Oral and In
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +54,13 @@ Schertz H, Kluess J, Frahm J, Schatzmayr D, Dohnal I, Bichl G et al. Oral and In
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (paper 0.57, model 2.36); the model does not reproduce the paper's time of the peak (tmax) (paper 9.5, model 0.183).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — fumonisin b1: t1/2α 0.08 h, t1/2β 0.57 h, V 1.8 L/kg, CL 1.8 L/kg/h, t1/2z 22.8 h, t1/2γ 183 min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -114,6 +122,45 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 126 L/h |  |  | ['Schertz_2018:other_prose'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 126 L |  |  | ['Schertz_2018:other_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=Fumonisin B1) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | 2 | 2.876e-05 |  | unresolved concentration unit (exp 'nmol per L serum', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3.3 | 2.876e-05 |  | unresolved concentration unit (exp 'nmol per L serum', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 2.876e-05 |  | non-numeric value |
+| T1_t_half_alpha | reference | skipped | 0.08 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 0.05 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 0.06 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 0.08 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 10.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | fail | 0.57 | 2.362 | 4.144 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1.01 | 2.362 | 2.339 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1.2 | 2.362 | 1.968 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.57 | 2.362 | 4.144 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 3.043 | 2.362 | 0.7762 | min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1.03 | 2.362 | 2.293 | h→SI vs simulated h |
+| T1_t_half_beta | reference | skipped |  | 2.362 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 4.2 | 2.362 | 0.5624 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.1 | 2.362 | 0.3873 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 22.8 | 2.362 | 0.1036 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 20.7 | 2.362 | 0.1141 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 2.362 |  | non-numeric value |
+| T1_t_half_terminal | reference | skipped |  | 2.362 |  | non-numeric value |
+| T1_tmax | reference | fail | 9.5 | 0.1833 | 0.0193 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 13.6 | 0.1833 | 0.0135 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 9.5 | 0.1833 | 0.0193 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 13.6 | 0.1833 | 0.0135 | h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

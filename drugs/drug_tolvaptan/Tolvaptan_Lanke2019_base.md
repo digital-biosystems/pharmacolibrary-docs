@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Lanke_2019 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Van_2006_UFR&quot;,&quot;label&quot;:&quot;Van_2006 \u00b7 UFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/pd_Van_2006_UFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Liu2024_reference&quot;,&quot;label&quot;:&quot;Liu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Liu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017v2_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Van_2006_UFR&quot;,&quot;label&quot;:&quot;Van_2006 \u00b7 UFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/pd_Van_2006_UFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tolvaptan — `Tolvaptan_Lanke2019_base`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Lanke2019_base" status="simulated" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
+> The tolvaptan absorption rate constant was left at a library default because the source paper did not report an estimated value.
+
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Lanke2019_base" status="needs_review" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lanke S, Shoaf SE. Population Pharmacokinetic Analyses and Model Validation of Tolvaptan in Subjects With Autosomal Dominant Polycystic Kidney Disease. Journal of clinical pharmacology 59(5):763–770 (2019).
@@ -15,30 +17,31 @@ Lanke S, Shoaf SE. Population Pharmacokinetic Analyses and Model Validation of T
 
 ## Population and dosing
 
-**Population:** adults with autosomal dominant polycystic kidney disease · age group adult · n = condition.
+**Population:** adults with autosomal dominant polycystic kidney disease · condition autosomal dominant polycystic kidney disease · age group adult.
 
-**Dosing:** 15, 30, 45, 60, 90, 120 mg, oral, multiple, every 12 h.
+**Dosing:** 15, 30, 45, 60, 90, 120 mg, oral, multiple, every 8 h.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base/Tolvaptan_Lanke2019_base.svg" alt="Tolvaptan_Lanke2019_base diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | CL/F (L/h) | CL/F | 11.4 | L/h | 0.43 (6.2% RSE) |
 | Vd/F (L) | V/F | 109 | L | 0.46 (13.6% RSE) |
 | D1 (h) | D1 | 0.55 | h | 5.67 (13.4% RSE) |
-| k a (h -1 ) | kabs | 1.34 | h -1 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +51,13 @@ Lanke S, Shoaf SE. Population Pharmacokinetic Analyses and Model Validation of T
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The tolvaptan absorption rate constant was left at a library default because the source paper did not report an estimated value.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dosemax: this record has none, the second reading 175. That field does not shape the model.
+The record lists the absorption phase as a zero-order input with a 0.55 hour duration, yet the absorption rate constant required for standard modeling was not extracted. This parameter was replaced with a placeholder value, meaning the simulated profile is not supported by the specific study data. Additionally, the first-order depot input assumption conflicts with the zero-order duration reported in the facts. Extracted — tolvaptan: CL/F 11.4 L/h, V/F 109 L, D1 0.55 h.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose50: this record has none, the second reading 152. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -61,7 +66,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | CL/F (L/h) | `Q27` · CL/F | 11.4 | L/h | 3.167e-06 | m3/s | l/h | exact (1) | jcph1370-tbl-0003:row2:col1 | 0.43 (6.2% RSE) |
 | Vd/F (L) | `Q76` · V/F | 109 | L | 0.109 | m3 | l | exact (1) | jcph1370-tbl-0003:row6:col1 | 0.46 (13.6% RSE) |
 | D1 (h) | `Q310` · D1 | 0.55 | h | 1980 | s | h | exact (1) | jcph1370-tbl-0003:row8:col1 | 5.67 (13.4% RSE) |
-| k a (h -1 ) | `Q49` · kabs | 1.34 | h -1 | 0.0003722 | 1/s | 1/h | review_gapfill (0.7) | Van_2013_2:review |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,8 +75,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability Mean (CV)')
@@ -85,15 +91,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - table section iiv: 'Dosemax' routed out of structural estimates ('Interindividual variability Mean (CV)')
 - table section residual_error: 'Additive' routed out of structural estimates ('Residual variability Mean (%CV) …')
 - table section residual_error: 'Proportional' routed out of structural estimates ('Residual variability Mean (%CV) …')
-- dropped unlinked row (NIL): 'Dose50 (mg)' — extend the ontology if this is a real PK parameter (source ['jcph1370-tbl-0003:row9:col1'])
-- unit_dimension_mismatch: 'Dosemax (mg)' → Q310 (unit '[mass]' vs ontology '[time]') — route to review
-- dropped duplicate Q310 ('Dosemax (mg)', value '175') — already have one for this compound
+- dropped PD-category row 'Dose50 (mg)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['jcph1370-tbl-0003:row9:col1'])
+- dropped unlinked row (NIL): 'Dosemax (mg)' — extend the ontology if this is a real PK parameter (source ['jcph1370-tbl-0003:row10:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tolvaptan
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - model-stage split: 'base model estimates mean %rse' is the base model of Lanke_2019 (paper reports 2 stages: base model estimates mean %rse, final model estimates mean (%rse)); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Van_2013_2's review values (primary lacked it)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -111,7 +114,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[dosemax]` |  | 175 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose50]` |  | 152 | only_one_extracted |
 
 </details>
 
@@ -130,7 +133,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['jcph1370-tbl-0003:row2:col1'] |
 | C5_dimension_Q310 | pass | [time] |  | ['jcph1370-tbl-0003:row8:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Van_2013_2:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['jcph1370-tbl-0003:row6:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -145,12 +147,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T2_covariates |  | skipped |  |  | no covariate effects in record |
 | T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
 | T3_output_variable |  | pass | C_central (measured=tolvaptan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 3.5 | 0.0001109 | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 0.17 | 0.0001109 | unresolved concentration unit (exp 'null', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 15 | 0.0001109 | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| T1_cmax | reference | skipped | 3.5 | 9.097e-05 | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.17 | 9.097e-05 | unresolved concentration unit (exp 'ratio', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 15 | 9.097e-05 | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 96 | 9.097e-05 | unresolved concentration unit (exp '', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -191,7 +195,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminMass` | 1.5e-05 | kg |
 | input | model | `Cl` | 3.167e-06 | m3/s |
 | input | model | `VdPerKg` | 0.001557 | m3/kg |
-| input | model | `ka` | 0.0003722 | 1/s |
+| input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -220,7 +224,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 15 mg, single dose, first-order absorption (ka 1.34 /h, F 1). Doses in the paper: 15, 30, 45, 60, 90, 120 mg.
+**Administration: oral** — 15 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 15, 30, 45, 60, 90, 120 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base/Tolvaptan_Lanke2019_base_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base/Tolvaptan_Lanke2019_base_sim_controls.json"></dbs-fmusim>
 
@@ -230,4 +234,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Lanke2019_base&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Lanke2019_base%0APaper%3A%20Lanke_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 18:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 10:51 UTC</sub>

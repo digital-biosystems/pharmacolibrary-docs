@@ -35,7 +35,7 @@ Darbepoetin alfa is an antianemic medication used to treat anemia linked with ch
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kawakami_2009_reference](drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Kawakami K et al., Population pharmacokinetics of darbepoe…, European journal of clinica… (2009) | [10.1007/s00228-008-0561-z](https://doi.org/10.1007/s00228-008-0561-z) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Roberts_2015_reference](drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Roberts JK et al., Population Pharmacokinetics of Darbepoe…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0286-y](https://doi.org/10.1007/s40262-015-0286-y) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Agoram_2006_reference](drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Agoram2006_reference.md) | — | 1-compartment (no model) | 4 | Agoram B et al., Development and evaluation of a populat…, The AAPS journal (2006) | [10.1208/aapsj080364](https://doi.org/10.1208/aapsj080364) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [An_2017_reference](drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_An2017_reference.md) | — | 1-compartment (no model) | 3 | An G et al., Population Pharmacokinetics of Darbepoe…, Journal of pharmaceutical s… (2017) | [10.1016/j.xphs.2017.02.001](https://doi.org/10.1016/j.xphs.2017.02.001) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [An_2017_reference](drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_An2017_reference.md) | — | 1-compartment (no model) | 3 | An G et al., Population Pharmacokinetics of Darbepoe…, Journal of pharmaceutical s… (2017) | [10.1016/j.xphs.2017.02.001](https://doi.org/10.1016/j.xphs.2017.02.001) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Takama_2007_reference](drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Takama2007_reference.md) | — | 1-compartment (no model) | 0 | Takama H et al., Population pharmacokinetics of darbepoe…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2006.02756.x](https://doi.org/10.1111/j.1365-2125.2006.02756.x) |
 
 ## Pharmacodynamics (PD)
@@ -45,15 +45,6 @@ Darbepoetin alfa is an antianemic medication used to treat anemia linked with ch
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Keller_2015_erythropoietin_effect](drugs/drug_darbepoetin_alfa/pd_Keller_2015_erythropoietin_effect.md) | erythropoietin effect ← darbepoetin · direct sigmoid Emax (Hill) effect | — | Keller F et al., Pharmacokinetic and pharmacodynamic con…, Expert opinion on drug meta… (2015) | [10.1517/17425255.2015.989832](https://doi.org/10.1517/17425255.2015.989832) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Agoram_2006_Hb](drugs/drug_darbepoetin_alfa/pd_Agoram_2006_Hb.md) | hemoglobin ← darbepoetin_alfa · indirect response — drug stimulates the production of hemoglobin | model (no simulator) | Agoram B et al., Development and evaluation of a populat…, The AAPS journal (2006) | [10.1208/aapsj080364](https://doi.org/10.1208/aapsj080364) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Doshi_2010_Hgb](drugs/drug_darbepoetin_alfa/pd_Doshi_2010_Hgb.md) | Hgb concentration ← darbepoetin alfa · indirect response — drug stimulates the production of Hgb concentration | model (no simulator) | Doshi S et al., Exposure-response modeling of darbepoet…, Journal of clinical pharmac… (2010) | [10.1177/0091270010377201](https://doi.org/10.1177/0091270010377201) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=darbepoetin_alfa).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: EPOR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,7 +64,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 24 matched, 22 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 7  ·  extracted 4  ·  needs review 1  ·  rejected 2  ·  stale 1
+- **records:** 7  ·  extracted 4  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

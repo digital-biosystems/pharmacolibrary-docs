@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;iodine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iodine_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iodine/Iodine_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iodine_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iodine/Iodine_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # iodine
 
@@ -15,18 +15,12 @@ Iodine is an antiseptic and disinfectant used to treat skin conditions. It is ad
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q2064483](https://www.wikidata.org/wiki/Q2064483), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
-## Start here
-
-> **Samukawa_2017_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_iodine/Iodine_Samukawa2017_reference.md?tab=Simulation) · [record](drugs/drug_iodine/Iodine_Samukawa2017_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Samukawa_2017_reference](drugs/drug_iodine/Iodine_Samukawa2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & pharmaceutical… (2017) | [10.1248/bpb.b16-00998](https://doi.org/10.1248/bpb.b16-00998) |
 | <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kirchner_1994_reference](drugs/drug_iodine/Iodine_Kirchner1994_reference.md) | — | general linear (no model) | 0 | Kirchner G, Transport of iodine and cesium via the…, Health physics (1994) | [10.1097/00004032-199406000-00005](https://doi.org/10.1097/00004032-199406000-00005) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Samukawa_2017_reference](drugs/drug_iodine/Iodine_Samukawa2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & pharmaceutical… (2017) | [10.1248/bpb.b16-00998](https://doi.org/10.1248/bpb.b16-00998) |
 
 ## Pharmacodynamics (PD)
 
@@ -34,16 +28,6 @@ Iodine is an antiseptic and disinfectant used to treat skin conditions. It is ad
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhuang_1995_forskolin_stimulated_adenylyl_cyclase_activity](drugs/drug_iodine/pd_Zhuang_1995_forskolin_stimulated_adenylyl_cyclase_activity.md) | forskolin-stimulated adenylyl cyclase activity ← (+)-(R)-trans-8-hydroxy-2-[N-n-propyl-N-(3'-iodo-2'-propenyl)] aminotetralin · inhibition effect | — | Zhuang ZP et al., Synthesis of (+)-(R)- and (-)-(S)-trans…, Chirality (1995) | [10.1002/chir.530070611](https://doi.org/10.1002/chir.530070611) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fusella_2026_Tg](drugs/drug_iodine/pd_Fusella_2026_Tg.md) | serum thyroglobulin ← radioactive iodine · inhibition effect | — | Fusella Giuntini M et al., A computational framework for optimizin…, Scientific reports (2026) | [10.1038/s41598-026-56267-1](https://doi.org/10.1038/s41598-026-56267-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=iodine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-
-<sub>Actors without a tissue in the table: Microbial proteins (unknown), SLC26A4 (substrate), SLC5A5 (substrate), TG (binder), TPO (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +41,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:04 | 14:57 | 1/1/0 | 2/0/0 | 0/0/0 | 1,531,840/80,409 | einfracz / qwen3.8-27b | 89 | 14/80 | 81/8 | 0 |
+| 2026-10-07 22:04 | 14:57 | 0/2/0 | 2/0/0 | 0/0/0 | 1,531,840/80,409 | einfracz / qwen3.8-27b | 89 | 14/80 | 81/8 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 3349 matched, 279 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

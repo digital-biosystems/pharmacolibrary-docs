@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0399, model 0.0247).
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0399, model 0.0247); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_SanzCodina2024_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Sanz-Codina M, van Os W, Pham AD, Jorda A, Wölf-Duchek M, Bergmann F et al. Tar
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = No.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 **Dosing:** 2000 mg, iv, single.
 
@@ -53,13 +53,13 @@ Sanz-Codina M, van Os W, Pham AD, Jorda A, Wölf-Duchek M, Bergmann F et al. Tar
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0399, model 0.0247).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0399, model 0.0247); x1_cross_check.**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — cefiderocol: CL 11 L/h, V1 11.3 L, fu 0.639, Q2 25.3 L/h, V2 15.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefiderocol, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -153,6 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.0399 | 0.02474 | 0.6201 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0409 | 0.02474 | 0.605 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0416 | 0.02474 | 0.5948 | mg/L→SI vs simulated kg/m3 |

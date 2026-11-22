@@ -16,7 +16,7 @@ Ogata Y, Suzuki H, Saruta T. [Pharmacokinetics of cefpirome (CPR) in patients wi
 
 ## Population and dosing
 
-**Population:** patients with impaired renal function · condition renal impairment · age group adult · n = # is_poppk: yes | models_target_drug: yes | final_table_hint: Table 4 | software: unknown | has_control_stream: no | dose_compound: cefpirome | primary_analyte: cefpirome | population: patients with impaired renal function | age_class: adult | n_subjects: 9 | condition: renal impairment | species: human | compounds: cefpirome | parent | yes | yes | yes | links: none.
+**Population:** patients with impaired renal function · condition renal impairment · age group adult.
 
 ## Model
 

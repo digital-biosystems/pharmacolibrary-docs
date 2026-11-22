@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R01A&quot;,&quot;href&quot;:&quot;atc/R01A.md&quot;},{&quot;label&quot;:&quot;olopatadine&quot;,&quot;href&quot;:&quot;drugs/drug_olopatadine/&quot;},{&quot;label&quot;:&quot;Fidler_2018 \u00b7 PD ocular itching score&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ocular itching score — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5), einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+# ocular itching score — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -64,18 +64,18 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:qwen3.8-27b` | not confirmed | 0.5 (5/10 fields) | 5 |
-| `einfracz:gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
+| `qwen3.8-27b` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:qwen3.8-27b` | `driver_compound` | olopatadine (KPD theoretical concentration) | olopatadine | mismatch |
-| `einfracz:qwen3.8-27b` | `parameters[Q100]` | − 4.98 |  | only_one_extracted |
-| `einfracz:qwen3.8-27b` | `parameters[Q344]` | − 2.14 |  | only_one_extracted |
-| `einfracz:qwen3.8-27b` | `parameters[Q345]` | 1.07 |  | only_one_extracted |
-| `einfracz:qwen3.8-27b` | `parameters[Q900]` | − 0.64 |  | only_one_extracted |
+| `qwen3.8-27b` | `driver_compound` | olopatadine (KPD theoretical concentration) | olopatadine | mismatch |
+| `qwen3.8-27b` | `parameters[Q100]` | − 4.98 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[Q344]` | − 2.14 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[Q345]` | 1.07 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[Q900]` | − 0.64 |  | only_one_extracted |
 
 </details>
 

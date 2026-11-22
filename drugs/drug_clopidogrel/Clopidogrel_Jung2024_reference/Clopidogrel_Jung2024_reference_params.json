@@ -72,11 +72,11 @@
    "Poor": [
     {
      "compound": "clopidogrel H4",
-     "parameter": "fm1",
-     "reference": 0.125,
-     "scale": "logit",
+     "parameter": "CLm1 (L/h)",
+     "reference": 74.25,
+     "scale": "power",
      "theta": -0.996,
-     "value": 0.0501202562145836
+     "value": 27.42452751304768
     },
     {
      "compound": "clopidogrel carboxylic acid",
@@ -108,9 +108,10 @@
    },
    "Normal": {},
    "Poor": {
-    "CL1": 0.0008271939197717603,
-    "q1_m11": 8.742339697449321e-05,
-    "q1_m21": 0.0016568493499204136
+    "CL1": 0.0008271939197717602,
+    "CLm1": 7.61792430917991e-06,
+    "q1_m11": 0.00021803409336186339,
+    "q1_m21": 0.0015262386535330437
    }
   },
   "record": "Jung_2024",

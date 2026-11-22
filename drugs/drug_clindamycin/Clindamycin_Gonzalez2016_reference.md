@@ -17,7 +17,7 @@ Gonzalez D, Delmore P, Bloom BT, Cotten CM, Poindexter BB, McGowan E et al. Clin
 
 ## Population and dosing
 
-**Population:** preterm and term infants · age group infant · n = ... (truncated).
+**Population:** preterm and term infants · age group infant.
 
 ## Model
 

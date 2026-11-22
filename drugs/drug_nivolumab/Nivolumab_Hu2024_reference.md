@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peritoneal dialysis clearance value for nivolumab is -0.580, which is a negative and pharmacokinetically implausible number.
+> Nivolumab was rejected because its reported peritoneal-dialysis clearance, CL_PD, is −0.580, an implausible negative clearance.
 
 <div class="pk-model-meta" hidden drug="nivolumab" model-id="Nivolumab_Hu2024_reference" status="rejected" stale="false" population="pediatric oncology patients" measured-compound="nivolumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Hu Z, Liu S, Zhao Y, Du S, Hamuro L, Shen J et al. Nivolumab and ipilimumab popu
 
 ### Reviewer guidance
 
-**The peritoneal dialysis clearance value for nivolumab is -0.580, which is a negative and pharmacokinetically implausible number.**
+**Nivolumab was rejected because its reported peritoneal-dialysis clearance, CL_PD, is −0.580, an implausible negative clearance.**
 
-The record lists the clearance by peritoneal dialysis as -0.580, but clearance cannot be negative. The model structure is defined as a one-compartment model, yet the record includes an intercompartmental clearance parameter of 35.8 mL/h, indicating a structural mismatch. A second reader could not identify the primary analyte or dose compound, leaving the model's applicability to nivolumab uncertain. Extracted — nivolumab: CL 9.66 mL/h, V 3.9 L, Q 35.8 mL/h, CL_PD -0.58.
+The record lists CL_PD, meaning drug clearance by peritoneal dialysis, as −0.580 for nivolumab; the rejection finding concerns negative clearance or volume in the base model or under a covariate scenario. A second reader did not report this parameter, so its extraction is disputed. Extracted — nivolumab: CL 9.66 mL/h, V 3.9 L, Q 35.8 mL/h, CL_PD -0.58.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl pedst: this record has -0.580, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

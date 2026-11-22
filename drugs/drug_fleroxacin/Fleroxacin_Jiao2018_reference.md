@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record lacks distribution volume and elimination clearance because the source is an abstract-only exposure paper, not a fitted compartmental model.
+> Fleroxacin record lacks volume and elimination clearance, and both metabolites are orphan compartments.
 
 <div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Jiao2018_reference" status="rejected" stale="false" population="adults with cystic fibrosis and healthy adults" measured-compound="fleroxacin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -16,7 +16,7 @@ Jiao Y, Kim TH, Tao X, Kinzig M, Landersdorfer CB, Drescher SK et al. First popu
 
 ## Population and dosing
 
-**Population:** adults with cystic fibrosis and healthy adults · condition cystic fibrosis · age group adult · n = $23$ (11 CF + 12 HV).
+**Population:** adults with cystic fibrosis and healthy adults · condition cystic fibrosis · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Jiao Y, Kim TH, Tao X, Kinzig M, Landersdorfer CB, Drescher SK et al. First popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +45,11 @@ Jiao Y, Kim TH, Tao X, Kinzig M, Landersdorfer CB, Drescher SK et al. First popu
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and elimination clearance because the source is an abstract-only exposure paper, not a fitted compartmental model.**
+**Fleroxacin record lacks volume and elimination clearance, and both metabolites are orphan compartments.**
 
-The source text is abstract-only, so reported summary statistics stand in for a fitted model. Consequently, no distribution volume or clearance/elimination parameters are present, confirming it is not a compartmental population PK model. Additionally, the metabolites N-oxide fleroxacin and N-demethylfleroxacin are marked as unreachable, indicating they have no path from the dose. Extracted — N-oxide fleroxacin: CLfm 0.378 L/h; N-demethylfleroxacin: CLfm 0.353 L/h.
+The record contains no distribution volume or elimination clearance for the parent drug, meaning it does not describe a full compartmental population pharmacokinetic model. Both N-oxide fleroxacin and N-demethylfleroxacin have a compartment count of zero, indicating they are orphan compartments with no path from the dose. A second reader identified additional parameters, including linear nonrenal clearance of 1.01, renal clearance of 1.12, and a volume of distribution of 0.81, that are missing from the record. Extracted — N-oxide fleroxacin: CLfm 0.378 L/h; N-demethylfleroxacin: CLfm 0.353 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has fleroxacin → n-oxide fleroxacin (metabolism); fleroxacin → n-demethylfleroxacin (metabolism), the second reading fleroxacin → n-oxide fleroxacin (metabolism); fleroxacin → n-demethyl fleroxacin (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has fleroxacin → n-oxide fleroxacin (metabolism); fleroxacin → n-demethylfleroxacin (metabolism), the second reading fleroxacin → n-oxide fleroxacin (metabolism); fleroxacin → n-demethyl fleroxacin (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -92,23 +92,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.214 (3/14 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 
 <details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['fleroxacin', 'n-oxide fleroxacin', 'metabolism'], ['fleroxacin', 'n-demethylfleroxacin', 'metabolism']] | [['fleroxacin', 'n-oxide fleroxacin', 'metabolism'], ['fleroxacin', 'n-demethyl fleroxacin', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[formation clearance of n‐demethylfleroxacin]` |  | 0.496 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[formation clearance of n‐oxide fleroxacin]` |  | 0.52 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[formation clearances of n‐demethylfleroxacin in healthy volunteers]` | 0.353 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[formation clearances of n‐oxide fleroxacin in healthy volunteers]` | 0.378 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[linear nonrenal clearance]` |  | 1.01 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[renal clearance of n‐demethyl fleroxacin]` |  | 1.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[renal clearance of n‐oxide fleroxacin]` |  | 1.53 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[renal clearance]` |  | 1.12 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[saturable exsorption clearance into intestine]` |  | 0.83 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 0.81 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['fleroxacin', 'n-oxide fleroxacin', 'metabolism'], ['fleroxacin', 'n-demethylfleroxacin', 'metabolism']] | [['fleroxacin', 'n-oxide fleroxacin', 'metabolism'], ['fleroxacin', 'n-demethyl fleroxacin', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[formation clearance of n‐demethylfleroxacin]` |  | 0.496 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearance of n‐oxide fleroxacin]` |  | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearances of n‐demethylfleroxacin in healthy volunteers]` | 0.353 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearances of n‐oxide fleroxacin in healthy volunteers]` | 0.378 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[linear nonrenal clearance]` |  | 1.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance of n‐demethyl fleroxacin]` |  | 1.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance of n‐oxide fleroxacin]` |  | 1.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` |  | 1.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[saturable exsorption clearance into intestine]` |  | 0.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 0.81 | only_one_extracted |
 
 </details>
 

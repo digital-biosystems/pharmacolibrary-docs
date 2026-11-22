@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Alectinib absorption parameters ka and Tlag were left at defaults, causing the simulated peak concentration to exceed the paper's reported value by over 50%.
+> Alectinib model refused because absorption was defaulted, peak concentration exceeded tolerance, and reported units lacked an SI equivalent.
 
 <div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_fed_geometric_mean_cv" status="needs_review" stale="false" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G e
 
 ### Reviewer guidance
 
-**Alectinib absorption parameters ka and Tlag were left at defaults, causing the simulated peak concentration to exceed the paper's reported value by over 50%.**
+**Alectinib model refused because absorption was defaulted, peak concentration exceeded tolerance, and reported units lacked an SI equivalent.**
 
-The model's absorption rate constant (ka) and lag time were not extracted from the paper, forcing reliance on generic library placeholders. Consequently, the simulated maximum concentration of 8.44e-08 kg/m3 deviated from the paper's observed 7.82e-08 kg/m3, failing the tolerance check. A second reader also failed to extract the paper's reported clearance and volume of distribution values. Extracted — alectinib: Cmax 78.2 pg/mL, AUCt 981 pg*hour/mL; 2H6-alectinib: CL/F 84.2 L/h, V/F 776 L.
+The record lacks an estimate for the absorption rate constant, forcing the use of library defaults unsupported by the source paper. Additionally, the simulated peak concentration (8.44e-08) deviated from the reported value (7.82e-08) beyond the acceptable tolerance. The concentration unit pg/mL could not be converted to SI units, preventing verification of the reported parameters. Extracted — alectinib: Cmax 78.2 pg/mL, AUCt 981 pg*hour/mL; 2H6-alectinib: CL/F 84.2 L/h, V/F 776 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc0‐24h: this record has 980.8, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
@@ -156,7 +156,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=2H6-alectinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
 | T1_cmax | reference | pass | 7.82e-08 | 8.436e-08 | 1.079 | pg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 5.49e-08 | 8.436e-08 | 1.536 | pg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 1.42 | 8.436e-08 |  | unresolved concentration unit (exp '', sim 'kg/m3') |

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Indacaterol absorption rate constant defaults were used instead of paper values, invalidating the one-compartment model.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="indacaterol" model-id="Indacaterol_Jiang2015_reference" status="needs_review" stale="false" population="healthy Chinese volunteers" measured-compound="indacaterol" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Jiang J, Li L, Yin H, Woessner R, Emotte C, Li R et al. Single- and multiple-dos
 
 ### Reviewer guidance
 
-**Indacaterol absorption rate constant defaults were used instead of paper values, invalidating the one-compartment model.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists CL/F of 67.9 L/h and V/F of 11050.0 L but omits an extracted ka value. Library placeholders were therefore applied for ka and Tlag, which the source does not support. A secondary reader also disagreed on a null field value of 2.59. Extracted — indacaterol: CL/F 67.9 L/h, V/F 1.1e+04 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — indacaterol: CL/F 67.9 L/h, V/F 1.1e+04 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 2.59. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -119,15 +119,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=indacaterol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=indacaterol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.917, 0 of 1 reader(s) agree | 0.917 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

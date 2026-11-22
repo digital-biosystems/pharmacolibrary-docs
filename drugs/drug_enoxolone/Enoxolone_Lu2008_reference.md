@@ -4,11 +4,11 @@
 
 # enoxolone — `Enoxolone_Lu2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-07 13:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Enoxolone volume of distribution parameter is assigned units of L/kg instead of L.
+> The record was rejected because enoxolone’s volume of distribution, 2.427 L/kg, failed a dimensional consistency check.
 
-<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Lu2008_reference" status="rejected" stale="true" population="rats" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Lu2008_reference" status="rejected" stale="false" population="rats" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lu Y, Li J, Du SY. [Study on pharmacokinetics of glycyrrhetic acid in rats by RP-HPLC]. Zhongguo Zhong yao za zhi = Zhongguo zhongyao zazhi = China journal of Chinese materia medica 33(11):1294–1296 (2008).
@@ -40,7 +40,7 @@ Lu Y, Li J, Du SY. [Study on pharmacokinetics of glycyrrhetic acid in rats by RP
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Lu Y, Li J, Du SY. [Study on pharmacokinetics of glycyrrhetic acid in rats by RP
 
 ### Reviewer guidance
 
-**Enoxolone volume of distribution parameter is assigned units of L/kg instead of L.**
+**The record was rejected because enoxolone’s volume of distribution, 2.427 L/kg, failed a dimensional consistency check.**
 
-The record lists the volume of distribution for glycyrrhetic acid with a value of 2.427 and units of L x kg(-1). This body-weight normalized unit creates a dimensional mismatch with the one-compartment structural model. Consequently, the model was rejected because the volume parameter could not be integrated into the structural equations. Extracted — glycyrrhetic acid (GA; enoxolone): t1/2α 0.153 h, t1/2β 2.37 h, Cmax 2.07 mg x L(-1), CL 0.715 L/h, V 2.43 L x kg(-1), AUC 1.3 mg x h(-1) x L(-1).
+The reported volume of distribution has units of L/kg, but the check found a conflict between those units and the required volume dimension. The record is abstract-only, so reported summary statistics stand in for a fitted model. A second reader identified the compound as glycyrrhetic acid rather than glycyrrhetic acid (GA; enoxolone) and marked the listed parameter values absent. Extracted — glycyrrhetic acid (GA; enoxolone): t1/2α 0.153 h, t1/2β 2.37 h, Cmax 2.07 mg x L(-1), CL 0.715 L/h, V 2.43 L x kg(-1), AUC 1.3 mg x h(-1) x L(-1).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has glycyrrhetic acid (GA; enoxolone), the second reading glycyrrhetic acid; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefodizime&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/&quot;},{&quot;label&quot;:&quot;Boccazzi_1990 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefodizime_SchferKorting1986_reference&quot;,&quot;label&quot;:&quot;Sch\u00e4fer-Korting_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefodizime_SchferKorting1986_reference&quot;,&quot;label&quot;:&quot;Sch\u00e4fer-Korting_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefodizime_el1992_reference&quot;,&quot;label&quot;:&quot;el_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_el1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefodizime — `Cefodizime_Boccazzi1990_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:38 UTC (Rejected), but the paper was screened again on 2026-10-07 11:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_Boccazzi1990_reference" status="needs_review" stale="true" population="children" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_Boccazzi1990_reference" status="needs_review" stale="false" population="children" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Boccazzi A, Fusi G, Mezzopane AM, Maretti M, Careddu P. The pharmacokinetics of cefodizime in children. The Journal of antimicrobial chemotherapy 26 Suppl C:83–87 (1990).
@@ -17,7 +17,7 @@ Boccazzi A, Fusi G, Mezzopane AM, Maretti M, Careddu P. The pharmacokinetics of 
 
 ## Population and dosing
 
-**Population:** children · condition hospitalized · age group child · n = # List each compound on its own line under 'compounds', one per line, as: # - name | role | dosed | measured | has_parameters # where role = parent | metabolite | co-administered | analyte-only | endogenous_biomarker # (endogenous_biomarker = a substance the body makes, whose kinetics the model # describes; it is never 'dosed') # dosed = yes/no (subject receives it) # measured = yes/no (its concentrations are modelled) # has_parameters = yes/no (paper gives it V/CL or a compartment) compounds: -.
+**Population:** children · condition hospitalized · age group child.
 
 ## Model
 
@@ -36,7 +36,7 @@ Boccazzi A, Fusi G, Mezzopane AM, Maretti M, Careddu P. The pharmacokinetics of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Boccazzi A, Fusi G, Mezzopane AM, Maretti M, Careddu P. The pharmacokinetics of 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefodizime: t1/2β 1.9 h, AUC 217 mg.h/l.
 
 Independently confirmed by `gpt-oss-120b`.
 

@@ -5,11 +5,11 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Burns2015_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-07 16:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected because a structural parameter's unit could not be converted to standard SI units, causing a dimension mismatch.
+> The intercompartmental clearance Q for tenofovir is defined with units of h-1, dimensionally conflicting with its required clearance unit of L/h.
 
-<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Burns2015_base" status="rejected" stale="true" population="healthy women" measured-compound="tenofovir" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Burns2015_base" status="rejected" stale="false" population="healthy women" measured-compound="tenofovir" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Burns RN, Hendrix CW, Chaturvedula A. Population pharmacokinetics of tenofovir and tenofovir-diphosphate in healthy women. Journal of clinical pharmacology 55(6):629–638 (2015).
@@ -45,7 +45,7 @@ Burns RN, Hendrix CW, Chaturvedula A. Population pharmacokinetics of tenofovir a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Burns RN, Hendrix CW, Chaturvedula A. Population pharmacokinetics of tenofovir a
 
 ### Reviewer guidance
 
-**The model was rejected because a structural parameter's unit could not be converted to standard SI units, causing a dimension mismatch.**
+**The intercompartmental clearance Q for tenofovir is defined with units of h-1, dimensionally conflicting with its required clearance unit of L/h.**
 
-The record lists the apparent intercompartmental clearance as 0.604 h−1, but a unit for a structural parameter lacked a known conversion to SI. This prevented the parameter from being processed with a valid physical dimension. Additionally, the second reader disagreed that the absorption lag, elimination, and formation rate constants were null, identifying them as 0.5, 0.13, and 0.017 respectively. Extracted — tenofovir disoproxil: kabs 9.81 h−1, V1/F 404 L, Q 0.604 h−1, kel 0.13 h−1, tlag 0.5 h; tenofovir-diphosphate: kfm 0.017 h−1, kel 0.013 h−1.
+The parameter Q, described as apparent intercompartmental clearance between central and peripheral compartments, has a value of 0.604 with units h-1. This creates a dimension mismatch because clearance must have units of volume per time (e.g., L/h), not inverse time (h-1). A second reader also noted that several extracted parameter values were not present in the record, though the primary rejection was due to the unit conflict. Extracted — tenofovir disoproxil: kabs 9.81 h−1, V1/F 404 L, Q 0.604 h−1, kel 0.13 h−1, tlag 0.5 h; tenofovir-diphosphate: kfm 0.017 h−1, kel 0.013 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tenofovir disoproxil fumarate, the second reading tenofovir_disoproxil; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 

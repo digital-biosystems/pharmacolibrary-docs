@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;levosimendan&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/&quot;},{&quot;label&quot;:&quot;Bertin_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levosimendan_Bertin2025_reference&quot;,&quot;label&quot;:&quot;Bertin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levosimendan_Bertin2025_reference&quot;,&quot;label&quot;:&quot;Bertin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levosimendan — `Levosimendan_Bertin2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="levosimendan" model-id="Levosimendan_Bertin2025_reference" status="simulated" stale="false" population="critically ill children on ECMO" measured-compound="levosimendan" parameterization="mechanistic" topology="1C"></div>
+> The levosimendan clearance record was refused because a second reader disagreed on multiple extracted parameters.
+
+<div class="pk-model-meta" hidden drug="levosimendan" model-id="Levosimendan_Bertin2025_reference" status="needs_review" stale="false" population="critically ill children on ECMO" measured-compound="levosimendan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bertin S, Haefliger D, Perez MH, Guidi M, Decosterd LA, Chanez V et al. Pharmacokinetics of levosimendan in critically Ill children on extracorporeal membrane oxygenation: a prospective observational study. Frontiers in pediatrics 13:1542417 (2025).
@@ -27,6 +29,8 @@ Bertin S, Haefliger D, Perez MH, Guidi M, Decosterd LA, Chanez V et al. Pharmaco
 <figure class="pk-models-diagram"><img src="drugs/drug_levosimendan/Levosimendan_Bertin2025_reference/Levosimendan_Bertin2025_reference.svg" alt="Levosimendan_Bertin2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | total CL | CL | 5.99 | ml/min/kg |
@@ -34,7 +38,7 @@ Bertin S, Haefliger D, Perez MH, Guidi M, Decosterd LA, Chanez V et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Bertin S, Haefliger D, Perez MH, Guidi M, Decosterd LA, Chanez V et al. Pharmaco
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The levosimendan clearance record was refused because a second reader disagreed on multiple extracted parameters.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q31: this record has 0.82, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+The second reader disagreed with the extracted clearance value of 0.82. They also disputed the volume of distribution value of 0.27. A further eight fields had conflicting values, with one differing by five units. Extracted — levosimendan: CL 5.99 ml/min/kg, V 1.48 L/kg.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has 0.82, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -75,21 +81,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.471 (8/17 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.471 (8/17 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q310]` |  | 48 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q31]` | 0.82 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q356]` |  | 100 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q361]` |  | 4 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q41]` |  | 5 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q46]` |  | 40 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q47]` | 0.27 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q57]` | 75 | 80 | mismatch |
-| `gpt-oss:120b` | `values[Q65]` | 1.48 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q310]` |  | 48 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q31]` | 0.82 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q356]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q361]` |  | 4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q41]` |  | 5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q46]` |  | 40 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | 0.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 75 | 80 | mismatch |
+| `gpt-oss-120b` | `values[Q65]` | 1.48 |  | only_one_extracted |
 
 </details>
 
@@ -115,14 +121,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=levosimendan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=levosimendan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

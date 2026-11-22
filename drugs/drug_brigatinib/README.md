@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;brigatinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brigatinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # brigatinib
 
@@ -23,17 +22,11 @@ Brigatinib is a protein kinase inhibitor used to treat non-small-cell lung cance
 |---|---|---|---|---|---|---|
 | brigatinib | parent | 584.1 | C29H39ClN7O2P | DrugBank | [68165256](https://pubchem.ncbi.nlm.nih.gov/compound/68165256) | Gupta_2021, Gupta_2023 |
 
-## Start here
-
-> **Gupta_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> healthy volunteers and patients with cancer, n = 442. [Run it in the simulator](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md?tab=Simulation) · [record](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Gupta_2021_reference](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+1 cov.) | Gupta N et al., Population Pharmacokinetics of Brigatin…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00929-4](https://doi.org/10.1007/s40262-020-00929-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Gupta_2021_reference](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md) | — | 2-compartment (no model) | 7 (+1 cov.) | Gupta N et al., Population Pharmacokinetics of Brigatin…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00929-4](https://doi.org/10.1007/s40262-020-00929-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gupta_2022_reference](drugs/drug_brigatinib/Brigatinib_Gupta2022_reference.md) | — | 1-compartment (no model) | 0 | Gupta N et al., Population pharmacokinetic and exposure…, Clinical and translational… (2022) | [10.1111/cts.13231](https://doi.org/10.1111/cts.13231) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gupta_2023_fasted](drugs/drug_brigatinib/Brigatinib_Gupta2023_fasted.md) | — | 1-compartment (no model) | 0 | Gupta N et al., Clinical Pharmacology of Brigatinib: A…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01284-w](https://doi.org/10.1007/s40262-023-01284-w) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ fed](drugs/drug_brigatinib/Brigatinib_Gupta2023_fed.md) | — | 1-compartment (no model) | 0 |  |  |
@@ -74,24 +67,6 @@ Brigatinib is a protein kinase inhibitor used to treat non-small-cell lung cance
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [unknown_2021_PFS](drugs/drug_brigatinib/pd_unknown_2021_PFS.md) | progression-free survival ← brigatinib · time-to-event model | — | unknown, Corrigendum to: Brigatinib dose rationa…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12698](https://doi.org/10.1002/psp4.12698) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [unknown_2021_iPFS](drugs/drug_brigatinib/pd_unknown_2021_iPFS.md) | intracranial PFS ← brigatinib · time-to-event model | — | unknown, Corrigendum to: Brigatinib dose rationa…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12698](https://doi.org/10.1002/psp4.12698) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brigatinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `CYP3A4` inducer/substrate, `SLC22A1` unknown | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCG2` inhibitor/substrate, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCB5 (inhibitor), ABCB5 (substrate), ABL1 (inhibitor), ALK (inhibitor), EGFR (inhibitor), ERBB2 (inhibitor), ERBB4 (inhibitor), FLT3 (inhibitor), IGF1R (inhibitor), INSR (binding), MET (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -104,13 +79,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:02 | 8:21 | 1/3/0 | 3/0/0 | 0/0/0 | 162,161/48,522 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-06 22:02 | 8:21 | 1/3/0 | 31/0/0 | 0/0/0 | 162,161/48,522 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

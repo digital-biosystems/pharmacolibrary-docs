@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefotiam&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/&quot;},{&quot;label&quot;:&quot;Momose_1982 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefotiam_Burlot2026_reference&quot;,&quot;label&quot;:&quot;Burlot_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Burlot2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefotiam_Irby2021_reference&quot;,&quot;label&quot;:&quot;Irby_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Irby2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefotiam_Shah2019_reference&quot;,&quot;label&quot;:&quot;Shah_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Shah2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefotiam_Shah2019_reference&quot;,&quot;label&quot;:&quot;Shah_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Shah2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefotiam_Burlot2026_reference&quot;,&quot;label&quot;:&quot;Burlot_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Burlot2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefotiam_Irby2021_reference&quot;,&quot;label&quot;:&quot;Irby_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefotiam/Cefotiam_Irby2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefotiam — `Cefotiam_Momose1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-07 10:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution was recorded as 70.0 L, creating a dimensional mismatch with the drug's clearance of 63.2 L/h.
+> Cefotiam’s reported AUC of 7.9% was refused because percent is dimensionless, while area under a concentration-time curve has concentration-times-time dimensions.
 
-<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Momose1982_reference" status="rejected" stale="true" population="humans (likely ophthalmology patients requiring intraocular infection treatment or similar ocular procedures)" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Momose1982_reference" status="rejected" stale="false" population="humans (likely ophthalmology patients requiring intraocular infection treatment or similar ocular procedures)" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Momose A, Kasahara A, Fugono T, Mizuta E. [The studies on distributions of cefsulodin and cefotiam to human aqueous humor and cornea]. The Japanese journal of antibiotics 35(12):2879–2893 (1982).
@@ -37,7 +37,7 @@ Momose A, Kasahara A, Fugono T, Mizuta E. [The studies on distributions of cefsu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Momose A, Kasahara A, Fugono T, Mizuta E. [The studies on distributions of cefsu
 
 ### Reviewer guidance
 
-**The volume of distribution was recorded as 70.0 L, creating a dimensional mismatch with the drug's clearance of 63.2 L/h.**
+**Cefotiam’s reported AUC of 7.9% was refused because percent is dimensionless, while area under a concentration-time curve has concentration-times-time dimensions.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. A second reader could not confirm any extracted parameters, marking them as null. The dose compound and primary analyte were also left unknown by the second reader. Extracted — cefotiam: AUC ratio 25.6 %, AUC 7.9 %, CL 63.2 L/h, V 70 L.
+The record identifies the 7.9% parameter as area under the drug concentration-time curve, so its percent unit conflicts with its meaning; the separate AUC ratio of 25.6% is a ratio. Only the abstract was read, so reported summary statistics stood in for a fitted model. The second reader did not extract values for the reported AUC, AUC ratio, clearance of 63.2 L/h, or volume of distribution of 70.0 L. Extracted — cefotiam: AUC ratio 25.6 %, AUC 7.9 %, CL 63.2 L/h, V 70 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefotiam, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

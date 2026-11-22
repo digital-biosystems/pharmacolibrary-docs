@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;sodium stibogluconate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/&quot;},{&quot;label&quot;:&quot;Jaser_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sodium stibogluconate — `SodiumStibogluconate_Jaser1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 08:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected for C5 dimension mismatch because the equilibrium dissociation constant KD was recorded in hr-1 instead of a concentration unit.
+> The equilibrium dissociation constant for antimony was assigned units of hr-1 instead of a concentration, causing a dimension mismatch that rejected the record.
 
-<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Jaser1995_reference" status="rejected" stale="true" population="adults with cutaneous leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Jaser1995_reference" status="rejected" stale="false" population="adults with cutaneous leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jaser MA, el-Yazigi A, Croft SL. Pharmacokinetics of antimony in patients treated with sodium stibogluconate for cutaneous leishmaniasis. Pharmaceutical research 12(1):113–116 (1995).
@@ -42,7 +42,7 @@ Jaser MA, el-Yazigi A, Croft SL. Pharmacokinetics of antimony in patients treate
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Jaser MA, el-Yazigi A, Croft SL. Pharmacokinetics of antimony in patients treate
 
 ### Reviewer guidance
 
-**Rejected for C5 dimension mismatch because the equilibrium dissociation constant KD was recorded in hr-1 instead of a concentration unit.**
+**The equilibrium dissociation constant for antimony was assigned units of hr-1 instead of a concentration, causing a dimension mismatch that rejected the record.**
 
-The record lists KD, defined as an equilibrium dissociation constant, with a value of 0.391 hr-1, which is dimensionally incorrect for a binding affinity parameter. The source is abstract-only, so these summary statistics stand in for a fitted model, preventing proper validation of structural parameters. A second reader disputed the identification of the dose compound and primary analyte, marking them as unknown, and disagreed with the absence of a metabolism link. Extracted — antimony: kabs 1.71 hr-1, KD 0.391 hr-1, CL 17.7 L/hr, V 45.7 L, fe 0.8, CLR 12.7 L/hr.
+The parameter describing antimony's equilibrium dissociation constant (kd) is reported with a value of 0.391 hr-1. This unit dimension conflicts with the required concentration dimension for an affinity constant, triggering the rejection. The second reader flagged that all extracted parameter values, including the dissociation constant, were missing or disagreed with this record. The abstract-only source meant these summary statistics lacked the full context of a fitted model, but the specific unit error was the definitive cause of refusal. Extracted — antimony: kabs 1.71 hr-1, KD 0.391 hr-1, CL 17.7 L/hr, V 45.7 L, fe 0.8, CLR 12.7 L/hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium stibogluconate, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -17,7 +17,7 @@ Thibonnier M, Holford NH, Upton RA, Blume CD, Williams RL. Pharmacokinetic-pharm
 
 ## Population and dosing
 
-**Population:** healthy volunteers · age group adult · n = &gt;.
+**Population:** healthy volunteers · age group adult.
 
 **Dosing:** 300 mg, oral, single.
 

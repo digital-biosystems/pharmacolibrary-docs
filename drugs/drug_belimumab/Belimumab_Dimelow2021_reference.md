@@ -16,7 +16,7 @@ Dimelow R, Ji B, Struemper H. Pharmacokinetics of Belimumab in Children With Sys
 
 ## Population and dosing
 
-**Population:** paediatric patients with childhood-onset systemic lupus erythematosus (cSLE) · condition childhood-onset systemic lupus erythematosus · age group mixed · n = &gt;53.
+**Population:** paediatric patients with childhood-onset systemic lupus erythematosus (cSLE) · condition childhood-onset systemic lupus erythematosus · age group mixed.
 
 **Dosing:** 700 mg, iv, multiple, every 288 h.
 

@@ -16,7 +16,7 @@ Ge S, Mendley SR, Gerhart JG, Melloni C, Hornik CP, Sullivan JE et al. Populatio
 
 ## Population and dosing
 
-**Population:** infants, children, and adolescents · condition gastroesophageal reflux · age group mixed · n = &gt;=50.
+**Population:** infants, children, and adolescents · condition gastroesophageal reflux · age group mixed.
 
 **Dosing:** 7, 10.5 mg, oral, multiple, every 6 h.
 
@@ -40,7 +40,7 @@ Ge S, Mendley SR, Gerhart JG, Melloni C, Hornik CP, Sullivan JE et al. Populatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Ge S, Mendley SR, Gerhart JG, Melloni C, Hornik CP, Sullivan JE et al. Populatio
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — metoclopramide: kabs 0.4 hour−1, CL 19.6 L/hour/70 kg, Vnorm 42.9 L/70 kg, Q 57.1 L/hour/70 kg, Fab 0.97.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoclopramide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metoclopramide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -96,21 +96,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 0.97 | 1.0 | mismatch |
-| `gpt-oss:120b` | `parameters[cl, l/hour/70 kg].value` | 19.6 | 21.8 | mismatch |
-| `gpt-oss:120b` | `parameters[f].value` | 0.97 | 1.0 | mismatch |
-| `gpt-oss:120b` | `parameters[k a].value` | 0.4 | 0.8 | mismatch |
-| `gpt-oss:120b` | `parameters[q, l/hour/70 kg].value` | 57.1 | 238.0 | mismatch |
-| `gpt-oss:120b` | `parameters[v c, l/70 kg].value` | 42.9 | 111.8 | mismatch |
-| `gpt-oss:120b` | `parameters[v p, l/70 kg]` |  | 275.8 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | metoclopramide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | metoclopramide | unknown | mismatch |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 0.97 | 1.0 | mismatch |
+| `gpt-oss-120b` | `parameters[cl, l/hour/70 kg].value` | 19.6 | 21.8 | mismatch |
+| `gpt-oss-120b` | `parameters[f].value` | 0.97 | 1.0 | mismatch |
+| `gpt-oss-120b` | `parameters[k a].value` | 0.4 | 0.8 | mismatch |
+| `gpt-oss-120b` | `parameters[q, l/hour/70 kg].value` | 57.1 | 238.0 | mismatch |
+| `gpt-oss-120b` | `parameters[v c, l/70 kg].value` | 42.9 | 111.8 | mismatch |
+| `gpt-oss-120b` | `parameters[v p, l/70 kg]` |  | 275.8 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | metoclopramide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | metoclopramide | unknown | mismatch |
 
 </details>
 

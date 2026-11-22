@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;apomorphine&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/&quot;},{&quot;label&quot;:&quot;Agbo_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Nasser_2024_UPDRS_Part_III&quot;,&quot;label&quot;:&quot;Nasser_2024 \u00b7 UPDRS Part III&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Nasser_2024_UPDRS_Part_III.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Patel_1995_single_pulse_stimulated_dopamine_release&quot;,&quot;label&quot;:&quot;Patel_1995 \u00b7 single pulse stimulated dopamine release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Patel_1995_single_pulse_stimulated_dopamine_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The metabolite apomorphine-sulfate was rejected as an orphan compartment with no structural path from the apomorphine dose.
+> Apomorphine-sulfate has a recorded formation rate, kfm 0.00480 1/h, but zero compartments (n_cmt 0), leaving the metabolite orphaned and the record rejected.
 
 <div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Agbo2021_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="apomorphine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -61,11 +60,11 @@ Agbo F, Crass RL, Chiu YY, Chapel S, Galluppi G, Blum D et al. Population pharma
 
 ### Reviewer guidance
 
-**The metabolite apomorphine-sulfate was rejected as an orphan compartment with no structural path from the apomorphine dose.**
+**Apomorphine-sulfate has a recorded formation rate, kfm 0.00480 1/h, but zero compartments (n_cmt 0), leaving the metabolite orphaned and the record rejected.**
 
-The record defines the metabolite with a value of 0 for its compartment count, which implies no physical compartment exists. Although a metabolic link parameter is defined, the resulting structure leaves the metabolite unreachable from the parent drug. Consequently, the metabolite is treated as an unlinked orphan, failing the structural connectivity requirement. Extracted — apomorphine: CL/F 80.7 L/h, V1/F 438 L, V2/F 1.42 L, kel 1.28 1/h, Frel 0.202, kel 0.613 1/h, kfm 0.0048 1/h, kabs 14.9 h−1.
+The record describes kfm as the first-order rate of formation of apomorphine-sulfate from apomorphine and records a formation link. However, apomorphine-sulfate has no compartments (n_cmt 0), so the metabolite is orphaned despite that link. Extracted — apomorphine: CL/F 80.7 L/h, V1/F 438 L, V2/F 1.42 L, kel 1.28 1/h, Frel 0.202, kel 0.613 1/h, kfm 0.0048 1/h, kabs 14.9 h−1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

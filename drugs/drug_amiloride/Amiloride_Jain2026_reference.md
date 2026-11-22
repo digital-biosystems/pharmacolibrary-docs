@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because apparent clearance and volume parameters were paired with a nasal bioavailability fraction, causing double correction.
+> Apparent parameters for amiloride were incorrectly combined with an explicit bioavailability fraction, causing double correction.
 
 <div class="pk-model-meta" hidden drug="amiloride" model-id="Amiloride_Jain2026_reference" status="rejected" stale="false" population="healthy adults" measured-compound="amiloride" parameterization="apparent" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Jain M, Kumar S, Battaglia M, Davies S, Rower J, Reilly C et al. Population Phar
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=15.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 
@@ -47,9 +47,9 @@ Jain M, Kumar S, Battaglia M, Davies S, Rower J, Reilly C et al. Population Phar
 
 ### Reviewer guidance
 
-**The record was rejected because apparent clearance and volume parameters were paired with a nasal bioavailability fraction, causing double correction.**
+**Apparent parameters for amiloride were incorrectly combined with an explicit bioavailability fraction, causing double correction.**
 
-The model for amiloride in healthy adults includes apparent clearance (19 L/h) and apparent volume (9.83 L), which already incorporate oral bioavailability. Simultaneously, a nasal bioavailability fraction of 0.133 is included, violating the coherence of apparent parameters. The record was built from the abstract alone, so summary statistics stood in for a fitted model. A second reader disagreed on the dose compound and primary analyte, marking them as unknown. Extracted — amiloride: kabs 0.136 h-1, CL/F 19 L/h, V/F 9.83 L, Fab 0.133 uncertainty.
+The record lists apparent clearance (19 L/h) and apparent volume (9.83 L), which already account for bioavailability, alongside a separate absolute bioavailability fraction of 0.133. The abstract-only source provided summary statistics that were treated as a fitted model, leading to incoherent parameter definitions. The second reader disagreed on the presence of all extracted parameter values, noting them as null or unknown in their assessment. Extracted — amiloride: kabs 0.136 h-1, CL/F 19 L/h, V/F 9.83 L, Fab 0.133 uncertainty.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiloride, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

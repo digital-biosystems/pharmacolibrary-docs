@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the second peripheral compartment is structurally unreachable, and its clearance and central volume parameters are mislabeled as belonging to Favipiravir instead of ribavirin.
+> Ribavirin’s peripheral-compartment volume, V2, of 934.2 L was rejected because that compartment has no path from the dose.
 
 <div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Erameh2026_median" status="rejected" stale="false" population="hospitalized adults with mild-to-moderate Lassa fever" measured-compound="ribavirin" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Erameh C, Okwaraeke K, Kleist C, Edeawe O, Adedosu N, Ekata E et al. Favipiravir
 
 ### Reviewer guidance
 
-**The record was rejected because the second peripheral compartment is structurally unreachable, and its clearance and central volume parameters are mislabeled as belonging to Favipiravir instead of ribavirin.**
+**Ribavirin’s peripheral-compartment volume, V2, of 934.2 L was rejected because that compartment has no path from the dose.**
 
-The model structure includes a second compartment (V2 = 934.2 l) that has no path from the dose site, making it an orphan compartment. Additionally, the parameters for clearance (2.7 l/h) and central volume (41.5 l) are explicitly labeled with the compound name 'Favipiravir,' which contradicts the stated drug 'ribavirin.' A second reader disagreed with the record's assignments, noting that the dose compound and primary analyte were unknown and that the parameter values did not align with the expected ribavirin model components. Extracted — ribavirin: CL 2.7 l h−1, V 41.5 l, V2 934 l.
+The record lists no model links, and V2 is defined as the volume of the peripheral compartment, making that compartment unreachable from the dose. The CL and V labels say Favipiravir, although their meanings and recorded compound identify ribavirin; the second reader marked the compound and parameter identities unknown and reported no values for those parameters. Extracted — ribavirin: CL 2.7 l h−1, V 41.5 l, V2 934 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ribavirin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

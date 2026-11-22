@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Dibromomethane&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/&quot;},{&quot;label&quot;:&quot;Posman_2025 \u00b7 final_final_conditions_vfa_mm&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dibromomethane_Posman2025_final&quot;,&quot;label&quot;:&quot;Posman_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_final.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dibromomethane_Posman2025_final_final_conditions_nh3_mg_n_dl&quot;,&quot;label&quot;:&quot;Posman_2025_final_final_conditions_nh3_mg_n_dl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_final_final_conditions_nh3_mg_n_dl.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dibromomethane_Posman2025_final_final_conditions_ph&quot;,&quot;label&quot;:&quot;Posman_2025_final_final_conditions_ph&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_final_final_conditions_ph.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dibromomethane_Posman2025_final_final_conditions_vfa_mm&quot;,&quot;label&quot;:&quot;Posman_2025_final_final_conditions_vfa_mm&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_final_final_conditions_vfa_mm.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dibromomethane_Posman2025_reference&quot;,&quot;label&quot;:&quot;Posman_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dibromomethane_Posman2025_final&quot;,&quot;label&quot;:&quot;Posman_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dibromomethane_Posman2025_final_final_conditions_nh3_mg_n_dl&quot;,&quot;label&quot;:&quot;Posman_2025_final_final_conditions_nh3_mg_n_dl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_final_final_conditions_nh3_mg_n_dl.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dibromomethane_Posman2025_final_final_conditions_ph&quot;,&quot;label&quot;:&quot;Posman_2025_final_final_conditions_ph&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_final_final_conditions_ph.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dibromomethane_Posman2025_final_final_conditions_vfa_mm&quot;,&quot;label&quot;:&quot;Posman_2025_final_final_conditions_vfa_mm&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_final_final_conditions_vfa_mm.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dibromomethane_Posman2025_reference&quot;,&quot;label&quot;:&quot;Posman_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dibromomethane/Dibromomethane_Posman2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Dibromomethane — `Dibromomethane_Posman2025_final_final_conditions_vfa_mm`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Dibromomethane" model-id="Dibromomethane_Posman2025_final_final_conditions_vfa_mm" status="extracted" stale="false" population="in vitro rumen fluid" measured-compound="Dibromomethane" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Dibromomethane" model-id="Dibromomethane_Posman2025_final_final_conditions_vfa_mm" status="simulated" stale="false" population="in vitro rumen fluid" measured-compound="Dibromomethane" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Posman KM, Iacono G, Cartisano CM, Morrison SY, Emerson D, Price NN et al. The antimethanogenic efficacy and fate of bromoform and its transformation products in rumen fluid. Scientific reports 15(1):25171 (2025).
@@ -37,7 +35,7 @@ Posman KM, Iacono G, Cartisano CM, Morrison SY, Emerson D, Price NN et al. The a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +43,11 @@ Posman KM, Iacono G, Cartisano CM, Morrison SY, Emerson D, Price NN et al. The a
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -99,6 +101,21 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C0b_disposition_core | pass |  |
 | C0c_disposition_complete | pass |  |
 | C8_topology | pass |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Dibromomethane) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | skipped | 26 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 775 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 775 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

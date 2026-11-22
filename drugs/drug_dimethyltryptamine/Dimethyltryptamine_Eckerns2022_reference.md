@@ -17,7 +17,7 @@ Eckernäs E, Timmermann C, Carhart-Harris R, Röshammar D, Ashton M. Population 
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = The paper states 13 healthy subjects..
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 7, 14, 18, 20 mg, iv, single.
 

@@ -4,11 +4,11 @@
 
 # fumagillin — `Fumagillin_Laurn1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-07 05:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fumagillin plasma clearance was recorded with mass units (6 mg/kg) instead of a volumetric flow rate, invalidating the pharmacokinetic parameters.
+> Clearance was extracted as 6 mg/kg, a mass unit incompatible with volume per time, and the record was abstract-only.
 
-<div class="pk-model-meta" hidden drug="fumagillin" model-id="Fumagillin_Laurn1989_reference" status="rejected" stale="true" population="yearling rainbow trout" measured-compound="fumagillin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fumagillin" model-id="Fumagillin_Laurn1989_reference" status="rejected" stale="false" population="yearling rainbow trout" measured-compound="fumagillin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Laurén DJ, Wishkovsky A, Groff JM, Hedrick RP, Hinton DE. Toxicity and pharmacokinetics of the antibiotic fumagillin in yearling rainbow trout (Salmo gairdneri). Toxicology and applied pharmacology 98(3):444–453 (1989).
@@ -40,7 +40,7 @@ Laurén DJ, Wishkovsky A, Groff JM, Hedrick RP, Hinton DE. Toxicity and pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Laurén DJ, Wishkovsky A, Groff JM, Hedrick RP, Hinton DE. Toxicity and pharmaco
 
 ### Reviewer guidance
 
-**Fumagillin plasma clearance was recorded with mass units (6 mg/kg) instead of a volumetric flow rate, invalidating the pharmacokinetic parameters.**
+**Clearance was extracted as 6 mg/kg, a mass unit incompatible with volume per time, and the record was abstract-only.**
 
-The total clearance parameter, defined as the proportionality factor relating elimination rate to concentration, is listed as 6 mg/kg, which is a mass unit and dimensionally incompatible. Because the record was constructed from the abstract alone, these summary statistics stand in for a fitted model. Additionally, the second reader disagreed on the specific compound administered and could not extract values for the reported parameters. Extracted — fumagillin: CL 6 mg/kg, λ1 20 min, t1/2β 5.4 days.
+The extracted clearance value of 6 mg/kg is a mass concentration, not a clearance unit, creating a fundamental dimensional conflict. Additionally, the model was constructed solely from the paper's abstract, meaning the summary statistics do not represent a fitted pharmacokinetic model. Extracted — fumagillin: CL 6 mg/kg, λ1 20 min, t1/2β 5.4 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fumagillin dicyclohexylamine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

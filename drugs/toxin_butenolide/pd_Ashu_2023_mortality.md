@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a butenolide PD model or provide an LC50 of 1.56 μg/ml for butenolide, as the text exclusively evaluates the synergistic effects of linseed oil soap on clothianidin and other insecticides against An. gambiae. No pharmacodynamic mechanism or potency parameters for butenolide are stated in the provided excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Ashu_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

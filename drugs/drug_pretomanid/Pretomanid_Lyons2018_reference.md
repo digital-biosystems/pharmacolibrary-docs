@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;pretomanid&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/&quot;},{&quot;label&quot;:&quot;Lyons_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pretomanid_Zou2022_reference&quot;,&quot;label&quot;:&quot;Zou_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Zou2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pretomanid_Nyangwa2026_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Nyangwa_2026_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Nyangwa2026_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abdelwahab_2026_QTcF&quot;,&quot;label&quot;:&quot;Abdelwahab_2026 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Abdelwahab_2026_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ngara_2025_Pretomanid&quot;,&quot;label&quot;:&quot;Ngara_2025 \u00b7 Pretomanid&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Ngara_2025_Pretomanid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pretomanid_Nyangwa2026_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Nyangwa_2026_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Nyangwa2026_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abdelwahab_2026_QTcF&quot;,&quot;label&quot;:&quot;Abdelwahab_2026 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Abdelwahab_2026_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ngara_2025_Pretomanid&quot;,&quot;label&quot;:&quot;Ngara_2025 \u00b7 Pretomanid&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Ngara_2025_Pretomanid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pretomanid — `Pretomanid_Lyons2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:33 UTC (Rejected), but the paper was screened again on 2026-10-13 11:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pretomanid clearance was recorded as 32 percent, but the abstract text describes 4.8 liters/hour, causing a dimension mismatch and rejection.
+> Clearance and volume of distribution were extracted as percentages instead of their pharmacokinetic units, rendering the model structurally invalid.
 
-<div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Lyons2018_reference" status="rejected" stale="true" population="adults with pulmonary tuberculosis" measured-compound="pretomanid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Lyons2018_reference" status="rejected" stale="false" population="adults with pulmonary tuberculosis" measured-compound="pretomanid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lyons MA. Modeling and Simulation of Pretomanid Pharmacokinetics in Pulmonary Tuberculosis Patients. Antimicrobial agents and chemotherapy 62(7) (2018).
@@ -17,7 +17,7 @@ Lyons MA. Modeling and Simulation of Pretomanid Pharmacokinetics in Pulmonary Tu
 
 ## Population and dosing
 
-**Population:** adults with pulmonary tuberculosis · condition pulmonary tuberculosis · age group adult · n = &gt;=70.
+**Population:** adults with pulmonary tuberculosis · condition pulmonary tuberculosis · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Lyons MA. Modeling and Simulation of Pretomanid Pharmacokinetics in Pulmonary Tu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Lyons MA. Modeling and Simulation of Pretomanid Pharmacokinetics in Pulmonary Tu
 
 ### Reviewer guidance
 
-**Pretomanid clearance was recorded as 32 percent, but the abstract text describes 4.8 liters/hour, causing a dimension mismatch and rejection.**
+**Clearance and volume of distribution were extracted as percentages instead of their pharmacokinetic units, rendering the model structurally invalid.**
 
-The record lists pretomanid clearance as 32 percent, while the source text explicitly identifies the value 4.8 liters/hour as a clearance constant. A second reader identified 4.8 as the correct clearance value and noted that the 32 percent assignment was incorrect. The record was held back because it relied on abstract-only data, using summary statistics in place of a fully fitted model. Extracted — pretomanid: allometric_exponent 4.8 liters/h, CL 32 %, V 17 %.
+The record lists clearance as 32% and volume of distribution as 17%, which are dimensionless values rather than rates or volumes. The second reader identifies 4.8 as the clearance value, suggesting the allometric constant was misassigned to the central elimination parameter. Because the data came from the abstract alone, these summary statistics were used as if they were fitted model parameters. Extracted — pretomanid: allometric_exponent 4.8 liters/h, CL 32 %, V 17 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance].value`: this record has 32, the second reading 4.8; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

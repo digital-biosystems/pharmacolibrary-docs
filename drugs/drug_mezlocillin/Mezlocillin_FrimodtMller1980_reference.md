@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;mezlocillin&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/&quot;},{&quot;label&quot;:&quot;Frimodt-M\u00f6ller_1980 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mezlocillin_Jungbluth1989_reference&quot;,&quot;label&quot;:&quot;Jungbluth_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/Mezlocillin_Jungbluth1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mezlocillin_Modr1982_reference&quot;,&quot;label&quot;:&quot;Modr_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/Mezlocillin_Modr1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mezlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/Mezlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mezlocillin_FrimodtMller1980_reference&quot;,&quot;label&quot;:&quot;Frimodt-M\u00f6ller_1980_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/Mezlocillin_FrimodtMller1980_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mezlocillin_Jungbluth1989_reference&quot;,&quot;label&quot;:&quot;Jungbluth_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/Mezlocillin_Jungbluth1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mezlocillin_Modr1982_reference&quot;,&quot;label&quot;:&quot;Modr_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/Mezlocillin_Modr1982_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mezlocillin_FrimodtMller1980_reference&quot;,&quot;label&quot;:&quot;Frimodt-M\u00f6ller_1980_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/Mezlocillin_FrimodtMller1980_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Mezlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mezlocillin/Mezlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The unbound clearance parameter was incorrectly labeled as creatinine clearances with a value of 60 L/h instead of a drug-specific clearance.
+> The record incorrectly assigns creatinine clearances as the unbound clearance for mezlocillin, failing analyte identity and cross-verification.
 
 <div class="pk-model-meta" hidden drug="mezlocillin" model-id="Mezlocillin_FrimodtMller1980_reference" status="rejected" stale="false" population="patients with varying degrees of renal function" measured-compound="mezlocillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Frimodt-Möller N, Maigaard S, Toothaker RD, Bundtzen RW, Brodey MV, Craig WA et
 
 ### Reviewer guidance
 
-**The unbound clearance parameter was incorrectly labeled as creatinine clearances with a value of 60 L/h instead of a drug-specific clearance.**
+**The record incorrectly assigns creatinine clearances as the unbound clearance for mezlocillin, failing analyte identity and cross-verification.**
 
-The record's primary parameter, labeled 'creatinine clearances' with a value of 60 L/h, is a renal biomarker rather than a pharmacokinetic clearance for mezlocillin. This misidentification of the analyte was flagged as the primary reason for rejection, distinguishing the parameter from the drug's elimination process. The record's reliance on abstract-only data meant these summary statistics could not be validated against a fitted model structure. Extracted — mezlocillin: CLu 60 L/h, t1/2z 1.3 h, V 0.32 liter kg(-1).
+The parameter labeled 'creatinine clearances' with a value of 60 L/h is a renal function biomarker, not a drug clearance metric. This mismatch caused the analyte identity check to fail and resulted in a second reader disputing the record's primary findings. Extracted — mezlocillin: CLu 60 L/h, t1/2z 1.3 h, V 0.32 liter kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mezlocillin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -80,6 +80,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- derived CL=11.9435 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Frimodt-Möller_1980_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -130,14 +131,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | mezlocillin (or metabolite) | creatinine clearances | disposition label(s) name a biomarker, not mezlocillin: 'creatinine clearances' |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=mezlocillin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | mezlocillin (or metabolite) | creatinine clearances |  | disposition label(s) name a biomarker, not mezlocillin: 'creatinine clearances' |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=mezlocillin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

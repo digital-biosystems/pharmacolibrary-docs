@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;rivaroxaban&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/&quot;},{&quot;label&quot;:&quot;Ren_2026 \u00b7 japanese_nvaf&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_vte&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_vte&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_vte.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_nvaf.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_pe&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_pe&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_japanese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_japanese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_japanese_nvaf.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_nvaf.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_dvt.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Esmaeili_2022_PT&quot;,&quot;label&quot;:&quot;Esmaeili_2022 \u00b7 PT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/pd_Esmaeili_2022_PT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Esmaeili_2022_aPTT&quot;,&quot;label&quot;:&quot;Esmaeili_2022 \u00b7 aPTT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/pd_Esmaeili_2022_aPTT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Esmaeili_2022_anti_FXa&quot;,&quot;label&quot;:&quot;Esmaeili_2022 \u00b7 anti-FXa&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/pd_Esmaeili_2022_anti_FXa.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_nvaf.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_vte&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_vte&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_vte.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_dvt.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_nvaf.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_pe&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_pe&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_japanese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_japanese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_japanese_nvaf.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Esmaeili_2022_PT&quot;,&quot;label&quot;:&quot;Esmaeili_2022 \u00b7 PT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/pd_Esmaeili_2022_PT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Esmaeili_2022_aPTT&quot;,&quot;label&quot;:&quot;Esmaeili_2022 \u00b7 aPTT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/pd_Esmaeili_2022_aPTT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Esmaeili_2022_anti_FXa&quot;,&quot;label&quot;:&quot;Esmaeili_2022 \u00b7 anti-FXa&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/pd_Esmaeili_2022_anti_FXa.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rivaroxaban — `Rivaroxaban_Ren2026_japanese_nvaf`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Ren2026_japanese_nvaf" status="simulated" stale="false" population="patients with pulmonary embolism" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></div>
+> Cross-check failed because the second reader could not confirm the absorption, clearance, and volume parameters or identify the dose compound.
+
+<div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Ren2026_japanese_nvaf" status="needs_review" stale="false" population="patients with pulmonary embolism" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ren J, Li Y, Zheng X, Wu Z, Shi J, Han X. Population pharmacokinetic and pharmacodynamic analysis of rivaroxaban in real-world patients with pulmonary embolism in China. Research and practice in thrombosis and haemostasis 10(4):106618 (2026).
@@ -15,7 +17,7 @@ Ren J, Li Y, Zheng X, Wu Z, Shi J, Han X. Population pharmacokinetic and pharmac
 
 ## Population and dosing
 
-**Population:** patients with pulmonary embolism · age group adult · n = ; "n_subjects": 187;.
+**Population:** patients with pulmonary embolism · age group adult.
 
 **Dosing:** 5, 20 mg, oral, multiple, every 24 h.
 
@@ -29,6 +31,8 @@ Ren J, Li Y, Zheng X, Wu Z, Shi J, Han X. Population pharmacokinetic and pharmac
 <figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_japanese_nvaf/Rivaroxaban_Ren2026_japanese_nvaf.svg" alt="Rivaroxaban_Ren2026_japanese_nvaf diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Ka (/h) | kabs | 0.617 | /h |
@@ -37,7 +41,7 @@ Ren J, Li Y, Zheng X, Wu Z, Shi J, Han X. Population pharmacokinetic and pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +51,13 @@ Ren J, Li Y, Zheng X, Wu Z, Shi J, Han X. Population pharmacokinetic and pharmac
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Cross-check failed because the second reader could not confirm the absorption, clearance, and volume parameters or identify the dose compound.**
+
+The second reader marked all three extracted parameters (absorption rate constant, clearance, and central volume) as unknown, disagreeing with the recorded values. Additionally, the dose compound and primary analyte were identified as unknown by the second reader. These disagreements resulted in a 0.2 agreement score, causing the cross-check to be disputed. Extracted — rivaroxaban: kabs 0.617 /h, CL/F 4.72 L/h, V/F 42.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -142,15 +148,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=rivaroxaban) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=rivaroxaban) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

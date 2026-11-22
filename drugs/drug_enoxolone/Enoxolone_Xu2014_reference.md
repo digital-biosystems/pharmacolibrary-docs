@@ -4,11 +4,11 @@
 
 # enoxolone — `Enoxolone_Xu2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
-> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-07 13:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The enoxolone model was rejected because metabolite compartments 3MGA and GAM are orphaned, lacking a defined input from the parent drug.
+> The record was rejected because it assigns 3MGA a formation clearance (CLfm) of 737 L/h, although 3MGA is disconnected from measured enoxolone.
 
-<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Xu2014_reference" status="rejected" stale="true" population="virtual elderly population" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Xu2014_reference" status="rejected" stale="false" population="virtual elderly population" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Xu R, Liu X, Yang J. A semi-physiologically based pharmacokinetic pharmacodynamic model for glycyrrhizin-induced pseudoaldosteronism and prediction of the dose limit causing hypokalemia in a virtual elderly population. PloS one 9(12):e114049 (2014).
@@ -51,7 +51,7 @@ Xu R, Liu X, Yang J. A semi-physiologically based pharmacokinetic pharmacodynami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,11 +61,11 @@ Xu R, Liu X, Yang J. A semi-physiologically based pharmacokinetic pharmacodynami
 
 ### Reviewer guidance
 
-**The enoxolone model was rejected because metabolite compartments 3MGA and GAM are orphaned, lacking a defined input from the parent drug.**
+**The record was rejected because it assigns 3MGA a formation clearance (CLfm) of 737 L/h, although 3MGA is disconnected from measured enoxolone.**
 
-The extracted structure defines 3MGA as formed from glycyrrhizin and GAM as formed from enoxolone, but the links only connect 3MGA to 3MGA and GAM back to enoxolone. This leaves the metabolite compartments unreachable from the dose, meaning no metabolic flux enters them from the administered drug. Extracted — glycyrrhizin (GL): k12 20 1/h, k21 0.46 1/h, Vmax 9, Km 0.0014; enoxolone: fu 0.006, fu_tissue 0.012; 3MGA: CLfm 737 L/h; glycyrrhetic acid (GA; enoxolone): Kp 0.14, kfm 0.29 1/h, CL 431 L/h, kabs 0.13 1/h.
+The recorded link from glycyrrhizin to 3MGA does not connect that metabolite to measured glycyrrhetic acid; the glycyrrhetic-acid branch instead links to GAM. All listed metabolites have zero compartments, and the findings identify an unreachable or orphan metabolite. Extracted — glycyrrhizin (GL): k12 20 1/h, k21 0.46 1/h, Vmax 9, Km 0.0014; enoxolone: fu 0.006, fu_tissue 0.012; 3MGA: CLfm 737 L/h; glycyrrhetic acid (GA; enoxolone): Kp 0.14, kfm 0.29 1/h, CL 431 L/h, kabs 0.13 1/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

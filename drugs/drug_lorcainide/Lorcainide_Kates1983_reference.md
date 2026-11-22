@@ -16,7 +16,7 @@ Kates RE, Keefe DL, Winkle RA. Lorcainide disposition kinetics in arrhythmia pat
 
 ## Population and dosing
 
-**Population:** patients with ventricular arrhythmias · condition ventricular arrhythmias · age group adult · n = &gt;=14.
+**Population:** patients with ventricular arrhythmias · condition ventricular arrhythmias · age group adult.
 
 **Dosing:** 100, 200 mg, iv, single.
 
@@ -37,7 +37,7 @@ Kates RE, Keefe DL, Winkle RA. Lorcainide disposition kinetics in arrhythmia pat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Kates RE, Keefe DL, Winkle RA. Lorcainide disposition kinetics in arrhythmia pat
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V), so that value has no SI equivalent. Extracted — lorcainide: CL 14.5 mL/min/kg, V 5.51 1/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[vd].value`: this record has 5.51, the second reading 6.33. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[vd].value`: this record has 5.51, the second reading 6.33. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -88,13 +88,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.833 (5/6 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[vd].value` | 5.51 | 6.33 | mismatch |
+| `gpt-oss-120b` | `parameters[vd].value` | 5.51 | 6.33 | mismatch |
 
 </details>
 

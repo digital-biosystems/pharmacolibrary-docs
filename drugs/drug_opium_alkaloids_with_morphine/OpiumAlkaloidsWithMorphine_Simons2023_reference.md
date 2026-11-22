@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Model held back because opium alkaloids with morphine clearance and volume of distribution lacked extracted values, forcing use of library placeholders.
+> Oliceridine parameters were mistakenly applied to opium alkaloids with morphine, leaving the latter's clearance and volume undefined.
 
 <div class="pk-model-meta" hidden drug="opium alkaloids with morphine" model-id="OpiumAlkaloidsWithMorphine_Simons2023_reference" status="model_quarantined" stale="false" population="older volunteers" measured-compound="oliceridine, morphine, morphine-6-glucuronide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -16,7 +16,7 @@ Simons P, van der Schrier R, van Lemmen M, Jansen S, Kuijpers KWK, van Velzen M 
 
 ## Population and dosing
 
-**Population:** older volunteers · condition healthy · age group elderly · n = &gt;= 0.
+**Population:** older volunteers · condition healthy · age group elderly.
 
 **Dosing:** 0.5, 2 mg, iv, single.
 
@@ -59,9 +59,9 @@ Simons P, van der Schrier R, van Lemmen M, Jansen S, Kuijpers KWK, van Velzen M 
 
 ### Reviewer guidance
 
-**Model held back because opium alkaloids with morphine clearance and volume of distribution lacked extracted values, forcing use of library placeholders.**
+**Oliceridine parameters were mistakenly applied to opium alkaloids with morphine, leaving the latter's clearance and volume undefined.**
 
-All seven extracted parameters, including clearance and three volume terms, are explicitly assigned to oliceridine, not the parent drug. Consequently, no explicit estimates existed for opium alkaloids with morphine, so default values were used instead of fitted data. The record also defines a metabolism link from morphine to morphine-6-glucuronide, which the second reader disagrees with. Extracted — oliceridine: V1 1.1 L/70 kg, V2 5.6 L/70 kg, V3 45.3 L/70 kg, CL 33.1 L/h, Q 22.8 L/h, Q2 27.6 L/h, D1 1 min.
+The record lists seven pharmacokinetic parameters explicitly assigned to oliceridine, yet the drug is identified as opium alkaloids with morphine. Consequently, the clearance and volume of distribution for the actual drug remained at library placeholders. A second reader also disputed the metabolic link from morphine to morphine-6-glucuronide, failing to agree with the extracted topology. Extracted — oliceridine: V1 1.1 L/70 kg, V2 5.6 L/70 kg, V3 45.3 L/70 kg, CL 33.1 L/h, Q 22.8 L/h, Q2 27.6 L/h, D1 1 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has oliceridine or morphine, the second reading morphine; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -181,16 +181,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['Q2'] |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 44 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 214 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['Q2'] |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.056, 0 of 1 reader(s) agree | 0.056 | cross-check disputed by a second reader: verdict disputed, agreement 0.056, 0 of 1 reader(s) agree |
+| T1_t_half_terminal | reference | skipped | 44 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 214 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -208,30 +209,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Simons2023_reference/OpiumAlkaloidsWithMorphine_Simons2023_reference_matlab.zip" download>OpiumAlkaloidsWithMorphine_Simons2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Simons2023_reference/OpiumAlkaloidsWithMorphine_Simons2023_reference_matlab_simbio.zip" download>OpiumAlkaloidsWithMorphine_Simons2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Simons2023_reference/OpiumAlkaloidsWithMorphine_Simons2023_reference_sbml.zip" download>OpiumAlkaloidsWithMorphine_Simons2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Simons2023_reference/OpiumAlkaloidsWithMorphine_Simons2023_reference_cellml.zip" download>OpiumAlkaloidsWithMorphine_Simons2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Simons P, van der Schrier R, van Lemmen M, Jansen S, Kuijpers KWK, van Velzen M et al. Respiratory Effects of Biased Ligand Oliceridine in Older Volunteers: A Pharmacokinetic-Pharmacodynamic Comparison with Morphine. Anesthesiology 138(3):249–263 (2023). [doi:10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473)
-
-**This record:** Pharmacolibrary, model `OpiumAlkaloidsWithMorphine_Simons2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Simons2023_reference>
-
-```bibtex
-@misc{pharmacolibrary_OpiumAlkaloidsWithMorphineSimons2023reference,
-  title  = {{Pharmacolibrary model OpiumAlkaloidsWithMorphine_Simons2023_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Simons2023_reference},
-  note   = {Parameters from doi:10.1097/ALN.0000000000004473},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxymorphone&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/&quot;},{&quot;label&quot;:&quot;Sadiq_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxymorphone_Noh2017_reference&quot;,&quot;label&quot;:&quot;Noh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Noh2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_reference&quot;,&quot;label&quot;:&quot;Sadiq_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxymorphone_Svensson2017_reference&quot;,&quot;label&quot;:&quot;Svensson_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Svensson2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sadiq_2013_TFL&quot;,&quot;label&quot;:&quot;Sadiq_2013 \u00b7 TFL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/pd_Sadiq_2013_TFL.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_reference&quot;,&quot;label&quot;:&quot;Sadiq_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxymorphone_Noh2017_reference&quot;,&quot;label&quot;:&quot;Noh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Noh2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Svensson2017_reference&quot;,&quot;label&quot;:&quot;Svensson_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Svensson2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sadiq_2013_TFL&quot;,&quot;label&quot;:&quot;Sadiq_2013 \u00b7 TFL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/pd_Sadiq_2013_TFL.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The oxymorphone model predicts a terminal half-life of 1.04 h, conflicting with the paper's 0.233 h, while bioavailability F lacked a paper-specific value.
+> Oxymorphone model terminal half-life (1.04 h) exceeded paper value (0.233 h) and bioavailability defaulted.
 
 <div class="pk-model-meta" hidden drug="oxymorphone" model-id="Oxymorphone_Sadiq2013_reference" status="needs_review" stale="false" population="male Sprague-Dawley rats" measured-compound="oxymorphone" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Sadiq MW, Boström E, Keizer R, Björkman S, Hammarlund-Udenaes M. Oxymorphone a
 
 ## Population and dosing
 
-**Population:** male Sprague-Dawley rats · condition healthy · n = $17$ subjects total (8 PKPD, 9 antinociceptive only).
+**Population:** male Sprague-Dawley rats · condition healthy.
 
 **Dosing:** 21 mg, iv, single.
 
@@ -56,9 +56,9 @@ Sadiq MW, Boström E, Keizer R, Björkman S, Hammarlund-Udenaes M. Oxymorphone a
 
 ### Reviewer guidance
 
-**The oxymorphone model predicts a terminal half-life of 1.04 h, conflicting with the paper's 0.233 h, while bioavailability F lacked a paper-specific value.**
+**Oxymorphone model terminal half-life (1.04 h) exceeded paper value (0.233 h) and bioavailability defaulted.**
 
-The predicted terminal half-life of 1.04 h deviates significantly from the reported 0.233 h, with a ratio of 4.4771. Parameters F and Tlag were not extracted from the paper, forcing the use of library placeholder values that are unsupported by the source data. The model builder reported deviations for parameters F and Tlag that were adjudicated as not acceptable. Additionally, there is a discrepancy in the absorption rate constant and central volume of distribution values compared to a second reader's assessment. Extracted — oxymorphone: CL 54.5 mL/min, V 1.19e+03 mL, Q 5.74 mL/min, fu 0.49, Kp 1.87, kabs 15.3 h−1.
+The model simulated a terminal half-life of 1.04 hours, compared to the paper's 0.233 hours, with a ratio of 4.4771. Bioavailability (F) and lag time were not extracted and used library defaults. A second reader disputed the record, disagreeing on the absorption rate constant and central volume. Extracted — oxymorphone: CL 54.5 mL/min, V 1.19e+03 mL, Q 5.74 mL/min, fu 0.49, Kp 1.87, kabs 15.3 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of rec brain: this record has none, the second reading 11; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -169,7 +169,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=oxymorphone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
 | T1_t_half_alpha | reference | skipped | 14.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | fail | 0.2333 | 1.045 | 4.477 | min→SI vs simulated h |
 

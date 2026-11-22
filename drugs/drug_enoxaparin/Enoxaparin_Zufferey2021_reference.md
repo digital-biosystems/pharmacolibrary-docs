@@ -17,7 +17,7 @@ Zufferey PJ, Dupont A, Lanoiselée J, Bauters A, Poissy J, Goutay J et al. Pharm
 
 ## Population and dosing
 
-**Population:** critically ill patients with COVID-19 · condition COVID-19 · age group adult · n = &gt;=95.
+**Population:** critically ill patients with COVID-19 · condition COVID-19 · age group adult.
 
 **Dosing:** 0.5, 1, 30, 40, 60 mg, sc, multiple, every 12 h.
 
@@ -37,7 +37,7 @@ Zufferey PJ, Dupont A, Lanoiselée J, Bauters A, Poissy J, Goutay J et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Zufferey PJ, Dupont A, Lanoiselée J, Bauters A, Poissy J, Goutay J et al. Pharm
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — enoxaparin: kabs 0.48 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has enoxaparin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has enoxaparin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -129,16 +129,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | enoxaparin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | enoxaparin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | enoxaparin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | enoxaparin | unknown | mismatch |
 
 </details>
 

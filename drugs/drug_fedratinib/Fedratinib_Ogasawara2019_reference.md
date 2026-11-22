@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Fedratinib's volume of distribution was left at defaults, quarantining the model.
+> Fedratinib's volume of distribution lacked a specific value, forcing a library placeholder that prevented publication.
 
 <div class="pk-model-meta" hidden drug="fedratinib" model-id="Fedratinib_Ogasawara2019_reference" status="model_quarantined" stale="false" population="adults with myelofibrosis, polycythemia vera, or essential thrombocythemia" measured-compound="fedratinib" parameterization="apparent" topology="1C"></div>
 
@@ -57,9 +57,9 @@ Ogasawara K, Zhou S, Krishna G, Palmisano M, Li Y. Population pharmacokinetics o
 
 ### Reviewer guidance
 
-**Fedratinib's volume of distribution was left at defaults, quarantining the model.**
+**Fedratinib's volume of distribution lacked a specific value, forcing a library placeholder that prevented publication.**
 
-The record lacks an explicit value for fedratinib's volume of distribution, forcing the use of a placeholder. Additionally, covariate scenarios were not simulated, meaning the defined covariate effects were not exercised. These omissions resulted in the model being held back from publication. Extracted — fedratinib: CL/F 13 L/h, V2/F 311 L, Q/F 45.2 L/h, V3/F 1.46e+03 L, kabs 1.57 h−1, tlag 0.265 h.
+The record's volume of distribution parameter was left without an extracted value, so a generic library default stood in for the actual estimate. This absence caused the model to be held back rather than published with an invented number. Additionally, a second reader disagreed with the extracted values for the central volume of distribution and the weight covariate effect. Extracted — fedratinib: CL/F 13 L/h, V2/F 311 L, Q/F 45.2 L/h, V3/F 1.46e+03 L, kabs 1.57 h−1, tlag 0.265 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of pv on cl/fb: this record has none, the second reading 1.54; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -176,14 +176,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.647, 0 of 1 reader(s) agree | 0.647 | cross-check disputed by a second reader: verdict disputed, agreement 0.647, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

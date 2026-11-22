@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Olmesartan medoxomil's clearance, volume, absorption rate, and lag time were missing, leaving placeholders that prevented publication.
+> Olmesartan medoxomil's clearance, volume of distribution, absorption rate constant, and lag time were left at defaults, quarantining the model.
 
 <div class="pk-model-meta" hidden drug="olmesartan medoxomil" model-id="OlmesartanMedoxomil_Kodati2017_reference" status="model_quarantined" stale="false" population="patients with hypertension" measured-compound="olmesartan" parameterization="apparent" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Kodati D, Kotakonda HK, Yellu N. Population Pharmacokinetic Modeling of Olmesart
 
 ## Population and dosing
 
-**Population:** patients with hypertension · condition hypertension · age group adult · n = &gt;=69.
+**Population:** patients with hypertension · condition hypertension · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed olmesartan_medoxomil, measured olmesartan.
 
@@ -47,9 +47,9 @@ Kodati D, Kotakonda HK, Yellu N. Population Pharmacokinetic Modeling of Olmesart
 
 ### Reviewer guidance
 
-**Olmesartan medoxomil's clearance, volume, absorption rate, and lag time were missing, leaving placeholders that prevented publication.**
+**Olmesartan medoxomil's clearance, volume of distribution, absorption rate constant, and lag time were left at defaults, quarantining the model.**
 
-The record contains apparent clearance and volume values for the metabolite olmesartan, but no parameters for the parent drug olmesartan medoxomil. Absorption parameters were also left at library defaults. The second reader could not confirm the reported parameter values or identify the dose compound. Extracted — olmesartan medoxomil: CLm/F 0.316 L/h, Vm/F 44.5 L.
+The record lists no values for these four pharmacokinetic parameters, causing the model to rely on placeholder values rather than estimates from the study. Because only the paper's abstract was analyzed, summary statistics were used in place of a fitted model, further limiting the data available for these parameters. Additionally, a second reader disputed the extracted values for the metabolite's clearance and volume, noting they were missing or inconsistent in their reading. Extracted — olmesartan medoxomil: CLm/F 0.316 L/h, Vm/F 44.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olmesartan_medoxomil, the second reading olmesartan medoxomil; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -123,14 +123,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sunitinib&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/&quot;},{&quot;label&quot;:&quot;Valderrama_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sunitinib_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sunitinib_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sunitinib bioavailability, clearance, volume of distribution, and absorption lag time are missing from the model record.
+> Sunitinib bioavailability, clearance, volume of distribution, and lag time lacked values, while 5-fluorouracil parameters caused cross-check failure.
 
 <div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Valderrama2025_reference" status="model_quarantined" stale="false" population="patients receiving sunitinib" measured-compound="sunitinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -49,9 +49,9 @@ Valderrama D, Teplytska O, Koltermann LM, Trunz E, Schmulenson E, Fritsch A et a
 
 ### Reviewer guidance
 
-**Sunitinib bioavailability, clearance, volume of distribution, and absorption lag time are missing from the model record.**
+**Sunitinib bioavailability, clearance, volume of distribution, and lag time lacked values, while 5-fluorouracil parameters caused cross-check failure.**
 
-The extracted parameters for clearance and volume of distribution belong to 5-fluorouracil, not the studied drug sunitinib. No valid values were extracted for sunitinib's bioavailability, clearance, volume of distribution, or absorption lag time. Consequently, these parameters were left at library defaults rather than using specific estimates for the sunitinib model. Extracted — 5-fluorouracil: CL 223 L/h, V 46.1 L; sunitinib: kabs 13.9 h−1.
+The record assigned clearance of 223 L/h and volume of 46.1 L to 5-fluorouracil instead of sunitinib, creating a mismatch with the intended population. Sunitinib’s bioavailability, clearance, volume, and lag time were not estimated, forcing the use of placeholder values. A second reader disagreed on parameter assignments, resulting in 0 of 1 readers agreeing and preventing model publication. Extracted — 5-fluorouracil: CL 223 L/h, V 46.1 L; sunitinib: kabs 13.9 h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has none, the second reading 223; it also differs on 4 more fields. That field does not shape the model.
 
@@ -128,13 +128,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check agreement 0.444 is below 0.5: verdict partial, agreement 0.444, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,30 +153,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference/Sunitinib_Valderrama2025_reference_matlab.zip" download>Sunitinib_Valderrama2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference/Sunitinib_Valderrama2025_reference_matlab_simbio.zip" download>Sunitinib_Valderrama2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference/Sunitinib_Valderrama2025_reference_sbml.zip" download>Sunitinib_Valderrama2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference/Sunitinib_Valderrama2025_reference_cellml.zip" download>Sunitinib_Valderrama2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Valderrama D, Teplytska O, Koltermann LM, Trunz E, Schmulenson E, Fritsch A et al. Comparing Scientific Machine Learning With Population Pharmacokinetic and Classical Machine Learning Approaches for Prediction of Drug Concentrations. CPT: pharmacometrics & systems pharmacology 14(4):759-769 (2025). [doi:10.1002/psp4.13313](https://doi.org/10.1002/psp4.13313)
-
-**This record:** Pharmacolibrary, model `Sunitinib_Valderrama2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_SunitinibValderrama2025reference,
-  title  = {{Pharmacolibrary model Sunitinib_Valderrama2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference},
-  note   = {Parameters from doi:10.1002/psp4.13313},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

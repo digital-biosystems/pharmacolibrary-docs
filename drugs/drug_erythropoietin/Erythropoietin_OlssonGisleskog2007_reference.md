@@ -16,7 +16,7 @@ Olsson-Gisleskog P, Jacqmin P, Perez-Ruixo JJ. Population pharmacokinetics meta-
 
 ## Population and dosing
 
-**Population:** healthy subjects · condition healthy · age group adult · n = , 534.
+**Population:** healthy subjects · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed recombinant human erythropoietin, measured erythropoietin.
 
@@ -36,7 +36,7 @@ Olsson-Gisleskog P, Jacqmin P, Perez-Ruixo JJ. Population pharmacokinetics meta-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Olsson-Gisleskog P, Jacqmin P, Perez-Ruixo JJ. Population pharmacokinetics meta-
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — erythropoietin: V 6 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has none, the second reading 30; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 30; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -94,17 +94,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` |  | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability of subcutaneous rhuepo]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dose]` |  | 160 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[subcutaneous bioavailability]` |  | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total clearance]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of subcutaneous rhuepo]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` |  | 160 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[subcutaneous bioavailability]` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clearance]` |  |  | only_one_extracted |
 
 </details>
 

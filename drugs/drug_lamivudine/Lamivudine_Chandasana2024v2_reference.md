@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Lamivudine record refused because intercompartmental clearance and lag time were left at placeholder defaults rather than using specific estimates.
+> Lamivudine’s k12 has no reported value and was left to library defaults, so this record was held back.
 
 <div class="pk-model-meta" hidden drug="lamivudine" model-id="Lamivudine_Chandasana2024v2_reference" status="needs_review" stale="false" population="virologically suppressed adults living with HIV-1" measured-compound="lamivudine" parameterization="apparent" topology="2C"></div>
 
@@ -65,13 +65,13 @@ Chandasana H, Singh R, Adkison K, Ait-Khaled M, Pene Dumitrescu T. Population ph
 
 ### Reviewer guidance
 
-**Lamivudine record refused because intercompartmental clearance and lag time were left at placeholder defaults rather than using specific estimates.**
+**Lamivudine’s k12 has no reported value and was left to library defaults, so this record was held back.**
 
-The intercompartmental clearance and lag time were not extracted from the study, causing the model to use library placeholders. The defined weight, bilirubin, and ethnicity covariates were not simulated, leaving the impact of these factors on clearance unverified. Extracted — lamivudine: CL/F 0.858 L/h, V/F 16.7 L, kabs 2.15 h−1, V2/F 105 L, Q/F 2.97 L/h.
+K12 use library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Tlag was also defaulted, and the model builder assumed F=1 and Fm=1 with no molar correction. The covariate scenarios were not simulated: the base model was simulated, not the covariate effects the record defines. A second reader disputed the verdict (agreement 0.941) over whether the dose compound was dolutegravir/lamivudine or its fixed-dose combination (50 mg dolutegravir, 300 mg lamivudine). Extracted — lamivudine: CL/F 0.858 L/h, V/F 16.7 L, kabs 2.15 h−1, V2/F 105 L, Q/F 2.97 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dolutegravir/lamivudine, the second reading dolutegravir/lamivudine fixed‑dose combination (50 mg dolutegravir, 300 mg lamivudine). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -194,18 +194,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=lamivudine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 13 | 2.609e-08 | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 13 | 2.609e-08 | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 22 | 2.609e-08 | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=lamivudine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.941, 0 of 1 reader(s) agree | 0.941 | cross-check disputed by a second reader: verdict disputed, agreement 0.941, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 13 | 2.609e-08 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 13 | 2.609e-08 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 22 | 2.609e-08 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

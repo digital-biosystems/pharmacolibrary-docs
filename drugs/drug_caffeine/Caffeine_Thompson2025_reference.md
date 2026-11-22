@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;caffeine&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/&quot;},{&quot;label&quot;:&quot;Thompson_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caffeine_Guo2020_reference&quot;,&quot;label&quot;:&quot;Guo_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/Caffeine_Guo2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Caffeine_Thompson2025_reference&quot;,&quot;label&quot;:&quot;Thompson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/Caffeine_Thompson2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caffeine_Guo2020_reference&quot;,&quot;label&quot;:&quot;Guo_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/Caffeine_Guo2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Caffeine_Thompson2025_reference&quot;,&quot;label&quot;:&quot;Thompson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caffeine/Caffeine_Thompson2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # caffeine — `Caffeine_Thompson2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Thompson2025_reference" status="simulated" stale="false" population="term infants with hypoxic-ischemic encephalopathy" measured-compound="caffeine" parameterization="mechanistic" topology="1C"></div>
+> Caffeine clearance and volume of distribution parameters were disputed by the second reader, who could not confirm their identity in the abstract-only record.
+
+<div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Thompson2025_reference" status="needs_review" stale="false" population="term infants with hypoxic-ischemic encephalopathy" measured-compound="caffeine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Thompson EJ, Gonzalez D, Dumond J, Hornik CP, Kilborn A, Laughon MM et al. Population Pharmacokinetics of Caffeine in Infants with Hypoxic-Ischemic Encephalopathy: A Phase I, Dose-Escalating Trial. Journal of clinical pharmacology 65(7):933–943 (2025).
@@ -15,7 +17,7 @@ Thompson EJ, Gonzalez D, Dumond J, Hornik CP, Kilborn A, Laughon MM et al. Popul
 
 ## Population and dosing
 
-**Population:** term infants with hypoxic-ischemic encephalopathy · age group infant · n = :.
+**Population:** term infants with hypoxic-ischemic encephalopathy · age group infant.
 
 ## Model
 
@@ -27,6 +29,8 @@ Thompson EJ, Gonzalez D, Dumond J, Hornik CP, Kilborn A, Laughon MM et al. Popul
 <figure class="pk-models-diagram"><img src="drugs/drug_caffeine/Caffeine_Thompson2025_reference/Caffeine_Thompson2025_reference.svg" alt="Caffeine_Thompson2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | population clearance | CL | 0.445 | L/h/70 kg |
@@ -34,7 +38,7 @@ Thompson EJ, Gonzalez D, Dumond J, Hornik CP, Kilborn A, Laughon MM et al. Popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Thompson EJ, Gonzalez D, Dumond J, Hornik CP, Kilborn A, Laughon MM et al. Popul
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Caffeine clearance and volume of distribution parameters were disputed by the second reader, who could not confirm their identity in the abstract-only record.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The review relied solely on the paper's abstract, using reported summary statistics in place of a fitted model. The second reader disagreed on the identity of the dose and analyte, identifying them as unknown rather than caffeine. Consequently, the second reader could not confirm the extracted population clearance of 0.445 L/h/70 kg or the volume of distribution of 87.1 L/70 kg. Extracted — caffeine: CL 0.445 L/h/70 kg, V 87.1 L/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has caffeine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -120,14 +124,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=caffeine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=caffeine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

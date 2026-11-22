@@ -16,7 +16,7 @@ Dunbar JL, Turncliff RZ, Hayes SC, Farrell CB. Population pharmacokinetics of ex
 
 ## Population and dosing
 
-**Population:** patients with alcohol dependence · condition alcohol dependence · age group adult · n = &gt;=453.
+**Population:** patients with alcohol dependence · condition alcohol dependence · age group adult.
 
 ## Model
 

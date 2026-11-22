@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism by which ethyl_ether concentrations affect alkaline serine protease activity, nor does it state any key potency or rate values such as IC50, EC50, Imax, kin, kout, or ke0.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Lee_1997`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

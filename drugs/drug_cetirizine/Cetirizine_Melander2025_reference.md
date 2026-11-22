@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 3.06e-05, model 1.53e-05).
+> The model simulated cetirizine peak concentration (1.53e-05) does not match the paper's reported Cmax (3.06e-05).
 
 <div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Melander2025_reference" status="needs_review" stale="false" population="breastfeeding women" measured-compound="cetirizine" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Melander E, Nielsen EI, Lindqvist A, Hovd M, Gandia P, Panchaud A et al. Populat
 
 ## Population and dosing
 
-**Population:** breastfeeding women · condition healthy · age group adult · n = &gt;=35.
+**Population:** breastfeeding women · condition healthy · age group adult.
 
 **Dosing:** 5, 10, 20 mg, oral, multiple, every 24 h.
 
@@ -53,13 +53,13 @@ Melander E, Nielsen EI, Lindqvist A, Hovd M, Gandia P, Panchaud A et al. Populat
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 3.06e-05, model 1.53e-05).**
+**The model simulated cetirizine peak concentration (1.53e-05) does not match the paper's reported Cmax (3.06e-05).**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — cetirizine: kabs 0.095 h−1, CLm/F 25.2 L/h, Vm/F 19.9 L, tmax 2.53 h, Cmax 30.6 μg/L.
+The simulated peak concentration is approximately half the expected value, indicating a significant discrepancy. Additionally, a required unit conversion failed, leaving a parameter without an SI value. The model also relied on apparent parameterization and default assumptions for lag time rather than explicit estimates. Extracted — cetirizine: kabs 0.095 h−1, CLm/F 25.2 L/h, Vm/F 19.9 L, tmax 2.53 h, Cmax 30.6 μg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading cetirizine or levocetirizine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -149,6 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 3.06e-05 | 1.528e-05 | 0.4992 | μg/l→SI vs simulated kg/m3 |
 | T1_tmax | reference | pass | 2.53 | 2.315 | 0.9149 | h→SI vs simulated h |
 

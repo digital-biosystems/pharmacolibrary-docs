@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;Cilgavimab&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/&quot;},{&quot;label&quot;:&quot;Jansen_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilgavimab_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilgavimab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilgavimab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilgavimab_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model for cilgavimab was rejected because the peripheral compartment is an orphan with no defined connection to the central compartment.
+> The cilgavimab record was rejected for an unreachable compartment or unlinked metabolite, despite reporting total clearance of 13.7 mL/h.
 
 <div class="pk-model-meta" hidden drug="Cilgavimab" model-id="Cilgavimab_Jansen2026_reference" status="rejected" stale="false" population="" measured-compound="cilgavimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Jansen E, Bockstal V, Herschke F, Olsson Gisleskog P, Rinaldi M, Boerboom A et a
 
 ### Reviewer guidance
 
-**The model for cilgavimab was rejected because the peripheral compartment is an orphan with no defined connection to the central compartment.**
+**The cilgavimab record was rejected for an unreachable compartment or unlinked metabolite, despite reporting total clearance of 13.7 mL/h.**
 
-The two-compartment structure lists a peripheral volume of 4730 mL but omits the inter-compartmental clearance required to link it to the central volume of 3620 mL. Without this parameter, the peripheral compartment is unreachable from the dose site. The rejection is based on this structural flaw, as no values were provided for the missing connectivity parameter. Extracted — cilgavimab: CL 13.7 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
+The finding means a compartment or metabolite has no path from the dose; it does not specify which. The record also reports central and peripheral distribution volumes of 3620.0 mL and 4730.0 mL, while the second reader reported no values for these parameters or the clearance, and also disagreed on two other extracted values, 1.77 and 15.4. Extracted — cilgavimab: CL 13.7 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 13.7, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The tigecycline volume of distribution parameter was extracted as 364 mL, a value physiologically implausibly small for a distribution volume.
+> Tigecycline’s reported distribution volume of 364.0 mL is implausibly small, so the record was rejected for a likely unit/scale extraction error.
 
 <div class="pk-model-meta" hidden drug="tigecycline" model-id="Tigecycline_Luo2023_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="tigecycline" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,11 +50,11 @@ Luo X, Wang S, Li D, Wen J, Sun N, Fan G. Population pharmacokinetics of tigecyc
 
 ### Reviewer guidance
 
-**The tigecycline volume of distribution parameter was extracted as 364 mL, a value physiologically implausibly small for a distribution volume.**
+**Tigecycline’s reported distribution volume of 364.0 mL is implausibly small, so the record was rejected for a likely unit/scale extraction error.**
 
-The record lists the volume of distribution (V) for tigecycline with a value of 364.0 mL. The review flagged this magnitude as outside the physiological window, suggesting an extraction error in scale or units. No other parameters or findings were detailed in the provided facts. Extracted — tigecycline: CL 8.75 L/h, Q2 54.7 L/h, V 364 mL.
+The record reports a volume of distribution of 364.0 mL, total clearance of 8.75 L/h, and intercompartmental clearance of 54.7 L/h. The review found the clearance/volume magnitude outside the physiological window and attributed it to a likely unit/scale extraction error. Extracted — tigecycline: CL 8.75 L/h, Q2 54.7 L/h, V 364 mL.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -4,11 +4,11 @@
 
 # lidocaine — `Lidocaine_Kim2021_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 14:37 UTC (Rejected), but the paper was screened again on 2026-10-06 03:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. C5 dimension mismatch on a structural parameter; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
+> Lidocaine's Vmax and Km use substance-based units, conflicting with their defined mass dimensions.
 
-<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_estimate" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_estimate" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Metabolite Pharmacokinetics in Hyaluronic Acid Injection. Pharmaceutics 13(2) (2021).
@@ -50,7 +50,7 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,13 +60,13 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**C5 dimension mismatch on a structural parameter; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
+**Lidocaine's Vmax and Km use substance-based units, conflicting with their defined mass dimensions.**
 
-A reported unit could not be converted (MTT, Vmax and Km), so that value has no SI equivalent. Extracted — lidocaine: kabs 5.92 h−1, V1/F 2.57 L, V2/F 0.07 L, Q/F 0.13 L/h, FR 0.373, MTT 0.64 h, Vmax 4.24e+05 nmol/h, Km 1.37e+05 nmol/L; monoethylglycylxylidide: kabs 1.67 h−1, CL/F 14.9 L/h, fm 0.65; glycylxylidide: CL/F 1.09 L/h, fm 0.47.
+The parameter Vmax is reported as 423962.94 nmol/h and Km as 136808.67 nmol/L, which are substance units. However, their underlying definitions require mass dimensions, creating a structural dimension mismatch. Additionally, the clearance and volume values are outside the expected physiological range, indicating a likely unit or scale extraction error. Extracted — lidocaine: kabs 5.92 h−1, V1/F 2.57 L, V2/F 0.07 L, Q/F 0.13 L/h, FR 0.373, MTT 0.64 h, Vmax 4.24e+05 nmol/h, Km 1.37e+05 nmol/L; monoethylglycylxylidide: kabs 1.67 h−1, CL/F 14.9 L/h, fm 0.65; glycylxylidide: CL/F 1.09 L/h, fm 0.47.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -148,23 +148,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (11/22 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.5 (11/22 fields) | 11 |
 
 <details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['megx', 'gx', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[clm1/f]` |  | 14.94 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clm1/f]` | 14.94 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clm2/f]` |  | 1.09 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clm2/f]` | 1.09 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fm1]` |  | 0.65 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fm1]` | 0.65 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fm2]` |  | 0.47 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fm2]` | 0.47 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka2]` | 1.67 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ntr]` |  | 4.97 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['megx', 'gx', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[clm1/f]` |  | 14.94 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm1/f]` | 14.94 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm2/f]` |  | 1.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm2/f]` | 1.09 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm1]` |  | 0.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm1]` | 0.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm2]` |  | 0.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm2]` | 0.47 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka2]` | 1.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ntr]` |  | 4.97 | only_one_extracted |
 
 </details>
 

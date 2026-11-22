@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Micafungin clearance and central volume of distribution lacked extracted values, forcing placeholder defaults that quarantined the model.
+> Micafungin clearance and volume of distribution values were missing, forcing library placeholders and preventing publication.
 
 <div class="pk-model-meta" hidden drug="micafungin" model-id="Micafungin_AlbanellFernndez2025_roepcke_2023_33" status="model_quarantined" stale="false" population="mixed (special populations including pediatric, critical care, obese)" measured-compound="micafungin" parameterization="mechanistic" topology="1C"></div>
 
@@ -43,9 +43,9 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**Micafungin clearance and central volume of distribution lacked extracted values, forcing placeholder defaults that quarantined the model.**
+**Micafungin clearance and volume of distribution values were missing, forcing library placeholders and preventing publication.**
 
-The record lists micafungin clearance and central volume as parameters but provides no estimated numeric values. The model builder substituted library placeholders for these missing pharmacokinetic estimates, triggering a failure in the deviation check. A second reader also disagreed on the identified dose compound and primary analyte, both marking them as unknown. No parameter values were extracted.
+The record lists the clearance equation and central volume of distribution, but both parameters show null values. Consequently, the model builder defaulted these pharmacokinetic parameters rather than using explicit estimates from the paper. A second reader also disputed the model structure and dose compound identification, contributing to the quarantine status. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has micafungin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -201,13 +201,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

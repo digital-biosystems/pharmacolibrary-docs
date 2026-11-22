@@ -4,11 +4,11 @@
 
 # fosfomycin — `Fosfomycin_Hppe2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:17 UTC (Needs review), but the paper was screened again on 2026-10-13 11:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; vmax has no unit.
+> Vmax has no unit.
 
-<div class="pk-model-meta" hidden drug="fosfomycin" model-id="Fosfomycin_Hppe2023_reference" status="needs_review" stale="true" population="critically ill patients during continuous venovenous hemodialysis" measured-compound="fosfomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fosfomycin" model-id="Fosfomycin_Hppe2023_reference" status="needs_review" stale="false" population="critically ill patients during continuous venovenous hemodialysis" measured-compound="fosfomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hüppe T, Götz KM, Meiser A, de Faria Fernandes A, Maurer F, Groesdonk HV et al. Population pharmacokinetic modeling of multiple-dose intravenous fosfomycin in critically ill patients during continuous venovenous hemodialysis. Scientific reports 13(1):18132 (2023).
@@ -16,7 +16,7 @@ Hüppe T, Götz KM, Meiser A, de Faria Fernandes A, Maurer F, Groesdonk HV et al
 
 ## Population and dosing
 
-**Population:** critically ill patients during continuous venovenous hemodialysis · condition renal insufficiency · age group adult · n = ....
+**Population:** critically ill patients during continuous venovenous hemodialysis · condition renal insufficiency · age group adult.
 
 **Dosing:** 5000 mg, iv, multiple, every 8 h.
 
@@ -39,7 +39,7 @@ Hüppe T, Götz KM, Meiser A, de Faria Fernandes A, Maurer F, Groesdonk HV et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Hüppe T, Götz KM, Meiser A, de Faria Fernandes A, Maurer F, Groesdonk HV et al
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance; vmax has no unit.**
+**Vmax has no unit.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Vmax), so that value has no SI equivalent. Extracted — fosfomycin: CLR 0.263 L/h, V 18.2 L, Q 5.08 L/h, Vmax 0.0288 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\Theta_{{{\text{V}}_{{{\text{K}}0{\text{A}}}} }}$$\end{document}ΘVK0A.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Vmax), so that value has no SI equivalent. Extracted — fosfomycin: CLR 0.263 L/h, V 18.2 L, Q 5.08 L/h, Vmax 0.0288 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\Theta_{{{\text{V}}_{{{\text{K}}0{\text{A}}}} }}$$\end{document}ΘVK0A.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fosfomycin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

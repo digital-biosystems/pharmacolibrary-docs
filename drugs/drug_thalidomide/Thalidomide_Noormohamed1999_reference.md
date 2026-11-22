@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;thalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/&quot;},{&quot;label&quot;:&quot;Noormohamed_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thalidomide_Chen1989_reference&quot;,&quot;label&quot;:&quot;Chen_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Chen1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Kamikawa2006_reference&quot;,&quot;label&quot;:&quot;Kamikawa_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Noormohamed1999_reference&quot;,&quot;label&quot;:&quot;Noormohamed_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Noormohamed1999_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Thalidomide_Figg1999_reference&quot;,&quot;label&quot;:&quot;Figg_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thalidomide_Kamikawa2006_reference&quot;,&quot;label&quot;:&quot;Kamikawa_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Chen1989_reference&quot;,&quot;label&quot;:&quot;Chen_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Chen1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Figg1999_reference&quot;,&quot;label&quot;:&quot;Figg_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Noormohamed1999_reference&quot;,&quot;label&quot;:&quot;Noormohamed_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Noormohamed1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # thalidomide — `Thalidomide_Noormohamed1999_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Noormohamed1999_reference" status="simulated" stale="false" population="asymptomatic HIV-infected subjects" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
+> The second reader disagreed with the verdict, unable to confirm the thalidomide parameters or dose compound from the abstract-only record.
+
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Noormohamed1999_reference" status="needs_review" stale="false" population="asymptomatic HIV-infected subjects" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Noormohamed FH, Youle MS, Higgs CJ, Kook KA, Hawkins DA, Lant AF et al. Pharmacokinetics and hemodynamic effects of single oral doses of thalidomide in asymptomatic human immunodeficiency virus-infected subjects. AIDS research and human retroviruses 15(12):1047–1052 (1999).
@@ -27,6 +29,8 @@ Noormohamed FH, Youle MS, Higgs CJ, Kook KA, Hawkins DA, Lant AF et al. Pharmaco
 <figure class="pk-models-diagram"><img src="drugs/drug_thalidomide/Thalidomide_Noormohamed1999_reference/Thalidomide_Noormohamed1999_reference.svg" alt="Thalidomide_Noormohamed1999_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean absorption half-life | t1/2ka | 0.95 | hr |
@@ -39,7 +43,7 @@ Noormohamed FH, Youle MS, Higgs CJ, Kook KA, Hawkins DA, Lant AF et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +53,13 @@ Noormohamed FH, Youle MS, Higgs CJ, Kook KA, Hawkins DA, Lant AF et al. Pharmaco
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The second reader disagreed with the verdict, unable to confirm the thalidomide parameters or dose compound from the abstract-only record.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Because the record was built from the abstract alone, reported summary statistics stood in for a fitted model. The second reader marked the dose compound and primary analyte as unknown rather than thalidomide. Furthermore, the second reader found null values for all extracted parameters, including CL/F of 10.4 liters/hr and kabs of 0.4 1/h. Extracted — thalidomide: t1/2ka 0.95 hr, Cmax 1.15 microg/ml, tmax 2.5 h, V/F 69.9 liters, CL/F 10.4 liters/hr, kabs 0.4 1/h, tlag 0.73 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thalidomide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -147,15 +151,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=thalidomide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=thalidomide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

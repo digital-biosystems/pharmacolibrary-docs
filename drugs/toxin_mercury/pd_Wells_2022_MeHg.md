@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> This study establishes a linear, additive relationship where whole blood total mercury (driver) predicts methylmercury concentrations (response) with a slope of 1.01, rather than describing a pharmacodynamic effect on a physiological endpoint. The paper does not define a drug mechanism involving production inhibition, elimination, or receptor binding, but rather provides a statistical conversion factor (mean MeHg/THg ratio of 0.75) to estimate exposure for risk assessment.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wells_2022`
 - **model family:** `linear`
 - **driver:** `cited_pk`

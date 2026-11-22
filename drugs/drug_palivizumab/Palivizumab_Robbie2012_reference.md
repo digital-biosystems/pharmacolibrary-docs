@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;palivizumab&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/&quot;},{&quot;label&quot;:&quot;Robbie_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance of 62.3 mL/day and intercompartmental clearance of 1.20 mL/day for palivizumab are physiologically implausible.
+> Total clearance of 62.3 mL/day is physiologically implausible for palivizumab, causing the record to fail the clearance magnitude check.
 
 <div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="rejected" stale="false" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Robbie GJ, Zhao L, Mondick J, Losonsky G, Roskos LK. Population pharmacokinetics
 
 ## Population and dosing
 
-**Population:** adults and children · condition RSV prophylaxis · age group mixed.
+**Population:** adults and children · condition RSV prevention · age group mixed · n = 1870.
 
 **Dosing:** 1050 mg, im, multiple, every 720 h.
 
@@ -25,7 +25,7 @@ Robbie GJ, Zhao L, Mondick J, Losonsky G, Roskos LK. Population pharmacokinetics
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted, plus 4 covariate effects.  
+**Parameters:** 7 extracted, plus 4 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,19 +34,20 @@ Robbie GJ, Zhao L, Mondick J, Losonsky G, Roskos LK. Population pharmacokinetics
 | label | parameter | value | unit |
 |---|---|---|---|
 | CLD | Q | 1.20 | mL/day |
+| q_wt_70_0.75 | q_wt_70_0.75 | 879 |  |
 | k a , day Ϫ1 | kabs | 1.01 | day Ϫ1 |
 | F1 | Fab | 0.694 |  |
+| ␤ | t1/2β | 0.411 | day |
 | T CL , mo | CL | 62.3 | mL/day |
 | Vc, ml | V1 | 263 | ml |
 | Vp, ml | V2 | 143 | ml |
-| theta_q354_wt_power | theta_q354_wt_power | 198 |  |
-| theta_q352_wt_power | theta_q352_wt_power | 3.20 |  |
+| theta_q319_wt_power | theta_q319_wt_power | 198 |  |
+| theta_q61_wt_power | theta_q61_wt_power | 3.20 |  |
 | theta_q352_wt_power | theta_q352_wt_power | 3.83 |  |
-| theta_q319_wt_power | theta_q319_wt_power | 879 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.476). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.458). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +57,11 @@ Robbie GJ, Zhao L, Mondick J, Losonsky G, Roskos LK. Population pharmacokinetics
 
 ### Reviewer guidance
 
-**Clearance of 62.3 mL/day and intercompartmental clearance of 1.20 mL/day for palivizumab are physiologically implausible.**
+**Total clearance of 62.3 mL/day is physiologically implausible for palivizumab, causing the record to fail the clearance magnitude check.**
 
-The total clearance and intercompartmental clearance values are far below the expected range for a monoclonal antibody, indicating a likely unit or scale extraction error. Second reader disagreements confirm extraction inconsistencies for clearance and volumes. The record was rejected due to these implausible parameter magnitudes. Extracted — palivizumab: Q 1.2 mL/day, kabs 1.01 day Ϫ1, Fab 0.694, CL 62.3 mL/day, V1 263 ml, V2 143 ml.
+The total clearance parameter was extracted as 62.3 mL/day, a value far outside the expected physiological range for this monoclonal antibody. A second reader identified the clearance value as 11.0, indicating a discrepancy in how the paper's table was parsed. The record also contains several weight exponent parameters (198, 3.20, 3.83) that do not align with standard allometric scaling powers. Extracted — palivizumab: Q 1.2 mL/day, kabs 1.01 day Ϫ1, Fab 0.694, t1/2β 0.411 day, CL 62.3 mL/day, V1 263 ml, V2 143 ml.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cld].covariate_forms`: this record has none, the second reading ['power']; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 11.0; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -69,15 +70,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | CLD | `Q30` · Q | 1.20 | mL/day | 1.389e-11 | m3/s | L/h | exact (1) | tab_2:row7:col1, tab_2:row7:col2 |
+| q_wt_70_0.75 | `Q900` · q_wt_70_0.75 | 879 |  |  |  |  |  | tab_2:row15:col1, tab_2:row15:col2 |
 | k a , day Ϫ1 | `Q49` · kabs | 1.01 | day Ϫ1 | 1.169e-05 | 1/s | 1/d | space_fold (0.95) | tab_2:row17:col1 |
-| F1 | `Q40` · Fab | 0.694 |  |  |  |  | exact (1) | tab_2:row18:col1, tab_2:row18:col2, Robbie_2012_table_3:row5:col1 |
+| F1 | `Q40` · Fab | 0.694 |  | 0.694 |  |  | exact (1) | tab_2:row18:col1, tab_2:row18:col2, Robbie_2012_table_3:row5:col1 |
+| ␤ | `Q60` · t1/2β | 0.411 | day | 3.551e+04 | s | h | llm (0.6) | tab_2:row19:col1, tab_2:row19:col2 |
 | T CL , mo | `Q22` · CL | 62.3 | mL/day | 7.211e-10 | m3/s | L/h | llm_confirmed (0.6) | tab_2:row20:col1, tab_2:row20:col2 |
 | Vc, ml | `Q63` · V1 | 263 | ml | 0.000263 | m3 | ml | exact (1) | Robbie_2012_table_3:row1:col1 |
 | Vp, ml | `Q64` · V2 | 143 | ml | 0.000143 | m3 | ml | exact (1) | Robbie_2012_table_3:row2:col1 |
-| theta_q354_wt_power | `Q900` · theta_q354_wt_power | 198 |  |  |  |  |  | tab_2:row1:col1, tab_2:row1:col2 |
-| theta_q352_wt_power | `Q900` · theta_q352_wt_power | 3.20 |  |  |  |  |  | tab_2:row12:col0, tab_2:row12:col2 |
+| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 198 |  |  |  |  |  | tab_2:row1:col1, tab_2:row1:col2 |
+| theta_q61_wt_power | `Q900` · theta_q61_wt_power | 3.20 |  |  |  |  |  | tab_2:row12:col0, tab_2:row12:col2 |
 | theta_q352_wt_power | `Q900` · theta_q352_wt_power | 3.83 |  |  |  |  |  | tab_2:row14:col0, tab_2:row14:col2 |
-| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 879 |  |  |  |  |  | tab_2:row15:col1, tab_2:row15:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -96,17 +98,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - dropped unlinked row (NIL): 'titer ϭ 40' — extend the ontology if this is a real PK parameter (source ['tab_2:row10:col1'])
 - dropped unlinked row (NIL): 'titer Ն 80' — extend the ontology if this is a real PK parameter (source ['tab_2:row11:col1', 'tab_2:row11:col2'])
 - dropped unlinked row (NIL): 'RACE ϭ Hispanic 1.06' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col2'])
-- dropped unlinked row (NIL): '␤' — extend the ontology if this is a real PK parameter (source ['tab_2:row19:col1', 'tab_2:row19:col2'])
+- covariate level 'Q ϫ (WT/70) 0.75 ,' → Q900:q_wt_70_0.75 = 879 (power on Q30)
 - unit_dimension_unknown: 'mo' (CL)
 - routed '2 prop' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - dropped duplicate Q22 ('CL, ml/day', value '11.0') — already have one for this compound
 - dropped duplicate Q30 ('Q, ml/day', value '112') — already have one for this compound
 - dropped duplicate Q49 ('ka, day−1', value '1.01') — already have one for this compound
-- covariate effect for Q354 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q352 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CLD' → mL/day (from the paper text: "The paper states in the 'Adult population pharmacokinetic modeling results' section: 'Q = 826 [10.1%] ml/day'. Since Q i")
-- implicit units: 'T CL , mo' → mL/day (from the paper text: "The paper states in the 'Adult population pharmacokinetic modeling results' section: 'CL = 198 [4.85%] ml/day' and in th")
+- covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q352 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'CLD' → mL/day (from the paper text: "The 'Adult population pharmacokinetic modeling results' section explicitly states the unit for the intercompartmental cl")
+- implicit units: '␤' → day (from the paper text: "The 'Adult population pharmacokinetic modeling results' section reports the absorption rate constant $k_a$ in units of '")
+- implicit units: 'T CL , mo' → mL/day (from the paper text: "The 'Adult population pharmacokinetic modeling results' section explicitly states the unit for the clearance parameter C")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=palivizumab
 - molar mass: none found for 'palivizumab' — its concentrations stay mass-only
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -124,23 +127,25 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.476 (10/21 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.458 (11/24 fields) | 13 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>13 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cld].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-oss-120b` | `parameters[t cl].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` |  | 11.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q_wt_70_0.75]` | 879 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t cl]` | 62.3 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_cl_wt_power]` |  | 198 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_wt_power]` | 879 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q352_wt_power]` | 3.20 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q354_wt_power]` | 198 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_wt_power]` | 198 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q352_wt_power]` | 3.83 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_wt_power]` | 3.20 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q_wt_power]` |  | 879 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_v1_wt_power]` |  | 3.20 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_v2_wt_power]` |  | 3.83 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc].covariate_forms` | [] | ['power'] | mismatch |
 | `gpt-oss-120b` | `parameters[vp].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[␤].parameter_id` | Q60 | Q47 | mismatch |
 
 </details>
 
@@ -152,21 +157,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row20:col1', 'tab_2:row20:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_2:row17:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Robbie_2012_table_3:row1:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Robbie_2012_table_3:row2:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 62.3 | ['tab_2:row20:col1', 'tab_2:row20:col2'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0026 L/h | ['tab_2:row20:col1', 'tab_2:row20:col2'] |
-| C9_phys_window_Q63 | fail | volume within physiological range | 0.263 L | ['Robbie_2012_table_3:row1:col1'] |
-| C9_phys_window_Q64 | fail | volume within physiological range | 0.143 L | ['Robbie_2012_table_3:row2:col1'] |
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 7 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C2_base_Q60 | fail | 0.411 | 0.438 | 1.066 | 0.05 | footnote reference category |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['tab_2:row20:col1', 'tab_2:row20:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['tab_2:row17:col1'] |
+| C5_dimension_Q60 | pass | [time] |  |  |  | ['tab_2:row19:col1', 'tab_2:row19:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['Robbie_2012_table_3:row1:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['Robbie_2012_table_3:row2:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 62.3 |  |  | ['tab_2:row20:col1', 'tab_2:row20:col2'] |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0026 L/h |  |  | ['tab_2:row20:col1', 'tab_2:row20:col2'] |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.263 L |  |  | ['Robbie_2012_table_3:row1:col1'] |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.143 L |  |  | ['Robbie_2012_table_3:row2:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -190,4 +197,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20Palivizumab_Robbie2012_reference&body=Drug%3A%20palivizumab%0ARecord%3A%20Palivizumab_Robbie2012_reference%0APaper%3A%20Robbie_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/Palivizumab_Robbie2012_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 06:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:55 UTC</sub>

@@ -4,11 +4,11 @@
 
 # cabazitaxel — `Cabazitaxel_Ferron2013_efc6193`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:28 UTC (Needs review), but the paper was screened again on 2026-10-07 17:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; cLnorm, V and Vss have no unit.
+> CLnorm, V and Vss have no unit.
 
-<div class="pk-model-meta" hidden drug="cabazitaxel" model-id="Cabazitaxel_Ferron2013_efc6193" status="needs_review" stale="true" population="patients with advanced solid tumors" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cabazitaxel" model-id="Cabazitaxel_Ferron2013_efc6193" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ferron GM, Dai Y, Semiond D. Population pharmacokinetics of cabazitaxel in patients with advanced solid tumors. Cancer chemotherapy and pharmacology 71(3):681–692 (2013).
@@ -41,7 +41,7 @@ Ferron GM, Dai Y, Semiond D. Population pharmacokinetics of cabazitaxel in patie
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Ferron GM, Dai Y, Semiond D. Population pharmacokinetics of cabazitaxel in patie
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance; cLnorm, V and Vss have no unit.**
+**CLnorm, V and Vss have no unit.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CLnorm, V and Vss), so that value has no SI equivalent. Extracted — cabazitaxel: CLnorm 27 n = 67, V 25.2 n = 67, Vss 3.7e+03 n = 67, t1/2α 5.88 min, t1/2β 1.62 h, t1/2γ 120 h.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CLnorm, V and Vss), so that value has no SI equivalent. Extracted — cabazitaxel: CLnorm 27 n = 67, V 25.2 n = 67, Vss 3.7e+03 n = 67, t1/2α 5.88 min, t1/2β 1.62 h, t1/2γ 120 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl, l/h/m2].parameter_id`: this record has Q354, the second reading Q22. That field shapes the model, so the record is marked disputed.
 

@@ -4,11 +4,11 @@
 
 # almotriptan — `Almotriptan_Jansat2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 06:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The almotriptan record is rejected as an exposure paper lacking volume or clearance, with a dimension mismatch on a structural parameter.
+> Renal clearance was recorded as 50 percent, a dimensionless value, conflicting with the required volumetric clearance dimensions.
 
-<div class="pk-model-meta" hidden drug="almotriptan" model-id="Almotriptan_Jansat2002_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="almotriptan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="almotriptan" model-id="Almotriptan_Jansat2002_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="almotriptan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jansat JM, Costa J, Salvà P, Fernandez FJ, Martinez-Tobed A. Absolute bioavailability, pharmacokinetics, and urinary excretion of the novel antimigraine agent almotriptan in healthy male volunteers. Journal of clinical pharmacology 42(12):1303–1310 (2002).
@@ -38,7 +38,7 @@ Jansat JM, Costa J, Salvà P, Fernandez FJ, Martinez-Tobed A. Absolute bioavaila
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Jansat JM, Costa J, Salvà P, Fernandez FJ, Martinez-Tobed A. Absolute bioavaila
 
 ### Reviewer guidance
 
-**The almotriptan record is rejected as an exposure paper lacking volume or clearance, with a dimension mismatch on a structural parameter.**
+**Renal clearance was recorded as 50 percent, a dimensionless value, conflicting with the required volumetric clearance dimensions.**
 
-The abstract-only source provides summary statistics like 100% bioavailability and 3.4 hours half-life without a fitted population PK model. Consequently, the record lacks essential distribution volume and total clearance parameters required for compartmental modeling. Additionally, a dimensional mismatch was detected on a structural parameter, though the specific parameter is not identified in the findings. Extracted — almotriptan: Fab 100 %, tmax 5 minutes, t1/2z 3.4 hours, CLR 50 %, kabs 0.648 h -1.
+The record lists almotriptan's renal clearance as 50 %, whereas a clearance value must have units of volume per time. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. A second reader could not confirm any of the reported pharmacokinetic parameter values. Extracted — almotriptan: Fab 100 %, tmax 5 minutes, t1/2z 3.4 hours, CLR 50 %, kabs 0.648 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has almotriptan, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

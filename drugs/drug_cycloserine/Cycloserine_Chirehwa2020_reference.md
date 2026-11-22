@@ -17,7 +17,7 @@ Chirehwa MT, Court R, de Kock M, Wiesner L, de Vries N, Harding J et al. Populat
 
 ## Population and dosing
 
-**Population:** multidrug-resistant tuberculosis patients · condition multidrug-resistant tuberculosis · age group adult · n = &lt; 123&gt; 123.
+**Population:** multidrug-resistant tuberculosis patients · condition multidrug-resistant tuberculosis · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed terizidone, measured cycloserine.
 

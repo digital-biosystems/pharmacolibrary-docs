@@ -26,19 +26,7 @@ Sodium oxybate is a sedative-hypnotic medication approved for symptoms of narcol
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Chen_2020_reference](drugs/drug_sodium_oxybate/SodiumOxybate_Chen2020_reference.md) | — | 2-compartment (no model) | 7 (+3 cov.) | Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translational… (2020) | [10.1111/cts.12780](https://doi.org/10.1111/cts.12780) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sodium_oxybate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ADHFE1 (substrate), ALDH5A1 (substrate), GABBR1 (target), NNT (substrate), SLC52A2 (target).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Chen_2020_reference](drugs/drug_sodium_oxybate/SodiumOxybate_Chen2020_reference.md) | — | 2-compartment (no model) | 7 (+3 cov.) | Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translational… (2020) | [10.1111/cts.12780](https://doi.org/10.1111/cts.12780) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,7 +46,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 20 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

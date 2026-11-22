@@ -148,6 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 1.15 | 0.00045 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_t_half_terminal | reference | fail | 3.15 | 5.332 | 1.693 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 4.47 | 5.332 | 1.193 | h→SI vs simulated h |

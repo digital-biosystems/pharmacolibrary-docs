@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;(S,E)-Zearalenone&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/&quot;},{&quot;label&quot;:&quot;Qin_2026 \u00b7 zal&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SeZearalenone_Buranatragool2015_reference&quot;,&quot;label&quot;:&quot;Buranatragool_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Buranatragool2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SeZearalenone_Escriv2017_reference&quot;,&quot;label&quot;:&quot;Escriv\u00e1_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Escriv2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SeZearalenone_Guerre2015_reference&quot;,&quot;label&quot;:&quot;Guerre_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Guerre2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SeZearalenone_Mukherjee2014_reference&quot;,&quot;label&quot;:&quot;Mukherjee_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Mukherjee2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SeZearalenone_Qin2026_zol&quot;,&quot;label&quot;:&quot;Qin_2026_zol&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Qin2026_zol.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected due to an orphan metabolite and an unconvertible unit, with parameters labeled for Zearalenone-14-glucoside misassigned to the parent drug.
 
 <div class="pk-model-meta" hidden drug="(S,E)-Zearalenone" model-id="SEZearalenone_Qin2026_zal" status="rejected" stale="false" population="male sheep" measured-compound="Zearalenone" parameterization="apparent" topology="general_linear"></div>
 
@@ -54,7 +55,13 @@ Qin J, Zhang Q, Ren N, Su Z, Zheng Z, Yin T et al. Toxicokinetics, Biotransforma
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected due to an orphan metabolite and an unconvertible unit, with parameters labeled for Zearalenone-14-glucoside misassigned to the parent drug.**
+
+Zearalenone-14-glucoside forms an unreachable compartment as its conversion link parameter is unspecified. Apparent clearance and volume values of 412.12 L·kg−1·h−1 and 1037.13 L·kg−1 are explicitly defined for the glucoside metabolite but attributed to the parent Zearalenone. Additionally, the absorption lag time unit of minutes cannot be converted to SI units, leaving the parameter value of 5.0 min invalid. Extracted — beta-zearalenol: tmax 3 h, Cmax 21.7 ng·mL−1; se zearalenone: AUC 437 ng*h/mL, t1/2z 7.44 h, CLm/F 412 L·kg−1·h−1, Vm/F 1.04e+03 L·kg−1, tlag 5 min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

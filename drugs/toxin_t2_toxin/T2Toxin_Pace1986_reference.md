@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;T2 Toxin&quot;,&quot;href&quot;:&quot;drugs/toxin_t2_toxin/&quot;},{&quot;label&quot;:&quot;Pace_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;T2Toxin_Beasley1986_reference&quot;,&quot;label&quot;:&quot;Beasley_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;T2Toxin_Beasley1986_reference&quot;,&quot;label&quot;:&quot;Beasley_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_t2_toxin/T2Toxin_Beasley1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> This abstract-only record assigns clearance units to a time parameter and lacks fitted kinetic quantities, preventing quantitative pharmacokinetic interpretation.
 
 <div class="pk-model-meta" hidden drug="T2 Toxin" model-id="T2Toxin_Pace1986_reference" status="rejected" stale="false" population="rat" measured-compound="T-2 toxin" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,13 @@ Pace JG. Metabolism and clearance of T-2 mycotoxin in perfused rat livers. Funda
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**This abstract-only record assigns clearance units to a time parameter and lacks fitted kinetic quantities, preventing quantitative pharmacokinetic interpretation.**
+
+The intercompartmental clearance Q is incorrectly given a unit of minutes instead of volume per time. The record derives solely from the paper's abstract, relying on summary statistics rather than fitted parameters. Consequently, no valid kinetic quantities such as half-lives or accurate clearances are available for modeling. Extracted — t2 toxin: CLint 8 ml/min, Q 10 min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

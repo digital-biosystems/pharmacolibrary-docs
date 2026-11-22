@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D04A&quot;,&quot;href&quot;:&quot;atc/D04A.md&quot;},{&quot;label&quot;:&quot;tripelennamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tripelennamine_Wasfi2000_reference&quot;,&quot;label&quot;:&quot;Wasfi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tripelennamine_Wasfi2000_reference&quot;,&quot;label&quot;:&quot;Wasfi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tripelennamine
 
@@ -25,7 +25,7 @@ Tripelennamine is a first-generation antihistamine used to treat allergies such 
 
 ## Start here
 
-> **Wasfi_2000_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> horses and camels, n = 11. [Run it in the simulator](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md?tab=Simulation) · [record](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md)
+> **Wasfi_2000_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> horses and camels, n = 11. [Run it in the simulator](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md?tab=Simulation) · [record](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,20 +33,7 @@ Tripelennamine is a first-generation antihistamine used to treat allergies such 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Wasfi_2000_reference](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tripelennamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` binder/regulator | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HRH1 (target).</sub>
+| <span class="pk-rf" hidden data-species="horse" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: cross_check_disputed</sub> | [Wasfi_2000_reference](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,7 +53,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

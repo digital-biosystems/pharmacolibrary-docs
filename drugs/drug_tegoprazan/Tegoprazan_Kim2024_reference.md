@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the absorption rate constant (ka) and lag time (Tlag) for tegoprazan were left at library defaults rather than being estimated from the source data.
+> The absorption rate constant for tegoprazan was left at a library placeholder rather than extracted, invalidating the simulated profile.
 
 <div class="pk-model-meta" hidden drug="tegoprazan" model-id="Tegoprazan_Kim2024_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tegoprazan" parameterization="apparent" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Kim HS, Choi YK, Oh M, Cho YS, Ghim JL. Enhancing drug administration flexibilit
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Kim HS, Choi YK, Oh M, Cho YS, Ghim JL. Enhancing drug administration flexibilit
 
 ### Reviewer guidance
 
-**The record was held back because the absorption rate constant (ka) and lag time (Tlag) for tegoprazan were left at library defaults rather than being estimated from the source data.**
+**The absorption rate constant for tegoprazan was left at a library placeholder rather than extracted, invalidating the simulated profile.**
 
-The source text reports only apparent clearance (21.02 L/h) and apparent volume of distribution (122.72 L), leaving the absorption kinetics undefined. Consequently, the model builder substituted library default values for ka and Tlag to define the first-order depot input. This substitution constitutes an unreported structural deviation, as the specific absorption parameters are not supported by the extracted evidence from Kim_2024. Extracted — tegoprazan: CL/F 21 L/h, V/F 123 L.
+The record defines tegoprazan apparent clearance (21.02 L/h) and volume (122.72 L) but lacks an explicit absorption rate estimate. The model builder consequently used library defaults for the absorption rate and lag time, which are not supported by the source paper. Additionally, the apparent parameterization assumes full bioavailability without molar correction, further distancing the model from explicit paper data. Extracted — tegoprazan: CL/F 21 L/h, V/F 123 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 2746.31, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2746.31, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,22 +82,20 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.615 (8/13 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.769 (10/13 fields) | 3 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q17]` | 2746.31 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q19]` | 2508.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q21]` | 1.0023 | 1.0023 | mismatch |
-| `gpt-oss:120b` | `values[Q33]` | 1.1087 | 1.1087 | mismatch |
-| `gpt-oss:120b` | `values[Q57]` | 4.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q17]` | 2746.31 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 2508.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 4.5 |  | only_one_extracted |
 
 </details>
 
@@ -123,15 +121,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=tegoprazan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: structural deviation not quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=tegoprazan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

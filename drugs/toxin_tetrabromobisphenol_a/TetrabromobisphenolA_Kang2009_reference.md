@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Tetrabromobisphenol A&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/&quot;},{&quot;label&quot;:&quot;Kang_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2014_reference&quot;,&quot;label&quot;:&quot;Knudsen_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2018_reference&quot;,&quot;label&quot;:&quot;Knudsen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Kang2009_reference&quot;,&quot;label&quot;:&quot;Kang_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Kang2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2014_reference&quot;,&quot;label&quot;:&quot;Knudsen_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2018_reference&quot;,&quot;label&quot;:&quot;Knudsen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Kang2009_reference&quot;,&quot;label&quot;:&quot;Kang_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Kang2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record substitutes the midpoint for the reported half-life range and uses abstract-derived summary statistics rather than fitted parameters for tetrabromobisphenol A.
 
 <div class="pk-model-meta" hidden drug="Tetrabromobisphenol A" model-id="TetrabromobisphenolA_Kang2009_reference" status="needs_review" stale="false" population="rats" measured-compound="Tetrabromobisphenol A" parameterization="mechanistic" topology="retention"></div>
 
@@ -46,7 +46,13 @@ Kang MJ, Kim JH, Shin S, Choi JH, Lee SK, Kim HS et al. Nephrotoxic potential an
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record substitutes the midpoint for the reported half-life range and uses abstract-derived summary statistics rather than fitted parameters for tetrabromobisphenol A.**
+
+The terminal half-life is recorded as 8 h, which is a substituted midpoint for a range rather than a specific fitted estimate. The absorption rate constant is 0.95 1/hr. The model was built from abstract-only data, meaning reported summary statistics stand in for a fitted model. Extracted — tetrabromobisphenol a: t1/2z 8 h, kabs 0.95 1/hr.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

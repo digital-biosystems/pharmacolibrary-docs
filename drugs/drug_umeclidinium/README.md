@@ -46,8 +46,8 @@ Umeclidinium is an anticholinergic medication used to treat chronic obstructive 
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ historical_model_ln_estimates](drugs/drug_umeclidinium/Umeclidinium_Mehta2018_historical_model_ln_estimates.md) | — | 1-compartment (no model) | 5 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Mehta_2020_reference](drugs/drug_umeclidinium/Umeclidinium_Mehta2020_reference.md) | — | 1-compartment (no model) | 4 | Mehta R et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00794-w](https://doi.org/10.1007/s40262-019-00794-w) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Yang_2017_reference](drugs/drug_umeclidinium/Umeclidinium_Yang2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Yang S et al., Population Pharmacokinetics Modeling of…, European journal of drug me… (2017) | [10.1007/s13318-016-0331-8](https://doi.org/10.1007/s13318-016-0331-8) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Goyal_2014_reference](drugs/drug_umeclidinium/Umeclidinium_Goyal2014_reference.md) | — | 1-compartment (no model) | 2 | Goyal N et al., Population pharmacokinetics of inhaled…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0143-4](https://doi.org/10.1007/s40262-014-0143-4) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pene_2016_reference](drugs/drug_umeclidinium/Umeclidinium_Pene2016_reference.md) | — | 2-compartment (no model) | 7 | Pene Dumitrescu T et al., A Novel Method for Studying the Pharmac…, Clinical and translational… (2016) | [10.1111/cts.12406](https://doi.org/10.1111/cts.12406) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Goyal_2014_reference](drugs/drug_umeclidinium/Umeclidinium_Goyal2014_reference.md) | — | 1-compartment (no model) | 2 | Goyal N et al., Population pharmacokinetics of inhaled…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0143-4](https://doi.org/10.1007/s40262-014-0143-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pene_2016_reference](drugs/drug_umeclidinium/Umeclidinium_Pene2016_reference.md) | — | 2-compartment (no model) | 7 | Pene Dumitrescu T et al., A Novel Method for Studying the Pharmac…, Clinical and translational… (2016) | [10.1111/cts.12406](https://doi.org/10.1111/cts.12406) |
 
 ## Pharmacodynamics (PD)
 
@@ -57,27 +57,6 @@ Umeclidinium is an anticholinergic medication used to treat chronic obstructive 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Donohue_2014_FEV1](drugs/drug_umeclidinium/pd_Donohue_2014_FEV1.md) | trough forced expiratory volume in one second (FEV1) ← umeclidinium · direct Emax (saturable) effect | — | Donohue JF et al., Dose response of umeclidinium administe…, Journal of clinical pharmac… (2014) | [10.1002/jcph.340](https://doi.org/10.1002/jcph.340) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yang_2015_FEV1](drugs/drug_umeclidinium/pd_Yang_2015_FEV1.md) | change from baseline trough FEV1 (day 15) ← umeclidinium · direct linear effect | — | Yang S et al., Dose-response modelling of umeclidinium…, European journal of clinica… (2015) | [10.1007/s00228-015-1894-z](https://doi.org/10.1007/s00228-015-1894-z) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Gong_2022_trough_FEV1](drugs/drug_umeclidinium/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← umeclidinium (vilanterol/umeclidinium FDC) · direct Emax (saturable) effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=umeclidinium).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate, `SLC22A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `SLC22A2` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -97,7 +76,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 65 matched, 37 returned
 - **screened:** 6  ·  **relevant:** 5
-- **records:** 10  ·  extracted 0  ·  needs review 6  ·  rejected 4  ·  stale 2
+- **records:** 10  ·  extracted 0  ·  needs review 6  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

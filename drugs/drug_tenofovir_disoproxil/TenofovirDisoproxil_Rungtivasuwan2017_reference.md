@@ -5,11 +5,11 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Rungtivasuwan2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-07 16:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent clearance of tenofovir was assigned a value of 25 with units of percent, creating a dimension mismatch for a structural parameter.
+> Tenofovir clearance was assigned a dimensionless value of 25% instead of volumetric flow units, causing a structural dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Rungtivasuwan2017_reference" status="rejected" stale="true" population="Thai HIV-infected patients" measured-compound="tenofovir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Rungtivasuwan2017_reference" status="rejected" stale="false" population="Thai HIV-infected patients" measured-compound="tenofovir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Rungtivasuwan K, Avihingsanon A, Thammajaruk N, Mitruk S, Burger DM, Ruxrungtham K et al. Pharmacogenetics-based population pharmacokinetic analysis of tenofovir in Thai HIV-infected patients. Pharmacogenomics 18(16):1481–1490 (2017).
@@ -17,7 +17,7 @@ Rungtivasuwan K, Avihingsanon A, Thammajaruk N, Mitruk S, Burger DM, Ruxrungtham
 
 ## Population and dosing
 
-**Population:** Thai HIV-infected patients · condition HIV infection · age group adult · n = $.
+**Population:** Thai HIV-infected patients · condition HIV infection · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed tenofovir_disoproxil, measured tenofovir.
 
@@ -37,7 +37,7 @@ Rungtivasuwan K, Avihingsanon A, Thammajaruk N, Mitruk S, Burger DM, Ruxrungtham
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Rungtivasuwan K, Avihingsanon A, Thammajaruk N, Mitruk S, Burger DM, Ruxrungtham
 
 ### Reviewer guidance
 
-**The apparent clearance of tenofovir was assigned a value of 25 with units of percent, creating a dimension mismatch for a structural parameter.**
+**Tenofovir clearance was assigned a dimensionless value of 25% instead of volumetric flow units, causing a structural dimension mismatch.**
 
-The record defines the apparent clearance of the metabolite tenofovir as 25 percent, a unit incompatible with standard clearance dimensions. This record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader disagreed on the dosed compound and primary analyte, marking both as unknown. Extracted — tenofovir disoproxil: CLm/F 25 %.
+The record lists the apparent clearance of tenofovir as 25 with the unit '%', which is dimensionless rather than volume over time. Because the source text was abstract-only, these summary statistics stand in for a fitted model, likely leading to this unit error. A second reader could not confirm the 25% value or the dose compound, marking them as unknown. Extracted — tenofovir disoproxil: CLm/F 25 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tenofovir_disoproxil, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

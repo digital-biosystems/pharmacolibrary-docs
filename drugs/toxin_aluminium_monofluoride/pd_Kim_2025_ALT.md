@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic model where aluminium monofluoride acts on ALT; instead, it attributes dose-dependent reductions in ALT to SIRP-EVs (SIRPα-containing extracellular vesicles) which inhibit CD47-mediated efferocytosis inhibition. No specific PK/PD parameters such as IC50, Imax, or rate constants are provided in the text for either agent.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kim_2025`
 - **model family:** `unknown`
 - **driver:** `dose_only`

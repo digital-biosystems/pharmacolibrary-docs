@@ -4,11 +4,11 @@
 
 # istradefylline — `Istradefylline_Knebel2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-06 14:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on the intercompartmental clearance parameter, which was extracted from an abstract-only source.
+> The record was rejected because the steady-state area under the curve parameter (35%) was misidentified as a structural parameter with incompatible mass-volume-time dimensions.
 
-<div class="pk-model-meta" hidden drug="istradefylline" model-id="Istradefylline_Knebel2011_reference" status="rejected" stale="true" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="istradefylline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="istradefylline" model-id="Istradefylline_Knebel2011_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="istradefylline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population pharmacokinetic analysis of istradefylline in healthy subjects and in patients with Parkinson's disease. Journal of clinical pharmacology 51(1):40–52 (2011).
@@ -39,7 +39,7 @@ Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population p
 
 ### Reviewer guidance
 
-**The record was rejected due to a dimension mismatch on the intercompartmental clearance parameter, which was extracted from an abstract-only source.**
+**The record was rejected because the steady-state area under the curve parameter (35%) was misidentified as a structural parameter with incompatible mass-volume-time dimensions.**
 
-The model structure is described as one compartment, yet the parameter list includes values for two volumes of distribution and an intercompartmental clearance, creating a structural inconsistency. Additionally, a summary statistic for the percentage increase in steady-state AUC was included as a model parameter. Because the data was derived solely from the abstract, these reported statistics stand in for a fitted model, leading to the rejection. Extracted — istradefylline: CL/F 5.76 L/h, V2/F 198 L, Q 21.6 L/h, V3/F 307 L, kabs 0.464 h(-1), AUCSS 35 %.
+A dimensionality check failed for the parameter labeled AUCSS, which holds a value of 35% and describes a summary statistic of exposure. The software expected a structural parameter with mass, length, and time units, causing a conflict with the dimensionless percentage value. Additionally, the second reader disagreed with the identification of istradefylline as the primary analyte and could not confirm any of the extracted parameter values, including clearance, volumes of distribution, and absorption rate. Extracted — istradefylline: CL/F 5.76 L/h, V2/F 198 L, Q 21.6 L/h, V3/F 307 L, kabs 0.464 h(-1), AUCSS 35 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has istradefylline, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

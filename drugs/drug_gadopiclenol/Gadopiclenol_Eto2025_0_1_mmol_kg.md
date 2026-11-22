@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V08C&quot;,&quot;href&quot;:&quot;atc/V08C.md&quot;},{&quot;label&quot;:&quot;gadopiclenol&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/&quot;},{&quot;label&quot;:&quot;Eto_2025 \u00b7 0_1_mmol_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_025_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_025_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_05_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_05_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_1_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_1_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_025_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_025_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_05_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_05_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_1_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_1_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gadopiclenol — `Gadopiclenol_Eto2025_0_1_mmol_kg`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="gadopiclenol" model-id="Gadopiclenol_Eto2025_0_1_mmol_kg" status="curated_candidate" stale="false" population="Japanese and non-Japanese subjects, including adults and pediatric patients" measured-compound="gadopiclenol" parameterization="mechanistic" topology="1C"></div>
+> The record is held back because a second reader failed to confirm extracted values for key gadopiclenol parameters including clearance and AUC.
+
+<div class="pk-model-meta" hidden drug="gadopiclenol" model-id="Gadopiclenol_Eto2025_0_1_mmol_kg" status="needs_review" stale="false" population="Japanese and non-Japanese subjects, including adults and pediatric patients" measured-compound="gadopiclenol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Eto T, Taoka T, Felices M, Pitrou C. Pharmacokinetics and safety of gadopiclenol in Japanese healthy volunteers. Japanese journal of radiology 43(12):1962–1970 (2025).
@@ -29,6 +31,8 @@ Eto T, Taoka T, Felices M, Pitrou C. Pharmacokinetics and safety of gadopiclenol
 <figure class="pk-models-diagram"><img src="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg/Gadopiclenol_Eto2025_0_1_mmol_kg.svg" alt="Gadopiclenol_Eto2025_0_1_mmol_kg diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax (µg/mL) | Cmax | 992.0 | µg/mL |
@@ -42,7 +46,7 @@ Eto T, Taoka T, Felices M, Pitrou C. Pharmacokinetics and safety of gadopiclenol
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +56,13 @@ Eto T, Taoka T, Felices M, Pitrou C. Pharmacokinetics and safety of gadopiclenol
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record is held back because a second reader failed to confirm extracted values for key gadopiclenol parameters including clearance and AUC.**
 
-A reported unit could not be converted (Cmax, AUC∞ and AUC/dose), so that value has no SI equivalent.
+The review found a cross-check dispute with an agreement score of 0.267, where the second reader agreed with none of the extracted values. Specifically, the second reader could not confirm the reported clearance of 5.8 L/h, renal clearance of 6.0 L/h, or AUC of 1288 µg/mL.h. The second reader instead identified a total clearance value of 5.3 L/h that was not present in the initial extraction. Extracted — gadopiclenol: Cmax 992 µg/mL, AUC∞ 1.29e+03 µg/mL.h, AUC/dose 176 µg/mL.h, t1/2z 1.73 h, V 14.4 L, CL 5.8 L/h, CLR 6 L/h, fe 104.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of aucinf: this record has 1288, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -158,6 +162,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.267, 0 of 1 reader(s) agree | 0.267 | cross-check disputed by a second reader: verdict disputed, agreement 0.267, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 1.4 | 1.726 | 1.233 | h→SI vs simulated h |
 | T1_t_half_beta | reference | pass | 1.4 | 1.726 | 1.233 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 1.43 | 1.726 | 1.207 | h→SI vs simulated h |

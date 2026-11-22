@@ -17,7 +17,7 @@ Momčilović S, Jovanović A, Radojković D, Nikolić VN, Janković SM, Pešić 
 
 ## Population and dosing
 
-**Population:** adults with hypertension and type 2 diabetes mellitus · condition hypertension and type 2 diabetes mellitus · age group adult · n = &gt;=70.
+**Population:** adults with hypertension and type 2 diabetes mellitus · condition hypertension and type 2 diabetes mellitus · age group adult.
 
 **Dosing:** 1.25, 10 mg, oral, multiple.
 

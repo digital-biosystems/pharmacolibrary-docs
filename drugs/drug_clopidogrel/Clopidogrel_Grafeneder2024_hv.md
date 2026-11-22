@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Grafeneder_2024 \u00b7 hv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Wang2025_reference&quot;,&quot;label&quot;:&quot;Wang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Kim2009_reference&quot;,&quot;label&quot;:&quot;Kim_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Kim2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Simon2015_reference&quot;,&quot;label&quot;:&quot;Simon_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Simon2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2026v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2026_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2026v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Danielak2017_reference&quot;,&quot;label&quot;:&quot;Danielak_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Clopidogrel clearance and volume of distribution were left at placeholder values, causing the model to be quarantined.
+> Clopidogrel clearance and volume of distribution lack values, and the model's simulated peak concentration and terminal half-life do not match the paper's reported values.
 
-<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Grafeneder2024_hv" status="model_quarantined" stale="false" population="adults with hemodialysis and healthy adults" measured-compound="clopidogrel" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Grafeneder2024_hv" status="model_quarantined" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Grafeneder J, van Os W, Minichmayr IK, Kovacevic Miljevic KD, Reiter B, Säemann MD et al. Prospective Trial on the Pharmacokinetics of Clopidogrel in Hemodialysis Patients. Kidney international reports 9(10):2970–2980 (2024).
@@ -17,9 +17,11 @@ Grafeneder J, van Os W, Minichmayr IK, Kovacevic Miljevic KD, Reiter B, Säemann
 
 ## Population and dosing
 
-**Population:** adults with hemodialysis and healthy adults · condition hemodialysis / healthy · age group adult · n = 33.
+**Population:** hemodialysis patients and healthy volunteers · condition end-stage renal disease · age group adult · n = 32.
 
 **Dosing:** 75, 300 mg, oral, multiple, every 24 h.
+
+**Dosed compound ≠ measured compound:** dosed clopidogrel, measured clopidogrel active metabolite.
 
 ## Model
 
@@ -45,7 +47,7 @@ Grafeneder J, van Os W, Minichmayr IK, Kovacevic Miljevic KD, Reiter B, Säemann
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846), gpt-5.6-luna (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.174), gpt-5.6-luna (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +57,11 @@ Grafeneder J, van Os W, Minichmayr IK, Kovacevic Miljevic KD, Reiter B, Säemann
 
 ### Reviewer guidance
 
-**Clopidogrel clearance and volume of distribution were left at placeholder values, causing the model to be quarantined.**
+**Clopidogrel clearance and volume of distribution lack values, and the model's simulated peak concentration and terminal half-life do not match the paper's reported values.**
 
-The record contains no extracted estimates for clopidogrel's clearance or volume of distribution, so library defaults were used. Consequently, the simulated peak concentration and terminal half-life did not match the paper's reported values of 0.00804 and 2.12, respectively. Extracted — clopidogrel: Cmax 1.9 ng/ml, AUClast 160 ng/ml·min, t1/2z 87.5 min; active metabolite: Cmax_ratio 13.5; pantoprazole: Cmax 12 µg/ml, AUClast 423 µg/ml·min, t1/2z 83.9 min, CL 81.9 ml/min, V 8.48e+03 ml.
+The record was held back because no specific estimates were provided for clopidogrel's clearance or volume of distribution, leaving the model without these essential parameters. Simulations produced a peak concentration of 0.006740436138330834 kg/m3, which does not align with the paper's reported Cmax values. Additionally, the simulated terminal half-life of 1.0525271548382622 hours differs significantly from the paper's reported half-life of 1.4583333333333333 hours. Extracted — clopidogrel: Cmax 1.9 ng/ml, Cmax_ratio 13.5, AUClast 160 ng/ml·min, t1/2z 87.5 min; pantoprazole: Cmax 12 µg/ml, AUClast 423 µg/ml·min, t1/2z 83.9 min, CL 81.9 ml/min, V 8.48e+03 ml.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has clopidogrel, the second reading clopidogrel active metabolite; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf_clo [ng/ml min]: this record has none, the second reading 227; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -90,24 +92,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 - dropped duplicate Q57 ('t1/2, CAM [min]', value '33') — already have one for this compound
 - dropped unlinked row (NIL): 'ADP [U]' — extend the ontology if this is a real PK parameter (source ['Grafeneder_2024_table_3:row16:col1', 'Grafeneder_2024_table_3:row16:col2', 'Grafeneder_2024_table_3:row16:col3'])
 - dropped unlinked row (NIL): '0 min [%]' — extend the ontology if this is a real PK parameter (source ['Grafeneder_2024_table_3:row18:col1', 'Grafeneder_2024_table_3:row18:col2', 'Grafeneder_2024_table_3:row18:col3'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clopidogrel
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model (site hepatic: 'A liver compartment was included in the model to account for the first-pass metabolism of clopidogrel.')
-- population split: 'hv' subgroup of Grafeneder_2024 (paper reports 2 populations: hdp, hv)
-- row roles: 3 per-group rows of clopidogrel summary_statistic but 0 reference group(s) — kept as printed
-- row roles: 3 per-group rows of active metabolite summary_statistic but 0 reference group(s) — kept as printed
-- row roles: 3 per-group rows of none summary_statistic but 0 reference group(s) — kept as printed
-- row roles: 5 per-group rows of pantoprazole summary_statistic but 0 reference group(s) — kept as printed
-- row roles: per-genotype parameters — typical value from the reference group: Normal metabolizer
-- row roles: 28 row(s) kept on the molecule their table section names, against the LLM's assignment
-- row roles (LLM): model_class=noncompartmental; 23/23 row label(s) assigned, 0 linked by role; re-tagged active metabolite→parent ×56, active metabolite→pantoprazole ×42
-- molar mass: no plausible PubChem entry for 'active metabolite' ('clopidogrel active thiol metabolite') — left in mass units
-- molar mass: none found for 'active metabolite' — its concentrations stay mass-only
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clopidogrel active metabolite
+- template fit: PK_3M_3C — hepatic compartment; parent 1 + hepatic, metabolites [0] (site hepatic: 'A liver compartment was included in the model to account for the first-pass metabolism of clopidogrel.')
+- population split: 'hv' subgroup of Grafeneder_2024 (paper reports 4 populations: hdp, hdp n = 17, hv, hv n = 16)
+- row roles: 7 per-group rows of clopidogrel summary_statistic but 0 reference group(s) — kept as printed
+- row roles: 6 per-group rows of clopidogrel active metabolite summary_statistic but 0 reference group(s) — kept as printed
+- row roles: 4 per-group rows of none summary_statistic but 0 reference group(s) — kept as printed
+- row roles: 9 per-group rows of pantoprazole summary_statistic but 0 reference group(s) — kept as printed
+- row roles: 26 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=compartmental; 30/30 row label(s) assigned, 0 linked by role; re-tagged parent→pantoprazole ×42
+- molar mass: none of 1 PubChem candidate(s) is 'clopidogrel active metabolite' (LLM) — left in mass units
+- molar mass: none found for 'clopidogrel active metabolite' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures 'clopidogrel active metabolite', not clopidogrel — the review values are the parent's
 
 **Extraction notes:**
+- table tbl2: ambiguous_numeric_format
 - table Grafeneder_2024_table_3: missing_label
 - table Grafeneder_2024_table_3: ambiguous_numeric_format
-- table Grafeneder_2024_table_2: ambiguous_numeric_format
-- companion parameter table 2 transcribed (37 record(s))
+- companion parameter table 3 transcribed (96 record(s))
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
@@ -117,10 +119,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.174 (4/23 fields) | 19 |
 | `gpt-5.6-luna` | not confirmed | 0.077 (1/13 fields) | 12 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>31 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -136,8 +138,25 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-5.6-luna` | `parameters[vd]` |  | 7528 | only_one_extracted |
 | `gpt-5.6-luna` | `screen.dose_compound` | clopidogrel | clopidogrel and pantoprazole | mismatch |
 | `gpt-5.6-luna` | `screen.primary_analyte` | clopidogrel | clopidogrel and its active metabolite | mismatch |
-| `gpt-oss-120b` | `model.links` | [['clopidogrel', 'active metabolite', 'metabolism']] | [['clopidogrel', 'clopidogrel active metabolite', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | clopidogrel | clopidogrel active metabolite | mismatch |
+| `gpt-oss-120b` | `parameters[aucinf [ug/ml min]]` |  | 468 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucinf_clo [ng/ml min]]` |  | 227 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast [ug/ml min]].value` | 423 | 409 | mismatch |
+| `gpt-oss-120b` | `parameters[auclast, clo [ng/ml min]]` | 160 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast_clo [ng/ml min]]` |  | 188 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance [ml/min]].covariate_forms` | [] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[clearance [ml/min]].value` | 81.9 | 85.7 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax [ug/ml]].value` | 12 | 9.6 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax ratio cam: clo]` | 13.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax ratio cam:clo]` |  | 12.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax, clo [ng/ml]]` | 1.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax,clo [ng/ml]]` |  | 2.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intermediate_metabolizer]` |  | 7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[normal_metabolizer]` |  | 8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rapid_metabolizer]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 [min]].value` | 83.9 | 76.8 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2, clo [min]]` | 87.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2_clo [min]]` |  | 87.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd [ml]].value` | 8484 | 7528 | mismatch |
 
 </details>
 
@@ -149,23 +168,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Grafeneder_2024_table_3:row13:col1', 'Grafeneder_2024_table_3:row13:col2', 'Grafeneder_2024_table_3:row13:col3'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Grafeneder_2024_table_3:row2:col1', 'Grafeneder_2024_table_3:row2:col2', 'Grafeneder_2024_table_3:row2:col3'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Grafeneder_2024_table_3:row10:col1', 'Grafeneder_2024_table_3:row10:col2', 'Grafeneder_2024_table_3:row10:col3'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Grafeneder_2024_table_3:row7:col1', 'Grafeneder_2024_table_3:row7:col2', 'Grafeneder_2024_table_3:row7:col3'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Grafeneder_2024_table_3:row12:col1', 'Grafeneder_2024_table_3:row12:col2', 'Grafeneder_2024_table_3:row12:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Grafeneder_2024_table_3:row14:col1', 'Grafeneder_2024_table_3:row14:col2', 'Grafeneder_2024_table_3:row14:col3'] |
-| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 |  | ['Grafeneder_2024_table_3:row5:col1', 'Grafeneder_2024_table_3:row5:col2', 'Grafeneder_2024_table_3:row5:col3'] |
-| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 |  | ['Grafeneder_2024_table_3:row11:col1', 'Grafeneder_2024_table_3:row11:col2', 'Grafeneder_2024_table_3:row11:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 81.9 | ['Grafeneder_2024_table_3:row13:col1', 'Grafeneder_2024_table_3:row13:col2', 'Grafeneder_2024_table_3:row13:col3'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.91 L/h | ['Grafeneder_2024_table_3:row13:col1', 'Grafeneder_2024_table_3:row13:col2', 'Grafeneder_2024_table_3:row13:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 8.48 L | ['Grafeneder_2024_table_3:row14:col1', 'Grafeneder_2024_table_3:row14:col2', 'Grafeneder_2024_table_3:row14:col3'] |
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 9 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C1_half_life_beta | pass | 87.5 | 71.8 | 0.8206 | 0.25 | reported t½β |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Grafeneder_2024_table_3:row13:col1', 'Grafeneder_2024_table_3:row13:col2', 'Grafeneder_2024_table_3:row13:col3'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  |  |  | ['Grafeneder_2024_table_3:row2:col1', 'Grafeneder_2024_table_3:row2:col2', 'Grafeneder_2024_table_3:row2:col3'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  |  |  | ['Grafeneder_2024_table_3:row10:col1', 'Grafeneder_2024_table_3:row10:col2', 'Grafeneder_2024_table_3:row10:col3'] |
+| C5_dimension_Q57 | pass | [time] |  |  |  | ['Grafeneder_2024_table_3:row7:col1', 'Grafeneder_2024_table_3:row7:col2', 'Grafeneder_2024_table_3:row7:col3'] |
+| C5_dimension_Q57 | pass | [time] |  |  |  | ['Grafeneder_2024_table_3:row12:col1', 'Grafeneder_2024_table_3:row12:col2', 'Grafeneder_2024_table_3:row12:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Grafeneder_2024_table_3:row14:col1', 'Grafeneder_2024_table_3:row14:col2', 'Grafeneder_2024_table_3:row14:col3'] |
+| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['Grafeneder_2024_table_3:row5:col1', 'Grafeneder_2024_table_3:row5:col2', 'Grafeneder_2024_table_3:row5:col3'] |
+| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['Grafeneder_2024_table_3:row11:col1', 'Grafeneder_2024_table_3:row11:col2', 'Grafeneder_2024_table_3:row11:col3'] |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.91 L/h |  |  | ['Grafeneder_2024_table_3:row13:col1', 'Grafeneder_2024_table_3:row13:col2', 'Grafeneder_2024_table_3:row13:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 8.48 L |  |  | ['Grafeneder_2024_table_3:row14:col1', 'Grafeneder_2024_table_3:row14:col2', 'Grafeneder_2024_table_3:row14:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -173,22 +192,67 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|---|
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable |  | fail | Metabolite_C (measured=clopidogrel) | central.C |  | output must be the measured/analyte compartment |
+| T3_output_variable |  | fail | Metabolite_C (measured=clopidogrel active metabolite) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| T2_pgx_Intermediate | pgx:Intermediate | pass |  |  |  | Intermediate vs Normal: central.C auc -100 %, central.C cmax -99 % (PK_1C_enteral.fmu, 3 phenotypes) |
-| T2_pgx_Rapid | pgx:Rapid | pass |  |  |  | Rapid vs Normal: central.C auc -63 %, central.C cmax -23 % (PK_1C_enteral.fmu, 3 phenotypes) |
-| T1_cmax | reference | pass | 0.00804 | 0.00674 | 0.8384 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped |  | 0.00674 |  | non-numeric value |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_cmax | reference | skipped | 3.3 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | fail | 7.7e-06 | 0.00674 | 875.4 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 51% | 0.00674 |  | unresolved concentration unit (exp 'lower', sim 'kg/m3') |
 | T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 1.5 | 0.00674 |  | unresolved concentration unit (exp 'ratio', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.5 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.5 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 12.8 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | fail | 2.3e-06 | 0.00674 | 2931 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7.7e-06 | 0.00674 | 875.4 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.47e-05 | 0.00674 | 272.9 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 12.8 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.5 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | fail | 0.0096 | 0.00674 | 0.7021 | μg/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0029 | 0.00674 | 2.324 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 8.5 | 0.00674 |  | unresolved concentration unit (exp 'times higher', sim 'kg/m3') |
-| T1_t_half_beta | reference | skipped | 1.7 | 1.053 |  | unresolved time unit 'fold longer' |
+| T1_cmax | reference | fail | 1.9e-06 | 0.00674 | 3548 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.1e-06 | 0.00674 | 2174 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.54e-06 | 0.00674 | 4377 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7.6e-06 | 0.00674 | 886.9 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.02e-05 | 0.00674 | 660.8 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.21e-05 | 0.00674 | 305 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.48e-05 | 0.00674 | 271.8 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.545e-05 | 0.00674 | 190.1 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 13.5 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 8.1 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 24.2 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.6 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.4 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | fail | 0.012 | 0.00674 | 0.5617 | μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.0068 | 0.00674 | 0.9912 | μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0187 | 0.00674 | 0.3605 | μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0032 | 0.00674 | 2.106 | μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0027 | 0.00674 | 2.497 | μg/ml→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 1.458 | 1.053 | 0.7217 | min→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 2.117 | 1.053 | 0.4973 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.5867 | 1.053 | 1.794 | min→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 1.235 | 1.053 | 0.8522 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.28 | 1.053 | 0.8223 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.167 | 1.053 | 0.4858 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.458 | 1.053 | 0.7217 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.367 | 1.053 | 0.7701 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.183 | 1.053 | 0.4821 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.363 | 1.053 | 0.772 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.3 | 1.053 | 0.4576 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.55 | 1.053 | 1.914 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.72 | 1.053 | 1.462 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.4 | 1.053 | 2.631 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.82 | 1.053 | 1.284 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.283 | 1.053 | 0.3206 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.398 | 1.053 | 0.7527 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.155 | 1.053 | 0.9113 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 0.955 | 1.053 | 1.102 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.25 | 1.053 | 0.3239 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.867 | 1.053 | 0.5639 | min→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 2.167 | 1.053 | 0.4858 | min→SI vs simulated h |
 
 <details class="legend">
@@ -240,4 +304,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Grafeneder2024_hv&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Grafeneder2024_hv%0APaper%3A%20Grafeneder_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 23:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 05:52 UTC</sub>

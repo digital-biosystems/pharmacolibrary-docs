@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;macrogol&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/&quot;},{&quot;label&quot;:&quot;Zhu_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macrogol_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Jian2025_reference&quot;,&quot;label&quot;:&quot;Jian_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jian2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Macrogol_Harrison2022_reference&quot;,&quot;label&quot;:&quot;Harrison_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Harrison2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Brunet_2022_MIC&quot;,&quot;label&quot;:&quot;Brunet_2022 \u00b7 MIC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/pd_Brunet_2022_MIC.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macrogol_Jian2025_reference&quot;,&quot;label&quot;:&quot;Jian_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jian2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Harrison2022_reference&quot;,&quot;label&quot;:&quot;Harrison_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Harrison2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Brunet_2022_MIC&quot;,&quot;label&quot;:&quot;Brunet_2022 \u00b7 MIC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/pd_Brunet_2022_MIC.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # macrogol — `Macrogol_Zhu2018_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:28 UTC (Needs review), but the paper was screened again on 2026-10-04 16:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Record rejected because Zhu_2018 studies a different drug, not macrogol, despite listed macrogol parameters.
 
-<div class="pk-model-meta" hidden drug="macrogol" model-id="Macrogol_Zhu2018_reference" status="extracted" stale="true" population="" measured-compound="macrogol" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="macrogol" model-id="Macrogol_Zhu2018_reference" status="rejected" stale="false" population="" measured-compound="macrogol" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokinetic Analysis of Asunaprevir in Subjects with Hepatitis C Virus Infection. Infectious diseases and therapy 7(2):261–275 (2018).
@@ -31,6 +31,8 @@ Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokineti
 <figure class="pk-models-diagram"><img src="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference.svg" alt="Macrogol_Zhu2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 50.8 | L/h |
@@ -41,7 +43,7 @@ Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--neutral" title="glm-5.3-flash, gpt-oss:120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--neutral" title="glm-5.3-flash, gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +53,9 @@ Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**The macrogol model was held back because assuming full bioavailability for the apparent clearance and volume parameters was judged unacceptable.**
+**Record rejected because Zhu_2018 studies a different drug, not macrogol, despite listed macrogol parameters.**
 
-The review determined that setting bioavailability to unity without explicit estimates was an invalid assumption for this oral formulation. Additionally, the absorption lag time was not extracted from the study and remained unset rather than reported as a specific value. Extracted — macrogol: CL/F 50.8 L/h, V1/F 47.6 L, V2/F 561 L, Q/F 21.6 L/h, kabs 0.484 1/h.
+The relevance screen confirmed the paper's title and abstract do not name macrogol. Although the record lists apparent clearance, volumes, and absorption rates for macrogol, the source is unrelated to this compound. Consequently, the extracted pharmacokinetic values do not represent macrogol exposure in the referenced population. Extracted — macrogol: CL/F 50.8 L/h, V1/F 47.6 L, V2/F 561 L, Q/F 21.6 L/h, kabs 0.484 1/h.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -90,7 +92,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `glm-5.3-flash` | no answer | – | – (extracted nothing for this record) |
-| `gpt-oss:120b` | no answer | – | – (extracted nothing for this record) |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
 
 _No second reader extracted anything for this record; it is not cross-checked._
 
@@ -122,13 +124,14 @@ _No second reader extracted anything for this record; it is not cross-checked._
 
 | check | status | expected | obtained | note |
 |---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | macrogol (or metabolite) | paper about another drug | paper subject is not macrogol: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=macrogol) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,66 +143,13 @@ _No second reader extracted anything for this record; it is not cross-checked._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference_modelica.zip" download>Macrogol_Zhu2018_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference_fmi.zip" download>Macrogol_Zhu2018_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference_matlab.zip" download>Macrogol_Zhu2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference_matlab_simbio.zip" download>Macrogol_Zhu2018_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference_sbml.zip" download>Macrogol_Zhu2018_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference_cellml.zip" download>Macrogol_Zhu2018_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 1.411e-05 | m3/s |
-| input | model | `VdPerKg` | 0.00068 | m3/kg |
-| input | model | `k12` | 0.0001261 | 1/s |
-| input | model | `k21` | 1.07e-05 | 1/s |
-| input | model | `ka` | 0.0001344 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokinetic Analysis of Asunaprevir in Subjects with Hepatitis C Virus Infection. Infectious diseases and therapy 7(2):261–275 (2018). [doi:10.1007/s40121-018-0197-y](https://doi.org/10.1007/s40121-018-0197-y)
-
-**This record:** Pharmacolibrary, model `Macrogol_Zhu2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_macrogol/Macrogol_Zhu2018_reference>
-
-```bibtex
-@misc{pharmacolibrary_MacrogolZhu2018reference,
-  title  = {{Pharmacolibrary model Macrogol_Zhu2018_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_macrogol/Macrogol_Zhu2018_reference},
-  note   = {Parameters from doi:10.1007/s40121-018-0197-y},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.484 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.484 /h, F 1). Doses in the paper: 100, 200, 600 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_macrogol/Macrogol_Zhu2018_reference/Macrogol_Zhu2018_reference_sim_controls.json"></dbs-fmusim>
 

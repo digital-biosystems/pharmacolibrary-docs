@@ -154,30 +154,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_amsacrine/Amsacrine_Linssen1993_reference/Amsacrine_Linssen1993_reference_matlab.zip" download>Amsacrine_Linssen1993_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_amsacrine/Amsacrine_Linssen1993_reference/Amsacrine_Linssen1993_reference_sbml.zip" download>Amsacrine_Linssen1993_reference_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_amsacrine/Amsacrine_Linssen1993_reference/Amsacrine_Linssen1993_reference_cellml.zip" download>Amsacrine_Linssen1993_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Linssen P, Brons P, Knops G, Wessels H, de Witte T. Plasma and cellular pharmacokinetics of m-AMSA related to in vitro toxicity towards normal and leukemic clonogenic bone marrow cells (CFU-GM, CFU-L). European journal of haematology 50(3):149–154 (1993). [doi:10.1111/j.1600-0609.1993.tb00083.x](https://doi.org/10.1111/j.1600-0609.1993.tb00083.x)
-
-**This record:** Pharmacolibrary, model `Amsacrine_Linssen1993_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_amsacrine/Amsacrine_Linssen1993_reference>
-
-```bibtex
-@misc{pharmacolibrary_AmsacrineLinssen1993reference,
-  title  = {{Pharmacolibrary model Amsacrine_Linssen1993_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_amsacrine/Amsacrine_Linssen1993_reference},
-  note   = {Parameters from doi:10.1111/j.1600-0609.1993.tb00083.x},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

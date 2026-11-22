@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record contains no kinetic parameters; volume of distribution and rate constants are missing, with '13' misinterpreted as a population rather than a table statistic.
 
 <div class="pk-model-meta" hidden drug="Imipramine" model-id="Imipramine_Pardridge2023_13" status="rejected" stale="false" population="human" measured-compound="Imipramine" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Pardridge WM. Physiologically Based Pharmacokinetic Model of Brain Delivery of P
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record contains no kinetic parameters; volume of distribution and rate constants are missing, with '13' misinterpreted as a population rather than a table statistic.**
+
+The record lacks essential pharmacokinetic quantities such as half-life, rate constants, or clearance, indicating it describes exposure or outcomes rather than a fitted model. The parameter 'V2' has a meaning defined but no value extracted, leaving it as a library placeholder. The string '13', originally a table column holding statistics, was erroneously recorded as a study population, confirming the data was extracted from a split results table rather than a validated model fit. Extracted — imipramine: Kp 17.4.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

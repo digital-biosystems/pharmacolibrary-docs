@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Cyclotrimethylenetrinitramine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyclotrimethylenetrinitramine_Krishnan2009_reference&quot;,&quot;label&quot;:&quot;Krishnan_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyclotrimethylenetrinitramine_Krishnan2009_reference&quot;,&quot;label&quot;:&quot;Krishnan_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Cyclotrimethylenetrinitramine
 
@@ -33,7 +33,7 @@ Intermediate Oral: 0.03 mg/kg/day (Rat)
 
 ## Start here
 
-> **Krishnan_2009_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> male rats. [Run it in the simulator](drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md?tab=Simulation) · [record](drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md)
+> **Krishnan_2009_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> male rats. [Run it in the simulator](drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md?tab=Simulation) · [record](drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -41,7 +41,7 @@ Intermediate Oral: 0.03 mg/kg/day (Rat)
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Krishnan_2009_reference](drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Krishnan K et al., Physiologically based pharmacokinetic m…, Journal of applied toxicolo… (2009) | [10.1002/jat.1455](https://doi.org/10.1002/jat.1455) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Krishnan_2009_reference](drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Krishnan K et al., Physiologically based pharmacokinetic m…, Journal of applied toxicolo… (2009) | [10.1002/jat.1455](https://doi.org/10.1002/jat.1455) |
 | <span class="pk-rf" hidden data-species="other animal" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Belden_2005_reference](drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Belden2005_reference.md) | — | retention function (no model) | 2 | Belden JB et al., Accumulation of hexahydro- 1,3,5-trinit…, Environmental toxicology an… (2005) | [10.1897/04-477r.1](https://doi.org/10.1897/04-477r.1) |
 
 <details class="legend">

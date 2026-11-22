@@ -81,7 +81,7 @@ LD50: 100 mg/kg (Intravenous, Mouse)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-15 22:15 | 51:43 | 3/1/0 | 3/1/0 | 0/0/0 | 1,126,465/69,243 | einfracz / qwen3.8-flash-next | 45 | 10/28 | 45/0 | 0 |
+| 2026-11-15 22:15 | 51:43 | 3/1/0 | 4/2/0 | 0/0/0 | 1,126,465/69,243 | einfracz / qwen3.8-flash-next | 45 | 10/28 | 45/0 | 0 |
 
 ## Coverage
 

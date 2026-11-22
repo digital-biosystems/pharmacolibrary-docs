@@ -17,7 +17,7 @@ Abebe BT, Weiss M, Modess C, Tadken T, Wegner D, Meyer MJ et al. Pharmacokinetic
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=12.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed trospium chloride, measured trospium.
 

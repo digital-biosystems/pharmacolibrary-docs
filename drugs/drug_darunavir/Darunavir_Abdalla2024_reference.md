@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;darunavir&quot;,&quot;href&quot;:&quot;drugs/drug_darunavir/&quot;},{&quot;label&quot;:&quot;Abdalla_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Darunavir_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darunavir/Darunavir_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Darunavir_Stillemans2021_reference&quot;,&quot;label&quot;:&quot;Stillemans_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darunavir/Darunavir_Stillemans2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Darunavir_Stillemans2021_reference&quot;,&quot;label&quot;:&quot;Stillemans_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darunavir/Darunavir_Stillemans2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Darunavir_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darunavir/Darunavir_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # darunavir — `Darunavir_Abdalla2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:06 UTC (Rejected), but the paper was screened again on 2026-10-07 15:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The darunavir oral clearance of 169 L/h was rejected because its unit could not be standardized for model verification.
+> Darunavir’s reported distribution volume, V = 5.54 L/mmol, is dimensionally incompatible with volume, and its unit could not be converted to SI, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Abdalla2024_reference" status="rejected" stale="true" population="HIV-1 infected adolescents aged 12-18 years" measured-compound="darunavir" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Abdalla2024_reference" status="rejected" stale="false" population="HIV-1 infected adolescents aged 12-18 years" measured-compound="darunavir" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultaneous pharmacokinetic modeling of unbound and total darunavir with ritonavir in adolescents: a substudy of the SMILE trial. Antimicrobial agents and chemotherapy 68(2):e0100423 (2024).
@@ -43,7 +43,7 @@ Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultane
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.524). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.524). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultane
 
 ### Reviewer guidance
 
-**The darunavir oral clearance of 169 L/h was rejected because its unit could not be standardized for model verification.**
+**Darunavir’s reported distribution volume, V = 5.54 L/mmol, is dimensionally incompatible with volume, and its unit could not be converted to SI, so the record was rejected.**
 
-The total clearance following oral administration is listed as 169 L/h, but this specific unit was not recognized in the standard pharmacokinetic unit framework. This prevented the system from establishing a consistent basis to verify the dimensional consistency of the structural parameter. Additionally, the equilibrium dissociation constant for drug-target binding is reported as 0.85 ×10^-3 mmol/L, which also lacks standardization. Extracted — darunavir: kabs 0.43 h -1, CL/F 169 L/h, V/F 2.6e+03 L, KD 0.85, V 5.54 L/mmol, Ct 40 mg/L.
+The record defines V as volume of distribution but reports 5.54 L/mmol, a unit of volume per amount of substance rather than volume. The reported unit could not be converted to SI, and the dimensional comparison found it inconsistent with volume. Extracted — darunavir: kabs 0.43 h -1, CL/F 169 L/h, V/F 2.6e+03 L, KD 0.85, V 5.54 L/mmol, Ct 40 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has darunavir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

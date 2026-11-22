@@ -31,7 +31,7 @@
     - [doxazosin <sub>(13/9/1)</sub>](drugs/drug_doxazosin/)
     - [doxorubicin <sub>(15/22/0)</sub>](drugs/drug_doxorubicin/)
     - [fentanyl <sub>(22/11/0)</sub>](drugs/drug_fentanyl/)
-    - [fluorouracil <sub>(45/26/47)</sub>](drugs/drug_fluorouracil/)
+    - [fluorouracil <sub>(45/26/44)</sub>](drugs/drug_fluorouracil/)
     - [hydrochlorothiazide <sub>(15/6/5)</sub>](drugs/drug_hydrochlorothiazide/)
     - [ibuprofen <sub>(19/7/13)</sub>](drugs/drug_ibuprofen/)
     - [midazolam <sub>(36/20/3)</sub>](drugs/drug_midazolam/)
@@ -104,7 +104,7 @@
     - [cetuximab <sub>(10/0/0)</sub>](drugs/drug_cetuximab/)
     - [cyclophosphamide <sub>(3/1/2)</sub>](drugs/drug_cyclophosphamide/)
     - [doxorubicin <sub>(15/22/0)</sub>](drugs/drug_doxorubicin/)
-    - [fluorouracil <sub>(45/26/47)</sub>](drugs/drug_fluorouracil/)
+    - [fluorouracil <sub>(45/26/44)</sub>](drugs/drug_fluorouracil/)
     - [tamoxifen <sub>(2/12/4)</sub>](drugs/drug_tamoxifen/)
   - **Precision dosing (TDM)**
     - [busulfan <sub>(0/1/1)</sub>](drugs/drug_busulfan/)
@@ -361,17 +361,17 @@
         - [glycopyrronium bromide and psycholeptics <sub>(4/0/0)</sub>](drugs/drug_glycopyrronium_bromide_and_psycholeptics/)
         - homatropine methylbromide and psycholeptics <sub>(0/0/0)</sub>
         - [hyoscyamine <sub>(0/6/0)</sub>](drugs/drug_hyoscyamine/)
-        - hyoscyamine and psycholeptics <sub>(0/0/0)</sub>
+        - [hyoscyamine and psycholeptics <sub>(0/0/0)</sub>](drugs/drug_hyoscyamine_and_psycholeptics/)
         - isopropamide and psycholeptics <sub>(0/0/0)</sub>
         - [methylscopolamine <sub>(0/0/0)</sub>](drugs/drug_methylscopolamine/)
-        - methylscopolamine and psycholeptics <sub>(0/0/0)</sub>
+        - [methylscopolamine and psycholeptics <sub>(0/0/0)</sub>](drugs/drug_methylscopolamine_and_psycholeptics/)
         - [otilonium <sub>(0/0/0)</sub>](drugs/drug_otilonium/)
         - [otilonium bromide <sub>(0/1/0)</sub>](drugs/drug_otilonium_bromide/)
         - otilonium bromide and psycholeptics <sub>(0/0/0)</sub>
         - oxyphencyclimine and psycholeptics <sub>(0/0/0)</sub>
         - pipenzolate and psycholeptics <sub>(0/0/0)</sub>
         - [propantheline <sub>(1/1/0)</sub>](drugs/drug_propantheline/)
-        - propantheline and psycholeptics <sub>(0/0/0)</sub>
+        - [propantheline and psycholeptics <sub>(0/0/0)</sub>](drugs/drug_propantheline_and_psycholeptics/)
       - [A03D Antispasmodics in combination with analgesics](atc/A03D.md)
         - bevonium and analgesics <sub>(0/0/0)</sub>
         - [butylscopolamine <sub>(0/0/0)</sub>](drugs/drug_butylscopolamine/)
@@ -3580,7 +3580,7 @@
         - decitabine combinations <sub>(0/0/0)</sub>
         - [floxuridine <sub>(0/0/0)</sub>](drugs/drug_floxuridine/)
         - [fludarabine <sub>(1/1/0)</sub>](drugs/drug_fludarabine/)
-        - [fluorouracil <sub>(45/26/47)</sub>](drugs/drug_fluorouracil/)
+        - [fluorouracil <sub>(45/26/44)</sub>](drugs/drug_fluorouracil/)
         - fluorouracil combinations <sub>(0/0/0)</sub>
         - [gemcitabine <sub>(3/14/1)</sub>](drugs/drug_gemcitabine/)
         - [mercaptopurine <sub>(0/0/0)</sub>](drugs/drug_mercaptopurine/)
@@ -6163,7 +6163,7 @@
       - [histamine phosphate <sub>(0/1/0)</sub>](drugs/drug_histamine_phosphate/)
       - indigo carmine <sub>(0/0/0)</sub>
       - [indocyanine green <sub>(0/6/0)</sub>](drugs/drug_indocyanine_green/)
-      - [inulin <sub>(2/0/0)</sub>](drugs/drug_inulin/)
+      - [inulin <sub>(3/0/0)</sub>](drugs/drug_inulin/)
       - inulin and other polyfructosans <sub>(0/0/0)</sub>
       - [lithium chloride <sub>(1/1/0)</sub>](drugs/drug_lithium_chloride/)
       - macimorelin <sub>(0/0/0)</sub>
@@ -6465,6 +6465,7 @@
     - [2,2',3,4,4',5,5'-heptachlorobiphenyl <sub>(1/0/0)</sub>](drugs/toxin_2234455_heptachlorobiphenyl/)
     - [2,2',3,5',6-pentachlorobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_22356_pentachlorobiphenyl/)
     - [2,2',4,4',5,5'-hexachlorobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_224455_hexachlorobiphenyl/)
+    - [2,2',4,4',6-pentachlorobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_22446_pentachlorobiphenyl/)
     - [3,3',4,4',5-pentachlorobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_33445_pentachlorobiphenyl/)
     - [3,3',4,4'-tetrachlorobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_3344_tetrachlorobiphenyl/)
     - [3-chlorobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_3_chlorobiphenyl/)
@@ -7441,6 +7442,12 @@
     - [2,3,3-trimethylpentane <sub>(0/0/0)</sub>](drugs/toxin_233_trimethylpentane/)
     - [2,3,4,4',5-pentabromobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_23445_pentabromobiphenyl/)
     - [2,3,4,5,6-pentabromobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_23456_pentabromobiphenyl/)
+    - [2,3,4-trimethylpentane <sub>(0/0/0)</sub>](drugs/toxin_234_trimethylpentane/)
+    - [2,3-dimethylbutane <sub>(0/0/0)</sub>](drugs/toxin_23_dimethylbutane/)
+    - [2,4-di-tert-butylphenol <sub>(0/0/0)</sub>](drugs/toxin_24_di_tert_butylphenol/)
+    - [2,5-dimethylhexane <sub>(0/0/0)</sub>](drugs/toxin_25_dimethylhexane/)
+    - [2-methylpentane <sub>(0/0/0)</sub>](drugs/toxin_2_methylpentane/)
+    - [2-monobromobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_2_monobromobiphenyl/)
     - [3-aminobiphenyl <sub>(0/0/0)</sub>](drugs/toxin_3_aminobiphenyl/)
     - [3-hydroxyfluorene <sub>(0/0/0)</sub>](drugs/toxin_3_hydroxyfluorene/)
     - [4-(methylnitrosamino)-1-(3-pyridyl)-1-butanol <sub>(4/0/0)</sub>](drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/)
@@ -7503,6 +7510,10 @@
     - [barium perchlorate <sub>(0/0/0)</sub>](drugs/toxin_barium_perchlorate/)
     - [bromic acid <sub>(0/0/0)</sub>](drugs/toxin_bromic_acid/)
     - [bromodeoxyuridine <sub>(0/0/0)</sub>](drugs/toxin_bromodeoxyuridine/)
+    - [carbon-14 <sub>(3/0/0)</sub>](drugs/toxin_carbon_14/)
+    - [chloroacetaldehyde <sub>(0/1/0)</sub>](drugs/toxin_chloroacetaldehyde/)
+    - [cis-Diamminedichloro-palladium(II) <sub>(0/0/0)</sub>](drugs/toxin_cis_diamminedichloro_palladiumii/)
+    - [cobalt-60 <sub>(1/1/0)</sub>](drugs/toxin_cobalt_60/)
     - [copper(II) phosphate <sub>(0/0/0)</sub>](drugs/toxin_copperii_phosphate/)
     - [copper(II) pyrophosphate <sub>(0/0/0)</sub>](drugs/toxin_copperii_pyrophosphate/)
     - [copper(II) sulfide <sub>(0/0/0)</sub>](drugs/toxin_copperii_sulfide/)
@@ -8067,12 +8078,5 @@
     - [zolmitriptan <sub>(8/2/0)</sub>](drugs/toxin_zolmitriptan/)
     - [zonisamide <sub>(4/2/1)</sub>](drugs/toxin_zonisamide/)
     - [zopiclone <sub>(8/5/0)</sub>](drugs/toxin_zopiclone/)
-  - [Unclassified](toxins/MISC.md)
-    - [2,4-di-tert-butylphenol <sub>(0/0/0)</sub>](drugs/toxin_24_di_tert_butylphenol/)
-    - [2,5-dimethylhexane <sub>(0/0/0)</sub>](drugs/toxin_25_dimethylhexane/)
-    - [2-methylpentane <sub>(0/0/0)</sub>](drugs/toxin_2_methylpentane/)
-    - [carbon-14 <sub>(3/0/0)</sub>](drugs/toxin_carbon_14/)
-    - [chloroacetaldehyde <sub>(0/1/0)</sub>](drugs/toxin_chloroacetaldehyde/)
-    - [cobalt-60 <sub>(1/1/0)</sub>](drugs/toxin_cobalt_60/)
 
 <!-- AUTOGEN:drugs END -->

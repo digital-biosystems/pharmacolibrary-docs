@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;Purcell_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Rejected because prednisolone clearance (7.74 L/h) and volume (0.3 L) are outside physiological bounds, indicating a unit extraction error.
+> Prednisolone clearance of 7.74 L.hour À1 was rejected because its unit/scale produced a clearance/volume magnitude outside the physiological window.
 
 <div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_Purcell2025_reference" status="rejected" stale="false" population="dogs receiving prednisolone for medical reasons" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Purcell BL, Woodward AP, Leeming MG, Dandrieux JRS. Influence of bodyweight on p
 
 ## Population and dosing
 
-**Population:** dogs receiving prednisolone for medical reasons · condition medical reasons · age group adult · n = &gt;=25.
+**Population:** dogs receiving prednisolone for medical reasons · condition medical reasons · age group adult.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -41,7 +41,7 @@ Purcell BL, Woodward AP, Leeming MG, Dandrieux JRS. Influence of bodyweight on p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Purcell BL, Woodward AP, Leeming MG, Dandrieux JRS. Influence of bodyweight on p
 
 ### Reviewer guidance
 
-**Rejected because prednisolone clearance (7.74 L/h) and volume (0.3 L) are outside physiological bounds, indicating a unit extraction error.**
+**Prednisolone clearance of 7.74 L.hour À1 was rejected because its unit/scale produced a clearance/volume magnitude outside the physiological window.**
 
-The record lists prednisolone clearance as 7.74 L/hour and volume of distribution as 0.3 L, values that are implausible for dogs. A second reader disputed the allometric exponent, citing -0.19 instead of the recorded 3.13. The clearance unit could not be converted to standard units, so the value remained unconverted for review. Extracted — prednisolone: allometric_exponent 3.13 A, CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
+The record reports prednisolone clearance of 7.74 L.hour À1, but that unit could not be converted to SI, and the reported clearance/volume magnitude was judged physiologically implausible. A second reader marked the dose compound and primary analyte as unknown, disputed the allometric exponent value of 3.13 (giving −0.19), and did not report the equation variable value of 22.8. Extracted — prednisolone: allometric_exponent 3.13 A, CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prednisolone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prednisolone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -97,16 +97,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[a]` | 22.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[loge].value` | 3.13 | -0.19 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | prednisolone | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | prednisolone | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[a]` | 22.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[loge].value` | 3.13 | -0.19 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | prednisolone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | prednisolone | unknown | mismatch |
 
 </details>
 

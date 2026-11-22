@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Leegwater_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_estimates&quot;,&quot;label&quot;:&quot;Sukeishi_2022_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_estimates.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_estimates&quot;,&quot;label&quot;:&quot;Sukeishi_2022_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_final_model_1485&quot;,&quot;label&quot;:&quot;Sukeishi_2022_final_model_1485&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_final_model_1485.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Leegwater E, Moes DJAR, Bosma LBE, Ottens TH, van der Meer IM, van Nieuwkoop C e
 
 ## Population and dosing
 
-**Population:** hospitalized COVID-19 patients · condition COVID-19 · age group adult · n = ..
+**Population:** hospitalized COVID-19 patients · condition coronavirus disease 2019 (COVID-19) · age group adult · n = 17.
 
 **Dosing:** 100, 200 mg, iv, multiple, every 24 h.
 
@@ -63,7 +63,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Metabolic CL (L/h) | `Q22` · CL | 207 | L/h | 5.75e-05 | m3/s | l/h | 13 | boundary_llm_dim_refused (0.8) | Leegwater_2022_table_p4_1:row1:col1 | 38.9 (22% RSE) |
+| Metabolic CL (L/h) | `Q22` · CL | 207 | L/h | 5.75e-05 | m3/s | l/h | 13 | llm_confirmed (0.6) | Leegwater_2022_table_p4_1:row1:col1 | 38.9 (22% RSE) |
 | Renal CL (L/h) | `Q26` · CLR | 20.7 | L/h | 5.75e-06 | m3/s | l/h |  | llm_corrected (0.6) | Leegwater_2022_table_p4_1:row2:col1 |  |
 | V (L) | `Q61` · V | 157 | L | 0.157 | m3 | l | 19 | exact (1) | Leegwater_2022_table_p4_1:row3:col1 |  |
 | CL (L/h) | `Q22` · CL | 27.6 | L/h | 7.667e-06 | m3/s | l/h | 17 | exact (1) | Leegwater_2022_table_p4_1:row5:col1 |  |
@@ -125,22 +125,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | pass | 0.48 | 0.526 | 1.096 | 0.25 | reported t½β |
-| C2_reference | pass |  |  |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Leegwater_2022_table_p4_1:row1:col1'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Leegwater_2022_table_p4_1:row5:col1'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  |  |  | ['Leegwater_2022_table_p4_1:row2:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Leegwater_2022_table_p4_1:row3:col1'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 207 |  |  | ['Leegwater_2022_table_p4_1:row1:col1'] |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 207 L/h |  |  | ['Leegwater_2022_table_p4_1:row1:col1'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 27.6 L/h |  |  | ['Leegwater_2022_table_p4_1:row5:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 157 L |  |  | ['Leegwater_2022_table_p4_1:row3:col1'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Leegwater_2022_table_p4_1:row1:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Leegwater_2022_table_p4_1:row5:col1'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Leegwater_2022_table_p4_1:row2:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Leegwater_2022_table_p4_1:row3:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 207 | ['Leegwater_2022_table_p4_1:row1:col1'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 207 L/h | ['Leegwater_2022_table_p4_1:row1:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 27.6 L/h | ['Leegwater_2022_table_p4_1:row5:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 157 L | ['Leegwater_2022_table_p4_1:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -174,4 +173,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Leegwater2022_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Leegwater2022_reference%0APaper%3A%20Leegwater_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 11:19 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:04 UTC</sub>

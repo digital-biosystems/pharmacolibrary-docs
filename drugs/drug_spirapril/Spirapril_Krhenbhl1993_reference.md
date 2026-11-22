@@ -16,7 +16,7 @@ Krähenbühl S, Grass P, Surve A, Kutz K, Reichen J. Pharmacokinetics and haemod
 
 ## Population and dosing
 
-**Population:** patients with chronic liver disease and healthy subjects · condition chronic liver disease · age group adult · n = &gt;=34.
+**Population:** patients with chronic liver disease and healthy subjects · condition chronic liver disease · age group adult.
 
 **Dosing:** 25 mg, oral, single.
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The carbenicillin two-compartment model was rejected because the peripheral compartment is structurally unreachable from the dose.
+> The carbenicillin two-compartment model was rejected because a compartment is structurally disconnected from the dose.
 
 <div class="pk-model-meta" hidden drug="carbenicillin" model-id="Carbenicillin_Fernndez2025_reference" status="rejected" stale="false" population="" measured-compound="carbenicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -37,7 +37,7 @@ Fernández Rubio B, Docobo Pérez F, Herrera Hidalgo L, López-Cortés LE, Luque
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +47,11 @@ Fernández Rubio B, Docobo Pérez F, Herrera Hidalgo L, López-Cortés LE, Luque
 
 ### Reviewer guidance
 
-**The carbenicillin two-compartment model was rejected because the peripheral compartment is structurally unreachable from the dose.**
+**The carbenicillin two-compartment model was rejected because a compartment is structurally disconnected from the dose.**
 
-The model structure defines a central and peripheral compartment, but no inter-compartmental clearance parameter is recorded, leaving the peripheral volume unlinked. The review specifically flagged this topological error as the reason for refusal. Additionally, a second reader disagreed with the record, asserting clearance values of 0.77 and 0.51 that are missing from the primary extraction. Extracted — carbenicillin: CL 11.6 L/h, V1 43.6 L, V2 40.9 L.
+The model structure is flagged as having an unreachable or orphan compartment, meaning a compartment has no path from the dose. This disconnect prevents the model from functioning as intended. Additionally, a second reader identified discrepancies in values where the record contained nulls. Extracted — carbenicillin: CL 11.6 L/h, V1 43.6 L, V2 40.9 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 0.77; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 0.77; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -76,19 +76,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.75 (9/12 fields) | 3 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q312]` |  | 0.77 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q315]` | 1.41 | 1.41 | mismatch |
 | `gpt-oss-120b` | `values[Q318]` |  | 0.51 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q900]` | 105.2 |  | only_one_extracted |
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;linerixibat&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linerixibat_ZamekGliszczynski2021_reference&quot;,&quot;label&quot;:&quot;Zamek-Gliszczynski_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linerixibat_ZamekGliszczynski2021_reference&quot;,&quot;label&quot;:&quot;Zamek-Gliszczynski_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # linerixibat
 
@@ -17,7 +17,7 @@ Linerixibat is an ileal bile acid transporter inhibitor used to treat cholestati
 
 ## Start here
 
-> **Zamek-Gliszczynski_2021_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy male volunteers. [Run it in the simulator](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md?tab=Simulation) · [record](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md)
+> **Zamek-Gliszczynski_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy male volunteers. [Run it in the simulator](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md?tab=Simulation) · [record](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -25,21 +25,13 @@ Linerixibat is an ileal bile acid transporter inhibitor used to treat cholestati
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Zamek-Gliszczynski_2021_reference](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Zamek-Gliszczynski MJ et al., Pharmacokinetics and ADME Characterizat…, Drug metabolism and disposi… (2021) | [10.1124/dmd.121.000595](https://doi.org/10.1124/dmd.121.000595) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Zamek-Gliszczynski_2021_reference](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Zamek-Gliszczynski MJ et al., Pharmacokinetics and ADME Characterizat…, Drug metabolism and disposi… (2021) | [10.1124/dmd.121.000595](https://doi.org/10.1124/dmd.121.000595) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Carreño_2025_C4](drugs/drug_linerixibat/pd_Carre_o_2025_C4.md) | C4 ← linerixibat · indirect response — drug stimulates the production of C4 | model (no simulator) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=linerixibat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | ileum | `SLC10A2` modulator | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +51,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

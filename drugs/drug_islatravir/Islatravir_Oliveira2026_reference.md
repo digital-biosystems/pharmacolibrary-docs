@@ -4,11 +4,11 @@
 
 # Islatravir — `Islatravir_Oliveira2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-22 10:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Isaltavir's macro-rate constant Alpha (0.6) was rejected due to a dimension mismatch in its structural parameter.
+> The record was rejected because the unit for the elimination rate constant kel could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="Islatravir" model-id="Islatravir_Oliveira2026_reference" status="rejected" stale="true" population="NZW rabbits" measured-compound="islatravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Islatravir" model-id="Islatravir_Oliveira2026_reference" status="rejected" stale="false" population="NZW rabbits" measured-compound="islatravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Oliveira D, Cruz D, Levin LPK, Li L, Norton CA, Dobek G et al. Harnessing Pharmacokinetic Modeling to Develop a Long-Acting Subcutaneous HIV Treatment Platform for Young Children. Pharmaceutics 18(5) (2026).
@@ -41,7 +41,7 @@ Oliveira D, Cruz D, Levin LPK, Li L, Norton CA, Dobek G et al. Harnessing Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Oliveira D, Cruz D, Levin LPK, Li L, Norton CA, Dobek G et al. Harnessing Pharma
 
 ### Reviewer guidance
 
-**Isaltavir's macro-rate constant Alpha (0.6) was rejected due to a dimension mismatch in its structural parameter.**
+**The record was rejected because the unit for the elimination rate constant kel could not be converted to standard SI units.**
 
-The record lists the macro-rate constant Alpha as 0.6 1/h, representing the fast disposition phase. A reported unit for this structural parameter could not be converted to standard SI units. Consequently, the model lacked a valid physical value for this parameter, leading to its rejection. Extracted — islatravir: λ1 0.6 1/h, kel 0.1 1/h, kabs 12 h−1.
+The elimination rate constant kel is listed with a value of 0.1 1/h for islatravir. A dimension check flagged a conflict in the unit's time dimension. Since the specific unit variant was not recognized by the standard conversion mechanism, no valid SI value was assigned to the parameter. Extracted — islatravir: λ1 0.6 1/h, kel 0.1 1/h, kabs 12 h−1.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

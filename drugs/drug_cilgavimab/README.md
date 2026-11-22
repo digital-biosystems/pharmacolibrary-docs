@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;Cilgavimab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilgavimab_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilgavimab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilgavimab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilgavimab_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # Cilgavimab
 
@@ -16,25 +16,19 @@ Cilgavimab is an antiviral monoclonal antibody used to treat certain viral infec
 
 ## Start here
 
-> **Li_2023_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md?tab=Simulation) · [record](drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md)
+> **Li_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md?tab=Simulation) · [record](drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.001</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.01</text><text x="184" y="34.0" font-size="11" text-anchor="end">Li_2023 · CL</text><circle cx="239.0" cy="30.0" r="4" fill="#78909c"><title>Li_2023 · CL: 0.00138 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2025 · CL/F</text><circle cx="304.3" cy="46.0" r="4" fill="#ef6c00"><title>Li_2025 · CL/F: 0.002121 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Li_2025 · V</text><circle cx="418.6" cy="30.0" r="4" fill="#ef6c00"><title>Li_2025 · V: 4.5 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2023 · V</text><circle cx="432.3" cy="46.0" r="4" fill="#78909c"><title>Li_2023 · V: 4.925 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Li_2023_reference](drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Li S et al., Safety, tolerability, pharmacokinetics,…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1117293](https://doi.org/10.3389/fphar.2023.1117293) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Li_2025_reference](drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Li N et al., Safety, Tolerability, and Pharmacokinet…, Clinical pharmacology in dr… (2025) | [10.1002/cpdd.1583](https://doi.org/10.1002/cpdd.1583) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Clegg_2024_azd7442](drugs/drug_cilgavimab/Cilgavimab_Clegg2024_azd7442.md) | — | 1-compartment (no model) | 2 | Clegg LE et al., Accelerating therapeutics development d…, Antimicrobial agents and ch… (2024) | [10.1128/aac.01587-23](https://doi.org/10.1128/aac.01587-23) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ cilgavimab](drugs/drug_cilgavimab/Cilgavimab_Clegg2024_cilgavimab.md) | — | 1-compartment (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jansen_2026_reference](drugs/drug_cilgavimab/Cilgavimab_Jansen2026_reference.md) | — | 2-compartment (no model) | 3 | Jansen E et al., Characterization of the VHH-Fc construc…, PLoS medicine (2026) | [10.1371/journal.pmed.1004609](https://doi.org/10.1371/journal.pmed.1004609) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Li_2023_reference](drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Li S et al., Safety, tolerability, pharmacokinetics,…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1117293](https://doi.org/10.3389/fphar.2023.1117293) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,14 +37,6 @@ Cilgavimab is an antiviral monoclonal antibody used to treat certain viral infec
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gidari_2024_inhibition_20A_EU1](drugs/drug_cilgavimab/pd_Gidari_2024_inhibition_20A_EU1.md) | viral inhibition (plaque reduction, % of inhibition) — 20A.EU1 strain ← tixagevimab/cilgavimab · direct sigmoid Emax (Hill) effect | — | Gidari A et al., Tixagevimab/Cilgavimab: Still a Valid P…, Viruses (2024) | [10.3390/v16030354](https://doi.org/10.3390/v16030354) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gidari_2024_inhibition_EG_5](drugs/drug_cilgavimab/pd_Gidari_2024_inhibition_EG_5.md) | viral inhibition (plaque reduction, % of inhibition) — EG.5 strain ← tixagevimab/cilgavimab · direct sigmoid Emax (Hill) effect | — | Gidari A et al., Tixagevimab/Cilgavimab: Still a Valid P…, Viruses (2024) | [10.3390/v16030354](https://doi.org/10.3390/v16030354) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Stadler_2023_efficacy](drugs/drug_cilgavimab/pd_Stadler_2023_efficacy.md) | Protection from symptomatic COVID-19 infection ← cilgavimab/tixagevimab (total antibody concentration as fold of in vitro IC50) · direct sigmoid Emax (Hill) effect | — | Stadler E et al., Monoclonal antibody levels and protecti…, Nature communications (2023) | [10.1038/s41467-023-40204-1](https://doi.org/10.1038/s41467-023-40204-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cilgavimab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,13 +50,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:14 | 7:40 | 2/3/0 | 1/1/0 | 0/0/0 | 402,747/25,703 | ollama / glm-5.3-flash | 29 | 4/22 | 29/0 | 0 |
+| 2026-10-07 16:14 | 7:40 | 1/4/0 | 2/1/0 | 0/0/0 | 402,747/25,703 | ollama / glm-5.3-flash | 29 | 4/22 | 29/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 51 matched, 44 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

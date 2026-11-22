@@ -4,11 +4,11 @@
 
 # clobazam — `Clobazam_Tuo2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-10-06 18:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit for the clobazam clearance of 10.53 was invalid, preventing dimensional validation.
+> The clearance parameter for N-desmethylclobazam is assigned unit L−1, which is dimensionally incompatible with the required volume per time.
 
-<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tuo2025_reference" status="rejected" stale="true" population="Chinese children with refractory epilepsy" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tuo2025_reference" status="rejected" stale="false" population="Chinese children with refractory epilepsy" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Tuo Y, Yu X, Li S, Wang J, Liu M, Song X et al. Population Pharmacokinetics and Model-Informed Precision Dosing of Clobazam Based on the Developmental and Genetic Characteristics of Children with Epilepsy. Pharmaceutics 17(7) (2025).
@@ -40,7 +40,7 @@ Tuo Y, Yu X, Li S, Wang J, Liu M, Song X et al. Population Pharmacokinetics and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Tuo Y, Yu X, Li S, Wang J, Liu M, Song X et al. Population Pharmacokinetics and 
 
 ### Reviewer guidance
 
-**The record was rejected because the unit for the clobazam clearance of 10.53 was invalid, preventing dimensional validation.**
+**The clearance parameter for N-desmethylclobazam is assigned unit L−1, which is dimensionally incompatible with the required volume per time.**
 
-The clobazam clearance parameter, recorded as 10.53, used a unit that could not be interpreted as a standard clearance measure. This dimensional mismatch on a structural parameter caused the record to be rejected. A second reader also disagreed on several values, including the metabolite clearance of 11.83 versus 0. Extracted — clobazam: kabs 1.99 h−1, V/F 31.1 L, CL/F 10.5 L−1; N-desmethylclobazam: V1/F 29.7 L, CL/F 11.8 L−1.
+The N-desmethylclobazam clearance is reported as 11.83 with a unit of L−1. This conflicts with the required dimension of volume per time (L/h), causing the parameter to remain without a valid value. A second reader also disagreed on several parameter values, citing discrepancies such as 0 versus 11.83 for metabolite clearance. Extracted — clobazam: kabs 1.99 h−1, V/F 31.1 L, CL/F 10.5 L−1; N-desmethylclobazam: V1/F 29.7 L, CL/F 11.8 L−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clobazam, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

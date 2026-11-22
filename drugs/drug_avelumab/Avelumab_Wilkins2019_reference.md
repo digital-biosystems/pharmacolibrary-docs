@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;avelumab&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/&quot;},{&quot;label&quot;:&quot;Wilkins_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avelumab_Masters2022_reference&quot;,&quot;label&quot;:&quot;Masters_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Masters2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Vugmeyster2022_reference&quot;,&quot;label&quot;:&quot;Vugmeyster_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Wilkins2019_reference&quot;,&quot;label&quot;:&quot;Wilkins_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avelumab_Masters2022_reference&quot;,&quot;label&quot;:&quot;Masters_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Masters2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Vugmeyster2022_reference&quot;,&quot;label&quot;:&quot;Vugmeyster_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Wilkins2019_reference&quot;,&quot;label&quot;:&quot;Wilkins_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 108, model 459); the covariate scenarios were not simulated.
+> Avelumab model terminal half-life (458.5969730257959) mismatches paper values (108.0, 163.2, 136.8, 146.39999999999998, 146.0).
 
 <div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Wilkins2019_reference" status="needs_review" stale="false" population="patients with 14 tumor types across three clinical studies" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -69,13 +69,13 @@ Wilkins JJ, Brockhaus B, Dai H, Vugmeyster Y, White JT, Brar S et al. Time-Varyi
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 108, model 459); the covariate scenarios were not simulated.**
+**Avelumab model terminal half-life (458.5969730257959) mismatches paper values (108.0, 163.2, 136.8, 146.39999999999998, 146.0).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_ada), so that value has no SI equivalent. Extracted — avelumab: CL 0.0308 L/hour, V1 3.42 L, V2 0.918 L, Q 0.0313 L/hour.
+The model's simulated terminal half-life of 458.5969730257959 deviates from paper-reported values of 108.0, 163.2, 136.8, 146.39999999999998, and 146.0. Covariate scenarios were not simulated, leaving defined effects unverified. A second reader disagreed on parameter values, including an age effect on clearance that was null in this record but -0.12 in theirs. Extracted — avelumab: CL 0.0308 L/hour, V1 3.42 L, V2 0.918 L, Q 0.0313 L/hour.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of age_on_cl_cl_age_1: this record has none, the second reading -0.12; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -243,6 +243,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.568, 0 of 1 reader(s) agree | 0.568 | cross-check disputed by a second reader: verdict disputed, agreement 0.568, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 146.4 | 458.6 | 3.132 | days→SI vs simulated h |
 | T1_t_half_beta | reference | fail | 146 | 458.6 | 3.141 | hours→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 108 | 458.6 | 4.246 | days→SI vs simulated h |

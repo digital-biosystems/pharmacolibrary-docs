@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model was held back because parameters Tlag and bioavailability F defaulted to library values and age, weight, and albumin covariates were not exercised.
+> The record defines covariate effects for luspatercept clearance that the second reader did not extract, causing a cross-check dispute.
 
 <div class="pk-model-meta" hidden drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="needs_review" stale="false" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Chen N, Kassir N, Laadem A, Maxwell SE, Sriraman P, Giuseppi AC et al. Populatio
 
 ## Population and dosing
 
-**Population:** anemic patients with myelodysplastic syndromes · condition myelodysplastic syndromes · age group adult · n = &gt;=260.
+**Population:** anemic patients with myelodysplastic syndromes · condition myelodysplastic syndromes · age group adult.
 
 **Dosing:** 8.75, 70, 93.1, 122.5 mg, subcutaneous, multiple, every 21 h.
 
@@ -50,7 +50,7 @@ Chen N, Kassir N, Laadem A, Maxwell SE, Sriraman P, Giuseppi AC et al. Populatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,11 +60,11 @@ Chen N, Kassir N, Laadem A, Maxwell SE, Sriraman P, Giuseppi AC et al. Populatio
 
 ### Reviewer guidance
 
-**The model was held back because parameters Tlag and bioavailability F defaulted to library values and age, weight, and albumin covariates were not exercised.**
+**The record defines covariate effects for luspatercept clearance that the second reader did not extract, causing a cross-check dispute.**
 
-The model builder applied apparent assumptions with F=1, Fm=1, and no molar correction, while Tlag was set to a default rather than an explicit estimate. Although the record defines covariate effects for age, weight, and albumin, the simulation run only the reference individual without exercising these scenarios. Additionally, a second reader disagreed on whether the age covariate value of -0.534 belonged to clearance or volume, and omitted weight covariates entirely. Extracted — luspatercept: CL/F 0.469 L/day, V/F 9.2 L, kabs 0.456 1/day.
+The second reader failed to extract the age effect on clearance (-0.534) and the weight effect on volume (0.878). This disagreement resulted in a cross-check agreement of 0.529, leading to the needs_review verdict. The record remains unverified because the covariate parameters were not consistently recognized. Extracted — luspatercept: CL/F 0.469 L/day, V/F 9.2 L, kabs 0.456 1/day.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of age_years_on_cl_f: this record has -0.534, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of age_years_on_cl_f: this record has -0.534, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -128,20 +128,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.529 (9/17 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.529 (9/17 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[age_years_on_cl_f]` | -0.534 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
-| `gpt-oss:120b` | `parameters[theta_cl_f_age]` |  | -0.534 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_weight]` |  | 0.768 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v1_f_weight]` |  | 0.878 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss:120b` | `parameters[weight_kg_on_cl_f]` | 0.768 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[weight_kg_on_v1_f]` | 0.878 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[age_years_on_cl_f]` | -0.534 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_age]` |  | -0.534 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_weight]` |  | 0.768 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_f_weight]` |  | 0.878 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[weight_kg_on_cl_f]` | 0.768 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_kg_on_v1_f]` | 0.878 |  | only_one_extracted |
 
 </details>
 
@@ -169,15 +169,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=luspatercept) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=luspatercept) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.529, 0 of 1 reader(s) agree | 0.529 | cross-check disputed by a second reader: verdict disputed, agreement 0.529, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Absorption rate constant and lag time were not extracted from the Zhang paper, so library placeholder values were used for niclosamide.
+> For niclosamide, the absorption-rate constant ka has no reported value and was defaulted, so this record was held back.
 
 <div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Zhang2019_reference" status="needs_review" stale="false" population="" measured-compound="niclosamide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Zhang J, Bai Y, Li B, Zhou X, Si H, Zhang J. Determination and pharmacokinetics 
 
 ### Reviewer guidance
 
-**Absorption rate constant and lag time were not extracted from the Zhang paper, so library placeholder values were used for niclosamide.**
+**For niclosamide, the absorption-rate constant ka has no reported value and was defaulted, so this record was held back.**
 
-The source review did not report these parameters, leaving them at unreported defaults rather than estimated values. The model assumes first-order absorption with bioavailability set to one. A second reader disagreed on the extracted volume of distribution, citing a value of 14.938 L where this record contained null. Extracted — niclosamide: CL/F 11.4 mL/h/kg, V/F 17 L.
+The record reports CL/F of 11.426 mL/h/kg and V/F of 16.9692 L, but ka uses a library default rather than an estimate from the paper; this affects the simulated profile and is unsupported by the paper. Tlag was also defaulted, and absorption was represented as first-order depot input with apparent parameterization (F=1, Fm=1, no molar correction). A second reader disputed the verdict: agreement was 0.75, with 0 of 1 reader agreeing. Extracted — niclosamide: CL/F 11.4 mL/h/kg, V/F 17 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q57: this record has 14.706, the second reading 64.4; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,15 +122,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=niclosamide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=niclosamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

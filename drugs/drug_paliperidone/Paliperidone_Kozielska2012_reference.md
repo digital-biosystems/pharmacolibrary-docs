@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Q12/q21 (hepatic flow, 90 L/h) use library defaults, not estimates from this paper; t6_deviations.
+> Q12/q21 (hepatic flow, 90 L/h) use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="paliperidone" model-id="Paliperidone_Kozielska2012_reference" status="needs_review" stale="false" population="rats" measured-compound="risperidone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -65,7 +65,7 @@ Kozielska M, Johnson M, Pilla Reddy V, Vermeulen A, Li C, Grimwood S et al. Phar
 
 ### Reviewer guidance
 
-**Q12/q21 (hepatic flow, 90 L/h) use library defaults, not estimates from this paper; t6_deviations.**
+**Q12/q21 (hepatic flow, 90 L/h) use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
 These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — paliperidone: Fab 0.413, Frel 0.271, kabs 2.9 1/h, kabs 1.31 1/h, tlag 0.17 h, tlag 0.167 h, V1 1.28 L/kg, CLnorm 1.62 L/h/kg, … (+7).
 
@@ -194,17 +194,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_metabolite_built[paliperidone] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0847, 'CL': 2.0222222222222222e-05, 'formation': 1.4719444444444444e-05} | paliperidone = compartment M1 with its own numbers |
-| T3_metabolite_output[paliperidone] | pass |  | 1.529e-06 | C_M1 (paliperidone) must rise above 0 when the parent is dosed |
-| T3_molar_mass[paliperidone] | pass |  | {'MW': 0.4264839, 'MW_m1': 0.4264839} | formation is molecule-for-molecule |
-| T3_output_variable | pass | C_central (measured=risperidone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 11 scholar param(s) emitted or defaulted | 11 covered | all structural parameters accounted for |
-| T3_topology_template | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_metabolite_built[paliperidone] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0847, 'CL': 2.0222222222222222e-05, 'formation': 1.4719444444444444e-05} |  | paliperidone = compartment M1 with its own numbers |
+| T3_metabolite_output[paliperidone] | pass |  | 1.529e-06 |  | C_M1 (paliperidone) must rise above 0 when the parent is dosed |
+| T3_molar_mass[paliperidone] | pass |  | {'MW': 0.4264839, 'MW_m1': 0.4264839} |  | formation is molecule-for-molecule |
+| T3_output_variable | pass | C_central (measured=risperidone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 11 scholar param(s) emitted or defaulted | 11 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.485, 0 of 1 reader(s) agree | 0.485 | cross-check disputed by a second reader: verdict disputed, agreement 0.485, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

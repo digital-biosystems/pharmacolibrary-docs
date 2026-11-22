@@ -5,11 +5,11 @@
 
 # candesartan — `Candesartan_Meineke1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 07:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the central volume of distribution parameter, listed with the dimensionless unit '1', has a dimension mismatch.
+> The record was rejected due to unit mismatches for clearance, volume, and intercompartmental clearance, and abstract-only limitations.
 
-<div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Meineke1997_reference" status="rejected" stale="true" population="patients with mild to moderate essential hypertension" measured-compound="candesartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Meineke1997_reference" status="rejected" stale="false" population="patients with mild to moderate essential hypertension" measured-compound="candesartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Meineke I, Feltkamp H, Högemann A, Gundert-Remy U. Pharmacokinetics and pharmacodynamics of candesartan after administration of its pro-drug candesartan cilexetil in patients with mild to moderate essential hypertension--a population analysis. European journal of clinical pharmacology 53(3-4):221–228 (1997).
@@ -17,7 +17,7 @@ Meineke I, Feltkamp H, Högemann A, Gundert-Remy U. Pharmacokinetics and pharmac
 
 ## Population and dosing
 
-**Population:** patients with mild to moderate essential hypertension · condition essential hypertension · age group adult · n = &gt;=232.
+**Population:** patients with mild to moderate essential hypertension · condition essential hypertension · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed candesartan cilexetil, measured candesartan.
 
@@ -41,7 +41,7 @@ Meineke I, Feltkamp H, Högemann A, Gundert-Remy U. Pharmacokinetics and pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Meineke I, Feltkamp H, Högemann A, Gundert-Remy U. Pharmacokinetics and pharmac
 
 ### Reviewer guidance
 
-**The record was rejected because the central volume of distribution parameter, listed with the dimensionless unit '1', has a dimension mismatch.**
+**The record was rejected due to unit mismatches for clearance, volume, and intercompartmental clearance, and abstract-only limitations.**
 
-The central volume of distribution is recorded as 118 with the unit '1', which is dimensionally incorrect for a volume. This structural dimension mismatch caused the rejection of the candesartan model record. Extracted — candesartan: CLm/F 14.1 1.h-1, V1 118 1, V2 272 1, Q 15.4 1.h-1, t1/2β 29 h.
+Clearance (14.1 1.h-1), central volume (118), and intercompartmental clearance (15.4 1.h-1) exhibit dimension conflicts, failing to match their required physical units. The second reader found the extracted values unverified and misclassified the model parameterization as mechanistic rather than apparent. Since the data came only from the abstract, the summary statistics could not represent a fitted model. Extracted — candesartan: CLm/F 14.1 1.h-1, V1 118 1, V2 272 1, Q 15.4 1.h-1, t1/2β 29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has candesartan cilexetil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

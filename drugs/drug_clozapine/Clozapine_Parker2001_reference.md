@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The clozapine micro-rate constant kcomp of 2.7 1/h fails physiological plausibility checks, causing the model record to be rejected.
+> Clozapine’s reported clearance, 0.28 L/h, was rejected because its clearance/volume magnitude was judged physiologically implausible, suggesting a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Parker2001_reference" status="rejected" stale="false" population="rats (preclinical PK/PD study)" measured-compound="clozapine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Parker TJ, Della Pasqua OE, Loizillon E, Chezaubernard C, Jochemsen R, Danhof M.
 
 ### Reviewer guidance
 
-**The clozapine micro-rate constant kcomp of 2.7 1/h fails physiological plausibility checks, causing the model record to be rejected.**
+**Clozapine’s reported clearance, 0.28 L/h, was rejected because its clearance/volume magnitude was judged physiologically implausible, suggesting a unit or scale extraction error.**
 
-The extracted micro-rate constant for clozapine distribution is 2.7 1/h, which falls outside the expected physiological range. A second reader also disagreed with the extracted values for the micro-rate constant and the equation variable N. Consequently, the model was refused due to these parameter extraction errors. Extracted — clozapine: kcomp 2.7 1/h, CL 0.28 L/h, V1 0.14 L, Q 0.47 L/h, V2 0.31 L.
+The record reports clozapine clearance as 0.28 L/h, with central and peripheral volumes of 0.14 L and 0.31 L. The finding does not give the numerical physiological bounds or identify a specific clearance-to-volume comparison. A second reader did not report values for the distribution rate constant (2.7 1/h) or the equation parameter N (1.5); the findings do not state that these disagreements caused the rejection. Extracted — clozapine: kcomp 2.7 1/h, CL 0.28 L/h, V1 0.14 L, Q 0.47 L/h, V2 0.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of kco: this record has 2.7, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;doxazosin&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/&quot;},{&quot;label&quot;:&quot;unknown_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Donnelly_1989_2_SBP&quot;,&quot;label&quot;:&quot;Donnelly_1989_2 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Donnelly_1989_2_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Elliott_1986_SBP&quot;,&quot;label&quot;:&quot;Elliott_1986 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Elliott_1986_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meredith_1988_placebo_corrected_erect_systolic_blood_pressur&quot;,&quot;label&quot;:&quot;Meredith_1988 \u00b7 placebo-corrected erect systolic blood pressure&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Meredith_1988_placebo_corrected_erect_systolic_blood_pressur.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Reid_1990_SBP&quot;,&quot;label&quot;:&quot;Reid_1990 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Reid_1990_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vincent_1983_fall_in_systolic_blood_pressure_after_five_minu&quot;,&quot;label&quot;:&quot;Vincent_1983 \u00b7 fall in systolic blood pressure (after five minutes standing)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Vincent_1983_fall_in_systolic_blood_pressure_after_five_minu.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Kaye1986_man&quot;,&quot;label&quot;:&quot;Kaye_1986_man&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Kaye1986_man.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Kaye1986_rat&quot;,&quot;label&quot;:&quot;Kaye_1986_rat&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Kaye1986_rat.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Elliott1986_reference&quot;,&quot;label&quot;:&quot;Elliott_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Elliott1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Reid_1990_SBP&quot;,&quot;label&quot;:&quot;Reid_1990 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Reid_1990_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxazosin — `Doxazosin_unknown2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bioavailability and lag time lack values, so library defaults are used unsupported by the paper for doxazosin.
+> Record rejected because the source paper concerns another drug and bioavailability F and lag time Tlag were defaulted.
 
-<div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_unknown2023_reference" status="needs_review" stale="false" population="" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_unknown2023_reference" status="rejected" stale="false" population="" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 IPNA 2022 - Abstract Book. Pediatric nephrology (Berlin, Germany) 38(7):2255-2491 (2023).
@@ -29,7 +29,7 @@ IPNA 2022 - Abstract Book. Pediatric nephrology (Berlin, Germany) 38(7):2255-249
 <figure class="pk-models-diagram"><img src="drugs/drug_doxazosin/Doxazosin_unknown2023_reference/Doxazosin_unknown2023_reference.svg" alt="Doxazosin_unknown2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +39,7 @@ IPNA 2022 - Abstract Book. Pediatric nephrology (Berlin, Germany) 38(7):2255-249
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ IPNA 2022 - Abstract Book. Pediatric nephrology (Berlin, Germany) 38(7):2255-249
 
 ### Reviewer guidance
 
-**Bioavailability and lag time lack values, so library defaults are used unsupported by the paper for doxazosin.**
+**Record rejected because the source paper concerns another drug and bioavailability F and lag time Tlag were defaulted.**
 
-The record omits estimates for bioavailability (F) and lag time (Tlag), forcing the use of library placeholders. The second reader also disagreed on a specific value, finding null where this record lists 0.86. Extracted — doxazosin: CL 22 L h-1, V 32.9 L 70kg-1, kabs 0.077 h-1.
+The relevance screen confirmed the paper neither names nor studies doxazosin, making the extracted pharmacokinetic parameters invalid. Additionally, the model builder substituted library defaults for the bioavailability fraction and absorption lag time instead of extracting explicit estimates from the text. Extracted — doxazosin: CL 22 L h-1, V 32.9 L 70kg-1, kabs 0.077 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q88: this record has 0.86, the second reading none. That field does not shape the model.
 
@@ -62,7 +62,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | CL | `Q22` · CL | 22.0 | L h-1 | 6.111e-06 | m3/s | L/h | review (0.7) | unknown_2023:review |
-| V | `Q61` · V | 32.9 | L 70kg-1 | 2.303 | m3 | L | review (0.7) | unknown_2023:review |
+| V | `Q61` · V | 32.9 | L 70kg-1 | 0.0329 | m3 | L | review (0.7) | unknown_2023:review |
 | ka | `Q49` · kabs | 0.077 | h-1 | 2.139e-05 | 1/s | 1/h | review (0.7) | unknown_2023:review |
 
 <details class="legend">
@@ -115,18 +115,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 22 | ['unknown_2023:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 22 L/h | ['unknown_2023:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 2.3e+03 L | ['unknown_2023:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 32.9 L | ['unknown_2023:review'] |
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=doxazosin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | doxazosin (or metabolite) | paper about another drug |  | paper subject is not doxazosin: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=doxazosin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -138,61 +139,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxazosin/Doxazosin_unknown2023_reference/Doxazosin_unknown2023_reference_modelica.zip" download>Doxazosin_unknown2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_doxazosin/Doxazosin_unknown2023_reference/Doxazosin_unknown2023_reference_fmi.zip" download>Doxazosin_unknown2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_unknown2023_reference/Doxazosin_unknown2023_reference_matlab.zip" download>Doxazosin_unknown2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_unknown2023_reference/Doxazosin_unknown2023_reference_matlab_simbio.zip" download>Doxazosin_unknown2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_unknown2023_reference/Doxazosin_unknown2023_reference_sbml.zip" download>Doxazosin_unknown2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_unknown2023_reference/Doxazosin_unknown2023_reference_cellml.zip" download>Doxazosin_unknown2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4515 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 4e-06 | kg |
-| input | model | `Cl` | 6.111e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0329 | m3/kg |
-| input | model | `ka` | 2.139e-05 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): IPNA 2022 - Abstract Book. Pediatric nephrology (Berlin, Germany) 38(7):2255-2491 (2023). [doi:10.1007/s00467-022-05865-y](https://doi.org/10.1007/s00467-022-05865-y)
-
-**This record:** Pharmacolibrary, model `Doxazosin_unknown2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_doxazosin/Doxazosin_unknown2023_reference>
-
-```bibtex
-@misc{pharmacolibrary_Doxazosinunknown2023reference,
-  title  = {{Pharmacolibrary model Doxazosin_unknown2023_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_doxazosin/Doxazosin_unknown2023_reference},
-  note   = {Parameters from doi:10.1007/s00467-022-05865-y},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -206,4 +155,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxazosin%5D%20Doxazosin_unknown2023_reference&body=Drug%3A%20doxazosin%0ARecord%3A%20Doxazosin_unknown2023_reference%0APaper%3A%20unknown_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxazosin/Doxazosin_unknown2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 14:14 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 10:27 UTC</sub>

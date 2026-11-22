@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide sufficient information to determine the pharmacodynamic mechanism, including drug concentrations acting on hepatic gene expression or specific potency and rate values such as IC50 or Emax.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Jackson_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

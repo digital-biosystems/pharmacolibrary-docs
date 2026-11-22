@@ -5,11 +5,11 @@
 
 # celecoxib — `Celecoxib_Dhondt2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
-> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 02:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Celecoxib was rejected due to an unconvertible unit on a structural parameter, leaving the model without a valid SI value for evaluation.
+> Celecoxib CL (9.81 L/h.kg) was rejected because its reported unit has dimensions inconsistent with clearance.
 
-<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="true" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="false" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Dhondt L, Devreese M, Croubels S, De Baere S, Haesendonck R, Goessens T et al. Comparative population pharmacokinetics and absolute oral bioavailability of COX-2 selective inhibitors celecoxib, mavacoxib and meloxicam in cockatiels (Nymphicus hollandicus). Scientific reports 7(1):12043 (2017).
@@ -17,7 +17,7 @@ Dhondt L, Devreese M, Croubels S, De Baere S, Haesendonck R, Goessens T et al. C
 
 ## Population and dosing
 
-**Population:** cockatiels · condition healthy · n = : 34.
+**Population:** cockatiels · condition healthy.
 
 **Dosing:** 70, 280, 700 mg, oral, single.
 
@@ -49,7 +49,7 @@ Dhondt L, Devreese M, Croubels S, De Baere S, Haesendonck R, Goessens T et al. C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.238). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.238). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +59,13 @@ Dhondt L, Devreese M, Croubels S, De Baere S, Haesendonck R, Goessens T et al. C
 
 ### Reviewer guidance
 
-**Celecoxib was rejected due to an unconvertible unit on a structural parameter, leaving the model without a valid SI value for evaluation.**
+**Celecoxib CL (9.81 L/h.kg) was rejected because its reported unit has dimensions inconsistent with clearance.**
 
-The record was held back because a reported unit could not be converted to SI, so the structural parameter lacked a valid value for the model. A second reader disagreed on extracted values, citing 11.67 ng.h/mL for AUC∞ and 8.06 ng/mL for C0, in contrast to the recorded 18.81 ng.h/mL and 10.15 ng/mL. Extracted — celecoxib: CL 9.81 L/h.kg, C0 10.2 ng/mL, AUC∞ 18.8 ng.h/mL, kel 32.3 h−1, t1/2z 32.3 h, CL/F 18.8 L/h.kg, kabs 55.9 h−1, t1/2α 55.9 h, … (+3).
+The same dimension conflict was recorded for celecoxib C0 (10.15 ng/mL) and CL/F (18.82 L/h.kg). A reported unit could not be converted to SI, so the affected parameter lacked an SI value. The second reader also disputed extracted values for CL, CL/F, AUC∞, C0, Cmax, and the absorption rate constant, reporting 7.93, 11.67, 11.67, 8.06, 14.27, and 17.37, respectively. Extracted — celecoxib: CL 9.81 L/h.kg, C0 10.2 ng/mL, AUC∞ 18.8 ng.h/mL, kel 32.3 h−1, t1/2z 32.3 h, CL/F 18.8 L/h.kg, kabs 55.9 h−1, t1/2α 55.9 h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-inf].value`: this record has 18.81, the second reading 11.67; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

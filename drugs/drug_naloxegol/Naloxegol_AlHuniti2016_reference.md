@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The abstract-only record for naloxegol was held back because absorption rate constant ka and lag time Tlag were left at library defaults rather than estimated values.
+> Naloxegol record held back because absorption rate constant and lag time used library placeholders instead of estimates from the source.
 
 <div class="pk-model-meta" hidden drug="naloxegol" model-id="Naloxegol_AlHuniti2016_reference" status="needs_review" stale="false" population="healthy subjects and patients with OIC and non-OIC" measured-compound="naloxegol" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Al-Huniti N, Chapel S, Xu H, Bui KH, Sostek M. Population pharmacokinetics of na
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with OIC and non-OIC · condition opioid-induced constipation · age group adult · n = &gt;=1247.
+**Population:** healthy subjects and patients with OIC and non-OIC · condition opioid-induced constipation · age group adult.
 
 ## Model
 
@@ -38,7 +38,7 @@ Al-Huniti N, Chapel S, Xu H, Bui KH, Sostek M. Population pharmacokinetics of na
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Al-Huniti N, Chapel S, Xu H, Bui KH, Sostek M. Population pharmacokinetics of na
 
 ### Reviewer guidance
 
-**The abstract-only record for naloxegol was held back because absorption rate constant ka and lag time Tlag were left at library defaults rather than estimated values.**
+**Naloxegol record held back because absorption rate constant and lag time used library placeholders instead of estimates from the source.**
 
-Only the paper's abstract was available, so summary statistics were used instead of a fitted model, leaving ka and Tlag unreported and defaulted. The record assumes first-order absorption with an apparent clearance of 115 l h(-1) and volume of 160 l, but these lack source-specific justification. A second reader could not confirm the extracted parameter values, indicating uncertainty in the abstract-based extraction. Extracted — naloxegol: CL/F 115 l h(-1), V/F 160 l.
+The model relies on default values for the absorption rate constant and lag time rather than estimates from the paper. This occurred because only the abstract was read, so summary statistics stood in for fitted model parameters. A second reader also disagreed with the assignment of naloxegol as the measured compound, citing unknown values. Extracted — naloxegol: CL/F 115 l h(-1), V/F 160 l.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has naloxegol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has naloxegol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,18 +93,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f]` | 115 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` |  | 115 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc /f]` | 160 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc /f]` |  | 160 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | naloxegol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | naloxegol | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | 115 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 115 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc /f]` | 160 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc /f]` |  | 160 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | naloxegol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | naloxegol | unknown | mismatch |
 
 </details>
 
@@ -130,15 +130,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=naloxegol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=naloxegol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

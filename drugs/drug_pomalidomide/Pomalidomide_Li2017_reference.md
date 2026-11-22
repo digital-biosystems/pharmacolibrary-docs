@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;pomalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/&quot;},{&quot;label&quot;:&quot;Li_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pomalidomide_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Ogasawara2021_reference&quot;,&quot;label&quot;:&quot;Ogasawara_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pomalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Ogasawara2021_reference&quot;,&quot;label&quot;:&quot;Ogasawara_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pomalidomide — `Pomalidomide_Li2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 00:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit for the intercompartmental clearance parameter was unrecognizable, preventing verification of its physical dimensions.
+> Q2, the apparent intercompartmental clearance for pomalidomide, was rejected because its assigned units conflict with the model's structural dimensions.
 
-<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2017_reference" status="rejected" stale="true" population="adults with relapsed or refractory multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2017_reference" status="rejected" stale="false" population="adults with relapsed or refractory multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li Y, Wang X, O'Mara E, Dimopoulos MA, Sonneveld P, Weisel KC et al. Population pharmacokinetics of pomalidomide in patients with relapsed or refractory multiple myeloma with various degrees of impaired renal function. Clinical pharmacology : advances and applications 9:133–145 (2017).
@@ -17,7 +17,7 @@ Li Y, Wang X, O'Mara E, Dimopoulos MA, Sonneveld P, Weisel KC et al. Population 
 
 ## Population and dosing
 
-**Population:** adults with relapsed or refractory multiple myeloma · condition relapsed or refractory multiple myeloma · age group adult · n = &gt;=63.
+**Population:** adults with relapsed or refractory multiple myeloma · condition relapsed or refractory multiple myeloma · age group adult.
 
 **Dosing:** 2, 4 mg, oral, multiple, every 24 h.
 
@@ -44,7 +44,7 @@ Li Y, Wang X, O'Mara E, Dimopoulos MA, Sonneveld P, Weisel KC et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Li Y, Wang X, O'Mara E, Dimopoulos MA, Sonneveld P, Weisel KC et al. Population 
 
 ### Reviewer guidance
 
-**The record was rejected because the unit for the intercompartmental clearance parameter was unrecognizable, preventing verification of its physical dimensions.**
+**Q2, the apparent intercompartmental clearance for pomalidomide, was rejected because its assigned units conflict with the model's structural dimensions.**
 
-The parameter Q2, representing apparent intercompartmental clearance between the central and second peripheral compartments, is listed with a value of 0.221 but no associated unit. Without a recognizable unit, the physical dimension of this structural parameter could not be validated against the required volume or flow dimensions. Extracted — pomalidomide: kabs 0.526, V/F 54.5 L, CLnorm/F 5.16 L/h, CL_ratio 1.02 group 2 vs group 1, CL/F 1.02 group 3 vs group 1, tlag 0.183 h, Q2 0.221, CLint 2.58 L/h.
+The record lists the parameter with a value of 0.221 but lacks a corresponding unit field in the extraction. The dimension check flagged a mismatch between the expected units for an intercompartmental clearance and the units actually applied during the model run. Extracted — pomalidomide: kabs 0.526, V/F 54.5 L, CLnorm/F 5.16 L/h, CL_ratio 1.02 group 2 vs group 1, CL/F 1.02 group 3 vs group 1, tlag 0.183 h, Q2 0.221, CLint 2.58 L/h.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

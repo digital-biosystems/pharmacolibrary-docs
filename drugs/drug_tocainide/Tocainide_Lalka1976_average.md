@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;tocainide&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/&quot;},{&quot;label&quot;:&quot;Lalka_1976 \u00b7 average&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tocainide_Harron1987_reference&quot;,&quot;label&quot;:&quot;Harron_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Harron1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Oltmanns1983_reference&quot;,&quot;label&quot;:&quot;Oltmanns_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Oltmanns1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Wiegers1983_reference&quot;,&quot;label&quot;:&quot;Wiegers_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Wiegers1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tocainide_Harron1987_reference&quot;,&quot;label&quot;:&quot;Harron_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Harron1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Oltmanns1983_reference&quot;,&quot;label&quot;:&quot;Oltmanns_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Oltmanns1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Wiegers1983_reference&quot;,&quot;label&quot;:&quot;Wiegers_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Wiegers1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tocainide — `Tocainide_Lalka1976_average`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:35 UTC (Rejected), but the paper was screened again on 2026-10-08 23:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The steady-state volume of distribution for tocainide was rejected because its unit notation could not be translated into standard metric units.
+> Tocainide was rejected because the unit min-1 on the elimination rate constant could not be processed, causing a structural check failure.
 
-<div class="pk-model-meta" hidden drug="tocainide" model-id="Tocainide_Lalka1976_average" status="rejected" stale="true" population="healthy male subjects" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tocainide" model-id="Tocainide_Lalka1976_average" status="rejected" stale="false" population="healthy male subjects" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lalka D, Meyer MB, Duce BR, Elvin AT. Kinetics of the oral antiarrhythmic lidocaine congener, tocainide. Clinical pharmacology and therapeutics 19(6):757–766 (1976).
@@ -17,7 +17,7 @@ Lalka D, Meyer MB, Duce BR, Elvin AT. Kinetics of the oral antiarrhythmic lidoca
 
 ## Population and dosing
 
-**Population:** healthy male subjects · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy male subjects · condition healthy · age group adult.
 
 **Dosing:** 10, 300, 1000 mg, oral, iv, single.
 
@@ -47,7 +47,7 @@ Lalka D, Meyer MB, Duce BR, Elvin AT. Kinetics of the oral antiarrhythmic lidoca
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,11 +57,11 @@ Lalka D, Meyer MB, Duce BR, Elvin AT. Kinetics of the oral antiarrhythmic lidoca
 
 ### Reviewer guidance
 
-**The steady-state volume of distribution for tocainide was rejected because its unit notation could not be translated into standard metric units.**
+**Tocainide was rejected because the unit min-1 on the elimination rate constant could not be processed, causing a structural check failure.**
 
-The record lists a steady-state volume of distribution of 118.5 L, but the specific unit notation used in the source was not recognized by the validation system. Consequently, the parameter lacked a standardized metric equivalent needed for the dimensional consistency check. This validation failure resulted in the rejection of the entire model record for tocainide. Extracted — tocainide: λ1 0.064 min-1, kel 0.001 min-1, k12 0.027 min-1, k21 0.037 min-1, V 74.7 L, Vss 118 L, CLb 155 ml/min, CLR 55 ml/min, … (+2).
+The elimination rate constant (β) of 0.0010 min-1 had a unit that could not be converted to standard units, preventing the model builder from completing the structural consistency check. A second reader did not identify values for the peak concentration, AUC, or any of the clearance parameters, disagreeing with the recorded values. Extracted — tocainide: λ1 0.064 min-1, kel 0.001 min-1, k12 0.027 min-1, k21 0.037 min-1, V 74.7 L, Vss 118 L, CLb 155 ml/min, CLR 55 ml/min, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of (vd)ss: this record has 118.5, the second reading none; it also differs on 11 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of (vd)ss: this record has 118.5, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -121,24 +121,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.25 (4/16 fields) | 12 |
+| `gpt-oss-120b` | partly confirmed | 0.25 (4/16 fields) | 12 |
 
 <details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[(vd)ss]` | 118.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[a]` | 1.64 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc]` | 1622 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clb]` | 155 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clnr]` | 100 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clr]` | 55 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k12]` | 0.027 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k21]` | 0.037 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total body clearance]` |  | 166 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` | 74.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[α]` | 0.064 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[β]` | 0.0010 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[(vd)ss]` | 118.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a]` | 1.64 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 1622 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clb]` | 155 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clnr]` | 100 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr]` | 55 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 0.027 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` | 0.037 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` |  | 166 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 74.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 0.064 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.0010 |  | only_one_extracted |
 
 </details>
 

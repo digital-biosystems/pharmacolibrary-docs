@@ -5,11 +5,11 @@
 
 # topiramate — `Topiramate_Marques2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:46 UTC (Rejected), but the paper was screened again on 2026-10-04 21:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Absorption rate constant 127 percent and clearance 65 percent violate dimensional expectations for the neonatal topiramate model.
+> Topiramate's absorption rate constant (127) and clearance (65) are recorded with dimensionless units, conflicting with their required time-based dimensions.
 
-<div class="pk-model-meta" hidden drug="topiramate" model-id="Topiramate_Marques2020_reference" status="rejected" stale="true" population="neonates with hypoxic ischaemic encephalopathy undergoing therapeutic hypothermia" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="topiramate" model-id="Topiramate_Marques2020_reference" status="rejected" stale="false" population="neonates with hypoxic ischaemic encephalopathy undergoing therapeutic hypothermia" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Marques MR, Garcia-Robles A, Usach I, Vento M, Poveda JL, Peris JE et al. Topiramate pharmacokinetics in neonates undergoing therapeutic hypothermia and proposal of an optimised dosing schedule. Acta paediatrica (Oslo, Norway : 1992) 109(2):300–308 (2020).
@@ -37,7 +37,7 @@ Marques MR, Garcia-Robles A, Usach I, Vento M, Poveda JL, Peris JE et al. Topira
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Marques MR, Garcia-Robles A, Usach I, Vento M, Poveda JL, Peris JE et al. Topira
 
 ### Reviewer guidance
 
-**Absorption rate constant 127 percent and clearance 65 percent violate dimensional expectations for the neonatal topiramate model.**
+**Topiramate's absorption rate constant (127) and clearance (65) are recorded with dimensionless units, conflicting with their required time-based dimensions.**
 
-The record lists the absorption rate constant as 127 percent and clearance as 65 percent, which are dimensionally inconsistent with their standard units. Because the model was built from the abstract alone, these summary statistics stand in for fitted parameters. The second reader found these values and the dose compound unknown, preventing verification of the structural parameter units. Extracted — topiramate: V 3.22 L, kabs 127 %, CL 65 %.
+The record assigns a unit of '%' to the absorption rate constant, which physically requires a 1/time dimension. Similarly, clearance is given in '%', whereas the standard pharmacokinetic unit implies volume per time. Additionally, the record is based solely on the abstract, so these extracted values act as summary statistics rather than fitted parameters. Extracted — topiramate: V 3.22 L, kabs 127 %, CL 65 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has topiramate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/&quot;},{&quot;label&quot;:&quot;Chigutsa_2020 \u00b7 estimate_see&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 Tumor size (sum of longest diameters of target lesions)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abemaciclib — `Abemaciclib_Chigutsa2020_estimate_see`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:14 UTC (Rejected), but the paper was screened again on 2026-10-06 20:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Abemaciclib's bioavailability fraction unit, marked as 'SEE', prevented conversion to standard units, causing a structural dimension mismatch and rejection.
+> Abemaciclib’s reported maximum zero-order absorption rate of 91.1 µmol/h was refused because its unit has substance-per-time, rather than mass-per-time, dimensions.
 
-<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_estimate_see" status="rejected" stale="true" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_estimate_see" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner PK. Development and Application of a Mechanistic Population Modeling Approach to Describe Abemaciclib Pharmacokinetics. CPT: pharmacometrics & systems pharmacology 9(9):523–533 (2020).
@@ -55,7 +54,7 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.406). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.406). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +64,13 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 ### Reviewer guidance
 
-**Abemaciclib's bioavailability fraction unit, marked as 'SEE', prevented conversion to standard units, causing a structural dimension mismatch and rejection.**
+**Abemaciclib’s reported maximum zero-order absorption rate of 91.1 µmol/h was refused because its unit has substance-per-time, rather than mass-per-time, dimensions.**
 
-The absolute bioavailability parameter (Fab) has a unit value of 'SEE' rather than a standard dimensionless or percent unit, making it impossible to convert for calculation. This prevented the model from resolving the structural dimensions correctly, leading to a mismatch error. The record contains no other numerical failures, though the unit label is non-standard. Extracted — abemaciclib: Fab 0.868 %SEE, R1 91.1 µmol/h, MTT 1.44 h, V1 588 L, Q 4.57 L/h, V2 159 L, D1 3.18 h, tlag 1.74 h, … (+1); M2 (LSN2839567): CLfm 280 L/h, CL 254 L/h; M20 (LSN3106726): CLfm 705 L/h, CL 431 L/h.
+The record gives 91.1 µmol/h for the maximum absorption rate, defined as the zero-order input rate into the dosing compartment. The reported unit was unavailable for conversion to SI, and its substance-per-time dimension conflicted with the mass-per-time dimension required for this parameter. Extracted — abemaciclib: Fab 0.868 %SEE, R1 91.1 µmol/h, MTT 1.44 h, V1 588 L, Q 4.57 L/h, V2 159 L, D1 3.18 h, tlag 1.74 h, … (+1); M2 (LSN2839567): CLfm 280 L/h, CL 254 L/h; M20 (LSN3106726): CLfm 705 L/h, CL 431 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has abemaciclib → m2 (lsn2839567) (metabolism); abemaciclib → m20 (lsn3106726) (metabolism), the second reading abemaciclib → m2 (metabolism); abemaciclib → m20 (metabolism); it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

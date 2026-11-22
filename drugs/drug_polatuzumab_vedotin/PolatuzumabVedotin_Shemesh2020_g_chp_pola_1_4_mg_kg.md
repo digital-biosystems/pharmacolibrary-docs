@@ -4,11 +4,11 @@
 
 # polatuzumab vedotin — `PolatuzumabVedotin_Shemesh2020_g_chp_pola_1_4_mg_kg`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:28 UTC (Needs review), but the paper was screened again on 2026-10-07 19:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; aUC∞ has no unit.
+> AUC∞ has no unit.
 
-<div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Shemesh2020_g_chp_pola_1_4_mg_kg" status="needs_review" stale="true" population="patients with B-cell non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Shemesh2020_g_chp_pola_1_4_mg_kg" status="needs_review" stale="false" population="patients with B-cell non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shemesh CS, Agarwal P, Lu T, Lee C, Dere RC, Li X et al. Pharmacokinetics of polatuzumab vedotin in combination with R/G-CHP in patients with B-cell non-Hodgkin lymphoma. Cancer chemotherapy and pharmacology 85(5):831–842 (2020).
@@ -41,7 +41,7 @@ Shemesh CS, Agarwal P, Lu T, Lee C, Dere RC, Li X et al. Pharmacokinetics of pol
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Shemesh CS, Agarwal P, Lu T, Lee C, Dere RC, Li X et al. Pharmacokinetics of pol
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance; aUC∞ has no unit.**
+**AUC∞ has no unit.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. None of the extracted parameters is polatuzumab vedotin's own; they describe acMMAE. Extracted — acMMAE: Cmax 1.93e+03 ng/mL, AUC∞ 5.18 ng day/mL, t1/2z 67.6 day, Vss 13.2 mL/kg.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. None of the extracted parameters is polatuzumab vedotin's own; they describe acMMAE. Extracted — acMMAE: Cmax 1.93e+03 ng/mL, AUC∞ 5.18 ng day/mL, t1/2z 67.6 day, Vss 13.2 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polatuzumab vedotin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

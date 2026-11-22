@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D03A&quot;,&quot;href&quot;:&quot;atc/D03A.md&quot;},{&quot;label&quot;:&quot;hyaluronic acid&quot;,&quot;href&quot;:&quot;drugs/drug_hyaluronic_acid/&quot;},{&quot;label&quot;:&quot;Jeon_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HyaluronicAcid_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HyaluronicAcid_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hyaluronic acid — `HyaluronicAcid_Jeon2013_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="hyaluronic acid" model-id="HyaluronicAcid_Jeon2013_reference" status="simulated" stale="false" population="" measured-compound="hyaluronic_acid" parameterization="apparent" topology="1C"></div>
+> The second reader disagreed with the extracted hyaluronic acid parameters, preventing verification of the review reference values.
+
+<div class="pk-model-meta" hidden drug="hyaluronic acid" model-id="HyaluronicAcid_Jeon2013_reference" status="needs_review" stale="false" population="" measured-compound="hyaluronic_acid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Jeon S, Juhn JH, Han S, Lee J, Hong T, Paek J et al. Saturable human neopterin response to interferon-α assessed by a pharmacokinetic-pharmacodynamic model. Journal of translational medicine 11:240 (2013).
@@ -27,6 +29,8 @@ Jeon S, Juhn JH, Han S, Lee J, Hong T, Paek J et al. Saturable human neopterin r
 <figure class="pk-models-diagram"><img src="drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference/HyaluronicAcid_Jeon2013_reference.svg" alt="HyaluronicAcid_Jeon2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 12.2 | L/h |
@@ -36,7 +40,7 @@ Jeon S, Juhn JH, Han S, Lee J, Hong T, Paek J et al. Saturable human neopterin r
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Jeon S, Juhn JH, Han S, Lee J, Hong T, Paek J et al. Saturable human neopterin r
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The second reader disagreed with the extracted hyaluronic acid parameters, preventing verification of the review reference values.**
+
+The source text is a secondary review reference, so the parameters are reported estimates rather than fitted model values. A cross-check failed because the second reader could not agree on the extracted values, resulting in an agreement score of 0.471. The second reader specifically contested the values for absorption rate constant and volume of distribution, identifying discrepancies in the reported numbers. Extracted — hyaluronic acid: CL/F 12.2 L/h, V/F 691 L, tlag 85.7 h, kabs 0.00653 h-1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q312: this record has 26.1, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -124,15 +130,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=hyaluronic_acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=hyaluronic_acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

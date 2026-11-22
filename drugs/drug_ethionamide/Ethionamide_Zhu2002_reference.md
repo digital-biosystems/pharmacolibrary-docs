@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;ethionamide&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/&quot;},{&quot;label&quot;:&quot;Zhu_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethionamide_Abdelgawad2024_reference&quot;,&quot;label&quot;:&quot;Abdelgawad_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Abdelgawad2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_AlShaer2020_reference&quot;,&quot;label&quot;:&quot;Al-Shaer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_AlShaer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Asiimwe2026_reference&quot;,&quot;label&quot;:&quot;Asiimwe_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Asiimwe2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Zhu2002_reference&quot;,&quot;label&quot;:&quot;Zhu_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Zhu2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ethionamide_van2021_reference&quot;,&quot;label&quot;:&quot;van_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_van2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethionamide_AlShaer2020_reference&quot;,&quot;label&quot;:&quot;Al-Shaer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_AlShaer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Zhu2002_reference&quot;,&quot;label&quot;:&quot;Zhu_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Zhu2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ethionamide_Abdelgawad2024_reference&quot;,&quot;label&quot;:&quot;Abdelgawad_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Abdelgawad2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Asiimwe2026_reference&quot;,&quot;label&quot;:&quot;Asiimwe_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Asiimwe2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_van2021_reference&quot;,&quot;label&quot;:&quot;van_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_van2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ethionamide's bioavailability was not estimated from the abstract, forcing the use of library placeholder values instead of paper-specific data.
+> Bioavailability for ethionamide was left at unextracted placeholder values, unsupported by the abstract-only source.
 
 <div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Zhu2002_reference" status="needs_review" stale="false" population="patients with tuberculosis" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Zhu M, Namdar R, Stambaugh JJ, Starke JR, Bulpitt AE, Berning SE et al. Populati
 
 ## Population and dosing
 
-**Population:** patients with tuberculosis · condition tuberculosis · age group adult · n = &gt;= 14.
+**Population:** patients with tuberculosis · condition tuberculosis · age group adult.
 
 ## Model
 
@@ -52,9 +52,9 @@ Zhu M, Namdar R, Stambaugh JJ, Starke JR, Bulpitt AE, Berning SE et al. Populati
 
 ### Reviewer guidance
 
-**Ethionamide's bioavailability was not estimated from the abstract, forcing the use of library placeholder values instead of paper-specific data.**
+**Bioavailability for ethionamide was left at unextracted placeholder values, unsupported by the abstract-only source.**
 
-The record reports clearance of 1.88 l/h/kg and volume of distribution of 3.22 l/kg, but the bioavailability parameter is missing. Consequently, the model relied on standard library values rather than estimates derived from this tuberculosis patient population. This reliance on unreported defaults caused the record to be held for review. Extracted — ethionamide: V 3.22 l/kg, CL 1.88 l/h/kg, AUC 3.95 mg*h/L, t1/2z 1.94 h, kabs 1.02 h Ϫ1, tlag 0.43 h.
+The bioavailability parameter (F) was not extracted from the paper, so a library placeholder would have been used, holding the model back. A second reader disputed all parameter values, finding them unreadable from the abstract. The cross-check failed with an agreement ratio of 0.125, indicating complete disagreement with the second reader. Extracted — ethionamide: V 3.22 l/kg, CL 1.88 l/h/kg, AUC 3.95 mg*h/L, t1/2z 1.94 h, kabs 1.02 h Ϫ1, tlag 0.43 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ethionamide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -153,14 +153,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ethionamide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ethionamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

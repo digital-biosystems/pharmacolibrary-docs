@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> End-tidal isoflurane concentrations (EtIso) act on the burst suppression ratio (BS) via a sigmoidal Emax model with a baseline E0 of 0% and an Emax of 9.4%, reflecting an increase in BS with rising drug concentration. The fitted potency and steepness parameters are EC50 = 1.75% and gamma (γ) = 9.95, respectively.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Sousa_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

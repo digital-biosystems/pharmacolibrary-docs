@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;rimegepant&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/&quot;},{&quot;label&quot;:&quot;Comisar_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rimegepant_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rimegepant_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rimegepant — `Rimegepant_Comisar2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="simulated" stale="false" population="pediatric and adult" measured-compound="rimegepant" parameterization="apparent" topology="2C"></div>
+> Rimegepant’s body-weight effect on apparent clearance and intercompartmental clearance, 0.575, was not exercised, and a second reader disputed its inclusion.
+
+<div class="pk-model-meta" hidden drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="needs_review" stale="false" population="pediatric and adult" measured-compound="rimegepant" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Comisar CM, Hughes JH, Mo G, Bhardwaj R, Jakate A, Lim CN et al. Exposure Matching Using Population Pharmacokinetic Modeling and Simulation to Support Rimegepant Dose Selection for Pediatric Patients With Migraine. Clinical and translational science 18(10):e70360 (2025).
@@ -29,6 +31,8 @@ Comisar CM, Hughes JH, Mo G, Bhardwaj R, Jakate A, Lim CN et al. Exposure Matchi
 <figure class="pk-models-diagram"><img src="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference.svg" alt="Rimegepant_Comisar2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | CL/F, L/h | CL/F | 25.2 | L/h | 4.8 | 32.3 (4.7% RSE) |
@@ -52,7 +56,7 @@ Comisar CM, Hughes JH, Mo G, Bhardwaj R, Jakate A, Lim CN et al. Exposure Matchi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,13 +66,13 @@ Comisar CM, Hughes JH, Mo G, Bhardwaj R, Jakate A, Lim CN et al. Exposure Matchi
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Rimegepant’s body-weight effect on apparent clearance and intercompartmental clearance, 0.575, was not exercised, and a second reader disputed its inclusion.**
 
-The base model was simulated, not the covariate effects the record defines.
+The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader disputed the 0.575 body-weight effect and the −0.331 fed effect; cross-reader agreement was 0.588, with 0 of 1 reader agreeing. The model builder defaulted Tlag and assumed F=1 and Fm=1, with no molar correction, under apparent parameterization. Extracted — rimegepant: CL/F 25.2 L/h, V1/F 113 L, V2/F 46.8 L, Q/F 4.16 L/h, ktr 8.42 1/h, kabs 3.05 1/h, Fab 0.192.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rimegepant, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -183,15 +187,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=rimegepant) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=rimegepant) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.588, 0 of 1 reader(s) agree | 0.588 | cross-check disputed by a second reader: verdict disputed, agreement 0.588, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

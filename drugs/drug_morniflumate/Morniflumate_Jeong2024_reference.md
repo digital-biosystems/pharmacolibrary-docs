@@ -4,11 +4,11 @@
 
 # morniflumate — `Morniflumate_Jeong2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 01:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Morniflumate was rejected because ninic acid is an unreachable metabolite and kabs has a unit mismatch.
+> Morniflumate record rejected due to absorption rate constant unit error and unlinked ninic acid metabolite compartment.
 
-<div class="pk-model-meta" hidden drug="morniflumate" model-id="Morniflumate_Jeong2024_reference" status="rejected" stale="true" population="healthy Korean men" measured-compound="morniflumate" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="morniflumate" model-id="Morniflumate_Jeong2024_reference" status="rejected" stale="false" population="healthy Korean men" measured-compound="morniflumate" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate in healthy Korean men: extending pharmacometrics analysis to niflumic acid, its major active metabolite. Naunyn-Schmiedeberg's archives of pharmacology 397(2):843–856 (2024).
@@ -39,7 +39,7 @@ Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate 
 
 ### Reviewer guidance
 
-**Morniflumate was rejected because ninic acid is an unreachable metabolite and kabs has a unit mismatch.**
+**Morniflumate record rejected due to absorption rate constant unit error and unlinked ninic acid metabolite compartment.**
 
-The record lists ninic acid as a metabolite formed from morniflumate, yet it has no distribution volume parameter and no path from the dose. Additionally, the absorption rate constant kabs is reported with units of L/h instead of 1/h. A second reader disputed the metabolite link and identified missing parameters for peripheral clearance and inter-compartmental rate. Extracted — morniflumate: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, kabs 9.89 L/h.
+The absorption rate constant is labeled with volume/time units (L/h) instead of inverse time, creating a dimension mismatch. The ninic acid metabolite lacks a defined input pathway from the parent compound, leaving it orphaned. A second reader also identified additional missing clearance and transfer parameters not captured in the current record. Extracted — morniflumate: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, kabs 9.89 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has morniflumate, the second reading morni umate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

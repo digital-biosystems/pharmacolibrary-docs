@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;formoterol&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/&quot;},{&quot;label&quot;:&quot;Back_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_van_1999_potassium&quot;,&quot;label&quot;:&quot;van_1999 \u00b7 potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/pd_van_1999_potassium.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Formoterol_van1998_reference&quot;,&quot;label&quot;:&quot;van_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_van1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_1999_potassium&quot;,&quot;label&quot;:&quot;van_1999 \u00b7 potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/pd_van_1999_potassium.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # formoterol — `Formoterol_Back2020_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:31 UTC (Needs review), but the paper was screened again on 2026-10-07 13:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Formoterol parameters were assigned budesonide values, and bioavailability and lag time were left at placeholder levels rather than paper estimates.
 
-<div class="pk-model-meta" hidden drug="formoterol" model-id="Formoterol_Back2020_reference" status="extracted" stale="true" population="adults with moderate asthma" measured-compound="formoterol" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="formoterol" model-id="Formoterol_Back2020_reference" status="needs_review" stale="false" population="adults with moderate asthma" measured-compound="formoterol" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Back HM, Lee JB, Kim A, Park SJ, Kim J, Chae JW et al. Exposure-Response and Clinical Outcome Modeling of Inhaled Budesonide/Formoterol Combination in Asthma Patients. Pharmaceutics 12(4) (2020).
@@ -31,6 +31,8 @@ Back HM, Lee JB, Kim A, Park SJ, Kim J, Chae JW et al. Exposure-Response and Cli
 <figure class="pk-models-diagram"><img src="drugs/drug_formoterol/Formoterol_Back2020_reference/Formoterol_Back2020_reference.svg" alt="Formoterol_Back2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL (L·hr−1) [Budesonide] | CL | 18.4 | L·hr−1 |
@@ -41,7 +43,7 @@ Back HM, Lee JB, Kim A, Park SJ, Kim J, Chae JW et al. Exposure-Response and Cli
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.529), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.588), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +53,11 @@ Back HM, Lee JB, Kim A, Park SJ, Kim J, Chae JW et al. Exposure-Response and Cli
 
 ### Reviewer guidance
 
-**Bioavailability and lag time lacked explicit estimates, forcing the use of generic library placeholders instead of paper-specific data for formoterol.**
+**Formoterol parameters were assigned budesonide values, and bioavailability and lag time were left at placeholder levels rather than paper estimates.**
 
-The record assigns clearance and volume parameters labeled for budesonide to formoterol, creating a structural mismatch. Bioavailability and absorption lag time have no extracted values, so standard library values were used by default. These unreported inputs mean the two-compartment model does not reflect the specific paper's data. Extracted — formoterol: CL 18.4 L·hr−1, V1 216 L, V2 106 L, Q 88.3 L·hr−1, kabs 19.7 hr−1.
+The record lists total clearance as 18.4 L/hr and central volume as 216.0 L, but the labels explicitly identify these as budesonide parameters. Bioavailability and lag time were not extracted from the paper, so the model would use generic library placeholders instead of specific estimates for formoterol. A second reader disputed the central volume, proposing 1250 L against the recorded 216.0 L. Extracted — formoterol: CL 18.4 L·hr−1, V1 216 L, V2 106 L, Q 88.3 L·hr−1, kabs 19.7 hr−1.
 
-A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has none, the second reading 77.4; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has none, the second reading 77.4; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -90,10 +92,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | not confirmed | 0.529 (9/17 fields) | 8 |
+| `glm-5.3-flash` | not confirmed | 0.588 (10/17 fields) | 7 |
 | `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -101,7 +103,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `glm-5.3-flash` | `values[Q315]` |  | 64.2 | only_one_extracted |
 | `glm-5.3-flash` | `values[Q324]` |  | 85.8 | only_one_extracted |
 | `glm-5.3-flash` | `values[Q32]` |  | 1.0 | only_one_extracted |
-| `glm-5.3-flash` | `values[Q43]` | 0.38 | 0.38 | mismatch |
 | `glm-5.3-flash` | `values[Q63]` | 216 | 1250 | mismatch |
 | `glm-5.3-flash` | `values[Q74]` |  | 3.59 | only_one_extracted |
 | `glm-5.3-flash` | `values[Q86]` |  | 19.7 | only_one_extracted |
@@ -134,14 +135,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=formoterol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=formoterol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.588, 0 of 1 reader(s) agree | 0.588 | cross-check disputed by a second reader: verdict disputed, agreement 0.588, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

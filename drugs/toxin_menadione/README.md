@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Menadione&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Menadione_Hu1996_reference&quot;,&quot;label&quot;:&quot;Hu_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_menadione/Menadione_Hu1996_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Menadione_Hu1996_reference&quot;,&quot;label&quot;:&quot;Hu_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_menadione/Menadione_Hu1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Menadione
 
@@ -33,7 +33,7 @@ Menadione is a synthetic naphthoquinone without the isoprenoid side chain and bi
 
 ## Start here
 
-> **Hu_1996_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> rabbits. [Run it in the simulator](drugs/toxin_menadione/Menadione_Hu1996_reference.md?tab=Simulation) · [record](drugs/toxin_menadione/Menadione_Hu1996_reference.md)
+> **Hu_1996_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> rabbits. [Run it in the simulator](drugs/toxin_menadione/Menadione_Hu1996_reference.md?tab=Simulation) · [record](drugs/toxin_menadione/Menadione_Hu1996_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -41,21 +41,21 @@ Menadione is a synthetic naphthoquinone without the isoprenoid side chain and bi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Hu_1996_reference](drugs/toxin_menadione/Menadione_Hu1996_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Hu OY et al., A pharmacokinetic study with the high-d…, Biopharmaceutics & drug dis… (1996) | [10.1002/(SICI)1099-081X(199608)17:6&lt;493::AID-BDD972&gt;3.0.CO;2-6](https://doi.org/10.1002/(SICI)1099-081X(199608)17:6&lt;493::AID-BDD972&gt;3.0.CO;2-6) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Hu_1996_reference](drugs/toxin_menadione/Menadione_Hu1996_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Hu OY et al., A pharmacokinetic study with the high-d…, Biopharmaceutics & drug dis… (1996) | [10.1002/(SICI)1099-081X(199608)17:6&lt;493::AID-BDD972&gt;3.0.CO;2-6](https://doi.org/10.1002/(SICI)1099-081X(199608)17:6&lt;493::AID-BDD972&gt;3.0.CO;2-6) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Bhattacharya_1987_mutagenic_activity_of_aflatoxin_B1](drugs/toxin_menadione/pd_Bhattacharya_1987_mutagenic_activity_of_aflatoxin_B1.md) | mutagenic activity of aflatoxin B1 ← menadione · inhibition effect | — | Bhattacharya RK et al., Modifying role of dietary factors on th…, Mutation research (1987) | [10.1016/0165-1218(87)90100-5](https://doi.org/10.1016/0165-1218(87)90100-5) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [Huveneers-Oorsprong_1997_cell_viability](drugs/toxin_menadione/pd_Huveneers_Oorsprong_1997_cell_viability.md) | cell viability ← menadione · indirect response — drug inhibits the loss of cell viability | model (no simulator) | Huveneers-Oorsprong MB et al., The use of the MTT test for determining…, Toxicology in vitro : an in… (1997) | [10.1016/s0887-2333(97)00022-2](https://doi.org/10.1016/s0887-2333(97)00022-2) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">in vitro</span> | [Bhattacharya_1987_mutagenic_activity_of_aflatoxin_B1](drugs/toxin_menadione/pd_Bhattacharya_1987_mutagenic_activity_of_aflatoxin_B1.md) | mutagenic activity of aflatoxin B1 ← menadione · inhibition effect | — | Bhattacharya RK et al., Modifying role of dietary factors on th…, Mutation research (1987) | [10.1016/0165-1218(87)90100-5](https://doi.org/10.1016/0165-1218(87)90100-5) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">pig</span> | [Huveneers-Oorsprong_1997_cell_viability](drugs/toxin_menadione/pd_Huveneers_Oorsprong_1997_cell_viability.md) | cell viability ← menadione · indirect response — drug inhibits the loss of cell viability | model (no simulator) | Huveneers-Oorsprong MB et al., The use of the MTT test for determining…, Toxicology in vitro : an in… (1997) | [10.1016/s0887-2333(97)00022-2](https://doi.org/10.1016/s0887-2333(97)00022-2) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Seager_2014_MN](drugs/toxin_menadione/pd_Seager_2014_MN.md) | micronucleus frequency biomarker turnover ← menadione | — | Seager AL et al., Recommendations, evaluation and validat…, Mutagenesis (2014) | [10.1093/mutage/geu008](https://doi.org/10.1093/mutage/geu008) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | **NQO1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Glorieux_2019](drugs/toxin_menadione/pgx_Glorieux_2019_NQO1_Q100.md) | Glorieux C et al., Cancer Cell Sensitivity to Redox-Cyclin…, Antioxidants (Basel, Switze… (2019) | [10.3390/antiox8090369](https://doi.org/10.3390/antiox8090369) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.95).">in vitro</span> | **NQO1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Glorieux_2019](drugs/toxin_menadione/pgx_Glorieux_2019_NQO1_Q100.md) | Glorieux C et al., Cancer Cell Sensitivity to Redox-Cyclin…, Antioxidants (Basel, Switze… (2019) | [10.3390/antiox8090369](https://doi.org/10.3390/antiox8090369) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -63,21 +63,6 @@ Menadione is a synthetic naphthoquinone without the isoprenoid side chain and bi
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=menadione).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
-| metabolism | liver | `AOX1` inhibitor, `CYP1A2` inducer/inhibitor, `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `CYP3A7` inhibitor, `NQO1` unknown, `XDH` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` inducer/inhibitor, `CYP1B1` inhibitor | DrugBank actor |
-| metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inducer/inhibitor, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `XDH` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: BGLAP (target), F2 (activator), F9 (activator), GGCX (cofactor), MTHFR (substrate), NQO2 (unknown), PROC (activator), PROS1 (activator), VKORC1 (cofactor), VKORC1L1 (cofactor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

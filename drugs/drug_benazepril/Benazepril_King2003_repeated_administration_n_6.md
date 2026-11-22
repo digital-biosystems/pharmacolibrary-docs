@@ -4,11 +4,11 @@
 
 # benazepril — `Benazepril_King2003_repeated_administration_n_6`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-07 05:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the elimination rate constant for benazeprilat has a dimension mismatch, and the absorption rate constant is assigned a time unit (h) rather than a rate unit.
+> Benazeprilat’s kel (0.0001 h) and kabs (0.62 h) are reported in hours although both represent rate constants, contributing to rejection.
 
-<div class="pk-model-meta" hidden drug="benazepril" model-id="Benazepril_King2003_repeated_administration_n_6" status="rejected" stale="true" population="cats" measured-compound="benazeprilat" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="benazepril" model-id="Benazepril_King2003_repeated_administration_n_6" status="rejected" stale="false" population="cats" measured-compound="benazeprilat" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the disposition and effect of benazepril and benazeprilat in cats. Journal of veterinary pharmacology and therapeutics 26(3):213–224 (2003).
@@ -47,7 +47,7 @@ King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +57,13 @@ King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the 
 
 ### Reviewer guidance
 
-**The record was rejected because the elimination rate constant for benazeprilat has a dimension mismatch, and the absorption rate constant is assigned a time unit (h) rather than a rate unit.**
+**Benazeprilat’s kel (0.0001 h) and kabs (0.62 h) are reported in hours although both represent rate constants, contributing to rejection.**
 
-The record identifies the parameter labeled "T 1/2 K 10 (h)" as the elimination rate constant but assigns it the value 0.0001 with the unit "h" (hours), which is dimensionally incorrect for a rate constant. Additionally, the parameter labeled "T 1/2 K a (h)" is identified as the absorption rate constant with the value 0.62 and unit "h", further indicating a confusion between half-life and rate constant units. A second reader disagreed on the specific identification of these parameters, noting that the values associated with the labels "T 1/2 K a" and "T 1/2 K 10" were swapped or misidentified in the record. Extracted — benazeprilat: V/F 1.95 L/kg, kel 0.0001 h, Bmax 74 ng/mL, Cmax 17.2 nmol/L, KD 0.0019 ng/mL, Fab 9.4 n ¼ 6, kabs 0.62 h, AUC∞ 1.14e+03 n ¼ 6.
+The record defines kel (0.0001 h) and kabs (0.62 h) as elimination and absorption rate constants, but reports each in hours rather than inverse time. Cmax is 17.2 nmol/L, a concentration unit judged incompatible with mass per volume; a reported unit also could not be converted to SI. The second reader disagreed on whether kabs was extracted as 0.62 or was absent. Extracted — benazeprilat: V/F 1.95 L/kg, kel 0.0001 h, Bmax 74 ng/mL, Cmax 17.2 nmol/L, KD 0.0019 ng/mL, Fab 9.4 n ¼ 6, kabs 0.62 h, AUC∞ 1.14e+03 n ¼ 6.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of t 1/2 k a: this record has none, the second reading 0.62; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Di-n-octyltin dichloride&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiNOctyltinDichloride_Penninks1987_reference&quot;,&quot;label&quot;:&quot;Penninks_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_di_n_octyltin_dichloride/DiNOctyltinDichloride_Penninks1987_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiNOctyltinDichloride_Penninks1987_reference&quot;,&quot;label&quot;:&quot;Penninks_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_di_n_octyltin_dichloride/DiNOctyltinDichloride_Penninks1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Di-n-octyltin dichloride
 
@@ -29,7 +29,7 @@ Di-n-octyltin dichloride is an organotin compound. Tin is a chemical element wit
 
 ## Start here
 
-> **Penninks_1987_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> rats. [Run it in the simulator](drugs/toxin_di_n_octyltin_dichloride/DiNOctyltinDichloride_Penninks1987_reference.md?tab=Simulation) · [record](drugs/toxin_di_n_octyltin_dichloride/DiNOctyltinDichloride_Penninks1987_reference.md)
+> **Penninks_1987_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> rats. [Run it in the simulator](drugs/toxin_di_n_octyltin_dichloride/DiNOctyltinDichloride_Penninks1987_reference.md?tab=Simulation) · [record](drugs/toxin_di_n_octyltin_dichloride/DiNOctyltinDichloride_Penninks1987_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -37,7 +37,7 @@ Di-n-octyltin dichloride is an organotin compound. Tin is a chemical element wit
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Penninks_1987_reference](drugs/toxin_di_n_octyltin_dichloride/DiNOctyltinDichloride_Penninks1987_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Penninks AH et al., The absorption, tissue distribution and…, Toxicology (1987) | [10.1016/0300-483x(87)90050-3](https://doi.org/10.1016/0300-483x(87)90050-3) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Penninks_1987_reference](drugs/toxin_di_n_octyltin_dichloride/DiNOctyltinDichloride_Penninks1987_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Penninks AH et al., The absorption, tissue distribution and…, Toxicology (1987) | [10.1016/0300-483x(87)90050-3](https://doi.org/10.1016/0300-483x(87)90050-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

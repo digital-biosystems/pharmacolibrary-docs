@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Chong_1988 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Nelson1982_vinblastine&quot;,&quot;label&quot;:&quot;Nelson_1982_vinblastine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Nelson1982_vinblastine.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Chong1988_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:50 UTC (Needs review), but the paper was screened again on 2026-11-04 18:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; aUC has no unit.
+> This paper's disposition core is incomplete; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Chong1988_reference" status="needs_review" stale="true" population="adults with primary testicular cancer" measured-compound="vinblastine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Chong1988_reference" status="needs_review" stale="false" population="patients with primary testicular cancer" measured-compound="vinblastine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Chong CD, Logothetis CJ, Savaraj N, Fritsche HA, Gietner AM, Samuels ML. The correlation of vinblastine pharmacokinetics to toxicity in testicular cancer patients. Journal of clinical pharmacology 28(8):714–718 (1988).
@@ -17,7 +17,7 @@ Chong CD, Logothetis CJ, Savaraj N, Fritsche HA, Gietner AM, Samuels ML. The cor
 
 ## Population and dosing
 
-**Population:** adults with primary testicular cancer · condition primary testicular cancer · age group adult · n = &gt;9.
+**Population:** adults with primary testicular cancer · condition primary testicular cancer · age group adult.
 
 **Dosing:** 3 mg/m2, iv, multiple, every 24 h.
 
@@ -38,11 +38,11 @@ Chong CD, Logothetis CJ, Savaraj N, Fritsche HA, Gietner AM, Samuels ML. The cor
 | t1/2 (hr) | t1/2z | .11 | hr |
 | CLs (L/kg/h) | CLnorm/F | .07 | L/kg/h |
 | Vds (L/kg) | Vnorm | .07 | L/kg |
-| apparent volume of distribution (Vd) | V/F | 70.0 | L/kg |
+| apparent Vd | V/F | 75.0 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Chong CD, Logothetis CJ, Savaraj N, Fritsche HA, Gietner AM, Samuels ML. The cor
 
 **This paper's disposition core is incomplete; aUC has no unit.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Levêque_1996) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Css and AUC), so that value has no SI equivalent. Extracted — vinblastine: Css 0.02 ng/mL, AUC 0.02 ng/mL × hr, t1/2z 0.11 hr, CLnorm/F 0.07 L/kg/h, Vnorm 0.07 L/kg, V/F 70 L/kg.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Levêque_1996) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Css and AUC), so that value has no SI equivalent. Extracted — vinblastine: Css 0.02 ng/mL, AUC 0.02 ng/mL × hr, t1/2z 0.11 hr, CLnorm/F 0.07 L/kg/h, Vnorm 0.07 L/kg, V/F 75 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vinblastine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -69,7 +69,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | t1/2 (hr) | `Q57` · t1/2z | .11 | hr | 396 | s | h | exact (1) | Chong_1988_table_3:row3:col4 |
 | CLs (L/kg/h) | `Q355` · CLnorm/F | .07 | L/kg/h | 1.361e-06 | m3/s | l/(h·kg) | llm (0.6) | Chong_1988_table_3:row4:col4 |
 | Vds (L/kg) | `Q352` · Vnorm | .07 | L/kg | 0.0049 | m3 | l/kg | llm (0.6) | Chong_1988_table_3:row5:col4 |
-| apparent volume of distribution (Vd) | `Q76` · V/F | 70.0 | L/kg | 4.9 | m3 | L | review_gapfill (0.7) | Levêque_1996:review |
+| apparent Vd | `Q76` · V/F | 75.0 | L/kg | 5.25 | m3 | L | review_gapfill (0.7) | Levêque_1996:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ng/mL × hr | ['Chong_1988_table_3:row2:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q76 | pass | volume within physiological range | 4.9e+03 L | ['Levêque_1996:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 5.25e+03 L | ['Levêque_1996:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -170,4 +170,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Chong1988_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Chong1988_reference%0APaper%3A%20Chong_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Chong1988_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 18:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:11 UTC</sub>

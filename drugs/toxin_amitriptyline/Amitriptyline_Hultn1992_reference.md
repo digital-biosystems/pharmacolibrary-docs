@@ -137,30 +137,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_amitriptyline/Amitriptyline_Hultn1992_reference/Amitriptyline_Hultn1992_reference_matlab.zip" download>Amitriptyline_Hultn1992_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_amitriptyline/Amitriptyline_Hultn1992_reference/Amitriptyline_Hultn1992_reference_sbml.zip" download>Amitriptyline_Hultn1992_reference_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_amitriptyline/Amitriptyline_Hultn1992_reference/Amitriptyline_Hultn1992_reference_cellml.zip" download>Amitriptyline_Hultn1992_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Hultén BA, Heath A, Knudsen K, Nyberg G, Svensson C, Mårtensson E. Amitriptyline and amitriptyline metabolites in blood and cerebrospinal fluid following human overdose. Journal of toxicology. Clinical toxicology 30(2):181–201 (1992). [doi:10.3109/15563659209038630](https://doi.org/10.3109/15563659209038630)
-
-**This record:** Pharmacolibrary, model `Amitriptyline_Hultn1992_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_amitriptyline/Amitriptyline_Hultn1992_reference>
-
-```bibtex
-@misc{pharmacolibrary_AmitriptylineHultn1992reference,
-  title  = {{Pharmacolibrary model Amitriptyline_Hultn1992_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_amitriptyline/Amitriptyline_Hultn1992_reference},
-  note   = {Parameters from doi:10.3109/15563659209038630},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

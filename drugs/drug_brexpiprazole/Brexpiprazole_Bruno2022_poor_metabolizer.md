@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Bruno_2022 \u00b7 poor_metabolizer&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Bruno2022_extensive_metabolizer&quot;,&quot;label&quot;:&quot;Bruno_2022_extensive_metabolizer&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_extensive_metabolizer.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Bruno2022_poor_metabolizer&quot;,&quot;label&quot;:&quot;Bruno_2022_poor_metabolizer&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_poor_metabolizer.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Sasabe2021v2_reference&quot;,&quot;label&quot;:&quot;Sasabe_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Sasabe2021v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Bruno2022_extensive_metabolizer&quot;,&quot;label&quot;:&quot;Bruno_2022_extensive_metabolizer&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_extensive_metabolizer.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Bruno2022_poor_metabolizer&quot;,&quot;label&quot;:&quot;Bruno_2022_poor_metabolizer&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_poor_metabolizer.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Sasabe2021v2_monkey&quot;,&quot;label&quot;:&quot;Sasabe_2021_2_monkey&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Sasabe2021v2_monkey.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Sasabe2021v2_rat&quot;,&quot;label&quot;:&quot;Sasabe_2021_2_rat&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Sasabe2021v2_rat.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brexpiprazole — `Brexpiprazole_Bruno2022_poor_metabolizer`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Bruno2022_poor_metabolizer" status="not_modelled" stale="false" population="normal-weight and obese adults" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></div>
+> The model's terminal half-life (83 h) deviates from the paper's 57.3 h, and absorption parameters ka and Tlag were defaulted.
+
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Bruno2022_poor_metabolizer" status="needs_review" stale="false" population="virtual population (normal-weight and obese adults)" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bruno CD, Elmokadem A, Housand C, Jordie EB, Chow CR, Laughren TP et al. Impact of Obesity on Brexpiprazole Pharmacokinetics: Proposal for Improved Initiation of Treatment. Journal of clinical pharmacology 62(1):55–65 (2022).
@@ -15,7 +17,7 @@ Bruno CD, Elmokadem A, Housand C, Jordie EB, Chow CR, Laughren TP et al. Impact 
 
 ## Population and dosing
 
-**Population:** normal-weight and obese adults · condition obesity · age group adult.
+**Population:** virtual population (normal-weight and obese adults) · condition obesity · age group adult.
 
 **Dosing:** 2 mg, oral, single.
 
@@ -29,7 +31,7 @@ Bruno CD, Elmokadem A, Housand C, Jordie EB, Chow CR, Laughren TP et al. Impact 
 <figure class="pk-models-diagram"><img src="drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_poor_metabolizer/Brexpiprazole_Bruno2022_poor_metabolizer.svg" alt="Brexpiprazole_Bruno2022_poor_metabolizer diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -41,7 +43,7 @@ Bruno CD, Elmokadem A, Housand C, Jordie EB, Chow CR, Laughren TP et al. Impact 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,21 +53,21 @@ Bruno CD, Elmokadem A, Housand C, Jordie EB, Chow CR, Laughren TP et al. Impact 
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The model's terminal half-life (83 h) deviates from the paper's 57.3 h, and absorption parameters ka and Tlag were defaulted.**
 
-A reported unit could not be converted (AUC∞ and Cmax), so that value has no SI equivalent.
+The simulated terminal half-life of 83 h contradicts the 57.3 h reported in the source, creating a ratio of 1.4483. Additionally, the absorption rate constant (ka) and lag time (Tlag) were set to library defaults because they were not reported in the paper. The apparent parameterization assumed full bioavailability (F=1) and first-order absorption from a depot compartment. Extracted — brexpiprazole: AUC∞ 2e+03 ng*h/mL, Cmax 19.7 ng/mL, t1/2z 83 h, CL 999 mL/h, V/F 120 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUCinf (ng*h/mL) | `Q17` · AUC∞ | 2002 | ng*h/mL |  |  | (h·ng)/ml | exact (1) | Bruno_2022_table_p18_1:row2:col2, Bruno_2022_table_p18_1:row3:col2 |
-| Cmax (ng/mL) | `Q32` · Cmax | 19.7 | ng/mL |  |  | ng/ml | exact (1) | Bruno_2022_table_p18_1:row2:col3, Bruno_2022_table_p18_1:row3:col3 |
-| Half-Life (h) | `Q57` · t1/2z | 83 | h | 2.988e+05 | s | h | llm (0.6) | Bruno_2022_table_p18_1:row2:col4, Bruno_2022_table_p18_1:row3:col4 |
+| AUCinf (ng*h/mL) | `Q17` · AUC∞ | 2002 | ng*h/mL | 7.207 | kg*s/m3 | (h·ng)/ml | exact (1) | Bruno_2022_table_p18_1:row2:col2, Bruno_2022_table_p18_1:row3:col2 |
+| Cmax (ng/mL) | `Q32` · Cmax | 19.7 | ng/mL | 1.97e-05 | kg/m3 | ng/ml | exact (1) | Bruno_2022_table_p18_1:row2:col3, Bruno_2022_table_p18_1:row3:col3 |
+| Half-Life (h) | `Q57` · t1/2z | 83 | h | 2.988e+05 | s | h | half_life_rule (0.95) | Bruno_2022_table_p18_1:row2:col4, Bruno_2022_table_p18_1:row3:col4 |
 | CL (mL/h) | `Q22` · CL | 998.8 | mL/h | 2.774e-07 | m3/s | ml/h | exact (1) | Bruno_2022_table_p18_1:row2:col5, Bruno_2022_table_p18_1:row3:col5 |
 | Vd/F (L) | `Q76` · V/F | 119.6 | L | 0.1196 | m3 | l | exact (1) | Bruno_2022_table_p18_1:row2:col6, Bruno_2022_table_p18_1:row3:col6 |
 
@@ -84,10 +86,10 @@ Independently confirmed by `gpt-oss-120b`.
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=brexpiprazole
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: 'poor metabolizer' subgroup of Bruno_2022 (paper reports 2 populations: extensive metabolizer, poor metabolizer)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- derived CL/F=0.9988 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - transposed table Bruno_2022_table_p18_1: logical view retains original source coordinates
@@ -118,7 +120,7 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Bruno_2022_table_p18_1:row2:col2', 'Bruno_2022_table_p18_1:row3:col2'] |
+| C5_dimension_Q17 | pass | [time] * [mass] / [length] ** 3 |  | ['Bruno_2022_table_p18_1:row2:col2', 'Bruno_2022_table_p18_1:row3:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bruno_2022_table_p18_1:row2:col5', 'Bruno_2022_table_p18_1:row3:col5'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Bruno_2022_table_p18_1:row2:col3', 'Bruno_2022_table_p18_1:row3:col3'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bruno_2022_table_p18_1:row2:col4', 'Bruno_2022_table_p18_1:row3:col4'] |
@@ -130,15 +132,19 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | skipped |  |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | skipped | 57.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 83 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable |  | pass | C_central (measured=brexpiprazole) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_t_half_beta | reference | fail | 57.3 | 82.99 | 1.448 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 83 | 82.99 | 0.9999 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -218,4 +224,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexpiprazole%5D%20Brexpiprazole_Bruno2022_poor_metabolizer&body=Drug%3A%20brexpiprazole%0ARecord%3A%20Brexpiprazole_Bruno2022_poor_metabolizer%0APaper%3A%20Bruno_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_poor_metabolizer%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 10:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:17 UTC</sub>

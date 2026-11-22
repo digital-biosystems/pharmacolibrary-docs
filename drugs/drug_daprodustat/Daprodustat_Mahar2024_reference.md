@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Daprodustat record refuses because absorption rate and lag time lack estimates, while summary statistics substitute for a fitted model from the abstract.
+> Absorption rate constant and lag time were not reported, forcing library defaults, while summary ratios were misidentified as fitted parameters.
 
 <div class="pk-model-meta" hidden drug="daprodustat" model-id="Daprodustat_Mahar2024_reference" status="needs_review" stale="false" population="adults with chronic kidney disease and anemia" measured-compound="daprodustat" parameterization="apparent" topology="1C"></div>
 
@@ -40,7 +40,7 @@ Mahar KM, Yang S, Mesic E, Post TM, Goulooze SC. Integrated Population Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Mahar KM, Yang S, Mesic E, Post TM, Goulooze SC. Integrated Population Pharmacok
 
 ### Reviewer guidance
 
-**Daprodustat record refuses because absorption rate and lag time lack estimates, while summary statistics substitute for a fitted model from the abstract.**
+**Absorption rate constant and lag time were not reported, forcing library defaults, while summary ratios were misidentified as fitted parameters.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Absorption rate and lag time were not reported in the source, leading to the use of default values. A second reader could not verify any of the extracted parameter values, including oral clearance and volume of distribution. Extracted — daprodustat: CL/F 24.6 L/h, V 26.9 L, AUC ratio 1.59, Cmax_ratio 1.19.
+The abstract-only source provided no estimate for the absorption rate constant or lag time, requiring the use of library defaults. Additionally, the area under the curve ratio of 1.59 and maximum concentration ratio of 1.19 are summary statistics, not fitted model parameters. A second reader disagreed with the record's identification of the dose compound and primary analyte as daprodustat, marking them as unknown. Extracted — daprodustat: CL/F 24.6 L/h, V 26.9 L, AUC ratio 1.59, Cmax_ratio 1.19.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has daprodustat, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daprodustat, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -96,22 +96,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[area under the plasma concentration-time curve (auc) ratio]` | 1.59 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc ratio]` |  | 1.59 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax ratio]` | 1.19 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax ratio]` |  | 1.19 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral clearance]` | 24.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral clearance]` |  | 24.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 26.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 26.9 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | daprodustat | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | daprodustat | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[area under the plasma concentration-time curve (auc) ratio]` | 1.59 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc ratio]` |  | 1.59 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax ratio]` | 1.19 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax ratio]` |  | 1.19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral clearance]` | 24.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral clearance]` |  | 24.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 26.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 26.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | daprodustat | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | daprodustat | unknown | mismatch |
 
 </details>
 
@@ -137,15 +137,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=daprodustat) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=daprodustat) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

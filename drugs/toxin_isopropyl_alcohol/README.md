@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Isopropyl alcohol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsopropylAlcohol_Rada2015_reference&quot;,&quot;label&quot;:&quot;Rada_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsopropylAlcohol_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsopropylAlcohol_Rada2015_reference&quot;,&quot;label&quot;:&quot;Rada_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsopropylAlcohol_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Isopropyl alcohol
 
@@ -31,7 +31,7 @@ Isopropyl alcohol or 2-propanol is an isomer of 1-propanol. It is a colorless li
 
 ## Start here
 
-> **Rada_2015_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> review reference. [Run it in the simulator](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md?tab=Simulation) · [record](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md)
+> **Rada_2015_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md?tab=Simulation) · [record](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -45,20 +45,11 @@ Isopropyl alcohol or 2-propanol is an isomer of 1-propanol. It is a colorless li
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rada_2015_reference](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Rada M et al., GC-FID determination and pharmacokineti…, Biomedical chromatography :… (2015) | [10.1002/bmc.3480](https://doi.org/10.1002/bmc.3480) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Wu_2024_reference](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Wu2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wu RL et al., Determination of Nemonoxacin in Small V…, Drug design, development an… (2024) | [10.2147/DDDT.S476173](https://doi.org/10.2147/DDDT.S476173) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Rada_2015_reference](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Rada M et al., GC-FID determination and pharmacokineti…, Biomedical chromatography :… (2015) | [10.1002/bmc.3480](https://doi.org/10.1002/bmc.3480) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Wu_2024_reference](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Wu2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wu RL et al., Determination of Nemonoxacin in Small V…, Drug design, development an… (2024) | [10.2147/DDDT.S476173](https://doi.org/10.2147/DDDT.S476173) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Boatman_1998_reference](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Boatman1998_reference.md) | — | 1-compartment (no model) | 3 | Boatman RJ et al., Dermal absorption and pharmacokinetics…, Drug metabolism and disposi… (1998) | — |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Chu_2022_reference](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Chu2022_reference.md) | — | 1-compartment (no model) | 2 | Chu KO et al., Determination of (-)-epigallocatechin-3…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1025053](https://doi.org/10.3389/fphar.2022.1025053) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Slaughter_2014_reference](drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Slaughter2014_reference.md) | — | retention function (no model) | 2 | Slaughter RJ et al., Isopropanol poisoning, Clinical toxicology (Philad… (2014) | [10.3109/15563650.2014.914527](https://doi.org/10.3109/15563650.2014.914527) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=isopropyl_alcohol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: GCH1 (inhibitor), HMOX1 (inhibitor), NOS3 (inhibitor), NR1H2 (inhibitor), PLA2G2A (inhibitor), TNF (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -4,11 +4,11 @@
 
 # Relatlimab — `Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 19:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The relatlimab model was rejected because the peripheral compartment is unconnected to the central compartment.
+> Relatlimab's saturable metabolism rate of 80.5 μg/h had a unit that could not be converted to SI units, preventing the model from being published.
 
-<div class="pk-model-meta" hidden drug="Relatlimab" model-id="Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv" status="rejected" stale="true" population="adult and adolescent patients with solid tumors" measured-compound="relatlimab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Relatlimab" model-id="Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv" status="rejected" stale="false" population="adult and adolescent patients with solid tumors" measured-compound="relatlimab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-Informed Clinical Pharmacology Profile of a Novel Fixed-Dose Combination of Nivolumab and Relatlimab in Adult and Adolescent Patients with Solid Tumors. Clinical cancer research : an official journal of the American Association for Cancer Research 30(14):3050–3058 (2024).
@@ -16,7 +16,7 @@ Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-I
 
 ## Population and dosing
 
-**Population:** adult and adolescent patients with solid tumors · condition solid tumors · age group mixed · n = &gt;=1713.
+**Population:** adult and adolescent patients with solid tumors · condition solid tumors · age group mixed.
 
 **Dosing:** 20, 800 mg, iv, multiple, every 14 h.
 
@@ -43,7 +43,7 @@ Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-I
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.952). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.952). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-I
 
 ### Reviewer guidance
 
-**The relatlimab model was rejected because the peripheral compartment is unconnected to the central compartment.**
+**Relatlimab's saturable metabolism rate of 80.5 μg/h had a unit that could not be converted to SI units, preventing the model from being published.**
 
-The structural review identified the peripheral compartment as unreachable from the dose, making it an orphan in the two-compartment model. Additionally, the maximum metabolic rate parameter was assigned units of mass per time, which is a dimensional mismatch for a rate capacity. While a second reader disagreed on the clearance value, the structural flaw and unit error remain unresolved. Extracted — relatlimab: Cmin 5.64 μg/mL, Cmax 44.1 μg/mL, Cavg 14.8 μg/mL, CL 6.05 mL/h, V1 3.61 L, V2 2.97 L, Vss 6.64 L, Vmax 80.5 μg/h.
+The maximum rate of metabolism was extracted as 80.5 μg/h, but this unit could not be converted to standard SI units, leaving the parameter without a valid value. This missing conversion halted the model evaluation. Additionally, the peripheral compartment was identified as an unreachable structure with no path from the dose. Extracted — relatlimab: Cmin 5.64 μg/mL, Cmax 44.1 μg/mL, Cavg 14.8 μg/mL, CL 6.05 mL/h, V1 3.61 L, V2 2.97 L, Vss 6.64 L, Vmax 80.5 μg/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clss/cl0: this record has none, the second reading 91.2. That field does not shape the model.
 

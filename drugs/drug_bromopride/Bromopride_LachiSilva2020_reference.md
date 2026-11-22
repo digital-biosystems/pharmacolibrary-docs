@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oral bioavailability for bromopride was missing, forcing reliance on generic library placeholders rather than paper-specific estimates.
+> Bioavailability parameter F for bromopride lacked an explicit estimate, forcing the use of placeholder defaults in this abstract-only record.
 
 <div class="pk-model-meta" hidden drug="bromopride" model-id="Bromopride_LachiSilva2020_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="bromopride" parameterization="mechanistic" topology="1C"></div>
 
@@ -41,7 +41,7 @@ Lachi-Silva L, Barth AB, Santos GML, Ahamadi M, Bruschi ML, Kimura E et al. Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Lachi-Silva L, Barth AB, Santos GML, Ahamadi M, Bruschi ML, Kimura E et al. Popu
 
 ### Reviewer guidance
 
-**Oral bioavailability for bromopride was missing, forcing reliance on generic library placeholders rather than paper-specific estimates.**
+**Bioavailability parameter F for bromopride lacked an explicit estimate, forcing the use of placeholder defaults in this abstract-only record.**
 
-The abstract-only source did not provide an explicit oral bioavailability estimate, leading to the use of default values. Although a renal bioavailability of 32.6% was recorded, the systemic bioavailability parameter remained undefined. This gap prevents the model from accurately representing the fraction of the dose reaching systemic circulation. Extracted — bromopride: kabs 0.08 h - 1, FR 32.6 %, tlag 0.47 h, V 230 l, CL 46.8 L/h.
+The record provides no value for bioavailability, so a library placeholder would have been used instead of a paper-specific estimate. The absence of this explicit value means the simulated profile is not supported by the data from the paper, which relied solely on abstract summary statistics. Extracted — bromopride: kabs 0.08 h - 1, FR 32.6 %, tlag 0.47 h, V 230 l, CL 46.8 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of first-order absorption rate: this record has 0.08, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of first-order absorption rate: this record has 0.08, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -97,18 +97,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (6/12 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (6/12 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[first-order absorption rate]` | 0.08 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fr]` |  | 32.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fraction of dose absorbed by first-order]` | 32.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` |  | 0.08 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[latency time]` | 0.47 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tk0]` |  | 0.88 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order absorption rate]` | 0.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fr]` |  | 32.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of dose absorbed by first-order]` | 32.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 0.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[latency time]` | 0.47 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tk0]` |  | 0.88 | only_one_extracted |
 
 </details>
 
@@ -136,14 +136,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=bromopride) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=bromopride) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

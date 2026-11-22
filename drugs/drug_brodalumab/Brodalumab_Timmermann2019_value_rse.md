@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;brodalumab&quot;,&quot;href&quot;:&quot;drugs/drug_brodalumab/&quot;},{&quot;label&quot;:&quot;Timmermann_2019 \u00b7 value_rse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brodalumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brodalumab/Brodalumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brodalumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brodalumab/Brodalumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brodalumab — `Brodalumab_Timmermann2019_value_rse`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-06 23:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Brodalumab's absorption rate constant was rejected because its per-day unit could not be converted to a standard SI unit.
+> Record rejected because the maximum metabolic rate (Vmax) unit of mg/d could not be converted to standard international units, preventing valid dimensionality checks on the structural parameter.
 
-<div class="pk-model-meta" hidden drug="brodalumab" model-id="Brodalumab_Timmermann2019_value_rse" status="rejected" stale="true" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="brodalumab" model-id="Brodalumab_Timmermann2019_value_rse" status="rejected" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Timmermann S, Hall A. Population pharmacokinetics of brodalumab in patients with moderate to severe plaque psoriasis. Basic & clinical pharmacology & toxicology 125(1):16–25 (2019).
@@ -47,7 +47,7 @@ Timmermann S, Hall A. Population pharmacokinetics of brodalumab in patients with
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Timmermann S, Hall A. Population pharmacokinetics of brodalumab in patients with
 
 ### Reviewer guidance
 
-**Brodalumab's absorption rate constant was rejected because its per-day unit could not be converted to a standard SI unit.**
+**Record rejected because the maximum metabolic rate (Vmax) unit of mg/d could not be converted to standard international units, preventing valid dimensionality checks on the structural parameter.**
 
-The absorption rate constant is reported as 0.300 d−1, but the specific per-day unit was not recognized by the system's unit conversion logic. This prevented the parameter from being properly defined in standard units. Consequently, the model record was refused due to this dimensional mismatch. Extracted — brodalumab: kabs 0.3 d−1, V1 4.68 L, CL 0.155 L/d, Vmax 6.07 mg/d, Km 0.02 µg/mL, Q 0.328 L/d, V2 2.41 L, Fab 54.8.
+The record lists the maximum rate of metabolism (Vmax) for brodalumab as 6.07 mg/d. The review identified a dimension mismatch on this structural parameter because the specific unit format was not recognized for conversion to SI. Consequently, the parameter lacked a standardized value, which caused the model review to fail. Extracted — brodalumab: kabs 0.3 d−1, V1 4.68 L, CL 0.155 L/d, Vmax 6.07 mg/d, Km 0.02 µg/mL, Q 0.328 L/d, V2 2.41 L, Fab 54.8.
 
 Independently confirmed by `gpt-oss-120b`.
 

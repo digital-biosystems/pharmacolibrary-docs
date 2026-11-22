@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Record rejected due to lack of kinetic parameters and a topology error where Chromium has no input path from the administered Chromium picolinate.
 
 <div class="pk-model-meta" hidden drug="Chromium(III) picolinate" model-id="ChromiumIiiPicolinate_Gargas1994_reference" status="rejected" stale="false" population="human volunteers" measured-compound="Chromium (Cr)" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -43,7 +43,13 @@ Gargas ML, Norton RL, Paustenbach DJ, Finley BL. Urinary excretion of chromium b
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Record rejected due to lack of kinetic parameters and a topology error where Chromium has no input path from the administered Chromium picolinate.**
+
+The model was built from abstract data only, resulting in reported summary statistics rather than fitted kinetic parameters like clearance or volume. It contains a topology error where the Chromium compartment is unreachable from the dose. The sole parameter, absolute bioavailability of 2.8%, links the parent and metabolite but does not define the elimination kinetics. Extracted — chromiumiii picolinate: Fab 2.8.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

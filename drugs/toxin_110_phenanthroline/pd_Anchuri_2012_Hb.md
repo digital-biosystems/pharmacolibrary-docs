@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic model for hemoglobin, reporting only that treatment with ruthenium compounds reversed tumor-induced hemoglobin decreases without detailing concentration-response relationships or mechanism parameters. Consequently, no specific drug concentrations, potency values (e.g., IC50), or rate constants (e.g., kin, kout) for the hemoglobin response are provided in the text.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Anchuri_2012`
 - **model family:** `unknown`
 - **driver:** `dose_only`

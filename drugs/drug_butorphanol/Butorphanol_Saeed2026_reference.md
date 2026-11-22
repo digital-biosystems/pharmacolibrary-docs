@@ -4,11 +4,11 @@
 
 # butorphanol — `Butorphanol_Saeed2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 04:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Butorphanol record lacks volume and clearance, and the duration parameter has an unconvertible unit, causing dimension mismatch.
+> The record for butorphanol was rejected because structural parameters lacked valid units, preventing conversion to SI standards.
 
-<div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Saeed2026_reference" status="rejected" stale="true" population="13 species" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Saeed2026_reference" status="rejected" stale="false" population="13 species" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Saeed AM, Jusko WJ. Butorphanol Pharmacokinetics Across Species: Meta-Analysis Integrating Allometric Scaling and Minimal Physiologically Based Pharmacokinetic Modeling. CPT: pharmacometrics & systems pharmacology 15(7):e70293 (2026).
@@ -40,7 +40,7 @@ Saeed AM, Jusko WJ. Butorphanol Pharmacokinetics Across Species: Meta-Analysis I
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Saeed AM, Jusko WJ. Butorphanol Pharmacokinetics Across Species: Meta-Analysis I
 
 ### Reviewer guidance
 
-**Butorphanol record lacks volume and clearance, and the duration parameter has an unconvertible unit, causing dimension mismatch.**
+**The record for butorphanol was rejected because structural parameters lacked valid units, preventing conversion to SI standards.**
 
-The paper reports no distribution volume or clearance for butorphanol, indicating it is an exposure/outcome study rather than a compartmental model. A structural parameter for duration has a unit that could not be converted, leading to a dimension mismatch. Additionally, the second reader failed to identify several extracted parameters, including the duration value of 0.0191. Extracted — butorphanol: Kp 3.55 units, D1 0.0191 units, kabs 1.96 h -1.
+The tissue-to-plasma partition coefficient (Kp) and zero-order duration (D1) were recorded with generic 'units' instead of dimensionless or time values. This unit mismatch prevented the model from computing correct SI values for the structural parameters. Additionally, the second reader was unable to verify the values for Kp, absorption rate, and zero-order duration, leaving their extraction unconfirmed. Extracted — butorphanol: Kp 3.55 units, D1 0.0191 units, kabs 1.96 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has butorphanol, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

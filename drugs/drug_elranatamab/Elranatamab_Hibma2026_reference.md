@@ -4,11 +4,11 @@
 
 # elranatamab — `Elranatamab_Hibma2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:53 UTC (Rejected), but the paper was screened again on 2026-10-07 12:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Elranatamab parameters like KD (nM) lack SI conversion, and second reader disputes missing baseline sBCMA and volume values.
+> The elranatamab record was rejected because intercompartmental clearance Q is listed as 0.225 L/day, while the finding assigns it the incompatible unit nM.
 
-<div class="pk-model-meta" hidden drug="elranatamab" model-id="Elranatamab_Hibma2026_reference" status="rejected" stale="true" population="patients with relapsed or refractory multiple myeloma" measured-compound="elranatamab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="elranatamab" model-id="Elranatamab_Hibma2026_reference" status="rejected" stale="false" population="patients with relapsed or refractory multiple myeloma" measured-compound="elranatamab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Hibma JE, Irby D, Liu A, Elmeliegy M, King LE, Gifondorwa D et al. Elranatamab Population Pharmacokinetics and Exposure-Response for Cytokine Release Syndrome in Patients with Relapsed or Refractory Multiple Myeloma. Clinical pharmacokinetics (2026).
@@ -44,7 +44,7 @@ Hibma JE, Irby D, Liu A, Elmeliegy M, King LE, Gifondorwa D et al. Elranatamab P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.704). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.704). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +54,13 @@ Hibma JE, Irby D, Liu A, Elmeliegy M, King LE, Gifondorwa D et al. Elranatamab P
 
 ### Reviewer guidance
 
-**Elranatamab parameters like KD (nM) lack SI conversion, and second reader disputes missing baseline sBCMA and volume values.**
+**The elranatamab record was rejected because intercompartmental clearance Q is listed as 0.225 L/day, while the finding assigns it the incompatible unit nM.**
 
-The record lists the dissociation constant (KD) as 3.138 nM, a unit not supported for SI conversion, which left the model without a usable value. The second reader disagrees with the record's null baseline sBCMA, asserting a value of 6.914, and identifies a missing central volume of distribution of 15.418 L for sBCMA. These discrepancies, alongside the unit issue, led to the rejection of the elranatamab model record. Extracted — sBCMA: CL 0.324 L/day, V1 4.78 L, V2 2.83 L, Q 0.225 L/day, Fab 0.562, kabs 0.287 day–1, KD 3.14 nM.
+The record defines Q as apparent intercompartmental clearance between the central and peripheral compartments, but the finding reports a concentration unit, nM, for this parameter. Separately, a reported unit could not be converted to SI, leaving the affected parameter without an SI value. Extracted — sBCMA: CL 0.324 L/day, V1 4.78 L, V2 2.83 L, Q 0.225 L/day, Fab 0.562, kabs 0.287 day–1, KD 3.14 nM.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has elranatamab, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

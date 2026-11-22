@@ -5,11 +5,11 @@
 
 # temozolomide — `Temozolomide_Ostermann2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-10-07 16:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The parameter labeled elimination half-time has a value of 2.1 hours, which is dimensionally inconsistent with a time unit in a one-compartment model.
+> kel is a half-life but carries time units instead of rate, and the CSF transfer rate has no extracted value.
 
-<div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Ostermann2004_reference" status="rejected" stale="true" population="malignant glioma patients" measured-compound="temozolomide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Ostermann2004_reference" status="rejected" stale="false" population="malignant glioma patients" measured-compound="temozolomide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ostermann S, Csajka C, Buclin T, Leyvraz S, Lejeune F, Decosterd LA et al. Plasma and cerebrospinal fluid population pharmacokinetics of temozolomide in malignant glioma patients. Clinical cancer research : an official journal of the American Association for Cancer Research 10(11):3728–3736 (2004).
@@ -17,7 +17,7 @@ Ostermann S, Csajka C, Buclin T, Leyvraz S, Lejeune F, Decosterd LA et al. Plasm
 
 ## Population and dosing
 
-**Population:** malignant glioma patients · condition malignant glioma · age group adult · n = &gt;$100,000.
+**Population:** malignant glioma patients · condition malignant glioma · age group adult.
 
 ## Model
 
@@ -42,7 +42,7 @@ Ostermann S, Csajka C, Buclin T, Leyvraz S, Lejeune F, Decosterd LA et al. Plasm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Ostermann S, Csajka C, Buclin T, Leyvraz S, Lejeune F, Decosterd LA et al. Plasm
 
 ### Reviewer guidance
 
-**The parameter labeled elimination half-time has a value of 2.1 hours, which is dimensionally inconsistent with a time unit in a one-compartment model.**
+**kel is a half-life but carries time units instead of rate, and the CSF transfer rate has no extracted value.**
 
-The model structure is one central compartment, yet the parameter named elimination half-time is assigned the value 2.1 h. While the label suggests a half-life, the meaning describes it as an elimination rate constant, making the value of 2.1 hours dimensionally mismatched for a rate constant parameter in this context. Additionally, the record was built from the abstract alone, meaning reported summary statistics stood in for fitted model parameters, which likely contributed to these extraction errors. Extracted — temozolomide: CL/F 10 liter/h, V 30.3 liters, kabs 5.8 h(-1), kel 2.1 h, ktr 7.2 h(-1), k21 0.76 h(-1), AUC 20 plasma, AUC ratio 20 %.
+kel is described as the elimination rate constant yet is assigned 2.1 h, a time dimension that conflicts with a rate constant's reciprocal time. ktr, the first-order plasma-to-CSF transfer rate, is missing a numeric value in this record. Because the summary statistics derive solely from the abstract, these parameter assignments lack the underlying fitted model data to resolve the dimensional mismatch. Extracted — temozolomide: CL/F 10 liter/h, V 30.3 liters, kabs 5.8 h(-1), kel 2.1 h, ktr 7.2 h(-1), k21 0.76 h(-1), AUC 20 plasma, AUC ratio 20 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has temozolomide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

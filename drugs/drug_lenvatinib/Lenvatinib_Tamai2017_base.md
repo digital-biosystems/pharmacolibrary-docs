@@ -4,11 +4,11 @@
 
 # lenvatinib — `Lenvatinib_Tamai2017_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-07 02:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lenvatinib absorption rate constant kabs was assigned units of L/h instead of 1/h, causing a dimension mismatch that led to rejection.
+> The lenvatinib record was rejected because the intercompartmental clearance parameter has a unit of L/h, conflicting with its defined first-order rate constant dimension.
 
-<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Tamai2017_base" status="rejected" stale="true" population="healthy subjects and subjects with cancer, including HCC" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Tamai2017_base" status="rejected" stale="false" population="healthy subjects and subjects with cancer, including HCC" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Tamai T, Hayato S, Hojo S, Suzuki T, Okusaka T, Ikeda K et al. Dose Finding of Lenvatinib in Subjects With Advanced Hepatocellular Carcinoma Based on Population Pharmacokinetic and Exposure-Response Analyses. Journal of clinical pharmacology 57(9):1138–1147 (2017).
@@ -39,7 +39,7 @@ Tamai T, Hayato S, Hojo S, Suzuki T, Okusaka T, Ikeda K et al. Dose Finding of L
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Tamai T, Hayato S, Hojo S, Suzuki T, Okusaka T, Ikeda K et al. Dose Finding of L
 
 ### Reviewer guidance
 
-**Lenvatinib absorption rate constant kabs was assigned units of L/h instead of 1/h, causing a dimension mismatch that led to rejection.**
+**The lenvatinib record was rejected because the intercompartmental clearance parameter has a unit of L/h, conflicting with its defined first-order rate constant dimension.**
 
-The record lists the absorption rate constant kabs with a value of 1.02 and units of L/h, which is dimensionally incorrect for a first-order rate constant that requires reciprocal time units. Because L/h could not be converted to SI, the parameter remained invalid. This dimensional error on a structural parameter resulted in the record being rejected. Extracted — lenvatinib: CL/F 6.5 L/h, kabs 1.02 L/h, D1 1.05 hours.
+The parameter representing clearance between the central and second peripheral compartment is labeled with units of L/h. Its meaning, however, defines it as a rate constant requiring units of 1/time. This dimensional mismatch prevents the parameter from being converted to standard SI units. Extracted — lenvatinib: CL/F 6.5 L/h, kabs 1.02 L/h, D1 1.05 hours.
 
 Independently confirmed by `qwen3.8-27b`.
 

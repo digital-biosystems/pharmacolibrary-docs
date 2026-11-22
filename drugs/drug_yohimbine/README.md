@@ -25,7 +25,7 @@ Yohimbine is an alpha-2 blocker used to treat erectile dysfunction and hypoactiv
 
 ## Start here
 
-> **Dimaio_2011_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adult horses, n = No. [Run it in the simulator](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md?tab=Simulation) · [record](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md)
+> **Dimaio_2011_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adult horses. [Run it in the simulator](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md?tab=Simulation) · [record](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,21 +33,7 @@ Yohimbine is an alpha-2 blocker used to treat erectile dysfunction and hypoactiv
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T6_deviations</sub> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Dimaio Knych HK et al., Pharmacokinetics of yohimbine following…, Journal of veterinary pharm… (2011) | [10.1111/j.1365-2885.2010.01194.x](https://doi.org/10.1111/j.1365-2885.2010.01194.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=yohimbine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA2A (target), ADRA2B (target), ADRA2C (target), DRD2 (target), DRD3 (target), HTR1A (partial agonist), HTR1B (partial agonist), HTR1D (partial agonist), HTR2A (target), HTR2B (target), HTR2C (target), KCNJ1 (inhibitor).</sub>
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: cross_check_disputed</sub> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Dimaio Knych HK et al., Pharmacokinetics of yohimbine following…, Journal of veterinary pharm… (2011) | [10.1111/j.1365-2885.2010.01194.x](https://doi.org/10.1111/j.1365-2885.2010.01194.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

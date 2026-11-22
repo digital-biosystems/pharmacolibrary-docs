@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;tremelimumab&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/&quot;},{&quot;label&quot;:&quot;Wang_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tremelimumab_Baverel2019_reference&quot;,&quot;label&quot;:&quot;Baverel_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/Tremelimumab_Baverel2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tremelimumab_Wang2014_reference&quot;,&quot;label&quot;:&quot;Wang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Song_2023_CD8_Ki67_T_cells&quot;,&quot;label&quot;:&quot;Song_2023 \u00b7 CD8+Ki67+ T cells&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/pd_Song_2023_CD8_Ki67_T_cells.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tremelimumab_Baverel2019_reference&quot;,&quot;label&quot;:&quot;Baverel_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/Tremelimumab_Baverel2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tremelimumab_Wang2014_reference&quot;,&quot;label&quot;:&quot;Wang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Song_2023_CD8_Ki67_T_cells&quot;,&quot;label&quot;:&quot;Song_2023 \u00b7 CD8+Ki67+ T cells&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tremelimumab/pd_Song_2023_CD8_Ki67_T_cells.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tremelimumab — `Tremelimumab_Wang2014_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="tremelimumab" model-id="Tremelimumab_Wang2014_reference" status="simulated" stale="false" population="patients with metastatic melanoma" measured-compound="tremelimumab" parameterization="mechanistic" topology="1C"></div>
+> Tremelimumab clearance of 0.26 L/day and volume of 3.97 L were not verified by a second reader.
+
+<div class="pk-model-meta" hidden drug="tremelimumab" model-id="Tremelimumab_Wang2014_reference" status="needs_review" stale="false" population="patients with metastatic melanoma" measured-compound="tremelimumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wang E, Kang D, Bae KS, Marshall MA, Pavlov D, Parivar K. Population pharmacokinetic and pharmacodynamic analysis of tremelimumab in patients with metastatic melanoma. Journal of clinical pharmacology 54(10):1108–1116 (2014).
@@ -15,7 +17,7 @@ Wang E, Kang D, Bae KS, Marshall MA, Pavlov D, Parivar K. Population pharmacokin
 
 ## Population and dosing
 
-**Population:** patients with metastatic melanoma · condition metastatic melanoma · age group adult · n = &gt;=654.
+**Population:** patients with metastatic melanoma · condition metastatic melanoma · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Wang E, Kang D, Bae KS, Marshall MA, Pavlov D, Parivar K. Population pharmacokin
 <figure class="pk-models-diagram"><img src="drugs/drug_tremelimumab/Tremelimumab_Wang2014_reference/Tremelimumab_Wang2014_reference.svg" alt="Tremelimumab_Wang2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance (CL) | CL | 0.26 | L/day |
@@ -34,7 +38,7 @@ Wang E, Kang D, Bae KS, Marshall MA, Pavlov D, Parivar K. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Wang E, Kang D, Bae KS, Marshall MA, Pavlov D, Parivar K. Population pharmacokin
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Tremelimumab clearance of 0.26 L/day and volume of 3.97 L were not verified by a second reader.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was constructed from the paper's abstract alone, so reported summary statistics stand in for a fitted model. A second reader disputed the identification of the dose compound and primary analyte as tremelimumab, marking them as unknown. Additionally, the reader failed to extract the clearance and volume values, resulting in null entries for both parameters. Extracted — tremelimumab: CL 0.26 L/day, V 3.97 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tremelimumab, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -123,14 +127,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=tremelimumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=tremelimumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

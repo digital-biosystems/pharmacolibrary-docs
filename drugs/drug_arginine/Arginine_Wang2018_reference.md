@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;Arginine&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/&quot;},{&quot;label&quot;:&quot;Wang_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the arginine glutamate precursor compartment is orphaned, lacking a defined elimination or metabolic rate constant linking it to its products.
+> The record is rejected because the parent drug arginine glutamate is an orphan compartment lacking any link to the measured arginine metabolite, and the record is abstract-only.
 
 <div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Wang2018_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="arginine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -39,7 +39,7 @@ Wang J, Zheng H, Wang K, Wang Z, Ding Y. Population pharmacokinetics of arginine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,11 @@ Wang J, Zheng H, Wang K, Wang Z, Ding Y. Population pharmacokinetics of arginine
 
 ### Reviewer guidance
 
-**The model was rejected because the arginine glutamate precursor compartment is orphaned, lacking a defined elimination or metabolic rate constant linking it to its products.**
+**The record is rejected because the parent drug arginine glutamate is an orphan compartment lacking any link to the measured arginine metabolite, and the record is abstract-only.**
 
-The record defines a hydrolysis relationship from arginine glutamate to arginine and glutamate but provides no value for the rate constant governing this conversion. Consequently, the precursor compartment is structurally unreachable from the dose input, rendering the model non-functional. Additionally, the second reader disagreed on the volume of distribution, identifying a value of 23.1 L rather than the recorded 22.4 L. Extracted — arginine: CL 44.1 L/h, V 22.4 L, kabs 0.226 h−1.
+The model defines arginine glutamate as a precursor that hydrolyses into arginine and glutamate, but no clearance or elimination path exists for the parent compound itself, leaving it unreachable from the dose. Because the record was built from the abstract alone, the reported arginine clearance of 44.1 L/h and volume of 22.4 L are summary statistics rather than fitted parameters. The second reader disagreed on the dose compound and could not verify the link structure, confirming the parent drug's status as an unlinked orphan. Extracted — arginine: CL 44.1 L/h, V 22.4 L, kabs 0.226 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,18 +93,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (1/7 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.143 (1/7 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['arginine glutamate', 'arginine', 'hydrolysis'], ['arginine glutamate', 'glutamate', 'hydrolysis']] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[cl]` | 44.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` |  | 44.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v]` |  | 23.1 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | arginine glutamate | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | arginine | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['arginine glutamate', 'arginine', 'hydrolysis'], ['arginine glutamate', 'glutamate', 'hydrolysis']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | 44.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 44.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` |  | 23.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | arginine glutamate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | arginine | unknown | mismatch |
 
 </details>
 

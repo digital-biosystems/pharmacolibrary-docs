@@ -4,11 +4,11 @@
 
 # flucloxacillin — `Flucloxacillin_Jager2020_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:40 UTC (Rejected), but the paper was screened again on 2026-10-07 10:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The Bmax parameter, reported in mmol/L, was rejected due to a dimension mismatch with the model's structural expectations.
+> The intercompartmental clearance Q for flucloxacillin was rejected because its unit L/h conflicts with the required mass/volume dimension.
 
-<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_final" status="rejected" stale="true" population="critically ill patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_final" status="rejected" stale="false" population="critically ill patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jager NGL, van Hest RM, Xie J, Wong G, Ulldemolins M, Brüggemann RJM et al. Optimization of flucloxacillin dosing regimens in critically ill patients using population pharmacokinetic modelling of total and unbound concentrations. The Journal of antimicrobial chemotherapy 75(9):2641–2649 (2020).
@@ -41,7 +41,7 @@ Jager NGL, van Hest RM, Xie J, Wong G, Ulldemolins M, Brüggemann RJM et al. Opt
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Jager NGL, van Hest RM, Xie J, Wong G, Ulldemolins M, Brüggemann RJM et al. Opt
 
 ### Reviewer guidance
 
-**The Bmax parameter, reported in mmol/L, was rejected due to a dimension mismatch with the model's structural expectations.**
+**The intercompartmental clearance Q for flucloxacillin was rejected because its unit L/h conflicts with the required mass/volume dimension.**
 
-The extraction of the maximum binding capacity for flucloxacillin as 0.469 mmol/L triggered a dimensional inconsistency within the two-compartment structure. This specific unit was not recognized by the system, preventing its conversion to a standard form and causing the check to fail. The rejection was strictly driven by this unit conversion failure for the Bmax value. Extracted — flucloxacillin: Bmax 0.469 mmol/L, KD 0.0441 mmol/L, CL 55.4 L/h, V1 52.7 L, V2 56.8 L, Q 67.2 L/h.
+The record lists the apparent intercompartmental clearance Q as 67.2 L/h. A dimensional check found a mismatch because the unit L/h does not match the parameter's expected mass/volume dimension. Consequently, the parameter lacked a valid SI value, preventing the model from passing validation. Extracted — flucloxacillin: Bmax 0.469 mmol/L, KD 0.0441 mmol/L, CL 55.4 L/h, V1 52.7 L, V2 56.8 L, Q 67.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flucloxacillin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

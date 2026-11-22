@@ -16,7 +16,7 @@ Rowell FJ, Seymour RA, Rawlins MD. Pharmacokinetics of intravenous and oral dihy
 
 ## Population and dosing
 
-**Population:** healthy volunteers and patients · condition healthy and unknown condition (patients) · age group adult · n = &gt;=7 and &gt;=24.
+**Population:** healthy volunteers and patients · condition healthy and unknown condition (patients) · age group adult.
 
 ## Model
 

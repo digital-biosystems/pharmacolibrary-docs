@@ -4,11 +4,11 @@
 
 # ibritumomab tiuxetan (90Y) — `IbritumomabTiuxetan90y_Morschhauser2018_spleen`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:41 UTC (Rejected), but the paper was screened again on 2026-10-07 16:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance parameter's unit was not convertible to standard SI units, causing a dimension mismatch that rejected the model.
+> Clearance for ibritumomab tiuxetan 90y was reported as 1.03 ml.min, a volume-times-time unit incompatible with clearance, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan (90Y)" model-id="IbritumomabTiuxetan90y_Morschhauser2018_spleen" status="rejected" stale="true" population="patients with follicular lymphoma" measured-compound="ibritumomab_tiuxetan_90y" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan (90Y)" model-id="IbritumomabTiuxetan90y_Morschhauser2018_spleen" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab_tiuxetan_90y" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al. A new pharmacokinetic model for 90Y-ibritumomab tiuxetan based on 3-dimensional dosimetry. Scientific reports 8(1):14860 (2018).
@@ -41,7 +41,7 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 ### Reviewer guidance
 
-**The clearance parameter's unit was not convertible to standard SI units, causing a dimension mismatch that rejected the model.**
+**Clearance for ibritumomab tiuxetan 90y was reported as 1.03 ml.min, a volume-times-time unit incompatible with clearance, so the record was rejected.**
 
-The clearance value of 1.03 ml.min lacks a recognized unit mapping, preventing the calculation of its SI equivalent. Consequently, the structural parameter check identified a dimension mismatch. A second reader also disagreed on the primary analyte, proposing a different radiolabel, though the core rejection stemmed from the unit conversion failure. Extracted — ibritumomab tiuxetan 90y: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+Clearance relates the rate of drug elimination to concentration, but the reported ml.min unit has dimensions of volume multiplied by time rather than volume divided by time. The unit could not be converted to SI, so clearance had no SI value. Extracted — ibritumomab tiuxetan 90y: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibritumomab_tiuxetan_90y, the second reading ibritumomab tiuxetan; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

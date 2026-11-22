@@ -20,7 +20,7 @@ Levothyroxine is a synthetic thyroid hormone used to treat hypothyroidism, goite
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| levothyroxine_sodium (levothyroxine, levothyroxine (T4)) | metabolite | 776.87 | C15H11I4NO4 | DrugBank | [5819](https://pubchem.ncbi.nlm.nih.gov/compound/5819) | Fitch_2025, Inada_1975 |
+| levothyroxine (levothyroxine_sodium, levothyroxine (T4)) | parent | 776.87 | C15H11I4NO4 | DrugBank | [5819](https://pubchem.ncbi.nlm.nih.gov/compound/5819) | Fitch_2025, Inada_1975 |
 | liothyronine (T3) | metabolite | 650.964 | C15H12I3NO4 | PubChem | [5920](https://pubchem.ncbi.nlm.nih.gov/compound/5920) | Inada_1975 |
 
 ## popPK records
@@ -37,27 +37,6 @@ Levothyroxine is a synthetic thyroid hormone used to treat hypothyroidism, goite
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ 1500_g_xp_8121_sc](drugs/drug_levothyroxine_sodium/LevothyroxineSodium_Fitch2025_1500_g_xp_8121_sc.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ 600_g_oral_lt4](drugs/drug_levothyroxine_sodium/LevothyroxineSodium_Fitch2025_600_g_oral_lt4.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ 600_g_xp_8121_sc](drugs/drug_levothyroxine_sodium/LevothyroxineSodium_Fitch2025_600_g_xp_8121_sc.md) | — | 1-compartment (no model) | 0 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levothyroxine_sodium).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inducer, `SLCO1A2` substrate, `SLCO2B1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inducer, `SLCO1A2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inducer | DrugBank actor |
-| distribution | testis | `ABCB1` inducer | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP2C8` inhibitor, `SLCO1B1` substrate, `SLCO2B1` inhibitor, `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inducer | DrugBank actor |
-| excretion | liver | `ABCB1` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ITGAV (binder), ITGB3 (binder), SERPINA7 (substrate), SLC16A2 (inhibitor), SLC7A5 (unknown), SLCO1C1 (substrate), SLCO4A1 (substrate), THRA (target), THRB (target), TTR (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

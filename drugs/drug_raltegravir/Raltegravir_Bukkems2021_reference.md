@@ -5,11 +5,11 @@
 
 # raltegravir — `Raltegravir_Bukkems2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 16:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the apparent intercompartmental clearance parameter was missing, leaving the model structurally incomplete.
+> The record was held back because the oral bioavailability parameter F was missing from the extracted data.
 
-<div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Bukkems2021_reference" status="needs_review" stale="true" population="pregnant and nonpregnant women living with HIV and healthy subjects" measured-compound="raltegravir" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Bukkems2021_reference" status="needs_review" stale="false" population="pregnant and nonpregnant women living with HIV and healthy subjects" measured-compound="raltegravir" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Bukkems VE, Post TM, Colbers AP, Burger DM, Svensson EM. A population pharmacokinetics analysis assessing the exposure of raltegravir once-daily 1200 mg in pregnant women living with HIV. CPT: pharmacometrics & systems pharmacology 10(2):161–172 (2021).
@@ -46,7 +46,7 @@ Bukkems VE, Post TM, Colbers AP, Burger DM, Svensson EM. A population pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Bukkems VE, Post TM, Colbers AP, Burger DM, Svensson EM. A population pharmacoki
 
 ### Reviewer guidance
 
-**The record was rejected because the apparent intercompartmental clearance parameter was missing, leaving the model structurally incomplete.**
+**The record was held back because the oral bioavailability parameter F was missing from the extracted data.**
 
-The parameter list defines a two-compartment structure but omits the apparent intercompartmental clearance, which is required to link the central and peripheral compartments. The second reader noted a discrepancy regarding the oral bioavailability, which was not extracted in this record. Without the intercompartmental clearance value, the model cannot mathematically describe drug distribution between the two defined compartments. Extracted — raltegravir: kabs 0.741 h−1, V1/F 44.3 L, CL/F 55.8 L/h, CL_ratio -0.17, Q/F 5.68 L/h, V2/F 92.8 L, Frel -0.459.
+The extracted parameter list omits the oral bioavailability term, which the second reader identified as missing. Additionally, the clearance ratio for atazanavir could not be computed, resulting in an inconclusive check. The second reader also disagreed with the recorded value of -0.459 for the low-fat meal effect on bioavailability, leaving the record in a state needing further review. Extracted — raltegravir: kabs 0.741 h−1, V1/F 44.3 L, CL/F 55.8 L/h, CL_ratio -0.17, Q/F 5.68 L/h, V2/F 92.8 L, Frel -0.459.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f c: this record has none, the second reading 1; it also differs on 1 more field. That field does not shape the model.
 

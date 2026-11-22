@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;tolfenamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/&quot;},{&quot;label&quot;:&quot;Corum_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TolfenamicAcid_Corum2024_reference&quot;,&quot;label&quot;:&quot;Corum_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TolfenamicAcid_Landoni1996_reference&quot;,&quot;label&quot;:&quot;Landoni_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/TolfenamicAcid_Landoni1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TolfenamicAcid_Corum2024v2_reference&quot;,&quot;label&quot;:&quot;Corum_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sidhu_2005_PGE2&quot;,&quot;label&quot;:&quot;Sidhu_2005 \u00b7 PGE2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/pd_Sidhu_2005_PGE2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sidhu_2005_TxB2&quot;,&quot;label&quot;:&quot;Sidhu_2005 \u00b7 TxB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/pd_Sidhu_2005_TxB2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sidhu_2006_PGE2&quot;,&quot;label&quot;:&quot;Sidhu_2006 \u00b7 PGE2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/pd_Sidhu_2006_PGE2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sidhu_2006_TxB2&quot;,&quot;label&quot;:&quot;Sidhu_2006 \u00b7 TxB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/pd_Sidhu_2006_TxB2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TolfenamicAcid_Corum2024_reference&quot;,&quot;label&quot;:&quot;Corum_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TolfenamicAcid_Landoni1996_reference&quot;,&quot;label&quot;:&quot;Landoni_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/TolfenamicAcid_Landoni1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TolfenamicAcid_Corum2024v2_reference&quot;,&quot;label&quot;:&quot;Corum_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TolfenamicAcid_Corum2026_reference&quot;,&quot;label&quot;:&quot;Corum_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Sidhu_2005_PGE2&quot;,&quot;label&quot;:&quot;Sidhu_2005 \u00b7 PGE2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/pd_Sidhu_2005_PGE2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sidhu_2005_TxB2&quot;,&quot;label&quot;:&quot;Sidhu_2005 \u00b7 TxB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/pd_Sidhu_2005_TxB2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sidhu_2006_PGE2&quot;,&quot;label&quot;:&quot;Sidhu_2006 \u00b7 PGE2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/pd_Sidhu_2006_PGE2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sidhu_2006_TxB2&quot;,&quot;label&quot;:&quot;Sidhu_2006 \u00b7 TxB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolfenamic_acid/pd_Sidhu_2006_TxB2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tolfenamic acid — `TolfenamicAcid_Corum2026_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> This record was reviewed on 2026-11-07 16:01 UTC (Needs review), but the paper was screened again on 2026-10-07 01:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The model's simulated peak concentration of 0.00585 differs from the reported value of 0.00301, and the record was held back.
 
-<div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2026_reference" status="extracted" stale="true" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2026_reference" status="needs_review" stale="false" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Corum O, Marín P, Badillo E, Durna Corum D, Yuksel M, Oguz H et al. Pharmacokinetics and Bioavailability of Tolfenamic Acid in Calves: First Evaluation of Subcutaneous Administration. Veterinary medicine and science 12(4):e71024 (2026).
@@ -25,12 +25,16 @@ Corum O, Marín P, Badillo E, Durna Corum D, Yuksel M, Oguz H et al. Pharmacokin
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2026_reference/TolfenamicAcid_Corum2026_reference.svg" alt="TolfenamicAcid_Corum2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | t1/2ʎz (h) d | t1/2γ | 6.64 | h |
@@ -39,7 +43,7 @@ Corum O, Marín P, Badillo E, Durna Corum D, Yuksel M, Oguz H et al. Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +53,13 @@ Corum O, Marín P, Badillo E, Durna Corum D, Yuksel M, Oguz H et al. Pharmacokin
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**The model's simulated peak concentration of 0.00585 differs from the reported value of 0.00301, and the record was held back.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Altinok-Yipel_2026) cannot stand in for this paper's evidence. Extracted — tolfenamic acid: t1/2γ 6.64 h, V 0.67 L/kg, CL 0.17 L/h/kg.
+The simulation failed to reproduce the paper's reported maximum concentration, with ratios of 1.9421 and 3.6084 indicating significant deviation. A second reader also disputed the identification of the dosed compound and the extracted values for clearance and volume of distribution. Extracted — tolfenamic acid: t1/2γ 6.64 h, V 0.67 L/kg, CL 0.17 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tolfenamic acid, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -128,6 +132,22 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C9_phys_window_Q22 | pass | clearance within physiological range | 11.9 L/h | ['Altinok-Yipel_2026:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 46.9 L | ['Corum_2026:discussion_prose'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=tolfenamic acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
+| T1_cmax | reference | fail | 0.00301 | 0.005846 | 1.942 | µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00162 | 0.005846 | 3.608 | µg/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | skipped |  | 2.731 |  | non-numeric value |
+| T1_t_half_beta | reference | skipped |  | 2.731 |  | non-numeric value |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -143,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -154,7 +174,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 280 mg infusion over 10 min, single dose. Dose in the paper: 280 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2026_reference/TolfenamicAcid_Corum2026_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2026_reference/TolfenamicAcid_Corum2026_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `TolfenamicAcid_Corum2026_reference_params.json` · controls `TolfenamicAcid_Corum2026_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

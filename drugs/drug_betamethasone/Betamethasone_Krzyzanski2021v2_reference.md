@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Betamethasone model failed time-to-peak, terminal half-life, and peak concentration checks due to missing ester hydrolysis links and apparent bioavailability assumptions.
+> Betamethasone was held back because simulated peak timing, terminal half-life, and Cmax miss paper values; its apparent metabolite clearance is recorded as 9.29 L/h.
 
 <div class="pk-model-meta" hidden drug="betamethasone" model-id="Betamethasone_Krzyzanski2021v2_reference" status="needs_review" stale="false" population="healthy nonpregnant Indian women" measured-compound="betamethasone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Krzyzanski W, Milad MA, Jobe AH, Peppard T, Bies RR, Jusko WJ. Population pharma
 
 ## Population and dosing
 
-**Population:** healthy nonpregnant Indian women · condition healthy · age group adult · n = &gt;=48.
+**Population:** healthy nonpregnant Indian women · condition healthy · age group adult.
 
 **Dosing:** 6 mg, im, single.
 
@@ -54,13 +54,13 @@ Krzyzanski W, Milad MA, Jobe AH, Peppard T, Bies RR, Jusko WJ. Population pharma
 
 ### Reviewer guidance
 
-**Betamethasone model failed time-to-peak, terminal half-life, and peak concentration checks due to missing ester hydrolysis links and apparent bioavailability assumptions.**
+**Betamethasone was held back because simulated peak timing, terminal half-life, and Cmax miss paper values; its apparent metabolite clearance is recorded as 9.29 L/h.**
 
-The model predicted a terminal half-life of 3.84 h, significantly deviating from the paper's reported range of 0.57 h to 109.0 h, which the second reader attributes to missing hydrolysis links for betamethasone phosphate and acetate. The peak concentration was 6.38e-05 kg/m3 compared to the paper's 6.25e-05, exceeding the tolerance despite the model assuming F=1 and Fm=1. The second reader also identified the dose compound as betamethasone phosphate rather than betamethasone, conflicting with the record's primary analyte. Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
+The model does not reproduce the paper's time of the peak (tmax) (paper 3.3, model 3.44). Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's terminal half-life (paper 7.5, model 3.84). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's peak concentration (Cmax) (paper 6.25e-05, model 6.38e-05). Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The model builder defaulted Tlag and assumed F=1 and Fm=1 with no molar correction; the second reader disputed the dose compound and several estimates, including apparent metabolite clearance (9.29 versus 5.95 L/h), renal bioavailability (1.04 versus 0.935), absorption rate constant (0.460 versus 0.971 1/h), and adjusted volume of distribution (51.3 versus 67.5 L). Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has betamethasone, the second reading betamethasone phosphate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -162,7 +162,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=betamethasone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | 1: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 | T1_cmax | reference | pass | 6.25e-05 | 6.384e-05 | 1.022 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | pass | 7.89e-05 | 6.384e-05 | 0.8092 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | pass | 6.69e-05 | 6.384e-05 | 0.9543 | ng/mL→SI vs simulated kg/m3 |

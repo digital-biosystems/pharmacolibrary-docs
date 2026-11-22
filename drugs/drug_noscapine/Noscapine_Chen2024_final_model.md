@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's time of the peak (tmax) (paper 0.5, model 0.196); the model does not reproduce the paper's terminal half-life (paper 8.42, model 0.487) (+2 more).
+> Noscapine simulation failed time and concentration checks, with terminal half-life 0.487 vs 8.42 hours.
 
 <div class="pk-model-meta" hidden drug="noscapine" model-id="Noscapine_Chen2024_final_model" status="needs_review" stale="false" population="healthy adults" measured-compound="noscapine" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Chen Z, Taubert M, Chen C, Boland J, Dong Q, Bilal M et al. A Semi-Mechanistic P
 
 ## Population and dosing
 
-**Population:** healthy adults · age group adult · n = condition.
+**Population:** healthy adults · age group adult.
 
 **Dosing:** 50 mg, oral, single.
 
@@ -61,13 +61,13 @@ Chen Z, Taubert M, Chen C, Boland J, Dong Q, Bilal M et al. A Semi-Mechanistic P
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's time of the peak (tmax) (paper 0.5, model 0.196); the model does not reproduce the paper's terminal half-life (paper 8.42, model 0.487) (+2 more).**
+**Noscapine simulation failed time and concentration checks, with terminal half-life 0.487 vs 8.42 hours.**
 
-Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — noscapine: D1 0.0624 h, CL/F 958 L/h, V1/F 49.7 L, Q/F 18.9 L/h, Q2/F 25.8 L/h, V3/F 31.2 L, Fab 82.8, ktr 13 1/h.
+Simulated terminal half-life was 0.487 hours versus 8.42 hours reported in the paper. The peak concentration was 0.000235 kg/m³ versus 3.68e-05 kg/m³. The model builder applied an apparent assumption setting bioavailability to 1, despite the record listing an absolute bioavailability of 82.8%. Extracted — noscapine: D1 0.0624 h, CL/F 958 L/h, V1/F 49.7 L, Q/F 18.9 L/h, Q2/F 25.8 L/h, V3/F 31.2 L, Fab 82.8, ktr 13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has noscapine, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -209,6 +209,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.071, 0 of 1 reader(s) agree | 0.071 | cross-check disputed by a second reader: verdict disputed, agreement 0.071, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 3.68e-05 | 0.0002347 | 6.377 | μg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 4.69e-05 | 0.0002347 | 5.003 | μg/L→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | fail | 8.42 | 0.4873 | 0.0579 | h→SI vs simulated h |

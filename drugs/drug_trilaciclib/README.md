@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;trilaciclib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trilaciclib_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # trilaciclib
 
@@ -23,18 +22,12 @@ Trilaciclib is a protein kinase inhibitor used to treat lung small cell carcinom
 |---|---|---|---|---|---|---|
 | trilaciclib | parent | 446.559 | C24H30N8O | DrugBank | — | Dai_2024, Li_2022 |
 
-## Start here
-
-> **Li_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> patients with extensive-stage small-cell lung cancer, n = 114. [Run it in the simulator](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md?tab=Simulation) · [record](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Dai_2024_reference](drugs/drug_trilaciclib/Trilaciclib_Dai2024_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.4428)</sub> | [Li_2022_reference](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li C et al., Pharmacokinetic Drug-Drug Interaction S…, Clinical drug investigation (2022) | [10.1007/s40261-022-01179-x](https://doi.org/10.1007/s40261-022-01179-x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.4428)</sub> | [Li_2022_reference](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md) | — | 1-compartment (no model) | 3 | Li C et al., Pharmacokinetic Drug-Drug Interaction S…, Clinical drug investigation (2022) | [10.1007/s40261-022-01179-x](https://doi.org/10.1007/s40261-022-01179-x) |
 
 ## Pharmacodynamics (PD)
 
@@ -46,24 +39,6 @@ Trilaciclib is a protein kinase inhibitor used to treat lung small cell carcinom
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2023_myeloprotective_efficacy_myelosuppression_endpoints](drugs/drug_trilaciclib/pd_Li_2023_myeloprotective_efficacy_myelosuppression_endpoints.md) | myeloprotective efficacy (myelosuppression endpoints) ← trilaciclib · model not identified | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2023_phlebitis_thrombophlebitis](drugs/drug_trilaciclib/pd_Li_2023_phlebitis_thrombophlebitis.md) | phlebitis/thrombophlebitis ← trilaciclib · model not identified | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2023_time_to_event_safety_efficacy_endpoints](drugs/drug_trilaciclib/pd_Li_2023_time_to_event_safety_efficacy_endpoints.md) | time-to-event safety/efficacy endpoints ← trilaciclib · time-to-event model | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=trilaciclib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `SLC22A2` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCG2` substrate, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CDK2 (inhibitor), CDK4 (inhibitor), CDK5 (inhibitor), CDK6 (inhibitor), CDK7 (inhibitor), CDK9 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -77,13 +52,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 20:03 | 2:22 | 2/0/0 | 1/0/0 | 0/0/0 | 66,266/11,203 | ollama / glm-5.3-flash | 2 | 1/1 | 1/1 | 0 |
+| 2026-10-07 20:03 | 2:22 | 2/0/0 | 6/0/0 | 0/0/0 | 66,266/11,203 | ollama / glm-5.3-flash | 2 | 1/1 | 1/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

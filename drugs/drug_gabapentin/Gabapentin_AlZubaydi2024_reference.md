@@ -5,11 +5,11 @@
 
 # gabapentin — `Gabapentin_AlZubaydi2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:04 UTC (Rejected), but the paper was screened again on 2026-10-07 06:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record for gabapentin was rejected due to a negative unbound clearance covariate estimate of -0.89.
+> Record for gabapentin was rejected due to a negative unbound clearance covariate estimate of -0.89.
 
-<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="rejected" stale="true" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="rejected" stale="false" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Al-Zubaydi F, Wassef A, Kagan L, Brunetti L. Development of a Population Pharmacokinetic Gabapentin Model Leveraging Therapeutic Drug Monitoring Concentrations. Pharmaceutics 16(12) (2024).
@@ -40,7 +40,7 @@ Al-Zubaydi F, Wassef A, Kagan L, Brunetti L. Development of a Population Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

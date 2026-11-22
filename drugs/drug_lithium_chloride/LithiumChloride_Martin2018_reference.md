@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;lithium chloride&quot;,&quot;href&quot;:&quot;drugs/drug_lithium_chloride/&quot;},{&quot;label&quot;:&quot;Martin_2018 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LithiumChloride_Rosenthal1986_reference&quot;,&quot;label&quot;:&quot;Rosenthal_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lithium chloride — `LithiumChloride_Martin2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:17 UTC (Rejected), but the paper was screened again on 2026-10-07 22:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The AUClast parameter uses incompatible units of h*ng/mL while the C0 parameter uses mmol/L, creating a dimensional mismatch.
+> The lithium concentration parameter C0 (2.19 mmol/L) was rejected due to a dimensional mismatch against the mass-based clearance unit.
 
-<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Martin2018_reference" status="rejected" stale="true" population="healthy adult horses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Martin2018_reference" status="rejected" stale="false" population="healthy adult horses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Martin LM, Bukoski AD, Whelchel DD, Evans TJ, Wiedmeyer CE, Black SJ et al. Pharmacokinetics of intravenous lithium chloride and assessment of agreement between two methods of lithium concentration measurement in the horse. Equine veterinary journal 50(4):537–543 (2018).
@@ -43,7 +44,7 @@ Martin LM, Bukoski AD, Whelchel DD, Evans TJ, Wiedmeyer CE, Black SJ et al. Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +54,9 @@ Martin LM, Bukoski AD, Whelchel DD, Evans TJ, Wiedmeyer CE, Black SJ et al. Phar
 
 ### Reviewer guidance
 
-**The AUClast parameter uses incompatible units of h*ng/mL while the C0 parameter uses mmol/L, creating a dimensional mismatch.**
+**The lithium concentration parameter C0 (2.19 mmol/L) was rejected due to a dimensional mismatch against the mass-based clearance unit.**
 
-The record reports an AUClast of 550 h*ng/mL, which is dimensionally inconsistent with the C0 concentration of 2.19 mmol/L. Since the data originated from the paper's abstract only, these summary statistics were used in place of a fitted model. A secondary reader noted that the dose compound was labeled as lithium chloride rather than lithium_chloride and that the interconversion link between the dose and the measured compound was missing from the model structure. Extracted — lithium chloride: C0 2.19 mmol/L, t1/2z 25.7 h, AUClast 550 h*ng/mL, CL 0.273 mL/min/kg, MRT 31.2 h, Vss 511 mL/kg.
+The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the dose compound spelling and expected an interconversion link that was missing from the structure. Extracted — lithium chloride: C0 2.19 mmol/L, t1/2z 25.7 h, AUClast 550 h*ng/mL, CL 0.273 mL/min/kg, MRT 31.2 h, Vss 511 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium chloride, the second reading lithium_chloride; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

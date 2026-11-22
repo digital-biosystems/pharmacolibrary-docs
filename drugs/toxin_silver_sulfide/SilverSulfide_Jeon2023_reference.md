@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The retention function lacks parameters A1 and A2, and the model relies solely on abstract summary statistics rather than fitted data.
 
 <div class="pk-model-meta" hidden drug="Silver sulfide" model-id="SilverSulfide_Jeon2023_reference" status="needs_review" stale="false" population="mice" measured-compound="Silver nanoparticles (particulate form)" parameterization="mechanistic" topology="retention"></div>
 
@@ -48,7 +48,13 @@ Jeon S, Lee WS, Song KS, Jeong J, Lee S, Kim S et al. Differential particle and 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The retention function lacks parameters A1 and A2, and the model relies solely on abstract summary statistics rather than fitted data.**
+
+The record attempts to describe the disposition of silver nanoparticles in mice using a retention structure, but the required amplitude parameters A1 and A2 are missing, preventing the calculation of the retention curve. The model builder substituted reported summary statistics from the paper's abstract for a fitted pharmacokinetic model. Consequently, the model is incomplete and cannot accurately represent the drug's disposition. Extracted — silver sulfide: t1/2α 4.8 h, t1/2β 13.2 days.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

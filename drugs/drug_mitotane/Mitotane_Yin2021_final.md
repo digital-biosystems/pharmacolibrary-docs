@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;mitotane&quot;,&quot;href&quot;:&quot;drugs/drug_mitotane/&quot;},{&quot;label&quot;:&quot;Yin_2021 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitotane_Cazaubon2019_reference&quot;,&quot;label&quot;:&quot;Cazaubon_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitotane/Mitotane_Cazaubon2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mitotane_Kerkhofs2015_reference&quot;,&quot;label&quot;:&quot;Kerkhofs_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitotane/Mitotane_Kerkhofs2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitotane_Kerkhofs2015_reference&quot;,&quot;label&quot;:&quot;Kerkhofs_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitotane/Mitotane_Kerkhofs2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mitotane_Cazaubon2019_reference&quot;,&quot;label&quot;:&quot;Cazaubon_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitotane/Mitotane_Cazaubon2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mitotane — `Mitotane_Yin2021_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:42 UTC (Rejected), but the paper was screened again on 2026-10-06 21:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on the CYP2C19 genotype covariate, which incorrectly uses a volume of distribution value.
+> The record was rejected because mitotane’s intercompartmental clearance, Q/F, is reported as 883 /day, a unit inconsistent with clearance.
 
-<div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Yin2021_final" status="rejected" stale="true" population="adults with adrenocortical carcinoma" measured-compound="mitotane" parameterization="apparent" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Yin2021_final" status="rejected" stale="false" population="adults with adrenocortical carcinoma" measured-compound="mitotane" parameterization="apparent" topology="3C"></div>
 
 ## Citation
 Yin A, Ettaieb MHT, Swen JJ, van Deun L, Kerkhofs TMA, van der Straaten RJHM et al. Population Pharmacokinetic and Pharmacogenetic Analysis of Mitotane in Patients with Adrenocortical Carcinoma: Towards Individualized Dosing. Clinical pharmacokinetics 60(1):89–102 (2021).
@@ -17,7 +17,7 @@ Yin A, Ettaieb MHT, Swen JJ, van Deun L, Kerkhofs TMA, van der Straaten RJHM et 
 
 ## Population and dosing
 
-**Population:** adults with adrenocortical carcinoma · condition adrenocortical carcinoma · age group adult · n = &gt;.
+**Population:** adults with adrenocortical carcinoma · condition adrenocortical carcinoma · age group adult.
 
 ## Model
 
@@ -43,7 +43,7 @@ Yin A, Ettaieb MHT, Swen JJ, van Deun L, Kerkhofs TMA, van der Straaten RJHM et 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.733). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.733). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Yin A, Ettaieb MHT, Swen JJ, van Deun L, Kerkhofs TMA, van der Straaten RJHM et 
 
 ### Reviewer guidance
 
-**The record was rejected due to a dimension mismatch on the CYP2C19 genotype covariate, which incorrectly uses a volume of distribution value.**
+**The record was rejected because mitotane’s intercompartmental clearance, Q/F, is reported as 883 /day, a unit inconsistent with clearance.**
 
-The parameter labeled as the CYP2C19 genotype covariate (CL_SNP3) has a value of 0.753 and units of CC, yet its meaning identifies it as the volume of distribution of the peripheral compartment. Additionally, the record contains a duplicate weight power covariate with conflicting values of 1.10 and 1.22. The second reader noted discrepancies in the clearance covariate values, finding the record missing a value that the reader identified as 0.601. Extracted — mitotane: kabs 15 /day, CL/F 298 L/day, CL 0.551 GA/AA, V2 0.753 CC, V1/F 6.21e+03 L, V2/F 1.81e+04 L, Q/F 883 /day.
+Q/F means apparent intercompartmental clearance, which has dimensions of volume per time, but its reported /day unit has dimensions of inverse time. That unit could not be converted to SI, so the parameter reached the model builder without an SI value. Extracted — mitotane: kabs 15 /day, CL/F 298 L/day, CL 0.551 GA/AA, V2 0.753 CC, V1/F 6.21e+03 L, V2/F 1.81e+04 L, Q/F 883 /day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl_snp1: this record has 0.551, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

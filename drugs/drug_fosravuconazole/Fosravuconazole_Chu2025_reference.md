@@ -4,11 +4,11 @@
 
 # fosravuconazole — `Fosravuconazole_Chu2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-07 22:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The itraconazole and hydroxyitraconazole metabolites are unreachable orphans because their formation links to the parent drug fosravuconazole lack assigned rate constants.
+> Fosravuconazole absorption rate and Vmax units are non-standard, preventing conversion to SI units, causing dimension mismatches for intercompartmental clearance and Michaelis-Menten constant.
 
-<div class="pk-model-meta" hidden drug="fosravuconazole" model-id="Fosravuconazole_Chu2025_reference" status="rejected" stale="true" population="Sudanese patients with eumycetoma" measured-compound="ravuconazole" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fosravuconazole" model-id="Fosravuconazole_Chu2025_reference" status="rejected" stale="false" population="Sudanese patients with eumycetoma" measured-compound="ravuconazole" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Chu WY, Fahal AH, Ahmed ES, Bakhiet SM, Bakhiet OE, Fahal LA et al. Pharmacokinetics and Pharmacodynamics of Fosravuconazole, Itraconazole, and Hydroxyitraconazole in Sudanese Patients With Eumycetoma. The Journal of infectious diseases 232(3):e518–e528 (2025).
@@ -16,7 +16,7 @@ Chu WY, Fahal AH, Ahmed ES, Bakhiet SM, Bakhiet OE, Fahal LA et al. Pharmacokine
 
 ## Population and dosing
 
-**Population:** Sudanese patients with eumycetoma · condition eumycetoma · age group adult · n = 52.
+**Population:** Sudanese patients with eumycetoma · condition eumycetoma · age group adult.
 
 **Dosing:** 200, 300 mg, oral, multiple, every 168 h.
 
@@ -47,7 +47,7 @@ Chu WY, Fahal AH, Ahmed ES, Bakhiet SM, Bakhiet OE, Fahal LA et al. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.611). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.611). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Chu WY, Fahal AH, Ahmed ES, Bakhiet SM, Bakhiet OE, Fahal LA et al. Pharmacokine
 
 ### Reviewer guidance
 
-**The itraconazole and hydroxyitraconazole metabolites are unreachable orphans because their formation links to the parent drug fosravuconazole lack assigned rate constants.**
+**Fosravuconazole absorption rate and Vmax units are non-standard, preventing conversion to SI units, causing dimension mismatches for intercompartmental clearance and Michaelis-Menten constant.**
 
-The structural parameters for the metabolic conversion of fosravuconazole to ravuconazole and the subsequent formation of hydroxyitraconazole have no defined values. Consequently, the itraconazole and hydroxyitraconazole compartments lack a physical path from the administered dose, rendering them unreachable within the model structure. Extracted — ravuconazole: kabs 0.00376 ka, Vmax 4.55, Km 4 Km, V1 20.8 L, Q 9.03 L/h, V2 262 L; itraconazole: CLb 10.7 L/h; hydroxyitraconazole: CL 5.16 L/h.
+The absorption rate constant for ravuconazole is listed with unit 'ka' and Vmax with 'Km', neither of which converts to SI, leaving these parameters without standard values. Additionally, the intercompartmental clearance and Michaelis-Menten constant exhibit unit dimension conflicts, such as time versus inverse time and length versus mass per volume, indicating structural parameter errors. Extracted — ravuconazole: kabs 0.00376 ka, Vmax 4.55, Km 4 Km, V1 20.8 L, Q 9.03 L/h, V2 262 L; itraconazole: CLb 10.7 L/h; hydroxyitraconazole: CL 5.16 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fosravuconazole, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

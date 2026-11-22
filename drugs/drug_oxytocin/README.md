@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G02A&quot;,&quot;href&quot;:&quot;atc/G02A.md&quot;},{&quot;label&quot;:&quot;oxytocin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxytocin_De1995_reference&quot;,&quot;label&quot;:&quot;De_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_De1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_Monks2023_reference&quot;,&quot;label&quot;:&quot;Monks_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_Nielsen2017_reference&quot;,&quot;label&quot;:&quot;Nielsen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxytocin_Monks2023_reference&quot;,&quot;label&quot;:&quot;Monks_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_De1995_reference&quot;,&quot;label&quot;:&quot;De_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_De1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_Nielsen2017_reference&quot;,&quot;label&quot;:&quot;Nielsen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # oxytocin
 
@@ -24,13 +24,13 @@ Oxytocin is a peptide hormone used to stimulate uterine contractions for childbi
 
 ## Start here
 
-> **De_1995_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> male volunteers. [Run it in the simulator](drugs/drug_oxytocin/Oxytocin_De1995_reference.md?tab=Simulation) · [record](drugs/drug_oxytocin/Oxytocin_De1995_reference.md)
+> **Monks_2023_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> women undergoing elective caesarean delivery. [Run it in the simulator](drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md?tab=Simulation) · [record](drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Nielsen_2017 · CL</text><circle cx="265.5" cy="30.0" r="4" fill="#ef6c00"><title>Nielsen_2017 · CL: 27 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">De_1995 · CL</text><circle cx="334.7" cy="46.0" r="4" fill="#78909c"><title>De_1995 · CL: 67.1 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Monks_2023 · CL</text><circle cx="448.2" cy="62.0" r="4" fill="#78909c"><title>Monks_2023 · CL: 298.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">De_1995 · V</text><circle cx="281.2" cy="30.0" r="4" fill="#78909c"><title>De_1995 · V: 33.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Monks_2023 · V</text><circle cx="398.8" cy="46.0" r="4" fill="#78909c"><title>Monks_2023 · V: 156.1 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Nielsen_2017 · CL</text><circle cx="265.5" cy="30.0" r="4" fill="#ef6c00"><title>Nielsen_2017 · CL: 27 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">De_1995 · CL</text><circle cx="334.7" cy="46.0" r="4" fill="#ef6c00"><title>De_1995 · CL: 67.1 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Monks_2023 · CL</text><circle cx="448.2" cy="62.0" r="4" fill="#78909c"><title>Monks_2023 · CL: 298.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">De_1995 · V</text><circle cx="281.2" cy="30.0" r="4" fill="#ef6c00"><title>De_1995 · V: 33.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Monks_2023 · V</text><circle cx="398.8" cy="46.0" r="4" fill="#78909c"><title>Monks_2023 · V: 156.1 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -38,27 +38,9 @@ Oxytocin is a peptide hormone used to stimulate uterine contractions for childbi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [De_1995_reference](drugs/drug_oxytocin/Oxytocin_De1995_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | De Groot AN et al., Bioavailability and pharmacokinetics of…, The Journal of pharmacy and… (1995) | [10.1111/j.2042-7158.1995.tb06716.x](https://doi.org/10.1111/j.2042-7158.1995.tb06716.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Monks_2023_reference](drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Monks DT et al., A study of the pharmacokinetics and pha…, Anaesthesia (2023) | [10.1111/anae.16109](https://doi.org/10.1111/anae.16109) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Nielsen_2017_reference](drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Nielsen EI et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.961](https://doi.org/10.1002/jcph.961) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxytocin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | mammary gland | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | placenta | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | testis | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: AGER (binder), AVPR1A (target), AVPR1B (target), AVPR2 (target), LNPEP (substrate), OXT (binder), OXTR (target), PREP (substrate).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [De_1995_reference](drugs/drug_oxytocin/Oxytocin_De1995_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | De Groot AN et al., Bioavailability and pharmacokinetics of…, The Journal of pharmacy and… (1995) | [10.1111/j.2042-7158.1995.tb06716.x](https://doi.org/10.1111/j.2042-7158.1995.tb06716.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Nielsen_2017_reference](drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Nielsen EI et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.961](https://doi.org/10.1002/jcph.961) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -78,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 205 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -5,11 +5,11 @@
 
 # voclosporin — `Voclosporin_Mayo2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:35 UTC (Rejected), but the paper was screened again on 2026-10-07 01:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the structural clearance parameter had a dimension mismatch, and the intrinsic clearance parameter lacked a value.
+> The apparent clearance of voclosporin, 717 mL min(-1), was rejected because its units conflict with the required dimension for that parameter.
 
-<div class="pk-model-meta" hidden drug="voclosporin" model-id="Voclosporin_Mayo2014_reference" status="rejected" stale="true" population="renal allograft patients" measured-compound="voclosporin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="voclosporin" model-id="Voclosporin_Mayo2014_reference" status="rejected" stale="false" population="renal allograft patients" measured-compound="voclosporin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Mayo PR, Ling SY, Huizinga RB, Freitag DG, Aspeslet LJ, Foster RT. Population PKPD of voclosporin in renal allograft patients. Journal of clinical pharmacology 54(5):537–545 (2014).
@@ -17,7 +17,7 @@ Mayo PR, Ling SY, Huizinga RB, Freitag DG, Aspeslet LJ, Foster RT. Population PK
 
 ## Population and dosing
 
-**Population:** renal allograft patients · condition renal allograft · age group adult · n = &gt;= 87.
+**Population:** renal allograft patients · condition renal allograft · age group adult.
 
 ## Model
 
@@ -36,7 +36,7 @@ Mayo PR, Ling SY, Huizinga RB, Freitag DG, Aspeslet LJ, Foster RT. Population PK
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Mayo PR, Ling SY, Huizinga RB, Freitag DG, Aspeslet LJ, Foster RT. Population PK
 
 ### Reviewer guidance
 
-**The record was rejected because the structural clearance parameter had a dimension mismatch, and the intrinsic clearance parameter lacked a value.**
+**The apparent clearance of voclosporin, 717 mL min(-1), was rejected because its units conflict with the required dimension for that parameter.**
 
-The primary clearance parameter (CL/F) was found to have a dimension mismatch. The intrinsic clearance (CLint) parameter was missing a value, meaning no estimate was provided. Because the record was built from the abstract alone, the reported statistics stand in for a fitted model. Extracted — voclosporin: CL/F 717 mL min(-1), V 2.01e+03 mL.
+The record was built from the paper's abstract, so the reported summary statistics stand in for a fitted model. The apparent clearance value of 717 mL min(-1) carries units of volume per time, which conflicts with the expected dimension of volume per mass per time. A second reader disagreed on whether the primary analyte and dose compound were voclosporin or unknown, and also conflicted on whether the clearance and volume values were present. Extracted — voclosporin: CL/F 717 mL min(-1), V 2.01e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has voclosporin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

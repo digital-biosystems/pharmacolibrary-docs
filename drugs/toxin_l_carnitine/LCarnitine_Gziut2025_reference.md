@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;L-Carnitine&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/&quot;},{&quot;label&quot;:&quot;Gziut_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LCarnitine_Haarhuis2026_reference&quot;,&quot;label&quot;:&quot;Haarhuis_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Haarhuis2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Nguyen2022_reference&quot;,&quot;label&quot;:&quot;Nguyen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Nguyen2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Parnetti1992_reference&quot;,&quot;label&quot;:&quot;Parnetti_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Parnetti1992_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Sahajwalla1995_reference&quot;,&quot;label&quot;:&quot;Sahajwalla_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Sahajwalla1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Shimizu2018_reference&quot;,&quot;label&quot;:&quot;Shimizu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LCarnitine_Nguyen2022_reference&quot;,&quot;label&quot;:&quot;Nguyen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Nguyen2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Parnetti1992_reference&quot;,&quot;label&quot;:&quot;Parnetti_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Parnetti1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Sahajwalla1995_reference&quot;,&quot;label&quot;:&quot;Sahajwalla_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Sahajwalla1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Haarhuis2026_reference&quot;,&quot;label&quot;:&quot;Haarhuis_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Haarhuis2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Shimizu2018_reference&quot;,&quot;label&quot;:&quot;Shimizu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="L-Carnitine" model-id="LCarnitine_Gziut2025_reference" status="needs_review" stale="false" population="humans" measured-compound="L-Carnitine" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,13 @@ Gziut T, Thanacoody R. L-carnitine for valproic acid-induced toxicity. British j
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — l carnitine: CL 90 mL/min, kabs 0.5 /h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

@@ -36,7 +36,7 @@ Fluticasone is a glucocorticoid used to treat conditions such as nasal congestio
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Mehta_2020_reference](drugs/drug_fluticasone/Fluticasone_Mehta2020_reference.md) | — | 1-compartment (no model) | 1 | Mehta R et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00794-w](https://doi.org/10.1007/s40262-019-00794-w) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Möllmann_1998_reference](drugs/drug_fluticasone/Fluticasone_Mllmann1998_reference.md) | — | 1-compartment (no model) | 3 | Möllmann H et al., Pharmacokinetic and pharmacodynamic eva…, European journal of clinica… (1998) | [10.1007/s002280050407](https://doi.org/10.1007/s002280050407) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Möllmann_1998_reference](drugs/drug_fluticasone/Fluticasone_Mllmann1998_reference.md) | — | 1-compartment (no model) | 3 | Möllmann H et al., Pharmacokinetic and pharmacodynamic eva…, European journal of clinica… (1998) | [10.1007/s002280050407](https://doi.org/10.1007/s002280050407) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub> | [Rebello_2026_reference](drugs/drug_fluticasone/Fluticasone_Rebello2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 | Rebello J et al., Understanding Pulmonary and Systemic Ph…, European journal of drug me… (2026) | [10.1007/s13318-026-00989-0](https://doi.org/10.1007/s13318-026-00989-0) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Siederer_2016_reference](drugs/drug_fluticasone/Fluticasone_Siederer2016_reference.md) | — | 1-compartment (no model) | 1 | Siederer S et al., Population Pharmacokinetics of Inhaled…, European journal of drug me… (2016) | [10.1007/s13318-015-0303-4](https://doi.org/10.1007/s13318-015-0303-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Mehta_2018_reference](drugs/drug_fluticasone/Fluticasone_Mehta2018_reference.md) | — | 1-compartment (no model) | 0 | Mehta R et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1253](https://doi.org/10.1002/jcph.1253) |
@@ -57,26 +57,6 @@ Fluticasone is a glucocorticoid used to treat conditions such as nasal congestio
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Möllmann_1998_granulocytes](drugs/drug_fluticasone/pd_M_llmann_1998_granulocytes.md) | granulocyte induction ← fluticasone propionate · indirect response — drug stimulates the production of granulocyte induction | model (no simulator) | Möllmann H et al., Pharmacokinetic and pharmacodynamic eva…, European journal of clinica… (1998) | [10.1007/s002280050407](https://doi.org/10.1007/s002280050407) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Möllmann_1998_lymphocytes](drugs/drug_fluticasone/pd_M_llmann_1998_lymphocytes.md) | lymphocyte suppression ← fluticasone propionate · indirect response — drug inhibits the production of lymphocyte suppression | model (no simulator) | Möllmann H et al., Pharmacokinetic and pharmacodynamic eva…, European journal of clinica… (1998) | [10.1007/s002280050407](https://doi.org/10.1007/s002280050407) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fluticasone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inducer/inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer/inhibitor/substrate, `CYP3A7` substrate, `SLCO1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: NR3C1 (target), NR3C2 (target), PGR (target), PLA2G4A (inhibitor), SERPINA6 (unknown).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -89,13 +69,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:12 | 8:34 | 4/1/0 | 7/0/0 | 0/0/0 | 166,500/18,584 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 1 |
+| 2026-10-07 23:12 | 8:34 | 4/1/0 | 11/0/0 | 0/0/0 | 166,500/18,584 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 1 |
 
 ## Coverage
 
 - **PubMed hits:** 60 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 5  ·  extracted 0  ·  needs review 4  ·  rejected 1  ·  stale 1
+- **records:** 5  ·  extracted 0  ·  needs review 4  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

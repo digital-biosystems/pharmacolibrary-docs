@@ -4,11 +4,11 @@
 
 # phytomenadione — `Phytomenadione_Novotny2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-05 19:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="phytomenadione" model-id="Phytomenadione_Novotny2010_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="phylloquinone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="phytomenadione" model-id="Phytomenadione_Novotny2010_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="phylloquinone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Novotny JA, Kurilich AC, Britz SJ, Baer DJ, Clevidence BA. Vitamin K absorption and kinetics in human subjects after consumption of 13C-labelled phylloquinone from kale. The British journal of nutrition 104(6):858–862 (2010).
@@ -38,7 +38,7 @@ Novotny JA, Kurilich AC, Britz SJ, Baer DJ, Clevidence BA. Vitamin K absorption 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Novotny JA, Kurilich AC, Britz SJ, Baer DJ, Clevidence BA. Vitamin K absorption 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — phytomenadione: t1/2z 215 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has phylloquinone, the second reading 13C-phylloquinone; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has phylloquinone, the second reading 13C-phylloquinone; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -84,14 +84,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[tissue half-time].parameter_id` | Q57 | Q59 | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | phylloquinone | 13C-phylloquinone | mismatch |
+| `gpt-oss-120b` | `parameters[tissue half-time].parameter_id` | Q57 | Q59 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | phylloquinone | 13C-phylloquinone | mismatch |
 
 </details>
 

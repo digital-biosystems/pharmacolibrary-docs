@@ -4,11 +4,11 @@
 
 # butriptyline — `Butriptyline_Bourgouin1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-06 22:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="butriptyline" model-id="Butriptyline_Bourgouin1981_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="butriptyline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="butriptyline" model-id="Butriptyline_Bourgouin1981_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="butriptyline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bourgouin J, Gagnon MA, Elie R, Dvornik D, Gonzalez R, Kraml M. Butriptyline: human pharmacokinetics and comparative bioavailability of conventional and sustained release formulations. Biopharmaceutics & drug disposition 2(2):123–130 (1981).
@@ -38,7 +38,7 @@ Bourgouin J, Gagnon MA, Elie R, Dvornik D, Gonzalez R, Kraml M. Butriptyline: hu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Bourgouin J, Gagnon MA, Elie R, Dvornik D, Gonzalez R, Kraml M. Butriptyline: hu
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — butriptyline: tmax 2.6 h, Cmax 46.5 ng ml-1, t1/2z 20 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has butriptyline hydrochloride, the second reading butriptyline; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

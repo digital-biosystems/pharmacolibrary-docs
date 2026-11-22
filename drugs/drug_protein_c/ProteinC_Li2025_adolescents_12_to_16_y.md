@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 adolescents_12_to_16_y&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # protein C — `ProteinC_Li2025_adolescents_12_to_16_y`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was quarantined because protein C's clearance parameter had no extracted value, forcing reliance on a library placeholder instead of a specific estimate.
+> This record was reviewed on 2026-11-07 15:11 UTC (Needs review), but the paper was screened again on 2026-10-05 15:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025_adolescents_12_to_16_y" status="model_quarantined" stale="false" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025_adolescents_12_to_16_y" status="extracted" stale="true" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intravenous protein C concentrate in protein C deficiency: implications for treatment initiation and maintenance. Research and practice in thrombosis and haemostasis 9(3):102859 (2025).
@@ -17,7 +17,7 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 
 ## Population and dosing
 
-**Population:** patients with severe congenital or acquired protein C deficiency · condition protein C deficiency · age group mixed · n = &gt;=58.
+**Population:** patients with severe congenital or acquired protein C deficiency · condition protein C deficiency · age group mixed.
 
 **Dosing:** 45, 60, 80, 120 IU/kg, iv, multiple, every 12 h.
 
@@ -31,8 +31,6 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t½, hh | t1/2z | 11.9 | h |
@@ -42,7 +40,7 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +54,7 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 
 The record lists a clearance value of 0.0511 dL/kg/h, yet the model builder defaulted the clearance parameter because no explicit estimate was accepted. This discrepancy is highlighted by a second reader who identified a different clearance value of 7.14 from the source. The model remains in quarantine because the clearance used for the final build was a placeholder rather than a validated, extracted number. Extracted — protein c: t1/2z 11.9 h, CL 0.0511 dL/kg/h, Vss 0.804 dL/kg, V 20 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -120,21 +118,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (3/12 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss:120b` | `parameters[cl].rse_percent` |  | 6.76 | mismatch |
-| `gpt-oss:120b` | `parameters[cl].value` | 0.0511 | 7.14 | mismatch |
-| `gpt-oss:120b` | `parameters[effect_of_age_on_endo]` |  | 0.589 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1⁄2, hh]` | 11.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v_age]` |  | -0.112 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd]` |  | 60.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdss]` | 0.804 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | protein C | protein C concentrate | mismatch |
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl].rse_percent` |  | 6.76 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 0.0511 | 7.14 | mismatch |
+| `gpt-oss-120b` | `parameters[effect_of_age_on_endo]` |  | 0.589 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1⁄2, hh]` | 11.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_age]` |  | -0.112 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` |  | 60.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdss]` | 0.804 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | protein C | protein C concentrate | mismatch |
 
 </details>
 
@@ -201,30 +199,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y/ProteinC_Li2025_adolescents_12_to_16_y_matlab.zip" download>ProteinC_Li2025_adolescents_12_to_16_y_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y/ProteinC_Li2025_adolescents_12_to_16_y_matlab_simbio.zip" download>ProteinC_Li2025_adolescents_12_to_16_y_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y/ProteinC_Li2025_adolescents_12_to_16_y_sbml.zip" download>ProteinC_Li2025_adolescents_12_to_16_y_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y/ProteinC_Li2025_adolescents_12_to_16_y_cellml.zip" download>ProteinC_Li2025_adolescents_12_to_16_y_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intravenous protein C concentrate in protein C deficiency: implications for treatment initiation and maintenance. Research and practice in thrombosis and haemostasis 9(3):102859 (2025). [doi:10.1016/j.rpth.2025.102859](https://doi.org/10.1016/j.rpth.2025.102859)
-
-**This record:** Pharmacolibrary, model `ProteinC_Li2025_adolescents_12_to_16_y`. <https://pharmacolibrary.github.io/#/drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y>
-
-```bibtex
-@misc{pharmacolibrary_ProteinCLi2025adolescents12to16y,
-  title  = {{Pharmacolibrary model ProteinC_Li2025_adolescents_12_to_16_y}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y},
-  note   = {Parameters from doi:10.1016/j.rpth.2025.102859},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

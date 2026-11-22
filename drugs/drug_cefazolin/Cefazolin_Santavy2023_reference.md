@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefazolin&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/&quot;},{&quot;label&quot;:&quot;Santavy_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefazolin_Ryan2022_reference&quot;,&quot;label&quot;:&quot;Ryan_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/Cefazolin_Ryan2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefazolin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/Cefazolin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Smith_2024_Kmax_ECs&quot;,&quot;label&quot;:&quot;Smith_2024 \u00b7 Kmax,ECs&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/pd_Smith_2024_Kmax_ECs.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Smith_2024_Kmax_SC&quot;,&quot;label&quot;:&quot;Smith_2024 \u00b7 Kmax,SC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/pd_Smith_2024_Kmax_SC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefazolin_Ryan2022_reference&quot;,&quot;label&quot;:&quot;Ryan_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/Cefazolin_Ryan2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefazolin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/Cefazolin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Smith_2024_Kmax_ECs&quot;,&quot;label&quot;:&quot;Smith_2024 \u00b7 Kmax,ECs&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/pd_Smith_2024_Kmax_ECs.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Smith_2024_Kmax_SC&quot;,&quot;label&quot;:&quot;Smith_2024 \u00b7 Kmax,SC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/pd_Smith_2024_Kmax_SC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefazolin — `Cefazolin_Santavy2023_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Santavy2023_reference" status="simulated" stale="false" population="adults undergoing cardiac surgery" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
+> The review was held back due to a second-reader dispute over the peripheral volume of distribution value, which the second reader identified as 12.04 L.
+
+<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Santavy2023_reference" status="needs_review" stale="false" population="adults undergoing cardiac surgery" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Santavy P, Kubickova V, Sima M, Urbanek K. Population pharmacokinetics of three alternative prophylactic antibiotics during cardiac surgery with extracorporeal circulation. Biomedical papers of the Medical Faculty of the University Palacky, Olomouc, Czechoslovakia 167(2):208–211 (2023).
@@ -15,7 +17,7 @@ Santavy P, Kubickova V, Sima M, Urbanek K. Population pharmacokinetics of three 
 
 ## Population and dosing
 
-**Population:** adults undergoing cardiac surgery · condition cardiac surgery · age group adult · n = (20 ampicillin + 25 cefazolin + 9 ciprofloxacin).
+**Population:** adults undergoing cardiac surgery · condition cardiac surgery · age group adult.
 
 **Dosing:** 2000, 400000 mg, iv, single.
 
@@ -29,6 +31,8 @@ Santavy P, Kubickova V, Sima M, Urbanek K. Population pharmacokinetics of three 
 <figure class="pk-models-diagram"><img src="drugs/drug_cefazolin/Cefazolin_Santavy2023_reference/Cefazolin_Santavy2023_reference.svg" alt="Cefazolin_Santavy2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL_pop (L/h) | CL | 0.089 | L/h |
@@ -37,7 +41,7 @@ Santavy P, Kubickova V, Sima M, Urbanek K. Population pharmacokinetics of three 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +51,13 @@ Santavy P, Kubickova V, Sima M, Urbanek K. Population pharmacokinetics of three 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The review was held back due to a second-reader dispute over the peripheral volume of distribution value, which the second reader identified as 12.04 L.**
+
+The model record lists a central volume of 10.09 L and an intercompartmental clearance of 0.17 L/h, but the second reader disagrees that the peripheral volume is missing, instead assigning it a value of 12.04 L. This specific discrepancy regarding the peripheral compartment volume caused the cross-check to fail with an agreement ratio of 0.444, resulting in the record being flagged for further review. Extracted — cefazolin: CL 0.089 L/h, V 10.1 L, Q 0.17 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefazolin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -136,14 +142,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cefazolin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cefazolin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

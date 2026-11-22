@@ -16,7 +16,7 @@ Fabre D, Bressolle F, Goméni R, Bouvet O, Dubois A, Raffanel C et al. Identific
 
 ## Population and dosing
 
-**Population:** healthy volunteers and patients with chronic liver disease · condition chronic liver disease · age group adult · n = ${ 10 + 52 }.
+**Population:** healthy volunteers and patients with chronic liver disease · condition chronic liver disease · age group adult.
 
 ## Model
 

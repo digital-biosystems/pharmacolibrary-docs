@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models the direct additive inhibition of the Cerebral State Index by end-tidal isoflurane concentration using a sigmoidal Emax model. The fitted parameters are E0 = 54.4, Emax = 6.11, EC50 = 1.53%, and gamma = 7.3.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Sousa_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

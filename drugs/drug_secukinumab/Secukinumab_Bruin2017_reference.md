@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Secukinumab's central volume of distribution and absorption lag time lacked explicit values, so the model was quarantined.
+> Secukinumab’s Vd and Tlag had no reported values, so library placeholders led to the model being held back.
 
 <div class="pk-model-meta" hidden drug="secukinumab" model-id="Secukinumab_Bruin2017_reference" status="model_quarantined" stale="false" population="patients with moderate to severe psoriasis" measured-compound="secukinumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Bruin G, Loesche C, Nyirady J, Sander O. Population Pharmacokinetic Modeling of 
 
 ### Reviewer guidance
 
-**Secukinumab's central volume of distribution and absorption lag time lacked explicit values, so the model was quarantined.**
+**Secukinumab’s Vd and Tlag had no reported values, so library placeholders led to the model being held back.**
 
-The record lists peripheral volumes but omits the central volume of distribution. Absorption is defined by a rate constant, yet the absorption lag time is absent. Because these two parameters had no extracted values, the model builder used placeholder defaults instead of fitted estimates. Extracted — secukinumab: CL 0.19 L/day, V2 3.61 L, Q 0.39 L/day, V3 2.87 L, kabs 0.18 1/day, Frel 72.9.
+No value for secukinumab’s volume of distribution and absorption lag time. The model was built, but both parameters had no value, so library placeholders stood in and the model was held back rather than published with invented numbers. Extracted — secukinumab: CL 0.19 L/day, V2 3.61 L, Q 0.39 L/day, V3 2.87 L, kabs 0.18 1/day, Frel 72.9.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -127,16 +127,17 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 55.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 27.6 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 6 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped | 55.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 27.6 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 6 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -37,12 +37,12 @@ Regorafenib is a protein kinase inhibitor used to treat gastrointestinal stromal
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Casanova_2023_reference](drugs/drug_regorafenib/Regorafenib_Casanova2023_reference.md) | — | 1-compartment (no model) | 4 | Casanova M et al., Regorafenib plus Vincristine and Irinot…, Clinical cancer research :… (2023) | [10.1158/1078-0432.CCR-23-0257](https://doi.org/10.1158/1078-0432.CCR-23-0257) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Casanova_2023_reference](drugs/drug_regorafenib/Regorafenib_Casanova2023_reference.md) | — | 1-compartment (no model) | 4 | Casanova M et al., Regorafenib plus Vincristine and Irinot…, Clinical cancer research :… (2023) | [10.1158/1078-0432.CCR-23-0257](https://doi.org/10.1158/1078-0432.CCR-23-0257) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: unreported model parameter default(s): Q2</sub> | [Keunecke_2020_reference](drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference.md) | model (no simulator) | 3-compartment general linear | 13 (+4 cov.) | Keunecke A et al., Population pharmacokinetics of regorafe…, British journal of clinical… (2020) | [10.1111/bcp.14334](https://doi.org/10.1111/bcp.14334) |
 | <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Fu_2019_estimate](drugs/drug_regorafenib/Regorafenib_Fu2019_estimate.md) | — | general linear (no model) | 7 | Fu Q et al., Interaction Between Sex and Organic Ani…, Clinical and translational… (2019) | [10.1111/cts.12630](https://doi.org/10.1111/cts.12630) |
 | <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ regorafenib_glucuronide](drugs/drug_regorafenib/Regorafenib_Fu2019_regorafenib_glucuronide.md) | — | general linear (no model) | 5 |  |  |
 | <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ regorafenib_n_oxide](drugs/drug_regorafenib/Regorafenib_Fu2019_regorafenib_n_oxide.md) | — | general linear (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ regorafinib](drugs/drug_regorafenib/Regorafenib_Fu2019_regorafinib.md) | — | general linear (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ regorafinib](drugs/drug_regorafenib/Regorafenib_Fu2019_regorafinib.md) | — | general linear (no model) | 6 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Schmulenson_2022_reference](drugs/drug_regorafenib/Regorafenib_Schmulenson2022_reference.md) | — | general linear (no model) | 12 | Schmulenson E et al., Population pharmacokinetic analyses of…, British journal of clinical… (2022) | [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461) |
 
 ## Pharmacodynamics (PD)
@@ -51,26 +51,6 @@ Regorafenib is a protein kinase inhibitor used to treat gastrointestinal stromal
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Solms_2017_OS](drugs/drug_regorafenib/pd_Solms_2017_OS.md) | overall survival ← regorafenib · time-to-event model | — | Solms A et al., Exposure-response relationship of regor…, European journal of pharmac… (2017) | [10.1016/j.ejps.2017.05.050](https://doi.org/10.1016/j.ejps.2017.05.050) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Solms_2017_TTP](drugs/drug_regorafenib/pd_Solms_2017_TTP.md) | time-to-progression ← regorafenib · time-to-event model | — | Solms A et al., Exposure-response relationship of regor…, European journal of pharmac… (2017) | [10.1016/j.ejps.2017.05.050](https://doi.org/10.1016/j.ejps.2017.05.050) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=regorafenib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | kidney | `UGT1A9` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` inhibitor/substrate, `UGT1A1` inhibitor, `UGT1A9` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABL1 (inhibitor), BRAF (inhibitor), CSF1R (inhibitor), DDR2 (inhibitor), EPHA2 (inhibitor), FGFR1 (inhibitor), FGFR2 (inhibitor), FLT1 (inhibitor), FLT4 (inhibitor), FRK (inhibitor), KDR (inhibitor), KIT (inhibitor), MAPK11 (inhibitor), NTRK1 (inhibitor), PDGFRA (inhibitor), PDGFRB (inhibitor), RAF1 (inhibitor), RET (inhibitor), TEK (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -84,13 +64,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:56 | 18:59 | 2/5/0 | 1/0/0 | 0/0/0 | 405,821/106,433 | openai / gpt-6-luna | 8 | 1/7 | 8/0 | 0 |
+| 2026-10-07 05:56 | 18:59 | 2/5/0 | 2/0/0 | 0/0/0 | 405,821/106,433 | openai / gpt-6-luna | 8 | 1/7 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 7  ·  extracted 0  ·  needs review 2  ·  rejected 5  ·  stale 2
+- **records:** 7  ·  extracted 0  ·  needs review 2  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

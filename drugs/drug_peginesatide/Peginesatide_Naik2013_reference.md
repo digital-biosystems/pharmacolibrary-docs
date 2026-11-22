@@ -4,11 +4,11 @@
 
 # peginesatide — `Peginesatide_Naik2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Needs review), but the paper was screened again on 2026-10-05 21:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; vmax has no unit.
+> Vmax has no unit.
 
-<div class="pk-model-meta" hidden drug="peginesatide" model-id="Peginesatide_Naik2013_reference" status="needs_review" stale="true" population="patients with chronic kidney disease on dialysis" measured-compound="peginesatide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="peginesatide" model-id="Peginesatide_Naik2013_reference" status="needs_review" stale="false" population="patients with chronic kidney disease on dialysis" measured-compound="peginesatide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Naik H, Tsai MC, Fiedler-Kelly J, Qiu P, Vakilynejad M. A Population Pharmacokinetic and Pharmacodynamic Analysis of Peginesatide in Patients with Chronic Kidney Disease on Dialysis. PloS one 8(6):e66422 (2013).
@@ -47,7 +47,7 @@ Naik H, Tsai MC, Fiedler-Kelly J, Qiu P, Vakilynejad M. A Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.871). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.871). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,11 +57,11 @@ Naik H, Tsai MC, Fiedler-Kelly J, Qiu P, Vakilynejad M. A Population Pharmacokin
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance; vmax has no unit.**
+**Vmax has no unit.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km and Fab), so that value has no SI equivalent. Extracted — peginesatide: Vmax 44.7, Km 1.86e+03 ng/mL, V1 35.6 mL/kg, kabs 0.00869 1/hr, Fab 0.499 F1, Q 5.23 mL/kg/hr, V2 7.42 mL/kg.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km and Fab), so that value has no SI equivalent. Extracted — peginesatide: Vmax 44.7, Km 1.86e+03 ng/mL, V1 35.6 mL/kg, kabs 0.00869 1/hr, Fab 0.499 F1, Q 5.23 mL/kg/hr, V2 7.42 mL/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading peginesatide → hemoglobin (pharmacodynamic_stimulation); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading peginesatide → hemoglobin (pharmacodynamic_stimulation); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -123,16 +123,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.871 (27/31 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.871 (27/31 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['peginesatide', 'hemoglobin', 'pharmacodynamic_stimulation']] | mismatch |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution (v3), in ml/kg].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-oss:120b` | `parameters[theta_q319_bmi_power]` | -0.485 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v2_bmi_power]` |  | -0.485 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['peginesatide', 'hemoglobin', 'pharmacodynamic_stimulation']] | mismatch |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution (v3), in ml/kg].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q319_bmi_power]` | -0.485 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_bmi_power]` |  | -0.485 | only_one_extracted |
 
 </details>
 

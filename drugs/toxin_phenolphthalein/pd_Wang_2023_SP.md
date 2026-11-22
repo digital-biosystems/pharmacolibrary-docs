@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided excerpts describe a study on B. ceiba flower aqueous extracts (BCE) and loperamide, but do not provide pharmacodynamic model parameters (e.g., EC50, Imax, kin, kout, ke0, gamma) or a mechanistic equation linking phenolphthalein concentrations to Substance P (SP) levels. The text identifies SP as an excitatory neurotransmitter in gastrointestinal motility but lacks quantitative dose-response data or a defined PD model structure for phenolphthalein.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

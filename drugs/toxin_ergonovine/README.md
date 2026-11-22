@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ergonovine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergonovine_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergonovine/Ergonovine_de1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergonovine_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergonovine/Ergonovine_de1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Ergonovine
 
@@ -32,7 +32,7 @@ Ergonovine is only found in individuals that have used or taken this drug. It is
 
 ## Start here
 
-> **de_1994_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> six human male subjects, n = six. [Run it in the simulator](drugs/toxin_ergonovine/Ergonovine_de1994_reference.md?tab=Simulation) · [record](drugs/toxin_ergonovine/Ergonovine_de1994_reference.md)
+> **de_1994_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> six human male subjects, n = six. [Run it in the simulator](drugs/toxin_ergonovine/Ergonovine_de1994_reference.md?tab=Simulation) · [record](drugs/toxin_ergonovine/Ergonovine_de1994_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -40,34 +40,15 @@ Ergonovine is only found in individuals that have used or taken this drug. It is
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_1994_reference](drugs/toxin_ergonovine/Ergonovine_de1994_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | de Groot AN et al., Pharmacokinetics and bioavailability of…, Biopharmaceutics & drug dis… (1994) | [10.1002/bdd.2510150106](https://doi.org/10.1002/bdd.2510150106) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [de_1994_reference](drugs/toxin_ergonovine/Ergonovine_de1994_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | de Groot AN et al., Pharmacokinetics and bioavailability of…, Biopharmaceutics & drug dis… (1994) | [10.1002/bdd.2510150106](https://doi.org/10.1002/bdd.2510150106) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Balki_2014_MI](drugs/toxin_ergonovine/pd_Balki_2014_MI.md) | motility index ← ergonovine · stimulation effect | — | Balki M et al., Comparative efficacy of uterotonic agen…, Canadian journal of anaesth… (2014) | [10.1007/s12630-014-0190-1](https://doi.org/10.1007/s12630-014-0190-1) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">cattle</span> | [Klotz_2010_Response](drugs/toxin_ergonovine/pd_Klotz_2010_Response.md) | contractile response ← ergonovine · stimulation effect | — | Klotz JL et al., Contractile response of fescue-naive bo…, Journal of animal science (2010) | [10.2527/jas.2009-2243](https://doi.org/10.2527/jas.2009-2243) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">cattle</span> | [Klotz_2010_Response](drugs/toxin_ergonovine/pd_Klotz_2010_Response.md) | contractile response ← ergonovine · stimulation effect | — | Klotz JL et al., Contractile response of fescue-naive bo…, Journal of animal science (2010) | [10.2527/jas.2009-2243](https://doi.org/10.2527/jas.2009-2243) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Sakamoto_1989_airway_smooth_muscle_contraction](drugs/toxin_ergonovine/pd_Sakamoto_1989_airway_smooth_muscle_contraction.md) | airway smooth muscle contraction ← ergonovine · direct Emax (saturable) effect | — | Sakamoto Y, [The mechanism of ergonovine-induced ai…, Nihon Kyobu Shikkan Gakkai… (1989) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ergonovine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), DRD2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -87,7 +68,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 68 matched, 66 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

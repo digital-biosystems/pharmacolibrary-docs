@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time for the etanercept biosimilar were left at library defaults instead of using values estimated in the paper.
+> The etanercept biosimilar record uses library defaults for bioavailability and lag time, which are not supported by the paper.
 
 <div class="pk-model-meta" hidden drug="etanercept" model-id="Etanercept_Ling2024_reference" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="etanercept biosimilar" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Ling SF, Ogungbenro K, Darwich AS, Ariff ABM, Nair N, Bluett J et al. Population
 
 ## Population and dosing
 
-**Population:** patients with rheumatoid arthritis · condition rheumatoid arthritis · age group adult · n = This study models two separate cohorts: 6 etanercept subjects and 10 adalimumab subjects. Since the target is etanercept, the relevant subject count is 6..
+**Population:** patients with rheumatoid arthritis · condition rheumatoid arthritis · age group adult.
 
 **Dosing:** 40, 50 mg, subcutaneous, multiple, every 168 h.
 
@@ -51,9 +51,9 @@ Ling SF, Ogungbenro K, Darwich AS, Ariff ABM, Nair N, Bluett J et al. Population
 
 ### Reviewer guidance
 
-**Bioavailability and lag time for the etanercept biosimilar were left at library defaults instead of using values estimated in the paper.**
+**The etanercept biosimilar record uses library defaults for bioavailability and lag time, which are not supported by the paper.**
 
-The record lists a one-compartment model with specific clearance, volume of distribution, and absorption rate constant values, yet bioavailability and lag time are missing. These absent parameters were replaced by generic library placeholders rather than specific estimates from the study. The model builder noted these deviations, and the record was held back because these defaults affect the simulated profile without support from the paper's data. Extracted — etanercept biosimilar: V 9.19 L, CL 0.00283 L/h, kabs 0.117 /h.
+The record lists absorption, clearance, and volume parameters but leaves bioavailability and lag time at library placeholders. The paper does not provide explicit estimates for these parameters, so the simulated profile relies on unsupported conventions. A second reader could not confirm the specific compound identity, adding uncertainty to the record's attribution. Extracted — etanercept biosimilar: V 9.19 L, CL 0.00283 L/h, kabs 0.117 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etanercept biosimilar, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -132,14 +132,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=etanercept biosimilar) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=etanercept biosimilar) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

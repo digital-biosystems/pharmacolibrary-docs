@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The ethosuximide model's simulated peak time (1.18 h) mismatches the paper's value (0.63 h), and bioavailability was left at library defaults.
+> The ethosuximide model's predicted time of maximum concentration (1.18 h) differs from the paper's reported values.
 
 <div class="pk-model-meta" hidden drug="ethosuximide" model-id="Ethosuximide_Diezi2023_final_model" status="needs_review" stale="false" population="healthy adults" measured-compound="ethosuximide" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,9 +54,9 @@ Diezi L, Dao K, Jullien V, Roussel-Maupetit C, Burton I, André P et al. An inno
 
 ### Reviewer guidance
 
-**The ethosuximide model's simulated peak time (1.18 h) mismatches the paper's value (0.63 h), and bioavailability was left at library defaults.**
+**The ethosuximide model's predicted time of maximum concentration (1.18 h) differs from the paper's reported values.**
 
-The absorption rate constant of 5.59 h−1 results in a time to peak of 1.18 h, which deviates significantly from the reported 0.63 h. Bioavailability and lag time were not extracted from the paper, so library placeholders were used instead of fitted values. Additionally, the weight covariate exponent of 1.71 was identified with an incorrect parameter classification by a secondary reader. Extracted — ethosuximide: CL 0.569 L/h, V1 31.3 L, Q 10.2 L/h, V2 13.9 L, kabs 5.59 h−1, allometric_exponent 1.71.
+The simulation produced a time of maximum concentration of 1.18 h, which diverges from the paper's reported values of 0.63 h, 0.75 h, 0.5 h, and 4.0 h. This discrepancy indicates the absorption or distribution parameters do not match the observed peak timing. Additionally, the bioavailability fraction and lag time were not explicitly defined, relying on default values that were flagged as unreported. Extracted — ethosuximide: CL 0.569 L/h, V1 31.3 L, Q 10.2 L/h, V2 13.9 L, kabs 5.59 h−1, allometric_exponent 1.71.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[θ weight].parameter_id`: this record has Q319, the second reading Q900. That field shapes the model, so the record is marked disputed.
 
@@ -156,7 +156,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=ethosuximide) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.909, 0 of 1 reader(s) agree | 0.909 | cross-check disputed by a second reader: verdict disputed, agreement 0.909, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 93.7 | 0.01051 |  | unresolved concentration unit (exp '90% Confidence Interval (CI): 76.3–115.1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 87.6 | 0.01051 |  | unresolved concentration unit (exp '90% CI: 81.6–94.0', sim 'kg/m3') |
 | T1_tmax | reference | fail | 0.63 | 1.184 | 1.879 | h→SI vs simulated h |

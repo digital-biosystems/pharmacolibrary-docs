@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Vss (12.51 L) was substituted for the missing central volume in a one-compartment idarubicin model, preventing accurate simulation of the early distribution phase.
+> Idarubicin clearance (27.0 ml/min) is disputed because the second reader rejected the abstract-derived 1-compartment structure and missing metabolite link.
 
 <div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Kuhlmann2001_reference" status="needs_review" stale="false" population="rats" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Kuhlmann O, Hofmann S, Weiss M. Pharmacokinetics and toxicity of idarubicin in t
 
 ### Reviewer guidance
 
-**Vss (12.51 L) was substituted for the missing central volume in a one-compartment idarubicin model, preventing accurate simulation of the early distribution phase.**
+**Idarubicin clearance (27.0 ml/min) is disputed because the second reader rejected the abstract-derived 1-compartment structure and missing metabolite link.**
 
-The record was constructed from the abstract alone, meaning the reported summary statistics stand in for a fitted model. Consequently, no value was extracted for the central volume, forcing the model builder to use the steady-state volume of distribution (12.51 L) as a placeholder. This substitution allows the model to reproduce the area under the curve and terminal half-life but fails to capture the initial distribution phase of idarubicin. Extracted — idarubicin: CL 27 ml min(-1), MRT 519 min, Vss 12.5 L.
+The record derives from the abstract only, using total clearance 27.0 ml/min and steady-state volume 12.51 L to define a 1-compartment model. The second reader disagreed on the model structure, insisting on a metabolism link to idarubicinol, and marked the extracted parameter values as null in its review. This structural and parameter disagreement resulted in a cross-check agreement ratio of 0.3. Extracted — idarubicin: CL 27 ml min(-1), MRT 519 min, Vss 12.5 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading idarubicin → idarubicinol (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -133,14 +133,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=idarubicin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=idarubicin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.3, 0 of 1 reader(s) agree | 0.3 | cross-check disputed by a second reader: verdict disputed, agreement 0.3, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

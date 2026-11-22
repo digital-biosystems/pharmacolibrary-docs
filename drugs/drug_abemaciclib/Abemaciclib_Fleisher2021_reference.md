@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/&quot;},{&quot;label&quot;:&quot;Fleisher_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 Tumor size (sum of longest diameters of target lesions)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Liposomal doxorubicin and doxorubicin are unreachable because the model lacks a dose input for these compounds.
+> The record was rejected for an unreachable compound; it reports abemaciclib total clearance of 21.7 L/h and a liposomal-doxorubicin-to-doxorubicin hydrolysis link.
 
 <div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Fleisher2021_reference" status="rejected" stale="false" population="clinical subjects from published pharmacokinetic studies; clinical model translated to TNBC patients" measured-compound="abemaciclib; doxorubicin; liposomal doxorubicin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -49,13 +48,13 @@ Fleisher B, Lezeau J, Werkman C, Jacobs B, Ait-Oudhia S. In vitro to Clinical Tr
 
 ### Reviewer guidance
 
-**Liposomal doxorubicin and doxorubicin are unreachable because the model lacks a dose input for these compounds.**
+**The record was rejected for an unreachable compound; it reports abemaciclib total clearance of 21.7 L/h and a liposomal-doxorubicin-to-doxorubicin hydrolysis link.**
 
-The structure defines a hydrolysis link from liposomal doxorubicin to doxorubicin, yet no parameter or input provides a dose to either species. Consequently, these compartments remain orphaned relative to the administered abemaciclib. A second reader disagreed with the inclusion of doxorubicin compounds in the measured list and the existence of the hydrolysis link. Extracted — abemaciclib: kabs 0.31 1/h, CL 21.7 L/h, V1 592 L.
+The model reports abemaciclib absorption rate constant 0.31 1/h, total clearance 21.7 L/h, and central-compartment volume 592 L; the rejection finding is structural, not a stated parameter-value failure. It flags an unreachable compartment or unlinked metabolite but does not identify which one. The record lists abemaciclib, doxorubicin, and liposomal doxorubicin, while the second reader identifies abemaciclib alone and disputes the hydrolysis link. Extracted — abemaciclib: kabs 0.31 1/h, CL 21.7 L/h, V1 592 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has abemaciclib; doxorubicin; liposomal doxorubicin, the second reading abemaciclib; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

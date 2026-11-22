@@ -16,7 +16,7 @@ Bakker C, van Esdonk MJ, Stuurman RFE, Borghans LGJM, de Kam ML, van Gerven JMA 
 
 ## Population and dosing
 
-**Population:** healthy elderly subjects · condition healthy · age group elderly · n = # 12.
+**Population:** healthy elderly subjects · condition healthy · age group elderly.
 
 **Dosing:** 2, 4 mg, oral, single.
 

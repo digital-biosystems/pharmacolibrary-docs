@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;melatonin&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/&quot;},{&quot;label&quot;:&quot;Andersen_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melatonin_Merchant2013_reference&quot;,&quot;label&quot;:&quot;Merchant_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Merchant2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Melatonin_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melatonin_Merchant2013_reference&quot;,&quot;label&quot;:&quot;Merchant_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Merchant2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Melatonin_Andersen2016_reference&quot;,&quot;label&quot;:&quot;Andersen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Andersen2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Melatonin_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # melatonin — `Melatonin_Andersen2016_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:03 UTC (Needs review), but the paper was screened again on 2026-10-06 21:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Melatonin clearance in L/min/kg conflicts with L/h/kg, causing simulated terminal half-life and peak time to mismatch paper values.
 
-<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Andersen2016_reference" status="extracted" stale="true" population="healthy male volunteers" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Andersen2016_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et al. Pharmacokinetics of oral and intravenous melatonin in healthy volunteers. BMC pharmacology & toxicology 17:8 (2016).
@@ -23,12 +23,16 @@ Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et a
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference.svg" alt="Melatonin_Andersen2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | t 1/2 elimination min | t1/2z | 39.4 | min |
@@ -38,7 +42,7 @@ Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et a
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Melatonin clearance in L/min/kg conflicts with L/h/kg, causing simulated terminal half-life and peak time to mismatch paper values.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Wang_2024) cannot stand in for this paper's evidence. Extracted — melatonin: t1/2z 39.4 min, V 1.2 L/kg, CLnorm 0.0218 L/min/kg, CL 5.21 L/h/kg.
+The record lists melatonin clearance as 0.0218 L/min/kg alongside 5.21 L/h/kg, representing a unit inconsistency. Simulated peak time is 0.183 h versus 0.68 h in the paper, and terminal half-life is 2.49 h versus 0.1 h. A second reader disputed the clearance classification and could not confirm the 5.21 value. Extracted — melatonin: t1/2z 39.4 min, V 1.2 L/kg, CLnorm 0.0218 L/min/kg, CL 5.21 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl l min-1 kg-1].parameter_id`: this record has Q354, the second reading Q22; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -81,6 +85,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - gap-filled Q22 (CL) from Wang_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- derived CL=88.6665 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
 - transposed table Tab2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -132,6 +137,32 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C9_phys_window_Q22 | pass | clearance within physiological range | 365 L/h | ['Wang_2024:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 84 L | ['Tab2:row1:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable |  | pass | C_central (measured=melatonin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 3550 | 0.0001092 |  | unresolved concentration unit (exp 'pg ml-1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 389,875.0 | 0.0001092 |  | unresolved concentration unit (exp 'pg ml-1', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.0001092 |  | non-numeric value |
+| T1_t_half_beta | reference | skipped |  | 2.488 |  | non-numeric value |
+| T1_t_half_beta | reference | fail | 0.895 | 2.488 | 2.78 | min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.6567 | 2.488 | 3.789 | min→SI vs simulated h |
+| T1_t_half_beta | reference | skipped |  | 2.488 |  | non-numeric value |
+| T1_t_half_beta | reference | fail | 0.9 | 2.488 | 2.765 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.1 | 2.488 | 24.88 | min→SI vs simulated h |
+| T1_tmax | reference | fail | 0.68 | 0.1833 | 0.2696 | min→SI vs simulated h |
+| T1_tmax | reference | fail | 0.6833 | 0.1833 | 0.2683 | min→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
+| T1_tmax | reference | fail | 0.6833 | 0.1833 | 0.2683 | min→SI vs simulated h |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -147,7 +178,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -158,7 +189,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. Dose in the paper: 10 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Melatonin_Andersen2016_reference_params.json` · controls `Melatonin_Andersen2016_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

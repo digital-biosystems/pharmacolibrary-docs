@@ -16,7 +16,7 @@ Waterhouse T, Baron K, Eure W, Chen C, Dirks NL, Jansson J et al. Population pha
 
 ## Population and dosing
 
-**Population:** adults with allogeneic hematopoietic stem cell transplant · age group adult · n = No.
+**Population:** adults with allogeneic hematopoietic stem cell transplant · age group adult.
 
 **Dosing:** 75, 300 mg, iv, multiple.
 

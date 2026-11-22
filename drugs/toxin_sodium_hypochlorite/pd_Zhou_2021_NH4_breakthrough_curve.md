@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided text describes an ammonium breakthrough curve response, but lacks sufficient information to determine the pharmacodynamic model, mechanism, or potency values for sodium hypochlorite.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Zhou_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -26,7 +26,7 @@ Levamlodipine is a dihydropyridine calcium channel blocker used to treat high bl
 
 ## Start here
 
-> **Li_2025_base** — <span class="pk-badge pk-badge--orange">Needs review</span> smoking patients, n = &gt;=43. [Run it in the simulator](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md?tab=Simulation) · [record](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md)
+> **Li_2025_base** — <span class="pk-badge pk-badge--orange">Needs review</span> smoking patients. [Run it in the simulator](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md?tab=Simulation) · [record](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -36,26 +36,6 @@ Levamlodipine is a dihydropyridine calcium channel blocker used to treat high bl
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Li_2025_base](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [↳ final](drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md) | ▶ model + simulator | 1-compartment, oral | 3 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levamlodipine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | ileum | `SLC10A2` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `SLC22A5` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` substrate, `SLC22A5` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CACNA1C (target), CACNA1D (target), NOS2 (inducer), NOS2 (target), NOS3 (inducer), NOS3 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

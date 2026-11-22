@@ -26,7 +26,7 @@ Ipriflavone is a synthetic isoflavone used to help maintain bone density and pre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ma_1997_reference](drugs/drug_ipriflavone/Ipriflavone_Ma1997_reference.md) | — | 1-compartment (no model) | 3 | Ma XH et al., [High performance liquid chromatographi…, Yao xue xue bao = Acta phar… (1997) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ma_1997_reference](drugs/drug_ipriflavone/Ipriflavone_Ma1997_reference.md) | — | 1-compartment (no model) | 3 | Ma XH et al., [High performance liquid chromatographi…, Yao xue xue bao = Acta phar… (1997) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ Ipriflavone is a synthetic isoflavone used to help maintain bone density and pre
 
 - **PubMed hits:** 22 matched, 22 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

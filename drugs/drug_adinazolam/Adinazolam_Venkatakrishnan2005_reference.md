@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Adinazolam's absorption rate constant used library defaults instead of paper estimates, invalidating the model.
+> The record was rejected because it labels adinazolam’s 444 mL/min clearance as apparent metabolite clearance, while representing the N-desmethyl analyte with the wrong output and model structure.
 
 <div class="pk-model-meta" hidden drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="N-desmethyl adinazolam" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Venkatakrishnan K, Culm KE, Ehrenberg BL, Harmatz JS, Corbett KE, Fleishaker JC 
 
 ### Reviewer guidance
 
-**Adinazolam's absorption rate constant used library defaults instead of paper estimates, invalidating the model.**
+**The record was rejected because it labels adinazolam’s 444 mL/min clearance as apparent metabolite clearance, while representing the N-desmethyl analyte with the wrong output and model structure.**
 
-The absorption rate constant (ka) was not reported in the source abstract, so library defaults were applied rather than specific estimates. The review determined these unreported defaults made the model parameterization unacceptable. Consequently, the record was rejected because the simulated pharmacokinetic profile lacks support from the actual study data. Extracted — adinazolam: Vm/F 106 L, t1/2z 2.9 hours, CLm/F 444 mL/min; N-desmethyl adinazolam: Vm/F 100 L, t1/2z 2.8 hours, CLm/F 321 mL/min; alprazolam: V 77 L, t1/2z 14.6 hours, CL 84 mL/min.
+The measured compound is N-desmethyl adinazolam in a parent–metabolite model, but the output was central concentration and the represented structure was one-compartment enteral. Ka use default values, not estimates from this paper; these values affect the simulated profile but are not supported by this paper and need to be extracted or explicitly justified as conventions; Tlag was also defaulted, and absorption was assumed. The record was built from the abstract alone, so summary statistics stood in for a fitted model; a second reader disputed the verdict (agreement 0.062) and disagreed about the assignments of the 444 mL/min clearance, 2.9-hour half-life, and 106 L volume. Extracted — adinazolam: Vm/F 106 L, t1/2z 2.9 hours, CLm/F 444 mL/min; N-desmethyl adinazolam: Vm/F 100 L, t1/2z 2.8 hours, CLm/F 321 mL/min; alprazolam: V 77 L, t1/2z 14.6 hours, CL 84 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has adinazolam, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -167,16 +167,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=N-desmethyl adinazolam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_shared_parameters | pass | 3 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=N-desmethyl adinazolam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_shared_parameters | pass | 3 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.062, 0 of 1 reader(s) agree | 0.062 | cross-check disputed by a second reader: verdict disputed, agreement 0.062, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

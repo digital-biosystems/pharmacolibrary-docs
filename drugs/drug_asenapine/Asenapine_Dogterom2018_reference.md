@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Asenapine's volume of distribution and absorption lag time were left at library defaults, causing the model to be quarantined rather than published.
+> The model was held back because no value was extracted for asenapine's volume of distribution and absorption lag time, and a second reader disputed the clearance parameter value.
 
 <div class="pk-model-meta" hidden drug="asenapine" model-id="Asenapine_Dogterom2018_reference" status="model_quarantined" stale="false" population="pediatric patients with schizophrenia or bipolar I disorder" measured-compound="asenapine" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Dogterom P, Riesenberg R, de Greef R, Dennie J, Johnson M, Pilla Reddy V et al. 
 
 ### Reviewer guidance
 
-**Asenapine's volume of distribution and absorption lag time were left at library defaults, causing the model to be quarantined rather than published.**
+**The model was held back because no value was extracted for asenapine's volume of distribution and absorption lag time, and a second reader disputed the clearance parameter value.**
 
-The record lacks explicit values for asenapine's volume of distribution and absorption lag time, meaning library placeholders replaced these necessary kinetic parameters. Additionally, the model assumed full bioavailability (F=1) without molar correction, treating clearance and volume as apparent parameters. A second review flagged discrepancies in the clearance and intercompartmental clearance values, with the second reader proposing 3.09 L/h and 14.3 L/h respectively against the recorded 296 L/h and 120 L/h. Extracted — asenapine: CL/F 296 L/h, V2/F 2.74e+03 L, Q/F 120 L/h, V3/F 2.49e+03 L, kabs 2.98 1/h.
+The record lists parameters for a three-compartment model but the model builder defaulted the volume of distribution and absorption lag time, meaning no specific estimates were available for these pharmacokinetic properties. Additionally, a second reader disagreed with the total clearance value of 296 L/h reported in this record, instead identifying a value of 3.09 L/h from the source paper. This discrepancy in the primary clearance parameter, combined with the missing distribution and lag time values, resulted in the model being quarantined rather than published. Extracted — asenapine: CL/F 296 L/h, V2/F 2.74e+03 L, Q/F 120 L/h, V3/F 2.49e+03 L, kabs 2.98 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 296, the second reading 3.09; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -145,25 +145,26 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 45 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 18 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 11 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 16 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 32 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 45 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 18 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 11 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 16 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 32 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

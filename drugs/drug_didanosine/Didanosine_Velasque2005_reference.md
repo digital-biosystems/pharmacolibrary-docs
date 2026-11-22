@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Velasque_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # didanosine — `Didanosine_Velasque2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:57 UTC (Rejected), but the paper was screened again on 2026-10-07 16:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance Q has unit /h instead of L/h, causing a dimension mismatch, and the volume of distribution unit L/kg conflicts with the model structure.
+> Didanosine was rejected because its intercompartmental clearance Q was reported as 40.9 /h, a rate unit incompatible with clearance.
 
-<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Velasque2005_reference" status="rejected" stale="true" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Velasque2005_reference" status="rejected" stale="false" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Velasque LS, Estrela Rde C, Suarez-Kurtz G, Struchiner CJ. Estimating the genetic component (RGC) in pharmacokinetic variability of the antiretroviral didanosine among healthy Brazilians. AIDS (London, England) 19 Suppl 4:S76–S80 (2005).
@@ -39,7 +39,7 @@ Velasque LS, Estrela Rde C, Suarez-Kurtz G, Struchiner CJ. Estimating the geneti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Velasque LS, Estrela Rde C, Suarez-Kurtz G, Struchiner CJ. Estimating the geneti
 
 ### Reviewer guidance
 
-**The intercompartmental clearance Q has unit /h instead of L/h, causing a dimension mismatch, and the volume of distribution unit L/kg conflicts with the model structure.**
+**Didanosine was rejected because its intercompartmental clearance Q was reported as 40.9 /h, a rate unit incompatible with clearance.**
 
-The intercompartmental clearance Q is recorded as 40.9 /h, which is dimensionally inconsistent with a two-compartment model requiring L/h. The central volume V is listed as 1.7 L/kg, while peripheral volumes V2 and V3 are in L, creating a unit mismatch within the same compartmental system. Because the record is abstract-only, these values are reported summary statistics rather than fitted model parameters, making the dimensional errors harder to detect and resolve. Extracted — didanosine: V2 9.82 L, Q 40.9 /h, kabs 1.51 h(-1), D1 0.44 h, V 1.7 L/kg.
+Q represents apparent intercompartmental clearance between the central and peripheral compartments, which has dimensions of volume per time, but its reported unit /h has dimensions of inverse time. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — didanosine: V2 9.82 L, Q 40.9 /h, kabs 1.51 h(-1), D1 0.44 h, V 1.7 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of rgc of q: this record has none, the second reading 0.97; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

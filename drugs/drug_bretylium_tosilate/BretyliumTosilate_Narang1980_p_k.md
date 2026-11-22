@@ -5,11 +5,11 @@
 
 # bretylium tosilate — `BretyliumTosilate_Narang1980_p_k`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:54 UTC (Rejected), but the paper was screened again on 2026-10-08 16:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bretylium central compartment volume (1.31 L/kg) has a unit that is dimensionally incompatible with the model's other mass-normalized parameters.
+> Bretylium’s fast-phase rate constant λ1 (1.12 hr⁻¹) was implicated in the refusal, but the stated dimensional comparison does not show a mismatch.
 
-<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_p_k" status="rejected" stale="true" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_p_k" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretylium in man after intravenous administration. Journal of pharmacokinetics and biopharmaceutics 8(4):363–372 (1980).
@@ -17,7 +17,7 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ## Population and dosing
 
-**Population:** normal male volunteers · condition healthy · age group adult · n = &gt;=4.
+**Population:** normal male volunteers · condition healthy · age group adult.
 
 **Dosing:** 280 mg, iv, single.
 
@@ -51,7 +51,7 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,11 +61,11 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ### Reviewer guidance
 
-**Bretylium central compartment volume (1.31 L/kg) has a unit that is dimensionally incompatible with the model's other mass-normalized parameters.**
+**Bretylium’s fast-phase rate constant λ1 (1.12 hr⁻¹) was implicated in the refusal, but the stated dimensional comparison does not show a mismatch.**
 
-The central volume of distribution is reported in liters per kilogram, a unit that cannot be reconciled with the standard dimensional framework used for the model's structural checks. This incompatibility prevented the parameter from being processed, resulting in a failed dimensional consistency check. Extracted — bretylium tosilate: λ1 1.12 hr⁻¹, t1/2α 37.2 min, kel 0.085 hr⁻¹, t1/2β 8.15 hr, k12 0.5 hr⁻¹, k21 0.182 hr⁻¹, kabs 0.081 hr⁻¹, V1 1.31 liters/kg, … (+5).
+The record identifies λ1 as the fast-phase rate constant and reports 1.12 hr⁻¹. The finding compares hr⁻¹ with inverse time, which are dimensionally equivalent, so it does not establish a mismatch or clearly identify λ1 as the affected parameter. The reported unit could not be converted to SI, but the record does not specify which parameter’s unit was unavailable. Extracted — bretylium tosilate: λ1 1.12 hr⁻¹, t1/2α 37.2 min, kel 0.085 hr⁻¹, t1/2β 8.15 hr, k12 0.5 hr⁻¹, k21 0.182 hr⁻¹, kabs 0.081 hr⁻¹, V1 1.31 liters/kg, … (+5).
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

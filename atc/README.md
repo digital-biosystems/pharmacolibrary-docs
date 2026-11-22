@@ -9,7 +9,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [A02B Drugs For Peptic Ulcer And Gastro-Oesophageal Reflux Disease (Gord)](atc/A02B.md) — 29 drugs with records
 - [A03A Drugs For Functional Gastrointestinal Disorders](atc/A03A.md) — 8 drugs with records
 - [A03B Belladonna And Derivatives, Plain](atc/A03B.md) — 2 drugs with records
-- [A03C Antispasmodics In Combination With Psycholeptics](atc/A03C.md) — 5 drugs with records
+- [A03C Antispasmodics In Combination With Psycholeptics](atc/A03C.md) — 6 drugs with records
 - [A03D Antispasmodics In Combination With Analgesics](atc/A03D.md) — 1 drug with records
 - [A03F Propulsives](atc/A03F.md) — 7 drugs with records
 - [A04A Antiemetics And Antinauseants](atc/A04A.md) — 9 drugs with records

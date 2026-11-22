@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ximelagatran clearance, volume, absorption rate, and lag time lack extracted values, so library placeholders were used, quarantining the model.
+> Ximelagatran clearance, volume, and absorption parameters lacked values, forcing library placeholders that prevented model publication.
 
 <div class="pk-model-meta" hidden drug="ximelagatran" model-id="Ximelagatran_Cullberg2005_reference" status="model_quarantined" stale="false" population="patients with acute deep vein thrombosis" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Cullberg M, Eriksson UG, Wåhlander K, Eriksson H, Schulman S, Karlsson MO. Phar
 
 ## Population and dosing
 
-**Population:** patients with acute deep vein thrombosis · condition acute deep vein thrombosis · age group adult · n = &gt;=264.
+**Population:** patients with acute deep vein thrombosis · condition acute deep vein thrombosis · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed ximelagatran, measured melagatran.
 
@@ -49,9 +49,9 @@ Cullberg M, Eriksson UG, Wåhlander K, Eriksson H, Schulman S, Karlsson MO. Phar
 
 ### Reviewer guidance
 
-**Ximelagatran clearance, volume, absorption rate, and lag time lack extracted values, so library placeholders were used, quarantining the model.**
+**Ximelagatran clearance, volume, and absorption parameters lacked values, forcing library placeholders that prevented model publication.**
 
-The source text provided only abstract summary statistics for the metabolite melagatran, leaving parent drug pharmacokinetic parameters undefined. Consequently, the model relied on library defaults for these critical absorption and distribution parameters rather than specific estimates. This resulted in the model being held back because it lacked explicit values for the parent compound's kinetics. Extracted — ximelagatran: CLm/F 27.3 L/h, Vm/F 176 L, IIV 21 %.
+The record contains no explicit estimates for ximelagatran's clearance, volume of distribution, absorption rate constant, or absorption lag time. Consequently, the model was built with library defaults for these parent drug parameters, resulting in a quarantined status. Although the second reader disputed specific parameter assignments and dose compound identification, the absence of parent drug kinetics remained the primary cause for holding the model back. Extracted — ximelagatran: CLm/F 27.3 L/h, Vm/F 176 L, IIV 21 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ximelagatran, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -129,14 +129,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -16,7 +16,7 @@ Salem II, Najib NM, Idkaidek NM. A retrospective, open-label analysis of the pop
 
 ## Population and dosing
 
-**Population:** healthy white Jordanian males · age group adult · n = :.
+**Population:** healthy white Jordanian males · age group adult.
 
 ## Model
 

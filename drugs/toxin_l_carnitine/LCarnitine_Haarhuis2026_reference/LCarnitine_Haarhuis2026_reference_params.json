@@ -13,6 +13,14 @@
   1500.0,
   1600.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Haarhuis_2026:other_prose",
+    "value_si": 0.7
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "MM": 0.07511100000000001,

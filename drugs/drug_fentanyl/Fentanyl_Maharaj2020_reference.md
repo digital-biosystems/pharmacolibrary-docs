@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Maharaj_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_elderly&quot;,&quot;label&quot;:&quot;Ariano_2001_elderly&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_elderly.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_young&quot;,&quot;label&quot;:&quot;Ariano_2001_young&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_young.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Grimsrud2020_reference&quot;,&quot;label&quot;:&quot;Grimsrud_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Grimsrud2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_SaizRodrguez2019_reference&quot;,&quot;label&quot;:&quot;Saiz-Rodr\u00edguez_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_SaizRodrguez2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Scholz1996v2_reference&quot;,&quot;label&quot;:&quot;Scholz_1996_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Scholz1996v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Vller2019_reference&quot;,&quot;label&quot;:&quot;V\u00f6ller_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Vller2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_EEG&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_EEG.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_SaizRodrguez2019_reference&quot;,&quot;label&quot;:&quot;Saiz-Rodr\u00edguez_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_SaizRodrguez2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_elderly&quot;,&quot;label&quot;:&quot;Ariano_2001_elderly&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_elderly.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_reference&quot;,&quot;label&quot;:&quot;Ariano_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_young&quot;,&quot;label&quot;:&quot;Ariano_2001_young&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_young.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Grimsrud2020_reference&quot;,&quot;label&quot;:&quot;Grimsrud_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Grimsrud2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Vller2019_reference&quot;,&quot;label&quot;:&quot;V\u00f6ller_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Vller2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Fentanyl's bioavailability and total clearance lack extracted values, so the model used placeholder defaults instead of concrete estimates.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Maharaj2020_reference" status="needs_review" stale="false" population="obese children" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Maharaj2020_reference" status="model_quarantined" stale="false" population="predominately obese children" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Maharaj AR, Wu H, Zimmerman KO, Speicher DG, Sullivan JE, Watt K et al. Dosing of Continuous Fentanyl Infusions in Obese Children: A Population Pharmacokinetic Analysis. Journal of clinical pharmacology 60(5):636–647 (2020).
@@ -17,31 +17,31 @@ Maharaj AR, Wu H, Zimmerman KO, Speicher DG, Sullivan JE, Watt K et al. Dosing o
 
 ## Population and dosing
 
-**Population:** obese children · condition obesity · age group child · n = &gt;=21 years.
+**Population:** predominately obese children · condition obesity · age group child.
 
-**Dosing:** 1, 2, 3 mcg/kg/h, iv, multiple.
+**Dosing:** 1, 2, 3 mcg/kg/h, intravenous, multiple.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 5 extracted.  
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
-| V170kg [L/70 kg] | Vnorm | 10.8 | L/70 kg | 19 |
-| CL70kg [L/h] | CL70kg [L/h] | 32.5 | L/h | 15 |
-| V" (litre) | V | 269.7 | litre |  |
-| clearance, volumes and absorption rate | kabs | 1.0 | h−1 |  |
+| CL70kg [L/h] | CLnorm | 32.5 | L/h | 15 |
+| V170kg [L/70 kg] | V | 10.8 | L/70 kg | 19 |
+| V270kg [L/70 kg] | Vnorm | 417 | L/70 kg | 23 |
+| Pt Number 1 keo Three Doses | kabs | 0.27 | minute -1 |  |
 | t1pp ranged from | tlag | 15.0 | min |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,22 +51,22 @@ Maharaj AR, Wu H, Zimmerman KO, Speicher DG, Sullivan JE, Watt K et al. Dosing o
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Fentanyl's bioavailability and total clearance lack extracted values, so the model used placeholder defaults instead of concrete estimates.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Andersen_1986, Bower_1982, Eleveld_2026) cannot stand in for this paper's evidence. Extracted — fentanyl: Vnorm 10.8 L/70 kg, V 270 litre, kabs 1 h−1, tlag 15 min.
+The record lists fentanyl clearance without a numerical value or unit, indicating no estimate was extracted from the source. The model builder explicitly defaulted bioavailability and clearance to placeholder values rather than using fitted or reported numbers. Consequently, the model was held back because it relied on generic assumptions instead of specific pharmacokinetic parameters. Extracted — fentanyl: CLnorm 32.5 L/h, V 10.8 L/70 kg, Vnorm 417 L/70 kg, kabs 0.27 minute -1, tlag 15 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[v170kg [l/70 kg]].parameter_id`: this record has Q352, the second reading Q61; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
-| V170kg [L/70 kg] | `Q352` · Vnorm | 10.8 | L/70 kg | 0.0108 | m3 | l/70kg | 19 | llm (0.6) | T3:row3:col1, T3:row3:col3, T3:row3:col5 |
-| CL70kg [L/h] | `Q900` · CL70kg [L/h] | 32.5 | L/h | 9.028e-06 | m3/s |  | 15 |  | T3:row2:col1, T3:row2:col3, T3:row2:col5 |
-| V" (litre) | `Q61` · V | 269.7 | litre | 0.2697 | m3 | L |  | review_gapfill (0.7) | Bower_1982:review |
-| clearance, volumes and absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h |  | review_gapfill (0.7) | Eleveld_2026:review |
+| CL70kg [L/h] | `Q354` · CLnorm | 32.5 | L/h | 9.028e-06 | m3/s | l/h | 15 | llm (0.6) | T3:row2:col1, T3:row2:col3, T3:row2:col5 |
+| V170kg [L/70 kg] | `Q61` · V | 10.8 | L/70 kg | 0.0108 | m3 | l/70kg | 19 | llm (0.6) | T3:row3:col1, T3:row3:col3, T3:row3:col5 |
+| V270kg [L/70 kg] | `Q352` · Vnorm | 417 | L/70 kg | 0.417 | m3 | l/70kg | 23 | llm (0.6) | T3:row5:col1, T3:row5:col3, T3:row5:col5 |
+| Pt Number 1 keo Three Doses | `Q49` · kabs | 0.27 | minute -1 | 0.0045 | 1/s | 1/h |  | review_gapfill (0.7) | Torda_1997:review |
 | t1pp ranged from | `Q83` · tlag | 15.0 | min | 900 | s | h |  | review_gapfill (0.7) | Andersen_1986:review |
 
 <details class="legend">
@@ -78,22 +78,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| CL70kg [L/h] | Q22 | llm |
+| CL | Q22 | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Q70kg [L/h/70 kg]' — extend the ontology if this is a real PK parameter (source ['T3:row4:col1', 'T3:row4:col3', 'T3:row4:col5'])
-- dropped duplicate Q352 ('V270kg [L/70 kg]', value '417') — already have one for this compound
-- routed 'ε2 - proportional error' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
 - bound model equation to Q22 (CL): CL = θCL*(WT/70)^0.75; V1=θV1*(WT/70)^1; Q=θQ*(WT/70)^0.75; V2=θV2*(WT/70)^1
 - model equation 'NFMcl = FFM + θFFAT,cl(WT-FFM)NFMv= FFM + θFFAT,v(WT-FFM)CL=θCL*(NFMcl/70)^0.75; V1=θV1*(NFMv/70)^1;Q=θQ*(NFMcl/70)^0.75; V2=θV2*(NFMv/70)^1' not bound — neither LHS nor base term 'FFM' linked to an ontology parameter
-- Q22 (CL) is equation-defined: value moved to equation-variable 'CL70kg [L/h]'; equation kept verbatim
-- gap-filled Q61 (V) from Bower_1982's review values (primary lacked it)
+- Q22 (CL) is equation-defined: value moved to equation-variable 'CL'; equation kept verbatim
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V170kg [L/70 kg]' is the general volume)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Torda_1997's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 **Extraction notes:**
@@ -109,14 +107,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.643 (9/14 fields) | 5 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[v170kg [l/70 kg]].parameter_id` | Q352 | Q61 | mismatch |
-| `gpt-oss-120b` | `parameters[v270kg [l/70 kg]]` |  | 417 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl70kg [l/h]].parameter_id` | Q354 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[cl70kg [l/h]].value` | 32.5 |  | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v170kg [l/70 kg]].parameter_id` | Q61 | Q352 | mismatch |
+| `gpt-oss-120b` | `parameters[v270kg [l/70 kg]].parameter_id` | Q352 | Q61 | mismatch |
 
 </details>
 
@@ -130,16 +131,27 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T3:row2:col1', 'T3:row2:col3', 'T3:row2:col5'] |
-| C5_dimension_Q352 | pass | [length] ** 3 |  | ['T3:row3:col1', 'T3:row3:col3', 'T3:row3:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Bower_1982:review'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q352 | pass | [length] ** 3 |  | ['T3:row5:col1', 'T3:row5:col3', 'T3:row5:col5'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['T3:row2:col1', 'T3:row2:col3', 'T3:row2:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Torda_1997:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['T3:row3:col1', 'T3:row3:col3', 'T3:row3:col5'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Andersen_1986:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 270 L | ['Bower_1982:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10.8 L | ['T3:row3:col1', 'T3:row3:col3', 'T3:row3:col5'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,4 +185,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Maharaj2020_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Maharaj2020_reference%0APaper%3A%20Maharaj_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Maharaj2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 18:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 04:33 UTC</sub>

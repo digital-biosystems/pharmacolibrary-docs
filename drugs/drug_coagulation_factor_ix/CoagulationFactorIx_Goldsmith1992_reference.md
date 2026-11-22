@@ -4,11 +4,11 @@
 
 # coagulation factor IX — `CoagulationFactorIx_Goldsmith1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-05 17:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="coagulation factor IX" model-id="CoagulationFactorIx_Goldsmith1992_reference" status="needs_review" stale="true" population="patients with hemophilia B" measured-compound="coagulation_factor_ix" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="coagulation factor IX" model-id="CoagulationFactorIx_Goldsmith1992_reference" status="needs_review" stale="false" population="patients with hemophilia B" measured-compound="coagulation_factor_ix" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Goldsmith JC, Kasper CK, Blatt PM, Gomperts ED, Kessler CM, Thompson AR et al. Coagulation factor IX: successful surgical experience with a purified factor IX concentrate. American journal of hematology 40(3):210–215 (1992).
@@ -35,7 +35,7 @@ Goldsmith JC, Kasper CK, Blatt PM, Gomperts ED, Kessler CM, Thompson AR et al. C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Goldsmith JC, Kasper CK, Blatt PM, Gomperts ED, Kessler CM, Thompson AR et al. C
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — coagulation factor ix: t1/2α 4.06 hr, t1/2β 20 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has coagulation_factor_ix, the second reading Coagulation Factor IX; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

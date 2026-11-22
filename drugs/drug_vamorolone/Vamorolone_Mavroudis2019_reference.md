@@ -4,11 +4,11 @@
 
 # vamorolone — `Vamorolone_Mavroudis2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-07 09:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because maximum plasma concentration was extracted with time units (hours) instead of concentration units.
+> The vamorolone record was rejected because the Cmax parameter’s unit of hours conflicts with its required concentration dimension.
 
-<div class="pk-model-meta" hidden drug="vamorolone" model-id="Vamorolone_Mavroudis2019_reference" status="rejected" stale="true" population="healthy men and boys with Duchenne muscular dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vamorolone" model-id="Vamorolone_Mavroudis2019_reference" status="rejected" stale="false" population="healthy men and boys with Duchenne muscular dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Mavroudis PD, van den Anker J, Conklin LS, Damsker JM, Hoffman EP, Nagaraju K et al. Population Pharmacokinetics of Vamorolone (VBP15) in Healthy Men and Boys With Duchenne Muscular Dystrophy. Journal of clinical pharmacology 59(7):979–988 (2019).
@@ -16,7 +16,7 @@ Mavroudis PD, van den Anker J, Conklin LS, Damsker JM, Hoffman EP, Nagaraju K et
 
 ## Population and dosing
 
-**Population:** healthy men and boys with Duchenne muscular dystrophy · condition Duchenne muscular dystrophy · age group mixed · n = &gt;= 34.
+**Population:** healthy men and boys with Duchenne muscular dystrophy · condition Duchenne muscular dystrophy · age group mixed.
 
 ## Model
 
@@ -35,7 +35,7 @@ Mavroudis PD, van den Anker J, Conklin LS, Damsker JM, Hoffman EP, Nagaraju K et
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Mavroudis PD, van den Anker J, Conklin LS, Damsker JM, Hoffman EP, Nagaraju K et
 
 ### Reviewer guidance
 
-**The record was rejected because maximum plasma concentration was extracted with time units (hours) instead of concentration units.**
+**The vamorolone record was rejected because the Cmax parameter’s unit of hours conflicts with its required concentration dimension.**
 
-The abstract-only source provided the maximum plasma concentration for vamorolone with a unit verbatim of hours, creating a dimensional mismatch. The apparent clearance and half-life values of 2.0 L/h/kg and 2 hours, respectively, are dimensionally consistent. A second reader disputed whether the dose and primary analyte were actually vamorolone, marking both as unknown. The review could not resolve the unit error because the abstract lacked explicit concentration measurements. Extracted — vamorolone: t1/2z 2 hours, CL/F 2 L/h/kg.
+The record lists maximum plasma concentration in hours, a unit of time rather than concentration. Since the source was abstract-only, these summary statistics stand in for a fitted model. The second reader disagreed on the dose compound and primary analyte, marking both as unknown. Extracted — vamorolone: t1/2z 2 hours, CL/F 2 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vamorolone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

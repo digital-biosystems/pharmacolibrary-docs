@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;imeglimin&quot;,&quot;href&quot;:&quot;drugs/drug_imeglimin/&quot;},{&quot;label&quot;:&quot;Tomita_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imeglimin_Tomita2022_reference&quot;,&quot;label&quot;:&quot;Tomita_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imeglimin/Imeglimin_Tomita2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imeglimin_Tomita2022_reference&quot;,&quot;label&quot;:&quot;Tomita_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imeglimin/Imeglimin_Tomita2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # imeglimin — `Imeglimin_Tomita2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Imeglimin apparent clearance is 66.9 L/h, conflicting with the second reader's value of 0.492.
-
-<div class="pk-model-meta" hidden drug="imeglimin" model-id="Imeglimin_Tomita2022_reference" status="needs_review" stale="false" population="Japanese and Western patients with type 2 diabetes" measured-compound="imeglimin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="imeglimin" model-id="Imeglimin_Tomita2022_reference" status="simulated" stale="false" population="Japanese and Western patients with type 2 diabetes" measured-compound="imeglimin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Tomita Y, Hansson E, Mazuir F, Wellhagen GJ, Ooi QX, Mezzalana E et al. Imeglimin population pharmacokinetics and dose adjustment predictions for renal impairment in Japanese and Western patients with type 2 diabetes. Clinical and translational science 15(4):1014–1026 (2022).
@@ -31,8 +29,6 @@ Tomita Y, Hansson E, Mazuir F, Wellhagen GJ, Ooi QX, Mezzalana E et al. Imeglimi
 <figure class="pk-models-diagram"><img src="drugs/drug_imeglimin/Imeglimin_Tomita2022_reference/Imeglimin_Tomita2022_reference.svg" alt="Imeglimin_Tomita2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | Absorption rate constant, ka , h−1 | kabs | 0.144 | h−1 | 4.42 |
@@ -45,7 +41,7 @@ Tomita Y, Hansson E, Mazuir F, Wellhagen GJ, Ooi QX, Mezzalana E et al. Imeglimi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.947). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.947). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +51,11 @@ Tomita Y, Hansson E, Mazuir F, Wellhagen GJ, Ooi QX, Mezzalana E et al. Imeglimi
 
 ### Reviewer guidance
 
-**Imeglimin apparent clearance is 66.9 L/h, conflicting with the second reader's value of 0.492.**
-
-The record lists the apparent oral clearance for imeglimin as 66.9 L/h. A second reader identified this field as null but cited 0.492 as the correct value. This discrepancy regarding the clearance magnitude caused the model to be held for review. Extracted — imeglimin: kabs 0.144 h−1, tlag 0.229 h, Frel 1, CL/F 66.9 L/h, V1 142 L, Q/F 15.9 L/h, V2 374 L.
+**Every check that could be run on this record passed.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading 0.492. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -135,15 +129,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=imeglimin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=imeglimin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.947, 0 of 1 reader(s) agree | 0.947 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

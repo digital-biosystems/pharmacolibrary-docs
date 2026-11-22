@@ -16,7 +16,7 @@ Marier JF, Jomphe C, Peyret T, Wang Y. Population pharmacokinetics and exposure-
 
 ## Population and dosing
 
-**Population:** adult and pediatric patients with short bowel syndrome · age group mixed · n = :.
+**Population:** adult and pediatric patients with short bowel syndrome · age group mixed.
 
 **Dosing:** 0.875, 3.5, 10.5 mg, s.c., multiple, every 24 h.
 

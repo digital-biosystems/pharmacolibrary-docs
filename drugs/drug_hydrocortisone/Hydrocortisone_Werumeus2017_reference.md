@@ -4,11 +4,11 @@
 
 # hydrocortisone — `Hydrocortisone_Werumeus2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 19:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Salivary cortisol is an orphan compartment with no dose path, and hydrocortisone clearance units failed conversion, invalidating the record.
+> The elimination rate constant for plasma free cortisol is recorded in hours, causing a dimensional mismatch with its reciprocal rate requirement.
 
-<div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_Werumeus2017_reference" status="rejected" stale="true" population="adults with secondary adrenal insufficiency" measured-compound="cortisol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_Werumeus2017_reference" status="rejected" stale="false" population="adults with secondary adrenal insufficiency" measured-compound="cortisol" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Werumeus Buning J, Touw DJ, Brummelman P, Dullaart RPF, van den Berg G, van der Klauw MM et al. Pharmacokinetics of oral hydrocortisone - Results and implications from a randomized controlled trial. Metabolism: clinical and experimental 71:7–16 (2017).
@@ -40,7 +40,7 @@ Werumeus Buning J, Touw DJ, Brummelman P, Dullaart RPF, van den Berg G, van der 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Werumeus Buning J, Touw DJ, Brummelman P, Dullaart RPF, van den Berg G, van der 
 
 ### Reviewer guidance
 
-**Salivary cortisol is an orphan compartment with no dose path, and hydrocortisone clearance units failed conversion, invalidating the record.**
+**The elimination rate constant for plasma free cortisol is recorded in hours, causing a dimensional mismatch with its reciprocal rate requirement.**
 
-The model defines salivary cortisol as a metabolite of plasma free cortisol but contains no parameter or rate constant linking it to a parent dose, making it unreachable from the administration site. The clearance parameter for plasma free cortisol was extracted with units that could not be converted to SI, preventing a valid numerical evaluation of the elimination rate. Additionally, the second reader disagreed on the primary analyte identity, suggesting the model may have confused the administered drug (hydrocortisone) with its metabolite (cortisol). Extracted — plasma free cortisol: CL 338 L/h, V 486 L, kel 1 h.
+The record lists the elimination rate constant as 1.00 h, but the parameter definition requires units of inverse time. Additionally, the model contains an orphan compartment because plasma total cortisol has no defined input path from the administered hydrocortisone. The second reader noted discrepancies, finding no links or parameter values that contradicted the primary record's extracted values of 337.58 L/h for clearance. Extracted — plasma free cortisol: CL 338 L/h, V 486 L, kel 1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydrocortisone, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

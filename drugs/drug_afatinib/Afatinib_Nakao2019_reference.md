@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Afatinib clearance, volume, and lag time lacked extracted values, so library placeholders were used, holding the model back.
+> Afatinib clearance, volume of distribution, and absorption lag time lacked values, forcing the use of placeholder defaults.
 
 <div class="pk-model-meta" hidden drug="afatinib" model-id="Afatinib_Nakao2019_reference" status="model_quarantined" stale="false" population="Japanese patients with EGFR mutation-positive advanced non-small cell lung cancer" measured-compound="afatinib" parameterization="apparent" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Nakao K, Kobuchi S, Marutani S, Iwazaki A, Tamiya A, Isa S et al. Population pha
 
 ### Reviewer guidance
 
-**Afatinib clearance, volume, and lag time lacked extracted values, so library placeholders were used, holding the model back.**
+**Afatinib clearance, volume of distribution, and absorption lag time lacked values, forcing the use of placeholder defaults.**
 
-The record lists base values for clearance (20.0 L/h) and volume (795.8 L), but the model builder substituted library placeholders for these parameters instead of using the explicit estimates. Covariate effects for creatinine clearance, AST, BMI, and age were not simulated in the final model. The clearance covariate coefficient (0.0013 min/mL) was flagged because its unit could not be converted to standard SI units. Extracted — afatinib: kabs 0.6 1/h, CL 20 L/h, V 796 L.
+The record lists specific clearance and volume equations with covariate coefficients, yet no explicit values were extracted for these primary parameters or the lag time. Consequently, library placeholders replaced the missing values, leading to the model's quarantine. Additionally, the covariate effects defined in the structure were never simulated, leaving those scenarios untested. Extracted — afatinib: kabs 0.6 1/h, CL 20 L/h, V 796 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of θccr: this record has 0.0013, the second reading none. That field does not shape the model.
 
@@ -150,14 +150,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.909, 0 of 1 reader(s) agree | 0.909 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

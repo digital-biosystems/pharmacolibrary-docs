@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;niraparib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Niraparib_Quesada2025_reference&quot;,&quot;label&quot;:&quot;Quesada_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_niraparib/Niraparib_Quesada2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Niraparib_Gaffney2026_reference&quot;,&quot;label&quot;:&quot;Gaffney_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_niraparib/Niraparib_Gaffney2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Niraparib_Quesada2025_reference&quot;,&quot;label&quot;:&quot;Quesada_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_niraparib/Niraparib_Quesada2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # niraparib
 
@@ -40,7 +40,7 @@ Niraparib is a poly (ADP-ribose) polymerase inhibitor prescribed for ovarian, fa
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Quesada_2025_reference](drugs/drug_niraparib/Niraparib_Quesada2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Quesada S et al., Exposure-response relationship of nirap…, ESMO open (2025) | [10.1016/j.esmoop.2025.105054](https://doi.org/10.1016/j.esmoop.2025.105054) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub><br><sub>blocking: C2_base_Q290 failed (ratio 0.0353)</sub> | [Gaffney_2026_reference](drugs/drug_niraparib/Niraparib_Gaffney2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 (+6 cov.) | Gaffney A et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70210](https://doi.org/10.1002/jcph.70210) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub><br><sub>blocking: C2_base_Q290 failed (ratio 0.0353)</sub> | [Gaffney_2026_reference](drugs/drug_niraparib/Niraparib_Gaffney2026_reference.md) | — | 1-compartment (no model) | 7 (+6 cov.) | Gaffney A et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70210](https://doi.org/10.1002/jcph.70210) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chryssafidis_2022_reference](drugs/drug_niraparib/Niraparib_Chryssafidis2022_reference.md) | — | 1-compartment (no model) | 0 | Chryssafidis P et al., Re-writing Oral Pharmacokinetics Using…, Pharmaceutical research (2022) | [10.1007/s11095-022-03230-0](https://doi.org/10.1007/s11095-022-03230-0) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Monk_2024_reference](drugs/drug_niraparib/Niraparib_Monk2024_reference.md) | — | 1-compartment (no model) | 0 | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
 
@@ -50,25 +50,6 @@ Niraparib is a poly (ADP-ribose) polymerase inhibitor prescribed for ovarian, fa
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Monk_2024_PFS](drugs/drug_niraparib/pd_Monk_2024_PFS.md) | progression-free survival ← niraparib · time-to-event model | — | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Monk_2024_grade_3_thrombocytopenia](drugs/drug_niraparib/pd_Monk_2024_grade_3_thrombocytopenia.md) | grade ≥ 3 thrombocytopenia ← niraparib · categorical (graded) response model | — | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=niraparib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `SLC47A1` inhibitor/substrate, `SLC47A2` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCG2` inhibitor/substrate, `SLC47A1` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CES1A1a (substrate), PARP1 (inhibitor), PARP2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -82,13 +63,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:11 | 1:54 | 2/2/0 | 1/0/0 | 0/0/0 | 162,627/11,182 | einfracz / qwen3.8-27b | 5 | 2/3 | 4/1 | 0 |
+| 2026-10-06 21:11 | 1:54 | 2/2/0 | 2/0/0 | 0/0/0 | 162,627/11,182 | einfracz / qwen3.8-27b | 5 | 2/3 | 4/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 1
+- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

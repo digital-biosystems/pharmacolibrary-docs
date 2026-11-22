@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;quinidine&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/&quot;},{&quot;label&quot;:&quot;Kuroda_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quinidine — `Quinidine_Kuroda2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The model was held back because the absorption lag time was unextracted, defaulting to a library placeholder, while bioavailability exceeded unity.
-
-<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="needs_review" stale="false" population="Thoroughbred racehorses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="simulated" stale="false" population="Thoroughbred racehorses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kuroda T, Minamijima Y, Kinman CK, Takahashi Y, Ebisuda Y, Inoue K et al. Rational quinidine dosage regimen for atrial fibrillation in Thoroughbred racehorses based on population pharmacokinetics. Frontiers in veterinary science 11:1454342 (2024).
@@ -17,7 +15,7 @@ Kuroda T, Minamijima Y, Kinman CK, Takahashi Y, Ebisuda Y, Inoue K et al. Ration
 
 ## Population and dosing
 
-**Population:** Thoroughbred racehorses · condition atrial fibrillation · age group adult · n = &gt;=29.
+**Population:** Thoroughbred racehorses · condition atrial fibrillation · age group adult.
 
 **Dosing:** 350, 1400 mg, oral, iv, single.
 
@@ -35,8 +33,6 @@ Kuroda T, Minamijima Y, Kinman CK, Takahashi Y, Ebisuda Y, Inoue K et al. Ration
 <figure class="pk-models-diagram"><img src="drugs/drug_quinidine/Quinidine_Kuroda2024_reference/Quinidine_Kuroda2024_reference.svg" alt="Quinidine_Kuroda2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | V1 | V1 | 0.63 | L | 12.4 | 40.5 (None% RSE) |
@@ -55,7 +51,7 @@ Kuroda T, Minamijima Y, Kinman CK, Takahashi Y, Ebisuda Y, Inoue K et al. Ration
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +61,11 @@ Kuroda T, Minamijima Y, Kinman CK, Takahashi Y, Ebisuda Y, Inoue K et al. Ration
 
 ### Reviewer guidance
 
-**The model was held back because the absorption lag time was unextracted, defaulting to a library placeholder, while bioavailability exceeded unity.**
+**Every check that could be run on this record passed.**
 
-No explicit estimate was provided for the absorption lag time, causing the record to rely on a standard placeholder value rather than a fitted parameter. Additionally, the absolute bioavailability of quinidine is listed as 36.4, which implies the systemic exposure is thirty-six times greater than the administered dose, a pharmacokinetically impossible fraction. Extracted — quinidine: V1 0.63 L, V2 0.59 L, V3 3.68 L, CL 0.49 L/h, Q 2.87 L/h, kabs 1 1/h, Fab 36.4, t1/2α 0.06 h, … (+5).
+Independently confirmed by `gpt-oss-120b`.
 
-Independently confirmed by `gpt-oss:120b`.
-
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -140,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (31/31 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (31/31 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -178,14 +172,15 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=quinidine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=quinidine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

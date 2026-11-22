@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a pharmacodynamic model with mechanism-specific rate or potency constants, only reporting that proteinuria reduction was assessed using multivariable linear mixed-effects models of log(UPCr) regressed on time-averaged CNI dosage and trough levels. No specific Imax, IC50, EC50, Emax, or kinetic rate values are stated.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Trautmann_2025`
 - **model family:** `unknown`
 - **driver:** `dose_only`

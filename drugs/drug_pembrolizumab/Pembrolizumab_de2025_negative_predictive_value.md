@@ -16,7 +16,7 @@ de Vries F, Otten LS, Piet B, Franssen EJF, Smit AAJ, van den Heuvel MM et al. E
 
 ## Population and dosing
 
-**Population:** patients with advanced non-small cell lung cancer · condition advanced non-small cell lung cancer · age group adult · n = &gt;=303.
+**Population:** patients with advanced non-small cell lung cancer · condition advanced non-small cell lung cancer · age group adult.
 
 **Dosing:** 200 mg, iv, multiple, every 21 h.
 

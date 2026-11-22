@@ -4,11 +4,11 @@
 
 # cefadroxil — `Cefadroxil_Xie2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 10:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. C5 dimension mismatch on a structural parameter.
+> Record rejected because the volume of distribution parameter V was assigned the dimensionally incompatible unit nmoL/min.
 
-<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Xie2016_reference" status="rejected" stale="true" population="wild-type and Pept2 knockout mice" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Xie2016_reference" status="rejected" stale="false" population="wild-type and Pept2 knockout mice" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xie Y, Shen H, Hu Y, Feng MR, Smith DE. Population pharmacokinetic modeling of cefadroxil renal transport in wild-type and Pept2 knockout mice. Xenobiotica; the fate of foreign compounds in biological systems 46(4):342–349 (2016).
@@ -36,7 +36,7 @@ Xie Y, Shen H, Hu Y, Feng MR, Smith DE. Population pharmacokinetic modeling of c
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +46,13 @@ Xie Y, Shen H, Hu Y, Feng MR, Smith DE. Population pharmacokinetic modeling of c
 
 ### Reviewer guidance
 
-**C5 dimension mismatch on a structural parameter.**
+**Record rejected because the volume of distribution parameter V was assigned the dimensionally incompatible unit nmoL/min.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefadroxil: V 17.6 nmoL/min.
+The parameter V, defined as the volume of distribution, is recorded with a value of 17.6 and units of nmoL/min, which represents a molar rate rather than a physical volume. This unit conflicts with the required dimension of length cubed for a volume of distribution. Additionally, the record was built from the abstract only, so the reported statistics did not represent a fitted model. Extracted — cefadroxil: V 17.6 nmoL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefadroxil, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

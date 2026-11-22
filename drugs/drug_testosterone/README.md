@@ -29,7 +29,7 @@ Testosterone is a steroid hormone used to treat hypogonadism and breast cancer. 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27, Q76 — no SI value to build from</sub> | [Bi_2018_bootstrapa](drugs/drug_testosterone/Testosterone_Bi2018_bootstrapa.md) | — | 1-compartment (no model) | 3 | Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [↳ final_model](drugs/drug_testosterone/Testosterone_Bi2018_final_model.md) | — | 2-compartment (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pastuszak_2021_reference](drugs/drug_testosterone/Testosterone_Pastuszak2021_reference.md) | — | 1-compartment (no model) | 4 (+3 cov.) | Pastuszak AW et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1939](https://doi.org/10.1002/jcph.1939) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pastuszak_2021_reference](drugs/drug_testosterone/Testosterone_Pastuszak2021_reference.md) | — | 1-compartment (no model) | 4 (+3 cov.) | Pastuszak AW et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1939](https://doi.org/10.1002/jcph.1939) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Vogiatzi_2023_reference](drugs/drug_testosterone/Testosterone_Vogiatzi2023_reference.md) | — | 1-compartment (no model) | 0 | Vogiatzi MG et al., Allometric Scaling of Testosterone Enan…, Journal of the Endocrine So… (2023) | [10.1210/jendso/bvad059](https://doi.org/10.1210/jendso/bvad059) |
 
 ## Pharmacodynamics (PD)
@@ -38,34 +38,6 @@ Testosterone is a steroid hormone used to treat hypogonadism and breast cancer. 
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Bi_2018_LH30](drugs/drug_testosterone/pd_Bi_2018_LH30.md) | LH concentration at 30 minutes after the stimulation test ← total testosterone · indirect response — drug inhibits the production of LH concentration at 30 minutes after the stimulation test | — | Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Bi_2018_sperm_count](drugs/drug_testosterone/pd_Bi_2018_sperm_count.md) | sperm count ← total testosterone average concentration in past 18 weeks · indirect response — drug inhibits the production of sperm count | — | Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=testosterone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | testis | `ABCG2` substrate | DrugBank actor |
-| metabolism | brain | `MAOA` inducer | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate, `SLC22A7` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `MAOA` inducer, `SLC10A1` inhibitor, `SLC22A7` inhibitor, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` substrate, `CYP1B1` substrate | DrugBank actor |
-| metabolism | skin | `CYP1B1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `MAOA` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A8` inducer | DrugBank actor |
-| excretion | liver | `ABCG2` substrate | DrugBank actor |
-| — | adipose tissue | `CYP19A1` substrate | DrugBank actor |
-| — | ovary | `CYP19A1` substrate | DrugBank actor |
-| — | prostate gland | `AR` target | DrugBank actor |
-| — | testis | `CYP19A1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP11A1 (inhibitor), CYP2A13 (substrate), CYP3A43 (substrate), ESR1 (inhibitor), NR3C2 (target), SHBG (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,13 +51,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:32 | 3:58 | 1/3/0 | 0/1/0 | 0/0/0 | 219,027/20,627 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
+| 2026-10-07 08:32 | 3:58 | 1/3/0 | 0/2/0 | 0/0/0 | 219,027/20,627 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 322 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nintedanib model was held back because apparent clearance and volume of distribution values are not acceptable for a one-compartment structure.
+> Nintedanib’s reported absorption rate (0.0814 h−1), lag time (0.689 h), apparent clearance (994 L/h), and steady-state volume (265 L) remain disputed after a second reader challenged the parameterization and estimates.
 
 <div class="pk-model-meta" hidden drug="nintedanib" model-id="Nintedanib_Schmid2018_reference" status="needs_review" stale="false" population="patients with idiopathic pulmonary fibrosis" measured-compound="nintedanib" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Schmid U, Doege C, Dallinger C, Freiwald M. Population pharmacokinetics of ninte
 
 ### Reviewer guidance
 
-**Nintedanib model was held back because apparent clearance and volume of distribution values are not acceptable for a one-compartment structure.**
+**Nintedanib’s reported absorption rate (0.0814 h−1), lag time (0.689 h), apparent clearance (994 L/h), and steady-state volume (265 L) remain disputed after a second reader challenged the parameterization and estimates.**
 
-The record relies on summary statistics from the abstract rather than fitted model parameters. The model builder assumed bioavailability was 1 and used steady-state volume of distribution (265 L) as the distribution volume. The second reader could not verify the extracted values for clearance (994 L/h), volume, or absorption rate. Extracted — nintedanib: kabs 0.0814 h-1, tlag 0.689 h, CL/F 994 L/h, Vss 265 L.
+The record is based on the abstract alone, so reported summary statistics stand in for a fitted model; the second reader preferred mechanistic over apparent parameterization and agreed with none of the reported estimates. The model builder assumed F=1 and Fm=1 with no molar correction, and used Vss as the distribution volume because Vc/V was not reported. This reproduced AUC and terminal half-life, but not the early distribution phase. Extracted — nintedanib: kabs 0.0814 h-1, tlag 0.689 h, CL/F 994 L/h, Vss 265 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -132,15 +132,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=nintedanib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: apparent_assumption: not acceptable; deviation_id: vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=nintedanib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

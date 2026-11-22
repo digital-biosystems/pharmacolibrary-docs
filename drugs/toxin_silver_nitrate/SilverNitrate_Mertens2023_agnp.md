@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Silver nitrate&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/&quot;},{&quot;label&quot;:&quot;Mertens_2023 \u00b7 agnp&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SilverNitrate_Khodaparast2023_reference&quot;,&quot;label&quot;:&quot;Khodaparast_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Khodaparast2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Mertens2023_agac&quot;,&quot;label&quot;:&quot;Mertens_2023_agac&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Mertens2023_agac.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Mertens2023_agno3&quot;,&quot;label&quot;:&quot;Mertens_2023_agno3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Mertens2023_agno3.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Mertens2023_agnp&quot;,&quot;label&quot;:&quot;Mertens_2023_agnp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Mertens2023_agnp.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;SilverNitrate_Santos2023_reference&quot;,&quot;label&quot;:&quot;Santos_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Santos2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Straub2001_reference&quot;,&quot;label&quot;:&quot;Straub_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Straub2001_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Andriamasinoro2023_reference&quot;,&quot;label&quot;:&quot;Andriamasinoro_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Andriamasinoro2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SilverNitrate_Khodaparast2023_reference&quot;,&quot;label&quot;:&quot;Khodaparast_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Khodaparast2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Santos2023_reference&quot;,&quot;label&quot;:&quot;Santos_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Santos2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Straub2001_reference&quot;,&quot;label&quot;:&quot;Straub_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Straub2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Andriamasinoro2023_reference&quot;,&quot;label&quot;:&quot;Andriamasinoro_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Andriamasinoro2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Mertens2023_agac&quot;,&quot;label&quot;:&quot;Mertens_2023_agac&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Mertens2023_agac.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Mertens2023_agno3&quot;,&quot;label&quot;:&quot;Mertens_2023_agno3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Mertens2023_agno3.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SilverNitrate_Mertens2023_agnp&quot;,&quot;label&quot;:&quot;Mertens_2023_agnp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_silver_nitrate/SilverNitrate_Mertens2023_agnp.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Silver nitrate — `SilverNitrate_Mertens2023_agnp`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 2.5, model 0.183); the model does not reproduce the paper's terminal half-life.
 
-<div class="pk-model-meta" hidden drug="Silver nitrate" model-id="SilverNitrate_Mertens2023_agnp" status="extracted" stale="false" population="male and female Sprague-Dawley rats" measured-compound="Silver (total Ag)" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Silver nitrate" model-id="SilverNitrate_Mertens2023_agnp" status="needs_review" stale="false" population="male and female Sprague-Dawley rats" measured-compound="Silver (total Ag)" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Mertens J, Alami A, Arijs K. Comparative in vivo toxicokinetics of silver powder, nanosilver and soluble silver compounds after oral administration to rats. Archives of toxicology 97(7):1859–1872 (2023).
@@ -33,6 +33,8 @@ Mertens J, Alami A, Arijs K. Comparative in vivo toxicokinetics of silver powder
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax (ng/mL) M | Cmax | 71.2 | ng/mL |
@@ -45,7 +47,7 @@ Mertens J, Alami A, Arijs K. Comparative in vivo toxicokinetics of silver powder
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +55,13 @@ Mertens J, Alami A, Arijs K. Comparative in vivo toxicokinetics of silver powder
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's time of the peak (tmax) (paper 2.5, model 0.183); the model does not reproduce the paper's terminal half-life.**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — silver nitrate: Cmax 71.2 ng/mL, tmax 6 h, t1/2z 32.2 h, AUC 1.13e+03 ng.h/mL, AUCt 2e+03 ng.h/mL, AUC/dose 1 ng.h/mL, AUClast 4.32e+03 ng.h/mL.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -127,6 +135,25 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 |  | ['Mertens_2023_table_3:row1:col13', 'Mertens_2023_table_3:row2:col13'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Mertens_2023_table_3:row1:col8', 'Mertens_2023_table_3:row2:col8', 'Mertens_2023_table_3:row3:col8', 'Mertens_2023_table_3:row5:col8', 'Mertens_2023_table_3:row7:col8'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Silver (total Ag)) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_cmax | reference | skipped | 64–68 | 0.9982 |  | unresolved concentration unit (exp 'ng Ag/mL', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 71–128 | 0.9982 |  | unresolved concentration unit (exp 'ng Ag/mL', sim 'kg/m3') |
+| T1_t_half_terminal | reference | skipped |  | 32.2 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 22 | 32.2 | 1.464 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 18 | 32.2 | 1.789 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.5 | 0.1833 | 0.0733 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 15 | 0.1833 | 0.0122 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

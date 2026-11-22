@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because it used apparent clearance and volume values from the abstract as mechanistic parameters.
+> The record was rejected because melagatran clearance was labeled as a creatine biomarker, rendering the pharmacokinetic parameters invalid.
 
 <div class="pk-model-meta" hidden drug="melagatran" model-id="Melagatran_Eriksson2003_reference" status="rejected" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="2C"></div>
 
@@ -42,7 +42,7 @@ Eriksson UG, Mandema JW, Karlsson MO, Frison L, Gisleskog PO, Wählby U et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,11 @@ Eriksson UG, Mandema JW, Karlsson MO, Frison L, Gisleskog PO, Wählby U et al. P
 
 ### Reviewer guidance
 
-**The record was rejected because it used apparent clearance and volume values from the abstract as mechanistic parameters.**
+**The record was rejected because melagatran clearance was labeled as a creatine biomarker, rendering the pharmacokinetic parameters invalid.**
 
-The model structure is a two-compartment system, but the parameters provided are median population estimates for apparent clearance (5.3 L/h) and apparent volume (15.5 L). These values were extracted from the paper's abstract, meaning they represent summary statistics rather than fitted mechanistic parameters. Additionally, the record relied on default values for absorption and distribution rate constants, which are not suitable for a mechanistic model. Extracted — melagatran: CL 5.3 L/h, Fab 23 %, V 15.5 L, V/F 159 L.
+The clearance value of 5.3 L/h for melagatran was mislabeled as a creatinine clearance biomarker. The model relied on abstract-only data and defaulted absorption parameters, leading to second-reader disagreement on the parameterization type. Extracted — melagatran: CL 5.3 L/h, Fab 23 %, V 15.5 L, V/F 159 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has melagatran and ximelagatran, the second reading melagatran, ximelagatran; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has melagatran and ximelagatran, the second reading melagatran, ximelagatran; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -100,19 +100,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[bioavailability of melagatran after oral ximelagatran relative to subcutaneous melagatran].parameter_id` | Q40 | Q87 | mismatch |
-| `gpt-oss:120b` | `parameters[median population clearance (creatinine clearance 70 ml/min) ... subcutaneous]` | 5.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median population clearance]` |  | 5.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median population estimates ... oral]` | 159 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median population estimates ... subcutaneous]` | 15.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | melagatran and ximelagatran | melagatran, ximelagatran | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability of melagatran after oral ximelagatran relative to subcutaneous melagatran].parameter_id` | Q40 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[median population clearance (creatinine clearance 70 ml/min) ... subcutaneous]` | 5.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median population clearance]` |  | 5.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median population estimates ... oral]` | 159 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median population estimates ... subcutaneous]` | 15.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | melagatran and ximelagatran | melagatran, ximelagatran | mismatch |
 
 </details>
 
@@ -140,15 +140,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | melagatran (or metabolite) | median population clearance (creatinine clearance 70 mL/min) ... subcutaneous | disposition label(s) name a biomarker, not melagatran: 'median population clearance (creatinine clearance 70 mL/min) ... subcutaneous' |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=melagatran) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | melagatran (or metabolite) | median population clearance (creatinine clearance 70 mL/min) ... subcutaneous |  | disposition label(s) name a biomarker, not melagatran: 'median population clearance (creatinine clearance 70 mL/min) ... subcutaneous' |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=melagatran) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.364, 0 of 1 reader(s) agree | 0.364 | cross-check disputed by a second reader: verdict disputed, agreement 0.364, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

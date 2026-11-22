@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Dirks_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cetuximab — `Cetuximab_Dirks2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:36 UTC (Rejected), but the paper was screened again on 2026-10-07 11:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimensional mismatch in the elimination rate constant for cetuximab, which is reported in micrograms per milliliter instead of a time-based unit.
+> Cetuximab's Vd and elimination rate constant have conflicting units that contradict their pharmacokinetic meanings.
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Dirks2008_reference" status="rejected" stale="true" population="patients with recurrent and/or metastatic squamous cell carcinoma of the head and neck" measured-compound="cetuximab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Dirks2008_reference" status="rejected" stale="false" population="patients with recurrent and/or metastatic squamous cell carcinoma of the head and neck" measured-compound="cetuximab" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Dirks NL, Nolting A, Kovar A, Meibohm B. Population pharmacokinetics of cetuximab in patients with squamous cell carcinoma of the head and neck. Journal of clinical pharmacology 48(3):267–278 (2008).
@@ -39,7 +39,7 @@ Dirks NL, Nolting A, Kovar A, Meibohm B. Population pharmacokinetics of cetuxima
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Dirks NL, Nolting A, Kovar A, Meibohm B. Population pharmacokinetics of cetuxima
 
 ### Reviewer guidance
 
-**The record was rejected due to a dimensional mismatch in the elimination rate constant for cetuximab, which is reported in micrograms per milliliter instead of a time-based unit.**
+**Cetuximab's Vd and elimination rate constant have conflicting units that contradict their pharmacokinetic meanings.**
 
-The parameter for the terminal elimination rate constant (kel) is listed as 74 micrograms per milliliter, which is a unit of concentration rather than a rate constant. This dimensional inconsistency was the primary cause of the rejection, as it makes the pharmacokinetic model structurally invalid. Additionally, the record was built solely from the paper's abstract, meaning the reported values are summary statistics that stand in for a fitted model. A second reader disagreed with the specific values extracted for all five parameters, noting that they could not be verified from the abstract. Extracted — cetuximab: V 4.38 mg/h, kel 74 mug/mL, V1 2.83 L, V2 2.43 L, Q 0.103 L/h.
+The volume of distribution is recorded as 4.38 mg/h, a mass flow rate inconsistent with a volume unit. Similarly, the elimination rate constant is given as 74 µg/mL, a concentration unit rather than a rate constant. The record was derived solely from the abstract, so these summary statistics stand in for a fitted model, and a second reader was unable to confirm any of the parameter values. Extracted — cetuximab: V 4.38 mg/h, kel 74 mug/mL, V1 2.83 L, V2 2.43 L, Q 0.103 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of central compartment volume v: this record has 2.83, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 

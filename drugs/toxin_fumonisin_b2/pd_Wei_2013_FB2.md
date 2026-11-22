@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fumonisin B2&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b2/&quot;},{&quot;label&quot;:&quot;Wei_2013 \u00b7 PD fumonisin_b2_exposure&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FumonisinB2_Shephard1995_reference&quot;,&quot;label&quot;:&quot;Shephard_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FumonisinB2_Shephard1995_reference&quot;,&quot;label&quot;:&quot;Shephard_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumonisin_b2/FumonisinB2_Shephard1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fumonisin_b2_exposure — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** Fumonisin B2 drives fumonisin_b2_exposure (in μg/kg body weight/day): disease-progression model.
 
 **Model:** No model was generated from this record.
+
+> The provided record identifies Fumonisin B2 as the drug and its exposure (FB2) as the response, but it lacks specific mechanistic details such as the type of effect model or effect direction. No potency or rate parameters are available in the given information.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Wei_2013`
 - **model family:** `disease_progression`

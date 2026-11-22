@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Ramakrishnan_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Graff2003_reference&quot;,&quot;label&quot;:&quot;Graff_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Graff2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Ramakrishnan2005_reference&quot;,&quot;label&quot;:&quot;Ramakrishnan_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Durdagi_2022_Mpro_activity&quot;,&quot;label&quot;:&quot;Durdagi_2022 \u00b7 Mpro activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/pd_Durdagi_2022_Mpro_activity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_G_bel_2019_PPAR&quot;,&quot;label&quot;:&quot;G\u00f6bel_2019 \u00b7 PPAR\u03b3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/pd_G_bel_2019_PPAR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Graff2003_reference&quot;,&quot;label&quot;:&quot;Graff_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Graff2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Ramakrishnan2005_reference&quot;,&quot;label&quot;:&quot;Ramakrishnan_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_G_bel_2019_PPAR&quot;,&quot;label&quot;:&quot;G\u00f6bel_2019 \u00b7 PPAR\u03b3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/pd_G_bel_2019_PPAR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life is 2.46 hours versus the paper's 0.9 hours, and bioavailability and lag time lack paper-specific values.
+> The model does not reproduce the paper's terminal half-life (paper 0.9, model 2.2).
 
 <div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Ramakrishnan2005_reference" status="needs_review" stale="false" population="adults and children aged 6 to 14 years" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,15 +17,15 @@ Ramakrishnan R, Migoya E, Knorr B. A population pharmacokinetic model for montel
 
 ## Population and dosing
 
-**Population:** adults and children aged 6 to 14 years · age group mixed.
+**Population:** adults and children aged 6 to 14 years · condition healthy · age group mixed.
 
-**Dosing:** 3.5, 7 mg, iv, single.
+**Dosing:** 3.5 mg, intravenous, single.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference.svg" alt="Montelukast_Ramakrishnan2005_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,13 +35,12 @@ Ramakrishnan R, Migoya E, Knorr B. A population pharmacokinetic model for montel
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| steady-state volume of distribution in a 70-kg adult | V | 8.2 | L |
-| clearance in a 70-kg adult | CL | 43 | ml/min |
-| Ka | kabs | 0.357 | h−1 |
+| steady-state volume of distribution | V | 8.2 | L |
+| clearance | CL | 43 | ml/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,21 +50,20 @@ Ramakrishnan R, Migoya E, Knorr B. A population pharmacokinetic model for montel
 
 ### Reviewer guidance
 
-**The model's terminal half-life is 2.46 hours versus the paper's 0.9 hours, and bioavailability and lag time lack paper-specific values.**
+**The model does not reproduce the paper's terminal half-life (paper 0.9, model 2.2).**
 
-The record omits explicit values for bioavailability and absorption lag time, so the model relies on generic placeholder assumptions rather than paper-derived estimates. The simulated terminal half-life of 2.46 hours significantly exceeds the 0.9 hours reported in the study for montelukast. Although the paper specifies clearance of 43 ml/min and volume of distribution of 8.2 L for a 70-kg adult, the model fails to match the reported half-life. Extracted — montelukast: V 8.2 L, CL 43 ml/min, kabs 0.357 h−1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — montelukast: V 8.2 L, CL 43 ml/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 43; it also differs on 3 more fields. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| steady-state volume of distribution in a 70-kg adult | `Q61` · V | 8.2 | L | 0.0082 | m3 | L | boundary (0.8) | Ramakrishnan_2005:discussion_prose |
-| clearance in a 70-kg adult | `Q22` · CL | 43 | ml/min | 7.167e-07 | m3/s | L/h | boundary (0.8) | Ramakrishnan_2005:discussion_prose |
-| Ka | `Q49` · kabs | 0.357 | h−1 | 9.917e-05 | 1/s | 1/h | review_gapfill (0.7) | Zhu_2024:review |
+| steady-state volume of distribution | `Q61` · V | 8.2 | L | 0.0082 | m3 | L | boundary (0.8) | Ramakrishnan_2005:discussion_prose |
+| clearance | `Q22` · CL | 43 | ml/min | 7.167e-07 | m3/s | L/h | exact (1) | Ramakrishnan_2005:discussion_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,44 +72,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
-- salvaged Q61 ('steady-state volume of distribution in a 70-kg adult'=8.2) from results prose — parameter table was unreadable
-- salvaged Q22 ('clearance in a 70-kg adult'=43) from results prose — parameter table was unreadable
+- salvaged Q61 ('steady-state volume of distribution'=8.2) from results prose — parameter table was unreadable
+- salvaged Q22 ('clearance'=43) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=montelukast
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Zhu_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - table Ramakrishnan_2005_table_p4_2: unbound_uncertainty
 - table Ramakrishnan_2005_table_p4_2: unknown_column_role
 - table Ramakrishnan_2005_table_p4_2: ragged_grid
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance in a 70-kg adult]` | 43 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 43 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution in a 70-kg adult]` | 8.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` |  | 8.2 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -126,7 +110,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Zhu_2024:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 43 | ['Ramakrishnan_2005:discussion_prose'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 2.58 L/h | ['Ramakrishnan_2005:discussion_prose'] |
@@ -139,11 +122,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates |  | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable |  | pass | C_central (measured=montelukast) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | fail | 0.9 | 2.456 | 2.729 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.8 | 2.456 | 3.071 | h→SI vs simulated h |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_t_half_beta | reference | fail | 0.9 | 2.201 | 2.446 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.8 | 2.201 | 2.752 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,14 +144,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_modelica.zip" download>Montelukast_Ramakrishnan2005_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_fmi.zip" download>Montelukast_Ramakrishnan2005_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_fmi.zip" download>Montelukast_Ramakrishnan2005_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_matlab.zip" download>Montelukast_Ramakrishnan2005_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_matlab_simbio.zip" download>Montelukast_Ramakrishnan2005_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_sbml.zip" download>Montelukast_Ramakrishnan2005_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_cellml.zip" download>Montelukast_Ramakrishnan2005_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -177,20 +161,18 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.5862 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 3.5e-06 | kg |
 | input | model | `Cl` | 7.167e-07 | m3/s |
 | input | model | `VdPerKg` | 0.0001171 | m3/kg |
-| input | model | `ka` | 9.917e-05 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -213,14 +195,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 3.5 mg, single dose, first-order absorption (ka 0.357 /h, F 0.9). Doses in the paper: 3.5, 7 mg.
+**Administration: intravenous** — 3.5 mg infusion over 10 min, single dose. Dose in the paper: 3.5 mg.
 
-<dbs-fmusim paramsurl="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference/Montelukast_Ramakrishnan2005_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Montelukast_Ramakrishnan2005_reference_params.json` · controls `Montelukast_Ramakrishnan2005_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Montelukast_Ramakrishnan2005_reference_params.json` · controls `Montelukast_Ramakrishnan2005_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmontelukast%5D%20Montelukast_Ramakrishnan2005_reference&body=Drug%3A%20montelukast%0ARecord%3A%20Montelukast_Ramakrishnan2005_reference%0APaper%3A%20Ramakrishnan_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 04:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 09:51 UTC</sub>

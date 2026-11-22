@@ -4,11 +4,11 @@
 
 # pentamidine isethionate — `PentamidineIsethionate_Conte1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:57 UTC (Rejected), but the paper was screened again on 2026-10-07 08:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the intercompartmental clearance parameter for pentamidine (0.001 L/h) had a dimension mismatch with the one-compartment structure.
+> A dimension check failed for the intercompartmental clearance of pentamidine, as the provided unit percent cannot represent a volumetric flow rate.
 
-<div class="pk-model-meta" hidden drug="pentamidine isethionate" model-id="PentamidineIsethionate_Conte1991_reference" status="rejected" stale="true" population="patients with normal renal function or receiving hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pentamidine isethionate" model-id="PentamidineIsethionate_Conte1991_reference" status="rejected" stale="false" population="patients with normal renal function or receiving hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal renal function or receiving hemodialysis. The Journal of infectious diseases 163(1):169–175 (1991).
@@ -38,7 +38,7 @@ Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal re
 
 ### Reviewer guidance
 
-**The record was rejected because the intercompartmental clearance parameter for pentamidine (0.001 L/h) had a dimension mismatch with the one-compartment structure.**
+**A dimension check failed for the intercompartmental clearance of pentamidine, as the provided unit percent cannot represent a volumetric flow rate.**
 
-The model structure is described as one-compartment, yet the record includes an apparent intercompartmental clearance (Q) of 0.001 L/h, which is a parameter valid only for multi-compartment models. Additionally, the record was built from the abstract alone, so reported summary statistics like a plasma clearance of 268 L/h stood in for a fitted model. The second reader noted disagreements on the dose compound identity and the presence of several extracted parameters, but the primary refusal cause was the structural inconsistency of the Q parameter. Extracted — pentamidine isethionate: Cmax 249 ng/ml, CL 268 l/h, t1/2z 29 h, Q 0.001 L/h, CL_ratio 2.1 %.
+The record lists an intercompartmental clearance of 0.001 with a unit of percent, creating a mismatch with its required dimensionless or volumetric flow nature. Furthermore, the record was built from the abstract alone, meaning summary statistics like a half-life of 29 hours stood in for a fully fitted model. A second reader also disagreed on the dose and analyte being pentamidine isethionate rather than pentamidine. Extracted — pentamidine isethionate: Cmax 249 ng/ml, CL 268 l/h, t1/2z 29 h, Q 0.001 L/h, CL_ratio 2.1 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pentamidine, the second reading pentamidine_isethionate; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

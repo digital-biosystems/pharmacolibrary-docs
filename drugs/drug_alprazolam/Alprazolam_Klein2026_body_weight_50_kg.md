@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Alprazolam's absorption rate constant (ka) and lag time (Tlag) were defaulted, causing the simulated peak time to deviate from the reported value of 0.175 hours.
+> The model does not reproduce the paper's time of the peak (tmax); ka use library defaults, not estimates from this paper (+1 more).
 
 <div class="pk-model-meta" hidden drug="alprazolam" model-id="Alprazolam_Klein2026_body_weight_50_kg" status="needs_review" stale="false" population="adults and adolescents with epilepsy" measured-compound="alprazolam" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Klein P, Aungaroon G, Biton V, Liow KK, Phillips S, Wychowski T et al. Pharmacok
 
 ### Reviewer guidance
 
-**Alprazolam's absorption rate constant (ka) and lag time (Tlag) were defaulted, causing the simulated peak time to deviate from the reported value of 0.175 hours.**
+**The model does not reproduce the paper's time of the peak (tmax); ka use library defaults, not estimates from this paper (+1 more).**
 
-The review identified that ka and Tlag were not reported in the source and were instead assigned library defaults. Consequently, the simulated time to peak concentration was 4.06813627254509 hours, which exceeds the paper's reported tmax of 0.175 hours by a factor of 23.2465. These unreported parameters render the model's absorption profile inconsistent with the observed pharmacokinetic data for alprazolam. Extracted — alprazolam: Cmax 38.3 ng/mL, AUC∞ 281 h.ng/mL, AUClast 271 h.ng/mL, CL/F 7.11 L/h, V/F 67.5 L, t1/2z 6.82 h.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Cmax, AUC∞ and AUClast), so that value has no SI equivalent. Extracted — alprazolam: Cmax 38.3 ng/mL, AUC∞ 281 h.ng/mL, AUClast 271 h.ng/mL, CL/F 7.11 L/h, V/F 67.5 L, t1/2z 6.82 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,7 +154,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=alprazolam) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=2: not acceptable; deviation_id=3: not acceptable; deviation_id=4: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped |  | 1.954e-05 |  | non-numeric value |
 | T1_t_half_terminal | reference | skipped |  | 6.581 |  | non-numeric value |
 | T1_t_half_terminal | reference | pass | 6.816 | 6.581 | 0.9655 | h→SI vs simulated h |

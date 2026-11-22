@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The finerenone model's simulated Cmax is tenfold lower than the paper's, and tmax and terminal half-life also deviate significantly.
+> Finerenone’s model, with an absorption rate constant of 22.5 1/h, failed to reproduce reported peak timing, peak concentration, and terminal half-life, leaving the record under review.
 
 <div class="pk-model-meta" hidden drug="finerenone" model-id="Finerenone_Heinig2023_reference" status="needs_review" stale="false" population="adults with CKD and T2D" measured-compound="finerenone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Heinig R, Eissing T. The Pharmacokinetics of the Nonsteroidal Mineralocorticoid 
 
 ## Population and dosing
 
-**Population:** adults with CKD and T2D · age group adult · n = &gt;=2284.
+**Population:** adults with CKD and T2D · age group adult.
 
 **Dosing:** 1.25, 2.5, 5, 7.5, 10, 20 mg, oral, multiple, every 24 h.
 
@@ -66,13 +66,13 @@ Heinig R, Eissing T. The Pharmacokinetics of the Nonsteroidal Mineralocorticoid 
 
 ### Reviewer guidance
 
-**The finerenone model's simulated Cmax is tenfold lower than the paper's, and tmax and terminal half-life also deviate significantly.**
+**Finerenone’s model, with an absorption rate constant of 22.5 1/h, failed to reproduce reported peak timing, peak concentration, and terminal half-life, leaving the record under review.**
 
-Simulated peak concentration (1.04e-05 kg/m3) falls short of the reported values (e.g., 9.62e-05), and the simulated tmax (0.543 h) and terminal half-life (2.63 h) do not match the paper's 0.75 h and 2.25 h. Additionally, the covariate effects on clearance were defined but not simulated, and the second reader did not extract the covariate exponent values. Extracted — finerenone: kabs 22.5 1/h, CL/F 29.9 L/h, V/F 113 L, Q/F 0.335 L/h, tlag 0.215 h, Frel 1.
+The model does not reproduce the paper's time of the peak (tmax) (paper 0.75, model 0.543). Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's peak concentration (Cmax) (paper 9.62e-05, model 1.04e-05). Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's terminal half-life (paper 2.25, model 2.63). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The covariate scenarios were not simulated; the base model was simulated, not the covariate effects the record defines, and a reported unit could not be converted to SI before reaching the model builder; the builder assumed F=1, Fm=1, and no molar correction, and the second reader disputed the verdict (agreement 0.594, 0 of 1 reader(s) agree). Extracted — finerenone: kabs 22.5 1/h, CL/F 29.9 L/h, V/F 113 L, Q/F 0.335 L/h, tlag 0.215 h, Frel 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has finerenone, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -191,7 +191,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=finerenone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.594, 0 of 1 reader(s) agree | 0.594 | cross-check disputed by a second reader: verdict disputed, agreement 0.594, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 9.62e-05 | 1.043e-05 | 0.1084 | µg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.000118 | 1.043e-05 | 0.0884 | µg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 9.99e-05 | 1.043e-05 | 0.1044 | µg/L→SI vs simulated kg/m3 |

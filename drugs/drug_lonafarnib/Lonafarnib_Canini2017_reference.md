@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000256, model 0.000344); the model does not reproduce the paper's time of the peak (tmax) (paper 4, model 5.96) (+2 more).
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000256, model 0.000344); the model does not reproduce the paper's time of the peak (tmax) (paper 4, model 5.96) (+1 more).
 
 <div class="pk-model-meta" hidden drug="lonafarnib" model-id="Lonafarnib_Canini2017_reference" status="needs_review" stale="false" population="adults with chronic hepatitis delta virus infection" measured-compound="lonafarnib" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Canini L, Koh C, Cotler SJ, Uprichard SL, Winters MA, Han MAT et al. Pharmacokin
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000256, model 0.000344); the model does not reproduce the paper's time of the peak (tmax) (paper 4, model 5.96) (+2 more).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000256, model 0.000344); the model does not reproduce the paper's time of the peak (tmax) (paper 4, model 5.96) (+1 more).**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — lonafarnib: kabs 0.43 1/h, V/F 223 L, kel 0.045 1/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=lonafarnib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_cmax | reference | fail | 0.000256 | 0.0003444 | 1.345 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.001073 | 0.0003444 | 0.321 | ng/mL→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | pass | 15.4 | 15.48 | 1.006 | hours→SI vs simulated h |

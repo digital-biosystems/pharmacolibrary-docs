@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or specific PK/PD model structure for the effect of aluminium lactate on phasic contractions. No potency parameters (e.g., EC50, Emax) or rate constants are reported in the available excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Phillippe_1994`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

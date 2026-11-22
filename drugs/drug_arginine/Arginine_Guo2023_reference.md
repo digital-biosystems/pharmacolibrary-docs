@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;Arginine&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/&quot;},{&quot;label&quot;:&quot;Guo_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Arginine — `Arginine_Guo2023_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Guo2023_reference" status="simulated" stale="false" population="" measured-compound="arginine" parameterization="apparent" topology="2C"></div>
+> Second reader disputed the review verdict for arginine, disagreeing on specific pharmacokinetic parameter values.
+
+<div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Guo2023_reference" status="needs_review" stale="false" population="" measured-compound="arginine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Guo C, Liao KH, Li M, Wang IM, Shaik N, Yin D. PK/PD model-informed dose selection for oncology phase I expansion: Case study based on PF-06939999, a PRMT5 inhibitor. CPT: pharmacometrics & systems pharmacology 12(11):1619–1625 (2023).
@@ -27,6 +29,8 @@ Guo C, Liao KH, Li M, Wang IM, Shaik N, Yin D. PK/PD model-informed dose selecti
 <figure class="pk-models-diagram"><img src="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference.svg" alt="Arginine_Guo2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 9.53 | L/h |
@@ -37,7 +41,7 @@ Guo C, Liao KH, Li M, Wang IM, Shaik N, Yin D. PK/PD model-informed dose selecti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +51,13 @@ Guo C, Liao KH, Li M, Wang IM, Shaik N, Yin D. PK/PD model-informed dose selecti
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Second reader disputed the review verdict for arginine, disagreeing on specific pharmacokinetic parameter values.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 46.9, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+The cross-check resulted in a disagreement, with an agreement score of 0.706 and zero readers supporting the original verdict. The second reader identified discrepancies in several parameter values, including specific figures such as 46.9, 0.112, and 23.2 that were not matched or were null in the initial record. Additionally, the model builder had defaulted the absorption lag time and assumed a bioavailability of 1.0, which may have contributed to the conflicting interpretations. Extracted — arginine: CL/F 9.53 L/h, V1/F 160 L, V2/F 285 L, Q/F 26.2 L/h, kabs 2.31 h−1.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 46.9, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -85,19 +91,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.588 (10/17 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.706 (12/17 fields) | 5 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q312]` | 46.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q315]` | 0.112 | 0.0146 | mismatch |
-| `gpt-oss:120b` | `values[Q318]` | 23.2 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q323]` | 0.823 | 0.823 | mismatch |
-| `gpt-oss:120b` | `values[Q324]` |  | 113 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q335]` | 0.00496 | 0.00496 | mismatch |
-| `gpt-oss:120b` | `values[Q87]` |  | 0.647 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 46.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q315]` | 0.112 | 0.0146 | mismatch |
+| `gpt-oss-120b` | `values[Q318]` | 23.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q324]` |  | 113 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` |  | 0.647 | only_one_extracted |
 
 </details>
 
@@ -127,15 +131,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=arginine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=arginine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.706, 0 of 1 reader(s) agree | 0.706 | cross-check disputed by a second reader: verdict disputed, agreement 0.706, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

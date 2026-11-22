@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record lacks kinetic parameters, containing only a brain partition coefficient (Kp 9.9) and volume labels without values for imipramine.
 
 <div class="pk-model-meta" hidden drug="Imipramine" model-id="Imipramine_Pardridge2023_4" status="rejected" stale="false" population="human" measured-compound="Imipramine" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Pardridge WM. Physiologically Based Pharmacokinetic Model of Brain Delivery of P
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record lacks kinetic parameters, containing only a brain partition coefficient (Kp 9.9) and volume labels without values for imipramine.**
+
+The extracted data includes a brain partition coefficient (Kp 9.9) but fails to capture half-lives, rate constants, clearances, or actual volume values for peripheral or total distribution. The volumes are labeled but valueless, and the paper is an exposure/outcome study without fitted pharmacokinetic parameters. Consequently, the record cannot define the drug's time course in the body. Extracted — imipramine: Kp 9.9.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

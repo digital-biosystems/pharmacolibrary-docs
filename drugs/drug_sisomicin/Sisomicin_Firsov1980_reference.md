@@ -4,11 +4,11 @@
 
 # sisomicin — `Sisomicin_Firsov1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:35 UTC (Rejected), but the paper was screened again on 2026-10-07 11:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The total clearance parameter for sisomicin was rejected due to a unit error in the record's extracted value.
+> Sisomicin total clearance was recorded as 0.24 kg.hour, which dimensionally contradicts the required volume per time unit, leading to rejection.
 
-<div class="pk-model-meta" hidden drug="sisomicin" model-id="Sisomicin_Firsov1980_reference" status="rejected" stale="true" population="Wistar rats" measured-compound="sisomicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sisomicin" model-id="Sisomicin_Firsov1980_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="sisomicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Firsov AA, Koroleva VG, Goncharskaia TIa, Umnova LV, Fomina IP. [Pharmacokinetic basis of the nephrotoxic action of sisomycin. The pharmacokinetics of sisomycin in single and multiple administrations to rats]. Antibiotiki 25(3):201–206 (1980).
@@ -35,7 +35,7 @@ Firsov AA, Koroleva VG, Goncharskaia TIa, Umnova LV, Fomina IP. [Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Firsov AA, Koroleva VG, Goncharskaia TIa, Umnova LV, Fomina IP. [Pharmacokinetic
 
 ### Reviewer guidance
 
-**The total clearance parameter for sisomicin was rejected due to a unit error in the record's extracted value.**
+**Sisomicin total clearance was recorded as 0.24 kg.hour, which dimensionally contradicts the required volume per time unit, leading to rejection.**
 
-The clearance of 0.24 was extracted with the unit 'kg.hour', which is dimensionally inconsistent with the expected volume per time units for clearance. As the model record was built from the abstract alone, the reported summary statistics for sisomicin stood in for a fitted model. A second reader disagreed with the extracted parameter value, identifying it as null rather than 0.24. Extracted — sisomicin: CL 0.24 kg.hour.
+The record lists the total clearance for sisomicin with a value of 0.24 and a unit of kg.hour. The unit dimension [mass] * [time] conflicts with the structural requirement for clearance of [length] ** 3 / [time]. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. Extracted — sisomicin: CL 0.24 kg.hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sisomicin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

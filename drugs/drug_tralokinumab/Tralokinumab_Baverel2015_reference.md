@@ -16,7 +16,7 @@ Baverel PG, Jain M, Stelmach I, She D, Agoram B, Sandbach S et al. Pharmacokinet
 
 ## Population and dosing
 
-**Population:** adolescents with asthma · age group adolescent · n = condition.
+**Population:** adolescents with asthma · age group adolescent.
 
 ## Model
 

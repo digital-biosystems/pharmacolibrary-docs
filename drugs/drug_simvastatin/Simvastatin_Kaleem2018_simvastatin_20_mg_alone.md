@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Kaleem_2018 \u00b7 simvastatin_20_mg_alone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Borijihan2026_reference&quot;,&quot;label&quot;:&quot;Borijihan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Borijihan2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kaleem2018_simvastatin_20_mg_alone&quot;,&quot;label&quot;:&quot;Kaleem_2018_simvastatin_20_mg_alone&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kaleem2018_simvastatin_20_mg_alone.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Kaleem2018_simvastatin_20_mg_with_clarithromycin&quot;,&quot;label&quot;:&quot;Kaleem_2018_simvastatin_20_mg_with_clarithromycin_250_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kaleem2018_simvastatin_20_mg_with_clarithromycin.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Li2019_reference&quot;,&quot;label&quot;:&quot;Li_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Li2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Lohitnavy2004_reference&quot;,&quot;label&quot;:&quot;Lohitnavy_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Lohitnavy2004_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Li2019_reference&quot;,&quot;label&quot;:&quot;Li_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Li2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Borijihan2026_reference&quot;,&quot;label&quot;:&quot;Borijihan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Borijihan2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Chung2023_reference&quot;,&quot;label&quot;:&quot;Chung_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Chung2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kaleem2018_simvastatin_20_mg_alone&quot;,&quot;label&quot;:&quot;Kaleem_2018_simvastatin_20_mg_alone&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kaleem2018_simvastatin_20_mg_alone.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Kaleem2018_simvastatin_20_mg_with_clarithromycin&quot;,&quot;label&quot;:&quot;Kaleem_2018_simvastatin_20_mg_with_clarithromycin_250_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kaleem2018_simvastatin_20_mg_with_clarithromycin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Lohitnavy2004_reference&quot;,&quot;label&quot;:&quot;Lohitnavy_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Lohitnavy2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # simvastatin — `Simvastatin_Kaleem2018_simvastatin_20_mg_alone`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Kaleem2018_simvastatin_20_mg_alone" status="not_modelled" stale="false" population="healthy adult male subjects" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
+> Bioavailability F for simvastatin lacks a paper-derived value, forcing use of unreported placeholder values.
+
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Kaleem2018_simvastatin_20_mg_alone" status="needs_review" stale="false" population="healthy adult male subjects" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kaleem Z, Khan JA, Mushtaq Z, Altaf S, Javed I. Assessment of potential interaction between simvastatin and clarithromycin in healthy adult male subjects. Pakistan journal of pharmaceutical sciences 31(3):801–806 (2018).
@@ -28,21 +30,21 @@ Kaleem Z, Khan JA, Mushtaq Z, Altaf S, Javed I. Assessment of potential interact
 <figure class="pk-models-diagram"><img src="drugs/drug_simvastatin/Simvastatin_Kaleem2018_simvastatin_20_mg_alone/Simvastatin_Kaleem2018_simvastatin_20_mg_alone.svg" alt="Simvastatin_Kaleem2018_simvastatin_20_mg_alone diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | C max | Cmax | 2.47 | ng mL -1 |
 | B | equation variable | 6.07 | ng mL -1 |
 | V d | V | 50.59 | L kg -1 |
-| Cl B | CLb | 23.17 | L/h |
-| AUC (0-10) | AUC | 15.10 | ng.h/mL |
-| absorption rate | kabs | 1.0 | 1/h |
+| Cl B | CLb | 23.17 | L hr -1 kg -1 |
+| AUC (0-10) | AUC | 15.10 | ng.hr.mL-1 |
+| Rate of absorption (Ka) (hour -1 ) | kabs | 0.3 | hour -1 |
 | LAG (hr) | tlag | 0.212 | hr |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,25 +54,25 @@ Kaleem Z, Khan JA, Mushtaq Z, Altaf S, Javed I. Assessment of potential interact
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Bioavailability F for simvastatin lacks a paper-derived value, forcing use of unreported placeholder values.**
 
-A reported unit could not be converted (Cmax, equation variable and AUC), so that value has no SI equivalent.
+The bioavailability parameter remained unreported, so no explicit estimate from the study was used to simulate the concentration profile. This reliance on default conventions means the resulting values are not supported by the extracted data. Additionally, one reported unit could not be converted to standard international units, leaving a parameter without a standardized value. Extracted — simvastatin: Cmax 2.47 ng mL -1, V 50.6 L kg -1, CLb 23.2 L hr -1 kg -1, AUC 15.1 ng.hr.mL-1, kabs 0.3 hour -1, tlag 0.212 hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has 6.07, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[b].parameter_id`: this record has Q900, the second reading Q86. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| C max | `Q32` · Cmax | 2.47 | ng mL -1 |  |  | ng/ml | space_fold (0.95) | tab_1:row1:col2 |
+| C max | `Q32` · Cmax | 2.47 | ng mL -1 | 2.47e-06 | kg/m3 | ng/ml | space_fold (0.95) | tab_1:row1:col2 |
 | B | `Q900` · equation variable | 6.07 | ng mL -1 |  |  | ng/ml | llm (0.6) | tab_1:row5:col2 |
 | V d | `Q61` · V | 50.59 | L kg -1 | 3.541 | m3 | l/kg | space_fold (0.95) | tab_1:row8:col2 |
-| Cl B | `Q23` · CLb | 23.17 | L/h | 6.436e-06 | m3/s | L/h | space_fold (0.95) | tab_1:row9:col2 |
-| AUC (0-10) | `Q88` · AUC | 15.10 | ng.h/mL |  |  | ng.h/mL | exact (1) | tab_1:row10:col2 |
-| absorption rate | `Q49` · kabs | 1.0 | 1/h | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Faltaos_2006:review |
-| LAG (hr) | `Q83` · tlag | 0.212 | hr | 763.2 | s | h | review_gapfill (0.7) | Wright_2011:review |
+| Cl B | `Q23` · CLb | 23.17 | L hr -1 kg -1 | 0.0004505 | m3/s | l/(h·kg) | space_fold (0.95) | tab_1:row9:col2 |
+| AUC (0-10) | `Q88` · AUC | 15.10 | ng.hr.mL-1 |  |  | ng.hr.mL-1 | exact (1) | tab_1:row10:col2 |
+| Rate of absorption (Ka) (hour -1 ) | `Q49` · kabs | 0.3 | hour -1 | 8.333e-05 | 1/s | 1/h | review_gapfill (0.7) | Friedrich_2014:review |
+| LAG (hr) | `Q83` · tlag | 0.212 | hr | 763.2 | s | h | review_gapfill (0.7) | Kim_2011:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -84,17 +86,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 **Interpretation flags:**
 - conflicting source units for 'AUC (0-10)': [{'unit': 'ng hr mL -1', 'source': 'tab_1:row10:col1', 'scope': 'unit_column'}, {'unit': '0-10', 'source': 'tab_1:row10:col0', 'scope': 'label'}]
-- unit_dimension_unknown: 'L hr -1 kg -1' (CLb)
-- implicit units: 'Cl B' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for Clb in the table caption or footnotes. In population PK, total body cle')
-- implicit units: 'AUC (0-10)' → ng.h/mL (from the paper text: "The paper text explicitly states the value and unit: 'The mean area under the curve of simvastatin concentration versus ")
+- implicit units: 'AUC (0-10)' → ng.hr.mL-1 (from the paper text: "The paper text states: 'The mean area under the curve of simvastatin concentration versus time AUC (0-10) was increased ")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=simvastatin
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - population split: 'simvastatin 20 mg alone' subgroup of Kaleem_2018 (paper reports 2 populations: simvastatin 20 mg alone, simvastatin 20 mg with clarithromycin 250 mg)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Faltaos_2006's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Wright_2011's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Friedrich_2014's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Kim_2011's review values (primary lacked it)
 
 **Extraction notes:**
 - table tab_1: conflicting_units
@@ -106,18 +106,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.9 (9/10 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[b]` | 6.07 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[b].parameter_id` | Q900 | Q86 | mismatch |
 
 </details>
 
@@ -136,24 +136,34 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['tab_1:row9:col2'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['tab_1:row1:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Faltaos_2006:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Friedrich_2014:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_1:row8:col2'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Wright_2011:review'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Kim_2011:review'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['tab_1:row10:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 23.17 | ['tab_1:row9:col2'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q23 | pass | clearance within physiological range | 23.2 L/h | ['tab_1:row9:col2'] |
+| C9_phys_window_Q23 | pass | clearance within physiological range | 1.62e+03 L/h | ['tab_1:row9:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 3.54e+03 L | ['tab_1:row8:col2'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | note |
-|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  | no covariate effects in record |
-| T3_param_coverage |  | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations |  | pass |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 5.66 | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=simvastatin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| T1_cmax | reference | skipped |  | 1.491e-06 | non-numeric value |
+| T1_cmax | reference | skipped |  | 1.491e-06 | non-numeric value |
+| T1_cmax | reference | skipped | 2.3 | 1.491e-06 | unresolved concentration unit (exp 'folds', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 2.47 | 1.491e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 5.66 | 1.491e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 23.4 | 1.491e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 4.16 | 1.491e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
+| T1_t_half_beta | reference | skipped |  | 2.377 | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -192,9 +202,9 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 2e-05 | kg |
-| input | model | `Cl` | 6.436e-06 | m3/s |
+| input | model | `Cl` | 0.0004505 | m3/s |
 | input | model | `VdPerKg` | 0.05059 | m3/kg |
-| input | model | `ka` | 0.0002778 | 1/s |
+| input | model | `ka` | 8.333e-05 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -222,7 +232,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 20 mg, single dose, first-order absorption (ka 1 /h, lag 12.7 min, F 0.9). Dose in the paper: 20 mg.
+**Administration: oral** — 20 mg, single dose, first-order absorption (ka 0.3 /h, lag 12.7 min, F 0.9). Dose in the paper: 20 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_simvastatin/Simvastatin_Kaleem2018_simvastatin_20_mg_alone/Simvastatin_Kaleem2018_simvastatin_20_mg_alone_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_simvastatin/Simvastatin_Kaleem2018_simvastatin_20_mg_alone/Simvastatin_Kaleem2018_simvastatin_20_mg_alone_sim_controls.json"></dbs-fmusim>
 
@@ -232,4 +242,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20Simvastatin_Kaleem2018_simvastatin_20_mg_alone&body=Drug%3A%20simvastatin%0ARecord%3A%20Simvastatin_Kaleem2018_simvastatin_20_mg_alone%0APaper%3A%20Kaleem_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/Simvastatin_Kaleem2018_simvastatin_20_mg_alone%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 13:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 03:04 UTC</sub>

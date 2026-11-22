@@ -178,30 +178,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_fludarabine/Fludarabine_LongBoyle2011_standard_dose/Fludarabine_LongBoyle2011_standard_dose_matlab.zip" download>Fludarabine_LongBoyle2011_standard_dose_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_fludarabine/Fludarabine_LongBoyle2011_standard_dose/Fludarabine_LongBoyle2011_standard_dose_matlab_simbio.zip" download>Fludarabine_LongBoyle2011_standard_dose_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_fludarabine/Fludarabine_LongBoyle2011_standard_dose/Fludarabine_LongBoyle2011_standard_dose_sbml.zip" download>Fludarabine_LongBoyle2011_standard_dose_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_fludarabine/Fludarabine_LongBoyle2011_standard_dose/Fludarabine_LongBoyle2011_standard_dose_cellml.zip" download>Fludarabine_LongBoyle2011_standard_dose_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Long-Boyle JR, Green KG, Brunstein CG, Cao Q, Rogosheske J, Weisdorf DJ et al. High fludarabine exposure and relationship with treatment-related mortality after nonmyeloablative hematopoietic cell transplantation. Bone marrow transplantation 46(1):20–26 (2011). [doi:10.1038/bmt.2010.53](https://doi.org/10.1038/bmt.2010.53)
-
-**This record:** Pharmacolibrary, model `Fludarabine_LongBoyle2011_standard_dose`. <https://pharmacolibrary.github.io/#/drugs/toxin_fludarabine/Fludarabine_LongBoyle2011_standard_dose>
-
-```bibtex
-@misc{pharmacolibrary_FludarabineLongBoyle2011standarddose,
-  title  = {{Pharmacolibrary model Fludarabine_LongBoyle2011_standard_dose}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_fludarabine/Fludarabine_LongBoyle2011_standard_dose},
-  note   = {Parameters from doi:10.1038/bmt.2010.53},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

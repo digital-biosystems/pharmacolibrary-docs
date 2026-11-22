@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;mefloquine&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/&quot;},{&quot;label&quot;:&quot;Mim_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mefloquine_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rattanapunya2015_reference&quot;,&quot;label&quot;:&quot;Rattanapunya_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rufener2018_reference&quot;,&quot;label&quot;:&quot;Rufener_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mefloquine_Rattanapunya2015_reference&quot;,&quot;label&quot;:&quot;Rattanapunya_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rufener2018_reference&quot;,&quot;label&quot;:&quot;Rufener_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mefloquine — `Mefloquine_Mim2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 15:30 UTC (Rejected), but the paper was screened again on 2026-10-07 07:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Mefloquine's inter-compartmental clearance and central volume parameters lack valid SI values, and the model includes an unreachable artesunate-to-dihydroartemisinin link.
+> The model was rejected because the inter-compartmental clearance unit was misclassified as volume, and a linked artesunate metabolite path remained unlinked to the mefloquine structure.
 
-<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Mim2026_reference" status="rejected" stale="true" population="P. berghei-infected mice" measured-compound="mefloquine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Mim2026_reference" status="rejected" stale="false" population="P. berghei-infected mice" measured-compound="mefloquine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Mim SR, Vieira Santos V, Pereira LC, Pica K, Miranda ALLdS, Quadros HC et al. Pharmacokinetic and pharmacodynamic modeling of anti-plasmodial drugs mefloquine plus artesunate: insights on translational application. Antimicrobial agents and chemotherapy 70(3):e0171725 (2026).
@@ -44,7 +44,7 @@ Mim SR, Vieira Santos V, Pereira LC, Pica K, Miranda ALLdS, Quadros HC et al. Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Mim SR, Vieira Santos V, Pereira LC, Pica K, Miranda ALLdS, Quadros HC et al. Ph
 
 ### Reviewer guidance
 
-**Mefloquine's inter-compartmental clearance and central volume parameters lack valid SI values, and the model includes an unreachable artesunate-to-dihydroartemisinin link.**
+**The model was rejected because the inter-compartmental clearance unit was misclassified as volume, and a linked artesunate metabolite path remained unlinked to the mefloquine structure.**
 
-The inter-compartmental clearance (Q) and central volume (V1) parameters have missing or null values in the review record, indicating a failure to extract valid SI data. Additionally, the model structure links artesunate to dihydroartemisinin, but this metabolite has no path from the mefloquine dose. The presence of an unknown link parameter type for the hydrolysis reaction further compromises the structural integrity of the model. Extracted — mefloquine: kabs 24.4 1/h, CL 258 CL, V1 1.92e+03 mL/kg, Q 1.7e+04 mL/h/kg.
+The inter-compartmental clearance (16954.46 mL/h/kg) was recorded with a unit dimension of volume ([length] ** 3) instead of flow ([length] ** 3 / [time]), creating a fundamental structural inconsistency. Additionally, the record defines a hydrolysis link from artesunate to dihydroartemisinin, yet the second reader identified no such links, indicating a structural mismatch where the metabolite pathway is not properly connected to the mefloquine model. The volume of distribution (1921.4 mL/kg) and clearance (258.25) parameters were also flagged as unsupported by the second reader, suggesting these specific parameter values may not be valid for the defined structure. Extracted — mefloquine: kabs 24.4 1/h, CL 258 CL, V1 1.92e+03 mL/kg, Q 1.7e+04 mL/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mefloquine + artesunate (ASMQ, oral), the second reading mefloquine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

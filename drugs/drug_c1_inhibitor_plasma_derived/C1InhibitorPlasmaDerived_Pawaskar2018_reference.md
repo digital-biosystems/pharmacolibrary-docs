@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Pawaskar_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # c1-inhibitor, plasma derived — `C1InhibitorPlasmaDerived_Pawaskar2018_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="simulated" stale="false" population="healthy volunteers and HAE patients" measured-compound="C1-INH functional activity" parameterization="mechanistic" topology="1C"></div>
+> The record was disputed because the second reader could not verify any extracted parameter values or identify the primary analyte for C1-INH functional activity.
+
+<div class="pk-model-meta" hidden drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="needs_review" stale="false" population="healthy volunteers and HAE patients" measured-compound="C1-INH functional activity" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pawaskar D, Tortorici MA, Zuraw B, Craig T, Cicardi M, Longhurst H et al. Population pharmacokinetics of subcutaneous C1-inhibitor for prevention of attacks in patients with hereditary angioedema. Clinical and experimental allergy : journal of the British Society for Allergy and Clinical Immunology 48(10):1325–1332 (2018).
@@ -29,6 +31,8 @@ Pawaskar D, Tortorici MA, Zuraw B, Craig T, Cicardi M, Longhurst H et al. Popula
 <figure class="pk-models-diagram"><img src="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference.svg" alt="C1InhibitorPlasmaDerived_Pawaskar2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean population bioavailability of C1-INH (SC) | Fab | 43 | % |
@@ -44,7 +48,7 @@ Pawaskar D, Tortorici MA, Zuraw B, Craig T, Cicardi M, Longhurst H et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +58,13 @@ Pawaskar D, Tortorici MA, Zuraw B, Craig T, Cicardi M, Longhurst H et al. Popula
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The record was disputed because the second reader could not verify any extracted parameter values or identify the primary analyte for C1-INH functional activity.**
 
-The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is c1 inhibitor plasma derived's own; they describe C1-INH functional activity.
+All parameter values, including the 43% bioavailability and 0.0146 hour-1 absorption rate, were marked as null by the second reader. This disagreement resulted in a low agreement score of 0.176, causing the cross-check to fail. Additionally, the second reader identified the dose compound and primary analyte as unknown, unlike the specific identifiers in the original record. Extracted — C1-INH functional activity: Fab 43 %, CL 1.03 mL/hour/kg, V 0.05 L/kg, kabs 0.0146 hour-1, tmax 59 hours, t1/2z 69 hours.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1-inhibitor (SC), the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has C1-inhibitor (SC), the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -106,26 +110,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.176 (3/17 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
 
 <details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption rate]` | 0.0146 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate]` |  | 0.0146 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 1.03 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` |  | 1.03 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean population bioavailability of c1-inh]` | 43 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean population bioavailability of c1-inh]` |  | 43 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median apparent plasma half-life]` | 69 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median apparent plasma half-life]` |  | 69 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median time to peak concentration]` | 59 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median time to peak concentration]` |  | 59 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 0.05 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 0.05 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | C1-inhibitor (SC) | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | C1-INH functional activity | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate]` | 0.0146 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate]` |  | 0.0146 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 1.03 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 1.03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean population bioavailability of c1-inh]` | 43 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean population bioavailability of c1-inh]` |  | 43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median apparent plasma half-life]` | 69 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median apparent plasma half-life]` |  | 69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median time to peak concentration]` | 59 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median time to peak concentration]` |  | 59 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 0.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 0.05 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | C1-inhibitor (SC) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | C1-INH functional activity | unknown | mismatch |
 
 </details>
 
@@ -154,14 +158,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=C1-INH functional activity) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=C1-INH functional activity) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.176, 0 of 1 reader(s) agree | 0.176 | cross-check disputed by a second reader: verdict disputed, agreement 0.176, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

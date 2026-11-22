@@ -4,11 +4,11 @@
 
 # panitumumab — `Panitumumab_Lobet2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:34 UTC (Rejected), but the paper was screened again on 2026-10-07 18:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance was assigned units of L/day, a dimensionally invalid unit for a pharmacokinetic parameter, causing the record to be rejected.
+> Panitumumab’s intercompartmental clearance Q (0.389 L/day) was rejected for a reported structural-unit mismatch, although the cited dimensions agree.
 
-<div class="pk-model-meta" hidden drug="panitumumab" model-id="Panitumumab_Lobet2026_reference" status="rejected" stale="true" population="adults with localized squamous cell carcinoma of the anus" measured-compound="panitumumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="panitumumab" model-id="Panitumumab_Lobet2026_reference" status="rejected" stale="false" population="adults with localized squamous cell carcinoma of the anus" measured-compound="panitumumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Lobet S, Ternant D, Lepage C, Le Malicot K, Azzopardi N, Dolly A et al. Analysis of the relationship between body composition and the pharmacokinetics of panitumumab in the treatment of localized squamous cell carcinoma of the anus - An ancillary study of the FFCD0904 phase I and II trial. Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie 198:119242 (2026).
@@ -16,7 +16,7 @@ Lobet S, Ternant D, Lepage C, Le Malicot K, Azzopardi N, Dolly A et al. Analysis
 
 ## Population and dosing
 
-**Population:** adults with localized squamous cell carcinoma of the anus · condition localized squamous cell carcinoma of the anus · age group adult · n = &gt;=35.
+**Population:** adults with localized squamous cell carcinoma of the anus · condition localized squamous cell carcinoma of the anus · age group adult.
 
 **Dosing:** 210 mg, iv, multiple, every 14 h.
 
@@ -41,7 +41,7 @@ Lobet S, Ternant D, Lepage C, Le Malicot K, Azzopardi N, Dolly A et al. Analysis
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Lobet S, Ternant D, Lepage C, Le Malicot K, Azzopardi N, Dolly A et al. Analysis
 
 ### Reviewer guidance
 
-**Clearance was assigned units of L/day, a dimensionally invalid unit for a pharmacokinetic parameter, causing the record to be rejected.**
+**Panitumumab’s intercompartmental clearance Q (0.389 L/day) was rejected for a reported structural-unit mismatch, although the cited dimensions agree.**
 
-The total clearance parameter is listed with a value of 0.269 and units of L.day-1. This unit represents volume per time, which is dimensionally inconsistent with clearance that requires volume per time only when concentration is mass/volume, but here the mismatch was flagged specifically against the structural expectation. The review notes a dimension mismatch on this structural parameter as the primary reason for rejection. Extracted — panitumumab: V1 3.66 L, CL 0.269 L.day-1, Q 0.389 L.day-1, V2 2.58 L, Vmax 10.6 mg.day-1, Km 0.401 mg/L.
+The finding cites mg/day, which matches Vmax (10.6 mg/day), whereas Q is recorded as 0.389 L/day; its stated comparison is mass/time against mass/time, so the mismatch is not supported by the dimensions shown. The record also says a reported unit could not be converted to SI, but does not identify which parameter had that unit. Extracted — panitumumab: V1 3.66 L, CL 0.269 L.day-1, Q 0.389 L.day-1, V2 2.58 L, Vmax 10.6 mg.day-1, Km 0.401 mg/L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

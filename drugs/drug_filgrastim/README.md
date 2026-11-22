@@ -30,7 +30,7 @@ Filgrastim is a recombinant granulocyte colony-stimulating factor used to manage
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T6_deviations</sub> | [Nikravesh_2022_reference](drugs/drug_filgrastim/Filgrastim_Nikravesh2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Nikravesh FY et al., Extension of human GCSF serum half-life…, Scientific reports (2022) | [10.1038/s41598-021-04560-6](https://doi.org/10.1038/s41598-021-04560-6) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: cross_check_disputed</sub> | [Nikravesh_2022_reference](drugs/drug_filgrastim/Filgrastim_Nikravesh2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Nikravesh FY et al., Extension of human GCSF serum half-life…, Scientific reports (2022) | [10.1038/s41598-021-04560-6](https://doi.org/10.1038/s41598-021-04560-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Wang_2001_reference](drugs/drug_filgrastim/Filgrastim_Wang2001_reference.md) | — | 1-compartment (no model) | 4 | Wang B et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2001) | [10.1023/a:1011534529622](https://doi.org/10.1023/a:1011534529622) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jiang_2025_reference](drugs/drug_filgrastim/Filgrastim_Jiang2025_reference.md) | — | 2-compartment (no model) | 5 | Jiang X et al., Population Pharmacokinetic-Pharmacodyna…, Clinical and translational… (2025) | [10.1111/cts.70121](https://doi.org/10.1111/cts.70121) |
 
@@ -40,16 +40,6 @@ Filgrastim is a recombinant granulocyte colony-stimulating factor used to manage
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jiang_2025_CD34](drugs/drug_filgrastim/pd_Jiang_2025_CD34.md) | CD34+ cell count ← filgrastim · delayed effect through transit (transduction) compartments | — | Jiang X et al., Population Pharmacokinetic-Pharmacodyna…, Clinical and translational… (2025) | [10.1111/cts.70121](https://doi.org/10.1111/cts.70121) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wang_2001_ANC](drugs/drug_filgrastim/pd_Wang_2001_ANC.md) | absolute neutrophil count ← Filgrastim · indirect response — drug stimulates the production of absolute neutrophil count | model (no simulator) | Wang B et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2001) | [10.1023/a:1011534529622](https://doi.org/10.1023/a:1011534529622) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=filgrastim).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CSF3R (stimulator), ELANE (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

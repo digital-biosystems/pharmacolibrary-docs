@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V08A&quot;,&quot;href&quot;:&quot;atc/V08A.md&quot;},{&quot;label&quot;:&quot;iotalamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_iotalamic_acid/&quot;},{&quot;label&quot;:&quot;Groth_1978 \u00b7 case_5&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IotalamicAcid_Shin2015_reference&quot;,&quot;label&quot;:&quot;Shin_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IotalamicAcid_Shin2015_reference&quot;,&quot;label&quot;:&quot;Shin_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # iotalamic acid — `IotalamicAcid_Groth1978_case_5`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:13 UTC (Rejected), but the paper was screened again on 2026-10-07 23:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sodium iothalamate's central compartment volume is 0.016 ml and its peripheral volume is 0.082 L, both outside the physiological window.
+> The record was rejected because the volume of the central compartment is 0.016 ml, an implausibly small magnitude that falls outside the physiological window.
 
-<div class="pk-model-meta" hidden drug="iotalamic acid" model-id="IotalamicAcid_Groth1978_case_5" status="rejected" stale="true" population="adults with varying renal function" measured-compound="sodium iothalamate" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="iotalamic acid" model-id="IotalamicAcid_Groth1978_case_5" status="rejected" stale="false" population="adults with varying renal function" measured-compound="sodium iothalamate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Groth T, Tengström B. The usefulness of 125I-sodium lothalamate as a GFR-indicator in single intravenous injection tests. Upsala journal of medical sciences 83(1):53–63 (1978).
@@ -43,7 +43,7 @@ Groth T, Tengström B. The usefulness of 125I-sodium lothalamate as a GFR-indica
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Groth T, Tengström B. The usefulness of 125I-sodium lothalamate as a GFR-indica
 
 ### Reviewer guidance
 
-**Sodium iothalamate's central compartment volume is 0.016 ml and its peripheral volume is 0.082 L, both outside the physiological window.**
+**The record was rejected because the volume of the central compartment is 0.016 ml, an implausibly small magnitude that falls outside the physiological window.**
 
-The recorded volume of 0.016 ml for the central compartment is physically implausible for an adult, as is the peripheral compartment volume of 0.082 L. Additionally, the second reader could not verify the 11.5 L extracellular volume or the 11.8 L total volume of distribution listed in the record. Extracted — sodium iothalamate: CLR 107 ml/min, kel 0.024 min−1, V1 0.016 ml, CLint 99 ml/min, Vss 11.8 l, V 11.5 l, V2 0.082 L.
+The central compartment volume is listed as 0.016 ml, a value orders of magnitude smaller than typical human tissue volumes. Additionally, the peripheral compartment is unreachable from the dose, and the renal clearance parameter exhibits a unit dimension conflict. Extracted — sodium iothalamate: CLR 107 ml/min, kel 0.024 min−1, V1 0.016 ml, CLint 99 ml/min, Vss 11.8 l, V 11.5 l, V2 0.082 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clin].parameter_id`: this record has Q3, the second reading Q22; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

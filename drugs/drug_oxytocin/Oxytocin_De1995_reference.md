@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G02A&quot;,&quot;href&quot;:&quot;atc/G02A.md&quot;},{&quot;label&quot;:&quot;oxytocin&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/&quot;},{&quot;label&quot;:&quot;De_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxytocin_De1995_reference&quot;,&quot;label&quot;:&quot;De_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_De1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxytocin_Monks2023_reference&quot;,&quot;label&quot;:&quot;Monks_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_Nielsen2017_reference&quot;,&quot;label&quot;:&quot;Nielsen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxytocin_Monks2023_reference&quot;,&quot;label&quot;:&quot;Monks_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_De1995_reference&quot;,&quot;label&quot;:&quot;De_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_De1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxytocin_Nielsen2017_reference&quot;,&quot;label&quot;:&quot;Nielsen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxytocin — `Oxytocin_De1995_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="oxytocin" model-id="Oxytocin_De1995_reference" status="simulated" stale="false" population="male volunteers" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></div>
+> Oxytocin’s absolute bioavailability has no reported value, so a default was used and the record was held back.
+
+<div class="pk-model-meta" hidden drug="oxytocin" model-id="Oxytocin_De1995_reference" status="needs_review" stale="false" population="male volunteers" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 De Groot AN, Vree TB, Hekster YA, Pesman GJ, Sweep FC, Van Dongen PJ et al. Bioavailability and pharmacokinetics of sublingual oxytocin in male volunteers. The Journal of pharmacy and pharmacology 47(7):571–575 (1995).
@@ -27,6 +29,8 @@ De Groot AN, Vree TB, Hekster YA, Pesman GJ, Sweep FC, Van Dongen PJ et al. Bioa
 <figure class="pk-models-diagram"><img src="drugs/drug_oxytocin/Oxytocin_De1995_reference/Oxytocin_De1995_reference.svg" alt="Oxytocin_De1995_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | distribution half-life | t1/2α | 0.049 | h |
@@ -38,7 +42,7 @@ De Groot AN, Vree TB, Hekster YA, Pesman GJ, Sweep FC, Van Dongen PJ et al. Bioa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ De Groot AN, Vree TB, Hekster YA, Pesman GJ, Sweep FC, Van Dongen PJ et al. Bioa
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Oxytocin’s absolute bioavailability has no reported value, so a default was used and the record was held back.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The bioavailability value is a default, not an estimate from this paper; it affects the simulated profile but is unsupported by the paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disputed the record (agreement 0.769), assigning bioavailability 0.07 and omitting the reported 0.69 h apparent terminal half-life. Extracted — oxytocin: t1/2α 0.049 h, t1/2β 0.33 h, CL 67.1 L h-1, V 33.2 L, t1/2ka 0.45 h, t1/2z 0.69 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 0.07; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -141,14 +145,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=oxytocin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=oxytocin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | cross-check disputed by a second reader: verdict disputed, agreement 0.769, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

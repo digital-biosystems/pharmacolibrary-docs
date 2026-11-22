@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 7.82e-08, model 8.44e-08); ka use library defaults, not estimates from this paper (+1 more).
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 7.82e-08, model 8.44e-08); ka use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_fasted_geometric_mean_cv" status="needs_review" stale="false" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
 
@@ -54,7 +54,7 @@ Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G e
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 7.82e-08, model 8.44e-08); ka use library defaults, not estimates from this paper (+1 more).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 7.82e-08, model 8.44e-08); ka use library defaults, not estimates from this paper (+2 more).**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Cmax and AUCt), so that value has no SI equivalent. Extracted — alectinib: Cmax 54.9 pg/mL, AUCt 644 pg*hour/mL; 2H6-alectinib: CL/F 84.2 L/h, V/F 776 L.
 
@@ -156,7 +156,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=2H6-alectinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
 | T1_cmax | reference | pass | 7.82e-08 | 8.436e-08 | 1.079 | pg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 5.49e-08 | 8.436e-08 | 1.536 | pg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 1.42 | 8.436e-08 |  | unresolved concentration unit (exp '', sim 'kg/m3') |

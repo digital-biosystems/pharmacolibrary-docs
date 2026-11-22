@@ -4,11 +4,11 @@
 
 # tolcapone — `Tolcapone_Jorga2000_non_fluctuator_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:32 UTC (Rejected), but the paper was screened again on 2026-10-06 14:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The hepatic clearance covariate is negative, and the relative bioavailability unit 'F' prevents standard conversion.
+> Tolcapone terminal half-life and covariate effects were misassigned to volume and clearance units, causing dimension mismatches and negative values.
 
-<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_non_fluctuator_model" status="rejected" stale="true" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_non_fluctuator_model" status="rejected" stale="false" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics of tolcapone in parkinsonian patients in dose finding studies. British journal of clinical pharmacology 49(1):39–48 (2000).
@@ -45,7 +45,7 @@ Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics 
 
 ### Reviewer guidance
 
-**The hepatic clearance covariate is negative, and the relative bioavailability unit 'F' prevents standard conversion.**
+**Tolcapone terminal half-life and covariate effects were misassigned to volume and clearance units, causing dimension mismatches and negative values.**
 
-The covariate effect for hepatic protein on clearance is recorded as -0.81, yielding an implausible negative clearance in certain scenarios. The parameter for relative bioavailability, Frel, has a value of 0.88 with the unit 'F', which is not recognized by standard unit conversions. Consequently, the model could not be validated due to the invalid unit and non-physical parameter value. Extracted — tolcapone: CL 4.8 l h -1, V1 16 l, kabs 0.6 h, tlag 0.4 h, Frel 0.88 F, CLH -0.81 CL, CLR 1.19 CL, V 0.55 V, … (+2).
+The record lists a terminal half-life of 2.82 hours with a volume unit, and covariate effects for protein and creatinine clearance with volume units, creating dimensional conflicts. A covariate effect of -0.81 for hepatic clearance was flagged as an implausible negative clearance contribution. A second reader disagreed with the extracted values for albumin volume, creatinine clearance, and protein clearance, noting these fields as null. Extracted — tolcapone: CL 4.8 l h -1, V1 16 l, kabs 0.6 h, tlag 0.4 h, Frel 0.88 F, CLH -0.81 CL, CLR 1.19 CL, V 0.55 V, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of h albumin: this record has 2.82, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

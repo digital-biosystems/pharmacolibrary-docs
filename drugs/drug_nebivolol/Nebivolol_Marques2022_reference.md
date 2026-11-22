@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nebivolol bioavailability F lacks a paper-derived value, so an unreported default was used for the two-compartment model.
+> Bioavailability F was assigned a placeholder value rather than a study estimate, so the nebivolol model was held back for lack of supported input.
 
 <div class="pk-model-meta" hidden drug="nebivolol" model-id="Nebivolol_Marques2022_reference" status="needs_review" stale="false" population="young and healthy individuals" measured-compound="nebivolol" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,9 +54,9 @@ Marques L, Costa B, Vale N. New Data for Nebivolol after In Silico PK Study: Foc
 
 ### Reviewer guidance
 
-**Nebivolol bioavailability F lacks a paper-derived value, so an unreported default was used for the two-compartment model.**
+**Bioavailability F was assigned a placeholder value rather than a study estimate, so the nebivolol model was held back for lack of supported input.**
 
-The record omits an explicit estimate for F, leaving it to a library placeholder that affects the simulated profile without support from the source data. A second reader identified a bioavailability value of 0.13 for nebivolol, indicating a likely omission during extraction. Additionally, the second reader could not confirm the dose compound or primary analyte, creating uncertainty about the specific substance dosed. Extracted — nebivolol: tlag 0.3 h, kabs 2.06 1/h, CL 0.22 L/h, V1 4.21 L, Q 0.59 L/h, V2 7.12 L.
+The absorption bioavailability (F) for nebivolol was not reported in the source data and thus was not estimated for this model. A generic placeholder was used instead of a paper-specific value, meaning the simulated profile lacks support from the study's findings. Additionally, the second reader disagreed on the identification of the primary analyte, marking the record as disputed. Extracted — nebivolol: tlag 0.3 h, kabs 2.06 1/h, CL 0.22 L/h, V1 4.21 L, Q 0.59 L/h, V2 7.12 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nebivolol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -142,14 +142,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=nebivolol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=nebivolol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;enzalutamide&quot;,&quot;href&quot;:&quot;drugs/drug_enzalutamide/&quot;},{&quot;label&quot;:&quot;Hadigol_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enzalutamide_Hadigol2026_reference&quot;,&quot;label&quot;:&quot;Hadigol_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enzalutamide/Enzalutamide_Hadigol2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enzalutamide_Hadigol2026_reference&quot;,&quot;label&quot;:&quot;Hadigol_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enzalutamide/Enzalutamide_Hadigol2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # enzalutamide — `Enzalutamide_Hadigol2026_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="enzalutamide" model-id="Enzalutamide_Hadigol2026_reference" status="simulated" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="enzalutamide" parameterization="apparent" topology="parent_metabolite"></div>
+> The second reader disagreed on enzalutamide's dose compound and could not find the clearance values of 5.078 L/h for talazoparib in the record.
+
+<div class="pk-model-meta" hidden drug="enzalutamide" model-id="Enzalutamide_Hadigol2026_reference" status="needs_review" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="enzalutamide" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacokinetics Analysis of Talazoparib and Enzalutamide Combination Therapy for Patients With Metastatic Castration-Resistant Prostate Cancer. Journal of clinical pharmacology 66(2):e70125 (2026).
@@ -29,6 +31,8 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 <figure class="pk-models-diagram"><img src="drugs/drug_enzalutamide/Enzalutamide_Hadigol2026_reference/Enzalutamide_Hadigol2026_reference.svg" alt="Enzalutamide_Hadigol2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | θ CLe/Fe (L/h) | CL/F | 0.425 | L/h | 0.74 |
@@ -59,7 +63,7 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.408). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.408). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -69,13 +73,13 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The second reader disagreed on enzalutamide's dose compound and could not find the clearance values of 5.078 L/h for talazoparib in the record.**
 
-The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (fe, body_weight_effect_on_cle_fe, body_weight_effect_on_vce_fe and fm), so that value has no SI equivalent.
+The record includes parameters for talazoparib, a different drug, despite listing enzalutamide as the measured compound. A second reader identified the dose compound and primary analyte as unknown, disagreeing with the recorded enzalutamide. Additionally, the reader reported clearance values of 5.078 L/h and 5.16 L/h that do not match the extracted parameter values. The covariate scenarios for body weight and age were not simulated, leaving the defined effects unexercised. Extracted — enzalutamide: CL/F 0.425 L/h, V/F 25.3 L, Q/F 20.6 L/h, kabs 3.43 1/h, fe 1 Fixed; N-desmethyl enzalutamide: CL 0.286 L/h, V1 44.9 L, Q 9.44 L/h, V2 52.4 L, fm 0.634 Fixed; talazoparib: CL 5.08 L/h, V1/F 14.4 L, Q 15.6 L/h, kabs 0.157 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has enzalutamide, the second reading unknown; it also differs on 28 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -266,19 +270,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_metabolite_built[N-desmethyl enzalutamide] |  | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.044944000000000005, 'CL': 7.944444444444444e-08, 'formation': 7.484722222222222e-08} | N-desmethyl enzalutamide = compartment M1 with its own numbers |
-| T3_metabolite_output[N-desmethyl enzalutamide] |  | pass |  | 2.17e-06 | C_M1 (N-desmethyl enzalutamide) must rise above 0 when the parent is dosed |
-| T3_molar_mass[N-desmethyl enzalutamide] |  | pass |  | {'MW': 0.46443599999999996, 'MW_m1': 0.45041000000000003} | formation is molecule-for-molecule |
-| T3_output_variable |  | pass | C_central (measured=enzalutamide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 12 scholar param(s) emitted or defaulted | 12 covered | all structural parameters accounted for |
-| T3_shared_parameters |  | skipped |  |  | parent–metabolite template: every compound has its own slot |
-| T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_metabolite_built[N-desmethyl enzalutamide] |  | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.044944000000000005, 'CL': 7.944444444444444e-08, 'formation': 7.484722222222222e-08} |  | N-desmethyl enzalutamide = compartment M1 with its own numbers |
+| T3_metabolite_output[N-desmethyl enzalutamide] |  | pass |  | 2.17e-06 |  | C_M1 (N-desmethyl enzalutamide) must rise above 0 when the parent is dosed |
+| T3_molar_mass[N-desmethyl enzalutamide] |  | pass |  | {'MW': 0.46443599999999996, 'MW_m1': 0.45041000000000003} |  | formation is molecule-for-molecule |
+| T3_output_variable |  | pass | C_central (measured=enzalutamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 12 scholar param(s) emitted or defaulted | 12 covered |  | all structural parameters accounted for |
+| T3_shared_parameters |  | skipped |  |  |  | parent–metabolite template: every compound has its own slot |
+| T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.408, 0 of 1 reader(s) agree | 0.408 | cross-check disputed by a second reader: verdict disputed, agreement 0.408, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

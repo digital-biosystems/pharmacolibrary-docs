@@ -4,11 +4,11 @@
 
 # bendazac — `Bendazac_Valeri1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 16:22 UTC (Rejected), but the paper was screened again on 2026-10-07 01:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="bendazac" model-id="Bendazac_Valeri1985_reference" status="needs_review" stale="true" population="rabbits" measured-compound="bendazac" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bendazac" model-id="Bendazac_Valeri1985_reference" status="needs_review" stale="false" population="rabbits" measured-compound="bendazac" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Valeri P, Palmery M, Tita B, Silvestrini B. Investigations on the ocular pharmacokinetics of bendazac in rabbits. Experimental and molecular pathology 43(3):283–287 (1985).
@@ -38,7 +38,7 @@ Valeri P, Palmery M, Tita B, Silvestrini B. Investigations on the ocular pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Valeri P, Palmery M, Tita B, Silvestrini B. Investigations on the ocular pharmac
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bendazac: t1/2z 2.47 hr.
 
 Independently confirmed by `gpt-oss-120b`.
 

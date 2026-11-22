@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment endoxifen model was rejected because the peripheral compartment is structurally unreachable from the central dose site.
+> Rejected: Z-endoxifen’s 2-compartment structure has an unreachable compartment; abstract-only CL/F 4.89 L/h, V1/F 323 L, and V2/F 39.7 L are summary, not fitted-model estimates.
 
 <div class="pk-model-meta" hidden drug="Endoxifen" model-id="Endoxifen_Koubek2022_reference" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="Z-endoxifen" parameterization="apparent" topology="2C"></div>
 
@@ -46,11 +46,11 @@ Koubek EJ, Ralya AT, Larson TR, McGovern RM, Buhrow SA, Covey JM et al. Populati
 
 ### Reviewer guidance
 
-**The two-compartment endoxifen model was rejected because the peripheral compartment is structurally unreachable from the central dose site.**
+**Rejected: Z-endoxifen’s 2-compartment structure has an unreachable compartment; abstract-only CL/F 4.89 L/h, V1/F 323 L, and V2/F 39.7 L are summary, not fitted-model estimates.**
 
-The record derives from abstract-only data, so the reported clearance of 4.89 L/h and volumes of 323 L and 39.7 L serve as static placeholders rather than fitted model estimates. This abstract-based extraction resulted in a structural topology where the peripheral volume is disconnected from the dosing compartment. Consequently, the pharmacokinetic model failed to define a valid path for drug distribution into the second compartment. Extracted — endoxifen: CL/F 4.89 L/h, V1/F 323 L, V2/F 39.7 L.
+Only the abstract was read, so the reported summary statistics stand in for a fitted model: CL/F is 4.89 L/h, V1/F is 323 L, and V2/F is 39.7 L for Z-endoxifen. The structure also has a compartment or metabolite with no path from the dose. Extracted — endoxifen: CL/F 4.89 L/h, V1/F 323 L, V2/F 39.7 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

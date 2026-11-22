@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;sulbactam&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/&quot;},{&quot;label&quot;:&quot;Abouelhassan_2024_2 \u00b7 100_mg_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_100_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_100_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_100_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sulbactam_Onita2025_reference&quot;,&quot;label&quot;:&quot;Onita_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Onita2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_10_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_200_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_200_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_200_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Cammarata2025_reference&quot;,&quot;label&quot;:&quot;Cammarata_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Cammarata2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Jaruratanasirikul2019_reference&quot;,&quot;label&quot;:&quot;Jaruratanasirikul_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Jaruratanasirikul2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_&quot;,&quot;label&quot;:&quot;Yokoyama_2014 \u00b7 killing effect of sulbactam (log 10 CFU of the A. baumannii per thigh or lung at 24 h)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_&quot;,&quot;label&quot;:&quot;Yokoyama_2014 \u00b7 killing effect of sulbactam (log 10 CFU of the A. baumannii per thigh or lung at 24 h)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulbactam_Onita2025_reference&quot;,&quot;label&quot;:&quot;Onita_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Onita2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_100_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_100_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_100_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_10_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_200_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_200_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_200_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Cammarata2025_reference&quot;,&quot;label&quot;:&quot;Cammarata_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Cammarata2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Jaruratanasirikul2019_reference&quot;,&quot;label&quot;:&quot;Jaruratanasirikul_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Jaruratanasirikul2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_&quot;,&quot;label&quot;:&quot;Yokoyama_2014 \u00b7 killing effect of sulbactam (log 10 CFU of the A. baumannii per thigh or lung at 24 h)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_&quot;,&quot;label&quot;:&quot;Yokoyama_2014 \u00b7 killing effect of sulbactam (log 10 CFU of the A. baumannii per thigh or lung at 24 h)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sulbactam — `Sulbactam_Abouelhassan2024v2_100_mg_kg`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Abouelhassan2024v2_100_mg_kg" status="simulated" stale="false" population="healthy volunteers" measured-compound="sulbactam" parameterization="apparent" topology="1C"></div>
+> cross_check_disputed; x1_cross_check.
+
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Abouelhassan2024v2_100_mg_kg" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sulbactam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Abouelhassan Y, Kuti JL, Nicolau DP, Abdelraouf K. Pharmacokinetic/pharmacodynamic analysis of sulbactam against. JAC-antimicrobial resistance 6(6):dlae203 (2024).
@@ -31,6 +33,8 @@ Abouelhassan Y, Kuti JL, Nicolau DP, Abdelraouf K. Pharmacokinetic/pharmacodynam
 <figure class="pk-models-diagram"><img src="drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_100_mg_kg/Sulbactam_Abouelhassan2024v2_100_mg_kg.svg" alt="Sulbactam_Abouelhassan2024v2_100_mg_kg diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | V c/F (L/kg) | V/F | 0.49 | L/kg |
@@ -41,7 +45,7 @@ Abouelhassan Y, Kuti JL, Nicolau DP, Abdelraouf K. Pharmacokinetic/pharmacodynam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +55,13 @@ Abouelhassan Y, Kuti JL, Nicolau DP, Abdelraouf K. Pharmacokinetic/pharmacodynam
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**cross_check_disputed; x1_cross_check.**
 
-A reported unit could not be converted (AUCt), so that value has no SI equivalent.
+A reported unit could not be converted (AUCt), so that value has no SI equivalent. Extracted — sulbactam: V/F 0.49 L/kg, kabs 8.64 1/h, kel 0.52 1/h, AUCt 385 h.mg/L, AUC ratio 0.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ampicillin-sulbactam, the second reading sulbactam. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,16 +141,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
-| T3_output_variable | pass | C_central (measured=sulbactam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=sulbactam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | cross-check disputed by a second reader: verdict disputed, agreement 0.889, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

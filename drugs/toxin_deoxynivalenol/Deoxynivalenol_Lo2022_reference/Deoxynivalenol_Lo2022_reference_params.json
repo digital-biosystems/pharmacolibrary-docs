@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   28000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Lo_2022:other_prose",
+    "value_si": 51.93
+   },
+   {
+    "source": "Lo_2022:other_prose",
+    "value_si": 34.39
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "MM": 0.29631,

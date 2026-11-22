@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;rimegepant&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/&quot;},{&quot;label&quot;:&quot;Comisar_2025_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rimegepant_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rimegepant_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The apparent clearance, volume, and flow parameters for rimegepant were rejected due to double correction of bioavailability.
+> Rimegepant’s apparent clearance, CL/F, of 24.1 L/h was refused because its apparent-parameter values were flagged for double correction.
 
 <div class="pk-model-meta" hidden drug="rimegepant" model-id="Rimegepant_Comisar2025v2_reference" status="rejected" stale="false" population="healthy adults, elderly, adults with renal or hepatic dysfunction, Japanese and Chinese adults" measured-compound="rimegepant" parameterization="apparent" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Comisar CM, Hughes JH, Francis J, Chinda Y, Sano Y, Muto C et al. Population Pha
 
 ## Population and dosing
 
-**Population:** healthy adults, elderly, adults with renal or hepatic dysfunction, Japanese and Chinese adults · condition healthy; migraine; renal or hepatic impairment · age group adult · n = ,"n_subjects":"349","condition":"healthy; migraine; renal or hepatic impairment","species":"human","compounds":[{"name":"rimegepant","role":"parent","dosed":"yes","measured":"yes","has_parameters":"yes"}],"links":null}.
+**Population:** healthy adults, elderly, adults with renal or hepatic dysfunction, Japanese and Chinese adults · condition healthy; migraine; renal or hepatic impairment · age group adult.
 
 **Dosing:** 10, 150 mg, oral, multiple.
 
@@ -57,13 +57,13 @@ Comisar CM, Hughes JH, Francis J, Chinda Y, Sano Y, Muto C et al. Population Pha
 
 ### Reviewer guidance
 
-**The apparent clearance, volume, and flow parameters for rimegepant were rejected due to double correction of bioavailability.**
+**Rimegepant’s apparent clearance, CL/F, of 24.1 L/h was refused because its apparent-parameter values were flagged for double correction.**
 
-The record lists clearance (24.1 L/h), central volume (114 L), and inter-compartmental clearance (3.94 L/h) as apparent values adjusted for bioavailability. However, the model also includes a separate relative bioavailability parameter (Frel) with a value of -0.315. This combination violates parameter coherence because the bioavailability effect is corrected twice within the model structure. Extracted — rimegepant: CL/F 24.1 L/h, V1/F 114 L, V2/F 46 L, Q/F 3.94 L/h, ktr 8.23 h−1, kabs 3.86 h−1, Frel -0.315 F1.
+The record reports CL/F as total clearance adjusted for bioavailability, and the finding identifies double correction of apparent parameters. A reported unit could not be converted to SI, so its parameter reached the model builder without an SI value. The second reader assigns −0.706 to the fed effect on transit absorption, whereas this record assigns it to a fed-state covariate effect whose pharmacokinetic target is not specified; the second reader also reports a 0.191 dose effect on relative bioavailability that is absent from this record. Extracted — rimegepant: CL/F 24.1 L/h, V1/F 114 L, V2/F 46 L, Q/F 3.94 L/h, ktr 8.23 h−1, kabs 3.86 h−1, Frel -0.315 F1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose effect on f1: this record has none, the second reading 0.191; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

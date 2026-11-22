@@ -34,7 +34,7 @@ Sulfuric acid is a highly corrosive strong mineral acid with the molecular formu
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Brès_1985_N_A](drugs/toxin_sulfuric_acid/pd_Br_s_1985_N_A.md) | not applicable ← sulfuric_acid · model not identified | — | Brès J et al., [Metabolism of beta-adrenergic substanc…, Bulletin europeen de physio… (1985) | — |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.00).">human + animal</span> | [Brès_1985_N_A](drugs/toxin_sulfuric_acid/pd_Br_s_1985_N_A.md) | not applicable ← sulfuric_acid · model not identified | — | Brès J et al., [Metabolism of beta-adrenergic substanc…, Bulletin europeen de physio… (1985) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

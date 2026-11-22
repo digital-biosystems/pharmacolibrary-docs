@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
-> Tolbutamide absorption parameters were set to library defaults because the source paper reported no estimates for the absorption rate constant or lag time.
+> The record for tolbutamide was held back because the absorption rate constant was left at library defaults rather than being reported in the source paper.
 
 <div class="pk-model-meta" hidden drug="tolbutamide" model-id="Tolbutamide_Shi2021_reference" status="needs_review" stale="false" population="" measured-compound="tolbutamide" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Shi Y, Meng D, Wang S, Geng P, Xu T, Zhou Q et al. Effects of Avitinib on CYP450
 
 ### Reviewer guidance
 
-**Tolbutamide absorption parameters were set to library defaults because the source paper reported no estimates for the absorption rate constant or lag time.**
+**The record for tolbutamide was held back because the absorption rate constant was left at library defaults rather than being reported in the source paper.**
 
-The record lists only apparent oral clearance and volume of distribution, omitting any fitted values for the absorption rate constant or lag time. Consequently, the model builder used standard library defaults for these absorption properties. The model was held for review because these unreported values were not explicitly justified as standard conventions in the source text. Extracted — tolbutamide: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
+The primary clearance and volume of distribution values (1.23 L/h/kg and 1.48 L/kg) appear in the text, but no specific absorption parameters were provided by the authors. Consequently, the absorption rate constant and lag time were substituted with generic library placeholders to complete the one-compartment structure. Additionally, a second reader disagreed with the extracted values for two specific quantitative fields, preventing full verification of the record's consistency. Extracted — tolbutamide: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 9037.90; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -126,15 +126,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=tolbutamide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=tolbutamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

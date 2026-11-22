@@ -130,30 +130,13 @@ The record lists clearance (1.18 L·h–1), volume of distribution (8.01 L), and
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_heparin/Heparin_Jia2015_reference/Heparin_Jia2015_reference_matlab.zip" download>Heparin_Jia2015_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_heparin/Heparin_Jia2015_reference/Heparin_Jia2015_reference_matlab_simbio.zip" download>Heparin_Jia2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_heparin/Heparin_Jia2015_reference/Heparin_Jia2015_reference_sbml.zip" download>Heparin_Jia2015_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_heparin/Heparin_Jia2015_reference/Heparin_Jia2015_reference_cellml.zip" download>Heparin_Jia2015_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Jia Z, Tian G, Ren Y, Sun Z, Lu W, Hou X. Pharmacokinetic model of unfractionated heparin during and after cardiopulmonary bypass in cardiac surgery. Journal of translational medicine 13:45 (2015). [doi:10.1186/s12967-015-0404-5](https://doi.org/10.1186/s12967-015-0404-5)
-
-**This record:** Pharmacolibrary, model `Heparin_Jia2015_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_heparin/Heparin_Jia2015_reference>
-
-```bibtex
-@misc{pharmacolibrary_HeparinJia2015reference,
-  title  = {{Pharmacolibrary model Heparin_Jia2015_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_heparin/Heparin_Jia2015_reference},
-  note   = {Parameters from doi:10.1186/s12967-015-0404-5},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

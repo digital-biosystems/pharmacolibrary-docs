@@ -4,11 +4,11 @@
 
 # prenylamine — `Prenylamine_Paar1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-06 10:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the AUC parameter for the (+)-enantiomer has a dimension mismatch, listing a percentage value instead of concentration-time units.
+> Record rejected because prenylamine AUC of the (+)-enantiomer is recorded as 20% instead of a concentration-time integral.
 
-<div class="pk-model-meta" hidden drug="prenylamine" model-id="Prenylamine_Paar1990_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="prenylamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prenylamine" model-id="Prenylamine_Paar1990_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="prenylamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Paar WD, Brockmeier D, Hirzebruch M, Schmidt EK, von Unruh GE, Dengler HJ. Pharmacokinetics of prenylamine racemate and enantiomers in man. Arzneimittel-Forschung 40(6):657–661 (1990).
@@ -37,7 +37,7 @@ Paar WD, Brockmeier D, Hirzebruch M, Schmidt EK, von Unruh GE, Dengler HJ. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Paar WD, Brockmeier D, Hirzebruch M, Schmidt EK, von Unruh GE, Dengler HJ. Pharm
 
 ### Reviewer guidance
 
-**The record is rejected because the AUC parameter for the (+)-enantiomer has a dimension mismatch, listing a percentage value instead of concentration-time units.**
+**Record rejected because prenylamine AUC of the (+)-enantiomer is recorded as 20% instead of a concentration-time integral.**
 
-The AUC of the (+)-enantiomer is recorded as 20 % rather than appropriate concentration-time units, creating a dimensional inconsistency. The relative bioavailability is also listed as 82.2 %, which is standard for that parameter but highlights the unit ambiguity in this abstract-only record. The second reader disagreed on the identification of this parameter, noting a null value for its specific record entry. Extracted — prenylamine: t1/2z 14.1 h, CL 5.8 l/min, Frel 82.2 %, Fab 15 %, AUC 20 %.
+The parameter labelled as the area under the concentration-time curve of the (+)-enantiomer is given a value of 20% rather than a standard mass/time volume unit. This creates a dimensional conflict because a percentage is dimensionless while the area under the curve requires units of mass times time divided by volume. The second reader also flagged this entry, noting the value in this record where their extraction yielded no value. Extracted — prenylamine: t1/2z 14.1 h, CL 5.8 l/min, Frel 82.2 %, Fab 15 %, AUC 20 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc of (+)-enantiomer: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

@@ -16,7 +16,7 @@ Shi J, Kovacs SJ, Wang Y, Ludden TM, Bhargava VO. Population pharmacokinetics of
 
 ## Population and dosing
 
-**Population:** pediatric subjects with polyarticular course juvenile rheumatoid arthritis · age group mixed · n = condition.
+**Population:** pediatric subjects with polyarticular course juvenile rheumatoid arthritis · age group mixed.
 
 **Dosed compound ≠ measured compound:** dosed leflunomide, measured tereflunomide.
 

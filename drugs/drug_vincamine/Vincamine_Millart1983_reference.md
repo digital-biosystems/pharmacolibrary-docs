@@ -4,18 +4,18 @@
 
 # vincamine — `Vincamine_Millart1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-06 20:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks volume of distribution and clearance parameters, providing only summary statistics from the abstract instead of a fitted compartmental model.
+> Vincamine’s reported Tmax of 1.4 h-1 is dimensionally inconsistent with a time, and the exposure-only record lacks volume and clearance for a compartmental popPK model.
 
-<div class="pk-model-meta" hidden drug="vincamine" model-id="Vincamine_Millart1983_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="vincamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vincamine" model-id="Vincamine_Millart1983_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="vincamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Millart H, Lamiable D, Houin G, Plat M, Choisy H, Tillement JP. Pharmacokinetic study of two pharmaceutical preparations containing alkaloid vincamine administered orally to human subjects. International journal of clinical pharmacology, therapy, and toxicology 21(11):581–586 (1983).
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Millart H, Lamiable D, Houin G, Plat M, Choisy H, Tillement JP. Pharmacokinetic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +45,13 @@ Millart H, Lamiable D, Houin G, Plat M, Choisy H, Tillement JP. Pharmacokinetic 
 
 ### Reviewer guidance
 
-**The record lacks volume of distribution and clearance parameters, providing only summary statistics from the abstract instead of a fitted compartmental model.**
+**Vincamine’s reported Tmax of 1.4 h-1 is dimensionally inconsistent with a time, and the exposure-only record lacks volume and clearance for a compartmental popPK model.**
 
-Vincamine parameters Tmax (1.4 h-1), Cmax (155 micrograms), and AUC (443 micrograms) are descriptive summary statistics, not structural pharmacokinetic parameters. The absence of volume of distribution and clearance prevents the formation of a valid one-compartment model. A dimension mismatch was also flagged for the structural parameter Tmax. Extracted — vincamine: tmax 1.4 h-1, Cmax 155 micrograms, AUC 443 micrograms.
+Tmax is the time of peak concentration, but its reported unit is h-1; Cmax 155 micrograms is mass rather than concentration, and AUC 443 micrograms is mass rather than concentration-time. No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — vincamine: tmax 1.4 h-1, Cmax 155 micrograms, AUC 443 micrograms.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

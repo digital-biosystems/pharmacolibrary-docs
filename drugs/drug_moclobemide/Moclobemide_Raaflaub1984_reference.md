@@ -5,11 +5,11 @@
 
 # moclobemide — `Moclobemide_Raaflaub1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:48 UTC (Rejected), but the paper was screened again on 2026-10-06 23:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is abstract-only, so summary statistics stand in for a fitted model, and a dimension mismatch was found on a structural parameter.
+> The record was rejected because the duration of the zero-order input was recorded as 50 mg, conflicting with the required time unit.
 
-<div class="pk-model-meta" hidden drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="rejected" stale="false" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Raaflaub J, Haefelfinger P, Trautmann KH. Single-dose pharmacokinetics of the MAO-inhibitor moclobemide in man. Arzneimittel-Forschung 34(1):80–82 (1984).
@@ -39,7 +39,7 @@ Raaflaub J, Haefelfinger P, Trautmann KH. Single-dose pharmacokinetics of the MA
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Raaflaub J, Haefelfinger P, Trautmann KH. Single-dose pharmacokinetics of the MA
 
 ### Reviewer guidance
 
-**The record is abstract-only, so summary statistics stand in for a fitted model, and a dimension mismatch was found on a structural parameter.**
+**The record was rejected because the duration of the zero-order input was recorded as 50 mg, conflicting with the required time unit.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A dimension mismatch was found on a structural parameter. For example, the oral bioavailability is recorded as 44%, but the second reader could not confirm this value. Extracted — moclobemide: D1 50 mg, t1/2β 0.79 h, Vss 0.81 l/kg, Fab 44 %, CL 63.5 l/h, tlag 0.202 h.
+The duration of the zero-order input into the dosing compartment was listed with a value of 50 and units of mg. Since this parameter represents a time duration, the mass unit conflicts with the expected time dimension. Additionally, the model was constructed from summary statistics in the abstract rather than fitted data. Extracted — moclobemide: D1 50 mg, t1/2β 0.79 h, Vss 0.81 l/kg, Fab 44 %, CL 63.5 l/h, tlag 0.202 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has moclobemide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

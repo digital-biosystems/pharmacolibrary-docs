@@ -16,7 +16,7 @@ Liu S, Chen P, Zhao Y, Dai G, Sun B, Wang Y et al. Pharmacokinetic and pharmacod
 
 ## Population and dosing
 
-**Population:** healthy Chinese volunteers · condition healthy · age group adult · n = &gt;=18.
+**Population:** healthy Chinese volunteers · condition healthy · age group adult.
 
 **Dosing:** 10 mg, oral, single.
 
@@ -39,7 +39,7 @@ Liu S, Chen P, Zhao Y, Dai G, Sun B, Wang Y et al. Pharmacokinetic and pharmacod
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Liu S, Chen P, Zhao Y, Dai G, Sun B, Wang Y et al. Pharmacokinetic and pharmacod
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — mitiglinide: CL/F 7.8 L/h, V/F 24 L, kabs 9.57 /h, tlag 0.09 h.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -118,7 +118,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 
 _All readers agree on the compared fields of this record._
 

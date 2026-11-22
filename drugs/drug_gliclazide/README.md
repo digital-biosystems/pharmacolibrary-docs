@@ -32,7 +32,7 @@ It is taken by mouth, where it is well absorbed. Gliclazide is listed as a WHO e
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Rojanasthien_2012_reference](drugs/drug_gliclazide/Gliclazide_Rojanasthien2012_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Rojanasthien N et al., Bioequivalence study of modified-releas…, ISRN pharmacology (2012) | [10.5402/2012/375134](https://doi.org/10.5402/2012/375134) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Mim_2023_reference](drugs/drug_gliclazide/Gliclazide_Mim2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Mim SR et al., Optimal dosing of gliclazide-A model-ba…, Basic & clinical pharmacolo… (2023) | [10.1111/bcpt.13868](https://doi.org/10.1111/bcpt.13868) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Mim_2023_reference](drugs/drug_gliclazide/Gliclazide_Mim2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Mim SR et al., Optimal dosing of gliclazide-A model-ba…, Basic & clinical pharmacolo… (2023) | [10.1111/bcpt.13868](https://doi.org/10.1111/bcpt.13868) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: split column 'intersubject variability' is a table statistic/structure column,…</sub> | [Frey_2003_intersubject_variability](drugs/drug_gliclazide/Gliclazide_Frey2003_intersubject_variability.md) | — | 1-compartment (no model) | 4 | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: split column 'parameters' is a table statistic/structure column, not a study po…</sub> | [↳ parameters](drugs/drug_gliclazide/Gliclazide_Frey2003_parameters.md) | — | 1-compartment (no model) | 5 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: split column 'residual variability' is a table statistic/structure column, not…</sub> | [↳ residual_variability](drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability.md) | — | 1-compartment (no model) | 4 |  |  |
@@ -44,20 +44,6 @@ It is taken by mouth, where it is well absorbed. Gliclazide is listed as a WHO e
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Frey_2003_FPG](drugs/drug_gliclazide/pd_Frey_2003_FPG.md) | fasting plasma glucose (FPG) ← gliclazide AUC · delayed effect through an effect compartment | ▶ model + simulator | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Frey_2003_disease_progression](drugs/drug_gliclazide/pd_Frey_2003_disease_progression.md) | disease progression ← none · disease-progression model | — | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gliclazide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ABCC8 (binder), VEGFA (other/unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,7 +57,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:16 | 1:29 | 2/4/0 | 1/0/0 | 0/0/0 | 68,522/5,483 | einfracz / qwen3.8-27b | 11 | 2/1 | 3/0 | 0 |
+| 2026-10-07 21:16 | 1:29 | 2/4/0 | 1/1/0 | 0/0/0 | 68,522/5,483 | einfracz / qwen3.8-27b | 11 | 2/1 | 3/0 | 0 |
 
 ## Coverage
 

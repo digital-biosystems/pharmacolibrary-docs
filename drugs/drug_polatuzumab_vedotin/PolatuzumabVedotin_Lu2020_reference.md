@@ -4,11 +4,11 @@
 
 # polatuzumab vedotin — `PolatuzumabVedotin_Lu2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:28 UTC (Rejected), but the paper was screened again on 2026-10-07 19:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The formation clearance parameter for the unconjugated MMAE metabolite lacks a defined unit, creating a dimensional mismatch that invalidated the model structure.
+> Formation clearance of unconjugated MMAE from acMMAE was rejected for a unit dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Lu2020_reference" status="rejected" stale="true" population="patients with non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Lu2020_reference" status="rejected" stale="false" population="patients with non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Lu D, Lu T, Gibiansky L, Li X, Li C, Agarwal P et al. Integrated Two-Analyte Population Pharmacokinetic Model of Polatuzumab Vedotin in Patients With Non-Hodgkin Lymphoma. CPT: pharmacometrics & systems pharmacology 9(1):48–59 (2020).
@@ -51,7 +51,7 @@ Lu D, Lu T, Gibiansky L, Li X, Li C, Agarwal P et al. Integrated Two-Analyte Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.535). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.535). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,9 +61,9 @@ Lu D, Lu T, Gibiansky L, Li X, Li C, Agarwal P et al. Integrated Two-Analyte Pop
 
 ### Reviewer guidance
 
-**The formation clearance parameter for the unconjugated MMAE metabolite lacks a defined unit, creating a dimensional mismatch that invalidated the model structure.**
+**Formation clearance of unconjugated MMAE from acMMAE was rejected for a unit dimension mismatch.**
 
-The record specifies a formation clearance value of 3.70 for the conversion of acMMAE to unconjugated MMAE but omits the corresponding unit for this structural parameter. Consequently, the system could not convert the value to standard units, leaving the parameter without a valid SI value for the model. This dimensional inconsistency in the metabolism link was the primary cause for the rejection of the record. Extracted — acMMAE: kel 0.0046 1/h, CL 0.00623 L/hour, V1 3.15 L, V2 3.98 L, Q 0.0145 L/hour, Vmax 0.0203 ng/mL/hour, Km 0.604 ng/mL; unconjugated MMAE: V1 82.2 L, CL 1.89 L/hour, Q 36.3 L/hour, V2 200 L, Vmax 0.0307 ng/mL/hour, Css 0.581 ng/mL, CLfm 3.7.
+The formation clearance parameter has a value of 3.70 but lacks a specified unit. The recorded units for the maximum metabolism rate of acMMAE conflict with dimensional requirements. Second readers disagree on the parent compound identity and several parameter values. Extracted — acMMAE: kel 0.0046 1/h, CL 0.00623 L/hour, V1 3.15 L, V2 3.98 L, Q 0.0145 L/hour, Vmax 0.0203 ng/mL/hour, Km 0.604 ng/mL; unconjugated MMAE: V1 82.2 L, CL 1.89 L/hour, Q 36.3 L/hour, V2 200 L, Vmax 0.0307 ng/mL/hour, Css 0.581 ng/mL, CLfm 3.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polatuzumab_vedotin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 

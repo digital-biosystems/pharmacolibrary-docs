@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;sildenafil&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/&quot;},{&quot;label&quot;:&quot;Cochius-den_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sildenafil_Cochiusden2020_reference&quot;,&quot;label&quot;:&quot;Cochius-den_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sildenafil_Cochiusden2020_reference&quot;,&quot;label&quot;:&quot;Cochius-den_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sildenafil — `Sildenafil_Cochiusden2020_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Cochiusden2020_reference" status="simulated" stale="false" population="" measured-compound="sildenafil" parameterization="mechanistic" topology="2C"></div>
+> The record was held back because a second reader disputed the clearance value of 6.7 L/h and other parameter extractions for sildenafil.
+
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Cochiusden2020_reference" status="needs_review" stale="false" population="" measured-compound="sildenafil" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Cochius-den Otter SCM, Kipfmueller F, de Winter BCM, Allegaert K, Tibboel D, Mueller A et al. Pharmacokinetic modeling of intravenous sildenafil in newborns with congenital diaphragmatic hernia. European journal of clinical pharmacology 76(2):219–227 (2020).
@@ -27,6 +29,8 @@ Cochius-den Otter SCM, Kipfmueller F, de Winter BCM, Allegaert K, Tibboel D, Mue
 <figure class="pk-models-diagram"><img src="drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference/Sildenafil_Cochiusden2020_reference.svg" alt="Sildenafil_Cochiusden2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL sildenafil (L/h) | CL | 6.7 | L/h |
@@ -36,7 +40,7 @@ Cochius-den Otter SCM, Kipfmueller F, de Winter BCM, Allegaert K, Tibboel D, Mue
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Cochius-den Otter SCM, Kipfmueller F, de Winter BCM, Allegaert K, Tibboel D, Mue
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held back because a second reader disputed the clearance value of 6.7 L/h and other parameter extractions for sildenafil.**
+
+The second reader disagreed on the total clearance, providing 5.2 instead of the recorded 6.7 L/h, and the intercompartmental clearance, citing 221 instead of the recorded 44.3 L/h. Additional discrepancies include the central volume of distribution, where the reader suggested 115 L rather than 75.1 L. Consequently, the agreement score was 0.25, with 0 of 1 readers agreeing with the current values. Extracted — sildenafil: CL 6.7 L/h, V1 75.1 L, V2 10 L, Q 44.3 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 6.7, the second reading 5.2; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -122,14 +128,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=sildenafil) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=sildenafil) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

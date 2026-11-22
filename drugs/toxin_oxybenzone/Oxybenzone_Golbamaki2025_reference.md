@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Oxybenzone&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/&quot;},{&quot;label&quot;:&quot;Golbamaki_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxybenzone_Okereke1994_reference&quot;,&quot;label&quot;:&quot;Okereke_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/Oxybenzone_Okereke1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxybenzone_Okereke1994_reference&quot;,&quot;label&quot;:&quot;Okereke_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/Oxybenzone_Okereke1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Oxybenzone's volume of distribution is 3 mL, an implausibly small value likely from a unit error, violating the clearance/volume physiological window.
 
 <div class="pk-model-meta" hidden drug="Oxybenzone" model-id="Oxybenzone_Golbamaki2025_reference" status="rejected" stale="false" population="healthy American subjects (simulated population of 500)" measured-compound="Oxybenzone" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,7 +47,13 @@ Golbamaki N, Moustié A, Hewitt NJ, Lereaux G, Burbank M, Ben Yahya EM et al. A 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Oxybenzone's volume of distribution is 3 mL, an implausibly small value likely from a unit error, violating the clearance/volume physiological window.**
+
+The model specifies a volume of distribution of 3 mL for oxybenzone, which is physiologically unrealistic for a systemic drug. This magnitude fails the clearance/volume plausibility check, indicating a probable unit or scale extraction error. The associated clearance of 0.4 L/h combined with this minute volume results in an invalid parameter set. Extracted — oxybenzone: t1/2z 856 min, CL 0.4 L/h, V 3 mL.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

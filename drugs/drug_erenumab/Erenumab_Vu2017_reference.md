@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;erenumab&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/&quot;},{&quot;label&quot;:&quot;Vu_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erenumab_FiedlerKelly2019_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vu_2017_DBF&quot;,&quot;label&quot;:&quot;Vu_2017 \u00b7 DBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/pd_Vu_2017_DBF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erenumab_FiedlerKelly2019_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vu_2017_DBF&quot;,&quot;label&quot;:&quot;Vu_2017 \u00b7 DBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/pd_Vu_2017_DBF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # erenumab — `Erenumab_Vu2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-07 06:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Erenumab model rejected because the absorption rate constant's unit could not be converted to standard units, preventing dimension checks.
+> The absorption rate constant for erenumab was recorded with incorrect units, causing a dimension mismatch, and key clearance values were omitted.
 
-<div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_Vu2017_reference" status="rejected" stale="true" population="healthy and migraine subjects" measured-compound="erenumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_Vu2017_reference" status="rejected" stale="false" population="healthy and migraine subjects" measured-compound="erenumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Vu T, Ma P, Chen JS, de Hoon J, Van Hecken A, Yan L et al. Pharmacokinetic-Pharmacodynamic Relationship of Erenumab (AMG 334) and Capsaicin-Induced Dermal Blood Flow in Healthy and Migraine Subjects. Pharmaceutical research 34(9):1784–1795 (2017).
@@ -44,7 +44,7 @@ Vu T, Ma P, Chen JS, de Hoon J, Van Hecken A, Yan L et al. Pharmacokinetic-Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Vu T, Ma P, Chen JS, de Hoon J, Van Hecken A, Yan L et al. Pharmacokinetic-Pharm
 
 ### Reviewer guidance
 
-**Erenumab model rejected because the absorption rate constant's unit could not be converted to standard units, preventing dimension checks.**
+**The absorption rate constant for erenumab was recorded with incorrect units, causing a dimension mismatch, and key clearance values were omitted.**
 
-The absorption rate parameter was recorded with the unit 'ka', which is not a standard time unit and thus could not be processed. This issue caused a dimension mismatch check to fail on a structural parameter. Additionally, the second reader identified missing parameters, including a receptor degradation rate of 0.22 and a nonspecific linear clearance of 0.214, which were not present in the original record. Extracted — erenumab: V1 4.27 L, Q 3.34 L/day, V2 2.73 L, kabs 0.432 ka, Fab 74 F, KD 18.8 ng/mL, kint 0.0345 1/day, CL 0.0902 L/d.
+The absorption rate constant (ka) is listed with the unit 'ka', which is dimensionless, but a rate constant requires units of 1/[time]. Additionally, the second reader identified a nonspecific linear clearance of 0.214 and a receptor degradation rate of 0.22 that are missing from the extracted parameters. Extracted — erenumab: V1 4.27 L, Q 3.34 L/day, V2 2.73 L, kabs 0.432 ka, Fab 74 F, KD 18.8 ng/mL, kint 0.0345 1/day, CL 0.0902 L/d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central cl: this record has 0.0902, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

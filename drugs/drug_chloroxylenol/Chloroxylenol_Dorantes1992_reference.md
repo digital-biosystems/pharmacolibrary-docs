@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> The record for chloroxylenol was held back because the abstract-only derivation used steady-state volume distribution in place of central volume.
+> Chloroxylenol parameter extraction from the abstract was disputed by a second reader who identified no values or dose compound.
 
 <div class="pk-model-meta" hidden drug="chloroxylenol" model-id="Chloroxylenol_Dorantes1992_reference" status="needs_review" stale="false" population="healthy mongrel dogs" measured-compound="chloroxylenol" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Dorantes A, Stavchansky S. Pharmacokinetic and metabolic disposition of p-chloro
 
 ### Reviewer guidance
 
-**The record for chloroxylenol was held back because the abstract-only derivation used steady-state volume distribution in place of central volume.**
+**Chloroxylenol parameter extraction from the abstract was disputed by a second reader who identified no values or dose compound.**
 
-The single-compartment model was parameterized using Vss (22.4 L) as the distribution volume because no central volume was reported. This substitution allows AUC and terminal half-life to be reproduced but fails to capture the early distribution phase. The second reader disagreed with the extracted parameter values and classification, reporting them as unknown rather than mechanistic. Extracted — chloroxylenol: t1/2z 1.84 hr, MRT 1.69 hr, Vss 22.4 liters, CL 14.6 liters/hr, Fab 21 %.
+The record relies on summary statistics from the paper's abstract rather than a fitted model, leading to a low agreement score of 0.133. The second reader disagreed that the dose compound was chloroxylenol and marked all extracted parameters, including elimination half-life and clearance, as unknown. Additionally, the reviewer contested the model's mechanistic parameterization and the specific values reported for bioavailability and volume of distribution. Extracted — chloroxylenol: t1/2z 1.84 hr, MRT 1.69 hr, Vss 22.4 liters, CL 14.6 liters/hr, Fab 21 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has chloroxylenol (PCMX), the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -147,14 +147,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=chloroxylenol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=chloroxylenol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

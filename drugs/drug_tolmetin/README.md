@@ -33,28 +33,15 @@ Tolmetin is a non-steroidal anti-inflammatory drug in the heterocyclic acetic ac
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Migdalof_1976_reference](drugs/drug_tolmetin/Tolmetin_Migdalof1976_reference.md) | — | 1-compartment (no model) | 1 | Migdalof BH et al., The time course of tolmetin and its met…, Drug metabolism and disposi… (1976) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Migdalof_1976_reference](drugs/drug_tolmetin/Tolmetin_Migdalof1976_reference.md) | — | 1-compartment (no model) | 1 | Migdalof BH et al., The time course of tolmetin and its met…, Drug metabolism and disposi… (1976) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Selley_1975_reference](drugs/drug_tolmetin/Tolmetin_Selley1975_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Selley ML et al., Pharmacokinetic studies of tolmetin in…, Clinical pharmacology and t… (1975) | [10.1002/cpt1975175599](https://doi.org/10.1002/cpt1975175599) |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sabater_1992_reference](drugs/drug_tolmetin/Tolmetin_Sabater1992_reference.md) | — | 1-compartment (no model) | 2 | Sabater J et al., Pharmacokinetic study of tolmetin in th…, Arzneimittel-Forschung (1992) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sabater_1992_reference](drugs/drug_tolmetin/Tolmetin_Sabater1992_reference.md) | — | 1-compartment (no model) | 2 | Sabater J et al., Pharmacokinetic study of tolmetin in th…, Arzneimittel-Forschung (1992) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Flores-Murrieta_1998_antinociceptive_effect](drugs/drug_tolmetin/pd_Flores_Murrieta_1998_antinociceptive_effect.md) | antinociceptive effect ← tolmetin · indirect response — drug inhibits the production of antinociceptive effect | ▶ model + simulator | Flores-Murrieta FJ et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1998) | [10.1023/a:1023273100270](https://doi.org/10.1023/a:1023273100270) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tolmetin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MPO (inhibitor), PTGS1 (inhibitor), PTGS2 (inhibitor), TDO2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -74,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 2
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dexamethasone model simulation predicts a peak concentration of 3.57e-07, far below the paper's reported 2.75e-05.
+> The dexamethasone model's simulated peak concentration is 100-fold lower than the paper's reported value, and the second reader could not confirm any extracted parameter.
 
 <div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Calderin2025_reference" status="needs_review" stale="false" population="adults with HIV-associated tuberculous meningitis" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Calderin JM, Resendiz-Galvan JE, Abdelgawad N, Davis A, Stek C, Wiesner L et al.
 
 ## Population and dosing
 
-**Population:** adults with HIV-associated tuberculous meningitis · condition tuberculous meningitis · age group adult · n = &gt;=43.
+**Population:** adults with HIV-associated tuberculous meningitis · condition tuberculous meningitis · age group adult.
 
 **Dosing:** 0.4 mg/kg/day, oral, multiple, every 12 h.
 
@@ -52,9 +52,9 @@ Calderin JM, Resendiz-Galvan JE, Abdelgawad N, Davis A, Stek C, Wiesner L et al.
 
 ### Reviewer guidance
 
-**Dexamethasone model simulation predicts a peak concentration of 3.57e-07, far below the paper's reported 2.75e-05.**
+**The dexamethasone model's simulated peak concentration is 100-fold lower than the paper's reported value, and the second reader could not confirm any extracted parameter.**
 
-The simulated maximum concentration is 0.013 times the expected value, indicating a severe mismatch in exposure. The model builder assumed absolute bioavailability (F) to be 1.0, which likely distorts the apparent volume and clearance relative to the observed data. This assumption was flagged as an unacceptable deviation from the original report. Extracted — dexamethasone: V/F 26.6 L, CL/F 131 L/h, kabs 0.773 day -1, tlag 0.29 h.
+The model predicted a Cmax of 3.57e-07 kg/m3, while the paper reports 2.75e-05 kg/m3. The second reader disputed the verdict, assigning 'unknown' to the dose compound and primary analyte. They also listed all extracted parameters, including CL/F (131 L/h) and V/F (26.6 L), as null. Extracted — dexamethasone: V/F 26.6 L, CL/F 131 L/h, kabs 0.773 day -1, tlag 0.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dexamethasone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -153,7 +153,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=dexamethasone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 2.75e-05 | 3.57e-07 | 0.013 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 3.47e-05 | 3.57e-07 | 0.0103 | mg/L→SI vs simulated kg/m3 |
 

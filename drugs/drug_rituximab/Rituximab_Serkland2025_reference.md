@@ -5,11 +5,11 @@
 
 # rituximab — `Rituximab_Serkland2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 19:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The extracted clearance value of 0.075 1/day is dimensionally inconsistent with the one-compartment structural model.
+> The total clearance parameter for rituximab carries units of per-day, conflicting with its required volume-over-time dimension.
 
-<div class="pk-model-meta" hidden drug="rituximab" model-id="Rituximab_Serkland2025_reference" status="rejected" stale="true" population="treatment-naïve patients with relapsing-remitting multiple sclerosis" measured-compound="rituximab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rituximab" model-id="Rituximab_Serkland2025_reference" status="rejected" stale="false" population="treatment-naïve patients with relapsing-remitting multiple sclerosis" measured-compound="rituximab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Serkland TT, Skrede S, Hallin EI, Myhr KM, Torkildsen Ø, Röblitz S. Pharmacokinetic-pharmacodynamic modelling in a clinical pilot study of rituximab in multiple sclerosis: Towards personalized dosing interval. British journal of clinical pharmacology 91(10):2988–2997 (2025).
@@ -17,7 +17,7 @@ Serkland TT, Skrede S, Hallin EI, Myhr KM, Torkildsen Ø, Röblitz S. Pharmacoki
 
 ## Population and dosing
 
-**Population:** treatment-naïve patients with relapsing-remitting multiple sclerosis · condition multiple sclerosis · age group adult · n = &gt;=13.
+**Population:** treatment-naïve patients with relapsing-remitting multiple sclerosis · condition multiple sclerosis · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Serkland TT, Skrede S, Hallin EI, Myhr KM, Torkildsen Ø, Röblitz S. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Serkland TT, Skrede S, Hallin EI, Myhr KM, Torkildsen Ø, Röblitz S. Pharmacoki
 
 ### Reviewer guidance
 
-**The extracted clearance value of 0.075 1/day is dimensionally inconsistent with the one-compartment structural model.**
+**The total clearance parameter for rituximab carries units of per-day, conflicting with its required volume-over-time dimension.**
 
-The review flagged a mismatch between the dimensions of the clearance parameter and the model's structural compartment. Because the record was built from the abstract alone, the summary statistic served as a placeholder for the fitted parameter. A second reader disagreed on the specific compound and dose identity, marking them as unknown rather than rituximab. Extracted — rituximab: CL 0.075 1/day.
+The record lists total clearance as 0.075 per-day, which fails the structural dimension check requiring volume over time. Because the data source was abstract-only, these summary statistics stand in for a fitted model. A second reader disagreed on the dose compound, primary analyte, and the specific clearance and degradation rate values. Extracted — rituximab: CL 0.075 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rituximab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

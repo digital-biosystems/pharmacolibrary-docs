@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;sulbactam&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/&quot;},{&quot;label&quot;:&quot;Jaruratanasirikul_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_100_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_100_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_100_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Onita2025_reference&quot;,&quot;label&quot;:&quot;Onita_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Onita2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_10_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_200_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_200_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_200_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Cammarata2025_reference&quot;,&quot;label&quot;:&quot;Cammarata_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Cammarata2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Jaruratanasirikul2019_reference&quot;,&quot;label&quot;:&quot;Jaruratanasirikul_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Jaruratanasirikul2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_&quot;,&quot;label&quot;:&quot;Yokoyama_2014 \u00b7 killing effect of sulbactam (log 10 CFU of the A. baumannii per thigh or lung at 24 h)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_&quot;,&quot;label&quot;:&quot;Yokoyama_2014 \u00b7 killing effect of sulbactam (log 10 CFU of the A. baumannii per thigh or lung at 24 h)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulbactam_Onita2025_reference&quot;,&quot;label&quot;:&quot;Onita_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Onita2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_100_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_100_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_100_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_10_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Abouelhassan2024v2_200_mg_kg&quot;,&quot;label&quot;:&quot;Abouelhassan_2024_2_200_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Abouelhassan2024v2_200_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Cammarata2025_reference&quot;,&quot;label&quot;:&quot;Cammarata_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Cammarata2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulbactam_Jaruratanasirikul2019_reference&quot;,&quot;label&quot;:&quot;Jaruratanasirikul_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/Sulbactam_Jaruratanasirikul2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_&quot;,&quot;label&quot;:&quot;Yokoyama_2014 \u00b7 killing effect of sulbactam (log 10 CFU of the A. baumannii per thigh or lung at 24 h)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_&quot;,&quot;label&quot;:&quot;Yokoyama_2014 \u00b7 killing effect of sulbactam (log 10 CFU of the A. baumannii per thigh or lung at 24 h)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulbactam/pd_Yokoyama_2014_killing_effect_of_sulbactam_log_10_CFU_of_the_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sulbactam bioavailability and lag time were left at placeholder values because the record was built only from the abstract, so its summary statistics stand in for a fitted model.
+> Sulbactam’s bioavailability (F) was not reported and was defaulted, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Jaruratanasirikul2019_reference" status="needs_review" stale="false" population="patients with ventilator-associated pneumonia" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Jaruratanasirikul S, Nitchot W, Wongpoowarak W, Samaeng M, Nawakitrangsan M. Pop
 
 ## Population and dosing
 
-**Population:** patients with ventilator-associated pneumonia · age group adult · n = &gt;=0.
+**Population:** patients with ventilator-associated pneumonia · age group adult.
 
 ## Model
 
@@ -49,13 +49,13 @@ Jaruratanasirikul S, Nitchot W, Wongpoowarak W, Samaeng M, Nawakitrangsan M. Pop
 
 ### Reviewer guidance
 
-**Sulbactam bioavailability and lag time were left at placeholder values because the record was built only from the abstract, so its summary statistics stand in for a fitted model.**
+**Sulbactam’s bioavailability (F) was not reported and was defaulted, so the record was held back.**
 
-The record lists absorption rate constant (8.28 1/h) and total clearance (6.76 L/h) but leaves bioavailability and lag time as unspecified defaults rather than paper-derived estimates. A second reader could not confirm the absorption rate constant or total clearance values, leaving those parameters unvalidated. Because the model structure and parameter estimates are abstract-only, the simulated profile relies on library placeholders that are not supported by the publication's data. Extracted — sulbactam: V 22.2 L, CL 6.76 L/h, kabs 8.28 1/h.
+Only the paper’s abstract was read, so its summary statistics stood in for a fitted model. The model builder defaulted F and Tlag rather than using explicit estimates; the defaulted F is specifically identified as unacceptable and is unsupported by this paper. A second reader also disagreed with the recorded absorption rate constant of 8.28 1/h and total clearance of 6.76 L/h. Extracted — sulbactam: V 22.2 L, CL 6.76 L/h, kabs 8.28 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k a: this record has 8.28, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -127,14 +127,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=sulbactam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=sulbactam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

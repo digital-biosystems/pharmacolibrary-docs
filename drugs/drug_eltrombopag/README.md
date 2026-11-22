@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;eltrombopag&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Farrell2014_reference&quot;,&quot;label&quot;:&quot;Farrell_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # eltrombopag
 
@@ -25,7 +25,7 @@ Eltrombopag is a thrombopoietin receptor agonist used to treat conditions includ
 
 ## Start here
 
-> **Farrell_2014_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> healthy volunteers and subjects with chronic liver disease, n = &gt;=107. [Run it in the simulator](drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md?tab=Simulation) · [record](drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md)
+> **Gibiansky_2011_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy subjects and patients with chronic idiopathic thrombocytopenic purpura. [Run it in the simulator](drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md?tab=Simulation) · [record](drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,7 +39,7 @@ Eltrombopag is a thrombopoietin receptor agonist used to treat conditions includ
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Farrell_2014_reference](drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Farrell_2014_reference](drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md) | — | 2-compartment (no model) | 7 | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Gibiansky_2011_reference](drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Gibiansky E et al., Population pharmacokinetics of eltrombo…, Journal of clinical pharmac… (2011) | [10.1177/0091270010375427](https://doi.org/10.1177/0091270010375427) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Saleh_2019_reference](drugs/drug_eltrombopag/Eltrombopag_Saleh2019_reference.md) | — | 1-compartment (no model) | 3 | Saleh MI et al., Bayesian Population Pharmacokinetic Mod…, European journal of drug me… (2019) | [10.1007/s13318-018-0490-x](https://doi.org/10.1007/s13318-018-0490-x) |
 
@@ -52,25 +52,6 @@ Eltrombopag is a thrombopoietin receptor agonist used to treat conditions includ
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wu_2015_PLTC](drugs/drug_eltrombopag/pd_Wu_2015_PLTC.md) | platelet count ← eltrombopag · delayed effect through transit (transduction) compartments | — | Wu K et al., Population Pharmacokinetic and Pharmaco…, Clinical therapeutics (2015) | [10.1016/j.clinthera.2015.03.024](https://doi.org/10.1016/j.clinthera.2015.03.024) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhang_2015_PLT](drugs/drug_eltrombopag/pd_Zhang_2015_PLT.md) | platelet counts ← eltrombopag · indirect response — drug stimulates the production of platelet counts | — | Zhang J et al., Modeling and simulation support eltromb…, Pharmaceutical research (2015) | [10.1007/s11095-014-1594-x](https://doi.org/10.1007/s11095-014-1594-x) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Farrell_2014_PLT](drugs/drug_eltrombopag/pd_Farrell_2014_PLT.md) | platelet count ← eltrombopag · indirect response — drug stimulates the production of platelet count | — | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eltrombopag).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | testis | `ABCG2` inhibitor | DrugBank actor |
-| metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2C8` inhibitor/substrate, `SLCO1B1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A3` substrate, `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | small intestine | `UGT1A1` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | `ABCG2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MPL (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -90,7 +71,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 18 matched, 17 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

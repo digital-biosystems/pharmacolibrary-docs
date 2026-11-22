@@ -5,11 +5,11 @@
 
 # nimodipine — `Nimodipine_Seker2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-07 04:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Nimodipine model rejected because the central-peripheral clearance was assigned 200 ml/min, a flow unit, instead of a volume flow rate.
+> Nimodipine parameter Cmax has unit '%' which conflicts with required concentration dimensions in a two-compartment model.
 
-<div class="pk-model-meta" hidden drug="nimodipine" model-id="Nimodipine_Seker2017_reference" status="rejected" stale="true" population="adults with subarachnoid hemorrhage" measured-compound="nimodipine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nimodipine" model-id="Nimodipine_Seker2017_reference" status="rejected" stale="false" population="adults with subarachnoid hemorrhage" measured-compound="nimodipine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Seker F, Hesser J, Brockmann MA, Neumaier-Probst E, Groden C, Schubert R et al. Pharmacokinetic Modeling of Intra-arterial Nimodipine Therapy for Subarachnoid Hemorrhage-Related Cerebral Vasospasm. Clinical neuroradiology 27(2):199–203 (2017).
@@ -37,7 +37,7 @@ Seker F, Hesser J, Brockmann MA, Neumaier-Probst E, Groden C, Schubert R et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Seker F, Hesser J, Brockmann MA, Neumaier-Probst E, Groden C, Schubert R et al. 
 
 ### Reviewer guidance
 
-**Nimodipine model rejected because the central-peripheral clearance was assigned 200 ml/min, a flow unit, instead of a volume flow rate.**
+**Nimodipine parameter Cmax has unit '%' which conflicts with required concentration dimensions in a two-compartment model.**
 
-The structural parameter for central-peripheral clearance was listed with a value of 200 and unit ml/min, creating a dimension mismatch with the required flow rate dimension. This error was identified in a record derived solely from the paper's abstract, where summary statistics substituted for fitted model estimates. A second reader also could not confirm the clearance value of 70 l/h or the maximal concentration of 85%. Extracted — nimodipine: Q 200 ml/min, CL 70 l/h, Cmax 85 %.
+The record lists Cmax as 85 with unit '%', but Cmax is defined as the highest drug concentration, requiring a mass-per-volume unit. The source was abstract-only, so these summary statistics were used instead of fitted parameters. A second reader disagreed on all parameter values, identifying them as null or mislabeled, highlighting the unreliability of the extracted data. Extracted — nimodipine: Q 200 ml/min, CL 70 l/h, Cmax 85 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nimodipine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

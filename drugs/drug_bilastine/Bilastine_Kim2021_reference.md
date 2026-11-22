@@ -17,7 +17,7 @@ Kim C, Lo Re V, Rodriguez M, Lukas JC, Leal N, Campo C et al. Application of a d
 
 ## Population and dosing
 
-**Population:** elderly subjects · condition healthy · age group elderly · n = &gt;=16.
+**Population:** elderly subjects · condition healthy · age group elderly.
 
 ## Model
 

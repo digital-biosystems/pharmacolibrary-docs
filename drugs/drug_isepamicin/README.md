@@ -26,7 +26,7 @@ Isepamicin is an aminoglycoside antibiotic used to treat bacterial infections. I
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Barr_1995_reference](drugs/drug_isepamicin/Isepamicin_Barr1995_reference.md) | — | 1-compartment (no model) | 2 | Barr WH et al., Pharmacokinetics of isepamicin, Journal of chemotherapy (Fl… (1995) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Barr_1995_reference](drugs/drug_isepamicin/Isepamicin_Barr1995_reference.md) | — | 1-compartment (no model) | 2 | Barr WH et al., Pharmacokinetics of isepamicin, Journal of chemotherapy (Fl… (1995) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Fauvelle_2001_reference](drugs/drug_isepamicin/Isepamicin_Fauvelle2001_reference.md) | — | 1-compartment (no model) | 1 | Fauvelle F et al., Comparison of two methods to obtain a d…, Fundamental & clinical phar… (2001) | [10.1046/j.1472-8206.2001.00020.x](https://doi.org/10.1046/j.1472-8206.2001.00020.x) |
 
 <details class="legend">
@@ -47,7 +47,7 @@ Isepamicin is an aminoglycoside antibiotic used to treat bacterial infections. I
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

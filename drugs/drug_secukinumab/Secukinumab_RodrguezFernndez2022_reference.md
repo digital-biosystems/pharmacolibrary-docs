@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Secukinumab bioavailability was assumed to be 1 despite subcutaneous administration, rendering oral clearance estimates physiologically invalid.
+> The secukinumab record was held for review amid a disputed reader assessment; it reports CL/F of 1.38 L/d.
 
 <div class="pk-model-meta" hidden drug="secukinumab" model-id="Secukinumab_RodrguezFernndez2022_reference" status="needs_review" stale="false" population="adults with psoriasis" measured-compound="secukinumab" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Rodríguez-Fernández K, Mangas-Sanjuán V, Merino-Sanjuán M, Martorell-Calatay
 
 ### Reviewer guidance
 
-**Secukinumab bioavailability was assumed to be 1 despite subcutaneous administration, rendering oral clearance estimates physiologically invalid.**
+**The secukinumab record was held for review amid a disputed reader assessment; it reports CL/F of 1.38 L/d.**
 
-The record parameterizes apparent clearance and volume (CL/F, V/F) with bioavailability fixed at 1, an assumption inconsistent with the drug's subcutaneous route. The model builder also defaulted the absorption lag time to a library placeholder. Second readers identified significant disagreements on extracted values, such as 90 versus 0.19 for a specific parameter. Extracted — secukinumab: CL/F 1.38 L/d, V/F 24.9 L, kabs 0.908 day−1.
+The readers disagreed on three extracted values: 0.19 versus 90, and no value versus 37.6 and 11, but the findings do not identify their pharmacokinetic meanings, so they cannot be assigned to named parameters. Tlag was defaulted rather than explicitly estimated; the record also assumes F=1, Fm=1, and no molar correction in its apparent parameterization. The reader assessment had agreement of 0.667, with 0 of 1 reader agreeing. Extracted — secukinumab: CL/F 1.38 L/d, V/F 24.9 L, kabs 0.908 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.19, the second reading 90; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,15 +122,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=secukinumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=secukinumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

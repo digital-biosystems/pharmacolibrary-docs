@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not specify the pharmacodynamic mechanism linking 9-hydroxyfluorene concentrations to the annual change in FEV1/FVC. A linear model estimated a slope of -0.140 %/year, indicating an inhibitory effect on the response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Zhou_2024`
 - **model family:** `linear`
 - **driver:** `not_resolved`

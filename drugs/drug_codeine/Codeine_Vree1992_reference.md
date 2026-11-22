@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Vree_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Guay1988_reference&quot;,&quot;label&quot;:&quot;Guay_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Vree1992_reference" status="needs_review" stale="false" population="human volunteers" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Vree1992_reference" status="needs_review" stale="false" population="healthy human volunteers" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Vree TB, Verwey-van Wissen CP. Pharmacokinetics and metabolism of codeine in humans. Biopharmaceutics & drug disposition 13(6):445–460 (1992).
@@ -25,7 +25,7 @@ Vree TB, Verwey-van Wissen CP. Pharmacokinetics and metabolism of codeine in hum
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,8 +34,7 @@ Vree TB, Verwey-van Wissen CP. Pharmacokinetics and metabolism of codeine in hum
 | label | parameter | value | unit |
 |---|---|---|---|
 | systemic clearance | CL | 2280 | ml/min |
-| Volume of Distribution (L/kg) | V | 3.2 | L/kg |
-| Ka (hour−1) | kabs | 19.3 | hour−1 |
+| mean volume of distribution | V | 6.0 | L/kg |
 | tlapo | tlag | 2.35 | (h) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -52,7 +51,7 @@ Vree TB, Verwey-van Wissen CP. Pharmacokinetics and metabolism of codeine in hum
 
 **This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Dean_2004, Gretler_2020, Persson_1992) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — codeine: CL 2.28e+03 ml/min, V 3.2 L/kg, kabs 19.3 hour−1, tlag 2.35 (h).
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Guay_1987, Persson_1992) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — codeine: CL 2.28e+03 ml/min, V 6 L/kg, tlag 2.35 (h).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has codeine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -63,8 +62,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | systemic clearance | `Q22` · CL | 2280 | ml/min | 3.8e-05 | m3/s | L/h | boundary (0.8) | Vree_1992:other_prose |
-| Volume of Distribution (L/kg) | `Q61` · V | 3.2 | L/kg | 0.224 | m3 | L | review_gapfill (0.7) | Dean_2004:review |
-| Ka (hour−1) | `Q49` · kabs | 19.3 | hour−1 | 0.005361 | 1/s | 1/h | review_gapfill (0.7) | Gretler_2020:review |
+| mean volume of distribution | `Q61` · V | 6.0 | L/kg | 0.42 | m3 | L | review_gapfill (0.7) | Guay_1987:review |
 | tlapo | `Q83` · tlag | 2.35 | (h) | 8460 | s | h | review_gapfill (0.7) | Persson_1992:review |
 
 <details class="legend">
@@ -82,10 +80,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - template fit: none — only the metabolite is modelled — no parent compartment
 - molar mass: none of 2 PubChem candidate(s) is 'morphine-3-glucuronide' (LLM) — left in mass units
 - molar mass: none found for 'morphine-3-glucuronide' — its concentrations stay mass-only
-- gap-filled Q61 (V) from Dean_2004's review values (primary lacked it)
+- gap-filled Q61 (V) from Guay_1987's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Gretler_2020's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Persson_1992's review values (primary lacked it)
 
 **Extraction notes:**
@@ -135,13 +132,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Vree_1992:other_prose'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gretler_2020:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Dean_2004:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Guay_1987:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Persson_1992:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 2280 | ['Vree_1992:other_prose'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 137 L/h | ['Vree_1992:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 224 L | ['Dean_2004:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 420 L | ['Guay_1987:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -175,4 +171,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Vree1992_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Vree1992_reference%0APaper%3A%20Vree_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Vree1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 19:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:58 UTC</sub>

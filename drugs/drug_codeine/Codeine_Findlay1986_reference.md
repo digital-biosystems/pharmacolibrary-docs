@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Findlay_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Guay1988_reference&quot;,&quot;label&quot;:&quot;Guay_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > This paper's disposition core is incomplete; aUC has no unit (+1 more).
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Findlay1986_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="codeine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Findlay1986_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="codeine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Findlay JW, Fowle AS, Butz RF, Jones EC, Weatherley BC, Welch RM et al. Comparative disposition of codeine and pholcodine in man after single oral doses. British journal of clinical pharmacology 22(1):61–71 (1986).
@@ -17,7 +17,7 @@ Findlay JW, Fowle AS, Butz RF, Jones EC, Weatherley BC, Welch RM et al. Comparat
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;10.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 15, 30, 60 mg, oral, single.
 
@@ -25,7 +25,7 @@ Findlay JW, Fowle AS, Butz RF, Jones EC, Weatherley BC, Welch RM et al. Comparat
 
 **Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -37,8 +37,7 @@ Findlay JW, Fowle AS, Butz RF, Jones EC, Weatherley BC, Welch RM et al. Comparat
 | tmax (h) | tmax | 5.8 | h |
 | AUC* (ng ml-1 h) | AUC | 929 | ng ml-1 h |
 | clearance (CL/F) | CL | 1286 | ml min-1 |
-| Volume of Distribution (L/kg) | V | 3.2 | L/kg |
-| Ka (hour−1) | kabs | 19.3 | hour−1 |
+| mean volume of distribution | V | 6.0 | L/kg |
 | tlapo | tlag | 2.35 | (h) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -55,7 +54,7 @@ Findlay JW, Fowle AS, Butz RF, Jones EC, Weatherley BC, Welch RM et al. Comparat
 
 **This paper's disposition core is incomplete; aUC has no unit (+1 more).**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Dean_2004, Gretler_2020, Persson_1992) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — codeine: Cmax 57.1 ng ml-1, tmax 5.8 h, AUC 929 ng ml-1 h, CL 1.29e+03 ml min-1, V 3.2 L/kg, kabs 19.3 hour−1, tlag 2.35 (h).
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Guay_1987, Persson_1992) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — codeine: Cmax 57.1 ng ml-1, tmax 5.8 h, AUC 929 ng ml-1 h, CL 1.29e+03 ml min-1, V 6 L/kg, tlag 2.35 (h).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -69,8 +68,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 | tmax (h) | `Q56` · tmax | 5.8 | h | 2.088e+04 | s | h | exact (1) | Findlay_1986_table_2:row0:col2, Findlay_1986_table_2:row0:col5, Findlay_1986_table_2:row1:col2, Findlay_1986_table_2:row1:col5, Findlay_1986_table_2:row2:col2, Findlay_1986_table_2:row2:col5, Findlay_1986_table_2:row3:col2, Findlay_1986_table_2:row3:col5, Findlay_1986_table_2:row4:col2, Findlay_1986_table_2:row4:col5, Findlay_1986_table_2:row5:col2, Findlay_1986_table_2:row5:col5, Findlay_1986_table_2:row6:col2, Findlay_1986_table_2:row6:col5, Findlay_1986_table_2:row7:col2, Findlay_1986_table_2:row7:col5, Findlay_1986_table_3:row0:col2, Findlay_1986_table_3:row0:col5, Findlay_1986_table_3:row1:col2, Findlay_1986_table_3:row1:col5, Findlay_1986_table_3:row2:col2, Findlay_1986_table_3:row2:col5, Findlay_1986_table_3:row3:col2, Findlay_1986_table_3:row3:col5, Findlay_1986_table_3:row4:col2, Findlay_1986_table_3:row4:col5, Findlay_1986_table_3:row5:col2, Findlay_1986_table_3:row5:col5, Findlay_1986_table_3:row6:col2, Findlay_1986_table_3:row6:col5, Findlay_1986_table_3:row7:col2, Findlay_1986_table_3:row7:col5, Findlay_1986_table_4:row0:col2, Findlay_1986_table_4:row0:col5, Findlay_1986_table_4:row1:col2, Findlay_1986_table_4:row1:col5, Findlay_1986_table_4:row2:col2, Findlay_1986_table_4:row2:col5, Findlay_1986_table_4:row3:col2, Findlay_1986_table_4:row3:col5, Findlay_1986_table_4:row4:col2, Findlay_1986_table_4:row4:col5, Findlay_1986_table_4:row5:col2, Findlay_1986_table_4:row5:col5 |
 | AUC* (ng ml-1 h) | `Q88` · AUC | 929 | ng ml-1 h |  |  | ng/(h·ml) | llm_confirmed (0.6) | Findlay_1986_table_2:row0:col3, Findlay_1986_table_2:row0:col6, Findlay_1986_table_2:row1:col3, Findlay_1986_table_2:row1:col6, Findlay_1986_table_2:row2:col3, Findlay_1986_table_2:row2:col6, Findlay_1986_table_2:row3:col3, Findlay_1986_table_2:row3:col6, Findlay_1986_table_2:row4:col3, Findlay_1986_table_2:row4:col6, Findlay_1986_table_2:row5:col3, Findlay_1986_table_2:row5:col6, Findlay_1986_table_2:row6:col3, Findlay_1986_table_2:row6:col6, Findlay_1986_table_2:row7:col3, Findlay_1986_table_2:row7:col6, Findlay_1986_table_3:row0:col3, Findlay_1986_table_3:row0:col6, Findlay_1986_table_3:row1:col3, Findlay_1986_table_3:row1:col6, Findlay_1986_table_3:row2:col3, Findlay_1986_table_3:row2:col6, Findlay_1986_table_3:row3:col3, Findlay_1986_table_3:row3:col6, Findlay_1986_table_3:row4:col3, Findlay_1986_table_3:row4:col6, Findlay_1986_table_3:row5:col3, Findlay_1986_table_3:row5:col6, Findlay_1986_table_3:row6:col3, Findlay_1986_table_3:row6:col6, Findlay_1986_table_3:row7:col3, Findlay_1986_table_3:row7:col6 |
 | clearance (CL/F) | `Q22` · CL | 1286 | ml min-1 | 2.143e-05 | m3/s | L/h | exact (1) | Findlay_1986:results_prose |
-| Volume of Distribution (L/kg) | `Q61` · V | 3.2 | L/kg | 0.224 | m3 | L | review_gapfill (0.7) | Dean_2004:review |
-| Ka (hour−1) | `Q49` · kabs | 19.3 | hour−1 | 0.005361 | 1/s | 1/h | review_gapfill (0.7) | Gretler_2020:review |
+| mean volume of distribution | `Q61` · V | 6.0 | L/kg | 0.42 | m3 | L | review_gapfill (0.7) | Guay_1987:review |
 | tlapo | `Q83` · tlag | 2.35 | (h) | 8460 | s | h | review_gapfill (0.7) | Persson_1992:review |
 
 <details class="legend">
@@ -95,10 +93,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
 - base model from table(s) without population columns (Findlay_1986:results_prose, Findlay_1986_table_2, Findlay_1986_table_3, Findlay_1986_table_4); populations codeine kept as separate records
-- gap-filled Q61 (V) from Dean_2004's review values (primary lacked it)
+- gap-filled Q61 (V) from Guay_1987's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Gretler_2020's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Persson_1992's review values (primary lacked it)
 
 **Extraction notes:**
@@ -152,15 +149,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Findlay_1986_table_2:row0:col1', 'Findlay_1986_table_2:row0:col4', 'Findlay_1986_table_2:row1:col1', 'Findlay_1986_table_2:row1:col4', 'Findlay_1986_table_2:row2:col1', 'Findlay_1986_table_2:row2:col4', 'Findlay_1986_table_2:row3:col1', 'Findlay_1986_table_2:row3:col4', 'Findlay_1986_table_2:row4:col1', 'Findlay_1986_table_2:row4:col4', 'Findlay_1986_table_2:row5:col1', 'Findlay_1986_table_2:row5:col4', 'Findlay_1986_table_2:row6:col1', 'Findlay_1986_table_2:row6:col4', 'Findlay_1986_table_2:row7:col1', 'Findlay_1986_table_2:row7:col4', 'Findlay_1986_table_3:row0:col1', 'Findlay_1986_table_3:row0:col4', 'Findlay_1986_table_3:row1:col1', 'Findlay_1986_table_3:row1:col4', 'Findlay_1986_table_3:row2:col1', 'Findlay_1986_table_3:row2:col4', 'Findlay_1986_table_3:row3:col1', 'Findlay_1986_table_3:row3:col4', 'Findlay_1986_table_3:row4:col1', 'Findlay_1986_table_3:row4:col4', 'Findlay_1986_table_3:row5:col1', 'Findlay_1986_table_3:row5:col4', 'Findlay_1986_table_3:row6:col1', 'Findlay_1986_table_3:row6:col4', 'Findlay_1986_table_3:row7:col1', 'Findlay_1986_table_3:row7:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gretler_2020:review'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Findlay_1986_table_2:row0:col2', 'Findlay_1986_table_2:row0:col5', 'Findlay_1986_table_2:row1:col2', 'Findlay_1986_table_2:row1:col5', 'Findlay_1986_table_2:row2:col2', 'Findlay_1986_table_2:row2:col5', 'Findlay_1986_table_2:row3:col2', 'Findlay_1986_table_2:row3:col5', 'Findlay_1986_table_2:row4:col2', 'Findlay_1986_table_2:row4:col5', 'Findlay_1986_table_2:row5:col2', 'Findlay_1986_table_2:row5:col5', 'Findlay_1986_table_2:row6:col2', 'Findlay_1986_table_2:row6:col5', 'Findlay_1986_table_2:row7:col2', 'Findlay_1986_table_2:row7:col5', 'Findlay_1986_table_3:row0:col2', 'Findlay_1986_table_3:row0:col5', 'Findlay_1986_table_3:row1:col2', 'Findlay_1986_table_3:row1:col5', 'Findlay_1986_table_3:row2:col2', 'Findlay_1986_table_3:row2:col5', 'Findlay_1986_table_3:row3:col2', 'Findlay_1986_table_3:row3:col5', 'Findlay_1986_table_3:row4:col2', 'Findlay_1986_table_3:row4:col5', 'Findlay_1986_table_3:row5:col2', 'Findlay_1986_table_3:row5:col5', 'Findlay_1986_table_3:row6:col2', 'Findlay_1986_table_3:row6:col5', 'Findlay_1986_table_3:row7:col2', 'Findlay_1986_table_3:row7:col5', 'Findlay_1986_table_4:row0:col2', 'Findlay_1986_table_4:row0:col5', 'Findlay_1986_table_4:row1:col2', 'Findlay_1986_table_4:row1:col5', 'Findlay_1986_table_4:row2:col2', 'Findlay_1986_table_4:row2:col5', 'Findlay_1986_table_4:row3:col2', 'Findlay_1986_table_4:row3:col5', 'Findlay_1986_table_4:row4:col2', 'Findlay_1986_table_4:row4:col5', 'Findlay_1986_table_4:row5:col2', 'Findlay_1986_table_4:row5:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Dean_2004:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Guay_1987:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Persson_1992:review'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ng ml-1 h | ['Findlay_1986_table_2:row0:col3', 'Findlay_1986_table_2:row0:col6', 'Findlay_1986_table_2:row1:col3', 'Findlay_1986_table_2:row1:col6', 'Findlay_1986_table_2:row2:col3', 'Findlay_1986_table_2:row2:col6', 'Findlay_1986_table_2:row3:col3', 'Findlay_1986_table_2:row3:col6', 'Findlay_1986_table_2:row4:col3', 'Findlay_1986_table_2:row4:col6', 'Findlay_1986_table_2:row5:col3', 'Findlay_1986_table_2:row5:col6', 'Findlay_1986_table_2:row6:col3', 'Findlay_1986_table_2:row6:col6', 'Findlay_1986_table_2:row7:col3', 'Findlay_1986_table_2:row7:col6', 'Findlay_1986_table_3:row0:col3', 'Findlay_1986_table_3:row0:col6', 'Findlay_1986_table_3:row1:col3', 'Findlay_1986_table_3:row1:col6', 'Findlay_1986_table_3:row2:col3', 'Findlay_1986_table_3:row2:col6', 'Findlay_1986_table_3:row3:col3', 'Findlay_1986_table_3:row3:col6', 'Findlay_1986_table_3:row4:col3', 'Findlay_1986_table_3:row4:col6', 'Findlay_1986_table_3:row5:col3', 'Findlay_1986_table_3:row5:col6', 'Findlay_1986_table_3:row6:col3', 'Findlay_1986_table_3:row6:col6', 'Findlay_1986_table_3:row7:col3', 'Findlay_1986_table_3:row7:col6'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1286 | ['Findlay_1986:results_prose'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 77.2 L/h | ['Findlay_1986:results_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 224 L | ['Dean_2004:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 420 L | ['Guay_1987:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -194,4 +190,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Findlay1986_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Findlay1986_reference%0APaper%3A%20Findlay_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Findlay1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 19:30 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:52 UTC</sub>

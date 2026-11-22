@@ -37,7 +37,7 @@ Setnikar I, Maurer H. Relative bioavailability of fluoride from monofluorophosph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Setnikar I, Maurer H. Relative bioavailability of fluoride from monofluorophosph
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium fluoride's own; they describe fluoride.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium monofluorophosphate, the second reading multiple (sodium monofluorophosphate, sodium fluoride); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium monofluorophosphate, the second reading multiple (sodium monofluorophosphate, sodium fluoride); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -96,20 +96,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 1.35 |  | only_one_extracted |
-| `gpt-oss:120b` | `model.links` | [] | [['sodium monofluorophosphate', 'fluoride', 'hydrolysis'], ['sodium fluoride', 'fluoride', 'hydrolysis']] | mismatch |
-| `gpt-oss:120b` | `parameters[cmax of fluoride in plasma]` | 439 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[invasion t1/2]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability of fluoride from mfp tablets]` | 1.35 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 1.08 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | sodium monofluorophosphate | multiple (sodium monofluorophosphate, sodium fluoride) | mismatch |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 1.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['sodium monofluorophosphate', 'fluoride', 'hydrolysis'], ['sodium fluoride', 'fluoride', 'hydrolysis']] | mismatch |
+| `gpt-oss-120b` | `parameters[cmax of fluoride in plasma]` | 439 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[invasion t1/2]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability of fluoride from mfp tablets]` | 1.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 1.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium monofluorophosphate | multiple (sodium monofluorophosphate, sodium fluoride) | mismatch |
 
 </details>
 

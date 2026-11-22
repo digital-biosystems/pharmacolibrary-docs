@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Loratadine&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/&quot;},{&quot;label&quot;:&quot;deVries_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Loratadine_Geha2001_reference&quot;,&quot;label&quot;:&quot;Geha_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Geha2001_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Lin1995_reference&quot;,&quot;label&quot;:&quot;Lin_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Lin1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Matzke1990_reference&quot;,&quot;label&quot;:&quot;Matzke_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Matzke1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2003_reference&quot;,&quot;label&quot;:&quot;Zhang_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2003_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_beagles_dl_tablet_10_mg_39&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_beagles_dl_tablet_10_mg_39&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_beagles_dl_tablet_10_mg_39.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_beagles_ltd_tablet_10_mg&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_beagles_ltd_tablet_10_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_beagles_ltd_tablet_10_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_humans_dl_tablet_10_mg_41&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_humans_dl_tablet_10_mg_41&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_humans_dl_tablet_10_mg_41.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_humans_ltd_tablet_10_mg_40&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_reference&quot;,&quot;label&quot;:&quot;Zhang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_deVries2019_reference&quot;,&quot;label&quot;:&quot;deVries_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_deVries2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Loratadine_Hilbert1987_reference&quot;,&quot;label&quot;:&quot;Hilbert_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Hilbert1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Radwanski1987_reference&quot;,&quot;label&quot;:&quot;Radwanski_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Radwanski1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Loratadine_Geha2001_reference&quot;,&quot;label&quot;:&quot;Geha_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Geha2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Lin1995_reference&quot;,&quot;label&quot;:&quot;Lin_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Lin1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Matzke1990_reference&quot;,&quot;label&quot;:&quot;Matzke_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Matzke1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2003_reference&quot;,&quot;label&quot;:&quot;Zhang_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2003_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Hilbert1987_reference&quot;,&quot;label&quot;:&quot;Hilbert_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Hilbert1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Radwanski1987_reference&quot;,&quot;label&quot;:&quot;Radwanski_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Radwanski1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_beagles_dl_tablet_10_mg_39&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_beagles_dl_tablet_10_mg_39&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_beagles_dl_tablet_10_mg_39.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_beagles_ltd_tablet_10_mg&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_beagles_ltd_tablet_10_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_beagles_ltd_tablet_10_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_humans_dl_tablet_10_mg_41&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_humans_dl_tablet_10_mg_41&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_humans_dl_tablet_10_mg_41.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40&quot;,&quot;label&quot;:&quot;Zhang_2021_mean_con_in_humans_ltd_tablet_10_mg_40&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_mean_con_in_humans_ltd_tablet_10_mg_40.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_Zhang2021_reference&quot;,&quot;label&quot;:&quot;Zhang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_Zhang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loratadine_deVries2019_reference&quot;,&quot;label&quot;:&quot;deVries_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_loratadine/Loratadine_deVries2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Loratadine — `Loratadine_deVries2019_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The absorption rate constant (ka) and lag time for loratadine were defaulted to library placeholders because the source paper reported no values, rendering the model unsupported.
 
-<div class="pk-model-meta" hidden drug="Loratadine" model-id="Loratadine_deVries2019_reference" status="extracted" stale="false" population="" measured-compound="loratadine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Loratadine" model-id="Loratadine_deVries2019_reference" status="needs_review" stale="false" population="" measured-compound="loratadine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 deVries T, Dentiste A, Di Lea C, Pichette V, Jacobs D. Effects of Renal Impairment on the Pharmacokinetics of Once-Daily Amantadine Extended-Release Tablets. CNS drugs 33(8):783-789 (2019).
@@ -29,6 +29,8 @@ deVries T, Dentiste A, Di Lea C, Pichette V, Jacobs D. Effects of Renal Impairme
 <figure class="pk-models-diagram"><img src="drugs/toxin_loratadine/Loratadine_deVries2019_reference/Loratadine_deVries2019_reference.svg" alt="Loratadine_deVries2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Oral clearance (L/h) | CL/F | 4.56 | L/h |
@@ -36,7 +38,7 @@ deVries T, Dentiste A, Di Lea C, Pichette V, Jacobs D. Effects of Renal Impairme
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +46,13 @@ deVries T, Dentiste A, Di Lea C, Pichette V, Jacobs D. Effects of Renal Impairme
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The absorption rate constant (ka) and lag time for loratadine were defaulted to library placeholders because the source paper reported no values, rendering the model unsupported.**
+
+The record lacks extracted estimates for the absorption rate constant and lag time, forcing the use of arbitrary library defaults. This violates the requirement that all parameters be either explicitly fitted or justified as standard conventions. Consequently, the simulated concentration-time profile relies on assumptions not supported by the deVries_2019 reference. Extracted — loratadine: CL/F 4.56 L/h, V/F 765 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -85,6 +93,18 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 4.56 L/h | ['deVries_2019:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 765 L | ['deVries_2019:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=loratadine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

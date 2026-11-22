@@ -68,7 +68,7 @@ LD50: 175 mg/kg (Intravenous, Rat)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-16 06:54 | 6:51 | 1/0/0 | 0/1/0 | 0/0/0 | 135,959/6,090 | einfracz / qwen3.8-flash-next | 10 | 0/3 | 10/0 | 0 |
+| 2026-11-16 06:54 | 6:51 | 1/0/0 | 0/5/0 | 0/0/0 | 135,959/6,090 | einfracz / qwen3.8-flash-next | 10 | 0/3 | 10/0 | 0 |
 
 ## Coverage
 

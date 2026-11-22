@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Sodium bromate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumBromate_Bull2012_reference&quot;,&quot;label&quot;:&quot;Bull_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sodium_bromate/SodiumBromate_Bull2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumBromate_Bull2012_reference&quot;,&quot;label&quot;:&quot;Bull_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sodium_bromate/SodiumBromate_Bull2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Sodium bromate
 
@@ -34,7 +34,7 @@ Sodium bromate is a chemical compound of sodium and bromine. It is a strong oxid
 
 ## Start here
 
-> **Bull_2012_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> female F344 rats. [Run it in the simulator](drugs/toxin_sodium_bromate/SodiumBromate_Bull2012_reference.md?tab=Simulation) · [record](drugs/toxin_sodium_bromate/SodiumBromate_Bull2012_reference.md)
+> **Bull_2012_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> female F344 rats. [Run it in the simulator](drugs/toxin_sodium_bromate/SodiumBromate_Bull2012_reference.md?tab=Simulation) · [record](drugs/toxin_sodium_bromate/SodiumBromate_Bull2012_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -42,7 +42,7 @@ Sodium bromate is a chemical compound of sodium and bromine. It is a strong oxid
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bull_2012_reference](drugs/toxin_sodium_bromate/SodiumBromate_Bull2012_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Bull RJ et al., Absorption and disposition of bromate i…, Toxicology (2012) | [10.1016/j.tox.2012.06.002](https://doi.org/10.1016/j.tox.2012.06.002) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bull_2012_reference](drugs/toxin_sodium_bromate/SodiumBromate_Bull2012_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Bull RJ et al., Absorption and disposition of bromate i…, Toxicology (2012) | [10.1016/j.tox.2012.06.002](https://doi.org/10.1016/j.tox.2012.06.002) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

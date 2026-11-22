@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model assumes bioavailability F=1, contradicting the apparent V/F and CL/F parameterization for orally administered cefaclor.
+> A second reader failed to confirm the record because they could not identify cefaclor as the dose compound or primary analyte.
 
 <div class="pk-model-meta" hidden drug="cefaclor" model-id="Cefaclor_Jeong2021_estimate" status="needs_review" stale="false" population="healthy adults" measured-compound="cefaclor" parameterization="apparent" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Jeong SH, Jang JH, Cho HY, Lee YB. Population Pharmacokinetic Analysis of Cefacl
 
 ### Reviewer guidance
 
-**The model assumes bioavailability F=1, contradicting the apparent V/F and CL/F parameterization for orally administered cefaclor.**
+**A second reader failed to confirm the record because they could not identify cefaclor as the dose compound or primary analyte.**
 
-The record lists apparent parameterization with V/F and CL/F values of 22593.260 mL and 27166.883 mL/h. However, the model builder substituted an apparent assumption of F=1 and Fm=1. This specific substitution triggered the deviation check failure, resulting in the needs_review verdict. Extracted — cefaclor: V/F 2.26e+04 mL, CL/F 2.72e+04 mL/h, tlag 0.245 h, kabs 5.2 1/h.
+The review was held back because a second reader disputed the identification of the study's key components. Specifically, the second reader marked the dose compound and the primary analyte as unknown, conflicting with the record's explicit assignment of cefaclor for both. This disagreement on the fundamental identity of the measured and administered molecules prevented consensus on the model's validity. Extracted — cefaclor: V/F 2.26e+04 mL, CL/F 2.72e+04 mL/h, tlag 0.245 h, kabs 5.2 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefaclor, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -147,7 +147,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=cefaclor) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped |  | 0.007073 |  | non-numeric value |
 | T1_cmax | reference | pass | 0.00787 | 0.007073 | 0.8988 | µg/mL→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | skipped |  | 0.4146 |  | non-numeric value |

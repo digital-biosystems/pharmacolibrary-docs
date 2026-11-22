@@ -18,24 +18,11 @@ Potassium chloride is an electrolyte mineral supplement used primarily to treat 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Li_2025_1_dose_administration_group_extended_release_tablets_0_5245_g_and_granules_0_5589_g](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_1_dose_administration_group_extende.md) | — | 1-compartment (no model) | 6 | Li X et al., Plasma pharmacokinetics of the combinat…, Frontiers in cardiovascular… (2025) | [10.3389/fcvm.2025.1636090](https://doi.org/10.3389/fcvm.2025.1636090) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 2_dose_administration_group_extended_release_tablets_1_049_g_and_granules_1_1178_g](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_2_dose_administration_group_extende.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 3_dose_administration_group_extended_release_tablets_1_5735_g_and_granules_1_6767_g](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_3_dose_administration_group_extende.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ literature_1_granules_64_meq](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_literature_1_granules_64_meq.md) | — | 1-compartment (no model) | 4 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ literature_2_granules_50_meq](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_literature_2_granules_50_meq.md) | — | 1-compartment (no model) | 4 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=potassium_chloride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: SLC12A1 (binder), SLC12A1 (substrate), SLC12A2 (substrate), SLC12A2 (unknown), SLC12A4 (substrate), SLC12A4 (unknown), SLC12A5 (substrate), SLC12A5 (unknown), SLC12A6 (substrate), SLC12A6 (unknown), SLC12A7 (substrate), SLC12A7 (unknown).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Li_2025_1_dose_administration_group_extended_release_tablets_0_5245_g_and_granules_0_5589_g](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_1_dose_administration_group_extende.md) | — | 1-compartment (no model) | 6 | Li X et al., Plasma pharmacokinetics of the combinat…, Frontiers in cardiovascular… (2025) | [10.3389/fcvm.2025.1636090](https://doi.org/10.3389/fcvm.2025.1636090) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 2_dose_administration_group_extended_release_tablets_1_049_g_and_granules_1_1178_g](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_2_dose_administration_group_extende.md) | — | 1-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 3_dose_administration_group_extended_release_tablets_1_5735_g_and_granules_1_6767_g](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_3_dose_administration_group_extende.md) | — | 1-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ literature_1_granules_64_meq](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_literature_1_granules_64_meq.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ literature_2_granules_50_meq](drugs/drug_potassium_chloride/PotassiumChloride_Li2025_literature_2_granules_50_meq.md) | — | 1-compartment (no model) | 4 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +42,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 145 matched, 35 returned
 - **screened:** 5  ·  **relevant:** 2
-- **records:** 5  ·  extracted 0  ·  needs review 0  ·  rejected 5  ·  stale 5
+- **records:** 5  ·  extracted 0  ·  needs review 0  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

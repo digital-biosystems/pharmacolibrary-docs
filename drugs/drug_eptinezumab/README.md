@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;eptinezumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eptinezumab_Baker2020_reference&quot;,&quot;label&quot;:&quot;Baker_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eptinezumab_Baker2020_reference&quot;,&quot;label&quot;:&quot;Baker_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # eptinezumab
 
@@ -16,22 +16,7 @@ Eptinezumab is a monoclonal antibody used to prevent migraine episodes in adult 
 
 ## Start here
 
-> **Baker_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with episodic or chronic migraine, n = ,
-    "condition": "episodic or chronic migraine",
-    "species": "human",
-    "compounds": [
-      {
-        "name": "eptinezumab",
-        "role": "parent",
-        "dosed": "yes",
-        "measured": "yes",
-        "has_parameters": "yes"
-      }
-    ],
-    "links": "none"
-  },
-  "links": []
-}. [Run it in the simulator](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md?tab=Simulation) · [record](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md)
+> **Baker_2020_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with episodic or chronic migraine. [Run it in the simulator](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md?tab=Simulation) · [record](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,7 +24,7 @@ Eptinezumab is a monoclonal antibody used to prevent migraine episodes in adult 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
 
 ## Pharmacodynamics (PD)
 
@@ -49,15 +34,6 @@ Eptinezumab is a monoclonal antibody used to prevent migraine episodes in adult 
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Baker_2020_50_migraine_responder_rate_weeks_1_12](drugs/drug_eptinezumab/pd_Baker_2020_50_migraine_responder_rate_weeks_1_12.md) | ≥50% migraine responder rate (weeks 1–12) ← eptinezumab · categorical (graded) response model | — | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Baker_2020_75_migraine_responder_rate_weeks_1_12](drugs/drug_eptinezumab/pd_Baker_2020_75_migraine_responder_rate_weeks_1_12.md) | ≥75% migraine responder rate (weeks 1–12) ← eptinezumab · categorical (graded) response model | — | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Baker_2020_75_migraine_responder_rate_weeks_1_4](drugs/drug_eptinezumab/pd_Baker_2020_75_migraine_responder_rate_weeks_1_4.md) | ≥75% migraine responder rate (weeks 1–4) ← eptinezumab · categorical (graded) response model | — | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eptinezumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CALCA (antibody), CALCA (binder), CALCB (antibody), CALCB (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,13 +47,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:33 | 1:18 | 1/0/0 | 1/0/0 | 0/0/0 | 51,199/4,757 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 06:33 | 1:18 | 1/0/0 | 4/0/0 | 0/0/0 | 51,199/4,757 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

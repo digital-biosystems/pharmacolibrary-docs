@@ -5,11 +5,11 @@
 
 # darbepoetin alfa — `DarbepoetinAlfa_An2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:28 UTC (Rejected), but the paper was screened again on 2026-10-05 20:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant value of 0.062 is assigned incorrect units of L/h instead of h^-1, causing a dimension mismatch.
+> The absorption rate constant was recorded with a clearance unit of L/h instead of the required rate unit of 1/h.
 
-<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_An2017_reference" status="rejected" stale="true" population="infants" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_An2017_reference" status="rejected" stale="false" population="infants" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 An G, Ohls RK, Christensen RD, Widness JA, Mock DM, Veng-Pedersen P. Population Pharmacokinetics of Darbepoetin in Infants Following Single Intravenous and Subcutaneous Dosing. Journal of pharmaceutical sciences 106(6):1644–1649 (2017).
@@ -37,7 +37,7 @@ An G, Ohls RK, Christensen RD, Widness JA, Mock DM, Veng-Pedersen P. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +47,11 @@ An G, Ohls RK, Christensen RD, Widness JA, Mock DM, Veng-Pedersen P. Population 
 
 ### Reviewer guidance
 
-**The absorption rate constant value of 0.062 is assigned incorrect units of L/h instead of h^-1, causing a dimension mismatch.**
+**The absorption rate constant was recorded with a clearance unit of L/h instead of the required rate unit of 1/h.**
 
-The record lists the absorption rate constant as 0.062 with units L/h, whereas this parameter physically requires units of inverse time. Because the record was constructed from the abstract alone, these reported summary statistics stand in for a fitted model. A second reader also failed to identify the dose compound and primary analyte. Extracted — darbepoetin alfa: CL 0.05 L/h/kg, kabs 0.062 L/h, V 16.2 L.
+The record lists the absorption rate constant with a unit of L/h, which conflicts with the dimensional requirement for a first-order rate constant. This unit mismatch invalidates the structural parameter. The record was constructed solely from the abstract, so the summary statistics stand in for fitted model values. Extracted — darbepoetin alfa: CL 0.05 L/h/kg, kabs 0.062 L/h, V 16.2 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,18 +93,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption rate (i.e., ka) of darbe]` | 0.062 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate (i.e., ka) of darbe]` |  | 0.062 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance of darbe]` | 0.05 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance of darbe]` |  | 0.05 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | darbepoetin_alfa | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | darbepoetin_alfa | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate (i.e., ka) of darbe]` | 0.062 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate (i.e., ka) of darbe]` |  | 0.062 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance of darbe]` | 0.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance of darbe]` |  | 0.05 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | darbepoetin_alfa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | darbepoetin_alfa | unknown | mismatch |
 
 </details>
 

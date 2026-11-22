@@ -16,7 +16,7 @@ Agersø H, Overgaard RV, Petersen MB, Hansen L, Hermit MB, Sørensen MH et al. P
 
 ## Population and dosing
 
-**Population:** Cynomolgus monkeys · condition healthy · age group adult · n = &gt;=52.
+**Population:** Cynomolgus monkeys · condition healthy · age group adult.
 
 > **Species: monkey.** This record comes from an animal study (monkey), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -37,7 +37,7 @@ Agersø H, Overgaard RV, Petersen MB, Hansen L, Hermit MB, Sørensen MH et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Agersø H, Overgaard RV, Petersen MB, Hansen L, Hermit MB, Sørensen MH et al. P
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — concizumab: Fab 93 %, CL 0.14 ml/h/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has concizumab, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has concizumab, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -91,19 +91,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[bioavailability]` | 93 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` |  | 93 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 0.14 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` |  | 0.14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[target clearance saturation level]` |  | 0.54 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | concizumab | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | concizumab | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 93 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` |  | 93 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 0.14 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 0.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[target clearance saturation level]` |  | 0.54 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | concizumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | concizumab | unknown | mismatch |
 
 </details>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;phenoxymethylpenicillin&quot;,&quot;href&quot;:&quot;drugs/drug_phenoxymethylpenicillin/&quot;},{&quot;label&quot;:&quot;Rawson_2021 \u00b7 mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenoxymethylpenicillin_Obura2025_reference&quot;,&quot;label&quot;:&quot;Obura_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Obura2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenoxymethylpenicillin_Obura2025_reference&quot;,&quot;label&quot;:&quot;Obura_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenoxymethylpenicillin/Phenoxymethylpenicillin_Obura2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Rawson TM, Wilson RC, Moore LSP, Macgowan AP, Lovering AM, Bayliss M et al. Expl
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;10.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 500 mg, oral, multiple, every 6 h.
 

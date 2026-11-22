@@ -17,7 +17,7 @@ Crass RL, Prem K, Gauderault F, Ribeiro R, Baumal CR, Smith B et al. Population 
 
 ## Population and dosing
 
-**Population:** patients with geographic atrophy or neovascular age-related macular degeneration · condition geographic atrophy or neovascular age-related macular degeneration · age group elderly · n = ,.
+**Population:** patients with geographic atrophy or neovascular age-related macular degeneration · condition geographic atrophy or neovascular age-related macular degeneration · age group elderly.
 
 **Dosing:** 4, 10, 15, 20 mg, intravitreal, multiple, every 720 h.
 

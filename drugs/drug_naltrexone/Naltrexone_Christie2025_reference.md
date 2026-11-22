@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
-> Naltrexone clearance value -1618.0 mL/min/kg is negative and implausible, causing rejection.
+> Naltrexone was rejected because its apparent oral clearance (CL/F) is −1618.0 mL/min/kg, an implausible negative clearance.
 
 <div class="pk-model-meta" hidden drug="naltrexone" model-id="Naltrexone_Christie2025_reference" status="rejected" stale="false" population="" measured-compound="naltrexone" parameterization="apparent" topology="2C"></div>
 
@@ -40,7 +40,7 @@ Christie JT, Bruce M, Pfitzer S, Laubscher L, Raath JP, Laurence M et al. Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Christie JT, Bruce M, Pfitzer S, Laubscher L, Raath JP, Laurence M et al. Pharma
 
 ### Reviewer guidance
 
-**Naltrexone clearance value -1618.0 mL/min/kg is negative and implausible, causing rejection.**
+**Naltrexone was rejected because its apparent oral clearance (CL/F) is −1618.0 mL/min/kg, an implausible negative clearance.**
 
-The apparent total clearance (CL/F) for naltrexone is recorded as -1618.0 mL/min/kg, which is physically impossible. This negative parameter value violates basic pharmacokinetic constraints for a two-compartment model. Although other parameters like volumes show reader discrepancies, the negative clearance is the definitive error. Extracted — naltrexone: CL/F -1.62e+03 mL/ min/kg, V1 89.9 mL/kg, V2 588 mL/ kg, Q 44.6 mL/ min/kg, kabs 0.484 1/ min.
+The record gives naltrexone CL/F as −1618.0 mL/min/kg; the finding identifies this negative clearance as implausible in either a covariate scenario or the base, without specifying which. A second reader disagreed about whether the peripheral volume of distribution, V2, was 588.0 mL/kg or absent. Extracted — naltrexone: CL/F -1.62e+03 mL/ min/kg, V1 89.9 mL/kg, V2 588 mL/ kg, Q 44.6 mL/ min/kg, kabs 0.484 1/ min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 1896, the second reading 1896; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V2: this record has 588, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -81,21 +81,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.765 (13/17 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.941 (16/17 fields) | 1 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q17]` | 1896 | 1896 | mismatch |
-| `gpt-oss-120b` | `values[Q40]` | 0.936 | 0.936 | mismatch |
 | `gpt-oss-120b` | `values[Q64]` | 588 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q74]` | 1452.5 | 1452.5 | mismatch |
 
 </details>
 

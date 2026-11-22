@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Lormetazepam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lormetazepam_Bianconi2022_reference&quot;,&quot;label&quot;:&quot;Bianconi_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Bianconi2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lormetazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lormetazepam_Kurowski1982_reference&quot;,&quot;label&quot;:&quot;Kurowski_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lormetazepam_Bianconi2022_reference&quot;,&quot;label&quot;:&quot;Bianconi_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Bianconi2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lormetazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lormetazepam_Kurowski1982_reference&quot;,&quot;label&quot;:&quot;Kurowski_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Lormetazepam
 
@@ -31,7 +31,7 @@ Lormetazepam (INN, or methyl-lorazepam, is a drug which is a short to intermedia
 
 ## Start here
 
-> **Kurowski_1982_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> Human subjects. [Run it in the simulator](drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md?tab=Simulation) · [record](drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md)
+> **Kurowski_1982_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> Human subjects. [Run it in the simulator](drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md?tab=Simulation) · [record](drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -45,9 +45,9 @@ Lormetazepam (INN, or methyl-lorazepam, is a drug which is a short to intermedia
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bianconi_2022_reference](drugs/toxin_lormetazepam/Lormetazepam_Bianconi2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Bianconi G et al., Marked and prolonged serotonin toxicity…, Clinical toxicology (Philad… (2022) | [10.1080/15563650.2021.1955912](https://doi.org/10.1080/15563650.2021.1955912) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Cavallaro_2026_reference](drugs/toxin_lormetazepam/Lormetazepam_Cavallaro2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Cavallaro G et al., Pharmacological therapy of neonatal ana…, Frontiers in pediatrics (2026) | [10.3389/fped.2026.1757704](https://doi.org/10.3389/fped.2026.1757704) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kurowski_1982_reference](drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md) | ▶ model + simulator | retention, 1 pool | 5 | Kurowski M et al., Relationship between EEG dynamics and p…, Pharmacopsychiatria (1982) | [10.1055/s-2007-1019513](https://doi.org/10.1055/s-2007-1019513) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Bianconi_2022_reference](drugs/toxin_lormetazepam/Lormetazepam_Bianconi2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Bianconi G et al., Marked and prolonged serotonin toxicity…, Clinical toxicology (Philad… (2022) | [10.1080/15563650.2021.1955912](https://doi.org/10.1080/15563650.2021.1955912) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Cavallaro_2026_reference](drugs/toxin_lormetazepam/Lormetazepam_Cavallaro2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Cavallaro G et al., Pharmacological therapy of neonatal ana…, Frontiers in pediatrics (2026) | [10.3389/fped.2026.1757704](https://doi.org/10.3389/fped.2026.1757704) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kurowski_1982_reference](drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md) | ▶ model + simulator | retention, 1 pool | 5 | Kurowski M et al., Relationship between EEG dynamics and p…, Pharmacopsychiatria (1982) | [10.1055/s-2007-1019513](https://doi.org/10.1055/s-2007-1019513) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub> | [le_2024_reference](drugs/toxin_lormetazepam/Lormetazepam_le2024_reference.md) | held back | 1-compartment, oral | 3 | le Noble JLML et al., Pharmacokinetics of Enteral Lormetazepa…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01455-3](https://doi.org/10.1007/s40262-024-01455-3) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Shudofsky_2022_patient_a](drugs/toxin_lormetazepam/Lormetazepam_Shudofsky2022_patient_a.md) | — | general linear (no model) | 9 | Shudofsky KN et al., Clearance of Lormetazepam, Midazolam, a…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2005](https://doi.org/10.1002/jcph.2005) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ patient_b](drugs/toxin_lormetazepam/Lormetazepam_Shudofsky2022_patient_b.md) | — | general linear (no model) | 5 |  |  |
@@ -58,20 +58,6 @@ Lormetazepam (INN, or methyl-lorazepam, is a drug which is a short to intermedia
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lombard_2018_P3_amp](drugs/toxin_lormetazepam/pd_Lombard_2018_P3_amp.md) | P3 amplitude ← lorazepam · inhibition effect | — | Lombard A et al., Population Pharmacokinetic/ Pharmacodyn…, Basic & clinical pharmacolo… (2018) | [10.1111/bcpt.12900](https://doi.org/10.1111/bcpt.12900) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lombard_2018_P3_lat](drugs/toxin_lormetazepam/pd_Lombard_2018_P3_lat.md) | P3 latency ← lorazepam · stimulation effect | — | Lombard A et al., Population Pharmacokinetic/ Pharmacodyn…, Basic & clinical pharmacolo… (2018) | [10.1111/bcpt.12900](https://doi.org/10.1111/bcpt.12900) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lormetazepam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `UGT2B15` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), TSPO (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -85,7 +71,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-18 07:45 | 41:53 | 4/2/0 | 1/0/0 | 0/0/0 | 1,042,844/65,270 | einfracz / qwen3.8-flash-next | 35 | 5/25 | 35/0 | 0 |
+| 2026-11-18 07:45 | 41:53 | 4/2/0 | 2/0/0 | 0/0/0 | 1,042,844/65,270 | einfracz / qwen3.8-flash-next | 35 | 5/25 | 35/0 | 0 |
 
 ## Coverage
 

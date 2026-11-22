@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The gentamicin model was quarantined because clearance and volume of distribution parameters lacked extracted values, forcing the use of library placeholder defaults.
+> Gentamicin’s clearance and volume of distribution have no reported values, so placeholders were used and the model was held back.
 
 <div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_AlbanellFernndez2025_frymoyer_et_al_2014_86" status="model_quarantined" stale="false" population="neonates and infants with no previous pathologies" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Albanell-Fernández M, Rodríguez-Reyes M, Bastida C, Soy D. A Review of Vancomy
 
 ### Reviewer guidance
 
-**The gentamicin model was quarantined because clearance and volume of distribution parameters lacked extracted values, forcing the use of library placeholder defaults.**
+**Gentamicin’s clearance and volume of distribution have no reported values, so placeholders were used and the model was held back.**
 
-The record lists clearance and volume of distribution as parameters but provides no numerical estimates for them. Consequently, the model builder relied on default values rather than specific fitted parameters. A second reader also failed to identify these specific parameter fields, confirming their absence from the extracted data. Extracted — gentamicin: Vnorm 0.603 L/kg.
+No value for gentamicin’s clearance or volume of distribution was extracted; a library placeholder stood in, and the model was held back rather than published with an invented number. The second reader disputed the record, with agreement 0.636 and 0 of 1 reader(s) agreeing, but supplied no alternative parameter values. Extracted — gentamicin: Vnorm 0.603 L/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl equation].parameter_id`: this record has Q22, the second reading Q900; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -174,13 +174,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=dev_001: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | cross-check disputed by a second reader: verdict disputed, agreement 0.636, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

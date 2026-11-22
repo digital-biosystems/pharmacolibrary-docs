@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;alogliptin&quot;,&quot;href&quot;:&quot;drugs/drug_alogliptin/&quot;},{&quot;label&quot;:&quot;Dudkowski_2017 \u00b7 alo_12_5_mg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alogliptin_Dudkowski2017_final_parameter_estimate&quot;,&quot;label&quot;:&quot;Dudkowski_2017_final_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alogliptin_Dudkowski2017_final_parameter_estimate&quot;,&quot;label&quot;:&quot;Dudkowski_2017_final_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Alogliptin's AUCt value of 1570 lacks a unit, preventing use, and its percent-hour unit remains unconverted, while a ratio check failed.
+> AUCt has no unit; c2_base_Q44 failed (ratio 1.153).
 
 <div class="pk-model-meta" hidden drug="alogliptin" model-id="Alogliptin_Dudkowski2017_alo_12_5_mg" status="needs_review" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="2C"></div>
 
@@ -45,7 +45,7 @@ Dudkowski C, Tsai M, Liu J, Zhao Z, Schmidt E, Xie J. The pharmacokinetics and p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +55,13 @@ Dudkowski C, Tsai M, Liu J, Zhao Z, Schmidt E, Xie J. The pharmacokinetics and p
 
 ### Reviewer guidance
 
-**Alogliptin's AUCt value of 1570 lacks a unit, preventing use, and its percent-hour unit remains unconverted, while a ratio check failed.**
+**AUCt has no unit; c2_base_Q44 failed (ratio 1.153).**
 
-The AUCt parameter for alogliptin is recorded as 1570 without a unit, so its value cannot be standardized for modeling. Although the label suggests percent-hours, this unit cannot be converted to standard SI units for calculation. Additionally, a related dimensioned parameter failed a consistency check with a ratio of 1.153. Extracted — alogliptin: AUCt 1.57e+03 %·hr, Cmax 57.9 ng/mL, AUC∞ 789 ng·hr./mL, CL/F 16.2 L/hr, V/F 388 L, t1/2z 16.8 hr, CLR 11.6 L/hr, fe 60.7, … (+1).
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUCt, Cmax and AUC∞), so that value has no SI equivalent. Extracted — alogliptin: AUCt 1.57e+03 %·hr, Cmax 57.9 ng/mL, AUC∞ 789 ng·hr./mL, CL/F 16.2 L/hr, V/F 388 L, t1/2z 16.8 hr, CLR 11.6 L/hr, fe 60.7, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alogliptin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alogliptin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,17 +146,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (10/15 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.667 (10/15 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auec0-24].parameter_id` | Q19 | Q84 | mismatch |
-| `gpt-oss:120b` | `parameters[e24]` |  | 52.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fe]` | 60.713 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | alogliptin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | alogliptin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[auec0-24].parameter_id` | Q19 | Q84 | mismatch |
+| `gpt-oss-120b` | `parameters[e24]` |  | 52.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fe]` | 60.713 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | alogliptin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | alogliptin | unknown | mismatch |
 
 </details>
 

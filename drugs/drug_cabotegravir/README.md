@@ -39,8 +39,8 @@ Cabotegravir is an integrase inhibitor used to treat and prevent HIV infections.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Renou_2026_han_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_han_et_al.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Renou Q et al., External Evaluation of Population Pharm…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70180](https://doi.org/10.1002/psp4.70180) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [↳ thoueille_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Renou_2026_han_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_han_et_al.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Renou Q et al., External Evaluation of Population Pharm…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70180](https://doi.org/10.1002/psp4.70180) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [↳ thoueille_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6258)</sub> | [Thoueille_2024_reference](drugs/drug_cabotegravir/Cabotegravir_Thoueille2024_reference.md) | — | 1-compartment (no model) | 3 | Thoueille P et al., Population Pharmacokinetics of Cabotegr…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3240](https://doi.org/10.1002/cpt.3240) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Han_2024_2_reference](drugs/drug_cabotegravir/Cabotegravir_Han2024v2_reference.md) | — | 1-compartment (no model) | 0 | Han K et al., Population pharmacokinetics of cabotegr…, Antimicrobial agents and ch… (2024) | [10.1128/aac.00880-24](https://doi.org/10.1128/aac.00880-24) |
 
@@ -52,25 +52,6 @@ Cabotegravir is an integrase inhibitor used to treat and prevent HIV infections.
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schneiderman_2022_PVL](drugs/drug_cabotegravir/pd_Schneiderman_2022_PVL.md) | HTLV-1 proviral load ← cabotegravir · inhibition effect | — | Schneiderman BS et al., Cabotegravir, the Long-Acting Integrase…, Frontiers in medicine (2022) | [10.3389/fmed.2022.889621](https://doi.org/10.3389/fmed.2022.889621) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schneiderman_2022_strand_transfer](drugs/drug_cabotegravir/pd_Schneiderman_2022_strand_transfer.md) | HTLV-1 IN strand transfer activity ← cabotegravir · inhibition effect | — | Schneiderman BS et al., Cabotegravir, the Long-Acting Integrase…, Frontiers in medicine (2022) | [10.3389/fmed.2022.889621](https://doi.org/10.3389/fmed.2022.889621) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Smith_2025_Infectivity](drugs/drug_cabotegravir/pd_Smith_2025_Infectivity.md) | HIV-1 vector infectivity (luciferase activity) in single-round infection assay ← cabotegravir · direct sigmoid Emax (Hill) effect | — | Smith SJ et al., Comparative Analyses of Antiviral Poten…, Viruses (2025) | [10.3390/v17010121](https://doi.org/10.3390/v17010121) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cabotegravir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
-| metabolism | liver | `UGT1A1` substrate, `UGT1A9` substrate | DrugBank actor |
-| metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -84,7 +65,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:04 | 8:38 | 3/1/0 | 3/0/0 | 0/0/0 | 440,408/28,768 | ollama / glm-5.3-flash | 13 | 4/9 | 13/0 | 0 |
+| 2026-10-07 16:04 | 8:38 | 3/1/0 | 4/0/0 | 0/0/0 | 440,408/28,768 | ollama / glm-5.3-flash | 13 | 4/9 | 13/0 | 0 |
 
 ## Coverage
 

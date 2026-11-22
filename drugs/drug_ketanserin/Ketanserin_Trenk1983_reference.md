@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ketanserin clearance of 0.39 L/kg/h is missing from the abstract-only record, preventing verification of the model fit.
+> The ketanserin model was held back because the second reader found no values for bioavailability, half-life, clearance, or volume of distribution.
 
 <div class="pk-model-meta" hidden drug="ketanserin" model-id="Ketanserin_Trenk1983_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ketanserin" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Trenk D, Mosler A, Kirch W, Meinertz T, Jähnchen E. Pharmacokinetics and pharma
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = , 10.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -50,9 +50,9 @@ Trenk D, Mosler A, Kirch W, Meinertz T, Jähnchen E. Pharmacokinetics and pharma
 
 ### Reviewer guidance
 
-**Ketanserin clearance of 0.39 L/kg/h is missing from the abstract-only record, preventing verification of the model fit.**
+**The ketanserin model was held back because the second reader found no values for bioavailability, half-life, clearance, or volume of distribution.**
 
-The record relies on abstract summary statistics, such as a total clearance of 0.39 L/kg/h, which were extracted to populate the model. A second reader identified that this clearance value was missing from their review, highlighting uncertainty in the data extraction. The model builder also substituted volume of distribution at steady state for central volume, which affects early distribution modeling. Extracted — ketanserin: t1/2z 15.6 h, CL 0.39 L/kg/h, Vss 3.3 L/kg, Fab 0.51.
+The record relies on abstract-only statistics, such as a bioavailability of 0.51 and a terminal half-life of 15.6 h, but the second reader reported null for all parameters. A cross-check showed an agreement ratio of only 0.231, with zero of one reader agreeing on the findings. Extracted — ketanserin: t1/2z 15.6 h, CL 0.39 L/kg/h, Vss 3.3 L/kg, Fab 0.51.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -136,14 +136,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ketanserin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ketanserin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

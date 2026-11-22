@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;dupilumab&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/&quot;},{&quot;label&quot;:&quot;Kovalenko_2020 \u00b7 population_estimates&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dupilumab_Kovalenko2020_population_estimates&quot;,&quot;label&quot;:&quot;Kovalenko_2020_population_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dupilumab_Takechi2025_reference&quot;,&quot;label&quot;:&quot;Takechi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/Dupilumab_Takechi2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2025_FEV1&quot;,&quot;label&quot;:&quot;Zhang_2025 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/pd_Zhang_2025_FEV1.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dupilumab_Kovalenko2020_population_estimates&quot;,&quot;label&quot;:&quot;Kovalenko_2020_population_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dupilumab_Takechi2025_reference&quot;,&quot;label&quot;:&quot;Takechi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/Dupilumab_Takechi2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2025_FEV1&quot;,&quot;label&quot;:&quot;Zhang_2025 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/pd_Zhang_2025_FEV1.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Dupilumab record refused because bioavailability and lag time were left at library defaults, and covariate effects on clearance and volume were not simulated.
+> Dupilumab absorption fraction and lag time defaulted to library values, and defined covariate effects were not simulated in the model.
 
 <div class="pk-model-meta" hidden drug="dupilumab" model-id="Dupilumab_Kovalenko2020_population_estimates" status="needs_review" stale="false" population="healthy volunteers and patients with moderate‐to‐severe atopic dermatitis" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -64,9 +64,9 @@ Kovalenko P, Davis JD, Li M, Rippley R, Ardeleanu M, Shumel B et al. Base and Co
 
 ### Reviewer guidance
 
-**Dupilumab record refused because bioavailability and lag time were left at library defaults, and covariate effects on clearance and volume were not simulated.**
+**Dupilumab absorption fraction and lag time defaulted to library values, and defined covariate effects were not simulated in the model.**
 
-The record lists covariate effects for body mass index, albumin, and race, but simulations only covered the reference individual, leaving these effects untested. Additionally, bioavailability and lag time parameters were not extracted from the Kovalenko paper, so standard library values were used without explicit justification. Extracted — dupilumab: V 2.74 L, kel 0.0477 1/d, CL 0.13 L/d, kabs 0.548 1/day.
+The bioavailability fraction (F) and lag time (Tlag) were assigned standard defaults rather than values estimated from the paper. Furthermore, although the record defines covariate effects for clearance and volume, the simulation only modeled the reference individual, leaving these structural components untested. Extracted — dupilumab: V 2.74 L, kel 0.0477 1/d, CL 0.13 L/d, kabs 0.548 1/day.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -166,7 +166,8 @@ The record lists covariate effects for body mass index, albumin, and race, but s
 | T3_output_variable |  | pass | C_central (measured=dupilumab) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

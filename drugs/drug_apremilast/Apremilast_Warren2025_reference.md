@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;apremilast&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/&quot;},{&quot;label&quot;:&quot;Warren_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Aprenmilast CL/F value 9.26 l/h was rejected because the model builder assumed full bioavailability, ignoring oral formulation.
+> The second reader disputed the verdict by identifying orismilast instead of apremilast and failing to extract the 9.26 l/h clearance value.
 
 <div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Warren2025_reference" status="needs_review" stale="false" population="atopic dermatitis patients" measured-compound="apremilast" parameterization="apparent" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Warren RB, Weiss A, Felding J, Sommer MOA. Population Pharmacokinetic-Pharmacody
 
 ### Reviewer guidance
 
-**Aprenmilast CL/F value 9.26 l/h was rejected because the model builder assumed full bioavailability, ignoring oral formulation.**
+**The second reader disputed the verdict by identifying orismilast instead of apremilast and failing to extract the 9.26 l/h clearance value.**
 
-The apparent clearance value of 9.26 l/h for apremilast is inconsistent with the absorption rate constant of 1.84 1/h under standard assumptions. The model builder explicitly assumed bioavailability (F) and metabolism (Fm) values of 1, treating the parameterization as apparent. This default assumption contradicts the oral administration context implied by the absorption rate constant. Extracted — apremilast: V/F 118 l, kabs 1.84 1/h, CL/F 9.26 l/h.
+The second reader identified the measured compound as orismilast rather than apremilast, directly conflicting with the primary record. Additionally, the second reader extracted a null value for total clearance, whereas this record specifies 9.26 l/h. Although the model used apparent parameterization with bioavailability set to one, the disagreement on the analyte identity prevented consensus on the review. Extracted — apremilast: V/F 118 l, kabs 1.84 1/h, CL/F 9.26 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apremilast, the second reading orismilast; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -132,17 +132,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=apremilast) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  | 0.0001472 | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.0001472 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=apremilast) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  | 0.0001472 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001472 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

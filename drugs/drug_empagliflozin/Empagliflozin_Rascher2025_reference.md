@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Empagliflozin volume of distribution and absorption lag time had no extracted values, causing the model to be quarantined.
+> Empagliflozin’s reported V2/F of 4.12 L was not captured, and its volume of distribution and absorption lag time lacked estimates, so the model was held back.
 
 <div class="pk-model-meta" hidden drug="empagliflozin" model-id="Empagliflozin_Rascher2025_reference" status="model_quarantined" stale="false" population="paediatric patients aged 10–17 years with type 2 diabetes mellitus" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Rascher J, Cheng S, Johnston C, Härtter S, Jan-Georg W, Marquard J et al. Pharm
 
 ## Population and dosing
 
-**Population:** paediatric patients aged 10–17 years with type 2 diabetes mellitus · condition type 2 diabetes mellitus · age group adolescent · n = ,.
+**Population:** paediatric patients aged 10–17 years with type 2 diabetes mellitus · condition type 2 diabetes mellitus · age group adolescent.
 
 **Dosing:** 10, 25 mg, oral, multiple, every 24 h.
 
@@ -42,7 +42,7 @@ Rascher J, Cheng S, Johnston C, Härtter S, Jan-Georg W, Marquard J et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +52,13 @@ Rascher J, Cheng S, Johnston C, Härtter S, Jan-Georg W, Marquard J et al. Pharm
 
 ### Reviewer guidance
 
-**Empagliflozin volume of distribution and absorption lag time had no extracted values, causing the model to be quarantined.**
+**Empagliflozin’s reported V2/F of 4.12 L was not captured, and its volume of distribution and absorption lag time lacked estimates, so the model was held back.**
 
-The record lacks explicit estimates for volume of distribution and absorption lag time, meaning no values were extracted and library placeholders would have been used. Although the structure describes a three-compartment model with specific values for V3/F (71.7 L) and CL/F (6.74 L/h), these were insufficient to cover all required parameters without defaults. The model was held back rather than published with invented numbers due to these missing values. Extracted — empagliflozin: CL/F 6.74 L/h, V2/F 4.12 L, kabs 0.239 1/h, Q/F 5.51 L/h, V3/F 71.7 L, D1 0.326 h.
+No value for empagliflozin's volume of distribution and absorption lag time. The model was built, but empagliflozin's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Although the record reports V2/F as 4.12 L, that estimate was not captured; the builder also assumed F=1 and Fm=1, with no molar correction. Extracted — empagliflozin: CL/F 6.74 L/h, V2/F 4.12 L, kabs 0.239 1/h, Q/F 5.51 L/h, V3/F 71.7 L, D1 0.326 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -101,15 +101,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | empagliflozin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | empagliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | empagliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | empagliflozin | unknown | mismatch |
 
 </details>
 
@@ -147,6 +147,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

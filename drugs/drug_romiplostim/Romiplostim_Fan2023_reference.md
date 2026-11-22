@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;romiplostim&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/&quot;},{&quot;label&quot;:&quot;Fan_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Perez_Ruixo_2012_PLT&quot;,&quot;label&quot;:&quot;Perez-Ruixo_2012 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/pd_Perez_Ruixo_2012_PLT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # romiplostim — `Romiplostim_Fan2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-05 19:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant for romiplostim has a dimension mismatch, causing the record to be rejected.
+> Romiplostim elimination rate constant kel had unit 'units', causing a dimension mismatch against expected reciprocal time units.
 
-<div class="pk-model-meta" hidden drug="romiplostim" model-id="Romiplostim_Fan2023_reference" status="rejected" stale="true" population="rats with chemotherapy-induced anemia and thrombocytopenia" measured-compound="romiplostim" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="romiplostim" model-id="Romiplostim_Fan2023_reference" status="rejected" stale="false" population="rats with chemotherapy-induced anemia and thrombocytopenia" measured-compound="romiplostim" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fan X, Krzyzanski W, Wong RSM, Liu D, Yan X. Novel Combination of Erythropoietin and Romiplostim to Treat Chemotherapy-Induced Anemia and Thrombocytopenia via Pharmacodynamic Interaction on Hematopoietic Stem and Progenitor Cells. ACS pharmacology & translational science 6(12):1884–1897 (2023).
@@ -40,7 +39,7 @@ Fan X, Krzyzanski W, Wong RSM, Liu D, Yan X. Novel Combination of Erythropoietin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +49,11 @@ Fan X, Krzyzanski W, Wong RSM, Liu D, Yan X. Novel Combination of Erythropoietin
 
 ### Reviewer guidance
 
-**The elimination rate constant for romiplostim has a dimension mismatch, causing the record to be rejected.**
+**Romiplostim elimination rate constant kel had unit 'units', causing a dimension mismatch against expected reciprocal time units.**
 
-The elimination rate constant is reported as 52.94 ×10⁻⁴/h, but its unit is listed simply as 'units', creating a dimension mismatch. This structural parameter failed the consistency check, leading to the record's rejection. Additionally, the record lacks values for the transient parameter and total retention time, which a second reader identified as 106 and 35.13 respectively. Extracted — romiplostim: kel 52.9 units, kabs 0.0269 1/h.
+The elimination rate constant kel (52.94) was recorded with unit 'units' instead of a valid reciprocal time unit, creating a dimensional conflict. Although absorption rate constant kabs (0.0269) had correct units of 1/h, the malformed unit for kel prevented valid SI conversion. Second reader disagreements on parameters tmp and tret were noted but did not alter the fundamental unit error for kel. Extracted — romiplostim: kel 52.9 units, kabs 0.0269 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tmp: this record has none, the second reading 106; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tmp: this record has none, the second reading 106; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -106,14 +105,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[tmp]` |  | 106 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tret]` |  | 35.13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmp]` |  | 106 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tret]` |  | 35.13 | only_one_extracted |
 
 </details>
 

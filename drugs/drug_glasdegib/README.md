@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;glasdegib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_estimate&quot;,&quot;label&quot;:&quot;Lin_2020_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_final_model&quot;,&quot;label&quot;:&quot;Lin_2020_2_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Shaik2021_reference&quot;,&quot;label&quot;:&quot;Shaik_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_final_model&quot;,&quot;label&quot;:&quot;Lin_2020_2_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_estimate&quot;,&quot;label&quot;:&quot;Lin_2020_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Shaik2021_reference&quot;,&quot;label&quot;:&quot;Shaik_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # glasdegib
 
@@ -25,13 +25,13 @@ Glasdegib is a hedgehog pathway inhibitor used to treat newly diagnosed acute my
 
 ## Start here
 
-> **Lin_2020_2_estimate** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with advanced hematologic malignancies and solid tumors, n = 269. [Run it in the simulator](drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md?tab=Simulation) · [record](drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md)
+> **Lin_2020_2_final_model** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with advanced hematologic malignancies and solid tumors, n = 269. [Run it in the simulator](drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md?tab=Simulation) · [record](drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lin_2020_2 · CL/F</text><circle cx="329.0" cy="30.0" r="4" fill="#ef6c00"><title>Lin_2020_2 · CL/F: 6.23 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lin_2020_2 · CL/F</text><circle cx="329.5" cy="46.0" r="4" fill="#ef6c00"><title>Lin_2020_2 · CL/F: 6.27 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Shaik_2021 · CL/F</text><circle cx="368.2" cy="62.0" r="4" fill="#ef6c00"><title>Shaik_2021 · CL/F: 10.43 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shaik_2021 · V/F</text><circle cx="469.6" cy="30.0" r="4" fill="#ef6c00"><title>Shaik_2021 · V/F: 249.3 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lin_2020_2 · V1/F</text><circle cx="250.8" cy="46.0" r="4" fill="#ef6c00"><title>Lin_2020_2 · V1/F: 3.32 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Lin_2020_2 · V1/F</text><circle cx="253.8" cy="62.0" r="4" fill="#ef6c00"><title>Lin_2020_2 · V1/F: 3.52 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lin_2020_2 · CL/F</text><circle cx="329.0" cy="30.0" r="4" fill="#ef6c00"><title>Lin_2020_2 · CL/F: 6.23 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lin_2020_2 · CL/F</text><circle cx="329.5" cy="46.0" r="4" fill="#78909c"><title>Lin_2020_2 · CL/F: 6.27 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Shaik_2021 · CL/F</text><circle cx="368.2" cy="62.0" r="4" fill="#ef6c00"><title>Shaik_2021 · CL/F: 10.43 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shaik_2021 · V/F</text><circle cx="469.6" cy="30.0" r="4" fill="#ef6c00"><title>Shaik_2021 · V/F: 249.3 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lin_2020_2 · V1/F</text><circle cx="250.8" cy="46.0" r="4" fill="#78909c"><title>Lin_2020_2 · V1/F: 3.32 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Lin_2020_2 · V1/F</text><circle cx="253.8" cy="62.0" r="4" fill="#ef6c00"><title>Lin_2020_2 · V1/F: 3.52 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,8 +39,8 @@ Glasdegib is a hedgehog pathway inhibitor used to treat newly diagnosed acute my
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Lin_2020_2_estimate](drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [↳ final_model](drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md) | ▶ model + simulator | 2-compartment, oral | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Lin_2020_2_final_model](drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md) | ▶ model + simulator | 2-compartment, oral | 5 | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [↳ estimate](drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Shaik_2021_reference](drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shaik N et al., Evaluation of the impact of renal impai…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04207-9](https://doi.org/10.1007/s00280-020-04207-9) |
 
 ## Pharmacodynamics (PD)
@@ -48,27 +48,6 @@ Glasdegib is a hedgehog pathway inhibitor used to treat newly diagnosed acute my
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fostvedt_2021_QTcF](drugs/drug_glasdegib/pd_Fostvedt_2021_QTcF.md) | corrected QT interval ← glasdegib · direct linear effect | — | Fostvedt LK et al., Exposure-response modeling of the effec…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1925538](https://doi.org/10.1080/17512433.2021.1925538) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glasdegib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `UGT1A9` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MTOR (inhibitor), SMO (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -88,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs review 3  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

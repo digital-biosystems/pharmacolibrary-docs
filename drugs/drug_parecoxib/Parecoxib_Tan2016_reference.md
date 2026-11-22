@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Parecoxib clearance was missing, and the three-compartment model structure was incompatible with the single-compartment model.
+> Parecoxib clearance lacked a specific value, so a library placeholder was used and the model was held back.
 
 <div class="pk-model-meta" hidden drug="parecoxib" model-id="Parecoxib_Tan2016_reference" status="model_quarantined" stale="false" population="children undergoing tonsillectomy and adenoidectomy" measured-compound="parecoxib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -51,9 +51,9 @@ Tan L, Taylor E, Hannam JA, Salkeld L, Salman S, Anderson BJ. Pharmacokinetics a
 
 ### Reviewer guidance
 
-**Parecoxib clearance was missing, and the three-compartment model structure was incompatible with the single-compartment model.**
+**Parecoxib clearance lacked a specific value, so a library placeholder was used and the model was held back.**
 
-The parent drug clearance parameter was not extracted, forcing the use of a library placeholder rather than the reported 19.1 L/h/70 kg. The record describes a three-compartment disposition for parecoxib, but the model structure only supported one central compartment, causing a structural mismatch. This incompatibility, combined with the missing clearance value, resulted in the model being quarantined. Extracted — parecoxib: CLnorm 19.1 L·h-1 ·70 kg-1, V1 4.2 L·70 kg-1, Q 6.29 L·h-1 ·70 kg-1, V2 130 L·70 kg-1, Q2 6.02 L·h-1 ·70 kg-1, V3 2.03 L·70 kg-1; valdecoxib: CL 9.53 L·h-1 ·70 kg-1, V 51 L·70 kg-1.
+The record lists parecoxib total clearance as 19.1 L·h-1 ·70 kg-1, but this parameter was flagged as defaulted with no explicit estimate. The second reader could not confirm any of the extracted parecoxib parameters, returning null for values including the 19.1 L·h-1 ·70 kg-1 clearance. Consequently, the parent drug’s clearance was not extracted, and the model was quarantined rather than published with an invented number. Extracted — parecoxib: CLnorm 19.1 L·h-1 ·70 kg-1, V1 4.2 L·70 kg-1, Q 6.29 L·h-1 ·70 kg-1, V2 130 L·70 kg-1, Q2 6.02 L·h-1 ·70 kg-1, V3 2.03 L·70 kg-1; valdecoxib: CL 9.53 L·h-1 ·70 kg-1, V 51 L·70 kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has parecoxib, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -151,13 +151,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2'] |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -175,30 +176,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_parecoxib/Parecoxib_Tan2016_reference/Parecoxib_Tan2016_reference_matlab.zip" download>Parecoxib_Tan2016_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_parecoxib/Parecoxib_Tan2016_reference/Parecoxib_Tan2016_reference_matlab_simbio.zip" download>Parecoxib_Tan2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_parecoxib/Parecoxib_Tan2016_reference/Parecoxib_Tan2016_reference_sbml.zip" download>Parecoxib_Tan2016_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_parecoxib/Parecoxib_Tan2016_reference/Parecoxib_Tan2016_reference_cellml.zip" download>Parecoxib_Tan2016_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Tan L, Taylor E, Hannam JA, Salkeld L, Salman S, Anderson BJ. Pharmacokinetics and analgesic effectiveness of intravenous parecoxib for tonsillectomy ± adenoidectomy. Paediatric anaesthesia 26(12):1126–1135 (2016). [doi:10.1111/pan.13009](https://doi.org/10.1111/pan.13009)
-
-**This record:** Pharmacolibrary, model `Parecoxib_Tan2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_parecoxib/Parecoxib_Tan2016_reference>
-
-```bibtex
-@misc{pharmacolibrary_ParecoxibTan2016reference,
-  title  = {{Pharmacolibrary model Parecoxib_Tan2016_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_parecoxib/Parecoxib_Tan2016_reference},
-  note   = {Parameters from doi:10.1111/pan.13009},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

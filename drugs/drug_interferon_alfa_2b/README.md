@@ -24,7 +24,7 @@ Interferon alfa-2b is an immunostimulant interferon used to treat chronic hepati
 
 ## Start here
 
-> **García-García_2016_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy male volunteers, n = : 9. [Run it in the simulator](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md?tab=Simulation) · [record](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md)
+> **García-García_2016_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy male volunteers. [Run it in the simulator](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md?tab=Simulation) · [record](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -32,25 +32,13 @@ Interferon alfa-2b is an immunostimulant interferon used to treat chronic hepati
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [García-García_2016_reference](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharmacology & toxicolo… (2016) | [10.1186/s40360-016-0103-8](https://doi.org/10.1186/s40360-016-0103-8) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [García-García_2016_reference](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharmacology & toxicolo… (2016) | [10.1186/s40360-016-0103-8](https://doi.org/10.1186/s40360-016-0103-8) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Talal_2006_HCV_RNA](drugs/drug_interferon_alfa_2b/pd_Talal_2006_HCV_RNA.md) | HCV RNA ← PEG-IFN alpha-2b · indirect response — drug inhibits the production of HCV RNA | model (no simulator) | Talal AH et al., Pharmacodynamics of PEG-IFN alpha diffe…, Hepatology (Baltimore, Md.) (2006) | [10.1002/hep.21136](https://doi.org/10.1002/hep.21136) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=interferon_alfa_2b).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: IFNA2 (modulator), IFNAR1 (binder), IFNAR2 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

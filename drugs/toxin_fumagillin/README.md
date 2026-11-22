@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fumagillin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fumagillin_Laurn1989_reference&quot;,&quot;label&quot;:&quot;Laur\u00e9n_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumagillin/Fumagillin_Laurn1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fumagillin_Laurn1989_reference&quot;,&quot;label&quot;:&quot;Laur\u00e9n_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fumagillin/Fumagillin_Laurn1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Fumagillin
 
@@ -31,7 +31,7 @@ Fumagillin is a mycotoxin found in the fungus Aspergillus fumigatus. It is an an
 
 ## Start here
 
-> **Laurén_1989_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> yearling rainbow trout. [Run it in the simulator](drugs/toxin_fumagillin/Fumagillin_Laurn1989_reference.md?tab=Simulation) · [record](drugs/toxin_fumagillin/Fumagillin_Laurn1989_reference.md)
+> **Laurén_1989_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> yearling rainbow trout. [Run it in the simulator](drugs/toxin_fumagillin/Fumagillin_Laurn1989_reference.md?tab=Simulation) · [record](drugs/toxin_fumagillin/Fumagillin_Laurn1989_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,16 +39,7 @@ Fumagillin is a mycotoxin found in the fungus Aspergillus fumigatus. It is an an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="fish" data-age="mixed" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Laurén_1989_reference](drugs/toxin_fumagillin/Fumagillin_Laurn1989_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Laurén DJ et al., Toxicity and pharmacokinetics of the an…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90173-7](https://doi.org/10.1016/0041-008x(89)90173-7) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fumagillin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: METAP2 (target).</sub>
+| <span class="pk-rf" hidden data-species="fish" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Laurén_1989_reference](drugs/toxin_fumagillin/Fumagillin_Laurn1989_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Laurén DJ et al., Toxicity and pharmacokinetics of the an…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90173-7](https://doi.org/10.1016/0041-008x(89)90173-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

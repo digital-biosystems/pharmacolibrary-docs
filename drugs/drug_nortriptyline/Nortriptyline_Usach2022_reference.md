@@ -16,7 +16,7 @@ Usach I, Di Marco S, Díez O, Alós M, Peris JE. The Usefulness of In Vitro Perc
 
 ## Population and dosing
 
-**Population:** rats · condition healthy · n = &gt;=4.
+**Population:** rats · condition healthy.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 

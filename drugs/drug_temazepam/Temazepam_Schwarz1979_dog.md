@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;temazepam&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/&quot;},{&quot;label&quot;:&quot;Schwarz_1979 \u00b7 dog&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/Temazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/Temazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # temazepam — `Temazepam_Schwarz1979_dog`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-06 22:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Temazepam record rejected because it lacks distribution volume and clearance values required for a compartmental PK model.
+> The record is not a compartmental PK model for temazepam, lacking clearance or volume, and contains a dose with incorrect time units.
 
-<div class="pk-model-meta" hidden drug="temazepam" model-id="Temazepam_Schwarz1979_dog" status="rejected" stale="true" population="healthy adults" measured-compound="temazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="temazepam" model-id="Temazepam_Schwarz1979_dog" status="rejected" stale="false" population="healthy adults" measured-compound="temazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schwarz HJ. Pharmacokinetics and metabolism of temazepam in man and several animal species. British journal of clinical pharmacology 8(1):23S–29S (1979).
@@ -39,7 +39,7 @@ Schwarz HJ. Pharmacokinetics and metabolism of temazepam in man and several anim
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Schwarz HJ. Pharmacokinetics and metabolism of temazepam in man and several anim
 
 ### Reviewer guidance
 
-**Temazepam record rejected because it lacks distribution volume and clearance values required for a compartmental PK model.**
+**The record is not a compartmental PK model for temazepam, lacking clearance or volume, and contains a dose with incorrect time units.**
 
-The model defines a single compartment but contains no parameters for distribution volume or elimination clearance, making it structurally incomplete for population pharmacokinetics. Additionally, the reported dose unit (mg/kg) could not be converted to SI units, leaving the structural parameter without a valid numerical value. This confirms the record describes an exposure study rather than a fitted compartmental model. Extracted — temazepam: D1 20 mg/kg, fe 37.4, Fab 100.
+The model structure omits clearance and distribution volume, indicating the source paper reports exposure rather than fitting compartmental parameters. A structural parameter labeled as a zero-order infusion duration is recorded with a mass unit (mg/kg) rather than a time unit. Second-reader disagreements exist regarding the dose value and the assignment of absorption percentage parameters. Extracted — temazepam: D1 20 mg/kg, fe 37.4, Fab 100.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has temazepam, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

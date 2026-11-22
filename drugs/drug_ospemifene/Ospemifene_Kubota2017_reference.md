@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ospemifene's volume of distribution and absorption lag time were left at library placeholders, causing the model to be quarantined.
+> Ospemifene's volume of distribution and absorption lag time lacked extracted values, leaving library placeholders that required quarantining the model.
 
 <div class="pk-model-meta" hidden drug="ospemifene" model-id="Ospemifene_Kubota2017_reference" status="model_quarantined" stale="false" population="adult women" measured-compound="ospemifene" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Kubota R, Matsumoto S, Wajima T. Population pharmacokinetics of ospemifene and s
 
 ### Reviewer guidance
 
-**Ospemifene's volume of distribution and absorption lag time were left at library placeholders, causing the model to be quarantined.**
+**Ospemifene's volume of distribution and absorption lag time lacked extracted values, leaving library placeholders that required quarantining the model.**
 
-Although central and peripheral volumes are listed in the extracted parameters, the specific volume of distribution and absorption lag time fields had no value extracted. Consequently, a library placeholder stood in for these parameters, and the apparent assumption of F=1 was noted. The model was held back rather than published with an invented number. Extracted — ospemifene: CL/F 9.16 L/h, V2/F 34.3 L, Q/F 16.4 L/h, V3/F 250 L, kabs 0.522 h-1.
+The record contains no numeric values for the drug's apparent volume of distribution or absorption lag time, forcing the use of default placeholders. Because the record was derived solely from the paper's abstract, these summary statistics replaced a fitted model, resulting in incomplete parameter coverage. Extracted — ospemifene: CL/F 9.16 L/h, V2/F 34.3 L, Q/F 16.4 L/h, V3/F 250 L, kabs 0.522 h-1.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -117,14 +117,15 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

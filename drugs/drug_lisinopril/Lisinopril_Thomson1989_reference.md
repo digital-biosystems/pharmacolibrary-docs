@@ -17,7 +17,7 @@ Thomson AH, Kelly JG, Whiting B. Lisinopril population pharmacokinetics in elder
 
 ## Population and dosing
 
-**Population:** elderly and renal disease patients with hypertension · condition hypertension · age group mixed · n = $60.
+**Population:** elderly and renal disease patients with hypertension · condition hypertension · age group mixed.
 
 **Dosing:** 2.5, 5 mg, oral, multiple, every 24 h.
 

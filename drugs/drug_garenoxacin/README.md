@@ -28,24 +28,14 @@ Garenoxacin is a quinolone antibiotic used to treat Gram-positive and Gram-negat
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Tanigawara_2012_end_of_phase_ii_stagea](drugs/drug_garenoxacin/Garenoxacin_Tanigawara2012_end_of_phase_ii_stagea.md) | — | 1-compartment (no model) | 1 | Tanigawara Y et al., Optimal dose finding of garenoxacin bas…, European journal of clinica… (2012) | [10.1007/s00228-011-1095-3](https://doi.org/10.1007/s00228-011-1095-3) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [↳ end_of_phase_iii_stageb](drugs/drug_garenoxacin/Garenoxacin_Tanigawara2012_end_of_phase_iii_stageb.md) | — | 1-compartment (no model) | 1 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Yamagishi_2015_reference](drugs/drug_garenoxacin/Garenoxacin_Yamagishi2015_reference.md) | — | 1-compartment (no model) | 3 | Yamagishi Y et al., Pharmacokinetic study of garenoxacin in…, The Japanese journal of ant… (2015) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Van_2004_reference](drugs/drug_garenoxacin/Garenoxacin_Van2004_reference.md) | — | 1-compartment (no model) | 3 (+4 cov.) | Van Wart S et al., Population pharmacokinetics and pharmac…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.12.4766-4777.2004](https://doi.org/10.1128/AAC.48.12.4766-4777.2004) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Yamagishi_2015_reference](drugs/drug_garenoxacin/Garenoxacin_Yamagishi2015_reference.md) | — | 1-compartment (no model) | 3 | Yamagishi Y et al., Pharmacokinetic study of garenoxacin in…, The Japanese journal of ant… (2015) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Van_2004_reference](drugs/drug_garenoxacin/Garenoxacin_Van2004_reference.md) | — | 1-compartment (no model) | 3 (+4 cov.) | Van Wart S et al., Population pharmacokinetics and pharmac…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.12.4766-4777.2004](https://doi.org/10.1128/AAC.48.12.4766-4777.2004) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Hosoi_2026_log10_CFU_lung](drugs/drug_garenoxacin/pd_Hosoi_2026_log10_CFU_lung.md) | changes in pulmonary bacterial burden ← garenoxacin · direct sigmoid Emax (Hill) effect | — | Hosoi A et al., Three fluoroquinolones with different e…, Antimicrobial agents and ch… (2026) | [10.1128/aac.00375-26](https://doi.org/10.1128/aac.00375-26) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=garenoxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: TOP2A (inhibitor), TOP2B (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,7 +55,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 2
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -4,11 +4,11 @@
 
 # fleroxacin — `Fleroxacin_Miller1992_aqueous_humor`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-07 11:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The fleroxacin record lacks distribution volume and clearance, and Cmax's unit of pg/mi cannot be converted to SI.
+> The fleroxacin record lacks clearance and volume parameters, and its Cmax unit pg/mi is dimensionally invalid.
 
-<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_aqueous_humor" status="rejected" stale="true" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_aqueous_humor" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin pharmacokinetics in aqueous and vitreous humors determined by using complete concentration-time data from individual rabbits. Antimicrobial agents and chemotherapy 36(1):32–38 (1992).
@@ -39,7 +39,7 @@ Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,11 @@ Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin 
 
 ### Reviewer guidance
 
-**The fleroxacin record lacks distribution volume and clearance, and Cmax's unit of pg/mi cannot be converted to SI.**
+**The fleroxacin record lacks clearance and volume parameters, and its Cmax unit pg/mi is dimensionally invalid.**
 
-The record contains only AUC, Cmax, tmax, and distribution half-life, missing the clearance and volume parameters required for a compartmental model. The Cmax value of 1.54 is recorded in units of pg/mi, which are not standard pharmacokinetic concentrations and cannot be converted. A second reader also noted a discrepancy in the identification of the distribution half-life parameter. Extracted — fleroxacin: t1/2α 3.21 h, AUC 7.96 mg·h/L, Cmax 1.54 pg/mi, tmax 0.503 h.
+The extraction omits distribution volume and clearance, meaning the record describes an exposure/outcome study rather than a compartmental model. The Cmax value of 1.54 pg/mi is dimensionally incorrect for a concentration. Additionally, a second reader identified a plasma penetration value of 27.109 that is missing from this record. Extracted — fleroxacin: t1/2α 3.21 h, AUC 7.96 mg·h/L, Cmax 1.54 pg/mi, tmax 0.503 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of % penetration: this record has none, the second reading 27.109; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % penetration: this record has none, the second reading 27.109; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -100,14 +100,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[% penetration]` |  | 27.109 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tl,2|].parameter_id` | Q59 | Q60 | mismatch |
+| `gpt-oss-120b` | `parameters[% penetration]` |  | 27.109 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tl,2|].parameter_id` | Q59 | Q60 | mismatch |
 
 </details>
 

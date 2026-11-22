@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;etomidate&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/&quot;},{&quot;label&quot;:&quot;van_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etomidate_Kaneda2011_reference&quot;,&quot;label&quot;:&quot;Kaneda_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Kaneda2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Shen2016_reference&quot;,&quot;label&quot;:&quot;Shen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Shen2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_van1983_reference&quot;,&quot;label&quot;:&quot;van_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_van1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etomidate_Van1978_reference&quot;,&quot;label&quot;:&quot;Van_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Van1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ranna_2006_GABA_induced_currents&quot;,&quot;label&quot;:&quot;Ranna_2006 \u00b7 GABA-induced currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etomidate_Kaneda2011_reference&quot;,&quot;label&quot;:&quot;Kaneda_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Kaneda2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Shen2016_reference&quot;,&quot;label&quot;:&quot;Shen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Shen2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Van1978_reference&quot;,&quot;label&quot;:&quot;Van_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Van1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_van1983_reference&quot;,&quot;label&quot;:&quot;van_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_van1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ranna_2006_GABA_induced_currents&quot;,&quot;label&quot;:&quot;Ranna_2006 \u00b7 GABA-induced currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # etomidate — `Etomidate_van1983_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_van1983_reference" status="simulated" stale="false" population="patients with cirrhosis of the liver" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
+> A second reader could not verify the etomidate clearance, volume, and half-life values extracted from the abstract, causing a dispute.
+
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_van1983_reference" status="needs_review" stale="false" population="patients with cirrhosis of the liver" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Beem H, Manger FW, van Boxtel C, van Bentem N. Etomidate anaesthesia in patients with cirrhosis of the liver: pharmacokinetic data. Anaesthesia 38 Suppl:61–62 (1983).
@@ -15,7 +17,7 @@ van Beem H, Manger FW, van Boxtel C, van Bentem N. Etomidate anaesthesia in pati
 
 ## Population and dosing
 
-**Population:** patients with cirrhosis of the liver · condition cirrhosis of the liver · age group adult · n = Five patients undergoing endoscopic injection of oesophageal varices were anaesthetised with etomidate 0.2 mg/kg followed by an infusion at a rate of 20 micrograms/kg/minute. Fentanyl 100-200 micrograms was also given intravenously and the patients' lungs were ventilated with oxygen in air. The postinfusion plasma etomidate concentration was described by a three compartment model with a mean half-life of 540 minutes (SEM 66.9) and volume of distribution of 8.9 litres/kg (SEM 0.6). Clearance was 12.7 ml/kg/minute (SEM 2.3). Compared to results in the literature obtained from normal patients, these cirrhotic patients had normal clearance rates, but the distribution volume and elimination half-life were twice as great. This suggests that cirrhotic patients metabolise etomidate normally, but the volume of distribution is doubled, thus resulting in prolonged elimination half-lives..
+**Population:** patients with cirrhosis of the liver · condition cirrhosis of the liver · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ van Beem H, Manger FW, van Boxtel C, van Bentem N. Etomidate anaesthesia in pati
 <figure class="pk-models-diagram"><img src="drugs/drug_etomidate/Etomidate_van1983_reference/Etomidate_van1983_reference.svg" alt="Etomidate_van1983_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean half-life | t1/2z | 540 | minutes |
@@ -35,7 +39,7 @@ van Beem H, Manger FW, van Boxtel C, van Bentem N. Etomidate anaesthesia in pati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +49,13 @@ van Beem H, Manger FW, van Boxtel C, van Bentem N. Etomidate anaesthesia in pati
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**A second reader could not verify the etomidate clearance, volume, and half-life values extracted from the abstract, causing a dispute.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record contains summary statistics for etomidate derived solely from the paper's abstract, lacking a full fitted model. A second reader marked the dose compound and primary analyte as unknown instead of etomidate. Additionally, the second reader was unable to confirm the reported clearance, volume of distribution, or mean half-life values. Extracted — etomidate: t1/2z 540 minutes, V 8.9 litres/kg, CL 12.7 ml/kg/minute.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etomidate, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -124,14 +128,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=etomidate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=etomidate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

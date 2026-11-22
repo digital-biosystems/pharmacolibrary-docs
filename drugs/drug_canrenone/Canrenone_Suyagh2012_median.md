@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life of 1.89 hours is significantly lower than the reported 11.2 hours for canrenone.
+> The canrenone model's terminal half-life is 1.89 hours, deviating from the paper's reported 11.2 hours, and clearance binding failed.
 
 <div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Suyagh2012_median" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ## Population and dosing
 
-**Population:** paediatric patients · condition pulmonary oedema, congestive heart failure · age group mixed · n = &gt;=23.
+**Population:** paediatric patients · condition pulmonary oedema, congestive heart failure · age group mixed.
 
 **Dosed compound ≠ measured compound:** dosed potassium canrenoate, measured canrenone.
 
@@ -52,9 +52,9 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ### Reviewer guidance
 
-**The model's terminal half-life of 1.89 hours is significantly lower than the reported 11.2 hours for canrenone.**
+**The canrenone model's terminal half-life is 1.89 hours, deviating from the paper's reported 11.2 hours, and clearance binding failed.**
 
-The simulated terminal half-life from the model (1.89 hours) is 0.1689 times the expected value of 11.2 hours reported in the paper. This discrepancy indicates the model fails to replicate the drug's observed elimination kinetics. The record also reflects deviations where parameters like Tlag were defaulted rather than explicitly estimated, further complicating the model's fidelity to the original study. Extracted — canrenone: CLm/F 11.4 l h -1 70 kg -1, V/F 20 l 70 kg -1, kfm 57.8 h -1, t1/2z 12.1 h.
+The simulated terminal half-life of 1.89 hours falls far short of the paper's reported 11.2 hours, failing the reproduction check. Additionally, the model builder assumed absolute bioavailability (F=1) and first-order depot input, which may not match the paper's dosing assumptions. A second reader disputed the parameter identification for canrenone apparent clearance, noting a mismatch in how the parameter was linked to the model. Extracted — canrenone: CLm/F 11.4 l h -1 70 kg -1, V/F 20 l 70 kg -1, kfm 57.8 h -1, t1/2z 12.1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].parameter_id`: this record has Q351, the second reading Q27. That field shapes the model, so the record is marked disputed.
 
@@ -95,6 +95,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- derived CL/F=80.4257 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - unparsed cell Suyagh_2012_table_2:row0:col4 = '1.87 Ϯ 1.56'
@@ -149,10 +150,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates |  | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters |  | fail | 1 deterministic parameter derivation(s) emitted | not correctly bound: ['CL/F'] |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable |  | pass | C_central (measured=canrenone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev-001: not acceptable; dev-002: not acceptable; dev-003: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | cross-check disputed by a second reader: verdict disputed, agreement 0.889, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 11.2 | 1.892 | 0.1689 | h→SI vs simulated h |
 
 <details class="legend">

@@ -4,11 +4,11 @@
 
 # flunarizine — `Flunarizine_Wang2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:49 UTC (Rejected), but the paper was screened again on 2026-10-07 04:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Flunarizine's elimination rate constant of 0.16 L h(-1) has units incompatible with first-order kinetics.
+> Flunarizine's elimination rate constant kel is incorrectly dimensioned as L/h instead of 1/h, preventing model fitting.
 
-<div class="pk-model-meta" hidden drug="flunarizine" model-id="Flunarizine_Wang2007_reference" status="rejected" stale="true" population="rats" measured-compound="flunarizine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flunarizine" model-id="Flunarizine_Wang2007_reference" status="rejected" stale="false" population="rats" measured-compound="flunarizine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wang YJ, Wang J, Zhang HY, He HB, Tang X. Formulation, preparation and evaluation of flunarizine-loaded lipid microspheres. The Journal of pharmacy and pharmacology 59(3):351–357 (2007).
@@ -38,7 +38,7 @@ Wang YJ, Wang J, Zhang HY, He HB, Tang X. Formulation, preparation and evaluatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Wang YJ, Wang J, Zhang HY, He HB, Tang X. Formulation, preparation and evaluatio
 
 ### Reviewer guidance
 
-**Flunarizine's elimination rate constant of 0.16 L h(-1) has units incompatible with first-order kinetics.**
+**Flunarizine's elimination rate constant kel is incorrectly dimensioned as L/h instead of 1/h, preventing model fitting.**
 
-The parameter kel is defined as the elimination rate constant, yet its value of 0.16 carries volumetric units of L h(-1) instead of reciprocal time. This dimensional mismatch contradicts the required first-order kinetics for a one-compartment model. The record was built from the abstract alone, so these summary statistics stood in for a fitted model. Extracted — flunarizine: AUC 6.13 mug.h mL(-1), t1/2z 5.32 h, kel 0.16 L h(-1).
+The record reports kel with a value of 0.16 in units of L h(-1), which is a volume flow rate rather than a rate constant. This dimensional error invalidates the single-compartment structural model parameters. Additionally, the record relied solely on abstract statistics for flunarizine, lacking full fitted model data. Extracted — flunarizine: AUC 6.13 mug.h mL(-1), t1/2z 5.32 h, kel 0.16 L h(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t].parameter_id`: this record has Q57, the second reading Q60. That field shapes the model, so the record is marked disputed.
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes trichodermin inhibiting peptidyl transferase activity, though specific mechanistic details (e.g., direct Emax, effect compartment) and pharmacodynamic parameters (such as IC50 or Imax) are not provided in the available text.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wei_1974`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

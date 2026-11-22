@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.60).">human + animal</span>
 
-> The carbenicillin clearance of 32.8 L/h and other parameters were extracted from a review rather than a primary source, with unreported absorption delay defaulted.
+> A second reader disputed the apparent parameterization and failed to extract the clearance value of 32.8 L/h for carbenicillin, leaving the record unresolved.
 
 <div class="pk-model-meta" hidden drug="carbenicillin" model-id="Carbenicillin_Strydom2024_reference" status="needs_review" stale="false" population="" measured-compound="carbenicillin" parameterization="apparent" topology="2C"></div>
 
@@ -53,9 +53,9 @@ Strydom N, Ernest JP, Imperial M, Solans BP, Wang Q, Tasneen R et al. Dose optim
 
 ### Reviewer guidance
 
-**The carbenicillin clearance of 32.8 L/h and other parameters were extracted from a review rather than a primary source, with unreported absorption delay defaulted.**
+**A second reader disputed the apparent parameterization and failed to extract the clearance value of 32.8 L/h for carbenicillin, leaving the record unresolved.**
 
-The record sources carbenicillin parameters, including clearance of 32.8 L/h, from a secondary review reference rather than a primary study. An absorption delay was not reported in the source text, so a library default was used instead of an explicit estimate. A second reader identified discrepancies in the apparent versus mechanistic parameterization and specific numerical values, leading to a review hold. Extracted — carbenicillin: CL/F 32.8 L/h, V1 49 L, V2 14 L, Q 0.8 L/h, kabs 1.1 h−1.
+The review was held back because the second reader disagreed with the apparent parameterization and could not verify the reported clearance of 32.8 L/h. This reader also failed to extract values for the volume of distribution and the absorption rate constant. Consequently, the cross-check agreement score of 0.692 fell below the required threshold, preventing the model from being accepted. Extracted — carbenicillin: CL/F 32.8 L/h, V1 49 L, V2 14 L, Q 0.8 L/h, kabs 1.1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 32.8, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -132,15 +132,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=carbenicillin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev_001: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=carbenicillin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | cross-check disputed by a second reader: verdict disputed, agreement 0.692, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

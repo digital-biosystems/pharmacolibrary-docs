@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> CLint has no unit.
 
 <div class="pk-model-meta" hidden drug="2,2&#39;,3,4,4&#39;,5,5&#39;-Heptachlorobiphenyl" model-id="D_2234455Heptachlorobiphenyl_Verner2009_reference" status="needs_review" stale="false" population="Northern Québec Inuit mothers and their infants" measured-compound="2,2&#39;,3,4,4&#39;,5,5&#39;-Heptachlorobiphenyl" parameterization="mechanistic" topology="retention"></div>
 
@@ -44,7 +44,13 @@ Verner MA, Ayotte P, Muckle G, Charbonneau M, Haddad S. A physiologically based 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**CLint has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CLint), so that value has no SI equivalent. Extracted — 2234455 heptachlorobiphenyl: t1/2z 27.5 years, CLint 0.00826 L/hr/kg liver.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

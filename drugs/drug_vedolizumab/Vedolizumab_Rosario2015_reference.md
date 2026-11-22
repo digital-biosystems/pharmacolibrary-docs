@@ -4,11 +4,11 @@
 
 # vedolizumab — `Vedolizumab_Rosario2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 01:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Rosario2015_reference" status="rejected" stale="true" population="patients with ulcerative colitis and Crohn&#39;s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Rosario2015_reference" status="rejected" stale="false" population="patients with ulcerative colitis and Crohn&#39;s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rosario M, Dirks NL, Gastonguay MR, Fasanmade AA, Wyant T, Parikh A et al. Population pharmacokinetics-pharmacodynamics of vedolizumab in patients with ulcerative colitis and Crohn's disease. Alimentary pharmacology & therapeutics 42(2):188–202 (2015).
@@ -16,7 +16,7 @@ Rosario M, Dirks NL, Gastonguay MR, Fasanmade AA, Wyant T, Parikh A et al. Popul
 
 ## Population and dosing
 
-**Population:** patients with ulcerative colitis and Crohn's disease · condition ulcerative colitis and Crohn's disease · age group adult · n = &gt;2554.
+**Population:** patients with ulcerative colitis and Crohn's disease · condition ulcerative colitis and Crohn's disease · age group adult.
 
 **Dosing:** 300 mg, iv, multiple, every 56 h.
 
@@ -34,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

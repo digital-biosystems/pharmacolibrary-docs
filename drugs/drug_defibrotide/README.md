@@ -16,13 +16,7 @@ Defibrotide is an antithrombotic agent derived from porcine intestinal mucosa, u
 
 ## Start here
 
-> **Noseda_1986_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy volunteers, n = ,
-  "condition": "healthy",
-  "species": "human",
-  "compounds": [
-    {"name": "defibrotide", "role": "parent", "dosed": "yes", "measured": "yes", "has_parameters": "yes"}
-  ],
-  "links": []}  # Note: JSON cannot contain lists of strings separated by pipes as per YAML schema, converting to array of objects or strings as appropriate for JSON schema. The prompt asks for JSON object matching supplied schema. I will format the compounds as a list of strings or objects based on standard JSON interpretation of the requested format. Given the strict instruction "Put each value in its OWN named field", I will use a list of objects for compounds to be safe, or a list of strings if the schema implies simple values. The prompt example shows a YAML list. I will convert to a JSON array of strings to match the 'flat' nature or objects. Let's use objects for clarity or strings if that's how 'flat' is interpreted in JSON. Usually 'flat' JSON means no deep nesting. I will use an array of objects for compounds. Wait, the prompt says "Output ONLY a JSON object matching the supplied schema." It doesn't give the schema, but implies a key-value structure. I will map the keys directly. For compounds and links, I will use arrays.. [Run it in the simulator](drugs/drug_defibrotide/Defibrotide_Noseda1986_reference.md?tab=Simulation) · [record](drugs/drug_defibrotide/Defibrotide_Noseda1986_reference.md)
+> **Noseda_1986_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy volunteers. [Run it in the simulator](drugs/drug_defibrotide/Defibrotide_Noseda1986_reference.md?tab=Simulation) · [record](drugs/drug_defibrotide/Defibrotide_Noseda1986_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -38,17 +32,7 @@ Defibrotide is an antithrombotic agent derived from porcine intestinal mucosa, u
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Noseda_1986_reference](drugs/drug_defibrotide/Defibrotide_Noseda1986_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Noseda G et al., Pharmacokinetics of defibrotide in heal…, Haemostasis 16 Suppl (1986) | [10.1159/000215336](https://doi.org/10.1159/000215336) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Tocchetti_2016_reference](drugs/drug_defibrotide/Defibrotide_Tocchetti2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Tocchetti P et al., Pharmacokinetic profile of defibrotide…, Drug design, development an… (2016) | [10.2147/DDDT.S112181](https://doi.org/10.2147/DDDT.S112181) |
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Pescador_1983_reference](drugs/drug_defibrotide/Defibrotide_Pescador1983_reference.md) | — | 2-compartment (no model) | 8 | Pescador R et al., Pharmacokinetics of Defibrotide and of…, Thrombosis research (1983) | [10.1016/0049-3848(83)90391-2](https://doi.org/10.1016/0049-3848(83)90391-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=defibrotide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ADORA1 (target), ADORA2A (target), ADORA2B (target).</sub>
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Pescador_1983_reference](drugs/drug_defibrotide/Defibrotide_Pescador1983_reference.md) | — | 2-compartment (no model) | 8 | Pescador R et al., Pharmacokinetics of Defibrotide and of…, Thrombosis research (1983) | [10.1016/0049-3848(83)90391-2](https://doi.org/10.1016/0049-3848(83)90391-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -68,7 +52,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 48 matched, 41 returned
 - **screened:** 11  ·  **relevant:** 4
-- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

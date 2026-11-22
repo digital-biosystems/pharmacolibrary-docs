@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The aniline record lacks kinetic parameters like clearance or half-life, as Cmax and AUC are exposure outcomes unsuitable for model building.
 
 <div class="pk-model-meta" hidden drug="Aniline" model-id="Aniline_Miura2021_2_4_dimethyl_aniline" status="rejected" stale="false" population="rats" measured-compound="Aniline" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,7 +53,13 @@ Miura T, Kamiya Y, Murayama N, Shimizu M, Yamazaki H. Differences in Pharmacokin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The aniline record lacks kinetic parameters like clearance or half-life, as Cmax and AUC are exposure outcomes unsuitable for model building.**
+
+The record lists Cmax as 2720 ng/mL and AUC as 3380 ng·h/mL, which are observed exposure metrics rather than mechanistic kinetic parameters required for model construction. Although hepatic clearance of 0.420 L/h and renal clearance of 0.045 L/h are present, the review determined no valid kinetic quantity was extracted, treating it as an exposure-outcome paper. Consequently, the record was rejected for lacking the rate constants and volumes necessary to simulate pharmacokinetics. Extracted — aniline: Fab 0.496, CLH 0.42 L/h, CLR 0.045 L/h, Cmax 2.72e+03 ng/mL, AUC 3.38e+03 ng·h/mL, MW 121 g/mol, Kp 1.86, fu 0.306.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

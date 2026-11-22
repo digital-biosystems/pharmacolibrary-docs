@@ -17,7 +17,7 @@ Kim SE, Kim BH, Lee S, Sohn JA, Kim HS, Cho JY et al. Population pharmacokinetic
 
 ## Population and dosing
 
-**Population:** premature Korean infants · age group neonate · n = ..
+**Population:** premature Korean infants · age group neonate.
 
 ## Model
 

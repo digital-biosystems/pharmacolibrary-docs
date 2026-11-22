@@ -5,11 +5,11 @@
 
 # paromomycin — `Paromomycin_Lentzen1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:18 UTC (Needs review), but the paper was screened again on 2026-10-04 18:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="paromomycin" model-id="Paromomycin_Lentzen1981_reference" status="needs_review" stale="true" population="healthy volunteers and patients with liver cirrhosis" measured-compound="paromomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paromomycin" model-id="Paromomycin_Lentzen1981_reference" status="needs_review" stale="false" population="healthy volunteers and patients with liver cirrhosis" measured-compound="paromomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lentzen H, Kölle EU, Daschner F. [Comparative study of serum levels and urinary excretion following oral administration of paromomycin and neomycin (author's transl)]. Arzneimittel-Forschung 31(11):1967–1971 (1981).
@@ -36,7 +36,7 @@ Lentzen H, Kölle EU, Daschner F. [Comparative study of serum levels and urinary
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

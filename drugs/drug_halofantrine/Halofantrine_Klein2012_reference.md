@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the absorption rate constant used library placeholders instead of values reported in the abstract-only source data.
+> Absorption rate constant and lag time for halofantrine were not extracted from the abstract, so placeholder values were used instead of specific estimates.
 
 <div class="pk-model-meta" hidden drug="halofantrine" model-id="Halofantrine_Klein2012_reference" status="needs_review" stale="false" population="healthy volunteers and patients with symptomatic falciparum malaria" measured-compound="halofantrine" parameterization="apparent" topology="2C"></div>
 
@@ -50,9 +50,9 @@ Klein K, Aarons L, Ter Kuile FO, Nosten F, White NJ, Edstein MD et al. Populatio
 
 ### Reviewer guidance
 
-**The record was held back because the absorption rate constant used library placeholders instead of values reported in the abstract-only source data.**
+**Absorption rate constant and lag time for halofantrine were not extracted from the abstract, so placeholder values were used instead of specific estimates.**
 
-The model builder applied placeholder values for the absorption rate constant and lag time, which were not extracted from the paper. The second reader could not confirm the specific values for apparent clearance, distributional clearance, and the volumes of distribution reported in the record. Extracted — halofantrine: CL/F 2.45e+03 l/day, V1 2.39e+03 l, Q 716 l/day, V2 2.64e+03 l.
+The record was built from abstract-only data, meaning no explicit absorption parameters were available to fit, resulting in generic defaults. A second reader disputed the extracted clearance and volume values, finding them unsupported by the source text. The model was held back because the absorption parameters lack specific justification from the paper. Extracted — halofantrine: CL/F 2.45e+03 l/day, V1 2.39e+03 l, Q 716 l/day, V2 2.64e+03 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has halofantrine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -138,15 +138,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=halofantrine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=halofantrine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

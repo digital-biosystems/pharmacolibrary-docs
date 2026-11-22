@@ -145,30 +145,13 @@ The record contains no extracted values for risperidone's clearance and lag time
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Sherwin2012_reference/Risperidone_Sherwin2012_reference_matlab.zip" download>Risperidone_Sherwin2012_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Sherwin2012_reference/Risperidone_Sherwin2012_reference_matlab_simbio.zip" download>Risperidone_Sherwin2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Sherwin2012_reference/Risperidone_Sherwin2012_reference_sbml.zip" download>Risperidone_Sherwin2012_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Sherwin2012_reference/Risperidone_Sherwin2012_reference_cellml.zip" download>Risperidone_Sherwin2012_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Sherwin CM, Saldaña SN, Bies RR, Aman MG, Vinks AA. Population pharmacokinetic modeling of risperidone and 9-hydroxyrisperidone to estimate CYP2D6 subpopulations in children and adolescents. Therapeutic drug monitoring 34(5):535-544 (2012). [doi:10.1097/ftd.0b013e318261c240](https://doi.org/10.1097/ftd.0b013e318261c240)
-
-**This record:** Pharmacolibrary, model `Risperidone_Sherwin2012_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_risperidone/Risperidone_Sherwin2012_reference>
-
-```bibtex
-@misc{pharmacolibrary_RisperidoneSherwin2012reference,
-  title  = {{Pharmacolibrary model Risperidone_Sherwin2012_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_risperidone/Risperidone_Sherwin2012_reference},
-  note   = {Parameters from doi:10.1097/ftd.0b013e318261c240},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

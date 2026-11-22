@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V08A&quot;,&quot;href&quot;:&quot;atc/V08A.md&quot;},{&quot;label&quot;:&quot;iotalamic acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IotalamicAcid_Shin2015_reference&quot;,&quot;label&quot;:&quot;Shin_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IotalamicAcid_Shin2015_reference&quot;,&quot;label&quot;:&quot;Shin_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # iotalamic acid
 
@@ -23,43 +23,19 @@ Iotalamic acid is an iodinated radiocontrast agent used to evaluate glomerular f
 | iotalamic_acid (iothalamic acid) | metabolite | 613.903 | C11H9I3N2O4 | PubChem | [3737](https://pubchem.ncbi.nlm.nih.gov/compound/3737) | Bäck_1988, Groth_1978 |
 | sodium iothalamate | metabolite | 635.885 | C11H8I3N2NaO4 | PubChem | [23667529](https://pubchem.ncbi.nlm.nih.gov/compound/23667529) | Groth_1978 |
 
-## Start here
-
-> **Shin_2015_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md?tab=Simulation) · [record](drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shin_2015 · CL ·/kg</text><circle cx="227.6" cy="30.0" r="4" fill="#78909c"><title>Shin_2015 · CL ·/kg: 0.21 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bäck_1988 · CL</text><circle cx="430.2" cy="46.0" r="4" fill="#ef6c00"><title>Bäck_1988 · CL: 11.46 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Naber_1989 · CL</text><circle cx="454.3" cy="62.0" r="4" fill="#ef6c00"><title>Naber_1989 · CL: 18.42 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bäck_1988 · V ·/kg</text><circle cx="219.3" cy="30.0" r="4" fill="#ef6c00"><title>Bäck_1988 · V ·/kg: 14.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shin_2015 · V ·/kg</text><circle cx="219.3" cy="46.0" r="4" fill="#78909c"><title>Shin_2015 · V ·/kg: 14.7 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Naber_1989 · V</text><circle cx="408.3" cy="62.0" r="4" fill="#ef6c00"><title>Naber_1989 · V: 176.7 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Shin_2015_reference](drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shin JE et al., Usefulness of serum cystatin C to deter…, Korean journal of pediatrics (2015) | [10.3345/kjp.2015.58.11.421](https://doi.org/10.3345/kjp.2015.58.11.421) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Bäck_1988_reference](drugs/drug_iotalamic_acid/IotalamicAcid_Bck1988_reference.md) | — | 1-compartment (no model) | 2 | Bäck SE et al., Contrast media as markers for glomerula…, Scandinavian journal of cli… (1988) | [10.3109/00365518809167491](https://doi.org/10.3109/00365518809167491) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Groth_1978_case_1](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_1.md) | — | 1-compartment (no model) | 5 | Groth T et al., The usefulness of 125I-sodium lothalama…, Upsala journal of medical s… (1978) | [10.3109/03009737809179113](https://doi.org/10.3109/03009737809179113) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [↳ case_2](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_2.md) | — | 1-compartment (no model) | 5 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [↳ case_3](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_3.md) | — | 1-compartment (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ case_4](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_4.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ case_5](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_5.md) | — | 2-compartment (no model) | 7 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ case_6](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_6.md) | — | 2-compartment (no model) | 8 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Naber_1989_reference](drugs/drug_iotalamic_acid/IotalamicAcid_Naber1989_reference.md) | — | 1-compartment (no model) | 2 | Naber KG et al., [Enoxacin concentration in seminal flui…, Infection 17 Suppl (1989) | [10.1007/BF01643634](https://doi.org/10.1007/BF01643634) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=iotalamic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ case_4](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_4.md) | — | 1-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ case_5](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_5.md) | — | 2-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ case_6](drugs/drug_iotalamic_acid/IotalamicAcid_Groth1978_case_6.md) | — | 2-compartment (no model) | 8 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Naber_1989_reference](drugs/drug_iotalamic_acid/IotalamicAcid_Naber1989_reference.md) | — | 1-compartment (no model) | 2 | Naber KG et al., [Enoxacin concentration in seminal flui…, Infection 17 Suppl (1989) | [10.1007/BF01643634](https://doi.org/10.1007/BF01643634) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Shin_2015_reference](drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shin JE et al., Usefulness of serum cystatin C to deter…, Korean journal of pediatrics (2015) | [10.3345/kjp.2015.58.11.421](https://doi.org/10.3345/kjp.2015.58.11.421) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,13 +49,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:46 | 36:14 | 6/3/0 | 0/0/0 | 0/0/0 | 753,539/41,732 | ollama / glm-5.3-flash | 17 | 7/10 | 15/2 | 0 |
+| 2026-10-07 23:46 | 36:14 | 4/5/0 | 0/0/0 | 0/0/0 | 753,539/41,732 | ollama / glm-5.3-flash | 17 | 7/10 | 15/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 51 matched, 49 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 9  ·  extracted 1  ·  needs review 5  ·  rejected 3  ·  stale 3
+- **records:** 9  ·  extracted 0  ·  needs review 4  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

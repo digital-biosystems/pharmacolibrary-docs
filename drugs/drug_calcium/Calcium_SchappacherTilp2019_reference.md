@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11A&quot;,&quot;href&quot;:&quot;atc/A11A.md&quot;},{&quot;label&quot;:&quot;Calcium&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/&quot;},{&quot;label&quot;:&quot;Schappacher-Tilp_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Calcium_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_SchappacherTilp2019_reference&quot;,&quot;label&quot;:&quot;Schappacher-Tilp_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_SchappacherTilp2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Calcium_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_SchappacherTilp2019_reference&quot;,&quot;label&quot;:&quot;Schappacher-Tilp_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_SchappacherTilp2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Calcium_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Calcium — `Calcium_SchappacherTilp2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Calcium's absorption rate constant was left at library defaults rather than extracted, leaving the model unsupported by the paper.
+> The record was rejected because calcium CL/F of 314.0 L/h and V of 1000.0 L come from a cinacalcet study, not a calcium pharmacokinetic model.
 
-<div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_SchappacherTilp2019_reference" status="needs_review" stale="false" population="" measured-compound="calcium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_SchappacherTilp2019_reference" status="rejected" stale="false" population="" measured-compound="calcium" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Schappacher-Tilp G, Fuertinger DH, Kotanko P. A Multi-Compartment Model Capturing the Pharmacokinetics of the Calcimimetic Cinacalcet. Cellular physiology and biochemistry : international journal of experimental cellular physiology, biochemistry, and pharmacology 53(2):429–438 (2019).
@@ -31,7 +31,7 @@ Schappacher-Tilp G, Fuertinger DH, Kotanko P. A Multi-Compartment Model Capturin
 <figure class="pk-models-diagram"><img src="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference.svg" alt="Calcium_SchappacherTilp2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Schappacher-Tilp G, Fuertinger DH, Kotanko P. A Multi-Compartment Model Capturin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Schappacher-Tilp G, Fuertinger DH, Kotanko P. A Multi-Compartment Model Capturin
 
 ### Reviewer guidance
 
-**Calcium's absorption rate constant was left at library defaults rather than extracted, leaving the model unsupported by the paper.**
+**The record was rejected because calcium CL/F of 314.0 L/h and V of 1000.0 L come from a cinacalcet study, not a calcium pharmacokinetic model.**
 
-The source text does not report an absorption rate constant for calcium, so library placeholders were used. The review explicitly states these values affect the simulated profile but are not supported by this paper. Consequently, the record was held back pending extraction or explicit justification of these assumptions. Extracted — calcium: CL/F 314 L/h, V 1e+03 L.
+The paper models cinacalcet; calcium is mentioned only as its physiological target, so these values do not describe calcium pharmacokinetics. The model also defaulted the absorption rate constant and absorption lag time, assumed F=1 and Fm=1 with no molar correction, and assigned first-order depot input although absorption was not reported. Extracted — calcium: CL/F 314 L/h, V 1e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has none, the second reading 2.4; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 2.4; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -84,22 +84,21 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.667 (8/12 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q17]` |  | 2.4 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q305]` | 0.0526 | 0.0526 | mismatch |
-| `gpt-oss:120b` | `values[Q58]` |  | 1.3 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q65]` | 1000 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q84]` |  | 53 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q17]` |  | 2.4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q58]` |  | 1.3 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q65]` | 1000 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q84]` |  | 53 | only_one_extracted |
 
 </details>
 
@@ -125,15 +124,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=calcium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | calcium (or metabolite) | paper about another drug |  | paper subject is not calcium: the paper is about another drug; this one is a co-medication or covariate: The study models the pharmacokinetics of cinacalcet (a calcimimetic drug), not calcium itself, which is only mentioned as the physiological target. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=calcium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,61 +145,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_modelica.zip" download>Calcium_SchappacherTilp2019_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_fmi.zip" download>Calcium_SchappacherTilp2019_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_matlab.zip" download>Calcium_SchappacherTilp2019_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_matlab_simbio.zip" download>Calcium_SchappacherTilp2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_sbml.zip" download>Calcium_SchappacherTilp2019_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_cellml.zip" download>Calcium_SchappacherTilp2019_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.04008 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 6e-05 | kg |
-| input | model | `Cl` | 8.722e-05 | m3/s |
-| input | model | `VdPerKg` | 0.01429 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Schappacher-Tilp G, Fuertinger DH, Kotanko P. A Multi-Compartment Model Capturing the Pharmacokinetics of the Calcimimetic Cinacalcet. Cellular physiology and biochemistry : international journal of experimental cellular physiology, biochemistry, and pharmacology 53(2):429–438 (2019). [doi:10.33594/000000148](https://doi.org/10.33594/000000148)
-
-**This record:** Pharmacolibrary, model `Calcium_SchappacherTilp2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_calcium/Calcium_SchappacherTilp2019_reference>
-
-```bibtex
-@misc{pharmacolibrary_CalciumSchappacherTilp2019reference,
-  title  = {{Pharmacolibrary model Calcium_SchappacherTilp2019_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_calcium/Calcium_SchappacherTilp2019_reference},
-  note   = {Parameters from doi:10.33594/000000148},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

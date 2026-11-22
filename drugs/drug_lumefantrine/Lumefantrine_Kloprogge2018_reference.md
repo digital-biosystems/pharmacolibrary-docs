@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record fails because the model structure is a one-compartment enteral model, but it contains parameters for a metabolite compartment that lacks a valid metabolic link.
+> Rejected because lumefantrine V2/F 59.0 L and desbutyl-lumefantrine V2/F 8650 L were uncovered, alongside mismatched model structure and measured-compound output.
 
 <div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Kloprogge2018_reference" status="rejected" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria (children and pregnant women)" measured-compound="lumefantrine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -60,13 +60,13 @@ Kloprogge F, Workman L, Borrmann S, Tékété M, Lefèvre G, Hamed K et al. Arte
 
 ### Reviewer guidance
 
-**The record fails because the model structure is a one-compartment enteral model, but it contains parameters for a metabolite compartment that lacks a valid metabolic link.**
+**Rejected because lumefantrine V2/F 59.0 L and desbutyl-lumefantrine V2/F 8650 L were uncovered, alongside mismatched model structure and measured-compound output.**
 
-The record defines a parent-metabolite topology with desbutyl-lumefantrine, yet the metabolic link from lumefantrine has no rate constant assigned. The parameter coverage check identified that two distinct volume of distribution parameters were not emitted or defaulted. Additionally, the bioavailability parameter was set to 1, which contradicts the apparent clearance parameterization used for the oral drug. Extracted — lumefantrine: Fab 1, kabs 0.0386 h−1, CL/F 1.35 l/h, V1/F 11.2 l, Q/F 0.344 l/h, V2/F 59 l; desbutyl-lumefantrine: CL/F 78.4 l/h, V1/F 2.47e+03 l, Q/F 104 l/h, V2/F 8.65e+03 l.
+Only 7 of 9 parameters were covered; the missing entries were the peripheral-compartment volumes for lumefantrine and desbutyl-lumefantrine. The model structure was one-compartment enteral rather than parent–metabolite, and its output was central concentration instead of the compartment for measured lumefantrine. The builder assumed F=1 and Fm=1 with no molar correction and defaulted the lag time; a second reader disputed the record, including bioavailability of 1 versus 57.9, with agreement 0.136. Extracted — lumefantrine: Fab 1, kabs 0.0386 h−1, CL/F 1.35 l/h, V1/F 11.2 l, Q/F 0.344 l/h, V2/F 59 l; desbutyl-lumefantrine: CL/F 78.4 l/h, V1/F 2.47e+03 l, Q/F 104 l/h, V2/F 8.65e+03 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemether-lumefantrine, the second reading lumefantrine; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -226,16 +226,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=lumefantrine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 9 scholar param(s) emitted or defaulted | 7 covered | neither emitted nor in defaulted[]: ['V2/F', 'V2/F'] |
-| T3_shared_parameters | pass | 4 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=lumefantrine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 9 scholar param(s) emitted or defaulted | 7 covered |  | neither emitted nor in defaulted[]: ['V2/F', 'V2/F'] |
+| T3_shared_parameters | pass | 4 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.136, 0 of 1 reader(s) agree | 0.136 | cross-check disputed by a second reader: verdict disputed, agreement 0.136, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Imipenem&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/&quot;},{&quot;label&quot;:&quot;Chu_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imipenem_Chu2010_reference&quot;,&quot;label&quot;:&quot;Chu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Chu2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Imipenem_Gomez2015_reference&quot;,&quot;label&quot;:&quot;Gomez_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gomez2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imipenem_Gruber1985_reference&quot;,&quot;label&quot;:&quot;Gruber_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gruber1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Gomez2015_reference&quot;,&quot;label&quot;:&quot;Gomez_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gomez2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Chu2010_reference&quot;,&quot;label&quot;:&quot;Chu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Chu2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Imipenem — `Imipenem_Chu2010_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Chu2010_reference" status="simulated" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></div>
+> Imipenem clearance of 14.4 liters/h was rejected because the source paper is a simulation study, not a primary measurement.
+
+<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Chu2010_reference" status="rejected" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chu YZ, Tian SF, Chen BY, Nian H, Shang H, Sun GQ. Pharmacokinetic-pharmacodynamic profiling of four antimicrobials against gram-negative bacteria collected from Shenyang, China. BMC infectious diseases 10:171 (2010).
@@ -27,6 +29,8 @@ Chu YZ, Tian SF, Chen BY, Nian H, Shang H, Sun GQ. Pharmacokinetic-pharmacodynam
 <figure class="pk-models-diagram"><img src="drugs/drug_imipenem/Imipenem_Chu2010_reference/Imipenem_Chu2010_reference.svg" alt="Imipenem_Chu2010_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CLT (liters/h) | CL | 14.4 | liters/h |
@@ -34,7 +38,7 @@ Chu YZ, Tian SF, Chen BY, Nian H, Shang H, Sun GQ. Pharmacokinetic-pharmacodynam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Chu YZ, Tian SF, Chen BY, Nian H, Shang H, Sun GQ. Pharmacokinetic-pharmacodynam
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Imipenem clearance of 14.4 liters/h was rejected because the source paper is a simulation study, not a primary measurement.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 48, the second reading 48; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+The record lists imipenem total clearance at 14.4 liters/h and volume of distribution at 18.6 liters. However, the source is a secondary review that uses literature-derived parameters for simulation rather than direct measurement. A second reader disagreed on a specific value, but the primary issue is that the paper subject is not imipenem. Extracted — imipenem: CL 14.4 liters/h, V 18.6 liters.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q46: this record has 0.85, the second reading none. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -70,18 +76,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q19]` | 48 | 48 | mismatch |
 | `gpt-oss-120b` | `values[Q46]` | 0.85 |  | only_one_extracted |
 
 </details>
@@ -108,14 +113,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=imipenem) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | imipenem (or metabolite) | paper about another drug |  | paper subject is not imipenem: the paper is about another drug; this one is a co-medication or covariate: The paper is a PK/PD simulation study that uses literature-derived PK parameters for imipenem (CL, Vd) rather than measuring them, and while Table 2 containing |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=imipenem) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -127,59 +133,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_imipenem/Imipenem_Chu2010_reference/Imipenem_Chu2010_reference_modelica.zip" download>Imipenem_Chu2010_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_imipenem/Imipenem_Chu2010_reference/Imipenem_Chu2010_reference_fmi.zip" download>Imipenem_Chu2010_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_imipenem/Imipenem_Chu2010_reference/Imipenem_Chu2010_reference_matlab.zip" download>Imipenem_Chu2010_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_imipenem/Imipenem_Chu2010_reference/Imipenem_Chu2010_reference_matlab_simbio.zip" download>Imipenem_Chu2010_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_imipenem/Imipenem_Chu2010_reference/Imipenem_Chu2010_reference_sbml.zip" download>Imipenem_Chu2010_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_imipenem/Imipenem_Chu2010_reference/Imipenem_Chu2010_reference_cellml.zip" download>Imipenem_Chu2010_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2993 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 4e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0002657 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Chu YZ, Tian SF, Chen BY, Nian H, Shang H, Sun GQ. Pharmacokinetic-pharmacodynamic profiling of four antimicrobials against gram-negative bacteria collected from Shenyang, China. BMC infectious diseases 10:171 (2010). [doi:10.1186/1471-2334-10-171](https://doi.org/10.1186/1471-2334-10-171)
-
-**This record:** Pharmacolibrary, model `Imipenem_Chu2010_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_imipenem/Imipenem_Chu2010_reference>
-
-```bibtex
-@misc{pharmacolibrary_ImipenemChu2010reference,
-  title  = {{Pharmacolibrary model Imipenem_Chu2010_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_imipenem/Imipenem_Chu2010_reference},
-  note   = {Parameters from doi:10.1186/1471-2334-10-171},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

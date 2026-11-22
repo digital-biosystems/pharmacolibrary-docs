@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;Tan_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisolone — `Prednisolone_Tan2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption lag time for prednisolone is missing from the record, causing a parameter coverage failure for the one-compartment model.
+> Prednisolone clearance of 7.74 was rejected because Tan_2024 studied methotrexate polyglutamates, with prednisolone only a concomitant medication or covariate.
 
-<div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_Tan2024_reference" status="needs_review" stale="false" population="" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_Tan2024_reference" status="rejected" stale="false" population="" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pharmacodynamic modelling and simulation of methotrexate dosing in patients with rheumatoid arthritis. British journal of clinical pharmacology 90(11):2763–2780 (2024).
@@ -29,7 +29,7 @@ Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pha
 <figure class="pk-models-diagram"><img src="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference.svg" alt="Prednisolone_Tan2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +39,7 @@ Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pha
 
 ### Reviewer guidance
 
-**The absorption lag time for prednisolone is missing from the record, causing a parameter coverage failure for the one-compartment model.**
+**Prednisolone clearance of 7.74 was rejected because Tan_2024 studied methotrexate polyglutamates, with prednisolone only a concomitant medication or covariate.**
 
-The review expected three parameters but only two were covered, leaving the absorption lag time (tlag) neither emitted nor defaulted. This incomplete parameter set prevents the model from being published as a valid description of prednisolone pharmacokinetics. A second reader also disagreed on the clearance value (7.74 vs 8.4) and multiple other missing fields. Extracted — prednisolone: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
+The paper focuses on methotrexate polyglutamates, not prednisolone. The record lists prednisolone clearance of 7.74, central-compartment volume of 9.6 L, and absorption lag time of 0.36 hour; the lag time was not covered among the 3 parameters. A second reader disputed the verdict, with agreement of 0.333, and disagreed on several recorded values. Extracted — prednisolone: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -83,24 +83,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (6/18 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.333 (6/18 fields) | 12 |
 
 <details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.topology_template` | 1C | 2C | mismatch |
-| `gpt-oss:120b` | `values[Q22]` | 7.74 | 8.4 | mismatch |
-| `gpt-oss:120b` | `values[Q312]` | 31 | 14 | mismatch |
-| `gpt-oss:120b` | `values[Q316]` |  | 0.590 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q317]` |  | 8.260 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q327]` | 6.55 | 12 | mismatch |
-| `gpt-oss:120b` | `values[Q40]` |  | 0.7 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q47]` |  | 0.144 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q49]` |  | 0.87 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q51]` |  | 0.171 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q63]` | 9.6 | 0.3 | mismatch |
-| `gpt-oss:120b` | `values[Q64]` |  | 0.3 | only_one_extracted |
+| `gpt-oss-120b` | `model.topology_template` | 1C | 2C | mismatch |
+| `gpt-oss-120b` | `values[Q22]` | 7.74 | 8.4 | mismatch |
+| `gpt-oss-120b` | `values[Q312]` | 31 | 14 | mismatch |
+| `gpt-oss-120b` | `values[Q316]` |  | 0.590 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q317]` |  | 8.260 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q327]` | 6.55 | 12 | mismatch |
+| `gpt-oss-120b` | `values[Q40]` |  | 0.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` |  | 0.144 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` |  | 0.87 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q51]` |  | 0.171 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 9.6 | 0.3 | mismatch |
+| `gpt-oss-120b` | `values[Q64]` |  | 0.3 | only_one_extracted |
 
 </details>
 
@@ -127,14 +127,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=prednisolone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | prednisolone (or metabolite) | paper about another drug |  | paper subject is not prednisolone: the paper is about another drug; this one is a co-medication or covariate: The study focuses on the pharmacokinetics of methotrexate polyglutamates, and prednisolone is only mentioned as a concomitant medication/covariate. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=prednisolone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -146,59 +147,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference_modelica.zip" download>Prednisolone_Tan2024_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference_fmi.zip" download>Prednisolone_Tan2024_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference_matlab.zip" download>Prednisolone_Tan2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference_matlab_simbio.zip" download>Prednisolone_Tan2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference_sbml.zip" download>Prednisolone_Tan2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Tan2024_reference/Prednisolone_Tan2024_reference_cellml.zip" download>Prednisolone_Tan2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3604 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 2.15e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0001371 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pharmacodynamic modelling and simulation of methotrexate dosing in patients with rheumatoid arthritis. British journal of clinical pharmacology 90(11):2763–2780 (2024). [doi:10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158)
-
-**This record:** Pharmacolibrary, model `Prednisolone_Tan2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_prednisolone/Prednisolone_Tan2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_PrednisoloneTan2024reference,
-  title  = {{Pharmacolibrary model Prednisolone_Tan2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_prednisolone/Prednisolone_Tan2024_reference},
-  note   = {Parameters from doi:10.1111/bcp.16158},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

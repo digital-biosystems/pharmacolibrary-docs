@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;Methyldopa&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/&quot;},{&quot;label&quot;:&quot;Barnett_1977 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Brogden1988_reference&quot;,&quot;label&quot;:&quot;Brogden_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methyldopa_Singh1985_reference&quot;,&quot;label&quot;:&quot;Singh_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Singh1985_reference&quot;,&quot;label&quot;:&quot;Singh_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methyldopa_Brogden1988_reference&quot;,&quot;label&quot;:&quot;Brogden_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Methyldopa — `Methyldopa_Barnett1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-10 17:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The plasma clearance rate for methyldopa is 11.2 h-1, a dimensionally inconsistent value for a structural parameter.
+> The methyldopa clearance and volume of distribution parameters have dimensionally incorrect units, invalidating the model.
 
-<div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Barnett1977_reference" status="rejected" stale="true" population="normotensive and hypertensive subjects" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Barnett1977_reference" status="rejected" stale="false" population="normotensive and hypertensive subjects" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyldopa. Plasma levels following single intravenous, oral and multiple oral dosage in normotensive and hypertensive subjects. Clinical and experimental pharmacology & physiology 4(4):331–339 (1977).
@@ -37,7 +37,7 @@ Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyld
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyld
 
 ### Reviewer guidance
 
-**The plasma clearance rate for methyldopa is 11.2 h-1, a dimensionally inconsistent value for a structural parameter.**
+**The methyldopa clearance and volume of distribution parameters have dimensionally incorrect units, invalidating the model.**
 
-The record was derived solely from the paper's abstract, using summary statistics as a proxy for a fitted model. A structural parameter check identified a dimension mismatch in the clearance value. A second reader was unable to verify any of the extracted parameter values, including the clearance of 11.2 h-1. Extracted — methyldopa: λ1 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
+The total clearance is reported as 11.2 1/h, a dimensionally invalid unit for a volume/time parameter. The central volume of distribution is reported as 0.29 1/kg, which is dimensionless rather than a volume. Because the record was built from the abstract alone, these summary statistics were treated as model parameters, and a second reader could not locate values for the elimination rate or clearance in the source text. Extracted — methyldopa: λ1 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ke1: this record has 0.56, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

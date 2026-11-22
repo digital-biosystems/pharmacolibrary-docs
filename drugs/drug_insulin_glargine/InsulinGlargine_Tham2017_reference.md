@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the dose-to-clearance covariate value of -0.282 implies a negative clearance, which is physiologically implausible.
+> Insulin glargine was rejected because its clearance covariate effect is −0.282, with a covariate scenario producing an implausible negative clearance or volume.
 
 <div class="pk-model-meta" hidden drug="insulin glargine" model-id="InsulinGlargine_Tham2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="insulin glargine" parameterization="apparent" topology="1C"></div>
 
@@ -43,7 +43,7 @@ Tham LS, Schneck K, Ertekin A, Reviriego J. Modeling Pharmacokinetic Profiles of
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Tham LS, Schneck K, Ertekin A, Reviriego J. Modeling Pharmacokinetic Profiles of
 
 ### Reviewer guidance
 
-**The model was rejected because the dose-to-clearance covariate value of -0.282 implies a negative clearance, which is physiologically implausible.**
+**Insulin glargine was rejected because its clearance covariate effect is −0.282, with a covariate scenario producing an implausible negative clearance or volume.**
 
-The record lists the covariate effect of dose on clearance as -0.282, which contradicts the definition of clearance as a positive proportionality factor. Additionally, a second reader identified substantial discrepancies in extracted values, including apparent clearance (74.5 L/h vs 30.5 L/h) and absorption rate constant (0.0830 1/h vs 0.0365 1/h). Extracted — insulin glargine: Fab 1, kabs 0.0365 1/h, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h, CL -0.282.
+The record gives apparent clearance of 30.5 L/h and a clearance covariate effect of −0.282; the finding reports negative clearance or volume in a covariate scenario, but gives no scenario value. A second reader disagreed on the apparent clearance estimate (74.5) and whether clearance had a covariate effect. Extracted — insulin glargine: Fab 1, kabs 0.0365 1/h, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h, CL -0.282.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[absorption lag, alag].value`: this record has 0.265, the second reading 0.378; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[absorption lag, alag].value`: this record has 0.265, the second reading 0.378; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -106,21 +106,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.438 (7/16 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.438 (7/16 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption lag, alag].value` | 0.265 | 0.378 | mismatch |
-| `gpt-oss:120b` | `parameters[absorption rate constant, ka].value` | 0.0365 | 0.0830 | mismatch |
-| `gpt-oss:120b` | `parameters[apparent clearance].covariate_forms` | ['linear_fractional'] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[apparent clearance].value` | 30.5 | 74.5 | mismatch |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution].value` | 43.0 | 768 | mismatch |
-| `gpt-oss:120b` | `parameters[covariate_of_body_weight_on_baseline_endogenous_insulin]` | 0.739 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[duration of 0‐order absorption]` |  | 0.612 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q324_body_weight]` |  | 0.739 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q61_body_weight].value` | 2.48 | 0.00728 | mismatch |
+| `gpt-oss-120b` | `parameters[absorption lag, alag].value` | 0.265 | 0.378 | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate constant, ka].value` | 0.0365 | 0.0830 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance].value` | 30.5 | 74.5 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution].value` | 43.0 | 768 | mismatch |
+| `gpt-oss-120b` | `parameters[covariate_of_body_weight_on_baseline_endogenous_insulin]` | 0.739 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[duration of 0‐order absorption]` |  | 0.612 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q324_body_weight]` |  | 0.739 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_body_weight].value` | 2.48 | 0.00728 | mismatch |
 
 </details>
 

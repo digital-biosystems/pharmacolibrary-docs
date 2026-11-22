@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Bioavailability and lag time for lisinopril were left at library defaults, and covariate effects were not simulated.
+> Lisinopril’s bioavailability (F) has no reported value and was defaulted, leaving this parameter unsupported by the paper.
 
 <div class="pk-model-meta" hidden drug="lisinopril" model-id="Lisinopril_Sandra2024_reference" status="needs_review" stale="false" population="hypertensive children and adolescents with normal to mildly reduced kidney function" measured-compound="lisinopril" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Sandra L, Degraeuwe E, De Bruyne P, De Baere S, Croubels S, Van Bocxlaer JFP et 
 
 ## Population and dosing
 
-**Population:** hypertensive children and adolescents with normal to mildly reduced kidney function · condition hypertension · age group mixed · n = &gt;=13.
+**Population:** hypertensive children and adolescents with normal to mildly reduced kidney function · condition hypertension · age group mixed.
 
 ## Model
 
@@ -53,13 +53,13 @@ Sandra L, Degraeuwe E, De Bruyne P, De Baere S, Croubels S, Van Bocxlaer JFP et 
 
 ### Reviewer guidance
 
-**Bioavailability and lag time for lisinopril were left at library defaults, and covariate effects were not simulated.**
+**Lisinopril’s bioavailability (F) has no reported value and was defaulted, leaving this parameter unsupported by the paper.**
 
-The model uses default values for bioavailability (F) and lag time (Tlag) because these were not reported in the abstract-only source. Additionally, the simulation was limited to the reference individual, meaning the defined covariate scenarios for weight or kidney function were never exercised. These omissions prevent the record from representing the specific population model described in the paper. Extracted — lisinopril: kabs 0.075 h-1, V 31.4 L 70 kg-1, CL 24.2 L h-1 70 kg-1.
+F and Tlag were defaulted rather than explicitly estimated, so these values affect the simulated profile but are not supported by the paper. The record is abstract-only, so reported summary statistics stand in for a fitted model; the reported lisinopril estimates are kabs 0.075 h-1, V 31.38 L 70 kg-1, and CL 24.2 L h-1 70 kg-1. The covariate scenarios were not simulated: only the reference individual was simulated despite defined covariate effects. A second reader disputed the record (agreement 0.2), marking the dose compound and primary analyte unknown and the parameter entries inconsistently. Extracted — lisinopril: kabs 0.075 h-1, V 31.4 L 70 kg-1, CL 24.2 L h-1 70 kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lisinopril, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -141,14 +141,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=lisinopril) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | D1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=lisinopril) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

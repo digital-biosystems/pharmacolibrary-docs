@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefodizime&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/&quot;},{&quot;label&quot;:&quot;Dagrosa_1987 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefodizime_SchferKorting1986_reference&quot;,&quot;label&quot;:&quot;Sch\u00e4fer-Korting_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefodizime_SchferKorting1986_reference&quot;,&quot;label&quot;:&quot;Sch\u00e4fer-Korting_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefodizime_el1992_reference&quot;,&quot;label&quot;:&quot;el_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_el1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefodizime — `Cefodizime_Dagrosa1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:38 UTC (Needs review), but the paper was screened again on 2026-10-07 11:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; aUC∞ has no unit.
+> AUC∞ has no unit.
 
-<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_Dagrosa1987_reference" status="needs_review" stale="true" population="healthy adult males" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_Dagrosa1987_reference" status="needs_review" stale="false" population="healthy adult males" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dagrosa EE, Hajdú P, Malerczyk V, de Looze S, Seeger K, Grötsch H. Dose linearity and other pharmacokinetics of cefodizime after single-dose intravenous administration. Clinical therapeutics 10(1):18–31 (1987).
@@ -39,7 +39,7 @@ Dagrosa EE, Hajdú P, Malerczyk V, de Looze S, Seeger K, Grötsch H. Dose linear
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Dagrosa EE, Hajdú P, Malerczyk V, de Looze S, Seeger K, Grötsch H. Dose linear
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance; aUC∞ has no unit.**
+**AUC∞ has no unit.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefodizime: AUC∞ 0.82 r, AUC%ext 0.94 r, Vss 40 L, t1/2z 2.5 hours, fe 80 %.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefodizime: AUC∞ 0.82 r, AUC%ext 0.94 r, Vss 40 L, t1/2z 2.5 hours, fe 80 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefodizime, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

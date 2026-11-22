@@ -4,9 +4,11 @@
 
 # fosfomycin — `Fosfomycin_Edwina2023_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="fosfomycin" model-id="Fosfomycin_Edwina2023_reference" status="not_modelled" stale="false" population="healthy male volunteers" measured-compound="fosfomycin" parameterization="mechanistic" topology="2C"></div>
+> Fosfomycin clearance lacked an estimated value, causing the model to use a library placeholder and be quarantined.
+
+<div class="pk-model-meta" hidden drug="fosfomycin" model-id="Fosfomycin_Edwina2023_reference" status="model_quarantined" stale="false" population="healthy male volunteers" measured-compound="fosfomycin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Edwina AE, Koch BCP, Muller AE, Al Jalali V, Matzneller P, Zeitlinger M et al. Population plasma and urine pharmacokinetics and the probability of target attainment of fosfomycin in healthy male volunteers. European journal of clinical pharmacology 79(6):775–787 (2023).
@@ -14,7 +16,7 @@ Edwina AE, Koch BCP, Muller AE, Al Jalali V, Matzneller P, Zeitlinger M et al. P
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = $8$.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 **Dosing:** 1000, 8000 mg, iv, multiple, every 8 h.
 
@@ -26,7 +28,7 @@ Edwina AE, Koch BCP, Muller AE, Al Jalali V, Matzneller P, Zeitlinger M et al. P
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -37,7 +39,7 @@ Edwina AE, Koch BCP, Muller AE, Al Jalali V, Matzneller P, Zeitlinger M et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +49,13 @@ Edwina AE, Koch BCP, Muller AE, Al Jalali V, Matzneller P, Zeitlinger M et al. P
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Fosfomycin clearance lacked an estimated value, causing the model to use a library placeholder and be quarantined.**
+
+The record includes values for elimination rate constant, intercompartmental clearance, and central volume, but no value is provided for total clearance. Consequently, a default placeholder was used for clearance instead of an explicit estimate. The record was held back from publication to prevent the model from relying on an invented number for this essential parameter. Extracted — fosfomycin: kel 0.774 1/h, Q 11.8 L/h, V1 10.2 L, V2 9.74 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -120,12 +124,14 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | note |
-|---|---|---|
-| T0_analyte_identity | pass | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped | no covariate effects in record |
-| T3_param_coverage | skipped | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

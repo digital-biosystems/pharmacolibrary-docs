@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected because no kinetic parameters exist; the abstract-only extraction yielded nonsensical values, including a negative internalization rate of -3.13 1/h.
 
 <div class="pk-model-meta" hidden drug="2,2&#39;,3,3&#39;,4,4&#39;,5,5&#39;,6,6&#39;-Decabromobiphenyl" model-id="D_2233445566Decabromobiphenyl_Liu2025_reference" status="rejected" stale="false" population="marine planktonic food web (Chlorella sp., Brachionus plicatilis, Tigriopus japonicus)" measured-compound="decabromodiphenyl ether (BDE-209)" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,7 +45,13 @@ Liu Z, Tang X, Lv M, Li D, Zhang B, Li L et al. A toxicokinetic study of decabro
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected because no kinetic parameters exist; the abstract-only extraction yielded nonsensical values, including a negative internalization rate of -3.13 1/h.**
+
+The source was an exposure/outcome paper providing only summary statistics, not a fitted kinetic model, leading to the rejection for lacking valid kinetic quantities. The extracted internalization rate constant for decabromodiphenyl ether (BDE-209) is negative (-3.13 1/h), which is physically impossible for a first-order elimination process. Additionally, the absorption rate constant (12.83 1/h) was derived from abstract text rather than model fitting, rendering the parameter estimates unreliable. Extracted — decabromodiphenyl ether (BDE-209): kabs 12.8 1/h, kint -3.13 1/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

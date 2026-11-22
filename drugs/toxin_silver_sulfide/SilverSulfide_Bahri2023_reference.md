@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Total clearance of 3.9 mL/h and volume of 0.0247 L for silver sulfide fall outside physiological ranges, indicating a likely unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="Silver sulfide" model-id="SilverSulfide_Bahri2023_reference" status="rejected" stale="false" population="rats" measured-compound="silver_sulfide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,7 +48,13 @@ Bahri S, Abdollahizad E, Mahlooji I, Rezaee E, Abbasian Z, Dadashzadeh S. Ceraso
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Total clearance of 3.9 mL/h and volume of 0.0247 L for silver sulfide fall outside physiological ranges, indicating a likely unit or scale extraction error.**
+
+The recorded clearance of 3.9 mL/h is extremely low for systemic elimination, while the volume of distribution of 0.0247 L is less than typical human blood volume. These values are mutually inconsistent with physiological expectations for an intravenous or oral dose, suggesting the original units or scaling factors were misinterpreted during extraction. Consequently, the model was rejected due to implausible parameter magnitudes. Extracted — silver sulfide: CL 3.9 mL/h, V 0.0247 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

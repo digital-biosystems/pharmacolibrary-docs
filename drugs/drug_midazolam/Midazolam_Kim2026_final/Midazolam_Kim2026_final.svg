@@ -1416,7 +1416,7 @@ font-family="Sans" font-size="10" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1" transform="matrix(1,0,0,1,325.607,281.312)"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-31.475" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">ka=0.14 1/h</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-31.475" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">ka=0.52 1/h</text>
 </g>
 
 
@@ -1426,7 +1426,7 @@ font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1" transform="matrix(1,0,0,1,325.607,292.888)"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-23.155" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">Tlag=114 min</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-23.155" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">Tlag=1.2 min</text>
 </g>
 
 
@@ -1529,7 +1529,7 @@ font-family="Noto Sans" font-size="9.2415" font-weight="400" font-style="normal"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-7.01563" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
- ></text>
+ >7.88 L/h</text>
 </g>
 
 
@@ -1540,7 +1540,7 @@ font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-7.01563" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
- ></text>
+ >7.88 L/h</text>
 </g>
 
 
@@ -1868,7 +1868,7 @@ font-family="Sans" font-size="10" font-weight="400" font-style="normal"
 font-family="Noto Sans" font-size="8.7551" font-weight="400" font-style="normal" 
 >
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-7.76563" y="3.5" font-family="Noto Sans" font-size="8.7551" font-weight="400" font-style="normal" 
- >2.44 L/h</text>
+ ></text>
 </g>
 
 

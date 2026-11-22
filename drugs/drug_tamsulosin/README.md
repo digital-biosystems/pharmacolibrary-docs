@@ -25,19 +25,7 @@ Tamsulosin is an alpha-adrenoreceptor antagonist used to treat symptomatic benig
 
 ## Start here
 
-> **Tsuda_2010_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> paediatric patients with neuropathic and non-neuropathic bladder, n = ,
-  "condition": "neuropathic and non-neuropathic bladder",
-  "species": "human",
-  "compounds": [
-    {
-      "name": "tamsulosin",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    }
-  ],
-  "links": []. [Run it in the simulator](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md?tab=Simulation) · [record](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md)
+> **Tsuda_2010_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> paediatric patients with neuropathic and non-neuropathic bladder. [Run it in the simulator](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md?tab=Simulation) · [record](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -45,24 +33,8 @@ Tamsulosin is an alpha-adrenoreceptor antagonist used to treat symptomatic benig
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nikolic_2024_reference](drugs/drug_tamsulosin/Tamsulosin_Nikolic2024_reference.md) | — | 1-compartment (no model) | 0 | Nikolic VN et al., Population pharmacokinetics of tamsulos…, World journal of urology (2024) | [10.1007/s00345-024-05115-w](https://doi.org/10.1007/s00345-024-05115-w) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tamsulosin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ORM1` unknown | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

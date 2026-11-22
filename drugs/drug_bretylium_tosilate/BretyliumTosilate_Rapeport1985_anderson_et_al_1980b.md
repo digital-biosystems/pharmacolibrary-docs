@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> The clearance parameter is misidentified as creatinine clearance (15 ml/min) rather than bretylium elimination, causing the model to fail terminal half-life checks.
+> Bretylium’s 15 ml/min clearance entry is labeled creatinine clearance, misidentifying a biomarker measurement as drug disposition and prompting rejection.
 
 <div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Rapeport1985_anderson_et_al_1980b" status="rejected" stale="false" population="adults" measured-compound="bretylium" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Rapeport WG. Clinical pharmacokinetics of bretylium. Clinical pharmacokinetics 1
 
 ### Reviewer guidance
 
-**The clearance parameter is misidentified as creatinine clearance (15 ml/min) rather than bretylium elimination, causing the model to fail terminal half-life checks.**
+**Bretylium’s 15 ml/min clearance entry is labeled creatinine clearance, misidentifying a biomarker measurement as drug disposition and prompting rejection.**
 
-The record extracts a clearance value of 15 ml/min labeled as creatinine clearance, which is a renal biomarker, not the elimination rate constant for bretylium. This incorrect parameterization results in a simulated terminal half-life of 329 hours, which drastically exceeds the paper's reported terminal half-lives of 6 and 12 hours. Furthermore, the absorption rate constant was not provided in the source and was replaced with a library default, introducing additional structural uncertainty to the one-compartment model. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
+Although CL means total drug clearance in the record, its reported label is “Creatinine clearance (ml/min)” at 15 ml/min, which names a biomarker rather than bretylium. The model does not reproduce the paper's terminal half-life (paper 6, model 329). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The model also defaulted ka and Tlag, assumed F=1 and Fm=1 without molar correction, and used first-order depot input; the second reader disputed the dose compound, primary analyte, parameterization, and listed parameter estimates. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bretylium_tosilate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=bretylium) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 | T1_t_half_alpha | reference | skipped | 25 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | fail | 6 | 328.9 | 54.81 | hours→SI vs simulated h |
 | T1_t_half_beta | reference | fail | 14 | 328.9 | 23.49 | hours→SI vs simulated h |

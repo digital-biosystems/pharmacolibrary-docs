@@ -16,7 +16,7 @@ Forsdahl G, Jančić-Stojanović B, Anđelković M, Dikić N, Geisendorfer T, Je
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Cadmium sulphide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CadmiumSulphide_Klimisch1993_reference&quot;,&quot;label&quot;:&quot;Klimisch_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium_sulphide/CadmiumSulphide_Klimisch1993_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CadmiumSulphide_Klimisch1993_reference&quot;,&quot;label&quot;:&quot;Klimisch_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium_sulphide/CadmiumSulphide_Klimisch1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Cadmium sulphide
 
@@ -39,7 +39,7 @@ Chronic Oral: 0.0001 mg/kg/day
 
 ## Start here
 
-> **Klimisch_1993_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> Rats. [Run it in the simulator](drugs/toxin_cadmium_sulphide/CadmiumSulphide_Klimisch1993_reference.md?tab=Simulation) · [record](drugs/toxin_cadmium_sulphide/CadmiumSulphide_Klimisch1993_reference.md)
+> **Klimisch_1993_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> Rats. [Run it in the simulator](drugs/toxin_cadmium_sulphide/CadmiumSulphide_Klimisch1993_reference.md?tab=Simulation) · [record](drugs/toxin_cadmium_sulphide/CadmiumSulphide_Klimisch1993_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -47,7 +47,7 @@ Chronic Oral: 0.0001 mg/kg/day
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Klimisch_1993_reference](drugs/toxin_cadmium_sulphide/CadmiumSulphide_Klimisch1993_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Klimisch HJ, Lung deposition, lung clearance and ren…, Toxicology (1993) | [10.1016/0300-483x(93)90111-5](https://doi.org/10.1016/0300-483x(93)90111-5) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Klimisch_1993_reference](drugs/toxin_cadmium_sulphide/CadmiumSulphide_Klimisch1993_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Klimisch HJ, Lung deposition, lung clearance and ren…, Toxicology (1993) | [10.1016/0300-483x(93)90111-5](https://doi.org/10.1016/0300-483x(93)90111-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

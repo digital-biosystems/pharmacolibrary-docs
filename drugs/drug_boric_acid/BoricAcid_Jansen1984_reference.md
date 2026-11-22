@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S02A&quot;,&quot;href&quot;:&quot;atc/S02A.md&quot;},{&quot;label&quot;:&quot;boric acid&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/&quot;},{&quot;label&quot;:&quot;Jansen_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BoricAcid_Usuda1998_reference&quot;,&quot;label&quot;:&quot;Usuda_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Usuda1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # boric acid — `BoricAcid_Jansen1984_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="boric acid" model-id="BoricAcid_Jansen1984_reference" status="simulated" stale="false" population="healthy adult male volunteers" measured-compound="boric acid" parameterization="mechanistic" topology="2C"></div>
+> Boric acid’s reported total clearance of 54.6 L/h is disputed, leaving this abstract-only record held for review rather than a supported fitted model.
+
+<div class="pk-model-meta" hidden drug="boric acid" model-id="BoricAcid_Jansen1984_reference" status="needs_review" stale="false" population="healthy adult male volunteers" measured-compound="boric acid" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jansen JA, Andersen J, Schou JS. Boric acid single dose pharmacokinetics after intravenous administration to man. Archives of toxicology 55(1):64–67 (1984).
@@ -27,6 +29,8 @@ Jansen JA, Andersen J, Schou JS. Boric acid single dose pharmacokinetics after i
 <figure class="pk-models-diagram"><img src="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference.svg" alt="BoricAcid_Jansen1984_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | 120 h urinary excretion | fe | 98.7 | % of dose |
@@ -39,7 +43,7 @@ Jansen JA, Andersen J, Schou JS. Boric acid single dose pharmacokinetics after i
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +53,13 @@ Jansen JA, Andersen J, Schou JS. Boric acid single dose pharmacokinetics after i
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Boric acid’s reported total clearance of 54.6 L/h is disputed, leaving this abstract-only record held for review rather than a supported fitted model.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was read, so its summary statistics stand in for a fitted model. The second reader marked the dose compound and primary analyte unknown and did not confirm the reported urinary excretion, clearance, intercompartmental clearance, terminal half-life, or compartment volumes; agreement was 0.118, with 0 of 1 reader agreeing. Extracted — boric acid: fe 98.7 % of dose, CL 54.6 L/h, t1/2β 21 h, V1 0.251 l/kg, V2 0.456 l/kg, V3 0.34 l/kg, Q 66.6 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has boric acid, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -148,14 +152,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=boric acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=boric acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.118, 0 of 1 reader(s) agree | 0.118 | cross-check disputed by a second reader: verdict disputed, agreement 0.118, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

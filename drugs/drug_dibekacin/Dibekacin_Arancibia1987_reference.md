@@ -16,7 +16,7 @@ Arancibia A, Chávez J, Ibarra R, Ruiz I, Icarte A, Thambo S et al. Disposition 
 
 ## Population and dosing
 
-**Population:** healthy volunteers and patients with renal failure · condition renal impairment · age group adult · n = &gt;= 3000: The content exceeds the maximum length limit..
+**Population:** healthy volunteers and patients with renal failure · condition renal impairment · age group adult.
 
 ## Model
 

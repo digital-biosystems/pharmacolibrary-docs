@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;morphine&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/&quot;},{&quot;label&quot;:&quot;Papathanasiou_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Ihmsen2021_reference&quot;,&quot;label&quot;:&quot;Ihmsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Ihmsen2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_f&quot;,&quot;label&quot;:&quot;Andersen_1986_f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_f.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_j&quot;,&quot;label&quot;:&quot;Andersen_1986_j&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_j.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_k&quot;,&quot;label&quot;:&quot;Andersen_1986_k&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_k.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Venkatasubramanian2014_reference&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Romberg2004_reference&quot;,&quot;label&quot;:&quot;Romberg_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Romberg2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Morphine's first intercompartmental clearance was rejected because its unit 'ng' is mass, not volume, conflicting with the required volume dimension.
+> Morphine pharmacokinetic record rejected due to dimensional error on intercompartmental clearance Q1 and an implausible clearance magnitude.
 
-<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Papathanasiou2016_reference" status="rejected" stale="false" population="rats" measured-compound="morphine, gabapentin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Papathanasiou2016_reference" status="rejected" stale="false" population="rats" measured-compound="morphine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Papathanasiou T, Juul RV, Gabel-Jensen C, Kreilgaard M, Lund TM. Population Pharmacokinetic Modelling of Morphine, Gabapentin and their Combination in the Rat. Pharmaceutical research 33(11):2630–2643 (2016).
@@ -17,9 +17,11 @@ Papathanasiou T, Juul RV, Gabel-Jensen C, Kreilgaard M, Lund TM. Population Phar
 
 ## Population and dosing
 
-**Population:** rats · condition healthy.
+**Population:** rats · condition pain · age group adult.
 
-**Dosing:** 70, 210, 490 mg, subcutaneous, single.
+**Dosing:** 70, 210, 490 mg, sc, single.
+
+**Dosed compound ≠ measured compound:** dosed morphine and gabapentin, measured morphine.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -35,25 +37,26 @@ Papathanasiou T, Juul RV, Gabel-Jensen C, Kreilgaard M, Lund TM. Population Phar
 
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
-| CLMor / F (L/min) | CL/F | 0.0148 | L/min | 2.9 |  |
-| VMor / F (L) | V/F | 0.171 | L | 16.3 |  |
+| CLMor / F (L/min) | CL/F | 0.0148 | L/min | 2.9 | 19.8 (9.6% RSE) |
+| VMor / F (L) | V/F | 0.171 | L | 16.3 | 52.2 (17% RSE) |
 | Q1Mor / F (L/min) | Q/F | 0.0394 | L/min | 8.6 |  |
-| V3Mor / F (L) | V2/F | 0.611 | L | 4.1 |  |
-| Q2Mor / F (L/min) | Q2/F | 0.0043 | L/min | 8.8 |  |
+| V3Mor / F (L) | V2/F | 0.611 | L | 4.1 | 16.5 (14% RSE) |
+| Q2Mor / F (L/min) | Q2/F | 0.0043 | L/min | 8.8 | 48.1 (13.4% RSE) |
 | V4Mor / F (L) | V3/F | 1.96 | L | 22.7 |  |
 | ka, max, Mor (min⁻¹) | kabs | 0.101 | min⁻¹ | 8.9 | 22.2 (11% RSE) |
-| CLM3G / Fmet (L/min) | CL | 0.0121 | L/min | 9.1 |  |
-| VM3G / Fmet (L) | V | 0.672 | L | 6.7 |  |
-| kmax.65 (ng/min) | equation variable | 2.07 | ng/min | 15.8 |  |
+| CLM3G / Fmet (L/min) | CL | 0.0121 | L/min | 9.1 | 32.2 (8% RSE) |
+| VM3G / Fmet (L) | V | 0.672 | L | 6.7 | 35.9 (8% RSE) |
+| kmax.65 (ng/min) | equation variable | 2.07 | ng/min | 15.8 | 57.4 (17% RSE) |
 | Km.65 (ng) | Km | 124 | ng | 40.6 |  |
+| Freq (min) | equation variable | 652 | min | 15.8 |  |
 | ktr (min⁻¹) | ktr | 0.726 | min⁻¹ | 23.3 |  |
-| ka,Gab (min⁻¹) | kabs | 0.0805 | min⁻¹ | 5.6 |  |
+| ka,Gab (min⁻¹) | kabs | 0.0805 | min⁻¹ | 5.6 | 39.1 (16% RSE) |
 | theta_q22_wt_power | theta_q22_wt_power | 0.00125 |  | 3.3 |  |
 | theta_q63_wt_power | theta_q63_wt_power | 0.25 |  | 1.9 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.432). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.463). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,11 +66,11 @@ Papathanasiou T, Juul RV, Gabel-Jensen C, Kreilgaard M, Lund TM. Population Phar
 
 ### Reviewer guidance
 
-**Morphine's first intercompartmental clearance was rejected because its unit 'ng' is mass, not volume, conflicting with the required volume dimension.**
+**Morphine pharmacokinetic record rejected due to dimensional error on intercompartmental clearance Q1 and an implausible clearance magnitude.**
 
-The record lists Q/F as 0.0394 L/min, but the check flagged the unit 'ng' as mass, which cannot represent a volume of distribution. Additionally, a reported unit for this parameter could not be converted to standard units, so the parameter lacked a valid SI value. A second reader disagreed that gabapentin was a measured compound in this morphine model. Extracted — morphine: CL/F 0.0148 L/min, V/F 0.171 L, Q/F 0.0394 L/min, V2/F 0.611 L, Q2/F 0.0043 L/min, V3/F 1.96 L, kabs 0.101 min⁻¹; morphine-3-glucuronide: CL 0.0121 L/min, V 0.672 L, Km 124 ng, ktr 0.726 min⁻¹; gabapentin: kabs 0.0805 min⁻¹.
+The apparent intercompartmental clearance Q1/F (0.0394 L/min) has a unit dimension mismatch, as the system identified the unit as mass rather than volume, conflicting with the required clearance dimensions. Additionally, the total clearance for morphine-3-glucuronide (0.0121 L/min) falls outside the physiological window, suggesting an extraction error in magnitude or units. The record also contains parameters for gabapentin (absorption rate 0.0805 min⁻¹, weight power covariates) which are inconsistent with a morphine-only study, further supporting the rejection. Extracted — morphine: CL/F 0.0148 L/min, V/F 0.171 L, Q/F 0.0394 L/min, V2/F 0.611 L, Q2/F 0.0043 L/min, V3/F 1.96 L, kabs 0.101 min⁻¹; morphine-3-glucuronide: CL 0.0121 L/min, V 0.672 L, Km 124 ng, ktr 0.726 min⁻¹; gabapentin: kabs 0.0805 min⁻¹.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has morphine, gabapentin, the second reading morphine; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has morphine and gabapentin, the second reading morphine; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -75,19 +78,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLMor / F (L/min) | `Q27` · CL/F | 0.0148 | L/min | 2.467e-07 | m3/s | l/min | 2.9 | llm (0.6) | Papathanasiou_2016_table_p7_1:row1:col1 |  |
-| VMor / F (L) | `Q76` · V/F | 0.171 | L | 0.000171 | m3 | l | 16.3 | llm (0.6) | Papathanasiou_2016_table_p7_1:row2:col1 |  |
+| CLMor / F (L/min) | `Q27` · CL/F | 0.0148 | L/min | 2.467e-07 | m3/s | l/min | 2.9 | llm (0.6) | Papathanasiou_2016_table_p7_1:row1:col1 | 19.8 (9.6% RSE) |
+| VMor / F (L) | `Q76` · V/F | 0.171 | L | 0.000171 | m3 | l | 16.3 | llm (0.6) | Papathanasiou_2016_table_p7_1:row2:col1 | 52.2 (17% RSE) |
 | Q1Mor / F (L/min) | `Q69` · Q/F | 0.0394 | L/min | 6.567e-07 | m3/s | l/min | 8.6 | exact (1) | Papathanasiou_2016_table_p7_1:row3:col1 |  |
-| V3Mor / F (L) | `Q82` · V2/F | 0.611 | L | 0.000611 | m3 | l | 4.1 | exact (1) | Papathanasiou_2016_table_p7_1:row4:col1 |  |
-| Q2Mor / F (L/min) | `Q80` · Q2/F | 0.0043 | L/min | 7.167e-08 | m3/s | l/min | 8.8 | special_case (0.95) | Papathanasiou_2016_table_p7_1:row5:col1 |  |
+| V3Mor / F (L) | `Q82` · V2/F | 0.611 | L | 0.000611 | m3 | l | 4.1 | exact (1) | Papathanasiou_2016_table_p7_1:row4:col1 | 16.5 (14% RSE) |
+| Q2Mor / F (L/min) | `Q80` · Q2/F | 0.0043 | L/min | 7.167e-08 | m3/s | l/min | 8.8 | special_case (0.95) | Papathanasiou_2016_table_p7_1:row5:col1 | 48.1 (13.4% RSE) |
 | V4Mor / F (L) | `Q78` · V3/F | 1.96 | L | 0.00196 | m3 | l | 22.7 | exact (1) | Papathanasiou_2016_table_p7_1:row6:col1 |  |
 | ka, max, Mor (min⁻¹) | `Q49` · kabs | 0.101 | min⁻¹ | 0.001683 | 1/s | 1/min | 8.9 | llm_confirmed (0.6) | Papathanasiou_2016_table_p7_1:row7:col1 | 22.2 (11% RSE) |
-| CLM3G / Fmet (L/min) | `Q22` · CL | 0.0121 | L/min | 2.017e-07 | m3/s | l/min | 9.1 | exact (1) | Papathanasiou_2016_table_p7_1:row12:col1 |  |
-| VM3G / Fmet (L) | `Q61` · V | 0.672 | L | 0.000672 | m3 | l | 6.7 | exact (1) | Papathanasiou_2016_table_p7_1:row13:col1 |  |
-| kmax.65 (ng/min) | `Q900` · equation variable | 2.07 | ng/min |  |  | ng/min | 15.8 | llm (0.6) | Papathanasiou_2016_table_p7_1:row15:col1 |  |
+| CLM3G / Fmet (L/min) | `Q22` · CL | 0.0121 | L/min | 2.017e-07 | m3/s | l/min | 9.1 | exact (1) | Papathanasiou_2016_table_p7_1:row12:col1 | 32.2 (8% RSE) |
+| VM3G / Fmet (L) | `Q61` · V | 0.672 | L | 0.000672 | m3 | l | 6.7 | exact (1) | Papathanasiou_2016_table_p7_1:row13:col1 | 35.9 (8% RSE) |
+| kmax.65 (ng/min) | `Q900` · equation variable | 2.07 | ng/min |  |  | ng/min | 15.8 | llm (0.6) | Papathanasiou_2016_table_p7_1:row15:col1 | 57.4 (17% RSE) |
 | Km.65 (ng) | `Q1` · Km | 124 | ng |  |  | ng | 40.6 | llm (0.6) | Papathanasiou_2016_table_p7_1:row16:col1 |  |
+| Freq (min) | `Q900` · equation variable | 652 | min |  |  | min | 15.8 | llm (0.6) | Papathanasiou_2016_table_p7_1:row17:col1 |  |
 | ktr (min⁻¹) | `Q306` · ktr | 0.726 | min⁻¹ | 0.0121 | 1/s | 1/min | 23.3 | exact (1) | Papathanasiou_2016_table_p7_1:row19:col1 |  |
-| ka,Gab (min⁻¹) | `Q49` · kabs | 0.0805 | min⁻¹ | 0.001342 | 1/s | 1/min | 5.6 | llm_confirmed (0.6) | Papathanasiou_2016_table_p7_1:row26:col1 |  |
+| ka,Gab (min⁻¹) | `Q49` · kabs | 0.0805 | min⁻¹ | 0.001342 | 1/s | 1/min | 5.6 | llm_confirmed (0.6) | Papathanasiou_2016_table_p7_1:row26:col1 | 39.1 (16% RSE) |
 | theta_q22_wt_power | `Q900` · theta_q22_wt_power | 0.00125 |  |  |  |  | 3.3 |  | Papathanasiou_2016_table_p7_1:row24:col1 |  |
 | theta_q63_wt_power | `Q900` · theta_q63_wt_power | 0.25 |  |  |  |  | 1.9 |  | Papathanasiou_2016_table_p7_1:row25:col1 |  |
 
@@ -95,6 +99,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| F | Q40 | exact |
 
 ## Departures & gaps
 
@@ -115,25 +125,43 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section residual_error: 'σM3G,add (ng/ml)' routed out of structural estimates ('Residual Error')
 - table section residual_error: 'corr. σMor,add - σM3G,add (%)' routed out of structural estimates ('Residual Error')
 - table section residual_error: 'σGab,prop (%)' routed out of structural estimates ('Residual Error')
+- column 'estimate (rse)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'A50, Mor (ng)' — extend the ontology if this is a real PK parameter (source ['Papathanasiou_2016_table_p7_1:row8:col1'])
 - dropped unlinked row (NIL): 'Fbil (%)' — extend the ontology if this is a real PK parameter (source ['Papathanasiou_2016_table_p7_1:row14:col1'])
 - unit_dimension_mismatch: 'Km.65 (ng)' → Q1 (unit '[mass]' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped unlinked row (NIL): 'Freq (min)' — extend the ontology if this is a real PK parameter (source ['Papathanasiou_2016_table_p7_1:row17:col1'])
 - dropped unlinked row (NIL): 'Del (unitless)' — extend the ontology if this is a real PK parameter (source ['Papathanasiou_2016_table_p7_1:row18:col1'])
 - dropped unlinked row (NIL): 'O-Gab (unitless)' — extend the ontology if this is a real PK parameter (source ['Papathanasiou_2016_table_p7_1:row20:col1'])
-- dropped unlinked row (NIL): 'F50,Gab (ug)' — extend the ontology if this is a real PK parameter (source ['Papathanasiou_2016_table_p7_1:row27:col1'])
+- routed 'F50,Gab (ug)' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
+- dropped value-less row: 'k a,Mor'
+- dropped value-less row: 'k max'
+- dropped value-less row: 'A 50'
+- dropped value-less row: 'k 23, k 32'
+- dropped value-less row: 'k 24, k 42'
+- dropped value-less row: 'CL Mor'
+- dropped value-less row: 'F met'
+- dropped value-less row: 'Gab'
+- dropped value-less row: 'k tr'
+- dropped value-less row: 'F bil'
+- dropped value-less row: 'Freq'
+- dropped value-less row: 'Del'
+- dropped value-less row: 'K m'
+- dropped value-less row: 'CL M3G'
+- dropped value-less row: 'k 56'
+- dropped value-less row: 'k 50'
+- dropped value-less row: 'k a,Gab'
+- dropped value-less row: 'F max'
+- dropped value-less row: 'F 50'
+- dropped value-less row: 'CL Gab'
 - covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q63 has no base parameter row (kept as unattached equation-variable)
 - metabolite volume: 'VM3G / Fmet (L)' Q63→Q61 for morphine-3-glucuronide — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=morphine, gabapentin
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=morphine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: PK_3M_9C — formed from central; parent 3, metabolites [1]
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 31/31 row label(s) assigned, 21 linked by role; re-tagged parent→morphine ×15, parent→morphine-3-glucuronide ×13, parent→gabapentin ×7
+- row roles: 13 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=compartmental; 52/52 row label(s) assigned, 21 linked by role; re-tagged parent→morphine ×13, parent→morphine-3-glucuronide ×12, parent→gabapentin ×7
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-
-**Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 
 ## Validation
 
@@ -142,21 +170,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.432 (16/37 fields) | 21 |
+| `gpt-oss-120b` | not confirmed | 0.463 (19/41 fields) | 22 |
 
-<details><summary>21 field discrepancies</summary>
+<details><summary>22 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[clmor / f]` |  | 0.0148 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clmor / f]` | 0.0148 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[del]` |  | 0.631 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f50,gab]` |  | 43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fbil]` |  | 0.375 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[freq]` | 652 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka, max, mor]` |  | 0.101 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka, max, mor]` | 0.101 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kmax.65].parameter_id` | Q900 | Q305 | mismatch |
-| `gpt-oss-120b` | `parameters[ktr]` | 0.726 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kmax.65].parameter_id` | Q900 | Q66 | mismatch |
 | `gpt-oss-120b` | `parameters[q1mor / f]` |  | 0.0394 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[q1mor / f]` | 0.0394 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[q2mor / f]` |  | 0.0043 | only_one_extracted |
@@ -167,8 +197,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[v4mor / f]` | 1.96 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vmor / f]` |  | 0.171 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vmor / f]` | 0.171 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | morphine, gabapentin | morphine | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | morphine, gabapentin | morphine | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | morphine and gabapentin | morphine | mismatch |
 
 </details>
 
@@ -202,7 +231,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.726 L/h | ['Papathanasiou_2016_table_p7_1:row12:col1'] |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.888 L/h | ['Papathanasiou_2016_table_p7_1:row1:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 0.672 L | ['Papathanasiou_2016_table_p7_1:row13:col1'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 0.171 L | ['Papathanasiou_2016_table_p7_1:row2:col1'] |
+| C9_phys_window_Q76 | fail | volume within physiological range | 0.171 L | ['Papathanasiou_2016_table_p7_1:row2:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 0.611 L | ['Papathanasiou_2016_table_p7_1:row4:col1'] |
 
 <details class="legend">
@@ -227,4 +256,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmorphine%5D%20Morphine_Papathanasiou2016_reference&body=Drug%3A%20morphine%0ARecord%3A%20Morphine_Papathanasiou2016_reference%0APaper%3A%20Papathanasiou_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_morphine/Morphine_Papathanasiou2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 10:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 07:18 UTC</sub>

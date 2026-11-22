@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;mecillinam&quot;,&quot;href&quot;:&quot;drugs/drug_mecillinam/&quot;},{&quot;label&quot;:&quot;Koumaki_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mecillinam_Koumaki2023_reference&quot;,&quot;label&quot;:&quot;Koumaki_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mecillinam/Mecillinam_Koumaki2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mecillinam_Koumaki2023_reference&quot;,&quot;label&quot;:&quot;Koumaki_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mecillinam/Mecillinam_Koumaki2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Mecillinam_Soback1986_reference&quot;,&quot;label&quot;:&quot;Soback_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mecillinam/Mecillinam_Soback1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mecillinam — `Mecillinam_Koumaki2023_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="mecillinam" model-id="Mecillinam_Koumaki2023_reference" status="simulated" stale="false" population="healthy volunteers" measured-compound="mecillinam" parameterization="mechanistic" topology="2C"></div>
+> A second reader disagreed with the identified dose compound and primary analyte for mecillinam, disputing the record's validation.
+
+<div class="pk-model-meta" hidden drug="mecillinam" model-id="Mecillinam_Koumaki2023_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="mecillinam" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Koumaki V, Dokoumetzidis A, Angelerou MGF, Baka S, Balakrishnan I, Tsakris A. Pharmacokinetic/Pharmacodynamic Determination of Systemic MIC Breakpoints for Intermittent, Extended, and Continuous Infusion Dosage Regimens of Mecillinam. Microbiology spectrum 11(2):e0344122 (2023).
@@ -27,6 +29,8 @@ Koumaki V, Dokoumetzidis A, Angelerou MGF, Baka S, Balakrishnan I, Tsakris A. Ph
 <figure class="pk-models-diagram"><img src="drugs/drug_mecillinam/Mecillinam_Koumaki2023_reference/Mecillinam_Koumaki2023_reference.svg" alt="Mecillinam_Koumaki2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | CL (mL/min/kg) | CL | 3.45 | mL/min/kg | 17.1 | 10.2 (None% RSE) |
@@ -36,7 +40,7 @@ Koumaki V, Dokoumetzidis A, Angelerou MGF, Baka S, Balakrishnan I, Tsakris A. Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Koumaki V, Dokoumetzidis A, Angelerou MGF, Baka S, Balakrishnan I, Tsakris A. Ph
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**A second reader disagreed with the identified dose compound and primary analyte for mecillinam, disputing the record's validation.**
+
+The record identifies mecillinam as the measured compound and primary analyte, but a second reader marked both as unknown. This disagreement resulted in an agreement score of 0.833, meaning 0 of 1 readers agreed with the initial classification. The conflicting identification of the study's central molecule caused the record to be held back. Extracted — mecillinam: CL 3.45 mL/min/kg, V1 123 mL/kg, Q 6.74 mL/min/kg, V2 80.6 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mecillinam, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -120,14 +126,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=mecillinam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=mecillinam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Miralles-Garc\u00eda_1981 \u00b7 i&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Latif2015_reference&quot;,&quot;label&quot;:&quot;Latif_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Latif2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Levothyroxine — `Levothyroxine_MirallesGarca1981_i`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 14:40 UTC (Rejected), but the paper was screened again on 2026-11-04 00:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the zero-order input rate unit could not be converted to SI, leaving the metabolite compartment unlinked from the dose.
+> The levothyroxine model was rejected due to a dimension mismatch in the dose-normalized AUC unit and an unreachable triiodothyronine compartment.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_i" status="rejected" stale="true" population="ewes with or without acute liver insufficiency" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_i" status="rejected" stale="false" population="non-pregnant ewes with acute hepatic insufficiency and controls" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. The kinetics of the thyroid hormones and the peripheral conversion rate of thyroxine to triiodothyronine in acute liver insufficiency under experimental conditions. Hormone and metabolic research = Hormon- und Stoffwechselforschung = Hormones et metabolisme 13(3):158–164 (1981).
@@ -17,7 +17,9 @@ Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. T
 
 ## Population and dosing
 
-**Population:** ewes with or without acute liver insufficiency · condition acute liver insufficiency (induced) vs healthy · n = /&gt;.
+**Population:** ewes with or without acute liver insufficiency · condition acute liver insufficiency (induced) vs healthy.
+
+**Dosed compound ≠ measured compound:** dosed 125I-T3, measured triiodothyronine (T3) or thyroxine (T4).
 
 > **Species: sheep.** This record comes from an animal study (sheep), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -48,7 +50,7 @@ Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. T
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.038). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.038). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,9 +60,9 @@ Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. T
 
 ### Reviewer guidance
 
-**Record rejected because the zero-order input rate unit could not be converted to SI, leaving the metabolite compartment unlinked from the dose.**
+**The levothyroxine model was rejected due to a dimension mismatch in the dose-normalized AUC unit and an unreachable triiodothyronine compartment.**
 
-The zero-order input rate of 50 ng/100 was reported in a unit that could not be converted to standard SI units, preventing the model from being built. Consequently, the triiodothyronine (T3) metabolite compartment remained unreachable from the dose. The second reader also disputed the dose compound identification and the existence of specific peripheral transfer constants. Extracted — levothyroxine: λ1 0.315 h⁻¹, kel 0.035 h⁻¹, t1/2α 2.2 h, t1/2β 19.3 h, k12 0.027 h⁻¹, k21 0.039 h⁻¹, k13 0.283 h⁻¹, V1 5.78 l, … (+4).
+The dose-normalized area under the curve is reported in micrograms per day per kilogram, conflicting with the required concentration-time dimension. Furthermore, the triiodothyronine metabolite compartment has no defined path from the thyroxine dose, rendering it orphaned. A reported unit could not be converted to SI, preventing the model builder from processing the parameter value. Extracted — levothyroxine: λ1 0.315 h⁻¹, kel 0.035 h⁻¹, t1/2α 2.2 h, t1/2β 19.3 h, k12 0.027 h⁻¹, k21 0.039 h⁻¹, k13 0.283 h⁻¹, V1 5.78 l, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triiodothyronine (T3) or thyroxine (T4), the second reading thyroxine (T4); it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -217,4 +219,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D%20Levothyroxine_MirallesGarca1981_i&body=Drug%3A%20levothyroxine%0ARecord%3A%20Levothyroxine_MirallesGarca1981_i%0APaper%3A%20Miralles-Garc%C3%ADa_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/Levothyroxine_MirallesGarca1981_i%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 00:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 01:13 UTC</sub>

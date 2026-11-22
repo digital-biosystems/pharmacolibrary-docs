@@ -4,11 +4,11 @@
 
 # lenvatinib — `Lenvatinib_Majid2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-07 02:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent intercompartmental clearance was recorded with units of L/h, causing a dimensional mismatch for this structural parameter.
+> The record for lenvatinib was rejected because the inter-compartmental clearance parameter was assigned a dimensionless unit instead of a flow rate.
 
-<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Majid2024_reference" status="rejected" stale="true" population="subjects from 19 studies, including healthy subjects and patients with RR-DTC, RCC, and HCC" measured-compound="lenvatinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Majid2024_reference" status="rejected" stale="false" population="subjects from 19 studies, including healthy subjects and patients with RR-DTC, RCC, and HCC" measured-compound="lenvatinib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Majid O, Hayato S, Sreerama Reddy SH, Lalovic B, Hihara T, Hoshi T et al. Population pharmacokinetic-pharmacodynamic modeling of serum biomarkers as predictors of tumor dynamics following lenvatinib treatment in patients with radioiodine-refractory differentiated thyroid cancer (RR-DTC). CPT: pharmacometrics & systems pharmacology 13(6):954–969 (2024).
@@ -46,7 +46,7 @@ Majid O, Hayato S, Sreerama Reddy SH, Lalovic B, Hihara T, Hoshi T et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Majid O, Hayato S, Sreerama Reddy SH, Lalovic B, Hihara T, Hoshi T et al. Popula
 
 ### Reviewer guidance
 
-**The apparent intercompartmental clearance was recorded with units of L/h, causing a dimensional mismatch for this structural parameter.**
+**The record for lenvatinib was rejected because the inter-compartmental clearance parameter was assigned a dimensionless unit instead of a flow rate.**
 
-The record lists an intercompartmental clearance value of 3.57 with units of L/h, which is dimensionally incorrect for a flow parameter. Additionally, the absolute bioavailability parameter lacked a defined unit that could be standardized for the review. The second reader disagreed on the assignment of several covariate power parameters. Extracted — lenvatinib: CL/F 6.28 L/h, V1/F 46 L, V2/F 28.3 L, V3/F 30.9 L, Q 3.57 L/h, kabs 0.803 1/h, D1 1.27 h, Fab 0.882, … (+1).
+The parameter representing flow between the central and peripheral compartments is recorded with the value 0.910 and a unit of ratio. This unit is dimensionless, which conflicts with the parameter's physical dimension as a clearance requiring a volume-per-time unit. Consequently, the value could not be converted to standard SI units, leaving the model parameter undefined. Extracted — lenvatinib: CL/F 6.28 L/h, V1/F 46 L, V2/F 28.3 L, V3/F 30.9 L, Q 3.57 L/h, kabs 0.803 1/h, D1 1.27 h, Fab 0.882, … (+1).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of alp (&gt;uln) - cl/f: this record has 0.910, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

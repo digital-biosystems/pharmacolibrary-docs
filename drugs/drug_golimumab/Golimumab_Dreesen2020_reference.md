@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Golimumab record held back because absorption lag lacked a value and the model incorrectly used apparent clearance parameters for a subcutaneous drug.
+> Golimumab record held back due to cross-check dispute; second reader rejected the value 3.85 and identified missing parameters.
 
 <div class="pk-model-meta" hidden drug="golimumab" model-id="Golimumab_Dreesen2020_reference" status="needs_review" stale="false" population="adults with ulcerative colitis" measured-compound="golimumab" parameterization="apparent" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Dreesen E, Kantasiripitak W, Detrez I, Stefanović S, Vermeire S, Ferrante M et 
 
 ## Population and dosing
 
-**Population:** adults with ulcerative colitis · condition ulcerative colitis · age group adult · n = —56.
+**Population:** adults with ulcerative colitis · condition ulcerative colitis · age group adult.
 
 **Dosing:** 50, 100, 200 mg, sc, multiple, every 240 h.
 
@@ -54,9 +54,9 @@ Dreesen E, Kantasiripitak W, Detrez I, Stefanović S, Vermeire S, Ferrante M et 
 
 ### Reviewer guidance
 
-**Golimumab record held back because absorption lag lacked a value and the model incorrectly used apparent clearance parameters for a subcutaneous drug.**
+**Golimumab record held back due to cross-check dispute; second reader rejected the value 3.85 and identified missing parameters.**
 
-The absorption lag parameter was not extracted from the data, leaving it without a defined value. The model also assumed full bioavailability, treating subcutaneous dosing as intravenous. Clearance, central volume, intercompartmental clearance, and peripheral volume were all parameterized without accounting for absorption efficiency. Extracted — golimumab: kabs 0.473 d -1, CL/F 0.442 L/d, V1/F 8.64 L, Q/F 0.43 L/d, V2/F 4.48 L.
+The model builder did not extract a value for the lag time, resulting in an implicit default assumption. The second reader disagreed with the recorded value of 3.85 and identified additional parameter values, such as 4.09, that are absent from this record. This conflict produced a cross-check agreement ratio of 0.583, indicating insufficient consensus for publication. Extracted — golimumab: kabs 0.473 d -1, CL/F 0.442 L/d, V1/F 8.64 L, Q/F 0.43 L/d, V2/F 4.48 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has golimumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -185,15 +185,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=golimumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-1: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=golimumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

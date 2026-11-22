@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;amprenavir&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/&quot;},{&quot;label&quot;:&quot;Okusanya_2007 \u00b7 median&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amprenavir_Johnson2014_reference&quot;,&quot;label&quot;:&quot;Johnson_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_mean&quot;,&quot;label&quot;:&quot;Okusanya_2007_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_mean&quot;,&quot;label&quot;:&quot;Okusanya_2007_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Johnson2014_reference&quot;,&quot;label&quot;:&quot;Johnson_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Amprenavir's clearance parameter was left at library defaults, causing the model to be quarantined rather than published with an invented value.
+> Amprenavir’s clearance (Cl) has no reported estimate, so a placeholder—not a measured value—was used and the model was held back.
 
 <div class="pk-model-meta" hidden drug="amprenavir" model-id="Amprenavir_Okusanya2007_median" status="model_quarantined" stale="false" population="HIV-seronegative healthy adults" measured-compound="amprenavir" parameterization="apparent" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Okusanya O, Forrest A, DiFrancesco R, Bilic S, Rosenkranz S, Para MF et al. Comp
 
 ### Reviewer guidance
 
-**Amprenavir's clearance parameter was left at library defaults, causing the model to be quarantined rather than published with an invented value.**
+**Amprenavir’s clearance (Cl) has no reported estimate, so a placeholder—not a measured value—was used and the model was held back.**
 
-The record lists apparent clearance as 0.917 liters/h/kg, but the system defaulted the actual clearance parameter, preventing a valid fit. The model builder also assumed complete bioavailability (F=1) and no molar correction for the apparent parameterization. A secondary reader identified a discrepancy in the identification of the primary clearance parameter, further complicating the record's validation. Extracted — amprenavir: V1/F 0.987 liters/kg, V2/F 5.61 liters/kg, Q 0.32 liters/h/kg, CLnorm/F 0.917 liters/h/kg, FR 0.065, tlag 0.013 h, kabs 0.995 h Ϫ1, kel 0.963 h Ϫ1, … (+4).
+No value for amprenavir's clearance. The model was built, but amprenavir's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The builder also assumed F=1 and Fm=1, with no molar correction. A second reader disputed the dose-compound and primary-analyte identification, the assignment of the reported normalized apparent clearance, and the 0.065 renal bioavailability estimate; the verdict was disputed with agreement 0.765. Extracted — amprenavir: V1/F 0.987 liters/kg, V2/F 5.61 liters/kg, Q 0.32 liters/h/kg, CLnorm/F 0.917 liters/h/kg, FR 0.065, tlag 0.013 h, kabs 0.995 h Ϫ1, kel 0.963 h Ϫ1, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amprenavir, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -150,15 +150,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=amprenavir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 8 scholar param(s) emitted or defaulted | 8 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=amprenavir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 8 scholar param(s) emitted or defaulted | 8 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.765, 0 of 1 reader(s) agree | 0.765 | cross-check disputed by a second reader: verdict disputed, agreement 0.765, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

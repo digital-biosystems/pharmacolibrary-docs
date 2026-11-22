@@ -16,7 +16,7 @@ Cacek AT, Gobburu JV, Gopalakrishnan M. Population Pharmacokinetics of an Intran
 
 ## Population and dosing
 
-**Population:** healthy volunteers · age group adult · n = , "condition": "healthy", "species": "human", "compounds": [ { "name": "oxymetazoline", "role": "parent", "dosed": "yes", "measured": "yes", "has_parameters": "yes" }, { "name": "tetracaine", "role": "co-administered", "dosed": "yes", "measured": "no", "has_parameters": "no" }, { "name": "para-butylaminobenzoic acid", "role": "metabolite", "dosed": "no", "measured": "yes", "has_parameters": "yes" } ], "links": [ { "from": "tetracaine", "to": "para-butylaminobenzoic acid", "relation": "metabolism", "link_parameter": "none" } ] }.
+**Population:** healthy volunteers · age group adult.
 
 ## Model
 

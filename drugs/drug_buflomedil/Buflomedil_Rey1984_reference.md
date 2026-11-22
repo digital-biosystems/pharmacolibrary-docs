@@ -15,7 +15,7 @@ Rey E, d'Athis P, Richard MO, Fillastre JP, Olive G. Pharmacokinetics of buflome
 
 ## Population and dosing
 
-**Population:** patients with chronic renal failure · condition chronic renal failure · age group adult · n = &gt;=9.
+**Population:** patients with chronic renal failure · condition chronic renal failure · age group adult.
 
 ## Model
 

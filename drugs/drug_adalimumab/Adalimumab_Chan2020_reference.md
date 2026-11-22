@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Adalimumab model uses library defaults for absorption rate constant, unsupported by the source, invalidating the oral parameterization.
+> Adalimumab’s absorption-rate constant (ka) has no reported value and was defaulted, leaving the record without a paper-supported estimate and prompting its hold.
 
 <div class="pk-model-meta" hidden drug="adalimumab" model-id="Adalimumab_Chan2020_reference" status="needs_review" stale="false" population="" measured-compound="adalimumab" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Chan P, Yu J, Chinn L, Prohn M, Huisman J, Matzuka B et al. Population Pharmacok
 
 ### Reviewer guidance
 
-**Adalimumab model uses library defaults for absorption rate constant, unsupported by the source, invalidating the oral parameterization.**
+**Adalimumab’s absorption-rate constant (ka) has no reported value and was defaulted, leaving the record without a paper-supported estimate and prompting its hold.**
 
-The absorption rate constant was left as a placeholder because it was not reported, yet the model assumes first-order depot input. All four pharmacokinetic parameters use apparent (/F) parameterization with F=1 assumed, implying oral administration despite the source being a secondary review. The model builder's use of defaulted values for ka and Tlag constitutes an unsupported deviation from the available data. Extracted — adalimumab: CL/F 19.5 L∙h−1, V1/F 381 L, V2/F 284 L, Q/F 52.8 L∙h−1.
+Ka use library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. The builder also defaulted Tlag and used a first-order depot input, treating the apparent (/F) parameterization as extravascular dosing with F=1, Fm=1 and no molar correction. A second reader disagreed about where the value 52.8 was assigned, while this record lists it as apparent intercompartmental clearance. Extracted — adalimumab: CL/F 19.5 L∙h−1, V1/F 381 L, V2/F 284 L, Q/F 52.8 L∙h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q30: this record has none, the second reading 52.8; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -127,15 +127,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=adalimumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=dev_1: not acceptable; deviation_id=dev_2: not acceptable; deviation_id=dev_3: not acceptable; deviation_id=dev_4: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=adalimumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

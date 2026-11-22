@@ -5,11 +5,11 @@
 
 # flumequine — `Flumequine_Anadn2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 11:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Anadn2008_reference" status="needs_review" stale="true" population="chickens for fattening" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Anadn2008_reference" status="needs_review" stale="false" population="chickens for fattening" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Anadón A, Martínez MA, Martínez M, De La Cruz C, Díaz MJ, Martínez-Larrañaga MR. Oral bioavailability, tissue distribution and depletion of flumequine in the food producing animal, chicken for fattening. Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association 46(2):662–670 (2008).
@@ -39,7 +39,7 @@ Anadón A, Martínez MA, Martínez M, De La Cruz C, Díaz MJ, Martínez-Larraña
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Anadón A, Martínez MA, Martínez M, De La Cruz C, Díaz MJ, Martínez-Larraña
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flumequine: t1/2z 6.91 h, MRT 5.9 h, Fab 57 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of elimination half-life: this record has none, the second reading 6.91; it also differs on 3 more fields. That field does not shape the model.
 

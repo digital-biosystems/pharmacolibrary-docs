@@ -16,7 +16,7 @@ Hamitouche N, Comets E, Ribot M, Alvarez JC, Bellissant E, Laviolle B. Populatio
 
 ## Population and dosing
 
-**Population:** healthy volunteers · age group adult · n = No.
+**Population:** healthy volunteers · age group adult.
 
 ## Model
 

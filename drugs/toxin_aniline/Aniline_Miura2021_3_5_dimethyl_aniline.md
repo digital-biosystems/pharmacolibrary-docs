@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected because aniline's parameters are static exposure metrics, lacking kinetic quantities like rate constants or volumes needed for modeling.
 
 <div class="pk-model-meta" hidden drug="Aniline" model-id="Aniline_Miura2021_3_5_dimethyl_aniline" status="rejected" stale="false" population="rats" measured-compound="Aniline" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,7 +54,13 @@ Miura T, Kamiya Y, Murayama N, Shimizu M, Yamazaki H. Differences in Pharmacokin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected because aniline's parameters are static exposure metrics, lacking kinetic quantities like rate constants or volumes needed for modeling.**
+
+The extracted data for aniline consists of static pharmacokinetic endpoints such as Cmax, AUC, and fraction absorbed, alongside metabolic capacities like intrinsic clearance. None of these constitute the dynamic kinetic parameters (rate constants, half-lives, or volumes) required to construct a time-dependent model. The reviewer explicitly rejected the record for being an exposure/outcome paper devoid of these essential kinetic quantities. Additionally, a reported unit could not be converted to SI standards, preventing the parameter from receiving a valid numerical value. Extracted — aniline: Fab 0.416, CLH 0.336 L/h, CLR 0.036 L/h, Cmax 2.31e+03 ng/mL, AUC 3.71e+03 ng*h/mL, MW 121 g/mol, fu 0.296, CLint 0.917, … (+1).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

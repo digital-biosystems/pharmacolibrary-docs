@@ -4,11 +4,11 @@
 
 # nedosiran — `Nedosiran_Zhang2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:57 UTC (Needs review), but the paper was screened again on 2026-10-07 17:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vmax, CL and V have no unit.
+> Vmax, CL and V have no unit.
 
-<div class="pk-model-meta" hidden drug="nedosiran" model-id="Nedosiran_Zhang2025_reference" status="needs_review" stale="true" population="patients with primary hyperoxaluria (PH1, PH2, HV)" measured-compound="nedosiran" parameterization="apparent" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="nedosiran" model-id="Nedosiran_Zhang2025_reference" status="needs_review" stale="false" population="patients with primary hyperoxaluria (PH1, PH2, HV)" measured-compound="nedosiran" parameterization="apparent" topology="3C"></div>
 
 ## Citation
 Zhang S, Gamallo P, Rawson V. Population Pharmacokinetic and Pharmacodynamic Modelling and Simulation for Nedosiran Clinical Development and Dose Guidance in Pediatric Patients with Primary Hyperoxaluria Type 1. Clinical pharmacokinetics 64(9):1395–1411 (2025).
@@ -16,7 +16,7 @@ Zhang S, Gamallo P, Rawson V. Population Pharmacokinetic and Pharmacodynamic Mod
 
 ## Population and dosing
 
-**Population:** patients with primary hyperoxaluria type 1 (PH1) and healthy volunteers · condition primary hyperoxaluria type 1 · age group mixed · n = &gt;=148.
+**Population:** patients with primary hyperoxaluria type 1 (PH1) and healthy volunteers · condition primary hyperoxaluria type 1 · age group mixed.
 
 **Dosing:** 3.5, 170 mg, sc, multiple, every 720 h.
 
@@ -45,7 +45,7 @@ Zhang S, Gamallo P, Rawson V. Population Pharmacokinetic and Pharmacodynamic Mod
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

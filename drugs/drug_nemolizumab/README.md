@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;nemolizumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nemolizumab_Fauchet2026_reference&quot;,&quot;label&quot;:&quot;Fauchet_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nemolizumab_Fauchet2026_reference&quot;,&quot;label&quot;:&quot;Fauchet_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # nemolizumab
 
@@ -16,13 +16,13 @@ Nemolizumab is a monoclonal antibody that treats specific skin conditions involv
 
 ## Start here
 
-> **Fauchet_2026_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adults and adolescents with moderate to severe atopic dermatitis. [Run it in the simulator](drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md?tab=Simulation) · [record](drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md)
+> **Fauchet_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults and adolescents with moderate to severe atopic dermatitis. [Run it in the simulator](drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md?tab=Simulation) · [record](drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Fauchet_2026 · CL/F</text><circle cx="203.9" cy="30.0" r="4" fill="#78909c"><title>Fauchet_2026 · CL/F: 0.01096 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Takechi_2025 · CL/F</text><circle cx="242.9" cy="46.0" r="4" fill="#ef6c00"><title>Takechi_2025 · CL/F: 0.01417 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Fauchet_2026 · V/F</text><circle cx="499.7" cy="30.0" r="4" fill="#78909c"><title>Fauchet_2026 · V/F: 7.67 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Takechi_2025 · V/F</text><circle cx="514.2" cy="46.0" r="4" fill="#ef6c00"><title>Takechi_2025 · V/F: 8.44 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Fauchet_2026 · CL/F</text><circle cx="203.9" cy="30.0" r="4" fill="#ef6c00"><title>Fauchet_2026 · CL/F: 0.01096 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Takechi_2025 · CL/F</text><circle cx="242.9" cy="46.0" r="4" fill="#ef6c00"><title>Takechi_2025 · CL/F: 0.01417 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Fauchet_2026 · V/F</text><circle cx="499.7" cy="30.0" r="4" fill="#ef6c00"><title>Fauchet_2026 · V/F: 7.67 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Takechi_2025 · V/F</text><circle cx="514.2" cy="46.0" r="4" fill="#ef6c00"><title>Takechi_2025 · V/F: 8.44 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -30,9 +30,9 @@ Nemolizumab is a monoclonal antibody that treats specific skin conditions involv
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Fauchet_2026_reference](drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+8 cov.) | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Fauchet_2026_reference](drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+8 cov.) | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331 — no SI value to build from</sub> | [Takechi_2025_reference](drugs/drug_nemolizumab/Nemolizumab_Takechi2025_reference.md) | — | 1-compartment (no model) | 5 | Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and therapy (2025) | [10.1007/s13555-025-01554-4](https://doi.org/10.1007/s13555-025-01554-4) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sidbury_2022_reference](drugs/drug_nemolizumab/Nemolizumab_Sidbury2022_reference.md) | — | 1-compartment (no model) | 6 | Sidbury R et al., Pharmacokinetics, Safety, Efficacy, and…, Dermatology and therapy (2022) | [10.1007/s13555-021-00678-7](https://doi.org/10.1007/s13555-021-00678-7) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sidbury_2022_reference](drugs/drug_nemolizumab/Nemolizumab_Sidbury2022_reference.md) | — | 1-compartment (no model) | 6 | Sidbury R et al., Pharmacokinetics, Safety, Efficacy, and…, Dermatology and therapy (2022) | [10.1007/s13555-021-00678-7](https://doi.org/10.1007/s13555-021-00678-7) |
 
 ## Pharmacodynamics (PD)
 
@@ -42,15 +42,6 @@ Nemolizumab is a monoclonal antibody that treats specific skin conditions involv
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fauchet_2026_wNRS](drugs/drug_nemolizumab/pd_Fauchet_2026_wNRS.md) | weekly average PP NRS biomarker turnover ← nemolizumab | — | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Saito_2017_VAS](drugs/drug_nemolizumab/pd_Saito_2017_VAS.md) | pruritus visual analog scale ← nemolizumab · indirect response — drug inhibits the production of pruritus visual analog scale | — | Saito T et al., Dosage Optimization of Nemolizumab Usin…, Journal of clinical pharmac… (2017) | [10.1002/jcph.969](https://doi.org/10.1002/jcph.969) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fauchet_2026_IGA](drugs/drug_nemolizumab/pd_Fauchet_2026_IGA.md) | Investigator's Global Assessment of dermatitis severity biomarker turnover ← nemolizumab | — | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nemolizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IL31RA (antibody), IL31RA (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,13 +55,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:37 | 1:36 | 2/1/0 | 2/0/0 | 0/0/0 | 90,694/8,310 | einfracz / qwen3.8-27b | 3 | 3/0 | 3/0 | 0 |
+| 2026-10-07 08:37 | 1:36 | 2/1/0 | 4/0/0 | 0/0/0 | 90,694/8,310 | einfracz / qwen3.8-27b | 3 | 3/0 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

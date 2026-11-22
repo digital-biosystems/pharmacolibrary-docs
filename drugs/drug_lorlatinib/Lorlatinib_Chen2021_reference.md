@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model was quarantined because lorlatinib's bioavailability, volume of distribution, and absorption lag time lacked extracted values, so generic placeholders were used instead of study-specific estimates.
+> Lorlatinib’s bioavailability (F), distribution volume (Vd), and absorption lag time (Tlag) have no explicit values and were left at defaults, so the model was held back.
 
 <div class="pk-model-meta" hidden drug="lorlatinib" model-id="Lorlatinib_Chen2021_reference" status="model_quarantined" stale="false" population="patients with ALK-positive or ROS1-positive NSCLC and healthy participants" measured-compound="lorlatinib" parameterization="mechanistic" topology="1C"></div>
 
@@ -60,13 +60,13 @@ Chen J, Houk B, Pithavala YK, Ruiz-Garcia A. Population pharmacokinetic model wi
 
 ### Reviewer guidance
 
-**The model was quarantined because lorlatinib's bioavailability, volume of distribution, and absorption lag time lacked extracted values, so generic placeholders were used instead of study-specific estimates.**
+**Lorlatinib’s bioavailability (F), distribution volume (Vd), and absorption lag time (Tlag) have no explicit values and were left at defaults, so the model was held back.**
 
-Although a relative bioavailability of 0.759 and peripheral volumes of 120.511 L and 154.905 L are listed, the specific parameters for total volume of distribution and absorption lag time had no assigned values in the record. Consequently, the model builder substituted standard library defaults for these missing quantities rather than using explicit estimates. Additionally, the covariate effects defined in the record were not exercised, as only the reference individual was simulated. Extracted — lorlatinib: CL 9.04 L/h, V2 121 L, kabs 3.11 h−1, Q 22 L/h, V3 155 L, D1 1.15 h, Frel 0.759.
+No value for lorlatinib's bioavailability, volume of distribution and absorption lag time; the model was built, but these parameters had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The covariate scenarios were not simulated: only the reference individual was simulated, not the covariate effects defined in the record. A second reader disputed the record, with agreement 0.632 and 0 of 1 readers agreeing, including disagreement over covariate-effect parameter assignments and forms. Extracted — lorlatinib: CL 9.04 L/h, V2 121 L, kabs 3.11 h−1, Q 22 L/h, V3 155 L, D1 1.15 h, Frel 0.759.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of theta_equation_variable_category: this record has none, the second reading 0.115; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -168,15 +168,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 606 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 30 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.632, 0 of 1 reader(s) agree | 0.632 | cross-check disputed by a second reader: verdict disputed, agreement 0.632, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 606 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 30 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

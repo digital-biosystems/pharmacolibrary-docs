@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Paclitaxel absorption rate constant and lag time were left at defaults because the record was abstract-only and lacked explicit estimates.
+> Paclitaxel absorption rate was left at library defaults while bioavailability was 37%, rendering the record unsupported by the source abstract.
 
 <div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_De2026_reference" status="needs_review" stale="false" population="patients with peritoneal metastasis" measured-compound="paclitaxel" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ De Sutter PJ, Sandra L, Van Ovost J, Van de Sande L, Graversen M, Mortensen MB e
 
 ## Population and dosing
 
-**Population:** patients with peritoneal metastasis · condition peritoneal metastasis · age group adult · n = _subjects": 20,.
+**Population:** patients with peritoneal metastasis · condition peritoneal metastasis · age group adult.
 
 ## Model
 
@@ -49,9 +49,9 @@ De Sutter PJ, Sandra L, Van Ovost J, Van de Sande L, Graversen M, Mortensen MB e
 
 ### Reviewer guidance
 
-**Paclitaxel absorption rate constant and lag time were left at defaults because the record was abstract-only and lacked explicit estimates.**
+**Paclitaxel absorption rate was left at library defaults while bioavailability was 37%, rendering the record unsupported by the source abstract.**
 
-The absorption rate constant (ka) was not reported in the abstract, forcing the model to use library defaults for this parameter. Additionally, the lag time (Tlag) was also defaulted because it was not provided in the source text. The record is marked for review because these absorption parameters were invented by convention rather than extracted from the paper. Extracted — paclitaxel: Fab 37 %, V 2.3e+03 L, CL/F 87.3 L/h.
+The record only reports bioavailability, apparent clearance, and volume of distribution, omitting absorption rate and absorption duration. Consequently, the model builder substituted library defaults for the missing absorption parameters. The record remains held back as it relies on abstract-only statistics and these unsupported assumptions. Extracted — paclitaxel: Fab 37 %, V 2.3e+03 L, CL/F 87.3 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paclitaxel, the second reading nanoparticle albumin-bound paclitaxel (nab-PTX); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -139,15 +139,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=paclitaxel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=paclitaxel) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

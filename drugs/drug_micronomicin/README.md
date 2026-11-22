@@ -40,7 +40,7 @@ Micronomicin is an aminoglycoside antibiotic used to treat eye infections. It is
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:36 | 0:33 | 0/1/0 | 0/0/0 | 0/0/0 | 36,128/1,684 | einfracz / qwen3.8-27b | 2 | 2/0 | 1/1 | 1 |
+| 2026-10-07 18:36 | 0:33 | 0/1/0 | 0/0/0 | 0/0/0 | 36,128/1,684 | einfracz / qwen3.8-27b | 2 | 2/0 | 1/1 | 0 |
 
 ## Coverage
 

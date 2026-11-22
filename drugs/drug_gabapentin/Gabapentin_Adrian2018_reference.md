@@ -40,7 +40,7 @@ Adrian D, Papich MG, Baynes R, Stafford E, Lascelles BDX. The pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.565). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.783). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Adrian D, Papich MG, Baynes R, Stafford E, Lascelles BDX. The pharmacokinetics o
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — gabapentin: CL 161 mL/kg/hr, V1 129 mL/kg, kabs 5.24 1/hr, tlag 0.45 hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q301: this record has 13.67, the second reading 13.67; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of kabs: this record has 5.24, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,23 +80,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.565 (13/23 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.783 (18/23 fields) | 5 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q301]` | 13.67 | 13.67 | mismatch |
-| `gpt-oss-120b` | `values[Q302]` | 2.82 | 2.82 | mismatch |
-| `gpt-oss-120b` | `values[Q40]` | 94.8 | 94.8 | mismatch |
-| `gpt-oss-120b` | `values[Q47]` | 1.21 | 1.21 | mismatch |
 | `gpt-oss-120b` | `values[Q49]` | 5.24 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q67]` | 16.97 | 16.97 | mismatch |
 | `gpt-oss-120b` | `values[Q71]` |  | 32.77 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q75]` |  | 5.61 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q83]` | 0.45 |  | only_one_extracted |

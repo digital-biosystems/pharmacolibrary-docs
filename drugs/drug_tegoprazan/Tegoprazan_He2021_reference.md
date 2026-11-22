@@ -17,7 +17,7 @@ He J, Cao G, Yu J, Wang J, Cheng N, Wu J et al. Safety, Tolerability and Pharmac
 
 ## Population and dosing
 
-**Population:** healthy Chinese adults · condition healthy · age group adult · n = &gt;=38.
+**Population:** healthy Chinese adults · condition healthy · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ He J, Cao G, Yu J, Wang J, Cheng N, Wu J et al. Safety, Tolerability and Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ He J, Cao G, Yu J, Wang J, Cheng N, Wu J et al. Safety, Tolerability and Pharmac
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Jung_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tegoprazan: tmax 0.5 h, Cmax 814 ng/mL, AUC∞ 2.76e+03 ng∙h/mL, V 56.6 L, kabs 0.156 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tegoprazan, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tegoprazan, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -98,22 +98,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc0-inf]` | 2761.0 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc0-inf]` |  | 2761.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 813.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` |  | 813.80 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 0.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` |  | 0.5 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | tegoprazan | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | tegoprazan | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 2761.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` |  | 2761.00 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 813.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` |  | 813.80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` |  | 0.5 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tegoprazan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tegoprazan | unknown | mismatch |
 
 </details>
 

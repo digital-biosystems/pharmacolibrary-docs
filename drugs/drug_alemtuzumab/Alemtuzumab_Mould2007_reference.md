@@ -5,11 +5,11 @@
 
 # alemtuzumab — `Alemtuzumab_Mould2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:06 UTC (Rejected), but the paper was screened again on 2026-10-07 22:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the extracted elimination rate constant units (micrograms per liter) conflict with the parameter's required time-based definition.
+> The record was rejected because the intercompartmental clearance unit, micrograms per hour, is dimensionally incompatible with volume, and the abstract-only source prevents parameter validation.
 
-<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Mould2007_reference" status="rejected" stale="true" population="patients with B-cell chronic lymphocytic leukaemia" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Mould2007_reference" status="rejected" stale="false" population="patients with B-cell chronic lymphocytic leukaemia" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mould DR, Baumann A, Kuhlmann J, Keating MJ, Weitman S, Hillmen P et al. Population pharmacokinetics-pharmacodynamics of alemtuzumab (Campath) in patients with chronic lymphocytic leukaemia and its link to treatment response. British journal of clinical pharmacology 64(3):278–291 (2007).
@@ -17,7 +17,7 @@ Mould DR, Baumann A, Kuhlmann J, Keating MJ, Weitman S, Hillmen P et al. Populat
 
 ## Population and dosing
 
-**Population:** patients with B-cell chronic lymphocytic leukaemia · condition chronic lymphocytic leukaemia · age group adult · n = &gt;=67.
+**Population:** patients with B-cell chronic lymphocytic leukaemia · condition chronic lymphocytic leukaemia · age group adult.
 
 ## Model
 
@@ -38,7 +38,7 @@ Mould DR, Baumann A, Kuhlmann J, Keating MJ, Weitman S, Hillmen P et al. Populat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Mould DR, Baumann A, Kuhlmann J, Keating MJ, Weitman S, Hillmen P et al. Populat
 
 ### Reviewer guidance
 
-**The record was rejected because the extracted elimination rate constant units (micrograms per liter) conflict with the parameter's required time-based definition.**
+**The record was rejected because the intercompartmental clearance unit, micrograms per hour, is dimensionally incompatible with volume, and the abstract-only source prevents parameter validation.**
 
-The parameter labeled as the elimination rate constant (terminal phase) carries a value of 338 in units of micrograms per liter, which is a concentration unit rather than a rate unit. This unit is dimensionally incompatible with an elimination rate constant, which must be expressed per unit of time. Additionally, the record relies on abstract-only data, meaning summary statistics stand in for a fitted model, and the second reader could not confirm the values for several parameters including AUC, clearance, and the elimination constant. Extracted — alemtuzumab: kel 338 microg l(-1), Q 1.05 l h(-1), Ctrough 13.2 microg ml(-1), AUC 484 microg h(-1) ml(-1).
+The intercompartmental clearance parameter is assigned a value of 1.05 with units of liters per hour, yet the label indicates a volume of distribution which must have dimensions of length cubed. Additionally, the elimination rate constant is given as 338 micrograms per liter, which is dimensionally invalid for a rate constant requiring inverse time. The second reader could not confirm any of the extracted values, marking all specific parameters as null. Extracted — alemtuzumab: kel 338 microg l(-1), Q 1.05 l h(-1), Ctrough 13.2 microg ml(-1), AUC 484 microg h(-1) ml(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alemtuzumab, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

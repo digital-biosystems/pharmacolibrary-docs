@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tildrakizumab&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/&quot;},{&quot;label&quot;:&quot;Jauslin_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tildrakizumab_Jauslin2019_reference&quot;,&quot;label&quot;:&quot;Jauslin_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tildrakizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/Tildrakizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tildrakizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/Tildrakizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tildrakizumab_Jauslin2019_reference&quot;,&quot;label&quot;:&quot;Jauslin_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability for tildrakizumab was not extracted from the abstract, so a library placeholder was used instead of the 31% value.
+> Tildrakizumab bioavailability (F) has no extracted value and was left at defaults; the second reader proposed 31%, but that value is disputed.
 
 <div class="pk-model-meta" hidden drug="tildrakizumab" model-id="Tildrakizumab_Jauslin2019_reference" status="needs_review" stale="false" population="healthy volunteers and subjects with psoriasis" measured-compound="tildrakizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Jauslin P, Kulkarni P, Li H, Vatakuti S, Hussain A, Wenning L et al. Population-
 
 ## Population and dosing
 
-**Population:** healthy volunteers and subjects with psoriasis · condition psoriasis · age group adult · n = &gt;.
+**Population:** healthy volunteers and subjects with psoriasis · condition psoriasis · age group adult.
 
 ## Model
 
@@ -52,13 +52,13 @@ Jauslin P, Kulkarni P, Li H, Vatakuti S, Hussain A, Wenning L et al. Population-
 
 ### Reviewer guidance
 
-**Bioavailability for tildrakizumab was not extracted from the abstract, so a library placeholder was used instead of the 31% value.**
+**Tildrakizumab bioavailability (F) has no extracted value and was left at defaults; the second reader proposed 31%, but that value is disputed.**
 
-The record lacks a bioavailability estimate, relying on a default convention rather than the 31% value noted by the second reader. This omission means the simulated concentration profile is not supported by the paper's data. Additionally, the second reader could not verify the absorption and elimination half-lives reported in the abstract. Extracted — tildrakizumab: CL 0.32 L/day, V 10.8 L, t1/2ka 1.5 days, t1/2z 23.4 days, tlag 1.2 h, kabs 0.908 day−1.
+F was not estimated from the paper, so library defaults rather than paper-supported estimates affect the simulated profile. The second reader proposed bioavailability of 31% and disagreed on whether tildrakizumab was the dose compound and primary analyte, as well as on several reported absorption and elimination parameters; agreement was 0.105. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — tildrakizumab: CL 0.32 L/day, V 10.8 L, t1/2ka 1.5 days, t1/2z 23.4 days, tlag 1.2 h, kabs 0.908 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tildrakizumab, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -152,14 +152,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=tildrakizumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=tildrakizumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.105, 0 of 1 reader(s) agree | 0.105 | cross-check disputed by a second reader: verdict disputed, agreement 0.105, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

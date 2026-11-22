@@ -4,11 +4,11 @@
 
 # nicotine — `Nicotine_Marchand2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-07 03:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because apparent clearance and volume parameters are dimensionally incoherent, and the formation clearance value of 1.6 lacks a recognized unit.
+> Nicotine’s apparent clearance CL/F of 2.5 L/min was double-corrected for bioavailability, contributing to the record’s rejection.
 
-<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Marchand2017_reference" status="rejected" stale="true" population="healthy adult smokers" measured-compound="nicotine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Marchand2017_reference" status="rejected" stale="false" population="healthy adult smokers" measured-compound="nicotine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Marchand M, Brossard P, Merdjan H, Lama N, Weitkunat R, Lüdicke F. Nicotine Population Pharmacokinetics in Healthy Adult Smokers: A Retrospective Analysis. European journal of drug metabolism and pharmacokinetics 42(6):943–954 (2017).
@@ -48,7 +48,7 @@ Marchand M, Brossard P, Merdjan H, Lama N, Weitkunat R, Lüdicke F. Nicotine Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,13 +58,13 @@ Marchand M, Brossard P, Merdjan H, Lama N, Weitkunat R, Lüdicke F. Nicotine Pop
 
 ### Reviewer guidance
 
-**The record is rejected because apparent clearance and volume parameters are dimensionally incoherent, and the formation clearance value of 1.6 lacks a recognized unit.**
+**Nicotine’s apparent clearance CL/F of 2.5 L/min was double-corrected for bioavailability, contributing to the record’s rejection.**
 
-The apparent central volume of 1.9 L and clearance of 2.5 L/min are dimensionally mismatched with the terminal half-life of 17.0 hours, violating apparent-parameter coherence. Additionally, the formation clearance parameter has a value of 1.6, but its unit could not be converted to standard SI units, leaving the parameter undefined. A second reader disagreed on several extracted values, including C0 and CL/F, and identified a missing parameter for the N'-methyl nicotine metabolite. Extracted — nicotine: V1/F 1.9 L, CL/F 2.5 L/min, V2/F 29.4 L, Q/F 14.3 L/min, D1 12.4 min, Frel 1, C0 22.6 ng/mL, CLfm 1.6, … (+4).
+CL/F of 2.5 L/min and Q/F of 14.3 L/min are defined as already adjusted for bioavailability, which explains the double-correction finding; relative bioavailability is 1. A structural parameter was reported in ng/mL, a concentration unit, although its required dimension was concentration multiplied by time; the unit lacked an SI conversion, so no SI value was available. A second reader also disputed the reported CL/F value, and the record gives no resolution. Extracted — nicotine: V1/F 1.9 L, CL/F 2.5 L/min, V2/F 29.4 L, Q/F 14.3 L/min, D1 12.4 min, Frel 1, C0 22.6 ng/mL, CLfm 1.6, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[c0].value`: this record has 22.6, the second reading 0.358; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

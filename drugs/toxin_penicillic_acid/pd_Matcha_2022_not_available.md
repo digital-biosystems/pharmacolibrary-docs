@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a pharmacodynamic model or mechanism for penicillic acid, as it focuses exclusively on the population pharmacokinetics of antimicrobials in infants undergoing therapeutic hypothermia.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Matcha_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;dasatinib&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/&quot;},{&quot;label&quot;:&quot;Wang_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dasatinib_Ande2018_reference&quot;,&quot;label&quot;:&quot;Ande_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/Dasatinib_Ande2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dasatinib_Wang2013_reference&quot;,&quot;label&quot;:&quot;Wang_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/Dasatinib_Wang2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ande_2018_active_caspase_3&quot;,&quot;label&quot;:&quot;Ande_2018 \u00b7 active caspase-3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/pd_Ande_2018_active_caspase_3.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ande_2018_active_caspase_3_activity&quot;,&quot;label&quot;:&quot;Ande_2018 \u00b7 active caspase-3 activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/pd_Ande_2018_active_caspase_3_activity.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ande_2018_cell_viability&quot;,&quot;label&quot;:&quot;Ande_2018 \u00b7 cell viability&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/pd_Ande_2018_cell_viability.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dasatinib_Wang2013_reference&quot;,&quot;label&quot;:&quot;Wang_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/Dasatinib_Wang2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dasatinib_Ande2018_reference&quot;,&quot;label&quot;:&quot;Ande_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/Dasatinib_Ande2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ande_2018_active_caspase_3&quot;,&quot;label&quot;:&quot;Ande_2018 \u00b7 active caspase-3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/pd_Ande_2018_active_caspase_3.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ande_2018_active_caspase_3_activity&quot;,&quot;label&quot;:&quot;Ande_2018 \u00b7 active caspase-3 activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/pd_Ande_2018_active_caspase_3_activity.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ande_2018_cell_viability&quot;,&quot;label&quot;:&quot;Ande_2018 \u00b7 cell viability&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dasatinib/pd_Ande_2018_cell_viability.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record uses an apparent clearance parameterization with F=1, which is not acceptable for oral dasatinib data.
+> The record for dasatinib was held back because a second reader disagreed on the identity of the peripheral volume of distribution parameter.
 
 <div class="pk-model-meta" hidden drug="dasatinib" model-id="Dasatinib_Wang2013_reference" status="needs_review" stale="false" population="patients with chronic myeloid leukemia in chronic phase across seven clinical studies" measured-compound="dasatinib" parameterization="apparent" topology="2C"></div>
 
@@ -53,9 +53,9 @@ Wang X, Roy A, Hochhaus A, Kantarjian HM, Chen TT, Shah NP. Differential effects
 
 ### Reviewer guidance
 
-**The record uses an apparent clearance parameterization with F=1, which is not acceptable for oral dasatinib data.**
+**The record for dasatinib was held back because a second reader disagreed on the identity of the peripheral volume of distribution parameter.**
 
-The model builder assumed F=1 and Fm=1, treating apparent clearance (296 L/h) as absolute clearance. This apparent assumption was flagged as not acceptable by the review rules. Additionally, the absorption lag time was not extracted from the paper, so no specific value is present in the record. Extracted — dasatinib: CL/F 296 L/h, V1/F 1.23e+03 L, Q/F 119 L/h, V2/F 1.03e+03 L, kabs 2.1 1/h.
+The parameters include an apparent peripheral volume of distribution of 1030 L. A second reader disputed the record, assigning a different identifier to this parameter than the first reader did. This disagreement prevented full agreement on the parameter identification. Extracted — dasatinib: CL/F 296 L/h, V1/F 1.23e+03 L, Q/F 119 L/h, V2/F 1.03e+03 L, kabs 2.1 1/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[(vp/f)tv].parameter_id`: this record has Q82, the second reading Q76. That field shapes the model, so the record is marked disputed.
 
@@ -144,7 +144,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=dasatinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.933, 0 of 1 reader(s) agree | 0.933 | cross-check disputed by a second reader: verdict disputed, agreement 0.933, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 0.76 | 2.983e-05 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | 0.95 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | pass | 2.93 | 3.02 | 1.031 | hours→SI vs simulated h |

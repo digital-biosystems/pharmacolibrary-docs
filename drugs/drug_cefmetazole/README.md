@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefmetazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefmetazole_Kusumoto2023_reference&quot;,&quot;label&quot;:&quot;Kusumoto_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefmetazole_Kusumoto2023_reference&quot;,&quot;label&quot;:&quot;Kusumoto_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # cefmetazole
 
@@ -25,13 +25,13 @@ Cefmetazole is a cephamycin antibiotic, often grouped with second-generation cep
 
 ## Start here
 
-> **Kusumoto_2023_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference.md?tab=Simulation) · [record](drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference.md)
+> **Kusumoto_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference.md?tab=Simulation) · [record](drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">García-Agundez_1992 · CL</text><circle cx="326.2" cy="30.0" r="4" fill="#ef6c00"><title>García-Agundez_1992 · CL: 0.6 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kusumoto_2023 · CL</text><circle cx="486.2" cy="46.0" r="4" fill="#78909c"><title>Kusumoto_2023 · CL: 4.93 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">García-Agundez_1992 · V</text><circle cx="461.6" cy="30.0" r="4" fill="#ef6c00"><title>García-Agundez_1992 · V: 5.97 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kusumoto_2023 · V</text><circle cx="461.6" cy="46.0" r="4" fill="#78909c"><title>Kusumoto_2023 · V: 5.97 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">García-Agundez_1992 · CL</text><circle cx="326.2" cy="30.0" r="4" fill="#ef6c00"><title>García-Agundez_1992 · CL: 0.6 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kusumoto_2023 · CL</text><circle cx="486.2" cy="46.0" r="4" fill="#ef6c00"><title>Kusumoto_2023 · CL: 4.93 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">García-Agundez_1992 · V</text><circle cx="461.6" cy="30.0" r="4" fill="#ef6c00"><title>García-Agundez_1992 · V: 5.97 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kusumoto_2023 · V</text><circle cx="461.6" cy="46.0" r="4" fill="#ef6c00"><title>Kusumoto_2023 · V: 5.97 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,21 +39,10 @@ Cefmetazole is a cephamycin antibiotic, often grouped with second-generation cep
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Kusumoto_2023_reference](drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kusumoto M et al., Pharmacokinetic-pharmacodynamic analysi…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1270137](https://doi.org/10.3389/fvets.2023.1270137) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [García-Agundez_1992_reference](drugs/drug_cefmetazole/Cefmetazole_GarcaAgundez1992_reference.md) | — | 1-compartment (no model) | 3 | García-Agundez MJ et al., Pharmacokinetic parameters from data re…, European journal of drug me… (1992) | [10.1007/BF03190141](https://doi.org/10.1007/BF03190141) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [García-Agundez_1992_reference](drugs/drug_cefmetazole/Cefmetazole_GarcaAgundez1992_reference.md) | — | 1-compartment (no model) | 3 | García-Agundez MJ et al., Pharmacokinetic parameters from data re…, European journal of drug me… (1992) | [10.1007/BF03190141](https://doi.org/10.1007/BF03190141) |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: cross_check_disputed</sub> | [Kusumoto_2023_reference](drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kusumoto M et al., Pharmacokinetic-pharmacodynamic analysi…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1270137](https://doi.org/10.3389/fvets.2023.1270137) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hamada_2022_reference](drugs/drug_cefmetazole/Cefmetazole_Hamada2022_reference.md) | — | 1-compartment (no model) | 0 | Hamada Y et al., Pharmacokinetic/Pharmacodynamic Analysi…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11040456](https://doi.org/10.3390/antibiotics11040456) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Tomizawa_2017_reference](drugs/drug_cefmetazole/Cefmetazole_Tomizawa2017_reference.md) | — | 1-compartment (no model) | 0 | Tomizawa A et al., Optimal dosage of cefmetazole for intra…, Journal of pharmaceutical h… (2017) | [10.1186/s40780-016-0071-6](https://doi.org/10.1186/s40780-016-0071-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefmetazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,7 +62,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

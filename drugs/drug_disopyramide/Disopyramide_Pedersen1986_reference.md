@@ -17,23 +17,7 @@ Pedersen LE, Hermansen K, Olesen HP, Rasmussen SN. The pharmacokinetics and prot
 
 ## Population and dosing
 
-**Population:** pigs · condition healthy · n = is_poppk: yes
-models_target_drug: yes
-final_table_hint: unknown
-software: unknown
-has_control_stream: no
-dose_compound: disopyramide
-primary_analyte: disopyramide
-population: pigs
-age_class: unknown
-n_subjects: 5
-condition: healthy
-species: pig
-compounds:
-  - disopyramide | parent | yes | yes | yes
-  - desisopropyldisopyramide | metabolite | no | yes | no
-links:
-  - disopyramide | desisopropyldisopyramide | metabolism | none.
+**Population:** pigs · condition healthy.
 
 **Dosing:** 140, 350, 420 mg, iv, multiple.
 

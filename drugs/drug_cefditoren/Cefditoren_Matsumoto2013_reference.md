@@ -15,7 +15,7 @@ Matsumoto K, Sato N, Mitomi N, Shibasaki S. Population pharmacokinetic analysis 
 
 ## Population and dosing
 
-**Population:** pediatric patients with infection · condition infection · age group child · n = &gt;153&lt;.
+**Population:** pediatric patients with infection · condition infection · age group child.
 
 **Dosed compound ≠ measured compound:** dosed cefditoren pivoxil, measured cefditoren.
 

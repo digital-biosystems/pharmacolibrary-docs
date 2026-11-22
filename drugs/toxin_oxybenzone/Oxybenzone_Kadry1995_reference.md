@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Oxybenzone&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/&quot;},{&quot;label&quot;:&quot;Kadry_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxybenzone_Okereke1994_reference&quot;,&quot;label&quot;:&quot;Okereke_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/Oxybenzone_Okereke1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxybenzone_Okereke1994_reference&quot;,&quot;label&quot;:&quot;Okereke_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/Oxybenzone_Okereke1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Record rejected because abstract-only extraction yielded summary statistics, with t1/2beta and t1/2z conflicting values (15.9 versus 8.39 hours) for Benzophenone-3.
 
 <div class="pk-model-meta" hidden drug="Oxybenzone" model-id="Oxybenzone_Kadry1995_reference" status="needs_review" stale="false" population="male Sprague-Dawley rats" measured-compound="Benzophenone-3" parameterization="mechanistic" topology="retention"></div>
 
@@ -49,7 +49,13 @@ Kadry AM, Okereke CS, Abdel-Rahman MS, Friedman MA, Davis RA. Pharmacokinetics o
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Record rejected because abstract-only extraction yielded summary statistics, with t1/2beta and t1/2z conflicting values (15.9 versus 8.39 hours) for Benzophenone-3.**
+
+The model lacks a fitted structure, relying entirely on abstract-derived summary statistics rather than individual data. The absorption half-life of 0.71 hours is paired with two mutually exclusive terminal half-life estimates: 15.9 hours labeled as beta and 8.39 hours labeled as z. Additionally, the retention function parameters A1 and A2 are missing, rendering the disposition model mathematically incomplete for Benzophenone-3. Extracted — oxybenzone: t1/2ka 0.71 h, t1/2α 0.88 h, t1/2β 15.9 h, t1/2z 8.39 h, CL 16.1 L/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -121,30 +127,13 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_oxybenzone/Oxybenzone_Kadry1995_reference/Oxybenzone_Kadry1995_reference_matlab.zip" download>Oxybenzone_Kadry1995_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_oxybenzone/Oxybenzone_Kadry1995_reference/Oxybenzone_Kadry1995_reference_sbml.zip" download>Oxybenzone_Kadry1995_reference_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_oxybenzone/Oxybenzone_Kadry1995_reference/Oxybenzone_Kadry1995_reference_cellml.zip" download>Oxybenzone_Kadry1995_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Kadry AM, Okereke CS, Abdel-Rahman MS, Friedman MA, Davis RA. Pharmacokinetics of benzophenone-3 after oral exposure in male rats. Journal of applied toxicology : JAT 15(2):97–102 (1995). [doi:10.1002/jat.2550150207](https://doi.org/10.1002/jat.2550150207)
-
-**This record:** Pharmacolibrary, model `Oxybenzone_Kadry1995_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_oxybenzone/Oxybenzone_Kadry1995_reference>
-
-```bibtex
-@misc{pharmacolibrary_OxybenzoneKadry1995reference,
-  title  = {{Pharmacolibrary model Oxybenzone_Kadry1995_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_oxybenzone/Oxybenzone_Kadry1995_reference},
-  note   = {Parameters from doi:10.1002/jat.2550150207},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

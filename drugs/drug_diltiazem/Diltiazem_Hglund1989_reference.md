@@ -5,18 +5,18 @@
 
 # diltiazem — `Diltiazem_Hglund1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:39 UTC (Rejected), but the paper was screened again on 2026-10-06 22:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Diltiazem record lacks volume and clearance, and N-demethyldeacetyldiltiazem is unreachable.
+> The record was rejected for metabolite connectivity; diltiazem’s 72% urinary-radioactivity figure is an abstract summary recorded as unchanged-drug excretion.
 
-<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Hglund1989_reference" status="rejected" stale="true" population="healthy middle-aged volunteers" measured-compound="diltiazem" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Hglund1989_reference" status="rejected" stale="false" population="healthy middle-aged volunteers" measured-compound="diltiazem" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Höglund P, Nilsson LG. Pharmacokinetics of diltiazem and its metabolites after single and multiple dosing in healthy volunteers. Therapeutic drug monitoring 11(5):558–566 (1989).
 
 ## Population and dosing
 
-**Population:** healthy middle-aged volunteers · condition healthy · age group adult · n = &gt;=20.
+**Population:** healthy middle-aged volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Höglund P, Nilsson LG. Pharmacokinetics of diltiazem and its metabolites after 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +45,13 @@ Höglund P, Nilsson LG. Pharmacokinetics of diltiazem and its metabolites after 
 
 ### Reviewer guidance
 
-**Diltiazem record lacks volume and clearance, and N-demethyldeacetyldiltiazem is unreachable.**
+**The record was rejected for metabolite connectivity; diltiazem’s 72% urinary-radioactivity figure is an abstract summary recorded as unchanged-drug excretion.**
 
-The established cause is that the paper reports no distribution volume and no clearance or elimination rate, so it is an exposure/outcome paper rather than a compartmental model. Additionally, the metabolic structure lists four links, but the link from deacetyldiltiazem to N-demethyldeacetyldiltiazem is marked as an unknown kind, which the system flags as an unreachable metabolite. The second reader disagreed on the dose compound and primary analyte, marking both as unknown rather than diltiazem. Extracted — diltiazem: t1/2z 6.27 h, fe 72 %.
+The stated rejection is an unreachable or orphan metabolite, although the listed links connect N-demethyldeacetyldiltiazem through N-demethyldiltiazem and deacetyldiltiazem; the second reader instead linked it directly from diltiazem. The paper was read from its abstract alone, so its summary statistics stood in for a fitted model. The 72% value is labeled cumulative urinary excretion of radioactivity, while its recorded meaning is the fraction excreted unchanged. Extracted — diltiazem: t1/2z 6.27 h, fe 72 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

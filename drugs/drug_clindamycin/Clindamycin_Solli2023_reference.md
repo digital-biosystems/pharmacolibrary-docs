@@ -5,11 +5,11 @@
 
 # clindamycin — `Clindamycin_Solli2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-07 07:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clindamycin clearance was rejected because the unit h−1 for the value 55.1 could not be converted to standard SI units.
+> The clindamycin oral clearance value of 55.1 was rejected due to a unit conflict between inverse time and volume per time.
 
-<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Solli2023_reference" status="rejected" stale="true" population="adults receiving chronic haemodialysis" measured-compound="clindamycin and amoxicillin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Solli2023_reference" status="rejected" stale="false" population="adults receiving chronic haemodialysis" measured-compound="clindamycin and amoxicillin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Solli CN, Bock M, Kaur KP, Kristensen JH, Greibe E, Hansen HP et al. Plasma concentration of orally administered amoxicillin and clindamycin in patients receiving haemodialysis. The Journal of antimicrobial chemotherapy 78(3):724–731 (2023).
@@ -17,7 +17,7 @@ Solli CN, Bock M, Kaur KP, Kristensen JH, Greibe E, Hansen HP et al. Plasma conc
 
 ## Population and dosing
 
-**Population:** adults receiving chronic haemodialysis · age group adult · n = &gt;.
+**Population:** adults receiving chronic haemodialysis · age group adult.
 
 **Dosing:** 500, 600 mg, oral, single.
 
@@ -39,7 +39,7 @@ Solli CN, Bock M, Kaur KP, Kristensen JH, Greibe E, Hansen HP et al. Plasma conc
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Solli CN, Bock M, Kaur KP, Kristensen JH, Greibe E, Hansen HP et al. Plasma conc
 
 ### Reviewer guidance
 
-**Clindamycin clearance was rejected because the unit h−1 for the value 55.1 could not be converted to standard SI units.**
+**The clindamycin oral clearance value of 55.1 was rejected due to a unit conflict between inverse time and volume per time.**
 
-The record lists a clearance of 55.1 with units of h−1, which are dimensionally incorrect for volume per time. Because this specific unit was not recognized, the parameter could not be validated for dimensional consistency, leading to its refusal. A second reader also disputed whether amoxicillin was a primary analyte, but the dimensional error in the clearance units is the definitive reason for the rejection. Extracted — clindamycin and amoxicillin: CL/F 55.1 h−1.
+The parameter for total clearance is recorded with units of h−1, which represents inverse time rather than volume per time required for clearance. This dimensional mismatch prevented the value from being converted to standard SI units. A second reader confirmed the extracted value of 55.1 but noted the unit dimension error remains the primary issue. Extracted — clindamycin and amoxicillin: CL/F 55.1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clindamycin and amoxicillin/clavulanic acid, the second reading clindamycin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

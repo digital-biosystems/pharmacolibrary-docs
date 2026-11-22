@@ -5,11 +5,11 @@
 
 # cefiderocol — `Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:05 UTC (Rejected), but the paper was screened again on 2026-10-07 10:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cefiderocol's renal clearance fraction has an impossible unit, causing a dimensional mismatch that prevents the model from running.
+> The record was rejected because the fraction of unbound drug was assigned a unit of hours instead of being dimensionless.
 
-<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj" status="rejected" stale="true" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj" status="rejected" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacokinetics and Pharmacodynamics of Cefiderocol. Clinical pharmacokinetics 60(12):1495–1508 (2021).
@@ -46,7 +46,7 @@ Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacoki
 
 ### Reviewer guidance
 
-**Cefiderocol's renal clearance fraction has an impossible unit, causing a dimensional mismatch that prevents the model from running.**
+**The record was rejected because the fraction of unbound drug was assigned a unit of hours instead of being dimensionless.**
 
-The parameter labeled "fe" is defined in the record's metadata as the fraction of the administered dose excreted unchanged, which is a dimensionless quantity. However, the entry assigns it a unit of hours and a value of 68.6, creating a clear dimensional conflict. This error, alongside the unconvertible units for the plasma protein binding parameter, resulted in the record being rejected because the parameters could not be converted to consistent SI units. Extracted — cefiderocol: Cmax 81 mg/L, AUClast 212 mg∙h/L, AUC∞ 213 mg∙h/L, t1/2z 2.8 h, CL 4.7 L/h, Vss 13.5 L, CLR 3.2 L/h, fe 68.6 h, … (+2).
+The parameter representing the unbound fraction of cefiderocol is recorded with a value of 0.44 and a unit of hours. This creates a dimension mismatch, as the proportion of unbound drug should be dimensionless. Consequently, the software could not convert this invalid unit to SI units, leaving the structural parameter without a valid value. Extracted — cefiderocol: Cmax 81 mg/L, AUClast 212 mg∙h/L, AUC∞ 213 mg∙h/L, t1/2z 2.8 h, CL 4.7 L/h, Vss 13.5 L, CLR 3.2 L/h, fe 68.6 h, … (+2).
 
 <sub>reviewed by qwen3.8-27b</sub>
 

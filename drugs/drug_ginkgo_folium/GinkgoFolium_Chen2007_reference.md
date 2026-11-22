@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;Ginkgo folium&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/&quot;},{&quot;label&quot;:&quot;Chen_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GinkgoFolium_Chen2007_reference&quot;,&quot;label&quot;:&quot;Chen_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Chen2007_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;GinkgoFolium_Dumas2026_reference&quot;,&quot;label&quot;:&quot;Dumas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Dumas2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GinkgoFolium_Schneider2025_reference&quot;,&quot;label&quot;:&quot;Schneider_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Schneider2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GinkgoFolium_Van2025_reference&quot;,&quot;label&quot;:&quot;Van_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Van2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GinkgoFolium_Schoemaker2019_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Schoemaker2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GinkgoFolium_Dumas2026_reference&quot;,&quot;label&quot;:&quot;Dumas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Dumas2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GinkgoFolium_Chen2007_reference&quot;,&quot;label&quot;:&quot;Chen_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Chen2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;GinkgoFolium_Schneider2025_reference&quot;,&quot;label&quot;:&quot;Schneider_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Schneider2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GinkgoFolium_Schoemaker2019_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Schoemaker2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GinkgoFolium_Van2025_reference&quot;,&quot;label&quot;:&quot;Van_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ginkgo_folium/GinkgoFolium_Van2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ginkgo folium — `GinkgoFolium_Chen2007_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-<div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Chen2007_reference" status="simulated" stale="false" population="rats" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="1C"></div>
+> The review was not approved because the second reader could not verify the extracted values for clearance and volume of distribution.
+
+<div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Chen2007_reference" status="needs_review" stale="false" population="rats" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chen WD, Liang Y, Xie L, Lu T, Liu XD, Wang GJ. Pharmacokinetics of the ginkgo B following intravenous administration of ginkgo B emulsion in rats. Biological & pharmaceutical bulletin 30(1):1–5 (2007).
@@ -31,6 +33,8 @@ Chen WD, Liang Y, Xie L, Lu T, Liu XD, Wang GJ. Pharmacokinetics of the ginkgo B
 <figure class="pk-models-diagram"><img src="drugs/drug_ginkgo_folium/GinkgoFolium_Chen2007_reference/GinkgoFolium_Chen2007_reference.svg" alt="GinkgoFolium_Chen2007_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL (l/min/kg), Dose 4 mg/kg | CL | 0.07 | l/min/kg |
@@ -38,7 +42,7 @@ Chen WD, Liang Y, Xie L, Lu T, Liu XD, Wang GJ. Pharmacokinetics of the ginkgo B
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.1). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +52,13 @@ Chen WD, Liang Y, Xie L, Lu T, Liu XD, Wang GJ. Pharmacokinetics of the ginkgo B
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The review was not approved because the second reader could not verify the extracted values for clearance and volume of distribution.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 59.7, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+The second reader disagreed with all values present in the record, including the clearance of 0.07 l/min/kg and the volume of distribution of 2.27 l/kg. Since no values were agreed upon by the second reader, the cross-check agreement was only 0.1. Consequently, the record was held back due to this lack of verification. Extracted — ginkgo folium: CL 0.07 l/min/kg, V 2.27 l/kg.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 59.7, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -74,14 +80,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.0 (0/10 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.1 (1/10 fields) | 9 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -94,7 +100,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `values[Q53]` | 171.32 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q60]` | 80.4 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q61]` | 2.27 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q75]` | 2566.4 | 2566.4 | mismatch |
 
 </details>
 
@@ -120,14 +125,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ginkgo_folium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ginkgo_folium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check agreement 0.1 is below 0.5: verdict partial, agreement 0.1, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

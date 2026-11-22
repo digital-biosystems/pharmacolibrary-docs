@@ -8,6 +8,26 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ley_2023:other_prose",
+    "value_si": 0.0008579999999999999
+   },
+   {
+    "source": "Ley_2023:other_prose",
+    "value_si": 0.001217
+   },
+   {
+    "source": "Ley_2023:other_prose",
+    "value_si": 2.1e-06
+   },
+   {
+    "source": "Ley_2023:other_prose",
+    "value_si": 1.7e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0277777777777777e-05,
   "F": 1.0,

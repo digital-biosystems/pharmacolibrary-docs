@@ -4,11 +4,11 @@
 
 # avatrombopag — `Avatrombopag_Liu2025v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:52 UTC (Needs review), but the paper was screened again on 2026-10-05 17:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model does not reproduce the paper's terminal half-life (model/paper ratio 0.684).
+> MTT has no unit; the model does not reproduce the paper's terminal half-life (model/paper ratio 0.684).
 
-<div class="pk-model-meta" hidden drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="true" population="healthy Chinese adults" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Liu X, Chen L, Ju G, Li C, Liu B, Fei Y et al. Investigation of the. Pharmaceuticals (Basel, Switzerland) 18(6) (2025).
@@ -16,7 +16,7 @@ Liu X, Chen L, Ju G, Li C, Liu B, Fei Y et al. Investigation of the. Pharmaceuti
 
 ## Population and dosing
 
-**Population:** healthy Chinese adults · condition healthy · age group adult · n = &gt;=92.
+**Population:** healthy Chinese adults · condition healthy · age group adult.
 
 **Dosing:** 20 mg, oral, single.
 
@@ -39,7 +39,7 @@ Liu X, Chen L, Ju G, Li C, Liu B, Fei Y et al. Investigation of the. Pharmaceuti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Liu X, Chen L, Ju G, Li C, Liu B, Fei Y et al. Investigation of the. Pharmaceuti
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.684).**
+**MTT has no unit; the model does not reproduce the paper's terminal half-life (model/paper ratio 0.684).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — avatrombopag: CL/F 7.85 L/h, V/F 199 L, kabs 0.582 /h, MTT 1.33 h.
+Without a unit the value cannot be converted, so the model cannot use it. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — avatrombopag: CL/F 7.85 L/h, V/F 199 L, kabs 0.582 /h, MTT 1.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has avatrombopag, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

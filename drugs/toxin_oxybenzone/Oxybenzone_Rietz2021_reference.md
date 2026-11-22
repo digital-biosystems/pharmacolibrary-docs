@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Oxybenzone&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/&quot;},{&quot;label&quot;:&quot;Rietz_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxybenzone_Okereke1994_reference&quot;,&quot;label&quot;:&quot;Okereke_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/Oxybenzone_Okereke1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxybenzone_Okereke1994_reference&quot;,&quot;label&quot;:&quot;Okereke_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_oxybenzone/Oxybenzone_Okereke1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record lacks essential kinetic parameters like clearance or volume for oxybenzone, retaining only metabolite absorption lag and rate constants, leading to rejection.
 
 <div class="pk-model-meta" hidden drug="Oxybenzone" model-id="Oxybenzone_Rietz2021_reference" status="rejected" stale="false" population="FLG null and wild-type carriers from the general population in southern Sweden" measured-compound="oxybenzone metabolite" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -46,7 +46,13 @@ Rietz Liljedahl E, Johanson G, Korres de Paula H, Faniband M, Assarsson E, Litto
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record lacks essential kinetic parameters like clearance or volume for oxybenzone, retaining only metabolite absorption lag and rate constants, leading to rejection.**
+
+The model structure describes a parent-metabolite relationship for oxybenzone, but the extracted parameters are exclusively the absorption lag time (0.07 h) and absorption rate constant (0.23 1/h) attributed to the oxybenzone metabolite. No half-life, volume, or clearance values were extracted for either the parent or the metabolite. Consequently, the record is classified as an exposure/outcome paper lacking the kinetic quantities necessary to define the pharmacokinetic system. Extracted — oxybenzone metabolite: tlag 0.07 h, kabs 0.23 1/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

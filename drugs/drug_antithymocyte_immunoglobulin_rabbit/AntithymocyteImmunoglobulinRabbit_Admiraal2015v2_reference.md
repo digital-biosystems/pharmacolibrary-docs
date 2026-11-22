@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's time of the peak (tmax) (paper 157, model 0.183).
+> The one-compartment model for antithymocyte immunoglobulin rabbit fails to reproduce the paper's time of the peak, simulating 0.183 hours instead of the reported 157 hours.
 
 <div class="pk-model-meta" hidden drug="antithymocyte immunoglobulin (rabbit)" model-id="AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference" status="needs_review" stale="false" population="children receiving allogeneic hematopoietic cell transplantation" measured-compound="antithymocyte immunoglobulin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Admiraal R, van Kesteren C, Jol-van der Zijde CM, van Tol MJ, Bartelink IH, Bred
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's time of the peak (tmax) (paper 157, model 0.183).**
+**The one-compartment model for antithymocyte immunoglobulin rabbit fails to reproduce the paper's time of the peak, simulating 0.183 hours instead of the reported 157 hours.**
 
-Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — antithymocyte immunoglobulin rabbit: CL 2.12 L/h, V 7.84 L.
+The model was held back because its simulated time of the peak (0.183 hours) differed drastically from the value reported in the paper (157 hours), failing the tolerance check. A second reader disagreed with the record, failing to identify the dose compound or the primary analyte, and assigned the clearance value of 2.12 L/h to the volume of distribution field. Extracted — antithymocyte immunoglobulin rabbit: CL 2.12 L/h, V 7.84 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has antithymocyte immunoglobulin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -136,6 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 | T1_tmax | reference | fail | 157 | 0.1833 | 0.0012 | →SI vs simulated h |
 
 <details class="legend">

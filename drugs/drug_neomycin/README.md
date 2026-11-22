@@ -25,28 +25,16 @@ Neomycin is an aminoglycoside antibiotic used to treat bacterial infections of t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Lentzen_1981_reference](drugs/drug_neomycin/Neomycin_Lentzen1981_reference.md) | — | 1-compartment (no model) | 2 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [Samuel_1968_control](drugs/drug_neomycin/Neomycin_Samuel1968_control.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [↳ neomycin](drugs/drug_neomycin/Neomycin_Samuel1968_neomycin.md) | — | 1-compartment (no model) | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [↳ placebo](drugs/drug_neomycin/Neomycin_Samuel1968_placebo.md) | — | 1-compartment (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Lentzen_1981_reference](drugs/drug_neomycin/Neomycin_Lentzen1981_reference.md) | — | 1-compartment (no model) | 2 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [Samuel_1968_control](drugs/drug_neomycin/Neomycin_Samuel1968_control.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [↳ neomycin](drugs/drug_neomycin/Neomycin_Samuel1968_neomycin.md) | — | 1-compartment (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [↳ placebo](drugs/drug_neomycin/Neomycin_Samuel1968_placebo.md) | — | 1-compartment (no model) | 3 |  |  |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Parkash_2004_Ca2_i](drugs/drug_neomycin/pd_Parkash_2004_Ca2_i.md) | [Ca2+]i ← neomycin sulfate · direct sigmoid Emax (Hill) effect | — | Parkash J et al., Calbindin-D28k and calcium sensing rece…, International journal of on… (2004) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=neomycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CASR (activator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,7 +54,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 54 matched, 19 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 4
+- **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

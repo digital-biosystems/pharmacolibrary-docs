@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Dichloroacetic Acid&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/&quot;},{&quot;label&quot;:&quot;Chen_2000 \u00b7 PD Liver tumor incidence&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DichloroaceticAcid_Abbas1997_reference&quot;,&quot;label&quot;:&quot;Abbas_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/DichloroaceticAcid_Abbas1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DichloroaceticAcid_Abbas1997_reference&quot;,&quot;label&quot;:&quot;Abbas_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/DichloroaceticAcid_Abbas1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Liver tumor incidence — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
@@ -19,6 +19,10 @@
 **As extracted:** DCA drives Liver tumor incidence (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The paper applies a stochastic biological based dose-response (BBDR) model, adapted from Chen and Farland, where the area under the concentration-time curve (AUC) of dichloroacetic acid (DCA) in liver tissue acts as the driver for liver tumor incidence by explicitly incorporating mitotic rates and cell initiation/promotion steps. The paper does not provide specific potency or rate values (e.g., IC50, kout) for this mechanism in the provided excerpts, instead noting that DCA AUC alone adequately predicts tumor response across studies while failing to provide meaningful parameters when combined with TCA.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2000`
 - **model family:** `unknown`

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;avelumab&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/&quot;},{&quot;label&quot;:&quot;van_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avelumab_Masters2022_reference&quot;,&quot;label&quot;:&quot;Masters_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Masters2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Vugmeyster2022_reference&quot;,&quot;label&quot;:&quot;Vugmeyster_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Wilkins2019_reference&quot;,&quot;label&quot;:&quot;Wilkins_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avelumab_Masters2022_reference&quot;,&quot;label&quot;:&quot;Masters_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Masters2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Vugmeyster2022_reference&quot;,&quot;label&quot;:&quot;Vugmeyster_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Wilkins2019_reference&quot;,&quot;label&quot;:&quot;Wilkins_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # avelumab — `Avelumab_van2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:50 UTC (Needs review), but the paper was screened again on 2026-10-07 09:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; cL_ratio has no unit.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_van2025_reference" status="needs_review" stale="true" population="patients with several tumor types" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_van2025_reference" status="needs_review" stale="false" population="patients with several tumor types" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van der Walt JS, Wilkins J, Khandelwal A, Venkatakrishnan K, Gao W, Milenković-Grišić AM. Interplay between pharmacokinetics and immunogenicity of therapeutic proteins: stepwise development of a bidirectional joint pharmacokinetics-anti-drug antibodies model. Journal of pharmacokinetics and pharmacodynamics 52(3):33 (2025).
@@ -44,7 +44,7 @@ van der Walt JS, Wilkins J, Khandelwal A, Venkatakrishnan K, Gao W, Milenković-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ van der Walt JS, Wilkins J, Khandelwal A, Venkatakrishnan K, Gao W, Milenković-
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cL_ratio has no unit.**
+**Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — avelumab: CL 0.0285 L/h, CL_ratio 0.217.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — avelumab: CL 0.0285 L/h, CL_ratio 0.217.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading avelumab → anti-drug antibodies (immunogenicity); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

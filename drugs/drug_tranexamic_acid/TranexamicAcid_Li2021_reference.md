@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;tranexamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/&quot;},{&quot;label&quot;:&quot;Li_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_reference&quot;,&quot;label&quot;:&quot;Gilliot_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_2021_maximum_lysis&quot;,&quot;label&quot;:&quot;Li_2021 \u00b7 maximum lysis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Li_2021_maximum_lysis.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zufferey_2021_postoperative_blood_loss&quot;,&quot;label&quot;:&quot;Zufferey_2021 \u00b7 postoperative blood loss&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Zufferey_2021_postoperative_blood_loss.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_reference&quot;,&quot;label&quot;:&quot;Gilliot_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TranexamicAcid_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Li_2021_maximum_lysis&quot;,&quot;label&quot;:&quot;Li_2021 \u00b7 maximum lysis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Li_2021_maximum_lysis.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zufferey_2021_postoperative_blood_loss&quot;,&quot;label&quot;:&quot;Zufferey_2021 \u00b7 postoperative blood loss&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Zufferey_2021_postoperative_blood_loss.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tranexamic acid — `TranexamicAcid_Li2021_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Li2021_reference" status="simulated" stale="false" population="pregnant women undergoing caesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
+> Second reader disputes the record for tranexamic acid in pregnant women because it relies on abstract-only data.
+
+<div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Li2021_reference" status="needs_review" stale="false" population="pregnant women undergoing caesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Li S, Ahmadzia HK, Guo D, Dahmane E, Miszta A, Luban NLC et al. Population pharmacokinetics and pharmacodynamics of Tranexamic acid in women undergoing caesarean delivery. British journal of clinical pharmacology 87(9):3531–3541 (2021).
@@ -15,7 +17,7 @@ Li S, Ahmadzia HK, Guo D, Dahmane E, Miszta A, Luban NLC et al. Population pharm
 
 ## Population and dosing
 
-**Population:** pregnant women undergoing caesarean delivery · condition pregnancy · age group adult · n = &gt;=30.
+**Population:** pregnant women undergoing caesarean delivery · condition pregnancy · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Li S, Ahmadzia HK, Guo D, Dahmane E, Miszta A, Luban NLC et al. Population pharm
 <figure class="pk-models-diagram"><img src="drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference/TranexamicAcid_Li2021_reference.svg" alt="TranexamicAcid_Li2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance | CL | 9.4 | L/h |
@@ -36,7 +40,7 @@ Li S, Ahmadzia HK, Guo D, Dahmane E, Miszta A, Luban NLC et al. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Li S, Ahmadzia HK, Guo D, Dahmane E, Miszta A, Luban NLC et al. Population pharm
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Second reader disputes the record for tranexamic acid in pregnant women because it relies on abstract-only data.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record is held back as a cross-check dispute with a low agreement score of 0.167. The second reader marked the dose compound, primary analyte, and all four pharmacokinetic parameters as unknown or null. Because the record was built from the abstract alone, these summary statistics were not confirmed by a second independent read. Extracted — tranexamic acid: CL 9.4 L/h, V1 10.1 L, Q 22.4 L/h, V2 14 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -88,22 +92,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[central volume]` | 10.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[central volume]` |  | 10.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 9.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` |  | 9.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 22.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` |  | 22.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume]` | 14.0 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume]` |  | 14.0 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | tranexamic acid | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | tranexamic acid | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[central volume]` | 10.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume]` |  | 10.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 9.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 9.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 22.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 22.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume]` | 14.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume]` |  | 14.0 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tranexamic acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tranexamic acid | unknown | mismatch |
 
 </details>
 
@@ -132,14 +136,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=tranexamic acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=tranexamic acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

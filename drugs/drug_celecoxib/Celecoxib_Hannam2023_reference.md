@@ -5,11 +5,11 @@
 
 # celecoxib — `Celecoxib_Hannam2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 02:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Celecoxib was rejected because the bioavailability-adjusted volume of distribution parameter was recorded as -0.660.
+> Celecoxib’s V/F, the bioavailability-adjusted volume of distribution, is -0.660, an implausible negative value that led to rejection.
 
-<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Hannam2023_reference" status="rejected" stale="true" population="adults" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Hannam2023_reference" status="rejected" stale="false" population="adults" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hannam JA, Murto KT, Anderson BJ, Dembo G, Kharasch ED. Modeling adult COX-2 cerebrospinal fluid pharmacokinetics to inform pediatric investigation. Paediatric anaesthesia 33(4):291–302 (2023).
@@ -43,7 +43,7 @@ Hannam JA, Murto KT, Anderson BJ, Dembo G, Kharasch ED. Modeling adult COX-2 cer
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Hannam JA, Murto KT, Anderson BJ, Dembo G, Kharasch ED. Modeling adult COX-2 cer
 
 ### Reviewer guidance
 
-**Celecoxib was rejected because the bioavailability-adjusted volume of distribution parameter was recorded as -0.660.**
+**Celecoxib’s V/F, the bioavailability-adjusted volume of distribution, is -0.660, an implausible negative value that led to rejection.**
 
-The record lists the apparent volume of distribution (V/F) with a value of -0.660. This negative value is physiologically implausible for a volume parameter and contradicts the provided standard value of 80.1 l/kg. The rejection reason specifically identifies a negative volume as an implausible base value. Extracted — celecoxib: Vnorm/F 80.1 l˙70 kg−1, CLnorm/F 5.04 l˙h−1˙70 kg−1, t1/2ka 0.421 h, tlag 0.511 h, CL/F 1, V/F -0.66, t1/2z 0.839 h.
+The record lists celecoxib V/F as -0.660, with no unit reported. This negative apparent volume is the implausible clearance/volume finding cited for rejection. Extracted — celecoxib: Vnorm/F 80.1 l˙70 kg−1, CLnorm/F 5.04 l˙h−1˙70 kg−1, t1/2ka 0.421 h, tlag 0.511 h, CL/F 1, V/F -0.66, t1/2z 0.839 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;lenalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/&quot;},{&quot;label&quot;:&quot;Gupta_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenalidomide_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lenalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Hughes2019_reference&quot;,&quot;label&quot;:&quot;Hughes_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Hughes2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenalidomide_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lenalidomide_Hughes2019_reference&quot;,&quot;label&quot;:&quot;Hughes_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Hughes2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lenalidomide — `Lenalidomide_Gupta2019_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Gupta2019_reference" status="simulated" stale="false" population="" measured-compound="lenalidomide" parameterization="mechanistic" topology="1C"></div>
+> Disputed because a second reader rejected the recorded clearance and distribution volume values for lenalidomide.
+
+<div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Gupta2019_reference" status="needs_review" stale="false" population="" measured-compound="lenalidomide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gupta N, Hanley MJ, Xia C, Labotka R, Harvey RD, Venkatakrishnan K. Clinical Pharmacology of Ixazomib: The First Oral Proteasome Inhibitor. Clinical pharmacokinetics 58(4):431–449 (2019).
@@ -27,6 +29,8 @@ Gupta N, Hanley MJ, Xia C, Labotka R, Harvey RD, Venkatakrishnan K. Clinical Pha
 <figure class="pk-models-diagram"><img src="drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference/Lenalidomide_Gupta2019_reference.svg" alt="Lenalidomide_Gupta2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | systemic clearance | CL | 1.9 | L/h |
@@ -34,7 +38,7 @@ Gupta N, Hanley MJ, Xia C, Labotka R, Harvey RD, Venkatakrishnan K. Clinical Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.476). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Gupta N, Hanley MJ, Xia C, Labotka R, Harvey RD, Venkatakrishnan K. Clinical Pha
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Disputed because a second reader rejected the recorded clearance and distribution volume values for lenalidomide.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 1.04, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+The model record lists a systemic clearance of 1.9 L/h and a distribution volume of 624.9755 L for lenalidomide. A second reader disagreed with the original verdict, resulting in an agreement score of 0.476 with zero readers in favor. This cross-check failure indicates the specific pharmacokinetic parameter values remain unverified. Extracted — lenalidomide: CL 1.9 L/h, V 625 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 1.04, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -75,9 +81,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.429 (9/21 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.476 (10/21 fields) | 11 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -86,7 +92,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `values[Q312]` |  | 44 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 69 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q330]` | 18 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q33]` | 1.16 | 1.16 | mismatch |
 | `gpt-oss-120b` | `values[Q44]` |  | 3.23 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q45]` |  | 42 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q57]` | 9.5 | 18 | mismatch |
@@ -118,14 +123,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=lenalidomide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=lenalidomide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.476, 0 of 1 reader(s) agree | 0.476 | cross-check disputed by a second reader: verdict disputed, agreement 0.476, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # garenoxacin — `Garenoxacin_Van2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-13 11:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for garenoxacin was rejected because its unit, liters per hour, could not be converted to a standard unit.
+> Garenoxacin’s absorption rate constant kabs was reported as 3.15 l/hr, a volume-per-time unit rather than an inverse-time unit, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="garenoxacin" model-id="Garenoxacin_Van2004_reference" status="rejected" stale="true" population="patients with community-acquired respiratory tract infections" measured-compound="garenoxacin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="garenoxacin" model-id="Garenoxacin_Van2004_reference" status="rejected" stale="false" population="patients with community-acquired respiratory tract infections" measured-compound="garenoxacin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Van Wart S, Phillips L, Ludwig EA, Russo R, Gajjar DA, Bello A et al. Population pharmacokinetics and pharmacodynamics of garenoxacin in patients with community-acquired respiratory tract infections. Antimicrobial agents and chemotherapy 48(12):4766–4777 (2004).
@@ -42,7 +42,7 @@ Van Wart S, Phillips L, Ludwig EA, Russo R, Gajjar DA, Bello A et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,11 @@ Van Wart S, Phillips L, Ludwig EA, Russo R, Gajjar DA, Bello A et al. Population
 
 ### Reviewer guidance
 
-**The absorption rate constant for garenoxacin was rejected because its unit, liters per hour, could not be converted to a standard unit.**
+**Garenoxacin’s absorption rate constant kabs was reported as 3.15 l/hr, a volume-per-time unit rather than an inverse-time unit, so the record was rejected.**
 
-The model specifies an oral one-compartment structure for garenoxacin. The parameter representing the absorption rate constant has a value of 3.15, but its unit is recorded as 'l/hr'. Because this unit is not recognized by the system, the parameter lacked a valid standard value, leading to a dimension mismatch in the structural parameters. Extracted — garenoxacin: CL/F 25.5 ml/min, V/F 18.8 liters, kabs 3.15 l/hr.
+The record defines kabs as the absorption rate constant, but reports l/hr, whose dimensions are volume per time rather than inverse time. That unit could not be converted to SI, leaving the dimensional conflict unresolved. Extracted — garenoxacin: CL/F 25.5 ml/min, V/F 18.8 liters, kabs 3.15 l/hr.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

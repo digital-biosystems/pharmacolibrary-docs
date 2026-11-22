@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ergovaline&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/&quot;},{&quot;label&quot;:&quot;Jaussaud_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_1&quot;,&quot;label&quot;:&quot;Bony_2001_horse_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_1.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_2&quot;,&quot;label&quot;:&quot;Bony_2001_horse_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_2.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_3&quot;,&quot;label&quot;:&quot;Bony_2001_horse_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_3.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_4&quot;,&quot;label&quot;:&quot;Bony_2001_horse_4&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_4.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_1&quot;,&quot;label&quot;:&quot;Bony_2001_horse_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_2&quot;,&quot;label&quot;:&quot;Bony_2001_horse_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_3&quot;,&quot;label&quot;:&quot;Bony_2001_horse_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_3.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_4&quot;,&quot;label&quot;:&quot;Bony_2001_horse_4&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_4.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="Ergovaline" model-id="Ergovaline_Jaussaud1998_reference" status="needs_review" stale="false" population="sheep" measured-compound="Ergovaline" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,13 @@ Jaussaud P, Durix A, Videmann B, Vigié A, Bony S. Rapid analysis of ergovaline 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ergovaline: t1/2z 23.6 min, CL 0.02 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

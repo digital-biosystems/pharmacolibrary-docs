@@ -4,11 +4,11 @@
 
 # sodium selenite — `SodiumSelenite_Zheng2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
-> This record was reviewed on 2026-11-07 16:35 UTC (Rejected), but the paper was screened again on 2026-10-05 09:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="sodium selenite" model-id="SodiumSelenite_Zheng2019_reference" status="needs_review" stale="true" population="selenium-deficient ducklings" measured-compound="sodium selenite" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium selenite" model-id="SodiumSelenite_Zheng2019_reference" status="needs_review" stale="false" population="selenium-deficient ducklings" measured-compound="sodium selenite" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zheng S, Xing H, Zhang Q, Xue H, Zhu F, Xu S. Pharmacokinetics of Sodium Selenite Administered Orally in Blood and Tissues of Selenium-Deficient Ducklings. Biological trace element research 190(2):509–516 (2019).
@@ -38,7 +38,7 @@ Zheng S, Xing H, Zhang Q, Xue H, Zhu F, Xu S. Pharmacokinetics of Sodium Selenit
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Zheng S, Xing H, Zhang Q, Xue H, Zhu F, Xu S. Pharmacokinetics of Sodium Selenit
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sodium selenite: t1/2ka 5.9 h, tmax 23 h, t1/2z 131 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

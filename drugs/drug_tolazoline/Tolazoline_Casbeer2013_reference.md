@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;tolazoline&quot;,&quot;href&quot;:&quot;drugs/drug_tolazoline/&quot;},{&quot;label&quot;:&quot;Casbeer_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolazoline_Casbeer2013_reference&quot;,&quot;label&quot;:&quot;Casbeer_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolazoline_Casbeer2013_reference&quot;,&quot;label&quot;:&quot;Casbeer_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tolazoline — `Tolazoline_Casbeer2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Vss was substituted for the central volume in a one-compartment model because only abstract data were available, failing the deviation check.
-
-<div class="pk-model-meta" hidden drug="tolazoline" model-id="Tolazoline_Casbeer2013_reference" status="needs_review" stale="false" population="healthy adult horses" measured-compound="tolazoline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolazoline" model-id="Tolazoline_Casbeer2013_reference" status="simulated" stale="false" population="healthy adult horses" measured-compound="tolazoline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Casbeer HC, Knych HK. Pharmacokinetics and pharmacodynamic effects of tolazoline following intravenous administration to horses. Veterinary journal (London, England : 1997) 196(3):504–509 (2013).
@@ -17,7 +15,7 @@ Casbeer HC, Knych HK. Pharmacokinetics and pharmacodynamic effects of tolazoline
 
 ## Population and dosing
 
-**Population:** healthy adult horses · condition healthy · age group adult · n = &gt;=9.
+**Population:** healthy adult horses · condition healthy · age group adult.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -31,8 +29,6 @@ Casbeer HC, Knych HK. Pharmacokinetics and pharmacodynamic effects of tolazoline
 <figure class="pk-models-diagram"><img src="drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference/Tolazoline_Casbeer2013_reference.svg" alt="Tolazoline_Casbeer2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Systemic clearance | CL | 0.82 | L/h/kg |
@@ -41,7 +37,7 @@ Casbeer HC, Knych HK. Pharmacokinetics and pharmacodynamic effects of tolazoline
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +47,13 @@ Casbeer HC, Knych HK. Pharmacokinetics and pharmacodynamic effects of tolazoline
 
 ### Reviewer guidance
 
-**Vss was substituted for the central volume in a one-compartment model because only abstract data were available, failing the deviation check.**
+**Every check that could be run on this record passed.**
 
-The record used the steady-state volume of distribution (1.68 L/kg) as the sole distribution volume because no central volume was reported. This substitution means the model can reproduce the terminal half-life (2.69 h) but cannot describe the early distribution phase. The failure stems from relying on abstract summary statistics rather than a fitted model that distinguishes distribution compartments. Extracted — tolazoline: CL 0.82 L/h/kg, Vss 1.68 L/kg, t1/2z 2.69 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -118,14 +114,15 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=tolazoline) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=tolazoline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

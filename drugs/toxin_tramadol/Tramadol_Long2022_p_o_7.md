@@ -145,30 +145,13 @@ The record lists five pharmacokinetic parameters (clearance, volume of distribut
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_tramadol/Tramadol_Long2022_p_o_7/Tramadol_Long2022_p_o_7_matlab.zip" download>Tramadol_Long2022_p_o_7_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_tramadol/Tramadol_Long2022_p_o_7/Tramadol_Long2022_p_o_7_matlab_simbio.zip" download>Tramadol_Long2022_p_o_7_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_tramadol/Tramadol_Long2022_p_o_7/Tramadol_Long2022_p_o_7_sbml.zip" download>Tramadol_Long2022_p_o_7_sbml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_tramadol/Tramadol_Long2022_p_o_7/Tramadol_Long2022_p_o_7_cellml.zip" download>Tramadol_Long2022_p_o_7_cellml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Long T, Cristofoletti R, Cicali B, Michaud V, Dow P, Turgeon J et al. Physiologically Based Pharmacokinetic Modeling to Assess the Impact of CYP2D6-Mediated Drug-Drug Interactions on Tramadol and O-Desmethyltramadol Exposures via Allosteric and Competitive Inhibition. Journal of clinical pharmacology 62(1):76–86 (2022). [doi:10.1002/jcph.1951](https://doi.org/10.1002/jcph.1951)
-
-**This record:** Pharmacolibrary, model `Tramadol_Long2022_p_o_7`. <https://pharmacolibrary.github.io/#/drugs/toxin_tramadol/Tramadol_Long2022_p_o_7>
-
-```bibtex
-@misc{pharmacolibrary_TramadolLong2022po7,
-  title  = {{Pharmacolibrary model Tramadol_Long2022_p_o_7}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_tramadol/Tramadol_Long2022_p_o_7},
-  note   = {Parameters from doi:10.1002/jcph.1951},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

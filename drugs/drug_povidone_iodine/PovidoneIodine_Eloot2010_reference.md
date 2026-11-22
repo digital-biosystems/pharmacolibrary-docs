@@ -4,11 +4,11 @@
 
 # povidone-iodine — `PovidoneIodine_Eloot2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-07 22:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Povidone iodine elimination rate 55 mL/min has a dimension mismatch for a rate constant parameter.
+> The iodine elimination rate constant of 55 mL/min is dimensionally invalid for a first-order kinetic parameter.
 
-<div class="pk-model-meta" hidden drug="povidone-iodine" model-id="PovidoneIodine_Eloot2010_reference" status="rejected" stale="true" population="burn-injured patients with elevated iodine levels" measured-compound="iodine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="povidone-iodine" model-id="PovidoneIodine_Eloot2010_reference" status="rejected" stale="false" population="burn-injured patients with elevated iodine levels" measured-compound="iodine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Eloot S, Dhondt A, Hoste E, Verstraete A, De Waele J, Colpaert K et al. How to remove accumulated iodine in burn-injured patients. Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association - European Renal Association 25(5):1614–1620 (2010).
@@ -35,7 +35,7 @@ Eloot S, Dhondt A, Hoste E, Verstraete A, De Waele J, Colpaert K et al. How to r
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Eloot S, Dhondt A, Hoste E, Verstraete A, De Waele J, Colpaert K et al. How to r
 
 ### Reviewer guidance
 
-**Povidone iodine elimination rate 55 mL/min has a dimension mismatch for a rate constant parameter.**
+**The iodine elimination rate constant of 55 mL/min is dimensionally invalid for a first-order kinetic parameter.**
 
-The elimination rate constant (kel) is reported as 55 mL/min, which is a clearance unit rather than a time-based rate, causing a dimensional error. Because the record relies on abstract-only summary statistics, these values stand in for a fitted model. A second reader failed to extract the values 55 and 19.4, confirming extraction uncertainty. Extracted — iodine: V 19.4 L, kel 55 mL/min.
+The record lists the terminal elimination rate constant with units of mL/min, which conflicts with the required 1/time dimension for a first-order rate constant. Additionally, the model was built from abstract-only summary statistics, meaning the values are not fitted model parameters. A second reader also disputed whether the dose compound should be identified as iodine or povidone-iodine. Extracted — iodine: V 19.4 L, kel 55 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iodine, the second reading povidone-iodine. That field shapes the model, so the record is marked disputed.
 

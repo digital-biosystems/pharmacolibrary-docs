@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Clearance was set to 15 ml/min (creatinine clearance) instead of bretylium clearance, causing a terminal half-life of 328.85599021171373 hours.
+> Bretylium CL (15 ml/min) is labeled creatinine clearance, so the record treats a biomarker as drug disposition and was rejected.
 
 <div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Rapeport1985_garret_et_al" status="rejected" stale="false" population="adults" measured-compound="bretylium" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Rapeport WG. Clinical pharmacokinetics of bretylium. Clinical pharmacokinetics 1
 
 ### Reviewer guidance
 
-**Clearance was set to 15 ml/min (creatinine clearance) instead of bretylium clearance, causing a terminal half-life of 328.85599021171373 hours.**
+**Bretylium CL (15 ml/min) is labeled creatinine clearance, so the record treats a biomarker as drug disposition and was rejected.**
 
-The parameter labeled 'Creatinine clearance' with a value of 15 ml/min was extracted as total clearance, but its label names a renal biomarker rather than drug elimination. This error results in a terminal half-life of 328.85599021171373 hours, which fails to match the paper's reported terminal half-lives of 12.0 or 11.0 hours. The record was rejected because the clearance parameter does not represent the kinetics of bretylium. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
+The model does not reproduce the paper's terminal half-life (paper 6, model 329). The model does not reproduce the paper's terminal half-life (paper 12, model 329). The builder defaulted the absorption-rate constant and lag time, assumed bioavailability and metabolite fraction of 1 with no molar correction, and used first-order depot input, implying extravascular dosing. A second reader disputed the verdict, with agreement 0.143 and 0 of 1 reader agreeing. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bretylium_tosilate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=bretylium) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 | T1_t_half_alpha | reference | skipped | 25 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | fail | 6 | 328.9 | 54.81 | hours→SI vs simulated h |
 | T1_t_half_beta | reference | fail | 14 | 328.9 | 23.49 | hours→SI vs simulated h |

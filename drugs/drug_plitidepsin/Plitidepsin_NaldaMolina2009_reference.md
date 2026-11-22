@@ -16,7 +16,7 @@ Nalda-Molina R, Valenzuela B, Ramon-Lopez A, Miguel-Lillo B, Soto-Matos A, Perez
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · age group adult · n = &gt;&lt;parameter name="n_subjects" type="integer"&gt;.
+**Population:** cancer patients · condition cancer · age group adult.
 
 ## Model
 

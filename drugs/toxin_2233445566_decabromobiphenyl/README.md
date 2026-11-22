@@ -42,7 +42,7 @@
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Wang_2016_bioluminescence_inhibition](drugs/toxin_2233445566_decabromobiphenyl/pd_Wang_2016_bioluminescence_inhibition.md) | bioluminescence inhibition biomarker turnover ← 2233445566_decabromobiphenyl | — | Wang W et al., Eco-toxicological bioassay of atmospher…, Ecotoxicology and environme… (2016) | [10.1016/j.ecoenv.2016.07.024](https://doi.org/10.1016/j.ecoenv.2016.07.024) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">other organism</span> | [Wang_2016_bioluminescence_inhibition](drugs/toxin_2233445566_decabromobiphenyl/pd_Wang_2016_bioluminescence_inhibition.md) | bioluminescence inhibition biomarker turnover ← 2233445566_decabromobiphenyl | — | Wang W et al., Eco-toxicological bioassay of atmospher…, Ecotoxicology and environme… (2016) | [10.1016/j.ecoenv.2016.07.024](https://doi.org/10.1016/j.ecoenv.2016.07.024) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

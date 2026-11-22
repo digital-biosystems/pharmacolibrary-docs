@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;infliximab&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/&quot;},{&quot;label&quot;:&quot;Hemperly_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Infliximab_Eser2021_reference&quot;,&quot;label&quot;:&quot;Eser_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Eser2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Little2022_reference&quot;,&quot;label&quot;:&quot;Little_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Little2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_ESR&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 ESR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_ESR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_albumin&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 albumin&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_albumin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_nCD64&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 nCD64&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_nCD64.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_weight&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_weight.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Infliximab_Little2022_reference&quot;,&quot;label&quot;:&quot;Little_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Little2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Eser2021_reference&quot;,&quot;label&quot;:&quot;Eser_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Eser2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_ESR&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 ESR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_ESR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_albumin&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 albumin&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_albumin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_nCD64&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 nCD64&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_nCD64.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_weight&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_weight.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # infliximab — `Infliximab_Hemperly2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-06 23:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The population clearance typical value lacks an extracted numeric value, preventing dimension validation for the pediatric infliximab model.
+> Clearance was recorded with volume units (L/day) instead of flow units, causing a dimensional mismatch.
 
-<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Hemperly2025_reference" status="rejected" stale="true" population="pediatric patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Hemperly2025_reference" status="rejected" stale="false" population="pediatric patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Hemperly A, Yang J, Ta A, Vande Casteele N. Pharmacokinetics and Exposure-Response During Infliximab Induction Therapy in Pediatric IBD Using Point-of-Care Assay. Journal of clinical medicine 14(22) (2025).
@@ -40,7 +40,7 @@ Hemperly A, Yang J, Ta A, Vande Casteele N. Pharmacokinetics and Exposure-Respon
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Hemperly A, Yang J, Ta A, Vande Casteele N. Pharmacokinetics and Exposure-Respon
 
 ### Reviewer guidance
 
-**The population clearance typical value lacks an extracted numeric value, preventing dimension validation for the pediatric infliximab model.**
+**Clearance was recorded with volume units (L/day) instead of flow units, causing a dimensional mismatch.**
 
-The record lists a population clearance typical value of 0.252 L/day without a corresponding parameter value entry. This missing value prevents the necessary dimension check for the structural clearance parameter. Consequently, the record was rejected due to a dimension mismatch on the structural parameter. Extracted — infliximab: V1 3.43 L, V2 2.11 L, Q 1.41 L/day.
+The clearance parameter has a value of 0.252 listed with the unit 'L/day'. This unit represents volume per time, which is dimensionally incorrect for a clearance parameter that requires flow dimensions. The mismatch prevented the conversion of the value to standard SI units, leaving the parameter without a valid numeric value for the model. Extracted — infliximab: V1 3.43 L, V2 2.11 L, Q 1.41 L/day.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Doxorubicin_Yoshida1994_non_hd_group",
+ "molar_masses": {
+  "central.C": 0.5435193
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.1526638888888883e-07,
+  "F": 1.0,
+  "MM": 0.5435193,
+  "VdPerKg": 8.242857142857142e-06,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066201
+ },
+ "reference_peaks": {
+  "central.C": 0.01477676019323496
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

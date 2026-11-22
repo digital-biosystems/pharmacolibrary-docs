@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Umeclidinium volume of distribution and absorption lag time lacked extracted values, so library placeholders caused model quarantine.
+> Umeclidinium's volume of distribution and absorption lag time lacked extracted values, causing the model to be held back.
 
 <div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Mehta2018_historical_model_parameter_estimates" status="model_quarantined" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -53,9 +53,9 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**Umeclidinium volume of distribution and absorption lag time lacked extracted values, so library placeholders caused model quarantine.**
+**Umeclidinium's volume of distribution and absorption lag time lacked extracted values, causing the model to be held back.**
 
-The record failed to assign an explicit value to the primary volume of distribution parameter, resulting in the use of a library placeholder. Absorption lag time was similarly left without an extracted estimate, relying on default conventions. This absence of specific data for these parameters prevented the model from being published. Extracted — umeclidinium: CL/F 40.9 L/h, V2/F 268 L, Q/F 118 L/h, V3/F 1.24e+03 L, kabs 18.8 1/h.
+The record includes clearance, peripheral volumes, and absorption rate constant, but no values were provided for volume of distribution or absorption lag time. Consequently, placeholder values were used, preventing publication. A second reader also disputed the extracted parameter values and could not identify the primary analyte. Extracted — umeclidinium: CL/F 40.9 L/h, V2/F 268 L, Q/F 118 L/h, V3/F 1.24e+03 L, kabs 18.8 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -139,14 +139,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check disputed by a second reader: verdict disputed, agreement 0.429, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

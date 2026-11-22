@@ -1,15 +1,15 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Zhang_2025 \u00b7 parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_estimates&quot;,&quot;label&quot;:&quot;Sukeishi_2022_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_estimates.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Zhang_2025 \u00b7 parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_estimates&quot;,&quot;label&quot;:&quot;Sukeishi_2022_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_final_model_1485&quot;,&quot;label&quot;:&quot;Sukeishi_2022_final_model_1485&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_final_model_1485.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:49 UTC (Rejected), but the paper was screened again on 2026-11-04 11:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The remdesivir total body clearance value of 18.1 L/h could not be converted to SI units, leading to rejection.
+> The parent compound's intercompartmental clearance parameter has unit /h, conflicting with the required volume-time dimension, causing rejection.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient" status="rejected" stale="true" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient" status="rejected" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and its metabolites in healthy subjects and patients with renal impairment. Frontiers in pharmacology 16:1488961 (2025).
@@ -17,15 +17,15 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with renal impairment · condition renal impairment · age group adult · n = 43.
+**Population:** healthy subjects and patients with renal impairment · condition renal impairment · age group adult.
 
-**Dosing:** 100, 200 mg, iv, multiple, every 24 h.
+**Dosing:** 20, 40, 100 mg, iv, single.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted, plus 2 covariate effects.  
+**Parameters:** 7 extracted, plus 2 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -38,14 +38,15 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 | QNUC | Q | 50.02 | /h |
 | KP,NUC | CLfm | 0.15 | /h |
 | KP,NTP | kic | 0.037 | /h |
+| CLC,RDV | Q | 2.3 | /h |
 | theta_q370_im | theta_q370_im | 0.22 |  |
 | theta_q370_im | theta_q370_im | 0 |  |
-| Total body clearance (L/h) | CL | 18.1 | L/h |
-| RDV Vz, L | V | 92.6 | L |
+| Total body clearance (L/h) Remdesivir | CL | 18.1 | L/h |
+| V | V | 90.3 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +56,11 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 ### Reviewer guidance
 
-**The remdesivir total body clearance value of 18.1 L/h could not be converted to SI units, leading to rejection.**
+**The parent compound's intercompartmental clearance parameter has unit /h, conflicting with the required volume-time dimension, causing rejection.**
 
-The record lists total body clearance for remdesivir as 18.1 L/h, a unit that was not recognized as convertible to standard SI units. Consequently, the dimension check failed for this structural parameter. Additionally, the second reader disagreed on the metabolite structure, identifying a missing link to gs-443902. Extracted — intermediate metabolites: Q 83.8 /h; nucleoside monophosphate: Q 50 /h, CLfm 0.15 /h; remdesivir: kic 0.037 /h, CL 18.1 L/h, V 92.6 L.
+The parameter labeled CLC,RDV for remdesivir has a value of 2.3 with unit /h. Its definition is apparent intercompartmental clearance, which physically requires units of volume divided by time, not the reciprocal of time alone. A secondary check also failed to convert the reported units to standard international units. Extracted — intermediate metabolites (IM): Q 83.8 /h; nucleoside monophosphate (NUC): Q 50 /h, CLfm 0.15 /h; remdesivir: kic 0.037 /h, Q 2.3 /h, CL 18.1 L/h, V 90.3 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism), the second reading remdesivir → intermediate metabolite (metabolism); intermediate metabolite → nucleoside monophosphate (metabolism); nucleoside monophosphate → gs-443902 (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (im) (metabolism); intermediate metabolites (im) → nucleoside monophosphate (nuc) (metabolism), the second reading remdesivir → intermediate metabolite (im) (metabolism); intermediate metabolite (im) → nucleoside monophosphate (nuc) (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -72,10 +73,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 | QNUC | `Q30` · Q | 50.02 | /h |  |  | 1/h | exact (1) | T1:row3:col4 |
 | KP,NUC | `Q370` · CLfm | 0.15 | /h |  |  | 1/h | exact (1) | T1:row5:col4 |
 | KP,NTP | `Q350` · kic | 0.037 | /h | 1.028e-05 | 1/s | 1/h | exact (1) | T1:row6:col4 |
+| CLC,RDV | `Q30` · Q | 2.3 | /h |  |  | 1/h | llm (0.6) | T1:row9:col4 |
 | theta_q370_im | `Q900` · theta_q370_im | 0.22 |  |  |  |  |  | T1:row4:col4 |
 | theta_q370_im | `Q900` · theta_q370_im | 0 |  |  |  |  |  | T1:row8:col4 |
-| Total body clearance (L/h) | `Q22` · CL | 18.1 | L/h | 5.028e-06 | m3/s | L/h | review_gapfill (0.7) | Abouellil_2023:review |
-| RDV Vz, L | `Q61` · V | 92.6 | L | 0.0926 | m3 | L | review_gapfill (0.7) | Humeniuk_2021:review |
+| Total body clearance (L/h) Remdesivir | `Q22` · CL | 18.1 | L/h | 5.028e-06 | m3/s | L/h | review_gapfill (0.7) | Abouellil_2023:review |
+| V | `Q61` · V | 90.3 | L | 0.0903 | m3 | L | review_gapfill (0.7) | Roberts_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -90,7 +92,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - unit_dimension_mismatch: 'KP,NUC' → Q370 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'KC,NUC' → Q370 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q370 ('KC,NUC', value '6.27') — already have one for this compound
-- dropped duplicate Q900 ('CLC,RDV', value '2.3') — already have one for this compound
+- conflicting Q370 for nucleoside monophosphate (NUC): 'KC,NUC' = '6.27' vs 'KP,NUC' = '0.15' — route to review
+- unit_dimension_mismatch: 'CLC,RDV' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - covariate effect for Q370 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -99,11 +102,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - pharmacogenetic covariate 'theta_q370_im' (im) — PGx domain
 - status held at "Needs review" — not promoted
 - population split: 'parameters for a renal-impaired patient with egfr = 0 (sörgel et al., 2021)' subgroup of Zhang_2025 (paper reports 3 populations: parameters for a renal-impaired patient with egfr = 0 (sörgel et al., 2021), parameters for healthy control (zhang et al., 2020), parameters for severe renal-impaired patients (zhang et al., 2020))
-- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 24 linked by role; re-tagged parent→intermediate metabolites ×9, parent→nucleoside monophosphate ×9
-- molar mass: no plausible PubChem entry for 'nucleoside monophosphate' ('nucleoside monophosphate') — left in mass units
-- molar mass: none found for 'nucleoside monophosphate' — its concentrations stay mass-only
+- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 24 linked by role; re-tagged parent→intermediate metabolites (IM) ×9, parent→nucleoside monophosphate (NUC) ×9
+- molar mass: no plausible PubChem entry for 'intermediate metabolites (IM)' ('Remdesivir Alanine Metabolite (Ala-Met; GS-704277)') — left in mass units
+- molar mass: none of 1 PubChem candidate(s) is 'nucleoside monophosphate (NUC)' (LLM) — left in mass units
+- molar mass: none found for 'intermediate metabolites (IM)' — its concentrations stay mass-only
+- molar mass: none found for 'nucleoside monophosphate (NUC)' — its concentrations stay mass-only
 - gap-filled Q22 (CL) from Abouellil_2023's review values (primary lacked it)
-- gap-filled Q61 (V) from Humeniuk_2021's review values (primary lacked it)
+- gap-filled Q61 (V) from Roberts_2025's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
@@ -116,14 +121,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (7/14 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.533 (8/15 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism']] | [['remdesivir', 'intermediate metabolite', 'metabolism'], ['intermediate metabolite', 'nucleoside monophosphate', 'metabolism'], ['nucleoside monophosphate', 'gs-443902', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[clc,rdv]` |  | 2.3 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['remdesivir', 'intermediate metabolites (im)', 'metabolism'], ['intermediate metabolites (im)', 'nucleoside monophosphate (nuc)', 'metabolism']] | [['remdesivir', 'intermediate metabolite (im)', 'metabolism'], ['intermediate metabolite (im)', 'nucleoside monophosphate (nuc)', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[clc,rdv].parameter_id` | Q30 | Q26 | mismatch |
 | `gpt-oss-120b` | `parameters[qim]` |  | 83.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[qim]` | 83.8 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[qrdv].parameter_id` | Q900 | Q47 | mismatch |
@@ -142,18 +147,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Abouellil_2023:review'] |
 | C5_dimension_Q30 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['T1:row2:col4'] |
 | C5_dimension_Q30 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['T1:row3:col4'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['T1:row9:col4'] |
 | C5_dimension_Q350 | pass | 1 / [time] |  | ['T1:row6:col4'] |
 | C5_dimension_Q370 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['T1:row5:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Humeniuk_2021:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Roberts_2025:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.1 | ['Abouellil_2023:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 18.1 L/h | ['Abouellil_2023:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 92.6 L | ['Humeniuk_2021:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 90.3 L | ['Roberts_2025:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -177,4 +183,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient%0APaper%3A%20Zhang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 11:19 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:05 UTC</sub>

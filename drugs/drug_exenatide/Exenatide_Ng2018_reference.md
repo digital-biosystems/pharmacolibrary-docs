@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> The two-compartment exenatide model was rejected because the peripheral compartment is unreachable from the dose.
+> The exenatide model was rejected because the peripheral compartment has no path from the dose, and its volume is 8.89 liters.
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Ng2018_reference" status="rejected" stale="false" population="" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
 
@@ -38,7 +38,7 @@ Ng CM, Tang F, Seeholzer SH, Zou Y, De León DD. Population pharmacokinetics of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Ng CM, Tang F, Seeholzer SH, Zou Y, De León DD. Population pharmacokinetics of 
 
 ### Reviewer guidance
 
-**The two-compartment exenatide model was rejected because the peripheral compartment is unreachable from the dose.**
+**The exenatide model was rejected because the peripheral compartment has no path from the dose, and its volume is 8.89 liters.**
 
-The record specifies a two-compartment structure but lists only central volume, clearance, and apparent volume of distribution, omitting the intercompartmental clearance that links the two. Consequently, the peripheral compartment has no path from the dose site, rendering the model structurally invalid. While a second reader disagreed on several parameter values, the structural defect remains the primary cause of rejection. Extracted — exenatide: CL 2.3 ml kg À1 min À1, V/F 111 ml kg À1, V2/F 8.89 l.
+The record describes a two-compartment structure, yet the peripheral compartment is unreachable from the dose site. The model builder specified an apparent peripheral volume of 8.89 liters and a central volume of 111.0 ml/kg. A second reader disagreed on several parameter values, citing 343 versus 75 and 15.2 versus 63. Extracted — exenatide: CL 2.3 ml kg À1 min À1, V/F 111 ml kg À1, V2/F 8.89 l.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 75, the second reading 343; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 75, the second reading 343; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,17 +82,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.615 (8/13 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.615 (8/13 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q17]` | 75 | 343 | mismatch |
-| `gpt-oss:120b` | `values[Q18]` | 757 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q310]` |  | 219 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q32]` | 63 | 15.2 | mismatch |
-| `gpt-oss:120b` | `values[Q60]` |  | 2.34 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q17]` | 75 | 343 | mismatch |
+| `gpt-oss-120b` | `values[Q18]` | 757 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q310]` |  | 219 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 63 | 15.2 | mismatch |
+| `gpt-oss-120b` | `values[Q60]` |  | 2.34 | only_one_extracted |
 
 </details>
 

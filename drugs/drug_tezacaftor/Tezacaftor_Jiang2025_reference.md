@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R07A&quot;,&quot;href&quot;:&quot;atc/R07A.md&quot;},{&quot;label&quot;:&quot;Tezacaftor&quot;,&quot;href&quot;:&quot;drugs/drug_tezacaftor/&quot;},{&quot;label&quot;:&quot;Jiang_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tezacaftor_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tezacaftor_Truong2025_reference&quot;,&quot;label&quot;:&quot;Truong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tezacaftor/Tezacaftor_Truong2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tezacaftor_Truong2025_reference&quot;,&quot;label&quot;:&quot;Truong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tezacaftor/Tezacaftor_Truong2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tezacaftor_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Tezacaftor — `Tezacaftor_Jiang2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="Tezacaftor" model-id="Tezacaftor_Jiang2025_reference" status="simulated" stale="false" population="" measured-compound="tezacaftor" parameterization="apparent" topology="1C"></div>
+> The record was rejected because the source paper concerns a different drug, leaving tezacaftor parameters unverified by the cited text.
+
+<div class="pk-model-meta" hidden drug="Tezacaftor" model-id="Tezacaftor_Jiang2025_reference" status="rejected" stale="false" population="" measured-compound="tezacaftor" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Jiang L, Zhang Y, Wang J, Zhang C, Wang D. Drug-Drug Interactions and Individualized Clozapine Therapy in Patients with Depression: Insights from Real-World Data. Drug design, development and therapy 19:9809-9823 (2025).
@@ -27,6 +29,8 @@ Jiang L, Zhang Y, Wang J, Zhang C, Wang D. Drug-Drug Interactions and Individual
 <figure class="pk-models-diagram"><img src="drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference/Tezacaftor_Jiang2025_reference.svg" alt="Tezacaftor_Jiang2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 21.6 | L/h |
@@ -35,7 +39,7 @@ Jiang L, Zhang Y, Wang J, Zhang C, Wang D. Drug-Drug Interactions and Individual
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +49,13 @@ Jiang L, Zhang Y, Wang J, Zhang C, Wang D. Drug-Drug Interactions and Individual
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was rejected because the source paper concerns a different drug, leaving tezacaftor parameters unverified by the cited text.**
+
+The relevance screen identified that neither the title nor the abstract names tezacaftor, indicating the paper subject is not the target molecule. Consequently, the extracted clearance of 21.6 L/h and volume of 140.0 L lack direct support from the provided source. Additionally, the absorption rate constant was defaulted rather than explicitly estimated from the data. Extracted — tezacaftor: CL/F 21.6 L/h, V/F 140 L, kabs 1.3 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q309: this record has 0.529, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -116,15 +122,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=tezacaftor) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | tezacaftor (or metabolite) | paper about another drug |  | paper subject is not tezacaftor: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=tezacaftor) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,61 +143,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference/Tezacaftor_Jiang2025_reference_modelica.zip" download>Tezacaftor_Jiang2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference/Tezacaftor_Jiang2025_reference_fmi.zip" download>Tezacaftor_Jiang2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference/Tezacaftor_Jiang2025_reference_matlab.zip" download>Tezacaftor_Jiang2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference/Tezacaftor_Jiang2025_reference_matlab_simbio.zip" download>Tezacaftor_Jiang2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference/Tezacaftor_Jiang2025_reference_sbml.zip" download>Tezacaftor_Jiang2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference/Tezacaftor_Jiang2025_reference_cellml.zip" download>Tezacaftor_Jiang2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.5205 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 6e-06 | m3/s |
-| input | model | `VdPerKg` | 0.002 | m3/kg |
-| input | model | `ka` | 0.0003611 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Jiang L, Zhang Y, Wang J, Zhang C, Wang D. Drug-Drug Interactions and Individualized Clozapine Therapy in Patients with Depression: Insights from Real-World Data. Drug design, development and therapy 19:9809-9823 (2025). [doi:10.2147/dddt.s547878](https://doi.org/10.2147/dddt.s547878)
-
-**This record:** Pharmacolibrary, model `Tezacaftor_Jiang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_TezacaftorJiang2025reference,
-  title  = {{Pharmacolibrary model Tezacaftor_Jiang2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference},
-  note   = {Parameters from doi:10.2147/dddt.s547878},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

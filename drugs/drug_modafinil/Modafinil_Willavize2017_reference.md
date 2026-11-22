@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;modafinil&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/&quot;},{&quot;label&quot;:&quot;Willavize_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Modafinil_Tao2010_reference&quot;,&quot;label&quot;:&quot;Tao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Tao2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Modafinil_Wu2012_reference&quot;,&quot;label&quot;:&quot;Wu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Wu2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Modafinil_Tao2010_reference&quot;,&quot;label&quot;:&quot;Tao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Tao2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Modafinil_Wu2012_reference&quot;,&quot;label&quot;:&quot;Wu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Wu2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # modafinil — `Modafinil_Willavize2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:26 UTC (Rejected), but the paper was screened again on 2026-10-07 00:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because metabolite elimination rates are missing and the structural dimension check failed for armodafinil.
+> The record was rejected because a dimensionless percentage parameter was labeled as AUC, and both metabolites lack defined metabolic rate constants.
 
-<div class="pk-model-meta" hidden drug="modafinil" model-id="Modafinil_Willavize2017_reference" status="rejected" stale="true" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="modafinil" model-id="Modafinil_Willavize2017_reference" status="rejected" stale="false" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Modeling of Armodafinil and Its Major Metabolites. Journal of clinical pharmacology 57(2):255–265 (2017).
@@ -38,7 +38,7 @@ Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Model
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Model
 
 ### Reviewer guidance
 
-**The record is rejected because metabolite elimination rates are missing and the structural dimension check failed for armodafinil.**
+**The record was rejected because a dimensionless percentage parameter was labeled as AUC, and both metabolites lack defined metabolic rate constants.**
 
-The metabolism links from armodafinil to R-modafinil acid and modafinil sulfone are defined as unknown, leaving the metabolites unlinked. The second reader disagreed on the absorption half-life and steady-state AUC values, noting the record contained no elimination half-life. These issues, combined with the abstract-only source, caused the record to be refused. Extracted — modafinil: CL/F 2.01 L/h, V1/F 45 L, t1/2ka 0.226 hours, AUCSS 16.4 %.
+The steady-state AUC parameter is assigned a value of 16.4 with units of percent, creating a dimensional conflict with the expected volume per time. Additionally, the metabolic links from armodafinil to R-modafinil acid and modafinil sulfone have unknown rate parameters, rendering these metabolites structurally unlinked. The second reader disagreed on the attribution of the 0.226 hour value, identifying it as terminal half-life rather than absorption half-life. Extracted — modafinil: CL/F 2.01 L/h, V1/F 45 L, t1/2ka 0.226 hours, AUCSS 16.4 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption t1⁄2: this record has 0.226, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 52.5, model 77); t6_deviations.
+> The two-compartment model for glycopyrronium bromide yields a simulated terminal half-life of 77 hours, conflicting with the 52.5 hours reported in the literature.
 
 <div class="pk-model-meta" hidden drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_population_mean_cv" status="needs_review" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,7 +46,7 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,13 +56,13 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 52.5, model 77); t6_deviations.**
+**The two-compartment model for glycopyrronium bromide yields a simulated terminal half-life of 77 hours, conflicting with the 52.5 hours reported in the literature.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — glycopyrronium bromide: CL 44.9 L/h, V1 11.3 L, Q 8.23 L/h, V2 71.5 L, Fab 1.11, kabs 0.009 1/h, Vss 102 L, t1/2z 0.45 h.
+Simulating the model using the extracted parameters (e.g., clearance of 44.9 L/h and peripheral volume of 71.5 L) results in a terminal half-life that deviates significantly from the paper's values of 52.5 hours and 57.2 hours. Additionally, a second reader disputed the record, failing to confirm the identified dose compound and leaving key absorption parameters unverified. The lag time parameter was also defaulted rather than extracted from the source data. Extracted — glycopyrronium bromide: CL 44.9 L/h, V1 11.3 L, Q 8.23 L/h, V2 71.5 L, Fab 1.11, kabs 0.009 1/h, Vss 102 L, t1/2z 0.45 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -126,33 +126,33 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.125 (3/24 fields) | 21 |
+| `gpt-oss-120b` | not confirmed | 0.125 (3/24 fields) | 21 |
 
 <details><summary>21 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[0]` |  | 5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | 1.11 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` |  | 1.11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[gi tract absorption half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 8.23 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` |  | 8.23 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intermediate lung absorption half-life]` | 0.45 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[slow lung absorption rate]` | 0.009 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[slow lung absorption rate]` |  | 0.009 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic clearance]` | 44.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic clearance]` |  | 44.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of central plasma compartment]` | 11.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of central plasma compartment]` |  | 11.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 102 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` |  | 102 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of peripheral pk compartment]` | 71.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of peripheral pk compartment]` |  | 71.5 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | glycopyrronium | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | glycopyrronium | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[0]` |  | 5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | 1.11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` |  | 1.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gi tract absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 8.23 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 8.23 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intermediate lung absorption half-life]` | 0.45 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slow lung absorption rate]` | 0.009 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slow lung absorption rate]` |  | 0.009 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | 44.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` |  | 44.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of central plasma compartment]` | 11.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of central plasma compartment]` |  | 11.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | 102 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 102 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of peripheral pk compartment]` | 71.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of peripheral pk compartment]` |  | 71.5 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | glycopyrronium | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | glycopyrronium | unknown | mismatch |
 
 </details>
 
@@ -192,7 +192,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=glycopyrronium) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 52.5 | 77.01 | 1.467 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 57.2 | 77.01 | 1.346 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 84 | 77.01 | 0.9168 | days→SI vs simulated h |

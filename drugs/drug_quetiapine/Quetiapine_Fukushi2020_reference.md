@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Quetiapine's first-order absorption rate constant, 0.5 h⁻¹, was borrowed from a ziprasidone model, invalidating the record.
+> Quetiapine’s absorption rate constant is recorded as 0.5 h⁻¹, but the second reader disputed this abstract-derived record, leaving it held for review.
 
 <div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Fukushi2020_reference" status="needs_review" stale="false" population="Japanese patients with bipolar depression" measured-compound="quetiapine" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Fukushi R, Nomura Y, Katashima M, Komatsu K, Sato Y, Takada A. Population Pharma
 
 ### Reviewer guidance
 
-**Quetiapine's first-order absorption rate constant, 0.5 h⁻¹, was borrowed from a ziprasidone model, invalidating the record.**
+**Quetiapine’s absorption rate constant is recorded as 0.5 h⁻¹, but the second reader disputed this abstract-derived record, leaving it held for review.**
 
-The parameter's meaning notes it comes from a ziprasidone published model rather than a quetiapine-specific estimate. A second reader identified this 0.5 h⁻¹ value as a deviation, flagging it for correction. The model was also built from the abstract alone, leaving parameters like lag time at library defaults. Extracted — quetiapine: CL/F 87.7 L/h, V/F 277 L, kabs 0.5 h⁻¹.
+Only the abstract was read, so reported summary statistics stood in for a fitted model; the second reader did not accept the 0.5 h⁻¹ absorption rate and disputed whether the dose compound was quetiapine XR or quetiapine. The record also defaulted the absorption lag time and assumed F=1 and Fm=1, with no molar correction. Extracted — quetiapine: CL/F 87.7 L/h, V/F 277 L, kabs 0.5 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quetiapine XR, the second reading quetiapine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -133,15 +133,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=quetiapine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=1: not acceptable; deviation_id=2: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=quetiapine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

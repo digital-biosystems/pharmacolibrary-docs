@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;sildenafil&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/&quot;},{&quot;label&quot;:&quot;Russo_2019 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sildenafil_Cochiusden2020_reference&quot;,&quot;label&quot;:&quot;Cochius-den_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sildenafil_Cochiusden2020_reference&quot;,&quot;label&quot;:&quot;Cochius-den_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Sildenafil's clearance and absorption lag time were left at placeholder defaults, causing the model to be quarantined.
+> Sildenafil's clearance and absorption lag time lacked extracted values, forcing placeholder usage that caused the model to be quarantined.
 
 <div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Russo2019_final" status="model_quarantined" stale="false" population="rabbits" measured-compound="sildenafil" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,9 +53,9 @@ Russo FM, Mian P, Krekels EH, Van Calsteren K, Tibboel D, Deprest J et al. Pregn
 
 ### Reviewer guidance
 
-**Sildenafil's clearance and absorption lag time were left at placeholder defaults, causing the model to be quarantined.**
+**Sildenafil's clearance and absorption lag time lacked extracted values, forcing placeholder usage that caused the model to be quarantined.**
 
-The record lacks explicit values for sildenafil's clearance and absorption lag time, forcing the use of library placeholders. Additionally, the peripheral volume of distribution (110.0 L) was not covered by the model builder, and the topology did not match the parent-metabolite structure. These omissions resulted in the model being held back rather than published. Extracted — desmethylsildenafil: CL/F 13.3 L/h; sildenafil: V1 32.1 L, V2 110 L, Q 25.5 L/h, kabs 25 h-1.
+The record explicitly notes that both clearance and absorption lag time were left at library defaults because no values were extracted from the paper. This placeholder substitution was flagged as an unacceptable deviation by the automated quality control system. Additionally, a second reader disputed the model's topology and parameter assignments, further compromising the record's validity. Extracted — desmethylsildenafil: CL/F 13.3 L/h; sildenafil: V1 32.1 L, V2 110 L, Q 25.5 L/h, kabs 25 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has sildenafil → desmethylsildenafil (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -143,15 +143,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2'] |
-| T3_shared_parameters | pass | 1 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_shared_parameters | pass | 1 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.643, 0 of 1 reader(s) agree | 0.643 | cross-check disputed by a second reader: verdict disputed, agreement 0.643, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -169,30 +170,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sildenafil/Sildenafil_Russo2019_final/Sildenafil_Russo2019_final_matlab.zip" download>Sildenafil_Russo2019_final_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sildenafil/Sildenafil_Russo2019_final/Sildenafil_Russo2019_final_matlab_simbio.zip" download>Sildenafil_Russo2019_final_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sildenafil/Sildenafil_Russo2019_final/Sildenafil_Russo2019_final_sbml.zip" download>Sildenafil_Russo2019_final_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sildenafil/Sildenafil_Russo2019_final/Sildenafil_Russo2019_final_cellml.zip" download>Sildenafil_Russo2019_final_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Russo FM, Mian P, Krekels EH, Van Calsteren K, Tibboel D, Deprest J et al. Pregnancy affects the pharmacokinetics of sildenafil and its metabolite in the rabbit. Xenobiotica; the fate of foreign compounds in biological systems 49(1):98–105 (2019). [doi:10.1080/00498254.2017.1422217](https://doi.org/10.1080/00498254.2017.1422217)
-
-**This record:** Pharmacolibrary, model `Sildenafil_Russo2019_final`. <https://pharmacolibrary.github.io/#/drugs/drug_sildenafil/Sildenafil_Russo2019_final>
-
-```bibtex
-@misc{pharmacolibrary_SildenafilRusso2019final,
-  title  = {{Pharmacolibrary model Sildenafil_Russo2019_final}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_sildenafil/Sildenafil_Russo2019_final},
-  note   = {Parameters from doi:10.1080/00498254.2017.1422217},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;methocarbamol&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/&quot;},{&quot;label&quot;:&quot;Rumpler_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methocarbamol_Rumpler2014_reference&quot;,&quot;label&quot;:&quot;Rumpler_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methocarbamol — `Methocarbamol_Rumpler2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Needs review), but the paper was screened again on 2026-10-07 02:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Absorption rate constant for methocarbamol lacked a source value, so placeholder defaults were used for a model built only on abstract statistics.
+> MTT has no unit.
 
-<div class="pk-model-meta" hidden drug="methocarbamol" model-id="Methocarbamol_Rumpler2014_reference" status="needs_review" stale="true" population="Thoroughbred horses" measured-compound="methocarbamol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methocarbamol" model-id="Methocarbamol_Rumpler2014_reference" status="needs_review" stale="false" population="Thoroughbred horses" measured-compound="methocarbamol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Rumpler MJ, Colahan P, Sams RA. The pharmacokinetics of methocarbamol and guaifenesin after single intravenous and multiple-dose oral administration of methocarbamol in the horse. Journal of veterinary pharmacology and therapeutics 37(1):25–34 (2014).
@@ -23,12 +22,10 @@ Rumpler MJ, Colahan P, Sams RA. The pharmacokinetics of methocarbamol and guaife
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 8 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference.svg" alt="Methocarbamol_Rumpler2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -46,7 +43,7 @@ Rumpler MJ, Colahan P, Sams RA. The pharmacokinetics of methocarbamol and guaife
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,13 +53,13 @@ Rumpler MJ, Colahan P, Sams RA. The pharmacokinetics of methocarbamol and guaife
 
 ### Reviewer guidance
 
-**Absorption rate constant for methocarbamol lacked a source value, so placeholder defaults were used for a model built only on abstract statistics.**
+**MTT has no unit.**
 
-The model relies on summary statistics from the paper's abstract rather than a full fitted dataset. The absorption rate constant and lag time were not reported in the source text, forcing the use of library placeholder values instead of specific estimates. Furthermore, the steady-state volume of distribution (1.05 L/kg) was applied to define the compartment size, which fails to accurately represent the early distribution phase. Extracted — methocarbamol: t1/2z 2.96 h, Vss 1.05 L/kg, MRT 1.98 h, CL 8.99 mL/min/kg, MTT 2.67 h, MAT 0.41 h, CL/F 16.5 mL/min/kg, Fab 54.4 %.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methocarbamol: t1/2z 2.96 h, Vss 1.05 L/kg, MRT 1.98 h, CL 8.99 mL/min/kg, MTT 2.67 h, MAT 0.41 h, CL/F 16.5 mL/min/kg, Fab 54.4 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methocarbamol, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -83,13 +80,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
 - dropped duplicate Q57 ('Oral dose of MCBL was characterized by a median (range) terminal half-life', value 2.89) — already have one for this compound
@@ -163,18 +153,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C9_phys_window_Q27 | pass | clearance within physiological range | 69.3 L/h | ['Rumpler_2014:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 73.5 L | ['Rumpler_2014:abstract'] |
 
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=methocarbamol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; invented_absorption: not acceptable; vss_as_v: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -190,39 +168,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_modelica.zip" download>Methocarbamol_Rumpler2014_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_fmi.zip" download>Methocarbamol_Rumpler2014_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_fmi.zip" download>Methocarbamol_Rumpler2014_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_matlab.zip" download>Methocarbamol_Rumpler2014_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_matlab_simbio.zip" download>Methocarbamol_Rumpler2014_reference_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_sbml.zip" download>Methocarbamol_Rumpler2014_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_cellml.zip" download>Methocarbamol_Rumpler2014_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2412 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.003 | kg |
-| input | model | `Cl` | 1.049e-05 | m3/s |
-| input | model | `VdPerKg` | 0.00105 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -243,11 +196,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 3000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 3000 mg oral (M03BA03) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference/Methocarbamol_Rumpler2014_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Methocarbamol_Rumpler2014_reference_params.json` · controls `Methocarbamol_Rumpler2014_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

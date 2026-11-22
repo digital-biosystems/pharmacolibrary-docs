@@ -4,11 +4,11 @@
 
 # sodium oxybate — `SodiumOxybate_Chen2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-07 04:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sodium oxybate's peripheral volume (5.33) has an unrecognized unit that cannot be converted to SI.
+> The record was rejected because the peripheral volume of distribution lacks a valid unit and the model structure has an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="sodium oxybate" model-id="SodiumOxybate_Chen2020_reference" status="rejected" stale="true" population="children and adults with narcolepsy and healthy adults" measured-compound="sodium oxybate" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sodium oxybate" model-id="SodiumOxybate_Chen2020_reference" status="rejected" stale="false" population="children and adults with narcolepsy and healthy adults" measured-compound="sodium oxybate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Chen C, Rosen CL, Ruoff C, Boyce LH, Parvataneni R, Zomorodi K et al. Population and Noncompartmental Pharmacokinetics of Sodium Oxybate Support Weight-Based Dosing in Children and Adolescents With Narcolepsy With Cataplexy. Clinical and translational science 13(5):932–940 (2020).
@@ -16,7 +16,7 @@ Chen C, Rosen CL, Ruoff C, Boyce LH, Parvataneni R, Zomorodi K et al. Population
 
 ## Population and dosing
 
-**Population:** children and adults with narcolepsy and healthy adults · condition narcolepsy with cataplexy · age group mixed · n = ,n_subjects": "174",.
+**Population:** children and adults with narcolepsy and healthy adults · condition narcolepsy with cataplexy · age group mixed.
 
 **Dosing:** 1000, 4500 mg, oral, multiple, every 12 h.
 
@@ -45,7 +45,7 @@ Chen C, Rosen CL, Ruoff C, Boyce LH, Parvataneni R, Zomorodi K et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.684). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.684). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Chen C, Rosen CL, Ruoff C, Boyce LH, Parvataneni R, Zomorodi K et al. Population
 
 ### Reviewer guidance
 
-**Sodium oxybate's peripheral volume (5.33) has an unrecognized unit that cannot be converted to SI.**
+**The record was rejected because the peripheral volume of distribution lacks a valid unit and the model structure has an unreachable compartment.**
 
-The record lists the peripheral volume of distribution as 5.33, but the unit provided cannot be converted to standard units, so no valid value was assigned. The model was also held back due to a dimension mismatch on a structural parameter. The second reader disputed the absence of covariate effects on central volume and absorption, and noted missing age and food effect parameters. Extracted — sodium oxybate: Vmax 1.51e+03 mg/h, Km 22 mg/L, V1 29.5 L, V2 5.33 units, kabs 4.12 h−1, Fab 1 NA, kcomp 0.0968 h−1.
+The peripheral volume parameter, listed as 5.33 with the unit 'units', is missing a standard volume dimension. Additionally, the model contains an unreachable compartment that has no path from the dose. These structural and dimensional flaws prevented the model from being accepted. Extracted — sodium oxybate: Vmax 1.51e+03 mg/h, Km 22 mg/L, V1 29.5 L, V2 5.33 units, kabs 4.12 h−1, Fab 1 NA, kcomp 0.0968 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium oxybate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

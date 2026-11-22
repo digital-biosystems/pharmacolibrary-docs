@@ -5,11 +5,11 @@
 
 # moxidectin — `Moxidectin_Wood2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:43 UTC (Needs review), but the paper was screened again on 2026-10-07 10:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. CLint and CLNR have no unit.
+> CLint and CLNR have no unit.
 
-<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Wood2024_reference" status="needs_review" stale="true" population="healthy lactating women (with PBPK predictions in neonates/infants)" measured-compound="moxidectin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Wood2024_reference" status="needs_review" stale="false" population="healthy lactating women (with PBPK predictions in neonates/infants)" measured-compound="moxidectin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wood ND, Smith D, Kinrade SA, Sullivan MT, Rayner CR, Wesche D et al. The use of quantitative clinical pharmacology approaches to support moxidectin dosing recommendations in lactation. PLoS neglected tropical diseases 18(8):e0012351 (2024).
@@ -44,7 +44,7 @@ Wood ND, Smith D, Kinrade SA, Sullivan MT, Rayner CR, Wesche D et al. The use of
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,11 +5,11 @@
 
 # praziquantel — `Praziquantel_Bustinduy2016_s_pzq`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:25 UTC (Rejected), but the paper was screened again on 2026-10-07 09:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bustinduy2016_s_pzq" status="needs_review" stale="true" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bustinduy2016_s_pzq" status="needs_review" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van Dam GJ et al. Population Pharmacokinetics and Pharmacodynamics of Praziquantel in Ugandan Children with Intestinal Schistosomiasis: Higher Dosages Are Required for Maximal Efficacy. mBio 7(4) (2016).
@@ -40,7 +40,7 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — praziquantel: Cmax 581 µg/ml, AUC∞ 2.62 µg ⋅ h/ml, t1/2z 2.96 h, tlag 0.07 h.
 
 Independently confirmed by `gpt-oss-120b`.
 

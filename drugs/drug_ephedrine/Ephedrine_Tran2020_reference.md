@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;ephedrine&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/&quot;},{&quot;label&quot;:&quot;Tran_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ephedrine_Tran2020_reference&quot;,&quot;label&quot;:&quot;Tran_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ephedrine_Tran2020_reference&quot;,&quot;label&quot;:&quot;Tran_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ephedrine — `Ephedrine_Tran2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ephedrine absorption rate constant and lag time lack source support, using generic placeholders, and the second reader identified a two-compartment structure rather than one-compartment.
+> Ephedrine CL/F of 22.5 L/h was rejected because the paper concerns acetaminophen, with ephedrine only a covariate.
 
-<div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Tran2020_reference" status="needs_review" stale="false" population="" measured-compound="ephedrine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Tran2020_reference" status="rejected" stale="false" population="" measured-compound="ephedrine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Tran QT, Park SJ, Back HM, Ngo LT, Cao DT, Nguyen HV et al. Clinical Evaluation of Acetaminophen-Galgeuntang Interaction Based on Population Approaches. Pharmaceutics 12(12) (2020).
@@ -29,7 +29,7 @@ Tran QT, Park SJ, Back HM, Ngo LT, Cao DT, Nguyen HV et al. Clinical Evaluation 
 <figure class="pk-models-diagram"><img src="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference.svg" alt="Ephedrine_Tran2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Tran QT, Park SJ, Back HM, Ngo LT, Cao DT, Nguyen HV et al. Clinical Evaluation 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Tran QT, Park SJ, Back HM, Ngo LT, Cao DT, Nguyen HV et al. Clinical Evaluation 
 
 ### Reviewer guidance
 
-**Ephedrine absorption rate constant and lag time lack source support, using generic placeholders, and the second reader identified a two-compartment structure rather than one-compartment.**
+**Ephedrine CL/F of 22.5 L/h was rejected because the paper concerns acetaminophen, with ephedrine only a covariate.**
 
-The record lists no explicit values for the absorption rate constant or lag time, meaning standard library values were used instead of estimates from this paper. These assumptions affect the simulated profile but are not justified by the source data. Additionally, a second reader interpreted the model structure as a two-compartment system, whereas this record defines it as one-compartment. Extracted — ephedrine: CL/F 22.5 L/h, V/F 16.3 L.
+The record also lists ephedrine V/F as 16.3 L, but the source is a secondary review of acetaminophen pharmacokinetics, not an ephedrine study. The model builder defaulted ka and Tlag, assumed F=1 and Fm=1 with no molar correction, and imposed first-order depot input. A second reader disputed the record, including its 1C versus 2C structure. Extracted — ephedrine: CL/F 22.5 L/h, V/F 16.3 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 48, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 48, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -87,20 +87,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.topology_template` | 1C | 2C | mismatch |
-| `gpt-oss:120b` | `values[Q17]` | 48 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q19]` | 43 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q30]` |  | 0.4 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q312]` |  | 16.9 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q32]` | 14 | 9474 | mismatch |
-| `gpt-oss:120b` | `values[Q56]` | 0.25 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q57]` |  | 2.17 | only_one_extracted |
+| `gpt-oss-120b` | `model.topology_template` | 1C | 2C | mismatch |
+| `gpt-oss-120b` | `values[Q17]` | 48 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 43 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` |  | 0.4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` |  | 16.9 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 14 | 9474 | mismatch |
+| `gpt-oss-120b` | `values[Q56]` | 0.25 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` |  | 2.17 | only_one_extracted |
 
 </details>
 
@@ -126,15 +126,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ephedrine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | ephedrine (or metabolite) | paper about another drug |  | paper subject is not ephedrine: the paper is about another drug; this one is a co-medication or covariate: The study focuses on the pharmacokinetics of acetaminophen (AAP), with ephedrine serving only as a covariate to explain changes in AAP parameters; no quantitati |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=ephedrine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -146,61 +147,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_modelica.zip" download>Ephedrine_Tran2020_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_fmi.zip" download>Ephedrine_Tran2020_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_matlab.zip" download>Ephedrine_Tran2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_matlab_simbio.zip" download>Ephedrine_Tran2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_sbml.zip" download>Ephedrine_Tran2020_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_cellml.zip" download>Ephedrine_Tran2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.1652 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 5e-05 | kg |
-| input | model | `Cl` | 6.25e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0002329 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Tran QT, Park SJ, Back HM, Ngo LT, Cao DT, Nguyen HV et al. Clinical Evaluation of Acetaminophen-Galgeuntang Interaction Based on Population Approaches. Pharmaceutics 12(12) (2020). [doi:10.3390/pharmaceutics12121182](https://doi.org/10.3390/pharmaceutics12121182)
-
-**This record:** Pharmacolibrary, model `Ephedrine_Tran2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ephedrine/Ephedrine_Tran2020_reference>
-
-```bibtex
-@misc{pharmacolibrary_EphedrineTran2020reference,
-  title  = {{Pharmacolibrary model Ephedrine_Tran2020_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ephedrine/Ephedrine_Tran2020_reference},
-  note   = {Parameters from doi:10.3390/pharmaceutics12121182},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

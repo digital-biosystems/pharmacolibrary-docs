@@ -16,7 +16,7 @@ Scangarella-Oman NE, Hossain M, Perry CR, Tiffany C, Powell M, Swift B et al. Do
 
 ## Population and dosing
 
-**Population:** healthy adults and adolescents · condition healthy · age group mixed · n = &gt;.
+**Population:** healthy adults and adolescents · condition healthy · age group mixed.
 
 **Dosing:** 1500, 3000 mg, oral, multiple, every 12 h.
 

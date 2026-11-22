@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Imipenem&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imipenem_Chu2010_reference&quot;,&quot;label&quot;:&quot;Chu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Chu2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Gomez2015_reference&quot;,&quot;label&quot;:&quot;Gomez_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gomez2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imipenem_Gruber1985_reference&quot;,&quot;label&quot;:&quot;Gruber_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gruber1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Gomez2015_reference&quot;,&quot;label&quot;:&quot;Gomez_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gomez2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Chu2010_reference&quot;,&quot;label&quot;:&quot;Chu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Chu2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # Imipenem
 
@@ -25,13 +25,13 @@ Imipenem is a carbapenem antibiotic used to treat serious infections such as sep
 
 ## Start here
 
-> **Chu_2010_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_imipenem/Imipenem_Chu2010_reference.md?tab=Simulation) · [record](drugs/drug_imipenem/Imipenem_Chu2010_reference.md)
+> **Gruber_1985_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> neonates, n = 10. [Run it in the simulator](drugs/drug_imipenem/Imipenem_Gruber1985_reference.md?tab=Simulation) · [record](drugs/drug_imipenem/Imipenem_Gruber1985_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Chu_2010 · CL</text><circle cx="245.4" cy="30.0" r="4" fill="#78909c"><title>Chu_2010 · CL: 14.4 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gruber_1985 · CL</text><circle cx="245.4" cy="46.0" r="4" fill="#78909c"><title>Gruber_1985 · CL: 14.4 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Gomez_2015 · CL</text><circle cx="277.6" cy="62.0" r="4" fill="#78909c"><title>Gomez_2015 · CL: 17.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Chu_2010 · V</text><circle cx="284.3" cy="30.0" r="4" fill="#78909c"><title>Chu_2010 · V: 18.6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gruber_1985 · V ·/kg</text><circle cx="350.3" cy="46.0" r="4" fill="#78909c"><title>Gruber_1985 · V ·/kg: 28.7 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Gomez_2015 · V/F ·/kg</text><circle cx="487.3" cy="62.0" r="4" fill="#78909c"><title>Gomez_2015 · V/F ·/kg: 70.7 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gruber_1985 · CL</text><circle cx="245.4" cy="30.0" r="4" fill="#78909c"><title>Gruber_1985 · CL: 14.4 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gomez_2015 · CL</text><circle cx="277.6" cy="46.0" r="4" fill="#ef6c00"><title>Gomez_2015 · CL: 17.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gruber_1985 · V ·/kg</text><circle cx="350.3" cy="30.0" r="4" fill="#78909c"><title>Gruber_1985 · V ·/kg: 28.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gomez_2015 · V/F ·/kg</text><circle cx="487.3" cy="46.0" r="4" fill="#ef6c00"><title>Gomez_2015 · V/F ·/kg: 70.7 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -39,9 +39,9 @@ Imipenem is a carbapenem antibiotic used to treat serious infections such as sep
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Chu_2010_reference](drugs/drug_imipenem/Imipenem_Chu2010_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Chu YZ et al., Pharmacokinetic-pharmacodynamic profili…, BMC infectious diseases (2010) | [10.1186/1471-2334-10-171](https://doi.org/10.1186/1471-2334-10-171) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Gomez_2015_reference](drugs/drug_imipenem/Imipenem_Gomez2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Gomez DS et al., Imipenem in burn patients: pharmacokine…, The Journal of antibiotics (2015) | [10.1038/ja.2014.121](https://doi.org/10.1038/ja.2014.121) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Gruber_1985_reference](drugs/drug_imipenem/Imipenem_Gruber1985_reference.md) | — | 1-compartment (no model) | 4 | Gruber WC et al., Single-dose pharmacokinetics of imipene…, Antimicrobial agents and ch… (1985) | [10.1128/AAC.27.4.511](https://doi.org/10.1128/AAC.27.4.511) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Gruber_1985_reference](drugs/drug_imipenem/Imipenem_Gruber1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Gruber WC et al., Single-dose pharmacokinetics of imipene…, Antimicrobial agents and ch… (1985) | [10.1128/AAC.27.4.511](https://doi.org/10.1128/AAC.27.4.511) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Gomez_2015_reference](drugs/drug_imipenem/Imipenem_Gomez2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Gomez DS et al., Imipenem in burn patients: pharmacokine…, The Journal of antibiotics (2015) | [10.1038/ja.2014.121](https://doi.org/10.1038/ja.2014.121) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Chu_2010_reference](drugs/drug_imipenem/Imipenem_Chu2010_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Chu YZ et al., Pharmacokinetic-pharmacodynamic profili…, BMC infectious diseases (2010) | [10.1186/1471-2334-10-171](https://doi.org/10.1186/1471-2334-10-171) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Ito_1986_reference](drugs/drug_imipenem/Imipenem_Ito1986_reference.md) | — | 1-compartment (no model) | 0 | Ito K et al., [Fundamental and clinical studies of im…, The Japanese journal of ant… (1986) | — |
 
 ## Pharmacodynamics (PD)
@@ -50,17 +50,6 @@ Imipenem is a carbapenem antibiotic used to treat serious infections such as sep
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Fujimoto_1995_GABA_induced_Cl_current](drugs/drug_imipenem/pd_Fujimoto_1995_GABA_induced_Cl_current.md) | GABA-induced Cl- current biomarker turnover ← imipenem | — | Fujimoto M et al., Dual mechanisms of GABAA response inhib…, British journal of pharmaco… (1995) | [10.1111/j.1476-5381.1995.tb15957.x](https://doi.org/10.1111/j.1476-5381.1995.tb15957.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomanachai_2010_CFR](drugs/drug_imipenem/pd_Koomanachai_2010_CFR.md) | Cumulative Fraction of Response (CFR) ← imipenem · model not identified | — | Koomanachai P et al., Pharmacodynamic modeling of intravenous…, Clinical therapeutics (2010) | [10.1016/j.clinthera.2010.04.003](https://doi.org/10.1016/j.clinthera.2010.04.003) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=imipenem).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: DPEP1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -74,13 +63,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:24 | 15:12 | 3/1/0 | 2/0/0 | 0/0/0 | 335,925/51,264 | einfracz / qwen3.8-27b | 22 | 2/18 | 21/1 | 0 |
+| 2026-10-07 11:24 | 15:12 | 2/2/0 | 2/0/0 | 0/0/0 | 335,925/51,264 | einfracz / qwen3.8-27b | 22 | 2/18 | 21/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 607 matched, 84 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 3  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;epoprostenol&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/&quot;},{&quot;label&quot;:&quot;Vizza_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Nicolas_2012_CIn&quot;,&quot;label&quot;:&quot;Nicolas_2012 \u00b7 CIn&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/pd_Nicolas_2012_CIn.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Nicolas_2012_CIn&quot;,&quot;label&quot;:&quot;Nicolas_2012 \u00b7 CIn&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/pd_Nicolas_2012_CIn.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # epoprostenol — `Epoprostenol_Vizza2017_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="epoprostenol" model-id="Epoprostenol_Vizza2017_reference" status="simulated" stale="false" population="" measured-compound="epoprostenol" parameterization="apparent" topology="1C"></div>
+> The record was refused because it assigns epoprostenol an apparent clearance (CL/F) of 43.9 L/h from a paper reporting sildenafil pharmacokinetics, not epoprostenol.
+
+<div class="pk-model-meta" hidden drug="epoprostenol" model-id="Epoprostenol_Vizza2017_reference" status="rejected" stale="false" population="" measured-compound="epoprostenol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Vizza CD, Sastry BK, Safdar Z, Harnisch L, Gao X, Zhang M et al. Efficacy of 1, 5, and 20 mg oral sildenafil in the treatment of adults with pulmonary arterial hypertension: a randomized, double-blind study with open-label extension. BMC pulmonary medicine 17(1):44 (2017).
@@ -27,6 +29,8 @@ Vizza CD, Sastry BK, Safdar Z, Harnisch L, Gao X, Zhang M et al. Efficacy of 1, 
 <figure class="pk-models-diagram"><img src="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference.svg" alt="Epoprostenol_Vizza2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | estimated apparent clearance | CL/F | 43.9 | L/h |
@@ -35,7 +39,7 @@ Vizza CD, Sastry BK, Safdar Z, Harnisch L, Gao X, Zhang M et al. Efficacy of 1, 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +49,13 @@ Vizza CD, Sastry BK, Safdar Z, Harnisch L, Gao X, Zhang M et al. Efficacy of 1, 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was refused because it assigns epoprostenol an apparent clearance (CL/F) of 43.9 L/h from a paper reporting sildenafil pharmacokinetics, not epoprostenol.**
 
-Independently confirmed by `gpt-oss:120b`.
+The record names epoprostenol as the measured compound, but the paper reports sildenafil parameters and mentions epoprostenol only as background therapy in a different trial. It also has no explicit estimate for Tlag and assumes F=1, Fm=1, with no molar correction, for its apparent parameterization. Extracted — epoprostenol: CL/F 43.9 L/h, V/F 458 L, kabs 2.16 h−1.
 
-<sub>reviewed by rule template (no LLM)</sub>
+Independently confirmed by `gpt-oss-120b`.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -81,7 +87,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -108,15 +114,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=epoprostenol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | epoprostenol (or metabolite) | paper about another drug |  | paper subject is not epoprostenol: the paper is about another drug; this one is a co-medication or covariate: The study reports pharmacokinetic parameters for sildenafil, not epoprostenol, which is only mentioned as a background therapy in a different trial. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=epoprostenol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -128,61 +135,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference_modelica.zip" download>Epoprostenol_Vizza2017_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference_fmi.zip" download>Epoprostenol_Vizza2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference_matlab.zip" download>Epoprostenol_Vizza2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference_matlab_simbio.zip" download>Epoprostenol_Vizza2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference_sbml.zip" download>Epoprostenol_Vizza2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference/Epoprostenol_Vizza2017_reference_cellml.zip" download>Epoprostenol_Vizza2017_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3525 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 1.219e-05 | m3/s |
-| input | model | `VdPerKg` | 0.006543 | m3/kg |
-| input | model | `ka` | 0.0006 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Vizza CD, Sastry BK, Safdar Z, Harnisch L, Gao X, Zhang M et al. Efficacy of 1, 5, and 20 mg oral sildenafil in the treatment of adults with pulmonary arterial hypertension: a randomized, double-blind study with open-label extension. BMC pulmonary medicine 17(1):44 (2017). [doi:10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x)
-
-**This record:** Pharmacolibrary, model `Epoprostenol_Vizza2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference>
-
-```bibtex
-@misc{pharmacolibrary_EpoprostenolVizza2017reference,
-  title  = {{Pharmacolibrary model Epoprostenol_Vizza2017_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference},
-  note   = {Parameters from doi:10.1186/s12890-017-0374-x},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

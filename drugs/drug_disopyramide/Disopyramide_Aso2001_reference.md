@@ -16,7 +16,7 @@ Aso R, Ohashi K, Katoh T, Ogata H. Population pharmacokinetics, protein binding 
 
 ## Population and dosing
 
-**Population:** adults with arrhythmia · condition arrhythmia · age group adult · n = $.
+**Population:** adults with arrhythmia · condition arrhythmia · age group adult.
 
 ## Model
 
@@ -143,6 +143,7 @@ Primary extraction: `qwen3.6:27b-q8_0`; retained regardless of cross-check verdi
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

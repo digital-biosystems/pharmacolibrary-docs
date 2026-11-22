@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Odlind_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_1997_RCR&quot;,&quot;label&quot;:&quot;Simon_1997 \u00b7 RCR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/pd_Simon_1997_RCR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Simon_1997_RCR&quot;,&quot;label&quot;:&quot;Simon_1997 \u00b7 RCR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/pd_Simon_1997_RCR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> KD and AUC have no unit.
+> KD, Cmax and AUC have no unit.
 
 <div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Odlind1986_reference" status="needs_review" stale="false" population="uremic patients" measured-compound="azathioprine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Odlind B, Hartvig P, Lindström B, Lönnerholm G, Tufveson G, Grefberg N. Serum 
 
 ## Population and dosing
 
-**Population:** uremic patients · condition uremia · age group adult · n = , the subjects are people; do not assume it..
+**Population:** uremic patients · condition uremia · age group adult · n = 23.
 
 **Dosing:** 100 mg, iv, single.
 
@@ -25,7 +25,7 @@ Odlind B, Hartvig P, Lindström B, Lönnerholm G, Tufveson G, Grefberg N. Serum 
 
 **Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,18 +33,16 @@ Odlind B, Hartvig P, Lindström B, Lönnerholm G, Tufveson G, Grefberg N. Serum 
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| MC | equation variable | 109 |  |
-| KD | KD | 40 |  |
-| GU | FG | 37 |  |
-| t,,,a, | t1/2α | 5 | min |
-| t~.a | kel | 40 | 1/min |
+| KD | KD | 89 |  |
+| BH | Cmax | 102 |  |
+| JL | equation variable | 29 |  |
 | A UC | AUC | 138 |  |
-| Cl | CL | 2.6 | l/min |
-| Vc, | V1 | 150 | l |
+| Cl | CL | 2.6 | L/min |
+| Vc, | V1 | 150 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +52,11 @@ Odlind B, Hartvig P, Lindström B, Lönnerholm G, Tufveson G, Grefberg N. Serum 
 
 ### Reviewer guidance
 
-**KD and AUC have no unit.**
+**KD, Cmax and AUC have no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — azathioprine: KD 40, FG 37, t1/2α 5 min, kel 40 1/min, AUC 138, CL 2.6 l/min, V1 150 l.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — azathioprine: KD 89, Cmax 102, AUC 138, CL 2.6 L/min, V1 150 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 2: this record has none, the second reading 62.7; it also differs on 11 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,14 +64,12 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| MC | `Q900` · equation variable | 109 |  |  |  |  | llm (0.6) | tab_1:row4:col1, tab_1:row4:col2, tab_1:row4:col3, tab_1:row4:col4, tab_1:row4:col5, tab_1:row4:col7 |
-| KD | `Q331` · KD | 40 |  |  |  |  | exact (1) | tab_1:row5:col1, tab_1:row5:col2, tab_1:row5:col4, tab_1:row5:col5, tab_1:row5:col7 |
-| GU | `Q41` · FG | 37 |  |  |  |  | llm (0.6) | tab_1:row18:col1, tab_1:row18:col2, tab_1:row18:col3, tab_1:row18:col5, tab_1:row18:col7 |
-| t,,,a, | `Q59` · t1/2α | 5 | min | 300 | s | h | llm (0.6) | Odlind_1986_table_3:row1:col2, Odlind_1986_table_3:row2:col2, Odlind_1986_table_3:row3:col2, Odlind_1986_table_3:row4:col2, Odlind_1986_table_3:row5:col2, Odlind_1986_table_3:row6:col2, Odlind_1986_table_3:row7:col2, Odlind_1986_table_3:row8:col2, Odlind_1986_table_3:row9:col2, Odlind_1986_table_3:row11:col2, Odlind_1986_table_3:row12:col2, Odlind_1986_table_3:row13:col2, Odlind_1986_table_3:row14:col2, Odlind_1986_table_3:row15:col2, Odlind_1986_table_3:row17:col2 |
-| t~.a | `Q47` · kel | 40 | 1/min | 0.6667 | 1/s | 1/h | exact (1) | Odlind_1986_table_3:row1:col4, Odlind_1986_table_3:row2:col4, Odlind_1986_table_3:row3:col4, Odlind_1986_table_3:row4:col4, Odlind_1986_table_3:row5:col4, Odlind_1986_table_3:row6:col4, Odlind_1986_table_3:row7:col4, Odlind_1986_table_3:row8:col4, Odlind_1986_table_3:row9:col4, Odlind_1986_table_3:row11:col4, Odlind_1986_table_3:row12:col4, Odlind_1986_table_3:row13:col4, Odlind_1986_table_3:row14:col4, Odlind_1986_table_3:row15:col4, Odlind_1986_table_3:row17:col4, Odlind_1986_table_3:row18:col4, Odlind_1986_table_3:row19:col4 |
+| KD | `Q331` · KD | 89 |  |  |  |  | exact (1) | tab_1:row5:col1, tab_1:row5:col2, tab_1:row5:col4, tab_1:row5:col5, tab_1:row5:col7, Odlind_1986_table_4:row1:col1, Odlind_1986_table_4:row1:col2, Odlind_1986_table_4:row1:col4, Odlind_1986_table_4:row1:col5 |
+| BH | `Q32` · Cmax | 102 |  |  |  |  | llm (0.6) | tab_1:row6:col1, tab_1:row6:col2, tab_1:row6:col3, tab_1:row6:col4, tab_1:row6:col5, tab_1:row6:col7, Odlind_1986_table_4:row2:col1, Odlind_1986_table_4:row2:col2, Odlind_1986_table_4:row2:col4, Odlind_1986_table_4:row2:col5 |
+| JL | `Q900` · equation variable | 29 |  | 29 |  |  | llm (0.6) | tab_1:row8:col1, tab_1:row8:col2, tab_1:row8:col3, tab_1:row8:col4, tab_1:row8:col5, tab_1:row8:col7 |
 | A UC | `Q88` · AUC | 138 |  |  |  |  | space_fold (0.95) | Odlind_1986_table_3:row1:col5, Odlind_1986_table_3:row2:col5, Odlind_1986_table_3:row3:col5, Odlind_1986_table_3:row4:col5, Odlind_1986_table_3:row5:col5, Odlind_1986_table_3:row6:col5, Odlind_1986_table_3:row7:col5, Odlind_1986_table_3:row8:col5, Odlind_1986_table_3:row9:col5, Odlind_1986_table_3:row11:col5, Odlind_1986_table_3:row12:col5, Odlind_1986_table_3:row13:col5, Odlind_1986_table_3:row14:col5, Odlind_1986_table_3:row15:col5, Odlind_1986_table_3:row17:col5, Odlind_1986_table_3:row18:col5, Odlind_1986_table_3:row19:col5 |
-| Cl | `Q22` · CL | 2.6 | l/min | 4.333e-05 | m3/s | L/h | exact (1) | Odlind_1986_table_3:row1:col6, Odlind_1986_table_3:row2:col6, Odlind_1986_table_3:row3:col6, Odlind_1986_table_3:row4:col6, Odlind_1986_table_3:row5:col6, Odlind_1986_table_3:row6:col6, Odlind_1986_table_3:row7:col6, Odlind_1986_table_3:row8:col6, Odlind_1986_table_3:row9:col6, Odlind_1986_table_3:row11:col6, Odlind_1986_table_3:row12:col6, Odlind_1986_table_3:row13:col6, Odlind_1986_table_3:row14:col6, Odlind_1986_table_3:row15:col6, Odlind_1986_table_3:row17:col6, Odlind_1986_table_3:row18:col6, Odlind_1986_table_3:row19:col6 |
-| Vc, | `Q63` · V1 | 150 | l | 0.15 | m3 | L | llm_confirmed (0.6) | Odlind_1986_table_3:row1:col7, Odlind_1986_table_3:row2:col7, Odlind_1986_table_3:row3:col7, Odlind_1986_table_3:row4:col7, Odlind_1986_table_3:row5:col7, Odlind_1986_table_3:row6:col7, Odlind_1986_table_3:row7:col7, Odlind_1986_table_3:row8:col7, Odlind_1986_table_3:row9:col7, Odlind_1986_table_3:row11:col7, Odlind_1986_table_3:row12:col7, Odlind_1986_table_3:row13:col7, Odlind_1986_table_3:row14:col7, Odlind_1986_table_3:row15:col7, Odlind_1986_table_3:row17:col7, Odlind_1986_table_3:row18:col7, Odlind_1986_table_3:row19:col7 |
+| Cl | `Q22` · CL | 2.6 | L/min | 4.333e-05 | m3/s | L/h | exact (1) | Odlind_1986_table_3:row1:col6, Odlind_1986_table_3:row2:col6, Odlind_1986_table_3:row3:col6, Odlind_1986_table_3:row4:col6, Odlind_1986_table_3:row5:col6, Odlind_1986_table_3:row6:col6, Odlind_1986_table_3:row7:col6, Odlind_1986_table_3:row8:col6, Odlind_1986_table_3:row9:col6, Odlind_1986_table_3:row11:col6, Odlind_1986_table_3:row12:col6, Odlind_1986_table_3:row13:col6, Odlind_1986_table_3:row14:col6, Odlind_1986_table_3:row15:col6, Odlind_1986_table_3:row17:col6, Odlind_1986_table_3:row18:col6, Odlind_1986_table_3:row19:col6 |
+| Vc, | `Q63` · V1 | 150 | L | 0.15 | m3 | L | llm_confirmed (0.6) | Odlind_1986_table_3:row1:col7, Odlind_1986_table_3:row2:col7, Odlind_1986_table_3:row3:col7, Odlind_1986_table_3:row4:col7, Odlind_1986_table_3:row5:col7, Odlind_1986_table_3:row6:col7, Odlind_1986_table_3:row7:col7, Odlind_1986_table_3:row8:col7, Odlind_1986_table_3:row9:col7, Odlind_1986_table_3:row11:col7, Odlind_1986_table_3:row12:col7, Odlind_1986_table_3:row13:col7, Odlind_1986_table_3:row14:col7, Odlind_1986_table_3:row15:col7, Odlind_1986_table_3:row17:col7, Odlind_1986_table_3:row18:col7, Odlind_1986_table_3:row19:col7 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,6 +79,8 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'c~ax' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'a uc' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'v~' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'ba' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'mb' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
@@ -96,37 +96,37 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 - column 'mr 1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'gu' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '.f' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'cm~x' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'BA' — extend the ontology if this is a real PK parameter (source ['tab_1:row2:col1', 'tab_1:row2:col2', 'tab_1:row2:col3', 'tab_1:row2:col4', 'tab_1:row2:col5', 'tab_1:row2:col7'])
 - dropped unlinked row (NIL): 'MB' — extend the ontology if this is a real PK parameter (source ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col7'])
-- dropped duplicate Q331 ('BH', value '100') — already have one for this compound
-- dropped unlinked row (NIL): 'LEJ' — extend the ontology if this is a real PK parameter (source ['tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col4', 'tab_1:row7:col5', 'tab_1:row7:col7'])
-- dropped unlinked row (NIL): 'JL' — extend the ontology if this is a real PK parameter (source ['tab_1:row8:col1', 'tab_1:row8:col2', 'tab_1:row8:col3', 'tab_1:row8:col4', 'tab_1:row8:col5', 'tab_1:row8:col7'])
+- dropped unlinked row (NIL): 'MC' — extend the ontology if this is a real PK parameter (source ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col7'])
+- dropped unlinked row (NIL): 'LEJ' — extend the ontology if this is a real PK parameter (source ['tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col4', 'tab_1:row7:col5', 'tab_1:row7:col7', 'Odlind_1986_table_4:row3:col1', 'Odlind_1986_table_4:row3:col2', 'Odlind_1986_table_4:row3:col3', 'Odlind_1986_table_4:row3:col4', 'Odlind_1986_table_4:row3:col5'])
 - dropped unlinked row (NIL): 'KAL' — extend the ontology if this is a real PK parameter (source ['tab_1:row9:col1', 'tab_1:row9:col2', 'tab_1:row9:col3', 'tab_1:row9:col4', 'tab_1:row9:col5', 'tab_1:row9:col7'])
 - dropped unlinked row (NIL): 'TM 1' — extend the ontology if this is a real PK parameter (source ['tab_1:row10:col1', 'tab_1:row10:col2', 'tab_1:row10:col3', 'tab_1:row10:col4', 'tab_1:row10:col5', 'tab_1:row10:col7'])
 - dropped unlinked row (NIL): 'UN' — extend the ontology if this is a real PK parameter (source ['tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4', 'tab_1:row12:col5', 'tab_1:row12:col7'])
-- dropped unlinked row (NIL): 'JO' — extend the ontology if this is a real PK parameter (source ['tab_1:row13:col1', 'tab_1:row13:col2', 'tab_1:row13:col4', 'tab_1:row13:col5', 'tab_1:row13:col7'])
+- dropped duplicate Q900 ('JO', value '34') — already have one for this compound
 - dropped unlinked row (NIL): 'TO' — extend the ontology if this is a real PK parameter (source ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3', 'tab_1:row14:col4', 'tab_1:row14:col5', 'tab_1:row14:col7'])
-- dropped unlinked row (NIL): 'HP' — extend the ontology if this is a real PK parameter (source ['tab_1:row15:col1', 'tab_1:row15:col2', 'tab_1:row15:col3', 'tab_1:row15:col4', 'tab_1:row15:col5', 'tab_1:row15:col7'])
-- dropped unlinked row (NIL): 'MR 1' — extend the ontology if this is a real PK parameter (source ['tab_1:row16:col1', 'tab_1:row16:col2', 'tab_1:row16:col3', 'tab_1:row16:col4', 'tab_1:row16:col5', 'tab_1:row16:col7'])
+- dropped unlinked row (NIL): 'HP' — extend the ontology if this is a real PK parameter (source ['tab_1:row15:col1', 'tab_1:row15:col2', 'tab_1:row15:col3', 'tab_1:row15:col4', 'tab_1:row15:col5', 'tab_1:row15:col7', 'Odlind_1986_table_4:row5:col1', 'Odlind_1986_table_4:row5:col2', 'Odlind_1986_table_4:row5:col4', 'Odlind_1986_table_4:row5:col5'])
+- dropped unlinked row (NIL): 'MR 1' — extend the ontology if this is a real PK parameter (source ['tab_1:row16:col1', 'tab_1:row16:col2', 'tab_1:row16:col3', 'tab_1:row16:col4', 'tab_1:row16:col5', 'tab_1:row16:col7', 'Odlind_1986_table_4:row6:col1', 'Odlind_1986_table_4:row6:col2', 'Odlind_1986_table_4:row6:col3', 'Odlind_1986_table_4:row6:col4', 'Odlind_1986_table_4:row6:col5'])
+- dropped unlinked row (NIL): 'GU' — extend the ontology if this is a real PK parameter (source ['tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3', 'tab_1:row18:col5', 'tab_1:row18:col7', 'Odlind_1986_table_4:row7:col1', 'Odlind_1986_table_4:row7:col2', 'Odlind_1986_table_4:row7:col3', 'Odlind_1986_table_4:row7:col4', 'Odlind_1986_table_4:row7:col5'])
 - dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['tab_1:row19:col1', 'tab_1:row19:col3', 'tab_1:row19:col4', 'tab_1:row19:col5', 'tab_1:row19:col7'])
-- dropped unlinked row (NIL): 'S.D.' — extend the ontology if this is a real PK parameter (source ['tab_1:row20:col1', 'tab_1:row20:col3', 'tab_1:row20:col4', 'tab_1:row20:col5', 'tab_1:row20:col7'])
-- dropped duplicate Q900 ('t ,:,', value '5.0') — already have one for this compound
-- linked 't~.a' as 'kel' → Q47 (kel) for  — compound marker removed
-- dropped unlinked row (NIL): 'C,n~' — extend the ontology if this is a real PK parameter (source ['Odlind_1986_table_3:row2:col1', 'Odlind_1986_table_3:row3:col1', 'Odlind_1986_table_3:row4:col1', 'Odlind_1986_table_3:row5:col1', 'Odlind_1986_table_3:row6:col1', 'Odlind_1986_table_3:row7:col1', 'Odlind_1986_table_3:row8:col1', 'Odlind_1986_table_3:row9:col1', 'Odlind_1986_table_3:row11:col1', 'Odlind_1986_table_3:row12:col1', 'Odlind_1986_table_3:row13:col1', 'Odlind_1986_table_3:row14:col1', 'Odlind_1986_table_3:row15:col1', 'Odlind_1986_table_3:row17:col1', 'Odlind_1986_table_3:row18:col1', 'Odlind_1986_table_3:row19:col1'])
-- implicit units: 'KD' — the LLM proposed 'µM', whose dimension does not fit Q331; left unset
-- implicit units: 't,,,a,' → min (from the paper text: "The text states: 'The mean half-time for the first, rapid phase of elimination (tv~o) was 6.1 rain' (where 'rain' is an ")
-- implicit units: 't~.a' → 1/min (from the popPK convention: 'The parameter is identified as kel, the elimination rate constant. In this paper, all time-related parameters (half-live')
+- dropped unlinked row (NIL): 'S.D.' — extend the ontology if this is a real PK parameter (source ['tab_1:row20:col1', 'tab_1:row20:col3', 'tab_1:row20:col4', 'tab_1:row20:col5', 'tab_1:row20:col7', 'Odlind_1986_table_4:row9:col1', 'Odlind_1986_table_4:row9:col4', 'Odlind_1986_table_4:row9:col5'])
+- dropped unlinked row (NIL): 't,,,a,' — extend the ontology if this is a real PK parameter (source ['Odlind_1986_table_3:row1:col2', 'Odlind_1986_table_3:row2:col2', 'Odlind_1986_table_3:row3:col2', 'Odlind_1986_table_3:row4:col2', 'Odlind_1986_table_3:row5:col2', 'Odlind_1986_table_3:row6:col2', 'Odlind_1986_table_3:row7:col2', 'Odlind_1986_table_3:row8:col2', 'Odlind_1986_table_3:row9:col2', 'Odlind_1986_table_3:row11:col2', 'Odlind_1986_table_3:row12:col2', 'Odlind_1986_table_3:row13:col2', 'Odlind_1986_table_3:row14:col2', 'Odlind_1986_table_3:row15:col2', 'Odlind_1986_table_3:row17:col2'])
+- dropped unlinked row (NIL): 't ,:,' — extend the ontology if this is a real PK parameter (source ['Odlind_1986_table_3:row1:col3', 'Odlind_1986_table_3:row2:col3', 'Odlind_1986_table_3:row3:col3', 'Odlind_1986_table_3:row5:col3', 'Odlind_1986_table_3:row6:col3', 'Odlind_1986_table_3:row7:col3', 'Odlind_1986_table_3:row8:col3', 'Odlind_1986_table_3:row11:col3', 'Odlind_1986_table_3:row12:col3', 'Odlind_1986_table_3:row13:col3', 'Odlind_1986_table_3:row14:col3', 'Odlind_1986_table_3:row15:col3', 'Odlind_1986_table_3:row17:col3', 'Odlind_1986_table_3:row18:col3', 'Odlind_1986_table_3:row19:col3'])
+- dropped unlinked row (NIL): 't~.a' — extend the ontology if this is a real PK parameter (source ['Odlind_1986_table_3:row1:col4', 'Odlind_1986_table_3:row2:col4', 'Odlind_1986_table_3:row3:col4', 'Odlind_1986_table_3:row4:col4', 'Odlind_1986_table_3:row5:col4', 'Odlind_1986_table_3:row6:col4', 'Odlind_1986_table_3:row7:col4', 'Odlind_1986_table_3:row8:col4', 'Odlind_1986_table_3:row9:col4', 'Odlind_1986_table_3:row11:col4', 'Odlind_1986_table_3:row12:col4', 'Odlind_1986_table_3:row13:col4', 'Odlind_1986_table_3:row14:col4', 'Odlind_1986_table_3:row15:col4', 'Odlind_1986_table_3:row17:col4', 'Odlind_1986_table_3:row18:col4', 'Odlind_1986_table_3:row19:col4'])
+- dropped duplicate Q900 ('C,n~', value '2.37') — already have one for this compound
+- dropped unlinked row (NIL): 'TM 2' — extend the ontology if this is a real PK parameter (source ['Odlind_1986_table_4:row4:col1', 'Odlind_1986_table_4:row4:col2', 'Odlind_1986_table_4:row4:col3', 'Odlind_1986_table_4:row4:col4', 'Odlind_1986_table_4:row4:col5'])
+- dropped unlinked row (NIL): '.~' — extend the ontology if this is a real PK parameter (source ['Odlind_1986_table_4:row8:col1', 'Odlind_1986_table_4:row8:col3', 'Odlind_1986_table_4:row8:col4', 'Odlind_1986_table_4:row8:col5'])
+- implicit units: 'BH' — the LLM proposed 'µM', whose dimension does not fit Q32; left unset
 - implicit units: 'A UC' — the LLM proposed 'µM × min', whose dimension does not fit Q88; left unset
-- implicit units: 'Cl' → l/min (from the paper text: "The text states: 'The mean total plasma clearance (CI) was 6.9 1./min'. This explicitly provides the unit for total clea")
-- implicit units: 'Vc,' → l (from the paper text: "The text states: 'The mean VD was 438 1.'. This explicitly provides the unit for the volume of distribution (Vd) as lite")
+- implicit units: 'Cl' → L/min (from the paper text: "The text states: 'The mean total plasma clearance (Cl) was 6.9 L/min (range 3.3-12.0)'.")
+- implicit units: 'Vc,' → L (from the paper text: "The text states: 'the mean VD was 438 L (range 115 -1010)'.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=azathioprine
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- row roles: 16 per-group rows of azathioprine other but 0 reference group(s) — kept as printed
-- row roles: 3 per-group rows of azathioprine summary_statistic but 0 reference group(s) — kept as printed
-- row roles: 2 per-group rows of azathioprine distribution_rate_constant but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=noncompartmental; 24/24 row label(s) assigned, 51 linked by role
+- base model from table(s) without population columns (Odlind_1986:other_prose, Odlind_1986_table_3, Odlind_1986_table_4, tab_1); populations aza kept as separate records
+- row roles (LLM): model_class=noncompartmental; 28/28 row label(s) assigned, 34 linked by role
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - table tab_1: unbound_uncertainty
@@ -134,22 +134,60 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 - table Odlind_1986_table_3: unparsed_numeric_cell
 - transposed table Odlind_1986_table_3: logical view retains original source coordinates
 - companion parameter table 3 transcribed (114 record(s))
-- LLM selected parameter table(s) 2, 3
+- table Odlind_1986_table_4: units_need_context
+- table Odlind_1986_table_4: unparsed_numeric_cell
+- companion parameter table 4 transcribed (39 record(s))
+- table Odlind_1986_table_5: unknown_column_role
+- table Odlind_1986_table_5: units_need_context
+- table Odlind_1986_table_5: ragged_grid
+- companion parameter table 5 transcribed (74 record(s))
+- LLM selected parameter table(s) 2, 3, 4, 5
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.25 (4/16 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[2]` |  | 62.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a uc]` | 138 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bh]` | 102 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 2.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[jl]` | 29 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kal]` |  | 108 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kd].value` | 89 | 315 | mismatch |
+| `gpt-oss-120b` | `parameters[lej]` |  | 57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mb]` |  | 74 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mr 1]` |  | 171 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tm 1]` |  | 38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc,]` | 150 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Odlind_1986_table_3:row1:col6', 'Odlind_1986_table_3:row2:col6', 'Odlind_1986_table_3:row3:col6', 'Odlind_1986_table_3:row4:col6', 'Odlind_1986_table_3:row5:col6', 'Odlind_1986_table_3:row6:col6', 'Odlind_1986_table_3:row7:col6', 'Odlind_1986_table_3:row8:col6', 'Odlind_1986_table_3:row9:col6', 'Odlind_1986_table_3:row11:col6', 'Odlind_1986_table_3:row12:col6', 'Odlind_1986_table_3:row13:col6', 'Odlind_1986_table_3:row14:col6', 'Odlind_1986_table_3:row15:col6', 'Odlind_1986_table_3:row17:col6', 'Odlind_1986_table_3:row18:col6', 'Odlind_1986_table_3:row19:col6'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Odlind_1986_table_3:row1:col4', 'Odlind_1986_table_3:row2:col4', 'Odlind_1986_table_3:row3:col4', 'Odlind_1986_table_3:row4:col4', 'Odlind_1986_table_3:row5:col4', 'Odlind_1986_table_3:row6:col4', 'Odlind_1986_table_3:row7:col4', 'Odlind_1986_table_3:row8:col4', 'Odlind_1986_table_3:row9:col4', 'Odlind_1986_table_3:row11:col4', 'Odlind_1986_table_3:row12:col4', 'Odlind_1986_table_3:row13:col4', 'Odlind_1986_table_3:row14:col4', 'Odlind_1986_table_3:row15:col4', 'Odlind_1986_table_3:row17:col4', 'Odlind_1986_table_3:row18:col4', 'Odlind_1986_table_3:row19:col4'] |
-| C5_dimension_Q59 | pass | [time] |  | ['Odlind_1986_table_3:row1:col2', 'Odlind_1986_table_3:row2:col2', 'Odlind_1986_table_3:row3:col2', 'Odlind_1986_table_3:row4:col2', 'Odlind_1986_table_3:row5:col2', 'Odlind_1986_table_3:row6:col2', 'Odlind_1986_table_3:row7:col2', 'Odlind_1986_table_3:row8:col2', 'Odlind_1986_table_3:row9:col2', 'Odlind_1986_table_3:row11:col2', 'Odlind_1986_table_3:row12:col2', 'Odlind_1986_table_3:row13:col2', 'Odlind_1986_table_3:row14:col2', 'Odlind_1986_table_3:row15:col2', 'Odlind_1986_table_3:row17:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Odlind_1986_table_3:row1:col7', 'Odlind_1986_table_3:row2:col7', 'Odlind_1986_table_3:row3:col7', 'Odlind_1986_table_3:row4:col7', 'Odlind_1986_table_3:row5:col7', 'Odlind_1986_table_3:row6:col7', 'Odlind_1986_table_3:row7:col7', 'Odlind_1986_table_3:row8:col7', 'Odlind_1986_table_3:row9:col7', 'Odlind_1986_table_3:row11:col7', 'Odlind_1986_table_3:row12:col7', 'Odlind_1986_table_3:row13:col7', 'Odlind_1986_table_3:row14:col7', 'Odlind_1986_table_3:row15:col7', 'Odlind_1986_table_3:row17:col7', 'Odlind_1986_table_3:row18:col7', 'Odlind_1986_table_3:row19:col7'] |
-| C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 |  | ['tab_1:row5:col1', 'tab_1:row5:col2', 'tab_1:row5:col4', 'tab_1:row5:col5', 'tab_1:row5:col7'] |
+| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 |  | ['tab_1:row6:col1', 'tab_1:row6:col2', 'tab_1:row6:col3', 'tab_1:row6:col4', 'tab_1:row6:col5', 'tab_1:row6:col7', 'Odlind_1986_table_4:row2:col1', 'Odlind_1986_table_4:row2:col2', 'Odlind_1986_table_4:row2:col4', 'Odlind_1986_table_4:row2:col5'] |
+| C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 |  | ['tab_1:row5:col1', 'tab_1:row5:col2', 'tab_1:row5:col4', 'tab_1:row5:col5', 'tab_1:row5:col7', 'Odlind_1986_table_4:row1:col1', 'Odlind_1986_table_4:row1:col2', 'Odlind_1986_table_4:row1:col4', 'Odlind_1986_table_4:row1:col5'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 |  | ['Odlind_1986_table_3:row1:col5', 'Odlind_1986_table_3:row2:col5', 'Odlind_1986_table_3:row3:col5', 'Odlind_1986_table_3:row4:col5', 'Odlind_1986_table_3:row5:col5', 'Odlind_1986_table_3:row6:col5', 'Odlind_1986_table_3:row7:col5', 'Odlind_1986_table_3:row8:col5', 'Odlind_1986_table_3:row9:col5', 'Odlind_1986_table_3:row11:col5', 'Odlind_1986_table_3:row12:col5', 'Odlind_1986_table_3:row13:col5', 'Odlind_1986_table_3:row14:col5', 'Odlind_1986_table_3:row15:col5', 'Odlind_1986_table_3:row17:col5', 'Odlind_1986_table_3:row18:col5', 'Odlind_1986_table_3:row19:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.6 | ['Odlind_1986_table_3:row1:col6', 'Odlind_1986_table_3:row2:col6', 'Odlind_1986_table_3:row3:col6', 'Odlind_1986_table_3:row4:col6', 'Odlind_1986_table_3:row5:col6', 'Odlind_1986_table_3:row6:col6', 'Odlind_1986_table_3:row7:col6', 'Odlind_1986_table_3:row8:col6', 'Odlind_1986_table_3:row9:col6', 'Odlind_1986_table_3:row11:col6', 'Odlind_1986_table_3:row12:col6', 'Odlind_1986_table_3:row13:col6', 'Odlind_1986_table_3:row14:col6', 'Odlind_1986_table_3:row15:col6', 'Odlind_1986_table_3:row17:col6', 'Odlind_1986_table_3:row18:col6', 'Odlind_1986_table_3:row19:col6'] |
 | C8_topology | pass |  |  |  |
@@ -188,4 +226,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20Azathioprine_Odlind1986_reference&body=Drug%3A%20azathioprine%0ARecord%3A%20Azathioprine_Odlind1986_reference%0APaper%3A%20Odlind_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/Azathioprine_Odlind1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 15:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:09 UTC</sub>

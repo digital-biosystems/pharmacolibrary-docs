@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a pharmacodynamic mechanism model (e.g., IC50, Emax, or production/elimination kinetics) for phenolphthalein's effect on the number of faeces. Phenolphthalein was administered at a dose of 10 mg/kg to loperamide-induced constipation model mice, serving as a positive control to evaluate therapeutic efficacy against constipation.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

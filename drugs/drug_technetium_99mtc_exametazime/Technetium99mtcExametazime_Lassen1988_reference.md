@@ -4,11 +4,11 @@
 
 # technetium (99mTc) exametazime — `Technetium99mtcExametazime_Lassen1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 18:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the lipid metabolism parameter, k3, was assigned a concentration-dependent unit of ml/g, conflicting with its dimensionless role in the structure.
+> The record was rejected because technetium 99mtc exametazime’s clearance (CL 0.45 ml/g/min) and tissue-to-plasma partition coefficient (Kp 0.67 ml/g) have incompatible dimensions.
 
-<div class="pk-model-meta" hidden drug="technetium (99mTc) exametazime" model-id="Technetium99mtcExametazime_Lassen1988_reference" status="rejected" stale="true" population="human subjects receiving intracarotid HM-PAO" measured-compound="technetium_99mtc_exametazime (lipophilic HM-PAO)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="technetium (99mTc) exametazime" model-id="Technetium99mtcExametazime_Lassen1988_reference" status="rejected" stale="false" population="human subjects receiving intracarotid HM-PAO" measured-compound="technetium_99mtc_exametazime (lipophilic HM-PAO)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Lassen NA, Andersen AR, Friberg L, Paulson OB. The retention of [99mTc]-d,l-HM-PAO in the human brain after intracarotid bolus injection: a kinetic analysis. Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism 8(6):S13–S22 (1988).
@@ -40,7 +40,7 @@ Lassen NA, Andersen AR, Friberg L, Paulson OB. The retention of [99mTc]-d,l-HM-P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Lassen NA, Andersen AR, Friberg L, Paulson OB. The retention of [99mTc]-d,l-HM-P
 
 ### Reviewer guidance
 
-**The record is rejected because the lipid metabolism parameter, k3, was assigned a concentration-dependent unit of ml/g, conflicting with its dimensionless role in the structure.**
+**The record was rejected because technetium 99mtc exametazime’s clearance (CL 0.45 ml/g/min) and tissue-to-plasma partition coefficient (Kp 0.67 ml/g) have incompatible dimensions.**
 
-The first-order rate constant governing the conversion of lipophilic to hydrophilic tracer, labeled as k3, carries a unit of ml/g in the record. This contradicts its definition as a rate constant and the dimensionless nature of the parent-to-metabolite link. Furthermore, because the source was abstract-only, these summary statistics replaced a fitted model, leading to structural inconsistencies. Extracted — hydrophilic HM-PAO: kfm 0.8 min-1; technetium_99mtc_exametazime (lipophilic HM-PAO): kel 0.69 min-1, CL 0.45 ml/g/min, Kp 0.67 ml/g.
+CL is recorded as 0.45 ml/g/min, although its stated meaning is total clearance and the expected dimension is volume/time. Kp is recorded as 0.67 ml/g, although its stated meaning is a tissue-to-plasma partition coefficient, which is dimensionless. Only the abstract was read, so its summary statistics stood in for a fitted model. The second reader also disputed the metabolism link and the 0.80 formation rate. Extracted — hydrophilic HM-PAO: kfm 0.8 min-1; technetium_99mtc_exametazime (lipophilic HM-PAO): kel 0.69 min-1, CL 0.45 ml/g/min, Kp 0.67 ml/g.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has technetium_99mtc_exametazime (HM-PAO), the second reading technetium_99mtc_exametazime; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

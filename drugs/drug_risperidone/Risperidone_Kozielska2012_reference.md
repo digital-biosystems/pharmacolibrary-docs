@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Q12/q21 (hepatic flow, 90 L/h) use library defaults, not estimates from this paper; t6_deviations.
+> The intercompartmental clearances for risperidone and paliperidone were left at library defaults rather than extracted from the paper.
 
 <div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Kozielska2012_reference" status="needs_review" stale="false" population="rats" measured-compound="risperidone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -65,13 +65,13 @@ Kozielska M, Johnson M, Pilla Reddy V, Vermeulen A, Li C, Grimwood S et al. Phar
 
 ### Reviewer guidance
 
-**Q12/q21 (hepatic flow, 90 L/h) use library defaults, not estimates from this paper; t6_deviations.**
+**The intercompartmental clearances for risperidone and paliperidone were left at library defaults rather than extracted from the paper.**
 
-These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — risperidone: Fab 0.413, Frel 0.271, kabs 2.9 1/h, tlag 0.17 h, V1 1.28 L/kg, CLnorm 1.62 L/h/kg, V2 0.168 L/kg, Q 0.0891 L/h/kg; paliperidone: kabs 1.31 1/h, tlag 0.167 h, CLfm 0.757 L/h/kg, V1 1.21 L/kg, CL 1.04 L/h/kg, V2 0.281 L/kg, Q 0.245 L/h/kg.
+Although the record lists specific values for total clearance, the intercompartmental clearances between central and peripheral compartments were not extracted from the source. Consequently, standard library values of 90 L/h were substituted for these parameters, which is not acceptable for a model claimed to be derived from this specific study. Additionally, the record was not finalized because the identity of the risperidone clearance parameter was disputed by a second reader. Extracted — risperidone: Fab 0.413, Frel 0.271, kabs 2.9 1/h, tlag 0.17 h, V1 1.28 L/kg, CLnorm 1.62 L/h/kg, V2 0.168 L/kg, Q 0.0891 L/h/kg; paliperidone: kabs 1.31 1/h, tlag 0.167 h, CLfm 0.757 L/h/kg, V1 1.21 L/kg, CL 1.04 L/h/kg, V2 0.281 L/kg, Q 0.245 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clris].parameter_id`: this record has Q354, the second reading Q22; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -183,17 +183,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_metabolite_built[paliperidone] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0847, 'CL': 2.0222222222222222e-05, 'formation': 1.4719444444444444e-05} | paliperidone = compartment M1 with its own numbers |
-| T3_metabolite_output[paliperidone] | pass |  | 1.588e-06 | C_M1 (paliperidone) must rise above 0 when the parent is dosed |
-| T3_molar_mass[paliperidone] | pass |  | {'MW': 0.41048450000000003, 'MW_m1': 0.42649200000000004} | formation is molecule-for-molecule |
-| T3_output_variable | pass | C_central (measured=risperidone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 11 scholar param(s) emitted or defaulted | 11 covered | all structural parameters accounted for |
-| T3_topology_template | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_metabolite_built[paliperidone] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0847, 'CL': 2.0222222222222222e-05, 'formation': 1.4719444444444444e-05} |  | paliperidone = compartment M1 with its own numbers |
+| T3_metabolite_output[paliperidone] | pass |  | 1.588e-06 |  | C_M1 (paliperidone) must rise above 0 when the parent is dosed |
+| T3_molar_mass[paliperidone] | pass |  | {'MW': 0.41048450000000003, 'MW_m1': 0.42649200000000004} |  | formation is molecule-for-molecule |
+| T3_output_variable | pass | C_central (measured=risperidone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 11 scholar param(s) emitted or defaulted | 11 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.788, 0 of 1 reader(s) agree | 0.788 | cross-check disputed by a second reader: verdict disputed, agreement 0.788, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

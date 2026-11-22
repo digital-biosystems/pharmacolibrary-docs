@@ -4,11 +4,11 @@
 
 # muzolimine — `Muzolimine_Brrs1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:57 UTC (Rejected), but the paper was screened again on 2026-10-06 19:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="muzolimine" model-id="Muzolimine_Brrs1979_reference" status="needs_review" stale="true" population="patients with cardiac failure and healthy subjects" measured-compound="muzolimine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="muzolimine" model-id="Muzolimine_Brrs1979_reference" status="needs_review" stale="false" population="patients with cardiac failure and healthy subjects" measured-compound="muzolimine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Brørs O, Jacobsen S, Arnesen E. Pharmacokinetics of a single oral dose of muzolimine in cardiac failure. European journal of clinical pharmacology 15(2):105–108 (1979).
@@ -16,7 +16,7 @@ Brørs O, Jacobsen S, Arnesen E. Pharmacokinetics of a single oral dose of muzol
 
 ## Population and dosing
 
-**Population:** patients with cardiac failure and healthy subjects · condition cardiac failure · age group adult · n = &gt;=9.
+**Population:** patients with cardiac failure and healthy subjects · condition cardiac failure · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Brørs O, Jacobsen S, Arnesen E. Pharmacokinetics of a single oral dose of muzol
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Brørs O, Jacobsen S, Arnesen E. Pharmacokinetics of a single oral dose of muzol
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — muzolimine: t1/2α 3.6 h, t1/2β 13.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has muzolimine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H05B&quot;,&quot;href&quot;:&quot;atc/H05B.md&quot;},{&quot;label&quot;:&quot;etelcalcetide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etelcalcetide_Chen2018_reference&quot;,&quot;label&quot;:&quot;Chen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etelcalcetide_Chen2018_reference&quot;,&quot;label&quot;:&quot;Chen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # etelcalcetide
 
@@ -25,7 +25,7 @@ Etelcalcetide is a calcimimetic agent indicated for secondary hyperparathyroidis
 
 ## Start here
 
-> **Chen_2018_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> patients with chronic kidney disease and secondary hyperparathyroidism receiving hemodialysis. [Run it in the simulator](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md?tab=Simulation) · [record](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md)
+> **Chen_2018_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with chronic kidney disease and secondary hyperparathyroidism receiving hemodialysis. [Run it in the simulator](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md?tab=Simulation) · [record](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,24 +33,13 @@ Etelcalcetide is a calcimimetic agent indicated for secondary hyperparathyroidis
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chen_2018_reference](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Chen_2018_reference](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chen_2018_PTH](drugs/drug_etelcalcetide/pd_Chen_2018_PTH.md) | serum parathyroid hormone ← etelcalcetide · indirect response — drug inhibits the production of serum parathyroid hormone | — | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=etelcalcetide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CASR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -70,7 +59,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

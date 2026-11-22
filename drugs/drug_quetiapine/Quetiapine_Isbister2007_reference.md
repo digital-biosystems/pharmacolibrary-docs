@@ -5,11 +5,11 @@
 
 # quetiapine — `Quetiapine_Isbister2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:25 UTC (Needs review), but the paper was screened again on 2026-10-06 17:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Isbister2007_reference" status="needs_review" stale="true" population="quetiapine overdose patients" measured-compound="quetiapine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Isbister2007_reference" status="needs_review" stale="false" population="quetiapine overdose patients" measured-compound="quetiapine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Isbister GK, Friberg LE, Hackett LP, Duffull SB. Pharmacokinetics of quetiapine in overdose and the effect of activated charcoal. Clinical pharmacology and therapeutics 81(6):821–827 (2007).
@@ -38,7 +38,7 @@ Isbister GK, Friberg LE, Hackett LP, Duffull SB. Pharmacokinetics of quetiapine 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

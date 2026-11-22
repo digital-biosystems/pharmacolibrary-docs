@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;Brookfield_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The magnesium sulfate model was quarantined because clearance, volume of distribution, lag time, and transfer rate lacked extracted values.
+> Magnesium sulfate was held back because clearance was treated as missing, despite a reported CL of 3.52 L/h; volume, absorption lag, and transfer rate were also defaulted.
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Brookfield2021_reference" status="model_quarantined" stale="false" population="women with severe preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Brookfield K, Galadanci H, Du L, Wenning L, Mohammed I, Suleiman M et al. Magnes
 
 ### Reviewer guidance
 
-**The magnesium sulfate model was quarantined because clearance, volume of distribution, lag time, and transfer rate lacked extracted values.**
+**Magnesium sulfate was held back because clearance was treated as missing, despite a reported CL of 3.52 L/h; volume, absorption lag, and transfer rate were also defaulted.**
 
-Although the record lists parameters such as CL, the model builder used library placeholders for clearance, volume, lag time, and transfer rate instead of explicit estimates. Additionally, the record defines covariate relationships for weight and creatinine, but the simulations only tested the reference individual without exercising these covariate effects. Extracted — magnesium sulfate: CL 3.52 L/h, V1 16.9 L, Q 3.62 L/h, V2 14.3 L, kabs 0.451 hr−1, Fab 0.91.
+The disposition treats magnesium sulfate’s clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant as having no extracted value, so library placeholders stood in and the model was held back; however, the record lists CL 3.52 L/h and V1 and V2 volumes of 16.9 L and 14.3 L. The covariate scenarios were not simulated: only the reference individual was simulated, not the covariate effects defined in the record. A second reader disputed the analyte identification and the interpretation of the clearance covariate, including whether −0.73 is its creatinine exponent; the recorded agreement was 0.8, with 0 of 1 reader agreeing. જુ Extracted — magnesium sulfate: CL 3.52 L/h, V1 16.9 L, Q 3.62 L/h, V2 14.3 L, kabs 0.451 hr−1, Fab 0.91.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has magnesium, the second reading magnesium sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -147,13 +147,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -171,30 +172,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference/MagnesiumSulfate_Brookfield2021_reference_matlab.zip" download>MagnesiumSulfate_Brookfield2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference/MagnesiumSulfate_Brookfield2021_reference_matlab_simbio.zip" download>MagnesiumSulfate_Brookfield2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference/MagnesiumSulfate_Brookfield2021_reference_sbml.zip" download>MagnesiumSulfate_Brookfield2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference/MagnesiumSulfate_Brookfield2021_reference_cellml.zip" download>MagnesiumSulfate_Brookfield2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Brookfield K, Galadanci H, Du L, Wenning L, Mohammed I, Suleiman M et al. Magnesium sulfate pharmacokinetics after intramuscular dosing in women with preeclampsia. AJOG global reports 1(4):100018 (2021). [doi:10.1016/j.xagr.2021.100018](https://doi.org/10.1016/j.xagr.2021.100018)
-
-**This record:** Pharmacolibrary, model `MagnesiumSulfate_Brookfield2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference>
-
-```bibtex
-@misc{pharmacolibrary_MagnesiumSulfateBrookfield2021reference,
-  title  = {{Pharmacolibrary model MagnesiumSulfate_Brookfield2021_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference},
-  note   = {Parameters from doi:10.1016/j.xagr.2021.100018},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

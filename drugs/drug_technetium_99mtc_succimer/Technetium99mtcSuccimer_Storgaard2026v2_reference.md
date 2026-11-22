@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V09C&quot;,&quot;href&quot;:&quot;atc/V09C.md&quot;},{&quot;label&quot;:&quot;technetium (99mTc) succimer&quot;,&quot;href&quot;:&quot;drugs/drug_technetium_99mtc_succimer/&quot;},{&quot;label&quot;:&quot;Storgaard_2026_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Technetium99mtcSuccimer_Storgaard2026v2_reference&quot;,&quot;label&quot;:&quot;Storgaard_2026_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Technetium99mtcSuccimer_Storgaard2026v2_reference&quot;,&quot;label&quot;:&quot;Storgaard_2026_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # technetium (99mTc) succimer — `Technetium99mtcSuccimer_Storgaard2026v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Technetium 99mtc succimer clearance of 162.0 L h−1 and distribution volume of 1669.0 L lack absorption parameter estimates.
+> The record was rejected because the source paper studies a different drug, and clearance values conflict with a second reader's extraction.
 
-<div class="pk-model-meta" hidden drug="technetium (99mTc) succimer" model-id="Technetium99mtcSuccimer_Storgaard2026v2_reference" status="needs_review" stale="false" population="" measured-compound="technetium_99mtc_succimer" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="technetium (99mTc) succimer" model-id="Technetium99mtcSuccimer_Storgaard2026v2_reference" status="rejected" stale="false" population="" measured-compound="technetium_99mtc_succimer" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Storgaard IK, Nielsen RL, Houlind MB, Bornæs O, Christensen LWS, Andersen AL et al. Population pharmacokinetic modelling revealed large variability in oromucosal absorption of Δ&lt;sup&gt;9&lt;/sup&gt;-tetrahydrocannabinol in older patients with poor appetite. British journal of clinical pharmacology 92(2):504-514 (2026).
@@ -29,7 +29,7 @@ Storgaard IK, Nielsen RL, Houlind MB, Bornæs O, Christensen LWS, Andersen AL et
 <figure class="pk-models-diagram"><img src="drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference/Technetium99mtcSuccimer_Storgaard2026v2_reference.svg" alt="Technetium99mtcSuccimer_Storgaard2026v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Storgaard IK, Nielsen RL, Houlind MB, Bornæs O, Christensen LWS, Andersen AL et
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Storgaard IK, Nielsen RL, Houlind MB, Bornæs O, Christensen LWS, Andersen AL et
 
 ### Reviewer guidance
 
-**Technetium 99mtc succimer clearance of 162.0 L h−1 and distribution volume of 1669.0 L lack absorption parameter estimates.**
+**The record was rejected because the source paper studies a different drug, and clearance values conflict with a second reader's extraction.**
 
-The record omits the absorption rate constant and lag time, forcing the use of library defaults for these parameters. Second readers disagreed on specific numerical values for multiple model parameters, indicating inconsistency in data extraction. The apparent parameterization assumed full bioavailability and invented an absorption process not reported in the source text. Extracted — technetium 99mtc succimer: CL/F 162 L h−1, V/F 1.67e+03 L, V2 539 L, Q/F 183 L h−1.
+The relevance screen confirmed the source paper does not mention technetium 99mTc succimer in its title or abstract. Additionally, the apparent clearance value of 162.0 L h−1 in this record was disputed by a second reader who recorded a value of 765. The second reader also failed to locate a value corresponding to the 539.0 L peripheral volume in this record, identifying it as null instead. Extracted — technetium 99mtc succimer: CL/F 162 L h−1, V/F 1.67e+03 L, V2 539 L, Q/F 183 L h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q22: this record has 696, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -133,15 +133,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=technetium_99mtc_succimer) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=apparent_assumption: not acceptable; deviation_id=input_model: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | technetium_99mtc_succimer (or metabolite) | paper about another drug |  | paper subject is not technetium_99mtc_succimer: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=technetium_99mtc_succimer) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check disputed by a second reader: verdict disputed, agreement 0.429, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -153,63 +154,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference/Technetium99mtcSuccimer_Storgaard2026v2_reference_modelica.zip" download>Technetium99mtcSuccimer_Storgaard2026v2_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference/Technetium99mtcSuccimer_Storgaard2026v2_reference_fmi.zip" download>Technetium99mtcSuccimer_Storgaard2026v2_reference_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference/Technetium99mtcSuccimer_Storgaard2026v2_reference_matlab.zip" download>Technetium99mtcSuccimer_Storgaard2026v2_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference/Technetium99mtcSuccimer_Storgaard2026v2_reference_matlab_simbio.zip" download>Technetium99mtcSuccimer_Storgaard2026v2_reference_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference/Technetium99mtcSuccimer_Storgaard2026v2_reference_sbml.zip" download>Technetium99mtcSuccimer_Storgaard2026v2_reference_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference/Technetium99mtcSuccimer_Storgaard2026v2_reference_cellml.zip" download>Technetium99mtcSuccimer_Storgaard2026v2_reference_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4774 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 4.5e-05 | m3/s |
-| input | model | `VdPerKg` | 0.02384 | m3/kg |
-| input | model | `k12` | 3.046e-05 | 1/s |
-| input | model | `k21` | 9.431e-05 | 1/s |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Storgaard IK, Nielsen RL, Houlind MB, Bornæs O, Christensen LWS, Andersen AL et al. Population pharmacokinetic modelling revealed large variability in oromucosal absorption of Δ&lt;sup&gt;9&lt;/sup&gt;-tetrahydrocannabinol in older patients with poor appetite. British journal of clinical pharmacology 92(2):504-514 (2026). [doi:10.1002/bcp.70284](https://doi.org/10.1002/bcp.70284)
-
-**This record:** Pharmacolibrary, model `Technetium99mtcSuccimer_Storgaard2026v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference>
-
-```bibtex
-@misc{pharmacolibrary_Technetium99mtcSuccimerStorgaard2026v2reference,
-  title  = {{Pharmacolibrary model Technetium99mtcSuccimer_Storgaard2026v2_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference},
-  note   = {Parameters from doi:10.1002/bcp.70284},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

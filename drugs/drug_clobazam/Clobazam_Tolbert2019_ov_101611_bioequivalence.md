@@ -4,11 +4,11 @@
 
 # clobazam — `Clobazam_Tolbert2019_ov_101611_bioequivalence`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:49 UTC (Rejected), but the paper was screened again on 2026-10-06 18:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. N-desmethylclobazam was modeled without a value for the metabolic formation rate, leaving the link parameter unassigned.".
+> AUC0-t was recorded with unit h, conflicting with the expected mass/volume/time dimension, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_ov_101611_bioequivalence" status="rejected" stale="true" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_ov_101611_bioequivalence" status="rejected" stale="false" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics of Clobazam. Journal of clinical pharmacology 59(1):7–19 (2019).
@@ -40,7 +40,7 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 ### Reviewer guidance
 
-**N-desmethylclobazam was modeled without a value for the metabolic formation rate, leaving the link parameter unassigned.".**
+**AUC0-t was recorded with unit h, conflicting with the expected mass/volume/time dimension, so the record was rejected.**
 
-The link from clobazam to N-desmethylclobazam has an unknown link parameter, meaning no clearance value was extracted for the formation step. Additionally, the AUCt value of 8871 ng•h/mL has a unit that could not be converted to SI, preventing a dimensional consistency check. The record also contains conflicting parameter identifiers for the AUCt measurement. Extracted — clobazam: Cmax 368 ng/mL, AUCt 8.87e+03 h, t1/2z 39.6 h, V/F 99 L, CL/F 2 L/h.
+The parameter meaning identifies AUC0-t as area under the concentration-time curve, which requires units of mass/volume multiplied by time. However, the record assigns the unit 'h' to this value, causing a dimension mismatch against the expected units. Consequently, the parameter was flagged for the unit conflict, leading to the record's rejection. Extracted — clobazam: Cmax 368 ng/mL, AUCt 8.87e+03 h, t1/2z 39.6 h, V/F 99 L, CL/F 2 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0‐t, mean (% cv), ng•h/ml].parameter_id`: this record has Q19, the second reading Q74. That field shapes the model, so the record is marked disputed.
 

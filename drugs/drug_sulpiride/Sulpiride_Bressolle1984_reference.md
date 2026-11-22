@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;sulpiride&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/&quot;},{&quot;label&quot;:&quot;Bressolle_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Peris_1988_3H_ASP_release&quot;,&quot;label&quot;:&quot;Peris_1988 \u00b7 [3H]ASP release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Peris_1988_3H_ASP_release&quot;,&quot;label&quot;:&quot;Peris_1988 \u00b7 [3H]ASP release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sulpiride — `Sulpiride_Bressolle1984_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Bressolle1984_reference" status="simulated" stale="false" population="healthy male subjects" measured-compound="sulpiride" parameterization="mechanistic" topology="1C"></div>
+> The sulpiride record, derived solely from the abstract, failed the cross-check because the second reader could not confirm the extracted parameters or identified compounds.
+
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Bressolle1984_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="sulpiride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bressolle F, Bres J, Blanchin MD, Gomeni R. Sulpiride pharmacokinetics in humans after intramuscular administration at three dose levels. Journal of pharmaceutical sciences 73(8):1128–1136 (1984).
@@ -27,6 +29,8 @@ Bressolle F, Bres J, Blanchin MD, Gomeni R. Sulpiride pharmacokinetics in humans
 <figure class="pk-models-diagram"><img src="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference.svg" alt="Sulpiride_Bressolle1984_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | initial volume of distribution | V | 0.145 | L/kg |
@@ -40,7 +44,7 @@ Bressolle F, Bres J, Blanchin MD, Gomeni R. Sulpiride pharmacokinetics in humans
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +54,13 @@ Bressolle F, Bres J, Blanchin MD, Gomeni R. Sulpiride pharmacokinetics in humans
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The sulpiride record, derived solely from the abstract, failed the cross-check because the second reader could not confirm the extracted parameters or identified compounds.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was constructed using only the paper's abstract, meaning summary statistics stood in for a fitted model. The second reader disagreed with the identification of sulpiride as the dose compound and primary analyte, marking both as unknown. Furthermore, the second reader reported null values for all extracted parameters, including renal clearance (83.0 mL/min) and initial volume of distribution (0.145 L/kg), resulting in zero agreement. Extracted — sulpiride: V 0.145 L/kg, Vss 0.639 L/kg, CL 89.8 mL/min, CLR 83 mL/min, Fab 0.15, fe 93.1 %, kabs 1.66 h−1, tlag 1.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulpiride, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -151,14 +155,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=sulpiride) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=sulpiride) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.158, 0 of 1 reader(s) agree | 0.158 | cross-check disputed by a second reader: verdict disputed, agreement 0.158, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

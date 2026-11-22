@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;Lu_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Lu J, Pfister M, Ferrari P, Chen G, Sheiner L. Pharmacokinetic-pharmacodynamic m
 
 ## Population and dosing
 
-**Population:** preeclamptic women · condition preeclampsia · age group adult · n = Fifty-one preeclamptic women were studied after receiving two consecutive magnesium sulfate infusions (120 mg/kg for 1 hour and 24 mg/kg for 5 hours). Mg(2+) concentration and systolic/diastolic blood pressure were measured at 0, 0.5, 1, 2, 4, 6, 7, 9, 11, 13 and 15 hours after the beginning of the first infusion. A population pharmacokinetic-pharmacodynamic model was fitted to the data with the computer program NONMEM. RESULTS: Pharmacokinetics were described by a two-compartment model. Population parameter estimates were 5.0 L/h for body clearance (CL), 24L for central volume (V(c), 25L for peripheral volume ((V)(p)) and 5.6 L/h for intercompartment clearance (Q). The interindividual variability in CL, V(c), V(p) and Q was 39, 26, 38, and 59%, respectively. The mean population estimates for systolic (diastolic) blood pressure were 36.8 (27.8) mm Hg for the maximum decrease (E(max)), 0.75 (0.88) mmol/L for the Mg2+ concentration (above baseline) eliciting half-maximum effect (EC(50)) and 0.76 (0.5) h(-1) for the equilibrium rate (k(eo)) of the effect compartment model. CONCLUSION: Mg(2+ )concentrations within the range (2-4 mmol/L) proposed for treatment of preeclampsia produce greater than half-maximal lowering of systolic and diastolic blood pressure..
+**Population:** preeclamptic women · condition preeclampsia · age group adult.
 
 ## Model
 

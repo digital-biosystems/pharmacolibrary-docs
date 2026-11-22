@@ -26,23 +26,8 @@ Vamorolone is a synthetic corticosteroid and dual atypical glucocorticoid and an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Li_2024_reference](drugs/drug_vamorolone/Vamorolone_Li2024_reference.md) | — | 1-compartment (no model) | 4 | Li X et al., Assessing Pharmacogenomic loci Associat…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2446](https://doi.org/10.1002/jcph.2446) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Mavroudis_2019_reference](drugs/drug_vamorolone/Vamorolone_Mavroudis2019_reference.md) | — | 1-compartment (no model) | 2 | Mavroudis PD et al., Population Pharmacokinetics of Vamorolo…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1388](https://doi.org/10.1002/jcph.1388) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vamorolone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | `CYP3A5` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `UGT1A3` substrate, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: NR3C1 (target), NR3C2 (target).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Li_2024_reference](drugs/drug_vamorolone/Vamorolone_Li2024_reference.md) | — | 1-compartment (no model) | 4 | Li X et al., Assessing Pharmacogenomic loci Associat…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2446](https://doi.org/10.1002/jcph.2446) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Mavroudis_2019_reference](drugs/drug_vamorolone/Vamorolone_Mavroudis2019_reference.md) | — | 1-compartment (no model) | 2 | Mavroudis PD et al., Population Pharmacokinetics of Vamorolo…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1388](https://doi.org/10.1002/jcph.1388) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,7 +47,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

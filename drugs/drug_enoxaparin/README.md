@@ -16,7 +16,7 @@ Enoxaparin is a low molecular weight heparin used to treat blood clots. It is gi
 
 ## Start here
 
-> **Oualha_2018_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> paediatric liver transplantation, n = &gt;=22. [Run it in the simulator](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md?tab=Simulation) · [record](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md)
+> **Oualha_2018_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> paediatric liver transplantation. [Run it in the simulator](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md?tab=Simulation) · [record](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -27,17 +27,6 @@ Enoxaparin is a low molecular weight heparin used to treat blood clots. It is gi
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Oualha_2018_reference](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Zufferey_2021_reference](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_reference.md) | — | 1-compartment (no model) | 1 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Derbalah_2022_reference](drugs/drug_enoxaparin/Enoxaparin_Derbalah2022_reference.md) | — | 1-compartment (no model) | 0 | Derbalah A et al., Optimal dosing of enoxaparin in overwei…, British journal of clinical… (2022) | [10.1111/bcp.15459](https://doi.org/10.1111/bcp.15459) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=enoxaparin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: F10 (inhibitor), F2 (inhibitor), MPO (other), SERPINC1 (potentiator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

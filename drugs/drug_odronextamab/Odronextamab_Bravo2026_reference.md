@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the model's second compartment is structurally unlinked from the dose administration.
+> Odronextamab’s peripheral-compartment volume V2 is 4.42 L, but an unreachable or orphan compartment led to rejection.
 
 <div class="pk-model-meta" hidden drug="odronextamab" model-id="Odronextamab_Bravo2026_reference" status="rejected" stale="false" population="adult patients with relapsed or refractory B-cell non-Hodgkin lymphoma" measured-compound="odronextamab" parameterization="mechanistic" topology="3C"></div>
 
@@ -49,13 +49,13 @@ Bravo Padros M, Conrado DJ, Srinivasan K, Harnisch LO, Davis JD, Zhu M. Pharmaco
 
 ### Reviewer guidance
 
-**The record was rejected because the model's second compartment is structurally unlinked from the dose administration.**
+**Odronextamab’s peripheral-compartment volume V2 is 4.42 L, but an unreachable or orphan compartment led to rejection.**
 
-The extracted parameters for odronextamab include a peripheral volume of distribution of 4.42 L, but the topology check identified this compartment as unreachable from the dosing site. The second reader disagreed with the extraction of all four listed pharmacokinetic parameters, marking each value as missing rather than confirming the recorded numbers. Extracted — odronextamab: V1 4.99 L, V2 4.42 L, V 9.41 L, CL 0.189 L/day.
+The record reports a central-compartment volume V1 of 4.99 L and a peripheral-compartment volume V2 of 4.42 L; the rejection finding identifies an unreachable or orphan compartment. The second-reader comparisons for AUC, Cmax, and Cmin are null on both sides, so they show no substantive disagreement. Extracted — odronextamab: V1 4.99 L, V2 4.42 L, V 9.41 L, CL 0.189 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;natalizumab&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/&quot;},{&quot;label&quot;:&quot;Moein_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Natalizumab_Moes2022_reference&quot;,&quot;label&quot;:&quot;Moes_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Moes2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Quan2025_reference&quot;,&quot;label&quot;:&quot;Quan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Quan2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Natalizumab_Moes2022_reference&quot;,&quot;label&quot;:&quot;Moes_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Moes2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Quan2025_reference&quot;,&quot;label&quot;:&quot;Quan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Quan2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Natalizumab_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_natalizumab/Natalizumab_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # natalizumab — `Natalizumab_Moein2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:30 UTC (Rejected), but the paper was screened again on 2026-10-06 22:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The peripheral compartment was structurally disconnected from the central compartment in this natalizumab model.
+> Natalizumab central and peripheral compartment volumes were rejected as the model structure contained an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Moein2025_reference" status="rejected" stale="true" population="" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Moein2025_reference" status="rejected" stale="false" population="" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Moein A, Ribbing J, Ibrahim MMA, Zhang W, Kassir N. Population Pharmacokinetics and Exposure-Response Relationships of Etrolizumab in Patients with Moderately-to-Severely Active Crohn's Disease. Journal of clinical pharmacology 65(10):1208-1219 (2025).
@@ -38,7 +38,7 @@ Moein A, Ribbing J, Ibrahim MMA, Zhang W, Kassir N. Population Pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.636), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by glm-5.3-flash (partly confirmed, agreement 0.818), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Moein A, Ribbing J, Ibrahim MMA, Zhang W, Kassir N. Population Pharmacokinetics 
 
 ### Reviewer guidance
 
-**The peripheral compartment was structurally disconnected from the central compartment in this natalizumab model.**
+**Natalizumab central and peripheral compartment volumes were rejected as the model structure contained an unreachable compartment.**
 
-The record defines a two-compartment structure with a central volume of 2.78 L and a peripheral volume of 1.73 L. However, the model topology contains an unreachable compartment, meaning no pharmacokinetic pathway links the central and peripheral compartments. Consequently, the peripheral volume parameter has no functional effect on the predicted concentrations. Extracted — natalizumab: CL 0.282 L/day, V1 2.78 L, V2 1.73 L, kabs 0.213 /day.
+The record specifies central and peripheral volumes of 2.78 L and 1.73 L for a two-compartment structure. The review found an orphan compartment that lacked a path from the dose administration site. A second reader disagreed on two parameter values, citing 23.2 and 3.45 where the record contained nulls. Extracted — natalizumab: CL 0.282 L/day, V1 2.78 L, V2 1.73 L, kabs 0.213 /day.
 
-A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has 23.2, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has 23.2, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -78,21 +78,19 @@ A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parame
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | not confirmed | 0.636 (7/11 fields) | 4 |
+| `glm-5.3-flash` | partly confirmed | 0.818 (9/11 fields) | 2 |
 | `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `glm-5.3-flash` | `values[Q312]` | 23.2 |  | only_one_extracted |
-| `glm-5.3-flash` | `values[Q323]` | 22.0 | 22.0 | mismatch |
-| `glm-5.3-flash` | `values[Q40]` | 74.3 | 74.3 | mismatch |
 | `glm-5.3-flash` | `values[Q95]` |  | 3.45 | only_one_extracted |
 
 </details>

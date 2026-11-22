@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> All extracted pibrentasvir parameters lack glecaprevir values, leaving glecaprevir clearance, volume, and lag time as library placeholders.
+> All extracted parameters describe pibrentasvir, leaving glecaprevir's clearance, volume, and lag time at library placeholders.
 
 <div class="pk-model-meta" hidden drug="Glecaprevir" model-id="Glecaprevir_Thakre2026_reference" status="model_quarantined" stale="false" population="pediatric patients with chronic HCV infection, ages 3 to &lt; 18 years" measured-compound="glecaprevir and pibrentasvir" parameterization="apparent" topology="1C"></div>
 
@@ -61,9 +61,9 @@ Thakre N, Beck D, Saeed AM, Eckert D, Chen MJ, Liu W et al. Population Pharmacok
 
 ### Reviewer guidance
 
-**All extracted pibrentasvir parameters lack glecaprevir values, leaving glecaprevir clearance, volume, and lag time as library placeholders.**
+**All extracted parameters describe pibrentasvir, leaving glecaprevir's clearance, volume, and lag time at library placeholders.**
 
-The record lists seven parameters for pibrentasvir but none for the primary analyte, glecaprevir. Consequently, glecaprevir's clearance, volume of distribution, and absorption lag time were left at default values rather than using explicit estimates. Additionally, the defined covariate effects were not exercised in the simulation. Extracted — pibrentasvir: CL/F 2.17e+03 L/day, V2/F 528 L, Q/F 765 L/day, V3/F 3.75e+03 L, tlag 0.0556 days, Fab 2.47 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\theta$$\end{document}θ, kabs 7.34 1/day.
+The record lists pibrentasvir for every parameter, including the clearance of 2170 L/day and lag time of 0.0556 days. Consequently, glecaprevir's key pharmacokinetic parameters had no extracted values and defaulted to placeholders. A second reader disputed the record by identifying glecaprevir as the primary analyte and flagging the pibrentasvir parameters as null. Extracted — pibrentasvir: CL/F 2.17e+03 L/day, V2/F 528 L, Q/F 765 L/day, V3/F 3.75e+03 L, tlag 0.0556 days, Fab 2.47 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\theta$$\end{document}θ, kabs 7.34 1/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has glecaprevir + pibrentasvir, the second reading glecaprevir; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -166,14 +166,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | cross-check disputed by a second reader: verdict disputed, agreement 0.538, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

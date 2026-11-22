@@ -4,11 +4,11 @@
 
 # bepridil — `Bepridil_NielsenKudsk1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-07 04:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks volume and clearance parameters, failing to define a compartmental pharmacokinetic model for bepridil.
+> The record lacks a distribution volume and clearance for bepridil, reflecting summary statistics from an abstract rather than a fitted model.
 
-<div class="pk-model-meta" hidden drug="bepridil" model-id="Bepridil_NielsenKudsk1988_reference" status="rejected" stale="true" population="isolated rabbit hearts" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bepridil" model-id="Bepridil_NielsenKudsk1988_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nielsen-Kudsk F, Askholt J, Jakobsen P. Bepridil, myocardial accumulation kinetics and dynamic effects in the isolated rabbit heart. Pharmacology & toxicology 63(2):122–128 (1988).
@@ -37,7 +37,7 @@ Nielsen-Kudsk F, Askholt J, Jakobsen P. Bepridil, myocardial accumulation kineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Nielsen-Kudsk F, Askholt J, Jakobsen P. Bepridil, myocardial accumulation kineti
 
 ### Reviewer guidance
 
-**The record lacks volume and clearance parameters, failing to define a compartmental pharmacokinetic model for bepridil.**
+**The record lacks a distribution volume and clearance for bepridil, reflecting summary statistics from an abstract rather than a fitted model.**
 
-The extracted parameters include average concentration and time to steady state but exclude distribution volume or elimination rates. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. Additionally, the second reader identified discrepancies in parameter extraction and flagged dimension mismatches on structural parameters. Extracted — bepridil: Cavg 489 micrograms g-1, tss 20 min.
+The extraction contains only an average myocardial concentration of 489 micrograms g-1 and a steady-state time of 20 minutes, with no pharmacokinetic rate constants. A dimension check failed because the concentration unit conflicts with the expected volumetric mass dimension. The second reader also noted the absence of a perfusion liquid concentration and an intracellular compartment fraction. Extracted — bepridil: Cavg 489 micrograms g-1, tss 20 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bepridil, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -16,7 +16,7 @@ Drennan PG, Green JK, Gardiner SJ, Metcalf SCL, Kirkpatrick CMJ, Everts RJ et al
 
 ## Population and dosing
 
-**Population:** adults with staphylococcal infections and healthy adults · condition staphylococcal infection · age group adult · n = $56$ $45$ $11$ (45 participants + 11 healthy volunteers) = 56.
+**Population:** adults with staphylococcal infections and healthy adults · condition staphylococcal infection · age group adult.
 
 **Dosing:** 1000 mg, oral, multiple, every 8 h.
 

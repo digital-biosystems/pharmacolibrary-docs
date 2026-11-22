@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F and lag time Tlag are library defaults, not estimates from the paper, for fimasartan.
+> Bioavailability (F) and lag time (Tlag) were left at library defaults rather than using estimates from the fimasartan study.
 
 <div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_estimate" status="needs_review" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ## Population and dosing
 
-**Population:** patients with renal impairment and healthy volunteers · condition renal impairment · age group adult · n = &gt;=16.
+**Population:** patients with renal impairment and healthy volunteers · condition renal impairment · age group adult.
 
 **Dosing:** 120 mg, oral, single.
 
@@ -53,9 +53,9 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ### Reviewer guidance
 
-**Bioavailability F and lag time Tlag are library defaults, not estimates from the paper, for fimasartan.**
+**Bioavailability (F) and lag time (Tlag) were left at library defaults rather than using estimates from the fimasartan study.**
 
-The record lacks explicit estimates for bioavailability (F) and absorption lag time (Tlag). The established finding confirms these parameters use library placeholders rather than values derived from the fimasartan data. This deviation from explicit reporting necessitates the 'needs_review' verdict. Extracted — fimasartan: CL 77 L/h, V1 286 L, kabs 3.8 h−1, V2 203 L, Q 19.4 L/h.
+The model builder did not extract values for bioavailability or absorption lag time, so a placeholder default was applied. This means the simulated drug concentration profile relies on assumptions not supported by the specific data in the paper. Extracted — fimasartan: CL 77 L/h, V1 286 L, kabs 3.8 h−1, V2 203 L, Q 19.4 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -144,14 +144,15 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=fimasartan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=fimasartan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -5,11 +5,11 @@
 
 # medroxyprogesterone — `Medroxyprogesterone_Engel2026_cab_estimates`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 08:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Medroxyprogesterone acetate's elimination rate constant of 11 h−1 was rejected because its unit could not be converted to standard SI units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h−1 (1 / [time]) vs 1 / [time].
 
-<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_cab_estimates" status="rejected" stale="true" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_cab_estimates" status="rejected" stale="false" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and Subcutaneous Pharmacokinetic Modeling to Support the Development of Long-Acting Multipurpose Prevention Technology for HIV and Pregnancy. Biomedicines 14(4) (2026).
@@ -43,7 +43,7 @@ Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +53,11 @@ Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and S
 
 ### Reviewer guidance
 
-**Medroxyprogesterone acetate's elimination rate constant of 11 h−1 was rejected because its unit could not be converted to standard SI units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h−1 (1 / [time]) vs 1 / [time].**
 
-The record defines the elimination rate constant for the terminal phase as 11 h−1. This unit was unrecognized by the standardization process, preventing the parameter from being expressed in compatible SI units. Consequently, the model failed a dimensional consistency check due to this unconverted value. Extracted — medroxyprogesterone: λ1 5.4 h−1, kel 11 h−1.
+A reported unit could not be converted (equation variable and λ1), so that value has no SI equivalent. Extracted — medroxyprogesterone: λ1 5.4 h−1, kel 11 h−1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

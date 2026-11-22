@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;rozanolixizumab&quot;,&quot;href&quot;:&quot;drugs/drug_rozanolixizumab/&quot;},{&quot;label&quot;:&quot;Lledo-Garcia_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Lledo_Garcia_2022_IgG&quot;,&quot;label&quot;:&quot;Lledo-Garcia_2022 \u00b7 IgG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rozanolixizumab/pd_Lledo_Garcia_2022_IgG.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rozanolixizumab — `Rozanolixizumab_LledoGarcia2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 00:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rozanolixizumab's total clearance of 0.0709 L/day and volume of 0.108 L are physiologically implausible for an intact antibody.
+> The model was rejected because a binding parameter's unit was dimensionally incompatible with its meaning, and key clearance and volume values were physiologically implausible.
 
-<div class="pk-model-meta" hidden drug="rozanolixizumab" model-id="Rozanolixizumab_LledoGarcia2022_reference" status="rejected" stale="true" population="healthy adults" measured-compound="rozanolixizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rozanolixizumab" model-id="Rozanolixizumab_LledoGarcia2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="rozanolixizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lledo-Garcia R, Dixon K, Shock A, Oliver R. Pharmacokinetic-pharmacodynamic modelling of the anti-FcRn monoclonal antibody rozanolixizumab: Translation from preclinical stages to the clinic. CPT: pharmacometrics & systems pharmacology 11(1):116–128 (2022).
@@ -45,7 +44,7 @@ Lledo-Garcia R, Dixon K, Shock A, Oliver R. Pharmacokinetic-pharmacodynamic mode
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +54,9 @@ Lledo-Garcia R, Dixon K, Shock A, Oliver R. Pharmacokinetic-pharmacodynamic mode
 
 ### Reviewer guidance
 
-**Rozanolixizumab's total clearance of 0.0709 L/day and volume of 0.108 L are physiologically implausible for an intact antibody.**
+**The model was rejected because a binding parameter's unit was dimensionally incompatible with its meaning, and key clearance and volume values were physiologically implausible.**
 
-The record lists a two-compartment structure, yet total clearance and central volume parameters fall well outside normal human ranges for a monoclonal antibody. Additionally, the dissociation constant unit of nM lacked a defined conversion path to standard SI units, preventing proper validation of the FcRn binding parameters. Extracted — rozanolixizumab: Q 0.27 L/day, V2 0.383 L, CLfm 0.968 L/day, KD 0.359 nM, CL 0.0709 L/day, V 0.108 L.
+The equilibrium dissociation constant KD and the FcRn concentration both use units of nM, but the FcRn entry was flagged as a structural parameter where the dimension conflicted with mass/volume requirements. Total clearance for rozanolixizumab was extracted as 0.0709 L/day and volume as 0.108 L, values far outside expected physiological ranges for a monoclonal antibody. The second reader disagreed on the presence of specific model links and the values for FcRn, clearance, and volume, indicating uncertainty in the extracted record. Extracted — rozanolixizumab: Q 0.27 L/day, V2 0.383 L, CLfm 0.968 L/day, KD 0.359 nM, CL 0.0709 L/day, V 0.108 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (none); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

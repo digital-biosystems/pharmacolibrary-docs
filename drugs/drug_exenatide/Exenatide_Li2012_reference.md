@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Exenatide's clearance, volume of distribution, absorption lag time, and central-peripheral rate constant had no values, forcing the use of library placeholders.
+> Exenatide's clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant were not estimated, leaving the model without required pharmacokinetic values.
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Li2012_reference" status="model_quarantined" stale="false" population="diabetic rats" measured-compound="exenatide" parameterization="apparent" topology="2C"></div>
 
@@ -52,9 +52,9 @@ Li XG, Li L, Zhou X, Chen Y, Ren YP, Zhou TY et al. Pharmacokinetic/pharmacodyna
 
 ### Reviewer guidance
 
-**Exenatide's clearance, volume of distribution, absorption lag time, and central-peripheral rate constant had no values, forcing the use of library placeholders.**
+**Exenatide's clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant were not estimated, leaving the model without required pharmacokinetic values.**
 
-All five extracted parameters were assigned to glucose rather than exenatide. Consequently, exenatide's key pharmacokinetic parameters lacked specific estimates. This omission meant the model relied on generic library values instead of explicit estimates for the target drug. Extracted — glucose: kabs 4.45 h -1, CL/F 0.198 L/h, V1/F 0.397 L, Q/F 0.086 L/h, V2/F 1.18 L.
+All five extracted parameters are explicitly assigned to glucose rather than exenatide, providing no quantitative data for the drug of interest. Consequently, exenatide's clearance, volume of distribution, absorption lag time, and inter-compartmental clearance had no assigned values in the record. Because these key parameters relied on library placeholders instead of explicit estimates, the model was quarantined rather than published. Extracted — glucose: kabs 4.45 h -1, CL/F 0.198 L/h, V1/F 0.397 L, Q/F 0.086 L/h, V2/F 1.18 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured). That field shapes the model, so the record is marked disputed.
 
@@ -138,7 +138,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable | pass | C_central (measured=exenatide) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=apparent_assumption: not acceptable; deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

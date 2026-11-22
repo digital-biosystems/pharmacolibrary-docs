@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;rifapentine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifapentine_Hibma2020_reference&quot;,&quot;label&quot;:&quot;Hibma_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gewitz_2021_TTP&quot;,&quot;label&quot;:&quot;Gewitz_2021 \u00b7 TTP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/pd_Gewitz_2021_TTP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Radtke_2021_CFU&quot;,&quot;label&quot;:&quot;Radtke_2021 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/pd_Radtke_2021_CFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # rifapentine
 
@@ -23,12 +22,6 @@ Rifapentine is a rifamycin antibiotic indicated for the treatment of pulmonary t
 |---|---|---|---|---|---|---|
 | rifapentine | parent | 877.031 | C47H64N4O12 | DrugBank | [6323497](https://pubchem.ncbi.nlm.nih.gov/compound/6323497) | Hibma_2020, Liu_2025, Mathad_2022, Savic_2017 |
 
-## Start here
-
-> **Hibma_2020_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> adults with latent tuberculosis infection, n = ... (n = 4,301 plasma samples).. [Run it in the simulator](drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md?tab=Simulation) · [record](drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## Parameters across studies
 
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Mathad_2022 · CL</text><circle cx="257.6" cy="30.0" r="4" fill="#ef6c00"><title>Mathad_2022 · CL: 1.56 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Hibma_2020 · CL/F</text><circle cx="205.9" cy="46.0" r="4" fill="#ef6c00"><title>Hibma_2020 · CL/F: 1.11 L/h</title></circle></svg></div>
@@ -39,9 +32,9 @@ Rifapentine is a rifamycin antibiotic indicated for the treatment of pulmonary t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Hibma_2020_reference](drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Hibma JE et al., Rifapentine Population Pharmacokinetics…, American journal of respira… (2020) | [10.1164/rccm.201912-2489OC](https://doi.org/10.1164/rccm.201912-2489OC) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Hibma_2020_reference](drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md) | — | 1-compartment (no model) | 7 | Hibma JE et al., Rifapentine Population Pharmacokinetics…, American journal of respira… (2020) | [10.1164/rccm.201912-2489OC](https://doi.org/10.1164/rccm.201912-2489OC) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Mathad_2022_reference](drugs/drug_rifapentine/Rifapentine_Mathad2022_reference.md) | — | 1-compartment (no model) | 1 | Mathad JS et al., Pharmacokinetics and Safety of 3 Months…, Clinical infectious disease… (2022) | [10.1093/cid/ciab665](https://doi.org/10.1093/cid/ciab665) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Liu_2025_reference](drugs/drug_rifapentine/Rifapentine_Liu2025_reference.md) | — | 1-compartment (no model) | 2 | Liu W et al., Pharmacokinetics and safety of rifapent…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf029](https://doi.org/10.1093/jac/dkaf029) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Liu_2025_reference](drugs/drug_rifapentine/Rifapentine_Liu2025_reference.md) | — | 1-compartment (no model) | 2 | Liu W et al., Pharmacokinetics and safety of rifapent…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf029](https://doi.org/10.1093/jac/dkaf029) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Savic_2017_reference](drugs/drug_rifapentine/Rifapentine_Savic2017_reference.md) | — | 1-compartment (no model) | 8 (+2 cov.) | Savic RM et al., Defining the optimal dose of rifapentin…, Clinical pharmacology and t… (2017) | [10.1002/cpt.634](https://doi.org/10.1002/cpt.634) |
 
 ## Pharmacodynamics (PD)
@@ -49,21 +42,9 @@ Rifapentine is a rifamycin antibiotic indicated for the treatment of pulmonary t
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Liu_2025_TBL](drugs/drug_rifapentine/pd_Liu_2025_TBL.md) | total bilirubin ← rifapentine · indirect response — drug stimulates the production of total bilirubin | — | Liu W et al., Pharmacokinetics and safety of rifapent…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf029](https://doi.org/10.1093/jac/dkaf029) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Gewitz_2021_TTP](drugs/drug_rifapentine/pd_Gewitz_2021_TTP.md) | time to positivity (TTP) ← rifapentine · direct linear effect | ▶ model + simulator | Gewitz AD et al., Longitudinal Model-Based Biomarker Anal…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.01794-20](https://doi.org/10.1128/AAC.01794-20) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Radtke_2021_CFU](drugs/drug_rifapentine/pd_Radtke_2021_CFU.md) | lung CFU ← rifapentine · direct Emax (saturable) effect | ▶ model + simulator | Radtke KK et al., Comparative Efficacy of Rifapentine Alo…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.01705-21](https://doi.org/10.1128/AAC.01705-21) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Gewitz_2021_TTP](drugs/drug_rifapentine/pd_Gewitz_2021_TTP.md) | time to positivity (TTP) ← rifapentine · direct linear effect | — | Gewitz AD et al., Longitudinal Model-Based Biomarker Anal…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.01794-20](https://doi.org/10.1128/AAC.01794-20) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Radtke_2021_CFU](drugs/drug_rifapentine/pd_Radtke_2021_CFU.md) | lung CFU ← rifapentine · direct Emax (saturable) effect | — | Radtke KK et al., Comparative Efficacy of Rifapentine Alo…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.01705-21](https://doi.org/10.1128/AAC.01705-21) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Savic_2017_TCC](drugs/drug_rifapentine/pd_Savic_2017_TCC.md) | time to stable culture conversion ← rifapentine · time-to-event model | — | Savic RM et al., Defining the optimal dose of rifapentin…, Clinical pharmacology and t… (2017) | [10.1002/cpt.634](https://doi.org/10.1002/cpt.634) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rifapentine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -83,7 +64,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 37 matched, 17 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 2
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

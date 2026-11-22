@@ -4,11 +4,11 @@
 
 # apixaban — `Apixaban_Kolowrat2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-05 13:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the apixaban clearance value of 33 carries the incompatible unit of percent.
+> Apixaban clearance is recorded as 33%, which is dimensionally invalid for a volume-based pharmacokinetic parameter.
 
-<div class="pk-model-meta" hidden drug="apixaban" model-id="Apixaban_Kolowrat2025_reference" status="rejected" stale="true" population="hospitalized patients with nonvalvular atrial fibrillation" measured-compound="apixaban" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="apixaban" model-id="Apixaban_Kolowrat2025_reference" status="rejected" stale="false" population="hospitalized patients with nonvalvular atrial fibrillation" measured-compound="apixaban" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kolowrat S, Riley C, Lam K, Thomson L, Stickle DF, Kraft WK. Real-World Impact of Amiodarone on Apixaban Population Pharmacokinetics in Hospitalized Patients. Clinical and translational science 18(11):e70392 (2025).
@@ -16,7 +16,7 @@ Kolowrat S, Riley C, Lam K, Thomson L, Stickle DF, Kraft WK. Real-World Impact o
 
 ## Population and dosing
 
-**Population:** hospitalized patients with nonvalvular atrial fibrillation · condition nonvalvular atrial fibrillation · age group adult · n = &gt;=106.
+**Population:** hospitalized patients with nonvalvular atrial fibrillation · condition nonvalvular atrial fibrillation · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Kolowrat S, Riley C, Lam K, Thomson L, Stickle DF, Kraft WK. Real-World Impact o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Kolowrat S, Riley C, Lam K, Thomson L, Stickle DF, Kraft WK. Real-World Impact o
 
 ### Reviewer guidance
 
-**The record was rejected because the apixaban clearance value of 33 carries the incompatible unit of percent.**
+**Apixaban clearance is recorded as 33%, which is dimensionally invalid for a volume-based pharmacokinetic parameter.**
 
-The total clearance parameter is listed with a value of 33 and a unit of '%', which is dimensionally inconsistent for a volume-flow term. Additionally, the source text indicates the record relies solely on abstract statistics rather than fitted model parameters. A second reader disagreed on the identification of the dosed compound and primary analyte, marking both as unknown instead of apixaban. Extracted — apixaban: CL 33 %, V 21 L.
+The record lists apixaban clearance with a value of 33 and unit '%', which is dimensionless rather than volume per time. This unit conflict causes a dimension mismatch for the structural parameter. The second reader could not extract valid numeric values for either the clearance or volume of distribution parameters. Extracted — apixaban: CL 33 %, V 21 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apixaban, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

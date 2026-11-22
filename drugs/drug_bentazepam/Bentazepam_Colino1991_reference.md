@@ -4,11 +4,11 @@
 
 # bentazepam — `Bentazepam_Colino1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:00 UTC (Rejected), but the paper was screened again on 2026-10-06 18:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bentazepam's elimination rate constant was recorded as 0.16 l/h instead of h^-1, creating a dimensional error in the model.
+> Bentazepam elimination rate constant units conflict with rate constant dimensions, causing rejection of abstract-only record.
 
-<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Colino1991_reference" status="rejected" stale="true" population="patients receiving anxiolytic therapy" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Colino1991_reference" status="rejected" stale="false" population="patients receiving anxiolytic therapy" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Colino CI, Lastra CF, López FG, Ledesma A, Mariño EL. Open-loop feedback control of serum bentazepam concentrations and Bayesian estimation in multiple dosage regimens in patients. International journal of clinical pharmacology, therapy, and toxicology 29(11):457–462 (1991).
@@ -36,7 +36,7 @@ Colino CI, Lastra CF, López FG, Ledesma A, Mariño EL. Open-loop feedback contr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Colino CI, Lastra CF, López FG, Ledesma A, Mariño EL. Open-loop feedback contr
 
 ### Reviewer guidance
 
-**Bentazepam's elimination rate constant was recorded as 0.16 l/h instead of h^-1, creating a dimensional error in the model.**
+**Bentazepam elimination rate constant units conflict with rate constant dimensions, causing rejection of abstract-only record.**
 
-The parameter labeled Ke (elimination rate constant) carries the value 0.16 with the unit l/h, which is a volume flow unit rather than a reciprocal time constant. Additionally, the record relies on abstract-only summary statistics for the volume of distribution (1.209 l/kg) and absorption rate (2.33 l/h) rather than a fitted model. Extracted — bentazepam: kabs 2.33 l/h, V 1.21 l/Kg, kel 0.16 l/h, t1/2z 4.33 h.
+The elimination rate constant (kel) is listed as 0.16 l/h, conflicting with the required 1/h unit for a rate parameter. The record is abstract-only, meaning these summary statistics substitute for a fitted model. No further structural details are available to resolve the dimensional mismatch. Extracted — bentazepam: kabs 2.33 l/h, V 1.21 l/Kg, kel 0.16 l/h, t1/2z 4.33 h.
 
 Independently confirmed by `gpt-oss-120b`.
 

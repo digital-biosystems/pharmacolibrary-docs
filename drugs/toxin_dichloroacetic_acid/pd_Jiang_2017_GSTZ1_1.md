@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Dichloroacetic Acid&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/&quot;},{&quot;label&quot;:&quot;Jiang_2017 \u00b7 PD GSTZ1-1 activity&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DichloroaceticAcid_Abbas1997_reference&quot;,&quot;label&quot;:&quot;Abbas_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/DichloroaceticAcid_Abbas1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DichloroaceticAcid_Abbas1997_reference&quot;,&quot;label&quot;:&quot;Abbas_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/DichloroaceticAcid_Abbas1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # GSTZ1-1 activity — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Dichloroacetic acid (concentrations from this paper's PK model) drives GSTZ1-1 activity: indirect response — drug inhibits the production of GSTZ1-1 activity.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
+
+> Dichloroacetic acid concentration drives the inhibition of GSTZ1-1 activity via an indirect response mechanism where the drug increases the enzyme's inactivation rate constant. The model utilizes an EC50 of 4.32 mg/L for the drug effect, a maximum DCA-induced inactivation rate constant of 0.96 /h, and a natural degradation rate constant of 0.00875 /h.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Jiang_2017`
 - **model family:** `indirect_response_i`

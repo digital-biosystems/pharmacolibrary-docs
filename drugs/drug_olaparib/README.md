@@ -25,7 +25,7 @@ Olaparib is a poly (ADP-ribose) polymerase (PARP) inhibitor used to treat cancer
 
 ## Start here
 
-> **Velev_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> BRCA-mutated ovarian cancer patients, n = , 22. [Run it in the simulator](drugs/drug_olaparib/Olaparib_Velev2021_reference.md?tab=Simulation) · [record](drugs/drug_olaparib/Olaparib_Velev2021_reference.md)
+> **Velev_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> BRCA-mutated ovarian cancer patients. [Run it in the simulator](drugs/drug_olaparib/Olaparib_Velev2021_reference.md?tab=Simulation) · [record](drugs/drug_olaparib/Olaparib_Velev2021_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,9 +33,9 @@ Olaparib is a poly (ADP-ribose) polymerase (PARP) inhibitor used to treat cancer
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub> | [Overbeek_2025_reference](drugs/drug_olaparib/Olaparib_Overbeek2025_reference.md) | — | parent + metabolite (no model) | 3 | Overbeek JK et al., Population Pharmacokinetics of Cobicist…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01480-w](https://doi.org/10.1007/s40262-025-01480-w) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub> | [Overbeek_2025_reference](drugs/drug_olaparib/Olaparib_Overbeek2025_reference.md) | — | parent + metabolite (no model) | 3 | Overbeek JK et al., Population Pharmacokinetics of Cobicist…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01480-w](https://doi.org/10.1007/s40262-025-01480-w) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Velev_2021_reference](drugs/drug_olaparib/Olaparib_Velev2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Velev M et al., Association between Olaparib Exposure a…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14080804](https://doi.org/10.3390/ph14080804) |
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [DeJongh_2025_reference](drugs/drug_olaparib/Olaparib_DeJongh2025_reference.md) | — | general linear (no model) | 7 (+1 cov.) | DeJongh J et al., Defining preclinical efficacy with the…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09962-x](https://doi.org/10.1007/s10928-025-09962-x) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [DeJongh_2025_reference](drugs/drug_olaparib/Olaparib_DeJongh2025_reference.md) | — | general linear (no model) | 7 (+1 cov.) | DeJongh J et al., Defining preclinical efficacy with the…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09962-x](https://doi.org/10.1007/s10928-025-09962-x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Peer_2017_reference](drugs/drug_olaparib/Olaparib_Peer2017_reference.md) | — | 1-compartment (no model) | 0 | Peer CJ et al., Population pharmacokinetic analyses of…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3346-1](https://doi.org/10.1007/s00280-017-3346-1) |
 
 ## Pharmacodynamics (PD)
@@ -46,27 +46,6 @@ Olaparib is a poly (ADP-ribose) polymerase (PARP) inhibitor used to treat cancer
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sterlé_2024_CREAT](drugs/drug_olaparib/pd_Sterl_2024_CREAT.md) | creatininaemia ← olaparib · indirect response — drug inhibits the loss of creatininaemia | — | Sterlé M et al., Improving olaparib exposure to optimize…, Therapeutic advances in med… (2024) | [10.1177/17588359241248328](https://doi.org/10.1177/17588359241248328) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Sterlé_2024_HB](drugs/drug_olaparib/pd_Sterl_2024_HB.md) | haemoglobinaemia ← olaparib · disease-progression model | ▶ model + simulator | Sterlé M et al., Improving olaparib exposure to optimize…, Therapeutic advances in med… (2024) | [10.1177/17588359241248328](https://doi.org/10.1177/17588359241248328) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [DeJongh_2025_TXeno](drugs/drug_olaparib/pd_DeJongh_2025_TXeno.md) | Tumor volume ← olaparib · delayed effect through an effect compartment | ▶ model + simulator | DeJongh J et al., Defining preclinical efficacy with the…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09962-x](https://doi.org/10.1007/s10928-025-09962-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=olaparib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inducer, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AKR1C3 (inhibitor), PARP1 (inhibitor), PARP2 (inhibitor), PARP3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,13 +59,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:19 | 4:39 | 2/2/0 | 3/0/0 | 0/0/0 | 408,584/17,826 | einfracz / qwen3.8-27b | 11 | 1/10 | 11/0 | 0 |
+| 2026-10-06 21:19 | 4:39 | 2/2/0 | 4/0/0 | 0/0/0 | 408,584/17,826 | einfracz / qwen3.8-27b | 11 | 1/10 | 11/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 22 matched, 19 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 2
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

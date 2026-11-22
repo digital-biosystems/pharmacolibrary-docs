@@ -17,7 +17,7 @@ Trocóniz IF, Cendrós JM, Peraire C, Ramis J, Garrido MJ, Boscani PF et al. Pop
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;= 38.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 

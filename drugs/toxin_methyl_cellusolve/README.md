@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Methyl cellusolve&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethylCellusolve_Moss1985_reference&quot;,&quot;label&quot;:&quot;Moss_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethylCellusolve_Moss1985_reference&quot;,&quot;label&quot;:&quot;Moss_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Methyl cellusolve
 
@@ -30,7 +30,7 @@ Methyl cellosolve, is a clear and colorless liquid at room temperature mainly us
 
 ## Start here
 
-> **Moss_1985_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> Sprague-Dawley rats. [Run it in the simulator](drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md?tab=Simulation) · [record](drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md)
+> **Moss_1985_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> Sprague-Dawley rats. [Run it in the simulator](drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md?tab=Simulation) · [record](drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -38,7 +38,7 @@ Methyl cellosolve, is a clear and colorless liquid at room temperature mainly us
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Moss_1985_reference](drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Moss EJ et al., The role of metabolism in 2-methoxyetha…, Toxicology and applied phar… (1985) | [10.1016/0041-008x(85)90145-0](https://doi.org/10.1016/0041-008x(85)90145-0) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Moss_1985_reference](drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Moss EJ et al., The role of metabolism in 2-methoxyetha…, Toxicology and applied phar… (1985) | [10.1016/0041-008x(85)90145-0](https://doi.org/10.1016/0041-008x(85)90145-0) |
 | <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: nonlinear topology</sub> | [Clarke_1993_reference](drugs/toxin_methyl_cellusolve/MethylCellusolve_Clarke1993_reference.md) | held back | 1-compartment, IV | 2 | Clarke DO et al., Pharmacokinetics of 2-methoxyethanol an…, Toxicology and applied phar… (1993) | [10.1006/taap.1993.1151](https://doi.org/10.1006/taap.1993.1151) |
 
 <details class="legend">

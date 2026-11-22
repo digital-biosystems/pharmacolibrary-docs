@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02B&quot;,&quot;href&quot;:&quot;atc/P02B.md&quot;},{&quot;label&quot;:&quot;arpraziquantel&quot;,&quot;href&quot;:&quot;drugs/drug_arpraziquantel/&quot;},{&quot;label&quot;:&quot;Bustinduy_2016 \u00b7 median&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arpraziquantel_Bustinduy2016_mean&quot;,&quot;label&quot;:&quot;Bustinduy_2016_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arpraziquantel_Bustinduy2016_median&quot;,&quot;label&quot;:&quot;Bustinduy_2016_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arpraziquantel_Bustinduy2016_mean&quot;,&quot;label&quot;:&quot;Bustinduy_2016_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_mean.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arpraziquantel_Bustinduy2016_median&quot;,&quot;label&quot;:&quot;Bustinduy_2016_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # arpraziquantel — `Arpraziquantel_Bustinduy2016_median`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model record for arpraziquantel was held back because the peripheral compartment transfer rate constants k12 and k21 were not extracted.
+> Arpraziquantel’s CL/F of 677.59 liter/h is attributed to a paper measuring praziquantel racemate, so the record was rejected as the wrong drug.
 
-<div class="pk-model-meta" hidden drug="arpraziquantel" model-id="Arpraziquantel_Bustinduy2016_median" status="needs_review" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel racemate (R-PZQ plus S-PZQ)" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="arpraziquantel" model-id="Arpraziquantel_Bustinduy2016_median" status="rejected" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel racemate (R-PZQ plus S-PZQ)" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van Dam GJ et al. Population Pharmacokinetics and Pharmacodynamics of Praziquantel in Ugandan Children with Intestinal Schistosomiasis: Higher Dosages Are Required for Maximal Efficacy. mBio 7(4) (2016).
@@ -33,7 +33,7 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 <figure class="pk-models-diagram"><img src="drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median/Arpraziquantel_Bustinduy2016_median.svg" alt="Arpraziquantel_Bustinduy2016_median diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -46,7 +46,7 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,13 +56,13 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 
 ### Reviewer guidance
 
-**The model record for arpraziquantel was held back because the peripheral compartment transfer rate constants k12 and k21 were not extracted.**
+**Arpraziquantel’s CL/F of 677.59 liter/h is attributed to a paper measuring praziquantel racemate, so the record was rejected as the wrong drug.**
 
-Although the paper describes a one-compartment model with peripheral distribution, the record only captured four parameters, missing the first-order transfer rate constants from the central to the peripheral compartment (22.28 h−1) and back (25.71 h−1). The drug was administered as a racemate, and the bioavailability was assumed to be 1, but the structural parameters for the peripheral compartment remained undefined in the final record. Extracted — arpraziquantel: kabs 9.88 h−1, CL/F 678 liter/h, V/F 504 liter, k12 22.3 h−1, k21 25.7 h−1, tlag 1.67 h.
+The paper concerns praziquantel in Ugandan children and measured praziquantel racemate, not arpraziquantel; the evidence cites CL/F of 608.02 liter/h and V/F of 473.97 liter. Only 4 of 6 parameters were covered: central-to-peripheral and peripheral-to-central transfer rates were absent, and the model builder marked the absorption lag time as defaulted despite the listed value of 1.67 h. A second reader identified the analyte as praziquantel rather than praziquantel racemate; the record reports agreement of 0.9 while 0 of 1 reader agreed. Extracted — arpraziquantel: kabs 9.88 h−1, CL/F 678 liter/h, V/F 504 liter, k12 22.3 h−1, k21 25.7 h−1, tlag 1.67 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has praziquantel racemate (R-PZQ plus S-PZQ), the second reading praziquantel. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -143,15 +143,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=praziquantel racemate (R-PZQ plus S-PZQ)) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['k12', 'k21'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | arpraziquantel (or metabolite) | paper about another drug |  | paper subject is not arpraziquantel: the screen says the paper does not model this drug: Population PK of praziquantel in children with numeric CL and V values (SCL/F 608.02, V/F 473.97) present in the evidence; some model detail |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=praziquantel racemate (R-PZQ plus S-PZQ)) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | cross-check disputed by a second reader: verdict disputed, agreement 0.9, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,60 +164,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median/Arpraziquantel_Bustinduy2016_median_modelica.zip" download>Arpraziquantel_Bustinduy2016_median_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median/Arpraziquantel_Bustinduy2016_median_fmi.zip" download>Arpraziquantel_Bustinduy2016_median_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median/Arpraziquantel_Bustinduy2016_median_matlab.zip" download>Arpraziquantel_Bustinduy2016_median_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median/Arpraziquantel_Bustinduy2016_median_matlab_simbio.zip" download>Arpraziquantel_Bustinduy2016_median_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median/Arpraziquantel_Bustinduy2016_median_sbml.zip" download>Arpraziquantel_Bustinduy2016_median_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median/Arpraziquantel_Bustinduy2016_median_cellml.zip" download>Arpraziquantel_Bustinduy2016_median_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0028 | kg |
-| input | model | `Cl` | 0.0001882 | m3/s |
-| input | model | `VdPerKg` | 0.007199 | m3/kg |
-| input | model | `ka` | 0.002744 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van Dam GJ et al. Population Pharmacokinetics and Pharmacodynamics of Praziquantel in Ugandan Children with Intestinal Schistosomiasis: Higher Dosages Are Required for Maximal Efficacy. mBio 7(4) (2016). [doi:10.1128/mBio.00227-16](https://doi.org/10.1128/mBio.00227-16)
-
-**This record:** Pharmacolibrary, model `Arpraziquantel_Bustinduy2016_median`. <https://pharmacolibrary.github.io/#/drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median>
-
-```bibtex
-@misc{pharmacolibrary_ArpraziquantelBustinduy2016median,
-  title  = {{Pharmacolibrary model Arpraziquantel_Bustinduy2016_median}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median},
-  note   = {Parameters from doi:10.1128/mBio.00227-16},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

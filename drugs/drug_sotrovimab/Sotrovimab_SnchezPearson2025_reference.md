@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;sotrovimab&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/&quot;},{&quot;label&quot;:&quot;S\u00e1nchez-Pearson_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotrovimab_Sager2023_reference&quot;,&quot;label&quot;:&quot;Sager_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/Sotrovimab_Sager2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sotrovimab_SnchezPearson2025_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez-Pearson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/Sotrovimab_SnchezPearson2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotrovimab_Sager2023_reference&quot;,&quot;label&quot;:&quot;Sager_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/Sotrovimab_Sager2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sotrovimab_SnchezPearson2025_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez-Pearson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/Sotrovimab_SnchezPearson2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sotrovimab — `Sotrovimab_SnchezPearson2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="sotrovimab" model-id="Sotrovimab_SnchezPearson2025_reference" status="simulated" stale="false" population="healthy adults" measured-compound="sotrovimab" parameterization="mechanistic" topology="1C"></div>
+> Sotrovimab clearance and volume values were not confirmed by a second reader, leaving the record's accuracy unverified.
+
+<div class="pk-model-meta" hidden drug="sotrovimab" model-id="Sotrovimab_SnchezPearson2025_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="sotrovimab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sánchez-Pearson Y, Moore J, Daniluk J, Bhangu S, Parra S, El Zailik A et al. Safety, Tolerability and Pharmacokinetics of a High-Dose, Rapid-Infusion Monoclonal Antibody: Phase I Results for Intravenous Sotrovimab 3000 mg. Drugs in R&D 25(4):367–376 (2025).
@@ -27,6 +29,8 @@ Sánchez-Pearson Y, Moore J, Daniluk J, Bhangu S, Parra S, El Zailik A et al. Sa
 <figure class="pk-models-diagram"><img src="drugs/drug_sotrovimab/Sotrovimab_SnchezPearson2025_reference/Sotrovimab_SnchezPearson2025_reference.svg" alt="Sotrovimab_SnchezPearson2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL, mL/day | CL | 81.0 | mL/day |
@@ -34,7 +38,7 @@ Sánchez-Pearson Y, Moore J, Daniluk J, Bhangu S, Parra S, El Zailik A et al. Sa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Sánchez-Pearson Y, Moore J, Daniluk J, Bhangu S, Parra S, El Zailik A et al. Sa
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Sotrovimab clearance and volume values were not confirmed by a second reader, leaving the record's accuracy unverified.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 37017, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+The record lists sotrovimab clearance as 81.0 mL/day and volume of distribution as 6.06 L. A second reader could not compute these values, recording null instead of the original numbers. This disagreement resulted in an agreement score of 0.714, keeping the model in a needs review state. Extracted — sotrovimab: CL 81 mL/day, V 6.06 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 37017, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -75,16 +81,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.643 (9/14 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.714 (10/14 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q17]` | 37017 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q19]` | 12314 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q74]` | 32759 | 167 | mismatch |
-| `gpt-oss-120b` | `values[Q84]` | 8.61 | 8.61 | mismatch |
 | `gpt-oss-120b` | `values[Q88]` | 12314 |  | only_one_extracted |
 
 </details>
@@ -111,14 +116,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=sotrovimab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=sotrovimab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -5,11 +5,11 @@
 
 # Suramin — `Suramin_Scher1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:40 UTC (Rejected), but the paper was screened again on 2026-10-07 09:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The abstract-only record lacks an inter-compartmental clearance value, making the peripheral compartment structurally unreachable in the two-compartment suramin model.
+> The abstract-only record lacks an inter-compartmental clearance value, making the peripheral compartment structurally unreachable in the two-compartment suramin model.
 
-<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Scher1992_reference" status="rejected" stale="true" population="adult cancer patients" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Scher1992_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Scher HI, Jodrell DI, Iversen JM, Curley T, Tong W, Egorin MJ et al. Use of adaptive control with feedback to individualize suramin dosing. Cancer research 52(1):64–70 (1992).
@@ -38,7 +38,7 @@ Scher HI, Jodrell DI, Iversen JM, Curley T, Tong W, Egorin MJ et al. Use of adap
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

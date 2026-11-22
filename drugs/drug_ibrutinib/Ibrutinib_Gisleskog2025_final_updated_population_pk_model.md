@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ibrutinib Cmax failed tolerance; missing V2/F; covariates unexercised; second reader disagrees on CL/F, Q/F, kabs, and ALAG1 values.
+> The ibrutinib model record fails because simulated peak concentrations deviate from paper reports, and apparent peripheral volume coverage is incomplete.
 
 <div class="pk-model-meta" hidden drug="ibrutinib" model-id="Ibrutinib_Gisleskog2025_final_updated_population_pk_model" status="needs_review" stale="false" population="patients with previously untreated mantle cell lymphoma" measured-compound="ibrutinib" parameterization="apparent" topology="1C"></div>
 
@@ -61,9 +61,9 @@ Gisleskog PO, Valenzuela B, Treijtel N, Deshpande S, Henninger T, Perez-Ruixo JJ
 
 ### Reviewer guidance
 
-**Ibrutinib Cmax failed tolerance; missing V2/F; covariates unexercised; second reader disagrees on CL/F, Q/F, kabs, and ALAG1 values.**
+**The ibrutinib model record fails because simulated peak concentrations deviate from paper reports, and apparent peripheral volume coverage is incomplete.**
 
-The model’s simulated peak concentration deviated from the paper's reported Cmax by a factor of 0.6776 and 7.9001 across two checks, failing the tolerance limit. Parameter coverage failed because V2/F (613 L) was neither emitted nor included in the defaulted set, leaving the peripheral volume undefined in the record. The second reader disagreed on several extracted values, specifically identifying CL/F as 1100 instead of 1123, Q/F as 709 instead of 1128, and kabs as 0.451 instead of 0.719, while the record retained nulls for ALAG1 and other fields. Extracted — ibrutinib: CL/F 1.12e+03 L/h, V2/F 613 L, Q/F 1.13e+03 L/h, V3/F 6.67e+03 L, kabs 0.719 h−1, tlag 0.167 h, D1 2.45 h, V/F 7.29e+03 L.
+Simulated peak concentrations do not match the paper's reported values, with deviations reaching up to seven times the expected levels. The record lists an apparent peripheral volume of distribution that was not fully accounted for in the parameterization. Additionally, a second reader disagrees with extracted values for clearance, absorption, and lag time. Extracted — ibrutinib: CL/F 1.12e+03 L/h, V2/F 613 L, Q/F 1.13e+03 L/h, V3/F 6.67e+03 L, kabs 0.719 h−1, tlag 0.167 h, D1 2.45 h, V/F 7.29e+03 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of alag1: this record has 0.167, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -173,6 +173,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.286, 0 of 1 reader(s) agree | 0.286 | cross-check disputed by a second reader: verdict disputed, agreement 0.286, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped |  | 5.048e-05 |  | non-numeric value |
 | T1_cmax | reference | fail | 7.45e-05 | 5.048e-05 | 0.6776 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 6.39e-06 | 5.048e-05 | 7.9 | ng/mL→SI vs simulated kg/m3 |

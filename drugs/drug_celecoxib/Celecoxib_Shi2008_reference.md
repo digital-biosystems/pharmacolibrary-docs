@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The celecoxib record was held back because absorption rate constants were left at library defaults and not supported by the source paper.
+> Celecoxib was held back because its absorption-rate constant (ka) has no reported value and was defaulted rather than estimated from the paper.
 
 <div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Shi2008_reference" status="needs_review" stale="false" population="unknown" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Shi S, Klotz U. Clinical use and pharmacological properties of selective COX-2 i
 
 ### Reviewer guidance
 
-**The celecoxib record was held back because absorption rate constants were left at library defaults and not supported by the source paper.**
+**Celecoxib was held back because its absorption-rate constant (ka) has no reported value and was defaulted rather than estimated from the paper.**
 
-The model builder used apparent parameterization with CL/F of 450.0 ml/min and V/F of 467.4332 L, but absorption parameters were invented or defaulted. Specifically, the absorption rate constant (ka) and lag time (Tlag) were not reported in the source, so library placeholders were applied instead of explicit estimates. A second reader also identified significant discrepancies in multiple pharmacokinetic values compared to the record. Extracted — celecoxib: CL/F 450 ml/min, V/F 467 L.
+Ka use library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The model also defaulted lag time (Tlag) and used first-order depot input with apparent oral-dose parameterization, assuming F=1, Fm=1 and no molar correction. A second reader disputed several extracted parameter values; agreement was 0.438, with 0 of 1 reader agreeing. Extracted — celecoxib: CL/F 450 ml/min, V/F 467 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 10.7, the second reading 75; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -129,15 +129,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=celecoxib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=celecoxib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.438, 0 of 1 reader(s) agree | 0.438 | cross-check disputed by a second reader: verdict disputed, agreement 0.438, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

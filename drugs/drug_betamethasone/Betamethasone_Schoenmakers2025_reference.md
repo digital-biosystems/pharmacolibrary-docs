@@ -17,7 +17,7 @@ Schoenmakers S, Li L, Kluivers ACM, Broekhuizen M, Harhangi MS, Danser AHJ et al
 
 ## Population and dosing
 
-**Population:** pregnant women with imminent preterm birth · condition pre-eclampsia · age group adult · n = &gt;=28.
+**Population:** pregnant women with imminent preterm birth · condition pre-eclampsia · age group adult.
 
 ## Model
 

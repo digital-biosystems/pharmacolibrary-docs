@@ -16,7 +16,7 @@ Pegcetacoplan belongs to a class of drugs that block parts of the immune system 
 
 ## Start here
 
-> **Crass_2025_transformed_estimate** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with geographic atrophy or neovascular age-related macular degeneration, n = ,. [Run it in the simulator](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md?tab=Simulation) · [record](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md)
+> **Crass_2025_transformed_estimate** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with geographic atrophy or neovascular age-related macular degeneration. [Run it in the simulator](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md?tab=Simulation) · [record](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -32,7 +32,7 @@ Pegcetacoplan belongs to a class of drugs that block parts of the immune system 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Crass_2025_estimate](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_estimate.md) | — | 1-compartment (no model) | 1 | Crass RL et al., Population Pharmacokinetics of Pegcetac…, Ophthalmology science (2025) | [10.1016/j.xops.2024.100657](https://doi.org/10.1016/j.xops.2024.100657) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_cmax</sub> | [↳ transformed_estimate](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Crass_2024_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2024_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Population Pharmacokinetic and Pharmaco…, Drugs in R&D (2024) | [10.1007/s40268-024-00500-7](https://doi.org/10.1007/s40268-024-00500-7) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Crass_2024_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2024_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Population Pharmacokinetic and Pharmaco…, Drugs in R&D (2024) | [10.1007/s40268-024-00500-7](https://doi.org/10.1007/s40268-024-00500-7) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Crass_2025_2_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025v2_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Pharmacokinetic/pharmacodynamic analysi…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13264](https://doi.org/10.1002/psp4.13264) |
 
 ## Pharmacodynamics (PD)
@@ -42,16 +42,6 @@ Pegcetacoplan belongs to a class of drugs that block parts of the immune system 
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Crass_2024_Hb](drugs/drug_pegcetacoplan/pd_Crass_2024_Hb.md) | hemoglobin ← pegcetacoplan · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Crass RL et al., Population Pharmacokinetic and Pharmaco…, Drugs in R&D (2024) | [10.1007/s40268-024-00500-7](https://doi.org/10.1007/s40268-024-00500-7) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Crass_2024_LDH](drugs/drug_pegcetacoplan/pd_Crass_2024_LDH.md) | lactate dehydrogenase ← pegcetacoplan · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Crass RL et al., Population Pharmacokinetic and Pharmaco…, Drugs in R&D (2024) | [10.1007/s40268-024-00500-7](https://doi.org/10.1007/s40268-024-00500-7) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Crass_2025_2_GA_lesion_area](drugs/drug_pegcetacoplan/pd_Crass_2025_2_GA_lesion_area.md) | GA lesion area ← pegcetacoplan · disease-progression model | — | Crass RL et al., Pharmacokinetic/pharmacodynamic analysi…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13264](https://doi.org/10.1002/psp4.13264) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pegcetacoplan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: C3 (binder), C3 (regulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +55,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:09 | 1:04 | 2/2/0 | 2/0/0 | 0/0/0 | 84,747/6,398 | einfracz / qwen3.8-27b | 3 | 3/0 | 3/0 | 0 |
+| 2026-10-07 00:09 | 1:04 | 2/2/0 | 3/0/0 | 0/0/0 | 84,747/6,398 | einfracz / qwen3.8-27b | 3 | 3/0 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

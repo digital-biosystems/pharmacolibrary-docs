@@ -4,11 +4,11 @@
 
 # serelaxin — `Serelaxin_Soubret2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-06 10:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Serelaxin clearance 9.2 has units of %, which is dimensionally inconsistent with clearance as a proportionality factor.
+> Serelaxin clearance is dimensionally inconsistent, labeled as a percentage rather than volume per time, causing the record to be rejected.
 
-<div class="pk-model-meta" hidden drug="serelaxin" model-id="Serelaxin_Soubret2018_reference" status="rejected" stale="true" population="patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects" measured-compound="serelaxin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="serelaxin" model-id="Serelaxin_Soubret2018_reference" status="rejected" stale="false" population="patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects" measured-compound="serelaxin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Soubret A, Pang Y, Yu J, Dahlke M. Population pharmacokinetics of serelaxin in patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and in healthy subjects. British journal of clinical pharmacology 84(11):2572–2585 (2018).
@@ -16,7 +16,7 @@ Soubret A, Pang Y, Yu J, Dahlke M. Population pharmacokinetics of serelaxin in p
 
 ## Population and dosing
 
-**Population:** patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects · condition heart failure, hepatic or renal impairment, portal hypertension, healthy · age group adult · n = #613.
+**Population:** patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects · condition heart failure, hepatic or renal impairment, portal hypertension, healthy · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Soubret A, Pang Y, Yu J, Dahlke M. Population pharmacokinetics of serelaxin in p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Soubret A, Pang Y, Yu J, Dahlke M. Population pharmacokinetics of serelaxin in p
 
 ### Reviewer guidance
 
-**Serelaxin clearance 9.2 has units of %, which is dimensionally inconsistent with clearance as a proportionality factor.**
+**Serelaxin clearance is dimensionally inconsistent, labeled as a percentage rather than volume per time, causing the record to be rejected.**
 
-The recorded serelaxin clearance value of 9.2 is accompanied by the unit percent, which cannot physically represent the proportionality factor for drug elimination. Since the record was derived solely from the abstract, these summary statistics replaced the fitted model, leaving the dimensional error uncorrected. The second reader also flagged the serelaxin clearance parameter as unknown in their review, further highlighting the inconsistency in the reported value. Extracted — serelaxin: Vss 544 ml kg-1, CL 9.2 %.
+The clearance parameter carries units of percent, a dimensionless measure, which conflicts with the required volume per time dimensions. Additionally, the record relied solely on abstract data, using summary statistics in place of fitted model parameters. A second reader could not independently verify the extracted values of 9.2 and 544. Extracted — serelaxin: Vss 544 ml kg-1, CL 9.2 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of serelaxin clearance: this record has 9.2, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

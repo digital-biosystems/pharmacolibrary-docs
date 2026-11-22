@@ -410,6 +410,11 @@
    "chem_class": "Benzenoids",
    "label": "Polychlorinated biphenyls"
   },
+  "22446_pentachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
   "22455_pentabromobiphenyl": {
    "category": "IND",
    "chem_class": "Benzenoids",
@@ -565,6 +570,11 @@
    "chem_class": "Benzenoids",
    "label": "Food toxins"
   },
+  "234_trimethylpentane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
   "2356_tetrachlorophenol": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
@@ -575,6 +585,11 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Airborne pollutants"
   },
+  "23_dimethylbutane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
   "246_tribromophenol": {
    "category": "ANIM",
    "chem_class": "Benzenoids",
@@ -584,6 +599,11 @@
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "24_di_tert_butylphenol": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "24_dinitrotoluene": {
    "category": "AIR",
@@ -604,6 +624,11 @@
    "category": "FOOD",
    "chem_class": "Heteroaromatic compounds",
    "label": "Food toxins"
+  },
+  "25_dimethylhexane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
   },
   "26_di_tert_butyl_4_methylphenol": {
    "category": "FOOD",
@@ -644,6 +669,16 @@
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "2_methylpentane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
+  "2_monobromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "2_phenoxyethanol": {
    "category": "FOOD",
@@ -2155,6 +2190,11 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Pesticides"
   },
+  "carbon_14": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
   "carbon_dioxide": {
    "category": "FOOD",
    "chem_class": "Homogeneous non-metal compounds",
@@ -2274,6 +2314,11 @@
    "category": "DRUG",
    "chem_class": "Benzenoids",
    "label": "Drugs"
+  },
+  "chloroacetaldehyde": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
   },
   "chloroethane": {
    "category": "HOUS",
@@ -2445,6 +2490,11 @@
    "chem_class": "Prenol lipids",
    "label": "Food toxins"
   },
+  "cis_diamminedichloro_palladiumii": {
+   "category": "IND",
+   "chem_class": "Palladium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "cisapride": {
    "category": "DRUG",
    "chem_class": "Benzenoids",
@@ -2549,6 +2599,11 @@
    "category": "CIG",
    "chem_class": "Cobalt and its compounds",
    "label": "Cigarette toxins"
+  },
+  "cobalt_60": {
+   "category": "IND",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "cobalt_bis2_ethylhexanoate": {
    "category": "HOUS",

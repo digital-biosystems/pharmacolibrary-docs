@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record is refused because it relies on an apparent parameterization assumption for insulin lispro bioavailability that was adjudicated as not acceptable.
+> Insulin lispro record was held due to a cross-reader disagreement on parameter values and covariate structures.
 
 <div class="pk-model-meta" hidden drug="insulin lispro" model-id="InsulinLispro_Tham2017_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="insulin_lispro" parameterization="apparent" topology="1C"></div>
 
@@ -59,9 +59,9 @@ Tham LS, Schneck K, Ertekin A, Reviriego J. Modeling Pharmacokinetic Profiles of
 
 ### Reviewer guidance
 
-**The record is refused because it relies on an apparent parameterization assumption for insulin lispro bioavailability that was adjudicated as not acceptable.**
+**Insulin lispro record was held due to a cross-reader disagreement on parameter values and covariate structures.**
 
-The model builder substituted an explicit estimate for absorption lag time with a default value, and the second reader disagreed on the presence of specific dose covariates and baseline endogenous insulin parameters. Furthermore, the defined covariate effects were not exercised during simulation, limiting the record's validation to the reference individual. Extracted — insulin lispro: Fab 1, kabs 0.0365 1/h, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h.
+The second reader disputed the recorded covariate effect of body weight on baseline endogenous insulin (0.739) by reporting it as null. Additionally, the reader identified a missing parameter value for the baseline endogenous insulin concentration, listing 79.7 against the record's null. These specific parameter and covariate conflicts resulted in a cross-check agreement of 0.5. Extracted — insulin lispro: Fab 1, kabs 0.0365 1/h, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_lispro, the second reading insulin lispro; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -160,15 +160,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=insulin_lispro) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=insulin_lispro) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

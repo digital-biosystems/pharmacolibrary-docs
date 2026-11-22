@@ -16,47 +16,7 @@ Uehlinger DE, Schaedeli F, Kinzig M, Sörgel F, Frey FJ. Pharmacokinetics of fle
 
 ## Population and dosing
 
-**Population:** patients receiving regular hemodialysis · age group elderly · n = ,
-  "condition": "end-stage renal disease",
-  "species": "human",
-  "compounds": [
-    {
-      "name": "fleroxacin",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    },
-    {
-      "name": "N-demethylfleroxacin",
-      "role": "metabolite",
-      "dosed": "no",
-      "measured": "yes",
-      "has_parameters": "yes"
-    },
-    {
-      "name": "fleroxacin N-oxide",
-      "role": "metabolite",
-      "dosed": "no",
-      "measured": "yes",
-      "has_parameters": "yes"
-    }
-  ],
-  "links": [
-    {
-      "from": "fleroxacin",
-      "to": "N-demethylfleroxacin",
-      "relation": "metabolism",
-      "link_parameter": "formation clearance"
-    },
-    {
-      "from": "fleroxacin",
-      "to": "fleroxacin N-oxide",
-      "relation": "metabolism",
-      "link_parameter": "formation clearance"
-    }
-  ]
-}.
+**Population:** patients receiving regular hemodialysis · age group elderly.
 
 ## Model
 
@@ -76,7 +36,7 @@ Uehlinger DE, Schaedeli F, Kinzig M, Sörgel F, Frey FJ. Pharmacokinetics of fle
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -90,7 +50,7 @@ Uehlinger DE, Schaedeli F, Kinzig M, Sörgel F, Frey FJ. Pharmacokinetics of fle
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fleroxacin: CL_HD 126 ml/min, Q 73 ml/min, Vss 84 liters.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading fleroxacin → n-demethylfleroxacin (metabolism); fleroxacin → fleroxacin n-oxide (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading fleroxacin → n-demethylfleroxacin (metabolism); fleroxacin → fleroxacin n-oxide (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -127,20 +87,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['fleroxacin', 'n-demethylfleroxacin', 'metabolism'], ['fleroxacin', 'fleroxacin n-oxide', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[calculated steady-state volume of distribution]` |  | 84 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[calculated steady-state volume of distribution]` | 84 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dialysis clearances (mean +/- standard deviation) calculated from the amount of drug recovered in the dialysate]` | 126 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[estimated metabolic clearance]` |  | 25 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[formation clearance of fleroxacin n-oxide]` |  | 33 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[formation clearance of n-demethylfleroxacin]` |  | 54 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[those calculated from rates of extraction from plasma]` | 73 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['fleroxacin', 'n-demethylfleroxacin', 'metabolism'], ['fleroxacin', 'fleroxacin n-oxide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[calculated steady-state volume of distribution]` |  | 84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[calculated steady-state volume of distribution]` | 84 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dialysis clearances (mean +/- standard deviation) calculated from the amount of drug recovered in the dialysate]` | 126 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated metabolic clearance]` |  | 25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearance of fleroxacin n-oxide]` |  | 33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearance of n-demethylfleroxacin]` |  | 54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[those calculated from rates of extraction from plasma]` | 73 |  | only_one_extracted |
 
 </details>
 

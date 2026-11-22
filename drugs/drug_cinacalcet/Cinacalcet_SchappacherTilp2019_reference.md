@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The cinacalcet record was held back because absorption rate constant and lag time used library placeholders rather than explicit estimates.
+> Cinacalcet absorption rate constant and lag time used library defaults instead of paper estimates.
 
 <div class="pk-model-meta" hidden drug="cinacalcet" model-id="Cinacalcet_SchappacherTilp2019_reference" status="needs_review" stale="false" population="chronic kidney disease patients" measured-compound="cinacalcet" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Schappacher-Tilp G, Fuertinger DH, Kotanko P. A Multi-Compartment Model Capturin
 
 ### Reviewer guidance
 
-**The cinacalcet record was held back because absorption rate constant and lag time used library placeholders rather than explicit estimates.**
+**Cinacalcet absorption rate constant and lag time used library defaults instead of paper estimates.**
 
-The record lists only apparent clearance (314.0 L/h) and volume of distribution (1000.0 L), leaving absorption parameters without extracted values. Consequently, the model relied on unreported conventions for absorption kinetics. Although the second reader disagreed on other values, the primary issue remained the use of default absorption parameters. Extracted — cinacalcet: CL/F 314 L/h, V 1e+03 L.
+The record's absorption parameters, ka and Tlag, were not reported in the source and were defaulted. Consequently, the model relied on unsupported assumptions for first-order depot input. A second reader also disagreed on several numeric fields, such as the volume of distribution value of 1000 L. Extracted — cinacalcet: CL/F 314 L/h, V 1e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 2.4; it also differs on 6 more fields. That field does not shape the model.
 
@@ -125,15 +125,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=cinacalcet) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=cinacalcet) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12C&quot;,&quot;href&quot;:&quot;atc/A12C.md&quot;},{&quot;label&quot;:&quot;magnesium (different salts in combination)&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/&quot;},{&quot;label&quot;:&quot;Chuan_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Deng2024_reference&quot;,&quot;label&quot;:&quot;Deng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_da2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Deng2024_reference&quot;,&quot;label&quot;:&quot;Deng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_da2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # magnesium (different salts in combination) — `MagnesiumDifferentSaltsInCombination_Chuan2001_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Chuan2001_reference" status="simulated" stale="false" population="patients with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
+> The record is disputed because the second reader disagrees on the half-life parameter assignment and baseline concentration identification for magnesium.
+
+<div class="pk-model-meta" hidden drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Chuan2001_reference" status="needs_review" stale="false" population="patients with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chuan FS, Charles BG, Boyle RK, Rasiah RL. Population pharmacokinetics of magnesium in preeclampsia. American journal of obstetrics and gynecology 185(3):593–599 (2001).
@@ -15,7 +17,7 @@ Chuan FS, Charles BG, Boyle RK, Rasiah RL. Population pharmacokinetics of magnes
 
 ## Population and dosing
 
-**Population:** patients with preeclampsia · condition preeclampsia · age group adult · n = &lt;|mask_privacy|&gt;.
+**Population:** patients with preeclampsia · condition preeclampsia · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed magnesium sulfate, measured magnesium.
 
@@ -29,6 +31,8 @@ Chuan FS, Charles BG, Boyle RK, Rasiah RL. Population pharmacokinetics of magnes
 <figure class="pk-models-diagram"><img src="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference/MagnesiumDifferentSaltsInCombination_Chuan2001_reference.svg" alt="MagnesiumDifferentSaltsInCombination_Chuan2001_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | systemic clearance | CL | 4.28 | L/h |
@@ -38,7 +42,7 @@ Chuan FS, Charles BG, Boyle RK, Rasiah RL. Population pharmacokinetics of magnes
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ Chuan FS, Charles BG, Boyle RK, Rasiah RL. Population pharmacokinetics of magnes
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record is disputed because the second reader disagrees on the half-life parameter assignment and baseline concentration identification for magnesium.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is magnesium different salts in combination's own; they describe magnesium.
+The second reader assigned a null value to the half-life parameter, whereas the first reader extracted a value of 5.2 hours. Additionally, the readers disagreed on the specific parameter identifier for the baseline concentration, with one reading it as a baseline measure and the other as a blood clearance ratio. Extracted — magnesium: CL 4.28 L/h, V 32.3 L, E 0.811 mmol/L, t1/2z 5.2 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average half-life: this record has none, the second reading 5.2; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -123,14 +127,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=magnesium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=magnesium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

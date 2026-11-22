@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Roxadustat record held because covariate effects were not simulated, and the terminal half-life parameter value was misidentified as absorption lag time.
+> The record was held because the age covariate and lag time were not exercised, and a second reader failed to extract any parameter values.
 
 <div class="pk-model-meta" hidden drug="roxadustat" model-id="Roxadustat_Takada2022v2_reference" status="needs_review" stale="false" population="Japanese dialysis-dependent chronic kidney disease patients with anaemia" measured-compound="roxadustat" parameterization="apparent" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Takada A, Shibata T, Shiga T, Groenendaal-van de Meent D, Komatsu K. Population 
 
 ## Population and dosing
 
-**Population:** Japanese dialysis-dependent chronic kidney disease patients with anaemia · age group adult · n = condition.
+**Population:** Japanese dialysis-dependent chronic kidney disease patients with anaemia · age group adult.
 
 **Dosing:** 20, 250 mg, oral, multiple.
 
@@ -59,9 +59,9 @@ Takada A, Shibata T, Shiga T, Groenendaal-van de Meent D, Komatsu K. Population 
 
 ### Reviewer guidance
 
-**Roxadustat record held because covariate effects were not simulated, and the terminal half-life parameter value was misidentified as absorption lag time.**
+**The record was held because the age covariate and lag time were not exercised, and a second reader failed to extract any parameter values.**
 
-The record defines a clearance covariate for older adults, but only the base model was simulated. Additionally, the parameter labeled 't1/2γ' has the value 0.287 h, which corresponds to absorption lag time, not a terminal half-life. The model builder assumed full bioavailability and used a default value for the lag time. Extracted — roxadustat: CL/F 0.914 L/h, V1/F 14.4 L, kabs 0.639 h−1, Q/F 0.131 L/h, V2/F 2.89 L, t1/2γ 0.287 h.
+The age covariate (0.791) and lag time (0.287 h) were not simulated, and the lag time used a library placeholder instead of an explicit estimate. A second reader disagreed with the primary analyte and failed to extract values for all seven pharmacokinetic parameters. Extracted — roxadustat: CL/F 0.914 L/h, V1/F 14.4 L, kabs 0.639 h−1, Q/F 0.131 L/h, V2/F 2.89 L, t1/2γ 0.287 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has roxadustat, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -180,15 +180,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=roxadustat) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=roxadustat) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.15, 0 of 1 reader(s) agree | 0.15 | cross-check disputed by a second reader: verdict disputed, agreement 0.15, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

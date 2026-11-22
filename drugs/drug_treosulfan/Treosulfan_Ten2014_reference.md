@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;treosulfan&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/&quot;},{&quot;label&quot;:&quot;Ten_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Treosulfan_Chiesa2020_reference&quot;,&quot;label&quot;:&quot;Chiesa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Chiesa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Danielak2018_reference&quot;,&quot;label&quot;:&quot;Danielak_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Danielak2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Rosser2023_reference&quot;,&quot;label&quot;:&quot;Rosser_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Rosser2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Ten2014_reference&quot;,&quot;label&quot;:&quot;Ten_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Ten2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Treosulfan_van2019_base&quot;,&quot;label&quot;:&quot;van_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_van2019_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_van2019_final&quot;,&quot;label&quot;:&quot;van_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_van2019_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Treosulfan_Chiesa2020_reference&quot;,&quot;label&quot;:&quot;Chiesa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Chiesa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Danielak2018_reference&quot;,&quot;label&quot;:&quot;Danielak_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Danielak2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Rosser2023_reference&quot;,&quot;label&quot;:&quot;Rosser_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Rosser2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_van2019_base&quot;,&quot;label&quot;:&quot;van_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_van2019_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_van2019_final&quot;,&quot;label&quot;:&quot;van_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_van2019_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Ten2014_reference&quot;,&quot;label&quot;:&quot;Ten_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Ten2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # treosulfan — `Treosulfan_Ten2014_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Ten2014_reference" status="simulated" stale="false" population="pediatric patients" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></div>
+> Treosulfan clearance (6.85 L/h) and volume of distribution (13.2 L) were disputed, so this abstract-only record was not accepted as an agreed fitted-model extraction.
+
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Ten2014_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ten Brink MH, Ackaert O, Zwaveling J, Bredius RG, Smiers FJ, den Hartigh J et al. Pharmacokinetics of treosulfan in pediatric patients undergoing hematopoietic stem cell transplantation. Therapeutic drug monitoring 36(4):465–472 (2014).
@@ -27,6 +29,8 @@ Ten Brink MH, Ackaert O, Zwaveling J, Bredius RG, Smiers FJ, den Hartigh J et al
 <figure class="pk-models-diagram"><img src="drugs/drug_treosulfan/Treosulfan_Ten2014_reference/Treosulfan_Ten2014_reference.svg" alt="Treosulfan_Ten2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance (CL) | CL | 6.85 | L/h |
@@ -34,7 +38,7 @@ Ten Brink MH, Ackaert O, Zwaveling J, Bredius RG, Smiers FJ, den Hartigh J et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Ten Brink MH, Ackaert O, Zwaveling J, Bredius RG, Smiers FJ, den Hartigh J et al
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Treosulfan clearance (6.85 L/h) and volume of distribution (13.2 L) were disputed, so this abstract-only record was not accepted as an agreed fitted-model extraction.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the paper’s abstract was read, so reported summary statistics stood in for a fitted model. The second reader did not report values for clearance or volume of distribution and also disagreed on the dose compound and primary analyte; the agreement was 0.222, with 0 of 1 reader(s) agreeing. The second reader reported an infusion duration of 3, which was absent from this record. Extracted — treosulfan: CL 6.85 L/h, V 13.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has treosulfan, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -121,14 +125,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=treosulfan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=treosulfan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

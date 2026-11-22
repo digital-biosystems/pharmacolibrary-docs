@@ -4,11 +4,11 @@
 
 # brentuximab vedotin — `BrentuximabVedotin_Li2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:47 UTC (Needs review), but the paper was screened again on 2026-10-07 10:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Λ1 has no unit.
+> Λ1 has no unit.
 
-<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Li2017_reference" status="needs_review" stale="true" population="patients with relapsed/refractory CD30-expressing hematologic malignancies" measured-compound="brentuximab vedotin ADC and unconjugated MMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Li2017_reference" status="needs_review" stale="false" population="patients with relapsed/refractory CD30-expressing hematologic malignancies" measured-compound="brentuximab vedotin ADC and unconjugated MMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Li H, Han TH, Hunder NN, Jang G, Zhao B. Population Pharmacokinetics of Brentuximab Vedotin in Patients With CD30-Expressing Hematologic Malignancies. Journal of clinical pharmacology 57(9):1148–1158 (2017).
@@ -53,7 +53,7 @@ Li H, Han TH, Hunder NN, Jang G, Zhao B. Population Pharmacokinetics of Brentuxi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.03), qwen3.8-27b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.03), qwen3.8-27b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

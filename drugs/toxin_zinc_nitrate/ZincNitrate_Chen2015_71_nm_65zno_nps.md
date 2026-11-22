@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected because the paper reports no pharmacokinetic quantities, providing neither rate constants, volumes, clearance, nor half-lives.
 
 <div class="pk-model-meta" hidden drug="Zinc nitrate" model-id="ZincNitrate_Chen2015_71_nm_65zno_nps" status="rejected" stale="false" population="mice" measured-compound="Zinc-65" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,7 +49,13 @@ Chen WY, Cheng YH, Hsieh NH, Wu BC, Chou WC, Ho CC et al. Physiologically based 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected because the paper reports no pharmacokinetic quantities, providing neither rate constants, volumes, clearance, nor half-lives.**
+
+Although a tissue partition coefficient and an uptake rate constant are listed in the parameters, the review findings state the source is an exposure or outcome paper lacking kinetic data. Consequently, the record is refused for containing no valid half-life, volume, clearance, or rate constants for modeling. Extracted — zinc nitrate: Kp 3.53, kuptake 0.0229 1/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

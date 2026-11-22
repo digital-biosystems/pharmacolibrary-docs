@@ -35,7 +35,7 @@ Molino G, Avagnina P, Cavanna A, Ballarè M, Torchio M, Bona B et al. Sorbitol c
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Molino G, Avagnina P, Cavanna A, Ballarè M, Torchio M, Bona B et al. Sorbitol c
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sorbitol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sorbitol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -87,16 +87,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[functional liver plasma flow, as measured by d-sorbitol clearance]` | 2.83 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[functional liver plasma flow, as measured by d-sorbitol clearance]` |  | 2.83 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | sorbitol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | sorbitol | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[functional liver plasma flow, as measured by d-sorbitol clearance]` | 2.83 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[functional liver plasma flow, as measured by d-sorbitol clearance]` |  | 2.83 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sorbitol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sorbitol | unknown | mismatch |
 
 </details>
 

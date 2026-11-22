@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;mannitol&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/&quot;},{&quot;label&quot;:&quot;Wei_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mannitol_Wei2022_reference&quot;,&quot;label&quot;:&quot;Wei_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/Mannitol_Wei2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mannitol_Wei2022_reference&quot;,&quot;label&quot;:&quot;Wei_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/Mannitol_Wei2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mannitol — `Mannitol_Wei2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="mannitol" model-id="Mannitol_Wei2022_reference" status="simulated" stale="false" population="" measured-compound="mannitol" parameterization="mechanistic" topology="1C"></div>
+> The record was rejected because the source paper models vancomycin pharmacokinetics, not mannitol.
+
+<div class="pk-model-meta" hidden drug="mannitol" model-id="Mannitol_Wei2022_reference" status="rejected" stale="false" population="" measured-compound="mannitol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wei S, Zhang D, Zhao Z, Mei S. Population pharmacokinetic model of vancomycin in postoperative neurosurgical patients. Frontiers in pharmacology 13:1005791 (2022).
@@ -27,6 +29,8 @@ Wei S, Zhang D, Zhao Z, Mei S. Population pharmacokinetic model of vancomycin in
 <figure class="pk-models-diagram"><img src="drugs/drug_mannitol/Mannitol_Wei2022_reference/Mannitol_Wei2022_reference.svg" alt="Mannitol_Wei2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 7.98 | L/h |
@@ -34,7 +38,7 @@ Wei S, Zhang D, Zhao Z, Mei S. Population pharmacokinetic model of vancomycin in
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Wei S, Zhang D, Zhao Z, Mei S. Population pharmacokinetic model of vancomycin in
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was rejected because the source paper models vancomycin pharmacokinetics, not mannitol.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q318: this record has 0.2, the second reading 0.2; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Mannitol is included in the record only as a covariate affecting vancomycin clearance, not as the primary measured compound. The extracted values for mannitol clearance (7.98 L/h) and volume of distribution (60.2 L) are therefore not from a mannitol model. The paper subject check identified the study as modeling another drug rather than mannitol. Extracted — mannitol: CL 7.98 L/h, V 60.2 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q88: this record has none, the second reading 400. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -70,19 +76,18 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q318]` | 0.2 | 0.2 | mismatch |
-| `gpt-oss:120b` | `values[Q88]` |  | 400 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` |  | 400 | only_one_extracted |
 
 </details>
 
@@ -108,14 +113,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=mannitol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | mannitol (or metabolite) | paper about another drug |  | paper subject is not mannitol: the paper is about another drug; this one is a co-medication or covariate: The study models the pharmacokinetics of vancomycin, where mannitol is only a covariate affecting clearance, not the subject drug. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=mannitol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -127,59 +133,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mannitol/Mannitol_Wei2022_reference/Mannitol_Wei2022_reference_modelica.zip" download>Mannitol_Wei2022_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mannitol/Mannitol_Wei2022_reference/Mannitol_Wei2022_reference_fmi.zip" download>Mannitol_Wei2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mannitol/Mannitol_Wei2022_reference/Mannitol_Wei2022_reference_matlab.zip" download>Mannitol_Wei2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mannitol/Mannitol_Wei2022_reference/Mannitol_Wei2022_reference_matlab_simbio.zip" download>Mannitol_Wei2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mannitol/Mannitol_Wei2022_reference/Mannitol_Wei2022_reference_sbml.zip" download>Mannitol_Wei2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mannitol/Mannitol_Wei2022_reference/Mannitol_Wei2022_reference_cellml.zip" download>Mannitol_Wei2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.1822 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 2.217e-06 | m3/s |
-| input | model | `VdPerKg` | 0.00086 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Wei S, Zhang D, Zhao Z, Mei S. Population pharmacokinetic model of vancomycin in postoperative neurosurgical patients. Frontiers in pharmacology 13:1005791 (2022). [doi:10.3389/fphar.2022.1005791](https://doi.org/10.3389/fphar.2022.1005791)
-
-**This record:** Pharmacolibrary, model `Mannitol_Wei2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_mannitol/Mannitol_Wei2022_reference>
-
-```bibtex
-@misc{pharmacolibrary_MannitolWei2022reference,
-  title  = {{Pharmacolibrary model Mannitol_Wei2022_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_mannitol/Mannitol_Wei2022_reference},
-  note   = {Parameters from doi:10.3389/fphar.2022.1005791},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

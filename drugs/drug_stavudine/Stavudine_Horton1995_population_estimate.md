@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;stavudine&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/&quot;},{&quot;label&quot;:&quot;Horton_1995 \u00b7 population_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # stavudine — `Stavudine_Horton1995_population_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:23 UTC (Rejected), but the paper was screened again on 2026-10-07 16:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Stavudine was rejected because the absorption rate constant was recorded with volume units, incompatible with its first-order meaning.
+> The record was rejected because the intercompartmental clearance Q (20.3 liters/h) was misinterpreted as a rate constant requiring 1/time units, causing a dimensional mismatch.
 
-<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Horton1995_population_estimate" status="rejected" stale="true" population="patients with AIDS or advanced AIDS-related complex" measured-compound="stavudine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Horton1995_population_estimate" status="rejected" stale="false" population="patients with AIDS or advanced AIDS-related complex" measured-compound="stavudine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Horton CM, Dudley MN, Kaul S, Mayer KH, Squires K, Dunkle L et al. Population pharmacokinetics of stavudine (d4T) in patients with AIDS or advanced AIDS-related complex. Antimicrobial agents and chemotherapy 39(10):2309–2315 (1995).
@@ -44,7 +44,7 @@ Horton CM, Dudley MN, Kaul S, Mayer KH, Squires K, Dunkle L et al. Population ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Horton CM, Dudley MN, Kaul S, Mayer KH, Squires K, Dunkle L et al. Population ph
 
 ### Reviewer guidance
 
-**Stavudine was rejected because the absorption rate constant was recorded with volume units, incompatible with its first-order meaning.**
+**The record was rejected because the intercompartmental clearance Q (20.3 liters/h) was misinterpreted as a rate constant requiring 1/time units, causing a dimensional mismatch.**
 
-The absorption rate constant, defined as the speed of drug absorption, is listed as 2.38 liters/h, a unit for volumetric flow rather than time. This unit inconsistency made the parameter unusable for model construction. A second reader disagreed that the residual error values of 0.13 and 0.003 were valid extractions. Extracted — stavudine: Fab 99.1 % of dose, CL 34.6 liters/h, V 23.9 liters, Vss 56.1 liters, Q 20.3 liters/h, kabs 2.38 liters/h, λ2 0.003.
+The parameter Q, defined as apparent intercompartmental clearance, is correctly listed with units of liters/h, which is standard for clearance. However, the review flagged this unit as dimensionally incorrect for a macro-rate constant, which should be expressed in 1/time. Additionally, the unit for Q was not recognized as a valid standard unit, preventing the parameter from being processed correctly. Extracted — stavudine: Fab 99.1 % of dose, CL 34.6 liters/h, V 23.9 liters, Vss 56.1 liters, Q 20.3 liters/h, kabs 2.38 liters/h, λ2 0.003.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ε1: this record has 0.13, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

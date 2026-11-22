@@ -17,7 +17,7 @@ Grasela TH, Fiedler-Kelly J, Cox E, Womble GP, Risner ME, Chen C. Population pha
 
 ## Population and dosing
 
-**Population:** adults with epilepsy · age group adult · n = },,.
+**Population:** adults with epilepsy · age group adult.
 
 ## Model
 

@@ -4,11 +4,11 @@
 
 # metoprolol — `Metoprolol_Kir2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 00:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Metoprolol absorption parameter k01 carries mass per time units (mg/min/kg), creating a dimensional mismatch with the required rate constant.
+> The record was rejected because absorption and transfer rate constants used mass-based units, causing dimensional mismatches.
 
-<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Kir2025_reference" status="rejected" stale="true" population="malnourished rats" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Kir2025_reference" status="rejected" stale="false" population="malnourished rats" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling of Atenolol and Metoprolol Absorption in Malnourished Rats. European journal of drug metabolism and pharmacokinetics 50(3):251–263 (2025).
@@ -44,7 +44,7 @@ Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling
 
 ### Reviewer guidance
 
-**Metoprolol absorption parameter k01 carries mass per time units (mg/min/kg), creating a dimensional mismatch with the required rate constant.**
+**The record was rejected because absorption and transfer rate constants used mass-based units, causing dimensional mismatches.**
 
-The parameter labeled k01 is defined as the absorption rate constant but has the unit mg/min/kg. The structure expects a first-order rate constant, which should have units of inverse time. This inconsistency indicates the extracted value represents a rate, not a rate constant. Extracted — metoprolol: Kp 4.03, CLint 148 mL/min/kg, kabs 1.19 mg/min/kg, Vss 5.82 L/kg, fm 0.839, CL 16 mL/min/kg, k13 0 mg/min/kg.
+The absorption rate constant and central-to-peripheral transfer constant both list units of mg/min/kg, which are dimensionally inconsistent with rate constants requiring units of 1/time. Additionally, the tissue-to-plasma partition coefficient was assigned units of mL/min/kg, conflicting with its dimensionless nature. These reported units could not be converted to standard international units, preventing the parameters from receiving valid values. Extracted — metoprolol: Kp 4.03, CLint 148 mL/min/kg, kabs 1.19 mg/min/kg, Vss 5.82 L/kg, fm 0.839, CL 16 mL/min/kg, k13 0 mg/min/kg.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

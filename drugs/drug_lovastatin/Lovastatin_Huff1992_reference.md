@@ -4,11 +4,11 @@
 
 # lovastatin — `Lovastatin_Huff1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> This record was reviewed on 2026-11-07 16:50 UTC (Needs review), but the paper was screened again on 2026-10-07 11:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; v2, V3, C0 and λ1 have no unit.
+> Only volume was extracted — no clearance; v2, V3, C0 and λ1 have no unit.
 
-<div class="pk-model-meta" hidden drug="lovastatin" model-id="Lovastatin_Huff1992_reference" status="needs_review" stale="true" population="miniature pigs" measured-compound="apo B in VLDL and LDL" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="lovastatin" model-id="Lovastatin_Huff1992_reference" status="needs_review" stale="false" population="miniature pigs" measured-compound="apo B in VLDL and LDL" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Huff MW, Telford DE, Barrett PH. Dietary fish oil plus lovastatin decreases both VLDL and LDL apo B production in miniature pigs. Arteriosclerosis and thrombosis : a journal of vascular biology 12(8):902–910 (1992).
@@ -43,7 +43,7 @@ Huff MW, Telford DE, Barrett PH. Dietary fish oil plus lovastatin decreases both
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

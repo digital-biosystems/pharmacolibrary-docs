@@ -4,11 +4,11 @@
 
 # dextromethorphan — `Dextromethorphan_Moghadamnia2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:16 UTC (Rejected), but the paper was screened again on 2026-10-06 22:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Dextromethorphan lacks volume and clearance parameters, and the dextrorphan metabolite link is unconfirmed, preventing a valid compartmental model.
+> Dextromethorphan lacks volume and clearance, and dextrorphan is unlinked, making this an exposure/outcome paper rather than a compartmental popPK model.
 
-<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Moghadamnia2003_reference" status="rejected" stale="true" population="healthy adults" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Moghadamnia2003_reference" status="rejected" stale="false" population="healthy adults" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Moghadamnia AA, Rostami-Hodjegan A, Abdul-Manap R, Wright CE, Morice AH, Tucker GT. Physiologically based modelling of inhibition of metabolism and assessment of the relative potency of drug and metabolite: dextromethorphan vs. dextrorphan using quinidine inhibition. British journal of clinical pharmacology 56(1):57–67 (2003).
@@ -34,7 +34,7 @@ Moghadamnia AA, Rostami-Hodjegan A, Abdul-Manap R, Wright CE, Morice AH, Tucker 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Moghadamnia AA, Rostami-Hodjegan A, Abdul-Manap R, Wright CE, Morice AH, Tucker 
 
 ### Reviewer guidance
 
-**Dextromethorphan lacks volume and clearance parameters, and the dextrorphan metabolite link is unconfirmed, preventing a valid compartmental model.**
+**Dextromethorphan lacks volume and clearance, and dextrorphan is unlinked, making this an exposure/outcome paper rather than a compartmental popPK model.**
 
-The record omits distribution volume and elimination clearance, which are essential for a compartmental population pharmacokinetic model. The formation clearance parameter for dextromethorphan shows a dimension mismatch, and the second reader does not support the metabolic link to dextrorphan. These structural and parameter deficiencies, combined with the abstract-only source, prevent the record from representing a fitted model. Extracted — dextromethorphan: CLint 59 l x h(-1).
+The record provides no distribution volume or elimination clearance for dextromethorphan, confirming it is not a compartmental population PK model. The metabolite dextrorphan is defined with zero compartments and lacks a valid path from the dose, rendering the parent-metabolite link invalid. Although an intrinsic clearance of 59 l/h was reported, the structural deficiencies and abstract-only source prevented the construction of a valid fitted model. Extracted — dextromethorphan: CLint 59 l x h(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has dextromethorphan → dextrorphan (metabolism), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

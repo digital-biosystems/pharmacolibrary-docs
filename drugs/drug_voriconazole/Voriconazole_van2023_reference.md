@@ -5,11 +5,11 @@
 
 # voriconazole — `Voriconazole_van2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:09 UTC (Rejected), but the paper was screened again on 2026-10-07 13:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a structural parameter had a dimension mismatch, and all statistics were abstract-derived summaries rather than fitted values.
+> Voriconazole’s Vmax of 86.4 mg/h triggered rejection for a stated dimension mismatch, although the recorded unit and expected dimension are both mass/time.
 
-<div class="pk-model-meta" hidden drug="voriconazole" model-id="Voriconazole_van2023_reference" status="rejected" stale="true" population="patients with invasive fungal infections" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="voriconazole" model-id="Voriconazole_van2023_reference" status="rejected" stale="false" population="patients with invasive fungal infections" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van den Born DA, Märtson AG, Veringa A, Punt NC, van der Werf TS, Alffenaar JC et al. Voriconazole exposure is influenced by inflammation: A population pharmacokinetic model. International journal of antimicrobial agents 61(4):106750 (2023).
@@ -17,7 +17,7 @@ van den Born DA, Märtson AG, Veringa A, Punt NC, van der Werf TS, Alffenaar JC 
 
 ## Population and dosing
 
-**Population:** patients with invasive fungal infections · condition invasive fungal infection · age group adult · n = &gt;&lt;/&gt;54.
+**Population:** patients with invasive fungal infections · condition invasive fungal infection · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ van den Born DA, Märtson AG, Veringa A, Punt NC, van der Werf TS, Alffenaar JC 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ van den Born DA, Märtson AG, Veringa A, Punt NC, van der Werf TS, Alffenaar JC 
 
 ### Reviewer guidance
 
-**The record was rejected because a structural parameter had a dimension mismatch, and all statistics were abstract-derived summaries rather than fitted values.**
+**Voriconazole’s Vmax of 86.4 mg/h triggered rejection for a stated dimension mismatch, although the recorded unit and expected dimension are both mass/time.**
 
-The report lists summary statistics for voriconazole, such as a mean Michaelis-Menten constant of 5.7 mg/L, which lack individual variability. A dimension mismatch was identified in the model's structural parameters, causing the record to fail validation. The second reader disputed several parameter assignments, noting conflicts regarding the presence or absence of the bioavailability value of 0.83 and the clearance value of 9.16 L/h. Extracted — voriconazole: V 145 L, Km 5.7 mg/L, Vmax 86.4 mg/h, Fab 0.83, CL 9.16 L/h.
+The rejection cites Vmax, whose meaning is the maximum rate of enzymatic metabolism, and records mg/h as both the unit’s dimension and the expected dimension; the stated mismatch is therefore inconclusive from the recorded facts. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — voriconazole: V 145 L, Km 5.7 mg/L, Vmax 86.4 mg/h, Fab 0.83, CL 9.16 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has voriconazole, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

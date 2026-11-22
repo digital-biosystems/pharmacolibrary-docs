@@ -4,11 +4,11 @@
 
 # technetium (99mTc) mebrofenin — `Technetium99mtcMebrofenin_Ali2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-07 19:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Technetium 99mtc mebrofenin AUC0-180,liver (277 kcounts*min/sec) has units incompatible with the one-compartment model structure.
+> Record refused because the liver AUC unit kcounts*min/sec is dimensionless, conflicting with the expected mass-concentration-time dimension.
 
-<div class="pk-model-meta" hidden drug="technetium (99mTc) mebrofenin" model-id="Technetium99mtcMebrofenin_Ali2017_reference" status="rejected" stale="true" population="healthy subjects and NASH patients" measured-compound="technetium_99mtc_mebrofenin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="technetium (99mTc) mebrofenin" model-id="Technetium99mtcMebrofenin_Ali2017_reference" status="rejected" stale="false" population="healthy subjects and NASH patients" measured-compound="technetium_99mtc_mebrofenin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ali I, Slizgi JR, Kaullen JD, Ivanovic M, Niemi M, Stewart PW et al. Transporter-Mediated Alterations in Patients With NASH Increase Systemic and Hepatic Exposure to an OATP and MRP2 Substrate. Clinical pharmacology and therapeutics (2017).
@@ -35,7 +35,7 @@ Ali I, Slizgi JR, Kaullen JD, Ivanovic M, Niemi M, Stewart PW et al. Transporter
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Ali I, Slizgi JR, Kaullen JD, Ivanovic M, Niemi M, Stewart PW et al. Transporter
 
 ### Reviewer guidance
 
-**Technetium 99mtc mebrofenin AUC0-180,liver (277 kcounts*min/sec) has units incompatible with the one-compartment model structure.**
+**Record refused because the liver AUC unit kcounts*min/sec is dimensionless, conflicting with the expected mass-concentration-time dimension.**
 
-The record was constructed from the abstract alone, so summary statistics stood in for a fitted model. The biliary clearance of 0.035 L/h was assigned a structural parameter role, causing a dimension mismatch. A second reader disputed the identification of the AUC parameter. Extracted — technetium 99mtc mebrofenin: AUCt 277 kcounts*min/sec, CLb 0.035 L/h.
+The abstract-only source provided a liver AUC value of 277 in units of kcounts*min/sec, which has no mass dimension. This dimensionless unit conflicts with the required mass-concentration-time dimension for an area-under-the-curve parameter. Consequently, the dimensional consistency check failed, invalidating the parameter's physical meaning despite the reported value. Extracted — technetium 99mtc mebrofenin: AUCt 277 kcounts*min/sec, CLb 0.035 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[auc0-180,liver].parameter_id`: this record has Q19, the second reading Q88. That field shapes the model, so the record is marked disputed.
 

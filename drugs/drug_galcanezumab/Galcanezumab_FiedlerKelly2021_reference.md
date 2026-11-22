@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> F use library defaults, not estimates from this paper; t6_deviations.
+> Galcanezumab’s bioavailability (F) has no reported value and was defaulted, so the record was held back without an explicit estimate.
 
 <div class="pk-model-meta" hidden drug="galcanezumab" model-id="Galcanezumab_FiedlerKelly2021_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="galcanezumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Fiedler-Kelly J, Raddad E, de Hoon J, Ludwig EA, Passarell J, Kielbasa W et al. 
 
 ### Reviewer guidance
 
-**F use library defaults, not estimates from this paper; t6_deviations.**
+**Galcanezumab’s bioavailability (F) has no reported value and was defaulted, so the record was held back without an explicit estimate.**
 
-These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — galcanezumab: CL 0.0106 L/h, V 11.2 L, kabs 0.0192 h-1, tlag 0.202 hours, t1/2z 30 days.
+F was supplied from library defaults rather than estimated from this paper; those values affect the simulated profile but are not supported by the paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disputed the record, with agreement 0.143 and 0 of 1 readers agreeing, including disagreement over the molecule assignments and parameter values. Extracted — galcanezumab: CL 0.0106 L/h, V 11.2 L, kabs 0.0192 h-1, tlag 0.202 hours, t1/2z 30 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has galcanezumab, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -143,14 +143,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=galcanezumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=galcanezumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

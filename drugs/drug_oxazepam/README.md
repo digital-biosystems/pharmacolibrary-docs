@@ -36,7 +36,7 @@ Oxazepam is a benzodiazepine used to treat anxiety disorders and focal epilepsy.
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Imbert_2016_reference](drugs/drug_oxazepam/Oxazepam_Imbert2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Imbert B et al., Population Pharmacokinetics of High-Dos…, Therapeutic drug monitoring (2016) | [10.1097/FTD.0000000000000262](https://doi.org/10.1097/FTD.0000000000000262) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Dingemanse_1988_reference](drugs/drug_oxazepam/Oxazepam_Dingemanse1988_reference.md) | — | 1-compartment (no model) | 0 | Dingemanse J et al., Pharmacokinetic modeling of the anticon…, Journal of pharmacokinetics… (1988) | [10.1007/BF01062261](https://doi.org/10.1007/BF01062261) |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Dingemanse_1990_reference](drugs/drug_oxazepam/Oxazepam_Dingemanse1990_reference.md) | — | 1-compartment (no model) | 3 | Dingemanse J et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb14653.x](https://doi.org/10.1111/j.1476-5381.1990.tb14653.x) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Dingemanse_1990_reference](drugs/drug_oxazepam/Oxazepam_Dingemanse1990_reference.md) | — | 1-compartment (no model) | 3 | Dingemanse J et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb14653.x](https://doi.org/10.1111/j.1476-5381.1990.tb14653.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wretlind_1977_reference](drugs/drug_oxazepam/Oxazepam_Wretlind1977_reference.md) | — | general linear (no model) | 0 | Wretlind M et al., Disposition of three benzodiazepines af…, Acta pharmacologica et toxi… (1977) | — |
 
 ## Pharmacodynamics (PD)
@@ -49,21 +49,6 @@ Oxazepam is a benzodiazepine used to treat anxiety disorders and focal epilepsy.
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mandema_1991_EEG](drugs/drug_oxazepam/pd_Mandema_1991_EEG.md) | EEG amplitude in the 11.5 to 30 Hz frequency range ← oxazepam · direct sigmoid Emax (Hill) effect | — | Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1991) | — |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Dingemanse_1988_PTZ_threshold](drugs/drug_oxazepam/pd_Dingemanse_1988_PTZ_threshold.md) | elevation of the serum or brain threshold concentration of PTZ (anticonvulsant response) ← oxazepam · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Dingemanse J et al., Pharmacokinetic modeling of the anticon…, Journal of pharmacokinetics… (1988) | [10.1007/BF01062261](https://doi.org/10.1007/BF01062261) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Morino_1986_percent_anticonvulsant_effect_protection_against_pentylenetetrazole_induced_clonic_convulsion](drugs/drug_oxazepam/pd_Morino_1986_percent_anticonvulsant_effect_protection_against.md) | percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion) ← oxazepam (brain concentration, as active metabolite of camazepam) · direct sigmoid Emax (Hill) effect | — | Morino A et al., Receptor-mediated model relating antico…, Journal of pharmacokinetics… (1986) | [10.1007/BF01106709](https://doi.org/10.1007/BF01106709) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxazepam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `UGT1A9` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), TSPO (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -83,7 +68,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 147 matched, 102 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

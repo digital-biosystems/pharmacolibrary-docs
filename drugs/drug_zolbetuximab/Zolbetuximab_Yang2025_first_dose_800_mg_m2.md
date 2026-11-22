@@ -16,7 +16,7 @@ Yang J, Yamada A, Shitara K, Xu RH, Ilson D, Lonardi S et al. Clinical Pharmacol
 
 ## Population and dosing
 
-**Population:** adults with advanced adenocarcinoma of the stomach, esophagus, or GEJ · condition gastric/gastroesophageal junction cancer · age group adult · n = # 714.
+**Population:** adults with advanced adenocarcinoma of the stomach, esophagus, or GEJ · condition gastric/gastroesophageal junction cancer · age group adult.
 
 **Dosing:** 600, 800 mg/m2, iv, multiple, every 21 h.
 

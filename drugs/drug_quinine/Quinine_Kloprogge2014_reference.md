@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Kloprogge_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Alvan_2017_hearing_threshold_shift_2&quot;,&quot;label&quot;:&quot;Alvan_2017 \u00b7 hearing threshold shift&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Alvan_2017_hearing_threshold_shift_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Garrido_2003_CL_M10&quot;,&quot;label&quot;:&quot;Garrido_2003 \u00b7 CL(M10)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Garrido_2003_CL_M10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_parasitemia&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 parasitemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_parasitemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_E&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Alvan_2017_hearing_threshold_shift_2&quot;,&quot;label&quot;:&quot;Alvan_2017 \u00b7 hearing threshold shift&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Alvan_2017_hearing_threshold_shift_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Garrido_2003_CL_M10&quot;,&quot;label&quot;:&quot;Garrido_2003 \u00b7 CL(M10)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Garrido_2003_CL_M10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_parasitemia&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 parasitemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_parasitemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_E&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quinine — `Quinine_Kloprogge2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Quinine's absolute bioavailability (Fab) was assumed to be 1, forcing a conversion to apparent clearance and volume parameters.
-
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Kloprogge2014_reference" status="needs_review" stale="false" population="pregnant women with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Kloprogge2014_reference" status="simulated" stale="false" population="pregnant women with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Kloprogge F, Jullien V, Piola P, Dhorda M, Muwanga S, Nosten F et al. Population pharmacokinetics of quinine in pregnant women with uncomplicated Plasmodium falciparum malaria in Uganda. The Journal of antimicrobial chemotherapy 69(11):3033–3040 (2014).
@@ -33,8 +31,6 @@ Kloprogge F, Jullien V, Piola P, Dhorda M, Muwanga S, Nosten F et al. Population
 <figure class="pk-models-diagram"><img src="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference.svg" alt="Quinine_Kloprogge2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | ka | kabs | 0.817 | (1/h) |
@@ -45,7 +41,7 @@ Kloprogge F, Jullien V, Piola P, Dhorda M, Muwanga S, Nosten F et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +51,11 @@ Kloprogge F, Jullien V, Piola P, Dhorda M, Muwanga S, Nosten F et al. Population
 
 ### Reviewer guidance
 
-**Quinine's absolute bioavailability (Fab) was assumed to be 1, forcing a conversion to apparent clearance and volume parameters.**
-
-The record includes an absolute bioavailability parameter (Fab) but lacks a numerical value, so it was defaulted. Consequently, the model builder assumed F=1 and Fm=1, treating the drug as having complete absorption. This assumption required converting the fitted values into apparent parameters, such as CL/F (10.4 L/h) and V1/F (174 L), rather than absolute values. Extracted — quinine: kabs 0.817 (1/h), CL/F 10.4 (L/h), V1/F 174 (L), Q/F 10.7 (L/h), V2/F 54.3 (L).
+**Every check that could be run on this record passed.**
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -152,24 +146,25 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=quinine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 4.06 (2.40–7.92) | 0.002982 | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 3.95 (2.54–6.62) | 0.002982 | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 4.16 (2.40–7.92) | 0.002982 | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
-| T1_t_half_terminal | reference | skipped | 15.3 (10.4–30.8) | 12.93 | unresolved time unit '(h)' |
-| T1_t_half_terminal | reference | skipped | 14.6 (11.0–29.3) | 12.93 | unresolved time unit '(h)' |
-| T1_t_half_terminal | reference | skipped | 16.1 (10.4–30.8) | 12.93 | unresolved time unit '(h)' |
-| T1_tmax | reference | skipped | 3.01 (1.85–8.00) | 3.627 | unresolved time unit '(h)' |
-| T1_tmax | reference | skipped | 3.01 (2.00–8.00) | 3.627 | unresolved time unit '(h)' |
-| T1_tmax | reference | skipped | 2.75 (1.85–4.34) | 3.627 | unresolved time unit '(h)' |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=quinine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped | 4.06 (2.40–7.92) | 0.002982 |  | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3.95 (2.54–6.62) | 0.002982 |  | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 4.16 (2.40–7.92) | 0.002982 |  | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
+| T1_t_half_terminal | reference | skipped | 15.3 (10.4–30.8) | 12.93 |  | unresolved time unit '(h)' |
+| T1_t_half_terminal | reference | skipped | 14.6 (11.0–29.3) | 12.93 |  | unresolved time unit '(h)' |
+| T1_t_half_terminal | reference | skipped | 16.1 (10.4–30.8) | 12.93 |  | unresolved time unit '(h)' |
+| T1_tmax | reference | skipped | 3.01 (1.85–8.00) | 3.627 |  | unresolved time unit '(h)' |
+| T1_tmax | reference | skipped | 3.01 (2.00–8.00) | 3.627 |  | unresolved time unit '(h)' |
+| T1_tmax | reference | skipped | 2.75 (1.85–4.34) | 3.627 |  | unresolved time unit '(h)' |
 
 <details class="legend">
 <summary>Validation definitions</summary>

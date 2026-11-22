@@ -5,11 +5,11 @@
 
 # edoxaban — `Edoxaban_Yin2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:40 UTC (Rejected), but the paper was screened again on 2026-10-05 14:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is abstract-only, substituting summary statistics for fitted parameters, and incorrectly stores a 13.1% gender difference as absolute clearance.
+> The record incorrectly interprets a 13.1% female-male clearance difference as absolute clearance, conflicting with physical units.
 
-<div class="pk-model-meta" hidden drug="edoxaban" model-id="Edoxaban_Yin2014_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="edoxaban" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="edoxaban" model-id="Edoxaban_Yin2014_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="edoxaban" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yin OQ, Miller R. Population pharmacokinetics and dose-exposure proportionality of edoxaban in healthy volunteers. Clinical drug investigation 34(10):743–752 (2014).
@@ -36,7 +36,7 @@ Yin OQ, Miller R. Population pharmacokinetics and dose-exposure proportionality 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Yin OQ, Miller R. Population pharmacokinetics and dose-exposure proportionality 
 
 ### Reviewer guidance
 
-**The record is abstract-only, substituting summary statistics for fitted parameters, and incorrectly stores a 13.1% gender difference as absolute clearance.**
+**The record incorrectly interprets a 13.1% female-male clearance difference as absolute clearance, conflicting with physical units.**
 
-The 13.1% value describes a gender-based difference in clearance, not the total clearance itself, creating a structural mismatch. The relative bioavailability of 67.2% is a summary statistic from the abstract rather than a fitted model parameter. Consequently, the record lacks a complete, fitted pharmacokinetic model for edoxaban. Extracted — edoxaban: Frel 67.2 %, CL 13.1 %.
+The parameter labeled 'female subjects showing 13.1 % lower CL than male subjects' is stored with the meaning of total clearance but a value of 13.1%. Extracted — edoxaban: Frel 67.2 %, CL 13.1 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has edoxaban, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has edoxaban, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,17 +87,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[edoxaban relative bioavailability]` | 67.2 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[edoxaban relative bioavailability]` |  | 67.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[female subjects showing 13.1 % lower cl than male subjects]` | 13.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | edoxaban | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | edoxaban | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[edoxaban relative bioavailability]` | 67.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[edoxaban relative bioavailability]` |  | 67.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[female subjects showing 13.1 % lower cl than male subjects]` | 13.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | edoxaban | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | edoxaban | unknown | mismatch |
 
 </details>
 

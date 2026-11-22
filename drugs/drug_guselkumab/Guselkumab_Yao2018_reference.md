@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;guselkumab&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/&quot;},{&quot;label&quot;:&quot;Yao_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guselkumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Yao2018_reference&quot;,&quot;label&quot;:&quot;Yao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Guselkumab_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR20_ACR50_ACR70&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR20/ACR50/ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR20_ACR50_ACR70.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR20_ACR50_ACR70_2&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR20/ACR50/ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR20_ACR50_ACR70_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR20_ACR50_ACR70_3&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR20/ACR50/ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR20_ACR50_ACR70_3.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR20_ACR50_ACR70_4&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR20/ACR50/ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR20_ACR50_ACR70_4.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_IGA0_1_IGA0&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 IGA0/1/IGA0&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_IGA0_1_IGA0.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_IGA0_1_IGA0_2&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 IGA0/1/IGA0&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_IGA0_1_IGA0_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vaskeikina_2026_mRSS&quot;,&quot;label&quot;:&quot;Vaskeikina_2026 \u00b7 mRSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Vaskeikina_2026_mRSS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guselkumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Yao2018_reference&quot;,&quot;label&quot;:&quot;Yao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Chen_2022_ACR20_ACR50_ACR70&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR20/ACR50/ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR20_ACR50_ACR70.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR20_ACR50_ACR70_2&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR20/ACR50/ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR20_ACR50_ACR70_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR20_ACR50_ACR70_3&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR20/ACR50/ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR20_ACR50_ACR70_3.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR20_ACR50_ACR70_4&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR20/ACR50/ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR20_ACR50_ACR70_4.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_IGA0_1_IGA0&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 IGA0/1/IGA0&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_IGA0_1_IGA0.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_IGA0_1_IGA0_2&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 IGA0/1/IGA0&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_IGA0_1_IGA0_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vaskeikina_2026_mRSS&quot;,&quot;label&quot;:&quot;Vaskeikina_2026 \u00b7 mRSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Vaskeikina_2026_mRSS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # guselkumab — `Guselkumab_Yao2018_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Yao2018_reference" status="simulated" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="guselkumab" parameterization="apparent" topology="1C"></div>
+> Record refused because guselkumab pharmacokinetic parameters derived solely from the abstract were disputed by a second reader, with agreement at 0.167.
+
+<div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Yao2018_reference" status="needs_review" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="guselkumab" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yao Z, Hu C, Zhu Y, Xu Z, Randazzo B, Wasfi Y et al. Population Pharmacokinetic Modeling of Guselkumab, a Human IgG1λ Monoclonal Antibody Targeting IL-23, in Patients with Moderate to Severe Plaque Psoriasis. Journal of clinical pharmacology 58(5):613–627 (2018).
@@ -27,6 +29,8 @@ Yao Z, Hu C, Zhu Y, Xu Z, Randazzo B, Wasfi Y et al. Population Pharmacokinetic 
 <figure class="pk-models-diagram"><img src="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference.svg" alt="Guselkumab_Yao2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | apparent clearance | CL/F | 0.516 | L/day |
@@ -36,7 +40,7 @@ Yao Z, Hu C, Zhu Y, Xu Z, Randazzo B, Wasfi Y et al. Population Pharmacokinetic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Yao Z, Hu C, Zhu Y, Xu Z, Randazzo B, Wasfi Y et al. Population Pharmacokinetic 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Record refused because guselkumab pharmacokinetic parameters derived solely from the abstract were disputed by a second reader, with agreement at 0.167.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The model was constructed from the abstract only, causing summary statistics like 0.516 L/day clearance and 1.11 day-1 absorption to stand in for fitted estimates. A second reader disagreed on the dose compound and primary analyte, marking both as unknown instead of guselkumab. Furthermore, the second reader could not confirm the extracted values for clearance, volume, and half-life, leading to a dispute. Extracted — guselkumab: CL/F 0.516 L/day, V/F 13.5 L, kabs 1.11 day-1, t1/2z 18.1 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has guselkumab, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -135,15 +139,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=guselkumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=guselkumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

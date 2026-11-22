@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> AUC∞ (13.4) and AUClast (12.8) for 5-methoxy-N,N-dimethyltryptamine were assigned units of mass (mg) instead of mass-time/volume, causing a dimensional failure.
 
 <div class="pk-model-meta" hidden drug="Bufotenin" model-id="Bufotenin_Rucker2024_bpl_003_dose_mg_8" status="rejected" stale="false" population="healthy participants" measured-compound="5-methoxy-N,N-dimethyltryptamine" parameterization="apparent" topology="1C"></div>
 
@@ -54,7 +54,13 @@ Rucker JJ, Roberts C, Seynaeve M, Young AH, Suttle B, Yamamoto T et al. Phase 1,
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**AUC∞ (13.4) and AUClast (12.8) for 5-methoxy-N,N-dimethyltryptamine were assigned units of mass (mg) instead of mass-time/volume, causing a dimensional failure.**
+
+The record lists AUC∞ and AUClast with the unit 'mg', which is dimensionally incorrect for area under the concentration-time curve. These parameters require units of mass-time divided by volume (e.g., ng/mL · h). The specified mass unit could not be converted to SI, leading to a structural dimension mismatch that prevented model publication. Extracted — 5-methoxy-N,N-dimethyltryptamine: Cmax 21.6 ng/mL, tmax 0.17 h, AUC∞ 13.4 mg, AUClast 12.8 mg, t1/2z 0.3 h, CL/F 595 L/h, Ae 15.3 µg, fe 0.2 %, … (+1).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

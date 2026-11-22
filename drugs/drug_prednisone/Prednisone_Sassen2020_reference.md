@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;prednisone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/&quot;},{&quot;label&quot;:&quot;Sassen_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisone — `Prednisone_Sassen2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Prednisone absorption rate constant was missing from the paper, forcing the model to use library defaults instead of reported estimates.
+> The paper reports ciprofloxacin kinetics, not prednisone, and prednisone was only a concomitant medication.
 
-<div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_Sassen2020_reference" status="needs_review" stale="false" population="" measured-compound="prednisone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_Sassen2020_reference" status="rejected" stale="false" population="" measured-compound="prednisone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sassen SDT, Mathôt RAA, Pieters R, de Haas V, Kaspers GJL, van den Bos C et al. Population Pharmacokinetics and Pharmacodynamics of Ciprofloxacin Prophylaxis in Pediatric Acute Lymphoblastic Leukemia Patients. Clinical infectious diseases : an official publication of the Infectious Diseases Society of America 71(8):e281–e288 (2020).
@@ -29,7 +29,7 @@ Sassen SDT, Mathôt RAA, Pieters R, de Haas V, Kaspers GJL, van den Bos C et al.
 <figure class="pk-models-diagram"><img src="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference.svg" alt="Prednisone_Sassen2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Sassen SDT, Mathôt RAA, Pieters R, de Haas V, Kaspers GJL, van den Bos C et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Sassen SDT, Mathôt RAA, Pieters R, de Haas V, Kaspers GJL, van den Bos C et al.
 
 ### Reviewer guidance
 
-**Prednisone absorption rate constant was missing from the paper, forcing the model to use library defaults instead of reported estimates.**
+**The paper reports ciprofloxacin kinetics, not prednisone, and prednisone was only a concomitant medication.**
 
-The source paper did not report a value for the absorption rate constant, so the model used a library placeholder. Additionally, second readers failed to confirm several numeric values, such as the clearance, which this record lists as 86 but the readers recorded as null. Extracted — prednisone: CL/F 86 L/h/70 kg, V/F 695 L/70 kg.
+The study source describes pharmacokinetic parameters for ciprofloxacin, while prednisone is mentioned only as a co-medication. Consequently, the extracted clearance (86.0 L/h/70 kg) and volume of distribution (695.0 L/70 kg) values do not describe the intended drug. The second reader also disagreed on multiple extracted values, noting a dispute with 0 of 1 readers agreeing. Extracted — prednisone: CL/F 86 L/h/70 kg, V/F 695 L/70 kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 178.4, the second reading 22.3; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 178.4, the second reading 22.3; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,9 +87,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -99,7 +99,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `values[Q27]` | 86 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q312]` | 26.6 | 39.2 | mismatch |
 | `gpt-oss-120b` | `values[Q314]` |  | 26.6 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q316]` | 0.46 | 0.46 | mismatch |
 | `gpt-oss-120b` | `values[Q352]` | 695 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q61]` |  | 695 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q76]` | 695 |  | only_one_extracted |
@@ -129,15 +128,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=prednisone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | prednisone (or metabolite) | paper about another drug |  | paper subject is not prednisone: the paper is about another drug; this one is a co-medication or covariate: The study reports pharmacokinetic parameters for ciprofloxacin, not prednisone (which is only mentioned as a concomitant medication). |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=prednisone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,61 +149,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference_modelica.zip" download>Prednisone_Sassen2020_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference_fmi.zip" download>Prednisone_Sassen2020_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference_matlab.zip" download>Prednisone_Sassen2020_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference_matlab_simbio.zip" download>Prednisone_Sassen2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference_sbml.zip" download>Prednisone_Sassen2020_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_prednisone/Prednisone_Sassen2020_reference/Prednisone_Sassen2020_reference_cellml.zip" download>Prednisone_Sassen2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3584 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 2.389e-05 | m3/s |
-| input | model | `VdPerKg` | 0.009929 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Sassen SDT, Mathôt RAA, Pieters R, de Haas V, Kaspers GJL, van den Bos C et al. Population Pharmacokinetics and Pharmacodynamics of Ciprofloxacin Prophylaxis in Pediatric Acute Lymphoblastic Leukemia Patients. Clinical infectious diseases : an official publication of the Infectious Diseases Society of America 71(8):e281–e288 (2020). [doi:10.1093/cid/ciz1163](https://doi.org/10.1093/cid/ciz1163)
-
-**This record:** Pharmacolibrary, model `Prednisone_Sassen2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_prednisone/Prednisone_Sassen2020_reference>
-
-```bibtex
-@misc{pharmacolibrary_PrednisoneSassen2020reference,
-  title  = {{Pharmacolibrary model Prednisone_Sassen2020_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_prednisone/Prednisone_Sassen2020_reference},
-  note   = {Parameters from doi:10.1093/cid/ciz1163},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

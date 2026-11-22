@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;maraviroc&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/&quot;},{&quot;label&quot;:&quot;Chan_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Maraviroc_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/Maraviroc_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Maraviroc_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/Maraviroc_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Davis_2008_QT&quot;,&quot;label&quot;:&quot;Davis_2008 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/pd_Davis_2008_QT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Maraviroc_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/Maraviroc_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Maraviroc_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/Maraviroc_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Davis_2008_QT&quot;,&quot;label&quot;:&quot;Davis_2008 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/pd_Davis_2008_QT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # maraviroc — `Maraviroc_Chan2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:32 UTC (Rejected), but the paper was screened again on 2026-10-07 16:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The maraviroc model was rejected because the 24% bioavailability and 0.87 h lag time are population summary statistics, not structural parameters, from an abstract-only record.
+> Record rejected due to a dimension mismatch where the area under the concentration-time curve (26.5%) was incorrectly treated as a structural parameter with volume units.
 
-<div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Chan2008_reference" status="rejected" stale="true" population="healthy volunteers and asymptomatic HIV-infected subjects" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Chan2008_reference" status="rejected" stale="false" population="healthy volunteers and asymptomatic HIV-infected subjects" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chan PL, Weatherley B, McFadyen L. A population pharmacokinetic meta-analysis of maraviroc in healthy volunteers and asymptomatic HIV-infected subjects. British journal of clinical pharmacology 65 Suppl 1(Suppl 1):76–85 (2008).
@@ -41,7 +41,7 @@ Chan PL, Weatherley B, McFadyen L. A population pharmacokinetic meta-analysis of
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Chan PL, Weatherley B, McFadyen L. A population pharmacokinetic meta-analysis of
 
 ### Reviewer guidance
 
-**The maraviroc model was rejected because the 24% bioavailability and 0.87 h lag time are population summary statistics, not structural parameters, from an abstract-only record.**
+**Record rejected due to a dimension mismatch where the area under the concentration-time curve (26.5%) was incorrectly treated as a structural parameter with volume units.**
 
-The record lists fasted bioavailability as 24% and a drug absorption lag time of 0.87 h, which are reported summary statistics rather than model-estimated values. Because the source was abstract-only, these summary figures were incorrectly treated as structural model parameters. A second reader disagreed with the presence of the 24% bioavailability and 0.87 h lag time, indicating they do not belong in the parameter list. Extracted — maraviroc: CL 51.5 l h(-1), V 132 l, Fab 24 %, Frel 43 %, AUC 26.5 %, kabs 0.69 h−1, tlag 0.87 h.
+The record lists an area under the concentration-time curve of 26.5% as a model parameter, which conflicts with the expected mass-volume-time dimensions of structural parameters. This error occurred because the record was built from the abstract alone, causing summary statistics to substitute for a fitted model. Additionally, the second reader disagreed on multiple extracted values, including fasted bioavailability (24%) and absorption lag time (0.87 hours). Extracted — maraviroc: CL 51.5 l h(-1), V 132 l, Fab 24 %, Frel 43 %, AUC 26.5 %, kabs 0.69 h−1, tlag 0.87 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 24, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

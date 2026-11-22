@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;beta-Zearalenol&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/&quot;},{&quot;label&quot;:&quot;Qin_2026 \u00b7 zal&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected because metabolites Zearalenone and beta-Zearalenol lack identifiable formation rate parameters, leaving their formation links undefined.
 
 <div class="pk-model-meta" hidden drug="beta-Zearalenol" model-id="BetaZearalenol_Qin2026_zal" status="rejected" stale="false" population="male sheep" measured-compound="beta-Zearalenol (beta-ZOL)" parameterization="apparent" topology="general_linear"></div>
 
@@ -56,7 +56,13 @@ Qin J, Zhang Q, Ren N, Su Z, Zheng Z, Yin T et al. Toxicokinetics, Biotransforma
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected because metabolites Zearalenone and beta-Zearalenol lack identifiable formation rate parameters, leaving their formation links undefined.**
+
+Although the structure defines Zearalenone and beta-Zearalenol as metabolites formed from Zearalenone-14-glucoside and Zearalenone respectively, the linking parameters are recorded as unknown. This absence prevents the quantification of metabolic conversion between the parent compound and its metabolites, triggering a failure for unlinked metabolite checks. Consequently, the model cannot adequately simulate the metabolic pathway despite having distribution and elimination parameters for the measured compound. Extracted — beta-Zearalenol (beta-ZOL): tmax 3 h, Cmax 21.7 ng·mL−1, t1/2z 7.44 h, t1/2β 2.79 h, CLm/F 412 L·kg−1·h−1, Vm/F 1.04e+03 L·kg−1, t1/2α 2.63 h; Zearalenone (ZEN): AUC 437.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

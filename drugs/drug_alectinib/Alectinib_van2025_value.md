@@ -5,11 +5,11 @@
 
 # alectinib — `Alectinib_van2025_value`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:13 UTC (Rejected), but the paper was screened again on 2026-10-06 21:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Alectinib's tissue-plasma partition coefficient value 3.25 lacks an SI unit, causing a dimension mismatch that rejected the model.
+> Alectinib's CYP3A4 intrinsic clearance parameter uses μL/min/pmol, conflicting with the required total clearance dimensions.
 
-<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_van2025_value" status="rejected" stale="true" population="adults with ALK-positive advanced NSCLC and virtual pediatric patients" measured-compound="alectinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_van2025_value" status="rejected" stale="false" population="adults with ALK-positive advanced NSCLC and virtual pediatric patients" measured-compound="alectinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 van Donge T, Guerini E, O'Jeanson A, Parrott N, Devlin C, Stillhart C et al. Middle-Out Physiologically Based Pharmacokinetic Modeling to Support Pediatric Dosing Recommendation for Alectinib. CPT: pharmacometrics & systems pharmacology 14(6):1077–1086 (2025).
@@ -41,7 +41,7 @@ van Donge T, Guerini E, O'Jeanson A, Parrott N, Devlin C, Stillhart C et al. Mid
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ van Donge T, Guerini E, O'Jeanson A, Parrott N, Devlin C, Stillhart C et al. Mid
 
 ### Reviewer guidance
 
-**Alectinib's tissue-plasma partition coefficient value 3.25 lacks an SI unit, causing a dimension mismatch that rejected the model.**
+**Alectinib's CYP3A4 intrinsic clearance parameter uses μL/min/pmol, conflicting with the required total clearance dimensions.**
 
-The solubility ratio parameter, identified as the tissue-to-plasma partition coefficient, is recorded as 3.25 with the verbatim unit logKm:w. This unit could not be converted to SI, leaving the parameter without a dimensional value. Consequently, the model was rejected due to a dimension mismatch on this structural parameter. A second reader also flagged the missing value for this field, though the primary cause remains the unit conversion failure. Extracted — alectinib: fu 0.003, Kp 3.25 logKm:w, CL 9.98 μL/min/pmol, CLint 1.71e+03 μL/min/mg; M4: CL 1.71 μL/min/pmol.
+The record lists a CYP3A4 intrinsic clearance for alectinib as 9.98 μL/min/pmol and for M4 as 1.71 μL/min/pmol. These units represent a substrate-specific rate, whereas the model expects a total clearance parameter with dimensions of volume per time. Additionally, the solubility ratio value of 3.25 lacks a recognized unit definition for conversion. Extracted — alectinib: fu 0.003, Kp 3.25 logKm:w, CL 9.98 μL/min/pmol, CLint 1.71e+03 μL/min/mg; M4: CL 1.71 μL/min/pmol.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of solubility ratio: this record has 3.25, the second reading none. That field does not shape the model.
 

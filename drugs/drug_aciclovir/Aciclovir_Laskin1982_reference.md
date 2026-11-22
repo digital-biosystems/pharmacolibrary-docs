@@ -4,11 +4,11 @@
 
 # aciclovir — `Aciclovir_Laskin1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:49 UTC (Rejected), but the paper was screened again on 2026-10-07 22:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Aciclovir total clearance of 300 L/h causes a dimension mismatch in the one-compartment model structure.
+> Aciclovir area under the curve units are dimensionally inconsistent with mass, and infusion duration is missing.
 
-<div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_Laskin1982_reference" status="rejected" stale="true" population="adults with normal renal function" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_Laskin1982_reference" status="rejected" stale="false" population="adults with normal renal function" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Laskin OL, de Miranda P, King DH, Page DA, Longstreth JA, Rocco L et al. Effects of probenecid on the pharmacokinetics and elimination of acyclovir in humans. Antimicrobial agents and chemotherapy 21(5):804–807 (1982).
@@ -16,7 +16,7 @@ Laskin OL, de Miranda P, King DH, Page DA, Longstreth JA, Rocco L et al. Effects
 
 ## Population and dosing
 
-**Population:** adults with normal renal function · condition normal renal function · age group adult · n = This is not a numeric value in the context of the study design. The text mentions 'three volunteers'..
+**Population:** adults with normal renal function · condition normal renal function · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Laskin OL, de Miranda P, King DH, Page DA, Longstreth JA, Rocco L et al. Effects
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Laskin OL, de Miranda P, King DH, Page DA, Longstreth JA, Rocco L et al. Effects
 
 ### Reviewer guidance
 
-**Aciclovir total clearance of 300 L/h causes a dimension mismatch in the one-compartment model structure.**
+**Aciclovir area under the curve units are dimensionally inconsistent with mass, and infusion duration is missing.**
 
-The record's structural clearance parameter is dimensionally inconsistent with the one-compartment topology. Because the record was built from the abstract only, summary statistics stand in for fitted model parameters. Additionally, the second reader disagreed on the AUC value, citing 91.3 instead of the recorded 127.6. Extracted — aciclovir: CLR 248 L/h, CL 300 L/h, AUC 128 nmol.h/ml, t1/2z 2.7 h.
+The area under the curve is reported in nmol.h/ml, a dimension that conflicts with the required mass-based dimension. This inconsistency, combined with the absence of an infusion duration, prevents the construction of a valid structural model. Additionally, the second reader recorded a conflicting area under the curve value of 91.3 and an infusion duration of 1. Extracted — aciclovir: CLR 248 L/h, CL 300 L/h, AUC 128 nmol.h/ml, t1/2z 2.7 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[area under the curve].value`: this record has 127.6, the second reading 91.3; it also differs on 5 more fields. That field does not shape the model.
 

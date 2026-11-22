@@ -16,7 +16,7 @@ Kinsale TS, Cottrell ML, Li L, Brand R, Gatto G, Luecke E et al. Pharmacokinetic
 
 ## Population and dosing
 
-**Population:** adult Wistar rats · condition healthy · age group adult · n = &gt;.
+**Population:** adult Wistar rats · condition healthy · age group adult.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 

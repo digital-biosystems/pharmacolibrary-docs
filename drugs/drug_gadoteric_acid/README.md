@@ -27,7 +27,7 @@ Gadoteric acid is a paramagnetic magnetic resonance imaging contrast agent used 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Mühler_2011_reference](drugs/drug_gadoteric_acid/GadotericAcid_Mhler2011_reference.md) | — | 1-compartment (no model) | 2 | Mühler MR et al., Maternofetal pharmacokinetics of a gado…, Radiology (2011) | [10.1148/radiol.10100652](https://doi.org/10.1148/radiol.10100652) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Mühler_2011_reference](drugs/drug_gadoteric_acid/GadotericAcid_Mhler2011_reference.md) | — | 1-compartment (no model) | 2 | Mühler MR et al., Maternofetal pharmacokinetics of a gado…, Radiology (2011) | [10.1148/radiol.10100652](https://doi.org/10.1148/radiol.10100652) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Scala_2018_reference](drugs/drug_gadoteric_acid/GadotericAcid_Scala2018_reference.md) | — | 1-compartment (no model) | 7 | Scala M et al., A Pharmacokinetics, Efficacy, and Safet…, Investigative radiology (2018) | [10.1097/RLI.0000000000000412](https://doi.org/10.1097/RLI.0000000000000412) |
 
 ## Pharmacodynamics (PD)
@@ -37,14 +37,6 @@ Gadoteric acid is a paramagnetic magnetic resonance imaging contrast agent used 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Beydemir_2021_PON1](drugs/drug_gadoteric_acid/pd_Beydemir_2021_PON1.md) | PON1 activity ← gadoteric acid · inhibition effect | — | Beydemir Ş et al., Gadolinium-based contrast agents: in vi…, Drug and chemical toxicology (2021) | [10.1080/01480545.2019.1620266](https://doi.org/10.1080/01480545.2019.1620266) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Bilgin_2025_cell_viability](drugs/drug_gadoteric_acid/pd_Bilgin_2025_cell_viability.md) | cell viability ← Gadoteric acid · inhibition effect | — | Bilgin B et al., Cytogenotoxic Activity of Gadoteric Aci…, Journal of applied toxicolo… (2025) | [10.1002/jat.4884](https://doi.org/10.1002/jat.4884) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Kenger_2026_cell_viability](drugs/drug_gadoteric_acid/pd_Kenger_2026_cell_viability.md) | cell viability ← gadoteric acid · inhibition effect | — | Kenger İH, Gadoteric Acid Induces Dose-Dependent D…, Basic & clinical pharmacolo… (2026) | [10.1111/bcpt.70150](https://doi.org/10.1111/bcpt.70150) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gadoteric_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,7 +56,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 44 matched, 43 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

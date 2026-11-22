@@ -57,7 +57,7 @@ Dibromochloromethane (and bromoform also known as tribromomethane) are colorless
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-17 22:07 | 10:42 | 0/1/0 | 0/2/0 | 0/0/0 | 314,356/12,134 | einfracz / qwen3.8-flash-next | 10 | 2/7 | 10/0 | 0 |
+| 2026-11-17 22:07 | 10:42 | 0/1/0 | 0/13/0 | 0/0/0 | 314,356/12,134 | einfracz / qwen3.8-flash-next | 10 | 2/7 | 10/0 | 0 |
 
 ## Coverage
 

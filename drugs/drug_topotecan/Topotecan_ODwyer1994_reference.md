@@ -5,11 +5,11 @@
 
 # topotecan — `Topotecan_ODwyer1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:12 UTC (Rejected), but the paper was screened again on 2026-10-07 14:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_ODwyer1994_reference" status="needs_review" stale="true" population="patients in a phase I trial with cancer" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_ODwyer1994_reference" status="needs_review" stale="false" population="patients in a phase I trial with cancer" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 O'Dwyer PJ, LaCreta FP, Haas NB, Halbherr T, Frucht H, Goosenberg E et al. Clinical, pharmacokinetic and biological studies of topotecan. Cancer chemotherapy and pharmacology 34 Suppl:S46–S52 (1994).
@@ -35,7 +35,7 @@ O'Dwyer PJ, LaCreta FP, Haas NB, Halbherr T, Frucht H, Goosenberg E et al. Clini
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ O'Dwyer PJ, LaCreta FP, Haas NB, Halbherr T, Frucht H, Goosenberg E et al. Clini
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — topotecan: t1/2z 3.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has topotecan, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

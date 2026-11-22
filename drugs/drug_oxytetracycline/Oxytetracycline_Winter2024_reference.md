@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
-> The model was rejected because the third compartment lacks a defined connection to the dose, rendering it unreachable.
+> The record was rejected because the third volume of distribution is orphaned, and the absolute bioavailability value of 1.422 is physically impossible.
 
 <div class="pk-model-meta" hidden drug="oxytetracycline" model-id="Oxytetracycline_Winter2024_reference" status="rejected" stale="false" population="calves and adult cattle" measured-compound="oxytetracycline" parameterization="mechanistic" topology="2C"></div>
 
@@ -16,7 +16,7 @@ Winter EA, Pelligand L, Toutain PL, Lees P, Milanova A, Gehring R. Determination
 
 ## Population and dosing
 
-**Population:** calves and adult cattle · condition healthy · age group mixed · n = &gt;=69.
+**Population:** calves and adult cattle · condition healthy · age group mixed.
 
 **Dosing:** 1400, 2800 mg, im, iv, multiple, every 48 h.
 
@@ -46,7 +46,7 @@ Winter EA, Pelligand L, Toutain PL, Lees P, Milanova A, Gehring R. Determination
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.136). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.136). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,11 @@ Winter EA, Pelligand L, Toutain PL, Lees P, Milanova A, Gehring R. Determination
 
 ### Reviewer guidance
 
-**The model was rejected because the third compartment lacks a defined connection to the dose, rendering it unreachable.**
+**The record was rejected because the third volume of distribution is orphaned, and the absolute bioavailability value of 1.422 is physically impossible.**
 
-The record defines a volume of distribution for a second peripheral compartment (2458 L) but the review found an orphan compartment with no path from the dose. This structural deficiency means the third compartment cannot be populated by drug, making the model's 3-compartment description inconsistent with its topology. Second reader disagreements on specific parameter values and classification do not resolve the fundamental structural error. Extracted — oxytetracycline: V1 143 L, V2 973 L, V3 2.46e+03 L, CL 68.3 L/h, kabs 0.235 1/h, Fab 1.42, tlag 0.0405 h.
+The model structure is two compartments, yet a third volume of distribution (2458 L) is listed, creating an unlinked compartment. Additionally, the absolute bioavailability is recorded as 1.422, exceeding the maximum possible fraction of 1.0. A second reader disagreed on the clearance value and several other parameter extractions. Extracted — oxytetracycline: V1 143 L, V2 973 L, V3 2.46e+03 L, CL 68.3 L/h, kabs 0.235 1/h, Fab 1.42, tlag 0.0405 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -158,31 +158,31 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.136 (3/22 fields) | 19 |
+| `gpt-oss-120b` | not confirmed | 0.136 (3/22 fields) | 19 |
 
 <details><summary>19 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss:120b` | `parameters[dadult_calfcla]` | 0.570 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dadult_calfv3f]` |  | 0.358 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ntlag]` | 0.040549 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q83_category]` |  | 14.96 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_tlag_category]` | 15.74 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tvcl].rse_percent` |  | 68.35 | mismatch |
-| `gpt-oss:120b` | `parameters[tvcl].value` | 68.35 | 62.67 | mismatch |
-| `gpt-oss:120b` | `parameters[tvcld2]` |  | 485 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tvf1]` | 1.422 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tvfrapid]` |  | 0.757 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tvka1].rse_percent` |  | 0.235 | mismatch |
-| `gpt-oss:120b` | `parameters[tvka1].value` | 0.235 | 0.214 | mismatch |
-| `gpt-oss:120b` | `parameters[tvv1].rse_percent` |  | 143 | mismatch |
-| `gpt-oss:120b` | `parameters[tvv1].value` | 143 | 126 | mismatch |
-| `gpt-oss:120b` | `parameters[tvv2].rse_percent` |  | 973 | mismatch |
-| `gpt-oss:120b` | `parameters[tvv2].value` | 973 | 914 | mismatch |
-| `gpt-oss:120b` | `parameters[tvv3].rse_percent` |  | 2458 | mismatch |
-| `gpt-oss:120b` | `parameters[tvv3].value` | 2458 | 2564 | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[dadult_calfcla]` | 0.570 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dadult_calfv3f]` |  | 0.358 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ntlag]` | 0.040549 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q83_category]` |  | 14.96 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_tlag_category]` | 15.74 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcl].rse_percent` |  | 68.35 | mismatch |
+| `gpt-oss-120b` | `parameters[tvcl].value` | 68.35 | 62.67 | mismatch |
+| `gpt-oss-120b` | `parameters[tvcld2]` |  | 485 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvf1]` | 1.422 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvfrapid]` |  | 0.757 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvka1].rse_percent` |  | 0.235 | mismatch |
+| `gpt-oss-120b` | `parameters[tvka1].value` | 0.235 | 0.214 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv1].rse_percent` |  | 143 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv1].value` | 143 | 126 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv2].rse_percent` |  | 973 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv2].value` | 973 | 914 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv3].rse_percent` |  | 2458 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv3].value` | 2458 | 2564 | mismatch |
 
 </details>
 

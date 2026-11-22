@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Golimumab apparent clearance of 1.38 L/d was judged biologically implausible, and the absorption lag time was not explicitly estimated in the model.
+> The cross-check on golimumab’s apparent oral parameters was disputed, as the second reader rejected the extracted values and structure assumptions.
 
 <div class="pk-model-meta" hidden drug="golimumab" model-id="Golimumab_RodrguezFernndez2022_reference" status="needs_review" stale="false" population="adults with psoriasis" measured-compound="golimumab" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Rodríguez-Fernández K, Mangas-Sanjuán V, Merino-Sanjuán M, Martorell-Calatay
 
 ### Reviewer guidance
 
-**Golimumab apparent clearance of 1.38 L/d was judged biologically implausible, and the absorption lag time was not explicitly estimated in the model.**
+**The cross-check on golimumab’s apparent oral parameters was disputed, as the second reader rejected the extracted values and structure assumptions.**
 
-The record lists an apparent clearance of 1.38 L/d, which was adjudicated as not acceptable, while the absorption lag time lacked an explicit estimate and relied on standard conventions. A second reader also disagreed on several parameter values, including those for the volume of distribution and body weight, though these specific disagreements were not part of the primary refusal. Extracted — golimumab: CL/F 1.38 L/d, V/F 24.9 L, kabs 0.908 day−1.
+The record lists apparent clearance (1.38 L/d), volume (24.9 L), and absorption rate (0.908 day⁻¹) with bioavailability defaulted to 1. The second reader disagreed with specific extracted values and the absence of an absorption lag time. Consequently, the automatic agreement check failed, leaving the parameter set unvalidated. Extracted — golimumab: CL/F 1.38 L/d, V/F 24.9 L, kabs 0.908 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.19, the second reading 90; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -123,15 +123,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=golimumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=golimumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.556, 0 of 1 reader(s) agree | 0.556 | cross-check disputed by a second reader: verdict disputed, agreement 0.556, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

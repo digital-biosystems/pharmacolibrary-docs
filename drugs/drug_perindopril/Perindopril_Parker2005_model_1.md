@@ -4,11 +4,11 @@
 
 # perindopril — `Perindopril_Parker2005_model_1`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:43 UTC (Rejected), but the paper was screened again on 2026-10-07 06:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Perindoprilat's maximum binding capacity is dimensionally incompatible with the concentration-based compartment structure and other clearance parameters.
+> Record for perindoprilat rejected due to dimension mismatch: intercompartmental clearance parameter Q has unit h⁻¹, incompatible with volume flow dimensions.
 
-<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_model_1" status="rejected" stale="true" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_model_1" status="rejected" stale="false" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprilat in normal volunteers and patients: influence of age and disease state. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 26(1):104–113 (2005).
@@ -41,7 +41,7 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 ### Reviewer guidance
 
-**Perindoprilat's maximum binding capacity is dimensionally incompatible with the concentration-based compartment structure and other clearance parameters.**
+**Record for perindoprilat rejected due to dimension mismatch: intercompartmental clearance parameter Q has unit h⁻¹, incompatible with volume flow dimensions.**
 
-The maximum binding capacity is listed as 1.5 g/L, which is a mass density rather than a concentration, conflicting with the pharmacokinetic model's structure. This dimensional mismatch renders the binding parameter structurally invalid. Furthermore, a second reader identified substantial discrepancies in the apparent clearance and volume of distribution estimates, disagreeing with the recorded values of 7.0 L/h and 6.4 L. Extracted — perindoprilat: Bmax 1.5 g L -1, V 6.4 L, CLm/F 7 L h -1, Q 1.3 h -1.
+Parameter Q is defined as apparent intercompartmental clearance, which requires units of volume per time, but the record assigns it a value of 1.3 with unit h⁻¹ (first-order rate constant). This dimensional conflict caused the model to fail structural validation and the record was refused. A second reader independently identified missing pharmacokinetic values for clearance and volume of distribution, further supporting the record's incompleteness. Extracted — perindoprilat: Bmax 1.5 g L -1, V 6.4 L, CLm/F 7 L h -1, Q 1.3 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

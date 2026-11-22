@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Wang_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_Wang2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-07 14:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Flurbiprofen's apparent clearance values of 1.28 and 1.32 L/h were recorded as a metabolite parameter without identifying a metabolite.
+> Two duplicate flurbiprofen parameter sets with mismatched values, and the central volume of distribution is incorrectly assigned a clearance unit.
 
-<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="true" population="general anaesthesia patients undergoing surgery" measured-compound="flurbiprofen" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="false" population="general anaesthesia patients undergoing surgery" measured-compound="flurbiprofen" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Wang CL, Lin WW, Gong SJ, Huang PF. [Population pharmacokinetic modeling of flurbiprofen]. Yao xue xue bao = Acta pharmaceutica Sinica 45(11):1427–1432 (2010).
@@ -43,7 +43,7 @@ Wang CL, Lin WW, Gong SJ, Huang PF. [Population pharmacokinetic modeling of flur
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Wang CL, Lin WW, Gong SJ, Huang PF. [Population pharmacokinetic modeling of flur
 
 ### Reviewer guidance
 
-**Flurbiprofen's apparent clearance values of 1.28 and 1.32 L/h were recorded as a metabolite parameter without identifying a metabolite.**
+**Two duplicate flurbiprofen parameter sets with mismatched values, and the central volume of distribution is incorrectly assigned a clearance unit.**
 
-The record lists apparent clearance (CLm/F) with values 1.28 L/h and 1.32 L/h, explicitly defined as a metabolite's clearance. However, the structure includes only the parent compound, flurbiprofen, and no metabolite compartment. This structural mismatch, compounded by abstract-only sourcing, prevented valid model verification. Extracted — flurbiprofen: CLm/F 1.28 L x h(-1), V1 5.03 L, Q 8.5 L x h(-1), V2 4.39 L, CLm/F 1.32 L x h(-1), V1 5.23 L, Q 8.45 L x h(-1), V2 4.37 L.
+The abstract-only source produced two distinct sets of estimates: apparent clearance 1.28 and 1.32 L/h, central volume 5.03 and 5.23 L. The intercompartmental clearance (8.5 and 8.45 L/h) is valid, but the central volume (5.03 and 5.23 L) is mislabeled with the clearance dimension. Because the record was derived from summary statistics rather than a fitted model, the duplicate entries could not be resolved or removed. Extracted — flurbiprofen: CLm/F 1.28 L x h(-1), V1 5.03 L, Q 8.5 L x h(-1), V2 4.39 L, CLm/F 1.32 L x h(-1), V1 5.23 L, Q 8.45 L x h(-1), V2 4.37 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 1.32; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

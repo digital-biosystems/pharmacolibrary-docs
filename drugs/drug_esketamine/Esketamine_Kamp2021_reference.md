@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The oral clearance of esketamine (0.037 L/min) is outside the physiological window, suggesting a unit or scale extraction error.
+> Esketamine CL/F of 0.037 L min−1 and V/F of 0.1217 L were rejected for implausible clearance/volume magnitudes suggesting a unit/scale extraction error.
 
 <div class="pk-model-meta" hidden drug="esketamine" model-id="Esketamine_Kamp2021_reference" status="rejected" stale="false" population="" measured-compound="esketamine" parameterization="apparent" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Kamp J, van Velzen M, Aarts L, Niesters M, Dahan A, Olofsen E. Stereoselective k
 
 ### Reviewer guidance
 
-**The oral clearance of esketamine (0.037 L/min) is outside the physiological window, suggesting a unit or scale extraction error.**
+**Esketamine CL/F of 0.037 L min−1 and V/F of 0.1217 L were rejected for implausible clearance/volume magnitudes suggesting a unit/scale extraction error.**
 
-The extracted oral clearance value of 0.037 L/min is flagged as an implausible magnitude, indicating a likely unit or scale extraction error. The second reader disagrees with the first on multiple numerical values, including the oral clearance and the volume of distribution, which this record lists as 0.1217 L. The first reader also misidentified the model parameterization as apparent rather than mechanistic. Extracted — esketamine: CL/F 0.037 L min−1, V/F 0.122 L.
+The record reports esketamine oral-bioavailability-adjusted clearance (CL/F) as 0.037 L min−1 and adjusted volume (V/F) as 0.1217 L. The rejection finding says the clearance/volume magnitude is outside the physiological window and attributes this to a unit/scale extraction error; the source is a secondary review. Extracted — esketamine: CL/F 0.037 L min−1, V/F 0.122 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 0.037; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

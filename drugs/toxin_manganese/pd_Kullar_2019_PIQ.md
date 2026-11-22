@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Manganese concentrations in tap water (measured in μg/L) act on Performance IQ (measured in points) via a linear inhibition model that estimates benchmark concentrations for 1%, 2%, and 5% reductions in IQ scores. The paper provides no mechanistic rate or potency parameters such as IC50, EC50, kout, or gamma, focusing instead on probabilistic risk assessment via benchmark dose modeling.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kullar_2019`
 - **model family:** `linear`
 - **driver:** `cited_pk`

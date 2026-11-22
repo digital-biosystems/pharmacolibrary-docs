@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02C&quot;,&quot;href&quot;:&quot;atc/P02C.md&quot;},{&quot;label&quot;:&quot;levamisole&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/&quot;},{&quot;label&quot;:&quot;Pereda_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamisole_KreeftmeijerVegter2015_reference&quot;,&quot;label&quot;:&quot;Kreeftmeijer-Vegter_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/Levamisole_KreeftmeijerVegter2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamisole_KreeftmeijerVegter2015_reference&quot;,&quot;label&quot;:&quot;Kreeftmeijer-Vegter_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/Levamisole_KreeftmeijerVegter2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levamisole — `Levamisole_Pereda2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 14:28 UTC (Rejected), but the paper was screened again on 2026-10-07 10:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent intercompartmental clearance Q for levamisole in rabbits is recorded as 0.05 without units, causing a dimension mismatch that rejected the model.
+> Levamisole parameter Q was rejected because the dose value 16 has unit mg kg⁻¹, which conflicts with the required time dimension.
 
-<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Pereda2002_reference" status="rejected" stale="true" population="rabbits" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Pereda2002_reference" status="rejected" stale="false" population="rabbits" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pereda P, García JJ, Sierra M, Fernández N, Sahagun AM, Diez MJ. Intra-arterial pharmacokinetics and pulmonary first-pass of levamisole in rabbits. Pharmacological research 45(4):285–289 (2002).
@@ -41,7 +41,7 @@ Pereda P, García JJ, Sierra M, Fernández N, Sahagun AM, Diez MJ. Intra-arteria
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Pereda P, García JJ, Sierra M, Fernández N, Sahagun AM, Diez MJ. Intra-arteria
 
 ### Reviewer guidance
 
-**The apparent intercompartmental clearance Q for levamisole in rabbits is recorded as 0.05 without units, causing a dimension mismatch that rejected the model.**
+**Levamisole parameter Q was rejected because the dose value 16 has unit mg kg⁻¹, which conflicts with the required time dimension.**
 
-The record lists the intercompartmental clearance Q with a value of 0.05 but omits any unit, creating a dimensional inconsistency. Additionally, the record was built from the abstract alone, meaning the provided summary statistics stand in for a fitted model. A second reader disagreed with the extracted values for total clearance, dose duration, absorption rate constant, and the intercompartmental clearance, noting they could not be confirmed. Extracted — levamisole: Q 0.05, AUC 250 mg*h/L, D1 16 mg kg (-1), CL 93 L h À1, kabs 0.8 h À1.
+The record lists Q as intercompartmental clearance but assigns it the value 0.05 without a time-based unit. The dose parameter is recorded as 16 mg kg⁻¹, a mass dimension that is incompatible with the time dimension expected for structural clearance parameters. This unit conflict caused the dimension check to fail, while the second reader was unable to confirm the validity of the extracted values. Extracted — levamisole: Q 0.05, AUC 250 mg*h/L, D1 16 mg kg (-1), CL 93 L h À1, kabs 0.8 h À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 93.0, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

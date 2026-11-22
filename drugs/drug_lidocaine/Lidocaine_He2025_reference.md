@@ -16,7 +16,7 @@ He C, Qi X, Liu Y, Jin Y, Zhang M, Zhang Y et al. Optimizing Lidocaine Dosing in
 
 ## Population and dosing
 
-**Population:** partial hepatectomy patients · condition hepatectomy · age group adult · n = &gt;=35.
+**Population:** partial hepatectomy patients · condition hepatectomy · age group adult.
 
 **Dosing:** 57.97, 86.07 mg, iv, multiple.
 
@@ -36,7 +36,7 @@ He C, Qi X, Liu Y, Jin Y, Zhang M, Zhang Y et al. Optimizing Lidocaine Dosing in
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ He C, Qi X, Liu Y, Jin Y, Zhang M, Zhang Y et al. Optimizing Lidocaine Dosing in
 
 Although the record defines metabolic links from lidocaine to MEGX and from MEGX to GX, no parameters are provided to quantify these rates. This results in a topology where the metabolite compartments are unreachable from the central dose compartment, causing a failure in the structural validation check. Extracted — lidocaine: CL 26.1 L/h.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 
 _All readers agree on the compared fields of this record._
 

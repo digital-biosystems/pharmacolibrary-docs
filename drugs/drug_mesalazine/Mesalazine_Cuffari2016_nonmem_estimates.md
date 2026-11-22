@@ -15,7 +15,7 @@ Cuffari C, Pierce D, Korczowski B, Fyderek K, Van Heusen H, Hossack S et al. Ran
 
 ## Population and dosing
 
-**Population:** children and adolescents with ulcerative colitis · condition ulcerative colitis · age group mixed · n = fifty-two.
+**Population:** children and adolescents with ulcerative colitis · condition ulcerative colitis · age group mixed.
 
 **Dosing:** 2100, 4200, 7000 mg, oral, multiple, every 24 h.
 
@@ -66,9 +66,9 @@ Cuffari C, Pierce D, Korczowski B, Fyderek K, Van Heusen H, Hossack S et al. Ran
 
 ### Reviewer guidance
 
-**The mesalazine record was held because the simulated model structure did not include the metabolite Ac-5-ASA, and weight covariates were not exercised.**
+**The record was refused because the model was not simulated, leaving mesalazine clearance and other parameters untested.**
 
-The parent-metabolite structure required a three-compartment model, but the simulation used a one-compartment structure, excluding the Ac-5-ASA compartment. The model builder assumed bioavailability of one and used an apparent parameterization without molar correction. Although weight-based covariates were defined for clearance and volume, only the reference individual was simulated. Extracted — mesalazine: CLR 1.01 L/h, CLm/F 75.9 L/h, V1/F 70.1 L, kabs 0.0207 h−1, tlag 4.31 h, Fab 0.413; Ac-5-ASA: CL/F 2.27 L/h, V1/F 5.31 L.
+The record indicates the model has not been simulated, so the defined covariate effects were never exercised. Additionally, a second reader disagreed with the record's null values for parameters like CLR/F, noting they should be 1.01 L/h. Extracted — mesalazine: CLR 1.01 L/h, CLm/F 75.9 L/h, V1/F 70.1 L, kabs 0.0207 h−1, tlag 4.31 h, Fab 0.413; Ac-5-ASA: CL/F 2.27 L/h, V1/F 5.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mesalazine, the second reading mesalamine; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -241,21 +241,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_shared_parameters |  | pass | 5 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| T1_tmax | reference | skipped | 6 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 7.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_shared_parameters |  | pass | 5 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| T1_tmax | reference | skipped | 6 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 7.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 2 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

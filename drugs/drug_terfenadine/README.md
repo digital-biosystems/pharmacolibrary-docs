@@ -26,7 +26,7 @@ Terfenadine is a non-sedating antihistamine formerly used to treat allergic cond
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Lalonde_1996_reference](drugs/drug_terfenadine/Terfenadine_Lalonde1996_reference.md) | — | 2-compartment (no model) | 8 | Lalonde RL et al., Population pharmacokinetics of terfenad…, Pharmaceutical research (1996) | [10.1023/a:1016036624935](https://doi.org/10.1023/a:1016036624935) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Lalonde_1996_reference](drugs/drug_terfenadine/Terfenadine_Lalonde1996_reference.md) | — | 2-compartment (no model) | 8 | Lalonde RL et al., Population pharmacokinetics of terfenad…, Pharmaceutical research (1996) | [10.1023/a:1016036624935](https://doi.org/10.1023/a:1016036624935) |
 
 ## Pharmacodynamics (PD)
 
@@ -39,27 +39,6 @@ Terfenadine is a non-sedating antihistamine formerly used to treat allergic cond
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Nolan_2006_RT](drugs/drug_terfenadine/pd_Nolan_2006_RT.md) | RT interval change ← terfenadine · direct sigmoid Emax (Hill) effect | — | Nolan ER et al., A novel predictive pharmacokinetic/phar…, Journal of pharmacological… (2006) | [10.1016/j.vascn.2005.02.003](https://doi.org/10.1016/j.vascn.2005.02.003) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Ohtani_1997_QT](drugs/drug_terfenadine/pd_Ohtani_1997_QT.md) | QT interval ← terfenadine · direct Emax (saturable) effect | — | Ohtani H et al., A comparative pharmacokinetic-pharmacod…, The Journal of pharmacy and… (1997) | [10.1111/j.2042-7158.1997.tb06824.x](https://doi.org/10.1111/j.2042-7158.1997.tb06824.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Webster_2001_MAPD](drugs/drug_terfenadine/pd_Webster_2001_MAPD.md) | monophasic action potential duration ← terfenadine · direct Emax (saturable) effect | — | Webster R et al., Pharmacokinetic/pharmacodynamic assessm…, Xenobiotica; the fate of fo… (2001) | [10.1080/00498250110054632](https://doi.org/10.1080/00498250110054632) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=terfenadine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder/regulator, `ORM1` binder/regulator | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | heart | `CYP2J2` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP2J2` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor, `ABCB11` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CHRM1 (binder), CHRM2 (binder), CHRM3 (target), CHRM4 (binder), CHRM5 (binder), HRH1 (target), KCNH2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 370 matched, 115 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

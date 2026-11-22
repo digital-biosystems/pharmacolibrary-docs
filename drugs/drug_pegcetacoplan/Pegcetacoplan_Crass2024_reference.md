@@ -5,11 +5,11 @@
 
 # pegcetacoplan — `Pegcetacoplan_Crass2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 00:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution parameter for pegcetacoplan was rejected because its value of 4.04 was recorded in days instead of liters.
+> Pegcetacoplan central volume of distribution (4.04) was recorded in days, a time unit incompatible with volume dimensions, causing rejection.
 
-<div class="pk-model-meta" hidden drug="pegcetacoplan" model-id="Pegcetacoplan_Crass2024_reference" status="rejected" stale="true" population="patients with paroxysmal nocturnal hemoglobinuria and healthy subjects" measured-compound="pegcetacoplan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pegcetacoplan" model-id="Pegcetacoplan_Crass2024_reference" status="rejected" stale="false" population="patients with paroxysmal nocturnal hemoglobinuria and healthy subjects" measured-compound="pegcetacoplan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Crass RL, Smith B, Adriaens S, Chapel S, Langdon G. Population Pharmacokinetic and Pharmacokinetic/Pharmacodynamic Analyses of Pegcetacoplan in Patients with Paroxysmal Nocturnal Hemoglobinuria. Drugs in R&D 24(4):563–573 (2024).
@@ -38,7 +38,7 @@ Crass RL, Smith B, Adriaens S, Chapel S, Langdon G. Population Pharmacokinetic a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Crass RL, Smith B, Adriaens S, Chapel S, Langdon G. Population Pharmacokinetic a
 
 ### Reviewer guidance
 
-**The volume of distribution parameter for pegcetacoplan was rejected because its value of 4.04 was recorded in days instead of liters.**
+**Pegcetacoplan central volume of distribution (4.04) was recorded in days, a time unit incompatible with volume dimensions, causing rejection.**
 
-The record lists the central volume of distribution as 4.04 with the unit days, while the label identifies it as volume in liters. This unit conflict prevented the parameter from being converted to standard SI units for review. Consequently, the structural parameter failed its dimensional consistency check. Extracted — pegcetacoplan: CL 0.286 L/day, V 4.04 days.
+The parameter 'Central volume of distribution' has a value of 4.04 but is labeled with the unit 'days'. In pharmacokinetic modeling, volume of distribution must be expressed in units of volume (e.g., liters), not time. The record contains a dimension mismatch where a time unit was applied to a structural volume parameter. Extracted — pegcetacoplan: CL 0.286 L/day, V 4.04 days.
 
 Independently confirmed by `gpt-oss-120b`.
 

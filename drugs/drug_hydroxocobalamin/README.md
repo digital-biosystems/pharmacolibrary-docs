@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03B&quot;,&quot;href&quot;:&quot;atc/B03B.md&quot;},{&quot;label&quot;:&quot;hydroxocobalamin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_reference&quot;,&quot;label&quot;:&quot;Houeto_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_reference&quot;,&quot;label&quot;:&quot;Houeto_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # hydroxocobalamin
 
@@ -25,13 +25,13 @@ Hydroxocobalamin is a vitamin B12 analogue used to treat anemia, multiple sclero
 
 ## Start here
 
-> **de_1994_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> conscious dogs, n = &gt;=6. [Run it in the simulator](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md?tab=Simulation) · [record](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md)
+> **de_1994_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> conscious dogs. [Run it in the simulator](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md?tab=Simulation) · [record](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Houeto_1996 · CL</text><circle cx="362.0" cy="30.0" r="4" fill="#ef6c00"><title>Houeto_1996 · CL: 0.31 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">de_1994 · CL</text><circle cx="457.2" cy="46.0" r="4" fill="#78909c"><title>de_1994 · CL: 0.58 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">de_1994 · V ·/kg</text><circle cx="377.4" cy="30.0" r="4" fill="#78909c"><title>de_1994 · V ·/kg: 34.3 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Houeto_1996 · V/F ·/kg</text><circle cx="364.4" cy="46.0" r="4" fill="#ef6c00"><title>Houeto_1996 · V/F ·/kg: 31.5 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Houeto_1996 · CL</text><circle cx="362.0" cy="30.0" r="4" fill="#ef6c00"><title>Houeto_1996 · CL: 0.31 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">de_1994 · CL</text><circle cx="457.2" cy="46.0" r="4" fill="#ef6c00"><title>de_1994 · CL: 0.58 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">de_1994 · V ·/kg</text><circle cx="377.4" cy="30.0" r="4" fill="#ef6c00"><title>de_1994 · V ·/kg: 34.3 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Houeto_1996 · V/F ·/kg</text><circle cx="364.4" cy="46.0" r="4" fill="#ef6c00"><title>Houeto_1996 · V/F ·/kg: 31.5 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -39,23 +39,8 @@ Hydroxocobalamin is a vitamin B12 analogue used to treat anemia, multiple sclero
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [de_1994_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | de La Coussaye JE et al., Pharmacokinetics of hydroxocobalamin in…, Journal of neurosurgical an… (1994) | [10.1097/00008506-199404000-00006](https://doi.org/10.1097/00008506-199404000-00006) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Houeto_1996_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicology. Clin… (1996) | [10.3109/15563659609013809](https://doi.org/10.3109/15563659609013809) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hydroxocobalamin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: AMN (other), CUBN (other), MMAA (other/unknown), MMACHC (other/unknown), MMUT (cofactor), MTR (cofactor), TCN1 (other), TCN2 (substrate).</sub>
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>blocking: cross_check_disputed</sub> | [de_1994_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | de La Coussaye JE et al., Pharmacokinetics of hydroxocobalamin in…, Journal of neurosurgical an… (1994) | [10.1097/00008506-199404000-00006](https://doi.org/10.1097/00008506-199404000-00006) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -75,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 41 matched, 35 returned
 - **screened:** 11  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;dacomitinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_estimate_rse&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_parameter_estimate&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_parameter_estimate.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # dacomitinib
 
@@ -23,12 +22,6 @@ Dacomitinib is a protein kinase inhibitor used to treat non-small-cell lung carc
 |---|---|---|---|---|---|---|
 | dacomitinib | parent | 469.939 | C24H25ClFN5O2 | DrugBank | [11511120](https://pubchem.ncbi.nlm.nih.gov/compound/11511120) | Liu_2024, Ruiz-Garcia_2020 |
 
-## Start here
-
-> **Ruiz-Garcia_2020_estimate_rse** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> healthy volunteers. [Run it in the simulator](drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md?tab=Simulation) · [record](drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## Parameters across studies
 
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ruiz-Garcia_2020 · CL</text><circle cx="352.9" cy="30.0" r="4" fill="#ef6c00"><title>Ruiz-Garcia_2020 · CL: 29.2 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ruiz-Garcia_2020 · CL</text><circle cx="356.4" cy="46.0" r="4" fill="#ef6c00"><title>Ruiz-Garcia_2020 · CL: 29.89 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ruiz-Garcia_2020 · V</text><circle cx="231.0" cy="30.0" r="4" fill="#ef6c00"><title>Ruiz-Garcia_2020 · V: 131 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ruiz-Garcia_2020 · V</text><circle cx="504.1" cy="46.0" r="4" fill="#ef6c00"><title>Ruiz-Garcia_2020 · V: 789.7 L</title></circle></svg></div>
@@ -39,32 +32,11 @@ Dacomitinib is a protein kinase inhibitor used to treat non-small-cell lung carc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Ruiz-Garcia_2020_estimate_rse](drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md) | ▶ model + simulator | 1-compartment, oral | 8 | Ruiz-Garcia A et al., Pharmacokinetic Models to Characterize…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040330](https://doi.org/10.3390/pharmaceutics12040330) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [↳ parameter_estimate](drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_parameter_estimate.md) | ▶ model + simulator | 1-compartment, oral | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Ruiz-Garcia_2020_estimate_rse](drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md) | — | 1-compartment (no model) | 8 | Ruiz-Garcia A et al., Pharmacokinetic Models to Characterize…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040330](https://doi.org/10.3390/pharmaceutics12040330) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [↳ parameter_estimate](drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_parameter_estimate.md) | — | 1-compartment (no model) | 7 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Liu_2024_fasted_state](drugs/drug_dacomitinib/Dacomitinib_Liu2024_fasted_state.md) | — | 1-compartment (no model) | 4 | Liu J et al., Effects of H2-Receptor Antagonists on t…, Pharmaceutics (2024) | [10.3390/pharmaceutics16010118](https://doi.org/10.3390/pharmaceutics16010118) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ fed_state](drugs/drug_dacomitinib/Dacomitinib_Liu2024_fed_state.md) | — | 1-compartment (no model) | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ geometric_mean_ng_ml_geometric_cv](drugs/drug_dacomitinib/Dacomitinib_Liu2024_geometric_mean_ng_ml_geometric_cv.md) | — | 1-compartment (no model) | 1 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dacomitinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `SLC22A1` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: EGFR (inhibitor), ERBB2 (target), ERBB4 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -84,7 +56,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 2
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Schmulenson_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The absorption rate constant and lag time were set to library placeholders rather than values estimated for capecitabine in the source paper.
+> Absorption rate constant defaults were used for capecitabine because the source paper did not report the value.
 
 <div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="needs_review" stale="false" population="locally advanced rectal cancer" measured-compound="capecitabine" parameterization="apparent" topology="2C"></div>
 
@@ -17,94 +17,7 @@ Schmulenson E, Bovet C, Theurillat R, Decosterd LA, Largiadèr CR, Prost JC et a
 
 ## Population and dosing
 
-**Population:** locally advanced rectal cancer · age group adult · n = &gt;&lt; 25, 126 DFCR and 132 DFUR plasma concentration measurements were included as well as 151 regorafenib, 141 M-2 and 113 M-5 plasma concentration measurements (Figures S2.1-S2.6 in the Supporting Information).
-
-CAPTIONS:
-FIGURE: [RSE] 14.9%, interindividual variability [IIV] 40.1%) and was reduced by regorafenib cumulative area under the plasma concentration curve (median reduction of 45.6%) as exponential covariate (estimate À4.10 Â 10 À4 , RSE 17.8%). Apparent regorafenib clearance was 1.94 L/h (RSE 12.1%, IIV 38.1%). Simulation analyses revealed significantly negative associations between capecitabine clearance and regorafenib exposure. Conclusions: This work informs the clinical development of regorafenib and capecitabine combination treatment and underlines the importance of studying potential DDI with new anticancer drug combinations.
-FIGURE: This open-label, multi-centre, non-randomized phase IB trial explored the recommended dose of and pathological response to regorafenib when added to capecitabine-augmented neoadjuvant chemoradiotherapy in patients with AJCC stage II/III rectal cancer (mrT3/4 N0, mrTx N1-2 cM0). SAKK 41/16 recruited 25 patients from six Swiss sites between March 2017 and April 2021. The trial includes a dose-escalation part and an expansion cohort after establishing the recommended phase-2 dose. All patients were tested for mutations of the dihydropyrimidine dehydrogenase gene (DPYD), and patients harbouring one of four dysfunctional DPYD mutations (DPYD c.1679T&gt;G [rsrs55886062], c.1905+1G&gt;A [rsrs3918290], c.2846A&gt;T
-FIGURE: [
-FIGURE: T A B L E 1
-FIGURE: where CL Cap denotes the individual capecitabine clearance estimate, CL Cap,pop the population estimate of capecitabine clearance, θ is the covariate effect estimate, AUC Reg,cum is the cumulative AUC over time of regorafenib and η i,CLCap,pop represents the IIV term for the capecitabine population clearance of the i th individual with a mean of 0 and a variance of ω 2 . The median reduction of capecitabine clearance was
-FIGURE: F I G U R E 1
-FIGURE: F I G U R E 2
-FIGURE: CL Regorafenib /F, CL M-2 /F, CL M-5 /F: apparent regorafenib/M-2/M-5 clearance; V c /F: apparent shared central volume of distribution; V p /F: apparent shared peripheral volume of distribution; Q/F: apparent shared intercompartmental clearance; MAT Regorafenib /MAT M-2 : mean absorption time of regorafenib/M-2 defined as n transit compartments/transit constant k tr ; k g, met : presystemic metabolic rate constant.
-FIGURE: F I G U R E 3
-FIGURE: F I G U R E 4
-FIGURE: F I G U R E 5
-FIGURE: ing
-
-Write your answer as flat YAML using EXACTLY the keys below. One key per line,
-in this order. Do not nest, do not indent, do not add commentary before or after.
-If a value is unknown, write: unknown
-
-is_poppk:            # yes or no - is a population or compartmental PK model present?
-paper_class:         # one of: drug_pk | metabolite_pk | biomarker_turnover | exposure_response | other
-                     #   drug_pk: the modelled concentrations are capecitabine's
-                     #   metabolite_pk: a metabolite of capecitabine is what is modelled
-                     #   biomarker_turnover: the kinetic model describes an ENDOGENOUS substance
-                     #     (uric acid, glucose, cholesterol, INR, platelets, a hormone …) — its
-                     #     production, volume and clearance — and capecitabine only perturbs
-                     #     it (Rmax, Imax, IC50 on production or loss). Those V and CL are the
-                     #     biomarker's, NOT the drug's pharmacokinetics.
-                     #   exposure_response: no kinetic model; effect vs dose or concentration
-models_target_drug:  # yes or no - is capecitabine (under ANY name: synonym, brand, code or
-                     #   abbreviation such as BCNU, ACNU, MTX, 5-FU) the dose_compound or the
-                     #   primary_analyte? 'no' when it is only a co-medication or comparator.
-final_table_hint:    # if is_poppk=yes, the table that reports the FINAL fitted PK parameter
-                     #   estimates (e.g. "Table 2" or its caption's first few words), else unknown
-software:            # NONMEM, Monolix, nlmixr, etc., or unknown
-has_control_stream:  # yes or no - is NONMEM/model code in the supplement?
-dose_compound:       # the compound the subject actually receives
-primary_analyte:     # the compound whose concentrations the model chiefly describes
-                     # NOTE: dose_compound and primary_analyte MAY DIFFER
-population:          # short label for the study population the FINAL parameters describe,
-                     #   e.g. "healthy adults", "preterm newborns", "paediatric oncology patients"
-age_class:           # one of: neonate | infant | child | adolescent | adult | elderly | mixed | unknown
-n_subjects:          # number of subjects in the analysis (a plain integer), or unknown
-condition:           # health/disease state, e.g. healthy | patent ductus arteriosus | renal impairment
-species:             # the species the data were measured in: human | rat | mouse | dog | cat |
-                     #   horse | cattle | sheep | goat | pig | rabbit | monkey | bird | fish |
-                     #   other animal (name it) | in vitro | unknown
-
-# List each compound on its own line under 'compounds', one per line, as:
-#   - name | role | dosed | measured | has_parameters
-# where role = parent | metabolite | co-administered | analyte-only | endogenous_biomarker
-#       (endogenous_biomarker = a substance the body makes, whose kinetics the model
-#        describes; it is never 'dosed')
-#       dosed = yes/no (subject receives it)
-#       measured = yes/no (its concentrations are modelled)
-#       has_parameters = yes/no (paper gives it V/CL or a compartment)
-compounds:
-  -
-
-# List each parent-&gt;metabolite (or interconversion) link on its own line under
-# 'links', one per line, as:
-#   - from | to | relation | link_parameter
-# where relation = metabolism | hydrolysis | interconversion
-#       link_parameter = Kfm | Fm | formation clearance | none
-# If there are no links, write 'links: none' on a single line.
-links:
-  -
-
-RULES:
-- dose_compound and primary_analyte may be different. Allopurinol dosed,
-  oxypurinol measured is a valid, common case. Do NOT collapse them to one name.
-- A model of an endogenous substance's turnover under the drug (uric acid under
-  allopurinol, INR under warfarin) is paper_class=biomarker_turnover with the substance
-  listed as role=endogenous_biomarker; is_poppk may still be yes for that model, but
-  the drug's own V/CL are then NOT reported.
-- population describes the group the FINAL model parameters characterise (the whole
-  analysis dataset), not a covariate subgroup. Prefer the paper's own wording.
-- species is REQUIRED whenever the paper states it (veterinary and preclinical studies
-  are common: "in cats", "Sprague-Dawley rats", "Thoroughbred horses"). Write human only when
-  the subjects are people; do not assume it.
-- List EVERY compound, including inactive metabolites, with its role.
-- A compound measured but with has_parameters=no is mentioned but not modelled;
-  still list it.
-- Use the pipe character '|' to separate fields on the list lines.
-- Output ONLY the YAML. No prose, no code fences.
-
-OUTPUT FORMAT OVERRIDE: ignore any instruction above to answer in YAML. Return ONLY a JSON object matching the supplied schema. Put each value in its OWN named field — never repeat a field name as a value, never pack several values into one string..
+**Population:** locally advanced rectal cancer · age group adult.
 
 **Dosing:** 40, 80, 120, 825 mg, oral, multiple, every 24 h.
 
@@ -144,9 +57,9 @@ OUTPUT FORMAT OVERRIDE: ignore any instruction above to answer in YAML. Return O
 
 ### Reviewer guidance
 
-**The absorption rate constant and lag time were set to library placeholders rather than values estimated for capecitabine in the source paper.**
+**Absorption rate constant defaults were used for capecitabine because the source paper did not report the value.**
 
-The record lists a mean absorption time of 3.01 h but lacks the specific first-order absorption rate constant or lag time. Consequently, the model builder used generic placeholder values for these parameters instead of estimates from the Schmulenson_2022 study. The record also reflects a second reader's disagreement on the specific metabolite fractions for the co-administered regorafenib, with one reading m-2 as 1.5% and m-5 as null, versus the other reading m-2 as null and m-5 as 4.7%. Extracted — capecitabine: CL/F 1.94 L/h, V1/F 10.4 L, MAT 3.01 h, V2/F 63.9 L, Q/F 13.5 L/h, CLm/F 0.936 L/h, kmet 0.265 1/h.
+The model structure includes a first-order absorption phase, but the absorption rate constant was not explicitly estimated in the paper. Consequently, standard library defaults were applied to fill this gap, creating a deviation from the source data. A second reader disputed the identification of the dose compound, further complicating the verification of the model's inputs. Extracted — capecitabine: CL/F 1.94 L/h, V1/F 10.4 L, MAT 3.01 h, V2/F 63.9 L, Q/F 13.5 L/h, CLm/F 0.936 L/h, kmet 0.265 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has regorafenib, capecitabine, the second reading capecitabine. That field shapes the model, so the record is marked disputed.
 
@@ -254,15 +167,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=capecitabine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=capecitabine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.944, 0 of 1 reader(s) agree | 0.944 | cross-check disputed by a second reader: verdict disputed, agreement 0.944, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

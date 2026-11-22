@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;captopril&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/&quot;},{&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kiriyama_2024_BP&quot;,&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 BP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/pd_Kiriyama_2024_BP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kiriyama_2024_HR&quot;,&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/pd_Kiriyama_2024_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kiriyama_2024_QT&quot;,&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/pd_Kiriyama_2024_QT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kiriyama_2024_BP&quot;,&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 BP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/pd_Kiriyama_2024_BP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kiriyama_2024_HR&quot;,&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/pd_Kiriyama_2024_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kiriyama_2024_QT&quot;,&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/pd_Kiriyama_2024_QT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The captopril total clearance of 4.21 mL/min was rejected as outside the physiological window, indicating an implausible magnitude.
+> Captopril's total clearance of 4.21 mL/min and volume of distribution of 54.2 mL were rejected as physiologically implausible for spontaneously hypertensive rats.
 
 <div class="pk-model-meta" hidden drug="captopril" model-id="Captopril_Kiriyama2024_reference" status="rejected" stale="false" population="spontaneously hypertensive rats" measured-compound="captopril" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,9 +57,9 @@ Kiriyama A, Kimura S, Yamashita S. Exploring the multiple effects of nifedipine 
 
 ### Reviewer guidance
 
-**The captopril total clearance of 4.21 mL/min was rejected as outside the physiological window, indicating an implausible magnitude.**
+**Captopril's total clearance of 4.21 mL/min and volume of distribution of 54.2 mL were rejected as physiologically implausible for spontaneously hypertensive rats.**
 
-The recorded total clearance of 4.21 mL/min failed the plausibility check for magnitude. A second reader could not verify several extracted parameters, including the clearance and elimination rate constant, marking them as unknown. Additionally, one reported unit could not be converted to standard SI units, so the parameter lacked a valid standardized value. Extracted — captopril: V 54.2 mL, kel 0.0521 1/min, k12 0.153 1/min, k21 0.0694 1/min, AUC 1.73e+03 ng·min/mL, t1/2z 81.6 min, CL 4.21 mL/min, Vss 395 mL, … (+1).
+The reported total clearance and central volume values fall outside the expected physiological range for the rat population. Additionally, one reported unit could not be converted to standard international units, preventing the parameter from receiving a valid SI value during processing. Extracted — captopril: V 54.2 mL, kel 0.0521 1/min, k12 0.153 1/min, k21 0.0694 1/min, AUC 1.73e+03 ng·min/mL, t1/2z 81.6 min, CL 4.21 mL/min, Vss 395 mL, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 

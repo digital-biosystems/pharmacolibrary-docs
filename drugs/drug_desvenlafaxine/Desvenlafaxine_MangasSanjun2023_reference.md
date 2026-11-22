@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were left at library defaults, lacking explicit values from the desvenlafaxine paper.
+> Bioavailability and lag time were left as library placeholders without paper support, causing the desvenlafaxine model review hold.
 
 <div class="pk-model-meta" hidden drug="desvenlafaxine" model-id="Desvenlafaxine_MangasSanjun2023_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,9 +53,9 @@ Mangas-Sanjuán V, Simón M, González-Rojano E, Ochoa D, Abad-Santos F, Román 
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were left at library defaults, lacking explicit values from the desvenlafaxine paper.**
+**Bioavailability and lag time were left as library placeholders without paper support, causing the desvenlafaxine model review hold.**
 
-The record uses standard library placeholders for bioavailability (F) and lag time (Tlag) rather than estimates derived from the publication. Although the paper reports a clearance of 12 L/h and absorption rate constant of 21 h–1, it does not provide these specific parameters. Consequently, the model relies on unsupported conventions instead of the actual fitted values for desvenlafaxine. Extracted — desvenlafaxine: kabs 21 h–1, ktr 31 h–1, CL 12 L/h, V 19 L, AUC%ext 8.
+The model builder used default values for bioavailability and lag time instead of extracting estimates from the study. Although clearance and volume of distribution are reported, these unsupported absorption terms prevented publication. A second reader also disputed the classification of the plasma measurement parameter. Extracted — desvenlafaxine: kabs 21 h–1, ktr 31 h–1, CL 12 L/h, V 19 L, AUC%ext 8.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[plasma].parameter_id`: this record has Q84, the second reading Q46. That field shapes the model, so the record is marked disputed.
 
@@ -143,18 +143,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=desvenlafaxine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  | 0.00419 | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.00419 | non-numeric value |
-| T1_cmax | reference | skipped | 19.21 | 0.00419 | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 0.00419 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=desvenlafaxine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | cross-check disputed by a second reader: verdict disputed, agreement 0.9, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  | 0.00419 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.00419 |  | non-numeric value |
+| T1_cmax | reference | skipped | 19.21 | 0.00419 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.00419 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;morphine&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/&quot;},{&quot;label&quot;:&quot;Bardol_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Ihmsen2021_reference&quot;,&quot;label&quot;:&quot;Ihmsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Ihmsen2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_f&quot;,&quot;label&quot;:&quot;Andersen_1986_f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_f.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_j&quot;,&quot;label&quot;:&quot;Andersen_1986_j&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_j.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_k&quot;,&quot;label&quot;:&quot;Andersen_1986_k&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_k.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Venkatasubramanian2014_reference&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Romberg2004_reference&quot;,&quot;label&quot;:&quot;Romberg_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Romberg2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # morphine — `Morphine_Bardol2025_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 18:58 UTC (Simulated), but the paper was screened again on 2026-11-04 10:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The record assigns a clearance of 14.6 L/h/70 kg to morphine from a paper actually studying clonidine, where morphine was only a background co-medication without quantitative pharmacokinetic data.
 
-<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Bardol2025_reference" status="extracted" stale="true" population="" measured-compound="morphine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Bardol2025_reference" status="rejected" stale="false" population="" measured-compound="morphine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bardol M, Sheng Y, Baarslag M, Ceci A, Dörje F, Ilmoja ML et al. Pharmacokinetic and Pharmacodynamic Modeling of Clonidine and Midazolam for Sedation in Pediatric Intensive Care. Paediatric anaesthesia 35(12):1053–1062 (2025).
@@ -29,14 +29,16 @@ Bardol M, Sheng Y, Baarslag M, Ceci A, Dörje F, Ilmoja ML et al. Pharmacokineti
 <figure class="pk-models-diagram"><img src="drugs/drug_morphine/Morphine_Bardol2025_reference/Morphine_Bardol2025_reference.svg" alt="Morphine_Bardol2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearance | CL | 14.6 | L/h/70 kg |
+| elimination clearance for clonidine | CL | 14.6 | L/h/70 kg |
 | V (derived from CL·t½/ln2) | V | 358.0769 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.143), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (?, agreement 0.0), glm-5.3-flash (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,17 +48,19 @@ Bardol M, Sheng Y, Baarslag M, Ceci A, Dörje F, Ilmoja ML et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record assigns a clearance of 14.6 L/h/70 kg to morphine from a paper actually studying clonidine, where morphine was only a background co-medication without quantitative pharmacokinetic data.**
 
-A second, independent reading of the paper (`glm-5.3-flash`) disagrees on the value of CL: this record has 14.6, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+The primary analysis confirms the paper's subject is clonidine and midazolam, not morphine, which was treated solely as a background analgesic. Consequently, the extracted clearance value of 14.6 L/h/70 kg lacks valid attribution to the target molecule. A secondary reader disagreed on multiple parameter values, including the clearance and volume of distribution, further highlighting the ambiguity of the source data for morphine. Extracted — morphine: CL 14.6 L/h/70 kg, V 358 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`glm-5.3-flash`) disagrees on the value of CL: this record has 14.6, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 14.6 | L/h/70 kg | 4.056e-06 | m3/s | L/h | review (0.7) | Bardol_2025:review |
+| elimination clearance for clonidine | `Q22` · CL | 14.6 | L/h/70 kg | 4.056e-06 | m3/s | L/h | review (0.7) | Bardol_2025:review |
 | V (derived from CL·t½/ln2) | `Q61` · V | 358.0769 | L | 0.3581 | m3 | L | review (0.7) | Bardol_2025:review |
 
 <details class="legend">
@@ -73,21 +77,20 @@ A second, independent reading of the paper (`glm-5.3-flash`) disagrees on the va
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | not confirmed | 0.143 (1/7 fields) | 6 |
 | `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
+| `glm-5.3-flash` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `glm-5.3-flash` | `values[Q22]` | 14.6 |  | only_one_extracted |
 | `glm-5.3-flash` | `values[Q310]` |  | 200 | only_one_extracted |
 | `glm-5.3-flash` | `values[Q319]` |  | 0.75 | only_one_extracted |
-| `glm-5.3-flash` | `values[Q320]` | 6 | 6 | mismatch |
 | `glm-5.3-flash` | `values[Q321]` | 186 | 186 | mismatch |
 | `glm-5.3-flash` | `values[Q56]` |  | 3 | only_one_extracted |
 
@@ -117,12 +120,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | note |
 |---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | morphine (or metabolite) | paper about another drug | paper subject is not morphine: the paper is about another drug; this one is a co-medication or covariate: The study focuses on the PK/PD of clonidine and midazolam, treating morphine only as a background analgesic/co-medication for which no quantitative PK parameter |
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=morphine) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,59 +138,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_morphine/Morphine_Bardol2025_reference/Morphine_Bardol2025_reference_modelica.zip" download>Morphine_Bardol2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_morphine/Morphine_Bardol2025_reference/Morphine_Bardol2025_reference_fmi.zip" download>Morphine_Bardol2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_morphine/Morphine_Bardol2025_reference/Morphine_Bardol2025_reference_matlab.zip" download>Morphine_Bardol2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_morphine/Morphine_Bardol2025_reference/Morphine_Bardol2025_reference_matlab_simbio.zip" download>Morphine_Bardol2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_morphine/Morphine_Bardol2025_reference/Morphine_Bardol2025_reference_sbml.zip" download>Morphine_Bardol2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_morphine/Morphine_Bardol2025_reference/Morphine_Bardol2025_reference_cellml.zip" download>Morphine_Bardol2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2853 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 3e-05 | kg |
-| input | model | `Cl` | 4.056e-06 | m3/s |
-| input | model | `VdPerKg` | 0.005115 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Bardol M, Sheng Y, Baarslag M, Ceci A, Dörje F, Ilmoja ML et al. Pharmacokinetic and Pharmacodynamic Modeling of Clonidine and Midazolam for Sedation in Pediatric Intensive Care. Paediatric anaesthesia 35(12):1053–1062 (2025). [doi:10.1111/pan.70050](https://doi.org/10.1111/pan.70050)
-
-**This record:** Pharmacolibrary, model `Morphine_Bardol2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_morphine/Morphine_Bardol2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_MorphineBardol2025reference,
-  title  = {{Pharmacolibrary model Morphine_Bardol2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_morphine/Morphine_Bardol2025_reference},
-  note   = {Parameters from doi:10.1111/pan.70050},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -200,4 +154,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmorphine%5D%20Morphine_Bardol2025_reference&body=Drug%3A%20morphine%0ARecord%3A%20Morphine_Bardol2025_reference%0APaper%3A%20Bardol_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_morphine/Morphine_Bardol2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 10:08 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 07:05 UTC</sub>

@@ -5,18 +5,18 @@
 
 # cetirizine — `Cetirizine_Urien1999_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:23 UTC (Rejected), but the paper was screened again on 2026-10-07 22:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Urien1999_reference" status="rejected" stale="true" population="patients" measured-compound="cetirizine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Urien1999_reference" status="rejected" stale="false" population="patients" measured-compound="cetirizine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Urien S, Tillement JP, Ganem B, Kuch MD. A pharmacokinetic-pharmacodynamic modelling of the antihistaminic (H1) effects of cetirizine. International journal of clinical pharmacology and therapeutics 37(10):499–502 (1999).
 
 ## Population and dosing
 
-**Population:** patients · age group adult · n = &gt;=6.
+**Population:** patients · age group adult.
 
 ## Model
 
@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

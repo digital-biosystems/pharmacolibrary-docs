@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the absorption rate constant was not estimated from the paper, and the model structure did not match the parent-metabolite design.
+> Selumetinib's ka was not reported, forcing library defaults and creating a mismatch between the parent-metabolite structure and the one-compartment output used.
 
 <div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Tong2019_reference" status="rejected" stale="false" population="patients with non-small cell lung cancer" measured-compound="selumetinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -48,9 +48,9 @@ Tong X, Xu H, Carlile DJ, Tomkinson H, Al-Huniti N, Zhou D. Population Pharmacok
 
 ### Reviewer guidance
 
-**The record was rejected because the absorption rate constant was not estimated from the paper, and the model structure did not match the parent-metabolite design.**
+**Selumetinib's ka was not reported, forcing library defaults and creating a mismatch between the parent-metabolite structure and the one-compartment output used.**
 
-The bioavailability-adjusted clearance of 11.9 L/h and central volume of 32.1 L were used without an estimated oral absorption rate constant, which was instead assigned a placeholder value. Additionally, the model structure did not align with the parent-metabolite design; the output variable was defined as the central concentration rather than the concentration of N-desmethyl selumetinib. These structural and parameter inconsistencies prevented the record from accurately representing the pharmacokinetics of selumetinib and its metabolite. Extracted — selumetinib: CL/F 11.9 L/h, V1 32.1 L.
+The record's one-compartment output does not match the parent-metabolite structure, and the apparent clearance of 11.9 L/h was modeled without an estimated absorption rate. Because the record was abstract-only, the reported values stand in for a fitted model, and the missing ka required using library defaults instead of paper-specific estimates. Extracted — selumetinib: CL/F 11.9 L/h, V1 32.1 L.
 
 Independently confirmed by `qwen3.8-27b`.
 
@@ -123,15 +123,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=selumetinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=selumetinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -16,21 +16,21 @@
   "Cl": 1.1550000000000001e-05,
   "F": 0.9,
   "MM": 0.325767,
-  "Tlag": 6840.0,
+  "Tlag": 72.0,
   "VdPerKg": 0.0013000000000000002,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 7e-06,
-  "ka": 3.888888888888889e-05,
+  "ka": 0.00014444444444444444,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 20604.40881763527
+  "central.C": 7791.583166332665
  },
  "reference_peaks": {
-  "central.C": 1.257821751358847e-05
+  "central.C": 2.71239767069705e-05
  },
- "stop_time": 100800.0,
+ "stop_time": 86400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

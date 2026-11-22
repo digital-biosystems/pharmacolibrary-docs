@@ -42,7 +42,7 @@ Perampanel is an antiepileptic drug used to treat epilepsy and tonic–clonic se
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Silva_2023_base](drugs/drug_perampanel/Perampanel_Silva2023_base.md) | ▶ model + simulator | 1-compartment, IV | 2 | Silva R et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2023) | [10.3390/pharmaceutics15061704](https://doi.org/10.3390/pharmaceutics15061704) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [↳ final](drugs/drug_perampanel/Perampanel_Silva2023_final.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Jing_2023_reference](drugs/drug_perampanel/Perampanel_Jing2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Jing S et al., A Single- and Multiple-Dose Pharmacokin…, Clinical drug investigation (2023) | [10.1007/s40261-022-01241-8](https://doi.org/10.1007/s40261-022-01241-8) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Yu_2025_reference](drugs/drug_perampanel/Perampanel_Yu2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Yu L et al., Development and Validation of a Populat…, Drug design, development an… (2025) | [10.2147/DDDT.S499085](https://doi.org/10.2147/DDDT.S499085) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Yu_2025_reference](drugs/drug_perampanel/Perampanel_Yu2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Yu L et al., Development and Validation of a Populat…, Drug design, development an… (2025) | [10.2147/DDDT.S499085](https://doi.org/10.2147/DDDT.S499085) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Li_2024_reference](drugs/drug_perampanel/Perampanel_Li2024_reference.md) | — | 1-compartment (no model) | 0 | Li S et al., Population pharmacokinetics and dosing…, Epilepsia (2024) | [10.1111/epi.17954](https://doi.org/10.1111/epi.17954) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Yang_2025_reference](drugs/drug_perampanel/Perampanel_Yang2025_reference.md) | — | 1-compartment (no model) | 0 | Yang J et al., Population Pharmacokinetics of Perampan…, Therapeutic drug monitoring (2025) | [10.1097/FTD.0000000000001296](https://doi.org/10.1097/FTD.0000000000001296) |
 
@@ -52,21 +52,6 @@ Perampanel is an antiepileptic drug used to treat epilepsy and tonic–clonic se
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Takenaka_2018_28_day_average_seizure_frequency](drugs/drug_perampanel/pd_Takenaka_2018_28_day_average_seizure_frequency.md) | 28-day average seizure frequency ← perampanel · direct linear effect | — | Takenaka O et al., Pharmacokinetic/pharmacodynamic analysi…, Acta neurologica Scandinavi… (2018) | [10.1111/ane.12874](https://doi.org/10.1111/ane.12874) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Takenaka_2018_responder_probability](drugs/drug_perampanel/pd_Takenaka_2018_responder_probability.md) | responder probability ← perampanel · direct linear effect | — | Takenaka O et al., Pharmacokinetic/pharmacodynamic analysi…, Acta neurologica Scandinavi… (2018) | [10.1111/ane.12874](https://doi.org/10.1111/ane.12874) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=perampanel).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2B6` inducer/substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: GRIA1 (target), GRIA2 (inhibitor), GRIA3 (inhibitor), GRIA4 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,7 +65,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:17 | 1:53 | 4/2/0 | 1/0/0 | 0/0/0 | 107,483/4,591 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-07 07:17 | 1:53 | 4/2/0 | 2/0/0 | 0/0/0 | 107,483/4,591 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## Coverage
 

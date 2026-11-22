@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;gatifloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/&quot;},{&quot;label&quot;:&quot;Peloquin_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gatifloxacin_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gatifloxacin_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tasso_2011_bactericidal_activity&quot;,&quot;label&quot;:&quot;Tasso_2011 \u00b7 bactericidal activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/pd_Tasso_2011_bactericidal_activity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gatifloxacin_Peloquin2008_reference&quot;,&quot;label&quot;:&quot;Peloquin_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Peloquin2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gatifloxacin_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gatifloxacin_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tasso_2011_bactericidal_activity&quot;,&quot;label&quot;:&quot;Tasso_2011 \u00b7 bactericidal activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/pd_Tasso_2011_bactericidal_activity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gatifloxacin — `Gatifloxacin_Peloquin2008_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:55 UTC (Needs review), but the paper was screened again on 2026-10-13 12:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Bioavailability F for gatifloxacin was left at library defaults, not estimated in this abstract-only record.
 
-<div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Peloquin2008_reference" status="extracted" stale="true" population="adults with pulmonary tuberculosis" measured-compound="gatifloxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Peloquin2008_reference" status="needs_review" stale="false" population="adults with pulmonary tuberculosis" measured-compound="gatifloxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Peloquin CA, Hadad DJ, Molino LP, Palaci M, Boom WH, Dietze R et al. Population pharmacokinetics of levofloxacin, gatifloxacin, and moxifloxacin in adults with pulmonary tuberculosis. Antimicrobial agents and chemotherapy 52(3):852–857 (2008).
@@ -21,12 +21,16 @@ Peloquin CA, Hadad DJ, Molino LP, Palaci M, Boom WH, Dietze R et al. Population 
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 6 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_gatifloxacin/Gatifloxacin_Peloquin2008_reference/Gatifloxacin_Peloquin2008_reference.svg" alt="Gatifloxacin_Peloquin2008_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | maximum plasma concentrations (median | Cmax | 15.55 | microg/ml |
@@ -38,7 +42,7 @@ Peloquin CA, Hadad DJ, Molino LP, Palaci M, Boom WH, Dietze R et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ Peloquin CA, Hadad DJ, Molino LP, Palaci M, Boom WH, Dietze R et al. Population 
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Bioavailability F for gatifloxacin was left at library defaults, not estimated in this abstract-only record.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Fu_2024, Wang_2020) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gatifloxacin: Cmax 15.6 microg/ml, V 81 liters, t1/2z 7.4 h, CL 5.28 L h−1, kabs 0.397 h−1, tlag 0.825 h.
+The record was built from the paper's abstract alone, so summary statistics like the 7.4 h half-life stand in for a fitted model. Because the bioavailability F was not extracted, a library placeholder is used instead of an explicit estimate. A second reader disagreed on the extraction of the dose compound and primary analyte, both recorded as gatifloxacin. Extracted — gatifloxacin: Cmax 15.6 microg/ml, V 81 liters, t1/2z 7.4 h, CL 5.28 L h−1, kabs 0.397 h−1, tlag 0.825 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has gatifloxacin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gatifloxacin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -74,6 +78,9 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F']
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'gatifloxacin' — extend the ontology if this is a real PK parameter (source ['Peloquin_2008:abstract', 'Peloquin_2008:abstract', 'Peloquin_2008:abstract'])
 - dropped unlinked row (NIL): 'moxifloxacin' — extend the ontology if this is a real PK parameter (source ['Peloquin_2008:abstract', 'Peloquin_2008:abstract', 'Peloquin_2008:abstract'])
@@ -84,6 +91,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Wang_2020's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Wang_2020's review values (primary lacked it)
+- derived CL=7.58715 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Peloquin_2008_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
@@ -95,20 +103,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[elimination half-life]` | 7.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life]` |  | 7.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[maximum plasma concentrations]` | 15.55 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[maximum plasma concentrations]` |  | 15.55 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 81 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 81 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | gatifloxacin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | gatifloxacin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 7.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` |  | 7.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum plasma concentrations]` | 15.55 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum plasma concentrations]` |  | 15.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 81 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 81 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | gatifloxacin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gatifloxacin | unknown | mismatch |
 
 </details>
 
@@ -136,6 +144,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.28 L/h | ['Fu_2024:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 81 L | ['Peloquin_2008:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=gatifloxacin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -151,7 +172,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -162,7 +183,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 0.397 /h, lag 49.5 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (J01MA16) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_gatifloxacin/Gatifloxacin_Peloquin2008_reference/Gatifloxacin_Peloquin2008_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_gatifloxacin/Gatifloxacin_Peloquin2008_reference/Gatifloxacin_Peloquin2008_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Gatifloxacin_Peloquin2008_reference_params.json` · controls `Gatifloxacin_Peloquin2008_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

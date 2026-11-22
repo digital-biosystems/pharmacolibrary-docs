@@ -1,0 +1,46 @@
+{
+ "dose_source": "paper",
+ "model_id": "TolfenamicAcid_Corum2026_reference",
+ "molar_masses": {
+  "central.C": 0.261704
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  280.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Corum_2026:discussion_prose",
+    "value_si": 0.0030099999999999997
+   },
+   {
+    "source": "Corum_2026:discussion_prose",
+    "value_si": 0.0016200000000000001
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 3.3055555555555558e-06,
+  "F": 1.0,
+  "MM": 0.261704,
+  "VdPerKg": 0.00067,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00028,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662108
+ },
+ "reference_peaks": {
+  "central.C": 0.005845675425927922
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

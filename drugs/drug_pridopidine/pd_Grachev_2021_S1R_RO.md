@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;pridopidine&quot;,&quot;href&quot;:&quot;drugs/drug_pridopidine/&quot;},{&quot;label&quot;:&quot;Grachev_2021 \u00b7 PD Sigma-1 receptor occupancy&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Sigma-1 receptor occupancy — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+# Sigma-1 receptor occupancy — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -58,18 +58,18 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | stimulation | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 0.084 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q320]` |  | 0.90 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 0.014 (0.001) | 1.21 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 0.89 (0.02) |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 1.46 (0.22) | 1.38 | mismatch |
+| `gpt-oss-120b` | `effect_direction` | inhibition | stimulation | mismatch |
+| `gpt-oss-120b` | `parameters[Q100]` | 0.084 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q320]` |  | 0.90 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q321].value` | 0.014 (0.001) | 1.21 | mismatch |
+| `gpt-oss-120b` | `parameters[Q323]` | 0.89 (0.02) |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q325].value` | 1.46 (0.22) | 1.38 | mismatch |
 
 </details>
 

@@ -25,7 +25,7 @@ Cisapride is a gastroprokinetic drug used to treat constipation, gastroesophagea
 
 ## Start here
 
-> **Preechagoon_1999_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> young infants with gastro-oesophageal reflux disease, n = &gt;=49. [Run it in the simulator](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md?tab=Simulation) · [record](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md)
+> **Preechagoon_1999_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> young infants with gastro-oesophageal reflux disease. [Run it in the simulator](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md?tab=Simulation) · [record](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,8 +33,8 @@ Cisapride is a gastroprokinetic drug used to treat constipation, gastroesophagea
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Preechagoon_1999_reference](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Michiels_1987_reference](drugs/drug_cisapride/Cisapride_Michiels1987_reference.md) | — | 1-compartment (no model) | 3 | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Preechagoon_1999_reference](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Michiels_1987_reference](drugs/drug_cisapride/Cisapride_Michiels1987_reference.md) | — | 1-compartment (no model) | 3 | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Odoul_2002_reference](drugs/drug_cisapride/Cisapride_Odoul2002_reference.md) | — | 1-compartment (no model) | 0 | Odoul F et al., Population pharmacokinetics of cisaprid…, European journal of clinica… (2002) | [10.1007/s00228-002-0504-z](https://doi.org/10.1007/s00228-002-0504-z) |
 
 ## Pharmacodynamics (PD)
@@ -44,20 +44,6 @@ Cisapride is a gastroprokinetic drug used to treat constipation, gastroesophagea
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Kim_2016_Kv](drugs/drug_cisapride/pd_Kim_2016_Kv.md) | Kv current amplitude ← cisapride · direct sigmoid Emax (Hill) effect | — | Kim HW et al., Cisapride, a selective serotonin 5-HT4-…, Biochemical and biophysical… (2016) | [10.1016/j.bbrc.2016.08.140](https://doi.org/10.1016/j.bbrc.2016.08.140) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Nolan_2006_RT](drugs/drug_cisapride/pd_Nolan_2006_RT.md) | RT interval ← cisapride · direct sigmoid Emax (Hill) effect | — | Nolan ER et al., A novel predictive pharmacokinetic/phar…, Journal of pharmacological… (2006) | [10.1016/j.vascn.2005.02.003](https://doi.org/10.1016/j.vascn.2005.02.003) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Webster_2001_MAPD](drugs/drug_cisapride/pd_Webster_2001_MAPD.md) | monophasic action potential duration ← cisapride · direct Emax (saturable) effect | — | Webster R et al., Pharmacokinetic/pharmacodynamic assessm…, Xenobiotica; the fate of fo… (2001) | [10.1080/00498250110054632](https://doi.org/10.1080/00498250110054632) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cisapride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HTR2A (target), HTR3A (target), HTR4 (target), KCNH2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -77,7 +63,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 128 matched, 57 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

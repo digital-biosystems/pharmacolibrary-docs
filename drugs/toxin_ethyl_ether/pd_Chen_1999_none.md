@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper provides no information on the pharmacodynamic mechanism or the relationship between ethyl ether concentrations and any measured response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Chen_1999`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

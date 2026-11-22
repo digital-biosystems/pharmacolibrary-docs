@@ -16,7 +16,7 @@ Blanchette VS, Zunino L, Grassmann V, Barnes C, Carcao MD, Curtin J et al. A Pra
 
 ## Population and dosing
 
-**Population:** adults with severe hemophilia A · condition severe hemophilia A · age group adult · n = &gt;=39.
+**Population:** adults with severe hemophilia A · condition severe hemophilia A · age group adult.
 
 ## Model
 

@@ -16,7 +16,7 @@ Clegg L, Freshwater E, Leach A, Villafana T, Hamrén UW. Population Pharmacokine
 
 ## Population and dosing
 
-**Population:** preterm and term infants · condition healthy · age group infant · n = &gt;&lt;.
+**Population:** preterm and term infants · condition healthy · age group infant.
 
 ## Model
 

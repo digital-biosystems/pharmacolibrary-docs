@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The absorption rate constant for propylthiouracil was not reported in the source, so a placeholder value was used instead of an estimate.
+> Propylthiouracil record lacks reported absorption rate constant, forcing use of library defaults instead of paper-derived estimates.
 
 <div class="pk-model-meta" hidden drug="propylthiouracil" model-id="Propylthiouracil_Gwka2018_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="propylthiouracil" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Główka FK, Hermann TW, Hermann J, Zabel M. Bioavailability of propylthiouracil
 
 ### Reviewer guidance
 
-**The absorption rate constant for propylthiouracil was not reported in the source, so a placeholder value was used instead of an estimate.**
+**Propylthiouracil record lacks reported absorption rate constant, forcing use of library defaults instead of paper-derived estimates.**
 
-The record lists the absorption lag time as 0.16 h but does not provide an absorption rate constant, leaving it to be supplied by a library placeholder. Because this placeholder is not derived from the paper’s data, the simulated absorption profile is unsupported. The model also assumes bioavailability is 1 and uses apparent clearance of 225 ml/min and volume of 23.5 l, which are consistent with an extravascular first-order input but lack the specific absorption rate needed to define the curve. Extracted — propylthiouracil: t1/2z 1.22 h, MRT 2.32 h, tlag 0.16 h, V/F 23.5 l, CL/F 225 ml/min, AUC%ext 96.8.
+The absorption rate constant is not reported in the source paper, so a generic library value was used rather than a fitted estimate. This substitution contradicts the apparent assumption of first-order absorption for extravascular dosing. Additionally, a second reader could not confirm the identified compound or analyte, disputing the record's identification. Extracted — propylthiouracil: t1/2z 1.22 h, MRT 2.32 h, tlag 0.16 h, V/F 23.5 l, CL/F 225 ml/min, AUC%ext 96.8.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propylthiouracil, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -138,21 +138,22 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=propylthiouracil) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 1.62 | 0.0007288 | unresolved concentration unit (exp 'mg/l]', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 1.77 | 0.0007288 | unresolved concentration unit (exp 'mg/l]', sim 'kg/m3') |
-| T1_t_half_terminal | reference | skipped | 1.22 | 1.449 | unresolved time unit 'h]' |
-| T1_t_half_terminal | reference | skipped | 1.27 | 1.449 | unresolved time unit 'h]' |
-| T1_tmax | reference | skipped | 0.69 | 2.127 | unresolved time unit 'h]' |
-| T1_tmax | reference | skipped | 0.54 | 2.127 | unresolved time unit 'h]' |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=propylthiouracil) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 1.62 | 0.0007288 |  | unresolved concentration unit (exp 'mg/l]', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.77 | 0.0007288 |  | unresolved concentration unit (exp 'mg/l]', sim 'kg/m3') |
+| T1_t_half_terminal | reference | skipped | 1.22 | 1.449 |  | unresolved time unit 'h]' |
+| T1_t_half_terminal | reference | skipped | 1.27 | 1.449 |  | unresolved time unit 'h]' |
+| T1_tmax | reference | skipped | 0.69 | 2.127 |  | unresolved time unit 'h]' |
+| T1_tmax | reference | skipped | 0.54 | 2.127 |  | unresolved time unit 'h]' |
 
 <details class="legend">
 <summary>Validation definitions</summary>

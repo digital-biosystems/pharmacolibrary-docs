@@ -4,11 +4,11 @@
 
 # faricimab — `Faricimab_Diack2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-07 21:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Faricimab intrinsic and total clearance values are physiologically implausible because a reported unit could not be converted to standard units.
+> The record for faricimab was rejected because the volume of distribution unit is dimensionally invalid and the intrinsic clearance is physiologically implausible.
 
-<div class="pk-model-meta" hidden drug="faricimab" model-id="Faricimab_Diack2024v2_reference" status="rejected" stale="true" population="adults with nAMD or DME" measured-compound="faricimab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="faricimab" model-id="Faricimab_Diack2024v2_reference" status="rejected" stale="false" population="adults with nAMD or DME" measured-compound="faricimab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Diack C, Gibiansky L, Jaminion F, Gibiansky E, Gaudreault J, Bogman K et al. Ocular Pharmacokinetics of Faricimab Following Intravitreal Administration in Patients With Retinal Disease. Translational vision science & technology 13(11):14 (2024).
@@ -40,7 +40,7 @@ Diack C, Gibiansky L, Jaminion F, Gibiansky E, Gaudreault J, Bogman K et al. Ocu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Diack C, Gibiansky L, Jaminion F, Gibiansky E, Gaudreault J, Bogman K et al. Ocu
 
 ### Reviewer guidance
 
-**Faricimab intrinsic and total clearance values are physiologically implausible because a reported unit could not be converted to standard units.**
+**The record for faricimab was rejected because the volume of distribution unit is dimensionally invalid and the intrinsic clearance is physiologically implausible.**
 
-The intrinsic clearance of 15.6 L/day and total clearance of 2.33 L/day are flagged as having implausible magnitudes. One parameter was reported in a unit that lacks a standard conversion factor, preventing its transformation to base units. This gap led to the dimension mismatch and the physiological range violations that caused the rejection. Extracted — faricimab: V 0.253 mL, CLint 15.6 L/day, CL 2.33 L/day, VH 0.0251, CLnorm 0.0311.
+The volume of distribution is listed as 0.253 mL, but the associated dimensionality implies a mass-normalized volume rather than a simple volume. The intrinsic clearance of 15.6 L/day was deemed outside physiological limits, suggesting a scale error. One parameter lacked a standard unit definition, preventing its conversion to standard SI terms. Extracted — faricimab: V 0.253 mL, CLint 15.6 L/day, CL 2.33 L/day, VH 0.0251, CLnorm 0.0311.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

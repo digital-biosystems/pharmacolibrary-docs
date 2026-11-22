@@ -5,11 +5,11 @@
 
 # zidovudine — `Zidovudine_Tang2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-07 16:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Zidovudine elimination rate constant of 72 h−1 creates a dimension mismatch, and missing unit conversions leave metabolite compartments orphaned.
+> Zidovudine metabolite back-conversion parameters use rate-constant units instead of clearances, and an elimination constant value was disputed by the second reader.
 
-<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Tang2026_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Tang2026_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylation kinetics of zidovudine in the Chinese population and its significance for individualized antiretroviral therapy. Scientific reports 16(1) (2026).
@@ -43,7 +43,7 @@ Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylati
 
 ### Reviewer guidance
 
-**Zidovudine elimination rate constant of 72 h−1 creates a dimension mismatch, and missing unit conversions leave metabolite compartments orphaned.**
+**Zidovudine metabolite back-conversion parameters use rate-constant units instead of clearances, and an elimination constant value was disputed by the second reader.**
 
-The elimination rate constant for zidovudine is recorded as 72 h−1, which is dimensionally inconsistent for a structural parameter. Additionally, the reported units for metabolite rate constants could not be converted to SI, so the model lacks the necessary values to link the metabolic chain. Consequently, the monophosphate, diphosphate, and triphosphate compartments have no path from the dose. Extracted — zidovudine: kel 72 h− 1, kmp 62 h− 1; zidovudine monophosphate (AZT-MP): kfm 45 h− 1, CLmp 76 h− 1; zidovudine diphosphate (AZT-DP): kfm 81 h− 1, CLmp 88 h− 1; zidovudine triphosphate (AZT-TP): kfm 79 h− 1.
+Parameters representing back-conversion clearance from diphosphate to monophosphate and triphosphate to diphosphate are labeled as clearances but assigned rate-constant units of h−1, causing a dimensional conflict. The elimination rate constant is recorded as 72 h−1, while the second reader identified no value for it. Furthermore, the two readers assigned several metabolite formation and back-conversion rate constants to different positions within the metabolic chain. Extracted — zidovudine: kel 72 h− 1, kmp 62 h− 1; zidovudine monophosphate (AZT-MP): kfm 45 h− 1, CLmp 76 h− 1; zidovudine diphosphate (AZT-DP): kfm 81 h− 1, CLmp 88 h− 1; zidovudine triphosphate (AZT-TP): kfm 79 h− 1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has zidovudine (AZT), the second reading zidovudine; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

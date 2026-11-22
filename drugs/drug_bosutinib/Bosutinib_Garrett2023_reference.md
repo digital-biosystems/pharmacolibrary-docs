@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bosutinib bioavailability (F) was unreported and defaulted, leaving it unsupported by Garrett_2023 and affecting simulated profile accuracy.
+> Bioavailability F for bosutinib was left at library defaults instead of using estimates from Garrett_2023.
 
 <div class="pk-model-meta" hidden drug="bosutinib" model-id="Bosutinib_Garrett2023_reference" status="needs_review" stale="false" population="adults with newly diagnosed chronic phase chronic myeloid leukemia" measured-compound="bosutinib" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Garrett M, Knight B, Cortes JE, Deininger MW. Population modeling of bosutinib e
 
 ### Reviewer guidance
 
-**Bosutinib bioavailability (F) was unreported and defaulted, leaving it unsupported by Garrett_2023 and affecting simulated profile accuracy.**
+**Bioavailability F for bosutinib was left at library defaults instead of using estimates from Garrett_2023.**
 
-The record indicates that bioavailability (F) was left as a library placeholder because no value was extracted from the paper. Additionally, a second reader disagreed with the extracted absorption rate constant (0.358 1/h) and lag time (0.442 h). Extracted — bosutinib: CL 56.3 L/h, V 1.33e+03 L, kabs 0.358 per hour, tlag 0.442 h.
+The record omits an explicit estimate for bosutinib's bioavailability, F, causing the model to rely on unsupported library placeholders for simulated profiles. Additionally, a second reader failed to verify the recorded values of 0.358 h-1 for the absorption rate constant and 0.442 h for the absorption lag time. Extracted — bosutinib: CL 56.3 L/h, V 1.33e+03 L, kabs 0.358 per hour, tlag 0.442 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of first‐order absorption rate constant: this record has 0.358, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
@@ -149,14 +149,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=bosutinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=bosutinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -26,7 +26,7 @@ Potassium canrenoate is an aldosterone antagonist diuretic used to treat edema a
 
 ## Start here
 
-> **Suyagh_2012_median** — <span class="pk-badge pk-badge--orange">Needs review</span> paediatric patients, n = &gt;=23. [Run it in the simulator](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md?tab=Simulation) · [record](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md)
+> **Suyagh_2012_median** — <span class="pk-badge pk-badge--orange">Needs review</span> paediatric patients. [Run it in the simulator](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md?tab=Simulation) · [record](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -34,7 +34,7 @@ Potassium canrenoate is an aldosterone antagonist diuretic used to treat edema a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Suyagh_2012_median](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T3_derived_parameters</sub> | [Suyagh_2012_median](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_t_half_terminal</sub> | [↳ two_experimentally_determined_s_one_for_each_exponent_estimate](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_two_experimentally_determined.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Suyagh_2013_reference](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hypertension (2013) | [10.1097/HJH.0b013e3283626994](https://doi.org/10.1097/HJH.0b013e3283626994) |
 

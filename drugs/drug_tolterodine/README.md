@@ -34,7 +34,7 @@ Tolterodine is a muscarinic antagonist used to treat urinary incontinence and bl
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Sano_2023_reference](drugs/drug_tolterodine/Tolterodine_Sano2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+5 cov.) | Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of drug me… (2023) | [10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Sano_2023_reference](drugs/drug_tolterodine/Tolterodine_Sano2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+5 cov.) | Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of drug me… (2023) | [10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,20 +44,6 @@ Tolterodine is a muscarinic antagonist used to treat urinary incontinence and bl
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Besson_2015_ASH](drugs/drug_tolterodine/pd_Besson_2015_ASH.md) | Area of secondary hyperalgesia biomarker turnover ← tolterodine | — | Besson M et al., GABAergic modulation in central sensiti…, Pain (2015) | [10.1097/01.j.pain.0000460331.33385.e8](https://doi.org/10.1097/01.j.pain.0000460331.33385.e8) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Besson_2015_Sedation](drugs/drug_tolterodine/pd_Besson_2015_Sedation.md) | Sedation biomarker turnover ← tolterodine | — | Besson M et al., GABAergic modulation in central sensiti…, Pain (2015) | [10.1097/01.j.pain.0000460331.33385.e8](https://doi.org/10.1097/01.j.pain.0000460331.33385.e8) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Sweeney_2010_QTc](drugs/drug_tolterodine/pd_Sweeney_2010_QTc.md) | QTc interval ← tolterodine · direct linear effect | — | Sweeney KR et al., Exposure-response modeling and clinical…, Drug discoveries & therapeu… (2010) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tolterodine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,7 +57,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:15 | 2:59 | 1/0/0 | 2/1/0 | 0/0/0 | 139,891/10,681 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 09:15 | 2:59 | 1/0/0 | 3/1/0 | 0/0/0 | 139,891/10,681 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 

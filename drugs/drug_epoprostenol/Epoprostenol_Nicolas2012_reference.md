@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;epoprostenol&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/&quot;},{&quot;label&quot;:&quot;Nicolas_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Nicolas_2012_CIn&quot;,&quot;label&quot;:&quot;Nicolas_2012 \u00b7 CIn&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/pd_Nicolas_2012_CIn.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Nicolas_2012_CIn&quot;,&quot;label&quot;:&quot;Nicolas_2012 \u00b7 CIn&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/pd_Nicolas_2012_CIn.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model's terminal half-life for 6-keto-prostacyclin F1a was 7.23 hours, whereas the paper reported 0.25 hours.
+> The model does not reproduce the paper's terminal half-life (paper 0.25, model 7.23); the covariate scenarios were not simulated.
 
 <div class="pk-model-meta" hidden drug="epoprostenol" model-id="Epoprostenol_Nicolas2012_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="6-keto-prostacyclin F1a" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Nicolas LB, Krause A, Gutierrez MM, Dingemanse J. Integrated pharmacokinetics an
 
 ## Population and dosing
 
-**Population:** healthy male subjects · condition healthy · age group adult · n = &gt;=20.
+**Population:** healthy male subjects · condition healthy · age group adult.
 
 **Dosing:** 2, 4, 6, 8 ng kg -1 min -1, iv, multiple.
 
@@ -52,7 +52,7 @@ Nicolas LB, Krause A, Gutierrez MM, Dingemanse J. Integrated pharmacokinetics an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,13 +62,13 @@ Nicolas LB, Krause A, Gutierrez MM, Dingemanse J. Integrated pharmacokinetics an
 
 ### Reviewer guidance
 
-**The model's terminal half-life for 6-keto-prostacyclin F1a was 7.23 hours, whereas the paper reported 0.25 hours.**
+**The model does not reproduce the paper's terminal half-life (paper 0.25, model 7.23); the covariate scenarios were not simulated.**
 
-The model's parameterization used an apparent assumption, treating the bioavailability and metabolite fraction as 1, which the review found unacceptable. The model's absorption rate constant was 2.16 per hour, yet the simulated terminal half-life remained drastically higher than the paper's reported value. The second reader disagreed with the apparent parameterization and failed to identify the primary analyte and dose compound. Covariate effects were defined in the record but were not exercised in the simulation. Extracted — epoprostenol: CLm/F 84.9 l h -1, Vm/F 23.7 l; 6-keto-prostacyclin F1a: CL/F 43.9 L/h, V/F 458 L, kabs 2.16 h−1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — epoprostenol: CLm/F 84.9 l h -1, Vm/F 23.7 l; 6-keto-prostacyclin F1a: CL/F 43.9 L/h, V/F 458 L, kabs 2.16 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has epoprostenol, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has epoprostenol, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -123,23 +123,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.083 (1/12 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.083 (1/12 fields) | 11 |
 
 <details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[cl]` | 84.92 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` |  | 84.92 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q44_food]` | 1.69 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q83_food]` | 0.22 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q83_food]` |  | 0.22 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q87_food]` |  | 3.57 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v]` | 23.74 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v]` |  | 23.74 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | epoprostenol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | 6-keto-prostacyclin F1a | unknown | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | 84.92 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 84.92 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q44_food]` | 1.69 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q83_food]` | 0.22 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q83_food]` |  | 0.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q87_food]` |  | 3.57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 23.74 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` |  | 23.74 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | epoprostenol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 6-keto-prostacyclin F1a | unknown | mismatch |
 
 </details>
 
@@ -176,7 +176,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=6-keto-prostacyclin F1a) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
 | T1_t_half_terminal | reference | fail | 0.25 | 7.231 | 28.92 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 0.22 | 7.231 | 32.87 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 1.08 | 7.231 | 6.695 | h→SI vs simulated h |

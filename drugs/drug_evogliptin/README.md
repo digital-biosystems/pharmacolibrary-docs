@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;evogliptin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Evogliptin_Kim2025_reference&quot;,&quot;label&quot;:&quot;Kim_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2025_DPP_4&quot;,&quot;label&quot;:&quot;Kim_2025 \u00b7 DPP-4&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_evogliptin/pd_Kim_2025_DPP_4.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Evogliptin_Kim2025_reference&quot;,&quot;label&quot;:&quot;Kim_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2025_DPP_4&quot;,&quot;label&quot;:&quot;Kim_2025 \u00b7 DPP-4&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_evogliptin/pd_Kim_2025_DPP_4.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # evogliptin
 
@@ -25,7 +25,7 @@ Evogliptin is a dipeptidyl peptidase-4 inhibitor used for blood glucose lowering
 
 ## Start here
 
-> **Kim_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with varying degrees of renal disease and healthy subjects, n = 46. [Run it in the simulator](drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md?tab=Simulation) · [record](drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md)
+> **Kim_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with varying degrees of renal disease and healthy subjects, n = 46. [Run it in the simulator](drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md?tab=Simulation) · [record](drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,22 +33,13 @@ Evogliptin is a dipeptidyl peptidase-4 inhibitor used for blood glucose lowering
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Kim_2025_reference](drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+4 cov.) | Kim B et al., Population pharmacokinetic and pharmaco…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13263](https://doi.org/10.1002/psp4.13263) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Kim_2025_reference](drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+4 cov.) | Kim B et al., Population pharmacokinetic and pharmaco…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13263](https://doi.org/10.1002/psp4.13263) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2025_DPP_4](drugs/drug_evogliptin/pd_Kim_2025_DPP_4.md) | DPP-4 activity ← evogliptin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Kim B et al., Population pharmacokinetic and pharmaco…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13263](https://doi.org/10.1002/psp4.13263) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=evogliptin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: DPP4 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -68,7 +59,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 37 matched, 30 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

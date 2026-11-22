@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Penitrem A's Km, CLint, and CLb have incompatible units: µM for a Michaelis constant and h*kg for clearances, with h*kg being unconvertible to SI.
 
 <div class="pk-model-meta" hidden drug="Penitrem A" model-id="PenitremA_Uhlig2020_reference" status="rejected" stale="false" population="Dogs" measured-compound="Penitrem A" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,7 +49,13 @@ Uhlig S, Ivanova L, Voorspoels P, Fæste CK. In Vitro Toxicokinetics and Phase I
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Penitrem A's Km, CLint, and CLb have incompatible units: µM for a Michaelis constant and h*kg for clearances, with h*kg being unconvertible to SI.**
+
+The Michaelis constant Km is recorded in µM, a concentration unit, which conflicts with the mass-per-volume dimension required for its structural definition. The intrinsic and blood clearances (CLint, CLb) are assigned the unit h*kg, representing time multiplied by mass instead of the required volume per time per mass. This h*kg unit cannot be transformed into standard SI units, preventing valid parameter estimation. Extracted — penitrem a: kel 0.03 min−1, t1/2z 23.1 min, Km 12 µM, CLint 1.6 h*kg, CLb 0.9 h*kg, fm 57 %.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G03A&quot;,&quot;href&quot;:&quot;atc/G03A.md&quot;},{&quot;label&quot;:&quot;ethinylestradiol&quot;,&quot;href&quot;:&quot;drugs/drug_ethinylestradiol/&quot;},{&quot;label&quot;:&quot;Trujillo-de_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethinylestradiol_Trujillode2014_reference&quot;,&quot;label&quot;:&quot;Trujillo-de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethinylestradiol_Trujillode2014_reference&quot;,&quot;label&quot;:&quot;Trujillo-de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ethinylestradiol — `Ethinylestradiol_Trujillode2014_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="ethinylestradiol" model-id="Ethinylestradiol_Trujillode2014_reference" status="simulated" stale="false" population="" measured-compound="ethinylestradiol" parameterization="mechanistic" topology="1C"></div>
+> The record was held back because a second reader disputed the volume of distribution value of 323300.0 mL.
+
+<div class="pk-model-meta" hidden drug="ethinylestradiol" model-id="Ethinylestradiol_Trujillode2014_reference" status="needs_review" stale="false" population="" measured-compound="ethinylestradiol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Trujillo-de Santiago G, Patricio Sáenz-Collins C, García-Arellano L, Moisés Álvarez M. Mathematical modeling of the release of active ingredients from a contraceptive patch: ortho evra(®) as a case study. Iranian journal of pharmaceutical research : IJPR 13(1):39–48 (2014).
@@ -26,6 +28,8 @@ Trujillo-de Santiago G, Patricio Sáenz-Collins C, García-Arellano L, Moisés �
 <figure class="pk-models-diagram"><img src="drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference/Ethinylestradiol_Trujillode2014_reference.svg" alt="Ethinylestradiol_Trujillode2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cl a | CL | 7.89 | L h-1 |
@@ -33,7 +37,7 @@ Trujillo-de Santiago G, Patricio Sáenz-Collins C, García-Arellano L, Moisés �
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,11 +47,13 @@ Trujillo-de Santiago G, Patricio Sáenz-Collins C, García-Arellano L, Moisés �
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held back because a second reader disputed the volume of distribution value of 323300.0 mL.**
+
+The extracted volume of distribution for ethinylestradiol is listed as 323300.0 mL, but the second reader marked this value as null. This disagreement contributed to an agreement score of 0.818, where 0 of 1 reader agreed with the record. A secondary dispute also involved a value of 150, which the second reader identified as 0.0244. Extracted — ethinylestradiol: CL 7.89 L h-1, V 3.23e+05 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q47: this record has 150, the second reading 0.0244; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -107,14 +113,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ethinylestradiol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ethinylestradiol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

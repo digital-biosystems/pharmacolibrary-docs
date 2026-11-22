@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Apparent clearance and bioavailability-adjusted volume for canrenone do not reproduce the paper's terminal half-life, and covariate effects were not simulated.
+> The potassium canrenoate model yields a terminal half-life of 28.3 hours, significantly exceeding the paper's reported 11.2 hours.
 
 <div class="pk-model-meta" hidden drug="potassium canrenoate" model-id="PotassiumCanrenoate_Suyagh2012_two_experimentally_determined" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ## Population and dosing
 
-**Population:** paediatric patients · age group infant · n = &gt;=23.
+**Population:** paediatric patients · age group infant.
 
 **Dosed compound ≠ measured compound:** dosed potassium canrenoate, measured canrenone.
 
@@ -57,9 +57,9 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ### Reviewer guidance
 
-**Apparent clearance and bioavailability-adjusted volume for canrenone do not reproduce the paper's terminal half-life, and covariate effects were not simulated.**
+**The potassium canrenoate model yields a terminal half-life of 28.3 hours, significantly exceeding the paper's reported 11.2 hours.**
 
-The model's terminal half-life is 28.3 hours, whereas the paper reports values ranging from 0.13 to 19.58 hours, indicating the fitted parameters yield incorrect elimination kinetics. The apparent clearance (12.73 L/h) and volume (519.8 L) likely contain unit conversion or parameterization errors causing this discrepancy. Additionally, the model includes weight-based covariates with powers of 0.798 and 1.07, but only the reference individual was simulated, leaving these effects unverified. Extracted — canrenone: CLm,norm/F 12.7 L/h, V/F 520 L, kfm 4.48 1/h.
+The simulated terminal half-life of 28.29651928153687 hours conflicts with the expected 11.2 hours, indicating a structural or parameter mismatch. A second reader disagreed on the apparent clearance (14.13 vs 12.73) and metabolite formation rate (5.79 vs 4.48) values. Additionally, covariate effects were defined but not exercised in the simulation. Extracted — canrenone: CLm,norm/F 12.7 L/h, V/F 520 L, kfm 4.48 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f (l/hr/70 kg) θcl/f].parameter_id`: this record has Q375, the second reading Q27; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -165,7 +165,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=canrenone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev-1: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 11.2 | 28.3 | 2.526 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 0.13 | 28.3 | 217.7 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 0.13 | 28.3 | 217.7 | min→SI vs simulated h |

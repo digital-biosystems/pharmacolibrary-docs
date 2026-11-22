@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Two transfer rate constants between the central and peripheral compartments are missing from the one-compartment praziquantel model for Ugandan children.
+> The praziquantel model record is incomplete because the central-to-peripheral transfer rate constant, k12, was not included in the final parameter set despite a value of 22.28 h−1 being present in the source data.
 
 <div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bustinduy2016_median" status="needs_review" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 
 ### Reviewer guidance
 
-**Two transfer rate constants between the central and peripheral compartments are missing from the one-compartment praziquantel model for Ugandan children.**
+**The praziquantel model record is incomplete because the central-to-peripheral transfer rate constant, k12, was not included in the final parameter set despite a value of 22.28 h−1 being present in the source data.**
 
-The record lists Kcp (22.28 h−1) and Kpc (25.71 h−1) for the praziquantel population, but neither parameter was included in the final model output. Consequently, the model builder defaulted the absorption lag time and assumed bioavailability equals one without molar correction, causing the parameter coverage check to fail. Extracted — praziquantel: kabs 9.88 h−1, CL/F 678 liter/h, V/F 504 liter, k12 22.3 h−1, k21 25.7 h−1, tlag 1.67 h.
+The review identified that four parameters were covered out of six expected, with k12 and k21 flagged as missing from the emitted or defaulted list. While the facts provide explicit values for k12 (22.28 h−1) and k21 (25.71 h−1), the failed check indicates these transfer constants were not properly emitted. This discrepancy means the two-compartment structure for praziquantel distribution is not fully parameterized in the record. Extracted — praziquantel: kabs 9.88 h−1, CL/F 678 liter/h, V/F 504 liter, k12 22.3 h−1, k21 25.7 h−1, tlag 1.67 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -133,16 +133,17 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=praziquantel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['k12', 'k21'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=apparent_assumption: not acceptable; deviation_id=defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped |  | 0.3629 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=praziquantel) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21'] |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 0.3629 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

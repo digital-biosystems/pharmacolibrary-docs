@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Arketamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arketamine_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/Arketamine_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arketamine_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/Arketamine_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # Arketamine
 
@@ -26,18 +26,12 @@
 | ketamine | metabolite | 237.727 | C13H16ClNO | PubChem | [644025](https://pubchem.ncbi.nlm.nih.gov/compound/644025) | Weiss_2023 |
 | N-demethylketamine | metabolite | — (mass units only) | — | — | — | — |
 
-## Start here
-
-> **Fux_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_arketamine/Arketamine_Fux2022_reference.md?tab=Simulation) · [record](drugs/drug_arketamine/Arketamine_Fux2022_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Fux_2022_reference](drugs/drug_arketamine/Arketamine_Fux2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Fux D et al., Pharmacokinetics of metamizole (dipyron…, PloS one (2022) | [10.1371/journal.pone.0265305](https://doi.org/10.1371/journal.pone.0265305) |
 | <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Kaka_1979_reference](drugs/drug_arketamine/Arketamine_Kaka1979_reference.md) | — | 1-compartment (no model) | 2 | Kaka JS et al., Pharmacokinetics of ketamine in the hor…, American journal of veterin… (1979) | — |
+| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Fux_2022_reference](drugs/drug_arketamine/Arketamine_Fux2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Fux D et al., Pharmacokinetics of metamizole (dipyron…, PloS one (2022) | [10.1371/journal.pone.0265305](https://doi.org/10.1371/journal.pone.0265305) |
 | <span class="pk-rf" hidden data-species="cat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Heavner_1979_reference](drugs/drug_arketamine/Arketamine_Heavner1979_reference.md) | — | 1-compartment (no model) | 0 | Heavner JE et al., Ketamine kinetics: decerebrate vs. inta…, Canadian journal of physiol… (1979) | [10.1139/y79-134](https://doi.org/10.1139/y79-134) |
 | <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kaka_1980_reference](drugs/drug_arketamine/Arketamine_Kaka1980_reference.md) | — | general linear (no model) | 0 | Kaka JS et al., Pharmacokinetics of ketamine and two me…, Journal of pharmacokinetics… (1980) | [10.1007/BF01065193](https://doi.org/10.1007/BF01065193) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Stojanova_2026_reference](drugs/drug_arketamine/Arketamine_Stojanova2026_reference.md) | — | 2-compartment (no model) | 8 | Stojanova J et al., Continuous Subcutaneous Ketamine Infusi…, Pharmacotherapy (2026) | [10.1002/phar.70150](https://doi.org/10.1002/phar.70150) |
@@ -63,13 +57,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-22 09:37 | 5:37 | 2/6/0 | 1/0/0 | 0/0/0 | 339,536/21,458 | einfracz / qwen3.8-27b | 29 | 3/26 | 29/0 | 0 |
+| 2026-10-22 09:37 | 5:37 | 1/7/0 | 1/0/0 | 0/0/0 | 339,536/21,458 | einfracz / qwen3.8-27b | 29 | 3/26 | 29/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1533 matched, 186 returned
 - **screened:** 35  ·  **relevant:** 4
-- **records:** 8  ·  extracted 1  ·  needs review 1  ·  rejected 6  ·  stale 1
+- **records:** 8  ·  extracted 0  ·  needs review 1  ·  rejected 7  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

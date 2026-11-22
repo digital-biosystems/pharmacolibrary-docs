@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> The record is invalid because it uses steady-state volume as the distribution volume and conflates celecoxib with THC parameters.
+> The record was held for review because the reported celecoxib Vss of 46.4 L is disputed; the second reader reported 22.9 L.
 
 <div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Vaddady2011_shock_0_56" status="needs_review" stale="false" population="pigs in hemorrhagic shock and normotensive pigs" measured-compound="THC and celecoxib" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Vaddady PK, Mehrotra N, Zhang X, Yates CR, Moore BM, Meibohm B. Pharmacokinetics
 
 ### Reviewer guidance
 
-**The record is invalid because it uses steady-state volume as the distribution volume and conflates celecoxib with THC parameters.**
+**The record was held for review because the reported celecoxib Vss of 46.4 L is disputed; the second reader reported 22.9 L.**
 
-The model builder substituted the 46.4 L steady-state volume for the central volume because no specific distribution volume was reported, which distorts early pharmacokinetics. Clearance of 21 L/h is ambiguously attributed to both THC and celecoxib, creating a conflicting analyte definition. The second reader disagreed on the dose compound, primary analyte, and the specific value for the distribution volume, reading it as 22.9 L. Extracted — celecoxib: Vss 46.4 L, t1/2z 65 h; THC and celecoxib: CL 21 l/h.
+The second reader marked the measured analyte as unknown, did not report the 65.0 h terminal half-life or clearance of 21 L/h, and reported mean clearance of 22.9. The model used Vss as the distribution volume because no central volume was reported; this reproduced AUC and terminal half-life but not the early distribution phase. The cross-reader disagreement left the record disputed, with agreement of 0.375. Extracted — celecoxib: Vss 46.4 L, t1/2z 65 h; THC and celecoxib: CL 21 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has THC and celecoxib, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=THC and celecoxib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | vss_as_v: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 2.08 | 2.146 | 1.032 | h→SI vs simulated h |
 
 <details class="legend">

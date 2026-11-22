@@ -16,7 +16,7 @@ Othman AA, Tran JQ, Tang MT, Dutta S. Population pharmacokinetics of daclizumab 
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = ??.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

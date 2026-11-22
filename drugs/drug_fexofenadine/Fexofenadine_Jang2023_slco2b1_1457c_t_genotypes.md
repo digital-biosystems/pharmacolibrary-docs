@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The fexofenadine model fails tmax, Cmax, and half-life checks and uses default absorption parameters unsupported by the paper.
+> Fexofenadine model failed checks because absorption rate was defaulted, causing simulated peak time and concentration to diverge significantly from reported paper values.
 
 <div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes" status="needs_review" stale="false" population="healthy adults" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></div>
 
@@ -59,9 +59,9 @@ Jang JH, Jeong SH, Lee YB. Quantitative assessment of the relevance of organic-a
 
 ### Reviewer guidance
 
-**The fexofenadine model fails tmax, Cmax, and half-life checks and uses default absorption parameters unsupported by the paper.**
+**Fexofenadine model failed checks because absorption rate was defaulted, causing simulated peak time and concentration to diverge significantly from reported paper values.**
 
-The simulated peak concentration is 0.000185 ng/mL while the paper reports 0.00045 ng/mL, and the simulated tmax is 2.98 h versus the paper's 2.0 h. The terminal half-life is 2.99 h in the simulation compared to 2.45 h in the reference data. The absorption rate constant and lag time were left at library defaults rather than extracted from the source, and the bioavailability was assumed to be 1. Extracted — fexofenadine: t1/2z 2.92 h, tmax 1.72 h, Cmax 930 ng/mL, AUCt 5.11e+03 h·ng/mL, AUC∞ 5.62e+03 h·ng/mL, V/F 167 L, CL/F 38.9 L/h, MRT 5.13 h, … (+2).
+The model builder used library defaults for the absorption rate constant and lag time instead of values from the source, as the paper did not report them. This caused the simulated time to peak to be 2.98 hours versus the paper's 2.0 hours, and the peak concentration to be 0.000185 versus the paper's 0.00045. The terminal half-life also deviated, with the model producing 2.99 hours compared to the paper's 2.45 hours. Extracted — fexofenadine: t1/2z 2.92 h, tmax 1.72 h, Cmax 930 ng/mL, AUCt 5.11e+03 h·ng/mL, AUC∞ 5.62e+03 h·ng/mL, V/F 167 L, CL/F 38.9 L/h, MRT 5.13 h, … (+2).
 
 Independently confirmed by `qwen3.8-27b`.
 
@@ -161,7 +161,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=fexofenadine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_cmax | reference | fail | 0.0004502 | 0.0001846 | 0.4101 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0005616 | 0.0001846 | 0.3287 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0007709 | 0.0001846 | 0.2395 | ng/mL→SI vs simulated kg/m3 |

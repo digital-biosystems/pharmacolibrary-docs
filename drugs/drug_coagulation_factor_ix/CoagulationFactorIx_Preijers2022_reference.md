@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for coagulation factor IX was rejected because clearance and central volume values are implausibly small, indicating a unit or scale extraction error.
+> Record rejected due to imphysiological volume parameters, specifically V3 at 3990 mL, which is implausible for factor IX.
 
 <div class="pk-model-meta" hidden drug="coagulation factor IX" model-id="CoagulationFactorIx_Preijers2022_reference" status="rejected" stale="false" population="hemophilia B patients" measured-compound="factor IX" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,9 +58,9 @@ Preijers T, van Spengler MWF, Meijer K, Fijnvandraat K, Fischer K, Leebeek FWG e
 
 ### Reviewer guidance
 
-**The record for coagulation factor IX was rejected because clearance and central volume values are implausibly small, indicating a unit or scale extraction error.**
+**Record rejected due to imphysiological volume parameters, specifically V3 at 3990 mL, which is implausible for factor IX.**
 
-Clearance is listed as 4.6 mL/h and central volume as 4.8 mL, magnitudes that are physiologically impossible for this molecule in human patients. These values are several orders of magnitude lower than expected for an extended half-life factor IX concentrate, confirming a significant extraction error. The record also contains duplicate covariate power parameters and conflicting second-reader identifications for the dose compound. Extracted — coagulation factor ix: CL 4.6 mL/h, V1 4.8 mL, Q2 35.2 mL/h, V2 11.8 mL, Q3 3.93e+03 mL/h, V3 3.99e+03 mL, t1/2z 94.3 h.
+The third compartment volume (V3) is recorded as 3990 mL, a magnitude outside the physiological window for this molecule. Similarly, the intercompartmental clearance Q3 is listed as 3930 mL/h, creating a suspiciously large scale compared to the other parameters. These extreme values indicate a likely unit or scale extraction error in the parameter definitions. Extracted — coagulation factor ix: CL 4.6 mL/h, V1 4.8 mL, Q2 35.2 mL/h, V2 11.8 mL, Q3 3.93e+03 mL/h, V3 3.99e+03 mL, t1/2z 94.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has extended half-life factor IX concentrates, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

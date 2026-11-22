@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;levonadifloxacin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Mason_2019_ddHR&quot;,&quot;label&quot;:&quot;Mason_2019 \u00b7 ddHR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levonadifloxacin/pd_Mason_2019_ddHR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mason_2019_ddQTcF&quot;,&quot;label&quot;:&quot;Mason_2019 \u00b7 ddQTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levonadifloxacin/pd_Mason_2019_ddQTcF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # levonadifloxacin
 
@@ -23,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Mason_2019_ddHR](drugs/drug_levonadifloxacin/pd_Mason_2019_ddHR.md) | Heart Rate ← levonadifloxacin · direct linear effect | ▶ model + simulator | Mason JW et al., Electrocardiographic Effects of a Supra…, Clinical and translational… (2019) | [10.1111/cts.12594](https://doi.org/10.1111/cts.12594) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mason_2019_ddQTcF](drugs/drug_levonadifloxacin/pd_Mason_2019_ddQTcF.md) | QTcF ← levonadifloxacin · direct linear effect | ▶ model + simulator | Mason JW et al., Electrocardiographic Effects of a Supra…, Clinical and translational… (2019) | [10.1111/cts.12594](https://doi.org/10.1111/cts.12594) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Mason_2019_ddHR](drugs/drug_levonadifloxacin/pd_Mason_2019_ddHR.md) | Heart Rate ← levonadifloxacin · direct linear effect | — | Mason JW et al., Electrocardiographic Effects of a Supra…, Clinical and translational… (2019) | [10.1111/cts.12594](https://doi.org/10.1111/cts.12594) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mason_2019_ddQTcF](drugs/drug_levonadifloxacin/pd_Mason_2019_ddQTcF.md) | QTcF ← levonadifloxacin · direct linear effect | — | Mason JW et al., Electrocardiographic Effects of a Supra…, Clinical and translational… (2019) | [10.1111/cts.12594](https://doi.org/10.1111/cts.12594) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 12:51 | 3:04 | 0/0/0 | 1/0/0 | 0/0/0 | 60,084/3,528 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-13 12:51 | 3:04 | 0/0/0 | 2/0/0 | 0/0/0 | 60,084/3,528 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 

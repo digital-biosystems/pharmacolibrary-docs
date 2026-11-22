@@ -4,11 +4,11 @@
 
 # triamcinolone — `Triamcinolone_French2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-04 04:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the extracted clearance and volume of distribution values are physiologically implausible for triamcinolone acetonide in horses.
+> Triamcinolone acetonide clearance (0.0001 mL/h/kg) and distribution volume (0.0497 mL/kg) were judged implausible in magnitude, prompting rejection.
 
-<div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_French2000_reference" status="rejected" stale="true" population="horses" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_French2000_reference" status="rejected" stale="false" population="horses" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 French K, Pollitt CC, Pass MA. Pharmacokinetics and metabolic effects of triamcinolone acetonide and their possible relationships to glucocorticoid-induced laminitis in horses. Journal of veterinary pharmacology and therapeutics 23(5):287–292 (2000).
@@ -39,7 +39,7 @@ French K, Pollitt CC, Pass MA. Pharmacokinetics and metabolic effects of triamci
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ French K, Pollitt CC, Pass MA. Pharmacokinetics and metabolic effects of triamci
 
 ### Reviewer guidance
 
-**The record was rejected because the extracted clearance and volume of distribution values are physiologically implausible for triamcinolone acetonide in horses.**
+**Triamcinolone acetonide clearance (0.0001 mL/h/kg) and distribution volume (0.0497 mL/kg) were judged implausible in magnitude, prompting rejection.**
 
-The model lists a total clearance of 0.0001 mL/h/kg and a volume of distribution of 0.0497 mL/kg, magnitudes far outside the expected physiological range for this compound. Because the data were derived solely from the paper's abstract, these summary statistics were used to represent a fitted model, leading to the failed physiological window check. The second reader also could not confirm the specific dose compound or primary analyte, noting them as unknown. Extracted — triamcinolone: t1/2α 83.5 min, t1/2z 12 h, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+The reported clearance and volume were flagged as an implausible magnitude, consistent with a unit or scale extraction error. The record was built from the abstract alone, so summary statistics stood in for a fitted model. A second reader did not confirm triamcinolone acetonide as the dose compound or primary analyte and disagreed about whether the half-lives of 83.5 min and 12 h were extracted. Extracted — triamcinolone: t1/2α 83.5 min, t1/2z 12 h, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has triamcinolone acetonide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triamcinolone acetonide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -93,18 +93,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[half-life of the rapid elimination phase]` | 83.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life of the rapid elimination phase]` |  | 83.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life of the slower phase]` | 12 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life of the slower phase]` |  | 12 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | triamcinolone acetonide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | triamcinolone acetonide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[half-life of the rapid elimination phase]` | 83.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life of the rapid elimination phase]` |  | 83.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life of the slower phase]` | 12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life of the slower phase]` |  | 12 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | triamcinolone acetonide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | triamcinolone acetonide | unknown | mismatch |
 
 </details>
 

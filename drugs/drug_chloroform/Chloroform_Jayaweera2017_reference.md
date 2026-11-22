@@ -16,7 +16,7 @@ Jayaweera D, Islam S, Gunja N, Cowie C, Broska J, Poojara L et al. Chloroform in
 
 ## Population and dosing
 
-**Population:** 30-year-old female · condition chloroform poisoning · age group adult · n = &gt;=2.
+**Population:** 30-year-old female · condition chloroform poisoning · age group adult.
 
 ## Model
 

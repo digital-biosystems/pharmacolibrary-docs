@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;varenicline&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/&quot;},{&quot;label&quot;:&quot;Glatard_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax_2&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax_2&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # varenicline — `Varenicline_Glatard2019_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 03:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The 8.5 L/h varenicline clearance entry is labeled as a biomarker estimate rather than varenicline disposition, and terminal half-life is 15.2 h versus the paper’s 19 h.
 
-<div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Glatard2019_reference" status="extracted" stale="true" population="adult smokers from the general population" measured-compound="varenicline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Glatard2019_reference" status="rejected" stale="false" population="adult smokers from the general population" measured-compound="varenicline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Glatard A, Guidi M, Dobrinas M, Cornuz J, Csajka C, Eap CB. Influence of body weight and UGT2B7 polymorphism on varenicline exposure in a cohort of smokers from the general population. European journal of clinical pharmacology 75(7):939–949 (2019).
@@ -31,6 +31,8 @@ Glatard A, Guidi M, Dobrinas M, Cornuz J, Csajka C, Eap CB. Influence of body we
 <figure class="pk-models-diagram"><img src="drugs/drug_varenicline/Varenicline_Glatard2019_reference/Varenicline_Glatard2019_reference.svg" alt="Varenicline_Glatard2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 9.6 | L/h |
@@ -40,7 +42,7 @@ Glatard A, Guidi M, Dobrinas M, Cornuz J, Csajka C, Eap CB. Influence of body we
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +52,13 @@ Glatard A, Guidi M, Dobrinas M, Cornuz J, Csajka C, Eap CB. Influence of body we
 
 ### Reviewer guidance
 
-**The record was rejected because a clearance parameter is mislabeled with a CYP2D6 genotype biomarker, and the model's terminal half-life of 15.2 hours mismatches the paper's 24.0 hours.**
+**The 8.5 L/h varenicline clearance entry is labeled as a biomarker estimate rather than varenicline disposition, and terminal half-life is 15.2 h versus the paper’s 19 h.**
 
-The total clearance value of 8.5 L/h is labeled 'CL/F estimate for a 70-kg individual with normal creatinine clearance in Hom-Alt/Het-Alt individuals,' describing a metabolic biomarker rather than varenicline disposition. Additionally, the model builder assumed bioavailability F=1, which conflicts with the apparent pharmacokinetic parameterization. These issues, combined with the half-life discrepancy, indicate the extracted parameters do not represent the drug's actual kinetics. Extracted — varenicline: CL/F 9.6 L/h, V/F 211 L, CL 8.5 L/h, kabs 0.98 h -1.
+The 8.5 L/h clearance label describes an estimate for a 70-kg individual with normal creatinine clearance in Hom-Alt/Het-Alt individuals; the finding flags the disposition label as naming a biomarker, whose kinetics are assigned to a PD record rather than varenicline. The model does not reproduce the paper's terminal half-life (paper 19, model 15.2). Tlag was defaulted, and the apparent parameterization assumes F=1, Fm=1, and no molar correction; a second reader disputed the record overall (agreement 0.2, 0 of 1 readers agree). Extracted — varenicline: CL/F 9.6 L/h, V/F 211 L, CL 8.5 L/h, kabs 0.98 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has varenicline, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -148,7 +150,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=varenicline) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 19 | 15.22 | 0.8011 | h→SI vs simulated h |
 | T1_t_half_beta | reference | fail | 24 | 15.22 | 0.6342 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | skipped |  | 15.22 |  | non-numeric value |
@@ -163,19 +166,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

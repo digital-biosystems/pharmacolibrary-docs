@@ -16,7 +16,7 @@ Liao MZ, Prenen H, Dutta S, Upreti VV. The impact of hepatic and renal function 
 
 ## Population and dosing
 
-**Population:** patients with metastatic RAS wild-type colorectal cancer · condition metastatic RAS wild-type colorectal cancer · age group adult · n = , 349 and 351.
+**Population:** patients with metastatic RAS wild-type colorectal cancer · condition metastatic RAS wild-type colorectal cancer · age group adult.
 
 **Dosing:** 420 mg, iv, multiple, every 14 h.
 

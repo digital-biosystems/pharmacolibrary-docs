@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Palbociclib's clearance, volume of distribution, and lag time used library placeholders because all extracted parameters describe neutrophils.
+> Palbociclib's clearance, volume of distribution, and lag time lacked values, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Marouille2021_final_final_population_pk_model_wi" status="model_quarantined" stale="false" population="women with HR+/HER2− advanced or metastatic breast cancer" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Marouille AL, Petit E, Kaderbhaï C, Desmoulins I, Hennequin A, Mayeur D et al. 
 
 ### Reviewer guidance
 
-**Palbociclib's clearance, volume of distribution, and lag time used library placeholders because all extracted parameters describe neutrophils.**
+**Palbociclib's clearance, volume of distribution, and lag time lacked values, so the record was held back.**
 
-All four extracted parameters for palbociclib are incorrectly assigned to neutrophils (ANC) rather than the drug compound. Consequently, the model builder could not extract specific values for palbociclib's pharmacokinetics, forcing the use of default placeholders for clearance, volume, and lag time. This lack of explicit estimates resulted in the model being quarantined instead of published. Extracted — neutrophils (ANC): CL/F 57.1 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 h.
+All four extracted parameters describe neutrophils, not palbociclib, leaving the drug's clearance, volume, and lag time undefined. No explicit numeric estimates were provided for these palbociclib parameters. The model relied on library placeholders for these missing values rather than fitted numbers. Extracted — neutrophils (ANC): CL/F 57.1 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 h.
 
 Independently confirmed by `qwen3.8-27b`.
 
@@ -140,14 +140,15 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -165,30 +166,13 @@ _All readers agree on the compared fields of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab_simbio.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_sbml.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_cellml.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Marouille AL, Petit E, Kaderbhaï C, Desmoulins I, Hennequin A, Mayeur D et al. Pharmacokinetic/Pharmacodynamic Model of Neutropenia in Real-Life Palbociclib-Treated Patients. Pharmaceutics 13(10) (2021). [doi:10.3390/pharmaceutics13101708](https://doi.org/10.3390/pharmaceutics13101708)
-
-**This record:** Pharmacolibrary, model `Palbociclib_Marouille2021_final_final_population_pk_model_wi`. <https://pharmacolibrary.github.io/#/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi>
-
-```bibtex
-@misc{pharmacolibrary_PalbociclibMarouille2021finalfinalpopulationpkmodelwi,
-  title  = {{Pharmacolibrary model Palbociclib_Marouille2021_final_final_population_pk_model_wi}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi},
-  note   = {Parameters from doi:10.3390/pharmaceutics13101708},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

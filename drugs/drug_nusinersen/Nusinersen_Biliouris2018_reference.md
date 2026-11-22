@@ -4,11 +4,11 @@
 
 # nusinersen — `Nusinersen_Biliouris2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-07 03:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="nusinersen" model-id="Nusinersen_Biliouris2018_reference" status="rejected" stale="true" population="nonhuman primates" measured-compound="nusinersen" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nusinersen" model-id="Nusinersen_Biliouris2018_reference" status="rejected" stale="false" population="nonhuman primates" measured-compound="nusinersen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Biliouris K, Gaitonde P, Yin W, Norris DA, Wang Y, Henry S et al. A Semi-Mechanistic Population Pharmacokinetic Model of Nusinersen: An Antisense Oligonucleotide for the Treatment of Spinal Muscular Atrophy. CPT: pharmacometrics & systems pharmacology 7(9):581–592 (2018).
@@ -36,7 +36,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

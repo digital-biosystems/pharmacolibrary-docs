@@ -5,11 +5,11 @@
 
 # moxidectin — `Moxidectin_Vanapalli2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 15:43 UTC (Rejected), but the paper was screened again on 2026-10-07 10:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Vanapalli2002_reference" status="needs_review" stale="true" population="beagle dogs infected with Brugia pahangi" measured-compound="moxidectin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Vanapalli2002_reference" status="needs_review" stale="false" population="beagle dogs infected with Brugia pahangi" measured-compound="moxidectin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Vanapalli SR, Hung YP, Fleckenstein L, Dzimianski MT, McCall JW. Pharmacokinetics and dose proportionality of oral moxidectin in beagle dogs. Biopharmaceutics & drug disposition 23(7):263–272 (2002).
@@ -39,7 +39,7 @@ Vanapalli SR, Hung YP, Fleckenstein L, Dzimianski MT, McCall JW. Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Vanapalli SR, Hung YP, Fleckenstein L, Dzimianski MT, McCall JW. Pharmacokinetic
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — moxidectin: t1/2z 458 h, t1/2ka 0.6 h, tmax 2.75 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc (0-last determination) values for: this record has none, the second reading 250. That field does not shape the model.
 

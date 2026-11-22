@@ -65,7 +65,7 @@ Imipramine, the prototypical tricyclic antidepressant (TCA), is a dibenzazepine-
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub><br><sub>blocking: split column '7' is a table statistic/structure column, not a study population…</sub> | [↳ 7](drugs/toxin_imipramine/Imipramine_Pardridge2023_7.md) | — | 1-compartment (no model) | 1 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub><br><sub>blocking: split column '8' is a table statistic/structure column, not a study population…</sub> | [↳ 8](drugs/toxin_imipramine/Imipramine_Pardridge2023_8.md) | — | 1-compartment (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub><br><sub>blocking: split column '9' is a table statistic/structure column, not a study population…</sub> | [↳ 9](drugs/toxin_imipramine/Imipramine_Pardridge2023_9.md) | — | 1-compartment (no model) | 1 |  |  |
-| <span class="pk-rf" hidden data-species="unknown" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Yokogawa_2002_reference](drugs/toxin_imipramine/Imipramine_Yokogawa2002_reference.md) | — | 1-compartment (no model) | 0 | Yokogawa K et al., Influence of lipophilicity and lysosoma…, Methods and findings in exp… (2002) | [10.1358/mf.2002.24.2.677131](https://doi.org/10.1358/mf.2002.24.2.677131) |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.95).">in vitro</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Yokogawa_2002_reference](drugs/toxin_imipramine/Imipramine_Yokogawa2002_reference.md) | — | 1-compartment (no model) | 0 | Yokogawa K et al., Influence of lipophilicity and lysosoma…, Methods and findings in exp… (2002) | [10.1358/mf.2002.24.2.677131](https://doi.org/10.1358/mf.2002.24.2.677131) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [el-Yazigi_1988_reference](drugs/toxin_imipramine/Imipramine_elYazigi1988_reference.md) | — | retention function (no model) | 6 | el-Yazigi A et al., Steady-state kinetics of doxepin and im…, Psychopharmacology (1988) | [10.1007/BF00212768](https://doi.org/10.1007/BF00212768) |
 
 ## Pharmacogenomics (PGx)
@@ -82,29 +82,6 @@ Imipramine, the prototypical tricyclic antidepressant (TCA), is a dibenzazepine-
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=imipramine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `SLC22A4` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate, `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` substrate, `CYP2C19` formation/inhibitor/substrate, `CYP2C9` safety_allele, `CYP2D6` inhibitor/metabolism/substrate, `CYP2E1` inhibitor, `CYP3A4` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` substrate, `SLC22A2` inhibitor, `SLC22A4` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), CYP2C18 (substrate), DRD1 (binder), DRD2 (binder), HRH1 (target), HTR1A (activator), HTR2A (target), HTR2C (target), HTR6 (binder), HTR7 (target), KCND2 (inhibitor), KCND3 (inhibitor), KCNH1 (inhibitor), KCNH2 (inhibitor), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

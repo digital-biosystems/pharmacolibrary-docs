@@ -25,7 +25,7 @@ Valdecoxib is a selective cyclooxygenase-2 inhibitor used to treat osteoarthriti
 
 ## Start here
 
-> **Tan_2016_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> children undergoing tonsillectomy +/- adenoidectomy, n = ... (truncated).... [Run it in the simulator](drugs/drug_valdecoxib/Valdecoxib_Tan2016_reference.md?tab=Simulation) · [record](drugs/drug_valdecoxib/Valdecoxib_Tan2016_reference.md)
+> **Tan_2016_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> children undergoing tonsillectomy +/- adenoidectomy. [Run it in the simulator](drugs/drug_valdecoxib/Valdecoxib_Tan2016_reference.md?tab=Simulation) · [record](drugs/drug_valdecoxib/Valdecoxib_Tan2016_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -40,21 +40,6 @@ Valdecoxib is a selective cyclooxygenase-2 inhibitor used to treat osteoarthriti
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka, k13, k31</sub> | [Tan_2016_reference](drugs/drug_valdecoxib/Valdecoxib_Tan2016_reference.md) | ▶ model + simulator | 3-compartment, oral | 7 | Tan L et al., Pharmacokinetics and analgesic effectiv…, Paediatric anaesthesia (2016) | [10.1111/pan.13009](https://doi.org/10.1111/pan.13009) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=valdecoxib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C9` inhibitor/substrate, `CYP3A4` substrate, `UGT1A9` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CA2 (inhibitor), CA3 (inhibitor), PTGS2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

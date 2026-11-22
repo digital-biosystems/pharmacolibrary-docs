@@ -4,11 +4,11 @@
 
 # terfenadine — `Terfenadine_Lalonde1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-07 21:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Terfenadine record rejected because V1/F was extracted as 89.8 with dimensionless units, conflicting with a two-compartment oral model requiring volume units.
+> Terfenadine’s CL/F of 4.42 1/hr and distribution volumes V1/F 89.8 and V2 119.2 have units that conflict with their pharmacokinetic dimensions.
 
-<div class="pk-model-meta" hidden drug="terfenadine" model-id="Terfenadine_Lalonde1996_reference" status="rejected" stale="true" population="healthy male adults" measured-compound="terfenadine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="terfenadine" model-id="Terfenadine_Lalonde1996_reference" status="rejected" stale="false" population="healthy male adults" measured-compound="terfenadine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Lalonde RL, Lessard D, Gaudreault J. Population pharmacokinetics of terfenadine. Pharmaceutical research 13(6):832–838 (1996).
@@ -41,7 +41,7 @@ Lalonde RL, Lessard D, Gaudreault J. Population pharmacokinetics of terfenadine.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Lalonde RL, Lessard D, Gaudreault J. Population pharmacokinetics of terfenadine.
 
 ### Reviewer guidance
 
-**Terfenadine record rejected because V1/F was extracted as 89.8 with dimensionless units, conflicting with a two-compartment oral model requiring volume units.**
+**Terfenadine’s CL/F of 4.42 1/hr and distribution volumes V1/F 89.8 and V2 119.2 have units that conflict with their pharmacokinetic dimensions.**
 
-The central volume parameter V1/F is reported as 89.8 with units listed as '1', which is a dimensional mismatch for a volume of distribution. Additionally, the peripheral compartment volume V2 is 119.2 with units '1', further compounding the structural inconsistency. The second reader marked several key parameters, including clearance and Cmax, as null, indicating they could not be validated from the abstract-only source text. Extracted — terfenadine: kabs 2.8 hr-1, tlag 0.33 hr, CL/F 4.42 1/hr, V1/F 89.8 1, Cmax 1.54 ng/ml, tmax 1.3 hr, t1/2z 15.1 hr, V2 119 1.
+CL/F is clearance, which has dimensions of volume per time, while V1/F and V2 are distribution volumes, but their recorded units are 1/hr and dimensionless, respectively. The reported structure also has an unreachable or orphan compartment; because only the abstract was read, summary statistics stand in for a fitted model. A second reader marked the dose compound and primary analyte unknown and did not identify CL/F or several reported estimates. Extracted — terfenadine: kabs 2.8 hr-1, tlag 0.33 hr, CL/F 4.42 1/hr, V1/F 89.8 1, Cmax 1.54 ng/ml, tmax 1.3 hr, t1/2z 15.1 hr, V2 119 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has terfenadine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

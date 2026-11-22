@@ -16,7 +16,7 @@ Al-Kofahi M, Ahmed MA, Jaber MM, Tran TN, Willis BA, Zimmerman CL et al. An inte
 
 ## Population and dosing
 
-**Population:** children with congenital adrenal hyperplasia · condition congenital adrenal hyperplasia · age group child · n = &lt;integer&gt;.
+**Population:** children with congenital adrenal hyperplasia · condition congenital adrenal hyperplasia · age group child.
 
 **Dosed compound ≠ measured compound:** dosed hydrocortisone, measured cortisol.
 

@@ -4,11 +4,11 @@
 
 # sofosbuvir — `Sofosbuvir_Rower2015v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 17:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="sofosbuvir" model-id="Sofosbuvir_Rower2015v2_reference" status="needs_review" stale="true" population="HCV patients receiving sofosbuvir therapy" measured-compound="sofosbuvir triphosphate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sofosbuvir" model-id="Sofosbuvir_Rower2015v2_reference" status="needs_review" stale="false" population="HCV patients receiving sofosbuvir therapy" measured-compound="sofosbuvir triphosphate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rower JE, Jimmerson LC, Chen X, Zheng JH, Hodara A, Bushman LR et al. Validation and Application of a Liquid Chromatography-Tandem Mass Spectrometry Method To Determine the Concentrations of Sofosbuvir Anabolites in Cells. Antimicrobial agents and chemotherapy 59(12):7671-7679 (2015).
@@ -37,7 +37,7 @@ Rower JE, Jimmerson LC, Chen X, Zheng JH, Hodara A, Bushman LR et al. Validation
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Rower JE, Jimmerson LC, Chen X, Zheng JH, Hodara A, Bushman LR et al. Validation
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sofosbuvir's own; they describe sofosbuvir triphosphate.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sofosbuvir's own; they describe sofosbuvir triphosphate. Extracted — sofosbuvir triphosphate: t1/2z 26 h, tlag 2 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of pharmacological delay: this record has 2.0, the second reading none. That field does not shape the model.
 

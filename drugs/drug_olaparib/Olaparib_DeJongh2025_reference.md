@@ -5,11 +5,11 @@
 
 # olaparib — `Olaparib_DeJongh2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 16:10 UTC (Rejected), but the paper was screened again on 2026-10-06 21:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because AZD7648 is defined as an orphan entity with no dose path, creating an unreachable compartment.
+> The record was rejected because AZD7648 is defined as an orphan entity with no dose path, creating an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_DeJongh2025_reference" status="rejected" stale="true" population="SCID and Nude mice" measured-compound="olaparib" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_DeJongh2025_reference" status="rejected" stale="false" population="SCID and Nude mice" measured-compound="olaparib" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 DeJongh J, Cadogan E, Davies M, Ramos-Montoya A, Smith A, van Steeg T et al. Defining preclinical efficacy with the DNAPK inhibitor AZD7648 in combination with olaparib: a minimal systems pharmacokinetic-pharmacodynamic model. Journal of pharmacokinetics and pharmacodynamics 52(2):17 (2025).
@@ -48,7 +48,7 @@ DeJongh J, Cadogan E, Davies M, Ramos-Montoya A, Smith A, van Steeg T et al. Def
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.696). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.696). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

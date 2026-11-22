@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;beta-Zearalenol&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/&quot;},{&quot;label&quot;:&quot;Qin_2026 \u00b7 z14g&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="beta-Zearalenol" model-id="BetaZearalenol_Qin2026_z14g" status="rejected" stale="false" population="male sheep" measured-compound="beta-Zearalenol (beta-ZOL)" parameterization="apparent" topology="general_linear"></div>
 
@@ -58,7 +58,13 @@ Qin J, Zhang Q, Ren N, Su Z, Zheng Z, Yin T et al. Toxicokinetics, Biotransforma
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**C8 unreachable/orphan compartment or unlinked metabolite.**
+
+A reported unit could not be converted (AUC), so that value has no SI equivalent. None of the extracted parameters is beta zearalenol's own; they describe beta-Zearalenol (beta-ZOL) and Zearalenone (ZEN). Extracted — beta-Zearalenol (beta-ZOL): tmax 0.5 h, Cmax 2.15 ng·mL−1, t1/2z 0.94 h, AUClast 3.1 ng·mL−1·h, AUC∞ 3.42 ng·mL−1·h, AUC%ext 12.2, MRT 2.68 h, CLm/F 412 L·kg−1·h−1, … (+1); Zearalenone (ZEN): AUC 38.8 ng·h/mL.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

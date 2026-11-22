@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;acepromazine&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/&quot;},{&quot;label&quot;:&quot;Garbin_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acepromazine_Garbin2022_reference&quot;,&quot;label&quot;:&quot;Garbin_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Garbin2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acepromazine_Steagall2026_reference&quot;,&quot;label&quot;:&quot;Steagall_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Steagall2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acepromazine_Garbin2022_reference&quot;,&quot;label&quot;:&quot;Garbin_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Garbin2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acepromazine_Steagall2026_reference&quot;,&quot;label&quot;:&quot;Steagall_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Steagall2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acepromazine — `Acepromazine_Garbin2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> Absorption rate constant and lag time were left at library defaults, not estimated, in the acepromazine model.
+> Record rejected because Garbin_2022 studies bupivacaine, using acepromazine only as a co-administered sedative with no primary PK data.
 
-<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Garbin2022_reference" status="needs_review" stale="false" population="" measured-compound="acepromazine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Garbin2022_reference" status="rejected" stale="false" population="" measured-compound="acepromazine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Garbin M, Benito J, Ruel HLM, Watanabe R, Monteiro BP, Cagnardi P et al. Pharmacokinetics of Bupivacaine Following Administration by an Ultrasound-Guided Transversus Abdominis Plane Block in Cats Undergoing Ovariohysterectomy. Pharmaceutics 14(8) (2022).
@@ -31,7 +31,7 @@ Garbin M, Benito J, Ruel HLM, Watanabe R, Monteiro BP, Cagnardi P et al. Pharmac
 <figure class="pk-models-diagram"><img src="drugs/drug_acepromazine/Acepromazine_Garbin2022_reference/Acepromazine_Garbin2022_reference.svg" alt="Acepromazine_Garbin2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Garbin M, Benito J, Ruel HLM, Watanabe R, Monteiro BP, Cagnardi P et al. Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Garbin M, Benito J, Ruel HLM, Watanabe R, Monteiro BP, Cagnardi P et al. Pharmac
 
 ### Reviewer guidance
 
-**Absorption rate constant and lag time were left at library defaults, not estimated, in the acepromazine model.**
+**Record rejected because Garbin_2022 studies bupivacaine, using acepromazine only as a co-administered sedative with no primary PK data.**
 
-The record lists only apparent clearance and volume of distribution, while the absorption rate constant was not reported in the source. The model builder substituted library default values for the absorption rate constant and lag time. Additionally, the volume of distribution value of 56214 was not agreed upon by the second reader. Extracted — acepromazine: CL/F 5.3 mL/min/kg, V/F 135 L.
+The source paper is identified as a bupivacaine study where acepromazine is merely a covariate, yet the record lists 5.3 mL/min/kg for CL/F and 135.4157 L for V/F. These values were extracted using default parameters for absorption rate and lag time, and assuming complete bioavailability. Consequently, the derived volume of distribution is not an estimate of acepromazine distribution in the target population. Extracted — acepromazine: CL/F 5.3 mL/min/kg, V/F 135 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q20: this record has 56214, the second reading none. That field does not shape the model.
 
@@ -121,15 +121,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=acepromazine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | 3: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | acepromazine (or metabolite) | paper about another drug |  | paper subject is not acepromazine: the paper is about another drug; this one is a co-medication or covariate: This is a pharmacokinetic study of bupivacaine in cats; acepromazine is only a co-administered sedative in the anesthetic protocol, with no acepromazine PK para |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=acepromazine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -141,61 +142,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acepromazine/Acepromazine_Garbin2022_reference/Acepromazine_Garbin2022_reference_modelica.zip" download>Acepromazine_Garbin2022_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acepromazine/Acepromazine_Garbin2022_reference/Acepromazine_Garbin2022_reference_fmi.zip" download>Acepromazine_Garbin2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acepromazine/Acepromazine_Garbin2022_reference/Acepromazine_Garbin2022_reference_matlab.zip" download>Acepromazine_Garbin2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acepromazine/Acepromazine_Garbin2022_reference/Acepromazine_Garbin2022_reference_matlab_simbio.zip" download>Acepromazine_Garbin2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acepromazine/Acepromazine_Garbin2022_reference/Acepromazine_Garbin2022_reference_sbml.zip" download>Acepromazine_Garbin2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acepromazine/Acepromazine_Garbin2022_reference/Acepromazine_Garbin2022_reference_cellml.zip" download>Acepromazine_Garbin2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3265 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 6.183e-06 | m3/s |
-| input | model | `VdPerKg` | 0.001935 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Garbin M, Benito J, Ruel HLM, Watanabe R, Monteiro BP, Cagnardi P et al. Pharmacokinetics of Bupivacaine Following Administration by an Ultrasound-Guided Transversus Abdominis Plane Block in Cats Undergoing Ovariohysterectomy. Pharmaceutics 14(8) (2022). [doi:10.3390/pharmaceutics14081548](https://doi.org/10.3390/pharmaceutics14081548)
-
-**This record:** Pharmacolibrary, model `Acepromazine_Garbin2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acepromazine/Acepromazine_Garbin2022_reference>
-
-```bibtex
-@misc{pharmacolibrary_AcepromazineGarbin2022reference,
-  title  = {{Pharmacolibrary model Acepromazine_Garbin2022_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_acepromazine/Acepromazine_Garbin2022_reference},
-  note   = {Parameters from doi:10.3390/pharmaceutics14081548},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

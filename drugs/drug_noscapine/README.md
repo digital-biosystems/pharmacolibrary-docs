@@ -25,7 +25,7 @@ Noscapine is an antitussive opium alkaloid used to suppress coughs. It is taken 
 
 ## Start here
 
-> **Chen_2024_final_model** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adults, n = condition. [Run it in the simulator](drugs/drug_noscapine/Noscapine_Chen2024_final_model.md?tab=Simulation) · [record](drugs/drug_noscapine/Noscapine_Chen2024_final_model.md)
+> **Chen_2024_final_model** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adults. [Run it in the simulator](drugs/drug_noscapine/Noscapine_Chen2024_final_model.md?tab=Simulation) · [record](drugs/drug_noscapine/Noscapine_Chen2024_final_model.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -41,17 +41,6 @@ Noscapine is an antitussive opium alkaloid used to suppress coughs. It is taken 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub> | [Chen_2024_final_model](drugs/drug_noscapine/Noscapine_Chen2024_final_model.md) | ▶ model + simulator | 1-compartment, oral | 8 (+1 cov.) | Chen Z et al., A Semi-Mechanistic Population Pharmacok…, Drugs in R&D (2024) | [10.1007/s40268-024-00466-6](https://doi.org/10.1007/s40268-024-00466-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub> | [↳ sir_with_m_m_ratio_of_5000_1000](drugs/drug_noscapine/Noscapine_Chen2024_sir_with_m_m_ratio_of_5000_1000.md) | ▶ model + simulator | 1-compartment, oral | 8 (+1 cov.) |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=noscapine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2C9` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SIGMAR1 (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

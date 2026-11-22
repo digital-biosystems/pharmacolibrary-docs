@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Rejected because the regorafenib-N-oxide and regorafenib-glucuronide metabolites are unreachable from the dose, and absolute bioavailability lacks a numeric value.
+> Rejected for an orphan/unlinked-metabolite topology: regorafenib-N-oxide and regorafenib-glucuronide each have n_cmt 0, despite reported regorafenib clearance of 158.0 L/h.
 
 <div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Fu2019_regorafenib_glucuronide" status="rejected" stale="false" population="male and female wild-type and Oatp1b2-deficient mice" measured-compound="regorafenib" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Fu Q, Chen M, Anderson JT, Sun X, Hu S, Sparreboom A et al. Interaction Between 
 
 ### Reviewer guidance
 
-**Rejected because the regorafenib-N-oxide and regorafenib-glucuronide metabolites are unreachable from the dose, and absolute bioavailability lacks a numeric value.**
+**Rejected for an orphan/unlinked-metabolite topology: regorafenib-N-oxide and regorafenib-glucuronide each have n_cmt 0, despite reported regorafenib clearance of 158.0 L/h.**
 
-The model structure defines regorafenib as the parent, but the two metabolites lack a defined path from the central compartment, rendering them orphan structures. Additionally, the absolute bioavailability parameter is recorded without a value, leaving the input fraction undefined. The unit for the reported clearance parameter could not be converted to SI units, so the parameter lacked a standard numeric value. The second reader disagreed on whether the hydrolysis link constitutes metabolism or interconversion, and whether the clearance and absorption rate constants should be null. Extracted — regorafenib: Cmax 91.2 ng/mL, tmax 4.25 hour, AUClast 0.278 μg·h/mL, CL 158 L/h, kabs 0.41 h−1.
+The record lists metabolism links from regorafenib to both metabolites and a hydrolysis link from regorafenib-glucuronide back to regorafenib, but assigns each metabolite n_cmt 0; the second reader classified the return link as interconversion instead. A reported unit could not be converted to SI, but the facts do not identify which unit, and absolute bioavailability has no reported value. The second reader also omitted the reported regorafenib clearance of 158.0 L/h and absorption rate constant of 0.41 h−1. Extracted — regorafenib: Cmax 91.2 ng/mL, tmax 4.25 hour, AUClast 0.278 μg·h/mL, CL 158 L/h, kabs 0.41 h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has regorafenib → regorafenib-n-oxide (metabolism); regorafenib → regorafenib-glucuronide (metabolism); regorafenib-glucuronide → regorafenib (hydrolysis), the second reading regorafenib → regorafenib-n-oxide (metabolism); regorafenib → regorafenib-glucuronide (metabolism); regorafenib-glucuronide → regorafenib (interconversion); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

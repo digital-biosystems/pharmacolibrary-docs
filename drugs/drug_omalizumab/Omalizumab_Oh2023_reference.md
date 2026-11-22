@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;omalizumab&quot;,&quot;href&quot;:&quot;drugs/drug_omalizumab/&quot;},{&quot;label&quot;:&quot;Oh_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Oh_2023_itch_severity_score&quot;,&quot;label&quot;:&quot;Oh_2023 \u00b7 itch severity score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # omalizumab — `Omalizumab_Oh2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Needs review), but the paper was screened again on 2026-10-07 22:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. KD and λ1 have no unit.
+> KD and λ1 have no unit.
 
-<div class="pk-model-meta" hidden drug="omalizumab" model-id="Omalizumab_Oh2023_reference" status="needs_review" stale="true" population="patients with chronic spontaneous urticaria" measured-compound="omalizumab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="omalizumab" model-id="Omalizumab_Oh2023_reference" status="needs_review" stale="false" population="patients with chronic spontaneous urticaria" measured-compound="omalizumab" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Oh E, Wada R, Le K, Zheng Y, Jin J, Poon V et al. PK/PD modeling to characterize placebo and treatment effect of omalizumab for chronic spontaneous urticaria. CPT: pharmacometrics & systems pharmacology 12(6):795–807 (2023).
@@ -48,7 +47,7 @@ Oh E, Wada R, Le K, Zheng Y, Jin J, Poon V et al. PK/PD modeling to characterize
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

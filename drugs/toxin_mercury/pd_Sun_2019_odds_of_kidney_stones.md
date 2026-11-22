@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record indicates that mercury concentrations (driver unit: μg/L) are analyzed against the odds of kidney stones, but the model family, effect direction, and effect form are unknown. No mechanism or specific potency/rate parameters are provided in the excerpts or record.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Sun_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

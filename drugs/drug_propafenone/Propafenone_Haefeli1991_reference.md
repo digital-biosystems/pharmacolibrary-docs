@@ -5,11 +5,11 @@
 
 # propafenone — `Propafenone_Haefeli1991_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:51 UTC (Rejected), but the paper was screened again on 2026-10-08 20:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Haefeli1991_reference" status="needs_review" stale="true" population="healthy extensive metabolizers of debrisoquine" measured-compound="S-hydroxypropafenone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Haefeli1991_reference" status="needs_review" stale="false" population="healthy extensive metabolizers of debrisoquine" measured-compound="S-hydroxypropafenone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Haefeli WE, Vozeh S, Ha HR, Taeschner W, Follath F. Concentration-effect relations of 5-hydroxypropafenone in normal subjects. The American journal of cardiology 67(11):1022–1026 (1991).
@@ -17,7 +17,7 @@ Haefeli WE, Vozeh S, Ha HR, Taeschner W, Follath F. Concentration-effect relatio
 
 ## Population and dosing
 
-**Population:** healthy extensive metabolizers of debrisoquine · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy extensive metabolizers of debrisoquine · condition healthy · age group adult.
 
 **Dosing:** 300 mg, oral, single.
 
@@ -41,7 +41,7 @@ Haefeli WE, Vozeh S, Ha HR, Taeschner W, Follath F. Concentration-effect relatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Haefeli WE, Vozeh S, Ha HR, Taeschner W, Follath F. Concentration-effect relatio
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax and AUCt), so that value has no SI equivalent. None of the extracted parameters is propafenone's own; they describe S-hydroxypropafenone.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax and AUCt), so that value has no SI equivalent. None of the extracted parameters is propafenone's own; they describe S-hydroxypropafenone. Extracted — S-hydroxypropafenone: tlag 5 min, Cmax 337 ng/ml, t1/2α 29.1 min, t1/2β 615 min, AUCt 28.6 ng·min/liter.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has S-hydroxypropafenone, the second reading 5-hydroxypropafenone; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-hydroxypropafenone, the second reading 5-hydroxypropafenone; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -107,24 +107,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
 <details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc0-12h]` |  | 28.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc0-12h]` | 28.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax.]` |  | 337 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax.]` | 337 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` |  | 5.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` | 5.0 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2α]` |  | 29.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2α]` | 29.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2β]` |  | 615 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2β]` | 615 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | S-hydroxypropafenone | 5-hydroxypropafenone | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | S-hydroxypropafenone | 5-hydroxypropafenone | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-12h]` |  | 28.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-12h]` | 28.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax.]` |  | 337 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax.]` | 337 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` |  | 5.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | 5.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2α]` |  | 29.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2α]` | 29.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` |  | 615 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | 615 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | S-hydroxypropafenone | 5-hydroxypropafenone | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | S-hydroxypropafenone | 5-hydroxypropafenone | mismatch |
 
 </details>
 

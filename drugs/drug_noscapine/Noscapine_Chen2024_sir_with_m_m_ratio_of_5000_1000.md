@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Noscapine model's simulated peak and half-life are far too fast, and it ignored an extracted bioavailability value.
+> The noscapine model predicts a terminal half-life of 0.0397 and peak concentration of 0.000238, failing to match paper values of 8.42 and 3.68e-05.
 
 <div class="pk-model-meta" hidden drug="noscapine" model-id="Noscapine_Chen2024_sir_with_m_m_ratio_of_5000_1000" status="needs_review" stale="false" population="healthy adults" measured-compound="noscapine" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Chen Z, Taubert M, Chen C, Boland J, Dong Q, Bilal M et al. A Semi-Mechanistic P
 
 ## Population and dosing
 
-**Population:** healthy adults · age group adult · n = condition.
+**Population:** healthy adults · age group adult.
 
 **Dosing:** 50 mg, oral, single.
 
@@ -61,9 +61,9 @@ Chen Z, Taubert M, Chen C, Boland J, Dong Q, Bilal M et al. A Semi-Mechanistic P
 
 ### Reviewer guidance
 
-**Noscapine model's simulated peak and half-life are far too fast, and it ignored an extracted bioavailability value.**
+**The noscapine model predicts a terminal half-life of 0.0397 and peak concentration of 0.000238, failing to match paper values of 8.42 and 3.68e-05.**
 
-The simulated time of peak (0.197 h) and terminal half-life (0.0397 h) deviate massively from the reported 0.5 h and 8.42 h, and the peak concentration is also incorrect. The transit absorption was approximated as first-order, which alters the early concentration profile. Although the absolute bioavailability of 83.1% was extracted, it was not applied in the model, and the age covariate was not tested. Extracted — noscapine: D1 0.0663 h, CL/F 939 L/h, V1/F 49.6 L, Q/F 18.8 L/h, Q2/F 25.8 L/h, V3/F 31.2 L, Fab 83.1, ktr 13 1/h.
+The simulated time to peak is 0.197, only 0.393 of the paper's 0.5. The terminal half-life is 0.0397, a ratio of 0.0047 to the paper's 8.42. The peak concentration is 0.000238, a ratio of 6.4781 to the paper's 3.68e-05. A second reader disagreed with the extraction of the clearance and volume parameters. Extracted — noscapine: D1 0.0663 h, CL/F 939 L/h, V1/F 49.6 L, Q/F 18.8 L/h, Q2/F 25.8 L/h, V3/F 31.2 L, Fab 83.1, ktr 13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has noscapine, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -206,7 +206,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=noscapine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.071, 0 of 1 reader(s) agree | 0.071 | cross-check disputed by a second reader: verdict disputed, agreement 0.071, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 3.68e-05 | 0.0002384 | 6.478 | μg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 4.69e-05 | 0.0002384 | 5.083 | μg/L→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | fail | 8.42 | 0.03972 | 0.0047 | h→SI vs simulated h |

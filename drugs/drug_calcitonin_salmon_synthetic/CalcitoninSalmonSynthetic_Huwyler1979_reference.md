@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H05B&quot;,&quot;href&quot;:&quot;atc/H05B.md&quot;},{&quot;label&quot;:&quot;calcitonin (salmon synthetic)&quot;,&quot;href&quot;:&quot;drugs/drug_calcitonin_salmon_synthetic/&quot;},{&quot;label&quot;:&quot;Huwyler_1979 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalcitoninSalmonSynthetic_Beveridge1976_reference&quot;,&quot;label&quot;:&quot;Beveridge_1976_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # calcitonin (salmon synthetic) — `CalcitoninSalmonSynthetic_Huwyler1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-07 10:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; cLint has no unit.
+> Only clearance was extracted — no volume; cLint has no unit.
 
-<div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Huwyler1979_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="calcitonin_salmon_synthetic" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Huwyler1979_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="calcitonin_salmon_synthetic" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Huwyler R, Born W, Ohnhaus EE, Fischer JA. Plasma kinetics and urinary excretion of exogenous human and salmon calcitonin in man. The American journal of physiology 236(1):E15–E19 (1979).
@@ -35,7 +36,7 @@ Huwyler R, Born W, Ohnhaus EE, Fischer JA. Plasma kinetics and urinary excretion
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

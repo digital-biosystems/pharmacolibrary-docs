@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Diethyltoluamide&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/&quot;},{&quot;label&quot;:&quot;Chen_2026 \u00b7 PD Depression risk (DCBA)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diethyltoluamide_Qiu1997_reference&quot;,&quot;label&quot;:&quot;Qiu_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/Diethyltoluamide_Qiu1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diethyltoluamide_Qiu1997_reference&quot;,&quot;label&quot;:&quot;Qiu_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/Diethyltoluamide_Qiu1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Depression risk (DCBA) — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span>
@@ -17,6 +17,10 @@
 **As extracted:** DEET (measured concentrations) drives Depression risk (DCBA) (the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide a pharmacodynamic mechanism or kinetic parameters for the association between DEET and depression risk. DEET urinary concentrations (μg/L) were evaluated for statistical association with depression outcomes using survey-weighted logistic regression models, reporting adjusted odds ratios rather than PK/PD rate or potency values.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2026`
 - **model family:** `unknown`

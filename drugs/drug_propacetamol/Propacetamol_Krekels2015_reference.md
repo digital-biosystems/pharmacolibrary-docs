@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Propacetamol is rejected because its conversion to paracetamol lacks a defined kinetic rate constant.
+> Propacetamol hydrolysis link to paracetamol lacks a rate constant, rendering the drug compartment orphaned and unreachable from the dose.
 
 <div class="pk-model-meta" hidden drug="propacetamol" model-id="Propacetamol_Krekels2015_reference" status="rejected" stale="false" population="preterm and term neonates and infants" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,9 +53,9 @@ Krekels EH, van Ham S, Allegaert K, de Hoon J, Tibboel D, Danhof M et al. Develo
 
 ### Reviewer guidance
 
-**Propacetamol is rejected because its conversion to paracetamol lacks a defined kinetic rate constant.**
+**Propacetamol hydrolysis link to paracetamol lacks a rate constant, rendering the drug compartment orphaned and unreachable from the dose.**
 
-The model links propacetamol to paracetamol via hydrolysis but assigns no specific parameter value to this step. Consequently, the propacetamol dose compartment is structurally unlinked from the measured paracetamol, rendering it unreachable. The second reader disputed the existence of this hydrolysis link and several extracted parameter values, including the propacetamol-glucuronide formation clearance. Extracted — paracetamol: V 1.06 L/kg, CL 0.285 mL/min/kg; paracetamol-glucuronide: CLfm 0.266 mL/min/kg; paracetamol-sulphate: CLfm 1.46 mL/min/kg; propacetamol: fm 11.3.
+The hydrolysis step from propacetamol to paracetamol is recorded with no link parameter, whereas metabolism to glucuronide and sulphate use formation clearances of 0.266 and 1.46 mL/min/kg. The paracetamol compartment relies on an unlisted hydrolysis rate to receive drug, yet only its volume of 1.06 L/kg and elimination clearance of 0.285 mL/min/kg are defined. A second reader disputed the existence of these links and several parameter values, but the missing hydrolysis rate remains the structural flaw. Extracted — paracetamol: V 1.06 L/kg, CL 0.285 mL/min/kg; paracetamol-glucuronide: CLfm 0.266 mL/min/kg; paracetamol-sulphate: CLfm 1.46 mL/min/kg; propacetamol: fm 11.3.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propacetamol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

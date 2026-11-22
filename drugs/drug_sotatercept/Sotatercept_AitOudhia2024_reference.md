@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Sotatercept bioavailability and lag time lacked paper-derived estimates, and defined covariate effects were not exercised in simulations.
+> Sotatercept’s absolute bioavailability (F) is unreported and defaulted, so the record lacks a paper-supported value for this parameter.
 
 <div class="pk-model-meta" hidden drug="sotatercept" model-id="Sotatercept_AitOudhia2024_reference" status="needs_review" stale="false" population="healthy participants and patients with pulmonary arterial hypertension" measured-compound="sotatercept" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Ait-Oudhia S, Jaworowicz D, Hu Z, Bihorel S, Hu S, Balasubrahmanyam B et al. Pop
 
 ### Reviewer guidance
 
-**Sotatercept bioavailability and lag time lacked paper-derived estimates, and defined covariate effects were not exercised in simulations.**
+**Sotatercept’s absolute bioavailability (F) is unreported and defaulted, so the record lacks a paper-supported value for this parameter.**
 
-The absolute bioavailability value of 6.29 and the absorption lag time were not extracted from the study data, so standard library placeholders were used instead of fitted values. The record includes albumin and body weight effects on intercompartmental clearance, but simulations only covered the reference individual, leaving these covariate impacts unverified. Second reader disagreements on parameter assignments, such as the albumin exponent, further limit the record's reliability. Extracted — sotatercept: CL 6.22 L/day, V1 5.5 L, Q 20.5 L/day, V2 15.8 L, kabs 16 1/h, Fab 6.29.
+F uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. Tlag was also defaulted instead of explicitly estimated. The covariate scenarios were not simulated: the base model was simulated, not the covariate effects the record defines. A second reader disputed the verdict, with agreement 0.579 and 0 of 1 reader agreeing. Extracted — sotatercept: CL 6.22 L/day, V1 5.5 L, Q 20.5 L/day, V2 15.8 L, kabs 16 1/h, Fab 6.29.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].rse_percent`: this record has 16.9, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -194,6 +194,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.579, 0 of 1 reader(s) agree | 0.579 | cross-check disputed by a second reader: verdict disputed, agreement 0.579, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | skipped |  | 499.5 |  | non-numeric value |
 | T1_t_half_terminal | reference | pass | 528 | 499.5 | 0.9461 | days→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 528 | 499.5 | 0.9461 | days→SI vs simulated h |

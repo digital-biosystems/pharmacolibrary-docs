@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record lists barium oxide as both the drug and the continuous response, with the model family, effect direction, and effect form marked as unknown, and no numerical potency or rate parameters provided in the record or excerpts. Consequently, the mechanism of action cannot be determined from the available information.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Liechti_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

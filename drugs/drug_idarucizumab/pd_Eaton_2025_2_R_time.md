@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;idarucizumab&quot;,&quot;href&quot;:&quot;drugs/drug_idarucizumab/&quot;},{&quot;label&quot;:&quot;Eaton_2025_2 \u00b7 PD thromboelastometric reaction time (R-time)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# thromboelastometric reaction time (R-time) — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+# thromboelastometric reaction time (R-time) — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -51,19 +51,19 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q100].value` | 0.0751 | unit":" | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` |  | unit": "mg/L | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323]` |  | 34. | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` |  | unit": "min | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q325]` |  | unit": "", | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q328]` | 0.0218 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q335]` | 8.24 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q100].value` | 0.0751 | unit":" | mismatch |
+| `gpt-oss-120b` | `parameters[Q321]` |  | unit": "mg/L | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q323]` |  | 34. | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q324]` |  | unit": "min | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q325]` |  | unit": "", | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q328]` | 0.0218 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q335]` | 8.24 |  | only_one_extracted |
 
 </details>
 

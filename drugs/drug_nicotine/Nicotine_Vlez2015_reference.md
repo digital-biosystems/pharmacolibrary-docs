@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was quarantined because nicotine's total clearance had no extracted value, forcing the use of a library placeholder.
+> Nicotine’s total clearance (CL) has no reported value, leaving only a placeholder and causing the parent–metabolite model to be held back.
 
 <div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Vlez2015_reference" status="model_quarantined" stale="false" population="heavy smokers (adults)" measured-compound="nicotine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -49,13 +49,13 @@ Vélez de Mendizábal N, Jones DR, Jahn A, Bies RR, Brown JW. Nicotine and cotin
 
 ### Reviewer guidance
 
-**The model was quarantined because nicotine's total clearance had no extracted value, forcing the use of a library placeholder.**
+**Nicotine’s total clearance (CL) has no reported value, leaving only a placeholder and causing the parent–metabolite model to be held back.**
 
-The record lists nicotine's total clearance without a numeric value, causing the system to default it rather than publish the model. Additionally, the second reader identified a missing nicotine parameter value of 7.87 and a mismatch in the cotinine parameter identifier. Extracted — nicotine: Fab 0.123 min/mL · mg, V1 207 L; cotinine: V 73 L, CLfm 0.872 L/min, CL 0.065 L/min.
+Nicotine’s clearance had no value, so a library placeholder stood in and the built model was held back rather than published with an invented number. The recorded structure was one compartment rather than the expected parent–metabolite structure. A reported unit could not be converted to SI, so its parameter reached model building without an SI value. The second reader disputed the verdict and gave nicotine’s equation parameter a value of 7.87 where this record has none, and assigned cotinine’s equation parameter a different identity. Extracted — nicotine: Fab 0.123 min/mL · mg, V1 207 L; cotinine: V 73 L, CLfm 0.872 L/min, CL 0.065 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θnic: this record has none, the second reading 7.87; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -154,13 +154,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

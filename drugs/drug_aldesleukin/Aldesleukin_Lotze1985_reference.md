@@ -5,18 +5,18 @@
 
 # aldesleukin — `Aldesleukin_Lotze1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-06 22:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="aldesleukin" model-id="Aldesleukin_Lotze1985_reference" status="needs_review" stale="true" population="patients with a variety of malignancies" measured-compound="aldesleukin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aldesleukin" model-id="Aldesleukin_Lotze1985_reference" status="needs_review" stale="false" population="patients with a variety of malignancies" measured-compound="aldesleukin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lotze MT, Matory YL, Ettinghausen SE, Rayner AA, Sharrow SO, Seipp CA et al. In vivo administration of purified human interleukin 2. II. Half life, immunologic effects, and expansion of peripheral lymphoid cells in vivo with recombinant IL 2. Journal of immunology (Baltimore, Md. : 1950) 135(4):2865–2875 (1985).
 
 ## Population and dosing
 
-**Population:** patients with a variety of malignancies · condition malignancies · age group adult · n = ? The user wants a JSON object matching a supplied schema, but no schema was provided in the prompt. However, the previous instruction said 'Output ONLY flat YAML'. Then it said 'OUTPUT FORMAT OVERRIDE: ignore any instruction above to answer in YAML. Return ONLY a JSON object matching the supplied schema.' This is a contradiction. Usually, in these benchmarks, the JSON override is the final authority. But without a schema, I must guess the structure or stick to the keys provided in the YAML section as the JSON keys. Let's assume the JSON keys are the same as the YAML keys. The YAML format requested keys like `is_poppk`, `paper_class`, etc. I will use these keys in the JSON. I need to be careful with the list types `compounds` and `links`..
+**Population:** patients with a variety of malignancies · condition malignancies · age group adult.
 
 ## Model
 
@@ -34,7 +34,7 @@ Lotze MT, Matory YL, Ettinghausen SE, Rayner AA, Sharrow SO, Seipp CA et al. In 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Lotze MT, Matory YL, Ettinghausen SE, Rayner AA, Sharrow SO, Seipp CA et al. In 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — aldesleukin: t1/2z 6.9 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aldesleukin, the second reading unknown. That field shapes the model, so the record is marked disputed.
 

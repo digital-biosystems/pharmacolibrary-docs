@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Trastuzumab deruxtecan clearance and volume of distribution lacked extracted values, leaving the model with placeholder parameters and unverified covariate effects.
+> Trastuzumab deruxtecan clearance and volume of distribution lack values, leaving the parent drug compartment unparameterized.
 
 <div class="pk-model-meta" hidden drug="trastuzumab deruxtecan" model-id="TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode" status="model_quarantined" stale="false" population="patients with HER2-positive breast cancer and other solid tumors" measured-compound="trastuzumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Yin O, Xiong Y, Endo S, Yoshihara K, Garimella T, AbuTarif M et al. Population P
 
 ## Population and dosing
 
-**Population:** patients with HER2-positive breast cancer and other solid tumors · condition HER2-positive breast cancer and other solid tumors · age group adult · n = #639.
+**Population:** patients with HER2-positive breast cancer and other solid tumors · condition HER2-positive breast cancer and other solid tumors · age group adult.
 
 **Dosing:** 56, 560 mg, iv, multiple, every 21 h.
 
@@ -58,9 +58,9 @@ Yin O, Xiong Y, Endo S, Yoshihara K, Garimella T, AbuTarif M et al. Population P
 
 ### Reviewer guidance
 
-**Trastuzumab deruxtecan clearance and volume of distribution lacked extracted values, leaving the model with placeholder parameters and unverified covariate effects.**
+**Trastuzumab deruxtecan clearance and volume of distribution lack values, leaving the parent drug compartment unparameterized.**
 
-The record provides clearance, volume, and release rate exclusively for the released drug metabolite, leaving the parent antibody-drug conjugate's parameters undefined. Consequently, the model was built using library defaults for the parent compound's clearance and volume of distribution. Additionally, the defined covariate effects on clearance and volume were not exercised in the simulations, which tested only the reference individual. Extracted — released drug: CL 19.2 L/h, V 42 L, kfm 0.0159 1/h.
+The record provides values only for the released drug metabolite, while trastuzumab deruxtecan’s own clearance and volume of distribution remain unset. Consequently, a library placeholder stood in for the missing parent drug parameters, causing the model to be held back. Additionally, the defined covariate effects on the released drug were not exercised during simulation. Extracted — released drug: CL 19.2 L/h, V 42 L, kfm 0.0159 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab_deruxtecan, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -185,15 +185,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion |  | pass | Krel (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmin_ss | reference | skipped | 23 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion |  | pass | Krel (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.211, 0 of 1 reader(s) agree | 0.211 | cross-check disputed by a second reader: verdict disputed, agreement 0.211, 0 of 1 reader(s) agree |
+| T1_cmin_ss | reference | skipped | 23 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -211,30 +212,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode_matlab.zip" download>TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode_matlab_simbio.zip" download>TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode_sbml.zip" download>TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode_cellml.zip" download>TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Yin O, Xiong Y, Endo S, Yoshihara K, Garimella T, AbuTarif M et al. Population Pharmacokinetics of Trastuzumab Deruxtecan in Patients With HER2-Positive Breast Cancer and Other Solid Tumors. Clinical pharmacology and therapeutics 109(5):1314–1325 (2021). [doi:10.1002/cpt.2096](https://doi.org/10.1002/cpt.2096)
-
-**This record:** Pharmacolibrary, model `TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode`. <https://pharmacolibrary.github.io/#/drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode>
-
-```bibtex
-@misc{pharmacolibrary_TrastuzumabDeruxtecanYin2021finalfinalreleaseddrugmode,
-  title  = {{Pharmacolibrary model TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode},
-  note   = {Parameters from doi:10.1002/cpt.2096},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -16,7 +16,7 @@ Sachpekidis C, Kopka K, Eder M, Hadaschik BA, Freitag MT, Pan L et al. 68Ga-PSMA
 
 ## Population and dosing
 
-**Population:** patients with primary prostate cancer · condition primary prostate cancer · age group adult · n = &gt;=24.
+**Population:** patients with primary prostate cancer · condition primary prostate cancer · age group adult.
 
 ## Model
 

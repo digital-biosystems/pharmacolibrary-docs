@@ -35,7 +35,7 @@ Penland RC, Melin J, Boulton DW, Tang W. Evaluation of the Pharmacokinetics of D
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Penland RC, Melin J, Boulton DW, Tang W. Evaluation of the Pharmacokinetics of D
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dapagliflozin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dapagliflozin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -89,20 +89,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss:120b` | `parameters[apparent clearance]` |  | 21.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 57.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median auc]` | 1.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median auc]` |  | 1.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[previous estimates in adults with t2dm and healthy subjects]` |  | 22.9 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | dapagliflozin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | dapagliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance]` |  | 21.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 57.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median auc]` | 1.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median auc]` |  | 1.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[previous estimates in adults with t2dm and healthy subjects]` |  | 22.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | dapagliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | dapagliflozin | unknown | mismatch |
 
 </details>
 

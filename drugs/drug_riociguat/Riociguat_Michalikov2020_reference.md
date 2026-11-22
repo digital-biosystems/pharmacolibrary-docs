@@ -17,7 +17,7 @@ Michaličková D, Jansa P, Bursová M, Hložek T, Čabala R, Hartinger JM et al.
 
 ## Population and dosing
 
-**Population:** patients with chronic thromboembolic pulmonary hypertension · condition chronic thromboembolic pulmonary hypertension · age group adult · n = &gt;=49.
+**Population:** patients with chronic thromboembolic pulmonary hypertension · condition chronic thromboembolic pulmonary hypertension · age group adult.
 
 **Dosing:** 1, 1.5, 2.5 mg, oral, multiple, every 8 h.
 

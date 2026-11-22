@@ -4,11 +4,11 @@
 
 # desirudin — `Desirudin_Nafziger2010_moderate_renal_impairment`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-05 14:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The desirudin central-to-peripheral transfer rate constant was rejected because its reported unit, h-1, lacked a defined conversion to standard international units.
+> Desirudin's elimination rate constant was rejected due to a unit conversion failure, and a second reader found no values for any parameter.
 
-<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="true" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="false" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impairment. Journal of clinical pharmacology 50(6):614–622 (2010).
@@ -41,7 +41,7 @@ Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impai
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impai
 
 ### Reviewer guidance
 
-**The desirudin central-to-peripheral transfer rate constant was rejected because its reported unit, h-1, lacked a defined conversion to standard international units.**
+**Desirudin's elimination rate constant was rejected due to a unit conversion failure, and a second reader found no values for any parameter.**
 
-The record lists the transfer rate from the central to the peripheral compartment as 0.014 h-1. Although the value is provided, the specific unit 'h-1' was not recognized in the system's standard library, meaning no SI equivalent was established. This inability to define the parameter's unit in standard terms caused the validation to fail. As a result, the record was refused due to this unresolved unit incompatibility. Extracted — desirudin: λ1 0.25 h-1, kel 0.03 h-1, V 27.3 L, kabs 0.63 h-1, k12 0.014 h-1, k21 0.03 h-1.
+The terminal elimination rate constant is recorded as 0.03 h-1, but the unit could not be converted to standard SI units, causing a validation mismatch. This lack of a valid SI value prevented the parameter from being properly processed. Furthermore, a second reviewer could not identify any extracted values for the six recorded parameters, including absorption and distribution constants. Extracted — desirudin: λ1 0.25 h-1, kel 0.03 h-1, V 27.3 L, kabs 0.63 h-1, k12 0.014 h-1, k21 0.03 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alpha: this record has 0.25, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 

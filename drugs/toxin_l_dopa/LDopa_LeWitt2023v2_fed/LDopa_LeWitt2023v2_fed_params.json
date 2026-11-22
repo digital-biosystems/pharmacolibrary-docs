@@ -8,6 +8,66 @@
  "observables": [
   "retainedFraction"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.002768
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.54
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.41
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 6.2
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 3.9
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.0023569999999999997
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.000479
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.000146
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 20.0
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 64.0
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.0021855999999999998
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.0018269
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.0001408
+   },
+   {
+    "source": "LeWitt_2023_2:other_prose",
+    "value_si": 0.0004036
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "MM": 0.19719,

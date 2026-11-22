@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;rocuronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RocuroniumBromide_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;RocuroniumBromide_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RocuroniumBromide_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;RocuroniumBromide_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00452, model 0.000505); the model does not reproduce the paper's terminal half-life (paper 0.181, model 2.72).
+> The rocuronium model failed to reproduce the paper's Cmax (0.000505 vs 0.00452) and half-life (2.72 vs 0.181).
 
 <div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Li2025_reference" status="needs_review" stale="false" population="beagles" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Li X, Chang P, Liu X, Gong D, Zhang W. Rapid quantification and PK-PD modeling o
 
 ## Population and dosing
 
-**Population:** beagles · n = 4.
+**Population:** beagles.
 
 **Dosing:** 52.36 mg, iv, single.
 
@@ -52,13 +52,13 @@ Li X, Chang P, Liu X, Gong D, Zhang W. Rapid quantification and PK-PD modeling o
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00452, model 0.000505); the model does not reproduce the paper's terminal half-life (paper 0.181, model 2.72).**
+**The rocuronium model failed to reproduce the paper's Cmax (0.000505 vs 0.00452) and half-life (2.72 vs 0.181).**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — rocuronium bromide: V 1.45 L/kg, CL 0.37 L/h/kg.
+The simulated peak concentration was 0.000505, significantly lower than the reported 0.00452, while the terminal half-life was 2.72 hours instead of 0.181. These discrepancies indicate the extracted parameters for clearance and volume of distribution do not match the observed pharmacokinetics. A second reader also disputed the verdict, noting inconsistencies in parameter extraction and analyte identification. Extracted — rocuronium bromide: V 1.45 L/kg, CL 0.37 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rocuronium_bromide, the second reading rocuronium bromide; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -147,6 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.00452 | 0.000505 | 0.1117 | μg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.00489 | 0.000505 | 0.1033 | μg/mL→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | fail | 0.1813 | 2.716 | 14.98 | min→SI vs simulated h |

@@ -42,7 +42,7 @@ Nayak S, Suzuki A, Ravva P, Raje S. Clinical Pharmacokinetics and Pharmacodynami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Nayak S, Suzuki A, Ravva P, Raje S. Clinical Pharmacokinetics and Pharmacodynami
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — marstacimab: Cmax 12.2, V1 3.61 L, CL 0.0188 L/h, tlag 2 h, V2 4.99 L, V 8.6 L, Q 0.00489 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has marstacimab, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has marstacimab, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -112,27 +112,27 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (3/18 fields) | 15 |
+| `gpt-oss-120b` | not confirmed | 0.167 (3/18 fields) | 15 |
 
 <details><summary>15 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['marstacimab', 'total tfpi', 'none']] | mismatch |
-| `gpt-oss:120b` | `parameters[-cl]` | 0.0188 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[-lag time]` | 2 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` |  | 0.0188 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k a]` |  | 0.00742 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` |  | 2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q]` |  | 0.00489 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total volume of distribution]` | 8.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total volume of distribution]` |  | 8.60 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v c]` | 3.61 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v c]` |  | 3.61 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v p]` | 4.99 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vp]` |  | 4.99 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | marstacimab | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | marstacimab | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['marstacimab', 'total tfpi', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[-cl]` | 0.0188 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[-lag time]` | 2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 0.0188 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` |  | 0.00742 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` |  | 2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` |  | 0.00489 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total volume of distribution]` | 8.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total volume of distribution]` |  | 8.60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c]` | 3.61 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c]` |  | 3.61 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p]` | 4.99 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` |  | 4.99 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | marstacimab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | marstacimab | unknown | mismatch |
 
 </details>
 

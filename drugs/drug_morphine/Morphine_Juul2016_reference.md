@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;morphine&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/&quot;},{&quot;label&quot;:&quot;Juul_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Ihmsen2021_reference&quot;,&quot;label&quot;:&quot;Ihmsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Ihmsen2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_f&quot;,&quot;label&quot;:&quot;Andersen_1986_f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_f.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_j&quot;,&quot;label&quot;:&quot;Andersen_1986_j&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_j.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_k&quot;,&quot;label&quot;:&quot;Andersen_1986_k&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_k.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Venkatasubramanian2014_reference&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Morphine_Romberg2004_reference&quot;,&quot;label&quot;:&quot;Romberg_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Romberg2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) was left at library defaults rather than using the paper's estimated value of 11.3.
+> Bioavailability F was not extracted from the morphine model record, leaving it at library defaults instead of the paper's reported values.
 
 <div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Juul2016_reference" status="needs_review" stale="false" population="patients receiving morphine on request after hip surgery" measured-compound="morphine" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Juul RV, Nyberg J, Lund TM, Rasmussen S, Kreilgaard M, Christrup LL et al. A Pha
 
 ## Population and dosing
 
-**Population:** patients receiving morphine on request after hip surgery · condition postoperative pain · age group adult · n = &gt;= 14.
+**Population:** patients receiving morphine on request after hip surgery · condition postoperative pain · age group adult · n = 63.
 
 ## Model
 
@@ -42,7 +42,7 @@ Juul RV, Nyberg J, Lund TM, Rasmussen S, Kreilgaard M, Christrup LL et al. A Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,11 @@ Juul RV, Nyberg J, Lund TM, Rasmussen S, Kreilgaard M, Christrup LL et al. A Pha
 
 ### Reviewer guidance
 
-**Bioavailability (F) was left at library defaults rather than using the paper's estimated value of 11.3.**
+**Bioavailability F was not extracted from the morphine model record, leaving it at library defaults instead of the paper's reported values.**
 
-The record includes a two-compartment model with first-order absorption, but the bioavailability parameter was not explicitly extracted. The model builder applied default values for F, which the review flagged as unsupported by the specific paper. A second reader identified an explicit bioavailability estimate of 11.3 in the source material that the primary extraction missed. Extracted — morphine: CL 65.7 L/h, V 6.5 L, Q 76 L/h, V2 71.9 L, kabs 1.32 h⁻¹, tlag 0.235 h.
+The record for the two-compartment oral morphine model contains no value for bioavailability F, which was noted as using library defaults. A second reader identified that the paper likely reported intravenous F as 20.4 and intrarectal F as 11.3. Because these values are missing, the model relies on generic placeholders rather than the study-specific estimates. Extracted — morphine: CL 65.7 L/h, V 6.5 L, Q 76 L/h, V2 71.9 L, kabs 1.32 h⁻¹, tlag 0.235 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fir: this record has none, the second reading 11.3. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fcr: this record has none, the second reading 20.4; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -68,7 +68,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | V | `Q61` · V | 6.5 | L | 0.0065 | m3 | l | 5.8 | exact (1) | Juul_2016_table_2:row1:col2 |
 | Q | `Q30` · Q | 76 | L/h | 2.111e-05 | m3/s | l/h | 6.5 | exact (1) | Juul_2016_table_2:row2:col2 |
 | V2 | `Q64` · V2 | 71.9 | L | 0.0719 | m3 | l | 14 | exact (1) | Juul_2016_table_2:row3:col2 |
-| ka,IR | `Q49` · kabs | 1.32 | h⁻¹ | 0.0003667 | 1/s | 1/h | 7.2 | llm_confirmed (0.6) | Juul_2016_table_2:row4:col2 |
+| ka,IR | `Q49` · kabs | 1.32 | h⁻¹ | 0.0003667 | 1/s | 1/h | 7.2 | boundary_llm_dim_refused (0.8) | Juul_2016_table_2:row4:col2 |
 | tlag,IR | `Q83` · tlag | 0.235 | h | 846 | s | h | 0.3 | llm_confirmed (0.6) | Juul_2016_table_2:row5:col2 |
 
 <details class="legend">
@@ -82,7 +82,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'FIR' — extend the ontology if this is a real PK parameter (source ['Juul_2016_table_2:row6:col2'])
+- dropped duplicate Q49 ('FIR', value '11.3') — already have one for this compound
 - dropped duplicate Q49 ('ka,CR', value '0.207') — already have one for this compound
 - dropped duplicate Q83 ('tlag,CR', value '0.25') — already have one for this compound
 - dropped unlinked row (NIL): 'FCR' — extend the ontology if this is a real PK parameter (source ['Juul_2016_table_2:row9:col2'])
@@ -94,7 +94,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=morphine
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -104,12 +103,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.941 (16/17 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.889 (16/18 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[fcr]` |  | 20.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fir]` |  | 11.3 | only_one_extracted |
 
 </details>
@@ -149,6 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -230,4 +231,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmorphine%5D%20Morphine_Juul2016_reference&body=Drug%3A%20morphine%0ARecord%3A%20Morphine_Juul2016_reference%0APaper%3A%20Juul_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_morphine/Morphine_Juul2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 10:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 07:18 UTC</sub>

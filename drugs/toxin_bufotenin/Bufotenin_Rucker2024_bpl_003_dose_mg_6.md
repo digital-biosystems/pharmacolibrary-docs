@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The area under the concentration-time curve for 5-methoxy-N,N-dimethyltryptamine was recorded in mg rather than h·ng/mL, causing a unit conversion failure.
 
 <div class="pk-model-meta" hidden drug="Bufotenin" model-id="Bufotenin_Rucker2024_bpl_003_dose_mg_6" status="rejected" stale="false" population="healthy participants" measured-compound="5-methoxy-N,N-dimethyltryptamine" parameterization="apparent" topology="1C"></div>
 
@@ -54,7 +54,13 @@ Rucker JJ, Roberts C, Seynaeve M, Young AH, Suttle B, Yamamoto T et al. Phase 1,
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The area under the concentration-time curve for 5-methoxy-N,N-dimethyltryptamine was recorded in mg rather than h·ng/mL, causing a unit conversion failure.**
+
+Both the extrapolated area under the curve (9.8) and the area to the last measurable concentration (7.7) were assigned the unit mg, which is dimensionally inconsistent with these time-integrated exposure metrics. The required time-volumetric concentration units could not be resolved, preventing the calculation of valid SI values for these parameters. Extracted — 5-methoxy-N,N-dimethyltryptamine: Cmax 14.1 ng/mL, tmax 0.13 h, AUC∞ 9.8 mg, AUClast 7.7 mg, t1/2z 0.4 h, CL/F 615 L/h, Ae 3.31 µg, fe 0.06 %, … (+1).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

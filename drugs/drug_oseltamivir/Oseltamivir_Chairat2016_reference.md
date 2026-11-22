@@ -5,11 +5,11 @@
 
 # oseltamivir — `Oseltamivir_Chairat2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 18:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Oseltamivir record rejected because the first-order formation rate constant for oseltamivir carboxylate could not be converted to standard SI units.
+> The record was rejected because rate constants for oseltamivir and oseltamivir carboxylate had incorrect time units.
 
-<div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Chairat2016_reference" status="rejected" stale="true" population="obese and non-obese Thai adult volunteers" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Chairat2016_reference" status="rejected" stale="false" population="obese and non-obese Thai adult volunteers" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Chairat K, Jittamala P, Hanpithakpong W, Day NP, White NJ, Pukrittayakamee S et al. Population pharmacokinetics of oseltamivir and oseltamivir carboxylate in obese and non-obese volunteers. British journal of clinical pharmacology 81(6):1103–1112 (2016).
@@ -45,7 +45,7 @@ Chairat K, Jittamala P, Hanpithakpong W, Day NP, White NJ, Pukrittayakamee S et 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Chairat K, Jittamala P, Hanpithakpong W, Day NP, White NJ, Pukrittayakamee S et 
 
 ### Reviewer guidance
 
-**Oseltamivir record rejected because the first-order formation rate constant for oseltamivir carboxylate could not be converted to standard SI units.**
+**The record was rejected because rate constants for oseltamivir and oseltamivir carboxylate had incorrect time units.**
 
-The metabolite formation rate constant of 2.13 h⁻¹ was reported with a unit that could not be converted to SI, preventing its use in model calculations. This dimension mismatch on a structural parameter caused the model to fail consistency checks. The record also contains duplicate parameter entries for absolute bioavailability, complicating the pharmacokinetic structure. Extracted — oseltamivir: Fab 100, kabs 2.81 h, CLm/F 585 l h −1, Vm/F 1.11e+03 l; oseltamivir carboxylate: kfm 2.13 h, CLm/F 20.6 l h −1, V1/F 159 l.
+The absorption rate constant (2.81) and metabolite formation rate constant (2.13) were assigned units of hours, which conflicts with the required inverse time dimension. A reported unit could not be converted to standard units, so the parameters lacked valid values. A second reader disputed the metabolic link and several parameter values, including the 585 L/h clearance. Extracted — oseltamivir: Fab 100, kabs 2.81 h, CLm/F 585 l h −1, Vm/F 1.11e+03 l; oseltamivir carboxylate: kfm 2.13 h, CLm/F 20.6 l h −1, V1/F 159 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has oseltamivir → oseltamivir carboxylate (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -17,7 +17,7 @@ Raaflaub J, Dubach UC. On the pharmacokinetics of phenacetin in man. European jo
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 6.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 

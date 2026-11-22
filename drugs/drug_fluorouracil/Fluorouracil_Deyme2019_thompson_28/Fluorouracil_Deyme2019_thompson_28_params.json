@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "Fluorouracil_Deyme2019_thompson_28",
+ "molar_masses": {
+  "central.C": 0.1300772
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.5e-06,
+  "F": 0.9,
+  "MM": 0.1300772,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0013642857142857144,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 6.719022687609076e-05,
+  "k21": 6.353135313531354e-05,
+  "ka": 3.611111111111111e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 21664.92985971944
+ },
+ "reference_peaks": {
+  "central.C": 0.0001557262474742731
+ },
+ "stop_time": 118800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

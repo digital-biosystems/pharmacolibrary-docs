@@ -5,11 +5,11 @@
 
 # lansoprazole — `Lansoprazole_Sakurai2007_1_compartment`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-10-04 09:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance Q (0.104 l/kg) uses a mass-normalized unit incompatible with the model's allometric scaling.
+> Intercompartmental clearance Q3 was rejected because its reported unit of L/h/kg conflicts with the dimension of volume.
 
-<div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_1_compartment" status="rejected" stale="true" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_1_compartment" status="rejected" stale="false" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Population pharmacokinetics and proton pump inhibitory effects of intravenous lansoprazole in healthy Japanese males. Biological & pharmaceutical bulletin 30(12):2238–2243 (2007).
@@ -17,7 +17,7 @@ Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Populati
 
 ## Population and dosing
 
-**Population:** healthy Japanese males · condition healthy · age group adult · n = &gt;=56.
+**Population:** healthy Japanese males · condition healthy · age group adult.
 
 **Dosing:** 15, 30 mg, iv, multiple, every 12 h.
 
@@ -40,7 +40,7 @@ Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Populati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Populati
 
 ### Reviewer guidance
 
-**The intercompartmental clearance Q (0.104 l/kg) uses a mass-normalized unit incompatible with the model's allometric scaling.**
+**Intercompartmental clearance Q3 was rejected because its reported unit of L/h/kg conflicts with the dimension of volume.**
 
-The parameter Q, representing intercompartmental clearance, is listed as 0.104 l/kg. Other parameters like CL (4.9 L/h) and V (11.0 L) use absolute units, creating a dimensional inconsistency. A second reader identified a missing intercompartmental clearance value (0.179) that the original record omitted entirely. Extracted — lansoprazole: Q 0.104 l/kg, Q3 0.548 L/h/kg, CL 4.9 L/h, V 11 L.
+The record assigns a value of 0.548 with units of L/h/kg to the clearance between the central and third compartment. This unit is dimensionally inconsistent with a standard intercompartmental clearance, which requires a volume per time dimension. Additionally, the extraction failed to capture a distinct clearance parameter valued at 0.179 that a second reader identified. Extracted — lansoprazole: Q 0.104 l/kg, Q3 0.548 L/h/kg, CL 4.9 L/h, V 11 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lansoprazole, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

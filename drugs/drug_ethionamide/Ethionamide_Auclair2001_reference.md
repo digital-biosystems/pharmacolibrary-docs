@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;ethionamide&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/&quot;},{&quot;label&quot;:&quot;Auclair_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethionamide_Abdelgawad2024_reference&quot;,&quot;label&quot;:&quot;Abdelgawad_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Abdelgawad2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_AlShaer2020_reference&quot;,&quot;label&quot;:&quot;Al-Shaer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_AlShaer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Asiimwe2026_reference&quot;,&quot;label&quot;:&quot;Asiimwe_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Asiimwe2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Zhu2002_reference&quot;,&quot;label&quot;:&quot;Zhu_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Zhu2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_van2021_reference&quot;,&quot;label&quot;:&quot;van_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_van2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethionamide_AlShaer2020_reference&quot;,&quot;label&quot;:&quot;Al-Shaer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_AlShaer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Zhu2002_reference&quot;,&quot;label&quot;:&quot;Zhu_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Zhu2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Abdelgawad2024_reference&quot;,&quot;label&quot;:&quot;Abdelgawad_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Abdelgawad2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Asiimwe2026_reference&quot;,&quot;label&quot;:&quot;Asiimwe_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Asiimwe2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethionamide_van2021_reference&quot;,&quot;label&quot;:&quot;van_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethionamide/Ethionamide_van2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ethionamide — `Ethionamide_Auclair2001_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:04 UTC (Rejected), but the paper was screened again on 2026-10-07 13:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is not a compartmental PK model because it lacks clearance and elimination rate constant values for ethionamide.
+> The ethionamide record is an exposure summary, not a model, missing volume and clearance values while reporting an incompatible AUC unit.
 
-<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Auclair2001_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Auclair2001_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Auclair B, Nix DE, Adam RD, James GT, Peloquin CA. Pharmacokinetics of ethionamide administered under fasting conditions or with orange juice, food, or antacids. Antimicrobial agents and chemotherapy 45(3):810–814 (2001).
@@ -17,7 +17,7 @@ Auclair B, Nix DE, Adam RD, James GT, Peloquin CA. Pharmacokinetics of ethionami
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 12.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Auclair B, Nix DE, Adam RD, James GT, Peloquin CA. Pharmacokinetics of ethionami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Auclair B, Nix DE, Adam RD, James GT, Peloquin CA. Pharmacokinetics of ethionami
 
 ### Reviewer guidance
 
-**The record is not a compartmental PK model because it lacks clearance and elimination rate constant values for ethionamide.**
+**The ethionamide record is an exposure summary, not a model, missing volume and clearance values while reporting an incompatible AUC unit.**
 
-Although the record lists absorption parameters like a lag time of 0.43 hours, it omits specific values for clearance and elimination rate. Consequently, the model cannot represent the terminal elimination phase of the drug's pharmacokinetics. Extracted — ethionamide: AUC 91 %, kabs 1.02 h Ϫ1, tlag 0.43 h.
+The record contains no volume of distribution or clearance parameters, preventing the construction of a compartmental model. It reports an AUC value of 91 with a unit of percent, which is dimensionally invalid for a pharmacokinetic area. Furthermore, the source was abstract-only, so these summary statistics are not derived from a fitted model. Extracted — ethionamide: AUC 91 %, kabs 1.02 h Ϫ1, tlag 0.43 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ethionamide, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 

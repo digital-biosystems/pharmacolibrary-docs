@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record is rejected because it contains only a blood-to-air partition coefficient for isoflurane, lacking essential pharmacokinetic parameters like clearance or volume.
 
 <div class="pk-model-meta" hidden drug="Isoflurane" model-id="Isoflurane_Esper2015_reference" status="rejected" stale="false" population="120 fasting operative patients with ASA physical status I to III" measured-compound="Isoflurane" parameterization="mechanistic" topology="1C"></div>
 
@@ -42,7 +42,13 @@ Esper T, Wehner M, Meinecke CD, Rueffert H. Blood/Gas partition coefficients for
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record is rejected because it contains only a blood-to-air partition coefficient for isoflurane, lacking essential pharmacokinetic parameters like clearance or volume.**
+
+The single extracted parameter is the blood-to-air partition coefficient (1.45) for isoflurane. The record failed to identify any kinetic quantities such as half-life, rate constants, volume of distribution, or clearance, as the source was an exposure/outcome paper. Additionally, the analysis relied solely on the abstract, meaning summary statistics substituted for a properly fitted model. Extracted — isoflurane: blood_air_partition 1.45.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

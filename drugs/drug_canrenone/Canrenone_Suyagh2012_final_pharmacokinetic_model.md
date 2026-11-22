@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Canrenone model terminal half-life (22.74361092362855 h) is double the paper's (11.2 h), and apparent parameters lack bioavailability estimates.
+> Canrenone model predicts terminal half-life of 22.7 h versus paper-reported 11.2 h, and reader disputed clearance classification.
 
 <div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Suyagh2012_final_pharmacokinetic_model" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ## Population and dosing
 
-**Population:** paediatric patients · condition pulmonary oedema, congestive heart failure · age group mixed · n = &gt;=23.
+**Population:** paediatric patients · condition pulmonary oedema, congestive heart failure · age group mixed.
 
 **Dosed compound ≠ measured compound:** dosed potassium canrenoate, measured canrenone.
 
@@ -51,9 +51,9 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ### Reviewer guidance
 
-**Canrenone model terminal half-life (22.74361092362855 h) is double the paper's (11.2 h), and apparent parameters lack bioavailability estimates.**
+**Canrenone model predicts terminal half-life of 22.7 h versus paper-reported 11.2 h, and reader disputed clearance classification.**
 
-The simulated terminal half-life of 22.74361092362855 h deviates from the paper-reported 11.2 h, exceeding the acceptable tolerance. The record relies on an apparent parameterization with bioavailability and metabolite formation fraction set to 1, rather than estimated values. Additionally, the lag time parameter was assigned a default value instead of an explicit estimate. Extracted — canrenone: CLm/F 11.4 l h -1 70 kg -1, V/F 374 l 70 kg -1, kfm 5.25 h -1.
+The simulated terminal half-life (22.7 h) exceeds the paper's reported value (11.2 h) by a ratio of 2.0307. Although the builder assumed F=1 and Fm=1, the model fails to capture the reported elimination kinetics. A second reader disagreed with the clearance parameter classification, reducing agreement to 0.875. Extracted — canrenone: CLm/F 11.4 l h -1 70 kg -1, V/F 374 l 70 kg -1, kfm 5.25 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].parameter_id`: this record has Q351, the second reading Q27. That field shapes the model, so the record is marked disputed.
 
@@ -145,7 +145,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=canrenone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=input_model: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 11.2 | 22.74 | 2.031 | h→SI vs simulated h |
 
 <details class="legend">

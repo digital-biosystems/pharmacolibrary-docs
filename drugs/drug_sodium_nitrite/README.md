@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;sodium nitrite&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumNitrite_Grimm2023_reference&quot;,&quot;label&quot;:&quot;Grimm_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumNitrite_Grimm2023_reference&quot;,&quot;label&quot;:&quot;Grimm_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # sodium nitrite
 
@@ -25,17 +25,11 @@ Sodium nitrite is an inorganic compound and nitrite salt used primarily as an an
 | nitric oxide | metabolite | 30.006 | NO | PubChem | [145068](https://pubchem.ncbi.nlm.nih.gov/compound/145068) | Vega-Villa_2013 |
 | nitrite | metabolite | 46.005 | NO2- | PubChem | [946](https://pubchem.ncbi.nlm.nih.gov/compound/946) | Vega-Villa_2013 |
 
-## Start here
-
-> **Grimm_2023_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md?tab=Simulation) · [record](drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="monkey" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Grimm_2023_reference](drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Grimm HP et al., Delivery of the Brainshuttle™ amyloid-b…, mAbs (2023) | [10.1080/19420862.2023.2261509](https://doi.org/10.1080/19420862.2023.2261509) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Grimm_2023_reference](drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Grimm HP et al., Delivery of the Brainshuttle™ amyloid-b…, mAbs (2023) | [10.1080/19420862.2023.2261509](https://doi.org/10.1080/19420862.2023.2261509) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Vega-Villa_2013_reference](drugs/drug_sodium_nitrite/SodiumNitrite_VegaVilla2013_reference.md) | — | general linear (no model) | 10 | Vega-Villa K et al., Quantitative Systems Pharmacology Model…, CPT: pharmacometrics & syst… (2013) | [10.1038/psp.2013.35](https://doi.org/10.1038/psp.2013.35) |
 
 ## Pharmacodynamics (PD)
@@ -49,17 +43,6 @@ Sodium nitrite is an inorganic compound and nitrite salt used primarily as an an
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Shelkovnikov_2004_relaxing_effect_of_sodium_nitrite_after_precontraction_by_norepinephrine_1_microM_in_rat_denuded_thoracic_aorta](drugs/drug_sodium_nitrite/pd_Shelkovnikov_2004_relaxing_effect_of_sodium_nitrite_after_pr.md) | relaxing effect of sodium nitrite after precontraction by norepinephrine (1 microM) in rat denuded thoracic aorta ← sodium nitrite · direct Emax (saturable) effect | — | Shelkovnikov S et al., Influence of nitric oxide donors and pe…, Life sciences (2004) | [10.1016/j.lfs.2003.11.006](https://doi.org/10.1016/j.lfs.2003.11.006) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Wanstall_1994_relaxation_of_norepinephrine_contracted_rat_pulmonary_artery_rings](drugs/drug_sodium_nitrite/pd_Wanstall_1994_relaxation_of_norepinephrine_contracted_rat_pu.md) | relaxation of norepinephrine-contracted rat pulmonary artery rings ← sodium nitrite · direct sigmoid Emax (Hill) effect | — | Wanstall JC, In vitro hypoxia attenuates vasorelaxat…, The Journal of pharmacology… (1994) | — |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sodium_nitrite).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: HBA1 (oxidizer), HBB (oxidizer), MB (oxidizer).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -72,13 +55,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:40 | 20:48 | 1/1/0 | 3/3/0 | 0/0/0 | 1,026,380/34,249 | ollama / glm-5.3-flash | 29 | 1/23 | 28/1 | 0 |
+| 2026-10-07 19:40 | 20:48 | 0/2/0 | 3/3/0 | 0/0/0 | 1,026,380/34,249 | ollama / glm-5.3-flash | 29 | 1/23 | 28/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 141 matched, 81 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

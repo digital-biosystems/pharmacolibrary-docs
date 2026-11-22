@@ -4,11 +4,11 @@
 
 # methyldopa (levorotatory) — `MethyldopaLevorotatory_Barnett1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-06 12:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the plasma clearance value of 11.2 was reported in units of 1/h, causing a dimension mismatch.
+> The volume of distribution was incorrectly assigned mass-normalized units, and the abstract-only extraction omitted a second clearance value.
 
-<div class="pk-model-meta" hidden drug="methyldopa (levorotatory)" model-id="MethyldopaLevorotatory_Barnett1977_reference" status="rejected" stale="true" population="normotensive and hypertensive subjects" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methyldopa (levorotatory)" model-id="MethyldopaLevorotatory_Barnett1977_reference" status="rejected" stale="false" population="normotensive and hypertensive subjects" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyldopa. Plasma levels following single intravenous, oral and multiple oral dosage in normotensive and hypertensive subjects. Clinical and experimental pharmacology & physiology 4(4):331–339 (1977).
@@ -36,7 +36,7 @@ Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyld
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyld
 
 ### Reviewer guidance
 
-**The record was rejected because the plasma clearance value of 11.2 was reported in units of 1/h, causing a dimension mismatch.**
+**The volume of distribution was incorrectly assigned mass-normalized units, and the abstract-only extraction omitted a second clearance value.**
 
-The plasma clearance parameter is listed as 11.2 1 h-1, which is dimensionally invalid for a clearance parameter. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. A second reader disagreed on the values for elimination rate constant, plasma clearance, and volume of distribution. Extracted — methyldopa levorotatory: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
+The extracted volume of distribution (0.29 kg^-1) uses units that do not correspond to a physical volume, causing a structural mismatch with the clearance parameter. Additionally, the record was built from the abstract, so the provided statistics stand in for a full model fit. A second reader could not locate the plasma clearance value (11.2 h^-1) in the source text. Extracted — methyldopa levorotatory: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of plasma clearance rate: this record has 11.2, the second reading none. That field does not shape the model.
 

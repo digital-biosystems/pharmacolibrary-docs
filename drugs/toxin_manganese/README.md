@@ -57,7 +57,7 @@ Manganese is an essential trace nutrient in all forms of life. Physiologically, 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kullar_2019_PIQ_4](drugs/toxin_manganese/pd_Kullar_2019_PIQ_4.md) | Performance IQ ← manganese · inhibition effect | — | Kullar SS et al., A benchmark concentration analysis for…, Environment international (2019) | [10.1016/j.envint.2019.05.083](https://doi.org/10.1016/j.envint.2019.05.083) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2023_MASLD](drugs/toxin_manganese/pd_Li_2023_MASLD.md) | MASLD risk ← manganese · direct log-linear effect | — | Li Y et al., Associations of multiple toxic metal ex…, Frontiers in nutrition (2023) | [10.3389/fnut.2023.1301319](https://doi.org/10.3389/fnut.2023.1301319) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rocabois_2024_Behavior](drugs/toxin_manganese/pd_Rocabois_2024_Behavior.md) | Behavior ← manganese · direct linear effect | — | Rocabois A et al., Chemical exposome and children health:…, Environmental research 262(… (2024) | [10.1016/j.envres.2024.119811](https://doi.org/10.1016/j.envres.2024.119811) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Shuhaimi-Othman_2011_Mortality](drugs/toxin_manganese/pd_Shuhaimi_Othman_2011_Mortality.md) | Mortality ← manganese · inhibition effect | — | Shuhaimi-Othman M et al., Toxicity of Metals to a Freshwater Ostr…, Journal of toxicology (2011) | [10.1155/2011/136104](https://doi.org/10.1155/2011/136104) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">other animal</span> | [Shuhaimi-Othman_2011_Mortality](drugs/toxin_manganese/pd_Shuhaimi_Othman_2011_Mortality.md) | Mortality ← manganese · inhibition effect | — | Shuhaimi-Othman M et al., Toxicity of Metals to a Freshwater Ostr…, Journal of toxicology (2011) | [10.1155/2011/136104](https://doi.org/10.1155/2011/136104) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Milton_2017_adverse_health_outcomes_severity_score](drugs/toxin_manganese/pd_Milton_2017_adverse_health_outcomes_severity_score.md) | adverse health outcomes (severity score) ← manganese · categorical (graded) response model | — | Milton B et al., Modeling U-shaped dose-response curves…, Neurotoxicology (2017) | [10.1016/j.neuro.2016.10.001](https://doi.org/10.1016/j.neuro.2016.10.001) |
 
 <details class="legend">
@@ -72,7 +72,7 @@ Manganese is an essential trace nutrient in all forms of life. Physiologically, 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-18 10:32 | 1:58:10 | 3/1/0 | 7/0/0 | 0/0/0 | 2,248,700/117,176 | einfracz / qwen3.8-flash-next | 97 | 19/63 | 97/0 | 0 |
+| 2026-11-18 10:32 | 1:58:10 | 3/1/0 | 10/0/0 | 0/0/0 | 2,248,700/117,176 | einfracz / qwen3.8-flash-next | 97 | 19/63 | 97/0 | 0 |
 
 ## Coverage
 

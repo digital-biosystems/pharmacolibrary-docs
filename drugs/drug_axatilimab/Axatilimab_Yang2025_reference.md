@@ -4,11 +4,11 @@
 
 # axatilimab — `Axatilimab_Yang2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:45 UTC (Rejected), but the paper was screened again on 2026-10-06 23:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Intercompartmental clearance Q (2.6 L/h) has a dimension mismatch, and the CSF-1 compartment is unreachable from the dose, so the model was rejected.
+> The model was rejected because a rate parameter had an incompatible unit, and the target-mediated compartments lacked a clear input path from the dose.
 
-<div class="pk-model-meta" hidden drug="axatilimab" model-id="Axatilimab_Yang2025_reference" status="rejected" stale="true" population="healthy participants and patients with solid tumors or chronic graft-versus-host disease" measured-compound="axatilimab" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="axatilimab" model-id="Axatilimab_Yang2025_reference" status="rejected" stale="false" population="healthy participants and patients with solid tumors or chronic graft-versus-host disease" measured-compound="axatilimab" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Yang YO, Sokolov V, Volkova A, Liu X, Leon C, Kosinsky Y et al. Semimechanistic Population PK/PD Modeling of Axatilimab in Healthy Participants and Patients With Solid Tumors or Chronic Graft-Versus-Host Disease. Clinical pharmacology and therapeutics 117(3):704–715 (2025).
@@ -45,7 +45,7 @@ Yang YO, Sokolov V, Volkova A, Liu X, Leon C, Kosinsky Y et al. Semimechanistic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Yang YO, Sokolov V, Volkova A, Liu X, Leon C, Kosinsky Y et al. Semimechanistic 
 
 ### Reviewer guidance
 
-**Intercompartmental clearance Q (2.6 L/h) has a dimension mismatch, and the CSF-1 compartment is unreachable from the dose, so the model was rejected.**
+**The model was rejected because a rate parameter had an incompatible unit, and the target-mediated compartments lacked a clear input path from the dose.**
 
-The review found that the intercompartmental clearance Q, set to 2.6 L/h, does not match the expected units for a flow parameter, causing a structural inconsistency. Additionally, the CSF-1 compartment is flagged as an orphan because it has no defined path from the administered dose of axatilimab. The second reader disagreed with the extracted topology, noting that the interconversion links between axatilimab, CSF-1, NCMCs, AST, and CPK were not recognized in their reading of the record. Extracted — axatilimab: V 1.52 L, CL 8.3 L/h, Q 2.6 L/h, V2 1.8 L, KD 0.264, C0 5.9, kel 3.32 1/h, Vmax 5.16 1/h.
+A structural parameter was assigned a reciprocal time unit, which is physically inconsistent with the required volume/time dimension for flow. The model structure includes downstream compartments for the cytokine and metabolites that are not linked to the initial drug dose. Additionally, a unit provided in the source could not be converted to standard SI units, preventing the parameter from being properly standardized. Extracted — axatilimab: V 1.52 L, CL 8.3 L/h, Q 2.6 L/h, V2 1.8 L, KD 0.264, C0 5.9, kel 3.32 1/h, Vmax 5.16 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has axatilimab → csf-1 (interconversion); csf-1 → ncmcs (interconversion); ncmcs → ast (interconversion) …, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

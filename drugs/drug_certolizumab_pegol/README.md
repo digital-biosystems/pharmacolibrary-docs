@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;certolizumab pegol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CertolizumabPegol_Menshykau2024_reference&quot;,&quot;label&quot;:&quot;Menshykau_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CertolizumabPegol_Menshykau2024_reference&quot;,&quot;label&quot;:&quot;Menshykau_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # certolizumab pegol
 
@@ -16,13 +16,13 @@ Certolizumab pegol is a tumor necrosis factor alpha inhibitor used to treat rheu
 
 ## Start here
 
-> **Menshykau_2024_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> pregnant women with chronic inflammatory diseases, n = 20. [Run it in the simulator](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md?tab=Simulation) · [record](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md)
+> **Menshykau_2024_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> pregnant women with chronic inflammatory diseases, n = 20. [Run it in the simulator](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md?tab=Simulation) · [record](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Menshykau_2024 · CL/F</text><circle cx="273.6" cy="30.0" r="4" fill="#78909c"><title>Menshykau_2024 · CL/F: 0.01733 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wade_2015 · CL/F</text><circle cx="349.4" cy="46.0" r="4" fill="#ef6c00"><title>Wade_2015 · CL/F: 0.02854 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wade_2015 · V/F</text><circle cx="498.5" cy="30.0" r="4" fill="#ef6c00"><title>Wade_2015 · V/F: 7.61 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Menshykau_2024 · V/F</text><circle cx="503.4" cy="46.0" r="4" fill="#78909c"><title>Menshykau_2024 · V/F: 7.86 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Menshykau_2024 · CL/F</text><circle cx="273.6" cy="30.0" r="4" fill="#ef6c00"><title>Menshykau_2024 · CL/F: 0.01733 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wade_2015 · CL/F</text><circle cx="349.4" cy="46.0" r="4" fill="#ef6c00"><title>Wade_2015 · CL/F: 0.02854 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wade_2015 · V/F</text><circle cx="498.5" cy="30.0" r="4" fill="#ef6c00"><title>Wade_2015 · V/F: 7.61 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Menshykau_2024 · V/F</text><circle cx="503.4" cy="46.0" r="4" fill="#ef6c00"><title>Menshykau_2024 · V/F: 7.86 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -30,7 +30,7 @@ Certolizumab pegol is a tumor necrosis factor alpha inhibitor used to treat rheu
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Menshykau_2024_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Menshykau D et al., Population PK modeling of certolizumab…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13220](https://doi.org/10.1002/psp4.13220) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Menshykau_2024_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Menshykau D et al., Population PK modeling of certolizumab…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13220](https://doi.org/10.1002/psp4.13220) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Wade_2015_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference.md) | — | 1-compartment (no model) | 5 (+5 cov.) | Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | [10.1002/jcph.491](https://doi.org/10.1002/jcph.491) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Vande_2017_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Vande2017_reference.md) | — | 1-compartment (no model) | 0 | Vande Casteele N et al., Accounting for Pharmacokinetic Variabil…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0535-3](https://doi.org/10.1007/s40262-017-0535-3) |
 
@@ -42,16 +42,6 @@ Certolizumab pegol is a tumor necrosis factor alpha inhibitor used to treat rheu
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lacroix_2014_ACR20](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR20.md) | ACR20 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lacroix_2014_ACR50](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR50.md) | ACR50 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lacroix_2014_ACR70](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR70.md) | ACR70 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=certolizumab_pegol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: AKR1A1 (substrate), TNF (neutralizer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +55,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:00 | 2:08 | 2/1/0 | 2/0/0 | 0/0/0 | 188,833/9,734 | einfracz / qwen3.8-27b | 8 | 0/8 | 7/1 | 0 |
+| 2026-10-07 00:00 | 2:08 | 2/1/0 | 4/0/0 | 0/0/0 | 188,833/9,734 | einfracz / qwen3.8-27b | 8 | 0/8 | 7/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

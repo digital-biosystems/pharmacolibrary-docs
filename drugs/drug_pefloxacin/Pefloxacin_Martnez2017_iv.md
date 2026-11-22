@@ -4,11 +4,11 @@
 
 # pefloxacin — `Pefloxacin_Martnez2017_iv`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 11:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the N-demethyl pefloxacin metabolite half-life of 0.60 hours could not be converted to standard units.
+> Pefloxacin record rejected because intercompartmental clearances and the metabolite link have mismatched time versus volume units.
 
-<div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Martnez2017_iv" status="rejected" stale="true" population="healthy broiler chickens" measured-compound="pefloxacin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Martnez2017_iv" status="rejected" stale="false" population="healthy broiler chickens" measured-compound="pefloxacin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Martínez MA, Ares I, Rodríguez JL, Martínez M, Martínez-Larrañaga MR, Isea G et al. Oral Bioavailability and Plasma Disposition of Pefloxacin in Healthy Broiler Chickens. Frontiers in veterinary science 4:77 (2017).
@@ -50,7 +50,7 @@ Martínez MA, Ares I, Rodríguez JL, Martínez M, Martínez-Larrañaga MR, Isea 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.65). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.65). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,9 +60,9 @@ Martínez MA, Ares I, Rodríguez JL, Martínez M, Martínez-Larrañaga MR, Isea 
 
 ### Reviewer guidance
 
-**The record was rejected because the N-demethyl pefloxacin metabolite half-life of 0.60 hours could not be converted to standard units.**
+**Pefloxacin record rejected because intercompartmental clearances and the metabolite link have mismatched time versus volume units.**
 
-The reported metabolite half-life of 0.60 hours was not recognized as a valid time unit, so the model lacks a standard value for this parameter. This caused a dimensional mismatch for the structural parameter defining the metabolite's disposition. As a result, the parameter remained undefined in standard units, failing the model's integrity checks. Extracted — pefloxacin: λ1 0.7 h−1, kel 0.082 h−1, t1/2α 1 h, t1/2β 8.44 h, V 2.36 L/kg, Vss 1.54 L/kg, Q 0.28 h−1, Q2 0.18 h−1, … (+3); N-demethyl pefloxacin: t1/2α 0.6 h.
+The structural parameters for intercompartmental clearance, recorded as 0.28 and 0.18 h−1, conflict with the expected volume-based dimensions. The metabolism link from pefloxacin to N-demethyl pefloxacin also lacks a valid rate constant. Additionally, the second reader disputes the metabolite identification and the assignment of several parameter values. Extracted — pefloxacin: λ1 0.7 h−1, kel 0.082 h−1, t1/2α 1 h, t1/2β 8.44 h, V 2.36 L/kg, Vss 1.54 L/kg, Q 0.28 h−1, Q2 0.18 h−1, … (+3); N-demethyl pefloxacin: t1/2α 0.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pefloxacin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

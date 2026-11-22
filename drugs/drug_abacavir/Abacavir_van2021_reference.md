@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;van_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Cella2011_model_1_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_1_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_1_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Archary2019_reference&quot;,&quot;label&quot;:&quot;Archary_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Archary2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Cella2011_model_2_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_2_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_2_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2023_reference&quot;,&quot;label&quot;:&quot;Chupradit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Rabie2020_reference&quot;,&quot;label&quot;:&quot;Rabie_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Rabie2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Cella2011_model_1_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_1_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_1_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Cella2011_model_2_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_2_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_2_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2023_reference&quot;,&quot;label&quot;:&quot;Chupradit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Jullien2005_reference&quot;,&quot;label&quot;:&quot;Jullien_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Jullien2005_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Rabie2020_typical_value_value&quot;,&quot;label&quot;:&quot;Rabie_2020_typical_value_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Rabie2020_typical_value_value.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2012_reference&quot;,&quot;label&quot;:&quot;Zhao_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Archary2019_reference&quot;,&quot;label&quot;:&quot;Archary_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Archary2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abacavir — `Abacavir_van2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:38 UTC (Needs review), but the paper was screened again on 2026-11-03 08:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Abacavir's clearance, volume of distribution, absorption lag time, and intercompartmental clearance lacked values, forcing the use of generic placeholders.
+> The abacavir model was rejected because the peripheral compartment had no defined path from the central compartment.
 
-<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_van2021_reference" status="needs_review" stale="true" population="HIV-positive children with and without MDR-TB" measured-compound="abacavir, lamivudine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_van2021_reference" status="rejected" stale="false" population="HIV-positive children" measured-compound="abacavir" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 van der Laan LE, Garcia-Prats AJ, Schaaf HS, Winckler JL, Draper H, Norman J et al. Pharmacokinetics and Drug-Drug Interactions of Abacavir and Lamuvudine Co-administered With Antituberculosis Drugs in HIV-Positive Children Treated for Multidrug-Resistant Tuberculosis. Frontiers in pharmacology 12:722204 (2021).
@@ -17,40 +17,34 @@ van der Laan LE, Garcia-Prats AJ, Schaaf HS, Winckler JL, Draper H, Norman J et 
 
 ## Population and dosing
 
-**Population:** HIV-positive children with and without MDR-TB · condition HIV, MDR-TB · age group child · n = &gt;54.
+**Population:** HIV-positive children · age group child.
+
+**Dosing:** 280, 560 mg, oral, multiple, every 12 h.
 
 ## Model
 
-**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 16 extracted.  
-**Availability:** Model withheld: a core parameter is unspecified.
+**Parameters:** 8 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL (L/h) b | CLb | 10.8 | L/h |
 | CL (L/h) b | CLb | 16.3 | L/h |
-| Vc (L) b | Vss | 26.5 | L |
 | Vc (L) b | V1 | 21.7 | L |
-| ka (1/h) | kabs | 1.07 | 1/h |
 | ka (1/h) | kabs | 1.77 | 1/h |
-| MTT–tablet (h) | MTT | 0.643 | h |
 | MTT–tablet (h) | MTT | 0.458 | h |
-| NN ( ) | n_transit | 6.38 |  |
 | NN ( ) | n_transit | 3.70 |  |
 | F ( ) | Fab | 1 |  |
-| F ( ) | Fab | 1 |  |
-| Q (L/h) b | Qb | 2.25 | L/h |
 | Q (L/h) b | Qb | 1.42 | L/h |
 | Vp (L) b | V2 | 12.0 | L |
-| flow rate | Q | 0.8 | mL/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,11 +54,11 @@ van der Laan LE, Garcia-Prats AJ, Schaaf HS, Winckler JL, Draper H, Norman J et 
 
 ### Reviewer guidance
 
-**Abacavir's clearance, volume of distribution, absorption lag time, and intercompartmental clearance lacked values, forcing the use of generic placeholders.**
+**The abacavir model was rejected because the peripheral compartment had no defined path from the central compartment.**
 
-Although the record lists specific values for abacavir's central volume (21.7 L) and blood clearance (16.3 L/h), the review determined that key parameters for abacavir's clearance, distribution, absorption lag, and transfer to the peripheral compartment had no extracted values. This meant standard library defaults were used instead of estimates derived from the paper, causing the model to be held back. A second reader also disputed the identification of the dose compound and primary analyte, suggesting the record may not correctly isolate the abacavir-specific analysis. Extracted — lamivudine: CLb 10.8 L/h, Vss 26.5 L, kabs 1.07 1/h, MTT 0.643 h, n_transit 6.38, Fab 1, Qb 2.25 L/h; abacavir: CLb 16.3 L/h, V1 21.7 L, kabs 1.77 1/h, MTT 0.458 h, n_transit 3.7, Fab 1, Qb 1.42 L/h, V2 12 L; abacavir, lamivudine: Q 0.8 mL/min.
+The record describes a two-compartment structure with a central volume of 21.7 L and a peripheral volume of 12.0 L. However, the inter-compartmental clearance parameter, Qb, was extracted as null, meaning the link between these compartments is missing. This creates an unreachable compartment, preventing the model from simulating drug distribution correctly. Extracted — abacavir: CLb 16.3 L/h, V1 21.7 L, kabs 1.77 1/h, MTT 0.458 h, n_transit 3.7, Fab 1, Qb 1.42 L/h, V2 12 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir, lamivudine, the second reading abacavir; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -72,22 +66,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL (L/h) b | `Q23` · CLb | 10.8 | L/h | 3e-06 | m3/s | l/h | space_fold (0.95) | T2:row2:col1 |
-| CL (L/h) b | `Q23` · CLb | 16.3 | L/h | 4.528e-06 | m3/s | l/h | space_fold (0.95) | T2:row2:col3 |
-| Vc (L) b | `Q65` · Vss | 26.5 | L | 0.0265 | m3 | l | llm_corrected (0.6) | T2:row3:col1 |
-| Vc (L) b | `Q63` · V1 | 21.7 | L | 0.0217 | m3 | l | llm_confirmed (0.6) | T2:row3:col3 |
-| ka (1/h) | `Q49` · kabs | 1.07 | 1/h | 0.0002972 | 1/s | 1/h | exact (1) | T2:row4:col1 |
-| ka (1/h) | `Q49` · kabs | 1.77 | 1/h | 0.0004917 | 1/s | 1/h | exact (1) | T2:row4:col3 |
-| MTT–tablet (h) | `Q81` · MTT | 0.643 | h |  |  | h | llm_confirmed (0.6) | T2:row5:col1 |
-| MTT–tablet (h) | `Q81` · MTT | 0.458 | h |  |  | h | llm_confirmed (0.6) | T2:row5:col3 |
-| NN ( ) | `Q311` · n_transit | 6.38 |  |  |  |  | exact (1) | T2:row7:col1 |
-| NN ( ) | `Q311` · n_transit | 3.70 |  |  |  |  | exact (1) | T2:row7:col3 |
-| F ( ) | `Q40` · Fab | 1 |  |  |  |  | exact (1) | T2:row8:col1 |
-| F ( ) | `Q40` · Fab | 1 |  |  |  |  | exact (1) | T2:row8:col3 |
-| Q (L/h) b | `Q54` · Qb | 2.25 | L/h | 6.25e-07 | m3/s | l/h | space_fold (0.95) | T2:row9:col1 |
-| Q (L/h) b | `Q54` · Qb | 1.42 | L/h | 3.944e-07 | m3/s | l/h | space_fold (0.95) | T2:row9:col3 |
-| Vp (L) b | `Q64` · V2 | 12.0 | L | 0.012 | m3 | l | llm_confirmed (0.6) | T2:row10:col3 |
-| flow rate | `Q30` · Q | 0.8 | mL/min | 1.333e-08 | m3/s | L/h | review_gapfill (0.7) | Zhang_2018:review |
+| CL (L/h) b | `Q23` · CLb | 16.3 | L/h | 4.528e-06 | m3/s | l/h | space_fold (0.95) | T2:row2:col1, T2:row2:col3 |
+| Vc (L) b | `Q63` · V1 | 21.7 | L | 0.0217 | m3 | l | llm_confirmed (0.6) | T2:row3:col1, T2:row3:col3 |
+| ka (1/h) | `Q49` · kabs | 1.77 | 1/h | 0.0004917 | 1/s | 1/h | exact (1) | T2:row4:col1, T2:row4:col3 |
+| MTT–tablet (h) | `Q81` · MTT | 0.458 | h | 1649 | s | h | llm_confirmed (0.6) | T2:row5:col1, T2:row5:col3 |
+| NN ( ) | `Q311` · n_transit | 3.70 |  | 3.7 |  |  | exact (1) | T2:row7:col1, T2:row7:col3 |
+| F ( ) | `Q40` · Fab | 1 |  |  |  |  | exact (1) | T2:row8:col1, T2:row8:col3 |
+| Q (L/h) b | `Q54` · Qb | 1.42 | L/h | 3.944e-07 | m3/s | l/h | space_fold (0.95) | T2:row9:col1, T2:row9:col3 |
+| Vp (L) b | `Q64` · V2 | 12.0 | L | 0.012 | m3 | l | llm_confirmed (0.6) | T2:row10:col1, T2:row10:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -97,15 +83,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Effect of suspension on MTT (%)' — extend the ontology if this is a real PK parameter (source ['T2:row6:col1'])
-- dropped unlinked row (NIL): 'Effect of suspension on MTT (%)' — extend the ontology if this is a real PK parameter (source ['T2:row6:col3'])
-- dropped duplicate Q65 ('Vp (L) b', value '69.8') — already have one for this compound
-- dropped unlinked row (NIL): 'PMAGE50 (months from conception) c' — extend the ontology if this is a real PK parameter (source ['T2:row12:col1'])
-- dropped unlinked row (NIL): 'PMAGE50 (months from conception) c' — extend the ontology if this is a real PK parameter (source ['T2:row12:col3'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=abacavir, lamivudine
-- molar mass: no plausible PubChem entry for 'abacavir, lamivudine' ('no full name in the paper') — left in mass units
-- molar mass: none found for 'abacavir, lamivudine' — its concentrations stay mass-only
-- gap-filled Q30 (Q) from Zhang_2018's review values (primary lacked it)
+- dropped unlinked row (NIL): 'Effect of suspension on MTT (%)' — extend the ontology if this is a real PK parameter (source ['T2:row6:col1', 'T2:row6:col3'])
+- dropped unlinked row (NIL): 'PMAGE50 (months from conception) c' — extend the ontology if this is a real PK parameter (source ['T2:row12:col1', 'T2:row12:col3'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=abacavir
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -119,16 +99,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.818 (18/22 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.143 (3/21 fields) | 18 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>18 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[vc (l) b].parameter_id` | Q65 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[cl (l/h) b]` | 16.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl (l/h) b]` |  | 10.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.77 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 1.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtt-tablet]` | 0.458 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtt-tablet]` |  | 0.643 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nn]` | 3.70 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nn]` |  | 6.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q (l/h) b]` | 1.42 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q (l/h) b]` |  | 2.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc (l) b]` | 21.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc (l) b]` |  | 26.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp (l) b]` | 12.0 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp (l) b]` |  | 69.8 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | abacavir, lamivudine | abacavir | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | abacavir, lamivudine | abacavir | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | abacavir | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | abacavir | unknown | mismatch |
 
 </details>
 
@@ -142,38 +136,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 15 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['T2:row2:col1'] |
-| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['T2:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Zhang_2018:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['T2:row4:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['T2:row4:col3'] |
-| C5_dimension_Q54 | pass | [length] ** 3 / [time] |  | ['T2:row9:col1'] |
-| C5_dimension_Q54 | pass | [length] ** 3 / [time] |  | ['T2:row9:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['T2:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['T2:row10:col3'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['T2:row3:col1'] |
-| C5_unit_missing_Q81 | fail | [time] | h | ['T2:row5:col1'] |
-| C5_unit_missing_Q81 | fail | [time] | h | ['T2:row5:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.8 | ['T2:row2:col1'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q23 | pass | clearance within physiological range | 10.8 L/h | ['T2:row2:col1'] |
-| C9_phys_window_Q23 | pass | clearance within physiological range | 16.3 L/h | ['T2:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 21.7 L | ['T2:row3:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 12 L | ['T2:row10:col3'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 26.5 L | ['T2:row3:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['T2:row2:col1', 'T2:row2:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['T2:row4:col1', 'T2:row4:col3'] |
+| C5_dimension_Q54 | pass | [length] ** 3 / [time] |  | ['T2:row9:col1', 'T2:row9:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['T2:row3:col1', 'T2:row3:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['T2:row10:col1', 'T2:row10:col3'] |
+| C5_dimension_Q81 | pass | [time] |  | ['T2:row5:col1', 'T2:row5:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.3 | ['T2:row2:col1', 'T2:row2:col3'] |
+| C8_topology | fail |  |  |  |
+| C9_phys_window_Q23 | pass | clearance within physiological range | 16.3 L/h | ['T2:row2:col1', 'T2:row2:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 21.7 L | ['T2:row3:col1', 'T2:row3:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 12 L | ['T2:row10:col1', 'T2:row10:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -185,36 +161,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_abacavir/Abacavir_van2021_reference/Abacavir_van2021_reference_matlab.zip" download>Abacavir_van2021_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_abacavir/Abacavir_van2021_reference/Abacavir_van2021_reference_matlab_simbio.zip" download>Abacavir_van2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_abacavir/Abacavir_van2021_reference/Abacavir_van2021_reference_sbml.zip" download>Abacavir_van2021_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_abacavir/Abacavir_van2021_reference/Abacavir_van2021_reference_cellml.zip" download>Abacavir_van2021_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-</div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): van der Laan LE, Garcia-Prats AJ, Schaaf HS, Winckler JL, Draper H, Norman J et al. Pharmacokinetics and Drug-Drug Interactions of Abacavir and Lamuvudine Co-administered With Antituberculosis Drugs in HIV-Positive Children Treated for Multidrug-Resistant Tuberculosis. Frontiers in pharmacology 12:722204 (2021). [doi:10.3389/fphar.2021.722204](https://doi.org/10.3389/fphar.2021.722204)
-
-**This record:** Pharmacolibrary, model `Abacavir_van2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_abacavir/Abacavir_van2021_reference>
-
-```bibtex
-@misc{pharmacolibrary_Abacavirvan2021reference,
-  title  = {{Pharmacolibrary model Abacavir_van2021_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_abacavir/Abacavir_van2021_reference},
-  note   = {Parameters from doi:10.3389/fphar.2021.722204},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -224,4 +173,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_van2021_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_van2021_reference%0APaper%3A%20van_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_van2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 08:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:49 UTC</sub>

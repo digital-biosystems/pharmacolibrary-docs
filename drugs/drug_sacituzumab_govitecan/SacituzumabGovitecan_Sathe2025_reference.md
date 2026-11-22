@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;sacituzumab govitecan&quot;,&quot;href&quot;:&quot;drugs/drug_sacituzumab_govitecan/&quot;},{&quot;label&quot;:&quot;Sathe_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SacituzumabGovitecan_Sathe2025_reference&quot;,&quot;label&quot;:&quot;Sathe_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SacituzumabGovitecan_Sathe2025_reference&quot;,&quot;label&quot;:&quot;Sathe_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sacituzumab govitecan — `SacituzumabGovitecan_Sathe2025_reference`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:07 UTC (Needs review), but the paper was screened again on 2026-10-07 19:58 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+5 more).
 
-<div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2025_reference" status="extracted" stale="true" population="patients with HR+/HER2− mBC, mTNBC, or other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2025_reference" status="needs_review" stale="false" population="patients with HR+/HER2− mBC, mTNBC, or other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Sathe AG, Jones AK, Diderichsen PM, Wang X, Chang P, Verret W et al. Sacituzumab Govitecan Population Pharmacokinetics: Updated Analyses Using HR+/HER2- Metastatic Breast Cancer Data From the Phase 3 TROPiCS-02 Trial. Clinical and translational science 18(7):e70291 (2025).
@@ -17,7 +17,7 @@ Sathe AG, Jones AK, Diderichsen PM, Wang X, Chang P, Verret W et al. Sacituzumab
 
 ## Population and dosing
 
-**Population:** patients with HR+/HER2− mBC, mTNBC, or other solid tumors · condition metastatic breast cancer · age group adult · n = &gt;=789.
+**Population:** patients with HR+/HER2− mBC, mTNBC, or other solid tumors · condition metastatic breast cancer · age group adult.
 
 **Dosing:** 700 mg, iv, multiple, every 168 h.
 
@@ -31,6 +31,8 @@ Sathe AG, Jones AK, Diderichsen PM, Wang X, Chang P, Verret W et al. Sacituzumab
 <figure class="pk-models-diagram"><img src="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference.svg" alt="SacituzumabGovitecan_Sathe2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CLSG, L/h | CL | 0.128 | L/h | 1.01 |
@@ -62,7 +64,7 @@ Sathe AG, Jones AK, Diderichsen PM, Wang X, Chang P, Verret W et al. Sacituzumab
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -72,11 +74,11 @@ Sathe AG, Jones AK, Diderichsen PM, Wang X, Chang P, Verret W et al. Sacituzumab
 
 ### Reviewer guidance
 
-**Free SN-38 metabolite parameters were missing, forcing unreported absorption defaults that contradict the oral formulation.**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+5 more).**
 
-The record lists free SN-38 volumes and clearances as zero, meaning its compartment relied on library placeholders rather than fitted estimates. This absence coincided with absorption parameters lacking explicit values, incompatible with the apparent parameterization for an extravascular dose. Furthermore, the review found that covariate scenarios were not exercised, so the impact of serum albumin and weight was unverified. Extracted — sacituzumab govitecan: CL 0.128 L/h, Q 0.00513 L/h, V1 2.65 L, V2 0.929 L; free SN-38: kfm 0.0937 1/h, CL/F 401 L/h, Q/F 243 L/h, V1/F 49 L, V2/F 2.18e+03 L; total antibody: CL 0.0155 L/h, Q 0.0105 L/h, V1 2.97 L, V2 1.32 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — sacituzumab govitecan: CL 0.128 L/h, Q 0.00513 L/h, V1 2.65 L, V2 0.929 L; free SN-38: kfm 0.0937 1/h, CL/F 401 L/h, Q/F 243 L/h, V1/F 49 L, V2/F 2.18e+03 L; total antibody: CL 0.0155 L/h, Q 0.0105 L/h, V1 2.97 L, V2 1.32 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -184,7 +186,8 @@ The record lists free SN-38 volumes and clearances as zero, meaning its compartm
 | T3_param_coverage |  | fail | 12 scholar param(s) emitted or defaulted | 11 covered | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev-1: not acceptable; dev-3: not acceptable; dev-4: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

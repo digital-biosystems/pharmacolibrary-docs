@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bevacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/&quot;},{&quot;label&quot;:&quot;Turner_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bevacizumab — `Bevacizumab_Turner2014_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
 
-> This record was reviewed on 2026-11-07 15:38 UTC (Needs review), but the paper was screened again on 2026-10-07 10:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
-
-<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Turner2014_reference" status="extracted" stale="true" population="children with osteosarcoma" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Turner2014_reference" status="not_modelled" stale="false" population="children with osteosarcoma" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacokinetics of bevacizumab in children with osteosarcoma: implications for dosing. Clinical cancer research : an official journal of the American Association for Cancer Research 20(10):2783–2792 (2014).
@@ -27,6 +25,8 @@ Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacoki
 **Availability:** No model was generated from this record.
 
 ## Parameters
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | terminal half-life | t1/2z | 12.2 | days |
@@ -34,7 +34,7 @@ Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacoki
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**No model has been built from this record yet.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bevacizumab: t1/2z 12.2 days, V 49.1 mL/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 Independently confirmed by `qwen3.8-27b`.
 
@@ -105,6 +105,16 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Turner_2014:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 3.44 L | ['Turner_2014:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | obtained | ratio | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_param_coverage | skipped |  |  | no emitted model to inspect (engineer build absent) |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

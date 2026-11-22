@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;tirzepatide&quot;,&quot;href&quot;:&quot;drugs/drug_tirzepatide/&quot;},{&quot;label&quot;:&quot;Chigutsa_2025 \u00b7 PD fat mass&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# fat mass — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+# fat mass — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 **As extracted:** Tirzepatide (concentrations from the PK model of Schneck_2024) drives fat mass (in kg): indirect response — drug inhibits the production of fat mass.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
 > Tirzepatide concentrations (ng/mL) inhibit the formation of fat mass (kg) via an indirect response model with a maximum effect (Imax) of 0.319 and an IC50 of 518 ng/mL. The model includes a first-order elimination rate constant (Kout) of 0.0314 week−1 and a placebo fractional reduction in fat mass (Kin) of 0.213.
 >
@@ -47,54 +47,19 @@ Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmaco
 </details>
 
 
-## Exposure-response model
-
-`Tirzepatide_Chigutsa2025_PD_fat_mass` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 45 kg | 45 kg |
-| Emax | 0.319 | — |
-| EC50 | 518 ng/mL | 0.000518 kg/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 45, `at_EC50` = 37.82, `at_inf` = 30.65
-
-Deviations:
-
-- `defaulted_parameters` — gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as IDR-I predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
-
-Advisory:
-
-- defaulted: gamma (convention)
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q327]` |  | 0.213 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q341]` | 40.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q327]` |  | 0.213 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q341]` | 40.3 |  | only_one_extracted |
 
 </details>
 
@@ -110,33 +75,19 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_fat_mass/Tirzepatide_Chigutsa2025_PD_fat_mass_modelica.zip" download>Tirzepatide_Chigutsa2025_PD_fat_mass_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_fat_mass/Tirzepatide_Chigutsa2025_PD_fat_mass_matlab.zip" download>Tirzepatide_Chigutsa2025_PD_fat_mass_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_fat_mass/Tirzepatide_Chigutsa2025_PD_fat_mass_sbml.zip" download>Tirzepatide_Chigutsa2025_PD_fat_mass_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_fat_mass/Tirzepatide_Chigutsa2025_PD_fat_mass_cellml.zip" download>Tirzepatide_Chigutsa2025_PD_fat_mass_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `Tirzepatide_Chigutsa2025_PD_fat_mass`. <https://pharmacolibrary.github.io/#/drugs/drug_tirzepatide/pd_Chigutsa_2025_fat_mass>
-
-```bibtex
-@misc{pharmacolibrary_TirzepatideChigutsa2025PDfatmass,
-  title  = {{Pharmacolibrary model Tirzepatide_Chigutsa2025_PD_fat_mass}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_tirzepatide/pd_Chigutsa_2025_fat_mass},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

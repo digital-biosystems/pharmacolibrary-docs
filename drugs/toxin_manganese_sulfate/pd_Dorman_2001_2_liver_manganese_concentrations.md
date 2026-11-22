@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Manganese sulfate&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/&quot;},{&quot;label&quot;:&quot;Dorman_2001_2 \u00b7 PD liver manganese concentrations&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseSulfate_Vitarella2000_reference&quot;,&quot;label&quot;:&quot;Vitarella_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseSulfate_Vitarella2000_reference&quot;,&quot;label&quot;:&quot;Vitarella_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # liver manganese concentrations — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Manganese_sulfate drives liver manganese concentrations (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide sufficient information to determine the pharmacodynamic mechanism or specific potency and rate values for manganese sulfate's effect on liver manganese concentrations.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Dorman_2001_2`
 - **model family:** `unknown`

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01C&quot;,&quot;href&quot;:&quot;atc/H01C.md&quot;},{&quot;label&quot;:&quot;elagolix&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Abbas_2020_BMD&quot;,&quot;label&quot;:&quot;Abbas_2020 \u00b7 BMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_elagolix/pd_Abbas_2020_BMD.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # elagolix
 
@@ -27,36 +26,18 @@ Elagolix is an oral gonadotropin-releasing hormone antagonist used to treat pain
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Beck_2022_reference](drugs/drug_elagolix/Elagolix_Beck2022_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01096-w](https://doi.org/10.1007/s40262-021-01096-w) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Beck_2022_reference](drugs/drug_elagolix/Elagolix_Beck2022_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01096-w](https://doi.org/10.1007/s40262-021-01096-w) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Abbas_2020_BMD](drugs/drug_elagolix/pd_Abbas_2020_BMD.md) | lumbar spine BMD ← elagolix · indirect response — drug stimulates the loss of lumbar spine BMD | ▶ model + simulator | Abbas Suleiman A et al., Exposure-Safety Analyses Identify Predi…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12560](https://doi.org/10.1002/psp4.12560) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Abbas_2020_BMD](drugs/drug_elagolix/pd_Abbas_2020_BMD.md) | lumbar spine BMD ← elagolix · indirect response — drug stimulates the loss of lumbar spine BMD | — | Abbas Suleiman A et al., Exposure-Safety Analyses Identify Predi…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12560](https://doi.org/10.1002/psp4.12560) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Winzenborg_2021_BMD](drugs/drug_elagolix/pd_Winzenborg_2021_BMD.md) | bone mineral density (BMD) loss ← elagolix · indirect response — drug inhibits the production of bone mineral density (BMD) loss | — | Winzenborg I et al., A Personalized Medicine Approach Using…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12570](https://doi.org/10.1002/psp4.12570) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Winzenborg_2021_DYSM](drugs/drug_elagolix/pd_Winzenborg_2021_DYSM.md) | dysmenorrhea (DYSM) responder rates ← elagolix · categorical (graded) response model | — | Winzenborg I et al., A Personalized Medicine Approach Using…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12570](https://doi.org/10.1002/psp4.12570) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Winzenborg_2021_DYSP](drugs/drug_elagolix/pd_Winzenborg_2021_DYSP.md) | dyspareunia (DYSP) responder rates ← elagolix · categorical (graded) response model | — | Winzenborg I et al., A Personalized Medicine Approach Using…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12570](https://doi.org/10.1002/psp4.12570) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Winzenborg_2021_HF](drugs/drug_elagolix/pd_Winzenborg_2021_HF.md) | incidence of hot flashes ← elagolix · categorical (graded) response model | — | Winzenborg I et al., A Personalized Medicine Approach Using…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12570](https://doi.org/10.1002/psp4.12570) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Winzenborg_2021_NMPP](drugs/drug_elagolix/pd_Winzenborg_2021_NMPP.md) | nonmenstrual pelvic pain (NMPP) responder rates ← elagolix · categorical (graded) response model | — | Winzenborg I et al., A Personalized Medicine Approach Using…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12570](https://doi.org/10.1002/psp4.12570) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=elagolix).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `SLCO1B1` substrate, `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: GNRHR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -70,13 +51,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:20 | 2:38 | 0/1/0 | 2/0/0 | 0/0/0 | 156,067/9,693 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-07 09:20 | 2:38 | 0/1/0 | 6/0/0 | 0/0/0 | 156,067/9,693 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

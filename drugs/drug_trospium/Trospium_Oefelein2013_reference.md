@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Trospium's absorption rate constant was left at library defaults rather than extracted from the paper, invalidating the model.
+> Trospium's absorption rate constant and lag time were set to defaults rather than using values from Oefelein_2013.
 
 <div class="pk-model-meta" hidden drug="trospium" model-id="Trospium_Oefelein2013_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="trospium" parameterization="apparent" topology="1C"></div>
 
@@ -40,7 +40,7 @@ Oefelein MG, Tong W, Kerr S, Bhasi K, Patel RK, Yu D. Effect of concomitant admi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Oefelein MG, Tong W, Kerr S, Bhasi K, Patel RK, Yu D. Effect of concomitant admi
 
 ### Reviewer guidance
 
-**Trospium's absorption rate constant was left at library defaults rather than extracted from the paper, invalidating the model.**
+**Trospium's absorption rate constant and lag time were set to defaults rather than using values from Oefelein_2013.**
 
-The record lacks an explicit estimate for the absorption rate constant, relying instead on library placeholders. Consequently, the first-order depot input is built on invented absorption parameters rather than source-reported values. This means the simulated profile's absorption phase is not supported by the specific data in Oefelein_2013. Extracted — trospium: CL/F 127 L/h, V/F 1.31e+03 L.
+The record lists apparent parameters like CL/F of 127.0 L/h and V/F of 1308.207 L. The source paper did not report an absorption rate constant or lag time. The model therefore uses library placeholders for these values instead of estimates from the study. Extracted — trospium: CL/F 127 L/h, V/F 1.31e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 4, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 4, the second reading none. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -89,13 +89,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q19]` | 4 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 4 |  | only_one_extracted |
 
 </details>
 
@@ -121,15 +121,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=trospium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=trospium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

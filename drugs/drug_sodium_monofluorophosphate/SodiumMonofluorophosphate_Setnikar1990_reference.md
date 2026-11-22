@@ -37,7 +37,7 @@ Setnikar I, Maurer H. Relative bioavailability of fluoride from monofluorophosph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Setnikar I, Maurer H. Relative bioavailability of fluoride from monofluorophosph
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium monofluorophosphate's own; they describe fluoride.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 1.35, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 1.35, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -96,18 +96,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.4 (4/10 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.4 (4/10 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 1.35 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax of fluoride in plasma]` | 439 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[invasion t1/2]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability of fluoride from mfp tablets]` | 1.35 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 1.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 1.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax of fluoride in plasma]` | 439 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[invasion t1/2]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability of fluoride from mfp tablets]` | 1.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 1.08 |  | only_one_extracted |
 
 </details>
 

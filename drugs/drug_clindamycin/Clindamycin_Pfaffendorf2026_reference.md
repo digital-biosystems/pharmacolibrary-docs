@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Quarantined because clindamycin clearance, volume, and lag time lacked values, forcing use of default placeholders.
+> Clindamycin's clearance, volume, and lag time lacked values, so placeholders were used and the model was held back.
 
 <div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Pfaffendorf2026_reference" status="model_quarantined" stale="false" population="children and adults with uncomplicated P. falciparum malaria" measured-compound="clindamycin, fosmidomycin" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Pfaffendorf C, Dejon-Agobé JC, Edoa JR, Maïga-Ascofaré O, Ahenkan E, Adegnika
 
 ## Population and dosing
 
-**Population:** children and adults with uncomplicated P. falciparum malaria · condition uncomplicated Plasmodium falciparum malaria · n = : 40.
+**Population:** children and adults with uncomplicated P. falciparum malaria · condition uncomplicated Plasmodium falciparum malaria.
 
 **Dosing:** 700, 2100 mg, oral, multiple, every 12 h.
 
@@ -58,9 +58,9 @@ Pfaffendorf C, Dejon-Agobé JC, Edoa JR, Maïga-Ascofaré O, Ahenkan E, Adegnika
 
 ### Reviewer guidance
 
-**Quarantined because clindamycin clearance, volume, and lag time lacked values, forcing use of default placeholders.**
+**Clindamycin's clearance, volume, and lag time lacked values, so placeholders were used and the model was held back.**
 
-All extracted parameters describe fosmidomycin, leaving clindamycin's clearance, volume, and lag time undefined. Consequently, library placeholders were substituted for these missing clindamycin values, triggering a hold. The second reader also failed to identify the dose compound and primary analyte. Extracted — fosmidomycin: CL/F 58.3 L/h, V/F 248 L, kabs 0.698 1/h, tlag 0.105 h, Fab 1.
+The five extracted parameters describe fosmidomycin, not clindamycin, leaving clindamycin's clearance, volume of distribution, and absorption lag time undefined. Consequently, the model relied on library placeholders for these missing clindamycin values, preventing publication with an invented number. The second reader disputed the record's primary analyte and dose compound identification, disagreeing that the record correctly identified clindamycin and fosmidomycin. Extracted — fosmidomycin: CL/F 58.3 L/h, V/F 248 L, kabs 0.698 1/h, tlag 0.105 h, Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clindamycin, fosmidomycin, artesunate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -174,14 +174,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -199,30 +200,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clindamycin/Clindamycin_Pfaffendorf2026_reference/Clindamycin_Pfaffendorf2026_reference_matlab.zip" download>Clindamycin_Pfaffendorf2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clindamycin/Clindamycin_Pfaffendorf2026_reference/Clindamycin_Pfaffendorf2026_reference_matlab_simbio.zip" download>Clindamycin_Pfaffendorf2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clindamycin/Clindamycin_Pfaffendorf2026_reference/Clindamycin_Pfaffendorf2026_reference_sbml.zip" download>Clindamycin_Pfaffendorf2026_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clindamycin/Clindamycin_Pfaffendorf2026_reference/Clindamycin_Pfaffendorf2026_reference_cellml.zip" download>Clindamycin_Pfaffendorf2026_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Pfaffendorf C, Dejon-Agobé JC, Edoa JR, Maïga-Ascofaré O, Ahenkan E, Adegnika AA et al. Population pharmacokinetics of fosmidomycin and clindamycin in combination with artesunate for uncomplicated Plasmodium falciparum malaria in Gabonese children and adults. Malaria journal 25(1) (2026). [doi:10.1186/s12936-026-05872-6](https://doi.org/10.1186/s12936-026-05872-6)
-
-**This record:** Pharmacolibrary, model `Clindamycin_Pfaffendorf2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clindamycin/Clindamycin_Pfaffendorf2026_reference>
-
-```bibtex
-@misc{pharmacolibrary_ClindamycinPfaffendorf2026reference,
-  title  = {{Pharmacolibrary model Clindamycin_Pfaffendorf2026_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_clindamycin/Clindamycin_Pfaffendorf2026_reference},
-  note   = {Parameters from doi:10.1186/s12936-026-05872-6},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

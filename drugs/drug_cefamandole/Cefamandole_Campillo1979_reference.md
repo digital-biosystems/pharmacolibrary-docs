@@ -4,11 +4,11 @@
 
 # cefamandole — `Cefamandole_Campillo1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-07 10:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. A cefamandole two-compartment model was rejected because it includes an unreachable third compartment and a dimension mismatch on its structural parameter.
+> Cefamandole’s λ1 value of 5.006 hr−1 is associated with a reported unit failure, but the stated dimensions both equal 1/[time].
 
-<div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Campillo1979_reference" status="rejected" stale="true" population="patients with terminal renal impairment" measured-compound="cefamandole" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Campillo1979_reference" status="rejected" stale="false" population="patients with terminal renal impairment" measured-compound="cefamandole" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Campillo JA, Lanao JM, Dominguez-Gil A, Tabernero JM, Rubio F. Pharmacokinetics of cefamandole in patients undergoing hemodialysis. International journal of clinical pharmacology and biopharmacy 17(9):416–420 (1979).
@@ -40,7 +40,7 @@ Campillo JA, Lanao JM, Dominguez-Gil A, Tabernero JM, Rubio F. Pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Campillo JA, Lanao JM, Dominguez-Gil A, Tabernero JM, Rubio F. Pharmacokinetics 
 
 ### Reviewer guidance
 
-**A cefamandole two-compartment model was rejected because it includes an unreachable third compartment and a dimension mismatch on its structural parameter.**
+**Cefamandole’s λ1 value of 5.006 hr−1 is associated with a reported unit failure, but the stated dimensions both equal 1/[time].**
 
-The model defines a third peripheral compartment using a 0.441 hr-1 transfer constant, yet the abstract-only summary lacks the dose information needed to verify if this compartment is physically reachable. Additionally, a structural volume parameter failed a dimensional consistency check. Extracted — cefamandole: λ1 5.01 hr-1, kel 0.182 hr-1, k12 2.6 hr-1, k21 2.15 hr-1, k13 0.441 hr-1, V1 5.7 l, V2 6.19 l, Vss 11.9 l.
+The unit finding therefore does not establish a dimensional mismatch for λ1. Separately, the 2C topology has an unreachable compartment; the abstract-only record uses reported summary statistics in place of a fitted model, and the second reader did not recover the listed parameter values. Extracted — cefamandole: λ1 5.01 hr-1, kel 0.182 hr-1, k12 2.6 hr-1, k21 2.15 hr-1, k13 0.441 hr-1, V1 5.7 l, V2 6.19 l, Vss 11.9 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefamandole, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

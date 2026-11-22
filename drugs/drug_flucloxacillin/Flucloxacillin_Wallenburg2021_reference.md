@@ -16,7 +16,7 @@ Wallenburg E, Ter Heine R, de Lange DW, van Leeuwen H, Schouten JA, Ten Oever J 
 
 ## Population and dosing
 
-**Population:** critically ill patients · condition critical illness · age group adult · n = No information..
+**Population:** critically ill patients · condition critical illness · age group adult.
 
 ## Model
 

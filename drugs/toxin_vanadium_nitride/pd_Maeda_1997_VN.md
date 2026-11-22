@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic model involving vanadium nitride; instead, it characterizes the immunogenicity of a mutant canine herpesvirus glycoprotein D (gD-YP11mu) in mice. No drug concentration-response relationship, potency, or rate values for vanadium nitride are provided, as 'VN activity' in the text refers to virus neutralization titers induced by gD vaccination rather than a drug effect.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Maeda_1997`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

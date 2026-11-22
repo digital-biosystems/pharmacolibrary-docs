@@ -20,7 +20,7 @@ Suxamethonium is a neuromuscular-blocking drug used to induce short-term paralys
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| suxamethonium (succinylcholine) | parent | 290.399 | C14H30N2O4 | DrugBank | [5314](https://pubchem.ncbi.nlm.nih.gov/compound/5314) | Roy_2002 |
+| succinylcholine (suxamethonium) | parent | 290.399 | C14H30N2O4 | DrugBank | [5314](https://pubchem.ncbi.nlm.nih.gov/compound/5314) | Roy_2002 |
 
 ## popPK records
 
@@ -35,18 +35,6 @@ Suxamethonium is a neuromuscular-blocking drug used to induce short-term paralys
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Roy_2002_twitch](drugs/drug_suxamethonium/pd_Roy_2002_twitch.md) | force of contraction of the adductor pollicis ← succinylcholine · delayed effect through an effect compartment | — | Roy JJ et al., Concentration-effect relation of succin…, Anesthesiology (2002) | [10.1097/00000542-200211000-00009](https://doi.org/10.1097/00000542-200211000-00009) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Torda_1997_2_response_to_supramaximal_stimulation_of_the_ulnar_nerve](drugs/drug_suxamethonium/pd_Torda_1997_2_response_to_supramaximal_stimulation_of_the_uln.md) | response to supramaximal stimulation of the ulnar nerve ← suxamethonium · delayed effect through an effect compartment | — | Torda TA et al., Pharmacokinetics and pharmacodynamics o…, Anaesthesia and intensive c… (1997) | [10.1177/0310057X9702500312](https://doi.org/10.1177/0310057X9702500312) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=suxamethonium).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | `BCHE` substrate | DrugBank actor |
-| metabolism | liver | `BCHE` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CHRM2 (target), CHRM3 (target), CHRNA10 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

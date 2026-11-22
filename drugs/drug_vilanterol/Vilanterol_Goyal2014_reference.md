@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/&quot;},{&quot;label&quot;:&quot;Goyal_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Kempsford_2014_HR&quot;,&quot;label&quot;:&quot;Kempsford_2014 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Kempsford_2014_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kempsford_2014_QTcF&quot;,&quot;label&quot;:&quot;Kempsford_2014 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Llanos_Paez_2023_FEV1&quot;,&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The vilanterol clearance parameter, reported as 218 L/h, is mislabeled as umeclidinium and cannot be verified from the abstract-only record.
+> The record was rejected with vilanterol’s peripheral-compartment V2/F at 1160 L, although that compartment was reported as unreachable from the dose.
 
 <div class="pk-model-meta" hidden drug="Vilanterol" model-id="Vilanterol_Goyal2014_reference" status="rejected" stale="false" population="patients with COPD" measured-compound="vilanterol" parameterization="apparent" topology="1C"></div>
 
@@ -39,7 +38,7 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +48,13 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 ### Reviewer guidance
 
-**The vilanterol clearance parameter, reported as 218 L/h, is mislabeled as umeclidinium and cannot be verified from the abstract-only record.**
+**The record was rejected with vilanterol’s peripheral-compartment V2/F at 1160 L, although that compartment was reported as unreachable from the dose.**
 
-The extracted clearance and volume values (218 L/h and 1160 L) retain 'umeclidinium' in their verbatim labels despite the compound being identified as vilanterol. Because the record relies on abstract-only data, the second reader marked the dose compound and primary analyte as unknown, invalidating the specific parameter attribution. Extracted — vilanterol: CL/F 218 L/h, V2/F 1.16e+03 L.
+V2/F is the peripheral-compartment volume adjusted for bioavailability. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader did not identify the listed V2/F value, but the record provides no further finding that resolves that disagreement. Extracted — vilanterol: CL/F 218 L/h, V2/F 1.16e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has umeclidinium and vilanterol, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium and vilanterol, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -92,19 +91,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/7 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.0 (0/7 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[10 % decrease in clcr effect on cl/f]` | 3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | 218 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v 2/f]` | 1160 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | umeclidinium and vilanterol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | vilanterol | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[10 % decrease in clcr effect on cl/f]` | 3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 218 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2/f]` | 1160 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | umeclidinium and vilanterol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | vilanterol | unknown | mismatch |
 
 </details>
 

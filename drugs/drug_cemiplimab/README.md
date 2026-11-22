@@ -31,7 +31,7 @@ Cemiplimab is a PD-1 inhibitor used for the treatment of squamous cell carcinoma
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q65 — no SI value to build from</sub> | [Nguyen_2022_final_poppk_model](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_final_poppk_model.md) | — | 2-compartment (no model) | 5 | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19 — no SI value to build from</sub> | [↳ mean_cv](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_mean_cv.md) | — | 1-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19 — no SI value to build from</sub> | [↳ mean_cv](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_mean_cv.md) | — | 1-compartment (no model) | 7 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_beta</sub> | [↳ tumor_type_study_a](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19 — no SI value to build from</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.5689)</sub> | [Paccaly_2021_after_first_dose](drugs/drug_cemiplimab/Cemiplimab_Paccaly2021_after_first_dose.md) | — | 1-compartment (no model) | 5 | Paccaly AJ et al., Fixed Dose of Cemiplimab in Patients wi…, Advances in therapy (2021) | [10.1007/s12325-021-01638-5](https://doi.org/10.1007/s12325-021-01638-5) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19 — no SI value to build from</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.5689)</sub> | [↳ at_steady_state](drugs/drug_cemiplimab/Cemiplimab_Paccaly2021_at_steady_state.md) | — | 1-compartment (no model) | 5 |  |  |
@@ -47,15 +47,6 @@ Cemiplimab is a PD-1 inhibitor used for the treatment of squamous cell carcinoma
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nguyen_2022_irAEs](drugs/drug_cemiplimab/pd_Nguyen_2022_irAEs.md) | grade ≥3 irAEs ← cemiplimab · time-to-event model | — | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nguyen_2022_irAEs_2](drugs/drug_cemiplimab/pd_Nguyen_2022_irAEs_2.md) | all irAEs ← cemiplimab · time-to-event model | — | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cemiplimab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: PDCD1 (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -68,13 +59,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:02 | 11:42 | 6/1/0 | 1/0/0 | 0/0/0 | 245,884/52,586 | openai / gpt-6-luna | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-07 11:02 | 11:42 | 6/1/0 | 4/0/0 | 0/0/0 | 245,884/52,586 | openai / gpt-6-luna | 6 | 0/6 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 7  ·  extracted 0  ·  needs review 6  ·  rejected 1  ·  stale 1
+- **records:** 7  ·  extracted 0  ·  needs review 6  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

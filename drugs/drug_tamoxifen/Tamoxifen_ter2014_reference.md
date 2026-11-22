@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;ter_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Croxtall_1994_A549_cell_proliferation&quot;,&quot;label&quot;:&quot;Croxtall_1994 \u00b7 A549 cell proliferation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Croxtall_1994_A549_cell_proliferation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Montenegro_2011_vasorelaxation&quot;,&quot;label&quot;:&quot;Montenegro_2011 \u00b7 vasorelaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Montenegro_2011_vasorelaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model for tamoxifen includes dextromethorphan metabolites that are unlinked from the dose.
+> Dextromethorphan and its metabolites are disconnected from the tamoxifen dose, making them unreachable compartments.
 
 <div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_ter2014_reference" status="rejected" stale="false" population="breast cancer patients" measured-compound="tamoxifen, endoxifen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -17,7 +17,7 @@ ter Heine R, Binkhorst L, de Graan AJ, de Bruijn P, Beijnen JH, Mathijssen RH et
 
 ## Population and dosing
 
-**Population:** breast cancer patients · condition breast cancer · age group adult · n = — 120. The text states: 'We assessed the CYP2D6 and CYP3A metabolic phenotypes in 40 breast cancer patients...' and later 'The parameter precision was good for all relevant parameters, as represented in the low relative standard error of the parameter estimates, indicating that all parameters could be reliably estimated.' The n_subjects for the analysis is 40..
+**Population:** breast cancer patients · condition breast cancer · age group adult.
 
 **Dosing:** 20, 40 mg, oral, multiple, every 24 h.
 
@@ -59,9 +59,9 @@ ter Heine R, Binkhorst L, de Graan AJ, de Bruijn P, Beijnen JH, Mathijssen RH et
 
 ### Reviewer guidance
 
-**The model for tamoxifen includes dextromethorphan metabolites that are unlinked from the dose.**
+**Dextromethorphan and its metabolites are disconnected from the tamoxifen dose, making them unreachable compartments.**
 
-The model record lists dextromethorphan and its metabolites but assigns them to the central compartment without connecting them to the administered tamoxifen dose. This structural inconsistency results in orphan compartments that cannot be reached from the input. The rejection is due to this topological failure where the secondary drug molecules have no path from the dose. Extracted — dextromethorphan: V1 188 l, V2 1.66e+03 l, kabs 0.213 h -1, tlag 0.369 h, Q 415 l h -1, Q2 200 l h -1; dextrorphan: CL 1.56e+03 l h -1; 3-hydroxymorphinan: CL 362 l h -1, kel 1.11 h -1; 3-methoxymorphinan: CL 44.7 l h -1, kel 13.4 h -1.
+The model structure lists dextromethorphan as a parent compound, but no links connect it to the administered tamoxifen. Consequently, the metabolites dextrorphan, 3-methoxymorphinan, and 3-hydroxymorphinan also lack a path from the dose, rendering them orphaned. This topological flaw prevents the simulation of these compounds from the tamoxifen input. Extracted — dextromethorphan: V1 188 l, V2 1.66e+03 l, kabs 0.213 h -1, tlag 0.369 h, Q 415 l h -1, Q2 200 l h -1; dextrorphan: CL 1.56e+03 l h -1; 3-hydroxymorphinan: CL 362 l h -1, kel 1.11 h -1; 3-methoxymorphinan: CL 44.7 l h -1, kel 13.4 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tamoxifen, dextromethorphan, the second reading tamoxifen; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -203,4 +203,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_ter2014_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_ter2014_reference%0APaper%3A%20ter_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_ter2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 12:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:44 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Tianeptine clearance, absorption rate constant, and lag time were left as placeholders, and the simulated terminal half-life (2.24 h) did not match the paper's value (7.53 h).
+> Tianeptine's clearance, absorption, and lag parameters lacked extracted values, and the simulated half-life (2.24 h) did not match the paper (7.53 h).
 
 <div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg" status="model_quarantined" stale="false" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -55,9 +55,9 @@ Szafarz M, Wencel A, Pociecha K, Fedak FA, Wlaź P, Wyska E. Pharmacokinetic stu
 
 ### Reviewer guidance
 
-**Tianeptine clearance, absorption rate constant, and lag time were left as placeholders, and the simulated terminal half-life (2.24 h) did not match the paper's value (7.53 h).**
+**Tianeptine's clearance, absorption, and lag parameters lacked extracted values, and the simulated half-life (2.24 h) did not match the paper (7.53 h).**
 
-The model used library defaults for clearance and absorption parameters because explicit values were not extracted from the source data. A check comparing the simulated terminal half-life to the paper-reported value of 7.53 h yielded a ratio of 0.2969, indicating a significant discrepancy. Additionally, the model structure did not align with the required parent-metabolite topology, and the output variable was not configured for the measured analyte. Extracted — tianeptine: tmax 0.083 h, kel 14.7 h−1, t1/2z 14 h, V 18.1 L/kg, AUC∞ 7.05 mg∙h/L, CLnorm/F 7.17 L/h/kg, MRT 10.4 h.
+Because no values were extracted for clearance, absorption rate, or lag time, library placeholders were used, causing the model to be held back. The simulated terminal half-life of 2.24 h differed significantly from the paper's 7.53 h. The model structure also failed to match the specified parent-metabolite topology, and a second reader disputed the missing metabolite link. Extracted — tianeptine: tmax 0.083 h, kel 14.7 h−1, t1/2z 14 h, V 18.1 L/kg, AUC∞ 7.05 mg∙h/L, CLnorm/F 7.17 L/h/kg, MRT 10.4 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tianeptine → mc5 (metabolism), the second reading not captured → not captured (not captured); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -178,7 +178,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_output_variable |  | fail | Metabolite_C (measured=tianeptine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=1: not acceptable; deviation_id=2: not acceptable; deviation_id=3: not acceptable; deviation_id=4: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | cross-check disputed by a second reader: verdict disputed, agreement 0.769, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 7.53 | 2.235 | 0.2969 | h→SI vs simulated h |
 | T1_t_half_beta | reference | fail | 1.16 | 2.235 | 1.927 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | skipped |  | 2.235 |  | non-numeric value |

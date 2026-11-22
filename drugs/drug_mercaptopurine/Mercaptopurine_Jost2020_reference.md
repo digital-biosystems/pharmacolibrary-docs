@@ -4,11 +4,11 @@
 
 # mercaptopurine — `Mercaptopurine_Jost2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:09 UTC (Rejected), but the paper was screened again on 2026-10-07 16:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because the record lacks distribution volume and clearance, and 6-thioguanine nucleotides are unreachable.
+> The model is rejected because the methotrexate polyglutamates compartment is unlinked from the dose path, creating an orphan structure for this compound.
 
-<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Jost2020_reference" status="rejected" stale="true" population="children with acute lymphoblastic leukemia" measured-compound="absolute neutrophil count" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Jost2020_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukemia" measured-compound="absolute neutrophil count" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Jost F, Zierk J, Le TTT, Raupach T, Rauh M, Suttorp M et al. Model-Based Simulation of Maintenance Therapy of Childhood Acute Lymphoblastic Leukemia. Frontiers in physiology 11:217 (2020).
@@ -41,7 +41,7 @@ Jost F, Zierk J, Le TTT, Raupach T, Rauh M, Suttorp M et al. Model-Based Simulat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Jost F, Zierk J, Le TTT, Raupach T, Rauh M, Suttorp M et al. Model-Based Simulat
 
 ### Reviewer guidance
 
-**Rejected because the record lacks distribution volume and clearance, and 6-thioguanine nucleotides are unreachable.**
+**The model is rejected because the methotrexate polyglutamates compartment is unlinked from the dose path, creating an orphan structure for this compound.**
 
-The parameters list includes a terminal half-life of 16.5 and a signal transduction rate constant of 7.19, but contains no volume of distribution or clearance. Additionally, the metabolism link from 6-mercaptopurine to 6-thioguanine nucleotides leaves the metabolite compartment without a path from the dose. These structural and parametric gaps prevent the record from representing a valid compartmental population pharmacokinetic model. Extracted — mercaptopurine: ktr 7.19, slope 67.8, t1/2γ 16.5, add_error 0.226.
+The record defines a metabolic link from 6-mercaptopurine to 6-thioguanine nucleotides, but no corresponding path connects the dose to the methotrexate polyglutamates compartment. A second reader disagreed on the presence of this second metabolic link, noting only the 6-mercaptopurine connection in the source. Additionally, the reader disagreed on whether methotrexate was correctly identified as a dose compound alongside 6-mercaptopurine. Extracted — mercaptopurine: ktr 7.19, slope 67.8, t1/2γ 16.5, add_error 0.226.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 6-mercaptopurine and methotrexate, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -155,30 +155,13 @@ The record lists five parameters (clearance, central/peripheral volumes, interco
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_imipenem/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d_matlab.zip" download>Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_imipenem/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d_matlab_simbio.zip" download>Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_imipenem/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d_sbml.zip" download>Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_imipenem/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d_cellml.zip" download>Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Patel M, Bellanti F, Daryani NM, Noormohamed N, Hilbert DW, Young K et al. Population pharmacokinetic/pharmacodynamic assessment of imipenem/cilastatin/relebactam in patients with hospital-acquired/ventilator-associated bacterial pneumonia. Clinical and translational science 15(2):396-408 (2022). [doi:10.1111/cts.13158](https://doi.org/10.1111/cts.13158)
-
-**This record:** Pharmacolibrary, model `Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d`. <https://pharmacolibrary.github.io/#/drugs/toxin_imipenem/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d>
-
-```bibtex
-@misc{pharmacolibrary_ImipenemPatel2022relebactamnonmemestimatebrsed,
-  title  = {{Pharmacolibrary model Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_imipenem/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d},
-  note   = {Parameters from doi:10.1111/cts.13158},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

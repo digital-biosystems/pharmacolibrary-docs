@@ -16,7 +16,7 @@ Higuchi K, Yamashita D, Kashihara Y, Kakara M, Hirota T, Hirakawa M et al. Popul
 
 ## Population and dosing
 
-**Population:** adult and elderly epileptic patients · condition epilepsy · age group mixed · n = &gt;=0.
+**Population:** adult and elderly epileptic patients · condition epilepsy · age group mixed.
 
 **Dosed compound ≠ measured compound:** dosed fosphenytoin, measured phenytoin.
 

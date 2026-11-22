@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Williams_1989 \u00b7 after_cilazaprilat_mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Deget1991_reference&quot;,&quot;label&quot;:&quot;Deget_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Deget1991_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Williams1989v2_reference&quot;,&quot;label&quot;:&quot;Williams_1989_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Meredith1989_reference&quot;,&quot;label&quot;:&quot;Meredith_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Williams1989v2_reference&quot;,&quot;label&quot;:&quot;Williams_1989_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -41,8 +41,8 @@ Williams PE, Brown AN, Rajaguru S, Francis RJ, Walters GE, McEwen J et al. The p
 | Urinary recovery (0-24 h) | Ae | 16.4 | 0-24 h |
 | Bioavailability by urinary recoveries | Fab | 18.6 |  |
 | Plasma clearance (24 h) (1 h-1) | CL | 12.3 | 1 h-1 |
-| Vd (L) | V | 1.79 | L |
-| Ego-onset ( h) | tlag | 1.2 | h |
+| Vd | V | 8.7 | L |
+| Ego-onset ( h) | tlag | -1.6 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -58,7 +58,7 @@ Williams PE, Brown AN, Rajaguru S, Francis RJ, Walters GE, McEwen J et al. The p
 
 **This paper's disposition core is incomplete; ae  and CL have no unit.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Massarella_1989, Song_2002) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax, AUC, fe and Ae ), so that value has no SI equivalent. Extracted — cilazapril: Cmax 10.9 ng/mL, tmax 2.33 h, CL 12.3 1 h-1, V 1.79 L, tlag 1.2 h; cilazaprilat: t1/2z 2.87 h, AUC 62.2 ng·h/mL, fe 8.76 0-4 h, Ae 16.4 0-24 h, Fab 18.6.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Massarella_1989, Song_2002) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax, AUC, fe and Ae ), so that value has no SI equivalent. Extracted — cilazapril: Cmax 10.9 ng/mL, tmax 2.33 h, CL 12.3 1 h-1, V 8.7 L, tlag -1.6 h; cilazaprilat: t1/2z 2.87 h, AUC 62.2 ng·h/mL, fe 8.76 0-4 h, Ae 16.4 0-24 h, Fab 18.6.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cilazapril, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -76,8 +76,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | Urinary recovery (0-24 h) | `Q91` · Ae | 16.4 | 0-24 h |  |  | h·0-24 | llm (0.6) | Williams_1989_table_3:row7:col4 |
 | Bioavailability by urinary recoveries | `Q40` · Fab | 18.6 |  |  |  |  | llm_confirmed (0.6) | Williams_1989_table_3:row10:col4 |
 | Plasma clearance (24 h) (1 h-1) | `Q22` · CL | 12.3 | 1 h-1 |  |  | 1 h-1 | boundary (0.8) | Williams_1989:other_prose |
-| Vd (L) | `Q61` · V | 1.79 | L | 0.00179 | m3 | L | review_gapfill (0.7) | Song_2002:review |
-| Ego-onset ( h) | `Q83` · tlag | 1.2 | h | 4320 | s | h | review_gapfill (0.7) | Massarella_1989:review |
+| Vd | `Q61` · V | 8.7 | L | 0.0087 | m3 | L | review_gapfill (0.7) | Song_2002:review |
+| Ego-onset ( h) | `Q83` · tlag | -1.6 | h | -5760 | s | h | review_gapfill (0.7) | Massarella_1989:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_unit_missing_Q91 | fail | [mass] | 0-24 h | ['Williams_1989_table_3:row7:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.3 | ['Williams_1989:other_prose'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.79 L | ['Song_2002:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 8.7 L | ['Song_2002:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -203,4 +203,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcilazapril%5D%20Cilazapril_Williams1989_after_cilazaprilat_mean&body=Drug%3A%20cilazapril%0ARecord%3A%20Cilazapril_Williams1989_after_cilazaprilat_mean%0APaper%3A%20Williams_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cilazapril/Cilazapril_Williams1989_after_cilazaprilat_mean%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 11:13 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:17 UTC</sub>

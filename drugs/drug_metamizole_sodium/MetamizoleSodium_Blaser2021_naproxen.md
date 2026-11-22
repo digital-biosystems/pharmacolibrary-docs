@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;metamizole sodium&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/&quot;},{&quot;label&quot;:&quot;Blaser_2021 \u00b7 naproxen&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metamizole sodium — `MetamizoleSodium_Blaser2021_naproxen`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-22 11:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the dose compound was misidentified, leaving the central metabolite compartment orphaned without a defined link from the parent drug.
+> The record was rejected because 4-methylaminoantipyrine Q=0.185 1/h and 4-aminoantipyrine Q=0.009 1/h are reported as rates despite meaning intercompartmental clearance.
 
-<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_naproxen" status="rejected" stale="true" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_naproxen" status="rejected" stale="false" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al. Comparative Effects of Metamizole (Dipyrone) and Naproxen on Renal Function and Prostacyclin Synthesis in Salt-Depleted Healthy Subjects - A Randomized Controlled Parallel Group Study. Frontiers in pharmacology 12:620635 (2021).
@@ -17,7 +17,7 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 ## Population and dosing
 
-**Population:** healthy salt-depleted adults · condition healthy · age group adult · n = &gt; 15.
+**Population:** healthy salt-depleted adults · condition healthy · age group adult.
 
 **Dosing:** 1000 mg, oral, multiple, every 8 h.
 
@@ -46,7 +46,7 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,13 +56,13 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 ### Reviewer guidance
 
-**The record was rejected because the dose compound was misidentified, leaving the central metabolite compartment orphaned without a defined link from the parent drug.**
+**The record was rejected because 4-methylaminoantipyrine Q=0.185 1/h and 4-aminoantipyrine Q=0.009 1/h are reported as rates despite meaning intercompartmental clearance.**
 
-The dose was assigned to metamizole rather than the salt form, creating a structural mismatch where the metabolite compartment has no path from the administered dose. All metabolism links between the parent drug and the downstream metabolites are missing explicit rate parameter values. Consequently, the intercompartmental clearances and elimination rates for the metabolite chain are incomplete, rendering the model structure invalid. Extracted — 4-methylaminoantipyrine: kabs 0.538 1/h, V1/F 3.27 L, Q 0.185 1/h, kel 0.213 1/h, t1/2z 1.71 h; 4-aminoantipyrine: Q 0.009 1/h, t1/2z 2.14 h; 4-acetylaminoantipyrine: t1/2z 1 h.
+Both Q parameters describe apparent intercompartmental clearance, which has dimensions of volume per time, but their reported units are 1/h; the reported unit could not be converted to SI. The 4-aminoantipyrine, 4-formylaminoantipyrine, and 4-acetylaminoantipyrine metabolites each have n_cmt=0, leaving them without modeled compartments despite the listed metabolic links from the dose. A second reader also disagreed with the recorded metabolite links, including interpreting links from 4-aminoantipyrine to the terminal metabolites as interconversions. Extracted — 4-methylaminoantipyrine: kabs 0.538 1/h, V1/F 3.27 L, Q 0.185 1/h, kel 0.213 1/h, t1/2z 1.71 h; 4-aminoantipyrine: Q 0.009 1/h, t1/2z 2.14 h; 4-acetylaminoantipyrine: t1/2z 1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 4-methylaminoantipyrine, the second reading 4-MAA; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

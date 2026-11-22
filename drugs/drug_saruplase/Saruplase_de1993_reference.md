@@ -15,7 +15,7 @@ de Boer A, Kluft C, Gerloff J, Dooijewaard G, Günzler WA, Beier H et al. Pharma
 
 ## Population and dosing
 
-**Population:** healthy male subjects · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy male subjects · condition healthy · age group adult.
 
 ## Model
 

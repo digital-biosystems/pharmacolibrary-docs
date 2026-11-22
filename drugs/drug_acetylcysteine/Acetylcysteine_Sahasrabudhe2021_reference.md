@@ -16,7 +16,7 @@ Sahasrabudhe SA, Kartha RV, Ng M, Basso LM, Mishra U, Cloyd JC et al. Population
 
 ## Population and dosing
 
-**Population:** pediatric patients with inherited metabolic disorders undergoing HSCT · age group child · n = condition: inherited metabolic disorders.
+**Population:** pediatric patients with inherited metabolic disorders undergoing HSCT · age group child.
 
 ## Model
 

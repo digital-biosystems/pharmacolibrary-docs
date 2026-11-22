@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01E&quot;,&quot;href&quot;:&quot;atc/J01E.md&quot;},{&quot;label&quot;:&quot;sulfadiazine&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadiazine/&quot;},{&quot;label&quot;:&quot;Tajima_2023_2 \u00b7 sdz&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadiazine_Boulanger2024_reference&quot;,&quot;label&quot;:&quot;Boulanger_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadiazine/Sulfadiazine_Boulanger2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadiazine_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadiazine/Sulfadiazine_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadiazine_Tajima2023v2_sdz&quot;,&quot;label&quot;:&quot;Tajima_2023_2_sdz&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadiazine/Sulfadiazine_Tajima2023v2_sdz.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadiazine_Boulanger2024_reference&quot;,&quot;label&quot;:&quot;Boulanger_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadiazine/Sulfadiazine_Boulanger2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadiazine_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadiazine/Sulfadiazine_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadiazine_Tajima2023v2_sdz&quot;,&quot;label&quot;:&quot;Tajima_2023_2_sdz&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadiazine/Sulfadiazine_Tajima2023v2_sdz.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> The one-compartment sulfadiazine model fails to reproduce the paper's tmax and terminal half-life because the bioavailability value was recorded as a percentage without units, preventing correct SI conversion.
+> Sulfadiazine model rejected as simulated peak time and terminal half-life failed checks against paper values.
 
 <div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Tajima2023v2_sdz" status="needs_review" stale="false" population="female Holstein milking cows" measured-compound="sulfadiazine" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Tajima T, Saiga M, Yamamoto H, Elbadawy M, Abugomaa A, Miura R et al. Oral pharm
 
 ## Population and dosing
 
-**Population:** female Holstein milking cows · condition healthy · age group adult · n = &gt; 4.
+**Population:** female Holstein milking cows · condition healthy · age group adult.
 
 **Dosing:** 350, 700 mg, oral, iv, single.
 
@@ -61,9 +61,9 @@ Tajima T, Saiga M, Yamamoto H, Elbadawy M, Abugomaa A, Miura R et al. Oral pharm
 
 ### Reviewer guidance
 
-**The one-compartment sulfadiazine model fails to reproduce the paper's tmax and terminal half-life because the bioavailability value was recorded as a percentage without units, preventing correct SI conversion.**
+**Sulfadiazine model rejected as simulated peak time and terminal half-life failed checks against paper values.**
 
-The model uses a one-compartment structure with absorption, relying on total clearance and steady-state volume of distribution. The bioavailability is listed as 85.7 with no unit, which prevented the software from converting it to a fraction, resulting in incorrect predictions of peak time and elimination duration. Additionally, a transit delay was not extracted and defaulted, further altering the absorption profile. Extracted — sulfadiazine: kabs 0.158 1/hr, t1/2ka 4.51 hr, kel 0.262 1/hr, t1/2z 2.66 hr, Cmax 7.01 µg/mL, tmax 5 hr, Fab 85.7, MAT 5.92 hr, … (+3).
+The simulated time of peak differed from the expected 2.75 hours, yielding a ratio of 1.7674. The simulated terminal half-life also failed, with ratios of 2.9629 and 1.8045 against expected values. The second reader disputed the record, disagreeing that sulfadiazine was the sole analyte and identifying sulfamonomethoxine. Extracted — sulfadiazine: kabs 0.158 1/hr, t1/2ka 4.51 hr, kel 0.262 1/hr, t1/2z 2.66 hr, Cmax 7.01 µg/mL, tmax 5 hr, Fab 85.7, MAT 5.92 hr, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfadiazine, the second reading sulfadiazine and sulfamonomethoxine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -190,7 +190,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=sulfadiazine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: vss_as_v: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped |  | 0.328 |  | non-numeric value |
 | T1_cmax | reference | skipped |  | 0.328 |  | non-numeric value |
 | T1_t_half_terminal | reference | skipped |  | 4.8 |  | non-numeric value |

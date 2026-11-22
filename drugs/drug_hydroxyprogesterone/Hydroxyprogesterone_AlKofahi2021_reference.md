@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant lacked an explicit estimate, and the clearance of 11.7 L/h conflicts with a second reader's 22.9 L/h.
+> Absorption rate constants were left as placeholder defaults, and the clearance value of 11.7 L/h was disputed by a second reader.
 
 <div class="pk-model-meta" hidden drug="hydroxyprogesterone" model-id="Hydroxyprogesterone_AlKofahi2021_reference" status="needs_review" stale="false" population="" measured-compound="hydroxyprogesterone" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Al-Kofahi M, Ahmed MA, Jaber MM, Tran TN, Willis BA, Zimmerman CL et al. An inte
 
 ### Reviewer guidance
 
-**Absorption rate constant lacked an explicit estimate, and the clearance of 11.7 L/h conflicts with a second reader's 22.9 L/h.**
+**Absorption rate constants were left as placeholder defaults, and the clearance value of 11.7 L/h was disputed by a second reader.**
 
-The source paper does not report a fitted value for the absorption rate constant, so no specific data supports its simulation. Furthermore, the recorded clearance of 11.7 L/h for hydroxyprogesterone disagrees with a second reader's value of 22.9 L/h. These unsupported and conflicting parameters prevent the model from accurately reflecting the source data. Extracted — hydroxyprogesterone: CL/F 11.7 L/h, V/F 17 L.
+The record lists CL/F as 11.7 L/h, but a second reader identified a different value of 22.9. The absorption rate constant Ka was not reported in the source, so a library placeholder was used instead of an estimate. Because these values are not supported by the paper, the model was held for review. Extracted — hydroxyprogesterone: CL/F 11.7 L/h, V/F 17 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 11.7, the second reading 22.9. That field shapes the model, so the record is marked disputed.
 
@@ -119,15 +119,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=hydroxyprogesterone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=defaulted_parameters: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=hydroxyprogesterone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/&quot;},{&quot;label&quot;:&quot;Ladebo_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxycodone — `Oxycodone_Ladebo2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 14:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Oxycodone total clearance of 38.03 L/h fails dimension validation, causing record rejection due to abstract-only source data limitations.
+> The oxycodone absorption parameter labeled kaSOL has a value of 0.94 hour-1, which contradicts its identity as a half-life.
 
-<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ladebo L, Foster DJR, Abuhelwa AY, Upton RN, Kongstad KT, Drewes AM et al. Population pharmacokinetic-pharmacodynamic modelling of liquid and controlled-release formulations of oxycodone in healthy volunteers. Basic & clinical pharmacology & toxicology 126(3):263–276 (2020).
@@ -17,7 +17,7 @@ Ladebo L, Foster DJR, Abuhelwa AY, Upton RN, Kongstad KT, Drewes AM et al. Popul
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = Fifteen.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -40,7 +40,7 @@ Ladebo L, Foster DJR, Abuhelwa AY, Upton RN, Kongstad KT, Drewes AM et al. Popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Ladebo L, Foster DJR, Abuhelwa AY, Upton RN, Kongstad KT, Drewes AM et al. Popul
 
 ### Reviewer guidance
 
-**Oxycodone total clearance of 38.03 L/h fails dimension validation, causing record rejection due to abstract-only source data limitations.**
+**The oxycodone absorption parameter labeled kaSOL has a value of 0.94 hour-1, which contradicts its identity as a half-life.**
 
-The total clearance parameter is recorded as 38.03 L/h, a value that fails the dimensional consistency check for the model structure. The record was constructed exclusively from the paper abstract, meaning these summary statistics substitute for a fully fitted model. A second reader also identified null values for clearance, absorption rate, and volume, highlighting the unreliability of the extracted parameters. Extracted — oxycodone: tlag 0.23 hour, kabs 0.19 hour-1, t1/2ka 0.94 hour-1, t1/2z 14 minutes, CL 38 L/h, V 251 L.
+The parameter defined as the half-life of the absorption phase is assigned the value 0.94 with the unit hour-1, a rate dimension inconsistent with a time metric. This dimensional mismatch renders the structural parameter invalid. Additionally, the record was constructed from the abstract alone, so the reported statistics serve as placeholders rather than fitted model estimates. Extracted — oxycodone: tlag 0.23 hour, kabs 0.19 hour-1, t1/2ka 0.94 hour-1, t1/2z 14 minutes, CL 38 L/h, V 251 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 38.03, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

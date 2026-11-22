@@ -43,7 +43,7 @@ Sodium metavanadate is a chemical compound of sodium and vanadium that occurs in
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Zasada_2013_egg_hatch](drugs/toxin_sodium_metavanadate/pd_Zasada_2013_egg_hatch.md) | egg hatch ← sodium_metavanadate · stimulation effect | — | Zasada IA et al., Host Status of Different Potato (Solanu…, Journal of nematology (2013) | — |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">other organism</span> | [Zasada_2013_egg_hatch](drugs/toxin_sodium_metavanadate/pd_Zasada_2013_egg_hatch.md) | egg hatch ← sodium_metavanadate · stimulation effect | — | Zasada IA et al., Host Status of Different Potato (Solanu…, Journal of nematology (2013) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

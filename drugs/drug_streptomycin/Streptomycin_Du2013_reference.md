@@ -42,7 +42,7 @@ Du B, Li H, Jin J, Wang T, Li Y, Shen G et al. Chemiluminescence determination o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Du B, Li H, Jin J, Wang T, Li Y, Shen G et al. Chemiluminescence determination o
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — streptomycin: t1/2α 18.8 min, t1/2β 82.1 min, CL/F 0.0026 Lkg(-1)min(-1), AUC 3.6e+04 mgmin(-1)L(-1), MRT 92.3 min, tmax 21.6 min, Cmax 376 μgmL(-1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -101,20 +101,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[auc]` | 36044.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | 0.0026 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 375.61 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mrt]` | 92.29 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2α]` | 18.83 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2β]` | 82.14 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 21.63 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[auc]` | 36044.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 0.0026 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 375.61 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 92.29 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2α]` | 18.83 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | 82.14 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 21.63 |  | only_one_extracted |
 
 </details>
 

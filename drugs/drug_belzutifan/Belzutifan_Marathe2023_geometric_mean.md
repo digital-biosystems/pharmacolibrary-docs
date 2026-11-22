@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00136, model 0.00085).
+> The belzutifan model's simulated peak concentration (0.00085) does not match the paper's reported Cmax (0.00136), exceeding tolerance.
 
 <div class="pk-model-meta" hidden drug="belzutifan" model-id="Belzutifan_Marathe2023_geometric_mean" status="needs_review" stale="false" population="patients with VHL disease-associated RCC, CNS hemangioblastomas, and pancreatic neuroendocrine tumors" measured-compound="belzutifan" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Marathe DD, Jauslin PM, Kleijn HJ, de Miranda Silva C, Chain A, Bateman T et al.
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00136, model 0.00085).**
+**The belzutifan model's simulated peak concentration (0.00085) does not match the paper's reported Cmax (0.00136), exceeding tolerance.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCt, Cmin and Cmax), so that value has no SI equivalent. Extracted — belzutifan: CL/F 7.25 L/h, V/F 130 L, kabs 2.51 1/h, AUCt 16.7 μg∙h/mL, Cmin 307 ng/mL, Cmax 1.36e+03 ng/mL, tmax 1.42 h, t1/2α 2.6 h, … (+2).
+The simulated peak concentration deviates from the reported value by more than the allowed tolerance, with a ratio of 0.6233. The lag time was not extracted from the paper, so a library placeholder was used, and the model was held back. A reported unit could not be converted to SI, preventing full parameterization. Extracted — belzutifan: CL/F 7.25 L/h, V/F 130 L, kabs 2.51 1/h, AUCt 16.7 μg∙h/mL, Cmin 307 ng/mL, Cmax 1.36e+03 ng/mL, tmax 1.42 h, t1/2α 2.6 h, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has belzutifan, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -209,6 +209,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.815, 0 of 1 reader(s) agree | 0.815 | cross-check disputed by a second reader: verdict disputed, agreement 0.815, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.001363 | 0.0008495 | 0.6233 | ng/mL→SI vs simulated kg/m3 |
 | T1_tmax | reference | pass | 1.42 | 1.656 | 1.166 | h→SI vs simulated h |
 

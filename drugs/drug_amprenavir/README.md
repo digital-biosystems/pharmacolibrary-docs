@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;amprenavir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amprenavir_Johnson2014_reference&quot;,&quot;label&quot;:&quot;Johnson_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_mean&quot;,&quot;label&quot;:&quot;Okusanya_2007_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_mean&quot;,&quot;label&quot;:&quot;Okusanya_2007_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Johnson2014_reference&quot;,&quot;label&quot;:&quot;Johnson_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # amprenavir
 
@@ -32,7 +32,7 @@ This antiviral medication belongs to the protease inhibitor class and was develo
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Okusanya_2007 · CL/F ·/kg</text><circle cx="494.6" cy="30.0" r="4" fill="#ef6c00"><title>Okusanya_2007 · CL/F ·/kg: 7.42 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Dailly_2008 · CL/F</text><circle cx="503.4" cy="46.0" r="4" fill="#ef6c00"><title>Dailly_2008 · CL/F: 7.86 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Johnson_2014 · CL/F</text><circle cx="503.4" cy="62.0" r="4" fill="#ef6c00"><title>Johnson_2014 · CL/F: 7.86 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Johnson_2014 · V</text><circle cx="518.3" cy="30.0" r="4" fill="#ef6c00"><title>Johnson_2014 · V: 86.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Okusanya_2007 · V1/F ·/kg</text><circle cx="483.8" cy="46.0" r="4" fill="#ef6c00"><title>Okusanya_2007 · V1/F ·/kg: 69.09 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Okusanya_2007 · V1/F ·/kg</text><circle cx="496.1" cy="62.0" r="4" fill="#ef6c00"><title>Okusanya_2007 · V1/F ·/kg: 74.9 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Okusanya_2007 · CL/F ·/kg</text><circle cx="494.6" cy="30.0" r="4" fill="#ef6c00"><title>Okusanya_2007 · CL/F ·/kg: 7.42 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Dailly_2008 · CL/F</text><circle cx="503.4" cy="46.0" r="4" fill="#ef6c00"><title>Dailly_2008 · CL/F: 7.86 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Okusanya_2007 · V1/F ·/kg</text><circle cx="483.8" cy="30.0" r="4" fill="#ef6c00"><title>Okusanya_2007 · V1/F ·/kg: 69.09 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Okusanya_2007 · V1/F ·/kg</text><circle cx="496.1" cy="46.0" r="4" fill="#ef6c00"><title>Okusanya_2007 · V1/F ·/kg: 74.9 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -41,28 +41,10 @@ This antiviral medication belongs to the protease inhibitor class and was develo
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Dailly_2008_reference](drugs/drug_amprenavir/Amprenavir_Dailly2008_reference.md) | — | 1-compartment (no model) | 3 | Dailly E et al., Impact of nevirapine or efavirenz co-ad…, Fundamental & clinical phar… (2008) | [10.1111/j.1472-8206.2007.00556.x](https://doi.org/10.1111/j.1472-8206.2007.00556.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Johnson_2014_reference](drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Johnson DH et al., Genomewide association study of atazana…, Pharmacogenetics and genomi… (2014) | [10.1097/fpc.0000000000000034](https://doi.org/10.1097/fpc.0000000000000034) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Okusanya_2007_mean](drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md) | ▶ model + simulator | 2-compartment, oral | 13 | Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agents and ch… (2007) | [10.1128/AAC.00570-06](https://doi.org/10.1128/AAC.00570-06) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Okusanya_2007_mean](drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md) | ▶ model + simulator | 2-compartment, oral | 13 | Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agents and ch… (2007) | [10.1128/AAC.00570-06](https://doi.org/10.1128/AAC.00570-06) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub> | [↳ median](drugs/drug_amprenavir/Amprenavir_Okusanya2007_median.md) | held back | 2-compartment, oral | 12 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Johnson_2014_reference](drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Johnson DH et al., Genomewide association study of atazana…, Pharmacogenetics and genomi… (2014) | [10.1097/fpc.0000000000000034](https://doi.org/10.1097/fpc.0000000000000034) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Sale_2002_reference](drugs/drug_amprenavir/Amprenavir_Sale2002_reference.md) | — | parent + metabolite (no model) | 0 | Sale M et al., Pharmacokinetic modeling and simulation…, Antimicrobial agents and ch… (2002) | [10.1128/AAC.46.3.746-754.2002](https://doi.org/10.1128/AAC.46.3.746-754.2002) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=amprenavir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inducer/substrate, `ABCC1` inhibitor | DrugBank actor |
-| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inducer/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` inducer/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inducer/substrate | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -76,13 +58,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:17 | 9:32 | 4/1/0 | 0/0/0 | 0/0/0 | 444,122/29,821 | ollama / glm-5.3-flash | 16 | 2/10 | 16/0 | 0 |
+| 2026-10-07 15:17 | 9:32 | 3/2/0 | 0/0/0 | 0/0/0 | 444,122/29,821 | ollama / glm-5.3-flash | 16 | 2/10 | 16/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 246 matched, 147 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 4  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

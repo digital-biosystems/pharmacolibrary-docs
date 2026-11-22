@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;protriptyline&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protriptyline_Ziegler1978_reference&quot;,&quot;label&quot;:&quot;Ziegler_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # protriptyline
 
@@ -14,11 +15,17 @@ Protriptyline is a tricyclic antidepressant used to treat neurotic disorders, mi
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q408432](https://www.wikidata.org/wiki/Q408432), [Wikipedia](https://en.wikipedia.org/wiki/Protriptyline?oldid=1328704064) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Start here
+
+> **Ziegler_1978_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adults, n = 8. [Run it in the simulator](drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md?tab=Simulation) · [record](drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Ziegler_1978_reference](drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md) | — | 1-compartment (no model) | 2 | Ziegler VE et al., Protriptyline kinetics, Clinical pharmacology and t… (1978) | [10.1002/cpt1978235580](https://doi.org/10.1002/cpt1978235580) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Ziegler_1978_reference](drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ziegler VE et al., Protriptyline kinetics, Clinical pharmacology and t… (1978) | [10.1002/cpt1978235580](https://doi.org/10.1002/cpt1978235580) |
 
 ## Pharmacodynamics (PD)
 
@@ -30,23 +37,6 @@ Protriptyline is a tricyclic antidepressant used to treat neurotic disorders, mi
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Huang_1997_high_K_6_x_10_2_M_induced_sustained_contraction](drugs/drug_protriptyline/pd_Huang_1997_high_K_6_x_10_2_M_induced_sustained_contraction.md) | high K+ (6 x 10(-2) M)-induced sustained contraction ← protriptyline · inhibition effect | — | Huang Y, Inhibition of contractions by tricyclic…, European journal of pharmac… (1997) | [10.1016/s0014-2999(97)89676-8](https://doi.org/10.1016/s0014-2999(97)89676-8) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Jo_2008_HERG_block](drugs/drug_protriptyline/pd_Jo_2008_HERG_block.md) | HERG current block (Xenopus oocytes, tail current) ← protriptyline · inhibition effect | — | Jo SH et al., Protriptyline block of the human ether-…, Life sciences (2008) | [10.1016/j.lfs.2007.12.004](https://doi.org/10.1016/j.lfs.2007.12.004) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Jo_2008_HERG_block_2](drugs/drug_protriptyline/pd_Jo_2008_HERG_block_2.md) | HERG current block (HEK293 cells, 36 degrees C) ← protriptyline · inhibition effect | — | Jo SH et al., Protriptyline block of the human ether-…, Life sciences (2008) | [10.1016/j.lfs.2007.12.004](https://doi.org/10.1016/j.lfs.2007.12.004) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=protriptyline).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SLC6A2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,13 +50,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:42 | 0:54 | 1/0/0 | 4/0/0 | 0/0/0 | 35,386/2,920 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 23:42 | 0:54 | 1/0/0 | 6/0/0 | 0/0/0 | 35,386/2,920 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 30 matched, 30 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

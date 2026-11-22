@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 0.60).">monkey</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> This paper's disposition core is incomplete; qb has no unit.
 
 <div class="pk-model-meta" hidden drug="Manganese" model-id="Manganese_Campbell2023_monkey" status="needs_review" stale="false" population="monkeys and humans" measured-compound="Manganese" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,7 +50,13 @@ Campbell JL, Clewell HJ, Van Landingham C, Gentry PR, Keene AM, Taylor MD et al.
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**This paper's disposition core is incomplete; qb has no unit.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Mollaeva_2021) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — manganese: Qb 0.00078, Km 0.027 mg/L, V 0.013 L/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

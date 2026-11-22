@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;milrinone&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/&quot;},{&quot;label&quot;:&quot;Ramamoorthy_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Milrinone_Foucher2025_reference&quot;,&quot;label&quot;:&quot;Foucher_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_Foucher2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Milrinone_OHanlon2024_reference&quot;,&quot;label&quot;:&quot;OHanlon_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_OHanlon2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Milrinone_Oualha2014_reference&quot;,&quot;label&quot;:&quot;Oualha_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_Oualha2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Milrinone_Panel2026_reference&quot;,&quot;label&quot;:&quot;Panel_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_Panel2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Milrinone_OHanlon2024_reference&quot;,&quot;label&quot;:&quot;OHanlon_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_OHanlon2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Milrinone_Paradisis2007_reference&quot;,&quot;label&quot;:&quot;Paradisis_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_Paradisis2007_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Milrinone_Foucher2025_reference&quot;,&quot;label&quot;:&quot;Foucher_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_Foucher2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Milrinone_Oualha2014_reference&quot;,&quot;label&quot;:&quot;Oualha_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_Oualha2014_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Milrinone_Panel2026_reference&quot;,&quot;label&quot;:&quot;Panel_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_milrinone/Milrinone_Panel2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The milrinone model was rejected because the central compartment is unreachable and the record relies on abstract-only summary statistics.
+> Milrinone was rejected because its reported peripheral-compartment volume (V2, 0.9 L/kg) belongs to an unreachable compartment.
 
 <div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Ramamoorthy1998_reference" status="rejected" stale="false" population="infants and children after open heart surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Ramamoorthy C, Anderson GD, Williams GD, Lynn AM. Pharmacokinetics and side effe
 
 ## Population and dosing
 
-**Population:** infants and children after open heart surgery · condition post-cardiac surgery · age group mixed · n = &gt;=19.
+**Population:** infants and children after open heart surgery · condition post-cardiac surgery · age group mixed.
 
 ## Model
 
@@ -37,7 +37,7 @@ Ramamoorthy C, Anderson GD, Williams GD, Lynn AM. Pharmacokinetics and side effe
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Ramamoorthy C, Anderson GD, Williams GD, Lynn AM. Pharmacokinetics and side effe
 
 ### Reviewer guidance
 
-**The milrinone model was rejected because the central compartment is unreachable and the record relies on abstract-only summary statistics.**
+**Milrinone was rejected because its reported peripheral-compartment volume (V2, 0.9 L/kg) belongs to an unreachable compartment.**
 
-The model structure defines a peripheral compartment for milrinone distribution but lacks a valid path from the dose to the central elimination compartment. Because only the paper's abstract was used, the reported clearance and volume values substitute for a fitted model. The record was held back due to this structural flaw and the lack of full model fitting data. Extracted — milrinone: V2 0.9 L/kg, CL 3.8 L/h, V 314 L.
+V2 is defined as the peripheral-compartment volume, and the recorded structure has no path from the dose to that compartment. Only the abstract was read, so reported summary statistics stood in for a fitted model. A second reader did not identify the clearance value of 3.8 L/h or the peripheral-compartment volume of 0.9 L/kg, and marked the dose compound and primary analyte as unknown. Extracted — milrinone: V2 0.9 L/kg, CL 3.8 L/h, V 314 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has milrinone, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has milrinone, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -90,18 +90,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[milrinone clearance in infants]` | 3.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[milrinone clearance]` |  | 3.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vbeta]` |  | 0.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volumes of distribution (vbeta) in infants]` | 0.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | milrinone | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | milrinone | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[milrinone clearance in infants]` | 3.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[milrinone clearance]` |  | 3.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vbeta]` |  | 0.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volumes of distribution (vbeta) in infants]` | 0.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | milrinone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | milrinone | unknown | mismatch |
 
 </details>
 

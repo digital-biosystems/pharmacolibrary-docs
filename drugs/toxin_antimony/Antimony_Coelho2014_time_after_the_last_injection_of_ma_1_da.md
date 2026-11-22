@@ -136,30 +136,13 @@ The extracted model structure for antimony is specified as a retention model, bu
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_antimony/Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da/Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da_matlab.zip" download>Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_antimony/Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da/Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da_sbml.zip" download>Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da_sbml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_antimony/Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da/Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da_cellml.zip" download>Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da_cellml.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Coelho DR, Miranda ES, Saint'Pierre TD, Paumgartten FJ. Tissue distribution of residual antimony in rats treated with multiple doses of meglumine antimoniate. Memorias do Instituto Oswaldo Cruz 109(4):420–427 (2014). [doi:10.1590/0074-0276140030](https://doi.org/10.1590/0074-0276140030)
-
-**This record:** Pharmacolibrary, model `Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da`. <https://pharmacolibrary.github.io/#/drugs/toxin_antimony/Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da>
-
-```bibtex
-@misc{pharmacolibrary_AntimonyCoelho2014timeafterthelastinjectionofma1da,
-  title  = {{Pharmacolibrary model Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_antimony/Antimony_Coelho2014_time_after_the_last_injection_of_ma_1_da},
-  note   = {Parameters from doi:10.1590/0074-0276140030},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

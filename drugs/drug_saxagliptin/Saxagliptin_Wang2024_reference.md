@@ -16,7 +16,7 @@ Wang T, Tao T, Liu Y, Dong J, Ni S, Liu Y et al. Pharmacokinetic/Pharmacodynamic
 
 ## Population and dosing
 
-**Population:** rats with Type 2 Diabetes Mellitus · condition Type 2 Diabetes Mellitus · n = , 3.
+**Population:** rats with Type 2 Diabetes Mellitus · condition Type 2 Diabetes Mellitus.
 
 **Dosing:** 700 mg, oral, single.
 

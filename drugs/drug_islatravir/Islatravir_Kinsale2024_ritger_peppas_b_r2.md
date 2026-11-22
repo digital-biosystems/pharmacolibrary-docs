@@ -16,7 +16,7 @@ Kinsale TS, Cottrell ML, Li L, Brand R, Gatto G, Luecke E et al. Pharmacokinetic
 
 ## Population and dosing
 
-**Population:** adult Wistar rats · condition healthy · age group adult · n = &gt;.
+**Population:** adult Wistar rats · condition healthy · age group adult.
 
 **Dosing:** 7, 21, 70 mg, sc, single.
 

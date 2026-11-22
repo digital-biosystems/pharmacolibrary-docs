@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Higashi_2025 \u00b7 1_mg_day&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Bruno2022_extensive_metabolizer&quot;,&quot;label&quot;:&quot;Bruno_2022_extensive_metabolizer&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_extensive_metabolizer.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Bruno2022_poor_metabolizer&quot;,&quot;label&quot;:&quot;Bruno_2022_poor_metabolizer&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_poor_metabolizer.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Sasabe2021v2_reference&quot;,&quot;label&quot;:&quot;Sasabe_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Sasabe2021v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Bruno2022_extensive_metabolizer&quot;,&quot;label&quot;:&quot;Bruno_2022_extensive_metabolizer&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_extensive_metabolizer.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Bruno2022_poor_metabolizer&quot;,&quot;label&quot;:&quot;Bruno_2022_poor_metabolizer&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Bruno2022_poor_metabolizer.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Sasabe2021v2_monkey&quot;,&quot;label&quot;:&quot;Sasabe_2021_2_monkey&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Sasabe2021v2_monkey.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Sasabe2021v2_rat&quot;,&quot;label&quot;:&quot;Sasabe_2021_2_rat&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Sasabe2021v2_rat.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_1_mg_day" status="needs_review" stale="false" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_1_mg_day" status="needs_review" stale="false" population="healthy adults and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharmacokinetics of brexpiprazole in Japanese healthy subjects and patients with schizophrenia. Drug metabolism and pharmacokinetics 62:101057 (2025).
@@ -17,9 +17,9 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 ## Population and dosing
 
-**Population:** Japanese healthy subjects and patients with schizophrenia · condition schizophrenia · age group adult · n = (398).
+**Population:** healthy adults and patients with schizophrenia · age group adult.
 
-**Dosing:** 0.2, 1, 2, 4, 6 mg, oral, multiple, every 24 h.
+**Dosing:** 1, 2 mg, oral, multiple, every 24 h.
 
 ## Model
 
@@ -33,14 +33,14 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC 0-24,ss | AUC | 1084 | ng·h/mL |
+| AUC 0-24,ss | AUCSS | 1084 | ng*h/mL |
 | C max,ss | Cmax | 66.9 | ng/mL |
 | C trough,ss | Ctrough | 38.5 | ng/mL |
-| the volume of distribution | V | 1.1 | L/kg |
+| volume of distribution | V | 1.1 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 **This paper's disposition core is incomplete.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Mauri_2018) cannot stand in for this paper's evidence. A reported unit could not be converted (AUC, Cmax and Ctrough), so that value has no SI equivalent. Extracted — brexpiprazole: AUC 1.08e+03 ng·h/mL, Cmax 66.9 ng/mL, Ctrough 38.5 ng/mL, V 1.1 L/kg.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Mauri_2018) cannot stand in for this paper's evidence. A reported unit could not be converted (AUCSS, Cmax and Ctrough), so that value has no SI equivalent. Extracted — brexpiprazole: AUCSS 1.08e+03 ng*h/mL, Cmax 66.9 ng/mL, Ctrough 38.5 ng/mL, V 1.1 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,10 +62,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC 0-24,ss | `Q88` · AUC | 1084 | ng·h/mL |  |  | ng·h/mL | llm_confirmed (0.6) | Higashi_2025_table_3:row1:col1 |
+| AUC 0-24,ss | `Q18` · AUCSS | 1084 | ng*h/mL |  |  | ng*h/mL | llm_corrected (0.6) | Higashi_2025_table_3:row1:col1 |
 | C max,ss | `Q32` · Cmax | 66.9 | ng/mL |  |  | ng/mL | llm (0.6) | Higashi_2025_table_3:row1:col2 |
 | C trough,ss | `Q37` · Ctrough | 38.5 | ng/mL |  |  | ng/mL | llm_confirmed (0.6) | Higashi_2025_table_3:row1:col3, Higashi_2025_table_3:row1:col4 |
-| the volume of distribution | `Q61` · V | 1.1 | L/kg | 0.077 | m3 | L | review_gapfill (0.7) | Mauri_2018:review |
+| volume of distribution | `Q61` · V | 1.1 | L/kg | 0.077 | m3 | L | review_gapfill (0.7) | Mauri_2018:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,12 +75,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 ## Departures & gaps
 
 **Interpretation flags:**
-- implicit units: 'AUC 0-24,ss' → ng·h/mL (from the popPK convention: 'The paper text states trough concentrations in ng/mL. AUC is the integral of concentration over time. In the context of ')
-- implicit units: 'C max,ss' → ng/mL (from the paper text: "The text in the 'Simulations using the nal PK model' section states: 'Trough plasma concentrations (90% prediction inter")
-- implicit units: 'C trough,ss' → ng/mL (from the paper text: "The text in the 'Simulations using the nal PK model' section states: 'Trough plasma concentrations ... were 38.5 ... ng/")
+- implicit units: 'AUC 0-24,ss' → ng*h/mL (from the popPK convention: "The paper states trough concentrations in ng/mL in the text ('...concentrations were 38.5 ... ng/mL'). AUC over a 24-hou")
+- implicit units: 'C max,ss' → ng/mL (from the popPK convention: "The text explicitly reports trough concentrations in ng/mL ('...concentrations were 38.5 (10.5-87.0) and 77.1 (22.4-173)")
+- implicit units: 'C trough,ss' → ng/mL (from the popPK convention: "The text explicitly reports trough concentrations in ng/mL ('...concentrations were 38.5 (10.5-87.0) ... ng/mL'). Ctroug")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brexpiprazole
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: '1 mg/day' subgroup of Higashi_2025 (paper reports 2 populations: 1 mg/day, 2 mg/day)
-- skipped review gap-fill of CL from Mauri_2018: its label names a different analyte ('rsp') — 'The mean plasma clearance of RSP'
+- skipped review gap-fill of CL from Mauri_2018: its label names a different analyte ('rsp') — 'mean plasma clearance of RSP'
 - gap-filled Q61 (V) from Mauri_2018's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -101,14 +102,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.545 (6/11 fields) | 5 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[auc 0-24,ss].parameter_id` | Q88 | Q18 | mismatch |
 | `gpt-oss-120b` | `parameters[cl/f]` |  | 0.74 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[q/f]` |  | 1.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc/f]` |  | 63.0 | only_one_extracted |
@@ -128,10 +128,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q18 | pass | [time] * [mass] / [length] ** 3 |  | ['Higashi_2025_table_3:row1:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Higashi_2025_table_3:row1:col2'] |
 | C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Higashi_2025_table_3:row1:col3', 'Higashi_2025_table_3:row1:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Mauri_2018:review'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Higashi_2025_table_3:row1:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 77 L | ['Mauri_2018:review'] |
 
@@ -184,4 +184,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexpiprazole%5D%20Brexpiprazole_Higashi2025_1_mg_day&body=Drug%3A%20brexpiprazole%0ARecord%3A%20Brexpiprazole_Higashi2025_1_mg_day%0APaper%3A%20Higashi_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_1_mg_day%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 10:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:17 UTC</sub>

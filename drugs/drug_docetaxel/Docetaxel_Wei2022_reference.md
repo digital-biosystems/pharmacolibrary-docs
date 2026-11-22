@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The docetaxel clearance of 53.40 L/h and peripheral volume of 0.06 L were rejected for physiological implausibility.
+> Docetaxel’s peripheral volume of distribution, 0.06 L, was judged implausible in magnitude, leading to rejection.
 
 <div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Wei2022_reference" status="rejected" stale="false" population="Chinese cancer patients" measured-compound="docetaxel" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Wei J, Zhang Y, Li Z, Li X, Zhao C. Docetaxel population pharmacokinetic modelli
 
 ## Population and dosing
 
-**Population:** Chinese cancer patients · condition cancer · age group adult · n = : 440,  440.
+**Population:** Chinese cancer patients · condition cancer · age group adult.
 
 **Dosing:** 75 mg/m2, iv, multiple, every 2160 h.
 
@@ -51,13 +51,13 @@ Wei J, Zhang Y, Li Z, Li X, Zhao C. Docetaxel population pharmacokinetic modelli
 
 ### Reviewer guidance
 
-**The docetaxel clearance of 53.40 L/h and peripheral volume of 0.06 L were rejected for physiological implausibility.**
+**Docetaxel’s peripheral volume of distribution, 0.06 L, was judged implausible in magnitude, leading to rejection.**
 
-The recorded total clearance of 53.40 L/h and peripheral volume of distribution of 0.06 L failed the physiological plausibility check due to implausible magnitudes. These values suggest a unit or scale extraction error in the model record. A second reader independently identified a different clearance value of 52.42 L/h and a peripheral volume of 0.05 L, further highlighting discrepancies in the extracted parameter estimates. Extracted — docetaxel: CL 53.4 L/h, V1 48.2 L, Q 0.42 L/h, V2 0.06 L, allometric_exponent -0.71.
+The record gives a peripheral-compartment volume of 0.06 L, and the stated reason for rejection is a clearance or volume outside the physiological window, consistent with a unit or scale extraction error. A second reader reported 0.05 L for this volume; the record also reports docetaxel clearance of 53.40 L/h, versus the second reader’s 52.42 L/h, and intercompartmental clearance of 0.42 L/h versus 0.32 L/h. Extracted — docetaxel: CL 53.4 L/h, V1 48.2 L, Q 0.42 L/h, V2 0.06 L, allometric_exponent -0.71.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 53.40, the second reading 52.42; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

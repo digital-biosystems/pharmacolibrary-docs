@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Ketoconazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketoconazole_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketoconazole_Matthew1993_reference&quot;,&quot;label&quot;:&quot;Matthew_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketoconazole_Johnson2018_reference&quot;,&quot;label&quot;:&quot;Johnson_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Johnson2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketoconazole_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketoconazole_Matthew1993_reference&quot;,&quot;label&quot;:&quot;Matthew_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketoconazole_Johnson2018_reference&quot;,&quot;label&quot;:&quot;Johnson_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Johnson2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Ketoconazole
 
@@ -35,7 +35,7 @@ LD50: 702 mg/kg (Oral, Mouse)
 
 ## Start here
 
-> **Matthew_1993_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> rat. [Run it in the simulator](drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md?tab=Simulation) · [record](drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md)
+> **Matthew_1993_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> rat. [Run it in the simulator](drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md?tab=Simulation) · [record](drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -49,8 +49,8 @@ LD50: 702 mg/kg (Oral, Mouse)
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kim_2020_reference](drugs/toxin_ketoconazole/Ketoconazole_Kim2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kim HY et al., Saliva for Precision Dosing of Antifung…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.00894](https://doi.org/10.3389/fphar.2020.00894) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Matthew_1993_reference](drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Matthew D et al., Disposition of azole antifungal agents.…, Pharmaceutical research (1993) | [10.1023/a:1018996524141](https://doi.org/10.1023/a:1018996524141) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kim_2020_reference](drugs/toxin_ketoconazole/Ketoconazole_Kim2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kim HY et al., Saliva for Precision Dosing of Antifung…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.00894](https://doi.org/10.3389/fphar.2020.00894) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Matthew_1993_reference](drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Matthew D et al., Disposition of azole antifungal agents.…, Pharmaceutical research (1993) | [10.1023/a:1018996524141](https://doi.org/10.1023/a:1018996524141) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Johnson_2018_reference](drugs/toxin_ketoconazole/Ketoconazole_Johnson2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Johnson TN et al., Development and applications of a physi…, European journal of pharmac… (2018) | [10.1016/j.ejps.2018.01.009](https://doi.org/10.1016/j.ejps.2018.01.009) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kang_2026_2_reference](drugs/toxin_ketoconazole/Ketoconazole_Kang2026v2_reference.md) | — | 1-compartment (no model) | 0 | Kang HE et al., Physiologically based pharmacokinetic m…, Drug metabolism and disposi… (2026) | [10.1016/j.dmd.2026.100355](https://doi.org/10.1016/j.dmd.2026.100355) |
 | <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Liu_2016_reference](drugs/toxin_ketoconazole/Ketoconazole_Liu2016_reference.md) | — | 1-compartment (no model) | 0 | Liu J et al., Bioconcentration and metabolism of keto…, Chemosphere (2016) | [10.1016/j.chemosphere.2016.02.033](https://doi.org/10.1016/j.chemosphere.2016.02.033) |
@@ -59,36 +59,9 @@ LD50: 702 mg/kg (Oral, Mouse)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span> | [Anderson_1987_DHR](drugs/toxin_ketoconazole/pd_Anderson_1987_DHR.md) | delayed hypersensitivity response ← ketoconazole · inhibition effect | — | Anderson JE et al., Pharmacodynamics of cyclosporine-ketoco…, Transplantation (1987) | [10.1097/00007890-198704000-00015](https://doi.org/10.1097/00007890-198704000-00015) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">mouse</span> | [Anderson_1987_DHR](drugs/toxin_ketoconazole/pd_Anderson_1987_DHR.md) | delayed hypersensitivity response ← ketoconazole · inhibition effect | — | Anderson JE et al., Pharmacodynamics of cyclosporine-ketoco…, Transplantation (1987) | [10.1097/00007890-198704000-00015](https://doi.org/10.1097/00007890-198704000-00015) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Darpo_2013_QTcI](drugs/toxin_ketoconazole/pd_Darpo_2013_QTcI.md) | change-from-baseline in QTc interval corrected by individual regression slope ← ketoconazole · direct linear effect | model (no simulator) | Darpo B et al., Lomitapide at supratherapeutic plasma l…, Annals of noninvasive elect… (2013) | [10.1111/anec.12103](https://doi.org/10.1111/anec.12103) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Leil_2014_4_HC](drugs/toxin_ketoconazole/pd_Leil_2014_4_HC.md) | 4beta-Hydroxycholesterol biomarker turnover ← ketoconazole | — | Leil TA et al., Evaluation of 4β-Hydroxycholesterol as…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.18](https://doi.org/10.1038/psp.2014.18) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ketoconazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` target | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor, `CYP4F2` inhibitor, `UGT2B7` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `CYP4F2` inhibitor, `SLCO1B1` inhibitor, `UGT1A1` inhibitor, `UGT2B7` inhibitor | DrugBank actor |
-| metabolism | lung | `CYP1A1` inducer/inhibitor, `CYP1B1` inhibitor | DrugBank actor |
-| metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inducer/inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `UGT1A1` inhibitor, `UGT2B7` inhibitor | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor, `ABCB11` inhibitor | DrugBank actor |
-| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
-| — | adrenal gland | `CYP11B1` inhibitor, `CYP17A1` inhibitor | DrugBank actor |
-| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
-| — | prostate gland | `AR` binder | DrugBank actor |
-| — | testis | `CYP17A1` inhibitor, `CYP19A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP21A2 (inhibitor), CYP4F12 (inhibitor), ERG11 (inhibitor), KCNH2 (inhibitor), NR1I2 (target), NR1I3 (target), SHBG (target), UGT1A7 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

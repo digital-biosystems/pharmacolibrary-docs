@@ -16,71 +16,7 @@ Mirikizumab is a monoclonal antibody used to treat ulcerative colitis. It is giv
 
 ## Start here
 
-> **Chua_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with moderately to severely active ulcerative colitis, n = — the modelled concentrations are mirikizumab's
-  #   metabolite_pk: a metabolite of mirikizumab is what is modelled
-  #   biomarker_turnover: the kinetic model describes an ENDOGENOUS substance
-  #     (uric acid, glucose, cholesterol, INR, platelets, a hormone …) — its
-  #     production, volume and clearance — and mirikizumab only perturbs
-  #     it (Rmax, Imax, IC50 on production or loss). Those V and CL are the
-  #     biomarker's, NOT the drug's pharmacokinetics.
-  #   exposure_response: no kinetic model; effect vs dose or concentration
-models_target_drug:  # yes or no - is mirikizumab (under ANY name: synonym, brand, code or
-                     #   abbreviation such as BCNU, ACNU, MTX, 5-FU) the dose_compound or the
-                     #   primary_analyte? 'no' when it is only a co-medication or comparator.
-final_table_hint:    # if is_poppk=yes, the table that reports the FINAL fitted PK parameter
-                     #   estimates (e.g. "Table 2" or its caption's first few words), else unknown
-software:            # NONMEM, Monolix, nlmixr, etc., or unknown
-has_control_stream:  # yes or no - is NONMEM/model code in the supplement?
-dose_compound:       # the compound the subject actually receives
-primary_analyte:     # the compound whose concentrations the model chiefly describes
-                     # NOTE: dose_compound and primary_analyte MAY DIFFER
-population:          # short label for the study population the FINAL parameters describe,
-                     #   e.g. "healthy adults", "preterm newborns", "paediatric oncology patients"
-age_class:           # one of: neonate | infant | child | adolescent | adult | elderly | mixed | unknown
-n_subjects:          # number of subjects in the analysis (a plain integer), or unknown
-condition:           # health/disease state, e.g. healthy | patent ductus arteriosus | renal impairment
-species:             # the species the data were measured in: human | rat | mouse | dog | cat |
-                     #   horse | cattle | sheep | goat | pig | rabbit | monkey | bird | fish |
-                     #   other animal (name it) | in vitro | unknown
-
-# List each compound on its own line under 'compounds', one per line, as:
-#   - name | role | dosed | measured | has_parameters
-# where role = parent | metabolite | co-administered | analyte-only | endogenous_biomarker
-#       (endogenous_biomarker = a substance the body makes, whose kinetics the model
-#        describes; it is never 'dosed')
-#       dosed = yes/no (subject receives it)
-#       measured = yes/no (its concentrations are modelled)
-#       has_parameters = yes/no (paper gives it V/CL or a compartment)
-compounds:
-  -
-
-# List each parent-&gt;metabolite (or interconversion) link on its own line under
-# 'links', one per line, as:
-#   - from | to | relation | link_parameter
-# where relation = metabolism | hydrolysis | interconversion
-#       link_parameter = Kfm | Fm | formation clearance | none
-# If there are no links, write 'links: none' on a single line.
-links:
-  -
-
-RULES:
-- dose_compound and primary_analyte may be different. Allopurinol dosed,
-  oxypurinol measured is a valid, common case. Do NOT collapse them to one name.
-- A model of an endogenous substance's turnover under the drug (uric acid under
-  allopurinol, INR under warfarin) is paper_class=biomarker_turnover with the substance
-  listed as role=endogenous_biomarker; is_poppk may still be yes for that model, but the
-  drug's own V/CL are then NOT reported.
-- population describes the group the FINAL model parameters characterise (the whole
-  analysis dataset), not a covariate subgroup. Prefer the paper's own wording.
-- species is REQUIRED whenever the paper states it (veterinary and preclinical studies
-  are common: "in cats", "Sprague-Dawley rats", "Thoroughbred horses"). Write human only when the subjects are people; do not assume it.
-- List EVERY compound, including inactive metabolites, with its role.
-- A compound measured but with has_parameters=no is mentioned but not modelled;
-  still list it.
-- Use the pipe character '|' to separate fields on the list lines.
-- Output ONLY the YAML. No prose, no code fences.
-
-OUTPUT FORMAT OVERRIDE: ignore any instruction above to answer in YAML. Return ONLY a JSON object matching the supplied schema. Put each value in its OWN named field — never repeat a field name as a value, never pack several values into one string.. [Run it in the simulator](drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference.md?tab=Simulation) · [record](drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference.md)
+> **Chua_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with moderately to severely active ulcerative colitis. [Run it in the simulator](drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference.md?tab=Simulation) · [record](drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -112,15 +48,6 @@ OUTPUT FORMAT OVERRIDE: ignore any instruction above to answer in YAML. Return O
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Friedrich_2024_clinical_response](drugs/drug_mirikizumab/pd_Friedrich_2024_clinical_response.md) | clinical response ← mirikizumab · categorical (graded) response model | — | Friedrich S et al., Mirikizumab Exposure-Response Relations…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3305](https://doi.org/10.1002/cpt.3305) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Friedrich_2024_endoscopic_remission](drugs/drug_mirikizumab/pd_Friedrich_2024_endoscopic_remission.md) | endoscopic remission ← mirikizumab · categorical (graded) response model | — | Friedrich S et al., Mirikizumab Exposure-Response Relations…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3305](https://doi.org/10.1002/cpt.3305) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mirikizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IL12A (inhibitor), IL23A (antibody), IL23A (binder).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -133,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:11 | 3:10 | 4/0/0 | 2/0/0 | 0/0/0 | 181,960/17,725 | einfracz / qwen3.8-27b | 4 | 4/0 | 4/0 | 1 |
+| 2026-10-07 00:11 | 3:10 | 4/0/0 | 8/0/0 | 0/0/0 | 181,960/17,725 | einfracz / qwen3.8-27b | 4 | 4/0 | 4/0 | 0 |
 
 ## Coverage
 

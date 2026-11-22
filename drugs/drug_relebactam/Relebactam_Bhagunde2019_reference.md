@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Relebactam&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/&quot;},{&quot;label&quot;:&quot;Bhagunde_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Relebactam_Patel2022_reference&quot;,&quot;label&quot;:&quot;Patel_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Patel2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Patel2022_reference&quot;,&quot;label&quot;:&quot;Patel_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Patel2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Relebactam's clearance and volumes lacked fitted values, forcing placeholder use instead of explicit estimates.
+> Relebactam’s clearance was held at a placeholder despite listed CL 7.02; its distribution volume and central-to-peripheral rate constant were also left without values, prompting quarantine.
 
 <div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Bhagunde2019_reference" status="model_quarantined" stale="false" population="healthy volunteers and patients with bacterial infections" measured-compound="relebactam and imipenem" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Bhagunde P, Patel P, Lala M, Watson K, Copalu W, Xu M et al. Population Pharmaco
 
 ### Reviewer guidance
 
-**Relebactam's clearance and volumes lacked fitted values, forcing placeholder use instead of explicit estimates.**
+**Relebactam’s clearance was held at a placeholder despite listed CL 7.02; its distribution volume and central-to-peripheral rate constant were also left without values, prompting quarantine.**
 
-Although the record lists values like 7.02 L/hour for clearance, the review found these parameters had no extracted estimates, so generic defaults were used. This lack of specific data caused the model to be quarantined. Additionally, the defined covariate effects for renal function and weight were not tested in simulations. Extracted — relebactam: CL 7.02 L/hour, V1 11.1 L, V2 6.41 L, Q 10.4 L/hour.
+The findings state that relebactam’s clearance, volume of distribution, and central-to-peripheral rate constant had no value: placeholders stood in, and the model was held back rather than published with invented numbers. This conflicts with the parameter table, which lists CL 7.02, V1 11.08, and V2 6.41; the covariate scenarios were also not simulated, as only the reference individual was simulated despite recorded covariate effects of 0.75 and 0.70. A second reader disputed the record (agreement 0.545; 0 of 1 agreed), identifying the dose compound and primary analyte as unknown and disagreeing over the covariate-effect assignments. Extracted — relebactam: CL 7.02 L/hour, V1 11.1 L, V2 6.41 L, Q 10.4 L/hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has imipenem and relebactam, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -140,15 +140,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 364.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 250.8 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 364.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 250.8 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,30 +167,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_matlab.zip" download>Relebactam_Bhagunde2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_matlab_simbio.zip" download>Relebactam_Bhagunde2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_sbml.zip" download>Relebactam_Bhagunde2019_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_cellml.zip" download>Relebactam_Bhagunde2019_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Bhagunde P, Patel P, Lala M, Watson K, Copalu W, Xu M et al. Population Pharmacokinetic Analysis for Imipenem-Relebactam in Healthy Volunteers and Patients With Bacterial Infections. CPT: pharmacometrics & systems pharmacology 8(10):748–758 (2019). [doi:10.1002/psp4.12462](https://doi.org/10.1002/psp4.12462)
-
-**This record:** Pharmacolibrary, model `Relebactam_Bhagunde2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_relebactam/Relebactam_Bhagunde2019_reference>
-
-```bibtex
-@misc{pharmacolibrary_RelebactamBhagunde2019reference,
-  title  = {{Pharmacolibrary model Relebactam_Bhagunde2019_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_relebactam/Relebactam_Bhagunde2019_reference},
-  note   = {Parameters from doi:10.1002/psp4.12462},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

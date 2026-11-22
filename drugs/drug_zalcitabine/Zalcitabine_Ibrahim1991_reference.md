@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;zalcitabine&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/&quot;},{&quot;label&quot;:&quot;Ibrahim_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zalcitabine_Adams1998_reference&quot;,&quot;label&quot;:&quot;Adams_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zalcitabine_Ibrahim1991_reference&quot;,&quot;label&quot;:&quot;Ibrahim_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zalcitabine_Adams1998_reference&quot;,&quot;label&quot;:&quot;Adams_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zalcitabine_Ibrahim1991_reference&quot;,&quot;label&quot;:&quot;Ibrahim_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Bioavailability and absorption delay lacked paper-derived estimates and defaulted to generic values, while half-life and clearance were abstract-only summaries.
+> Bioavailability F was left at default, and the record was abstract-only, so summary statistics like CL 1.48 L/h/kg stand in for fitted estimates.
 
 <div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Ibrahim1991_reference" status="needs_review" stale="false" population="rats administered high-dose DDC" measured-compound="2&#39;,3&#39;-dideoxycytidine (DDC; zalcitabine)" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,9 +59,9 @@ Ibrahim SS, Boudinot FD. Pharmacokinetics of 2',3'-dideoxycytidine after high-do
 
 ### Reviewer guidance
 
-**Bioavailability and absorption delay lacked paper-derived estimates and defaulted to generic values, while half-life and clearance were abstract-only summaries.**
+**Bioavailability F was left at default, and the record was abstract-only, so summary statistics like CL 1.48 L/h/kg stand in for fitted estimates.**
 
-Bioavailability and absorption delay were not estimated in the paper, so standard library placeholders were used instead of specific values. The record relies on the abstract, meaning the half-life of 1.29 h and clearance of 1.48 L/h/kg are summary statistics rather than fitted parameters. Covariate scenarios were also not simulated, leaving only the reference individual profile. Extracted — 2',3'-dideoxycytidine (DDC; zalcitabine): t1/2z 1.29 h, CL 1.48 L/h/kg, CLR 0.73 L/h/kg, CLNR 0.75 L/h/kg, Vss 1.25 L/kg, V 0.6 ml g À1, kabs 50 h-1.
+The bioavailability parameter F was not reported in the paper, so a library default was used instead of an explicit estimate. The record was built from the abstract alone, meaning the summary statistics, such as the total clearance of 1.48 L/h/kg, are not from a fitted model. A second reader disagreed with several parameter extractions, noting that values like the terminal half-life of 1.29 h were missing in their review. Covariate effects were defined but not simulated, as only the reference individual was modeled. Extracted — 2',3'-dideoxycytidine (DDC; zalcitabine): t1/2z 1.29 h, CL 1.48 L/h/kg, CLR 0.73 L/h/kg, CLNR 0.75 L/h/kg, Vss 1.25 L/kg, V 0.6 ml g À1, kabs 50 h-1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has 2',3'-dideoxycytidine (DDC; zalcitabine), the second reading 2',3'-dideoxycytidine; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -159,14 +159,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=2',3'-dideoxycytidine (DDC; zalcitabine)) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=2',3'-dideoxycytidine (DDC; zalcitabine)) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

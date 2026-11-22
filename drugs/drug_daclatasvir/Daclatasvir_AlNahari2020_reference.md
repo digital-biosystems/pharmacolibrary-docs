@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;daclatasvir&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/&quot;},{&quot;label&quot;:&quot;Al-Nahari_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclatasvir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daclatasvir_Wang2018_dcv_estimate_rse&quot;,&quot;label&quot;:&quot;Wang_2018_dcv_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Wang2018_dcv_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ueno_2018_SVR12&quot;,&quot;label&quot;:&quot;Ueno_2018 \u00b7 SVR12&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/pd_Ueno_2018_SVR12.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclatasvir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daclatasvir_Wang2018_dcv_estimate_rse&quot;,&quot;label&quot;:&quot;Wang_2018_dcv_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Wang2018_dcv_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ueno_2018_SVR12&quot;,&quot;label&quot;:&quot;Ueno_2018 \u00b7 SVR12&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/pd_Ueno_2018_SVR12.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # daclatasvir — `Daclatasvir_AlNahari2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:40 UTC (Rejected), but the paper was screened again on 2026-10-07 15:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The zero-order input rate (R1, 1.5 /h) for daclatasvir has mismatched dimensions, and the record relies solely on abstract data.
+> Record rejected because the zero-order input rate, 1.5 1/h, has units of reciprocal time, which is dimensionally incompatible with a mass per time rate.
 
-<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_AlNahari2020_reference" status="rejected" stale="true" population="adolescents with genotype-4 chronic HCV infection" measured-compound="daclatasvir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_AlNahari2020_reference" status="rejected" stale="false" population="adolescents with genotype-4 chronic HCV infection" measured-compound="daclatasvir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacokinetics of daclatasvir in Egyptian adolescents with genotype-4 HCV infection. Antiviral therapy 25(2):101–110 (2020).
@@ -40,7 +40,7 @@ Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacoki
 
 ### Reviewer guidance
 
-**The zero-order input rate (R1, 1.5 /h) for daclatasvir has mismatched dimensions, and the record relies solely on abstract data.**
+**Record rejected because the zero-order input rate, 1.5 1/h, has units of reciprocal time, which is dimensionally incompatible with a mass per time rate.**
 
-The dimension mismatch specifically involves the R1 parameter, which represents the zero-order input rate into the dosing compartment. Additionally, the source was limited to the abstract, meaning the reported summary statistics served as a stand-in for a fitted model. A second reader disagreed with the assigned values for multiple parameters, including AUC, CL/F, Cmax, K0, T1/2, and V/F. Extracted — daclatasvir: Cmax 1.09e+03 ng/ml, AUC 1.12e+04 ng·h/mL, V/F 55 l, CL/F 4.5 l/h, t1/2z 8.5 h, R1 1.5 /h.
+The record lists the zero-order input rate (K0) as 1.5 1/h, but this unit represents a frequency rather than a mass transfer rate, creating a fundamental dimension mismatch. Additionally, the record was constructed solely from the abstract, meaning the provided summary statistics do not represent a fitted model. A second reader could not independently verify any of the extracted pharmacokinetic parameter values or the primary analyte, further undermining the record's reliability. Extracted — daclatasvir: Cmax 1.09e+03 ng/ml, AUC 1.12e+04 ng·h/mL, V/F 55 l, CL/F 4.5 l/h, t1/2z 8.5 h, R1 1.5 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daclatasvir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

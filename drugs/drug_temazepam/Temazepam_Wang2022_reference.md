@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;temazepam&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/Temazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/Temazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # temazepam — `Temazepam_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:01 UTC (Needs review), but the paper was screened again on 2026-10-06 22:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The record was held back because the absorption rate constant for temazepam was not reported in Wang_2022, leaving the model to rely on unsupported library defaults.
 
-<div class="pk-model-meta" hidden drug="temazepam" model-id="Temazepam_Wang2022_reference" status="extracted" stale="true" population="" measured-compound="temazepam" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="temazepam" model-id="Temazepam_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="temazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam and Its Metabolites in Urine of Chinese Participants. Drugs in R&D 22(1):43–50 (2022).
@@ -29,6 +29,8 @@ Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam
 <figure class="pk-models-diagram"><img src="drugs/drug_temazepam/Temazepam_Wang2022_reference/Temazepam_Wang2022_reference.svg" alt="Temazepam_Wang2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CLz/F | CL/F | 65.77 | L/h |
@@ -36,7 +38,7 @@ Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by glm-5.3-flash (confirmed, agreement 1.0), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by glm-5.3-flash (confirmed, agreement 1.0), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +48,9 @@ Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam
 
 ### Reviewer guidance
 
-**The model defaults absorption half-life and lag time for temazepam instead of using values reported in Wang_2022.**
+**The record was held back because the absorption rate constant for temazepam was not reported in Wang_2022, leaving the model to rely on unsupported library defaults.**
 
-The record assigns default values to absorption half-life and lag time because these parameters are absent from the source text. This substitution violates the requirement for explicit estimates and is incompatible with the apparent parameterization. Consequently, the simulated pharmacokinetic profile relies on unverified assumptions rather than paper-specific data. Extracted — temazepam: CL/F 65.8 L/h, V/F 1.13e+04 L.
+The source paper does not provide an estimate for the absorption rate constant or lag time. Consequently, the model used library placeholders for these parameters, which compromises the simulated oral profile. The apparent clearance of 65.77 L/h and volume of 11346.4742 L cannot validate these invented absorption assumptions. Extracted — temazepam: CL/F 65.8 L/h, V/F 1.13e+04 L.
 
 Independently confirmed by `glm-5.3-flash`, `gpt-oss-120b`.
 
@@ -112,15 +114,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=temazepam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=temazepam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

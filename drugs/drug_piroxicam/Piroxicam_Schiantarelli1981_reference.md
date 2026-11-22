@@ -4,11 +4,11 @@
 
 # piroxicam — `Piroxicam_Schiantarelli1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-07 01:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="piroxicam" model-id="Piroxicam_Schiantarelli1981_reference" status="needs_review" stale="true" population="rodents and humans" measured-compound="piroxicam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="piroxicam" model-id="Piroxicam_Schiantarelli1981_reference" status="needs_review" stale="false" population="rodents and humans" measured-compound="piroxicam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schiantarelli P, Acerbi D, Bovis G. Some pharmacokinetic properties and bioavailability by oral and rectal route of piroxicam in rodents and in man. Arzneimittel-Forschung 31(1):92–97 (1981).
@@ -36,7 +36,7 @@ Schiantarelli P, Acerbi D, Bovis G. Some pharmacokinetic properties and bioavail
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Schiantarelli P, Acerbi D, Bovis G. Some pharmacokinetic properties and bioavail
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — piroxicam: t1/2z 35 h, t1/2β 0.67 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has piroxicam, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

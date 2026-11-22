@@ -4,11 +4,11 @@
 
 # ipriflavone — `Ipriflavone_Ma1997_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-07 03:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="ipriflavone" model-id="Ipriflavone_Ma1997_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="ipriflavone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ipriflavone" model-id="Ipriflavone_Ma1997_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ipriflavone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ma XH, Xu Y, Liu TP. [High performance liquid chromatographic method for the determination of ipriflavone in serum and its pharmacokinetic study in healthy volunteers]. Yao xue xue bao = Acta pharmaceutica Sinica 32(6):470–472 (1997).
@@ -35,7 +35,7 @@ Ma XH, Xu Y, Liu TP. [High performance liquid chromatographic method for the det
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Ma XH, Xu Y, Liu TP. [High performance liquid chromatographic method for the det
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ipriflavone: t1/2β 12 h, AUC∞ 805 ng.h.ml-1, Frel 1 ipriflavone made in China vs that made in Japan.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mean t1/2 beta: this record has 12.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

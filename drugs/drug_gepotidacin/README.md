@@ -26,30 +26,10 @@ Gepotidacin is an antibiotic that treats urinary tract infections and uncomplica
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Al_2026_reference](drugs/drug_gepotidacin/Gepotidacin_Al2026_reference.md) | held back | 1-compartment, oral | 4 | Al Jalali V et al., Prostatic tissue distribution of gepoti…, Clinical microbiology and i… (2026) | [10.1016/j.cmi.2026.05.024](https://doi.org/10.1016/j.cmi.2026.05.024) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub> | [Al_2026_reference](drugs/drug_gepotidacin/Gepotidacin_Al2026_reference.md) | held back | 1-compartment, oral | 4 | Al Jalali V et al., Prostatic tissue distribution of gepoti…, Clinical microbiology and i… (2026) | [10.1016/j.cmi.2026.05.024](https://doi.org/10.1016/j.cmi.2026.05.024) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nguyen_2022_reference](drugs/drug_gepotidacin/Gepotidacin_Nguyen2022_reference.md) | — | 1-compartment (no model) | 0 | Nguyen D et al., Comparison between physiologically base…, British journal of clinical… (2022) | [10.1111/bcp.14996](https://doi.org/10.1111/bcp.14996) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Scangarella-Oman_2023_reference](drugs/drug_gepotidacin/Gepotidacin_ScangarellaOman2023_reference.md) | — | 1-compartment (no model) | 2 | Scangarella-Oman NE et al., Dose selection for a phase III study ev…, Sexually transmitted infect… (2023) | [10.1136/sextrans-2022-055518](https://doi.org/10.1136/sextrans-2022-055518) |
 | <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Singley_2026_reference](drugs/drug_gepotidacin/Gepotidacin_Singley2026_reference.md) | — | 1-compartment (no model) | 1 | Singley CM et al., Pharmacokinetic and pharmacodynamic cha…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01176-25](https://doi.org/10.1128/aac.01176-25) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gepotidacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | testis | `ABCG2` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCG2` substrate, `SLC47A1` inhibitor | DrugBank actor |
-| — | blood | `ACHE` inhibitor | DrugBank actor |
-| — | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: TOP2A (inhibitor), TOP2B (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -69,7 +49,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 6  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

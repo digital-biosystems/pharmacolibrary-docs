@@ -4,11 +4,11 @@
 
 # chlorhexidine — `Chlorhexidine_Xue2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-03 23:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The chlorhexidine volume of distribution of 5.0 mL is implausibly small, likely a unit extraction error.
+> Chlorhexidine's volume of distribution was extracted as 5.0 mL, an implausible magnitude causing the record's rejection.
 
-<div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Xue2009_reference" status="rejected" stale="true" population="rats" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Xue2009_reference" status="rejected" stale="false" population="rats" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xue Y, Tang M, Hieda Y, Fujihara J, Takayama K, Takatsuka H et al. High-performance liquid chromatographic determination of chlorhexidine in whole blood by solid-phase extraction and kinetics following an intravenous infusion in rats. Journal of analytical toxicology 33(2):85–91 (2009).
@@ -38,7 +38,7 @@ Xue Y, Tang M, Hieda Y, Fujihara J, Takayama K, Takatsuka H et al. High-performa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Xue Y, Tang M, Hieda Y, Fujihara J, Takayama K, Takatsuka H et al. High-performa
 
 ### Reviewer guidance
 
-**The chlorhexidine volume of distribution of 5.0 mL is implausibly small, likely a unit extraction error.**
+**Chlorhexidine's volume of distribution was extracted as 5.0 mL, an implausible magnitude causing the record's rejection.**
 
-The extracted volume of distribution (Vo) for chlorhexidine is 5.0 mL, a magnitude that fails physiological plausibility checks for this compound. Additionally, the second reader failed to identify the dose compound or primary analyte, marking them as unknown instead of chlorhexidine. Extracted — chlorhexidine: t1/2α 0.05 h, t1/2β 0.55 h, V 5 mL.
+The record lists a volume of distribution (Vo) of 5.0 mL for chlorhexidine, a value outside physiological limits for a rat. This parameter was sourced from the paper's abstract, so summary statistics stood in for a fitted model. A second reader could not identify this value in the source, highlighting the extraction error. Extracted — chlorhexidine: t1/2α 0.05 h, t1/2β 0.55 h, V 5 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vo: this record has 5.0, the second reading none. That field does not shape the model.
 

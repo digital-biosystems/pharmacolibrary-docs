@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G03A&quot;,&quot;href&quot;:&quot;atc/G03A.md&quot;},{&quot;label&quot;:&quot;ethinylestradiol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethinylestradiol_Trujillode2014_reference&quot;,&quot;label&quot;:&quot;Trujillo-de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethinylestradiol_Trujillode2014_reference&quot;,&quot;label&quot;:&quot;Trujillo-de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ethinylestradiol
 
@@ -25,7 +25,7 @@ Ethinylestradiol is a synthetic estrogen used in contraceptives, hormone therapy
 
 ## Start here
 
-> **Trujillo-de_2014_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md?tab=Simulation) · [record](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md)
+> **Trujillo-de_2014_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md?tab=Simulation) · [record](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Ethinylestradiol is a synthetic estrogen used in contraceptives, hormone therapy
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Trujillo-de_2014_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Trujillo-de Santiago G et al., Mathematical modeling of the release of…, Iranian journal of pharmace… (2014) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Trujillo-de_2014_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Trujillo-de Santiago G et al., Mathematical modeling of the release of…, Iranian journal of pharmace… (2014) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Reif_2013_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Reif2013_reference.md) | — | 1-compartment (no model) | 9 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
 
 ## Pharmacodynamics (PD)
@@ -41,27 +41,6 @@ Ethinylestradiol is a synthetic estrogen used in contraceptives, hormone therapy
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Rose_2002_Vtg](drugs/drug_ethinylestradiol/pd_Rose_2002_Vtg.md) | vitellogenin (Vtg) ← 17alpha-ethinylestradiol · categorical (graded) response model | — | Rose J et al., Vitellogenin induction by 17beta-estrad…, Comparative biochemistry an… (2002) | [10.1016/s1532-0456(02)00035-2](https://doi.org/10.1016/s1532-0456(02)00035-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ethinylestradiol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCC2` inducer/inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | brain | `COMT` substrate | DrugBank actor |
-| metabolism | kidney | `COMT` substrate, `CYP3A5` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `COMT` substrate, `CYP1A2` substrate, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLC10A1` inhibitor, `SULT1E1` substrate, `UGT1A1` inducer/substrate, `UGT1A3` unknown, `UGT1A4` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` inducer/substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `ABCC2` inducer/inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCB11` inhibitor, `ABCC2` inducer/inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ESR1 (target), NR1I2 (target), SHBG (binder), SULT1A3 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -81,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 35 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

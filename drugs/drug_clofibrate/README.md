@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;clofibrate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofibrate_wierczek2022_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofibrate_wierczek2022_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # clofibrate
 
@@ -25,31 +25,12 @@ Clofibrate is a fibrate lipid-lowering agent used to treat hypertriglyceridemia,
 | etofylline | metabolite | 224.22 | C9H12N4O3 | PubChem | [1892](https://pubchem.ncbi.nlm.nih.gov/compound/1892) | Lücker_1980 |
 | etofylline clofibrate | metabolite | 420.85 | C19H21ClN4O5 | PubChem | [41109](https://pubchem.ncbi.nlm.nih.gov/compound/41109) | Lücker_1980 |
 
-## Start here
-
-> **Świerczek_2022_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> review reference. [Run it in the simulator](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md?tab=Simulation) · [record](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Świerczek_2022_reference](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Świerczek A et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051090](https://doi.org/10.3390/pharmaceutics14051090) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Lücker_1980_reference](drugs/drug_clofibrate/Clofibrate_Lcker1980_reference.md) | — | general linear (no model) | 0 | Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Forschung (1980) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clofibrate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP2E1` inducer, `CYP3A4` inducer/substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inducer/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP4A11 (inducer), CYP4A11 (substrate), GSTA2 (inhibitor), LPL (activator), PPARA (target), SERPINA7 (inducer).</sub>
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Świerczek_2022_reference](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Świerczek A et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051090](https://doi.org/10.3390/pharmaceutics14051090) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,13 +44,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:50 | 17:12 | 1/1/0 | 0/0/0 | 0/0/0 | 269,180/15,619 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 0/7 | 8/0 | 0 |
+| 2026-10-07 11:50 | 17:12 | 0/2/0 | 0/0/0 | 0/0/0 | 269,180/15,619 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 0/7 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 99 matched, 87 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

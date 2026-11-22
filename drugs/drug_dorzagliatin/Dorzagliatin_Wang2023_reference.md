@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record held back because intercompartmental clearances k13 and k31 were not reported and library defaults were used instead of paper estimates.
+> K13, k31 use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="dorzagliatin" model-id="Dorzagliatin_Wang2023_reference" status="needs_review" stale="false" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="dorzagliatin" parameterization="apparent" topology="3C"></div>
 
@@ -56,11 +56,11 @@ Wang K, Feng L, Zhang J, Zou Q, Xu F, Sun Z et al. Population Pharmacokinetic An
 
 ### Reviewer guidance
 
-**Record held back because intercompartmental clearances k13 and k31 were not reported and library defaults were used instead of paper estimates.**
+**K13, k31 use library defaults, not estimates from this paper; t6_deviations.**
 
-The three-compartment model for dorzagliatin lacks explicit estimates for the intercompartmental clearances between the central and peripheral compartments. These missing parameters defaulted to library placeholders rather than values derived from the paper. Consequently, the simulated profile relies on unsupported assumptions for the peripheral compartment dynamics. Extracted — dorzagliatin: CL/F 10.4 L/h, V1/F 80.6 L, Q/F 3.02 L/h, V2/F 26.5 L, kabs 3.29 h−1, D1 0.418 h, CL 0.255 L/h/kg, V1 0.553 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — dorzagliatin: CL/F 10.4 L/h, V1/F 80.6 L, Q/F 3.02 L/h, V2/F 26.5 L, kabs 3.29 h−1, D1 0.418 h, CL 0.255 L/h/kg, V1 0.553 L/kg.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,7 +161,8 @@ The three-compartment model for dorzagliatin lacks explicit estimates for the in
 | T3_output_variable | pass | C_central (measured=dorzagliatin) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;indocyanine green&quot;,&quot;href&quot;:&quot;drugs/drug_indocyanine_green/&quot;},{&quot;label&quot;:&quot;Meijer_1988 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IndocyanineGreen_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indocyanine_green/IndocyanineGreen_Han2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IndocyanineGreen_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indocyanine_green/IndocyanineGreen_Han2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # indocyanine green — `IndocyanineGreen_Meijer1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:38 UTC (Rejected), but the paper was screened again on 2026-10-07 21:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Indocyanine green volume of distribution 3.01 mL and clearance 230 ml/min are physiologically implausible and dimensionally inconsistent.
+> The indocyanine green record was rejected due to a dimension mismatch on the biliary excretion rate constant and an unphysiological clearance value.
 
-<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Meijer1988_reference" status="rejected" stale="true" population="patients undergoing bile collection" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Meijer1988_reference" status="rejected" stale="false" population="patients undergoing bile collection" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Meijer DK, Weert B, Vermeer GA. Pharmacokinetics of biliary excretion in man. VI. Indocyanine green. European journal of clinical pharmacology 35(3):295–303 (1988).
@@ -40,7 +40,7 @@ Meijer DK, Weert B, Vermeer GA. Pharmacokinetics of biliary excretion in man. VI
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Meijer DK, Weert B, Vermeer GA. Pharmacokinetics of biliary excretion in man. VI
 
 ### Reviewer guidance
 
-**Indocyanine green volume of distribution 3.01 mL and clearance 230 ml/min are physiologically implausible and dimensionally inconsistent.**
+**The indocyanine green record was rejected due to a dimension mismatch on the biliary excretion rate constant and an unphysiological clearance value.**
 
-The volume of distribution of 3.01 mL is far too small for a drug, indicating a scale error. Clearance of 230 ml/min combined with this volume yields non-physiological elimination rates. The second reader noted the clearance value should be 475, highlighting extraction uncertainty in the abstract-only data. Extracted — indocyanine green: t1/2z 67.6 min, kexcr 5 min, t1/2β 73 min, tmax 1.3 h, CL 230 ml.min-1, V 3.01 mL.
+The biliary excretion rate constant is assigned units of minutes, which conflicts with its requirement for inverse time dimensions. The total clearance value of 230 mL.min-1 falls outside the physiological window, suggesting a scale error. Since the record was built from the abstract alone, these summary statistics substitute for a fitted model, and the second reader disagreed on the clearance value, citing 475 instead. Extracted — indocyanine green: t1/2z 67.6 min, kexcr 5 min, t1/2β 73 min, tmax 1.3 h, CL 230 ml.min-1, V 3.01 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance].value`: this record has 230, the second reading 475; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

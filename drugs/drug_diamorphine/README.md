@@ -33,7 +33,7 @@ Diamorphine is a morphinan opioid used to relieve severe pain during childbirth 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Cai_2025_fisher_information_matrix_estimates_stochastic_approximation](drugs/drug_diamorphine/Diamorphine_Cai2025_fisher_information_matrix_estimates_stoc.md) | — | general linear (no model) | 9 | Cai L et al., Intranasal diamorphine population pharm…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13186](https://doi.org/10.1002/psp4.13186) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ population_value_estimation_mode](drugs/drug_diamorphine/Diamorphine_Cai2025_population_value_estimation_mode.md) | — | general linear (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Rook_2006_reference](drugs/drug_diamorphine/Diamorphine_Rook2006_reference.md) | — | general linear (no model) | 4 | Rook EJ et al., Population pharmacokinetics of heroin a…, Clinical pharmacokinetics (2006) | [10.2165/00003088-200645040-00005](https://doi.org/10.2165/00003088-200645040-00005) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Rook_2006_reference](drugs/drug_diamorphine/Diamorphine_Rook2006_reference.md) | — | general linear (no model) | 4 | Rook EJ et al., Population pharmacokinetics of heroin a…, Clinical pharmacokinetics (2006) | [10.2165/00003088-200645040-00005](https://doi.org/10.2165/00003088-200645040-00005) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,19 +44,6 @@ Diamorphine is a morphinan opioid used to relieve severe pain during childbirth 
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Liu_2003_cAMP](drugs/drug_diamorphine/pd_Liu_2003_cAMP.md) | naloxone-precipitated cAMP overshoot ← heroin · model not identified | — | Liu ZH et al., Binding affinity to and dependence on s…, Acta pharmacologica Sinica (2003) | — |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [McLeod_2005_VAS](drugs/drug_diamorphine/pd_McLeod_2005_VAS.md) | Effective analgesia (VAS ≤10 mm within 30 min of epidural injection) ← diamorphine · inhibition effect | — | McLeod GA et al., Is the clinical efficacy of epidural di…, British journal of anaesthe… (2005) | [10.1093/bja/aei029](https://doi.org/10.1093/bja/aei029) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zünkler_2010_hERG](drugs/drug_diamorphine/pd_Z_nkler_2010_hERG.md) | hERG current inhibition ← heroin · direct sigmoid Emax (Hill) effect | — | Zünkler BJ et al., Comparison of the effects of methadone…, Cardiovascular toxicology (2010) | [10.1007/s12012-010-9074-y](https://doi.org/10.1007/s12012-010-9074-y) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=diamorphine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CES1` unknown | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (target), SERPINA7 (inducer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -70,13 +57,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:59 | 3:41 | 0/3/0 | 1/3/0 | 0/0/0 | 204,668/18,525 | ollama / glm-5.3-flash | 9 | 1/8 | 8/1 | 0 |
+| 2026-10-07 02:59 | 3:41 | 0/3/0 | 2/3/0 | 0/0/0 | 204,668/18,525 | ollama / glm-5.3-flash | 9 | 1/8 | 8/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 48 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

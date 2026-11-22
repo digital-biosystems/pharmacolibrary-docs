@@ -17,7 +17,7 @@ Marsot A, Imbert B, Alvarez JC, Grassin-Delyle S, Jaquet I, Lançon C et al. Hig
 
 ## Population and dosing
 
-**Population:** alcohol-dependent patients · condition alcohol dependence · age group adult · n = ?.
+**Population:** alcohol-dependent patients · condition alcohol dependence · age group adult.
 
 ## Model
 

@@ -4,11 +4,11 @@
 
 # mosunetuzumab — `Mosunetuzumab_Bender2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 17:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The transit rate constant has units of days, which is dimensionally invalid for a first-order rate constant.
+> The first-order transit rate constant (16.3 days) has incorrect units, and the intercompartmental clearance parameter has a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Bender2024_reference" status="rejected" stale="true" population="adults with relapsed/refractory B-cell non-Hodgkin lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Bender2024_reference" status="rejected" stale="false" population="adults with relapsed/refractory B-cell non-Hodgkin lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Bender B, Li CC, Marchand M, Turner DC, Li F, Vadhavkar S et al. Population pharmacokinetics and CD20 binding dynamics for mosunetuzumab in relapsed/refractory B-cell non-Hodgkin lymphoma. Clinical and translational science 17(6):e13825 (2024).
@@ -16,7 +16,7 @@ Bender B, Li CC, Marchand M, Turner DC, Li F, Vadhavkar S et al. Population phar
 
 ## Population and dosing
 
-**Population:** adults with relapsed/refractory B-cell non-Hodgkin lymphoma · condition relapsed/refractory B-cell non-Hodgkin lymphoma · age group adult · n = &gt;=439.
+**Population:** adults with relapsed/refractory B-cell non-Hodgkin lymphoma · condition relapsed/refractory B-cell non-Hodgkin lymphoma · age group adult.
 
 **Dosing:** 0.05, 0.2, 0.4, 0.8, 1.2, 1.6, 2, 2.8, 3, 4.2, 6, 9, 13.5, 20, 27, 30, 40.5, 60 mg, iv, multiple, every 21 h.
 
@@ -41,7 +41,7 @@ Bender B, Li CC, Marchand M, Turner DC, Li F, Vadhavkar S et al. Population phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.542). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.542). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Bender B, Li CC, Marchand M, Turner DC, Li F, Vadhavkar S et al. Population phar
 
 ### Reviewer guidance
 
-**The transit rate constant has units of days, which is dimensionally invalid for a first-order rate constant.**
+**The first-order transit rate constant (16.3 days) has incorrect units, and the intercompartmental clearance parameter has a dimension mismatch.**
 
-The recorded transit rate constant is 16.3 day, whereas first-order rate constants require inverse time units like 1/day. This dimensional mismatch on a structural parameter caused the model rejection. Furthermore, the extraction process failed to convert the reported units to standard SI values, preventing proper numerical evaluation. Extracted — mosunetuzumab: CLb 1.08 L/day, V1 5.49 L, CL 0.584 L/day, ktr 16.3 day, V2 6.17 L, Q 1.46 L/day.
+The record lists the transit rate constant with a unit of 'day' instead of a reciprocal time unit, causing a dimensional conflict. Additionally, the intercompartmental clearance parameter exhibits a dimension mismatch between its label and value. A second reader disputed the identification of the dose compound, flagging it as unknown instead of mosunetuzumab. Extracted — mosunetuzumab: CLb 1.08 L/day, V1 5.49 L, CL 0.584 L/day, ktr 16.3 day, V2 6.17 L, Q 1.46 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mosunetuzumab, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

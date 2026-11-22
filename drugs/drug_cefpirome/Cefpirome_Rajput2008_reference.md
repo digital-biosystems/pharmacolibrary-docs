@@ -16,7 +16,7 @@ Rajput N, Dumka VK, Sandhu HS. Influence of experimentally induced fever on the 
 
 ## Population and dosing
 
-**Population:** febrile buffalo calves · age group adult · n = &gt;.
+**Population:** febrile buffalo calves · age group adult.
 
 > **Species: cattle.** This record comes from an animal study (cattle), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 

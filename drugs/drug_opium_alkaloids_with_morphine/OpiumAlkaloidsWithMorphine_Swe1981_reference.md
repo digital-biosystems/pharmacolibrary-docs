@@ -16,7 +16,7 @@ Säwe J, Dahlström B, Paalzow L, Rane A. Morphine kinetics in cancer patients. 
 
 ## Population and dosing
 
-**Population:** adult cancer patients · condition severe chronic pain · age group adult · n = &gt;.
+**Population:** adult cancer patients · condition severe chronic pain · age group adult.
 
 ## Model
 

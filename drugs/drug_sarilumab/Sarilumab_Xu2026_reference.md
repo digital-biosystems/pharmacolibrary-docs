@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Xu_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Ma_2020_ANC&quot;,&quot;label&quot;:&quot;Ma_2020 \u00b7 ANC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/pd_Ma_2020_ANC.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sarilumab — `Sarilumab_Xu2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 00:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution of a metabolite parameter uses units of mass per time, which is dimensionally invalid.
+> The apparent metabolite volume of distribution parameter was assigned units of mg/day, causing a dimension mismatch that resulted in rejection.
 
-<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2026_reference" status="rejected" stale="true" population="patients with pcJIA and adult RA" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2026_reference" status="rejected" stale="false" population="patients with pcJIA and adult RA" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Xu C, Zhang M, Liu Y, Baret-Cormel L, De Benedetti F, Abdallah H et al. Modeling, Simulation, and Extrapolation to Optimize Pediatric Development Plan: Sarilumab Polyarticular-Course juvenile arthritis Application. Journal of pharmacokinetics and pharmacodynamics 53(3) (2026).
@@ -17,7 +16,7 @@ Xu C, Zhang M, Liu Y, Baret-Cormel L, De Benedetti F, Abdallah H et al. Modeling
 
 ## Population and dosing
 
-**Population:** patients with pcJIA and adult RA · condition juvenile idiopathic arthritis and rheumatoid arthritis · age group mixed · n = n_subjects 209.
+**Population:** patients with pcJIA and adult RA · condition juvenile idiopathic arthritis and rheumatoid arthritis · age group mixed.
 
 ## Model
 
@@ -43,7 +42,7 @@ Xu C, Zhang M, Liu Y, Baret-Cormel L, De Benedetti F, Abdallah H et al. Modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.741). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.741). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +52,9 @@ Xu C, Zhang M, Liu Y, Baret-Cormel L, De Benedetti F, Abdallah H et al. Modeling
 
 ### Reviewer guidance
 
-**The volume of distribution of a metabolite parameter uses units of mass per time, which is dimensionally invalid.**
+**The apparent metabolite volume of distribution parameter was assigned units of mg/day, causing a dimension mismatch that resulted in rejection.**
 
-The record lists the apparent volume of distribution of a metabolite as 5.63 mg/day. Volume parameters must have units of volume (such as liters), not mass per time. The model was rejected due to a dimension mismatch on this structural parameter. Extracted — sarilumab: Vm/F 5.63 mg/day, Km 0.694 mg/L, V1/F 1.54 L, kabs 0.117 day−1, Q/F 0.148 L/day, V/F 12.7 L.
+The parameter Vm/F is defined as an apparent volume of distribution, yet its value of 5.63 is reported in units of mg/day rather than a volume dimension like liters. This conflict between the parameter's pharmacokinetic meaning and its dimensional unit prevented the model from being accepted. Additionally, the second reader disagreed on the assignment of covariate effects, noting that the value 0.617 was attributed to different parameter fields in their review. Extracted — sarilumab: Vm/F 5.63 mg/day, Km 0.694 mg/L, V1/F 1.54 L, kabs 0.117 day−1, Q/F 0.148 L/day, V/F 12.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of theta_q319_wt: this record has none, the second reading 0.617; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

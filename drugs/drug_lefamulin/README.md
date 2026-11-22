@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01X&quot;,&quot;href&quot;:&quot;atc/J01X.md&quot;},{&quot;label&quot;:&quot;lefamulin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lefamulin_Hu2023_reference&quot;,&quot;label&quot;:&quot;Hu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lefamulin_Hu2023_reference&quot;,&quot;label&quot;:&quot;Hu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # lefamulin
 
@@ -25,13 +25,13 @@ It is given by mouth or as an injection into a vein. It is authorised in the Eur
 
 ## Start here
 
-> **Hu_2023_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> review reference. [Run it in the simulator](drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md?tab=Simulation) · [record](drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md)
+> **Hu_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md?tab=Simulation) · [record](drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bhavnani_2019 · CL</text><circle cx="244.6" cy="30.0" r="4" fill="#ef6c00"><title>Bhavnani_2019 · CL: 20.5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Zhang_2019 · CL</text><circle cx="400.2" cy="46.0" r="4" fill="#ef6c00"><title>Zhang_2019 · CL: 159 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Hu_2023 · CL/F</text><circle cx="254.9" cy="62.0" r="4" fill="#78909c"><title>Hu_2023 · CL/F: 23.5 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hu_2023 · V/F</text><circle cx="456.4" cy="30.0" r="4" fill="#78909c"><title>Hu_2023 · V/F: 332.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Zhang_2019 · V1</text><circle cx="316.9" cy="46.0" r="4" fill="#ef6c00"><title>Zhang_2019 · V1: 53.1 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bhavnani_2019 · CL</text><circle cx="244.6" cy="30.0" r="4" fill="#ef6c00"><title>Bhavnani_2019 · CL: 20.5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Zhang_2019 · CL</text><circle cx="400.2" cy="46.0" r="4" fill="#ef6c00"><title>Zhang_2019 · CL: 159 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Hu_2023 · CL/F</text><circle cx="254.9" cy="62.0" r="4" fill="#ef6c00"><title>Hu_2023 · CL/F: 23.5 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hu_2023 · V/F</text><circle cx="456.4" cy="30.0" r="4" fill="#ef6c00"><title>Hu_2023 · V/F: 332.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Zhang_2019 · V1</text><circle cx="316.9" cy="46.0" r="4" fill="#ef6c00"><title>Zhang_2019 · V1: 53.1 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -41,10 +41,10 @@ It is given by mouth or as an injection into a vein. It is authorised in the Eur
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Bhavnani_2019_route_of_administration](drugs/drug_lefamulin/Lefamulin_Bhavnani2019_route_of_administration.md) | — | 1-compartment (no model) | 2 | Bhavnani SM et al., Pharmacokinetic/pharmacodynamic target…, The Journal of antimicrobia… (2019) | [10.1093/jac/dkz089](https://doi.org/10.1093/jac/dkz089) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ mean_cv](drugs/drug_lefamulin/Lefamulin_Bhavnani2019_mean_cv.md) | — | 1-compartment (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Hu_2023_reference](drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Hu Y et al., Pharmacokinetic, Pharmacokinetic/Pharma…, Antibiotics (Basel, Switzer… (2023) | [10.3390/antibiotics12091391](https://doi.org/10.3390/antibiotics12091391) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49, Q95 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Zhang_2019_reference](drugs/drug_lefamulin/Lefamulin_Zhang2019_reference.md) | — | 2-compartment (no model) | 7 | Zhang L et al., Prediction of lefamulin epithelial lini…, The Journal of antimicrobia… (2019) | [10.1093/jac/dkz088](https://doi.org/10.1093/jac/dkz088) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hu_2023_reference](drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Hu Y et al., Pharmacokinetic, Pharmacokinetic/Pharma…, Antibiotics (Basel, Switzer… (2023) | [10.3390/antibiotics12091391](https://doi.org/10.3390/antibiotics12091391) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bian_2024_reference](drugs/drug_lefamulin/Lefamulin_Bian2024_reference.md) | — | 1-compartment (no model) | 0 | Bian X et al., Lefamulin dosing optimization using pop…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1456741](https://doi.org/10.3389/fphar.2024.1456741) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [van_2024_reference](drugs/drug_lefamulin/Lefamulin_van2024_reference.md) | — | 3-compartment (no model) | 8 | van Os W et al., Integrative model-based comparison of t…, International journal of an… (2024) | [10.1016/j.ijantimicag.2024.107148](https://doi.org/10.1016/j.ijantimicag.2024.107148) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [van_2024_reference](drugs/drug_lefamulin/Lefamulin_van2024_reference.md) | — | 3-compartment (no model) | 8 | van Os W et al., Integrative model-based comparison of t…, International journal of an… (2024) | [10.1016/j.ijantimicag.2024.107148](https://doi.org/10.1016/j.ijantimicag.2024.107148) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [van_2024_2_reference](drugs/drug_lefamulin/Lefamulin_van2024v2_reference.md) | — | 1-compartment (no model) | 0 | van Os W et al., Target attainment of intravenous lefamu…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkad401](https://doi.org/10.1093/jac/dkad401) |
 
 ## Pharmacodynamics (PD)
@@ -52,22 +52,6 @@ It is given by mouth or as an injection into a vein. It is authorised in the Eur
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rodvold_2019_MIC](drugs/drug_lefamulin/pd_Rodvold_2019_MIC.md) | Minimum inhibitory concentration (MIC) distribution of pathogens (S. pneumoniae, H. influenzae, M. catarrhalis, etc.) ← lefamulin · inhibition effect | — | Rodvold KA, Introduction: lefamulin and pharmacokin…, The Journal of antimicrobia… (2019) | [10.1093/jac/dkz084](https://doi.org/10.1093/jac/dkz084) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lefamulin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -87,7 +71,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 8  ·  **relevant:** 3
-- **records:** 7  ·  extracted 0  ·  needs review 2  ·  rejected 4  ·  stale 1
+- **records:** 7  ·  extracted 0  ·  needs review 3  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

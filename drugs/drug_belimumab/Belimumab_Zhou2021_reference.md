@@ -16,7 +16,7 @@ Zhou X, Lee TI, Zhu M, Ma P. Prediction of Belimumab Pharmacokinetics in Chinese
 
 ## Population and dosing
 
-**Population:** adults and pediatric patients with systemic lupus erythematosus · condition systemic lupus erythematosus · age group mixed · n = &gt;=.
+**Population:** adults and pediatric patients with systemic lupus erythematosus · condition systemic lupus erythematosus · age group mixed.
 
 **Dosing:** 700 mg, iv, multiple, every 240 h.
 

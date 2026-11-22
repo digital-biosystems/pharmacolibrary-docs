@@ -119,6 +119,7 @@ Simulated as the paper dosed it, the model's peak concentration (Cmax) differs f
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
 | T1_cmax | reference | fail | 0.0744 | 0.006172 | 0.083 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.156 | 0.006172 | 0.0396 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0681 | 0.006172 | 0.0906 | mg/L→SI vs simulated kg/m3 |

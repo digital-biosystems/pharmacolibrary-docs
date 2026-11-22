@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Mazindol's apparent clearance and volume of distribution parameters had no fitted values, so the model used placeholders and was held back.
+> Mazindol’s clearance and distribution volume were held back for absent model values; reported typical values were CL/F 27.9 L h−1 and V/F 234 L.
 
 <div class="pk-model-meta" hidden drug="mazindol" model-id="Mazindol_Konofal2014_final" status="model_quarantined" stale="false" population="children with ADHD" measured-compound="mazindol" parameterization="apparent" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Konofal E, Zhao W, Laouénan C, Lecendreux M, Kaguelidou F, Benadjaoud L et al. 
 
 ## Population and dosing
 
-**Population:** children with ADHD · condition ADHD · age group child · n = &gt;=21.
+**Population:** children with ADHD · condition ADHD · age group child.
 
 **Dosing:** 1 mg, oral, multiple, every 24 h.
 
@@ -49,13 +49,13 @@ Konofal E, Zhao W, Laouénan C, Lecendreux M, Kaguelidou F, Benadjaoud L et al. 
 
 ### Reviewer guidance
 
-**Mazindol's apparent clearance and volume of distribution parameters had no fitted values, so the model used placeholders and was held back.**
+**Mazindol’s clearance and distribution volume were held back for absent model values; reported typical values were CL/F 27.9 L h−1 and V/F 234 L.**
 
-The record lists typical values of 27.9 L h−1 and 234 L for mazindol's apparent clearance and volume of distribution, but no specific fitted estimates were extracted. As a result, the model build relied on standard library defaults instead of explicit estimates, leading to the model's quarantine. A second reader also could not confirm the identity of the dose compound or primary analyte. Extracted — mazindol: tlag 0.3 h, kabs 1.02 h−1.
+No value for mazindol's clearance and volume of distribution. The model was built, but mazindol's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The model builder also assumed F=1 and Fm=1, with no molar correction. A second reader marked the dose compound and primary analyte as unknown; the verdict was disputed, with agreement 0.75 and 0 of 1 reader agreeing. Extracted — mazindol: tlag 0.3 h, kabs 1.02 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mazindol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -140,17 +140,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 2.99 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 2.99 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 4.23 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 2.99 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 2.99 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 4.23 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

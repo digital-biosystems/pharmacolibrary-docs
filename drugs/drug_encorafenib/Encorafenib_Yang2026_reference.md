@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The encorafenib model's simulated terminal half-life of 7.76 h fails to match the reported 64.0 h, reflecting missing covariate simulations.
+> The model does not reproduce the paper's terminal half-life (paper 64, model 7.76); the covariate scenarios were not simulated.
 
 <div class="pk-model-meta" hidden drug="encorafenib" model-id="Encorafenib_Yang2026_reference" status="needs_review" stale="false" population="healthy participants and patients with melanoma, metastatic CRC, NSCLC, or other solid tumors" measured-compound="encorafenib" parameterization="apparent" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Yang DZ, Hahn EM, Piscitelli J, Pithavala YK, Hibma JE. Population Pharmacokinet
 
 ### Reviewer guidance
 
-**The encorafenib model's simulated terminal half-life of 7.76 h fails to match the reported 64.0 h, reflecting missing covariate simulations.**
+**The model does not reproduce the paper's terminal half-life (paper 64, model 7.76); the covariate scenarios were not simulated.**
 
-The simulated terminal half-life obtained 7.76 hours, which is 0.1213 times the expected 64.0 hours reported in the paper. Although the record defines an age covariate effect on clearance of -0.326 L/h, only the reference individual was simulated, leaving the covariate scenarios unexercised. The apparent clearance parameterization assumes F=1, which may contribute to the discrepancy between the modeled and reported elimination kinetics. Extracted — encorafenib: kabs 0.954 h−1, CL/F 12.2 L/h, V1/F 61.7 L, Q/F 1.04 L/h, V2/F 54.5 L, t1/2z 64.3 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — encorafenib: kabs 0.954 h−1, CL/F 12.2 L/h, V1/F 61.7 L, Q/F 1.04 L/h, V2/F 54.5 L, t1/2z 64.3 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of θage on cl/f day 1: this record has -0.326, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -185,7 +185,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=encorafenib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.882, 0 of 1 reader(s) agree | 0.882 | a second reader did not contradict the extraction |
 | T1_t_half_terminal | reference | fail | 64 | 7.764 | 0.1213 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 64 | 7.764 | 0.1213 | h→SI vs simulated h |
 

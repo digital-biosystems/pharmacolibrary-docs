@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the two-compartment structure defined an orphan peripheral compartment without a linked central compartment.
+> The umeclidinium record was rejected for an unreachable compartment; abstract-only reporting supplied CL/F 218 L/h and peripheral V2/F 1160 L instead of a fitted model.
 
 <div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Goyal2014_reference" status="rejected" stale="false" population="patients with COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 ### Reviewer guidance
 
-**The record was rejected because the two-compartment structure defined an orphan peripheral compartment without a linked central compartment.**
+**The umeclidinium record was rejected for an unreachable compartment; abstract-only reporting supplied CL/F 218 L/h and peripheral V2/F 1160 L instead of a fitted model.**
 
-The model defines a peripheral volume of 1160 L but lacks a central compartment to which the 218 L/h clearance would be attached. Additionally, the record was built from the abstract alone, so summary statistics stand in for fitted parameters. A second reader disagreed on the compound identity and could not verify the parameter values. Extracted — umeclidinium bromide: CL/F 218 L/h, V2/F 1.16e+03 L.
+An unreachable or orphan compartment has no path from the dose. Only the paper’s abstract was read, so reported summary statistics stand in for a fitted model: CL/F is total clearance after oral administration adjusted for bioavailability, and V2/F is peripheral-compartment volume adjusted for bioavailability. A second reader disagreed about the dose compound and primary analyte, identifying umeclidinium bromide rather than umeclidinium, and disputed whether the parameter values were present. Extracted — umeclidinium bromide: CL/F 218 L/h, V2/F 1.16e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium and vilanterol (inhaled), the second reading umeclidinium_bromide; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

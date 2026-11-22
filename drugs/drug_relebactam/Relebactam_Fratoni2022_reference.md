@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Relebactam&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/&quot;},{&quot;label&quot;:&quot;Fratoni_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Relebactam_Patel2022_reference&quot;,&quot;label&quot;:&quot;Patel_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Patel2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Patel2022_reference&quot;,&quot;label&quot;:&quot;Patel_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Patel2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was held back because transfer rate constants k12 and k21, present in the parameter list, were not extracted or defaulted.
+> Relebactam’s k12 (1.62 h-1) and k21 (3.53 h-1) were not covered, leaving the abstract-only model record incomplete.
 
 <div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Fratoni2022_reference" status="needs_review" stale="false" population="critically ill patients with augmented renal clearance" measured-compound="relebactam" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Fratoni AJ, Mah JW, Nicolau DP, Kuti JL. Imipenem/cilastatin/relebactam pharmaco
 
 ## Population and dosing
 
-**Population:** critically ill patients with augmented renal clearance · age group adult · n = , "condition": "augmented renal clearance", "species": "human", "compounds": [ { "name": "imipenem", "role": "parent", "dosed": "yes", "measured": "yes", "has_parameters": "yes" }, { "name": "cilastatin", "role": "co-administered", "dosed": "yes", "measured": "no", "has_parameters": "no" }, { "name": "relebactam", "role": "parent", "dosed": "yes", "measured": "yes", "has_parameters": "yes" } ], "links": "none" }.
+**Population:** critically ill patients with augmented renal clearance · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed imipenem/cilastatin/relebactam, measured relebactam.
 
@@ -52,13 +52,13 @@ Fratoni AJ, Mah JW, Nicolau DP, Kuti JL. Imipenem/cilastatin/relebactam pharmaco
 
 ### Reviewer guidance
 
-**The model was held back because transfer rate constants k12 and k21, present in the parameter list, were not extracted or defaulted.**
+**Relebactam’s k12 (1.62 h-1) and k21 (3.53 h-1) were not covered, leaving the abstract-only model record incomplete.**
 
-The record lists k12 (1.62 h-1) and k21 (3.53 h-1) as parameters, but the extraction process only covered 2 of the expected 4 parameters. Consequently, the peripheral compartment lacks defined connection to the central compartment. Additionally, the data source was abstract-only, and the second reader identified a discrepancy in the identifier for the volume parameter. Extracted — relebactam: CL 17.3 L/h, V 16.1 L, k12 1.62 h-1, k21 3.53 h-1.
+Only 2 of the 4 reported parameters were covered; the transfer rates k12 and k21 were neither emitted nor defaulted. Because only the abstract was read, its summary statistics stood in for a fitted model. A second reader disputed the compartment links and the classification of the 16.15 L volume parameter, with agreement of 0.778 and no agreeing reader. Extracted — relebactam: CL 17.3 L/h, V 16.1 L, k12 1.62 h-1, k21 3.53 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (not captured); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -129,14 +129,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=relebactam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 2 covered | neither emitted nor in defaulted[]: ['k12', 'k21'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=relebactam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

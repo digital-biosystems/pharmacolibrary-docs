@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Triamcinolone clearance of 0.0001 mL/h/kg was rejected as an implausibly low magnitude indicating a unit or scale extraction error.
+> Triamcinolone’s reported total clearance of 0.0001 mL/h/kg is an implausible magnitude, consistent with a unit/scale extraction error.
 
 <div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_Kraus2018_reference" status="rejected" stale="false" population="patients with knee osteoarthritis" measured-compound="triamcinolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -37,7 +37,7 @@ Kraus VB, Conaghan PG, Aazami HA, Mehra P, Kivitz AJ, Lufkin J et al. Synovial a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Kraus VB, Conaghan PG, Aazami HA, Mehra P, Kivitz AJ, Lufkin J et al. Synovial a
 
 ### Reviewer guidance
 
-**Triamcinolone clearance of 0.0001 mL/h/kg was rejected as an implausibly low magnitude indicating a unit or scale extraction error.**
+**Triamcinolone’s reported total clearance of 0.0001 mL/h/kg is an implausible magnitude, consistent with a unit/scale extraction error.**
 
-The recorded total clearance is 0.0001 mL/h/kg, a value far below physiological expectations for the drug. The associated volume of distribution is 0.0497 mL/kg, which does not compensate for the extreme clearance magnitude. A second reader disagreed with the extracted clearance value, further highlighting the discrepancy in the magnitude of this parameter. Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+The record reports a volume of distribution of 0.0497 mL/kg. The review found the clearance and volume outside the physiological window because of an implausible magnitude consistent with a unit/scale extraction error. Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 543, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 543, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -80,17 +80,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q17]` | 543 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q19]` | 3 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q22]` | 0.0001 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q32]` | 231 | 966.7 | mismatch |
-| `gpt-oss:120b` | `values[Q56]` | 168.0 | 7.0 | mismatch |
+| `gpt-oss-120b` | `values[Q17]` | 543 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 0.0001 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 231 | 966.7 | mismatch |
+| `gpt-oss-120b` | `values[Q56]` | 168.0 | 7.0 | mismatch |
 
 </details>
 

@@ -69,7 +69,7 @@ Chronic Oral: 0.001 mg/kg/day
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-09 13:52 | 38:05 | 1/4/0 | 3/0/0 | 0/0/0 | 792,816/39,619 | einfracz / qwen3.8-27b | 41 | 12/24 | 41/0 | 0 |
+| 2026-11-09 13:52 | 38:05 | 1/4/0 | 5/0/0 | 0/0/0 | 792,816/39,619 | einfracz / qwen3.8-27b | 41 | 12/24 | 41/0 | 0 |
 
 ## Coverage
 

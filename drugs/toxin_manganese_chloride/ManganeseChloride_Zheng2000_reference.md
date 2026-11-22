@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Manganese chloride&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/&quot;},{&quot;label&quot;:&quot;Zheng_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseChloride_Grnecker2013_reference&quot;,&quot;label&quot;:&quot;Gr\u00fcnecker_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Grnecker2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ManganeseChloride_Lewis2005_rat&quot;,&quot;label&quot;:&quot;Lewis_2005_rat&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Lewis2005_rat.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ManganeseChloride_Newland1987_reference&quot;,&quot;label&quot;:&quot;Newland_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Newland1987_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseChloride_Grnecker2013_reference&quot;,&quot;label&quot;:&quot;Gr\u00fcnecker_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Grnecker2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ManganeseChloride_Lewis2005_rat&quot;,&quot;label&quot;:&quot;Lewis_2005_rat&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Lewis2005_rat.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ManganeseChloride_Newland1987_reference&quot;,&quot;label&quot;:&quot;Newland_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_chloride/ManganeseChloride_Newland1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> CL/F for manganese was extracted as 0.09 L/h x kg, an invalid unit representing volume multiplied by mass per time, conflicting with the required volume per time dimension.
 
 <div class="pk-model-meta" hidden drug="Manganese chloride" model-id="ManganeseChloride_Zheng2000_reference" status="rejected" stale="false" population="Sprague-Dawley rats" measured-compound="Manganese" parameterization="apparent" topology="1C"></div>
 
@@ -51,7 +51,13 @@ Zheng W, Kim H, Zhao Q. Comparative toxicokinetics of manganese chloride and met
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**CL/F for manganese was extracted as 0.09 L/h x kg, an invalid unit representing volume multiplied by mass per time, conflicting with the required volume per time dimension.**
+
+The oral clearance CL/F for manganese has a unit of 'L/h x kg' with value 0.09. This unit dimension is incorrect for a clearance parameter, which must be volume per time. The error arises because the record was built from the abstract alone, using reported summary statistics rather than a fitted model. Extracted — manganese chloride: t1/2z 1.83 h, CL 0.43 L/h/kg, tmax 7.6 h, Cmax 0.93 microg/ml, CL/F 0.09 L/h x kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

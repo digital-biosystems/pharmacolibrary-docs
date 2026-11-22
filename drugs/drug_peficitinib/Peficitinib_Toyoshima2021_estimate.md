@@ -16,7 +16,7 @@ Toyoshima J, Shibata M, Kaibara A, Kaneko Y, Izutsu H, Nishimura T. Population p
 
 ## Population and dosing
 
-**Population:** patients with rheumatoid arthritis · condition rheumatoid arthritis · age group adult · n = ,1087.
+**Population:** patients with rheumatoid arthritis · condition rheumatoid arthritis · age group adult.
 
 **Dosing:** 150 mg, oral, single.
 

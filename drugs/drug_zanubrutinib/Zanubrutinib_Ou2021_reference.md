@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The zanubrutinib model failed peak time, half-life, and concentration checks due to an assumed absorption lag time and apparent parameterization.
+> The zanubrutinib model’s predicted peak concentration, time of peak, and terminal half-life all deviate substantially from the values reported in the paper.
 
 <div class="pk-model-meta" hidden drug="zanubrutinib" model-id="Zanubrutinib_Ou2021_reference" status="needs_review" stale="false" population="healthy volunteers and patients with B-cell malignancies" measured-compound="zanubrutinib" parameterization="apparent" topology="2C"></div>
 
@@ -53,9 +53,9 @@ Ou YC, Liu L, Tariq B, Wang K, Jindal A, Tang Z et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**The zanubrutinib model failed peak time, half-life, and concentration checks due to an assumed absorption lag time and apparent parameterization.**
+**The zanubrutinib model’s predicted peak concentration, time of peak, and terminal half-life all deviate substantially from the values reported in the paper.**
 
-Simulations yielded a peak time of 1.25 h, a terminal half-life of 1.71 h, and a peak concentration of 2.29e-05, all deviating significantly from the paper's reported values. The absorption lag time was not extracted from the record, so a library placeholder value was used in the model simulation. The second reader disagreed with the apparent parameterization and could not confirm the values for clearance, volumes of distribution, and the absorption rate constant. Extracted — zanubrutinib: CL/F 170 L/hour, V1/F 112 L, Q/F 26.5 L/hour, V2/F 345 L, kabs 0.526 hour -1.
+Simulation using the extracted parameters yields a peak concentration of 2.29e-05 versus the paper’s 0.000254, a time to peak of 1.25 hours versus 2.0 hours, and a terminal half-life of 1.71 hours versus 3.44 hours. A second reader disagreed with the apparent parameterization and failed to identify the extracted clearance and volume parameters. The review consequently marked the record for further review due to these significant mismatches in pharmacokinetic metrics. Extracted — zanubrutinib: CL/F 170 L/hour, V1/F 112 L, Q/F 26.5 L/hour, V2/F 345 L, kabs 0.526 hour -1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -154,7 +154,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=zanubrutinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.000254 | 2.293e-05 | 0.0903 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped |  | 2.293e-05 |  | non-numeric value |
 | T1_cmax | reference | skipped | 26.8 | 2.293e-05 |  | unresolved concentration unit (exp '% higher', sim 'kg/m3') |

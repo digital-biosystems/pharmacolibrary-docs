@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ustekinumab&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/&quot;},{&quot;label&quot;:&quot;Aguiar_2021 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ustekinumab_Adedokun2022_reference&quot;,&quot;label&quot;:&quot;Adedokun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_Lam2026_reference&quot;,&quot;label&quot;:&quot;Lam_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Lam2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ustekinumab_Adedokun2022_reference&quot;,&quot;label&quot;:&quot;Adedokun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_Lam2026_reference&quot;,&quot;label&quot;:&quot;Lam_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Lam2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ustekinumab — `Ustekinumab_Aguiar2021_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 01:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The ustekinumab record was rejected because the albumin covariate effect on intercompartmental clearance lacked a valid pharmacokinetic unit for dimension checking.
+> The equilibrium dissociation constant for ustekinumab-target binding (0.168 nmol/L) uses a molar unit that the model engine cannot convert to mass-based SI units, causing rejection.
 
-<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Aguiar2021_final" status="rejected" stale="true" population="patients with Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Aguiar2021_final" status="rejected" stale="false" population="patients with Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Aguiar Zdovc J, Hanžel J, Kurent T, Sever N, Koželj M, Smrekar N et al. Ustekinumab Dosing Individualization in Crohn's Disease Guided by a Population Pharmacokinetic-Pharmacodynamic Model. Pharmaceutics 13(10) (2021).
@@ -45,7 +45,7 @@ Aguiar Zdovc J, Hanžel J, Kurent T, Sever N, Koželj M, Smrekar N et al. Usteki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Aguiar Zdovc J, Hanžel J, Kurent T, Sever N, Koželj M, Smrekar N et al. Usteki
 
 ### Reviewer guidance
 
-**The ustekinumab record was rejected because the albumin covariate effect on intercompartmental clearance lacked a valid pharmacokinetic unit for dimension checking.**
+**The equilibrium dissociation constant for ustekinumab-target binding (0.168 nmol/L) uses a molar unit that the model engine cannot convert to mass-based SI units, causing rejection.**
 
-The albumin covariate on intercompartmental clearance was extracted with a value of -0.0165, but its unit could not be interpreted as a valid pharmacokinetic quantity, causing a dimension mismatch error. The second reader disagreed on parameter assignment, suggesting the -0.0165 value belonged to the clearance-albumin interaction rather than the intercompartmental clearance-albumin interaction. Extracted — ustekinumab: kabs 0.381 day−1, CL 0.277, FG 0.598, V1 3.57, Q 1.89 L/day, V2 3.3, V 0.586, KD 0.168 nmol/L.
+The recorded unit for the dissociation constant is nmol/L, which represents molar concentration, but the model validation requires mass per volume. This conflict prevented the parameter from being converted to a compatible SI value, resulting in the record being held back. Additionally, a second reader disagreed with the extracted covariate assignments for albumin on clearance and gut-wall bioavailability, noting discrepancies in the associated covariate effects. Extracted — ustekinumab: kabs 0.381 day−1, CL 0.277, FG 0.598, V1 3.57, Q 1.89 L/day, V2 3.3, V 0.586, KD 0.168 nmol/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl (l/day) a].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

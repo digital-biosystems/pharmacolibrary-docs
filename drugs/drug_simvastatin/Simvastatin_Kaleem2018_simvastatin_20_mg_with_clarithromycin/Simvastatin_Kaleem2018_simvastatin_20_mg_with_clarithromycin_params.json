@@ -15,8 +15,24 @@
  "paper_reference": {
   "cmax": [
    {
-    "source": "Kaleem_2018:other_prose",
+    "source": "Kaleem_2018:discussion_prose",
+    "value_si": 2.3
+   },
+   {
+    "source": "Kaleem_2018:discussion_prose",
+    "value_si": 2.47
+   },
+   {
+    "source": "Kaleem_2018:discussion_prose",
     "value_si": 5.66
+   },
+   {
+    "source": "Kaleem_2018:discussion_prose",
+    "value_si": 23.4
+   },
+   {
+    "source": "Kaleem_2018:discussion_prose",
+    "value_si": 4.16
    }
   ]
  },

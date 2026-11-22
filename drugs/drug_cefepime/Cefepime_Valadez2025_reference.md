@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefepime&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/&quot;},{&quot;label&quot;:&quot;Valadez_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefepime_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/Cefepime_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefepime_Valadez2025_reference&quot;,&quot;label&quot;:&quot;Valadez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/Cefepime_Valadez2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefepime_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/Cefepime_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefepime_Valadez2025_reference&quot;,&quot;label&quot;:&quot;Valadez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefepime/Cefepime_Valadez2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefepime — `Cefepime_Valadez2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="cefepime" model-id="Cefepime_Valadez2025_reference" status="simulated" stale="false" population="" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></div>
+> The record was held back because a second reader disputed the extracted cefepime clearance value of 3.12 L/h, disagreeing with the recorded value.
+
+<div class="pk-model-meta" hidden drug="cefepime" model-id="Cefepime_Valadez2025_reference" status="needs_review" stale="false" population="" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Valadez A, Zurawska M, Harlan E, Scheetz MH, Neely MN, Yarnold PR et al. Individual target pharmacokinetic/pharmacodynamic attainment rates among cefepime-treated patients admitted to the ICU with hospital-acquired pneumonia with and without ECMO. Antimicrobial agents and chemotherapy 69(6):e0010225 (2025).
@@ -27,6 +29,8 @@ Valadez A, Zurawska M, Harlan E, Scheetz MH, Neely MN, Yarnold PR et al. Individ
 <figure class="pk-models-diagram"><img src="drugs/drug_cefepime/Cefepime_Valadez2025_reference/Cefepime_Valadez2025_reference.svg" alt="Cefepime_Valadez2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL of patients not receiving ECMO | CL | 3.12 | L/h |
@@ -34,7 +38,7 @@ Valadez A, Zurawska M, Harlan E, Scheetz MH, Neely MN, Yarnold PR et al. Individ
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Valadez A, Zurawska M, Harlan E, Scheetz MH, Neely MN, Yarnold PR et al. Individ
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held back because a second reader disputed the extracted cefepime clearance value of 3.12 L/h, disagreeing with the recorded value.**
+
+The primary extraction lists a total clearance of 3.12 L/h for patients not on ECMO. A second reviewer provided a conflicting clearance value of 4.6 L/h, indicating a discrepancy in the data interpretation. Additionally, the reviewers disagreed on the volume of distribution, with one citing 115 L and the other finding no value. The low agreement score of 0.571 confirms the lack of consensus on these parameters. Extracted — cefepime: CL 3.12 L/h, V 23 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 3.12, the second reading 4.6; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -109,14 +115,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cefepime) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cefepime) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

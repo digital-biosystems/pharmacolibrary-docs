@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;molnupiravir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Molnupiravir_Bihorel2023_reference&quot;,&quot;label&quot;:&quot;Bihorel_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Molnupiravir_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Molnupiravir_Gouda2022_reference&quot;,&quot;label&quot;:&quot;Gouda_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Gouda2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Molnupiravir_Bihorel2023_reference&quot;,&quot;label&quot;:&quot;Bihorel_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Molnupiravir_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # molnupiravir
 
@@ -28,7 +28,7 @@ Molnupiravir is an antiviral medication used to treat severe respiratory illness
 
 ## Start here
 
-> **Bihorel_2023_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adults with COVID-19 and healthy participants, n = 1207. [Run it in the simulator](drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md?tab=Simulation) · [record](drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md)
+> **Bihorel_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with COVID-19 and healthy participants, n = 1207. [Run it in the simulator](drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md?tab=Simulation) · [record](drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -36,23 +36,15 @@ Molnupiravir is an antiviral medication used to treat severe respiratory illness
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Bihorel_2023_reference](drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 (+5 cov.) | Bihorel S et al., Population pharmacokinetics of molnupir…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13031](https://doi.org/10.1002/psp4.13031) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Lv_2025_reference](drugs/drug_molnupiravir/Molnupiravir_Lv2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025) | [10.2147/DDDT.S517282](https://doi.org/10.2147/DDDT.S517282) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Gouda_2022_reference](drugs/drug_molnupiravir/Molnupiravir_Gouda2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Gouda AS et al., A validated LC-MS/MS method for determi…, Journal of chromatography.… (2022) | [10.1016/j.jchromb.2022.123363](https://doi.org/10.1016/j.jchromb.2022.123363) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Bihorel_2023_reference](drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 (+5 cov.) | Bihorel S et al., Population pharmacokinetics of molnupir…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13031](https://doi.org/10.1002/psp4.13031) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Gouda_2022_reference](drugs/drug_molnupiravir/Molnupiravir_Gouda2022_reference.md) | — | 1-compartment (no model) | 5 | Gouda AS et al., A validated LC-MS/MS method for determi…, Journal of chromatography.… (2022) | [10.1016/j.jchromb.2022.123363](https://doi.org/10.1016/j.jchromb.2022.123363) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Lv_2025_reference](drugs/drug_molnupiravir/Molnupiravir_Lv2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025) | [10.2147/DDDT.S517282](https://doi.org/10.2147/DDDT.S517282) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Chawla_2023_hospitalization](drugs/drug_molnupiravir/pd_Chawla_2023_hospitalization.md) | hospitalization (COVID-19 clinical outcome) ← β-D-N4-hydroxycytidine (NHC) · direct Emax (saturable) effect | — | Chawla A et al., Factors Influencing COVID-19 Risk: Insi…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2895](https://doi.org/10.1002/cpt.2895) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=molnupiravir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,13 +58,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:19 | 6:09 | 3/0/0 | 0/1/0 | 0/0/0 | 300,657/20,288 | ollama / glm-5.3-flash | 10 | 0/10 | 10/0 | 0 |
+| 2026-10-07 17:19 | 6:09 | 2/1/0 | 0/1/0 | 0/0/0 | 300,657/20,288 | ollama / glm-5.3-flash | 10 | 0/10 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 34 matched, 13 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 2  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;alfaxalone&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/&quot;},{&quot;label&quot;:&quot;Goodchild_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alfaxalone_Goodchild2020_reference&quot;,&quot;label&quot;:&quot;Goodchild_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_Goodchild2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Alfaxalone_White2022_adjusted_typical_values&quot;,&quot;label&quot;:&quot;White_2022_adjusted_typical_values&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_adjusted_typical_values.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_adjusted_typical_values_a&quot;,&quot;label&quot;:&quot;White_2022_adjusted_typical_values_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_adjusted_typical_values_a.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_Shippy2023_reference&quot;,&quot;label&quot;:&quot;Shippy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_Shippy2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_female&quot;,&quot;label&quot;:&quot;White_2022_female&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_female.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_p_value&quot;,&quot;label&quot;:&quot;White_2022_p_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_p_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Goodchild_2020_BIS&quot;,&quot;label&quot;:&quot;Goodchild_2020 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/pd_Goodchild_2020_BIS.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alfaxalone_Shippy2023_reference&quot;,&quot;label&quot;:&quot;Shippy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_Shippy2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_adjusted_typical_values&quot;,&quot;label&quot;:&quot;White_2022_adjusted_typical_values&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_adjusted_typical_values.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_adjusted_typical_values_a&quot;,&quot;label&quot;:&quot;White_2022_adjusted_typical_values_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_adjusted_typical_values_a.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_female&quot;,&quot;label&quot;:&quot;White_2022_female&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_female.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_p_value&quot;,&quot;label&quot;:&quot;White_2022_p_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_p_value.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_Goodchild2020_reference&quot;,&quot;label&quot;:&quot;Goodchild_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_Goodchild2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Goodchild_2020_BIS&quot;,&quot;label&quot;:&quot;Goodchild_2020 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/pd_Goodchild_2020_BIS.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # alfaxalone — `Alfaxalone_Goodchild2020_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="alfaxalone" model-id="Alfaxalone_Goodchild2020_reference" status="simulated" stale="false" population="healthy male volunteers" measured-compound="alfaxalone" parameterization="mechanistic" topology="2C"></div>
+> The alfaxalone record was refused because cross-check agreement was 0.467, below the 0.5 threshold, due to parameter mismatches.
+
+<div class="pk-model-meta" hidden drug="alfaxalone" model-id="Alfaxalone_Goodchild2020_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="alfaxalone" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Goodchild CS, Serrao JM, Sear JW, Anderson BJ. Pharmacokinetic and Pharmacodynamic Analysis of Alfaxalone Administered as a Bolus Intravenous Injection of Phaxan in a Phase 1 Randomized Trial. Anesthesia and analgesia 130(3):704–714 (2020).
@@ -15,7 +17,7 @@ Goodchild CS, Serrao JM, Sear JW, Anderson BJ. Pharmacokinetic and Pharmacodynam
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = &gt;= 12.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Goodchild CS, Serrao JM, Sear JW, Anderson BJ. Pharmacokinetic and Pharmacodynam
 <figure class="pk-models-diagram"><img src="drugs/drug_alfaxalone/Alfaxalone_Goodchild2020_reference/Alfaxalone_Goodchild2020_reference.svg" alt="Alfaxalone_Goodchild2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 1.08 | L/min |
@@ -43,7 +47,7 @@ Goodchild CS, Serrao JM, Sear JW, Anderson BJ. Pharmacokinetic and Pharmacodynam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.467). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.467). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +57,13 @@ Goodchild CS, Serrao JM, Sear JW, Anderson BJ. Pharmacokinetic and Pharmacodynam
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The alfaxalone record was refused because cross-check agreement was 0.467, below the 0.5 threshold, due to parameter mismatches.**
 
-The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The second reader disagreed with the recorded values for central volume (0.99 L) and intercompartmental clearance (0.87 L/min), recording nulls instead. The agreement ratio of 0.467 falls below the required 0.5, resulting in a partial verdict. Additionally, the model was built from the abstract alone, so summary statistics replaced fitted parameters. Extracted — alfaxalone: CL 1.08 L/min, V1 0.99 L, Q2 0.87 L/min, Q3 0.46 L/min, V2 6.36 L, V3 19.1 L, tmax 0.94 minutes.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central volume of distribution: this record has 0.99, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -144,14 +148,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=alfaxalone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=alfaxalone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.467, 0 of 1 reader(s) agree | 0.467 | cross-check agreement 0.467 is below 0.5: verdict partial, agreement 0.467, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

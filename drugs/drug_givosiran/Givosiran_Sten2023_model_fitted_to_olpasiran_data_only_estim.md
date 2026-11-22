@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> Givosiran lacks estimates for clearance, volume, lag time, and rate constant, so placeholder values were used and the model was withheld.
+> Givosiran parameters were missing because all extracted values describe olpasiran, leaving key kinetics to default placeholders.
 
 <div class="pk-model-meta" hidden drug="givosiran" model-id="Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim" status="model_quarantined" stale="false" population="adults with acute intermittent porphyria" measured-compound="givosiran" parameterization="apparent" topology="2C"></div>
 
@@ -54,9 +54,9 @@ Sten S, Cardilin T, Antonsson M, Gennemark P. Plasma Pharmacokinetics of N-Acety
 
 ### Reviewer guidance
 
-**Givosiran lacks estimates for clearance, volume, lag time, and rate constant, so placeholder values were used and the model was withheld.**
+**Givosiran parameters were missing because all extracted values describe olpasiran, leaving key kinetics to default placeholders.**
 
-All extracted parameters, including clearance 27.7 L/h and volume 27.9 L, are attributed to olpasiran, not the study drug givosiran. Consequently, givosiran-specific values for clearance, volume of distribution, absorption lag time, and the central-to-peripheral rate constant were missing. These were left without explicit estimates, causing the model to be held back. A second reader also disagreed on the model links and several parameter values, noting a missing metabolic step for givosiran. Extracted — olpasiran: kabs 0.635 1/h, V1/F 27.9 L, V2/F 1.47e+03 L, V3/F 296 L, CL/F 27.7 L/h, Q/F 2.62 L/h.
+The record lists six parameters (e.g., CL/F 27.7 L/h) explicitly assigned to olpasiran, not the drug givosiran. Consequently, givosiran’s clearance, volume, lag time, and rate constant had no values, requiring defaults. A second reader also disputed the model structure and suggested different parameter estimates. Extracted — olpasiran: kabs 0.635 1/h, V1/F 27.9 L, V2/F 1.47e+03 L, V3/F 296 L, CL/F 27.7 L/h, Q/F 2.62 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading givosiran → as(n-1)3’ givosiran (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -148,15 +148,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.188, 0 of 1 reader(s) agree | 0.188 | cross-check disputed by a second reader: verdict disputed, agreement 0.188, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -174,30 +175,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab_simbio.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_sbml.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_cellml.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Sten S, Cardilin T, Antonsson M, Gennemark P. Plasma Pharmacokinetics of N-Acetylgalactosamine-Conjugated Small-Interfering Ribonucleic Acids (GalNAc-Conjugated siRNAs). Clinical pharmacokinetics 62(12):1661-1672 (2023). [doi:10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7)
-
-**This record:** Pharmacolibrary, model `Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim`. <https://pharmacolibrary.github.io/#/drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim>
-
-```bibtex
-@misc{pharmacolibrary_GivosiranSten2023modelfittedtoolpasirandataonlyestim,
-  title  = {{Pharmacolibrary model Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim},
-  note   = {Parameters from doi:10.1007/s40262-023-01314-7},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

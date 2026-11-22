@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Durlobactam&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/&quot;},{&quot;label&quot;:&quot;Onita_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durlobactam_Onita2026_reference&quot;,&quot;label&quot;:&quot;Onita_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durlobactam_Onita2026_reference&quot;,&quot;label&quot;:&quot;Onita_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Durlobactam — `Durlobactam_Onita2026_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="Durlobactam" model-id="Durlobactam_Onita2026_reference" status="simulated" stale="false" population="" measured-compound="durlobactam" parameterization="mechanistic" topology="2C"></div>
+> The extracted durlobactam clearance and volume parameters are invalid because the source paper describes sulbactam pharmacokinetics, not durlobactam.
+
+<div class="pk-model-meta" hidden drug="Durlobactam" model-id="Durlobactam_Onita2026_reference" status="rejected" stale="false" population="" measured-compound="durlobactam" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation of Sulbactam: Dosing Considerations for Acinetobacter baumannii Meningitis in Pediatric Patients. Journal of the Pediatric Infectious Diseases Society 15(4):piag017 (2026).
@@ -27,6 +29,8 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 <figure class="pk-models-diagram"><img src="drugs/drug_durlobactam/Durlobactam_Onita2026_reference/Durlobactam_Onita2026_reference.svg" alt="Durlobactam_Onita2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 7.65 | L/h |
@@ -36,7 +40,7 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +50,11 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The extracted durlobactam clearance and volume parameters are invalid because the source paper describes sulbactam pharmacokinetics, not durlobactam.**
 
-<sub>reviewed by rule template (no LLM)</sub>
+The source paper explicitly reports parameters for sulbactam, treating durlobactam only as a co-administered agent. Consequently, the recorded values for total clearance (7.65 L/h) and central volume (4.75 L) do not represent the intended molecule. The identity check failed because the study's primary subject was the wrong compound. Extracted — durlobactam: CL 7.65 L/h, V1 4.75 L, V2 4.88 L, Q 3.03 L/h.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -93,12 +99,13 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 | check | status | expected | obtained | note |
 |---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | durlobactam (or metabolite) | paper about another drug | paper subject is not durlobactam: the paper is about another drug; this one is a co-medication or covariate: The study reports pharmacokinetic parameters for sulbactam, not durlobactam, which is only mentioned as a co-administered agent in the introduction. |
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=durlobactam) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -110,61 +117,9 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_durlobactam/Durlobactam_Onita2026_reference/Durlobactam_Onita2026_reference_modelica.zip" download>Durlobactam_Onita2026_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_durlobactam/Durlobactam_Onita2026_reference/Durlobactam_Onita2026_reference_fmi.zip" download>Durlobactam_Onita2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_durlobactam/Durlobactam_Onita2026_reference/Durlobactam_Onita2026_reference_matlab.zip" download>Durlobactam_Onita2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_durlobactam/Durlobactam_Onita2026_reference/Durlobactam_Onita2026_reference_matlab_simbio.zip" download>Durlobactam_Onita2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_durlobactam/Durlobactam_Onita2026_reference/Durlobactam_Onita2026_reference_sbml.zip" download>Durlobactam_Onita2026_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_durlobactam/Durlobactam_Onita2026_reference/Durlobactam_Onita2026_reference_cellml.zip" download>Durlobactam_Onita2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2772 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 2.125e-06 | m3/s |
-| input | model | `VdPerKg` | 6.786e-05 | m3/kg |
-| input | model | `k12` | 0.0001772 | 1/s |
-| input | model | `k21` | 0.0001725 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation of Sulbactam: Dosing Considerations for Acinetobacter baumannii Meningitis in Pediatric Patients. Journal of the Pediatric Infectious Diseases Society 15(4):piag017 (2026). [doi:10.1093/jpids/piag017](https://doi.org/10.1093/jpids/piag017)
-
-**This record:** Pharmacolibrary, model `Durlobactam_Onita2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_durlobactam/Durlobactam_Onita2026_reference>
-
-```bibtex
-@misc{pharmacolibrary_DurlobactamOnita2026reference,
-  title  = {{Pharmacolibrary model Durlobactam_Onita2026_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_durlobactam/Durlobactam_Onita2026_reference},
-  note   = {Parameters from doi:10.1093/jpids/piag017},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

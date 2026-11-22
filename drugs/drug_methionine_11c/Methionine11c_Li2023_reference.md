@@ -16,7 +16,7 @@ Li J, Ni B, Yu X, Wang C, Li L, Zhou Y et al. Metabolic kinetic modeling of [. E
 
 ## Population and dosing
 
-**Population:** adults with multiple myeloma and healthy controls · condition multiple myeloma · age group adult · n = &gt;=12.
+**Population:** adults with multiple myeloma and healthy controls · condition multiple myeloma · age group adult.
 
 ## Model
 

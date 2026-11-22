@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ciclesonide clearance, volume, and absorption parameters lacked values, forcing model quarantine due to unidentifiable absorption mechanics in this abstract-only record.
+> The ciclesonide model lacks clearance, volume, and absorption parameters, using library placeholders that prevented publication.
 
 <div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Rohatagi2005_reference" status="model_quarantined" stale="false" population="adults and children with asthma (phase I and III studies)" measured-compound="des-CIC" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -48,9 +48,9 @@ Rohatagi S, Krishnaswami S, Pfister M, Sahasranaman S. Model-based covariate pha
 
 ### Reviewer guidance
 
-**Ciclesonide clearance, volume, and absorption parameters lacked values, forcing model quarantine due to unidentifiable absorption mechanics in this abstract-only record.**
+**The ciclesonide model lacks clearance, volume, and absorption parameters, using library placeholders that prevented publication.**
 
-The record provides no explicit values for ciclesonide's clearance, volume of distribution, or absorption rate and lag time. Consequently, these parameters defaulted to placeholders, preventing a valid estimation of the absorption phase. The record also relied on summary statistics from the abstract rather than a fitted model, leading to the quarantine verdict. Extracted — ciclesonide: CLm/F 302 L/h, Vm/F 1.31e+03 L.
+Ciclesonide's apparent clearance (302 L/h) and volume (1310 L) are attributed to the metabolite des-CIC, while the parent drug's specific parameters were left undefined. The model builder substituted default values for the parent's clearance, volume, absorption rate, and lag time because these were not explicitly estimated. A second reader also disputed the model structure and could not identify the primary analyte, confirming the record's inconclusive nature. Extracted — ciclesonide: CLm/F 302 L/h, Vm/F 1.31e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ciclesonide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -129,14 +129,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.111, 0 of 1 reader(s) agree | 0.111 | cross-check disputed by a second reader: verdict disputed, agreement 0.111, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

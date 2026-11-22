@@ -16,7 +16,7 @@ Tang F, Langenhorst J, Dang S, Kassir N, Owen R, Purdon B et al. Population Phar
 
 ## Population and dosing
 
-**Population:** patients with acute myocardial infarction · condition acute myocardial infarction · age group adult · n = &gt;=103.
+**Population:** patients with acute myocardial infarction · condition acute myocardial infarction · age group adult.
 
 **Dosing:** 30, 40, 50 mg, iv, single.
 

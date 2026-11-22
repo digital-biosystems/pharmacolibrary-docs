@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a model where isoflurane concentrations inhibit the binary response of somatic movement, although the specific mechanistic form (e.g., Emax, Hill) is not detailed in the provided excerpts. The model reports potency values of EC50 = 1.00 % and EC95 = 2.16 %.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Mather_1992`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

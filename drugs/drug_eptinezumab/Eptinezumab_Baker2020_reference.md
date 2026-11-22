@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;eptinezumab&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/&quot;},{&quot;label&quot;:&quot;Baker_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eptinezumab_Baker2020_reference&quot;,&quot;label&quot;:&quot;Baker_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eptinezumab_Baker2020_reference&quot;,&quot;label&quot;:&quot;Baker_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # eptinezumab — `Eptinezumab_Baker2020_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="eptinezumab" model-id="Eptinezumab_Baker2020_reference" status="simulated" stale="false" population="patients with episodic or chronic migraine" measured-compound="eptinezumab" parameterization="mechanistic" topology="1C"></div>
+> The record was held back because a second reader disputed the extraction of eptinezumab clearance 0.0062 L/h and other pharmacokinetic values.
+
+<div class="pk-model-meta" hidden drug="eptinezumab" model-id="Eptinezumab_Baker2020_reference" status="needs_review" stale="false" population="patients with episodic or chronic migraine" measured-compound="eptinezumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Baker B, Schaeffler B, Beliveau M, Rubets I, Pederson S, Trinh M et al. Population pharmacokinetic and exposure-response analysis of eptinezumab in the treatment of episodic and chronic migraine. Pharmacology research & perspectives 8(2):e00567 (2020).
@@ -15,22 +17,7 @@ Baker B, Schaeffler B, Beliveau M, Rubets I, Pederson S, Trinh M et al. Populati
 
 ## Population and dosing
 
-**Population:** patients with episodic or chronic migraine · age group adult · n = ,
-    "condition": "episodic or chronic migraine",
-    "species": "human",
-    "compounds": [
-      {
-        "name": "eptinezumab",
-        "role": "parent",
-        "dosed": "yes",
-        "measured": "yes",
-        "has_parameters": "yes"
-      }
-    ],
-    "links": "none"
-  },
-  "links": []
-}.
+**Population:** patients with episodic or chronic migraine · age group adult.
 
 **Dosing:** 10, 1000 mg, iv, multiple, every 84 h.
 
@@ -44,6 +31,8 @@ Baker B, Schaeffler B, Beliveau M, Rubets I, Pederson S, Trinh M et al. Populati
 <figure class="pk-models-diagram"><img src="drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference/Eptinezumab_Baker2020_reference.svg" alt="Eptinezumab_Baker2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | AUC0‐12wk, mean (CV%), h·μg mL−1 | AUCt | 158 | h·μg mL−1 |
@@ -56,7 +45,7 @@ Baker B, Schaeffler B, Beliveau M, Rubets I, Pederson S, Trinh M et al. Populati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,13 +55,13 @@ Baker B, Schaeffler B, Beliveau M, Rubets I, Pederson S, Trinh M et al. Populati
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held back because a second reader disputed the extraction of eptinezumab clearance 0.0062 L/h and other pharmacokinetic values.**
 
-A reported unit could not be converted (AUCt, Cmax, Cavg and Ctrough), so that value has no SI equivalent.
+The initial reviewer extracted clearance as 0.0062 L/h, central volume of distribution as 3.64 L, and AUC0-12wk as 158 h·μg/mL. A second reader marked all these parameters as null, disagreeing with their extraction. Furthermore, the second reader was unable to identify the dose compound and primary analyte, marking both as unknown. Extracted — eptinezumab: AUCt 158 h·μg mL−1, Cmax 0.279 μg mL−1, Cavg 0.0785 μg mL−1, Ctrough 0.0232 μg mL−1, Css 0.091 μg mL−1, CL 0.0062 L h−1, V 3.64 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eptinezumab, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -183,21 +172,22 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=eptinezumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 37.3 | 0.002747 | unresolved concentration unit (exp 'μg mL−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 114 | 0.002747 | unresolved concentration unit (exp 'μg mL−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 30 | 0.002747 | unresolved concentration unit (exp 'minutes', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 60 | 0.002747 | unresolved concentration unit (exp 'minutes', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 0.002747 | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.002747 | non-numeric value |
-| T1_cmin_ss | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=eptinezumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 37.3 | 0.002747 |  | unresolved concentration unit (exp 'μg mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 114 | 0.002747 |  | unresolved concentration unit (exp 'μg mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 30 | 0.002747 |  | unresolved concentration unit (exp 'minutes', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 60 | 0.002747 |  | unresolved concentration unit (exp 'minutes', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.002747 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.002747 |  | non-numeric value |
+| T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

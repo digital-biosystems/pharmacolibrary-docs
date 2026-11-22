@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Potassium canrenoate absorption rate constant lacks a value, forcing library defaults that invalidate the canrenone half-life (19.99 h).
+> Potassium canrenoate record was held back because absorption rate constants were not reported, and apparent metabolite clearance of 1.11 l/h was disputed.
 
 <div class="pk-model-meta" hidden drug="potassium canrenoate" model-id="PotassiumCanrenoate_Suyagh2013_reference" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Potassium
 
 ### Reviewer guidance
 
-**Potassium canrenoate absorption rate constant lacks a value, forcing library defaults that invalidate the canrenone half-life (19.99 h).**
+**Potassium canrenoate record was held back because absorption rate constants were not reported, and apparent metabolite clearance of 1.11 l/h was disputed.**
 
-Abstract-only data provided summary statistics like clearance (1.11 l/h) and volume (20.48 l) but no fitted model. The absorption rate constant and lag time were never estimated, so generic placeholder values were used. These unverified assumptions mean the calculated half-life does not reflect the actual drug's absorption kinetics. Extracted — canrenone: CLm/F 1.11 l/h, Vm/F 20.5 l, t1/2z 20 h.
+The record was built from the abstract only, so reported summary statistics stood in for a fitted model, and absorption rate constants were assigned arbitrary default values rather than estimated from the paper. The apparent clearance of canrenone (1.11 l/h) and its volume of distribution (20.48 l) were flagged as deviations because they rely on apparent parameterization assumptions (F=1, Fm=1) without explicit estimates. A second reader disputed the identification of the dose compound as potassium canrenoate and the assignment of the clearance and half-life values to specific parameter types, resulting in zero agreement. Extracted — canrenone: CLm/F 1.11 l/h, Vm/F 20.5 l, t1/2z 20 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium canrenoate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -136,15 +136,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=canrenone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=defaulted_parameters: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=canrenone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.3, 0 of 1 reader(s) agree | 0.3 | cross-check disputed by a second reader: verdict disputed, agreement 0.3, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;colistin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colistin_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/Colistin_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colistin_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/Colistin_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # colistin
 
@@ -25,7 +25,7 @@ Colistin is a polymyxin antibiotic used to treat serious, multidrug-resistant Gr
 
 ## Start here
 
-> **Ma_2026_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> critically ill patients with CRO infections, n = &gt;=51. [Run it in the simulator](drugs/drug_colistin/Colistin_Ma2026_reference.md?tab=Simulation) · [record](drugs/drug_colistin/Colistin_Ma2026_reference.md)
+> **Ma_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> critically ill patients with CRO infections. [Run it in the simulator](drugs/drug_colistin/Colistin_Ma2026_reference.md?tab=Simulation) · [record](drugs/drug_colistin/Colistin_Ma2026_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,18 +33,10 @@ Colistin is a polymyxin antibiotic used to treat serious, multidrug-resistant Gr
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Ma_2026_reference](drugs/drug_colistin/Colistin_Ma2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ma Y et al., Optimizing Colistin Sulfate Dosing in S…, Drug design, development an… (2026) | [10.2147/DDDT.S600942](https://doi.org/10.2147/DDDT.S600942) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Ma_2026_reference](drugs/drug_colistin/Colistin_Ma2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ma Y et al., Optimizing Colistin Sulfate Dosing in S…, Drug design, development an… (2026) | [10.2147/DDDT.S600942](https://doi.org/10.2147/DDDT.S600942) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C2_reference failed (ratio None)</sub> | [Yu_2022_reference](drugs/drug_colistin/Colistin_Yu2022_reference.md) | — | 1-compartment (no model) | 1 (+1 cov.) | Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.915958](https://doi.org/10.3389/fphar.2022.915958) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Boonyasiri_2025_reference](drugs/drug_colistin/Colistin_Boonyasiri2025_reference.md) | — | 1-compartment (no model) | 0 | Boonyasiri A et al., Disposition of colistin in critically-i…, Clinical microbiology and i… (2025) | [10.1016/j.cmi.2025.05.021](https://doi.org/10.1016/j.cmi.2025.05.021) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Xie_2022_reference](drugs/drug_colistin/Colistin_Xie2022_reference.md) | — | 2-compartment (no model) | 3 | Xie YL et al., Population pharmacokinetics of intraven…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.967412](https://doi.org/10.3389/fphar.2022.967412) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=colistin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,7 +56,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 142 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

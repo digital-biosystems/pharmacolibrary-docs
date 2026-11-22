@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;suramin sodium&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/&quot;},{&quot;label&quot;:&quot;Naviaux_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Naviaux2017_reference&quot;,&quot;label&quot;:&quot;Naviaux_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Motzer1992_reference&quot;,&quot;label&quot;:&quot;Motzer_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Naviaux2017_reference&quot;,&quot;label&quot;:&quot;Naviaux_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # suramin sodium — `SuraminSodium_Naviaux2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Naviaux2017_reference" status="curated_candidate" stale="false" population="children with autism spectrum disorder" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
+> Cross-check disputed as the second reader could not identify the dose compound, primary analyte, or parameter values for suramin.
+
+<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Naviaux2017_reference" status="needs_review" stale="false" population="children with autism spectrum disorder" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Naviaux RK, Curtis B, Li K, Naviaux JC, Bright AT, Reiner GE et al. Low-dose suramin in autism spectrum disorder: a small, phase I/II, randomized clinical trial. Annals of clinical and translational neurology 4(7):491-505 (2017).
@@ -29,6 +31,8 @@ Naviaux RK, Curtis B, Li K, Naviaux JC, Bright AT, Reiner GE et al. Low-dose sur
 <figure class="pk-models-diagram"><img src="drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference/SuraminSodium_Naviaux2017_reference.svg" alt="SuraminSodium_Naviaux2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | steady‐state volume of distribution | V | 0.83 | L/kg |
@@ -36,7 +40,7 @@ Naviaux RK, Curtis B, Li K, Naviaux JC, Bright AT, Reiner GE et al. Low-dose sur
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Naviaux RK, Curtis B, Li K, Naviaux JC, Bright AT, Reiner GE et al. Low-dose sur
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Cross-check disputed as the second reader could not identify the dose compound, primary analyte, or parameter values for suramin.**
+
+The second reader assigned 'unknown' to the dose compound and primary analyte instead of 'suramin'. Additionally, the second reader failed to extract the specific numerical values for the steady-state volume of distribution and clearance. This disagreement resulted in a cross-check agreement ratio of only 0.25. Extracted — suramin sodium: V 0.83 L/kg, CL 1.95 mL/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has suramin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -177,6 +183,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 352.8 | 295 | 0.8362 | days→SI vs simulated h |
 
 <details class="legend">

@@ -4,11 +4,11 @@
 
 # daridorexant — `Daridorexant_Krause2023_all_phase_i_data_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-06 20:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected due to a dimension mismatch on the intercompartmental clearance, as its unit could not be converted to standard SI units.
+> Daridorexant’s Vmax estimate of 6.94 mg/h was refused on a reported dimensional mismatch, despite its stated metabolic-rate meaning matching those units.
 
-<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_all_phase_i_data_estimate" status="rejected" stale="true" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_all_phase_i_data_estimate" status="rejected" stale="false" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokinetic modeling of daridorexant, a novel dual orexin receptor antagonist. CPT: pharmacometrics & systems pharmacology 12(1):74–86 (2023).
@@ -49,7 +49,7 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +59,13 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 ### Reviewer guidance
 
-**The model was rejected due to a dimension mismatch on the intercompartmental clearance, as its unit could not be converted to standard SI units.**
+**Daridorexant’s Vmax estimate of 6.94 mg/h was refused on a reported dimensional mismatch, despite its stated metabolic-rate meaning matching those units.**
 
-The record specifies the intercompartmental clearance between the central and peripheral compartments as 3.58 L/h. The hour-based unit for this parameter was not recognized for conversion, leaving the value without a standard SI equivalent. This failure to establish a compatible dimensional unit caused the structural parameter to be flagged and the record to be rejected. Extracted — daridorexant: Fab 0.41, tlag 0.41 h, kabs 1.05 1/h, V1 14.6 L, V2 13.7 L, Q 3.58 L/h, Vmax 6.94 mg/h, Km 2.36 μg/ml.
+The finding pairs mg/h ([mass]/[time]) with [mass]/[time], which is dimensionally consistent for Vmax, the maximum enzymatic metabolic rate; the stated mismatch is not supported by the supplied dimensions. Separately, the record says a reported unit could not be converted to SI but does not identify the affected parameter, so this limitation is inconclusive as to which estimate lacked SI conversion. Extracted — daridorexant: Fab 0.41, tlag 0.41 h, kabs 1.05 1/h, V1 14.6 L, V2 13.7 L, Q 3.58 L/h, Vmax 6.94 mg/h, Km 2.36 μg/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daridorexant, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

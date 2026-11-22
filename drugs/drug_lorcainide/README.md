@@ -55,7 +55,7 @@ Lorcainide is a class Ic antiarrhythmic agent indicated for premature ventricula
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-08 19:51 | 3:42 | 2/0/0 | 2/0/0 | 0/0/0 | 21,057/11,635 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 1/1 | 0 |
+| 2026-10-08 19:51 | 3:42 | 2/0/0 | 3/0/0 | 0/0/0 | 21,057/11,635 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 1/1 | 0 |
 
 ## Coverage
 

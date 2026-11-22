@@ -5,11 +5,11 @@
 
 # clozapine — `Clozapine_Reeves2024_sex_cl_fclozapine_parameter_estimates`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:29 UTC (Rejected), but the paper was screened again on 2026-10-06 15:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clozapine oral clearance parameter (23.2 L h−1) was rejected because its reported unit could not be converted to SI units.
+> The record was rejected because norclozapine C0, reported as 0.02 mg L−1, had a unit dimension inconsistent with its structural parameter.
 
-<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_sex_cl_fclozapine_parameter_estimates" status="rejected" stale="true" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_sex_cl_fclozapine_parameter_estimates" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pharmacokinetic model to guide clozapine dose selection, based on age, sex, ethnicity, body weight and smoking status. British journal of clinical pharmacology 90(1):135–145 (2024).
@@ -38,7 +38,7 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 ### Reviewer guidance
 
-**The clozapine oral clearance parameter (23.2 L h−1) was rejected because its reported unit could not be converted to SI units.**
+**The record was rejected because norclozapine C0, reported as 0.02 mg L−1, had a unit dimension inconsistent with its structural parameter.**
 
-The record lists a clearance of 23.2 L h−1 for clozapine. The review failed to resolve the dimensions of this unit into a standard SI quantity. This prevented the calculation of a valid SI value for the parameter. Extracted — norclozapine: C0 0.02 mg L−1; clozapine: V/F 0.66, kabs 0.69 h À1, CL/F 23.2 L h À1.
+C0 is the observed norclozapine concentration extrapolated to time 0. Its reported unit has dimension [mass]/[length] ** 3, while the parameter requires [mass] * [time]/[length] ** 3. The reported unit could not be converted to SI, so C0 had no SI value. Extracted — norclozapine: C0 0.02 mg L−1; clozapine: V/F 0.66, kabs 0.69 h À1, CL/F 23.2 L h À1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

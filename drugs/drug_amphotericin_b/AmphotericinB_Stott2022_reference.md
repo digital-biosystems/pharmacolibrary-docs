@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record lacks a value for the peripheral-to-central transfer rate constant, k21, of liposomal amphotericin B.
+> The liposomal amphotericin B transfer rate (2.222 h-1) is directionally inconsistent and absent from parameter coverage, leaving this abstract-derived record held for review.
 
 <div class="pk-model-meta" hidden drug="amphotericin B" model-id="AmphotericinB_Stott2022_reference" status="needs_review" stale="false" population="adults with HIV-associated cryptococcal meningoencephalitis" measured-compound="liposomal amphotericin B" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Stott KE, Moyo M, Ahmadu A, Kajanga C, Gondwe E, Chimang'anga W et al. Populatio
 
 ### Reviewer guidance
 
-**The record lacks a value for the peripheral-to-central transfer rate constant, k21, of liposomal amphotericin B.**
+**The liposomal amphotericin B transfer rate (2.222 h-1) is directionally inconsistent and absent from parameter coverage, leaving this abstract-derived record held for review.**
 
-The model structure defines a transfer rate constant from the peripheral to the central compartment, but no numerical value for this parameter was extracted from the source. A second reader identified a value of 2.951 h⁻¹ for this specific parameter, which is absent from the current record. Additionally, the record relies on abstract-only data, meaning the reported statistics stand in for a fitted model. Extracted — amphotericin b: CL 0.416 L/h, V 4.57 L, k21 2.22 h-1.
+The parameter label describes central-to-peripheral transfer, but its stated meaning defines peripheral-to-central transfer; it was neither emitted nor defaulted. The second reader disputed its identification and supplied 2.951 h-1 for peripheral-to-central transfer, where this record had no corresponding entry. Only the abstract was read, so reported summary statistics stand in for a fitted model. Extracted — amphotericin b: CL 0.416 L/h, V 4.57 L, k21 2.22 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[first-order transfer of drug from central to peripheral compartments].parameter_id`: this record has Q302, the second reading Q301; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,14 +122,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=liposomal amphotericin B) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered | neither emitted nor in defaulted[]: ['k21'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=liposomal amphotericin B) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['k21'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

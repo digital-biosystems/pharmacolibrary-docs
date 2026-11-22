@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0744, model 0.00236); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+2 more).
+> Cefiderocol record shows massive mismatches between simulated and paper Cmax, tmax, and half-life values.
 
 <div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_final" status="needs_review" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacoki
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0744, model 0.00236); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+2 more).**
+**Cefiderocol record shows massive mismatches between simulated and paper Cmax, tmax, and half-life values.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — cefiderocol: CL 4.04 L/h, V1 7.78 L, Q 6.19 L/h, V2 5.77 L, Q3 0.127 L/h, V3 0.798 L.
+The simulated maximum concentration (0.00236) deviates significantly from the paper's reported range (0.0681–0.156). Time to peak (0.183 h) and terminal half-life (9.39 h) also fail to match the paper's reported values (1.0 h and 2.26–2.8 h, respectively). Additionally, the model defines covariate effects for body weight and albumin that were not exercised during simulation. Extracted — cefiderocol: CL 4.04 L/h, V1 7.78 L, Q 6.19 L/h, V2 5.77 L, Q3 0.127 L/h, V3 0.798 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -160,6 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.867, 0 of 1 reader(s) agree | 0.867 | cross-check disputed by a second reader: verdict disputed, agreement 0.867, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.0744 | 0.002363 | 0.0318 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.156 | 0.002363 | 0.0151 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0681 | 0.002363 | 0.0347 | mg/L→SI vs simulated kg/m3 |

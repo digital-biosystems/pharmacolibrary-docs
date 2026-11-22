@@ -4,11 +4,11 @@
 
 # lindane — `Lindane_Thybaud1991_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-07 10:50 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="lindane" model-id="Lindane_Thybaud1991_reference" status="needs_review" stale="true" population="adult Lymnaea palustris snails" measured-compound="lindane" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lindane" model-id="Lindane_Thybaud1991_reference" status="needs_review" stale="false" population="adult Lymnaea palustris snails" measured-compound="lindane" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Thybaud E, Caquet T. Uptake and elimination of lindane by Lymnaea palustris (Mollusca: Gastropoda): a pharmacokinetic approach. Ecotoxicology and environmental safety 21(3):365–376 (1991).
@@ -37,7 +37,7 @@ Thybaud E, Caquet T. Uptake and elimination of lindane by Lymnaea palustris (Mol
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Thybaud E, Caquet T. Uptake and elimination of lindane by Lymnaea palustris (Mol
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lindane: t1/2α 0.7 hr, t1/2β 130 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has lindane, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

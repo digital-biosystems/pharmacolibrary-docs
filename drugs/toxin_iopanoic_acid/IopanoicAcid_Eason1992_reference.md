@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The iopanoic acid elimination half-life is listed as 1.5 days, derived solely from abstract summary statistics rather than a fitted pharmacokinetic model.
 
 <div class="pk-model-meta" hidden drug="Iopanoic acid" model-id="IopanoicAcid_Eason1992_reference" status="needs_review" stale="false" population="goat" measured-compound="Iopanoic acid" parameterization="mechanistic" topology="retention"></div>
 
@@ -45,7 +45,13 @@ Eason CT, Frampton CM. The plasma pharmacokinetics of iophenoxic and iopanoic ac
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The iopanoic acid elimination half-life is listed as 1.5 days, derived solely from abstract summary statistics rather than a fitted pharmacokinetic model.**
+
+The record relies entirely on the paper's abstract, using reported summary statistics as a surrogate for a fitted model. The extracted elimination half-life of 1.5 days represents the midpoint of a range printed in the source text, rather than a precise fitted value. Consequently, the model structure and parameter estimates lack the rigorous fitting required for formal evaluation. Extracted — iopanoic acid: t1/2z 1.5 days.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

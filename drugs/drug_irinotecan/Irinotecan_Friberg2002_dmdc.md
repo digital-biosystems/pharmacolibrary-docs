@@ -4,11 +4,11 @@
 
 # irinotecan — `Irinotecan_Friberg2002_dmdc`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-09-15 20:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="irinotecan" model-id="Irinotecan_Friberg2002_dmdc" status="rejected" stale="true" population="cancer patients" measured-compound="leukocytes, neutrophils" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="irinotecan" model-id="Irinotecan_Friberg2002_dmdc" status="rejected" stale="false" population="cancer patients" measured-compound="leukocytes, neutrophils" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Friberg LE, Henningsson A, Maas H, Nguyen L, Karlsson MO. Model of chemotherapy-induced myelosuppression with parameter consistency across drugs. Journal of clinical oncology : official journal of the American Society of Clinical Oncology (2002).
@@ -38,7 +38,7 @@ Friberg LE, Henningsson A, Maas H, Nguyen L, Karlsson MO. Model of chemotherapy-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

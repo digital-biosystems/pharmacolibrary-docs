@@ -4,11 +4,11 @@
 
 # obinutuzumab — `Obinutuzumab_Gibiansky2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:58 UTC (Rejected), but the paper was screened again on 2026-10-07 18:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Obinutuzumab's total clearance was rejected because the reported unit was not recognized for dimension validation.
+> Rejected because the intercompartmental clearance unit L/day is dimensionally inconsistent with the required mass-based clearance.
 
-<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2014_reference" status="rejected" stale="true" population="patients with CLL and NHL" measured-compound="obinutuzumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2014_reference" status="rejected" stale="false" population="patients with CLL and NHL" measured-compound="obinutuzumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gibiansky E, Gibiansky L, Carlile DJ, Jamois C, Buchheit V, Frey N. Population Pharmacokinetics of Obinutuzumab (GA101) in Chronic Lymphocytic Leukemia (CLL) and Non-Hodgkin's Lymphoma and Exposure-Response in CLL. CPT: pharmacometrics & systems pharmacology 3(10):e144 (2014).
@@ -16,7 +16,7 @@ Gibiansky E, Gibiansky L, Carlile DJ, Jamois C, Buchheit V, Frey N. Population P
 
 ## Population and dosing
 
-**Population:** patients with CLL and NHL · condition CLL and NHL · age group adult · n = &gt;=678.
+**Population:** patients with CLL and NHL · condition CLL and NHL · age group adult.
 
 **Dosing:** 200, 2000 mg, iv, multiple.
 
@@ -45,7 +45,7 @@ Gibiansky E, Gibiansky L, Carlile DJ, Jamois C, Buchheit V, Frey N. Population P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.964). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.964). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Gibiansky E, Gibiansky L, Carlile DJ, Jamois C, Buchheit V, Frey N. Population P
 
 ### Reviewer guidance
 
-**Obinutuzumab's total clearance was rejected because the reported unit was not recognized for dimension validation.**
+**Rejected because the intercompartmental clearance unit L/day is dimensionally inconsistent with the required mass-based clearance.**
 
-The total clearance value of 0.196 L/day could not be validated because the specific unit was not present in the standard reference list used for conversion. This prevented the system from confirming the dimensional consistency of the parameter. As a result, the record was flagged for a dimension mismatch and rejected. Extracted — obinutuzumab: CL 0.196 L/day, CLint 0.0775 L/day, V1 2.68 L, V2 0.922 L, Q 1.03 L/day.
+The parameter Q (intercompartmental clearance) is recorded with a unit of L/day, which represents volume per time. The expected dimension for a clearance parameter is volume per time per mass. Additionally, the second reader identified a dissociation rate constant (kdes) value of 0.0291 that is missing from this record. Extracted — obinutuzumab: CL 0.196 L/day, CLint 0.0775 L/day, V1 2.68 L, V2 0.922 L, Q 1.03 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of kdes: this record has none, the second reading 0.0291. That field does not shape the model.
 

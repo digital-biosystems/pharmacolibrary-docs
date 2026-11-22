@@ -59,7 +59,7 @@ Chrysene is one of over 100 different polycyclic aromatic hydrocarbons (PAHs). P
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-17 14:09 | 31:34 | 0/2/0 | 3/0/0 | 0/0/0 | 635,983/42,960 | einfracz / qwen3.8-flash-next | 15 | 3/9 | 15/0 | 0 |
+| 2026-11-17 14:09 | 31:34 | 0/2/0 | 5/0/0 | 0/0/0 | 635,983/42,960 | einfracz / qwen3.8-flash-next | 15 | 3/9 | 15/0 | 0 |
 
 ## Coverage
 

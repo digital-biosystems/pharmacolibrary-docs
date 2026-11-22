@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;N-Butyl-Benzenesulfonamide&quot;,&quot;href&quot;:&quot;drugs/toxin_n_butyl_benzenesulfonamide/&quot;},{&quot;label&quot;:&quot;Waidyanatha_2020_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NButylBenzenesulfonamide_Waidyanatha2020v2_reference&quot;,&quot;label&quot;:&quot;Waidyanatha_2020_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NButylBenzenesulfonamide_Waidyanatha2020v2_reference&quot;,&quot;label&quot;:&quot;Waidyanatha_2020_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # N-Butyl-Benzenesulfonamide — `NButylBenzenesulfonamide_Waidyanatha2020v2_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model mispredicts n-butyl-benzenesulfonamide PK with inflated terminal half-life (1.57h vs paper 0.0809-0.895h), delayed tmax (2.12h vs 0.355h), and underestimated Cmax.
 
-<div class="pk-model-meta" hidden drug="N-Butyl-Benzenesulfonamide" model-id="NButylBenzenesulfonamide_Waidyanatha2020v2_reference" status="extracted" stale="false" population="HSD rats and B6C3F1 mice" measured-compound="N-Butyl-Benzenesulfonamide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="N-Butyl-Benzenesulfonamide" model-id="NButylBenzenesulfonamide_Waidyanatha2020v2_reference" status="needs_review" stale="false" population="HSD rats and B6C3F1 mice" measured-compound="N-Butyl-Benzenesulfonamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Waidyanatha S, Gibbs S, South N, Smith JP, Mutlu E, Burback B et al. Toxicokinetics of the plasticizer, N-butylbenzenesulfonamide, in plasma and brain following oral exposure in rodents: Route, species, and sex comparison. Toxicology reports 7:711–722 (2020).
@@ -33,6 +33,8 @@ Waidyanatha S, Gibbs S, South N, Smith JP, Mutlu E, Burback B et al. Toxicokinet
 <figure class="pk-models-diagram"><img src="drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.svg" alt="NButylBenzenesulfonamide_Waidyanatha2020v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | K10 half-Life (h) | t1/2z | 1.42 | h |
@@ -42,7 +44,7 @@ Waidyanatha S, Gibbs S, South N, Smith JP, Mutlu E, Burback B et al. Toxicokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +52,13 @@ Waidyanatha S, Gibbs S, South N, Smith JP, Mutlu E, Burback B et al. Toxicokinet
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model mispredicts n-butyl-benzenesulfonamide PK with inflated terminal half-life (1.57h vs paper 0.0809-0.895h), delayed tmax (2.12h vs 0.355h), and underestimated Cmax.**
+
+Terminal half-life simulations yield 1.57 h, significantly longer than the paper's reported 0.0809 h to 0.895 h. Time to peak concentration is simulated at 2.12 h, diverging from paper values such as 0.355 h. Peak concentration simulations of 0.00014 kg/m3 are far lower than paper values like 0.000316. These discrepancies stem from unreported absorption rate constants and lag times that were substituted with library defaults. Extracted — n butyl benzenesulfonamide: t1/2z 1.42 h, V/F 5.33e+04 mL/kg, t1/2α 0.119 h, t1/2β 0.895 h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -111,6 +119,188 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q76 | pass | volume within physiological range | 3.73e+03 L | ['Waidyanatha_2020_2:other_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable |  | pass | C_central (measured=N-Butyl-Benzenesulfonamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_cmax | reference | fail | 0.000316 | 0.0001397 | 0.442 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0012 | 0.0001397 | 0.1164 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00344 | 0.0001397 | 0.0406 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 15.8 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 20 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 17.2 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | fail | 0.00154 | 0.0001397 | 0.0907 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00389 | 0.0001397 | 0.0359 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0152 | 0.0001397 | 0.0092 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 77 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 64.8 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 76 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1680 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 4560 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 13400 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 84 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 76 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 67 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 4780 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 11700 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 25800 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 239 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 195 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 129 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | fail | 0.000756 | 0.0001397 | 0.1847 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00553 | 0.0001397 | 0.0253 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0155 | 0.0001397 | 0.009 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 37.8 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 92.1 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 77.5 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | fail | 0.00104 | 0.0001397 | 0.1343 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00296 | 0.0001397 | 0.0472 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0137 | 0.0001397 | 0.0102 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 52 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 49.3 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 68.5 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1260 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 8280 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 23400 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 63 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 138 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 117 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 733 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 2830 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 18700 | 0.0001397 |  | unresolved concentration unit (exp 'ng/g', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 36.7 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 47.2 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 93.5 | 0.0001397 |  | unresolved concentration unit (exp '(ng/g)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | fail | 1.75e-05 | 0.0001397 | 7.981 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.43e-05 | 0.0001397 | 5.747 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 4.79e-05 | 0.0001397 | 2.916 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 0.035 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(ppm)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.024 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(ppm)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.024 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(ppm)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.416 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.338 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.33 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | fail | 2.67e-05 | 0.0001397 | 5.231 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 4.46e-05 | 0.0001397 | 3.131 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.000186 | 0.0001397 | 0.7509 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 0.0534 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(ppm)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.0446 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(ppm)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.093 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(ppm)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.326 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.265 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.572 | 0.0001397 |  | unresolved concentration unit (exp '(ng/mL)/(mg/kg)', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped | 5.3 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3.1 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.7 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.7 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3.8 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.5 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3.9 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.7 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.5 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.4 | 0.0001397 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001397 |  | non-numeric value |
+| T1_t_half_alpha | reference | skipped | 0.119 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 0.156 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 0.262 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 0.121 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 0.177 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | 0.354 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | fail | 0.895 | 1.571 | 1.755 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.789 | 1.571 | 1.991 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 1.97 | 1.571 | 0.7973 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.13 | 1.571 | 0.3803 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.737 | 1.571 | 2.131 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1 | 1.571 | 1.571 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0809 | 1.571 | 19.41 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0696 | 1.571 | 22.57 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0361 | 1.571 | 43.51 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.42 | 1.571 | 1.106 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.72 | 1.571 | 0.5775 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.7 | 1.571 | 0.5817 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.158 | 1.571 | 9.941 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0824 | 1.571 | 19.06 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0353 | 1.571 | 44.49 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.24 | 1.571 | 1.267 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.93 | 1.571 | 0.8138 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.55 | 1.571 | 0.4424 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.96 | 1.571 | 1.636 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.42 | 1.571 | 1.106 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.64 | 1.571 | 0.595 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.55 | 1.571 | 1.013 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.47 | 1.571 | 0.6359 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.11 | 1.571 | 0.2571 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0631 | 1.571 | 24.89 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0358 | 1.571 | 43.87 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0431 | 1.571 | 36.44 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.201 | 1.571 | 7.814 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.22 | 1.571 | 7.139 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.317 | 1.571 | 4.955 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0477 | 1.571 | 32.93 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0362 | 1.571 | 43.39 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.0347 | 1.571 | 45.26 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.199 | 1.571 | 7.893 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.221 | 1.571 | 7.107 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.432 | 1.571 | 3.636 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.315 | 1.571 | 4.986 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.417 | 1.571 | 3.767 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.524 | 1.571 | 2.998 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.278 | 1.571 | 5.65 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.329 | 1.571 | 4.774 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.545 | 1.571 | 2.882 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.61 | 1.571 | 0.9756 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.48 | 1.571 | 0.4513 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.81 | 1.571 | 0.559 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.06 | 1.571 | 1.482 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.09 | 1.571 | 0.7515 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.28 | 1.571 | 0.6889 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.355 | 2.116 | 5.961 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.378 | 2.116 | 5.598 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.228 | 2.116 | 9.282 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.539 | 2.116 | 3.926 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.392 | 2.116 | 5.399 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.237 | 2.116 | 8.929 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.204 | 2.116 | 10.37 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.202 | 2.116 | 10.48 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.116 | 2.116 | 18.24 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.198 | 2.116 | 10.69 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.196 | 2.116 | 10.8 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.113 | 2.116 | 18.73 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.131 | 2.116 | 16.15 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.103 | 2.116 | 20.55 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.136 | 2.116 | 15.56 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.107 | 2.116 | 19.78 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.107 | 2.116 | 19.78 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.133 | 2.116 | 15.91 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.118 | 2.116 | 17.93 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.12 | 2.116 | 17.64 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.198 | 2.116 | 10.69 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.199 | 2.116 | 10.63 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.198 | 2.116 | 10.69 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.362 | 2.116 | 5.846 | h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 2.116 |  | non-numeric value |
+| T1_tmax | reference | skipped |  | 2.116 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

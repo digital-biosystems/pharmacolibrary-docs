@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;maribavir&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/&quot;},{&quot;label&quot;:&quot;Sun_2025 \u00b7 estimates&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Maribavir_Fromage2025_reference&quot;,&quot;label&quot;:&quot;Fromage_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/Maribavir_Fromage2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Maribavir_Song2020_reference&quot;,&quot;label&quot;:&quot;Song_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/Maribavir_Song2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Maribavir_Song2024_reference&quot;,&quot;label&quot;:&quot;Song_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/Maribavir_Song2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Maribavir_Sun2025_estimates&quot;,&quot;label&quot;:&quot;Sun_2025_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/Maribavir_Sun2025_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Maribavir_Song2024_reference&quot;,&quot;label&quot;:&quot;Song_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/Maribavir_Song2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Maribavir_Sun2025_estimates&quot;,&quot;label&quot;:&quot;Sun_2025_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/Maribavir_Sun2025_estimates.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Maribavir_Fromage2025_reference&quot;,&quot;label&quot;:&quot;Fromage_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/Maribavir_Fromage2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Maribavir_Song2020_reference&quot;,&quot;label&quot;:&quot;Song_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maribavir/Maribavir_Song2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # maribavir — `Maribavir_Sun2025_estimates`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> The record was held because the assumed F=1 parameterization prevented proper unit conversion and covariate scenarios were not simulated.
-
-<div class="pk-model-meta" hidden drug="maribavir" model-id="Maribavir_Sun2025_estimates" status="needs_review" stale="false" population="transplant recipients with CMV infection and healthy volunteers" measured-compound="maribavir" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="maribavir" model-id="Maribavir_Sun2025_estimates" status="simulated" stale="false" population="transplant recipients with CMV infection and healthy volunteers" measured-compound="maribavir" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Sun K, Jomphe C, Gosselin NH, Pheng L, Durairaj C, Hang Y et al. Population Pharmacokinetics and Exposure-Response Relationships of Maribavir in Transplant Recipients With First Episode or Refractory Cytomegalovirus. CPT: pharmacometrics & systems pharmacology 14(8):1346–1358 (2025).
@@ -31,8 +29,6 @@ Sun K, Jomphe C, Gosselin NH, Pheng L, Durairaj C, Hang Y et al. Population Phar
 <figure class="pk-models-diagram"><img src="drugs/drug_maribavir/Maribavir_Sun2025_estimates/Maribavir_Sun2025_estimates.svg" alt="Maribavir_Sun2025_estimates diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | F | Fab | 1 |  |
@@ -49,7 +45,7 @@ Sun K, Jomphe C, Gosselin NH, Pheng L, Durairaj C, Hang Y et al. Population Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +55,13 @@ Sun K, Jomphe C, Gosselin NH, Pheng L, Durairaj C, Hang Y et al. Population Phar
 
 ### Reviewer guidance
 
-**The record was held because the assumed F=1 parameterization prevented proper unit conversion and covariate scenarios were not simulated.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The model builder set absolute bioavailability (F) to 1, an assumption deemed unacceptable for an apparent PK model. Consequently, the record includes four weight covariate effects on clearance and volumes that were not exercised during simulation. This combination of an inappropriate assumption and missing covariate simulations led to the needs_review verdict. Extracted — maribavir: Fab 1, tlag 0.212 h, kabs 0.697 1/h, CL/F 3.94 L/h, V1/F 17.8 L, Q/F 1.24 L/h, V2/F 7.1 L.
+The base model was simulated, not the covariate effects the record defines.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -160,29 +156,30 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=maribavir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  | 0.006774 | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.006774 | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.006774 | non-numeric value |
-| T1_cmax | reference | skipped | 1.2 | 0.006774 | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 16 | 0.006774 | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | -22.5 | 0.006774 | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 272.6 | 0.006774 | unresolved concentration unit (exp 'C max,ss', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 0.006774 | non-numeric value |
-| T1_cmin_ss | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 2.11 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 19 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 272.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped |  | 7.701 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=maribavir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped |  | 0.006774 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.006774 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.006774 |  | non-numeric value |
+| T1_cmax | reference | skipped | 1.2 | 0.006774 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 16 | 0.006774 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | -22.5 | 0.006774 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 272.6 | 0.006774 |  | unresolved concentration unit (exp 'C max,ss', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.006774 |  | non-numeric value |
+| T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 2.11 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 19 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 272.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  | 7.701 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

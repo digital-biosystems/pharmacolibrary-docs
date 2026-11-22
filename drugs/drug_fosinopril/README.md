@@ -27,8 +27,8 @@ Fosinopril is an ACE inhibitor prescribed for managing high blood pressure and c
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hu_1997_caucasian](drugs/drug_fosinopril/Fosinopril_Hu1997_caucasian.md) | — | 1-compartment (no model) | 11 | Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb05632.x](https://doi.org/10.1002/j.1552-4604.1997.tb05632.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ chinese](drugs/drug_fosinopril/Fosinopril_Hu1997_chinese.md) | — | 1-compartment (no model) | 11 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hu_1997_caucasian](drugs/drug_fosinopril/Fosinopril_Hu1997_caucasian.md) | — | 1-compartment (no model) | 11 | Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb05632.x](https://doi.org/10.1002/j.1552-4604.1997.tb05632.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ chinese](drugs/drug_fosinopril/Fosinopril_Hu1997_chinese.md) | — | 1-compartment (no model) | 11 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -37,18 +37,6 @@ Fosinopril is an ACE inhibitor prescribed for managing high blood pressure and c
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ford_1995_MAP](drugs/drug_fosinopril/pd_Ford_1995_MAP.md) | mean arterial pressure change ← fosinoprilat · direct Emax (saturable) effect | — | Ford NF et al., Invasive pharmacodynamics of fosinopril…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04121.x](https://doi.org/10.1002/j.1552-4604.1995.tb04121.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ford_1995_PAWP](drugs/drug_fosinopril/pd_Ford_1995_PAWP.md) | pulmonary artery wedge pressure (PAWP) change ← fosinoprilat · direct linear effect | — | Ford NF et al., Invasive pharmacodynamics of fosinopril…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04121.x](https://doi.org/10.1002/j.1552-4604.1995.tb04121.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gehr_1993_ACE_inhibition](drugs/drug_fosinopril/pd_Gehr_1993_ACE_inhibition.md) | percentage inhibition of serum ACE activity ← fosinoprilat · direct Emax (saturable) effect | — | Gehr TW et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (1993) | [10.1007/BF00315514](https://doi.org/10.1007/BF00315514) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fosinopril).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC15A2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACE (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,13 +50,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:30 | 1:33 | 0/2/0 | 2/0/0 | 0/0/0 | 42,889/1,990 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 5/1 | 2/4 | 0 |
+| 2026-10-07 06:30 | 1:33 | 0/2/0 | 3/0/0 | 0/0/0 | 42,889/1,990 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 5/1 | 2/4 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 7  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

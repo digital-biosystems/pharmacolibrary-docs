@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Troisi_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # protein C — `ProteinC_Troisi2024_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Troisi2024_reference" status="simulated" stale="false" population="" measured-compound="protein_c" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-11-07 15:11 UTC (Rejected), but the paper was screened again on 2026-10-05 15:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Troisi2024_reference" status="extracted" stale="true" population="" measured-compound="protein_c" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Troisi C, Cojutti PG, Rinaldi M, Tonetti T, Siniscalchi A, van Hasselt C et al. Impact of Continuous Infusion Meropenem PK/PD Target Attainment on C-Reactive Protein Dynamics in Critically Ill Patients With Documented Gram-Negative Hospital-Acquired or Ventilator-Associated Pneumonia. Clinical pharmacokinetics 63(11):1573–1583 (2024).
@@ -34,7 +36,7 @@ Troisi C, Cojutti PG, Rinaldi M, Tonetti T, Siniscalchi A, van Hasselt C et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +48,7 @@ Troisi C, Cojutti PG, Rinaldi M, Tonetti T, Siniscalchi A, van Hasselt C et al. 
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.59, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.59, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,19 +77,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 0.59 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q26]` | 2.72 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q312]` |  | 0.59 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q316]` | 0.37 | 0.37 | mismatch |
-| `gpt-oss:120b` | `values[Q322]` | 0.79 | 0.79 | mismatch |
-| `gpt-oss:120b` | `values[Q328]` | 0.012 | 0.012 | mismatch |
-| `gpt-oss:120b` | `values[Q86]` |  | 0.51 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 0.59 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q26]` | 2.72 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` |  | 0.59 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q322]` | 0.79 | 0.79 | mismatch |
+| `gpt-oss-120b` | `values[Q328]` | 0.012 | 0.012 | mismatch |
+| `gpt-oss-120b` | `values[Q86]` |  | 0.51 | only_one_extracted |
 
 </details>
 
@@ -115,7 +116,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | note |
 |---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | protein_c (or metabolite) | paper about another drug | paper subject is not protein_c: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=protein_c) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |

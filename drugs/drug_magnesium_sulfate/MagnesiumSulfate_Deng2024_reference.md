@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;Deng_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> A negative body-mass-index coefficient of -0.54 for magnesium sulfate clearance was rejected as implausible.
+> Magnesium sulfate was rejected because its reported normalized apparent clearance, CLnorm/F, is −0.54, an implausible negative clearance value.
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Deng2024_reference" status="rejected" stale="false" population="Chinese preeclampsia population" measured-compound="magnesium_sulfate" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Deng J, Peng L, Wang Y, Li J, Tang L, Yu Y. Population pharmacokinetics and dose
 
 ### Reviewer guidance
 
-**A negative body-mass-index coefficient of -0.54 for magnesium sulfate clearance was rejected as implausible.**
+**Magnesium sulfate was rejected because its reported normalized apparent clearance, CLnorm/F, is −0.54, an implausible negative clearance value.**
 
-The record lists a covariate effect parameter with a value of -0.54, indicating a negative relationship between body mass index and clearance. This negative exponent contradicts the expected positive physiological relationship, rendering the parameterization incorrect. A second reader also disagreed on the specific values for volume and clearance, and could not locate the body-size covariate parameter. Extracted — magnesium sulfate: V 25.1 L, CL 2.98 L/h, CLnorm/F -0.54.
+The record reports CLnorm/F as −0.54, while total clearance is 2.98 L/h and volume of distribution is 25.07 L. The second reader disputed the CLnorm/F entry, recording no value, and disagreed with its apparent-clearance parameterization. Extracted — magnesium sulfate: V 25.1 L, CL 2.98 L/h, CLnorm/F -0.54.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading magnesium sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

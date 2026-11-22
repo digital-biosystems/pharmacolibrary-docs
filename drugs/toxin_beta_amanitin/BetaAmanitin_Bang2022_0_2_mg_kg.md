@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;beta-Amanitin&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/&quot;},{&quot;label&quot;:&quot;Bang_2022 \u00b7 0_2_mg_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_10_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_2_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_5_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_5_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_5_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Yang2024_reference&quot;,&quot;label&quot;:&quot;Yang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Yang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_10_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_2_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_5_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_5_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_5_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Yang2024_reference&quot;,&quot;label&quot;:&quot;Yang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Yang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected because the noncompartmental parameter C0 had an invalid unit of ng/mL, conflicting with the required mass/time per volume dimension.
 
 <div class="pk-model-meta" hidden drug="beta-Amanitin" model-id="BetaAmanitin_Bang2022_0_2_mg_kg" status="rejected" stale="false" population="male ICR mice" measured-compound="beta-Amanitin" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,7 +53,13 @@ Bang YY, Song IS, Lee MS, Lim CH, Cho YY, Lee JY et al. Toxicokinetics of β-Ama
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected because the noncompartmental parameter C0 had an invalid unit of ng/mL, conflicting with the required mass/time per volume dimension.**
+
+The model record consists solely of abstract-derived summary statistics rather than a fitted compartmental model. The specific error involves the parameter C0, representing observed concentration at time zero, which carries the unit ng/mL. This dimension of mass per volume is incompatible with the expected mass per time per volume, triggering a rejection due to dimensional mismatch. Extracted — beta amanitin: C0 712 ng/mL, AUClast 1.33e+04 ng⋅min/mL, AUC∞ 1.34e+04 ng⋅min/mL, CL 15.3 mL/min/kg, Vss 359 mL/kg, t1/2z 21.8 min, MRT 22.8 min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

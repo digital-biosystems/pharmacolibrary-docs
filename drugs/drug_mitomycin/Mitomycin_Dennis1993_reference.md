@@ -4,11 +4,11 @@
 
 # mitomycin — `Mitomycin_Dennis1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:48 UTC (Rejected), but the paper was screened again on 2026-10-06 18:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Dennis1993_reference" status="needs_review" stale="true" population="patients with advanced gastrointestinal cancer" measured-compound="BW12C and mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Dennis1993_reference" status="needs_review" stale="false" population="patients with advanced gastrointestinal cancer" measured-compound="BW12C and mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dennis IF, Ramsay JR, Workman P, Bleehen NM. Pharmacokinetics of BW12C and mitomycin C, given in combination in a phase 1 study in patients with advanced gastrointestinal cancer. Cancer chemotherapy and pharmacology 32(1):67–72 (1993).
@@ -36,7 +36,7 @@ Dennis IF, Ramsay JR, Workman P, Bleehen NM. Pharmacokinetics of BW12C and mitom
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Dennis IF, Ramsay JR, Workman P, Bleehen NM. Pharmacokinetics of BW12C and mitom
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; aUC has no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mitomycin's own; they describe BW12C and mitomycin C.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mitomycin's own; they describe BW12C and mitomycin C. Extracted — BW12C and mitomycin C: t1/2z 2.1 h, t1/2β 50 min, AUC 1.1 micrograms/ml h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has BW12C and mitomycin C, the second reading mitomycin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

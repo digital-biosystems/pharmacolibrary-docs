@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;dapoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_dapoxetine/&quot;},{&quot;label&quot;:&quot;Pu_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapoxetine_Pu2026_reference&quot;,&quot;label&quot;:&quot;Pu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapoxetine_Pu2026_reference&quot;,&quot;label&quot;:&quot;Pu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dapoxetine — `Dapoxetine_Pu2026_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="dapoxetine" model-id="Dapoxetine_Pu2026_reference" status="simulated" stale="false" population="healthy Chinese male subjects" measured-compound="dapoxetine" parameterization="apparent" topology="2C"></div>
+> The record failed cross-reader verification because the second reader found the parameter values null, contradicting the extracted apparent clearance of 37.8 L/h.
+
+<div class="pk-model-meta" hidden drug="dapoxetine" model-id="Dapoxetine_Pu2026_reference" status="needs_review" stale="false" population="healthy Chinese male subjects" measured-compound="dapoxetine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Pu L, Wu T, Bai F, Lu H, Wang Y, Gao Y et al. Population Pharmacokinetics of Dapoxetine in Healthy Chinese Male Subjects. Journal of clinical pharmacology 66(2):e70117 (2026).
@@ -27,6 +29,8 @@ Pu L, Wu T, Bai F, Lu H, Wang Y, Gao Y et al. Population Pharmacokinetics of Dap
 <figure class="pk-models-diagram"><img src="drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference/Dapoxetine_Pu2026_reference.svg" alt="Dapoxetine_Pu2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 37.8 | L/h |
@@ -38,7 +42,7 @@ Pu L, Wu T, Bai F, Lu H, Wang Y, Gao Y et al. Population Pharmacokinetics of Dap
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ Pu L, Wu T, Bai F, Lu H, Wang Y, Gao Y et al. Population Pharmacokinetics of Dap
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record failed cross-reader verification because the second reader found the parameter values null, contradicting the extracted apparent clearance of 37.8 L/h.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disagreed on all six parameters, listing them as null rather than the recorded values. Specifically, the second reader identified nulls for apparent clearance, intercompartmental clearance, central volume, peripheral volume, lag time, and absorption rate constant. Extracted — dapoxetine: CL/F 37.8 L/h, Q/F 17.2 L/h, V1/F 65.6 L, V2/F 192 L, tlag 0.68 h, kabs 1.29 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption lag time: this record has none, the second reading 0.68; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -139,15 +143,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=dapoxetine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=dapoxetine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

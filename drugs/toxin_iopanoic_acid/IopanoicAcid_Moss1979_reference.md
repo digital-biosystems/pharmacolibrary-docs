@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Vmax for iopanoic acid has conflicting units (micron/kg/min vs mass/time) and relies on abstract-only summary statistics.
 
 <div class="pk-model-meta" hidden drug="Iopanoic acid" model-id="IopanoicAcid_Moss1979_reference" status="rejected" stale="false" population="rhesus monkey" measured-compound="Iopanoic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,7 +45,13 @@ Moss AA, Lin SK, Margules ER, Motson RW, Riegelman S. Pharmacokinetics of iopano
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Vmax for iopanoic acid has conflicting units (micron/kg/min vs mass/time) and relies on abstract-only summary statistics.**
+
+The record was rejected due to a dimensional inconsistency in the Vmax parameter, where the unit 'micron/kg/min' implies a length/time dimension rather than the required mass/time dimension for a metabolic rate. Additionally, the model was built exclusively from the paper's abstract, meaning reported summary statistics were substituted for a properly fitted pharmacokinetic model. Extracted — iopanoic acid: Vmax 0.85 micron/kg/min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

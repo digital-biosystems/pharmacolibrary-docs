@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;ganaxolone&quot;,&quot;href&quot;:&quot;drugs/drug_ganaxolone/&quot;},{&quot;label&quot;:&quot;Zolkowska_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ganaxolone_Zolkowska2018_reference&quot;,&quot;label&quot;:&quot;Zolkowska_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ganaxolone_Zolkowska2018_reference&quot;,&quot;label&quot;:&quot;Zolkowska_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ganaxolone — `Ganaxolone_Zolkowska2018_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-<div class="pk-model-meta" hidden drug="ganaxolone" model-id="Ganaxolone_Zolkowska2018_reference" status="simulated" stale="false" population="mice" measured-compound="ganaxolone and allopregnanolone" parameterization="mechanistic" topology="1C"></div>
+> Clearance of 12.88 L/kg/h is attributed to both ganaxolone and allopregnanolone without distinct values for each.
+
+<div class="pk-model-meta" hidden drug="ganaxolone" model-id="Ganaxolone_Zolkowska2018_reference" status="needs_review" stale="false" population="mice" measured-compound="ganaxolone and allopregnanolone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zolkowska D, Wu CY, Rogawski MA. Intramuscular allopregnanolone and ganaxolone in a mouse model of treatment-resistant status epilepticus. Epilepsia 59 Suppl 2(Suppl 2):220–227 (2018).
@@ -29,6 +31,8 @@ Zolkowska D, Wu CY, Rogawski MA. Intramuscular allopregnanolone and ganaxolone i
 <figure class="pk-models-diagram"><img src="drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference/Ganaxolone_Zolkowska2018_reference.svg" alt="Ganaxolone_Zolkowska2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax | Cmax | 645 | ng/mL |
@@ -39,7 +43,7 @@ Zolkowska D, Wu CY, Rogawski MA. Intramuscular allopregnanolone and ganaxolone i
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +53,13 @@ Zolkowska D, Wu CY, Rogawski MA. Intramuscular allopregnanolone and ganaxolone i
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Clearance of 12.88 L/kg/h is attributed to both ganaxolone and allopregnanolone without distinct values for each.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is ganaxolone's own; they describe ganaxolone and allopregnanolone.
+All extracted pharmacokinetic parameters, including clearance and volume of distribution, are labeled for the combined compounds ganaxolone and allopregnanolone rather than individually. The second reader disagreed with these assignments, identifying the clearance value as belonging specifically to allopregnanolone while leaving the ganaxolone value null. This discrepancy reflects the limitation of deriving model parameters from abstract-only summary statistics without explicit compound separation. Extracted — ganaxolone and allopregnanolone: Cmax 645 ng/mL, V 4.95 L/kg, CL 12.9 L/kg/h, t1/2z 16 minutes, Fab 97 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ganaxolone and allopregnanolone, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -139,14 +143,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ganaxolone and allopregnanolone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ganaxolone and allopregnanolone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

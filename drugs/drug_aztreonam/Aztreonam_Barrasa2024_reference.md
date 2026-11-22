@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model for aztreonam was rejected because the peripheral compartment was identified as unreachable or orphaned.
+> Aztreonam’s two-compartment record was rejected because it contains an unreachable or orphan compartment, despite reporting peripheral volume V2 of 5.77 L.
 
 <div class="pk-model-meta" hidden drug="aztreonam" model-id="Aztreonam_Barrasa2024_reference" status="rejected" stale="false" population="" measured-compound="aztreonam" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Barrasa H, Morán MA, Fernández-Ciriza L, Isla A, Solinís MÁ, Canut-Blasco A 
 
 ### Reviewer guidance
 
-**The two-compartment model for aztreonam was rejected because the peripheral compartment was identified as unreachable or orphaned.**
+**Aztreonam’s two-compartment record was rejected because it contains an unreachable or orphan compartment, despite reporting peripheral volume V2 of 5.77 L.**
 
-The record defines a central volume of 7.78 L and a peripheral volume of 5.77 L with a total clearance of 1.88 L/h. The review found that the peripheral compartment lacked a path from the dose, making it an orphan compartment. Consequently, the model structure was deemed invalid for the aztreonam population data. Extracted — aztreonam: CL 1.88 L/h, V1 7.78 L, V2 5.77 L.
+The record reports aztreonam total clearance of 1.88 L/h, central volume of 7.78 L, and peripheral volume of 5.77 L. The finding identifies an unreachable or orphan compartment but does not specify which compartment. Extracted — aztreonam: CL 1.88 L/h, V1 7.78 L, V2 5.77 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q321: this record has 0.5, the second reading 67.4; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

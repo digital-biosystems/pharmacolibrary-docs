@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not specify a mechanistic PD model (e.g., Emax, production/elimination) linking manganese water concentrations to Performance IQ deficits, instead utilizing seven statistical concentration-response functions (e.g., Hill, linear, power) within the US EPA Benchmark Dose Software for risk assessment. Manganese concentrations ranging from 0.01 to 2701 μg/L were associated with lower Performance IQ points in children, but no specific potency parameters such as IC50, EC50, or rate constants (kin, kout) are reported.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kullar_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -13,9 +13,25 @@
   500.0,
   1000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Stage_2019:other_prose",
+    "value_si": 1.0
+   },
+   {
+    "source": "Stage_2019:other_prose",
+    "value_si": 3.2
+   },
+   {
+    "source": "Stage_2019:other_prose",
+    "value_si": 0.4
+   }
+  ]
+ },
  "parameters": {
   "Cl": 7.083333333333334e-06,
-  "F": 0.9,
+  "F": 53.0,
   "MM": 0.1291636,
   "Tlag": 0.0,
   "VdPerKg": 0.00055,
@@ -28,10 +44,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9349.899799599198
+  "central.C": 9393.576509036593
  },
  "reference_peaks": {
-  "central.C": 0.0005597784639464315
+  "central.C": 0.03296476300839089
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

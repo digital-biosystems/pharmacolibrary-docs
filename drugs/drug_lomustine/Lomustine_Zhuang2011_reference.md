@@ -4,11 +4,11 @@
 
 # lomustine — `Lomustine_Zhuang2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 17:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="lomustine" model-id="Lomustine_Zhuang2011_reference" status="needs_review" stale="true" population="C6 glioma rats" measured-compound="lomustine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lomustine" model-id="Lomustine_Zhuang2011_reference" status="needs_review" stale="false" population="C6 glioma rats" measured-compound="lomustine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhuang L, Gao J, Zeng Y, Yu F, Zhang B, Li M et al. HPLC method validation for the quantification of lomustine to study pharmacokinetics of thermosensitive liposome-encapsulated lomustine containing iohexol for CT imaging in C6 glioma rats. European journal of drug metabolism and pharmacokinetics 36(2):61–69 (2011).
@@ -38,7 +38,7 @@ Zhuang L, Gao J, Zeng Y, Yu F, Zhang B, Li M et al. HPLC method validation for t
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Zhuang L, Gao J, Zeng Y, Yu F, Zhang B, Li M et al. HPLC method validation for t
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lomustine: t1/2z 0.28 h, AUC 2.37 ug*h/mL, Cmax 5.15 μg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lomustine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

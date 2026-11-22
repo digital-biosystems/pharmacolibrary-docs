@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Enniatin B&quot;,&quot;href&quot;:&quot;drugs/toxin_enniatin_b/&quot;},{&quot;label&quot;:&quot;Devreese_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EnniatinB_Escriv2017_reference&quot;,&quot;label&quot;:&quot;Escriv\u00e1_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_enniatin_b/EnniatinB_Escriv2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;EnniatinB_Ojiro2023_reference&quot;,&quot;label&quot;:&quot;Ojiro_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_enniatin_b/EnniatinB_Ojiro2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;EnniatinB_Fraeyman2016_reference&quot;,&quot;label&quot;:&quot;Fraeyman_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_enniatin_b/EnniatinB_Fraeyman2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EnniatinB_Escriv2017_reference&quot;,&quot;label&quot;:&quot;Escriv\u00e1_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_enniatin_b/EnniatinB_Escriv2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;EnniatinB_Ojiro2023_reference&quot;,&quot;label&quot;:&quot;Ojiro_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_enniatin_b/EnniatinB_Ojiro2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;EnniatinB_Fraeyman2016_reference&quot;,&quot;label&quot;:&quot;Fraeyman_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_enniatin_b/EnniatinB_Fraeyman2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The retention function lacks distribution rate constants, and the model's terminal half-life deviates from the reported 1.57 h by a factor of 2.3.
 
 <div class="pk-model-meta" hidden drug="Enniatin B" model-id="EnniatinB_Devreese2014_reference" status="needs_review" stale="false" population="pigs" measured-compound="Enniatin B1" parameterization="mechanistic" topology="retention"></div>
 
@@ -50,7 +50,13 @@ Devreese M, Broekaert N, De Mil T, Fraeyman S, De Backer P, Croubels S. Pilot to
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The retention function lacks distribution rate constants, and the model's terminal half-life deviates from the reported 1.57 h by a factor of 2.3.**
+
+The model uses a retention structure but does not define the transfer parameters A1 and A2, preventing the characterization of distribution kinetics. Additionally, the simulated terminal half-life fails consistency checks against the reported value of 1.57 hours, with the model yielding a result 2.3025 times the paper's estimate. Extracted — Enniatin B1: t1/2z 0.15 h, t1/2α 0.15 h, t1/2β 1.57 h, CL 6.5 L/h/kg, V 33.9 L/kg, tlag 9.6 min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

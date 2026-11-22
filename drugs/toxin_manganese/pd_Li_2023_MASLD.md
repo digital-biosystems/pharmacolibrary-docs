@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports no significant association between blood manganese levels (in μg/L) and MASLD risk, indicating no pharmacodynamic mechanism or potency values (e.g., IC50, Emax) are provided for this metal.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Li_2023`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`

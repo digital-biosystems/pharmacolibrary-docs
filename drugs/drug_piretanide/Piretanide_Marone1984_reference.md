@@ -16,7 +16,7 @@ Marone C, Reubi FC, Perisic M, Lahn W. Pharmacokinetics of high doses of piretan
 
 ## Population and dosing
 
-**Population:** patients with chronic renal failure · condition renal impairment · age group adult · n = &gt;=10.
+**Population:** patients with chronic renal failure · condition renal impairment · age group adult.
 
 ## Model
 

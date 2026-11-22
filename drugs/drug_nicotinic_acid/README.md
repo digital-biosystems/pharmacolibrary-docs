@@ -34,7 +34,7 @@ Nicotinic acid is a vitamin B3 derivative and lipid-regulating agent used to tre
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Iwaki_1996_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Iwaki1996_reference.md) | — | parent + metabolite (no model) | 3 | Iwaki M et al., Acute dose-dependent disposition studie…, Drug metabolism and disposi… (1996) | — |
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Wu_1989_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Wu1989_reference.md) | — | 1-compartment (no model) | 4 | Wu Y et al., [Determination of aspirin and nicotinic…, Yao xue xue bao = Acta phar… (1989) | — |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Wu_1989_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Wu1989_reference.md) | — | 1-compartment (no model) | 4 | Wu Y et al., [Determination of aspirin and nicotinic…, Yao xue xue bao = Acta phar… (1989) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -43,22 +43,6 @@ Nicotinic acid is a vitamin B3 derivative and lipid-regulating agent used to tre
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Andersson_2017_FFA](drugs/drug_nicotinic_acid/pd_Andersson_2017_FFA.md) | FFA ← NiAc · indirect response — drug inhibits the loss of FFA | — | Andersson R et al., Modeling of free fatty acid dynamics: i…, Journal of pharmacokinetics… (2017) | [10.1007/s10928-017-9512-6](https://doi.org/10.1007/s10928-017-9512-6) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Andersson_2017_insulin](drugs/drug_nicotinic_acid/pd_Andersson_2017_insulin.md) | insulin ← NiAc · indirect response — drug inhibits the loss of insulin | — | Andersson R et al., Modeling of free fatty acid dynamics: i…, Journal of pharmacokinetics… (2017) | [10.1007/s10928-017-9512-6](https://doi.org/10.1007/s10928-017-9512-6) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Andersson_2016_FFA](drugs/drug_nicotinic_acid/pd_Andersson_2016_FFA.md) | FFA ← nicotinic_acid · indirect response — drug inhibits the production of FFA | — | Andersson R et al., Dose-response-time modelling: Second-ge…, European journal of pharmac… (2016) | [10.1016/j.ejps.2015.10.018](https://doi.org/10.1016/j.ejps.2015.10.018) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nicotinic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC22A5` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC22A5` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DGAT2 (inhibitor), HCAR2 (target), HCAR3 (target), NNMT (binder), QPRT (binder), SERPINA7 (inhibitor), SLC16A1 (substrate), SLC16A3 (unknown), SLC5A8 (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -72,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:46 | 17:49 | 2/0/0 | 2/0/0 | 0/0/0 | 297,121/49,547 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 8/0 | 0 |
+| 2026-10-06 20:46 | 17:49 | 2/0/0 | 3/0/0 | 0/0/0 | 297,121/49,547 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 42 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

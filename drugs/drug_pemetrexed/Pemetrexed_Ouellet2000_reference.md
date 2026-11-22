@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;pemetrexed&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/&quot;},{&quot;label&quot;:&quot;Ouellet_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Srinivasan2019_reference&quot;,&quot;label&quot;:&quot;Srinivasan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Srinivasan2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Srinivasan2019_reference&quot;,&quot;label&quot;:&quot;Srinivasan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Srinivasan2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pemetrexed — `Pemetrexed_Ouellet2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-07 17:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The central volume of distribution for pemetrexed disodium, valued at 11.3 with a unit of '1', is dimensionally invalid.
+> Pemetrexed's central volume of distribution has an incorrect unit dimension recorded as dimensionless.
 
-<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="rejected" stale="true" population="cancer patients" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Ouellet D, Periclou AP, Johnson RD, Woodworth JR, Lalonde RL. Population pharmacokinetics of pemetrexed disodium (ALIMTA) in patients with cancer. Cancer chemotherapy and pharmacology 46(3):227–234 (2000).
@@ -17,7 +17,7 @@ Ouellet D, Periclou AP, Johnson RD, Woodworth JR, Lalonde RL. Population pharmac
 
 ## Population and dosing
 
-**Population:** cancer patients · age group adult · n = No information.
+**Population:** cancer patients · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Ouellet D, Periclou AP, Johnson RD, Woodworth JR, Lalonde RL. Population pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Ouellet D, Periclou AP, Johnson RD, Woodworth JR, Lalonde RL. Population pharmac
 
 ### Reviewer guidance
 
-**The central volume of distribution for pemetrexed disodium, valued at 11.3 with a unit of '1', is dimensionally invalid.**
+**Pemetrexed's central volume of distribution has an incorrect unit dimension recorded as dimensionless.**
 
-The central volume is assigned a dimensionless unit rather than a volume unit, causing a structural dimension mismatch. The second reader could not confirm the reported values for central volume, intercompartmental clearance, or peripheral volume. Consequently, the record was rejected due to this inconsistency and the lack of a complete fitted model from the abstract-only source. Extracted — pemetrexed: V1 11.3 1, Q 3.21 l/h, V2 5.2 l.
+The recorded unit for the 11.3 L central volume is listed as '1', creating a dimensional conflict with the required volume dimension. The abstract-only source provided summary statistics rather than fitted model results. The intercompartmental clearance of 3.21 l/h and peripheral volume of 5.2 l were recorded without unit errors. Extracted — pemetrexed: V1 11.3 1, Q 3.21 l/h, V2 5.2 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pemetrexed disodium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

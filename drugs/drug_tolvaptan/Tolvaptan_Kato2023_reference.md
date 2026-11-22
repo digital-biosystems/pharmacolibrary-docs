@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Kato_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Van_2006_UFR&quot;,&quot;label&quot;:&quot;Van_2006 \u00b7 UFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/pd_Van_2006_UFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Liu2024_reference&quot;,&quot;label&quot;:&quot;Liu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Liu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017v2_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Van_2006_UFR&quot;,&quot;label&quot;:&quot;Van_2006 \u00b7 UFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/pd_Van_2006_UFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tolvaptan — `Tolvaptan_Kato2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> AUC∞ has no unit.
 
-<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Kato2023_reference" status="rejected" stale="false" population="acute worsening heart failure patients" measured-compound="tolvaptan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Kato2023_reference" status="needs_review" stale="false" population="patients with decompensated heart failure" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kato T, Yasuda Y, Okamoto H, Saito Y, Nakano Y, Matsuura K et al. Total body fluid is the factor that affects the pharmacokinetics of tolvaptan, and its efficacy, in acute worsening heart failure patients. Pharmacology research & perspectives 11(3):e01088 (2023).
@@ -17,29 +17,30 @@ Kato T, Yasuda Y, Okamoto H, Saito Y, Nakano Y, Matsuura K et al. Total body flu
 
 ## Population and dosing
 
-**Population:** acute worsening heart failure patients · condition heart failure · age group adult.
+**Population:** patients with decompensated heart failure · condition heart failure · age group adult.
 
-**Dosing:** 7.5, 15 mg, oral, multiple, every 24 h.
+**Dosing:** 3.75, 7.5, 15 mg, oral, multiple, every 24 h.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | Trough | Ctrough | .0005 | ng/mL |
-| AUC0–∞ | AUC∞ | -2.881 | ng·h/mL |
-| k a (h -1 ) | kabs | 1.34 | h -1 |
+| AUC0–∞ | AUC∞ | -2.881 |  |
+| CL/F | CL/F | 0.17 | L/kg/h |
+| Vd/F | V/F | 1.63 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +50,11 @@ Kato T, Yasuda Y, Okamoto H, Saito Y, Nakano Y, Matsuura K et al. Total body flu
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**AUC∞ has no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Ctrough and AUC∞), so that value has no SI equivalent.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Ctrough), so that value has no SI equivalent. Extracted — tolvaptan: Ctrough 0.0005 ng/mL, AUC∞ -2.88, CL/F 0.17 L/kg/h, V/F 1.63 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tolvaptan, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,8 +63,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Trough | `Q37` · Ctrough | .0005 | ng/mL |  |  | ng/mL | exact (1) | Kato_2023_table_2:row11:col1 |
-| AUC0–∞ | `Q17` · AUC∞ | -2.881 | ng·h/mL |  |  | ng·h/mL | exact (1) | Kato_2023_table_2:row12:col1, Kato_2023_table_2:row12:col3 |
-| k a (h -1 ) | `Q49` · kabs | 1.34 | h -1 | 0.0003722 | 1/s | 1/h | review_gapfill (0.7) | Van_2013_2:review |
+| AUC0–∞ | `Q17` · AUC∞ | -2.881 |  |  |  |  | exact (1) | Kato_2023_table_2:row12:col1, Kato_2023_table_2:row12:col3 |
+| CL/F | `Q27` · CL/F | 0.17 | L/kg/h | 3.306e-06 | m3/s | L/h | exact (1) | Kato_2023:results_prose |
+| Vd/F | `Q76` · V/F | 1.63 | L/kg | 0.1141 | m3 | L | exact (1) | Kato_2023:results_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,6 +75,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'univariate / r 2' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Age' — extend the ontology if this is a real PK parameter (source ['Kato_2023_table_2:row1:col1'])
 - dropped unlinked row (NIL): 'Sex' — extend the ontology if this is a real PK parameter (source ['Kato_2023_table_2:row2:col1'])
 - dropped unlinked row (NIL): 'Height (cm)' — extend the ontology if this is a real PK parameter (source ['Kato_2023_table_2:row3:col1'])
@@ -86,14 +89,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 - dropped unlinked row (NIL): 'MRA' — extend the ontology if this is a real PK parameter (source ['Kato_2023_table_2:row20:col3'])
 - dropped unlinked row (NIL): 'Loop diuretics (as the equivalent dose of Furosemide)' — extend the ontology if this is a real PK parameter (source ['Kato_2023_table_2:row21:col1'])
 - dropped unlinked row (NIL): 'Inotrope' — extend the ontology if this is a real PK parameter (source ['Kato_2023_table_2:row22:col1'])
-- implicit units: 'Trough' → ng/mL (from the paper text: "The text states: 'In Japanese HF patients who received oral doses of tolvaptan 7.5 mg, at day 1 and day 7, C max were 92")
-- implicit units: 'AUC0–∞' → ng·h/mL (from the paper text: "The text states: 'the median AUC0–∞ value (IQR) was 1097.5 (416.6–1963.4) ng·h/mL' and 'AUC0–∞ was 960 ng·h/mL or more w")
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tolvaptan
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- skipped review gap-fill of CL from Castro-Suárez_2020: its label names a different analyte ('nimotuzumab') — 'Clearance of nimotuzumab from the central compartment ... ADPKD'
+- salvaged Q27 ('CL/F'=0.17) from results prose — parameter table was unreadable
+- salvaged Q76 ('Vd/F'=1.63) from results prose — parameter table was unreadable
+- implicit units: 'Trough' → ng/mL (from the paper text: 'The text states: "In Japanese HF patients who received oral doses of tolvaptan 7.5 mg, at day 1 and day 7, C max were 92')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tolvaptan
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Van_2013_2's review values (primary lacked it)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -105,15 +108,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 0.17 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd/f]` |  | 1.63 | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | 0.17 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` |  | .015067 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` | 1.63 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tolvaptan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tolvaptan | unknown | mismatch |
 
 </details>
 
@@ -127,12 +133,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Kato_2023_table_2:row12:col1', 'Kato_2023_table_2:row12:col3'] |
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Kato_2023_table_2:row11:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Van_2013_2:review'] |
+| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 |  | ['Kato_2023_table_2:row12:col1', 'Kato_2023_table_2:row12:col3'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 11.9 L/h | ['Kato_2023:results_prose'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 114 L | ['Kato_2023:results_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,9 +153,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +175,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Kato2023_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Kato2023_reference%0APaper%3A%20Kato_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Kato2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 18:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 10:51 UTC</sub>

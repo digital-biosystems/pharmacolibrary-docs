@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;escitalopram&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Escitalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Escitalopram_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Escitalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Escitalopram_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # escitalopram
 
@@ -25,7 +25,7 @@ Escitalopram is a selective serotonin reuptake inhibitor used to treat major dep
 
 ## Start here
 
-> **Friberg_2006_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with citalopram overdose, n = 52. [Run it in the simulator](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md?tab=Simulation) · [record](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md)
+> **Friberg_2006_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with citalopram overdose, n = 52. [Run it in the simulator](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md?tab=Simulation) · [record](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,10 +39,10 @@ Escitalopram is a selective serotonin reuptake inhibitor used to treat major dep
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Friberg_2006_reference](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Friberg_2006_reference](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6931)</sub> | [Liu_2022_reference](drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md) | — | 1-compartment (no model) | 3 (+2 cov.) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C2_center_consistency_age failed (ratio None)</sub> | [Liu_2023_reference](drugs/drug_escitalopram/Escitalopram_Liu2023_reference.md) | — | 2-compartment (no model) | 4 (+5 cov.) | Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023) | [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Poweleit_2023_reference](drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Poweleit EA et al., Escitalopram and Sertraline Population…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01294-8](https://doi.org/10.1007/s40262-023-01294-8) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Poweleit_2023_reference](drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Poweleit EA et al., Escitalopram and Sertraline Population…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01294-8](https://doi.org/10.1007/s40262-023-01294-8) |
 
 ## Pharmacodynamics (PD)
 
@@ -54,27 +54,6 @@ Escitalopram is a selective serotonin reuptake inhibitor used to treat major dep
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2025_depression_status](drugs/drug_escitalopram/pd_Wang_2025_depression_status.md) | depression status ← escitalopram · disease-progression model | — | Wang TY et al., PK/PD modeling of the effect of Escital…, Journal of pharmaceutical s… (2025) | [10.1016/j.xphs.2025.103994](https://doi.org/10.1016/j.xphs.2025.103994) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2025_lung_metastatic_foci](drugs/drug_escitalopram/pd_Wang_2025_lung_metastatic_foci.md) | lung metastatic foci ← escitalopram · inhibition effect | — | Wang TY et al., PK/PD modeling of the effect of Escital…, Journal of pharmaceutical s… (2025) | [10.1016/j.xphs.2025.103994](https://doi.org/10.1016/j.xphs.2025.103994) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Friberg_2006_QTci](drugs/drug_escitalopram/pd_Friberg_2006_QTci.md) | Heart-rate corrected QT interval ← citalopram · delayed effect through an effect compartment | ▶ model + simulator | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=escitalopram).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate, `MAOA` substrate, `MAOB` substrate | DrugBank actor |
-| metabolism | liver | `AOX1` substrate, `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
-| metabolism | platelet | `MAOB` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-| — | brain | `SLC6A4` binder | DrugBank actor |
-| — | platelet | `SLC6A4` binder | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (inhibitor), ADRA2A (inhibitor), CHRM1 (inhibitor), DRD2 (inhibitor), HRH1 (inhibitor), HTR1A (inhibitor), HTR2A (inhibitor), HTR2C (inhibitor), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -88,13 +67,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:00 | 3:34 | 4/0/0 | 4/0/0 | 0/0/0 | 209,977/13,046 | ollama / glm-5.3-flash | 18 | 13/5 | 8/0 | 0 |
+| 2026-10-06 23:00 | 3:34 | 4/0/0 | 6/0/0 | 0/0/0 | 209,977/13,046 | ollama / glm-5.3-flash | 18 | 13/5 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 129 matched, 20 returned
 - **screened:** 15  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

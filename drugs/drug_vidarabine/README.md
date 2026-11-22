@@ -26,7 +26,7 @@ Vidarabine is a nucleoside antiviral used to treat herpes simplex infections. It
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Yang_1992_reference](drugs/drug_vidarabine/Vidarabine_Yang1992_reference.md) | — | 1-compartment (no model) | 3 | Yang TY et al., [Studies on pharmacokinetics of 9-beta-…, Yao xue xue bao = Acta phar… (1992) | — |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Yang_1992_reference](drugs/drug_vidarabine/Vidarabine_Yang1992_reference.md) | — | 1-compartment (no model) | 3 | Yang TY et al., [Studies on pharmacokinetics of 9-beta-…, Yao xue xue bao = Acta phar… (1992) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -36,15 +36,6 @@ Vidarabine is a nucleoside antiviral used to treat herpes simplex infections. It
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Rabie_2023_EC50_2](drugs/drug_vidarabine/pd_Rabie_2023_EC50_2.md) | 50% Reduction in Viral RNA Copy ← vidarabine · direct sigmoid Emax (Hill) effect | — | Rabie AM et al., Evaluation of a series of nucleoside an…, Medicinal chemistry researc… (2023) | [10.1007/s00044-022-02970-3](https://doi.org/10.1007/s00044-022-02970-3) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Rabie_2023_RdRp](drugs/drug_vidarabine/pd_Rabie_2023_RdRp.md) | Inhibition of SARS-CoV-2 RdRp in vitro ← vidarabine · inhibition effect | — | Rabie AM et al., Evaluation of a series of nucleoside an…, Medicinal chemistry researc… (2023) | [10.1007/s00044-022-02970-3](https://doi.org/10.1007/s00044-022-02970-3) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_2021_activity_against_herpes_simplex_virus_type_1_HSV_1](drugs/drug_vidarabine/pd_Wang_2021_activity_against_herpes_simplex_virus_type_1_HSV_1.md) | activity against herpes simplex virus type 1 (HSV-1) ← vidarabine · inhibition effect | — | Wang Z et al., Synthesis and antiviral effect of phosp…, Bioorganic & medicinal chem… (2021) | [10.1016/j.bmcl.2021.128405](https://doi.org/10.1016/j.bmcl.2021.128405) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vidarabine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: ADA (substrate), ADORA2B (modulator), TK (inducer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,13 +49,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:59 | 7:27 | 1/0/0 | 2/0/0 | 0/0/0 | 144,283/41,308 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 15:59 | 7:27 | 1/0/0 | 4/0/0 | 0/0/0 | 144,283/41,308 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

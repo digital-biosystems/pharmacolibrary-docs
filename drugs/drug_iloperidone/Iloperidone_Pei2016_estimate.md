@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Iperidone's elimination clearance was left at a library placeholder, and kabs was missing from the model builder's output.
+> Iloperidone’s elimination clearance has no reported value, so a library placeholder was used and the record was held back rather than published.
 
 <div class="pk-model-meta" hidden drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="model_quarantined" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -61,13 +61,13 @@ Pei Q, Huang L, Huang J, Gu JK, Kuang Y, Zuo XC et al. Influences of CYP2D6. Act
 
 ### Reviewer guidance
 
-**Iperidone's elimination clearance was left at a library placeholder, and kabs was missing from the model builder's output.**
+**Iloperidone’s elimination clearance has no reported value, so a library placeholder was used and the record was held back rather than published.**
 
-The record lacks a value for iloperidone's elimination clearance, forcing the use of a library placeholder that held the model back. Additionally, the absorption rate constant kabs was neither emitted nor included in the model builder's defaulted parameters. The topology also failed to match the expected parent-metabolite structure. Extracted — iloperidone: kabs 2.26 h -1, kel 0.067 h -1, V1 679 L; M1 (P-88): kel 0.16 h -1, V 10 L, kfm 0.00451 h -1; M2 (P-95): kel 0.106 h -1, V 10 L, kfm 0.00649 h -1.
+No value for iloperidone's elimination clearance. The model was built, but iloperidone's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published. The covariate scenarios were not simulated: the base model was simulated, not the covariate effects the record defines. The absorption rate constant was also not represented or defaulted (6 of 7 parameters were covered), and the recorded parent–metabolite central-compartment structure did not match the model structure used. Extracted — iloperidone: kabs 2.26 h -1, kel 0.067 h -1, V1 679 L; M1 (P-88): kel 0.16 h -1, V 10 L, kfm 0.00451 h -1; M2 (P-95): kel 0.106 h -1, V 10 L, kfm 0.00649 h -1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -160,14 +160,15 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 6 covered | neither emitted nor in defaulted[]: ['kabs'] |
-| T3_rate_constant_conversion |  | pass | K23 (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 6 covered |  | neither emitted nor in defaulted[]: ['kabs'] |
+| T3_rate_constant_conversion |  | pass | K23 (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

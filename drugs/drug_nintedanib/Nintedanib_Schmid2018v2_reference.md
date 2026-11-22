@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the model structure was an oral one-compartment model, but the output was specified as the metabolite concentration rather than the measured parent nintedanib.
+> Nintedanib was refused because its measured-drug concentration was assigned to the central compartment rather than the metabolite compartment, and its parent–metabolite structure was represented as one-compartment oral PK.
 
 <div class="pk-model-meta" hidden drug="nintedanib" model-id="Nintedanib_Schmid2018v2_reference" status="rejected" stale="false" population="patients with NSCLC or IPF" measured-compound="nintedanib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Schmid U, Liesenfeld KH, Fleury A, Dallinger C, Freiwald M. Population pharmacok
 
 ### Reviewer guidance
 
-**The record was rejected because the model structure was an oral one-compartment model, but the output was specified as the metabolite concentration rather than the measured parent nintedanib.**
+**Nintedanib was refused because its measured-drug concentration was assigned to the central compartment rather than the metabolite compartment, and its parent–metabolite structure was represented as one-compartment oral PK.**
 
-The measured compound was identified as nintedanib, yet the output variable was expected to be the metabolite concentration while the model only produced central compartment concentrations. The model topology was implemented as a one-compartment enteral model, whereas the parent-metabolite structure required a different structural arrangement. Additionally, the absorption lag time was left at a library default rather than using an explicit estimate, and apparent assumptions were applied without molar correction. Extracted — nintedanib: CL/F 897 L/h, V1/F 465 L, kabs 0.0376 1/h, tlag 0.417 h, allometric_exponent 0.619.
+The record measures nintedanib and identifies BIBF 1202 as its presystemically formed metabolite, but assigns the reported concentration to the central compartment; its one-compartment oral structure also does not match the parent–metabolite structure. The model builder defaulted the absorption lag time and assumed F=1, Fm=1, with no molar correction. A second reader disputed the verdict, with agreement 0.824 and 0 of 1 reader agreeing. Extracted — nintedanib: CL/F 897 L/h, V1/F 465 L, kabs 0.0376 1/h, tlag 0.417 h, allometric_exponent 0.619.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of percentage change in aucτ,ss: this record has none, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -187,15 +187,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=nintedanib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=nintedanib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.824, 0 of 1 reader(s) agree | 0.824 | cross-check disputed by a second reader: verdict disputed, agreement 0.824, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

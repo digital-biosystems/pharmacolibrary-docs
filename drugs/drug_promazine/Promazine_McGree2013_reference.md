@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The model uses library defaults for absorption rather than paper estimates, leaving the oral absorption kinetics of promazine unsupported by the source.
+> Promazine model uses placeholder defaults for absorption rate constant and lag time, not values from the paper.
 
 <div class="pk-model-meta" hidden drug="promazine" model-id="Promazine_McGree2013_reference" status="needs_review" stale="false" population="" measured-compound="promazine" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ McGree JM, Noble G, Schneiders F, Dunstan AJ, McKinney AR, Boston R et al. A Bay
 
 ### Reviewer guidance
 
-**The model uses library defaults for absorption rather than paper estimates, leaving the oral absorption kinetics of promazine unsupported by the source.**
+**Promazine model uses placeholder defaults for absorption rate constant and lag time, not values from the paper.**
 
-The review identified that absorption parameters were not reported in the source material and were instead filled with placeholder values. Specifically, the absorption rate constant and lag time were not estimated, meaning the simulated drug profile does not reflect the actual study data. This substitution renders the model's prediction of oral bioavailability unreliable for promazine. Extracted — promazine: CL/F 769 L/hr, V/F 6.87e+03 L.
+The source paper does not report estimates for the absorption rate constant or lag time. Consequently, the model relies on generic library placeholders for these parameters rather than study-specific values. A second reader also disagreed on which numerical value corresponds to clearance and volume, identifying a mismatch in the parameter assignments. Extracted — promazine: CL/F 769 L/hr, V/F 6.87e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has none, the second reading 109; it also differs on 1 more field. That field does not shape the model.
 
@@ -122,15 +122,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=promazine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=promazine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

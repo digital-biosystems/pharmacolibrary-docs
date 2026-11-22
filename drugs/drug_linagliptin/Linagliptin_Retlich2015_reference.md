@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Retlich_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4_activity&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4 activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4_activity.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected due to a negative clearance estimate (-0.765) and a parameter unit that could not be converted to standard SI units.
+> The linagliptin record contains a negative total clearance value, an unconverted absorption rate constant unit, and a missing binding link to DPP-4.
 
 <div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_Retlich2015_reference" status="rejected" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="2C"></div>
 
@@ -57,9 +56,9 @@ Retlich S, Duval V, Graefe-Mody U, Friedrich C, Patel S, Jaehde U et al. Populat
 
 ### Reviewer guidance
 
-**The record was rejected due to a negative clearance estimate (-0.765) and a parameter unit that could not be converted to standard SI units.**
+**The linagliptin record contains a negative total clearance value, an unconverted absorption rate constant unit, and a missing binding link to DPP-4.**
 
-The total clearance parameter is recorded as -0.765, a negative value that is pharmacokinetically implausible for drug elimination. Additionally, one reported unit could not be converted to standard SI units, leaving the parameter without a valid value for analysis. The second reader disagreed on the primary analyte, identifying it as unknown rather than linagliptin. Extracted — linagliptin: kabs 0.933 1/h, t1/2ka 0.795, k13 0.441 1/h, V1/F 715 L, Q/F 412 L/h, V 1.65e+03 L, CL/F 258 L/h, Bmax 4.97 nmol/L, … (+3).
+The parameter labeled Corr F_CL is reported as -0.765, which is an impossible value for total clearance. The half-life of the absorption phase, t1/2ka, is given as 0.795 but lacks a unit, preventing conversion to a standard rate constant. The second reader indicated a binding relationship between linagliptin and DPP-4 activity that is absent from the model structure. Extracted — linagliptin: kabs 0.933 1/h, t1/2ka 0.795, k13 0.441 1/h, V1/F 715 L, Q/F 412 L/h, V 1.65e+03 L, CL/F 258 L/h, Bmax 4.97 nmol/L, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

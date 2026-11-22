@@ -5,11 +5,11 @@
 
 # levomethadone — `Levomethadone_Sandbaumhter20212_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 03:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because k21, V2, Vss, AUC∞, and CLb have unconvertible units, and the d-methadone metabolite path is unreachable from the levomethadone dose.
+> Levomethadone elimination and transfer rate constants were recorded with volume units instead of time units, and l-EDDP was unreachable.
 
-<div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Sandbaumhter20212_reference" status="rejected" stale="true" population="anesthetized Shetland ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Sandbaumhter20212_reference" status="rejected" stale="false" population="anesthetized Shetland ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Sandbaumhüter FA, Gittel C, Larenza-Menzies MP, Theurillat R, Thormann W, Braun C. Stereoselective methadone disposition after administration of racemic methadone to anesthetized Shetland ponies assessed by capillary electrophoresis. Electrophoresis 42(17-18):1826–1831 (2021).
@@ -54,7 +54,7 @@ Sandbaumhüter FA, Gittel C, Larenza-Menzies MP, Theurillat R, Thormann W, Braun
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,9 +64,9 @@ Sandbaumhüter FA, Gittel C, Larenza-Menzies MP, Theurillat R, Thormann W, Braun
 
 ### Reviewer guidance
 
-**The record was rejected because k21, V2, Vss, AUC∞, and CLb have unconvertible units, and the d-methadone metabolite path is unreachable from the levomethadone dose.**
+**Levomethadone elimination and transfer rate constants were recorded with volume units instead of time units, and l-EDDP was unreachable.**
 
-Parameters k21, V2, Vss, AUC∞, and CLb are listed with the unit 'unit' instead of a valid physical unit, preventing conversion to SI. The model structure includes a d-methadone to d-EDDP metabolism link, but d-methadone has no connection from the measured levomethadone compound, leaving that metabolic path orphaned. Extracted — levomethadone: λ1 0.86 L/min, kel 0.014 L/min, t1/2α 0.973 min, t1/2β 53.9 min, k12 0.641 L/min, k21 0.114 unit, V2 0.393 unit, V1 0.078 L/kg, … (+5).
+The elimination rate constant (0.014) and transfer constants k12 (0.641) and k21 (0.114) were assigned units of L/min rather than the required 1/min, creating a dimensional conflict. The metabolite l-EDDP was defined as a product of l-methadone metabolism but lacked a path from the dose, making it an orphan compartment. Several derived parameters, such as AUC and clearance, also failed to convert due to missing unit definitions. Extracted — levomethadone: λ1 0.86 L/min, kel 0.014 L/min, t1/2α 0.973 min, t1/2β 53.9 min, k12 0.641 L/min, k21 0.114 unit, V2 0.393 unit, V1 0.078 L/kg, … (+5).
 
 <sub>reviewed by qwen3.8-27b</sub>
 

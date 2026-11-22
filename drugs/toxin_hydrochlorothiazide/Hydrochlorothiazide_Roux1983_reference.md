@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Roux_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrochlorothiazide/Hydrochlorothiazide_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Roux1983_reference&quot;,&quot;label&quot;:&quot;Roux_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrochlorothiazide/Hydrochlorothiazide_Roux1983_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrochlorothiazide/Hydrochlorothiazide_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Roux1983_reference&quot;,&quot;label&quot;:&quot;Roux_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrochlorothiazide/Hydrochlorothiazide_Roux1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrochlorothiazide/Hydrochlorothiazide_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrochlorothiazide/Hydrochlorothiazide_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Hydrochlorothiazide — `Hydrochlorothiazide_Roux1983_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Hydrochlorothiazide" model-id="Hydrochlorothiazide_Roux1983_reference" status="extracted" stale="false" population="healthy subjects" measured-compound="Hydrochlorothiazide" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Hydrochlorothiazide" model-id="Hydrochlorothiazide_Roux1983_reference" status="simulated" stale="false" population="healthy subjects" measured-compound="Hydrochlorothiazide" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Roux A, Le Liboux A, Delhotal B, Gaillot J, Flouvat B. Pharmacokinetics in man of acebutolol and hydrochlorothiazide as single agents and in combination. European journal of clinical pharmacology 24(6):801–806 (1983).
@@ -36,7 +34,7 @@ Roux A, Le Liboux A, Delhotal B, Gaillot J, Flouvat B. Pharmacokinetics in man o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +42,13 @@ Roux A, Le Liboux A, Delhotal B, Gaillot J, Flouvat B. Pharmacokinetics in man o
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -111,6 +115,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q57 | pass | [time] |  | ['Roux_1983:abstract', 'Roux_1983:abstract'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Roux_1983:abstract', 'Roux_1983:abstract', 'Roux_1983:abstract', 'Roux_1983:abstract'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | retainedFraction (measured=Hydrochlorothiazide) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

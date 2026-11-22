@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nicardipine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nicardipine_Modi1993_reference&quot;,&quot;label&quot;:&quot;Modi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nicardipine_Modi1993_reference&quot;,&quot;label&quot;:&quot;Modi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # nicardipine
 
@@ -26,13 +26,13 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat angina, h
 
 ## Start here
 
-> **Modi_1993_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy males. [Run it in the simulator](drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md?tab=Simulation) · [record](drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md)
+> **Modi_1993_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy males. [Run it in the simulator](drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md?tab=Simulation) · [record](drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Guerret_1989 · CL</text><circle cx="428.4" cy="30.0" r="4" fill="#ef6c00"><title>Guerret_1989 · CL: 48 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Modi_1993 · CL ·/kg</text><circle cx="473.1" cy="46.0" r="4" fill="#78909c"><title>Modi_1993 · CL ·/kg: 64.4 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Modi_1993 · V ·/kg</text><circle cx="289.6" cy="30.0" r="4" fill="#78909c"><title>Modi_1993 · V ·/kg: 19.25 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Guerret_1989 · V ·/kg</text><circle cx="485.8" cy="46.0" r="4" fill="#ef6c00"><title>Guerret_1989 · V ·/kg: 70 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Guerret_1989 · CL</text><circle cx="428.4" cy="30.0" r="4" fill="#ef6c00"><title>Guerret_1989 · CL: 48 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Modi_1993 · CL ·/kg</text><circle cx="473.1" cy="46.0" r="4" fill="#ef6c00"><title>Modi_1993 · CL ·/kg: 64.4 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Modi_1993 · V ·/kg</text><circle cx="289.6" cy="30.0" r="4" fill="#ef6c00"><title>Modi_1993 · V ·/kg: 19.25 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Guerret_1989 · V ·/kg</text><circle cx="485.8" cy="46.0" r="4" fill="#ef6c00"><title>Guerret_1989 · V ·/kg: 70 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -40,8 +40,8 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat angina, h
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Modi_1993_reference](drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Modi NB et al., Application of a system analysis approa…, Journal of pharmaceutical s… (1993) | [10.1002/jps.2600820707](https://doi.org/10.1002/jps.2600820707) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Guerret_1989_reference](drugs/drug_nicardipine/Nicardipine_Guerret1989_reference.md) | — | 1-compartment (no model) | 2 | Guerret M et al., Simultaneous study of the pharmacokinet…, European journal of clinica… (1989) | [10.1007/BF00558504](https://doi.org/10.1007/BF00558504) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Modi_1993_reference](drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Modi NB et al., Application of a system analysis approa…, Journal of pharmaceutical s… (1993) | [10.1002/jps.2600820707](https://doi.org/10.1002/jps.2600820707) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Sadan_2023_reference](drugs/drug_nicardipine/Nicardipine_Sadan2023_reference.md) | — | 2-compartment (no model) | 5 | Sadan O et al., Cerebrospinal Fluid Pharmacokinetics of…, medRxiv : the preprint serv… (2023) | [10.1101/2023.10.17.23297116](https://doi.org/10.1101/2023.10.17.23297116) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Sadan_2024_reference](drugs/drug_nicardipine/Nicardipine_Sadan2024_reference.md) | — | 2-compartment (no model) | 5 | Sadan O et al., Cerebrospinal Fluid Pharmacokinetics of…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2488](https://doi.org/10.1002/jcph.2488) |
 | <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Shityakov_2013_reference](drugs/drug_nicardipine/Nicardipine_Shityakov2013_reference.md) | — | parent + metabolite (no model) | 0 | Shityakov S et al., Pharmacokinetic delivery and metabolizi…, TheScientificWorldJournal (2013) | [10.1155/2013/131358](https://doi.org/10.1155/2013/131358) |
@@ -52,26 +52,6 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat angina, h
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kim_2019_active_tension](drugs/drug_nicardipine/pd_Kim_2019_active_tension.md) | active tension ← nicardipine · direct sigmoid Emax (Hill) effect | — | Kim DJ et al., The relaxant effect of nicardipine on t…, Anesthesia and pain medicine (2019) | [10.17085/apm.2019.14.4.429](https://doi.org/10.17085/apm.2019.14.4.429) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kim_2019_frequency_of_contraction](drugs/drug_nicardipine/pd_Kim_2019_frequency_of_contraction.md) | frequency of contraction ← nicardipine · direct sigmoid Emax (Hill) effect | — | Kim DJ et al., The relaxant effect of nicardipine on t…, Anesthesia and pain medicine (2019) | [10.17085/apm.2019.14.4.429](https://doi.org/10.17085/apm.2019.14.4.429) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nicardipine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), CACNA2D1 (inhibitor), CACNB2 (inhibitor), CACNG1 (inhibitor), CALM1 (other/unknown), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), PDE1A (inhibitor), PDE1B (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -85,13 +65,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 13:16 | 2:32 | 2/3/0 | 1/0/0 | 0/0/0 | 51,380/12,452 | einfracz / qwen3.8-27b | 13 | 3/10 | 13/0 | 0 |
+| 2026-10-13 13:16 | 2:32 | 2/3/0 | 2/0/0 | 0/0/0 | 51,380/12,452 | einfracz / qwen3.8-27b | 13 | 3/10 | 13/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 183 matched, 60 returned
 - **screened:** 15  ·  **relevant:** 5
-- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

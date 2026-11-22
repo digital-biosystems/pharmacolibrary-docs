@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Cyclotrimethylenetrinitramine&quot;,&quot;href&quot;:&quot;drugs/toxin_cyclotrimethylenetrinitramine/&quot;},{&quot;label&quot;:&quot;Belden_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyclotrimethylenetrinitramine_Krishnan2009_reference&quot;,&quot;label&quot;:&quot;Krishnan_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyclotrimethylenetrinitramine_Krishnan2009_reference&quot;,&quot;label&quot;:&quot;Krishnan_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_cyclotrimethylenetrinitramine/Cyclotrimethylenetrinitramine_Krishnan2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> RDX elimination rate constant k(el) was assigned 1.28 ml/g/h, a dimensionally invalid unit incompatible with the required per time.
 
 <div class="pk-model-meta" hidden drug="Cyclotrimethylenetrinitramine" model-id="Cyclotrimethylenetrinitramine_Belden2005_reference" status="rejected" stale="false" population="channel catfish and aquatic oligochaetes" measured-compound="Hexahydro-1,3,5-trinitro-1,3,5-triazine (RDX)" parameterization="mechanistic" topology="retention"></div>
 
@@ -46,7 +46,13 @@ Belden JB, Lotufo GR, Lydy MJ. Accumulation of hexahydro- 1,3,5-trinitro- 1,3,5-
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**RDX elimination rate constant k(el) was assigned 1.28 ml/g/h, a dimensionally invalid unit incompatible with the required per time.**
+
+The record reports the terminal elimination rate constant for RDX as 1.28 ml/g/h, which represents a clearance or tissue concentration ratio rather than a first-order rate constant dimension of inverse time. This dimensional mismatch renders the parameter physically inconsistent within the model structure. Furthermore, the entire record was derived exclusively from the paper's abstract, meaning the reported values serve as summary statistics rather than estimates from a fitted pharmacokinetic model. Extracted — Hexahydro-1,3,5-trinitro-1,3,5-triazine (RDX): kel 1.28 ml/g/h, t1/2z 0.28 h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

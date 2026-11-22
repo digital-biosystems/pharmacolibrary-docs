@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;romiplostim&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Perez_Ruixo_2012_PLT&quot;,&quot;label&quot;:&quot;Perez-Ruixo_2012 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/pd_Perez_Ruixo_2012_PLT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # romiplostim
 
@@ -18,7 +17,7 @@ Romiplostim is a fusion protein analog of thrombopoietin used to treat thrombocy
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Fan_2023_reference](drugs/drug_romiplostim/Romiplostim_Fan2023_reference.md) | — | 1-compartment (no model) | 2 | Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023) | [10.1021/acsptsci.3c00194](https://doi.org/10.1021/acsptsci.3c00194) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Fan_2023_reference](drugs/drug_romiplostim/Romiplostim_Fan2023_reference.md) | — | 1-compartment (no model) | 2 | Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023) | [10.1021/acsptsci.3c00194](https://doi.org/10.1021/acsptsci.3c00194) |
 
 ## Pharmacodynamics (PD)
 
@@ -27,21 +26,11 @@ Romiplostim is a fusion protein analog of thrombopoietin used to treat thrombocy
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Fan_2023_Hgb](drugs/drug_romiplostim/pd_Fan_2023_Hgb.md) | hemoglobin ← romiplostim · indirect response — drug stimulates the production of hemoglobin | — | Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023) | [10.1021/acsptsci.3c00194](https://doi.org/10.1021/acsptsci.3c00194) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Fan_2023_PLT](drugs/drug_romiplostim/pd_Fan_2023_PLT.md) | platelet ← romiplostim · indirect response — drug stimulates the production of platelet | — | Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023) | [10.1021/acsptsci.3c00194](https://doi.org/10.1021/acsptsci.3c00194) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Fan_2023_RBC](drugs/drug_romiplostim/pd_Fan_2023_RBC.md) | red blood cells ← romiplostim · indirect response — drug stimulates the production of red blood cells | — | Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023) | [10.1021/acsptsci.3c00194](https://doi.org/10.1021/acsptsci.3c00194) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Fan_2023_2_PLT](drugs/drug_romiplostim/pd_Fan_2023_2_PLT.md) | platelets ← romiplostim · indirect response — drug stimulates the production of platelets | model (no simulator) | Fan X et al., Scaling Pharmacodynamics from Rats to H…, Pharmaceutics (2023) | [10.3390/pharmaceutics15020344](https://doi.org/10.3390/pharmaceutics15020344) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Fan_2023_2_PLT](drugs/drug_romiplostim/pd_Fan_2023_2_PLT.md) | platelets ← romiplostim · indirect response — drug stimulates the production of platelets | — | Fan X et al., Scaling Pharmacodynamics from Rats to H…, Pharmaceutics (2023) | [10.3390/pharmaceutics15020344](https://doi.org/10.3390/pharmaceutics15020344) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span> | [Krzyzanski_2013_PLT](drugs/drug_romiplostim/pd_Krzyzanski_2013_PLT.md) | platelet count ← romiplostim · disease-progression model | — | Krzyzanski W et al., Pharmacokinetic and pharmacodynamic mod…, Pharmaceutical research (2013) | [10.1007/s11095-012-0894-2](https://doi.org/10.1007/s11095-012-0894-2) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Perez-Ruixo_2012_PLT](drugs/drug_romiplostim/pd_Perez_Ruixo_2012_PLT.md) | platelet counts ← romiplostim · delayed effect through transit (transduction) compartments | ▶ model + simulator | Perez-Ruixo JJ et al., Romiplostim dose response in patients w…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420843](https://doi.org/10.1177/0091270011420843) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Perez-Ruixo_2012_PLT](drugs/drug_romiplostim/pd_Perez_Ruixo_2012_PLT.md) | platelet counts ← romiplostim · delayed effect through transit (transduction) compartments | — | Perez-Ruixo JJ et al., Romiplostim dose response in patients w…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420843](https://doi.org/10.1177/0091270011420843) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Perez_2013_Circ](drugs/drug_romiplostim/pd_Perez_2013_Circ.md) | platelet count ← romiplostim · indirect response — drug stimulates the production of platelet count | — | Perez Ruixo JJ et al., Romiplostim dose-response in patients w…, British journal of clinical… (2013) | [10.1111/bcp.12041](https://doi.org/10.1111/bcp.12041) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Wang_2010_PLT](drugs/drug_romiplostim/pd_Wang_2010_PLT.md) | platelet count ← romiplostim · indirect response — drug stimulates the production of platelet count | model (no simulator) | Wang YM et al., Pharmacodynamics-mediated drug disposit…, The AAPS journal (2010) | [10.1208/s12248-010-9234-9](https://doi.org/10.1208/s12248-010-9234-9) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=romiplostim).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: AHR (modulator), FGFR1 (inhibitor), FLT1 (inhibitor), KDR (inhibitor), KIT (inhibitor), MPL (target), PDGFRA (inhibitor), PDGFRB (inhibitor), RET (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Wang_2010_PLT](drugs/drug_romiplostim/pd_Wang_2010_PLT.md) | platelet count ← romiplostim · indirect response — drug stimulates the production of platelet count | — | Wang YM et al., Pharmacodynamics-mediated drug disposit…, The AAPS journal (2010) | [10.1208/s12248-010-9234-9](https://doi.org/10.1208/s12248-010-9234-9) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +44,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 19:33 | 10:52 | 0/1/0 | 6/0/0 | 0/0/0 | 257,857/26,658 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/10 | 10/0 | 0 |
+| 2026-10-05 19:33 | 10:52 | 0/1/0 | 8/0/0 | 0/0/0 | 257,857/26,658 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/10 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 58 matched, 48 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

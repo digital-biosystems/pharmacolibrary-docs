@@ -4,11 +4,11 @@
 
 # obinutuzumab — `Obinutuzumab_Zhai2017_nhl`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:59 UTC (Rejected), but the paper was screened again on 2026-10-07 18:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Obinutuzumab clearance of 0.584 L/day was rejected because its unit could not be converted to SI units.
+> The Cmax/dose parameter for obinutuzumab was rejected due to a dimension mismatch between its assigned unit and the parameter's physical meaning.
 
-<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_nhl" status="rejected" stale="true" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_nhl" status="rejected" stale="false" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzumab in Chinese patients with B-cell lymphomas. British journal of clinical pharmacology 83(7):1446–1456 (2017).
@@ -16,7 +16,7 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 ## Population and dosing
 
-**Population:** Chinese patients with B-cell lymphomas · condition B-cell lymphomas · age group adult · n = &gt;=48.
+**Population:** Chinese patients with B-cell lymphomas · condition B-cell lymphomas · age group adult.
 
 **Dosing:** 1000 mg, iv, multiple, every 168 h.
 
@@ -40,7 +40,7 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 ### Reviewer guidance
 
-**Obinutuzumab clearance of 0.584 L/day was rejected because its unit could not be converted to SI units.**
+**The Cmax/dose parameter for obinutuzumab was rejected due to a dimension mismatch between its assigned unit and the parameter's physical meaning.**
 
-The steady-state clearance parameter was recorded as 0.584 L/day. This unit was not recognized as a standard SI unit for validation. Consequently, the dimensional consistency check could not be computed. Extracted — obinutuzumab: Cmax 0.935 μg ml−1, Cmax/dose 195 μg ml−1 mg−1, Ctrough 0.488 μg ml−1, AUCt 14.7 day·μg ml−1, CL 0.584 L/day.
+The record lists Cmax/dose with a unit of μg ml−1 mg−1, which represents inverse volume, but the parameter meaning requires mass per volume. This dimensional conflict caused the check to fail, preventing the unit from being converted to SI values. Consequently, the model was refused because the structural parameter could not be validated. Extracted — obinutuzumab: Cmax 0.935 μg ml−1, Cmax/dose 195 μg ml−1 mg−1, Ctrough 0.488 μg ml−1, AUCt 14.7 day·μg ml−1, CL 0.584 L/day.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

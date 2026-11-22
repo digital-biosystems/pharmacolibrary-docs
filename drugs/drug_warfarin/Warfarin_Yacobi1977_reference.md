@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Yacobi_1977 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Davies2010_reference&quot;,&quot;label&quot;:&quot;Davies_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Davies2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ferrari2017_reference&quot;,&quot;label&quot;:&quot;Ferrari_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ferrari2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_Yacobi1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 14:22 UTC (Rejected), but the paper was screened again on 2026-11-04 15:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Warfarin's distribution volume of 14.3 L could not be converted to standard units, blocking the one-compartment model.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Yacobi1977_reference" status="rejected" stale="true" population="adult male rats" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Yacobi1977_reference" status="needs_review" stale="false" population="adult male rats" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yacobi A, Levy G. Comparative pharmacokinetics of coumarin anticoagulants XXI: effect of plasma protein binding on distribution kinetics of warfarin in rats. Journal of pharmaceutical sciences 66(4):567–572 (1977).
@@ -31,12 +31,12 @@ Yacobi A, Levy G. Comparative pharmacokinetics of coumarin anticoagulants XXI: e
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Constant | equation variable | 1.8 |  |
-| α, hr⁻¹ | λ1 | 1.03 | hr⁻¹ |
+| A, µg/ml | equation variable | 1.76 | µg/ml |
+| π, hr⁻¹ | λ1 | 6.98 | hr⁻¹ |
 | β, hr⁻¹ | kel | 0.0310 | hr⁻¹ |
 | Vd | V | 14.3 | L |
 | ka (1/h) | kabs | 0.214 | 1/h |
@@ -44,7 +44,7 @@ Yacobi A, Levy G. Comparative pharmacokinetics of coumarin anticoagulants XXI: e
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,20 +54,20 @@ Yacobi A, Levy G. Comparative pharmacokinetics of coumarin anticoagulants XXI: e
 
 ### Reviewer guidance
 
-**Warfarin's distribution volume of 14.3 L could not be converted to standard units, blocking the one-compartment model.**
+**This paper's disposition core is incomplete.**
 
-The volume of distribution parameter has a unit of L, which was not recognized as a valid standard measure for this context. The second reader also identified parameters b (3.08), p (4.67), and π (6.98) absent from the primary record. Conversely, the primary record's α (1.03) and constant (1.8) were not extracted by the second reader. Extracted — warfarin: λ1 1.03 hr⁻¹, kel 0.031 hr⁻¹, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aoyama_2022, Gomeni_2026) cannot stand in for this paper's evidence. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — warfarin: λ1 6.98 hr⁻¹, kel 0.031 hr⁻¹, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has none, the second reading 3.08; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 1.76, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Constant | `Q900` · equation variable | 1.8 |  |  |  |  | llm (0.6) | tab_0:row1:col6, tab_0:row1:col7 |
-| α, hr⁻¹ | `Q67` · λ1 | 1.03 | hr⁻¹ |  |  | 1/h | exact (1) | Yacobi_1977_table_p2_1:row4:col1 |
+| A, µg/ml | `Q900` · equation variable | 1.76 | µg/ml |  |  | µg/ml | llm (0.6) | Yacobi_1977_table_p2_1:row1:col1 |
+| π, hr⁻¹ | `Q67` · λ1 | 6.98 | hr⁻¹ | 0.001939 | 1/s | 1/h | llm (0.6) | Yacobi_1977_table_p2_1:row3:col1 |
 | β, hr⁻¹ | `Q47` · kel | 0.0310 | hr⁻¹ | 8.611e-06 | 1/s | 1/h | exact (1) | Yacobi_1977_table_p2_1:row5:col1 |
 | Vd | `Q61` · V | 14.3 | L | 0.0143 | m3 | L | review_gapfill (0.7) | Aoyama_2022:review |
 | ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Gomeni_2026:review |
@@ -82,15 +82,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 **Interpretation flags:**
 - column 'i' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q900 ('P, µg/ml', value '4.67') — already have one for this compound
-- dropped duplicate Q900 ('A, µg/ml', value '1.76') — already have one for this compound
-- dropped duplicate Q900 ('B, µg/ml', value '3.08') — already have one for this compound
-- dropped unlinked row (NIL): 'π, hr⁻¹' — extend the ontology if this is a real PK parameter (source ['Yacobi_1977_table_p2_1:row3:col1'])
-- unit_dimension_mismatch: 'α, hr⁻¹' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
+- dropped unlinked row (NIL): 'Constant' — extend the ontology if this is a real PK parameter (source ['tab_0:row1:col6', 'tab_0:row1:col7'])
+- dropped unlinked row (NIL): 'P, µg/ml' — extend the ontology if this is a real PK parameter (source ['Yacobi_1977_table_p2_1:row0:col1'])
+- dropped unlinked row (NIL): 'B, µg/ml' — extend the ontology if this is a real PK parameter (source ['Yacobi_1977_table_p2_1:row2:col1'])
+- dropped duplicate Q67 ('α, hr⁻¹', value '1.03') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=warfarin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
-- status held at "Needs review" — not promoted
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q61 (V) from Aoyama_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -119,11 +116,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 1.76 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[b]` |  | 3.08 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[constant]` | 1.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[constant]` |  | 1.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[p]` |  | 4.67 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[α]` | 1.03 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[π]` |  | 6.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.0310 |  | only_one_extracted |
 
 </details>
 
@@ -143,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Yacobi_1977_table_p2_1:row5:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gomeni_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aoyama_2022:review'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr⁻¹ (1 / [time]) | ['Yacobi_1977_table_p2_1:row4:col1'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['Yacobi_1977_table_p2_1:row3:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gomeni_2026:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 14.3 L | ['Aoyama_2022:review'] |
@@ -158,9 +155,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -170,4 +177,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Yacobi1977_reference&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Yacobi1977_reference%0APaper%3A%20Yacobi_1977%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Yacobi1977_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 15:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:30 UTC</sub>

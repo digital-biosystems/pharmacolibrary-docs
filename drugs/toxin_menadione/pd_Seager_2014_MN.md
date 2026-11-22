@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Menadione&quot;,&quot;href&quot;:&quot;drugs/toxin_menadione/&quot;},{&quot;label&quot;:&quot;Seager_2014 \u00b7 PD micronucleus frequency&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Menadione_Hu1996_reference&quot;,&quot;label&quot;:&quot;Hu_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_menadione/Menadione_Hu1996_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Menadione_Hu1996_reference&quot;,&quot;label&quot;:&quot;Hu_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_menadione/Menadione_Hu1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # micronucleus frequency — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Menadione (the dose) drives micronucleus frequency (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide the full text, so the mechanism of menadione action on micronucleus frequency and any associated potency or rate parameters are not specified.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Seager_2014`
 - **model family:** `unknown`

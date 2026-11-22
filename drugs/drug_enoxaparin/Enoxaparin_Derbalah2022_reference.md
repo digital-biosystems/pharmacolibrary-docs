@@ -17,7 +17,7 @@ Derbalah A, Duffull S, Sherwin CM, Job K, Al-Sallami H. Optimal dosing of enoxap
 
 ## Population and dosing
 
-**Population:** overweight and obese children · condition obesity · age group child · n = math:160.
+**Population:** overweight and obese children · condition obesity · age group child.
 
 **Dosing:** 81.2 mg, sc, multiple, every 12 h.
 
@@ -37,7 +37,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. None of the extracted parameters is enoxaparin's own; they describe anti-Xa activity. Extracted — anti-Xa activity: ? 1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has enoxaparin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has enoxaparin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -82,15 +82,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (1/4 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.25 (1/4 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | apparent_wrt_Fm | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | enoxaparin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | anti-Xa activity | unknown | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | apparent_wrt_Fm | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | enoxaparin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa activity | unknown | mismatch |
 
 </details>
 

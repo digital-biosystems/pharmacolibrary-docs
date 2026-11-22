@@ -14,6 +14,18 @@
   3.0,
   5.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kumagai_2020:other_prose",
+    "value_si": 9.8e-07
+   },
+   {
+    "source": "Kumagai_2020:other_prose",
+    "value_si": 1.326
+   }
+  ]
+ },
  "parameters": {
   "Cl": 0.00033224999999999997,
   "F": 1.0,

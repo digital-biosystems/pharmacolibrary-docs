@@ -4,11 +4,11 @@
 
 # tiapride — `Tiapride_Rey1982_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-06 17:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Rey1982_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="tiapride" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Rey1982_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tiapride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rey E, d'Athis P, Richard MO, de Lauture D, Olive G. Pharmacokinetics of tiapride and absolute bioavailability of three extravascular forms. International journal of clinical pharmacology, therapy, and toxicology 20(2):62–67 (1982).
@@ -34,7 +34,7 @@ Rey E, d'Athis P, Richard MO, de Lauture D, Olive G. Pharmacokinetics of tiaprid
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Rey E, d'Athis P, Richard MO, de Lauture D, Olive G. Pharmacokinetics of tiaprid
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tiapride: t1/2z 3.23 h, kabs 0.219 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[half-life in the disposition phase].parameter_id`: this record has Q57, the second reading Q60; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

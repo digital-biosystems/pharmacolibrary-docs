@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;ranitidine&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/&quot;},{&quot;label&quot;:&quot;Hawwa_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranitidine_Hawwa2013_reference&quot;,&quot;label&quot;:&quot;Hawwa_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranitidine_Hawwa2013_reference&quot;,&quot;label&quot;:&quot;Hawwa_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ranitidine — `Ranitidine_Hawwa2013_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="ranitidine" model-id="Ranitidine_Hawwa2013_reference" status="simulated" stale="false" population="critically ill children" measured-compound="ranitidine" parameterization="mechanistic" topology="1C"></div>
+> The abstract-only record for ranitidine was held for review because the second reader found no support for all four parameter values.
+
+<div class="pk-model-meta" hidden drug="ranitidine" model-id="Ranitidine_Hawwa2013_reference" status="needs_review" stale="false" population="critically ill children" measured-compound="ranitidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hawwa AF, Westwood PM, Collier PS, Millership JS, Yakkundi S, Thurley G et al. Prophylactic ranitidine treatment in critically ill children--a population pharmacokinetic study. British journal of clinical pharmacology 75(5):1265–1276 (2013).
@@ -15,7 +17,7 @@ Hawwa AF, Westwood PM, Collier PS, Millership JS, Yakkundi S, Thurley G et al. P
 
 ## Population and dosing
 
-**Population:** critically ill children · condition critical illness · age group child · n = &gt;=78.
+**Population:** critically ill children · condition critical illness · age group child.
 
 ## Model
 
@@ -27,6 +29,8 @@ Hawwa AF, Westwood PM, Collier PS, Millership JS, Yakkundi S, Thurley G et al. P
 <figure class="pk-models-diagram"><img src="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference.svg" alt="Ranitidine_Hawwa2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | total clearance | CL | 32.1 | l h(-1) |
@@ -36,7 +40,7 @@ Hawwa AF, Westwood PM, Collier PS, Millership JS, Yakkundi S, Thurley G et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Hawwa AF, Westwood PM, Collier PS, Millership JS, Yakkundi S, Thurley G et al. P
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The abstract-only record for ranitidine was held for review because the second reader found no support for all four parameter values.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The second reader marked total clearance (32.1 L/h), volume of distribution (285 L), absorption rate constant (1.31 h⁻¹), and bioavailability (27.5%) as null, resulting in zero agreement. This disagreement on every primary parameter prevented the cross-check from validating the record. Extracted — ranitidine: CL 32.1 l h(-1), V 285 l, kabs 1.31 h(-1), Fab 27.5 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ranitidine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ranitidine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -94,22 +98,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | 1.31 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` |  | 1.31 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` | 27.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` |  | 27.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total clearance]` | 32.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total clearance]` |  | 32.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 285 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 285 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | ranitidine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | ranitidine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.31 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 1.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 27.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` |  | 27.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clearance]` | 32.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clearance]` |  | 32.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 285 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 285 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ranitidine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ranitidine | unknown | mismatch |
 
 </details>
 
@@ -136,14 +140,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ranitidine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ranitidine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

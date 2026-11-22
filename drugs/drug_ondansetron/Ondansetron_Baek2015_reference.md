@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;ondansetron&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/&quot;},{&quot;label&quot;:&quot;Baek_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ondansetron — `Ondansetron_Baek2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 15:10 UTC (Rejected), but the paper was screened again on 2026-10-04 14:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ondansetron clearance 525.0 mL/h and volume 1.8 mL exceed physiological limits for beagles, indicating scale errors in the abstract-only record.
+> Ondansetron was rejected because its reported clearance of 525.0 mL/h and distribution volume of 1.8 mL have implausible magnitudes, suggesting a unit or scale extraction error.
 
-<div class="pk-model-meta" hidden drug="ondansetron" model-id="Ondansetron_Baek2015_reference" status="rejected" stale="true" population="beagles" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ondansetron" model-id="Ondansetron_Baek2015_reference" status="rejected" stale="false" population="beagles" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Baek IH, Lee BY, Kang J, Kwon KI. Pharmacokinetic modeling and Monte Carlo simulation of ondansetron following oral administration in dogs. Journal of veterinary pharmacology and therapeutics 38(2):199–202 (2015).
@@ -17,7 +17,7 @@ Baek IH, Lee BY, Kang J, Kwon KI. Pharmacokinetic modeling and Monte Carlo simul
 
 ## Population and dosing
 
-**Population:** beagles · condition healthy · age group adult · n = &gt;=18.
+**Population:** beagles · condition healthy · age group adult.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -41,7 +41,7 @@ Baek IH, Lee BY, Kang J, Kwon KI. Pharmacokinetic modeling and Monte Carlo simul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Baek IH, Lee BY, Kang J, Kwon KI. Pharmacokinetic modeling and Monte Carlo simul
 
 ### Reviewer guidance
 
-**Ondansetron clearance 525.0 mL/h and volume 1.8 mL exceed physiological limits for beagles, indicating scale errors in the abstract-only record.**
+**Ondansetron was rejected because its reported clearance of 525.0 mL/h and distribution volume of 1.8 mL have implausible magnitudes, suggesting a unit or scale extraction error.**
 
-The extracted clearance of 525.0 mL/h and volume of 1.8 mL fall outside the plausible range for beagle pharmacokinetics. The record relies on abstract summary statistics rather than a fitted model, which likely contributed to the parameter scale discrepancies. Second readers disagreed on the mapping of AUC and half-life values to specific parameter fields. Extracted — ondansetron: Cmax 11.5 ng/mL, AUClast 15.9 ng·h/mL, t1/2z 1.3 h, CL 525 mL⋅h -1, V 1.8 mL.
+The record was based on the abstract alone, so summary statistics stood in for a fitted model. A second reader did not retain the clearance or volume values and disagreed about whether the terminal half-life of 1.3 h was reported. Extracted — ondansetron: Cmax 11.5 ng/mL, AUClast 15.9 ng·h/mL, t1/2z 1.3 h, CL 525 mL⋅h -1, V 1.8 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 525.0, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

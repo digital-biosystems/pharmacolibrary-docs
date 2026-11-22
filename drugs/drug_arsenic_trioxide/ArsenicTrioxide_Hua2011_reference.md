@@ -4,18 +4,18 @@
 
 # arsenic trioxide — `ArsenicTrioxide_Hua2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 23:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Volume of distribution for arsenic trioxide was recorded as 335.1 L, a value physically impossible for a human.
+> Record for arsenic trioxide rejected because its 1128.5 μg/h/L area under the curve unit conflicts with the required pharmacokinetic dimension.
 
-<div class="pk-model-meta" hidden drug="arsenic trioxide" model-id="ArsenicTrioxide_Hua2011_reference" status="rejected" stale="true" population="Chinese primary hepatocarcinoma patients" measured-compound="arsenic trioxide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="arsenic trioxide" model-id="ArsenicTrioxide_Hua2011_reference" status="rejected" stale="false" population="Chinese primary hepatocarcinoma patients" measured-compound="arsenic trioxide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hua H, Qin S, Rui J, Li J. Pharmacokinetics of arsenic trioxide (As₂O₃) in Chinese primary hepatocarcinoma patients. Asian Pacific journal of cancer prevention : APJCP 12(1):61–65 (2011).
 
 ## Population and dosing
 
-**Population:** Chinese primary hepatocarcinoma patients · condition primary hepatocarcinoma · age group adult · n = &gt;=13.
+**Population:** Chinese primary hepatocarcinoma patients · condition primary hepatocarcinoma · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ Hua H, Qin S, Rui J, Li J. Pharmacokinetics of arsenic trioxide (As₂O₃) in C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Hua H, Qin S, Rui J, Li J. Pharmacokinetics of arsenic trioxide (As₂O₃) in C
 
 ### Reviewer guidance
 
-**Volume of distribution for arsenic trioxide was recorded as 335.1 L, a value physically impossible for a human.**
+**Record for arsenic trioxide rejected because its 1128.5 μg/h/L area under the curve unit conflicts with the required pharmacokinetic dimension.**
 
-The apparent distribution volume of 335.1 L vastly exceeds human body volume, indicating a unit error or data misextraction. Because the record relies on abstract summary statistics, the pharmacokinetic parameters lack the fitted model context required to resolve this discrepancy. Extracted — arsenic trioxide: Cmax 136 μg/L, t1/2α 0.071 hours, t1/2β 23.9 hours, V 335 L, CL 8.65 L/h, AUCt 1.13e+03 μg/h/L, Cmin 31.7 μg/L.
+The area under the curve of 1128.5 μg/h/L has a mass-per-time-per-volume dimension, which is incompatible with the expected concentration-time unit. The review found that only the paper's abstract was read, so these summary statistics were used as a substitute for a fitted model. A second reader also flagged inconsistencies in the extracted values for volume of distribution, clearance, and various concentration metrics. Extracted — arsenic trioxide: Cmax 136 μg/L, t1/2α 0.071 hours, t1/2β 23.9 hours, V 335 L, CL 8.65 L/h, AUCt 1.13e+03 μg/h/L, Cmin 31.7 μg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent distribution volume: this record has 335.1, the second reading none; it also differs on 14 more fields. That field does not shape the model.
 

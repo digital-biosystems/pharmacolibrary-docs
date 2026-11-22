@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Daunorubicin's elimination rate constant was left at a default value instead of using an explicit estimate from the paper.
+> Daunorubicin clearance, intercompartmental clearance, and peripheral volume values conflict with a second reader's extractions, and the elimination rate constant was not extracted from the paper.
 
 <div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_KroghMadsen2012_only_present_study" status="needs_review" stale="false" population="patients with acute myeloid leukemia" measured-compound="cytarabine, etoposide, and daunorubicin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,9 +52,9 @@ Krogh-Madsen M, Bender B, Jensen MK, Nielsen OJ, Friberg LE, Honoré PH. Populat
 
 ### Reviewer guidance
 
-**Daunorubicin's elimination rate constant was left at a default value instead of using an explicit estimate from the paper.**
+**Daunorubicin clearance, intercompartmental clearance, and peripheral volume values conflict with a second reader's extractions, and the elimination rate constant was not extracted from the paper.**
 
-The record lists the transfer clearance Q and volumes V1 and V2 but omits the rate constant k12, forcing the model builder to rely on library defaults. A second reader disputed the extraction of Q (133 L/h) and V2 (211 L), arguing that daunorubicin-specific values differ from the polytherapy context. This discrepancy indicates the extracted parameters may misrepresent the true daunorubicin pharmacokinetics. Extracted — daunorubicin: CL 28 L/h, V1 22 L, Q 133 L/h, V2 211 L.
+The record lists clearance, intercompartmental clearance, and peripheral volume as 28 L/h, 133 L/h, and 211 L, respectively, while a second reader reported 129 L/h, 152 L/h, and 911 L. The elimination rate constant was not extracted, so no specific value from the paper was available to define the model. Because the second reader disagreed on these core pharmacokinetic parameters, the record could not be confirmed as consistent. Extracted — daunorubicin: CL 28 L/h, V1 22 L, Q 133 L/h, V2 211 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has cytarabine, etoposide, and daunorubicin, the second reading daunorubicin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -139,14 +139,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cytarabine, etoposide, and daunorubicin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cytarabine, etoposide, and daunorubicin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

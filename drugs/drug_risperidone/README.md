@@ -40,8 +40,8 @@ Risperidone is an atypical antipsychotic used to treat conditions such as schizo
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Perlstein_2022_reference](drugs/drug_risperidone/Risperidone_Perlstein2022_reference.md) | — | parent + metabolite (no model) | 0 | Perlstein I et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1078](https://doi.org/10.1002/cpdd.1078) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Perlstein_2025_reference](drugs/drug_risperidone/Risperidone_Perlstein2025_reference.md) | — | parent + metabolite (no model) | 0 | Perlstein I et al., Population Pharmacokinetic Modeling of…, Neurology and therapy (2025) | [10.1007/s40120-025-00723-z](https://doi.org/10.1007/s40120-025-00723-z) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Toja-Camba_2021_reference](drugs/drug_risperidone/Risperidone_TojaCamba2021_reference.md) | — | parent + metabolite (no model) | 0 | Toja-Camba FJ et al., Review of Pharmacokinetics and Pharmaco…, Pharmaceutics (2021) | [10.3390/pharmaceutics13070935](https://doi.org/10.3390/pharmaceutics13070935) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wang_2024_consta](drugs/drug_risperidone/Risperidone_Wang2024_consta.md) | — | parent + metabolite (no model) | 6 | Wang W et al., Population Pharmacokinetic Analysis to…, Neurology and therapy (2024) | [10.1007/s40120-024-00578-w](https://doi.org/10.1007/s40120-024-00578-w) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ rykindo](drugs/drug_risperidone/Risperidone_Wang2024_rykindo.md) | — | parent + metabolite (no model) | 7 (+1 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wang_2024_consta](drugs/drug_risperidone/Risperidone_Wang2024_consta.md) | — | parent + metabolite (no model) | 6 | Wang W et al., Population Pharmacokinetic Analysis to…, Neurology and therapy (2024) | [10.1007/s40120-024-00578-w](https://doi.org/10.1007/s40120-024-00578-w) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ rykindo](drugs/drug_risperidone/Risperidone_Wang2024_rykindo.md) | — | parent + metabolite (no model) | 7 (+1 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -64,25 +64,6 @@ Risperidone is an atypical antipsychotic used to treat conditions such as schizo
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Ji_2016_PANSS](drugs/drug_risperidone/pd_Ji_2016_PANSS.md) | Decrease in PANSS score ← risperidone and 9-hydroxy-risperidone (AUCtotal) · delayed effect through transit (transduction) compartments | — | Ji S et al., Population pharmacokinetic-pharmacodyna…, International journal of cl… (2016) | [10.5414/CP202498](https://doi.org/10.5414/CP202498) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Lee_1999_EEG_delta_effect](drugs/drug_risperidone/pd_Lee_1999_EEG_delta_effect.md) | difference in absolute power in the delta frequency band (F3 lead) between risperidone and placebo ← risperidone (or sum of risperidone and 9-hydroxyrisperidone) · direct linear effect | — | Lee DY et al., Pharmacokinetic-pharmacodynamic modelin…, Psychopharmacology (1999) | [10.1007/s002130051003](https://doi.org/10.1007/s002130051003) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=risperidone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA2B (target), ADRA2C (target), DRD1 (target), DRD2 (target), HRH1 (target), HTR1A (target), HTR1D (target), HTR2A (target), HTR2C (target), HTR7 (target).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -95,13 +76,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:16 | 7:37 | 1/6/0 | 7/2/0 | 0/0/0 | 344,764/33,484 | ollama / glm-5.3-flash | 21 | 1/9 | 10/0 | 0 |
+| 2026-10-06 17:16 | 7:37 | 1/6/0 | 14/2/0 | 0/0/0 | 344,764/33,484 | ollama / glm-5.3-flash | 21 | 1/9 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 125 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 7  ·  extracted 0  ·  needs review 1  ·  rejected 6  ·  stale 2
+- **records:** 7  ·  extracted 0  ·  needs review 1  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

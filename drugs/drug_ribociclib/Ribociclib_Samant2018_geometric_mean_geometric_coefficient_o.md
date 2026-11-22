@@ -4,11 +4,11 @@
 
 # ribociclib — `Ribociclib_Samant2018_geometric_mean_geometric_coefficient_o`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-07 06:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="ribociclib" model-id="Ribociclib_Samant2018_geometric_mean_geometric_coefficient_o" status="needs_review" stale="true" population="patients with advanced breast cancer" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ribociclib" model-id="Ribociclib_Samant2018_geometric_mean_geometric_coefficient_o" status="needs_review" stale="false" population="patients with advanced breast cancer" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Samant TS, Dhuria S, Lu Y, Laisney M, Yang S, Grandeury A et al. Ribociclib Bioavailability Is Not Affected by Gastric pH Changes or Food Intake: In Silico and Clinical Evaluations. Clinical pharmacology and therapeutics 104(2):374–383 (2018).
@@ -37,7 +37,7 @@ Samant TS, Dhuria S, Lu Y, Laisney M, Yang S, Grandeury A et al. Ribociclib Bioa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Samant TS, Dhuria S, Lu Y, Laisney M, Yang S, Grandeury A et al. Ribociclib Bioa
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — ribociclib: Cmax 792 ng/mL, tmax 3 h, AUC∞ 1.43e+04 h·ng/mL, t1/2z 32 h.
 
 Independently confirmed by `qwen3.8-27b`.
 

@@ -35,7 +35,7 @@ Dabigatran etexilate is a direct thrombin inhibitor used to treat conditions suc
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): k12</sub> | [Kong_2025_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Kong2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Kong W et al., Microdose Cocktail Study Reveals the Ac…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3546](https://doi.org/10.1002/cpt.3546) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | — | 1-compartment (no model) | 1 | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | — | 1-compartment (no model) | 1 | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Trocóniz_2007_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Trocniz2007_reference.md) | — | 1-compartment (no model) | 1 | Trocóniz IF et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2007) | [10.1177/0091270006297228](https://doi.org/10.1177/0091270006297228) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Röshammar_2021_diversity_nct01895777_aged_birth_to_18_y](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Rshammar2021_diversity_nct01895777_aged.md) | — | 1-compartment (no model) | 0 | Röshammar D et al., Pharmacokinetic modeling and simulation…, Journal of thrombosis and h… (2021) | [10.1111/jth.15277](https://doi.org/10.1111/jth.15277) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ nct00844415_aged_12_to_18_y](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Rshammar2021_nct00844415_aged_12_to_18_y.md) | — | 1-compartment (no model) | 0 |  |  |
@@ -54,26 +54,6 @@ Dabigatran etexilate is a direct thrombin inhibitor used to treat conditions suc
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Simpson_2019_Hemorrhage](drugs/drug_dabigatran_etexilate/pd_Simpson_2019_Hemorrhage.md) | Hemorrhage ← dabigatran · categorical (graded) response model | — | Simpson BH et al., Exposure Response Supports Therapeutic…, TH open : companion journal… (2019) | [10.1055/s-0039-1693486](https://doi.org/10.1055/s-0039-1693486) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Simpson_2019_Thromboembolism_CVA](drugs/drug_dabigatran_etexilate/pd_Simpson_2019_Thromboembolism_CVA.md) | Thromboembolism/CVA ← dabigatran · categorical (graded) response model | — | Simpson BH et al., Exposure Response Supports Therapeutic…, TH open : companion journal… (2019) | [10.1055/s-0039-1693486](https://doi.org/10.1055/s-0039-1693486) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dabigatran_etexilate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CES1` substrate, `CES2` substrate, `UGT1A9` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CES2` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: F2 (inhibitor), NQO2 (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -86,13 +66,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 12:38 | 18:18 | 3/6/0 | 3/0/0 | 0/0/0 | 429,894/107,647 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-13 12:38 | 18:18 | 3/6/0 | 5/0/0 | 0/0/0 | 429,894/107,647 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 19 matched, 14 returned
 - **screened:** 6  ·  **relevant:** 4
-- **records:** 9  ·  extracted 0  ·  needs review 3  ·  rejected 6  ·  stale 0
+- **records:** 9  ·  extracted 0  ·  needs review 3  ·  rejected 6  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Doxorubicin_Luo2019_reference",
+ "molar_masses": {
+  "central.C": 0.5435193
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  280.0,
+  490.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 3.072222222222222e-08,
+  "F": 1.0,
+  "MM": 0.5435193,
+  "VdPerKg": 0.00017714285714285716,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00028,
+  "k12": 3.3714157706093185e-06,
+  "k21": 1.4019300991131978e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662013
+ },
+ "reference_peaks": {
+  "central.C": 0.02089309215378828
+ },
+ "stop_time": 1468800.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

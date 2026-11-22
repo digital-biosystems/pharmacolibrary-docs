@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;ondansetron&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/&quot;},{&quot;label&quot;:&quot;Chiang_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Ondansetron clearance of 525.0 mL/h and volume of distribution of 17.5 mL are physiologically implausible, likely due to unit extraction errors.
+> Ondansetron clearance of 525.0 mL/h and central volume of 17.5 mL have implausible magnitudes, so the record was rejected.
 
 <div class="pk-model-meta" hidden drug="ondansetron" model-id="Ondansetron_Chiang2024_reference" status="rejected" stale="false" population="wild-type and Pgp knockout rats" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Chiang M, Back H, Lee JB, Oh S, Guo T, Girgis S et al. Pharmacokinetic Modeling 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.35). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Chiang M, Back H, Lee JB, Oh S, Guo T, Girgis S et al. Pharmacokinetic Modeling 
 
 ### Reviewer guidance
 
-**Ondansetron clearance of 525.0 mL/h and volume of distribution of 17.5 mL are physiologically implausible, likely due to unit extraction errors.**
+**Ondansetron clearance of 525.0 mL/h and central volume of 17.5 mL have implausible magnitudes, so the record was rejected.**
 
-The central compartment volume is recorded as 17.5 mL, which is far below physiological expectations for a systemic drug. The second reader disagreed with multiple extracted values, noting they are null in their assessment. These discrepancies indicate the extracted parameters do not align with standard pharmacokinetic magnitudes. Extracted — ondansetron: CL 525 mL⋅h -1, V1 17.5 mL.
+The record reports total clearance as 525.0 mL/h and central-compartment volume as 17.5 mL. The stated rejection reason is an implausible clearance/volume magnitude attributed to a unit or scale extraction error. Extracted — ondansetron: CL 525 mL⋅h -1, V1 17.5 mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q301: this record has 2.14, the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q301: this record has 2.14, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -81,9 +81,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.35 (7/20 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.4 (8/20 fields) | 12 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -94,7 +94,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `values[Q315]` | 0.05 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q347]` | 9.37 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q348]` | 71.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q410]` | 3.58 | 3.58 | mismatch |
 | `gpt-oss-120b` | `values[Q47]` | 3.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q51]` | 6.84 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q57]` | 0.638 | 0.58 | mismatch |

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;procaine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # procaine
 
@@ -25,13 +25,13 @@ Procaine is a local anesthetic from the amino ester group used to treat pain, pa
 
 ## Start here
 
-> **Seifen_1979_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> women undergoing hysterectomy, n = &gt;=12. [Run it in the simulator](drugs/drug_procaine/Procaine_Seifen1979_reference.md?tab=Simulation) · [record](drugs/drug_procaine/Procaine_Seifen1979_reference.md)
+> **Seifen_1979_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> women undergoing hysterectomy. [Run it in the simulator](drugs/drug_procaine/Procaine_Seifen1979_reference.md?tab=Simulation) · [record](drugs/drug_procaine/Procaine_Seifen1979_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Olivarez_2022 · CL ·/kg</text><circle cx="215.5" cy="30.0" r="4" fill="#ef6c00"><title>Olivarez_2022 · CL ·/kg: 13.99 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tobin_1976 · CL ·/kg</text><circle cx="215.5" cy="46.0" r="4" fill="#ef6c00"><title>Tobin_1976 · CL ·/kg: 13.99 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Seifen_1979 · CL ·/kg</text><circle cx="457.1" cy="62.0" r="4" fill="#78909c"><title>Seifen_1979 · CL ·/kg: 336 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Seifen_1979 · V ·/kg</text><circle cx="383.4" cy="30.0" r="4" fill="#78909c"><title>Seifen_1979 · V ·/kg: 35.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tobin_1976 · V ·/kg</text><circle cx="383.4" cy="46.0" r="4" fill="#ef6c00"><title>Tobin_1976 · V ·/kg: 35.7 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Olivarez_2022 · V/F ·/kg</text><circle cx="394.9" cy="62.0" r="4" fill="#ef6c00"><title>Olivarez_2022 · V/F ·/kg: 38.5 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Tobin_1976 · CL ·/kg</text><circle cx="215.5" cy="30.0" r="4" fill="#ef6c00"><title>Tobin_1976 · CL ·/kg: 13.99 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Seifen_1979 · CL ·/kg</text><circle cx="457.1" cy="46.0" r="4" fill="#ef6c00"><title>Seifen_1979 · CL ·/kg: 336 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Seifen_1979 · V ·/kg</text><circle cx="383.4" cy="30.0" r="4" fill="#ef6c00"><title>Seifen_1979 · V ·/kg: 35.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tobin_1976 · V ·/kg</text><circle cx="383.4" cy="46.0" r="4" fill="#ef6c00"><title>Tobin_1976 · V ·/kg: 35.7 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -39,9 +39,9 @@ Procaine is a local anesthetic from the amino ester group used to treat pain, pa
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Seifen_1979_reference](drugs/drug_procaine/Procaine_Seifen1979_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Seifen AB et al., Pharmacokinetics of intravenous procain…, Anesthesia and analgesia (1979) | [10.1213/00000539-197909000-00007](https://doi.org/10.1213/00000539-197909000-00007) |
-| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Olivarez_2022_reference](drugs/drug_procaine/Procaine_Olivarez2022_reference.md) | — | 1-compartment (no model) | 2 | Olivarez JD et al., Pharmacokinetic and pharmacodynamic pro…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.1101461](https://doi.org/10.3389/fvets.2022.1101461) |
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Tobin_1976_reference](drugs/drug_procaine/Procaine_Tobin1976_reference.md) | — | 1-compartment (no model) | 5 | Tobin T et al., A review of the pharmacology, pharmacok…, British journal of sports m… (1976) | [10.1136/bjsm.10.3.109](https://doi.org/10.1136/bjsm.10.3.109) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Seifen_1979_reference](drugs/drug_procaine/Procaine_Seifen1979_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Seifen AB et al., Pharmacokinetics of intravenous procain…, Anesthesia and analgesia (1979) | [10.1213/00000539-197909000-00007](https://doi.org/10.1213/00000539-197909000-00007) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Tobin_1976_reference](drugs/drug_procaine/Procaine_Tobin1976_reference.md) | — | 1-compartment (no model) | 5 | Tobin T et al., A review of the pharmacology, pharmacok…, British journal of sports m… (1976) | [10.1136/bjsm.10.3.109](https://doi.org/10.1136/bjsm.10.3.109) |
+| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Olivarez_2022_reference](drugs/drug_procaine/Procaine_Olivarez2022_reference.md) | — | 1-compartment (no model) | 2 | Olivarez JD et al., Pharmacokinetic and pharmacodynamic pro…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.1101461](https://doi.org/10.3389/fvets.2022.1101461) |
 
 ## Pharmacodynamics (PD)
 
@@ -51,22 +51,6 @@ Procaine is a local anesthetic from the amino ester group used to treat pain, pa
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Lipfert_1989_Total_nerve_activity](drugs/drug_procaine/pd_Lipfert_1989_Total_nerve_activity.md) | Total nerve activity ← procaine · direct sigmoid Emax (Hill) effect | — | Lipfert P et al., [The local anesthetic effect of tetrodo…, Regional-Anaesthesie (1989) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shimatani_2024_Ca2](drugs/drug_procaine/pd_Shimatani_2024_Ca2.md) | mAChR-mediated Ca2+ responses ← procaine · direct Emax (saturable) effect | — | Shimatani M et al., Local anesthetics inhibit muscarinic ac…, Journal of oral biosciences (2024) | [10.1016/j.job.2024.04.002](https://doi.org/10.1016/j.job.2024.04.002) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shimatani_2024_arrestin](drugs/drug_procaine/pd_Shimatani_2024_arrestin.md) | carbachol-mediated recruitment of β-arrestin ← procaine · inhibition effect | — | Shimatani M et al., Local anesthetics inhibit muscarinic ac…, Journal of oral biosciences (2024) | [10.1016/j.job.2024.04.002](https://doi.org/10.1016/j.job.2024.04.002) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=procaine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | `BCHE` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `MAOA` inhibitor | DrugBank actor |
-| metabolism | liver | `BCHE` inhibitor/substrate, `MAOA` inhibitor | DrugBank actor |
-| metabolism | small intestine | `MAOA` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ASPG (inhibitor), CHRNA2 (target), DNMT1 (inhibitor), DNMT3A (inhibitor), GRIN3A (target), HTR3A (target), KCNMA1 (blocker), PLA2G4A (inhibitor), SCN10A (inhibitor), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,13 +64,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:09 | 17:57 | 3/0/0 | 3/0/0 | 0/0/0 | 492,581/36,669 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 4/8 | 14/0 | 0 |
+| 2026-10-06 23:09 | 17:57 | 2/1/0 | 4/0/0 | 0/0/0 | 492,581/36,669 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 4/8 | 14/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 234 matched, 86 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

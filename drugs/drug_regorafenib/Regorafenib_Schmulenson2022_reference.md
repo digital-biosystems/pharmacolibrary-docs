@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Capecitabine metabolism was included in the regorafenib model without a dose or connection, creating an orphan pathway.
+> The record was rejected for an orphan capecitabine–DFCR–DFUR branch if regorafenib alone is dosed; regorafenib’s M-2 formation-rate parameter is 0.265 1/h.
 
 <div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Schmulenson2022_reference" status="rejected" stale="false" population="patients with locally advanced rectal cancer" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
 
@@ -59,13 +59,13 @@ Schmulenson E, Bovet C, Theurillat R, Decosterd LA, Largiadèr CR, Prost JC et a
 
 ### Reviewer guidance
 
-**Capecitabine metabolism was included in the regorafenib model without a dose or connection, creating an orphan pathway.**
+**The record was rejected for an orphan capecitabine–DFCR–DFUR branch if regorafenib alone is dosed; regorafenib’s M-2 formation-rate parameter is 0.265 1/h.**
 
-The model structure links capecitabine to its metabolites, but capecitabine is not the dosed compound, making its pathway unreachable. This structural error triggered the rejection for containing an unlinked metabolite pathway. Extracted — regorafenib: CL/F 1.94 L/h, V1/F 10.4 L, MAT 3.01 h, V2/F 63.9 L, Q/F 13.5 L/h, kabs 0.41 h−1; M-2: CL/F 0.936 L/h, kfm 0.265 1/h, MAT 1.9 h, CLm/F 25.2; M-5: CL/F 2.01 L/h, CLm/F 75.6.
+The record links capecitabine to DFCR and DFCR to DFUR, while regorafenib’s M-2 formation rate is reported as 0.265 1/h. However, the record lists both regorafenib and capecitabine as dose compounds, whereas the second reader lists regorafenib alone, so the orphan finding is inconclusive from these facts. Extracted — regorafenib: CL/F 1.94 L/h, V1/F 10.4 L, MAT 3.01 h, V2/F 63.9 L, Q/F 13.5 L/h, kabs 0.41 h−1; M-2: CL/F 0.936 L/h, kfm 0.265 1/h, MAT 1.9 h, CLm/F 25.2; M-5: CL/F 2.01 L/h, CLm/F 75.6.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has regorafenib and capecitabine, the second reading regorafenib; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

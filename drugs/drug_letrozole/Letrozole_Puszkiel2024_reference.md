@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;letrozole&quot;,&quot;href&quot;:&quot;drugs/drug_letrozole/&quot;},{&quot;label&quot;:&quot;Puszkiel_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Letrozole_Puszkiel2024_reference&quot;,&quot;label&quot;:&quot;Puszkiel_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_letrozole/Letrozole_Puszkiel2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Letrozole_Puszkiel2024_reference&quot;,&quot;label&quot;:&quot;Puszkiel_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_letrozole/Letrozole_Puszkiel2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # letrozole — `Letrozole_Puszkiel2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> The letrozole record is held back because the apparent clearance and volume values rely on the assumption of 100% bioavailability.
-
-<div class="pk-model-meta" hidden drug="letrozole" model-id="Letrozole_Puszkiel2024_reference" status="needs_review" stale="false" population="adults with hormone receptor-positive breast cancer" measured-compound="letrozole" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="letrozole" model-id="Letrozole_Puszkiel2024_reference" status="simulated" stale="false" population="adults with hormone receptor-positive breast cancer" measured-compound="letrozole" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Puszkiel A, Dalenc F, Tafzi N, Marquet P, Debled M, Jacot W et al. Identification of non-adherence to adjuvant letrozole using a population pharmacokinetics approach in hormone receptor-positive breast cancer patients. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 199:106809 (2024).
@@ -31,8 +29,6 @@ Puszkiel A, Dalenc F, Tafzi N, Marquet P, Debled M, Jacot W et al. Identificatio
 <figure class="pk-models-diagram"><img src="drugs/drug_letrozole/Letrozole_Puszkiel2024_reference/Letrozole_Puszkiel2024_reference.svg" alt="Letrozole_Puszkiel2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | k a (h -1 ) | kabs | 2.12 | h -1 | 55 |
@@ -48,7 +44,7 @@ Puszkiel A, Dalenc F, Tafzi N, Marquet P, Debled M, Jacot W et al. Identificatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,11 +54,11 @@ Puszkiel A, Dalenc F, Tafzi N, Marquet P, Debled M, Jacot W et al. Identificatio
 
 ### Reviewer guidance
 
-**The letrozole record is held back because the apparent clearance and volume values rely on the assumption of 100% bioavailability.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The parameters CL/F (1.31 L/h) and V/F (207 L) are explicitly defined as bioavailability-adjusted apparent values. The model builder defaulted bioavailability (F) to 1, converting these apparent parameters into absolute physiological values without experimental support. This assumption is flagged as a deviation, and the associated CYP2A6 covariates were not simulated to test the impact of this simplification. Extracted — letrozole: kabs 2.12 h -1, V/F 207 L, CL/F 1.31 L/h.
+The base model was simulated, not the covariate effects the record defines.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -135,7 +131,8 @@ The parameters CL/F (1.31 L/h) and V/F (207 L) are explicitly defined as bioavai
 | T3_output_variable |  | pass | C_central (measured=letrozole) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

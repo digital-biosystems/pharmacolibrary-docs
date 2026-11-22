@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Durlobactam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durlobactam_Onita2026_reference&quot;,&quot;label&quot;:&quot;Onita_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durlobactam_Onita2026_reference&quot;,&quot;label&quot;:&quot;Onita_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # Durlobactam
 
@@ -25,28 +25,13 @@
 |---|---|---|---|---|---|---|
 | durlobactam | parent | 277.25 | C8H11N3O6S | DrugBank | — | Cammarata_2025 |
 
-## Start here
-
-> **Onita_2026_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md?tab=Simulation) · [record](drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Onita_2026_reference](drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Onita T et al., Cerebrospinal Pharmacokinetic and Pharm…, Journal of the Pediatric In… (2026) | [10.1093/jpids/piag017](https://doi.org/10.1093/jpids/piag017) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Cammarata_2025_final](drugs/drug_durlobactam/Durlobactam_Cammarata2025_final.md) | — | 3-compartment (no model) | 9 (+1 cov.) | Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ final_final_model_shrink](drugs/drug_durlobactam/Durlobactam_Cammarata2025_final_final_model_shrink.md) | — | 1-compartment (no model) | 0 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=durlobactam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A6` substrate | DrugBank actor |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Onita_2026_reference](drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Onita T et al., Cerebrospinal Pharmacokinetic and Pharm…, Journal of the Pediatric In… (2026) | [10.1093/jpids/piag017](https://doi.org/10.1093/jpids/piag017) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,13 +45,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-22 10:36 | 6:38 | 1/2/0 | 0/0/0 | 0/0/0 | 235,833/15,594 | einfracz / qwen3.8-27b | 26 | 0/12 | 26/0 | 0 |
+| 2026-10-22 10:36 | 6:38 | 0/3/0 | 0/0/0 | 0/0/0 | 235,833/15,594 | einfracz / qwen3.8-27b | 26 | 0/12 | 26/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 82 matched, 54 returned
 - **screened:** 5  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

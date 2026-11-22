@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;arginine hydrochloride&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/&quot;},{&quot;label&quot;:&quot;Wang_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -38,7 +38,7 @@ Wang J, Zheng H, Wang K, Wang Z, Ding Y. Population pharmacokinetics of arginine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Wang J, Zheng H, Wang K, Wang Z, Ding Y. Population pharmacokinetics of arginine
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Preijers_2021) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — arginine hydrochloride: CL 44.1 L/h, V 61.8 mL kg−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -88,19 +88,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[arginine cl]` |  | 44.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 44.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[high dose]` |  | 20 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[low dose]` |  | 10 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v low dose]` |  | 23.1 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | arginine glutamate | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | arginine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[arginine cl]` |  | 44.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 44.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[high dose]` |  | 20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[low dose]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v low dose]` |  | 23.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | arginine glutamate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | arginine | unknown | mismatch |
 
 </details>
 

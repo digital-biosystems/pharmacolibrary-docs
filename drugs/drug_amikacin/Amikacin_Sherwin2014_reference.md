@@ -41,7 +41,7 @@ Sherwin CM, Wead S, Stockmann C, Healy D, Spigarelli MG, Neely A et al. Amikacin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.571), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.571), gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -101,7 +101,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `qwen3.8-27b` | not confirmed | 0.571 (8/14 fields) | 6 |
-| `gpt-oss:120b` | confirmed | 1.0 (12/12 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (12/12 fields) | none |
 
 <details><summary>6 field discrepancies</summary>
 

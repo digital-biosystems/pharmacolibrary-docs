@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Chan_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Davies2010_reference&quot;,&quot;label&quot;:&quot;Davies_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Davies2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ferrari2017_reference&quot;,&quot;label&quot;:&quot;Ferrari_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ferrari2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The clearance plausibility check could not be computed.
+> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Chan1994_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Chan1994_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="warfarin enantiomers" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chan E, McLachlan A, O'Reilly R, Rowland M. Stereochemical aspects of warfarin drug interactions: use of a combined pharmacokinetic-pharmacodynamic model. Clinical pharmacology and therapeutics 56(3):286–294 (1994).
@@ -17,11 +17,11 @@ Chan E, McLachlan A, O'Reilly R, Rowland M. Stereochemical aspects of warfarin d
 
 ## Population and dosing
 
-**Population:** healthy male subjects · condition healthy · age group adult · n = 6.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 105 mg, oral, single.
 
-**Dosed compound ≠ measured compound:** dosed racemic warfarin, measured warfarin.
+**Dosed compound ≠ measured compound:** dosed racemic warfarin, measured warfarin enantiomers.
 
 ## Model
 
@@ -41,11 +41,11 @@ Chan E, McLachlan A, O'Reilly R, Rowland M. Stereochemical aspects of warfarin d
 | k (hr-1) R | kel | 0.017 | hr-1 |
 | t1/2 (hr) R | t1/2z | 43.4 | hr |
 | CLu (ml · hr-1 · kg-1) R | CLu | 399 | ml · hr-1 · kg-1 |
-| Vu (L · kg-1) R | V | 24.7 | L · kg-1 |
+| Vd | V | 14.3 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +55,11 @@ Chan E, McLachlan A, O'Reilly R, Rowland M. Stereochemical aspects of warfarin d
 
 ### Reviewer guidance
 
-**The clearance plausibility check could not be computed.**
+**This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — warfarin: fu 0.62, kabs 3.15 hr-1, tlag 0.8 hr, kel 0.017 hr-1, t1/2z 43.4 hr, CLu 399 ml · hr-1 · kg-1, V 24.7 L · kg-1.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aoyama_2022) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — warfarin: fu 0.62, kabs 3.15 hr-1, tlag 0.8 hr, kel 0.017 hr-1, t1/2z 43.4 hr, CLu 399 ml · hr-1 · kg-1; warfarin enantiomers: V 14.3 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has warfarin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has racemic warfarin, the second reading warfarin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -67,13 +67,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| fu (%) R | `Q46` · fu | 0.62 |  |  |  |  | llm_confirmed (0.6) | Chan_1994_table_1:row0:col1 |
+| fu (%) R | `Q46` · fu | 0.62 |  | 0.62 |  |  | llm_confirmed (0.6) | Chan_1994_table_1:row0:col1 |
 | ka (hr-1) | `Q49` · kabs | 3.15 | hr-1 | 0.000875 | 1/s | 1/h | exact (1) | Chan_1994_table_1:row2:col1 |
 | tlag (hr) | `Q83` · tlag | 0.80 | hr | 2880 | s | h | exact (1) | Chan_1994_table_1:row3:col1 |
 | k (hr-1) R | `Q47` · kel | 0.017 | hr-1 | 4.722e-06 | 1/s | 1/h | llm (0.6) | Chan_1994_table_1:row4:col1 |
 | t1/2 (hr) R | `Q57` · t1/2z | 43.4 | hr | 1.562e+05 | s | h | llm_confirmed (0.6) | Chan_1994_table_1:row6:col1 |
 | CLu (ml · hr-1 · kg-1) R | `Q24` · CLu | 399 | ml · hr-1 · kg-1 | 7.758e-06 | m3/s | ml/(h·kg) | llm_confirmed (0.6) | Chan_1994_table_1:row8:col1 |
-| Vu (L · kg-1) R | `Q61` · V | 24.7 | L · kg-1 | 1.729 | m3 | l/kg | llm (0.6) | Chan_1994_table_1:row10:col1 |
+| Vd | `Q61` · V | 14.3 | L | 0.0143 | m3 | L | review_gapfill (0.7) | Aoyama_2022:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,15 +83,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'control' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped PD-category row 'S' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chan_1994_table_1:row1:col1', 'Chan_1994_table_1:row5:col1', 'Chan_1994_table_1:row7:col1', 'Chan_1994_table_1:row9:col1', 'Chan_1994_table_1:row11:col1'])
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (Vu (L · kg-1) R)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=warfarin
+- dropped unlinked row (NIL): 'Vu (L · kg-1) R' — extend the ontology if this is a real PK parameter (source ['Chan_1994_table_1:row10:col1'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=warfarin enantiomers
+- molar mass: no plausible PubChem entry for 'warfarin enantiomers' ('warfarin enantiomers') — left in mass units
+- molar mass: none found for 'warfarin enantiomers' — its concentrations stay mass-only
+- gap-filled Q61 (V) from Aoyama_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
 
 ## Validation
@@ -101,14 +102,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | warfarin | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['warfarin', 'pca', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[vu (l kg-1) r]` |  | 24.7 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | racemic warfarin | warfarin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | warfarin enantiomers | warfarin | mismatch |
 
 </details>
 
@@ -122,19 +125,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q24 | pass | [length] ** 3 / [time] |  | ['Chan_1994_table_1:row8:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Chan_1994_table_1:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Chan_1994_table_1:row2:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Chan_1994_table_1:row6:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Chan_1994_table_1:row10:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aoyama_2022:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Chan_1994_table_1:row3:col1'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 399 | ['Chan_1994_table_1:row8:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q24 | pass | clearance within physiological range | 27.9 L/h | ['Chan_1994_table_1:row8:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.73e+03 L | ['Chan_1994_table_1:row10:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 14.3 L | ['Aoyama_2022:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -168,4 +171,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Chan1994_reference&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Chan1994_reference%0APaper%3A%20Chan_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Chan1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 15:03 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:20 UTC</sub>

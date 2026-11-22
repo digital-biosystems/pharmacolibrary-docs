@@ -4,11 +4,11 @@
 
 # lusutrombopag — `Lusutrombopag_Katsube2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-05 19:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lusutrombopag apparent bioavailability (Fab) has unit hours, causing a dimension mismatch that blocked unit conversion to SI.
+> Lusutrombopag’s enzyme-affinity parameter Km was rejected because its reported value, 0.0320 /h, has a rate unit rather than a concentration unit.
 
-<div class="pk-model-meta" hidden drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="true" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="false" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Katsube T, Shimizu R, Fukuhara T, Kano T, Wajima T. Pharmacokinetic/Pharmacodynamic Modelling and Simulation of Lusutrombopag, a Novel Thrombopoietin Receptor Agonist, for the Treatment of Thrombocytopenia in Patients with Chronic Liver Disease Undergoing Invasive Procedures. Clinical pharmacokinetics 58(11):1469–1482 (2019).
@@ -44,7 +44,7 @@ Katsube T, Shimizu R, Fukuhara T, Kano T, Wajima T. Pharmacokinetic/Pharmacodyna
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.037). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.037). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +54,13 @@ Katsube T, Shimizu R, Fukuhara T, Kano T, Wajima T. Pharmacokinetic/Pharmacodyna
 
 ### Reviewer guidance
 
-**Lusutrombopag apparent bioavailability (Fab) has unit hours, causing a dimension mismatch that blocked unit conversion to SI.**
+**Lusutrombopag’s enzyme-affinity parameter Km was rejected because its reported value, 0.0320 /h, has a rate unit rather than a concentration unit.**
 
-The absolute bioavailability parameter for lusutrombopag is assigned the unit hours instead of being dimensionless. This unit cannot be converted to SI, leaving the structural parameter without a valid value. A dimensionality check consequently failed for this structural component. Extracted — lusutrombopag: CL/F 0.874 L/h, Q3/F 0.872 L/h, V3/F 9.04 L, Q/F 0.0265 L/h, Fab 1 h, Km 0.032 /h, kel 0.00863 /h, kabs 0.166 /h, … (+1).
+Km represents enzyme affinity, but the recorded /h unit conflicts with the concentration dimension expected for that parameter. The reported unit could not be converted to SI, leaving no SI value for the parameter. The second reader did not independently extract the Km value. Extracted — lusutrombopag: CL/F 0.874 L/h, Q3/F 0.872 L/h, V3/F 9.04 L, Q/F 0.0265 L/h, Fab 1 h, Km 0.032 /h, kel 0.00863 /h, kabs 0.166 /h, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lusutrombopag, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lusutrombopag, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -153,38 +153,38 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.037 (1/27 fields) | 26 |
+| `gpt-oss-120b` | not confirmed | 0.037 (1/27 fields) | 26 |
 
 <details><summary>26 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss:120b` | `parameters[2 mg tablet in the fed state]` |  | 0.857 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[3 mg tablet in the fed state]` |  | 0.843 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f1 of solution in the fasted state]` | 1.00 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f1 of solution in the fasted state]` |  | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kl [/h]]` | 0.00863 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kl [/h]]` |  | 0.00863 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km [/h]]` | 0.0320 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km [/h]]` |  | 0.0320 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q3/f [l/h]]` | 0.872 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q3/f [l/h]]` |  | 0.872 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q4/f [l/h]]` | 0.0265 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q4/f [l/h]]` |  | 0.0265 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[solution in the fed state]` |  | 0.884 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_ethnicity]` |  | 0.868 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_sex]` |  | 0.874 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q61_wt]` |  | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical cl/f]` | 0.874 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical cl/f]` |  | 0.874 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical v3/f]` | 9.04 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical v3/f]` |  | 9.04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2/f [l]]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2/f [l]]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v4/f [l]]` |  | 3.48 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | lusutrombopag | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | lusutrombopag | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[2 mg tablet in the fed state]` |  | 0.857 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[3 mg tablet in the fed state]` |  | 0.843 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1 of solution in the fasted state]` | 1.00 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1 of solution in the fasted state]` |  | 1.00 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kl [/h]]` | 0.00863 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kl [/h]]` |  | 0.00863 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km [/h]]` | 0.0320 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km [/h]]` |  | 0.0320 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q3/f [l/h]]` | 0.872 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q3/f [l/h]]` |  | 0.872 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q4/f [l/h]]` | 0.0265 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q4/f [l/h]]` |  | 0.0265 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[solution in the fed state]` |  | 0.884 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_ethnicity]` |  | 0.868 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_sex]` |  | 0.874 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_wt]` |  | 1.00 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical cl/f]` | 0.874 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical cl/f]` |  | 0.874 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical v3/f]` | 9.04 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical v3/f]` |  | 9.04 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f [l]]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f [l]]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v4/f [l]]` |  | 3.48 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | lusutrombopag | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lusutrombopag | unknown | mismatch |
 
 </details>
 

@@ -4,11 +4,11 @@
 
 # moroxydine — `Moroxydine_Liu2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> This record was reviewed on 2026-11-07 16:57 UTC (Rejected), but the paper was screened again on 2026-10-07 17:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Moroxydine's apparent volume of distribution (4.55 L/kg) and blood clearance (0.25 h·kg) are structurally inconsistent, preventing derivation of a valid elimination half-life.
+> Moroxydine blood clearance 0.25 was rejected due to a dimension mismatch with the reported unit h·kg, and all other parameters were unsupported by full text.
 
-<div class="pk-model-meta" hidden drug="moroxydine" model-id="Moroxydine_Liu2016_reference" status="rejected" stale="true" population="gibel carp (Carassius gibelio)" measured-compound="moroxydine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moroxydine" model-id="Moroxydine_Liu2016_reference" status="rejected" stale="false" population="gibel carp (Carassius gibelio)" measured-compound="moroxydine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Liu W, Xu J, Zhou Y, Chen J, Ma J, Zeng L. Pharmacokinetics and tissue residues of moroxydine hydrochloride in gibel carp, Carassius gibelio after oral administration. Journal of veterinary pharmacology and therapeutics 39(4):398–404 (2016).
@@ -44,7 +44,7 @@ Liu W, Xu J, Zhou Y, Chen J, Ma J, Zeng L. Pharmacokinetics and tissue residues 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Liu W, Xu J, Zhou Y, Chen J, Ma J, Zeng L. Pharmacokinetics and tissue residues 
 
 ### Reviewer guidance
 
-**Moroxydine's apparent volume of distribution (4.55 L/kg) and blood clearance (0.25 h·kg) are structurally inconsistent, preventing derivation of a valid elimination half-life.**
+**Moroxydine blood clearance 0.25 was rejected due to a dimension mismatch with the reported unit h·kg, and all other parameters were unsupported by full text.**
 
-The record provides a one-compartment summary with a blood clearance of 0.25 h·kg and an apparent volume of distribution of 4.55 L/kg. Because the terminal half-life (15.87 h) cannot be reconciled with the ratio of these two parameters, the model fails a dimensional check for structural consistency. Additionally, the record was built exclusively from the abstract, meaning the reported summary statistics stand in for a fully fitted model. A second reader independently disagreed with the extracted values for clearance, volume of distribution, maximum concentration, and all half-lives, marking them as unverifiable from the provided text. Extracted — moroxydine: t1/2ka 4.29 h, t1/2z 15.9 h, Cmax 2.98 μg/mL, tmax 10.3 h, V/F 4.55 L/kg, CLb 0.25 h·kg, AUC 75.9 μg·h/mL.
+The blood clearance value of 0.25 h·kg has a unit dimension of time mass, which conflicts with the required volume per time. This dimensional error caused the record to be rejected for the structural parameter. Additionally, the second reader identified all parameter values and analytes as unknown because the source was abstract-only, meaning the reported summary statistics stand in for a fitted model. Extracted — moroxydine: t1/2ka 4.29 h, t1/2z 15.9 h, Cmax 2.98 μg/mL, tmax 10.3 h, V/F 4.55 L/kg, CLb 0.25 h·kg, AUC 75.9 μg·h/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has moroxydine hydrochloride, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

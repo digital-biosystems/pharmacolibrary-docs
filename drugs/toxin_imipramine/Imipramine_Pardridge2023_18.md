@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record contains only partition and volume parameters for imipramine without kinetic quantities like clearance or rate constants, indicating it derives from an exposure or outcome paper rather than a fitted pharmacokinetic model.
 
 <div class="pk-model-meta" hidden drug="Imipramine" model-id="Imipramine_Pardridge2023_18" status="rejected" stale="false" population="human" measured-compound="Imipramine" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Pardridge WM. Physiologically Based Pharmacokinetic Model of Brain Delivery of P
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record contains only partition and volume parameters for imipramine without kinetic quantities like clearance or rate constants, indicating it derives from an exposure or outcome paper rather than a fitted pharmacokinetic model.**
+
+The extracted parameters for imipramine consist solely of a brain-to-plasma partition coefficient (Kp) and volume of distribution terms, with no half-life, rate constants, or clearance values present. The record was misinterpreted as a population study because a table structure column labeled '18' was incorrectly parsed as a study population identifier. Consequently, the extraction failed to capture a functional pharmacokinetic model, resulting in rejection as the available data represent static distribution metrics rather than dynamic kinetic parameters. Extracted — imipramine: Kp 3.8.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

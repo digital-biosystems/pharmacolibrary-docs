@@ -4,11 +4,11 @@
 
 # sulfamethoxypyridazine — `Sulfamethoxypyridazine_Abdennebi1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-07 11:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sulfamethoxypyridazine absolute bioavailability was rejected because its reported unit could not be converted to SI.
+> The terminal elimination rate constant and volume of distribution parameters in the sulfamethoxypyridazine model have invalid units.
 
-<div class="pk-model-meta" hidden drug="sulfamethoxypyridazine" model-id="Sulfamethoxypyridazine_Abdennebi1994_reference" status="rejected" stale="true" population="dromedary camels" measured-compound="sulfamethoxypyridazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sulfamethoxypyridazine" model-id="Sulfamethoxypyridazine_Abdennebi1994_reference" status="rejected" stale="false" population="dromedary camels" measured-compound="sulfamethoxypyridazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Abdennebi EH, Bousfiha A, Ben Goumi M, Oukessou M. [Pharmacokinetics and plasma protein binding of sulfamethoxypyridazine in camels (Camelus dromedarius)]. Revue d'elevage et de medecine veterinaire des pays tropicaux 47(1):97–102 (1994).
@@ -48,7 +48,7 @@ Abdennebi EH, Bousfiha A, Ben Goumi M, Oukessou M. [Pharmacokinetics and plasma 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,9 +58,9 @@ Abdennebi EH, Bousfiha A, Ben Goumi M, Oukessou M. [Pharmacokinetics and plasma 
 
 ### Reviewer guidance
 
-**Sulfamethoxypyridazine absolute bioavailability was rejected because its reported unit could not be converted to SI.**
+**The terminal elimination rate constant and volume of distribution parameters in the sulfamethoxypyridazine model have invalid units.**
 
-The absolute bioavailability is listed as 53.9 with the unit 'p.100', which indicates a percentage rather than a dimensionless fraction. This specific unit label was not recognized for conversion to standard SI units. Consequently, the parameter remained without a valid SI value, triggering a dimensional mismatch on a structural parameter and leading to the record's rejection. Extracted — sulfamethoxypyridazine: λ1 5.09 h⁻¹, t1/2z 136 h, kel 61 h⁻¹, k12 3.44e+03 h⁻¹, k21 1.5e+03 h⁻¹, V 165 l/kg, Vss 544 l/kg, Ct 35 l/kg.h, … (+5).
+The terminal elimination rate constant is recorded with unit l/kg.h instead of a reciprocal time unit, and the volume of distribution is recorded with unit l/kg instead of a volume or volume-per-mass unit. These dimensional conflicts prevent the model from being dimensionally consistent. The record was rejected because the units for these structural parameters do not match their pharmacokinetic definitions. Extracted — sulfamethoxypyridazine: λ1 5.09 h⁻¹, t1/2z 136 h, kel 61 h⁻¹, k12 3.44e+03 h⁻¹, k21 1.5e+03 h⁻¹, V 165 l/kg, Vss 544 l/kg, Ct 35 l/kg.h, … (+5).
 
 <sub>reviewed by qwen3.8-27b</sub>
 

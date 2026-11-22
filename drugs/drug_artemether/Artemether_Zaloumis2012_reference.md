@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artemether&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/&quot;},{&quot;label&quot;:&quot;Zaloumis_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lohy_2018_EFF&quot;,&quot;label&quot;:&quot;Lohy_2018 \u00b7 EFF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/pd_Lohy_2018_EFF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Lohy_2018_EFF&quot;,&quot;label&quot;:&quot;Lohy_2018 \u00b7 EFF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/pd_Lohy_2018_EFF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Artemether's clearance, volume of distribution, and absorption lag time lacked values, causing the model to be quarantined.
+> Artemether's clearance, volume of distribution, and absorption lag time were left at library placeholders, causing the model to be quarantined.
 
 <div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Zaloumis2012_reference" status="model_quarantined" stale="false" population="simulated P. falciparum malaria patients" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,9 +51,9 @@ Zaloumis S, Humberstone A, Charman SA, Price RN, Moehrle J, Gamo-Benito J et al.
 
 ### Reviewer guidance
 
-**Artemether's clearance, volume of distribution, and absorption lag time lacked values, causing the model to be quarantined.**
+**Artemether's clearance, volume of distribution, and absorption lag time were left at library placeholders, causing the model to be quarantined.**
 
-All extracted parameters describe dihydroartemisinin, leaving artemether without specific clearance, volume, or lag time values. A parameter coverage check confirmed four of five expected parameters were covered, with V2/F notably missing. The second reader disagreed on the metabolite link and several parameter values, highlighting inconsistencies in the record. Extracted — dihydroartemisinin: kabs 0.37 /h, CL/F 180 L/h, V1/F 217 L, Q/F 4.08 L/h, V2/F 272 L.
+All five extracted parameters describe dihydroartemisinin, leaving artemether's clearance, volume of distribution, and absorption lag time without explicit values. A second reader disagreed with the metabolite link and several parameter assignments, resulting in zero agreement. The mismatch between the intended parent-metabolite structure and the actual one-compartment oral model also contributed to the hold. Extracted — dihydroartemisinin: kabs 0.37 /h, CL/F 180 L/h, V1/F 217 L, Q/F 4.08 L/h, V2/F 272 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has artesunate → dihydroartemisinin (metabolism), the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -150,14 +150,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -175,30 +176,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_matlab.zip" download>Artemether_Zaloumis2012_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_matlab_simbio.zip" download>Artemether_Zaloumis2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_sbml.zip" download>Artemether_Zaloumis2012_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_cellml.zip" download>Artemether_Zaloumis2012_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Zaloumis S, Humberstone A, Charman SA, Price RN, Moehrle J, Gamo-Benito J et al. Assessing the utility of an anti-malarial pharmacokinetic-pharmacodynamic model for aiding drug clinical development. Malaria journal 11:303 (2012). [doi:10.1186/1475-2875-11-303](https://doi.org/10.1186/1475-2875-11-303)
-
-**This record:** Pharmacolibrary, model `Artemether_Zaloumis2012_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_artemether/Artemether_Zaloumis2012_reference>
-
-```bibtex
-@misc{pharmacolibrary_ArtemetherZaloumis2012reference,
-  title  = {{Pharmacolibrary model Artemether_Zaloumis2012_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_artemether/Artemether_Zaloumis2012_reference},
-  note   = {Parameters from doi:10.1186/1475-2875-11-303},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

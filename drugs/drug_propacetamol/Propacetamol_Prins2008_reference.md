@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Propacetamol's volume of distribution was not extracted, leaving a placeholder value that prevented publication of the model.
+> Propacetamol's bioavailability, volume of distribution, and absorption lag time lacked values, forcing the use of library placeholders and resulting in model quarantine.
 
 <div class="pk-model-meta" hidden drug="propacetamol" model-id="Propacetamol_Prins2008_reference" status="model_quarantined" stale="false" population="infants after craniofacial surgery" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,34 +16,7 @@ Prins SA, Van Dijk M, Van Leeuwen P, Searle S, Anderson BJ, Tibboel D et al. Pha
 
 ## Population and dosing
 
-**Population:** infants after craniofacial surgery · age group infant · n = ,
-    "condition": "post-craniomaxillofacial surgery",
-    "species": "human",
-    "compounds": [
-      {
-        "name": "propacetamol",
-        "role": "parent",
-        "dosed": "yes",
-        "measured": "no",
-        "has_parameters": "yes"
-      },
-      {
-        "name": "paracetamol",
-        "role": "metabolite",
-        "dosed": "yes",
-        "measured": "yes",
-        "has_parameters": "yes"
-      }
-    ],
-    "links": [
-      {
-        "from": "propacetamol",
-        "to": "paracetamol",
-        "relation": "hydrolysis",
-        "link_parameter": "Kfm"
-      }
-    ]
-  }.
+**Population:** infants after craniofacial surgery · age group infant.
 
 **Dosed compound ≠ measured compound:** dosed mixed (propacetamol/paracetamol), measured paracetamol.
 
@@ -77,9 +50,9 @@ Prins SA, Van Dijk M, Van Leeuwen P, Searle S, Anderson BJ, Tibboel D et al. Pha
 
 ### Reviewer guidance
 
-**Propacetamol's volume of distribution was not extracted, leaving a placeholder value that prevented publication of the model.**
+**Propacetamol's bioavailability, volume of distribution, and absorption lag time lacked values, forcing the use of library placeholders and resulting in model quarantine.**
 
-All five extracted parameters describe paracetamol, while the dose compound propacetamol lacks a specific volume of distribution estimate. The record relied on summary statistics from the abstract alone rather than a fitted population model. A second reader disagreed on the absence of a propacetamol-to-paracetamol hydrolysis link and the validity of several parameter values. Extracted — paracetamol: t1/2ka 4.6 h, t1/2z 0.028 h, CL 12 l.h(-1).70 kg(-1), Q 116 l.h(-1).70 kg(-1), V2 7.9 l.70 kg(-1).
+The record was derived solely from the paper's abstract, causing summary statistics to stand in for a fitted model. All extracted parameters described paracetamol, leaving propacetamol's bioavailability, volume of distribution, and absorption lag time with no explicit values. Consequently, a second reader disputed the volume assignments, noting the central volume of distribution should be 7.9 and the peripheral volume should be 44, rather than the single combined value provided. Extracted — paracetamol: t1/2ka 4.6 h, t1/2z 0.028 h, CL 12 l.h(-1).70 kg(-1), Q 116 l.h(-1).70 kg(-1), V2 7.9 l.70 kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mixed (propacetamol/paracetamol), the second reading propacetamol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -156,14 +129,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=paracetamol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered | neither emitted nor in defaulted[]: ['V2'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=paracetamol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | cross-check disputed by a second reader: verdict disputed, agreement 0.636, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

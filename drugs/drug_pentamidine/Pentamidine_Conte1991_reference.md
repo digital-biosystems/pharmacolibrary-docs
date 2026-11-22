@@ -4,11 +4,11 @@
 
 # Pentamidine — `Pentamidine_Conte1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-07 08:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent intercompartmental clearance value of 0.001 L/h has inconsistent dimensions for a one-compartment pentamidine model.
+> Pentamidine’s renal-clearance-to-plasma-clearance ratio of 2.1% was associated with a structural-parameter unit mismatch, and abstract-only statistics stood in for a fitted model.
 
-<div class="pk-model-meta" hidden drug="Pentamidine" model-id="Pentamidine_Conte1991_reference" status="rejected" stale="true" population="patients with normal renal function or receiving hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Pentamidine" model-id="Pentamidine_Conte1991_reference" status="rejected" stale="false" population="patients with normal renal function or receiving hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal renal function or receiving hemodialysis. The Journal of infectious diseases 163(1):169–175 (1991).
@@ -38,7 +38,7 @@ Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal re
 
 ### Reviewer guidance
 
-**The apparent intercompartmental clearance value of 0.001 L/h has inconsistent dimensions for a one-compartment pentamidine model.**
+**Pentamidine’s renal-clearance-to-plasma-clearance ratio of 2.1% was associated with a structural-parameter unit mismatch, and abstract-only statistics stood in for a fitted model.**
 
-The structural parameter labeled 'P' with the meaning of intercompartmental clearance was recorded as 0.001 L/h, but the one-compartment structure has no peripheral compartment to link. This structural inconsistency caused a dimension mismatch on the parameter. Additionally, the record was built from the abstract alone, so the summary statistics do not represent a fitted model. Extracted — pentamidine: Cmax 249 ng/ml, CL 268 l/h, t1/2z 29 h, Q 0.001 L/h, CL_ratio 2.1 %.
+The recorded mismatch is a percent unit, which is dimensionless, against no unit for a structural parameter; the record gives the clearance ratio as 2.1%. Because only the abstract was read, reported summary statistics—not a fitted model—stand in for the model. A second reader did not retain the reported terminal half-life (29 h), peak concentration (249 ng/ml), plasma clearance (268 l/h), or intercompartmental clearance (0.001 l/h); both readers left the linear-regression entry without a value. Extracted — pentamidine: Cmax 249 ng/ml, CL 268 l/h, t1/2z 29 h, Q 0.001 L/h, CL_ratio 2.1 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].value`: this record has 29, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

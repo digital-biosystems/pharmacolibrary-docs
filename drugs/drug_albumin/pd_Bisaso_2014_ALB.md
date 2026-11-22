@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;albumin&quot;,&quot;href&quot;:&quot;drugs/drug_albumin/&quot;},{&quot;label&quot;:&quot;Bisaso_2014 \u00b7 PD plasma albumin concentration&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma albumin concentration — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:glm-5.3-flash (not confirmed, agreement 0.375), einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+# plasma albumin concentration — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.375), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -50,18 +50,18 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:glm-5.3-flash` | not confirmed | 0.375 (3/8 fields) | 5 |
-| `einfracz:gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
+| `glm-5.3-flash` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:glm-5.3-flash` | `driver_compound` | none |  | mismatch |
-| `einfracz:glm-5.3-flash` | `effect_form` | unknown | proportional | mismatch |
-| `einfracz:glm-5.3-flash` | `parameters[Q100]` |  | 0.1464 | only_one_extracted |
-| `einfracz:glm-5.3-flash` | `parameters[Q327].value` | 0.1464 | 0.1008 | mismatch |
-| `einfracz:glm-5.3-flash` | `parameters[Q328]` | 0.0336 |  | only_one_extracted |
+| `glm-5.3-flash` | `driver_compound` | none |  | mismatch |
+| `glm-5.3-flash` | `effect_form` | unknown | proportional | mismatch |
+| `glm-5.3-flash` | `parameters[Q100]` |  | 0.1464 | only_one_extracted |
+| `glm-5.3-flash` | `parameters[Q327].value` | 0.1464 | 0.1008 | mismatch |
+| `glm-5.3-flash` | `parameters[Q328]` | 0.0336 |  | only_one_extracted |
 
 </details>
 

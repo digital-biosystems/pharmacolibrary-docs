@@ -40,7 +40,7 @@ Atogepant is a gepant medication used to prevent migraines. It is given orally a
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from</sub> | [Schlachter_2026_phase_1_model](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_1_model.md) | — | 2-compartment (no model) | 8 (+2 cov.) | Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [↳ phase_2_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md) | ▶ model + simulator | 2-compartment, oral | 8 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [↳ phase_2_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md) | ▶ model + simulator | 2-compartment, oral | 8 (+2 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q82 — no SI value to build from</sub> | [↳ phase_3_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md) | — | 3-compartment (no model) | 9 (+6 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
@@ -48,26 +48,6 @@ Atogepant is a gepant medication used to prevent migraines. It is given orally a
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Schlachter_2026_2_MMD](drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md) | Monthly migraine days ← atogepant · direct Emax (saturable) effect | ▶ model + simulator | Schlachter L et al., Exposure-Response Modeling of Monthly M…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70154](https://doi.org/10.1002/psp4.70154) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=atogepant).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP3A4` substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `SLC22A6` substrate, `SLC47A1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCG2` substrate, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CALCRL (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

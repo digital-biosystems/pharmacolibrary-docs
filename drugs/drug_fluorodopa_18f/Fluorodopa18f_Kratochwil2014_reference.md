@@ -16,7 +16,7 @@ Kratochwil C, Combs SE, Leotta K, Afshar-Oromieh A, Rieken S, Debus J et al. Int
 
 ## Population and dosing
 
-**Population:** patients with recurrent low-grade astrocytoma or high-grade glioblastoma · condition recurrent brain tumors · age group adult · n = &gt;=16.
+**Population:** patients with recurrent low-grade astrocytoma or high-grade glioblastoma · condition recurrent brain tumors · age group adult.
 
 ## Model
 

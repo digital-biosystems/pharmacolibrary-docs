@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> The dolasetron model was rejected because the structure mismatched the parent-metabolite data, and bioavailability values were ambiguous in the abstract.
+> Dolasetron’s kfm is recorded as 7 h−1, while the refused record maps measured dolasetron to the parent compartment and substitutes a one-compartment enteral structure for its parent–metabolite model.
 
 <div class="pk-model-meta" hidden drug="dolasetron" model-id="Dolasetron_Dow1996_reference" status="rejected" stale="false" population="dogs" measured-compound="dolasetron" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -46,7 +46,7 @@ Dow J, Francesco GF, Berg C. Comparison of the pharmacokinetics of dolasetron an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,13 +56,13 @@ Dow J, Francesco GF, Berg C. Comparison of the pharmacokinetics of dolasetron an
 
 ### Reviewer guidance
 
-**The dolasetron model was rejected because the structure mismatched the parent-metabolite data, and bioavailability values were ambiguous in the abstract.**
+**Dolasetron’s kfm is recorded as 7 h−1, while the refused record maps measured dolasetron to the parent compartment and substitutes a one-compartment enteral structure for its parent–metabolite model.**
 
-The report describes a parent-metabolite study, yet the built model structure was a one-compartment enteral model that failed to match the required topology. The record assumed a 7% absolute bioavailability, a value the second reader did not support, leaving it as a flagged deviation. The formation rate constant was also set to 7 h⁻¹ without corroborating fit data, and the lag time was left as a placeholder without a specific value. Because the source was abstract-only, these summary statistics stood in for a fitted model, preventing validation of the specific metabolite link. Extracted — dolasetron: t1/2z 0.1 h, CL 109 mL/min/kg, V/F 0.83 L/kg, Fab 7 %, V1 8.5 L/kg, kfm 7 h-1, tmax 0.33 h, kabs 14 h-1.
+The measured compound is dolasetron, but the output is assigned to the central compartment rather than the metabolite compartment, and the one-compartment enteral structure does not match the parent–metabolite structure. Because only the abstract was read, summary statistics stood in for a fitted model; the builder also defaulted Tlag and assumed F=1, Fm=1, with no molar correction. The second reader disputed the dose compound, analyte, metabolic link, and apparent parameterization, and did not agree with the recorded bioavailability, formation-rate, or volume estimates; agreement was 0 of 1 reader(s). Extracted — dolasetron: t1/2z 0.1 h, CL 109 mL/min/kg, V/F 0.83 L/kg, Fab 7 %, V1 8.5 L/kg, kfm 7 h-1, tmax 0.33 h, kabs 14 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dolasetron, the second reading dolasetron or red-dolasetron; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dolasetron, the second reading dolasetron or red-dolasetron; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -100,6 +100,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
+- derived CL/F=402.719 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Dow_1996_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
@@ -111,25 +112,25 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/13 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.0 (0/13 fields) | 13 |
 
 <details><summary>13 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 7 |  | only_one_extracted |
-| `gpt-oss:120b` | `model.links` | [['dolasetron', 'reduced dolasetron', 'metabolism']] | [['dolasetron', 'red-dolasetron', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[apparent first-order formation rate constant]` | 7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution]` | 0.83 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[avd beta]` | 8.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` | 7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[first-order absorption rate constants]` | 14 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median tmax]` | 0.33 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal elimination half-life]` | 0.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total body plasma clearance]` | 109 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | dolasetron | dolasetron or red-dolasetron | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | dolasetron | dolasetron and red-dolasetron | mismatch |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 7 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['dolasetron', 'reduced dolasetron', 'metabolism']] | [['dolasetron', 'red-dolasetron', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[apparent first-order formation rate constant]` | 7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 0.83 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[avd beta]` | 8.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order absorption rate constants]` | 14 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median tmax]` | 0.33 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination half-life]` | 0.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body plasma clearance]` | 109 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | dolasetron | dolasetron or red-dolasetron | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | dolasetron | dolasetron and red-dolasetron | mismatch |
 
 </details>
 
@@ -161,16 +162,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=dolasetron) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev_001: not acceptable; dev_002: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | fail | Metabolite_C (measured=dolasetron) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

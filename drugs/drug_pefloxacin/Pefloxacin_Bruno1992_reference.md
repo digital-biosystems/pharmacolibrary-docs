@@ -16,7 +16,7 @@ Bruno R, Iliadis MC, Lacarelle B, Cosson V, Mandema JW, Le Roux Y et al. Evaluat
 
 ## Population and dosing
 
-**Population:** intensive care unit patients · age group adult · n = &lt;|call|&gt;null.
+**Population:** intensive care unit patients · age group adult.
 
 ## Model
 

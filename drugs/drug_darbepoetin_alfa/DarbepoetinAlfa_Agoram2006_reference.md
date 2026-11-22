@@ -38,7 +38,7 @@ Agoram B, Heatherington AC, Gastonguay MR. Development and evaluation of a popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Agoram B, Heatherington AC, Gastonguay MR. Development and evaluation of a popul
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — darbepoetin alfa: CL 2.01e+03 mL/day, Vss 3.39e+03 mL, Fab 44.3 %, V 16.2 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 44.3, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 44.3, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -91,16 +91,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 44.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` | 44.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 2010 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | 3390 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 44.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 44.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 2010 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 3390 |  | only_one_extracted |
 
 </details>
 

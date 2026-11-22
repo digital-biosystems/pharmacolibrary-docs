@@ -16,7 +16,7 @@ Chung M, Leitz FH, Maier G, Patrick JE, Gural RP, Symchowicz S. Rising multiple-
 
 ## Population and dosing
 
-**Population:** hypertensive patients · condition hypertension · age group adult · n = &gt;=12.
+**Population:** hypertensive patients · condition hypertension · age group adult.
 
 ## Model
 

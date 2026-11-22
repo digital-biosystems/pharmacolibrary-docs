@@ -25,7 +25,7 @@ Progabide is a fatty acid derivative antiepileptic drug used in the treatment of
 
 ## Start here
 
-> **Johno_1982_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> male rhesus monkeys, n = &gt; 5. [Run it in the simulator](drugs/drug_progabide/Progabide_Johno1982_reference.md?tab=Simulation) · [record](drugs/drug_progabide/Progabide_Johno1982_reference.md)
+> **Johno_1982_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> male rhesus monkeys. [Run it in the simulator](drugs/drug_progabide/Progabide_Johno1982_reference.md?tab=Simulation) · [record](drugs/drug_progabide/Progabide_Johno1982_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -34,17 +34,6 @@ Progabide is a fatty acid derivative antiepileptic drug used in the treatment of
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Johno_1982_reference](drugs/drug_progabide/Progabide_Johno1982_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Johno I et al., Pharmacokinetic profile of progabide, a…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600710609](https://doi.org/10.1002/jps.2600710609) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=progabide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: GABBR1 (target), GABBR2 (target), GABRA1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

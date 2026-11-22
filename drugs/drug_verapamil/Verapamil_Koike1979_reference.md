@@ -4,18 +4,18 @@
 
 # verapamil — `Verapamil_Koike1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:59 UTC (Rejected), but the paper was screened again on 2026-10-07 15:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Verapamil apparent volume of distribution is listed as 2.51 1/kg, a dimensionally invalid unit that prevents calculation.
+> Verapamil’s apparent volume of distribution (V/F) of 2.51 1/kg was rejected because the reported unit is dimensionless, not a volume.
 
-<div class="pk-model-meta" hidden drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Koike Y, Shimamura K, Shudo I, Saito H. Pharmacokinetics of verapamil in man. Research communications in chemical pathology and pharmacology 24(1):37–47 (1979).
 
 ## Population and dosing
 
-**Population:** healthy subjects · condition healthy · age group adult · n = six.
+**Population:** healthy subjects · condition healthy · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ Koike Y, Shimamura K, Shudo I, Saito H. Pharmacokinetics of verapamil in man. Re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Koike Y, Shimamura K, Shudo I, Saito H. Pharmacokinetics of verapamil in man. Re
 
 ### Reviewer guidance
 
-**Verapamil apparent volume of distribution is listed as 2.51 1/kg, a dimensionally invalid unit that prevents calculation.**
+**Verapamil’s apparent volume of distribution (V/F) of 2.51 1/kg was rejected because the reported unit is dimensionless, not a volume.**
 
-The volume of distribution (V/F) value of 2.51 uses the unit '1/kg', which is dimensionally inconsistent with volume and cannot be converted to standard SI units. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model without proper unit validation. A second reader disagreed on whether the model was apparent or mechanistic and failed to identify the dose compound, but the primary rejection is the invalid volume unit. Extracted — verapamil: t1/2α 0.23 hour, t1/2β 4.21 hour, V/F 2.51 1/kg, CL 501 ml/min, tmax 1.84 hour, Cmax 219 ng/ml, Fab 22.5 %.
+The record gives V/F as 2.51 1/kg, which conflicts with the volume dimension of this parameter. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader also disagreed about the parameterization and the assignment of several reported values to parameters, including V/F, clearance, and bioavailability. Extracted — verapamil: t1/2α 0.23 hour, t1/2β 4.21 hour, V/F 2.51 1/kg, CL 501 ml/min, tmax 1.84 hour, Cmax 219 ng/ml, Fab 22.5 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

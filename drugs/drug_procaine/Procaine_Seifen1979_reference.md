@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;procaine&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/&quot;},{&quot;label&quot;:&quot;Seifen_1979 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # procaine — `Procaine_Seifen1979_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="procaine" model-id="Procaine_Seifen1979_reference" status="simulated" stale="false" population="women undergoing hysterectomy" measured-compound="procaine" parameterization="mechanistic" topology="1C"></div>
+> All five procaine pharmacokinetic parameters extracted from the abstract were disputed by the second reader, who recorded no values for them.
+
+<div class="pk-model-meta" hidden drug="procaine" model-id="Procaine_Seifen1979_reference" status="needs_review" stale="false" population="women undergoing hysterectomy" measured-compound="procaine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Seifen AB, Ferrari AA, Seifen EE, Thompson DS, Chapman J. Pharmacokinetics of intravenous procaine infusion in humans. Anesthesia and analgesia 58(5):382–386 (1979).
@@ -15,7 +17,7 @@ Seifen AB, Ferrari AA, Seifen EE, Thompson DS, Chapman J. Pharmacokinetics of in
 
 ## Population and dosing
 
-**Population:** women undergoing hysterectomy · condition surgical anesthesia · age group adult · n = &gt;=12.
+**Population:** women undergoing hysterectomy · condition surgical anesthesia · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Seifen AB, Ferrari AA, Seifen EE, Thompson DS, Chapman J. Pharmacokinetics of in
 <figure class="pk-models-diagram"><img src="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference.svg" alt="Procaine_Seifen1979_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | distribution half-life (t1/2 alpha) | t1/2α | 2.49 | minutes |
@@ -37,7 +41,7 @@ Seifen AB, Ferrari AA, Seifen EE, Thompson DS, Chapman J. Pharmacokinetics of in
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +51,13 @@ Seifen AB, Ferrari AA, Seifen EE, Thompson DS, Chapman J. Pharmacokinetics of in
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**All five procaine pharmacokinetic parameters extracted from the abstract were disputed by the second reader, who recorded no values for them.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the dose compound and primary analyte, recording 'unknown' instead of procaine. The second reader recorded null values for distribution half-life (2.49 min), elimination half-life (7.69 min), clearance (0.08 L/kg/min), and both volumes (0.79 L/kg and 0.51 L/kg). Consequently, the cross-check resulted in a verdict dispute with an agreement of 0.154. Extracted — procaine: t1/2α 2.49 minutes, t1/2β 7.69 minutes, Vss 0.79 L/kg, CL 0.08 L/kg/min, V 0.51 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procaine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -137,14 +141,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=procaine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=procaine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

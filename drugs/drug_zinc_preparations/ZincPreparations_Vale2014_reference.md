@@ -16,7 +16,7 @@ Vale SH, Leite LD, Alves CX, Dantas MM, Costa JB, Marchini JS et al. Zinc pharma
 
 ## Population and dosing
 
-**Population:** healthy children · age group child · n = &gt;=40.
+**Population:** healthy children · age group child.
 
 **Dosing:** 4.5759 mg, iv, single.
 

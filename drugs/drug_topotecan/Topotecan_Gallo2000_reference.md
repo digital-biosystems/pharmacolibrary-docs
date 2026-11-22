@@ -17,7 +17,7 @@ Gallo JM, Laub PB, Rowinsky EK, Grochow LB, Baker SD. Population pharmacokinetic
 
 ## Population and dosing
 
-**Population:** cancer patients · age group adult · n = &gt;$.
+**Population:** cancer patients · age group adult.
 
 ## Model
 

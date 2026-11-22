@@ -16,7 +16,7 @@ Lebrikizumab is a humanized monoclonal antibody used to treat atopic dermatitis.
 
 ## Start here
 
-> **Zhu_2017_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with moderate-to-severe asthma, n = &gt;$-1912. [Run it in the simulator](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md?tab=Simulation) · [record](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md)
+> **Zhu_2017_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with moderate-to-severe asthma. [Run it in the simulator](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md?tab=Simulation) · [record](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -25,15 +25,6 @@ Lebrikizumab is a humanized monoclonal antibody used to treat atopic dermatitis.
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Zhu_2017_reference](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Zhu R et al., Model-based clinical pharmacology profi…, Pulmonary pharmacology & th… (2017) | [10.1016/j.pupt.2017.08.010](https://doi.org/10.1016/j.pupt.2017.08.010) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lebrikizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IL13 (antibody).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

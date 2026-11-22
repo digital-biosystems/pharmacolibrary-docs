@@ -16,7 +16,7 @@ Reinbold JB, Coetzee JF, Gehring R, Havel JA, Hollis LC, Olson KC et al. Plasma 
 
 ## Population and dosing
 
-**Population:** group fed, ruminating, Holstein steers · condition healthy · age group adult · n = &gt;=18.
+**Population:** group fed, ruminating, Holstein steers · condition healthy · age group adult.
 
 > **Species: cattle.** This record comes from an animal study (cattle), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 

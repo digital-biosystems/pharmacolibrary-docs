@@ -4,11 +4,11 @@
 
 # regorafenib — `Regorafenib_Fu2019_regorafinib`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 15:34 UTC (Rejected), but the paper was screened again on 2026-10-07 05:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Regorafenib metabolites are unreachable from the dose, and clearance, absorption rate, and bioavailability parameters lack validated numerical values.
+> Regorafenib was rejected with absolute bioavailability (Fab) unvalued and regorafenib-N-oxide and regorafenib-glucuronide each assigned zero compartments.
 
-<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Fu2019_regorafinib" status="rejected" stale="true" population="male and female wild-type and Oatp1b2-deficient mice" measured-compound="regorafenib" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Fu2019_regorafinib" status="rejected" stale="false" population="male and female wild-type and Oatp1b2-deficient mice" measured-compound="regorafenib" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Fu Q, Chen M, Anderson JT, Sun X, Hu S, Sparreboom A et al. Interaction Between Sex and Organic Anion-Transporting Polypeptide 1b2 on the Pharmacokinetics of Regorafenib and Its Metabolites Regorafenib-N-Oxide and Regorafenib-Glucuronide in Mice. Clinical and translational science 12(4):400–407 (2019).
@@ -43,7 +43,7 @@ Fu Q, Chen M, Anderson JT, Sun X, Hu S, Sparreboom A et al. Interaction Between 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Fu Q, Chen M, Anderson JT, Sun X, Hu S, Sparreboom A et al. Interaction Between 
 
 ### Reviewer guidance
 
-**Regorafenib metabolites are unreachable from the dose, and clearance, absorption rate, and bioavailability parameters lack validated numerical values.**
+**Regorafenib was rejected with absolute bioavailability (Fab) unvalued and regorafenib-N-oxide and regorafenib-glucuronide each assigned zero compartments.**
 
-The model structure defines regorafenib-N-oxide and regorafenib-glucuronide as metabolites but provides no path from the dose to these compartments, making them unreachable. Clearance is listed as 158.0 L/h and the absorption rate constant as 0.41 h−1, yet a unit conversion error prevented these values from being properly integrated into the model. Absolute bioavailability has no extracted value, meaning a library placeholder would have been used, further holding back the model. Extracted — regorafenib: Cmax 3.26e+03 ng/mL, tmax 3.2 hour, t1/2z 14 hour, AUClast 17.3 μg·h/mL, CL 158 L/h, kabs 0.41 h−1.
+Both metabolites have n_cmt 0 despite listed metabolic links from regorafenib, consistent with the finding of orphan metabolites; Fab is listed without a value. A reported unit could not be converted to SI, but the record does not identify which parameter's unit was unsupported. The record labels the glucuronide-to-regorafenib link as hydrolysis, while the second reader calls it interconversion. Extracted — regorafenib: Cmax 3.26e+03 ng/mL, tmax 3.2 hour, t1/2z 14 hour, AUClast 17.3 μg·h/mL, CL 158 L/h, kabs 0.41 h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has regorafenib → regorafenib-n-oxide (metabolism); regorafenib → regorafenib-glucuronide (metabolism); regorafenib-glucuronide → regorafenib (hydrolysis), the second reading regorafenib → regorafenib-n-oxide (metabolism); regorafenib → regorafenib-glucuronide (metabolism); regorafenib-glucuronide → regorafenib (interconversion); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

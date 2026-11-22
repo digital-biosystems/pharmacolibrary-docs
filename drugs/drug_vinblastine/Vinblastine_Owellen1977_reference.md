@@ -1,22 +1,22 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Owellen_1977 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Nelson1982_vinblastine&quot;,&quot;label&quot;:&quot;Nelson_1982_vinblastine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Nelson1982_vinblastine.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Owellen1977_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:50 UTC (Needs review), but the paper was screened again on 2026-11-04 18:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The two-compartment structure for vinblastine fails because the gamma phase half-life has no corresponding compartment or linked pathway.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="extracted" stale="true" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="rejected" stale="false" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Owellen RJ, Hartke CA, Hains FO. Pharmacokinetics and metabolism of vinblastine in humans. Cancer research 37(8 Pt 1):2597–2602 (1977).
 
 ## Population and dosing
 
-**Population:** humans · age group adult.
+**Population:** humans.
 
 ## Model
 
@@ -26,18 +26,20 @@ Owellen RJ, Hartke CA, Hains FO. Pharmacokinetics and metabolism of vinblastine 
 **Availability:** No model was generated from this record.
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | alpha phase: t1/2 | t1/2α | 3.9 | min |
 | Vc | V1 | 16.8 | liters |
 | beta phase:t1/2 | t1/2β | 53.0 | min |
+| Vbeta | V2 | 79.0 | liters |
 | gamma phase:t1/2 | t1/2γ | 1173.0 | min |
-| Vgamma | V | 1656.0 | liters |
-| systemic clearance | CL | 46.2 | L/h |
+| Systemic clearance | CL | 46.2 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545), qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545), qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,24 +49,24 @@ Owellen RJ, Hartke CA, Hains FO. Pharmacokinetics and metabolism of vinblastine 
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**The two-compartment structure for vinblastine fails because the gamma phase half-life has no corresponding compartment or linked pathway.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Levêque_1996) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vinblastine: t1/2α 3.9 min, V1 16.8 liters, t1/2β 53 min, t1/2γ 1.17e+03 min, V 1.66e+03 liters, CL 46.2 L/h.
+The model specifies a two-compartment topology yet includes parameters for a terminal gamma phase, leaving that elimination pathway unlinked from the dose. The record relies on abstract-only summary statistics, so the values for half-lives and volumes stand in for fitted model parameters. Discrepancies exist regarding the assignment of the alpha half-life and the identification of the gamma volume, further complicating the interpretation. Extracted — vinblastine: t1/2α 3.9 min, V1 16.8 liters, t1/2β 53 min, V2 79 liters, t1/2γ 1.17e+03 min, CL 46.2 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| alpha phase: t1/2 | `Q59` · t1/2α | 3.9 | min | 234 | s | min | llm_corrected (0.6) | Owellen_1977:abstract |
+| alpha phase: t1/2 | `Q59` · t1/2α | 3.9 | min | 234 | s | min | half_life_rule (0.95) | Owellen_1977:abstract |
 | Vc | `Q63` · V1 | 16.8 | liters | 0.0168 | m3 | l | exact (1) | Owellen_1977:abstract |
-| beta phase:t1/2 | `Q60` · t1/2β | 53.0 | min | 3180 | s | min | llm_corrected (0.6) | Owellen_1977:abstract |
-| gamma phase:t1/2 | `Q89` · t1/2γ | 1173.0 | min | 7.038e+04 | s | min | llm_corrected (0.6) | Owellen_1977:abstract |
-| Vgamma | `Q61` · V | 1656.0 | liters | 1.656 | m3 | l | fuzzy_llm_dim_refused (0.92) | Owellen_1977:abstract |
-| systemic clearance | `Q22` · CL | 46.2 | L/h | 1.283e-05 | m3/s | L/h | review_gapfill (0.7) | Levêque_1996:review |
+| beta phase:t1/2 | `Q60` · t1/2β | 53.0 | min | 3180 | s | min | half_life_rule (0.95) | Owellen_1977:abstract |
+| Vbeta | `Q64` · V2 | 79.0 | liters | 0.079 | m3 | l | llm_corrected (0.6) | Owellen_1977:abstract |
+| gamma phase:t1/2 | `Q89` · t1/2γ | 1173.0 | min | 7.038e+04 | s | min | half_life_rule (0.95) | Owellen_1977:abstract |
+| Systemic clearance | `Q22` · CL | 46.2 | L/h | 1.283e-05 | m3/s | L/h | review_gapfill (0.7) | Levêque_1996:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,7 +76,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Vbeta' — extend the ontology if this is a real PK parameter (source ['Owellen_1977:abstract'])
+- dropped unlinked row (NIL): 'Vgamma' — extend the ontology if this is a real PK parameter (source ['Owellen_1977:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinblastine
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -101,7 +103,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[beta phase:t1/2]` | 53.0 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[gamma phase:t1/2]` | 1173.0 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2]` |  | 3.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vbeta]` |  | 79.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vgamma]` |  | 1656.0 | only_one_extracted |
 | `qwen3.8-27b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `qwen3.8-27b` | `parameters[alpha phase: vc]` |  | 16.8 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[beta phase: t1/2]` |  | 53.0 | only_one_extracted |
@@ -132,14 +134,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Levêque_1996:review'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Owellen_1977:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Owellen_1977:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Owellen_1977:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Owellen_1977:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Owellen_1977:abstract'] |
 | C5_dimension_Q89 | pass | [time] |  | ['Owellen_1977:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 46.2 | ['Levêque_1996:review'] |
-| C8_topology | pass |  |  |  |
+| C8_topology | fail |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 46.2 L/h | ['Levêque_1996:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.66e+03 L | ['Owellen_1977:abstract'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 16.8 L | ['Owellen_1977:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 79 L | ['Owellen_1977:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,19 +153,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -173,4 +165,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Owellen1977_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Owellen1977_reference%0APaper%3A%20Owellen_1977%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Owellen1977_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 18:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:11 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record includes a terminal half-life for vildagliptin but lacks an extraction rate parameter, leaving the inactive metabolite compartment unreachable from the dose.
+> The record is abstract-only, contains no fitted model, and includes an unlinked inactive metabolite.
 
 <div class="pk-model-meta" hidden drug="vildagliptin" model-id="Vildagliptin_Landersdorfer2012_reference" status="rejected" stale="false" population="type 2 diabetic patients" measured-compound="vildagliptin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -17,7 +17,7 @@ Landersdorfer CB, He YL, Jusko WJ. Mechanism-based population pharmacokinetic mo
 
 ## Population and dosing
 
-**Population:** type 2 diabetic patients · condition type 2 diabetes · age group adult · n = &gt;.
+**Population:** type 2 diabetic patients · condition type 2 diabetes · age group adult.
 
 ## Model
 
@@ -47,9 +47,9 @@ Landersdorfer CB, He YL, Jusko WJ. Mechanism-based population pharmacokinetic mo
 
 ### Reviewer guidance
 
-**The record includes a terminal half-life for vildagliptin but lacks an extraction rate parameter, leaving the inactive metabolite compartment unreachable from the dose.**
+**The record is abstract-only, contains no fitted model, and includes an unlinked inactive metabolite.**
 
-The model structure defines a hydrolysis link from vildagliptin to an inactive metabolite, but this link has no associated rate constant. Consequently, the metabolite compartment is orphaned, as there is no kinetic path from the dose to that compartment. This structural inconsistency resulted in the rejection of the record. Extracted — vildagliptin: CL 36 l h−1, V1 22 l, t1/2z 6.3 h.
+Only the paper's abstract was read, so its summary statistics stand in for a fitted model. The hydrolysis link to the inactive metabolite is not resolved, leaving it as an orphan compartment with no path from the dose. A second reader disagreed on several fields, including the presence of the metabolite link and the values for the hydrolysis half-life and central volume. Extracted — vildagliptin: CL 36 l h−1, V1 22 l, t1/2z 6.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has vildagliptin → inactive metabolite (hydrolysis), the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

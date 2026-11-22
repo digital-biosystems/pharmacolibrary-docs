@@ -5,11 +5,11 @@
 
 # gabapentin — `Gabapentin_Hampton2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> This record was reviewed on 2026-11-07 15:04 UTC (Rejected), but the paper was screened again on 2026-10-07 06:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance value 1.2 for gabapentin is recorded in kg*min, causing a dimension mismatch error in the model.
+> Clearance for gabapentin has unit kg*min, conflicting with the required volume/time dimension.
 
-<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Hampton2021_reference" status="rejected" stale="true" population="healthy adult Duroc pigs" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Hampton2021_reference" status="rejected" stale="false" population="healthy adult Duroc pigs" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hampton CE, Queiroz-Williams P, Oubre MJ, Martin A, Gisclair AT, Pypendop BH. Pharmacokinetics of oral and compounded intravenous gabapentin in Duroc swine (Sus Scrofa). Journal of veterinary pharmacology and therapeutics 44(5):776–782 (2021).
@@ -46,7 +46,7 @@ Hampton CE, Queiroz-Williams P, Oubre MJ, Martin A, Gisclair AT, Pypendop BH. Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.13). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.13). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Hampton CE, Queiroz-Williams P, Oubre MJ, Martin A, Gisclair AT, Pypendop BH. Ph
 
 ### Reviewer guidance
 
-**Clearance value 1.2 for gabapentin is recorded in kg*min, causing a dimension mismatch error in the model.**
+**Clearance for gabapentin has unit kg*min, conflicting with the required volume/time dimension.**
 
-The record lists clearance as 1.2 with the unit kg*min, which is dimensionally invalid for a first-order elimination rate. Additionally, the record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Consequently, several parameter values, including clearance and volume of distribution, were disputed by a second reader. Extracted — gabapentin: V 170 ml/kg, CL 1.2 kg*min, Vss 594 ml/kg, t1/2z 360 min, t1/2ka 58 min, Cmax 9.16e+03 ng/ml, tmax 194 min, Fab 47 %, … (+2).
+The clearance parameter is assigned a value of 1.2 kg*min, which presents a dimension of mass times time. This conflicts with the physical requirement for clearance, which must be expressed as volume divided by time. Additionally, the record was constructed from the abstract alone, meaning the reported summary statistics stand in for a fitted model. Extracted — gabapentin: V 170 ml/kg, CL 1.2 kg*min, Vss 594 ml/kg, t1/2z 360 min, t1/2ka 58 min, Cmax 9.16e+03 ng/ml, tmax 194 min, Fab 47 %, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gabapentin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 

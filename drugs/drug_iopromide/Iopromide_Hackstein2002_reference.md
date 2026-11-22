@@ -4,11 +4,11 @@
 
 # iopromide — `Iopromide_Hackstein2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-07 23:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The iopromide dose was recorded as 120 ml, a volume, causing a dimension mismatch for the infusion duration parameter.
+> The record conflated the 270 mg/L concentration with clearance and misassigned the 120 ml dose to infusion duration, causing dimensional errors.
 
-<div class="pk-model-meta" hidden drug="iopromide" model-id="Iopromide_Hackstein2002_reference" status="rejected" stale="true" population="adult patients undergoing CT" measured-compound="iopromide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="iopromide" model-id="Iopromide_Hackstein2002_reference" status="rejected" stale="false" population="adult patients undergoing CT" measured-compound="iopromide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hackstein N, Langheinrich AC, Rau WS. Lopromide one-sample clearance as a measure of glomerular filtration rate. Clinical physiology and functional imaging 22(2):99–107 (2002).
@@ -36,7 +36,7 @@ Hackstein N, Langheinrich AC, Rau WS. Lopromide one-sample clearance as a measur
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Hackstein N, Langheinrich AC, Rau WS. Lopromide one-sample clearance as a measur
 
 ### Reviewer guidance
 
-**The iopromide dose was recorded as 120 ml, a volume, causing a dimension mismatch for the infusion duration parameter.**
+**The record conflated the 270 mg/L concentration with clearance and misassigned the 120 ml dose to infusion duration, causing dimensional errors.**
 
-The record identifies the 120 ml iopromide dose as a zero-order input duration, which is a time quantity rather than a volume. Additionally, the concentration value of 270 mg/L is mislabeled as a clearance time point. The review was limited to the abstract, so summary statistics stand in for a fitted model. Extracted — iopromide: Vss 0.242 Lkg(-1), Ct 270 mg/L, D1 120 ml.
+The 120 ml value, representing iopromide dose volume, was incorrectly mapped to infusion duration, triggering a dimension mismatch with time units. A 270 mg/L concentration measurement was misinterpreted as a clearance time point, leading to a second reader disagreement on parameter values. The abstract-only source provided summary statistics that substituted for fitted model parameters, resulting in structural and unit inconsistencies in the record. Extracted — iopromide: Vss 0.242 Lkg(-1), Ct 270 mg/L, D1 120 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of iopromide dose: this record has 120, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

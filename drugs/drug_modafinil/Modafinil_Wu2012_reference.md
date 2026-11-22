@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;modafinil&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/&quot;},{&quot;label&quot;:&quot;Wu_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Modafinil_Tao2010_reference&quot;,&quot;label&quot;:&quot;Tao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Tao2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Modafinil_Wu2012_reference&quot;,&quot;label&quot;:&quot;Wu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Wu2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Modafinil_Tao2010_reference&quot;,&quot;label&quot;:&quot;Tao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Tao2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Modafinil_Wu2012_reference&quot;,&quot;label&quot;:&quot;Wu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Wu2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -55,9 +55,9 @@ Wu KH, Guo T, Deng CH, Guan Z, Li L, Zhou TY et al. Population pharmacokinetics 
 
 ### Reviewer guidance
 
-**The record was refused because it modeled modafinil acid as a simple enteral absorption model despite a two-compartment parent-metabolite structure, and assumed full bioavailability.**
+**The model record for modafinil was refused because the model was never simulated and the central-to-peripheral clearance value was disputed.**
 
-The structure defines modafinil acid as a metabolite formed from modafinil, requiring a parent-metabolite linkage, but the model only contains a single central compartment for modafinil acid without a parent compartment. The model builder assumed absolute bioavailability was 1 and the fraction converted to metabolite was 1, which was deemed unacceptable. Additionally, the intercompartmental clearance parameter for the peripheral compartment was not properly covered in the final parameter set. Extracted — modafinil: CLm/F 3.51 L/h, V1 7.74 l, Q/F 7.02 L/h, V2/F 34 l, kabs 0.697 1/h; modafinil acid: V 5.14 l, CLm/F 1.25 l/h.
+The verdict explicitly states the model was not simulated. A second reader disagreed with the extracted intercompartmental clearance value of 7.02 L/h, noting it as null, while simultaneously disagreeing on the metabolite clearance value of 1.25 L/h. The record also reflects an apparent parameterization where bioavailability and metabolism fractions were assumed to be 1. Extracted — modafinil: CLm/F 3.51 L/h, V1 7.74 l, Q/F 7.02 L/h, V2/F 34 l, kabs 0.697 1/h; modafinil acid: V 5.14 l, CLm/F 1.25 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl2/f 1 (l/h) male: this record has 7.02, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
@@ -168,15 +168,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_shared_parameters | pass | 2 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_shared_parameters | pass | 2 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

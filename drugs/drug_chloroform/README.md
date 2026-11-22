@@ -43,7 +43,7 @@ Chloroform is a halogenated hydrocarbon that was used as an inhalational anesthe
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:09 | 1:46 | 0/1/0 | 1/0/0 | 0/0/0 | 238,302/14,252 | einfracz / qwen3.8-27b | 7 | 3/4 | 7/0 | 0 |
+| 2026-10-07 04:09 | 1:46 | 0/1/0 | 6/0/0 | 0/0/0 | 238,302/14,252 | einfracz / qwen3.8-27b | 7 | 3/4 | 7/0 | 0 |
 
 ## Coverage
 

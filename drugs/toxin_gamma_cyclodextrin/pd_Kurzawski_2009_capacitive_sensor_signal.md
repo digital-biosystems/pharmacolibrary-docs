@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper excerpts do not contain any pharmacodynamic information regarding gamma-cyclodextrin. The mechanism of action, potency parameters, and rate constants linking gamma-cyclodextrin to the capacitive sensor signal are not described.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kurzawski_2009`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

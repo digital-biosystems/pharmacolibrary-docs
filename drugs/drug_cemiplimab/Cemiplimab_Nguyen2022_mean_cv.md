@@ -5,11 +5,11 @@
 
 # cemiplimab — `Cemiplimab_Nguyen2022_mean_cv`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:28 UTC (Rejected), but the paper was screened again on 2026-10-07 10:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cemiplimab clearance was incorrectly recorded as a negative change in clearance (-10.8%), causing the base clearance value to be replaced with an implausible negative number.
+> AUCt has no unit.
 
-<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_mean_cv" status="needs_review" stale="true" population="patients with solid tumors, including recurrent or metastatic cervical cancer" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_mean_cv" status="needs_review" stale="false" population="patients with solid tumors, including recurrent or metastatic cervical cancer" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nguyen JH, Epling D, Dolphin N, Paccaly A, Conrado D, Davis JD et al. Population pharmacokinetics modeling and exposure-response analyses of cemiplimab in patients with recurrent or metastatic cervical cancer. CPT: pharmacometrics & systems pharmacology 11(11):1458–1471 (2022).
@@ -43,7 +43,7 @@ Nguyen JH, Epling D, Dolphin N, Paccaly A, Conrado D, Davis JD et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Nguyen JH, Epling D, Dolphin N, Paccaly A, Conrado D, Davis JD et al. Population
 
 ### Reviewer guidance
 
-**Cemiplimab clearance was incorrectly recorded as a negative change in clearance (-10.8%), causing the base clearance value to be replaced with an implausible negative number.**
+**AUCt has no unit.**
 
-The parameter labeled 'Change in clearance, %' contains the value -10.8, which is a relative change rather than a total clearance. The base clearance parameter 'CL' holds the positive value 0.246 L/day, but the presence of the negative value in the change parameter caused the system to flag a negative clearance. The record also includes a terminal half-life of 19.7 days and a volume of distribution of 5.89 L, which are consistent with the drug profile but do not resolve the error in the clearance definition. Extracted — cemiplimab: CL 0.246 L/day, CL_ratio -10.8, t1/2z 19.7 days, AUC ratio 2.05, Vss 5.89 L, AUCt 92.1, V 5.89 L.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — cemiplimab: CL 0.246 L/day, CL_ratio -10.8, t1/2z 19.7 days, AUC ratio 2.05, Vss 5.89 L, AUCt 92.1, V 5.89 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of accumulation index: this record has 2.05, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

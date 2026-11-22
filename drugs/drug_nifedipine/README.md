@@ -40,7 +40,7 @@ Nifedipine is a dihydropyridine calcium channel blocker used to treat angina, hy
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Fu_2022_reference](drugs/drug_nifedipine/Nifedipine_Fu2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Fu C et al., Population Pharmacokinetic Modelling fo…, Drug design, development an… (2022) | [10.2147/DDDT.S362607](https://doi.org/10.2147/DDDT.S362607) |
-| <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Blea_1997_reference](drugs/drug_nifedipine/Nifedipine_Blea1997_reference.md) | — | 1-compartment (no model) | 2 | Blea CW et al., Effect of nifedipine on fetal and mater…, American journal of obstetr… (1997) | [10.1016/s0002-9378(97)70622-7](https://doi.org/10.1016/s0002-9378(97)70622-7) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Blea_1997_reference](drugs/drug_nifedipine/Nifedipine_Blea1997_reference.md) | — | 1-compartment (no model) | 2 | Blea CW et al., Effect of nifedipine on fetal and mater…, American journal of obstetr… (1997) | [10.1016/s0002-9378(97)70622-7](https://doi.org/10.1016/s0002-9378(97)70622-7) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub> | [ter_2015_reference](drugs/drug_nifedipine/Nifedipine_ter2015_reference.md) | — | 1-compartment (no model) | 3 | ter Laak MA et al., Pharmacokinetics of nifedipine slow-rel…, International journal of cl… (2015) | [10.5414/CP202215](https://doi.org/10.5414/CP202215) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chung_1987_reference](drugs/drug_nifedipine/Nifedipine_Chung1987_reference.md) | — | 1-compartment (no model) | 0 | Chung M et al., Clinical pharmacokinetics of nifedipine…, The American journal of med… (1987) | [10.1016/0002-9343(87)90630-9](https://doi.org/10.1016/0002-9343(87)90630-9) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Kiriyama_2024_reference](drugs/drug_nifedipine/Nifedipine_Kiriyama2024_reference.md) | — | 1-compartment (no model) | 9 | Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology research & per… (2024) | [10.1002/prp2.1249](https://doi.org/10.1002/prp2.1249) |
@@ -56,30 +56,6 @@ Nifedipine is a dihydropyridine calcium channel blocker used to treat angina, hy
 | <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kiriyama_2024_QT](drugs/drug_nifedipine/pd_Kiriyama_2024_QT.md) | QT interval ← nifedipine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology research & per… (2024) | [10.1002/prp2.1249](https://doi.org/10.1002/prp2.1249) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liu_2022_SBP](drugs/drug_nifedipine/pd_Liu_2022_SBP.md) | systolic blood pressure ← nifedipine · direct Emax (saturable) effect | ▶ model + simulator | Liu H et al., Application of physiologically-based ph…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.970539](https://doi.org/10.3389/fphar.2022.970539) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nifedipine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inducer/substrate, `ABCC2` inducer | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inducer/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2A6` substrate, `CYP2B6` inducer, `CYP2C8` inhibitor, `CYP2C9` inducer/inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor | DrugBank actor |
-| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inducer/substrate, `ABCC2` inducer | DrugBank actor |
-| excretion | liver | `ABCB1` inducer/substrate, `ABCB11` inhibitor, `ABCC2` inducer, `ABCC3` inducer | DrugBank actor |
-| excretion | small intestine | `ABCC3` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1G (inhibitor), CACNA1S (inhibitor), CACNB2 (inhibitor), CALM1 (inhibitor), KCND3 (inhibitor), NR1I2 (target).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -92,13 +68,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:03 | 22:03 | 3/4/0 | 2/0/0 | 0/0/0 | 333,263/66,054 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 2/3 | 4/1 | 0 |
+| 2026-10-07 04:03 | 22:03 | 3/4/0 | 4/0/0 | 0/0/0 | 333,263/66,054 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 2/3 | 4/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 448 matched, 20 returned
 - **screened:** 9  ·  **relevant:** 9
-- **records:** 7  ·  extracted 1  ·  needs review 2  ·  rejected 4  ·  stale 1
+- **records:** 7  ·  extracted 1  ·  needs review 2  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

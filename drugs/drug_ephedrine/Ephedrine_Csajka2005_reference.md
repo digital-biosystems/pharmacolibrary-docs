@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;ephedrine&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/&quot;},{&quot;label&quot;:&quot;Csajka_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ephedrine_Tran2020_reference&quot;,&quot;label&quot;:&quot;Tran_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ephedrine_Tran2020_reference&quot;,&quot;label&quot;:&quot;Tran_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ephedrine — `Ephedrine_Csajka2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-06 08:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because an absorption rate constant value of 0.064 is assigned incorrect volume-based units instead of time-based units.
+> Ephedrine’s absorption rate constant, recorded as 0.064 l min(-1), has volume/time units rather than the required inverse-time dimension, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Csajka2005_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="ephedrine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="ephedrine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelling of ephedrine, norephedrine and caffeine in healthy subjects. British journal of clinical pharmacology 59(3):335–345 (2005).
@@ -17,7 +17,7 @@ Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelli
 
 ## Population and dosing
 
-**Population:** healthy subjects · condition healthy · age group adult · n = &gt;=24.
+**Population:** healthy subjects · condition healthy · age group adult.
 
 ## Model
 
@@ -40,7 +40,7 @@ Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelli
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.538). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.538). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelli
 
 ### Reviewer guidance
 
-**The record is rejected because an absorption rate constant value of 0.064 is assigned incorrect volume-based units instead of time-based units.**
+**Ephedrine’s absorption rate constant, recorded as 0.064 l min(-1), has volume/time units rather than the required inverse-time dimension, so the record was rejected.**
 
-The record lists an absorption rate constant of 0.064 with units of liters per minute, which is dimensionally incorrect for a rate constant. This unit error triggers a dimension mismatch on a structural parameter, leading to rejection. The second reader disputes the attribution of this value to the absorption rate constant, suggesting it belongs to a different parameter. Extracted — caffeine: CL 0.083 l min(-1); ephedrine: V 38.6 l, kabs 0.064 l min(-1), CL 0.34 l min(-1), V 181 l, Frel 32 %.
+The record defines kabs as an absorption rate constant, but its unit has dimensions of volume per time, whereas the expected dimension is inverse time. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disputed the attribution of 0.064 and 38.6, assigning both to caffeine rather than ephedrine as this record does. Extracted — caffeine: CL 0.083 l min(-1); ephedrine: V 38.6 l, kabs 0.064 l min(-1), CL 0.34 l min(-1), V 181 l, Frel 32 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 32, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 32, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -98,18 +98,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 32 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.064 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[caffeine absorption rate constant]` |  | 0.064 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[caffeine volume of distribution]` |  | 38.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability].value` | 32 |  | mismatch |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 38.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 32 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.064 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[caffeine absorption rate constant]` |  | 0.064 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[caffeine volume of distribution]` |  | 38.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability].value` | 32 |  | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 38.6 |  | only_one_extracted |
 
 </details>
 

@@ -5,11 +5,11 @@
 
 # norfloxacin — `Norfloxacin_Xu2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> This record was reviewed on 2026-11-07 15:57 UTC (Needs review), but the paper was screened again on 2026-10-07 11:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="norfloxacin" model-id="Norfloxacin_Xu2015_reference" status="needs_review" stale="true" population="common carp and crucian carp" measured-compound="norfloxacin nicotinate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="norfloxacin" model-id="Norfloxacin_Xu2015_reference" status="needs_review" stale="false" population="common carp and crucian carp" measured-compound="norfloxacin nicotinate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xu N, Ai X, Liu Y, Yang Q. Comparative pharmacokinetics of norfloxacin nicotinate in common carp (Cyprinus carpio) and crucian carp (Carassius auratus) after oral administration. Journal of veterinary pharmacology and therapeutics 38(3):309–312 (2015).
@@ -43,7 +43,7 @@ Xu N, Ai X, Liu Y, Yang Q. Comparative pharmacokinetics of norfloxacin nicotinat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,11 +5,11 @@
 
 # clozapine — `Clozapine_Reeves2024_c_clozapine_mg_l`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:29 UTC (Rejected), but the paper was screened again on 2026-10-06 15:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for clozapine was rejected because the units for the clearance parameter, reported as mg L⁻¹, do not match its defined meaning.
+> Clozapine’s V/F and CL/F were both reported as 0.02 mg L⁻¹, units inconsistent with volume and clearance, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_c_clozapine_mg_l" status="rejected" stale="true" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_c_clozapine_mg_l" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pharmacokinetic model to guide clozapine dose selection, based on age, sex, ethnicity, body weight and smoking status. British journal of clinical pharmacology 90(1):135–145 (2024).
@@ -36,7 +36,7 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 ### Reviewer guidance
 
-**The record for clozapine was rejected because the units for the clearance parameter, reported as mg L⁻¹, do not match its defined meaning.**
+**Clozapine’s V/F and CL/F were both reported as 0.02 mg L⁻¹, units inconsistent with volume and clearance, so the record was rejected.**
 
-The record lists the total clearance parameter with a value of 0.02, but assigns the unit mg L⁻¹ instead of the required flow units. This creates a dimensional inconsistency because clearance, unlike volume, cannot be expressed in mass per volume. The error prevented the system from converting the value to standard SI units, causing the dimension check to fail. Extracted — clozapine: V/F 0.02 mg L⁻¹, CL/F 0.02 mg L⁻¹.
+V/F is volume of distribution adjusted for bioavailability, while CL/F is total clearance after oral administration adjusted for bioavailability; mg L⁻¹ conflicts with both parameter dimensions. The reported unit could not be converted to SI, so neither parameter had an SI value. Extracted — clozapine: V/F 0.02 mg L⁻¹, CL/F 0.02 mg L⁻¹.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

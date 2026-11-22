@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;interferon beta-1a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonBeta1a_Savic2017_reference&quot;,&quot;label&quot;:&quot;Savic_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonBeta1a_Savic2017_reference&quot;,&quot;label&quot;:&quot;Savic_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # interferon beta-1a
 
@@ -22,35 +22,19 @@ Interferon beta-1a is an immunomodulating agent used to treat various forms of m
 |---|---|---|---|---|---|---|
 | neopterin triphosphate | metabolite | — (mass units only) | — | — | — | — |
 
-## Start here
-
-> **Savic_2017_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md?tab=Simulation) · [record](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F, k21</sub> | [Savic_2017_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
 | <span class="pk-rf" hidden data-species="monkey" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Mager_2003_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Mager2003_reference.md) | — | parent + metabolite (no model) | 2 | Mager DE et al., Receptor-mediated pharmacokinetics and…, The Journal of pharmacology… (2003) | [10.1124/jpet.103.049502](https://doi.org/10.1124/jpet.103.049502) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Salmon_1996_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Salmon1996_reference.md) | — | 1-compartment (no model) | 0 | Salmon P et al., Pharmacokinetics and pharmacodynamics o…, Journal of interferon & cyt… (1996) | [10.1089/jir.1996.16.759](https://doi.org/10.1089/jir.1996.16.759) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Savic_2017_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mager_2002_neopterin](drugs/drug_interferon_beta_1a/pd_Mager_2002_neopterin.md) | neopterin ← interferon_beta_1a · indirect response — drug stimulates the production of neopterin | — | Mager DE et al., Receptor-mediated pharmacokinetic/pharm…, Pharmaceutical research (2002) | [10.1023/a:1020468902694](https://doi.org/10.1023/a:1020468902694) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=interferon_beta_1a).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: IFNAR1 (target), IFNAR2 (target), IFNB1 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,13 +48,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:05 | 4:15 | 1/2/0 | 1/0/0 | 0/0/0 | 166,091/42,288 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-06 23:05 | 4:15 | 0/3/0 | 1/0/0 | 0/0/0 | 166,091/42,288 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 16 matched, 16 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

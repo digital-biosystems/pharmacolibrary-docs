@@ -4,11 +4,11 @@
 
 # cocaine — `Cocaine_Pan1999_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:23 UTC (Rejected), but the paper was screened again on 2026-10-07 04:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The cocaine elimination half-life parameter was mistakenly assigned a rate constant value, causing a dimension mismatch that led to rejection.
+> The cocaine elimination half-life value of 26.3 min has a dimension mismatch because it is labeled as a rate constant.
 
-<div class="pk-model-meta" hidden drug="cocaine" model-id="Cocaine_Pan1999_reference" status="rejected" stale="true" population="awake, freely moving rats" measured-compound="cocaine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cocaine" model-id="Cocaine_Pan1999_reference" status="rejected" stale="false" population="awake, freely moving rats" measured-compound="cocaine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pan WJ, Hedaya MA. Cocaine and alcohol interactions in the rat: effect on cocaine pharmacokinetics and pharmacodynamics. Journal of pharmaceutical sciences 88(4):459–467 (1999).
@@ -37,7 +37,7 @@ Pan WJ, Hedaya MA. Cocaine and alcohol interactions in the rat: effect on cocain
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Pan WJ, Hedaya MA. Cocaine and alcohol interactions in the rat: effect on cocain
 
 ### Reviewer guidance
 
-**The cocaine elimination half-life parameter was mistakenly assigned a rate constant value, causing a dimension mismatch that led to rejection.**
+**The cocaine elimination half-life value of 26.3 min has a dimension mismatch because it is labeled as a rate constant.**
 
-The record identifies the parameter meaning as the elimination rate constant but provides a value of 26.3 minutes, which is a half-life unit. The second reader flagged inconsistencies where the extraction omitted or misaligned these specific parameter values. Because the record relied solely on the abstract, these summary statistics substituted for a fitted model, exacerbating the structural parameter error. Extracted — cocaine: Fab 0.55 to 0., kel 26.3 min.
+The parameter labeled 'cocaine elimination half-life' is semantically defined as an elimination rate constant, which requires units of inverse time. The extracted value of 26.3 min provides a time dimension, creating a conflict with the required 1/[time] unit. Additionally, the second reader could not confirm the extracted values of 26.3 and 0.55 from the abstract-only source. Extracted — cocaine: Fab 0.55 to 0., kel 26.3 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cocaine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

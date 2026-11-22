@@ -26,7 +26,7 @@ Mercuric chloride is a highly toxic mercury compound historically used as an ant
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Sundberg_1998_reference](drugs/drug_mercuric_chloride/MercuricChloride_Sundberg1998_reference.md) | — | parent + metabolite (no model) | 1 | Sundberg J et al., Kinetics of methylmercury and inorganic…, Toxicology and applied phar… (1998) | [10.1006/taap.1998.8456](https://doi.org/10.1006/taap.1998.8456) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Sundberg_1998_reference](drugs/drug_mercuric_chloride/MercuricChloride_Sundberg1998_reference.md) | — | parent + metabolite (no model) | 1 | Sundberg J et al., Kinetics of methylmercury and inorganic…, Toxicology and applied phar… (1998) | [10.1006/taap.1998.8456](https://doi.org/10.1006/taap.1998.8456) |
 
 ## Pharmacodynamics (PD)
 
@@ -52,7 +52,7 @@ Mercuric chloride is a highly toxic mercury compound historically used as an ant
 
 - **PubMed hits:** 126 matched, 70 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

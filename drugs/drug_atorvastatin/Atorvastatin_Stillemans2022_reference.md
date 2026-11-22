@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Stillemans_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Kong2025_reference&quot;,&quot;label&quot;:&quot;Kong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Kong2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Li2024_reference&quot;,&quot;label&quot;:&quot;Li_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Li2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Malekinejad2014_reference&quot;,&quot;label&quot;:&quot;Malekinejad_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Courlet2020_reference&quot;,&quot;label&quot;:&quot;Courlet_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Courlet2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vargo_2014_LDL_C&quot;,&quot;label&quot;:&quot;Vargo_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/pd_Vargo_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Karvaly2021_reference&quot;,&quot;label&quot;:&quot;Karvaly_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Karvaly2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Li2024_reference&quot;,&quot;label&quot;:&quot;Li_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Li2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Kong2025_reference&quot;,&quot;label&quot;:&quot;Kong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Kong2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Courlet2020_reference&quot;,&quot;label&quot;:&quot;Courlet_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Courlet2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vargo_2014_LDL_C&quot;,&quot;label&quot;:&quot;Vargo_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/pd_Vargo_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Stillemans G, Paquot A, Muccioli GG, Hoste E, Panin N, Åsberg A et al. Atorvast
 
 ## Population and dosing
 
-**Population:** ambulatory patients at risk of cardiovascular disease · condition cardiovascular risk · age group adult · n = 70.
+**Population:** ambulatory patients at risk of cardiovascular disease · condition cardiovascular disease risk · age group adult · n = 70.
 
 ## Model
 
@@ -33,13 +33,13 @@ Stillemans G, Paquot A, Muccioli GG, Hoste E, Panin N, Åsberg A et al. Atorvast
 |---|---|---|---|---|
 | θCL investigation (L h−1) | CL | 535 | L h−1 | 6.2 |
 | θQ (L h−1) | Q | 1690 | L h−1 | 20.3 |
-| θVc (L) | V1 | 1960 | L | 21.7 |
-| θVp (L) | V | 3900 | L | 15.7 |
+| θVc (L) | V | 1960 | L | 21.7 |
+| θVp (L) | V2 | 3900 | L | 15.7 |
 | θka (h−1) | kabs | 2.5 | h−1 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Stillemans G, Paquot A, Muccioli GG, Hoste E, Panin N, Åsberg A et al. Atorvast
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — atorvastatin: CL 535 L h−1, Q 1.69e+03 L h−1, V1 1.96e+03 L, V 3.9e+03 L, kabs 2.5 h−1.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — atorvastatin: CL 535 L h−1, Q 1.69e+03 L h−1, V 1.96e+03 L, V2 3.9e+03 L, kabs 2.5 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θq: this record has 1690, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[θvc].parameter_id`: this record has Q61, the second reading Q63. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,8 +63,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 |---|---|---|---|---|---|---|---|---|---|
 | θCL investigation (L h−1) | `Q22` · CL | 535 | L h−1 | 0.0001486 | m3/s | l/h | 6.2 | llm_confirmed (0.6) | cts13185-tbl-0003:row2:col1 |
 | θQ (L h−1) | `Q30` · Q | 1690 | L h−1 | 0.0004694 | m3/s | l/h | 20.3 | llm (0.6) | cts13185-tbl-0003:row6:col1 |
-| θVc (L) | `Q63` · V1 | 1960 | L | 1.96 | m3 | l | 21.7 | llm_confirmed (0.6) | cts13185-tbl-0003:row8:col1 |
-| θVp (L) | `Q61` · V | 3900 | L | 3.9 | m3 | l | 15.7 | llm_corrected (0.6) | cts13185-tbl-0003:row10:col1 |
+| θVc (L) | `Q61` · V | 1960 | L | 1.96 | m3 | l | 21.7 | llm_corrected (0.6) | cts13185-tbl-0003:row8:col1 |
+| θVp (L) | `Q64` · V2 | 3900 | L | 3.9 | m3 | l | 15.7 | llm_confirmed (0.6) | cts13185-tbl-0003:row10:col1 |
 | θka (h−1) | `Q49` · kabs | 2.5 | h−1 | 0.0006944 | 1/s | 1/h |  | boundary_llm_dim_refused (0.8) | cts13185-tbl-0003:row12:col1 |
 
 <details class="legend">
@@ -78,7 +78,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - dropped duplicate Q22 ('θCL support (L h−1)', value '400') — already have one for this compound
 - dropped unlinked row (NIL): 'θSLCO1B1 521TC' — extend the ontology if this is a real PK parameter (source ['cts13185-tbl-0003:row15:col1'])
 - dropped unlinked row (NIL): 'θSLCO1B1 521CC' — extend the ontology if this is a real PK parameter (source ['cts13185-tbl-0003:row16:col1'])
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (θCL investigation (L h−1)); Q30 (θQ (L h−1)); Q63 (θVc (L)); Q61 (θVp (L))
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (θCL investigation (L h−1)); Q30 (θQ (L h−1)); Q61 (θVc (L)); Q64 (θVp (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atorvastatin
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -92,14 +92,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.929 (13/14 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[θq]` | 1690 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θvp].parameter_id` | Q61 | Q64 | mismatch |
+| `gpt-oss-120b` | `parameters[θvc].parameter_id` | Q61 | Q63 | mismatch |
 
 </details>
 
@@ -119,13 +118,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cts13185-tbl-0003:row2:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cts13185-tbl-0003:row6:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['cts13185-tbl-0003:row12:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['cts13185-tbl-0003:row10:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['cts13185-tbl-0003:row8:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['cts13185-tbl-0003:row8:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['cts13185-tbl-0003:row10:col1'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 535 | ['cts13185-tbl-0003:row2:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 535 L/h | ['cts13185-tbl-0003:row2:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 3.9e+03 L | ['cts13185-tbl-0003:row10:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 1.96e+03 L | ['cts13185-tbl-0003:row8:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.96e+03 L | ['cts13185-tbl-0003:row8:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 3.9e+03 L | ['cts13185-tbl-0003:row10:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,4 +158,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batorvastatin%5D%20Atorvastatin_Stillemans2022_reference&body=Drug%3A%20atorvastatin%0ARecord%3A%20Atorvastatin_Stillemans2022_reference%0APaper%3A%20Stillemans_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 13:00 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:57 UTC</sub>

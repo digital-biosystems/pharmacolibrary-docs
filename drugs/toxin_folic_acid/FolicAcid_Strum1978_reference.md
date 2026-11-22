@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The clearance and volume values for 5-methyltetrahydrofolate are implausibly low, falling outside physiological windows likely due to unit extraction errors from abstract data.
 
 <div class="pk-model-meta" hidden drug="Folic acid" model-id="FolicAcid_Strum1978_reference" status="rejected" stale="false" population="rat" measured-compound="5-methyltetrahydrofolate" parameterization="mechanistic" topology="retention"></div>
 
@@ -46,7 +46,13 @@ Strum WB, Hanstein WG. Pharmacokinetics of 5-methyltetrahydrofolate. Research co
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The clearance and volume values for 5-methyltetrahydrofolate are implausibly low, falling outside physiological windows likely due to unit extraction errors from abstract data.**
+
+Clearance is reported as 19.71 mL/h and volume as 26.73 mL, magnitudes too small to be physiologically meaningful for a two-compartment model in rats. These values likely result from unit or scale extraction errors when the model relied solely on abstract summary statistics rather than fitted parameters. Extracted — 5-methyltetrahydrofolate: t1/2α 23.5 min, t1/2β 8.5 hr, CL 19.7 (mL/h), V 26.7 (mL).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

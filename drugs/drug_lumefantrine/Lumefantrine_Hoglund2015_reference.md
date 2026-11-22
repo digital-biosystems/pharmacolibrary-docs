@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the metabolite desbutyl-lumefantrine was unreachable from the dose, and its formation rate parameter lacked a valid SI unit.
+> Lumefantrine’s Vmax is recorded as 1 L, which lacked SI conversion, while its desbutyl metabolite has 0 compartments, leaving the record rejected.
 
 <div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Hoglund2015_reference" status="rejected" stale="false" population="HIV-infected patients treated with antiretrovirals" measured-compound="lumefantrine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Hoglund RM, Byakika-Kibwika P, Lamorde M, Merry C, Ashton M, Hanpithakpong W et 
 
 ### Reviewer guidance
 
-**The model was rejected because the metabolite desbutyl-lumefantrine was unreachable from the dose, and its formation rate parameter lacked a valid SI unit.**
+**Lumefantrine’s Vmax is recorded as 1 L, which lacked SI conversion, while its desbutyl metabolite has 0 compartments, leaving the record rejected.**
 
-The structure lists a metabolism link from lumefantrine to desbutyl-lumefantrine, yet the check identified the metabolite as an orphan compartment with no path from the dose. The parameter Vmax for this metabolism step was recorded with the unit 'l', which could not be converted to SI, leaving the value non-computable. A second reader disputed the recorded value for the maximum metabolism rate, suggesting it should have been null rather than 1. Extracted — lumefantrine: n_transit 1 l, Fab 1 l, Vmax 1 l, CL 168 %.
+The record lists desbutyl-lumefantrine and dihydroartemisinin with 0 compartments; the finding was an unreachable or orphan metabolite. The reported unit L is also attached to lumefantrine’s n_transit value of 1 and Fab value of 1, and could not be converted to SI. Extracted — lumefantrine: n_transit 1 l, Fab 1 l, Vmax 1 l, CL 168 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemether-lumefantrine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record lacks essential kinetic parameters like clearance or volume, relying only on excretion fraction from abstract data, resulting in rejection.
 
 <div class="pk-model-meta" hidden drug="Sodium metavanadate" model-id="SodiumMetavanadate_Bogden1982_reference" status="rejected" stale="false" population="Female Sprague-Dawley rats (170-200 g)" measured-compound="Vanadium" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,13 @@ Bogden JD, Higashino H, Lavenhar MA, Bauman JW, Kemp FW, Aviv A. Balance and tis
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record lacks essential kinetic parameters like clearance or volume, relying only on excretion fraction from abstract data, resulting in rejection.**
+
+The model was rejected because it contains no rate constants, half-lives, volumes, or clearance values, failing to provide a dynamic kinetic description. The single parameter extracted is a 59.1% excretion fraction for Vanadium, derived from an abstract-only source that substituted reported summary statistics for a fitted compartmental model. Extracted — Vanadium: fe 59.1.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

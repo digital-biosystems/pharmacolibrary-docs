@@ -26,7 +26,7 @@ Mesalazine is an aminosalicylate anti-inflammatory drug used to treat conditions
 
 ## Start here
 
-> **Cuffari_2016_nonmem_estimates** — <span class="pk-badge pk-badge--neutral">Not simulated</span> children and adolescents with ulcerative colitis, n = fifty-two. [Run it in the simulator](drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md?tab=Simulation) · [record](drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md)
+> **Cuffari_2016_nonmem_estimates** — <span class="pk-badge pk-badge--neutral">Not simulated</span> children and adolescents with ulcerative colitis. [Run it in the simulator](drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md?tab=Simulation) · [record](drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -42,21 +42,6 @@ Mesalazine is an aminosalicylate anti-inflammatory drug used to treat conditions
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Oliván-Viguera_2013_KCa3_1](drugs/drug_mesalazine/pd_Oliv_n_Viguera_2013_KCa3_1.md) | KCa3.1 current ← mesalamine · direct sigmoid Emax (Hill) effect | — | Oliván-Viguera A et al., Novel phenolic inhibitors of small/inte…, PloS one (2013) | [10.1371/journal.pone.0058614](https://doi.org/10.1371/journal.pone.0058614) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mesalazine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLCO2B1` substrate | DrugBank actor |
-| metabolism | blood | `NAT1` substrate | DrugBank actor |
-| metabolism | liver | `NAT1` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate, `SLCO2B1` substrate | DrugBank actor |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ALOX5 (inhibitor), CHUK (inhibitor), IKBKB (inhibitor), NOS2 (inhibitor), PPARG (target), PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

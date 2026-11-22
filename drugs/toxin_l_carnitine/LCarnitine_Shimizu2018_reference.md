@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;L-Carnitine&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/&quot;},{&quot;label&quot;:&quot;Shimizu_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LCarnitine_Haarhuis2026_reference&quot;,&quot;label&quot;:&quot;Haarhuis_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Haarhuis2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Nguyen2022_reference&quot;,&quot;label&quot;:&quot;Nguyen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Nguyen2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Parnetti1992_reference&quot;,&quot;label&quot;:&quot;Parnetti_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Parnetti1992_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Sahajwalla1995_reference&quot;,&quot;label&quot;:&quot;Sahajwalla_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Sahajwalla1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Shimizu2018_reference&quot;,&quot;label&quot;:&quot;Shimizu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LCarnitine_Nguyen2022_reference&quot;,&quot;label&quot;:&quot;Nguyen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Nguyen2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Parnetti1992_reference&quot;,&quot;label&quot;:&quot;Parnetti_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Parnetti1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Sahajwalla1995_reference&quot;,&quot;label&quot;:&quot;Sahajwalla_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Sahajwalla1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Haarhuis2026_reference&quot;,&quot;label&quot;:&quot;Haarhuis_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Haarhuis2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Shimizu2018_reference&quot;,&quot;label&quot;:&quot;Shimizu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # L-Carnitine — `LCarnitine_Shimizu2018_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The l-carnitine model was held for review because bioavailability and lag time were defaulted rather than estimated from Shimizu_2018, despite extracted clearance and volume values.
 
-<div class="pk-model-meta" hidden drug="L-Carnitine" model-id="LCarnitine_Shimizu2018_reference" status="extracted" stale="false" population="" measured-compound="l_carnitine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="L-Carnitine" model-id="LCarnitine_Shimizu2018_reference" status="needs_review" stale="false" population="" measured-compound="l_carnitine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shimizu M, Suemizu H, Mizuno S, Kusama T, Miura T, Uehara S et al. Human plasma concentrations of trimethylamine N-oxide extrapolated using pharmacokinetic modeling based on metabolic profiles of deuterium-labeled trimethylamine in humanized-liver mice. The Journal of toxicological sciences 43(6):387–393 (2018).
@@ -31,6 +31,8 @@ Shimizu M, Suemizu H, Mizuno S, Kusama T, Miura T, Uehara S et al. Human plasma 
 <figure class="pk-models-diagram"><img src="drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference/LCarnitine_Shimizu2018_reference.svg" alt="LCarnitine_Shimizu2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Hepatic intrinsic clearance for trimethylamine CL h,int_substrate (L/hr) | CL | 0.568 | (L/hr) |
@@ -39,7 +41,7 @@ Shimizu M, Suemizu H, Mizuno S, Kusama T, Miura T, Uehara S et al. Human plasma 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ Shimizu M, Suemizu H, Mizuno S, Kusama T, Miura T, Uehara S et al. Human plasma 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The l-carnitine model was held for review because bioavailability and lag time were defaulted rather than estimated from Shimizu_2018, despite extracted clearance and volume values.**
+
+The record reports specific values for total clearance (0.568 L/hr), central volume (48.2 L), and absorption rate constant (1.0 1/hr) for l-carnitine. However, the fraction of dose absorbed and absorption lag time were not extracted and instead used library placeholder defaults. Consequently, these unsupported assumptions affect the simulated plasma profile, necessitating further review to validate or justify these conventional values. Extracted — l carnitine: CL 0.568 (L/hr), V1 48.2 (L), kabs 1 (1/hr).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -87,6 +95,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.568 L/h | ['Shimizu_2018:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 48.2 L | ['Shimizu_2018:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=l_carnitine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

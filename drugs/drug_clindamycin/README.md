@@ -25,7 +25,7 @@ Clindamycin is a lincosamide antibiotic used to treat various bacterial infectio
 
 ## Start here
 
-> **Mimram_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with prosthetic joint infections, n = : "20". [Run it in the simulator](drugs/drug_clindamycin/Clindamycin_Mimram2022_reference.md?tab=Simulation) · [record](drugs/drug_clindamycin/Clindamycin_Mimram2022_reference.md)
+> **Mimram_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with prosthetic joint infections. [Run it in the simulator](drugs/drug_clindamycin/Clindamycin_Mimram2022_reference.md?tab=Simulation) · [record](drugs/drug_clindamycin/Clindamycin_Mimram2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,14 +33,14 @@ Clindamycin is a lincosamide antibiotic used to treat various bacterial infectio
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Mimram_2022_reference](drugs/drug_clindamycin/Clindamycin_Mimram2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Mimram L et al., Population Pharmacokinetics of Orally A…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11111462](https://doi.org/10.3390/antibiotics11111462) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Mimram_2022_reference](drugs/drug_clindamycin/Clindamycin_Mimram2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Mimram L et al., Population Pharmacokinetics of Orally A…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11111462](https://doi.org/10.3390/antibiotics11111462) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub> | [Pfaffendorf_2026_reference](drugs/drug_clindamycin/Clindamycin_Pfaffendorf2026_reference.md) | held back | 1-compartment, oral | 5 | Pfaffendorf C et al., Population pharmacokinetics of fosmidom…, Malaria journal (2026) | [10.1186/s12936-026-05872-6](https://doi.org/10.1186/s12936-026-05872-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gonzalez_2016_reference](drugs/drug_clindamycin/Clindamycin_Gonzalez2016_reference.md) | — | 1-compartment (no model) | 0 | Gonzalez D et al., Clindamycin Pharmacokinetics and Safety…, Antimicrobial agents and ch… (2016) | [10.1128/AAC.03086-15](https://doi.org/10.1128/AAC.03086-15) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Goulenok_2023_reference](drugs/drug_clindamycin/Clindamycin_Goulenok2023_reference.md) | — | 1-compartment (no model) | 1 | Goulenok T et al., Pharmacokinetic interaction between rif…, International journal of an… (2023) | [10.1016/j.ijantimicag.2023.106885](https://doi.org/10.1016/j.ijantimicag.2023.106885) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Magréault_2025_reference](drugs/drug_clindamycin/Clindamycin_Magrault2025_reference.md) | — | 1-compartment (no model) | 0 | Magréault S et al., Dosing and route of administration of c…, Clinical microbiology and i… (2025) | [10.1016/j.cmi.2025.01.005](https://doi.org/10.1016/j.cmi.2025.01.005) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Ritter_2022_reference](drugs/drug_clindamycin/Clindamycin_Ritter2022_reference.md) | — | 1-compartment (no model) | 0 | Ritter L et al., Is clindamycin a potential treatment fo…, APMIS : acta pathologica, m… (2022) | [10.1111/apm.13205](https://doi.org/10.1111/apm.13205) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Smith_2017_reference](drugs/drug_clindamycin/Clindamycin_Smith2017_reference.md) | — | 1-compartment (no model) | 0 | Smith MJ et al., Pharmacokinetics of Clindamycin in Obes…, Antimicrobial agents and ch… (2017) | [10.1128/AAC.02014-16](https://doi.org/10.1128/AAC.02014-16) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Solli_2023_reference](drugs/drug_clindamycin/Clindamycin_Solli2023_reference.md) | — | 1-compartment (no model) | 1 | Solli CN et al., Plasma concentration of orally administ…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad002](https://doi.org/10.1093/jac/dkad002) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Solli_2023_reference](drugs/drug_clindamycin/Clindamycin_Solli2023_reference.md) | — | 1-compartment (no model) | 1 | Solli CN et al., Plasma concentration of orally administ…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad002](https://doi.org/10.1093/jac/dkad002) |
 
 ## Pharmacodynamics (PD)
 
@@ -48,24 +48,6 @@ Clindamycin is a lincosamide antibiotic used to treat various bacterial infectio
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lenhard_2019_CFU](drugs/drug_clindamycin/pd_Lenhard_2019_CFU.md) | CFU/mL reduction (bacterial killing) biomarker turnover ← clindamycin | — | Lenhard JR et al., Bacterial brothers in arms: cooperation…, The Journal of antimicrobia… (2019) | [10.1093/jac/dkz247](https://doi.org/10.1093/jac/dkz247) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Ramírez-Morales_2022_toxicity_to_the_aquatic_macrophyte_Lemna_minor](drugs/drug_clindamycin/pd_Ram_rez_Morales_2022_toxicity_to_the_aquatic_macrophyte_Lemn.md) | toxicity to the aquatic macrophyte Lemna minor ← clindamycin 2-phosphate · direct sigmoid Emax (Hill) effect | — | Ramírez-Morales D et al., Single and mixture toxicity of selected…, Ecotoxicology (London, Engl… (2022) | [10.1007/s10646-022-02537-3](https://doi.org/10.1007/s10646-022-02537-3) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clindamycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ORM1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -85,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 53 matched, 20 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 1
+- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

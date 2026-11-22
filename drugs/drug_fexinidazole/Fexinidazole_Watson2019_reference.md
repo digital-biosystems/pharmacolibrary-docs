@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fexinidazole absorption rate and lag time were omitted, using library defaults unsupported by the source data.
+> For fexinidazole sulfone (M2), the absorption rate constant (ka) was unreported and defaulted, leaving no paper-supported value for this parameter.
 
 <div class="pk-model-meta" hidden drug="fexinidazole" model-id="Fexinidazole_Watson2019_reference" status="needs_review" stale="false" population="healthy volunteers and patients with g-HAT or chronic Chagas disease" measured-compound="fexinidazole sulfone (M2)" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Watson JA, Strub-Wourgraft N, Tarral A, Ribeiro I, Tarning J, White NJ. Pharmaco
 
 ### Reviewer guidance
 
-**Fexinidazole absorption rate and lag time were omitted, using library defaults unsupported by the source data.**
+**For fexinidazole sulfone (M2), the absorption rate constant (ka) was unreported and defaulted, leaving no paper-supported value for this parameter.**
 
-The model defaults the absorption rate (ka) and lag time (Tlag) because these parameters are unreported in the paper. This deviation means the simulated metabolite profile relies on generic library values rather than study-specific estimates. The second reader failed to confirm the extracted parameter values for clearance, volume, and the g-HAT covariate, further undermining the record's validity. Extracted — fexinidazole sulfone (M2): Vm/F 80 liters, CLm/F 3 liters/h.
+The record says ka and Tlag were defaulted rather than estimated; ka was not reported, and these defaults affect the simulated profile without support from the paper. The model also assumed first-order depot input and apparent parameterization with F=1, Fm=1, and no molar correction; the reported apparent volume of distribution was 80 liters and apparent clearance was 3 liters/h. A second reader disputed the record, with agreement of 0.222, including disagreement about the measured compound and reported parameters. Extracted — fexinidazole sulfone (M2): Vm/F 80 liters, CLm/F 3 liters/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fexinidazole, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -161,15 +161,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=fexinidazole sulfone (M2)) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=fexinidazole sulfone (M2)) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # Ipratropium — `Ipratropium_Lee2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 13:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The ipratropium bromide apparent volume of distribution of 1340 L was rejected due to a dimensional mismatch found in an abstract-only record.
+> Ipratropium bromide dose-normalized AUC value 0.1 has unit min/L, which dimensionally conflicts with a structural parameter.
 
-<div class="pk-model-meta" hidden drug="Ipratropium" model-id="Ipratropium_Lee2016_reference" status="rejected" stale="true" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Ipratropium" model-id="Ipratropium_Lee2016_reference" status="rejected" stale="false" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Mesh-Type Nebulizer (NE-SM1 NEPLUS) for Intrapulmonary Delivery of Ipratropium Bromide in Surgical Patients. Basic & clinical pharmacology & toxicology 118(4):313–319 (2016).
@@ -36,7 +36,7 @@ Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Me
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Me
 
 ### Reviewer guidance
 
-**The ipratropium bromide apparent volume of distribution of 1340 L was rejected due to a dimensional mismatch found in an abstract-only record.**
+**Ipratropium bromide dose-normalized AUC value 0.1 has unit min/L, which dimensionally conflicts with a structural parameter.**
 
-The record was constructed solely from the paper's abstract, using summary statistics in place of a fitted model. The apparent volume of distribution (V/F) was recorded as 1340 L, a value the second reader marked as null in one instance and 1340 in another. The review identified a dimension mismatch on this structural parameter, contributing to the rejection. Extracted — ipratropium: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLH 6.78 L/min.
+The dose-normalized area under the concentration-time curve for ipratropium bromide is listed as 0.1 min/L, but its dimensions do not match the expected structural parameter dimensions. Since the record was built from the abstract alone, these reported summary statistics stand in for a fitted model. A second reader could not confirm the dose compound, primary analyte, or the extracted parameter values. Extracted — ipratropium: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLH 6.78 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ipratropium bromide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

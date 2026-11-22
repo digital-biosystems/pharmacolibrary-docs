@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the deltamethrin metabolite lacks a defined formation rate constant, rendering the pathway structurally invalid.
+> The 4′-HO-deltamethrin metabolism link has no link parameter (none), leaving the metabolite unreachable and the record rejected.
 
 <div class="pk-model-meta" hidden drug="decamethrin" model-id="Decamethrin_Anadn1996_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="deltamethrin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Anadón A, Martinez-Larrañaga MR, Fernandez-Cruz ML, Diaz MJ, Fernandez MC, Mar
 
 ### Reviewer guidance
 
-**The record was rejected because the deltamethrin metabolite lacks a defined formation rate constant, rendering the pathway structurally invalid.**
+**The 4′-HO-deltamethrin metabolism link has no link parameter (none), leaving the metabolite unreachable and the record rejected.**
 
-The link from deltamethrin to 4'-HO-deltamethrin specifies no kinetic parameter to govern the metabolic conversion. Additionally, the record was derived solely from the abstract, so summary statistics like a bioavailability of 14.43% stand in for fitted model parameters. This combination of missing structural links and abstract-only data prevents the construction of a valid pharmacokinetic model. Extracted — decamethrin: t1/2z 33 hr, V2 5.33 liters, V 2.04 liters, CL 0.11 liter/hr, tmax 1.83 hr, Fab 14.4 %, Kp 2.32 deltamethrin, medulla oblongata, AUC ratio 295 deltamethrin, hypothalamus; 4'-HO-deltamethrin: t1/2z 25.7 hr.
+The record links deltamethrin to 4′-HO-deltamethrin by metabolism, but the link parameter is listed as none, so the metabolite has no path from the dose. Only the abstract was read, so reported summary statistics stood in for a fitted model. A second reader disagreed about whether the record contained the reported values 2.32, 33.0, 14.43, 1.83, and 0.11 for tissue-to-plasma exposure, terminal half-life, oral bioavailability, time to peak concentration, and total plasma clearance. Extracted — decamethrin: t1/2z 33 hr, V2 5.33 liters, V 2.04 liters, CL 0.11 liter/hr, tmax 1.83 hr, Fab 14.4 %, Kp 2.32 deltamethrin, medulla oblongata, AUC ratio 295 deltamethrin, hypothalamus; 4'-HO-deltamethrin: t1/2z 25.7 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auctissue/aucplasma: this record has 2.32, the second reading none; it also differs on 12 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

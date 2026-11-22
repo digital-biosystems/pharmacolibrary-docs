@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (model/paper ratio 0.724); c2_base_Q18 failed (ratio 0.4858) (+7 more).
+> The tucatinib model was held because its simulated terminal half-life deviated from the reported 16.7 hours, and a unit prevented SI conversion.
 
 <div class="pk-model-meta" hidden drug="tucatinib" model-id="Tucatinib_Zhang2025_her2_mbcn_52" status="needs_review" stale="false" population="healthy participants and patients with HER2-positive metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Zhang D, Taylor A, Zhao JJ, Endres CJ, Topletz-Erickson A. Correction: Populatio
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.724); c2_base_Q18 failed (ratio 0.4858) (+7 more).**
+**The tucatinib model was held because its simulated terminal half-life deviated from the reported 16.7 hours, and a unit prevented SI conversion.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCSS, Cmax and Ctrough), so that value has no SI equivalent. Extracted — tucatinib: AUCSS 5.62e+03 ng·h/mL, Cmax 747 ng/mL, Ctrough 288 ng/mL, AUC ratio 1.99, Cmax_ratio 1.64, CL/F 53.4 L/h, V/F 903 L, t1/2β 16.7 h.
+The simulated terminal half-life is 0.724 times the paper's reported value, exceeding the acceptable tolerance. Additionally, a reported unit could not be converted to SI, so a parameter lacked a standard value. The second reader also disagreed on the extraction of the AUC and Cmax ratios. Extracted — tucatinib: AUCSS 5.62e+03 ng·h/mL, Cmax 747 ng/mL, Ctrough 288 ng/mL, AUC ratio 1.99, Cmax_ratio 1.64, CL/F 53.4 L/h, V/F 903 L, t1/2β 16.7 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of rac, auc: this record has 1.99, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

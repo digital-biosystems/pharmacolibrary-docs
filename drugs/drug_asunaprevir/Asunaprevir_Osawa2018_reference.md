@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;asunaprevir&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/&quot;},{&quot;label&quot;:&quot;Osawa_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Asunaprevir's clearance, volume of distribution, and absorption lag time lack values because extracted parameters describe daclatasvir.
+> The record lists daclatasvir values for clearance, volume, and absorption rate, while asunaprevir parameters were left at library placeholders.
 
 <div class="pk-model-meta" hidden drug="asunaprevir" model-id="Asunaprevir_Osawa2018_reference" status="model_quarantined" stale="false" population="Japanese adults with chronic HCV genotype 1 infection" measured-compound="asunaprevir" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Osawa M, Ueno T, Ishikawa H, Imai Y, Garimella T. Population Pharmacokinetic Ana
 
 ### Reviewer guidance
 
-**Asunaprevir's clearance, volume of distribution, and absorption lag time lack values because extracted parameters describe daclatasvir.**
+**The record lists daclatasvir values for clearance, volume, and absorption rate, while asunaprevir parameters were left at library placeholders.**
 
-The record lists three parameters with values 5.29 L/h, 64.2 L, and 0.865 1/h, but all are assigned to daclatasvir. The drug asunaprevir was identified as the measured compound, yet its specific pharmacokinetic values were missing. Consequently, the model used default placeholders for these parameters instead of explicit estimates, resulting in quarantine. Extracted — daclatasvir: CL/F 5.29 L/h, V/F 64.2 L, kabs 0.865 1/h.
+All three extracted parameters—clearance (5.29 L/h), volume (64.2 L), and absorption rate (0.865 1/h)—are explicitly assigned to daclatasvir in the facts. However, the model builder left asunaprevir's clearance, volume of distribution, and lag time without extracted values, forcing the use of default placeholders. A second reader also disputed the primary analyte identification, noting that the dose and analyte compound were not confirmed as asunaprevir. Extracted — daclatasvir: CL/F 5.29 L/h, V/F 64.2 L, kabs 0.865 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has asunaprevir, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -161,17 +161,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=asunaprevir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  | 0.0001216 | non-numeric value |
-| T1_tmax | reference | skipped |  | 3.134 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=asunaprevir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  | 0.0001216 |  | non-numeric value |
+| T1_tmax | reference | skipped |  | 3.134 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

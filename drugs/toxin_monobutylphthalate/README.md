@@ -68,7 +68,7 @@ Monobutyl phthalate (MBP), is an active metabolite of di-n-butyl phthalate (DBP)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-15 20:38 | 45:29 | 1/2/0 | 2/1/0 | 0/0/0 | 1,266,282/76,205 | einfracz / qwen3.8-flash-next | 36 | 12/20 | 36/0 | 0 |
+| 2026-11-15 20:38 | 45:29 | 1/2/0 | 4/3/0 | 0/0/0 | 1,266,282/76,205 | einfracz / qwen3.8-flash-next | 36 | 12/20 | 36/0 | 0 |
 
 ## Coverage
 

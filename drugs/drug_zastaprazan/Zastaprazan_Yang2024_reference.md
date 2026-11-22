@@ -16,7 +16,7 @@ Yang E, Hwang I, Ji SC, Kim J, Lee S. Population pharmacokinetic analysis of zas
 
 ## Population and dosing
 
-**Population:** patients with GERD and healthy volunteers · condition gastroesophageal reflux disease (GERD) and healthy · age group adult · n = There is a conflict in the text: the abstract states 92 patients and 68 healthy volunteers (total 160), while the methods section states 92 patients and 68 healthy volunteers but later mentions 160 analyzed subjects. The table S1 lists 68 and 92. The total is 160..
+**Population:** patients with GERD and healthy volunteers · condition gastroesophageal reflux disease (GERD) and healthy · age group adult.
 
 **Dosing:** 5, 10, 40, 60 mg, oral, multiple, every 24 h.
 
@@ -34,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has zastaprazan, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has zastaprazan, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -82,14 +82,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | zastaprazan | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | zastaprazan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | zastaprazan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | zastaprazan | unknown | mismatch |
 
 </details>
 

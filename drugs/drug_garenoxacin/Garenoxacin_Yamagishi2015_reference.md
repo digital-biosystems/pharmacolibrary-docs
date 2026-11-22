@@ -4,18 +4,18 @@
 
 # garenoxacin — `Garenoxacin_Yamagishi2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-13 11:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="garenoxacin" model-id="Garenoxacin_Yamagishi2015_reference" status="needs_review" stale="true" population="severe renal failure patients" measured-compound="garenoxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="garenoxacin" model-id="Garenoxacin_Yamagishi2015_reference" status="needs_review" stale="false" population="severe renal failure patients" measured-compound="garenoxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yamagishi Y, Hagihara M, Hamada Y, Kimura Y, Imai H, Mikamo H. Pharmacokinetic study of garenoxacin in severe renal failure patients. The Japanese journal of antibiotics 68(3):141–150 (2015).
 
 ## Population and dosing
 
-**Population:** severe renal failure patients · condition severe renal failure · age group adult · n = &gt;=20.
+**Population:** severe renal failure patients · condition severe renal failure · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Yamagishi Y, Hagihara M, Hamada Y, Kimura Y, Imai H, Mikamo H. Pharmacokinetic s
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +45,11 @@ Yamagishi Y, Hagihara M, Hamada Y, Kimura Y, Imai H, Mikamo H. Pharmacokinetic s
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; aUC has no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — garenoxacin: Cmax 2.9 μg/mL, AUC 62.3 μg x hr/mL, t1/2z 13.9 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has garenoxacin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has garenoxacin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -87,20 +87,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc]` | 62.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc]` |  | 62.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c]` | 2.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c]` |  | 2.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1⁄2]` | 13.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1⁄2]` |  | 13.9 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | garenoxacin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | garenoxacin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[auc]` | 62.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` |  | 62.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` | 2.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` |  | 2.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1⁄2]` | 13.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1⁄2]` |  | 13.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | garenoxacin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | garenoxacin | unknown | mismatch |
 
 </details>
 

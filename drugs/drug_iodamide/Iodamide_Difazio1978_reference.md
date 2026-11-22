@@ -4,11 +4,11 @@
 
 # iodamide — `Iodamide_Difazio1978_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 22:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="iodamide" model-id="Iodamide_Difazio1978_reference" status="needs_review" stale="true" population="normal subjects and patients with renal impairment" measured-compound="iodamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="iodamide" model-id="Iodamide_Difazio1978_reference" status="needs_review" stale="false" population="normal subjects and patients with renal impairment" measured-compound="iodamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Difazio LT, Singhvi SM, Heald AF, McKinstry DN, Brosman SA, Gillenwater JY et al. Pharmacokinetics of iodamide in normal subjects and in patients with renal impairment. Journal of clinical pharmacology 18(1):35–41 (1978).
@@ -35,7 +35,7 @@ Difazio LT, Singhvi SM, Heald AF, McKinstry DN, Brosman SA, Gillenwater JY et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Difazio LT, Singhvi SM, Heald AF, McKinstry DN, Brosman SA, Gillenwater JY et al
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — iodamide: t1/2α 3 minutes, t1/2β 69 minutes.
 
 Independently confirmed by `gpt-oss-120b`.
 

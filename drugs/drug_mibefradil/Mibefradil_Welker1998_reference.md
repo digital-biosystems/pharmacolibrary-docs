@@ -15,7 +15,7 @@ Welker HA, Banken L. Mibefradil pharmacokinetic and pharmacodynamic population a
 
 ## Population and dosing
 
-**Population:** patients with hypertension and chronic stable angina pectoris · condition hypertension and chronic stable angina pectoris · age group adult · n = &gt;=315.
+**Population:** patients with hypertension and chronic stable angina pectoris · condition hypertension and chronic stable angina pectoris · age group adult.
 
 **Dosing:** 50, 100, 150, 200 mg, oral, multiple, every 24 h.
 

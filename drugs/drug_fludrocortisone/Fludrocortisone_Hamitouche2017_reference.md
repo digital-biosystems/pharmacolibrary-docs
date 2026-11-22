@@ -16,7 +16,7 @@ Hamitouche N, Comets E, Ribot M, Alvarez JC, Bellissant E, Laviolle B. Populatio
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = ? - The text does not explicitly state the number of subjects analyzed in the final model, only mentioning the number of volunteers in the study. If the study included all volunteers, it would be 12. If only a subset was analyzed, it would be different. Since the text doesn't specify, I will use 'unknown' to be safe. However, typically in these abstracts, the number of subjects analyzed is the number of subjects in the study unless specified otherwise. Let's look at the wording: "in 12 healthy male volunteers." and "Nonlinear mixed-effects modeling was used to describe...". It is highly likely all 12 were analyzed. But to be strictly accurate to the text provided, it doesn't say "12 subjects were included in the final model". It says the study was in 12 volunteers. I will assume n_subjects is 12 as it's the number of study participants and no exclusion is mentioned. Wait, the prompt asks for "number of subjects in the analysis". If it's not stated, it's unknown. But usually, it's the same. Let's look at the example. If the example had 24 subjects and the abstract said 24, it would be 24. Here it says 12 volunteers. I will put 12..
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 

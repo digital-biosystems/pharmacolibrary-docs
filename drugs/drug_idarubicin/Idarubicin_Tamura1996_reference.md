@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held because it used a 934.9 L steady-state volume in a one-compartment model, ignoring the 0.25 hour distribution half-life.
+> Idarubicin half-lives were disputed by a second reader, and the abstract-only source obscured the missing metabolism link.
 
 <div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Tamura1996_reference" status="needs_review" stale="false" population="patients with acute leukemia or chronic myelogenous leukemia in blastic crisis" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Tamura K. A phase I study of idarubicin hydrochloride in patients with acute leu
 
 ### Reviewer guidance
 
-**The record was held because it used a 934.9 L steady-state volume in a one-compartment model, ignoring the 0.25 hour distribution half-life.**
+**Idarubicin half-lives were disputed by a second reader, and the abstract-only source obscured the missing metabolism link.**
 
-Only the paper's abstract was read, so summary statistics stand in for a fitted model. The builder substituted the 934.9 L steady-state volume for the central volume, which fails to capture the rapid 0.25 hour distribution phase. A second reader noted the absence of a metabolite link and disagreed with the reported half-life values. Extracted — idarubicin: t1/2α 0.25 hours, t1/2β 9.4 hours, Vss 935 L, CL 82.3 L/h.
+A second reader could not compute the reported idarubicin distribution and terminal half-lives, resulting in a disagreement ratio of 0.625. The reader also identified a missing metabolic link to idarubicinol that the original record omitted. Because the record relies on abstract-only data, these summary statistics stand in for a fitted model. Extracted — idarubicin: t1/2α 0.25 hours, t1/2β 9.4 hours, Vss 935 L, CL 82.3 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading idarubicin → idarubicinol (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -140,14 +140,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=idarubicin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=idarubicin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

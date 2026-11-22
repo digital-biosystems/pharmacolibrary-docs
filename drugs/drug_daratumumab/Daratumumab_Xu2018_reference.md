@@ -4,11 +4,11 @@
 
 # daratumumab — `Daratumumab_Xu2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:19 UTC (Needs review), but the paper was screened again on 2026-10-13 13:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; cL has no unit.
+> Only clearance was extracted — no volume; cL has no unit.
 
-<div class="pk-model-meta" hidden drug="daratumumab" model-id="Daratumumab_Xu2018_reference" status="needs_review" stale="true" population="patients with multiple myeloma" measured-compound="daratumumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="daratumumab" model-id="Daratumumab_Xu2018_reference" status="needs_review" stale="false" population="patients with multiple myeloma" measured-compound="daratumumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xu XS, Dimopoulos MA, Sonneveld P, Ho PJ, Belch A, Leiba M et al. Pharmacokinetics and Exposure-Response Analyses of Daratumumab in Combination Therapy Regimens for Patients with Multiple Myeloma. Advances in therapy 35(11):1859–1872 (2018).
@@ -36,7 +36,7 @@ Xu XS, Dimopoulos MA, Sonneveld P, Ho PJ, Belch A, Leiba M et al. Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

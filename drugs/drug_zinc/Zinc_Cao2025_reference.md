@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12C&quot;,&quot;href&quot;:&quot;atc/A12C.md&quot;},{&quot;label&quot;:&quot;zinc&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/&quot;},{&quot;label&quot;:&quot;Cao_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zinc_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zinc_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zinc/Zinc_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model for zinc was rejected because the clearance and volume values were physiologically implausible due to unit extraction errors.
+> Zinc clearance of 0.011 L/h/kg was rejected as physiologically implausible, consistent with a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="zinc" model-id="Zinc_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="zinc" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Cao M, Katial R, Liu Y, Lu X, Gu Q, Chen C et al. Safety, efficacy, and immunoge
 
 ### Reviewer guidance
 
-**The two-compartment model for zinc was rejected because the clearance and volume values were physiologically implausible due to unit extraction errors.**
+**Zinc clearance of 0.011 L/h/kg was rejected as physiologically implausible, consistent with a unit or scale extraction error.**
 
-The central volume was assigned 3.23 L/h and the peripheral volume 14.2 L/h, which are flow units rather than volume units, causing the check to fail. The intercompartmental clearance was recorded as 0.591 L/h, a magnitude inconsistent with the other parameters. A second reader noted the model should be one-compartment and could not locate the extracted values in the source text. Extracted — zinc: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+The record reports total zinc clearance as 0.011 L/h/kg. The finding identifies its magnitude as outside the physiological window and attributes this to a likely unit or scale extraction error. Extracted — zinc: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

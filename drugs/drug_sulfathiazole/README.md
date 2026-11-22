@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06B&quot;,&quot;href&quot;:&quot;atc/D06B.md&quot;},{&quot;label&quot;:&quot;sulfathiazole&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfathiazole_Bevill1977_reference&quot;,&quot;label&quot;:&quot;Bevill_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfathiazole/Sulfathiazole_Bevill1977_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sulfathiazole
 
@@ -22,11 +23,17 @@ Sulfathiazole is a short-acting sulfonamide antibiotic used to treat vaginal inf
 |---|---|---|---|---|---|---|
 | sulfathiazole | parent | 255.317 | C9H9N3O2S2 | DrugBank | [5340](https://pubchem.ncbi.nlm.nih.gov/compound/5340) | Bevill_1977, Vitková_2021 |
 
+## Start here
+
+> **Bevill_1977_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> sheep. [Run it in the simulator](drugs/drug_sulfathiazole/Sulfathiazole_Bevill1977_reference.md?tab=Simulation) · [record](drugs/drug_sulfathiazole/Sulfathiazole_Bevill1977_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>stale — current check: Not simulated</sub> | [Bevill_1977_reference](drugs/drug_sulfathiazole/Sulfathiazole_Bevill1977_reference.md) | — | 1-compartment (no model) | 2 | Bevill RF et al., Disposition of sulfonamides in food-pro…, Journal of pharmaceutical s… (1977) | [10.1002/jps.2600660923](https://doi.org/10.1002/jps.2600660923) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: cross_check_disputed</sub> | [Bevill_1977_reference](drugs/drug_sulfathiazole/Sulfathiazole_Bevill1977_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Bevill RF et al., Disposition of sulfonamides in food-pro…, Journal of pharmaceutical s… (1977) | [10.1002/jps.2600660923](https://doi.org/10.1002/jps.2600660923) |
 | <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [VAN_1994_reference](drugs/drug_sulfathiazole/Sulfathiazole_VAN1994_reference.md) | — | 1-compartment (no model) | 0 | VAN Poucke LSG et al., Pharmacokinetics and Tissue Residues of…, Journal of food protection (1994) | [10.4315/0362-028X-57.9.796](https://doi.org/10.4315/0362-028X-57.9.796) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Vitková_2021_reference](drugs/drug_sulfathiazole/Sulfathiazole_Vitkov2021_reference.md) | — | 1-compartment (no model) | 1 | Vitková Z et al., In-Vivo Analysis and Model-Based Predic…, Molecules (Basel, Switzerla… (2021) | [10.3390/molecules26185602](https://doi.org/10.3390/molecules26185602) |
 
@@ -35,16 +42,6 @@ Sulfathiazole is a short-acting sulfonamide antibiotic used to treat vaginal inf
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Baran_2006_growth](drugs/drug_sulfathiazole/pd_Baran_2006_growth.md) | growth ← sulfathiazole · inhibition effect | — | Baran W et al., Toxicity and biodegradability of sulfon…, Chemosphere (2006) | [10.1016/j.chemosphere.2006.04.040](https://doi.org/10.1016/j.chemosphere.2006.04.040) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sulfathiazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| — | adipose tissue | `CYP19A1` inducer | DrugBank actor |
-| — | ovary | `CYP19A1` inducer | DrugBank actor |
-| — | testis | `CYP19A1` inducer | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

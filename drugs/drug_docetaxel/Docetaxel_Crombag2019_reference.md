@@ -17,7 +17,7 @@ Crombag MBS, Dorlo TPC, van der Pan E, van Straten A, Bergman AM, van Erp NP et 
 
 ## Population and dosing
 
-**Population:** cancer patients · condition solid tumors (including prostate cancer) · age group mixed · n = &gt;&lt;,000&lt;/,000&lt;/,000&lt;/,000.
+**Population:** cancer patients · condition solid tumors (including prostate cancer) · age group mixed.
 
 ## Model
 

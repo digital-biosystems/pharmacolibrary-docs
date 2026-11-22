@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected because hepatic clearance for enniatin B1 was assigned an incompatible unit of h·kg instead of the required volume per time.
 
 <div class="pk-model-meta" hidden drug="Enniatin B1" model-id="EnniatinB1_Mahdjoub2026_reference" status="rejected" stale="false" population="rat and human" measured-compound="Enniatin B1" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Mahdjoub M, Dubreil E, Gendre C, Le Hégarat L, Henri J. In vitro hepatic cleara
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected because hepatic clearance for enniatin B1 was assigned an incompatible unit of h·kg instead of the required volume per time.**
+
+The hepatic clearance parameter for enniatin B1 has a value of 3.4 with the unit h·kg, which represents time multiplied by mass rather than a volume flow rate. This dimensional conflict prevents the parameter from representing clearance in standard pharmacokinetic terms. Additionally, the record was derived only from the abstract, meaning the listed value is a reported statistic rather than a fitted model parameter. Extracted — enniatin b1: CLH 3.4 h·kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

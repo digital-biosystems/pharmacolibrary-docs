@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;colecalciferol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colecalciferol_Deb2020_reference&quot;,&quot;label&quot;:&quot;Deb_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Colecalciferol_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colecalciferol_Deb2020_reference&quot;,&quot;label&quot;:&quot;Deb_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Colecalciferol_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # colecalciferol
 
@@ -26,39 +26,17 @@ Colecalciferol, known as vitamin D3, is a supplement and medication used to trea
 
 ## Start here
 
-> **Deb_2020_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> review reference. [Run it in the simulator](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md?tab=Simulation) · [record](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md)
+> **Deb_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md?tab=Simulation) · [record](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Deb_2020 · CL</text><circle cx="335.8" cy="30.0" r="4" fill="#78909c"><title>Deb_2020 · CL: 2.61 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jia_2026 · CL/F</text><circle cx="495.9" cy="46.0" r="4" fill="#ef6c00"><title>Jia_2026 · CL/F: 7.48 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Deb_2020 · V</text><circle cx="420.5" cy="30.0" r="4" fill="#78909c"><title>Deb_2020 · V: 4.556 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jia_2026 · V/F</text><circle cx="426.8" cy="46.0" r="4" fill="#ef6c00"><title>Jia_2026 · V/F: 4.75 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Deb_2020_reference](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Deb S et al., Simulation of Physicochemical and Pharm…, Pharmaceuticals (Basel, Swi… (2020) | [10.3390/ph13080160](https://doi.org/10.3390/ph13080160) |
-| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Hidiroglou_1979_reference](drugs/drug_colecalciferol/Colecalciferol_Hidiroglou1979_reference.md) | — | 1-compartment (no model) | 5 | Hidiroglou M et al., Pharmacokinetics and amounts of 25-hydr…, Journal of dairy science (1979) | [10.3168/jds.S0022-0302(79)83291-9](https://doi.org/10.3168/jds.S0022-0302(79)83291-9) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Jia_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=colecalciferol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP3A4` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inhibitor, `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CYP11A1 (substrate), CYP27A1 (substrate), CYP2R1 (substrate), GC (unknown), VDR (target).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Deb_2020_reference](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Deb S et al., Simulation of Physicochemical and Pharm…, Pharmaceuticals (Basel, Swi… (2020) | [10.3390/ph13080160](https://doi.org/10.3390/ph13080160) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Hidiroglou_1979_reference](drugs/drug_colecalciferol/Colecalciferol_Hidiroglou1979_reference.md) | — | 1-compartment (no model) | 5 | Hidiroglou M et al., Pharmacokinetics and amounts of 25-hydr…, Journal of dairy science (1979) | [10.3168/jds.S0022-0302(79)83291-9](https://doi.org/10.3168/jds.S0022-0302(79)83291-9) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Jia_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -72,13 +50,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 08:01 | 26:11 | 3/0/0 | 0/0/0 | 0/0/0 | 530,989/57,898 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 5/24 | 24/0 | 0 |
+| 2026-10-05 08:01 | 26:11 | 2/1/0 | 0/0/0 | 0/0/0 | 530,989/57,898 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 5/24 | 24/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9645 matched, 70 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 2
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

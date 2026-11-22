@@ -40,7 +40,7 @@ Fernández J, Lligoña L, Puigdemont A, Guitart R, Riu JL, Arboix M. Tissue dist
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Fernández J, Lligoña L, Puigdemont A, Guitart R, Riu JL, Arboix M. Tissue dist
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V/F), so that value has no SI equivalent. Extracted — propafenone: V/F 0.6 1, CL 62.8 mL/min/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has propafenone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propafenone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -101,19 +101,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[30]` |  | 5.32 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[6]` |  | 7.54 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the apparent volume of distribution of the central compartment]` | 0.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the total clearance]` | 62.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | propafenone | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | propafenone | unknown | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[30]` |  | 5.32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[6]` |  | 7.54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the apparent volume of distribution of the central compartment]` | 0.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the total clearance]` | 62.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | propafenone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | propafenone | unknown | mismatch |
 
 </details>
 

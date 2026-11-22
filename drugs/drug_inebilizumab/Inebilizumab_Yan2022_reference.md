@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;inebilizumab&quot;,&quot;href&quot;:&quot;drugs/drug_inebilizumab/&quot;},{&quot;label&quot;:&quot;Yan_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Yan_2022_2_CD20&quot;,&quot;label&quot;:&quot;Yan_2022_2 \u00b7 CD20+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inebilizumab/pd_Yan_2022_2_CD20.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # inebilizumab — `Inebilizumab_Yan2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-06 23:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The inebilizumab record was rejected because the daily unit of the elimination rate constant could not be standardized, and weight-covariate exponents were misassigned.
+> The record was rejected because the intercompartmental clearance unit was not recognized, and weight covariate exponents were misassigned.
 
-<div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="true" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="false" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yan L, Kimko H, Wang B, Cimbora D, Katz E, Rees WA. Population Pharmacokinetic Modeling of Inebilizumab in Subjects with Neuromyelitis Optica Spectrum Disorders, Systemic Sclerosis, or Relapsing Multiple Sclerosis. Clinical pharmacokinetics 61(3):387–400 (2022).
@@ -47,7 +46,7 @@ Yan L, Kimko H, Wang B, Cimbora D, Katz E, Rees WA. Population Pharmacokinetic M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +56,9 @@ Yan L, Kimko H, Wang B, Cimbora D, Katz E, Rees WA. Population Pharmacokinetic M
 
 ### Reviewer guidance
 
-**The inebilizumab record was rejected because the daily unit of the elimination rate constant could not be standardized, and weight-covariate exponents were misassigned.**
+**The record was rejected because the intercompartmental clearance unit was not recognized, and weight covariate exponents were misassigned.**
 
-The elimination rate constant (0.00294) was recorded in /day, a unit for which no standard SI equivalent was applied, causing a dimensional consistency failure. Additionally, the weight-dependent exponents for clearance and the maximum metabolic rate were swapped, with 0.57 assigned to the latter instead of the former. The exponents for the intercompartmental clearance parameters were also incorrectly linked to the wrong structural parameters. Extracted — inebilizumab: CL 188 mL/day, V1 2.95e+03 mL, Q 363 mL/day, V2 2.57e+03 mL, Vmax 832 µg/day, kel 0.00294 /day, Km 5.89 µg/mL.
+The intercompartmental clearance parameter (Q) was extracted with a unit that could not be converted to SI, preventing validation of its dimension. The second reader indicates the weight exponent of 0.84 belongs to Q, whereas it was incorrectly assigned to theta_q900_weight. Additionally, the weight exponent of 0.39 belongs to the central volume, but it was assigned to weight_on_vca instead. Extracted — inebilizumab: CL 188 mL/day, V1 2.95e+03 mL, Q 363 mL/day, V2 2.57e+03 mL, Vmax 832 µg/day, kel 0.00294 /day, Km 5.89 µg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[km].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

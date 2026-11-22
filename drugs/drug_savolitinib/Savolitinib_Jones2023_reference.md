@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Rejected due to incorrect model structure and terminal half-life, plus missing estimates for bioavailability and absorption lag.
+> Savolitinib clearance units prevent standardization, the model topology contradicts the parent-metabolite structure, and bioavailability was left at placeholder defaults.
 
 <div class="pk-model-meta" hidden drug="savolitinib" model-id="Savolitinib_Jones2023_reference" status="rejected" stale="false" population="NSG mice bearing EGFRm, MET-amplified LG1208 NSCLC PDX tumors" measured-compound="savolitinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -61,9 +61,9 @@ Jones RDO, Petersson K, Tabatabai A, Bao L, Tomkinson H, Schuller AG. Pharmacoki
 
 ### Reviewer guidance
 
-**Rejected due to incorrect model structure and terminal half-life, plus missing estimates for bioavailability and absorption lag.**
+**Savolitinib clearance units prevent standardization, the model topology contradicts the parent-metabolite structure, and bioavailability was left at placeholder defaults.**
 
-The model uses a one-compent structure instead of the reported parent-metabolite topology, and the simulated terminal half-life (2.39 h) deviates from the expected 3.5 h. Bioavailability and absorption lag were left at library defaults rather than using values extracted from the paper. Furthermore, the record incorrectly lists osimertinib as the parent compound for the metabolite AZ5104, whereas the measured compound is savolitinib. Extracted — savolitinib: CL 0.43 L/h/kg, V 1.44 L/kg, kabs 0.44 /h.
+The savolitinib clearance value of 0.43 is recorded in liters per hour per kilogram, a unit that could not be converted to SI standards. The record describes a parent-metabolite relationship, yet the simulated structure uses a single central compartment without a metabolite formation path. Consequently, the bioavailability parameter remains at a library placeholder rather than an explicit estimate from the paper. Extracted — savolitinib: CL 0.43 L/h/kg, V 1.44 L/kg, kabs 0.44 /h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has savolitinib and osimertinib, the second reading savolitinib; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -174,6 +174,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | cross-check disputed by a second reader: verdict disputed, agreement 0.6, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | pass | 2.5 | 2.395 | 0.9578 | hours→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 3.5 | 2.395 | 0.6842 | hours→SI vs simulated h |
 

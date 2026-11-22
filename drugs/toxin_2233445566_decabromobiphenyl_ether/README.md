@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;2,2&#x27;,3,3&#x27;,4,4&#x27;,5,5&#x27;,6,6&#x27;-Decabromobiphenyl Ether&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_2233445566DecabromobiphenylEther_Yang2022_reference&quot;,&quot;label&quot;:&quot;Yang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_2233445566_decabromobiphenyl_ether/D_2233445566DecabromobiphenylEther_Yang2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_2233445566DecabromobiphenylEther_Yang2022_reference&quot;,&quot;label&quot;:&quot;Yang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_2233445566_decabromobiphenyl_ether/D_2233445566DecabromobiphenylEther_Yang2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # 2,2',3,3',4,4',5,5',6,6'-Decabromobiphenyl Ether
 
@@ -33,7 +33,7 @@ Decabromodiphenyl ethers are organobromine compounds, as well as polybrominated 
 
 ## Start here
 
-> **Yang_2022_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> male broilers. [Run it in the simulator](drugs/toxin_2233445566_decabromobiphenyl_ether/D_2233445566DecabromobiphenylEther_Yang2022_reference.md?tab=Simulation) · [record](drugs/toxin_2233445566_decabromobiphenyl_ether/D_2233445566DecabromobiphenylEther_Yang2022_reference.md)
+> **Yang_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> male broilers. [Run it in the simulator](drugs/toxin_2233445566_decabromobiphenyl_ether/D_2233445566DecabromobiphenylEther_Yang2022_reference.md?tab=Simulation) · [record](drugs/toxin_2233445566_decabromobiphenyl_ether/D_2233445566DecabromobiphenylEther_Yang2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -41,7 +41,7 @@ Decabromodiphenyl ethers are organobromine compounds, as well as polybrominated 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="bird" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [Yang_2022_reference](drugs/toxin_2233445566_decabromobiphenyl_ether/D_2233445566DecabromobiphenylEther_Yang2022_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Yang Y et al., Toxicokinetics and edible tissues-speci…, Ecotoxicology and environme… (2022) | [10.1016/j.ecoenv.2022.114324](https://doi.org/10.1016/j.ecoenv.2022.114324) |
+| <span class="pk-rf" hidden data-species="bird" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [Yang_2022_reference](drugs/toxin_2233445566_decabromobiphenyl_ether/D_2233445566DecabromobiphenylEther_Yang2022_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Yang Y et al., Toxicokinetics and edible tissues-speci…, Ecotoxicology and environme… (2022) | [10.1016/j.ecoenv.2022.114324](https://doi.org/10.1016/j.ecoenv.2022.114324) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

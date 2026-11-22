@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Simvastatin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Simvastatin
 
@@ -36,13 +36,13 @@ Simvastatin is a lipid-lowering agent that is derived synthetically from the fer
 
 ## Start here
 
-> **Kumagai_2020_simvastatin_tas_303_day_19** — <span class="pk-badge pk-badge--neutral">Not simulated</span> 12 healthy participants, n = 12. [Run it in the simulator](drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md?tab=Simulation) · [record](drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md)
+> **Kumagai_2020_simvastatin_tas_303_day_19** — <span class="pk-badge pk-badge--orange">Needs review</span> 12 healthy participants, n = 12. [Run it in the simulator](drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md?tab=Simulation) · [record](drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">100</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wu_2016 · V ·/kg</text><circle cx="259.2" cy="30.0" r="4" fill="#78909c"><title>Wu_2016 · V ·/kg: 39.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kumagai_2020 · V/F</text><circle cx="499.0" cy="46.0" r="4" fill="#78909c"><title>Kumagai_2020 · V/F: 4452 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">100</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wu_2016 · V ·/kg</text><circle cx="259.2" cy="30.0" r="4" fill="#ef6c00"><title>Wu_2016 · V ·/kg: 39.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kumagai_2020 · V/F</text><circle cx="499.0" cy="46.0" r="4" fill="#ef6c00"><title>Kumagai_2020 · V/F: 4452 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -50,11 +50,11 @@ Simvastatin is a lipid-lowering agent that is derived synthetically from the fer
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kumagai_2020_simvastatin_tas_303_day_19](drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md) | ▶ model + simulator | 1-compartment, oral | 8 | Kumagai Y et al., A Drug-Drug Interaction Study to Evalua…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1583](https://doi.org/10.1002/jcph.1583) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_cmax</sub> | [Kumagai_2020_simvastatin_tas_303_day_19](drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md) | ▶ model + simulator | 1-compartment, oral | 8 | Kumagai Y et al., A Drug-Drug Interaction Study to Evalua…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1583](https://doi.org/10.1002/jcph.1583) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ reference](drugs/toxin_simvastatin/Simvastatin_Kumagai2020_reference.md) | — | 1-compartment (no model) | 8 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [↳ simvastatin_alone_day_1](drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_alone_day_1.md) | — | 1-compartment (no model) | 4 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wu_2016_reference](drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md) | ▶ model + simulator | retention, 1 pool | 4 | Wu K et al., Evaluation of the safety, pharmacokinet…, International journal of cl… (2016) | [10.5414/cp202565](https://doi.org/10.5414/cp202565) |
 | <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.95).">mouse</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Patel_2016_reference](drugs/toxin_simvastatin/Simvastatin_Patel2016_reference.md) | held back | 1-compartment, oral | 3 | Patel YT et al., Simvastatin Hydroxy Acid Fails to Attai…, Drug metabolism and disposi… (2016) | [10.1124/dmd.115.068445](https://doi.org/10.1124/dmd.115.068445) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub> | [Wu_2016_reference](drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md) | ▶ model + simulator | retention, 1 pool | 4 | Wu K et al., Evaluation of the safety, pharmacokinet…, International journal of cl… (2016) | [10.5414/cp202565](https://doi.org/10.5414/cp202565) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chaturvedula_2014_reference](drugs/toxin_simvastatin/Simvastatin_Chaturvedula2014_reference.md) | — | 1-compartment (no model) | 0 | Chaturvedula A et al., Genetic algorithm guided population pha…, Journal of clinical pharmac… (2014) | [10.1002/jcph.176](https://doi.org/10.1002/jcph.176) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Morse_2026_reference](drugs/toxin_simvastatin/Simvastatin_Morse2026_reference.md) | — | 1-compartment (no model) | 0 | Morse BL et al., Verification of a Physiologically-based…, The AAPS journal (2026) | [10.1208/s12248-026-01299-8](https://doi.org/10.1208/s12248-026-01299-8) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Ogungbenro_2019_between_subject_variability_bsvb_estimate_shrinkage](drugs/toxin_simvastatin/Simvastatin_Ogungbenro2019_between_subject_variability_bsvb.md) | — | 1-compartment (no model) | 0 | Ogungbenro K et al., A population pharmacokinetic model for…, European journal of clinica… (2019) | [10.1007/s00228-019-02697-y](https://doi.org/10.1007/s00228-019-02697-y) |
@@ -73,7 +73,7 @@ Simvastatin is a lipid-lowering agent that is derived synthetically from the fer
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lin_2018_new_onset_osteoporosis](drugs/toxin_simvastatin/pd_Lin_2018_new_onset_osteoporosis.md) | new-onset osteoporosis ← simvastatin · time-to-event model | — | Lin TK et al., Long-term effect of statins on the risk…, PloS one (2018) | [10.1371/journal.pone.0196713](https://doi.org/10.1371/journal.pone.0196713) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Jadhav_2022_LDL_C](drugs/toxin_simvastatin/pd_Jadhav_2022_LDL_C.md) | LDL-C ← simvastatin · indirect response — drug inhibits the loss of LDL-C | model (no simulator) | Jadhav SB et al., Pharmacodynamic effect of bempedoic aci…, European heart journal. Car… (2022) | [10.1093/ehjcvp/pvab064](https://doi.org/10.1093/ehjcvp/pvab064) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Kang_2026_LDL_C](drugs/toxin_simvastatin/pd_Kang_2026_LDL_C.md) | LDL-cholesterol (LDL-C) ← simvastatin hydroxy acid · inhibition effect | — | Kang W et al., Explaining clinically important variabi…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70163](https://doi.org/10.1002/jcph.70163) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Mello_2022_bioaccumulation](drugs/toxin_simvastatin/pd_Mello_2022_bioaccumulation.md) | bioaccumulation · model not identified | — | Mello FV et al., Occurrence of pharmaceuticals in seafoo…, The Science of the total en… (2022) | [10.1016/j.scitotenv.2021.149744](https://doi.org/10.1016/j.scitotenv.2021.149744) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">fish</span> | [Mello_2022_bioaccumulation](drugs/toxin_simvastatin/pd_Mello_2022_bioaccumulation.md) | bioaccumulation · model not identified | — | Mello FV et al., Occurrence of pharmaceuticals in seafoo…, The Science of the total en… (2022) | [10.1016/j.scitotenv.2021.149744](https://doi.org/10.1016/j.scitotenv.2021.149744) |
 
 ## Pharmacogenomics (PGx)
 
@@ -88,29 +88,6 @@ Simvastatin is a lipid-lowering agent that is derived synthetically from the fer
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=simvastatin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor, `ABCC2` substrate, `ABCG2` transport, `SLCO1A2` inhibitor, `SLCO2B1` unknown | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` transport, `SLCO1A2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` transport | PGx paper |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor, `ABCG2` transport | DrugBank actor |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CES1` inhibitor, `CES2` inhibitor, `CYP2B6` inducer/inhibitor, `CYP2C19` substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor/substrate/transport, `SLCO1B3` unknown, `SLCO2B1` unknown, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CES2` inhibitor, `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor, `ABCC2` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor, `ABCB11` substrate, `ABCC2` substrate, `ABCG2` transport | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HDAC2 (inhibitor), HMGCR (inhibitor), ITGAL (inhibitory allosteric modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,7 +107,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1201 matched, 173 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 9  ·  extracted 2  ·  needs review 1  ·  rejected 6  ·  stale 0
+- **records:** 9  ·  extracted 0  ·  needs review 3  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

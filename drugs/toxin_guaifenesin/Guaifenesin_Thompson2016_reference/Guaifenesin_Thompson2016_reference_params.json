@@ -14,6 +14,22 @@
   200.0,
   400.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Thompson_2016:other_prose",
+    "value_si": 0.0288
+   },
+   {
+    "source": "Thompson_2016:other_prose",
+    "value_si": 0.45
+   },
+   {
+    "source": "Thompson_2016:other_prose",
+    "value_si": 0.7
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.606753672714651e-05,
   "F": 1.0,

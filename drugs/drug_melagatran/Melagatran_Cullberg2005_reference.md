@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was quarantined because melagatran's clearance, volume of distribution, absorption rate constant, and lag time lacked explicit values, forcing the model to rely on generic placeholders.
+> Melagatran's clearance, volume, and absorption parameters lack extracted values, forcing the model to rely on unreported defaults.
 
 <div class="pk-model-meta" hidden drug="melagatran" model-id="Melagatran_Cullberg2005_reference" status="model_quarantined" stale="false" population="patients with acute deep vein thrombosis" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Cullberg M, Eriksson UG, Wåhlander K, Eriksson H, Schulman S, Karlsson MO. Phar
 
 ## Population and dosing
 
-**Population:** patients with acute deep vein thrombosis · condition acute deep vein thrombosis · age group adult · n = &gt;=264.
+**Population:** patients with acute deep vein thrombosis · condition acute deep vein thrombosis · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed ximelagatran, measured melagatran.
 
@@ -39,7 +39,7 @@ Cullberg M, Eriksson UG, Wåhlander K, Eriksson H, Schulman S, Karlsson MO. Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,11 @@ Cullberg M, Eriksson UG, Wåhlander K, Eriksson H, Schulman S, Karlsson MO. Phar
 
 ### Reviewer guidance
 
-**The record was quarantined because melagatran's clearance, volume of distribution, absorption rate constant, and lag time lacked explicit values, forcing the model to rely on generic placeholders.**
+**Melagatran's clearance, volume, and absorption parameters lack extracted values, forcing the model to rely on unreported defaults.**
 
-Built from abstract-only data, the model recorded apparent clearance of 27.3 L/h and volume of distribution of 176 L but left absorption parameters undefined. Consequently, the absorption rate constant and lag time were replaced by default library values rather than estimates from the source. This reliance on placeholders prevented publication without invented numbers. Extracted — melagatran: CLm/F 27.3 L/h, Vm/F 176 L, IIV 21 %.
+The record was built from the abstract alone, so no explicit estimates were available for the drug's clearance, volume of distribution, or absorption kinetics. Consequently, these parameters were left at library placeholders while apparent parameters like 27.3 L/h clearance were reported. A second reader failed to agree on the mapping of these values to specific pharmacokinetic parameters, resulting in a disagreement ratio of 0.455. Extracted — melagatran: CLm/F 27.3 L/h, Vm/F 176 L, IIV 21 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance after oral administration: this record has none, the second reading 27.3; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance after oral administration: this record has none, the second reading 27.3; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,18 +93,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.455 (5/11 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.455 (5/11 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance after oral administration (population]` | 27.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance after oral administration]` |  | 27.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[interpatient variability in bioavailability]` |  | 21 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[unexplained interpatient variability values in bioavailability]` | 21 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution (population]` | 176 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 176 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance after oral administration (population]` | 27.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance after oral administration]` |  | 27.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[interpatient variability in bioavailability]` |  | 21 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[unexplained interpatient variability values in bioavailability]` | 21 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution (population]` | 176 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 176 | only_one_extracted |
 
 </details>
 
@@ -128,14 +128,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check agreement 0.455 is below 0.5: verdict partial, agreement 0.455, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

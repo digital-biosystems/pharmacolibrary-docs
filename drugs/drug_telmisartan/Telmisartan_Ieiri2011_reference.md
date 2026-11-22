@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Ieiri_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Baek2013_reference&quot;,&quot;label&quot;:&quot;Baek_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Baek2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Bajcetic2007_reference&quot;,&quot;label&quot;:&quot;Bajcetic_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Bajcetic2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Chen2013_reference&quot;,&quot;label&quot;:&quot;Chen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chen2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Wells2010_reference&quot;,&quot;label&quot;:&quot;Wells_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Wells2010_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_plasma_potassium&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 plasma potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_plasma_potassium.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Baek2013_reference&quot;,&quot;label&quot;:&quot;Baek_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Baek2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Bajcetic2007_reference&quot;,&quot;label&quot;:&quot;Bajcetic_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Bajcetic2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Chae2018_reference&quot;,&quot;label&quot;:&quot;Chae_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Duncton2016_reference&quot;,&quot;label&quot;:&quot;Duncton_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Duncton2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_2_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_4_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_4_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_4_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_8_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_8_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_8_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Wells2010_reference&quot;,&quot;label&quot;:&quot;Wells_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Wells2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_plasma_potassium&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 plasma potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_plasma_potassium.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Telmisartan model refused because simulated peak concentration and time of peak deviate from the paper's reported values, and the covariate effects were not simulated.
+> Telmisartan parameters k12 (99.8 h⁻¹) and kcomp (0.339 h⁻¹) were not emitted, causing simulation mismatches.
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Ieiri2011_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Ieiri I, Nishimura C, Maeda K, Sasaki T, Kimura M, Chiyoda T et al. Pharmacokine
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = No.
+**Population:** healthy volunteers · condition healthy · age group adult · n = 33.
 
 **Dosing:** 80, 100 mg, oral, single.
 
@@ -25,7 +25,7 @@ Ieiri I, Nishimura C, Maeda K, Sasaki T, Kimura M, Chiyoda T et al. Pharmacokine
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted, plus 2 covariate effects.  
+**Parameters:** 7 extracted, plus 2 covariate effects.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference.svg" alt="Telmisartan_Ieiri2011_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -39,9 +39,10 @@ Ieiri I, Nishimura C, Maeda K, Sasaki T, Kimura M, Chiyoda T et al. Pharmacokine
 | CL/F (l/h) | CL/F | 27.7 | l/h |
 | V/F (l) | V/F | 31.3 | l |
 | K23 (h−1) | kcomp | 0.339 | h−1 |
+| Tg (h) | t1/2z | 3.83 | h |
 | TLAG (h) | tlag | 0.242 | h |
 | effectugt1a3_2a_for_cl_f | effectugt1a3_2a_for_cl_f | 2.19 |  |
-| theta_cl_f_category | theta_cl_f_category | 0.550 | l/h |
+| effectugt1a3_4a_for_cl_f | effectugt1a3_4a_for_cl_f | 0.550 |  |
 | Ka | kabs | 4.53 | /h |
 
 ## Caveats
@@ -50,7 +51,7 @@ Ieiri I, Nishimura C, Maeda K, Sasaki T, Kimura M, Chiyoda T et al. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.467). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,9 +61,9 @@ Ieiri I, Nishimura C, Maeda K, Sasaki T, Kimura M, Chiyoda T et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Telmisartan model refused because simulated peak concentration and time of peak deviate from the paper's reported values, and the covariate effects were not simulated.**
+**Telmisartan parameters k12 (99.8 h⁻¹) and kcomp (0.339 h⁻¹) were not emitted, causing simulation mismatches.**
 
-The simulated peak concentration of 0.000712 differs from the paper's 0.000836, and the simulated time of peak of 1.1132400695118456 differs from the paper's 0.773, both exceeding tolerance. The record defines covariate effects but the simulation only included the reference individual, so the covariate scenarios were not exercised. Additionally, the model builder assumed an apparent parameterization with bioavailability set to 1, which was flagged as an unacceptable deviation. Extracted — telmisartan: k12 99.8 h−1, CL/F 27.7 l/h, V/F 31.3 l, kcomp 0.339 h−1, tlag 0.242 h, kabs 4.53 /h.
+The record lists transfer rate constants k12 and kcomp, but the model only covered four parameters, omitting these two values entirely. Consequently, the simulated peak concentration (0.00171 kg/m³) and time to peak (0.796 h) failed to match the paper's reported values. Additionally, the defined covariate effects for clearance were not exercised in the simulation, leaving those scenarios unverified. Extracted — telmisartan: k12 99.8 h−1, CL/F 27.7 l/h, V/F 31.3 l, kcomp 0.339 h−1, t1/2z 3.83 h, tlag 0.242 h, kabs 4.53 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 27.7, the second reading 15.9; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -76,9 +77,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 | CL/F (l/h) | `Q27` · CL/F | 27.7 | l/h | 7.694e-06 | m3/s | l/h | exact (1) | Ieiri_2011_table_p10_1:row1:col1, Ieiri_2011_table_p10_1:row1:col2 |
 | V/F (l) | `Q76` · V/F | 31.3 | l | 0.0313 | m3 | l | exact (1) | Ieiri_2011_table_p10_1:row2:col1, Ieiri_2011_table_p10_1:row2:col2 |
 | K23 (h−1) | `Q48` · kcomp | 0.339 | h−1 | 9.417e-05 | 1/s | 1/h | exact (1) | Ieiri_2011_table_p10_1:row3:col1 |
+| Tg (h) | `Q57` · t1/2z | 3.83 | h | 1.379e+04 | s | h | llm (0.6) | Ieiri_2011_table_p10_1:row5:col1 |
 | TLAG (h) | `Q83` · tlag | 0.242 | h | 871.2 | s | h | exact (1) | Ieiri_2011_table_p10_1:row6:col1 |
 | effectugt1a3_2a_for_cl_f | `Q900` · effectugt1a3_2a_for_cl_f | 2.19 |  |  |  |  |  | Ieiri_2011_table_p10_1:row7:col1 |
-| theta_cl_f_category | `Q900` · theta_cl_f_category | 0.550 | l/h |  |  |  |  | Ieiri_2011_table_p10_1:row8:col1 |
+| effectugt1a3_4a_for_cl_f | `Q900` · effectugt1a3_4a_for_cl_f | 0.550 |  |  |  |  |  | Ieiri_2011_table_p10_1:row8:col1 |
 | Ka | `Q49` · kabs | 4.53 | /h | 0.001258 | 1/s | 1/h | review_gapfill (0.7) | Chae_2018:review |
 
 <details class="legend">
@@ -93,12 +95,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 **Interpretation flags:**
 - dropped duplicate Q48 ('K32 (h−1)', value '0.0691') — already have one for this compound
-- dropped unlinked row (NIL): 'Tg (h)' — extend the ontology if this is a real PK parameter (source ['Ieiri_2011_table_p10_1:row5:col1'])
 - covariate level 'EffectUGT1A3*2a for CL/F' → Q900:effectugt1a3_2a_for_cl_f = 2.19 (additive_shift on Q27)
+- covariate level 'EffectUGT1A3*4a for CL/F' → Q900:effectugt1a3_4a_for_cl_f = 0.550 (additive_shift on Q27)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=telmisartan
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q49 (kabs) from Chae_2018's review values (primary lacked it)
@@ -113,7 +113,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.385 (5/13 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.467 (7/15 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
@@ -122,10 +122,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['additive_shift', 'additive_shift'] | ['additive_shift'] | mismatch |
 | `gpt-oss-120b` | `parameters[cl/f].value` | 27.7 | 15.9 | mismatch |
 | `gpt-oss-120b` | `parameters[effectugt1a3_2a_for_cl_f]` | 2.19 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effectugt1a3_4a_for_cl_f]` | 0.550 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k12].value` | 99.8 | 7.92 | mismatch |
-| `gpt-oss-120b` | `parameters[tg]` |  | 3.83 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_f_category].value` | 0.550 | 2.19 | mismatch |
-| `gpt-oss-120b` | `parameters[tlag]` | 0.242 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tg].parameter_id` | Q57 | Q81 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_category]` |  | 2.19 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f].value` | 31.3 | 99.4 | mismatch |
 
 </details>
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
@@ -148,6 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Ieiri_2011_table_p10_1:row0:col1', 'Ieiri_2011_table_p10_1:row0:col2'] |
 | C5_dimension_Q48 | pass | 1 / [time] |  | ['Ieiri_2011_table_p10_1:row3:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Chae_2018:review'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Ieiri_2011_table_p10_1:row5:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Ieiri_2011_table_p10_1:row2:col1', 'Ieiri_2011_table_p10_1:row2:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Ieiri_2011_table_p10_1:row6:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -165,12 +166,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=telmisartan) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['k12', 'kcomp'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
-| T1_cmax | reference | pass | 0.000836 | 0.0007115 | 0.8511 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.06e-07 | 0.0007115 | 6712 | pg/ml→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | skipped |  | 4.333 |  | non-numeric value |
-| T1_tmax | reference | fail | 0.773 | 1.113 | 1.44 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 9.06 | 1.113 | 0.1229 | h→SI vs simulated h |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_cmax | reference | fail | 0.000836 | 0.001711 | 2.047 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.06e-07 | 0.001711 | 1.615e+04 | pg/ml→SI vs simulated kg/m3 |
+| T1_tmax | reference | pass | 0.773 | 0.7963 | 1.03 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 9.06 | 0.7963 | 0.0879 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -250,4 +251,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Ieiri2011_reference&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Ieiri2011_reference%0APaper%3A%20Ieiri_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 16:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 09:29 UTC</sub>

@@ -16,7 +16,7 @@ Bi Y, Perry PJ, Ellerby M, Murry DJ. Population Pharmacokinetic/Pharmacodynamic 
 
 ## Population and dosing
 
-**Population:** healthy male subjects · age group adult · n = n_subjects.
+**Population:** healthy male subjects · age group adult.
 
 **Dosing:** 100, 250, 500 mg, sc, multiple, every 168 h.
 

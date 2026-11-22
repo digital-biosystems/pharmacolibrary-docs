@@ -26,7 +26,7 @@ Mepyramine is a first-generation antihistamine that blocks H1 receptors to treat
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Kelly_1987_reference](drugs/drug_mepyramine/Mepyramine_Kelly1987_reference.md) | — | 1-compartment (no model) | 1 | Kelly DW et al., The metabolism and elimination of pyril…, Drug metabolism and disposi… (1987) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Kelly_1987_reference](drugs/drug_mepyramine/Mepyramine_Kelly1987_reference.md) | — | 1-compartment (no model) | 1 | Kelly DW et al., The metabolism and elimination of pyril…, Drug metabolism and disposi… (1987) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -41,20 +41,6 @@ Mepyramine is a first-generation antihistamine that blocks H1 receptors to treat
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Hao_2021_voltage_gated_sodium_channel_currents](drugs/drug_mepyramine/pd_Hao_2021_voltage_gated_sodium_channel_currents.md) | voltage-gated sodium channel currents ← mepyramine · inhibition effect | — | Hao J et al., The widely used antihistamine mepyramin…, FASEB journal : official pu… (2021) | [10.1096/fj.202100976RR](https://doi.org/10.1096/fj.202100976RR) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Ottosson_1989_relaxation](drugs/drug_mepyramine/pd_Ottosson_1989_relaxation.md) | relaxation ← mepyramine · inhibition effect | — | Ottosson A et al., Pharmacological characterization of his…, British journal of clinical… (1989) | [10.1111/j.1365-2125.1989.tb05344.x](https://doi.org/10.1111/j.1365-2125.1989.tb05344.x) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span> | [Zeng_1997_PAF_induced_aggregation](drugs/drug_mepyramine/pd_Zeng_1997_PAF_induced_aggregation.md) | PAF-induced aggregation ← mepyramine · inhibition effect | — | Zeng S et al., Mepyramine inhibits platelet activating…, Zhongguo yao li xue bao = A… (1997) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mepyramine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC22A4` unknown, `SLC22A5` unknown | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A5` unknown | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC22A4` unknown, `SLC22A5` unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HRH1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -74,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 475 matched, 78 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

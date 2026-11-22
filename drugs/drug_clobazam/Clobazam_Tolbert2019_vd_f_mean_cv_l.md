@@ -4,11 +4,11 @@
 
 # clobazam — `Clobazam_Tolbert2019_vd_f_mean_cv_l`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-10-06 18:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for clobazam was rejected because the drug cocktail volume parameter of 0.7 L caused a structural dimension mismatch.
+> The record was rejected because the AUC parameter was assigned a time unit (h), conflicting with its mass/volume/time dimension, and a dose-specific value was omitted.
 
-<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_vd_f_mean_cv_l" status="rejected" stale="true" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_vd_f_mean_cv_l" status="rejected" stale="false" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics of Clobazam. Journal of clinical pharmacology 59(1):7–19 (2019).
@@ -42,7 +42,7 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 ### Reviewer guidance
 
-**The record for clobazam was rejected because the drug cocktail volume parameter of 0.7 L caused a structural dimension mismatch.**
+**The record was rejected because the AUC parameter was assigned a time unit (h), conflicting with its mass/volume/time dimension, and a dose-specific value was omitted.**
 
-The volume of distribution parameter, mislabeled as 'Drug Cocktail', holds a value of 0.7 L, which conflicts with the model's structural expectations for clobazam. This conflict triggered a dimension mismatch error that halted the review process. The abstract-only status means these summary statistics were used in place of fitted model parameters. Extracted — clobazam: Cmax 87.2 ng/mL, AUCt 8.87e+03 h, t1/2z 58.6 h, V/F 100 L, CL/F 1.9 L/h, V 0.7 L.
+The area under the concentration–time curve (AUCt) value of 8871 is labeled with the unit 'h', which is dimensionally inconsistent with a pharmacokinetic exposure metric. Additionally, the second reader identified a clearance value of 1.9 for a specific 10 mg clobazam and 40 mg oxcarbazepine dose that was not extracted into the record. The record also includes a volume of distribution of 0.7 L labeled 'Drug Cocktail' and a CYP2C19 covariate effect of 94. Extracted — clobazam: Cmax 87.2 ng/mL, AUCt 8.87e+03 h, t1/2z 58.6 h, V/F 100 L, CL/F 1.9 L/h, V 0.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 10 mg clb + 40 mg opz: this record has none, the second reading 1.9; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

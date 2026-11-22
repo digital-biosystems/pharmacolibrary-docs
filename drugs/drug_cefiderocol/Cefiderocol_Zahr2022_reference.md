@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.06, model 0.0426); the covariate scenarios were not simulated.
+> The cefiderocol model fails to reproduce the reported Cmax and lacks a required peripheral volume parameter.
 
 <div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Zahr2022_reference" status="needs_review" stale="false" population="critically ill adult patients" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Zahr N, Urien S, Llopis B, Noé G, Tissot N, Bihan K et al. Total and Unbound Ph
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.06, model 0.0426); the covariate scenarios were not simulated.**
+**The cefiderocol model fails to reproduce the reported Cmax and lacks a required peripheral volume parameter.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — cefiderocol: V 17 L, CLu 7.38 L/h, Q 34 L/h.
+The simulated peak concentration of 0.0426 mg/L is significantly lower than the paper's reported value of 0.06 mg/L. A second reader identified a missing peripheral volume of 46 L, which the current record lists as null. The record was held for review because the albumin covariate effect was defined but not exercised in the simulations. Extracted — cefiderocol: V 17 L, CLu 7.38 L/h, Q 34 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1. free #: this record has none, the second reading 6.26; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -142,6 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.06 | 0.04256 | 0.7093 | mg/L→SI vs simulated kg/m3 |
 
 <details class="legend">

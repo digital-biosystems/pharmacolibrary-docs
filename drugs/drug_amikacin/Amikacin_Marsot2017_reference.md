@@ -39,7 +39,7 @@ Marsot A, Guilhaumou R, Riff C, Blin O. Amikacin in Critically Ill Patients: A R
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444), gpt-oss:120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444), gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Marsot A, Guilhaumou R, Riff C, Blin O. Amikacin in Critically Ill Patients: A R
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Albanell-Fernández_2025, Alhadab_2018) cannot stand in for this paper's evidence. Extracted — amikacin: Q 0.001 L/h, CL 4.33 liters/h, V 1.19 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -98,22 +98,22 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `qwen3.8-27b` | partly confirmed | 0.444 (4/9 fields) | 5 |
-| `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
 <details><summary>15 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss:120b` | `parameters[[19]]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[[20]]` |  | 0.001 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[[21]]` |  | 0.01 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[[22]]` |  | 0.01 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[[24]]` |  | 92.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[[26]]` |  | 0.05 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[[27]]` |  | 98.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 4.0 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 18.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[[19]]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[[20]]` |  | 0.001 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[[21]]` |  | 0.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[[22]]` |  | 0.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[[24]]` |  | 92.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[[26]]` |  | 0.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[[27]]` |  | 98.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 4.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 18.6 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[[20]]` | 0.001 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[[21]]` |  | 0.01 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[[26]]` |  | 0.05 | only_one_extracted |

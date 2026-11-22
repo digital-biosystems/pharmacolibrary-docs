@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Middleton_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Middleton2000_reference&quot;,&quot;label&quot;:&quot;Middleton_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Osieka_1984_GD&quot;,&quot;label&quot;:&quot;Osieka_1984 \u00b7 GD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/pd_Osieka_1984_GD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Middleton2000_reference&quot;,&quot;label&quot;:&quot;Middleton_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dacarbazine — `Dacarbazine_Middleton2000_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Middleton2000_reference" status="not_modelled" stale="false" population="" measured-compound="dacarbazine" parameterization="apparent" topology="1C"></div>
+> Ka was left at library defaults rather than using estimates from the paper, making the dacarbazine absorption model unsupported by source data.
+
+<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Middleton2000_reference" status="needs_review" stale="false" population="" measured-compound="dacarbazine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Middleton MR, Grob JJ, Aaronson N, Fierlbeck G, Tilgen W, Seiter S et al. Randomized phase III study of temozolomide versus dacarbazine in the treatment of patients with advanced metastatic malignant melanoma. Journal of clinical oncology : official journal of the American Society of Clinical Oncology 18(1):158–166 (2000).
@@ -27,7 +29,7 @@ Middleton MR, Grob JJ, Aaronson N, Fierlbeck G, Tilgen W, Seiter S et al. Random
 <figure class="pk-models-diagram"><img src="drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference/Dacarbazine_Middleton2000_reference.svg" alt="Dacarbazine_Middleton2000_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -36,7 +38,7 @@ Middleton MR, Grob JJ, Aaronson N, Fierlbeck G, Tilgen W, Seiter S et al. Random
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +48,13 @@ Middleton MR, Grob JJ, Aaronson N, Fierlbeck G, Tilgen W, Seiter S et al. Random
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Ka was left at library defaults rather than using estimates from the paper, making the dacarbazine absorption model unsupported by source data.**
+
+The model uses one-compartment oral PK with CL/F = 189.0 mL/min and V/F = 28.7 L, but ka and Tlag were not reported in Middleton_2000. The record explicitly substitutes library defaults for ka, an invented absorption assumption that contradicts the apparent /F parameterization. Since the source provides no ka estimate, the absorption rate constant remains a placeholder rather than a fitted or justified value. Extracted — dacarbazine: CL/F 189 mL/min, V/F 28.7 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -109,13 +113,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | obtained | note |
-|---|---|---|---|
-| T0_analyte_identity | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  | no covariate effects in record |
-| T3_apparent_invariant | pass | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=dacarbazine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -195,4 +202,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdacarbazine%5D%20Dacarbazine_Middleton2000_reference&body=Drug%3A%20dacarbazine%0ARecord%3A%20Dacarbazine_Middleton2000_reference%0APaper%3A%20Middleton_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 12:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:28 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;pirfenidone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirfenidone_Braim2008_reference&quot;,&quot;label&quot;:&quot;Braim_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirfenidone_Braim2008_reference&quot;,&quot;label&quot;:&quot;Braim_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # pirfenidone
 
@@ -25,7 +25,7 @@ Pirfenidone is an immunosuppressant medication used to treat idiopathic pulmonar
 
 ## Start here
 
-> **Braim_2008_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adult horses, n = 6. [Run it in the simulator](drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md?tab=Simulation) · [record](drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md)
+> **Braim_2008_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adult horses, n = 6. [Run it in the simulator](drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md?tab=Simulation) · [record](drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,28 +33,9 @@ Pirfenidone is an immunosuppressant medication used to treat idiopathic pulmonar
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T6_deviations</sub> | [Braim_2008_reference](drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Braim AE et al., Pharmacokinetics and clinical effects o…, American journal of veterin… (2008) | [10.2460/ajvr.69.7.952](https://doi.org/10.2460/ajvr.69.7.952) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Braim_2008_reference](drugs/drug_pirfenidone/Pirfenidone_Braim2008_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Braim AE et al., Pharmacokinetics and clinical effects o…, American journal of veterin… (2008) | [10.2460/ajvr.69.7.952](https://doi.org/10.2460/ajvr.69.7.952) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Barranco-Garduño_2020_reference](drugs/drug_pirfenidone/Pirfenidone_BarrancoGarduo2020_reference.md) | — | 1-compartment (no model) | 1 | Barranco-Garduño LM et al., Pharmacokinetic evaluation of two pirfe…, Heliyon (2020) | [10.1016/j.heliyon.2020.e05279](https://doi.org/10.1016/j.heliyon.2020.e05279) |
 | <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Kaminskas_2019_reference](drugs/drug_pirfenidone/Pirfenidone_Kaminskas2019_reference.md) | — | 2-compartment (no model) | 3 | Kaminskas LM et al., Aerosol Pirfenidone Pharmacokinetics af…, Pharmaceutical research (2019) | [10.1007/s11095-019-2732-2](https://doi.org/10.1007/s11095-019-2732-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pirfenidone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP2E1` substrate, `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: TGFB1 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -74,7 +55,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 17 matched, 14 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

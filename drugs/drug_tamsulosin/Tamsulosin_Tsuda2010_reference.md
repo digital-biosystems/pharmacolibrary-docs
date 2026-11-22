@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The tamsulosin model was held back because the absorption lag time was not extracted from the record, forcing reliance on a library placeholder.
+> The tamsulosin record was held for review because a second reader disputed the reported apparent clearance of 2.28 L/h.
 
 <div class="pk-model-meta" hidden drug="tamsulosin" model-id="Tamsulosin_Tsuda2010_reference" status="needs_review" stale="false" population="paediatric patients with neuropathic and non-neuropathic bladder" measured-compound="tamsulosin" parameterization="apparent" topology="1C"></div>
 
@@ -17,19 +17,7 @@ Tsuda Y, Tatami S, Yamamura N, Tadayasu Y, Sarashina A, Liesenfeld KH et al. Pop
 
 ## Population and dosing
 
-**Population:** paediatric patients with neuropathic and non-neuropathic bladder · age group child · n = ,
-  "condition": "neuropathic and non-neuropathic bladder",
-  "species": "human",
-  "compounds": [
-    {
-      "name": "tamsulosin",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    }
-  ],
-  "links": [].
+**Population:** paediatric patients with neuropathic and non-neuropathic bladder · age group child.
 
 **Dosing:** 0.1, 0.2, 0.4, 0.8 mg, oral, single.
 
@@ -63,13 +51,13 @@ Tsuda Y, Tatami S, Yamamura N, Tadayasu Y, Sarashina A, Liesenfeld KH et al. Pop
 
 ### Reviewer guidance
 
-**The tamsulosin model was held back because the absorption lag time was not extracted from the record, forcing reliance on a library placeholder.**
+**The tamsulosin record was held for review because a second reader disputed the reported apparent clearance of 2.28 L/h.**
 
-The record includes values for clearance, volume of distribution, and absorption rate, but the lag time parameter has no explicit estimate. Consequently, the model structure relied on a generic placeholder value rather than data-specific parameters. Second readers also disputed the identity of the dose compound and failed to identify the specific parameter values in the source. Extracted — tamsulosin: CL/F 2.28 l h -1, V/F 37.5 l, kabs 0.368 h -1.
+The record reports tamsulosin CL/F of 2.28 L/h, V/F of 37.5 L, and an absorption rate constant of 0.368 h⁻¹; the second reader identified tamsulosin hydrochloride as the dose compound and primary analyte and supplied no estimates for these parameters. The cross-reader agreement was 0.182, with 0 of 1 reader agreeing. The absorption lag time was left at a default, and the apparent parameterization assumed F=1 and Fm=1 with no molar correction. Extracted — tamsulosin: CL/F 2.28 l h -1, V/F 37.5 l, kabs 0.368 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tamsulosin, the second reading tamsulosin hydrochloride; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -150,15 +138,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=tamsulosin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=tamsulosin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

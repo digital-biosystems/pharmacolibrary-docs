@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oxazepam clearance and half-life values rely on unreported absorption parameters defaulted to library standards, causing the model to be held back.
+> The oxazepam record lacks reported absorption rate constant values, forcing reliance on library defaults for the absorption phase.
 
 <div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Imbert2016_reference" status="needs_review" stale="false" population="alcohol-dependent outpatients treated for alcohol withdrawal syndrome" measured-compound="oxazepam" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Imbert B, Marsot A, Liachenko N, Simon N. Population Pharmacokinetics of High-Do
 
 ### Reviewer guidance
 
-**Oxazepam clearance and half-life values rely on unreported absorption parameters defaulted to library standards, causing the model to be held back.**
+**The oxazepam record lacks reported absorption rate constant values, forcing reliance on library defaults for the absorption phase.**
 
-The record derives oxazepam parameters from the paper abstract alone, meaning summary statistics stand in for a fitted population model. The absorption rate constant (ka) was not reported in the source text, so library default values were substituted for both ka and the lag time (Tlag). These unreported defaults for the absorption phase contradict the claim that the parameters represent specific estimates from the study. Extracted — oxazepam: CL 6.8 L/h, V/F 159 L, D1 2 hours, t1/2z 16 hours.
+The source abstract does not report an absorption rate constant (ka), leading to the use of default library values. This results in an invented absorption model that is not supported by the paper's data. Consequently, the simulated pharmacokinetic profile reflects assumed rather than estimated absorption characteristics. Extracted — oxazepam: CL 6.8 L/h, V/F 159 L, D1 2 hours, t1/2z 16 hours.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -87,6 +87,7 @@ Independently confirmed by `gpt-oss-120b`.
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- derived CL/F=6.88815 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Imbert_2016_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
@@ -126,15 +127,17 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=oxazepam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=oxazepam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,7 +176,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 5e-05 | kg |
-| input | model | `Cl` | 1.889e-06 | m3/s |
+| input | model | `Cl` | 1.913e-06 | m3/s |
 | input | model | `VdPerKg` | 0.002271 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |

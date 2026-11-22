@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model structure ignored carbidopa and the terminal half-life was 2.4 hours instead of the expected 1.85 hours.
+> Record rejected because the model uses a one-compartment structure, omitting the dopamine metabolite, and fails to match the paper's terminal half-life of 1.85 hours.
 
 <div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Senek2018_reference" status="rejected" stale="false" population="healthy subjects and Parkinson&#39;s disease patients" measured-compound="levodopa" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,9 +53,9 @@ Senek M, Nyholm D, Nielsen EI. Population pharmacokinetics of levodopa/carbidopa
 
 ### Reviewer guidance
 
-**The model structure ignored carbidopa and the terminal half-life was 2.4 hours instead of the expected 1.85 hours.**
+**Record rejected because the model uses a one-compartment structure, omitting the dopamine metabolite, and fails to match the paper's terminal half-life of 1.85 hours.**
 
-The model used a single-compartment structure despite the paper dosing a levodopa/carbidopa combination, and the simulated output was levodopa rather than the metabolite. The model builder assumed complete bioavailability for both compounds, which conflicts with the apparent parameterization of clearance and volume. Additionally, the record lists dopamine as a metabolite, whereas a second reader identified 3-O-methyldopa. Extracted — levodopa: CL/F 48.5 L/h, V1/F 168 L, kabs 1.2 h−1.
+The defined parent-metabolite structure for levodopa and dopamine is inconsistent with the single-compartment model used, which incorrectly predicts a terminal half-life of 2.40 hours instead of the paper's 1.85 hours. The output variable is incorrectly assigned to the central compartment rather than the measured analyte, levodopa. Additionally, a second reader disputed the identification of the metabolite as dopamine, suggesting 3-O-methyldopa instead. Extracted — levodopa: CL/F 48.5 L/h, V1/F 168 L, kabs 1.2 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levodopa/carbidopa, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -194,7 +194,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_output_variable |  | fail | Metabolite_C (measured=levodopa) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 1.85 | 2.4 | 1.297 | min→SI vs simulated h |
 
 <details class="legend">

@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/&quot;},{&quot;label&quot;:&quot;Kl\u00fcnder_2019 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Upadacitinib_Klnder2018_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # upadacitinib — `Upadacitinib_Klnder2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-07 01:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. CL_ratio and Km have no unit.
+> Km has no unit.
 
-<div class="pk-model-meta" hidden drug="upadacitinib" model-id="Upadacitinib_Klnder2019_reference" status="needs_review" stale="true" population="healthy subjects and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="upadacitinib" model-id="Upadacitinib_Klnder2019_reference" status="needs_review" stale="false" population="healthy subjects and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Klünder B, Mittapalli RK, Mohamed MF, Friedel A, Noertersheuser P, Othman AA. Population Pharmacokinetics of Upadacitinib Using the Immediate-Release and Extended-Release Formulations in Healthy Subjects and Subjects with Rheumatoid Arthritis: Analyses of Phase I-III Clinical Trials. Clinical pharmacokinetics 58(8):1045–1058 (2019).
@@ -48,7 +49,7 @@ Klünder B, Mittapalli RK, Mohamed MF, Friedel A, Noertersheuser P, Othman AA. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,7 +59,7 @@ Klünder B, Mittapalli RK, Mohamed MF, Friedel A, Noertersheuser P, Othman AA. P
 
 ### Reviewer guidance
 
-**CL_ratio and Km have no unit.**
+**Km has no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — upadacitinib: CL/F 40.9 L/h, V1/F 156 L, Q/F 3.22 L/h, V2/F 68 L, kabs 0.0523 1/h, tlag 0.154 h, AUC%ext 74.5, D1 3.29 h, … (+2).
 

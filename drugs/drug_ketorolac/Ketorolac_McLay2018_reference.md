@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;ketorolac&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/&quot;},{&quot;label&quot;:&quot;McLay_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketorolac_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Cohen2011_reference&quot;,&quot;label&quot;:&quot;Cohen_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cohen2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Drover2012_reference&quot;,&quot;label&quot;:&quot;Drover_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Drover2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Villa2015_reference&quot;,&quot;label&quot;:&quot;Villa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Villa2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketorolac_Cohen2011_reference&quot;,&quot;label&quot;:&quot;Cohen_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cohen2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Cerreta2019_reference&quot;,&quot;label&quot;:&quot;Cerreta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cerreta2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Drover2012_reference&quot;,&quot;label&quot;:&quot;Drover_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Drover2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Villa2015_reference&quot;,&quot;label&quot;:&quot;Villa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Villa2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketorolac_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketorolac/Ketorolac_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ketorolac — `Ketorolac_McLay2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:51 UTC (Rejected), but the paper was screened again on 2026-10-07 01:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance parameter is incompatible with the record's one-compartment model structure.
+> Ketorolac intercompartmental clearance Q is reported as 4.43 L per 70 kg, a volume unit incompatible with clearance, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_McLay2018_reference" status="rejected" stale="true" population="children aged 2 months to 16 years" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_McLay2018_reference" status="rejected" stale="false" population="children aged 2 months to 16 years" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 McLay JS, Engelhardt T, Mohammed BS, Cameron G, Cohen MN, Galinkin JL et al. The pharmacokinetics of intravenous ketorolac in children aged 2 months to 16 years: A population analysis. Paediatric anaesthesia 28(2):80–86 (2018).
@@ -17,7 +17,7 @@ McLay JS, Engelhardt T, Mohammed BS, Cameron G, Cohen MN, Galinkin JL et al. The
 
 ## Population and dosing
 
-**Population:** children aged 2 months to 16 years · condition postoperative pain · age group mixed · n = n_subjects": 64, "condition": "postoperative pain", "species": "human", "compounds": ["ketorolac | parent | yes | yes | yes"], "links": "none"}.
+**Population:** children aged 2 months to 16 years · condition postoperative pain · age group mixed.
 
 ## Model
 
@@ -37,7 +37,7 @@ McLay JS, Engelhardt T, Mohammed BS, Cameron G, Cohen MN, Galinkin JL et al. The
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,15 +47,15 @@ McLay JS, Engelhardt T, Mohammed BS, Cameron G, Cohen MN, Galinkin JL et al. The
 
 ### Reviewer guidance
 
-**The intercompartmental clearance parameter is incompatible with the record's one-compartment model structure.**
+**Ketorolac intercompartmental clearance Q is reported as 4.43 L per 70 kg, a volume unit incompatible with clearance, so the record was rejected.**
 
-The model structure is defined as one-compartment, yet the record includes an intercompartmental clearance value of 4.43 L/70 kg. This creates a structural mismatch because intercompartmental clearance requires at least two compartments. Additionally, the volume of distribution label incorrectly identifies the compound as fentanyl instead of ketorolac. Extracted — ketorolac: CL 2.53 L.
+Q is defined as apparent clearance between the central and peripheral compartments, but its reported unit, L per 70 kg, has no time denominator. The record was built from the abstract alone, so summary statistics stood in for a fitted model. A second reader disputed the ketorolac volume estimate of 4.7, considering it absent. Extracted — ketorolac: CL 2.53 L.
 70 kg-1, Q 4.43 L.
 70 kg-1, V 4.7 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fentanyl volume of distribution: this record has 4.7, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

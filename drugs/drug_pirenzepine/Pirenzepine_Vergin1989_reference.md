@@ -4,11 +4,11 @@
 
 # pirenzepine — `Pirenzepine_Vergin1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:49 UTC (Rejected), but the paper was screened again on 2026-10-04 11:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="pirenzepine" model-id="Pirenzepine_Vergin1989_reference" status="rejected" stale="true" population="healthy adults" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pirenzepine" model-id="Pirenzepine_Vergin1989_reference" status="rejected" stale="false" population="healthy adults" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Vergin H, Herrlinger C, Gugler R. Effect of an aluminium-hydroxide containing antacid on the oral bioavailability of pirenzepine. Arzneimittel-Forschung 39(4):520–523 (1989).
@@ -31,7 +31,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +45,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of area under the curve: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the curve: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,15 +79,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[area under the curve]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[biological half-life of pirenzepine]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax-values]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[area under the curve]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[biological half-life of pirenzepine]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax-values]` |  |  | only_one_extracted |
 
 </details>
 

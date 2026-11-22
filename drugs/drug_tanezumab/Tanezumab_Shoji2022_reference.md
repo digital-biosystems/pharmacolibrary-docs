@@ -4,11 +4,11 @@
 
 # tanezumab — `Tanezumab_Shoji2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-07 06:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the maximum concentration parameter for tanezumab is assigned units of days, a dimension mismatch.
+> The maximum concentration parameter was assigned units of days, causing a dimensional conflict with its mass-per-volume physical meaning.
 
-<div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Shoji2022_reference" status="rejected" stale="true" population="patients with osteoarthritis or chronic low back pain" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Shoji2022_reference" status="rejected" stale="false" population="patients with osteoarthritis or chronic low back pain" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Shoji S, Suzuki A, Gaitonde P, Cai CH, Marshall S. Population pharmacokinetics of tanezumab following intravenous or subcutaneous administration to patients with osteoarthritis or chronic low back pain. British journal of clinical pharmacology 88(7):3321–3334 (2022).
@@ -38,7 +38,7 @@ Shoji S, Suzuki A, Gaitonde P, Cai CH, Marshall S. Population pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Shoji S, Suzuki A, Gaitonde P, Cai CH, Marshall S. Population pharmacokinetics o
 
 ### Reviewer guidance
 
-**The record was rejected because the maximum concentration parameter for tanezumab is assigned units of days, a dimension mismatch.**
+**The maximum concentration parameter was assigned units of days, causing a dimensional conflict with its mass-per-volume physical meaning.**
 
-The parameter describing the highest drug concentration observed is recorded with a value of 8.9 but assigned units of days. This temporal unit is dimensionally incompatible with a concentration measure. The record was also constructed from the abstract alone, meaning summary statistics replaced fitted model values. Consequently, the model could not be validated against a complete parameter set. Extracted — tanezumab: CL 0.133 L d-1, V1 2.6 L, V2 1.77 L, Km 31.2 μg L-1, Cmax 8.9 days.
+The record lists the maximum drug concentration with a value of 8.9 and a unit of days. This unit represents a duration and conflicts with the parameter's definition as a concentration. Because the record was built from the paper's abstract alone, these summary statistics stand in for a fitted model. Extracted — tanezumab: CL 0.133 L d-1, V1 2.6 L, V2 1.77 L, Km 31.2 μg L-1, Cmax 8.9 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tanezumab, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

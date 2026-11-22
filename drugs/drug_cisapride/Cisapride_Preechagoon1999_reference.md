@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The cisapride record was held back because covariate scenarios were not simulated and the absorption lag time was missing.
+> Record refused because the second reader disputed the verdict, failing to confirm the extracted cisapride parameters 0.538 L/h, 21.9 L, and 2.58 h-1.
 
 <div class="pk-model-meta" hidden drug="cisapride" model-id="Cisapride_Preechagoon1999_reference" status="needs_review" stale="false" population="young infants with gastro-oesophageal reflux disease" measured-compound="cisapride" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Preechagoon Y, Charles B, Piotrovskij V, Donovan T, Van Peer A. Population pharm
 
 ## Population and dosing
 
-**Population:** young infants with gastro-oesophageal reflux disease · condition gastro-oesophageal reflux disease · age group infant · n = &gt;=49.
+**Population:** young infants with gastro-oesophageal reflux disease · condition gastro-oesophageal reflux disease · age group infant.
 
 ## Model
 
@@ -43,7 +43,7 @@ Preechagoon Y, Charles B, Piotrovskij V, Donovan T, Van Peer A. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +53,11 @@ Preechagoon Y, Charles B, Piotrovskij V, Donovan T, Van Peer A. Population pharm
 
 ### Reviewer guidance
 
-**The cisapride record was held back because covariate scenarios were not simulated and the absorption lag time was missing.**
+**Record refused because the second reader disputed the verdict, failing to confirm the extracted cisapride parameters 0.538 L/h, 21.9 L, and 2.58 h-1.**
 
-The model structure defines covariate effects, but only the reference individual was simulated, so the covariate impacts were not exercised. Additionally, the absorption lag time was not extracted from the abstract, so a library placeholder was used instead of an explicit estimate. The review found these deviations in the model builder's assumptions to be unacceptable. Extracted — cisapride: CL/F 0.538 L/h, V/F 21.9 l, kabs 2.58 h-1.
+The cross-check failed with an agreement ratio of 0.2, as the second reader did not agree with the first. The second reader returned null for the clearance, absorption rate, and volume parameters, while the record lists 0.538 L/h, 2.58 h-1, and 21.9 L. Additionally, the record was built from abstract-only data, meaning reported summary statistics stand in for a fitted model. The covariate scenarios were not simulated, and the base model was simulated, not the covariate effects the record defines. Extracted — cisapride: CL/F 0.538 L/h, V/F 21.9 l, kabs 2.58 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -103,20 +103,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f]` | 0.538 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` |  | 0.538 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 2.58 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` |  | 2.58 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v /f]` | 21.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` |  | 21.9 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | cisapride | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | cisapride | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | 0.538 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 0.538 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 2.58 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 2.58 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v /f]` | 21.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` |  | 21.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cisapride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cisapride | unknown | mismatch |
 
 </details>
 
@@ -143,15 +143,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=cisapride) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | 2: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=cisapride) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;sotrovimab&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/&quot;},{&quot;label&quot;:&quot;Sager_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotrovimab_Sager2023_reference&quot;,&quot;label&quot;:&quot;Sager_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/Sotrovimab_Sager2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sotrovimab_SnchezPearson2025_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez-Pearson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/Sotrovimab_SnchezPearson2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotrovimab_Sager2023_reference&quot;,&quot;label&quot;:&quot;Sager_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/Sotrovimab_Sager2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sotrovimab_SnchezPearson2025_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez-Pearson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotrovimab/Sotrovimab_SnchezPearson2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sotrovimab — `Sotrovimab_Sager2023_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="sotrovimab" model-id="Sotrovimab_Sager2023_reference" status="simulated" stale="false" population="patients with mild to moderate COVID-19" measured-compound="sotrovimab" parameterization="mechanistic" topology="2C"></div>
+> The record was held because the second reader disputed the elimination clearance's covariate form and the BMI effect value of 20.0 was missing from its assigned parameter.
+
+<div class="pk-model-meta" hidden drug="sotrovimab" model-id="Sotrovimab_Sager2023_reference" status="needs_review" stale="false" population="patients with mild to moderate COVID-19" measured-compound="sotrovimab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Sager JE, El-Zailik A, Passarell J, Roepcke S, Li X, Aldinger M et al. Population pharmacokinetics and exposure-response analysis of a single dose of sotrovimab in the early treatment of patients with mild to moderate COVID-19. CPT: pharmacometrics & systems pharmacology 12(6):853–864 (2023).
@@ -29,6 +31,8 @@ Sager JE, El-Zailik A, Passarell J, Roepcke S, Li X, Aldinger M et al. Populatio
 <figure class="pk-models-diagram"><img src="drugs/drug_sotrovimab/Sotrovimab_Sager2023_reference/Sotrovimab_Sager2023_reference.svg" alt="Sotrovimab_Sager2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Elimination clearance in participants of 83.6 kg (L/day) | CL | 1.33 | L/day |
@@ -48,7 +52,7 @@ Sager JE, El-Zailik A, Passarell J, Roepcke S, Li X, Aldinger M et al. Populatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,13 +62,13 @@ Sager JE, El-Zailik A, Passarell J, Roepcke S, Li X, Aldinger M et al. Populatio
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The record was held because the second reader disputed the elimination clearance's covariate form and the BMI effect value of 20.0 was missing from its assigned parameter.**
 
-The base model was simulated, not the covariate effects the record defines.
+The model simulation included only the reference individual, leaving the defined covariate effects unexercised. A second reader disagreed with the inclusion of a power covariate form for clearance and failed to locate the BMI effect value of 20.0 in the record. The reader also mapped the category covariate value of 16.4 to a different parameter than this record did. Extracted — sotrovimab: CL 1.33 L/day, V1 2.2 L, Q 1.49 L/day, V2 1.32 L, Fab 2.64.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination clearance in participants of 83.6 kg].covariate_forms`: this record has ['additive_shift', 'power'], the second reading ['additive_shift']; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -156,14 +160,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=sotrovimab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=sotrovimab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.722, 0 of 1 reader(s) agree | 0.722 | cross-check disputed by a second reader: verdict disputed, agreement 0.722, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

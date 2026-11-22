@@ -16,27 +16,7 @@ Gisleskog PO, Hermann D, Hammarlund-Udenaes M, Karlsson MO. The pharmacokinetic 
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = value_type": "string"
-  },
-  "condition": {
-    "type": "string"
-  },
-  "species": {
-    "type": "string"
-  },
-  "compounds": {
-    "type": "array",
-    "items": {
-      "type": "string"
-    }
-  },
-  "links": {
-    "type": "array",
-    "items": {
-      "type": "string"
-    }
-  }
-}.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 ## Model
 

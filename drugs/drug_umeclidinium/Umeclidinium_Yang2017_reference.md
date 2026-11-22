@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record uses library defaults for umeclidinium absorption rate and lag time instead of paper-derived estimates.
+> The umeclidinium record was held back because the absorption rate constant and Tlag were assigned library placeholder values instead of estimates from the paper.
 
 <div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Yang2017_reference" status="needs_review" stale="false" population="adults with asthma" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Yang S, Lee L, Pascoe S. Population Pharmacokinetics Modeling of Inhaled Umeclid
 
 ### Reviewer guidance
 
-**The record uses library defaults for umeclidinium absorption rate and lag time instead of paper-derived estimates.**
+**The umeclidinium record was held back because the absorption rate constant and Tlag were assigned library placeholder values instead of estimates from the paper.**
 
-The absorption rate constant and lag time were not reported in the source abstract and were instead replaced by generic library placeholders. Although the paper provides clearance (257 L/h), volume (804 L), AUC (64.7 mg·h/L), and Cmax (10.6 pg/mL), the absorption phase remains unsupported by the source. Consequently, the simulated concentration-time profile relies on assumptions rather than extracted data. Extracted — umeclidinium: CL/F 257 L/h, V/F 804 L, AUCt 64.7 mg·h/L, Cmax 10.6 pg/mL.
+The model builder explicitly noted that ka and Tlag were invented defaults, not reported in the source. Since the record was built from the abstract alone, summary statistics like AUCt (64.7 mg·h/L) and Cmax (10.6 pg/mL) stood in for a fitted model. The second reader disagreed on all extracted parameter values, finding them null, which contributed to the dispute. Extracted — umeclidinium: CL/F 257 L/h, V/F 804 L, AUCt 64.7 mg·h/L, Cmax 10.6 pg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -142,15 +142,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=umeclidinium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_1: not acceptable; deviation_3: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=umeclidinium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

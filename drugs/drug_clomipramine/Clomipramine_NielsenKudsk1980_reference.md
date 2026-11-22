@@ -4,11 +4,11 @@
 
 # clomipramine — `Clomipramine_NielsenKudsk1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:52 UTC (Rejected), but the paper was screened again on 2026-10-06 22:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clomipramine record was rejected because the abstract-only source provided accumulation and half-life values, not the required distribution volume and clearance for a compartmental model.
+> Clomipramine’s Css (340 micrograms) and AUCSS (1055 micrograms) use mass-only units inconsistent with their concentration and concentration–time meanings, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_NielsenKudsk1980_reference" status="rejected" stale="true" population="isolated perfused rabbit hearts" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_NielsenKudsk1980_reference" status="rejected" stale="false" population="isolated perfused rabbit hearts" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nielsen-Kudsk F, Quist S. Myocardial pharmacokinetics of amitriptyline and clomipramine in the isolated, perfused rabbit heart. Acta pharmacologica et toxicologica 46(3):213–218 (1980).
@@ -38,7 +38,7 @@ Nielsen-Kudsk F, Quist S. Myocardial pharmacokinetics of amitriptyline and clomi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Nielsen-Kudsk F, Quist S. Myocardial pharmacokinetics of amitriptyline and clomi
 
 ### Reviewer guidance
 
-**The clomipramine record was rejected because the abstract-only source provided accumulation and half-life values, not the required distribution volume and clearance for a compartmental model.**
+**Clomipramine’s Css (340 micrograms) and AUCSS (1055 micrograms) use mass-only units inconsistent with their concentration and concentration–time meanings, so the record was rejected.**
 
-The record includes a terminal half-life of 37.7 min, steady-state accumulation of 340 micrograms, and an area under the curve of 1055 micrograms, but lacks volume and clearance parameters. A structural parameter failed a dimension check, confirming the data do not support a valid pharmacokinetic structure. Because the source was limited to the abstract, these summary statistics were incorrectly treated as fitted model parameters. Extracted — clomipramine: t1/2z 37.7 min, Css 340 micrograms, AUCSS 1.06e+03 micrograms.
+Css is defined as steady-state drug concentration and AUCSS as concentration–time area, but each is recorded in micrograms, a mass unit. The record came from the abstract alone, so reported summary statistics stood in for a fitted model. The half-life entry is assigned to clomipramine but its label names amitriptyline; the second reader also marked the compound and analyte as unknown and disagreed about the parameter entries. Extracted — clomipramine: t1/2z 37.7 min, Css 340 micrograms, AUCSS 1.06e+03 micrograms.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clomipramine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;beta-Amanitin&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/&quot;},{&quot;label&quot;:&quot;Bang_2022 \u00b7 2_mg_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_10_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_2_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_5_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_5_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_5_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Yang2024_reference&quot;,&quot;label&quot;:&quot;Yang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Yang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_10_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_2_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_5_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_5_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_5_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Yang2024_reference&quot;,&quot;label&quot;:&quot;Yang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Yang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # beta-Amanitin — `BetaAmanitin_Bang2022_2_mg_kg`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="beta-Amanitin" model-id="BetaAmanitin_Bang2022_2_mg_kg" status="extracted" stale="false" population="male ICR mice" measured-compound="beta-Amanitin" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="beta-Amanitin" model-id="BetaAmanitin_Bang2022_2_mg_kg" status="simulated" stale="false" population="male ICR mice" measured-compound="beta-Amanitin" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Bang YY, Song IS, Lee MS, Lim CH, Cho YY, Lee JY et al. Toxicokinetics of β-Amanitin in Mice and In Vitro Drug-Drug Interaction Potential. Pharmaceutics 14(4) (2022).
@@ -40,7 +38,7 @@ Bang YY, Song IS, Lee MS, Lim CH, Cho YY, Lee JY et al. Toxicokinetics of β-Ama
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +46,13 @@ Bang YY, Song IS, Lee MS, Lim CH, Cho YY, Lee JY et al. Toxicokinetics of β-Ama
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+A reported unit could not be converted (Fab), so that value has no SI equivalent.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -95,6 +99,21 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q56 | pass | [time] |  | ['Bang_2022_table_3:row1:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bang_2022_table_3:row4:col1'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=beta-Amanitin) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | skipped |  | 1.752 | non-numeric value |
+| T1_t_half_terminal | reference | skipped |  | 1.752 | non-numeric value |
+| T1_t_half_terminal | reference | skipped |  | 1.752 | non-numeric value |
+| T1_tmax | reference | skipped |  | 0.0481 | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

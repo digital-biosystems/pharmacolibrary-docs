@@ -4,11 +4,11 @@
 
 # baricitinib — `Baricitinib_Decker2024_jia_a`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:00 UTC (Rejected), but the paper was screened again on 2026-10-06 23:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because clearance and volume units were mislabeled as years, and structural parameters like bioavailability lacked values.
+> Baricitinib clearance and volume parameters were rejected due to a unit error listing them in years, and the model contained an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2024_jia_a" status="rejected" stale="true" population="pediatric patients with juvenile idiopathic arthritis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2024_jia_a" status="rejected" stale="false" population="pediatric patients with juvenile idiopathic arthritis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
 
 ## Citation
 Decker RL, Steven Ernest C, Radtke DB, Wang R, Araújo J, Keller SY et al. A population pharmacokinetic model using allometric scaling for baricitinib in patients with juvenile idiopathic arthritis. CPT: pharmacometrics & systems pharmacology 13(6):970–981 (2024).
@@ -44,7 +44,7 @@ Decker RL, Steven Ernest C, Radtke DB, Wang R, Araújo J, Keller SY et al. A pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.812). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.812). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Decker RL, Steven Ernest C, Radtke DB, Wang R, Araújo J, Keller SY et al. A pop
 
 ### Reviewer guidance
 
-**Record rejected because clearance and volume units were mislabeled as years, and structural parameters like bioavailability lacked values.**
+**Baricitinib clearance and volume parameters were rejected due to a unit error listing them in years, and the model contained an unreachable compartment.**
 
-Total clearance (4.87) and volume of distribution (27.5) were recorded with units of years, preventing conversion to standard units. Absolute bioavailability and intercompartmental clearance were missing values, so no values were extracted for the model. The missing intercompartmental clearance rendered a compartment unreachable in the three-compartment structure. Extracted — baricitinib: CL/F 4.87 years, CLR 3.12 L/h, CLNR 1.68 L/h, V/F 27.5 years, V1/F 21.7 L, V2/F 4.85 L, t1/2z 6.39 h, AUCSS 410 ng*h/mL, … (+1).
+Total clearance and bioavailability-adjusted volume of distribution are recorded with the unit 'years', which is dimensionally incorrect for these parameters. This unit error prevented conversion to SI values, causing the structural review to fail. Additionally, the model structure contained an unreachable compartment, and no value was extracted for the intercompartmental clearance. Extracted — baricitinib: CL/F 4.87 years, CLR 3.12 L/h, CLNR 1.68 L/h, V/F 27.5 years, V1/F 21.7 L, V2/F 4.85 L, t1/2z 6.39 h, AUCSS 410 ng*h/mL, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 2; it also differs on 2 more fields. That field does not shape the model.
 

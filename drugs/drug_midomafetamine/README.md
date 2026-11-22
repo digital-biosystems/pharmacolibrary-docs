@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Midomafetamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midomafetamine_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_chov2025_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_chov2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&quot;,&quot;label&quot;:&quot;Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&quot;,&quot;label&quot;:&quot;Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midomafetamine_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&quot;,&quot;label&quot;:&quot;Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&quot;,&quot;label&quot;:&quot;Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_chov2025_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_chov2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # Midomafetamine
 
@@ -26,40 +26,14 @@
 | midomafetamine | parent | 193.242 | C11H15NO2 | DrugBank | [1615](https://pubchem.ncbi.nlm.nih.gov/compound/1615) | Huestis_2025 |
 | MDA | metabolite | 179.219 | C10H13NO2 | PubChem | [1614](https://pubchem.ncbi.nlm.nih.gov/compound/1614) | Huestis_2025 |
 
-## Start here
-
-> **Hampsey_2026_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md?tab=Simulation) · [record](drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hampsey_2026 · CL</text><circle cx="481.6" cy="30.0" r="4" fill="#78909c"><title>Hampsey_2026 · CL: 6.81 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Šíchová_2025 · CL/F</text><circle cx="326.7" cy="46.0" r="4" fill="#ef6c00"><title>Šíchová_2025 · CL/F: 2.457 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hampsey_2026 · V</text><circle cx="468.6" cy="30.0" r="4" fill="#78909c"><title>Hampsey_2026 · V: 39.1 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Šíchová_2025 · V/F</text><circle cx="221.6" cy="46.0" r="4" fill="#ef6c00"><title>Šíchová_2025 · V/F: 1.515 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Hampsey_2026_reference](drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hampsey E et al., A systematic review of the pharmacokine…, Journal of psychopharmacolo… (2026) | [10.1177/02698811261453938](https://doi.org/10.1177/02698811261453938) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T6_deviations</sub> | [Šíchová_2025_reference](drugs/drug_midomafetamine/Midomafetamine_chov2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Šíchová K et al., Hexahydrocannabinol: pharmacokinetics,…, The international journal o… (2025) | [10.1093/ijnp/pyaf041](https://doi.org/10.1093/ijnp/pyaf041) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Hampsey_2026_reference](drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hampsey E et al., A systematic review of the pharmacokine…, Journal of psychopharmacolo… (2026) | [10.1177/02698811261453938](https://doi.org/10.1177/02698811261453938) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates](drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md) | ▶ model + simulator | 1-compartment, oral | 6 (+4 cov.) | Huestis MA et al., MDMA pharmacokinetics: A population and…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13282](https://doi.org/10.1002/psp4.13282) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T1_tmax</sub> | [↳ mdma_pharmacokinetic_parameters_and_random_effects_estimates_cv](drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md) | ▶ model + simulator | 1-compartment, oral | 3 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=midomafetamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| — | brain | `SLC6A4` negative modulator/unknown | DrugBank actor |
-| — | platelet | `SLC6A4` negative modulator/unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HTR2A (target), HTR2B (target), HTR2C (target), SLC18A2 (inhibitor), SLC6A2 (negative modulator), SLC6A2 (unknown), SLC6A3 (negative modulator), SLC6A3 (unknown).</sub>
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Šíchová_2025_reference](drugs/drug_midomafetamine/Midomafetamine_chov2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Šíchová K et al., Hexahydrocannabinol: pharmacokinetics,…, The international journal o… (2025) | [10.1093/ijnp/pyaf041](https://doi.org/10.1093/ijnp/pyaf041) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,13 +47,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-22 09:25 | 19:02 | 2/2/0 | 0/0/0 | 0/0/0 | 550,001/42,889 | einfracz / qwen3.8-27b | 18 | 4/14 | 18/0 | 0 |
+| 2026-10-22 09:25 | 19:02 | 0/4/0 | 0/0/0 | 0/0/0 | 550,001/42,889 | einfracz / qwen3.8-27b | 18 | 4/14 | 18/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 450 matched, 95 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

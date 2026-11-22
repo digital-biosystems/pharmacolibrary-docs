@@ -4,11 +4,11 @@
 
 # amrubicin — `Amrubicin_Makino2019_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-06 16:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The mean transit time parameter lacks a unit, preventing conversion to SI, causing the amrubicin model to be rejected.
+> Amrubicin model rejected for a dimension mismatch in a structural parameter, expected as a first-order rate constant but listed with L/h units.
 
-<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_base" status="rejected" stale="true" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_base" status="rejected" stale="false" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual optimal dose of amrubicin to prevent severe neutropenia in Japanese patients with lung cancer. Cancer science 110(11):3573–3583 (2019).
@@ -47,7 +47,7 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 
 ### Reviewer guidance
 
-**The mean transit time parameter lacks a unit, preventing conversion to SI, causing the amrubicin model to be rejected.**
+**Amrubicin model rejected for a dimension mismatch in a structural parameter, expected as a first-order rate constant but listed with L/h units.**
 
-The mean transit time of 157.0 was extracted without a specified unit, making it impossible to convert to standard units. This missing unit prevented the model from being validated. The record also lists a metabolite volume of 1032.2 L and formation clearance of 19.4 L/h. Extracted — amrubicin: V2 10.1 L, Q 9.1 L/h, V3 32.7 L, Q2 50.5 L/h, MTT 157; amrubicinol: V 1.03e+03 L, CLfm 19.4 L/h, CL 97 L/h, kfm 0.1 L/h.
+The findings report a unit conflict for a parameter that should have dimensions of inverse time, yet the record shows units of L/h. Additionally, a reported unit in the record could not be converted to standard SI units, leaving the parameter without a compatible value for the model structure. Extracted — amrubicin: V2 10.1 L, Q 9.1 L/h, V3 32.7 L, Q2 50.5 L/h, MTT 157; amrubicinol: V 1.03e+03 L, CLfm 19.4 L/h, CL 97 L/h, kfm 0.1 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has amrubicin and amrubicinol, the second reading amrubicin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

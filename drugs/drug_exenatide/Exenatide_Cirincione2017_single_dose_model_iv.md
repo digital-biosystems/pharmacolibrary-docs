@@ -38,7 +38,7 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.125). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.125). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Choi_2025) cannot stand in for this paper's evidence. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — exenatide: kabs 77.9 1/day, Fab 83 %, CL 0.059 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q1: this record has 567, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 567, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -90,19 +90,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.125 (1/8 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.125 (1/8 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q1]` | 567 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q22]` | 110 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q306]` | 0.722 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q338]` | 0.0872 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q60]` |  | 2.4 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q61]` | 7.03 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q66]` | 0.037 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q1]` | 567 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 110 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q306]` | 0.722 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q338]` | 0.0872 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q60]` |  | 2.4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 7.03 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q66]` | 0.037 |  | only_one_extracted |
 
 </details>
 

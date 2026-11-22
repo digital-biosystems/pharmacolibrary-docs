@@ -250,6 +250,7 @@ The record specifies 17 parameters, but only 9 were processed with valid SI valu
 | T3_param_coverage |  | fail | 17 scholar param(s) emitted or defaulted | 9 covered | neither emitted nor in defaulted[]: ['V2', 'kabs', 'tlag', 'V1', 'V2', 'V1', 'V2', 'kel'] |
 | T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 | T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 9 |  | no simulated metric for this quantity (single reference sim) |

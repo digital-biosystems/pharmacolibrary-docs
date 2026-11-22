@@ -5,11 +5,11 @@
 
 # raltegravir — `Raltegravir_Rizk2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 16:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Raltegravir record lacks volume and clearance, containing only summary exposure statistics rather than a compartmental model.
+> Raltegravir record lacks distribution volume and clearance, failing to form a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Rizk2015_reference" status="rejected" stale="true" population="HIV-infected children 4 weeks to 18 years of age" measured-compound="raltegravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Rizk2015_reference" status="rejected" stale="false" population="HIV-infected children 4 weeks to 18 years of age" measured-compound="raltegravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rizk ML, Du L, Bennetto-Hood C, Wenning L, Teppler H, Homony B et al. Population pharmacokinetic analysis of raltegravir pediatric formulations in HIV-infected children 4 weeks to 18 years of age. Journal of clinical pharmacology 55(7):748–756 (2015).
@@ -36,7 +36,7 @@ Rizk ML, Du L, Bennetto-Hood C, Wenning L, Teppler H, Homony B et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Rizk ML, Du L, Bennetto-Hood C, Wenning L, Teppler H, Homony B et al. Population
 
 ### Reviewer guidance
 
-**Raltegravir record lacks volume and clearance, containing only summary exposure statistics rather than a compartmental model.**
+**Raltegravir record lacks distribution volume and clearance, failing to form a compartmental population PK model.**
 
-The record includes AUC of 18.0 mg·h/L and C12h of 71 nM, but lacks any distribution volume or clearance parameter. These values are summary statistics from the abstract, not fitted population parameters. Consequently, the model structure cannot represent drug elimination or distribution. Extracted — raltegravir: AUCt 18 mg·h/L, Ct 71 nM.
+The extracted parameters consist only of summary exposure metrics: area under the curve (18.0 mg·h/L) and concentration at 12 hours (71 nM). No distribution volume or elimination clearance values are present in the record. Consequently, the model structure cannot be defined as a compartmental population pharmacokinetic model. Extracted — raltegravir: AUCt 18 mg·h/L, Ct 71 nM.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has raltegravir, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

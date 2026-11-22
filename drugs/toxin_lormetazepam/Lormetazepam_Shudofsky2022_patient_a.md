@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Lormetazepam&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/&quot;},{&quot;label&quot;:&quot;Shudofsky_2022 \u00b7 patient_a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lormetazepam_Bianconi2022_reference&quot;,&quot;label&quot;:&quot;Bianconi_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Bianconi2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lormetazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lormetazepam_Kurowski1982_reference&quot;,&quot;label&quot;:&quot;Kurowski_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lormetazepam_Bianconi2022_reference&quot;,&quot;label&quot;:&quot;Bianconi_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Bianconi2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lormetazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lormetazepam_Kurowski1982_reference&quot;,&quot;label&quot;:&quot;Kurowski_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lormetazepam/Lormetazepam_Kurowski1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The Lormetazepam metabolite is orphaned with zero compartments, preventing model simulation, while extraneous Midazolam parameters are included in the record.
 
 <div class="pk-model-meta" hidden drug="Lormetazepam" model-id="Lormetazepam_Shudofsky2022_patient_a" status="rejected" stale="false" population="critically ill patients with COVID-19-associated acute respiratory distress syndrome (ARDS) and receiving renal replacement therapy" measured-compound="Lormetazepam" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,7 +51,13 @@ Shudofsky KN, Janssen PKC, Foudraine N, le Noble JLML. Clearance of Lormetazepam
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The Lormetazepam metabolite is orphaned with zero compartments, preventing model simulation, while extraneous Midazolam parameters are included in the record.**
+
+The metabolite Lormetazepam glucuronide is recorded with zero compartments (n_cmt: 0), rendering it unreachable from the dose pathway. Additionally, the record contains parameters for Midazolam, its metabolites, and their clearances, which are irrelevant to the drug of interest, lormetazepam, likely due to data misattribution. Extracted — lormetazepam: V 323 L, CL 16.5 L/h, CL_CRRT 0.4 L/h, kabs 6.4 h−1, tlag 30 minutes; Midazolam: V 97 L, CL 13.3 L/h, CL_CRRT 0.09 L/h; Midazolam glucuronide: CL_CRRT 2.08 L/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

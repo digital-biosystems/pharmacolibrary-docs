@@ -36,7 +36,7 @@ Roberts JK, Stockmann C, Ward RM, Beachy J, Baserga MC, Spigarelli MG et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Roberts JK, Stockmann C, Ward RM, Beachy J, Baserga MC, Spigarelli MG et al. Pop
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is darbepoetin alfa's own; they describe erythropoietin.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,18 +86,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance]` |  | 0.0465 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[darbepoetin alfa clearance]` | 0.0465 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[darbepoetin alfa volume of distribution]` | 1.58 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 1.58 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | darbepoetin_alfa | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | erythropoietin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 0.0465 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[darbepoetin alfa clearance]` | 0.0465 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[darbepoetin alfa volume of distribution]` | 1.58 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 1.58 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | darbepoetin_alfa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | erythropoietin | unknown | mismatch |
 
 </details>
 
@@ -131,6 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

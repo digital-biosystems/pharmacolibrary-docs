@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;prednisone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/&quot;},{&quot;label&quot;:&quot;Bouazza_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisone — `Prednisone_Bouazza2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_Bouazza2025_reference" status="simulated" stale="false" population="systemic lupus erythematosus patients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
+> Prednisolone apparent clearance units are non-standard, and the second reader disputed the parameter identification.
+
+<div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_Bouazza2025_reference" status="needs_review" stale="false" population="systemic lupus erythematosus patients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bouazza N, Semeraro M, Lui G, Froelicher-Bournaud L, Choupeaux L, Treluyer JM et al. Population pharmacokinetic modelling of prednisolone in systemic lupus erythematosus patients: Analysis of exposure and disease activity. British journal of clinical pharmacology 91(10):2854–2864 (2025).
@@ -15,7 +17,7 @@ Bouazza N, Semeraro M, Lui G, Froelicher-Bournaud L, Choupeaux L, Treluyer JM et
 
 ## Population and dosing
 
-**Population:** systemic lupus erythematosus patients · condition systemic lupus erythematosus · age group mixed · n = &gt;=66.
+**Population:** systemic lupus erythematosus patients · condition systemic lupus erythematosus · age group mixed.
 
 **Dosed compound ≠ measured compound:** dosed prednisone, measured prednisolone.
 
@@ -29,6 +31,8 @@ Bouazza N, Semeraro M, Lui G, Froelicher-Bournaud L, Choupeaux L, Treluyer JM et
 <figure class="pk-models-diagram"><img src="drugs/drug_prednisone/Prednisone_Bouazza2025_reference/Prednisone_Bouazza2025_reference.svg" alt="Prednisone_Bouazza2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | Tlag (h) | tlag | 0.17 | h | 2 |
@@ -38,7 +42,7 @@ Bouazza N, Semeraro M, Lui G, Froelicher-Bournaud L, Choupeaux L, Treluyer JM et
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ Bouazza N, Semeraro M, Lui G, Froelicher-Bournaud L, Choupeaux L, Treluyer JM et
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Prednisolone apparent clearance units are non-standard, and the second reader disputed the parameter identification.**
 
-None of the extracted parameters is prednisone's own; they describe prednisolone.
+The apparent clearance parameter is reported in L.h−1.70 kg−1, a unit format that prevented standard conversion and validation. The second reader disagreed on the identification of the apparent clearance parameter, flagging a mismatch in its classification. The record was held for review due to this dispute and the unusual unit specification. Extracted — prednisolone: tlag 0.17 h, kabs 1.19 h−1, CLm/F 54.3 L.h−1.70 kg−1, V/F 235 L.70 kg−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clu/f].parameter_id`: this record has Q351, the second reading Q27. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -135,15 +139,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=prednisolone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=prednisolone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.929, 0 of 1 reader(s) agree | 0.929 | cross-check disputed by a second reader: verdict disputed, agreement 0.929, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

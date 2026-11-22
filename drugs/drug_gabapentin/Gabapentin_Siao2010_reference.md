@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> Apparent parameters for gabapentin in cats were extracted from the abstract alone, relying on an assumed bioavailability of one.
+> Gabapentin pharmacokinetic parameters extracted solely from the abstract were rejected because a second reader could not verify them, resulting in disputed agreement of 0.176.
 
 <div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Siao2010_reference" status="needs_review" stale="false" population="healthy adult female cats" measured-compound="gabapentin" parameterization="apparent" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Siao KT, Pypendop BH, Ilkiw JE. Pharmacokinetics of gabapentin in cats. American
 
 ### Reviewer guidance
 
-**Apparent parameters for gabapentin in cats were extracted from the abstract alone, relying on an assumed bioavailability of one.**
+**Gabapentin pharmacokinetic parameters extracted solely from the abstract were rejected because a second reader could not verify them, resulting in disputed agreement of 0.176.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The model builder assumed a parameterization that forces absolute and metabolic bioavailability to one, yet the record also lists systemic availability as 88.7%. A second reader disagreed with the apparent parameterization and found no values for the central volume, steady-state volume, clearance, absorption rate constant, or half-life. Extracted — gabapentin: V/F 90.4 mL/kg, Vss 650 mL/kg, CL 3 mL/min/kg, t1/2z 170 minutes, Fab 88.7 %, kabs 5.24 1/hr, tlag 0.45 hr.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disagreed on the dose compound, primary analyte, and all reported parameters, assigning null values. Specifically, clearance, central volume, steady-state volume, absorption rate, lag time, half-life, and bioavailability were all marked null by the second reader. Consequently, the cross-check was disputed with an agreement of 0.176 and zero reader agreement. Extracted — gabapentin: V/F 90.4 mL/kg, Vss 650 mL/kg, CL 3 mL/min/kg, t1/2z 170 minutes, Fab 88.7 %, kabs 5.24 1/hr, tlag 0.45 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gabapentin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -96,6 +96,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Adrian_2018's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Adrian_2018's review values (primary lacked it)
+- derived CL/F=1.54808 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Siao_2010_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -157,15 +158,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=gabapentin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=gabapentin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.176, 0 of 1 reader(s) agree | 0.176 | cross-check disputed by a second reader: verdict disputed, agreement 0.176, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -204,7 +207,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0018 | kg |
-| input | model | `Cl` | 3.5e-06 | m3/s |
+| input | model | `Cl` | 4.3e-07 | m3/s |
 | input | model | `VdPerKg` | 9.04e-05 | m3/kg |
 | input | model | `ka` | 0.001456 | 1/s |
 | input | subject | `weight` | 70 | kg |

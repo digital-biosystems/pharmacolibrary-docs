@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Nifedipine clearance of 1.35 mL/min is physiologically implausible because the unit could not be converted to SI.
+> Nifedipine clearance of 1.35 mL/min is physiologically implausible for rats, indicating a likely unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_Kiriyama2024_reference" status="rejected" stale="false" population="spontaneously hypertensive rats" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,9 +57,9 @@ Kiriyama A, Kimura S, Yamashita S. Exploring the multiple effects of nifedipine 
 
 ### Reviewer guidance
 
-**Nifedipine clearance of 1.35 mL/min is physiologically implausible because the unit could not be converted to SI.**
+**Nifedipine clearance of 1.35 mL/min is physiologically implausible for rats, indicating a likely unit or scale extraction error.**
 
-The clearance value falls outside the physiological window for spontaneously hypertensive rats, indicating a unit/scale extraction error. The reported unit was not recognized, so the parameter remained in its original form rather than being standardized. A second reader could not confirm the AUC, clearance, or rate constant values as extracted. Extracted — nifedipine: V 54.9 L, kel 0.0218 1/min, k12 0.0121 1/min, k21 0.0165 1/min, AUC 237 ng*min/mL, t1/2z 69 min, CL 1.35 mL/min, Vss 162 mL, … (+1).
+The total clearance value of 1.35 mL/min is flagged as outside the physiological window, suggesting an implausible magnitude. A reported parameter unit could not be converted to standard SI units, preventing accurate quantitative review. A second reader disputed the dose compound, identifying captopril alongside nifedipine. Extracted — nifedipine: V 54.9 L, kel 0.0218 1/min, k12 0.0121 1/min, k21 0.0165 1/min, AUC 237 ng*min/mL, t1/2z 69 min, CL 1.35 mL/min, Vss 162 mL, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nifedipine, the second reading nifedipine and captopril; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

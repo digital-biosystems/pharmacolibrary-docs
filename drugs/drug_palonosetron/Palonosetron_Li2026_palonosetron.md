@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> All six extracted pharmacokinetic parameters describe fosrolapitant, leaving palonosetron's clearance and volume of distribution without values, so the model was held back.
+> Palonosetron clearance and volume of distribution lacked estimates; only fosrolapitant CL 7.92 L/h and V 839.62 L were reported, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="palonosetron" model-id="Palonosetron_Li2026_palonosetron" status="model_quarantined" stale="false" population="Chinese subjects with impaired or normal liver function" measured-compound="fosrolapitant and rolapitant" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -16,7 +16,7 @@ Li Q, Mai J, Wu M, Zhang H, Yang X, Huang Y et al. Pharmacokinetics, safety, and
 
 ## Population and dosing
 
-**Population:** Chinese subjects with impaired or normal liver function · condition hepatic impairment · age group adult · n = &gt;=16.
+**Population:** Chinese subjects with impaired or normal liver function · condition hepatic impairment · age group adult.
 
 **Dosing:** 0.25, 218 mg, iv, single.
 
@@ -53,13 +53,13 @@ Li Q, Mai J, Wu M, Zhang H, Yang X, Huang Y et al. Pharmacokinetics, safety, and
 
 ### Reviewer guidance
 
-**All six extracted pharmacokinetic parameters describe fosrolapitant, leaving palonosetron's clearance and volume of distribution without values, so the model was held back.**
+**Palonosetron clearance and volume of distribution lacked estimates; only fosrolapitant CL 7.92 L/h and V 839.62 L were reported, so the record was held back.**
 
-The record lists clearance, volume of distribution, AUC, and half-life specifically for fosrolapitant, the prodrug, while the drug of interest is palonosetron. Consequently, the model builder used library placeholders for palonosetron's clearance and volume of distribution instead of fitted estimates. Additionally, the second reader disagreed on the primary analyte, identifying only fosrolapitant rather than both fosrolapitant and rolapitant. Extracted — fosrolapitant: Cmax 0.67 ng/mL, AUCt 31.2 h*ng/mL, AUC∞ 34.9 h*ng/mL, t1/2z 81.8 hour, V 840 L, CL 7.92 L/h.
+No value for palonosetron's clearance and volume of distribution—all 6 extracted parameters describe fosrolapitant, not palonosetron. The model was built, but palonosetron's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The reported parent–metabolite structure was represented as a single-compartment model, clearance and distribution volume were defaulted, and a reported unit could not be converted to SI. A second reader disputed the record (agreement 0.062; 0 of 1 reader agreed), differing on the dose compound, primary analyte, metabolism link, and extracted summary parameters. Extracted — fosrolapitant: Cmax 0.67 ng/mL, AUCt 31.2 h*ng/mL, AUC∞ 34.9 h*ng/mL, t1/2z 81.8 hour, V 840 L, CL 7.92 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has Ritanine (fosrolapitant and palonosetron), the second reading fosrolapitant; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -155,26 +155,27 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_shared_parameters |  | pass | 6 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 1.27 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.61 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.74 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 0.42 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 0.64 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 81.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 44.32 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 0.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.00–1.25 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 240 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 192 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_shared_parameters |  | pass | 6 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.062, 0 of 1 reader(s) agree | 0.062 | cross-check disputed by a second reader: verdict disputed, agreement 0.062, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 1.27 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.61 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.74 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 0.42 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 0.64 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 81.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 44.32 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 0.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1.00–1.25 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 240 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 192 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -192,30 +193,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_matlab.zip" download>Palonosetron_Li2026_palonosetron_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_matlab_simbio.zip" download>Palonosetron_Li2026_palonosetron_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_sbml.zip" download>Palonosetron_Li2026_palonosetron_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_cellml.zip" download>Palonosetron_Li2026_palonosetron_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Li Q, Mai J, Wu M, Zhang H, Yang X, Huang Y et al. Pharmacokinetics, safety, and population pharmacokinetic profiles of Ritanine. Frontiers in pharmacology 17:1833170 (2026). [doi:10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170)
-
-**This record:** Pharmacolibrary, model `Palonosetron_Li2026_palonosetron`. <https://pharmacolibrary.github.io/#/drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron>
-
-```bibtex
-@misc{pharmacolibrary_PalonosetronLi2026palonosetron,
-  title  = {{Pharmacolibrary model Palonosetron_Li2026_palonosetron}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron},
-  note   = {Parameters from doi:10.3389/fphar.2026.1833170},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

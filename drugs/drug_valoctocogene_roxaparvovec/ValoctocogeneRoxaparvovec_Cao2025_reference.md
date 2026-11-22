@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance 0.011 L/h/kg and volumes 3.23 and 14.2 L/h are physiologically implausible, indicating unit extraction errors.
+> Valoctocogene roxaparvovec volumes were recorded as 3.23 L/h and 14.2 L/h, making them incompatible with clearance units.
 
 <div class="pk-model-meta" hidden drug="valoctocogene roxaparvovec" model-id="ValoctocogeneRoxaparvovec_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="valoctocogene_roxaparvovec" parameterization="mechanistic" topology="2C"></div>
 
@@ -39,7 +39,7 @@ Cao M, Katial R, Liu Y, Lu X, Gu Q, Chen C et al. Safety, efficacy, and immunoge
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,11 @@ Cao M, Katial R, Liu Y, Lu X, Gu Q, Chen C et al. Safety, efficacy, and immunoge
 
 ### Reviewer guidance
 
-**Clearance 0.011 L/h/kg and volumes 3.23 and 14.2 L/h are physiologically implausible, indicating unit extraction errors.**
+**Valoctocogene roxaparvovec volumes were recorded as 3.23 L/h and 14.2 L/h, making them incompatible with clearance units.**
 
-The record lists clearance as 0.011 L/h/kg, which falls outside the expected physiological window. Volumes of distribution for the central and peripheral compartments are recorded as 3.23 and 14.2, respectively, with the unit L/h, which is dimensionally inconsistent. A second reader could not extract values for the intercompartmental clearance or either volume, and disputed the two-compartment topology structure. Extracted — valoctocogene roxaparvovec: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+The record assigns volume of distribution units (L/h) to parameters defined as central and peripheral compartment volumes. Specifically, the central volume is 3.23 and the peripheral volume is 14.2, both listed with flow units. A second reader could not extract values for these parameters and identified the model structure as a single-compartment model rather than two. Extracted — valoctocogene roxaparvovec: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Q: this record has 0.591, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 0.591, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -84,16 +84,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (10/14 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.714 (10/14 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
-| `gpt-oss:120b` | `values[Q30]` | 0.591 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q63]` | 3.23 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q64]` | 14.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss-120b` | `values[Q30]` | 0.591 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 3.23 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` | 14.2 |  | only_one_extracted |
 
 </details>
 

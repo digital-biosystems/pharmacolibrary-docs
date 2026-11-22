@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's time of the peak (tmax) (paper 2.4, model 1.43).
+> Cobimetinib model simulated peak time of 1.43 hours missed the reported 2.4 hours by ratio 0.5963.
 
 <div class="pk-model-meta" hidden drug="cobimetinib" model-id="Cobimetinib_Duong2026_model_pk_h" status="needs_review" stale="false" population="in silico tumor-cell populations" measured-compound="cobimetinib" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Duong NH, Do TN, Nguyen TT, Phan KQ, Nguyen LT. Cellular Heterogeneity in Drug U
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's time of the peak (tmax) (paper 2.4, model 1.43).**
+**Cobimetinib model simulated peak time of 1.43 hours missed the reported 2.4 hours by ratio 0.5963.**
 
-Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — cobimetinib: V/F 806 L, kabs 2 h⁻1, CL 35.5 mL/min/kg.
+The model predicted the time of the peak 1.43 hours, differing from the reported 2.4 hours. This mismatch indicates the absorption kinetics defined by the 2.0 h⁻¹ rate constant do not match the observed profile. A second reader also disputed the apparent parameterization and the absence of inter-compartmental clearances, with agreement at 0.273. Extracted — cobimetinib: V/F 806 L, kabs 2 h⁻1, CL 35.5 mL/min/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -153,6 +153,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
 | T1_tmax | reference | fail | 2.4 | 1.431 | 0.5963 | h→SI vs simulated h |
 
 <details class="legend">

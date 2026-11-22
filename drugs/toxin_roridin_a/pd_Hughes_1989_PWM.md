@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Roridin A was administered to assess its effect on PWM-stimulation of splenic lymphocytes, but the specific pharmacodynamic mechanism (e.g., inhibition of production/elimination or direct Emax) is not specified in the provided text. Consequently, key potency and rate parameters (IC50, EC50, kin, kout, etc.) with units are not available.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Hughes_1989`
 - **model family:** `unknown`
 - **driver:** `dose_only`

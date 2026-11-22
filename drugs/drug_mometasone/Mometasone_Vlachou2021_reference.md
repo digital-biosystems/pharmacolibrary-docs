@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D07A&quot;,&quot;href&quot;:&quot;atc/D07A.md&quot;},{&quot;label&quot;:&quot;mometasone&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/&quot;},{&quot;label&quot;:&quot;Vlachou_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mometasone_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/Mometasone_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Llanos_Paez_2023_FEV1&quot;,&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Llanos_Paez_2023_FEV1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2002_constitutive_human_eosinophil_apoptosis&quot;,&quot;label&quot;:&quot;Zhang_2002 \u00b7 constitutive human eosinophil apoptosis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zhang_2002_constitutive_human_eosinophil_apoptosis.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2002_human_neutrophil_apoptosis&quot;,&quot;label&quot;:&quot;Zhang_2002 \u00b7 human neutrophil apoptosis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zhang_2002_human_neutrophil_apoptosis.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zvidzayi_2021_AUEC&quot;,&quot;label&quot;:&quot;Zvidzayi_2021 \u00b7 AUEC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zvidzayi_2021_AUEC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mometasone_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/Mometasone_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Llanos_Paez_2023_FEV1&quot;,&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Llanos_Paez_2023_FEV1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2002_constitutive_human_eosinophil_apoptosis&quot;,&quot;label&quot;:&quot;Zhang_2002 \u00b7 constitutive human eosinophil apoptosis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zhang_2002_constitutive_human_eosinophil_apoptosis.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2002_human_neutrophil_apoptosis&quot;,&quot;label&quot;:&quot;Zhang_2002 \u00b7 human neutrophil apoptosis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zhang_2002_human_neutrophil_apoptosis.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zvidzayi_2021_AUEC&quot;,&quot;label&quot;:&quot;Zvidzayi_2021 \u00b7 AUEC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mometasone/pd_Zvidzayi_2021_AUEC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mometasone — `Mometasone_Vlachou2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Mometasone record was held back due to missing lag time and apparent parameterization assumptions.
+> Mometasone CL/F of 370.0 ml/min was refused because the cited paper studies other drugs and mentions mometasone only in passing.
 
-<div class="pk-model-meta" hidden drug="mometasone" model-id="Mometasone_Vlachou2021_reference" status="needs_review" stale="false" population="" measured-compound="mometasone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mometasone" model-id="Mometasone_Vlachou2021_reference" status="rejected" stale="false" population="" measured-compound="mometasone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction of Bioequivalence. Materials (Basel, Switzerland) 14(3):555 (2021).
@@ -29,7 +29,7 @@ Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction
 <figure class="pk-models-diagram"><img src="drugs/drug_mometasone/Mometasone_Vlachou2021_reference/Mometasone_Vlachou2021_reference.svg" alt="Mometasone_Vlachou2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +39,7 @@ Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction
 
 ### Reviewer guidance
 
-**Mometasone record was held back due to missing lag time and apparent parameterization assumptions.**
+**Mometasone CL/F of 370.0 ml/min was refused because the cited paper studies other drugs and mentions mometasone only in passing.**
 
-The absorption delay time was not explicitly estimated in the source, leaving it at a placeholder value rather than a fitted parameter. The model relies on an apparent parameterization with bioavailability assumed to be one, meaning the reported clearance and volume are not corrected for absorption losses. Additionally, the second reader disputed the extracted bioavailability value, finding it to be null instead of the recorded 0.28, highlighting uncertainty in the data interpretation. Extracted — mometasone: CL/F 370 ml/min, V1/F 1.3e+03 ml, kabs 0.0142 min−1.
+The paper focuses on amlodipine, irbesartan, and hydrochlorothiazide, with mometasone mentioned only in passing. The record lists mometasone CL/F as 370.0 ml/min, V1/F as 1300.0 ml, and kabs as 0.01417 min−1. The model builder defaulted Tlag and assumed F=1 and Fm=1, with no molar correction. Extracted — mometasone: CL/F 370 ml/min, V1/F 1.3e+03 ml, kabs 0.0142 min−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q47: this record has 0.28, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -121,15 +121,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=mometasone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | mometasone (or metabolite) | paper about another drug |  | paper subject is not mometasone: the paper is about another drug; this one is a co-medication or covariate: The study focuses on the pharmacokinetics of amlodipine, irbesartan, and hydrochlorothiazide, with mometasone only mentioned in passing as an example of an inha |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=mometasone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -141,61 +142,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mometasone/Mometasone_Vlachou2021_reference/Mometasone_Vlachou2021_reference_modelica.zip" download>Mometasone_Vlachou2021_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mometasone/Mometasone_Vlachou2021_reference/Mometasone_Vlachou2021_reference_fmi.zip" download>Mometasone_Vlachou2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mometasone/Mometasone_Vlachou2021_reference/Mometasone_Vlachou2021_reference_matlab.zip" download>Mometasone_Vlachou2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mometasone/Mometasone_Vlachou2021_reference/Mometasone_Vlachou2021_reference_matlab_simbio.zip" download>Mometasone_Vlachou2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mometasone/Mometasone_Vlachou2021_reference/Mometasone_Vlachou2021_reference_sbml.zip" download>Mometasone_Vlachou2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mometasone/Mometasone_Vlachou2021_reference/Mometasone_Vlachou2021_reference_cellml.zip" download>Mometasone_Vlachou2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4274 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 6.167e-06 | m3/s |
-| input | model | `VdPerKg` | 1.857e-05 | m3/kg |
-| input | model | `ka` | 0.0002362 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction of Bioequivalence. Materials (Basel, Switzerland) 14(3):555 (2021). [doi:10.3390/ma14030555](https://doi.org/10.3390/ma14030555)
-
-**This record:** Pharmacolibrary, model `Mometasone_Vlachou2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_mometasone/Mometasone_Vlachou2021_reference>
-
-```bibtex
-@misc{pharmacolibrary_MometasoneVlachou2021reference,
-  title  = {{Pharmacolibrary model Mometasone_Vlachou2021_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_mometasone/Mometasone_Vlachou2021_reference},
-  note   = {Parameters from doi:10.3390/ma14030555},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -40,27 +40,16 @@ Ethosuximide is a succinimide antiepileptic drug primarily used to treat childho
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: unreported model parameter default(s): F</sub> | [Diezi_2023_final_model](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_final_model.md) | ▶ model + simulator | 2-compartment, oral | 6 | Diezi L et al., An innovative ethosuximide granule form…, Pharmacology research & per… (2023) | [10.1002/prp2.1032](https://doi.org/10.1002/prp2.1032) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T6_deviations</sub> | [↳ granules_a](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_granules_a.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T6_deviations</sub> | [↳ granules_b](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_granules_b.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T6_deviations</sub> | [↳ syrup_zarontin_b](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_syrup_zarontin_b.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
-| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | — | 1-compartment (no model) | 4 | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub> | [↳ granules_a](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_granules_a.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub> | [↳ granules_b](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_granules_b.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub> | [↳ syrup_zarontin_b](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_syrup_zarontin_b.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | — | 1-compartment (no model) | 4 | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Todorovic_1998_T_current](drugs/drug_ethosuximide/pd_Todorovic_1998_T_current.md) | low-voltage-activated (LVA) Ca2+ current ← ethosuximide · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Todorovic SM et al., Pharmacological properties of T-type Ca…, Journal of neurophysiology (1998) | [10.1152/jn.1998.79.1.240](https://doi.org/10.1152/jn.1998.79.1.240) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ethosuximide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2E1` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CACNA1G (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,7 +69,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 131 matched, 80 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 5  ·  rejected 0  ·  stale 1
+- **records:** 5  ·  extracted 0  ·  needs review 5  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

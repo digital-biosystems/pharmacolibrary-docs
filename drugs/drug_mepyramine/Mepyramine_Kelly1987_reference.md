@@ -4,11 +4,11 @@
 
 # mepyramine — `Mepyramine_Kelly1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 14:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="mepyramine" model-id="Mepyramine_Kelly1987_reference" status="needs_review" stale="true" population="adult male Fischer-344 rats" measured-compound="pyrilamine (mepyramine)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mepyramine" model-id="Mepyramine_Kelly1987_reference" status="needs_review" stale="false" population="adult male Fischer-344 rats" measured-compound="pyrilamine (mepyramine)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kelly DW, Slikker W. The metabolism and elimination of pyrilamine maleate in the rat. Drug metabolism and disposition: the biological fate of chemicals 15(4):460–465 (1987).
@@ -36,7 +36,7 @@ Kelly DW, Slikker W. The metabolism and elimination of pyrilamine maleate in the
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Kelly DW, Slikker W. The metabolism and elimination of pyrilamine maleate in the
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mepyramine's own; they describe pyrilamine (mepyramine).
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mepyramine's own; they describe pyrilamine (mepyramine). Extracted — pyrilamine (mepyramine): t1/2z 2.3 hr.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has pyrilamine (mepyramine), the second reading pyrilamine maleate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

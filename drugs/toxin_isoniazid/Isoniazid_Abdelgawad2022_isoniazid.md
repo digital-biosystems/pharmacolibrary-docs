@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Isoniazid&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/&quot;},{&quot;label&quot;:&quot;Abdelgawad_2022 \u00b7 isoniazid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isoniazid_Courtney2026_reference&quot;,&quot;label&quot;:&quot;Courtney_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Courtney2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Yunivita2024_acetylator_phenotypea_non_slow&quot;,&quot;label&quot;:&quot;Yunivita_2024_acetylator_phenotypea_non_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_non_slow.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Yunivita2024_acetylator_phenotypea_slow&quot;,&quot;label&quot;:&quot;Yunivita_2024_acetylator_phenotypea_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_slow.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Amaeze2023_reference&quot;,&quot;label&quot;:&quot;Amaeze_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Amaeze2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isoniazid_Courtney2026_reference&quot;,&quot;label&quot;:&quot;Courtney_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Courtney2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Amaeze2023_reference&quot;,&quot;label&quot;:&quot;Amaeze_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Amaeze2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Yunivita2024_acetylator_phenotypea_non_slow&quot;,&quot;label&quot;:&quot;Yunivita_2024_acetylator_phenotypea_non_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_non_slow.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isoniazid_Yunivita2024_acetylator_phenotypea_slow&quot;,&quot;label&quot;:&quot;Yunivita_2024_acetylator_phenotypea_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isoniazid/Isoniazid_Yunivita2024_acetylator_phenotypea_slow.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Isoniazid — `Isoniazid_Abdelgawad2022_isoniazid`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Isoniazid" model-id="Isoniazid_Abdelgawad2022_isoniazid" status="extracted" stale="false" population="hospitalized TB/HIV patients and outpatients with TB" measured-compound="isoniazid" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Isoniazid" model-id="Isoniazid_Abdelgawad2022_isoniazid" status="not_simulated" stale="false" population="hospitalized TB/HIV patients and outpatients with TB" measured-compound="isoniazid" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Abdelgawad N, Chirehwa M, Schutz C, Barr D, Ward A, Janssen S et al. Pharmacokinetics of antitubercular drugs in patients hospitalized with HIV-associated tuberculosis: a population modeling analysis. Wellcome open research 7:72 (2022).
@@ -29,6 +27,8 @@ Abdelgawad N, Chirehwa M, Schutz C, Barr D, Ward A, Janssen S et al. Pharmacokin
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | Clearance of fast metabolizers (L/h) | CL | 25.5 | L/h | None (None% RSE) |
@@ -42,9 +42,13 @@ Abdelgawad N, Chirehwa M, Schutz C, Barr D, Ward A, Janssen S et al. Pharmacokin
 | Median (1 st - 3 rd Quartile) / C max (mg/L) / Outpatients | Cmax | 3.62 | mg/L |  |
 | Median (1 st - 3 rd Quartile) / AUC 0-24h (mg.h/L) / Outpatients | AUC | 13.4 | mg.h/L |  |
 
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +56,13 @@ Abdelgawad N, Chirehwa M, Schutz C, Barr D, Ward A, Janssen S et al. Pharmacokin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Record refused: isoniazid volume and absorption rate missing, bioavailability unit unconvertible; covariate scenarios untested despite slow acetylator clearance effects.**
+
+The record defines covariate effects for isoniazid clearance distinguishing fast and slow metabolizers, but these scenarios were not simulated. Volume of distribution for the peripheral compartment (30.7 L) and absorption rate constant (2.43 h^-1) were neither extracted nor defaulted, while the bioavailability percentage unit could not be converted to SI. This leaves the model structurally incomplete with unexercised key metabolic distinctions. Extracted — isoniazid: CL 25.5 L/h, V 59 L, Q 1.43 L/h, V2 30.7 L, kabs 2.43 h -1, MTT 0.442 h, n_transit 8, Fab 100 %, … (+2).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -131,6 +141,16 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C9_phys_window_Q22 | pass | clearance within physiological range | 25.5 L/h | ['T3:row3:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 59 L | ['T3:row6:col2'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 30.7 L | ['T3:row8:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2', 'kabs'] |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>

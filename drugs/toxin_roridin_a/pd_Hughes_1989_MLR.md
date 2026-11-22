@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes the effect of Roridin A dose on the Mixed Lymphocyte Reaction (MLR), but does not specify the pharmacodynamic mechanism, such as Emax, IC50, or rate constants.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Hughes_1989`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -15,7 +15,7 @@ Ivaturi V, Dvorak CC, Chan D, Liu T, Cowan MJ, Wahlstrom J et al. Pharmacokineti
 
 ## Population and dosing
 
-**Population:** pediatric hematopoietic cell transplant recipients · condition malignant and nonmalignant disorders · age group mixed · n = 133.
+**Population:** pediatric hematopoietic cell transplant recipients · condition malignant and nonmalignant disorders · age group mixed.
 
 **Dosing:** 40 mg/m2, iv, multiple, every 24 h.
 
@@ -55,9 +55,9 @@ Ivaturi V, Dvorak CC, Chan D, Liu T, Cowan MJ, Wahlstrom J et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**The fludarabine model was held because the covariate effect on clearance was not simulated and the central volume parameter was missing.**
+**The fludarabine model record was not simulated, and central volume of distribution was missing from the parameter coverage.**
 
-The record defines a creatinine covariate effect with a value of 0.006, but only the reference individual was simulated, leaving the covariate scenarios unexercised. Furthermore, the central volume of distribution (V1) was neither emitted nor defaulted, resulting in incomplete parameter coverage. A second reader also disagreed on the dose compound identification, suggesting fludarabine monophosphate instead of fludarabine. Extracted — fludarabine: CL 3.1 L/h, V1 13.4 L/kg, Q 2.2 L/h/kg, V2 13.4 L; f-ara-ATP: kfm 0.005 1/h, kel 0.09 1/h.
+The review findings state the model was not simulated, and covariate scenarios were not exercised despite the record defining a covariate effect. A parameter coverage check found that the central volume of distribution was neither emitted nor included in the defaulted list. Additionally, a second reader disputed the initial verdict, disagreeing on the identification of the primary analyte and the nature of the metabolite link. Extracted — fludarabine: CL 3.1 L/h, V1 13.4 L/kg, Q 2.2 L/h/kg, V2 13.4 L; f-ara-ATP: kfm 0.005 1/h, kel 0.09 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fludarabine, the second reading fludarabine monophosphate; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -161,14 +161,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V1'] |
-| T3_rate_constant_conversion |  | pass | Kin (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V1'] |
+| T3_rate_constant_conversion |  | pass | Kin (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

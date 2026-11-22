@@ -5,11 +5,11 @@
 
 # fluticasone — `Fluticasone_Mllmann1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:40 UTC (Rejected), but the paper was screened again on 2026-10-07 23:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="fluticasone" model-id="Fluticasone_Mllmann1998_reference" status="needs_review" stale="true" population="healthy subjects" measured-compound="fluticasone propionate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluticasone" model-id="Fluticasone_Mllmann1998_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="fluticasone propionate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Möllmann H, Wagner M, Meibohm B, Hochhaus G, Barth J, Stöckmann R et al. Pharmacokinetic and pharmacodynamic evaluation of fluticasone propionate after inhaled administration. European journal of clinical pharmacology 53(6):459–467 (1998).
@@ -37,7 +37,7 @@ Möllmann H, Wagner M, Meibohm B, Hochhaus G, Barth J, Stöckmann R et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Möllmann H, Wagner M, Meibohm B, Hochhaus G, Barth J, Stöckmann R et al. Pharm
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is fluticasone's own; they describe fluticasone propionate.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is fluticasone's own; they describe fluticasone propionate. Extracted — fluticasone propionate: t1/2z 6 h, MAT 5 h, Fab 1 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 1, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

@@ -90,7 +90,7 @@ Uranium trioxide is an oxide of uranium. Uranium oxides are used to colour glass
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-09 07:42 | 24:54 | 19/6/0 | 1/0/0 | 0/0/0 | 342,711/82,411 | einfracz / qwen3.8-27b | 13 | 11/1 | 2/11 | 0 |
+| 2026-11-09 07:42 | 24:54 | 19/6/0 | 5/0/0 | 0/0/0 | 342,711/82,411 | einfracz / qwen3.8-27b | 13 | 11/1 | 2/11 | 0 |
 
 ## Coverage
 

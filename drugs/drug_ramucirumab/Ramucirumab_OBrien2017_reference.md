@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;ramucirumab&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/&quot;},{&quot;label&quot;:&quot;OBrien_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ramucirumab_Marachelian2016_reference&quot;,&quot;label&quot;:&quot;Marachelian_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ramucirumab_OBrien2017_reference&quot;,&quot;label&quot;:&quot;OBrien_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ramucirumab_Marachelian2016_reference&quot;,&quot;label&quot;:&quot;Marachelian_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ramucirumab_OBrien2017_reference&quot;,&quot;label&quot;:&quot;OBrien_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ramucirumab — `Ramucirumab_OBrien2017_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="ramucirumab" model-id="Ramucirumab_OBrien2017_reference" status="simulated" stale="false" population="cancer patients" measured-compound="ramucirumab" parameterization="mechanistic" topology="2C"></div>
+> Ramucirumab clearance of 0.0148 l h−1 is recorded, but the record was held back because its covariate effects were not simulated and a second reader disputed compound identification.
+
+<div class="pk-model-meta" hidden drug="ramucirumab" model-id="Ramucirumab_OBrien2017_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="ramucirumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 O'Brien L, Westwood P, Gao L, Heathman M. Population pharmacokinetic meta-analysis of ramucirumab in cancer patients. British journal of clinical pharmacology 83(12):2741–2751 (2017).
@@ -29,6 +31,8 @@ O'Brien L, Westwood P, Gao L, Heathman M. Population pharmacokinetic meta-analys
 <figure class="pk-models-diagram"><img src="drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference/Ramucirumab_OBrien2017_reference.svg" alt="Ramucirumab_OBrien2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Clearance (CL), l h −1 | CL | 0.0148 | l h −1 |
@@ -44,7 +48,7 @@ O'Brien L, Westwood P, Gao L, Heathman M. Population pharmacokinetic meta-analys
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +58,13 @@ O'Brien L, Westwood P, Gao L, Heathman M. Population pharmacokinetic meta-analys
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Ramucirumab clearance of 0.0148 l h−1 is recorded, but the record was held back because its covariate effects were not simulated and a second reader disputed compound identification.**
 
-The base model was simulated, not the covariate effects the record defines.
+The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines, including the effects on intercompartmental clearance (0.499) and central volume (0.556). The second reader marked both the dose compound and primary analyte as unknown, disputing their identification as ramucirumab; the findings do not identify the recorded clearance as erroneous. Extracted — ramucirumab: CL 0.0148 l h −1, V1 3.26 l, Q 0.0102 l h −1, V2 2.04 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ramucirumab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -136,14 +140,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=ramucirumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=ramucirumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

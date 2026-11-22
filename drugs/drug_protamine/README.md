@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;protamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protamine_Butterworth2002_reference&quot;,&quot;label&quot;:&quot;Butterworth_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/Protamine_Butterworth2002_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protamine_Butterworth2002_reference&quot;,&quot;label&quot;:&quot;Butterworth_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/Protamine_Butterworth2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # protamine
 
@@ -16,7 +16,7 @@ Protamine is a protein class classified as an antidote. It is given intravenousl
 
 ## Start here
 
-> **Butterworth_2002_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy volunteers, n = 18. [Run it in the simulator](drugs/drug_protamine/Protamine_Butterworth2002_reference.md?tab=Simulation) · [record](drugs/drug_protamine/Protamine_Butterworth2002_reference.md)
+> **Butterworth_2002_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers, n = 18. [Run it in the simulator](drugs/drug_protamine/Protamine_Butterworth2002_reference.md?tab=Simulation) · [record](drugs/drug_protamine/Protamine_Butterworth2002_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -24,7 +24,7 @@ Protamine is a protein class classified as an antidote. It is given intravenousl
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Butterworth_2002_reference](drugs/drug_protamine/Protamine_Butterworth2002_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Butterworth J et al., The pharmacokinetics and cardiovascular…, Anesthesia and analgesia (2002) | [10.1097/00000539-200203000-00008](https://doi.org/10.1097/00000539-200203000-00008) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Butterworth_2002_reference](drugs/drug_protamine/Protamine_Butterworth2002_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Butterworth J et al., The pharmacokinetics and cardiovascular…, Anesthesia and analgesia (2002) | [10.1097/00000539-200203000-00008](https://doi.org/10.1097/00000539-200203000-00008) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Lanoiselée_2026_reference](drugs/drug_protamine/Protamine_Lanoisele2026_reference.md) | — | general linear (no model) | 2 | Lanoiselée J et al., Optimising protamine dosing for heparin…, British journal of anaesthe… (2026) | [10.1016/j.bja.2025.11.057](https://doi.org/10.1016/j.bja.2025.11.057) |
 
 ## Pharmacodynamics (PD)
@@ -49,13 +49,13 @@ Protamine is a protein class classified as an antidote. It is given intravenousl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:29 | 4:15 | 1/1/0 | 2/2/0 | 0/0/0 | 175,099/9,696 | ollama / glm-5.3-flash | 5 | 5/0 | 5/0 | 0 |
+| 2026-10-07 19:29 | 4:15 | 1/1/0 | 2/3/0 | 0/0/0 | 175,099/9,696 | ollama / glm-5.3-flash | 5 | 5/0 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 39 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

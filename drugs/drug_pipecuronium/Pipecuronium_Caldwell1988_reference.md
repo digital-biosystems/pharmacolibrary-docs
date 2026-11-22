@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Pipecuronium's volume of distribution (309 ml kg-1) was used as central volume despite lacking a specific central volume value.
+> The second reader disputed the record, disagreeing with the assigned clearance of 2.4 ml kg-1 min-1 for pipecuronium.
 
 <div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Caldwell1988_reference" status="needs_review" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium and pancuronium" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pip
 
 ## Population and dosing
 
-**Population:** ASA class I or II patients · condition healthy · age group adult · n = ? (Note: abstract says 39 total, likely split between two groups, but specific split not provided in text).
+**Population:** ASA class I or II patients · condition healthy · age group adult.
 
 ## Model
 
@@ -48,9 +48,9 @@ Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pip
 
 ### Reviewer guidance
 
-**Pipecuronium's volume of distribution (309 ml kg-1) was used as central volume despite lacking a specific central volume value.**
+**The second reader disputed the record, disagreeing with the assigned clearance of 2.4 ml kg-1 min-1 for pipecuronium.**
 
-The model structure assumes one compartment, but the extracted volume parameter is specifically the steady-state volume of distribution. This substitution means the central volume was not explicitly defined in the source data. Consequently, the model cannot accurately represent the early distribution phase, as steady-state volume differs from central volume in multi-compartment contexts. Extracted — pipecuronium and pancuronium: Vss 309 ml kg-1, CL 2.4 ml kg-1 min-1.
+The second reader reported null values for the extracted pipecuronium clearance and volume of distribution, indicating disagreement with the recorded parameters. Additionally, the reader marked the dose compound and primary analyte as unknown, conflicting with the recorded pipecuronium and pancuronium designation. The record relied on abstract-only summary statistics, which likely contributed to these extraction discrepancies. Extracted — pipecuronium and pancuronium: Vss 309 ml kg-1, CL 2.4 ml kg-1 min-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipecuronium and pancuronium, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -133,14 +133,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pipecuronium and pancuronium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pipecuronium and pancuronium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

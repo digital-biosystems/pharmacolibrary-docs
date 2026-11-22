@@ -4,11 +4,11 @@
 
 # mesna — `Mesna_elYazigi1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:48 UTC (Rejected), but the paper was screened again on 2026-10-07 21:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model is rejected due to a dimension mismatch and an unreachable dimesna compartment, caused by abstract-only summary statistics.
+> The model for mesna was rejected due to unit inconsistencies in clearance parameters and the exclusion of the dimesna metabolite from the model structure.
 
-<div class="pk-model-meta" hidden drug="mesna" model-id="Mesna_elYazigi1997_reference" status="rejected" stale="true" population="patients undergoing bone marrow transplantation" measured-compound="mesna" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="mesna" model-id="Mesna_elYazigi1997_reference" status="rejected" stale="false" population="patients undergoing bone marrow transplantation" measured-compound="mesna" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 el-Yazigi A, Ernst P, al-Rawithi S, Legayada E, Raines DA. Pharmacokinetics of mesna and dimesna after simultaneous intravenous bolus and infusion administration in patients undergoing bone marrow transplantation. Journal of clinical pharmacology 37(7):618–624 (1997).
@@ -44,7 +44,7 @@ el-Yazigi A, Ernst P, al-Rawithi S, Legayada E, Raines DA. Pharmacokinetics of m
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ el-Yazigi A, Ernst P, al-Rawithi S, Legayada E, Raines DA. Pharmacokinetics of m
 
 ### Reviewer guidance
 
-**The model is rejected due to a dimension mismatch and an unreachable dimesna compartment, caused by abstract-only summary statistics.**
+**The model for mesna was rejected due to unit inconsistencies in clearance parameters and the exclusion of the dimesna metabolite from the model structure.**
 
-The link between mesna and dimesna was defined with no rate constant, leaving the metabolite compartment unlinked from the dose. Additionally, the record contains contradictory parameters, such as terminal half-lives of 2.12 hours and 1.29 hours. Because the data came only from the abstract, summary statistics like the AUC ratio of 1.21 were used in place of a fitted model, leading to these structural inconsistencies. Extracted — mesna: t1/2α 0.12 hours, t1/2β 2.12 hours, V1 0.324 L/kg, Vss 1.09 L/kg, V2 2.09 L/kg, CL 0.755 L/hr.kg, MRT 6.77 hours, t1/2z 1.29 hours, … (+3).
+The total and renal clearance values were recorded in L/hr.kg, a unit dimension that conflicts with the expected L/hr. Additionally, a second reader disagreed on the model topology, removing the metabolism link from mesna to dimesna, which leaves the dimesna compartment unreachable. The record was constructed solely from the abstract, meaning the provided summary statistics are not derived from a fitted model. There is also a conflict regarding the renal clearance value, with the second reader marking it as missing rather than 0.244 L/hr.kg. Extracted — mesna: t1/2α 0.12 hours, t1/2β 2.12 hours, V1 0.324 L/kg, Vss 1.09 L/kg, V2 2.09 L/kg, CL 0.755 L/hr.kg, MRT 6.77 hours, t1/2z 1.29 hours, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has mesna → dimesna (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

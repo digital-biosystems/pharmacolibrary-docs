@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;blood plasma&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/&quot;},{&quot;label&quot;:&quot;Yu_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BloodPlasma_Alshehri2023_reference&quot;,&quot;label&quot;:&quot;Alshehri_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Alshehri2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Kong2022_reference&quot;,&quot;label&quot;:&quot;Kong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Kong2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Tang2017_reference&quot;,&quot;label&quot;:&quot;Tang_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Yu2022_reference&quot;,&quot;label&quot;:&quot;Yu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BloodPlasma_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Kong2022_reference&quot;,&quot;label&quot;:&quot;Kong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Kong2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Alshehri2023_reference&quot;,&quot;label&quot;:&quot;Alshehri_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Alshehri2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Tang2017_reference&quot;,&quot;label&quot;:&quot;Tang_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Yu2022_reference&quot;,&quot;label&quot;:&quot;Yu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # blood plasma — `BloodPlasma_Yu2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Oral bioavailability and lag time were left at library defaults rather than extracted, invalidating the simulated profile.
+> The record was rejected because the paper discusses a different drug, not blood plasma, and a second reader disagreed on all extracted parameter values.
 
-<div class="pk-model-meta" hidden drug="blood plasma" model-id="BloodPlasma_Yu2022_reference" status="needs_review" stale="false" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="blood plasma" model-id="BloodPlasma_Yu2022_reference" status="rejected" stale="false" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pharmacokinetic-B Cell Modeling for Ofatumumab in Patients with Relapsing Multiple Sclerosis. CNS drugs 36(3):283-300 (2022).
@@ -31,7 +31,7 @@ Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pha
 <figure class="pk-models-diagram"><img src="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference.svg" alt="BloodPlasma_Yu2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -43,7 +43,7 @@ Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.273). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.273). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +53,11 @@ Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pha
 
 ### Reviewer guidance
 
-**Oral bioavailability and lag time were left at library defaults rather than extracted, invalidating the simulated profile.**
+**The record was rejected because the paper discusses a different drug, not blood plasma, and a second reader disagreed on all extracted parameter values.**
 
-The record lacks explicit values for the oral bioavailability fraction and the lag time, forcing the model to rely on generic placeholders. Consequently, the simulated concentration profile is not supported by the specific data from Yu_2022. Additionally, a second reader could not confirm the reported clearance, intercompartmental clearance, and peripheral volume values. Extracted — blood plasma: CL 0.34 L/day, V1 2.62 L, V2 2.8 L, Q 0.358 L/day, kabs 0.157 day−1.
+The relevance screen determined the paper does not name blood plasma in the title or abstract, identifying the subject as another drug. A second reader found no agreement with the extracted values for clearance, intercompartmental clearance, and other parameters, resulting in an agreement score of 0.273. The model builder also defaulted the bioavailability and lag time parameters rather than using explicit estimates. Extracted — blood plasma: CL 0.34 L/day, V1 2.62 L, V2 2.8 L, Q 0.358 L/day, kabs 0.157 day−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.34, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.34, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -92,20 +92,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.273 (3/11 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 0.34 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q30]` | 0.358 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q320]` | 159 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q330]` | 5.53 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q331]` | 0.167 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q336]` | 32.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q47]` | 1.31 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q64]` | 2.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 0.34 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` | 0.358 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q320]` | 159 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q330]` | 5.53 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q331]` | 0.167 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q336]` | 32.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | 1.31 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` | 2.8 |  | only_one_extracted |
 
 </details>
 
@@ -135,14 +135,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=blood_plasma) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | blood_plasma (or metabolite) | paper about another drug |  | paper subject is not blood_plasma: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=blood_plasma) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check agreement 0.273 is below 0.5: verdict partial, agreement 0.273, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,62 +155,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_modelica.zip" download>BloodPlasma_Yu2022_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_fmi.zip" download>BloodPlasma_Yu2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_matlab.zip" download>BloodPlasma_Yu2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_matlab_simbio.zip" download>BloodPlasma_Yu2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_sbml.zip" download>BloodPlasma_Yu2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_cellml.zip" download>BloodPlasma_Yu2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 2e-05 | kg |
-| input | model | `Cl` | 3.935e-09 | m3/s |
-| input | model | `VdPerKg` | 3.743e-05 | m3/kg |
-| input | model | `k12` | 1.581e-06 | 1/s |
-| input | model | `k21` | 1.48e-06 | 1/s |
-| input | model | `ka` | 1.817e-06 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pharmacokinetic-B Cell Modeling for Ofatumumab in Patients with Relapsing Multiple Sclerosis. CNS drugs 36(3):283-300 (2022). [doi:10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w)
-
-**This record:** Pharmacolibrary, model `BloodPlasma_Yu2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference>
-
-```bibtex
-@misc{pharmacolibrary_BloodPlasmaYu2022reference,
-  title  = {{Pharmacolibrary model BloodPlasma_Yu2022_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference},
-  note   = {Parameters from doi:10.1007/s40263-021-00895-w},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Pridinol record failed review because steady-state volume (2.07 L/kg) was used as the distribution volume, invalidating the one-compartment structure.
+> The record is disputed due to a second reader's disagreement on the dose compound identification and an unextracted urine-to-plasma ratio value.
 
 <div class="pk-model-meta" hidden drug="pridinol" model-id="Pridinol_Minamijima2026_reference" status="needs_review" stale="false" population="Thoroughbred horses" measured-compound="pridinol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Minamijima Y, Kuroda T, Okano A, Wakuno A, Yuasa R, Ishikawa Y et al. Plasma and
 
 ### Reviewer guidance
 
-**Pridinol record failed review because steady-state volume (2.07 L/kg) was used as the distribution volume, invalidating the one-compartment structure.**
+**The record is disputed due to a second reader's disagreement on the dose compound identification and an unextracted urine-to-plasma ratio value.**
 
-The abstract-only source provided steady-state volume (2.07 L/kg) but no central volume, forcing the builder to substitute it for the distribution volume. This substitution means the one-compartment model reproduces terminal half-life but cannot capture the early distribution phase. A second reader also identified the dose compound as pridinol mesylate and noted a missing urine-to-plasma ratio of 0.211. Extracted — pridinol: CL 1.27 L/h/kg, Vss 2.07 L/kg.
+The second reader disagreed with the identified dose compound, stating pridinol mesylate instead of pridinol. They also identified a steady-state urine-to-plasma ratio of 0.211, which is recorded as null. Additionally, the model used Vss as the distribution volume, failing to capture the early distribution phase. Extracted — pridinol: CL 1.27 L/h/kg, Vss 2.07 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pridinol, the second reading pridinol mesylate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -125,14 +125,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pridinol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pridinol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

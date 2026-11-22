@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Citrinin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citrinin_Meerpoel2020_reference&quot;,&quot;label&quot;:&quot;Meerpoel_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citrinin_Meerpoel2020_reference&quot;,&quot;label&quot;:&quot;Meerpoel_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Citrinin
 
@@ -36,7 +36,7 @@ LD50: 67 mg/kg (Subcutaneous, Rat)
 
 ## Start here
 
-> **Meerpoel_2020_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> pigs and broiler chickens. [Run it in the simulator](drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md?tab=Simulation) · [record](drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md)
+> **Meerpoel_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> pigs and broiler chickens. [Run it in the simulator](drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md?tab=Simulation) · [record](drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -50,7 +50,7 @@ LD50: 67 mg/kg (Subcutaneous, Rat)
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="pig" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Meerpoel_2020_reference](drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Meerpoel C et al., Comprehensive toxicokinetic analysis re…, Food and chemical toxicolog… (2020) | [10.1016/j.fct.2020.111365](https://doi.org/10.1016/j.fct.2020.111365) |
+| <span class="pk-rf" hidden data-species="pig" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Meerpoel_2020_reference](drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Meerpoel C et al., Comprehensive toxicokinetic analysis re…, Food and chemical toxicolog… (2020) | [10.1016/j.fct.2020.111365](https://doi.org/10.1016/j.fct.2020.111365) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q370, Q61, Q61 — no SI value to bui…</sub> | [Visintin_2025_reference](drugs/toxin_citrinin/Citrinin_Visintin2025_reference.md) | held back | 1-compartment, IV | 10 | Visintin L et al., Derivation of Human Toxicokinetic Param…, Toxins (2025) | [10.3390/toxins17080382](https://doi.org/10.3390/toxins17080382) |
 
 <details class="legend">

@@ -25,7 +25,7 @@ Ticarcillin is a carboxypenicillin antibiotic used to treat sepsis, urinary trac
 
 ## Start here
 
-> **Economou_2019_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> critically ill patients with acute kidney injury receiving extended daily diafiltration, n = ? 1986. [Run it in the simulator](drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference.md?tab=Simulation) · [record](drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference.md)
+> **Economou_2019_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> critically ill patients with acute kidney injury receiving extended daily diafiltration. [Run it in the simulator](drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference.md?tab=Simulation) · [record](drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -65,7 +65,7 @@ Ticarcillin is a carboxypenicillin antibiotic used to treat sepsis, urinary trac
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:09 | 14:29 | 4/2/0 | 1/0/0 | 0/0/0 | 510,817/19,089 | einfracz / qwen3.8-27b | 13 | 0/13 | 13/0 | 0 |
+| 2026-10-07 11:09 | 14:29 | 4/2/0 | 2/0/0 | 0/0/0 | 510,817/19,089 | einfracz / qwen3.8-27b | 13 | 0/13 | 13/0 | 0 |
 
 ## Coverage
 

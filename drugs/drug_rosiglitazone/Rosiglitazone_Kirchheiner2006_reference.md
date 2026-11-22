@@ -16,7 +16,7 @@ Kirchheiner J, Thomas S, Bauer S, Tomalik-Scharte D, Hering U, Doroshyenko O et 
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=31.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -36,7 +36,7 @@ Kirchheiner J, Thomas S, Bauer S, Tomalik-Scharte D, Hering U, Doroshyenko O et 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Kirchheiner J, Thomas S, Bauer S, Tomalik-Scharte D, Hering U, Doroshyenko O et 
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rosiglitazone: CL 0.033 L/h, t1/2z 4.3 hours; desmethylrosiglitazone: CL 1.96 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination half-life: this record has none, the second reading 4.3; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of elimination half-life: this record has none, the second reading 4.3; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -89,16 +89,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[elimination half-life]` |  | 4.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-lives]` | 4.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean total clearance values]` | 0.033 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean total clearance]` |  | 0.033 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` |  | 4.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-lives]` | 4.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean total clearance values]` | 0.033 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean total clearance]` |  | 0.033 | only_one_extracted |
 
 </details>
 

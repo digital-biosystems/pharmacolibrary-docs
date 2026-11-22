@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;beta-Zearalenol&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/&quot;},{&quot;label&quot;:&quot;Qin_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # beta-Zearalenol — `BetaZearalenol_Qin2026_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> Simulated tmax (2.36 h) and terminal half-life (0.906 h) deviate substantially from reported values (1.0 h, 7.44 h), and ka was defaulted.
 
-<div class="pk-model-meta" hidden drug="beta-Zearalenol" model-id="BetaZearalenol_Qin2026_reference" status="extracted" stale="false" population="male sheep" measured-compound="beta-Zearalenol (beta-ZOL)" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="beta-Zearalenol" model-id="BetaZearalenol_Qin2026_reference" status="needs_review" stale="false" population="male sheep" measured-compound="beta-Zearalenol (beta-ZOL)" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Qin J, Zhang Q, Ren N, Su Z, Zheng Z, Yin T et al. Toxicokinetics, Biotransformation, Excretion, and Tissue Residue of Zearalenone-14-Glucoside in Male Sheep. Toxins 18(9) (2026).
@@ -35,6 +35,8 @@ Qin J, Zhang Q, Ren N, Su Z, Zheng Z, Yin T et al. Toxicokinetics, Biotransforma
 <figure class="pk-models-diagram"><img src="drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference/BetaZearalenol_Qin2026_reference.svg" alt="BetaZearalenol_Qin2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | elimination half-life of ZEN | t1/2z | 7.44 | h |
@@ -45,7 +47,7 @@ Qin J, Zhang Q, Ren N, Su Z, Zheng Z, Yin T et al. Toxicokinetics, Biotransforma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +55,13 @@ Qin J, Zhang Q, Ren N, Su Z, Zheng Z, Yin T et al. Toxicokinetics, Biotransforma
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Simulated tmax (2.36 h) and terminal half-life (0.906 h) deviate substantially from reported values (1.0 h, 7.44 h), and ka was defaulted.**
+
+The model failed to reproduce the paper's reported tmax of 1.0 h, yielding a simulated value of 2.36 h, and a terminal half-life of 7.44 h, yielding 0.906 h. The absorption rate constant (ka) was left at library defaults because it was not reported, leading to invented absorption kinetics. These discrepancies indicate the model structure or parameters do not accurately reflect the pharmacokinetics observed in male sheep. Extracted — beta-Zearalenol (beta-ZOL): t1/2z 7.44 h, t1/2β 2.79 h, CLm/F 412 L·kg−1·h−1, Vm/F 1.04e+03 L·kg−1, t1/2α 2.63 h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -124,6 +132,39 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C0c_disposition_complete | pass |  |
 | C7_apparent_coherence | pass |  |
 | C8_topology | pass |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=beta-Zearalenol (beta-ZOL)) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 0.5 | 7.921e-07 |  | unresolved concentration unit (exp 'h', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 154.8 | 7.921e-07 |  | unresolved concentration unit (exp 'ng·mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 83.56 | 7.921e-07 |  | unresolved concentration unit (exp 'ng·mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 42.3 | 7.921e-07 |  | unresolved concentration unit (exp 'ng·mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 21.71 | 7.921e-07 |  | unresolved concentration unit (exp 'ng·mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 4.16 | 7.921e-07 |  | unresolved concentration unit (exp 'ng·mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 20.25 | 7.921e-07 |  | unresolved concentration unit (exp 'ng·mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 2.15 | 7.921e-07 |  | unresolved concentration unit (exp 'ng·mL−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3.01 | 7.921e-07 |  | unresolved concentration unit (exp 'ng·mL−1', sim 'kg/m3') |
+| T1_t_half_beta | reference | fail | 7.44 | 0.9059 | 0.1218 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 0.94 | 0.9059 | 0.9637 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.91 | 0.9059 | 0.3113 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.79 | 0.9059 | 0.3247 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.79 | 0.9059 | 0.3247 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.63 | 0.9059 | 0.3444 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 1.1 | 0.9059 | 0.8235 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 2.361 | 2.361 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 2.361 | 2.361 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 2.361 | 2.361 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 3 | 2.361 | 0.7869 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 3 | 2.361 | 0.7869 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

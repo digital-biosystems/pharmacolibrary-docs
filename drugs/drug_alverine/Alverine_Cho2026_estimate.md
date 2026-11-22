@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> The alverine record is rejected because clearance and volume parameters exceed physiological limits, indicating extraction errors.
+> Alverine's volume of distribution parameter for metabolite M1 (47.905 L) was rejected as outside the physiological window.
 
 <div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_estimate" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -55,7 +55,7 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,11 +65,11 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 ### Reviewer guidance
 
-**The alverine record is rejected because clearance and volume parameters exceed physiological limits, indicating extraction errors.**
+**Alverine's volume of distribution parameter for metabolite M1 (47.905 L) was rejected as outside the physiological window.**
 
-The record lists a metabolite M2 elimination rate constant of 1874.08 1/h and a metabolite M3 absorption rate of 823.25 1/h, which are physically implausible. A second reader flagged that the dose compound and primary analyte were unidentified in the source. The second reader also indicated that specific parameter values for M1 and M3 absorption and elimination were not present in the original text. Extracted — alverine: CL 0.512 L/h, Kp 1.16, V1 0.443 L, V2 0.29 L, Q 0.372 L/h, kabs 6.9 1/h; M1: kfm 0.582 1/h, kabs 2.18 1/h, fm 0.92, V 47.9 L, kel 1.06 1/h; M3: kfm 1.13 1/h, kabs 823 1/h, fm 0.0399, V 2.29 L, kel 1.68 1/h; M2: kfm 1.06 1/h, kel 1.87e+03 1/h.
+The recorded volume of distribution for the first hepatic metabolite (M1) is 47.905 L, which exceeds the physiological window for the mouse population. This implausible magnitude indicates a unit or scale extraction error in the parameter record. Extracted — alverine: CL 0.512 L/h, Kp 1.16, V1 0.443 L, V2 0.29 L, Q 0.372 L/h, kabs 6.9 1/h; M1: kfm 0.582 1/h, kabs 2.18 1/h, fm 0.92, V 47.9 L, kel 1.06 1/h; M3: kfm 1.13 1/h, kabs 823 1/h, fm 0.0399, V 2.29 L, kel 1.68 1/h; M2: kfm 1.06 1/h, kel 1.87e+03 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -162,17 +162,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.773 (17/22 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.773 (17/22 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[kam1]` | 2.183 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kam3]` | 823.25 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km1,total]` | 1.064 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | alverine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | alverine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[kam1]` | 2.183 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kam3]` | 823.25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km1,total]` | 1.064 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | alverine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | alverine | unknown | mismatch |
 
 </details>
 

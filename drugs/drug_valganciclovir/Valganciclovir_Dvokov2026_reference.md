@@ -4,11 +4,11 @@
 
 # valganciclovir — `Valganciclovir_Dvokov2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-10-07 16:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ganciclovir clearance, absorption rate constant, and lag time lack extracted values, so the model relied on undefined placeholders rather than fitted estimates.
+> The record was rejected because the intercompartmental clearance parameter's unit dimension conflicted with its pharmacokinetic role, and another unit could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Dvokov2026_reference" status="rejected" stale="true" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Dvokov2026_reference" status="rejected" stale="false" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Dvořáčková E, Michaličková D, Petrus J, Klapková E, Dutková A, Kotowski T et al. Population Pharmacokinetics and Dose Optimization of Valganciclovir and Ganciclovir in Lung Transplant Recipients. Medical principles and practice : international journal of the Kuwait University, Health Science Centre 35(2):169–180 (2026).
@@ -43,7 +43,7 @@ Dvořáčková E, Michaličková D, Petrus J, Klapková E, Dutková A, Kotowski 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.905). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.905). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Dvořáčková E, Michaličková D, Petrus J, Klapková E, Dutková A, Kotowski 
 
 ### Reviewer guidance
 
-**Ganciclovir clearance, absorption rate constant, and lag time lack extracted values, so the model relied on undefined placeholders rather than fitted estimates.**
+**The record was rejected because the intercompartmental clearance parameter's unit dimension conflicted with its pharmacokinetic role, and another unit could not be converted to standard SI units.**
 
-The record defines apparent clearance, absorption rate constant, and lag time for ganciclovir but provides no numerical values for these entries. Consequently, the model structure would have used library defaults instead of the specific population parameters for lung transplant recipients. Extracted — ganciclovir: V1 43.1 L, CLm/F 2.05 L/h, V2 140 L, Q 2.1 L/h; valganciclovir: kabs 0.334 L/h, tlag 0.563 h, Fab 0.304.
+The parameter Q, representing intercompartmental clearance, was recorded with a volume-per-time unit (L/h), creating a dimension mismatch because clearance requires a time-inverse dimension. Additionally, a reported unit for another parameter was not recognized as a standard measure, preventing the assignment of a valid SI value. Extracted — ganciclovir: V1 43.1 L, CLm/F 2.05 L/h, V2 140 L, Q 2.1 L/h; valganciclovir: kabs 0.334 L/h, tlag 0.563 h, Fab 0.304.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has valganciclovir → ganciclovir (hydrolysis), the second reading valganciclovir → ganciclovir (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

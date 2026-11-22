@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;etoposide&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/&quot;},{&quot;label&quot;:&quot;Nguyen_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean_with_covariables&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean_with_covariables&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean_with_covariables&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean_with_covariables&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the peripheral compartment is unreachable from the dose, and abstract-only source left clearance undefined.
+> Etoposide’s peripheral-compartment volume (V2), reported as 4.1 L, was rejected because the two-compartment model contains an unreachable or orphan compartment.
 
 <div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Nguyen1998_reference" status="rejected" stale="false" population="cancer patients" measured-compound="etoposide" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Nguyen L, Chatelut E, Chevreau C, Tranchand B, Lochon I, Bachaud JM et al. Popul
 
 ### Reviewer guidance
 
-**Record rejected because the peripheral compartment is unreachable from the dose, and abstract-only source left clearance undefined.**
+**Etoposide’s peripheral-compartment volume (V2), reported as 4.1 L, was rejected because the two-compartment model contains an unreachable or orphan compartment.**
 
-The two-compartment model defines a peripheral volume of distribution of 4.1 L, but no intercompartmental clearance parameter was extracted, leaving that compartment structurally unlinked from the central compartment. Total clearance was not provided, meaning no value was extracted and a placeholder was used instead of a fitted estimate. The second reader also flagged that the mean oral bioavailability of 66% and the central volume of 5.5 L could not be confirmed as fitted parameters due to the abstract-only nature of the source text. Extracted — etoposide: V1 5.5 L, V2 4.1 L, Fab 66 %.
+The record reports a peripheral-compartment volume of 4.1 L, and the model structure was found to contain an unreachable or orphan compartment. Only the abstract was read, so reported summary statistics stood in for a fitted model. Extracted — etoposide: V1 5.5 L, V2 4.1 L, Fab 66 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etoposide, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

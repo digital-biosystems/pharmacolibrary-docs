@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;phenylbutazone&quot;,&quot;href&quot;:&quot;drugs/drug_phenylbutazone/&quot;},{&quot;label&quot;:&quot;Lees_1988 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenylbutazone_Kadir1997_reference&quot;,&quot;label&quot;:&quot;Kadir_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenylbutazone/Phenylbutazone_Kadir1997_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,7 +16,7 @@ Lees P, Ayliffe T, Maitho TE, Taylor JB. Pharmacokinetics, metabolism and excret
 
 ## Population and dosing
 
-**Population:** adult cattle · condition healthy · age group adult · n = $6.
+**Population:** adult cattle · condition healthy · age group adult.
 
 > **Species: cattle.** This record comes from an animal study (cattle), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 

@@ -5,11 +5,11 @@
 
 # idarubicin — `Idarubicin_Looby1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:09 UTC (Rejected), but the paper was screened again on 2026-10-06 18:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Idarubicin's steady-state volume of distribution was assigned unit '1', creating a dimension mismatch with the other flow-based parameters.
+> Idarubicin's steady-state volume of distribution value 24 was rejected due to a dimensional mismatch with its unit 1.
 
-<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Looby1997_reference" status="rejected" stale="true" population="rabbits" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Looby1997_reference" status="rejected" stale="false" population="rabbits" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Looby M, Linke R, Weiss M. Pharmacokinetics and tissue distribution of idarubicin and its active metabolite idarubicinol in the rabbit. Cancer chemotherapy and pharmacology 39(6):554–556 (1997).
@@ -39,7 +39,7 @@ Looby M, Linke R, Weiss M. Pharmacokinetics and tissue distribution of idarubici
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Looby M, Linke R, Weiss M. Pharmacokinetics and tissue distribution of idarubici
 
 ### Reviewer guidance
 
-**Idarubicin's steady-state volume of distribution was assigned unit '1', creating a dimension mismatch with the other flow-based parameters.**
+**Idarubicin's steady-state volume of distribution value 24 was rejected due to a dimensional mismatch with its unit 1.**
 
-The record lists a steady-state volume of distribution value of 24 with the unit '1', which is dimensionless and inconsistent with the milliliters per minute units of clearance and intercompartmental clearance. Because the model was derived solely from the abstract, these summary statistics replaced fitted parameters, preventing validation of the structural dimensions. A second reader marked the volume value as null, indicating the extracted figure was not supported by the source text. Extracted — idarubicin: CL 222 ml/min, Q 248 ml/min, Vss 24 1.
+The record lists the steady-state volume of distribution as 24 with unit 1, which is dimensionless, whereas volume requires cubic length units. A second reader identified the value 24 as incorrect, noting it should be null. Because the record was built from an abstract-only source, the reported summary statistics stand in for a fitted model. Extracted — idarubicin: CL 222 ml/min, Q 248 ml/min, Vss 24 1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[steady-state volume of distribution].value`: this record has 24, the second reading none. That field does not shape the model.
 

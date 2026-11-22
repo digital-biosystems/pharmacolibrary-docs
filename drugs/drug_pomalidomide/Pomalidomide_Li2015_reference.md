@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;pomalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/&quot;},{&quot;label&quot;:&quot;Li_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pomalidomide_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Ogasawara2021_reference&quot;,&quot;label&quot;:&quot;Ogasawara_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pomalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Ogasawara2021_reference&quot;,&quot;label&quot;:&quot;Ogasawara_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pomalidomide_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pomalidomide/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pomalidomide — `Pomalidomide_Li2015_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:56 UTC (Needs review), but the paper was screened again on 2026-10-07 00:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The model was quarantined because the peripheral compartment volume of distribution (V2/F) value was missing.
 
-<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2015_reference" status="extracted" stale="true" population="healthy participants and patients with multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2015_reference" status="model_quarantined" stale="false" population="healthy participants and patients with multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li Y, Xu Y, Liu L, Wang X, Palmisano M, Zhou S. Population pharmacokinetics of pomalidomide. Journal of clinical pharmacology 55(5):563–572 (2015).
@@ -23,12 +23,14 @@ Li Y, Xu Y, Liu L, Wang X, Palmisano M, Zhou S. Population pharmacokinetics of p
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 7 extracted, plus 2 covariate effects.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | ka, h−1 | kabs | 1.25 | h−1 |  |
@@ -41,9 +43,13 @@ Li Y, Xu Y, Liu L, Wang X, Palmisano M, Zhou S. Population pharmacokinetics of p
 | theta_v2_f_weight | theta_v2_f_weight | 0.686 |  |  |
 | theta_cl_f_sex | theta_cl_f_sex | -0.234 |  |  |
 
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +59,9 @@ Li Y, Xu Y, Liu L, Wang X, Palmisano M, Zhou S. Population pharmacokinetics of p
 
 ### Reviewer guidance
 
-**Pomalidomide's drug interaction clearance ratio lacks a unit, and its peripheral-to-central volume ratio deviates from a 1C structure.**
+**The model was quarantined because the peripheral compartment volume of distribution (V2/F) value was missing.**
 
-The parameter representing the ratio of clearances is recorded without a unit, making its value unusable. Additionally, a structure consistency check failed because the ratio of the peripheral compartment volume to the central compartment volume was calculated as 3.6634. A second reader disagreed with the identification of the dose compound and primary analyte, marking both as unknown. Extracted — pomalidomide: kabs 1.25 h−1, V2/F 58.3 L, V3/F 8.45 L, Q/F 1.01 L/h, CL/F 8.52 L/h, tlag 0.385 h, CL_ratio 0.913.
+The record defines a three-compartment structure including a second peripheral volume (V3/F, 8.45 L) and a covariate for V2/F, yet no value is provided for the primary V2/F parameter. Consequently, the model was held back to prevent the use of a placeholder value. Additionally, the record failed to simulate the defined covariate scenarios and the second reader disagreed on the primary analyte. Extracted — pomalidomide: kabs 1.25 h−1, V2/F 58.3 L, V3/F 8.45 L, Q/F 1.01 L/h, CL/F 8.52 L/h, tlag 0.385 h, CL_ratio 0.913.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pomalidomide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -164,6 +170,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 8.52 L/h |  |  | ['tbl2:row5:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 58.3 L |  |  | ['tbl2:row2:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.867, 0 of 1 reader(s) agree | 0.867 | cross-check disputed by a second reader: verdict disputed, agreement 0.867, 0 of 1 reader(s) agree |
+| T1_t_half_terminal | reference | skipped | 7.5 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Pentaerythritol tetranitrate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PentaerythritolTetranitrate_King1986_reference&quot;,&quot;label&quot;:&quot;King_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_King1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PentaerythritolTetranitrate_King1986_reference&quot;,&quot;label&quot;:&quot;King_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_King1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Pentaerythritol tetranitrate
 
@@ -34,7 +34,7 @@ Pentaerythritol tetranitrate (PETN), also known as PENT, PENTA, TEN, corpent, pe
 
 ## Start here
 
-> **King_1986_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> rats, n = 16. [Run it in the simulator](drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_King1986_reference.md?tab=Simulation) · [record](drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_King1986_reference.md)
+> **King_1986_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> rats, n = 16. [Run it in the simulator](drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_King1986_reference.md?tab=Simulation) · [record](drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_King1986_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -42,7 +42,7 @@ Pentaerythritol tetranitrate (PETN), also known as PENT, PENTA, TEN, corpent, pe
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [King_1986_reference](drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_King1986_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | King SY et al., Pharmacokinetics of pentaerythritol tet…, Journal of pharmaceutical s… (1986) | [10.1002/jps.2600750308](https://doi.org/10.1002/jps.2600750308) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [King_1986_reference](drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_King1986_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | King SY et al., Pharmacokinetics of pentaerythritol tet…, Journal of pharmaceutical s… (1986) | [10.1002/jps.2600750308](https://doi.org/10.1002/jps.2600750308) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Weber_1995_reference](drugs/toxin_pentaerythritol_tetranitrate/PentaerythritolTetranitrate_Weber1995_reference.md) | — | 1-compartment (no model) | 0 | Weber W et al., Pharmacokinetics and bioavailability of…, Arzneimittel-Forschung (1995) | — |
 
 <details class="legend">

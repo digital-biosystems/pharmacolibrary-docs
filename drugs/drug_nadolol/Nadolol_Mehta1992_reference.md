@@ -4,11 +4,11 @@
 
 # nadolol — `Nadolol_Mehta1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 00:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="nadolol" model-id="Nadolol_Mehta1992_reference" status="needs_review" stale="true" population="children with supraventricular tachycardia" measured-compound="nadolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nadolol" model-id="Nadolol_Mehta1992_reference" status="needs_review" stale="false" population="children with supraventricular tachycardia" measured-compound="nadolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mehta AV, Chidambaram B, Rice PJ. Pharmacokinetics of nadolol in children with supraventricular tachycardia. Journal of clinical pharmacology 32(11):1023–1027 (1992).
@@ -16,7 +16,7 @@ Mehta AV, Chidambaram B, Rice PJ. Pharmacokinetics of nadolol in children with s
 
 ## Population and dosing
 
-**Population:** children with supraventricular tachycardia · age group child · n = &gt;=6.
+**Population:** children with supraventricular tachycardia · age group child.
 
 ## Model
 
@@ -34,7 +34,7 @@ Mehta AV, Chidambaram B, Rice PJ. Pharmacokinetics of nadolol in children with s
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Mehta AV, Chidambaram B, Rice PJ. Pharmacokinetics of nadolol in children with s
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nadolol: t1/2z 4.3 hours.
 
 Independently confirmed by `gpt-oss-120b`.
 

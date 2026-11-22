@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01X&quot;,&quot;href&quot;:&quot;atc/J01X.md&quot;},{&quot;label&quot;:&quot;lefamulin&quot;,&quot;href&quot;:&quot;drugs/drug_lefamulin/&quot;},{&quot;label&quot;:&quot;Hu_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lefamulin_Hu2023_reference&quot;,&quot;label&quot;:&quot;Hu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lefamulin_Hu2023_reference&quot;,&quot;label&quot;:&quot;Hu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lefamulin — `Lefamulin_Hu2023_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="lefamulin" model-id="Lefamulin_Hu2023_reference" status="not_modelled" stale="false" population="healthy Chinese subjects" measured-compound="lefamulin" parameterization="apparent" topology="1C"></div>
+> Lefamulin absorption parameters ka and Tlag were set to unverified placeholder values, not estimates from the Hu paper.
+
+<div class="pk-model-meta" hidden drug="lefamulin" model-id="Lefamulin_Hu2023_reference" status="needs_review" stale="false" population="healthy Chinese subjects" measured-compound="lefamulin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hu Y, Wei Q, Bian X, Yang X, Yu J, Wang J et al. Pharmacokinetic, Pharmacokinetic/Pharmacodynamic, and Safety Investigations of Lefamulin in Healthy Chinese Subjects. Antibiotics (Basel, Switzerland) 12(9) (2023).
@@ -27,7 +29,7 @@ Hu Y, Wei Q, Bian X, Yang X, Yu J, Wang J et al. Pharmacokinetic, Pharmacokineti
 <figure class="pk-models-diagram"><img src="drugs/drug_lefamulin/Lefamulin_Hu2023_reference/Lefamulin_Hu2023_reference.svg" alt="Lefamulin_Hu2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -36,7 +38,7 @@ Hu Y, Wei Q, Bian X, Yang X, Yu J, Wang J et al. Pharmacokinetic, Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.733). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +48,13 @@ Hu Y, Wei Q, Bian X, Yang X, Yu J, Wang J et al. Pharmacokinetic, Pharmacokineti
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Lefamulin absorption parameters ka and Tlag were set to unverified placeholder values, not estimates from the Hu paper.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has none, the second reading 10.64; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+The record extracts only apparent clearance (23.5 L/h) and volume of distribution (332.7 L) from the review reference. The absorption rate constant and lag time were not reported in the source, so non-paper-specific defaults were applied. These placeholder absorption assumptions render the model structure unsupported for this specific dataset. Extracted — lefamulin: CL/F 23.5 L/h, V/F 333 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has none, the second reading 10.64; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -78,20 +82,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (10/15 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.733 (11/15 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q18]` |  | 10.64 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q19]` | 10.64 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q33]` | 1.0 | 1.0 | mismatch |
 | `gpt-oss-120b` | `values[Q46]` |  | 85 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q60]` |  | 12.7 | only_one_extracted |
 
@@ -119,13 +122,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | obtained | note |
-|---|---|---|---|
-| T0_analyte_identity | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  | no covariate effects in record |
-| T3_apparent_invariant | pass | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=lefamulin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.733, 0 of 1 reader(s) agree | 0.733 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

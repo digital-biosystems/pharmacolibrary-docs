@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The gentamicin model was quarantined because no explicit estimates for clearance and volume of distribution were extracted from the paper.
+> Gentamicin’s clearance and volume of distribution lacked extracted parameter values, leaving both at library placeholders and causing the model to be held back.
 
 <div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_AlbanellFernndez2025_sasano_et_al_2021_57" status="model_quarantined" stale="false" population="neonates and infants with no previous pathologies" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Albanell-Fernández M, Rodríguez-Reyes M, Bastida C, Soy D. A Review of Vancomy
 
 ### Reviewer guidance
 
-**The gentamicin model was quarantined because no explicit estimates for clearance and volume of distribution were extracted from the paper.**
+**Gentamicin’s clearance and volume of distribution lacked extracted parameter values, leaving both at library placeholders and causing the model to be held back.**
 
-The record includes typical population values of 0.056 L/h/kg for clearance and 0.827 L/kg for normalized volume, but these were not used as parameter estimates for the structural model. Instead, the clearance and volume of distribution fields remained empty, so generic placeholder values from the modeling library were applied to build the model. These generic placeholders do not represent the specific clinical data for this neonatal population, leading to the model being held back. Extracted — gentamicin: Vnorm 0.827 L/kg.
+No value for gentamicin's clearance and volume of distribution was extracted; the model was built, but library placeholders stood in and it was held back rather than published with invented numbers. Although the record lists mean clearance of 0.056 L/h/kg and normalized volume of distribution of 0.827 L/kg, the clearance and volume parameter estimates were left at defaults, which the review found unacceptable. Extracted — gentamicin: Vnorm 0.827 L/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of v: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -176,13 +176,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

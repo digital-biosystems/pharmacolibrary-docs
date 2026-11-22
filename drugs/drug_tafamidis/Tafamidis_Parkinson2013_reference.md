@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;tafamidis&quot;,&quot;href&quot;:&quot;drugs/drug_tafamidis/&quot;},{&quot;label&quot;:&quot;Parkinson_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tafamidis_Parkinson2013_reference&quot;,&quot;label&quot;:&quot;Parkinson_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tafamidis_Parkinson2013_reference&quot;,&quot;label&quot;:&quot;Parkinson_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tafamidis — `Tafamidis_Parkinson2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The tafamidis record lacks explicit bioavailability (F) and lag time (Tlag) values, relying on placeholder defaults unsupported by the paper's data.
+> The record was rejected because Parkinson_2013 does not study tafamidis, and the clearance and volume values likely belong to a different drug.
 
-<div class="pk-model-meta" hidden drug="tafamidis" model-id="Tafamidis_Parkinson2013_reference" status="needs_review" stale="false" population="" measured-compound="tafamidis" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tafamidis" model-id="Tafamidis_Parkinson2013_reference" status="rejected" stale="false" population="" measured-compound="tafamidis" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Parkinson J, Ploeger B, Appelkvist P, Bogstedt A, Dillner Bergstedt K, Eketjäll S et al. Modeling of age-dependent amyloid accumulation and γ-secretase inhibition of soluble and insoluble Aβ in a transgenic mouse model of amyloid deposition. Pharmacology research & perspectives 1(2):e00012 (2013).
@@ -31,7 +31,7 @@ Parkinson J, Ploeger B, Appelkvist P, Bogstedt A, Dillner Bergstedt K, Eketjäll
 <figure class="pk-models-diagram"><img src="drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference/Tafamidis_Parkinson2013_reference.svg" alt="Tafamidis_Parkinson2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -43,7 +43,7 @@ Parkinson J, Ploeger B, Appelkvist P, Bogstedt A, Dillner Bergstedt K, Eketjäll
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.409). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +53,11 @@ Parkinson J, Ploeger B, Appelkvist P, Bogstedt A, Dillner Bergstedt K, Eketjäll
 
 ### Reviewer guidance
 
-**The tafamidis record lacks explicit bioavailability (F) and lag time (Tlag) values, relying on placeholder defaults unsupported by the paper's data.**
+**The record was rejected because Parkinson_2013 does not study tafamidis, and the clearance and volume values likely belong to a different drug.**
 
-The record indicates that oral bioavailability and absorption lag time were not extracted, so placeholder values would have been used in the simulation. These defaults affect the predicted concentration profile but are not supported by the specific paper. A second reader also disputed several numerical fields, including values for study identifiers and population statistics. Extracted — tafamidis: CL 0.12 l/h/kg, V 7.68 L, V2 0.28 l/kg, Q 7.6 l/h/kg, kabs 0.41 1/h.
+The source paper, Parkinson_2013, is not about tafamidis, as neither the title nor abstract names the compound. Consequently, the extracted pharmacokinetic parameters, including a clearance of 0.12 l/h/kg and volume of 7.6751 L, are not applicable to this molecule. A second reader also disputed the record, noting disagreements on multiple numerical values and confirming the mismatch between the drug and the source data. Extracted — tafamidis: CL 0.12 l/h/kg, V 7.68 L, V2 0.28 l/kg, Q 7.6 l/h/kg, kabs 0.41 1/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 8; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 8; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -92,9 +92,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.409 (9/22 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.455 (10/22 fields) | 12 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -103,7 +103,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `values[Q322]` | 514 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q328]` | 1.1 | 0.001 | mismatch |
 | `gpt-oss-120b` | `values[Q335]` |  | 514 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q40]` | 0.8 | 0.8 | mismatch |
 | `gpt-oss-120b` | `values[Q57]` | 38 | 30.5 | mismatch |
 | `gpt-oss-120b` | `values[Q64]` | 0.28 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q68]` |  | 6.5 | only_one_extracted |
@@ -140,14 +139,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=tafamidis) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | tafamidis (or metabolite) | paper about another drug |  | paper subject is not tafamidis: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=tafamidis) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,63 +159,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference/Tafamidis_Parkinson2013_reference_modelica.zip" download>Tafamidis_Parkinson2013_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference/Tafamidis_Parkinson2013_reference_fmi.zip" download>Tafamidis_Parkinson2013_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference/Tafamidis_Parkinson2013_reference_matlab.zip" download>Tafamidis_Parkinson2013_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference/Tafamidis_Parkinson2013_reference_matlab_simbio.zip" download>Tafamidis_Parkinson2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference/Tafamidis_Parkinson2013_reference_sbml.zip" download>Tafamidis_Parkinson2013_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference/Tafamidis_Parkinson2013_reference_cellml.zip" download>Tafamidis_Parkinson2013_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3081 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 2e-05 | kg |
-| input | model | `Cl` | 2.333e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0001096 | m3/kg |
-| input | model | `k12` | 0.01925 | 1/s |
-| input | model | `k21` | 0.00754 | 1/s |
-| input | model | `ka` | 0.0001139 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Parkinson J, Ploeger B, Appelkvist P, Bogstedt A, Dillner Bergstedt K, Eketjäll S et al. Modeling of age-dependent amyloid accumulation and γ-secretase inhibition of soluble and insoluble Aβ in a transgenic mouse model of amyloid deposition. Pharmacology research & perspectives 1(2):e00012 (2013). [doi:10.1002/prp2.12](https://doi.org/10.1002/prp2.12)
-
-**This record:** Pharmacolibrary, model `Tafamidis_Parkinson2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference>
-
-```bibtex
-@misc{pharmacolibrary_TafamidisParkinson2013reference,
-  title  = {{Pharmacolibrary model Tafamidis_Parkinson2013_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference},
-  note   = {Parameters from doi:10.1002/prp2.12},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

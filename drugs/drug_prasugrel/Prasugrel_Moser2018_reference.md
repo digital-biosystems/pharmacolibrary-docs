@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Prasugrel's clearance, volume of distribution, absorption rate constant, and lag time were left as placeholders because they were not reported in the abstract.
+> Prasugrel’s clearance, volume, absorption rate and lag time had no values, so placeholders led to withholding the model; the metabolite’s apparent clearance was 172 L/h.
 
 <div class="pk-model-meta" hidden drug="prasugrel" model-id="Prasugrel_Moser2018_reference" status="model_quarantined" stale="false" population="pediatric patients with sickle cell anemia" measured-compound="prasugrel active metabolite" parameterization="apparent" topology="1C"></div>
 
@@ -37,7 +37,7 @@ Moser BA, LaBell ES, Chigutsa E, Jakubowski JA, Small DS. Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Moser BA, LaBell ES, Chigutsa E, Jakubowski JA, Small DS. Population Pharmacokin
 
 ### Reviewer guidance
 
-**Prasugrel's clearance, volume of distribution, absorption rate constant, and lag time were left as placeholders because they were not reported in the abstract.**
+**Prasugrel’s clearance, volume, absorption rate and lag time had no values, so placeholders led to withholding the model; the metabolite’s apparent clearance was 172 L/h.**
 
-The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Consequently, no values were extracted for the parent drug's clearance, volume, or absorption parameters, leading to the use of library placeholders. Additionally, the model assumed apparent parameterization with F=1 and Fm=1, and a first-order depot input was used despite the lack of reported absorption data. Extracted — prasugrel: CLm/F 172 L/h, Vm/F 51.7 L.
+No value for prasugrel's clearance, volume of distribution, absorption rate constant and absorption lag time. The model was built, but prasugrel's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a placeholder stood in and the model was held back rather than published with an invented number. Only the prasugrel active metabolite was measured; its apparent clearance was 172 L/h and apparent volume was 51.7 L, while abstract-only summary statistics stood in for a fitted model. The builder assumed F=1 and Fm=1 with no molar correction, defaulted the unreported absorption rate, and represented input as a first-order depot (extravascular dosing); a second reader disputed the verdict (agreement 0.833) and named the analyte Pras-AM rather than prasugrel active metabolite. Extracted — prasugrel: CLm/F 172 L/h, Vm/F 51.7 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has prasugrel active metabolite, the second reading Pras-AM. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has prasugrel active metabolite, the second reading Pras-AM. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -88,13 +88,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.833 (5/6 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `screen.primary_analyte` | prasugrel active metabolite | Pras-AM | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | prasugrel active metabolite | Pras-AM | mismatch |
 
 </details>
 
@@ -118,14 +118,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

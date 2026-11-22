@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;doxazosin&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/&quot;},{&quot;label&quot;:&quot;Li_2015 \u00b7 s_doxazosin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Donnelly_1989_2_SBP&quot;,&quot;label&quot;:&quot;Donnelly_1989_2 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Donnelly_1989_2_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Elliott_1986_SBP&quot;,&quot;label&quot;:&quot;Elliott_1986 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Elliott_1986_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meredith_1988_placebo_corrected_erect_systolic_blood_pressur&quot;,&quot;label&quot;:&quot;Meredith_1988 \u00b7 placebo-corrected erect systolic blood pressure&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Meredith_1988_placebo_corrected_erect_systolic_blood_pressur.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Reid_1990_SBP&quot;,&quot;label&quot;:&quot;Reid_1990 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Reid_1990_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vincent_1983_fall_in_systolic_blood_pressure_after_five_minu&quot;,&quot;label&quot;:&quot;Vincent_1983 \u00b7 fall in systolic blood pressure (after five minutes standing)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Vincent_1983_fall_in_systolic_blood_pressure_after_five_minu.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Kaye1986_man&quot;,&quot;label&quot;:&quot;Kaye_1986_man&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Kaye1986_man.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Kaye1986_rat&quot;,&quot;label&quot;:&quot;Kaye_1986_rat&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Kaye1986_rat.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Elliott1986_reference&quot;,&quot;label&quot;:&quot;Elliott_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Elliott1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Reid_1990_SBP&quot;,&quot;label&quot;:&quot;Reid_1990 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/pd_Reid_1990_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxazosin — `Doxazosin_Li2015_s_doxazosin`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-<div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_Li2015_s_doxazosin" status="not_modelled" stale="false" population="rats" measured-compound="(-)-(R)-doxazosin, (+)-(S)-doxazosin" parameterization="apparent" topology="1C"></div>
+> The record was quarantined because clearance, volume of distribution, and absorption lag time lacked explicit values for doxazosin.
+
+<div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_Li2015_s_doxazosin" status="model_quarantined" stale="false" population="rats" measured-compound="doxazosin enantiomers" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li Q, Kong D, Du Q, Zhao J, Zhen Y, Li T et al. Enantioselective pharmacokinetics of doxazosin and pharmacokinetic interaction between the isomers in rats. Chirality 27(10):738–744 (2015).
@@ -15,11 +17,9 @@ Li Q, Kong D, Du Q, Zhao J, Zhen Y, Li T et al. Enantioselective pharmacokinetic
 
 ## Population and dosing
 
-**Population:** rats · condition healthy · age group adult.
+**Population:** rats · condition healthy.
 
 **Dosing:** 210, 420 mg, oral, single.
-
-**Dosed compound ≠ measured compound:** dosed doxazosin, measured (-)-(R)-doxazosin, (+)-(S)-doxazosin.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -31,7 +31,7 @@ Li Q, Kong D, Du Q, Zhao J, Zhen Y, Li T et al. Enantioselective pharmacokinetic
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,8 +39,8 @@ Li Q, Kong D, Du Q, Zhao J, Zhen Y, Li T et al. Enantioselective pharmacokinetic
 | T1/2 (min) | t1/2z | 120 | min |
 | Tmax (min) | tmax | 125 | min |
 | Cmax (ng/mL) | Cmax | 235.7 | ng/mL |
-| AUC0-t (min×ng/mL) | AUCt | 90334 | min*ng/mL |
-| AUC0-∞ (min×ng/mL) | AUC∞ | 91569 | min*ng/mL |
+| AUC0-t (min×ng/mL) | AUCt | 90334 | min×ng/mL |
+| AUC0-∞ (min×ng/mL) | AUC∞ | 91569 | min×ng/mL |
 | MRT0-t (min) | MRT | 272 | min |
 | VD/F (mL/kg) | V/F | 6170 | mL/kg |
 | Cl/F (mL/min/kg) | CL/F | 34.7 | mL/min/kg |
@@ -51,7 +51,7 @@ Li Q, Kong D, Du Q, Zhao J, Zhen Y, Li T et al. Enantioselective pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.941). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.882). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,24 +61,24 @@ Li Q, Kong D, Du Q, Zhao J, Zhen Y, Li T et al. Enantioselective pharmacokinetic
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The record was quarantined because clearance, volume of distribution, and absorption lag time lacked explicit values for doxazosin.**
 
-A reported unit could not be converted (Cmax, AUCt and AUC∞), so that value has no SI equivalent. None of the extracted parameters is doxazosin's own; they describe (+)-(S)-doxazosin and (-)-(R)-doxazosin, (+)-(S)-doxazosin.
+All 13 extracted parameters specifically describe (+)-(S)-doxazosin or doxazosin enantiomers, not the parent compound doxazosin. Consequently, the model builder could not assign explicit estimates for doxazosin's clearance, volume of distribution, or absorption lag time. These parameters remained at default library placeholders, causing the model to be held back rather than published with invented numbers. Extracted — (+)-(S)-doxazosin: kel 0.006 1/min, t1/2z 120 min, tmax 125 min, Cmax 236 ng/mL, AUCt 9.03e+04 min×ng/mL, AUC∞ 9.16e+04 min×ng/mL, MRT 272 min, V/F 6.17e+03 mL/kg, … (+4); doxazosin enantiomers: kabs 0.077 h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has (-)-(R)-doxazosin, (+)-(S)-doxazosin, the second reading doxazosin. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doxazosin enantiomers, the second reading doxazosin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | λ (1/min) | `Q47` · kel | 0.0060 | 1/min | 0.0001 | 1/s | 1/min | exact (1) | Li_2015_table_1:row0:col2, Li_2015_table_1:row0:col4, Li_2015_table_3:row0:col2, Li_2015_table_3:row0:col4 |
-| T1/2 (min) | `Q57` · t1/2z | 120 | min | 7200 | s | min | exact (1) | Li_2015_table_1:row1:col2, Li_2015_table_3:row1:col2, Li_2015_table_3:row1:col4 |
+| T1/2 (min) | `Q57` · t1/2z | 120 | min | 7200 | s | min | half_life_rule (0.95) | Li_2015_table_1:row1:col2, Li_2015_table_3:row1:col2, Li_2015_table_3:row1:col4 |
 | Tmax (min) | `Q56` · tmax | 125 | min | 7500 | s | min | exact (1) | Li_2015_table_1:row2:col2, Li_2015_table_1:row2:col4 |
-| Cmax (ng/mL) | `Q32` · Cmax | 235.7 | ng/mL |  |  | ng/ml | exact (1) | Li_2015_table_1:row3:col2, Li_2015_table_1:row3:col4, Li_2015_table_3:row2:col2, Li_2015_table_3:row2:col4 |
-| AUC0-t (min×ng/mL) | `Q19` · AUCt | 90334 | min*ng/mL |  |  | min*ng/mL | exact (1) | Li_2015_table_1:row4:col2, Li_2015_table_1:row4:col4, Li_2015_table_3:row3:col2, Li_2015_table_3:row3:col4 |
-| AUC0-∞ (min×ng/mL) | `Q17` · AUC∞ | 91569 | min*ng/mL |  |  | min*ng/mL | exact (1) | Li_2015_table_1:row5:col2, Li_2015_table_1:row5:col4, Li_2015_table_3:row4:col2, Li_2015_table_3:row4:col4 |
+| Cmax (ng/mL) | `Q32` · Cmax | 235.7 | ng/mL | 0.0002357 | kg/m3 | ng/ml | exact (1) | Li_2015_table_1:row3:col2, Li_2015_table_1:row3:col4, Li_2015_table_3:row2:col2, Li_2015_table_3:row2:col4 |
+| AUC0-t (min×ng/mL) | `Q19` · AUCt | 90334 | min×ng/mL | 5.42 | m3/s | (min·ng)/ml | exact (1) | Li_2015_table_1:row4:col2, Li_2015_table_1:row4:col4, Li_2015_table_3:row3:col2, Li_2015_table_3:row3:col4 |
+| AUC0-∞ (min×ng/mL) | `Q17` · AUC∞ | 91569 | min×ng/mL | 5.494 | m3/s | (min·ng)/ml | exact (1) | Li_2015_table_1:row5:col2, Li_2015_table_1:row5:col4, Li_2015_table_3:row4:col2, Li_2015_table_3:row4:col4 |
 | MRT0-t (min) | `Q53` · MRT | 272 | min | 1.632e+04 | s | min | exact (1) | Li_2015_table_1:row6:col2, Li_2015_table_1:row6:col4, Li_2015_table_3:row5:col2, Li_2015_table_3:row5:col4 |
 | VD/F (mL/kg) | `Q76` · V/F | 6170 | mL/kg | 0.4319 | m3 | ml/kg | exact (1) | Li_2015_table_1:row8:col2, Li_2015_table_1:row8:col4 |
 | Cl/F (mL/min/kg) | `Q27` · CL/F | 34.7 | mL/min/kg | 4.048e-05 | m3/s | ml/(min·kg) | exact (1) | Li_2015_table_1:row9:col2, Li_2015_table_1:row9:col4 |
@@ -98,12 +98,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 - unit_dimension_unknown: 'min×ng/mL' (AUCt)
 - unit_dimension_unknown: 'min×ng/mL' (AUC∞)
 - dropped duplicate Q53 ('MRT0-∞ (min)', value '284') — already have one for this compound
-- implicit units: 'AUC0-t (min×ng/mL)' → min*ng/mL (from the popPK convention: 'The paper text and table captions do not explicitly state the unit for AUC parameters in the provided excerpts, only men')
-- implicit units: 'AUC0-∞ (min×ng/mL)' → min*ng/mL (from the popPK convention: 'The paper text and table captions do not explicitly state the unit for AUC parameters in the provided excerpts. The unit')
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=(-)-(R)-doxazosin, (+)-(S)-doxazosin
+- dropped value-less row: 'P &lt; 0.05'
+- dropped value-less row: 'P &lt; 0.01'
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=doxazosin enantiomers
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
 - population split: '(+)-(s)-doxazosin' subgroup of Li_2015 (paper reports 3 populations: (+)-(s)-doxazosin, (-)-(r)-doxazosin, racemic doxazosin (6.0 mg/kg))
-- molar mass: no plausible PubChem entry for '(-)-(R)-doxazosin, (+)-(S)-doxazosin' ('(+)-(S)-doxazosin') — left in mass units
-- molar mass: none found for '(-)-(R)-doxazosin, (+)-(S)-doxazosin' — its concentrations stay mass-only
+- molar mass: none found for 'doxazosin enantiomers' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q49 (kabs) from unknown_2023's review values (primary lacked it)
@@ -123,13 +125,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.941 (16/17 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.882 (15/17 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.primary_analyte` | (-)-(R)-doxazosin, (+)-(S)-doxazosin | doxazosin | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | doxazosin enantiomers | doxazosin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | doxazosin enantiomers | doxazosin | mismatch |
 
 </details>
 
@@ -146,8 +149,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 12 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | pass | [time] * [mass] / [length] ** 3 |  | ['Li_2015_table_1:row5:col2', 'Li_2015_table_1:row5:col4', 'Li_2015_table_3:row4:col2', 'Li_2015_table_3:row4:col4'] |
-| C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 |  | ['Li_2015_table_1:row4:col2', 'Li_2015_table_1:row4:col4', 'Li_2015_table_3:row3:col2', 'Li_2015_table_3:row3:col4'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Li_2015_table_3:row7:col2', 'Li_2015_table_3:row7:col4'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Li_2015_table_1:row9:col2', 'Li_2015_table_1:row9:col4'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Li_2015_table_1:row3:col2', 'Li_2015_table_1:row3:col4', 'Li_2015_table_3:row2:col2', 'Li_2015_table_3:row2:col4'] |
@@ -167,14 +168,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations |  | pass |  | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | skipped |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 53.2 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 110.5 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -192,30 +198,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Li2015_s_doxazosin/Doxazosin_Li2015_s_doxazosin_matlab.zip" download>Doxazosin_Li2015_s_doxazosin_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Li2015_s_doxazosin/Doxazosin_Li2015_s_doxazosin_matlab_simbio.zip" download>Doxazosin_Li2015_s_doxazosin_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Li2015_s_doxazosin/Doxazosin_Li2015_s_doxazosin_sbml.zip" download>Doxazosin_Li2015_s_doxazosin_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Li2015_s_doxazosin/Doxazosin_Li2015_s_doxazosin_cellml.zip" download>Doxazosin_Li2015_s_doxazosin_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Li Q, Kong D, Du Q, Zhao J, Zhen Y, Li T et al. Enantioselective pharmacokinetics of doxazosin and pharmacokinetic interaction between the isomers in rats. Chirality 27(10):738–744 (2015). [doi:10.1002/chir.22483](https://doi.org/10.1002/chir.22483)
-
-**This record:** Pharmacolibrary, model `Doxazosin_Li2015_s_doxazosin`. <https://pharmacolibrary.github.io/#/drugs/drug_doxazosin/Doxazosin_Li2015_s_doxazosin>
-
-```bibtex
-@misc{pharmacolibrary_DoxazosinLi2015sdoxazosin,
-  title  = {{Pharmacolibrary model Doxazosin_Li2015_s_doxazosin}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_doxazosin/Doxazosin_Li2015_s_doxazosin},
-  note   = {Parameters from doi:10.1002/chir.22483},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -225,4 +214,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxazosin%5D%20Doxazosin_Li2015_s_doxazosin&body=Drug%3A%20doxazosin%0ARecord%3A%20Doxazosin_Li2015_s_doxazosin%0APaper%3A%20Li_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxazosin/Doxazosin_Li2015_s_doxazosin%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 14:16 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 10:28 UTC</sub>

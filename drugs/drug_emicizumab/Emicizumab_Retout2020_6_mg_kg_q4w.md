@@ -45,7 +45,7 @@ Retout S, Schmitt C, Petry C, Mercier F, Frey N. Population Pharmacokinetic Anal
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +59,7 @@ Retout S, Schmitt C, Petry C, Mercier F, Frey N. Population Pharmacokinetic Anal
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax, Ctrough, AUCSS and Cavg), so that value has no SI equivalent. Extracted — emicizumab: t1/2z 26.8 day, Cmax 66.8 μg/mL, tmax 4.99 day, Ctrough 38.3 μg/mL, Cmax_ratio 1.85, AUCSS 1.5e+03 μg × day/mL, Cavg 53.5 μg/mL, CL/F 56.4 %, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has emicizumab, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has emicizumab, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -142,32 +142,32 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.091 (2/22 fields) | 20 |
+| `gpt-oss-120b` | not confirmed | 0.091 (2/22 fields) | 20 |
 
 <details><summary>20 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[aucss,τ]` | 1499 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[aucss,τ]` |  | 1499 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bpv on cl/f from 56.4 to 30.0%]` | 56.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bpv on v/f from 60.7 to 28.1%]` | 60.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cav,ss]` | 53.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cav,ss]` |  | 53.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[classical cl/f exponent]` |  | 0.75 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax,ss/ctrough,ss]` | 1.85 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax,ss/ctrough,ss]` |  | 1.85 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax,ss]` | 66.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax,ss]` |  | 66.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ctrough,ss]` | 38.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ctrough,ss]` |  | 38.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2,abs]` |  | 1.61 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | 26.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` |  | 26.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax,ss]` | 4.99 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax,ss]` |  | 4.99 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | emicizumab | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | emicizumab | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[aucss,τ]` | 1499 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucss,τ]` |  | 1499 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bpv on cl/f from 56.4 to 30.0%]` | 56.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bpv on v/f from 60.7 to 28.1%]` | 60.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cav,ss]` | 53.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cav,ss]` |  | 53.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[classical cl/f exponent]` |  | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax,ss/ctrough,ss]` | 1.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax,ss/ctrough,ss]` |  | 1.85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax,ss]` | 66.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax,ss]` |  | 66.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctrough,ss]` | 38.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctrough,ss]` |  | 38.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2,abs]` |  | 1.61 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 26.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  | 26.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax,ss]` | 4.99 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax,ss]` |  | 4.99 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | emicizumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | emicizumab | unknown | mismatch |
 
 </details>
 

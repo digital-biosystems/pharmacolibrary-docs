@@ -16,7 +16,7 @@ Bateman DN, Kahn C, Mashiter K, Davies DS. Pharmacokinetic and concentration-eff
 
 ## Population and dosing
 
-**Population:** normal male volunteers · condition healthy · age group adult · n = &gt;=7.
+**Population:** normal male volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -34,7 +34,7 @@ Bateman DN, Kahn C, Mashiter K, Davies DS. Pharmacokinetic and concentration-eff
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ Bateman DN, Kahn C, Mashiter K, Davies DS. Pharmacokinetic and concentration-eff
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — metoclopramide: CL 10.9 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoclopramide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metoclopramide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -83,16 +83,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[total body plasma clearance of the drug]` | 10.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total body plasma clearance of the drug]` |  | 10.9 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | metoclopramide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | metoclopramide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[total body plasma clearance of the drug]` | 10.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body plasma clearance of the drug]` |  | 10.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | metoclopramide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | metoclopramide | unknown | mismatch |
 
 </details>
 

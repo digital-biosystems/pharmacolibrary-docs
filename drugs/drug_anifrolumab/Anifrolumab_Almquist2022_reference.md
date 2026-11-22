@@ -16,7 +16,7 @@ Almquist J, Kuruvilla D, Mai T, Tummala R, White WI, Tang W et al. Nonlinear Pop
 
 ## Population and dosing
 
-**Population:** healthy volunteers and patients with systemic lupus erythematosus · condition systemic lupus erythematosus · age group adult · n = # 670.
+**Population:** healthy volunteers and patients with systemic lupus erythematosus · condition systemic lupus erythematosus · age group adult.
 
 **Dosing:** 100, 150, 300, 1000 mg, iv, multiple, every 336 h.
 

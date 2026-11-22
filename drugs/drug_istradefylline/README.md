@@ -26,7 +26,7 @@ Istradefylline is an antiparkinson drug that acts as an adenosine receptor antag
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Knebel_2011_reference](drugs/drug_istradefylline/Istradefylline_Knebel2011_reference.md) | — | 1-compartment (no model) | 6 | Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011) | [10.1177/0091270010363809](https://doi.org/10.1177/0091270010363809) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Knebel_2011_reference](drugs/drug_istradefylline/Istradefylline_Knebel2011_reference.md) | — | 1-compartment (no model) | 6 | Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011) | [10.1177/0091270010363809](https://doi.org/10.1177/0091270010363809) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,29 +36,6 @@ Istradefylline is an antiparkinson drug that acts as an adenosine receptor antag
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2012_dyskinesia](drugs/drug_istradefylline/pd_Knebel_2012_dyskinesia.md) | dyskinesia probability ← istradefylline · direct Emax (saturable) effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2012_nausea](drugs/drug_istradefylline/pd_Knebel_2012_nausea.md) | nausea probability ← istradefylline · direct linear effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Knebel_2012_OFF_time](drugs/drug_istradefylline/pd_Knebel_2012_OFF_time.md) | percentage OFF time ← istradefylline · direct Emax (saturable) effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=istradefylline).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor, `SLC22A6` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor, `ABCG2` inhibitor, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADORA1 (target), ADORA2A (target), CYP2C18 (substrate), POU2F2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -72,13 +49,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 14:33 | 0:50 | 0/1/0 | 1/0/0 | 0/0/0 | 24,632/10,247 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-06 14:33 | 0:50 | 0/1/0 | 4/0/0 | 0/0/0 | 24,632/10,247 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

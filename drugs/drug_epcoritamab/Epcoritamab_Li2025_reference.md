@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The apparent clearance and volume of distribution for epcoritamab were derived from abstract summary statistics, not fitted model estimates.
+> Epcoritamab record held back because absorption rate constant was assumed at library defaults rather than estimated from the abstract.
 
 <div class="pk-model-meta" hidden drug="epcoritamab" model-id="Epcoritamab_Li2025_reference" status="needs_review" stale="false" population="adults with relapsed or refractory B-cell non-Hodgkin lymphoma" measured-compound="epcoritamab" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Li T, Gibiansky L, Parikh A, van der Linden M, Sanghavi K, Putnins M et al. Popu
 
 ### Reviewer guidance
 
-**The apparent clearance and volume of distribution for epcoritamab were derived from abstract summary statistics, not fitted model estimates.**
+**Epcoritamab record held back because absorption rate constant was assumed at library defaults rather than estimated from the abstract.**
 
-The record's parameters, including an apparent total clearance of 0.53 L/day and apparent total volume of distribution of 25.6 L, stand in for a fitted model because the paper was abstract-only. The second reader also disagreed on the parameterization type and the time to maximum concentration value. Extracted — epcoritamab: tmax 4 days, V/F 25.6 L, CL 0.53 L/day, t1/2z 22 days.
+The record uses abstract summary statistics, such as a terminal half-life of 22 days, as a stand-in for a fitted model. The absorption rate constant and lag time were assigned standard library values instead of being derived from the source, creating an unsupported assumption for the simulated profile. A second reader also disputed the apparent parameterization, preferring a mechanistic classification for the volume and clearance parameters. Extracted — epcoritamab: tmax 4 days, V/F 25.6 L, CL 0.53 L/day, t1/2z 22 days.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -86,6 +86,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- derived CL/F=0.0336071 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Li_2025_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -134,15 +135,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=epcoritamab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev_001: not acceptable; dev_002: not acceptable; dev_003: not acceptable; dev_004: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=epcoritamab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | cross-check disputed by a second reader: verdict disputed, agreement 0.6, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -180,7 +183,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 6.134e-09 | m3/s |
+| input | model | `Cl` | 9.335e-09 | m3/s |
 | input | model | `VdPerKg` | 0.0003657 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |

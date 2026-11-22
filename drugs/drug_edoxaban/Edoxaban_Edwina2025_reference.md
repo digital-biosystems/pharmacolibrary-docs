@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The edoxaban model was rejected because the output compartment did not match the measured analyte and the model structure was incorrect.
+> Edoxaban clearance is 9.02 L/h and central volume is 47.4 L in a one-compartment model lacking the defined metabolite.
 
 <div class="pk-model-meta" hidden drug="edoxaban" model-id="Edoxaban_Edwina2025_reference" status="rejected" stale="false" population="geriatric patients with atrial fibrillation" measured-compound="edoxaban" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Edwina AE, Van der Linden L, Debruyne L, Foerster K, Burhenne J, Verhamme P et a
 
 ## Population and dosing
 
-**Population:** geriatric patients with atrial fibrillation · condition atrial fibrillation · age group elderly · n = &gt;=17.
+**Population:** geriatric patients with atrial fibrillation · condition atrial fibrillation · age group elderly.
 
 ## Model
 
@@ -40,7 +40,7 @@ Edwina AE, Van der Linden L, Debruyne L, Foerster K, Burhenne J, Verhamme P et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Edwina AE, Van der Linden L, Debruyne L, Foerster K, Burhenne J, Verhamme P et a
 
 ### Reviewer guidance
 
-**The edoxaban model was rejected because the output compartment did not match the measured analyte and the model structure was incorrect.**
+**Edoxaban clearance is 9.02 L/h and central volume is 47.4 L in a one-compartment model lacking the defined metabolite.**
 
-The record failed because the output variable pointed to the central compartment instead of the measured edoxaban, and the model structure did not match the expected parent-metabolite topology. The model was built from the abstract alone, so summary statistics stood in for a fitted model. Additionally, the absorption lag time had no extracted value, so a placeholder would have been used. Extracted — edoxaban: Frel 24 %, kabs 0.104 per hour, CL 9.02 L/h, V 47.4 L.
+The record describes a parent-metabolite structure, yet the parameters and topology reflect a single central compartment. The metabolite M4 is defined as formed from edoxaban, but no separate compartment or formation rate is extracted. The volume of distribution is recorded as 47.4 L without distinguishing central from peripheral components. Extracted — edoxaban: Frel 24 %, kabs 0.104 per hour, CL 9.02 L/h, V 47.4 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has edoxaban, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has edoxaban, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -105,20 +105,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['edoxaban', 'm4', 'metabolism']] | [['edoxaban', 'm4 metabolite', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[central and peripheral volumes]` | 47.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[central volume]` |  | 47.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume]` |  | 42.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[reducing relative bioavailability by]` | 24 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability]` |  | 24 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | edoxaban | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | edoxaban | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['edoxaban', 'm4', 'metabolism']] | [['edoxaban', 'm4 metabolite', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[central and peripheral volumes]` | 47.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume]` |  | 47.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume]` |  | 42.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[reducing relative bioavailability by]` | 24 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability]` |  | 24 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | edoxaban | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | edoxaban | unknown | mismatch |
 
 </details>
 
@@ -145,14 +145,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | fail | Metabolite_C (measured=edoxaban) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | fail | Metabolite_C (measured=edoxaban) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

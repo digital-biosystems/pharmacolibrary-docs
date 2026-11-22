@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intercompartmental clearance was extracted as 0.638 L/Day, but the second reader identified 0.703 L/Day as the correct value.
+> Cemiplimab was rejected for an unreachable peripheral compartment despite a reported intercompartmental clearance of 0.638 L/day and peripheral volume of 1.65 L.
 
 <div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Shang2022_reference" status="rejected" stale="false" population="patients with multiple tumor types" measured-compound="cemiplimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Shang J, Huang L, Huang J, Ren X, Liu Y, Feng Y. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**The intercompartmental clearance was extracted as 0.638 L/Day, but the second reader identified 0.703 L/Day as the correct value.**
+**Cemiplimab was rejected for an unreachable peripheral compartment despite a reported intercompartmental clearance of 0.638 L/day and peripheral volume of 1.65 L.**
 
-The model definition for cemiplimab includes a peripheral compartment linked by an intercompartmental clearance, yet the structural validity check reported the compartment as unreachable. A second reader disagreed with the extracted parameter values, identifying 0.703 L/Day for the intercompartmental clearance instead of the recorded 0.638 L/Day. The record also lists conflicting volume values for the peripheral compartment, with 1.65 L in the main entry versus 2.78 L cited by the second reader. Extracted — cemiplimab: Q 0.638 L/Day, V2 1.65 L.
+The record describes a two-compartment cemiplimab model and reports those intercompartmental clearance and peripheral-volume values. Its total-clearance and central-volume entries have no values, although separate typical-value entries give CL 0.290 L/day and VC 3.32 L; the stated rejection was an unreachable or orphan compartment. The second reader instead reported intercompartmental clearance 0.703 L/day, peripheral volume 2.78 L, and volume of distribution 6.8 L. Extracted — cemiplimab: Q 0.638 L/Day, V2 1.65 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of inter-compartmental clearance: this record has none, the second reading 0.703; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

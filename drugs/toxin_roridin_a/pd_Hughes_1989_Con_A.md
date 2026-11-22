@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided records do not specify the quantitative pharmacodynamic mechanism, potency, or rate parameters for the effect of roridin A on Con A stimulation of splenic lymphocytes.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Hughes_1989`
 - **model family:** `unknown`
 - **driver:** `dose_only`

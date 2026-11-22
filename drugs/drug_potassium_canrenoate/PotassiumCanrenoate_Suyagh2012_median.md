@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 0.13, model 10.2); ka use library defaults, not estimates from this paper (+1 more).
+> The model does not reproduce the paper's terminal half-life (paper 0.13, model 10.2); ka use library defaults, not estimates from this paper (+3 more).
 
 <div class="pk-model-meta" hidden drug="potassium canrenoate" model-id="PotassiumCanrenoate_Suyagh2012_median" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ## Population and dosing
 
-**Population:** paediatric patients · age group infant · n = &gt;=23.
+**Population:** paediatric patients · age group infant.
 
 **Dosed compound ≠ measured compound:** dosed potassium canrenoate, measured canrenone.
 
@@ -51,7 +51,7 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 0.13, model 10.2); ka use library defaults, not estimates from this paper (+1 more).**
+**The model does not reproduce the paper's terminal half-life (paper 0.13, model 10.2); ka use library defaults, not estimates from this paper (+3 more).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is potassium canrenoate's own; they describe canrenone. Extracted — canrenone: CLm/F 1.33 L/hr, V/F 19.6 L, t1/2z 12.1 hr.
 
@@ -89,6 +89,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V/F (L)' is the general volume)
 - population split: 'median' subgroup of Suyagh_2012 (paper reports 2 populations: median, two experimentally determined θs (one for each exponent) estimate)
 - row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 38 linked by role
+- derived CL/F=1.12486 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -145,10 +146,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates |  | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters |  | fail | 1 deterministic parameter derivation(s) emitted | not correctly bound: ['CL/F'] |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable |  | pass | C_central (measured=canrenone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial, agreement 0.417, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 11.2 | 10.22 | 0.9127 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 0.13 | 10.22 | 78.63 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 0.13 | 10.22 | 78.63 | min→SI vs simulated h |

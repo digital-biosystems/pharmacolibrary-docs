@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;tetracaine&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/&quot;},{&quot;label&quot;:&quot;Gapi\u0144ska_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracaine_Sam2009_reference&quot;,&quot;label&quot;:&quot;Sam_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Sam2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracaine_Gapiska2025_reference&quot;,&quot;label&quot;:&quot;Gapi\u0144ska_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracaine_Gapiska2025_reference&quot;,&quot;label&quot;:&quot;Gapi\u0144ska_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tetracaine_Sam2009_reference&quot;,&quot;label&quot;:&quot;Sam_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Sam2009_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tetracaine — `Tetracaine_Gapiska2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The tetracaine model was held back because absorption and reverse distribution rates used library defaults instead of paper estimates.
+> Record rejected because the source paper studies SSR504734, not tetracaine, which is merely mentioned as a procedural anesthetic.
 
-<div class="pk-model-meta" hidden drug="tetracaine" model-id="Tetracaine_Gapiska2025_reference" status="needs_review" stale="false" population="" measured-compound="tetracaine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tetracaine" model-id="Tetracaine_Gapiska2025_reference" status="rejected" stale="false" population="" measured-compound="tetracaine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Gapińska N, Wlaź P, Wyska E, Świerczek A, Kamiński K, Jakubiec M et al. Effect of SSR504734, a Selective Glycine Transporter Type 1 Inhibitor, on Seizure Thresholds, Neurotransmitter Levels, and Inflammatory Markers in Mice. ACS chemical neuroscience 16(6):1210-1226 (2025).
@@ -31,7 +31,7 @@ Gapińska N, Wlaź P, Wyska E, Świerczek A, Kamiński K, Jakubiec M et al. Effe
 <figure class="pk-models-diagram"><img src="drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference/Tetracaine_Gapiska2025_reference.svg" alt="Tetracaine_Gapiska2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -41,7 +41,7 @@ Gapińska N, Wlaź P, Wyska E, Świerczek A, Kamiński K, Jakubiec M et al. Effe
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Gapińska N, Wlaź P, Wyska E, Świerczek A, Kamiński K, Jakubiec M et al. Effe
 
 ### Reviewer guidance
 
-**The tetracaine model was held back because absorption and reverse distribution rates used library defaults instead of paper estimates.**
+**Record rejected because the source paper studies SSR504734, not tetracaine, which is merely mentioned as a procedural anesthetic.**
 
-The record lacks explicit estimates for the absorption rate constant and the reverse distribution rate between the central and peripheral compartments, so library placeholders were used instead. The reviewer confirmed these defaulted parameters are not supported by the source paper, making the simulated concentration profile unreliable. While the apparent clearance and volume of distribution values are present, the missing kinetic constants prevent a valid simulation for tetracaine. Extracted — tetracaine: CL/F 0.0778 L/min/kg, V/F 11.1 L/kg, Q 0.5 mL/min.
+Tetracaine serves as a covariate in the study of SSR504734 pharmacokinetics in mice rather than being the primary drug of interest. The model builder applied default values for the absorption rate constant, lag time, and back-transfer rate, assuming an apparent parameterization with bioavailability of one. A second reviewer disagreed with the two-compartment topology and the inter-compartmental clearance value of 0.5 mL/min, disputing the overall verdict with 0.846 agreement. Extracted — tetracaine: CL/F 0.0778 L/min/kg, V/F 11.1 L/kg, Q 0.5 mL/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 0.5, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 0.5, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -91,15 +91,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.topology_template` | 2C | 1C | mismatch |
 | `gpt-oss-120b` | `values[Q30]` | 0.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q410]` | 3.05 | 3.05 | mismatch |
 
 </details>
 
@@ -126,15 +125,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=tetracaine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | tetracaine (or metabolite) | paper about another drug |  | paper subject is not tetracaine: the paper is about another drug; this one is a co-medication or covariate: The study investigates the pharmacokinetics of SSR504734 in mice, and tetracaine is only mentioned as an ocular anesthetic used for procedural purposes, not as |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=tetracaine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -146,62 +146,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference/Tetracaine_Gapiska2025_reference_modelica.zip" download>Tetracaine_Gapiska2025_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference/Tetracaine_Gapiska2025_reference_fmi.zip" download>Tetracaine_Gapiska2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference/Tetracaine_Gapiska2025_reference_matlab.zip" download>Tetracaine_Gapiska2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference/Tetracaine_Gapiska2025_reference_matlab_simbio.zip" download>Tetracaine_Gapiska2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference/Tetracaine_Gapiska2025_reference_sbml.zip" download>Tetracaine_Gapiska2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference/Tetracaine_Gapiska2025_reference_cellml.zip" download>Tetracaine_Gapiska2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2644 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 9.077e-05 | m3/s |
-| input | model | `VdPerKg` | 0.01113 | m3/kg |
-| input | model | `k12` | 1.07e-08 | 1/s |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Gapińska N, Wlaź P, Wyska E, Świerczek A, Kamiński K, Jakubiec M et al. Effect of SSR504734, a Selective Glycine Transporter Type 1 Inhibitor, on Seizure Thresholds, Neurotransmitter Levels, and Inflammatory Markers in Mice. ACS chemical neuroscience 16(6):1210-1226 (2025). [doi:10.1021/acschemneuro.5c00039](https://doi.org/10.1021/acschemneuro.5c00039)
-
-**This record:** Pharmacolibrary, model `Tetracaine_Gapiska2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_TetracaineGapiska2025reference,
-  title  = {{Pharmacolibrary model Tetracaine_Gapiska2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference},
-  note   = {Parameters from doi:10.1021/acschemneuro.5c00039},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

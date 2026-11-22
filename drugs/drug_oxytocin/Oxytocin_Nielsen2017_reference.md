@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G02A&quot;,&quot;href&quot;:&quot;atc/G02A.md&quot;},{&quot;label&quot;:&quot;oxytocin&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/&quot;},{&quot;label&quot;:&quot;Nielsen_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxytocin_De1995_reference&quot;,&quot;label&quot;:&quot;De_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_De1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_Monks2023_reference&quot;,&quot;label&quot;:&quot;Monks_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_Nielsen2017_reference&quot;,&quot;label&quot;:&quot;Nielsen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxytocin_Monks2023_reference&quot;,&quot;label&quot;:&quot;Monks_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_De1995_reference&quot;,&quot;label&quot;:&quot;De_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_De1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxytocin_Nielsen2017_reference&quot;,&quot;label&quot;:&quot;Nielsen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oxytocin volume of distribution at steady state was inappropriately used as the central volume in a one-compartment model, preventing reproduction of the early distribution phase.
+> The oxytocin record remains under review because its reported 2.5% vaginal bioavailability is disputed by the second reader.
 
 <div class="pk-model-meta" hidden drug="oxytocin" model-id="Oxytocin_Nielsen2017_reference" status="needs_review" stale="false" population="postmenopausal women" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Nielsen EI, Al-Saqi SH, Jonasson AF, Uvnäs-Moberg K. Population Pharmacokinetic
 
 ## Population and dosing
 
-**Population:** postmenopausal women · condition vaginal atrophy · age group adult · n = : 33.
+**Population:** postmenopausal women · condition vaginal atrophy · age group adult.
 
 ## Model
 
@@ -51,13 +51,13 @@ Nielsen EI, Al-Saqi SH, Jonasson AF, Uvnäs-Moberg K. Population Pharmacokinetic
 
 ### Reviewer guidance
 
-**Oxytocin volume of distribution at steady state was inappropriately used as the central volume in a one-compartment model, preventing reproduction of the early distribution phase.**
+**The oxytocin record remains under review because its reported 2.5% vaginal bioavailability is disputed by the second reader.**
 
-The model structure is a one-compartment model, but the record provides volume of distribution at steady state (15 L) without a central volume. The model builder substituted this steady-state value for the central volume, meaning the model cannot reproduce the initial fast distribution phase described by the 5.5-minute distribution half-life. Additionally, the record was built from the paper's abstract alone, so the reported summary statistics stand in for a fitted model. Extracted — oxytocin: CL 27 L/h, Vss 15 L, t1/2α 5.5 minutes, t1/2z 1.2 hours, Fab 2.5 %.
+The source was abstract-only, so reported summary statistics stood in for a fitted model. The model used oxytocin Vss of 15 L as the distribution volume because no central volume was reported; this reproduces AUC and terminal half-life, but not the early distribution phase. The second reader marked the dose compound unknown and did not assign 2.5% to bioavailability, leaving the cross-reader verdict disputed with agreement 0.727. Extracted — oxytocin: CL 27 L/h, Vss 15 L, t1/2α 5.5 minutes, t1/2z 1.2 hours, Fab 2.5 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has oxytocin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -134,14 +134,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=oxytocin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=oxytocin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

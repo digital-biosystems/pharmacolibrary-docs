@@ -76,7 +76,7 @@ Radon is the chemical element of symbol Rn and atomic number 86. It is a rare ra
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-13 01:52 | 1:06:17 | 1/6/0 | 6/1/0 | 0/0/0 | 1,614,506/79,329 | einfracz / qwen3.8-flash-next | 56 | 9/40 | 56/0 | 0 |
+| 2026-11-13 01:52 | 1:06:17 | 1/6/0 | 9/1/0 | 0/0/0 | 1,614,506/79,329 | einfracz / qwen3.8-flash-next | 56 | 9/40 | 56/0 | 0 |
 
 ## Coverage
 

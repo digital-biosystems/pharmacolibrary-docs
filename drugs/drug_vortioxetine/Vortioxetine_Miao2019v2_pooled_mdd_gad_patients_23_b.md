@@ -5,11 +5,11 @@
 
 # vortioxetine — `Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:59 UTC (Rejected), but the paper was screened again on 2026-10-07 19:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The peripheral compartment volume of distribution for vortioxetine was rejected because its unit, 'N = 3183b', is invalid for a volume parameter.
+> The V2 parameter is mislabeled with an absorption rate constant unit (L/h) that conflicts with its structural meaning as a volume, causing rejection.
 
-<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b" status="rejected" stale="true" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b" status="rejected" stale="false" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Miao J, Wang G, Hou J, Areberg J, Zhao Y, Højer AM et al. Pharmacokinetics and Safety of Vortioxetine in the Chinese Population. Advances in therapy 36(11):3134–3146 (2019).
@@ -17,7 +17,7 @@ Miao J, Wang G, Hou J, Areberg J, Zhao Y, Højer AM et al. Pharmacokinetics and 
 
 ## Population and dosing
 
-**Population:** Chinese healthy subjects and patients with MDD · condition major depressive disorder · age group adult · n = &lt;|user|&gt;.
+**Population:** Chinese healthy subjects and patients with MDD · condition major depressive disorder · age group adult.
 
 **Dosing:** 10, 20 mg, oral, multiple, every 24 h.
 
@@ -39,7 +39,7 @@ Miao J, Wang G, Hou J, Areberg J, Zhao Y, Højer AM et al. Pharmacokinetics and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Miao J, Wang G, Hou J, Areberg J, Zhao Y, Højer AM et al. Pharmacokinetics and 
 
 ### Reviewer guidance
 
-**The peripheral compartment volume of distribution for vortioxetine was rejected because its unit, 'N = 3183b', is invalid for a volume parameter.**
+**The V2 parameter is mislabeled with an absorption rate constant unit (L/h) that conflicts with its structural meaning as a volume, causing rejection.**
 
-The record lists a value of 0.95 for the peripheral compartment volume, but the associated unit is a non-pharmacokinetic string. This non-physical unit indicates the parameter was likely an inter-individual variability term rather than a volume, preventing its conversion to standard volume units. Consequently, the model was held back because the software could not map this specific unit to a valid SI quantity. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 39 L/h, V2 0.95 N = 3183b.
+The recorded value of 0.95 for the peripheral volume of distribution (V2) is paired with the unit L/h, which is dimensionally incompatible with a volume parameter. The V2 parameter label is also corrupted by LaTeX formatting artifacts, further obscuring its correct definition. Additionally, the model contains an orphan compartment with no path from the dose, indicating a structural defect in the one-compartment topology. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 39 L/h, V2 0.95 N = 3183b.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vortioxetine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

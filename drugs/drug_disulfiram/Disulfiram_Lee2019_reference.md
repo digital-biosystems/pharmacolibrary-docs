@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record is on hold because the nonlinear metabolic pathway connecting disulfiram to four metabolites exceeds the supported model structures.
+> Disulfiram was held because its nonlinear metabolism topology uses Vmax/Km, whose value is not reported, and falls outside the available model structures.
 
 <div class="pk-model-meta" hidden drug="disulfiram" model-id="Disulfiram_Lee2019_reference" status="needs_review" stale="false" population="HIV+ ART-suppressed adults" measured-compound="disulfiram" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -48,13 +48,13 @@ Lee SA, Elliott JH, McMahon J, Hartogenesis W, Bumpus NN, Lifson JD et al. Popul
 
 ### Reviewer guidance
 
-**The record is on hold because the nonlinear metabolic pathway connecting disulfiram to four metabolites exceeds the supported model structures.**
+**Disulfiram was held because its nonlinear metabolism topology uses Vmax/Km, whose value is not reported, and falls outside the available model structures.**
 
-The model describes the sequential metabolism of disulfiram into DDTC, DDTC-Me, DETC-MeSO, and carbamathione. The first two metabolic steps use a Vmax/Km nonlinear parameter, while the subsequent steps use CLM2 and CLM3. The second reader agrees with the defined metabolic chain but identifies a discrepancy in the nomenclature of the metabolites. Extracted — disulfiram: CL 0.53 L/hr, V 1.3 L, kabs 0.08 hr−1.
+The record links disulfiram through four sequential metabolites; the first two metabolism links use Vmax/Km, while no value for that parameter is given. The stated limitation is the nonlinear model structure, not a reported failure of disulfiram’s clearance (0.53 L/hr), volume (1.3 L), or absorption rate constant (0.08 hr−1). The second reader gives fuller metabolite names but describes the same sequence. Extracted — disulfiram: CL 0.53 L/hr, V 1.3 L, kabs 0.08 hr−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has disulfiram → ddtc (m1) (metabolism); ddtc (m1) → ddtc-me (m2) (metabolism); ddtc-me (m2) → detc-meso (m3) (metabolism) …, the second reading disulfiram → n,n-diethyldithiocarbamate (ddtc) (metabolism); n,n-diethyldithiocarbamate (ddtc) → diethyldithiocarbamate-methyl ester (ddtc-me) (metabolism); diethyldithiocarbamate-methyl ester (ddtc-me) → s-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso) (metabolism) …. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

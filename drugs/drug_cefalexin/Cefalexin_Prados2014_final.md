@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefalexin&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/&quot;},{&quot;label&quot;:&quot;Prados_2014 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefalexin_Prados2014_base&quot;,&quot;label&quot;:&quot;Prados_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefalexin_Prados2014_final&quot;,&quot;label&quot;:&quot;Prados_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefalexin_Prados2014_base&quot;,&quot;label&quot;:&quot;Prados_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefalexin_Prados2014_final&quot;,&quot;label&quot;:&quot;Prados_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_final.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefalexin — `Cefalexin_Prados2014_final`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The cephalexin model was held because the apparent parameterization assumed unit bioavailability without explicit justification in the record.
-
-<div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Prados2014_final" status="needs_review" stale="false" population="adult and aged dogs" measured-compound="cephalexin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Prados2014_final" status="curated_candidate" stale="false" population="adult and aged dogs" measured-compound="cephalexin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Prados AP, Schaiquevich P, Kreil V, Monfrinotti A, Quaine P, Tarragona L et al. A population pharmacokinetic approach to describe cephalexin disposition in adult and aged dogs. Veterinary medicine international 2014:789353 (2014).
@@ -33,8 +31,6 @@ Prados AP, Schaiquevich P, Kreil V, Monfrinotti A, Quaine P, Tarragona L et al. 
 <figure class="pk-models-diagram"><img src="drugs/drug_cefalexin/Cefalexin_Prados2014_final/Cefalexin_Prados2014_final.svg" alt="Cefalexin_Prados2014_final diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Tlag (h) | tlag | 0.143 | h |
@@ -44,7 +40,7 @@ Prados AP, Schaiquevich P, Kreil V, Monfrinotti A, Quaine P, Tarragona L et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +50,11 @@ Prados AP, Schaiquevich P, Kreil V, Monfrinotti A, Quaine P, Tarragona L et al. 
 
 ### Reviewer guidance
 
-**The cephalexin model was held because the apparent parameterization assumed unit bioavailability without explicit justification in the record.**
-
-The record lists parameters like Vd/F and Ke/F, but the model builder substituted a bioavailability of 1.0 and metabolic fraction of 1.0. This assumption was flagged as unacceptable because the paper does not explicitly state that oral bioavailability is 100%, making the apparent parameters unverifiable against true PK parameters. Extracted — cefalexin: tlag 0.143 h, kabs 1.39 h−1, V/F 565 mL/kg, kel 0.34 h−1.
+**Every check that could be run on this record passed.**
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -138,7 +132,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=cephalexin) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_t_half_terminal | reference | pass | 1.8 | 2.037 | 1.131 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 2.38 | 2.037 | 0.8557 | h→SI vs simulated h |
 

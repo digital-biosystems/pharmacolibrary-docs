@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Overgaard_2021 \u00b7 healthy_subjects&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Jensen2017_reference&quot;,&quot;label&quot;:&quot;Jensen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Jensen2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2021_healthy_subjects&quot;,&quot;label&quot;:&quot;Overgaard_2021_healthy_subjects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2021_healthy_subjects.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Overgaard2021_subjects_with_t2d&quot;,&quot;label&quot;:&quot;Overgaard_2021_subjects_with_t2d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2021_subjects_with_t2d.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_estimate&quot;,&quot;label&quot;:&quot;Overgaard_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Guo_2025_weight_reduction&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 weight reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/pd_Guo_2025_weight_reduction.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Jensen2017_reference&quot;,&quot;label&quot;:&quot;Jensen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Jensen2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2021_healthy_subjects&quot;,&quot;label&quot;:&quot;Overgaard_2021_healthy_subjects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2021_healthy_subjects.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Overgaard2021_subjects_with_t2d&quot;,&quot;label&quot;:&quot;Overgaard_2021_subjects_with_t2d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2021_subjects_with_t2d.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Semaglutide parameters k13 and k31 were left at library defaults rather than extracted from Overgaard_2021, rendering the model profile unsupported.
+> The semaglutide model was held back because intercompartmental rate constants were missing and defaulted, rather than estimated from the paper.
 
-<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2021_healthy_subjects" status="needs_review" stale="false" population="healthy volunteers and subjects with renal or hepatic impairment" measured-compound="semaglutide" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2021_healthy_subjects" status="needs_review" stale="false" population="healthy volunteers and subjects with renal or hepatic impairment and type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharmacokinetics of Oral Semaglutide: Analyses of Data from Clinical Pharmacology Trials. Clinical pharmacokinetics 60(10):1335–1348 (2021).
@@ -17,9 +17,9 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 
 ## Population and dosing
 
-**Population:** healthy volunteers and subjects with renal or hepatic impairment · condition healthy · age group adult · n = &gt;.
+**Population:** healthy volunteers and subjects with renal or hepatic impairment and type 2 diabetes · condition healthy, type 2 diabetes, renal impairment, hepatic impairment · age group adult · n = 376.
 
-**Dosing:** 5, 10 mg, oral, multiple, every 24 h.
+**Dosing:** 5, 10 mg, oral, multiple.
 
 ## Model
 
@@ -41,12 +41,12 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 | Vtotal(L) | V | 7.2 | L |
 | Q(L/h) | Q | 0.28 | L/h |
 | ka(h−1) | kabs | 2.09 | h−1 |
-| F(%) | Fab | 0.76 |  |
+| F(%) | Fab | 0.76 | % |
 | t½(h) | t1/2z | 158 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,11 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 
 ### Reviewer guidance
 
-**Semaglutide parameters k13 and k31 were left at library defaults rather than extracted from Overgaard_2021, rendering the model profile unsupported.**
+**The semaglutide model was held back because intercompartmental rate constants were missing and defaulted, rather than estimated from the paper.**
 
-The record identifies k13 and k31 as using placeholder values instead of estimates from the paper. The model builder noted these specific intercompartmental clearance parameters were not explicitly provided in the source data. Consequently, the simulated pharmacokinetic profile relies on assumptions not validated by the cited study's healthy volunteer or impairment population data. Extracted — semaglutide: CL 0.033 L/h, V1 3.4 L, V2 3.9 L, V 7.2 L, Q 0.28 L/h, kabs 2.09 h−1, Fab 0.76, t1/2z 158 h.
+The record defines a 3-compartment structure with an intercompartmental clearance of 0.28 L/h but omits the specific forward and reverse rate constants. Since these values were not extracted, they were left at generic placeholder levels, meaning the simulated profile relies on assumptions not supported by the Overgaard_2021 data. These unreported parameters affect the predicted drug distribution but lack explicit justification in the source study. Extracted — semaglutide: CL 0.033 L/h, V1 3.4 L, V2 3.9 L, V 7.2 L, Q 0.28 L/h, kabs 2.09 h−1, Fab 0.76 %, t1/2z 158 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0.033, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -74,8 +74,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 | Vtotal(L) | `Q61` · V | 7.2 | L | 0.0072 | m3 | l | llm (0.6) | Tab2:row1:col5 |
 | Q(L/h) | `Q30` · Q | 0.28 | L/h | 7.778e-08 | m3/s | l/h | exact (1) | Tab2:row1:col6 |
 | ka(h−1) | `Q49` · kabs | 2.09 | h−1 | 0.0005806 | 1/s | 1/h | exact (1) | Tab2:row1:col7 |
-| F(%) | `Q40` · Fab | 0.76 |  |  |  |  | exact (1) | Tab2:row1:col8 |
-| t½(h) | `Q57` · t1/2z | 158 | h | 5.688e+05 | s | h | llm (0.6) | Tab2:row1:col9 |
+| F(%) | `Q40` · Fab | 0.76 | % |  |  |  | exact (1) | Tab2:row1:col8 |
+| t½(h) | `Q57` · t1/2z | 158 | h | 5.688e+05 | s | h | half_life_rule (0.95) | Tab2:row1:col9 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -89,7 +89,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=semaglutide
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
 - population split: 'healthy subjects' subgroup of Overgaard_2021 (paper reports 2 populations: healthy subjects, subjects with t2d)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -100,22 +102,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
+| `gpt-oss-120b` | confirmed | 1.0 (13/13 fields) | none |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl].value` | 0.033 |  | mismatch |
-| `gpt-oss-120b` | `parameters[f].value` | 0.76 |  | mismatch |
-| `gpt-oss-120b` | `parameters[vtotal].value` | 7.2 |  | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -153,8 +147,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=semaglutide) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 3C → PK_3C* | PK_3C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped |  | 2913 | non-numeric value |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| T1_t_half_terminal | reference | skipped | 1 | 2913 | unresolved time unit 'week' |
+| T1_t_half_terminal | reference | skipped | 1 | 2913 | unresolved time unit 'week' |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -226,7 +222,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 5 mg, single dose, first-order absorption (ka 2.09 /h, F 0.76). Doses in the paper: 5, 10 mg.
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 2.09 /h, F 0.76). Doses in the paper: 5–10 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_semaglutide/Semaglutide_Overgaard2021_healthy_subjects/Semaglutide_Overgaard2021_healthy_subjects_params.json" metaurl="assets/fmu/PK_3C_enteral.vr.json" wasmurl="assets/fmu/PK_3C_enteral.js" controlsurl="drugs/drug_semaglutide/Semaglutide_Overgaard2021_healthy_subjects/Semaglutide_Overgaard2021_healthy_subjects_sim_controls.json"></dbs-fmusim>
 
@@ -236,4 +232,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2021_healthy_subjects&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2021_healthy_subjects%0APaper%3A%20Overgaard_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2021_healthy_subjects%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 16:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 10:19 UTC</sub>

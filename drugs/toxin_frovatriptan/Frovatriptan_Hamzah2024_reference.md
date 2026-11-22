@@ -149,30 +149,13 @@ _All readers agree on the compared fields of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_frovatriptan/Frovatriptan_Hamzah2024_reference/Frovatriptan_Hamzah2024_reference_matlab.zip" download>Frovatriptan_Hamzah2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_frovatriptan/Frovatriptan_Hamzah2024_reference/Frovatriptan_Hamzah2024_reference_sbml.zip" download>Frovatriptan_Hamzah2024_reference_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_frovatriptan/Frovatriptan_Hamzah2024_reference/Frovatriptan_Hamzah2024_reference_cellml.zip" download>Frovatriptan_Hamzah2024_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Hamzah ML, Kassab HJ. Formulation and Characterization of Intranasal Drug Delivery of Frovatriptan-Loaded Binary Ethosomes Gel for Brain Targeting. Nanotechnology, science and applications 17:1–19 (2024). [doi:10.2147/NSA.S442951](https://doi.org/10.2147/NSA.S442951)
-
-**This record:** Pharmacolibrary, model `Frovatriptan_Hamzah2024_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_frovatriptan/Frovatriptan_Hamzah2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_FrovatriptanHamzah2024reference,
-  title  = {{Pharmacolibrary model Frovatriptan_Hamzah2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_frovatriptan/Frovatriptan_Hamzah2024_reference},
-  note   = {Parameters from doi:10.2147/NSA.S442951},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

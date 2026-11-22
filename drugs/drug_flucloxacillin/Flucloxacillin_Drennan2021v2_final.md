@@ -4,11 +4,11 @@
 
 # flucloxacillin — `Flucloxacillin_Drennan2021v2_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:40 UTC (Rejected), but the paper was screened again on 2026-10-07 10:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The flucloxacillin record was rejected because the intrinsic clearance covariate was negative, at -0.653.
+> The flucloxacillin record was rejected because the intrinsic clearance covariate was negative, at -0.653.
 
-<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Drennan2021v2_final" status="rejected" stale="true" population="adults with staphylococcal infections and healthy adults" measured-compound="free flucloxacillin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Drennan2021v2_final" status="rejected" stale="false" population="adults with staphylococcal infections and healthy adults" measured-compound="free flucloxacillin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Drennan PG, Green JK, Gardiner SJ, Metcalf SCL, Kirkpatrick CMJ, Everts RJ et al. Population pharmacokinetics of free flucloxacillin in patients treated with oral flucloxacillin plus probenecid. British journal of clinical pharmacology 87(12):4681–4690 (2021).
@@ -16,7 +16,7 @@ Drennan PG, Green JK, Gardiner SJ, Metcalf SCL, Kirkpatrick CMJ, Everts RJ et al
 
 ## Population and dosing
 
-**Population:** adults with staphylococcal infections and healthy adults · condition staphylococcal infection · age group adult · n = $56$ $45$ $11$ (45 participants + 11 healthy volunteers) = 56.
+**Population:** adults with staphylococcal infections and healthy adults · condition staphylococcal infection · age group adult.
 
 **Dosing:** 1000 mg, oral, multiple, every 8 h.
 
@@ -44,7 +44,7 @@ Drennan PG, Green JK, Gardiner SJ, Metcalf SCL, Kirkpatrick CMJ, Everts RJ et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Diisobutyl phthalate&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/&quot;},{&quot;label&quot;:&quot;Lorber_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiisobutylPhthalate_Koch2012_reference&quot;,&quot;label&quot;:&quot;Koch_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DiisobutylPhthalate_PalaciosArreola2022_reference&quot;,&quot;label&quot;:&quot;Palacios-Arreola_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiisobutylPhthalate_Koch2012_reference&quot;,&quot;label&quot;:&quot;Koch_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DiisobutylPhthalate_PalaciosArreola2022_reference&quot;,&quot;label&quot;:&quot;Palacios-Arreola_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Diisobutyl phthalate" model-id="DiisobutylPhthalate_Lorber2013_reference" status="rejected" stale="false" population="single individual (controlled dosing) and 5 individuals (fasting study)" measured-compound="metabolites of Diisobutyl phthalate (specifically DiBP metabolites in urine and blood)" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -43,7 +43,13 @@ _No resolved parameters._
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 

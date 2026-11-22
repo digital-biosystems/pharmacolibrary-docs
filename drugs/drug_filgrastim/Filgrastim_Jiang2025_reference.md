@@ -17,7 +17,7 @@ Jiang X, Cha JS, Jin BH, Kim CO, Chae D. Population Pharmacokinetic-Pharmacodyna
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 0.35, 0.7 mg, sc, single.
 

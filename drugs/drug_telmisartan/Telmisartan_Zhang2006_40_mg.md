@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Zhang_2006 \u00b7 40_mg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Baek2013_reference&quot;,&quot;label&quot;:&quot;Baek_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Baek2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Bajcetic2007_reference&quot;,&quot;label&quot;:&quot;Bajcetic_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Bajcetic2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Chen2013_reference&quot;,&quot;label&quot;:&quot;Chen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chen2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Wells2010_reference&quot;,&quot;label&quot;:&quot;Wells_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Wells2010_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_plasma_potassium&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 plasma potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_plasma_potassium.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Baek2013_reference&quot;,&quot;label&quot;:&quot;Baek_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Baek2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Bajcetic2007_reference&quot;,&quot;label&quot;:&quot;Bajcetic_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Bajcetic2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Chae2018_reference&quot;,&quot;label&quot;:&quot;Chae_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Duncton2016_reference&quot;,&quot;label&quot;:&quot;Duncton_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Duncton2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_2_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_4_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_4_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_4_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_dose_8_mg_kg&quot;,&quot;label&quot;:&quot;Hao_2007_dose_8_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_dose_8_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Wells2010_reference&quot;,&quot;label&quot;:&quot;Wells_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Wells2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_plasma_potassium&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 plasma potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_plasma_potassium.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telmisartan — `Telmisartan_Zhang2006_40_mg`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:32 UTC (Rejected), but the paper was screened again on 2026-11-04 16:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Telmisartan model was rejected because the elimination rate constant unit could not be standardized.
+> The elimination rate constant for telmisartan, recorded as 0.033 h, was rejected due to a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Zhang2006_40_mg" status="rejected" stale="true" population="healthy Chinese adults" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Zhang2006_40_mg" status="rejected" stale="false" population="healthy Chinese males" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Zhang P, Zhang Y, Chen X, Li R, Yin J, Zhong D. Pharmacokinetics of telmisartan in healthy Chinese subjects after oral administration of two dosage levels. Arzneimittel-Forschung 56(8):569–573 (2006).
@@ -17,7 +17,7 @@ Zhang P, Zhang Y, Chen X, Li R, Yin J, Zhong D. Pharmacokinetics of telmisartan 
 
 ## Population and dosing
 
-**Population:** healthy Chinese adults · condition healthy · age group adult.
+**Population:** healthy Chinese males · condition healthy · age group adult · n = 36.
 
 **Dosing:** 40, 80 mg, oral, single.
 
@@ -46,7 +46,7 @@ Zhang P, Zhang Y, Chen X, Li R, Yin J, Zhong D. Pharmacokinetics of telmisartan 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Zhang P, Zhang Y, Chen X, Li R, Yin J, Zhong D. Pharmacokinetics of telmisartan 
 
 ### Reviewer guidance
 
-**Telmisartan model was rejected because the elimination rate constant unit could not be standardized.**
+**The elimination rate constant for telmisartan, recorded as 0.033 h, was rejected due to a dimension mismatch.**
 
-The elimination rate constant was reported in hours, which is dimensionally incorrect for a first-order rate constant. This non-standard unit prevented the value from being expressed in compatible SI terms. Consequently, the parameter lacked a valid numerical value for the model. Extracted — telmisartan: Cmax 163 ng/mL, tmax 1.8 h, t1/2z 23.6 h, kel 0.033 h, AUCt 1.46e+03 ng·h/mL, AUC∞ 1.61e+03 ng·h/mL, CL/F 723 mL/min, V/F 1.45e+03 L, … (+2).
+The parameter is defined as an elimination rate constant, which requires an inverse time unit, but the record lists the unit as hours. This unit could not be converted to a standard SI value, leaving the parameter without a valid quantity. Consequently, the record was rejected based on this structural parameter conflict. Extracted — telmisartan: Cmax 163 ng/mL, tmax 1.8 h, t1/2z 23.6 h, kel 0.033 h, AUCt 1.46e+03 ng·h/mL, AUC∞ 1.61e+03 ng·h/mL, CL/F 723 mL/min, V/F 1.45e+03 L, … (+2).
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -68,12 +68,12 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Cmax (ng/mL) | `Q32` · Cmax | 163.2 | ng/mL |  |  | ng/ml | exact (1) | Zhang_2006_table_p4_1:row0:col1 |
+| Cmax (ng/mL) | `Q32` · Cmax | 163.2 | ng/mL | 0.0001632 | kg/m3 | ng/ml | exact (1) | Zhang_2006_table_p4_1:row0:col1 |
 | tmax (h) | `Q56` · tmax | 1.8 | h | 6480 | s | h | exact (1) | Zhang_2006_table_p4_1:row1:col1 |
-| t1/2 (h) | `Q57` · t1/2z | 23.6 | h | 8.496e+04 | s | h | exact (1) | Zhang_2006_table_p4_1:row2:col1 |
+| t1/2 (h) | `Q57` · t1/2z | 23.6 | h | 8.496e+04 | s | h | half_life_rule (0.95) | Zhang_2006_table_p4_1:row2:col1 |
 | ke (h) | `Q47` · kel | 0.033 | h |  |  | h | exact (1) | Zhang_2006_table_p4_1:row3:col1 |
-| AUC0-t (ng·h/mL) | `Q19` · AUCt | 1456 | ng·h/mL |  |  | (h·ng)/ml | exact (1) | Zhang_2006_table_p4_1:row4:col1 |
-| AUC0-∞ (ng·h/mL) | `Q17` · AUC∞ | 1611 | ng·h/mL |  |  | (h·ng)/ml | exact (1) | Zhang_2006_table_p4_1:row5:col1 |
+| AUC0-t (ng·h/mL) | `Q19` · AUCt | 1456 | ng·h/mL | 5.242 | kg*s/m3 | (h·ng)/ml | exact (1) | Zhang_2006_table_p4_1:row4:col1 |
+| AUC0-∞ (ng·h/mL) | `Q17` · AUC∞ | 1611 | ng·h/mL | 5.8 | kg*s/m3 | (h·ng)/ml | exact (1) | Zhang_2006_table_p4_1:row5:col1 |
 | CL/F (mL/min) | `Q27` · CL/F | 722.9 | mL/min | 1.205e-05 | m3/s | ml/min | exact (1) | Zhang_2006_table_p4_1:row6:col1 |
 | Vd/F (L) | `Q76` · V/F | 1453 | L | 1.453 | m3 | l | exact (1) | Zhang_2006_table_p4_1:row7:col1 |
 | Ka | `Q49` · kabs | 4.53 | /h | 0.001258 | 1/s | 1/h | review_gapfill (0.7) | Chae_2018:review |
@@ -90,15 +90,13 @@ Independently confirmed by `gpt-oss-120b`.
 - unit_dimension_mismatch: 'ke (h)' → Q47 (unit '[time]' vs ontology '1 / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=telmisartan
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - population split: '40 mg (n = 18)' subgroup of Zhang_2006 (paper reports 2 populations: 40 mg (n = 18), 80 mg (n = 18))
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q49 (kabs) from Chae_2018's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Chae_2018's review values (primary lacked it)
-
-**Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 
 ## Validation
 
@@ -161,4 +159,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Zhang2006_40_mg&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Zhang2006_40_mg%0APaper%3A%20Zhang_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Zhang2006_40_mg%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 16:54 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 09:29 UTC</sub>

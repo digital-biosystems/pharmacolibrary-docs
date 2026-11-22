@@ -36,8 +36,8 @@ Nelfinavir is a protease inhibitor used to treat HIV infections. It is taken by 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub> | [Hirt_2006_2_reference](drugs/drug_nelfinavir/Nelfinavir_Hirt2006v2_reference.md) | held back | 1-compartment, oral | 5 | Hirt D et al., Age-related effects on nelfinavir and M…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.50.3.910-916.2006](https://doi.org/10.1128/AAC.50.3.910-916.2006) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Jackson_2000_reference](drugs/drug_nelfinavir/Nelfinavir_Jackson2000_reference.md) | — | 1-compartment (no model) | 2 | Jackson KA et al., A population pharmacokinetic analysis o…, Antimicrobial agents and ch… (2000) | [10.1128/AAC.44.7.1832-1837.2000](https://doi.org/10.1128/AAC.44.7.1832-1837.2000) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Crommentuyn_2006_reference](drugs/drug_nelfinavir/Nelfinavir_Crommentuyn2006_reference.md) | — | parent + metabolite (no model) | 2 | Crommentuyn KM et al., Population pharmacokinetics and pharmac…, The Pediatric infectious di… (2006) | [10.1097/01.inf.0000215242.70300.95](https://doi.org/10.1097/01.inf.0000215242.70300.95) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hirt_2006_reference](drugs/drug_nelfinavir/Nelfinavir_Hirt2006_reference.md) | — | parent + metabolite (no model) | 6 | Hirt D et al., Pregnancy-related effects on nelfinavir…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01596-05](https://doi.org/10.1128/AAC.01596-05) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Crommentuyn_2006_reference](drugs/drug_nelfinavir/Nelfinavir_Crommentuyn2006_reference.md) | — | parent + metabolite (no model) | 2 | Crommentuyn KM et al., Population pharmacokinetics and pharmac…, The Pediatric infectious di… (2006) | [10.1097/01.inf.0000215242.70300.95](https://doi.org/10.1097/01.inf.0000215242.70300.95) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hirt_2006_reference](drugs/drug_nelfinavir/Nelfinavir_Hirt2006_reference.md) | — | parent + metabolite (no model) | 6 | Hirt D et al., Pregnancy-related effects on nelfinavir…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01596-05](https://doi.org/10.1128/AAC.01596-05) |
 
 ## Pharmacodynamics (PD)
 
@@ -48,26 +48,6 @@ Nelfinavir is a protease inhibitor used to treat HIV infections. It is taken by 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gidari_2022_PFU_mL_3](drugs/drug_nelfinavir/pd_Gidari_2022_PFU_mL_3.md) | Viral titer (plaque-forming units) of SARS-CoV-2 strain P.1 ← nelfinavir · direct sigmoid Emax (Hill) effect | — | Gidari A et al., Nelfinavir: An Old Ally in the COVID-19…, Microorganisms (2022) | [10.3390/microorganisms10122471](https://doi.org/10.3390/microorganisms10122471) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gidari_2022_PFU_mL_4](drugs/drug_nelfinavir/pd_Gidari_2022_PFU_mL_4.md) | Viral titer (plaque-forming units) of SARS-CoV-2 strain B.1.617.2 ← nelfinavir · direct sigmoid Emax (Hill) effect | — | Gidari A et al., Nelfinavir: An Old Ally in the COVID-19…, Microorganisms (2022) | [10.3390/microorganisms10122471](https://doi.org/10.3390/microorganisms10122471) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Xie_2020_Nluc_signal](drugs/drug_nelfinavir/pd_Xie_2020_Nluc_signal.md) | SARS-CoV-2-Nluc luciferase signal (relative, normalized to DMSO control) in A549-hACE2 cells ← nelfinavir · direct sigmoid Emax (Hill) effect | — | Xie X et al., A nanoluciferase SARS-CoV-2 for rapid n…, Nature communications (2020) | [10.1038/s41467-020-19055-7](https://doi.org/10.1038/s41467-020-19055-7) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nelfinavir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP2C19` inducer/substrate, `CYP2C9` inducer, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `SLCO2B1` inhibitor, `UGT1A1` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `UGT1A1` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inducer/inhibitor/substrate, `ABCB11` substrate, `ABCG2` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -81,13 +61,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:28 | 8:41 | 2/2/0 | 2/0/0 | 0/0/0 | 414,290/28,496 | ollama / glm-5.3-flash | 8 | 1/7 | 8/0 | 0 |
+| 2026-10-07 17:28 | 8:41 | 2/2/0 | 5/0/0 | 0/0/0 | 414,290/28,496 | ollama / glm-5.3-flash | 8 | 1/7 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 52 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 2
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

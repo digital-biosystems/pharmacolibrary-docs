@@ -4,11 +4,11 @@
 
 # mitomycin — `Mitomycin_Shimizu1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:48 UTC (Rejected), but the paper was screened again on 2026-10-06 18:58 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The mitomycin volume of distribution value of 0.183 l/kg caused a dimension mismatch, leading to rejection.
+> The mitomycin volume of distribution parameter carries concentration units (ng/ml) instead of volume units, causing a dimensional conflict.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Shimizu1991_reference" status="rejected" stale="true" population="patients with non-small cell lung cancer" measured-compound="mitomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Shimizu1991_reference" status="rejected" stale="false" population="patients with non-small cell lung cancer" measured-compound="mitomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shimizu E, Nakamura Y, Mukai J, Tani K, Yamashita T, Hojo F et al. Pharmacokinetics of bronchial artery infusion of mitomycin in patients with non-small cell lung cancer. European journal of cancer (Oxford, England : 1990) 27(8):1046–1048 (1991).
@@ -38,7 +38,7 @@ Shimizu E, Nakamura Y, Mukai J, Tani K, Yamashita T, Hojo F et al. Pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Shimizu E, Nakamura Y, Mukai J, Tani K, Yamashita T, Hojo F et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**The mitomycin volume of distribution value of 0.183 l/kg caused a dimension mismatch, leading to rejection.**
+**The mitomycin volume of distribution parameter carries concentration units (ng/ml) instead of volume units, causing a dimensional conflict.**
 
-The record was constructed from the abstract alone, so reported summary statistics stood in for a fitted model. The volume of distribution parameter was flagged for a dimension mismatch on a structural parameter. A second reader disagreed with the back-extrapolated plasma drug concentration value of 308 ng/ml, citing a null value instead. Extracted — mitomycin: t1/2z 34.3 min, AUC 166 ng h/ml, Cmax 178 ng/ml, C0 308 ng/ml, V 0.183 l/kg.
+The extracted volume of distribution (0.183 l/kg) is associated with a dimension check that expected a volume dimension ([mass]*[time]/[length]^3) but received a concentration dimension ([mass]/[length]^3), specifically matching the ng/ml unit. Because the record relied on abstract-only summary statistics, the fitted model parameters were not available to resolve this inconsistency. A second reader also disagreed on the back-extrapolated concentration value, finding no corresponding data where 308 ng/ml was recorded. Extracted — mitomycin: t1/2z 34.3 min, AUC 166 ng h/ml, Cmax 178 ng/ml, C0 308 ng/ml, V 0.183 l/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of back-extrapolated plasma drug concentration: this record has 308, the second reading none. That field does not shape the model.
 

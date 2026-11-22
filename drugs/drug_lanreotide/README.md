@@ -25,7 +25,7 @@ Lanreotide is a somatostatin analogue used to treat acromegaly and neuroendocrin
 
 ## Start here
 
-> **Buil-Bruna_2016_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with gastroenteropancreatic neuroendocrine tumors, n = &gt;290&lt;. [Run it in the simulator](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md?tab=Simulation) · [record](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md)
+> **Buil-Bruna_2016_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with gastroenteropancreatic neuroendocrine tumors. [Run it in the simulator](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md?tab=Simulation) · [record](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -42,19 +42,6 @@ Lanreotide is a somatostatin analogue used to treat acromegaly and neuroendocrin
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Cendros_2005_GH](drugs/drug_lanreotide/pd_Cendros_2005_GH.md) | serum growth hormone (GH) concentrations ← lanreotide · direct Emax (saturable) effect | ▶ model + simulator | Cendros JM et al., Pharmacokinetics and population pharmac…, Metabolism: clinical and ex… (2005) | [10.1016/j.metabol.2005.04.014](https://doi.org/10.1016/j.metabol.2005.04.014) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kidd_2009_5HT_secretion](drugs/drug_lanreotide/pd_Kidd_2009_5HT_secretion.md) | serotonin secretion ← lanreotide · direct sigmoid Emax (Hill) effect | — | Kidd M et al., IL1beta- and LPS-induced serotonin secr…, Neurogastroenterology and m… (2009) | [10.1111/j.1365-2982.2008.01210.x](https://doi.org/10.1111/j.1365-2982.2008.01210.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lanreotide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: SSTR2 (target), SSTR5 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

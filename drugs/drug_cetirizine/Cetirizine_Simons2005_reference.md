@@ -17,7 +17,7 @@ Simons FE. Population pharmacokinetics of levocetirizine in very young children:
 
 ## Population and dosing
 
-**Population:** very young children · condition healthy · age group child · n = &gt;=343.
+**Population:** very young children · condition healthy · age group child.
 
 **Dosed compound ≠ measured compound:** dosed cetirizine, measured levocetirizine.
 

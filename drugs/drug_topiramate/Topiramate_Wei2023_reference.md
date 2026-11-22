@@ -17,7 +17,7 @@ Wei S, Li X, Zhang Q, Wu H, Wu Y, Zhao Z et al. Population pharmacokinetics of t
 
 ## Population and dosing
 
-**Population:** Chinese children with epilepsy · condition epilepsy · age group child · n = &gt;=181.
+**Population:** Chinese children with epilepsy · condition epilepsy · age group child.
 
 ## Model
 

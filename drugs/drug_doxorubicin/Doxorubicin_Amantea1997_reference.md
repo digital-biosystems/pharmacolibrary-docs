@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Amantea_1997 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Frenay1989_reference&quot;,&quot;label&quot;:&quot;Frenay_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Joerger2007_reference&quot;,&quot;label&quot;:&quot;Joerger_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Joerger2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kontny2013_reference&quot;,&quot;label&quot;:&quot;Kontny_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kontny2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kunarajah2017_reference&quot;,&quot;label&quot;:&quot;Kunarajah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kunarajah2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Liang2016_reference&quot;,&quot;label&quot;:&quot;Liang_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Liang2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_w&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 w&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Choi_2021_w.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Andrean_2025_N_t&quot;,&quot;label&quot;:&quot;Andrean_2025 \u00b7 N(t)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Andrean_2025_N_t.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Luo2019_reference&quot;,&quot;label&quot;:&quot;Luo_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Luo2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Qiu2017_reference&quot;,&quot;label&quot;:&quot;Qiu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Qiu2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Yoshida1994_non_hd_group&quot;,&quot;label&quot;:&quot;Yoshida_1994_non_hd_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Yoshida1994_non_hd_group.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_Amantea1997_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> V, Vss, Q and CL have no unit.
+> The elimination rate constant for doxorubicin is reported as 53.3 hr, conflicting with the required inverse time unit for that structural parameter.
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Amantea1997_reference" status="needs_review" stale="false" population="patients with AIDS-related Kaposi&#39;s sarcoma" measured-compound="total plasma doxorubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Amantea1997_reference" status="rejected" stale="false" population="adults with AIDS-related Kaposi&#39;s sarcoma" measured-compound="doxorubicin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Amantea MA, Forrest A, Northfelt DW, Mamelok R. Population pharmacokinetics and pharmacodynamics of pegylated-liposomal doxorubicin in patients with AIDS-related Kaposi's sarcoma. Clinical pharmacology and therapeutics 61(3):301–311 (1997).
@@ -17,36 +17,36 @@ Amantea MA, Forrest A, Northfelt DW, Mamelok R. Population pharmacokinetics and 
 
 ## Population and dosing
 
-**Population:** patients with AIDS-related Kaposi's sarcoma · condition AIDS-related Kaposi's sarcoma · age group adult · n = &gt;&lt;/unknown.
+**Population:** adults with AIDS-related Kaposi's sarcoma · condition AIDS-related Kaposi's sarcoma · age group adult.
 
 **Dosing:** 10, 20 mg/m2, iv, multiple, every 21 h.
 
-**Dosed compound ≠ measured compound:** dosed pegylated-liposomal doxorubicin, measured total plasma doxorubicin.
+**Dosed compound ≠ measured compound:** dosed pegylated-liposomal doxorubicin, measured doxorubicin.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Vc (L/m²) | V | 2.29 | L/m² |
+| Vc (L/m²) | V1 | 2.29 | L/m² |
 | Vss (L/m²) | Vss | 2.94 | L/m² |
 | CLd (L/hr/m²) | Q | 0.616 | L/hr/m² |
-| CLt (L/hr/m²) | CL | 0.0581 | L/hr/m² |
+| CLt (L/hr/m²) | CLm/F | 0.0581 | L/hr/m² |
 | t1/2λ1 (hr) | t1/2α | 4.45 | hr |
-| t1/2λ2 (hr) | t1/2β | 53.3 | hr |
+| t1/2λ2 (hr) | kel | 53.3 | hr |
 | Cmax (µg/ml) | Cmax | 8.57 | µg/ml |
-| AUC (µg/ml · hr)* | AUC∞ | 28.2 | µg/ml · hr |
+| AUC (µg/ml · hr)* | AUC | 28.2 | µg/ml · hr |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,26 +56,26 @@ Amantea MA, Forrest A, Northfelt DW, Mamelok R. Population pharmacokinetics and 
 
 ### Reviewer guidance
 
-**V, Vss, Q and CL have no unit.**
+**The elimination rate constant for doxorubicin is reported as 53.3 hr, conflicting with the required inverse time unit for that structural parameter.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V, Vss, Q and CL), so that value has no SI equivalent. Extracted — doxorubicin: V 2.29 L/m², Vss 2.94 L/m², Q 0.616 L/hr/m², CL 0.0581 L/hr/m², t1/2α 4.45 hr, t1/2β 53.3 hr, Cmax 8.57 µg/ml, AUC∞ 28.2 µg/ml · hr.
+The record lists a terminal half-life of 53.3 hr, but the dimension check failed because hours represent time while the parameter requires a rate. Consequently, the unit could not be converted to the standard SI format, leaving the parameter without a valid numerical value. Extracted — doxorubicin: V1 2.29 L/m², Vss 2.94 L/m², Q 0.616 L/hr/m², CLm/F 0.0581 L/hr/m², t1/2α 4.45 hr, kel 53.3 hr, Cmax 8.57 µg/ml, AUC 28.2 µg/ml · hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has total plasma doxorubicin, the second reading doxorubicin; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has doxorubicin, the second reading pegylated-liposomal doxorubicin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Vc (L/m²) | `Q61` · V | 2.29 | L/m² |  |  | l/m2 | exact (1) | Amantea_1997_table_1:row1:col1, Amantea_1997_table_1:row2:col1, Amantea_1997_table_1:row3:col1, Amantea_1997_table_1:row4:col1, Amantea_1997_table_1:row5:col1, Amantea_1997_table_1:row7:col1, Amantea_1997_table_1:row8:col1, Amantea_1997_table_1:row9:col1, Amantea_1997_table_1:row10:col1, Amantea_1997_table_1:row11:col1 |
-| Vss (L/m²) | `Q65` · Vss | 2.94 | L/m² |  |  | l/m2 | exact (1) | Amantea_1997_table_1:row1:col2, Amantea_1997_table_1:row2:col2, Amantea_1997_table_1:row3:col2, Amantea_1997_table_1:row4:col2, Amantea_1997_table_1:row5:col2, Amantea_1997_table_1:row7:col2, Amantea_1997_table_1:row8:col2, Amantea_1997_table_1:row9:col2, Amantea_1997_table_1:row10:col2, Amantea_1997_table_1:row11:col2 |
-| CLd (L/hr/m²) | `Q30` · Q | 0.616 | L/hr/m² |  |  | l/(h·m2) | exact (1) | Amantea_1997_table_1:row1:col3, Amantea_1997_table_1:row2:col3, Amantea_1997_table_1:row3:col3, Amantea_1997_table_1:row4:col3, Amantea_1997_table_1:row5:col3, Amantea_1997_table_1:row7:col3, Amantea_1997_table_1:row8:col3, Amantea_1997_table_1:row9:col3, Amantea_1997_table_1:row10:col3, Amantea_1997_table_1:row11:col3 |
-| CLt (L/hr/m²) | `Q22` · CL | 0.0581 | L/hr/m² |  |  | l/(h·m2) | exact (1) | Amantea_1997_table_1:row1:col4, Amantea_1997_table_1:row2:col4, Amantea_1997_table_1:row3:col4, Amantea_1997_table_1:row4:col4, Amantea_1997_table_1:row5:col4, Amantea_1997_table_1:row7:col4, Amantea_1997_table_1:row8:col4, Amantea_1997_table_1:row9:col4, Amantea_1997_table_1:row10:col4, Amantea_1997_table_1:row11:col4 |
+| Vc (L/m²) | `Q63` · V1 | 2.29 | L/m² | 0.003962 | m3 | l/m2 | exact (1) | Amantea_1997_table_1:row1:col1, Amantea_1997_table_1:row2:col1, Amantea_1997_table_1:row3:col1, Amantea_1997_table_1:row4:col1, Amantea_1997_table_1:row5:col1, Amantea_1997_table_1:row7:col1, Amantea_1997_table_1:row8:col1, Amantea_1997_table_1:row9:col1, Amantea_1997_table_1:row10:col1, Amantea_1997_table_1:row11:col1 |
+| Vss (L/m²) | `Q65` · Vss | 2.94 | L/m² | 0.005086 | m3 | l/m2 | exact (1) | Amantea_1997_table_1:row1:col2, Amantea_1997_table_1:row2:col2, Amantea_1997_table_1:row3:col2, Amantea_1997_table_1:row4:col2, Amantea_1997_table_1:row5:col2, Amantea_1997_table_1:row7:col2, Amantea_1997_table_1:row8:col2, Amantea_1997_table_1:row9:col2, Amantea_1997_table_1:row10:col2, Amantea_1997_table_1:row11:col2 |
+| CLd (L/hr/m²) | `Q30` · Q | 0.616 | L/hr/m² | 2.96e-07 | m3/s | l/(h·m2) | exact (1) | Amantea_1997_table_1:row1:col3, Amantea_1997_table_1:row2:col3, Amantea_1997_table_1:row3:col3, Amantea_1997_table_1:row4:col3, Amantea_1997_table_1:row5:col3, Amantea_1997_table_1:row7:col3, Amantea_1997_table_1:row8:col3, Amantea_1997_table_1:row9:col3, Amantea_1997_table_1:row10:col3, Amantea_1997_table_1:row11:col3 |
+| CLt (L/hr/m²) | `Q351` · CLm/F | 0.0581 | L/hr/m² | 2.792e-08 | m3/s | l/(h·m2) | exact (1) | Amantea_1997_table_1:row1:col4, Amantea_1997_table_1:row2:col4, Amantea_1997_table_1:row3:col4, Amantea_1997_table_1:row4:col4, Amantea_1997_table_1:row5:col4, Amantea_1997_table_1:row7:col4, Amantea_1997_table_1:row8:col4, Amantea_1997_table_1:row9:col4, Amantea_1997_table_1:row10:col4, Amantea_1997_table_1:row11:col4 |
 | t1/2λ1 (hr) | `Q59` · t1/2α | 4.45 | hr | 1.602e+04 | s | h | llm_corrected (0.6) | Amantea_1997_table_1:row1:col5, Amantea_1997_table_1:row2:col5, Amantea_1997_table_1:row3:col5, Amantea_1997_table_1:row4:col5, Amantea_1997_table_1:row5:col5, Amantea_1997_table_1:row7:col5, Amantea_1997_table_1:row8:col5, Amantea_1997_table_1:row9:col5, Amantea_1997_table_1:row10:col5, Amantea_1997_table_1:row11:col5 |
-| t1/2λ2 (hr) | `Q60` · t1/2β | 53.3 | hr | 1.919e+05 | s | h | llm_corrected (0.6) | Amantea_1997_table_1:row1:col6, Amantea_1997_table_1:row2:col6, Amantea_1997_table_1:row3:col6, Amantea_1997_table_1:row4:col6, Amantea_1997_table_1:row5:col6, Amantea_1997_table_1:row7:col6, Amantea_1997_table_1:row8:col6, Amantea_1997_table_1:row9:col6, Amantea_1997_table_1:row10:col6, Amantea_1997_table_1:row11:col6 |
-| Cmax (µg/ml) | `Q32` · Cmax | 8.57 | µg/ml |  |  | µg/ml | exact (1) | Amantea_1997_table_1:row1:col7, Amantea_1997_table_1:row2:col7, Amantea_1997_table_1:row3:col7, Amantea_1997_table_1:row4:col7, Amantea_1997_table_1:row5:col7, Amantea_1997_table_1:row7:col7, Amantea_1997_table_1:row8:col7, Amantea_1997_table_1:row9:col7, Amantea_1997_table_1:row10:col7, Amantea_1997_table_1:row11:col7 |
-| AUC (µg/ml · hr)* | `Q17` · AUC∞ | 28.2 | µg/ml · hr |  |  | µg/(h·ml) | llm_corrected (0.6) | Amantea_1997_table_1:row1:col8, Amantea_1997_table_1:row2:col8, Amantea_1997_table_1:row3:col8, Amantea_1997_table_1:row4:col8, Amantea_1997_table_1:row5:col8, Amantea_1997_table_1:row7:col8, Amantea_1997_table_1:row8:col8, Amantea_1997_table_1:row9:col8, Amantea_1997_table_1:row10:col8, Amantea_1997_table_1:row11:col8 |
+| t1/2λ2 (hr) | `Q47` · kel | 53.3 | hr |  |  | h | exact (1) | Amantea_1997_table_1:row1:col6, Amantea_1997_table_1:row2:col6, Amantea_1997_table_1:row3:col6, Amantea_1997_table_1:row4:col6, Amantea_1997_table_1:row5:col6, Amantea_1997_table_1:row7:col6, Amantea_1997_table_1:row8:col6, Amantea_1997_table_1:row9:col6, Amantea_1997_table_1:row10:col6, Amantea_1997_table_1:row11:col6 |
+| Cmax (µg/ml) | `Q32` · Cmax | 8.57 | µg/ml | 0.00857 | kg/m3 | µg/ml | exact (1) | Amantea_1997_table_1:row1:col7, Amantea_1997_table_1:row2:col7, Amantea_1997_table_1:row3:col7, Amantea_1997_table_1:row4:col7, Amantea_1997_table_1:row5:col7, Amantea_1997_table_1:row7:col7, Amantea_1997_table_1:row8:col7, Amantea_1997_table_1:row9:col7, Amantea_1997_table_1:row10:col7, Amantea_1997_table_1:row11:col7 |
+| AUC (µg/ml · hr)* | `Q88` · AUC | 28.2 | µg/ml · hr | 101.5 | kg*s/m3 | µg/(h·ml) | llm_confirmed (0.6) | Amantea_1997_table_1:row1:col8, Amantea_1997_table_1:row2:col8, Amantea_1997_table_1:row3:col8, Amantea_1997_table_1:row4:col8, Amantea_1997_table_1:row5:col8, Amantea_1997_table_1:row7:col8, Amantea_1997_table_1:row8:col8, Amantea_1997_table_1:row9:col8, Amantea_1997_table_1:row10:col8, Amantea_1997_table_1:row11:col8 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,19 +85,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L/m²' (V1)
-- unit_dimension_unknown: 'L/m²' (Vss)
-- unit_dimension_unknown: 'L/hr/m²' (Q)
-- unit_dimension_unknown: 'L/hr/m²' (CL)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=total plasma doxorubicin
+- unit_dimension_mismatch: 't1/2λ2 (hr)' → Q47 (unit '[time]' vs ontology '1 / [time]') — route to review
+- metabolite doxorubicin: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=doxorubicin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Vc (L/m²)' is the general volume)
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- row roles (LLM): model_class=compartmental; 8/8 row label(s) assigned, 40 linked by role
+- molar mass: no plausible PubChem entry for 'pegylated-liposomal doxorubicin' ('pegylated-liposomal doxorubicin') — left in mass units
+- molar mass: none found for 'pegylated-liposomal doxorubicin' — its concentrations stay mass-only
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
 - transposed table Amantea_1997_table_1: logical view retains original source coordinates
 
@@ -108,25 +109,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.6 (9/15 fields) | 6 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
-| `gpt-oss-120b` | `parameters[auc (ug/ml hr)*].parameter_id` | Q17 | Q88 | mismatch |
-| `gpt-oss-120b` | `parameters[auc (ug/ml hr)*].value` | 28.2 | 2.62 | mismatch |
-| `gpt-oss-120b` | `parameters[cld].value` | 0.616 | 0.0072 | mismatch |
-| `gpt-oss-120b` | `parameters[clt].value` | 0.0581 | 0.0171 | mismatch |
-| `gpt-oss-120b` | `parameters[cmax].value` | 8.57 | 2.59 | mismatch |
-| `gpt-oss-120b` | `parameters[t1/2λ1].value` | 4.45 | 0.251 | mismatch |
-| `gpt-oss-120b` | `parameters[t1/2λ2].parameter_id` | Q60 | Q57 | mismatch |
-| `gpt-oss-120b` | `parameters[t1/2λ2].value` | 53.3 | 5.97 | mismatch |
-| `gpt-oss-120b` | `parameters[vc].parameter_id` | Q61 | Q63 | mismatch |
-| `gpt-oss-120b` | `parameters[vc].value` | 2.29 | 1.38 | mismatch |
-| `gpt-oss-120b` | `parameters[vss].value` | 2.94 | 1.46 | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | total plasma doxorubicin | doxorubicin | mismatch |
+| `gpt-oss-120b` | `model.links` | [['pegylated-liposomal doxorubicin', 'doxorubicin', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[clt].parameter_id` | Q351 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2λ2].parameter_id` | Q47 | Q57 | mismatch |
+| `gpt-oss-120b` | `parameters[vc].parameter_id` | Q63 | Q61 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | doxorubicin | pegylated-liposomal doxorubicin | mismatch |
 
 </details>
 
@@ -143,16 +137,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | pass | [time] * [mass] / [length] ** 3 |  | ['Amantea_1997_table_1:row1:col8', 'Amantea_1997_table_1:row2:col8', 'Amantea_1997_table_1:row3:col8', 'Amantea_1997_table_1:row4:col8', 'Amantea_1997_table_1:row5:col8', 'Amantea_1997_table_1:row7:col8', 'Amantea_1997_table_1:row8:col8', 'Amantea_1997_table_1:row9:col8', 'Amantea_1997_table_1:row10:col8', 'Amantea_1997_table_1:row11:col8'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Amantea_1997_table_1:row1:col3', 'Amantea_1997_table_1:row2:col3', 'Amantea_1997_table_1:row3:col3', 'Amantea_1997_table_1:row4:col3', 'Amantea_1997_table_1:row5:col3', 'Amantea_1997_table_1:row7:col3', 'Amantea_1997_table_1:row8:col3', 'Amantea_1997_table_1:row9:col3', 'Amantea_1997_table_1:row10:col3', 'Amantea_1997_table_1:row11:col3'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Amantea_1997_table_1:row1:col7', 'Amantea_1997_table_1:row2:col7', 'Amantea_1997_table_1:row3:col7', 'Amantea_1997_table_1:row4:col7', 'Amantea_1997_table_1:row5:col7', 'Amantea_1997_table_1:row7:col7', 'Amantea_1997_table_1:row8:col7', 'Amantea_1997_table_1:row9:col7', 'Amantea_1997_table_1:row10:col7', 'Amantea_1997_table_1:row11:col7'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Amantea_1997_table_1:row1:col4', 'Amantea_1997_table_1:row2:col4', 'Amantea_1997_table_1:row3:col4', 'Amantea_1997_table_1:row4:col4', 'Amantea_1997_table_1:row5:col4', 'Amantea_1997_table_1:row7:col4', 'Amantea_1997_table_1:row8:col4', 'Amantea_1997_table_1:row9:col4', 'Amantea_1997_table_1:row10:col4', 'Amantea_1997_table_1:row11:col4'] |
+| C5_dimension_Q47 | fail | 1 / [time] | hr ([time]) | ['Amantea_1997_table_1:row1:col6', 'Amantea_1997_table_1:row2:col6', 'Amantea_1997_table_1:row3:col6', 'Amantea_1997_table_1:row4:col6', 'Amantea_1997_table_1:row5:col6', 'Amantea_1997_table_1:row7:col6', 'Amantea_1997_table_1:row8:col6', 'Amantea_1997_table_1:row9:col6', 'Amantea_1997_table_1:row10:col6', 'Amantea_1997_table_1:row11:col6'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Amantea_1997_table_1:row1:col5', 'Amantea_1997_table_1:row2:col5', 'Amantea_1997_table_1:row3:col5', 'Amantea_1997_table_1:row4:col5', 'Amantea_1997_table_1:row5:col5', 'Amantea_1997_table_1:row7:col5', 'Amantea_1997_table_1:row8:col5', 'Amantea_1997_table_1:row9:col5', 'Amantea_1997_table_1:row10:col5', 'Amantea_1997_table_1:row11:col5'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Amantea_1997_table_1:row1:col6', 'Amantea_1997_table_1:row2:col6', 'Amantea_1997_table_1:row3:col6', 'Amantea_1997_table_1:row4:col6', 'Amantea_1997_table_1:row5:col6', 'Amantea_1997_table_1:row7:col6', 'Amantea_1997_table_1:row8:col6', 'Amantea_1997_table_1:row9:col6', 'Amantea_1997_table_1:row10:col6', 'Amantea_1997_table_1:row11:col6'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | L/hr/m² | ['Amantea_1997_table_1:row1:col4', 'Amantea_1997_table_1:row2:col4', 'Amantea_1997_table_1:row3:col4', 'Amantea_1997_table_1:row4:col4', 'Amantea_1997_table_1:row5:col4', 'Amantea_1997_table_1:row7:col4', 'Amantea_1997_table_1:row8:col4', 'Amantea_1997_table_1:row9:col4', 'Amantea_1997_table_1:row10:col4', 'Amantea_1997_table_1:row11:col4'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | L/hr/m² | ['Amantea_1997_table_1:row1:col3', 'Amantea_1997_table_1:row2:col3', 'Amantea_1997_table_1:row3:col3', 'Amantea_1997_table_1:row4:col3', 'Amantea_1997_table_1:row5:col3', 'Amantea_1997_table_1:row7:col3', 'Amantea_1997_table_1:row8:col3', 'Amantea_1997_table_1:row9:col3', 'Amantea_1997_table_1:row10:col3', 'Amantea_1997_table_1:row11:col3'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | L/m² | ['Amantea_1997_table_1:row1:col1', 'Amantea_1997_table_1:row2:col1', 'Amantea_1997_table_1:row3:col1', 'Amantea_1997_table_1:row4:col1', 'Amantea_1997_table_1:row5:col1', 'Amantea_1997_table_1:row7:col1', 'Amantea_1997_table_1:row8:col1', 'Amantea_1997_table_1:row9:col1', 'Amantea_1997_table_1:row10:col1', 'Amantea_1997_table_1:row11:col1'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | L/m² | ['Amantea_1997_table_1:row1:col2', 'Amantea_1997_table_1:row2:col2', 'Amantea_1997_table_1:row3:col2', 'Amantea_1997_table_1:row4:col2', 'Amantea_1997_table_1:row5:col2', 'Amantea_1997_table_1:row7:col2', 'Amantea_1997_table_1:row8:col2', 'Amantea_1997_table_1:row9:col2', 'Amantea_1997_table_1:row10:col2', 'Amantea_1997_table_1:row11:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0581 | ['Amantea_1997_table_1:row1:col4', 'Amantea_1997_table_1:row2:col4', 'Amantea_1997_table_1:row3:col4', 'Amantea_1997_table_1:row4:col4', 'Amantea_1997_table_1:row5:col4', 'Amantea_1997_table_1:row7:col4', 'Amantea_1997_table_1:row8:col4', 'Amantea_1997_table_1:row9:col4', 'Amantea_1997_table_1:row10:col4', 'Amantea_1997_table_1:row11:col4'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Amantea_1997_table_1:row1:col1', 'Amantea_1997_table_1:row2:col1', 'Amantea_1997_table_1:row3:col1', 'Amantea_1997_table_1:row4:col1', 'Amantea_1997_table_1:row5:col1', 'Amantea_1997_table_1:row7:col1', 'Amantea_1997_table_1:row8:col1', 'Amantea_1997_table_1:row9:col1', 'Amantea_1997_table_1:row10:col1', 'Amantea_1997_table_1:row11:col1'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Amantea_1997_table_1:row1:col2', 'Amantea_1997_table_1:row2:col2', 'Amantea_1997_table_1:row3:col2', 'Amantea_1997_table_1:row4:col2', 'Amantea_1997_table_1:row5:col2', 'Amantea_1997_table_1:row7:col2', 'Amantea_1997_table_1:row8:col2', 'Amantea_1997_table_1:row9:col2', 'Amantea_1997_table_1:row10:col2', 'Amantea_1997_table_1:row11:col2'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Amantea_1997_table_1:row1:col8', 'Amantea_1997_table_1:row2:col8', 'Amantea_1997_table_1:row3:col8', 'Amantea_1997_table_1:row4:col8', 'Amantea_1997_table_1:row5:col8', 'Amantea_1997_table_1:row7:col8', 'Amantea_1997_table_1:row8:col8', 'Amantea_1997_table_1:row9:col8', 'Amantea_1997_table_1:row10:col8', 'Amantea_1997_table_1:row11:col8'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.96 L | ['Amantea_1997_table_1:row1:col1', 'Amantea_1997_table_1:row2:col1', 'Amantea_1997_table_1:row3:col1', 'Amantea_1997_table_1:row4:col1', 'Amantea_1997_table_1:row5:col1', 'Amantea_1997_table_1:row7:col1', 'Amantea_1997_table_1:row8:col1', 'Amantea_1997_table_1:row9:col1', 'Amantea_1997_table_1:row10:col1', 'Amantea_1997_table_1:row11:col1'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 5.09 L | ['Amantea_1997_table_1:row1:col2', 'Amantea_1997_table_1:row2:col2', 'Amantea_1997_table_1:row3:col2', 'Amantea_1997_table_1:row4:col2', 'Amantea_1997_table_1:row5:col2', 'Amantea_1997_table_1:row7:col2', 'Amantea_1997_table_1:row8:col2', 'Amantea_1997_table_1:row9:col2', 'Amantea_1997_table_1:row10:col2', 'Amantea_1997_table_1:row11:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,19 +160,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -186,4 +172,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Amantea1997_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Amantea1997_reference%0APaper%3A%20Amantea_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Amantea1997_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 15:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:00 UTC</sub>

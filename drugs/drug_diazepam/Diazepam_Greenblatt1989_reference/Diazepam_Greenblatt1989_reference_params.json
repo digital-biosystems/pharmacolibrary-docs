@@ -1,5 +1,5 @@
 {
- "dose_source": "WHO ATC DDD 10 mg parenteral (N05BA01)",
+ "dose_source": "paper",
  "model_id": "Diazepam_Greenblatt1989_reference",
  "molar_masses": {
   "central.C": 0.28474
@@ -8,6 +8,11 @@
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  7.0,
+  10.5
+ ],
  "parameters": {
   "Cl": 5.833333333333334e-07,
   "F": 1.0,
@@ -15,16 +20,16 @@
   "VdPerKg": 0.00013000000000000002,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1e-05,
+  "adminMass": 7e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662135
+  "central.C": 660.0000000662031
  },
  "reference_peaks": {
-  "central.C": 0.001078037063115019
+  "central.C": 0.0007546256367752744
  },
- "stop_time": 86400.0,
+ "stop_time": 604800.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

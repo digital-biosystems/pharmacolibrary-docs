@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided excerpts do not contain a description of a pharmacodynamic model, mechanism, or kinetic parameters for hydrogen fluoride acting on asthma attacks.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `van_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

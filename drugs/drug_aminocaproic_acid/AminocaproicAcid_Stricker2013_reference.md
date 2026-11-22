@@ -36,7 +36,7 @@ Stricker PA, Zuppa AF, Fiadjoe JE, Maxwell LG, Sussman EM, Pruitt EY et al. Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Stricker PA, Zuppa AF, Fiadjoe JE, Maxwell LG, Sussman EM, Pruitt EY et al. Popu
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has epsilon-aminocaproic acid, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has epsilon-aminocaproic acid, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -85,23 +85,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
 <details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[central volume of distribution of]` |  | 1.27 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[central volume of distribution]` | 1.27 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[infusion (civi) regimens]` |  | 25 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[inter-compartmental clearance]` | 42.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intra-operative clearance]` |  | 89 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution of]` |  | 2.53 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution]` | 2.53 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[pre-/postoperative plasma drug clearance of]` |  | 32 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[pre-/postoperative plasma drug clearance]` | 32 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | epsilon-aminocaproic acid | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | epsilon-aminocaproic acid | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[central volume of distribution of]` |  | 1.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | 1.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[infusion (civi) regimens]` |  | 25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | 42.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intra-operative clearance]` |  | 89 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution of]` |  | 2.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 2.53 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pre-/postoperative plasma drug clearance of]` |  | 32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pre-/postoperative plasma drug clearance]` | 32 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | epsilon-aminocaproic acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | epsilon-aminocaproic acid | unknown | mismatch |
 
 </details>
 
@@ -138,6 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

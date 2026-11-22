@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Diisobutyl phthalate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiisobutylPhthalate_Koch2012_reference&quot;,&quot;label&quot;:&quot;Koch_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DiisobutylPhthalate_PalaciosArreola2022_reference&quot;,&quot;label&quot;:&quot;Palacios-Arreola_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiisobutylPhthalate_Koch2012_reference&quot;,&quot;label&quot;:&quot;Koch_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DiisobutylPhthalate_PalaciosArreola2022_reference&quot;,&quot;label&quot;:&quot;Palacios-Arreola_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Diisobutyl phthalate
 
@@ -36,7 +36,7 @@ LD50: 3749 mg/kg (Intraperitoneal, Rat)
 
 ## Start here
 
-> **Koch_2012_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> adult male human volunteer, n = 1. [Run it in the simulator](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md?tab=Simulation) · [record](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md)
+> **Koch_2012_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adult male human volunteer, n = 1. [Run it in the simulator](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md?tab=Simulation) · [record](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -44,8 +44,8 @@ LD50: 3749 mg/kg (Intraperitoneal, Rat)
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koch_2012_reference](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Koch HM et al., Di-n-butyl phthalate (DnBP) and diisobu…, Archives of toxicology (2012) | [10.1007/s00204-012-0908-1](https://doi.org/10.1007/s00204-012-0908-1) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Palacios-Arreola_2022_reference](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Palacios-Arreola MI et al., Toxicokinetic assessment of inhalatory…, Environmental toxicology an… (2022) | [10.1016/j.etap.2022.103813](https://doi.org/10.1016/j.etap.2022.103813) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Koch_2012_reference](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Koch HM et al., Di-n-butyl phthalate (DnBP) and diisobu…, Archives of toxicology (2012) | [10.1007/s00204-012-0908-1](https://doi.org/10.1007/s00204-012-0908-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Palacios-Arreola_2022_reference](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Palacios-Arreola MI et al., Toxicokinetic assessment of inhalatory…, Environmental toxicology an… (2022) | [10.1016/j.etap.2022.103813](https://doi.org/10.1016/j.etap.2022.103813) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Lorber_2013_reference](drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Lorber2013_reference.md) | — | general linear (no model) | 0 | Lorber M et al., Development and application of simple p…, Environment international (2013) | [10.1016/j.envint.2013.07.010](https://doi.org/10.1016/j.envint.2013.07.010) |
 
 ## Pharmacogenomics (PGx)
@@ -62,16 +62,6 @@ LD50: 3749 mg/kg (Intraperitoneal, Rat)
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=diisobutyl_phthalate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2C19` metabolism, `CYP2C9` safety_allele | PGx paper |
-
-<sub>Actors without a tissue in the table: UGT1A7 (metabolism).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

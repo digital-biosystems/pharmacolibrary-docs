@@ -72,7 +72,7 @@ Chronic Inhalation: 0.00009 mg/m3
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-15 23:47 | 1:32:22 | 0/2/0 | 9/1/0 | 0/0/0 | 2,498,164/143,232 | einfracz / qwen3.8-flash-next | 105 | 18/80 | 102/1 | 0 |
+| 2026-11-15 23:47 | 1:32:22 | 0/2/0 | 12/1/0 | 0/0/0 | 2,498,164/143,232 | einfracz / qwen3.8-flash-next | 105 | 18/80 | 102/1 | 0 |
 
 ## Coverage
 

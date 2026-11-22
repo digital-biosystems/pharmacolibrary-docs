@@ -13,6 +13,14 @@
   140000.0,
   350000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ibragimova_2025:other_prose",
+    "value_si": 2.4378
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "Tb[1]": 75960.0,

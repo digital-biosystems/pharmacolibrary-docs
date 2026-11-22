@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption parameters for isavuconazole were defaulted rather than estimated from Kovanda data, leaving the oral input model unsupported by source values.
+> The isavuconazole record lacks reported absorption parameters, forcing the model to default ka and Tlag values unsupported by the source paper.
 
 <div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Kovanda2016_overall" status="needs_review" stale="false" population="patients with invasive fungal disease" measured-compound="isavuconazole" parameterization="apparent" topology="1C"></div>
 
@@ -53,9 +53,9 @@ Kovanda LL, Desai AV, Lu Q, Townsend RW, Akhtar S, Bonate P et al. Isavuconazole
 
 ### Reviewer guidance
 
-**Absorption parameters for isavuconazole were defaulted rather than estimated from Kovanda data, leaving the oral input model unsupported by source values.**
+**The isavuconazole record lacks reported absorption parameters, forcing the model to default ka and Tlag values unsupported by the source paper.**
 
-The record lists a 1-compartment model with apparent clearance 2.5 L/h, volume 361.2 L, and bioavailability 96.6%, but absorption rate and lag time lack paper-derived estimates. The builder applied library defaults for absorption and assumed F=1, despite the paper reporting specific pharmacokinetic parameters for invasive fungal disease patients. This substitution means the simulated absorption profile relies on generic conventions rather than the actual study data. Extracted — isavuconazole: CLm/F 2.5 L/h, V 361 L, Fab 96.6.
+The review found that absorption rate constants were not extracted from the Kovanda_2016 data, resulting in library placeholder values for first-order depot input. Although the record specifies an apparent clearance of 2.5 L/h and a volume of distribution of 361.2 L, the missing absorption terms invalidate the simulated profile. The absolute bioavailability of 96.6% was recorded, but the invented absorption mechanism remains unverified against the source. Extracted — isavuconazole: CLm/F 2.5 L/h, V 361 L, Fab 96.6.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -137,15 +137,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=isavuconazole) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=isavuconazole) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

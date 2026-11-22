@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;choline salicylate&quot;,&quot;href&quot;:&quot;drugs/drug_choline_salicylate/&quot;},{&quot;label&quot;:&quot;Koh_2025 \u00b7 PD thromboxane B2&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# thromboxane B2 — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+# thromboxane B2 — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 **As extracted:** Acetylsalicylic acid (measured concentrations) drives thromboxane B2 (in μg/L): indirect response — drug inhibits the production of thromboxane B2.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
 > The model uses acetylsalicylic acid (ASA) concentrations to inhibit the production of thromboxane B2 (TXB2) via a turnover model, characterized by a baseline response (R0) of 26.4 μg/L, an elimination rate constant (kout) of 0.023 h⁻¹, a maximum inhibition (Imax) of 1, an IC50 of 0.0036 mol/L, and a gamma value of 1.
 >
@@ -47,66 +47,39 @@ Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, developme
 </details>
 
 
-## Exposure-response model
-
-`CholineSalicylate_Koh2025_PD_txb2` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 26.4 μg/L | 2.64e-05 kg/m3 |
-| Emax | 1 | — |
-| EC50 | 0.0036 mol/L | 3.6 mol/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 2.64e-05, `at_EC50` = 1.32e-05, `at_inf` = 0
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as IDR-I predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | pass | nothing defaulted |
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.6 (33/55 fields) | 22 |
+| `gpt-oss-120b` | not confirmed | 0.6 (33/55 fields) | 22 |
 
 <details><summary>22 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | acetylsalicylic acid | acetylsalicylic acid (ASA) | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | proportional | mismatch |
-| `gpt-oss:120b` | `model_family` | sigmoid_emax | indirect_response_i | mismatch |
-| `gpt-oss:120b` | `parameters[Q312]` |  | 1.09 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` |  | 13.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` |  | 0.91 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` |  | 0.27 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` |  | 15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` |  | 11.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q336]` |  | 0.49 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q351]` |  | 0.24 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q351]` | 11.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 0.24 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q43]` |  | 0.29 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q43]` |  | 16.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` |  | 14.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` |  | 21.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` |  | 0.053 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q83]` |  | 0.51 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q83]` |  | 12.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 21.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 0.053 |  | only_one_extracted |
+| `gpt-oss-120b` | `driver_compound` | acetylsalicylic acid | acetylsalicylic acid (ASA) | mismatch |
+| `gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss-120b` | `model_family` | sigmoid_emax | indirect_response_i | mismatch |
+| `gpt-oss-120b` | `parameters[Q312]` |  | 1.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q312]` |  | 13.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q314]` |  | 0.91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q314]` |  | 0.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q314]` |  | 15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q314]` |  | 11.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q336]` |  | 0.49 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q351]` |  | 0.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q351]` | 11.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q358]` | 0.24 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q43]` |  | 0.29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q43]` |  | 16.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q49]` |  | 14.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q49]` |  | 21.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q49]` |  | 0.053 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q83]` |  | 0.51 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q83]` |  | 12.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q95]` | 21.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q95]` | 0.053 |  | only_one_extracted |
 
 </details>
 
@@ -122,33 +95,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_choline_salicylate/CholineSalicylate_Koh2025_PD_txb2/CholineSalicylate_Koh2025_PD_txb2_modelica.zip" download>CholineSalicylate_Koh2025_PD_txb2_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_choline_salicylate/CholineSalicylate_Koh2025_PD_txb2/CholineSalicylate_Koh2025_PD_txb2_matlab.zip" download>CholineSalicylate_Koh2025_PD_txb2_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_choline_salicylate/CholineSalicylate_Koh2025_PD_txb2/CholineSalicylate_Koh2025_PD_txb2_sbml.zip" download>CholineSalicylate_Koh2025_PD_txb2_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_choline_salicylate/CholineSalicylate_Koh2025_PD_txb2/CholineSalicylate_Koh2025_PD_txb2_cellml.zip" download>CholineSalicylate_Koh2025_PD_txb2_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `CholineSalicylate_Koh2025_PD_txb2`. <https://pharmacolibrary.github.io/#/drugs/drug_choline_salicylate/pd_Koh_2025_TXB2>
-
-```bibtex
-@misc{pharmacolibrary_CholineSalicylateKoh2025PDtxb2,
-  title  = {{Pharmacolibrary model CholineSalicylate_Koh2025_PD_txb2}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_choline_salicylate/pd_Koh_2025_TXB2},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

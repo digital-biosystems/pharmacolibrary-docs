@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;ixazomib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ixazomib_Gupta2017_reference&quot;,&quot;label&quot;:&quot;Gupta_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srimani_2022_platelet_count&quot;,&quot;label&quot;:&quot;Srimani_2022 \u00b7 platelet count&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/pd_Srimani_2022_platelet_count.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srimani_2022_M_protein&quot;,&quot;label&quot;:&quot;Srimani_2022 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/pd_Srimani_2022_M_protein.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ixazomib_Gupta2017_reference&quot;,&quot;label&quot;:&quot;Gupta_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srimani_2022_platelet_count&quot;,&quot;label&quot;:&quot;Srimani_2022 \u00b7 platelet count&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/pd_Srimani_2022_platelet_count.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srimani_2022_M_protein&quot;,&quot;label&quot;:&quot;Srimani_2022 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ixazomib/pd_Srimani_2022_M_protein.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ixazomib
 
@@ -25,13 +25,13 @@ Ixazomib is a proteasome inhibitor used to treat multiple myeloma and amyloidosi
 
 ## Start here
 
-> **Gupta_2017_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adults with multiple myeloma, n = condition: "multiple myeloma",. [Run it in the simulator](drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md?tab=Simulation) · [record](drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md)
+> **Gupta_2017_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with multiple myeloma. [Run it in the simulator](drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md?tab=Simulation) · [record](drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gupta_2017 · CL</text><circle cx="328.7" cy="30.0" r="4" fill="#78909c"><title>Gupta_2017 · CL: 0.62 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gupta_2015 · CL</text><circle cx="417.7" cy="46.0" r="4" fill="#ef6c00"><title>Gupta_2015 · CL: 2 L/h</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gupta_2017 · CL</text><circle cx="328.7" cy="30.0" r="4" fill="#ef6c00"><title>Gupta_2017 · CL: 0.62 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gupta_2015 · CL</text><circle cx="417.7" cy="46.0" r="4" fill="#ef6c00"><title>Gupta_2015 · CL: 2 L/h</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,8 +39,8 @@ Ixazomib is a proteasome inhibitor used to treat multiple myeloma and amyloidosi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Gupta_2017_reference](drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 9 | Gupta N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0526-4](https://doi.org/10.1007/s40262-017-0526-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Gupta_2015_reference](drugs/drug_ixazomib/Ixazomib_Gupta2015_reference.md) | — | 1-compartment (no model) | 3 | Gupta N et al., Switching from body surface area-based…, British journal of clinical… (2015) | [10.1111/bcp.12542](https://doi.org/10.1111/bcp.12542) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Gupta_2017_reference](drugs/drug_ixazomib/Ixazomib_Gupta2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 9 | Gupta N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0526-4](https://doi.org/10.1007/s40262-017-0526-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gupta_2019_reference](drugs/drug_ixazomib/Ixazomib_Gupta2019_reference.md) | — | 1-compartment (no model) | 0 | Gupta N et al., Clinical Pharmacology of Ixazomib: The…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0702-1](https://doi.org/10.1007/s40262-018-0702-1) |
 
 ## Pharmacodynamics (PD)
@@ -64,25 +64,6 @@ Ixazomib is a proteasome inhibitor used to treat multiple myeloma and amyloidosi
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Srimani_2023_thrombocytopenia](drugs/drug_ixazomib/pd_Srimani_2023_thrombocytopenia.md) | thrombocytopenia ← ixazomib · categorical (graded) response model | — | Srimani JK et al., Dose Titration of Ixazomib Maintenance…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2917](https://doi.org/10.1002/cpt.2917) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Srimani_2023_vomiting](drugs/drug_ixazomib/pd_Srimani_2023_vomiting.md) | vomiting ← ixazomib · categorical (graded) response model | — | Srimani JK et al., Dose Titration of Ixazomib Maintenance…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2917](https://doi.org/10.1002/cpt.2917) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ixazomib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: PSMB5 (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -95,13 +76,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:50 | 2:08 | 2/1/0 | 2/0/0 | 0/0/0 | 146,942/12,833 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
+| 2026-10-06 20:50 | 2:08 | 2/1/0 | 16/0/0 | 0/0/0 | 146,942/12,833 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

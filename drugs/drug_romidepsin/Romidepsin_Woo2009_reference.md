@@ -16,7 +16,7 @@ Woo S, Gardner ER, Chen X, Ockers SB, Baum CE, Sissung TM et al. Population phar
 
 ## Population and dosing
 
-**Population:** patients with cutaneous T-cell lymphoma and relapsed peripheral T-cell lymphoma · condition cutaneous T-cell lymphoma, relapsed peripheral T-cell lymphoma · age group adult · n = The text does not specify the exact table number or caption for the final fitted PK parameter estimates. The abstract mentions results but does not cite a specific table like "Table 1" or "Table 2"..
+**Population:** patients with cutaneous T-cell lymphoma and relapsed peripheral T-cell lymphoma · condition cutaneous T-cell lymphoma, relapsed peripheral T-cell lymphoma · age group adult.
 
 ## Model
 

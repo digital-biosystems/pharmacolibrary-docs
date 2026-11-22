@@ -4,11 +4,11 @@
 
 # diflunisal — `Diflunisal_Gao1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 06:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="diflunisal" model-id="Diflunisal_Gao1998_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="diflunisal" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diflunisal" model-id="Diflunisal_Gao1998_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="diflunisal" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gao L, Xing J, Liu W. [Determination of diflunisal in plasma by RP-HPLC after solid-liquid extraction]. Yao xue xue bao = Acta pharmaceutica Sinica 33(4):286–289 (1998).
@@ -34,7 +34,7 @@ Gao L, Xing J, Liu W. [Determination of diflunisal in plasma by RP-HPLC after so
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Gao L, Xing J, Liu W. [Determination of diflunisal in plasma by RP-HPLC after so
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diflunisal: t1/2α 1.4 h, t1/2β 17.9 h.
 
 Independently confirmed by `gpt-oss-120b`.
 

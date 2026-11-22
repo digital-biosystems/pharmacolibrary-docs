@@ -4,11 +4,11 @@
 
 # bumetanide — `Bumetanide_Pentikinen1985_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-06 17:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Bumetanide's total clearance lacked a value, so a placeholder was used, quarantining the model despite reported renal and nonrenal clearances.
 
-<div class="pk-model-meta" hidden drug="bumetanide" model-id="Bumetanide_Pentikinen1985_reference" status="extracted" stale="true" population="healthy subjects and patients with renal failure" measured-compound="bumetanide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bumetanide" model-id="Bumetanide_Pentikinen1985_reference" status="model_quarantined" stale="false" population="healthy subjects and patients with renal failure" measured-compound="bumetanide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pentikäinen PJ, Pasternack A, Lampainen E, Neuvonen PJ, Penttilä A. Bumetanide kinetics in renal failure. Clinical pharmacology and therapeutics 37(5):582–588 (1985).
@@ -16,16 +16,18 @@ Pentikäinen PJ, Pasternack A, Lampainen E, Neuvonen PJ, Penttilä A. Bumetanide
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with renal failure · condition renal failure · age group adult · n = &gt;=28.
+**Population:** healthy subjects and patients with renal failure · condition renal failure · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | volume at steady state | Vss | 22.1 | L |
@@ -35,7 +37,7 @@ Pentikäinen PJ, Pasternack A, Lampainen E, Neuvonen PJ, Penttilä A. Bumetanide
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +47,13 @@ Pentikäinen PJ, Pasternack A, Lampainen E, Neuvonen PJ, Penttilä A. Bumetanide
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Bumetanide's total clearance lacked a value, so a placeholder was used, quarantining the model despite reported renal and nonrenal clearances.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bumetanide: Vss 22.1 L, t1/2z 1.9 hours, CLR 10 ml/min, CLNR 153 ml/min.
+The record lists renal clearance of 10 ml/min and nonrenal clearance of 153 ml/min, yet total clearance was left at a library placeholder. Built from the abstract alone, the model substituted steady-state volume for central volume, failing to capture the early distribution phase. A second reader disagreed with all parameter assignments, reporting them as unknown. Extracted — bumetanide: Vss 22.1 L, t1/2z 1.9 hours, CLR 10 ml/min, CLNR 153 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -126,6 +128,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q79 | pass | [length] ** 3 / [time] |  | ['Pentikäinen_1985:abstract', 'Pentikäinen_1985:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q65 | pass | volume within physiological range | 22.1 L | ['Pentikäinen_1985:abstract', 'Pentikäinen_1985:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

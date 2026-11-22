@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sapropterin absorption parameters (ka, Tlag) lacked source values and relied on unsupported library defaults in the abstract-only record.
+> The sapropterin model record was held back because the absorption rate constant was not reported and was instead left at default values.
 
 <div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Feillet2008_reference" status="needs_review" stale="false" population="patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Feillet F, Clarke L, Meli C, Lipson M, Morris AA, Harmatz P et al. Pharmacokinet
 
 ## Population and dosing
 
-**Population:** patients with phenylketonuria · condition phenylketonuria · age group mixed · n = &gt;=8 years.
+**Population:** patients with phenylketonuria · condition phenylketonuria · age group mixed.
 
 ## Model
 
@@ -49,9 +49,9 @@ Feillet F, Clarke L, Meli C, Lipson M, Morris AA, Harmatz P et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**Sapropterin absorption parameters (ka, Tlag) lacked source values and relied on unsupported library defaults in the abstract-only record.**
+**The sapropterin model record was held back because the absorption rate constant was not reported and was instead left at default values.**
 
-The record was built from the abstract alone, using summary statistics to stand in for a fitted model. The model builder substituted library defaults for absorption rate constants and lag time because they were not reported. These defaults are not supported by the paper, affecting simulated profiles without explicit justification. Extracted — sapropterin: CL/F 2.1e+03 L/h/70 kg, V 8.35e+03 L/70 kg, t1/2z 6.69 hours.
+The source text provided only the paper's abstract, meaning the summary statistics stand in for a fitted population model. The absorption rate constant was not reported, so it was set to a placeholder value rather than an estimate derived from the study. Although the oral dosing was specified, the lack of an explicit absorption parameter prevents validation of the input mechanism. The apparent clearance and volume of distribution remain, but the missing absorption kinetics compromise the overall structural fidelity. Extracted — sapropterin: CL/F 2.1e+03 L/h/70 kg, V 8.35e+03 L/70 kg, t1/2z 6.69 hours.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -120,15 +120,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=sapropterin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=sapropterin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

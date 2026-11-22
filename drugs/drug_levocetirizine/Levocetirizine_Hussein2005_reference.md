@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because apparent clearance and volume double-correct for bioavailability, violating parameter coherence.
+> Levocetirizine’s apparent clearance (CL/F) of 0.044 L/h/kg was rejected because the record also applies relative bioavailability, creating a double correction.
 
 <div class="pk-model-meta" hidden drug="levocetirizine" model-id="Levocetirizine_Hussein2005_reference" status="rejected" stale="false" population="atopic children (12-24 months)" measured-compound="levocetirizine" parameterization="apparent" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Hussein Z, Pitsiu M, Majid O, Aarons L, de Longueville M, Stockis A. Retrospecti
 
 ## Population and dosing
 
-**Population:** atopic children (12-24 months) · age group infant · n = &gt;.
+**Population:** atopic children (12-24 months) · age group infant.
 
 **Dosed compound ≠ measured compound:** dosed cetirizine, measured levocetirizine.
 
@@ -52,13 +52,13 @@ Hussein Z, Pitsiu M, Majid O, Aarons L, de Longueville M, Stockis A. Retrospecti
 
 ### Reviewer guidance
 
-**The record was rejected because apparent clearance and volume double-correct for bioavailability, violating parameter coherence.**
+**Levocetirizine’s apparent clearance (CL/F) of 0.044 L/h/kg was rejected because the record also applies relative bioavailability, creating a double correction.**
 
-The model defines apparent parameters (CL/F and Vnorm) but also includes an explicit relative bioavailability of 0.28, which constitutes a double correction. Additionally, the record was built from the abstract alone, so summary statistics like the AUC of 1952 ng·h/mL stand in for a fitted model. A second reader disagreed on the assignment of the absorption rate constant of 0.095 h−1, suggesting potential mislabeling of parameters. Extracted — levocetirizine: CL/F 0.044 L/h/kg, Vnorm 0.639 l kg(-1), CL 0.6 l h(-1), Frel 0.28 in, AUCSS 1.95e+03 ng·h/mL, AUC/dose 2.04e+03 microg l(-1) h, kabs 0.095 h−1.
+The record reports CL/F of 0.044 L/h/kg alongside relative bioavailability of 0.28 and total clearance of 0.6 L/h, the combination underlying the apparent-parameter coherence finding. The record was built from the abstract alone, so its reported summary statistics stood in for a fitted model. A second reader disagreed about whether several values, including AUC at steady state and the absorption rate constant, belonged in the record. Extracted — levocetirizine: CL/F 0.044 L/h/kg, Vnorm 0.639 l kg(-1), CL 0.6 l h(-1), Frel 0.28 in, AUCSS 1.95e+03 ng·h/mL, AUC/dose 2.04e+03 microg l(-1) h, kabs 0.095 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has none, the second reading 1952; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

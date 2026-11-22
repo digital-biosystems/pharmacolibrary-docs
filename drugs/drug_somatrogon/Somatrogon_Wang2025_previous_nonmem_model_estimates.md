@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was held back because the reverse intercompartmental clearance was missing, forcing use of library defaults unsupported by the paper.
+> Somatrogon’s k21 has no paper-reported estimate and was left at a library placeholder, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="somatrogon" model-id="Somatrogon_Wang2025_previous_nonmem_model_estimates" status="needs_review" stale="false" population="pediatric participants" measured-compound="somatrogon" parameterization="apparent" topology="2C"></div>
 
@@ -61,11 +61,11 @@ Wang Y, Pei X, Niu T, Korth-Bradley J, Fostvedt L. Implementing a Bayesian appro
 
 ### Reviewer guidance
 
-**The record was held back because the reverse intercompartmental clearance was missing, forcing use of library defaults unsupported by the paper.**
+**Somatrogon’s k21 has no paper-reported estimate and was left at a library placeholder, so the record was held back.**
 
-The model definition omits an explicit value for k21, so library placeholder values were used instead of paper estimates. The record includes covariate effects, but the simulation only exercised the reference individual, leaving the pediatric weight and ADA impacts unverified. Extracted — somatrogon: CL/F 0.472 L/h, Q/F 0.014 L/h, V1/F 10.9 L, V/F 2.37 L, kabs 0.313 1/h, tlag 0.353 h.
+k21 used library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper. The covariate scenarios were not simulated: only the base model was simulated, not the covariate effects the record defines. The builder assumed F=1, Fm=1, and no molar correction. A reported parameter’s unit could not be converted to SI, but the record does not identify which parameter. Extracted — somatrogon: CL/F 0.472 L/h, Q/F 0.014 L/h, V1/F 10.9 L, V/F 2.37 L, kabs 0.313 1/h, tlag 0.353 h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -239,6 +239,7 @@ The model definition omits an explicit value for k21, so library placeholder val
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

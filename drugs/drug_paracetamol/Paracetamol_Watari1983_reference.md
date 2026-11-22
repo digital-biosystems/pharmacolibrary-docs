@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Watari_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_estimate&quot;,&quot;label&quot;:&quot;Anderson_2005_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_estimate.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Imaizumi2017_reference&quot;,&quot;label&quot;:&quot;Imaizumi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Mian2019_reference&quot;,&quot;label&quot;:&quot;Mian_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Mian2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The paper reports none of the model's key parameters.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit μM ([length]) vs [mass] / [length] ** 3; Q30 unit min-1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Watari1983_reference" status="rejected" stale="false" population="rats" measured-compound="acetaminophen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -19,23 +19,37 @@ Watari N, Iwai M, Kaneniwa N. Pharmacokinetic study of the fate of acetaminophen
 
 **Population:** rats · condition healthy.
 
+**Dosing:** 700, 18522, 22400, 37044 mg, iv, single.
+
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 0 extracted.  
+**Parameters:** 11 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| C1 (μM) | Ct | 170 | μM |
+| A1 (min-1) | A1 | 0.163 | min-1 |
+| A2-1 (min-1) | A2 | 0.0347 | min-1 |
+| V1 (L/kg) | V | 0.144 | L/kg |
+| k12 (min-1) | Q | 0.0382 | min-1 |
+| ke (min-1) | kel | 0.0513 | min-1 |
+| Renal CLc (ml/min/kg) | CL | 6.68 | ml/min/kg |
+| Vssd (L/kg) | Vss | 0.196 | L/kg |
+| CLb (ml/min/kg) | CLb | 9.16 | ml/min/kg |
+| ka | kabs | 9.76 | h -1 |
+| Tlag | tlag | 4.2 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.263). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,33 +59,128 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit μM ([length]) vs [mass] / [length] ** 3; Q30 unit min-1 (1 / [time]) vs [length] ** 3 / [time].**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A reported unit could not be converted (Ct, A1, A2 and Q), so that value has no SI equivalent. Extracted — paracetamol: Ct 170 μM, A1 0.163 min-1, A2 0.0347 min-1, V 0.144 L/kg, Q 0.0382 min-1, kel 0.0513 min-1, CL 6.68 ml/min/kg, Vss 0.196 L/kg, … (+3).
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen glucuronide (metabolism), the second reading acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen glucuronide (metabolism); acetaminophen sulfate → acetaminophen (hydrolysis) …; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| C1 (μM) | `Q75` · Ct | 170 | μM |  |  | µM | llm (0.6) | Watari_1983_table_3:row0:col2, Watari_1983_table_3:row1:col2, Watari_1983_table_3:row2:col2, Watari_1983_table_3:row3:col2, Watari_1983_table_3:row4:col2, Watari_1983_table_3:row5:col2, Watari_1983_table_3:row6:col2, Watari_1983_table_3:row7:col2, Watari_1983_table_3:row8:col2, Watari_1983_table_3:row9:col2, Watari_1983_table_3:row10:col2 |
+| A1 (min-1) | `Q415` · A1 | 0.163 | min-1 |  |  | 1/min | exact (1) | Watari_1983_table_3:row0:col3, Watari_1983_table_3:row1:col3, Watari_1983_table_3:row2:col3, Watari_1983_table_3:row3:col3, Watari_1983_table_3:row6:col3, Watari_1983_table_3:row7:col3, Watari_1983_table_3:row8:col3 |
+| A2-1 (min-1) | `Q416` · A2 | 0.0347 | min-1 |  |  | 1/min | llm_confirmed (0.6) | Watari_1983_table_3:row0:col5, Watari_1983_table_3:row1:col5, Watari_1983_table_3:row2:col5, Watari_1983_table_3:row3:col5, Watari_1983_table_3:row4:col5, Watari_1983_table_3:row5:col5, Watari_1983_table_3:row6:col5, Watari_1983_table_3:row7:col5, Watari_1983_table_3:row8:col5, Watari_1983_table_3:row9:col5, Watari_1983_table_3:row10:col5 |
+| V1 (L/kg) | `Q61` · V | 0.144 | L/kg | 0.01008 | m3 | l/kg | exact (1) | Watari_1983_table_3:row0:col6, Watari_1983_table_3:row1:col6, Watari_1983_table_3:row2:col6, Watari_1983_table_3:row3:col6, Watari_1983_table_3:row4:col6, Watari_1983_table_3:row5:col6, Watari_1983_table_3:row6:col6, Watari_1983_table_3:row7:col6, Watari_1983_table_3:row8:col6, Watari_1983_table_3:row9:col6, Watari_1983_table_3:row10:col6 |
+| k12 (min-1) | `Q30` · Q | 0.0382 | min-1 |  |  | 1/min | exact (1) | Watari_1983_table_3:row0:col7, Watari_1983_table_3:row1:col7, Watari_1983_table_3:row2:col7, Watari_1983_table_3:row3:col7, Watari_1983_table_3:row4:col7, Watari_1983_table_3:row5:col7, Watari_1983_table_3:row6:col7, Watari_1983_table_3:row7:col7, Watari_1983_table_3:row8:col7, Watari_1983_table_3:row9:col7, Watari_1983_table_3:row10:col7 |
+| ke (min-1) | `Q47` · kel | 0.0513 | min-1 | 0.000855 | 1/s | 1/min | exact (1) | Watari_1983_table_3:row0:col9, Watari_1983_table_3:row1:col9, Watari_1983_table_3:row2:col9, Watari_1983_table_3:row3:col9, Watari_1983_table_3:row4:col9, Watari_1983_table_3:row5:col9, Watari_1983_table_3:row6:col9, Watari_1983_table_3:row7:col9, Watari_1983_table_3:row8:col9, Watari_1983_table_3:row9:col9, Watari_1983_table_3:row10:col9 |
+| Renal CLc (ml/min/kg) | `Q22` · CL | 6.68 | ml/min/kg | 7.793e-06 | m3/s | ml/(min·kg) | exact (1) | Watari_1983_table_3:row0:col11, Watari_1983_table_3:row1:col11, Watari_1983_table_3:row2:col11, Watari_1983_table_3:row3:col11, Watari_1983_table_3:row4:col11, Watari_1983_table_3:row5:col11, Watari_1983_table_3:row6:col11, Watari_1983_table_3:row7:col11, Watari_1983_table_3:row8:col11, Watari_1983_table_3:row9:col11, Watari_1983_table_3:row10:col11 |
+| Vssd (L/kg) | `Q65` · Vss | 0.196 | L/kg | 0.01372 | m3 | l/kg | llm (0.6) | Watari_1983_table_3:row0:col12, Watari_1983_table_3:row1:col12, Watari_1983_table_3:row2:col12, Watari_1983_table_3:row3:col12, Watari_1983_table_3:row4:col12, Watari_1983_table_3:row5:col12, Watari_1983_table_3:row6:col12, Watari_1983_table_3:row7:col12, Watari_1983_table_3:row8:col12, Watari_1983_table_3:row9:col12, Watari_1983_table_3:row10:col12 |
+| CLb (ml/min/kg) | `Q23` · CLb | 9.16 | ml/min/kg | 1.069e-05 | m3/s | ml/(min·kg) | exact (1) | Watari_1983_table_3:row4:col10, Watari_1983_table_3:row5:col10, Watari_1983_table_3:row9:col10, Watari_1983_table_3:row10:col10 |
+| ka | `Q49` · kabs | 9.76 | h -1 | 0.002711 | 1/s | 1/h | review_gapfill (0.7) | Anderson_1998:review |
+| Tlag | `Q83` · tlag | 4.2 | min | 252 | s | h | review_gapfill (0.7) | Gibb_2008:review |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'as' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'ag' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped value-less row: 'Total body clearance (ml/min/kg)' (captured trailing unit 'ml/min/kg' for child rows)
+- dropped value-less row: 'Renal clearance of AAP (ml/min/kg)' (captured trailing unit 'ml/min/kg' for child rows)
+- dropped value-less row: 'Partial clearance to AS (ml/min/kg)' (captured trailing unit 'ml/min/kg' for child rows)
+- dropped value-less row: 'Partial clearance to AG (ml/min/kg)' (captured trailing unit 'ml/min/kg' for child rows)
+- dropped value-less row: 'Partial clearance to unknown metabolite a (ml/min/kg)' (captured trailing unit 'ml/min/kg' for child rows)
+- unit_dimension_mismatch: 'C1 (μM)' → Q75 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
+- dropped unlinked row (NIL): 'C2 (μM)' — extend the ontology if this is a real PK parameter (source ['Watari_1983_table_3:row0:col4', 'Watari_1983_table_3:row1:col4', 'Watari_1983_table_3:row2:col4', 'Watari_1983_table_3:row3:col4', 'Watari_1983_table_3:row6:col4', 'Watari_1983_table_3:row7:col4', 'Watari_1983_table_3:row8:col4'])
+- unit_dimension_mismatch: 'k12 (min-1)' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'k21 (min-1)' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q30 ('k21 (min-1)', value '0.1068') — already have one for this compound
+- metabolite volume: 'V1 (L/kg)' Q63→Q61 for acetaminophen sulfate — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acetaminophen
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — only the metabolite is modelled — no parent compartment
 - status held at "Needs review" — not promoted
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- base model from table(s) without population columns (Watari_1983:other_prose, Watari_1983_table_2, Watari_1983_table_3); populations 1058 (160 mg/kg), 132.3 (20 mg/kg), 264.6 (40 mg/kg), 529.2 (80 mg/kg), 66.16 (10 mg/kg) kept as separate records
+- row roles (LLM): model_class=compartmental; 23/23 row label(s) assigned, 105 linked by role; re-tagged parent→acetaminophen sulfate ×119, parent→acetaminophen glucuronide ×6
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Anderson_1998's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Gibb_2008's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available; abstract in Watari_1983_metadata.yaml carries no parameter-bearing sentence
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 2, 3, 7
+- transposed table Watari_1983_table_2: logical view retains original source coordinates
+- table Watari_1983_table_3: unparsed_numeric_cell
+- transposed table Watari_1983_table_3: logical view retains original source coordinates
+- transposed table Watari_1983_table_7: logical view retains original source coordinates
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.263 (5/19 fields) | 14 |
+
+<details><summary>14 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['acetaminophen', 'acetaminophen sulfate', 'metabolism'], ['acetaminophen', 'acetaminophen glucuronide', 'metabolism']] | [['acetaminophen', 'acetaminophen sulfate', 'metabolism'], ['acetaminophen', 'acetaminophen glucuronide', 'metabolism'], ['acetaminophen sulfate', 'acetaminophen', 'hydrolysis'], ['acetaminophen glucuronide', 'acetaminophen', 'hydrolysis']] | mismatch |
+| `gpt-oss-120b` | `parameters[a1]` |  | 0.163 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a1]` | 0.163 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a2-1]` |  | 0.0347 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a2-1]` | 0.0347 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c1]` |  | 170 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c1]` | 170 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clb]` | 9.16 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` |  | 0.0382 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 0.0382 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ke]` |  | 0.0513 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ke]` | 0.0513 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` |  | 0.144 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 0.144 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained |
-|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |
-| C0b_disposition_core | fail |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 9 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Watari_1983_table_3:row0:col11', 'Watari_1983_table_3:row1:col11', 'Watari_1983_table_3:row2:col11', 'Watari_1983_table_3:row3:col11', 'Watari_1983_table_3:row4:col11', 'Watari_1983_table_3:row5:col11', 'Watari_1983_table_3:row6:col11', 'Watari_1983_table_3:row7:col11', 'Watari_1983_table_3:row8:col11', 'Watari_1983_table_3:row9:col11', 'Watari_1983_table_3:row10:col11'] |
+| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Watari_1983_table_3:row4:col10', 'Watari_1983_table_3:row5:col10', 'Watari_1983_table_3:row9:col10', 'Watari_1983_table_3:row10:col10'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | min-1 (1 / [time]) | ['Watari_1983_table_3:row0:col7', 'Watari_1983_table_3:row1:col7', 'Watari_1983_table_3:row2:col7', 'Watari_1983_table_3:row3:col7', 'Watari_1983_table_3:row4:col7', 'Watari_1983_table_3:row5:col7', 'Watari_1983_table_3:row6:col7', 'Watari_1983_table_3:row7:col7', 'Watari_1983_table_3:row8:col7', 'Watari_1983_table_3:row9:col7', 'Watari_1983_table_3:row10:col7'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Watari_1983_table_3:row0:col9', 'Watari_1983_table_3:row1:col9', 'Watari_1983_table_3:row2:col9', 'Watari_1983_table_3:row3:col9', 'Watari_1983_table_3:row4:col9', 'Watari_1983_table_3:row5:col9', 'Watari_1983_table_3:row6:col9', 'Watari_1983_table_3:row7:col9', 'Watari_1983_table_3:row8:col9', 'Watari_1983_table_3:row9:col9', 'Watari_1983_table_3:row10:col9'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Anderson_1998:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Watari_1983_table_3:row0:col6', 'Watari_1983_table_3:row1:col6', 'Watari_1983_table_3:row2:col6', 'Watari_1983_table_3:row3:col6', 'Watari_1983_table_3:row4:col6', 'Watari_1983_table_3:row5:col6', 'Watari_1983_table_3:row6:col6', 'Watari_1983_table_3:row7:col6', 'Watari_1983_table_3:row8:col6', 'Watari_1983_table_3:row9:col6', 'Watari_1983_table_3:row10:col6'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Watari_1983_table_3:row0:col12', 'Watari_1983_table_3:row1:col12', 'Watari_1983_table_3:row2:col12', 'Watari_1983_table_3:row3:col12', 'Watari_1983_table_3:row4:col12', 'Watari_1983_table_3:row5:col12', 'Watari_1983_table_3:row6:col12', 'Watari_1983_table_3:row7:col12', 'Watari_1983_table_3:row8:col12', 'Watari_1983_table_3:row9:col12', 'Watari_1983_table_3:row10:col12'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | μM ([length]) | ['Watari_1983_table_3:row0:col2', 'Watari_1983_table_3:row1:col2', 'Watari_1983_table_3:row2:col2', 'Watari_1983_table_3:row3:col2', 'Watari_1983_table_3:row4:col2', 'Watari_1983_table_3:row5:col2', 'Watari_1983_table_3:row6:col2', 'Watari_1983_table_3:row7:col2', 'Watari_1983_table_3:row8:col2', 'Watari_1983_table_3:row9:col2', 'Watari_1983_table_3:row10:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Gibb_2008:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.68 | ['Watari_1983_table_3:row0:col11', 'Watari_1983_table_3:row1:col11', 'Watari_1983_table_3:row2:col11', 'Watari_1983_table_3:row3:col11', 'Watari_1983_table_3:row4:col11', 'Watari_1983_table_3:row5:col11', 'Watari_1983_table_3:row6:col11', 'Watari_1983_table_3:row7:col11', 'Watari_1983_table_3:row8:col11', 'Watari_1983_table_3:row9:col11', 'Watari_1983_table_3:row10:col11'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 28.1 L/h | ['Watari_1983_table_3:row0:col11', 'Watari_1983_table_3:row1:col11', 'Watari_1983_table_3:row2:col11', 'Watari_1983_table_3:row3:col11', 'Watari_1983_table_3:row4:col11', 'Watari_1983_table_3:row5:col11', 'Watari_1983_table_3:row6:col11', 'Watari_1983_table_3:row7:col11', 'Watari_1983_table_3:row8:col11', 'Watari_1983_table_3:row9:col11', 'Watari_1983_table_3:row10:col11'] |
+| C9_phys_window_Q23 | pass | clearance within physiological range | 38.5 L/h | ['Watari_1983_table_3:row4:col10', 'Watari_1983_table_3:row5:col10', 'Watari_1983_table_3:row9:col10', 'Watari_1983_table_3:row10:col10'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10.1 L | ['Watari_1983_table_3:row0:col6', 'Watari_1983_table_3:row1:col6', 'Watari_1983_table_3:row2:col6', 'Watari_1983_table_3:row3:col6', 'Watari_1983_table_3:row4:col6', 'Watari_1983_table_3:row5:col6', 'Watari_1983_table_3:row6:col6', 'Watari_1983_table_3:row7:col6', 'Watari_1983_table_3:row8:col6', 'Watari_1983_table_3:row9:col6', 'Watari_1983_table_3:row10:col6'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 13.7 L | ['Watari_1983_table_3:row0:col12', 'Watari_1983_table_3:row1:col12', 'Watari_1983_table_3:row2:col12', 'Watari_1983_table_3:row3:col12', 'Watari_1983_table_3:row4:col12', 'Watari_1983_table_3:row5:col12', 'Watari_1983_table_3:row6:col12', 'Watari_1983_table_3:row7:col12', 'Watari_1983_table_3:row8:col12', 'Watari_1983_table_3:row9:col12', 'Watari_1983_table_3:row10:col12'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -95,4 +204,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Watari1983_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Watari1983_reference%0APaper%3A%20Watari_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Watari1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 07:36 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 03:00 UTC</sub>

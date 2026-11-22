@@ -4,11 +4,11 @@
 
 # sulfamerazine — `Sulfamerazine_Hayashi1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 21:58 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="sulfamerazine" model-id="Sulfamerazine_Hayashi1979_reference" status="needs_review" stale="true" population="ewe lambs" measured-compound="sulfamerazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sulfamerazine" model-id="Sulfamerazine_Hayashi1979_reference" status="needs_review" stale="false" population="ewe lambs" measured-compound="sulfamerazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hayashi M, Bourne DW, Bevill RF, Koritz GD. Disposition of sulfonamides in food-producing animals: pharmacokinetics of sulfamerazine in ewe lambs. American journal of veterinary research 40(11):1578–1582 (1979).
@@ -36,7 +36,7 @@ Hayashi M, Bourne DW, Bevill RF, Koritz GD. Disposition of sulfonamides in food-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Hayashi M, Bourne DW, Bevill RF, Koritz GD. Disposition of sulfonamides in food-
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sulfamerazine: t1/2z 6.6 hours, kabs 0.433 hour-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfamerazine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

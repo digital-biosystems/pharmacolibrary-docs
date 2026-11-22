@@ -16,7 +16,7 @@ Sällsten G, Barregård L, Schütz A. Clearance half life of mercury in urine af
 
 ## Population and dosing
 
-**Population:** former chloro-alkali workers · age group adult · n = condition.
+**Population:** former chloro-alkali workers · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed DMPS, measured mercury.
 

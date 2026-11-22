@@ -4,11 +4,11 @@
 
 # ethanol — `Ethanol_Holford1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:49 UTC (Rejected), but the paper was screened again on 2026-10-07 21:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The ethanol record was rejected because breath clearance was 0.16 L/h while volume of distribution was 37 L, a dimensionally inconsistent parameter pairing.
+> Ethanol’s Ae parameter is recorded as 0.3%, a dimensionless fraction where the amount-excreted parameter requires mass, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="ethanol" model-id="Ethanol_Holford1987_reference" status="rejected" stale="true" population="adults" measured-compound="ethanol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ethanol" model-id="Ethanol_Holford1987_reference" status="rejected" stale="false" population="adults" measured-compound="ethanol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Holford NH. Clinical pharmacokinetics of ethanol. Clinical pharmacokinetics 13(5):273–292 (1987).
@@ -39,7 +39,7 @@ Holford NH. Clinical pharmacokinetics of ethanol. Clinical pharmacokinetics 13(5
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Holford NH. Clinical pharmacokinetics of ethanol. Clinical pharmacokinetics 13(5
 
 ### Reviewer guidance
 
-**The ethanol record was rejected because breath clearance was 0.16 L/h while volume of distribution was 37 L, a dimensionally inconsistent parameter pairing.**
+**Ethanol’s Ae parameter is recorded as 0.3%, a dimensionless fraction where the amount-excreted parameter requires mass, so the record was rejected.**
 
-The source text was abstract-only, so summary statistics stood in for a fitted model. The recorded breath clearance value was 0.16 L/h. The recorded volume of distribution value was 37 L. A second reader disagreed that these values could be identified from the abstract. Extracted — ethanol: V 37 L/70 kg, Ae 0.3 %, fe 0.1 %, E 0.2, CL 0.16 L/h, CLR 0.06 L/h.
+Ae is the amount of the administered dose excreted unchanged; its recorded percent unit is dimensionless, conflicting with the required mass dimension. The record came from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — ethanol: V 37 L/70 kg, Ae 0.3 %, fe 0.1 %, E 0.2, CL 0.16 L/h, CLR 0.06 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ethanol, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

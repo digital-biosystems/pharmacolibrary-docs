@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meclofenamic acid&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MeclofenamicAcid_Snow1981_reference&quot;,&quot;label&quot;:&quot;Snow_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meclofenamic_acid/MeclofenamicAcid_Snow1981_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # meclofenamic acid
 
@@ -22,9 +23,15 @@ Meclofenamic acid is a fenamate non-steroidal anti-inflammatory drug used to tre
 |---|---|---|---|---|---|---|
 | meclofenamic_acid (meclofenamic acid) | metabolite | 296.149 | C14H11Cl2NO2 | DrugBank | [4037](https://pubchem.ncbi.nlm.nih.gov/compound/4037) | Johansson_1991, Snow_1981 |
 
+## Start here
+
+> **Snow_1981_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> Thoroughbred horses and ponies. [Run it in the simulator](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Snow1981_reference.md?tab=Simulation) · [record](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Snow1981_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Snow_1981 · V ·/kg</text><circle cx="523.3" cy="30.0" r="4" fill="#78909c"><title>Snow_1981 · V ·/kg: 8.96 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Johansson_1991 · V/F ·/kg</text><circle cx="536.9" cy="46.0" r="4" fill="#ef6c00"><title>Johansson_1991 · V/F ·/kg: 9.8 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Snow_1981 · V ·/kg</text><circle cx="523.3" cy="30.0" r="4" fill="#ef6c00"><title>Snow_1981 · V ·/kg: 8.96 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Johansson_1991 · V/F ·/kg</text><circle cx="536.9" cy="46.0" r="4" fill="#ef6c00"><title>Johansson_1991 · V/F ·/kg: 9.8 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -32,22 +39,8 @@ Meclofenamic acid is a fenamate non-steroidal anti-inflammatory drug used to tre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Not simulated</sub> | [Snow_1981_reference](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Snow1981_reference.md) | — | 1-compartment (no model) | 2 | Snow DH et al., The pharmacokinetics of meclofenamic ac…, Journal of veterinary pharm… (1981) | [10.1111/j.1365-2885.1981.tb00724.x](https://doi.org/10.1111/j.1365-2885.1981.tb00724.x) |
 | <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Johansson_1991_reference](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Johansson1991_reference.md) | — | 1-compartment (no model) | 3 | Johansson IM et al., Studies of meclofenamic acid and two me…, Journal of veterinary pharm… (1991) | [10.1111/j.1365-2885.1991.tb00832.x](https://doi.org/10.1111/j.1365-2885.1991.tb00832.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=meclofenamic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ALOX5 (inhibitor), KCNQ2 (other), KCNQ3 (other), PTGS1 (inhibitor), PTGS2 (inhibitor), SERPINA7 (substrate), SLCO1C1 (inhibitor).</sub>
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: cross_check_disputed</sub> | [Snow_1981_reference](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Snow1981_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Snow DH et al., The pharmacokinetics of meclofenamic ac…, Journal of veterinary pharm… (1981) | [10.1111/j.1365-2885.1981.tb00724.x](https://doi.org/10.1111/j.1365-2885.1981.tb00724.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -67,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 17 matched, 17 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

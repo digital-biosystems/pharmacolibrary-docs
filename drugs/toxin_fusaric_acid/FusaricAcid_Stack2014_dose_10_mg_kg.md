@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fusaric Acid&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/&quot;},{&quot;label&quot;:&quot;Stack_2014 \u00b7 dose_10_mg_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusaricAcid_Stack2014_reference&quot;,&quot;label&quot;:&quot;Stack_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusaricAcid_Stack2014_reference&quot;,&quot;label&quot;:&quot;Stack_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was rejected because the volume of distribution is listed as 135.7 mL, causing an implausibly low clearance-to-volume ratio due to a missing unit conversion.
 
 <div class="pk-model-meta" hidden drug="Fusaric Acid" model-id="FusaricAcid_Stack2014_dose_10_mg_kg" status="rejected" stale="false" population="Male Sprague-Dawley rats" measured-compound="Fusaric Acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,7 +50,13 @@ Stack BC, Ye J, Willis R, Hubbard M, Hendrickson HP. Determination of oral bioav
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was rejected because the volume of distribution is listed as 135.7 mL, causing an implausibly low clearance-to-volume ratio due to a missing unit conversion.**
+
+The clearance of 3.07 mL/min/kg and volume of 135.7 mL create a terminal half-life of only 30 seconds, contradicting the reported 40.3 min. The volume unit was not converted to an absolute scale, leaving the parameter in unnormalized milliliters rather than weight-adjusted units. This unit mismatch caused the physiological plausibility check for the clearance-to-volume ratio to fail. Extracted — fusaric acid: t1/2z 40.3 min, AUC∞ 2.67e+04 mol-min/L, V 136 ml, CL 3.07 mL/min/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

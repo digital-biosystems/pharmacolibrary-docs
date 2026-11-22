@@ -16,7 +16,19 @@
   "cmax": [
    {
     "source": "Hong_2021:other_prose",
+    "value_si": 9.999999999999999e-06
+   },
+   {
+    "source": "Hong_2021:other_prose",
+    "value_si": 0.00019246
+   },
+   {
+    "source": "Hong_2021:other_prose",
     "value_si": 1.177
+   },
+   {
+    "source": "Hong_2021:other_prose",
+    "value_si": 1.139
    }
   ]
  },
@@ -24,7 +36,7 @@
   "Cl": 7.083333333333334e-06,
   "F": 1.0,
   "MM": 0.40887599999999996,
-  "Tlag": 0.0,
+  "Tlag": 13896.0,
   "VdPerKg": 0.013471428571428572,
   "adminCount": 1.0,
   "adminDuration": 600.0,
@@ -35,10 +47,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 13505.41082164329
+  "central.C": 28049.69939879759
  },
  "reference_peaks": {
-  "central.C": 4.669299567063536e-06
+  "central.C": 4.669160818414953e-06
  },
  "stop_time": 518400.0,
  "template": "PK_2C_enteral",

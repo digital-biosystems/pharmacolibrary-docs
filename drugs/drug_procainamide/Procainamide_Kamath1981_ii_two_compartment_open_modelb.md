@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;procainamide&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/&quot;},{&quot;label&quot;:&quot;Kamath_1981 \u00b7 ii_two_compartment_open_modelb&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procainamide_Ellis1994_reference&quot;,&quot;label&quot;:&quot;Ellis_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Ellis1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Grasela1984_reference&quot;,&quot;label&quot;:&quot;Grasela_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Grasela1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Kamath1981_i_one_compartment_open_model&quot;,&quot;label&quot;:&quot;Kamath_1981_i_one_compartment_open_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Kamath1981_i_one_compartment_open_model.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Papich1986_reference&quot;,&quot;label&quot;:&quot;Papich_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Papich1986_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kharidia_1996_QT&quot;,&quot;label&quot;:&quot;Kharidia_1996 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/pd_Kharidia_1996_QT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liu_1991_QTc&quot;,&quot;label&quot;:&quot;Liu_1991 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/pd_Liu_1991_QTc.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liu_1991_QTc_2&quot;,&quot;label&quot;:&quot;Liu_1991 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/pd_Liu_1991_QTc_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procainamide_Grasela1984_reference&quot;,&quot;label&quot;:&quot;Grasela_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Grasela1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Ellis1994_reference&quot;,&quot;label&quot;:&quot;Ellis_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Ellis1994_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Kamath1981_i_one_compartment_open_model&quot;,&quot;label&quot;:&quot;Kamath_1981_i_one_compartment_open_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Kamath1981_i_one_compartment_open_model.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Papich1986_reference&quot;,&quot;label&quot;:&quot;Papich_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Papich1986_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kharidia_1996_QT&quot;,&quot;label&quot;:&quot;Kharidia_1996 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/pd_Kharidia_1996_QT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liu_1991_QTc&quot;,&quot;label&quot;:&quot;Liu_1991 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/pd_Liu_1991_QTc.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liu_1991_QTc_2&quot;,&quot;label&quot;:&quot;Liu_1991 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/pd_Liu_1991_QTc_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # procainamide — `Procainamide_Kamath1981_ii_two_compartment_open_modelb`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-10-08 20:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Procainamide renal clearance of 0.880 liters/hr/kg was rejected because the unit could not be converted to SI.
+> Record for procainamide rejected due to a unit dimension conflict on the intercompartmental clearance parameter Q, which is defined as an inverse time rate constant.
 
-<div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kamath1981_ii_two_compartment_open_modelb" status="rejected" stale="true" population="rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kamath1981_ii_two_compartment_open_modelb" status="rejected" stale="false" population="rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Kamath BL, Lai CM, Gupta SD, Durrani MJ, Yacobi A. Pharmacokinetics of procainamide and N-acetylprocainamide in rats. Journal of pharmaceutical sciences 70(3):299–302 (1981).
@@ -45,7 +45,7 @@ Kamath BL, Lai CM, Gupta SD, Durrani MJ, Yacobi A. Pharmacokinetics of procainam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +55,11 @@ Kamath BL, Lai CM, Gupta SD, Durrani MJ, Yacobi A. Pharmacokinetics of procainam
 
 ### Reviewer guidance
 
-**Procainamide renal clearance of 0.880 liters/hr/kg was rejected because the unit could not be converted to SI.**
+**Record for procainamide rejected due to a unit dimension conflict on the intercompartmental clearance parameter Q, which is defined as an inverse time rate constant.**
 
-The record lists renal clearance as 0.880 liters/hr/kg, but this specific unit combination could not be converted to standard SI units. As a result, the parameter lacked a valid SI value, causing a dimension mismatch on this structural parameter. The second reader disagreed on the presence of multiple parameters, recording them as null rather than the extracted values. Extracted — procainamide: λ1 2.52 hr-1, kel 0.333 hr-1, t1/2z 2.13 hr, Q 0.983 hr-1, V1 1.46 liters/kg, V 3.82 liters/kg, CLR 0.88 liters/hr/kg.
+The intercompartmental parameter Q, labeled k12 with a value of 0.983, is recorded in units of hr-1, yet the model expects dimensions of volume per time. This dimensional mismatch prevented the parameter from being correctly integrated into the structural model. A second reader could not confirm the extracted values for Q, V1, CLR, and other key pharmacokinetic parameters, returning null for all listed fields. Extracted — procainamide: λ1 2.52 hr-1, kel 0.333 hr-1, t1/2z 2.13 hr, Q 0.983 hr-1, V1 1.46 liters/kg, V 3.82 liters/kg, CLR 0.88 liters/hr/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -110,30 +110,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.1 (2/20 fields) | 18 |
+| `gpt-oss-120b` | not confirmed | 0.1 (2/20 fields) | 18 |
 
 <details><summary>18 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clr]` | 0.880 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clr]` |  | 0.880 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life]` | 2.13 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life]` |  | 2.13 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k10]` |  | 0.900 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k12]` | 0.983 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k12]` |  | 0.983 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kex]` |  | 0.657 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` | 1.46 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` |  | 1.46 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd(β)]` | 3.82 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd(β)]` |  | 3.82 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[α]` | 2.52 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[α]` |  | 2.52 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[β]` | 0.333 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[β]` |  | 0.333 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | procainamide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | procainamide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[clr]` | 0.880 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr]` |  | 0.880 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 2.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` |  | 2.13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k10]` |  | 0.900 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 0.983 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` |  | 0.983 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kex]` |  | 0.657 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 1.46 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` |  | 1.46 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(β)]` | 3.82 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(β)]` |  | 3.82 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 2.52 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` |  | 2.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.333 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` |  | 0.333 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | procainamide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | procainamide | unknown | mismatch |
 
 </details>
 

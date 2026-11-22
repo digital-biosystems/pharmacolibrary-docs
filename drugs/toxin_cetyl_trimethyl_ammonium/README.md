@@ -25,7 +25,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yuan_2011_CST](drugs/toxin_cetyl_trimethyl_ammonium/pd_Yuan_2011_CST.md) | Capillary suction time (CST) and specific resistance of filtration (SRF) / dewaterability ← cetyl_trimethyl_ammonium_bromide · model not identified | — | Yuan H et al., Dewaterability characteristics of sludg…, Bioresource technology (2011) | [10.1016/j.biortech.2010.10.065](https://doi.org/10.1016/j.biortech.2010.10.065) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">other organism</span> | [Yuan_2011_CST](drugs/toxin_cetyl_trimethyl_ammonium/pd_Yuan_2011_CST.md) | Capillary suction time (CST) and specific resistance of filtration (SRF) / dewaterability ← cetyl_trimethyl_ammonium_bromide · model not identified | — | Yuan H et al., Dewaterability characteristics of sludg…, Bioresource technology (2011) | [10.1016/j.biortech.2010.10.065](https://doi.org/10.1016/j.biortech.2010.10.065) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Sethi_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Nelson1982_vinblastine&quot;,&quot;label&quot;:&quot;Nelson_1982_vinblastine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Nelson1982_vinblastine.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Sethi1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
-> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-11-04 18:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vinblastine's elimination rate constant unit could not be converted to SI, causing a dimension mismatch and record rejection.
+> The model does not reproduce the paper's terminal half-life (paper 3.15, model 1.84); k12, k21 use library defaults, not estimates from this paper (+1 more).
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Sethi1984_reference" status="rejected" stale="true" population="adult male rhesus monkeys" measured-compound="vincristine, vinblastine, vindesine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Sethi1984_reference" status="needs_review" stale="false" population="adult male rhesus monkeys" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Sethi VS, Surratt P, Spurr CL. Pharmacokinetics of vincristine, vinblastine, and vindesine in rhesus monkeys. Cancer chemotherapy and pharmacology 12(1):31–35 (1984).
@@ -17,39 +17,38 @@ Sethi VS, Surratt P, Spurr CL. Pharmacokinetics of vincristine, vinblastine, and
 
 ## Population and dosing
 
-**Population:** adult male rhesus monkeys · age group adult.
+**Population:** adult male rhesus monkeys · condition healthy · age group adult.
 
 **Dosing:** 3.5, 7, 14 mg, iv, single.
-
-**Dosed compound ≠ measured compound:** dosed vinblastine, measured vincristine, vinblastine, vindesine.
 
 > **Species: monkey.** This record comes from an animal study (monkey), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
+**Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 9 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 8 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_vinblastine/Vinblastine_Sethi1984_reference/Vinblastine_Sethi1984_reference.svg" alt="Vinblastine_Sethi1984_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| αt1/2 (min) | t1/2α | 1.9 | min |
-| βt1/2 (min) | t1/2β | 152 | min |
+| alpha t1/2 (min) | t1/2α | 1.9 | min |
+| beta t1/2 (min) | t1/2β | 152 | min |
 | Vc (l/kg) | V1 | 0.210 | l/kg |
 | VD (l/kg) | V | 1.50 | l/kg |
-| AUC∞ (nM · min) | AUC∞ | 31146 | nM · min |
 | Plasma Clearance (ml/min/kg) | CL | 7.0 | ml/min/kg |
-| k10 (min−1) | kel | 0.054 | min−1 |
-| k12 (min−1) | k12 | 0.281 | min−1 |
-| k21 (min−1) | k21 | 0.031 | min−1 |
+| k10 (min-1) | kel | 0.054 | min-1 |
+| k12 (min-1) | k12 | 0.281 | min-1 |
+| k21 (min-1) | k21 | 0.031 | min-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.769), gpt-oss:120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,27 +58,26 @@ Sethi VS, Surratt P, Spurr CL. Pharmacokinetics of vincristine, vinblastine, and
 
 ### Reviewer guidance
 
-**Vinblastine's elimination rate constant unit could not be converted to SI, causing a dimension mismatch and record rejection.**
+**The model does not reproduce the paper's terminal half-life (paper 3.15, model 1.84); k12, k21 use library defaults, not estimates from this paper (+1 more).**
 
-The elimination rate constant for vinblastine was reported in minutes, a unit that could not be converted to SI. This prevented the calculation of valid parameter values, resulting in a dimension mismatch on a structural parameter. Consequently, the model was rejected because the software could not compute a coherent pharmacokinetic structure. Extracted — vinblastine: t1/2α 1.9 min, t1/2β 152 min, V1 0.21 l/kg, V 1.5 l/kg, AUC∞ 3.11e+04 nM · min, CL 7 ml/min/kg, kel 0.054 min−1, k12 0.281 min−1, … (+1).
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — vinblastine: t1/2α 1.9 min, t1/2β 152 min, V1 0.21 l/kg, V 1.5 l/kg, CL 7 ml/min/kg, kel 0.054 min-1, k12 0.281 min-1, k21 0.031 min-1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has vincristine, vinblastine, vindesine, the second reading vinblastine; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| αt1/2 (min) | `Q59` · t1/2α | 1.9 | min | 114 | s | min | llm_corrected (0.6) | Sethi_1984_table_1:row0:col3 |
-| βt1/2 (min) | `Q60` · t1/2β | 152 | min | 9120 | s | min | llm_corrected (0.6) | Sethi_1984_table_1:row1:col3 |
+| alpha t1/2 (min) | `Q59` · t1/2α | 1.9 | min | 114 | s | min | half_life_rule (0.95) | Sethi_1984_table_1:row2:col1 |
+| beta t1/2 (min) | `Q60` · t1/2β | 152 | min | 9120 | s | min | half_life_rule (0.95) | Sethi_1984_table_1:row2:col2 |
 | Vc (l/kg) | `Q63` · V1 | 0.210 | l/kg | 0.0147 | m3 | l/kg | exact (1) | Sethi_1984_table_1:row2:col3 |
-| VD (l/kg) | `Q61` · V | 1.50 | l/kg | 0.105 | m3 | l/kg | exact (1) | Sethi_1984_table_1:row3:col3 |
-| AUC∞ (nM · min) | `Q17` · AUC∞ | 31146 | nM · min |  |  | min·nM | exact (1) | Sethi_1984_table_1:row4:col3 |
-| Plasma Clearance (ml/min/kg) | `Q22` · CL | 7.0 | ml/min/kg | 8.167e-06 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Sethi_1984_table_1:row6:col3 |
-| k10 (min−1) | `Q47` · kel | 0.054 | min−1 | 0.0009 | 1/s | 1/min | exact (1) | Sethi_1984_table_1:row7:col3 |
-| k12 (min−1) | `Q301` · k12 | 0.281 | min−1 | 0.004683 | 1/s | 1/min | exact (1) | Sethi_1984_table_1:row8:col3 |
-| k21 (min−1) | `Q302` · k21 | 0.031 | min−1 | 0.0005167 | 1/s | 1/min | exact (1) | Sethi_1984_table_1:row9:col3 |
+| VD (l/kg) | `Q61` · V | 1.50 | l/kg | 0.105 | m3 | l/kg | exact (1) | Sethi_1984_table_1:row2:col4 |
+| Plasma Clearance (ml/min/kg) | `Q22` · CL | 7.0 | ml/min/kg | 8.167e-06 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Sethi_1984_table_1:row2:col7 |
+| k10 (min-1) | `Q47` · kel | 0.054 | min-1 | 0.0009 | 1/s | 1/min | exact (1) | Sethi_1984_table_1:row2:col8 |
+| k12 (min-1) | `Q301` · k12 | 0.281 | min-1 | 0.004683 | 1/s | 1/min | exact (1) | Sethi_1984_table_1:row2:col9 |
+| k21 (min-1) | `Q302` · k21 | 0.031 | min-1 | 0.0005167 | 1/s | 1/min | exact (1) | Sethi_1984_table_1:row2:col10 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -88,39 +86,33 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['k12', 'k21']
+
 **Interpretation flags:**
-- unit_dimension_mismatch: 'AUC∞ (nM · min)' → Q17 (unit '[length] * [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'AUC∞ (nM · min/mg)' → Q17 (unit '[length] * [time] / [mass]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q17 ('AUC∞ (nM · min/mg)', value '16745') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vincristine, vinblastine, vindesine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
-- molar mass: no plausible PubChem entry for 'vincristine, vinblastine, vindesine' ('no full name in the paper') — left in mass units
-- molar mass: none found for 'vincristine, vinblastine, vindesine' — its concentrations stay mass-only
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinblastine
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
-- transposed table Sethi_1984_table_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- table Sethi_1984_table_1: ambiguous_numeric_format
+- transposed table Sethi_1984_table_1: logical view retains original source coordinates
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (12/12 fields) | none |
 | `qwen3.8-27b` | not confirmed | 0.769 (10/13 fields) | 3 |
-| `gpt-oss:120b` | not confirmed | 0.769 (10/13 fields) | 3 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | vinblastine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | vinblastine | unknown | mismatch |
 | `qwen3.8-27b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `qwen3.8-27b` | `screen.dose_compound` | vincristine, vinblastine, vindesine | vinblastine | mismatch |
 | `qwen3.8-27b` | `screen.primary_analyte` | vincristine, vinblastine, vindesine | vinblastine | mismatch |
@@ -137,23 +129,38 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | nM · min ([length] * [time]) | ['Sethi_1984_table_1:row4:col3'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Sethi_1984_table_1:row6:col3'] |
-| C5_dimension_Q301 | pass | 1 / [time] |  | ['Sethi_1984_table_1:row8:col3'] |
-| C5_dimension_Q302 | pass | 1 / [time] |  | ['Sethi_1984_table_1:row9:col3'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Sethi_1984_table_1:row7:col3'] |
-| C5_dimension_Q59 | pass | [time] |  | ['Sethi_1984_table_1:row0:col3'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Sethi_1984_table_1:row1:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Sethi_1984_table_1:row3:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Sethi_1984_table_1:row2:col7'] |
+| C5_dimension_Q301 | pass | 1 / [time] |  | ['Sethi_1984_table_1:row2:col9'] |
+| C5_dimension_Q302 | pass | 1 / [time] |  | ['Sethi_1984_table_1:row2:col10'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Sethi_1984_table_1:row2:col8'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Sethi_1984_table_1:row2:col1'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Sethi_1984_table_1:row2:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Sethi_1984_table_1:row2:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Sethi_1984_table_1:row2:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7 | ['Sethi_1984_table_1:row6:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7 | ['Sethi_1984_table_1:row2:col7'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 29.4 L/h | ['Sethi_1984_table_1:row6:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 105 L | ['Sethi_1984_table_1:row3:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 29.4 L/h | ['Sethi_1984_table_1:row2:col7'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 105 L | ['Sethi_1984_table_1:row2:col4'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 14.7 L | ['Sethi_1984_table_1:row2:col3'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=vinblastine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_t_half_beta | reference | fail | 3.15 | 1.839 | 0.5839 | min→SI vs simulated h |
+| T1_t_half_beta | reference | skipped | 175 | 1.839 |  | unresolved time unit 'rain' |
+| T1_t_half_beta | reference | fail | 2.533 | 1.839 | 0.7261 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 1.839 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -165,16 +172,30 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 3.5 mg infusion over 10 min, single dose. Doses in the paper: 3.5, 7, 14 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_vinblastine/Vinblastine_Sethi1984_reference/Vinblastine_Sethi1984_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_vinblastine/Vinblastine_Sethi1984_reference/Vinblastine_Sethi1984_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `Vinblastine_Sethi1984_reference_params.json` · controls `Vinblastine_Sethi1984_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Sethi1984_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Sethi1984_reference%0APaper%3A%20Sethi_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Sethi1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 18:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:11 UTC</sub>

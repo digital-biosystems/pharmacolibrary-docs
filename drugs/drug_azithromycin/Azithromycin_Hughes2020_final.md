@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;azithromycin&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/&quot;},{&quot;label&quot;:&quot;Hughes_2020 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azithromycin_Alshehri2023_reference&quot;,&quot;label&quot;:&quot;Alshehri_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/Azithromycin_Alshehri2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azithromycin_Benn2017_reference&quot;,&quot;label&quot;:&quot;Benn_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/Azithromycin_Benn2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azithromycin_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/Azithromycin_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Benn_2017_HR&quot;,&quot;label&quot;:&quot;Benn_2017 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/pd_Benn_2017_HR.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azithromycin_Benn2017_reference&quot;,&quot;label&quot;:&quot;Benn_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/Azithromycin_Benn2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azithromycin_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/Azithromycin_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azithromycin_Alshehri2023_reference&quot;,&quot;label&quot;:&quot;Alshehri_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/Azithromycin_Alshehri2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Benn_2017_HR&quot;,&quot;label&quot;:&quot;Benn_2017 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_azithromycin/pd_Benn_2017_HR.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azithromycin — `Azithromycin_Hughes2020_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:35 UTC (Rejected), but the paper was screened again on 2026-10-07 11:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The azithromycin drug-target association rate constant was rejected because its unit could not be converted to standard SI units, causing a dimension mismatch.
+> The review rejected the azithromycin record because the third intercompartmental clearance parameter lacked a defined unit for conversion.
 
-<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Hughes2020_final" status="rejected" stale="true" population="healthy adults and patients" measured-compound="azithromycin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Hughes2020_final" status="rejected" stale="false" population="healthy adults and patients" measured-compound="azithromycin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hughes JH, Sweeney K, Ahadieh S, Ouellet D. Predictions of Systemic, Intracellular, and Lung Concentrations of Azithromycin With Different Dosing Regimens Used in COVID-19 Clinical Trials. CPT: pharmacometrics & systems pharmacology 9(8):435–443 (2020).
@@ -45,7 +45,7 @@ Hughes JH, Sweeney K, Ahadieh S, Ouellet D. Predictions of Systemic, Intracellul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Hughes JH, Sweeney K, Ahadieh S, Ouellet D. Predictions of Systemic, Intracellul
 
 ### Reviewer guidance
 
-**The azithromycin drug-target association rate constant was rejected because its unit could not be converted to standard SI units, causing a dimension mismatch.**
+**The review rejected the azithromycin record because the third intercompartmental clearance parameter lacked a defined unit for conversion.**
 
-The parameter kon, representing the second-order association rate constant, is listed with a unit that the system could not translate into standard SI dimensions. This prevented the calculation of a valid standard value, triggering a structural dimension mismatch. Although the review also noted a missing value for a muscle-related parameter, the primary rejection cause was the unconvertible unit on the binding rate constant. Extracted — azithromycin: kabs 0.259 hour−1, CL/F 100 L/hour, V1/F 186 L, Q/F 180 L/hour, Q2/F 10.6 L/hour, V3/F 2.61e+03 L, kon 0.56 hour−1, koff 0.05 hour−1.
+The structural parameter for the third intercompartmental clearance was recorded with a time-based unit, creating a dimensional conflict with the required volume flow dimensions. This specific unit was not recognized in the reference system, preventing its conversion to standard units. Consequently, the parameter remained undefined in the model structure, leading to its refusal. Extracted — azithromycin: kabs 0.259 hour−1, CL/F 100 L/hour, V1/F 186 L, Q/F 180 L/hour, Q2/F 10.6 L/hour, V3/F 2.61e+03 L, kon 0.56 hour−1, koff 0.05 hour−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dfmuscle: this record has none, the second reading 0.55. That field does not shape the model.
 

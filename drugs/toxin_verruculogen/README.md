@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [Selala_1991_electrically_induced_twitch_contractions](drugs/toxin_verruculogen/pd_Selala_1991_electrically_induced_twitch_contractions.md) | electrically induced twitch contractions ← verruculogen · stimulation effect | — | Selala MI et al., In vitro effects of tremorgenic mycotox…, Journal of natural products (1991) | [10.1021/np50073a020](https://doi.org/10.1021/np50073a020) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">pig</span> | [Selala_1991_electrically_induced_twitch_contractions](drugs/toxin_verruculogen/pd_Selala_1991_electrically_induced_twitch_contractions.md) | electrically induced twitch contractions ← verruculogen · stimulation effect | — | Selala MI et al., In vitro effects of tremorgenic mycotox…, Journal of natural products (1991) | [10.1021/np50073a020](https://doi.org/10.1021/np50073a020) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

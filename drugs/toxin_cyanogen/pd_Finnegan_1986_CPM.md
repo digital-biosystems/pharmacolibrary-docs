@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a quantitative pharmacodynamic model linking drug concentrations to the measured proliferation response (cpm). The excerpt details immunological T cell clone responses to nuclease peptides in an MHC-restricted context, lacking any stated mechanism of action, potency parameters (e.g., EC50, IC50), or rate constants.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Finnegan_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

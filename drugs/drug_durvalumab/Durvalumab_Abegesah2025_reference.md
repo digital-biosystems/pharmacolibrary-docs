@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;durvalumab&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/&quot;},{&quot;label&quot;:&quot;Abegesah_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's time of the peak (tmax) (paper − 0.498, model 0.183); the covariate scenarios were not simulated.
+> The durvalumab model's tmax (0.183) failed to match the paper's value (0.498), and covariate scenarios were not simulated.
 
 <div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Abegesah2025_reference" status="needs_review" stale="false" population="patients with advanced cancers, including biliary tract cancer" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Abegesah A, Oh DY, Lim K, Fan C, Chen C, Kim C et al. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's time of the peak (tmax) (paper − 0.498, model 0.183); the covariate scenarios were not simulated.**
+**The durvalumab model's tmax (0.183) failed to match the paper's value (0.498), and covariate scenarios were not simulated.**
 
-Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — durvalumab: CL 0.298 L/day, V1 3.42 L, Q 0.453 L/day, V2 1.99 L.
+The simulated time of the peak was 0.183, differing from the paper's reported 0.498, exceeding the tolerance. The record defines covariate effects, but the simulation only exercised the reference individual, omitting the defined covariate scenarios. A second reader disagreed on the extraction of body weight and creatinine clearance covariates, with a verdict agreement of 0.762. Extracted — durvalumab: CL 0.298 L/day, V1 3.42 L, Q 0.453 L/day, V2 1.99 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of body_weight_on_v1: this record has none, the second reading 0.518; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -214,6 +214,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.762, 0 of 1 reader(s) agree | 0.762 | cross-check disputed by a second reader: verdict disputed, agreement 0.762, 0 of 1 reader(s) agree |
 | T1_tmax | reference | skipped | − 0.498 | 0.1833 |  | unresolved time unit '–' |
 | T1_tmax | reference | skipped | 0.0623 | 0.1833 |  | unresolved time unit '–' |
 | T1_tmax | reference | fail | 0.498 | 0.1833 | 0.3681 | →SI vs simulated h |

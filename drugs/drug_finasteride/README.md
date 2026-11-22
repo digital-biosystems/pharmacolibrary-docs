@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Ko_1995_DHT](drugs/drug_finasteride/pd_Ko_1995_DHT.md) | DHT concentrations ← finasteride · indirect response — drug inhibits the production of DHT concentrations | model (no simulator) | Ko HC et al., Pharmacodynamic modeling of finasteride…, Pharmacotherapy (1995) | — |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Ko_1995_DHT](drugs/drug_finasteride/pd_Ko_1995_DHT.md) | DHT concentrations ← finasteride · indirect response — drug inhibits the production of DHT concentrations | — | Ko HC et al., Pharmacodynamic modeling of finasteride…, Pharmacotherapy (1995) | — |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Zhang_1999_LDL_stimulated_cholesterol_esterification](drugs/drug_finasteride/pd_Zhang_1999_LDL_stimulated_cholesterol_esterification.md) | LDL-stimulated cholesterol esterification biomarker turnover ← finasteride | — | Zhang J et al., Progesterone metabolism in human fibrob…, The Journal of steroid bioc… (1999) | [10.1016/s0960-0760(99)00107-7](https://doi.org/10.1016/s0960-0760(99)00107-7) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Ngampanya_2021_DHT](drugs/drug_finasteride/pd_Ngampanya_2021_DHT.md) | dihydrotestosterone (DHT) levels in plasma and scalp ← finasteride · indirect response — drug inhibits the production of dihydrotestosterone (DHT) levels in plasma and scalp | — | Ngampanya A et al., Development and Qualification of a Phys…, Journal of pharmaceutical s… (2021) | [10.1016/j.xphs.2021.02.016](https://doi.org/10.1016/j.xphs.2021.02.016) |
 
@@ -46,24 +46,6 @@ _not available_
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=finasteride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | `CYP3A5` metabolism/substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` metabolism/substrate, `CYP3A5` metabolism/substrate, `CYP3A7` substrate, `SULT1A1` formation | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` metabolism/substrate, `CYP3A5` metabolism/substrate, `SULT1A1` formation | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| — | liver | `SRD5A1` inhibitor/metabolism | DrugBank actor |
-| — | prostate gland | `SRD5A1` inhibitor/metabolism, `SRD5A2` inhibitor/metabolism | DrugBank actor |
-| — | skin | `SRD5A1` inhibitor/metabolism | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACE (target), AKR1D1 (inhibitor), PTGDR2 (target), PTGES2 (target), PTGFR (target), SRD5A3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> Valbenazine model rejected because the simulated output was the parent instead of the measured metabolite, and the structure was one-compartment rather than parent-metabolite.
+> The metabolite output was incorrectly assigned to the parent compartment, and the model structure did not match the parent-metabolite topology.
 
 <div class="pk-model-meta" hidden drug="valbenazine" model-id="Valbenazine_Nguyen2025_reference" status="rejected" stale="false" population="healthy subjects and patients with tardive dyskinesia and Huntington&#39;s disease chorea" measured-compound="[+]-α-HTBZ" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -66,9 +66,9 @@ Nguyen HQ, Crass RL, Chapel S, Kuan HS, Loewen G, Brar S. Population Pharmacokin
 
 ### Reviewer guidance
 
-**Valbenazine model rejected because the simulated output was the parent instead of the measured metabolite, and the structure was one-compartment rather than parent-metabolite.**
+**The metabolite output was incorrectly assigned to the parent compartment, and the model structure did not match the parent-metabolite topology.**
 
-The recorded topology describes a parent-metabolite model, but the simulation used a one-compartment structure, and the output variable was the central compartment of the parent rather than the measured metabolite. The parameter coverage check missed the metabolite's peripheral volume and the parent's peripheral volume. A second reader disagrees that the primary analyte is the metabolite and that the metabolism fraction has a value. Extracted — valbenazine: CL/F 23.2 L/h, V1/F 226 L, kabs 8.43 per hour, Q/F 22 L/h, V2/F 198 L, Frel 1.36 relative to 1 mg, fm 0.207 Units; [+]-α-HTBZ: CL 31 L/h, Q 1.27 L/h, V2 97.8 L.
+The record specified the metabolite concentration as the output variable but the model simulated the parent drug concentration. The model builder used a one-compartment absorption structure instead of the required three-compartment parent-metabolite structure. Consequently, the metabolite-specific volume and intercompartmental clearance parameters were not applied. Extracted — valbenazine: CL/F 23.2 L/h, V1/F 226 L, kabs 8.43 per hour, Q/F 22 L/h, V2/F 198 L, Frel 1.36 relative to 1 mg, fm 0.207 Units; [+]-α-HTBZ: CL 31 L/h, Q 1.27 L/h, V2 97.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has [+]-α-HTBZ, the second reading valbenazine; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -219,17 +219,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | the phenotype scenarios were simulated, but not the covariates intermediate metabolizer |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | fail | Metabolite_C (measured=[+]-α-HTBZ) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | fail | 8 scholar param(s) emitted or defaulted | 6 covered | neither emitted nor in defaulted[]: ['V2/F', 'V2'] |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviated_id=dev001: not acceptable; deviated_id=dev002: not acceptable | LLM adjudication → deterministic rule |
-| T2_pgx_Poor | pgx:Poor | pass |  |  | Poor vs Normal: central.C auc +52 %, central.C cmax +2 % (PK_1C_enteral.fmu, 2 phenotypes) |
-| T1_cmax | reference | skipped | 1.83 | 8.256e-05 | unresolved concentration unit (exp '', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | fail | Metabolite_C (measured=[+]-α-HTBZ) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 8 scholar param(s) emitted or defaulted | 6 covered |  | neither emitted nor in defaulted[]: ['V2/F', 'V2'] |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.657, 0 of 1 reader(s) agree | 0.657 | cross-check disputed by a second reader: verdict disputed, agreement 0.657, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 1.83 | 8.256e-05 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

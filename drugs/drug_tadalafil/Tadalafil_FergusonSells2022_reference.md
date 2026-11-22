@@ -17,7 +17,7 @@ Ferguson-Sells L, Velez de Mendizabal N, Li B, Small D. Population Pharmacokinet
 
 ## Population and dosing
 
-**Population:** adults and pediatric patients with pulmonary arterial hypertension · condition pulmonary arterial hypertension · age group mixed · n = /.
+**Population:** adults and pediatric patients with pulmonary arterial hypertension · condition pulmonary arterial hypertension · age group mixed.
 
 **Dosing:** 2.5, 10, 20, 40 mg, oral, multiple, every 24 h.
 

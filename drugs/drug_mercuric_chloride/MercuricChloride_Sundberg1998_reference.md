@@ -4,11 +4,11 @@
 
 # mercuric chloride — `MercuricChloride_Sundberg1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-07 22:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="mercuric chloride" model-id="MercuricChloride_Sundberg1998_reference" status="needs_review" stale="true" population="lactating and nonlactating mice" measured-compound="mercury (methylmercury and inorganic mercury)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="mercuric chloride" model-id="MercuricChloride_Sundberg1998_reference" status="needs_review" stale="false" population="lactating and nonlactating mice" measured-compound="mercury (methylmercury and inorganic mercury)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Sundberg J, Jönsson S, Karlsson MO, Hallén IP, Oskarsson A. Kinetics of methylmercury and inorganic mercury in lactating and nonlactating mice. Toxicology and applied pharmacology 151(2):319–329 (1998).
@@ -38,7 +38,7 @@ Sundberg J, Jönsson S, Karlsson MO, Hallén IP, Oskarsson A. Kinetics of methyl
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Sundberg J, Jönsson S, Karlsson MO, Hallén IP, Oskarsson A. Kinetics of methyl
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mercuric chloride's own; they describe mercury (methylmercury and inorganic mercury).
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mercuric chloride's own; they describe mercury (methylmercury and inorganic mercury). Extracted — mercury (methylmercury and inorganic mercury): t1/2z 107 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mercury (mixed), the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

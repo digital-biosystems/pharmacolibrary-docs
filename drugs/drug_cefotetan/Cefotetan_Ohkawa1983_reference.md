@@ -16,7 +16,7 @@ Ohkawa M, Hirano S, Tokunaga S, Motoi I, Shoda R, Ikeda A et al. Pharmacokinetic
 
 ## Population and dosing
 
-**Population:** healthy volunteers and patients with renal impairment · condition healthy and renal impairment · age group adult · n = —.
+**Population:** healthy volunteers and patients with renal impairment · condition healthy and renal impairment · age group adult.
 
 ## Model
 

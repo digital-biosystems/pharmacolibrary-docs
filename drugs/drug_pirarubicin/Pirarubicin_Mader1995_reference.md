@@ -5,11 +5,11 @@
 
 # pirarubicin — `Pirarubicin_Mader1995_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-06 19:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; aUC/dose has no unit.
 
-<div class="pk-model-meta" hidden drug="pirarubicin" model-id="Pirarubicin_Mader1995_reference" status="needs_review" stale="true" population="patients with advanced breast cancer" measured-compound="THP-ADM (pirarubicin)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pirarubicin" model-id="Pirarubicin_Mader1995_reference" status="needs_review" stale="false" population="patients with advanced breast cancer" measured-compound="THP-ADM (pirarubicin)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mader RM, Zilg H, Schlappack O, Steger GG, Baur M, Greifenberg B et al. Pharmacokinetics of 4'-O-tetrahydropyranyladriamycin given on a weekly schedule in patients with advanced breast cancer. Cancer chemotherapy and pharmacology 37(1-2):91–96 (1995).
@@ -38,7 +38,7 @@ Mader RM, Zilg H, Schlappack O, Steger GG, Baur M, Greifenberg B et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Mader RM, Zilg H, Schlappack O, Steger GG, Baur M, Greifenberg B et al. Pharmaco
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; aUC/dose has no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is pirarubicin's own; they describe THP-ADM (pirarubicin).
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is pirarubicin's own; they describe THP-ADM (pirarubicin). Extracted — THP-ADM (pirarubicin): t1/2α 3.15 min, t1/2γ 13.9 h, AUC/dose 12.2 ng h ml-1mg-1 m-2, CLnorm 86.9 L/h/70 kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has THP-ADM (pirarubicin), the second reading 4'-O-tetrahydropyranyladriamycin; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

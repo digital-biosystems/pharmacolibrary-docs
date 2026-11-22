@@ -39,7 +39,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:54 | 0:37 | 0/0/0 | 1/0/0 | 0/0/0 | 15,797/4,121 | openai / gpt-6-luna | 1 | 0/0 | 1/0 | 0 |
+| 2026-10-07 22:54 | 0:37 | 0/0/0 | 4/0/0 | 0/0/0 | 15,797/4,121 | openai / gpt-6-luna | 1 | 0/0 | 1/0 | 0 |
 
 ## Coverage
 

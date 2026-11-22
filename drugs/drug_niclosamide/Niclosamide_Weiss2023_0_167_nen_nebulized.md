@@ -5,11 +5,11 @@
 
 # niclosamide — `Niclosamide_Weiss2023_0_167_nen_nebulized`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 09:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The niclosamide record lacks clearance and volume of distribution, failing as a compartmental model, with a dimensionally inconsistent elimination half-life.
+> Niclosamide was rejected because its zero-order input duration D1 was recorded as 0.27 mg/kg, a mass-per-dose unit rather than time.
 
-<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_0_167_nen_nebulized" status="rejected" stale="true" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_0_167_nen_nebulized" status="rejected" stale="false" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Single-dose pharmacokinetics and lung function of nebulized niclosamide ethanolamine in sheep. Pharmaceutical research 40(8):1915–1925 (2023).
@@ -48,7 +48,7 @@ Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Sin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,13 +58,13 @@ Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Sin
 
 ### Reviewer guidance
 
-**The niclosamide record lacks clearance and volume of distribution, failing as a compartmental model, with a dimensionally inconsistent elimination half-life.**
+**Niclosamide was rejected because its zero-order input duration D1 was recorded as 0.27 mg/kg, a mass-per-dose unit rather than time.**
 
-The paper reports exposure metrics like Cmax and AUC but omits distribution volume and clearance, preventing compartmental modeling. The 14-hour elimination half-life is dimensionally inconsistent with the other kinetic parameters. One parameter's unit could not be converted to standard SI units, leaving the value undefined for the model. Extracted — niclosamide: D1 0.27 mg/kg, Cmax 76.6 ng/mL, tmax 27.1 min, AUCt 35.9 ng/mL*h, kabs 20.9 1/h, t1/2α 0.041 h, t1/2β 0.2 h, t1/2z 14 h.
+Although labeled “Dose,” D1 means the duration of a zero-order input; its reported mg/kg unit has mass rather than time dimension. The reported unit could not be converted to SI, so no SI value was available. A second reader did not assign the 0.27 dose and identified niclosamide rather than niclosamide ethanolamine. Extracted — niclosamide: D1 0.27 mg/kg, Cmax 76.6 ng/mL, tmax 27.1 min, AUCt 35.9 ng/mL*h, kabs 20.9 1/h, t1/2α 0.041 h, t1/2β 0.2 h, t1/2z 14 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has niclosamide (niclosamide ethanolamine), the second reading niclosamide; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

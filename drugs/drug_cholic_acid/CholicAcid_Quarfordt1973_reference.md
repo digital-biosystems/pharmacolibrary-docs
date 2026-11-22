@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has cholic acid, the second reading cholic_acid; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has cholic acid, the second reading cholic_acid; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,14 +70,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['cholesterol', 'cholic acid', 'metabolism'], ['cholesterol', 'chenodeoxycholic acid', 'metabolism'], ['cholic acid', 'deoxycholic acid', 'metabolism']] | [['cholesterol', 'cholic_acid', 'metabolism'], ['cholesterol', 'chenodeoxycholate', 'metabolism'], ['cholic_acid', 'deoxycholate', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | cholic acid | cholic_acid | mismatch |
+| `gpt-oss-120b` | `model.links` | [['cholesterol', 'cholic acid', 'metabolism'], ['cholesterol', 'chenodeoxycholic acid', 'metabolism'], ['cholic acid', 'deoxycholic acid', 'metabolism']] | [['cholesterol', 'cholic_acid', 'metabolism'], ['cholesterol', 'chenodeoxycholate', 'metabolism'], ['cholic_acid', 'deoxycholate', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cholic acid | cholic_acid | mismatch |
 
 </details>
 

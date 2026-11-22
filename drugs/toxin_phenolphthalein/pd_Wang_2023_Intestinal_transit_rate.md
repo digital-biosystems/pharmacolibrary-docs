@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a quantitative pharmacodynamic model for phenolphthalein, noting only that it was administered at 10 mg/kg and improved moisture content of faeces without significantly affecting intestinal transit rates. No potency parameters (e.g., IC50, EC50) or mechanistic rate constants (e.g., kin, kout) are provided for this drug.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

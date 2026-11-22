@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the absorption lag time was not emitted, leaving the model structurally incomplete.
+> The record lacks a value for the absorption lag time (tlag) for landiolol, resulting in incomplete parameter coverage for the two-compartment model.
 
 <div class="pk-model-meta" hidden drug="landiolol" model-id="Landiolol_Kunisawa2015_reference" status="needs_review" stale="false" population="gynecologic patients" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Kunisawa T, Yamagishi A, Suno M, Nakade S, Higashi R, Kurosawa A et al. Target-c
 
 ## Population and dosing
 
-**Population:** gynecologic patients · condition gynecologic surgery · age group adult · n = &gt;=9.
+**Population:** gynecologic patients · condition gynecologic surgery · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed landiolol hydrochloride, measured landiolol.
 
@@ -53,9 +53,9 @@ Kunisawa T, Yamagishi A, Suno M, Nakade S, Higashi R, Kurosawa A et al. Target-c
 
 ### Reviewer guidance
 
-**The record was held back because the absorption lag time was not emitted, leaving the model structurally incomplete.**
+**The record lacks a value for the absorption lag time (tlag) for landiolol, resulting in incomplete parameter coverage for the two-compartment model.**
 
-The record for landiolol lacks the absorption lag time, preventing full parameter coverage for the two-compartment model. The review notes that the data came from the paper's abstract, so summary statistics were used in place of fitted model values. A second reader also failed to extract any of the specific parameter values, including clearance and volumes of distribution. Extracted — landiolol: CL 34 mL/min/kg, V1 74.9 mL/kg, Q 70.9 mL/min/kg, V2 38.9 mL/kg, tlag 0.634 min.
+The record was constructed from the paper's abstract alone, so the extracted pharmacokinetic values are summary statistics rather than fitted model estimates. Although values exist for clearance, volumes, and intercompartmental clearance, the absorption lag time (0.634 min) was not successfully linked to the parameter list, leaving the model structure without a defined absorption delay. A second reader also failed to confirm the extracted values for the central and peripheral compartment volumes, adding uncertainty to the data reliability. Extracted — landiolol: CL 34 mL/min/kg, V1 74.9 mL/kg, Q 70.9 mL/min/kg, V2 38.9 mL/kg, tlag 0.634 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has landiolol hydrochloride, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -140,14 +140,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=landiolol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=landiolol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

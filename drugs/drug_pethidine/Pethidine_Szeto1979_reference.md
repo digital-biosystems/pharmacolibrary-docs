@@ -5,11 +5,11 @@
 
 # pethidine — `Pethidine_Szeto1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 15:10 UTC (Rejected), but the paper was screened again on 2026-10-07 05:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Szeto1979_reference" status="needs_review" stale="true" population="fetal lamb" measured-compound="meperidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Szeto1979_reference" status="needs_review" stale="false" population="fetal lamb" measured-compound="meperidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Szeto HH, Kaiko RF, Clapp JF, Larrow RW, Mann LI, Inturrisi CE. Urinary excretion of meperidine by the fetal lamb. The Journal of pharmacology and experimental therapeutics 209(2):244–248 (1979).
@@ -36,7 +36,7 @@ Szeto HH, Kaiko RF, Clapp JF, Larrow RW, Mann LI, Inturrisi CE. Urinary excretio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Szeto HH, Kaiko RF, Clapp JF, Larrow RW, Mann LI, Inturrisi CE. Urinary excretio
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pethidine: t1/2z 32.6 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has meperidine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

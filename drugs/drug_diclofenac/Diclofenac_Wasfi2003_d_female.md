@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Wasfi_2003 \u00b7 d_female&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_RodriguezCruz2021_reference&quot;,&quot;label&quot;:&quot;Rodriguez-Cruz_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_RodriguezCruz2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Standing2008_reference&quot;,&quot;label&quot;:&quot;Standing_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Standing2008_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Perez_1995_relaxation&quot;,&quot;label&quot;:&quot;Perez_1995 \u00b7 relaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Perez_1995_relaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Idkaidek1998_sustained&quot;,&quot;label&quot;:&quot;Idkaidek_1998_sustained&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Idkaidek1998_sustained.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_Wasfi2003_d_female`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> This record was reviewed on 2026-11-07 14:42 UTC (Rejected), but the paper was screened again on 2026-11-03 22:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance value of 1.0 mL/min was rejected because its unit could not be converted to SI units.
+> AUC and AUMC were rejected because their reported units of µg h⁻¹ ml⁻¹ conflict with the required area-under-curve dimensions.
 
-<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Wasfi2003_d_female" status="rejected" stale="true" population="camels" measured-compound="diclofenac" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Wasfi2003_d_female" status="rejected" stale="false" population="camels" measured-compound="diclofenac" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition of diclofenac in camels after intravenous administration. Veterinary journal (London, England : 1997) 166(3):277–283 (2003).
@@ -17,7 +17,7 @@ Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition
 
 ## Population and dosing
 
-**Population:** camels · condition healthy · n = 6.
+**Population:** camels · condition healthy · age group adult.
 
 **Dosing:** 175 mg, iv, single.
 
@@ -27,7 +27,7 @@ Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 12 extracted.  
+**Parameters:** 13 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,22 +35,23 @@ Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition
 
 | label | parameter | value | unit |
 |---|---|---|---|
+| A (µg) | A1 | 12.7 | µg |
+| B (µg) | A2 | 1.73 | µg |
 | t₁/₂α (h) | t1/2α | 0.45 | h |
 | t₁/₂β (h) | t1/2β | 2.54 | h |
 | AUC (µg h⁻¹ ml⁻¹) | AUC | 14.6 | µg h⁻¹ ml⁻¹ |
-| CLT (l h⁻¹ kg⁻¹) | CL | 0.17 | L/h/kg |
+| CLT (l h⁻¹ kg⁻¹) | CL | 0.17 | l h⁻¹ kg⁻¹ |
 | VSS (l.kg⁻¹) | Vss | 0.34 | l.kg⁻¹ |
 | VC (l.kg⁻¹) | V1 | 0.17 | l.kg⁻¹ |
 | AUMC (µg h⁻¹ ml⁻¹) | AUMC | 28.7 | µg h⁻¹ ml⁻¹ |
 | MRT (h) | MRT | 1.97 | h |
 | Vd (area) (l.kg⁻¹) | V | 0.63 | l.kg⁻¹ |
-| flow rate | Q | 1.0 | mL/min |
 | k a (h À1 ) | kabs | 0.94 | h À1 |
 | Lag time 1 | tlag | 0.0 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,11 +61,11 @@ Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition
 
 ### Reviewer guidance
 
-**The intercompartmental clearance value of 1.0 mL/min was rejected because its unit could not be converted to SI units.**
+**AUC and AUMC were rejected because their reported units of µg h⁻¹ ml⁻¹ conflict with the required area-under-curve dimensions.**
 
-The model parameter representing the flow rate between central and peripheral compartments is reported as 1.0 mL/min. This specific unit was not recognized for conversion to standard SI units. Consequently, a dimensional mismatch was identified during review, causing the record to be rejected. Extracted — diclofenac: t1/2α 0.45 h, t1/2β 2.54 h, AUC 14.6 µg h⁻¹ ml⁻¹, CL 0.17 L/h/kg, Vss 0.34 l.kg⁻¹, V1 0.17 l.kg⁻¹, AUMC 28.7 µg h⁻¹ ml⁻¹, MRT 1.97 h, … (+4).
+The AUC value of 14.6 and AUMC value of 28.7 are both labeled with the unit µg h⁻¹ ml⁻¹. This unit represents a rate of concentration change, whereas these parameters require a unit of concentration integrated over time. Additionally, the second reader disagreed on the identification of the first coefficient and could not find a value for the second coefficient. Extracted — diclofenac: A1 12.7 µg, A2 1.73 µg, t1/2α 0.45 h, t1/2β 2.54 h, AUC 14.6 µg h⁻¹ ml⁻¹, CL 0.17 l h⁻¹ kg⁻¹, Vss 0.34 l.kg⁻¹, V1 0.17 l.kg⁻¹, … (+5).
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[a].parameter_id`: this record has Q415, the second reading Q30; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -72,16 +73,17 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t₁/₂α (h) | `Q59` · t1/2α | 0.45 | h | 1620 | s | h | exact (1) | Wasfi_2003_table_1:row2:col5 |
-| t₁/₂β (h) | `Q60` · t1/2β | 2.54 | h | 9144 | s | h | exact (1) | Wasfi_2003_table_1:row3:col5 |
+| A (µg) | `Q415` · A1 | 12.7 | µg |  |  | µg | llm (0.6) | Wasfi_2003_table_1:row0:col5 |
+| B (µg) | `Q416` · A2 | 1.73 | µg |  |  | µg | llm (0.6) | Wasfi_2003_table_1:row1:col5 |
+| t₁/₂α (h) | `Q59` · t1/2α | 0.45 | h | 1620 | s | h | half_life_rule (0.95) | Wasfi_2003_table_1:row2:col5 |
+| t₁/₂β (h) | `Q60` · t1/2β | 2.54 | h | 9144 | s | h | half_life_rule (0.95) | Wasfi_2003_table_1:row3:col5 |
 | AUC (µg h⁻¹ ml⁻¹) | `Q88` · AUC | 14.6 | µg h⁻¹ ml⁻¹ |  |  | µg/(h·ml) | exact (1) | Wasfi_2003_table_1:row4:col5 |
-| CLT (l h⁻¹ kg⁻¹) | `Q22` · CL | 0.17 | L/h/kg | 3.306e-06 | m3/s | L/h | exact (1) | Wasfi_2003_table_1:row5:col5 |
+| CLT (l h⁻¹ kg⁻¹) | `Q22` · CL | 0.17 | l h⁻¹ kg⁻¹ | 3.306e-06 | m3/s | l/(h·kg) | exact (1) | Wasfi_2003_table_1:row5:col5 |
 | VSS (l.kg⁻¹) | `Q65` · Vss | 0.34 | l.kg⁻¹ | 0.0238 | m3 | l/kg | exact (1) | Wasfi_2003_table_1:row6:col5 |
 | VC (l.kg⁻¹) | `Q63` · V1 | 0.17 | l.kg⁻¹ | 0.0119 | m3 | l/kg | exact (1) | Wasfi_2003_table_1:row7:col5 |
 | AUMC (µg h⁻¹ ml⁻¹) | `Q20` · AUMC | 28.7 | µg h⁻¹ ml⁻¹ |  |  | µg/(h·ml) | exact (1) | Wasfi_2003_table_1:row8:col5 |
 | MRT (h) | `Q53` · MRT | 1.97 | h | 7092 | s | h | exact (1) | Wasfi_2003_table_1:row9:col5 |
 | Vd (area) (l.kg⁻¹) | `Q61` · V | 0.63 | l.kg⁻¹ | 0.0441 | m3 | l/kg | space_fold (0.95) | Wasfi_2003_table_1:row10:col5 |
-| flow rate | `Q30` · Q | 1.0 | mL/min | 1.667e-08 | m3/s | L/h | review_gapfill (0.7) | Matharoo_2025:review |
 | k a (h À1 ) | `Q49` · kabs | 0.94 | h À1 | 0.0002611 | 1/s | 1/h | review_gapfill (0.7) | Kim_2016:review |
 | Lag time 1 | `Q83` · tlag | 0.0 | h | 0 | s | h | review_gapfill (0.7) | Idkaidek_1998:review |
 
@@ -93,17 +95,12 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'A (µg)' — extend the ontology if this is a real PK parameter (source ['Wasfi_2003_table_1:row0:col5'])
-- dropped unlinked row (NIL): 'B (µg)' — extend the ontology if this is a real PK parameter (source ['Wasfi_2003_table_1:row1:col5'])
 - unit_dimension_mismatch: 'AUC (µg h⁻¹ ml⁻¹)' → Q88 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_unknown: 'l h⁻¹ kg⁻¹' (CL)
 - unit_dimension_mismatch: 'AUMC (µg h⁻¹ ml⁻¹)' → Q20 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- implicit units: 'CLT (l h⁻¹ kg⁻¹)' → L/h/kg (from the paper text: 'The abstract explicitly states: "total body clearance (Cl T ) was 0.17 (0.16-0.21) l h kg À1".')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diclofenac
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- population split: 'd female' subgroup of Wasfi_2003 (paper reports 6 populations: a male, b male, c male, d female, e female, f female)
-- gap-filled Q30 (Q) from Matharoo_2025's review values (primary lacked it)
+- population split: 'd female' subgroup of Wasfi_2003 (paper reports 3 populations: a male, d female, sex)
 - gap-filled Q49 (kabs) from Kim_2016's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Idkaidek_1998's review values (primary lacked it)
 
@@ -113,14 +110,21 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (13/13 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.875 (14/16 fields) | 2 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a].parameter_id` | Q415 | Q30 | mismatch |
+| `gpt-oss-120b` | `parameters[b]` | 1.73 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -132,12 +136,11 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 11 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q20 | fail | [mass] * [time] / [length] ** 3 | µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) | ['Wasfi_2003_table_1:row8:col5'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wasfi_2003_table_1:row5:col5'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Matharoo_2025:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Kim_2016:review'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Wasfi_2003_table_1:row9:col5'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Wasfi_2003_table_1:row2:col5'] |
@@ -176,4 +179,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20Diclofenac_Wasfi2003_d_female&body=Drug%3A%20diclofenac%0ARecord%3A%20Diclofenac_Wasfi2003_d_female%0APaper%3A%20Wasfi_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/Diclofenac_Wasfi2003_d_female%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 22:55 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 05:05 UTC</sub>

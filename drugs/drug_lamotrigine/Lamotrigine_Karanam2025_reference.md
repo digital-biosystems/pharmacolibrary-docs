@@ -17,7 +17,7 @@ Karanam A, Pennell PB, Meador KJ, Long Y, Birnbaum AK. Characterization of lamot
 
 ## Population and dosing
 
-**Population:** women with epilepsy (pregnant and nonpregnant) · condition epilepsy · age group mixed · n = , 221.
+**Population:** women with epilepsy (pregnant and nonpregnant) · condition epilepsy · age group mixed.
 
 ## Model
 

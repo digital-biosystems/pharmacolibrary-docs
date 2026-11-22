@@ -15,7 +15,7 @@ Yamasaku F. [Pharmacokinetic studies of micronomicin using a continuous intraven
 
 ## Population and dosing
 
-**Population:** healthy adult volunteers · age group adult · n = 4.
+**Population:** healthy adult volunteers · age group adult.
 
 ## Model
 

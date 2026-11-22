@@ -5,11 +5,11 @@
 
 # rutoside — `Rutoside_Domnguez2024_pure_rutin_100_mg_kg`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:06 UTC (Rejected), but the paper was screened again on 2026-10-06 22:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the elimination rate constant's unit was unconvertible to SI.
+> The dose-normalised AUC parameter for quercetin was rejected because its recorded unit, hours per litre per kilogram, has a dimension that conflicts with the parameter's required physical dimensions.
 
-<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_pure_rutin_100_mg_kg" status="rejected" stale="true" population="New Zealand rabbits" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_pure_rutin_100_mg_kg" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Domínguez Moré GP, Rey DP, Valderrama IH, Ospina LF, Aragón DM. Rutin and Physalis peruviana Extract: Population Pharmacokinetics in New Zealand Rabbits. Pharmaceutics 16(10) (2024).
@@ -47,7 +47,7 @@ Domínguez Moré GP, Rey DP, Valderrama IH, Ospina LF, Aragón DM. Rutin and Phy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Domínguez Moré GP, Rey DP, Valderrama IH, Ospina LF, Aragón DM. Rutin and Phy
 
 ### Reviewer guidance
 
-**The record was rejected because the elimination rate constant's unit was unconvertible to SI.**
+**The dose-normalised AUC parameter for quercetin was rejected because its recorded unit, hours per litre per kilogram, has a dimension that conflicts with the parameter's required physical dimensions.**
 
-The elimination rate constant for quercetin was recorded with a unit that could not be converted to SI, causing a dimension mismatch. Additionally, the second reader disagreed that the model was apparent rather than mechanistic and disagreed on several parameter values, including AUC/dose. Extracted — quercetin: AUC∞ 9.28e+03 ng ·h/mL, Cmax 641 ng/mL, V/F 227 L/kg, CL/F 12 L/h/kg, Cmax/dose 0.0064 L−1/kg; rutoside: tmax 0.35 h, kel 0.054 h−1, MRT 21.7 h, AUC/dose 0.093 h/L/kg.
+The record lists the parameter 'AUC/dose' with a value of 0.093 and a unit of h/L/kg. The review found a dimension mismatch, noting that the recorded unit dimensions of [time] / [length] ** 3 conflict with the expected [mass] * [time] / [length] ** 3. Additionally, the second reader disagreed with several extracted values, identifying the parameters for AUC∞, CL/F, Tmax, MRT, and the elimination rate constant as null rather than the values present in the record. Extracted — quercetin: AUC∞ 9.28e+03 ng ·h/mL, Cmax 641 ng/mL, V/F 227 L/kg, CL/F 12 L/h/kg, Cmax/dose 0.0064 L−1/kg; rutoside: tmax 0.35 h, kel 0.054 h−1, MRT 21.7 h, AUC/dose 0.093 h/L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record lacks kinetic parameters like clearance, volume, or rate constants, offering only static excretion fractions from an abstract-only source.
 
 <div class="pk-model-meta" hidden drug="Iopanoic acid" model-id="IopanoicAcid_Cooke1977_reference" status="rejected" stale="false" population="control and phenobarbital-pretreated rats" measured-compound="125I-Iopanoate and 125I-iopanoate glucuronide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -45,7 +45,13 @@ Cooke WJ, Cooke L. Biliary excretion of iopanoate glucuronide by the rat. Drug m
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record lacks kinetic parameters like clearance, volume, or rate constants, offering only static excretion fractions from an abstract-only source.**
+
+Only static excretion metrics are present, such as the 82 biliary excretion amount for iopanoate glucuronide and the 23 excretion fraction for iopanoic acid. The biliary clearance parameter is explicitly marked as 'null', leaving the metabolic elimination rate undefined. Because the source is limited to the abstract, these reported summary statistics cannot substitute for the fitted dynamic parameters required for pharmacokinetic modeling. Extracted — Iopanoate glucuronide: Ae 82; iopanoic acid: fe 23.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

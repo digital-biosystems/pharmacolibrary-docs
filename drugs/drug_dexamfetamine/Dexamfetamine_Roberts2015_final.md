@@ -5,11 +5,11 @@
 
 # dexamfetamine — `Dexamfetamine_Roberts2015_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 00:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The peripheral compartment volume of distribution for dextroamphetamine is recorded in milligrams instead of litres, causing a dimension mismatch and rendering the compartment structurally unreachable.
+> V2/F was assigned units of mg, conflicting with its dimension as a volume, and a compartment is unreachable from the dose.
 
-<div class="pk-model-meta" hidden drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final" status="rejected" stale="true" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final" status="rejected" stale="false" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Population Pharmacokinetic Analysis of Dextroamphetamine in the Plasma and Hair of Healthy Adults. Clinical drug investigation 35(10):633–643 (2015).
@@ -41,7 +41,7 @@ Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Populati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Populati
 
 ### Reviewer guidance
 
-**The peripheral compartment volume of distribution for dextroamphetamine is recorded in milligrams instead of litres, causing a dimension mismatch and rendering the compartment structurally unreachable.**
+**V2/F was assigned units of mg, conflicting with its dimension as a volume, and a compartment is unreachable from the dose.**
 
-The volume of distribution for the peripheral compartment (V2/F) is listed as 17.7 mg, which is physically incorrect for a volume parameter and prevents unit conversion. This missing valid unit causes the model structure to fail reachability checks, as the compartment cannot be properly linked from the dose. Although the central volume (V1/F) and clearance (CL/F) have plausible units, the peripheral volume error invalidates the two-compartment structure. Extracted — dexamfetamine: k12 0.527 h−1, V1/F 377 L, allometric_exponent 0.618, CL/F 28.7 L/h, V2/F 17.7 mg.
+The parameter V2/F has a value of 17.7 mg, which is dimensionally inconsistent with a volume of distribution expected in liters. The review flagged an unreachable compartment, indicating a structural flaw where no path exists from the dose. Additionally, the unit mg for this parameter could not be converted to standard international units, preventing proper unit assignment. Extracted — dexamfetamine: k12 0.527 h−1, V1/F 377 L, allometric_exponent 0.618, CL/F 28.7 L/h, V2/F 17.7 mg.
 
 Independently confirmed by `gpt-oss-120b`.
 

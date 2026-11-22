@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Yuen_2010 \u00b7 parameter_estimates_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Davies2010_reference&quot;,&quot;label&quot;:&quot;Davies_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Davies2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ferrari2017_reference&quot;,&quot;label&quot;:&quot;Ferrari_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ferrari2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_Yuen2010_parameter_estimates_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This paper's disposition core is incomplete.
+> The model was rejected because metabolite K1O is an orphan compartment with no defined link from the dose.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Yuen2010_parameter_estimates_estimate" status="needs_review" stale="false" population="healthy Chinese and Indian subjects" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Yuen2010_parameter_estimates_estimate" status="rejected" stale="false" population="healthy Chinese and Indian volunteers" measured-compound="S-warfarin" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Yuen E, Gueorguieva I, Wise S, Soon D, Aarons L. Ethnic differences in the population pharmacokinetics and pharmacodynamics of warfarin. Journal of pharmacokinetics and pharmacodynamics 37(1):3–24 (2010).
@@ -17,31 +17,34 @@ Yuen E, Gueorguieva I, Wise S, Soon D, Aarons L. Ethnic differences in the popul
 
 ## Population and dosing
 
-**Population:** healthy Chinese and Indian subjects · condition healthy · age group adult · n = &gt;=.
+**Population:** healthy Chinese and Indian volunteers · condition healthy · age group adult · n = 16.
 
 **Dosing:** 25 mg, oral, single.
 
+**Dosed compound ≠ measured compound:** dosed warfarin, measured S-warfarin.
+
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| k d [1/h] | kel | 0.0232 | 1/h |
-| C 50,S (H1H7) [ng/ml] | Ct | 288 | ng/ml |
+| Parameter estimates / Estimate | equation variable | 0.180 |  |
+| C 50,S (H7H7) [ng/ml] | Ct | 479 | ng/ml |
+| CL | CL | 0.348 | L/h |
 | Vd | V | 14.3 | L |
 | ka (1/h) | kabs | 0.214 | 1/h |
 | Lag (h) | tlag | 1.29 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,20 +54,19 @@ Yuen E, Gueorguieva I, Wise S, Soon D, Aarons L. Ethnic differences in the popul
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**The model was rejected because metabolite K1O is an orphan compartment with no defined link from the dose.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aoyama_2022, Gomeni_2026) cannot stand in for this paper's evidence. A reported unit could not be converted (Ct), so that value has no SI equivalent. Extracted — warfarin: kel 0.0232 1/h, Ct 288 ng/ml, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+The structure describes an interconversion between parent S-warfarin and metabolite K1O, yet both directions lack a link parameter. Consequently, metabolite K1O has no path from the dose, making it unreachable within the pharmacokinetic system. Extracted — warfarin: Ct 479 ng/ml; S-warfarin: CL 0.348 L/h, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading k1 → k1o (interconversion); k1o → k1 (interconversion); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
-
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| k d [1/h] | `Q47` · kel | 0.0232 | 1/h | 6.444e-06 | 1/s | 1/h | llm (0.6) | Yuen_2010_table_3:row1:col1 |
-| C 50,S (H1H7) [ng/ml] | `Q75` · Ct | 288 | ng/ml |  |  | ng/ml | llm (0.6) | Yuen_2010_table_3:row4:col1 |
+| Parameter estimates / Estimate | `Q900` · equation variable | 0.180 |  | 0.18 |  |  | llm (0.6) | tab_1:row3:col2, tab_1:row4:col2, tab_1:row5:col2, tab_1:row8:col2, tab_1:row9:col2 |
+| C 50,S (H7H7) [ng/ml] | `Q75` · Ct | 479 | ng/ml | 0.000479 | kg/m3 | ng/ml | llm (0.6) | Yuen_2010_table_3:row3:col1 |
+| CL | `Q22` · CL | 0.348 | L/h | 9.667e-08 | m3/s | L/h | review_gapfill (0.7) | Aoyama_2022:review |
 | Vd | `Q61` · V | 14.3 | L | 0.0143 | m3 | L | review_gapfill (0.7) | Aoyama_2022:review |
 | ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Gomeni_2026:review |
 | Lag (h) | `Q83` · tlag | 1.29 | h | 4644 | s | h | review_gapfill (0.7) | Gomeni_2026:review |
@@ -81,20 +83,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - table representations disagree for 'Parameter estimates / SE (%)'; source reconciliation required
 - table representations disagree for 'Between-subject variability / Estimate (%)'; source reconciliation required
 - table representations disagree for 'Between-subject variability / SE (%)'; source reconciliation required
-- dropped unlinked row (NIL): 'Parameter estimates / Estimate' — extend the ontology if this is a real PK parameter (source ['tab_1:row3:col2', 'tab_1:row4:col2', 'tab_1:row5:col2', 'tab_1:row8:col2', 'tab_1:row9:col2'])
-- dropped diagnostic row 'Parameter estimates / SE (%)' → Q318 (shrinkage) — reported statistic, not a parameter
+- dropped unlinked row (NIL): 'Parameter estimates / SE (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row3:col3', 'tab_1:row4:col3', 'tab_1:row5:col3', 'tab_1:row6:col3', 'tab_1:row8:col3', 'tab_1:row9:col3', 'tab_1:row10:col3'])
 - routed 'Between-subject variability / Estimate (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'Between-subject variability / SE (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'k d [1/h]' — extend the ontology if this is a real PK parameter (source ['Yuen_2010_table_3:row1:col1'])
 - dropped unlinked row (NIL): 'c' — extend the ontology if this is a real PK parameter (source ['Yuen_2010_table_3:row2:col1'])
-- dropped unlinked row (NIL): 'C 50,S (H7H7) [ng/ml]' — extend the ontology if this is a real PK parameter (source ['Yuen_2010_table_3:row3:col1'])
-- dropped unlinked row (NIL): 'C 50,S (H1H1 or H1H*) [ng/ml]' — extend the ontology if this is a real PK parameter (source ['Yuen_2010_table_3:row5:col1'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=warfarin
+- dropped duplicate Q75 ('C 50,S (H1H7) [ng/ml]', value '288') — already have one for this compound
+- dropped duplicate Q75 ('C 50,S (H1H1 or H1H*) [ng/ml]', value '206') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=S-warfarin
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
-- population split: 'parameter estimates / estimate' subgroup of Yuen_2010 (paper reports 3 populations: parameter estimates / estimate, r-warfarin cl/f [l/h], s-warfarin)
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- population split: 'parameter estimates / estimate' subgroup of Yuen_2010 (paper reports 2 populations: parameter estimates / estimate, s-warfarin)
+- gap-filled Q22 (CL) from Aoyama_2022's review values (primary lacked it)
 - gap-filled Q61 (V) from Aoyama_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Gomeni_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Gomeni_2026's review values (primary lacked it)
 
@@ -108,42 +111,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
-
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['k1', 'k1o', 'interconversion'], ['k1o', 'k1', 'interconversion']] | mismatch |
-| `gpt-oss-120b` | `parameters[c 50,s (h1h7) [ng/ml]]` | 288 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[parameter estimates / se]` |  | 11.3 | only_one_extracted |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | pass |  |  |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Yuen_2010_table_3:row1:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Aoyama_2022:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gomeni_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aoyama_2022:review'] |
-| C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['Yuen_2010_table_3:row4:col1'] |
+| C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['Yuen_2010_table_3:row3:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gomeni_2026:review'] |
-| C8_topology | pass |  |  |  |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.348 | ['Aoyama_2022:review'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.348 L/h | ['Aoyama_2022:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 14.3 L | ['Aoyama_2022:review'] |
 
 <details class="legend">
@@ -156,19 +137,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -178,4 +149,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Yuen2010_parameter_estimates_estimate&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Yuen2010_parameter_estimates_estimate%0APaper%3A%20Yuen_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Yuen2010_parameter_estimates_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 15:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:30 UTC</sub>

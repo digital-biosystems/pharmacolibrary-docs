@@ -4,11 +4,11 @@
 
 # Temsavir — `Temsavir_Parasrampuria2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-22 10:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Temsavir absorption rate constant rejected because its unit 'units' could not be converted to standard time.
+> The absorption rate constant (Ka) value 2.33 was recorded with invalid units, causing a dimension mismatch rejection.
 
-<div class="pk-model-meta" hidden drug="Temsavir" model-id="Temsavir_Parasrampuria2025_reference" status="rejected" stale="true" population="unknown" measured-compound="temsavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Temsavir" model-id="Temsavir_Parasrampuria2025_reference" status="rejected" stale="false" population="unknown" measured-compound="temsavir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokinetics and exposure-response relationship for temsavir following fostemsavir administration in treatment-experienced HIV patients. Pharmacology research & perspectives 13(3):e70023 (2025).
@@ -16,7 +16,7 @@ Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokin
 
 ## Population and dosing
 
-**Population:** treatment-experienced HIV patients · condition HIV · age group adult · n = &gt;= 764.
+**Population:** treatment-experienced HIV patients · condition HIV · age group adult.
 
 **Dosing:** 600 mg, oral, multiple, every 12 h.
 
@@ -42,7 +42,7 @@ Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokin
 
 ### Reviewer guidance
 
-**Temsavir absorption rate constant rejected because its unit 'units' could not be converted to standard time.**
+**The absorption rate constant (Ka) value 2.33 was recorded with invalid units, causing a dimension mismatch rejection.**
 
-The absorption rate constant is labeled with the unit 'units' instead of a time inverse like 1/h. This non-standard unit prevented conversion to SI units. As a result, the parameter value could not be validated for dimensional consistency, causing the record to be rejected. Extracted — temsavir: CLm/F 51 L/h, V1/F 257 L, Q/F 2.58 L/h, V2/F 37.4 L, kabs 2.33 units.
+The parameter labeled Ka for temsavir lists units as 'units' instead of the expected inverse time (1/h). This invalid unit specification prevented the system from converting the value to SI, resulting in a dimension conflict. Although the value 2.33 is numerically appropriate for an absorption rate constant, the erroneous unit designation caused the record to be rejected. Extracted — temsavir: CLm/F 51 L/h, V1/F 257 L, Q/F 2.58 L/h, V2/F 37.4 L, kabs 2.33 units.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

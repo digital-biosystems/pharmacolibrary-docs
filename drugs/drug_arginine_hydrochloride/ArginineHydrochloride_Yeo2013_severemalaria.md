@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;arginine hydrochloride&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/&quot;},{&quot;label&quot;:&quot;Yeo_2013 \u00b7 severemalaria&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model for arginine hydrochloride was quarantined because its clearance, volume of distribution, and central-to-peripheral rate constant lacked extracted values, forcing the use of library placeholders.
+> Arginine hydrochloride clearance, distribution volumes, and intercompartmental clearance were missing extracted values, so the model was held back with default placeholders.
 
 <div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Yeo2013_severemalaria" status="model_quarantined" stale="false" population="adults with severe falciparum malaria" measured-compound="L-arginine" parameterization="mechanistic" topology="2C"></div>
 
@@ -42,7 +42,7 @@ Yeo TW, Lampah DA, Rooslamiati I, Gitawati R, Tjitra E, Kenangalem E et al. A ra
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,11 @@ Yeo TW, Lampah DA, Rooslamiati I, Gitawati R, Tjitra E, Kenangalem E et al. A ra
 
 ### Reviewer guidance
 
-**The model for arginine hydrochloride was quarantined because its clearance, volume of distribution, and central-to-peripheral rate constant lacked extracted values, forcing the use of library placeholders.**
+**Arginine hydrochloride clearance, distribution volumes, and intercompartmental clearance were missing extracted values, so the model was held back with default placeholders.**
 
-Although the record lists specific numerical values for clearance, central volume, and peripheral volume, the review found that key parameters were not explicitly estimated. Consequently, generic placeholders were used for these parameters, preventing the model from being published. A second reader also noted missing covariate gradient values that were absent from the primary record. Extracted — arginine hydrochloride: CL 61.8 L/h, V1 115 L, V2 70.9 L, Q 21.4 L/h.
+Although the record lists numeric values for these parameters, the review found no explicit estimates were extracted, resulting in the use of library placeholders. The model was therefore quarantined to prevent publication with invented numbers. A second reader also disagreed on the identified analyte and dose compound but could not resolve the missing parameter values. Extracted — arginine hydrochloride: CL 61.8 L/h, V1 115 L, V2 70.9 L, Q 21.4 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has L-arginine hydrochloride, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has L-arginine hydrochloride, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,16 +93,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[gradient 1]` |  | 0.153 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[gradient 2]` |  | -0.492 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | L-arginine hydrochloride | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | L-arginine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[gradient 1]` |  | 0.153 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gradient 2]` |  | -0.492 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | L-arginine hydrochloride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | L-arginine | unknown | mismatch |
 
 </details>
 
@@ -138,6 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,30 +156,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_severemalaria/ArginineHydrochloride_Yeo2013_severemalaria_matlab.zip" download>ArginineHydrochloride_Yeo2013_severemalaria_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_severemalaria/ArginineHydrochloride_Yeo2013_severemalaria_matlab_simbio.zip" download>ArginineHydrochloride_Yeo2013_severemalaria_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_severemalaria/ArginineHydrochloride_Yeo2013_severemalaria_sbml.zip" download>ArginineHydrochloride_Yeo2013_severemalaria_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_severemalaria/ArginineHydrochloride_Yeo2013_severemalaria_cellml.zip" download>ArginineHydrochloride_Yeo2013_severemalaria_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Yeo TW, Lampah DA, Rooslamiati I, Gitawati R, Tjitra E, Kenangalem E et al. A randomized pilot study of L-arginine infusion in severe falciparum malaria: preliminary safety, efficacy and pharmacokinetics. PloS one 8(7):e69587 (2013). [doi:10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587)
-
-**This record:** Pharmacolibrary, model `ArginineHydrochloride_Yeo2013_severemalaria`. <https://pharmacolibrary.github.io/#/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_severemalaria>
-
-```bibtex
-@misc{pharmacolibrary_ArginineHydrochlorideYeo2013severemalaria,
-  title  = {{Pharmacolibrary model ArginineHydrochloride_Yeo2013_severemalaria}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_severemalaria},
-  note   = {Parameters from doi:10.1371/journal.pone.0069587},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

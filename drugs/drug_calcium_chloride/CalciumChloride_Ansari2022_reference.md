@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12A&quot;,&quot;href&quot;:&quot;atc/A12A.md&quot;},{&quot;label&quot;:&quot;calcium chloride&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/&quot;},{&quot;label&quot;:&quot;Ansari_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumChloride_Ansari2022_reference&quot;,&quot;label&quot;:&quot;Ansari_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumChloride_Ansari2022_reference&quot;,&quot;label&quot;:&quot;Ansari_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # calcium chloride — `CalciumChloride_Ansari2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="calcium chloride" model-id="CalciumChloride_Ansari2022_reference" status="simulated" stale="false" population="adults undergoing cesarean delivery" measured-compound="calcium" parameterization="mechanistic" topology="1C"></div>
+> The calcium clearance and volume of distribution values were disputed because the second reader could not verify them against the abstract-only source.
+
+<div class="pk-model-meta" hidden drug="calcium chloride" model-id="CalciumChloride_Ansari2022_reference" status="needs_review" stale="false" population="adults undergoing cesarean delivery" measured-compound="calcium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ansari JR, Kalariya N, Carvalho B, Flood P, Guo N, Riley E. Calcium chloride for the prevention of uterine atony during cesarean delivery: A pilot randomized controlled trial and pharmacokinetic study. Journal of clinical anesthesia 80:110796 (2022).
@@ -29,6 +31,8 @@ Ansari JR, Kalariya N, Carvalho B, Flood P, Guo N, Riley E. Calcium chloride for
 <figure class="pk-models-diagram"><img src="drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference/CalciumChloride_Ansari2022_reference.svg" alt="CalciumChloride_Ansari2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance | CL | 0.93 | L/min |
@@ -36,7 +40,7 @@ Ansari JR, Kalariya N, Carvalho B, Flood P, Guo N, Riley E. Calcium chloride for
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Ansari JR, Kalariya N, Carvalho B, Flood P, Guo N, Riley E. Calcium chloride for
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The calcium clearance and volume of distribution values were disputed because the second reader could not verify them against the abstract-only source.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record relies on summary statistics from the paper's abstract rather than a fitted model, leading to unverifiable parameter values. The second reader disagreed on the dose compound and primary analyte, marking them as unknown. Furthermore, the second reader could not confirm the specific values of 0.93 L/min for clearance and 76 L for volume of distribution. Extracted — calcium chloride: CL 0.93 L/min, V 76 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has calcium_chloride, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -120,14 +124,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=calcium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=calcium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

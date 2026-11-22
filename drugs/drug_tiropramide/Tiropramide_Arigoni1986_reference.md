@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Tiropramide clearance lacked an extracted value, so a placeholder was used to hold the model back, while abstract-only data substituted for fitted parameters.
+> Tiropramide's clearance was left unassigned, so a placeholder value stood in and the abstract-derived one-compartment model was held back rather than published.
 
 <div class="pk-model-meta" hidden drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></div>
 
@@ -37,7 +37,7 @@ Arigoni R, Chisté R, Drovanti A, Makovec F, Senin P, Setnikar I. Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +47,11 @@ Arigoni R, Chisté R, Drovanti A, Makovec F, Senin P, Setnikar I. Pharmacokineti
 
 ### Reviewer guidance
 
-**Tiropramide clearance lacked an extracted value, so a placeholder was used to hold the model back, while abstract-only data substituted for fitted parameters.**
+**Tiropramide's clearance was left unassigned, so a placeholder value stood in and the abstract-derived one-compartment model was held back rather than published.**
 
-No explicit clearance estimate for tiropramide was provided, resulting in a library placeholder rather than a calculated value. The one-compartment model relies on summary statistics from the abstract, such as a steady-state volume of distribution of 221 L and a terminal elimination constant of 0.279 h-1. A second reader could not verify the extracted parameters, including the lag time of 11 min, from the available text. Extracted — tiropramide: Vss 221 l, kel 0.279 h-1, t1/2z 2.5 h, tlag 11 min, fe 16.2 %.
+Because only the abstract was available, reported summary statistics like the 2.5 h half-life and 221 l steady-state volume were used to define the structure instead of fitted parameters. The clearance required for a one-compartment model was never specified, forcing a placeholder substitution that contradicted the need for explicit estimates. Additionally, a second reader rejected all extracted values, flagging the 11-minute lag and 16.2% excretion as unsupported. Extracted — tiropramide: Vss 221 l, kel 0.279 h-1, t1/2z 2.5 h, tlag 11 min, fe 16.2 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tiropramide, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tiropramide, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -90,25 +90,25 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
 <details><summary>13 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[i.v. dose]` |  | 50 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` | 11 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` |  | 11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[percentage of the administered dose of tiropramide and tiropramide-related substances in the 24-h urines]` |  | 16.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus]` | 16.2 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady-state volume of distribution]` |  | 221 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | 2.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` |  | 2.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal elimination constant]` |  | 0.279 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the steady-state volume of distribution]` | 221 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the terminal elimination constant]` | 0.279 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | tiropramide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | tiropramide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[i.v. dose]` |  | 50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | 11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` |  | 11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[percentage of the administered dose of tiropramide and tiropramide-related substances in the 24-h urines]` |  | 16.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus]` | 16.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` |  | 221 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 2.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  | 2.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination constant]` |  | 0.279 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the steady-state volume of distribution]` | 221 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the terminal elimination constant]` | 0.279 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tiropramide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tiropramide | unknown | mismatch |
 
 </details>
 
@@ -135,13 +135,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | fail | 2 scholar param(s) emitted or defaulted | 1 covered | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: vss_as_v: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | fail | 2 scholar param(s) emitted or defaulted | 1 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

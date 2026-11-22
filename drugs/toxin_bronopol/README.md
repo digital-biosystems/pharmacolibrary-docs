@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Bronopol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bronopol_Schnrath20252_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6nrath_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_bronopol/Bronopol_Schnrath20252_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bronopol_Schnrath20252_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6nrath_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_bronopol/Bronopol_Schnrath20252_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Bronopol
 
@@ -35,7 +35,7 @@ Bronopol is a chemical compound of bromine and an antimicrobial substance. It is
 
 ## Start here
 
-> **Schönrath_2025_2_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> 5 volunteers (two male and three female), n = 5. [Run it in the simulator](drugs/toxin_bronopol/Bronopol_Schnrath20252_reference.md?tab=Simulation) · [record](drugs/toxin_bronopol/Bronopol_Schnrath20252_reference.md)
+> **Schönrath_2025_2_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> 5 volunteers (two male and three female), n = 5. [Run it in the simulator](drugs/toxin_bronopol/Bronopol_Schnrath20252_reference.md?tab=Simulation) · [record](drugs/toxin_bronopol/Bronopol_Schnrath20252_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -43,7 +43,7 @@ Bronopol is a chemical compound of bromine and an antimicrobial substance. It is
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Schönrath_2025_2_reference](drugs/toxin_bronopol/Bronopol_Schnrath20252_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Schönrath I et al., Human metabolism and excretion kinetics…, Archives of toxicology (2025) | [10.1007/s00204-025-04077-1](https://doi.org/10.1007/s00204-025-04077-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Schönrath_2025_2_reference](drugs/toxin_bronopol/Bronopol_Schnrath20252_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Schönrath I et al., Human metabolism and excretion kinetics…, Archives of toxicology (2025) | [10.1007/s00204-025-04077-1](https://doi.org/10.1007/s00204-025-04077-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

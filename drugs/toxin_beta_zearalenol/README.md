@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;beta-Zearalenol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # beta-Zearalenol
 
@@ -30,7 +30,7 @@ Beta-zearalenol belongs to the family of Macrolides and Analogues. These are org
 
 ## Start here
 
-> **Qin_2026_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> male sheep, n = 5. [Run it in the simulator](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md?tab=Simulation) · [record](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md)
+> **Qin_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> male sheep, n = 5. [Run it in the simulator](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md?tab=Simulation) · [record](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -38,7 +38,7 @@ Beta-zearalenol belongs to the family of Macrolides and Analogues. These are org
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Qin_2026_reference](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Qin J et al., Toxicokinetics, Biotransformation, Excr…, Toxins (2026) | [10.3390/toxins18090364](https://doi.org/10.3390/toxins18090364) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_beta</sub> | [Qin_2026_reference](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Qin J et al., Toxicokinetics, Biotransformation, Excr…, Toxins (2026) | [10.3390/toxins18090364](https://doi.org/10.3390/toxins18090364) |
 | <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ z14g](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_z14g.md) | — | general linear (no model) | 10 |  |  |
 | <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ zal](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_zal.md) | — | general linear (no model) | 8 |  |  |
 | <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ zol](drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_zol.md) | — | general linear (no model) | 13 |  |  |
@@ -48,9 +48,9 @@ Beta-zearalenol belongs to the family of Macrolides and Analogues. These are org
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gajęcka_2022_concentrations_of_ZEN_zearalenol_ZEL_and_zearalenol_ZEL_in_tissues](drugs/toxin_beta_zearalenol/pd_Gaj_cka_2022_concentrations_of_ZEN_zearalenol_ZEL_and_zearal.md) | concentrations of ZEN, α-zearalenol (α-ZEL), and β-zearalenol (β-ZEL) in tissues ← beta_zearalenol · model not identified | — | Gajęcka M et al., Exposure to Low Zearalenone Doses and C…, Toxins (2022) | [10.3390/toxins14110790](https://doi.org/10.3390/toxins14110790) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gajęcka_2022_concentrations_of_selected_steroid_hormones](drugs/toxin_beta_zearalenol/pd_Gaj_cka_2022_concentrations_of_selected_steroid_hormones.md) | concentrations of selected steroid hormones ← beta_zearalenol · model not identified | — | Gajęcka M et al., Exposure to Low Zearalenone Doses and C…, Toxins (2022) | [10.3390/toxins14110790](https://doi.org/10.3390/toxins14110790) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Gajęcka_2022_CF](drugs/toxin_beta_zearalenol/pd_Gaj_cka_2022_CF.md) | carry-over factor (CF) ← beta_zearalenol · inhibition effect | — | Gajęcka M et al., Exposure to Low Zearalenone Doses and C…, Toxins (2022) | [10.3390/toxins14110790](https://doi.org/10.3390/toxins14110790) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">pig</span> | [Gajęcka_2022_concentrations_of_ZEN_zearalenol_ZEL_and_zearalenol_ZEL_in_tissues](drugs/toxin_beta_zearalenol/pd_Gaj_cka_2022_concentrations_of_ZEN_zearalenol_ZEL_and_zearal.md) | concentrations of ZEN, α-zearalenol (α-ZEL), and β-zearalenol (β-ZEL) in tissues ← beta_zearalenol · model not identified | — | Gajęcka M et al., Exposure to Low Zearalenone Doses and C…, Toxins (2022) | [10.3390/toxins14110790](https://doi.org/10.3390/toxins14110790) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">pig</span> | [Gajęcka_2022_concentrations_of_selected_steroid_hormones](drugs/toxin_beta_zearalenol/pd_Gaj_cka_2022_concentrations_of_selected_steroid_hormones.md) | concentrations of selected steroid hormones ← beta_zearalenol · model not identified | — | Gajęcka M et al., Exposure to Low Zearalenone Doses and C…, Toxins (2022) | [10.3390/toxins14110790](https://doi.org/10.3390/toxins14110790) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">pig</span> | [Gajęcka_2022_CF](drugs/toxin_beta_zearalenol/pd_Gaj_cka_2022_CF.md) | carry-over factor (CF) ← beta_zearalenol · inhibition effect | — | Gajęcka M et al., Exposure to Low Zearalenone Doses and C…, Toxins (2022) | [10.3390/toxins14110790](https://doi.org/10.3390/toxins14110790) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,13 +64,13 @@ Beta-zearalenol belongs to the family of Macrolides and Analogues. These are org
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-18 17:59 | 34:43 | 1/4/0 | 1/0/0 | 0/0/0 | 648,731/43,049 | einfracz / qwen3.8-flash-next | 27 | 6/13 | 27/0 | 0 |
+| 2026-11-18 17:59 | 34:43 | 1/4/0 | 2/1/0 | 0/0/0 | 648,731/43,049 | einfracz / qwen3.8-flash-next | 27 | 6/13 | 27/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 69 matched, 69 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 1  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

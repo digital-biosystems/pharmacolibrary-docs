@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> AUC/dose has no unit.
 
 <div class="pk-model-meta" hidden drug="Maleic acid" model-id="MaleicAcid_Hou2016_30_mg_kg_i_v" status="needs_review" stale="false" population="rat" measured-compound="Maleic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,7 +56,13 @@ Hou ML, Lu CM, Lin CH, Lin LC, Tsai TH. Pharmacokinetics of Maleic Acid as a Foo
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**AUC/dose has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC ratio), so that value has no SI equivalent. Extracted — maleic acid: AUC 1.24e+03 min∙µg/mL, Cmax 32.1 µg/mL, t1/2z 28.4 min, CL 25.3 mL/min/kg, MRT 40.9 min, V 1.05e+03 mL/kg, AUC/dose 41.2, AUC ratio 5.49 AUCkidney/AUCblood.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

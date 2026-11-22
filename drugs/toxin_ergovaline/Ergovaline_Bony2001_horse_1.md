@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ergovaline&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/&quot;},{&quot;label&quot;:&quot;Bony_2001 \u00b7 horse_1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_1&quot;,&quot;label&quot;:&quot;Bony_2001_horse_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_1.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_2&quot;,&quot;label&quot;:&quot;Bony_2001_horse_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_2.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_3&quot;,&quot;label&quot;:&quot;Bony_2001_horse_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_3.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_4&quot;,&quot;label&quot;:&quot;Bony_2001_horse_4&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_4.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_1&quot;,&quot;label&quot;:&quot;Bony_2001_horse_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_2&quot;,&quot;label&quot;:&quot;Bony_2001_horse_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_3&quot;,&quot;label&quot;:&quot;Bony_2001_horse_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_3.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergovaline_Bony2001_horse_4&quot;,&quot;label&quot;:&quot;Bony_2001_horse_4&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_4.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ergovaline — `Ergovaline_Bony2001_horse_1`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life (paper 0.947, model 0.376).
 
-<div class="pk-model-meta" hidden drug="Ergovaline" model-id="Ergovaline_Bony2001_horse_1" status="extracted" stale="false" population="four gelding horses" measured-compound="Ergovaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Ergovaline" model-id="Ergovaline_Bony2001_horse_1" status="needs_review" stale="false" population="four gelding horses" measured-compound="Ergovaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bony S, Durix A, Leblond A, Jaussaud P. Toxicokinetics of ergovaline in the horse after an intravenous administration. Veterinary research 32(5):509–513 (2001).
@@ -33,6 +33,8 @@ Bony S, Durix A, Leblond A, Jaussaud P. Toxicokinetics of ergovaline in the hors
 <figure class="pk-models-diagram"><img src="drugs/toxin_ergovaline/Ergovaline_Bony2001_horse_1/Ergovaline_Bony2001_horse_1.svg" alt="Ergovaline_Bony2001_horse_1 diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | λ₁ (per min) | λ1 | 1.93 | per min |
@@ -49,7 +51,7 @@ Bony S, Durix A, Leblond A, Jaussaud P. Toxicokinetics of ergovaline in the hors
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +59,13 @@ Bony S, Durix A, Leblond A, Jaussaud P. Toxicokinetics of ergovaline in the hors
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (paper 0.947, model 0.376).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (A1, A2 and A3), so that value has no SI equivalent. Extracted — ergovaline: λ1 1.93 per min, λ2 0.41 per min, λ3 0.011 per min, A1 278 ng/mL, A2 22.5 ng/mL, A3 8.24 ng/mL, t1/2z 58.9 min, CL 0.017 L/min·kg, … (+3).
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -116,6 +124,19 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 71.4 L/h | ['Bony_2001_table_1:row7:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 3.36 L | ['Bony_2001_table_1:row10:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=Ergovaline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| T1_t_half_beta | reference | fail | 0.9472 | 0.3763 | 0.3973 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | 56.83 | 0.3763 |  | unresolved time unit '(min)' |
 
 <details class="legend">
 <summary>Validation definitions</summary>

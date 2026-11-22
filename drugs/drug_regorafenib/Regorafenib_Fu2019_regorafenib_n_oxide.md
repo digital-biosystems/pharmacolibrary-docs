@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Rejected because the regorafenib-glucuronide metabolite lacks a defined elimination pathway, leaving the compartment isolated.
+> The record was rejected because regorafenib’s N-oxide and glucuronide have no compartments (n_cmt 0), despite reporting regorafenib clearance of 158.0 L/h.
 
 <div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Fu2019_regorafenib_n_oxide" status="rejected" stale="false" population="male and female wild-type and Oatp1b2-deficient mice" measured-compound="regorafenib" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Fu Q, Chen M, Anderson JT, Sun X, Hu S, Sparreboom A et al. Interaction Between 
 
 ### Reviewer guidance
 
-**Rejected because the regorafenib-glucuronide metabolite lacks a defined elimination pathway, leaving the compartment isolated.**
+**The record was rejected because regorafenib’s N-oxide and glucuronide have no compartments (n_cmt 0), despite reporting regorafenib clearance of 158.0 L/h.**
 
-The model links regorafenib to regorafenib-glucuronide via metabolism and includes a hydrolysis step back to regorafenib, but provides no route for glucuronide removal. The clearance for regorafenib is recorded as 158.0 L/h, and the absorption rate constant is 0.41 h−1. One reported parameter unit could not be converted to standard SI units. Extracted — regorafenib: Cmax 257 ng/mL, tmax 2.95 hour, AUClast 1.91 μg·h/mL, CL 158 L/h, kabs 0.41 h−1.
+Both metabolites have zero compartments despite links from regorafenib, and the findings identify an unreachable or orphan metabolite; the glucuronide also links back to regorafenib by hydrolysis. A reported unit could not be converted to SI, but the findings do not identify the affected parameter or unit. The second reader did not extract the reported regorafenib clearance of 158.0 L/h or absorption rate constant of 0.41 h−1, and classified the glucuronide-to-regorafenib link as interconversion rather than hydrolysis; both readers left absolute bioavailability without a value. Extracted — regorafenib: Cmax 257 ng/mL, tmax 2.95 hour, AUClast 1.91 μg·h/mL, CL 158 L/h, kabs 0.41 h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has regorafenib → regorafenib-n-oxide (metabolism); regorafenib → regorafenib-glucuronide (metabolism); regorafenib-glucuronide → regorafenib (hydrolysis), the second reading regorafenib → regorafenib-n-oxide (metabolism); regorafenib → regorafenib-glucuronide (metabolism); regorafenib-glucuronide → regorafenib (interconversion); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

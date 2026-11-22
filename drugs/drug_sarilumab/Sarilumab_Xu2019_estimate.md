@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Xu_2019 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Ma_2020_ANC&quot;,&quot;label&quot;:&quot;Ma_2020 \u00b7 ANC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/pd_Ma_2020_ANC.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sarilumab — `Sarilumab_Xu2019_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 00:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sarialumab clearance was rejected because a structural parameter's unit prevented valid dimensional consistency checks.
+> The intercompartmental clearance unit was dimensionally inconsistent with its parameter definition, and the absorption rate constant unit could not be standardized.
 
-<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2019_estimate" status="rejected" stale="true" population="patients with rheumatoid arthritis" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2019_estimate" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Xu C, Su Y, Paccaly A, Kanamaluru V. Population Pharmacokinetics of Sarilumab in Patients with Rheumatoid Arthritis. Clinical pharmacokinetics 58(11):1455–1467 (2019).
@@ -17,7 +16,7 @@ Xu C, Su Y, Paccaly A, Kanamaluru V. Population Pharmacokinetics of Sarilumab in
 
 ## Population and dosing
 
-**Population:** patients with rheumatoid arthritis · age group adult · n = &gt;24.
+**Population:** patients with rheumatoid arthritis · age group adult.
 
 **Dosing:** 50, 200 mg, subcutaneous, multiple, every 168 h.
 
@@ -49,7 +48,7 @@ Xu C, Su Y, Paccaly A, Kanamaluru V. Population Pharmacokinetics of Sarilumab in
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,9 +58,9 @@ Xu C, Su Y, Paccaly A, Kanamaluru V. Population Pharmacokinetics of Sarilumab in
 
 ### Reviewer guidance
 
-**Sarialumab clearance was rejected because a structural parameter's unit prevented valid dimensional consistency checks.**
+**The intercompartmental clearance unit was dimensionally inconsistent with its parameter definition, and the absorption rate constant unit could not be standardized.**
 
-The model report includes a parameter with a unit that is not recognized for standard pharmacokinetic calculations. Consequently, the parameter lacked a valid standardized value required for verification. This missing value caused the structural dimension check to fail. Extracted — sarilumab: Vmax 8.06 mg/day, Km 0.939 mg/L, V1/F 2.08 L, CL/F 0.26 L/day, kabs 0.136 day, Q/F 0.156 L/day, V2/F 5.23 L, Vnorm 0.0299.
+The intercompartmental clearance parameter was recorded with a mass per time dimension, which conflicts with its required flow dimension of volume per time. The absorption rate constant was specified in days, a unit that could not be converted to standard SI units for the model. These dimensional and unit conversion errors caused the structural parameter check to fail, resulting in the rejection of the model. Extracted — sarilumab: Vmax 8.06 mg/day, Km 0.939 mg/L, V1/F 2.08 L, CL/F 0.26 L/day, kabs 0.136 day, Q/F 0.156 L/day, V2/F 5.23 L, Vnorm 0.0299.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ada_effect_on_clo_f: this record has 1.43, the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

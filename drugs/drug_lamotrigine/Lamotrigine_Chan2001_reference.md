@@ -17,7 +17,7 @@ Chan V, Morris RG, Ilett KF, Tett SE. Population pharmacokinetics of lamotrigine
 
 ## Population and dosing
 
-**Population:** patients receiving oral lamotrigine therapy with drug concentration monitoring · condition epilepsy · age group adult · n = &gt;=129.
+**Population:** patients receiving oral lamotrigine therapy with drug concentration monitoring · condition epilepsy · age group adult.
 
 ## Model
 

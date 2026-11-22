@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Tiagabine absorption rate constant and lag time were left at library defaults, unsupported by the abstract-only record.
+> Tiagabine’s absorption-rate constant (ka) had no reported estimate and was defaulted, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="tiagabine" model-id="Tiagabine_Ingwersen2000_reference" status="needs_review" stale="false" population="adults with epilepsy on monotherapy" measured-compound="tiagabine" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Ingwersen SH, Pedersen PC, Groes L, Nielsen KK, Aarons L. Population pharmacokin
 
 ## Population and dosing
 
-**Population:** adults with epilepsy on monotherapy · condition epilepsy · age group adult · n = : 130.
+**Population:** adults with epilepsy on monotherapy · condition epilepsy · age group adult.
 
 ## Model
 
@@ -50,13 +50,13 @@ Ingwersen SH, Pedersen PC, Groes L, Nielsen KK, Aarons L. Population pharmacokin
 
 ### Reviewer guidance
 
-**Tiagabine absorption rate constant and lag time were left at library defaults, unsupported by the abstract-only record.**
+**Tiagabine’s absorption-rate constant (ka) had no reported estimate and was defaulted, so the record was held back.**
 
-The record was constructed solely from the paper's abstract, using reported summary statistics in place of fitted model parameters. Consequently, the first-order absorption rate constant and lag time were assigned library placeholders rather than estimates from the source. A second reader disagreed on several fields, returning null values for the reported clearance, volume, and rate constants. Extracted — tiagabine: CL/F 6.1 l/h, V/F 62 l, kel 1.25 h(-1), t1/2z 5.72 h.
+The defaulted absorption rate was not an estimate from the paper, and it affects the simulated concentration profile. Because only the abstract was read, reported summary statistics stand in for a fitted model; the apparent oral parameterization assumes F=1 and Fm=1, no molar correction, and first-order depot input. A second reader disputed the record (agreement 0.167, 0 of 1 readers agreeing), including whether tiagabine was the dose compound or primary analyte and whether several parameter values were reported. Extracted — tiagabine: CL/F 6.1 l/h, V/F 62 l, kel 1.25 h(-1), t1/2z 5.72 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tiagabine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -140,15 +140,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=tiagabine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=tiagabine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

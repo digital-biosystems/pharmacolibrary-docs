@@ -26,7 +26,7 @@ Sofosbuvir is a direct-acting antiviral nucleoside analogue used to treat hepati
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Rower_2015_2_reference](drugs/drug_sofosbuvir/Sofosbuvir_Rower2015v2_reference.md) | — | 1-compartment (no model) | 2 | Rower JE et al., Validation and Application of a Liquid…, Antimicrobial agents and ch… (2015) | [10.1128/aac.01693-15](https://doi.org/10.1128/aac.01693-15) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Rower_2015_2_reference](drugs/drug_sofosbuvir/Sofosbuvir_Rower2015v2_reference.md) | — | 1-compartment (no model) | 2 | Rower JE et al., Validation and Application of a Liquid…, Antimicrobial agents and ch… (2015) | [10.1128/aac.01693-15](https://doi.org/10.1128/aac.01693-15) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,25 +44,6 @@ Sofosbuvir is a direct-acting antiviral nucleoside analogue used to treat hepati
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [de_2019_YFV_titer_2](drugs/drug_sofosbuvir/pd_de_2019_YFV_titer_2.md) | YFV replication (viral titer yield-reduction, wild-type strain) ← sofosbuvir · direct sigmoid Emax (Hill) effect | — | de Freitas CS et al., Yellow fever virus is susceptible to so…, PLoS neglected tropical dis… (2019) | [10.1371/journal.pntd.0007072](https://doi.org/10.1371/journal.pntd.0007072) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Ruiz_2021_SGR_replication](drugs/drug_sofosbuvir/pd_Ruiz_2021_SGR_replication.md) | HCV genotype 2a subgenomic replicon replication (luciferase activity) susceptibility to sofosbuvir ← sofosbuvir · direct sigmoid Emax (Hill) effect | — | Ruiz I et al., Real-world efficacy and safety of direc…, European journal of gastroe… (2021) | [10.1097/MEG.0000000000002003](https://doi.org/10.1097/MEG.0000000000002003) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sofosbuvir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| excretion | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CES1A1a (substrate), CMPK1 (substrate), CTSA (substrate), Genome polyprotein (modulator), HINT1 (substrate), NME1 (substrate).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -75,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:59 | 34:18 | 1/0/0 | 5/1/0 | 0/0/0 | 1,485,338/62,451 | ollama / glm-5.3-flash | 45 | 8/35 | 44/1 | 0 |
+| 2026-10-07 17:59 | 34:18 | 1/0/0 | 10/1/0 | 0/0/0 | 1,485,338/62,451 | ollama / glm-5.3-flash | 45 | 8/35 | 44/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1167 matched, 164 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

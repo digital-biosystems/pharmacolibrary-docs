@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;terbutaline&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/&quot;},{&quot;label&quot;:&quot;Marques_2024_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terbutaline_Pouliquen2015_reference&quot;,&quot;label&quot;:&quot;Pouliquen_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Pouliquen2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Trischler2021_reference&quot;,&quot;label&quot;:&quot;Trischler_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Trischler2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Wen2026_reference&quot;,&quot;label&quot;:&quot;Wen_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Wen2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terbutaline_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Pouliquen2015_reference&quot;,&quot;label&quot;:&quot;Pouliquen_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Pouliquen2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Trischler2021_reference&quot;,&quot;label&quot;:&quot;Trischler_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Trischler2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Wen2026_reference&quot;,&quot;label&quot;:&quot;Wen_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Wen2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The extracted central volume of distribution for terbutaline (0.02 L) is physiologically implausible, likely due to a unit or scale extraction error.
+> Terbutaline was rejected because its reported total clearance of 118.0 mL/h was flagged as physiologically implausible relative to its central distribution volume.
 
 <div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Marques2024v2_reference" status="rejected" stale="false" population="" measured-compound="terbutaline" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 
 ### Reviewer guidance
 
-**The extracted central volume of distribution for terbutaline (0.02 L) is physiologically implausible, likely due to a unit or scale extraction error.**
+**Terbutaline was rejected because its reported total clearance of 118.0 mL/h was flagged as physiologically implausible relative to its central distribution volume.**
 
-The record lists the central volume (V1) as 0.02 L, which is far below the physiological range for this drug. A second reader disagreed, estimating this value as 162.93 L. The record was rejected because the extracted clearance-to-volume ratio fell outside the expected physiological window. Extracted — terbutaline: CL 118 mL/h, V1 0.02 L, V2 0.66 L, Q 10.6 L/h, kabs 3.71 h−1.
+The record reports a central volume of 0.02 L and a peripheral volume of 0.66 L; the finding attributes the clearance/volume failure to implausible magnitude, likely from a unit or scale extraction error. The second reader disagrees with the recorded central volume (162.93 rather than 0.02) and peripheral volume (0 rather than 0.66). Extracted — terbutaline: CL 118 mL/h, V1 0.02 L, V2 0.66 L, Q 10.6 L/h, kabs 3.71 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V1: this record has 0.02, the second reading 162.93; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

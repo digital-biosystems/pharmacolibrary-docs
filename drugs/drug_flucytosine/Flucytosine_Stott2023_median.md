@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D01A&quot;,&quot;href&quot;:&quot;atc/D01A.md&quot;},{&quot;label&quot;:&quot;flucytosine&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/&quot;},{&quot;label&quot;:&quot;Stott_2023 \u00b7 median&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flucytosine_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucytosine_Stott2023_mean&quot;,&quot;label&quot;:&quot;Stott_2023_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stott2023_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucytosine_Stott2023_median&quot;,&quot;label&quot;:&quot;Stott_2023_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stott2023_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flucytosine_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucytosine_Stott2023_mean&quot;,&quot;label&quot;:&quot;Stott_2023_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stott2023_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucytosine_Stott2023_median&quot;,&quot;label&quot;:&quot;Stott_2023_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stott2023_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Flucytosine model was held back because the peripheral volume parameter is missing and the record assumes unit bioavailability.
+> The inter-compartmental rate constant for flucytosine was not estimated or defaulted, leaving the one-compartment model incomplete.
 
 <div class="pk-model-meta" hidden drug="flucytosine" model-id="Flucytosine_Stott2023_median" status="needs_review" stale="false" population="adults with HIV-associated cryptococcal meningoencephalitis" measured-compound="flucytosine" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Stott KE, Ahmadu A, Kajanga C, Moyo M, Gondwe E, Chimang'anga W et al. Populatio
 
 ## Population and dosing
 
-**Population:** adults with HIV-associated cryptococcal meningoencephalitis · condition HIV-associated cryptococcal meningoencephalitis · age group adult · n = &gt;=64.
+**Population:** adults with HIV-associated cryptococcal meningoencephalitis · condition HIV-associated cryptococcal meningoencephalitis · age group adult.
 
 **Dosing:** 1750 mg, oral, multiple, every 6 h.
 
@@ -52,9 +52,9 @@ Stott KE, Ahmadu A, Kajanga C, Moyo M, Gondwe E, Chimang'anga W et al. Populatio
 
 ### Reviewer guidance
 
-**Flucytosine model was held back because the peripheral volume parameter is missing and the record assumes unit bioavailability.**
+**The inter-compartmental rate constant for flucytosine was not estimated or defaulted, leaving the one-compartment model incomplete.**
 
-The one-compartment structure lists a compartmental rate constant but lacks a corresponding volume parameter, resulting in an incomplete structural description. The review flagged the use of apparent parameters, which inherently assumes a bioavailability of 1, as an unacceptable deviation. A second reader also noted a discrepancy regarding a potential 44.55 L volume value not captured in this record. Extracted — flucytosine: kabs 1.01 h−1, CL/F 5.31 L/h, V/F 14.8 L, kcomp 18.6 h−1.
+The record lists a 1-compartment structure but includes an inter-compartmental rate constant value of 18.57 h⁻¹ that was neither emitted nor placed in the defaulted list. Only three of the four expected parameters were covered, specifically missing this distribution rate constant. The model builder also assumed full bioavailability (F=1) and used a default for the absorption lag time. Extracted — flucytosine: kabs 1.01 h−1, CL/F 5.31 L/h, V/F 14.8 L, kcomp 18.6 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -130,15 +130,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=flucytosine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['kcomp'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=flucytosine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['kcomp'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

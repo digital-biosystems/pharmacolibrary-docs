@@ -17,7 +17,7 @@ Gupta SK, Kantesaria B, Banfield C, Wang Z. Desloratadine dose selection in chil
 
 ## Population and dosing
 
-**Population:** children aged 6 months to 2 years · condition healthy · age group child · n = : 58.
+**Population:** children aged 6 months to 2 years · condition healthy · age group child.
 
 ## Model
 

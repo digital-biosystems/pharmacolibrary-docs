@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="Imipramine" model-id="Imipramine_Bergstrom1992_reference" status="needs_review" stale="false" population="male subjects" measured-compound="Imipramine" parameterization="apparent" topology="1C"></div>
 
@@ -43,7 +43,13 @@ Bergstrom RF, Peyton AL, Lemberger L. Quantification and mechanism of the fluoxe
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — imipramine: CL_ratio 10 fold, CL/F 289 L/hr.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

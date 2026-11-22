@@ -4,11 +4,11 @@
 
 # nicotine — `Nicotine_Olsson2021_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-07 03:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance Q3 value of 216 L/h is dimensionally inconsistent with the central compartment volume of 117 L.
+> Nicotine’s zero-order input duration is recorded as 3.82 mg, conflicting with its time dimension and causing the record to be rejected.
 
-<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Olsson2021_estimate" status="rejected" stale="true" population="healthy smokers" measured-compound="nicotine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Olsson2021_estimate" status="rejected" stale="false" population="healthy smokers" measured-compound="nicotine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Olsson Gisleskog PO, Perez Ruixo JJ, Westin Å, Hansson AC, Soons PA. Nicotine Population Pharmacokinetics in Healthy Smokers After Intravenous, Oral, Buccal and Transdermal Administration. Clinical pharmacokinetics 60(4):541–561 (2021).
@@ -49,7 +49,7 @@ Olsson Gisleskog PO, Perez Ruixo JJ, Westin Å, Hansson AC, Soons PA. Nicotine P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.682). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.682). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +59,13 @@ Olsson Gisleskog PO, Perez Ruixo JJ, Westin Å, Hansson AC, Soons PA. Nicotine P
 
 ### Reviewer guidance
 
-**The intercompartmental clearance Q3 value of 216 L/h is dimensionally inconsistent with the central compartment volume of 117 L.**
+**Nicotine’s zero-order input duration is recorded as 3.82 mg, conflicting with its time dimension and causing the record to be rejected.**
 
-The recorded intercompartmental clearance between the central and third compartment is 216 L/h. This value is numerically larger than the central volume of distribution, 117 L, creating a physical impossibility in the model structure. Additionally, the parameter labeled 'Pre-washout nicotine dose' holds the value 3.82 mg, which contradicts its defined meaning as a duration. Extracted — nicotine: CL 67.4 L/h, V1 117 L, Q 38.6 L/h, V2 130 L, Q3 216 L/h, V3 53.4 L, D1 3.82 mg, kabs 1.55 h−1, … (+5).
+D1 is defined as the duration of a zero-order input, but its reported unit is mg, a mass unit rather than a time unit. The reported unit could not be converted to SI, so no SI value was available for this parameter. Extracted — nicotine: CL 67.4 L/h, V1 117 L, Q 38.6 L/h, V2 130 L, Q3 216 L/h, V3 53.4 L, D1 3.82 mg, kabs 1.55 h−1, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clch24: this record has none, the second reading 11.6; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

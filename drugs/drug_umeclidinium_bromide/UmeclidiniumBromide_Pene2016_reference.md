@@ -5,11 +5,11 @@
 
 # umeclidinium bromide — `UmeclidiniumBromide_Pene2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-07 15:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the absorption rate constant for umeclidinium bromide had an undefined unit, preventing dimensional consistency checks.
+> Umeclidinium bromide’s absorption rate constant (0.0934) was rejected because its reported unit “units” has dimensions of luminosity per area, not inverse time.
 
-<div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Pene2016_reference" status="rejected" stale="true" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Pene2016_reference" status="rejected" stale="false" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A Novel Method for Studying the Pharmacokinetics of [(14) C]Umeclidinium After Application to the Axilla or Palm of Healthy Male Subjects. Clinical and translational science 9(4):183–191 (2016).
@@ -45,7 +45,7 @@ Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +55,13 @@ Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A
 
 ### Reviewer guidance
 
-**The record was rejected because the absorption rate constant for umeclidinium bromide had an undefined unit, preventing dimensional consistency checks.**
+**Umeclidinium bromide’s absorption rate constant (0.0934) was rejected because its reported unit “units” has dimensions of luminosity per area, not inverse time.**
 
-The absorption rate constant is listed as 0.0934 with the unit 'units', which does not specify a time scale like hours or minutes. Although the label suggests an inverse time scale, the undefined unit prevents confirmation that the parameter dimensionally matches the model structure. This ambiguity caused the record to fail validation, even though other parameters like clearance and volume of distribution had explicit units. Extracted — umeclidinium bromide: V1 7.56 L, CL 55 L/h, V2 195 L, Q 40.9 L/h, kabs 0.0934 units, Fab 0.312, tlag 10.6 h.
+The absorption rate constant’s reported unit was dimensioned as luminosity per length squared rather than inverse time, and could not be converted to SI, leaving no SI value. A second reader marked the dose compound and primary analyte as unknown, unlike this record, which lists umeclidinium bromide and umeclidinium. Extracted — umeclidinium bromide: V1 7.56 L, CL 55 L/h, V2 195 L, Q 40.9 L/h, kabs 0.0934 units, Fab 0.312, tlag 10.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium bromide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

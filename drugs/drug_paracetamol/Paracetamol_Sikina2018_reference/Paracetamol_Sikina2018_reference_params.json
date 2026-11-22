@@ -10,39 +10,49 @@
  ],
  "paper_doses_kind": "discrete",
  "paper_doses_mg": [
-  9.3,
-  13.0,
   325.0
  ],
  "paper_reference": {
   "cmax": [
    {
     "source": "Sikina_2018:other_prose",
-    "value_si": 6.74
+    "value_si": 0.00674
    },
    {
     "source": "Sikina_2018:other_prose",
-    "value_si": 2.69
+    "value_si": 0.00269
    },
    {
     "source": "Sikina_2018:other_prose",
-    "value_si": 0.52
+    "value_si": 0.0005200000000000001
    },
    {
     "source": "Sikina_2018:other_prose",
-    "value_si": 1.18
+    "value_si": 0.00118
    },
    {
     "source": "Sikina_2018:other_prose",
-    "value_si": 2.98
+    "value_si": 0.00298
    },
    {
     "source": "Sikina_2018:other_prose",
-    "value_si": 0.07
+    "value_si": 0.00587
    },
    {
     "source": "Sikina_2018:other_prose",
-    "value_si": 0.54
+    "value_si": 7.000000000000001e-05
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 0.00054
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 0.0025800000000000003
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 6.0
    }
   ]
  },
@@ -54,15 +64,15 @@
   "VdPerKg": 0.0039012857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 9.3e-06,
+  "adminMass": 0.000325,
   "ka": 0.0006025000000000001,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 4145.369237220213
+  "central.C": 4070.686119588016
  },
  "reference_peaks": {
-  "central.C": 2.431713958422557e-05
+  "central.C": 0.0008499021544757401
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

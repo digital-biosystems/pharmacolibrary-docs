@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;flumazenil&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Jones1993_reference&quot;,&quot;label&quot;:&quot;Jones_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # flumazenil
 
@@ -26,24 +26,18 @@ Flumazenil is a selective GABA-A receptor antagonist and antidote used to treat 
 
 ## Start here
 
-> **Chen_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md?tab=Simulation) · [record](drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md)
+> **Jones_1993_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy Chinese children undergoing circumcision, n = 12. [Run it in the simulator](drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md?tab=Simulation) · [record](drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Chen_2025 · CL</text><circle cx="486.4" cy="30.0" r="4" fill="#78909c"><title>Chen_2025 · CL: 70.3 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jones_1993 · CL</text><circle cx="486.4" cy="46.0" r="4" fill="#78909c"><title>Jones_1993 · CL: 70.3 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Cha_2024 · CL/F</text><circle cx="293.5" cy="62.0" r="4" fill="#78909c"><title>Cha_2024 · CL/F: 19.76 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cha_2024 · V/F</text><circle cx="495.9" cy="30.0" r="4" fill="#78909c"><title>Cha_2024 · V/F: 74.8 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Chen_2025 · V1</text><circle cx="332.3" cy="46.0" r="4" fill="#78909c"><title>Chen_2025 · V1: 25.5 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Cha_2024_reference](drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Cha HJ et al., Development of a Web Application for Si…, Pharmaceutics (2024) | [10.3390/pharmaceutics16050689](https://doi.org/10.3390/pharmaceutics16050689) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Chen_2025_reference](drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Chen J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1526266](https://doi.org/10.3389/fphar.2025.1526266) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Jones_1993_reference](drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md) | — | 1-compartment (no model) | 6 | Jones RD et al., Pharmacokinetics of flumazenil and mida…, British journal of anaesthe… (1993) | [10.1093/bja/70.3.286](https://doi.org/10.1093/bja/70.3.286) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Jones_1993_reference](drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Jones RD et al., Pharmacokinetics of flumazenil and mida…, British journal of anaesthe… (1993) | [10.1093/bja/70.3.286](https://doi.org/10.1093/bja/70.3.286) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [van_2005_reference](drugs/drug_flumazenil/Flumazenil_van2005_reference.md) | — | 1-compartment (no model) | 5 | van Rij CM et al., Population plasma pharmacokinetics of 1…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.02487.x](https://doi.org/10.1111/j.1365-2125.2005.02487.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Cha_2024_reference](drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Cha HJ et al., Development of a Web Application for Si…, Pharmaceutics (2024) | [10.3390/pharmaceutics16050689](https://doi.org/10.3390/pharmaceutics16050689) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Chen_2025_reference](drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Chen J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1526266](https://doi.org/10.3389/fphar.2025.1526266) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Flores-Pérez_2023_reference](drugs/drug_flumazenil/Flumazenil_FloresPrez2023_reference.md) | — | 2-compartment (no model) | 4 | Flores-Pérez C et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutics (2023) | [10.3390/pharmaceutics15112565](https://doi.org/10.3390/pharmaceutics15112565) |
 
 ## Pharmacodynamics (PD)
@@ -55,19 +49,6 @@ Flumazenil is a selective GABA-A receptor antagonist and antidote used to treat 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Kuver_2016_GABA_gated_current](drugs/drug_flumazenil/pd_Kuver_2016_GABA_gated_current.md) | GABA (10 μM)-gated current in recombinant α4β2δ GABAA receptors in presence of 100 nM THP ← flumazenil · inhibition effect | — | Kuver A et al., Flumazenil decreases surface expression…, Brain research bulletin (2016) | [10.1016/j.brainresbull.2015.11.015](https://doi.org/10.1016/j.brainresbull.2015.11.015) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">bird</span> | [Pedder_1987_Specific_binding_of_3H_diazepam_to_whole_homogenate_fractions_from_cerebral_hemispheres](drugs/drug_flumazenil/pd_Pedder_1987_Specific_binding_of_3H_diazepam_to_whole_homogen.md) | Specific binding of [3H]diazepam to whole homogenate fractions from cerebral hemispheres ← Ro 15-1788 (flumazenil) · inhibition effect | — | Pedder SC et al., Benzodiazepine antagonist Ro 15-1788 (f…, Brain research (1987) | [10.1016/0006-8993(87)91203-0](https://doi.org/10.1016/0006-8993(87)91203-0) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Breimer_1991_TNW12_30](drugs/drug_flumazenil/pd_Breimer_1991_TNW12_30.md) | total number of waves between 12 and 30 Hz (aperiodic EEG analysis) ← midazolam (effect antagonised competitively by flumazenil) · direct sigmoid Emax (Hill) effect | — | Breimer LT et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical pharmacokinetics (1991) | [10.2165/00003088-199120060-00006](https://doi.org/10.2165/00003088-199120060-00006) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=flumazenil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), GABRA2 (allosteric modulator), GABRA3 (allosteric modulator), GABRA5 (target), GABRG2 (target), GABRG3 (allosteric modulator), TSPO (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -81,13 +62,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:37 | 28:27 | 4/1/0 | 4/1/0 | 0/0/0 | 1,256,774/57,057 | ollama / glm-5.3-flash | 45 | 9/29 | 43/2 | 0 |
+| 2026-10-07 19:37 | 28:27 | 2/3/0 | 4/1/0 | 0/0/0 | 1,256,774/57,057 | ollama / glm-5.3-flash | 45 | 9/29 | 43/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 415 matched, 149 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 3  ·  needs review 1  ·  rejected 1  ·  stale 2
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

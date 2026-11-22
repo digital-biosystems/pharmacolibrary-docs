@@ -4,11 +4,11 @@
 
 # fitusiran — `Fitusiran_Fan2026_humansa`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-05 19:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fitusiran record rejected because the fraction unbound parameter has a dimension mismatch, using a rate unit instead of a ratio.
+> Fitusiran was refused because target concentration Rtot (14.34 nM) and metabolic Vmax (4.37 nmol/h) have dimensions incompatible with their structural parameters.
 
-<div class="pk-model-meta" hidden drug="fitusiran" model-id="Fitusiran_Fan2026_humansa" status="rejected" stale="true" population="multiple species (mouse, rat, monkey, human)" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fitusiran" model-id="Fitusiran_Fan2026_humansa" status="rejected" stale="false" population="multiple species (mouse, rat, monkey, human)" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fan X, Xiao Y, Cao K, Zhang R, Yan X. A computational model-powered platform to inform the development of GalNAc-conjugated siRNA therapeutics. Molecular therapy. Nucleic acids 37(2):102936 (2026).
@@ -45,7 +45,7 @@ Fan X, Xiao Y, Cao K, Zhang R, Yan X. A computational model-powered platform to 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +55,13 @@ Fan X, Xiao Y, Cao K, Zhang R, Yan X. A computational model-powered platform to 
 
 ### Reviewer guidance
 
-**Fitusiran record rejected because the fraction unbound parameter has a dimension mismatch, using a rate unit instead of a ratio.**
+**Fitusiran was refused because target concentration Rtot (14.34 nM) and metabolic Vmax (4.37 nmol/h) have dimensions incompatible with their structural parameters.**
 
-The fraction unbound parameter is recorded as 39.32 with a unit of 1/h, which is a rate unit incompatible with a dimensionless ratio. This dimensional inconsistency causes the structural check to fail, preventing the model from being valid. A second reader also disagreed on several parameter assignments, but the primary refusal is due to this fundamental unit error. Extracted — fitusiran: kabs 0.23 1/h, fu 39.3, Rtot 14.3 nM, Vmax 4.37 nmol/h, Km 97.8, koff 0.023 1/h, kint 4.69 1/h, kel 0.0076 1/h.
+The record reports Rtot in nM rather than the required mass-per-volume dimension, and Vmax in nmol/h rather than mass-per-time. A reported unit could not be converted to SI, leaving the affected parameter without an SI value. Extracted — fitusiran: kabs 0.23 1/h, fu 39.3, Rtot 14.3 nM, Vmax 4.37 nmol/h, Km 97.8, koff 0.023 1/h, kint 4.69 1/h, kel 0.0076 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fitusiran, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fitusiran, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -127,22 +127,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (8/18 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.444 (8/18 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['fitusiran', 'target mrna', 'interconversion'], ['target mrna', 'target protein', 'interconversion']] | mismatch |
-| `gpt-oss:120b` | `parameters[fesc]` |  | 0.037 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kdegd]` |  | 0.014 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kdege]` | 0.0076 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kdis]` |  | 0.0061 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kpliver]` |  | 0.18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[rtot0].parameter_id` | Q333 | Q86 | mismatch |
-| `gpt-oss:120b` | `parameters[γ1]` |  | 0.074 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | fitusiran | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | fitusiran | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['fitusiran', 'target mrna', 'interconversion'], ['target mrna', 'target protein', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[fesc]` |  | 0.037 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kdegd]` |  | 0.014 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kdege]` | 0.0076 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kdis]` |  | 0.0061 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kpliver]` |  | 0.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rtot0].parameter_id` | Q333 | Q86 | mismatch |
+| `gpt-oss-120b` | `parameters[γ1]` |  | 0.074 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fitusiran | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fitusiran | unknown | mismatch |
 
 </details>
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The pharmacodynamic model describes isoflurane concentrations (vol%) inhibiting the spectral edge frequency at the 95th percentile (SEF95, Hz) via a proportional Emax mechanism linked to an effect compartment. Key parameters include an EC50 of 0.66 vol%, a Hill slope (lambda) of 0.86, and a first-order equilibrium rate constant (Ke0) of 0.29 min⁻¹.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Rehberg_1999`
 - **model family:** `emax`
 - **driver:** `cited_pk`

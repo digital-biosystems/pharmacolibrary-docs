@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;alglucosidase alfa&quot;,&quot;href&quot;:&quot;drugs/drug_alglucosidase_alfa/&quot;},{&quot;label&quot;:&quot;Barzel_2026 \u00b7 gras_colomer_et_al_2021_25_plasma_leukocyte&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlglucosidaseAlfa_Tiraboschi2023_reference&quot;,&quot;label&quot;:&quot;Tiraboschi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlglucosidaseAlfa_Tiraboschi2023_reference&quot;,&quot;label&quot;:&quot;Tiraboschi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # alglucosidase alfa — `AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-05 10:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Total clearance lacks a numeric value, preventing dimensionality checks for alglucosidase alfa elimination.
+> The model was rejected because the maximum metabolic rate for alglucosidase alfa was assigned incompatible units.
 
-<div class="pk-model-meta" hidden drug="alglucosidase alfa" model-id="AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas" status="rejected" stale="true" population="patients with lysosomal storage diseases" measured-compound="alglucosidase_alfa" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="alglucosidase alfa" model-id="AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas" status="rejected" stale="false" population="patients with lysosomal storage diseases" measured-compound="alglucosidase_alfa" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Barzel I, van der Ploeg AT, Pijnappel WWMP, van der Kuy PHM, van den Hout JMP, Preijers T. Population Pharmacokinetic/Pharmacodynamic Modeling of Therapeutic Enzymes in Lysosomal Storage Diseases. Clinical pharmacokinetics 65(5):647-664 (2026).
@@ -45,7 +45,7 @@ Barzel I, van der Ploeg AT, Pijnappel WWMP, van der Kuy PHM, van den Hout JMP, P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Barzel I, van der Ploeg AT, Pijnappel WWMP, van der Kuy PHM, van den Hout JMP, P
 
 ### Reviewer guidance
 
-**Total clearance lacks a numeric value, preventing dimensionality checks for alglucosidase alfa elimination.**
+**The model was rejected because the maximum metabolic rate for alglucosidase alfa was assigned incompatible units.**
 
-The total clearance parameter is present in the record but has no assigned value or unit. This missing value caused the structural dimension mismatch check to fail. A second reader also identified missing values for other intercompartmental transfer rates and clearances. Extracted — alglucosidase alfa: V1 3.35 L, Q2 0.254 L/h, V2 296 L, k21 0.0206 d−1, Vmax 9.82 mg/h, Km 0.451 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
+The parameter Vmax is defined as the maximum rate of metabolism, requiring units of concentration over time, but was assigned a value of 9.82 mg/h. This unit, which represents a mass flow rate, is dimensionally inconsistent with the parameter's intended meaning in a three-compartment model. Additionally, the total clearance parameter for the drug was not extracted, leaving it without a specified value. Extracted — alglucosidase alfa: V1 3.35 L, Q2 0.254 L/h, V2 296 L, k21 0.0206 d−1, Vmax 9.82 mg/h, Km 0.451 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alglucosidase_alfa, the second reading alglucosidase alfa; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

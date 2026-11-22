@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the absorption rate constant deviated from acceptable bounds, and all parameters used apparent parameterization assuming complete bioavailability.
+> A second reader disputes the baclofen clearance, absorption rate, and volume of distribution values, causing the review to remain unresolved.
 
 <div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Simon2018_reference" status="needs_review" stale="false" population="adults with alcohol use disorder" measured-compound="baclofen" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Simon N, Moirand R, Dematteis M, Bordet R, Deplanque D, Rolland B. Full-Profile 
 
 ## Population and dosing
 
-**Population:** adults with alcohol use disorder · condition alcohol use disorder · age group adult · n = ? 57.
+**Population:** adults with alcohol use disorder · condition alcohol use disorder · age group adult.
 
 **Dosing:** 300 mg/d, oral, multiple.
 
@@ -51,9 +51,9 @@ Simon N, Moirand R, Dematteis M, Bordet R, Deplanque D, Rolland B. Full-Profile 
 
 ### Reviewer guidance
 
-**The record was held back because the absorption rate constant deviated from acceptable bounds, and all parameters used apparent parameterization assuming complete bioavailability.**
+**A second reader disputes the baclofen clearance, absorption rate, and volume of distribution values, causing the review to remain unresolved.**
 
-The model builder defaulted the lag time and assumed unit bioavailability for the apparent clearance, volume, and absorption rate constant. The deviation check flagged the absorption rate constant as not acceptable. A second reader disagreed on the specific values for clearance, volume, and absorption, as well as the identity of the dose compound. Extracted — baclofen: CL/F 11.6 L/h, V/F 72.8 L, kabs 1.64 1/h.
+The second reader identified conflicting values for the primary parameters: 10.8 L/h versus 11.6 L/h for clearance, 1.34 1/h versus 1.64 1/h for the absorption rate constant, and 66.5 L versus 72.8 L for volume of distribution. This disagreement resulted in a 0.5 agreement ratio with zero reader consensus, preventing the verification of the oral baclofen model. The record also notes that the lag time was not explicitly estimated and was instead assigned a placeholder value. Extracted — baclofen: CL/F 11.6 L/h, V/F 72.8 L, kabs 1.64 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has baclofen, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -145,7 +145,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=baclofen) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev1: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | pass | 5 | 4.35 | 0.87 | h→SI vs simulated h |
 
 <details class="legend">

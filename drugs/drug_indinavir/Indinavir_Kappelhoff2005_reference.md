@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;indinavir&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/&quot;},{&quot;label&quot;:&quot;Kappelhoff_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indinavir_Csajka2004_reference&quot;,&quot;label&quot;:&quot;Csajka_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Csajka2004_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Cressey2011_reference&quot;,&quot;label&quot;:&quot;Cressey_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Cressey2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Kappelhoff2005_reference&quot;,&quot;label&quot;:&quot;Kappelhoff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indinavir_Cressey2011_reference&quot;,&quot;label&quot;:&quot;Cressey_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Cressey2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Csajka2004_reference&quot;,&quot;label&quot;:&quot;Csajka_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Csajka2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Kappelhoff2005_reference&quot;,&quot;label&quot;:&quot;Kappelhoff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F was not reported for indinavir, so a library default was used instead of an estimate from this paper.
+> Indinavir’s bioavailability (F) has no extracted estimate and was defaulted, while a second reader reports 38.3; the record therefore relies on unsupported values.
 
 <div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Kappelhoff2005_reference" status="needs_review" stale="false" population="" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Kappelhoff BS, Huitema AD, Sankatsing SU, Meenhorst PL, Van Gorp EC, Mulder JW e
 
 ### Reviewer guidance
 
-**Bioavailability F was not reported for indinavir, so a library default was used instead of an estimate from this paper.**
+**Indinavir’s bioavailability (F) has no extracted estimate and was defaulted, while a second reader reports 38.3; the record therefore relies on unsupported values.**
 
-The record lists clearance, volume of distribution, absorption rate, and lag time, but omits bioavailability. The review flagged F as a defaulted parameter because it was missing from the source text. Although a second reader suggested a value of 38.3, it was not accepted, leaving F unsupported by this specific paper. Extracted — indinavir: CL 10.5 l h -1, V 96.6 l, kabs 0.871 h -1, tlag 0.485 h.
+F uses library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper and are neither extracted nor explicitly justified as conventions. The second reader reports 38.3 for F, but the record itself contains no estimate for this parameter. Extracted — indinavir: CL 10.5 l h -1, V 96.6 l, kabs 0.871 h -1, tlag 0.485 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 38.3. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,14 +122,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=indinavir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=indinavir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

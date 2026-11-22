@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Exenatide clearance of 3.62 ml/min is below physiological limits, causing rejection due to implausible magnitude.
+> Exenatide clearance of 3.62 ml/min is physiologically implausible, causing the record to be rejected.
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Gao2012_reference" status="rejected" stale="false" population="rats, monkeys, and humans" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Gao W, Jusko WJ. Target-mediated pharmacokinetic and pharmacodynamic model of ex
 
 ### Reviewer guidance
 
-**Exenatide clearance of 3.62 ml/min is below physiological limits, causing rejection due to implausible magnitude.**
+**Exenatide clearance of 3.62 ml/min is physiologically implausible, causing the record to be rejected.**
 
-The single-compartment model lists a total clearance of 3.62 ml/min for exenatide. This value triggers a physiological plausibility failure for an intact peptide drug. A second reader could not validate this clearance figure or the central volume of 43.2 ml, leaving the data unverified. Extracted — exenatide: CL 3.62 ml/min, V1 43.2 ml.
+The record lists exenatide clearance as 3.62 ml/min, which falls outside the expected physiological range for the drug. This extreme value suggests a unit or scale extraction error. A second reader disagreed with multiple extracted numerical values, indicating uncertainty in the parameter assignments. Extracted — exenatide: CL 3.62 ml/min, V1 43.2 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q3: this record has 0.0966, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

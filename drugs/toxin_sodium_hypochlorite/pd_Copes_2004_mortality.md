@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a specific mechanism of action for sodium hypochlorite, but it identifies the response as the mortality of conidia (percentage of ungerminated versus germinated). The only potency value reported is the LD90, which ranges from 0.87 to 6.84 g a.i./liter.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Copes_2004`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

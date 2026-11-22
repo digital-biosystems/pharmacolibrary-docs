@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;caplacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/&quot;},{&quot;label&quot;:&quot;Fan_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caplacizumab_Fan2025_reference&quot;,&quot;label&quot;:&quot;Fan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caplacizumab_Fan2025_reference&quot;,&quot;label&quot;:&quot;Fan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # caplacizumab — `Caplacizumab_Fan2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> Bioavailability and peripheral distribution parameters were left at default placeholders, and clearance values conflict with reader disagreements.
+> The record was rejected because Fan_2025 concerns another drug, despite listing caplacizumab clearance as 0.35 mL/h/kg.
 
-<div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_Fan2025_reference" status="needs_review" stale="false" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_Fan2025_reference" status="rejected" stale="false" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Fan X, Cao K, Wu X, Yan X. Pharmacokinetic-pharmacodynamic modeling of a highly potent and broadly neutralizing anti-CD4 trimeric nanobody to inhibit HIV-1 infection. Microbiology spectrum 13(11):e0080525 (2025).
@@ -33,7 +33,7 @@ Fan X, Cao K, Wu X, Yan X. Pharmacokinetic-pharmacodynamic modeling of a highly 
 <figure class="pk-models-diagram"><img src="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference.svg" alt="Caplacizumab_Fan2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -44,7 +44,7 @@ Fan X, Cao K, Wu X, Yan X. Pharmacokinetic-pharmacodynamic modeling of a highly 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +54,13 @@ Fan X, Cao K, Wu X, Yan X. Pharmacokinetic-pharmacodynamic modeling of a highly 
 
 ### Reviewer guidance
 
-**Bioavailability and peripheral distribution parameters were left at default placeholders, and clearance values conflict with reader disagreements.**
+**The record was rejected because Fan_2025 concerns another drug, despite listing caplacizumab clearance as 0.35 mL/h/kg.**
 
-The model relies on library defaults for bioavailability and the reverse intercompartmental clearance, which lack support in the paper. Additionally, the central clearance estimate of 0.35 mL/h/kg conflicts with a second reader’s value of 0.69. The record remains held back because these structural parameters are not explicitly justified by the source data. Extracted — caplacizumab: CL 0.35 mL/h/kg, V1 26.9 mL/kg, Q 1.86 mL/h, kabs 0.46 1/h.
+Neither the paper’s title nor its abstract names caplacizumab, and the relevance screen classified it as a paper about another drug. The model builder defaulted bioavailability, absorption lag time, and one additional parameter rather than using explicit estimates. The second reader disputed the verdict, with agreement of 0.562. Extracted — caplacizumab: CL 0.35 mL/h/kg, V1 26.9 mL/kg, Q 1.86 mL/h, kabs 0.46 1/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.35, the second reading 0.69; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.35, the second reading 0.69; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -92,15 +92,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.438 (7/16 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.562 (9/16 fields) | 7 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q22]` | 0.35 | 0.69 | mismatch |
-| `gpt-oss-120b` | `values[Q312]` | 0.87 | 0.87 | mismatch |
-| `gpt-oss-120b` | `values[Q315]` | 0.82 | 0.82 | mismatch |
 | `gpt-oss-120b` | `values[Q322]` | 0.0341 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 175.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q57]` | 7.47 |  | only_one_extracted |
@@ -134,14 +132,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=caplacizumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | caplacizumab (or metabolite) | paper about another drug |  | paper subject is not caplacizumab: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=caplacizumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.562, 0 of 1 reader(s) agree | 0.562 | cross-check disputed by a second reader: verdict disputed, agreement 0.562, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -153,61 +152,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_modelica.zip" download>Caplacizumab_Fan2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_fmi.zip" download>Caplacizumab_Fan2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_matlab.zip" download>Caplacizumab_Fan2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_matlab_simbio.zip" download>Caplacizumab_Fan2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_sbml.zip" download>Caplacizumab_Fan2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_cellml.zip" download>Caplacizumab_Fan2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 4e-07 | kg |
-| input | model | `Cl` | 6.806e-09 | m3/s |
-| input | model | `VdPerKg` | 2.69e-05 | m3/kg |
-| input | model | `k12` | 2.744e-07 | 1/s |
-| input | model | `ka` | 0.0001278 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Fan X, Cao K, Wu X, Yan X. Pharmacokinetic-pharmacodynamic modeling of a highly potent and broadly neutralizing anti-CD4 trimeric nanobody to inhibit HIV-1 infection. Microbiology spectrum 13(11):e0080525 (2025). [doi:10.1128/spectrum.00805-25](https://doi.org/10.1128/spectrum.00805-25)
-
-**This record:** Pharmacolibrary, model `Caplacizumab_Fan2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_CaplacizumabFan2025reference,
-  title  = {{Pharmacolibrary model Caplacizumab_Fan2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference},
-  note   = {Parameters from doi:10.1128/spectrum.00805-25},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

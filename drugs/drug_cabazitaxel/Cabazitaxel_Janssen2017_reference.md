@@ -16,7 +16,7 @@ Janssen A, Verkleij CPM, van der Vlist A, Mathijssen RHJ, Bloemendal HJ, Ter Hei
 
 ## Population and dosing
 
-**Population:** men with metastatic castration-resistant prostate cancer · condition prostate cancer · age group adult · n = &gt;10.
+**Population:** men with metastatic castration-resistant prostate cancer · condition prostate cancer · age group adult.
 
 **Dosing:** 25 mg/m2, iv, multiple.
 

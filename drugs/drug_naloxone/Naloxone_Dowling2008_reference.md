@@ -16,7 +16,7 @@ Dowling J, Isbister GK, Kirkpatrick CM, Naidoo D, Graudins A. Population pharmac
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -40,7 +40,7 @@ Dowling J, Isbister GK, Kirkpatrick CM, Naidoo D, Graudins A. Population pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Dowling J, Isbister GK, Kirkpatrick CM, Naidoo D, Graudins A. Population pharmac
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — naloxone: Frel 36 %, CL 91 L/hr, V1 2.87 L, V2 1.49 L, V3 33.6 L, Q 5.66 L/hr, kabs 0.65 1/hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of relative bioavailability of intramuscular and intranasal naloxone: this record has 36, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of relative bioavailability of intramuscular and intranasal naloxone: this record has 36, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -97,15 +97,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.786 (11/14 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.786 (11/14 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[relative bioavailability of intramuscular and intranasal naloxone]` | 36 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability of intramuscular naloxone]` |  | 36 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[second intercompartmental clearance]` |  | 29.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability of intramuscular and intranasal naloxone]` | 36 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability of intramuscular naloxone]` |  | 36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[second intercompartmental clearance]` |  | 29.8 | only_one_extracted |
 
 </details>
 

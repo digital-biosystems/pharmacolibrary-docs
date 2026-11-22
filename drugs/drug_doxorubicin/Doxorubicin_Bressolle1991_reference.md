@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Bressolle_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Frenay1989_reference&quot;,&quot;label&quot;:&quot;Frenay_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Joerger2007_reference&quot;,&quot;label&quot;:&quot;Joerger_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Joerger2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kontny2013_reference&quot;,&quot;label&quot;:&quot;Kontny_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kontny2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kunarajah2017_reference&quot;,&quot;label&quot;:&quot;Kunarajah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kunarajah2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Liang2016_reference&quot;,&quot;label&quot;:&quot;Liang_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Liang2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_w&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 w&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Choi_2021_w.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Andrean_2025_N_t&quot;,&quot;label&quot;:&quot;Andrean_2025 \u00b7 N(t)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Andrean_2025_N_t.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Luo2019_reference&quot;,&quot;label&quot;:&quot;Luo_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Luo2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Qiu2017_reference&quot;,&quot;label&quot;:&quot;Qiu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Qiu2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Yoshida1994_non_hd_group&quot;,&quot;label&quot;:&quot;Yoshida_1994_non_hd_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Yoshida1994_non_hd_group.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_Bressolle1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:26 UTC (Rejected), but the paper was screened again on 2026-11-03 15:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Doxorubicin clearance of 350.0 mL/day was rejected because the unit could not be converted to standard SI units.
+> The record was rejected because the extracted total clearance for doxorubicin is 0.148 cm3/day, a physiologically implausible value indicating a unit or scale error.
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bressolle1991_reference" status="rejected" stale="true" population="cancer patients" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bressolle1991_reference" status="rejected" stale="false" population="patients undergoing chemotherapy" measured-compound="doxorubicin" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Bressolle F, Ray P, Jacquet JM, Brès J, Galtier M, Donadio D et al. Bayesian estimation of doxorubicin pharmacokinetic parameters. Cancer chemotherapy and pharmacology 29(1):53–60 (1991).
@@ -17,15 +17,15 @@ Bressolle F, Ray P, Jacquet JM, Brès J, Galtier M, Donadio D et al. Bayesian es
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · age group adult · n = 28.
+**Population:** patients undergoing chemotherapy · condition cancer · age group adult · n = 28.
 
 **Dosing:** 25, 75 mg/m2, iv, multiple, every 288 h.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** retention function; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,14 +33,16 @@ Bressolle F, Ray P, Jacquet JM, Brès J, Galtier M, Donadio D et al. Bayesian es
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| A3/V1 4 points | V | 29 |  |
-| t1/2 elim. 3 points | t1/2z | 12 | h |
+| A3/V1 3 points | A3 | 9 |  |
+| t1/2 elim. 3 points | t1/2β | 12 | h |
+| t1/2 elim. 4 points | t1/2z | 29 | h |
 | λ₁ (h⁻¹) | λ1 | 7.604 | h⁻¹ |
-| CL (mL/day) | CL | 350.0 | mL/day |
+| L 1 [cm 3 /day] | CL | 0.148 | cm 3 /day |
+| V c [l] (%CV) | V | 0.0764 | l |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6), qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556), qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +52,11 @@ Bressolle F, Ray P, Jacquet JM, Brès J, Galtier M, Donadio D et al. Bayesian es
 
 ### Reviewer guidance
 
-**Doxorubicin clearance of 350.0 mL/day was rejected because the unit could not be converted to standard SI units.**
+**The record was rejected because the extracted total clearance for doxorubicin is 0.148 cm3/day, a physiologically implausible value indicating a unit or scale error.**
 
-The record reports total clearance as 350.0 mL/day, but the unit 'mL/day' is not recognizable for standardization, leaving the parameter without a valid dimension for analysis. This missing conversion triggered a dimension mismatch that prevented the model from proceeding. Second readers also disagreed on several extracted values, including concentration and elimination half-life, further complicating the record's validity. Extracted — doxorubicin: V 29, t1/2z 12 h, λ1 7.6 h⁻¹, CL 350 mL/day.
+The clearance is listed as 0.148 cm3/day, which is orders of magnitude lower than the typical total clearance for this drug. Second readers noted a significant discrepancy, with one identifying the clearance as 350.0, confirming the extraction error. Additionally, several other parameters, including the third phase coefficient and elimination half-lives, were flagged as null or inconsistent by the second readers. Extracted — doxorubicin: A3 9, t1/2β 12 h, t1/2z 29 h, λ1 7.6 h⁻¹, CL 0.148 cm 3 /day, V 0.0764 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a3/v1 4 points: this record has 29, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a3/v1 3 points: this record has 9, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -62,10 +64,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| A3/V1 4 points | `Q61` · V | 29 |  |  |  |  | llm (0.6) | Bressolle_1991_table_4:row0:col2, Bressolle_1991_table_4:row1:col2, Bressolle_1991_table_4:row2:col2, Bressolle_1991_table_4:row3:col2, Bressolle_1991_table_4:row4:col2 |
-| t1/2 elim. 3 points | `Q57` · t1/2z | 12 | h | 4.32e+04 | s | h | llm_confirmed (0.6) | Bressolle_1991_table_4:row0:col3, Bressolle_1991_table_4:row1:col3, Bressolle_1991_table_4:row2:col3, Bressolle_1991_table_4:row3:col3, Bressolle_1991_table_4:row4:col3 |
-| λ₁ (h⁻¹) | `Q67` · λ1 | 7.604 | h⁻¹ |  |  | 1/h | exact (1) | Bressolle_1991_table_2:row3:col1, Bressolle_1991_table_2:row3:col5 |
-| CL (mL/day) | `Q22` · CL | 350.0 | mL/day | 4.051e-09 | m3/s | L/h | review_gapfill (0.7) | Augustin_2026:review |
+| A3/V1 3 points | `Q417` · A3 | 9 |  | 9 |  |  | llm (0.6) | Bressolle_1991_table_4:row0:col1, Bressolle_1991_table_4:row1:col1, Bressolle_1991_table_4:row2:col1, Bressolle_1991_table_4:row3:col1, Bressolle_1991_table_4:row4:col1 |
+| t1/2 elim. 3 points | `Q60` · t1/2β | 12 | h | 4.32e+04 | s | h | llm_corrected (0.6) | Bressolle_1991_table_4:row0:col3, Bressolle_1991_table_4:row1:col3, Bressolle_1991_table_4:row2:col3, Bressolle_1991_table_4:row3:col3, Bressolle_1991_table_4:row4:col3 |
+| t1/2 elim. 4 points | `Q57` · t1/2z | 29 | h | 1.044e+05 | s | h | llm_confirmed (0.6) | Bressolle_1991_table_4:row0:col4, Bressolle_1991_table_4:row1:col4, Bressolle_1991_table_4:row2:col4, Bressolle_1991_table_4:row3:col4, Bressolle_1991_table_4:row4:col4 |
+| λ₁ (h⁻¹) | `Q67` · λ1 | 7.604 | h⁻¹ | 0.002112 | 1/s | 1/h | exact (1) | Bressolle_1991_table_2:row3:col1, Bressolle_1991_table_2:row3:col5 |
+| L 1 [cm 3 /day] | `Q22` · CL | 0.148 | cm 3 /day | 1.713e-12 | m3/s | L/h | review_gapfill (0.7) | Choi_2021:review |
+| V c [l] (%CV) | `Q61` · V | 0.0764 | l | 7.64e-05 | m3 | L | review_gapfill (0.7) | Choi_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,20 +81,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Interpretation flags:**
 - column 'column 2' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'column 6' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'A3/V1 3 points' — extend the ontology if this is a real PK parameter (source ['Bressolle_1991_table_4:row0:col1', 'Bressolle_1991_table_4:row1:col1', 'Bressolle_1991_table_4:row2:col1', 'Bressolle_1991_table_4:row3:col1', 'Bressolle_1991_table_4:row4:col1'])
-- dropped duplicate Q57 ('t1/2 elim. 4 points', value '29') — already have one for this compound
+- dropped duplicate Q417 ('A3/V1 4 points', value '29') — already have one for this compound
 - dropped unlinked row (NIL): 'c48 h 3 points' — extend the ontology if this is a real PK parameter (source ['Bressolle_1991_table_4:row0:col5', 'Bressolle_1991_table_4:row1:col5', 'Bressolle_1991_table_4:row2:col5', 'Bressolle_1991_table_4:row3:col5', 'Bressolle_1991_table_4:row4:col5'])
 - dropped unlinked row (NIL): 'c48 h 4 points' — extend the ontology if this is a real PK parameter (source ['Bressolle_1991_table_4:row0:col6', 'Bressolle_1991_table_4:row1:col6', 'Bressolle_1991_table_4:row2:col6', 'Bressolle_1991_table_4:row3:col6', 'Bressolle_1991_table_4:row4:col6'])
-- unit_dimension_mismatch: 'λ₁ (h⁻¹)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
-- implicit units: 'A3/V1 4 points' — the LLM proposed '1/h', whose dimension does not fit Q63; left unset
-- implicit units: 't1/2 elim. 3 points' → h (from the paper text: "The text explicitly states the unit for the elimination half-life in the section 'Population characteristics': 'tl/2 = 3")
+- implicit units: 't1/2 elim. 3 points' → h (from the paper text: "The paper explicitly states the unit for this parameter in the 'Evaluation of BE pharmacokinetic parameter prediction' s")
+- implicit units: 't1/2 elim. 4 points' → h (from the paper text: "The paper explicitly states the unit for this parameter in the 'Evaluation of BE pharmacokinetic parameter prediction' s")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'A3/V1 4 points' is the general volume)
-- status held at "Needs review" — not promoted
-- gap-filled Q22 (CL) from Augustin_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- topology: phase rates/half-lives with no volume or clearance — a retention function (TK_Retention)
+- gap-filled Q22 (CL) from Choi_2021's review values (primary lacked it)
+- gap-filled Q61 (V) from Choi_2021's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is RETENTION (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is RETENTION (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - table Bressolle_1991_table_4: units_need_context
@@ -107,17 +108,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 | `qwen3.8-27b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[a3/v1 4 points]` | 29 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c48 h 3 points]` |  | 15 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 elim. 4 points]` |  | 29 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total body clearance]` |  | 37.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a3/v1 3 points]` | 9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 elim. 3 points]` | 12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 elim. 4 points]` | 29 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[variation of total body clearance]` |  | 5.6 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[c]` | -0.22 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl]` | 350.0 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[v e]` | 100.0 |  | only_one_extracted |
@@ -134,16 +135,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Augustin_2026:review'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Bressolle_1991_table_4:row0:col3', 'Bressolle_1991_table_4:row1:col3', 'Bressolle_1991_table_4:row2:col3', 'Bressolle_1991_table_4:row3:col3', 'Bressolle_1991_table_4:row4:col3'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h⁻¹ (1 / [time]) | ['Bressolle_1991_table_2:row3:col1', 'Bressolle_1991_table_2:row3:col5'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['Bressolle_1991_table_4:row0:col2', 'Bressolle_1991_table_4:row1:col2', 'Bressolle_1991_table_4:row2:col2', 'Bressolle_1991_table_4:row3:col2', 'Bressolle_1991_table_4:row4:col2'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 350 | ['Augustin_2026:review'] |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass |  |  | ['Choi_2021:review'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Bressolle_1991_table_4:row0:col4', 'Bressolle_1991_table_4:row1:col4', 'Bressolle_1991_table_4:row2:col4', 'Bressolle_1991_table_4:row3:col4', 'Bressolle_1991_table_4:row4:col4'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Bressolle_1991_table_4:row0:col3', 'Bressolle_1991_table_4:row1:col3', 'Bressolle_1991_table_4:row2:col3', 'Bressolle_1991_table_4:row3:col3', 'Bressolle_1991_table_4:row4:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Choi_2021:review'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['Bressolle_1991_table_2:row3:col1', 'Bressolle_1991_table_2:row3:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.148 | ['Choi_2021:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0146 L/h | ['Augustin_2026:review'] |
+| C9_phys_window_Q22 | fail | clearance within physiological range | 6.17e-06 L/h | ['Choi_2021:review'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.0764 L | ['Choi_2021:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,4 +170,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Bressolle1991_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Bressolle1991_reference%0APaper%3A%20Bressolle_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Bressolle1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 15:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:00 UTC</sub>

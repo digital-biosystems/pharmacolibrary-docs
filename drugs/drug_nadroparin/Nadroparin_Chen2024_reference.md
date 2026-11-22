@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;nadroparin&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/&quot;},{&quot;label&quot;:&quot;Chen_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nadroparin clearance, volume, and absorption lag values were left as placeholders, refusing publication.
+> Nadroparin's clearance, volume of distribution, and absorption lag time lacked extracted values, causing the model to rely on library placeholders and be quarantined.
 
 <div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Chen2024_reference" status="model_quarantined" stale="false" population="neonates and infants less than 8 months" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Chen Y, Lan J, Zhu L, Dong M, Wang Y, Li Z. Is the current therapeutic dosage of
 
 ### Reviewer guidance
 
-**Nadroparin clearance, volume, and absorption lag values were left as placeholders, refusing publication.**
+**Nadroparin's clearance, volume of distribution, and absorption lag time lacked extracted values, causing the model to rely on library placeholders and be quarantined.**
 
-The record defines apparent parameters but lacks explicit values for clearance, volume, and lag time, forcing placeholder use. A second reader contested the extracted values, citing different magnitudes for clearance and absorption. Additionally, readers disagreed on the identity of the dose compound and the primary analyte measured. Extracted — nadroparin: CL/F 0.211 L/h, V/F 1.55 L, kabs 0.495 h-1.
+The record lists a clearance value of 0.211 L/h and a volume of distribution of 1.55 L, yet the review notes these specific parameters had no value. Consequently, a library placeholder stood in for the missing estimates, preventing the model from being published with explicit numbers. A second reader also disagreed on the primary analyte, labeling it nadroparin rather than the recorded anti-Xa measurement. Extracted — nadroparin: CL/F 0.211 L/h, V/F 1.55 L, kabs 0.495 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading nadroparin. That field shapes the model, so the record is marked disputed.
 
@@ -127,14 +127,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,30 +153,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nadroparin/Nadroparin_Chen2024_reference/Nadroparin_Chen2024_reference_matlab.zip" download>Nadroparin_Chen2024_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nadroparin/Nadroparin_Chen2024_reference/Nadroparin_Chen2024_reference_matlab_simbio.zip" download>Nadroparin_Chen2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_nadroparin/Nadroparin_Chen2024_reference/Nadroparin_Chen2024_reference_sbml.zip" download>Nadroparin_Chen2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_nadroparin/Nadroparin_Chen2024_reference/Nadroparin_Chen2024_reference_cellml.zip" download>Nadroparin_Chen2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Chen Y, Lan J, Zhu L, Dong M, Wang Y, Li Z. Is the current therapeutic dosage of nadroparin adequate for neonates and infants under 8 months with thromboembolic disease? a population pharmacokinetic study from a national children's medical center. Frontiers in pharmacology 15:1331673 (2024). [doi:10.3389/fphar.2024.1331673](https://doi.org/10.3389/fphar.2024.1331673)
-
-**This record:** Pharmacolibrary, model `Nadroparin_Chen2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_nadroparin/Nadroparin_Chen2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_NadroparinChen2024reference,
-  title  = {{Pharmacolibrary model Nadroparin_Chen2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_nadroparin/Nadroparin_Chen2024_reference},
-  note   = {Parameters from doi:10.3389/fphar.2024.1331673},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

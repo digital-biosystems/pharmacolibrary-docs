@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The cefaclor model failed to reproduce the paper's Cmax of 7.87 µg/mL and relied on unreported absorption defaults.
+> Cefaclor model held back due to missing absorption rate constant and simulated peak concentration failing the tolerance check.
 
 <div class="pk-model-meta" hidden drug="cefaclor" model-id="Cefaclor_Jeong2021_estimates" status="needs_review" stale="false" population="healthy adults" measured-compound="cefaclor" parameterization="apparent" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Jeong SH, Jang JH, Cho HY, Lee YB. Population Pharmacokinetic Analysis of Cefacl
 
 ### Reviewer guidance
 
-**The cefaclor model failed to reproduce the paper's Cmax of 7.87 µg/mL and relied on unreported absorption defaults.**
+**Cefaclor model held back due to missing absorption rate constant and simulated peak concentration failing the tolerance check.**
 
-Simulated peak concentrations differed from the reported Cmax of 7.87 µg/mL, indicating the model structure does not match the observed data. The absorption rate constant and lag time were not estimated from the source and instead used placeholder values. Additionally, a reported unit could not be converted to standard SI units, preventing proper value extraction. Extracted — cefaclor: AUCt 9.64 µg·h/mL, AUC∞ 9.83 µg·h/mL, CL/F 2.72e+04 mL/h, Cmax 7.87 µg/mL, t1/2z 0.68 h, tmax 0.8 h, V/F 2.61e+04 mL.
+The absorption rate constant was left at library defaults rather than extracted from the paper. The simulated peak concentration was 0.002333064600841984, differing from the expected 0.00787 with a ratio of 0.2965. A second reader disputed the identification of the dose compound and primary analyte. Extracted — cefaclor: AUCt 9.64 µg·h/mL, AUC∞ 9.83 µg·h/mL, CL/F 2.72e+04 mL/h, Cmax 7.87 µg/mL, t1/2z 0.68 h, tmax 0.8 h, V/F 2.61e+04 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefaclor, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -160,7 +160,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=cefaclor) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped |  | 0.002333 |  | non-numeric value |
 | T1_cmax | reference | fail | 0.00787 | 0.002333 | 0.2965 | µg/mL→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | skipped |  | 1.398 |  | non-numeric value |

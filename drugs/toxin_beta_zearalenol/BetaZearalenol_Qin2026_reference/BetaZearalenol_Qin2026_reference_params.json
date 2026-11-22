@@ -12,6 +12,46 @@
  "paper_doses_mg": [
   140.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 0.5
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 154.75
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 83.56
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 42.3
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 21.71
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 4.16
+   },
+   {
+    "source": "Qin_2026:discussion_prose",
+    "value_si": 20.25
+   },
+   {
+    "source": "Qin_2026:discussion_prose",
+    "value_si": 2.15
+   },
+   {
+    "source": "Qin_2026:discussion_prose",
+    "value_si": 3.01
+   }
+  ]
+ },
  "parameters": {
   "Cl": 0.008013444444444445,
   "F": 1.0,

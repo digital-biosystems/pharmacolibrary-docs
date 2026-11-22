@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;arginine hydrochloride&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/&quot;},{&quot;label&quot;:&quot;Awan_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance of 1.0 mL/day for arginine hydrochloride is rejected because the value falls outside the physiological window.
+> Arginine clearance of 1.0 mL/day and volume of 0.0117 L are physiologically implausible for a standard amino acid infusion.
 
 <div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Awan2024_reference" status="rejected" stale="false" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></div>
 
@@ -36,7 +36,7 @@ Awan SF, Pegu A, Strom L, Carter CA, Hendel CS, Holman LA et al. Phase 1 trial e
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Awan SF, Pegu A, Strom L, Carter CA, Hendel CS, Holman LA et al. Phase 1 trial e
 
 ### Reviewer guidance
 
-**Clearance of 1.0 mL/day for arginine hydrochloride is rejected because the value falls outside the physiological window.**
+**Arginine clearance of 1.0 mL/day and volume of 0.0117 L are physiologically implausible for a standard amino acid infusion.**
 
-The record lists total clearance as 1.0 mL/day for arginine hydrochloride. This magnitude is physiologically implausible, suggesting a unit or scale extraction error. The associated volume of distribution is 0.0117 L, further indicating the parameters were not correctly derived. Extracted — arginine hydrochloride: CL 1 mL/day, V 0.0117 L.
+The extracted clearance of 1.0 mL/day is orders of magnitude too low for an eliminated solute. The corresponding volume of distribution of 0.0117 L is equally unrealistic. A second reader proposed substantially different values for the parameters, indicating significant uncertainty in the extraction. Extracted — arginine hydrochloride: CL 1 mL/day, V 0.0117 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 1, the second reading 1309; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 1, the second reading 1309; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -79,15 +79,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 1 | 1309 | mismatch |
-| `gpt-oss:120b` | `values[Q364]` |  | 5 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q75]` |  | 50 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 1 | 1309 | mismatch |
+| `gpt-oss-120b` | `values[Q364]` |  | 5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` |  | 50 | only_one_extracted |
 
 </details>
 

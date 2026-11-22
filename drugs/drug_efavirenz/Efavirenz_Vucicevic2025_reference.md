@@ -16,7 +16,7 @@ Vucicevic K, Michalickova D, Obradovic B, Ranin J, Jevtovic D, Lukic R et al. Po
 
 ## Population and dosing
 
-**Population:** HIV-1-infected adults · condition HIV-1 infection · age group adult · n = &gt;=18 years.
+**Population:** HIV-1-infected adults · condition HIV-1 infection · age group adult.
 
 ## Model
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that no pharmacodynamic model was identified, with the drug listed as zinc telluride and no response or driver information available. No paper excerpts are provided to describe the mechanism, potency, or rate parameters.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Giammarile_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

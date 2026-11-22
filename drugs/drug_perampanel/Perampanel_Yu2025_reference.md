@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Perampanel clearance of 0.177 L/h and volume of 227 L deviate from second reader values of 0.234 L/h and 362 L.
+> The record for pediatric perampanel was held back because the second reader disagreed on the clearance and volume of distribution values.
 
 <div class="pk-model-meta" hidden drug="perampanel" model-id="Perampanel_Yu2025_reference" status="needs_review" stale="false" population="pediatric patients with epilepsy" measured-compound="perampanel" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Yu L, Mao F, Chen S, Liu J, Xiao J, Chen M et al. Development and Validation of 
 
 ## Population and dosing
 
-**Population:** pediatric patients with epilepsy · condition epilepsy · age group child · n = &gt;&gt; 151.
+**Population:** pediatric patients with epilepsy · condition epilepsy · age group child.
 
 ## Model
 
@@ -49,9 +49,9 @@ Yu L, Mao F, Chen S, Liu J, Xiao J, Chen M et al. Development and Validation of 
 
 ### Reviewer guidance
 
-**Perampanel clearance of 0.177 L/h and volume of 227 L deviate from second reader values of 0.234 L/h and 362 L.**
+**The record for pediatric perampanel was held back because the second reader disagreed on the clearance and volume of distribution values.**
 
-The record lists total clearance following oral administration as 0.177 L/h and volume of distribution as 227 L. A second reader disagreed with these figures, reporting 0.234 L/h and 362 L instead. Additionally, the absorption lag time was not extracted and defaulted to a placeholder rather than an explicit estimate. Extracted — perampanel: CL/F 0.177 L/h, V 227 L, kabs 3.37 1/h.
+The initial record listed an apparent oral clearance (CL/F) of 0.177 L/h and a volume of distribution (V) of 227 L. A second reader identified these values as incorrect, citing 0.234 L/h for CL/F and 362 L for V. Consequently, the agreement for the cross-check was calculated as 0.714, with zero out of one readers agreeing on the record's validity. Extracted — perampanel: CL/F 0.177 L/h, V 227 L, kabs 3.37 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 0.177, the second reading 0.234; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -131,15 +131,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=perampanel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=perampanel) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

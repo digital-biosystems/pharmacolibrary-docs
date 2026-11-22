@@ -16,7 +16,7 @@ Hopkins AM, Wiese MD, Proudman SM, O'Doherty CE, Foster D, Upton RN. Semiphysiol
 
 ## Population and dosing
 
-**Population:** rheumatoid arthritis patients · condition rheumatoid arthritis · age group adult · n = &gt;= 18 years, 69 RA patients.
+**Population:** rheumatoid arthritis patients · condition rheumatoid arthritis · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed leflunomide, measured teriflunomide.
 

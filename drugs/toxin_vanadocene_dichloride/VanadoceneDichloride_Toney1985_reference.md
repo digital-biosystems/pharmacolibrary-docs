@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Partition coefficient Kp and unbound fraction fu_tissue were assigned mM units for liver and kidney vanadium, conflicting with their required dimensionless definitions.
 
 <div class="pk-model-meta" hidden drug="Vanadocene dichloride" model-id="VanadoceneDichloride_Toney1985_reference" status="rejected" stale="false" population="Strain A mice" measured-compound="Vanadium" parameterization="mechanistic" topology="retention"></div>
 
@@ -50,7 +50,13 @@ Toney JH, Murthy MS, Marks TJ. Biodistribution and pharmacokinetics of vanadium 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Partition coefficient Kp and unbound fraction fu_tissue were assigned mM units for liver and kidney vanadium, conflicting with their required dimensionless definitions.**
+
+The liver partition coefficient Kp and kidney unbound fraction fu_tissue were extracted with the unit mM, derived from maximal concentration labels. Both parameters require dimensionless values to function as scaling factors in the model structure. This dimensional mismatch renders the record unusable for simulation. The abstract-only source further limits the reliability of these summary statistics as fitted parameters. Extracted — Vanadium: t1/2z 118 min, t1/2α 18.1 min, t1/2β 341 min, fu_tissue 1.12 mM, Kp 0.56 mM.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

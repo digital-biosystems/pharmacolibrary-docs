@@ -5,11 +5,11 @@
 
 # propylthiouracil — `Propylthiouracil_Okuno1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:31 UTC (Rejected), but the paper was screened again on 2026-10-07 09:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="propylthiouracil" model-id="Propylthiouracil_Okuno1983_reference" status="needs_review" stale="true" population="children and adolescents with Graves disease" measured-compound="propylthiouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="propylthiouracil" model-id="Propylthiouracil_Okuno1983_reference" status="needs_review" stale="false" population="children and adolescents with Graves disease" measured-compound="propylthiouracil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Okuno A, Taguchi T, Inyaku F, Yano K, Suzuki Y. Pharmacokinetics of propylthiouracil in children and adolescents with Graves disease after a single oral dose. Pediatric pharmacology (New York, N.Y.) 3(1):43–47 (1983).
@@ -34,7 +34,7 @@ Okuno A, Taguchi T, Inyaku F, Yano K, Suzuki Y. Pharmacokinetics of propylthiour
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Okuno A, Taguchi T, Inyaku F, Yano K, Suzuki Y. Pharmacokinetics of propylthiour
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — propylthiouracil: t1/2z 1.3 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propylthiouracil, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

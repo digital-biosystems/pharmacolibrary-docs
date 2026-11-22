@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The ivacaftor record was held back because the absorption lag time was defaulted rather than explicitly estimated.
+> Review was held back because a second reader disagreed on the dose compound and model links.
 
 <div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Truong2025_reference" status="needs_review" stale="false" population="children with cystic fibrosis" measured-compound="ivacaftor" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Truong NH, Benaboud S, Bouazza N, Barboura M, Bardin E, Miralles M et al. Elexac
 
 ### Reviewer guidance
 
-**The ivacaftor record was held back because the absorption lag time was defaulted rather than explicitly estimated.**
+**Review was held back because a second reader disagreed on the dose compound and model links.**
 
-The model assumes bioavailability F and Fm equal to 1, treating apparent clearance and volume parameters as direct estimates. The review flagged deviations because the lag time was assigned a library placeholder instead of an extracted value. Additionally, the second reader disputed whether the primary analyte was ivacaftor or the combination elexacaftor/tezacaftor/ivacaftor. Extracted — ivacaftor: tlag 0.7 h, kabs 0.42 h−1, CL/F 13.4 L/h/70 kg, V/F 183 L/70 kg.
+The record specifies ivacaftor as the analyte, but the second reader marked the dose compound and primary analyte as unknown, noting a discrepancy with the three-drug combination. Additionally, the reader disagreed on the model links, identifying a missing connection despite the single-compartment structure. Extracted — ivacaftor: tlag 0.7 h, kabs 0.42 h−1, CL/F 13.4 L/h/70 kg, V/F 183 L/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor/tezacaftor/ivacaftor, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -154,15 +154,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ivacaftor) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_2: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=ivacaftor) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

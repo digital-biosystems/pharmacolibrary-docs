@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;4-aminosalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/&quot;},{&quot;label&quot;:&quot;de_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4AminosalicylicAcid_Sy2015_reference&quot;,&quot;label&quot;:&quot;Sy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4AminosalicylicAcid_de2014_reference&quot;,&quot;label&quot;:&quot;de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4AminosalicylicAcid_de2014_reference&quot;,&quot;label&quot;:&quot;de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;D_4AminosalicylicAcid_Sy2015_reference&quot;,&quot;label&quot;:&quot;Sy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 4-aminosalicylic acid — `D_4AminosalicylicAcid_de2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The transit-chain absorption model was approximated as first-order, causing Cmax and tmax to differ from the original structure.
-
-<div class="pk-model-meta" hidden drug="4-aminosalicylic acid" model-id="D_4AminosalicylicAcid_de2014_reference" status="needs_review" stale="false" population="tuberculosis patients with and without HIV coinfection receiving antiretroviral therapy" measured-compound="para-aminosalicylic acid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="4-aminosalicylic acid" model-id="D_4AminosalicylicAcid_de2014_reference" status="simulated" stale="false" population="tuberculosis patients with and without HIV coinfection receiving antiretroviral therapy" measured-compound="para-aminosalicylic acid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa, SherwinK BSy Department of Pharmaceutics College of Pharmacy University of Florida Gainesville Florida USA, BerndRosenkranz rosenkranz@sun.ac.za. Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa, AndreasHDiacon Department of Biomedical Science Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa, KimPrescott Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa, KennethRHernandez Department of Pharmaceutics College of Pharmacy University of Florida Gainesville Florida USA et al. Pharmacokinetics of para-Aminosalicylic Acid in HIV-Uninfected and HIV-Coinfected Tuberculosis Patients Receiving Antiretroviral Therapy, Managed for Multidrug-Resistant and Extensively Drug-Resistant Tuberculosis (2014).
@@ -31,8 +29,6 @@ LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health 
 <figure class="pk-models-diagram"><img src="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference/D_4AminosalicylicAcid_de2014_reference.svg" alt="D_4AminosalicylicAcid_de2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | Apparent oral clearance (CL/F, liters/h) | CL/F | 9.42 | liters/h | 6.6 |
@@ -42,7 +38,7 @@ LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +48,13 @@ LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health 
 
 ### Reviewer guidance
 
-**The transit-chain absorption model was approximated as first-order, causing Cmax and tmax to differ from the original structure.**
+**Every check that could be run on this record passed.**
 
-The model builder folded the three transit compartments into a single first-order rate constant, removing the absorption delay phase. This approximation was flagged as not acceptable during the structural review. The review also noted inconsistent parameterization of clearance effects, with disagreements on whether the EFV effect coefficient or the absolute clearance increase was recorded. Extracted — para-aminosalicylic acid: CL/F 9.42 liters/h, V/F 51.8 liters, ktr 0.65 h Ϫ1, n_transit 3.
+None of the extracted parameters is 4 aminosalicylic acid's own; they describe para-aminosalicylic acid.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -127,15 +123,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=para-aminosalicylic acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | absorption_approximation: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=para-aminosalicylic acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

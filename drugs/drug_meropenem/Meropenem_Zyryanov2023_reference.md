@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 2.33, model 103).
+> Meropenem simulated terminal half-life was 103.08699359847492 h, deviating significantly from the expected 2.33 h.
 
 <div class="pk-model-meta" hidden drug="meropenem" model-id="Meropenem_Zyryanov2023_reference" status="needs_review" stale="false" population="preterm newborns" measured-compound="meropenem" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Zyryanov S, Bondareva I, Butranova O, Kazanova A. Population PK/PD modelling of 
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 2.33, model 103).**
+**Meropenem simulated terminal half-life was 103.08699359847492 h, deviating significantly from the expected 2.33 h.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — meropenem: t1/2z 2.49 h, V 0.75 L/kg, CL 0.353 L/h.
+The extracted terminal half-life parameter was 2.49 h, yet simulation produced a value of 103.08699359847492 h. This simulated value differed from the expected 2.33 h by a ratio of 44.2433. A second reader also disputed the record by marking the dose compound and primary analyte as unknown. Extracted — meropenem: t1/2z 2.49 h, V 0.75 L/kg, CL 0.353 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has meropenem, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -132,6 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 2.33 | 103.1 | 44.24 | h→SI vs simulated h |
 
 <details class="legend">

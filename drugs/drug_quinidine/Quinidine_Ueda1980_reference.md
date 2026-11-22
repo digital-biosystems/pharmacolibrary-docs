@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;quinidine&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/&quot;},{&quot;label&quot;:&quot;Ueda_1980 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quinidine — `Quinidine_Ueda1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:20 UTC (Rejected), but the paper was screened again on 2026-10-08 21:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Quinidine record rejected because the intercompartmental rate constant value of 0.226 min⁻¹ has a unit that cannot be converted to standard SI units.
+> Quinidine clearance is dimensionally inconsistent as an elimination parameter, and its value is 16.80 ml/min/kg.
 
-<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Ueda1980_reference" status="rejected" stale="true" population="rabbits" measured-compound="quinidine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Ueda1980_reference" status="rejected" stale="false" population="rabbits" measured-compound="quinidine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ueda CT, Nickols JG. Comparative pharmacokinetics of quinidine and its O-desmethyl metabolite in rabbits. Journal of pharmaceutical sciences 69(12):1400–1403 (1980).
@@ -46,7 +46,7 @@ Ueda CT, Nickols JG. Comparative pharmacokinetics of quinidine and its O-desmeth
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,11 @@ Ueda CT, Nickols JG. Comparative pharmacokinetics of quinidine and its O-desmeth
 
 ### Reviewer guidance
 
-**Quinidine record rejected because the intercompartmental rate constant value of 0.226 min⁻¹ has a unit that cannot be converted to standard SI units.**
+**Quinidine clearance is dimensionally inconsistent as an elimination parameter, and its value is 16.80 ml/min/kg.**
 
-The parameter representing apparent intercompartmental clearance between central and peripheral compartments is given in min⁻¹, a unit not convertible to the required SI standard for volume per time. This dimensional mismatch on the structural parameter forced the rejection. While a second reader disputed the identity of the dose compound and all extracted parameter values, the primary cause remains the incompatible unit for the intercompartmental rate constant. Extracted — 6'-hydroxycinchonine: λ1 0.445 min⁻¹, t1/2α 1.72 min, kel 0.006 min⁻¹, t1/2β 132 min, Q 0.226 min⁻¹, V1 0.2 liters/kg, CL 16.8 ml/min/kg, V2 3.26 liters/kg.
+The record lists the total clearance (CL) as 16.80 ml/min/kg but labels it with the dimension of an elimination rate constant. The second reader could not identify the primary analyte or several parameter values, indicating ambiguity in the source data. These discrepancies led to the rejection of the pharmacokinetic model for the metabolite 6'-hydroxycinchonine. Extracted — 6'-hydroxycinchonine: λ1 0.445 min⁻¹, t1/2α 1.72 min, kel 0.006 min⁻¹, t1/2β 132 min, Q 0.226 min⁻¹, V1 0.2 liters/kg, CL 16.8 ml/min/kg, V2 3.26 liters/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has quinidine, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quinidine, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -118,31 +118,31 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.095 (2/21 fields) | 19 |
+| `gpt-oss-120b` | not confirmed | 0.095 (2/21 fields) | 19 |
 
 <details><summary>19 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl]` | 16.80 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` |  | 0.02 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k12]` | 0.226 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k12]` |  | 2.28 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k21]` |  | 1.73 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2/α]` | 1.72 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2/α]` |  | 2.21 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2/β]` | 132.44 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2/β]` |  | 4.09 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` | 0.20 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` |  | 0.14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdβ]` | 3.26 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdβ]` |  | 3.04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[α]` | 0.445 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[α]` |  | 2.02 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[β]` | 0.006 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[β]` |  | 3.17 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | quinidine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | quinidine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | 16.80 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 0.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 0.226 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` |  | 2.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` |  | 1.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2/α]` | 1.72 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2/α]` |  | 2.21 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2/β]` | 132.44 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2/β]` |  | 4.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 0.20 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` |  | 0.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdβ]` | 3.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdβ]` |  | 3.04 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 0.445 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` |  | 2.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.006 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` |  | 3.17 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | quinidine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | quinidine | unknown | mismatch |
 
 </details>
 

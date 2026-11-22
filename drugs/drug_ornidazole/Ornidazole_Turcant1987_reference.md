@@ -4,11 +4,11 @@
 
 # ornidazole — `Ornidazole_Turcant1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:57 UTC (Rejected), but the paper was screened again on 2026-10-07 08:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ornidazole clearance was recorded without a value in the neonate model, while apparent volume of distribution was 0.961 L/kg.
+> The apparent volume of distribution for ornidazole is 0.961 /kg-1, which is dimensionless and incompatible with a volume parameter.
 
-<div class="pk-model-meta" hidden drug="ornidazole" model-id="Ornidazole_Turcant1987_reference" status="rejected" stale="true" population="neonates and infants" measured-compound="ornidazole" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ornidazole" model-id="Ornidazole_Turcant1987_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="ornidazole" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Turcant A, Granry JC, Allain P, Cavellat M. Pharmacokinetics of ornidazole in neonates and infants after a single intravenous infusion. European journal of clinical pharmacology 32(1):111–113 (1987).
@@ -35,7 +35,7 @@ Turcant A, Granry JC, Allain P, Cavellat M. Pharmacokinetics of ornidazole in ne
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Turcant A, Granry JC, Allain P, Cavellat M. Pharmacokinetics of ornidazole in ne
 
 ### Reviewer guidance
 
-**Ornidazole clearance was recorded without a value in the neonate model, while apparent volume of distribution was 0.961 L/kg.**
+**The apparent volume of distribution for ornidazole is 0.961 /kg-1, which is dimensionless and incompatible with a volume parameter.**
 
-The record lists total plasma clearance with units of ml/min/kg but omits the numerical value. A second reader found no value for the apparent volume of distribution, conflicting with the recorded 0.961 L/kg. The review rejected the record due to a dimensional mismatch on a structural parameter. Extracted — ornidazole: t1/2z 0.31 h, V/F 0.961 /kg-1.
+The record lists the apparent volume of distribution as 0.961 /kg-1, a unit that denotes a ratio rather than a volume. Because the paper provided only summary statistics without a fitted model, this structural inconsistency could not be resolved from the source. A second reader did not accept the 0.961 value, indicating it was not reliably extracted from the abstract. Extracted — ornidazole: t1/2z 0.31 h, V/F 0.961 /kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[mean apparent volume of distribution].value`: this record has 0.961, the second reading none. That field shapes the model, so the record is marked disputed.
 

@@ -171,30 +171,13 @@ No estimates were extracted for duloxetine's clearance or absorption lag time, s
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_duloxetine/Duloxetine_Ngo2020_predicted_value/Duloxetine_Ngo2020_predicted_value_matlab.zip" download>Duloxetine_Ngo2020_predicted_value_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_duloxetine/Duloxetine_Ngo2020_predicted_value/Duloxetine_Ngo2020_predicted_value_matlab_simbio.zip" download>Duloxetine_Ngo2020_predicted_value_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_duloxetine/Duloxetine_Ngo2020_predicted_value/Duloxetine_Ngo2020_predicted_value_sbml.zip" download>Duloxetine_Ngo2020_predicted_value_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_duloxetine/Duloxetine_Ngo2020_predicted_value/Duloxetine_Ngo2020_predicted_value_cellml.zip" download>Duloxetine_Ngo2020_predicted_value_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Ngo TL, Lee CH, Han N, Back HM, Rhee SJ, Noh K et al. Application of an Inter-Species Extrapolation Method for the Prediction of Drug Interactions between Propolis and Duloxetine in Humans. International journal of molecular sciences 21(5):E1862 (2020). [doi:10.3390/ijms21051862](https://doi.org/10.3390/ijms21051862)
-
-**This record:** Pharmacolibrary, model `Duloxetine_Ngo2020_predicted_value`. <https://pharmacolibrary.github.io/#/drugs/toxin_duloxetine/Duloxetine_Ngo2020_predicted_value>
-
-```bibtex
-@misc{pharmacolibrary_DuloxetineNgo2020predictedvalue,
-  title  = {{Pharmacolibrary model Duloxetine_Ngo2020_predicted_value}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_duloxetine/Duloxetine_Ngo2020_predicted_value},
-  note   = {Parameters from doi:10.3390/ijms21051862},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

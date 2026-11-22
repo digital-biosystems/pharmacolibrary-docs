@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;propranolol&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/&quot;},{&quot;label&quot;:&quot;Takechi_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propranolol — `Propranolol_Takechi2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> Propranolol model failed review due to missing lag time default and untested covariate effects.
-
-<div class="pk-model-meta" hidden drug="propranolol" model-id="Propranolol_Takechi2018_reference" status="needs_review" stale="false" population="pediatric patients with infantile hemangioma" measured-compound="propranolol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="propranolol" model-id="Propranolol_Takechi2018_reference" status="simulated" stale="false" population="pediatric patients with infantile hemangioma" measured-compound="propranolol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Takechi T, Kumokawa T, Kato R, Higuchi T, Kaneko T, Ieiri I. Population Pharmacokinetics and Pharmacodynamics of Oral Propranolol in Pediatric Patients With Infantile Hemangioma. Journal of clinical pharmacology 58(10):1361–1370 (2018).
@@ -17,7 +15,7 @@ Takechi T, Kumokawa T, Kato R, Higuchi T, Kaneko T, Ieiri I. Population Pharmaco
 
 ## Population and dosing
 
-**Population:** pediatric patients with infantile hemangioma · condition infantile hemangioma · age group infant · n = &gt;= 32.
+**Population:** pediatric patients with infantile hemangioma · condition infantile hemangioma · age group infant.
 
 **Dosing:** 70, 210 mg, oral, multiple, every 12 h.
 
@@ -31,8 +29,6 @@ Takechi T, Kumokawa T, Kato R, Higuchi T, Kaneko T, Ieiri I. Population Pharmaco
 <figure class="pk-models-diagram"><img src="drugs/drug_propranolol/Propranolol_Takechi2018_reference/Propranolol_Takechi2018_reference.svg" alt="Propranolol_Takechi2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | CL/F (L/h) | CL/F | 9.17 | L/h | 14.5 | 76.7 (29.6% RSE) |
@@ -47,7 +43,7 @@ Takechi T, Kumokawa T, Kato R, Higuchi T, Kaneko T, Ieiri I. Population Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +53,13 @@ Takechi T, Kumokawa T, Kato R, Higuchi T, Kaneko T, Ieiri I. Population Pharmaco
 
 ### Reviewer guidance
 
-**Propranolol model failed review due to missing lag time default and untested covariate effects.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The model builder defaulted the absorption lag time (Tlag) because no explicit estimate was provided. Additionally, the record defines covariate effects for clearance but these were not exercised during simulation. Consequently, the covariate parameterization could not be validated against the reference individual only. Extracted — propranolol: CL/F 9.17 L/h, V/F 134 L, kabs 1.03 h -1.
+The base model was simulated, not the covariate effects the record defines.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -148,7 +144,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=propranolol) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=apparent_assumption: not acceptable; deviation_id=defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

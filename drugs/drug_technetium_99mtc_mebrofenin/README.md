@@ -25,19 +25,7 @@ Technetium (99mTc) mebrofenin is a diagnostic radiopharmaceutical employed for i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ali_2017_reference](drugs/drug_technetium_99mtc_mebrofenin/Technetium99mtcMebrofenin_Ali2017_reference.md) | — | 1-compartment (no model) | 2 | Ali I et al., Transporter-Mediated Alterations in Pat…, Clinical pharmacology and t… (2017) | [10.1002/cpt.997](https://doi.org/10.1002/cpt.997) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=technetium_99mtc_mebrofenin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `SLCO1B1` substrate, `SLCO1B3` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ali_2017_reference](drugs/drug_technetium_99mtc_mebrofenin/Technetium99mtcMebrofenin_Ali2017_reference.md) | — | 1-compartment (no model) | 2 | Ali I et al., Transporter-Mediated Alterations in Pat…, Clinical pharmacology and t… (2017) | [10.1002/cpt.997](https://doi.org/10.1002/cpt.997) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +45,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 64 matched, 14 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

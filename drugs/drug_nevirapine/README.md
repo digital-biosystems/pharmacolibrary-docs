@@ -42,7 +42,7 @@ This antiviral agent belongs to the non-nucleoside reverse transcriptase inhibit
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Mustafa_2016_reference](drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Mustafa S et al., Population pharmacokinetics of nevirapi…, European journal of clinica… (2016) | [10.1007/s00228-016-2049-6](https://doi.org/10.1007/s00228-016-2049-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Sabo_2000_reference](drugs/drug_nevirapine/Nevirapine_Sabo2000_reference.md) | — | 1-compartment (no model) | 1 | Sabo JP et al., Pharmacokinetics of nevirapine and lami…, AAPS pharmSci (2000) | [10.1208/ps020101](https://doi.org/10.1208/ps020101) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Wattanakul_2014_reference](drugs/drug_nevirapine/Nevirapine_Wattanakul2014_reference.md) | — | 1-compartment (no model) | 1 | Wattanakul T et al., Population pharmacokinetics of nevirapi…, Antiviral therapy (2014) | [10.3851/IMP2741](https://doi.org/10.3851/IMP2741) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chou_2010_reference](drugs/drug_nevirapine/Nevirapine_Chou2010_reference.md) | — | 1-compartment (no model) | 1 | Chou M et al., Population pharmacokinetic-pharmacogene…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.00512-10](https://doi.org/10.1128/AAC.00512-10) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chou_2010_reference](drugs/drug_nevirapine/Nevirapine_Chou2010_reference.md) | — | 1-compartment (no model) | 1 | Chou M et al., Population pharmacokinetic-pharmacogene…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.00512-10](https://doi.org/10.1128/AAC.00512-10) |
 
 ## Pharmacodynamics (PD)
 
@@ -52,21 +52,6 @@ This antiviral agent belongs to the non-nucleoside reverse transcriptase inhibit
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hecht_2015_fraction_of_dead_cells_apoptosis_necrosis_Annexin_V_APC_7AAD_in_BxPC_3_pancreatic_cancer_cells](drugs/drug_nevirapine/pd_Hecht_2015_fraction_of_dead_cells_apoptosis_necrosis_Annexin.md) | fraction of dead cells (apoptosis/necrosis, Annexin-V-APC/7AAD) in BxPC-3 pancreatic cancer cells ← nevirapine · direct sigmoid Emax (Hill) effect | — | Hecht M et al., Efavirenz Has the Highest Anti-Prolifer…, PloS one (2015) | [10.1371/journal.pone.0130277](https://doi.org/10.1371/journal.pone.0130277) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hecht_2015_fraction_of_dead_cells_apoptosis_necrosis_Annexin_V_APC_7AAD_in_Panc_1_pancreatic_cancer_cells](drugs/drug_nevirapine/pd_Hecht_2015_fraction_of_dead_cells_apoptosis_necrosis_Annexin.md) | fraction of dead cells (apoptosis/necrosis, Annexin-V-APC/7AAD) in Panc-1 pancreatic cancer cells ← nevirapine · direct sigmoid Emax (Hill) effect | — | Hecht M et al., Efavirenz Has the Highest Anti-Prolifer…, PloS one (2015) | [10.1371/journal.pone.0130277](https://doi.org/10.1371/journal.pone.0130277) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sripan_2015_MTCT](drugs/drug_nevirapine/pd_Sripan_2015_MTCT.md) | intra-partum HIV mother-to-child transmission ← nevirapine (perinatal single-dose NVP, binary covariate) · categorical (graded) response model | — | Sripan P et al., Modeling of In-Utero and Intra-Partum T…, PloS one (2015) | [10.1371/journal.pone.0126647](https://doi.org/10.1371/journal.pone.0126647) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nevirapine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2A6` substrate, `CYP2B6` inducer/substrate, `CYP2C9` inducer, `CYP2D6` inhibitor/substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLC22A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,13 +65,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:37 | 9:24 | 3/1/0 | 2/0/0 | 0/0/0 | 419,311/36,008 | ollama / glm-5.3-flash | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-07 17:37 | 9:24 | 3/1/0 | 4/0/0 | 0/0/0 | 419,311/36,008 | ollama / glm-5.3-flash | 6 | 0/6 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 153 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

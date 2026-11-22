@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Overgaard_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Liraglutide_Woodward2014_reference&quot;,&quot;label&quot;:&quot;Woodward_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_reference&quot;,&quot;label&quot;:&quot;Carlsson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_reference&quot;,&quot;label&quot;:&quot;Overgaard_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Guo_2025_Weight&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 \u0394\u0394Weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/pd_Guo_2025_Weight.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_reference&quot;,&quot;label&quot;:&quot;Carlsson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_reference&quot;,&quot;label&quot;:&quot;Overgaard_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Liraglutide_Woodward2014_reference&quot;,&quot;label&quot;:&quot;Woodward_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Guo_2025_Weight&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 \u0394\u0394Weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/pd_Guo_2025_Weight.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # liraglutide — `Liraglutide_Overgaard2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> The apparent clearance of 0.86 L/h for liraglutide relies on an unjustified assumption of unit bioavailability rather than an estimated value.
-
-<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Overgaard2016_reference" status="needs_review" stale="false" population="overweight and obese adults" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Overgaard2016_reference" status="simulated" stale="false" population="overweight and obese adults" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Overgaard RV, Petri KC, Jacobsen LV, Jensen CB. Liraglutide 3.0 mg for Weight Management: A Population Pharmacokinetic Analysis. Clinical pharmacokinetics 55(11):1413–1422 (2016).
@@ -17,7 +15,7 @@ Overgaard RV, Petri KC, Jacobsen LV, Jensen CB. Liraglutide 3.0 mg for Weight M
 
 ## Population and dosing
 
-**Population:** overweight and obese adults · condition obesity · age group adult · n = &gt;3200.
+**Population:** overweight and obese adults · condition obesity · age group adult.
 
 **Dosing:** 3 mg, sc, multiple, every 24 h.
 
@@ -31,8 +29,6 @@ Overgaard RV, Petri KC, Jacobsen LV, Jensen CB. Liraglutide 3.0 mg for Weight M
 <figure class="pk-models-diagram"><img src="drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference/Liraglutide_Overgaard2016_reference.svg" alt="Liraglutide_Overgaard2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | K A, Lira | kabs | 0.09 | 1/h |  |  |
@@ -46,7 +42,7 @@ Overgaard RV, Petri KC, Jacobsen LV, Jensen CB. Liraglutide 3.0 mg for Weight M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +52,11 @@ Overgaard RV, Petri KC, Jacobsen LV, Jensen CB. Liraglutide 3.0 mg for Weight M
 
 ### Reviewer guidance
 
-**The apparent clearance of 0.86 L/h for liraglutide relies on an unjustified assumption of unit bioavailability rather than an estimated value.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The model builder assumed bioavailability and molar fraction were both one, treating the apparent clearance as absolute without a molar correction. This parameterization was flagged as an unacceptable apparent assumption rather than an explicit estimate. Additionally, the covariate effect of weight on absorption was not exercised in the simulation, leaving the impact of the 0.68 power exponent unverified. Extracted — liraglutide: kabs 0.09 1/h, CL/F 0.86 L/h, V/F 24.6 L.
+The base model was simulated, not the covariate effects the record defines.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -129,7 +125,8 @@ The model builder assumed bioavailability and molar fraction were both one, trea
 | T3_output_variable |  | pass | C_central (measured=liraglutide) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

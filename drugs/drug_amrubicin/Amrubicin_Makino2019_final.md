@@ -4,11 +4,11 @@
 
 # amrubicin — `Amrubicin_Makino2019_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-06 16:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The amrubicinol parameter for the maximum rate of metabolism was rejected because its value 1.5 was reported in an unrecognized unit, preventing conversion to standard PK units.
+> The amrubicin record was rejected due to a dimension mismatch for the intercompartmental clearance and total clearance parameters.
 
-<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_final" status="rejected" stale="true" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_final" status="rejected" stale="false" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual optimal dose of amrubicin to prevent severe neutropenia in Japanese patients with lung cancer. Cancer science 110(11):3573–3583 (2019).
@@ -50,7 +50,7 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,9 +60,9 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 
 ### Reviewer guidance
 
-**The amrubicinol parameter for the maximum rate of metabolism was rejected because its value 1.5 was reported in an unrecognized unit, preventing conversion to standard PK units.**
+**The amrubicin record was rejected due to a dimension mismatch for the intercompartmental clearance and total clearance parameters.**
 
-The rejected parameter is for the metabolite amrubicinol. Its label is 'Cov BSA (Vm)' and its meaning is 'Vmax: Maximum rate of metabolism by an enzymatically mediated reaction.', but the associated numerical value of 1.5 is explicitly marked with the unit 'Vm'. The review findings identify a dimension mismatch on a structural parameter and note that this specific unit could not be converted to a standard SI value. Because this specific parameter could not be successfully converted, the record was ultimately rejected. Extracted — amrubicin: V2 9.8 L, Q 9.2 L/h, V3 32.3 L, Q2 49.5 L/h, MTT 173; amrubicinol: V 1.05e+03 L, CLfm 19.5 L/h, CL 121 L/h, kfm 0.1 L/h, Vmax 1.5 Vm, CL 1.8 CLm.
+The apparent intercompartmental clearance between the central and peripheral compartments (9.2 L/h) and the amrubicinol total clearance (121.3 L/h) are listed with volume-based units that conflict with their required dimensionless rate constants. Additionally, the covariate for maximum metabolic rate (1.5) has a unit that could not be converted to SI, preventing a complete check of the parameter's validity. A secondary reader also disagreed on the inclusion of the gamma parameter (0.4) and the mean transit time (172.6), finding no evidence for these values in the record. Extracted — amrubicin: V2 9.8 L, Q 9.2 L/h, V3 32.3 L, Q2 49.5 L/h, MTT 173; amrubicinol: V 1.05e+03 L, CLfm 19.5 L/h, CL 121 L/h, kfm 0.1 L/h, Vmax 1.5 Vm, CL 1.8 CLm.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has amrubicin and amrubicinol, the second reading amrubicin; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

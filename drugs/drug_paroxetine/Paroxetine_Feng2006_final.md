@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;paroxetine&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/&quot;},{&quot;label&quot;:&quot;Feng_2006 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paroxetine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paroxetine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paroxetine — `Paroxetine_Feng2006_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:30 UTC (Rejected), but the paper was screened again on 2026-10-22 12:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on the maximum metabolic rate Vmax, which lacked a compatible unit.
+> Paroxetine’s Vmax of 474 µg h⁻¹ was refused for a reported dimensional conflict, although the recorded dimensions match.
 
-<div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Feng2006_final" status="rejected" stale="true" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Feng2006_final" status="rejected" stale="false" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Feng Y, Pollock BG, Ferrell RE, Kimak MA, Reynolds CF, Bies RR. Paroxetine: population pharmacokinetic analysis in late-life depression using sparse concentration sampling. British journal of clinical pharmacology 61(5):558–569 (2006).
@@ -44,7 +44,7 @@ Feng Y, Pollock BG, Ferrell RE, Kimak MA, Reynolds CF, Bies RR. Paroxetine: popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.421). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.421). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +54,13 @@ Feng Y, Pollock BG, Ferrell RE, Kimak MA, Reynolds CF, Bies RR. Paroxetine: popu
 
 ### Reviewer guidance
 
-**The record was rejected due to a dimension mismatch on the maximum metabolic rate Vmax, which lacked a compatible unit.**
+**Paroxetine’s Vmax of 474 µg h⁻¹ was refused for a reported dimensional conflict, although the recorded dimensions match.**
 
-The maximum rate of metabolism, Vmax, is recorded as 474 µg h⁻¹, but this unit could not be converted to standard SI units. Consequently, the model could not be processed due to a structural dimension mismatch. The second reader also disagreed on the extraction of several covariate effect parameters, finding them missing. Extracted — paroxetine: Vmax 474 µg h⁻¹, Km 205 µg l⁻¹, V2 230 l, V3 900 l, Q 1.05 l h⁻¹, kabs 9.81 h⁻¹.
+The record gives Vmax as the maximum rate of metabolism, with units of µg h⁻¹, and reports the conflicting dimensions as [mass]/[time] versus [mass]/[time]. The unit could not be converted to SI, so the stated dimensional conflict is inconclusive from the recorded facts. Extracted — paroxetine: Vmax 474 µg h⁻¹, Km 205 µg l⁻¹, V2 230 l, V3 900 l, Q 1.05 l h⁻¹, kabs 9.81 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paroxetine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

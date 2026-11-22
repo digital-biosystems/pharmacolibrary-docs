@@ -1,8 +1,9 @@
 {
+ "dose_source": "paper",
  "model_id": "Ticagrelor_strand2019_reference",
  "molar_masses": {
   "C_M1": 0.478518,
-  "C_central": 0.522568
+  "central.C": 0.522568
  },
  "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observable_labels": {
@@ -10,7 +11,7 @@
   "C_central": "ticagrelor"
  },
  "observables": [
-  "C_central",
+  "central.C",
   "C_M1"
  ],
  "paper_doses_kind": "discrete",
@@ -50,11 +51,11 @@
  },
  "reference_peak_times": {
   "C_M1": 7618.436873747495,
-  "C_central": 3615.3199770682972
+  "central.C": 3615.236593187828
  },
  "reference_peaks": {
-  "C_M1": 7.186543637316374e-05,
-  "C_central": 0.00035783688727179276
+  "C_M1": 7.186616163427334e-05,
+  "central.C": 0.0003578382780761157
  },
  "stop_time": 118800.0,
  "template": "PK_3M_9C",

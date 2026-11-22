@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Zeranol&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/&quot;},{&quot;label&quot;:&quot;Qu_2024 \u00b7 mass_value_mg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zeranol_Qu2024_mass_value_mg&quot;,&quot;label&quot;:&quot;Qu_2024_mass_value_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zeranol_Qu2024_value&quot;,&quot;label&quot;:&quot;Qu_2024_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zeranol_Qu2024_mass_value_mg&quot;,&quot;label&quot;:&quot;Qu_2024_mass_value_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zeranol_Qu2024_value&quot;,&quot;label&quot;:&quot;Qu_2024_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Zeranol — `Zeranol_Qu2024_mass_value_mg`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 0.48, model 0.183).
 
-<div class="pk-model-meta" hidden drug="Zeranol" model-id="Zeranol_Qu2024_mass_value_mg" status="extracted" stale="false" population="female Dezhou donkeys" measured-compound="Zearalenone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Zeranol" model-id="Zeranol_Qu2024_mass_value_mg" status="needs_review" stale="false" population="female Dezhou donkeys" measured-compound="Zearalenone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Qu H, Zheng Y, Kang R, Feng Y, Li P, Wang Y et al. Toxicokinetics of Zearalenone following Oral Administration in Female Dezhou Donkeys. Toxins 16(1) (2024).
@@ -33,6 +33,8 @@ Qu H, Zheng Y, Kang R, Feng Y, Li P, Wang Y et al. Toxicokinetics of Zearalenone
 <figure class="pk-models-diagram"><img src="drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg/Zeranol_Qu2024_mass_value_mg.svg" alt="Zeranol_Qu2024_mass_value_mg diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | ZEN excretion via feces | Ae | 1.61 | mg |
@@ -42,7 +44,7 @@ Qu H, Zheng Y, Kang R, Feng Y, Li P, Wang Y et al. Toxicokinetics of Zearalenone
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +52,13 @@ Qu H, Zheng Y, Kang R, Feng Y, Li P, Wang Y et al. Toxicokinetics of Zearalenone
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's time of the peak (tmax) (paper 0.48, model 0.183).**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. None of the extracted parameters is zeranol's own; they describe Zearalenone. Extracted — Zearalenone: Ae 1.61 mg, fe 2.5 %, t1/2z 1.63 h, V 216 L/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -108,6 +116,25 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q91 | pass | [mass] |  | ['toxins-16-00051-t004:row2:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.51e+04 L | ['Qu_2024:other_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable |  | pass | C_central (measured=Zearalenone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped |  | 8.932e-06 |  | non-numeric value |
+| T1_t_half_beta | reference | pass | 1.63 | 1.6 | 0.9817 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 1.63 | 1.6 | 0.9817 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 1.63 | 1.6 | 0.9817 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.48 | 0.1833 | 0.3819 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.25 | 0.1833 | 0.7333 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.48 | 0.1833 | 0.3819 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -26,7 +26,7 @@ Diflunisal is a non-steroidal anti-inflammatory drug used to treat osteoarthriti
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Gao_1998_reference](drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md) | — | 1-compartment (no model) | 2 | Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Gao_1998_reference](drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md) | — | 1-compartment (no model) | 2 | Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -34,20 +34,6 @@ Diflunisal is a non-steroidal anti-inflammatory drug used to treat osteoarthriti
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Mano_2007_AZTG](drugs/drug_diflunisal/pd_Mano_2007_AZTG.md) | 3'-azido-3'-deoxythymidine glucuronidation (AZTG) ← diflunisal · inhibition effect | — | Mano Y et al., Inhibitory potential of nonsteroidal an…, European journal of clinica… (2007) | [10.1007/s00228-006-0241-9](https://doi.org/10.1007/s00228-006-0241-9) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [Vietri_2000_MPA_glucuronidation_rate](drugs/drug_diflunisal/pd_Vietri_2000_MPA_glucuronidation_rate.md) | MPA glucuronidation ← diflunisal · direct Emax (saturable) effect | — | Vietri M et al., Mycophenolic acid glucuronidation and i…, European journal of clinica… (2000) | [10.1007/s002280000227](https://doi.org/10.1007/s002280000227) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=diflunisal).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | liver | `UGT1A9` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor), TTR (unknown), UGT1A8 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -67,7 +53,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 81 matched, 60 returned
 - **screened:** 3  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

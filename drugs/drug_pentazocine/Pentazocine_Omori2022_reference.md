@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;pentazocine&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/&quot;},{&quot;label&quot;:&quot;Omori_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pentazocine — `Pentazocine_Omori2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="pentazocine" model-id="Pentazocine_Omori2022_reference" status="simulated" stale="false" population="" measured-compound="pentazocine" parameterization="mechanistic" topology="2C"></div>
+> Pentazocine’s intercompartmental clearance, 3.44 L/h/kg, was disputed by the second reader, so the record was held back.
+
+<div class="pk-model-meta" hidden drug="pentazocine" model-id="Pentazocine_Omori2022_reference" status="needs_review" stale="false" population="" measured-compound="pentazocine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Omori T, Aoyama T, Miyamoto A, Matsumoto Y. Pharmacokinetic/Pharmacodynamic Modeling and Simulation of the Analgesic Effects of Pentazocine Using Perioperative Real-World Data. Biological & pharmaceutical bulletin 45(12):1754–1763 (2022).
@@ -27,6 +29,8 @@ Omori T, Aoyama T, Miyamoto A, Matsumoto Y. Pharmacokinetic/Pharmacodynamic Mode
 <figure class="pk-models-diagram"><img src="drugs/drug_pentazocine/Pentazocine_Omori2022_reference/Pentazocine_Omori2022_reference.svg" alt="Pentazocine_Omori2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL (L/h/kg) | CL | 1.19 | L/h/kg |
@@ -36,7 +40,7 @@ Omori T, Aoyama T, Miyamoto A, Matsumoto Y. Pharmacokinetic/Pharmacodynamic Mode
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Omori T, Aoyama T, Miyamoto A, Matsumoto Y. Pharmacokinetic/Pharmacodynamic Mode
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Pentazocine’s intercompartmental clearance, 3.44 L/h/kg, was disputed by the second reader, so the record was held back.**
+
+The second reader supplied no corresponding value for the reported total clearance of 1.19 L/h/kg, central volume of 1.04 L/kg, or intercompartmental clearance of 3.44 L/h/kg. The cross-check recorded agreement of 0.308, with 0 of 1 readers agreeing; it also noted a disagreement between 0.158 and 1.78 for a value whose pharmacokinetic meaning is not given here. Extracted — pentazocine: CL 1.19 L/h/kg, V1 1.04 L/kg, V2 3.02 L/kg, Q 3.44 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 1.76, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,14 +128,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pentazocine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pentazocine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check disputed by a second reader: verdict disputed, agreement 0.308, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

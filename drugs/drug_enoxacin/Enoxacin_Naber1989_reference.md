@@ -40,7 +40,7 @@ Naber KG, Sörgel F, Kees F, Schumacher H, Sigl G, Zürcher J et al. [Enoxacin c
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Naber KG, Sörgel F, Kees F, Schumacher H, Sigl G, Zürcher J et al. [Enoxacin c
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — enoxacin: Vss 147 l, AUC 22.8 mg/l · h, CL 307 ml/min, CLnorm 285 ml/min/70kg, t1/2z 6.65 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 22.8, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 22.8, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -108,17 +108,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc]` | 22.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cltot]` | 307 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ctot]` | 285 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | 6.65 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vss]` | 147 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 22.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cltot]` | 307 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctot]` | 285 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 6.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 147 |  | only_one_extracted |
 
 </details>
 

@@ -4,11 +4,11 @@
 
 # deferiprone — `Deferiprone_Abbas2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 18:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Abbas2012_reference" status="needs_review" stale="true" population="healthy adult volunteers" measured-compound="deferiprone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Abbas2012_reference" status="needs_review" stale="false" population="healthy adult volunteers" measured-compound="deferiprone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Abbas M, Nawaz R, Iqbal T, Alim M, Asi MR. Quantitative determination of deferiprone in human plasma by reverse phase high performance liquid chromatography and its application to pharmacokinetic study. Pakistan journal of pharmaceutical sciences 25(2):343–348 (2012).
@@ -35,7 +35,7 @@ Abbas M, Nawaz R, Iqbal T, Alim M, Asi MR. Quantitative determination of deferip
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Abbas M, Nawaz R, Iqbal T, Alim M, Asi MR. Quantitative determination of deferip
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — deferiprone: AUC 17 h.μg/ml, t1/2ka 0.62 hours, t1/2z 2.65 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption half-life: this record has 0.62, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 

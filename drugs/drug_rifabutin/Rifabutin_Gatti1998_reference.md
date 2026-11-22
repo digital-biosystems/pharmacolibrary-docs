@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Gatti_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_2_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023_2 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_2_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_2_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023_2 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_2_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Gatti G, Papa P, Torre D, Andreoni M, Poggio A, Bassetti M et al. Population pha
 
 ## Population and dosing
 
-**Population:** HIV-infected patients · condition HIV infection · age group adult · n = &gt;=40.
+**Population:** HIV-infected patients · condition HIV infection · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ Gatti G, Papa P, Torre D, Andreoni M, Poggio A, Bassetti M et al. Population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Gatti G, Papa P, Torre D, Andreoni M, Poggio A, Bassetti M et al. Population pha
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rifabutin: kabs 0.201 /h, CL/F 60.9 liters/h, V1 231 liters, Q 60.3 liters/h, V2 1.05e+03 liters.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rifabutin, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rifabutin, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -91,24 +91,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
 
 <details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.201 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` |  | 0.201 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance/bioavailability (cl/f]` | 60.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance/bioavailability]` |  | 60.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 60.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` |  | 60.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of the central compartment/bioavailability]` | 231 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of the central compartment/bioavailability]` |  | 231 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of the peripheral compartment/bioavailability (vp/f]` | 1050 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of the peripheral compartment/bioavailability]` |  | 1,050 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | rifabutin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | rifabutin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.201 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 0.201 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance/bioavailability (cl/f]` | 60.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance/bioavailability]` |  | 60.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 60.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 60.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the central compartment/bioavailability]` | 231 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the central compartment/bioavailability]` |  | 231 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the peripheral compartment/bioavailability (vp/f]` | 1050 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the peripheral compartment/bioavailability]` |  | 1,050 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | rifabutin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rifabutin | unknown | mismatch |
 
 </details>
 

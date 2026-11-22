@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Geola_1981 \u00b7 before_therapy&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Latif2015_reference&quot;,&quot;label&quot;:&quot;Latif_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Latif2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > This paper's disposition core is incomplete; kuptake has no unit.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Geola1981_before_therapy" status="needs_review" stale="false" population="hypothyroid patient with Hashimoto&#39;s thyroiditis" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Geola1981_before_therapy" status="needs_review" stale="false" population="53-year-old male with hypothyroidism" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone autoantibodies in a hypothyroid patient: effect on thyroxine metabolic clearance rate. The Journal of clinical endocrinology and metabolism 53(3):580–586 (1981).
@@ -17,7 +17,7 @@ Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone aut
 
 ## Population and dosing
 
-**Population:** hypothyroid patient with Hashimoto's thyroiditis · condition hypothyroidism · age group adult · n = The provided text is a case report describing a single 53-year-old male patient. The title and abstract explicitly refer to 'a Hypothyroid Patient' and 'In a 53-yr-old man'. No other subjects are mentioned in the available text..
+**Population:** hypothyroid patient with Hashimoto's thyroiditis · condition hypothyroidism · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed levothyroxine, measured thyroxine.
 
@@ -34,7 +34,7 @@ Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone aut
 | label | parameter | value | unit |
 |---|---|---|---|
 | 24-h thyroid 129I uptake (%) | kuptake | 11.9 |  |
-| MS437 = | CL | 24.13 | mL/min/kg |
+| plasma clearance | CL | 24.13 | mL/min/kg |
 | V* | V | 47.0 | liter |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -62,7 +62,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | 24-h thyroid 129I uptake (%) | `Q349` · kuptake | 11.9 |  |  |  |  | llm (0.6) | Geola_1981_table_1:row8:col1 |
-| MS437 = | `Q22` · CL | 24.13 | mL/min/kg | 2.815e-05 | m3/s | L/h | review_gapfill (0.7) | Latif_2015:review |
+| plasma clearance | `Q22` · CL | 24.13 | mL/min/kg | 2.815e-05 | m3/s | L/h | review_gapfill (0.7) | Latif_2015:review |
 | V* | `Q61` · V | 47.0 | liter | 0.047 | m3 | L | review_gapfill (0.7) | Inada_1975:review |
 
 <details class="legend">
@@ -171,4 +171,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D%20Levothyroxine_Geola1981_before_therapy&body=Drug%3A%20levothyroxine%0ARecord%3A%20Levothyroxine_Geola1981_before_therapy%0APaper%3A%20Geola_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/Levothyroxine_Geola1981_before_therapy%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 00:26 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 01:13 UTC</sub>

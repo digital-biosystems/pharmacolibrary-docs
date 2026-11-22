@@ -5,11 +5,11 @@
 
 # zonisamide — `Zonisamide_Silva2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:59 UTC (Rejected), but the paper was screened again on 2026-10-07 08:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch for the parameter labeled t1/2ka, which actually stores a 91.27% variability value.
+> Zonisamide’s reported absorption-phase half-life of 91.27% has a dimensionless unit where a time unit is required, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Silva2025_reference" status="rejected" stale="true" population="adults with refractory epilepsy" measured-compound="zonisamide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Silva2025_reference" status="rejected" stale="false" population="adults with refractory epilepsy" measured-compound="zonisamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Silva R, Colom H, Almeida A, Bicker J, Carona A, Silva A et al. A new population pharmacokinetic model for dosing optimization of zonisamide in patients with refractory epilepsy. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 207:107023 (2025).
@@ -17,7 +17,7 @@ Silva R, Colom H, Almeida A, Bicker J, Carona A, Silva A et al. A new population
 
 ## Population and dosing
 
-**Population:** adults with refractory epilepsy · condition refractory epilepsy · age group adult · n = $.
+**Population:** adults with refractory epilepsy · condition refractory epilepsy · age group adult.
 
 ## Model
 
@@ -38,7 +38,7 @@ Silva R, Colom H, Almeida A, Bicker J, Carona A, Silva A et al. A new population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Silva R, Colom H, Almeida A, Bicker J, Carona A, Silva A et al. A new population
 
 ### Reviewer guidance
 
-**The record was rejected due to a dimension mismatch for the parameter labeled t1/2ka, which actually stores a 91.27% variability value.**
+**Zonisamide’s reported absorption-phase half-life of 91.27% has a dimensionless unit where a time unit is required, so the record was rejected.**
 
-The record contains a structural parameter labeled t1/2ka with a value of 91.27%, which represents inter-individual variability rather than an absorption half-life. This dimensional inconsistency contradicts the parameter’s defined meaning. Furthermore, the record was derived solely from the abstract, so these summary statistics stand in for a fitted model. Extracted — zonisamide: CL/F 0.761 L/h, V/F 48.1 L, kabs 0.671 h⁻¹, t1/2ka 91.3 %.
+The 91.27% entry is described as zonisamide’s absorption-phase half-life, a time quantity, but its reported unit is percent, which conflicts with the time dimension. Only the abstract was read, so its reported summary statistics stood in for a fitted model. Extracted — zonisamide: CL/F 0.761 L/h, V/F 48.1 L, kabs 0.671 h⁻¹, t1/2ka 91.3 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has zonisamide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

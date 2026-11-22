@@ -16,7 +16,7 @@ Guo C, Yu Y, Chakrabarti J, Piha-Paul SA, Moroose R, Plotka A et al. Evaluation 
 
 ## Population and dosing
 
-**Population:** patients with advanced solid tumours and varying degrees of hepatic impairment · condition advanced solid tumours and hepatic impairment · age group adult · n = /&gt;. 37.
+**Population:** patients with advanced solid tumours and varying degrees of hepatic impairment · condition advanced solid tumours and hepatic impairment · age group adult.
 
 **Dosing:** 0.5 mg, oral, multiple, every 24 h.
 

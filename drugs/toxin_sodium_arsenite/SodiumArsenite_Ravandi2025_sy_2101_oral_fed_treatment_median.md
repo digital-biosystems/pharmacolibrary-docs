@@ -162,30 +162,13 @@ The model was built, but sodium arsenite's clearance and volume of distribution 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median_matlab.zip" download>SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median_matlab_simbio.zip" download>SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median_sbml.zip" download>SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median_cellml.zip" download>SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Ravandi F, Rangaraju S, Kantarjian H, Garcia-Manero G, Yilmaz M, Baker K et al. A pharmacokinetic and safety study of oral arsenic trioxide in patients with acute promyelocytic leukemia. Blood advances 9(9):2136–2143 (2025). [doi:10.1182/bloodadvances.2024015453](https://doi.org/10.1182/bloodadvances.2024015453)
-
-**This record:** Pharmacolibrary, model `SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median`. <https://pharmacolibrary.github.io/#/drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median>
-
-```bibtex
-@misc{pharmacolibrary_SodiumArseniteRavandi2025sy2101oralfedtreatmentmedian,
-  title  = {{Pharmacolibrary model SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median},
-  note   = {Parameters from doi:10.1182/bloodadvances.2024015453},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

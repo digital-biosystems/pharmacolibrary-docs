@@ -4,11 +4,11 @@
 
 # eptifibatide — `Eptifibatide_Wang2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-05 15:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The two-compartment eptifibatide model lacks the inter-compartmental clearance parameter, rendering the peripheral compartment unreachable.
+> The eptifibatide model was rejected because the intercompartmental clearance was missing, rendering the second compartment unreachable in the two-compartment structure.
 
-<div class="pk-model-meta" hidden drug="eptifibatide" model-id="Eptifibatide_Wang2015_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="eptifibatide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="eptifibatide" model-id="Eptifibatide_Wang2015_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="eptifibatide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang XP, Zhou ZL, Yang M, Mai LP, Zheng ZJ, He GD et al. Population pharmacokinetics and safety of eptifibatide in healthy Chinese volunteers and simulations on the dose regimens approved for a Western population. International journal of clinical pharmacology and therapeutics 53(8):658–666 (2015).
@@ -16,7 +16,7 @@ Wang XP, Zhou ZL, Yang M, Mai LP, Zheng ZJ, He GD et al. Population pharmacokine
 
 ## Population and dosing
 
-**Population:** healthy Chinese volunteers · condition healthy · age group adult · n = &gt;=30.
+**Population:** healthy Chinese volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -36,7 +36,7 @@ Wang XP, Zhou ZL, Yang M, Mai LP, Zheng ZJ, He GD et al. Population pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Wang XP, Zhou ZL, Yang M, Mai LP, Zheng ZJ, He GD et al. Population pharmacokine
 
 ### Reviewer guidance
 
-**The two-compartment eptifibatide model lacks the inter-compartmental clearance parameter, rendering the peripheral compartment unreachable.**
+**The eptifibatide model was rejected because the intercompartmental clearance was missing, rendering the second compartment unreachable in the two-compartment structure.**
 
-The record structure defines two compartments but omits the clearance term connecting them. Additionally, the distribution volume of 0.175 L/kg is dimensionally inconsistent with a two-compartment model structure. The second reader identified the missing inter-compartmental clearance value as 0.0988. Extracted — eptifibatide: CL 0.128 L/h, V 0.175 L x kg⁻¹, V2 0.147 L x kg⁻¹.
+The record defines a two-compartment structure but provides no value for the intercompartmental clearance, leaving the peripheral compartment orphaned without a path from the dose. Additionally, the volume of distribution units in kilograms were flagged as dimensionally inconsistent with required volume units. Since the record relies on abstract-only data, these structural and dimensional gaps prevented a valid fitted model from being established. Extracted — eptifibatide: CL 0.128 L/h, V 0.175 L x kg⁻¹, V2 0.147 L x kg⁻¹.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has none, the second reading 0.128; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 0.128; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -90,17 +90,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl]` |  | 0.128 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 0.128 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution volume]` | 0.175 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q]` |  | 0.0988 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1]` |  | 0.175 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 0.128 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 0.128 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 0.175 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` |  | 0.0988 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` |  | 0.175 | only_one_extracted |
 
 </details>
 

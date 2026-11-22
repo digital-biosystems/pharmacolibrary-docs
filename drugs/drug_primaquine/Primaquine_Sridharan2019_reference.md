@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;primaquine&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/&quot;},{&quot;label&quot;:&quot;Sridharan_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Primaquine clearance, absorption, and volume values are disputed by a second reader, while bioavailability lacked an explicit estimate from the paper.
+> Primaquine bioavailability and lag time lacked paper estimates, relying on unreported placeholder values instead of fitted parameters.
 
 <div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Sridharan2019_reference" status="needs_review" stale="false" population="healthy volunteers and patients with hepatic or renal dysfunction" measured-compound="primaquine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Sridharan K, Sannala CKR, Mallayasamy S, Chaturvedula A, Kadam P, Hase N et al. 
 
 ### Reviewer guidance
 
-**Primaquine clearance, absorption, and volume values are disputed by a second reader, while bioavailability lacked an explicit estimate from the paper.**
+**Primaquine bioavailability and lag time lacked paper estimates, relying on unreported placeholder values instead of fitted parameters.**
 
-The recorded clearance of 10.34 L/h, absorption rate constant of 18.08 1/h, and volume of 11.9 L conflict with second-reader values of 31.36 L/h, 0.65 1/h, and 345.37 L. The dialysis extraction parameter was also flagged with a second-reader value of null against the recorded 30.17. Bioavailability and absorption lag time were not explicitly estimated in this record, so placeholder values were used. Extracted — primaquine: CL 10.3 L/h, V 11.9 L, kabs 18.1 1/h, E_HD 30.2.
+The record lists clearance of 10.34 L/h and absorption rate constant of 18.08 1/h, but bioavailability and lag time were not extracted. A second reader disagreed on the reported clearance value of 10.34 L/h, suggesting 31.36 L/h instead, and challenged the volume of distribution of 11.9 L. Extracted — primaquine: CL 10.3 L/h, V 11.9 L, kabs 18.1 1/h, E_HD 30.2.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl θ].value`: this record has 10.34, the second reading 31.36; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -148,14 +148,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=primaquine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=primaquine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sirolimus absorption rate constant was set to a library placeholder, and apparent clearance and volume of distribution were extracted as summary statistics.
+> Sirolimus absorption rate constant was left at default, and a second reader disputed the apparent parameterization and associated clearance and volume values.
 
 <div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_Li2022_reference" status="needs_review" stale="false" population="children with tuberous sclerosis complex" measured-compound="sirolimus" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Li S, Zhan M, Wu S, Liao J, Xu H, Sun D et al. Population Pharmacokinetic Analys
 
 ### Reviewer guidance
 
-**Sirolimus absorption rate constant was set to a library placeholder, and apparent clearance and volume of distribution were extracted as summary statistics.**
+**Sirolimus absorption rate constant was left at default, and a second reader disputed the apparent parameterization and associated clearance and volume values.**
 
-The record relies on the abstract alone, meaning reported summary statistics stand in for a fitted model. Consequently, the absorption rate constant and lag time were not estimated from the paper but substituted with library placeholders. The apparent clearance of 2.79 L/h and apparent volume of distribution of 69.48 L are presented as if they were fitted parameters, despite originating from summary data. Extracted — sirolimus: V/F 69.5 L, CL/F 2.79 L/h.
+The record relies on abstract-only data where apparent clearance 2.79 L/h and volume 69.48 L were reported, but the absorption rate constant was not extracted. Consequently, default values for the absorption rate constant and lag time were substituted, rendering the model unsupported by the source. A second reader disagreed with the apparent parameterization and found no support for the reported clearance and volume values. Extracted — sirolimus: V/F 69.5 L, CL/F 2.79 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -126,15 +126,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=sirolimus) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=sirolimus) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

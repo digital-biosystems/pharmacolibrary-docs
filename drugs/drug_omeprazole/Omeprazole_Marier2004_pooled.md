@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;omeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/&quot;},{&quot;label&quot;:&quot;Marier_2004 \u00b7 pooled&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omeprazole_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gao2025_reference&quot;,&quot;label&quot;:&quot;Gao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gao2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_KhanAsa2020_reference&quot;,&quot;label&quot;:&quot;Khan-Asa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Litalien2005_reference&quot;,&quot;label&quot;:&quot;Litalien_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Litalien2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Rao2007_reference&quot;,&quot;label&quot;:&quot;Rao_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Rao2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v3_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhao2018_reference&quot;,&quot;label&quot;:&quot;Zhao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhao2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kirchheiner_2009_pH&quot;,&quot;label&quot;:&quot;Kirchheiner_2009 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pd_Kirchheiner_2009_pH.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kirchheiner_2009_2_pH&quot;,&quot;label&quot;:&quot;Kirchheiner_2009_2 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pd_Kirchheiner_2009_2_pH.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Zhao_2018_CYP2C19_Q27&quot;,&quot;label&quot;:&quot;Zhao_2018 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pgx_Zhao_2018_CYP2C19_Q27.md&quot;,&quot;status&quot;:&quot;qualitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omeprazole_KhanAsa2020_reference&quot;,&quot;label&quot;:&quot;Khan-Asa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marier2004_children&quot;,&quot;label&quot;:&quot;Marier_2004_children&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marier2004_children.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Litalien2005_reference&quot;,&quot;label&quot;:&quot;Litalien_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Litalien2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Rao2007_reference&quot;,&quot;label&quot;:&quot;Rao_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Rao2007_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kirchheiner_2009_pH&quot;,&quot;label&quot;:&quot;Kirchheiner_2009 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pd_Kirchheiner_2009_pH.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kirchheiner_2009_2_pH&quot;,&quot;label&quot;:&quot;Kirchheiner_2009_2 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pd_Kirchheiner_2009_2_pH.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # omeprazole — `Omeprazole_Marier2004_pooled`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:25 UTC (Rejected), but the paper was screened again on 2026-11-04 06:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The zero-order input rate parameter has a time unit, causing a dimension mismatch for the structural model.
+> The record was rejected because omeprazole's zero-order input rate has a unit dimension conflict.
 
-<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Marier2004_pooled" status="rejected" stale="true" population="healthy adults and children with GERD" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Marier2004_pooled" status="rejected" stale="false" population="healthy adults and children with GERD" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Marier JF, Dubuc MC, Drouin E, Alvarez F, Ducharme MP, Brazier JL. Pharmacokinetics of omeprazole in healthy adults and in children with gastroesophageal reflux disease. Therapeutic drug monitoring 26(1):3–8 (2004).
@@ -17,7 +17,7 @@ Marier JF, Dubuc MC, Drouin E, Alvarez F, Ducharme MP, Brazier JL. Pharmacokinet
 
 ## Population and dosing
 
-**Population:** healthy adults and children with GERD · age group mixed · n = ....
+**Population:** healthy adults and children with GERD · condition healthy and GERD · age group mixed.
 
 **Dosing:** 10, 20 mg, oral, multiple, every 24 h.
 
@@ -36,13 +36,13 @@ Marier JF, Dubuc MC, Drouin E, Alvarez F, Ducharme MP, Brazier JL. Pharmacokinet
 | V ss /F (L) | Vss | 36.1 | L |
 | Lag time (h) | tlag | 0.23 | h |
 | k 0 (h) | R1 | 15.3 | h |
-| For these subjects, the median value (98 ml/min) was imputed | CL | 98.0 | ml/min |
-| V (L) | V | 0.653 | L |
-| KA (h-1) | kabs | 3.0 | h-1 |
+| systemic caffeine clearance (CLcaffeine) | CL | 6.67 | L/h |
+| volume of distribution (Vd) | V | 7.47 | L |
+| k 01 | kabs | 0.05 | min À1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Marier JF, Dubuc MC, Drouin E, Alvarez F, Ducharme MP, Brazier JL. Pharmacokinet
 
 ### Reviewer guidance
 
-**The zero-order input rate parameter has a time unit, causing a dimension mismatch for the structural model.**
+**The record was rejected because omeprazole's zero-order input rate has a unit dimension conflict.**
 
-The parameter identified as the zero-order input rate has a value of 15.3 with a unit of hours. This time unit is dimensionally inconsistent with a rate parameter, which should have units of mass per time. The second reader disagreed on whether the model parameterization is mechanistic or apparent. Extracted — omeprazole: Vss 36.1 L, tlag 0.23 h, R1 15.3 h, CL 98 ml/min, V 0.653 L, kabs 3 h-1.
+The zero-order input rate parameter is recorded with a value of 15.3 and units of hours, which conflicts with the required mass per time dimension. Additionally, the absorption rate constant uses units of inverse minutes, a unit that could not be converted to standard SI units, so it lacked a compatible value. Extracted — omeprazole: Vss 36.1 L, tlag 0.23 h, R1 15.3 h, CL 6.67 L/h, V 7.47 L, kabs 0.05 min À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -67,9 +67,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 | V ss /F (L) | `Q65` · Vss | 36.1 | L | 0.0361 | m3 | l | llm_corrected (0.6) | tab_1:row2:col3 |
 | Lag time (h) | `Q83` · tlag | 0.23 | h | 828 | s | h | exact (1) | tab_1:row5:col3 |
 | k 0 (h) | `Q307` · R1 | 15.3 | h |  |  | h | space_fold (0.95) | tab_1:row6:col3 |
-| For these subjects, the median value (98 ml/min) was imputed | `Q22` · CL | 98.0 | ml/min | 1.633e-06 | m3/s | L/h | review_gapfill (0.7) | Frederiksen_2021:review |
-| V (L) | `Q61` · V | 0.653 | L | 0.000653 | m3 | L | review_gapfill (0.7) | Gao_2025:review |
-| KA (h-1) | `Q49` · kabs | 3.0 | h-1 | 0.0008333 | 1/s | 1/h | review_gapfill (0.7) | Gao_2025:review |
+| systemic caffeine clearance (CLcaffeine) | `Q22` · CL | 6.67 | L/h | 1.853e-06 | m3/s | L/h | review_gapfill (0.7) | Lammers_2017:review |
+| volume of distribution (Vd) | `Q61` · V | 7.47 | L | 0.00747 | m3 | L | review_gapfill (0.7) | Marques_2026:review |
+| k 01 | `Q49` · kabs | 0.05 | min À1 | 0.0008333 | 1/s | 1/h | review_gapfill (0.7) | Carlos_2002:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -87,11 +87,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - population split: 'pooled' subgroup of Marier_2004 (paper reports 3 populations: children, healthy, pooled)
-- gap-filled Q22 (CL) from Frederiksen_2021's review values (primary lacked it)
-- gap-filled Q61 (V) from Gao_2025's review values (primary lacked it)
+- gap-filled Q22 (CL) from Lammers_2017's review values (primary lacked it)
+- gap-filled Q61 (V) from Marques_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Gao_2025's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Carlos_2002's review values (primary lacked it)
 
 **Extraction notes:**
 - table tab_1: unparsed_numeric_cell
@@ -129,16 +129,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Frederiksen_2021:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Lammers_2017:review'] |
 | C5_dimension_Q307 | fail | [mass] / [time] | h ([time]) | ['tab_1:row6:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gao_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gao_2025:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Carlos_2002:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Marques_2026:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['tab_1:row2:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['tab_1:row5:col3'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 98 | ['Frederiksen_2021:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.67 | ['Lammers_2017:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.88 L/h | ['Frederiksen_2021:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 0.653 L | ['Gao_2025:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 6.67 L/h | ['Lammers_2017:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 7.47 L | ['Marques_2026:review'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 36.1 L | ['tab_1:row2:col3'] |
 
 <details class="legend">
@@ -163,4 +163,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bomeprazole%5D%20Omeprazole_Marier2004_pooled&body=Drug%3A%20omeprazole%0ARecord%3A%20Omeprazole_Marier2004_pooled%0APaper%3A%20Marier_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_omeprazole/Omeprazole_Marier2004_pooled%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 06:16 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 22:00 UTC</sub>

@@ -4,11 +4,11 @@
 
 # ipratropium bromide — `IpratropiumBromide_Lee2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-07 13:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The metabolic clearance parameter for ipratropium bromide has a unit mismatch with the model's structural assumptions.
+> The metabolic clearance parameter for ipratropium bromide was incorrectly classified as an apparent metabolite clearance rather than a total clearance.
 
-<div class="pk-model-meta" hidden drug="ipratropium bromide" model-id="IpratropiumBromide_Lee2016_reference" status="rejected" stale="true" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ipratropium bromide" model-id="IpratropiumBromide_Lee2016_reference" status="rejected" stale="false" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Mesh-Type Nebulizer (NE-SM1 NEPLUS) for Intrapulmonary Delivery of Ipratropium Bromide in Surgical Patients. Basic & clinical pharmacology & toxicology 118(4):313–319 (2016).
@@ -36,7 +36,7 @@ Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Me
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Me
 
 ### Reviewer guidance
 
-**The metabolic clearance parameter for ipratropium bromide has a unit mismatch with the model's structural assumptions.**
+**The metabolic clearance parameter for ipratropium bromide was incorrectly classified as an apparent metabolite clearance rather than a total clearance.**
 
-The record reports a metabolic clearance of 6.78 L/min, which is dimensionally inconsistent with the single-compartment structure. Since the record was built from the abstract only, these summary statistics stand in for a fitted model. A second reader also disagreed on the identification of this metabolic clearance parameter. Extracted — ipratropium bromide: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLm/F 6.78 L/min.
+The parameter labeled metabolic clearance has a unit of L/min, which conflicts with the dimension of the structural parameter assigned to it. The second reader disagreed on the parameter identification, suggesting a different ontology code for the clearance value. Additionally, the record was built from the abstract alone, so summary statistics stood in for a fitted model. Extracted — ipratropium bromide: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLm/F 6.78 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[metabolic clearance].parameter_id`: this record has Q351, the second reading Q22. That field shapes the model, so the record is marked disputed.
 

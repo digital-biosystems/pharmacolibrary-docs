@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;rocuronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/&quot;},{&quot;label&quot;:&quot;Dragne_2002 \u00b7 isoflurane&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RocuroniumBromide_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;RocuroniumBromide_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RocuroniumBromide_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;RocuroniumBromide_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rocuronium_bromide/RocuroniumBromide_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rocuronium bromide — `RocuroniumBromide_Dragne2002_isoflurane`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:45 UTC (Rejected), but the paper was screened again on 2026-10-07 02:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The rocuronium bromide record was rejected because a dimension mismatch occurred in a structural parameter due to an unconvertible unit.
+> The model was rejected because the structural parameter A (5711 ng·mL⁻¹) had a unit dimension conflicting with its pharmacokinetic definition.
 
-<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Dragne2002_isoflurane" status="rejected" stale="true" population="surgical patients under anesthesia" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Dragne2002_isoflurane" status="rejected" stale="false" population="surgical patients under anesthesia" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dragne A, Varin F, Plaud B, Donati F. Rocuronium pharmacokinetic-pharmacodynamic relationship under stable propofol or isoflurane anesthesia. Canadian journal of anaesthesia = Journal canadien d'anesthesie 49(4):353–360 (2002).
@@ -17,8 +17,7 @@ Dragne A, Varin F, Plaud B, Donati F. Rocuronium pharmacokinetic-pharmacodynamic
 
 ## Population and dosing
 
-**Population:** surgical patients under anesthesia · age group adult · n = ,
-  "condition": "surgical anesthesia.
+**Population:** surgical patients under anesthesia · age group adult.
 
 **Dosing:** 21, 35 mg, iv, multiple, every 60 h.
 
@@ -50,7 +49,7 @@ Dragne A, Varin F, Plaud B, Donati F. Rocuronium pharmacokinetic-pharmacodynamic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,9 +59,9 @@ Dragne A, Varin F, Plaud B, Donati F. Rocuronium pharmacokinetic-pharmacodynamic
 
 ### Reviewer guidance
 
-**The rocuronium bromide record was rejected because a dimension mismatch occurred in a structural parameter due to an unconvertible unit.**
+**The model was rejected because the structural parameter A (5711 ng·mL⁻¹) had a unit dimension conflicting with its pharmacokinetic definition.**
 
-The review flagged a dimension mismatch in a structural parameter because a reported unit could not be converted to standard units, preventing the calculation of a valid SI value. The second reader disagreed on the dose compound and primary analyte, suggesting 'rocuronium bromide' and 'rocuronium' instead of the underscored versions. Additionally, the second reader indicated that the exponential constants with values 5711 and 1653 should not have been extracted. Extracted — rocuronium bromide: C0 1.65e+03 ng·mL⁻¹, λ1 0.598 min⁻¹, kel 0.0498 min⁻¹, t1/2α 1.17 min, t1/2β 13.9 min, t1/2γ 77.1 min, CL 4.09 mL·kg⁻¹·min⁻¹, V 35 mL·kg⁻¹, … (+4).
+Parameter A is listed with a value of 5711 ng·mL⁻¹, which is a concentration unit, yet the dimension check expected a mass-time/length-cubed dimension. This mismatch indicates A does not represent the structural compartment size it is labeled as. The record also contains a terminal half-life (t1/2γ) of 77.06 min, which is inconsistent with the two-compartment structure (1C) implied by the other parameters. Extracted — rocuronium bromide: C0 1.65e+03 ng·mL⁻¹, λ1 0.598 min⁻¹, kel 0.0498 min⁻¹, t1/2α 1.17 min, t1/2β 13.9 min, t1/2γ 77.1 min, CL 4.09 mL·kg⁻¹·min⁻¹, V 35 mL·kg⁻¹, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rocuronium_bromide, the second reading rocuronium bromide; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

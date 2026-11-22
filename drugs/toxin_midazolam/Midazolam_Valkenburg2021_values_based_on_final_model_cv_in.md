@@ -170,30 +170,13 @@ The review identified that the total clearance for the central compartment of mi
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_midazolam/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in_matlab.zip" download>Midazolam_Valkenburg2021_values_based_on_final_model_cv_in_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_midazolam/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in_matlab_simbio.zip" download>Midazolam_Valkenburg2021_values_based_on_final_model_cv_in_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_midazolam/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in_sbml.zip" download>Midazolam_Valkenburg2021_values_based_on_final_model_cv_in_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_midazolam/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in_cellml.zip" download>Midazolam_Valkenburg2021_values_based_on_final_model_cv_in_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Valkenburg AJ, Goulooze SC, Breatnach CV, Mathôt RAA, Tibboel D, van Dijk M et al. Sedation With Midazolam After Cardiac Surgery in Children With and Without Down Syndrome: A Pharmacokinetic-Pharmacodynamic Study. Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies 22(4):e259-e269 (2021). [doi:10.1097/pcc.0000000000002580](https://doi.org/10.1097/pcc.0000000000002580)
-
-**This record:** Pharmacolibrary, model `Midazolam_Valkenburg2021_values_based_on_final_model_cv_in`. <https://pharmacolibrary.github.io/#/drugs/toxin_midazolam/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in>
-
-```bibtex
-@misc{pharmacolibrary_MidazolamValkenburg2021valuesbasedonfinalmodelcvin,
-  title  = {{Pharmacolibrary model Midazolam_Valkenburg2021_values_based_on_final_model_cv_in}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_midazolam/Midazolam_Valkenburg2021_values_based_on_final_model_cv_in},
-  note   = {Parameters from doi:10.1097/pcc.0000000000002580},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

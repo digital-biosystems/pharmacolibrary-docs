@@ -5,11 +5,11 @@
 
 # glycopyrronium — `Glycopyrronium_Bartels2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-07 19:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The glycopyrronium record was rejected due to a dimension mismatch and an unreachable compartment.
+> Record rejected because the absorption rate constant has a dimensionally inconsistent unit and the model contains an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_reference" status="rejected" stale="true" population="patients with asthma" measured-compound="glycopyrronium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="glycopyrronium" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analysis of Indacaterol/Glycopyrronium/Mometasone Furoate After Administration of Combination Therapies Using the Breezhaler. European journal of drug metabolism and pharmacokinetics 46(4):487–504 (2021).
@@ -17,34 +17,7 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 ## Population and dosing
 
-**Population:** patients with asthma · condition asthma · age group adult · n = ,
-    "condition": "asthma",
-    "species": "human",
-    "compounds": [
-      {
-        "name": "indacaterol",
-        "role": "co-administered",
-        "dosed": "yes",
-        "measured": "yes",
-        "has_parameters": "yes"
-      },
-      {
-        "name": "glycopyrronium",
-        "role": "parent",
-        "dosed": "yes",
-        "measured": "yes",
-        "has_parameters": "yes"
-      },
-      {
-        "name": "mometasone furoate",
-        "role": "co-administered",
-        "dosed": "yes",
-        "measured": "yes",
-        "has_parameters": "yes"
-      }
-    ],
-    "links": []
-  }.
+**Population:** patients with asthma · condition asthma · age group adult.
 
 **Dosing:** 0.08, 0.16, 0.32 mg, inhaled, multiple, every 24 h.
 
@@ -72,7 +45,7 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -82,9 +55,9 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 ### Reviewer guidance
 
-**The glycopyrronium record was rejected due to a dimension mismatch and an unreachable compartment.**
+**Record rejected because the absorption rate constant has a dimensionally inconsistent unit and the model contains an unreachable compartment.**
 
-The absorption rate constant is labeled in units of L/h, which is dimensionally incompatible with a rate constant and could not be converted to SI. Additionally, the model structure contains a peripheral compartment that has no path from the dose, making it unreachable. Extracted — glycopyrronium: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h.
+The absorption rate constant is specified with a value of 50 and a unit of L/h, which conflicts with the required reciprocal time dimension for a rate constant. Additionally, the model structure includes a compartment or metabolite that has no path from the dose, rendering it unreachable. These structural and dimensional errors led to the rejection of the model. Extracted — glycopyrronium: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

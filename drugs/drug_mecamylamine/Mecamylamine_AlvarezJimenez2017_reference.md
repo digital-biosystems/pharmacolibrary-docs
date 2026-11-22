@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02B&quot;,&quot;href&quot;:&quot;atc/C02B.md&quot;},{&quot;label&quot;:&quot;mecamylamine&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/&quot;},{&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Alvarez_Jimenez_2017_Adaptive_tracker&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 Adaptive tracker&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_Adaptive_tracker.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Alvarez_Jimenez_2017_0_back&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 0-back&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_0_back.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +16,7 @@ Alvarez-Jimenez R, Baakman AC, Stevens J, Goulooze SC, Hart EP, Rissmann R et al
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = $58.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 10, 20, 30 mg, oral, single.
 

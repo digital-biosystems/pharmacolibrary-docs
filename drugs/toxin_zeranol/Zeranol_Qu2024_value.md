@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Zeranol&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/&quot;},{&quot;label&quot;:&quot;Qu_2024 \u00b7 value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zeranol_Qu2024_mass_value_mg&quot;,&quot;label&quot;:&quot;Qu_2024_mass_value_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zeranol_Qu2024_value&quot;,&quot;label&quot;:&quot;Qu_2024_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zeranol_Qu2024_mass_value_mg&quot;,&quot;label&quot;:&quot;Qu_2024_mass_value_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zeranol_Qu2024_value&quot;,&quot;label&quot;:&quot;Qu_2024_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The clearance plausibility check could not be computed.
 
 <div class="pk-model-meta" hidden drug="Zeranol" model-id="Zeranol_Qu2024_value" status="needs_review" stale="false" population="female Dezhou donkeys" measured-compound="Zearalenone" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,7 +54,13 @@ Qu H, Zheng Y, Kang R, Feng Y, Li P, Wang Y et al. Toxicokinetics of Zearalenone
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is zeranol's own; they describe Zearalenone. Extracted — Zearalenone: tmax 0.48 h, Cmax 15.3 µg·L−1, t1/2z 1.63 h, AUC 22.3 µg·L−1·h, CL 95.2 L/kg/h, V 216 L/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

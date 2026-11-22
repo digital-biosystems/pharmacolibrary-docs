@@ -139,6 +139,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 5 | 0.01022 |  | unresolved concentration unit (exp 'mg/kg/day', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 8 | 0.01022 |  | unresolved concentration unit (exp 'mg/kg/day', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 10 | 0.01022 |  | unresolved concentration unit (exp 'mg/kg/day', sim 'kg/m3') |

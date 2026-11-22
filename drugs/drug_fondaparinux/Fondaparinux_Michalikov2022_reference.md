@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;fondaparinux&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/&quot;},{&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fondaparinux_Michalikov2022_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fondaparinux_Michalikov2022_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fondaparinux — `Fondaparinux_Michalikov2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="fondaparinux" model-id="Fondaparinux_Michalikov2022_reference" status="simulated" stale="false" population="dialysis-dependent chronic kidney disease patients" measured-compound="fondaparinux" parameterization="mechanistic" topology="1C"></div>
+> The cross-check failed because a second reader could not verify the clearance of 0.05289 L/h or volume of distribution of 5.55 L for fondaparinux.
+
+<div class="pk-model-meta" hidden drug="fondaparinux" model-id="Fondaparinux_Michalikov2022_reference" status="needs_review" stale="false" population="dialysis-dependent chronic kidney disease patients" measured-compound="fondaparinux" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Michaličková D, Hartinger JM, Hladinová Z, Bednářová V, Szonowská B, Polakovič V et al. Population pharmacokinetics-pharmacodynamics of fondaparinux in dialysis-dependent chronic kidney disease patients undergoing chronic renal replacement therapy. European journal of clinical pharmacology 78(1):89–98 (2022).
@@ -15,7 +17,7 @@ Michaličková D, Hartinger JM, Hladinová Z, Bednářová V, Szonowská B, Pola
 
 ## Population and dosing
 
-**Population:** dialysis-dependent chronic kidney disease patients · condition dialysis-dependent chronic kidney disease · age group elderly · n = ??.
+**Population:** dialysis-dependent chronic kidney disease patients · condition dialysis-dependent chronic kidney disease · age group elderly.
 
 ## Model
 
@@ -27,6 +29,8 @@ Michaličková D, Hartinger JM, Hladinová Z, Bednářová V, Szonowská B, Pola
 <figure class="pk-models-diagram"><img src="drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference/Fondaparinux_Michalikov2022_reference.svg" alt="Fondaparinux_Michalikov2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance (CL) | CL | 0.05289 | L/h |
@@ -34,7 +38,7 @@ Michaličková D, Hartinger JM, Hladinová Z, Bednářová V, Szonowská B, Pola
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Michaličková D, Hartinger JM, Hladinová Z, Bednářová V, Szonowská B, Pola
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The cross-check failed because a second reader could not verify the clearance of 0.05289 L/h or volume of distribution of 5.55 L for fondaparinux.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader identified the dose compound and primary analyte as unknown rather than fondaparinux. Disagreement on parameter values resulted in a verdict dispute with an agreement of only 0.222. Extracted — fondaparinux: CL 0.0529 L/h, V 5.55 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fondaparinux, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -120,14 +124,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=fondaparinux) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=fondaparinux) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

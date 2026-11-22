@@ -5,11 +5,11 @@
 
 # Lumefantrine — `Lumefantrine_Francis2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:45 UTC (Rejected), but the paper was screened again on 2026-10-07 07:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lumefantrine model rejected because the unit for the second peripheral intercompartmental clearance could not be converted to standard units, causing a dimension mismatch.
+> Lumefantrine’s absorption rate constant, 0.727, was rejected because its reported unit “Ka” has a time dimension, not the required inverse-time dimension.
 
-<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Francis2020_reference" status="rejected" stale="true" population="nonpregnant adults with uncomplicated malaria, HIV infection, or both" measured-compound="lumefantrine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Francis2020_reference" status="rejected" stale="false" population="nonpregnant adults with uncomplicated malaria, HIV infection, or both" measured-compound="lumefantrine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Francis J, Barnes KI, Workman L, Kredo T, Vestergaard LS, Hoglund RM et al. An Individual Participant Data Population Pharmacokinetic Meta-analysis of Drug-Drug Interactions between Lumefantrine and Commonly Used Antiretroviral Treatment. Antimicrobial agents and chemotherapy 64(5) (2020).
@@ -47,7 +47,7 @@ Francis J, Barnes KI, Workman L, Kredo T, Vestergaard LS, Hoglund RM et al. An I
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +57,13 @@ Francis J, Barnes KI, Workman L, Kredo T, Vestergaard LS, Hoglund RM et al. An I
 
 ### Reviewer guidance
 
-**Lumefantrine model rejected because the unit for the second peripheral intercompartmental clearance could not be converted to standard units, causing a dimension mismatch.**
+**Lumefantrine’s absorption rate constant, 0.727, was rejected because its reported unit “Ka” has a time dimension, not the required inverse-time dimension.**
 
-The intercompartmental clearance between the central and second peripheral compartments is recorded as 1.55 L/h, but the review found a dimension mismatch for this structural parameter. The second reader did not confirm the value 1.55 L/h or the second peripheral volume of distribution 39.1 L, instead marking these fields as null. Additionally, the review noted that a reported unit was not recognized, preventing the parameter from having a valid SI value. Extracted — lumefantrine: CL 3.28 L/h, V1 60 L, Frel 1 F, MTT 2.86 h, n_transit 7.58, kabs 0.727 Ka, Q 0.63 L/h, V2 182 L, … (+3).
+The record identifies 0.727 as the absorption rate constant but reports its unit as “Ka,” which conflicts with the required inverse-time dimension. This unit could not be converted to SI, leaving the parameter without an SI value. Extracted — lumefantrine: CL 3.28 L/h, V1 60 L, Frel 1 F, MTT 2.86 h, n_transit 7.58, kabs 0.727 Ka, Q 0.63 L/h, V2 182 L, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of intercompartmental clearance between central and second peripheral compartment (liters/h)c: this record has 1.55, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

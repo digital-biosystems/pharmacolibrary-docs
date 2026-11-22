@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Manganese sulfate&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/&quot;},{&quot;label&quot;:&quot;Dorman_2001_2 \u00b7 PD bile manganese concentrations&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseSulfate_Vitarella2000_reference&quot;,&quot;label&quot;:&quot;Vitarella_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ManganeseSulfate_Vitarella2000_reference&quot;,&quot;label&quot;:&quot;Vitarella_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_manganese_sulfate/ManganeseSulfate_Vitarella2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bile manganese concentrations — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Manganese_sulfate drives bile manganese concentrations (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> Manganese sulfate concentrations, measured in mg Mn/m³, act on bile manganese concentrations with an effect direction described as stimulation. The specific pharmacodynamic mechanism, potency, and rate constants are not stated in the available paper excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Dorman_2001_2`
 - **model family:** `unknown`

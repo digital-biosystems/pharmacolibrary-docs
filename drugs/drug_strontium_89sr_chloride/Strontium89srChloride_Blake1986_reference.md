@@ -16,7 +16,7 @@ Blake GM, Zivanovic MA, McEwan AJ, Ackery DM. Sr-89 therapy: strontium kinetics 
 
 ## Population and dosing
 
-**Population:** patients with metastatic bone disease secondary to prostatic carcinoma · condition metastatic bone disease secondary to prostatic carcinoma · age group adult · n = &gt;=14.
+**Population:** patients with metastatic bone disease secondary to prostatic carcinoma · condition metastatic bone disease secondary to prostatic carcinoma · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed strontium_89sr_chloride, measured strontium.
 

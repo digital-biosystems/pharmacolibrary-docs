@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not specify a pharmacodynamic mechanism for phenolphthalein acting on somatostatin levels, although it identifies somatostatin as an inhibitory factor that suppresses gastrointestinal movement. No potency or rate values (such as IC50 or EC50) for this specific interaction are provided in the excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

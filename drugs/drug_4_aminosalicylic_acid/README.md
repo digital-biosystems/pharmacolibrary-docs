@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;4-aminosalicylic acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4AminosalicylicAcid_Sy2015_reference&quot;,&quot;label&quot;:&quot;Sy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4AminosalicylicAcid_de2014_reference&quot;,&quot;label&quot;:&quot;de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4AminosalicylicAcid_de2014_reference&quot;,&quot;label&quot;:&quot;de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4AminosalicylicAcid_Sy2015_reference&quot;,&quot;label&quot;:&quot;Sy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # 4-aminosalicylic acid
 
@@ -16,7 +16,7 @@
 
 ## Start here
 
-> **Sy_2015_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> tuberculosis patients, n = 20. [Run it in the simulator](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md?tab=Simulation) · [record](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md)
+> **de_2014_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> tuberculosis patients with and without HIV coinfection receiving antiretroviral therapy, n = 73. [Run it in the simulator](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md?tab=Simulation) · [record](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -24,8 +24,8 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T6_deviations</sub> | [Sy_2015_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | SherwinK BSy Department of Pharmaceutics College of Pharmacy University of Florida Gainesville Florida USA et al., N-Acetyltransferase Genotypes and the P… (2015) | [10.1128/AAC.04049-14](https://doi.org/10.1128/AAC.04049-14) |
-| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [de_2014_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa et al., Pharmacokinetics of para-Aminosalicylic… (2014) | [10.1128/AAC.03073-14](https://doi.org/10.1128/AAC.03073-14) |
+| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [de_2014_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa et al., Pharmacokinetics of para-Aminosalicylic… (2014) | [10.1128/AAC.03073-14](https://doi.org/10.1128/AAC.03073-14) |
+| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub> | [Sy_2015_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | SherwinK BSy Department of Pharmaceutics College of Pharmacy University of Florida Gainesville Florida USA et al., N-Acetyltransferase Genotypes and the P… (2015) | [10.1128/AAC.04049-14](https://doi.org/10.1128/AAC.04049-14) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +45,7 @@
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

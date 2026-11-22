@@ -33,7 +33,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Song_2024_flotation_separation](drugs/toxin_lead_sulfide/pd_Song_2024_flotation_separation.md) | flotation separation · model not identified | — | Song N et al., Enhancing the Flotation Separation of G…, Langmuir : the ACS journal… (2024) | [10.1021/acs.langmuir.4c01457](https://doi.org/10.1021/acs.langmuir.4c01457) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">other organism</span> | [Song_2024_flotation_separation](drugs/toxin_lead_sulfide/pd_Song_2024_flotation_separation.md) | flotation separation · model not identified | — | Song N et al., Enhancing the Flotation Separation of G…, Langmuir : the ACS journal… (2024) | [10.1021/acs.langmuir.4c01457](https://doi.org/10.1021/acs.langmuir.4c01457) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

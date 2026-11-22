@@ -16,7 +16,7 @@ Yang B, Lu Y, Zheng J, Zhu J, He J, Zhao D et al. Pharmacokinetics of the prodru
 
 ## Population and dosing
 
-**Population:** beagle dogs · condition healthy · n = &lt;|begin_of_text|&gt;.
+**Population:** beagle dogs · condition healthy.
 
 **Dosed compound ≠ measured compound:** dosed thiamphenicol glycinate, measured thiamphenicol.
 

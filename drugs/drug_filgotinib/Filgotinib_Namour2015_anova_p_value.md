@@ -4,11 +4,11 @@
 
 # filgotinib — `Filgotinib_Namour2015_anova_p_value`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:23 UTC (Rejected), but the paper was screened again on 2026-10-07 00:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; aUC∞ and AUCt have no unit.
 
-<div class="pk-model-meta" hidden drug="filgotinib" model-id="Filgotinib_Namour2015_anova_p_value" status="needs_review" stale="true" population="healthy adults and patients with rheumatoid arthritis" measured-compound="filgotinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="filgotinib" model-id="Filgotinib_Namour2015_anova_p_value" status="needs_review" stale="false" population="healthy adults and patients with rheumatoid arthritis" measured-compound="filgotinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Namour F, Diderichsen PM, Cox E, Vayssière B, Van der Aa A, Tasset C et al. Pharmacokinetics and Pharmacokinetic/Pharmacodynamic Modeling of Filgotinib (GLPG0634), a Selective JAK1 Inhibitor, in Support of Phase IIB Dose Selection. Clinical pharmacokinetics 54(8):859–874 (2015).
@@ -40,7 +40,7 @@ Namour F, Diderichsen PM, Cox E, Vayssière B, Van der Aa A, Tasset C et al. Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Namour F, Diderichsen PM, Cox E, Vayssière B, Van der Aa A, Tasset C et al. Pha
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; aUC∞ and AUCt have no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax, AUC∞, AUCt and Ct), so that value has no SI equivalent.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax, AUC∞, AUCt and Ct), so that value has no SI equivalent. Extracted — filgotinib: Cmax 83 ng/mL, AUC∞ 348 ng × h/mL, t1/2z 5.72 h, AUCt 758 ng × h/mL, Ct 9.52 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has filgotinib → active metabolite (metabolism), the second reading filgotinib → filgotinib metabolite (metabolism); it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 

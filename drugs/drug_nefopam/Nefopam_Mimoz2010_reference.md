@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;nefopam&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/&quot;},{&quot;label&quot;:&quot;Mimoz_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nefopam_Djerada2014_reference&quot;,&quot;label&quot;:&quot;Djerada_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Djerada2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nefopam_Djerada2014_reference&quot;,&quot;label&quot;:&quot;Djerada_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Djerada2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Mimoz O, Chauvet S, Grégoire N, Marchand S, Le Guern ME, Saleh A et al. Nefopam
 
 ## Population and dosing
 
-**Population:** adults with end-stage renal disease · condition end-stage renal disease · age group adult · n = — I need to output JSON, so I must ensure the JSON is valid. Let's re-read the output format override: 'Return ONLY a JSON object matching the supplied schema. Put each value in its OWN named field — never repeat a field name as a value, never pack several values into one string.' This usually means the keys are the exact ones from the prompt, but in JSON. 'compounds' and 'links' must be arrays of objects because 'never pack several values into one string'..
+**Population:** adults with end-stage renal disease · condition end-stage renal disease · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed nefopam, measured desmethyl-nefopam.
 

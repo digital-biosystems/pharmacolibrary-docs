@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The volume of distribution for clozapine was extracted as 0.21 mL, a physiologically implausible value due to abstract-only extraction.
+> Clozapine’s reported distribution volume of 0.21 mL produced an implausible clearance-to-volume magnitude, so the record was rejected.
 
 <div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_FunguettoRibeiro2023_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="clozapine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Funguetto-Ribeiro AC, Maciel TR, Lunardi AG, Gomes DB, Ibarra M, Haas SE. Clozap
 
 ### Reviewer guidance
 
-**The volume of distribution for clozapine was extracted as 0.21 mL, a physiologically implausible value due to abstract-only extraction.**
+**Clozapine’s reported distribution volume of 0.21 mL produced an implausible clearance-to-volume magnitude, so the record was rejected.**
 
-The record identifies a volume of distribution of 0.21 mL for clozapine in male Wistar rats. This value falls outside the physiological window, indicating a likely scale or unit extraction error. The record is based solely on the paper's abstract, meaning the summary statistics stand in for a fitted model. Extracted — clozapine: V 0.21 mL.
+The parameter is V, a volume of distribution based on drug concentration, recorded as 0.21 mL; the rejection attributes the out-of-range clearance-to-volume magnitude to a unit/scale extraction error. The record came from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disagreed about whether the volume value was present, treated the dose compound and primary analyte as unknown, and supplied a dose of 5. Extracted — clozapine: V 0.21 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clozapine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

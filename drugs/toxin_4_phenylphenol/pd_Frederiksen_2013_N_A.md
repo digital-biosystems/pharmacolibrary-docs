@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a description of the mechanism or specific pharmacodynamic parameters for 4-phenylphenol. No drug concentrations, response relationships, or kinetic values were found in the available excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Frederiksen_2013`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

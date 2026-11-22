@@ -16,7 +16,7 @@ Teclistamab is a bispecific monoclonal antibody used to treat relapsed and refra
 
 ## Start here
 
-> **Miao_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with relapsed/refractory multiple myeloma, n = &gt;=338. [Run it in the simulator](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md?tab=Simulation) · [record](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md)
+> **Miao_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with relapsed/refractory multiple myeloma. [Run it in the simulator](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md?tab=Simulation) · [record](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -25,15 +25,6 @@ Teclistamab is a bispecific monoclonal antibody used to treat relapsed and refra
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub> | [Miao_2023_reference](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Miao X et al., Population Pharmacokinetics and Exposur…, Targeted oncology (2023) | [10.1007/s11523-023-00989-z](https://doi.org/10.1007/s11523-023-00989-z) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=teclistamab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD3D (antibody), TNFRSF17 (antibody).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

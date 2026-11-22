@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided text identifies the driver compound as nitric_acid acting on a continuous nitric_acid response, but does not specify the pharmacodynamic mechanism, effect direction, or any quantitative potency and rate parameters.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Yari_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/&quot;},{&quot;label&quot;:&quot;Alberts_1978 \u00b7 j_s_22_u&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Groselj2016_reference&quot;,&quot;label&quot;:&quot;Groselj_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Groselj2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_ii&quot;,&quot;label&quot;:&quot;Kramer_1978_ii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_ii.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_ii&quot;,&quot;label&quot;:&quot;Kramer_1978_ii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_ii.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Alberts1979_reference&quot;,&quot;label&quot;:&quot;Alberts_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Alberts1979_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Groselj2016_reference&quot;,&quot;label&quot;:&quot;Groselj_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Groselj2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Milevoj2026_reference&quot;,&quot;label&quot;:&quot;Milevoj_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Milevoj2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Ryynnen1998_reference&quot;,&quot;label&quot;:&quot;Ryyn\u00e4nen_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Ryynnen1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yee1983_cumulative_cisplatin_dosage_300_mg_m&quot;,&quot;label&quot;:&quot;Yee_1983_cumulative_cisplatin_dosage_300_mg_m&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yee1983_cumulative_cisplatin_dosage_300_mg_m.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yee1983_cumulative_cisplatin_dosage_of_300_mg_m_al&quot;,&quot;label&quot;:&quot;Yee_1983_cumulative_cisplatin_dosage_of_300_mg_m_all_patients&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yee1983_cumulative_cisplatin_dosage_of_300_mg_m_al.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yee1983_cumulative_cisplatin_dosage_of_300_mg_m_pa&quot;,&quot;label&quot;:&quot;Yee_1983_cumulative_cisplatin_dosage_of_300_mg_m_patients_3_yr_old&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yee1983_cumulative_cisplatin_dosage_of_300_mg_m_pa.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yee1983_cumulative_cisplatin_dosage_of_300_mg_m_pa&quot;,&quot;label&quot;:&quot;Yee_1983_cumulative_cisplatin_dosage_of_300_mg_m_patients_8_yr_old&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yee1983_cumulative_cisplatin_dosage_of_300_mg_m_pa.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete; cL, Vnorm, Q and Qb have no unit (+1 more).
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_j_s_22_u" status="needs_review" stale="false" population="cancer patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_j_s_22_u" status="needs_review" stale="false" population="adults" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomycin pharmacokinetics in man. I. Intravenous administration. Cancer chemotherapy and pharmacology 1(3):177–181 (1978).
@@ -17,7 +17,7 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · age group adult · n = &gt;=10.
+**Population:** adults · age group adult · n = 9.
 
 **Dosing:** 13.7, 19.9 U/M2, iv, single.
 
@@ -25,7 +25,7 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,17 +33,18 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| ta t1/2 min | t1/2z | 73.9 | min |
-| CXT mU · min/ml | CL | 386.7 |  |
-| Va L/M2 | Vnorm | 36.3 |  |
-| Qa ml/min/m2 | Q | 40.3 |  |
+| ta t1/2 min | t1/2α | 73.9 | min |
+| tb t1/2 min | t1/2z | 623.9 | min |
+| Va L/M2 | Vnorm | 36.3 | L/M2 |
+| Qa ml/min/m2 | Q | 40.3 | ml/min/m2 |
 | 24-h urinary excretion % dose | fe | 11.6 |  |
-| Qe ml/min/m2 | Qb | 5.82 |  |
+| Qe ml/min/m2 | CLnorm | 5.82 | ml/min/m2 |
+| creatinine clearance | CL | 70.0 | ml/min |
 | Vd(L) Younger Patients AVG | V | 32.17 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +54,11 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; cL, Vnorm, Q and Qb have no unit (+1 more).**
+**This paper's disposition core is incomplete.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Groselj_2021) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — bleomycin: t1/2z 73.9 min, CL 387, Vnorm 36.3, Q 40.3, fe 11.6, Qb 5.82, V 32.2 L.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Bitran_1985, Groselj_2021) cannot stand in for this paper's evidence. Extracted — bleomycin: t1/2α 73.9 min, t1/2z 624 min, Vnorm 36.3 L/M2, Q 40.3 ml/min/m2, fe 11.6, CLnorm 5.82 ml/min/m2, CL 70 ml/min, V 32.2 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of qe ml/min/m2: this record has 5.82, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cxt mu: this record has none, the second reading 386.7; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,12 +66,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| ta t1/2 min | `Q57` · t1/2z | 73.9 | min | 4434 | s | h | llm_confirmed (0.6) | Alberts_1978_table_p3_1:row8:col1 |
-| CXT mU · min/ml | `Q22` · CL | 386.7 |  |  |  |  | llm (0.6) | Alberts_1978_table_p3_1:row8:col3 |
-| Va L/M2 | `Q352` · Vnorm | 36.3 |  |  |  |  | llm (0.6) | Alberts_1978_table_p3_1:row8:col5 |
-| Qa ml/min/m2 | `Q30` · Q | 40.3 |  |  |  |  | llm (0.6) | Alberts_1978_table_p3_1:row8:col6 |
-| 24-h urinary excretion % dose | `Q44` · fe | 11.6 |  |  |  |  | llm_confirmed (0.6) | Alberts_1978_table_p3_1:row8:col7 |
-| Qe ml/min/m2 | `Q54` · Qb | 5.82 |  |  |  |  | llm (0.6) | Alberts_1978_table_p3_1:row8:col8 |
+| ta t1/2 min | `Q59` · t1/2α | 73.9 | min | 4434 | s | h | llm_corrected (0.6) | Alberts_1978_table_p3_1:row8:col1 |
+| tb t1/2 min | `Q57` · t1/2z | 623.9 | min | 3.743e+04 | s | h | llm_confirmed (0.6) | Alberts_1978_table_p3_1:row8:col2 |
+| Va L/M2 | `Q352` · Vnorm | 36.3 | L/M2 | 0.0628 | m3 | l/m2 | llm (0.6) | Alberts_1978_table_p3_1:row8:col5 |
+| Qa ml/min/m2 | `Q30` · Q | 40.3 | ml/min/m2 | 1.162e-06 | m3/s | ml/(min·m2) | llm (0.6) | Alberts_1978_table_p3_1:row8:col6 |
+| 24-h urinary excretion % dose | `Q44` · fe | 11.6 |  | 0.116 |  |  | llm_confirmed (0.6) | Alberts_1978_table_p3_1:row8:col7 |
+| Qe ml/min/m2 | `Q354` · CLnorm | 5.82 | ml/min/m2 | 1.678e-07 | m3/s | ml/(min·m2) | llm (0.6) | Alberts_1978_table_p3_1:row8:col8 |
+| creatinine clearance | `Q22` · CL | 70.0 | ml/min | 1.167e-06 | m3/s | L/h | review_gapfill (0.7) | Bitran_1985:review |
 | Vd(L) Younger Patients AVG | `Q61` · V | 32.17 | L | 0.03217 | m3 | L | review_gapfill (0.7) | Groselj_2021:review |
 
 <details class="legend">
@@ -81,19 +83,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'j. s. 22 u' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q57 ('tb t1/2 min', value '623.9') — already have one for this compound
+- dropped unlinked row (NIL): 'CXT mU · min/ml' — extend the ontology if this is a real PK parameter (source ['Alberts_1978_table_p3_1:row8:col3'])
 - dropped unlinked row (NIL): 'CXTa' — extend the ontology if this is a real PK parameter (source ['Alberts_1978_table_p3_1:row8:col4'])
-- NIL: refused to back-fill base 't1/2z' from footnote/prose loose number 4.0 (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 15 (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- implicit units: 'ta t1/2 min' → min (from the popPK convention: 'The parameter is t1/2 (half-life). The value 73.9 is consistent with the text reporting initial half-lives in minutes (e')
-- implicit units: 'CXT mU · min/ml' — the LLM proposed 'mU.min/ml', whose dimension does not fit Q22; left unset
-- implicit units: 'Va L/M2' — the LLM proposed 'L/m2', whose dimension does not fit Q352; left unset
-- implicit units: 'Qa ml/min/m2' — the LLM proposed 'ml/min/m2', whose dimension does not fit Q30; left unset
-- implicit units: 'Qe ml/min/m2' — the LLM proposed 'ml/min/m2', whose dimension does not fit Q54; left unset
+- '24-h urinary excretion % dose' → Q44: printed without a unit and above 1 — read as a percentage
+- implicit units: 'ta t1/2 min' → min (from the paper text: "Abstract: 'Bleomycin initial and terminal plasma half-lives ... were 24.4 +_ 4.0 min, 23 7.5 + 8.5 min...'")
+- implicit units: 'tb t1/2 min' → min (from the paper text: "Abstract: 'Bleomycin initial and terminal plasma half-lives ... were 24.4 +_ 4.0 min, 23 7.5 + 8.5 min...'")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bleomycin
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: 'j. s. 22 u' subgroup of Alberts_1978 (paper reports 9 populations: e. g. 25 u, e. m. 25 u, h. h. 24 u, j. s. 22 u, m. a. 30 u, m. m. 30 u, m. r. 24 u, s. h. 30 u, s. r. 23 u)
+- gap-filled Q22 (CL) from Bitran_1985's review values (primary lacked it)
 - gap-filled Q61 (V) from Groselj_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
@@ -108,14 +106,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[qe ml/min/m2]` | 5.82 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[va l/m2].parameter_id` | Q352 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[cxt mu]` |  | 386.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qa]` | 40.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qe].parameter_id` | Q354 | Q26 | mismatch |
+| `gpt-oss-120b` | `parameters[va].parameter_id` | Q352 | Q61 | mismatch |
 
 </details>
 
@@ -132,14 +132,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q57 | pass | [time] |  | ['Alberts_1978_table_p3_1:row8:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bitran_1985:review'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Alberts_1978_table_p3_1:row8:col6'] |
+| C5_dimension_Q352 | pass | [length] ** 3 |  | ['Alberts_1978_table_p3_1:row8:col5'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Alberts_1978_table_p3_1:row8:col8'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Alberts_1978_table_p3_1:row8:col2'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Alberts_1978_table_p3_1:row8:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Groselj_2021:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['Alberts_1978_table_p3_1:row8:col3'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] |  | ['Alberts_1978_table_p3_1:row8:col6'] |
-| C5_unit_missing_Q352 | fail | [length] ** 3 |  | ['Alberts_1978_table_p3_1:row8:col5'] |
-| C5_unit_missing_Q54 | fail | [length] ** 3 / [time] |  | ['Alberts_1978_table_p3_1:row8:col8'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 386.7 | ['Alberts_1978_table_p3_1:row8:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70 | ['Bitran_1985:review'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.2 L/h | ['Bitran_1985:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 32.2 L | ['Groselj_2021:review'] |
 
 <details class="legend">
@@ -174,4 +176,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Alberts1978_j_s_22_u&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Alberts1978_j_s_22_u%0APaper%3A%20Alberts_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Alberts1978_j_s_22_u%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 08:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 06:12 UTC</sub>

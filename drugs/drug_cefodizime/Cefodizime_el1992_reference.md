@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefodizime&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/&quot;},{&quot;label&quot;:&quot;el_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefodizime_SchferKorting1986_reference&quot;,&quot;label&quot;:&quot;Sch\u00e4fer-Korting_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefodizime_SchferKorting1986_reference&quot;,&quot;label&quot;:&quot;Sch\u00e4fer-Korting_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefodizime_el1992_reference&quot;,&quot;label&quot;:&quot;el_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefodizime/Cefodizime_el1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefodizime — `Cefodizime_el1992_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:38 UTC (Needs review), but the paper was screened again on 2026-10-07 11:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The abstract-only record for cefodizime has conflicting parameter mappings and an AUC∞ value of 322 µg·h/mL that the second reader could not verify.
 
-<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_el1992_reference" status="extracted" stale="true" population="healthy males and patients with liver cirrhosis and ascites" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_el1992_reference" status="needs_review" stale="false" population="healthy males and patients with liver cirrhosis and ascites" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 el Touny M, el Guinaidy M, Abdel Bary M, Osman L, Sabbour MS. Pharmacokinetics of cefodizime in patients with liver cirrhosis and ascites. Chemotherapy 38(4):201–205 (1992).
@@ -17,16 +17,20 @@ el Touny M, el Guinaidy M, Abdel Bary M, Osman L, Sabbour MS. Pharmacokinetics o
 
 ## Population and dosing
 
-**Population:** healthy males and patients with liver cirrhosis and ascites · age group adult · n = , n_subjects": "12", "condition": "liver cirrhosis and ascites", "species": "human", "compounds": ["cefodizime | parent | yes | yes | yes"], "links":.
+**Population:** healthy males and patients with liver cirrhosis and ascites · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_cefodizime/Cefodizime_el1992_reference/Cefodizime_el1992_reference.svg" alt="Cefodizime_el1992_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | elimination half-life | t1/2z | 2.7 | h |
@@ -35,7 +39,7 @@ el Touny M, el Guinaidy M, Abdel Bary M, Osman L, Sabbour MS. Pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +49,13 @@ el Touny M, el Guinaidy M, Abdel Bary M, Osman L, Sabbour MS. Pharmacokinetics o
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**The abstract-only record for cefodizime has conflicting parameter mappings and an AUC∞ value of 322 µg·h/mL that the second reader could not verify.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefodizime: t1/2z 2.7 h, V 0.172 l/kg, AUC∞ 322 (micrograms/ml).h.
+The record was constructed from the paper's abstract, so summary statistics replace a fitted model. The elimination half-life is listed as 2.7 h, and the terminal volume of distribution is 0.172 L/kg. A second reader disputed the verdict, disagreeing on the parameter mapping for the area under the curve, where the second reader found no corresponding value while this record lists 322 µg·h/mL. Extracted — cefodizime: t1/2z 2.7 h, V 0.172 l/kg, AUC∞ 322 (micrograms/ml).h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the serum concentration-time curve: this record has 322, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -74,6 +78,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - dropped duplicate Q17 ('area under the AF concentration-time curve (AUC0-infinity ascites)', value 141) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cefodizime
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- derived CL=3.09092 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in el_1992_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
@@ -116,6 +121,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 12 L | ['el_1992:abstract', 'el_1992:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=cefodizime) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -131,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -142,7 +160,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 2000 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 2000 mg parenteral (J01DD09) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_cefodizime/Cefodizime_el1992_reference/Cefodizime_el1992_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_cefodizime/Cefodizime_el1992_reference/Cefodizime_el1992_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Cefodizime_el1992_reference_params.json` · controls `Cefodizime_el1992_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

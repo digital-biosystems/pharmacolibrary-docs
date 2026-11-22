@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Semere_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_2_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023_2 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_2_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_2_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023_2 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_2_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rifabutin clearance of 16.2 L/h is physiologically implausible, indicating a unit or scale extraction error that led to rejection.
+> Rifabutin clearance of 16.2 L/h is implausibly high for children, indicating a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Semere2024_reference" status="rejected" stale="false" population="HIV/TB co-infected children" measured-compound="rifabutin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Semere Gebreyesus M, Wasmann RE, McIlleron H, Oladokun R, Okonkwo P, Wiesner L e
 
 ## Population and dosing
 
-**Population:** HIV/TB co-infected children · condition HIV/TB co-infection · age group child · n = &gt;=28.
+**Population:** HIV/TB co-infected children · condition HIV/TB co-infection · age group child.
 
 **Dosing:** 175, 350, 1050, 1400 mg, oral, multiple, every 24 h.
 
@@ -40,7 +40,7 @@ Semere Gebreyesus M, Wasmann RE, McIlleron H, Oladokun R, Okonkwo P, Wiesner L e
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Semere Gebreyesus M, Wasmann RE, McIlleron H, Oladokun R, Okonkwo P, Wiesner L e
 
 ### Reviewer guidance
 
-**Rifabutin clearance of 16.2 L/h is physiologically implausible, indicating a unit or scale extraction error that led to rejection.**
+**Rifabutin clearance of 16.2 L/h is implausibly high for children, indicating a unit or scale extraction error.**
 
-A clearance of 16.2 L/h is excessively high for rifabutin, suggesting the value likely represents a different unit or contains a transcription error. This implausible magnitude triggered the failure of the physiological window check. Additionally, no value was extracted for the absolute bioavailability parameter, so a library placeholder would have been used. Extracted — rifabutin: CL 16.2 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+The record assigns a total clearance of 16.2 L/h to rifabutin, which falls outside the physiological window for this pediatric population. The second reader disputed the metabolite identity, identifying it as 25-o-desacetyl rifabutin rather than des-rifabutin. Additionally, there was disagreement on whether the clearance value was correctly extracted or attributed to the compound. Extracted — rifabutin: CL 16.2 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rifabutin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rifabutin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -146,20 +146,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['rifabutin', 'des-rifabutin', 'metabolism']] | [['rifabutin', '25-o-desacetyl rifabutin', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[bioavailability, f]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability, f]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance conversion]` | 16.2 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance conversion]` |  | 16.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[zwfa effect (each point below -3) on bioavailabilityd]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | rifabutin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | rifabutin | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['rifabutin', 'des-rifabutin', 'metabolism']] | [['rifabutin', '25-o-desacetyl rifabutin', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability, f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability, f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance conversion]` | 16.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance conversion]` |  | 16.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[zwfa effect (each point below -3) on bioavailabilityd]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | rifabutin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rifabutin | unknown | mismatch |
 
 </details>
 

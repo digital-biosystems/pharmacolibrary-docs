@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;paroxetine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paroxetine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paroxetine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # paroxetine
 
@@ -25,13 +25,13 @@ Paroxetine is an antidepressant belonging to the selective serotonin reuptake in
 
 ## Start here
 
-> **Chen_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md?tab=Simulation) · [record](drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md)
+> **Zhang_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md?tab=Simulation) · [record](drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Zhang_2025 · CL/F</text><circle cx="241.1" cy="30.0" r="4" fill="#ef6c00"><title>Zhang_2025 · CL/F: 19.6 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yan_2026 · CL/F</text><circle cx="270.7" cy="46.0" r="4" fill="#ef6c00"><title>Yan_2026 · CL/F: 28.9 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Chen_2025 · CL/F</text><circle cx="391.1" cy="62.0" r="4" fill="#78909c"><title>Chen_2025 · CL/F: 141 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Zhang_2025 · V/F</text><circle cx="241.5" cy="30.0" r="4" fill="#ef6c00"><title>Zhang_2025 · V/F: 197 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yan_2026 · V/F</text><circle cx="276.0" cy="46.0" r="4" fill="#ef6c00"><title>Yan_2026 · V/F: 310 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Chen_2025 · V/F</text><circle cx="393.8" cy="62.0" r="4" fill="#78909c"><title>Chen_2025 · V/F: 1460 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Zhang_2025 · CL/F</text><circle cx="292.3" cy="30.0" r="4" fill="#78909c"><title>Zhang_2025 · CL/F: 19.6 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yan_2026 · CL/F</text><circle cx="351.3" cy="46.0" r="4" fill="#ef6c00"><title>Yan_2026 · CL/F: 28.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Zhang_2025 · V/F</text><circle cx="293.1" cy="30.0" r="4" fill="#78909c"><title>Zhang_2025 · V/F: 197 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yan_2026 · V/F</text><circle cx="362.0" cy="46.0" r="4" fill="#ef6c00"><title>Yan_2026 · V/F: 310 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,11 +39,11 @@ Paroxetine is an antidepressant belonging to the selective serotonin reuptake in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Chen_2025_reference](drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chen X et al., Drug-Drug Interactions and Initial Dosa…, Drug design, development an… (2025) | [10.2147/DDDT.S538856](https://doi.org/10.2147/DDDT.S538856) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Zhang_2025_reference](drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Yan_2026_reference](drugs/drug_paroxetine/Paroxetine_Yan2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026) | [10.2147/DDDT.S601238](https://doi.org/10.2147/DDDT.S601238) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Zhang_2025_reference](drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Feng_2006_base](drugs/drug_paroxetine/Paroxetine_Feng2006_base.md) | — | 1-compartment (no model) | 6 | Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2006.02629.x](https://doi.org/10.1111/j.1365-2125.2006.02629.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_paroxetine/Paroxetine_Feng2006_final.md) | — | 1-compartment (no model) | 6 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Chen_2025_reference](drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chen X et al., Drug-Drug Interactions and Initial Dosa…, Drug design, development an… (2025) | [10.2147/DDDT.S538856](https://doi.org/10.2147/DDDT.S538856) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Feng_2006_base](drugs/drug_paroxetine/Paroxetine_Feng2006_base.md) | — | 1-compartment (no model) | 6 | Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2006.02629.x](https://doi.org/10.1111/j.1365-2125.2006.02629.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_paroxetine/Paroxetine_Feng2006_final.md) | — | 1-compartment (no model) | 6 (+2 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Huang_2025_reference](drugs/drug_paroxetine/Paroxetine_Huang2025_reference.md) | — | 1-compartment (no model) | 0 | Huang W et al., Defining the therapeutic reference rang…, Journal of pharmaceutical s… (2025) | [10.1016/j.xphs.2025.103893](https://doi.org/10.1016/j.xphs.2025.103893) |
 
 ## Pharmacodynamics (PD)
@@ -54,28 +54,6 @@ Paroxetine is an antidepressant belonging to the selective serotonin reuptake in
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2016_hot_flashes](drugs/drug_paroxetine/pd_Li_2016_hot_flashes.md) | hot flashes ← paroxetine · direct Emax (saturable) effect | — | Li L et al., Comparative efficacy of nonhormonal dru…, European journal of clinica… (2016) | [10.1007/s00228-016-2090-5](https://doi.org/10.1007/s00228-016-2090-5) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Shigetome_2025_EFF](drugs/drug_paroxetine/pd_Shigetome_2025_EFF.md) | enhancement rate in depression severity ← paroxetine · direct Emax (saturable) effect | — | Shigetome K et al., Effect of Cumulative Exposure on the Ef…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70032](https://doi.org/10.1002/psp4.70032) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Simoons_2020_OCC](drugs/drug_paroxetine/pd_Simoons_2020_OCC.md) | SERT-occupancy ← paroxetine · direct Emax (saturable) effect | — | Simoons M et al., Modification of the association between…, Psychiatric genetics (2020) | [10.1097/YPG.0000000000000244](https://doi.org/10.1097/YPG.0000000000000244) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=paroxetine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (binder), ADRA2A (binder), ADRB1 (inhibitor), CHRM1 (inhibitor), DRD1 (other/unknown), DRD2 (other/unknown), HRH1 (inhibitor), HTR2A (target), HTR2B (target), SLC6A2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -89,13 +67,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-22 12:50 | 5:27 | 3/3/0 | 4/0/0 | 0/0/0 | 200,556/12,396 | einfracz / qwen3.8-27b | 17 | 2/8 | 10/0 | 0 |
+| 2026-10-22 12:50 | 5:27 | 2/4/0 | 4/0/0 | 0/0/0 | 200,556/12,396 | einfracz / qwen3.8-27b | 17 | 2/8 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 79 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 6  ·  extracted 1  ·  needs review 2  ·  rejected 3  ·  stale 2
+- **records:** 6  ·  extracted 1  ·  needs review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

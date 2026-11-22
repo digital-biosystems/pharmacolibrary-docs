@@ -16,7 +16,7 @@ Wang Q, Banerjee K, Vasilinin G, Marier JF, Gibbons JA. Population Pharmacokinet
 
 ## Population and dosing
 
-**Population:** patients with hematologic malignancies (AML, ALL, MDS) · condition hematologic malignancies · age group adult · n = &gt;&lt;/.
+**Population:** patients with hematologic malignancies (AML, ALL, MDS) · condition hematologic malignancies · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed CPX-351, measured cytarabine.
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;nifurtimox&quot;,&quot;href&quot;:&quot;drugs/drug_nifurtimox/&quot;},{&quot;label&quot;:&quot;Boberg_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifurtimox_Boberg2025_reference&quot;,&quot;label&quot;:&quot;Boberg_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifurtimox_Boberg2025_reference&quot;,&quot;label&quot;:&quot;Boberg_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nifurtimox — `Nifurtimox_Boberg2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="nifurtimox" model-id="Nifurtimox_Boberg2025_reference" status="simulated" stale="false" population="" measured-compound="nifurtimox" parameterization="apparent" topology="2C"></div>
+> Record rejected because the source paper describes eflornithine PK, not nifurtimox, making the extracted nifurtimox parameters invalid.
+
+<div class="pk-model-meta" hidden drug="nifurtimox" model-id="Nifurtimox_Boberg2025_reference" status="rejected" stale="false" population="" measured-compound="nifurtimox" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Boberg M, Na-Bangchang K, Ashton M, Jansson-Löfmark R. Pharmacokinetics of Racemic Eflornithine in Human Plasma and Cerebrospinal Fluid: Clinical Perspectives for L-eflornithine Against Human African Trypanosomiasis. The AAPS journal 27(6):139 (2025).
@@ -27,6 +29,8 @@ Boberg M, Na-Bangchang K, Ashton M, Jansson-Löfmark R. Pharmacokinetics of Race
 <figure class="pk-models-diagram"><img src="drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference/Nifurtimox_Boberg2025_reference.svg" alt="Nifurtimox_Boberg2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | L-eflornithine CL/F | CL/F | 17.2 | L/h |
@@ -38,7 +42,7 @@ Boberg M, Na-Bangchang K, Ashton M, Jansson-Löfmark R. Pharmacokinetics of Race
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +52,13 @@ Boberg M, Na-Bangchang K, Ashton M, Jansson-Löfmark R. Pharmacokinetics of Race
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Record rejected because the source paper describes eflornithine PK, not nifurtimox, making the extracted nifurtimox parameters invalid.**
+
+The source document models eflornithine, with nifurtimox appearing only as a co-administered partner and lacking its own disposition parameters. The label for the clearance parameter is verbatim 'L-eflornithine CL/F', confirming the extracted values belong to the wrong molecule. Additionally, the record is disputed by a second reader, who assigned different values or nulls for several fields including Q/F and kabs. Extracted — nifurtimox: CL/F 17.2 L/h, V/F 55 L, V2/F 66.3 L, Q/F 8.01 L/h, kabs 1.16 h -1, tlag 0.447 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 16.6, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -132,15 +138,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=nifurtimox) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | nifurtimox (or metabolite) | paper about another drug |  | paper subject is not nifurtimox: the paper is about another drug; this one is a co-medication or covariate: This is a PK model of eflornithine (L/D enantiomers); nifurtimox is only a co-administered combination partner with no nifurtimox disposition parameters reporte |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=nifurtimox) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,63 +159,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference/Nifurtimox_Boberg2025_reference_modelica.zip" download>Nifurtimox_Boberg2025_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference/Nifurtimox_Boberg2025_reference_fmi.zip" download>Nifurtimox_Boberg2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference/Nifurtimox_Boberg2025_reference_matlab.zip" download>Nifurtimox_Boberg2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference/Nifurtimox_Boberg2025_reference_matlab_simbio.zip" download>Nifurtimox_Boberg2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference/Nifurtimox_Boberg2025_reference_sbml.zip" download>Nifurtimox_Boberg2025_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference/Nifurtimox_Boberg2025_reference_cellml.zip" download>Nifurtimox_Boberg2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2873 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 1609 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0007 | kg |
-| input | model | `Cl` | 4.778e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0007857 | m3/kg |
-| input | model | `k12` | 4.045e-05 | 1/s |
-| input | model | `k21` | 3.356e-05 | 1/s |
-| input | model | `ka` | 0.0003222 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Boberg M, Na-Bangchang K, Ashton M, Jansson-Löfmark R. Pharmacokinetics of Racemic Eflornithine in Human Plasma and Cerebrospinal Fluid: Clinical Perspectives for L-eflornithine Against Human African Trypanosomiasis. The AAPS journal 27(6):139 (2025). [doi:10.1208/s12248-025-01123-9](https://doi.org/10.1208/s12248-025-01123-9)
-
-**This record:** Pharmacolibrary, model `Nifurtimox_Boberg2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_NifurtimoxBoberg2025reference,
-  title  = {{Pharmacolibrary model Nifurtimox_Boberg2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference},
-  note   = {Parameters from doi:10.1208/s12248-025-01123-9},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -4,11 +4,11 @@
 
 # pyrimethamine — `Pyrimethamine_de2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 08:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pyrimethamine clearance was defined as -20.2, an impossible negative value indicating an error in the covariate shift for the Mozambique cohort.
+> Pyrimethamine clearance was defined as -20.2, an impossible negative value indicating an error in the covariate shift for the Mozambique cohort.
 
-<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_de2017_reference" status="rejected" stale="true" population="pregnant and postpartum women receiving IPTp" measured-compound="pyrimethamine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_de2017_reference" status="rejected" stale="false" population="pregnant and postpartum women receiving IPTp" measured-compound="pyrimethamine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 de Kock M, Tarning J, Workman L, Nyunt MM, Adam I, Barnes KI et al. Pharmacokinetics of Sulfadoxine and Pyrimethamine for Intermittent Preventive Treatment of Malaria During Pregnancy and After Delivery. CPT: pharmacometrics & systems pharmacology 6(7):430–438 (2017).
@@ -46,7 +46,7 @@ de Kock M, Tarning J, Workman L, Nyunt MM, Adam I, Barnes KI et al. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

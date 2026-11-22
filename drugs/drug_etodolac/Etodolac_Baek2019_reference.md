@@ -5,11 +5,11 @@
 
 # etodolac — `Etodolac_Baek2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-07 00:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="etodolac" model-id="Etodolac_Baek2019_reference" status="needs_review" stale="true" population="healthy beagle dogs" measured-compound="etodolac" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="etodolac" model-id="Etodolac_Baek2019_reference" status="needs_review" stale="false" population="healthy beagle dogs" measured-compound="etodolac" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Baek IH. Pharmacokinetic modeling and simulation of etodolac following single oral administration in dogs. Xenobiotica; the fate of foreign compounds in biological systems 49(8):981–986 (2019).
@@ -41,7 +41,7 @@ Baek IH. Pharmacokinetic modeling and simulation of etodolac following single or
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Baek IH. Pharmacokinetic modeling and simulation of etodolac following single or
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etodolac: tmax 0.85 h, kabs 1.49 h-1, t1/2z 39.5 h, AUC ratio 1.6, AUCt 408 ng·hr/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucτ: this record has 408.18, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

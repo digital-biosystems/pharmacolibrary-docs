@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide sufficient information to determine the pharmacodynamic mechanism, key potency, or rate parameters for the effect of roridin A on white blood cell (WBC) response, as no full text is available and the extraction record lacks specific model details.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Hughes_1989`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/&quot;},{&quot;label&quot;:&quot;Saari_2012 \u00b7 population_estimates&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxycodone — `Oxycodone_Saari2012_population_estimates`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:30 UTC (Rejected), but the paper was screened again on 2026-10-07 14:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The oxycodone peripheral volume of distribution has an unreadable unit label that blocks SI conversion.
+> Intercompartment clearance Q2 is assigned unit litre, conflicting with its required clearance dimension.
 
-<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Saari2012_population_estimates" status="rejected" stale="true" population="individuals aged 19-89 years" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Saari2012_population_estimates" status="rejected" stale="false" population="individuals aged 19-89 years" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Saari TI, Ihmsen H, Neuvonen PJ, Olkkola KT, Schwilden H. Oxycodone clearance is markedly reduced with advancing age: a population pharmacokinetic study. British journal of anaesthesia 108(3):491–498 (2012).
@@ -42,7 +42,7 @@ Saari TI, Ihmsen H, Neuvonen PJ, Olkkola KT, Schwilden H. Oxycodone clearance is
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Saari TI, Ihmsen H, Neuvonen PJ, Olkkola KT, Schwilden H. Oxycodone clearance is
 
 ### Reviewer guidance
 
-**The oxycodone peripheral volume of distribution has an unreadable unit label that blocks SI conversion.**
+**Intercompartment clearance Q2 is assigned unit litre, conflicting with its required clearance dimension.**
 
-The parameter meaning describes a volume of distribution, but the verbatim label lists 'litre h 21', which is not a recognizable pharmacokinetic unit and prevents conversion to standard units. The record contains a dimension mismatch on this structural parameter. Additionally, a second reader disagreed on the total clearance, recording it as null instead of the 38.03 L/h in the record. Extracted — oxycodone: Q2 161 litre, V3 982 L, V 124 litre, t1/2α 2.9 min, t1/2β 4.1 h, Vss 285 litre, CL 38 L/h.
+The record defines Q2 as the apparent intercompartment clearance with a value of 161 but lists the unit as litre. This dimensional mismatch contradicts the parameter's pharmacokinetic meaning, which requires a volume-per-time unit. Additionally, the second reader disagreed on several extracted parameters, including missing values for CL and V1. Extracted — oxycodone: Q2 161 litre, V3 982 L, V 124 litre, t1/2α 2.9 min, t1/2β 4.1 h, Vss 285 litre, CL 38 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 38.03, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Isopropyl alcohol&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/&quot;},{&quot;label&quot;:&quot;Boatman_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsopropylAlcohol_Rada2015_reference&quot;,&quot;label&quot;:&quot;Rada_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsopropylAlcohol_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsopropylAlcohol_Rada2015_reference&quot;,&quot;label&quot;:&quot;Rada_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsopropylAlcohol_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Isopropyl alcohol clearance (3033575.0 mL/hr/kg) and volume (17282.4 L/kg) are physiologically implausible, leading to rejection due to extraction errors from abstract-only data.
 
 <div class="pk-model-meta" hidden drug="Isopropyl alcohol" model-id="IsopropylAlcohol_Boatman1998_reference" status="rejected" stale="false" population="male and female Fischer F-344 rats" measured-compound="Isopropyl alcohol" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,13 @@ Boatman RJ, Perry LG, Fiorica LA, English JC, Kapp RW, Bevan C et al. Dermal abs
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Isopropyl alcohol clearance (3033575.0 mL/hr/kg) and volume (17282.4 L/kg) are physiologically implausible, leading to rejection due to extraction errors from abstract-only data.**
+
+The record reports an isopropyl alcohol clearance of 3033575.0 mL/hr/kg and volume of 17282.4 L/kg, values that are vastly beyond physiological limits for rats. These magnitudes indicate unit or scale extraction errors, likely because the model was built from the abstract alone, relying on summary statistics instead of a fitted model. Extracted — isopropyl alcohol: Kp_derm 0.77 cm/h, CL 3.03e+06 mL/hr/kg, V 1.73e+04 L/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

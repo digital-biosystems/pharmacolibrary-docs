@@ -34,7 +34,7 @@ Voclosporin is a calcineurin inhibitor used to treat lupus nephritis. It is admi
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Abdel-Kahaar_2023_reference](drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01246-2](https://doi.org/10.1007/s40262-023-01246-2) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Mayo_2014_reference](drugs/drug_voclosporin/Voclosporin_Mayo2014_reference.md) | — | 1-compartment (no model) | 2 | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Mayo_2014_reference](drugs/drug_voclosporin/Voclosporin_Mayo2014_reference.md) | — | 1-compartment (no model) | 2 | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,24 +44,6 @@ Voclosporin is a calcineurin inhibitor used to treat lupus nephritis. It is admi
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Abdel-Kahaar_2023_NODAT](drugs/drug_voclosporin/pd_Abdel_Kahaar_2023_NODAT.md) | New-onset diabetes ← Voclosporin · direct sigmoid Emax (Hill) effect | — | Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01246-2](https://doi.org/10.1007/s40262-023-01246-2) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Abdel-Kahaar_2023_Nephro](drugs/drug_voclosporin/pd_Abdel_Kahaar_2023_Nephro.md) | Nephrotoxicity ← Voclosporin · direct sigmoid Emax (Hill) effect | — | Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01246-2](https://doi.org/10.1007/s40262-023-01246-2) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Mayo_2014_CNa](drugs/drug_voclosporin/pd_Mayo_2014_CNa.md) | calcineurin activity ← voclosporin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=voclosporin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CAMLG (binder), PPP3CA (inhibitor), PPP3R1 (inhibitor), PPP3R2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -75,13 +57,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:07 | 0:56 | 1/1/0 | 2/0/0 | 0/0/0 | 119,346/8,900 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 01:07 | 0:56 | 1/1/0 | 4/0/0 | 0/0/0 | 119,346/8,900 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

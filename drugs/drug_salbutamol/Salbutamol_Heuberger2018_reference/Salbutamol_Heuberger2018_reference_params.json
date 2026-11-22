@@ -1,0 +1,45 @@
+{
+ "dose_source": "paper",
+ "model_id": "Salbutamol_Heuberger2018_reference",
+ "molar_masses": {
+  "central.C": 0.2393107
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  8.0,
+  800.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Heuberger_2018:other_prose",
+    "value_si": 100.0
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 4.861111111111111e-06,
+  "F": 0.9,
+  "MM": 0.2393107,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0014,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8e-06,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11947.09418837675
+ },
+ "reference_peaks": {
+  "central.C": 4.146067063440449e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

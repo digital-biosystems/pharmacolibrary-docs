@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Gomeni_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Davies2010_reference&quot;,&quot;label&quot;:&quot;Davies_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Davies2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ferrari2017_reference&quot;,&quot;label&quot;:&quot;Ferrari_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ferrari2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The warfarin record was held back because bioavailability and lag time were unreported, requiring unverified placeholder values instead of paper estimates.
+> Bioavailability (F) and lag time (Tlag) for warfarin were left at library defaults, lacking explicit values from the paper.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Gomeni2026_reference" status="needs_review" stale="false" population="unknown" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Gomeni2026_reference" status="needs_review" stale="false" population="adults" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gomeni R, Bressolle-Gomeni F. Deep-Learning- versus Hypothesis-Driven Modeling in Model-Informed Drug Development: A PK/PD Case Study. Journal of clinical pharmacology 66(3):e70174 (2026).
@@ -17,7 +17,7 @@ Gomeni R, Bressolle-Gomeni F. Deep-Learning- versus Hypothesis-Driven Modeling i
 
 ## Population and dosing
 
-**Population:** unknown · n = 32.
+**Population:** adults · condition healthy · age group adult.
 
 **Dosing:** 105 mg, oral, single.
 
@@ -35,9 +35,9 @@ Gomeni R, Bressolle-Gomeni F. Deep-Learning- versus Hypothesis-Driven Modeling i
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL | CL | 0.136 | L/h/70 kg |
-| V | V | 8.09 | L/70 kg |
-| ka | kabs | 0.214 | 1/h |
+| CL (L/h/70 kg) | CL | 0.136 | L/h/70 kg |
+| V (L/70 kg) | V | 8.09 | L/70 kg |
+| ka (1/h) | kabs | 0.214 | 1/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -51,9 +51,9 @@ Gomeni R, Bressolle-Gomeni F. Deep-Learning- versus Hypothesis-Driven Modeling i
 
 ### Reviewer guidance
 
-**The warfarin record was held back because bioavailability and lag time were unreported, requiring unverified placeholder values instead of paper estimates.**
+**Bioavailability (F) and lag time (Tlag) for warfarin were left at library defaults, lacking explicit values from the paper.**
 
-The single-compartment warfarin model assumes oral dosing, which necessitates bioavailability and lag time parameters. The paper only reported clearance (0.136 L/h/70 kg), volume (8.09 L/70 kg), and absorption rate (0.214 1/h). Since bioavailability and lag time were not extracted from the study, generic placeholder values were used, meaning these critical inputs were not supported by the data in this specific paper. Extracted — warfarin: CL 0.136 L/h/70 kg, V 8.09 L/70 kg, kabs 0.214 1/h.
+The model uses library placeholders for bioavailability and absorption lag time rather than estimates reported in Gomeni_2026. Consequently, these parameters are not supported by the source data, affecting the simulated pharmacokinetic profile. Extracted — warfarin: CL 0.136 L/h/70 kg, V 8.09 L/70 kg, kabs 0.214 1/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -63,9 +63,9 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.136 | L/h/70 kg | 3.778e-08 | m3/s | L/h | exact (1) | Gomeni_2026:other_prose |
-| V | `Q61` · V | 8.09 | L/70 kg | 0.00809 | m3 | L | exact (1) | Gomeni_2026:other_prose |
-| ka | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | exact (1) | Gomeni_2026:other_prose |
+| CL (L/h/70 kg) | `Q22` · CL | 0.136 | L/h/70 kg | 3.778e-08 | m3/s | L/h | exact (1) | Gomeni_2026:other_prose |
+| V (L/70 kg) | `Q61` · V | 8.09 | L/70 kg | 0.00809 | m3 | L | exact (1) | Gomeni_2026:other_prose |
+| ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | exact (1) | Gomeni_2026:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,10 +78,10 @@ Independently confirmed by `gpt-oss-120b`.
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
-- salvaged Q22 ('CL'=0.136) from results prose — parameter table was unreadable
-- salvaged Q61 ('V'=8.09) from results prose — parameter table was unreadable
-- salvaged Q49 ('ka'=0.214) from results prose — parameter table was unreadable
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL); Q61 (V)
+- salvaged Q22 ('CL (L/h/70 kg)'=0.136) from results prose — parameter table was unreadable
+- salvaged Q61 ('V (L/70 kg)'=8.09) from results prose — parameter table was unreadable
+- salvaged Q49 ('ka (1/h)'=0.214) from results prose — parameter table was unreadable
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/h/70 kg)); Q61 (V (L/70 kg))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=warfarin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
@@ -132,6 +132,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -211,4 +212,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Gomeni2026_reference&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Gomeni2026_reference%0APaper%3A%20Gomeni_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Gomeni2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 15:04 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:20 UTC</sub>

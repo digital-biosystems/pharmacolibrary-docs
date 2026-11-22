@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;ambrisentan&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/&quot;},{&quot;label&quot;:&quot;Okour_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ambrisentan_Hill2020_reference&quot;,&quot;label&quot;:&quot;Hill_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ambrisentan_Okour2023_reference&quot;,&quot;label&quot;:&quot;Okour_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ambrisentan_Hill2020_reference&quot;,&quot;label&quot;:&quot;Hill_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ambrisentan_Okour2023_reference&quot;,&quot;label&quot;:&quot;Okour_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ambrisentan parameters are apparent (F=1) because bioavailability is unknown, and defined body weight covariate effects were never simulated.
+> The ambrisentan body-weight covariate effect, valued at 1, was not tested, and a second reader disputed the recorded dose compound and primary analyte.
 
 <div class="pk-model-meta" hidden drug="ambrisentan" model-id="Ambrisentan_Okour2023_reference" status="needs_review" stale="false" population="pediatric patients with pulmonary arterial hypertension" measured-compound="ambrisentan" parameterization="apparent" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Okour M, Thapar MM, Farrell C, Lukas MA, Beghetti M, Beerahee M. Pediatric Popul
 
 ### Reviewer guidance
 
-**Ambrisentan parameters are apparent (F=1) because bioavailability is unknown, and defined body weight covariate effects were never simulated.**
+**The ambrisentan body-weight covariate effect, valued at 1, was not tested, and a second reader disputed the recorded dose compound and primary analyte.**
 
-The record lists apparent pharmacokinetic parameters (CL/F, V/F) because the model builder assumed F=1 and Fm=1 without molar correction. Although a body weight covariate effect is defined in the record, the simulation run only the reference individual. Consequently, the body weight covariate effect was not exercised during model simulation. Extracted — ambrisentan: CL/F 1.17 L/hr, V1/F 12.3 L, Q/F 0.457 L/hr, V2/F 81.3 L, kabs 2.46 1/h, tlag 0.525 hr.
+The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader marked the dose compound and primary analyte as unknown rather than ambrisentan; the cross-check was disputed, with agreement 0.882 and 0 of 1 reader agreeing. Extracted — ambrisentan: CL/F 1.17 L/hr, V1/F 12.3 L, Q/F 0.457 L/hr, V2/F 81.3 L, kabs 2.46 1/h, tlag 0.525 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ambrisentan, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -156,15 +156,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=ambrisentan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=ambrisentan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.882, 0 of 1 reader(s) agree | 0.882 | cross-check disputed by a second reader: verdict disputed, agreement 0.882, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

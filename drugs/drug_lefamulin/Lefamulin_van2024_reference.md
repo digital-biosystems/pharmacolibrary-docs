@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01X&quot;,&quot;href&quot;:&quot;atc/J01X.md&quot;},{&quot;label&quot;:&quot;lefamulin&quot;,&quot;href&quot;:&quot;drugs/drug_lefamulin/&quot;},{&quot;label&quot;:&quot;van_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lefamulin_Hu2023_reference&quot;,&quot;label&quot;:&quot;Hu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lefamulin_Hu2023_reference&quot;,&quot;label&quot;:&quot;Hu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lefamulin/Lefamulin_Hu2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lefamulin — `Lefamulin_van2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-13 12:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. PBmax (12.7 mg/L) has a unit that cannot be converted to SI, causing a dimension mismatch in the three-compartment structure.
+> Lefamulin record rejected because the tissue partition coefficient Kp is recorded with concentration units (mg/L) instead of being dimensionless.
 
-<div class="pk-model-meta" hidden drug="lefamulin" model-id="Lefamulin_van2024_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="lefamulin" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="lefamulin" model-id="Lefamulin_van2024_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="lefamulin" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 van Os W, Pham AD, Eberl S, Minichmayr IK, van Hasselt JGC, Zeitlinger M. Integrative model-based comparison of target site-specific antimicrobial effects: A case study with ceftaroline and lefamulin. International journal of antimicrobial agents 63(5):107148 (2024).
@@ -17,7 +17,7 @@ van Os W, Pham AD, Eberl S, Minichmayr IK, van Hasselt JGC, Zeitlinger M. Integr
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;12.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 **Dosing:** 150 mg, iv, single.
 
@@ -45,7 +45,7 @@ van Os W, Pham AD, Eberl S, Minichmayr IK, van Hasselt JGC, Zeitlinger M. Integr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.95). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.95). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ van Os W, Pham AD, Eberl S, Minichmayr IK, van Hasselt JGC, Zeitlinger M. Integr
 
 ### Reviewer guidance
 
-**PBmax (12.7 mg/L) has a unit that cannot be converted to SI, causing a dimension mismatch in the three-compartment structure.**
+**Lefamulin record rejected because the tissue partition coefficient Kp is recorded with concentration units (mg/L) instead of being dimensionless.**
 
-The parameter PBmax is recorded with a unit that the review could not convert to standard SI units, preventing a valid dimensional check against the structural parameters. Because the value remained unconverted, it conflicted with the required clearance dimensions for the three-compartment model. A second reader also disagreed on how this parameter was identified, suggesting uncertainty in its classification within the record. Extracted — lefamulin: CL 137 L/h, V1 75.7 L, Q 42.9 L/h, V2 391 L, Q3 218 L/h, V3 400 L, Kp 2.07 mg/L, V 2.29 L.
+The partition coefficient Kp, defined as a dimensionless tissue-to-plasma ratio, is listed with the unit mg/L, a dimensional conflict that prevented the model from being validated. Additionally, a unit associated with another structural parameter could not be converted to standard international units, leaving that value undefined for the model. A second reviewer also disagreed on the classification of the PBmax parameter. Extracted — lefamulin: CL 137 L/h, V1 75.7 L, Q 42.9 L/h, V2 391 L, Q3 218 L/h, V3 400 L, Kp 2.07 mg/L, V 2.29 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[pbmax].parameter_id`: this record has Q900, the second reading Q332. That field shapes the model, so the record is marked disputed.
 

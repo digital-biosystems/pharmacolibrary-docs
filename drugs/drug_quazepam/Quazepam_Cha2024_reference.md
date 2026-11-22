@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;quazepam&quot;,&quot;href&quot;:&quot;drugs/drug_quazepam/&quot;},{&quot;label&quot;:&quot;Cha_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quazepam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quazepam/Quazepam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quazepam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quazepam/Quazepam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quazepam — `Quazepam_Cha2024_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Cha2024_reference" status="simulated" stale="false" population="" measured-compound="quazepam" parameterization="apparent" topology="1C"></div>
+> Record rejected because Cha_2024 studies zolpidem, not quazepam, so the extracted parameters do not belong to the target drug.
+
+<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Cha2024_reference" status="rejected" stale="false" population="" measured-compound="quazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Cha HJ, Han S, Pak KC, Kim H. Development of a Web Application for Simulating Plasma Drug Concentrations in Patients with Zolpidem Intoxication. Pharmaceutics 16(5):689 (2024).
@@ -27,6 +29,8 @@ Cha HJ, Han S, Pak KC, Kim H. Development of a Web Application for Simulating Pl
 <figure class="pk-models-diagram"><img src="drugs/drug_quazepam/Quazepam_Cha2024_reference/Quazepam_Cha2024_reference.svg" alt="Quazepam_Cha2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 19.76 | L/h |
@@ -36,7 +40,7 @@ Cha HJ, Han S, Pak KC, Kim H. Development of a Web Application for Simulating Pl
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Cha HJ, Han S, Pak KC, Kim H. Development of a Web Application for Simulating Pl
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Record rejected because Cha_2024 studies zolpidem, not quazepam, so the extracted parameters do not belong to the target drug.**
+
+The paper is a population PK study of zolpidem, with quazepam only mentioned as a comparator. The extracted quazepam values, such as CL/F of 19.76 L/h, are not derived from data in this paper. No actual quazepam parameters or concentration data are present in the source. Extracted — quazepam: CL/F 19.8 L/h, V/F 74.8 L, tlag 0.394 h, kabs 5.41 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q314: this record has none, the second reading 31.74; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -118,15 +124,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=quazepam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | quazepam (or metabolite) | paper about another drug |  | paper subject is not quazepam: the paper is about another drug; this one is a co-medication or covariate: This is a population PK study of zolpidem; quazepam is only mentioned as a comparator benzodiazepine with no quazepam parameters. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=quazepam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -138,61 +145,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quazepam/Quazepam_Cha2024_reference/Quazepam_Cha2024_reference_modelica.zip" download>Quazepam_Cha2024_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_quazepam/Quazepam_Cha2024_reference/Quazepam_Cha2024_reference_fmi.zip" download>Quazepam_Cha2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quazepam/Quazepam_Cha2024_reference/Quazepam_Cha2024_reference_matlab.zip" download>Quazepam_Cha2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_quazepam/Quazepam_Cha2024_reference/Quazepam_Cha2024_reference_matlab_simbio.zip" download>Quazepam_Cha2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_quazepam/Quazepam_Cha2024_reference/Quazepam_Cha2024_reference_sbml.zip" download>Quazepam_Cha2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_quazepam/Quazepam_Cha2024_reference/Quazepam_Cha2024_reference_cellml.zip" download>Quazepam_Cha2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3868 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 1418 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1.5e-05 | kg |
-| input | model | `Cl` | 5.489e-06 | m3/s |
-| input | model | `VdPerKg` | 0.001069 | m3/kg |
-| input | model | `ka` | 0.001503 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Cha HJ, Han S, Pak KC, Kim H. Development of a Web Application for Simulating Plasma Drug Concentrations in Patients with Zolpidem Intoxication. Pharmaceutics 16(5):689 (2024). [doi:10.3390/pharmaceutics16050689](https://doi.org/10.3390/pharmaceutics16050689)
-
-**This record:** Pharmacolibrary, model `Quazepam_Cha2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_quazepam/Quazepam_Cha2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_QuazepamCha2024reference,
-  title  = {{Pharmacolibrary model Quazepam_Cha2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_quazepam/Quazepam_Cha2024_reference},
-  note   = {Parameters from doi:10.3390/pharmaceutics16050689},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

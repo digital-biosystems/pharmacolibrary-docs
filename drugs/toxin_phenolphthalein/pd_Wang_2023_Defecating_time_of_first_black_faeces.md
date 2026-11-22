@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided excerpts discuss the physiological roles of gastrointestinal biomarkers like MTL and SP in promoting peristalsis but do not specify a pharmacodynamic model or mechanism for phenolphthalein acting on the defecating time of first black faeces. Consequently, the paper does not describe the drug's specific mechanism of action, nor does it provide any key potency or rate parameters (e.g., EC50, kout) for this response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

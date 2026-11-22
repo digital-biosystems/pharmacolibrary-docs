@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fusaric Acid&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/&quot;},{&quot;label&quot;:&quot;Stack_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusaricAcid_Stack2014_reference&quot;,&quot;label&quot;:&quot;Stack_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusaricAcid_Stack2014_reference&quot;,&quot;label&quot;:&quot;Stack_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Fusaric Acid — `FusaricAcid_Stack2014_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life; the model does not reproduce the paper's time of the peak (tmax) (paper 0.472, model 0.183).
 
-<div class="pk-model-meta" hidden drug="Fusaric Acid" model-id="FusaricAcid_Stack2014_reference" status="extracted" stale="false" population="Male Sprague-Dawley rats" measured-compound="Fusaric Acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Fusaric Acid" model-id="FusaricAcid_Stack2014_reference" status="needs_review" stale="false" population="Male Sprague-Dawley rats" measured-compound="Fusaric Acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Stack BC, Ye J, Willis R, Hubbard M, Hendrickson HP. Determination of oral bioavailability of fusaric acid in male Sprague-Dawley rats. Drugs in R&D 14(2):139–145 (2014).
@@ -33,6 +33,8 @@ Stack BC, Ye J, Willis R, Hubbard M, Hendrickson HP. Determination of oral bioav
 <figure class="pk-models-diagram"><img src="drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference/FusaricAcid_Stack2014_reference.svg" alt="FusaricAcid_Stack2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | elimination half-life IV | t1/2z | 33 | min |
@@ -41,7 +43,7 @@ Stack BC, Ye J, Willis R, Hubbard M, Hendrickson HP. Determination of oral bioav
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +51,13 @@ Stack BC, Ye J, Willis R, Hubbard M, Hendrickson HP. Determination of oral bioav
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life; the model does not reproduce the paper's time of the peak (tmax) (paper 0.472, model 0.183).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — fusaric acid: t1/2z 33 min, V 262 ml/kg, CL 6.09 ml/min/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -108,6 +116,34 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 25.6 L/h |  |  | ['Stack_2014:other_prose'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 18.3 L |  |  | ['Stack_2014:other_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=Fusaric Acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | 3022 | 0.08514 |  | unresolved concentration unit (exp 'µM', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 9.63 | 0.08514 |  | unresolved concentration unit (exp 'µM', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 6.34 | 0.08514 |  | unresolved concentration unit (exp 'µM', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 161 | 0.08514 |  | unresolved concentration unit (exp 'µM', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.08514 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.08514 |  | non-numeric value |
+| T1_cmax | reference | skipped | 290 | 0.08514 |  | unresolved concentration unit (exp 'µM', sim 'kg/m3') |
+| T1_t_half_beta | reference | skipped |  | 0.343 |  | non-numeric value |
+| T1_t_half_beta | reference | fail | 0.55 | 0.343 | 0.6236 | min→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 0.4 | 0.343 | 0.8574 | min→SI vs simulated h |
+| T1_tmax | reference | fail | 0.4717 | 0.1833 | 0.3887 | min→SI vs simulated h |
+| T1_tmax | reference | fail | 0.0805 | 0.1833 | 2.277 | min→SI vs simulated h |
+| T1_tmax | reference | fail | 2.8 | 0.1833 | 0.0655 | min→SI vs simulated h |
+| T1_tmax | reference | fail | 0.08583 | 0.1833 | 2.136 | min→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
+| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
+| T1_tmax | reference | fail | 0.3167 | 0.1833 | 0.5789 | min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

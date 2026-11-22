@@ -4,11 +4,11 @@
 
 # simeprevir — `Simeprevir_Valade2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 17:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The simeprevir record lacks clearance and volume parameters, preventing it from constituting a compartmental population PK model.
+> Simeprevir inhibitory constant has units ng/mL instead of 1/time, and no clearance exists in this exposure paper.
 
-<div class="pk-model-meta" hidden drug="simeprevir" model-id="Simeprevir_Valade2018_reference" status="rejected" stale="true" population="healthy adults" measured-compound="simeprevir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="simeprevir" model-id="Simeprevir_Valade2018_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simeprevir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Valade E, Valenzuela B, Kakuda TN, Westland C, McClure MW, Ouwerkerk-Mahadevan S et al. Characterizing the Pharmacokinetic Interaction Between Simeprevir and Odalasvir in Healthy Volunteers Using a Population Modeling Approach. The AAPS journal 20(6):111 (2018).
@@ -35,7 +35,7 @@ Valade E, Valenzuela B, Kakuda TN, Westland C, McClure MW, Ouwerkerk-Mahadevan S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Valade E, Valenzuela B, Kakuda TN, Westland C, McClure MW, Ouwerkerk-Mahadevan S
 
 ### Reviewer guidance
 
-**The simeprevir record lacks clearance and volume parameters, preventing it from constituting a compartmental population PK model.**
+**Simeprevir inhibitory constant has units ng/mL instead of 1/time, and no clearance exists in this exposure paper.**
 
-The source text contains no distribution volume or clearance values, meaning the record cannot represent a compartmental PK model. Instead, it lists an inhibitory constant of 1610 ng/mL and a relative bioavailability increase of 26%, which are summary statistics rather than fitted model parameters. The second reader disagreed on the presence of these parameter values, marking them as null, but the primary issue is the absence of standard elimination parameters. Extracted — simeprevir: Frel 26 %, kic 1.61e+03 ng/mL.
+The record lacks distribution volume and clearance, confirming it is an exposure/outcome study rather than a compartmental population pharmacokinetic model. The inhibitory constant for simeprevir was recorded as 1610 ng/mL, creating a dimension mismatch with the expected 1/time units. Because only the abstract was read, these reported summary statistics stand in for a fitted model. A second reader disagreed that specific parameter values were present, noting them as null in their assessment. Extracted — simeprevir: Frel 26 %, kic 1.61e+03 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has simeprevir, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

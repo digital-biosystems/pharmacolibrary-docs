@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Archary_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Cella2011_model_1_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_1_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_1_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Archary2019_reference&quot;,&quot;label&quot;:&quot;Archary_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Archary2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Cella2011_model_2_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_2_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_2_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2023_reference&quot;,&quot;label&quot;:&quot;Chupradit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Rabie2020_reference&quot;,&quot;label&quot;:&quot;Rabie_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Rabie2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Cella2011_model_1_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_1_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_1_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Cella2011_model_2_mean&quot;,&quot;label&quot;:&quot;Cella_2011_model_2_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Cella2011_model_2_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2023_reference&quot;,&quot;label&quot;:&quot;Chupradit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Jullien2005_reference&quot;,&quot;label&quot;:&quot;Jullien_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Jullien2005_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Rabie2020_typical_value_value&quot;,&quot;label&quot;:&quot;Rabie_2020_typical_value_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Rabie2020_typical_value_value.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2012_reference&quot;,&quot;label&quot;:&quot;Zhao_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Archary2019_reference&quot;,&quot;label&quot;:&quot;Archary_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Archary2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Abacavir model uses placeholder values for elimination rate constants because the paper does not report estimates.
+> Intercompartmental clearance and transfer rate constants for abacavir were left at library defaults instead of using paper-derived estimates.
 
 <div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Archary2019_reference" status="needs_review" stale="false" population="severely malnourished HIV-infected children" measured-compound="abacavir" parameterization="apparent" topology="3C"></div>
 
@@ -17,7 +17,7 @@ Archary M, Mcllleron H, Bobat R, LaRussa P, Sibaya T, Wiesner L et al. Populatio
 
 ## Population and dosing
 
-**Population:** severely malnourished HIV-infected children · condition HIV and severe acute malnutrition · age group mixed · n = &gt;= 75.
+**Population:** severely malnourished HIV-infected children · condition HIV and severe acute malnutrition · age group child.
 
 ## Model
 
@@ -33,13 +33,13 @@ Archary M, Mcllleron H, Bobat R, LaRussa P, Sibaya T, Wiesner L et al. Populatio
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| The typical population CL/F (L h -1 /7 kg) of abacavir increased from day 1 to day 14 from 3.33 to 5.86 | CL/F | 3.33 | L h -1 /7 kg |
+| typical population CL/F (L h -1 /7 kg) of abacavir increased from day 1 | CL/F | 3.33 | L h -1 /7 kg |
 | apparent central volume of distribution (Vc/F, L/7kg) | V1/F | 4.63 | L/7kg |
 | absorption rate (ka, h -1 ) | kabs | 0.97 | h -1 |
 | inter-compartmental clearance (Q/F, L h -1 ) | Q | 0.63 | L h -1 |
 | peripheral volume of distribution (Vp/F, L) | V2 | 1.65 | L |
-| Clearance (CL/F) | CL | 3.33 | L/h/kg |
-| Central volume of distribution (Vc/F) | V1 | 4.63 | L/kg |
+| Clearance (CL/F) on day 14 | CL | 5.86 | L/h/7kg |
+| Central volume of distribution (Vc/F) | V1 | 4.63 | L/7kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -53,9 +53,9 @@ Archary M, Mcllleron H, Bobat R, LaRussa P, Sibaya T, Wiesner L et al. Populatio
 
 ### Reviewer guidance
 
-**Abacavir model uses placeholder values for elimination rate constants because the paper does not report estimates.**
+**Intercompartmental clearance and transfer rate constants for abacavir were left at library defaults instead of using paper-derived estimates.**
 
-The inter-compartmental clearance and volumes are reported, but the rate constants governing drug movement out of the central compartment (k13, k31) are missing. Consequently, the model builder substituted these specific values with library defaults rather than using estimates from the source data. The record was held back because the simulated profile relies on assumed values that are not supported by the paper's reported parameters. Extracted — abacavir: CL/F 3.33 L h -1 /7 kg, V1/F 4.63 L/7kg, kabs 0.97 h -1, Q 0.63 L h -1, V2 1.65 L, CL 3.33 L/h/kg, V1 4.63 L/kg.
+The model's intercompartmental transfer rates, k13 and k31, were not extracted from the paper and defaulted to placeholder values. Although other parameters like clearance of 3.33 L h -1 /7 kg were reported, these missing transfer rates rely on generic library values rather than data from the severely malnourished children study. The second reader also disputed the extraction of several key values, including the absorption rate of 0.97 h -1, marking the record for review. Extracted — abacavir: CL/F 3.33 L h -1 /7 kg, V1/F 4.63 L/7kg, kabs 0.97 h -1, Q 0.63 L h -1, V2 1.65 L, CL 5.86 L/h/7kg, V1 4.63 L/7kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -65,13 +65,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| The typical population CL/F (L h -1 /7 kg) of abacavir increased from day 1 to day 14 from 3.33 to 5.86 | `Q27` · CL/F | 3.33 | L h -1 /7 kg | 9.25e-06 | m3/s | L/h | boundary (0.8) | Archary_2019:other_prose |
+| typical population CL/F (L h -1 /7 kg) of abacavir increased from day 1 | `Q27` · CL/F | 3.33 | L h -1 /7 kg | 9.25e-06 | m3/s | L/h | boundary (0.8) | Archary_2019:other_prose |
 | apparent central volume of distribution (Vc/F, L/7kg) | `Q290` · V1/F | 4.63 | L/7kg | 0.0463 | m3 | L | boundary (0.8) | Archary_2019:other_prose |
 | absorption rate (ka, h -1 ) | `Q49` · kabs | 0.97 | h -1 | 0.0002694 | 1/s | 1/h | exact (1) | Archary_2019:other_prose |
 | inter-compartmental clearance (Q/F, L h -1 ) | `Q30` · Q | 0.63 | L h -1 | 1.75e-07 | m3/s | L/h | boundary (0.8) | Archary_2019:other_prose |
 | peripheral volume of distribution (Vp/F, L) | `Q64` · V2 | 1.65 | L | 0.00165 | m3 | L | boundary_compartment (0.9) | Archary_2019:other_prose |
-| Clearance (CL/F) | `Q22` · CL | 3.33 | L/h/kg | 6.475e-05 | m3/s | L/h | exact (1) | Archary_2019:discussion_prose |
-| Central volume of distribution (Vc/F) | `Q63` · V1 | 4.63 | L/kg | 0.3241 | m3 | L | boundary_compartment (0.9) | Archary_2019:discussion_prose |
+| Clearance (CL/F) on day 14 | `Q22` · CL | 5.86 | L/h/7kg | 1.628e-05 | m3/s | L/h | boundary (0.8) | Archary_2019:discussion_prose |
+| Central volume of distribution (Vc/F) | `Q63` · V1 | 4.63 | L/7kg | 0.0463 | m3 | L | boundary_compartment (0.9) | Archary_2019:discussion_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -103,15 +103,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped unlinked row (NIL): 'Cholesterol (mmol•L -1)' — extend the ontology if this is a real PK parameter (source ['Archary_2019_table_1:row19:col1', 'Archary_2019_table_1:row19:col2'])
 - dropped unlinked row (NIL): 'Triglyceride (mmol•L -1)' — extend the ontology if this is a real PK parameter (source ['Archary_2019_table_1:row20:col1', 'Archary_2019_table_1:row20:col2'])
 - table mostly unlinked (17/17 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
-- salvaged Q27 ('The typical population CL/F (L h -1 /7 kg) of abacavir increased from day 1 to day 14 from 3.33 to 5.86'=3.33) from results prose — parameter table was unreadable
+- salvaged Q27 ('typical population CL/F (L h -1 /7 kg) of abacavir increased from day 1'=3.33) from results prose — parameter table was unreadable
 - salvaged Q290 ('apparent central volume of distribution (Vc/F, L/7kg)'=4.63) from results prose — parameter table was unreadable
 - salvaged Q49 ('absorption rate (ka, h -1 )'=0.97) from results prose — parameter table was unreadable
 - salvaged Q30 ('inter-compartmental clearance (Q/F, L h -1 )'=0.63) from results prose — parameter table was unreadable
 - salvaged Q64 ('peripheral volume of distribution (Vp/F, L)'=1.65) from results prose — parameter table was unreadable
-- salvaged Q22 ('Clearance (CL/F)'=3.33) from results prose — parameter table was unreadable
+- salvaged Q22 ('Clearance (CL/F) on day 14'=5.86) from results prose — parameter table was unreadable
 - salvaged Q63 ('Central volume of distribution (Vc/F)'=4.63) from results prose — parameter table was unreadable
-- implicit units: 'Clearance (CL/F)' → L/h/kg (from the paper text: "The table 'Table 2a: Parameter estimates... for abacavir' lists the unit for 'Clearance (CL/F)' as 'L•h - 1 •7kg - 1'. T")
-- implicit units: 'Central volume of distribution (Vc/F)' → L/kg (from the paper text: "The table 'Table 2a: Parameter estimates... for abacavir' lists the unit for 'Central volume of distribution (Vc/F)' as ")
+- implicit units: 'Clearance (CL/F) on day 14' → L/h/7kg (from the paper text: "The table caption/footnote area explicitly lists 'Clearance (CL/F) on day 14 L•h - 1 •7kg - 1' in Table 2a. Additionally")
+- implicit units: 'Central volume of distribution (Vc/F)' → L/7kg (from the paper text: "The table caption/footnote area explicitly lists 'Central volume of distribution (Vc/F) L•7kg - 1' in Table 2a. Addition")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 3C vs LLM 2C — review compartment count
@@ -139,7 +139,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[apparent central volume of distribution]` | 4.63 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[central volume of distribution]` | 4.63 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 4.63 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 3.33 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 3.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance (cl/f) on day 14]` | 5.86 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` |  | 3.33 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | 0.63 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[inter-compartmental clearance]` |  | 0.63 | only_one_extracted |
@@ -147,8 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 1.65 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[peripheral volume of distribution]` |  | 1.65 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[q/f]` |  | 0.63 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the typical population cl/f (l h -1 /7 kg) of abacavir increased from day 1 to day 14 from 3.33 to 5.86]` | 3.33 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[typical population cl/f]` |  | 3.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical population cl/f (l h -1 /7 kg) of abacavir increased from day 1]` | 3.33 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc/f]` |  | 4.63 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp/f]` |  | 1.65 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | abacavir | unknown | mismatch |
@@ -173,10 +173,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Archary_2019:discussion_prose'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 233 L/h | ['Archary_2019:discussion_prose'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 58.6 L/h | ['Archary_2019:discussion_prose'] |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 33.3 L/h | ['Archary_2019:other_prose'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 46.3 L | ['Archary_2019:other_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 324 L | ['Archary_2019:discussion_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 46.3 L | ['Archary_2019:discussion_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.65 L | ['Archary_2019:other_prose'] |
 
 **Reviewer per-scenario checks:**
@@ -189,7 +189,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable | pass | C_central (measured=abacavir) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -271,4 +272,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Archary2019_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Archary2019_reference%0APaper%3A%20Archary_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Archary2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 08:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:48 UTC</sub>

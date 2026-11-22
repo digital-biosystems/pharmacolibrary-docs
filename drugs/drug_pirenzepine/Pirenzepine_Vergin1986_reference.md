@@ -35,7 +35,7 @@ Vergin H, Mascher H, Strobel K, Nitsche V. Pharmacokinetics and bioequivalence o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Vergin H, Mascher H, Strobel K, Nitsche V. Pharmacokinetics and bioequivalence o
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — pirenzepine: t1/2z 7.7 h, V 0.255 l/kg, CL 263 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of the terminal elimination half-life, t 1/2: this record has 7.7, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of the terminal elimination half-life, t 1/2: this record has 7.7, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,15 +86,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[the terminal elimination half-life, t 1/2]` | 7.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the total plasma clearance cl]` | 263.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the volume of distribution, v1]` | 0.255 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the terminal elimination half-life, t 1/2]` | 7.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the total plasma clearance cl]` | 263.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the volume of distribution, v1]` | 0.255 |  | only_one_extracted |
 
 </details>
 

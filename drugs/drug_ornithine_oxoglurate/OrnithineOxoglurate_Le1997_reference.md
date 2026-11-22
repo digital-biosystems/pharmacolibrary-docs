@@ -5,11 +5,11 @@
 
 # ornithine oxoglurate — `OrnithineOxoglurate_Le1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-04 15:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Three metabolites are orphaned from the dose because the metabolism links from ornithine oxoglurate have no rate constants.
+> The record for ornithine oxoglurate was rejected because its metabolite pathways lack defined rate parameters, rendering them unreachable.
 
-<div class="pk-model-meta" hidden drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Le1997_reference" status="rejected" stale="true" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Le1997_reference" status="rejected" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Ornithine alpha-ketoglutarate metabolism after enteral administration in burn patients: bolus compared with continuous infusion. The American journal of clinical nutrition 65(2):512–518 (1997).
@@ -40,7 +40,7 @@ Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Or
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Or
 
 ### Reviewer guidance
 
-**Three metabolites are orphaned from the dose because the metabolism links from ornithine oxoglurate have no rate constants.**
+**The record for ornithine oxoglurate was rejected because its metabolite pathways lack defined rate parameters, rendering them unreachable.**
 
-The record lists metabolism links from ornithine oxoglurate to proline, glutamine, and arginine, but each link lacks a defined rate parameter. Consequently, these three metabolites are unreachable from the dose compartment. Because the record was built from the abstract alone, no specific rate constants for these pathways were extracted to link the metabolites to the parent compound. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
+The model structure lists ornithine, proline, glutamine, and arginine as metabolites, but all links from the parent drug to these compartments have no assigned rate constants. Consequently, the model cannot calculate the formation rates for these metabolites, leaving them as unlinked compartments. Furthermore, the parameters for arginine, glutamine, and proline AUC were missing from the record, although a second reader identified values of 7.3, 20.4, and 41.4 respectively. The entire record was derived solely from the paper abstract, meaning no fitted model parameters were extracted. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ornithine_oxoglurate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ornithine_oxoglurate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -100,18 +100,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['ornithine_oxoglurate', 'ornithine', 'metabolism'], ['ornithine_oxoglurate', 'proline', 'metabolism'], ['ornithine_oxoglurate', 'glutamine', 'metabolism'], ['ornithine_oxoglurate', 'arginine', 'metabolism']] | [['ornithine_alpha_ketoglutarate', 'ornithine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'proline', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'glutamine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'arginine', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[auc0-7h: arginine]` |  | 7.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc0-7h: glutamine]` |  | 20.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc0-7h: proline]` |  | 41.4 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | ornithine_oxoglurate | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | ornithine | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['ornithine_oxoglurate', 'ornithine', 'metabolism'], ['ornithine_oxoglurate', 'proline', 'metabolism'], ['ornithine_oxoglurate', 'glutamine', 'metabolism'], ['ornithine_oxoglurate', 'arginine', 'metabolism']] | [['ornithine_alpha_ketoglutarate', 'ornithine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'proline', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'glutamine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'arginine', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-7h: arginine]` |  | 7.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-7h: glutamine]` |  | 20.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-7h: proline]` |  | 41.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ornithine_oxoglurate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ornithine | unknown | mismatch |
 
 </details>
 

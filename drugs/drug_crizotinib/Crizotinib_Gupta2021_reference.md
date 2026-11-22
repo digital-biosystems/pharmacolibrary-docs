@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;crizotinib&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/&quot;},{&quot;label&quot;:&quot;Gupta_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Crizotinib_Gibson2021_reference&quot;,&quot;label&quot;:&quot;Gibson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/Crizotinib_Gibson2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Crizotinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/Crizotinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Crizotinib_Gibson2021_reference&quot;,&quot;label&quot;:&quot;Gibson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/Crizotinib_Gibson2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Crizotinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/Crizotinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constants were left at library defaults instead of using values from the crizotinib source text.
+> Crizotinib’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="crizotinib" model-id="Crizotinib_Gupta2021_reference" status="needs_review" stale="false" population="" measured-compound="crizotinib" parameterization="apparent" topology="2C"></div>
 
@@ -40,7 +40,7 @@ Gupta N, Wang X, Offman E, Prohn M, Narasimhan N, Kerstein D et al. Population P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.733). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Gupta N, Wang X, Offman E, Prohn M, Narasimhan N, Kerstein D et al. Population P
 
 ### Reviewer guidance
 
-**Absorption rate constants were left at library defaults instead of using values from the crizotinib source text.**
+**Crizotinib’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.**
 
-The record lacks explicit estimates for the absorption rate and lag time, forcing the use of placeholder values. This deviation was flagged because the absorption phase is not supported by the specific data in this paper. Additionally, the second reader could not verify the intercompartmental clearance value of 12.6 L/h. Extracted — crizotinib: CL/F 10.6 L/h, V1/F 207 L, V2/F 114 L, Q/F 12.6 L/h.
+Ka uses a library default, not an estimate from this paper; this affects the simulated profile but is unsupported by the paper. The model also defaulted Tlag, assumed F=1 and Fm=1 with no molar correction, and used first-order depot input for the apparent (/F) parameterization. Extracted — crizotinib: CL/F 10.6 L/h, V1/F 207 L, V2/F 114 L, Q/F 12.6 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q22: this record has 12.8, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q22: this record has 12.8, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -86,14 +86,14 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on paramete
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.667 (10/15 fields) | 5 |
+| `qwen3.8-27b` | partly confirmed | 0.733 (11/15 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -101,7 +101,6 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | `qwen3.8-27b` | `values[Q23]` | 10.6 |  | only_one_extracted |
 | `qwen3.8-27b` | `values[Q30]` |  | 10.6 | only_one_extracted |
 | `qwen3.8-27b` | `values[Q312]` | 48.4 |  | only_one_extracted |
-| `qwen3.8-27b` | `values[Q318]` | 2.0 | 2.0 | mismatch |
 
 </details>
 
@@ -130,15 +129,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=crizotinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=crizotinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.733, 0 of 1 reader(s) agree | 0.733 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -16,7 +16,7 @@ Chang P, Perera V, Salinger DH, Merali S, Thanneer N, Back H et al. Characteriza
 
 ## Population and dosing
 
-**Population:** adults with hypertrophic cardiomyopathy and healthy adults · condition hypertrophic cardiomyopathy · age group adult · n = &gt;=497.
+**Population:** adults with hypertrophic cardiomyopathy and healthy adults · condition hypertrophic cardiomyopathy · age group adult.
 
 **Dosing:** 1, 2, 25, 48 mg, oral, multiple.
 

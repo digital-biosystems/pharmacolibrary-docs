@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;ampicillin&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/&quot;},{&quot;label&quot;:&quot;Onita_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ampicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Onita2026_reference&quot;,&quot;label&quot;:&quot;Onita_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Onita2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ampicillin_Yin2026_reference&quot;,&quot;label&quot;:&quot;Yin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Yin2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Gastine2022_reference&quot;,&quot;label&quot;:&quot;Gastine_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Gastine2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Judy2024_reference&quot;,&quot;label&quot;:&quot;Judy_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Judy2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Padari2021_reference&quot;,&quot;label&quot;:&quot;Padari_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Padari2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_25_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (25) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_25_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abbott_2026_hS&quot;,&quot;label&quot;:&quot;Abbott_2026 \u00b7 hS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Abbott_2026_hS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abbott_2026_hT&quot;,&quot;label&quot;:&quot;Abbott_2026 \u00b7 hT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Abbott_2026_hT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abbott_2026_rS_T&quot;,&quot;label&quot;:&quot;Abbott_2026 \u00b7 rS\u2192T&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Abbott_2026_rS_T.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_100_vs_E_faecalis_ATCC_51299&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (100) vs E. faecalis ATCC 51299&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_100_vs_E_faecalis_ATCC_51299.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_12_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (12) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_12_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_200_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (200) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_200_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_200_vs_E_faecium_ATCC_19434&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (200) vs E. faecium ATCC 19434&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_200_vs_E_faecium_ATCC_19434.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_25_vs_E_faecalis_ATCC_51299&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (25) vs E. faecalis ATCC 51299&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_25_vs_E_faecalis_ATCC_51299.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (37.5) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_3_12_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (3.12) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_3_12_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ampicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Gastine2022_reference&quot;,&quot;label&quot;:&quot;Gastine_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Gastine2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Judy2024_reference&quot;,&quot;label&quot;:&quot;Judy_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Judy2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Padari2021_reference&quot;,&quot;label&quot;:&quot;Padari_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Padari2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Onita2026_reference&quot;,&quot;label&quot;:&quot;Onita_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Onita2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ampicillin_Yin2026_reference&quot;,&quot;label&quot;:&quot;Yin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Yin2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_25_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (25) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_25_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abbott_2026_hS&quot;,&quot;label&quot;:&quot;Abbott_2026 \u00b7 hS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Abbott_2026_hS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abbott_2026_hT&quot;,&quot;label&quot;:&quot;Abbott_2026 \u00b7 hT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Abbott_2026_hT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abbott_2026_rS_T&quot;,&quot;label&quot;:&quot;Abbott_2026 \u00b7 rS\u2192T&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Abbott_2026_rS_T.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_100_vs_E_faecalis_ATCC_51299&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (100) vs E. faecalis ATCC 51299&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_100_vs_E_faecalis_ATCC_51299.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_12_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (12) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_12_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_200_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (200) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_200_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_200_vs_E_faecium_ATCC_19434&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (200) vs E. faecium ATCC 19434&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_200_vs_E_faecium_ATCC_19434.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_25_vs_E_faecalis_ATCC_51299&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (25) vs E. faecalis ATCC 51299&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_25_vs_E_faecalis_ATCC_51299.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (37.5) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jimenez_Toro_2020_AMP_CRO_3_12_vs_E_faecalis_ATCC_29212&quot;,&quot;label&quot;:&quot;Jimenez-Toro_2020 \u00b7 AMP + CRO (3.12) vs E. faecalis ATCC 29212&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_3_12_vs_E_faecalis_ATCC_29212.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ampicillin — `Ampicillin_Onita2026_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Onita2026_reference" status="simulated" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
+> The record was rejected because the paper concerns another drug, despite listing ampicillin total clearance as 7.65 L/h.
+
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Onita2026_reference" status="rejected" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation of Sulbactam: Dosing Considerations for Acinetobacter baumannii Meningitis in Pediatric Patients. Journal of the Pediatric Infectious Diseases Society 15(4):piag017 (2026).
@@ -27,6 +29,8 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 <figure class="pk-models-diagram"><img src="drugs/drug_ampicillin/Ampicillin_Onita2026_reference/Ampicillin_Onita2026_reference.svg" alt="Ampicillin_Onita2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 7.65 | L/h |
@@ -36,7 +40,7 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was rejected because the paper concerns another drug, despite listing ampicillin total clearance as 7.65 L/h.**
+
+The record lists ampicillin clearance as 7.65 L/h and central and peripheral compartment volumes as 4.75 L and 4.88 L, respectively, with intercompartmental clearance of 3.03 L/h. Neither the paper title nor abstract names ampicillin, so the relevance screen rejected the paper as concerning another drug. The second reader supplied no value corresponding to the listed clearance of 7.65 or central compartment volume of 4.75. Extracted — ampicillin: CL 7.65 L/h, V1 4.75 L, V2 4.88 L, Q 3.03 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.65, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -115,14 +121,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ampicillin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | ampicillin (or metabolite) | paper about another drug |  | paper subject is not ampicillin: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ampicillin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,61 +141,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ampicillin/Ampicillin_Onita2026_reference/Ampicillin_Onita2026_reference_modelica.zip" download>Ampicillin_Onita2026_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ampicillin/Ampicillin_Onita2026_reference/Ampicillin_Onita2026_reference_fmi.zip" download>Ampicillin_Onita2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Onita2026_reference/Ampicillin_Onita2026_reference_matlab.zip" download>Ampicillin_Onita2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Onita2026_reference/Ampicillin_Onita2026_reference_matlab_simbio.zip" download>Ampicillin_Onita2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Onita2026_reference/Ampicillin_Onita2026_reference_sbml.zip" download>Ampicillin_Onita2026_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Onita2026_reference/Ampicillin_Onita2026_reference_cellml.zip" download>Ampicillin_Onita2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3494 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.006 | kg |
-| input | model | `Cl` | 2.125e-06 | m3/s |
-| input | model | `VdPerKg` | 6.786e-05 | m3/kg |
-| input | model | `k12` | 0.0001772 | 1/s |
-| input | model | `k21` | 0.0001725 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation of Sulbactam: Dosing Considerations for Acinetobacter baumannii Meningitis in Pediatric Patients. Journal of the Pediatric Infectious Diseases Society 15(4):piag017 (2026). [doi:10.1093/jpids/piag017](https://doi.org/10.1093/jpids/piag017)
-
-**This record:** Pharmacolibrary, model `Ampicillin_Onita2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ampicillin/Ampicillin_Onita2026_reference>
-
-```bibtex
-@misc{pharmacolibrary_AmpicillinOnita2026reference,
-  title  = {{Pharmacolibrary model Ampicillin_Onita2026_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ampicillin/Ampicillin_Onita2026_reference},
-  note   = {Parameters from doi:10.1093/jpids/piag017},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

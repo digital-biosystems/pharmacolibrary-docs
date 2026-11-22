@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The zinc nitrate model lacks quantitative kinetic parameters; reported values for Kp and uptake are placeholders, and excretion unit conversion failed.
 
 <div class="pk-model-meta" hidden drug="Zinc nitrate" model-id="ZincNitrate_Chen2015_10_nm_65zno_nps" status="rejected" stale="false" population="mice" measured-compound="Zinc-65" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,7 +49,13 @@ Chen WY, Cheng YH, Hsieh NH, Wu BC, Chou WC, Ho CC et al. Physiologically based 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The zinc nitrate model lacks quantitative kinetic parameters; reported values for Kp and uptake are placeholders, and excretion unit conversion failed.**
+
+The model structure cannot be validated as the excretion rate constant lacks a converted unit value. The tissue partition coefficient and gut uptake rate appear as static values rather than fitted kinetic estimates, leaving no quantifiable half-life, clearance, or volume. Consequently, the record is rejected for missing essential pharmacokinetic parameters needed to describe disposition. Extracted — zinc nitrate: Kp 1.32, kuptake 0.0343 1/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

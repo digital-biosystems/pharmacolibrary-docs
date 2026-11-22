@@ -4,11 +4,11 @@
 
 # datopotamab deruxtecan — `DatopotamabDeruxtecan_Hong2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:53 UTC (Needs review), but the paper was screened again on 2026-10-13 13:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Km, Vmax, Qd and kel have no unit.
+> Km, Vmax, Qd and kel have no unit.
 
-<div class="pk-model-meta" hidden drug="datopotamab deruxtecan" model-id="DatopotamabDeruxtecan_Hong2025_reference" status="needs_review" stale="true" population="patients with advanced solid tumors" measured-compound="datopotamab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="datopotamab deruxtecan" model-id="DatopotamabDeruxtecan_Hong2025_reference" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="datopotamab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Hong Y, Peigné S, Pan Υ, Friberg Hietala S, McLaughlin A, Tajima N et al. Population Pharmacokinetic Analysis of Datopotamab Deruxtecan (Dato-DXd), a TROP2-Directed Antibody-Drug Conjugate, in Patients With Advanced Solid Tumors. CPT: pharmacometrics & systems pharmacology 14(12):2149–2160 (2025).
@@ -60,7 +60,7 @@ Hong Y, Peigné S, Pan Υ, Friberg Hietala S, McLaughlin A, Tajima N et al. Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.26). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.26). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

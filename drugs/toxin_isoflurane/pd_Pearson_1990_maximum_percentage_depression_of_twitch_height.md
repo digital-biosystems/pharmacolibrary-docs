@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided text describes isoflurane doses causing maximum percentage depression of twitch height, citing ED50, ED75, and ED95 values of 0.037, 0.043, and 0.053 mg/kg respectively, but does not specify the underlying pharmacodynamic mechanism or effect model structure.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Pearson_1990`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

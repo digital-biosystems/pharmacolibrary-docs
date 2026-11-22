@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life is 43.3 hours, far below the paper's 303 hours, and bioavailability was left at defaults.
+> Ribavirin’s simulated terminal half-life is 43.3 h, not the paper’s 303 h, and its bioavailability F was defaulted rather than estimated.
 
 <div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Wade2006_reference" status="needs_review" stale="false" population="adults with hepatitis C virus" measured-compound="ribavirin" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Wade JR, Snoeck E, Duff F, Lamb M, Jorga K. Pharmacokinetics of ribavirin in pat
 
 ### Reviewer guidance
 
-**The model's terminal half-life is 43.3 hours, far below the paper's 303 hours, and bioavailability was left at defaults.**
+**Ribavirin’s simulated terminal half-life is 43.3 h, not the paper’s 303 h, and its bioavailability F was defaulted rather than estimated.**
 
-The simulated terminal half-life of 43.3 hours differs from the paper's reported value of 303 hours. Absolute bioavailability and lag time were not extracted from the paper, so library defaults were used. These missing estimates affect the simulated profile but are unsupported by the source data. Extracted — ribavirin: CL 19.8 l h -1, V1 472 l, Q 34.4 l h -1, V2 4.91e+03 l, Q3 97.7 l h -1, V3 871 l, Fab 1 high-fat meal, D1 710 h, … (+1).
+The model does not reproduce the paper’s terminal half-life: the paper reports 303 h and the model gives 43.3 h, a difference greater than the tolerance. Bioavailability F and lag time Tlag were defaulted rather than estimated from this paper; these values affect the simulated profile and are unsupported by the paper. A reported unit could not be converted to SI, although the facts do not identify the parameter. A second reader disputed the parameter assignment for D1, which means zero-order input duration, versus Q, which means intercompartmental clearance, and did not identify the LBW-on-CL coefficient 0.00869. Extracted — ribavirin: CL 19.8 l h -1, V1 472 l, Q 34.4 l h -1, V2 4.91e+03 l, Q3 97.7 l h -1, V3 871 l, Fab 1 high-fat meal, D1 710 h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[d1 (fasting and standard meal) (h) d1 (high-fat meal)].parameter_id`: this record has Q310, the second reading Q83; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -177,6 +177,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.867, 0 of 1 reader(s) agree | 0.867 | cross-check disputed by a second reader: verdict disputed, agreement 0.867, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 303 | 43.32 | 0.143 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 303 | 43.32 | 0.143 | h→SI vs simulated h |
 

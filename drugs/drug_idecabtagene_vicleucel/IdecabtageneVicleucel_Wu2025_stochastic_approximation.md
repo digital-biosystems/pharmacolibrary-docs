@@ -4,11 +4,11 @@
 
 # idecabtagene vicleucel — `IdecabtageneVicleucel_Wu2025_stochastic_approximation`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Needs review), but the paper was screened again on 2026-10-06 20:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; vmax and kmp have no unit.
+> Only clearance was extracted — no volume; vmax and kmp have no unit.
 
-<div class="pk-model-meta" hidden drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_stochastic_approximation" status="needs_review" stale="true" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_stochastic_approximation" status="needs_review" stale="false" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wu F, Zhou J, Zheng X, Masilamani M, Cheng Y, Caia A et al. Population Cellular Kinetics of Idecabtagene Vicleucel in Patients with Triple-Class-Exposed Relapsed/Refractory Multiple Myeloma. Clinical pharmacokinetics 64(7):1119–1132 (2025).
@@ -16,7 +16,7 @@ Wu F, Zhou J, Zheng X, Masilamani M, Cheng Y, Caia A et al. Population Cellular 
 
 ## Population and dosing
 
-**Population:** patients with triple-class-exposed relapsed/refractory multiple myeloma · age group adult · n = .population: patients with triple-class-exposed relapsed/refractory multiple myeloma, "age_class": "adult", "n_subjects": 225, "condition": "multiple myeloma", "species": "human", "compounds": ["idecabtagene_vicleucel | parent | yes | yes | yes"], "links": []}.
+**Population:** patients with triple-class-exposed relapsed/refractory multiple myeloma · age group adult.
 
 **Dosing:** 150, 450 × 106 CAR+ T cells, iv, single.
 
@@ -41,7 +41,7 @@ Wu F, Zhou J, Zheng X, Masilamani M, Cheng Y, Caia A et al. Population Cellular 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

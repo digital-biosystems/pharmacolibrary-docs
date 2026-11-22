@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;glibenclamide&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/&quot;},{&quot;label&quot;:&quot;Comin_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Rambiritch_2016_FBG_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 FBG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_FBG_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_full_glucose_profile&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 full glucose profile&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_full_glucose_profile.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_full_glucose_profile_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 full glucose profile&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_full_glucose_profile_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_mean_glucose_concentration&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 mean glucose concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_mean_glucose_concentration.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_mean_glucose_concentration_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 mean glucose concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_mean_glucose_concentration_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_FBG&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 FBG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_FBG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Rambiritch_2016_FBG_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 FBG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_FBG_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_full_glucose_profile_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 full glucose profile&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_full_glucose_profile_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_mean_glucose_concentration_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 mean glucose concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_mean_glucose_concentration_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # glibenclamide — `Glibenclamide_Comin2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:17 UTC (Rejected), but the paper was screened again on 2026-10-22 09:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Glibenclamide model rejected because intercompartmental clearance of 179 h⁻¹ is physiologically implausible and its unit could not be converted to standard SI units.
+> Glibenclamide’s apparent intercompartmental clearance, Q, was recorded as 179 h⁻¹, an incompatible rate unit contributing to rejection for implausible clearance/volume.
 
-<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Comin2025_reference" status="rejected" stale="true" population="healthy adults" measured-compound="glibenclamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Comin2025_reference" status="rejected" stale="false" population="healthy adults" measured-compound="glibenclamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Comin L, Marie S, Ursino M, Zohar S, Tournier N, Comets E. Modeling Whole-Body Dynamic PET Microdosing Data to Predict the Whole-Body Pharmacokinetics of Glyburide in Humans. Clinical pharmacokinetics 64(11):1709–1722 (2025).
@@ -43,7 +43,7 @@ Comin L, Marie S, Ursino M, Zohar S, Tournier N, Comets E. Modeling Whole-Body D
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +53,13 @@ Comin L, Marie S, Ursino M, Zohar S, Tournier N, Comets E. Modeling Whole-Body D
 
 ### Reviewer guidance
 
-**Glibenclamide model rejected because intercompartmental clearance of 179 h⁻¹ is physiologically implausible and its unit could not be converted to standard SI units.**
+**Glibenclamide’s apparent intercompartmental clearance, Q, was recorded as 179 h⁻¹, an incompatible rate unit contributing to rejection for implausible clearance/volume.**
 
-The apparent intercompartmental clearance was extracted as 179 h⁻¹, a magnitude far outside the physiological window for this compound. The review notes a dimension mismatch on this structural parameter and states that the reported unit could not be mapped to a standard SI unit, preventing proper value establishment. A second reader also disagreed with the extracted 0.23 h⁻¹ transfer rate constant and failed to identify the dose compound. Extracted — glibenclamide: V 0.062 L, kel 0.26 h⁻¹, k12 0.46 h, k21 8.2 h⁻¹, Q 179 h⁻¹, kuptake 0.24 h⁻¹, kout_peripheral 0.19 h⁻¹.
+The record defines Q as apparent intercompartmental clearance, which should have dimensions of volume per time, but gives it as 179 h⁻¹. The dimensional findings also identify a structural parameter recorded in h where inverse time was expected, and another recorded in h⁻¹ where volume per time was expected; the second reader disputed several parameter assignments. A reported unit could not be converted to SI, and the clearance/volume result was judged outside the physiological window. Extracted — glibenclamide: V 0.062 L, kel 0.26 h⁻¹, k12 0.46 h, k21 8.2 h⁻¹, Q 179 h⁻¹, kuptake 0.24 h⁻¹, kout_peripheral 0.19 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k_k1b_pop: this record has none, the second reading 0.23; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

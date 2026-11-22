@@ -41,8 +41,8 @@ It is administered orally in forms such as capsules or tablets, and an intraveno
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Wu_2019_reference](drugs/drug_lansoprazole/Lansoprazole_Wu2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Katashima_1995_reference](drugs/drug_lansoprazole/Lansoprazole_Katashima1995_reference.md) | — | 1-compartment (no model) | 2 | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sakurai_2007_1_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md) | — | 1-compartment (no model) | 4 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 2_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sakurai_2007_1_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md) | — | 1-compartment (no model) | 4 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 2_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md) | — | 1-compartment (no model) | 4 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -51,29 +51,6 @@ It is administered orally in forms such as capsules or tablets, and an intraveno
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Katashima_1995_gastric_acid_secretion](drugs/drug_lansoprazole/pd_Katashima_1995_gastric_acid_secretion.md) | gastric acid secretion ← lansoprazole · target-mediated drug disposition | — | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Katashima_1998_inhibitory_effects_on_gastric_acid_secretion](drugs/drug_lansoprazole/pd_Katashima_1998_inhibitory_effects_on_gastric_acid_secretion.md) | inhibitory effects on gastric acid secretion ← lansoprazole · target-mediated drug disposition | — | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, European journal of drug me… (1998) | [10.1007/BF03189822](https://doi.org/10.1007/BF03189822) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Puchalski_2001_gastric_pH](drugs/drug_lansoprazole/pd_Puchalski_2001_gastric_pH.md) | gastric pH ← lansoprazole · target-mediated drug disposition | — | Puchalski TA et al., Pharmacodynamic modeling of lansoprazol…, Journal of clinical pharmac… (2001) | [10.1177/00912700122010069](https://doi.org/10.1177/00912700122010069) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lansoprazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | liver | `SLC22A3` unknown | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate, `SLC22A3` unknown | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` unknown | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` inducer/inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `SLC22A1` unknown | DrugBank actor |
-| metabolism | lung | `CYP1A1` inducer, `CYP1B1` inducer | DrugBank actor |
-| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `SLC22A2` unknown, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ATP4A (inhibitor), CYP2C18 (substrate), MAPT (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -93,7 +70,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 20 matched, 19 returned
 - **screened:** 15  ·  **relevant:** 6
-- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 2
+- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

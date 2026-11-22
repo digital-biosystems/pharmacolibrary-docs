@@ -17,7 +17,7 @@ Li Y, Mu S, Huang Q, Jin J, Tong Y, Wang R et al. Population Pharmacokinetics of
 
 ## Population and dosing
 
-**Population:** hypertensive patients in plateau and plain areas · condition hypertension · age group adult · n = &gt;=103.
+**Population:** hypertensive patients in plateau and plain areas · condition hypertension · age group adult.
 
 ## Model
 

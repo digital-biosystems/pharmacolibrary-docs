@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Record lacks volume and clearance, treating SK&F 105,992 as an unlinked metabolite while assigning 50% bioavailability to topotecan.
+> Rejected as a non-compartmental exposure/outcome record: topotecan Fab is 50%, but distribution volume and clearance are absent and SK&F 105,992 is flagged as unlinked.
 
 <div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_Davies1997_reference" status="rejected" stale="false" population="female beagle dogs" measured-compound="topotecan and SK&amp;F 105,992" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -47,13 +47,13 @@ Davies BE, Minthorn EA, Dennis MJ, Rosing H, Beijnen JH. The pharmacokinetics of
 
 ### Reviewer guidance
 
-**Record lacks volume and clearance, treating SK&F 105,992 as an unlinked metabolite while assigning 50% bioavailability to topotecan.**
+**Rejected as a non-compartmental exposure/outcome record: topotecan Fab is 50%, but distribution volume and clearance are absent and SK&F 105,992 is flagged as unlinked.**
 
-The model is an exposure/outcome paper with no distribution volume or clearance, disqualifying it as a compartmental PK model. The metabolite SK&F 105,992 is defined with an unknown link parameter, rendering it an orphan compartment with no path from the dose. Although a second reader disputed the 50% bioavailability value for topotecan, the structural and parameter deficiencies independently justify rejection. Extracted — topotecan: Fab 50 %.
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The record is abstract-only, so summary statistics stand in for a fitted model; SK&F 105,992 is listed as a topotecan interconversion product without a link parameter, and the findings flag an unreachable or unlinked metabolite. Both second readers disputed the recorded topotecan Fab value of 50%.»}[/records] Extracted — topotecan: Fab 50 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has topotecan and SK&F 105,992, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

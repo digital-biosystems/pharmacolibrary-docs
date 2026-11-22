@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Bleomycin_Yee1983_cumulative_cisplatin_dosage_300_mg_m",
+ "molar_masses": {
+  "central.C": 1.415552
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.190000000000001e-07,
+  "F": 1.0,
+  "MM": 1.415552,
+  "VdPerKg": 9.144285714285716e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662097
+ },
+ "reference_peaks": {
+  "central.C": 0.001524863912129263
+ },
+ "stop_time": 108000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

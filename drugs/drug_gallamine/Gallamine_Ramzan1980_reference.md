@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record uses unreported default values for gallamine's absorption rate and lag time, which are not supported by the abstract-only source text.
+> Gallamine’s absorption-rate constant (ka) was unreported, so a default was used and the record was held back.
 
 <div class="pk-model-meta" hidden drug="gallamine" model-id="Gallamine_Ramzan1980_reference" status="needs_review" stale="false" population="patients undergoing elective surgery" measured-compound="gallamine" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Ramzan MI, Triggs EJ, Shanks CA. Pharmacokinetic studies in man with gallamine t
 
 ### Reviewer guidance
 
-**The record uses unreported default values for gallamine's absorption rate and lag time, which are not supported by the abstract-only source text.**
+**Gallamine’s absorption-rate constant (ka) was unreported, so a default was used and the record was held back.**
 
-The absorption rate constant and lag time were assigned library placeholders instead of values extracted from Ramzan_1980. Since only the abstract was read, the fitted model was not available to derive these parameters. The record also assumes apparent parameterization, creating a disagreement with a second reader who interpreted the values mechanistically. Extracted — gallamine: t1/2α 6.7 min, t1/2β 135 min, CL 1.2 ml/min/kg, V/F 225 ml/kg.
+Ka and Tlag were defaulted rather than estimated from the paper; the ka default affects the simulated profile but is unsupported by the paper, and the model used first-order depot input despite no reported ka. The record was built from the abstract alone, so summary statistics stood in for a fitted model; its apparent parameterization assumed F=1, Fm=1, and no molar correction. A second reader instead judged the parameterization mechanistic and disagreed over whether gallamine clearance was reported as 1.2 ml/min/kg; the verdict was disputed, with agreement 0.25 and 0 of 1 readers agreeing. Extracted — gallamine: t1/2α 6.7 min, t1/2β 135 min, CL 1.2 ml/min/kg, V/F 225 ml/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -141,15 +141,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=gallamine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=gallamine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

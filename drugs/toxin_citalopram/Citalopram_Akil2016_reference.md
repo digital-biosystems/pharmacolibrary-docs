@@ -159,30 +159,13 @@ No elimination clearance value was extracted for citalopram itself, so a library
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_citalopram/Citalopram_Akil2016_reference/Citalopram_Akil2016_reference_matlab.zip" download>Citalopram_Akil2016_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_citalopram/Citalopram_Akil2016_reference/Citalopram_Akil2016_reference_matlab_simbio.zip" download>Citalopram_Akil2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_citalopram/Citalopram_Akil2016_reference/Citalopram_Akil2016_reference_sbml.zip" download>Citalopram_Akil2016_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_citalopram/Citalopram_Akil2016_reference/Citalopram_Akil2016_reference_cellml.zip" download>Citalopram_Akil2016_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Akil A, Bies RR, Pollock BG, Avramopoulos D, Devanand DP, Mintzer JE et al. A population pharmacokinetic model for R- and S-citalopram and desmethylcitalopram in Alzheimer's disease patients with agitation. Journal of pharmacokinetics and pharmacodynamics 43(1):99-109 (2016). [doi:10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6)
-
-**This record:** Pharmacolibrary, model `Citalopram_Akil2016_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_citalopram/Citalopram_Akil2016_reference>
-
-```bibtex
-@misc{pharmacolibrary_CitalopramAkil2016reference,
-  title  = {{Pharmacolibrary model Citalopram_Akil2016_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_citalopram/Citalopram_Akil2016_reference},
-  note   = {Parameters from doi:10.1007/s10928-015-9457-6},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

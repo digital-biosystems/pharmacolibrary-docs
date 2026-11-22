@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Jiang_2020 \u00b7 metabolite_modelb_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_estimate&quot;,&quot;label&quot;:&quot;Anderson_2005_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_estimate.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Brown1998_reference&quot;,&quot;label&quot;:&quot;Brown_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Brown1998_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson1998_reference&quot;,&quot;label&quot;:&quot;Anderson_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hakim2019_reference&quot;,&quot;label&quot;:&quot;Hakim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hakim2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Imaizumi2017_reference&quot;,&quot;label&quot;:&quot;Imaizumi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Imaizumi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Mian2019_reference&quot;,&quot;label&quot;:&quot;Mian_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Mian2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sikina2018_reference&quot;,&quot;label&quot;:&quot;Sikina_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sikina2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Sridharan2021v2_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Sridharan2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_metabolite_modelb_value&quot;,&quot;label&quot;:&quot;Jiang_2020_metabolite_modelb_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Paracetamol_Jiang2020_parent_modela_value&quot;,&quot;label&quot;:&quot;Jiang_2020_parent_modela_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Jiang2020_parent_modela_value.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Jiang2020_metabolite_modelb_value`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
+> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Jiang2020_metabolite_modelb_value" status="not_modelled" stale="false" population="adults and children" measured-compound="acetaminophen protein adducts" parameterization="apparent" topology="parent_metabolite"></div>
+> Paracetamol model rejected because simulated tmax (0.644 h) missed the paper's 9.0 h, and the structure ignored the measured metabolite.
+
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Jiang2020_metabolite_modelb_value" status="rejected" stale="false" population="adults and children" measured-compound="acetaminophen protein adducts" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Jiang S, Madrasi K, Samant T, Lagishetty C, Vozmediano V, Chiew A et al. Population Pharmacokinetic Modeling of Acetaminophen Protein Adducts in Adults and Children. Journal of clinical pharmacology 60(5):595–604 (2020).
@@ -17,7 +19,7 @@ Jiang S, Madrasi K, Samant T, Lagishetty C, Vozmediano V, Chiew A et al. Populat
 
 **Population:** adults and children · condition healthy · age group mixed · n = 196.
 
-**Dosing:** 1400, 5600 mg, other, single.
+**Dosing:** 350, 5600 mg, oral, multiple.
 
 **Dosed compound ≠ measured compound:** dosed paracetamol, measured acetaminophen protein adducts.
 
@@ -31,15 +33,15 @@ Jiang S, Madrasi K, Samant T, Lagishetty C, Vozmediano V, Chiew A et al. Populat
 <figure class="pk-models-diagram"><img src="drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value/Paracetamol_Jiang2020_metabolite_modelb_value.svg" alt="Paracetamol_Jiang2020_metabolite_modelb_value diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CLAPAP/FIR (L/h) | CLm/F | 0.248 | L/h | 13 |
-| k_for_cl_f | k_for_cl_f | 3.56 |  | 15 |
 | VC/FIR (L) | Vm/F | 2.21 | L | 16 |
-| theta_q290_category | theta_q290_category | 7 |  |  |
-| apparent volume of distribution of the S(-) enantiomer | V/F | 0.82 | L/kg |  |
+| theta_cl_f_category | theta_cl_f_category | 3.56 | L/h | 15 |
+| theta_q63_category | theta_q63_category | 7 |  |  |
+| Vd/F | V/F | 0.16 | L/kg |  |
 | ka | kabs | 9.76 | h -1 |  |
 | Tlag | tlag | 4.2 | min |  |
 
@@ -49,7 +51,7 @@ Jiang S, Madrasi K, Samant T, Lagishetty C, Vozmediano V, Chiew A et al. Populat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,23 +61,23 @@ Jiang S, Madrasi K, Samant T, Lagishetty C, Vozmediano V, Chiew A et al. Populat
 
 ### Reviewer guidance
 
-**No model has been built from this record yet; the covariate scenarios were not simulated.**
+**Paracetamol model rejected because simulated tmax (0.644 h) missed the paper's 9.0 h, and the structure ignored the measured metabolite.**
 
-The base model was simulated, not the covariate effects the record defines. No model template covers this structure.
+The record defines a parent-metabolite structure but the simulation used a simple one-compartment absorption model. The time of the peak was 0.644 hours instead of the expected 9.0 hours. Additionally, the output variable was the parent central compartment rather than the measured protein adducts. Extracted — paracetamol: CLm/F 0.248 L/h, Vm/F 2.21 L; acetaminophen protein adducts: V/F 0.16 L/kg, kabs 9.76 h -1, tlag 4.2 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading acetaminophen; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading acetaminophen; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
 | CLAPAP/FIR (L/h) | `Q351` · CLm/F | 0.248 | L/h | 6.889e-08 | m3/s | l/h | 13 | llm (0.6) | T1:row3:col4 |
-| k_for_cl_f | `Q900` · k_for_cl_f | 3.56 |  |  |  |  | 15 |  | T1:row4:col4 |
 | VC/FIR (L) | `Q367` · Vm/F | 2.21 | L | 0.00221 | m3 | l | 16 | llm (0.6) | T1:row5:col4 |
-| theta_q290_category | `Q900` · theta_q290_category | 7 |  |  |  |  |  |  | T1:row6:col4 |
-| apparent volume of distribution of the S(-) enantiomer | `Q76` · V/F | 0.82 | L/kg | 0.0574 | m3 | L |  | review_gapfill (0.7) | Anderson_2015:review |
+| theta_cl_f_category | `Q900` · theta_cl_f_category | 3.56 | L/h |  |  |  | 15 |  | T1:row4:col4 |
+| theta_q63_category | `Q900` · theta_q63_category | 7 |  |  |  |  |  |  | T1:row6:col4 |
+| Vd/F | `Q76` · V/F | 0.16 | L/kg | 0.0112 | m3 | L |  | review_gapfill (0.7) | Brown_1998:review |
 | ka | `Q49` · kabs | 9.76 | h -1 | 0.002711 | 1/s | 1/h |  | review_gapfill (0.7) | Anderson_1998:review |
 | Tlag | `Q83` · tlag | 4.2 | min | 252 | s | h |  | review_gapfill (0.7) | Gibb_2008:review |
 
@@ -90,22 +92,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- covariate level 'k for CL/F' → Q900:k_for_cl_f = 3.56 (additive_shift on Q27)
-- dropped unlinked row (NIL): 'ω_CLAPAP' — extend the ontology if this is a real PK parameter (source ['T1:row15:col4'])
+- routed 'ω_CLAPAP' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - routed 'ω_Vc' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - routed 'ω_Q' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'Prop Error' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Add Error (mg/L)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- covariate effect for Q290 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q63 has no base parameter row (kept as unattached equation-variable)
 - metabolite acetaminophen protein adducts: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite acetaminophen protein adducts: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=acetaminophen protein adducts
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- status held at "Needs review" — not promoted
 - population split: 'metabolite modelb / value' subgroup of Jiang_2020 (paper reports 2 populations: metabolite modelb / value, parent modela / value)
-- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 8 linked by role
-- molar mass: no plausible PubChem entry for 'acetaminophen protein adducts' ('acetaminophen protein adducts') — left in mass units
-- molar mass: none found for 'acetaminophen protein adducts' — its concentrations stay mass-only
-- gap-filled Q76 (V/F) from Anderson_2015's review values (primary lacked it)
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 8 linked by role; re-tagged parent→acetaminophen protein adducts ×2
+- gap-filled Q76 (V/F) from Brown_1998's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Anderson_1998's review values (primary lacked it)
@@ -122,19 +121,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.429 (6/14 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['paracetamol', 'acetaminophen protein adducts', 'metabolism']] | [['acetaminophen', 'acetaminophen protein adducts', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[k_for_cl_f]` | 3.56 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k_for_vc]` |  | 7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_f_category]` |  | 3.56 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q290_category]` | 7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ω_clapap]` |  | 21 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ω_q]` |  | 29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q47_category]` |  | 7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q63_category]` | 7 |  | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | paracetamol | acetaminophen | mismatch |
 
 </details>
@@ -155,24 +150,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['T1:row3:col4'] |
 | C5_dimension_Q367 | pass | [length] ** 3 |  | ['T1:row5:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Anderson_1998:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Anderson_2015:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Brown_1998:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gibb_2008:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q76 | pass | volume within physiological range | 57.4 L | ['Anderson_2015:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 11.2 L | ['Brown_1998:review'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | skipped |  |  | no emitted model to inspect (engineer build absent) |
-| T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 0.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 9 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | fail | Metabolite_C (measured=acetaminophen protein adducts) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_cmax | reference | skipped | 0.1 | 0.1502 |  | unresolved concentration unit (exp 'nmol/mL', sim 'kg/m3') |
+| T1_tmax | reference | fail | 9 | 0.644 | 0.0716 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -184,64 +181,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value/Paracetamol_Jiang2020_metabolite_modelb_value_modelica.zip" download>Paracetamol_Jiang2020_metabolite_modelb_value_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value/Paracetamol_Jiang2020_metabolite_modelb_value_fmi.zip" download>Paracetamol_Jiang2020_metabolite_modelb_value_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 252 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0014 | kg |
-| input | model | `Cl` | 6.889e-08 | m3/s |
-| input | model | `VdPerKg` | 3.157e-05 | m3/kg |
-| input | model | `ka` | 0.002711 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Jiang S, Madrasi K, Samant T, Lagishetty C, Vozmediano V, Chiew A et al. Population Pharmacokinetic Modeling of Acetaminophen Protein Adducts in Adults and Children. Journal of clinical pharmacology 60(5):595–604 (2020). [doi:10.1002/jcph.1555](https://doi.org/10.1002/jcph.1555)
-
-**This record:** Pharmacolibrary, model `Paracetamol_Jiang2020_metabolite_modelb_value`. <https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value>
-
-```bibtex
-@misc{pharmacolibrary_ParacetamolJiang2020metabolitemodelbvalue,
-  title  = {{Pharmacolibrary model Paracetamol_Jiang2020_metabolite_modelb_value}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value},
-  note   = {Parameters from doi:10.1002/jcph.1555},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1400 mg, single dose, first-order absorption (ka 9.76 /h, lag 4.2 min, F 1). Doses in the paper: 1400–5600 mg.
+**Administration: oral** — 350 mg, single dose, first-order absorption (ka 9.76 /h, lag 4.2 min, F 1). Doses in the paper: 350–5600 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value/Paracetamol_Jiang2020_metabolite_modelb_value_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value/Paracetamol_Jiang2020_metabolite_modelb_value_sim_controls.json"></dbs-fmusim>
 
@@ -251,4 +197,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Jiang2020_metabolite_modelb_value&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Jiang2020_metabolite_modelb_value%0APaper%3A%20Jiang_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Jiang2020_metabolite_modelb_value%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 07:35 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 03:00 UTC</sub>

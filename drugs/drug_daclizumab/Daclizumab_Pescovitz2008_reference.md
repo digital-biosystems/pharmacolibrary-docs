@@ -16,7 +16,7 @@ Pescovitz MD, Knechtle S, Alexander SR, Colombani P, Nevins T, Nieforth K et al.
 
 ## Population and dosing
 
-**Population:** pediatric renal transplant recipients · condition renal impairment · age group child · n = &gt;11512.
+**Population:** pediatric renal transplant recipients · condition renal impairment · age group child.
 
 ## Model
 

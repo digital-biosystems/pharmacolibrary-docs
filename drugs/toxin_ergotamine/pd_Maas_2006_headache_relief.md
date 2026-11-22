@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ergotamine&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/&quot;},{&quot;label&quot;:&quot;Maas_2006 \u00b7 PD headache relief&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Ibraheem1982_reference&quot;,&quot;label&quot;:&quot;Ibraheem_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Perrin1985_reference&quot;,&quot;label&quot;:&quot;Perrin_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Perrin1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Ibraheem1982_reference&quot;,&quot;label&quot;:&quot;Ibraheem_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Perrin1985_reference&quot;,&quot;label&quot;:&quot;Perrin_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Perrin1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # headache relief — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Ergotamine (concentrations from the PK model of El-Nabarawy_2019) drives headache relief: time-to-event model.
 
 **Model:** No model was generated from this record.
+
+> The provided record identifies a time-to-event proportional model where ergotamine concentrations drive headache relief, with an effect direction of stimulation and a potency ratio EC50(suma)/EC50(nara) of 3.3 and efficacy ratio Emax(suma)/Emax(nara) of 0.74. The paper excerpts are unavailable, so the specific pharmacodynamic mechanism is not described in the provided text.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Maas_2006`
 - **model family:** `tte`

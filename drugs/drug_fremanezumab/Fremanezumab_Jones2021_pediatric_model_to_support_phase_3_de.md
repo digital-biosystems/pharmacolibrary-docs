@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The bioavailability parameter for fremanezumab was left at library defaults rather than extracted from the paper, preventing publication.
+> Fremanezumab bioavailability and lag time lacked estimates, forcing use of unverified library defaults for the pediatric migraine model.
 
 <div class="pk-model-meta" hidden drug="fremanezumab" model-id="Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de" status="needs_review" stale="false" population="pediatric patients with migraine" measured-compound="fremanezumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,9 +59,9 @@ Jones A, Cohen-Barak O, Radivojevic A, Fiedler-Kelly J. Scaling Approaches for P
 
 ### Reviewer guidance
 
-**The bioavailability parameter for fremanezumab was left at library defaults rather than extracted from the paper, preventing publication.**
+**Fremanezumab bioavailability and lag time lacked estimates, forcing use of unverified library defaults for the pediatric migraine model.**
 
-The model record defines a bioavailability (F) parameter, but no value was extracted from the source, forcing the use of generic library placeholders. Consequently, the simulated concentration profiles rely on unsupported assumptions rather than the specific pediatric migraine data in Jones_2021. Additionally, the defined weight covariate effects were never simulated, meaning the record does not reflect the covariate impact described in the model structure. Extracted — fremanezumab: CL 0.0905 L/day, V1 1.89 L, kabs 0.252 1/day, Q 0.262 L/day, V2 1.72 L.
+The record defines two weight-based clearance powers but leaves bioavailability and absorption lag time as library placeholders rather than paper-derived estimates. Simulations only reflected the reference individual, failing to exercise the defined covariate scenarios. A secondary review confirmed the missing bioavailability field, validating the decision to hold the model back. Extracted — fremanezumab: CL 0.0905 L/day, V1 1.89 L, kabs 0.252 1/day, Q 0.262 L/day, V2 1.72 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f1: bioavailability: this record has none, the second reading none. That field does not shape the model.
 
@@ -147,14 +147,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=fremanezumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=fremanezumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.909, 0 of 1 reader(s) agree | 0.909 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

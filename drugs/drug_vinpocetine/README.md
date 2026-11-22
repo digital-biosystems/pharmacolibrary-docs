@@ -28,7 +28,7 @@ Vinpocetine is a psychostimulant and nootropic drug used to treat vascular demen
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q290, Q69 — no SI value to build fr…</sub> | [Petric_2023_reference](drugs/drug_vinpocetine/Vinpocetine_Petric2023_reference.md) | — | 1-compartment (no model) | 9 | Petric Z et al., Clinical Pharmacology of Vinpocetine: P…, Pharmaceutics (2023) | [10.3390/pharmaceutics15102502](https://doi.org/10.3390/pharmaceutics15102502) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Vereczkey_1979_reference](drugs/drug_vinpocetine/Vinpocetine_Vereczkey1979_reference.md) | — | 1-compartment (no model) | 4 | Vereczkey L et al., Pharmacokinetics of vinpocetine in huma…, Arzneimittel-Forschung (1979) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Vereczkey_1979_reference](drugs/drug_vinpocetine/Vinpocetine_Vereczkey1979_reference.md) | — | 1-compartment (no model) | 4 | Vereczkey L et al., Pharmacokinetics of vinpocetine in huma…, Arzneimittel-Forschung (1979) | — |
 | <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Vereczkey_1987_reference](drugs/drug_vinpocetine/Vinpocetine_Vereczkey1987_reference.md) | — | parent + metabolite (no model) | 3 | Vereczkey L et al., Pharmacokinetics of apovincaminic acid…, Polish journal of pharmacol… (1987) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Vlase_2005_reference](drugs/drug_vinpocetine/Vinpocetine_Vlase2005_reference.md) | — | 1-compartment (no model) | 2 | Vlase L et al., Pharmacokinetics and comparative bioava…, Arzneimittel-Forschung (2005) | [10.1055/s-0031-1296915](https://doi.org/10.1055/s-0031-1296915) |
 
@@ -44,15 +44,6 @@ Vinpocetine is a psychostimulant and nootropic drug used to treat vascular demen
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Manda_2015_P_gp](drugs/drug_vinpocetine/pd_Manda_2015_P_gp.md) | P-gp inhibition (calcein-AM uptake in hMDR1-MDCKII cells) ← vinpocetine · inhibition effect | — | Manda VK et al., Studies on Pharmacokinetic Drug Interac…, Medicines (Basel, Switzerla… (2015) | [10.3390/medicines2020093](https://doi.org/10.3390/medicines2020093) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wu_2001_I_K_Ca](drugs/drug_vinpocetine/pd_Wu_2001_I_K_Ca.md) | Ca2+-activated K+ current amplitude ← vinpocetine · direct Emax (saturable) effect | — | Wu SN et al., Vinpocetine-induced stimulation of calc…, Biochemical pharmacology (2001) | [10.1016/s0006-2952(01)00553-6](https://doi.org/10.1016/s0006-2952(01)00553-6) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vinpocetine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -65,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:45 | 2:27 | 3/1/0 | 3/0/0 | 0/0/0 | 141,417/11,694 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 00:45 | 2:27 | 3/1/0 | 7/0/0 | 0/0/0 | 141,417/11,694 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

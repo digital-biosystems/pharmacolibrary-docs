@@ -16,7 +16,7 @@ Bolognani F, Kruithof AC, Schulthess P, Machacek M, de Kam ML, Bergmann KR et al
 
 ## Population and dosing
 
-**Population:** healthy adults · age group adult · n = &gt;=24.
+**Population:** healthy adults · age group adult.
 
 ## Model
 

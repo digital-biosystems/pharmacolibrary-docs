@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record uses steady-state volume of distribution (0.11 L/kg) instead of central volume for a one-compartment nebacumab model.
+> Nebacumab’s 0.11 L/kg steady-state distribution volume was used as the distribution volume in a one-compartment model, leaving its mechanistic interpretation disputed.
 
 <div class="pk-model-meta" hidden drug="nebacumab" model-id="Nebacumab_Romano1993_reference" status="needs_review" stale="false" population="pediatric patients with sepsis syndrome or septic shock" measured-compound="nebacumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Romano MJ, Kearns GL, Kaplan SL, Jacobs RF, Killian A, Bradley JS et al. Single-
 
 ## Population and dosing
 
-**Population:** pediatric patients with sepsis syndrome or septic shock · age group child · n = ..
+**Population:** pediatric patients with sepsis syndrome or septic shock · age group child.
 
 ## Model
 
@@ -50,13 +50,13 @@ Romano MJ, Kearns GL, Kaplan SL, Jacobs RF, Killian A, Bradley JS et al. Single-
 
 ### Reviewer guidance
 
-**The record uses steady-state volume of distribution (0.11 L/kg) instead of central volume for a one-compartment nebacumab model.**
+**Nebacumab’s 0.11 L/kg steady-state distribution volume was used as the distribution volume in a one-compartment model, leaving its mechanistic interpretation disputed.**
 
-The model structure is one-compartment, requiring a central volume to correctly describe distribution, but only Vss was available. The reviewer rejected using Vss as the distribution volume because it does not represent the central compartment volume. Since the record relies on abstract data, these summary statistics were treated as model parameters rather than fitted values. Extracted — nebacumab: CL 6.1 L/h, Vss 0.11 L/kg, t1/2z 14.5 hours, Ct 30.7 mg/L.
+The paper was available only as an abstract, so reported summary statistics stood in for a fitted model. The model builder used the steady-state distribution volume because no central volume was reported; this reproduces AUC and terminal half-life but not the early distribution phase. The second reader disputed the mechanistic rather than apparent parameterization and disagreed about which parameter represented distribution volume; agreement was 0.778, with 0 of 1 readers agreeing. Extracted — nebacumab: CL 6.1 L/h, Vss 0.11 L/kg, t1/2z 14.5 hours, Ct 30.7 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -131,14 +131,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=nebacumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=nebacumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

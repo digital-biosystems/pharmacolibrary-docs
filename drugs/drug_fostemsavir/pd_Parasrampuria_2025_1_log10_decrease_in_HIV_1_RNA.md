@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;fostemsavir&quot;,&quot;href&quot;:&quot;drugs/drug_fostemsavir/&quot;},{&quot;label&quot;:&quot;Parasrampuria_2025 \u00b7 PD Proportion of subjects with &gt;1 log10 decrease in plasma HIV\u20101 RNA on Day 8&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Proportion of subjects with &gt;1 log10 decrease in plasma HIV‐1 RNA on Day 8 — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+# Proportion of subjects with &gt;1 log10 decrease in plasma HIV‐1 RNA on Day 8 — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -51,18 +51,18 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:qwen3.8-27b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `qwen3.8-27b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:qwen3.8-27b` | `effect_direction` | stimulation | inhibition | mismatch |
-| `einfracz:qwen3.8-27b` | `model_family` | emax | categorical | mismatch |
-| `einfracz:qwen3.8-27b` | `parameters[Q320]` | −2.67 |  | only_one_extracted |
-| `einfracz:qwen3.8-27b` | `parameters[Q323]` |  | -2.67 | only_one_extracted |
-| `einfracz:qwen3.8-27b` | `parameters[Q324].value` | −1.99 | -0.781 | mismatch |
-| `einfracz:qwen3.8-27b` | `parameters[Q900]` | −0.781 |  | only_one_extracted |
+| `qwen3.8-27b` | `effect_direction` | stimulation | inhibition | mismatch |
+| `qwen3.8-27b` | `model_family` | emax | categorical | mismatch |
+| `qwen3.8-27b` | `parameters[Q320]` | −2.67 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[Q323]` |  | -2.67 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[Q324].value` | −1.99 | -0.781 | mismatch |
+| `qwen3.8-27b` | `parameters[Q900]` | −0.781 |  | only_one_extracted |
 
 </details>
 

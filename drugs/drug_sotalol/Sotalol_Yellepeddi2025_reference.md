@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Sotalol record was held back because covariate effects were not simulated and oral bioavailability lacked a valid numeric value.
+> The relative oral bioavailability of 1.6 exceeds physiologic limits, and the second reader disagreed with the record classification.
 
 <div class="pk-model-meta" hidden drug="sotalol" model-id="Sotalol_Yellepeddi2025_reference" status="needs_review" stale="false" population="adults with atrial arrhythmias" measured-compound="sotalol" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,9 +59,9 @@ Yellepeddi VK, Ismail M, Bunch TJ, Deering TF, Holubkov R, Kennedy R et al. Popu
 
 ### Reviewer guidance
 
-**Sotalol record was held back because covariate effects were not simulated and oral bioavailability lacked a valid numeric value.**
+**The relative oral bioavailability of 1.6 exceeds physiologic limits, and the second reader disagreed with the record classification.**
 
-The record defines a renal function covariate for clearance, but the model was only simulated for a reference individual, leaving those effects untested. The reported unit for oral bioavailability could not be converted to a standard metric, so the parameter had no valid numeric value. Consequently, the model builder used placeholder assumptions for absorption delay and bioavailability rather than explicit estimates. Extracted — sotalol: CL 9.5 L/h, Q 71.3 L/h, V1 38.2 L, V2 89.1 L, kabs 0.2 h−1, Frel 1.6 Foral.
+The oral bioavailability relative to intravenous administration is recorded as 1.6, which is not physiologically plausible. Additionally, the second reader disputed the parameter classification, disagreeing with the initial identification while noting 0 of 1 readers agreed. The record also contains a renal function covariate with a value of 0.7 that was not exercised during simulation. Extracted — sotalol: CL 9.5 L/h, Q 71.3 L/h, V1 38.2 L, V2 89.1 L, kabs 0.2 h−1, Frel 1.6 Foral.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[oral bioavailability relative to iv].parameter_id`: this record has Q87, the second reading Q40. That field shapes the model, so the record is marked disputed.
 
@@ -147,14 +147,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=sotalol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev-001: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=sotalol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.952, 0 of 1 reader(s) agree | 0.952 | cross-check disputed by a second reader: verdict disputed, agreement 0.952, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

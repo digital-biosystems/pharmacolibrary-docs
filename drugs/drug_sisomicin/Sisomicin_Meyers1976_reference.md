@@ -16,7 +16,7 @@ Meyers BR, Hirschman SZ, Yancovitz S, Ribner B. Pharmacokinetic parameters of si
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 10.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 70 mg, im, iv, single.
 

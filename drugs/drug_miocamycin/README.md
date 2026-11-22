@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;miocamycin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miocamycin_Litterio2000_reference&quot;,&quot;label&quot;:&quot;Litterio_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miocamycin_Litterio2000_reference&quot;,&quot;label&quot;:&quot;Litterio_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # miocamycin
 
@@ -24,7 +24,7 @@ Miocamycin is a macrolide antibiotic used to treat bacterial infections, particu
 
 ## Start here
 
-> **Litterio_2000_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> Holando Argentino cattle, n = 5. [Run it in the simulator](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md?tab=Simulation) · [record](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md)
+> **Litterio_2000_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> Holando Argentino cattle, n = 5. [Run it in the simulator](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md?tab=Simulation) · [record](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -32,22 +32,13 @@ Miocamycin is a macrolide antibiotic used to treat bacterial infections, particu
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="cattle" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Litterio_2000_reference](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Litterio NJ et al., Pharmacokinetics of miocamycin followin…, Journal of veterinary medic… (2000) | [10.1046/j.1439-0442.2000.00260.x](https://doi.org/10.1046/j.1439-0442.2000.00260.x) |
+| <span class="pk-rf" hidden data-species="cattle" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Litterio_2000_reference](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Litterio NJ et al., Pharmacokinetics of miocamycin followin…, Journal of veterinary medic… (2000) | [10.1046/j.1439-0442.2000.00260.x](https://doi.org/10.1046/j.1439-0442.2000.00260.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Yokota_1984_5_MOM_toxicity](drugs/drug_miocamycin/pd_Yokota_1984_5_MOM_toxicity.md) | Toxicity ← miocamycin · model not identified | — | Yokota M et al., Toxicological studies on a new macrolid…, The Japanese journal of ant… (1984) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=miocamycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -67,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 24 matched, 23 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

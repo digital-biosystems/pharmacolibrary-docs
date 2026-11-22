@@ -4,11 +4,11 @@
 
 # neomycin — `Neomycin_Lentzen1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-04 02:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="neomycin" model-id="Neomycin_Lentzen1981_reference" status="needs_review" stale="true" population="healthy volunteers and patients with liver cirrhosis" measured-compound="neomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="neomycin" model-id="Neomycin_Lentzen1981_reference" status="needs_review" stale="false" population="healthy volunteers and patients with liver cirrhosis" measured-compound="neomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lentzen H, Kölle EU, Daschner F. [Comparative study of serum levels and urinary excretion following oral administration of paromomycin and neomycin (author's transl)]. Arzneimittel-Forschung 31(11):1967–1971 (1981).
@@ -34,7 +34,7 @@ Lentzen H, Kölle EU, Daschner F. [Comparative study of serum levels and urinary
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Lentzen H, Kölle EU, Daschner F. [Comparative study of serum levels and urinary
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — neomycin: t1/2z 2.6 h, t1/2α 1.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has neomycin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

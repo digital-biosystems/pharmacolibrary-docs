@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Ferric hexacyanoferrate&quot;,&quot;href&quot;:&quot;drugs/toxin_ferric_hexacyanoferrate/&quot;},{&quot;label&quot;:&quot;Qu_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FerricHexacyanoferrate_Qu2023_reference&quot;,&quot;label&quot;:&quot;Qu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FerricHexacyanoferrate_Qu2023_reference&quot;,&quot;label&quot;:&quot;Qu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ferric hexacyanoferrate — `FerricHexacyanoferrate_Qu2023_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life (paper 1, model 1.27).
 
-<div class="pk-model-meta" hidden drug="Ferric hexacyanoferrate" model-id="FerricHexacyanoferrate_Qu2023_reference" status="extracted" stale="false" population="mice" measured-compound="Iron" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Ferric hexacyanoferrate" model-id="FerricHexacyanoferrate_Qu2023_reference" status="needs_review" stale="false" population="mice" measured-compound="Iron" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Qu H, Jin X, Cheng W, Wu D, Ma B, Lou C et al. Uncovering the Fate and Risks of Intravenously Injected Prussian Blue Nanoparticles in mice by an Integrated Methodology of Toxicology, Pharmacokinetics, Proteomics, and Metabolomics. Particle and fibre toxicology 20(1):18 (2023).
@@ -33,13 +33,15 @@ Qu H, Jin X, Cheng W, Wu D, Ma B, Lou C et al. Uncovering the Fate and Risks of 
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | T1/2 | t1/2z | 1.0 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,13 @@ Qu H, Jin X, Cheng W, Wu D, Ma B, Lou C et al. Uncovering the Fate and Risks of 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (paper 1, model 1.27).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is ferric hexacyanoferrate's own; they describe Iron. Extracted — Iron: t1/2z 1 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -90,6 +98,21 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C0b_disposition_core | pass |  |
 | C0c_disposition_complete | pass |  |
 | C8_topology | pass |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Iron) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_t_half_terminal | reference | fail | 1 | 1.269 | 1.269 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 497 | 1.269 | 0.0026 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 415.9 | 1.269 | 0.0031 | days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

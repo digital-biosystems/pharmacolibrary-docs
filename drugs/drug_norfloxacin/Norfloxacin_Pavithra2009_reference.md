@@ -17,7 +17,7 @@ Pavithra BH, Prakash N, Jayakumar K. Modification of pharmacokinetics of norflox
 
 ## Population and dosing
 
-**Population:** adult New Zealand white rabbits · condition healthy · age group adult · n = # 16.
+**Population:** adult New Zealand white rabbits · condition healthy · age group adult.
 
 > **Species: rabbit.** This record comes from an animal study (rabbit), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 

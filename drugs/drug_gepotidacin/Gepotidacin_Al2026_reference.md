@@ -4,9 +4,11 @@
 
 # gepotidacin — `Gepotidacin_Al2026_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="gepotidacin" model-id="Gepotidacin_Al2026_reference" status="not_modelled" stale="false" population="adult males scheduled for radical prostatectomy" measured-compound="gepotidacin" parameterization="apparent" topology="1C"></div>
+> Gepotidacin model held back because volume of distribution, absorption rate constant, and lag time lacked values, relying on placeholder defaults.
+
+<div class="pk-model-meta" hidden drug="gepotidacin" model-id="Gepotidacin_Al2026_reference" status="model_quarantined" stale="false" population="adult males scheduled for radical prostatectomy" measured-compound="gepotidacin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Al Jalali V, Aranzana-Climent V, Jorda A, Bergmann F, Lackner E, Wölfl-Duchek M et al. Prostatic tissue distribution of gepotidacin in patients undergoing prostatectomy: an ex vivo microdialysis and pharmacokinetic modelling study. Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases (2026).
@@ -14,7 +16,7 @@ Al Jalali V, Aranzana-Climent V, Jorda A, Bergmann F, Lackner E, Wölfl-Duchek M
 
 ## Population and dosing
 
-**Population:** adult males scheduled for radical prostatectomy · condition prostate cancer (patients undergoing radical prostatectomy) · age group adult · n = The model-predicted geometric mean of unbound area under the concentration-time curve from zero to infinity was 15 500 h∗ng/mL (geometric coefficient of variation (GCV): 15.7%) in both prostate and plasma (prostate penetration ratio = 1). The model-predicted geometric mean of the unbound peak concentration (Cmax) of 1340 ng/mL (GCV: 38.7%) was reached after 4.25 hours (range: 3.25-12.2 hours) in prostate tissue. The model-predicted geometric mean of unbound plasma Cmax of 2090 (GCV 48.2%) ng/mL was reached after 1.75 hours (range: 0.75-8.25 hours). Model-estimated median total apparent plasma clearance and terminal apparent volume of distribution were 65.0 L/h (GCV 15.7%) and 1310 L (GCV 11.2%), respectively..
+**Population:** adult males scheduled for radical prostatectomy · condition prostate cancer (patients undergoing radical prostatectomy) · age group adult.
 
 ## Model
 
@@ -24,7 +26,7 @@ Al Jalali V, Aranzana-Climent V, Jorda A, Bergmann F, Lackner E, Wölfl-Duchek M
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -35,7 +37,7 @@ Al Jalali V, Aranzana-Climent V, Jorda A, Bergmann F, Lackner E, Wölfl-Duchek M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +47,13 @@ Al Jalali V, Aranzana-Climent V, Jorda A, Bergmann F, Lackner E, Wölfl-Duchek M
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Gepotidacin model held back because volume of distribution, absorption rate constant, and lag time lacked values, relying on placeholder defaults.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record extracted summary statistics from the abstract, but volume of distribution, absorption rate constant, and lag time were not reported in the source text. Consequently, library placeholders were used for these missing parameters instead of explicit estimates. A second reader also disagreed with the primary parameter values, finding them null or misaligned with the abstract's statistics. Extracted — gepotidacin: Cmax 1.34e+03 ng/mL, tmax 4.25 hours, CL/F 65 L/h, V3/F 1.31e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gepotidacin, the second reading gep­otidacin; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -128,13 +130,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | obtained | note |
-|---|---|---|---|
-| T0_analyte_identity | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  | no covariate effects in record |
-| T3_apparent_invariant | pass | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -16,7 +16,7 @@ Sy SKB, Chia YL, Gordi T, Hoch U, Eldon MA. Integrated population pharmacokineti
 
 ## Population and dosing
 
-**Population:** cancer patients with solid tumors · condition solid tumors · age group adult · n = This paper is about the drug etirinotecan_pegol. The abstract states: "Etirinotecan pegol (EP), a long-acting topoisomerase-1 inhibitor, is a polyethylene glycol conjugate of irinotecan... The objective of this study was to develop a population pharmacokinetic (popPK) model of EP and four of its metabolites (irinotecan, SN38, SN38-glucuronide, and APC)..."..
+**Population:** cancer patients with solid tumors · condition solid tumors · age group adult.
 
 ## Model
 

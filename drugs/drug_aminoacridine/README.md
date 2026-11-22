@@ -45,7 +45,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:51 | 4:00 | 0/0/0 | 1/8/0 | 0/0/0 | 102,364/6,711 | ollama / glm-5.3-flash | 0 | 2/1 | 0/0 | 0 |
+| 2026-10-07 22:51 | 4:00 | 0/0/0 | 1/9/0 | 0/0/0 | 102,364/6,711 | ollama / glm-5.3-flash | 0 | 2/1 | 0/0 | 0 |
 
 ## Coverage
 

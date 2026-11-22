@@ -25,7 +25,7 @@ Ceftizoxime is a third-generation cephalosporin antibiotic used to treat various
 
 ## Start here
 
-> **Karna_1993_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> premature newborns, n = &lt;|recursion_limit|&gt;. [Run it in the simulator](drugs/drug_ceftizoxime/Ceftizoxime_Karna1993_reference.md?tab=Simulation) · [record](drugs/drug_ceftizoxime/Ceftizoxime_Karna1993_reference.md)
+> **Karna_1993_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> premature newborns. [Run it in the simulator](drugs/drug_ceftizoxime/Ceftizoxime_Karna1993_reference.md?tab=Simulation) · [record](drugs/drug_ceftizoxime/Ceftizoxime_Karna1993_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -35,18 +35,6 @@ Ceftizoxime is a third-generation cephalosporin antibiotic used to treat various
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Karna_1993_reference](drugs/drug_ceftizoxime/Ceftizoxime_Karna1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Karna P et al., Population pharmacokinetics of ceftizox…, Developmental pharmacology… (1993) | [10.1159/000457554](https://doi.org/10.1159/000457554) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Murakawa_1980_reference](drugs/drug_ceftizoxime/Ceftizoxime_Murakawa1980_reference.md) | — | 1-compartment (no model) | 1 | Murakawa T et al., Pharmacokinetics of ceftizoxime in anim…, Antimicrobial agents and ch… (1980) | [10.1128/AAC.17.2.157](https://doi.org/10.1128/AAC.17.2.157) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ceftizoxime).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: Peptidoglycan transpeptidase (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

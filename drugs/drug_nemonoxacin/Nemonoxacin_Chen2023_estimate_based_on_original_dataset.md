@@ -16,7 +16,7 @@ Chen Y, Wu X, Tsai C, Chang L, Yu J, Cao G et al. Integrative population pharmac
 
 ## Population and dosing
 
-**Population:** Chinese patients with community-acquired pneumonia and healthy subjects · condition community-acquired pneumonia · age group adult · n = &gt;=100.
+**Population:** Chinese patients with community-acquired pneumonia and healthy subjects · condition community-acquired pneumonia · age group adult.
 
 **Dosing:** 500, 750 mg, other, multiple, every 24 h.
 

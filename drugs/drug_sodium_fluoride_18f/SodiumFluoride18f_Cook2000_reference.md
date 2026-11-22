@@ -16,7 +16,7 @@ Cook GJ, Lodge MA, Blake GM, Marsden PK, Fogelman I. Differences in skeletal kin
 
 ## Population and dosing
 
-**Population:** postmenopausal women · condition postmenopausal · age group adult · n = &gt;=26.
+**Population:** postmenopausal women · condition postmenopausal · age group adult.
 
 ## Model
 

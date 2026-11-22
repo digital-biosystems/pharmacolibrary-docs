@@ -5,11 +5,11 @@
 
 # cinacalcet — `Cinacalcet_Chen2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:23 UTC (Rejected), but the paper was screened again on 2026-10-07 10:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for cinacalcet was rejected because its reported unit of L h−1 prevented valid unit conversion.
+> Q/F value 296.3 is dimensionally inconsistent as a first-order rate constant despite being labeled with clearance units L h−1.
 
-<div class="pk-model-meta" hidden drug="cinacalcet" model-id="Cinacalcet_Chen2019_reference" status="rejected" stale="true" population="adults and paediatrics with secondary hyperparathyroidism on dialysis" measured-compound="cinacalcet" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cinacalcet" model-id="Cinacalcet_Chen2019_reference" status="rejected" stale="false" population="adults and paediatrics with secondary hyperparathyroidism on dialysis" measured-compound="cinacalcet" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Chen P, Sohn W, Narayanan A, Gisleskog PO, Melhem M. Bridging adults and paediatrics with secondary hyperparathyroidism receiving haemodialysis: a pharmacokinetic-pharmacodynamic analysis of cinacalcet. British journal of clinical pharmacology 85(6):1312–1325 (2019).
@@ -42,7 +42,7 @@ Chen P, Sohn W, Narayanan A, Gisleskog PO, Melhem M. Bridging adults and paediat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Chen P, Sohn W, Narayanan A, Gisleskog PO, Melhem M. Bridging adults and paediat
 
 ### Reviewer guidance
 
-**The absorption rate constant for cinacalcet was rejected because its reported unit of L h−1 prevented valid unit conversion.**
+**Q/F value 296.3 is dimensionally inconsistent as a first-order rate constant despite being labeled with clearance units L h−1.**
 
-The record lists the absorption rate constant with a unit of L h−1, which is a clearance unit rather than a rate constant unit. This dimensional inconsistency meant the parameter could not be standardized to a valid SI value. As a result, the model failed a structural check for dimension mismatch. Extracted — cinacalcet: kabs 0.8 L h−1, CL/F 288 L h−1, V2/F 4.1e+03 L, V3/F 1.98e+04 L, Q/F 296 L h−1, tlag 0.36 h.
+The parameter Q/F represents the intercompartmental clearance between the central and peripheral compartments, yet it carries the units L h−1 rather than the expected 1/h for a rate constant. This dimensional conflict caused the model to be rejected because the unit could not be converted to SI for the calculation. The reviewer disagreed on the dose compound identity, marking it as unknown instead of cinacalcet. Extracted — cinacalcet: kabs 0.8 L h−1, CL/F 288 L h−1, V2/F 4.1e+03 L, V3/F 1.98e+04 L, Q/F 296 L h−1, tlag 0.36 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cinacalcet, the second reading unknown. That field shapes the model, so the record is marked disputed.
 

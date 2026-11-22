@@ -4,11 +4,11 @@
 
 # tocopherol (vit E) — `TocopherolVitE_Violet2020_iv_d6_tocopherol`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-07 17:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The d6-α-tocopherol elimination rate constant value 0.024 was rejected due to a dimension mismatch caused by an unrecognized unit.
+> The record was rejected because d6-α-tocopherol’s elimination rate constant is reported as 0.024 with a unit incompatible with an inverse-time parameter.
 
-<div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_iv_d6_tocopherol" status="rejected" stale="true" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_iv_d6_tocopherol" status="rejected" stale="false" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E sequestration by liver fat in humans. JCI insight 5(1) (2020).
@@ -42,7 +42,7 @@ Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +52,13 @@ Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E 
 
 ### Reviewer guidance
 
-**The d6-α-tocopherol elimination rate constant value 0.024 was rejected due to a dimension mismatch caused by an unrecognized unit.**
+**The record was rejected because d6-α-tocopherol’s elimination rate constant is reported as 0.024 with a unit incompatible with an inverse-time parameter.**
 
-The record reports the elimination rate constant for d6-α-tocopherol with a value of 0.024 and a unit 'Ke', which is a label rather than a physical unit. This unrecognized unit prevented conversion to standard SI units, causing a dimension mismatch error during model validation. A second reader disagreed with the extracted values for AUC, Cmax, and half-life, suggesting potential transcription inaccuracies in the source data extraction. Extracted — d6-α-tocopherol: kel 0.024 Ke, t1/2z 30 h, Cmax 0.48, tmax 7.7 h, AUCt 17.5.
+The unit “Ke” is associated with [current] × [time], whereas an elimination rate constant requires 1/[time]; the reported unit could not be converted to SI. The second reader identified the dose compound and primary analyte as deuterated α-tocopherol (d3 and d6), rather than this record’s deuterated α-tocopherols and d6-α-tocopherol, and supplied 24.4 for VLDL % enrichment AUC where this record has no value. Extracted — d6-α-tocopherol: kel 0.024 Ke, t1/2z 30 h, Cmax 0.48, tmax 7.7 h, AUCt 17.5.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deuterated α-tocopherols, the second reading deuterated α-tocopherol (d3 and d6); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

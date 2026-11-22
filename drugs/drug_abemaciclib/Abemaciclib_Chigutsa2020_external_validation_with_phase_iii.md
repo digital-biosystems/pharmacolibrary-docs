@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/&quot;},{&quot;label&quot;:&quot;Chigutsa_2020 \u00b7 external_validation_with_phase_iii_data&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 Tumor size (sum of longest diameters of target lesions)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Abemaciclib was rejected because the metabolic link to M2 has no defined clearance parameter.
+> The record was rejected with abemaciclib’s absorption rate constant kabs reported as 0.31 1/h and M2 and M20 lacking reachable compartments.
 
 <div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_external_validation_with_phase_iii" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -56,11 +55,11 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 ### Reviewer guidance
 
-**Abemaciclib was rejected because the metabolic link to M2 has no defined clearance parameter.**
+**The record was rejected with abemaciclib’s absorption rate constant kabs reported as 0.31 1/h and M2 and M20 lacking reachable compartments.**
 
-The model structure includes M2 as a metabolite, but the link from abemaciclib lacks a specified rate constant, leaving the metabolite unreachable. Additionally, a unit for a parameter could not be converted to standard units, so the value was not available for the model. These structural and unit issues prevented the model from being valid. Extracted — abemaciclib: Fab 0.516 F, t1/2z 20.3 h, AUC∞ 3.36e+03 ng·h/mL, Cmax 125 ng/mL, CL 22.8 L/h, kabs 0.31 1/h); M2 (LSN2839567): t1/2z 16 h, AUC∞ 1.29e+03 ng.h/mL.
+Although M2 and M20 are listed as formed in the central site, each has zero compartments, and their metabolic links have no identified link parameter, leaving both metabolites unlinked from the dose. A reported unit could not be converted to SI, but the record does not identify which parameter or unit. Extracted — abemaciclib: Fab 0.516 F, t1/2z 20.3 h, AUC∞ 3.36e+03 ng·h/mL, Cmax 125 ng/mL, CL 22.8 L/h, kabs 0.31 1/h); M2 (LSN2839567): t1/2z 16 h, AUC∞ 1.29e+03 ng.h/mL.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

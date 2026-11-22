@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
+> Ivacaftor clearance of 1.76 L/h was rejected for an implausible magnitude indicating a unit error.
 
 <div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Vonk2025_tezacaftor_m1" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="ivacaftor" parameterization="apparent" topology="2C"></div>
 
@@ -53,11 +53,11 @@ Vonk SEM, Terheggen-Lagro SWJ, Haarman EG, Hashimoto S, Maitland-van der Zee AH,
 
 ### Reviewer guidance
 
-**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
+**Ivacaftor clearance of 1.76 L/h was rejected for an implausible magnitude indicating a unit error.**
 
-A reported unit could not be converted (AUC and AUC), so that value has no SI equivalent. Extracted — ivacaftor: AUC 208 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg; tezacaftor: AUC 157 mg*h/L.
+The record lists typical clearance for ivacaftor as 1.76 L/h/70 kg, a value outside the physiological window. This implausible magnitude indicates a unit or scale extraction error. Additionally, a reported unit could not be converted to standard units, preventing a valid parameter calculation. Extracted — ivacaftor: AUC 208 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg; tezacaftor: AUC 157 mg*h/L.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

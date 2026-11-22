@@ -17,7 +17,7 @@ Bonde J, Jensen NM, Pedersen LE, Angelo HR, Rasmussen SN, Trap-Jensen J et al. D
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = # List each compound on its own line under 'compounds', one per line, as:  #   - name | role | dosed | measured | has_parameters  # where role = parent | metabolite | co-administered | analyte-only | endogenous_biomarker  #       (endogenous_biomarker = a substance the body makes, whose kinetics the model  #        describes; it is never 'dosed')  #       dosed = yes/no (subject receives it)  #       measured = yes/no (its concentrations are modelled)  #       has_parameters = yes/no (paper gives it V/CL or a compartment)  compounds:    - disopyramide | parent | yes | yes | yes    - MND | metabolite | no | yes | no  # List each parent-&gt;metabolite (or interconversion) link on its own line under  # 'links', one per line, as:  #   - from | to | relation | link_parameter  # where relation = metabolism | hydrolysis | interconversion  #       link_parameter = Kfm | Fm | formation clearance | none  # If there are no links, write 'links: none' on a single line.  links:    - disopyramide | MND | metabolism | none.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 **Dosing:** 28.2, 150 mg, iv, single.
 

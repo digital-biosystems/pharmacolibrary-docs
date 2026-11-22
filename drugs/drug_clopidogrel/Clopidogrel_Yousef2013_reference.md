@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Yousef_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Wang2025_reference&quot;,&quot;label&quot;:&quot;Wang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Kim2009_reference&quot;,&quot;label&quot;:&quot;Kim_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Kim2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Simon2015_reference&quot;,&quot;label&quot;:&quot;Simon_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Simon2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clopidogrel_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2026v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2026_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2026v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Danielak2017_reference&quot;,&quot;label&quot;:&quot;Danielak_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clopidogrel — `Clopidogrel_Yousef2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The model uses library defaults for absorption parameters like ka, which were not reported in the source paper for clopidogrel-IM.
-
-<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Yousef2013_reference" status="needs_review" stale="false" population="healthy Jordanian subjects" measured-compound="clopidogrel-IM" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Yousef2013_reference" status="simulated" stale="false" population="healthy Jordanian subjects" measured-compound="clopidogrel-IM" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yousef AM, Melhem M, Xue B, Arafat T, Reynolds DK, Van Wart SA. Population pharmacokinetic analysis of clopidogrel in healthy Jordanian subjects with emphasis optimal sampling strategy. Biopharmaceutics & drug disposition 34(4):215–226 (2013).
@@ -26,25 +24,25 @@ Yousef AM, Melhem M, Xue B, Arafat T, Reynolds DK, Van Wart SA. Population pharm
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CLm/F, Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameterization:** CL/F, CLm/F, Q2/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 6 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference/Clopidogrel_Yousef2013_reference.svg" alt="Clopidogrel_Yousef2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CL/F (l/h) | CLm/F | 5.96 | l/h | 20.8 |
 | V c /F (l) | V/F | 14.3 | l | 7.62 |
-| CL D /F (l/h) | Q/F | 9.35 | l/h | 4.90 |
-| ET 1 (h) | tmax | 2.19 | h | 46.0 |
+| CL D /F (l/h) | Q2/F | 9.35 | l/h | 4.90 |
+| ET 1 (h) | tlag | 2.19 | h | 46.0 |
+| CL/F (L/h/kg) | CL/F | 0.309 | L/h/kg |  |
+| ka (1/h) | kabs | 5.95 | 1/h |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +52,11 @@ Yousef AM, Melhem M, Xue B, Arafat T, Reynolds DK, Van Wart SA. Population pharm
 
 ### Reviewer guidance
 
-**The model uses library defaults for absorption parameters like ka, which were not reported in the source paper for clopidogrel-IM.**
+**Every check that could be run on this record passed.**
 
-The record lacks an estimated absorption rate constant, relying instead on placeholder values for ka and Tlag. This substitution means the simulated absorption profile is not supported by the specific data from the Yousef_2013 study. Additionally, the model assumes apparent parameterization with F=1, treating all compounds as if bioavailability is complete. Extracted — clopidogrel-IM: CLm/F 5.96 l/h, V/F 14.3 l, Q/F 9.35 l/h, tmax 2.19 h.
+None of the extracted parameters is clopidogrel's own; they describe clopidogrel-IM.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -66,8 +64,10 @@ The record lacks an estimated absorption rate constant, relying instead on place
 |---|---|---|---|---|---|---|---|---|---|
 | CL/F (l/h) | `Q351` · CLm/F | 5.96 | l/h | 1.656e-06 | m3/s | l/h | 20.8 | exact (1) | tab_0:row2:col1, Yousef_2013_table_2:row1:col1 |
 | V c /F (l) | `Q76` · V/F | 14.3 | l | 0.0143 | m3 | l | 7.62 | exact (1) | tab_0:row3:col1, Yousef_2013_table_2:row2:col1 |
-| CL D /F (l/h) | `Q69` · Q/F | 9.35 | l/h | 2.597e-06 | m3/s | l/h | 4.90 | exact (1) | tab_0:row4:col1, Yousef_2013_table_2:row3:col1 |
-| ET 1 (h) | `Q56` · tmax | 2.19 | h | 7884 | s | h | 46.0 | llm (0.6) | tab_0:row7:col1, Yousef_2013_table_2:row6:col1 |
+| CL D /F (l/h) | `Q80` · Q2/F | 9.35 | l/h | 2.597e-06 | m3/s | l/h | 4.90 | special_case (0.95) | tab_0:row4:col1, Yousef_2013_table_2:row3:col1 |
+| ET 1 (h) | `Q83` · tlag | 2.19 | h | 7884 | s | h | 46.0 | exact (1) | tab_0:row7:col1, Yousef_2013_table_2:row6:col1 |
+| CL/F (L/h/kg) | `Q27` · CL/F | 0.309 | L/h/kg | 6.008e-06 | m3/s | L/h |  | review_gapfill (0.7) | Ma_2014:review |
+| ka (1/h) | `Q49` · kabs | 5.95 | 1/h | 0.001653 | 1/s | 1/h |  | review_gapfill (0.7) | Henrich_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,10 +77,7 @@ The record lacks an estimated absorption rate constant, relying instead on place
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'T 42 (h)' — extend the ontology if this is a real PK parameter (source ['tab_0:row6:col1', 'Yousef_2013_table_2:row5:col1'])
@@ -89,9 +86,13 @@ The record lacks an estimated absorption rate constant, relying instead on place
 - template fit: none — only the metabolite is modelled — no parent compartment
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V c /F (l)' is the general volume)
-- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 6 linked by role
-- molar mass: no plausible PubChem entry for 'clopidogrel-IM' ('clopidogrel carboxylic acid metabolite') — left in mass units
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 8 linked by role
+- molar mass: no plausible PubChem entry for 'clopidogrel-IM' ('Clopidogrel carboxylic acid derivative') — left in mass units
 - molar mass: none found for 'clopidogrel-IM' — its concentrations stay mass-only
+- gap-filled Q27 (CL/F) from Ma_2014's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Henrich_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - table tab_0: unparsed_numeric_cell
@@ -108,12 +109,15 @@ The record lacks an estimated absorption rate constant, relying instead on place
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Ma_2014:review'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['tab_0:row2:col1', 'Yousef_2013_table_2:row1:col1'] |
-| C5_dimension_Q56 | pass | [time] |  | ['tab_0:row7:col1', 'Yousef_2013_table_2:row6:col1'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['tab_0:row4:col1', 'Yousef_2013_table_2:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Henrich_2021:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_0:row3:col1', 'Yousef_2013_table_2:row2:col1'] |
+| C5_dimension_Q80 | pass | [length] ** 3 / [time] |  | ['tab_0:row4:col1', 'Yousef_2013_table_2:row3:col1'] |
+| C5_dimension_Q83 | pass | [time] |  | ['tab_0:row7:col1', 'Yousef_2013_table_2:row6:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 21.6 L/h | ['Ma_2014:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 14.3 L | ['tab_0:row3:col1', 'Yousef_2013_table_2:row2:col1'] |
 
 **Reviewer per-scenario checks:**
@@ -124,9 +128,10 @@ The record lacks an estimated absorption rate constant, relying instead on place
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=clopidogrel-IM) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,13 +165,13 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `Tlag` | 7884 | s |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 7.5e-05 | kg |
 | input | model | `Cl` | 1.656e-06 | m3/s |
 | input | model | `VdPerKg` | 0.0002043 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
+| input | model | `ka` | 0.001653 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -195,7 +200,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 75 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 75 mg.
+**Administration: oral** — 75 mg, single dose, first-order absorption (ka 5.95 /h, lag 131 min, F 1). Dose in the paper: 75 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference/Clopidogrel_Yousef2013_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference/Clopidogrel_Yousef2013_reference_sim_controls.json"></dbs-fmusim>
 
@@ -205,4 +210,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Yousef2013_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Yousef2013_reference%0APaper%3A%20Yousef_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 23:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 05:52 UTC</sub>

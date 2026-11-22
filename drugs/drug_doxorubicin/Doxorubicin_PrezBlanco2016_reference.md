@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Frenay1989_reference&quot;,&quot;label&quot;:&quot;Frenay_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Frenay1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Joerger2007_reference&quot;,&quot;label&quot;:&quot;Joerger_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Joerger2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kontny2013_reference&quot;,&quot;label&quot;:&quot;Kontny_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kontny2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kunarajah2017_reference&quot;,&quot;label&quot;:&quot;Kunarajah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kunarajah2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Liang2016_reference&quot;,&quot;label&quot;:&quot;Liang_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Liang2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Choi_2021_w&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 w&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Choi_2021_w.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Andrean_2025_N_t&quot;,&quot;label&quot;:&quot;Andrean_2025 \u00b7 N(t)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Andrean_2025_N_t.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Baldwin1992_dexrazoxane&quot;,&quot;label&quot;:&quot;Baldwin_1992_dexrazoxane&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Baldwin1992_dexrazoxane.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Luo2019_reference&quot;,&quot;label&quot;:&quot;Luo_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Luo2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Qiu2017_reference&quot;,&quot;label&quot;:&quot;Qiu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Qiu2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Yoshida1994_non_hd_group&quot;,&quot;label&quot;:&quot;Yoshida_1994_non_hd_group&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Yoshida1994_non_hd_group.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_PrezBlanco2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Kfm has no unit.
-
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_PrezBlanco2016_reference" status="needs_review" stale="false" population="adults with non-Hodgkin&#39;s lymphoma" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_PrezBlanco2016_reference" status="simulated" stale="false" population="adults with non-Hodgkin&#39;s lymphoma" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Pérez-Blanco JS, Santos-Buelga D, Fernández de Gatta MD, Hernández-Rivas JM, Martín A, García MJ. Population pharmacokinetics of doxorubicin and doxorubicinol in patients diagnosed with non-Hodgkin's lymphoma. British journal of clinical pharmacology 82(6):1517–1527 (2016).
@@ -17,20 +15,20 @@ Pérez-Blanco JS, Santos-Buelga D, Fernández de Gatta MD, Hernández-Rivas JM, 
 
 ## Population and dosing
 
-**Population:** adults with non-Hodgkin's lymphoma · condition non-Hodgkin's lymphoma · age group adult · n = 45.
+**Population:** adults with non-Hodgkin's lymphoma · condition non-Hodgkin's lymphoma · age group adult.
 
-**Dosing:** 50 mg/m2, iv, multiple, every 21 h.
+**Dosing:** 50 mg/m2, iv, multiple, every 168 h.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** parent–metabolite model: parent with 3 compartment(s); metabolite doxorubicinol: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 11 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference/Doxorubicin_PrezBlanco2016_reference.svg" alt="Doxorubicin_PrezBlanco2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | CL (l h⁻¹) | CL | 63.4 | l h⁻¹ | 22.3 (None% RSE) |
@@ -41,13 +39,13 @@ Pérez-Blanco JS, Santos-Buelga D, Fernández de Gatta MD, Hernández-Rivas JM, 
 | V₃ (l) | V3 | 71.0 | l |  |
 | V₄ (l) | V1 | 79.8 | l |  |
 | CLm (l h⁻¹) | CL | 37.0 | l h⁻¹ |  |
-| Fr | kfm | 0.232 |  |  |
+| Fr | CLfm | 0.232 | L/h |  |
 | V₅ (l) | V2 | 653 | l |  |
 | Q₅ (l h⁻¹) | Q | 468.6 | l h⁻¹ |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,11 +55,9 @@ Pérez-Blanco JS, Santos-Buelga D, Fernández de Gatta MD, Hernández-Rivas JM, 
 
 ### Reviewer guidance
 
-**Kfm has no unit.**
+**Every check that could be run on this record passed.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — doxorubicin: CL 63.4 l h⁻¹, V1 17.7 l, Q 52.4 l h⁻¹, V2 1.83e+03 l, Q3 29.9 l h⁻¹, V3 71 l; doxorubicinol: V1 79.8 l, CL 37 l h⁻¹, kfm 0.232, V2 653 l, Q 469 l h⁻¹.
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[fr].parameter_id`: this record has Q305, the second reading Q45. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has doxorubicin → doxorubicinol (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,7 +73,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 | V₃ (l) | `Q77` · V3 | 71.0 | l | 0.071 | m3 | l | exact (1) | Pérez-Blanco_2016_table_p5_1:row5:col1, Pérez-Blanco_2016_table_p5_1:row5:col4 |  |
 | V₄ (l) | `Q63` · V1 | 79.8 | l | 0.0798 | m3 | l | exact (1) | Pérez-Blanco_2016_table_p5_1:row6:col1, Pérez-Blanco_2016_table_p5_1:row6:col4 |  |
 | CLm (l h⁻¹) | `Q22` · CL | 37.0 | l h⁻¹ | 1.028e-05 | m3/s | l/h | exact (1) | Pérez-Blanco_2016_table_p5_1:row7:col1, Pérez-Blanco_2016_table_p5_1:row7:col4, Pérez-Blanco_2016_table_p5_1:row7:col5 |  |
-| Fr | `Q305` · kfm | 0.232 |  |  |  |  | exact (1) | Pérez-Blanco_2016_table_p5_1:row8:col1, Pérez-Blanco_2016_table_p5_1:row8:col4, Pérez-Blanco_2016_table_p5_1:row8:col5 |  |
+| Fr | `Q370` · CLfm | 0.232 | L/h | 6.444e-08 | m3/s | L/h | exact (1) | Pérez-Blanco_2016_table_p5_1:row8:col1, Pérez-Blanco_2016_table_p5_1:row8:col4, Pérez-Blanco_2016_table_p5_1:row8:col5 |  |
 | V₅ (l) | `Q64` · V2 | 653 | l | 0.653 | m3 | l | exact (1) | Pérez-Blanco_2016_table_p5_1:row9:col1, Pérez-Blanco_2016_table_p5_1:row9:col4 |  |
 | Q₅ (l h⁻¹) | `Q30` · Q | 468.6 | l h⁻¹ | 0.0001302 | m3/s | l/h | exact (1) | Pérez-Blanco_2016_table_p5_1:row10:col1, Pérez-Blanco_2016_table_p5_1:row10:col4, Pérez-Blanco_2016_table_p5_1:row10:col5 |  |
 
@@ -91,6 +87,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 **Interpretation flags:**
 - compound tags: 2 row(s) → doxorubicinol (m_suffix 2)
 - competing summary columns for 'CL (l h⁻¹)'; not population strata
+- column 'rep (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - competing summary columns for 'V₁ (l)'; not population strata
 - competing summary columns for 'Q₂ (l h⁻¹)'; not population strata
 - competing summary columns for 'V₂ (l)'; not population strata
@@ -109,16 +106,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - competing summary columns for 'IIVQ5 (%)'; not population strata
 - competing summary columns for 'IIVResidual (%)'; not population strata
 - competing summary columns for 'IIVResidualm (%)'; not population strata
+- implicit units: 'Fr' → L/h (from the popPK convention: "The table caption defines 'F m' as the 'conversion rate to DOXol' and 'CL m' as clearance. In population PK, formation c")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin
+- edge doxorubicin → doxorubicinol: 'Kfm' (Q305) relinked to Q370, the formation parameter the metabolite carries
 - template fit: PK_3M_9C — formed from central; parent 3, metabolites [2]
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 19/19 row label(s) assigned, 28 linked by role; re-tagged parent→doxorubicinol ×24
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- base model from table(s) without population columns (Pérez-Blanco_2016:results_prose, Pérez-Blanco_2016_table_p5_1); populations a u c m (mg h l, a u c total (ng ml kept as separate records
+- row roles (LLM): model_class=compartmental; 23/23 row label(s) assigned, 28 linked by role; re-tagged parent→doxorubicinol ×24
 
 **Extraction notes:**
 - table Pérez-Blanco_2016_table_p5_1: competing_summary_estimates
 - table Pérez-Blanco_2016_table_p5_1: ambiguous_uncertainty_binding
-- LLM selected parameter table(s) 1
+- table Pérez-Blanco_2016_table_2: unknown_column_role
+- table Pérez-Blanco_2016_table_2: units_need_context
+- table Pérez-Blanco_2016_table_2: ragged_grid
+- companion parameter table 2 transcribed (46 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -127,13 +130,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.938 (15/16 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.444 (8/18 fields) | 10 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[fr].parameter_id` | Q305 | Q45 | mismatch |
+| `gpt-oss-120b` | `model.links` | [['doxorubicin', 'doxorubicinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[clm]` |  | 37.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm]` | 37.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fr]` |  | 0.232 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fr]` | 0.232 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q5]` | 468.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v4]` |  | 79.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v4]` | 79.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v5]` | 653 |  | only_one_extracted |
 
 </details>
 
@@ -155,12 +167,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Pérez-Blanco_2016_table_p5_1:row2:col1', 'Pérez-Blanco_2016_table_p5_1:row2:col4', 'Pérez-Blanco_2016_table_p5_1:row2:col5'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Pérez-Blanco_2016_table_p5_1:row10:col1', 'Pérez-Blanco_2016_table_p5_1:row10:col4', 'Pérez-Blanco_2016_table_p5_1:row10:col5'] |
 | C5_dimension_Q308 | pass | [length] ** 3 / [time] |  | ['Pérez-Blanco_2016_table_p5_1:row4:col1', 'Pérez-Blanco_2016_table_p5_1:row4:col4', 'Pérez-Blanco_2016_table_p5_1:row4:col5'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Pérez-Blanco_2016_table_p5_1:row8:col1', 'Pérez-Blanco_2016_table_p5_1:row8:col4', 'Pérez-Blanco_2016_table_p5_1:row8:col5'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Pérez-Blanco_2016_table_p5_1:row1:col1', 'Pérez-Blanco_2016_table_p5_1:row1:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Pérez-Blanco_2016_table_p5_1:row6:col1', 'Pérez-Blanco_2016_table_p5_1:row6:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Pérez-Blanco_2016_table_p5_1:row3:col1', 'Pérez-Blanco_2016_table_p5_1:row3:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Pérez-Blanco_2016_table_p5_1:row9:col1', 'Pérez-Blanco_2016_table_p5_1:row9:col4'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['Pérez-Blanco_2016_table_p5_1:row5:col1', 'Pérez-Blanco_2016_table_p5_1:row5:col4'] |
-| C5_unit_missing_Q305 | fail | 1 / [time] |  | ['Pérez-Blanco_2016_table_p5_1:row8:col1', 'Pérez-Blanco_2016_table_p5_1:row8:col4', 'Pérez-Blanco_2016_table_p5_1:row8:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 63.4 | ['Pérez-Blanco_2016_table_p5_1:row0:col1', 'Pérez-Blanco_2016_table_p5_1:row0:col4', 'Pérez-Blanco_2016_table_p5_1:row0:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 63.4 L/h | ['Pérez-Blanco_2016_table_p5_1:row0:col1', 'Pérez-Blanco_2016_table_p5_1:row0:col4', 'Pérez-Blanco_2016_table_p5_1:row0:col5'] |
@@ -169,6 +181,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C9_phys_window_Q63 | pass | volume within physiological range | 79.8 L | ['Pérez-Blanco_2016_table_p5_1:row6:col1', 'Pérez-Blanco_2016_table_p5_1:row6:col4'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.83e+03 L | ['Pérez-Blanco_2016_table_p5_1:row3:col1', 'Pérez-Blanco_2016_table_p5_1:row3:col4'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 653 L | ['Pérez-Blanco_2016_table_p5_1:row9:col1', 'Pérez-Blanco_2016_table_p5_1:row9:col4'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_metabolite_built[doxorubicinol] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0798, 'CL': 1.0277777777777777e-05, 'formation': 6.444444444444445e-08} | doxorubicinol = compartment M1 with its own numbers |
+| T3_metabolite_output[doxorubicinol] | pass |  | 9.266e-08 | C_M1 (doxorubicinol) must rise above 0 when the parent is dosed |
+| T3_molar_mass[doxorubicinol] | pass |  | {'MW': 0.5435193, 'MW_m1': 0.545541} | formation is molecule-for-molecule |
+| T3_output_variable | pass | C_central (measured=doxorubicin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 8 scholar param(s) emitted or defaulted | 8 covered | all structural parameters accounted for |
+| T3_shared_parameters | skipped |  |  | parent–metabolite template: every compound has its own slot |
+| T3_topology_template | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -185,7 +213,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -196,10 +224,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 10 mg infusion over 10 min into the parent central compartment, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference/Doxorubicin_PrezBlanco2016_reference_params.json" metaurl="assets/fmu/PK_3M_9C.vr.json" wasmurl="assets/fmu/PK_3M_9C.js" controlsurl="drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference/Doxorubicin_PrezBlanco2016_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_3M_9C` · parameters `Doxorubicin_PrezBlanco2016_reference_params.json` · controls `Doxorubicin_PrezBlanco2016_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_PrezBlanco2016_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_PrezBlanco2016_reference%0APaper%3A%20P%C3%A9rez-Blanco_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 15:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:02 UTC</sub>

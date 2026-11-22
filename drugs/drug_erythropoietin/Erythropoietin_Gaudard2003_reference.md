@@ -16,7 +16,7 @@ Gaudard A, Varlet-Marie E, Audran M, Gomeni R, Bressolle F. Pharmacokinetic-phar
 
 ## Population and dosing
 
-**Population:** trained athletes · condition healthy · age group adult · n = &gt;=18.
+**Population:** trained athletes · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed recombinant human erythropoietin, measured erythropoietin.
 
@@ -37,7 +37,7 @@ Gaudard A, Varlet-Marie E, Audran M, Gomeni R, Bressolle F. Pharmacokinetic-phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Gaudard A, Varlet-Marie E, Audran M, Gomeni R, Bressolle F. Pharmacokinetic-phar
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — erythropoietin: CL/F 4.33 L/h, t1/2z 10.2 days.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has recombinant human erythropoietin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has recombinant human erythropoietin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,17 +86,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[the half-life]` | 10.2 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the total clearance divided by bio-availability]` | 4.33 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total clearance divided by bio-availability]` |  | 4.33 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | recombinant human erythropoietin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | erythropoietin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[the half-life]` | 10.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the total clearance divided by bio-availability]` | 4.33 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clearance divided by bio-availability]` |  | 4.33 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | recombinant human erythropoietin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | erythropoietin | unknown | mismatch |
 
 </details>
 

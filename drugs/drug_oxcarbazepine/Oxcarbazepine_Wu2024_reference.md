@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;oxcarbazepine&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/&quot;},{&quot;label&quot;:&quot;Wu_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxcarbazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxcarbazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Negative clearance values for MHD make the oxcarbazepine model implausible.
+> The record was rejected because MHD apparent clearance is reported as −5.6 L/h, an implausible negative value.
 
 <div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="rejected" stale="false" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Wu W, Yang WS, Xu XY, Ge XL, Lu J, Wang GF et al. Population pharmacokinetics of
 
 ## Population and dosing
 
-**Population:** Chinese paediatric patients with epilepsy · condition epilepsy · age group child · n = n_subjects.
+**Population:** Chinese paediatric patients with epilepsy · condition epilepsy · age group child.
 
 **Dosed compound ≠ measured compound:** dosed oxcarbazepine, measured MHD.
 
@@ -51,13 +51,13 @@ Wu W, Yang WS, Xu XY, Ge XL, Lu J, Wang GF et al. Population pharmacokinetics of
 
 ### Reviewer guidance
 
-**Negative clearance values for MHD make the oxcarbazepine model implausible.**
+**The record was rejected because MHD apparent clearance is reported as −5.6 L/h, an implausible negative value.**
 
-The record lists CLm/F as -5.6 L/h and kel as -4.8 1/h for the metabolite MHD. These negative pharmacokinetic parameters are physically impossible. The model builder’s substitution of apparent parameterization was disputed, but the negative values remain the primary cause for refusal. Extracted — MHD: CLm/F -5.6 L/h, V 0.7 L, kabs 0.83 h⁻¹, kel -4.8 1/h, k21 -4.1 1/h.
+CLm/F is the metabolite’s apparent clearance, and the reported value for MHD is −5.6 L/h. The record also lists a negative elimination rate of −4.8 1/h and a negative peripheral-to-central transfer rate of −4.1 1/h. The second reader disputed the extracted values for these parameters and classified the parameterization as mechanistic rather than apparent. Extracted — MHD: CLm/F -5.6 L/h, V 0.7 L, kabs 0.83 h⁻¹, kel -4.8 1/h, k21 -4.1 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

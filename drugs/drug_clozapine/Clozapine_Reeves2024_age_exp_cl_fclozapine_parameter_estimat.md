@@ -5,11 +5,11 @@
 
 # clozapine — `Clozapine_Reeves2024_age_exp_cl_fclozapine_parameter_estimat`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:29 UTC (Rejected), but the paper was screened again on 2026-10-06 15:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Norclozapine C0 failed validation because its concentration unit could not be standardized, causing a dimension mismatch.
+> Norclozapine C0 (0.02 mg L−1) was refused because its concentration unit conflicts with the required concentration-times-time dimension.
 
-<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_age_exp_cl_fclozapine_parameter_estimat" status="rejected" stale="true" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_age_exp_cl_fclozapine_parameter_estimat" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pharmacokinetic model to guide clozapine dose selection, based on age, sex, ethnicity, body weight and smoking status. British journal of clinical pharmacology 90(1):135–145 (2024).
@@ -38,7 +38,7 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 ### Reviewer guidance
 
-**Norclozapine C0 failed validation because its concentration unit could not be standardized, causing a dimension mismatch.**
+**Norclozapine C0 (0.02 mg L−1) was refused because its concentration unit conflicts with the required concentration-times-time dimension.**
 
-The norclozapine intercept C0 is reported as 0.02 mg L−1. This specific unit was not recognized by the validation system for standardization. Consequently, the parameter could not be verified against expected physical dimensions. Extracted — norclozapine: C0 0.02 mg L−1; clozapine: V/F 0.66, kabs 0.69 h À1, CL/F 23.2 L h À1.
+C0 is the observed norclozapine concentration extrapolated to time 0, but its reported unit mg L−1 expresses concentration ([mass]/[length]³), while the parameter was expected to have concentration-times-time units ([mass]·[time]/[length]³). The reported unit could not be converted to SI. Extracted — norclozapine: C0 0.02 mg L−1; clozapine: V/F 0.66, kabs 0.69 h À1, CL/F 23.2 L h À1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

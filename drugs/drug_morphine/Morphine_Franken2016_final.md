@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;morphine&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/&quot;},{&quot;label&quot;:&quot;Franken_2016 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Ihmsen2021_reference&quot;,&quot;label&quot;:&quot;Ihmsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Ihmsen2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_f&quot;,&quot;label&quot;:&quot;Andersen_1986_f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_f.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_j&quot;,&quot;label&quot;:&quot;Andersen_1986_j&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_j.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_k&quot;,&quot;label&quot;:&quot;Andersen_1986_k&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_k.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Venkatasubramanian2014_reference&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Romberg2004_reference&quot;,&quot;label&quot;:&quot;Romberg_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Romberg2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,18 +27,17 @@ Franken LG, Masman AD, de Winter BC, Koch BC, Baar FP, Tibboel D et al. Pharmaco
 ## Parameters
 > ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% | IIV |
-|---|---|---|---|---|---|
-| F | Fab | 0.30 |  |  | 37.8 (None% RSE) |
-| CL (L/h) | CL | 1.78 | L/h |  | 53.4 (None% RSE) |
-| V1 (L) | V1 | 8.24 | L |  | 151.7 (None% RSE) |
-| Q (L/h) | Q | 76.1 | L/h |  |  |
-| V2 (L) | V2 | 243 | L |  |  |
-| TTDc (Δ), days | equation variable | 17.6 | days | 24.7 |  |
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| F | Fab | 0.30 |  | 37.8 (None% RSE) |
+| CL (L/h) | CL | 1.78 | L/h | 53.4 (None% RSE) |
+| V1 (L) | V1 | 8.24 | L | 151.7 (None% RSE) |
+| Q (L/h) | Q | 76.1 | L/h |  |
+| V2 (L) | V2 | 243 | L |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,26 +49,23 @@ Franken LG, Masman AD, de Winter BC, Koch BC, Baar FP, Tibboel D et al. Pharmaco
 
 **The model was built but has not been simulated yet.**
 
-A reported unit could not be converted (equation variable), so that value has no SI equivalent.
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of albumin: this record has none, the second reading 1.1; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has morphine → morphine-3-glucuronide (metabolism); morphine → morphine-6-glucuronide (metabolism), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| F | `Q40` · Fab | 0.30 |  |  |  |  |  | exact (1) | Tab2:row4:col2 | 37.8 (None% RSE) |
-| CL (L/h) | `Q22` · CL | 1.78 | L/h | 4.944e-07 | m3/s | l/h |  | exact (1) | Tab2:row5:col2, Tab2:row11:col2, Tab2:row15:col2 | 53.4 (None% RSE) |
-| V1 (L) | `Q63` · V1 | 8.24 | L | 0.00824 | m3 | l |  | exact (1) | Tab2:row6:col2, Tab2:row12:col2, Tab2:row16:col2 | 151.7 (None% RSE) |
-| Q (L/h) | `Q30` · Q | 76.1 | L/h | 2.114e-05 | m3/s | l/h |  | exact (1) | Tab2:row7:col2 |  |
-| V2 (L) | `Q64` · V2 | 243 | L | 0.243 | m3 | l |  | exact (1) | Tab2:row8:col2 |  |
-| TTDc (Δ), days | `Q900` · equation variable | 17.6 | days |  |  | d | 24.7 | llm (0.6) | Tab2:row21:col2 |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| F | `Q40` · Fab | 0.30 |  |  |  |  | exact (1) | Tab2:row4:col2, Fig2:caption | 37.8 (None% RSE) |
+| CL (L/h) | `Q22` · CL | 1.78 | L/h | 4.944e-07 | m3/s | l/h | exact (1) | Tab2:row5:col2, Tab2:row11:col2, Tab2:row15:col2 | 53.4 (None% RSE) |
+| V1 (L) | `Q63` · V1 | 8.24 | L | 0.00824 | m3 | l | exact (1) | Tab2:row6:col2, Tab2:row12:col2, Tab2:row16:col2 | 151.7 (None% RSE) |
+| Q (L/h) | `Q30` · Q | 76.1 | L/h | 2.114e-05 | m3/s | l/h | exact (1) | Tab2:row7:col2 |  |
+| V2 (L) | `Q64` · V2 | 243 | L | 0.243 | m3 | l | exact (1) | Tab2:row8:col2 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -95,13 +91,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - table representations disagree for 'TTDc (rate), days'; source reconciliation required
 - dropped unlinked row (NIL): 'eGFRb' — extend the ontology if this is a real PK parameter (source ['Tab2:row18:col2'])
 - dropped unlinked row (NIL): 'Albumin' — extend the ontology if this is a real PK parameter (source ['Tab2:row19:col2'])
-- dropped duplicate Q900 ('TTDc (rate), days', value '0.13') — already have one for this compound
+- dropped unlinked row (NIL): 'TTDc (Δ), days' — extend the ontology if this is a real PK parameter (source ['Tab2:row21:col2'])
+- dropped unlinked row (NIL): 'TTDc (rate), days' — extend the ontology if this is a real PK parameter (source ['Tab2:row22:col2'])
+- dropped value-less row: 'V1'
+- dropped value-less row: 'V2'
+- dropped value-less row: 'Q'
+- dropped value-less row: 'Clt'
+- dropped value-less row: 'F m1'
+- dropped value-less row: 'F m2'
+- documentation only: 'Clr' → Q26 (CLR) comes from ['Fig2:caption'], not from a located parameter table — not emitted as a model parameter
+- dropped value-less row: 'ClM3G'
+- dropped value-less row: 'ClM6G'
+- dropped value-less row: 'M3G'
+- dropped value-less row: 'M6G'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=morphine
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [0, 0]
 - status held at "Needs review" — not promoted
 - model-stage split: 'final model' is the final model of Franken_2016 (paper reports 2 stages: final model, structural model); same population, different model-building step
-- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 20 linked by role; re-tagged parent→morphine-3-glucuronide ×9, parent→morphine-6-glucuronide ×6
+- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 25 linked by role; re-tagged parent→morphine-3-glucuronide ×6, parent→morphine-6-glucuronide ×6, morphine→parent ×2, morphine→morphine-3-glucuronide ×3, morphine→morphine-6-glucuronide ×3
 
 **Extraction notes:**
 - table Tab2: unbound_uncertainty
@@ -111,19 +119,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.75 (9/12 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[albumin]` |  | 1.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ttdc (δ)]` | 17.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ttdc (rate)]` |  | 0.13 | only_one_extracted |
 
 </details>
 
@@ -157,9 +166,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  | no covariate effects in record |
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
 | T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -210,4 +219,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmorphine%5D%20Morphine_Franken2016_final&body=Drug%3A%20morphine%0ARecord%3A%20Morphine_Franken2016_final%0APaper%3A%20Franken_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_morphine/Morphine_Franken2016_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 10:50 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 07:14 UTC</sub>

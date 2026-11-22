@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;apremilast&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # apremilast
 
@@ -25,13 +25,13 @@ Apremilast is a selective immunosuppressant used to treat psoriasis and psoriati
 
 ## Start here
 
-> **Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects** — <span class="pk-badge pk-badge--orange">Needs review</span> subjects with moderate to severe psoriasis, n = 517. [Run it in the simulator](drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md?tab=Simulation) · [record](drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md)
+> **Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects** — <span class="pk-badge pk-badge--green">Reproduces paper</span> subjects with moderate to severe psoriasis, n = 517. [Run it in the simulator](drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md?tab=Simulation) · [record](drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Okubo_2021 · CL/F</text><circle cx="528.1" cy="30.0" r="4" fill="#ef6c00"><title>Okubo_2021 · CL/F: 9.25 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Warren_2025 · CL/F</text><circle cx="528.3" cy="46.0" r="4" fill="#ef6c00"><title>Warren_2025 · CL/F: 9.26 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Okubo_2021 · V/F</text><circle cx="211.2" cy="30.0" r="4" fill="#ef6c00"><title>Okubo_2021 · V/F: 115 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Warren_2025 · V/F</text><circle cx="215.2" cy="46.0" r="4" fill="#ef6c00"><title>Warren_2025 · V/F: 118 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Okubo_2021 · CL/F</text><circle cx="528.1" cy="30.0" r="4" fill="#2e7d32"><title>Okubo_2021 · CL/F: 9.25 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Warren_2025 · CL/F</text><circle cx="528.3" cy="46.0" r="4" fill="#ef6c00"><title>Warren_2025 · CL/F: 9.26 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Okubo_2021 · V/F</text><circle cx="211.2" cy="30.0" r="4" fill="#2e7d32"><title>Okubo_2021 · V/F: 115 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Warren_2025 · V/F</text><circle cx="215.2" cy="46.0" r="4" fill="#ef6c00"><title>Warren_2025 · V/F: 118 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,10 +39,10 @@ Apremilast is a selective immunosuppressant used to treat psoriasis and psoriati
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects](drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md) | ▶ model + simulator | 1-compartment, oral | 4 | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects](drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md) | ▶ model + simulator | 1-compartment, oral | 4 | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ geometric_mean_cv_geometric_mean](drugs/drug_apremilast/Apremilast_Okubo2021_geometric_mean_cv_geometric_mean.md) | — | 1-compartment (no model) | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ geometric_mean_geometric_cv](drugs/drug_apremilast/Apremilast_Okubo2021_geometric_mean_geometric_cv.md) | — | 1-compartment (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Warren_2025_reference](drugs/drug_apremilast/Apremilast_Warren2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Warren RB et al., Population Pharmacokinetic-Pharmacodyna…, Dermatology and therapy (2025) | [10.1007/s13555-025-01371-9](https://doi.org/10.1007/s13555-025-01371-9) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Warren_2025_reference](drugs/drug_apremilast/Apremilast_Warren2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Warren RB et al., Population Pharmacokinetic-Pharmacodyna…, Dermatology and therapy (2025) | [10.1007/s13555-025-01371-9](https://doi.org/10.1007/s13555-025-01371-9) |
 
 ## Pharmacodynamics (PD)
 
@@ -51,24 +51,6 @@ Apremilast is a selective immunosuppressant used to treat psoriasis and psoriati
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Okubo_2021_PASI_50](drugs/drug_apremilast/pd_Okubo_2021_PASI_50.md) | PASI-50 ← apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Okubo_2021_PASI_75](drugs/drug_apremilast/pd_Okubo_2021_PASI_75.md) | PASI-75 ← apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Okubo_2021_sPGA](drugs/drug_apremilast/pd_Okubo_2021_sPGA.md) | sPGA response (0 or 1) ← apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=apremilast).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CDK4 (inhibitor), CDK6 (inhibitor), PDE4 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -82,13 +64,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:40 | 1:00 | 2/2/0 | 1/0/0 | 0/0/0 | 104,172/6,532 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-06 23:40 | 1:00 | 2/2/0 | 3/0/0 | 0/0/0 | 104,172/6,532 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -4,11 +4,11 @@
 
 # nitrazepam — `Nitrazepam_Kangas1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-06 20:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent volume of distribution for nitrazepam is dimensionally inconsistent with its unit of 1/kg, and the abstract-only source provides no fitted model.
+> Nitrazepam apparent volume of distribution and plasma level achieved have incorrect units and values.
 
-<div class="pk-model-meta" hidden drug="nitrazepam" model-id="Nitrazepam_Kangas1979_reference" status="rejected" stale="true" population="young healthy volunteers, geriatric and psychiatric patients, epileptic children" measured-compound="nitrazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nitrazepam" model-id="Nitrazepam_Kangas1979_reference" status="rejected" stale="false" population="young healthy volunteers, geriatric and psychiatric patients, epileptic children" measured-compound="nitrazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human pharmacokinetics of nitrazepam: effect of age and diseases. European journal of clinical pharmacology 15(3):163–170 (1979).
@@ -37,7 +37,7 @@ Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human phar
 
 ### Reviewer guidance
 
-**The apparent volume of distribution for nitrazepam is dimensionally inconsistent with its unit of 1/kg, and the abstract-only source provides no fitted model.**
+**Nitrazepam apparent volume of distribution and plasma level achieved have incorrect units and values.**
 
-The apparent volume of distribution is listed with a value of 2.4 and a unit of 1/kg, which is dimensionally invalid for a volume metric. Since the record was built from the abstract alone, the reported summary statistics stand in for a fitted model rather than representing actual parameter estimates. Extracted — nitrazepam: t1/2β 29 h, V 2.4 1/kg, Cmax 3.5 d, Ct 40 ng/ml.
+The volume of distribution (2.4 1/kg) has a dimensionless unit, which is physically incorrect for a volume parameter. The plasma level achieved (3.5 d) uses a time unit rather than a concentration unit. The record is abstract-only, so these summary statistics stand in for a fitted model. Extracted — nitrazepam: t1/2β 29 h, V 2.4 1/kg, Cmax 3.5 d, Ct 40 ng/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

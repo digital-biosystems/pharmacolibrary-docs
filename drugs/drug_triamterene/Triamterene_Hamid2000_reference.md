@@ -16,7 +16,7 @@ Hamid O, Tajuddin AA. Triamterene measurements in the aqueous humor of rabbits. 
 
 ## Population and dosing
 
-**Population:** rabbits · condition healthy · n = &gt;=6.
+**Population:** rabbits · condition healthy.
 
 > **Species: rabbit.** This record comes from an animal study (rabbit), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 

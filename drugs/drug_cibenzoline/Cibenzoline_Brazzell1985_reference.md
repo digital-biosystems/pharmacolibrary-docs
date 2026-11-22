@@ -4,11 +4,11 @@
 
 # cibenzoline — `Cibenzoline_Brazzell1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:46 UTC (Rejected), but the paper was screened again on 2026-10-08 16:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Renal clearance for cibenzoline was rejected because its extracted unit (ng/mL) is dimensionally incorrect, describing concentration rather than plasma volume cleared per time.
+> The renal clearance parameter for cibenzoline has units of ng/mL, a concentration, which is dimensionally invalid for a rate constant or flow rate.
 
-<div class="pk-model-meta" hidden drug="cibenzoline" model-id="Cibenzoline_Brazzell1985_reference" status="rejected" stale="true" population="healthy elderly males" measured-compound="cibenzoline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cibenzoline" model-id="Cibenzoline_Brazzell1985_reference" status="rejected" stale="false" population="healthy elderly males" measured-compound="cibenzoline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Brazzell RK, Khoo KC, Szuna AJ, Sandor D, Aogaichi K, Wills RJ. Pharmacokinetics and pharmacodynamics of intravenous cibenzoline in normal volunteers. Journal of clinical pharmacology 25(6):418–423 (1985).
@@ -16,7 +16,7 @@ Brazzell RK, Khoo KC, Szuna AJ, Sandor D, Aogaichi K, Wills RJ. Pharmacokinetics
 
 ## Population and dosing
 
-**Population:** healthy elderly males · condition healthy · age group elderly · n = &gt;=6.
+**Population:** healthy elderly males · condition healthy · age group elderly.
 
 **Dosing:** 100 mg, iv, single.
 
@@ -43,7 +43,7 @@ Brazzell RK, Khoo KC, Szuna AJ, Sandor D, Aogaichi K, Wills RJ. Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.267). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.267). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Brazzell RK, Khoo KC, Szuna AJ, Sandor D, Aogaichi K, Wills RJ. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Renal clearance for cibenzoline was rejected because its extracted unit (ng/mL) is dimensionally incorrect, describing concentration rather than plasma volume cleared per time.**
+**The renal clearance parameter for cibenzoline has units of ng/mL, a concentration, which is dimensionally invalid for a rate constant or flow rate.**
 
-The record lists the renal clearance value as 265 with the unit ng/mL, which is incompatible with the pharmacokinetic meaning of clearance. This unit error prevented the value from being interpreted in standard SI terms. A second reader confirmed the presence of the 265 value but did not provide the missing plasma or nonrenal clearance parameters. Extracted — cibenzoline: λ1 0.406 hr-1, kel 0.0717 hr-1, V 23.8 L, kexcr 0.749 hr-1, Ae 50.4 mg, CLR 265 ng/mL, t1/2z 9.4 hr.
+The renal clearance value of 265 is assigned the unit ng/mL, which represents drug concentration rather than a volume flow rate required for clearance. This dimensional conflict means the parameter lacks a valid physical interpretation in standard pharmacokinetic units. Consequently, the value could not be processed into a usable standard form for model evaluation. Extracted — cibenzoline: λ1 0.406 hr-1, kel 0.0717 hr-1, V 23.8 L, kexcr 0.749 hr-1, Ae 50.4 mg, CLR 265 ng/mL, t1/2z 9.4 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 2021, the second reading none; it also differs on 10 more fields. That field does not shape the model.
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Absolute bioavailability (Fab) was left at library defaults instead of using an estimate from the paper.
+> Paromomycin bioavailability was set to a placeholder rather than an estimate, and volume values were disputed.
 
 <div class="pk-model-meta" hidden drug="paromomycin" model-id="Paromomycin_Verrest2023_reference" status="needs_review" stale="false" population="children and adults with visceral leishmaniasis" measured-compound="paromomycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Verrest L, Roseboom IC, Wasunna M, Mbui J, Njenga S, Musa AM et al. Population p
 
 ## Population and dosing
 
-**Population:** children and adults with visceral leishmaniasis · condition visceral leishmaniasis · age group mixed · n = &gt;=265.
+**Population:** children and adults with visceral leishmaniasis · condition visceral leishmaniasis · age group mixed.
 
 **Dosing:** 1400, 7000, 10500 mg, im, multiple, every 24 h.
 
@@ -59,9 +59,9 @@ Verrest L, Roseboom IC, Wasunna M, Mbui J, Njenga S, Musa AM et al. Population p
 
 ### Reviewer guidance
 
-**Absolute bioavailability (Fab) was left at library defaults instead of using an estimate from the paper.**
+**Paromomycin bioavailability was set to a placeholder rather than an estimate, and volume values were disputed.**
 
-The record lists Fab with a value of 1, but findings state this is a default, not an estimate from this paper. The model builder explicitly substituted defaults for F and Tlag, meaning these values are not supported by the specific study. Consequently, the simulated paromomycin profiles rely on these unverified assumptions rather than derived data. Extracted — paromomycin: CL 2.62 L/h, V1 13.6 L, Q 0.26 L/h, V2 2.22 L, kabs 2.05 h−1, Fab 1.
+The record lists absolute bioavailability as '1', but the findings indicate this is a library default not supported by the paper's data. A second reader disagreed with the extracted central and peripheral volumes of 13.6 L and 2.22 L, proposing 9.17 L and 6.55 L instead. The cross-check agreement ratio was 0.667, with zero readers agreeing on the final verdict. Extracted — paromomycin: CL 2.62 L/h, V1 13.6 L, Q 0.26 L/h, V2 2.22 L, kabs 2.05 h−1, Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of paromomycin exposure: this record has none, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -156,14 +156,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=paromomycin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=paromomycin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

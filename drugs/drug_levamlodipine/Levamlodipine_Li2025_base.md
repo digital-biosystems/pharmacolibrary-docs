@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F and Tlag were not extracted, so a library placeholder would have been used, and the model was held back.
+> Levamlodipine besylate bioavailability lacks explicit estimates in Li_2025, forcing the use of library placeholder values unsupported by the paper.
 
 <div class="pk-model-meta" hidden drug="levamlodipine" model-id="Levamlodipine_Li2025_base" status="needs_review" stale="false" population="smoking patients" measured-compound="levamlodipine besylate" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Li G, Guan Y, Yang Y, Xiang Q, Chen S, Shao J et al. Model-Informed Precision Do
 
 ## Population and dosing
 
-**Population:** smoking patients · condition hypertension · age group adult · n = &gt;=43.
+**Population:** smoking patients · condition hypertension · age group adult.
 
 **Dosing:** 2.5, 5 mg, oral, multiple, every 24 h.
 
@@ -51,9 +51,9 @@ Li G, Guan Y, Yang Y, Xiang Q, Chen S, Shao J et al. Model-Informed Precision Do
 
 ### Reviewer guidance
 
-**Bioavailability F and Tlag were not extracted, so a library placeholder would have been used, and the model was held back.**
+**Levamlodipine besylate bioavailability lacks explicit estimates in Li_2025, forcing the use of library placeholder values unsupported by the paper.**
 
-The record lists only absorption rate constant, volume of distribution, and clearance, omitting explicit values for bioavailability and lag time. Consequently, the model relies on placeholder values rather than estimates specific to levamlodipine besylate. A second reader also flagged uncertainty regarding the identity of the dose compound and primary analyte. Extracted — levamlodipine: kabs 0.79 1/h, V 3.57e+03 L, CL 59.6 L/h.
+The record omits an explicit estimate for the bioavailability parameter F, resulting in the use of library placeholders instead of fitted values. A second reader disputed the identity of the measured compound, agreeing on only 0.714, which casts doubt on the model's structural assumptions. Extracted — levamlodipine: kabs 0.79 1/h, V 3.57e+03 L, CL 59.6 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levamlodipine besylate, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -152,13 +152,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=levamlodipine besylate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -206,6 +208,7 @@ The parameters this record sets on the template, in the template's SI units, and
 ## Tested with
 
 - Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
@@ -227,7 +230,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 2.5 mg, single dose, first-order absorption (ka 0.79 /h, F 0.9).
+**Administration: oral** — 2.5 mg, single dose, first-order absorption (ka 0.79 /h, F 0.9). Doses in the paper: 2.5, 5 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_levamlodipine/Levamlodipine_Li2025_base/Levamlodipine_Li2025_base_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_levamlodipine/Levamlodipine_Li2025_base/Levamlodipine_Li2025_base_sim_controls.json"></dbs-fmusim>
 

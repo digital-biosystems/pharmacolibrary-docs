@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;avelumab&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/&quot;},{&quot;label&quot;:&quot;Vugmeyster_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avelumab_Masters2022_reference&quot;,&quot;label&quot;:&quot;Masters_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Masters2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Vugmeyster2022_reference&quot;,&quot;label&quot;:&quot;Vugmeyster_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Avelumab_Wilkins2019_reference&quot;,&quot;label&quot;:&quot;Wilkins_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avelumab_Masters2022_reference&quot;,&quot;label&quot;:&quot;Masters_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Masters2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Vugmeyster2022_reference&quot;,&quot;label&quot;:&quot;Vugmeyster_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Avelumab_Wilkins2019_reference&quot;,&quot;label&quot;:&quot;Wilkins_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.256, model 0.222); the covariate scenarios were not simulated.
+> Avelumab record fails peak concentration checks (model 0.222 vs paper 0.256 µg/mL) and lacks simulated covariate effects, with disputed parameter values.
 
 <div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Vugmeyster2022_reference" status="needs_review" stale="false" population="pediatric patients with refractory/relapsed solid tumors" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Vugmeyster Y, Grisic AM, Brockhaus B, Rueckert P, Ruisi M, Dai H et al. Avelumab
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.256, model 0.222); the covariate scenarios were not simulated.**
+**Avelumab record fails peak concentration checks (model 0.222 vs paper 0.256 µg/mL) and lacks simulated covariate effects, with disputed parameter values.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (AUCt and Ctrough), so that value has no SI equivalent. Extracted — avelumab: CL 0.0274 L/h, V 3.15 L, Q 0.0299 L/h, t1/2z 79 h, AUCt 23.7 µg⋅h/mL, Ctrough 97.5 µg/mL.
+The simulated maximum concentration is 0.222 µg/mL, failing four comparison checks against expected values of 0.157, 0.384, 0.338, and 0.496 µg/mL. The record defines a weight covariate for intercompartmental clearance, but only the reference individual was simulated. A second reader disagreed on parameter assignments, including the volume of distribution and the presence of covariate forms. Extracted — avelumab: CL 0.0274 L/h, V 3.15 L, Q 0.0299 L/h, t1/2z 79 h, AUCt 23.7 µg⋅h/mL, Ctrough 97.5 µg/mL.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc0-336: this record has 23.7, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -181,6 +181,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.438, 0 of 1 reader(s) agree | 0.438 | cross-check disputed by a second reader: verdict disputed, agreement 0.438, 0 of 1 reader(s) agree |
 | T1_cmax | reference | pass | 0.2563 | 0.2221 | 0.8664 | µg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | pass | 0.19 | 0.2221 | 1.169 | µg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.157 | 0.2221 | 1.414 | µg/mL→SI vs simulated kg/m3 |

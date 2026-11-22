@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bevacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/&quot;},{&quot;label&quot;:&quot;Caulet_2016 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bevacizumab — `Bevacizumab_Caulet2016_estimate`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Caulet2016_estimate" status="simulated" stale="false" population="patients with metastatic colorectal cancer" measured-compound="bevacizumab" parameterization="mechanistic" topology="2C"></div>
+> Record refused because the second reader disputed the 3.2 value for theta_v1_height and omitted the linear fractional covariate form.
+
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Caulet2016_estimate" status="needs_review" stale="false" population="patients with metastatic colorectal cancer" measured-compound="bevacizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Caulet M, Lecomte T, Bouché O, Rollin J, Gouilleux-Gruart V, Azzopardi N et al. Bevacizumab Pharmacokinetics Influence Overall and Progression-Free Survival in Metastatic Colorectal Cancer Patients. Clinical pharmacokinetics 55(11):1381–1394 (2016).
@@ -27,6 +29,8 @@ Caulet M, Lecomte T, Bouché O, Rollin J, Gouilleux-Gruart V, Azzopardi N et al.
 <figure class="pk-models-diagram"><img src="drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate/Bevacizumab_Caulet2016_estimate.svg" alt="Bevacizumab_Caulet2016_estimate diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | V C (L) | V1 | 4.2 | L |
@@ -44,7 +48,7 @@ Caulet M, Lecomte T, Bouché O, Rollin J, Gouilleux-Gruart V, Azzopardi N et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +58,13 @@ Caulet M, Lecomte T, Bouché O, Rollin J, Gouilleux-Gruart V, Azzopardi N et al.
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Record refused because the second reader disputed the 3.2 value for theta_v1_height and omitted the linear fractional covariate form.**
 
-The base model was simulated, not the covariate effects the record defines.
+The record defines a covariate effect for height (theta_v1_height = 3.2) and a linear fractional covariate form for the central volume. The second reader failed to extract the theta_v1_height value and identified no covariate forms, leading to a disputed agreement ratio of 0.846. Consequently, the covariate scenarios were not simulated, as only the reference individual was exercised in the model. Extracted — bevacizumab: V1 4.2 L, kel 0.045 /day, k12 0.16 /day, k21 0.1 /day, CL 0.19 L/day, V2 7.7 L, Q 0.69 L/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of theta_v1_height: this record has 3.2, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -147,14 +151,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=bevacizumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=bevacizumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

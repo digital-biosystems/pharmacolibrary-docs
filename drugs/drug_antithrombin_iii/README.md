@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;antithrombin III&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AntithrombinIii_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AntithrombinIii_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # antithrombin III
 
@@ -16,7 +16,7 @@ Antithrombin III is a protein-based antithrombotic agent administered intravenou
 
 ## Start here
 
-> **Kim_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> liver transplant recipients. [Run it in the simulator](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md?tab=Simulation) · [record](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md)
+> **Kim_2020_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> liver transplant recipients. [Run it in the simulator](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md?tab=Simulation) · [record](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -24,20 +24,9 @@ Antithrombin III is a protein-based antithrombotic agent administered intravenou
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kim_2020_reference](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kim BR et al., Pharmacokinetics of human antithrombin…, British journal of clinical… (2020) | [10.1111/bcp.14200](https://doi.org/10.1111/bcp.14200) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Kim_2020_reference](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kim BR et al., Pharmacokinetics of human antithrombin…, British journal of clinical… (2020) | [10.1111/bcp.14200](https://doi.org/10.1111/bcp.14200) |
 | <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Carlson_1984_reference](drugs/drug_antithrombin_iii/AntithrombinIii_Carlson1984_reference.md) | — | 1-compartment (no model) | 0 | Carlson TH et al., In vivo behavior of radioiodinated rabb…, The Journal of clinical inv… (1984) | [10.1172/JCI111401](https://doi.org/10.1172/JCI111401) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Knot_1987_reference](drugs/drug_antithrombin_iii/AntithrombinIii_Knot1987_reference.md) | — | 1-compartment (no model) | 0 | Knot EA et al., Antithrombin III: biodistribution in he…, Thrombosis and haemostasis (1987) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=antithrombin_iii).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: SERPINC1 (other).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +46,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 26 matched, 17 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

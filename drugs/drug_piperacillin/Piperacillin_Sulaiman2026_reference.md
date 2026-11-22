@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;piperacillin&quot;,&quot;href&quot;:&quot;drugs/drug_piperacillin/&quot;},{&quot;label&quot;:&quot;Sulaiman_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piperacillin_Dohmann2025_reference&quot;,&quot;label&quot;:&quot;Dohmann_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperacillin/Piperacillin_Dohmann2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperacillin_Sulaiman2026_reference&quot;,&quot;label&quot;:&quot;Sulaiman_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_de_2011_N&quot;,&quot;label&quot;:&quot;de_2011 \u00b7 N&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_piperacillin/pd_de_2011_N.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piperacillin_Dohmann2025_reference&quot;,&quot;label&quot;:&quot;Dohmann_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperacillin/Piperacillin_Dohmann2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperacillin_Sulaiman2026_reference&quot;,&quot;label&quot;:&quot;Sulaiman_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_de_2011_N&quot;,&quot;label&quot;:&quot;de_2011 \u00b7 N&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_piperacillin/pd_de_2011_N.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # piperacillin — `Piperacillin_Sulaiman2026_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="piperacillin" model-id="Piperacillin_Sulaiman2026_reference" status="simulated" stale="false" population="critically ill adults with sepsis or septic shock" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></div>
+> Second readership disagreement prevented publication: one reader identified missing parameters and a compound mismatch, while the other validated the piperacillin-only structure.
+
+<div class="pk-model-meta" hidden drug="piperacillin" model-id="Piperacillin_Sulaiman2026_reference" status="needs_review" stale="false" population="critically ill adults with sepsis or septic shock" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sulaiman H, Wölky SA, Rozali MA, Adiraju SKS, Hasan MS, Hernandez-Mitre MP et al. A multicentre evaluation of pharmacokinetic/pharmacodynamic target attainment of piperacillin and tazobactam and the association with clinical outcomes in critically ill patients with sepsis and septic shock. The Journal of antimicrobial chemotherapy 81(7) (2026).
@@ -15,7 +17,7 @@ Sulaiman H, Wölky SA, Rozali MA, Adiraju SKS, Hasan MS, Hernandez-Mitre MP et a
 
 ## Population and dosing
 
-**Population:** critically ill adults with sepsis or septic shock · condition sepsis or septic shock · age group adult · n = &gt;45.
+**Population:** critically ill adults with sepsis or septic shock · condition sepsis or septic shock · age group adult.
 
 **Dosing:** 4500 mg, iv, multiple, every 6 h.
 
@@ -29,6 +31,8 @@ Sulaiman H, Wölky SA, Rozali MA, Adiraju SKS, Hasan MS, Hernandez-Mitre MP et a
 <figure class="pk-models-diagram"><img src="drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference/Piperacillin_Sulaiman2026_reference.svg" alt="Piperacillin_Sulaiman2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CLpip (L/h) | CL | 8.78 | L/h | 5.69 |
@@ -37,7 +41,7 @@ Sulaiman H, Wölky SA, Rozali MA, Adiraju SKS, Hasan MS, Hernandez-Mitre MP et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +51,13 @@ Sulaiman H, Wölky SA, Rozali MA, Adiraju SKS, Hasan MS, Hernandez-Mitre MP et a
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Second readership disagreement prevented publication: one reader identified missing parameters and a compound mismatch, while the other validated the piperacillin-only structure.**
+
+The record lists 27.15 L for Vss but labels it "Vtaz", creating a mismatch between the parameter name and the stated steady-state volume meaning. A second reader disagreed on the dose compound, arguing it should be piperacillin/tazobactam rather than piperacillin, and cited a missing additive parameter of 0.4. This reader also identified a missing piperacillin volume of 25.53 L and rejected the recorded 24.1 L average Vd. The conflicting interpretations of the model's structure and parameter extraction resulted in a 0.5 agreement ratio. Extracted — piperacillin: CL 8.78 L/h, Vss 27.1 L, V 24.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has piperacillin, the second reading piperacillin/tazobactam; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -157,14 +163,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=piperacillin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=piperacillin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

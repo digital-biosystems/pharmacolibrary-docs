@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05B&quot;,&quot;href&quot;:&quot;atc/B05B.md&quot;},{&quot;label&quot;:&quot;amino acids&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/&quot;},{&quot;label&quot;:&quot;Thorsted_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminoAcids_Krieger2025_reference&quot;,&quot;label&quot;:&quot;Krieger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Krieger2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminoAcids_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminoAcids_Thorsted2026_reference&quot;,&quot;label&quot;:&quot;Thorsted_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Meera_2023_GABAAR_mediated_currents&quot;,&quot;label&quot;:&quot;Meera_2023 \u00b7 GABAAR-mediated currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/pd_Meera_2023_GABAAR_mediated_currents.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminoAcids_Krieger2025_reference&quot;,&quot;label&quot;:&quot;Krieger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Krieger2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminoAcids_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminoAcids_Thorsted2026_reference&quot;,&quot;label&quot;:&quot;Thorsted_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Meera_2023_GABAAR_mediated_currents&quot;,&quot;label&quot;:&quot;Meera_2023 \u00b7 GABAAR-mediated currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amino_acids/pd_Meera_2023_GABAAR_mediated_currents.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amino acids — `AminoAcids_Thorsted2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Amino acid absorption rate constant and lag time lack source values, forcing the use of library placeholder estimates rather than paper-specific data.
+> The paper concerns a different drug, and absorption parameters were not reported but defaulted.
 
-<div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Thorsted2026_reference" status="needs_review" stale="false" population="" measured-compound="amino_acids" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Thorsted2026_reference" status="rejected" stale="false" population="" measured-compound="amino_acids" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Thorsted A, Tanneau L, Lavalley-Morelle A, Follows R, Jacques L, Bird N et al. Population Pharmacokinetics and Pharmacodynamics of Depemokimab in People with Asthma and Chronic Rhinosinusitis with Nasal Polyps. Journal of clinical pharmacology 66(8):e70187 (2026).
@@ -31,7 +31,7 @@ Thorsted A, Tanneau L, Lavalley-Morelle A, Follows R, Jacques L, Bird N et al. P
 <figure class="pk-models-diagram"><img src="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference.svg" alt="AminoAcids_Thorsted2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Thorsted A, Tanneau L, Lavalley-Morelle A, Follows R, Jacques L, Bird N et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Thorsted A, Tanneau L, Lavalley-Morelle A, Follows R, Jacques L, Bird N et al. P
 
 ### Reviewer guidance
 
-**Amino acid absorption rate constant and lag time lack source values, forcing the use of library placeholder estimates rather than paper-specific data.**
+**The paper concerns a different drug, and absorption parameters were not reported but defaulted.**
 
-The model assumes first-order oral absorption but the source does not report the absorption rate constant or lag time, leaving them as undefined placeholders. This deviation was flagged as unacceptable because the values are not supported by the paper. Additionally, a second reader disagreed with the extracted clearance value of 0.113 L/day, suggesting it may be incorrect. Extracted — amino acids: CL/F 0.113 L/day, V/F 6.44 L.
+The source text is identified as a review reference where the paper subject is not amino acids. The model builder defaulted absorption and delay parameters, inventing an absorption profile not present in the source. The second reader disagreed with the clearance value, reporting 0.093 instead of 0.113. Extracted — amino acids: CL/F 0.113 L/day, V/F 6.44 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 778.8, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -130,15 +130,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=amino_acids) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-01-defaulted_parameters: not acceptable; dev-03-invented_absorption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | amino_acids (or metabolite) | paper about another drug |  | paper subject is not amino_acids: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=amino_acids) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,60 +151,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_modelica.zip" download>AminoAcids_Thorsted2026_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_fmi.zip" download>AminoAcids_Thorsted2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_matlab.zip" download>AminoAcids_Thorsted2026_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_matlab_simbio.zip" download>AminoAcids_Thorsted2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_sbml.zip" download>AminoAcids_Thorsted2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_cellml.zip" download>AminoAcids_Thorsted2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 2e-06 | kg |
-| input | model | `Cl` | 1.308e-09 | m3/s |
-| input | model | `VdPerKg` | 9.2e-05 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Thorsted A, Tanneau L, Lavalley-Morelle A, Follows R, Jacques L, Bird N et al. Population Pharmacokinetics and Pharmacodynamics of Depemokimab in People with Asthma and Chronic Rhinosinusitis with Nasal Polyps. Journal of clinical pharmacology 66(8):e70187 (2026). [doi:10.1002/jcph.70187](https://doi.org/10.1002/jcph.70187)
-
-**This record:** Pharmacolibrary, model `AminoAcids_Thorsted2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference>
-
-```bibtex
-@misc{pharmacolibrary_AminoAcidsThorsted2026reference,
-  title  = {{Pharmacolibrary model AminoAcids_Thorsted2026_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference},
-  note   = {Parameters from doi:10.1002/jcph.70187},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

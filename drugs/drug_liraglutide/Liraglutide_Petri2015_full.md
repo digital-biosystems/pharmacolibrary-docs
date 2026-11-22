@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Petri_2015 \u00b7 full&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Liraglutide_Woodward2014_reference&quot;,&quot;label&quot;:&quot;Woodward_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_reference&quot;,&quot;label&quot;:&quot;Carlsson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_reference&quot;,&quot;label&quot;:&quot;Overgaard_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Guo_2025_Weight&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 \u0394\u0394Weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/pd_Guo_2025_Weight.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_reference&quot;,&quot;label&quot;:&quot;Carlsson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_reference&quot;,&quot;label&quot;:&quot;Overgaard_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Woodward2014_reference&quot;,&quot;label&quot;:&quot;Woodward_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Guo_2025_Weight&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 \u0394\u0394Weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/pd_Guo_2025_Weight.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # liraglutide — `Liraglutide_Petri2015_full`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:42 UTC (Rejected), but the paper was screened again on 2026-10-22 09:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for liraglutide was recorded with a volume-per-time unit that conflicts with its dimension as a rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
-<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Petri2015_full" status="rejected" stale="true" population="pediatric and adult patients with type 2 diabetes" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Petri2015_full" status="rejected" stale="false" population="pediatric and adult patients with type 2 diabetes" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Petri KC, Jacobsen LV, Klein DJ. Comparable liraglutide pharmacokinetics in pediatric and adult populations with type 2 diabetes: a population pharmacokinetic analysis. Clinical pharmacokinetics 54(6):663–670 (2015).
@@ -17,7 +17,7 @@ Petri KC, Jacobsen LV, Klein DJ. Comparable liraglutide pharmacokinetics in pedi
 
 ## Population and dosing
 
-**Population:** pediatric and adult patients with type 2 diabetes · condition type 2 diabetes · age group mixed · n = &gt;= 0.
+**Population:** pediatric and adult patients with type 2 diabetes · condition type 2 diabetes · age group mixed.
 
 **Dosing:** 0.3, 0.6, 0.9, 1.2, 1.5, 1.8 mg, sc, multiple, every 24 h.
 
@@ -41,7 +41,7 @@ Petri KC, Jacobsen LV, Klein DJ. Comparable liraglutide pharmacokinetics in pedi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Petri KC, Jacobsen LV, Klein DJ. Comparable liraglutide pharmacokinetics in pedi
 
 ### Reviewer guidance
 
-**The absorption rate constant for liraglutide was recorded with a volume-per-time unit that conflicts with its dimension as a rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The parameter described as the absorption rate constant carries a value of 0.0657 in L/h, a unit of volumetric flow. This unit is incompatible with the physical dimension of a first-order rate constant, which must be reciprocal time. Consequently, the unit could not be converted to SI, leaving the parameter without a valid dimensional basis. Extracted — liraglutide: kabs 0.0657 L/h, CL/F 1.06 L/h, V/F 15.3 L, Fab 1 1, CL 0.929 N/A.
+A reported unit could not be converted (kabs, Fab and CL), so that value has no SI equivalent. Extracted — liraglutide: kabs 0.0657 L/h, CL/F 1.06 L/h, V/F 15.3 L, Fab 1 1, CL 0.929 N/A.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

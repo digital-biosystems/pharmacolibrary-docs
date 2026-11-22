@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's tmax of 1.18 h deviates from the reported 0.63 h, and a clearance unit lacked a standard equivalent.
+> The model simulates an ethosuximide peak time of 1.18 h, failing to match the paper's 0.63 h, while extraction errors remain unresolved.
 
 <div class="pk-model-meta" hidden drug="ethosuximide" model-id="Ethosuximide_Diezi2023_granules_b" status="needs_review" stale="false" population="healthy adults" measured-compound="ethosuximide" parameterization="apparent" topology="2C"></div>
 
@@ -59,9 +59,9 @@ Diezi L, Dao K, Jullien V, Roussel-Maupetit C, Burton I, André P et al. An inno
 
 ### Reviewer guidance
 
-**The model's tmax of 1.18 h deviates from the reported 0.63 h, and a clearance unit lacked a standard equivalent.**
+**The model simulates an ethosuximide peak time of 1.18 h, failing to match the paper's 0.63 h, while extraction errors remain unresolved.**
 
-The simulated time to peak concentration is 1.18 h, differing significantly from the paper's 0.63 h. A reported unit for a parameter could not be converted to SI, leaving the value undefined for simulation. The second reader also disagreed with the extracted values for total clearance, absorption rate, and intercompartmental clearance. Extracted — ethosuximide: Cmax 15.8 μg/ml, AUClast 1.09e+03 μg·h/ml, AUC∞ 1.1e+03 μg·h/ml, t1/2z 54.4 h, CLnorm/F 8.9 ml/h/kg, Vnorm/F 695 ml/kg, CL 0.57 L/h, Q 10.2 L/h, … (+3).
+The simulated peak time of 1.18 h deviates significantly from the paper's reported values, which range from 0.5 h to 4.0 h. A second reader disputed the record, finding no agreement on the clearance, absorption rate, and volume parameters. The lag time was not explicitly estimated, and one unit of measure could not be standardized for analysis. Extracted — ethosuximide: Cmax 15.8 μg/ml, AUClast 1.09e+03 μg·h/ml, AUC∞ 1.1e+03 μg·h/ml, t1/2z 54.4 h, CLnorm/F 8.9 ml/h/kg, Vnorm/F 695 ml/kg, CL 0.57 L/h, Q 10.2 L/h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 0.57, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -180,7 +180,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=ethosuximide) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.588, 0 of 1 reader(s) agree | 0.588 | cross-check disputed by a second reader: verdict disputed, agreement 0.588, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 93.7 | 0.01168 |  | unresolved concentration unit (exp '90% Confidence Interval (CI): 76.3–115.1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 87.6 | 0.01168 |  | unresolved concentration unit (exp '90% CI: 81.6–94.0', sim 'kg/m3') |
 | T1_tmax | reference | fail | 0.63 | 1.183 | 1.878 | h→SI vs simulated h |

@@ -5,11 +5,11 @@
 
 # potassium salicylate — `PotassiumSalicylate_Wjcicki1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 15:34 UTC (Rejected), but the paper was screened again on 2026-10-07 07:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The salicylate elimination rate constant value of 40% is dimensionally invalid, and the record relies on abstract-only summary statistics rather than a fitted model.
+> Rejection stems from unit dimension mismatches in parameters for salicylate, including AUC and elimination rate constant.
 
-<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Wjcicki1981_reference" status="rejected" stale="true" population="rabbits 6 months after unilateral nephrectomy" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Wjcicki1981_reference" status="rejected" stale="false" population="rabbits 6 months after unilateral nephrectomy" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wójcicki J, Gawrońska-Szklarz B, Kardel-Mizerska T, Kustróm B. Effect of unilateral nephrectomy in rabbits on pharmacokinetics of salicylate. Polish journal of pharmacology and pharmacy 33(5):517–520 (1981).
@@ -43,7 +43,7 @@ Wójcicki J, Gawrońska-Szklarz B, Kardel-Mizerska T, Kustróm B. Effect of unil
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Wójcicki J, Gawrońska-Szklarz B, Kardel-Mizerska T, Kustróm B. Effect of unil
 
 ### Reviewer guidance
 
-**The salicylate elimination rate constant value of 40% is dimensionally invalid, and the record relies on abstract-only summary statistics rather than a fitted model.**
+**Rejection stems from unit dimension mismatches in parameters for salicylate, including AUC and elimination rate constant.**
 
-The elimination rate constant is recorded as 40%, a unit incompatible with a first-order rate parameter, causing a dimension mismatch. The record was built solely from the paper's abstract, meaning the reported summary statistics stand in for a properly fitted model. Additionally, the second reader disagreed on the presence and values of the absorption rate constant, lag time, half-life, volume of distribution, and AUC. Extracted — potassium salicylate: AUC 131 %, t1/2z 4.46 h, kel 40 %, V 0.168 liter/kg, kabs 0.22 h−1, tlag 2.81 h.
+The elimination rate constant (kel) is listed with a unit of % (dimensionless), which conflicts with the required unit of 1/time. Similarly, the area under the curve (AUC) has a unit of %, conflicting with the dimension of volume divided by time. These inconsistencies were identified in a record constructed solely from the abstract. A second reader disagreed on the presence of the AUC, absorption rate, lag time, half-life, and volume of distribution values. Extracted — potassium salicylate: AUC 131 %, t1/2z 4.46 h, kel 40 %, V 0.168 liter/kg, kabs 0.22 h−1, tlag 2.81 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the curve: this record has none, the second reading 131; it also differs on 5 more fields. That field does not shape the model.
 

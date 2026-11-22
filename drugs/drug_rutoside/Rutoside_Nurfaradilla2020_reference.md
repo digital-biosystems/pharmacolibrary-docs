@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Rutoside's apparent clearance of 0.0257 mL/h·kg and volume of 0.0541 mL/kg are implausibly low for a human population.
+> Rutoside clearance and volume parameters were rejected as implausible due to likely unit or scale extraction errors.
 
 <div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Nurfaradilla2020_reference" status="rejected" stale="false" population="" measured-compound="rutoside" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Nurfaradilla SA, Saputri FC, Harahap Y. Pharmacokinetic Herb-Drug Interaction be
 
 ### Reviewer guidance
 
-**Rutoside's apparent clearance of 0.0257 mL/h·kg and volume of 0.0541 mL/kg are implausibly low for a human population.**
+**Rutoside clearance and volume parameters were rejected as implausible due to likely unit or scale extraction errors.**
 
-The extracted values for the one-compartment oral model fall far outside physiological ranges for apparent clearance and volume of distribution, indicating a unit or scale extraction error. Although the source is a secondary review reference, the magnitude of these parameters remains biologically implausible for rutoside in a human context. Extracted — rutoside: CL/F 0.0257 mL/h·kg, V/F 0.0541 mL/kg.
+The recorded rutoside clearance (CL/F) is 0.0257 mL/h·kg and volume (V/F) is 0.0541 mL/kg, values that fall outside the physiological window for this molecule. These magnitudes suggest a significant error in the extraction or scaling of the pharmacokinetic data rather than a valid model fit. The record’s status reflects that these specific parameter values are considered unreliable for publication. Extracted — rutoside: CL/F 0.0257 mL/h·kg, V/F 0.0541 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 0.1745; it also differs on 2 more fields. That field does not shape the model.
 

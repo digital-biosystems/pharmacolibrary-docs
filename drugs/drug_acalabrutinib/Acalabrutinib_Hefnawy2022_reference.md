@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;acalabrutinib&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/&quot;},{&quot;label&quot;:&quot;Hefnawy_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acalabrutinib_Edlund2022_reference&quot;,&quot;label&quot;:&quot;Edlund_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acalabrutinib_Hefnawy2022_reference&quot;,&quot;label&quot;:&quot;Hefnawy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acalabrutinib_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acalabrutinib_Hefnawy2022_reference&quot;,&quot;label&quot;:&quot;Hefnawy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acalabrutinib_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acalabrutinib — `Acalabrutinib_Hefnawy2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Acalabrutinib's absorption rate constant was defaulted because the source review did not report a fitted value.
+> The review paper concerns a different drug, so the acalabrutinib clearance value of 0.21 L/h is misattributed.
 
-<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Hefnawy2022_reference" status="needs_review" stale="false" population="" measured-compound="acalabrutinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Hefnawy2022_reference" status="rejected" stale="false" population="" measured-compound="acalabrutinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hefnawy MM, Alanazi MM, Al-Hossaini AM, Alnasser AI, El-Azab AS, Jardan YAB et al. A Rapid and Sensitive Liquid Chromatography-Tandem Mass Spectrometry Bioanalytical Method for the Quantification of Encorafenib and Binimetinib as a First-Line Treatment for Advanced (Unresectable or Metastatic) Melanoma-Application to a Pharmacokinetic Study. Molecules (Basel, Switzerland) 28(1):79 (2022).
@@ -31,7 +31,7 @@ Hefnawy MM, Alanazi MM, Al-Hossaini AM, Alnasser AI, El-Azab AS, Jardan YAB et a
 <figure class="pk-models-diagram"><img src="drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference/Acalabrutinib_Hefnawy2022_reference.svg" alt="Acalabrutinib_Hefnawy2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Hefnawy MM, Alanazi MM, Al-Hossaini AM, Alnasser AI, El-Azab AS, Jardan YAB et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Hefnawy MM, Alanazi MM, Al-Hossaini AM, Alnasser AI, El-Azab AS, Jardan YAB et a
 
 ### Reviewer guidance
 
-**Acalabrutinib's absorption rate constant was defaulted because the source review did not report a fitted value.**
+**The review paper concerns a different drug, so the acalabrutinib clearance value of 0.21 L/h is misattributed.**
 
-The record lists acalabrutinib clearance and volume of distribution with units of L/h and L, yet the first-order absorption parameter remained at a library default. The source text is a secondary review that provides these apparent parameters without deriving absorption kinetics from population data. A second reader also noted a missing value for the 90th percentile, though the primary cause of the hold was the unreported absorption rate constant. Extracted — acalabrutinib: CL/F 0.21 L/h, V/F 1.03 L.
+The source paper's subject is not acalabrutinib, as neither the title nor abstract names the drug. Consequently, the extracted apparent oral clearance value is incorrect for the intended molecule. The record was rejected because the paper subject is another drug, invalidating the specific parameter values for acalabrutinib. Extracted — acalabrutinib: CL/F 0.21 L/h, V/F 1.03 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q900: this record has none, the second reading 44. That field does not shape the model.
 
@@ -121,15 +121,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=acalabrutinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | acalabrutinib (or metabolite) | paper about another drug |  | paper subject is not acalabrutinib: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=acalabrutinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -141,61 +142,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference/Acalabrutinib_Hefnawy2022_reference_modelica.zip" download>Acalabrutinib_Hefnawy2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference/Acalabrutinib_Hefnawy2022_reference_fmi.zip" download>Acalabrutinib_Hefnawy2022_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference/Acalabrutinib_Hefnawy2022_reference_matlab.zip" download>Acalabrutinib_Hefnawy2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference/Acalabrutinib_Hefnawy2022_reference_matlab_simbio.zip" download>Acalabrutinib_Hefnawy2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference/Acalabrutinib_Hefnawy2022_reference_sbml.zip" download>Acalabrutinib_Hefnawy2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference/Acalabrutinib_Hefnawy2022_reference_cellml.zip" download>Acalabrutinib_Hefnawy2022_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4655 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0002 | kg |
-| input | model | `Cl` | 5.833e-08 | m3/s |
-| input | model | `VdPerKg` | 1.467e-05 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Hefnawy MM, Alanazi MM, Al-Hossaini AM, Alnasser AI, El-Azab AS, Jardan YAB et al. A Rapid and Sensitive Liquid Chromatography-Tandem Mass Spectrometry Bioanalytical Method for the Quantification of Encorafenib and Binimetinib as a First-Line Treatment for Advanced (Unresectable or Metastatic) Melanoma-Application to a Pharmacokinetic Study. Molecules (Basel, Switzerland) 28(1):79 (2022). [doi:10.3390/molecules28010079](https://doi.org/10.3390/molecules28010079)
-
-**This record:** Pharmacolibrary, model `Acalabrutinib_Hefnawy2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference>
-
-```bibtex
-@misc{pharmacolibrary_AcalabrutinibHefnawy2022reference,
-  title  = {{Pharmacolibrary model Acalabrutinib_Hefnawy2022_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference},
-  note   = {Parameters from doi:10.3390/molecules28010079},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

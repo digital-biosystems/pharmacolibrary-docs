@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Lithium nitrate&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/&quot;},{&quot;label&quot;:&quot;Yuan_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LithiumNitrate_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_base&quot;,&quot;label&quot;:&quot;Jin_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_base.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_base_base_model_parameter_estimates_r&quot;,&quot;label&quot;:&quot;Jin_2022_base_base_model_parameter_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_base_base_model_parameter_estimates_r.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_final&quot;,&quot;label&quot;:&quot;Jin_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_final.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_final_final_model_parameter_estimates&quot;,&quot;label&quot;:&quot;Jin_2022_final_final_model_parameter_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_final_final_model_parameter_estimates.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Yuan2021_reference&quot;,&quot;label&quot;:&quot;Yuan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Yuan2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LithiumNitrate_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_base&quot;,&quot;label&quot;:&quot;Jin_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_base_base_model_parameter_estimates_r&quot;,&quot;label&quot;:&quot;Jin_2022_base_base_model_parameter_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_base_base_model_parameter_estimates_r.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_final&quot;,&quot;label&quot;:&quot;Jin_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_final_final_model_parameter_estimates&quot;,&quot;label&quot;:&quot;Jin_2022_final_final_model_parameter_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_final_final_model_parameter_estimates.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Yuan2021_reference&quot;,&quot;label&quot;:&quot;Yuan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Yuan2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Lithium nitrate — `LithiumNitrate_Yuan2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> V2/F (8.2 L) was unextracted, and absorption rate/lag time used library placeholders rather than paper-specific estimates for lithium in children.
 
-<div class="pk-model-meta" hidden drug="Lithium nitrate" model-id="LithiumNitrate_Yuan2021_reference" status="extracted" stale="false" population="children with intellectual disability aged 4-10 years old" measured-compound="lithium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Lithium nitrate" model-id="LithiumNitrate_Yuan2021_reference" status="needs_review" stale="false" population="children with intellectual disability aged 4-10 years old" measured-compound="lithium" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yuan J, Zhang B, Xu Y, Zhang X, Song J, Zhou W et al. Population Pharmacokinetics of Lithium in Young Pediatric Patients With Intellectual Disability. Frontiers in pharmacology 12:650298 (2021).
@@ -33,6 +33,8 @@ Yuan J, Zhang B, Xu Y, Zhang X, Song J, Zhou W et al. Population Pharmacokinetic
 <figure class="pk-models-diagram"><img src="drugs/toxin_lithium_nitrate/LithiumNitrate_Yuan2021_reference/LithiumNitrate_Yuan2021_reference.svg" alt="LithiumNitrate_Yuan2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | F (%) | Fab | 100 | % |  | 30.3 (10.9% RSE) |
@@ -45,7 +47,7 @@ Yuan J, Zhang B, Xu Y, Zhang X, Song J, Zhou W et al. Population Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +55,13 @@ Yuan J, Zhang B, Xu Y, Zhang X, Song J, Zhou W et al. Population Pharmacokinetic
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**V2/F (8.2 L) was unextracted, and absorption rate/lag time used library placeholders rather than paper-specific estimates for lithium in children.**
+
+The peripheral distribution volume (8.2 L) was neither extracted nor explicitly set, leaving it as an unsupported library placeholder. Additionally, the absorption rate and lag time were filled with standard defaults because they were not reported in the source paper. A reported unit could not be converted to standard SI units, preventing accurate scaling of one parameter. The model also assumed full bioavailability without justification, further compromising the estimated absorption profile. Extracted — lithium nitrate: Fab 100 %; lithium: MTT 0.52 h, n_transit 6, CLm/F 0.98 L/h, V1/F 13.1 L, Q/F 0.84 L/h, V2/F 8.2 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -122,6 +130,19 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q290 | pass | volume within physiological range | 13.1 L | ['T1:row5:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 8.2 L | ['T1:row7:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=lithium) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

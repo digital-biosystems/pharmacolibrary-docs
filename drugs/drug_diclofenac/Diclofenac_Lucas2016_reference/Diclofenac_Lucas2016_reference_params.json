@@ -12,17 +12,17 @@
   "Cl": 4.027777777777778e-06,
   "F": 1.0,
   "MM": 0.296149,
-  "VdPerKg": 0.0013447978774000697,
+  "VdPerKg": 0.000298843972755571,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662005
+  "central.C": 660.0000000662084
  },
  "reference_peaks": {
-  "central.C": 0.001048774840957095
+  "central.C": 0.004514534996125002
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

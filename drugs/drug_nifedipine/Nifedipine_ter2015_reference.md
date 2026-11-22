@@ -17,7 +17,7 @@ ter Laak MA, Roos C, Touw DJ, van Hattum PR, Kwee A, Lotgering FK et al. Pharmac
 
 ## Population and dosing
 
-**Population:** pregnant women with threatened preterm labor · condition threatened preterm labor · age group adult · n = &gt;=8.
+**Population:** pregnant women with threatened preterm labor · condition threatened preterm labor · age group adult.
 
 ## Model
 

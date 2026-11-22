@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;epinephrine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Yoo_2015_BI&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 BI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_BI.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_DAP&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 DAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_DAP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_HR&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SAP&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SAP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Drow&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Drow&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Drow.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Drug&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Drug&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Drug.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Perf&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Perf&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Perf.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # epinephrine
 
@@ -27,7 +26,7 @@ Epinephrine is an adrenergic medication used to treat anaphylaxis, cardiac arres
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) | — | 1-compartment (no model) | 6 | Frechen S et al., Population pharmacokinetic and pharmaco…, Drug metabolism and pharmac… (2015) | [10.1016/j.dmpk.2015.08.002](https://doi.org/10.1016/j.dmpk.2015.08.002) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) | — | 1-compartment (no model) | 6 | Frechen S et al., Population pharmacokinetic and pharmaco…, Drug metabolism and pharmac… (2015) | [10.1016/j.dmpk.2015.08.002](https://doi.org/10.1016/j.dmpk.2015.08.002) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Heradstveit_2023_reference](drugs/drug_epinephrine/Epinephrine_Heradstveit2023_reference.md) | — | 1-compartment (no model) | 0 | Heradstveit BE et al., Pharmacokinetics of Epinephrine During…, Resuscitation:110025 (2023) | [10.1016/j.resuscitation.2023.110025](https://doi.org/10.1016/j.resuscitation.2023.110025) |
 | <span class="pk-rf" hidden data-species="horse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Knych_2023_reference](drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md) | — | 2-compartment (no model) | 4 | Knych HK et al., Pharmacokinetics and metabolism of lido…, BMC veterinary research (2023) | [10.1186/s12917-023-03787-x](https://doi.org/10.1186/s12917-023-03787-x) |
 
@@ -35,29 +34,13 @@ Epinephrine is an adrenergic medication used to treat anaphylaxis, cardiac arres
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_BI](drugs/drug_epinephrine/pd_Yoo_2015_BI.md) | Bispectral index ← norepinephrine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_DAP](drugs/drug_epinephrine/pd_Yoo_2015_DAP.md) | Diastolic arterial pressure ← norepinephrine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_HR](drugs/drug_epinephrine/pd_Yoo_2015_HR.md) | Heart rate ← norepinephrine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_SAP](drugs/drug_epinephrine/pd_Yoo_2015_SAP.md) | Systolic arterial pressure ← norepinephrine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_SE_Drow](drugs/drug_epinephrine/pd_Yoo_2015_SE_Drow.md) | Subjective effects: Drowsiness ← norepinephrine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_SE_Drug](drugs/drug_epinephrine/pd_Yoo_2015_SE_Drug.md) | Subjective effects: Drug effect ← norepinephrine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_SE_Perf](drugs/drug_epinephrine/pd_Yoo_2015_SE_Perf.md) | Subjective effects: Performance ← norepinephrine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=epinephrine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | brain | `COMT` substrate, `MAOA` substrate | DrugBank actor |
-| metabolism | kidney | `COMT` substrate | DrugBank actor |
-| metabolism | liver | `COMT` substrate, `CYP2C9` inhibitor, `CYP3A4` inhibitor, `MAOA` substrate, `SLC22A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor, `MAOA` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRB1 (target), ADRB2 (target), TNF (target).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_BI](drugs/drug_epinephrine/pd_Yoo_2015_BI.md) | Bispectral index ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_DAP](drugs/drug_epinephrine/pd_Yoo_2015_DAP.md) | Diastolic arterial pressure ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_HR](drugs/drug_epinephrine/pd_Yoo_2015_HR.md) | Heart rate ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_SAP](drugs/drug_epinephrine/pd_Yoo_2015_SAP.md) | Systolic arterial pressure ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_SE_Drow](drugs/drug_epinephrine/pd_Yoo_2015_SE_Drow.md) | Subjective effects: Drowsiness ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_SE_Drug](drugs/drug_epinephrine/pd_Yoo_2015_SE_Drug.md) | Subjective effects: Drug effect ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yoo_2015_SE_Perf](drugs/drug_epinephrine/pd_Yoo_2015_SE_Perf.md) | Subjective effects: Performance ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,13 +54,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 01:24 | 15:28 | 1/2/0 | 1/0/0 | 0/0/0 | 210,479/48,431 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 1/16 | 14/2 | 0 |
+| 2026-10-04 01:24 | 15:28 | 1/2/0 | 7/0/0 | 0/0/0 | 210,479/48,431 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 1/16 | 14/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 621 matched, 66 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

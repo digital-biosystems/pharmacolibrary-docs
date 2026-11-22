@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Umeclidinium's apparent volume of distribution and absorption lag time were not specified, so the model was held back pending explicit values.
+> Record for umeclidinium (Mehta_2018) quarantined because volume of distribution and absorption lag time lacked extracted values, forcing placeholder defaults.
 
 <div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Mehta2018_model_parameter_estimates_with_combin" status="model_quarantined" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -53,9 +53,9 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**Umeclidinium's apparent volume of distribution and absorption lag time were not specified, so the model was held back pending explicit values.**
+**Record for umeclidinium (Mehta_2018) quarantined because volume of distribution and absorption lag time lacked extracted values, forcing placeholder defaults.**
 
-The record lacks extracted values for umeclidinium's apparent volume of distribution and absorption lag time, leaving these kinetic properties undefined in the final model structure. Consequently, the model was not published because these parameters could not be explicitly estimated or assumed without additional data. Extracted — umeclidinium: CL/F 41.6 L/h, V2/F 271 L, Q/F 116 L/h, V3/F 1.28e+03 L, kabs 19.6 1/h.
+The model structure implies a two-compartment system with volumes of distribution, yet no explicit value was extracted for the volume of distribution, leaving it at a library default. Similarly, the absorption lag time was not specified, resulting in a placeholder value rather than an estimate. Although specific clearance and absorption rate parameters were provided, the absence of these structural parameters prevented publication. Extracted — umeclidinium: CL/F 41.6 L/h, V2/F 271 L, Q/F 116 L/h, V3/F 1.28e+03 L, kabs 19.6 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -139,14 +139,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check disputed by a second reader: verdict disputed, agreement 0.429, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

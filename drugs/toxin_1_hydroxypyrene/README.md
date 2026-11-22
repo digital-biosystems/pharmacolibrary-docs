@@ -65,7 +65,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-11 02:39 | 50:56 | 3/0/0 | 5/0/0 | 0/0/0 | 729,105/37,637 | einfracz / qwen3.8-27b | 29 | 9/19 | 29/0 | 0 |
+| 2026-11-11 02:39 | 50:56 | 3/0/0 | 7/0/0 | 0/0/0 | 729,105/37,637 | einfracz / qwen3.8-27b | 29 | 9/19 | 29/0 | 0 |
 
 ## Coverage
 

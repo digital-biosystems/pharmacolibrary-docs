@@ -4,11 +4,11 @@
 
 # alverine — `Alverine_Cho2026_m2_4_hydroxy_alverine_glucuronide`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 15:28 UTC (Rejected), but the paper was screened again on 2026-10-04 12:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks volume and clearance parameters because it summarizes exposure metrics from an outcome paper rather than a compartmental model.
+> Alverine metabolite M2 is unreachable from the dose, and alverine units failed dimensional validation.
 
-<div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_m2_4_hydroxy_alverine_glucuronide" status="rejected" stale="true" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_m2_4_hydroxy_alverine_glucuronide" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Parent-Metabolite Pharmacokinetic Model With Apparent Presystemic Metabolism to Characterize the Disposition of Alverine. CPT: pharmacometrics & systems pharmacology 15(9):e70342 (2026).
@@ -43,7 +43,7 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +53,11 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 ### Reviewer guidance
 
-**The record lacks volume and clearance parameters because it summarizes exposure metrics from an outcome paper rather than a compartmental model.**
+**Alverine metabolite M2 is unreachable from the dose, and alverine units failed dimensional validation.**
 
-No distribution volume or elimination rate constant was extracted, preventing the construction of a physiological model. Furthermore, metabolites M1 and M3 are defined as hepatic compartments but contain no numerical parameters, rendering them structurally unreachable. A reported unit could not be converted to SI, causing a dimension mismatch on a structural parameter. Extracted — alverine: tmax 0.417 h, Cmax 0.41 μmol/L, AUClast 0.946 μmol·h/L, AUC∞ 0.953 μmol·h/L, t1/2z 1.69 h; M2: AUC ratio 1.67 Metabolite/Parent.
+Metabolite M2 is formed from M1, but M1 lacks a link from alverine in the provided link list, creating an orphan compartment. Additionally, the units for parameters with values 0.4097, 0.9525, and 0.9457 were flagged as dimensionally inconsistent. A second reader could not confirm the dose compound or the values for Cmax, AUClast, AUCinf, t1/2, and tmax. Extracted — alverine: tmax 0.417 h, Cmax 0.41 μmol/L, AUClast 0.946 μmol·h/L, AUC∞ 0.953 μmol·h/L, t1/2z 1.69 h; M2: AUC ratio 1.67 Metabolite/Parent.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -125,24 +125,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
 
 <details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[aucinf]` | 0.9525 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[aucinf]` |  | 0.9525 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auclast]` | 0.9457 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auclast]` |  | 0.9457 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 0.4097 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` |  | 0.4097 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | 1.6881 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` |  | 1.6881 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 0.4166 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` |  | 0.4166 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | alverine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | alverine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[aucinf]` | 0.9525 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucinf]` |  | 0.9525 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast]` | 0.9457 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast]` |  | 0.9457 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 0.4097 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` |  | 0.4097 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 1.6881 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  | 1.6881 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.4166 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` |  | 0.4166 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | alverine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | alverine | unknown | mismatch |
 
 </details>
 

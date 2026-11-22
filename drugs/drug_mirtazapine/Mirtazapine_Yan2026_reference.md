@@ -4,11 +4,11 @@
 
 # mirtazapine — `Mirtazapine_Yan2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-06 23:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The mirtazapine record is rejected because the total clearance parameter has a negative value, causing a dimension mismatch and an implausible pharmacokinetic result.
+> Mirtazapine was rejected because kabs is reported as 1.2 L/h despite being an absorption rate constant, and the paroxetine-associated CL parameter is −0.269.
 
-<div class="pk-model-meta" hidden drug="mirtazapine" model-id="Mirtazapine_Yan2026_reference" status="rejected" stale="true" population="Chinese inpatients with depression" measured-compound="mirtazapine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mirtazapine" model-id="Mirtazapine_Yan2026_reference" status="rejected" stale="false" population="Chinese inpatients with depression" measured-compound="mirtazapine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yan H, Huang W, Xia H, Luo Y, Li Y, Shang D. Optimizing Mirtazapine Initial Dosing: A Population Analysis of the Effects of BMI, Paroxetine and Fluvoxamine. Drug design, development and therapy 20:601238 (2026).
@@ -37,7 +37,7 @@ Yan H, Huang W, Xia H, Luo Y, Li Y, Shang D. Optimizing Mirtazapine Initial Dosi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Yan H, Huang W, Xia H, Luo Y, Li Y, Shang D. Optimizing Mirtazapine Initial Dosi
 
 ### Reviewer guidance
 
-**The mirtazapine record is rejected because the total clearance parameter has a negative value, causing a dimension mismatch and an implausible pharmacokinetic result.**
+**Mirtazapine was rejected because kabs is reported as 1.2 L/h despite being an absorption rate constant, and the paroxetine-associated CL parameter is −0.269.**
 
-The total clearance parameter is listed with a value of -0.269, which is an implausible negative number for a rate constant. This parameter is labeled 'ΘCL-Paroxetine,' which does not correspond to mirtazapine, indicating a likely mislabeling or incorrect substitution. The absorption rate constant has a unit of L/h, which is dimensionally incorrect for a first-order rate constant. Additionally, the record shows a negative shift in clearance that renders the base value implausible. Extracted — mirtazapine: kabs 1.2 L/h, CL/F 28.9 L/h, V/F 310 L, CL -0.269.
+The absorption rate constant kabs is given as 1.2 L/h, although its dimension is 1/time; the reported unit could not be converted to SI. The CL parameter, defined as total clearance and associated with paroxetine, has a value of −0.269 and was flagged for negative clearance in a covariate scenario or base. Extracted — mirtazapine: kabs 1.2 L/h, CL/F 28.9 L/h, V/F 310 L, CL -0.269.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

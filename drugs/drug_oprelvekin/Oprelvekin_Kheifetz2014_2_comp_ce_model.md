@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time for oprelvekin were not reported in the paper, so library placeholders were used instead of study-derived values.
+> The bioavailability (F) and absorption lag time (Tlag) were left at library defaults, making the model profile unsupported by the source paper.
 
 <div class="pk-model-meta" hidden drug="oprelvekin" model-id="Oprelvekin_Kheifetz2014_2_comp_ce_model" status="needs_review" stale="false" population="healthy males" measured-compound="oprelvekin" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,9 +53,9 @@ Kheifetz Y, Elishmereni M, Agur Z. Complex pattern of interleukin-11-induced inf
 
 ### Reviewer guidance
 
-**Bioavailability and lag time for oprelvekin were not reported in the paper, so library placeholders were used instead of study-derived values.**
+**The bioavailability (F) and absorption lag time (Tlag) were left at library defaults, making the model profile unsupported by the source paper.**
 
-The model for oprelvekin includes absorption but lacks an explicit estimate for bioavailability, requiring the use of default library values. The lag time was also set to a default rather than an explicit estimate. Additionally, a second reader did not identify an absorption rate constant, disagreeing with the recorded value of 0.152 1/h. Extracted — oprelvekin: CL 14.7 l·h⁻¹, V1 4.86 l, Q 0.458 l·h⁻¹, V2 10.9 l, kabs 0.152 1/h.
+The record lists parameters for clearance, volume, intercompartmental clearance, and absorption rate, but omits explicit estimates for bioavailability and lag time. Consequently, the model relies on placeholder values for these parameters rather than data derived from the study. This deviation means the simulated concentration profile is not fully supported by the specific evidence in Kheifetz_2014. Extracted — oprelvekin: CL 14.7 l·h⁻¹, V1 4.86 l, Q 0.458 l·h⁻¹, V2 10.9 l, kabs 0.152 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.152, the second reading none. That field does not shape the model.
 
@@ -139,15 +139,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=oprelvekin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped |  | 10.51 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=oprelvekin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 10.51 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

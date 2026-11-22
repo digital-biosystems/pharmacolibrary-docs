@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was held back because the weight covariate effects for clearance and central volume were not simulated, and the absorption model relied on an unacceptable first-order approximation.
+> Second reader disagreed on risdiplam parameters, citing missing alpha (3.55) and conflicting ktr values (5.18 vs 5.12).
 
 <div class="pk-model-meta" hidden drug="risdiplam" model-id="Risdiplam_Cleary2023_reference" status="needs_review" stale="false" population="SMA patients and healthy subjects" measured-compound="risdiplam" parameterization="apparent" topology="2C"></div>
 
@@ -59,9 +59,9 @@ Cleary Y, Kletzl H, Grimsey P, Heinig K, Ogungbenro K, Silber Baumann HE et al. 
 
 ### Reviewer guidance
 
-**The record was held back because the weight covariate effects for clearance and central volume were not simulated, and the absorption model relied on an unacceptable first-order approximation.**
+**Second reader disagreed on risdiplam parameters, citing missing alpha (3.55) and conflicting ktr values (5.18 vs 5.12).**
 
-The model builder assumed bioavailability was 1, which was adjudged not acceptable. The transit absorption with a rate constant of 5.18 1/h was approximated to a first-order process, also deemed not acceptable. Additionally, the weight covariate effects on apparent clearance and central volume were defined but not exercised in the simulation. Extracted — risdiplam: CL/F 2.64 L/h, ktr 5.18 1/h, V1/F 98 L, Q/F 0.682 L/h, V2/F 92.9 L.
+The record lists a ktr of 5.18 1/h, but the second reader identified 5.12 1/h. The second reader also reported an elimination rate constant alpha of 3.55 that is absent from the extracted parameters. Additionally, the second reader marked the dose compound as unknown, while this record specifies risdiplam. Extracted — risdiplam: CL/F 2.64 L/h, ktr 5.18 1/h, V1/F 98 L, Q/F 0.682 L/h, V2/F 92.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has risdiplam, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -174,15 +174,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=risdiplam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable; absorption_approximation: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=risdiplam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

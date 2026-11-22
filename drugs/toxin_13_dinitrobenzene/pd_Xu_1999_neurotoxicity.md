@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> 13_dinitrobenzene concentrations in microM are associated with binary neurotoxicity, but the specific pharmacodynamic model, mechanism, and potency or rate parameters are not described.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Xu_1999`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

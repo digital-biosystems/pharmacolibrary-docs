@@ -5,11 +5,11 @@
 
 # tolmetin — `Tolmetin_Sabater1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:36 UTC (Rejected), but the paper was screened again on 2026-10-07 01:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tolmetin record lacks distribution volume and clearance, failing dimension checks for structural parameters.
+> Tolmetin record lacks distribution volume and clearance parameters, identifying it as an exposure/outcome paper rather than a compartmental model.
 
-<div class="pk-model-meta" hidden drug="tolmetin" model-id="Tolmetin_Sabater1992_reference" status="rejected" stale="true" population="male Wistar rats" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolmetin" model-id="Tolmetin_Sabater1992_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sabater J, Domenéch J, Obach R. Pharmacokinetic study of tolmetin in the rat. Arzneimittel-Forschung 42(7):950–953 (1992).
@@ -37,7 +37,7 @@ Sabater J, Domenéch J, Obach R. Pharmacokinetic study of tolmetin in the rat. A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Sabater J, Domenéch J, Obach R. Pharmacokinetic study of tolmetin in the rat. A
 
 ### Reviewer guidance
 
-**Tolmetin record lacks distribution volume and clearance, failing dimension checks for structural parameters.**
+**Tolmetin record lacks distribution volume and clearance parameters, identifying it as an exposure/outcome paper rather than a compartmental model.**
 
-The record contains bioavailability (96.94%) and renal excretion (6.12%) but omits distribution volume and clearance. Consequently, the model structure fails dimensional consistency checks for structural parameters. These values originate from an abstract-only extraction rather than a fitted compartmental model. Extracted — tolmetin: Fab 96.9 %, Ae 6.12 %.
+The abstract reports only bioavailability (96.94%) and urine excretion (6.12%), omitting essential volume and clearance terms for compartmental analysis. The second reader also disagreed on the specific identifier for the excretion parameter. Extracted — tolmetin: Fab 96.9 %, Ae 6.12 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[excretion of the unchanged drug].parameter_id`: this record has Q91, the second reading Q44. That field shapes the model, so the record is marked disputed.
 

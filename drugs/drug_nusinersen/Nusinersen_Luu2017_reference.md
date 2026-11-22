@@ -16,7 +16,7 @@ Luu KT, Norris DA, Gunawan R, Henry S, Geary R, Wang Y. Population Pharmacokinet
 
 ## Population and dosing
 
-**Population:** pediatric patients with spinal muscular atrophy · condition spinal muscular atrophy · age group mixed · n = value must be null or a integer.
+**Population:** pediatric patients with spinal muscular atrophy · condition spinal muscular atrophy · age group mixed.
 
 ## Model
 

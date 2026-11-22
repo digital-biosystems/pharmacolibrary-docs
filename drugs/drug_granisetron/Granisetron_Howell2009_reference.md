@@ -36,7 +36,7 @@ Howell J, Smeets J, Drenth HJ, Gill D. Pharmacokinetics of a granisetron transde
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Howell J, Smeets J, Drenth HJ, Gill D. Pharmacokinetics of a granisetron transde
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has granisetron, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has granisetron, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -84,24 +84,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
 <details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[c]` | 2.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c]` |  | 2.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[maximal mean concentration]` | 4.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[maximal mean concentration]` |  | 4.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[n]` |  | 48 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral dose]` |  | 2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[overall exposure after 5 days]` | 306 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[overall exposure after 5 days]` |  | 306 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[quantifiable at]` |  | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[reached]` |  | 2 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | granisetron | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | granisetron | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[c]` | 2.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` |  | 2.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal mean concentration]` | 4.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal mean concentration]` |  | 4.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[n]` |  | 48 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral dose]` |  | 2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[overall exposure after 5 days]` | 306 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[overall exposure after 5 days]` |  | 306 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[quantifiable at]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[reached]` |  | 2 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | granisetron | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | granisetron | unknown | mismatch |
 
 </details>
 

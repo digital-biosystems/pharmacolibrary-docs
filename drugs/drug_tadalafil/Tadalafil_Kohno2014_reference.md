@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Tadalafil absorption rate and lag time used library placeholders because the abstract-only source reported no estimates.
+> Tadalafil’s ka has no reported value and was defaulted, leaving its absorption estimate unsupported and the record held back.
 
 <div class="pk-model-meta" hidden drug="tadalafil" model-id="Tadalafil_Kohno2014_reference" status="needs_review" stale="false" population="children with pulmonary arterial hypertension" measured-compound="tadalafil" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Kohno H, Ichida F, Hirono K, Ozawa S, Yoshimura N, Nakamura T et al. Plasma conc
 
 ## Population and dosing
 
-**Population:** children with pulmonary arterial hypertension · condition pulmonary arterial hypertension · age group child · n = &gt;=23.
+**Population:** children with pulmonary arterial hypertension · condition pulmonary arterial hypertension · age group child.
 
 ## Model
 
@@ -52,13 +52,13 @@ Kohno H, Ichida F, Hirono K, Ozawa S, Yoshimura N, Nakamura T et al. Plasma conc
 
 ### Reviewer guidance
 
-**Tadalafil absorption rate and lag time used library placeholders because the abstract-only source reported no estimates.**
+**Tadalafil’s ka has no reported value and was defaulted, leaving its absorption estimate unsupported and the record held back.**
 
-The model builder assigned standard convention values for absorption instead of explicit estimates from the paper. This means the simulated concentration-time profiles rely on unsupported assumptions for the drug's absorption phase. Consequently, the review held the record back because these parameters were not extracted or justified from the source data. Extracted — tadalafil: CL/F 0.149 L·h-1·kg-1, V/F 1.87 L/kg.
+Ka use library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Because only the abstract was read, reported summary statistics stood in for a fitted model; ka and Tlag were defaulted, with ka also treated as invented absorption, while first-order depot input and apparent F=1 and Fm=1 assumptions were used. The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. A second reader disputed the tadalafil identification and the reported CL/F of 0.149 and V/F of 1.87. Extracted — tadalafil: CL/F 0.149 L·h-1·kg-1, V/F 1.87 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tadalafil, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -136,15 +136,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=tadalafil) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=tadalafil) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

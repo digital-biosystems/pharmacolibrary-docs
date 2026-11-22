@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absolute bioavailability and lag time lack extracted values, so the olaparib model relies on generic placeholders rather than paper estimates.
+> Absolute bioavailability and absorption lag time were assigned standard library placeholders rather than paper-derived estimates.
 
 <div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_Velev2021_reference" status="needs_review" stale="false" population="BRCA-mutated ovarian cancer patients" measured-compound="olaparib" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Velev M, Puszkiel A, Blanchet B, de Percin S, Delanoy N, Medioni J et al. Associ
 
 ## Population and dosing
 
-**Population:** BRCA-mutated ovarian cancer patients · condition ovarian cancer · age group adult · n = , 22.
+**Population:** BRCA-mutated ovarian cancer patients · condition ovarian cancer · age group adult.
 
 **Dosing:** 100, 150, 200, 300, 400 mg, oral, multiple, every 12 h.
 
@@ -55,9 +55,9 @@ Velev M, Puszkiel A, Blanchet B, de Percin S, Delanoy N, Medioni J et al. Associ
 
 ### Reviewer guidance
 
-**Absolute bioavailability and lag time lack extracted values, so the olaparib model relies on generic placeholders rather than paper estimates.**
+**Absolute bioavailability and absorption lag time were assigned standard library placeholders rather than paper-derived estimates.**
 
-The record does not provide specific estimates for absolute bioavailability or lag time, resulting in unreported parameter defaults for these factors. While the model includes specific values for relative bioavailability, clearance, and absorption rate, the absence of absolute bioavailability means the simulated profiles are not fully supported by the source data. This omission caused the review to hold the record back due to reliance on unspecified conventions instead of study-specific data. Extracted — olaparib: CL 3.6 L h−1, V1 2.57 L, V2 19.7 L, Q 1.11 L h−1, Frel 0.282 Mean Estimate from Zhou et al., kabs 0.247 1/h, D1 0.901 h.
+The record contains no explicit values for absolute bioavailability (F) or absorption lag time (Tlag), so standard defaults were substituted for these critical absorption inputs. While relative bioavailability is reported as 0.282, the missing absolute values mean the model relies on generic assumptions not supported by the study. A second reader could not verify the primary analyte or any of the core pharmacokinetic parameters, resulting in a complete lack of confirmation for the extracted data. Extracted — olaparib: CL 3.6 L h−1, V1 2.57 L, V2 19.7 L, Q 1.11 L h−1, Frel 0.282 Mean Estimate from Zhou et al., kabs 0.247 1/h, D1 0.901 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olaparib, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -174,14 +174,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=olaparib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=olaparib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.111, 0 of 1 reader(s) agree | 0.111 | cross-check disputed by a second reader: verdict disputed, agreement 0.111, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

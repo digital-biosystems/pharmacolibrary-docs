@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;pyrazinamide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyrazinamide_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyrazinamide/Pyrazinamide_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # pyrazinamide
 
@@ -23,12 +22,6 @@ Pyrazinamide is an antimycobacterial medication used to treat tuberculosis. It i
 |---|---|---|---|---|---|---|
 | pyrazinamide | parent | 123.113 | C5H5N3O | DrugBank | [1046](https://pubchem.ncbi.nlm.nih.gov/compound/1046) | Calderin_2025, Chen_2024, Peloquin_1997, Xu_2024 |
 
-## Start here
-
-> **Xu_2024_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> adults with drug-susceptible pulmonary tuberculosis, n = &gt;&lt;/parameter&gt; }. [Run it in the simulator](drugs/drug_pyrazinamide/Pyrazinamide_Xu2024_reference.md?tab=Simulation) · [record](drugs/drug_pyrazinamide/Pyrazinamide_Xu2024_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## Parameters across studies
 
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Chen_2024 · CL/F</text><circle cx="304.3" cy="30.0" r="4" fill="#ef6c00"><title>Chen_2024 · CL/F: 0.45 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Xu_2024 · CL/F</text><circle cx="460.9" cy="46.0" r="4" fill="#ef6c00"><title>Xu_2024 · CL/F: 3.53 L/h</title></circle></svg></div>
@@ -41,8 +34,8 @@ Pyrazinamide is an antimycobacterial medication used to treat tuberculosis. It i
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Calderin_2025_reference](drugs/drug_pyrazinamide/Pyrazinamide_Calderin2025_reference.md) | — | 1-compartment (no model) | 1 | Calderin JM et al., Population pharmacokinetics of pyrazina…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00099-25](https://doi.org/10.1128/aac.00099-25) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Chen_2024_reference](drugs/drug_pyrazinamide/Pyrazinamide_Chen2024_reference.md) | — | 1-compartment (no model) | 1 | Chen S et al., Population Pharmacokinetic Modeling of…, Therapeutic drug monitoring (2024) | [10.1097/FTD.0000000000001255](https://doi.org/10.1097/FTD.0000000000001255) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Xu_2024_reference](drugs/drug_pyrazinamide/Pyrazinamide_Xu2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Xu AY et al., Pyrazinamide Safety, Efficacy, and Dosi…, American journal of respira… (2024) | [10.1164/rccm.202401-0165OC](https://doi.org/10.1164/rccm.202401-0165OC) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Peloquin_1997_reference](drugs/drug_pyrazinamide/Pyrazinamide_Peloquin1997_reference.md) | — | general linear (no model) | 3 | Peloquin CA et al., Population pharmacokinetic modeling of…, Antimicrobial agents and ch… (1997) | [10.1128/AAC.41.12.2670](https://doi.org/10.1128/AAC.41.12.2670) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Xu_2024_reference](drugs/drug_pyrazinamide/Pyrazinamide_Xu2024_reference.md) | — | 1-compartment (no model) | 3 | Xu AY et al., Pyrazinamide Safety, Efficacy, and Dosi…, American journal of respira… (2024) | [10.1164/rccm.202401-0165OC](https://doi.org/10.1164/rccm.202401-0165OC) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Peloquin_1997_reference](drugs/drug_pyrazinamide/Pyrazinamide_Peloquin1997_reference.md) | — | general linear (no model) | 3 | Peloquin CA et al., Population pharmacokinetic modeling of…, Antimicrobial agents and ch… (1997) | [10.1128/AAC.41.12.2670](https://doi.org/10.1128/AAC.41.12.2670) |
 
 ## Pharmacodynamics (PD)
 
@@ -50,17 +43,6 @@ Pyrazinamide is an antimycobacterial medication used to treat tuberculosis. It i
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Keating_2020_human_taste_aversiveness_rating](drugs/drug_pyrazinamide/pd_Keating_2020_human_taste_aversiveness_rating.md) | human taste aversiveness rating ← pyrazinamide · direct Emax (saturable) effect | — | Keating AV et al., Multi-Methodological Quantitative Taste…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040369](https://doi.org/10.3390/pharmaceutics12040369) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [de_2026_CFU](drugs/drug_pyrazinamide/pd_de_2026_CFU.md) | sputum colony-forming unit (CFU) count ← pyrazinamide · disease-progression model | — | de Castro Suarez N et al., Predicting early bactericidal activity…, bioRxiv : the preprint serv… (2026) | [10.64898/2026.01.29.702705](https://doi.org/10.64898/2026.01.29.702705) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pyrazinamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `AOX1` substrate, `XDH` substrate | DrugBank actor |
-| metabolism | small intestine | `XDH` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,7 +62,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 93 matched, 20 returned
 - **screened:** 13  ·  **relevant:** 5
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 2
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -4,11 +4,11 @@
 
 # isepamicin — `Isepamicin_Barr1995_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:26 UTC (Rejected), but the paper was screened again on 2026-10-07 11:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="isepamicin" model-id="Isepamicin_Barr1995_reference" status="needs_review" stale="true" population="mixed populations (neonatal to elderly and renally impaired)" measured-compound="isepamicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="isepamicin" model-id="Isepamicin_Barr1995_reference" status="needs_review" stale="false" population="mixed populations (neonatal to elderly and renally impaired)" measured-compound="isepamicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Barr WH, Colucci R, Radwanski E, Zampaglione N, Cutler D, Lin CC et al. Pharmacokinetics of isepamicin. Journal of chemotherapy (Florence, Italy) 7 Suppl 2:53–61 (1995).
@@ -34,7 +34,7 @@ Barr WH, Colucci R, Radwanski E, Zampaglione N, Cutler D, Lin CC et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Barr WH, Colucci R, Radwanski E, Zampaglione N, Cutler D, Lin CC et al. Pharmaco
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — isepamicin: t1/2α 0.17 h, t1/2β 2.1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has isepamicin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

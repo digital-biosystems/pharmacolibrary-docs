@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kathman_2022_PRU&quot;,&quot;label&quot;:&quot;Kathman_2022 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_Kathman_2022_PRU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kathman_2022_PRU&quot;,&quot;label&quot;:&quot;Kathman_2022 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_Kathman_2022_PRU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ticagrelor — `Ticagrelor_strand2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> Apparent parameterization with assumed bioavailability and fraction, plus untested covariates, prevented publication.
-
-<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_strand2019_reference" status="needs_review" stale="false" population="stable coronary artery disease and prior myocardial infarction patients" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_strand2019_reference" status="simulated" stale="false" population="stable coronary artery disease and prior myocardial infarction patients" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Åstrand M, Amilon C, Röshammar D, Himmelmann A, Angiolillo DJ, Storey RF et al. Pharmacokinetic-pharmacodynamic modelling of platelet response to ticagrelor in stable coronary artery disease and prior myocardial infarction patients. British journal of clinical pharmacology 85(2):413–421 (2019).
@@ -17,7 +15,7 @@
 
 ## Population and dosing
 
-**Population:** stable coronary artery disease and prior myocardial infarction patients · age group adult · n = , 303.
+**Population:** stable coronary artery disease and prior myocardial infarction patients · age group adult.
 
 **Dosing:** 60, 90, 180 mg, oral, multiple, every 12 h.
 
@@ -31,8 +29,6 @@
 <figure class="pk-models-diagram"><img src="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference.svg" alt="Ticagrelor_strand2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (l h –1 ) | CL/F | 16.6 | l h –1 |
@@ -55,7 +51,7 @@
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +61,13 @@
 
 ### Reviewer guidance
 
-**Apparent parameterization with assumed bioavailability and fraction, plus untested covariates, prevented publication.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The model builder assumed absolute bioavailability and fraction of drug converted to metabolite were both one, ignoring molar corrections. Covariate effects were defined but not exercised in simulation. These deviations rendered the apparent assumption unacceptable for review. Extracted — ticagrelor: CL/F 16.6 l h –1, Q/F 10.4 l h –1, V1/F 156 l, V2/F 55.8 l, kabs 10.1 h −1, tlag 0.48 h, Frel 1; AR-C124910XX: CL/F 10.2 l h –1, fm 0.22, Q/F 4.41 l h –1, V1/F 7.04 l, V2/F 42.3 l.
+The base model was simulated, not the covariate effects the record defines.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -192,19 +188,20 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_metabolite_built[AR-C124910XX] |  | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.00704, 'CL': 2.833333333333333e-06, 'formation': 1.0144444444444444e-06} | AR-C124910XX = compartment M1 with its own numbers |
-| T3_metabolite_output[AR-C124910XX] |  | pass |  | 7.187e-05 | C_M1 (AR-C124910XX) must rise above 0 when the parent is dosed |
-| T3_molar_mass[AR-C124910XX] |  | pass |  | {'MW': 0.522568, 'MW_m1': 0.478518} | formation is molecule-for-molecule |
-| T3_output_variable |  | pass | C_central (measured=ticagrelor) | C_central | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 10 scholar param(s) emitted or defaulted | 10 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 2096 | 0.0003578 | unresolved concentration unit (exp 'nmol l–1', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_metabolite_built[AR-C124910XX] |  | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.00704, 'CL': 2.833333333333333e-06, 'formation': 1.0144444444444444e-06} |  | AR-C124910XX = compartment M1 with its own numbers |
+| T3_metabolite_output[AR-C124910XX] |  | pass |  | 7.187e-05 |  | C_M1 (AR-C124910XX) must rise above 0 when the parent is dosed |
+| T3_molar_mass[AR-C124910XX] |  | pass |  | {'MW': 0.522568, 'MW_m1': 0.478518} |  | formation is molecule-for-molecule |
+| T3_output_variable |  | pass | C_central (measured=ticagrelor) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 10 scholar param(s) emitted or defaulted | 10 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped | 2096 | 0.0003578 |  | unresolved concentration unit (exp 'nmol l–1', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -256,7 +253,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | model | `q21` | 2.889e-06 |  |
 | input | model | `qm11_m12` | 1.225e-06 |  |
 | input | model | `qm12_m11` | 1.225e-06 |  |
-| output | concentration | `C_central` |  | kg/m3 |
+| output | concentration | `central.C` |  | kg/m3 |
 | output | concentration | `C_M1` |  | kg/m3 |
 
 ## Tested with

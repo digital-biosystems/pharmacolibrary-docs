@@ -18,18 +18,8 @@ Ioxitalamic acid is an iodinated contrast medium used for X-ray imaging. It is a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Kees_1989_reference](drugs/drug_ioxitalamic_acid/IoxitalamicAcid_Kees1989_reference.md) | — | 1-compartment (no model) | 2 | Kees F et al., Pharmacokinetics of ciprofloxacin in el…, Arzneimittel-Forschung (1989) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Kees_1989_reference](drugs/drug_ioxitalamic_acid/IoxitalamicAcid_Kees1989_reference.md) | — | 1-compartment (no model) | 2 | Kees F et al., Pharmacokinetics of ciprofloxacin in el…, Arzneimittel-Forschung (1989) | — |
 | <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Morin_1987_reference](drugs/drug_ioxitalamic_acid/IoxitalamicAcid_Morin1987_reference.md) | — | 1-compartment (no model) | 0 | Morin JP et al., [Comparative pharmacokinetics and renal…, Pathologie-biologie (1987) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ioxitalamic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,13 +33,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:16 | 1:34 | 1/1/0 | 0/0/0 | 0/0/0 | 23,855/6,884 | openai / gpt-6-luna | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 17:16 | 1:34 | 0/2/0 | 0/0/0 | 0/0/0 | 23,855/6,884 | openai / gpt-6-luna | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

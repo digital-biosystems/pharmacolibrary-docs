@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Zeranol&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/&quot;},{&quot;label&quot;:&quot;Qin_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zeranol_Qu2024_mass_value_mg&quot;,&quot;label&quot;:&quot;Qu_2024_mass_value_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zeranol_Qu2024_value&quot;,&quot;label&quot;:&quot;Qu_2024_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zeranol_Qu2024_mass_value_mg&quot;,&quot;label&quot;:&quot;Qu_2024_mass_value_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zeranol_Qu2024_value&quot;,&quot;label&quot;:&quot;Qu_2024_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Zearalenone metabolites are orphaned due to missing formation parameters, and beta-ZOL clearance and volume values are physiologically implausible.
 
 <div class="pk-model-meta" hidden drug="Zeranol" model-id="Zeranol_Qin2026_reference" status="rejected" stale="false" population="male sheep" measured-compound="Zearalenone-14-glucoside (Z14G), Zearalenone (ZEN), Beta-zearalenol (beta-ZOL)" parameterization="apparent" topology="general_linear"></div>
 
@@ -57,7 +57,13 @@ Qin J, Zhang Q, Ren N, Su Z, Zheng Z, Yin T et al. Toxicokinetics, Biotransforma
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Zearalenone metabolites are orphaned due to missing formation parameters, and beta-ZOL clearance and volume values are physiologically implausible.**
+
+The model links Zearalenone to multiple metabolites, but the formation rate constants are undefined, leaving these compartments without an input path from the dose. Furthermore, the extracted clearance and volume of distribution for Beta-zearalenol are 222.64 L/kg/h and 972.91 L/kg, respectively. These magnitudes are far outside the physiological range for male sheep, indicating a likely unit or scale extraction error. Extracted — Beta-zearalenol (beta-ZOL): tmax 0.5 h, Cmax 3.01 ng·mL−1, t1/2z 2.79 h, AUClast 6.41 ng·mL−1·h, AUC∞ 8.21 ng·mL−1·h, AUC%ext 20.1, MRT 3.83 h, CL 223 L·kg−1·h−1, … (+1).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

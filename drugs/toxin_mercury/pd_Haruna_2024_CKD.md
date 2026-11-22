@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic model or mechanism of action for mercury; instead, it reports a cross-sectional association using binary chronic kidney disease status as the outcome. Statistical analysis found no significant difference in mean mercury levels between individuals with and without chronic kidney disease (p=0.5546).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Haruna_2024`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

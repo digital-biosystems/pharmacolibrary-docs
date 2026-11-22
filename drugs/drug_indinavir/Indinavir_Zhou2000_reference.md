@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;indinavir&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/&quot;},{&quot;label&quot;:&quot;Zhou_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indinavir_Csajka2004_reference&quot;,&quot;label&quot;:&quot;Csajka_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Csajka2004_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Cressey2011_reference&quot;,&quot;label&quot;:&quot;Cressey_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Cressey2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Kappelhoff2005_reference&quot;,&quot;label&quot;:&quot;Kappelhoff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indinavir_Cressey2011_reference&quot;,&quot;label&quot;:&quot;Cressey_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Cressey2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Csajka2004_reference&quot;,&quot;label&quot;:&quot;Csajka_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Csajka2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indinavir_Kappelhoff2005_reference&quot;,&quot;label&quot;:&quot;Kappelhoff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # indinavir — `Indinavir_Zhou2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 13:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Indinavir's clearance parameter failed dimensional consistency checks because the record relied on abstract-only summary statistics rather than fitted model estimates.
+> Indinavir’s Ct (0.42 micromol/l) and Cmax (9.51 micromol/l) were rejected because their units conflict with the expected mass-concentration dimension.
 
-<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Zhou2000_reference" status="rejected" stale="true" population="HIV-1-infected adults" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Zhou2000_reference" status="rejected" stale="false" population="HIV-1-infected adults" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhou XJ, Havlir DV, Richman DD, Acosta EP, Hirsch M, Collier AC et al. Plasma population pharmacokinetics and penetration into cerebrospinal fluid of indinavir in combination with zidovudine and lamivudine in HIV-1-infected patients. AIDS (London, England) 14(18):2869–2876 (2000).
@@ -42,7 +42,7 @@ Zhou XJ, Havlir DV, Richman DD, Acosta EP, Hirsch M, Collier AC et al. Plasma po
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +52,13 @@ Zhou XJ, Havlir DV, Richman DD, Acosta EP, Hirsch M, Collier AC et al. Plasma po
 
 ### Reviewer guidance
 
-**Indinavir's clearance parameter failed dimensional consistency checks because the record relied on abstract-only summary statistics rather than fitted model estimates.**
+**Indinavir’s Ct (0.42 micromol/l) and Cmax (9.51 micromol/l) were rejected because their units conflict with the expected mass-concentration dimension.**
 
-The record is based solely on the abstract, so the reported values represent summary statistics rather than parameters fitted from actual model data. Specifically, the clearance value of 10.5 L/h triggered a dimension mismatch error on this structural parameter. A second reader disagreed on multiple values, suggesting the volume of distribution should be 1.74 L instead of 96.6 L, and noting the absence of an oral clearance parameter. Extracted — indinavir: Ct 0.42 micromol/l, Cmax 9.51 micromol/l, AUCt 29.6 mg*h/L, t1/2z 1.5 h, CL 10.5 l h -1, V 96.6 l, kabs 0.871 h -1, tlag 0.485 h.
+Both values are concentrations reported in micromol/l, whereas the failed dimensional comparison expected mass per volume. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader also disputed the mechanistic interpretation and several extracted parameters, including volume of distribution (96.6 l here versus 1.74 l in that reading). Extracted — indinavir: Ct 0.42 micromol/l, Cmax 9.51 micromol/l, AUCt 29.6 mg*h/L, t1/2z 1.5 h, CL 10.5 l h -1, V 96.6 l, kabs 0.871 h -1, tlag 0.485 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

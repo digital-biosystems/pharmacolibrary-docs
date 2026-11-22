@@ -5,9 +5,9 @@
 
 # riociguat — `Riociguat_Saleh2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange" title="molar_mass_missing:M1: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span>
 
-> The riociguat record is abstract-only, defaults bioavailability and lag time, and mismatches the expected parent-metabolite topology.
+> The metabolite M1's volume, clearance, and formation parameters are unset, and bioavailability was left at defaults.
 
 <div class="pk-model-meta" hidden drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="needs_review" stale="false" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -40,9 +40,13 @@ Saleh S, Becker C, Frey R, Mück W. Population pharmacokinetics and the pharmaco
 | M1 clearance | CL | 3.16 | L/h |
 | M1 volume of distribution | V | 124 | L |
 
+## Caveats
+
+- a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
+
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="molar_mass_missing:M1: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +56,9 @@ Saleh S, Becker C, Frey R, Mück W. Population pharmacokinetics and the pharmaco
 
 ### Reviewer guidance
 
-**The riociguat record is abstract-only, defaults bioavailability and lag time, and mismatches the expected parent-metabolite topology.**
+**The metabolite M1's volume, clearance, and formation parameters are unset, and bioavailability was left at defaults.**
 
-The model structure is a single-compartment enteral model, which contradicts the parent-metabolite topology defined in the paper. Bioavailability and lag time were not extracted from the abstract, so generic placeholder values were used instead of paper-specific estimates. The second reader could not locate the riociguat absorption rate constant (2.17/h) in the record, conflicting with the extracted parameter values. Extracted — riociguat: kabs 2.17 /h, CL 1.81 L/h, V 32.3 L; M1: kabs 0.258 /h, CL 3.16 L/h, V 124 L.
+Although the record lists values for M1, the model structure lacks them, so the metabolite would use placeholder values. Bioavailability and lag time were not estimated from the paper, using standard defaults instead. Because the record is based only on the abstract, these summary statistics are treated as a fitted model, and the second reader could not confirm the parameter assignments. Extracted — riociguat: kabs 2.17 /h, CL 1.81 L/h, V 32.3 L; M1: kabs 0.258 /h, CL 3.16 L/h, V 124 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has riociguat, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -151,14 +155,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_metabolite_built[M1] | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} |  | M1: V, CL, formation not set — the metabolite's compartment would be the template default |
+| T3_metabolite_output[M1] | skipped |  |  |  | the simulation recorded no per-molecule outputs |
+| T3_molar_mass[M1] | fail |  | {'MW': 0, 'MW_m1': 0} |  | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.385, 0 of 1 reader(s) agree | 0.385 | cross-check disputed by a second reader: verdict disputed, agreement 0.385, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

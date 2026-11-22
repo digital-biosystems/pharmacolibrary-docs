@@ -16,7 +16,7 @@ Roy JJ, Donati F, Boismenu D, Varin F. Concentration-effect relation of succinyl
 
 ## Population and dosing
 
-**Population:** anesthetized patients · condition anesthesia · age group adult · n = —.
+**Population:** anesthetized patients · condition anesthesia · age group adult.
 
 ## Model
 

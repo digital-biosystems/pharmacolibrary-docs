@@ -4,11 +4,11 @@
 
 # mitomycin — `Mitomycin_Rump1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:48 UTC (Rejected), but the paper was screened again on 2026-10-06 18:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The mitomycin C volume of distribution is specified in 1/kg, a dimensionally invalid unit.
+> Mitomycin C clearance was mislabeled with volume distribution dimensions, causing a dimension mismatch and record rejection.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump1996_reference" status="rejected" stale="true" population="colorectal cancer patients with liver metastases undergoing chemoembolisation" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump1996_reference" status="rejected" stale="false" population="colorectal cancer patients with liver metastases undergoing chemoembolisation" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M et al. Pharmacokinetics of intraarterial mitomycin C in the chemoembolisation treatment of liver metastases. General pharmacology 27(4):669–671 (1996).
@@ -38,7 +38,7 @@ Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M
 
 ### Reviewer guidance
 
-**The mitomycin C volume of distribution is specified in 1/kg, a dimensionally invalid unit.**
+**Mitomycin C clearance was mislabeled with volume distribution dimensions, causing a dimension mismatch and record rejection.**
 
-The record lists the volume of distribution under steady-state concentration as 0.57 1/kg for mitomycin C. A volume of distribution must have units of volume per mass, not the reciprocal of mass per mass, causing a structural mismatch. The second reader also flagged the clearance value of 8.9 ml/min.kg, though it lacked a specific alternative. Extracted — mitomycin: tmax 7 min, Vss 0.57 1/kg, CL 8.9 ml/min.kg, t1/2α 8.3 min, t1/2β 58.6 min.
+The record defines the parameter labeled C1 (8.9 ml/min.kg) as total clearance, yet its unit dimension conflicts with the required volume distribution dimension. Additionally, the model relies on abstract-only summary statistics rather than fitted population parameters. A second reader failed to identify the clearance value, leaving that field null in their review. Extracted — mitomycin: tmax 7 min, Vss 0.57 1/kg, CL 8.9 ml/min.kg, t1/2α 8.3 min, t1/2β 58.6 min.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of c1: this record has 8.9, the second reading none. That field does not shape the model.
 

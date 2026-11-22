@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Swainsonine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Swainsonine_Stegelmeier1999_reference&quot;,&quot;label&quot;:&quot;Stegelmeier_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_swainsonine/Swainsonine_Stegelmeier1999_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Swainsonine_Stegelmeier1999_reference&quot;,&quot;label&quot;:&quot;Stegelmeier_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_swainsonine/Swainsonine_Stegelmeier1999_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Swainsonine
 
@@ -31,7 +31,7 @@ Swainsonine is a plant toxin found in locoweed (families Fabaceae, Oxytropis, As
 
 ## Start here
 
-> **Stegelmeier_1999_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> livestock. [Run it in the simulator](drugs/toxin_swainsonine/Swainsonine_Stegelmeier1999_reference.md?tab=Simulation) · [record](drugs/toxin_swainsonine/Swainsonine_Stegelmeier1999_reference.md)
+> **Stegelmeier_1999_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> livestock. [Run it in the simulator](drugs/toxin_swainsonine/Swainsonine_Stegelmeier1999_reference.md?tab=Simulation) · [record](drugs/toxin_swainsonine/Swainsonine_Stegelmeier1999_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,7 +39,7 @@ Swainsonine is a plant toxin found in locoweed (families Fabaceae, Oxytropis, As
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Stegelmeier_1999_reference](drugs/toxin_swainsonine/Swainsonine_Stegelmeier1999_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Stegelmeier BL et al., The pathogenesis and toxicokinetics of…, Journal of natural toxins (1999) | — |
+| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Stegelmeier_1999_reference](drugs/toxin_swainsonine/Swainsonine_Stegelmeier1999_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Stegelmeier BL et al., The pathogenesis and toxicokinetics of…, Journal of natural toxins (1999) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Goss_1994_reference](drugs/toxin_swainsonine/Swainsonine_Goss1994_reference.md) | held back | 1-compartment, IV | 2 | Goss PE et al., A phase I study of swainsonine in patie…, Cancer research (1994) | — |
 | <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Bowen_1993_reference](drugs/toxin_swainsonine/Swainsonine_Bowen1993_reference.md) | — | 1-compartment (no model) | 3 | Bowen D et al., A preliminary pharmacokinetic evaluatio…, Anticancer research (1993) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Goss_1997_reference](drugs/toxin_swainsonine/Swainsonine_Goss1997_reference.md) | — | 1-compartment (no model) | 0 | Goss PE et al., Phase IB clinical trial of the oligosac…, Clinical cancer research :… (1997) | — |
@@ -49,18 +49,9 @@ Swainsonine is a plant toxin found in locoweed (families Fabaceae, Oxytropis, As
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span> | [Oredipe_1991_Bone_marrow_cellularity](drugs/toxin_swainsonine/pd_Oredipe_1991_Bone_marrow_cellularity.md) | Bone marrow cellularity ← swainsonine · stimulation effect | — | Oredipe OA et al., Protective effects of swainsonine on mu…, Journal of the National Can… (1991) | [10.1093/jnci/83.16.1149](https://doi.org/10.1093/jnci/83.16.1149) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span> | [Oredipe_1991_CFA](drugs/toxin_swainsonine/pd_Oredipe_1991_CFA.md) | Colony-forming activity ← swainsonine · stimulation effect | — | Oredipe OA et al., Protective effects of swainsonine on mu…, Journal of the National Can… (1991) | [10.1093/jnci/83.16.1149](https://doi.org/10.1093/jnci/83.16.1149) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span> | [Oredipe_1991_Survival_rate](drugs/toxin_swainsonine/pd_Oredipe_1991_Survival_rate.md) | Survival rate ← swainsonine · stimulation effect | — | Oredipe OA et al., Protective effects of swainsonine on mu…, Journal of the National Can… (1991) | [10.1093/jnci/83.16.1149](https://doi.org/10.1093/jnci/83.16.1149) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=swainsonine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: MAN2A1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">mouse</span> | [Oredipe_1991_Bone_marrow_cellularity](drugs/toxin_swainsonine/pd_Oredipe_1991_Bone_marrow_cellularity.md) | Bone marrow cellularity ← swainsonine · stimulation effect | — | Oredipe OA et al., Protective effects of swainsonine on mu…, Journal of the National Can… (1991) | [10.1093/jnci/83.16.1149](https://doi.org/10.1093/jnci/83.16.1149) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">mouse</span> | [Oredipe_1991_CFA](drugs/toxin_swainsonine/pd_Oredipe_1991_CFA.md) | Colony-forming activity ← swainsonine · stimulation effect | — | Oredipe OA et al., Protective effects of swainsonine on mu…, Journal of the National Can… (1991) | [10.1093/jnci/83.16.1149](https://doi.org/10.1093/jnci/83.16.1149) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">mouse</span> | [Oredipe_1991_Survival_rate](drugs/toxin_swainsonine/pd_Oredipe_1991_Survival_rate.md) | Survival rate ← swainsonine · stimulation effect | — | Oredipe OA et al., Protective effects of swainsonine on mu…, Journal of the National Can… (1991) | [10.1093/jnci/83.16.1149](https://doi.org/10.1093/jnci/83.16.1149) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -74,7 +65,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-19 04:42 | 9:32 | 2/3/0 | 1/0/0 | 0/0/0 | 153,290/7,318 | einfracz / qwen3.8-flash-next | 7 | 0/3 | 7/0 | 0 |
+| 2026-11-19 04:42 | 9:32 | 2/3/0 | 3/0/0 | 0/0/0 | 153,290/7,318 | einfracz / qwen3.8-flash-next | 7 | 0/3 | 7/0 | 0 |
 
 ## Coverage
 

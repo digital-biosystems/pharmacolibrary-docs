@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01X&quot;,&quot;href&quot;:&quot;atc/J01X.md&quot;},{&quot;label&quot;:&quot;dalbavancin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dalbavancin_Baiardi2025_reference&quot;,&quot;label&quot;:&quot;Baiardi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dalbavancin/Dalbavancin_Baiardi2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dalbavancin_Cojutti2023_reference&quot;,&quot;label&quot;:&quot;Cojutti_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dalbavancin/Dalbavancin_Cojutti2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dalbavancin_Baiardi2025_reference&quot;,&quot;label&quot;:&quot;Baiardi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dalbavancin/Dalbavancin_Baiardi2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dalbavancin_Cojutti2023_reference&quot;,&quot;label&quot;:&quot;Cojutti_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dalbavancin/Dalbavancin_Cojutti2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # dalbavancin
 
@@ -24,13 +24,13 @@ Dalbavancin is a lipoglycopeptide antibiotic used to treat acute bacterial skin 
 
 ## Start here
 
-> **Baiardi_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adult patients with renal function CLcr &gt; 30 mL/min, n = The final model was developed on a total of 30 subjects, after the exclusion of 5 identified outliers, resulting in an analysis set of 25 subjects.. [Run it in the simulator](drugs/drug_dalbavancin/Dalbavancin_Baiardi2025_reference.md?tab=Simulation) · [record](drugs/drug_dalbavancin/Dalbavancin_Baiardi2025_reference.md)
+> **Baiardi_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adult patients with renal function CLcr &gt; 30 mL/min. [Run it in the simulator](drugs/drug_dalbavancin/Dalbavancin_Baiardi2025_reference.md?tab=Simulation) · [record](drugs/drug_dalbavancin/Dalbavancin_Baiardi2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Baiardi_2025 · CL</text><circle cx="266.3" cy="30.0" r="4" fill="#78909c"><title>Baiardi_2025 · CL: 0.0273 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Cojutti_2023 · CL</text><circle cx="369.4" cy="46.0" r="4" fill="#ef6c00"><title>Cojutti_2023 · CL: 0.106 L/h</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Baiardi_2025 · CL</text><circle cx="266.3" cy="30.0" r="4" fill="#78909c"><title>Baiardi_2025 · CL: 0.0273 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Cojutti_2023 · CL</text><circle cx="369.4" cy="46.0" r="4" fill="#78909c"><title>Cojutti_2023 · CL: 0.106 L/h</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,7 +39,7 @@ Dalbavancin is a lipoglycopeptide antibiotic used to treat acute bacterial skin 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Baiardi_2025_reference](drugs/drug_dalbavancin/Dalbavancin_Baiardi2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Baiardi G et al., Multidose Dalbavancin Population Pharma…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14020190](https://doi.org/10.3390/antibiotics14020190) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Cojutti_2023_reference](drugs/drug_dalbavancin/Dalbavancin_Cojutti2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Cojutti PG et al., Population pharmacokinetics of dalbavan…, Antimicrobial agents and ch… (2023) | [10.1128/AAC.02260-20](https://doi.org/10.1128/AAC.02260-20) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Cojutti_2023_reference](drugs/drug_dalbavancin/Dalbavancin_Cojutti2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Cojutti PG et al., Population pharmacokinetics of dalbavan…, Antimicrobial agents and ch… (2023) | [10.1128/AAC.02260-20](https://doi.org/10.1128/AAC.02260-20) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Carrothers_2020_reference](drugs/drug_dalbavancin/Dalbavancin_Carrothers2020_reference.md) | — | 1-compartment (no model) | 2 | Carrothers TJ et al., Dalbavancin Population Pharmacokinetic…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.695](https://doi.org/10.1002/cpdd.695) |
 
 ## Pharmacodynamics (PD)
@@ -48,18 +48,6 @@ Dalbavancin is a lipoglycopeptide antibiotic used to treat acute bacterial skin 
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Carrothers_2023_bacterial_kill](drugs/drug_dalbavancin/pd_Carrothers_2023_bacterial_kill.md) | Staphylococcus aureus bacterial kill (Stasis, 1-log kill, 2-log kill) ← dalbavancin · inhibition effect | — | Carrothers TJ et al., Population Pharmacokinetic and Pharmaco…, The Pediatric infectious di… (2023) | [10.1097/INF.0000000000003764](https://doi.org/10.1097/INF.0000000000003764) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Wang_2021_ACE2_dalbavancin_binding](drugs/drug_dalbavancin/pd_Wang_2021_ACE2_dalbavancin_binding.md) | ACE2-dalbavancin binding ← dalbavancin · target-mediated drug disposition | — | Wang G et al., Dalbavancin binds ACE2 to block its int…, Cell research (2021) | [10.1038/s41422-020-00450-0](https://doi.org/10.1038/s41422-020-00450-0) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dalbavancin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: PNLIP (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 31 matched, 18 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

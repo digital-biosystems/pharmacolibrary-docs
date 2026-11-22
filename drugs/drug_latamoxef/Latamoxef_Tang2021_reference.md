@@ -16,55 +16,7 @@ Tang BH, Guan Z, Allegaert K, Wu YE, Manolis E, Leroux S et al. Drug Clearance i
 
 ## Population and dosing
 
-**Population:** neonates · condition healthy · age group neonate · n = ,
-  "condition": "healthy",
-  "species": "human",
-  "compounds": [
-    {
-      "name": "latamoxef",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    },
-    {
-      "name": "vancomycin",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    },
-    {
-      "name": "cefepime",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    },
-    {
-      "name": "azlocillin",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    },
-    {
-      "name": "ceftazidime",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    },
-    {
-      "name": "amoxicillin",
-      "role": "parent",
-      "dosed": "yes",
-      "measured": "yes",
-      "has_parameters": "yes"
-    }
-  ],
-  "links": []
-}.
+**Population:** neonates · condition healthy · age group neonate.
 
 ## Model
 

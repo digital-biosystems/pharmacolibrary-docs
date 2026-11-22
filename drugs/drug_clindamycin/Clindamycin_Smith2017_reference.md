@@ -17,7 +17,7 @@ Smith MJ, Gonzalez D, Goldman JL, Yogev R, Sullivan JE, Reed MD et al. Pharmacok
 
 ## Population and dosing
 
-**Population:** obese and nonobese children · condition obesity and nonobesity · age group child · n = :.
+**Population:** obese and nonobese children · condition obesity and nonobesity · age group child.
 
 ## Model
 

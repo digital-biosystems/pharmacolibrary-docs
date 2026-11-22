@@ -4,11 +4,11 @@
 
 # adefovir dipivoxil — `AdefovirDipivoxil_Dong2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-07 15:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the renal clearance parameter for adefovir was reported in litres per hour, causing a dimension mismatch with the model's expected units.
+> Adenosine monophosphates' clearance parameters carry substance-based units (nmol/L, µmol/h) conflicting with required mass-based dimensions.
 
-<div class="pk-model-meta" hidden drug="adefovir dipivoxil" model-id="AdefovirDipivoxil_Dong2024_reference" status="rejected" stale="true" population="healthy adults" measured-compound="adefovir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="adefovir dipivoxil" model-id="AdefovirDipivoxil_Dong2024_reference" status="rejected" stale="false" population="healthy adults" measured-compound="adefovir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Dong Q, Chen C, Taubert M, Bilal M, Kinzig M, Sörgel F et al. Understanding adefovir pharmacokinetics as a component of a transporter phenotyping cocktail. European journal of clinical pharmacology 80(7):1069–1078 (2024).
@@ -44,7 +44,7 @@ Dong Q, Chen C, Taubert M, Bilal M, Kinzig M, Sörgel F et al. Understanding ade
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Dong Q, Chen C, Taubert M, Bilal M, Kinzig M, Sörgel F et al. Understanding ade
 
 ### Reviewer guidance
 
-**The record was rejected because the renal clearance parameter for adefovir was reported in litres per hour, causing a dimension mismatch with the model's expected units.**
+**Adenosine monophosphates' clearance parameters carry substance-based units (nmol/L, µmol/h) conflicting with required mass-based dimensions.**
 
-The apparent clearance parameter, labeled as CLNR with a value of 11.8 L/h, presents a unit that could not be converted to SI, leaving the model without a valid value for this structural component. Additionally, the second reader disputes whether the model is mechanistic or apparent and questions the specific identity of the clearance parameter. Extracted — adefovir: tlag 0.122 h, V 235 L, CLm/F 11.8 L/h, Km 170 nmol/L, Vmax 2.4 µmol/h, FR 0.59, kabs 5.18 h−1.
+The record lists an apparent metabolite clearance with a unit of nmol/L and a maximum metabolic rate with a unit of µmol/h. These substance-based units are dimensionally incompatible with the model's requirement for mass-based dimensions, such as mass/volume or mass/time. Additionally, one reported unit could not be converted to SI, leaving the parameter without a valid value. Extracted — adefovir: tlag 0.122 h, V 235 L, CLm/F 11.8 L/h, Km 170 nmol/L, Vmax 2.4 µmol/h, FR 0.59, kabs 5.18 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

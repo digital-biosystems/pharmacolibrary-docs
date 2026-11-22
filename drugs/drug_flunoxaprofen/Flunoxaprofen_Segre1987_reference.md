@@ -4,18 +4,18 @@
 
 # flunoxaprofen — `Flunoxaprofen_Segre1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-07 08:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="flunoxaprofen" model-id="Flunoxaprofen_Segre1987_reference" status="needs_review" stale="true" population="elderly patients" measured-compound="flunoxaprofen" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flunoxaprofen" model-id="Flunoxaprofen_Segre1987_reference" status="needs_review" stale="false" population="elderly patients" measured-compound="flunoxaprofen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Segre G, Bianchi E, Mascaretti L, Quaglia G, Forgione A. Flunoxaprofen pharmacokinetics in elderly subjects. International journal of clinical pharmacology research 7(4):243–250 (1987).
 
 ## Population and dosing
 
-**Population:** elderly patients · age group elderly · n = $ref: $.n_subjects.
+**Population:** elderly patients · age group elderly.
 
 ## Model
 
@@ -35,7 +35,7 @@ Segre G, Bianchi E, Mascaretti L, Quaglia G, Forgione A. Flunoxaprofen pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Segre G, Bianchi E, Mascaretti L, Quaglia G, Forgione A. Flunoxaprofen pharmacok
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flunoxaprofen: t1/2z 7.9 hours, Cmax 8.5 micrograms/ml, MRT 12.8 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flunoxaprofen, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

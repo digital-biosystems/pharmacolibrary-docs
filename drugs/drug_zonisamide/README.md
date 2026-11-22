@@ -42,30 +42,8 @@ Zonisamide is a sulfonamide antiepileptic used to treat epilepsy and Parkinson's
 | <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Muñana_2018_reference](drugs/drug_zonisamide/Zonisamide_Muana2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Muñana KR et al., Population pharmacokinetics of extended…, Journal of veterinary inter… (2018) | [10.1111/jvim.15298](https://doi.org/10.1111/jvim.15298) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Okada_2008_reference](drugs/drug_zonisamide/Zonisamide_Okada2008_reference.md) | — | 1-compartment (no model) | 1 | Okada Y et al., Population estimation regarding the eff…, Therapeutic drug monitoring (2008) | [10.1097/FTD.0b013e31817d842a](https://doi.org/10.1097/FTD.0b013e31817d842a) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Qiu_2016_reference](drugs/drug_zonisamide/Zonisamide_Qiu2016_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Qiu X et al., Population pharmacokinetics of zonisami…, International journal of cl… (2016) | [10.5414/CP202104](https://doi.org/10.5414/CP202104) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Silva_2025_reference](drugs/drug_zonisamide/Zonisamide_Silva2025_reference.md) | — | 1-compartment (no model) | 4 | Silva R et al., A new population pharmacokinetic model…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107023](https://doi.org/10.1016/j.ejps.2025.107023) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Silva_2025_reference](drugs/drug_zonisamide/Zonisamide_Silva2025_reference.md) | — | 1-compartment (no model) | 4 | Silva R et al., A new population pharmacokinetic model…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107023](https://doi.org/10.1016/j.ejps.2025.107023) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [van_2018_reference](drugs/drug_zonisamide/Zonisamide_van2018_reference.md) | — | 1-compartment (no model) | 0 | van Dijkman SC et al., Pharmacokinetic interactions and dosing…, British journal of clinical… (2018) | [10.1111/bcp.13400](https://doi.org/10.1111/bcp.13400) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=zonisamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `MAOA` inhibitor, `MAOB` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `AOX1` substrate, `CYP2C19` inhibitor/substrate, `CYP3A4` substrate, `CYP3A5` substrate, `MAOA` inhibitor, `UGT1A1` substrate | DrugBank actor |
-| metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `MAOA` inhibitor, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CA1 (inhibitor), CA10 (inhibitor), CA11 (inhibitor), CA12 (inhibitor), CA13 (inhibitor), CA14 (inhibitor), CA2 (inhibitor), CA3 (inhibitor), CA4 (inhibitor), CA5A (inhibitor), CA5B (inhibitor), CA6 (inhibitor), CA7 (inhibitor), CA8 (inhibitor), CA9 (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), GABRA1 (binder), SCN11A (inhibitor), SCN1A (inhibitor), SCN1B (inhibitor), SCN2A (inhibitor), SCN2B (inhibitor), SCN3A (inhibitor), SCN3B (inhibitor), SCN4A (inhibitor), SCN4B (inhibitor), SCN5A (inhibitor), SCN9A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -85,7 +63,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 17 matched, 15 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 1
+- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

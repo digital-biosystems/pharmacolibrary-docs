@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;alglucosidase alfa&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlglucosidaseAlfa_Tiraboschi2023_reference&quot;,&quot;label&quot;:&quot;Tiraboschi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlglucosidaseAlfa_Tiraboschi2023_reference&quot;,&quot;label&quot;:&quot;Tiraboschi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # alglucosidase alfa
 
@@ -14,39 +14,16 @@ Alglucosidase alfa is an enzyme medication used to treat glycogen storage diseas
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q2919537](https://www.wikidata.org/wiki/Q2919537), [Wikipedia](https://en.wikipedia.org/wiki/Alglucosidase_alfa?oldid=1373353640) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
-## Start here
-
-> **Tiraboschi_2023_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md?tab=Simulation) · [record](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Barzel_2026 · V</text><circle cx="511.9" cy="30.0" r="4" fill="#ef6c00"><title>Barzel_2026 · V: 69.1 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tiraboschi_2023 · V1</text><circle cx="280.5" cy="46.0" r="4" fill="#78909c"><title>Tiraboschi_2023 · V1: 3.29 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Tiraboschi_2023_reference](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub> | [Barzel_2026_qi_et_al_2018_23_plasma](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_qi_et_al_2018_23_plasma.md) | — | 1-compartment (no model) | 4 | Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01636-2](https://doi.org/10.1007/s40262-026-01636-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub> | [↳ tiraboschi_et_al_2023_22_plasma](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_tiraboschi_et_al_2023_22_plasma.md) | held back | 1-compartment, oral | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ troy_et_al_2020_26_serum_csf](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_troy_et_al_2020_26_serum_csf.md) | — | 1-compartment (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ gras_colomer_et_al_2021_25_plasma_leukocyte](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas.md) | — | 2-compartment (no model) | 9 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ tuffal_et_al_2023_21_plasma](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_tuffal_et_al_2023_21_plasma.md) | — | 2-compartment (no model) | 9 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alglucosidase_alfa).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: GAA (substrate), Glycogen (cleavage), IGF2R (binder), M6PR (binder).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ gras_colomer_et_al_2021_25_plasma_leukocyte](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas.md) | — | 2-compartment (no model) | 9 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ tuffal_et_al_2023_21_plasma](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_tuffal_et_al_2023_21_plasma.md) | — | 2-compartment (no model) | 9 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Tiraboschi_2023_reference](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,13 +37,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 10:55 | 20:59 | 4/2/0 | 0/0/0 | 0/0/0 | 395,688/57,408 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 3/13 | 13/2 | 0 |
+| 2026-10-05 10:55 | 20:59 | 3/3/0 | 0/0/0 | 0/0/0 | 395,688/57,408 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 3/13 | 13/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 73 matched, 65 returned
 - **screened:** 9  ·  **relevant:** 1
-- **records:** 6  ·  extracted 1  ·  needs review 3  ·  rejected 2  ·  stale 2
+- **records:** 6  ·  extracted 0  ·  needs review 3  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;da_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral compartment volume for magnesium sulfate was rejected because the two-compartment model structure leaves this compartment unreachable from the dose administration site.
+> The magnesium sulfate model was rejected because its peripheral-compartment volume, V2, is 28, and that compartment is unreachable from the dose.
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_da2020_reference" status="rejected" stale="false" population="pregnant women with preeclampsia" measured-compound="magnesium_sulfate" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ da Costa TX, Azeredo FJ, Ururahy MAG, da Silva Filho MA, Martins RR, Oliveira AG
 
 ### Reviewer guidance
 
-**The peripheral compartment volume for magnesium sulfate was rejected because the two-compartment model structure leaves this compartment unreachable from the dose administration site.**
+**The magnesium sulfate model was rejected because its peripheral-compartment volume, V2, is 28, and that compartment is unreachable from the dose.**
 
-The record specifies a two-compartment topology with a peripheral volume of 28 L for magnesium sulfate. The rejection reason identifies this peripheral compartment as an orphan, meaning it has no defined path from the dose. Consequently, the model structure is invalid as the peripheral compartment cannot receive drug from the input site. Extracted — magnesium sulfate: V 13.3 L, CL 1.38 L/h, V2 28.
+V2 is defined as the peripheral-compartment volume for magnesium sulfate, and the record describes a two-compartment structure. The peripheral compartment has no path from the dose, making it unreachable in the model topology. Extracted — magnesium sulfate: V 13.3 L, CL 1.38 L/h, V2 28.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

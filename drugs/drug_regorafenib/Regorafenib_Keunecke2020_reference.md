@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The regorafenib model is held back because metabolite formation fractions are negative and key volume and clearance parameters were not extracted.
+> Regorafenib’s metabolite-formation fractions are negative (−0.355 for M-2 and −1.09 for M-5), and missing parameter coverage plus defaulted Q2 leaves the record unsupported.
 
 <div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Keunecke2020_reference" status="needs_review" stale="false" population="patients with advanced solid tumours" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
 
@@ -66,13 +66,13 @@ Keunecke A, Hoefman S, Drenth HJ, Zisowsky J, Cleton A, Ploeger BA. Population p
 
 ### Reviewer guidance
 
-**The regorafenib model is held back because metabolite formation fractions are negative and key volume and clearance parameters were not extracted.**
+**Regorafenib’s metabolite-formation fractions are negative (−0.355 for M-2 and −1.09 for M-5), and missing parameter coverage plus defaulted Q2 leaves the record unsupported.**
 
-The estimated fractions of systemic drug converted to metabolites M-2 and M-5 are -0.355 and -1.09, respectively, which are physically impossible for these quantities. The central and peripheral volumes of distribution and the inter-compartmental clearance are present in the parameter list but were not included in the model run, so placeholder values were used instead. Furthermore, the covariate effects listed in the record were not simulated during the review process. Extracted — regorafenib: kabs 0.482 h−1, CL 4.02 L h−1, V1 10.7 L, kcomp 100 h−1, Q 11 L/h, V2 162 L, k14 0.141 h−1, V1/F 10.7 L, … (+1); M-2: fm -0.355, CL 2.45 L h−1; M-5: CL 0.746 L h−1, fm -1.09.
+Q2 uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper and need to be extracted or explicitly justified as conventions. Of 10 expected parameters, only 4 were covered; kabs, V1, kcomp, V2, V1/F, and V2/F were neither emitted nor defaulted. The builder assumed F=1 and Fm=1 under apparent parameterization. The covariate scenarios were not simulated; only the base model was simulated, not the covariate effects the record defines. Extracted — regorafenib: kabs 0.482 h−1, CL 4.02 L h−1, V1 10.7 L, kcomp 100 h−1, Q 11 L/h, V2 162 L, k14 0.141 h−1, V1/F 10.7 L, … (+1); M-2: fm -0.355, CL 2.45 L h−1; M-5: CL 0.746 L h−1, fm -1.09.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of k cg: this record has 0.141, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -196,14 +196,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 10 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['kabs', 'V1', 'kcomp', 'V2', 'V1/F', 'V2/F'] |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | fail | 10 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['kabs', 'V1', 'kcomp', 'V2', 'V1/F', 'V2/F'] |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.806, 0 of 1 reader(s) agree | 0.806 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

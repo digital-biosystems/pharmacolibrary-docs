@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;arginine hydrochloride&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # arginine hydrochloride
 
@@ -23,41 +23,15 @@ Arginine hydrochloride is an intravenous solution additive used to treat blood a
 |---|---|---|---|---|---|---|
 | arginine (arginine_hydrochloride, L-arginine) | parent | 174.201 | C6H14N4O2 | DrugBank | [6322](https://pubchem.ncbi.nlm.nih.gov/compound/6322) | Wang_2018, Yeo_2013 |
 
-## Start here
-
-> **Gaudinski_2018_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md?tab=Simulation) · [record](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.001</text><line x1="260.0" y1="18" x2="260.0" y2="58" stroke="#ddd"/><text x="260.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="330.0" y1="18" x2="330.0" y2="58" stroke="#ddd"/><text x="330.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="400.0" y1="18" x2="400.0" y2="58" stroke="#ddd"/><text x="400.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="470.0" y1="18" x2="470.0" y2="58" stroke="#ddd"/><text x="470.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gaudinski_2018 · CL</text><circle cx="202.3" cy="30.0" r="4" fill="#78909c"><title>Gaudinski_2018 · CL: 0.0015 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wang_2018 · CL</text><circle cx="515.1" cy="46.0" r="4" fill="#ef6c00"><title>Wang_2018 · CL: 44.1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gaudinski_2018 · V</text><circle cx="346.0" cy="30.0" r="4" fill="#78909c"><title>Gaudinski_2018 · V: 0.7791 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wang_2018 · V ·/kg</text><circle cx="476.3" cy="46.0" r="4" fill="#ef6c00"><title>Wang_2018 · V ·/kg: 4.326 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Gaudinski_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Gaudinski MR et al., Safety and pharmacokinetics of the Fc-m…, PLoS medicine (2018) | [10.1371/journal.pmed.1002493](https://doi.org/10.1371/journal.pmed.1002493) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Wang_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference.md) | — | 1-compartment (no model) | 2 | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd, k12 left at base-class defaults</sub> | [Yeo_2013_moderately_severemalaria_ref_15](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1.md) | held back | 2-compartment, IV | 4 | Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013) | [10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd, k12 left at base-class defaults</sub> | [↳ severemalaria](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_severemalaria.md) | held back | 2-compartment, IV | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Awan_2024_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Awan2024_reference.md) | — | 1-compartment (no model) | 2 | Awan SF et al., Phase 1 trial evaluating safety and pha…, JCI insight (2024) | [10.1172/jci.insight.175375](https://doi.org/10.1172/jci.insight.175375) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=arginine_hydrochloride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ARG2 (unknown), ASL (unknown), ASS1 (unknown), AZIN2 (unknown), NOS2 (unknown), NOS3 (unknown), SLC16A10 (inhibitor), SLC7A1 (unknown), SLC7A3 (unknown), SLC7A4 (unknown), TK1 (modulator).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Gaudinski_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Gaudinski MR et al., Safety and pharmacokinetics of the Fc-m…, PLoS medicine (2018) | [10.1371/journal.pmed.1002493](https://doi.org/10.1371/journal.pmed.1002493) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,13 +45,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 00:23 | 11:33 | 4/1/0 | 0/0/0 | 0/0/0 | 205,468/29,537 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 0/11 | 9/0 | 0 |
+| 2026-10-06 00:23 | 11:33 | 3/2/0 | 0/0/0 | 0/0/0 | 205,468/29,537 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 0/11 | 9/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 20 matched, 18 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 1  ·  needs review 3  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Evolocumab clearance 0.924 L/day and volume 0.158 L are implausible, indicating a unit or scale error.
+> The record was rejected because the extracted volume of distribution of 0.158 L is physiologically implausible for evolocumab.
 
 <div class="pk-model-meta" hidden drug="evolocumab" model-id="Evolocumab_Gibbs2017_random_effects_intersubject_residual_va" status="rejected" stale="false" population="healthy subjects and statin-treated hypercholesterolemic patients" measured-compound="evolocumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Gibbs JP, Doshi S, Kuchimanchi M, Grover A, Emery MG, Dodds MG et al. Impact of 
 
 ### Reviewer guidance
 
-**Evolocumab clearance 0.924 L/day and volume 0.158 L are implausible, indicating a unit or scale error.**
+**The record was rejected because the extracted volume of distribution of 0.158 L is physiologically implausible for evolocumab.**
 
-The record lists a total clearance of 0.924 L/day and volume of distribution of 0.158 L for evolocumab. These magnitudes fall outside physiological windows, suggesting an extraction error in scale or units. Additionally, the first-order internalisation rate constant for the drug-target complex has no value. Extracted — evolocumab: kabs 0.807 1/h, V 0.158 L, CL 0.924 L/day.
+The volume of distribution is recorded as 0.158 L, and total clearance as 0.924 L/day. The second reader reported conflicting values, including a volume of 0.0362 L and a clearance of 0.260 L/day. Extracted — evolocumab: kabs 0.807 1/h, V 0.158 L, CL 0.924 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

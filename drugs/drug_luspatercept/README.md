@@ -16,7 +16,7 @@ Luspatercept is a fusion protein classified as an antianemic preparation used to
 
 ## Start here
 
-> **Chen_2020_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> anemic patients with myelodysplastic syndromes, n = &gt;=260. [Run it in the simulator](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md?tab=Simulation) · [record](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md)
+> **Chen_2020_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> anemic patients with myelodysplastic syndromes. [Run it in the simulator](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md?tab=Simulation) · [record](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -30,8 +30,8 @@ Luspatercept is a fusion protein classified as an antianemic preparation used to
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Chen_2020_reference](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+5 cov.) | Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12521](https://doi.org/10.1002/psp4.12521) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Chen_2021_reference](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+3 cov.) | Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1696](https://doi.org/10.1002/jcph.1696) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Chen_2020_reference](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+5 cov.) | Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12521](https://doi.org/10.1002/psp4.12521) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Chen_2021_reference](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+3 cov.) | Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1696](https://doi.org/10.1002/jcph.1696) |
 
 ## Pharmacodynamics (PD)
 
@@ -64,7 +64,7 @@ Luspatercept is a fusion protein classified as an antianemic preparation used to
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 21:28 | 9:05 | 2/0/0 | 2/0/0 | 0/0/0 | 161,473/27,312 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-05 21:28 | 9:05 | 2/0/0 | 14/0/0 | 0/0/0 | 161,473/27,312 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 

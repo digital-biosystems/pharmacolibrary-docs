@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M05B&quot;,&quot;href&quot;:&quot;atc/M05B.md&quot;},{&quot;label&quot;:&quot;denosumab&quot;,&quot;href&quot;:&quot;drugs/drug_denosumab/&quot;},{&quot;label&quot;:&quot;S\u00e1nchez-Vidaurre_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Denosumab_Sutjandra2011_reference&quot;,&quot;label&quot;:&quot;Sutjandra_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_denosumab/Denosumab_Sutjandra2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Denosumab_Ding2023_reference&quot;,&quot;label&quot;:&quot;Ding_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_denosumab/Denosumab_Ding2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Denosumab_Ding2023_reference&quot;,&quot;label&quot;:&quot;Ding_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_denosumab/Denosumab_Ding2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Denosumab_Sutjandra2011_reference&quot;,&quot;label&quot;:&quot;Sutjandra_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_denosumab/Denosumab_Sutjandra2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # denosumab — `Denosumab_SnchezVidaurre2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:52 UTC (Rejected), but the paper was screened again on 2026-10-07 03:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Denosumab's covariate-based volume distribution parameter holds an implausible negative value of -0.534.
+> The record was rejected because the volume of distribution covariate shift was negative and the Vmax unit was dimensionally inconsistent.
 
-<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_SnchezVidaurre2025_reference" status="rejected" stale="true" population="healthy adult men and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_SnchezVidaurre2025_reference" status="rejected" stale="false" population="healthy adult men and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Sánchez-Vidaurre S, Paravisini A, Queiruga-Parada J. Population PK Modeling of Denosumab Biosimilar MB09 and Reference Denosumab to Establish PK Similarity. Pharmaceutics 17(9) (2025).
@@ -17,7 +17,7 @@ Sánchez-Vidaurre S, Paravisini A, Queiruga-Parada J. Population PK Modeling of 
 
 ## Population and dosing
 
-**Population:** healthy adult men and postmenopausal women with osteoporosis · condition healthy and osteoporosis · age group adult · n = —.
+**Population:** healthy adult men and postmenopausal women with osteoporosis · condition healthy and osteoporosis · age group adult.
 
 **Dosing:** 35, 60 mg, subcutaneous, single.
 
@@ -43,7 +43,7 @@ Sánchez-Vidaurre S, Paravisini A, Queiruga-Parada J. Population PK Modeling of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Sánchez-Vidaurre S, Paravisini A, Queiruga-Parada J. Population PK Modeling of 
 
 ### Reviewer guidance
 
-**Denosumab's covariate-based volume distribution parameter holds an implausible negative value of -0.534.**
+**The record was rejected because the volume of distribution covariate shift was negative and the Vmax unit was dimensionally inconsistent.**
 
-The record lists a volume distribution parameter with a value of -0.534, which is physically impossible. This negative value indicates that the base estimate or covariate shift for the volume is incorrect. The rejection is due to this structural dimension mismatch and the implausible negative parameter value. Extracted — denosumab: kabs 0.406 1/day, V/F 9.33 L, CL/F 0.123 L/day, CL 1.32 L/day/kg, Km 0.124 ng/mL, Vmax 0.139 ng/day, V -0.534.
+The model lists a volume of distribution covariate shift of -0.534, which is physically impossible. Additionally, the maximum metabolism rate (Vmax) of 0.139 ng/day failed a dimensional check against its declared unit. These values indicate errors in the parameter estimates or their unit definitions. Extracted — denosumab: kabs 0.406 1/day, V/F 9.33 L, CL/F 0.123 L/day, CL 1.32 L/day/kg, Km 0.124 ng/mL, Vmax 0.139 ng/day, V -0.534.
 
 Independently confirmed by `gpt-oss-120b`.
 

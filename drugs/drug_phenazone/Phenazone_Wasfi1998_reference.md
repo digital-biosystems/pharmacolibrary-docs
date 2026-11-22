@@ -4,11 +4,11 @@
 
 # phenazone — `Phenazone_Wasfi1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 07:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The antipyrine elimination half-life value of 3.25 hours caused a dimension mismatch on a structural parameter, rejecting the abstract-only record.
+> Antipyrine clearance (0.148 l/kg/hr) has a unit dimension that conflicts with the expected pharmacokinetic dimension for blood clearance.
 
-<div class="pk-model-meta" hidden drug="phenazone" model-id="Phenazone_Wasfi1998_reference" status="rejected" stale="true" population="horses and camels" measured-compound="antipyrine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="phenazone" model-id="Phenazone_Wasfi1998_reference" status="rejected" stale="false" population="horses and camels" measured-compound="antipyrine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Wasfi IA, Zorob OM, Boni NS, Hadi AA, Agha BA, Elghazali M. The activity of mixed function oxidases, estimated by in vivo antipyrine clearance, is similar in horses and camels. Comparative biochemistry and physiology. Part C, Pharmacology, toxicology & endocrinology 119(2):139–142 (1998).
@@ -42,7 +42,7 @@ Wasfi IA, Zorob OM, Boni NS, Hadi AA, Agha BA, Elghazali M. The activity of mixe
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Wasfi IA, Zorob OM, Boni NS, Hadi AA, Agha BA, Elghazali M. The activity of mixe
 
 ### Reviewer guidance
 
-**The antipyrine elimination half-life value of 3.25 hours caused a dimension mismatch on a structural parameter, rejecting the abstract-only record.**
+**Antipyrine clearance (0.148 l/kg/hr) has a unit dimension that conflicts with the expected pharmacokinetic dimension for blood clearance.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A dimension mismatch occurred on a structural parameter involving the antipyrine elimination half-life of 3.25 hours. A second reader disagreed on several parameters, including identifying the elimination half-life as 3.25 hours while the record listed it as null. Extracted — phenazone: t1/2z 3.25 hr, V/F 0.691 l/kg, Vss 0.659 l/kg, V1 0.386 l/kg, CLb 0.148 l/kg/hr, AUC∞ 171 micrograms.ml.hr, kabs 5.54 h -1.
+The record lists total body clearance as 0.148 l/kg/hr, but the unit's dimensions conflict with the parameter's expected dimension. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader disagreed on the dose compound, primary analyte, and all listed parameter values, marking them as unknown or null. Extracted — phenazone: t1/2z 3.25 hr, V/F 0.691 l/kg, Vss 0.659 l/kg, V1 0.386 l/kg, CLb 0.148 l/kg/hr, AUC∞ 171 micrograms.ml.hr, kabs 5.54 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has antipyrine, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 

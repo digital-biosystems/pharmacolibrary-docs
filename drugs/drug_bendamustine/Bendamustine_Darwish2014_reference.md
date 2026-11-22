@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;bendamustine&quot;,&quot;href&quot;:&quot;drugs/drug_bendamustine/&quot;},{&quot;label&quot;:&quot;Darwish_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bendamustine_Radhakrishnan2019_reference&quot;,&quot;label&quot;:&quot;Radhakrishnan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bendamustine/Bendamustine_Radhakrishnan2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bendamustine_Kim2018_reference&quot;,&quot;label&quot;:&quot;Kim_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bendamustine/Bendamustine_Kim2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bendamustine_Kim2018_reference&quot;,&quot;label&quot;:&quot;Kim_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bendamustine/Bendamustine_Kim2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bendamustine_Radhakrishnan2019_reference&quot;,&quot;label&quot;:&quot;Radhakrishnan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bendamustine/Bendamustine_Radhakrishnan2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bendamustine — `Bendamustine_Darwish2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 16:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cmax value 1 h for bendamustine in abstract-only record Darwish_2014 is a dimension mismatch for a concentration parameter.
+> Bendamustine Cmax is recorded as 1 h, but Cmax means highest drug concentration; this time unit conflicts with concentration and the record was rejected.
 
-<div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Darwish2014_reference" status="rejected" stale="true" population="pediatric patients with relapsed/refractory acute leukemia" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Darwish2014_reference" status="rejected" stale="false" population="pediatric patients with relapsed/refractory acute leukemia" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Darwish M, Megason G, Bond M, Hellriegel E, Robertson P, Grasela T et al. Population pharmacokinetics and pharmacokinetics/pharmacodynamics of bendamustine in pediatric patients with relapsed/refractory acute leukemia. Current medical research and opinion 30(11):2305–2315 (2014).
@@ -17,7 +17,7 @@ Darwish M, Megason G, Bond M, Hellriegel E, Robertson P, Grasela T et al. Popula
 
 ## Population and dosing
 
-**Population:** pediatric patients with relapsed/refractory acute leukemia · condition relapsed/refractory acute leukemia · age group mixed · n = &gt;43.
+**Population:** pediatric patients with relapsed/refractory acute leukemia · condition relapsed/refractory acute leukemia · age group mixed.
 
 ## Model
 
@@ -39,7 +39,7 @@ Darwish M, Megason G, Bond M, Hellriegel E, Robertson P, Grasela T et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Darwish M, Megason G, Bond M, Hellriegel E, Robertson P, Grasela T et al. Popula
 
 ### Reviewer guidance
 
-**Cmax value 1 h for bendamustine in abstract-only record Darwish_2014 is a dimension mismatch for a concentration parameter.**
+**Bendamustine Cmax is recorded as 1 h, but Cmax means highest drug concentration; this time unit conflicts with concentration and the record was rejected.**
 
-The record lists Cmax as 1 h, a time unit, which is incompatible with the pharmacokinetic definition of maximum plasma concentration. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader found all parameter values and the dose compound to be unknown. Extracted — bendamustine: Cmax 1 h, AUCt 8.24e+03 ng*h/mL, CL 31.7 L/h, V 19.7 L, kabs 6 h−1.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader marked the dose compound and primary analyte unknown and did not agree on several extracted parameter entries, including Cmax. Extracted — bendamustine: Cmax 1 h, AUCt 8.24e+03 ng*h/mL, CL 31.7 L/h, V 19.7 L, kabs 6 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bendamustine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The atazanavir model was quarantined because volume of distribution and absorption lag time lacked explicit values, causing library placeholders to be used.
+> Atazanavir's volume of distribution and absorption lag time were left at default placeholder values, causing the model to be quarantined.
 
 <div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="model_quarantined" stale="false" population="HIV-negative healthy volunteers" measured-compound="atazanavir" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Kile DA, MaWhinney S, Aquilante CL, Rower JE, Castillo-Mancilla JR, Anderson PL.
 
 ### Reviewer guidance
 
-**The atazanavir model was quarantined because volume of distribution and absorption lag time lacked explicit values, causing library placeholders to be used.**
+**Atazanavir's volume of distribution and absorption lag time were left at default placeholder values, causing the model to be quarantined.**
 
-The record lists apparent central and peripheral volumes and clearance parameters, but omits values for total volume of distribution and absorption lag time. These omissions resulted in defaulted parameters, which are deemed unacceptable for publication. Although apparent clearance and bioavailability were explicitly modeled, the missing structural parameters prevented the model from being validated. Extracted — atazanavir: CL/F 16.7 liters/h, V2/F 32.2 liters, Q/F 7.29 liters/h, kabs 0.394 h -1.
+The record explicitly lists volume of distribution and Tlag as defaulted parameters rather than estimated values. Consequently, the model was held back from publication to avoid using unverified library placeholders. A second reader also failed to confirm the extracted parameter values for clearance, volume, and absorption rate. Extracted — atazanavir: CL/F 16.7 liters/h, V2/F 32.2 liters, Q/F 7.29 liters/h, kabs 0.394 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atazanavir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -132,14 +132,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

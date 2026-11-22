@@ -29,7 +29,7 @@ Clomipramine is a tricyclic antidepressant prescribed for obsessive-compulsive d
 | <span class="pk-rf" hidden data-species="cat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q22, Q88 — no SI value to buil…</sub> | [Lainesse_2006_reference](drugs/drug_clomipramine/Clomipramine_Lainesse2006_reference.md) | — | 1-compartment (no model) | 9 | Lainesse C et al., Pharmacokinetics of clomipramine and de…, Journal of veterinary pharm… (2006) | [10.1111/j.1365-2885.2006.00742.x](https://doi.org/10.1111/j.1365-2885.2006.00742.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gex-Fabry_2000_reference](drugs/drug_clomipramine/Clomipramine_GexFabry2000_reference.md) | — | general linear (no model) | 0 | Gex-Fabry M et al., Population pharmacokinetics of clomipra…, Therapeutic drug monitoring (2000) | [10.1097/00007691-200012000-00009](https://doi.org/10.1097/00007691-200012000-00009) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kurata_1986_reference](drugs/drug_clomipramine/Clomipramine_Kurata1986_reference.md) | — | 1-compartment (no model) | 0 | Kurata K et al., A pharmacokinetic study of clomipramine…, The Japanese journal of psy… (1986) | [10.1111/j.1440-1819.1986.tb03178.x](https://doi.org/10.1111/j.1440-1819.1986.tb03178.x) |
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nielsen-Kudsk_1980_reference](drugs/drug_clomipramine/Clomipramine_NielsenKudsk1980_reference.md) | — | 1-compartment (no model) | 3 | Nielsen-Kudsk F et al., Myocardial pharmacokinetics of amitript…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb02445.x](https://doi.org/10.1111/j.1600-0773.1980.tb02445.x) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nielsen-Kudsk_1980_reference](drugs/drug_clomipramine/Clomipramine_NielsenKudsk1980_reference.md) | — | 1-compartment (no model) | 3 | Nielsen-Kudsk F et al., Myocardial pharmacokinetics of amitript…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb02445.x](https://doi.org/10.1111/j.1600-0773.1980.tb02445.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,30 +44,6 @@ Clomipramine is a tricyclic antidepressant prescribed for obsessive-compulsive d
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Li_2018_Kv_current](drugs/drug_clomipramine/pd_Li_2018_Kv_current.md) | voltage-dependent K+ (Kv) channel current inhibition ← clomipramine · direct sigmoid Emax (Hill) effect | — | Li H et al., Blockade of voltage-dependent K, Journal of pharmacological… (2018) | [10.1016/j.jphs.2018.04.005](https://doi.org/10.1016/j.jphs.2018.04.005) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [López-Valdés_2002_ACh_response](drugs/drug_clomipramine/pd_L_pez_Vald_s_2002_ACh_response.md) | acetylcholine-elicited current (alpha2beta4 nAChR) ← clomipramine · direct sigmoid Emax (Hill) effect | — | López-Valdés HE et al., Effects of clomipramine on neuronal nic…, European journal of pharmac… (2002) | [10.1016/s0014-2999(02)01556-x](https://doi.org/10.1016/s0014-2999(02)01556-x) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clomipramine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `GSTP1` inhibitor | DrugBank actor |
-| metabolism | lung | `GSTP1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HTR2A (target), HTR2B (target), HTR2C (target), SLC6A2 (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -80,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:17 | 1:10 | 1/3/0 | 7/0/0 | 0/0/0 | 68,147/5,653 | ollama / glm-5.3-flash | 2 | 0/0 | 0/0 | 0 |
+| 2026-10-06 22:17 | 1:10 | 1/3/0 | 8/0/0 | 0/0/0 | 68,147/5,653 | ollama / glm-5.3-flash | 2 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 24 matched, 24 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

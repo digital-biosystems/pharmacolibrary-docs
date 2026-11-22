@@ -25,7 +25,7 @@ Xenon-127 is a diagnostic radiopharmaceutical used for examining the respiratory
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Susskind_1978_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1978_reference.md) | — | 1-compartment (no model) | 1 | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Susskind_1978_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1978_reference.md) | — | 1-compartment (no model) | 1 | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +45,7 @@ Xenon-127 is a diagnostic radiopharmaceutical used for examining the respiratory
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

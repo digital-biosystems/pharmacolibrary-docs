@@ -17,24 +17,7 @@ Xu Z, Vu T, Lee H, Hu C, Ling J, Yan H et al. Population pharmacokinetics of gol
 
 ## Population and dosing
 
-**Population:** patients with active psoriatic arthritis · age group adult · n = The provided text describes a population pharmacokinetic (popPK) study of golimumab. Based on the text, the study used NONMEM to fit a 1-compartment model to serum concentrations of golimumab in patients with psoriatic arthritis. Therefore: 
-
-- `is_poppk`: yes (population PK model was used)
-- `paper_class`: drug_pk (the modelled concentrations are of the drug itself)
-- `final_table_hint`: unknown (no table captions provided)
-- `software`: NONMEM
-- `has_control_stream`: no (not mentioned)
-- `dose_compound`: golimumab (dosed subcutaneously)
-- `primary_analyte`: golimumab (serum concentrations were measured)
-- `population`: patients with active psoriatic arthritis
-- `age_class`: adult (patients in a phase 3 PsA study are typically adults, though not explicitly stated, PsA is an adult disease)
-- `n_subjects`: 337
-- `condition`: psoriatic arthritis
-- `species`: human
-- `compounds`: only golimumab is listed (parent, dosed, measured, has parameters)
-- `links`: none (no metabolites or linked compounds described)
-
-One clarification: The text does not explicitly state whether the subjects were all adults, but psoriatic arthritis is primarily an adult condition, and phase 3 trials for such drugs typically exclude pediatrics unless specified. I will assume adult based on context and standard practice..
+**Population:** patients with active psoriatic arthritis · age group adult.
 
 ## Model
 

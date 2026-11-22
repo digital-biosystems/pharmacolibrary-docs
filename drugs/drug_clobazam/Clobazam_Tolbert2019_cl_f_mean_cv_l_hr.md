@@ -4,11 +4,11 @@
 
 # clobazam — `Clobazam_Tolbert2019_cl_f_mean_cv_l_hr`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:49 UTC (Rejected), but the paper was screened again on 2026-10-06 18:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. AUC0–t value 8871 has incorrect unit 'h' instead of ng·h/mL, causing a dimension mismatch on this structural parameter.
+> The AUC0-t unit (ng•h/mL) cannot be converted to standard units, and the CYP2C19 covariate effect value of 1.6 was disputed.
 
-<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_cl_f_mean_cv_l_hr" status="rejected" stale="true" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_cl_f_mean_cv_l_hr" status="rejected" stale="false" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics of Clobazam. Journal of clinical pharmacology 59(1):7–19 (2019).
@@ -41,7 +41,7 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 ### Reviewer guidance
 
-**AUC0–t value 8871 has incorrect unit 'h' instead of ng·h/mL, causing a dimension mismatch on this structural parameter.**
+**The AUC0-t unit (ng•h/mL) cannot be converted to standard units, and the CYP2C19 covariate effect value of 1.6 was disputed.**
 
-The AUC0–t parameter is listed with a value of 8871 but its recorded unit is 'h', while the label specifies 'ng•h/mL' and its meaning confirms it is an area under the concentration–time curve. The second reader disagrees on the identity of the AUC metric and reports that the covariate effect for CYP2C19 (theta_q31_cyp2c19) should be null rather than 1.6. Extracted — clobazam: Cmax 87.2 ng/mL, AUCt 8.87e+03 h, t1/2z 58.6 h, V/F 100 L, CL/F 1.9 L/h.
+The record lists AUC0-t as 8871 ng•h/mL, but this unit could not be processed for standardization, leaving the parameter without a valid standard value. Additionally, the model builder assumed a covariate effect value of 1.6 for CYP2C19, which a second reader disputed as unsupported. Extracted — clobazam: Cmax 87.2 ng/mL, AUCt 8.87e+03 h, t1/2z 58.6 h, V/F 100 L, CL/F 1.9 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0‐t, mean (% cv), ng•h/ml].parameter_id`: this record has Q19, the second reading Q74; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

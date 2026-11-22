@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;eltrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/&quot;},{&quot;label&quot;:&quot;Gibiansky_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Farrell2014_reference&quot;,&quot;label&quot;:&quot;Farrell_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant and lag time were not reported in the abstract and were left at library defaults, unsupported by the source paper.
+> The record relies on default values for the absorption rate constant and lag time because the source abstract omitted these specific pharmacokinetic estimates.
 
 <div class="pk-model-meta" hidden drug="eltrombopag" model-id="Eltrombopag_Gibiansky2011_reference" status="needs_review" stale="false" population="healthy subjects and patients with chronic idiopathic thrombocytopenic purpura" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Gibiansky E, Zhang J, Williams D, Wang Z, Ouellet D. Population pharmacokinetics
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with chronic idiopathic thrombocytopenic purpura · condition healthy and chronic idiopathic thrombocytopenic purpura · age group adult · n = &gt;=199.
+**Population:** healthy subjects and patients with chronic idiopathic thrombocytopenic purpura · condition healthy and chronic idiopathic thrombocytopenic purpura · age group adult.
 
 ## Model
 
@@ -40,7 +40,7 @@ Gibiansky E, Zhang J, Williams D, Wang Z, Ouellet D. Population pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Gibiansky E, Zhang J, Williams D, Wang Z, Ouellet D. Population pharmacokinetics
 
 ### Reviewer guidance
 
-**Absorption rate constant and lag time were not reported in the abstract and were left at library defaults, unsupported by the source paper.**
+**The record relies on default values for the absorption rate constant and lag time because the source abstract omitted these specific pharmacokinetic estimates.**
 
-The record was constructed from the paper's abstract only, so the pharmacokinetic parameters (CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L, Q/F 0.399 L/h) stand in for a fitted model. The model builder used a first-order depot input with apparent parameterization but did not report the absorption rate constant or lag time in the source text. Consequently, these absorption parameters were defaulted, making the record incomplete as a description of the specific study's fitted model. Extracted — eltrombopag: CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L, Q/F 0.399 L/h.
+Although the paper reports apparent clearance of 0.668 L/h and central volume of 8.76 L, the absorption rate constant and lag time were not extracted from the text. Consequently, library placeholder values were used for these parameters instead of paper-derived estimates, leading to a verdict of needs_review. A second reader failed to identify any specific compound or parameters, resulting in a total disagreement with the original extraction. Extracted — eltrombopag: CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L, Q/F 0.399 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has eltrombopag, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eltrombopag, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -99,22 +99,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[apparent clearance]` | 0.668 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of the central compartment]` | 8.76 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of the peripheral compartment]` | 11.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` |  | 0.668 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distributional clearance]` | 0.399 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q/f]` |  | 0.399 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc/f]` |  | 8.76 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vp/f]` |  | 11.3 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | eltrombopag | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | eltrombopag | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | 0.668 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of the central compartment]` | 8.76 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of the peripheral compartment]` | 11.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 0.668 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distributional clearance]` | 0.399 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` |  | 0.399 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` |  | 8.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` |  | 11.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | eltrombopag | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | eltrombopag | unknown | mismatch |
 
 </details>
 
@@ -143,15 +143,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=eltrombopag) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=eltrombopag) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

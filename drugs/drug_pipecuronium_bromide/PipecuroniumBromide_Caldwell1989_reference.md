@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;pipecuronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/&quot;},{&quot;label&quot;:&quot;Caldwell_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PipecuroniumBromide_Yajima1990_reference&quot;,&quot;label&quot;:&quot;Yajima_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Yajima1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PipecuroniumBromide_Caldwell1988_reference&quot;,&quot;label&quot;:&quot;Caldwell_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PipecuroniumBromide_Caldwell1988_reference&quot;,&quot;label&quot;:&quot;Caldwell_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PipecuroniumBromide_Yajima1990_reference&quot;,&quot;label&quot;:&quot;Yajima_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Yajima1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pipecuronium bromide — `PipecuroniumBromide_Caldwell1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 02:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance parameter for pipecuronium was assigned a time unit, causing a dimension mismatch that resulted in rejection.
+> Clearance is reported in minutes rather than volume per time, and all parameters come from abstract-only data.
 
-<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1989_reference" status="rejected" stale="true" population="patients anesthetized with halothane and nitrous oxide" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1989_reference" status="rejected" stale="false" population="patients anesthetized with halothane and nitrous oxide" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The influence of renal failure on the pharmacokinetics and duration of action of pipecuronium bromide in patients anesthetized with halothane and nitrous oxide. Anesthesiology 70(1):7–12 (1989).
@@ -17,7 +17,7 @@ Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The
 
 ## Population and dosing
 
-**Population:** patients anesthetized with halothane and nitrous oxide · age group adult · n = value is not known, need further investigation.
+**Population:** patients anesthetized with halothane and nitrous oxide · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed pipecuronium bromide, measured pipecuronium.
 
@@ -39,7 +39,7 @@ Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The
 
 ### Reviewer guidance
 
-**The clearance parameter for pipecuronium was assigned a time unit, causing a dimension mismatch that resulted in rejection.**
+**Clearance is reported in minutes rather than volume per time, and all parameters come from abstract-only data.**
 
-The record lists plasma clearance as 2.4 min, which is a duration rather than a flow rate. This structural parameter unit conflict made the model dimensionally inconsistent. Additionally, the record was derived solely from the paper's abstract, meaning the values represent summary statistics rather than fitted model parameters. Extracted — pipecuronium bromide: Vss 309 ml.kg-1, CL 2.4 min, t1/2z 137 min.
+The plasma clearance of 2.4 is recorded with units of minutes, a time dimension incompatible with the required volume per time for a clearance parameter. The record was built from the abstract alone, meaning the summary statistics for volume of distribution and half-life stand in for a fitted model. A second reader also disagreed on the identity of the dose compound and primary analyte. Extracted — pipecuronium bromide: Vss 309 ml.kg-1, CL 2.4 min, t1/2z 137 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipecuronium bromide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

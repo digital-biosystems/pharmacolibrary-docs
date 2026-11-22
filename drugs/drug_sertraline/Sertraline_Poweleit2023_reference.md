@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Sertraline record omitted absorption rate constant, using a placeholder value not supported by the paper's abstract.
+> The sertraline record is abstract-only, using library defaults for absorption rate and failing to simulate defined covariate effects.
 
 <div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Poweleit2023_reference" status="needs_review" stale="false" population="psychiatrically hospitalized pediatric patients aged 5-18 years" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalop
 
 ### Reviewer guidance
 
-**Sertraline record omitted absorption rate constant, using a placeholder value not supported by the paper's abstract.**
+**The sertraline record is abstract-only, using library defaults for absorption rate and failing to simulate defined covariate effects.**
 
-The absorption rate constant was set to a generic placeholder because the source abstract did not report an estimate. Clearance and volume values were not independently extracted by the second reader. Covariate scenarios defined in the record were not simulated during the review. Extracted — sertraline: CL/F 14.2 L/h, V/F 428 L.
+The record lacks explicit estimates for the absorption rate and lag time, relying on library placeholders instead of paper-supported values. Covariate scenarios were defined but not exercised in simulations, leaving only the reference individual profile. A second reader disagreed on the identification of the dosed compound and parameter assignment. Extracted — sertraline: CL/F 14.2 L/h, V/F 428 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sertraline, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -154,15 +154,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=sertraline) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=sertraline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

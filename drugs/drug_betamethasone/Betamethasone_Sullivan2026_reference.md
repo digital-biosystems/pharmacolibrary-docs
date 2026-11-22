@@ -5,11 +5,11 @@
 
 # betamethasone — `Betamethasone_Sullivan2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:07 UTC (Rejected), but the paper was screened again on 2026-10-04 19:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="betamethasone" model-id="Betamethasone_Sullivan2026_reference" status="needs_review" stale="true" population="exercised Thoroughbred horses" measured-compound="betamethasone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="betamethasone" model-id="Betamethasone_Sullivan2026_reference" status="needs_review" stale="false" population="exercised Thoroughbred horses" measured-compound="betamethasone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sullivan J, Blea J, McKemie DS, Kass PH, Knych HK. Pharmacokinetics and Anti-Inflammatory Effects of Intramuscular Betamethasone in Exercised Thoroughbred Horses. Journal of veterinary pharmacology and therapeutics 49(3):295–305 (2026).
@@ -17,7 +17,7 @@ Sullivan J, Blea J, McKemie DS, Kass PH, Knych HK. Pharmacokinetics and Anti-Inf
 
 ## Population and dosing
 
-**Population:** exercised Thoroughbred horses · condition healthy · age group adult · n = &gt;=24.
+**Population:** exercised Thoroughbred horses · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed betamethasone sodium phosphate/betamethasone acetate, measured betamethasone.
 
@@ -41,7 +41,7 @@ Sullivan J, Blea J, McKemie DS, Kass PH, Knych HK. Pharmacokinetics and Anti-Inf
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Sullivan J, Blea J, McKemie DS, Kass PH, Knych HK. Pharmacokinetics and Anti-Inf
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — betamethasone: Cmax 6.43 ng/mL, tmax 0.75 h, t1/2z 30.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of terminal half-life: this record has 30.5, the second reading none. That field does not shape the model.
 

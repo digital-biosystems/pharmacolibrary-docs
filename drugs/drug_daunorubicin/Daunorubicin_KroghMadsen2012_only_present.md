@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The first-order transfer rate constant from central to peripheral compartment was left at library defaults instead of using the paper's estimates.
+> The daunorubicin two-compartment model was held back because the intercompartmental clearance was not extracted and a library default was used.
 
 <div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_KroghMadsen2012_only_present" status="needs_review" stale="false" population="patients with acute myeloid leukemia" measured-compound="cytarabine, etoposide, and daunorubicin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,9 +52,9 @@ Krogh-Madsen M, Bender B, Jensen MK, Nielsen OJ, Friberg LE, Honoré PH. Populat
 
 ### Reviewer guidance
 
-**The first-order transfer rate constant from central to peripheral compartment was left at library defaults instead of using the paper's estimates.**
+**The daunorubicin two-compartment model was held back because the intercompartmental clearance was not extracted and a library default was used.**
 
-The record lists central and peripheral clearances and volumes but omits the first-order transfer rate constant. The established note confirms this constant uses library defaults, affecting the simulated profile without paper support. A second reader identified conflicting clearance and volume values, suggesting the extracted numbers may not match the source. Extracted — daunorubicin: CL 28 L/h, V1 22 L, Q 135 L/h, V2 223 L.
+The intercompartmental clearance between the central and peripheral compartments was left at library defaults rather than using an explicit estimate from the paper. A second reader disputed the record's parameter values, such as a central volume of 22 L, and also disagreed on the identified dose compounds. Extracted — daunorubicin: CL 28 L/h, V1 22 L, Q 135 L/h, V2 223 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has cytarabine, etoposide, and daunorubicin, the second reading daunorubicin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -139,14 +139,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cytarabine, etoposide, and daunorubicin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cytarabine, etoposide, and daunorubicin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

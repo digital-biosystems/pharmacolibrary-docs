@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports that 110_phenanthroline at doses of 2 and 4 mg/kg reverses tumor-induced elevated WBC counts (reported in T/cmm x10 3) toward normal levels, but it does not describe the specific pharmacodynamic mechanism, rate constants, or potency values such as IC50 for this WBC response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Anchuri_2012`
 - **model family:** `unknown`
 - **driver:** `dose_only`

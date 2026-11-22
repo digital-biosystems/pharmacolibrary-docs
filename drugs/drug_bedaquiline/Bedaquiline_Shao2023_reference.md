@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bedaquiline absorption rate constant was set to a maximum of 1000 h-1, making absorption instantaneous and non-pharmacokinetic.
+> The absorption rate constant was set to 1000.0 h-1, causing a second reader to dispute the record.
 
 <div class="pk-model-meta" hidden drug="bedaquiline" model-id="Bedaquiline_Shao2023_reference" status="needs_review" stale="false" population="" measured-compound="bedaquiline" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Shao G, Bao Z, Davies Forsman L, Paues J, Werngren J, Niward K et al. Population
 
 ### Reviewer guidance
 
-**Bedaquiline absorption rate constant was set to a maximum of 1000 h-1, making absorption instantaneous and non-pharmacokinetic.**
+**The absorption rate constant was set to 1000.0 h-1, causing a second reader to dispute the record.**
 
-The recorded absorption rate constant is 1000 h-1, which exceeds biologically plausible values for oral drugs. This substitution effectively assumes immediate absorption, contradicting the measured compound's profile. Additionally, apparent parameters CL/F and V1/F were used without explicit bioavailability estimates. Extracted — bedaquiline: CL/F 3.57 L/h, V1/F 337 L, kabs 1e+03 h-1.
+The record sets the bedaquiline absorption rate constant to 1000.0 h-1, a value the second reader could not confirm. Additionally, the second reader provided conflicting values for other parameters, such as 41.5 versus 31.7 for one field and 840.5 versus 557.8 for another. The model builder also defaulted the lag time and assumed complete bioavailability. Extracted — bedaquiline: CL/F 3.57 L/h, V1/F 337 L, kabs 1e+03 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 31.7, the second reading 41.5; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -122,15 +122,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=bedaquiline) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=bedaquiline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

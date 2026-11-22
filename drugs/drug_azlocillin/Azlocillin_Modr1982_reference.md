@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;azlocillin&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/&quot;},{&quot;label&quot;:&quot;Modr_1982 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azlocillin_Krupp1990_reference&quot;,&quot;label&quot;:&quot;Krupp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Azlocillin's clearance lacked an extracted value, leaving the record with a placeholder instead of a specific estimate.
+> Azlocillin’s model clearance (Cl) was left without an estimate and defaulted, despite a listed total-clearance value (CL) of 1.869 ml/sec, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Modr1982_reference" status="model_quarantined" stale="false" population="healthy persons" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Modr Z, Dvorácek K, Janků I, Krebs V. [Azlocillin--a new anti-pseudomonas peni
 
 ### Reviewer guidance
 
-**Azlocillin's clearance lacked an extracted value, leaving the record with a placeholder instead of a specific estimate.**
+**Azlocillin’s model clearance (Cl) was left without an estimate and defaulted, despite a listed total-clearance value (CL) of 1.869 ml/sec, so the record was held back.**
 
-The record lists a clearance of 1.869 ml/sec from the abstract, but the review found the parameter left at defaults. Consequently, no explicit clearance value was available for the model, resulting in quarantine. A second reader identified a half-life of 70.2 that was missing from the record. Extracted — azlocillin: CL 1.87 ml/sec, V 11.3 l.
+The record lists total clearance as 1.869 ml/sec and distribution volume as 11.34 l, but its deviations say clearance was defaulted; a library placeholder stood in, so the model was held back rather than published with an invented number. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. This record has no value for average biological half-life, while the second reader reports 70.2. Extracted — azlocillin: CL 1.87 ml/sec, V 11.3 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average biological half-life: this record has none, the second reading 70.2. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -116,13 +116,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -17,7 +17,7 @@ Jen JF, Cutler DL, Pai SM, Batra VK, Affrime MB, Zambas DN et al. Population pha
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · age group adult · n = &gt;&lt;=445.
+**Population:** cancer patients · condition cancer · age group adult.
 
 ## Model
 

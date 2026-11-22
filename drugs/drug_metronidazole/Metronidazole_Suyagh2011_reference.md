@@ -16,7 +16,7 @@ Suyagh M, Collier PS, Millership JS, Iheagwaram G, Millar M, Halliday HL et al. 
 
 ## Population and dosing
 
-**Population:** preterm neonates · condition necrotizing enterocolitis · age group neonate · n = &gt;=32.
+**Population:** preterm neonates · condition necrotizing enterocolitis · age group neonate.
 
 ## Model
 

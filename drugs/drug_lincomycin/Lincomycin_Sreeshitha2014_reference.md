@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;lincomycin&quot;,&quot;href&quot;:&quot;drugs/drug_lincomycin/&quot;},{&quot;label&quot;:&quot;Sreeshitha_2014 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lincomycin_Adam1979_reference&quot;,&quot;label&quot;:&quot;Adam_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lincomycin — `Lincomycin_Sreeshitha2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> This record was reviewed on 2026-11-07 16:28 UTC (Rejected), but the paper was screened again on 2026-10-13 11:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="lincomycin" model-id="Lincomycin_Sreeshitha2014_reference" status="needs_review" stale="true" population="buffalo calves" measured-compound="lincomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lincomycin" model-id="Lincomycin_Sreeshitha2014_reference" status="needs_review" stale="false" population="buffalo calves" measured-compound="lincomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sreeshitha Gouri S, Venkatachalam D, Dumka VK. Pharmacokinetics of lincomycin following single intravenous administration in buffalo calves. Tropical animal health and production 46(6):1099–1102 (2014).
@@ -39,7 +40,7 @@ Sreeshitha Gouri S, Venkatachalam D, Dumka VK. Pharmacokinetics of lincomycin fo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +50,9 @@ Sreeshitha Gouri S, Venkatachalam D, Dumka VK. Pharmacokinetics of lincomycin fo
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; aUC has no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lincomycin: t1/2α 0.06 h, AUC 41.6 μg mL(-1) h, t1/2z 3.3 h, MRT 4.32 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lincomycin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

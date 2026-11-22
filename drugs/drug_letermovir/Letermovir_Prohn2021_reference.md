@@ -4,11 +4,11 @@
 
 # letermovir — `Letermovir_Prohn2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:28 UTC (Rejected), but the paper was screened again on 2026-10-07 13:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the Asian effect on volume of distribution is -0.280, producing a negative volume in that covariate scenario.
+> The letermovir record was refused because its volume-of-distribution parameter V is −0.280, implicated in an implausible negative clearance or volume.
 
-<div class="pk-model-meta" hidden drug="letermovir" model-id="Letermovir_Prohn2021_reference" status="rejected" stale="true" population="healthy participants and allogeneic hematopoietic cell transplantation recipients" measured-compound="letermovir" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="letermovir" model-id="Letermovir_Prohn2021_reference" status="rejected" stale="false" population="healthy participants and allogeneic hematopoietic cell transplantation recipients" measured-compound="letermovir" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Prohn M, Viberg A, Zhang D, Dykstra K, Davis C, Macha S et al. Population pharmacokinetics of letermovir following oral and intravenous administration in healthy participants and allogeneic hematopoietic cell transplantation recipients. CPT: pharmacometrics & systems pharmacology 10(3):255–267 (2021).
@@ -48,7 +48,7 @@ Prohn M, Viberg A, Zhang D, Dykstra K, Davis C, Macha S et al. Population pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,13 +58,13 @@ Prohn M, Viberg A, Zhang D, Dykstra K, Davis C, Macha S et al. Population pharma
 
 ### Reviewer guidance
 
-**The record was rejected because the Asian effect on volume of distribution is -0.280, producing a negative volume in that covariate scenario.**
+**The letermovir record was refused because its volume-of-distribution parameter V is −0.280, implicated in an implausible negative clearance or volume.**
 
-The parameter for the Asian effect on volume of distribution has a value of -0.280, which is physiologically implausible and suggests an error in the base value or the covariate shift. The second reader disagreed with the extracted values for intercompartmental clearance, citing 4.41 L/h instead of the recorded 1.54 L/h, and omitted the bioavailability without CSA parameter. These discrepancies indicate uncertainty in the extracted pharmacokinetic parameters. Extracted — letermovir: CL 12.2 L/h, V1 7.45 L, V -0.28, n_transit 3.6, MTT 1.04 h, V2 25.8 L, Fab 0.938, FG 0.346, … (+3).
+The record reports V as −0.280, and its stated meaning identifies V as a volume-of-distribution parameter. The finding flags a negative clearance or volume at baseline or in a covariate scenario, but does not specify which scenario or whether the base value or a shift caused it. Separately, a reported unit could not be converted to SI; the record does not identify which parameter had that unit. Extracted — letermovir: CL 12.2 L/h, V1 7.45 L, V -0.28, n_transit 3.6, MTT 1.04 h, V2 25.8 L, Fab 0.938, FG 0.346, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has letermovir, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model fails to reproduce ensitrelvir's peak concentration and uses default absorption parameters unsupported by the paper's data.
+> Ensitrelvir model failed Cmax validation (0.00125 vs 0.943) due to missing absorption rate constants and unit conversion errors.
 
 <div class="pk-model-meta" hidden drug="ensitrelvir" model-id="Ensitrelvir_Ishibashi2024_mean" status="needs_review" stale="false" population="healthy participants and participants infected with SARS-CoV-2" measured-compound="ensitrelvir" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Ishibashi T, Shimizu R, Kubota R. Population Pharmacokinetics of Ensitrelvir in 
 
 ### Reviewer guidance
 
-**The model fails to reproduce ensitrelvir's peak concentration and uses default absorption parameters unsupported by the paper's data.**
+**Ensitrelvir model failed Cmax validation (0.00125 vs 0.943) due to missing absorption rate constants and unit conversion errors.**
 
-Simulated peak concentration was 0.00125, failing to match the reported 0.943 observed in the study population. The absorption rate constant and lag time were assigned library default values rather than estimates derived from this specific dataset. Additionally, the area under the curve values for day 1 and day 5 were swapped during data extraction, confusing the time-course profiles. Extracted — ensitrelvir: CL/F 0.201 L/h, V/F 14.5 L, Cmax 48.9 μg/mL, AUCt 910 μg*h/mL, Ct 34.8 μg/mL, AUC 1.23e+03 μg*h/mL.
+The model's simulated peak concentration of 0.00125 is drastically lower than the paper's reported 0.943, failing all tolerance checks. Absorption parameters were left at library defaults rather than using estimates from the source, invalidating the absorption profile. A unit mismatch occurred where concentration values could not be converted to SI, preventing valid parameter scaling. The second reader also disputed the extraction of area-under-the-curve and time-specific concentration values. Extracted — ensitrelvir: CL/F 0.201 L/h, V/F 14.5 L, Cmax 48.9 μg/mL, AUCt 910 μg*h/mL, Ct 34.8 μg/mL, AUC 1.23e+03 μg*h/mL.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[auc_d1].parameter_id`: this record has Q19, the second reading Q88; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -204,7 +204,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=ensitrelvir) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=1: not acceptable; deviation_id=2: not acceptable; deviation_id=3: not acceptable; deviation_id=4: not acceptable; deviation_id=5: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.643, 0 of 1 reader(s) agree | 0.643 | cross-check disputed by a second reader: verdict disputed, agreement 0.643, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.943 | 0.001245 | 0.0013 | μg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0234 | 0.001245 | 0.0532 | μg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.005 | 0.001245 | 0.249 | μg/mL→SI vs simulated kg/m3 |

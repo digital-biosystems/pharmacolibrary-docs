@@ -4,11 +4,11 @@
 
 # cefsulodin — `Cefsulodin_Gibson1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 11:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the intercompartmental clearance parameter has units of ml/min, mismatching the other mass-normalized parameters.
+> Cefsulodin’s renal clearance of 1.09 ml/kg/in and plasma concentration of 60% have incompatible dimensions, so the abstract-only record was rejected.
 
-<div class="pk-model-meta" hidden drug="cefsulodin" model-id="Cefsulodin_Gibson1982_reference" status="rejected" stale="true" population="adults with normal renal function and renal impairment" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefsulodin" model-id="Cefsulodin_Gibson1982_reference" status="rejected" stale="false" population="adults with normal renal function and renal impairment" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gibson TP, Granneman GR, Kallal JE, Sennello LT. Cefsulodin kinetics in renal impairment. Clinical pharmacology and therapeutics 31(5):602–608 (1982).
@@ -39,7 +39,7 @@ Gibson TP, Granneman GR, Kallal JE, Sennello LT. Cefsulodin kinetics in renal im
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Gibson TP, Granneman GR, Kallal JE, Sennello LT. Cefsulodin kinetics in renal im
 
 ### Reviewer guidance
 
-**The record was rejected because the intercompartmental clearance parameter has units of ml/min, mismatching the other mass-normalized parameters.**
+**Cefsulodin’s renal clearance of 1.09 ml/kg/in and plasma concentration of 60% have incompatible dimensions, so the abstract-only record was rejected.**
 
-The structural parameter labeled 'average plasma flow' (meaning intercompartmental clearance) is recorded as 122 ml/min, while all other pharmacokinetic parameters use mass-normalized units. This creates a dimensional inconsistency within the one-compartment model derived from the abstract. Additionally, several parameter values were disputed by a second reader, who identified them as null. Extracted — cefsulodin: Vss 0.26 l/kg, t1/2z 1.9 hr, CL 2.01 ml/kg/min, CLR 1.09 ml/kg/ in, Q 122 ml/min, Ct 60 %.
+The renal clearance unit does not express volume per time, and percent is dimensionless rather than a plasma concentration unit. Only the abstract was read, so reported summary statistics stood in for a fitted model. A second reader disputed extraction of the listed parameter values. Extracted — cefsulodin: Vss 0.26 l/kg, t1/2z 1.9 hr, CL 2.01 ml/kg/min, CLR 1.09 ml/kg/ in, Q 122 ml/min, Ct 60 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefsulodin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

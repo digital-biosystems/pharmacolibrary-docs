@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Isopropyl alcohol&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/&quot;},{&quot;label&quot;:&quot;Slaughter_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsopropylAlcohol_Rada2015_reference&quot;,&quot;label&quot;:&quot;Rada_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsopropylAlcohol_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsopropylAlcohol_Rada2015_reference&quot;,&quot;label&quot;:&quot;Rada_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Rada2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsopropylAlcohol_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_isopropyl_alcohol/IsopropylAlcohol_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Isopropyl alcohol clearance is recorded as 3033575.0 mL/hr/kg, an implausible magnitude indicating a unit or scale error, while volume of distribution lacks a value.
 
 <div class="pk-model-meta" hidden drug="Isopropyl alcohol" model-id="IsopropylAlcohol_Slaughter2014_reference" status="rejected" stale="false" population="humans (poisoning cases, children and adults)" measured-compound="Isopropyl alcohol" parameterization="mechanistic" topology="retention"></div>
 
@@ -44,7 +44,13 @@ Slaughter RJ, Mason RW, Beasley DM, Vale JA, Schep LJ. Isopropanol poisoning. Cl
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Isopropyl alcohol clearance is recorded as 3033575.0 mL/hr/kg, an implausible magnitude indicating a unit or scale error, while volume of distribution lacks a value.**
+
+The clearance for isopropyl alcohol is listed as 3033575.0 mL/hr/kg, which exceeds physiological limits by orders of magnitude. The volume of distribution parameter has no extracted value, meaning a placeholder would have been used. The model was also built from abstract statistics rather than a fitted model. Extracted — isopropyl alcohol: t1/2z 5.25 h, CL 3.03e+06 mL/hr/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

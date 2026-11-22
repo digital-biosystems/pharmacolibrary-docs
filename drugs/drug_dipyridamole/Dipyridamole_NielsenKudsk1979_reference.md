@@ -16,7 +16,7 @@ Nielsen-Kudsk F, Pedersen AK. Pharmacokinetics of dipyridamole. Acta pharmacolog
 
 ## Population and dosing
 
-**Population:** normal human volunteers · condition healthy · age group adult · n = &gt;=4.
+**Population:** normal human volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -34,7 +34,7 @@ Nielsen-Kudsk F, Pedersen AK. Pharmacokinetics of dipyridamole. Acta pharmacolog
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ Nielsen-Kudsk F, Pedersen AK. Pharmacokinetics of dipyridamole. Acta pharmacolog
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dipyridamole, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dipyridamole, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -85,18 +85,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` |  | 66 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.07 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` |  | 0.07 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic availability]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | dipyridamole | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | dipyridamole | unknown | mismatch |
+| `gpt-oss-120b` | `model.bioavailability.theta` |  | 66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.07 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 0.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic availability]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | dipyridamole | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | dipyridamole | unknown | mismatch |
 
 </details>
 

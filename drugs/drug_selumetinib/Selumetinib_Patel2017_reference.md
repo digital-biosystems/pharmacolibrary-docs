@@ -5,11 +5,11 @@
 
 # selumetinib — `Selumetinib_Patel2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-07 06:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant value of 0.622 was rejected because its unit, nmol/hr, is not a standard kinetic rate unit.
+> The absorption rate constant was recorded with an incompatible unit, causing the model to be rejected.
 
-<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2017_reference" status="rejected" stale="true" population="adults with advanced solid tumors and children with recurrent low-grade gliomas" measured-compound="selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2017_reference" status="rejected" stale="false" population="adults with advanced solid tumors and children with recurrent low-grade gliomas" measured-compound="selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Patel YT, Daryani VM, Patel P, Zhou D, Fangusaro J, Carlile DJ et al. Population Pharmacokinetics of Selumetinib and Its Metabolite N-desmethyl-selumetinib in Adult Patients With Advanced Solid Tumors and Children With Low-Grade Gliomas. CPT: pharmacometrics & systems pharmacology 6(5):305–314 (2017).
@@ -49,7 +49,7 @@ Patel YT, Daryani VM, Patel P, Zhou D, Fangusaro J, Carlile DJ et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.138). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.138). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,9 +59,9 @@ Patel YT, Daryani VM, Patel P, Zhou D, Fangusaro J, Carlile DJ et al. Population
 
 ### Reviewer guidance
 
-**The absorption rate constant value of 0.622 was rejected because its unit, nmol/hr, is not a standard kinetic rate unit.**
+**The absorption rate constant was recorded with an incompatible unit, causing the model to be rejected.**
 
-The record lists the absorption rate constant as 0.622 nmol/hr, which describes a mass flow rather than a reciprocal time rate constant. This dimension mismatch prevented the parameter from being expressed in standard pharmacokinetic units. Consequently, the model could not be constructed with a valid absorption rate constant. Extracted — selumetinib: kabs 0.622 nmol/hr, tlag 0.319 hr, CL 13.5 L/hr, V1 32.6 L, V2 55 L, Q 8.2 L/hr; N-desmethyl-selumetinib: V1 1.37 L, Q 240 L/hr, CL 49.5 L/hr, V2 413 L, CLfm 0.274 L/hr, fm 0.908.
+The record lists kabs with a value of 0.622 and units of nmol/hr. A dimension check flagged that these units, representing amount over time, conflict with the rate constant's requirement for inverse time. Additionally, a second reader could not confirm the values for the first six parameters, which were otherwise extracted from the paper. Extracted — selumetinib: kabs 0.622 nmol/hr, tlag 0.319 hr, CL 13.5 L/hr, V1 32.6 L, V2 55 L, Q 8.2 L/hr; N-desmethyl-selumetinib: V1 1.37 L, Q 240 L/hr, CL 49.5 L/hr, V2 413 L, CLfm 0.274 L/hr, fm 0.908.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has selumetinib, the second reading unknown; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 

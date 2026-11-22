@@ -4,11 +4,11 @@
 
 # colchicine — `Colchicine_Rochdi1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 03:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the macro-rate constant for colchicine's fast phase is listed with the units of a half-life.
+> Parameter λ1 has a unit of minutes instead of reciprocal time, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="colchicine" model-id="Colchicine_Rochdi1994_reference" status="rejected" stale="true" population="healthy adult males and elderly females" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="colchicine" model-id="Colchicine_Rochdi1994_reference" status="rejected" stale="false" population="healthy adult males and elderly females" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rochdi M, Sabouraud A, Girre C, Venet R, Scherrmann JM. Pharmacokinetics and absolute bioavailability of colchicine after i.v. and oral administration in healthy human volunteers and elderly subjects. European journal of clinical pharmacology 46(4):351–354 (1994).
@@ -40,7 +40,7 @@ Rochdi M, Sabouraud A, Girre C, Venet R, Scherrmann JM. Pharmacokinetics and abs
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Rochdi M, Sabouraud A, Girre C, Venet R, Scherrmann JM. Pharmacokinetics and abs
 
 ### Reviewer guidance
 
-**Record rejected because the macro-rate constant for colchicine's fast phase is listed with the units of a half-life.**
+**Parameter λ1 has a unit of minutes instead of reciprocal time, causing a dimension mismatch.**
 
-The parameter describing the fast phase of drug disposition is labeled 't1/2 lambda 1' and assigned a value of 9.2 min, which represents a time duration rather than a rate constant. This mismatch between the parameter's physical meaning and its recorded units prevented the structural validation from passing. Additionally, the record was derived solely from the abstract, so these summary statistics were used in place of fitted model parameters. A second reader also disagreed on the identification of the dose compound and primary analyte, though the unit error is the primary technical defect. Extracted — colchicine: λ1 9.2 min, t1/2β 1.2 h, V 6.7 l.kg-1, Vss 4.2 l.kg-1, CL 10.5 l.h-1, Cmax 5.5 ng.ml-1, Fab 44 %.
+The fast phase macro-rate constant λ1 is listed with a value of 9.2 minutes. A rate constant requires a unit of reciprocal time, not duration. This structural inconsistency was the primary reason for rejection. Extracted — colchicine: λ1 9.2 min, t1/2β 1.2 h, V 6.7 l.kg-1, Vss 4.2 l.kg-1, CL 10.5 l.h-1, Cmax 5.5 ng.ml-1, Fab 44 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has colchicine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

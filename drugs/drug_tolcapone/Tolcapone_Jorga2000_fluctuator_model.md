@@ -4,11 +4,11 @@
 
 # tolcapone — `Tolcapone_Jorga2000_fluctuator_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:32 UTC (Rejected), but the paper was screened again on 2026-10-06 14:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tolcapone record rejected because the peripheral volume of distribution value 1.08 uses an unrecognized unit, and the terminal half-life value 0.55 is dimensionally inconsistent.
+> Record rejected because tolcapone parameters include mislabeled exponents, a negative clearance value, and an unreachable model compartment.
 
-<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_fluctuator_model" status="rejected" stale="true" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_fluctuator_model" status="rejected" stale="false" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics of tolcapone in parkinsonian patients in dose finding studies. British journal of clinical pharmacology 49(1):39–48 (2000).
@@ -46,7 +46,7 @@ Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics 
 
 ### Reviewer guidance
 
-**Tolcapone record rejected because the peripheral volume of distribution value 1.08 uses an unrecognized unit, and the terminal half-life value 0.55 is dimensionally inconsistent.**
+**Record rejected because tolcapone parameters include mislabeled exponents, a negative clearance value, and an unreachable model compartment.**
 
-The peripheral volume of distribution (V2) is assigned a value of 1.08 with a unit that could not be converted to standard volumetric units, preventing proper parameter interpretation. Additionally, the parameter identified as the terminal elimination half-life carries a value of 0.55 with a volume unit, which is physically impossible for a time constant. A second reader also disputed the extraction of the 400 mg dose parameter value of 1.40 and the body-weight normalization exponent of 0.73. Extracted — tolcapone: CL 4.8 l h -1, V1 16 l, kabs 1.7 h, tlag 0.4 h, V2 1.08 V p, Frel 0.88 F, CLnorm 0.73 CL, CLH -0.81 CL, … (+3).
+Several parameters like the allometric exponent and hepatic clearance fraction are recorded with units of clearance or volume rather than being unitless. A negative value of -0.81 is assigned to the hepatic portion of total clearance, which is physiologically implausible. Additionally, the three-compartment structure includes a compartment with no connection to the dose input, rendering it unreachable. Extracted — tolcapone: CL 4.8 l h -1, V1 16 l, kabs 1.7 h, tlag 0.4 h, V2 1.08 V p, Frel 0.88 F, CLnorm 0.73 CL, CLH -0.81 CL, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of h dose400mg: this record has 1.40, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

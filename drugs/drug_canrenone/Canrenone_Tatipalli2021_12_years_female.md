@@ -17,7 +17,7 @@ Tatipalli M, Siripuram VK, Long T, Shuster D, Bernstein G, Martineau P et al. Mo
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = : 92.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 25, 100 mg, oral, multiple.
 

@@ -17,7 +17,7 @@ Boni J, Korth-Bradley J, McGoldrick K, Appel A, Cooper S. Pharmacokinetic and ph
 
 ## Population and dosing
 
-**Population:** patients after oral surgery · condition post-oral surgery pain · age group adult · n = &lt;|reserved_0|&gt;.
+**Population:** patients after oral surgery · condition post-oral surgery pain · age group adult.
 
 ## Model
 

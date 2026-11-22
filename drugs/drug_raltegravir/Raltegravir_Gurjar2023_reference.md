@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life of 2.95 hours mismatches the paper's 9.13 hours, and missing absorption delay causes deviations.
+> The model does not reproduce the paper's terminal half-life (paper 9.13, model 2.95).
 
 <div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Gurjar2023_reference" status="needs_review" stale="false" population="HIV-infected adults" measured-compound="raltegravir" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Gurjar R, Dickinson L, Carr D, Stöhr W, Bonora S, Owen A et al. Influence of UG
 
 ### Reviewer guidance
 
-**The model's terminal half-life of 2.95 hours mismatches the paper's 9.13 hours, and missing absorption delay causes deviations.**
+**The model does not reproduce the paper's terminal half-life (paper 9.13, model 2.95).**
 
-The record shows the simulated terminal half-life is 2.95 hours, failing to match the reported 9.13 hours. Additionally, the absorption delay parameter was not extracted, so a placeholder value was used, introducing unacceptable deviations. Extracted — raltegravir: CL/F 55.8 L/h, V1/F 194 L, Q/F 13 L/h, V2/F 117 L, kabs 1.12 h−1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — raltegravir: CL/F 55.8 L/h, V1/F 194 L, Q/F 13 L/h, V2/F 117 L, kabs 1.12 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=raltegravir) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | D1: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_cmax | reference | pass | 0.00144 | 0.001138 | 0.7905 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped |  | 0.001138 |  | non-numeric value |
 | T1_cmax | reference | skipped |  | 0.001138 |  | non-numeric value |

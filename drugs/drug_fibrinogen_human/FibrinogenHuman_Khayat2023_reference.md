@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fibrinogen, human&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/&quot;},{&quot;label&quot;:&quot;Khayat_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fibrinogen, human — `FibrinogenHuman_Khayat2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:52 UTC (Needs review), but the paper was screened again on 2026-10-05 19:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="fibrinogen, human" model-id="FibrinogenHuman_Khayat2023_reference" status="needs_review" stale="true" population="pediatric patients with congenital afibrinogenemia" measured-compound="fibrinogen" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fibrinogen, human" model-id="FibrinogenHuman_Khayat2023_reference" status="needs_review" stale="false" population="pediatric patients with congenital afibrinogenemia" measured-compound="fibrinogen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Khayat CD, Navarro-Puerto J, Ross CR, Subramanian K, Kalappanavar NK, Rucker K et al. Pharmacokinetics, efficacy and safety of a novel fibrinogen concentrate in pediatric patients with congenital afibrinogenemia. Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis 34(1):61–69 (2023).
@@ -40,7 +40,7 @@ Khayat CD, Navarro-Puerto J, Ross CR, Subramanian K, Kalappanavar NK, Rucker K e
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Khayat CD, Navarro-Puerto J, Ross CR, Subramanian K, Kalappanavar NK, Rucker K e
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Bandín-Vilar_2022, Hernández-Gago_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fibrinogen human: Cmax 1.3 g/l, t1/2z 60.6 h, V 5 L/kg, kabs 1.22 /h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of incremental in vivo recovery: this record has none, the second reading 1.86. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of incremental in vivo recovery: this record has none, the second reading 1.86. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -96,13 +96,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[incremental in vivo recovery]` |  | 1.86 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[incremental in vivo recovery]` |  | 1.86 | only_one_extracted |
 
 </details>
 

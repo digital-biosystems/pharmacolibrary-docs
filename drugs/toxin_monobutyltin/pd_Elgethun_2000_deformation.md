@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> No PD mechanism, potency, or rate parameters are stated for monobutyltin acting on shell deformation.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Elgethun_2000`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

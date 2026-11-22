@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> CL/F was not reported in the baclofen abstract, and the record was built from abstract-only data with no fitted model.
+> The abstract-only record lists an apparent clearance of 13.5 l/h for baclofen, but the second reader could not agree on this specific value.
 
 <div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Vourch2019_reference" status="needs_review" stale="false" population="ICU patients with unhealthy alcohol use" measured-compound="baclofen" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Vourc'h M, Dailly E, Hourmant Y, Bellouard R, Mahe PJ, Deslandes G et al. Pharma
 
 ## Population and dosing
 
-**Population:** ICU patients with unhealthy alcohol use · condition intensive care · age group adult · n = &gt;=20.
+**Population:** ICU patients with unhealthy alcohol use · condition intensive care · age group adult.
 
 ## Model
 
@@ -50,9 +50,9 @@ Vourc'h M, Dailly E, Hourmant Y, Bellouard R, Mahe PJ, Deslandes G et al. Pharma
 
 ### Reviewer guidance
 
-**CL/F was not reported in the baclofen abstract, and the record was built from abstract-only data with no fitted model.**
+**The abstract-only record lists an apparent clearance of 13.5 l/h for baclofen, but the second reader could not agree on this specific value.**
 
-The record derives from an abstract-only source where summary statistics stand in for a fitted model, and the second reader found no value for CL/F (null). The first extraction assigned a CL/F of 13.5 l/h, which is unsupported by the available text. Extracted — baclofen: tlag 0.37 h, kabs 2.2 h-1, V/F 105 L, CL/F 13.5 l/h.
+Because the model was constructed solely from the paper's abstract, reported summary statistics were used in place of a fitted model. The second reader disagreed with the extracted apparent clearance value of 13.5 l/h, providing a null reading instead. This disagreement regarding the clearance parameter resulted in a verdict of needs review with an agreement score of 0.875. Extracted — baclofen: tlag 0.37 h, kabs 2.2 h-1, V/F 105 L, CL/F 13.5 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[apparent clearance].value`: this record has 13.5, the second reading none. That field shapes the model, so the record is marked disputed.
 
@@ -131,15 +131,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=baclofen) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=baclofen) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

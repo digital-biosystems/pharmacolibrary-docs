@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Methyl cellusolve&quot;,&quot;href&quot;:&quot;drugs/toxin_methyl_cellusolve/&quot;},{&quot;label&quot;:&quot;Clarke_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethylCellusolve_Moss1985_reference&quot;,&quot;label&quot;:&quot;Moss_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethylCellusolve_Moss1985_reference&quot;,&quot;label&quot;:&quot;Moss_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_methyl_cellusolve/MethylCellusolve_Moss1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Record rejected for nonlinear topology; abstract-only extraction left metabolite compartments with zero compartments and unlinked elimination parameters.
 
 <div class="pk-model-meta" hidden drug="Methyl cellusolve" model-id="MethylCellusolve_Clarke1993_reference" status="needs_review" stale="false" population="pregnant CD-1 mouse" measured-compound="2-methoxyethanol" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -46,7 +46,13 @@ Clarke DO, Elswick BA, Welsch F, Conolly RB. Pharmacokinetics of 2-methoxyethano
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Record rejected for nonlinear topology; abstract-only extraction left metabolite compartments with zero compartments and unlinked elimination parameters.**
+
+Metabolite 2-methoxyacetic acid and ethylene glycol are defined as formed from central 2-methoxyethanol but both have zero compartments, creating an inconsistent nonlinear topology. The metabolic links depend on Vmax and Km, yet no numerical values for these parameters are present in the record. This structure results from an abstract-only extraction, which provided only summary statistics for the parent drug's volume and elimination rate constant. Extracted — methyl cellusolve: V 0.51 liters.kg-1, kel 0.124 hr-1.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

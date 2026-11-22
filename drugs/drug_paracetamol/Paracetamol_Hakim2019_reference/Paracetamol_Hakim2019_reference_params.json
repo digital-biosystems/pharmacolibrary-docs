@@ -13,11 +13,11 @@
   1000.0
  ],
  "parameters": {
-  "Cl": 0.00020611111111111112,
+  "Cl": 2.9444444444444445e-06,
   "F": 0.9,
   "MM": 0.151165,
   "Tlag": 252.0,
-  "VdPerKg": 0.020399999999999998,
+  "VdPerKg": 0.0002914285714285714,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.001,
@@ -27,10 +27,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 1803.814990967243
+  "central.C": 2135.795369504541
  },
  "reference_peaks": {
-  "central.C": 0.0005148478698624295
+  "central.C": 0.01163459728450267
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

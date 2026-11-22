@@ -4,11 +4,11 @@
 
 # lurasidone — `Lurasidone_Yang2026_pop`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:17 UTC (Rejected), but the paper was screened again on 2026-10-06 15:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the drug interaction clearance ratio parameter had a dimension mismatch.
+> The record was rejected because the drug interaction parameter θCL-VPA (40.5) has an incompatible unit of h⁻¹, implying it is a rate constant rather than a dimensionless clearance ratio.
 
-<div class="pk-model-meta" hidden drug="lurasidone" model-id="Lurasidone_Yang2026_pop" status="rejected" stale="true" population="Chinese psychiatric inpatients" measured-compound="lurasidone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lurasidone" model-id="Lurasidone_Yang2026_pop" status="rejected" stale="false" population="Chinese psychiatric inpatients" measured-compound="lurasidone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yang Y, Lu H, Xiao T, Ni X, Wang Z, Chen Y et al. Impact of valproate co-medication and age on lurasidone exposure: a population pharmacokinetic study and real-world evaluation in Chinese psychiatric inpatients. Frontiers in pharmacology 17:1810528 (2026).
@@ -38,7 +38,7 @@ Yang Y, Lu H, Xiao T, Ni X, Wang Z, Chen Y et al. Impact of valproate co-medicat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Yang Y, Lu H, Xiao T, Ni X, Wang Z, Chen Y et al. Impact of valproate co-medicat
 
 ### Reviewer guidance
 
-**Record rejected because the drug interaction clearance ratio parameter had a dimension mismatch.**
+**The record was rejected because the drug interaction parameter θCL-VPA (40.5) has an incompatible unit of h⁻¹, implying it is a rate constant rather than a dimensionless clearance ratio.**
 
-The clearance ratio parameter was assigned a value of 40.5 with units of h-1. This unit is incompatible with a clearance ratio, which should be dimensionless, causing a structural parameter failure. The second reader also disagreed on the extraction of the age coefficient and the dose compound identification. Extracted — lurasidone: CL/F 8.6 L·h-1, V/F 18.2 L, CL_ratio 40.5 h-1.
+The record defines θCL-VPA as a ratio of clearances, which should be dimensionless, but assigns it the unit h⁻¹. This dimensional conflict indicates the parameter was not properly characterized as a scalar ratio. Additionally, a second reader identified a missing age coefficient value of 22.5 and disagreed on the identification of the primary analyte and dose compound. Extracted — lurasidone: CL/F 8.6 L·h-1, V/F 18.2 L, CL_ratio 40.5 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lurasidone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

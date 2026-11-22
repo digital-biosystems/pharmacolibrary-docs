@@ -4,9 +4,9 @@
   "label": "Dose",
   "unit": "mg",
   "scale": 1000000.0,
-  "min": 1400.0,
+  "min": 350.0,
   "max": 5600.0,
-  "step": 42.0
+  "step": 52.5
  },
  {
   "key": "Cl",

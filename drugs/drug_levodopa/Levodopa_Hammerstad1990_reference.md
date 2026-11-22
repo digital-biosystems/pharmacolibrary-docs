@@ -5,11 +5,11 @@
 
 # levodopa — `Levodopa_Hammerstad1990_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> This record was reviewed on 2026-11-07 16:09 UTC (Needs review), but the paper was screened again on 2026-10-06 13:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Hammerstad1990_reference" status="needs_review" stale="true" population="Rhesus monkeys" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Hammerstad1990_reference" status="needs_review" stale="false" population="Rhesus monkeys" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hammerstad JP, Woodward WR, Gliessman P, Boucher B, Nutt JG. L-dopa pharmacokinetics in plasma and cisternal and lumbar cerebrospinal fluid of monkeys. Annals of neurology 27(5):495–499 (1990).
@@ -39,7 +39,7 @@ Hammerstad JP, Woodward WR, Gliessman P, Boucher B, Nutt JG. L-dopa pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

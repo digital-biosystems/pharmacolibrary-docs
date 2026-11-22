@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07A&quot;,&quot;href&quot;:&quot;atc/N07A.md&quot;},{&quot;label&quot;:&quot;pyridostigmine&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/&quot;},{&quot;label&quot;:&quot;Thakkar_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyridostigmine_Hosseini2018_reference&quot;,&quot;label&quot;:&quot;Hosseini_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyridostigmine_Seng2009_reference&quot;,&quot;label&quot;:&quot;Seng_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Seng2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyridostigmine_Thakkar2017_reference&quot;,&quot;label&quot;:&quot;Thakkar_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Seng_2009_AChE&quot;,&quot;label&quot;:&quot;Seng_2009 \u00b7 AChE&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/pd_Seng_2009_AChE.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyridostigmine_Seng2009_reference&quot;,&quot;label&quot;:&quot;Seng_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Seng2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyridostigmine_Hosseini2018_reference&quot;,&quot;label&quot;:&quot;Hosseini_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyridostigmine_Thakkar2017_reference&quot;,&quot;label&quot;:&quot;Thakkar_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Seng_2009_AChE&quot;,&quot;label&quot;:&quot;Seng_2009 \u00b7 AChE&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/pd_Seng_2009_AChE.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pyridostigmine — `Pyridostigmine_Thakkar2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The pyridostigmine model was held back because the reverse intercompartmental clearance lacked a reported value and relied on library defaults.
+> The record was rejected because the source paper studies 3,4-diaminopyridine, where pyridostigmine is merely a covariate, not the modeled drug.
 
-<div class="pk-model-meta" hidden drug="pyridostigmine" model-id="Pyridostigmine_Thakkar2017_reference" status="needs_review" stale="false" population="" measured-compound="pyridostigmine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pyridostigmine" model-id="Pyridostigmine_Thakkar2017_reference" status="rejected" stale="false" population="" measured-compound="pyridostigmine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Thakkar N, Guptill JT, Aleš K, Jacobus D, Jacobus L, Peloquin C et al. Population Pharmacokinetics/Pharmacodynamics of 3,4-Diaminopyridine Free Base in Patients With Lambert-Eaton Myasthenia. CPT: pharmacometrics & systems pharmacology 6(9):625-634 (2017).
@@ -29,7 +29,7 @@ Thakkar N, Guptill JT, Aleš K, Jacobus D, Jacobus L, Peloquin C et al. Populati
 <figure class="pk-models-diagram"><img src="drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference/Pyridostigmine_Thakkar2017_reference.svg" alt="Pyridostigmine_Thakkar2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Thakkar N, Guptill JT, Aleš K, Jacobus D, Jacobus L, Peloquin C et al. Populati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Thakkar N, Guptill JT, Aleš K, Jacobus D, Jacobus L, Peloquin C et al. Populati
 
 ### Reviewer guidance
 
-**The pyridostigmine model was held back because the reverse intercompartmental clearance lacked a reported value and relied on library defaults.**
+**The record was rejected because the source paper studies 3,4-diaminopyridine, where pyridostigmine is merely a covariate, not the modeled drug.**
 
-The two-compartment structure lists an intercompartmental clearance of 111.0 L/h, but the corresponding reverse parameter was not estimated from the review. Consequently, the record uses placeholder values for this parameter instead of specific estimates. These unsubstantiated defaults affect the simulated concentration profile and were deemed unacceptable for publication. Extracted — pyridostigmine: CL/F 90 L/h, V1/F 24 L, Q/F 111 L/h, kabs 0.9 h−1.
+The source text identifies the study as a population PK analysis of 3,4-diaminopyridine and its metabolite. Consequently, the extracted clearance and volume parameters do not describe pyridostigmine's pharmacokinetics. Additionally, the model builder defaulted the absorption lag time and intercompartmental rate constants instead of using explicit estimates. Extracted — pyridostigmine: CL/F 90 L/h, V1/F 24 L, Q/F 111 L/h, kabs 0.9 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -117,15 +117,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=pyridostigmine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | pyridostigmine (or metabolite) | paper about another drug |  | paper subject is not pyridostigmine: the paper is about another drug; this one is a co-medication or covariate: This is a population PK study of 3,4-diaminopyridine (and its metabolite), not pyridostigmine; pyridostigmine appears only as a comedication covariate. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=pyridostigmine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -137,62 +138,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference/Pyridostigmine_Thakkar2017_reference_modelica.zip" download>Pyridostigmine_Thakkar2017_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference/Pyridostigmine_Thakkar2017_reference_fmi.zip" download>Pyridostigmine_Thakkar2017_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference/Pyridostigmine_Thakkar2017_reference_matlab.zip" download>Pyridostigmine_Thakkar2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference/Pyridostigmine_Thakkar2017_reference_matlab_simbio.zip" download>Pyridostigmine_Thakkar2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference/Pyridostigmine_Thakkar2017_reference_sbml.zip" download>Pyridostigmine_Thakkar2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference/Pyridostigmine_Thakkar2017_reference_cellml.zip" download>Pyridostigmine_Thakkar2017_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.1812 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.00018 | kg |
-| input | model | `Cl` | 2.5e-05 | m3/s |
-| input | model | `VdPerKg` | 0.0003429 | m3/kg |
-| input | model | `k12` | 0.001285 | 1/s |
-| input | model | `ka` | 0.00025 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Thakkar N, Guptill JT, Aleš K, Jacobus D, Jacobus L, Peloquin C et al. Population Pharmacokinetics/Pharmacodynamics of 3,4-Diaminopyridine Free Base in Patients With Lambert-Eaton Myasthenia. CPT: pharmacometrics & systems pharmacology 6(9):625-634 (2017). [doi:10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218)
-
-**This record:** Pharmacolibrary, model `Pyridostigmine_Thakkar2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference>
-
-```bibtex
-@misc{pharmacolibrary_PyridostigmineThakkar2017reference,
-  title  = {{Pharmacolibrary model Pyridostigmine_Thakkar2017_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference},
-  note   = {Parameters from doi:10.1002/psp4.12218},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -5,11 +5,11 @@
 
 # gabapentin — `Gabapentin_Zhou2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:04 UTC (Rejected), but the paper was screened again on 2026-10-07 06:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Gabapentin's terminal elimination rate constant (kel) and slow phase macro-rate (λ2) are dimensionally inconsistent with the clearance (CL/F) unit.
+> The model was rejected due to a unit dimension mismatch on Q and an incorrect elimination rate constant value.
 
-<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Zhou2026_reference" status="rejected" stale="true" population="adults with chronic neuropathic pain" measured-compound="gabapentin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Zhou2026_reference" status="rejected" stale="false" population="adults with chronic neuropathic pain" measured-compound="gabapentin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Zhou L, Yamamoto PA, Walker M, Conchon Costa AC, Lauretti GR, Dach F et al. Gabapentin CNS exposure and analgesic response are modulated by OCT2 genotype in patients with chronic neuropathic pain. Frontiers in pharmacology 17:1760901 (2026).
@@ -45,7 +45,7 @@ Zhou L, Yamamoto PA, Walker M, Conchon Costa AC, Lauretti GR, Dach F et al. Gaba
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.955). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.955). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Zhou L, Yamamoto PA, Walker M, Conchon Costa AC, Lauretti GR, Dach F et al. Gaba
 
 ### Reviewer guidance
 
-**Gabapentin's terminal elimination rate constant (kel) and slow phase macro-rate (λ2) are dimensionally inconsistent with the clearance (CL/F) unit.**
+**The model was rejected due to a unit dimension mismatch on Q and an incorrect elimination rate constant value.**
 
-The clearance is listed as 10.16 L/h, while the terminal elimination rate constant is 0.53 h-1. A second reader disagreed on the value of the slow phase macro-rate constant, recording it as null instead of 1. The second reader also disagreed on the covariate effect parameter, placing the value 1.34 under a different parameter name than the record. Extracted — gabapentin: tlag 0.34 h, kabs 0.14 h-1, CL/F 10.2 L/h, V1/F 18.2 L, Q 6.58 L/h, V2/F 358 L, kel 0.53 h-1, λ2 1 h-1.
+The apparent intercompartmental clearance Q has conflicting unit dimensions in the review. The elimination rate constant for the terminal phase, kel, is reported as 0.53 h-1, but the value for the macro-rate constant λ2 is 1 h-1, which the second reader could not verify against the source. Extracted — gabapentin: tlag 0.34 h, kabs 0.14 h-1, CL/F 10.2 L/h, V1/F 18.2 L, Q 6.58 L/h, V2/F 358 L, kel 0.53 h-1, λ2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ke2: this record has 1, the second reading none. That field does not shape the model.
 

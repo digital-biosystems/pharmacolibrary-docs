@@ -5,11 +5,11 @@
 
 # nevirapine — `Nevirapine_Chou2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:09 UTC (Rejected), but the paper was screened again on 2026-10-07 17:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The 28% interpatient variability value was misclassified as a structural parameter, causing a dimension mismatch rejection.
+> The 28% interpatient variability value was mistakenly recorded as the apparent clearance mean for nevirapine, causing a dimension mismatch and rejection.
 
-<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Chou2010_reference" status="rejected" stale="true" population="HIV-infected Cambodian adults" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Chou2010_reference" status="rejected" stale="false" population="HIV-infected Cambodian adults" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Chou M, Bertrand J, Segeral O, Verstuyft C, Borand L, Comets E et al. Population pharmacokinetic-pharmacogenetic study of nevirapine in HIV-infected Cambodian patients. Antimicrobial agents and chemotherapy 54(10):4432–4439 (2010).
@@ -35,7 +35,7 @@ Chou M, Bertrand J, Segeral O, Verstuyft C, Borand L, Comets E et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Chou M, Bertrand J, Segeral O, Verstuyft C, Borand L, Comets E et al. Population
 
 ### Reviewer guidance
 
-**The 28% interpatient variability value was misclassified as a structural parameter, causing a dimension mismatch rejection.**
+**The 28% interpatient variability value was mistakenly recorded as the apparent clearance mean for nevirapine, causing a dimension mismatch and rejection.**
 
-The record defines the parameter as interpatient variability, yet a structural validation check flagged a dimension mismatch. This inconsistency likely stems from the record being built from the paper's abstract, which lacks full model details. A second reader also disagreed on the model's parameterization and the validity of the extracted value. Extracted — nevirapine: CL/F 28 %.
+The record assigns a 28% variability to the apparent clearance parameter, which requires volume-per-time units. This dimensional conflict confirms the value is a dispersion metric, not the central tendency of the clearance rate. The second reader also noted the abstract-only source prevented proper differentiation between variability and mean parameters. Extracted — nevirapine: CL/F 28 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

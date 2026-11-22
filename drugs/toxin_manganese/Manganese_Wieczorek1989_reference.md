@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Retention function parameters A1, A2, A3 are missing, preventing kinetic simulation despite reported half-lives and volume for manganese.
 
 <div class="pk-model-meta" hidden drug="Manganese" model-id="Manganese_Wieczorek1989_reference" status="needs_review" stale="false" population="male Long-Evans rats" measured-compound="Manganese" parameterization="mechanistic" topology="retention"></div>
 
@@ -49,7 +49,13 @@ Wieczorek H, Oberdörster G. Kinetics of inhaled 54MnCl2 aerosols: influence of 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Retention function parameters A1, A2, A3 are missing, preventing kinetic simulation despite reported half-lives and volume for manganese.**
+
+The model cannot be simulated because the retention function is incomplete, specifically lacking the A1, A2, and A3 coefficients required for the TK_Retention equation. Additionally, the single reported volume of distribution (0.013 L/kg) relies on a midpoint value from a printed range, as the model was constructed from abstract-only data rather than a full fitted parameter set. Extracted — manganese: t1/2α 0.2 days, t1/2γ 10.5 days, t1/2β 12.7 days, t1/2z 5.35 days, V 0.013 L/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

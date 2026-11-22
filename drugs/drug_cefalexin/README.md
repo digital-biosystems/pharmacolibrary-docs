@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefalexin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefalexin_Prados2014_base&quot;,&quot;label&quot;:&quot;Prados_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefalexin_Prados2014_final&quot;,&quot;label&quot;:&quot;Prados_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefalexin_Prados2014_base&quot;,&quot;label&quot;:&quot;Prados_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefalexin_Prados2014_final&quot;,&quot;label&quot;:&quot;Prados_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefalexin/Cefalexin_Prados2014_final.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # cefalexin
 
@@ -30,7 +30,7 @@ Cefalexin is a first-generation cephalosporin antibiotic used to treat bacterial
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Prados_2014 · V/F ·/kg</text><circle cx="399.0" cy="30.0" r="4" fill="#ef6c00"><title>Prados_2014 · V/F ·/kg: 39.55 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Prados_2014 · V/F ·/kg</text><circle cx="418.4" cy="46.0" r="4" fill="#2e7d32"><title>Prados_2014 · V/F ·/kg: 44.94 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Prados_2014 · V/F ·/kg</text><circle cx="399.0" cy="30.0" r="4" fill="#2e7d32"><title>Prados_2014 · V/F ·/kg: 39.55 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Prados_2014 · V/F ·/kg</text><circle cx="418.4" cy="46.0" r="4" fill="#2e7d32"><title>Prados_2014 · V/F ·/kg: 44.94 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -39,8 +39,8 @@ Cefalexin is a first-generation cephalosporin antibiotic used to treat bacterial
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="dog" data-age="mixed" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Prados_2014_base](drugs/drug_cefalexin/Cefalexin_Prados2014_base.md) | ▶ model + simulator | 1-compartment, oral | 4 | Prados AP et al., A population pharmacokinetic approach t…, Veterinary medicine interna… (2014) | [10.1155/2014/789353](https://doi.org/10.1155/2014/789353) |
-| <span class="pk-rf" hidden data-species="dog" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: T6_deviations</sub> | [↳ final](drugs/drug_cefalexin/Cefalexin_Prados2014_final.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
-| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Koroleva_1981_reference](drugs/drug_cefalexin/Cefalexin_Koroleva1981_reference.md) | — | 1-compartment (no model) | 2 | Koroleva VG et al., [Cephalexin pharmacokinetics], Antibiotiki (1981) | — |
+| <span class="pk-rf" hidden data-species="dog" data-age="mixed" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [↳ final](drugs/drug_cefalexin/Cefalexin_Prados2014_final.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Koroleva_1981_reference](drugs/drug_cefalexin/Cefalexin_Koroleva1981_reference.md) | — | 1-compartment (no model) | 2 | Koroleva VG et al., [Cephalexin pharmacokinetics], Antibiotiki (1981) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -48,18 +48,6 @@ Cefalexin is a first-generation cephalosporin antibiotic used to treat bacterial
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lemaire_2009_CFU](drugs/drug_cefalexin/pd_Lemaire_2009_CFU.md) | reduction of the inoculum ← cephalexin · direct sigmoid Emax (Hill) effect | — | Lemaire S et al., Activities of ceftobiprole and other ce…, Antimicrobial agents and ch… (2009) | [10.1128/AAC.01135-08](https://doi.org/10.1128/AAC.01135-08) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mitsuoka_2009_membrane_potential](drugs/drug_cefalexin/pd_Mitsuoka_2009_membrane_potential.md) | membrane potential ← L-cephalexin · direct sigmoid Emax (Hill) effect | — | Mitsuoka K et al., Direct evidence for efficient transport…, Biological & pharmaceutical… (2009) | [10.1248/bpb.32.1459](https://doi.org/10.1248/bpb.32.1459) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefalexin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A5` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor, `SLC47A1` substrate | DrugBank actor |
-| excretion | liver | `SLC47A1` substrate | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 19 matched, 15 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 1
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;apomorphine&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/&quot;},{&quot;label&quot;:&quot;Nasser_2024 \u00b7 sublingual&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Nasser_2024_UPDRS_Part_III&quot;,&quot;label&quot;:&quot;Nasser_2024 \u00b7 UPDRS Part III&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Nasser_2024_UPDRS_Part_III.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Patel_1995_single_pulse_stimulated_dopamine_release&quot;,&quot;label&quot;:&quot;Patel_1995 \u00b7 single pulse stimulated dopamine release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Patel_1995_single_pulse_stimulated_dopamine_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # apomorphine — `Apomorphine_Nasser2024_sublingual`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-07 09:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because apparent parameters were double-corrected for bioavailability, and a structural parameter had an unrecognized unit.
+> Apomorphine was rejected because its CL/F of 80.7 L/h is already bioavailability-adjusted, yet bioavailability is also reported as 0.206, implying a double correction.
 
-<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_sublingual" status="rejected" stale="true" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_sublingual" status="rejected" stale="false" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-based comparison of subcutaneous versus sublingual apomorphine administration in the treatment of motor fluctuations in Parkinson's disease. Journal of pharmacokinetics and pharmacodynamics 51(4):385–393 (2024).
@@ -45,7 +44,7 @@ Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-b
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +54,13 @@ Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-b
 
 ### Reviewer guidance
 
-**Rejected because apparent parameters were double-corrected for bioavailability, and a structural parameter had an unrecognized unit.**
+**Apomorphine was rejected because its CL/F of 80.7 L/h is already bioavailability-adjusted, yet bioavailability is also reported as 0.206, implying a double correction.**
 
-The model applies both an absorption rate constant and a fractional bioavailability parameter to apparent clearance and volume, causing a mathematical double correction. Additionally, a dimension mismatch was identified on a structural parameter because its reported unit could not be converted to standard SI units. A second reviewer disagreed with the extracted values for the dose compound and multiple specific parameters, finding them to be unknown. Extracted — apomorphine: MW 30.5 mg, AUCt 20 mg, tmax 20 min, CL/F 80.7 L/h, V/F 438 L, kabs 6.58 h−1, k12 0.613 h−1, k21 0.0048 h−1, … (+1).
+The record also gives apomorphine molecular weight as 30.53 mg, rather than the required mass per amount of substance, and AUCt as 20 mg, rather than a concentration–time quantity. A reported unit could not be converted to SI, leaving the affected parameter without an SI value. Extracted — apomorphine: MW 30.5 mg, AUCt 20 mg, tmax 20 min, CL/F 80.7 L/h, V/F 438 L, kabs 6.58 h−1, k12 0.613 h−1, k21 0.0048 h−1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apomorphine, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

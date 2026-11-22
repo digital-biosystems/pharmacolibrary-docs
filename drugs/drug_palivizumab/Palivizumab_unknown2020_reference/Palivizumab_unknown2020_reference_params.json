@@ -1,7 +1,7 @@
 {
  "dose_source": "library default",
  "model_id": "Palivizumab_unknown2020_reference",
- "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
@@ -12,15 +12,16 @@
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 1e-05,
+  "k12": 8.865248226950356e-08,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662077
+  "central.C": 660.0000000662042
  },
  "reference_peaks": {
-  "central.C": 0.0001495951713225449
+  "central.C": 0.0001495951345203314
  },
  "stop_time": 86400.0,
- "template": "PK_1C",
- "template_fmu": "PK_1C.fmu"
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
 }

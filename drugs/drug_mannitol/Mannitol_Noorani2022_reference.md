@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;mannitol&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/&quot;},{&quot;label&quot;:&quot;Noorani_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mannitol_Wei2022_reference&quot;,&quot;label&quot;:&quot;Wei_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/Mannitol_Wei2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mannitol_Wei2022_reference&quot;,&quot;label&quot;:&quot;Wei_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/Mannitol_Wei2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mannitol — `Mannitol_Noorani2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 16:34 UTC (Rejected), but the paper was screened again on 2026-10-04 16:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Mannitol clearance units do not match volume units, causing a structural dimension mismatch that led to rejection.
+> Mannitol clearance was rejected because the specific unit for sucrose efflux does not match the total clearance dimension.
 
-<div class="pk-model-meta" hidden drug="mannitol" model-id="Mannitol_Noorani2022_reference" status="rejected" stale="true" population="awake young adult mice" measured-compound="mannitol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mannitol" model-id="Mannitol_Noorani2022_reference" status="rejected" stale="false" population="awake young adult mice" measured-compound="mannitol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Noorani B, Chowdhury EA, Alqahtani F, Sajib MS, Ahn Y, Nozohouri E et al. A Semi-Physiological Three-Compartment Model Describes Brain Uptake Clearance and Efflux of Sucrose and Mannitol after IV Injection in Awake Mice. Pharmaceutical research 39(2):251–261 (2022).
@@ -38,7 +38,7 @@ Noorani B, Chowdhury EA, Alqahtani F, Sajib MS, Ahn Y, Nozohouri E et al. A Semi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Noorani B, Chowdhury EA, Alqahtani F, Sajib MS, Ahn Y, Nozohouri E et al. A Semi
 
 ### Reviewer guidance
 
-**Mannitol clearance units do not match volume units, causing a structural dimension mismatch that led to rejection.**
+**Mannitol clearance was rejected because the specific unit for sucrose efflux does not match the total clearance dimension.**
 
-The record lists clearance as 0.693 μl.min-1.g-1 while volume is 60.2 L, creating an incompatible dimension. Because the model was built from the abstract alone, these summary statistics stand in for a fitted model. The record lacks dose and elimination rate constant values, which the second reader identified as 10 and 0.146 respectively. Extracted — mannitol: CL 0.693 μl.min-1.g-1, V 60.2 L.
+The clearance parameter has a dimensionally incompatible unit of microliters per minute per gram. Additionally, the model lacks a dose value, and a second reader identified a missing elimination rate constant of 0.146. Extracted — mannitol: CL 0.693 μl.min-1.g-1, V 60.2 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose: this record has none, the second reading 10; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 10; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -94,14 +94,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[dose]` |  | 10 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kin of mannitol]` |  | 0.146 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kin of mannitol]` |  | 0.146 | only_one_extracted |
 
 </details>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dalteparin's clearance, volume of distribution, and absorption lag time lacked values, leaving placeholders in the model.
+> Dalteparin clearance, volume of distribution, and lag time were not extracted, so the model used placeholder values instead of study estimates and was held back.
 
 <div class="pk-model-meta" hidden drug="dalteparin" model-id="Dalteparin_Damle2021_reference" status="model_quarantined" stale="false" population="pediatric patients with venous thromboembolism" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Damle B, Jen F, Sherman N, Jani D, Sweeney K. Population Pharmacokinetic Analysi
 
 ### Reviewer guidance
 
-**Dalteparin's clearance, volume of distribution, and absorption lag time lacked values, leaving placeholders in the model.**
+**Dalteparin clearance, volume of distribution, and lag time were not extracted, so the model used placeholder values instead of study estimates and was held back.**
 
-The record lists dalteparin clearance at 929 mL/h and volume at 7180 mL, but flags that these values were not actually estimated. Consequently, default library placeholders stood in for the clearance, volume, and absorption lag time. This resulted in the model being quarantined to avoid publishing with invented numbers. Extracted — dalteparin: CL/F 929 mL/h, V/F 7.18e+03 mL, kabs 1.04 1/h.
+The record shows that no explicit values were obtained for dalteparin's clearance, volume of distribution, or absorption lag time, resulting in a model built on defaults rather than fitted parameters. Although apparent clearance and volume values are listed in the parameter table, these did not resolve the missing internal estimates required for the model structure. Additionally, a second reader could not confirm the drug or measured compound, identifying both as unknown, which contradicts the primary extraction. Extracted — dalteparin: CL/F 929 mL/h, V/F 7.18e+03 mL, kabs 1.04 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dalteparin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -140,14 +140,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -165,30 +166,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_matlab.zip" download>Dalteparin_Damle2021_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_matlab_simbio.zip" download>Dalteparin_Damle2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_sbml.zip" download>Dalteparin_Damle2021_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_cellml.zip" download>Dalteparin_Damle2021_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Damle B, Jen F, Sherman N, Jani D, Sweeney K. Population Pharmacokinetic Analysis of Dalteparin in Pediatric Patients With Venous Thromboembolism. Journal of clinical pharmacology 61(2):172–180 (2021). [doi:10.1002/jcph.1716](https://doi.org/10.1002/jcph.1716)
-
-**This record:** Pharmacolibrary, model `Dalteparin_Damle2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_dalteparin/Dalteparin_Damle2021_reference>
-
-```bibtex
-@misc{pharmacolibrary_DalteparinDamle2021reference,
-  title  = {{Pharmacolibrary model Dalteparin_Damle2021_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dalteparin/Dalteparin_Damle2021_reference},
-  note   = {Parameters from doi:10.1002/jcph.1716},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

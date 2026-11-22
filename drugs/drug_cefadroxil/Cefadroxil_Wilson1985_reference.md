@@ -4,11 +4,11 @@
 
 # cefadroxil — `Cefadroxil_Wilson1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 10:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance parameter value of 7.0 ml/min.kg is dimensionally inconsistent with the other parameters.
+> Cefadroxil model rejected because abstract-only derivation failed dimension checks for initial concentration and clearance units.
 
-<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Wilson1985_reference" status="rejected" stale="true" population="healthy adult mares" measured-compound="cefadroxil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Wilson1985_reference" status="rejected" stale="false" population="healthy adult mares" measured-compound="cefadroxil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wilson WD, Baggot JD, Adamson PJ, Hirsh DC, Hietala SK. Cefadroxil in the horse: pharmacokinetics and in vitro antibacterial activity. Journal of veterinary pharmacology and therapeutics 8(3):246–253 (1985).
@@ -39,7 +39,7 @@ Wilson WD, Baggot JD, Adamson PJ, Hirsh DC, Hietala SK. Cefadroxil in the horse:
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Wilson WD, Baggot JD, Adamson PJ, Hirsh DC, Hietala SK. Cefadroxil in the horse:
 
 ### Reviewer guidance
 
-**The clearance parameter value of 7.0 ml/min.kg is dimensionally inconsistent with the other parameters.**
+**Cefadroxil model rejected because abstract-only derivation failed dimension checks for initial concentration and clearance units.**
 
-The record was built from the abstract alone, so the summary statistics stand in for a fitted model. A dimensional mismatch was detected for the structural parameter corresponding to body clearance. The second reader also disagreed on the identified dose compound and primary analyte. Extracted — cefadroxil: C0 59.2 micrograms/ml, t1/2z 46 min, V/F 462 ml/kg, CL 7 ml/min.kg.
+The record was built from the abstract alone, so reported summary statistics stand in for a fitted model. A dimensional analysis flagged a mismatch for the extrapolated initial plasma concentration (59.2 micrograms/ml) and the body clearance (7.0 ml/min.kg). A second reader could not confirm any of the extracted parameter values, finding them all missing. Extracted — cefadroxil: C0 59.2 micrograms/ml, t1/2z 46 min, V/F 462 ml/kg, CL 7 ml/min.kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefadroxil, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

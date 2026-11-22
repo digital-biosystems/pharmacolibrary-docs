@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The isoflurane record is rejected because it lacks kinetic parameters like half-life or clearance, relying solely on the abstract's partition coefficient.
 
 <div class="pk-model-meta" hidden drug="Isoflurane" model-id="Isoflurane_Yasuda1990_reference" status="rejected" stale="false" population="young female swine" measured-compound="Isoflurane" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Yasuda N, Targ AG, Eger EI, Johnson BH, Weiskopf RB. Pharmacokinetics of desflur
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The isoflurane record is rejected because it lacks kinetic parameters like half-life or clearance, relying solely on the abstract's partition coefficient.**
+
+The model was constructed from the abstract alone, substituting reported summary statistics for fitted kinetic parameters. Consequently, the record contains only a blood-air partition coefficient of 0.35 and no rate constants, volumes, or clearance values. This absence of kinetic quantities prevents any pharmacokinetic modeling, leading to the rejection of the isoflurane record. Extracted — isoflurane: blood_air_partition 0.35.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

@@ -40,7 +40,7 @@ Phalloidin is one of a group of toxins from the death cap (Amanita phalloides) k
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Malgrange_1998_Stereocilia_bundles_of_sensory_hair_cells](drugs/toxin_phalloidin/pd_Malgrange_1998_Stereocilia_bundles_of_sensory_hair_cells.md) | Stereocilia bundles of sensory hair cells ← phalloidin · inhibition effect | — | Malgrange B et al., In Vitro Ototoxicity of aminoglycosides…, Toxicology in vitro : an in… (1998) | [10.1016/s0887-2333(98)00048-4](https://doi.org/10.1016/s0887-2333(98)00048-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">rat</span> | [Malgrange_1998_Stereocilia_bundles_of_sensory_hair_cells](drugs/toxin_phalloidin/pd_Malgrange_1998_Stereocilia_bundles_of_sensory_hair_cells.md) | Stereocilia bundles of sensory hair cells ← phalloidin · inhibition effect | — | Malgrange B et al., In Vitro Ototoxicity of aminoglycosides…, Toxicology in vitro : an in… (1998) | [10.1016/s0887-2333(98)00048-4](https://doi.org/10.1016/s0887-2333(98)00048-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

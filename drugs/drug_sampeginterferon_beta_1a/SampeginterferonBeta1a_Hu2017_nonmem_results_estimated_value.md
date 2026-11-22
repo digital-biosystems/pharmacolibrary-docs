@@ -4,11 +4,11 @@
 
 # sampeginterferon beta-1a — `SampeginterferonBeta1a_Hu2017_nonmem_results_estimated_value`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-06 23:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Peginterferon beta-1a record rejected because the allometric exponent unit was not recognized as a standard pharmacokinetic time unit.
+> The allometric exponent for peginterferon beta-1a has time units, conflicting with its dimensionless nature, causing rejection.
 
-<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2017_nonmem_results_estimated_value" status="rejected" stale="true" population="adults with relapsing multiple sclerosis" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2017_nonmem_results_estimated_value" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hu X, Hang Y, Cui Y, Zhang J, Liu S, Seddighzadeh A et al. Population-Based Pharmacokinetic and Exposure-Efficacy Analyses of Peginterferon Beta-1a in Patients With Relapsing Multiple Sclerosis. Journal of clinical pharmacology 57(8):1005–1016 (2017).
@@ -39,7 +39,7 @@ Hu X, Hang Y, Cui Y, Zhang J, Liu S, Seddighzadeh A et al. Population-Based Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Hu X, Hang Y, Cui Y, Zhang J, Liu S, Seddighzadeh A et al. Population-Based Phar
 
 ### Reviewer guidance
 
-**Peginterferon beta-1a record rejected because the allometric exponent unit was not recognized as a standard pharmacokinetic time unit.**
+**The allometric exponent for peginterferon beta-1a has time units, conflicting with its dimensionless nature, causing rejection.**
 
-The allometric exponent was extracted as 0.20 with a unit of h⁻¹, a format that could not be interpreted for dimensional analysis. This caused a dimension mismatch flag on the intercompartment clearance parameter Q2, which had a value of 484 L. The second reader also disagreed on the identity of the dose compound and primary analyte, marking both as unknown. Extracted — peginterferon beta-1a: CL 3.2 L/h, Q2 484 L, allometric_exponent 0.2 h⁻¹.
+The record lists the allometric exponent (θ8) with a value of 0.20 and units of h⁻¹, which is incorrect as allometric exponents are dimensionless. This unit conflict caused the parameter to fail dimensional consistency checks, leading to the record's rejection. Additionally, a reported unit for another parameter could not be converted to standard units, preventing value calculation. Extracted — peginterferon beta-1a: CL 3.2 L/h, Q2 484 L, allometric_exponent 0.2 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has peginterferon beta-1a, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

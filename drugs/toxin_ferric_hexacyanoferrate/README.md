@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Ferric hexacyanoferrate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FerricHexacyanoferrate_Qu2023_reference&quot;,&quot;label&quot;:&quot;Qu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FerricHexacyanoferrate_Qu2023_reference&quot;,&quot;label&quot;:&quot;Qu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Ferric hexacyanoferrate
 
@@ -33,7 +33,7 @@ Ferric hexacyanoferrate is a chemical compound of cyanide.
 
 ## Start here
 
-> **Qu_2023_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> mice. [Run it in the simulator](drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md?tab=Simulation) · [record](drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md)
+> **Qu_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> mice. [Run it in the simulator](drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md?tab=Simulation) · [record](drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -41,7 +41,7 @@ Ferric hexacyanoferrate is a chemical compound of cyanide.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Qu_2023_reference](drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Qu H et al., Uncovering the Fate and Risks of Intrav…, Particle and fibre toxicolo… (2023) | [10.1186/s12989-023-00529-7](https://doi.org/10.1186/s12989-023-00529-7) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: T1_t_half_terminal</sub> | [Qu_2023_reference](drugs/toxin_ferric_hexacyanoferrate/FerricHexacyanoferrate_Qu2023_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Qu H et al., Uncovering the Fate and Risks of Intrav…, Particle and fibre toxicolo… (2023) | [10.1186/s12989-023-00529-7](https://doi.org/10.1186/s12989-023-00529-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +61,7 @@ Ferric hexacyanoferrate is a chemical compound of cyanide.
 
 - **PubMed hits:** 85 matched, 66 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

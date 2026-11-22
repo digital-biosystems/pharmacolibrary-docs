@@ -26,28 +26,16 @@ Triptorelin is a gonadotropin-releasing hormone agonist used to treat conditions
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Müller_1997_group_i](drugs/drug_triptorelin/Triptorelin_Mller1997_group_i.md) | — | 1-compartment (no model) | 7 | Müller FO et al., Pharmacokinetics of triptorelin after i…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.t01-1-00592.x](https://doi.org/10.1046/j.1365-2125.1997.t01-1-00592.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [↳ group_ii](drugs/drug_triptorelin/Triptorelin_Mller1997_group_ii.md) | — | 1-compartment (no model) | 7 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [↳ group_iii](drugs/drug_triptorelin/Triptorelin_Mller1997_group_iii.md) | — | 1-compartment (no model) | 7 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [↳ group_iv](drugs/drug_triptorelin/Triptorelin_Mller1997_group_iv.md) | — | 1-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub> | [Müller_1997_group_i](drugs/drug_triptorelin/Triptorelin_Mller1997_group_i.md) | held back | 1-compartment, IV | 7 | Müller FO et al., Pharmacokinetics of triptorelin after i…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.t01-1-00592.x](https://doi.org/10.1046/j.1365-2125.1997.t01-1-00592.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub> | [↳ group_ii](drugs/drug_triptorelin/Triptorelin_Mller1997_group_ii.md) | held back | 1-compartment, IV | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub> | [↳ group_iii](drugs/drug_triptorelin/Triptorelin_Mller1997_group_iii.md) | held back | 1-compartment, IV | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub> | [↳ group_iv](drugs/drug_triptorelin/Triptorelin_Mller1997_group_iv.md) | held back | 1-compartment, IV | 7 |  |  |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Romero_2012_TST](drugs/drug_triptorelin/pd_Romero_2012_TST.md) | testosterone ← triptorelin · target-mediated drug disposition | — | Romero E et al., Pharmacokinetic/pharmacodynamic model o…, The Journal of pharmacology… (2012) | [10.1124/jpet.112.195560](https://doi.org/10.1124/jpet.112.195560) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=triptorelin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: GNRHR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -67,7 +55,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 4  ·  needs review 0  ·  rejected 0  ·  stale 4
+- **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

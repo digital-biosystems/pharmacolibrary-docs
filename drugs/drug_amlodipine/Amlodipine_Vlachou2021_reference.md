@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Vlachou_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Choi2020_reference&quot;,&quot;label&quot;:&quot;Choi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Choi2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Hong2021_mb1_estimates&quot;,&quot;label&quot;:&quot;Hong_2021_mb1_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Hong2021_mb1_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Hong2021_mb2_estimates&quot;,&quot;label&quot;:&quot;Hong_2021_mb2_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Hong2021_mb2_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_drug_amlodipine&quot;,&quot;label&quot;:&quot;Karalis_2023_drug_amlodipine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_drug_amlodipine.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Rohatagi2008_population_mean_se&quot;,&quot;label&quot;:&quot;Rohatagi_2008_population_mean_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Rohatagi2008_population_mean_se.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zuo2014_reference&quot;,&quot;label&quot;:&quot;Zuo_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zuo2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_1_to_3_years&quot;,&quot;label&quot;:&quot;van_2020_1_to_3_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_1_to_3_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_8_to_10_years&quot;,&quot;label&quot;:&quot;van_2020_8_to_10_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_8_to_10_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_point_estimate&quot;,&quot;label&quot;:&quot;van_2020_point_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_point_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_total&quot;,&quot;label&quot;:&quot;van_2020_total&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_total.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Heo_2016_DBP&quot;,&quot;label&quot;:&quot;Heo_2016 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Heo_2016_DBP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Heo_2016_SBP&quot;,&quot;label&quot;:&quot;Heo_2016 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Heo_2016_SBP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Darvari_2004_Jnet&quot;,&quot;label&quot;:&quot;Darvari_2004 \u00b7 Jnet&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Darvari_2004_Jnet.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Donnelly_1993_SBP&quot;,&quot;label&quot;:&quot;Donnelly_1993 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Donnelly_1993_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rohatagi_2008_SeDBP&quot;,&quot;label&quot;:&quot;Rohatagi_2008 \u00b7 \u0394SeDBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Rohatagi_2008_SeDBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tan_2025_total_worm_burden&quot;,&quot;label&quot;:&quot;Tan_2025 \u00b7 total worm burden&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Tan_2025_total_worm_burden.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Choi2020_reference&quot;,&quot;label&quot;:&quot;Choi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Choi2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_drug&quot;,&quot;label&quot;:&quot;Vlachou_2021_drug&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_drug.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Zuo2014_reference&quot;,&quot;label&quot;:&quot;Zuo_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zuo2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_point_estimate&quot;,&quot;label&quot;:&quot;van_2020_point_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_point_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Hong2021_mb1_estimates&quot;,&quot;label&quot;:&quot;Hong_2021_mb1_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Hong2021_mb1_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Hong2021_mb2_estimates&quot;,&quot;label&quot;:&quot;Hong_2021_mb2_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Hong2021_mb2_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Park2019_reference&quot;,&quot;label&quot;:&quot;Park_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Park2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Rohatagi2008_population_mean_se&quot;,&quot;label&quot;:&quot;Rohatagi_2008_population_mean_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Rohatagi2008_population_mean_se.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_1_to_3_years&quot;,&quot;label&quot;:&quot;van_2020_1_to_3_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_1_to_3_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_8_to_10_years&quot;,&quot;label&quot;:&quot;van_2020_8_to_10_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_8_to_10_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_van2020_total&quot;,&quot;label&quot;:&quot;van_2020_total&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_van2020_total.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_drug_amlodipine&quot;,&quot;label&quot;:&quot;Karalis_2023_drug_amlodipine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_drug_amlodipine.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Heo_2016_DBP&quot;,&quot;label&quot;:&quot;Heo_2016 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Heo_2016_DBP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Heo_2016_SBP&quot;,&quot;label&quot;:&quot;Heo_2016 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Heo_2016_SBP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Darvari_2004_Jnet&quot;,&quot;label&quot;:&quot;Darvari_2004 \u00b7 Jnet&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Darvari_2004_Jnet.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rohatagi_2008_SeDBP&quot;,&quot;label&quot;:&quot;Rohatagi_2008 \u00b7 \u0394SeDBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/pd_Rohatagi_2008_SeDBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amlodipine — `Amlodipine_Vlachou2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> This record was reviewed on 2026-11-07 14:24 UTC (Needs review), but the paper was screened again on 2026-11-03 10:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Amlodipine MTT value 13.28 h contradicts label 0.856, and apparent parameters lack explicit F estimates.
-
-<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Vlachou2021_reference" status="needs_review" stale="true" population="virtual subjects" measured-compound="amlodipine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Vlachou2021_reference" status="simulated" stale="false" population="virtual healthy adults" measured-compound="amlodipine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction of Bioequivalence. Materials (Basel, Switzerland) 14(3):555 (2021).
@@ -17,11 +15,9 @@ Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction
 
 ## Population and dosing
 
-**Population:** virtual subjects · age group adult · n = 24.
+**Population:** virtual healthy adults · condition healthy · age group adult.
 
 **Dosing:** 10, 12.5, 300 mg, oral, single.
-
-**Dosed compound ≠ measured compound:** dosed amlodipine/irbesartan/hydrochlorothiazide, measured amlodipine.
 
 ## Model
 
@@ -33,20 +29,18 @@ Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction
 <figure class="pk-models-diagram"><img src="drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference/Amlodipine_Vlachou2021_reference.svg" alt="Amlodipine_Vlachou2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| 0.856 | MTT | 13.28 |  |
-| Cl/F (ml/min) | CL/F | 575 | ml/min |
+| 4.69 | MTT | 0.1295 | min |
+| Cl/F (ml/min) | CL/F | 370 | ml/min |
 | V1/F (ml) | V/F | 1300 | ml |
-| Kd_R (min−1) | kel | 0.2776 | min−1 |
+| Kd_R (min−1) | kel | 0.2679 | min−1 |
 | Estimated “true” absorption rate constant | kabs | 0.01347 | 1/h |
-| Q/F (ml/min) | Q/F | 423.33 | ml/min |
+| Q/F (ml/min) | Q/F | 295 | ml/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,22 +50,20 @@ Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction
 
 ### Reviewer guidance
 
-**Amlodipine MTT value 13.28 h contradicts label 0.856, and apparent parameters lack explicit F estimates.**
+**Every check that could be run on this record passed.**
 
-The mean transit time parameter is labeled 0.856 but holds the value 13.28 h. Clearance, volume, and intercompartmental clearance are defined as apparent parameters with F assumed to be 1. The lag time was left at its library default without an explicit estimate. Extracted — amlodipine: MTT 13.3, CL/F 575 ml/min, V/F 1.3e+03 ml, kel 0.278 min−1, kabs 0.0135 1/h, Q/F 423 ml/min.
-
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| 0.856 | `Q81` · MTT | 13.28 |  |  |  |  | llm (0.6) | materials-14-00555-t004:row3:col0, materials-14-00555-t004:row3:col3 |
-| Cl/F (ml/min) | `Q27` · CL/F | 575 | ml/min | 9.583e-06 | m3/s | ml/min | exact (1) | Vlachou_2021_table_5:row2:col1, Vlachou_2021_table_5:row12:col1, Vlachou_2021_table_5:row24:col1 |
+| 4.69 | `Q81` · MTT | 0.1295 | min | 7.77 | s | h | llm (0.6) | materials-14-00555-t004:row10:col1 |
+| Cl/F (ml/min) | `Q27` · CL/F | 370 | ml/min | 6.167e-06 | m3/s | ml/min | exact (1) | Vlachou_2021_table_5:row2:col1, Vlachou_2021_table_5:row12:col1, Vlachou_2021_table_5:row24:col1 |
 | V1/F (ml) | `Q76` · V/F | 1300 | ml | 0.0013 | m3 | ml | exact (1) | Vlachou_2021_table_5:row3:col1 |
-| Kd_R (min−1) | `Q47` · kel | 0.2776 | min−1 | 0.004627 | 1/s | 1/min | llm (0.6) | Vlachou_2021_table_5:row5:col1, Vlachou_2021_table_5:row17:col1, Vlachou_2021_table_5:row29:col1 |
+| Kd_R (min−1) | `Q47` · kel | 0.2679 | min−1 | 0.004465 | 1/s | 1/min | llm (0.6) | Vlachou_2021_table_5:row5:col1, Vlachou_2021_table_5:row17:col1, Vlachou_2021_table_5:row29:col1 |
 | Estimated “true” absorption rate constant | `Q49` · kabs | 0.01347 | 1/h | 3.742e-06 | 1/s | 1/h | llm_confirmed (0.6) | Vlachou_2021_table_5:row6:col2, Vlachou_2021_table_5:row18:col2, Vlachou_2021_table_5:row30:col2 |
-| Q/F (ml/min) | `Q69` · Q/F | 423.33 | ml/min | 7.055e-06 | m3/s | ml/min | exact (1) | Vlachou_2021_table_5:row13:col1, Vlachou_2021_table_5:row25:col1 |
+| Q/F (ml/min) | `Q69` · Q/F | 295 | ml/min | 4.917e-06 | m3/s | ml/min | exact (1) | Vlachou_2021_table_5:row13:col1, Vlachou_2021_table_5:row25:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,10 +77,8 @@ The mean transit time parameter is labeled 0.856 but holds the value 13.28 h. Cl
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- column 'buffer' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - table representations disagree for 'm0'; source reconciliation required
 - table representations disagree for '10.2'; source reconciliation required
-- column 'drug' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - table representations disagree for '0.856'; source reconciliation required
 - table representations disagree for '7.68'; source reconciliation required
 - table representations disagree for '0.898'; source reconciliation required
@@ -103,31 +93,31 @@ The mean transit time parameter is labeled 0.856 but holds the value 13.28 h. Cl
 - table representations disagree for '5.07'; source reconciliation required
 - table representations disagree for '0.8874'; source reconciliation required
 - table representations disagree for '3.62'; source reconciliation required
-- dropped unlinked row (NIL): 'm0' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row1:col1', 'materials-14-00555-t004:row1:col3', 'materials-14-00555-t004:row7:col1', 'materials-14-00555-t004:row7:col3', 'materials-14-00555-t004:row13:col1', 'materials-14-00555-t004:row13:col3'])
+- dropped PD-category row 'm0' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['materials-14-00555-t004:row1:col1', 'materials-14-00555-t004:row1:col3', 'materials-14-00555-t004:row7:col1', 'materials-14-00555-t004:row7:col3', 'materials-14-00555-t004:row13:col1', 'materials-14-00555-t004:row13:col3'])
 - dropped unlinked row (NIL): '10.2' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row2:col1'])
-- dropped duplicate Q81 ('7.68', value '0.5734') — already have one for this compound
+- dropped unlinked row (NIL): '0.856' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row3:col0', 'materials-14-00555-t004:row3:col3'])
+- dropped unlinked row (NIL): '7.68' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row4:col1'])
 - dropped unlinked row (NIL): '0.898' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row5:col0', 'materials-14-00555-t004:row5:col3'])
 - dropped unlinked row (NIL): '2.93' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row6:col1'])
 - dropped unlinked row (NIL): '6.98' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row8:col1'])
-- dropped duplicate Q81 ('0.0234', value '2.97') — already have one for this compound
-- dropped unlinked row (NIL): '4.69' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row10:col1'])
-- dropped unlinked row (NIL): '0.7076' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row11:col0', 'materials-14-00555-t004:row11:col3'])
-- dropped duplicate Q81 ('1.26', value '0.0811') — already have one for this compound
-- dropped duplicate Q81 ('22.78', value '0.4534') — already have one for this compound
-- dropped duplicate Q81 ('0.9476', value '3.28') — already have one for this compound
+- dropped unlinked row (NIL): '0.0234' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row9:col0', 'materials-14-00555-t004:row9:col3'])
+- dropped duplicate Q81 ('0.7076', value '3.76') — already have one for this compound
+- dropped unlinked row (NIL): '1.26' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row12:col1'])
+- dropped unlinked row (NIL): '22.78' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row14:col1'])
+- dropped unlinked row (NIL): '0.9476' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row15:col0', 'materials-14-00555-t004:row15:col3'])
 - dropped unlinked row (NIL): '5.07' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row16:col1'])
-- dropped unlinked row (NIL): '0.8874' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row17:col0', 'materials-14-00555-t004:row17:col3'])
+- dropped duplicate Q81 ('0.8874', value '4.66') — already have one for this compound
 - dropped unlinked row (NIL): '3.62' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row18:col1'])
 - dropped unlinked row (NIL): 'Literature 1' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row1:col2'])
 - dropped unlinked row (NIL): 'In vitro fittings' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row4:col2', 'Vlachou_2021_table_5:row16:col2', 'Vlachou_2021_table_5:row28:col2'])
-- dropped duplicate Q49 ('Kat_R (min−1)', value '0.01351') — already have one for this compound
-- dropped duplicate Q81 ('Kat (min−1)', value '0.01349') — already have one for this compound
+- dropped duplicate Q47 ('Kat_R (min−1)', value '0.01496') — already have one for this compound
+- dropped duplicate Q47 ('Kat (min−1)', value '0.01493') — already have one for this compound
 - dropped unlinked row (NIL): 'Literature 2' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row10:col2'])
-- dropped duplicate Q49 ('Ka (min−1)', value '0.01288') — already have one for this compound
+- dropped duplicate Q49 ('Ka (min−1)', value '0.00507') — already have one for this compound
 - dropped unlinked row (NIL): 'Literature 3' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row22:col2'])
-- implicit units: 'Estimated “true” absorption rate constant' → 1/h (from the popPK convention: "The parameter is identified as the 'absorption rate constant' (Kat), which is a first-order rate constant. In population")
+- implicit units: '4.69' → min (from the paper text: "Table 1 caption states: 'Mean transit times (in minutes) at different regions of the gastrointestinal tract'")
+- implicit units: 'Estimated “true” absorption rate constant' → 1/h (from the popPK convention: 'No unit is stated in the text or table captions for the absorption rate constant. In population pharmacokinetics, first-')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amlodipine
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V1/F (ml)' is the general volume)
 - status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -140,7 +130,7 @@ The mean transit time parameter is labeled 0.856 but holds the value 13.28 h. Cl
 - table Vlachou_2021_table_5: ambiguous_numeric_format
 - table Vlachou_2021_table_5: ragged_grid
 - companion parameter table 5 transcribed (30 record(s))
-- LLM selected parameter table(s) 4, 5
+- LLM selected parameter table(s) 5
 
 ## Validation
 
@@ -156,10 +146,10 @@ The mean transit time parameter is labeled 0.856 but holds the value 13.28 h. Cl
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Vlachou_2021_table_5:row6:col2', 'Vlachou_2021_table_5:row18:col2', 'Vlachou_2021_table_5:row30:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Vlachou_2021_table_5:row13:col1', 'Vlachou_2021_table_5:row25:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Vlachou_2021_table_5:row3:col1'] |
-| C5_unit_missing_Q81 | fail | [time] |  | ['materials-14-00555-t004:row3:col0', 'materials-14-00555-t004:row3:col3'] |
+| C5_dimension_Q81 | pass | [time] |  | ['materials-14-00555-t004:row10:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 34.5 L/h | ['Vlachou_2021_table_5:row2:col1', 'Vlachou_2021_table_5:row12:col1', 'Vlachou_2021_table_5:row24:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 22.2 L/h | ['Vlachou_2021_table_5:row2:col1', 'Vlachou_2021_table_5:row12:col1', 'Vlachou_2021_table_5:row24:col1'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 1.3 L | ['Vlachou_2021_table_5:row3:col1'] |
 
 **Reviewer per-scenario checks:**
@@ -172,7 +162,8 @@ The mean transit time parameter is labeled 0.856 but holds the value 13.28 h. Cl
 | T3_output_variable | pass | C_central (measured=amlodipine) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -211,7 +202,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 9.583e-06 | m3/s |
+| input | model | `Cl` | 6.167e-06 | m3/s |
 | input | model | `VdPerKg` | 1.857e-05 | m3/kg |
 | input | model | `ka` | 3.742e-06 | 1/s |
 | input | subject | `weight` | 70 | kg |
@@ -252,4 +243,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamlodipine%5D%20Amlodipine_Vlachou2021_reference&body=Drug%3A%20amlodipine%0ARecord%3A%20Amlodipine_Vlachou2021_reference%0APaper%3A%20Vlachou_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 10:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:51 UTC</sub>

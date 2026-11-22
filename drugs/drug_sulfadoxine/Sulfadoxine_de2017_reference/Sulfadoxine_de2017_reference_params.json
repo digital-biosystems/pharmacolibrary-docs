@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Sulfadoxine_de2017_reference",
+ "molar_masses": {
+  "central.C": 0.310329
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1500.0
+ ],
+ "parameters": {
+  "Cl": 8.416666666666668e-09,
+  "F": 1.0,
+  "MM": 0.310329,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00020142857142857142,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0015,
+  "k12": 4.964539007092198e-07,
+  "k21": 3.910614525139665e-08,
+  "ka": 0.0001475,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13070.23153317105
+ },
+ "reference_peaks": {
+  "central.C": 0.06762828870776831
+ },
+ "stop_time": 6048000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

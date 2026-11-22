@@ -4,11 +4,11 @@
 
 # acetazolamide — `Acetazolamide_Yue2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:22 UTC (Rejected), but the paper was screened again on 2026-10-07 18:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Acetazolamide record rejected because a structural parameter unit could not be interpreted for comparison.
+> Acetazolamide Vmax of 1510 mg/h was rejected due to a unit dimension conflict.
 
-<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yue2013_reference" status="rejected" stale="true" population="peritoneal dialysis patients and healthy volunteers" measured-compound="acetazolamide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yue2013_reference" status="rejected" stale="false" population="peritoneal dialysis patients and healthy volunteers" measured-compound="acetazolamide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yue CS, Huynh HH, Raymond C, Charbonneau L, Roy L. Population pharmacokinetic and pharmacodynamic modeling of acetazolamide in peritoneal dialysis patients and healthy volunteers. Journal of pharmacy & pharmaceutical sciences : a publication of the Canadian Society for Pharmaceutical Sciences, Societe canadienne des sciences pharmaceutiques 16(1):89–98 (2013).
@@ -44,7 +44,7 @@ Yue CS, Huynh HH, Raymond C, Charbonneau L, Roy L. Population pharmacokinetic an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.957). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.957). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Yue CS, Huynh HH, Raymond C, Charbonneau L, Roy L. Population pharmacokinetic an
 
 ### Reviewer guidance
 
-**Acetazolamide record rejected because a structural parameter unit could not be interpreted for comparison.**
+**Acetazolamide Vmax of 1510 mg/h was rejected due to a unit dimension conflict.**
 
-The dialysis clearance unit was not recognized, preventing the system from validating the parameter's magnitude. A second reader also disputed a healthy volunteer parameter, citing a value of 80.3 where the record showed null. Extracted — acetazolamide: CLNR 1.53 L/h, V1 5.77 L, Q 10.2 L/h, V2 6.46 L, CL_HD 1.65 L/h, V3 6.14 L, Vmax 1.51e+03 mg/h, Km 12.4 mg/L.
+The Vmax parameter carries the unit mg/h, which conflicts with the model's expected dimension for this value. This missing unit conversion caused the record to be rejected. A second reader reported a healthy volunteer value of 80.3, which is not present in the current record. Extracted — acetazolamide: CLNR 1.53 L/h, V1 5.77 L, Q 10.2 L/h, V2 6.46 L, CL_HD 1.65 L/h, V3 6.14 L, Vmax 1.51e+03 mg/h, Km 12.4 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of healthy: this record has none, the second reading 80.3. That field does not shape the model.
 

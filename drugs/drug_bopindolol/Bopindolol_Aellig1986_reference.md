@@ -4,11 +4,11 @@
 
 # bopindolol — `Bopindolol_Aellig1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 00:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="bopindolol" model-id="Bopindolol_Aellig1986_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="hydrolysed bopindolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bopindolol" model-id="Bopindolol_Aellig1986_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="hydrolysed bopindolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Aellig WH, Nüesch E, Engel G, Grevel J, Niederberger W, Rosenthaler J. Relationship between plasma concentrations and cardiac beta-adrenoceptor blockade--a study with oral and intravenous bopindolol. British journal of clinical pharmacology 21(1):45–51 (1986).
@@ -16,7 +16,7 @@ Aellig WH, Nüesch E, Engel G, Grevel J, Niederberger W, Rosenthaler J. Relation
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · age group adult · n = &gt;=9.
+**Population:** healthy male volunteers · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed bopindolol, measured hydrolysed bopindolol.
 
@@ -37,7 +37,7 @@ Aellig WH, Nüesch E, Engel G, Grevel J, Niederberger W, Rosenthaler J. Relation
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Aellig WH, Nüesch E, Engel G, Grevel J, Niederberger W, Rosenthaler J. Relation
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bopindolol: t1/2z 4 h, Fab 70 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has hydrolysed bopindolol, the second reading bopindolol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

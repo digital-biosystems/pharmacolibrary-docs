@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model structure used a single-compartment framework instead of the reported parent-metabolite structure, causing a mismatch in simulated terminal half-life.
+> Record rejected because the model structure is a single central compartment instead of parent-metabolite, and the terminal half-life deviates from the paper.
 
 <div class="pk-model-meta" hidden drug="fruquintinib" model-id="Fruquintinib_Zhou2025_nct01975077" status="rejected" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -52,9 +52,9 @@ Zhou X, Yang X, Grinshpun B, Taylor A, Strong L, Dasari A et al. Population Phar
 
 ### Reviewer guidance
 
-**The model structure used a single-compartment framework instead of the reported parent-metabolite structure, causing a mismatch in simulated terminal half-life.**
+**Record rejected because the model structure is a single central compartment instead of parent-metabolite, and the terminal half-life deviates from the paper.**
 
-The record defines a metabolite M11, but the model builder's deviations forced an apparent parameterization with unity bioavailability. This structural conflict resulted in a simulated terminal half-life of 41.6 hours, which differed from the paper's reported 43.2 hours. Additionally, a second reader identified missing metabolite clearance and body-weight exponents not captured in the primary extraction. Extracted — fruquintinib: CL/F 0.808 L/h, V/F 48.5 L, kabs 2.52 per h, tlag 0.463 h.
+The model uses a single central compartment structure, but the record describes a parent-metabolite topology with metabolite M11. The terminal half-life check failed with a ratio of 151.2705, where the obtained value was 41.59938483434263 and the expected was 0.275. The second reader disagreed with the record on all parameters, including CL/F (0.808), Ka (2.52), and lag time (0.463). Extracted — fruquintinib: CL/F 0.808 L/h, V/F 48.5 L, kabs 2.52 per h, tlag 0.463 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl/f: this record has none, the second reading 0.808; it also differs on 11 more fields. That field does not shape the model.
 
@@ -204,7 +204,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | fail | Metabolite_C (measured=fruquintinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial, agreement 0.25, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | ≤2 | 1.994e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | ≤2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | pass | 43.2 | 41.6 | 0.9629 | h→SI vs simulated h |

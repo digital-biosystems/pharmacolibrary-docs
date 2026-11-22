@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;apremilast&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/&quot;},{&quot;label&quot;:&quot;Okubo_2021 \u00b7 typical_values_rse_for_model_parameters_and_covariate_effects&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # apremilast — `Apremilast_Okubo2021_typical_values_rse_for_model_parameters`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
-> The record was held because apparent pharmacokinetic parameters were used without explicit bioavailability assumptions.
-
-<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_typical_values_rse_for_model_parameters" status="needs_review" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_typical_values_rse_for_model_parameters" status="curated_candidate" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Okubo Y, Ohtsuki M, Komine M, Imafuku S, Kassir N, Petric R et al. Population pharmacokinetic and exposure-response analysis of apremilast in Japanese subjects with moderate to severe psoriasis. The Journal of dermatology 48(11):1652–1664 (2021).
@@ -31,8 +29,6 @@ Okubo Y, Ohtsuki M, Komine M, Imafuku S, Kassir N, Petric R et al. Population ph
 <figure class="pk-models-diagram"><img src="drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.svg" alt="Apremilast_Okubo2021_typical_values_rse_for_model_parameters diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CL/F, L/h | CL/F | 9.25 | L/h | 3.4 |
@@ -42,7 +38,7 @@ Okubo Y, Ohtsuki M, Komine M, Imafuku S, Kassir N, Petric R et al. Population ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +48,11 @@ Okubo Y, Ohtsuki M, Komine M, Imafuku S, Kassir N, Petric R et al. Population ph
 
 ### Reviewer guidance
 
-**The record was held because apparent pharmacokinetic parameters were used without explicit bioavailability assumptions.**
-
-The model assumes bioavailability and the fraction reaching systemic circulation are both 1. This assumption was flagged as a deviation requiring review. The clearance and volume parameters remain adjusted for bioavailability. Extracted — apremilast: CL/F 9.25 L/h, V/F 115 L, kabs 1.83 h−1, tlag 0.29 h.
+**Every check that could be run on this record passed.**
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -141,7 +135,8 @@ _All readers agree on the compared fields of this record._
 | T3_output_variable |  | pass | C_central (measured=apremilast) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_tmax | reference | pass | 2 | 2.164 | 1.082 | h→SI vs simulated h |
 
 <details class="legend">

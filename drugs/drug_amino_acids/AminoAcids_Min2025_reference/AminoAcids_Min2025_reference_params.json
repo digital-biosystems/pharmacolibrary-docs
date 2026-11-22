@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "AminoAcids_Min2025_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
@@ -19,7 +20,7 @@
   "central.C": 9274.215048985023
  },
  "reference_peaks": {
-  "central.C": 0.001594651314450258
+  "central.C": 0.00159465131445026
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

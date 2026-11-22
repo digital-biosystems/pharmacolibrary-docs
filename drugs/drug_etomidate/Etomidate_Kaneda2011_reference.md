@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;etomidate&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/&quot;},{&quot;label&quot;:&quot;Kaneda_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etomidate_Kaneda2011_reference&quot;,&quot;label&quot;:&quot;Kaneda_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Kaneda2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etomidate_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Shen2016_reference&quot;,&quot;label&quot;:&quot;Shen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Shen2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_van1983_reference&quot;,&quot;label&quot;:&quot;van_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_van1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Van1978_reference&quot;,&quot;label&quot;:&quot;Van_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Van1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ranna_2006_GABA_induced_currents&quot;,&quot;label&quot;:&quot;Ranna_2006 \u00b7 GABA-induced currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etomidate_Kaneda2011_reference&quot;,&quot;label&quot;:&quot;Kaneda_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Kaneda2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etomidate_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Shen2016_reference&quot;,&quot;label&quot;:&quot;Shen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Shen2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Van1978_reference&quot;,&quot;label&quot;:&quot;Van_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Van1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_van1983_reference&quot;,&quot;label&quot;:&quot;van_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_van1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ranna_2006_GABA_induced_currents&quot;,&quot;label&quot;:&quot;Ranna_2006 \u00b7 GABA-induced currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # etomidate — `Etomidate_Kaneda2011_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Kaneda2011_reference" status="simulated" stale="false" population="healthy volunteers" measured-compound="etomidate" parameterization="mechanistic" topology="2C"></div>
+> Second reader disagreements on central and peripheral volumes, intercompartmental and systemic clearances for etomidate resulted in partial agreement.
+
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Kaneda2011_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="etomidate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kaneda K, Yamashita S, Woo S, Han TH. Population pharmacokinetics and pharmacodynamics of brief etomidate infusion in healthy volunteers. Journal of clinical pharmacology 51(4):482–491 (2011).
@@ -15,7 +17,7 @@ Kaneda K, Yamashita S, Woo S, Han TH. Population pharmacokinetics and pharmacody
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;&lt;/th&gt;&lt;/tr&gt;.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Kaneda K, Yamashita S, Woo S, Han TH. Population pharmacokinetics and pharmacody
 <figure class="pk-models-diagram"><img src="drugs/drug_etomidate/Etomidate_Kaneda2011_reference/Etomidate_Kaneda2011_reference.svg" alt="Etomidate_Kaneda2011_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | volumes of distribution at central compartment | V1 | 4.45 | L |
@@ -36,7 +40,7 @@ Kaneda K, Yamashita S, Woo S, Han TH. Population pharmacokinetics and pharmacody
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Kaneda K, Yamashita S, Woo S, Han TH. Population pharmacokinetics and pharmacody
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Second reader disagreements on central and peripheral volumes, intercompartmental and systemic clearances for etomidate resulted in partial agreement.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the intercompartmental clearance, systemic clearance, and central volume of distribution. This lack of consensus on key parameters caused the record to be held back for review. Extracted — etomidate: V1 4.45 L, V2 74.9 L, CL 0.63 L/min, Q 3.16 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of intercompartmental clearance: this record has none, the second reading 3.16; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -125,14 +129,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=etomidate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=etomidate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.364, 0 of 1 reader(s) agree | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial, agreement 0.364, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

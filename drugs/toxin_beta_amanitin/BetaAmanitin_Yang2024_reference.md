@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;beta-Amanitin&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/&quot;},{&quot;label&quot;:&quot;Yang_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_10_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_2_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_5_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_5_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_5_mg_kg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Yang2024_reference&quot;,&quot;label&quot;:&quot;Yang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Yang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_10_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_10_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_2_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_2_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_2_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Bang2022_5_mg_kg&quot;,&quot;label&quot;:&quot;Bang_2022_5_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Bang2022_5_mg_kg.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BetaAmanitin_Yang2024_reference&quot;,&quot;label&quot;:&quot;Yang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_amanitin/BetaAmanitin_Yang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Abstract-only extraction assigned the midpoint of a printed half-life range to β-amanitin's terminal elimination half-life.
 
 <div class="pk-model-meta" hidden drug="beta-Amanitin" model-id="BetaAmanitin_Yang2024_reference" status="needs_review" stale="false" population="mice" measured-compound="beta-Amanitin" parameterization="mechanistic" topology="retention"></div>
 
@@ -45,7 +45,13 @@ Yang S, Wang X, Zheng F, Pei L, Liu J, Di B et al. Toxicokinetics of α- and β-
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Abstract-only extraction assigned the midpoint of a printed half-life range to β-amanitin's terminal elimination half-life.**
+
+The record contains only abstract-derived summary statistics rather than a fitted pharmacokinetic model. The terminal elimination half-life (2.6 h) for β-amanitin represents the midpoint of a range reported in the source, lacking precise fitted values for the distribution and elimination phases. Extracted — beta amanitin: t1/2z 2.6 h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

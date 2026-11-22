@@ -17,7 +17,7 @@ Silvola R, O'Kane A, Heathman M, Marotta H, Trussel H, Ray B et al. Population P
 
 ## Population and dosing
 
-**Population:** healthy adults postpartum · condition healthy · age group adult · n = &gt; 21.
+**Population:** healthy adults postpartum · condition healthy · age group adult.
 
 ## Model
 

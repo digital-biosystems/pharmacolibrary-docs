@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;toloxatone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Toloxatone_Vistelle1992_reference&quot;,&quot;label&quot;:&quot;Vistelle_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Toloxatone_Vistelle1992_reference&quot;,&quot;label&quot;:&quot;Vistelle_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # toloxatone
 
@@ -25,7 +25,7 @@ Toloxatone is an antidepressant and selective reversible inhibitor of monoamine 
 
 ## Start here
 
-> **Vistelle_1992_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> anaesthetized rabbits. [Run it in the simulator](drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md?tab=Simulation) · [record](drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md)
+> **Vistelle_1992_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> anaesthetized rabbits. [Run it in the simulator](drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md?tab=Simulation) · [record](drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,8 +33,8 @@ Toloxatone is an antidepressant and selective reversible inhibitor of monoamine 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span> | [Vistelle_1992_reference](drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Vistelle R et al., Toloxatone pharmacokinetics in the plas…, The Journal of pharmacy and… (1992) | [10.1111/j.2042-7158.1992.tb03576.x](https://doi.org/10.1111/j.2042-7158.1992.tb03576.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Benedetti_1982_reference](drugs/drug_toloxatone/Toloxatone_Benedetti1982_reference.md) | — | 1-compartment (no model) | 1 | Benedetti MS et al., Pharmacokinetics of toloxatone in man f…, Arzneimittel-Forschung (1982) | — |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: cross_check_disputed</sub> | [Vistelle_1992_reference](drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Vistelle R et al., Toloxatone pharmacokinetics in the plas…, The Journal of pharmacy and… (1992) | [10.1111/j.2042-7158.1992.tb03576.x](https://doi.org/10.1111/j.2042-7158.1992.tb03576.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Benedetti_1982_reference](drugs/drug_toloxatone/Toloxatone_Benedetti1982_reference.md) | — | 1-compartment (no model) | 1 | Benedetti MS et al., Pharmacokinetics of toloxatone in man f…, Arzneimittel-Forschung (1982) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -43,19 +43,6 @@ Toloxatone is an antidepressant and selective reversible inhibitor of monoamine 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Dos_2026_MAO_A_IC50](drugs/drug_toloxatone/pd_Dos_2026_MAO_A_IC50.md) | MAO-A activity inhibition by toloxatone ← toloxatone · inhibition effect | — | Dos Reis VEN et al., Evaluation of novel selective MAO-B inh…, Journal of pharmaceutical a… (2026) | [10.1016/j.jpba.2025.117200](https://doi.org/10.1016/j.jpba.2025.117200) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Dupont_1987_Inhibition_of_cytochrome_P_450_dependent_hydroxylation_O_deethylation_bufuralol_hydroxylation_antipyrine_hydroxylation_7_ethoxycoumarin_O_deethylation_in_rat_liver_microsomes](drugs/drug_toloxatone/pd_Dupont_1987_Inhibition_of_cytochrome_P_450_dependent_hydroxy.md) | Inhibition of cytochrome P-450 dependent hydroxylation/O-deethylation (bufuralol hydroxylation, antipyrine hydroxylation, 7-ethoxycoumarin O-deethylation) in rat liver microsomes ← toloxatone · inhibition effect | — | Dupont H et al., Inhibition of cytochrome P-450-dependen…, Biochemical pharmacology (1987) | [10.1016/0006-2952(87)90050-5](https://doi.org/10.1016/0006-2952(87)90050-5) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Zitova_2010_MAO](drugs/drug_toloxatone/pd_Zitova_2010_MAO.md) | MAO oxygen consumption inhibition by toloxatone ← toloxatone · inhibition effect | — | Zitova A et al., Analysis of activity and inhibition of…, Analytical biochemistry (2010) | [10.1016/j.ab.2009.10.029](https://doi.org/10.1016/j.ab.2009.10.029) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=toloxatone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `MAOA` inhibitor/target, `MAOB` inhibitor | DrugBank actor |
-| metabolism | liver | `MAOA` inhibitor/target | DrugBank actor |
-| metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
-| metabolism | small intestine | `MAOA` inhibitor/target | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -75,7 +62,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 20 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

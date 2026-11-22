@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03B&quot;,&quot;href&quot;:&quot;atc/B03B.md&quot;},{&quot;label&quot;:&quot;hydroxocobalamin&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/&quot;},{&quot;label&quot;:&quot;Houeto_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_reference&quot;,&quot;label&quot;:&quot;Houeto_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_reference&quot;,&quot;label&quot;:&quot;Houeto_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Hydroxocobalamin clearance was recorded as 0.31 L/h while a second reader identified 0.83 L/h, and absorption rate constants were left at library defaults.
+> Hydroxocobalamin absorption rate constant ka was missing, forcing assumed values, while the abstract-only record mislabels total clearance as renal clearance 0.31 L/h.
 
 <div class="pk-model-meta" hidden drug="hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="needs_review" stale="false" population="smoke inhalation victims" measured-compound="hydroxocobalamin" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Houeto P, Borron SW, Sandouk P, Imbert M, Levillain P, Baud FJ. Pharmacokinetics
 
 ## Population and dosing
 
-**Population:** smoke inhalation victims · condition cyanide poisoning · age group adult · n = &gt;=11.
+**Population:** smoke inhalation victims · condition cyanide poisoning · age group adult.
 
 ## Model
 
@@ -40,7 +40,7 @@ Houeto P, Borron SW, Sandouk P, Imbert M, Levillain P, Baud FJ. Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Houeto P, Borron SW, Sandouk P, Imbert M, Levillain P, Baud FJ. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Hydroxocobalamin clearance was recorded as 0.31 L/h while a second reader identified 0.83 L/h, and absorption rate constants were left at library defaults.**
+**Hydroxocobalamin absorption rate constant ka was missing, forcing assumed values, while the abstract-only record mislabels total clearance as renal clearance 0.31 L/h.**
 
-The model builder assigned a total clearance of 0.31 L/h, whereas a second reader extracted 0.83 L/h from the source. Additionally, the absorption rate constant and lag time were not reported in the paper and remained at library placeholders rather than estimated values. Because the record relied solely on the abstract, these summary statistics substituted for a fitted population model. Extracted — hydroxocobalamin: t1/2α 1.86 h, t1/2z 26.2 h, V/F 0.45 L/kg, CL 0.31 L/h.
+No explicit ka estimate was extracted, so placeholder values were used for absorption rather than data from this paper. The abstract provided only summary statistics, leading to apparent parameterization assumptions like F=1. A second reader disagrees on clearance, identifying 0.31 L/h as renal clearance and 0.83 L/h as total body clearance, conflicting with the record's single clearance value. Extracted — hydroxocobalamin: t1/2α 1.86 h, t1/2z 26.2 h, V/F 0.45 L/kg, CL 0.31 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of renal and total body clearance: this record has 0.31, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of renal and total body clearance: this record has 0.31, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -86,6 +86,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- derived CL/F=0.833364 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Houeto_1996_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -97,15 +98,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[renal and total body clearance]` | 0.31 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[renal clearance]` |  | 0.31 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total body clearance]` |  | 0.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal and total body clearance]` | 0.31 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` |  | 0.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` |  | 0.83 | only_one_extracted |
 
 </details>
 
@@ -133,15 +134,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=hydroxocobalamin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=hydroxocobalamin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -180,7 +183,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 8.611e-08 | m3/s |
+| input | model | `Cl` | 2.315e-07 | m3/s |
 | input | model | `VdPerKg` | 0.00045 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |

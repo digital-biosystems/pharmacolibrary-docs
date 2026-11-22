@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Vinblastine_Sethi1984_reference",
+ "molar_masses": {
+  "central.C": 0.8109741
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3.5,
+  7.0,
+  14.0
+ ],
+ "parameters": {
+  "Cl": 8.166666666666666e-06,
+  "F": 1.0,
+  "MM": 0.8109741,
+  "VdPerKg": 0.00021,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.5e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662144
+ },
+ "reference_peaks": {
+  "central.C": 4.365748210697978e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

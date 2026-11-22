@@ -16,7 +16,7 @@ Brandon AM, Williams JM, Davis JL, Martin EG, Capper AM, Crabtree NE. Evaluation
 
 ## Population and dosing
 
-**Population:** healthy adult horses · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy adult horses · condition healthy · age group adult.
 
 **Dosing:** 2.8, 5.6 mg, iv, multiple, every 24 h.
 

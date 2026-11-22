@@ -4,11 +4,11 @@
 
 # mitomycin — `Mitomycin_Kuzuya1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:48 UTC (Rejected), but the paper was screened again on 2026-10-06 18:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Kuzuya1994_reference" status="needs_review" stale="true" population="patients with malignancies confined to the peritoneal space" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Kuzuya1994_reference" status="needs_review" stale="false" population="patients with malignancies confined to the peritoneal space" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kuzuya T, Yamauchi M, Ito A, Hasegawa M, Hasegawa T, Nabeshima T. Pharmacokinetic characteristics of 5-fluorouracil and mitomycin C in intraperitoneal chemotherapy. The Journal of pharmacy and pharmacology 46(8):685–689 (1994).
@@ -34,7 +34,7 @@ Kuzuya T, Yamauchi M, Ito A, Hasegawa M, Hasegawa T, Nabeshima T. Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Kuzuya T, Yamauchi M, Ito A, Hasegawa M, Hasegawa T, Nabeshima T. Pharmacokineti
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only volume was extracted — no clearance.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: Kp 1e+03 times those in serum.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has mitomycin C, the second reading 5-fluorouracil and mitomycin C; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

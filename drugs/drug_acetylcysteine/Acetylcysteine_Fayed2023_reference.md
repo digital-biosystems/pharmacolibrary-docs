@@ -16,7 +16,7 @@ Fayed MS, Brooks J, Seaquist ER, Kumar A, Moheet A, Eberly L et al. Population P
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 10.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

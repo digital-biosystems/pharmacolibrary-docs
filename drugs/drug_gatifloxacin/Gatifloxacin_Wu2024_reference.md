@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;gatifloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/&quot;},{&quot;label&quot;:&quot;Wu_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gatifloxacin_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gatifloxacin_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Tasso_2011_bactericidal_activity&quot;,&quot;label&quot;:&quot;Tasso_2011 \u00b7 bactericidal activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/pd_Tasso_2011_bactericidal_activity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gatifloxacin_Peloquin2008_reference&quot;,&quot;label&quot;:&quot;Peloquin_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Peloquin2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gatifloxacin_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gatifloxacin_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tasso_2011_bactericidal_activity&quot;,&quot;label&quot;:&quot;Tasso_2011 \u00b7 bactericidal activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/pd_Tasso_2011_bactericidal_activity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gatifloxacin — `Gatifloxacin_Wu2024_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-<div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Wu2024_reference" status="not_modelled" stale="false" population="Sprague-Dawley rats" measured-compound="gatifloxacin" parameterization="mechanistic" topology="1C"></div>
+> A second reader disputed the extracted gatifloxacin clearance and volume of distribution values, preventing agreement on the record.
+
+<div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Wu2024_reference" status="needs_review" stale="false" population="Sprague-Dawley rats" measured-compound="gatifloxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wu RL, Wang WC, Cheng CL, Tsai CY, Chou CH. Determination of Nemonoxacin in Small Volumes of Rat Plasma and Bile by a Novel HPLC-Fluorescence Assay and Its Application to Disposition and Biliary Excretion Kinetics. Drug design, development and therapy 18:5947–5960 (2024).
@@ -31,7 +33,7 @@ Wu RL, Wang WC, Cheng CL, Tsai CY, Chou CH. Determination of Nemonoxacin in Smal
 <figure class="pk-models-diagram"><img src="drugs/drug_gatifloxacin/Gatifloxacin_Wu2024_reference/Gatifloxacin_Wu2024_reference.svg" alt="Gatifloxacin_Wu2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +42,7 @@ Wu RL, Wang WC, Cheng CL, Tsai CY, Chou CH. Determination of Nemonoxacin in Smal
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.353). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +52,13 @@ Wu RL, Wang WC, Cheng CL, Tsai CY, Chou CH. Determination of Nemonoxacin in Smal
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**A second reader disputed the extracted gatifloxacin clearance and volume of distribution values, preventing agreement on the record.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 29.9, the second reading 29.9; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+The second reader disagreed with the recorded clearance of 24.6 mL/min/kg, providing a value of 0.18 instead. For the volume of distribution, the second reader recorded 2.8 while the primary record listed 7101.8 mL/kg. The second reader also disagreed on other parameters, including a value of 1.1 versus 50.7 and 9.7 versus 12.8. Extracted — gatifloxacin: CL 24.6 mL/min/kg, V 7.1e+03 mL/kg.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 29.9, the second reading 29.9; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -81,23 +85,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.353 (6/17 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.412 (7/17 fields) | 10 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q19]` | 29.9 | 29.9 | mismatch |
-| `gpt-oss:120b` | `values[Q21]` | 50.7 | 1.1 | mismatch |
-| `gpt-oss:120b` | `values[Q22]` | 24.6 | 0.18 | mismatch |
-| `gpt-oss:120b` | `values[Q33]` |  | 34 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q43]` |  | 84.6 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q57]` | 12.8 | 9.7 | mismatch |
-| `gpt-oss:120b` | `values[Q59]` | 12.8 | 13 | mismatch |
-| `gpt-oss:120b` | `values[Q61]` | 7101.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q65]` | 7101.8 | 2.8 | mismatch |
-| `gpt-oss:120b` | `values[Q84]` |  | 18 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q87]` |  | 48.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 29.9 | 29.9 | mismatch |
+| `gpt-oss-120b` | `values[Q21]` | 50.7 | 1.1 | mismatch |
+| `gpt-oss-120b` | `values[Q22]` | 24.6 | 0.18 | mismatch |
+| `gpt-oss-120b` | `values[Q33]` |  | 34 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q43]` |  | 84.6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 12.8 | 9.7 | mismatch |
+| `gpt-oss-120b` | `values[Q61]` | 7101.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q65]` | 7101.8 | 2.8 | mismatch |
+| `gpt-oss-120b` | `values[Q84]` |  | 18 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` |  | 48.8 | only_one_extracted |
 
 </details>
 
@@ -123,12 +126,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | note |
-|---|---|---|
-| T0_analyte_identity | pass | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped | no covariate effects in record |
-| T3_param_coverage | skipped | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=gatifloxacin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.412, 0 of 1 reader(s) agree | 0.412 | cross-check disputed by a second reader: verdict disputed, agreement 0.412, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -17,7 +17,7 @@ Goulenok T, Seurat J, Selle A, Jullien V, Leflon-Guibout V, Grall N et al. Pharm
 
 ## Population and dosing
 
-**Population:** patients with staphylococcal osteoarticular infections · condition staphylococcal osteoarticular infection · age group adult · n = ?19?.
+**Population:** patients with staphylococcal osteoarticular infections · condition staphylococcal osteoarticular infection · age group adult.
 
 ## Model
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Mizolastine absorption rate constant was defaulted, and apparent clearance was recorded as 0.1 L/h for children 6 to 12 years old.
+> The absorption rate constant (ka) and Tlag lack source data, forcing the use of library defaults for mizolastine's first-order depot input.
 
 <div class="pk-model-meta" hidden drug="mizolastine" model-id="Mizolastine_Mentr2001_reference" status="needs_review" stale="false" population="children 6 to 12 years old" measured-compound="mizolastine" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Mentré F, Dubruc C, Thénot JP. Population pharmacokinetic analysis and optimiz
 
 ## Population and dosing
 
-**Population:** children 6 to 12 years old · age group child · n = &gt;=28.
+**Population:** children 6 to 12 years old · age group child.
 
 ## Model
 
@@ -48,9 +48,9 @@ Mentré F, Dubruc C, Thénot JP. Population pharmacokinetic analysis and optimiz
 
 ### Reviewer guidance
 
-**Mizolastine absorption rate constant was defaulted, and apparent clearance was recorded as 0.1 L/h for children 6 to 12 years old.**
+**The absorption rate constant (ka) and Tlag lack source data, forcing the use of library defaults for mizolastine's first-order depot input.**
 
-The record relies on abstract-only summary statistics, lacking explicit estimates for the absorption rate constant and lag time. Apparent clearance is reported as 0.1 L/h, which differs from the 0.49 L/h noted by the second reader. The apparent parameterization assumes complete bioavailability, leaving the absorption phase uncharacterized by the source text. Extracted — mizolastine: V/F 0.28 L/kg, CL/F 0.1 L/h.
+The record relies on abstract-only summary statistics, replacing a fitted model with apparent parameters like V/F (0.28 L/kg) and CL/F (0.1 L/h). Because the paper did not report absorption details, the model builder defaulted ka and Tlag instead of using explicit estimates. This lack of source-supported absorption values invalidates the simulation profile, as these parameters are not justified by the provided text. Extracted — mizolastine: V/F 0.28 L/kg, CL/F 0.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tabs: this record has none, the second reading 0.49. That field does not shape the model.
 
@@ -128,15 +128,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=mizolastine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=mizolastine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

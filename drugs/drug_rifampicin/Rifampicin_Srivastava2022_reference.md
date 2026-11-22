@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;rifampicin&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/&quot;},{&quot;label&quot;:&quot;Srivastava_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifampicin_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifampicin_Ngo2024_reference&quot;,&quot;label&quot;:&quot;Ngo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Ngo2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifampicin_Srivastava2022_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Srivastava2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Srivastava_2022_CFU&quot;,&quot;label&quot;:&quot;Srivastava_2022 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/pd_Srivastava_2022_CFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifampicin_Srivastava2022_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Srivastava2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rifampicin_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srivastava_2022_CFU&quot;,&quot;label&quot;:&quot;Srivastava_2022 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/pd_Srivastava_2022_CFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifampicin — `Rifampicin_Srivastava2022_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-<div class="pk-model-meta" hidden drug="rifampicin" model-id="Rifampicin_Srivastava2022_reference" status="not_modelled" stale="false" population="in vitro hollow-fiber system" measured-compound="rifampicin" parameterization="mechanistic" topology="1C"></div>
+> Rifampicin bioavailability and lag time were left at library defaults instead of using values from the paper, and a second reader disputed the clearance and volume estimates.
+
+<div class="pk-model-meta" hidden drug="rifampicin" model-id="Rifampicin_Srivastava2022_reference" status="needs_review" stale="false" population="in vitro hollow-fiber system" measured-compound="rifampicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Srivastava S, Boorgula GD, Wang JY, Huang HL, Howe D, Gumbo T et al. Rifampin Pharmacokinetics/Pharmacodynamics in the Hollow-Fiber Model of Mycobacterium kansasii Infection. Antimicrobial agents and chemotherapy 66(4):e0232021 (2022).
@@ -31,7 +33,7 @@ Srivastava S, Boorgula GD, Wang JY, Huang HL, Howe D, Gumbo T et al. Rifampin Ph
 <figure class="pk-models-diagram"><img src="drugs/drug_rifampicin/Rifampicin_Srivastava2022_reference/Rifampicin_Srivastava2022_reference.svg" alt="Rifampicin_Srivastava2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -41,7 +43,7 @@ Srivastava S, Boorgula GD, Wang JY, Huang HL, Howe D, Gumbo T et al. Rifampin Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +53,13 @@ Srivastava S, Boorgula GD, Wang JY, Huang HL, Howe D, Gumbo T et al. Rifampin Ph
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Rifampicin bioavailability and lag time were left at library defaults instead of using values from the paper, and a second reader disputed the clearance and volume estimates.**
+
+The record lacks explicit estimates for rifampicin bioavailability (F) and lag time, relying on placeholder defaults that are not supported by the source text. Additionally, a second reader disagreed with the reported clearance and volume of distribution values, indicating potential extraction errors for these key pharmacokinetic parameters. Extracted — rifampicin: CL 23 L/h, V 286 L, kabs 1.61 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q307: this record has 3.28, the second reading 4.072; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -125,12 +129,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | note |
-|---|---|---|
-| T0_analyte_identity | pass | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped | no covariate effects in record |
-| T3_param_coverage | skipped | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=rifampicin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.533, 0 of 1 reader(s) agree | 0.533 | cross-check disputed by a second reader: verdict disputed, agreement 0.533, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Glycolic acid&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/&quot;},{&quot;label&quot;:&quot;Pereira_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycolicAcid_Carstens2003_reference&quot;,&quot;label&quot;:&quot;Carstens_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Carstens2003_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycolicAcid_Li2018_reference&quot;,&quot;label&quot;:&quot;Li_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Li2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycolicAcid_Pereira2021_reference&quot;,&quot;label&quot;:&quot;Pereira_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Pereira2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;GlycolicAcid_Gabow1986_reference&quot;,&quot;label&quot;:&quot;Gabow_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Gabow1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycolicAcid_Ingabire2024_reference&quot;,&quot;label&quot;:&quot;Ingabire_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Ingabire2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycolicAcid_Carstens2003_reference&quot;,&quot;label&quot;:&quot;Carstens_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Carstens2003_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycolicAcid_Li2018_reference&quot;,&quot;label&quot;:&quot;Li_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Li2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycolicAcid_Gabow1986_reference&quot;,&quot;label&quot;:&quot;Gabow_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Gabow1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycolicAcid_Ingabire2024_reference&quot;,&quot;label&quot;:&quot;Ingabire_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Ingabire2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycolicAcid_Pereira2021_reference&quot;,&quot;label&quot;:&quot;Pereira_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_glycolic_acid/GlycolicAcid_Pereira2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Glycolic acid — `GlycolicAcid_Pereira2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The glycolic acid model relied on library default values for absorption rate and lag time, which were not extracted from the source paper.
 
-<div class="pk-model-meta" hidden drug="Glycolic acid" model-id="GlycolicAcid_Pereira2021_reference" status="extracted" stale="false" population="" measured-compound="glycolic_acid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Glycolic acid" model-id="GlycolicAcid_Pereira2021_reference" status="needs_review" stale="false" population="" measured-compound="glycolic_acid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Pereira ASBF, de Souza Lima ML, da Silva-Junior AA, Dos Santos Silva E, de Araújo Júnior RF, Martins AA et al. &lt;i&gt;In vitro-in vivo&lt;/i&gt; availability of metformin hydrochloride-PLGA nanoparticles in diabetic rats in a periodontal disease experimental model. Pharmaceutical biology 59(1):1576-1584 (2021).
@@ -31,6 +31,8 @@ Pereira ASBF, de Souza Lima ML, da Silva-Junior AA, Dos Santos Silva E, de Araú
 <figure class="pk-models-diagram"><img src="drugs/toxin_glycolic_acid/GlycolicAcid_Pereira2021_reference/GlycolicAcid_Pereira2021_reference.svg" alt="GlycolicAcid_Pereira2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cl/F | CL/F | 792.64 | mL/h |
@@ -38,7 +40,7 @@ Pereira ASBF, de Souza Lima ML, da Silva-Junior AA, Dos Santos Silva E, de Araú
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +48,13 @@ Pereira ASBF, de Souza Lima ML, da Silva-Junior AA, Dos Santos Silva E, de Araú
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The glycolic acid model relied on library default values for absorption rate and lag time, which were not extracted from the source paper.**
+
+The record reports clearance of 792.64 mL/h and volume of distribution of 40971.8 mL/kg. However, the absorption rate constant and lag time were left at library placeholders because the source did not report these values. Additionally, bioavailability was assumed to be 1 with no molar correction. Extracted — glycolic acid: CL/F 793 mL/h, V/F 4.1e+04 mL/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -87,6 +95,18 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.793 L/h | ['Pereira_2021:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 2.87e+03 L | ['Pereira_2021:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=glycolic_acid) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

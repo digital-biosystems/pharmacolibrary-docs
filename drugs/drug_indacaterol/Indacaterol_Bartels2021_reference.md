@@ -5,11 +5,11 @@
 
 # indacaterol — `Indacaterol_Bartels2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 14:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Indacaterol's absorption rate constant of 50 L/h and volume of 81.0 mL are physiologically implausible due to unit errors.
+> The absorption rate constant for indacaterol is assigned units of L/h, conflicting with its required 1/time dimension, and the volume of distribution value of 81.0 mL is physiologically implausible.
 
-<div class="pk-model-meta" hidden drug="indacaterol" model-id="Indacaterol_Bartels2021_reference" status="rejected" stale="true" population="patients with asthma" measured-compound="indacaterol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indacaterol" model-id="Indacaterol_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="indacaterol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analysis of Indacaterol/Glycopyrronium/Mometasone Furoate After Administration of Combination Therapies Using the Breezhaler. European journal of drug metabolism and pharmacokinetics 46(4):487–504 (2021).
@@ -42,7 +42,7 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 ### Reviewer guidance
 
-**Indacaterol's absorption rate constant of 50 L/h and volume of 81.0 mL are physiologically implausible due to unit errors.**
+**The absorption rate constant for indacaterol is assigned units of L/h, conflicting with its required 1/time dimension, and the volume of distribution value of 81.0 mL is physiologically implausible.**
 
-The absorption rate constant is recorded as 50 L/h, whereas it is dimensionally a rate constant and must be expressed in reciprocal time units like 1/h. The volume of distribution is extracted as 81.0 mL, an unrealistically small value for a systemic drug. These values trigger a dimension mismatch and a physiological plausibility failure. The reported unit for the absorption parameter could not be converted to standard SI units, preventing correct standardization. Extracted — indacaterol: kabs 50 L/h, V 81 mL.
+The absorption rate constant is recorded with units of L/h, which creates a dimensional conflict with the standard 1/time expectation for absorption kinetics. Additionally, the volume of distribution is extracted as 81.0 mL, a magnitude that falls outside the physiological window for a systemic drug. These extraction errors, compounded by the inability to convert the reported units, led to the record's rejection. Extracted — indacaterol: kabs 50 L/h, V 81 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indacaterol/glycopyrronium/mometasone furoate, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 

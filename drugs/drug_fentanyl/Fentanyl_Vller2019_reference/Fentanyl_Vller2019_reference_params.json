@@ -24,14 +24,14 @@
   "adminMass": 7e-08,
   "k12": 1.705709165386585e-05,
   "k21": 4.7001763668430345e-05,
-  "ka": 0.0002777777777777778,
+  "ka": 0.0045000000000000005,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 15929.45891783567
+  "central.C": 1725.18042275969
  },
  "reference_peaks": {
-  "central.C": 1.881103819413635e-06
+  "central.C": 3.665456558664098e-06
  },
  "stop_time": 345600.0,
  "template": "PK_2C_enteral",

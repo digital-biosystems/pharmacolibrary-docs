@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02B&quot;,&quot;href&quot;:&quot;atc/C02B.md&quot;},{&quot;label&quot;:&quot;mecamylamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Alvarez_Jimenez_2017_Adaptive_tracker&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 Adaptive tracker&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_Adaptive_tracker.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Alvarez_Jimenez_2017_0_back&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 0-back&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_0_back.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # mecamylamine
 
@@ -34,20 +33,9 @@ Mecamylamine is a ganglion-blocking antihypertensive drug used to treat arterial
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Alvarez-Jimenez_2017_2_back](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_2_back.md) | Reaction time of the 2-back paradigm ← mecamylamine · direct linear effect | — | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Alvarez-Jimenez_2017_Adaptive_tracker](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_Adaptive_tracker.md) | Percentage of accuracy of the adaptive tracker test ← mecamylamine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Alvarez-Jimenez_2017_Adaptive_tracker](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_Adaptive_tracker.md) | Percentage of accuracy of the adaptive tracker test ← mecamylamine · direct sigmoid Emax (Hill) effect | — | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Alvarez-Jimenez_2017_BP](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_BP.md) | Systolic and diastolic blood pressure ← mecamylamine · direct linear effect | — | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Alvarez-Jimenez_2017_0_back](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_0_back.md) | Correct Answers of the 0-back (percentage of correct answers) ← mecamylamine · direct Emax (saturable) effect | ▶ model + simulator | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mecamylamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CHRNA2 (target), CHRNA4 (target), CHRNA7 (target), CHRNB2 (target).</sub>
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Alvarez-Jimenez_2017_0_back](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_0_back.md) | Correct Answers of the 0-back (percentage of correct answers) ← mecamylamine · direct Emax (saturable) effect | — | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +49,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:21 | 4:22 | 0/1/0 | 1/0/0 | 0/0/0 | 271,789/17,827 | einfracz / qwen3.8-27b | 11 | 3/7 | 11/0 | 0 |
+| 2026-10-07 15:21 | 4:22 | 0/1/0 | 4/0/0 | 0/0/0 | 271,789/17,827 | einfracz / qwen3.8-27b | 11 | 3/7 | 11/0 | 0 |
 
 ## Coverage
 

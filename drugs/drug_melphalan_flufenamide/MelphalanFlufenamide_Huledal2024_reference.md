@@ -4,11 +4,11 @@
 
 # melphalan flufenamide — `MelphalanFlufenamide_Huledal2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-07 16:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Melphalan flufenamide was rejected because its steady-state volume of distribution has a dimensional mismatch and its metabolite link lacks a defined rate constant.
+> Melphalan's desethyl-melflufen link is missing, and its apparent clearance's dimension mismatches its units.
 
-<div class="pk-model-meta" hidden drug="melphalan flufenamide" model-id="MelphalanFlufenamide_Huledal2024_reference" status="rejected" stale="true" population="adults with relapsed refractory multiple myeloma" measured-compound="melphalan" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="melphalan flufenamide" model-id="MelphalanFlufenamide_Huledal2024_reference" status="rejected" stale="false" population="adults with relapsed refractory multiple myeloma" measured-compound="melphalan" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Huledal G, Ruiz-Garcia A, Kawakatsu S, Wang X, Sjöberg P, Gullbo J et al. Pharmacokinetics and Metabolism of Melflufen, an Alkylating Peptide-Drug Conjugate, in Patients with Relapsed Refractory Multiple Myeloma. Journal of clinical pharmacology 64(2):240–252 (2024).
@@ -16,7 +16,7 @@ Huledal G, Ruiz-Garcia A, Kawakatsu S, Wang X, Sjöberg P, Gullbo J et al. Pharm
 
 ## Population and dosing
 
-**Population:** adults with relapsed refractory multiple myeloma · condition relapsed refractory multiple myeloma · age group adult · n = n_subjects_int_value_ignored_by_schema_constraint_but_present_in_text_for_reference_only_if_needed_else_0_but_schema_wants_string_or_number_let_us_pick_298_or_unknown_let's_go_with_298_as_it's_the_pop_pk_sample_size.
+**Population:** adults with relapsed refractory multiple myeloma · condition relapsed refractory multiple myeloma · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed melphalan_flufenamide, measured melphalan.
 
@@ -39,7 +39,7 @@ Huledal G, Ruiz-Garcia A, Kawakatsu S, Wang X, Sjöberg P, Gullbo J et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Huledal G, Ruiz-Garcia A, Kawakatsu S, Wang X, Sjöberg P, Gullbo J et al. Pharm
 
 ### Reviewer guidance
 
-**Melphalan flufenamide was rejected because its steady-state volume of distribution has a dimensional mismatch and its metabolite link lacks a defined rate constant.**
+**Melphalan's desethyl-melflufen link is missing, and its apparent clearance's dimension mismatches its units.**
 
-The model structure includes an orphan compartment because the metabolic link from the parent drug to melphalan has no rate constant. The reported steady-state volume of distribution of 2.7 L is flagged for a dimensional mismatch. The second reader disagreed on parameter values, assigning a central volume of 2.70 L and a deep peripheral volume of 51.3 L, neither of which appears in the extracted record. Extracted — melphalan flufenamide: t1/2α 1.24 minutes, t1/2β 26.7 minutes, CLm/F 13.4 L/min, Vss 2.7 L.
+The record shows the desethyl-melflufen link from melphalan flufenamide with no parameter, so that metabolite has no path from the dose. The apparent metabolite clearance, CLm/F, is 13.4 L/min, yet the units' dimension conflicts with the parameter's mass-time-length dimension. Since the abstract alone was read, these summary statistics stand in for a fitted model. The second reader also found the 2.7 L Vss assigned to combined volumes instead of separate central and deep peripheral volumes. Extracted — melphalan flufenamide: t1/2α 1.24 minutes, t1/2β 26.7 minutes, CLm/F 13.4 L/min, Vss 2.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has melphalan_flufenamide, the second reading melphalan flufenamide; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

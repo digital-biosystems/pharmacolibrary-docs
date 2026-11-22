@@ -4,11 +4,11 @@
 
 # camrelizumab — `Camrelizumab_Wang2021_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:01 UTC (Rejected), but the paper was screened again on 2026-10-07 10:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The camrelizumab clearance value of 0.231 L/day has a dimension mismatch on a structural parameter, causing the record to be rejected.
+> Camrelizumab record rejected because the unit for intercompartmental clearance could not be converted to standard SI units, blocking dimensional validation.
 
-<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_final" status="rejected" stale="true" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_final" status="rejected" stale="false" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokinetics of the anti-PD-1 antibody camrelizumab in patients with multiple tumor types and model-informed dosing strategy. Acta pharmacologica Sinica 42(8):1368–1375 (2021).
@@ -43,7 +43,7 @@ Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokineti
 
 ### Reviewer guidance
 
-**The camrelizumab clearance value of 0.231 L/day has a dimension mismatch on a structural parameter, causing the record to be rejected.**
+**Camrelizumab record rejected because the unit for intercompartmental clearance could not be converted to standard SI units, blocking dimensional validation.**
 
-The check identified a dimension mismatch on the total clearance parameter, which uses units of L/day. Additionally, the record lists Cmax and Cmin values that a second reader did not extract, indicating a discrepancy in the observed concentration parameters. Extracted — camrelizumab: CL 0.231 L/day, Vmax 2.94 mg/day, Km 1.38 mg/L, V1 3.07 L, Q 0.414 L/day, V2 2.9 L, Cmax 47.3 mg/L, Cmin 26.1 mg/L.
+The apparent intercompartmental clearance Q has a value of 0.414 L/day, but this unit could not be translated into standard SI units, so the parameter lacked a valid numerical value for analysis. This prevented the check from verifying that the parameter’s dimensions matched its definition as a flow rate. A second reader also disagreed on covariate associations, assigning albumin and weight effects to linear clearance rather than the intercompartmental clearance recorded here. Extracted — camrelizumab: CL 0.231 L/day, Vmax 2.94 mg/day, Km 1.38 mg/L, V1 3.07 L, Q 0.414 L/day, V2 2.9 L, Cmax 47.3 mg/L, Cmin 26.1 mg/L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of albumin_on_cl_linear: this record has none, the second reading -1.98; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

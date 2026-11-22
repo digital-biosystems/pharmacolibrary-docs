@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Williams_1989_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Deget1991_reference&quot;,&quot;label&quot;:&quot;Deget_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Deget1991_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Williams1989v2_reference&quot;,&quot;label&quot;:&quot;Williams_1989_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Meredith1989_reference&quot;,&quot;label&quot;:&quot;Meredith_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Williams1989v2_reference&quot;,&quot;label&quot;:&quot;Williams_1989_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cilazapril — `Cilazapril_Williams1989v2_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Williams1989v2_reference" status="not_modelled" stale="false" population="healthy volunteers (young and elderly)" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
+> The review was refused due to disputed cross-checks; the second reader found no consensus on cilazapril clearance and derived volume values.
+
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Williams1989v2_reference" status="needs_review" stale="false" population="elderly and young healthy volunteers" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Williams PE, Brown AN, Rajaguru S, Walters GE, McEwen J, Durnin C. A pharmacokinetic study of cilazapril in elderly and young volunteers. British journal of clinical pharmacology 27 Suppl 2(Suppl 2):211S–215S (1989).
@@ -27,7 +29,7 @@ Williams PE, Brown AN, Rajaguru S, Walters GE, McEwen J, Durnin C. A pharmacokin
 <figure class="pk-models-diagram"><img src="drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference/Cilazapril_Williams1989v2_reference.svg" alt="Cilazapril_Williams1989v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -36,7 +38,7 @@ Williams PE, Brown AN, Rajaguru S, Walters GE, McEwen J, Durnin C. A pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +48,13 @@ Williams PE, Brown AN, Rajaguru S, Walters GE, McEwen J, Durnin C. A pharmacokin
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The review was refused due to disputed cross-checks; the second reader found no consensus on cilazapril clearance and derived volume values.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 46.4, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+The model lists total clearance for cilazapril as 89.0 ml min-1 and volume of distribution as 322.0268 L. A second reader disputed these entries, failing to agree on the clearance and volume values. The disagreement resulted in an agreement ratio of 0.231, with zero readers confirming the extracted parameters. Extracted — cilazapril: CL 89 ml min-1, V 322 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 46.4, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -77,24 +81,22 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q19]` | 46.4 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q22]` | 89 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q26]` | 29 | 12.8 | mismatch |
-| `gpt-oss-120b` | `values[Q320]` |  | 95.1 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q322]` | 95.1 | 4.8 | mismatch |
-| `gpt-oss-120b` | `values[Q32]` | 11.5 | 11.5 | mismatch |
-| `gpt-oss-120b` | `values[Q37]` |  | 22.2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q322]` | 95.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q323]` |  | 95.1 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q38]` |  | 72.4 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q44]` |  | 43 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q57]` | 41.8 | 5.14 | mismatch |
-| `gpt-oss-120b` | `values[Q60]` |  | 7.20 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 41.8 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q84]` | 43 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q86]` |  | 22.2 | only_one_extracted |
 
 </details>
 
@@ -120,12 +122,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | note |
-|---|---|---|
-| T0_analyte_identity | pass | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped | no covariate effects in record |
-| T3_param_coverage | skipped | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cilazapril) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -203,4 +208,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcilazapril%5D%20Cilazapril_Williams1989v2_reference&body=Drug%3A%20cilazapril%0ARecord%3A%20Cilazapril_Williams1989v2_reference%0APaper%3A%20Williams_1989_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 11:14 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:17 UTC</sub>

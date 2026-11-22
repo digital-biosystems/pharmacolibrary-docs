@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The study models the concentration-response relationship between manganese concentration in drinking water (0.01 to 2701 μg/L) and Performance IQ scores (in points), noting that higher manganese levels are associated with lower IQ scores. The paper does not provide a specific pharmacodynamic mechanism (e.g., inhibition, Emax) or rate constants (such as kin, kout, ke0), but describes a statistical benchmark concentration analysis using various continuous model functions (linear, Hill, power, exponential) to estimate median values for 1%, 2%, and 5% reductions in Performance IQ.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kullar_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

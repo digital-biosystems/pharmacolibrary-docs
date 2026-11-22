@@ -5,11 +5,11 @@
 
 # idarubicin — `Idarubicin_Weiss2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 15:09 UTC (Rejected), but the paper was screened again on 2026-10-06 18:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant for idarubicin was reported as 3.06 microM, conflicting with the required time-based dimension.
+> Rejected because idarubicin’s elimination rate constant has concentration units, and its volume of distribution has flow units, conflicting with their required dimensions.
 
-<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Weiss2002_reference" status="rejected" stale="true" population="single-pass isolated perfused rat hearts" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Weiss2002_reference" status="rejected" stale="false" population="single-pass isolated perfused rat hearts" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Weiss M, Kang W. P-glycoprotein inhibitors enhance saturable uptake of idarubicin in rat heart: pharmacokinetic/pharmacodynamic modeling. The Journal of pharmacology and experimental therapeutics 300(2):688–694 (2002).
@@ -38,7 +38,7 @@ Weiss M, Kang W. P-glycoprotein inhibitors enhance saturable uptake of idarubici
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Weiss M, Kang W. P-glycoprotein inhibitors enhance saturable uptake of idarubici
 
 ### Reviewer guidance
 
-**The elimination rate constant for idarubicin was reported as 3.06 microM, conflicting with the required time-based dimension.**
+**Rejected because idarubicin’s elimination rate constant has concentration units, and its volume of distribution has flow units, conflicting with their required dimensions.**
 
-The record lists the elimination rate constant as 3.06 microM, which is a concentration unit rather than a rate unit. This dimensional inconsistency caused a structural parameter check to fail. Additionally, the data was derived only from the paper's abstract, meaning summary statistics were used instead of fitted model parameters. Extracted — idarubicin: kel 3.06 microM, V 46 microM/min.
+The abstract-derived record lists an elimination rate constant of 3.06 microM and a volume of distribution of 46.0 microM/min. These values carry unit dimensions that do not match the physical quantities they represent, specifically concentration instead of inverse time and flow instead of volume. Extracted — idarubicin: kel 3.06 microM, V 46 microM/min.
 
 Independently confirmed by `qwen3.8-27b`.
 

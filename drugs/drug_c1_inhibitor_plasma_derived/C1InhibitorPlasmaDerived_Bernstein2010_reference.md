@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Bernstein_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -36,7 +36,7 @@ Bernstein JA, Ritchie B, Levy RJ, Wasserman RL, Bewtra AK, Hurewitz DS et al. Po
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Bernstein JA, Ritchie B, Levy RJ, Wasserman RL, Bewtra AK, Hurewitz DS et al. Po
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is c1 inhibitor plasma derived's own; they describe C1 esterase inhibitor. Extracted — C1 esterase inhibitor: t1/2z 32.7 hours, CL 0.92 mL/kg/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1 esterase inhibitor, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has C1 esterase inhibitor, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,18 +86,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[estimated mean clearance]` | 0.92 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[estimated mean clearance]` |  | 0.92 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[estimated mean half-life]` | 32.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[estimated mean half-life]` |  | 32.7 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | C1 esterase inhibitor | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | C1 esterase inhibitor | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[estimated mean clearance]` | 0.92 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated mean clearance]` |  | 0.92 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated mean half-life]` | 32.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated mean half-life]` |  | 32.7 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | C1 esterase inhibitor | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | C1 esterase inhibitor | unknown | mismatch |
 
 </details>
 

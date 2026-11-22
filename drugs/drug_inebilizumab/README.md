@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;inebilizumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Yan_2022_2_CD20&quot;,&quot;label&quot;:&quot;Yan_2022_2 \u00b7 CD20+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inebilizumab/pd_Yan_2022_2_CD20.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # inebilizumab
 
@@ -18,22 +17,13 @@ Inebilizumab is a monoclonal antibody used to treat neuromyelitis optica spectru
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yan_2022_reference](drugs/drug_inebilizumab/Inebilizumab_Yan2022_reference.md) | — | 2-compartment (no model) | 7 (+4 cov.) | Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yan_2022_reference](drugs/drug_inebilizumab/Inebilizumab_Yan2022_reference.md) | — | 2-compartment (no model) | 7 (+4 cov.) | Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yan_2022_2_CD20](drugs/drug_inebilizumab/pd_Yan_2022_2_CD20.md) | CD20+ B-cell count ← inebilizumab · delayed effect through transit (transduction) compartments | ▶ model + simulator | Yan L et al., Pharmacodynamic modelling and exposure-…, British journal of clinical… (2022) | [10.1111/bcp.15332](https://doi.org/10.1111/bcp.15332) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=inebilizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD19 (binder).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yan_2022_2_CD20](drugs/drug_inebilizumab/pd_Yan_2022_2_CD20.md) | CD20+ B-cell count ← inebilizumab · delayed effect through transit (transduction) compartments | — | Yan L et al., Pharmacodynamic modelling and exposure-…, British journal of clinical… (2022) | [10.1111/bcp.15332](https://doi.org/10.1111/bcp.15332) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +43,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

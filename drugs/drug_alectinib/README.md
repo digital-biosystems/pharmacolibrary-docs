@@ -36,12 +36,12 @@ Alectinib is a protein kinase inhibitor that blocks anaplastic lymphoma kinase t
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Mohmaed_2026_fasted_geometric_mean_cv](drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md) | ▶ model + simulator | 1-compartment, oral | 4 | Mohmaed Ali MI et al., Reducing the Burden of Interaction Stud…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70141](https://doi.org/10.1002/cpt.70141) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [↳ fed_geometric_mean_cv](drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ estimate](drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md) | — | 1-compartment (no model) | 5 (+1 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ estimate](drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md) | — | 1-compartment (no model) | 5 (+1 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hsu_2021_reference](drugs/drug_alectinib/Alectinib_Hsu2021_reference.md) | — | parent + metabolite (no model) | 0 | Hsu JC et al., Pharmacometric analyses of alectinib to…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12702](https://doi.org/10.1002/psp4.12702) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [van_2025_1_3_5_years_190_mg_bid](drugs/drug_alectinib/Alectinib_van2025_1_3_5_years_190_mg_bid.md) | — | parent + metabolite (no model) | 1 | van Donge T et al., Middle-Out Physiologically Based Pharma…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70020](https://doi.org/10.1002/psp4.70020) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ 3_5_5_8_years_230_mg_bid](drugs/drug_alectinib/Alectinib_van2025_3_5_5_8_years_230_mg_bid.md) | — | parent + metabolite (no model) | 1 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ 5_8_7_8_years_270_mg_bid](drugs/drug_alectinib/Alectinib_van2025_5_8_7_8_years_270_mg_bid.md) | — | parent + metabolite (no model) | 1 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ value](drugs/drug_alectinib/Alectinib_van2025_value.md) | — | parent + metabolite (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ value](drugs/drug_alectinib/Alectinib_van2025_value.md) | — | parent + metabolite (no model) | 5 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -58,24 +58,6 @@ Alectinib is a protein kinase inhibitor that blocks anaplastic lymphoma kinase t
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Morcos_2018_OS](drugs/drug_alectinib/pd_Morcos_2018_OS.md) | Overall survival ← alectinib + M4 · time-to-event model | — | Morcos PN et al., Exposure-response analysis of alectinib…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3597-5](https://doi.org/10.1007/s00280-018-3597-5) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Morcos_2018_SAEs](drugs/drug_alectinib/pd_Morcos_2018_SAEs.md) | Serious adverse events ← alectinib + M4 · categorical (graded) response model | — | Morcos PN et al., Exposure-response analysis of alectinib…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3597-5](https://doi.org/10.1007/s00280-018-3597-5) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alectinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ALK (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -88,13 +70,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:30 | 16:34 | 2/6/0 | 4/0/0 | 0/0/0 | 298,030/71,473 | openai / gpt-6-luna | 10 | 0/10 | 10/0 | 0 |
+| 2026-10-06 21:30 | 16:34 | 2/6/0 | 10/0/0 | 0/0/0 | 298,030/71,473 | openai / gpt-6-luna | 10 | 0/10 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 2
+- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

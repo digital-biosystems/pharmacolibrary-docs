@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Canagliflozin k21 was not estimated and defaulted, invalidating the two-compartment model structure.
+> The intercompartmental clearance from the peripheral to central compartment for canagliflozin was left at library placeholder defaults instead of using a value from the study.
 
 <div class="pk-model-meta" hidden drug="canagliflozin" model-id="Canagliflozin_Yao2023_reference" status="needs_review" stale="false" population="healthy subjects and patients with T2DM" measured-compound="canagliflozin" parameterization="mechanistic" topology="2C"></div>
 
@@ -42,7 +42,7 @@ Yao X, Zhou J, Song L, Ren Y, Hu P, Liu D. A model-based meta analysis study of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.941). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,11 @@ Yao X, Zhou J, Song L, Ren Y, Hu P, Liu D. A model-based meta analysis study of 
 
 ### Reviewer guidance
 
-**Canagliflozin k21 was not estimated and defaulted, invalidating the two-compartment model structure.**
+**The intercompartmental clearance from the peripheral to central compartment for canagliflozin was left at library placeholder defaults instead of using a value from the study.**
 
-The intercompartmental clearance k21 was missing from the paper and left at library defaults rather than being explicitly justified. Consequently, the simulated profile relies on unsupported conventions for this specific parameter. A second reader also disagreed on the classification identifier for the bioavailability parameter. Extracted — canagliflozin: CL 4.25 L/h, V1 30.6 L, Q 1.37 L/h, V 28.3 L, kel 4.13 h−1, Fab 0.254.
+The record contains no explicit estimate for the peripheral-to-central clearance, so a library placeholder value would be used in the model. This omission was flagged as an unreported model parameter default. A second reader disagreed on the identifier for the absolute bioavailability, though they agreed on the other parameter values. Extracted — canagliflozin: CL 4.25 L/h, V1 30.6 L, Q 1.37 L/h, V 28.3 L, kel 4.13 h−1, Fab 0.254.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[fed].parameter_id`: this record has Q40, the second reading Q43. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[fed].parameter_id`: this record has Q40, the second reading Q43. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -145,13 +145,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.941 (16/17 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.941 (16/17 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[fed].parameter_id` | Q40 | Q43 | mismatch |
+| `gpt-oss-120b` | `parameters[fed].parameter_id` | Q40 | Q43 | mismatch |
 
 </details>
 
@@ -181,14 +181,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=canagliflozin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=canagliflozin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.941, 0 of 1 reader(s) agree | 0.941 | cross-check disputed by a second reader: verdict disputed, agreement 0.941, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

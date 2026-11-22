@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fibrinogen, human&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/&quot;},{&quot;label&quot;:&quot;van_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fibrinogen, human — `FibrinogenHuman_van2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="fibrinogen, human" model-id="FibrinogenHuman_van2026_reference" status="needs_review" stale="false" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fibrinogen, human" model-id="FibrinogenHuman_van2026_reference" status="rejected" stale="false" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Lier D, Mourisse L, Hollander H, Santos K, Bergmann A, van Herwaarden AE et al. Safety, tolerability, and pharmacokinetics/-dynamics of the dipeptidyl peptidase 3-inhibiting antibody Procizumab in a first-in-human trial. mAbs 18(1):2671468 (2026).
@@ -27,7 +27,7 @@ van Lier D, Mourisse L, Hollander H, Santos K, Bergmann A, van Herwaarden AE et 
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -36,7 +36,7 @@ van Lier D, Mourisse L, Hollander H, Santos K, Bergmann A, van Herwaarden AE et 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.083). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.083). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ van Lier D, Mourisse L, Hollander H, Santos K, Bergmann A, van Herwaarden AE et 
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fibrinogen human: CL 716 ml/h, V 24.9 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 363, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 363, the second reading none; it also differs on 10 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,23 +79,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.083 (1/12 fields) | 11 |
+| `gpt-oss-120b` | partly confirmed | 0.083 (1/12 fields) | 11 |
 
 <details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q174]` | 0.199 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q17]` | 363 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q189]` | 1.35 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q22]` | 716.15 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q32]` | 50.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q36]` | 0.505 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q47]` | 0.029 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q56]` | 2 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q61]` | 24.87 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q65]` | 10.58 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q74]` | 345 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q174]` | 0.199 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q17]` | 363 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q189]` | 1.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 716.15 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 50.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q36]` | 0.505 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | 0.029 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 2 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 24.87 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q65]` | 10.58 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q74]` | 345 |  | only_one_extracted |
 
 </details>
 
@@ -129,19 +129,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

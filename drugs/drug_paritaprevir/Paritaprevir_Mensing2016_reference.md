@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Paritaprevir parameters lack explicit lag time, assume full bioavailability, and the intercompartmental clearance value is unreadable by the second reader.
+> Paritaprevir’s Q/F of 224 L/day and V2/F of 345 L were disputed by the second reader, so the record was held for review.
 
 <div class="pk-model-meta" hidden drug="Paritaprevir" model-id="Paritaprevir_Mensing2016_reference" status="needs_review" stale="false" population="adults with chronic HCV genotype 1 infection" measured-compound="paritaprevir" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Mensing S, Polepally AR, König D, Khatri A, Liu W, Podsadecki TJ et al. Populat
 
 ### Reviewer guidance
 
-**Paritaprevir parameters lack explicit lag time, assume full bioavailability, and the intercompartmental clearance value is unreadable by the second reader.**
+**Paritaprevir’s Q/F of 224 L/day and V2/F of 345 L were disputed by the second reader, so the record was held for review.**
 
-The model builder defaulted the lag time to a placeholder value rather than extracting an explicit estimate from the record. All pharmacokinetic parameters were parameterized as apparent values, assuming full bioavailability without a molar correction. A second reader could not locate or confirm the extracted values of 224 for the intercompartmental clearance and 345 for the peripheral volume of distribution. Extracted — paritaprevir: kabs 5.97 day -1, CL/F 3.77e+03 L/day, V1/F 638 L, Q/F 224 L/day, V2/F 345 L.
+The second reader supplied no values for Q/F or V2/F and disagreed about the identification of the central-compartment volume parameter, recorded as V1/F at 638 L. The cross-reader agreement was 0.7, with 0 of 1 readers agreeing. Tlag was defaulted rather than explicitly estimated, and the model assumed F=1, Fm=1, with no molar correction. Extracted — paritaprevir: kabs 5.97 day -1, CL/F 3.77e+03 L/day, V1/F 638 L, Q/F 224 L/day, V2/F 345 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of q/f: this record has 224, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -136,16 +136,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=paritaprevir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviated_id: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 34% higher | 1.415e-05 | unresolved concentration unit (exp 'females vs males', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=paritaprevir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 34% higher | 1.415e-05 |  | unresolved concentration unit (exp 'females vs males', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

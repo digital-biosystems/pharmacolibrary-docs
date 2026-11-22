@@ -25,16 +25,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Robbiano_2002_DNA_fragmentation](drugs/toxin_nitrilotriacetic_acid/pd_Robbiano_2002_DNA_fragmentation.md) | DNA fragmentation ← nitrilotriacetic_acid · stimulation effect | — | Robbiano L et al., Correlation between induction of DNA fr…, Toxicology (2002) | [10.1016/s0300-483x(02)00354-2](https://doi.org/10.1016/s0300-483x(02)00354-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nitrilotriacetic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: LTF (inhibitor).</sub>
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.50).">human + animal</span> | [Robbiano_2002_DNA_fragmentation](drugs/toxin_nitrilotriacetic_acid/pd_Robbiano_2002_DNA_fragmentation.md) | DNA fragmentation ← nitrilotriacetic_acid · stimulation effect | — | Robbiano L et al., Correlation between induction of DNA fr…, Toxicology (2002) | [10.1016/s0300-483x(02)00354-2](https://doi.org/10.1016/s0300-483x(02)00354-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

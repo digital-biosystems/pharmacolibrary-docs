@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;sildenafil&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/&quot;},{&quot;label&quot;:&quot;Olgu\u00edn_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sildenafil_Cochiusden2020_reference&quot;,&quot;label&quot;:&quot;Cochius-den_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sildenafil_Cochiusden2020_reference&quot;,&quot;label&quot;:&quot;Cochius-den_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sildenafil — `Sildenafil_Olgun2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:11 UTC (Rejected), but the paper was screened again on 2026-10-07 09:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sildenafil record rejected because it lacks fitted clearance and volume values, relying on abstract-only summary statistics rather than a compartmental population pharmacokinetic model.
+> Sildenafil record lacks distribution volume and clearance parameters, containing only summary statistics like Cmax and tmax, so it is not a compartmental model.
 
-<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Olgun2017_reference" status="rejected" stale="true" population="children with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Olgun2017_reference" status="rejected" stale="false" population="children with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Olguín HJ, Martínez HO, Pérez CF, Mendiola BR, Espinosa LR, Pacheco JLC et al. Pharmacokinetics of sildenafil in children with pulmonary arterial hypertension. World journal of pediatrics : WJP 13(6):588–592 (2017).
@@ -35,7 +35,7 @@ Olguín HJ, Martínez HO, Pérez CF, Mendiola BR, Espinosa LR, Pacheco JLC et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Olguín HJ, Martínez HO, Pérez CF, Mendiola BR, Espinosa LR, Pacheco JLC et al
 
 ### Reviewer guidance
 
-**Sildenafil record rejected because it lacks fitted clearance and volume values, relying on abstract-only summary statistics rather than a compartmental population pharmacokinetic model.**
+**Sildenafil record lacks distribution volume and clearance parameters, containing only summary statistics like Cmax and tmax, so it is not a compartmental model.**
 
-The total clearance and volume of distribution parameters have no extracted numerical values, leaving the model without the kinetic coefficients required for population pharmacokinetic simulation. The record was built exclusively from the paper's abstract, so the reported summary statistics stand in for a fitted model. This structural deficiency prevents the record from representing a compartmental population pharmacokinetic model. Extracted — sildenafil: kabs 0.343 hour-1.
+The record lists Cmax, tmax, and absorption rate constant but omits specific values for clearance and volume of distribution. Consequently, the data represent exposure metrics rather than a fitted pharmacokinetic model. The abstract-only source means these summary statistics stand in for missing structural parameters. Extracted — sildenafil: kabs 0.343 hour-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sildenafil, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 

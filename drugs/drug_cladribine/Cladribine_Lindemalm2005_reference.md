@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/&quot;},{&quot;label&quot;:&quot;Lindemalm_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life of 8.97 h contradicts the paper's reported 16 h.
+> The model does not reproduce the paper's terminal half-life (paper 16, model 8.97).
 
 <div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Lindemalm2005_reference" status="needs_review" stale="false" population="patients with B- and T-cell lymphoid malignancies" measured-compound="cladribine" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Lindemalm S, Savic RM, Karlsson MO, Juliusson G, Liliemark J, Albertioni F. Appl
 
 ## Population and dosing
 
-**Population:** patients with B- and T-cell lymphoid malignancies · condition indolent B- and T-cell lymphoid malignancies · age group adult · n = &gt;=150.
+**Population:** patients with B- and T-cell lymphoid malignancies · condition indolent B- and T-cell lymphoid malignancies · age group adult.
 
 **Dosing:** 0.12, 0.24, 5, 10 mg/m2 or mg/kg, oral, iv, sc, multiple.
 
@@ -56,11 +56,11 @@ Lindemalm S, Savic RM, Karlsson MO, Juliusson G, Liliemark J, Albertioni F. Appl
 
 ### Reviewer guidance
 
-**The model's terminal half-life of 8.97 h contradicts the paper's reported 16 h.**
+**The model does not reproduce the paper's terminal half-life (paper 16, model 8.97).**
 
-The simulated terminal half-life from the two-compartment structure differs significantly from the paper's reported value. The model builder also defaulted the lag time parameter instead of using an explicit estimate. Extracted — cladribine: CL 39.3 L/h, V1 71.7 L, Q 51.1 L/h, V2 475 L, Q3 105 L/h, V3 73.6 L, kabs 1.31 h-1, fe 0.353.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cladribine: CL 39.3 L/h, V1 71.7 L, Q 51.1 L/h, V2 475 L, Q3 105 L/h, V3 73.6 L, kabs 1.31 h-1, fe 0.353.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -153,7 +153,8 @@ The simulated terminal half-life from the two-compartment structure differs sign
 | T3_output_variable |  | pass | C_central (measured=cladribine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev-001: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
 | T1_t_half_alpha | reference | skipped | 0.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 1.3 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | fail | 16 | 8.967 | 0.5604 | hours→SI vs simulated h |

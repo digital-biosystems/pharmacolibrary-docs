@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;pegaspargase&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/&quot;},{&quot;label&quot;:&quot;Dam_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegaspargase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegaspargase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Dam M, Centanni M, Friberg LE, Centanni D, Karlsson MO, Stensig Lynggaard L et a
 
 ## Population and dosing
 
-**Population:** patients with acute lymphoblastic leukemia · condition acute lymphoblastic leukemia · age group mixed · n = &lt;integer&gt;.
+**Population:** patients with acute lymphoblastic leukemia · condition acute lymphoblastic leukemia · age group mixed.
 
 **Dosing:** 1000, 1500 IE/m2, iv, multiple, every 14 h.
 

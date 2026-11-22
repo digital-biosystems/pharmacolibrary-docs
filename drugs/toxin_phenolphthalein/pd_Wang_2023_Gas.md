@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a formal pharmacodynamic model or provide potency (e.g., IC50) and rate constants for the effect of phenolphthalein on serum gastrin levels. Phenolphthalein (10 mg/kg) administration increased serum gastrin in loperamide-induced constipated mice, acting as a positive regulator of this excitatory gastrointestinal motility biomarker without specified mechanistic parameters.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

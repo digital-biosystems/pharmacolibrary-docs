@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Mueller-Schoell_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Croxtall_1994_A549_cell_proliferation&quot;,&quot;label&quot;:&quot;Croxtall_1994 \u00b7 A549 cell proliferation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Croxtall_1994_A549_cell_proliferation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Montenegro_2011_vasorelaxation&quot;,&quot;label&quot;:&quot;Montenegro_2011 \u00b7 vasorelaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Montenegro_2011_vasorelaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> The record was rejected because the simulated output compartment did not match the measured metabolite, endoxifen, and the model structure was incorrect.
+> The predicted output was the wrong compartment, and the model structure did not match the parent-metabolite design.
 
-<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_MuellerSchoell2020_reference" status="rejected" stale="false" population="young breast cancer patients" measured-compound="endoxifen" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_MuellerSchoell2020_reference" status="rejected" stale="false" population="breast cancer patients" measured-compound="endoxifen" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Mueller-Schoell A, Klopp-Schulze L, Schroth W, Mürdter T, Michelet R, Brauch H et al. Obesity Alters Endoxifen Plasma Levels in Young Breast Cancer Patients: A Pharmacometric Simulation Approach. Clinical pharmacology and therapeutics 108(3):661–670 (2020).
@@ -17,7 +17,7 @@ Mueller-Schoell A, Klopp-Schulze L, Schroth W, Mürdter T, Michelet R, Brauch H 
 
 ## Population and dosing
 
-**Population:** young breast cancer patients · condition breast cancer · age group mixed · n = &gt;&lt;/.
+**Population:** breast cancer patients · condition breast cancer · age group mixed.
 
 **Dosing:** 20, 40 mg, oral, multiple, every 24 h.
 
@@ -43,8 +43,8 @@ Mueller-Schoell A, Klopp-Schulze L, Schroth W, Mürdter T, Michelet R, Brauch H 
 | CL30/F (L/hour) | CLm/F | 5.10 | L/hour |
 | V ENDX /F (L) | V1/F | 400 | L |
 | CL20/F (L/hour) | CLm/F | 5.07 | L/hour |
-| CL20/F_Age a | equation variable | -0.17 |  |
-| theta_q1_weight_cl20_f_body_a | theta_q1_weight_cl20_f_body_a | 0.284 |  |
+| CL23/F_AS: 2.5-3 b | equation variable | 0.302 |  |
+| theta_cl_f_weight_cl20_f_body_a | theta_cl_f_weight_cl20_f_body_a | 0.284 |  |
 
 ## Caveats
 
@@ -52,7 +52,7 @@ Mueller-Schoell A, Klopp-Schulze L, Schroth W, Mürdter T, Michelet R, Brauch H 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,11 +62,11 @@ Mueller-Schoell A, Klopp-Schulze L, Schroth W, Mürdter T, Michelet R, Brauch H 
 
 ### Reviewer guidance
 
-**The record was rejected because the simulated output compartment did not match the measured metabolite, endoxifen, and the model structure was incorrect.**
+**The predicted output was the wrong compartment, and the model structure did not match the parent-metabolite design.**
 
-The simulation output was the central compartment rather than the measured metabolite, endoxifen. Additionally, the model topology used was a one-compartment enteral model, which did not match the parent-metabolite structure required for tamoxifen and endoxifen. The second reader also disagreed on the existence of the metabolism link and specific parameter values. Extracted — tamoxifen: kabs 1.08 1/hour, tlag 0.442 hour, Vm/F 912 L, CLm/F 5.07 L/hour; endoxifen: CLm/F 5.1 L/hour, V1/F 400 L.
+The simulation predicted the wrong compartment concentration instead of the measured metabolite endoxifen. Furthermore, the model structure used a single-compartment absorption setup rather than the parent-metabolite design implied by the data. A second reader also disagreed on several parameter values, including endoxifen clearance and volume assignments. Extracted — tamoxifen: kabs 1.08 1/hour, tlag 0.442 hour, Vm/F 912 L, CLm/F 5.07 L/hour; endoxifen: CLm/F 5.1 L/hour, V1/F 400 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tamoxifen → endoxifen (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tamoxifen → endoxifen (metabolism), the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -80,8 +80,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 | CL30/F (L/hour) | `Q351` · CLm/F | 5.10 | L/hour | 1.417e-06 | m3/s | l/h | exact (1) | tab_3:row5:col2 |
 | V ENDX /F (L) | `Q290` · V1/F | 400 | L | 0.4 | m3 | l | exact (1) | tab_3:row6:col2 |
 | CL20/F (L/hour) | `Q351` · CLm/F | 5.07 | L/hour | 1.408e-06 | m3/s | l/h | exact (1) | tab_3:row7:col2 |
-| CL20/F_Age a | `Q900` · equation variable | -0.17 |  |  |  |  | llm (0.6) | tab_3:row8:col2 |
-| theta_q1_weight_cl20_f_body_a | `Q900` · theta_q1_weight_cl20_f_body_a | 0.284 |  |  |  |  |  | tab_3:row10:col2 |
+| CL23/F_AS: 2.5-3 b | `Q900` · equation variable | 0.302 |  | 0.302 |  |  | llm (0.6) | tab_3:row21:col2 |
+| theta_cl_f_weight_cl20_f_body_a | `Q900` · theta_cl_f_weight_cl20_f_body_a | 0.284 |  |  |  |  |  | tab_3:row10:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -96,9 +96,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 **Interpretation flags:**
 - compound tags: 1 row(s) → endoxifen (name 1)
+- dropped unlinked row (NIL): 'CL20/F_Age a' — extend the ontology if this is a real PK parameter (source ['tab_3:row8:col2'])
 - dropped duplicate Q27 ('CL23/F (L/hour)', value '0.459') — already have one for this compound
-- dropped duplicate Q27 ('CL23/F_AS: 2.5-3 b', value '0.302') — already have one for this compound
-- covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
 - metabolite endoxifen: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite endoxifen: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=endoxifen
@@ -121,19 +120,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.4 (6/15 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.5 (7/14 fields) | 7 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['tamoxifen', 'endoxifen', 'metabolism']] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[cl20/f]` | 5.07 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl20/f_age a]` | -0.17 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl23/f_as: 2.5-3 b]` | 0.302 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl30/f]` |  | 5.10 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl30/f]` | 5.10 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_f_weight_cl20_f_body_a]` |  | 0.284 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q1_weight_cl20_f_body_a]` | 0.284 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v endx /f]` | 400 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v tam /f].parameter_id` | Q367 | Q76 | mismatch |
 
@@ -173,6 +170,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -200,4 +198,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_MuellerSchoell2020_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_MuellerSchoell2020_reference%0APaper%3A%20Mueller-Schoell_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 12:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:48 UTC</sub>

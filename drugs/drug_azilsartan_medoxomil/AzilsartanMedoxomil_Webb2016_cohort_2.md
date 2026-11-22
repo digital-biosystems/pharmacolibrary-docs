@@ -4,11 +4,11 @@
 
 # azilsartan medoxomil — `AzilsartanMedoxomil_Webb2016_cohort_2`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-07 07:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the peripheral compartment has an unreachable volume parameter and a missing dose unit for azilsartan medoxomil.
+> The record was rejected because the AUC∞ parameter (29337 ng·h/mL per mg/kg) has a unit dimension mismatch and the azilsartan metabolite is structurally unlinked.
 
-<div class="pk-model-meta" hidden drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Webb2016_cohort_2" status="rejected" stale="true" population="children and adolescents with hypertension and healthy adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Webb2016_cohort_2" status="rejected" stale="false" population="children and adolescents with hypertension and healthy adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokinetics and safety of azilsartan medoxomil in children and adolescents with hypertension as compared to healthy adults. European journal of clinical pharmacology 72(4):447-457 (2016).
@@ -16,7 +16,7 @@ Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokin
 
 ## Population and dosing
 
-**Population:** children and adolescents with hypertension and healthy adults · condition hypertension · age group mixed · n = : 29.
+**Population:** children and adolescents with hypertension and healthy adults · condition hypertension · age group mixed.
 
 **Dosing:** 20, 40, 60, 80 mg, oral, single.
 
@@ -42,7 +42,7 @@ Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokin
 
 ### Reviewer guidance
 
-**The record is rejected because the peripheral compartment has an unreachable volume parameter and a missing dose unit for azilsartan medoxomil.**
+**The record was rejected because the AUC∞ parameter (29337 ng·h/mL per mg/kg) has a unit dimension mismatch and the azilsartan metabolite is structurally unlinked.**
 
-The model structure defines a peripheral compartment, but the associated volume parameter is unlinked in the pharmacokinetic topology. Additionally, a reported dose unit could not be converted to standard SI units, leaving the parameter without a valid value. These structural and unit inconsistencies resulted in the record's refusal. Extracted — azilsartan: AUC∞ 2.93e+04 mg/kg, Cmax 4.6e+03 ng/mL, CLm,norm/F 0.03 L/h/kg, V2/F 0.23 L/kg; M-II: Cmax 768 ng/mL.
+The reported unit for AUC∞ is listed as mg/kg, which is dimensionally inconsistent with an area-under-the-curve quantity. Additionally, the model structure leaves the azilsartan metabolite as an orphan compartment with no path from the dose. A second reader also disputed the identification of several parameter entries in the record. Extracted — azilsartan: AUC∞ 2.93e+04 mg/kg, Cmax 4.6e+03 ng/mL, CLm,norm/F 0.03 L/h/kg, V2/F 0.23 L/kg; M-II: Cmax 768 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azilsartan_medoxomil, the second reading azilsartan medoxomil; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

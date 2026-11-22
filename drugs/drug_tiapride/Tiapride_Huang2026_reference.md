@@ -4,11 +4,11 @@
 
 # tiapride — `Tiapride_Huang2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-06 17:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the back-conversion rate constant (kmp) for tiapride, valued at 0.38, lacks a specified unit for dimensional verification.
+> The model was rejected because the extraction for the metabolic back-conversion rate constant was incomplete, omitting its value and unit.
 
-<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Huang2026_reference" status="rejected" stale="true" population="children and adolescents with tic disorders" measured-compound="tiapride" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Huang2026_reference" status="rejected" stale="false" population="children and adolescents with tic disorders" measured-compound="tiapride" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Huang W, Shen J, Luo X, Wu Y, Zheng Y, Zhou J et al. Population Pharmacokinetics of Tiapride in Children and Adolescents with Tic Disorders: Leveraging Plasma and Saliva Concentration to Guide Individualized Dosing. Drug design, development and therapy 20:587387 (2026).
@@ -41,7 +41,7 @@ Huang W, Shen J, Luo X, Wu Y, Zheng Y, Zhou J et al. Population Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Huang W, Shen J, Luo X, Wu Y, Zheng Y, Zhou J et al. Population Pharmacokinetics
 
 ### Reviewer guidance
 
-**The record was rejected because the back-conversion rate constant (kmp) for tiapride, valued at 0.38, lacks a specified unit for dimensional verification.**
+**The model was rejected because the extraction for the metabolic back-conversion rate constant was incomplete, omitting its value and unit.**
 
-The parameter kmp represents the first-order rate constant for back-conversion from a metabolite to its parent compound. Although a value of 0.38 is recorded, the specific unit required to validate the dimensional consistency of this structural parameter was not provided. Consequently, the parameter could not be converted to standard SI units, leading to the rejection of the model record. Extracted — tiapride: Vmax 34.7 mg/h, Km 762 ng/mL, kmp 0.38, kabs 0.219 h−1, CL/F 15.3 L/h, V/F 5.77 L.
+The record lists the back-conversion rate constant kmp with a value of 0.38 but lacks a corresponding unit field. This omission prevented the system from converting the value to standard units, leaving the parameter without a valid SI value. Consequently, a dimensionality check failed because the parameter's unit dimension could not be verified against its structural role. Extracted — tiapride: Vmax 34.7 mg/h, Km 762 ng/mL, kmp 0.38, kabs 0.219 h−1, CL/F 15.3 L/h, V/F 5.77 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of parameter: this record has none, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

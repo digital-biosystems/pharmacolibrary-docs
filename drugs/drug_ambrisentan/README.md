@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;ambrisentan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ambrisentan_Hill2020_reference&quot;,&quot;label&quot;:&quot;Hill_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ambrisentan_Okour2023_reference&quot;,&quot;label&quot;:&quot;Okour_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ambrisentan_Hill2020_reference&quot;,&quot;label&quot;:&quot;Hill_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ambrisentan_Okour2023_reference&quot;,&quot;label&quot;:&quot;Okour_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ambrisentan
 
@@ -25,13 +25,13 @@ Ambrisentan is an endothelin receptor antagonist used to treat pulmonary hyperte
 
 ## Start here
 
-> **Hill_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> children after Fontan surgery, n = 16. [Run it in the simulator](drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md?tab=Simulation) · [record](drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md)
+> **Hill_2020_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> children after Fontan surgery, n = 16. [Run it in the simulator](drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md?tab=Simulation) · [record](drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hill_2020 · CL ·/kg</text><circle cx="365.0" cy="30.0" r="4" fill="#78909c"><title>Hill_2020 · CL ·/kg: 1 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Okour_2023 · CL/F</text><circle cx="376.9" cy="46.0" r="4" fill="#ef6c00"><title>Okour_2023 · CL/F: 1.17 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hill_2020 · V ·/kg</text><circle cx="237.9" cy="30.0" r="4" fill="#78909c"><title>Hill_2020 · V ·/kg: 13.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Okour_2023 · V1/F</text><circle cx="221.5" cy="46.0" r="4" fill="#ef6c00"><title>Okour_2023 · V1/F: 12.3 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hill_2020 · CL ·/kg</text><circle cx="365.0" cy="30.0" r="4" fill="#ef6c00"><title>Hill_2020 · CL ·/kg: 1 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Okour_2023 · CL/F</text><circle cx="376.9" cy="46.0" r="4" fill="#ef6c00"><title>Okour_2023 · CL/F: 1.17 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hill_2020 · V ·/kg</text><circle cx="237.9" cy="30.0" r="4" fill="#ef6c00"><title>Hill_2020 · V ·/kg: 13.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Okour_2023 · V1/F</text><circle cx="221.5" cy="46.0" r="4" fill="#ef6c00"><title>Okour_2023 · V1/F: 12.3 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -39,27 +39,8 @@ Ambrisentan is an endothelin receptor antagonist used to treat pulmonary hyperte
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Hill_2020_reference](drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hill KD et al., A Randomized, Controlled Pharmacokineti…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002410](https://doi.org/10.1097/PCC.0000000000002410) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Okour_2023_reference](drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Okour M et al., Pediatric Population Pharmacokinetic Mo…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2199](https://doi.org/10.1002/jcph.2199) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ambrisentan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate, `UGT1A3` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: EDNRA (target), EDNRB (target).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Hill_2020_reference](drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hill KD et al., A Randomized, Controlled Pharmacokineti…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002410](https://doi.org/10.1097/PCC.0000000000002410) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Okour_2023_reference](drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Okour M et al., Pediatric Population Pharmacokinetic Mo…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2199](https://doi.org/10.1002/jcph.2199) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 30 matched, 30 returned
 - **screened:** 3  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

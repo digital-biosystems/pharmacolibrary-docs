@@ -1,5 +1,5 @@
 {
- "dose_source": "WHO ATC DDD 15 mg oral (N05CD08)",
+ "dose_source": "paper",
  "model_id": "Midazolam_Gade2020_reference",
  "molar_masses": {
   "central.C": 0.325767
@@ -8,27 +8,31 @@
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  14.0
+ ],
  "parameters": {
   "Cl": 3.3333333333333333e-06,
   "F": 0.9,
   "MM": 0.325767,
-  "Tlag": 6840.0,
+  "Tlag": 72.0,
   "VdPerKg": 0.00037142857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1.5e-05,
+  "adminMass": 1.4e-05,
   "k12": 0.0001709401709401709,
   "k21": 7.285974499089253e-05,
-  "ka": 3.888888888888889e-05,
+  "ka": 0.00014444444444444444,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 42471.34268537074
+  "central.C": 15929.45891783567
  },
  "reference_peaks": {
-  "central.C": 3.871630212449523e-05
+  "central.C": 5.269032095153747e-05
  },
- "stop_time": 104400.0,
+ "stop_time": 86400.0,
  "template": "PK_2C_enteral",
  "template_fmu": "PK_2C_enteral.fmu"
 }

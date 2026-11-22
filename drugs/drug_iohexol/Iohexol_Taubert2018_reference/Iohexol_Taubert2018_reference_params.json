@@ -25,10 +25,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662064
+  "central.C": 660.000000066208
  },
  "reference_peaks": {
-  "central.C": 0.07974893879975159
+  "central.C": 0.07974893879975155
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

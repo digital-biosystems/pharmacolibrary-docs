@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;beta-Zearalenol&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/&quot;},{&quot;label&quot;:&quot;Buranatragool_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BetaZearalenol_Qin2026_reference&quot;,&quot;label&quot;:&quot;Qin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_beta_zearalenol/BetaZearalenol_Qin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Rejection stems from assigning the elimination rate constant, defined as reciprocal time, a unit of hours instead of inverse hours.
 
 <div class="pk-model-meta" hidden drug="beta-Zearalenol" model-id="BetaZearalenol_Buranatragool2015_reference" status="rejected" stale="false" population="broiler chickens" measured-compound="beta-Zearalenol" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,7 +59,13 @@ Buranatragool K, Poapolathep S, Isariyodom S, Imsilp K, Klangkaew N, Poapolathep
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Rejection stems from assigning the elimination rate constant, defined as reciprocal time, a unit of hours instead of inverse hours.**
+
+The parameter kel, representing the terminal elimination rate constant, is recorded with a value of 0.53 and the unit h. This creates a dimensional inconsistency because rate constants must have dimensions of inverse time, whereas hours denote duration. The unit h was not recognized for conversion, preventing the assignment of a valid SI value and leading to the record's rejection. Extracted — zearalenone: kel 0.53 h, k12 1.33 h−1, k21 0.68 h−1, t1/2α 0.1 h, t1/2β 1.36 h, CL 0.34 L/h/kg, V 6.4 L/kg, MRT 2.1 h, … (+3).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

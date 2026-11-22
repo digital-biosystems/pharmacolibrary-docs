@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability was not estimated in this paper, so a placeholder value was used instead of an rilpivirine-specific estimate.
+> Bioavailability and lag time for rilpivirine were left at library defaults, while the abstract-only source failed independent verification.
 
 <div class="pk-model-meta" hidden drug="rilpivirine" model-id="Rilpivirine_Aouri2017_reference" status="needs_review" stale="false" population="HIV-1-infected adults" measured-compound="rilpivirine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Aouri M, Barcelo C, Guidi M, Rotger M, Cavassini M, Hizrel C et al. Population P
 
 ### Reviewer guidance
 
-**Bioavailability was not estimated in this paper, so a placeholder value was used instead of an rilpivirine-specific estimate.**
+**Bioavailability and lag time for rilpivirine were left at library defaults, while the abstract-only source failed independent verification.**
 
-Bioavailability lacked an explicit estimate from the paper, so a placeholder value would have been used. The record was built from the abstract alone, meaning the reported values for clearance (11.7 L/h), volume of distribution (401 L), mean absorption time (4 h), and absorption rate constant (0.000215 h−1) are population summary statistics that stand in for a fitted model. A second reader could not confirm these parameter values or even identify the drug as rilpivirine from the abstract text. Extracted — rilpivirine: CL 11.7 liters/h, V 401 liters, MAT 4 h, kabs 0.000215 h−1.
+The record lacks explicit estimates for bioavailability (F) and absorption lag time (Tlag), forcing the use of generic placeholders for the rilpivirine model. The review was disputed by a second reader, with an agreement ratio of 0.182, who identified the reported parameters as unknown or null. Because the data derives solely from the paper abstract, the summary statistics stand in for fitted model values, preventing independent validation of the extraction. Extracted — rilpivirine: CL 11.7 liters/h, V 401 liters, MAT 4 h, kabs 0.000215 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rilpivirine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -136,14 +136,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=rilpivirine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=rilpivirine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

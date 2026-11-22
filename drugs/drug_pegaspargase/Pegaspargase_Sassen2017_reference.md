@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;pegaspargase&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/&quot;},{&quot;label&quot;:&quot;Sassen_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegaspargase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegaspargase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pegaspargase — `Pegaspargase_Sassen2017_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="pegaspargase" model-id="Pegaspargase_Sassen2017_reference" status="simulated" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="2C"></div>
+> The paper concerns another drug, so the pegaspargase parameters were rejected, and a second reader disagreed on several parameter values.
+
+<div class="pk-model-meta" hidden drug="pegaspargase" model-id="Pegaspargase_Sassen2017_reference" status="rejected" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Sassen SD, Mathôt RA, Pieters R, Kloos RQ, de Haas V, Kaspers GJ et al. Population pharmacokinetics of intravenous Erwinia asparaginase in pediatric acute lymphoblastic leukemia patients. Haematologica 102(3):552-561 (2017).
@@ -27,6 +29,8 @@ Sassen SD, Mathôt RA, Pieters R, Kloos RQ, de Haas V, Kaspers GJ et al. Populat
 <figure class="pk-models-diagram"><img src="drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference/Pegaspargase_Sassen2017_reference.svg" alt="Pegaspargase_Sassen2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 0.44 | L/h/70kg |
@@ -36,7 +40,7 @@ Sassen SD, Mathôt RA, Pieters R, Kloos RQ, de Haas V, Kaspers GJ et al. Populat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Sassen SD, Mathôt RA, Pieters R, Kloos RQ, de Haas V, Kaspers GJ et al. Populat
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The paper concerns another drug, so the pegaspargase parameters were rejected, and a second reader disagreed on several parameter values.**
+
+The relevance screen rejected the paper because the subject was not pegaspargase. A second reader disagreed with the extraction of the intercompartmental clearance, finding a value of 0.64 where the record had none. Other parameter values were also disputed, resulting in an agreement ratio of 0.688. This discrepancy prevented verification of the model's validity for the intended molecule. Extracted — pegaspargase: CL 0.44 L/h/70kg, V1 3.2 L/70kg, V2 2.9 L/70kg, Q 0.15 L/h/70kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 14; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -118,14 +124,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pegaspargase) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | pegaspargase (or metabolite) | paper about another drug |  | paper subject is not pegaspargase: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pegaspargase) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.688, 0 of 1 reader(s) agree | 0.688 | cross-check disputed by a second reader: verdict disputed, agreement 0.688, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -137,60 +144,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference/Pegaspargase_Sassen2017_reference_modelica.zip" download>Pegaspargase_Sassen2017_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference/Pegaspargase_Sassen2017_reference_fmi.zip" download>Pegaspargase_Sassen2017_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference/Pegaspargase_Sassen2017_reference_matlab.zip" download>Pegaspargase_Sassen2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference/Pegaspargase_Sassen2017_reference_matlab_simbio.zip" download>Pegaspargase_Sassen2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference/Pegaspargase_Sassen2017_reference_sbml.zip" download>Pegaspargase_Sassen2017_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference/Pegaspargase_Sassen2017_reference_cellml.zip" download>Pegaspargase_Sassen2017_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 1.222e-07 | m3/s |
-| input | model | `VdPerKg` | 4.571e-05 | m3/kg |
-| input | model | `k12` | 1.302e-05 | 1/s |
-| input | model | `k21` | 1.437e-05 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Sassen SD, Mathôt RA, Pieters R, Kloos RQ, de Haas V, Kaspers GJ et al. Population pharmacokinetics of intravenous Erwinia asparaginase in pediatric acute lymphoblastic leukemia patients. Haematologica 102(3):552-561 (2017). [doi:10.3324/haematol.2016.149195](https://doi.org/10.3324/haematol.2016.149195)
-
-**This record:** Pharmacolibrary, model `Pegaspargase_Sassen2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference>
-
-```bibtex
-@misc{pharmacolibrary_PegaspargaseSassen2017reference,
-  title  = {{Pharmacolibrary model Pegaspargase_Sassen2017_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference},
-  note   = {Parameters from doi:10.3324/haematol.2016.149195},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

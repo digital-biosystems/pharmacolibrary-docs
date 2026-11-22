@@ -181,30 +181,13 @@ _All readers agree on the compared fields of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_rituximab/Rituximab_Zhenyan2026_chee_m_ng_et_al_58/Rituximab_Zhenyan2026_chee_m_ng_et_al_58_matlab.zip" download>Rituximab_Zhenyan2026_chee_m_ng_et_al_58_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_rituximab/Rituximab_Zhenyan2026_chee_m_ng_et_al_58/Rituximab_Zhenyan2026_chee_m_ng_et_al_58_matlab_simbio.zip" download>Rituximab_Zhenyan2026_chee_m_ng_et_al_58_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_rituximab/Rituximab_Zhenyan2026_chee_m_ng_et_al_58/Rituximab_Zhenyan2026_chee_m_ng_et_al_58_sbml.zip" download>Rituximab_Zhenyan2026_chee_m_ng_et_al_58_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_rituximab/Rituximab_Zhenyan2026_chee_m_ng_et_al_58/Rituximab_Zhenyan2026_chee_m_ng_et_al_58_cellml.zip" download>Rituximab_Zhenyan2026_chee_m_ng_et_al_58_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Zhenyan B, Huang L, Lu J, Chen Z, Jiang Z, Zeng L et al. The pharmacokinetics and its covariates of rituximab in different clinical populations: a systematic review and narrative synthesis. European journal of clinical pharmacology 82(8):197 (2026). [doi:10.1007/s00228-026-04127-2](https://doi.org/10.1007/s00228-026-04127-2)
-
-**This record:** Pharmacolibrary, model `Rituximab_Zhenyan2026_chee_m_ng_et_al_58`. <https://pharmacolibrary.github.io/#/drugs/toxin_rituximab/Rituximab_Zhenyan2026_chee_m_ng_et_al_58>
-
-```bibtex
-@misc{pharmacolibrary_RituximabZhenyan2026cheemngetal58,
-  title  = {{Pharmacolibrary model Rituximab_Zhenyan2026_chee_m_ng_et_al_58}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_rituximab/Rituximab_Zhenyan2026_chee_m_ng_et_al_58},
-  note   = {Parameters from doi:10.1007/s00228-026-04127-2},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;enfuvirtide&quot;,&quot;href&quot;:&quot;drugs/drug_enfuvirtide/&quot;},{&quot;label&quot;:&quot;Soy_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enfuvirtide_Soy2003_reference&quot;,&quot;label&quot;:&quot;Soy_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enfuvirtide/Enfuvirtide_Soy2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Enfuvirtide_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enfuvirtide/Enfuvirtide_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enfuvirtide_Soy2003_reference&quot;,&quot;label&quot;:&quot;Soy_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enfuvirtide/Enfuvirtide_Soy2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Enfuvirtide_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enfuvirtide/Enfuvirtide_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time for enfuvirtide were left at defaults rather than extracted from the abstract-only source text.
+> Enfuvirtide bioavailability and lag time defaulted to placeholders instead of using the paper's reported values.
 
 <div class="pk-model-meta" hidden drug="enfuvirtide" model-id="Enfuvirtide_Soy2003_reference" status="needs_review" stale="false" population="pediatric patients with human immunodeficiency virus" measured-compound="enfuvirtide" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Soy D, Aweeka FT, Church JA, Cunningham CK, Palumbo P, Kosel BW et al. Populatio
 
 ## Population and dosing
 
-**Population:** pediatric patients with human immunodeficiency virus · condition human immunodeficiency virus · age group child · n = &lt;unknown&gt;.
+**Population:** pediatric patients with human immunodeficiency virus · condition human immunodeficiency virus · age group child.
 
 ## Model
 
@@ -49,9 +49,9 @@ Soy D, Aweeka FT, Church JA, Cunningham CK, Palumbo P, Kosel BW et al. Populatio
 
 ### Reviewer guidance
 
-**Bioavailability and lag time for enfuvirtide were left at defaults rather than extracted from the abstract-only source text.**
+**Enfuvirtide bioavailability and lag time defaulted to placeholders instead of using the paper's reported values.**
 
-The record lacks explicit estimates for bioavailability and lag time, relying on library placeholders instead of paper-specific data. Additionally, the second reader found the absorption rate constant value of 0.455 h−1 unsupported, recording null for that parameter. Extracted — enfuvirtide: CL 1.42 L/h, V 5.67 L, kabs 0.455 h−1.
+The record was built from the abstract, so summary statistics stood in for a fitted model. Bioavailability (F) and lag time (Tlag) were not extracted, leaving them at library defaults rather than paper-supported estimates. The second reader also could not confirm the absorption rate constant value of 0.455. Extracted — enfuvirtide: CL 1.42 L/h, V 5.67 L, kabs 0.455 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.455, the second reading none. That field does not shape the model.
 
@@ -126,14 +126,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=enfuvirtide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=enfuvirtide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

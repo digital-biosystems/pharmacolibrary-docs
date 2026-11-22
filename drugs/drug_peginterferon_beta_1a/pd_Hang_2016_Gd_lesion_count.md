@@ -1,8 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;peginterferon beta-1a&quot;,&quot;href&quot;:&quot;drugs/drug_peginterferon_beta_1a/&quot;},{&quot;label&quot;:&quot;Hang_2016 \u00b7 PD Gd-enhanced lesion count&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hang_2016_Gd_lesion_count&quot;,&quot;label&quot;:&quot;Hang_2016 \u00b7 Gd+ lesion count&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_peginterferon_beta_1a/pd_Hang_2016_Gd_lesion_count.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Hang_2016_T2_lesion_count&quot;,&quot;label&quot;:&quot;Hang_2016 \u00b7 T2 lesion count&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_peginterferon_beta_1a/pd_Hang_2016_T2_lesion_count.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Gd-enhanced lesion count — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+# Gd-enhanced lesion count — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +15,7 @@
 
 **As extracted:** Peginterferon_beta_1a (the dose) drives Gd-enhanced lesion count: direct linear effect.
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 > Peginterferon β-1a inhibits Gd+ lesion count via a proportional mechanism driven by steady-state AUC (ng/mL h), using an empirical first-order exponential function for the temporal pattern of effect onset rather than an effect compartment. The slope of AUC effect on log(λ) is -0.0256, with baseline mean lesion counts of 0.48 for the lower activity subpopulation and 1.69 for the higher activity subpopulation.
 >
@@ -45,46 +44,21 @@ Hang Y et al., Analysis of peginterferon β-1a exposure…, Journal of pharmacok
 </details>
 
 
-## Exposure-response model
-
-`PeginterferonBeta1a_Hang2016_PD_gd_lesion_count` — linear, `response = E0 + slope*exposure`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0.48 | — |
-| slope | -0.0256 | — |
-
-Closed-form check points (response, SI): `at_0` = 0.48, `per_exposure_unit` = -0.0256
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | skipped | a line has no plateau to compare |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | pass | nothing defaulted |
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | peginterferon_beta_1a | peginterferon β-1a | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | linear | unknown | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` |  | 115 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` | 1.69 |  | only_one_extracted |
+| `gpt-oss-120b` | `driver_compound` | peginterferon_beta_1a | peginterferon β-1a | mismatch |
+| `gpt-oss-120b` | `model_family` | linear | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[Q100]` |  | 115 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q324]` | 1.69 |  | only_one_extracted |
 
 </details>
 
@@ -100,52 +74,19 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_modelica.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_fmi.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_LinearSweep.fmu" download>PD_LinearSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_matlab.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_sbml.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_cellml.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | model | `E0` | 0.48 |  |
-| input | model | `exposure_per_s` | 1 |  |
-| input | model | `slope` | -0.0256 |  |
-| output | concentration | `response` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `PeginterferonBeta1a_Hang2016_PD_gd_lesion_count`. <https://pharmacolibrary.github.io/#/drugs/drug_peginterferon_beta_1a/pd_Hang_2016_Gd_lesion_count>
-
-```bibtex
-@misc{pharmacolibrary_PeginterferonBeta1aHang2016PDgdlesioncount,
-  title  = {{Pharmacolibrary model PeginterferonBeta1a_Hang2016_PD_gd_lesion_count}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_peginterferon_beta_1a/pd_Hang_2016_Gd_lesion_count},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_params.json` · controls `PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

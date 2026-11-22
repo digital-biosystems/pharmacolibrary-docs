@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The obinutuzumab model was rejected because a required pharmacokinetic unit could not be converted to SI standards.
+> The model was rejected because the peripheral compartment is structurally unreachable from the dose, and the decay coefficient lacks a valid value.
 
 <div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2019_reference" status="rejected" stale="false" population="patients with CD20+ B-cell malignancies (CLL, NHL, FL, DLBCL, MCL)" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Gibiansky E, Gibiansky L, Buchheit V, Frey N, Brewster M, Fingerle-Rowson G et a
 
 ## Population and dosing
 
-**Population:** patients with CD20+ B-cell malignancies (CLL, NHL, FL, DLBCL, MCL) · condition CD20+ B-cell malignancies · age group adult · n = #961.
+**Population:** patients with CD20+ B-cell malignancies (CLL, NHL, FL, DLBCL, MCL) · condition CD20+ B-cell malignancies · age group adult.
 
 **Dosing:** 1000 mg, iv, multiple, every 28 h.
 
@@ -49,9 +49,9 @@ Gibiansky E, Gibiansky L, Buchheit V, Frey N, Brewster M, Fingerle-Rowson G et a
 
 ### Reviewer guidance
 
-**The obinutuzumab model was rejected because a required pharmacokinetic unit could not be converted to SI standards.**
+**The model was rejected because the peripheral compartment is structurally unreachable from the dose, and the decay coefficient lacks a valid value.**
 
-The record lists the peripheral volume of distribution (V2) as 1.23 L, but this unit was not recognized for standardization. Consequently, the parameter lacked a valid SI value for structural analysis. The second reader also noted the omission of a clearance value (0.154) and a bone marrow covariate effect (0.8759). Extracted — obinutuzumab: Cavg -0.0027 mg/L, CL 0.11 day−1, V2 1.23 L.
+A structural check confirmed the peripheral compartment has no path from the dose, rendering it an orphan. The parameter labeled total clearance (CL) holds the value 0.11 day−1, which is actually the decay coefficient for time-dependent clearance, not total clearance. A second reader disagreed on the total clearance value, recording 0.154 where the record has null, and also disagreed on the assignment of the peripheral volume and decay coefficient parameters. The peripheral volume of distribution is 1.23 L. Extracted — obinutuzumab: Cavg -0.0027 mg/L, CL 0.11 day−1, V2 1.23 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clt: this record has none, the second reading 0.154; it also differs on 3 more fields. That field does not shape the model.
 

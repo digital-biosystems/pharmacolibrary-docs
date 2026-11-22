@@ -5,11 +5,11 @@
 
 # defibrotide — `Defibrotide_Pescador1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 16:22 UTC (Rejected), but the paper was screened again on 2026-10-05 14:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Defibrotide's two-compartment model was rejected because the AUC unit ng*h/mL is not recognized.
+> Defibrotide record rejected because the fast-phase rate constant lacks a unit, preventing SI conversion, and conflicting values exist for half-life.
 
-<div class="pk-model-meta" hidden drug="defibrotide" model-id="Defibrotide_Pescador1983_reference" status="rejected" stale="true" population="rabbits" measured-compound="defibrotide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="defibrotide" model-id="Defibrotide_Pescador1983_reference" status="rejected" stale="false" population="rabbits" measured-compound="defibrotide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Pescador R, Mantovani M, Prino G, Madonna M. Pharmacokinetics of Defibrotide and of its profibrinolytic activity in the rabbit. Thrombosis research 30(1):1–11 (1983).
@@ -46,7 +46,7 @@ Pescador R, Mantovani M, Prino G, Madonna M. Pharmacokinetics of Defibrotide and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Pescador R, Mantovani M, Prino G, Madonna M. Pharmacokinetics of Defibrotide and
 
 ### Reviewer guidance
 
-**Defibrotide's two-compartment model was rejected because the AUC unit ng*h/mL is not recognized.**
+**Defibrotide record rejected because the fast-phase rate constant lacks a unit, preventing SI conversion, and conflicting values exist for half-life.**
 
-The reported AUC unit ng*h/mL could not be converted to SI units, preventing the parameter from being processed. Additionally, a second reader disagreed on multiple values, such as k21 (0.357 vs 0.529) and the terminal half-life (12.83 vs 6.19 hours). Extracted — defibrotide: λ1 0.6, kel 0.054 1/h, k12 0.209 1/h, k21 0.357 1/h, AUC 1.65e+04 ng*h/mL, t1/2z 12.8 h, V 107 L, V2 13.9 L.
+The macro-rate constant λ1 (0.60) has no unit specified, so it could not be converted to SI units. The second reader recorded a terminal half-life of 4.95 hours, disagreeing with the recorded value of 12.83 hours. Extracted — defibrotide: λ1 0.6, kel 0.054 1/h, k12 0.209 1/h, k21 0.357 1/h, AUC 1.65e+04 ng*h/mL, t1/2z 12.8 h, V 107 L, V2 13.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 5: this record has none, the second reading 4.95; it also differs on 8 more fields. That field does not shape the model.
 

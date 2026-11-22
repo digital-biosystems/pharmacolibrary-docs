@@ -5,11 +5,11 @@
 
 # vortioxetine — `Vortioxetine_Areberg2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:59 UTC (Rejected), but the paper was screened again on 2026-10-07 19:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vortioxetine record rejected for missing volume and elimination clearance, indicating it is not a compartmental population PK model.
+> The vortioxetine record lacks distribution volume and elimination clearance, and the absorption rate constant unit was unconvertible to standard time.
 
-<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="rejected" stale="true" population="healthy individuals" measured-compound="vortioxetine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="rejected" stale="false" population="healthy individuals" measured-compound="vortioxetine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Areberg J, Petersen KB, Chen G, Naik H. Population pharmacokinetic meta-analysis of vortioxetine in healthy individuals. Basic & clinical pharmacology & toxicology 115(6):552–559 (2014).
@@ -40,7 +40,7 @@ Areberg J, Petersen KB, Chen G, Naik H. Population pharmacokinetic meta-analysis
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Areberg J, Petersen KB, Chen G, Naik H. Population pharmacokinetic meta-analysis
 
 ### Reviewer guidance
 
-**Vortioxetine record rejected for missing volume and elimination clearance, indicating it is not a compartmental population PK model.**
+**The vortioxetine record lacks distribution volume and elimination clearance, and the absorption rate constant unit was unconvertible to standard time.**
 
-The record lacks any distribution volume or elimination clearance parameters, containing only absorption and intercompartmental clearances. This confirms the paper is an exposure/outcome study rather than a full population pharmacokinetic analysis. A dimension mismatch was also flagged on a structural parameter, and a reported unit failed conversion to standard SI units. Extracted — vortioxetine: kabs 0.142 ka, Q 22.5 L/hr.
+The extracted parameters include no clearance or elimination rate, so the model is not a compartmental population PK model. The absorption rate constant was recorded with a unit that could not be converted to standard SI units, preventing its use in the model structure. Extracted — vortioxetine: kabs 0.142 ka, Q 22.5 L/hr.
 
 Independently confirmed by `gpt-oss-120b`.
 

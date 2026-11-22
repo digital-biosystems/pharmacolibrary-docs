@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Lithium nitrate&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/&quot;},{&quot;label&quot;:&quot;Jin_2022 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LithiumNitrate_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_base&quot;,&quot;label&quot;:&quot;Jin_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_base.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_base_base_model_parameter_estimates_r&quot;,&quot;label&quot;:&quot;Jin_2022_base_base_model_parameter_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_base_base_model_parameter_estimates_r.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_final&quot;,&quot;label&quot;:&quot;Jin_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_final.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_final_final_model_parameter_estimates&quot;,&quot;label&quot;:&quot;Jin_2022_final_final_model_parameter_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_final_final_model_parameter_estimates.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Yuan2021_reference&quot;,&quot;label&quot;:&quot;Yuan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Yuan2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LithiumNitrate_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_base&quot;,&quot;label&quot;:&quot;Jin_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_base_base_model_parameter_estimates_r&quot;,&quot;label&quot;:&quot;Jin_2022_base_base_model_parameter_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_base_base_model_parameter_estimates_r.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_final&quot;,&quot;label&quot;:&quot;Jin_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;LithiumNitrate_Jin2022_final_final_model_parameter_estimates&quot;,&quot;label&quot;:&quot;Jin_2022_final_final_model_parameter_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Jin2022_final_final_model_parameter_estimates.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LithiumNitrate_Yuan2021_reference&quot;,&quot;label&quot;:&quot;Yuan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lithium_nitrate/LithiumNitrate_Yuan2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Lithium nitrate — `LithiumNitrate_Jin2022_final`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Lithium nitrate" model-id="LithiumNitrate_Jin2022_final" status="extracted" stale="false" population="Chinese patients with bipolar disorder" measured-compound="Lithium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Lithium nitrate" model-id="LithiumNitrate_Jin2022_final" status="simulated" stale="false" population="Chinese patients with bipolar disorder" measured-compound="Lithium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jin ZB, Wu Z, Cui YF, Liu XP, Liang HB, You JY et al. Population Pharmacokinetics and Dosing Regimen of Lithium in Chinese Patients With Bipolar Disorder. Frontiers in pharmacology 13:913935 (2022).
@@ -40,9 +38,13 @@ Jin ZB, Wu Z, Cui YF, Liu XP, Liang HB, You JY et al. Population Pharmacokinetic
 | theta_cl_wt | theta_cl_wt | 0.33 |  | 29 |  |
 | theta_cl_crcl | theta_cl_crcl | 0.186 |  | 29 |  |
 
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +52,13 @@ Jin ZB, Wu Z, Cui YF, Liu XP, Liang HB, You JY et al. Population Pharmacokinetic
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is lithium nitrate's own; they describe Lithium.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -105,6 +113,18 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.909 L/h | ['T2:row2:col3'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 10.9 L | ['T2:row3:col3'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=Lithium) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

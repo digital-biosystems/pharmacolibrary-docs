@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Ambrisentan_Okour2023_reference",
  "molar_masses": {
   "central.C": 0.378428
@@ -29,10 +30,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3595.9758954220106
+  "central.C": 3595.975895422212
  },
  "reference_peaks": {
-  "central.C": 6.607511013868678e-05
+  "central.C": 6.607511013868111e-05
  },
  "stop_time": 136800.0,
  "template": "PK_2C_enteral",

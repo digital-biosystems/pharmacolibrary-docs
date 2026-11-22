@@ -5,11 +5,11 @@
 
 # tolmetin — `Tolmetin_Migdalof1976_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:36 UTC (Rejected), but the paper was screened again on 2026-10-07 01:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="tolmetin" model-id="Tolmetin_Migdalof1976_reference" status="needs_review" stale="true" population="rats and mice" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolmetin" model-id="Tolmetin_Migdalof1976_reference" status="needs_review" stale="false" population="rats and mice" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Migdalof BH, Yorgey KA, Popkave CG. The time course of tolmetin and its metabolites in the plasma of individual rats and mice. Drug metabolism and disposition: the biological fate of chemicals 4(5):468–473 (1976).
@@ -36,7 +36,7 @@ Migdalof BH, Yorgey KA, Popkave CG. The time course of tolmetin and its metaboli
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Migdalof BH, Yorgey KA, Popkave CG. The time course of tolmetin and its metaboli
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tolmetin: t1/2z 0.67 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tolmetin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

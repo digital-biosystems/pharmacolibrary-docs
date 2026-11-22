@@ -39,7 +39,7 @@ Mathis A, Sale M, Cornpropst M, Sheridan WP, Ma SC. Population pharmacokinetic m
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Mathis A, Sale M, Cornpropst M, Sheridan WP, Ma SC. Population pharmacokinetic m
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC, Cmax and AUCSS), so that value has no SI equivalent.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of accumulation ratio: this record has none, the second reading 3.07. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of accumulation ratio: this record has none, the second reading 3.07. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -93,13 +93,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[accumulation ratio]` |  | 3.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[accumulation ratio]` |  | 3.07 | only_one_extracted |
 
 </details>
 

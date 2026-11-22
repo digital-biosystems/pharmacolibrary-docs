@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Moxidectin apparent clearance 4.47 L/h and volume 136 L yield a half-life of 109 hours, conflicting with the paper's 278 hours.
+> The two-compartment moxidectin model's terminal half-life of 109 hours disagrees with the paper's 278 hours.
 
 <div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Smit2022_reference" status="needs_review" stale="false" population="adults infected with Strongyloides stercoralis" measured-compound="moxidectin" parameterization="apparent" topology="2C"></div>
 
@@ -62,9 +62,9 @@ Smit C, Hofmann D, Sayasone S, Keiser J, Pfister M. Characterization of the Popu
 
 ### Reviewer guidance
 
-**Moxidectin apparent clearance 4.47 L/h and volume 136 L yield a half-life of 109 hours, conflicting with the paper's 278 hours.**
+**The two-compartment moxidectin model's terminal half-life of 109 hours disagrees with the paper's 278 hours.**
 
-The terminal half-life check failed, comparing the model's 109 against the expected 278. The record defines covariate effects for weight, including a 0.75 exponent, but these were not exercised in the simulation. Additionally, the model builder substituted an assumption of unit bioavailability for the apparent parameters. Extracted — moxidectin: tlag 1.64 h, kabs 3.38 /h, CL/F 4.47 L/h, V1/F 136 L, Q/F 10 L/h, V2/F 1.17e+03 L.
+The simulated terminal half-life differs from the paper's value, with a comparison ratio of 0.3935. Weight covariate effects were not exercised during simulation, despite being defined in the record. A second reader disagreed on the assignment of specific weight covariate exponents, resulting in an agreement ratio of 0.63. Extracted — moxidectin: tlag 1.64 h, kabs 3.38 /h, CL/F 4.47 L/h, V1/F 136 L, Q/F 10 L/h, V2/F 1.17e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[q/fpop [l/h]].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -203,7 +203,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=moxidectin) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.63, 0 of 1 reader(s) agree | 0.63 | cross-check disputed by a second reader: verdict disputed, agreement 0.63, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 278 | 109.4 | 0.3935 | h→SI vs simulated h |
 
 <details class="legend">

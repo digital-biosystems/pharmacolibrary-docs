@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Soria-Chacartegui_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chun_2025_VAS&quot;,&quot;label&quot;:&quot;Chun_2025 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/pd_Chun_2025_VAS.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chun_2025_VAS&quot;,&quot;label&quot;:&quot;Chun_2025 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/pd_Chun_2025_VAS.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tramadol — `Tramadol_SoriaChacartegui2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:37 UTC (Needs review), but the paper was screened again on 2026-10-22 11:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tramadol F and Tlag defaulted, causing simulated Cmax 0.000128 vs paper 0.000136, tmax 0.974 vs 0.81, and half-life 2.89 vs 4.5 hours.
+> MTT has no unit.
 
-<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_SoriaChacartegui2026_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_SoriaChacartegui2026_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Soria-Chacartegui P, Würthwein G, Zubiaur P, Almenara S, Ochoa D, Abad-Santos F et al. Role of Pharmacogenetics on Tramadol Pharmacokinetics: A Population Pharmacokinetic Model. European journal of drug metabolism and pharmacokinetics 51(2):205–216 (2026).
@@ -17,18 +17,16 @@ Soria-Chacartegui P, Würthwein G, Zubiaur P, Almenara S, Ochoa D, Abad-Santos F
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;= 24.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 37.5 mg, oral, single.
 
 ## Model
 
-**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 6 extracted, plus 2 covariate effects.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference.svg" alt="Tramadol_SoriaChacartegui2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -44,13 +42,9 @@ Soria-Chacartegui P, Würthwein G, Zubiaur P, Almenara S, Ochoa D, Abad-Santos F
 | theta_cl_cyp2d6 | theta_cl_cyp2d6 | -0.198 | L/h | 30.7 |  |
 | theta_v1_weight | theta_v1_weight | 0.0311 | L | 31.3 |  |
 
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.464). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.464). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,13 +54,13 @@ Soria-Chacartegui P, Würthwein G, Zubiaur P, Almenara S, Ochoa D, Abad-Santos F
 
 ### Reviewer guidance
 
-**Tramadol F and Tlag defaulted, causing simulated Cmax 0.000128 vs paper 0.000136, tmax 0.974 vs 0.81, and half-life 2.89 vs 4.5 hours.**
+**MTT has no unit.**
 
-The record lacks explicit bioavailability and lag time estimates, forcing the simulation to use library defaults rather than paper-specific values. Consequently, the model's peak concentration, time to peak, and terminal half-life all deviate from the paper's reported pharmacokinetic metrics. The defined covariate effects on clearance and volume were not exercised, and a reported unit could not be converted to SI. Extracted — tramadol: CL 51.1 L/h, V1 126 L, kabs 3.09 h−1, MTT 0.24 h, Q 175 L/h, V2 171 L.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT, theta_cl_cyp2d6 and theta_v1_weight), so that value has no SI equivalent. Extracted — tramadol: CL 51.1 L/h, V1 126 L, kabs 3.09 h−1, MTT 0.24 h, Q 175 L/h, V2 171 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-24: this record has 2.43, the second reading none; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -87,9 +81,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
 - table representations disagree for 'CL (L/h)'; source reconciliation required
@@ -180,41 +171,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C9_phys_window_Q63 | pass | volume within physiological range | 126 L |  |  | ['Tab2:row3:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 171 L |  |  | ['Tab2:row8:col1'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=tramadol) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| T1_cmax | reference | pass | 0.000136 | 0.0001279 | 0.9406 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.000139 | 0.0001279 | 0.9203 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 9.8e-07 | 0.0001279 | 130.5 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 3.24e-06 | 0.0001279 | 39.48 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.000139 | 0.0001279 | 0.9203 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.00014 | 0.0001279 | 0.9137 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000185 | 0.0001279 | 0.6915 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000203 | 0.0001279 | 0.6302 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | fail | 4.5 | 2.885 | 0.6412 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.9 | 2.885 | 0.5889 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.92 | 2.885 | 3.136 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8.05 | 2.885 | 0.3584 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.2 | 2.885 | 0.687 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.3 | 2.885 | 0.5444 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.2 | 2.885 | 0.687 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.3 | 2.885 | 0.5444 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 0.81 | 0.9741 | 1.203 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.75 | 0.9741 | 1.299 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.04 | 0.9741 | 0.9366 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 8 | 0.9741 | 0.1218 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.71 | 0.9741 | 1.372 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.75 | 0.9741 | 1.299 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.7 | 0.9741 | 1.392 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.73 | 0.9741 | 1.334 | h→SI vs simulated h |
-
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -230,41 +186,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_modelica.zip" download>Tramadol_SoriaChacartegui2026_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_fmi.zip" download>Tramadol_SoriaChacartegui2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_fmi.zip" download>Tramadol_SoriaChacartegui2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_matlab.zip" download>Tramadol_SoriaChacartegui2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_matlab_simbio.zip" download>Tramadol_SoriaChacartegui2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_sbml.zip" download>Tramadol_SoriaChacartegui2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_cellml.zip" download>Tramadol_SoriaChacartegui2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2634 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 3.75e-05 | kg |
-| input | model | `Cl` | 1.419e-05 | m3/s |
-| input | model | `VdPerKg` | 0.0018 | m3/kg |
-| input | model | `k12` | 0.0003858 | 1/s |
-| input | model | `k21` | 0.0002843 | 1/s |
-| input | model | `ka` | 0.0008583 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -285,11 +214,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 37.5 mg, single dose, first-order absorption (ka 3.09 /h, F 0.9). Dose in the paper: 37.5 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Tramadol_SoriaChacartegui2026_reference_params.json` · controls `Tramadol_SoriaChacartegui2026_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

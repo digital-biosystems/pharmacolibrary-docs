@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/&quot;},{&quot;label&quot;:&quot;Chigutsa_2020 \u00b7 variability_a_a_see&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 Tumor size (sum of longest diameters of target lesions)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abemaciclib — `Abemaciclib_Chigutsa2020_variability_a_a_see`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:14 UTC (Rejected), but the paper was screened again on 2026-10-06 20:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Metabolite M2 is an orphan compartment lacking an elimination pathway, and the transit compartment bioavailability has a non-standard unit.
+> Abemaciclib’s absorption rate constant is recorded as 77.3 µmol/h, conflicting with the required inverse-time dimension and contributing to rejection.
 
-<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_variability_a_a_see" status="rejected" stale="true" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_variability_a_a_see" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner PK. Development and Application of a Mechanistic Population Modeling Approach to Describe Abemaciclib Pharmacokinetics. CPT: pharmacometrics & systems pharmacology 9(9):523–533 (2020).
@@ -49,7 +48,7 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +58,13 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 ### Reviewer guidance
 
-**Metabolite M2 is an orphan compartment lacking an elimination pathway, and the transit compartment bioavailability has a non-standard unit.**
+**Abemaciclib’s absorption rate constant is recorded as 77.3 µmol/h, conflicting with the required inverse-time dimension and contributing to rejection.**
 
-Metabolite M2 (LSN2839567) is defined in the central compartment but lacks an elimination link to any sink, making it an unreachable or orphan metabolite in the model structure. The parameter 'Fraction of F a absorbed via transit compartment' (7.08) is assigned the unit '%SEE', which was not converted to a standard quantity. Additionally, the second reader disagreed with the extracted values for multiple parameters, including the absorption lag time, central volume, and maximum absorption rate. Extracted — abemaciclib: Fab 7.08 %SEE, kabs 77.3 µmol/h, MTT 71.9 h, V1 68.6 L, Q 7.08 L/h, V2 7.08 L, D1 638 h, tlag 7.08 h; M2 (LSN2839567): CL 41.9 L/h; M20 (LSN3106726): CL 42.5 L/h.
+The reported unit could not be converted to SI, and µmol/h is dimensionally inconsistent with an absorption rate constant, which has units of 1/time. M2 and M20 are listed as metabolites of abemaciclib but were flagged as having no modeled path from the dose; neither metabolism link has an identified link parameter. Extracted — abemaciclib: Fab 7.08 %SEE, kabs 77.3 µmol/h, MTT 71.9 h, V1 68.6 L, Q 7.08 L/h, V2 7.08 L, D1 638 h, tlag 7.08 h; M2 (LSN2839567): CL 41.9 L/h; M20 (LSN3106726): CL 42.5 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has abemaciclib → m2 (lsn2839567) (metabolism); abemaciclib → m20 (lsn3106726) (metabolism), the second reading abemaciclib → m2 (metabolism); abemaciclib → m20 (metabolism); it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

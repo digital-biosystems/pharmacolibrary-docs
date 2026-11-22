@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not specify the mechanism or pharmacodynamic parameters linking ammonium bromide to the lysosomal stability index, as no model details, potency values, or rate constants are provided in the record or excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Bindu_2005`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

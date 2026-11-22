@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;angiotensin II&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/&quot;},{&quot;label&quot;:&quot;Moran_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ghatta_2004_Ang_II&quot;,&quot;label&quot;:&quot;Ghatta_2004 \u00b7 Ang II&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Ghatta_2004_Ang_II.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_DBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_SBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Saris_2000_FBF&quot;,&quot;label&quot;:&quot;Saris_2000 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Saris_2000_FBF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xu_2014_Aldo&quot;,&quot;label&quot;:&quot;Xu_2014 \u00b7 Aldo&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Xu_2014_Aldo.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baan_1997_FBF&quot;,&quot;label&quot;:&quot;Baan_1997 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Baan_1997_FBF.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ghatta_2004_Ang_II&quot;,&quot;label&quot;:&quot;Ghatta_2004 \u00b7 Ang II&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Ghatta_2004_Ang_II.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_DBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lagunas_Herrera_2019_SBP&quot;,&quot;label&quot;:&quot;Lagunas-Herrera_2019 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Lagunas_Herrera_2019_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Saris_2000_FBF&quot;,&quot;label&quot;:&quot;Saris_2000 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Saris_2000_FBF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xu_2014_Aldo&quot;,&quot;label&quot;:&quot;Xu_2014 \u00b7 Aldo&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Xu_2014_Aldo.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baan_1997_FBF&quot;,&quot;label&quot;:&quot;Baan_1997 \u00b7 FBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/pd_Baan_1997_FBF.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance was incorrectly recorded as 1.4 ml/min with volume units instead of a volume parameter.
+> Angiotensin II’s reported volume of distribution, 0.5 ml/min, has an implausible magnitude or unit/scale, so the record was rejected.
 
 <div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Moran1985_reference" status="rejected" stale="false" population="" measured-compound="angiotensin_ii" parameterization="apparent" topology="1C"></div>
 
@@ -36,7 +36,7 @@ Moran SM, Myers BD. Pathophysiology of protracted acute renal failure in man. Th
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +46,13 @@ Moran SM, Myers BD. Pathophysiology of protracted acute renal failure in man. Th
 
 ### Reviewer guidance
 
-**Clearance was incorrectly recorded as 1.4 ml/min with volume units instead of a volume parameter.**
+**Angiotensin II’s reported volume of distribution, 0.5 ml/min, has an implausible magnitude or unit/scale, so the record was rejected.**
 
-The parameter labeled 'Patient 1 V' was extracted as clearance with a value of 1.4 ml/min, conflicting with the 'Patient 2 V' volume entry of 0.5 ml/min. This mismatch triggered a rejection because the clearance value was assigned volume units, indicating an extraction error. The second reader found no agreement on these specific parameter values. Extracted — angiotensin ii: CLu 1.4 ml/min, V 0.5 ml/min.
+The record gives angiotensin II an unbound clearance of 1.4 ml/min and a volume of distribution of 0.5 ml/min. The volume is reported in clearance units, consistent with the cited unit/scale extraction concern. Extracted — angiotensin ii: CLu 1.4 ml/min, V 0.5 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 9.6, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 9.6, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -79,17 +79,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.0 (0/5 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.0 (0/5 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 9.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q24]` | 1.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q44]` |  | -44 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q56]` | 50 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q61]` | 0.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 9.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q24]` | 1.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` |  | -44 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 50 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 0.5 |  | only_one_extracted |
 
 </details>
 

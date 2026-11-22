@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record lists manganese dose (mg/kgbw/day) as the driver for adverse health outcomes (severity score) in probability units, but the model family is categorical with an unknown effect form and direction. The paper excerpts are unavailable, so no mechanism, potency, or rate parameters are provided.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Milton_2017`
 - **model family:** `categorical`
 - **driver:** `dose_only`

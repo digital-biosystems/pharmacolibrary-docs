@@ -16,7 +16,7 @@ Beer PM, Bakri SJ, Singh RJ, Liu W, Peters GB, Miller M. Intraocular concentrati
 
 ## Population and dosing
 
-**Population:** elderly patients with macular edema · condition macular edema · age group elderly · n = &gt;=5.
+**Population:** elderly patients with macular edema · condition macular edema · age group elderly.
 
 **Dosed compound ≠ measured compound:** dosed triamcinolone acetonide, measured triamcinolone.
 
@@ -34,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has triamcinolone, the second reading triamcinolone acetonide; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has triamcinolone, the second reading triamcinolone acetonide; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -84,19 +84,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[half-lives]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-lives]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[integral of the area under the concentration-time curve (auc(0-t))]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[integral of the area under the concentration-time curve (auc(0-t))]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peak aqueous humor concentrations]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peak aqueous humor concentrations]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | triamcinolone | triamcinolone acetonide | mismatch |
+| `gpt-oss-120b` | `parameters[half-lives]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-lives]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[integral of the area under the concentration-time curve (auc(0-t))]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[integral of the area under the concentration-time curve (auc(0-t))]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak aqueous humor concentrations]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak aqueous humor concentrations]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | triamcinolone | triamcinolone acetonide | mismatch |
 
 </details>
 

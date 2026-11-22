@@ -74,7 +74,7 @@ Hydroquinone, also benzene-1,4-diol, is an aromatic organic compound which is a 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-12 19:49 | 44:41 | 3/2/0 | 1/0/0 | 0/0/0 | 1,004,372/63,906 | einfracz / qwen3.8-flash-next | 26 | 2/17 | 26/0 | 0 |
+| 2026-11-12 19:49 | 44:41 | 3/2/0 | 2/0/0 | 0/0/0 | 1,004,372/63,906 | einfracz / qwen3.8-flash-next | 26 | 2/17 | 26/0 | 0 |
 
 ## Coverage
 

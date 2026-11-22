@@ -17,7 +17,7 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ## Population and dosing
 
-**Population:** patients with renal impairment and healthy volunteers · condition renal impairment · age group adult · n = &gt;=16.
+**Population:** patients with renal impairment and healthy volunteers · condition renal impairment · age group adult.
 
 ## Model
 

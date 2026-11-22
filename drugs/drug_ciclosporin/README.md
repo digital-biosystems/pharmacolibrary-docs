@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ciclosporin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Albitar_2022_eGFR&quot;,&quot;label&quot;:&quot;Albitar_2022 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wan_2025_EASI&quot;,&quot;label&quot;:&quot;Wan_2025 \u00b7 EASI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Wan_2025_EASI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wan_2025_o_SCORAD&quot;,&quot;label&quot;:&quot;Wan_2025 \u00b7 o-SCORAD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Wan_2025_o_SCORAD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Albitar_2022_eGFR&quot;,&quot;label&quot;:&quot;Albitar_2022 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wan_2025_EASI&quot;,&quot;label&quot;:&quot;Wan_2025 \u00b7 EASI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Wan_2025_EASI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wan_2025_o_SCORAD&quot;,&quot;label&quot;:&quot;Wan_2025 \u00b7 o-SCORAD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Wan_2025_o_SCORAD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ciclosporin
 
@@ -24,13 +24,13 @@ Ciclosporin is a calcineurin inhibitor that functions as an immunosuppressant fo
 
 ## Start here
 
-> **Kauv_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md?tab=Simulation) · [record](drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md)
+> **Han_2013_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> transplant recipients. [Run it in the simulator](drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md?tab=Simulation) · [record](drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Han_2013 · CL</text><circle cx="319.9" cy="30.0" r="4" fill="#ef6c00"><title>Han_2013 · CL: 23.5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kauv_2025 · CL/F</text><circle cx="244.4" cy="46.0" r="4" fill="#78909c"><title>Kauv_2025 · CL/F: 14.3 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Han_2013 · CL/F</text><circle cx="443.5" cy="62.0" r="4" fill="#ef6c00"><title>Han_2013 · CL/F: 53 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Han_2013 · V</text><circle cx="360.6" cy="30.0" r="4" fill="#ef6c00"><title>Han_2013 · V: 94.4 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2013 · V/F</text><circle cx="427.3" cy="46.0" r="4" fill="#ef6c00"><title>Han_2013 · V/F: 227 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kauv_2025 · V1</text><circle cx="266.6" cy="62.0" r="4" fill="#78909c"><title>Kauv_2025 · V1: 27.4 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Han_2013 · CL</text><circle cx="319.9" cy="30.0" r="4" fill="#ef6c00"><title>Han_2013 · CL: 23.5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2013 · CL/F</text><circle cx="443.5" cy="46.0" r="4" fill="#ef6c00"><title>Han_2013 · CL/F: 53 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Han_2013 · V</text><circle cx="360.6" cy="30.0" r="4" fill="#ef6c00"><title>Han_2013 · V: 94.4 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2013 · V/F</text><circle cx="427.3" cy="46.0" r="4" fill="#ef6c00"><title>Han_2013 · V/F: 227 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -38,9 +38,9 @@ Ciclosporin is a calcineurin inhibitor that functions as an immunosuppressant fo
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kauv_2025_reference](drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub> | [Han_2013_reference](drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013) | [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Gao_2022_reference](drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference.md) | — | 2-compartment (no model) | 6 | Gao X et al., Population Pharmacokinetics of Cyclospo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.933739](https://doi.org/10.3389/fphar.2022.933739) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Kauv_2025_reference](drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
 
 ## Pharmacodynamics (PD)
 
@@ -50,29 +50,6 @@ Ciclosporin is a calcineurin inhibitor that functions as an immunosuppressant fo
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Albitar_2022_eGFR](drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md) | renal graft function response, quantified as estimated glomerular filtration rate (eGFR) ← cyclosporine · direct Emax (saturable) effect | ▶ model + simulator | Albitar O et al., Time-Dissociated Pharmacokinetic Pharma…, Therapeutic drug monitoring (2022) | [10.1097/FTD.0000000000000916](https://doi.org/10.1097/FTD.0000000000000916) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wan_2025_EASI](drugs/drug_ciclosporin/pd_Wan_2025_EASI.md) | EASI scores ← ciclosporin · direct linear effect | ▶ model + simulator | Wan M et al., Exposure-response of ciclosporin and me…, Clinical and experimental d… (2025) | [10.1093/ced/llaf147](https://doi.org/10.1093/ced/llaf147) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wan_2025_o_SCORAD](drugs/drug_ciclosporin/pd_Wan_2025_o_SCORAD.md) | o-SCORAD scores ← ciclosporin · direct linear effect | ▶ model + simulator | Wan M et al., Exposure-response of ciclosporin and me…, Clinical and experimental d… (2025) | [10.1093/ced/llaf147](https://doi.org/10.1093/ced/llaf147) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ciclosporin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | ileum | `SLC10A2` inhibitor | DrugBank actor |
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCC2` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `SLC10A1` inhibitor, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `ABCC2` inhibitor, `SLC22A6` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` inhibitor/substrate, `ABCC2` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC10 (substrate), CAMLG (binder), PPIA (binder), PPIA (inhibitor), PPIF (binder), PPP3CA (inhibitor), PPP3R2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -86,13 +63,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:05 | 4:00 | 2/1/0 | 3/0/0 | 0/0/0 | 213,191/21,505 | einfracz / qwen3.8-27b | 9 | 6/3 | 9/0 | 0 |
+| 2026-10-07 00:05 | 4:00 | 1/2/0 | 4/0/0 | 0/0/0 | 213,191/21,505 | einfracz / qwen3.8-27b | 9 | 6/3 | 9/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 304 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

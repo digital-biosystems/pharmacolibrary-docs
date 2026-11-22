@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ergotamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Ibraheem1982_reference&quot;,&quot;label&quot;:&quot;Ibraheem_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Perrin1985_reference&quot;,&quot;label&quot;:&quot;Perrin_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Perrin1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Ibraheem1982_reference&quot;,&quot;label&quot;:&quot;Ibraheem_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ergotamine_Perrin1985_reference&quot;,&quot;label&quot;:&quot;Perrin_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ergotamine/Ergotamine_Perrin1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Ergotamine
 
@@ -34,7 +34,7 @@ The bioavailability of sublingually administered ergotamine has not been determi
 
 ## Start here
 
-> **Ibraheem_1982_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> migrainous patients, n = 10. [Run it in the simulator](drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md?tab=Simulation) · [record](drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md)
+> **Ibraheem_1982_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> migrainous patients, n = 10. [Run it in the simulator](drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md?tab=Simulation) · [record](drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -48,34 +48,16 @@ The bioavailability of sublingually administered ergotamine has not been determi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [El-Nabarawy_2019_reference](drugs/toxin_ergotamine/Ergotamine_ElNabarawy2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | El-Nabarawy NA et al., Assessment Of Spanlastic Vesicles Of Zo…, Drug design, development an… (2019) | [10.2147/DDDT.S220473](https://doi.org/10.2147/DDDT.S220473) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ibraheem_1982_reference](drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Ibraheem JJ et al., Kinetics of ergotamine after intravenou…, European journal of clinica… (1982) | [10.1007/BF00547560](https://doi.org/10.1007/BF00547560) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [El-Nabarawy_2019_reference](drugs/toxin_ergotamine/Ergotamine_ElNabarawy2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | El-Nabarawy NA et al., Assessment Of Spanlastic Vesicles Of Zo…, Drug design, development an… (2019) | [10.2147/DDDT.S220473](https://doi.org/10.2147/DDDT.S220473) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Ibraheem_1982_reference](drugs/toxin_ergotamine/Ergotamine_Ibraheem1982_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Ibraheem JJ et al., Kinetics of ergotamine after intravenou…, European journal of clinica… (1982) | [10.1007/BF00547560](https://doi.org/10.1007/BF00547560) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: a value printed only as a range — the record carries its midpoint</sub> | [Perrin_1985_reference](drugs/toxin_ergotamine/Ergotamine_Perrin1985_reference.md) | ▶ model + simulator | retention, 1 pool | 3 | Perrin VL, Clinical pharmacokinetics of ergotamine…, Clinical pharmacokinetics (1985) | [10.2165/00003088-198510040-00004](https://doi.org/10.2165/00003088-198510040-00004) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">cattle</span> | [Kudupoje_2018_Norepinephrine_normalized_percent_contractile_response](drugs/toxin_ergotamine/pd_Kudupoje_2018_Norepinephrine_normalized_percent_contractile_.md) | Norepinephrine normalized percent contractile response ← ergotamine tartrate · direct sigmoid Emax (Hill) effect | model (no simulator) | Kudupoje MB et al., Contractile Response of Bovine Lateral…, Toxins (2018) | [10.3390/toxins10020058](https://doi.org/10.3390/toxins10020058) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">cattle</span> | [Kudupoje_2018_Norepinephrine_normalized_percent_contractile_response](drugs/toxin_ergotamine/pd_Kudupoje_2018_Norepinephrine_normalized_percent_contractile_.md) | Norepinephrine normalized percent contractile response ← ergotamine tartrate · direct sigmoid Emax (Hill) effect | model (no simulator) | Kudupoje MB et al., Contractile Response of Bovine Lateral…, Toxins (2018) | [10.3390/toxins10020058](https://doi.org/10.3390/toxins10020058) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Maas_2006_headache_relief](drugs/toxin_ergotamine/pd_Maas_2006_headache_relief.md) | headache relief ← ergotamine · time-to-event model | — | Maas HJ et al., A model-based approach to treatment com…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2006.02670.x](https://doi.org/10.1111/j.1365-2125.2006.02670.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ergotamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (partial agonist), ADRA1B (partial agonist), ADRA1D (partial agonist), ADRA2A (partial agonist), ADRA2C (unknown), DRD1 (target), DRD2 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1F (target), HTR2A (target), HTR2B (unknown), HTR2C (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

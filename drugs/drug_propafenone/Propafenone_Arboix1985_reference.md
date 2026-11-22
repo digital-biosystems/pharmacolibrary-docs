@@ -5,18 +5,18 @@
 
 # propafenone — `Propafenone_Arboix1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:51 UTC (Rejected), but the paper was screened again on 2026-10-06 04:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Propafenone clearance is recorded with rate units, and the peripheral compartment is unreachable.
+> Record rejected because abstract-only parameters use unit 1/h for clearance, conflicting with dimension checks, and the structure lacks a dose path to a compartment.
 
-<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Arboix1985_reference" status="rejected" stale="true" population="patients with paroxysmal supraventricular tachycardia" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Arboix1985_reference" status="rejected" stale="false" population="patients with paroxysmal supraventricular tachycardia" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Arboix M, Puigdemont A, Moya A, Cinca J. Pharmacokinetics of intravenous propafenone in patients with episodes of paroxysmal supraventricular tachycardia. Methods and findings in experimental and clinical pharmacology 7(8):435–438 (1985).
 
 ## Population and dosing
 
-**Population:** patients with paroxysmal supraventricular tachycardia · condition paroxysmal supraventricular tachycardia · age group adult · n = &gt;=10.
+**Population:** patients with paroxysmal supraventricular tachycardia · condition paroxysmal supraventricular tachycardia · age group adult.
 
 ## Model
 
@@ -38,7 +38,7 @@ Arboix M, Puigdemont A, Moya A, Cinca J. Pharmacokinetics of intravenous propafe
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Arboix M, Puigdemont A, Moya A, Cinca J. Pharmacokinetics of intravenous propafe
 
 ### Reviewer guidance
 
-**Propafenone clearance is recorded with rate units, and the peripheral compartment is unreachable.**
+**Record rejected because abstract-only parameters use unit 1/h for clearance, conflicting with dimension checks, and the structure lacks a dose path to a compartment.**
 
-The clearance parameter is given as 1.03 1/h, a unit incompatible with a volume-based flow parameter. The model structure defines a peripheral compartment, but no link exists from the central compartment to it. As the record was derived from the abstract alone, these summary statistics stand in for a fitted model. A second reader could not confirm the extracted parameter values or the identified dose compound. Extracted — propafenone: t1/2α 2.8 min, t1/2β 80 min, kel 0.12 1/h, V2 1.6 1/kg, CL 1.03 1/h.
+Clearance is reported as 1.03 1/h, which conflicts with the expected dimension for a clearance parameter. The volume of distribution is given as 1.6 1/kg, creating a dimensional conflict with length cubed. The model structure was identified as having an unreachable compartment or unlinked metabolite. These issues were compounded by the record being derived solely from the abstract, where summary statistics substituted for a fitted model. Extracted — propafenone: t1/2α 2.8 min, t1/2β 80 min, kel 0.12 1/h, V2 1.6 1/kg, CL 1.03 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has propafenone, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propafenone, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -96,24 +96,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
 <details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl]` | 1.03 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` |  | 1.03 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kel]` | 0.12 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kel]` |  | 0.12 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t 1/2 alpha]` | 2.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t 1/2 alpha]` |  | 2.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t 1/2 beta]` | 80 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t 1/2 beta]` |  | 80 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd beta]` | 1.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd beta]` |  | 1.6 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | propafenone | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | propafenone | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | 1.03 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 1.03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kel]` | 0.12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kel]` |  | 0.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 alpha]` | 2.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 alpha]` |  | 2.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 beta]` | 80 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 beta]` |  | 80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd beta]` | 1.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd beta]` |  | 1.6 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | propafenone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | propafenone | unknown | mismatch |
 
 </details>
 

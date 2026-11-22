@@ -4,11 +4,11 @@
 
 # patritumab deruxtecan — `PatritumabDeruxtecan_Lu2023_mean`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-07 18:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The parent compound clearance value of 0.342 L/d was rejected due to a dimension mismatch against its structural parameter.
+> Vmax for the metabolite has a mass-flow unit incompatible with its pharmacokinetic role.
 
-<div class="pk-model-meta" hidden drug="patritumab deruxtecan" model-id="PatritumabDeruxtecan_Lu2023_mean" status="rejected" stale="true" population="patients with HER3-expressing solid tumors" measured-compound="patritumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="patritumab deruxtecan" model-id="PatritumabDeruxtecan_Lu2023_mean" status="rejected" stale="false" population="patients with HER3-expressing solid tumors" measured-compound="patritumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Lu Y, Shimizu S, Sawamura R, Tajima N, He L, Lee M et al. Population Pharmacokinetics of Patritumab Deruxtecan in Patients With Solid Tumors. Journal of clinical pharmacology 63(1):77–90 (2023).
@@ -47,7 +47,7 @@ Lu Y, Shimizu S, Sawamura R, Tajima N, He L, Lee M et al. Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.033). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.033). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Lu Y, Shimizu S, Sawamura R, Tajima N, He L, Lee M et al. Population Pharmacokin
 
 ### Reviewer guidance
 
-**The parent compound clearance value of 0.342 L/d was rejected due to a dimension mismatch against its structural parameter.**
+**Vmax for the metabolite has a mass-flow unit incompatible with its pharmacokinetic role.**
 
-The record lists the parent compound total clearance (CLlin) as 0.342 L/d, but the model structure defines this parameter with a dimension mismatch. A unit conversion failure prevented the clearance value from being standardized to SI units. Consequently, the parameter retained an incompatible value, leading to the rejection of the record. Extracted — patritumab deruxtecan: CL 0.342 L/d, V1 2.94 L, Vmax 4.35e+03 μg/d, Km 576 ng/mL, Q 0.443 L/d, V2 5.37 L; deruxtecan: kfm 0.03 1/h, CL 5.71 L/h, kel 0.18 1/h.
+The parameter Vmax, described as the maximum rate of metabolism, carries the unit μg/d. This unit is dimensionally inconsistent with a volumetric clearance metric, triggering a structural check failure. Consequently, the record was rejected due to this dimensional mismatch. Extracted — patritumab deruxtecan: CL 0.342 L/d, V1 2.94 L, Vmax 4.35e+03 μg/d, Km 576 ng/mL, Q 0.443 L/d, V2 5.37 L; deruxtecan: kfm 0.03 1/h, CL 5.71 L/h, kel 0.18 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has patritumab_deruxtecan, the second reading patritumab deruxtecan; it also differs on 28 more fields. That field shapes the model, so the record is marked disputed.
 

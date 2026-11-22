@@ -4,11 +4,11 @@
 
 # cefadroxil — `Cefadroxil_Mario1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 10:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Mario1981_reference" status="needs_review" stale="true" population="unknown" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Mario1981_reference" status="needs_review" stale="false" population="unknown" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mariño EL, Dominguez-Gil A. The pharmacokinetics of cefadroxil associated with probenecid. International journal of clinical pharmacology, therapy, and toxicology 19(11):506–508 (1981).
@@ -33,7 +33,7 @@ Mariño EL, Dominguez-Gil A. The pharmacokinetics of cefadroxil associated with 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,9 +43,9 @@ Mariño EL, Dominguez-Gil A. The pharmacokinetics of cefadroxil associated with 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefadroxil: t1/2z 1.13 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefadroxil, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

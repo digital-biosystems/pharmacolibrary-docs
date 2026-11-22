@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;clevidipine&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/&quot;},{&quot;label&quot;:&quot;Ericsson_1999_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clevidipine_Bailey2002_reference&quot;,&quot;label&quot;:&quot;Bailey_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Ericsson2001_reference&quot;,&quot;label&quot;:&quot;Ericsson_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Ericsson2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Vuylsteke2000_reference&quot;,&quot;label&quot;:&quot;Vuylsteke_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clevidipine_Vuylsteke2000_reference&quot;,&quot;label&quot;:&quot;Vuylsteke_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Bailey2002_reference&quot;,&quot;label&quot;:&quot;Bailey_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Ericsson2001_reference&quot;,&quot;label&quot;:&quot;Ericsson_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Ericsson2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clevidipine — `Clevidipine_Ericsson1999v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:51 UTC (Rejected), but the paper was screened again on 2026-10-07 02:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the metabolite terminal half-life (9.5 h) had an unverifiable dimension mismatch, and all parameters were abstract summary statistics rather than fitted values.
+> The volume of distribution parameter's unit was misinterpreted as luminosity per area instead of volume, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v2_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="clevidipine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v2_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="clevidipine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ericsson H, Fakt C, Höglund L, Jolin-Mellgård A, Nordlander M, Sunzel M et al. Pharmacokinetics and pharmacodynamics of clevidipine in healthy volunteers after intravenous infusion. European journal of clinical pharmacology 55(1):61–67 (1999).
@@ -17,7 +17,7 @@ Ericsson H, Fakt C, Höglund L, Jolin-Mellgård A, Nordlander M, Sunzel M et al.
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · age group adult · n = &gt;=8.
+**Population:** healthy male volunteers · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ Ericsson H, Fakt C, Höglund L, Jolin-Mellgård A, Nordlander M, Sunzel M et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Ericsson H, Fakt C, Höglund L, Jolin-Mellgård A, Nordlander M, Sunzel M et al.
 
 ### Reviewer guidance
 
-**The record was rejected because the metabolite terminal half-life (9.5 h) had an unverifiable dimension mismatch, and all parameters were abstract summary statistics rather than fitted values.**
+**The volume of distribution parameter's unit was misinterpreted as luminosity per area instead of volume, causing a dimension mismatch.**
 
-The abstract-only source meant summary statistics stood in for a fitted model, precluding rigorous validation. The review identified a dimension mismatch on the structural parameter for the metabolite half-life (9.5 h). A second reader disagreed with the presence of the parent-metabolite link and the initial half-life value of 1.6 min. Multiple parameters, including blood clearance (0.14 L/h) and volume of distribution (0.6 l/kg), were flagged in the disagreement log. Extracted — clevidipine: CLb 0.14 L/h, Vss 0.6 l x kg(-1), t1/2α 1.6 min, t1/2z 15 min; H 152/81: t1/2z 9.5 h.
+The record's volume of distribution value of 0.6 l x kg(-1) was flagged because its unit dimension conflicted with the required volume dimension. Additionally, the second reader could not verify the extracted parameters or the parent-metabolite link, leaving their validity unconfirmed. Since the data were abstract-only, these summary statistics stand in for a fitted model, further limiting confidence in the extracted values. Extracted — clevidipine: CLb 0.14 L/h, Vss 0.6 l x kg(-1), t1/2α 1.6 min, t1/2z 15 min; H 152/81: t1/2z 9.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -17,7 +17,7 @@ van der Heijden CDCC, Ter Heine R, Kooistra EJ, Brüggemann RJ, Walburgh Schmidt
 
 ## Population and dosing
 
-**Population:** critically ill COVID-19 patients · condition critically ill COVID-19 · age group adult · n = &gt;=15.
+**Population:** critically ill COVID-19 patients · condition critically ill COVID-19 · age group adult.
 
 **Dosing:** 5000, 7500, 10000 IU, sc, multiple, every 12 h.
 

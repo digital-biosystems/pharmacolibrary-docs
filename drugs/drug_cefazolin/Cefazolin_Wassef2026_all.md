@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefazolin&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/&quot;},{&quot;label&quot;:&quot;Wassef_2026 \u00b7 all&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefazolin_Ryan2022_reference&quot;,&quot;label&quot;:&quot;Ryan_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/Cefazolin_Ryan2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefazolin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/Cefazolin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Smith_2024_Kmax_ECs&quot;,&quot;label&quot;:&quot;Smith_2024 \u00b7 Kmax,ECs&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/pd_Smith_2024_Kmax_ECs.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Smith_2024_Kmax_SC&quot;,&quot;label&quot;:&quot;Smith_2024 \u00b7 Kmax,SC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/pd_Smith_2024_Kmax_SC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefazolin_Ryan2022_reference&quot;,&quot;label&quot;:&quot;Ryan_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/Cefazolin_Ryan2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefazolin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/Cefazolin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Smith_2024_Kmax_ECs&quot;,&quot;label&quot;:&quot;Smith_2024 \u00b7 Kmax,ECs&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/pd_Smith_2024_Kmax_ECs.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Smith_2024_Kmax_SC&quot;,&quot;label&quot;:&quot;Smith_2024 \u00b7 Kmax,SC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefazolin/pd_Smith_2024_Kmax_SC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefazolin — `Cefazolin_Wassef2026_all`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:07 UTC (Rejected), but the paper was screened again on 2026-10-07 10:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cefazolin clearance was rejected because its unit, L/h, could not be converted to SI.
+> The record was rejected due to a unit dimension error for AUC/dose and conflicting parameter values.
 
-<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Wassef2026_all" status="rejected" stale="true" population="adults undergoing abdominal surgery (obese and non-obese)" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Wassef2026_all" status="rejected" stale="false" population="adults undergoing abdominal surgery (obese and non-obese)" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wassef A, Kosicka-Noworzyń K, Back H, Siemiątkowska A, Yohn C, Sadek R et al. Cefazolin surgical prophylaxis in obesity: a body composition-driven population pharmacokinetic approach. Antimicrobial agents and chemotherapy:e0167725 (2026).
@@ -43,7 +43,7 @@ Wassef A, Kosicka-Noworzyń K, Back H, Siemiątkowska A, Yohn C, Sadek R et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Wassef A, Kosicka-Noworzyń K, Back H, Siemiątkowska A, Yohn C, Sadek R et al. 
 
 ### Reviewer guidance
 
-**Cefazolin clearance was rejected because its unit, L/h, could not be converted to SI.**
+**The record was rejected due to a unit dimension error for AUC/dose and conflicting parameter values.**
 
-The clearance value of 3.59 L/h failed dimensional validation due to a unit conversion limitation. Additionally, significant discrepancies exist between the primary extraction and the second reader for AUC, clearance, and half-life values. Extracted — cefazolin: AUC∞ 0.74 h∙g∙L−1, AUC/dose 0.33 h∙L−1, AUCt 0.48 h∙g∙L−1, CL 3.59 L∙h⁻¹, t1/2z 2.58 h, Vss 11.1 L, V 11.9 L.
+The dose-normalized area under the curve (AUC/dose) is reported with units of h∙L⁻¹, which is dimensionally incompatible with the expected mass-based dimension. Additionally, multiple key pharmacokinetic values, including AUC∞ and Clearance, differ between the original record and a secondary review. Extracted — cefazolin: AUC∞ 0.74 h∙g∙L−1, AUC/dose 0.33 h∙L−1, AUCt 0.48 h∙g∙L−1, CL 3.59 L∙h⁻¹, t1/2z 2.58 h, Vss 11.1 L, V 11.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-inf].value`: this record has 0.74, the second reading 0.83; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

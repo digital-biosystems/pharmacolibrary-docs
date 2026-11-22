@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;bosentan&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/&quot;},{&quot;label&quot;:&quot;Miura_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bosentan_Nahar2023_reference&quot;,&quot;label&quot;:&quot;Nahar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_Nahar2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bosentan_FergusonSells2022_reference&quot;,&quot;label&quot;:&quot;Ferguson-Sells_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_FergusonSells2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bosentan_Miura2026_reference&quot;,&quot;label&quot;:&quot;Miura_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_Miura2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bosentan_Miura2026_reference&quot;,&quot;label&quot;:&quot;Miura_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_Miura2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bosentan_Nahar2023_reference&quot;,&quot;label&quot;:&quot;Nahar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_Nahar2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bosentan_FergusonSells2022_reference&quot;,&quot;label&quot;:&quot;Ferguson-Sells_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_FergusonSells2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bosentan record was held back because the model builder defaulted the absorption lag time rather than using the explicit estimate of 0.379 hours.
+> The cross-check was disputed by a second reader who identified a missing body weight exponent of 0.472 for the clearance parameter.
 
 <div class="pk-model-meta" hidden drug="bosentan" model-id="Bosentan_Miura2026_reference" status="needs_review" stale="false" population="Japanese paediatric and adult patients with pulmonary arterial hypertension" measured-compound="bosentan" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Miura M, Tanaka S, Aihara R, Yamamoto S, Nakashima Y, Kashiwagura Y et al. Devel
 
 ## Population and dosing
 
-**Population:** Japanese paediatric and adult patients with pulmonary arterial hypertension · condition pulmonary arterial hypertension · age group mixed · n = &gt;=51.
+**Population:** Japanese paediatric and adult patients with pulmonary arterial hypertension · condition pulmonary arterial hypertension · age group mixed.
 
 **Dosing:** 0.2, 1, 3, 4, 5, 10, 30, 40, 60, 250 mg, oral, multiple, every 24 h.
 
@@ -52,9 +52,9 @@ Miura M, Tanaka S, Aihara R, Yamamoto S, Nakashima Y, Kashiwagura Y et al. Devel
 
 ### Reviewer guidance
 
-**The bosentan record was held back because the model builder defaulted the absorption lag time rather than using the explicit estimate of 0.379 hours.**
+**The cross-check was disputed by a second reader who identified a missing body weight exponent of 0.472 for the clearance parameter.**
 
-The record includes an explicit value of 0.379 hours for the drug absorption lag time, yet the builder applied defaults or conventions instead. This deviation triggered a review requirement as the model did not strictly follow the provided parameterization. Additionally, a second reader disagreed on the presence of a body weight effect, noting a value of 0.472 where the record showed null. Extracted — bosentan: kabs 2.47 h−1, V/F 41 L, CL/F 8.85 L/h, tlag 0.379 h.
+The recorded clearance for bosentan is 8.85 L/h with no allometric scaling, whereas the second reader reported a body weight effect exponent of 0.472. The reader also disagreed on the model links, finding a connection where the record indicated none. These disagreements resulted in an agreement score of 0.778, leaving the review inconclusive. Extracted — bosentan: kabs 2.47 h−1, V/F 41 L, CL/F 8.85 L/h, tlag 0.379 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -143,15 +143,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=bosentan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | D002: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=bosentan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

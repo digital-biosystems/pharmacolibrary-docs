@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The fexofenadine model failed to reproduce the paper's reported Cmax, tmax, and t1/2, and used a library default for absorption rate constant.
+> Fexofenadine record held back because simulated peak concentration and time of peak diverge from the paper, and absorption rate constants use library defaults.
 
 <div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Jang2023_slco1b1_521t_c_genotypes" status="needs_review" stale="false" population="healthy adults" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></div>
 
@@ -59,9 +59,9 @@ Jang JH, Jeong SH, Lee YB. Quantitative assessment of the relevance of organic-a
 
 ### Reviewer guidance
 
-**The fexofenadine model failed to reproduce the paper's reported Cmax, tmax, and t1/2, and used a library default for absorption rate constant.**
+**Fexofenadine record held back because simulated peak concentration and time of peak diverge from the paper, and absorption rate constants use library defaults.**
 
-Simulated as the paper dosed it, the model's peak concentration was 0.000109 compared to the reported 0.00045, and its time of peak was 2.69 compared to the reported 2. The simulated terminal half-life was 2.4 compared to the reported 2.45, exceeding the tolerance for agreement. The absorption rate constant was left at a library default because it was not explicitly extracted from the source data. Extracted — fexofenadine: t1/2z 2.45 h, tmax 2 h, Cmax 450 ng/mL, AUCt 2.5e+03 h·ng/mL, AUC∞ 2.63e+03 h·ng/mL, V/F 259 L, CL/F 75.9 L/h, MRT 4.44 h, … (+2).
+The model's simulated peak concentration (0.000109) is far lower than the reported 0.00045, and the simulated time of peak (2.69) differs from the reported 2.0. The absorption rate constant was not extracted from the paper and was left at library defaults, meaning the simulated profile lacks a source-supported absorption phase. A second reader disagreed with the classification of the mean steady-state concentration parameter. Extracted — fexofenadine: t1/2z 2.45 h, tmax 2 h, Cmax 450 ng/mL, AUCt 2.5e+03 h·ng/mL, AUC∞ 2.63e+03 h·ng/mL, V/F 259 L, CL/F 75.9 L/h, MRT 4.44 h, … (+2).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[css,mean (ng/ml) a].parameter_id`: this record has Q71, the second reading Q34. That field shapes the model, so the record is marked disputed.
 
@@ -167,7 +167,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=fexofenadine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.938, 0 of 1 reader(s) agree | 0.938 | cross-check disputed by a second reader: verdict disputed, agreement 0.938, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.0004502 | 0.0001087 | 0.2414 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0005616 | 0.0001087 | 0.1935 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0007709 | 0.0001087 | 0.141 | ng/mL→SI vs simulated kg/m3 |

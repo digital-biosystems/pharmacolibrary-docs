@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;crizotinib&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/&quot;},{&quot;label&quot;:&quot;Gibson_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Crizotinib_Gibson2021_reference&quot;,&quot;label&quot;:&quot;Gibson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/Crizotinib_Gibson2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Crizotinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/Crizotinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Crizotinib_Gibson2021_reference&quot;,&quot;label&quot;:&quot;Gibson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/Crizotinib_Gibson2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Crizotinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_crizotinib/Crizotinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # crizotinib — `Crizotinib_Gibson2021_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="crizotinib" model-id="Crizotinib_Gibson2021_reference" status="simulated" stale="false" population="children with progressive or recurrent high-grade and diffuse intrinsic pontine gliomas" measured-compound="crizotinib" parameterization="apparent" topology="1C"></div>
+> The record was held back because the interpretation of crizotinib’s 66.7 L/h CL/F was disputed, with cross-reader agreement of 0.444.
+
+<div class="pk-model-meta" hidden drug="crizotinib" model-id="Crizotinib_Gibson2021_reference" status="needs_review" stale="false" population="children with progressive or recurrent high-grade and diffuse intrinsic pontine gliomas" measured-compound="crizotinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Gibson EG, Campagne O, Selvo NS, Gajjar A, Stewart CF. Population pharmacokinetic analysis of crizotinib in children with progressive/recurrent high-grade and diffuse intrinsic pontine gliomas. Cancer chemotherapy and pharmacology 88(6):1009–1020 (2021).
@@ -27,6 +29,8 @@ Gibson EG, Campagne O, Selvo NS, Gajjar A, Stewart CF. Population pharmacokineti
 <figure class="pk-models-diagram"><img src="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference.svg" alt="Crizotinib_Gibson2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 66.7 | L/h |
@@ -35,7 +39,7 @@ Gibson EG, Campagne O, Selvo NS, Gajjar A, Stewart CF. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +49,13 @@ Gibson EG, Campagne O, Selvo NS, Gajjar A, Stewart CF. Population pharmacokineti
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held back because the interpretation of crizotinib’s 66.7 L/h CL/F was disputed, with cross-reader agreement of 0.444.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The second reader did not assign 66.7 to CL/F, instead assigning it to apparent clearance; they also assigned 73.3 L to apparent V1/F and did not assign the recorded 0.672 h−1 absorption rate. Cross-reader agreement was 0.444, below 0.5, with 0 of 1 reader agreeing. The record was built from the abstract alone, so summary statistics stood in for a fitted model; Tlag was defaulted, and the apparent parameterization assumed F=1, Fm=1, and no molar correction. Extracted — crizotinib: CL/F 66.7 L/h, V/F 73.3 L, kabs 0.672 h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl/f: this record has 66.7, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -131,15 +135,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=crizotinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=crizotinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check agreement 0.444 is below 0.5: verdict partial, agreement 0.444, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -17,7 +17,7 @@ Baron KT, Macha S, Broedl UC, Nock V, Retlich S, Riggs M. Population Pharmacokin
 
 ## Population and dosing
 
-**Population:** patients with type 2 diabetes · condition type 2 diabetes · age group adult · n = ,.
+**Population:** patients with type 2 diabetes · condition type 2 diabetes · age group adult.
 
 **Dosing:** 1, 100 mg, oral, multiple, every 24 h.
 
@@ -42,7 +42,7 @@ Baron KT, Macha S, Broedl UC, Nock V, Retlich S, Riggs M. Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Baron KT, Macha S, Broedl UC, Nock V, Retlich S, Riggs M. Population Pharmacokin
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V), so that value has no SI equivalent. Extracted — empagliflozin: CL/F 10.6 L/h, V2/F 3.14 L, Q 6.34 L/h, V 0.77 OR, kabs 0.239 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -108,15 +108,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.8 (12/15 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.8 (12/15 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[alag1]` |  | 0.500 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | empagliflozin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | empagliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[alag1]` |  | 0.500 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | empagliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | empagliflozin | unknown | mismatch |
 
 </details>
 

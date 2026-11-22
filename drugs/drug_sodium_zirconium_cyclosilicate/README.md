@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;sodium zirconium cyclosilicate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Penland_2024_serum_K&quot;,&quot;label&quot;:&quot;Penland_2024 \u00b7 serum K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_zirconium_cyclosilicate/pd_Penland_2024_serum_K.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # sodium zirconium cyclosilicate
 
@@ -23,17 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Penland_2024_serum_K](drugs/drug_sodium_zirconium_cyclosilicate/pd_Penland_2024_serum_K.md) | serum potassium concentration ← sodium zirconium cyclosilicate (virtual exposure) · indirect response — drug inhibits the production of serum potassium concentration | ▶ model + simulator | Penland RC et al., Population Pharmacodynamic Dose-Respons…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01360-9](https://doi.org/10.1007/s40262-024-01360-9) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sodium_zirconium_cyclosilicate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: Potassium (binder).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Penland_2024_serum_K](drugs/drug_sodium_zirconium_cyclosilicate/pd_Penland_2024_serum_K.md) | serum potassium concentration ← sodium zirconium cyclosilicate (virtual exposure) · indirect response — drug inhibits the production of serum potassium concentration | — | Penland RC et al., Population Pharmacodynamic Dose-Respons…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01360-9](https://doi.org/10.1007/s40262-024-01360-9) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

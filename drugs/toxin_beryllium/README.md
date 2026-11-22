@@ -55,7 +55,7 @@ Beryllium is a light-weight metallic element, which was first recognized as a lu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-12 20:31 | 1:06:17 | 0/1/0 | 4/1/0 | 0/0/0 | 1,961,175/76,795 | einfracz / qwen3.8-flash-next | 86 | 9/66 | 84/2 | 0 |
+| 2026-11-12 20:31 | 1:06:17 | 0/1/0 | 5/4/0 | 0/0/0 | 1,961,175/76,795 | einfracz / qwen3.8-flash-next | 86 | 9/66 | 84/2 | 0 |
 
 ## Coverage
 

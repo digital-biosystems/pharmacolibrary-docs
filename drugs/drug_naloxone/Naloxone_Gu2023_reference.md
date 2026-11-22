@@ -16,7 +16,7 @@ Gu M, Li A, Mak W, Dong F, Xu N, Zhang J et al. Population pharmacokinetics of b
 
 ## Population and dosing
 
-**Population:** Chinese healthy volunteers and patients with opioid use disorder · condition opioid use disorder · age group adult · n = &gt;=46.
+**Population:** Chinese healthy volunteers and patients with opioid use disorder · condition opioid use disorder · age group adult.
 
 **Dosing:** 4, 8, 16 mg, sublingual, single.
 
@@ -36,7 +36,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Extracted — naloxone: ? -0.3.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has buprenorphine and naloxone, the second reading buprenorphine/naloxone sublingual tablet. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has buprenorphine and naloxone, the second reading buprenorphine/naloxone sublingual tablet. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -124,13 +124,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | buprenorphine and naloxone | buprenorphine/naloxone sublingual tablet | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | buprenorphine and naloxone | buprenorphine/naloxone sublingual tablet | mismatch |
 
 </details>
 

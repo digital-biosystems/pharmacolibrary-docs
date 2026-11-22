@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
 
-> Lumasiran's clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant lacked explicit estimates, leaving library placeholders in place and halting publication.
+> Lumasiran’s clearance, distribution volume, absorption lag time, and central-to-peripheral rate constant had no reported values, leaving placeholders and causing quarantine.
 
 <div class="pk-model-meta" hidden drug="lumasiran" model-id="Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e" status="model_quarantined" stale="false" population="healthy adults and patients with specific conditions" measured-compound="GalNAc-siRNAs" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Sten S, Cardilin T, Antonsson M, Gennemark P. Plasma Pharmacokinetics of N-Acety
 
 ### Reviewer guidance
 
-**Lumasiran's clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant lacked explicit estimates, leaving library placeholders in place and halting publication.**
+**Lumasiran’s clearance, distribution volume, absorption lag time, and central-to-peripheral rate constant had no reported values, leaving placeholders and causing quarantine.**
 
-Although the record contains numerical values for several parameters, the model builder defaulted these specific kinetic values to library conventions rather than extracting unique estimates. The second reader disagreed with the record's classification of the measured compound as GalNAc-siRNAs, arguing it should be identified as lumasiran. Consequently, the model was held back because these key parameters relied on generic assumptions instead of data-driven values. Extracted — lumasiran: kabs 0.157 1/h, V1/F 18.1 L, V2/F 1.34e+03 L, V3/F 100 L, CL/F 23.8 L/h, Q/F 3.02 L/h.
+No value for lumasiran's clearance, volume of distribution, absorption lag time, or central-to-peripheral rate constant was extracted; library placeholders stood in, so the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1, with no molar correction. The second reader disputed the measured compound and primary analyte, identifying lumasiran rather than GalNAc-siRNAs; the verdict was disputed, with agreement 0.875 and 0 of 1 reader(s) agreeing. Extracted — lumasiran: kabs 0.157 1/h, V1/F 18.1 L, V2/F 1.34e+03 L, V3/F 100 L, CL/F 23.8 L/h, Q/F 3.02 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading lumasiran; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -138,15 +138,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=GalNAc-siRNAs) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=GalNAc-siRNAs) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

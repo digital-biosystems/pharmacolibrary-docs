@@ -17,7 +17,7 @@ Zou J, Chen S, Rao W, Fu L, Zhang J, Liao Y et al. Population Pharmacokinetic Mo
 
 ## Population and dosing
 
-**Population:** adult patients with multidrug-resistant tuberculosis · age group adult · n = condition.
+**Population:** adult patients with multidrug-resistant tuberculosis · age group adult.
 
 ## Model
 
@@ -143,6 +143,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped |  | 0.0003275 |  | non-numeric value |
 | T1_cmax | reference | skipped |  | 0.0003275 |  | non-numeric value |
 | T1_cmax | reference | skipped |  | 0.0003275 |  | non-numeric value |

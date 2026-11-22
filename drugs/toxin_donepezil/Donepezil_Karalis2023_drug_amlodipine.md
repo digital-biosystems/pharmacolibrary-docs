@@ -154,30 +154,13 @@ _All readers agree on the compared fields of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_donepezil/Donepezil_Karalis2023_drug_amlodipine/Donepezil_Karalis2023_drug_amlodipine_matlab.zip" download>Donepezil_Karalis2023_drug_amlodipine_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_donepezil/Donepezil_Karalis2023_drug_amlodipine/Donepezil_Karalis2023_drug_amlodipine_matlab_simbio.zip" download>Donepezil_Karalis2023_drug_amlodipine_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_donepezil/Donepezil_Karalis2023_drug_amlodipine/Donepezil_Karalis2023_drug_amlodipine_sbml.zip" download>Donepezil_Karalis2023_drug_amlodipine_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_donepezil/Donepezil_Karalis2023_drug_amlodipine/Donepezil_Karalis2023_drug_amlodipine_cellml.zip" download>Donepezil_Karalis2023_drug_amlodipine_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Karalis VD. An In Silico Approach toward the Appropriate Absorption Rate Metric in Bioequivalence. Pharmaceuticals (Basel, Switzerland) 16(5):725 (2023). [doi:10.3390/ph16050725](https://doi.org/10.3390/ph16050725)
-
-**This record:** Pharmacolibrary, model `Donepezil_Karalis2023_drug_amlodipine`. <https://pharmacolibrary.github.io/#/drugs/toxin_donepezil/Donepezil_Karalis2023_drug_amlodipine>
-
-```bibtex
-@misc{pharmacolibrary_DonepezilKaralis2023drugamlodipine,
-  title  = {{Pharmacolibrary model Donepezil_Karalis2023_drug_amlodipine}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_donepezil/Donepezil_Karalis2023_drug_amlodipine},
-  note   = {Parameters from doi:10.3390/ph16050725},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

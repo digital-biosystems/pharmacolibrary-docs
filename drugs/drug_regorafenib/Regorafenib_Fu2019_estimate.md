@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The model was rejected because metabolite compartments lack dose paths, clearance values are physiologically implausible, and bioavailability is missing.
+> Regorafenib’s apparent oral clearance is 0.629 mL/hour, flagged as an implausible clearance/volume magnitude; both metabolites lack modeled compartments, prompting rejection.
 
 <div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Fu2019_estimate" status="rejected" stale="false" population="male and female wild-type and Oatp1b2-deficient mice" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
 
@@ -54,13 +54,13 @@ Fu Q, Chen M, Anderson JT, Sun X, Hu S, Sparreboom A et al. Interaction Between 
 
 ### Reviewer guidance
 
-**The model was rejected because metabolite compartments lack dose paths, clearance values are physiologically implausible, and bioavailability is missing.**
+**Regorafenib’s apparent oral clearance is 0.629 mL/hour, flagged as an implausible clearance/volume magnitude; both metabolites lack modeled compartments, prompting rejection.**
 
-Both metabolites, regorafenib-N-oxide and regorafenib-glucuronide, are defined as zero-compartment entities without clear pathways for elimination from the central compartment. The total clearance values of 1.30 mL/hour and 0.598 mL/hour fall outside the physiological window, suggesting a unit or scale extraction error. The absolute bioavailability parameter was not extracted, leaving a library placeholder in the model. A second reader disagreed on the link type for regorafenib-glucuronide hydrolysis and the specific identifiers assigned to the metabolite clearances. Extracted — regorafenib: CL/F 0.629 mL/hour, V1 33.8 mL, V2 44.1 mL, Q/F 15.1 mL/hour, kabs 1.08 hour−1; regorafenib-N-oxide: CL 1.3 mL/hour; regorafenib-glucuronide: CL 0.598 mL/hour.
+The recorded clearances are 0.629 mL/hour for regorafenib, 1.30 mL/hour for regorafenib-N-oxide, and 0.598 mL/hour for regorafenib-glucuronide; the record flags clearance/volume magnitude as implausible. Both metabolites have zero compartments despite listed formation links, matching the orphan-metabolite finding. The glucuronide-to-regorafenib link is recorded as hydrolysis, while the second reader interpreted it as interconversion. Extracted — regorafenib: CL/F 0.629 mL/hour, V1 33.8 mL, V2 44.1 mL, Q/F 15.1 mL/hour, kabs 1.08 hour−1; regorafenib-N-oxide: CL 1.3 mL/hour; regorafenib-glucuronide: CL 0.598 mL/hour.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has regorafenib → regorafenib-n-oxide (metabolism); regorafenib → regorafenib-glucuronide (metabolism); regorafenib-glucuronide → regorafenib (hydrolysis), the second reading regorafenib → regorafenib-n-oxide (metabolism); regorafenib → regorafenib-glucuronide (metabolism); regorafenib-glucuronide → regorafenib (interconversion); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

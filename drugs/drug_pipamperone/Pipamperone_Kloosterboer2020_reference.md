@@ -4,11 +4,11 @@
 
 # pipamperone — `Pipamperone_Kloosterboer2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-06 16:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pipamperone record rejected because it lacks clearance and elimination parameters, making it not a compartmental population pharmacokinetic model.
+> Pipamperone’s reported absorption rate constant of 2 L/h has the wrong dimension, and the record lacks clearance or elimination, so it was refused.
 
-<div class="pk-model-meta" hidden drug="pipamperone" model-id="Pipamperone_Kloosterboer2020_reference" status="rejected" stale="true" population="children and adolescents with psychiatric disorders (autism/behavioral problems)" measured-compound="pipamperone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pipamperone" model-id="Pipamperone_Kloosterboer2020_reference" status="rejected" stale="false" population="children and adolescents with psychiatric disorders (autism/behavioral problems)" measured-compound="pipamperone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kloosterboer SM, Egberts KM, de Winter BCM, van Gelder T, Gerlach M, Hillegers MHJ et al. Pipamperone Population Pharmacokinetics Related to Effectiveness and Side Effects in Children and Adolescents. Clinical pharmacokinetics 59(11):1393–1405 (2020).
@@ -36,7 +36,7 @@ Kloosterboer SM, Egberts KM, de Winter BCM, van Gelder T, Gerlach M, Hillegers M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +46,13 @@ Kloosterboer SM, Egberts KM, de Winter BCM, van Gelder T, Gerlach M, Hillegers M
 
 ### Reviewer guidance
 
-**Pipamperone record rejected because it lacks clearance and elimination parameters, making it not a compartmental population pharmacokinetic model.**
+**Pipamperone’s reported absorption rate constant of 2 L/h has the wrong dimension, and the record lacks clearance or elimination, so it was refused.**
 
-The record contains an absorption rate constant of 2 L/h and an apparent volume of 416 L/70 kg, but no clearance or elimination rate is provided. A dimensional mismatch was identified on a structural parameter. The paper is described as an exposure/outcome study rather than a compartmental population pharmacokinetic model. Extracted — pipamperone: kabs 2 L/h, Vnorm/F 416 L/70 kg, C0 0.33 μg/L.
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The absorption rate constant is reported as 2 L/h, a volume-per-time unit rather than an inverse-time unit; the time-zero concentration of 0.33 μg/L also has a dimensional mismatch. A reported unit could not be converted to SI, and the second reader did not confirm the recorded compound and analyte identities or the parameter values 0.33, 2, and 416. Extracted — pipamperone: kabs 2 L/h, Vnorm/F 416 L/70 kg, C0 0.33 μg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipamperone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

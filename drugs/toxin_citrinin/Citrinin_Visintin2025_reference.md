@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Citrinin&quot;,&quot;href&quot;:&quot;drugs/toxin_citrinin/&quot;},{&quot;label&quot;:&quot;Visintin_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citrinin_Meerpoel2020_reference&quot;,&quot;label&quot;:&quot;Meerpoel_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citrinin_Meerpoel2020_reference&quot;,&quot;label&quot;:&quot;Meerpoel_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_citrinin/Citrinin_Meerpoel2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> CLfm, V and V have no unit.
 
 <div class="pk-model-meta" hidden drug="Citrinin" model-id="Citrinin_Visintin2025_reference" status="needs_review" stale="false" population="human volunteers" measured-compound="Citrinin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,7 +54,13 @@ Visintin L, Martino C, De Saeger S, Alladio E, De Boevre M, Chiu WA. Derivation 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**CLfm, V and V have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CLfm, V and V), so that value has no SI equivalent. Extracted — citrinin: t1/2z 9.33 h, kel 0.074 h−1, tmax 0.63 h, Cmax 0.28 ng/mL, CL 0.025 L/h/kg, V 0.33 L/kg bw, FG 0.246 -, tlag 4.55 min; dihydrocitrinin (HO-CIT): CLfm 0.033 h·kg bw, V 0.836 L/kg bw.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

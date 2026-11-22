@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Chapagain_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_2_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023_2 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_2_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_2_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023_2 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_2_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span>
 
-> Rifabutin volume of distribution (0.135 L) is physiologically implausible, indicating an extraction or unit error.
+> The volume of distribution is unphysiologically small at 0.135 L, causing the record to be rejected.
 
 <div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Chapagain2022_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omada
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omada
 
 ### Reviewer guidance
 
-**Rifabutin volume of distribution (0.135 L) is physiologically implausible, indicating an extraction or unit error.**
+**The volume of distribution is unphysiologically small at 0.135 L, causing the record to be rejected.**
 
-The record lists a rifabutin volume of distribution of 0.135 L, which is far below the physiological window expected for this small-molecule antibiotic. The clearance of 7.501 L/h is combined with this unreasonably small volume to form a one-compartment structure. This discrepancy suggests the extracted volume value likely suffers from a scale or unit error rather than representing true tissue distribution. Extracted — rifabutin: CL 7.5 L/h, V 0.135 L.
+The extracted volume of distribution for rifabutin is 0.135 L, which is implausibly low for a lipophilic drug and triggers a magnitude error. A clearance of 7.501 L/h combined with this tiny volume creates an extreme ratio that violates physiological bounds. The second reader’s disagreements on intermediate fields do not resolve the fundamental issue that the recorded volume falls outside the acceptable physiological window. Extracted — rifabutin: CL 7.5 L/h, V 0.135 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 1.0, the second reading 25.8; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 1.0, the second reading 25.8; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -81,15 +81,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q21]` | 1.0 | 25.8 | mismatch |
-| `gpt-oss:120b` | `values[Q414]` | 1.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q88]` |  | 39 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q21]` | 1.0 | 25.8 | mismatch |
+| `gpt-oss-120b` | `values[Q414]` | 1.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` |  | 39 | only_one_extracted |
 
 </details>
 

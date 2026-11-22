@@ -18,21 +18,20 @@
   "Cl": 7.486111111111112e-05,
   "F": 1.0,
   "MM": 0.1291636,
-  "Tlag": 1224.0,
+  "Tlag": 0.0,
   "VdPerKg": 0.00521,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.014,
-  "k12": 0.0002351247600767754,
   "k21": 0.00011026102610261025,
   "ka": 0.00011388888888888888,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9125.485106017466
+  "central.C": 59216.03206412826
  },
  "reference_peaks": {
-  "central.C": 0.008848672802872784
+  "central.C": 2.429504546161616e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

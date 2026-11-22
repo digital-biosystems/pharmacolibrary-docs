@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Li_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Croxtall_1994_A549_cell_proliferation&quot;,&quot;label&quot;:&quot;Croxtall_1994 \u00b7 A549 cell proliferation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Croxtall_1994_A549_cell_proliferation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Montenegro_2011_vasorelaxation&quot;,&quot;label&quot;:&quot;Montenegro_2011 \u00b7 vasorelaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Montenegro_2011_vasorelaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Tamoxifen clearance of 2235 mL/h is physiologically implausible for murine models, triggering the rejection of the record.
+> Tamoxifen clearance and volume values were mislabeled as daunorubicin metrics, causing an implausible clearance magnitude failure.
 
 <div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Li2014_reference" status="rejected" stale="false" population="breast cancer murine models" measured-compound="tamoxifen" parameterization="mechanistic" topology="1C"></div>
 
@@ -19,7 +19,9 @@ Li MH, Yu H, Wang TF, Chang ND, Zhang JQ, Du D et al. Tamoxifen embedded in lipi
 
 **Population:** breast cancer murine models · condition breast cancer.
 
-**Dosing:** 10 mg kg¹, iv, single.
+**Dosing:** 700 mg, iv, single.
+
+**Dosed compound ≠ measured compound:** dosed liposomal daunorubicin plus tamoxifen, measured tamoxifen.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -27,7 +29,7 @@ Li MH, Yu H, Wang TF, Chang ND, Zhang JQ, Du D et al. Tamoxifen embedded in lipi
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,8 +37,9 @@ Li MH, Yu H, Wang TF, Chang ND, Zhang JQ, Du D et al. Tamoxifen embedded in lipi
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearance | CL | 2235 | mL/h |
-| volume of distribution | V | 19.3 | mL |
+| clearance of daunorubicin in the liposomes group | CL | 0.013 | times those in free drug group |
+| volume of distribution for daunorubicin liposome | V | 19.3 | mL |
+| sediment for | tlag | 50.0 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -50,11 +53,11 @@ Li MH, Yu H, Wang TF, Chang ND, Zhang JQ, Du D et al. Tamoxifen embedded in lipi
 
 ### Reviewer guidance
 
-**Tamoxifen clearance of 2235 mL/h is physiologically implausible for murine models, triggering the rejection of the record.**
+**Tamoxifen clearance and volume values were mislabeled as daunorubicin metrics, causing an implausible clearance magnitude failure.**
 
-The extracted clearance value of 2235 mL/h conflicts with the volume of distribution of 19.3 mL, creating an unrealistic elimination rate. A second reader disagreed on the primary analyte, suggesting the extracted values may belong to a different compound or context. This discrepancy between the magnitude of clearance and volume indicates a likely unit or scale extraction error. Extracted — tamoxifen: CL 2.24e+03 mL/h, V 19.3 mL.
+The recorded clearance of 0.013 (unit: times those in free drug group) and volume of distribution of 19.3 mL are explicitly labeled for daunorubicin in the liposomes group, not tamoxifen. This mismatch triggered a physiological window check failure due to the implausible magnitude of the clearance value. Furthermore, the clearance unit 'times those in free drug group' is not a standard pharmacokinetic unit and lacks a defined SI conversion, rendering the parameter value unusable for quantitative modeling. Extracted — tamoxifen: CL 0.013 times those in free drug group, V 19.3 mL, tlag 50 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tamoxifen, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has liposomal daunorubicin plus tamoxifen, the second reading liposomal daunorubicin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -62,8 +65,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 2235 | mL/h | 6.208e-07 | m3/s | L/h | exact (1) | Li_2014:other_prose |
-| volume of distribution | `Q61` · V | 19.3 | mL | 1.93e-05 | m3 | L | exact (1) | Li_2014:other_prose |
+| clearance of daunorubicin in the liposomes group | `Q22` · CL | 0.013 | times those in free drug group |  |  | times those in free drug group | boundary (0.8) | Li_2014:other_prose |
+| volume of distribution for daunorubicin liposome | `Q61` · V | 19.3 | mL | 1.93e-05 | m3 | L | boundary (0.8) | Li_2014:other_prose |
+| sediment for | `Q83` · tlag | 50.0 | min | 3000 | s | h | review_gapfill (0.7) | Jan_2000:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,14 +77,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('clearance'=2235) from results prose — parameter table was unreadable
-- salvaged Q61 ('volume of distribution'=19.3) from results prose — parameter table was unreadable
-- implicit units: 'clearance' → mL/h (from the paper text: "The text explicitly states in the 'Statistics analysis' section: '...and clearance (CL, mL h À1 ) were calculated...'. T")
+- salvaged Q22 ('clearance of daunorubicin in the liposomes group'=0.013) from results prose — parameter table was unreadable
+- salvaged Q61 ('volume of distribution for daunorubicin liposome'=19.3) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tamoxifen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q83 (tlag) from Jan_2000's review values (primary lacked it)
 
 **Extraction notes:**
 - table Li_2014_table_1: no_numeric_grid
@@ -101,11 +105,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance of daunorubicin in the liposomes group]` | 0.013 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` |  | 0.013 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 2235 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution for daunorubicin liposome]` | 19.3 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` |  | 19.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 19.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | tamoxifen | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | liposomal daunorubicin plus tamoxifen | liposomal daunorubicin | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | tamoxifen | daunorubicin | mismatch |
 
 </details>
@@ -123,10 +127,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Li_2014:other_prose'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 2235 | ['Li_2014:other_prose'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Jan_2000:review'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | times those in free drug group | ['Li_2014:other_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.013 | ['Li_2014:other_prose'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.23 L/h | ['Li_2014:other_prose'] |
 | C9_phys_window_Q61 | fail | volume within physiological range | 0.0193 L | ['Li_2014:other_prose'] |
 
 <details class="legend">
@@ -151,4 +155,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_Li2014_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_Li2014_reference%0APaper%3A%20Li_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_Li2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 12:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:48 UTC</sub>

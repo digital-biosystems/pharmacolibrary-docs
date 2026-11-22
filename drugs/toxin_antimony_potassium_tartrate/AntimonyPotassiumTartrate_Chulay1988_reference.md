@@ -112,29 +112,13 @@ The model structure is defined as retention, but the specific retention function
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_antimony_potassium_tartrate/AntimonyPotassiumTartrate_Chulay1988_reference/AntimonyPotassiumTartrate_Chulay1988_reference_matlab.zip" download>AntimonyPotassiumTartrate_Chulay1988_reference_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_antimony_potassium_tartrate/AntimonyPotassiumTartrate_Chulay1988_reference/AntimonyPotassiumTartrate_Chulay1988_reference_sbml.zip" download>AntimonyPotassiumTartrate_Chulay1988_reference_sbml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_antimony_potassium_tartrate/AntimonyPotassiumTartrate_Chulay1988_reference/AntimonyPotassiumTartrate_Chulay1988_reference_cellml.zip" download>AntimonyPotassiumTartrate_Chulay1988_reference_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Chulay JD, Fleckenstein L, Smith DH. Pharmacokinetics of antimony during treatment of visceral leishmaniasis with sodium stibogluconate or meglumine antimoniate. Transactions of the Royal Society of Tropical Medicine and Hygiene 82(1):69–72 (1988).
-
-**This record:** Pharmacolibrary, model `AntimonyPotassiumTartrate_Chulay1988_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_antimony_potassium_tartrate/AntimonyPotassiumTartrate_Chulay1988_reference>
-
-```bibtex
-@misc{pharmacolibrary_AntimonyPotassiumTartrateChulay1988reference,
-  title  = {{Pharmacolibrary model AntimonyPotassiumTartrate_Chulay1988_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_antimony_potassium_tartrate/AntimonyPotassiumTartrate_Chulay1988_reference},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

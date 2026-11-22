@@ -4,11 +4,11 @@
 
 # galactose — `Galactose_Henderson1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-07 21:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a structural parameter had a dimension mismatch, and summary statistics from an abstract-only source lacked a proper fitted model structure.
+> Percent-based clearance parameters for galactose have dimension mismatches with volume/time units.
 
-<div class="pk-model-meta" hidden drug="galactose" model-id="Galactose_Henderson1982_reference" status="rejected" stale="true" population="healthy adults and patients with liver disease (cirrhosis, acute hepatocellular damage)" measured-compound="galactose" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="galactose" model-id="Galactose_Henderson1982_reference" status="rejected" stale="false" population="healthy adults and patients with liver disease (cirrhosis, acute hepatocellular damage)" measured-compound="galactose" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Henderson JM, Kutner MH, Bain RP. First-order clearance of plasma galactose: the effect of liver disease. Gastroenterology 83(5):1090–1096 (1982).
@@ -38,7 +38,7 @@ Henderson JM, Kutner MH, Bain RP. First-order clearance of plasma galactose: the
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Henderson JM, Kutner MH, Bain RP. First-order clearance of plasma galactose: the
 
 ### Reviewer guidance
 
-**The record was rejected because a structural parameter had a dimension mismatch, and summary statistics from an abstract-only source lacked a proper fitted model structure.**
+**Percent-based clearance parameters for galactose have dimension mismatches with volume/time units.**
 
-The model relies on summary statistics, such as an 8% reduction in clearance and a 1378 ml/min total clearance, rather than a complete fitted model. The duration of the zero-order infusion input was not extracted from the abstract, leaving a critical structural parameter undefined. This absence contributed to the dimensional error in the model's structural definition, preventing valid interpretation of the galactose pharmacokinetics. Extracted — galactose: AUCSS 95 %, CL_ratio 8 %, fe 2 %, CLNR 2.3 %, CL 1.38e+03 ml/min, tlag 1 min.
+The record treats AUCSS (95%), CL_ratio (8%), and fe (2%) as dimensionless percentages, conflicting with expected mass, time, or volume dimensions. Because the record was abstract-only, these summary statistics were incorrectly mapped to structural parameters. The second reader disputed the specific values and field assignments for galactose clearance. Extracted — galactose: AUCSS 95 %, CL_ratio 8 %, fe 2 %, CLNR 2.3 %, CL 1.38e+03 ml/min, tlag 1 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of extrahepatic clearance by erythrocyte metabolism: this record has 2.3, the second reading none; it also differs on 14 more fields. That field does not shape the model.
 

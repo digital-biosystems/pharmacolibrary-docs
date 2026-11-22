@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;ceftriaxone&quot;,&quot;href&quot;:&quot;drugs/drug_ceftriaxone/&quot;},{&quot;label&quot;:&quot;Patel_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ceftriaxone_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ceftriaxone/Ceftriaxone_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ceftriaxone_Kumar2010_reference&quot;,&quot;label&quot;:&quot;Kumar_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ceftriaxone/Ceftriaxone_Kumar2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ceftriaxone_RoubaudBaudron2025_reference&quot;,&quot;label&quot;:&quot;Roubaud-Baudron_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ceftriaxone/Ceftriaxone_RoubaudBaudron2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ceftriaxone_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ceftriaxone/Ceftriaxone_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ceftriaxone_Kumar2010_reference&quot;,&quot;label&quot;:&quot;Kumar_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ceftriaxone/Ceftriaxone_Kumar2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ceftriaxone_RoubaudBaudron2025_reference&quot;,&quot;label&quot;:&quot;Roubaud-Baudron_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ceftriaxone/Ceftriaxone_RoubaudBaudron2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ceftriaxone — `Ceftriaxone_Patel1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:39 UTC (Rejected), but the paper was screened again on 2026-10-07 10:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ceftriaxone was rejected because the AUC unit pg.h/mi could not be converted to SI units, and the extracted A (37.1) and B (1306) values conflicted with the paper's 3.3 and 305.
+> Ceftriaxone AUC record rejected because the unit pg.h/mi has an incompatible dimension for a concentration-time area.
 
-<div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_Patel1981_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_Patel1981_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Patel IH, Chen S, Parsonnet M, Hackman MR, Brooks MA, Konikoff J et al. Pharmacokinetics of ceftriaxone in humans. Antimicrobial agents and chemotherapy 20(5):634–641 (1981).
@@ -41,7 +41,7 @@ Patel IH, Chen S, Parsonnet M, Hackman MR, Brooks MA, Konikoff J et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Patel IH, Chen S, Parsonnet M, Hackman MR, Brooks MA, Konikoff J et al. Pharmaco
 
 ### Reviewer guidance
 
-**Ceftriaxone was rejected because the AUC unit pg.h/mi could not be converted to SI units, and the extracted A (37.1) and B (1306) values conflicted with the paper's 3.3 and 305.**
+**Ceftriaxone AUC record rejected because the unit pg.h/mi has an incompatible dimension for a concentration-time area.**
 
-The AUC unit "pg.h/mi" lacks a defined conversion to standard international units, leaving the parameter without a valid SI value. The extraction identified parameter A as 37.1 pg/ml and parameter B as 1306 ug/ml, but the second reader recorded 3.3 and 305 for the same fields. A dimension mismatch was found on a structural parameter, and the absorption rate constant extraction (1.0 h−1) was contested as null by the second reader. Extracted — ceftriaxone: Ct 1.31e+03 ug/ml, AUC 551 pg.h/mi, V 4.54 liter, kabs 1 h−1.
+The area under the curve was assigned units of pg.h/mi, which imply a mass-time-per-length dimension, whereas AUC requires mass-time-per-volume. Because this unit is non-standard and cannot be converted to SI units, the AUC value could not be processed. A second reader also identified conflicting values for AUC and other parameters, such as recording 373 instead of the missing value in this record. Extracted — ceftriaxone: Ct 1.31e+03 ug/ml, AUC 551 pg.h/mi, V 4.54 liter, kabs 1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 0-24: this record has none, the second reading 373; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

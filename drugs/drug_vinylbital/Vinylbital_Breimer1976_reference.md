@@ -4,11 +4,11 @@
 
 # vinylbital — `Vinylbital_Breimer1976_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:45 UTC (Rejected), but the paper was screened again on 2026-10-06 23:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="vinylbital" model-id="Vinylbital_Breimer1976_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="vinylbital" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vinylbital" model-id="Vinylbital_Breimer1976_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="vinylbital" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Breimer DD, de Boer AG. Pharmacokinetics and relative bioavailability of vinylbital in man after oral and rectal administration. Arzneimittel-Forschung 26(3):448–454 (1976).
@@ -35,7 +35,7 @@ Breimer DD, de Boer AG. Pharmacokinetics and relative bioavailability of vinylbi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Breimer DD, de Boer AG. Pharmacokinetics and relative bioavailability of vinylbi
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vinylbital: t1/2ka 0.24 h, t1/2z 23.5 h, Frel 93 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vinylbital, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

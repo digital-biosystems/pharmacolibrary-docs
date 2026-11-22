@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was held back because the peripheral volume V2/F (260 L) was not simulated, and covariate effects on baloxavir acid clearance were not exercised.
+> The record for baloxavir marboxil was held back because the peripheral volume parameter was missing and covariate effects were not simulated.
 
 <div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Retout2026_reference" status="needs_review" stale="false" population="patients aged ≥1 year with influenza (treatment and post-exposure prophylaxis)" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
@@ -66,9 +66,9 @@ Retout S, De Buck S, Gaudreault J, Jolivet S, Duval V, Cosson V et al. Populatio
 
 ### Reviewer guidance
 
-**The record was held back because the peripheral volume V2/F (260 L) was not simulated, and covariate effects on baloxavir acid clearance were not exercised.**
+**The record for baloxavir marboxil was held back because the peripheral volume parameter was missing and covariate effects were not simulated.**
 
-The record defines a covariate effect on baloxavir acid apparent clearance (CL/F) with an exponent of 0.467, yet the simulation only tested the reference individual, leaving these covariate effects unverified. Additionally, the model was built with apparent assumptions (F=1, Fm=1), treating the measured metabolite baloxavir acid as if it were the parent compound without molar correction. The second reader also disagrees on the primary analyte, identifying the parent baloxavir rather than the measured metabolite, which may indicate a mismatch in the parameter mapping for the apparent model. Extracted — baloxavir acid: CLm/F 11 L/h, V1/F 735 L, Q/F 2.12 L/h, V2/F 260 L, kabs 1.39 1/h, tlag 0.223 h.
+The check for parameter coverage expected five values but found only four, specifically missing the peripheral volume parameter. Additionally, the simulation only ran for the reference individual, meaning the defined effects of race, sex, age, and weight were not exercised. A second reviewer also disputed the verdict, disagreeing with the primary analyte and several parameter values. Extracted — baloxavir acid: CLm/F 11 L/h, V1/F 735 L, Q/F 2.12 L/h, V2/F 260 L, kabs 1.39 1/h, tlag 0.223 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has baloxavir acid, the second reading baloxavir; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -208,17 +208,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=baloxavir acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  | 5.177e-05 | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 46.22 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=baloxavir acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.115, 0 of 1 reader(s) agree | 0.115 | cross-check disputed by a second reader: verdict disputed, agreement 0.115, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  | 5.177e-05 |  | non-numeric value |
+| T1_t_half_terminal | reference | skipped |  | 46.22 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was held back because the volume of distribution parameter was left at library defaults.
+> Talazoparib’s volume of distribution (Vd) has no extracted value; a library placeholder was used, so the model was held back.
 
 <div class="pk-model-meta" hidden drug="talazoparib" model-id="Talazoparib_Guo2022_estimate" status="model_quarantined" stale="false" population="patients with advanced solid tumours and varying degrees of hepatic impairment" measured-compound="talazoparib" parameterization="apparent" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Guo C, Yu Y, Chakrabarti J, Piha-Paul SA, Moroose R, Plotka A et al. Evaluation 
 
 ## Population and dosing
 
-**Population:** patients with advanced solid tumours and varying degrees of hepatic impairment · condition advanced solid tumours and hepatic impairment · age group adult · n = /&gt;. 37.
+**Population:** patients with advanced solid tumours and varying degrees of hepatic impairment · condition advanced solid tumours and hepatic impairment · age group adult.
 
 **Dosing:** 0.5 mg, oral, multiple, every 24 h.
 
@@ -51,13 +51,13 @@ Guo C, Yu Y, Chakrabarti J, Piha-Paul SA, Moroose R, Plotka A et al. Evaluation 
 
 ### Reviewer guidance
 
-**The model was held back because the volume of distribution parameter was left at library defaults.**
+**Talazoparib’s volume of distribution (Vd) has no extracted value; a library placeholder was used, so the model was held back.**
 
-The record lists five parameters for talazoparib, but the volume of distribution value is missing from the final parameter set. Consequently, a placeholder was used instead of an explicit estimate. The review noted that this parameter was neither emitted nor included in the list of accepted deviations. Extracted — talazoparib: CL/F 4.85 L/h, V2/F 201 L, kabs 6.55 h−1, Q/F 40.9 L/h, V3/F 316 L, tlag 0.421 h.
+No value for talazoparib's volume of distribution. The model was built, but talazoparib's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Although the record lists a peripheral-compartment volume, V2/F, of 200.632 L, that parameter was not counted as covered or defaulted; the model builder also assumed F=1 and Fm=1, with no molar correction, for apparent parameterization. Extracted — talazoparib: CL/F 4.85 L/h, V2/F 201 L, kabs 6.55 h−1, Q/F 40.9 L/h, V3/F 316 L, tlag 0.421 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -135,32 +135,33 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 10.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 11.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 13.56 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 17.15 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 2.778 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 3.204 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 3.675 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 4.518 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 2.624 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 3.699 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 3.553 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 6.225 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.05 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2.13 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.05 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 4 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.909, 0 of 1 reader(s) agree | 0.909 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 10.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 11.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 13.56 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 17.15 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 2.778 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 3.204 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 3.675 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 4.518 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 2.624 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 3.699 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 3.553 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 6.225 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1.05 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 2.13 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1.05 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 4 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

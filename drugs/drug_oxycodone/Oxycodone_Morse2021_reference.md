@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/&quot;},{&quot;label&quot;:&quot;Morse_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The oxycodone record was held back because the absorption lag time of 8.7 minutes was not extracted.
+> Oxycodone lag time 8.7 minutes was omitted from the model structure.
 
 <div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Morse2021_reference" status="needs_review" stale="false" population="preterm neonates to adults" measured-compound="oxycodone" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,14 +17,7 @@ Morse JD, Sundermann M, Hannam JA, Kokki H, Kokki M, Anderson BJ. Population pha
 
 ## Population and dosing
 
-**Population:** preterm neonates to adults · age group mixed · n = These are the top search results for the term “Cancer Research UK” on Bing, as of November 28, 2024.  
-
-**Top Results:**
-
-1. **Cancer Research UK (Homepage)**  
-   - URL: https://www.cancerresearchuk.org/  
-   - Title: Cancer Research UK | Leading UK charity fighting cancer  
-   - Snippet: Discover the latest cancer research news, get support, and help fund research. Cancer Research UK is the leading....
+**Population:** preterm neonates to adults · age group mixed.
 
 ## Model
 
@@ -61,9 +54,9 @@ Morse JD, Sundermann M, Hannam JA, Kokki H, Kokki M, Anderson BJ. Population pha
 
 ### Reviewer guidance
 
-**The oxycodone record was held back because the absorption lag time of 8.7 minutes was not extracted.**
+**Oxycodone lag time 8.7 minutes was omitted from the model structure.**
 
-The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader identified additional values missing from the record, including a clearance of 90 and a first absorption half-time of 1.1. The record currently lists a clearance of 48.6 and an intercompartmental clearance of 220. Extracted — oxycodone: CL 48.6 L.h-1 .70 kg-1, Q 220 L.h-1 .70 kg-1, Q3 1.45 L.h-1 .70 kg-1, V1 98.2 L.70 kg-1, V2 90.1 L.70 kg-1, V3 28.9 L.70 kg-1, Frel 0.673 nasogastric, tlag 8.7 minutes.
+The two-compartment model lacks a first-order absorption phase, leaving the extracted 8.7-minute lag time parameter unused. Since the record relied on abstract-only data, the second reader disagreed with several parameter mappings, noting differences in clearance and distribution values. Extracted — oxycodone: CL 48.6 L.h-1 .70 kg-1, Q 220 L.h-1 .70 kg-1, Q3 1.45 L.h-1 .70 kg-1, V1 98.2 L.70 kg-1, V2 90.1 L.70 kg-1, V3 28.9 L.70 kg-1, Frel 0.673 nasogastric, tlag 8.7 minutes.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of .70 kg-1: this record has none, the second reading none; it also differs on 14 more fields. That field does not shape the model.
 
@@ -159,14 +152,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=oxycodone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=oxycodone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.318, 0 of 1 reader(s) agree | 0.318 | cross-check agreement 0.318 is below 0.5: verdict partial, agreement 0.318, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

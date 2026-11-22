@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;L-Carnitine&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/&quot;},{&quot;label&quot;:&quot;Uematsu_1988 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LCarnitine_Haarhuis2026_reference&quot;,&quot;label&quot;:&quot;Haarhuis_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Haarhuis2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Nguyen2022_reference&quot;,&quot;label&quot;:&quot;Nguyen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Nguyen2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Parnetti1992_reference&quot;,&quot;label&quot;:&quot;Parnetti_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Parnetti1992_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Sahajwalla1995_reference&quot;,&quot;label&quot;:&quot;Sahajwalla_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Sahajwalla1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Shimizu2018_reference&quot;,&quot;label&quot;:&quot;Shimizu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LCarnitine_Nguyen2022_reference&quot;,&quot;label&quot;:&quot;Nguyen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Nguyen2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Parnetti1992_reference&quot;,&quot;label&quot;:&quot;Parnetti_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Parnetti1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Sahajwalla1995_reference&quot;,&quot;label&quot;:&quot;Sahajwalla_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Sahajwalla1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Haarhuis2026_reference&quot;,&quot;label&quot;:&quot;Haarhuis_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Haarhuis2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LCarnitine_Shimizu2018_reference&quot;,&quot;label&quot;:&quot;Shimizu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_carnitine/LCarnitine_Shimizu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Clearance for l-carnitine is 3.62 µL/min, an implausibly low magnitude suggesting a unit extraction error, and the model relies on abstract-only summary statistics.
 
 <div class="pk-model-meta" hidden drug="L-Carnitine" model-id="LCarnitine_Uematsu1988_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="l-carnitine" parameterization="mechanistic" topology="retention"></div>
 
@@ -45,7 +45,13 @@ Uematsu T, Itaya T, Nishimoto M, Takiguchi Y, Mizuno A, Nakashima M et al. Pharm
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Clearance for l-carnitine is 3.62 µL/min, an implausibly low magnitude suggesting a unit extraction error, and the model relies on abstract-only summary statistics.**
+
+The total clearance for l-carnitine is recorded as 3.62 µL/min, a value outside the physiological window for humans, indicating a scale or unit extraction error. The record is derived solely from the paper's abstract, meaning reported summary statistics replace fitted model parameters. This abstract-only status prevents a rigorous assessment of the absorption rate constant (0.5 /h) and terminal half-life (16.5 h). Extracted — l carnitine: t1/2z 16.5 h, CL 3.62 µL/min, kabs 0.5 /h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

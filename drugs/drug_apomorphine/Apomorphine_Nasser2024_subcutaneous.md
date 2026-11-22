@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;apomorphine&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/&quot;},{&quot;label&quot;:&quot;Nasser_2024 \u00b7 subcutaneous&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Nasser_2024_UPDRS_Part_III&quot;,&quot;label&quot;:&quot;Nasser_2024 \u00b7 UPDRS Part III&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Nasser_2024_UPDRS_Part_III.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Patel_1995_single_pulse_stimulated_dopamine_release&quot;,&quot;label&quot;:&quot;Patel_1995 \u00b7 single pulse stimulated dopamine release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Patel_1995_single_pulse_stimulated_dopamine_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # apomorphine — `Apomorphine_Nasser2024_subcutaneous`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-07 09:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Molecular weight was recorded in milligrams instead of a molar mass unit, creating a structural dimension mismatch for apomorphine.
+> Apomorphine’s molecular-weight value of 7.34 mg has units of mass rather than mass per amount, causing a dimensional mismatch and rejection.
 
-<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_subcutaneous" status="rejected" stale="true" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_subcutaneous" status="rejected" stale="false" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-based comparison of subcutaneous versus sublingual apomorphine administration in the treatment of motor fluctuations in Parkinson's disease. Journal of pharmacokinetics and pharmacodynamics 51(4):385–393 (2024).
@@ -43,7 +42,7 @@ Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-b
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.15). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.15). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +52,13 @@ Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-b
 
 ### Reviewer guidance
 
-**Molecular weight was recorded in milligrams instead of a molar mass unit, creating a structural dimension mismatch for apomorphine.**
+**Apomorphine’s molecular-weight value of 7.34 mg has units of mass rather than mass per amount, causing a dimensional mismatch and rejection.**
 
-The record lists the molecular weight of apomorphine as 7.34 mg, but the molecular weight must use a molar mass unit like g/mol to convert amounts correctly. This unit error prevented the parameter from reaching its standard form, causing the review to reject the record. A second reader could not confirm the values for this parameter or the other pharmacokinetic parameters listed in the facts. Extracted — apomorphine: MW 7.34 mg, AUCt 1 mg, tmax 1 min, CL/F 191 L/h, V/F 153 L, kabs 14.9 h−1, Fab 1.
+The record also reports apomorphine AUCt as 1 mg, although an area under a concentration–time curve has concentration-times-time dimensions, not mass. A reported unit could not be converted to SI, leaving a parameter without an SI value; the record does not identify which parameter. The second reader listed the dose compound and primary analyte as unknown and supplied no values for the disputed parameters. Extracted — apomorphine: MW 7.34 mg, AUCt 1 mg, tmax 1 min, CL/F 191 L/h, V/F 153 L, kabs 14.9 h−1, Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apomorphine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

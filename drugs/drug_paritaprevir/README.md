@@ -33,7 +33,7 @@ Paritaprevir is an antiviral used to treat hepatitis C. It is given orally in ta
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Mensing_2016_reference](drugs/drug_paritaprevir/Paritaprevir_Mensing2016_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Mensing S et al., Population Pharmacokinetics of Paritapr…, The AAPS journal (2016) | [10.1208/s12248-015-9846-1](https://doi.org/10.1208/s12248-015-9846-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Mensing_2016_reference](drugs/drug_paritaprevir/Paritaprevir_Mensing2016_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Mensing S et al., Population Pharmacokinetics of Paritapr…, The AAPS journal (2016) | [10.1208/s12248-015-9846-1](https://doi.org/10.1208/s12248-015-9846-1) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,24 +44,6 @@ Paritaprevir is an antiviral used to treat hepatitis C. It is given orally in ta
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gopalakrishnan_2016_Total_bilirubin_elevation](drugs/drug_paritaprevir/pd_Gopalakrishnan_2016_Total_bilirubin_elevation.md) | Total bilirubin elevation ≥ grade 2 ← paritaprevir · direct linear effect | — | Gopalakrishnan S et al., Exposure-Response Relationship for Ombi…, Advances in therapy (2016) | [10.1007/s12325-016-0320-y](https://doi.org/10.1007/s12325-016-0320-y) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Polepally_2017_2_SVR12](drugs/drug_paritaprevir/pd_Polepally_2017_2_SVR12.md) | sustained virologic response at week 12 post-treatment ← paritaprevir · model not identified | — | Polepally AR et al., Application of Exposure-Response Analys…, The AAPS journal (2017) | [10.1208/s12248-017-0115-3](https://doi.org/10.1208/s12248-017-0115-3) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Khatri_2016_SVR12](drugs/drug_paritaprevir/pd_Khatri_2016_SVR12.md) | Sustained virologic response at 12 weeks after treatment (SVR12) ← paritaprevir · categorical (graded) response model | — | Khatri A et al., Exposure-Efficacy Analyses of Ombitasvi…, Clinical drug investigation (2016) | [10.1007/s40261-016-0407-x](https://doi.org/10.1007/s40261-016-0407-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=paritaprevir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCG2` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -75,7 +57,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:24 | 10:41 | 1/0/0 | 4/0/0 | 0/0/0 | 263,563/28,037 | ollama / glm-5.3-flash | 12 | 1/10 | 12/0 | 0 |
+| 2026-10-07 18:24 | 10:41 | 1/0/0 | 5/0/0 | 0/0/0 | 263,563/28,037 | ollama / glm-5.3-flash | 12 | 1/10 | 12/0 | 0 |
 
 ## Coverage
 

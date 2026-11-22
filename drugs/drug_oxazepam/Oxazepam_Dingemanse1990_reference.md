@@ -5,11 +5,11 @@
 
 # oxazepam — `Oxazepam_Dingemanse1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-06 19:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for oxazepam was rejected because its volume of distribution unit, kg-1, is dimensionally inconsistent with the concentration-based model structure.
+> The record was rejected because the volume of distribution unit, kg-1, conflicts with the expected volumetric dimension.
 
-<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Dingemanse1990_reference" status="rejected" stale="true" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Dingemanse1990_reference" status="rejected" stale="false" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dingemanse J, Voskuyl RA, Langemeijer MW, Postel-Westra I, Breimer DD, Meinardi H et al. Pharmacokinetic-pharmacodynamic modelling of the anticonvulsant effect of oxazepam in individual rats. British journal of pharmacology 99(1):53–58 (1990).
@@ -39,7 +39,7 @@ Dingemanse J, Voskuyl RA, Langemeijer MW, Postel-Westra I, Breimer DD, Meinardi 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Dingemanse J, Voskuyl RA, Langemeijer MW, Postel-Westra I, Breimer DD, Meinardi 
 
 ### Reviewer guidance
 
-**The record for oxazepam was rejected because its volume of distribution unit, kg-1, is dimensionally inconsistent with the concentration-based model structure.**
+**The record was rejected because the volume of distribution unit, kg-1, conflicts with the expected volumetric dimension.**
 
-The volume of distribution is defined as a concentration-based parameter, which requires volume per mass units (e.g., L/kg) rather than the recorded mass inverse (kg-1). This unit error created a dimension mismatch for the structural parameter. The record was built from the abstract alone, so the reported statistics stand in for a fitted model. The second reader could not identify the dose compound or primary analyte and did not extract the parameter values. Extracted — oxazepam: CL 28 L/h, V 2.6 kg-1, Cmin 0.11 mg l-1.
+The extracted volume of distribution for oxazepam is 2.6 kg-1, which is dimensionless rather than volumetric. This unit conflict caused a dimensional check on the structural parameter to fail. The record was built from the abstract alone, so the reported statistics stand in for a fitted model. Extracted — oxazepam: CL 28 L/h, V 2.6 kg-1, Cmin 0.11 mg l-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has oxazepam, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

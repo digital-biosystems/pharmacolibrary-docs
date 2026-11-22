@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;epirubicin&quot;,&quot;href&quot;:&quot;drugs/drug_epirubicin/&quot;},{&quot;label&quot;:&quot;Robert_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epirubicin_Robert1994_reference&quot;,&quot;label&quot;:&quot;Robert_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epirubicin/Epirubicin_Robert1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epirubicin_Robert1994_reference&quot;,&quot;label&quot;:&quot;Robert_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epirubicin/Epirubicin_Robert1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # epirubicin — `Epirubicin_Robert1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Epirubicin Vss (1000 L) replaced the central volume in the one-compartment model, ignoring the abstract-only source's lack of fitted parameters.
-
-<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Robert1994_reference" status="needs_review" stale="false" population="unknown" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Robert1994_reference" status="simulated" stale="false" population="unknown" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Robert J. Clinical pharmacokinetics of epirubicin. Clinical pharmacokinetics 26(6):428–438 (1994).
@@ -29,8 +27,6 @@ Robert J. Clinical pharmacokinetics of epirubicin. Clinical pharmacokinetics 26(
 <figure class="pk-models-diagram"><img src="drugs/drug_epirubicin/Epirubicin_Robert1994_reference/Epirubicin_Robert1994_reference.svg" alt="Epirubicin_Robert1994_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | half-life | t1/2z | 3.2 | minutes |
@@ -39,7 +35,7 @@ Robert J. Clinical pharmacokinetics of epirubicin. Clinical pharmacokinetics 26(
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +45,13 @@ Robert J. Clinical pharmacokinetics of epirubicin. Clinical pharmacokinetics 26(
 
 ### Reviewer guidance
 
-**Epirubicin Vss (1000 L) replaced the central volume in the one-compartment model, ignoring the abstract-only source's lack of fitted parameters.**
+**Every check that could be run on this record passed.**
 
-The record uses steady-state volume of distribution as the single distribution volume for a one-compartment model, a substitution that fails to capture the early distribution phase. Because the source was abstract-only, the summary statistics (CL 46 L/h, Vss 1000 L) are not fitted model parameters. Additionally, the second reader could not verify any of the reported parameter values, leaving them unsubstantiated. Extracted — epirubicin: t1/2z 3.2 minutes, CL 46 L/h, Vss 1e+03 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of half-life: this record has 3.2, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -131,14 +127,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=epirubicin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=epirubicin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ethosuximide tmax fails due to an unconvertible unit blocking a parameter, while second-reader verification of clearance, volumes, and absorption rate constant was impossible.
+> Ethosuximide's simulated time of maximum concentration (1.18 h) exceeded the paper's reported value (0.63 h) by a ratio of 1.8781.
 
 <div class="pk-model-meta" hidden drug="ethosuximide" model-id="Ethosuximide_Diezi2023_syrup_zarontin_b" status="needs_review" stale="false" population="healthy adults" measured-compound="ethosuximide" parameterization="apparent" topology="2C"></div>
 
@@ -59,9 +59,9 @@ Diezi L, Dao K, Jullien V, Roussel-Maupetit C, Burton I, André P et al. An inno
 
 ### Reviewer guidance
 
-**Ethosuximide tmax fails due to an unconvertible unit blocking a parameter, while second-reader verification of clearance, volumes, and absorption rate constant was impossible.**
+**Ethosuximide's simulated time of maximum concentration (1.18 h) exceeded the paper's reported value (0.63 h) by a ratio of 1.8781.**
 
-A reported unit for ethosuximide could not be converted to standard units, so the parameter lacked a valid value. Consequently, the model predicted a peak concentration time of 1.18 h, deviating from the paper's 0.63 h. A second reader failed to extract the clearance, intercompartmental clearance, absorption rate constant, and volume parameters. Extracted — ethosuximide: Cmax 18.2 μg/ml, AUClast 1.2e+03 μg·h/ml, AUC∞ 1.21e+03 μg·h/ml, t1/2z 57.1 h, CLnorm/F 8.3 ml/h/kg, Vnorm/F 678 ml/kg, CL 0.57 L/h, Q 10.2 L/h, … (+3).
+The simulation failed to match the reported peak time, producing a value significantly larger than the observed 0.63 h. The record relies on assumed values, such as a defaulted absorption delay and a unit for absorption that could not be converted to SI. A second reviewer disagreed with the extracted clearance, intercompartmental clearance, and both compartment volumes, leaving those parameters unsupported. Extracted — ethosuximide: Cmax 18.2 μg/ml, AUClast 1.2e+03 μg·h/ml, AUC∞ 1.21e+03 μg·h/ml, t1/2z 57.1 h, CLnorm/F 8.3 ml/h/kg, Vnorm/F 678 ml/kg, CL 0.57 L/h, Q 10.2 L/h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 0.57, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -180,7 +180,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=ethosuximide) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev-2: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.588, 0 of 1 reader(s) agree | 0.588 | cross-check disputed by a second reader: verdict disputed, agreement 0.588, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 93.7 | 0.01168 |  | unresolved concentration unit (exp '90% Confidence Interval (CI): 76.3–115.1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 87.6 | 0.01168 |  | unresolved concentration unit (exp '90% CI: 81.6–94.0', sim 'kg/m3') |
 | T1_tmax | reference | fail | 0.63 | 1.183 | 1.878 | h→SI vs simulated h |

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dinutuximab's clearance, volume, and central-to-peripheral transfer rate lacked extracted values, so library placeholders replaced the fitted parameters.
+> Dinutuximab’s clearance, distribution volume, and central-to-peripheral rate were missing; CL 0.683 L/d, V1 1.43 L, and k12 0.552 1/d were assigned to ch14.18-UTC / ch14.18-NCI.
 
 <div class="pk-model-meta" hidden drug="dinutuximab" model-id="Dinutuximab_Marachelian2016_ch14_18_utc" status="model_quarantined" stale="false" population="pediatric patients with high-risk neuroblastoma" measured-compound="ch14.18" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Marachelian A, Desai A, Balis F, Katzenstein H, Qayed M, Armstrong M et al. Comp
 
 ### Reviewer guidance
 
-**Dinutuximab's clearance, volume, and central-to-peripheral transfer rate lacked extracted values, so library placeholders replaced the fitted parameters.**
+**Dinutuximab’s clearance, distribution volume, and central-to-peripheral rate were missing; CL 0.683 L/d, V1 1.43 L, and k12 0.552 1/d were assigned to ch14.18-UTC / ch14.18-NCI.**
 
-The record lists parameters for the ch14.18-UTC and ch14.18-NCI metabolites, not for the parent dinutuximab molecule. Because no explicit estimates were provided for dinutuximab's clearance, volume of distribution, or transfer rate constant, default values were used. A second reader also flagged the dose compound and primary analyte as unknown. Extracted — ch14.18-UTC / ch14.18-NCI (dinutuximab): CL 0.683 L/d, Q 0.767 L/d, V1 1.43 L, V2 3.94 L, Vss 5.38 L, kel 0.489 1/d, k12 0.552 1/d, k21 0.199 1/d.
+No value for dinutuximab’s clearance, volume of distribution and central→peripheral rate constant—all 8 extracted parameters describe ch14.18-UTC / ch14.18-NCI, not dinutuximab. The model was built, but a library placeholder stood in for those missing values, so it was held back rather than published with invented numbers. A second reader disputed the record’s dose compound and primary analyte, identifying both as unknown. Extracted — ch14.18-UTC / ch14.18-NCI (dinutuximab): CL 0.683 L/d, Q 0.767 L/d, V1 1.43 L, V2 3.94 L, Vss 5.38 L, kel 0.489 1/d, k12 0.552 1/d, k21 0.199 1/d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ch14.18-UTC / ch14.18-NCI, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -159,15 +159,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 6.57 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 6.88 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 6.57 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 6.88 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -185,30 +186,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc/Dinutuximab_Marachelian2016_ch14_18_utc_matlab.zip" download>Dinutuximab_Marachelian2016_ch14_18_utc_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc/Dinutuximab_Marachelian2016_ch14_18_utc_matlab_simbio.zip" download>Dinutuximab_Marachelian2016_ch14_18_utc_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc/Dinutuximab_Marachelian2016_ch14_18_utc_sbml.zip" download>Dinutuximab_Marachelian2016_ch14_18_utc_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc/Dinutuximab_Marachelian2016_ch14_18_utc_cellml.zip" download>Dinutuximab_Marachelian2016_ch14_18_utc_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Marachelian A, Desai A, Balis F, Katzenstein H, Qayed M, Armstrong M et al. Comparative pharmacokinetics, safety, and tolerability of two sources of ch14.18 in pediatric patients with high-risk neuroblastoma following myeloablative therapy. Cancer chemotherapy and pharmacology 77(2):405–412 (2016). [doi:10.1007/s00280-015-2955-9](https://doi.org/10.1007/s00280-015-2955-9)
-
-**This record:** Pharmacolibrary, model `Dinutuximab_Marachelian2016_ch14_18_utc`. <https://pharmacolibrary.github.io/#/drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc>
-
-```bibtex
-@misc{pharmacolibrary_DinutuximabMarachelian2016ch1418utc,
-  title  = {{Pharmacolibrary model Dinutuximab_Marachelian2016_ch14_18_utc}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc},
-  note   = {Parameters from doi:10.1007/s00280-015-2955-9},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

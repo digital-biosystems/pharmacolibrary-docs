@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Ketoconazole&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/&quot;},{&quot;label&quot;:&quot;Leil_2014 \u00b7 PD 4beta-Hydroxycholesterol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketoconazole_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketoconazole_Matthew1993_reference&quot;,&quot;label&quot;:&quot;Matthew_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketoconazole_Johnson2018_reference&quot;,&quot;label&quot;:&quot;Johnson_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Johnson2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketoconazole_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketoconazole_Matthew1993_reference&quot;,&quot;label&quot;:&quot;Matthew_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Matthew1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketoconazole_Johnson2018_reference&quot;,&quot;label&quot;:&quot;Johnson_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ketoconazole/Ketoconazole_Johnson2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 4beta-Hydroxycholesterol — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Ketoconazole (concentrations from the PK model of Johnson_2018) drives 4beta-Hydroxycholesterol (in nmol/l): indirect response — drug inhibits the production of 4beta-Hydroxycholesterol.
 
 **Model:** No model was generated from this record.
+
+> Ketoconazole plasma concentrations (nmol/l) inhibit the formation of 4β-hydroxycholesterol (nmol/l) via a proportional indirect response mechanism. The model employs an inhibition constant (Ki) of 50 nmol/l for this effect.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Leil_2014`
 - **model family:** `indirect_response_i`

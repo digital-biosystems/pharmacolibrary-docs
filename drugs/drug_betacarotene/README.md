@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;betacarotene&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # betacarotene
 
@@ -24,34 +24,12 @@ Betacarotene is a provitamin and antioxidant that treats erythropoietic protopor
 | betacarotene | parent | 536.888 | C40H56 | DrugBank | [5280489](https://pubchem.ncbi.nlm.nih.gov/compound/5280489) | Green_2021 |
 | retinol | metabolite | 286.459 | C20H30O | PubChem | [445354](https://pubchem.ncbi.nlm.nih.gov/compound/445354) | Green_2021 |
 
-## Start here
-
-> **Franken_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md?tab=Simulation) · [record](drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Franken_2026_reference](drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Franken_2026_reference](drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Green_2021_reference](drugs/drug_betacarotene/Betacarotene_Green2021_reference.md) | — | general linear (no model) | 5 | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=betacarotene).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | adipose tissue | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: BCO1 (substrate), Free radicals (binder), RBP1 (substrate), RBP2 (substrate), RBP3 (substrate), RBP4 (substrate), RBP5 (substrate), VLDLR (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +43,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 07:23 | 18:02 | 1/1/0 | 0/0/0 | 0/0/0 | 432,529/39,387 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 3/24 | 11/4 | 0 |
+| 2026-10-05 07:23 | 18:02 | 0/2/0 | 0/0/0 | 0/0/0 | 432,529/39,387 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 3/24 | 11/4 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1151 matched, 191 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

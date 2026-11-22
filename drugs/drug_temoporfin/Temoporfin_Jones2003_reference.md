@@ -4,11 +4,11 @@
 
 # temoporfin — `Temoporfin_Jones2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-06 21:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for temoporfin was rejected due to a dimension mismatch on the hepatic flow parameter and missing units.
+> Temoporfin’s reported hepatic blood-flow/intercompartmental-clearance parameter QH is 97.3 h, a time unit conflicting with its volume-per-time dimension, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="temoporfin" model-id="Temoporfin_Jones2003_reference" status="rejected" stale="true" population="BDIX rats with LSBD1 fibrosarcoma" measured-compound="14C m-THPC (temoporfin)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="temoporfin" model-id="Temoporfin_Jones2003_reference" status="rejected" stale="false" population="BDIX rats with LSBD1 fibrosarcoma" measured-compound="14C m-THPC (temoporfin)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jones HJ, Vernon DI, Brown SB. Photodynamic therapy effect of m-THPC (Foscan) in vivo: correlation with pharmacokinetics. British journal of cancer 89(2):398–404 (2003).
@@ -45,7 +45,7 @@ Jones HJ, Vernon DI, Brown SB. Photodynamic therapy effect of m-THPC (Foscan) in
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +55,13 @@ Jones HJ, Vernon DI, Brown SB. Photodynamic therapy effect of m-THPC (Foscan) in
 
 ### Reviewer guidance
 
-**The record for temoporfin was rejected due to a dimension mismatch on the hepatic flow parameter and missing units.**
+**Temoporfin’s reported hepatic blood-flow/intercompartmental-clearance parameter QH is 97.3 h, a time unit conflicting with its volume-per-time dimension, so the record was rejected.**
 
-The hepatic flow parameter is recorded with a value of 97.3 but carries the unit hours, which is dimensionally inconsistent for a flow rate. This incorrect unit prevented conversion to standard SI units, causing the model to fail the dimensional review. Additionally, the second reader disagreed on the volume of distribution and identified a half-life value of 22.6 that was not present in the extracted parameters. Extracted — m-THPC (temoporfin): t1/2α 0.46 h, t1/2z 6.91 h, t1/2γ 82.5 h, MRT 32.5 h, QH 97.3 h; 14C m-THPC (temoporfin): V 32 ml kg−1.
+QH represents hepatic blood flow or intercompartmental clearance, but its reported unit h is time rather than volume per time. The unit could not be converted to SI, leaving the parameter without an SI value; a second reader did not identify a liver parameter. Extracted — m-THPC (temoporfin): t1/2α 0.46 h, t1/2z 6.91 h, t1/2γ 82.5 h, MRT 32.5 h, QH 97.3 h; 14C m-THPC (temoporfin): V 32 ml kg−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has m-THPC (temoporfin), the second reading m-THPC; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

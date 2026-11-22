@@ -4,11 +4,11 @@
 
 # camrelizumab — `Camrelizumab_Wang2021_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:01 UTC (Rejected), but the paper was screened again on 2026-10-07 10:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the linear clearance unit could not be converted to SI, and steady-state concentrations lacked second-reader confirmation.
+> The record was rejected because the intercompartmental clearance unit, L/day, could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_base" status="rejected" stale="true" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_base" status="rejected" stale="false" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokinetics of the anti-PD-1 antibody camrelizumab in patients with multiple tumor types and model-informed dosing strategy. Acta pharmacologica Sinica 42(8):1368–1375 (2021).
@@ -41,7 +41,7 @@ Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokineti
 
 ### Reviewer guidance
 
-**Record rejected because the linear clearance unit could not be converted to SI, and steady-state concentrations lacked second-reader confirmation.**
+**The record was rejected because the intercompartmental clearance unit, L/day, could not be converted to standard SI units.**
 
-The linear clearance value of 0.242 L/day uses a unit that could not be converted to standard SI units. Steady-state maximum and minimum concentrations are listed as 47.26 mg/L and 26.13 mg/L, but a second reader could not confirm these values. The two-compartment model includes a central volume of 3.08 L and peripheral volume of 2.88 L. Extracted — camrelizumab: CL 0.242 L/day, Vmax 2.86 mg/day, Km 1.28 mg/L, V1 3.08 L, Q 0.385 L/day, V2 2.88 L, Cmax 47.3 mg/L, Cmin 26.1 mg/L.
+The record lists the intercompartmental clearance between the central and peripheral compartments as 0.385 L/day. This unit was not recognized for conversion to SI, so the parameter remained without a valid standardized value. Additionally, the second reader failed to confirm the extracted maximum and minimum steady-state concentrations of 47.26 mg/L and 26.13 mg/L, respectively. Extracted — camrelizumab: CL 0.242 L/day, Vmax 2.86 mg/day, Km 1.28 mg/L, V1 3.08 L, Q 0.385 L/day, V2 2.88 L, Cmax 47.3 mg/L, Cmin 26.1 mg/L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of c max,ss: this record has 47.26, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

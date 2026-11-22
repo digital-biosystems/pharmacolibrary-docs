@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a pharmacodynamic model, mechanism, or quantitative parameters (e.g., IC50, EC50, Imax) describing the relationship between phenolphthalein concentrations and motilin levels. It only reports that phenolphthalein intervention increased serum motilin in loperamide-induced constipation mice compared to the model group.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

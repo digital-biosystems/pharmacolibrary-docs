@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;aminohippuric acid&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/&quot;},{&quot;label&quot;:&quot;Estelberger_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminohippuricAcid_Kinowski1995_reference&quot;,&quot;label&quot;:&quot;Kinowski_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminohippuricAcid_Kinowski1995_reference&quot;,&quot;label&quot;:&quot;Kinowski_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # aminohippuric acid — `AminohippuricAcid_Estelberger1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:10 UTC (Rejected), but the paper was screened again on 2026-10-07 21:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected because p-aminohippuric acid parameters like MRT lack a defined unit, preventing SI conversion.
+> The clearance value for p-aminohippuric acid was recorded with a time unit instead of volume per time, creating a dimensional conflict that resulted in rejection.
 
-<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="rejected" stale="true" population="renal patients and healthy controls" measured-compound="p-aminohippuric acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="rejected" stale="false" population="renal patients and healthy controls" measured-compound="p-aminohippuric acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identification of the low-dose kinetics of p-aminohippuric acid. European journal of clinical chemistry and clinical biochemistry : journal of the Forum of European Clinical Chemistry Societies 33(11):847–853 (1995).
@@ -40,7 +40,7 @@ Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identifi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identifi
 
 ### Reviewer guidance
 
-**The model was rejected because p-aminohippuric acid parameters like MRT lack a defined unit, preventing SI conversion.**
+**The clearance value for p-aminohippuric acid was recorded with a time unit instead of volume per time, creating a dimensional conflict that resulted in rejection.**
 
-Values such as the mean time of residence (64) and absorption lag time (28) are listed with an undefined unit 'a'. This missing unit definition prevents conversion to standard SI units, causing a dimension mismatch in the model structure. Although the volume of distribution is correctly specified in liters, the undefined units for the other kinetic parameters invalidate the record. Extracted — aminohippuric acid: MRT 64 a, kel 69 a, tlag 28 a, Fab 54 a, V 6.31 L.
+The parameter representing the rate of drug removal from the body is listed with a unit indicating duration, which is physically incompatible with the required volume per time dimension. Because this non-standard unit could not be interpreted as a standard pharmacokinetic measurement, no valid numerical clearance could be assigned. A second reader also disagreed on the specific drug name used, preferring aminohippuric acid over p-aminohippuric acid, and failed to identify values for the lag time, bioavailability, and elimination rate constant. Extracted — aminohippuric acid: MRT 64 a, kel 69 a, tlag 28 a, Fab 54 a, V 6.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-aminohippuric acid, the second reading aminohippuric_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

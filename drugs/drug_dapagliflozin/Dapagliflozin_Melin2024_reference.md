@@ -16,7 +16,7 @@ Melin J, Parkinson J, Hamrén B, Penland RC, Boulton DW, Tang W. Dapagliflozin p
 
 ## Population and dosing
 
-**Population:** adults with HFrEF and T2DM · condition heart failure with reduced ejection fraction (HFrEF) and type 2 diabetes mellitus (T2DM) · age group adult · n = &gt;=2744.
+**Population:** adults with HFrEF and T2DM · condition heart failure with reduced ejection fraction (HFrEF) and type 2 diabetes mellitus (T2DM) · age group adult.
 
 ## Model
 
@@ -36,7 +36,7 @@ Melin J, Parkinson J, Hamrén B, Penland RC, Boulton DW, Tang W. Dapagliflozin p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Melin J, Parkinson J, Hamrén B, Penland RC, Boulton DW, Tang W. Dapagliflozin p
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Kobuchi_2025) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dapagliflozin: CL/F 23 L/h, V/F 73.9 L, kabs 57.4 1/day.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ka: this record has 57.4, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 57.4, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -87,14 +87,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[ka]` | 57.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | 73.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 57.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 73.9 |  | only_one_extracted |
 
 </details>
 

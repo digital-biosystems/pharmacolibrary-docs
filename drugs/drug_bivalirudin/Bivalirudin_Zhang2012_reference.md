@@ -4,11 +4,11 @@
 
 # bivalirudin — `Bivalirudin_Zhang2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:45 UTC (Rejected), but the paper was screened again on 2026-10-05 14:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The central compartment volume of 24.2% is dimensionally invalid for a two-compartment model.
+> Bivalirudin's central compartment volume V1 is recorded as 24.2% instead of a volume dimension like L/kg.
 
-<div class="pk-model-meta" hidden drug="bivalirudin" model-id="Bivalirudin_Zhang2012_reference" status="rejected" stale="true" population="young healthy Chinese volunteers" measured-compound="bivalirudin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="bivalirudin" model-id="Bivalirudin_Zhang2012_reference" status="rejected" stale="false" population="young healthy Chinese volunteers" measured-compound="bivalirudin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Zhang DM, Wang K, Zhao X, Li YF, Zheng QS, Wang ZN et al. Population pharmacokinetics and pharmacodynamics of bivalirudin in young healthy Chinese volunteers. Acta pharmacologica Sinica 33(11):1387–1394 (2012).
@@ -16,7 +16,7 @@ Zhang DM, Wang K, Zhao X, Li YF, Zheng QS, Wang ZN et al. Population pharmacokin
 
 ## Population and dosing
 
-**Population:** young healthy Chinese volunteers · condition healthy · age group adult · n = &gt;=36.
+**Population:** young healthy Chinese volunteers · condition healthy · age group adult.
 
 **Dosing:** 35, 52.5, 73.5, 122.5 mg, iv, multiple.
 
@@ -39,7 +39,7 @@ Zhang DM, Wang K, Zhao X, Li YF, Zheng QS, Wang ZN et al. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Zhang DM, Wang K, Zhao X, Li YF, Zheng QS, Wang ZN et al. Population pharmacokin
 
 ### Reviewer guidance
 
-**The central compartment volume of 24.2% is dimensionally invalid for a two-compartment model.**
+**Bivalirudin's central compartment volume V1 is recorded as 24.2% instead of a volume dimension like L/kg.**
 
-The record reports bivalirudin central volume as 24.2% while using liters per kilogram for peripheral volume and clearance. This unit mismatch prevents valid simulation of the two-compartment structure. Because the data came from the abstract, these summary statistics were used directly without a fitted model to correct the units. Extracted — bivalirudin: CL 0.323 L·h-1·kg-1, V 0.086 L/kg, Q 0.0957 L·h-1·kg-1, V1 24.2 %.
+The two-compartment model lists the central volume V1 as 24.2% in the abstract-only source. This percent unit conflicts with the required three-dimensional volume unit. Because only the abstract was available, these summary statistics stand in for a fitted model. Consequently, the record was rejected due to this structural parameter dimension mismatch. Extracted — bivalirudin: CL 0.323 L·h-1·kg-1, V 0.086 L/kg, Q 0.0957 L·h-1·kg-1, V1 24.2 %.
 
 Independently confirmed by `gpt-oss-120b`.
 

@@ -50,7 +50,7 @@ Enterotoxin type B is one of many enterotoxins produced by Staphylococcus aureus
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-12 09:38 | 8:12 | 0/1/0 | 1/0/0 | 0/0/0 | 159,534/5,919 | einfracz / qwen3.8-flash-next | 18 | 3/5 | 18/0 | 0 |
+| 2026-11-12 09:38 | 8:12 | 0/1/0 | 1/7/0 | 0/0/0 | 159,534/5,919 | einfracz / qwen3.8-flash-next | 18 | 3/5 | 18/0 | 0 |
 
 ## Coverage
 

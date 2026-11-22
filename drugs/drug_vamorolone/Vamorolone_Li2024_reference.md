@@ -4,11 +4,11 @@
 
 # vamorolone — `Vamorolone_Li2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-07 09:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for vamorolone was rejected because a 3.14 h concentration parameter failed dimensional consistency against other parameters.
+> V/F was misclassified as a time parameter, causing a dimension mismatch, and the abstract-only source prevented verification of the reported concentration value of 3.14.
 
-<div class="pk-model-meta" hidden drug="vamorolone" model-id="Vamorolone_Li2024_reference" status="rejected" stale="true" population="boys with Duchenne Muscular Dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vamorolone" model-id="Vamorolone_Li2024_reference" status="rejected" stale="false" population="boys with Duchenne Muscular Dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li X, Sabbatini D, Pegoraro E, Bello L, Clemens P, Guglieri M et al. Assessing Pharmacogenomic loci Associated with the Pharmacokinetics of Vamorolone in Boys with Duchenne Muscular Dystrophy. Journal of clinical pharmacology 64(9):1130–1140 (2024).
@@ -16,7 +16,7 @@ Li X, Sabbatini D, Pegoraro E, Bello L, Clemens P, Guglieri M et al. Assessing P
 
 ## Population and dosing
 
-**Population:** boys with Duchenne Muscular Dystrophy · condition Duchenne Muscular Dystrophy · age group child · n = &lt;null&gt;.
+**Population:** boys with Duchenne Muscular Dystrophy · condition Duchenne Muscular Dystrophy · age group child.
 
 ## Model
 
@@ -37,7 +37,7 @@ Li X, Sabbatini D, Pegoraro E, Bello L, Clemens P, Guglieri M et al. Assessing P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Li X, Sabbatini D, Pegoraro E, Bello L, Clemens P, Guglieri M et al. Assessing P
 
 ### Reviewer guidance
 
-**The record for vamorolone was rejected because a 3.14 h concentration parameter failed dimensional consistency against other parameters.**
+**V/F was misclassified as a time parameter, causing a dimension mismatch, and the abstract-only source prevented verification of the reported concentration value of 3.14.**
 
-The record includes a parameter labeled 3.14 h which meaning identifies as drug concentration at time t, yet its unit is hours. This creates a dimensional mismatch with other extracted parameters like clearance (35.8 L/h) and volume (119 L). The record was built from the abstract alone, so these summary statistics stand in for a fitted model, and the second reader could not identify a valid value for this field. Extracted — vamorolone: V/F 119 L, Ct 3.14 h, R1 1.16 mg/kg/h, CL/F 35.8 L/h.
+The record assigns V/F a unit of h, which conflicts with its definition as volume of distribution. Additionally, the concentration parameter (labeled Ct) has a value of 3.14 in the record, while a second reader identified this value as null. Because the record relies solely on the paper's abstract, these summary statistics stand in for a fitted model. Extracted — vamorolone: V/F 119 L, Ct 3.14 h, R1 1.16 mg/kg/h, CL/F 35.8 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tk0: this record has 3.14, the second reading none. That field does not shape the model.
 

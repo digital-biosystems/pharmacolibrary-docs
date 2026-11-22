@@ -1,13 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;pipecuronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/&quot;},{&quot;label&quot;:&quot;Caldwell_1988 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PipecuroniumBromide_Yajima1990_reference&quot;,&quot;label&quot;:&quot;Yajima_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Yajima1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PipecuroniumBromide_Caldwell1988_reference&quot;,&quot;label&quot;:&quot;Caldwell_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PipecuroniumBromide_Caldwell1988_reference&quot;,&quot;label&quot;:&quot;Caldwell_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PipecuroniumBromide_Yajima1990_reference&quot;,&quot;label&quot;:&quot;Yajima_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Yajima1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pipecuronium bromide — `PipecuroniumBromide_Caldwell1988_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1988_reference" status="not_modelled" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1988_reference" status="simulated" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pipecuronium and pancuronium: comparison of pharmacokinetics and duration of action. British journal of anaesthesia 61(6):693–697 (1988).
@@ -29,8 +29,6 @@ Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pip
 <figure class="pk-models-diagram"><img src="drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference/PipecuroniumBromide_Caldwell1988_reference.svg" alt="PipecuroniumBromide_Caldwell1988_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Pipecuronium Vss | Vss | 309 | ml kg-1 |
@@ -38,7 +36,7 @@ Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pip
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +46,7 @@ Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pip
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Every check that could be run on this record passed.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
@@ -129,12 +127,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | note |
-|---|---|---|
-| T0_analyte_identity | pass | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped | no covariate effects in record |
-| T3_param_coverage | skipped | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass | no engineer deviations to adjudicate |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pipecuronium) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

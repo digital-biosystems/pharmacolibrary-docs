@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01E&quot;,&quot;href&quot;:&quot;atc/J01E.md&quot;},{&quot;label&quot;:&quot;sulfamethoxazole&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/&quot;},{&quot;label&quot;:&quot;Leegwater_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfamethoxazole_Hess1993_reference&quot;,&quot;label&quot;:&quot;Hess_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Hess1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfamethoxazole_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfamethoxazole_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfamethoxazole_Hess1993_reference&quot;,&quot;label&quot;:&quot;Hess_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Hess1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sulfamethoxazole's CRRT-related clearance of 1.13 lacks a unit, preventing conversion to SI units and causing the model to be held back.
+> The sulfamethoxazole CRRT-effect clearance (CL) value 1.13 lacks a unit, preventing conversion and use of the model.
 
 <div class="pk-model-meta" hidden drug="sulfamethoxazole" model-id="Sulfamethoxazole_Leegwater2025_reference" status="needs_review" stale="false" population="hospitalized patients with renal insufficiency or receiving CRRT" measured-compound="sulfamethoxazole" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Leegwater E, Baidjoe L, Wilms EB, Visser LG, Touw DJ, de Winter BCM et al. Popul
 
 ### Reviewer guidance
 
-**Sulfamethoxazole's CRRT-related clearance of 1.13 lacks a unit, preventing conversion to SI units and causing the model to be held back.**
+**The sulfamethoxazole CRRT-effect clearance (CL) value 1.13 lacks a unit, preventing conversion and use of the model.**
 
-The total clearance parameter for the continuous renal replacement therapy effect has a value of 1.13 but no associated unit. This prevents the value from being converted to standard SI units, rendering the parameter unusable for model construction. Additionally, a reference check could not compute a comparison, resulting in an inconclusive verification rather than a confirmed numerical fault. Extracted — sulfamethoxazole: Fab 1, kabs 0.364 1/h, CL/F 4.23 L/h, CL 1.13, V 132 L; N-acetyl sulfamethoxazole: CL 0.194 L/h.
+CL has no unit. Without a unit the value cannot be converted, so the model cannot use it. The reference comparison could not compute a ratio, so that failure is inconclusive rather than a demonstrated fault. The second reader disagreed about the dose compound and metabolism link, and reported different values for absorption rate constant (0.95 versus 0.364), apparent clearance (1.33 versus 4.23), CRRT effect on clearance (0.68 versus 1.13), volume of distribution (3.87 versus 132), and the eGFR effect (0.79 versus 0.319). Extracted — sulfamethoxazole: Fab 1, kabs 0.364 1/h, CL/F 4.23 L/h, CL 1.13, V 132 L; N-acetyl sulfamethoxazole: CL 0.194 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cotrimoxazole, the second reading sulfamethoxazole; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

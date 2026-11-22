@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Meropenem's clearance was not explicitly estimated, so a placeholder value was used and the model was quarantined.
+> Meropenem's total clearance lacked an explicit estimate, forcing a library placeholder that prevented the model from being published.
 
 <div class="pk-model-meta" hidden drug="meropenem" model-id="Meropenem_Rani2024_reference" status="model_quarantined" stale="false" population="critically ill patients" measured-compound="meropenem" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Rančić A, Milosavljević MN, Rosić N, Milovanović D, Folić M, Zečević DR 
 
 ## Population and dosing
 
-**Population:** critically ill patients · condition severe infections · age group adult · n = &lt;| 0x40 |&gt;.
+**Population:** critically ill patients · condition severe infections · age group adult.
 
 **Dosing:** 1000, 2000 mg, iv, multiple.
 
@@ -49,9 +49,9 @@ Rančić A, Milosavljević MN, Rosić N, Milovanović D, Folić M, Zečević DR 
 
 ### Reviewer guidance
 
-**Meropenem's clearance was not explicitly estimated, so a placeholder value was used and the model was quarantined.**
+**Meropenem's total clearance lacked an explicit estimate, forcing a library placeholder that prevented the model from being published.**
 
-Although the record lists a typical clearance of 5.29 L/h, the model builder admitted this parameter relied on default conventions rather than an explicit estimate. Consequently, a library placeholder stood in for the fitted value, leading to the model being held back. A second reader also disagreed on the relative standard error for clearance, citing 0.019 instead of the recorded 0.038. Extracted — meropenem: V 2.05 L.
+The record lists a typical clearance of 5.29 L/h, yet the clearance parameter was not assigned a fitted value, leaving it undefined in the model structure. This omission caused the model to be held back because the deviation check identified the use of a default instead of an estimate. A second reader also disagreed on the relative standard error for clearance, noting 0.019 where the record showed 0.038. Extracted — meropenem: V 2.05 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance].rse_percent`: this record has 0.038, the second reading 0.019; it also differs on 3 more fields. That field does not shape the model.
 
@@ -136,13 +136,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

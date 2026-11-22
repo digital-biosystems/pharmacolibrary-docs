@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide sufficient information to describe the pharmacodynamic model, mechanism, or potency parameters for aluminium phosphate acting on local reaction (induration/swelling).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Granström_1987`
 - **model family:** `unknown`
 - **driver:** `dose_only`

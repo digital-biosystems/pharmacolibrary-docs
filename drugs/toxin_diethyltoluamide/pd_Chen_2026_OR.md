@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Diethyltoluamide&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/&quot;},{&quot;label&quot;:&quot;Chen_2026 \u00b7 PD Depression risk (self-reported household pesticide exposure)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diethyltoluamide_Qiu1997_reference&quot;,&quot;label&quot;:&quot;Qiu_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/Diethyltoluamide_Qiu1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diethyltoluamide_Qiu1997_reference&quot;,&quot;label&quot;:&quot;Qiu_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/Diethyltoluamide_Qiu1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Depression risk (self-reported household pesticide exposure) — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** DEET drives Depression risk (self-reported household pesticide exposure) (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The provided text describes an epidemiological association between household pesticide exposure (including the metabolite DEET) and depression risk rather than a pharmacodynamic model; consequently, no specific drug concentration-response mechanism, potency values (e.g., IC50, EC50), or rate parameters (e.g., kout, ke0) are defined.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2026`
 - **model family:** `unknown`

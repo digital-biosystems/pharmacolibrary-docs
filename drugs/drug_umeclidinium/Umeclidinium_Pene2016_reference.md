@@ -5,11 +5,11 @@
 
 # umeclidinium — `Umeclidinium_Pene2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-07 15:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for umeclidinium was rejected because its non-standard units were not recognized for dimensional analysis.
+> The umeclidinium absorption rate constant was recorded with an invalid unit dimension, causing a dimensional mismatch.
 
-<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Pene2016_reference" status="rejected" stale="true" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Pene2016_reference" status="rejected" stale="false" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A Novel Method for Studying the Pharmacokinetics of [(14) C]Umeclidinium After Application to the Axilla or Palm of Healthy Male Subjects. Clinical and translational science 9(4):183–191 (2016).
@@ -43,7 +43,7 @@ Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A
 
 ### Reviewer guidance
 
-**The absorption rate constant for umeclidinium was rejected because its non-standard units were not recognized for dimensional analysis.**
+**The umeclidinium absorption rate constant was recorded with an invalid unit dimension, causing a dimensional mismatch.**
 
-The absorption rate constant (ka) for umeclidinium was reported with a value of 0.0934 and units labeled 'units'. This unrecognized unit label prevented the system from converting the value to a standard SI unit. Consequently, a dimension mismatch check failed for this structural parameter, leading to the record's rejection. Extracted — umeclidinium: V1 7.56 L, CL 55 L/h, V2 195 L, Q 40.9 L/h, kabs 0.0934 units, Fab 0.312, tlag 10.6 h.
+The absorption rate constant is specified as 0.0934 with the unit 'units' instead of a time-based reciprocal. This conflicts with the required first-order rate constant dimension of inverse time. The unconvertible unit prevented the parameter from being expressed in standard SI units, causing the model to be held back. Extracted — umeclidinium: V1 7.56 L, CL 55 L/h, V2 195 L, Q 40.9 L/h, kabs 0.0934 units, Fab 0.312, tlag 10.6 h.
 
 Independently confirmed by `gpt-oss-120b`.
 

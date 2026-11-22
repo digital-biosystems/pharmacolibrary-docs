@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model structure includes a peripheral volume without a defined inter-compartmental clearance, rendering that compartment kinetically unreachable from the dose.
+> Prucalopride’s peripheral-compartment volume (V2) of 192 L was refused because the model contains an unreachable or orphan compartment.
 
 <div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_pru_usa_12" status="rejected" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.286). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a popu
 
 ### Reviewer guidance
 
-**The two-compartment model structure includes a peripheral volume without a defined inter-compartmental clearance, rendering that compartment kinetically unreachable from the dose.**
+**Prucalopride’s peripheral-compartment volume (V2) of 192 L was refused because the model contains an unreachable or orphan compartment.**
 
-The record lists a peripheral volume (V2) of 192 l but omits the inter-compartmental clearance parameter needed to connect the central and peripheral compartments. This structural defect results in an orphan compartment with no path for drug distribution. Additionally, a reported unit could not be converted to SI, preventing the calculation of a valid clearance value. Extracted — prucalopride: CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h.
+The model structure includes a compartment with no path from the dose. A reported unit could not be converted to SI, leaving a parameter without an SI value; the record does not identify which parameter. The second reader disputed the recorded total clearance, peripheral-compartment volume, and AUC values, reporting none for those fields, and separately listed a prucalopride clearance of 22.9 L/h. Extracted — prucalopride: CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 62.3, the second reading none; it also differs on 9 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 62.3, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -93,22 +93,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.286 (4/14 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.286 (4/14 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc]` | 62.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 12.1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clpru‐usa‐12 (l h-1)a]` |  | 22.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f1]` |  | 0.858 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k a1]` |  | 0.792 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mtime]` |  | 0.734 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q (l h-1)a]` |  | 16.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2 (l)a]` |  | 446 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2]` | 192 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v3 (l)a]` |  | 248 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 62.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 12.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clpru‐usa‐12 (l h-1)a]` |  | 22.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1]` |  | 0.858 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a1]` |  | 0.792 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtime]` |  | 0.734 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q (l h-1)a]` |  | 16.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2 (l)a]` |  | 446 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 192 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3 (l)a]` |  | 248 | only_one_extracted |
 
 </details>
 

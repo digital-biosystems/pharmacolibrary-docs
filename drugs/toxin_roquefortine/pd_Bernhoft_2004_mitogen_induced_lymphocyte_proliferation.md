@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Roquefortine C inhibits mitogen-induced lymphocyte proliferation, but the specific mechanism of action (e.g., Emax, IC50, or rate constants) is not described in the provided text. No potency or rate parameters are reported.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Bernhoft_2004`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

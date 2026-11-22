@@ -5,11 +5,11 @@
 
 # cisapride — `Cisapride_Michiels1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-10-04 13:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Plasma clearance is recorded in ml/min.kg, causing a dimension mismatch.
+> The record is rejected because the plasma clearance unit conflicts with the parameter's dimensional requirements.
 
-<div class="pk-model-meta" hidden drug="cisapride" model-id="Cisapride_Michiels1987_reference" status="rejected" stale="true" population="rats, rabbits and dogs" measured-compound="cisapride" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cisapride" model-id="Cisapride_Michiels1987_reference" status="rejected" stale="false" population="rats, rabbits and dogs" measured-compound="cisapride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Michiels M, Monbaliu J, Hendriks R, Geerts R, Woestenborghs R, Heykants J. Pharmacokinetics and tissue distribution of the new gastrokinetic agent cisapride in rat, rabbit and dog. Arzneimittel-Forschung 37(10):1159–1167 (1987).
@@ -38,7 +38,7 @@ Michiels M, Monbaliu J, Hendriks R, Geerts R, Woestenborghs R, Heykants J. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Michiels M, Monbaliu J, Hendriks R, Geerts R, Woestenborghs R, Heykants J. Pharm
 
 ### Reviewer guidance
 
-**Plasma clearance is recorded in ml/min.kg, causing a dimension mismatch.**
+**The record is rejected because the plasma clearance unit conflicts with the parameter's dimensional requirements.**
 
-The plasma clearance parameter for cisapride is listed as 91 ml/min.kg, creating a dimension mismatch on a structural parameter. This error forced the model to be rejected. Additionally, the record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — cisapride: CL 91 ml/min.kg, V 4.7 l/kg, Fab 23 %.
+The plasma clearance for cisapride was recorded as 91 ml/min.kg, but the expected dimension was ml/min, causing a mismatch. Additionally, the record was constructed from the abstract alone, so the summary statistics stand in for a fitted model. A second reader disputed the identification of the dose compound and primary analyte as cisapride. Extracted — cisapride: CL 91 ml/min.kg, V 4.7 l/kg, Fab 23 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -96,22 +96,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absolute bioavailability of oral cisapride]` | 23 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absolute bioavailability of oral cisapride]` |  | 23 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[plasma clearance]` | 91 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[plasma clearance]` |  | 91 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal plasma half-life of cisapride]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal plasma half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 4.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 4.7 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | cisapride | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | cisapride | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absolute bioavailability of oral cisapride]` | 23 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability of oral cisapride]` |  | 23 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | 91 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` |  | 91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal plasma half-life of cisapride]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal plasma half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 4.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 4.7 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cisapride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cisapride | unknown | mismatch |
 
 </details>
 

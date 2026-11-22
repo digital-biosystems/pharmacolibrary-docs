@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the model structure lacks the metabolite compartment, and the output variable points to the parent drug instead of N-desmethyl selumetinib.
+> The record was rejected because the model structure defines only one central compartment, omitting the separate compartment for the measured metabolite N-desmethyl selumetinib.
 
 <div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2018_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="selumetinib and N-desmethyl selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -50,9 +50,9 @@ Patel P, Howgate E, Martin P, Carlile DJ, Aarons L, Zhou D. Population pharmacok
 
 ### Reviewer guidance
 
-**Record rejected because the model structure lacks the metabolite compartment, and the output variable points to the parent drug instead of N-desmethyl selumetinib.**
+**The record was rejected because the model structure defines only one central compartment, omitting the separate compartment for the measured metabolite N-desmethyl selumetinib.**
 
-The parent-metabolite structure for selumetinib and N-desmethyl selumetinib requires a multi-compartment model, but the record only contains a single central compartment for the parent drug. Consequently, the output variable points to the central compartment instead of the metabolite, conflicting with the expected measured analyte. Extracted — selumetinib: CL 12.7 l h-1, V1 35.6 l.
+The model structure is defined as a parent-metabolite pair, yet the simulation output references only the central compartment of the parent drug. The second reader disputes the identity of the primary analyte, arguing for selumetinib alone rather than both species. Since the record relies on abstract summary statistics, the model lacks a properly linked metabolite compartment. Extracted — selumetinib: CL 12.7 l h-1, V1 35.6 l.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has selumetinib and N-desmethyl selumetinib, the second reading selumetinib. That field shapes the model, so the record is marked disputed.
 
@@ -131,14 +131,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | fail | Metabolite_C (measured=selumetinib and N-desmethyl selumetinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | fail | Metabolite_C (measured=selumetinib and N-desmethyl selumetinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;azlocillin&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/&quot;},{&quot;label&quot;:&quot;Drugeon_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azlocillin_Krupp1990_reference&quot;,&quot;label&quot;:&quot;Krupp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azlocillin — `Azlocillin_Drugeon1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:37 UTC (Rejected), but the paper was screened again on 2026-10-07 10:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant for azlocillin was incorrectly represented using a half-life value of 1.17 hours.
+> Azlocillin’s terminal elimination rate constant is recorded as 1.17 h, a time unit rather than the inverse-time unit required for a rate constant.
 
-<div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Drugeon1984_reference" status="rejected" stale="true" population="burned patients" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Drugeon1984_reference" status="rejected" stale="false" population="burned patients" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Drugeon HB, Pannier M, Courtieu AL. [Pharmacokinetics of azlocillin in the burn patient]. Presse medicale (Paris, France : 1983) 13(13):805–807 (1984).
@@ -35,7 +35,7 @@ Drugeon HB, Pannier M, Courtieu AL. [Pharmacokinetics of azlocillin in the burn 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +45,13 @@ Drugeon HB, Pannier M, Courtieu AL. [Pharmacokinetics of azlocillin in the burn 
 
 ### Reviewer guidance
 
-**The elimination rate constant for azlocillin was incorrectly represented using a half-life value of 1.17 hours.**
+**Azlocillin’s terminal elimination rate constant is recorded as 1.17 h, a time unit rather than the inverse-time unit required for a rate constant.**
 
-The record contains a dimensional mismatch where the parameter defined as an elimination rate constant holds the numeric value 1.17 with units of hours. This error occurs because the summary statistics from the abstract were used directly without converting the half-life to a rate constant. Consequently, the pharmacokinetic model was rejected for containing a structurally invalid parameter value. Extracted — azlocillin: kel 1.17 h, CLR 30.9 L/h.
+This dimensional mismatch was a stated reason for rejecting the record. The record was based on the abstract alone, so reported summary statistics stood in for a fitted model; a second reader also disagreed about whether the 1.17 h half-life and 30.9 L/h renal clearance belonged in the record. Extracted — azlocillin: kel 1.17 h, CLR 30.9 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of creatinine clearances: this record has none, the second reading 14; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

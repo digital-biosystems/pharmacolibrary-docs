@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Veliparib record refused because absorption rate ka was defaulted rather than reported, using abstract-only summary statistics.
+> The record was refused because absorption parameters for veliparib were missing, forcing the use of placeholder values instead of reported estimates.
 
 <div class="pk-model-meta" hidden drug="veliparib" model-id="Veliparib_Salem2014_reference" status="needs_review" stale="false" population="patients with non-hematologic malignancies" measured-compound="veliparib" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Salem AH, Giranda VL, Mostafa NM. Population pharmacokinetic modeling of velipar
 
 ### Reviewer guidance
 
-**Veliparib record refused because absorption rate ka was defaulted rather than reported, using abstract-only summary statistics.**
+**The record was refused because absorption parameters for veliparib were missing, forcing the use of placeholder values instead of reported estimates.**
 
-The record is abstract-only, so summary statistics stand in for a fitted model. The absorption rate constant was not reported in the source, so a library default was used. The second reader disagreed on several fields, including assigning a creatinine clearance value not present in the record. Extracted — veliparib: CL/F 20.9 L/h, V/F 173 L.
+The source text did not report values for the absorption rate constant or time lag, so the model relied on generic library placeholders for these inputs. Additionally, a second reviewer disagreed with the extraction of the clearance and volume values, further validating the refusal. Extracted — veliparib: CL/F 20.9 L/h, V/F 173 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has veliparib, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -130,15 +130,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=veliparib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=veliparib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

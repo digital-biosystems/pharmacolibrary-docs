@@ -26,22 +26,10 @@ Cefadroxil is a first-generation cephalosporin antibiotic used to treat various 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Mariño_1981_reference](drugs/drug_cefadroxil/Cefadroxil_Mario1981_reference.md) | — | 1-compartment (no model) | 1 | Mariño EL et al., The pharmacokinetics of cefadroxil asso…, International journal of cl… (1981) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Mariño_1981_reference](drugs/drug_cefadroxil/Cefadroxil_Mario1981_reference.md) | — | 1-compartment (no model) | 1 | Mariño EL et al., The pharmacokinetics of cefadroxil asso…, International journal of cl… (1981) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Haynes_2024_reference](drugs/drug_cefadroxil/Cefadroxil_Haynes2024_reference.md) | — | 1-compartment (no model) | 0 | Haynes AS et al., Cefadroxil and cephalexin pharmacokinet…, Antimicrobial agents and ch… (2024) | [10.1128/aac.00182-24](https://doi.org/10.1128/aac.00182-24) |
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wilson_1985_reference](drugs/drug_cefadroxil/Cefadroxil_Wilson1985_reference.md) | — | 1-compartment (no model) | 4 | Wilson WD et al., Cefadroxil in the horse: pharmacokineti…, Journal of veterinary pharm… (1985) | [10.1111/j.1365-2885.1985.tb00953.x](https://doi.org/10.1111/j.1365-2885.1985.tb00953.x) |
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Xie_2016_reference](drugs/drug_cefadroxil/Cefadroxil_Xie2016_reference.md) | — | 1-compartment (no model) | 1 | Xie Y et al., Population pharmacokinetic modeling of…, Xenobiotica; the fate of fo… (2016) | [10.3109/00498254.2015.1080881](https://doi.org/10.3109/00498254.2015.1080881) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefadroxil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A5` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | placenta | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wilson_1985_reference](drugs/drug_cefadroxil/Cefadroxil_Wilson1985_reference.md) | — | 1-compartment (no model) | 4 | Wilson WD et al., Cefadroxil in the horse: pharmacokineti…, Journal of veterinary pharm… (1985) | [10.1111/j.1365-2885.1985.tb00953.x](https://doi.org/10.1111/j.1365-2885.1985.tb00953.x) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Xie_2016_reference](drugs/drug_cefadroxil/Cefadroxil_Xie2016_reference.md) | — | 1-compartment (no model) | 1 | Xie Y et al., Population pharmacokinetic modeling of…, Xenobiotica; the fate of fo… (2016) | [10.3109/00498254.2015.1080881](https://doi.org/10.3109/00498254.2015.1080881) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +49,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 13 matched, 13 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 3
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

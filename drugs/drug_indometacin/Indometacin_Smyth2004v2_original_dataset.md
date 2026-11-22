@@ -16,7 +16,7 @@ Smyth JM, Collier PS, Darwish M, Millership JS, Halliday HL, Petersen S et al. I
 
 ## Population and dosing
 
-**Population:** preterm infants with symptomatic patent ductus arteriosus · condition patent ductus arteriosus · age group neonate · n = &gt;=35.
+**Population:** preterm infants with symptomatic patent ductus arteriosus · condition patent ductus arteriosus · age group neonate.
 
 **Dosing:** 7, 14 mg, iv, multiple, every 12 h.
 

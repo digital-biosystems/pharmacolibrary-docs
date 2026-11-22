@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F was assigned a placeholder value because it was not reported in Goutelle_2013, holding the atazanavir record for review.
+> Absolute bioavailability (F) was defaulted to 1.0 instead of being extracted from the atazanavir paper, so the record lacks a supported value and was held back.
 
 <div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Goutelle2013_reference" status="needs_review" stale="false" population="HIV-infected adults on unboosted atazanavir" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Goutelle S, Baudry T, Gagnieu MC, Boibieux A, Livrozet JM, Peyramond D et al. Ph
 
 ### Reviewer guidance
 
-**Bioavailability F was assigned a placeholder value because it was not reported in Goutelle_2013, holding the atazanavir record for review.**
+**Absolute bioavailability (F) was defaulted to 1.0 instead of being extracted from the atazanavir paper, so the record lacks a supported value and was held back.**
 
-The model builder used a default convention for F instead of extracting a specific estimate from the paper. Consequently, the value of 1.0 for F represents an assumption rather than data supported by the study. The record was flagged because this unreported parameter was not explicitly justified or extracted from the source material. Extracted — atazanavir: CL 13.4 liters/h, CLnorm 0.00936 L/h/kg, V 71.1 liters, tlag 0.9 h, kabs 1 h Ϫ1, Fab 0.4.
+The record lists a parameter labeled 'F reg' with a value of 1.0 and no unit, distinct from the reported absolute bioavailability (Fab) of 0.4. The review flagged this as an unreported parameter that was left at a library default rather than using an estimate from the study. A second reader also disagreed on several other fields, including a missing AUC value of 0.66 and a trough concentration of 5.6E-6, further indicating inconsistencies in the extracted data. Extracted — atazanavir: CL 13.4 liters/h, CLnorm 0.00936 L/h/kg, V 71.1 liters, tlag 0.9 h, kabs 1 h Ϫ1, Fab 0.4.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc 0-24: this record has none, the second reading 0.66; it also differs on 3 more fields. That field does not shape the model.
 
@@ -145,14 +145,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=atazanavir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | D01: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=atazanavir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -17,6 +17,18 @@
   3.5,
   4.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Levy-Cooperman_2026:other_prose",
+    "value_si": 9.05e-07
+   },
+   {
+    "source": "Levy-Cooperman_2026:other_prose",
+    "value_si": 5.36e-06
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "MM": 0.20427299999999998,

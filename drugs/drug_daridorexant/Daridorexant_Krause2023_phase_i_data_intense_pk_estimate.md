@@ -4,11 +4,11 @@
 
 # daridorexant — `Daridorexant_Krause2023_phase_i_data_intense_pk_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:49 UTC (Rejected), but the paper was screened again on 2026-10-06 20:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance unit for daridorexant could not be converted, preventing dimensional validation and resulting in rejection.
+> Daridorexant’s maximum metabolic rate, Vmax (4.81 mg/h), was implicated in a unit-dimension conflict, although mg/h and mass/time are equivalent dimensions.
 
-<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_phase_i_data_intense_pk_estimate" status="rejected" stale="true" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_phase_i_data_intense_pk_estimate" status="rejected" stale="false" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokinetic modeling of daridorexant, a novel dual orexin receptor antagonist. CPT: pharmacometrics & systems pharmacology 12(1):74–86 (2023).
@@ -44,7 +44,7 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.826). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.826). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +54,13 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 ### Reviewer guidance
 
-**The intercompartmental clearance unit for daridorexant could not be converted, preventing dimensional validation and resulting in rejection.**
+**Daridorexant’s maximum metabolic rate, Vmax (4.81 mg/h), was implicated in a unit-dimension conflict, although mg/h and mass/time are equivalent dimensions.**
 
-The apparent intercompartmental clearance value of 3.96 L/h was flagged because its unit could not be processed into standard SI units, blocking the dimension check. This processing failure prevented the structural parameter from being validated numerically. Additionally, the second reader disagreed on the identity of the dose compound and primary analyte, marking both as unknown instead of daridorexant. Extracted — daridorexant: Fab 0.53, tlag 0.29 h, kabs 5.28 1/h, V1 24.4 L, V2 19.4 L, Q 3.96 L/h, Vmax 4.81 mg/h, Km 0.96 μg/ml, … (+1).
+The rejection cites mg/h versus mass/time as a dimensional mismatch, but those dimensions agree; the record does not clearly identify which parameter the finding concerns. A reported unit was also unavailable for SI conversion, leaving a parameter without an SI value. The listed intercompartmental clearance is Q (3.96 L/h), so the finding’s reference to mg/h does not match its recorded unit. Extracted — daridorexant: Fab 0.53, tlag 0.29 h, kabs 5.28 1/h, V1 24.4 L, V2 19.4 L, Q 3.96 L/h, Vmax 4.81 mg/h, Km 0.96 μg/ml, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daridorexant, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

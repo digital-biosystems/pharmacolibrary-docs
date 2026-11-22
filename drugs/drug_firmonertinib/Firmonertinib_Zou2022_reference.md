@@ -4,11 +4,11 @@
 
 # firmonertinib — `Firmonertinib_Zou2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:54 UTC (Rejected), but the paper was screened again on 2026-10-07 00:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Firmonertinib model rejected because a reported unit could not be converted to SI, causing a dimension mismatch and negative clearance in the metabolite.
+> Firmonertinib's Q/F value of 12.6 L/h conflicts with a one-compartment metabolite structure, creating a dimension mismatch in rate constants.
 
-<div class="pk-model-meta" hidden drug="firmonertinib" model-id="Firmonertinib_Zou2022_reference" status="rejected" stale="true" population="NSCLC patients and healthy volunteers" measured-compound="furmonertinib (AST2818)" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="firmonertinib" model-id="Firmonertinib_Zou2022_reference" status="rejected" stale="false" population="NSCLC patients and healthy volunteers" measured-compound="furmonertinib (AST2818)" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Zou HX, Zhang YF, Zhong DF, Jiang Y, Liu F, Zhao QY et al. Effect of autoinduction and food on the pharmacokinetics of furmonertinib and its active metabolite characterized by a population pharmacokinetic model. Acta pharmacologica Sinica 43(7):1865–1874 (2022).
@@ -48,7 +48,7 @@ Zou HX, Zhang YF, Zhong DF, Jiang Y, Liu F, Zhao QY et al. Effect of autoinducti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.594). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.594). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,9 +58,9 @@ Zou HX, Zhang YF, Zhong DF, Jiang Y, Liu F, Zhao QY et al. Effect of autoinducti
 
 ### Reviewer guidance
 
-**Firmonertinib model rejected because a reported unit could not be converted to SI, causing a dimension mismatch and negative clearance in the metabolite.**
+**Firmonertinib's Q/F value of 12.6 L/h conflicts with a one-compartment metabolite structure, creating a dimension mismatch in rate constants.**
 
-A reported unit for a structural parameter was not recognized, so the value could not be converted to standard SI units. The record flagged a dimension mismatch on that structural parameter and an implausible negative clearance or volume value in a covariate scenario. Extracted — firmonertinib: CL/F 70.5 L/h, V1/F 2.84e+03 L, kabs 1.32 units, Q/F 12.6 L/h, V2/F 1.5e+03 L, kel 0.00311 units; AST5902: CL 119 L/h, V 286 L, kcomp 0.054 units, CLm/F -0.258 units.
+The record specifies a one-compartment structure for metabolite AST5902, yet includes a Q/F parameter of 12.6 L/h representing intercompartmental flow, which is structurally invalid. Consequently, the elimination and distribution rate constants for AST5902 exhibit unit dimension conflicts with their expected time-inverse units. Additionally, a negative clearance shift of -0.258 was recorded for AST5902, indicating an implausible covariate effect on elimination. Extracted — firmonertinib: CL/F 70.5 L/h, V1/F 2.84e+03 L, kabs 1.32 units, Q/F 12.6 L/h, V2/F 1.5e+03 L, kel 0.00311 units; AST5902: CL 119 L/h, V 286 L, kcomp 0.054 units, CLm/F -0.258 units.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has furmonertinib (AST2818), the second reading furmonertinib; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

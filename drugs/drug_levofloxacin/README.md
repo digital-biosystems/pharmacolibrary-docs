@@ -25,7 +25,7 @@ Levofloxacin is a fluoroquinolone antibiotic used to treat various bacterial inf
 
 ## Start here
 
-> **Setiawan_2022_mean** — <span class="pk-badge pk-badge--blue">Simulated</span> hospitalized adult patients, n = &gt;=26. [Run it in the simulator](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md?tab=Simulation) · [record](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md)
+> **Setiawan_2022_mean** — <span class="pk-badge pk-badge--blue">Simulated</span> hospitalized adult patients. [Run it in the simulator](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md?tab=Simulation) · [record](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -42,26 +42,6 @@ Levofloxacin is a fluoroquinolone antibiotic used to treat various bacterial inf
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Setiawan_2022_mean](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md) | ▶ model + simulator | 2-compartment, IV | 4 | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [↳ median](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md) | ▶ model + simulator | 2-compartment, IV | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [He_2024_reference](drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md) | — | 1-compartment (no model) | 1 | He YY et al., Population pharmacokinetics and dose op…, British journal of clinical… (2024) | [10.1111/bcp.16003](https://doi.org/10.1111/bcp.16003) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levofloxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `SLC22A4` inhibitor, `SLCO1A2` substrate | DrugBank actor |
-| distribution | blood | `ALB` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `SLCO1A2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP2C9` inhibitor, `SLC22A1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `SLC22A2` inhibitor, `SLC22A4` inhibitor, `SLC47A1` inhibitor/substrate, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `SLC47A1` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SLCO4C1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

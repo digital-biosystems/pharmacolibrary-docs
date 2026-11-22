@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;terizidone&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/&quot;},{&quot;label&quot;:&quot;Upton_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terizidone_Kengo2024_reference&quot;,&quot;label&quot;:&quot;Kengo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Kengo2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Mulubwa2019_reference&quot;,&quot;label&quot;:&quot;Mulubwa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Mulubwa2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Mulubwa2019v2_reference&quot;,&quot;label&quot;:&quot;Mulubwa_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Mulubwa2019v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terizidone_Mulubwa2019v2_reference&quot;,&quot;label&quot;:&quot;Mulubwa_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Mulubwa2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Kengo2024_reference&quot;,&quot;label&quot;:&quot;Kengo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Kengo2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The terizidone-to-cycloserine metabolite model was rejected because it used a single-compartment absorption structure with default absorption parameters, failing to match the paper's cycloserine pharmacokinetics.
+> Cycloserine’s apparent clearance (CLm/F 0.54 L/h) was attached to a one-compartment enteral model, which failed the paper’s peak and terminal-half-life comparisons.
 
 <div class="pk-model-meta" hidden drug="terizidone" model-id="Terizidone_Upton2025_reference" status="rejected" stale="false" population="adults with pulmonary drug-resistant TB" measured-compound="cycloserine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Upton CM, Calderin JM, Diacon AH, Boeree MJ, Denti P, Wiesner L et al. Cerebrosp
 
 ## Population and dosing
 
-**Population:** adults with pulmonary drug-resistant TB · condition pulmonary drug-resistant TB · age group adult · n = n_subjects.
+**Population:** adults with pulmonary drug-resistant TB · condition pulmonary drug-resistant TB · age group adult.
 
 **Dosing:** 100 mg, oral, multiple, every 24 h.
 
@@ -52,13 +52,13 @@ Upton CM, Calderin JM, Diacon AH, Boeree MJ, Denti P, Wiesner L et al. Cerebrosp
 
 ### Reviewer guidance
 
-**The terizidone-to-cycloserine metabolite model was rejected because it used a single-compartment absorption structure with default absorption parameters, failing to match the paper's cycloserine pharmacokinetics.**
+**Cycloserine’s apparent clearance (CLm/F 0.54 L/h) was attached to a one-compartment enteral model, which failed the paper’s peak and terminal-half-life comparisons.**
 
-The model structure was a single-compartment enteric absorption model, which is structurally incompatible with the required parent-metabolite topology for terizidone and cycloserine. Consequently, the absorption rate constant and lag time were left at library defaults rather than using estimates from the paper. This structural and parameter mismatch caused the simulated peak concentration and terminal half-life to deviate significantly from the reported cycloserine values, with the clearance value of 0.54 L/h also disputed by a second reader. Extracted — cycloserine: CLm/F 0.54 L/h, Vm/F 13.9 L.
+The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0492, model 0.0058) or time of the peak (tmax) (paper 3.6, model 5.64); both differ from the reported values by more than the tolerance. The model also does not reproduce the paper's terminal half-life (paper 69, model 17.8) or the other reported terminal half-life (paper 4.7, model 17.8), each differing by more than the tolerance. Although the measured compound is cycloserine, the model output is the central-compartment concentration rather than the metabolite concentration, and its one-compartment enteral structure does not represent the parent–metabolite structure. The reported cycloserine parameters are apparent metabolite clearance CLm/F 0.54 L/h and volume Vm/F 13.9 L; ka and Tlag were defaulted, and the builder assumed F=1, Fm=1, and no molar correction, with ka unsupported by the paper and affecting the simulated profile. Extracted — cycloserine: CLm/F 0.54 L/h, Vm/F 13.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 0.54; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | fail | Metabolite_C (measured=cycloserine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
 | T1_cmax | reference | fail | 0.0492 | 0.005801 | 0.1179 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0515 | 0.005801 | 0.1126 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.00049 | 0.005801 | 11.84 | mg/L→SI vs simulated kg/m3 |

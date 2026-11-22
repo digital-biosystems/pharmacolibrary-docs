@@ -4,11 +4,11 @@
 
 # misoprostol — `Misoprostol_Vorontsova2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-04 10:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Misoprostol acid Vmax (5.45 pg/ml) and Km (2.5 pg) use concentration/amount units, creating a dimensional mismatch with the rate-based enzyme kinetics.
+> Misoprostol acid’s Vmax (5.45 pg/ml) and Km (2.5 pg) have units inconsistent with metabolic rate and substrate concentration, contributing to rejection.
 
-<div class="pk-model-meta" hidden drug="misoprostol" model-id="Misoprostol_Vorontsova2022_reference" status="rejected" stale="true" population="women undergoing labor induction at term" measured-compound="misoprostol acid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="misoprostol" model-id="Misoprostol_Vorontsova2022_reference" status="rejected" stale="false" population="women undergoing labor induction at term" measured-compound="misoprostol acid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Vorontsova Y, Haas DM, Flannery K, Masters AR, Silva LL, Pierson RC et al. Pharmacokinetics of vaginal versus buccal misoprostol for labor induction at term. Clinical and translational science 15(8):1937–1945 (2022).
@@ -16,7 +16,7 @@ Vorontsova Y, Haas DM, Flannery K, Masters AR, Silva LL, Pierson RC et al. Pharm
 
 ## Population and dosing
 
-**Population:** women undergoing labor induction at term · condition labor induction · age group adult · n = &gt;=14.
+**Population:** women undergoing labor induction at term · condition labor induction · age group adult.
 
 **Dosing:** 0.025, 0.05 mg, vaginal, buccal, multiple, every 4 h.
 
@@ -42,7 +42,7 @@ Vorontsova Y, Haas DM, Flannery K, Masters AR, Silva LL, Pierson RC et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +52,13 @@ Vorontsova Y, Haas DM, Flannery K, Masters AR, Silva LL, Pierson RC et al. Pharm
 
 ### Reviewer guidance
 
-**Misoprostol acid Vmax (5.45 pg/ml) and Km (2.5 pg) use concentration/amount units, creating a dimensional mismatch with the rate-based enzyme kinetics.**
+**Misoprostol acid’s Vmax (5.45 pg/ml) and Km (2.5 pg) have units inconsistent with metabolic rate and substrate concentration, contributing to rejection.**
 
-The maximum rate of metabolism is reported in concentration units (pg/ml) rather than amount units. The affinity constant is reported in amount units (pg) instead of concentration units. This inconsistency prevents standard conversion to SI units for Michaelis-Menten parameters. A second reader identified that values for clearance, absorption, and volume were correctly extracted, but the primary parameter errors remain. Extracted — misoprostol acid: CLm/F 730 L/h, V 610 L, kabs 0.709 1/h, Vmax 5.45 pg/ml, Km 2.5 pg.
+Vmax is a maximum metabolic rate, but its reported unit, pg/ml, is concentration; Km measures enzyme affinity, but its reported unit, pg, is mass rather than concentration. A reported unit could not be converted to SI, leaving a parameter without an SI value. Extracted — misoprostol acid: CLm/F 730 L/h, V 610 L, kabs 0.709 1/h, Vmax 5.45 pg/ml, Km 2.5 pg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/fb].parameter_id`: this record has Q351, the second reading Q27; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

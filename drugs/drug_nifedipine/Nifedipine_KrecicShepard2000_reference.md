@@ -17,7 +17,7 @@ Krecic-Shepard ME, Park K, Barnas C, Slimko J, Kerwin DR, Schwartz JB. Race and 
 
 ## Population and dosing
 
-**Population:** patients with hypertension and coronary artery disease · condition hypertension and coronary artery disease · age group elderly · n = &gt;=226.
+**Population:** patients with hypertension and coronary artery disease · condition hypertension and coronary artery disease · age group elderly.
 
 ## Model
 

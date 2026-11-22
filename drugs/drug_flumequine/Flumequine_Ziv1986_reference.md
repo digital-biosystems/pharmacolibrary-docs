@@ -5,11 +5,11 @@
 
 # flumequine — `Flumequine_Ziv1986_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Needs review), but the paper was screened again on 2026-10-07 11:58 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Flumequine clearance lacks a specific value, so the model used a generic placeholder and was withheld.
 
-<div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Ziv1986_reference" status="extracted" stale="true" population="calves" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Ziv1986_reference" status="model_quarantined" stale="false" population="calves" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ziv G, Soback S, Bor A, Kurtz B. Clinical pharmacokinetics of flumequine in calves. Journal of veterinary pharmacology and therapeutics 9(2):171–182 (1986).
@@ -23,12 +23,14 @@ Ziv G, Soback S, Bor A, Kurtz B. Clinical pharmacokinetics of flumequine in calv
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 7 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | distribution half-life (t1/2 alpha) | t1/2α | 13 | min |
@@ -41,7 +43,7 @@ Ziv G, Soback S, Bor A, Kurtz B. Clinical pharmacokinetics of flumequine in calv
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +53,13 @@ Ziv G, Soback S, Bor A, Kurtz B. Clinical pharmacokinetics of flumequine in calv
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Flumequine clearance lacks a specific value, so the model used a generic placeholder and was withheld.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flumequine: t1/2α 13 min, t1/2β 2.25 h, V 1.48 l/kg, Vss 1.43 l/kg, Cmax 6.2 micrograms/ml, Fab 44 %, fu 74.5 %.
+The abstract provided summary statistics but no explicit clearance estimate for flumequine. Consequently, the model relied on a default value rather than a fitted parameter. This prevented publication of the model without an invented number. Extracted — flumequine: t1/2α 13 min, t1/2β 2.25 h, V 1.48 l/kg, Vss 1.43 l/kg, Cmax 6.2 micrograms/ml, Fab 44 %, fu 74.5 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has 44, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -132,6 +134,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 104 L | ['Ziv_1986:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 100 L | ['Ziv_1986:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

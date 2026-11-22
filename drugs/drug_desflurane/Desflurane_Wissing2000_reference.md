@@ -4,11 +4,11 @@
 
 # desflurane — `Desflurane_Wissing2000_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 04:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="desflurane" model-id="Desflurane_Wissing2000_reference" status="needs_review" stale="true" population="patients undergoing maxillofacial surgery" measured-compound="desflurane" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="desflurane" model-id="Desflurane_Wissing2000_reference" status="needs_review" stale="false" population="patients undergoing maxillofacial surgery" measured-compound="desflurane" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wissing H, Kuhn I, Rietbrock S, Fuhr U. Pharmacokinetics of inhaled anaesthetics in a clinical setting: comparison of desflurane, isoflurane and sevoflurane. British journal of anaesthesia 84(4):443–449 (2000).
@@ -35,7 +35,7 @@ Wissing H, Kuhn I, Rietbrock S, Fuhr U. Pharmacokinetics of inhaled anaesthetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Wissing H, Kuhn I, Rietbrock S, Fuhr U. Pharmacokinetics of inhaled anaesthetics
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only volume was extracted — no clearance.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — desflurane: blood_air_partition 612 mlvapour kgbw-1, Fab 30.7 mlvapour kgbw-1 min-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has desflurane, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

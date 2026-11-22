@@ -4,11 +4,11 @@
 
 # exenatide — `Exenatide_Cirincione2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-22 09:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the intercompartmental clearance parameter had a unit that could not be converted to standard SI.
+> Record rejected because the intercompartmental clearance parameter is reported in volume per hour instead of the required volume per mass per hour.
 
-<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="rejected" stale="true" population="type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="rejected" stale="false" population="type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Cirincione B, Mager DE. Population pharmacokinetics of exenatide. British journal of clinical pharmacology 83(3):517–526 (2017).
@@ -44,7 +44,7 @@ Cirincione B, Mager DE. Population pharmacokinetics of exenatide. British journa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Cirincione B, Mager DE. Population pharmacokinetics of exenatide. British journa
 
 ### Reviewer guidance
 
-**The record was rejected because the intercompartmental clearance parameter had a unit that could not be converted to standard SI.**
+**Record rejected because the intercompartmental clearance parameter is reported in volume per hour instead of the required volume per mass per hour.**
 
-The parameter representing transfer between central and peripheral compartments, labeled 'Cl d', was reported in l/h, a unit the system could not translate. This prevented the value from being standardized. Additionally, a second reader disagreed that the dose compound and primary analyte were definitively exenatide, marking them as unknown. Extracted — exenatide: CLint 4.58 l h −1, Km 0.838, Q 3.72 l h −1, Vmax 1.55 μg h −1, V2 7.04 l, Vnorm 2.67 L/kg, Fab 1, FR 0.628, … (+1).
+The apparent intercompartmental clearance between the central and peripheral compartments is listed as 3.72 L/h, which conflicts with the expected volume per mass per time dimension. Additionally, the maximum metabolic rate of 1.55 µg/h could not be converted to standard SI units, leaving the parameter without a valid standard value. Extracted — exenatide: CLint 4.58 l h −1, Km 0.838, Q 3.72 l h −1, Vmax 1.55 μg h −1, V2 7.04 l, Vnorm 2.67 L/kg, Fab 1, FR 0.628, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vc=vc_int⋅weight84.8vc_wtkg: this record has none, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

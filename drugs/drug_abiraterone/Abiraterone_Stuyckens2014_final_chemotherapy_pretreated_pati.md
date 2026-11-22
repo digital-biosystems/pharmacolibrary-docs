@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Abiraterone record refused due to missing V2/F value and apparent parameterization assumptions conflicting with observed metabolite formation.
+> The apparent peripheral volume (17400 L) was excluded from the parameter set, causing an incomplete coverage check to hold the model for review.
 
 <div class="pk-model-meta" hidden drug="abiraterone" model-id="Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati" status="needs_review" stale="false" population="patients with metastatic castration-resistant prostate cancer and healthy volunteers" measured-compound="abiraterone" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Stuyckens K, Saad F, Xu XS, Ryan CJ, Smith MR, Griffin TW et al. Population phar
 
 ## Population and dosing
 
-**Population:** patients with metastatic castration-resistant prostate cancer and healthy volunteers · condition metastatic castration-resistant prostate cancer · age group adult · n = &gt;=359.
+**Population:** patients with metastatic castration-resistant prostate cancer and healthy volunteers · condition metastatic castration-resistant prostate cancer · age group adult.
 
 **Dosing:** 1000 mg, oral, multiple, every 24 h.
 
@@ -55,9 +55,9 @@ Stuyckens K, Saad F, Xu XS, Ryan CJ, Smith MR, Griffin TW et al. Population phar
 
 ### Reviewer guidance
 
-**Abiraterone record refused due to missing V2/F value and apparent parameterization assumptions conflicting with observed metabolite formation.**
+**The apparent peripheral volume (17400 L) was excluded from the parameter set, causing an incomplete coverage check to hold the model for review.**
 
-The record lists four pharmacokinetic parameters for abiraterone, but the peripheral volume of distribution (V2/F) lacks a defined value, leaving the two-compartment structure incomplete. Additionally, the model assumes bioavailability F=1 and formation rate Fm=1 for apparent parameters, despite the measured compound being a metabolite of abiraterone acetate. A second reader could not verify the dose compound or primary analyte, leaving critical data fields unknown. Extracted — abiraterone: CLm/F 2.24e+03 L/h, V1/F 5.63e+03 L, V2/F 1.74e+04 L, Q/F 1.35e+03 L/h, kabs 1.91 h -1.
+The record defines a two-compartment model for abiraterone, listing an apparent peripheral volume of 17400 L, yet this parameter was neither extracted nor included in the defaulted list. Consequently, the parameter coverage check failed, noting that only 3 of 4 expected parameters were present. Additionally, the model is held back because the second reader disagreed with the primary verdict, resulting in zero agreement. Extracted — abiraterone: CLm/F 2.24e+03 L/h, V1/F 5.63e+03 L, V2/F 1.74e+04 L, Q/F 1.35e+03 L/h, kabs 1.91 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abiraterone acetate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -155,15 +155,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=abiraterone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=abiraterone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

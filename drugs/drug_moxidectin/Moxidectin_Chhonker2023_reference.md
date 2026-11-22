@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Moxidectin absorption parameters were left at library defaults, unsupported by the source data.
+> The record was held back because the absorption rate constant for moxidectin was not reported in the source and had to be defaulted rather than estimated.
 
 <div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Chhonker2023_reference" status="needs_review" stale="false" population="adults with bancroftian filariasis" measured-compound="moxidectin" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Chhonker YS, Bjerum C, Bala V, Ouattara AF, Koudou BG, Gabo TP et al. Pharmacoki
 
 ### Reviewer guidance
 
-**Moxidectin absorption parameters were left at library defaults, unsupported by the source data.**
+**The record was held back because the absorption rate constant for moxidectin was not reported in the source and had to be defaulted rather than estimated.**
 
-The record lists clearance of 3.6 L/h and volume of 410.8 L, with bioavailability fixed to one. Absorption rate and lag time are missing from the extracted data, forcing generic placeholders instead of paper-specific estimates. This omission leaves the model's absorption phase unconstrained by the actual source information. Extracted — moxidectin: CL/F 3.6 L/h, V/F 411 L.
+The model relies on a one-compartment structure using apparent clearance of 3.6 L/h and apparent volume of distribution of 410.8 L. The absorption rate constant and lag time were not extracted from the paper, so library placeholders were used instead of specific estimates. These unsupported defaults mean the simulated absorption profile is not directly derived from the primary study data. Extracted — moxidectin: CL/F 3.6 L/h, V/F 411 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -113,15 +113,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=moxidectin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=moxidectin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

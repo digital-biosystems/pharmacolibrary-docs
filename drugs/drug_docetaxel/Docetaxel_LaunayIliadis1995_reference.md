@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record is held back because Vss was used as the distribution volume in a one-compartment model.
+> Docetaxel’s clearance (35.6 L/h), steady-state volume (83.21 L), and terminal half-life (7.89 h) were held back because a second reader disputed the abstract-only record.
 
 <div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_LaunayIliadis1995_reference" status="needs_review" stale="false" population="patients with solid tumors" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Launay-Iliadis MC, Bruno R, Cosson V, Vergniol JC, Oulid-Aissa D, Marty M et al.
 
 ## Population and dosing
 
-**Population:** patients with solid tumors · condition cancer · age group adult · n = &gt;= 26.
+**Population:** patients with solid tumors · condition cancer · age group adult.
 
 ## Model
 
@@ -49,13 +49,13 @@ Launay-Iliadis MC, Bruno R, Cosson V, Vergniol JC, Oulid-Aissa D, Marty M et al.
 
 ### Reviewer guidance
 
-**The record is held back because Vss was used as the distribution volume in a one-compartment model.**
+**Docetaxel’s clearance (35.6 L/h), steady-state volume (83.21 L), and terminal half-life (7.89 h) were held back because a second reader disputed the abstract-only record.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The model builder used Vss (83.21 L) as the distribution volume because no Vc or V was reported. The second reader could not confirm the extracted parameters, recording null for clearance, half-life, and Vss. Extracted — docetaxel: CL 35.6 l/h, Vss 83.2 L, t1/2γ 7.89 h.
+Only the abstract was read, so reported summary statistics stood in for a fitted model; the second reader agreed with none of the one reader’s assessment (agreement 0.167) and recorded no values for these three parameters. The model used the steady-state volume of 83.21 L as the distribution volume because no central volume was reported. With clearance of 35.6 L/h, this reproduces AUC and terminal half-life, but not the early distribution phase. Extracted — docetaxel: CL 35.6 l/h, Vss 83.2 L, t1/2γ 7.89 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has docetaxel, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -133,14 +133,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=docetaxel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=docetaxel) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

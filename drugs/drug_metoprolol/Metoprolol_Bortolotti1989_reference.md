@@ -4,11 +4,11 @@
 
 # metoprolol — `Metoprolol_Bortolotti1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 00:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The extracted plasma protein binding value of 32% for metoprolol has a dimension mismatch.
+> Total plasma clearance for metoprolol in Bortolotti_1989 has units of 1/h/kg, which are dimensionally inconsistent with volume per time.
 
-<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Bortolotti1989_reference" status="rejected" stale="true" population="rabbits with liver failure" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Bortolotti1989_reference" status="rejected" stale="false" population="rabbits with liver failure" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bortolotti A, Castelli D, Verotta D, Bonati M. Pharmacokinetic and pharmacodynamic modelling of metoprolol in rabbits with liver failure. European journal of drug metabolism and pharmacokinetics 14(2):145–151 (1989).
@@ -41,7 +41,7 @@ Bortolotti A, Castelli D, Verotta D, Bonati M. Pharmacokinetic and pharmacodynam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Bortolotti A, Castelli D, Verotta D, Bonati M. Pharmacokinetic and pharmacodynam
 
 ### Reviewer guidance
 
-**The extracted plasma protein binding value of 32% for metoprolol has a dimension mismatch.**
+**Total plasma clearance for metoprolol in Bortolotti_1989 has units of 1/h/kg, which are dimensionally inconsistent with volume per time.**
 
-The record identifies 'Plasma protein binding' with a value of 32% for metoprolol, but the parameter's meaning defines it as the fraction of unbound drug. Because the source text is abstract-only, these summary statistics stand in for a fitted model, and a second reader found no values for the reported pharmacokinetic parameters. Extracted — metoprolol: fu 32 %, CL 3.7 1/h/kg, MRT 0.77 h, AUC 0.9 mg h/l, kel 3.17 h-1, Ae 1.5 % of the administered dose.
+The extracted total plasma drug clearance value of 3.7 uses the unit 1/h/kg, which represents inverse time per mass rather than the required volume per time. This dimensional conflict on a structural parameter caused the record to be rejected. The second reader also noted a discrepancy in the missing dose parameter and the clearance identifier. Extracted — metoprolol: fu 32 %, CL 3.7 1/h/kg, MRT 0.77 h, AUC 0.9 mg h/l, kel 3.17 h-1, Ae 1.5 % of the administered dose.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 3.2; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

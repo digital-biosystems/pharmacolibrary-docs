@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not specify a pharmacodynamic mechanism for phenolphthalein, but reports that a dose of 10 mg/kg significantly increased faecal water content in loperamide-induced constipated mice compared to the model group. No PK/PD parameters such as EC50, Imax, or rate constants were reported.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

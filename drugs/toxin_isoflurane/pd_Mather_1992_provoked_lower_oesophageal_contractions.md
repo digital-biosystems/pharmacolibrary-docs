@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Isoflurane inhibits provoked lower oesophageal contractions with an EC50 of 1.31% and EC95 of 6.18%. The specific mechanism of action is not described in the available excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Mather_1992`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

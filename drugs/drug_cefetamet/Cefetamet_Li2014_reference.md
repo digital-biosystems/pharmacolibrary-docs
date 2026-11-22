@@ -15,7 +15,7 @@ Li CZ, Sun JY, Wang Y, Qin YP, Miao J. [Phase I clinical trial on the safety of 
 
 ## Population and dosing
 
-**Population:** healthy Chinese volunteers · condition healthy · age group adult · n = /&gt; 60.
+**Population:** healthy Chinese volunteers · condition healthy · age group adult.
 
 ## Model
 

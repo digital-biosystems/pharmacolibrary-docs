@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tegafur&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/&quot;},{&quot;label&quot;:&quot;Kim_2017 \u00b7 single_dose&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tegafur_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 2.3, model 8.66); the model does not reproduce the paper's time of the peak (tmax) (paper 1.7, model 5.94) (+3 more).
+> Tegafur model rejected because terminal half-life and peak time diverged from reported values, the output compartment was wrong, and a unit could not be converted.
 
 <div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Kim2017_single_dose" status="rejected" stale="false" population="rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Kim TH, Shin S, Shin JC, Bulitta JB, Weon KY, Yoo SD et al. Effect of Sipjeondae
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 2.3, model 8.66); the model does not reproduce the paper's time of the peak (tmax) (paper 1.7, model 5.94) (+3 more).**
+**Tegafur model rejected because terminal half-life and peak time diverged from reported values, the output compartment was wrong, and a unit could not be converted.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — tegafur: tmax 1.3 h, Cmax 7.2e+03 ng/mL, AUClast 4.27e+04 ng·h/mL, AUC∞ 4.29e+04 ng·h/mL, CL/F 2.1 mL/min/kg, V/F 0.4 L/kg, AUC%ext 3.3, kabs 0.08 h-1.
+The simulated terminal half-life of 8.66 hours differed from the paper's 2.3 hours, and the peak time of 5.94 hours differed from the paper's 1.7 hours. The output variable was set to the central compartment instead of the measured compound. A reported unit for a parameter could not be converted to SI units, preventing accurate model construction. Extracted — tegafur: tmax 1.3 h, Cmax 7.2e+03 ng/mL, AUClast 4.27e+04 ng·h/mL, AUC∞ 4.29e+04 ng·h/mL, CL/F 2.1 mL/min/kg, V/F 0.4 L/kg, AUC%ext 3.3, kabs 0.08 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucmeta/aucparent: this record has 3.3, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -179,7 +179,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | dev_1: not acceptable; dev_2: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped |  | 0.001991 |  | non-numeric value |
 | T1_cmax | reference | skipped | 72.6 | 0.001991 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 40.9 | 0.001991 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |

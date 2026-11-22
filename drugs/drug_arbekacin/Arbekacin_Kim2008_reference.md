@@ -17,7 +17,7 @@ Kim JH, Lah HO, Yim DS. Population pharmacokinetics of arbekacin in burn patient
 
 ## Population and dosing
 
-**Population:** burn patients · condition burn injury · age group mixed · n = &gt;=40.
+**Population:** burn patients · condition burn injury · age group mixed.
 
 ## Model
 

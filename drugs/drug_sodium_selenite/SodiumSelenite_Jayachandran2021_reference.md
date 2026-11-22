@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The sodium selenite model was quarantined because its clearance, volume of distribution, and absorption lag time had no extracted values.
+> Sodium selenite's clearance, volume of distribution, and absorption lag time were left at library placeholders, causing the model to be quarantined.
 
 <div class="pk-model-meta" hidden drug="sodium selenite" model-id="SodiumSelenite_Jayachandran2021_reference" status="model_quarantined" stale="false" population="patients with metastatic cancer" measured-compound="selenite" parameterization="apparent" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Jayachandran P, Knox SJ, Garcia-Cremades M, Savić RM. Clinical Pharmacokinetics
 
 ## Population and dosing
 
-**Population:** patients with metastatic cancer · condition metastatic cancer · age group adult · n = $15.
+**Population:** patients with metastatic cancer · condition metastatic cancer · age group adult.
 
 **Dosing:** 5.5, 11, 16.5, 33, 49.5 mg, oral, multiple, every 24 h.
 
@@ -50,9 +50,9 @@ Jayachandran P, Knox SJ, Garcia-Cremades M, Savić RM. Clinical Pharmacokinetics
 
 ### Reviewer guidance
 
-**The sodium selenite model was quarantined because its clearance, volume of distribution, and absorption lag time had no extracted values.**
+**Sodium selenite's clearance, volume of distribution, and absorption lag time were left at library placeholders, causing the model to be quarantined.**
 
-These parameters are listed in the builder's deviations as defaulted to placeholders rather than using the fitted values of 1.59 L/h and 42.5 L shown in the record. Additionally, the record assumes complete bioavailability (F=1) without a molar correction, which the review deemed an unacceptable assumption. Extracted — sodium selenite: kabs 0.642 h−1, CL/F 1.59 L/h, V/F 42.5 L.
+The record provides values for absorption rate constant, apparent clearance, and apparent volume, but lacks estimates for the base clearance, volume, and lag time parameters. Consequently, a library placeholder stood in for these missing pharmacokinetic values. A second reader also disputed the record's identification of the dose compound and analyte, noting they were unclear, and suggested a link to endogenous selenium that was missing. Extracted — sodium selenite: kabs 0.642 h−1, CL/F 1.59 L/h, V/F 42.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -123,14 +123,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -148,30 +149,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_matlab.zip" download>SodiumSelenite_Jayachandran2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip" download>SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_sbml.zip" download>SodiumSelenite_Jayachandran2021_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_cellml.zip" download>SodiumSelenite_Jayachandran2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Jayachandran P, Knox SJ, Garcia-Cremades M, Savić RM. Clinical Pharmacokinetics of Oral Sodium Selenite and Dosing Implications in the Treatment of Patients with Metastatic Cancer. Drugs in R&D 21(2):169–178 (2021). [doi:10.1007/s40268-021-00340-9](https://doi.org/10.1007/s40268-021-00340-9)
-
-**This record:** Pharmacolibrary, model `SodiumSelenite_Jayachandran2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference>
-
-```bibtex
-@misc{pharmacolibrary_SodiumSeleniteJayachandran2021reference,
-  title  = {{Pharmacolibrary model SodiumSelenite_Jayachandran2021_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference},
-  note   = {Parameters from doi:10.1007/s40268-021-00340-9},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

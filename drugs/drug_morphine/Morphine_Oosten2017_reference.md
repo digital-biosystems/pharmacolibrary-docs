@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;morphine&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/&quot;},{&quot;label&quot;:&quot;Oosten_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Ihmsen2021_reference&quot;,&quot;label&quot;:&quot;Ihmsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Ihmsen2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_f&quot;,&quot;label&quot;:&quot;Andersen_1986_f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_f.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_j&quot;,&quot;label&quot;:&quot;Andersen_1986_j&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_j.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_k&quot;,&quot;label&quot;:&quot;Andersen_1986_k&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_k.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Venkatasubramanian2014_reference&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Romberg2004_reference&quot;,&quot;label&quot;:&quot;Romberg_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Romberg2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # morphine — `Morphine_Oosten2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was rejected because the absorption half-life was recorded with inverse time units, conflicting with its structural time dimension.
+> Q2 has no unit.
 
-<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Oosten2017_reference" status="rejected" stale="false" population="cancer patients" measured-compound="morphine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Oosten2017_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="morphine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Oosten AW, Abrantes JA, Jönsson S, Matic M, van Schaik RHN, de Bruijn P et al. A Prospective Population Pharmacokinetic Study on Morphine Metabolism in Cancer Patients. Clinical pharmacokinetics 56(7):733–746 (2017).
@@ -17,37 +17,35 @@ Oosten AW, Abrantes JA, Jönsson S, Matic M, van Schaik RHN, de Bruijn P et al. 
 
 ## Population and dosing
 
-**Population:** cancer patients · age group adult · n = &gt;.
+**Population:** cancer patients · condition cancer · age group adult · n = 49.
 
-**Dosing:** 2, 10, 40 mg/h for continuous subcutaneous morphine, mg for bolus subcutaneous morphine, mg for oral ER morphine, and mg for oral IR morphine, oral, subcutaneous, multiple, every 12 h.
+**Dosing:** 0.6, 5, 10, 14, 60, 150 mg, subcutaneous and oral, multiple, every 12 h.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 9 extracted, plus 1 covariate effect.  
+**Structure:** general linear; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | t lag, ER (h) | tlag | 0.25 | h |
-| k a, SC (h−1) | t1/2ka | 3.96 | h−1 |
-| k a, ER (h−1) | kabs | 0.221 | h−1 |
+| k a, SC (h−1) | kabs | 3.96 | h−1 |
 | F oral (%)b | Fab | 0.372 |  |
-| CL70kg (L/h)c | CLnorm | 91.9 | L/h |
-| V 70kg (L)c | V | 278 | L |
+| CL70kg (L/h)c | CL | 91.9 | L/h |
+| V 70kg (L)c | V1 | 278 | L |
+| F m, M3G | fm | 0.573 |  |
 | F m, M6G | fm | 0.104 |  |
 | θ 1 b | equation variable | 0.170 |  |
-| θ 3 b | n_transit | 0.565 |  |
-| CLmet, 70kg (L/h)d | CLm/F | 4.71 | L/h |
-| theta_q24_egfr | theta_q24_egfr | 0.0128 |  |
+| θ 2 b | Q2 | 0.953 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.138). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,29 +55,27 @@ Oosten AW, Abrantes JA, Jönsson S, Matic M, van Schaik RHN, de Bruijn P et al. 
 
 ### Reviewer guidance
 
-**The model was rejected because the absorption half-life was recorded with inverse time units, conflicting with its structural time dimension.**
+**Q2 has no unit.**
 
-The parameter for the half-life of the absorption phase (3.96) carries a unit of h−1, which creates a dimension mismatch against the required time dimension. Additionally, the absolute bioavailability (0.372) was extracted as a fraction rather than a percentage, causing the coherence check to flag a double correction for apparent parameters. Extracted — morphine: tlag 0.25 h, t1/2ka 3.96 h−1, kabs 0.221 h−1, Fab 0.372, CLnorm 91.9 L/h, V 278 L, fm 0.104, n_transit 0.565, … (+1).
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — morphine: tlag 0.25 h, kabs 3.96 h−1, Fab 0.372, CL 91.9 L/h, V1 278 L, Q2 0.953; morphine-3-glucuronide: fm 0.573; morphine-6-glucuronide: fm 0.104.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading morphine → m3g (metabolism); morphine → m6g (metabolism); it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[θ 1 b].parameter_id`: this record has Q900, the second reading Q23; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | t lag, ER (h) | `Q83` · tlag | 0.25 | h | 900 | s | h | llm (0.6) | Tab3:row2:col2 |
-| k a, SC (h−1) | `Q95` · t1/2ka | 3.96 | h−1 |  |  | 1/h | llm (0.6) | Tab3:row3:col2 |
-| k a, ER (h−1) | `Q49` · kabs | 0.221 | h−1 | 6.139e-05 | 1/s | 1/h | llm (0.6) | Tab3:row5:col2 |
+| k a, SC (h−1) | `Q49` · kabs | 3.96 | h−1 | 0.0011 | 1/s | 1/h | exact (1) | Tab3:row3:col2 |
 | F oral (%)b | `Q40` · Fab | 0.372 |  | 0.372 |  |  | llm (0.6) | Tab3:row6:col2 |
-| CL70kg (L/h)c | `Q354` · CLnorm | 91.9 | L/h | 2.553e-05 | m3/s | l/h | llm (0.6) | Tab3:row7:col2 |
-| V 70kg (L)c | `Q61` · V | 278 | L | 0.278 | m3 | l | llm (0.6) | Tab3:row8:col2 |
-| F m, M6G | `Q45` · fm | 0.104 |  | 0.104 |  |  | llm (0.6) | Tab3:row11:col2 |
+| CL70kg (L/h)c | `Q22` · CL | 91.9 | L/h | 2.553e-05 | m3/s | l/h | exact (1) | Tab3:row7:col2 |
+| V 70kg (L)c | `Q63` · V1 | 278 | L | 0.278 | m3 | l | exact (1) | Tab3:row8:col2 |
+| F m, M3G | `Q45` · fm | 0.573 |  | 0.573 |  |  | exact (1) | Tab3:row10:col2 |
+| F m, M6G | `Q45` · fm | 0.104 |  | 0.104 |  |  | exact (1) | Tab3:row11:col2 |
 | θ 1 b | `Q900` · equation variable | 0.170 |  | 0.17 |  |  | llm (0.6) | Tab3:row12:col2 |
-| θ 3 b | `Q311` · n_transit | 0.565 |  | 0.565 |  |  | llm (0.6) | Tab3:row14:col2 |
-| CLmet, 70kg (L/h)d | `Q351` · CLm/F | 4.71 | L/h | 1.308e-06 | m3/s | l/h | llm (0.6) | Tab3:row17:col2 |
-| theta_q24_egfr | `Q900` · theta_q24_egfr | 0.0128 |  |  |  |  |  | Tab3:row19:col2 |
+| θ 2 b | `Q99` · Q2 | 0.953 |  |  |  |  | llm (0.6) | Tab3:row13:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -105,34 +101,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - table section residual_error: 'Correlation morphine−M3Ge' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Correlation morphine−M6Ge' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Correlation M3G−M6Ge' routed out of structural estimates ('Residual variability')
-- unit_dimension_mismatch: 'k a, SC (h−1)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
-- unit_dimension_mismatch: 'k a, IR (h−1)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
-- dropped duplicate Q95 ('k a, IR (h−1)', value '6.00') — already have one for this compound
-- dropped unlinked row (NIL): 'F m, M3G' — extend the ontology if this is a real PK parameter (source ['Tab3:row10:col2'])
-- dropped duplicate Q900 ('θ 2 b', value '0.953') — already have one for this compound
-- dropped unlinked row (NIL): 'F 1p, M3G b' — extend the ontology if this is a real PK parameter (source ['Tab3:row15:col2'])
-- routed 'F 1p, M6G b' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
-- dropped duplicate Q61 ('V met, 70kg (L)c', value '25.8') — already have one for this compound
-- dropped value-less row: 'CI'
-- dropped value-less row: 'CV'
-- dropped value-less row: 'eGFR'
-- dropped value-less row: 'M3G'
-- dropped value-less row: 'M6G'
-- dropped value-less row: 'NA'
-- dropped value-less row: 'RSE'
-- dropped value-less row: 'SIR'
-- dropped value-less row: '%RSE'
-- NIL: refused to back-fill base 'Fab' from footnote/prose loose number None (source ['Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['Tab3:footnote']); the table cell was unparseable — needs review
-- covariate effect for Q24 has no base parameter row (kept as unattached equation-variable)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=morphine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- dropped duplicate Q49 ('k a, IR (h−1)', value '6.00') — already have one for this compound
+- dropped duplicate Q49 ('k a, ER (h−1)', value '0.221') — already have one for this compound
+- dropped unlinked row (NIL): 'θ 3 b' — extend the ontology if this is a real PK parameter (source ['Tab3:row14:col2'])
+- dropped duplicate Q45 ('F 1p, M3G b', value '0.355') — already have one for this compound
+- conflicting Q45 for morphine-3-glucuronide: 'F 1p, M3G b' = '0.355' vs 'F m, M3G' = '0.573' — route to review
+- dropped duplicate Q45 ('F 1p, M6G b', value '0.0631') — already have one for this compound
+- conflicting Q45 for morphine-6-glucuronide: 'F 1p, M6G b' = '0.0631' vs 'F m, M6G' = '0.104' — route to review
+- dropped duplicate Q22 ('CLmet, 70kg (L/h)d', value '4.71') — already have one for this compound
+- dropped duplicate Q63 ('V met, 70kg (L)c', value '25.8') — already have one for this compound
+- dropped unlinked row (NIL): 'eGFR on CLmet, 70kg d' — extend the ontology if this is a real PK parameter (source ['Tab3:row19:col2'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=morphine
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [0, 0] (site presystemic: 'The inclusion of first-pass formation of metabolites following oral morphine was assessed in the model, and the sum of t')
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-
-**Extraction notes:**
-- LLM selected parameter table(s) 2
+- row roles (LLM): model_class=compartmental; 33/33 row label(s) assigned, 12 linked by role; re-tagged parent→morphine-3-glucuronide ×5, parent→morphine-6-glucuronide ×5
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 ## Validation
 
@@ -141,37 +126,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.138 (4/29 fields) | 25 |
+| `gpt-oss-120b` | not confirmed | 0.857 (12/14 fields) | 2 |
 
-<details><summary>25 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['morphine', 'm3g', 'metabolism'], ['morphine', 'm6g', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[cl70kg (l/h)c]` |  | 91.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl70kg (l/h)c]` | 91.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clmet, 70kg (l/h)d].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[clmet, 70kg (l/h)d].parameter_id` | Q351 | Q22 | mismatch |
-| `gpt-oss-120b` | `parameters[f 1p, m3g b]` |  | 0.355 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f 1p, m6g b]` |  | 0.0631 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f m, m3g]` |  | 0.573 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f m, m6g]` |  | 0.104 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f m, m6g]` | 0.104 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f oral (%)b]` |  | 0.372 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f oral (%)b]` | 0.372 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a, er]` | 0.221 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a, sc]` |  | 3.96 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a, sc]` | 3.96 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t lag, er]` |  | 0.25 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t lag, er]` | 0.25 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_egfr]` |  | 0.0128 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q24_egfr]` | 0.0128 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v 70kg (l)c]` |  | 278 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v 70kg (l)c]` | 278 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v met, 70kg (l)c]` |  | 25.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[θ 1 b].parameter_id` | Q900 | Q23 | mismatch |
-| `gpt-oss-120b` | `parameters[θ 3 b]` | 0.565 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ 2 b]` | 0.953 |  | only_one_extracted |
 
 </details>
 
@@ -185,18 +147,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Tab3:row17:col2'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Tab3:row7:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab3:row5:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab3:row8:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab3:row7:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab3:row3:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab3:row8:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab3:row2:col2'] |
-| C5_dimension_Q95 | fail | [time] | h−1 (1 / [time]) | ['Tab3:row3:col2'] |
-| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | Fm=0.104 present with apparent parameterization |  |
+| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['Tab3:row13:col2'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 278 L | ['Tab3:row8:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 91.9 L/h | ['Tab3:row7:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 278 L | ['Tab3:row8:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -208,9 +169,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -220,4 +191,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmorphine%5D%20Morphine_Oosten2017_reference&body=Drug%3A%20morphine%0ARecord%3A%20Morphine_Oosten2017_reference%0APaper%3A%20Oosten_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_morphine/Morphine_Oosten2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 10:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 07:18 UTC</sub>

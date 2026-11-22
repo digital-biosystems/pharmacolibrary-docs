@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;biapenem&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/&quot;},{&quot;label&quot;:&quot;Fu_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biapenem_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Biapenem_Akashita2015_reference&quot;,&quot;label&quot;:&quot;Akashita_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Akashita2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biapenem_Chen2024v2_reference&quot;,&quot;label&quot;:&quot;Chen_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Chen2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biapenem_Akashita2015_reference&quot;,&quot;label&quot;:&quot;Akashita_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Akashita2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biapenem_Chen2024v2_reference&quot;,&quot;label&quot;:&quot;Chen_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Chen2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biapenem_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_biapenem/Biapenem_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # biapenem — `Biapenem_Fu2024_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:54 UTC (Simulated), but the paper was screened again on 2026-10-07 10:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The record was rejected because the paper does not name biapenem in its title or abstract, and the second reader disputed the verdict with a 0.75 agreement ratio.
 
-<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Fu2024_reference" status="extracted" stale="true" population="" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Fu2024_reference" status="rejected" stale="false" population="" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose optimization of antimicrobials agents in elderly patients. Frontiers in pharmacology 15:1396994 (2024).
@@ -29,6 +29,8 @@ Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose op
 <figure class="pk-models-diagram"><img src="drugs/drug_biapenem/Biapenem_Fu2024_reference/Biapenem_Fu2024_reference.svg" alt="Biapenem_Fu2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL in the elderly group | CL | 5.28 | L h−1 |
@@ -36,7 +38,7 @@ Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose op
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.625), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.75), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +48,13 @@ Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose op
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was rejected because the paper does not name biapenem in its title or abstract, and the second reader disputed the verdict with a 0.75 agreement ratio.**
 
-A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q17: this record has 58.3, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+The relevance screen confirmed the paper subject is another drug, as neither the title nor the abstract mentions biapenem. A second reader disagreed with the verdict, showing an agreement ratio of 0.75 with zero readers concurring. The reviewer also identified discrepancies in extracted values, where this record lists 58.3 while the second reader recorded null for one parameter and 18.751 versus 18 for another. Extracted — biapenem: CL 5.28 L h−1, V 10.9 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q17: this record has 58.3, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -77,15 +81,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `glm-5.3-flash` | not confirmed | 0.75 (6/8 fields) | 2 |
 | `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `glm-5.3-flash` | `values[Q17]` | 58.3 |  | only_one_extracted |
-| `glm-5.3-flash` | `values[Q40]` | 57 | 57 | mismatch |
 | `glm-5.3-flash` | `values[Q88]` | 18 | 18.751 | mismatch |
 
 </details>
@@ -112,14 +115,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=biapenem) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | biapenem (or metabolite) | paper about another drug |  | paper subject is not biapenem: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=biapenem) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -131,59 +135,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_biapenem/Biapenem_Fu2024_reference/Biapenem_Fu2024_reference_modelica.zip" download>Biapenem_Fu2024_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_biapenem/Biapenem_Fu2024_reference/Biapenem_Fu2024_reference_fmi.zip" download>Biapenem_Fu2024_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_biapenem/Biapenem_Fu2024_reference/Biapenem_Fu2024_reference_matlab.zip" download>Biapenem_Fu2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_biapenem/Biapenem_Fu2024_reference/Biapenem_Fu2024_reference_matlab_simbio.zip" download>Biapenem_Fu2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_biapenem/Biapenem_Fu2024_reference/Biapenem_Fu2024_reference_sbml.zip" download>Biapenem_Fu2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_biapenem/Biapenem_Fu2024_reference/Biapenem_Fu2024_reference_cellml.zip" download>Biapenem_Fu2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3504 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0012 | kg |
-| input | model | `Cl` | 1.467e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0001556 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose optimization of antimicrobials agents in elderly patients. Frontiers in pharmacology 15:1396994 (2024). [doi:10.3389/fphar.2024.1396994](https://doi.org/10.3389/fphar.2024.1396994)
-
-**This record:** Pharmacolibrary, model `Biapenem_Fu2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_biapenem/Biapenem_Fu2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_BiapenemFu2024reference,
-  title  = {{Pharmacolibrary model Biapenem_Fu2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_biapenem/Biapenem_Fu2024_reference},
-  note   = {Parameters from doi:10.3389/fphar.2024.1396994},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

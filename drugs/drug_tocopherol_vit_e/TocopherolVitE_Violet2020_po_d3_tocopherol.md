@@ -4,11 +4,11 @@
 
 # tocopherol (vit E) — `TocopherolVitE_Violet2020_po_d3_tocopherol`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-07 17:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant for d6-α-tocopherol, 0.022, has an invalid unit preventing model calculation.
+> The record was rejected because d6-α-tocopherol’s elimination rate constant, 0.022, was reported in an incompatible unit, Ke.
 
-<div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_po_d3_tocopherol" status="rejected" stale="true" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_po_d3_tocopherol" status="rejected" stale="false" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E sequestration by liver fat in humans. JCI insight 5(1) (2020).
@@ -42,7 +42,7 @@ Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +52,13 @@ Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E 
 
 ### Reviewer guidance
 
-**The elimination rate constant for d6-α-tocopherol, 0.022, has an invalid unit preventing model calculation.**
+**The record was rejected because d6-α-tocopherol’s elimination rate constant, 0.022, was reported in an incompatible unit, Ke.**
 
-The elimination rate constant is recorded with the unit 'Ke' instead of a time-based unit, causing a dimension mismatch. Because this unit could not be converted to standard units, the parameter lacked a valid value for the model. The second reader also disagreed on the area under the curve value, citing 17.5 instead of the recorded 10.7. Extracted — d6-α-tocopherol: kel 0.022 Ke, t1/2z 31.5 h, Cmax 0.28, tmax 11.4 h, AUCt 10.7.
+The reported unit was assessed as current multiplied by time, whereas an elimination rate constant requires reciprocal time; Ke could not be converted to SI, leaving no SI value for the parameter. A second reader recorded the elimination rate as 0.024, rather than 0.022. Extracted — d6-α-tocopherol: kel 0.022 Ke, t1/2z 31.5 h, Cmax 0.28, tmax 11.4 h, AUCt 10.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deuterated α-tocopherols, the second reading deuterated α-tocopherol (d3 and d6); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

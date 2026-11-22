@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Bioavailability was missing, so generic placeholder values were used instead of estimates from this paper, causing the record to be held back.
+> Medroxyprogesterone acetate bioavailability F was missing an explicit estimate, so a library placeholder was used instead of a study-derived value.
 
 <div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Francis2021_reference" status="needs_review" stale="false" population="women with HIV and/or tuberculosis" measured-compound="medroxyprogesterone acetate" parameterization="mechanistic" topology="1C"></div>
 
@@ -62,9 +62,9 @@ Francis J, Mngqibisa R, McIlleron H, Kendall MA, Wu X, Dooley KE et al. A Semime
 
 ### Reviewer guidance
 
-**Bioavailability was missing, so generic placeholder values were used instead of estimates from this paper, causing the record to be held back.**
+**Medroxyprogesterone acetate bioavailability F was missing an explicit estimate, so a library placeholder was used instead of a study-derived value.**
 
-The record lists immediate and delayed-release fractions but the total bioavailability parameter was not extracted, requiring default values that are not supported by the paper. This mismatch between defined absorption components and missing overall bioavailability led to the refusal. Additionally, covariate effects on clearance and release rate were not simulated. Extracted — medroxyprogesterone: CL 47.2 L/h, V 8.91e+03 L, fu 76, kabs 0.578 1/day, kel 0.0193 1/day.
+The record includes covariate effects for anti-tuberculosis treatment and efavirenz on clearance, but these scenarios were not simulated. Only the reference individual was simulated, leaving the impact of these factors unverified. Extracted — medroxyprogesterone: CL 47.2 L/h, V 8.91e+03 L, fu 76, kabs 0.578 1/day, kel 0.0193 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has depot medroxyprogesterone, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -188,14 +188,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=medroxyprogesterone acetate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=medroxyprogesterone acetate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

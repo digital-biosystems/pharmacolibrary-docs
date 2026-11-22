@@ -5,11 +5,11 @@
 
 # alectinib — `Alectinib_Mohmaed2026_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:12 UTC (Rejected), but the paper was screened again on 2026-10-06 21:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The alectinib model was rejected because the absorption lag time unit (hours) could not be converted to standard units, causing a structural dimension mismatch.
+> The alectinib absorption transit parameter had a unit dimension conflict with its time-based meaning.
 
-<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_estimate" status="rejected" stale="true" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_estimate" status="rejected" stale="false" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G et al. Reducing the Burden of Interaction Studies in Cancer Patients Using a Stable Isotopically Labeled Microtracer: A Proof-of-Concept Study with Alectinib. Clinical pharmacology and therapeutics 119(3):713–720 (2026).
@@ -44,7 +44,7 @@ Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G e
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G e
 
 ### Reviewer guidance
 
-**The alectinib model was rejected because the absorption lag time unit (hours) could not be converted to standard units, causing a structural dimension mismatch.**
+**The alectinib absorption transit parameter had a unit dimension conflict with its time-based meaning.**
 
-The recorded absorption lag time (1.51) carried a unit that the system could not recognize as standard, leaving the parameter without a valid physical value. This lack of a defined unit caused the model structure to fail consistency checks. Although the second reader disagreed on several parameter values and relative standard errors, the primary recorded cause of refusal was this specific unit conversion failure. Extracted — alectinib: CL/F 84.2 L/h, V/F 776 L, MTT 3.14 h, Fab 1 unit, tlag 1.51 unit.
+The record lists a mean transit time parameter as 3.14 hours, but a related fraction parameter had a unit dimension that conflicted with time. This unit inconsistency caused a structural parameter dimension mismatch. Additionally, the bioavailability parameter was recorded as 1, which conflicts with the standard definition of absolute bioavailability. Extracted — alectinib: CL/F 84.2 L/h, V/F 776 L, MTT 3.14 h, Fab 1 unit, tlag 1.51 unit.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl/f].rse_percent`: this record has none, the second reading 31.2; it also differs on 5 more fields. That field does not shape the model.
 

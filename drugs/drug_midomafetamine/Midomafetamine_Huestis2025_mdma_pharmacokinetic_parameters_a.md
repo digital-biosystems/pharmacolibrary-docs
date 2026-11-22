@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Midomafetamine&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/&quot;},{&quot;label&quot;:&quot;Huestis_2025 \u00b7 mdma_pharmacokinetic_parameters_and_random_effects_estimates_cv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midomafetamine_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_chov2025_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_chov2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&quot;,&quot;label&quot;:&quot;Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&quot;,&quot;label&quot;:&quot;Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midomafetamine_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&quot;,&quot;label&quot;:&quot;Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&quot;,&quot;label&quot;:&quot;Huestis_2025_mdma_pharmacokinetic_parameters_and_random_effects_estimates_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midomafetamine_chov2025_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_chov2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant of 60.2/h is implausibly high, resulting in a predicted tmax of 0.209 h versus the paper's 4.0 h.
+> Midomafetamine’s absorption rate constant is 60.2 1/h, but the model peaks at 0.209 h rather than 4 h and represents neither the measured parent output nor the parent–metabolite structure.
 
 <div class="pk-model-meta" hidden drug="Midomafetamine" model-id="Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a" status="rejected" stale="false" population="healthy adults" measured-compound="midomafetamine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,11 +51,11 @@ Huestis MA, Smith WB, Leonowens C, Blanchard R, Viaccoz A, Spargo E et al. MDMA 
 
 ### Reviewer guidance
 
-**The absorption rate constant of 60.2/h is implausibly high, resulting in a predicted tmax of 0.209 h versus the paper's 4.0 h.**
+**Midomafetamine’s absorption rate constant is 60.2 1/h, but the model peaks at 0.209 h rather than 4 h and represents neither the measured parent output nor the parent–metabolite structure.**
 
-The model structure is incorrect for a parent-metabolite design, and the metabolite compartment has no dose path. The model builder assumed unit bioavailability and missing lag time, contributing to the extreme discrepancy in time-to-peak. Extracted — midomafetamine: CL/F 30.5 L/h, V1/F 19.9 L, kabs 60.2 1/h.
+The model does not reproduce the paper’s time of the peak (tmax) (paper 4, model 0.209); simulated as the paper dosed it, the model’s peak time differs from the reported value by more than the tolerance. The output was central-compartment concentration rather than concentration in the measured midomafetamine compartment, and the one-compartment enteral structure did not represent the parent–MDA metabolite structure. The lag time was defaulted, and apparent parameterization assumed F=1 and Fm=1 with no molar correction. Extracted — midomafetamine: CL/F 30.5 L/h, V1/F 19.9 L, kabs 60.2 1/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,8 @@ The model structure is incorrect for a parent-metabolite design, and the metabol
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
 | T1_tmax | reference | fail | 4 | 0.2087 | 0.0522 | h→SI vs simulated h |
 | T1_tmax | reference | fail | 2 | 0.2087 | 0.1044 | h→SI vs simulated h |
 | T1_tmax | reference | fail | 2 | 0.2087 | 0.1044 | h→SI vs simulated h |

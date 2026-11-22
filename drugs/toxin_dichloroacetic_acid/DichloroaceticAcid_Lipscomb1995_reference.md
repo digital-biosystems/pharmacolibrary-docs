@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Dichloroacetic Acid&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/&quot;},{&quot;label&quot;:&quot;Lipscomb_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DichloroaceticAcid_Abbas1997_reference&quot;,&quot;label&quot;:&quot;Abbas_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/DichloroaceticAcid_Abbas1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DichloroaceticAcid_Abbas1997_reference&quot;,&quot;label&quot;:&quot;Abbas_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/DichloroaceticAcid_Abbas1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The Km value for dichloroacetic acid was rejected because its unit (mM) implies a length dimension, conflicting with the required mass per volume dimension for concentration.
 
 <div class="pk-model-meta" hidden drug="Dichloroacetic Acid" model-id="DichloroaceticAcid_Lipscomb1995_reference" status="rejected" stale="false" population="rat cytosol" measured-compound="Dichloroacetic Acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,7 +45,13 @@ Lipscomb JC, Mahle DA, Brashear WT, Barton HA. Dichloroacetic acid: metabolism i
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The Km value for dichloroacetic acid was rejected because its unit (mM) implies a length dimension, conflicting with the required mass per volume dimension for concentration.**
+
+The record lists a Km of 0.3 mM for dichloroacetic acid, but the unit mM was interpreted with a dimensional conflict of [length] against the expected [mass]/[length]^3. This dimensional inconsistency caused the structural parameter check to fail. Additionally, the model relied solely on abstract-only data, meaning these values are summary statistics rather than fitted parameters. Extracted — dichloroacetic acid: Km 0.3 mM, Vmax 12 mg/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

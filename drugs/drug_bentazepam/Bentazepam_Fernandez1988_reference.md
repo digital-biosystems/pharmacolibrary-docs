@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bentazepam's bioavailability, clearance, lag time, and inter-compartment rate constants lack extracted values, causing the model to be held back.
+> Bentazepam's bioavailability, clearance, lag time, and inter-compartmental rate constants were left at defaults, so the model was quarantined.
 
 <div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Fernandez1988_reference" status="model_quarantined" stale="false" population="patients receiving multiple oral doses of bentazepam" measured-compound="bentazepam" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,9 +48,9 @@ Fernandez Lastra C, Gonzalez Lopez F, Dominguez-Gil A, Mariño EL. Discriminatio
 
 ### Reviewer guidance
 
-**Bentazepam's bioavailability, clearance, lag time, and inter-compartment rate constants lack extracted values, causing the model to be held back.**
+**Bentazepam's bioavailability, clearance, lag time, and inter-compartmental rate constants were left at defaults, so the model was quarantined.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader could not confirm the presence of values for absorption, elimination, and volume parameters. Consequently, bioavailability, clearance, lag time, and transfer constants were left at library placeholders. Extracted — bentazepam: kabs 2.02 h-1, V 2.2 l/kg, kel 0.13 h-1, V1 2.05 l/kg, k12 0.042 h-1, k21 0.103 h-1.
+The record lacks extracted values for the bioavailability, clearance, absorption lag time, and both inter-compartmental rate constants. Consequently, library placeholders substituted for these specific pharmacokinetic parameters. This omission prevented the model from being published as a valid quantitative estimate. Extracted — bentazepam: kabs 2.02 h-1, V 2.2 l/kg, kel 0.13 h-1, V1 2.05 l/kg, k12 0.042 h-1, k21 0.103 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bentazepam, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -138,13 +138,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

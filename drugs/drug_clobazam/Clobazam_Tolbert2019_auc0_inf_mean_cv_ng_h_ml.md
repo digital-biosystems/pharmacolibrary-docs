@@ -4,11 +4,11 @@
 
 # clobazam — `Clobazam_Tolbert2019_auc0_inf_mean_cv_ng_h_ml`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:49 UTC (Rejected), but the paper was screened again on 2026-10-06 18:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The Clobazam Cmax value was rejected because its reported unit of ng/mL is not a standard metric, preventing a necessary unit conversion.
+> Clobazam's AUCt unit was recorded as hours instead of ng·h/mL, creating a dimensional conflict with the expected concentration-time area.
 
-<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_auc0_inf_mean_cv_ng_h_ml" status="rejected" stale="true" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_auc0_inf_mean_cv_ng_h_ml" status="rejected" stale="false" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics of Clobazam. Journal of clinical pharmacology 59(1):7–19 (2019).
@@ -41,7 +41,7 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 ### Reviewer guidance
 
-**The Clobazam Cmax value was rejected because its reported unit of ng/mL is not a standard metric, preventing a necessary unit conversion.**
+**Clobazam's AUCt unit was recorded as hours instead of ng·h/mL, creating a dimensional conflict with the expected concentration-time area.**
 
-The record lists Cmax for clobazam as 87.2 with a unit of ng/mL. This unit is not part of the standard International System of Units, so the software could not transform it into a compatible metric value. Consequently, the parameter remained in its original non-SI form, causing a dimension mismatch that led to the model's rejection. Extracted — clobazam: Cmax 87.2 ng/mL, AUCt 8.87e+03 h, t1/2z 58.6 h, V/F 100 L, CL/F 1.9 L/h.
+The AUCt parameter for clobazam is assigned the unit 'h', while its label indicates 'ng•h/mL' and its meaning is an area under the concentration-time curve. This discrepancy creates a dimension mismatch between the time-only unit and the required mass-time-volume dimension. The review also notes a second reader disagreed on the parameter ID assignment and the presence of a CYP2C19 covariate value. Extracted — clobazam: Cmax 87.2 ng/mL, AUCt 8.87e+03 h, t1/2z 58.6 h, V/F 100 L, CL/F 1.9 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 10 mg clb: this record has none, the second reading 37.5; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;bempedoic acid&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/&quot;},{&quot;label&quot;:&quot;Amore_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BempedoicAcid_Amore2023_reference&quot;,&quot;label&quot;:&quot;Amore_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BempedoicAcid_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BempedoicAcid_Amore2023_reference&quot;,&quot;label&quot;:&quot;Amore_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BempedoicAcid_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bempedoic acid — `BempedoicAcid_Amore2023_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Amore2023_reference" status="not_modelled" stale="false" population="healthy adults" measured-compound="bempedoic_acid" parameterization="mechanistic" topology="2C"></div>
+> Bempedoic acid’s k21 has no reported estimate and was left at a default, so this record was held back.
+
+<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Amore2023_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="bempedoic_acid" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Amore BM, Patel N, Batheja P, Templeton IE, Jones HM, Louie MJ et al. Physiologically Based Pharmacokinetic Model Development and Verification for Bioequivalence Testing of Bempedoic Acid Oral Suspension and Reference Tablet Formulation. Pharmaceutics 15(5) (2023).
@@ -29,7 +31,7 @@ Amore BM, Patel N, Batheja P, Templeton IE, Jones HM, Louie MJ et al. Physiologi
 <figure class="pk-models-diagram"><img src="drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference/BempedoicAcid_Amore2023_reference.svg" alt="BempedoicAcid_Amore2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +41,7 @@ Amore BM, Patel N, Batheja P, Templeton IE, Jones HM, Louie MJ et al. Physiologi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.263). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +51,13 @@ Amore BM, Patel N, Batheja P, Templeton IE, Jones HM, Louie MJ et al. Physiologi
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Bempedoic acid’s k21 has no reported estimate and was left at a default, so this record was held back.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 1.06, the second reading 2.3; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+No value for k21 was extracted from the paper; the library default affects the simulated profile but is unsupported by this paper. A second reader disputed the parameter assignments, with agreement of 0.263; the reported intercompartmental clearance of 1.5 mL/min and total clearance of 0.81 L/h were absent in that reading. Extracted — bempedoic acid: CL 0.81 L/h, V 24.5 L, Q 1.5 mL/min.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 1.06, the second reading 2.3; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -84,9 +88,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
+| `gpt-oss-120b` | not confirmed | 0.263 (5/19 fields) | 14 |
 
-<details><summary>17 field discrepancies</summary>
+<details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -97,16 +101,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `values[Q27]` |  | 0.81 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q30]` | 1.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 3.5 | 0.489 | mismatch |
-| `gpt-oss-120b` | `values[Q33]` | 0.86 | 0.86 | mismatch |
 | `gpt-oss-120b` | `values[Q349]` | 1 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q369]` | 90 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q410]` |  | 0.55 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q41]` | 1 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q46]` | 2.6 | 2.6 | mismatch |
 | `gpt-oss-120b` | `values[Q56]` |  | 3.5 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q58]` | 1.07 | 1.07 | mismatch |
 | `gpt-oss-120b` | `values[Q88]` | 0.498 | 0.498 | mismatch |
-| `gpt-oss-120b` | `values[Q93]` | 1.46 | 1.46 | mismatch |
 
 </details>
 
@@ -133,12 +134,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | note |
-|---|---|---|
-| T0_analyte_identity | pass | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped | no covariate effects in record |
-| T3_param_coverage | skipped | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=bempedoic_acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.263, 0 of 1 reader(s) agree | 0.263 | cross-check disputed by a second reader: verdict disputed, agreement 0.263, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

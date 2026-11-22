@@ -16,7 +16,7 @@ Konishi K, Suzuki H, Saruta T, Deguchi N, Fugono T. Pharmacokinetics of carumona
 
 ## Population and dosing
 
-**Population:** patients with impaired renal function and hemodialysis · condition renal impairment · age group adult · n = : 26.
+**Population:** patients with impaired renal function and hemodialysis · condition renal impairment · age group adult.
 
 ## Model
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;quazepam&quot;,&quot;href&quot;:&quot;drugs/drug_quazepam/&quot;},{&quot;label&quot;:&quot;Hilbert_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quazepam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quazepam/Quazepam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quazepam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quazepam/Quazepam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quazepam — `Quazepam_Hilbert1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-06 20:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The abstract-only record lacks volume and clearance parameters, preventing construction of a compartmental population PK model for quazepam.
+> Quazepam is rejected because its metabolites are unlinked to the dose, preventing a connected metabolic model from the abstract-only record.
 
-<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984_reference" status="rejected" stale="true" population="geriatric subjects" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984_reference" status="rejected" stale="false" population="geriatric subjects" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Hilbert JM, Chung M, Radwanski E, Gural R, Symchowicz S, Zampaglione N. Quazepam kinetics in the elderly. Clinical pharmacology and therapeutics 36(4):566–569 (1984).
@@ -40,7 +40,7 @@ Hilbert JM, Chung M, Radwanski E, Gural R, Symchowicz S, Zampaglione N. Quazepam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Hilbert JM, Chung M, Radwanski E, Gural R, Symchowicz S, Zampaglione N. Quazepam
 
 ### Reviewer guidance
 
-**The abstract-only record lacks volume and clearance parameters, preventing construction of a compartmental population PK model for quazepam.**
+**Quazepam is rejected because its metabolites are unlinked to the dose, preventing a connected metabolic model from the abstract-only record.**
 
-The extraction identified only summary statistics like Cmax (29.3 ng/ml) and half-lives, omitting the distribution volume and clearance required for compartmental modeling. Additionally, the record describes a linear metabolic chain where 2-oxoquazepam and N-desalkyl-2-oxoquazepam are orphan compartments with zero compartments and no path from the dose. A second reader disagreed with the identification of quazepam as the primary analyte and the inclusion of the metabolic links. Consequently, the record was rejected as an exposure/outcome paper rather than a fitted population PK model. Extracted — quazepam: t1/2z 0.8 hr, Cmax 29.3 ng/ml, t1/2α 3.5 hr, t1/2β 53.3 hr, kabs 5.41 1/h, tlag 0.394 h.
+The model structure lists 2-oxoquazepam and N-desalkyl-2-oxoquazepam as metabolites formed from quazepam, but no direct path exists from the dose to these species. Consequently, the metabolite compartments remain orphaned, invalidating the kinetic description derived solely from the paper's abstract. A second reader also disputed the reported absorption parameters and the existence of the metabolic links. Extracted — quazepam: t1/2z 0.8 hr, Cmax 29.3 ng/ml, t1/2α 3.5 hr, t1/2β 53.3 hr, kabs 5.41 1/h, tlag 0.394 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quazepam, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sodium hypochlorite concentrations administered via aerosol exposure cause mortality in Sprague-Dawley rats, with reported lethal concentrations of 2.22222 mg/L for males and 2.39456 mg/L for females. The study reports empirical LC50 values without describing a pharmacodynamic mechanism such as direct Emax or inhibition of production.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kim_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The zonisamide record was held back because the absorption rate constant and lag time were not reported in the paper and were left at library defaults.
+> Zonisamide’s absorption-rate constant (ka) had no reported value and was defaulted, despite reported CL/F of 0.17 L/kg/hr, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Muana2018_reference" status="needs_review" stale="false" population="" measured-compound="zonisamide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Muñana KR, Otamendi AJ, Nettifee JA, Papich MG. Population pharmacokinetics of 
 
 ### Reviewer guidance
 
-**The zonisamide record was held back because the absorption rate constant and lag time were not reported in the paper and were left at library defaults.**
+**Zonisamide’s absorption-rate constant (ka) had no reported value and was defaulted, despite reported CL/F of 0.17 L/kg/hr, so the record was held back.**
 
-The record lists oral clearance and volume of distribution, but the absorption rate constant (ka) and lag time (Tlag) are identified as invented absorption parameters defaulted to library conventions. Since the source text does not report these absorption parameters, the model builder's substitution of default values constitutes an unreported model deviation that invalidates the current parameter set. Extracted — zonisamide: CL/F 0.17 L/kg/hr, V/F 51.5 L.
+Ka used library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. Tlag was also defaulted, and the model assumed first-order depot absorption with apparent parameterization (F=1, Fm=1, no molar correction). A second reader disputed the record: one value was 3 rather than 6.6, and two values present in this record had no corresponding value from that reader; agreement was 0.5. Extracted — zonisamide: CL/F 0.17 L/kg/hr, V/F 51.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has 100, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -123,15 +123,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=zonisamide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=zonisamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

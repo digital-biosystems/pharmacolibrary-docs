@@ -5,11 +5,11 @@
 
 # bretylium tosilate — `BretyliumTosilate_Narang1980_mean`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:54 UTC (Rejected), but the paper was screened again on 2026-10-08 16:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bretylium tosylate renal clearance was rejected because the body-weight-normalized unit prevented calculation of a standard clearance value.
+> Bretylium’s apparent intercompartmental clearance, valued at 10.724 L/h/kg, was rejected because its reported unit could not be converted to SI.
 
-<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_mean" status="rejected" stale="true" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_mean" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretylium in man after intravenous administration. Journal of pharmacokinetics and biopharmaceutics 8(4):363–372 (1980).
@@ -17,7 +17,7 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ## Population and dosing
 
-**Population:** normal male volunteers · condition healthy · age group adult · n = &gt;=4.
+**Population:** normal male volunteers · condition healthy · age group adult.
 
 **Dosing:** 280 mg, iv, single.
 
@@ -51,7 +51,7 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,13 +61,13 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ### Reviewer guidance
 
-**Bretylium tosylate renal clearance was rejected because the body-weight-normalized unit prevented calculation of a standard clearance value.**
+**Bretylium’s apparent intercompartmental clearance, valued at 10.724 L/h/kg, was rejected because its reported unit could not be converted to SI.**
 
-The renal clearance parameter is recorded in liters per hour per kilogram, a unit that could not be processed into a standard pharmacokinetic value. The second reader also disagreed on the primary analyte identification and noted the absence of an additional renal excretion rate constant. These inconsistencies in parameter extraction and unit handling led to the record's rejection. Extracted — bretylium tosilate: λ1 1.81 hr⁻¹, t1/2α 25.2 min, kel 0.09 hr⁻¹, t1/2β 7.8 hr, k12 1.03 hr⁻¹, k21 0.286 hr⁻¹, kabs 0.089 hr⁻¹, V1 1.34 liters/kg, … (+5).
+The structural-parameter finding lists hr⁻¹ against 1/[time], which are dimensionally the same, so that finding is inconclusive. Separately, the reported unit could not be converted to SI, leaving no SI value for the apparent intercompartmental clearance. Extracted — bretylium tosilate: λ1 1.81 hr⁻¹, t1/2α 25.2 min, kel 0.09 hr⁻¹, t1/2β 7.8 hr, k12 1.03 hr⁻¹, k21 0.286 hr⁻¹, kabs 0.089 hr⁻¹, V1 1.34 liters/kg, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has bretylium, the second reading bretylium_tosilate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

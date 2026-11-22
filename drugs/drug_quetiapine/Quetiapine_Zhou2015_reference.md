@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Quetiapine apparent volume 574 L and absorption rate 0.5 h⁻¹ rely on abstract-only assumptions and unvalidated defaults.
+> Quetiapine’s reported steady-state AUC of 3538 ng·h/mL is disputed by a second-reader value of 3087, contributing to the record’s partial agreement.
 
 <div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Zhou2015_reference" status="needs_review" stale="false" population="Western and Chinese patients with schizophrenia, schizoaffective disorder, or bipolar disorder" measured-compound="quetiapine" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Zhou D, Bui KH, Li J, Al-Huniti N. Population pharmacokinetic modeling of quetia
 
 ### Reviewer guidance
 
-**Quetiapine apparent volume 574 L and absorption rate 0.5 h⁻¹ rely on abstract-only assumptions and unvalidated defaults.**
+**Quetiapine’s reported steady-state AUC of 3538 ng·h/mL is disputed by a second-reader value of 3087, contributing to the record’s partial agreement.**
 
-The record used summary statistics from the abstract, such as the 574 L apparent volume, instead of a fitted model. The 0.5 h⁻¹ absorption rate was taken from a ziprasidone model, and bioavailability was assumed to be unity. Covariate effects were defined but not simulated in the model. Extracted — quetiapine: V/F 574 L, kel 0.12 h(-1), AUCSS 3.54e+03 ng · h/mL, kabs 0.5 h⁻¹.
+The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader gave steady-state AUC 3087 rather than 3538 ng·h/mL and population absorption rate 1.46 rather than the recorded first-order absorption rate 0.5 h⁻¹; cross-reader agreement was 0.333, below 0.5. Only the abstract was read, so reported summary statistics stood in for a fitted model; Tlag was defaulted, and the apparent parameterization assumed F=1 and Fm=1. Extracted — quetiapine: V/F 574 L, kel 0.12 h(-1), AUCSS 3.54e+03 ng · h/mL, kabs 0.5 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution: this record has none, the second reading 574; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -143,16 +143,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
-| T3_output_variable |  | pass | C_central (measured=quetiapine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable |  | pass | C_central (measured=quetiapine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

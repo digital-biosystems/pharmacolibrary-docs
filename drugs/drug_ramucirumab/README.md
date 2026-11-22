@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;ramucirumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ramucirumab_Marachelian2016_reference&quot;,&quot;label&quot;:&quot;Marachelian_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ramucirumab_OBrien2017_reference&quot;,&quot;label&quot;:&quot;OBrien_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ramucirumab_Marachelian2016_reference&quot;,&quot;label&quot;:&quot;Marachelian_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ramucirumab_OBrien2017_reference&quot;,&quot;label&quot;:&quot;OBrien_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ramucirumab
 
@@ -16,13 +16,13 @@ Ramucirumab is a monoclonal antibody used to treat non-small-cell lung carcinoma
 
 ## Start here
 
-> **OBrien_2017_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> cancer patients. [Run it in the simulator](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md?tab=Simulation) · [record](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md)
+> **Marachelian_2016_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md?tab=Simulation) · [record](drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">OBrien_2017 · CL</text><circle cx="249.6" cy="30.0" r="4" fill="#78909c"><title>OBrien_2017 · CL: 0.0148 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kaneko_2023 · CL</text><circle cx="295.4" cy="46.0" r="4" fill="#ef6c00"><title>Kaneko_2023 · CL: 0.02 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Marachelian_2016 · CL</text><circle cx="349.0" cy="62.0" r="4" fill="#78909c"><title>Marachelian_2016 · CL: 0.02846 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Marachelian_2016 · V1</text><circle cx="244.4" cy="30.0" r="4" fill="#78909c"><title>Marachelian_2016 · V1: 1.43 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">OBrien_2017 · V1</text><circle cx="369.6" cy="46.0" r="4" fill="#78909c"><title>OBrien_2017 · V1: 3.26 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">OBrien_2017 · CL</text><circle cx="249.6" cy="30.0" r="4" fill="#ef6c00"><title>OBrien_2017 · CL: 0.0148 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kaneko_2023 · CL</text><circle cx="295.4" cy="46.0" r="4" fill="#ef6c00"><title>Kaneko_2023 · CL: 0.02 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Marachelian_2016 · CL</text><circle cx="349.0" cy="62.0" r="4" fill="#78909c"><title>Marachelian_2016 · CL: 0.02846 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Marachelian_2016 · V1</text><circle cx="244.4" cy="30.0" r="4" fill="#78909c"><title>Marachelian_2016 · V1: 1.43 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">OBrien_2017 · V1</text><circle cx="369.6" cy="46.0" r="4" fill="#ef6c00"><title>OBrien_2017 · V1: 3.26 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -31,17 +31,8 @@ Ramucirumab is a monoclonal antibody used to treat non-small-cell lung carcinoma
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Marachelian_2016_reference](drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Marachelian A et al., Comparative pharmacokinetics, safety, a…, Cancer chemotherapy and pha… (2016) | [10.1007/s00280-015-2955-9](https://doi.org/10.1007/s00280-015-2955-9) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [OBrien_2017_reference](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+2 cov.) | O'Brien L et al., Population pharmacokinetic meta-analysi…, British journal of clinical… (2017) | [10.1111/bcp.13403](https://doi.org/10.1111/bcp.13403) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Kaneko_2023_reference](drugs/drug_ramucirumab/Ramucirumab_Kaneko2023_reference.md) | — | 1-compartment (no model) | 2 | Kaneko T et al., Effect of massive ascites on ramuciruma…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04568-x](https://doi.org/10.1007/s00280-023-04568-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ramucirumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: KDR (target).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [OBrien_2017_reference](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+2 cov.) | O'Brien L et al., Population pharmacokinetic meta-analysi…, British journal of clinical… (2017) | [10.1111/bcp.13403](https://doi.org/10.1111/bcp.13403) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +52,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 22 matched, 16 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

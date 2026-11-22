@@ -5,11 +5,11 @@
 
 # gabapentin — `Gabapentin_Larsen2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 15:04 UTC (Rejected), but the paper was screened again on 2026-10-07 06:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the structural check detected a dimension mismatch in a model parameter, and it relied on abstract-only summary statistics rather than fitted values.
+> Gabapentin Km unit mg/kg conflicts with dimensional mass/volume requirements for a one-compartment model.
 
-<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="true" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="false" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Larsen MS, Keizer R, Munro G, Mørk A, Holm R, Savic R et al. Pharmacokinetic/Pharmacodynamic Relationship of Gabapentin in a CFA-induced Inflammatory Hyperalgesia Rat Model. Pharmaceutical research 33(5):1133–1143 (2016).
@@ -41,7 +41,7 @@ Larsen MS, Keizer R, Munro G, Mørk A, Holm R, Savic R et al. Pharmacokinetic/Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Larsen MS, Keizer R, Munro G, Mørk A, Holm R, Savic R et al. Pharmacokinetic/Ph
 
 ### Reviewer guidance
 
-**The record was rejected because the structural check detected a dimension mismatch in a model parameter, and it relied on abstract-only summary statistics rather than fitted values.**
+**Gabapentin Km unit mg/kg conflicts with dimensional mass/volume requirements for a one-compartment model.**
 
-The rejection was triggered by a dimension mismatch on a structural parameter, though the specific parameter causing the error is not identified in the findings. The record was derived solely from the abstract of the Larsen_2016 paper, meaning the reported statistics for gabapentin in rats stand in for a fitted model. Additionally, a second reader disagreed with the extraction of values for clearance, Km, Vmax, absorption rate, and lag time, noting them as null. Extracted — gabapentin: Km 44.1 mg/kg, Vmax 41.9 mg/h∙kg, CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
+The parameter Km is assigned 44.1 mg/kg, creating a dimension mismatch between mass and mass-per-volume. Additionally, the source text is abstract-only, meaning summary statistics substitute for fitted model parameters. A second reader failed to extract values for CL, kabs, and tlag. Extracted — gabapentin: Km 44.1 mg/kg, Vmax 41.9 mg/h∙kg, CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 160.67, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

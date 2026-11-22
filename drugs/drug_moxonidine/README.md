@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;moxonidine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxonidine_Hempel1998_reference&quot;,&quot;label&quot;:&quot;Hempel_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bohmann_1994_S_I_outflow&quot;,&quot;label&quot;:&quot;Bohmann_1994 \u00b7 S-I outflow&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Bohmann_1994_S_I_outflow.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hempel_1998_DBP&quot;,&quot;label&quot;:&quot;Hempel_1998 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Hempel_1998_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Troc_niz_2000_DBP&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Troc_niz_2000_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxonidine_Hempel1998_reference&quot;,&quot;label&quot;:&quot;Hempel_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bohmann_1994_S_I_outflow&quot;,&quot;label&quot;:&quot;Bohmann_1994 \u00b7 S-I outflow&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Bohmann_1994_S_I_outflow.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hempel_1998_DBP&quot;,&quot;label&quot;:&quot;Hempel_1998 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Hempel_1998_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Troc_niz_2000_DBP&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxonidine/pd_Troc_niz_2000_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # moxonidine
 
@@ -25,7 +25,7 @@ Moxonidine is an imidazoline receptor agonist antihypertensive used to treat mil
 
 ## Start here
 
-> **Hempel_1998_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with hypertension. [Run it in the simulator](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md?tab=Simulation) · [record](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md)
+> **Hempel_1998_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with hypertension. [Run it in the simulator](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md?tab=Simulation) · [record](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Moxonidine is an imidazoline receptor agonist antihypertensive used to treat mil
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Hempel_1998_reference](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hempel G et al., Population pharmacokinetic-pharmacodyna…, Clinical pharmacology and t… (1998) | [10.1016/S0009-9236(98)90053-4](https://doi.org/10.1016/S0009-9236(98)90053-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Hempel_1998_reference](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hempel G et al., Population pharmacokinetic-pharmacodyna…, Clinical pharmacology and t… (1998) | [10.1016/S0009-9236(98)90053-4](https://doi.org/10.1016/S0009-9236(98)90053-4) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,18 +43,6 @@ Moxonidine is an imidazoline receptor agonist antihypertensive used to treat mil
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bohmann_1994_S_I_outflow](drugs/drug_moxonidine/pd_Bohmann_1994_S_I_outflow.md) | stimulation induced (S-I) outflow of radioactivity ← moxonidine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Bohmann C et al., Effects of imidazolines on noradrenalin…, Naunyn-Schmiedeberg's archi… (1994) | [10.1007/BF00169827](https://doi.org/10.1007/BF00169827) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hempel_1998_DBP](drugs/drug_moxonidine/pd_Hempel_1998_DBP.md) | diastolic blood pressure ← moxonidine · delayed effect through an effect compartment | ▶ model + simulator | Hempel G et al., Population pharmacokinetic-pharmacodyna…, Clinical pharmacology and t… (1998) | [10.1016/S0009-9236(98)90053-4](https://doi.org/10.1016/S0009-9236(98)90053-4) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Trocóniz_2000_DBP](drugs/drug_moxonidine/pd_Troc_niz_2000_DBP.md) | 24-hour ambulatory diastolic blood pressure ← moxonidine · delayed effect through an effect compartment | ▶ model + simulator | Trocóniz IF et al., Comparison of manual versus ambulatory…, Clinical pharmacology and t… (2000) | [10.1067/mcp.2000.106907](https://doi.org/10.1067/mcp.2000.106907) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=moxonidine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ADRA2A (target), ADRA2B (inhibitor), ADRA2C (inhibitor), NISCH (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -68,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 12:37 | 1:36 | 1/0/0 | 3/0/0 | 0/0/0 | 27,189/2,699 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 12:37 | 1:36 | 1/0/0 | 4/0/0 | 0/0/0 | 27,189/2,699 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 21 matched, 21 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

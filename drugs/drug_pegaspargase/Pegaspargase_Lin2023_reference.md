@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;pegaspargase&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/&quot;},{&quot;label&quot;:&quot;Lin_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegaspargase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegaspargase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pegaspargase clearance and volume values are physiologically implausible, indicating a unit or scale extraction error.
+> Rejected because the extracted pegaspargase clearance of 146.0 mL/h falls outside the physiological window, indicating a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="pegaspargase" model-id="Pegaspargase_Lin2023_reference" status="rejected" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="1C"></div>
 
@@ -36,7 +36,7 @@ Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmaco
 
 ### Reviewer guidance
 
-**Pegaspargase clearance and volume values are physiologically implausible, indicating a unit or scale extraction error.**
+**Rejected because the extracted pegaspargase clearance of 146.0 mL/h falls outside the physiological window, indicating a unit or scale extraction error.**
 
-The extracted clearance is 146.0 mL/h and central volume is 445.0 mL, which are outside the physiological window for pegaspargase. These magnitudes suggest a fundamental error in unit conversion or data scaling rather than a valid pharmacokinetic estimate. Consequently, the record was rejected due to impossible parameter values. Extracted — pegaspargase: CL 146 mL/h, V1 445 mL.
+The record lists pegaspargase total clearance as 146.0 mL/h and central volume of distribution as 445.0 mL. These values failed the plausibility check due to their implausible magnitude relative to expected physiological ranges. A secondary review flagged potential inconsistencies in the specific values extracted for clearance and volume, including a second reader noting a clearance value of 1810 instead of the recorded 146.0. Extracted — pegaspargase: CL 146 mL/h, V1 445 mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 0.125, the second reading 0.125; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 1; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -74,18 +74,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q312]` | 0.125 | 0.125 | mismatch |
 | `gpt-oss-120b` | `values[Q316]` |  | 1 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q336]` |  | 1810 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q61]` |  | 445 | only_one_extracted |

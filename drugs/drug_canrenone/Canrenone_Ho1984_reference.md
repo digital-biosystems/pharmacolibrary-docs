@@ -5,11 +5,11 @@
 
 # canrenone — `Canrenone_Ho1984_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:43 UTC (Rejected), but the paper was screened again on 2026-10-06 17:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Ho1984_reference" status="needs_review" stale="true" population="young volunteers" measured-compound="canrenone" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Ho1984_reference" status="needs_review" stale="false" population="young volunteers" measured-compound="canrenone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ho PC, Bourne DW, Triggs EJ, Heazlewood V. Pharmacokinetics of canrenone and metabolites after base hydrolysis following single and multiple dose oral administration of spironolactone. European journal of clinical pharmacology 27(4):441–446 (1984).
@@ -17,7 +17,7 @@ Ho PC, Bourne DW, Triggs EJ, Heazlewood V. Pharmacokinetics of canrenone and met
 
 ## Population and dosing
 
-**Population:** young volunteers · condition healthy · age group adult · n = &gt;=8.
+**Population:** young volunteers · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed spironolactone, measured canrenone.
 
@@ -38,7 +38,7 @@ Ho PC, Bourne DW, Triggs EJ, Heazlewood V. Pharmacokinetics of canrenone and met
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Ho PC, Bourne DW, Triggs EJ, Heazlewood V. Pharmacokinetics of canrenone and met
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — canrenone: t1/2α 1.66 h, t1/2β 22.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has spironolactone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

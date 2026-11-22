@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;spiramycin&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/&quot;},{&quot;label&quot;:&quot;Elazab_2021 \u00b7 iv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spiramycin_Elazab2021_iv&quot;,&quot;label&quot;:&quot;Elazab_2021_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Spiramycin_Elazab2021_oral&quot;,&quot;label&quot;:&quot;Elazab_2021_oral&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spiramycin_Elazab2021_iv&quot;,&quot;label&quot;:&quot;Elazab_2021_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Spiramycin_Elazab2021_oral&quot;,&quot;label&quot;:&quot;Elazab_2021_oral&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # spiramycin — `Spiramycin_Elazab2021_iv`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-<div class="pk-model-meta" hidden drug="spiramycin" model-id="Spiramycin_Elazab2021_iv" status="simulated" stale="false" population="chickens" measured-compound="spiramycin" parameterization="mechanistic" topology="1C"></div>
+> The record was held for review due to a second reader dispute regarding the identity of the administered dose compound and primary analyte for spiramycin.
+
+<div class="pk-model-meta" hidden drug="spiramycin" model-id="Spiramycin_Elazab2021_iv" status="needs_review" stale="false" population="chickens" measured-compound="spiramycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmacokinetic/Pharmacodynamic Modeling of Spiramycin against. Pathogens (Basel, Switzerland) 10(10) (2021).
@@ -15,7 +17,7 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 
 ## Population and dosing
 
-**Population:** chickens · condition Mycoplasma synoviae · n = &gt;= 48.
+**Population:** chickens · condition Mycoplasma synoviae.
 
 **Dosing:** 1190 mg, intravenously (iv) or orally, single.
 
@@ -31,6 +33,8 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 <figure class="pk-models-diagram"><img src="drugs/drug_spiramycin/Spiramycin_Elazab2021_iv/Spiramycin_Elazab2021_iv.svg" alt="Spiramycin_Elazab2021_iv diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | λz (1/h) | kel | 0.22 | 1/h |
@@ -43,7 +47,7 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +57,13 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was held for review due to a second reader dispute regarding the identity of the administered dose compound and primary analyte for spiramycin.**
 
-A reported unit could not be converted (AUClast and AUC∞), so that value has no SI equivalent.
+Although the pharmacokinetic parameters for spiramycin in chickens are internally consistent, the review process flagged a disagreement on the dose compound. A second reader identified the dose compound and primary analyte as unknown, contradicting the record's assignment of spiramycin for both fields. Extracted — spiramycin: kel 0.22 1/h, t1/2z 3.97 h, AUClast 29.9 µg*h/mL, AUC∞ 30.2 µg*h/mL, V 3.3 L/kg, CL 0.68 L/h/kg, MRT 5.04 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has spiramycin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -135,15 +139,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=spiramycin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | skipped |  | 3.363 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=spiramycin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
+| T1_t_half_beta | reference | skipped |  | 3.363 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

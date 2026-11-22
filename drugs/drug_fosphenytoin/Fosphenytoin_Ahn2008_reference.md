@@ -16,7 +16,7 @@ Ahn JE, Cloyd JC, Brundage RC, Marino SE, Conway JM, Ramsay RE et al. Phenytoin 
 
 ## Population and dosing
 
-**Population:** adults and elderly patients with epilepsy · condition epilepsy · age group mixed · n = &gt;63.
+**Population:** adults and elderly patients with epilepsy · condition epilepsy · age group mixed.
 
 **Dosed compound ≠ measured compound:** dosed fosphenytoin, measured phenytoin.
 

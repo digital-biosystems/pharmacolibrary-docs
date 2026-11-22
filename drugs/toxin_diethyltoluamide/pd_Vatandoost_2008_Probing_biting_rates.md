@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Diethyltoluamide&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/&quot;},{&quot;label&quot;:&quot;Vatandoost_2008 \u00b7 PD Probing/biting rates&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diethyltoluamide_Qiu1997_reference&quot;,&quot;label&quot;:&quot;Qiu_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/Diethyltoluamide_Qiu1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diethyltoluamide_Qiu1997_reference&quot;,&quot;label&quot;:&quot;Qiu_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diethyltoluamide/Diethyltoluamide_Qiu1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Probing/biting rates — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
@@ -19,6 +19,10 @@
 **As extracted:** Diethyltoluamide (the dose) drives Probing/biting rates (the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> Topical application of diethyltoluamide reduces probing and biting rates in mosquitoes, though the specific pharmacodynamic mechanism is not defined in the provided text. The median effective dose (ED50) to inhibit this response is 0.005 mg/cm2 for field strains and 0.007 mg/cm2 for laboratory strains.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Vatandoost_2008`
 - **model family:** `unknown`

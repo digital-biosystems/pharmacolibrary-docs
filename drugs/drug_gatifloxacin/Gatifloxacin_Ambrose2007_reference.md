@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;gatifloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/&quot;},{&quot;label&quot;:&quot;Ambrose_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gatifloxacin_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gatifloxacin_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tasso_2011_bactericidal_activity&quot;,&quot;label&quot;:&quot;Tasso_2011 \u00b7 bactericidal activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/pd_Tasso_2011_bactericidal_activity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gatifloxacin_Peloquin2008_reference&quot;,&quot;label&quot;:&quot;Peloquin_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Peloquin2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gatifloxacin_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gatifloxacin_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/Gatifloxacin_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tasso_2011_bactericidal_activity&quot;,&quot;label&quot;:&quot;Tasso_2011 \u00b7 bactericidal activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gatifloxacin/pd_Tasso_2011_bactericidal_activity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gatifloxacin — `Gatifloxacin_Ambrose2007_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 15:55 UTC (Needs review), but the paper was screened again on 2026-10-13 12:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The record for gatifloxacin was quarantined because total clearance lacked an explicit value, leaving the parameter at placeholder defaults.
 
-<div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Ambrose2007_reference" status="extracted" stale="true" population="mice with B. anthracis infection" measured-compound="gatifloxacin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Ambrose2007_reference" status="model_quarantined" stale="false" population="mice with B. anthracis infection" measured-compound="gatifloxacin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Ambrose PG, Forrest A, Craig WA, Rubino CM, Bhavnani SM, Drusano GL et al. Pharmacokinetics-pharmacodynamics of gatifloxacin in a lethal murine Bacillus anthracis inhalation infection model. Antimicrobial agents and chemotherapy 51(12):4351–4355 (2007).
@@ -23,12 +23,14 @@ Ambrose PG, Forrest A, Craig WA, Rubino CM, Bhavnani SM, Drusano GL et al. Pharm
 
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 6 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | V c /F | V1/F | 0.20 | L/kg |
@@ -40,7 +42,7 @@ Ambrose PG, Forrest A, Craig WA, Rubino CM, Bhavnani SM, Drusano GL et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +52,13 @@ Ambrose PG, Forrest A, Craig WA, Rubino CM, Bhavnani SM, Drusano GL et al. Pharm
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**The record for gatifloxacin was quarantined because total clearance lacked an explicit value, leaving the parameter at placeholder defaults.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — gatifloxacin: V1/F 0.2 L/kg, V2/F 1.6 L/kg, Q/F 7.7 L/h/kg, tlag 0.23 h, t1/2z 0.6 h, kabs 0.397 h−1.
+While the record lists values for volume, intercompartmental clearance, and absorption parameters, the entry for total clearance following oral administration shows no numerical value. Consequently, no specific clearance figure was available to define the model's elimination characteristics for gatifloxacin. The model was held back to prevent publication using a generic library placeholder instead of an actual pharmacokinetic estimate. Extracted — gatifloxacin: V1/F 0.2 L/kg, V2/F 1.6 L/kg, Q/F 7.7 L/h/kg, tlag 0.23 h, t1/2z 0.6 h, kabs 0.397 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has gatifloxacin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gatifloxacin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -112,26 +114,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 
 <details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl d /f]` | 7.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl d /f]` |  | 7.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl t /f k a]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl t /f k a]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t 1/2]` | 0.60 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t 1/2]` |  | 0.60 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t lag]` | 0.23 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t lag]` |  | 0.23 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v c /f]` | 0.20 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v c /f]` |  | 0.20 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v p /f]` | 1.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v p /f]` |  | 1.6 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | gatifloxacin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | gatifloxacin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl d /f]` | 7.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl d /f]` |  | 7.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl t /f k a]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl t /f k a]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | 0.60 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` |  | 0.60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag]` | 0.23 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag]` |  | 0.23 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c /f]` | 0.20 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c /f]` |  | 0.20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p /f]` | 1.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p /f]` |  | 1.6 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | gatifloxacin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gatifloxacin | unknown | mismatch |
 
 </details>
 
@@ -158,6 +160,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q290 | pass | volume within physiological range | 14 L | ['Ambrose_2007_table_1:row2:col2'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 112 L | ['Ambrose_2007_table_1:row3:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 0.6 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 9 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

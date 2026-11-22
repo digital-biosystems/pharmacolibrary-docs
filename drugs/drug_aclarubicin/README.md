@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;aclarubicin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aclarubicin_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aclarubicin/Aclarubicin_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aclarubicin_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aclarubicin/Aclarubicin_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # aclarubicin
 
@@ -23,24 +23,12 @@ Aclarubicin is an anthracycline antineoplastic antibiotic that inhibits topoisom
 |---|---|---|---|---|---|---|
 | aclarubicin | parent | 811.878 | C42H53NO15 | DrugBank | [451415](https://pubchem.ncbi.nlm.nih.gov/compound/451415) | Geodakian_1987 |
 
-## Start here
-
-> **Liu_2026_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> review reference. [Run it in the simulator](drugs/drug_aclarubicin/Aclarubicin_Liu2026_reference.md?tab=Simulation) · [record](drugs/drug_aclarubicin/Aclarubicin_Liu2026_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Geodakian_1987 · CL</text><circle cx="311.2" cy="30.0" r="4" fill="#ef6c00"><title>Geodakian_1987 · CL: 2.22 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Liu_2026 · CL/F</text><circle cx="492.8" cy="46.0" r="4" fill="#78909c"><title>Liu_2026 · CL/F: 7.33 L/h</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Liu_2026_reference](drugs/drug_aclarubicin/Aclarubicin_Liu2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Liu Z et al., Real-World Pharmacokinetic and Exposure…, Drug design, development an… (2026) | [10.2147/dddt.s563629](https://doi.org/10.2147/dddt.s563629) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Geodakian_1987_reference](drugs/drug_aclarubicin/Aclarubicin_Geodakian1987_reference.md) | — | 1-compartment (no model) | 3 | Geodakian SV et al., [Pharmacokinetic study of aclarubicin.…, Antibiotiki i meditsinskaia… (1987) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Liu_2026_reference](drugs/drug_aclarubicin/Aclarubicin_Liu2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Liu Z et al., Real-World Pharmacokinetic and Exposure…, Drug design, development an… (2026) | [10.2147/dddt.s563629](https://doi.org/10.2147/dddt.s563629) |
 
 ## Pharmacodynamics (PD)
 
@@ -57,15 +45,6 @@ Aclarubicin is an anthracycline antineoplastic antibiotic that inhibits topoisom
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Komiyama_1983_RT](drugs/drug_aclarubicin/pd_Komiyama_1983_RT.md) | Reverse transcriptase ← Aclacinomycin A · inhibition effect | — | Komiyama T et al., Interaction of new anthracycline antibi…, Biochimica et biophysica ac… (1983) | [10.1016/0167-4781(83)90124-0](https://doi.org/10.1016/0167-4781(83)90124-0) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Komiyama_1983_RT_2](drugs/drug_aclarubicin/pd_Komiyama_1983_RT_2.md) | Reverse transcriptase with poly(rA) x d(pT)10 as template ← aclacinomycin A · inhibition effect | — | Komiyama T et al., Interaction of new anthracycline antibi…, Biochimica et biophysica ac… (1983) | [10.1016/0167-4781(83)90124-0](https://doi.org/10.1016/0167-4781(83)90124-0) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aclarubicin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: TOP2A (inhibitor), TOP2B (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -78,13 +57,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:18 | 34:10 | 2/0/0 | 6/1/0 | 0/0/0 | 639,497/88,086 | openai / gpt-6-luna | 21 | 6/7 | 20/1 | 0 |
+| 2026-10-06 16:18 | 34:10 | 1/1/0 | 6/4/0 | 0/0/0 | 639,497/88,086 | openai / gpt-6-luna | 21 | 6/7 | 20/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 83 matched, 79 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

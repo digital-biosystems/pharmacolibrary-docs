@@ -5,11 +5,11 @@
 
 # insulin (human) — `InsulinHuman_Nosadini1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-04 22:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The insulin human record was rejected because the extracted clearance value of 15.5 mL/min.kg has a dimension mismatch with the model structure.
+> Insulin human clearance 15.5 mL/min.kg conflicts with the required volumetric flow dimension.
 
-<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Nosadini1988_reference" status="rejected" stale="true" population="normal and insulin-dependent diabetic subjects" measured-compound="insulin_human" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Nosadini1988_reference" status="rejected" stale="false" population="normal and insulin-dependent diabetic subjects" measured-compound="insulin_human" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nosadini R, De Kreutzenberg S, Duner E, Iori E, Avogaro A, Trevisan R et al. Porcine and human insulin absorption from subcutaneous tissues in normal and insulin-dependent diabetic subjects: a deconvolution-based approach. The Journal of clinical endocrinology and metabolism 67(3):551–559 (1988).
@@ -36,7 +36,7 @@ Nosadini R, De Kreutzenberg S, Duner E, Iori E, Avogaro A, Trevisan R et al. Por
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Nosadini R, De Kreutzenberg S, Duner E, Iori E, Avogaro A, Trevisan R et al. Por
 
 ### Reviewer guidance
 
-**The insulin human record was rejected because the extracted clearance value of 15.5 mL/min.kg has a dimension mismatch with the model structure.**
+**Insulin human clearance 15.5 mL/min.kg conflicts with the required volumetric flow dimension.**
 
-The record relies on abstract-only summary statistics rather than fitted model parameters. The extracted clearance value of 15.5 mL/min.kg was identified as having a dimension mismatch with the structural parameters. A second reader disagreed on the identification of the dose compound and primary analyte as insulin human. Extracted — insulin human: CL 15.5 mL/min.kg, Fab 55 %.
+The record uses summary statistics from the abstract rather than a fitted model. A second reader could not independently identify the dose compound or the specific parameter values for clearance and bioavailability. Extracted — insulin human: CL 15.5 mL/min.kg, Fab 55 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has insulin_human, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_human, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,18 +87,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[bioavailability]` | 55 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` |  | 55 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean plasma insulin clearance rate]` |  | 15.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean plasma insulin clearance rates]` | 15.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | insulin_human | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | insulin_human | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 55 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` |  | 55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma insulin clearance rate]` |  | 15.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma insulin clearance rates]` | 15.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | insulin_human | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | insulin_human | unknown | mismatch |
 
 </details>
 

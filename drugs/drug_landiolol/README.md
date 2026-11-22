@@ -25,7 +25,7 @@ Landiolol is a beta blocker used to control fast heart rhythms like atrial fibri
 
 ## Start here
 
-> **Kunisawa_2015_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> gynecologic patients, n = &gt;=9. [Run it in the simulator](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md?tab=Simulation) · [record](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md)
+> **Kunisawa_2015_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> gynecologic patients. [Run it in the simulator](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md?tab=Simulation) · [record](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -42,20 +42,6 @@ Landiolol is a beta blocker used to control fast heart rhythms like atrial fibri
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub> | [Kunisawa_2015_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesthesia (2015) | [10.1007/s00540-014-1908-5](https://doi.org/10.1007/s00540-014-1908-5) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub> | [Kunisawa_2015_2_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Kunisawa T et al., Target-controlled infusion and populati…, Therapeutics and clinical r… (2015) | [10.2147/TCRM.S74867](https://doi.org/10.2147/TCRM.S74867) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Honda_2008_reference](drugs/drug_landiolol/Landiolol_Honda2008_reference.md) | — | 1-compartment (no model) | 0 | Honda N et al., Population pharmacokinetics of landiolo…, Drug metabolism and pharmac… (2008) | [10.2133/dmpk.23.447](https://doi.org/10.2133/dmpk.23.447) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=landiolol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | `BCHE` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `BCHE` substrate, `CES2` substrate, `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CES2` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

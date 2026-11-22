@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;Arginine&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/&quot;},{&quot;label&quot;:&quot;Henninger_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Arginine — `Arginine_Henninger2026_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 15:47 UTC (Needs review), but the paper was screened again on 2026-10-05 23:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Record rejected because the paper studies DNDI-6148, not arginine, which is only a co-medication.
 
-<div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Henninger2026_reference" status="extracted" stale="true" population="" measured-compound="arginine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Henninger2026_reference" status="rejected" stale="false" population="" measured-compound="arginine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Henninger RH, Schouten WM, Arana B, Gillon JY, Mowbray CE, Kratz JM et al. Translational Pharmacokinetic-Pharmacodynamic Modeling and Efficacious Human Dose Prediction of DNDI-6148 for the Treatment of Cutaneous Leishmaniasis. Clinical and translational science 19(4):e70535 (2026).
@@ -31,6 +31,8 @@ Henninger RH, Schouten WM, Arana B, Gillon JY, Mowbray CE, Kratz JM et al. Trans
 <figure class="pk-models-diagram"><img src="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference.svg" alt="Arginine_Henninger2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | total CL | CL | 3.44 | L/h |
@@ -39,7 +41,7 @@ Henninger RH, Schouten WM, Arana B, Gillon JY, Mowbray CE, Kratz JM et al. Trans
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.0), gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by glm-5.3-flash (partly confirmed, agreement 0.077), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +51,13 @@ Henninger RH, Schouten WM, Arana B, Gillon JY, Mowbray CE, Kratz JM et al. Trans
 
 ### Reviewer guidance
 
-**F use library defaults, not estimates from this paper; t6_deviations.**
+**Record rejected because the paper studies DNDI-6148, not arginine, which is only a co-medication.**
 
-These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — arginine: CL 3.44 L/h, V 79.5 L, kabs 0.36 h−1.
+The source paper investigates the pharmacokinetics of DNDI-6148, a benzoxaborole derivative, rather than the amino acid arginine. Arginine appears only as a co-medication or covariate in the study context, not as the primary analyte. Additionally, the model builder defaulted parameters for F and Tlag, and a second reader disagreed on multiple extracted values. Extracted — arginine: CL 3.44 L/h, V 79.5 L, kabs 0.36 h−1.
 
-A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q1: this record has 8000, the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q1: this record has 8000, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -81,15 +83,15 @@ A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parame
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | not confirmed | 0.0 (0/13 fields) | 13 |
-| `gpt-oss:120b` | no answer | – | – (extracted nothing for this record) |
+| `glm-5.3-flash` | partly confirmed | 0.077 (1/13 fields) | 12 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -102,7 +104,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `glm-5.3-flash` | `values[Q321]` | 165 |  | only_one_extracted |
 | `glm-5.3-flash` | `values[Q324]` | 8.01 |  | only_one_extracted |
 | `glm-5.3-flash` | `values[Q367]` | 65.4 |  | only_one_extracted |
-| `glm-5.3-flash` | `values[Q46]` | 6.6 | 6.6 | mismatch |
 | `glm-5.3-flash` | `values[Q49]` | 0.36 |  | only_one_extracted |
 | `glm-5.3-flash` | `values[Q61]` | 79.5 |  | only_one_extracted |
 | `glm-5.3-flash` | `values[Q87]` | 79.1 |  | only_one_extracted |
@@ -132,14 +133,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=arginine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | arginine (or metabolite) | paper about another drug |  | paper subject is not arginine: the paper is about another drug; this one is a co-medication or covariate: The study investigates the pharmacokinetics of DNDI-6148 (a benzoxaborole derivative), not the amino acid arginine, which is only mentioned as the salt form (ar |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=arginine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.077, 0 of 1 reader(s) agree | 0.077 | cross-check agreement 0.077 is below 0.5: verdict partial, agreement 0.077, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,61 +153,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_modelica.zip" download>Arginine_Henninger2026_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_fmi.zip" download>Arginine_Henninger2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_matlab.zip" download>Arginine_Henninger2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_matlab_simbio.zip" download>Arginine_Henninger2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_sbml.zip" download>Arginine_Henninger2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_cellml.zip" download>Arginine_Henninger2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.1742 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 9.556e-07 | m3/s |
-| input | model | `VdPerKg` | 0.001136 | m3/kg |
-| input | model | `ka` | 0.0001 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Henninger RH, Schouten WM, Arana B, Gillon JY, Mowbray CE, Kratz JM et al. Translational Pharmacokinetic-Pharmacodynamic Modeling and Efficacious Human Dose Prediction of DNDI-6148 for the Treatment of Cutaneous Leishmaniasis. Clinical and translational science 19(4):e70535 (2026). [doi:10.1111/cts.70535](https://doi.org/10.1111/cts.70535)
-
-**This record:** Pharmacolibrary, model `Arginine_Henninger2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_arginine/Arginine_Henninger2026_reference>
-
-```bibtex
-@misc{pharmacolibrary_ArginineHenninger2026reference,
-  title  = {{Pharmacolibrary model Arginine_Henninger2026_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_arginine/Arginine_Henninger2026_reference},
-  note   = {Parameters from doi:10.1111/cts.70535},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

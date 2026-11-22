@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;aflibercept&quot;,&quot;href&quot;:&quot;drugs/drug_aflibercept/&quot;},{&quot;label&quot;:&quot;Luaces-Rodr\u00edguez_2020 \u00b7 89_zr_bevacizumab_89_zr_aflibercept&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aflibercept_Thai2013_reference&quot;,&quot;label&quot;:&quot;Thai_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aflibercept/Aflibercept_Thai2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aflibercept_Thai2013_reference&quot;,&quot;label&quot;:&quot;Thai_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aflibercept/Aflibercept_Thai2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # aflibercept — `Aflibercept_LuacesRodrguez2020_89_zr_bevacizumab_89_zr_aflib`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 15:02 UTC (Rejected), but the paper was screened again on 2026-10-07 21:50 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Aflibercept clearance and volume were rejected because reported units could not be converted to standard units, causing magnitude and dimension errors.
+> The record is rejected because the reported ocular clearance unit µL/day is not recognized, leaving the parameter value without a standard unit.
 
-<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_LuacesRodrguez2020_89_zr_bevacizumab_89_zr_aflib" status="rejected" stale="true" population="rats" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_LuacesRodrguez2020_89_zr_bevacizumab_89_zr_aflib" status="rejected" stale="false" population="rats" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Luaces-Rodríguez A, Del Amo EM, Mondelo-García C, Gómez-Lado N, Gonzalez F, Ruibal Á et al. PET study of ocular and blood pharmacokinetics of intravitreal bevacizumab and aflibercept in rats. European journal of pharmaceutics and biopharmaceutics : official journal of Arbeitsgemeinschaft fur Pharmazeutische Verfahrenstechnik e.V 154:330–337 (2020).
@@ -17,7 +17,7 @@ Luaces-Rodríguez A, Del Amo EM, Mondelo-García C, Gómez-Lado N, Gonzalez F, R
 
 ## Population and dosing
 
-**Population:** rats · condition healthy · n = , 3.
+**Population:** rats · condition healthy.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -45,7 +45,7 @@ Luaces-Rodríguez A, Del Amo EM, Mondelo-García C, Gómez-Lado N, Gonzalez F, R
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Luaces-Rodríguez A, Del Amo EM, Mondelo-García C, Gómez-Lado N, Gonzalez F, R
 
 ### Reviewer guidance
 
-**Aflibercept clearance and volume were rejected because reported units could not be converted to standard units, causing magnitude and dimension errors.**
+**The record is rejected because the reported ocular clearance unit µL/day is not recognized, leaving the parameter value without a standard unit.**
 
-The clearance of 49.35 µL/day and volume of 58.71 mL failed physiological plausibility checks. A reported unit was not recognized by the system, preventing conversion to SI units for validation. Additionally, the model was flagged for a structural dimension mismatch. Extracted — aflibercept: λ1 1.05 day -1, λ1 8.22 day -1, kel 0.56 day -1, t1/2α 0.68 day, t1/2α 0.08 day, t1/2β 1.29 day, AUC∞ 138, CL 49.4 µL•day -1, … (+1).
+The ocular clearance of 49.35 µL•day⁻¹ could not be converted to SI units, causing the magnitude check to fail. Additionally, the fast distribution phase parameters λ1 and t1/2α contain duplicate entries with conflicting values (1.05 vs 8.22, 0.68 vs 0.08). The second reader did not recognize the dose compound or the primary analyte, leaving these fields unresolved. Extracted — aflibercept: λ1 1.05 day -1, λ1 8.22 day -1, kel 0.56 day -1, t1/2α 0.68 day, t1/2α 0.08 day, t1/2β 1.29 day, AUC∞ 138, CL 49.4 µL•day -1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aflibercept, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

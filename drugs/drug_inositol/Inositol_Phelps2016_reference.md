@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;inositol&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/&quot;},{&quot;label&quot;:&quot;Phelps_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2016_reference&quot;,&quot;label&quot;:&quot;Phelps_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Taghizadeh_2022_IP1&quot;,&quot;label&quot;:&quot;Taghizadeh_2022 \u00b7 IP1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/pd_Taghizadeh_2022_IP1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2016_reference&quot;,&quot;label&quot;:&quot;Phelps_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Taghizadeh_2022_IP1&quot;,&quot;label&quot;:&quot;Taghizadeh_2022 \u00b7 IP1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/pd_Taghizadeh_2022_IP1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # inositol — `Inositol_Phelps2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Phelps2016_reference" status="curated_candidate" stale="false" population="preterm infants" measured-compound="inositol" parameterization="mechanistic" topology="1C"></div>
+> The inositol record was held because the standard error unit for endogenous concentration cannot be converted to SI, blocking parameter standardization.
+
+<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Phelps2016_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="inositol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Phelps DL, Ward RM, Williams RL, Nolen TL, Watterberg KL, Oh W et al. Safety and pharmacokinetics of multiple dose myo-inositol in preterm infants. Pediatric research 80(2):209–217 (2016).
@@ -29,6 +31,8 @@ Phelps DL, Ward RM, Williams RL, Nolen TL, Watterberg KL, Oh W et al. Safety and
 <figure class="pk-models-diagram"><img src="drugs/drug_inositol/Inositol_Phelps2016_reference/Inositol_Phelps2016_reference.svg" alt="Inositol_Phelps2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | V – volume | V | 0.5610 | L/kg | 0.0345 |
@@ -40,7 +44,7 @@ Phelps DL, Ward RM, Williams RL, Nolen TL, Watterberg KL, Oh W et al. Safety and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.882). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.882). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +54,13 @@ Phelps DL, Ward RM, Williams RL, Nolen TL, Watterberg KL, Oh W et al. Safety and
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The inositol record was held because the standard error unit for endogenous concentration cannot be converted to SI, blocking parameter standardization.**
 
-A reported unit could not be converted (R1 and equation variable), so that value has no SI equivalent.
+The reported unit for the endogenous concentration parameter is labeled 'Standard Error,' which is not a physical unit convertible to SI units. Consequently, the model builder received this parameter without a standardized value. A second reader also disagreed on the specific isomer identity and the parameter identifier for the endogenous concentration, leaving the record's validity unconfirmed. Extracted — inositol: V 0.561 L/kg, CL 0.0616 L/kg/hr, R1 2.45 mg/kg/hr, kel 0.11 1/hr, t1/2z 6.31 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has inositol, the second reading myo-Inositol; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -161,6 +165,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.882, 0 of 1 reader(s) agree | 0.882 | cross-check disputed by a second reader: verdict disputed, agreement 0.882, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | pass | 5.22 | 6.313 | 1.209 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 7.9 | 6.313 | 0.7991 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 6.31 | 6.313 | 1 | hr→SI vs simulated h |

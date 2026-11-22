@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record identifies hydrogen fluoride as the driver for repeated trouble with breathing but does not specify a pharmacodynamic mechanism or kinetic parameters, and the paper excerpts are unavailable.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `van_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Loisios-Konstantinidis_2020_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_LoisiosKonstantinidis2020v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:08 UTC (Needs review), but the paper was screened again on 2026-10-07 14:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Km, CLint and CL/F have no unit.
+> Km, CLint and CL/F have no unit.
 
-<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_LoisiosKonstantinidis2020v2_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="flurbiprofen" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_LoisiosKonstantinidis2020v2_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="flurbiprofen" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Loisios-Konstantinidis I, Cristofoletti R, Jamei M, Turner D, Dressman J. Physiologically Based Pharmacokinetic/Pharmacodynamic Modeling to Predict the Impact of CYP2C9 Genetic Polymorphisms, Co-Medication and Formulation on the Pharmacokinetics and Pharmacodynamics of Flurbiprofen. Pharmaceutics 12(11) (2020).
@@ -59,7 +59,7 @@ Loisios-Konstantinidis I, Cristofoletti R, Jamei M, Turner D, Dressman J. Physio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

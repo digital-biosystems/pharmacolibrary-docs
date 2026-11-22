@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Praziquantel record omitted the two central-peripheral transfer rate constants and assumed bioavailability of one.
+> The model record lacks explicit estimates for the peripheral transfer rate constants k12 and k21, preventing full parameter coverage for the two-compartment praziquantel model.
 
 <div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bustinduy2016_mean" status="needs_review" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 
 ### Reviewer guidance
 
-**Praziquantel record omitted the two central-peripheral transfer rate constants and assumed bioavailability of one.**
+**The model record lacks explicit estimates for the peripheral transfer rate constants k12 and k21, preventing full parameter coverage for the two-compartment praziquantel model.**
 
-The parameter coverage check confirmed that k12 (25.90 h−1) and k21 (33.30 h−1) were neither emitted nor defaulted. The model builder also substituted an apparent assumption of F=1 and Fm=1 rather than using explicit estimates. These deviations led to the record being held back for further review. Extracted — praziquantel: kabs 14.9 h−1, CL/F 608 liter/h, V/F 474 liter, k12 25.9 h−1, k21 33.3 h−1, tlag 1.94 h.
+The extraction process identified six required parameters, but only four were successfully covered in the final model record. Specifically, the first-order transfer rate constants from central to peripheral (k12, 25.90 h−1) and peripheral to central (k21, 33.30 h−1) were neither emitted nor included in the defaulted list. Consequently, the model's peripheral compartment dynamics are unsupported by explicit values in the record, resulting in a partial parameter coverage failure. Extracted — praziquantel: kabs 14.9 h−1, CL/F 608 liter/h, V/F 474 liter, k12 25.9 h−1, k21 33.3 h−1, tlag 1.94 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -133,16 +133,17 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=praziquantel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['k12', 'k21'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped |  | 0.3598 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=praziquantel) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21'] |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 0.3598 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

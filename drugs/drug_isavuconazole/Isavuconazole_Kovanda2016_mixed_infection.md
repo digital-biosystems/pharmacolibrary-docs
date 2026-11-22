@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption parameters ka and Tlag lack values from the paper, so library placeholders were used, invalidating the oral bioavailability parameterization for isavuconazole.
+> Isavuconazole absorption rate constants and lag time were set to library placeholders instead of using values from the study.
 
 <div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Kovanda2016_mixed_infection" status="needs_review" stale="false" population="patients with invasive fungal disease" measured-compound="isavuconazole" parameterization="apparent" topology="1C"></div>
 
@@ -53,9 +53,9 @@ Kovanda LL, Desai AV, Lu Q, Townsend RW, Akhtar S, Bonate P et al. Isavuconazole
 
 ### Reviewer guidance
 
-**Absorption parameters ka and Tlag lack values from the paper, so library placeholders were used, invalidating the oral bioavailability parameterization for isavuconazole.**
+**Isavuconazole absorption rate constants and lag time were set to library placeholders instead of using values from the study.**
 
-The record assumes 97.7% absolute bioavailability but provides no explicit absorption rate constant or lag time. Because these parameters were not extracted, generic library values substituted for the missing data. This creates an unsupported link between the oral dose and the central compartment, leaving the apparent clearance and volume estimates without a justified input rate mechanism. Extracted — isavuconazole: CLm/F 3.2 L/h, V 390 L, Fab 97.7.
+The record lists ka and Tlag as defaulted parameters in the model builder's deviations. These absorption kinetics were not reported in the source, so library placeholders are used rather than estimates. This leaves the absorption phase of the simulated profile unsupported by the available data. Extracted — isavuconazole: CLm/F 3.2 L/h, V 390 L, Fab 97.7.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -137,15 +137,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=isavuconazole) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | D1: not acceptable; D3: not acceptable; D4: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=isavuconazole) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

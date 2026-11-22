@@ -4,11 +4,11 @@
 
 # cefpiramide — `Cefpiramide_Conte1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:46 UTC (Rejected), but the paper was screened again on 2026-10-07 11:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="cefpiramide" model-id="Cefpiramide_Conte1987_reference" status="needs_review" stale="true" population="volunteers with normal or impaired renal function" measured-compound="cefpiramide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefpiramide" model-id="Cefpiramide_Conte1987_reference" status="needs_review" stale="false" population="volunteers with normal or impaired renal function" measured-compound="cefpiramide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Conte JE. Pharmacokinetics of cefpiramide in volunteers with normal or impaired renal function. Antimicrobial agents and chemotherapy 31(10):1585–1588 (1987).
@@ -16,7 +16,7 @@ Conte JE. Pharmacokinetics of cefpiramide in volunteers with normal or impaired 
 
 ## Population and dosing
 
-**Population:** volunteers with normal or impaired renal function · condition renal impairment · age group adult · n = &gt;$30$.
+**Population:** volunteers with normal or impaired renal function · condition renal impairment · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Conte JE. Pharmacokinetics of cefpiramide in volunteers with normal or impaired 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Conte JE. Pharmacokinetics of cefpiramide in volunteers with normal or impaired 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefpiramide: t1/2z 5.41 h, fu 93 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cefpiramide concentration: this record has none, the second reading 304.4; it also differs on 7 more fields. That field does not shape the model.
 

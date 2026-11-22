@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Landiolol model coverage is incomplete because the absorption lag time parameter was not emitted or defaulted.
+> The absorption lag time for landiolol was not extracted, and a second reader disputed the dose compound identification.
 
 <div class="pk-model-meta" hidden drug="landiolol" model-id="Landiolol_Kunisawa2015v2_reference" status="needs_review" stale="false" population="patients with peripheral arterial disease" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Kunisawa T, Yamagishi A, Suno M, Nakade S, Honda N, Kurosawa A et al. Target-con
 
 ## Population and dosing
 
-**Population:** patients with peripheral arterial disease · condition peripheral arterial disease · age group adult · n = &gt;=8.
+**Population:** patients with peripheral arterial disease · condition peripheral arterial disease · age group adult.
 
 ## Model
 
@@ -51,9 +51,9 @@ Kunisawa T, Yamagishi A, Suno M, Nakade S, Honda N, Kurosawa A et al. Target-con
 
 ### Reviewer guidance
 
-**Landiolol model coverage is incomplete because the absorption lag time parameter was not emitted or defaulted.**
+**The absorption lag time for landiolol was not extracted, and a second reader disputed the dose compound identification.**
 
-The review required five parameters, but only four were covered because the absorption lag time was neither extracted nor assigned a default value. A second reader disagreed on the identified dose compound, suggesting the specific salt form or analytical identity might be uncertain, potentially affecting the extraction of associated parameters. Extracted — landiolol: CL 36.6 ml/min/kg, V1 101 ml/kg, Q 16.1 ml/min/kg, V2 55.6 ml/kg, tlag 0.82 min.
+The record lists a typical absorption lag time of 0.820 min for landiolol, but the model coverage check found this parameter was neither emitted nor defaulted. Additionally, a second reader disagreed with the identified dose compound, suggesting landiolol hydrochloride rather than landiolol, resulting in a disputed verdict with 0 of 1 readers agreeing. Extracted — landiolol: CL 36.6 ml/min/kg, V1 101 ml/kg, Q 16.1 ml/min/kg, V2 55.6 ml/kg, tlag 0.82 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has landiolol, the second reading landiolol hydrochloride. That field shapes the model, so the record is marked disputed.
 
@@ -129,14 +129,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=landiolol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=landiolol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | cross-check disputed by a second reader: verdict disputed, agreement 0.889, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

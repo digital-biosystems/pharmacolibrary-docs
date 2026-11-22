@@ -16,7 +16,7 @@ Bohanec Grabar P, Grabnar I, Rozman B, Logar D, Tomsic M, Suput D et al. Investi
 
 ## Population and dosing
 
-**Population:** patients with rheumatoid arthritis · condition rheumatoid arthritis · age group adult · n = # The study included 67 patients with RA and 4 patients with polyarthritis resembling RA and psoriasis.
+**Population:** patients with rheumatoid arthritis · condition rheumatoid arthritis · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed leflunomide, measured A77 1726.
 

@@ -154,30 +154,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_flunitrazepam/Flunitrazepam_Luurila1996_reference/Flunitrazepam_Luurila1996_reference_matlab.zip" download>Flunitrazepam_Luurila1996_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_flunitrazepam/Flunitrazepam_Luurila1996_reference/Flunitrazepam_Luurila1996_reference_sbml.zip" download>Flunitrazepam_Luurila1996_reference_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_flunitrazepam/Flunitrazepam_Luurila1996_reference/Flunitrazepam_Luurila1996_reference_cellml.zip" download>Flunitrazepam_Luurila1996_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Luurila H, Olkkola KT, Neuvonen PJ. Interaction between erythromycin and the benzodiazepines diazepam and flunitrazepam. Pharmacology & toxicology 78(2):117–122 (1996). [doi:10.1111/j.1600-0773.1996.tb00191.x](https://doi.org/10.1111/j.1600-0773.1996.tb00191.x)
-
-**This record:** Pharmacolibrary, model `Flunitrazepam_Luurila1996_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_flunitrazepam/Flunitrazepam_Luurila1996_reference>
-
-```bibtex
-@misc{pharmacolibrary_FlunitrazepamLuurila1996reference,
-  title  = {{Pharmacolibrary model Flunitrazepam_Luurila1996_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_flunitrazepam/Flunitrazepam_Luurila1996_reference},
-  note   = {Parameters from doi:10.1111/j.1600-0773.1996.tb00191.x},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

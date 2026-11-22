@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;methylene blue&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethyleneBlue_Bonak2026_reference&quot;,&quot;label&quot;:&quot;Bo\u015fnak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethyleneBlue_Bonak2026_reference&quot;,&quot;label&quot;:&quot;Bo\u015fnak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # methylene blue
 
@@ -29,46 +29,13 @@ Other clinical applications of methylene blue include improvement of hypotension
 |---|---|---|---|---|---|---|
 | methylene blue (methylene_blue) | parent | 319.85 | C16H18ClN3S | DrugBank | [6099](https://pubchem.ncbi.nlm.nih.gov/compound/6099) | Milani_1992 |
 
-## Start here
-
-> **Boşnak_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md?tab=Simulation) · [record](drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Milani_1992 · CL</text><circle cx="344.9" cy="30.0" r="4" fill="#ef6c00"><title>Milani_1992 · CL: 0.768 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Boşnak_2026 · CL/F</text><circle cx="483.7" cy="46.0" r="4" fill="#ef6c00"><title>Boşnak_2026 · CL/F: 4.77 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Milani_1992 · V</text><circle cx="339.0" cy="30.0" r="4" fill="#ef6c00"><title>Milani_1992 · V: 7.1 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Boşnak_2026 · V/F</text><circle cx="538.1" cy="46.0" r="4" fill="#ef6c00"><title>Boşnak_2026 · V/F: 97.57 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Boşnak_2026_reference](drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Boşnak C et al., Determinants of levofloxacin prophylaxi…, The Journal of antimicrobia… (2026) | [10.1093/jac/dkag284](https://doi.org/10.1093/jac/dkag284) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub> | [Milani_1992_reference](drugs/drug_methylene_blue/MethyleneBlue_Milani1992_reference.md) | — | 1-compartment (no model) | 3 | Milani A et al., Ascites dynamics in cirrhosis. Proposal…, Journal of hepatology (1992) | [10.1016/s0168-8278(05)80672-5](https://doi.org/10.1016/s0168-8278(05)80672-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Boşnak_2026_reference](drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Boşnak C et al., Determinants of levofloxacin prophylaxi…, The Journal of antimicrobia… (2026) | [10.1093/jac/dkag284](https://doi.org/10.1093/jac/dkag284) |
 | <span class="pk-rf" hidden data-species="other animal" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Zuna_2017_reference](drugs/drug_methylene_blue/MethyleneBlue_Zuna2017_reference.md) | — | 1-compartment (no model) | 2 | Zuna I et al., ADAM, a hands-on patient simulator for…, British journal of clinical… (2017) | [10.1111/bcp.13357](https://doi.org/10.1111/bcp.13357) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=methylene_blue).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate, `MAOA` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor, `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer/inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `MAOA` inhibitor, `UGT1A4` inhibitor, `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor, `MAOA` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `SLC22A2` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: BLVRB (substrate), GUCY1A2 (inhibitor), NOS1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -82,13 +49,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-22 10:17 | 26:39 | 2/1/0 | 0/0/0 | 0/0/0 | 697,432/37,556 | einfracz / qwen3.8-27b | 52 | 13/31 | 43/0 | 0 |
+| 2026-10-22 10:17 | 26:39 | 1/2/0 | 0/0/0 | 0/0/0 | 697,432/37,556 | einfracz / qwen3.8-27b | 52 | 13/31 | 43/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1000 matched, 207 returned
 - **screened:** 17  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

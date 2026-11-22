@@ -5,9 +5,9 @@
 
 # cabotegravir — `Cabotegravir_Renou2026_thoueille_et_al`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was held because the model uses default values for lag time and apparent oral bioavailability, causing the structure to mismatch the IM dosing data.
+> Covariate effects for cabotegravir were not simulated, and the second reader disputed the record's verdict.
 
 <div class="pk-model-meta" hidden drug="cabotegravir" model-id="Cabotegravir_Renou2026_thoueille_et_al" status="needs_review" stale="false" population="HIV-infected adults (CARLAPOP)" measured-compound="cabotegravir" parameterization="apparent" topology="1C"></div>
 
@@ -41,9 +41,13 @@ Renou Q, Néant N, Destere A, Lagoutte-Renosi J, Grégoire M, Parant F et al. Ex
 | im | im | 194 |  |  |
 | theta_kabs_im | theta_kabs_im | 0.00102 |  |  |
 
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +57,9 @@ Renou Q, Néant N, Destere A, Lagoutte-Renosi J, Grégoire M, Parant F et al. Ex
 
 ### Reviewer guidance
 
-**The record was held because the model uses default values for lag time and apparent oral bioavailability, causing the structure to mismatch the IM dosing data.**
+**Covariate effects for cabotegravir were not simulated, and the second reader disputed the record's verdict.**
 
-Although the covariate effect for intramuscular dosing is included, the model relies on standard placeholder values for the absorption lag time. Additionally, the parameters are parameterized as apparent values assuming an oral bioavailability of 1, which contradicts the intramuscular dosing mechanism. A second reader also disagreed with the identification of cabotegravir as the primary analyte, marking it as unknown. Extracted — cabotegravir: kabs 1.12 h−1, CL/F 0.201 L/h, V/F 7.44 L.
+The model defines covariate effects, but only the reference individual was simulated, so these scenarios were not exercised. A second reader disagreed with the primary analyte identification, marking it as unknown rather than cabotegravir. This disagreement resulted in a cross-check agreement ratio of 0.818 with zero reader agreement. Extracted — cabotegravir: kabs 1.12 h−1, CL/F 0.201 L/h, V/F 7.44 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cabotegravir, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -141,15 +145,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=cabotegravir) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | D2: not acceptable | LLM adjudication → deterministic rule |
-| T2_pgx_Intermediate | pgx:Intermediate | pass |  |  | Intermediate vs Normal: central.C cmax -100 %, central.C auc -100 % (PK_1C_enteral.fmu, 2 phenotypes) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=cabotegravir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

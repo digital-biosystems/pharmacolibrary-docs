@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;Methyldopa&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/&quot;},{&quot;label&quot;:&quot;Singh_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Brogden1988_reference&quot;,&quot;label&quot;:&quot;Brogden_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methyldopa_Singh1985_reference&quot;,&quot;label&quot;:&quot;Singh_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Singh1985_reference&quot;,&quot;label&quot;:&quot;Singh_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methyldopa_Brogden1988_reference&quot;,&quot;label&quot;:&quot;Brogden_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Methyldopa — `Methyldopa_Singh1985_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Singh1985_reference" status="simulated" stale="false" population="unknown" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
+> Record for methyldopa was held back because the apparent volume of distribution value of 1.6 L/kg contradicts its label specifying acebutolol.
+
+<div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Singh1985_reference" status="needs_review" stale="false" population="unknown" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Singh BN, Thoden WR, Ward A. Acebutolol. A review of its pharmacological properties and therapeutic efficacy in hypertension, angina pectoris and arrhythmia. Drugs 29(6):531–569 (1985).
@@ -29,6 +31,8 @@ Singh BN, Thoden WR, Ward A. Acebutolol. A review of its pharmacological propert
 <figure class="pk-models-diagram"><img src="drugs/drug_methyldopa/Methyldopa_Singh1985_reference/Methyldopa_Singh1985_reference.svg" alt="Methyldopa_Singh1985_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | total body clearance | CL | 36.9 | L/h |
@@ -36,7 +40,7 @@ Singh BN, Thoden WR, Ward A. Acebutolol. A review of its pharmacological propert
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Singh BN, Thoden WR, Ward A. Acebutolol. A review of its pharmacological propert
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Record for methyldopa was held back because the apparent volume of distribution value of 1.6 L/kg contradicts its label specifying acebutolol.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 10.4, the second reading 0.24; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+The parameter labeled as the apparent volume of distribution for acebutolol is assigned to the methyldopa compound in this one-compartment model. This internal inconsistency likely caused the second reader to dispute the record, resulting in an agreement score of 0.692. A specific parameter value comparison also showed disagreement, with the second reader reading 0.24 where the record lists 10.4. Extracted — methyldopa: CL 36.9 L/h, V/F 1.6 L/kg.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 10.4, the second reading 0.24; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -77,15 +83,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.615 (8/13 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q26]` | 10.4 | 0.24 | mismatch |
 | `gpt-oss-120b` | `values[Q32]` | 83.7 | 83.7 | mismatch |
-| `gpt-oss-120b` | `values[Q40]` | 0.3 | 0.3 | mismatch |
 | `gpt-oss-120b` | `values[Q44]` | 65.6 | 67.3 | mismatch |
 | `gpt-oss-120b` | `values[Q61]` | 28.1 |  | only_one_extracted |
 
@@ -113,14 +118,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=methyldopa) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=methyldopa) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | cross-check disputed by a second reader: verdict disputed, agreement 0.692, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

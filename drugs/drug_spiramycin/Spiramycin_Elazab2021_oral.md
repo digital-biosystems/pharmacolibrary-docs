@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;spiramycin&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/&quot;},{&quot;label&quot;:&quot;Elazab_2021 \u00b7 oral&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spiramycin_Elazab2021_iv&quot;,&quot;label&quot;:&quot;Elazab_2021_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Spiramycin_Elazab2021_oral&quot;,&quot;label&quot;:&quot;Elazab_2021_oral&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spiramycin_Elazab2021_iv&quot;,&quot;label&quot;:&quot;Elazab_2021_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Spiramycin_Elazab2021_oral&quot;,&quot;label&quot;:&quot;Elazab_2021_oral&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # spiramycin — `Spiramycin_Elazab2021_oral`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-<div class="pk-model-meta" hidden drug="spiramycin" model-id="Spiramycin_Elazab2021_oral" status="simulated" stale="false" population="chickens" measured-compound="spiramycin" parameterization="mechanistic" topology="1C"></div>
+> Spiramycin clearance lacked a fitted value, and the model was misclassified as mechanistic rather than apparent.
+
+<div class="pk-model-meta" hidden drug="spiramycin" model-id="Spiramycin_Elazab2021_oral" status="needs_review" stale="false" population="chickens" measured-compound="spiramycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmacokinetic/Pharmacodynamic Modeling of Spiramycin against. Pathogens (Basel, Switzerland) 10(10) (2021).
@@ -15,7 +17,7 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 
 ## Population and dosing
 
-**Population:** chickens · condition Mycoplasma synoviae · n = &gt;= 48.
+**Population:** chickens · condition Mycoplasma synoviae.
 
 **Dosing:** 1190 mg, intravenously (iv) or orally, single.
 
@@ -31,6 +33,8 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 <figure class="pk-models-diagram"><img src="drugs/drug_spiramycin/Spiramycin_Elazab2021_oral/Spiramycin_Elazab2021_oral.svg" alt="Spiramycin_Elazab2021_oral diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax (µg/mL) | Cmax | 4.78 | µg/mL |
@@ -45,7 +49,7 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +59,13 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Spiramycin clearance lacked a fitted value, and the model was misclassified as mechanistic rather than apparent.**
 
-A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent.
+The record omitted a numeric value for oral clearance, meaning the parameter was not extracted from the data. A second reader disputed the model structure, arguing the parameters represent apparent pharmacokinetics rather than a mechanistic description. The reader also disagreed with the identification of spiramycin as the primary analyte and dose compound. Extracted — spiramycin: Cmax 4.78 µg/mL, tmax 2 h, kel 0.12 1/h, t1/2z 6.25 h, AUClast 23.1 µg*h/mL, AUC∞ 23.6 µg*h/mL, V 6.58 L/kg, MRT 6.63 h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has spiramycin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -144,16 +148,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
-| T3_output_variable |  | pass | C_central (measured=spiramycin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | skipped |  | 5.776 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable |  | pass | C_central (measured=spiramycin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.688, 0 of 1 reader(s) agree | 0.688 | cross-check disputed by a second reader: verdict disputed, agreement 0.688, 0 of 1 reader(s) agree |
+| T1_t_half_beta | reference | skipped |  | 5.776 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

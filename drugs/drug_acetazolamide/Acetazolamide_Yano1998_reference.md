@@ -4,11 +4,11 @@
 
 # acetazolamide — `Acetazolamide_Yano1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:22 UTC (Rejected), but the paper was screened again on 2026-10-07 18:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Acetazolamide apparent oral clearance was rejected due to a dimension mismatch where the value was missing.
+> The record was rejected because the apparent oral clearance lacks a value and its hourly unit conflicts with a volume dimension.
 
-<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yano1998_reference" status="rejected" stale="true" population="patients with transient intraocular pressure elevation" measured-compound="acetazolamide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yano1998_reference" status="rejected" stale="false" population="patients with transient intraocular pressure elevation" measured-compound="acetazolamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yano I, Takayama A, Takano M, Inatani M, Tanihara H, Ogura Y et al. Pharmacokinetics and pharmacodynamics of acetazolamide in patients with transient intraocular pressure elevation. European journal of clinical pharmacology 54(1):63–68 (1998).
@@ -35,7 +35,7 @@ Yano I, Takayama A, Takano M, Inatani M, Tanihara H, Ogura Y et al. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Yano I, Takayama A, Takano M, Inatani M, Tanihara H, Ogura Y et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Acetazolamide apparent oral clearance was rejected due to a dimension mismatch where the value was missing.**
+**The record was rejected because the apparent oral clearance lacks a value and its hourly unit conflicts with a volume dimension.**
 
-The apparent oral clearance parameter for acetazolamide is missing its numeric value, leaving it as a placeholder. This absence triggered a dimension mismatch check failure because the parameter lacks a defined quantity. The model was built from the abstract alone, so these summary statistics stand in for a fitted model. Extracted — acetazolamide: V/F 0.231 l x kg(-1).
+The apparent oral clearance parameter has no extracted value, and its unit (h(-1)) fails the dimension check against the required volume dimension. Additionally, the apparent oral volume of distribution (0.231 l x kg(-1)) fails its specific dimensional check. The record is also based solely on the abstract, meaning summary statistics stand in for a fitted model. Extracted — acetazolamide: V/F 0.231 l x kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetazolamide, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

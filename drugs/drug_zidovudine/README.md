@@ -32,7 +32,7 @@ Zidovudine is a nucleoside reverse transcriptase inhibitor used to treat HIV inf
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Fauchet_2013_reference](drugs/drug_zidovudine/Zidovudine_Fauchet2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Fauchet F et al., Population pharmacokinetics study of re…, Antimicrobial agents and ch… (2013) | [10.1128/AAC.00911-13](https://doi.org/10.1128/AAC.00911-13) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Tang_2026_reference](drugs/drug_zidovudine/Zidovudine_Tang2026_reference.md) | — | general linear (no model) | 7 | Tang F et al., The study on the transport and phosphor…, Scientific reports (2026) | [10.1038/s41598-026-49905-1](https://doi.org/10.1038/s41598-026-49905-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Tang_2026_reference](drugs/drug_zidovudine/Zidovudine_Tang2026_reference.md) | — | general linear (no model) | 7 | Tang F et al., The study on the transport and phosphor…, Scientific reports (2026) | [10.1038/s41598-026-49905-1](https://doi.org/10.1038/s41598-026-49905-1) |
 | <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.10).">human + animal</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [von_2009_reference](drugs/drug_zidovudine/Zidovudine_von2009_reference.md) | — | general linear (no model) | 6 (+3 cov.) | von Kleist M et al., Pharmacokinetic-pharmacodynamic relatio…, European journal of pharmac… (2009) | [10.1016/j.ejps.2008.12.010](https://doi.org/10.1016/j.ejps.2008.12.010) |
 
 ## Pharmacodynamics (PD)
@@ -44,27 +44,6 @@ Zidovudine is a nucleoside reverse transcriptase inhibitor used to treat HIV inf
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Legrand_2003_infected_cells](drugs/drug_zidovudine/pd_Legrand_2003_infected_cells.md) | infected cells ← zidovudine, lamivudine, and indinavir · model not identified | — | Legrand M et al., An in vivo pharmacokinetic/pharmacodyna…, HIV clinical trials (2003) | [10.1310/77yn-gdmu-95w3-rwt7](https://doi.org/10.1310/77yn-gdmu-95w3-rwt7) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Legrand_2003_viral_load](drugs/drug_zidovudine/pd_Legrand_2003_viral_load.md) | viral load ← zidovudine, lamivudine, and indinavir · model not identified | — | Legrand M et al., An in vivo pharmacokinetic/pharmacodyna…, HIV clinical trials (2003) | [10.1310/77yn-gdmu-95w3-rwt7](https://doi.org/10.1310/77yn-gdmu-95w3-rwt7) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.10).">human + animal</span> | [von_2009_RT_activity](drugs/drug_zidovudine/pd_von_2009_RT_activity.md) | % residual RT activity ← AZT-TP · inhibition effect | — | von Kleist M et al., Pharmacokinetic-pharmacodynamic relatio…, European journal of pharmac… (2009) | [10.1016/j.ejps.2008.12.010](https://doi.org/10.1016/j.ejps.2008.12.010) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=zidovudine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | kidney | `SLC22A7` unknown, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2A6` substrate, `CYP2C9` substrate, `CYP3A4` substrate, `SLC22A7` unknown, `UGT1A1` inducer/substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` inducer/substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` substrate, `ABCC4` substrate, `SLC22A2` unknown, `SLC22A6` substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCC4` substrate, `ABCG2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC5 (substrate), FLT3 (binder), SLC22A11 (unknown), SLC28A1 (unknown), SLC29A2 (unknown), TERT (inhibitor), TK1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -78,13 +57,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:39 | 12:37 | 0/3/0 | 2/1/0 | 0/0/0 | 317,264/61,721 | openai / gpt-6-luna | 6 | 1/5 | 6/0 | 0 |
+| 2026-10-07 16:39 | 12:37 | 0/3/0 | 2/3/0 | 0/0/0 | 317,264/61,721 | openai / gpt-6-luna | 6 | 1/5 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 224 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

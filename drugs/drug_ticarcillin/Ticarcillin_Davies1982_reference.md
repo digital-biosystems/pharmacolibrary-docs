@@ -17,7 +17,7 @@ Davies BE, Humphrey MJ, Langley PF, Lees L, Legg B, Wadds GA. Pharmacokinetics o
 
 ## Population and dosing
 
-**Population:** healthy adults · age group adult · n = ,"condition": "healthy", "species": "human", "compounds": [.
+**Population:** healthy adults · age group adult.
 
 ## Model
 

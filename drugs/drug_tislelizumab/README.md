@@ -16,7 +16,7 @@ Tislelizumab is a monoclonal antibody used to treat several types of cancer, inc
 
 ## Start here
 
-> **Kim_2025_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> patients with non-small cell lung cancer, n = &gt;2500. [Run it in the simulator](drugs/drug_tislelizumab/Tislelizumab_Kim2025_reference.md?tab=Simulation) · [record](drugs/drug_tislelizumab/Tislelizumab_Kim2025_reference.md)
+> **Kim_2025_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> patients with non-small cell lung cancer. [Run it in the simulator](drugs/drug_tislelizumab/Tislelizumab_Kim2025_reference.md?tab=Simulation) · [record](drugs/drug_tislelizumab/Tislelizumab_Kim2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -35,15 +35,6 @@ Tislelizumab is a monoclonal antibody used to treat several types of cancer, inc
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ cycle_5](drugs/drug_tislelizumab/Tislelizumab_Yu2025_cycle_5.md) | — | 1-compartment (no model) | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Budha_2023_reference](drugs/drug_tislelizumab/Tislelizumab_Budha2023_reference.md) | — | 2-compartment (no model) | 4 | Budha N et al., Model-based population pharmacokinetic…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12880](https://doi.org/10.1002/psp4.12880) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Liu_2026_reference](drugs/drug_tislelizumab/Tislelizumab_Liu2026_reference.md) | — | 2-compartment (no model) | 7 (+6 cov.) | Liu X et al., Model-Informed Development of a Subcuta…, Clinical and translational… (2026) | [10.1111/cts.70649](https://doi.org/10.1111/cts.70649) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tislelizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: PDCD1 (antibody), PDCD1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

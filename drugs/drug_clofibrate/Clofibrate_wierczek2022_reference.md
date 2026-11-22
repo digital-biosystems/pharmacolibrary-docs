@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;clofibrate&quot;,&quot;href&quot;:&quot;drugs/drug_clofibrate/&quot;},{&quot;label&quot;:&quot;\u015awierczek_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofibrate_wierczek2022_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofibrate_wierczek2022_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clofibrate — `Clofibrate_wierczek2022_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-<div class="pk-model-meta" hidden drug="clofibrate" model-id="Clofibrate_wierczek2022_reference" status="not_modelled" stale="false" population="" measured-compound="clofibrate" parameterization="apparent" topology="1C"></div>
+> The clofibrate record was rejected because its source paper concerns another drug, despite listing CL/F as 0.44 L·min−1·kg−1.
+
+<div class="pk-model-meta" hidden drug="clofibrate" model-id="Clofibrate_wierczek2022_reference" status="rejected" stale="false" population="" measured-compound="clofibrate" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Świerczek A, Pociecha K, Plutecka H, Ślusarczyk M, Chłoń-Rzepa G, Wyska E. Pharmacokinetic/Pharmacodynamic Evaluation of a New Purine-2,6-Dione Derivative in Rodents with Experimental Autoimmune Diseases. Pharmaceutics 14(5):1090 (2022).
@@ -29,7 +31,7 @@
 <figure class="pk-models-diagram"><img src="drugs/drug_clofibrate/Clofibrate_wierczek2022_reference/Clofibrate_wierczek2022_reference.svg" alt="Clofibrate_wierczek2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +41,7 @@
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +51,13 @@
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The clofibrate record was rejected because its source paper concerns another drug, despite listing CL/F as 0.44 L·min−1·kg−1.**
+
+Neither the paper title nor abstract names clofibrate, and the paper was judged to concern another drug. Tlag had no explicit estimate and was defaulted; the apparent parameterization assumed F=1, Fm=1, and no molar correction. Extracted — clofibrate: CL/F 0.44 L·min−1·kg−1, V/F 8.7 L·kg−1, kabs 0.58 min−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -112,13 +116,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | obtained | note |
-|---|---|---|---|
-| T0_analyte_identity | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  | no covariate effects in record |
-| T3_apparent_invariant | pass | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | clofibrate (or metabolite) | paper about another drug |  | paper subject is not clofibrate: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=clofibrate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -130,61 +137,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clofibrate/Clofibrate_wierczek2022_reference/Clofibrate_wierczek2022_reference_modelica.zip" download>Clofibrate_wierczek2022_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clofibrate/Clofibrate_wierczek2022_reference/Clofibrate_wierczek2022_reference_fmi.zip" download>Clofibrate_wierczek2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clofibrate/Clofibrate_wierczek2022_reference/Clofibrate_wierczek2022_reference_matlab.zip" download>Clofibrate_wierczek2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clofibrate/Clofibrate_wierczek2022_reference/Clofibrate_wierczek2022_reference_matlab_simbio.zip" download>Clofibrate_wierczek2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clofibrate/Clofibrate_wierczek2022_reference/Clofibrate_wierczek2022_reference_sbml.zip" download>Clofibrate_wierczek2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clofibrate/Clofibrate_wierczek2022_reference/Clofibrate_wierczek2022_reference_cellml.zip" download>Clofibrate_wierczek2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2427 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.002 | kg |
-| input | model | `Cl` | 0.0005133 | m3/s |
-| input | model | `VdPerKg` | 0.0087 | m3/kg |
-| input | model | `ka` | 0.009667 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Świerczek A, Pociecha K, Plutecka H, Ślusarczyk M, Chłoń-Rzepa G, Wyska E. Pharmacokinetic/Pharmacodynamic Evaluation of a New Purine-2,6-Dione Derivative in Rodents with Experimental Autoimmune Diseases. Pharmaceutics 14(5):1090 (2022). [doi:10.3390/pharmaceutics14051090](https://doi.org/10.3390/pharmaceutics14051090)
-
-**This record:** Pharmacolibrary, model `Clofibrate_wierczek2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clofibrate/Clofibrate_wierczek2022_reference>
-
-```bibtex
-@misc{pharmacolibrary_Clofibratewierczek2022reference,
-  title  = {{Pharmacolibrary model Clofibrate_wierczek2022_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_clofibrate/Clofibrate_wierczek2022_reference},
-  note   = {Parameters from doi:10.3390/pharmaceutics14051090},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

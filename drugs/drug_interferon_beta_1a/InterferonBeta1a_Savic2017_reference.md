@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;interferon beta-1a&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_beta_1a/&quot;},{&quot;label&quot;:&quot;Savic_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonBeta1a_Savic2017_reference&quot;,&quot;label&quot;:&quot;Savic_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonBeta1a_Savic2017_reference&quot;,&quot;label&quot;:&quot;Savic_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # interferon beta-1a — `InterferonBeta1a_Savic2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The interferon beta 1a record was held back because bioavailability and the elimination rate constant were left at library defaults.
+> The record was rejected because the source paper focuses on cladribine, not interferon beta 1a.
 
-<div class="pk-model-meta" hidden drug="interferon beta-1a" model-id="InterferonBeta1a_Savic2017_reference" status="needs_review" stale="false" population="" measured-compound="interferon_beta_1a" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="interferon beta-1a" model-id="InterferonBeta1a_Savic2017_reference" status="rejected" stale="false" population="" measured-compound="interferon_beta_1a" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokinetics of Cladribine in Patients with Multiple Sclerosis. Clinical pharmacokinetics 56(10):1245–1253 (2017).
@@ -29,7 +29,7 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 <figure class="pk-models-diagram"><img src="drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference/InterferonBeta1a_Savic2017_reference.svg" alt="InterferonBeta1a_Savic2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -41,7 +41,7 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 
 ### Reviewer guidance
 
-**The interferon beta 1a record was held back because bioavailability and the elimination rate constant were left at library defaults.**
+**The record was rejected because the source paper focuses on cladribine, not interferon beta 1a.**
 
-The record lists two-compartment parameters for interferon beta 1a, including a clearance of 39.3 L/h and central volume of 365.0 L. However, bioavailability and the peripheral elimination rate constant were left at library defaults. These missing values mean the model structure relies on placeholder assumptions rather than estimates from the cited review. Extracted — interferon beta 1a: CL 39.3 L/h, V1/F 365 L, Q 53.7 L/h, tlag 0.319 h, kabs 1.08 h−1.
+The study describes the population pharmacokinetics of cladribine, with interferon beta 1a serving only as a co-administered agent. Consequently, the extracted parameters, such as the total clearance of 39.3 L/h, describe cladribine rather than the target drug. A second reader disagreed on several parameter values, failing to confirm the extraction accuracy. Extracted — interferon beta 1a: CL 39.3 L/h, V1/F 365 L, Q 53.7 L/h, tlag 0.319 h, kabs 1.08 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 39.3, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -135,14 +135,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=interferon_beta_1a) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | 1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | interferon_beta_1a (or metabolite) | paper about another drug |  | paper subject is not interferon_beta_1a: the paper is about another drug; this one is a co-medication or covariate: The study focuses on the population PK of cladribine, with interferon_beta_1a used only as a co-administered agent in a drug-drug interaction study. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=interferon_beta_1a) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,61 +155,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference/InterferonBeta1a_Savic2017_reference_modelica.zip" download>InterferonBeta1a_Savic2017_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference/InterferonBeta1a_Savic2017_reference_fmi.zip" download>InterferonBeta1a_Savic2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference/InterferonBeta1a_Savic2017_reference_matlab.zip" download>InterferonBeta1a_Savic2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference/InterferonBeta1a_Savic2017_reference_matlab_simbio.zip" download>InterferonBeta1a_Savic2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference/InterferonBeta1a_Savic2017_reference_sbml.zip" download>InterferonBeta1a_Savic2017_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference/InterferonBeta1a_Savic2017_reference_cellml.zip" download>InterferonBeta1a_Savic2017_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 1148 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 1.092e-05 | m3/s |
-| input | model | `VdPerKg` | 0.005214 | m3/kg |
-| input | model | `k12` | 4.087e-05 | 1/s |
-| input | model | `ka` | 0.0003 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokinetics of Cladribine in Patients with Multiple Sclerosis. Clinical pharmacokinetics 56(10):1245–1253 (2017). [doi:10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6)
-
-**This record:** Pharmacolibrary, model `InterferonBeta1a_Savic2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference>
-
-```bibtex
-@misc{pharmacolibrary_InterferonBeta1aSavic2017reference,
-  title  = {{Pharmacolibrary model InterferonBeta1a_Savic2017_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference},
-  note   = {Parameters from doi:10.1007/s40262-017-0516-6},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

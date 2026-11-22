@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The absorption rate constant was not estimated, despite the paper reporting a 17 min absorption half-life.
+> Rufloxacin record held back because a second reader rejected the absorption half-life of 17 min and other parameters extracted from the abstract.
 
 <div class="pk-model-meta" hidden drug="rufloxacin" model-id="Rufloxacin_Mattina1991_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Mattina R, Bonfiglio G, Cocuzza CE, Gulisano G, Cesana M, Imbimbo BP. Pharmacoki
 
 ### Reviewer guidance
 
-**The absorption rate constant was not estimated, despite the paper reporting a 17 min absorption half-life.**
+**Rufloxacin record held back because a second reader rejected the absorption half-life of 17 min and other parameters extracted from the abstract.**
 
-The record lists an absorption half-life of 17 minutes for rufloxacin, yet the absorption rate constant was not derived from this value. Because the record was built from the abstract alone, these summary statistics were used in place of a fitted model. The apparent parameterization assumed full bioavailability and first-order absorption, leading to the rejection of the model for unreported parameter defaults. Extracted — rufloxacin: t1/2ka 17 min, Cmax 2.77 micrograms/ml, tmax 4.2 h, V/F 111 liters, CL/F 46 ml/min, CLR 18 ml/min.
+The model was built using summary statistics from the abstract rather than fitted data, leading to disputed validity. A second reader could not confirm the values for absorption half-life, clearance, or volume of distribution. This lack of agreement resulted in the record being marked as needing review instead of publication. Extracted — rufloxacin: t1/2ka 17 min, Cmax 2.77 micrograms/ml, tmax 4.2 h, V/F 111 liters, CL/F 46 ml/min, CLR 18 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rufloxacin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -147,15 +147,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=rufloxacin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=rufloxacin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

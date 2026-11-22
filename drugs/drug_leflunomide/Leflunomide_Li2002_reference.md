@@ -4,11 +4,11 @@
 
 # leflunomide — `Leflunomide_Li2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:32 UTC (Rejected), but the paper was screened again on 2026-10-06 23:58 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on the elimination rate constant parameter for metabolite A771726.
+> Leflunomide record rejected because the elimination rate constant for A771726 is reported as 211 h instead of a rate constant.
 
-<div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Li2002_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="A771726" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Li2002_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="A771726" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li J, Yao HW, Jin Y, Zhang YF, Li CY, Li YH et al. Pharmacokinetics of leflunomide in Chinese healthy volunteers. Acta pharmacologica Sinica 23(6):551–555 (2002).
@@ -39,7 +39,7 @@ Li J, Yao HW, Jin Y, Zhang YF, Li CY, Li YH et al. Pharmacokinetics of leflunomi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Li J, Yao HW, Jin Y, Zhang YF, Li CY, Li YH et al. Pharmacokinetics of leflunomi
 
 ### Reviewer guidance
 
-**The record was rejected due to a dimension mismatch on the elimination rate constant parameter for metabolite A771726.**
+**Leflunomide record rejected because the elimination rate constant for A771726 is reported as 211 h instead of a rate constant.**
 
-The record lists the elimination rate constant with a value of 211 and units of hours, which is dimensionally inconsistent. The record was built from the abstract alone, so these summary statistics stood in for a fitted model. Additionally, a second reader disagreed on the Cmax and Tmax values, and noted a missing AUC parameter. Extracted — A771726: kel 211 h, Cmax 41.5 mg/L, tmax 307 h; leflunomide: tmax 13 h, Cmax 2 mg/L.
+The parameter identified as the elimination rate constant (kel) for A771726 has a value of 211 with units of hours, which is dimensionally a time constant rather than a rate. This conflicts with the required dimension of inverse time for a first-order elimination rate constant. The record was built from abstract-only summary statistics, and a second reader disagreed on the assignment of Tmax and Cmax values to the parent and metabolite. Extracted — A771726: kel 211 h, Cmax 41.5 mg/L, tmax 307 h; leflunomide: tmax 13 h, Cmax 2 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cmax: this record has 2.0, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

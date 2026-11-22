@@ -26,8 +26,8 @@ Gadodiamide is a paramagnetic contrast medium used for magnetic resonance imagin
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Van_1993_reference](drugs/drug_gadodiamide/Gadodiamide_Van1993_reference.md) | — | 1-compartment (no model) | 3 | Van Wagoner M et al., Gadodiamide injection. First human expe…, Investigative radiology 28… (1993) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jurkiewicz_2022_reference](drugs/drug_gadodiamide/Gadodiamide_Jurkiewicz2022_reference.md) | — | 2-compartment (no model) | 3 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/rli.0000000000000865](https://doi.org/10.1097/rli.0000000000000865) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Van_1993_reference](drugs/drug_gadodiamide/Gadodiamide_Van1993_reference.md) | — | 1-compartment (no model) | 3 | Van Wagoner M et al., Gadodiamide injection. First human expe…, Investigative radiology 28… (1993) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jurkiewicz_2022_reference](drugs/drug_gadodiamide/Gadodiamide_Jurkiewicz2022_reference.md) | — | 2-compartment (no model) | 3 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/rli.0000000000000865](https://doi.org/10.1097/rli.0000000000000865) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Scala_2018_reference](drugs/drug_gadodiamide/Gadodiamide_Scala2018_reference.md) | — | 2-compartment (no model) | 3 | Scala M et al., A Pharmacokinetics, Efficacy, and Safet…, Investigative radiology (2018) | [10.1097/rli.0000000000000412](https://doi.org/10.1097/rli.0000000000000412) |
 
 ## Pharmacodynamics (PD)
@@ -36,14 +36,6 @@ Gadodiamide is a paramagnetic contrast medium used for magnetic resonance imagin
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Beydemir_2021_PON1](drugs/drug_gadodiamide/pd_Beydemir_2021_PON1.md) | PON1 activity ← gadodiamide · inhibition effect | — | Beydemir Ş et al., Gadolinium-based contrast agents: in vi…, Drug and chemical toxicology (2021) | [10.1080/01480545.2019.1620266](https://doi.org/10.1080/01480545.2019.1620266) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Nikolaou_2004_signal_increase](drugs/drug_gadodiamide/pd_Nikolaou_2004_signal_increase.md) | signal increase ← gadodiamide · direct linear effect | — | Nikolaou K et al., Quantification of pulmonary blood flow…, Investigative radiology (2004) | [10.1097/01.rli.0000133813.22873.47](https://doi.org/10.1097/01.rli.0000133813.22873.47) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gadodiamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,7 +55,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 54 matched, 51 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 2
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

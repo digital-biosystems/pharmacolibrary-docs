@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The ofatumumab clearance of 7.5 mL/h and Vss of 5.3 L were used as single-compartment parameters, but the record is abstract-only and the Vss-as-V substitution was rejected.
+> The record for ofatumumab was held because the second reader disputed the extracted clearance and volume values from the abstract-only source.
 
 <div class="pk-model-meta" hidden drug="ofatumumab" model-id="Ofatumumab_Struemper2014_reference" status="needs_review" stale="false" population="patients with chronic lymphocytic leukemia, follicular lymphoma, and rheumatoid arthritis" measured-compound="ofatumumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Struemper H, Sale M, Patel BR, Østergaard M, Österborg A, Wierda WG et al. Pop
 
 ## Population and dosing
 
-**Population:** patients with chronic lymphocytic leukemia, follicular lymphoma, and rheumatoid arthritis · condition chronic lymphocytic leukemia, follicular lymphoma, rheumatoid arthritis · age group adult · n = &gt;=477.
+**Population:** patients with chronic lymphocytic leukemia, follicular lymphoma, and rheumatoid arthritis · condition chronic lymphocytic leukemia, follicular lymphoma, rheumatoid arthritis · age group adult.
 
 ## Model
 
@@ -48,9 +48,9 @@ Struemper H, Sale M, Patel BR, Østergaard M, Österborg A, Wierda WG et al. Pop
 
 ### Reviewer guidance
 
-**The ofatumumab clearance of 7.5 mL/h and Vss of 5.3 L were used as single-compartment parameters, but the record is abstract-only and the Vss-as-V substitution was rejected.**
+**The record for ofatumumab was held because the second reader disputed the extracted clearance and volume values from the abstract-only source.**
 
-The record was built from the paper's abstract, so the reported summary statistics stand in for a fitted model. The model builder substituted the steady-state volume of distribution for the central volume because no central volume was reported, a substitution deemed unacceptable for a one-compartment structure. A second reader disagreed on the recorded values, marking the clearance and volume of distribution as null in their adjudication. Extracted — ofatumumab: CL 7.5 mL/h, Vss 5.3 L.
+Because the paper was abstract-only, the reported summary statistics were used as the fitted model parameters. The second reader disagreed with the extracted clearance (7.5 mL/h) and volume of distribution (5.3 L), recording them as null instead. This disagreement resulted in a 0.25 agreement ratio, triggering the cross-check failure. Extracted — ofatumumab: CL 7.5 mL/h, Vss 5.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ofatumumab, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -127,14 +127,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ofatumumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ofatumumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

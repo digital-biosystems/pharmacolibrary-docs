@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;arginine hydrochloride&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/&quot;},{&quot;label&quot;:&quot;Gaudinski_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # arginine hydrochloride — `ArginineHydrochloride_Gaudinski2018_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Gaudinski2018_reference" status="simulated" stale="false" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></div>
+> The record is rejected because the source paper studies the monoclonal antibody VRC01LS, not the co-medication arginine hydrochloride.
+
+<div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Gaudinski2018_reference" status="rejected" stale="false" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gaudinski MR, Coates EE, Houser KV, Chen GL, Yamshchikov G, Saunders JG et al. Safety and pharmacokinetics of the Fc-modified HIV-1 human monoclonal antibody VRC01LS: A Phase 1 open-label clinical trial in healthy adults. PLoS medicine 15(1):e1002493 (2018).
@@ -27,6 +29,8 @@ Gaudinski MR, Coates EE, Houser KV, Chen GL, Yamshchikov G, Saunders JG et al. S
 <figure class="pk-models-diagram"><img src="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference/ArginineHydrochloride_Gaudinski2018_reference.svg" alt="ArginineHydrochloride_Gaudinski2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance | CL | 36.0 | mL/d |
@@ -34,7 +38,7 @@ Gaudinski MR, Coates EE, Houser KV, Chen GL, Yamshchikov G, Saunders JG et al. S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Gaudinski MR, Coates EE, Houser KV, Chen GL, Yamshchikov G, Saunders JG et al. S
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record is rejected because the source paper studies the monoclonal antibody VRC01LS, not the co-medication arginine hydrochloride.**
 
-Independently confirmed by `gpt-oss:120b`.
+The source text identifies the study subject as VRC01LS, while arginine hydrochloride is mentioned only as a formulation buffer. The extracted clearance and volume of distribution values for arginine hydrochloride are therefore not from the primary pharmacokinetic data of this paper. Extracted — arginine hydrochloride: CL 36 mL/d, V 0.779 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+Independently confirmed by `gpt-oss-120b`.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -75,7 +81,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -101,14 +107,15 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=arginine_hydrochloride) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | arginine_hydrochloride (or metabolite) | paper about another drug |  | paper subject is not arginine_hydrochloride: the paper is about another drug; this one is a co-medication or covariate: The study reports pharmacokinetic parameters for the monoclonal antibody VRC01LS, not for arginine_hydrochloride (which is only mentioned as a formulation buffe |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=arginine_hydrochloride) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -120,59 +127,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference/ArginineHydrochloride_Gaudinski2018_reference_modelica.zip" download>ArginineHydrochloride_Gaudinski2018_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference/ArginineHydrochloride_Gaudinski2018_reference_fmi.zip" download>ArginineHydrochloride_Gaudinski2018_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference/ArginineHydrochloride_Gaudinski2018_reference_matlab.zip" download>ArginineHydrochloride_Gaudinski2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference/ArginineHydrochloride_Gaudinski2018_reference_matlab_simbio.zip" download>ArginineHydrochloride_Gaudinski2018_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference/ArginineHydrochloride_Gaudinski2018_reference_sbml.zip" download>ArginineHydrochloride_Gaudinski2018_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference/ArginineHydrochloride_Gaudinski2018_reference_cellml.zip" download>ArginineHydrochloride_Gaudinski2018_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.1742 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 4.167e-10 | m3/s |
-| input | model | `VdPerKg` | 1.113e-05 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Gaudinski MR, Coates EE, Houser KV, Chen GL, Yamshchikov G, Saunders JG et al. Safety and pharmacokinetics of the Fc-modified HIV-1 human monoclonal antibody VRC01LS: A Phase 1 open-label clinical trial in healthy adults. PLoS medicine 15(1):e1002493 (2018). [doi:10.1371/journal.pmed.1002493](https://doi.org/10.1371/journal.pmed.1002493)
-
-**This record:** Pharmacolibrary, model `ArginineHydrochloride_Gaudinski2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference>
-
-```bibtex
-@misc{pharmacolibrary_ArginineHydrochlorideGaudinski2018reference,
-  title  = {{Pharmacolibrary model ArginineHydrochloride_Gaudinski2018_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference},
-  note   = {Parameters from doi:10.1371/journal.pmed.1002493},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

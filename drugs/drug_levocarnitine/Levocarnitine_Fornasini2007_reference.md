@@ -16,7 +16,7 @@ Fornasini G, Upton RN, Evans AM. A pharmacokinetic model for L-carnitine in pati
 
 ## Population and dosing
 
-**Population:** adults receiving haemodialysis · condition renal impairment · age group adult · n = —.
+**Population:** adults receiving haemodialysis · condition renal impairment · age group adult.
 
 ## Model
 

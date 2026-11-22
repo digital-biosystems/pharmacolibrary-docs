@@ -4,11 +4,11 @@
 
 # nicotine — `Nicotine_Olsson2021_mouth_spray`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:19 UTC (Rejected), but the paper was screened again on 2026-10-07 03:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the allometric exponent parameter was flagged as a structural mismatch, and a reported unit for a parameter could not be converted to SI, preventing the model from being built.
+> Nicotine’s D1 value of 4.84 mg was rejected because it is defined as a zero-order input duration, not a dose.
 
-<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Olsson2021_mouth_spray" status="rejected" stale="true" population="healthy smokers" measured-compound="nicotine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Olsson2021_mouth_spray" status="rejected" stale="false" population="healthy smokers" measured-compound="nicotine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Olsson Gisleskog PO, Perez Ruixo JJ, Westin Å, Hansson AC, Soons PA. Nicotine Population Pharmacokinetics in Healthy Smokers After Intravenous, Oral, Buccal and Transdermal Administration. Clinical pharmacokinetics 60(4):541–561 (2021).
@@ -41,7 +41,7 @@ Olsson Gisleskog PO, Perez Ruixo JJ, Westin Å, Hansson AC, Soons PA. Nicotine P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Olsson Gisleskog PO, Perez Ruixo JJ, Westin Å, Hansson AC, Soons PA. Nicotine P
 
 ### Reviewer guidance
 
-**The record was rejected because the allometric exponent parameter was flagged as a structural mismatch, and a reported unit for a parameter could not be converted to SI, preventing the model from being built.**
+**Nicotine’s D1 value of 4.84 mg was rejected because it is defined as a zero-order input duration, not a dose.**
 
-The allometric exponent is listed with a value of 4.82, which is dimensionless, yet the review identified a structural parameter dimension mismatch. The second reader disagreed on the bioavailability value, expecting 100 while this record lists null. Extracted — nicotine: tlag 0.023 h, FR 1.2, ktr 3.7 h−1, allometric_exponent 4.82, D1 4.84 mg, V 2.6 L.
+The record labels D1 as a pre-washout nicotine dose and reports 4.84 mg, while its stated pharmacokinetic meaning is the duration of a zero-order input. The reported unit could not be converted to an SI value. Extracted — nicotine: tlag 0.023 h, FR 1.2, ktr 3.7 h−1, allometric_exponent 4.82, D1 4.84 mg, V 2.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 100; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

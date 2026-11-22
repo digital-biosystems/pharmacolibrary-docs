@@ -4,11 +4,11 @@
 
 # potassium chloride — `PotassiumChloride_Li2025_2_dose_administration_group_extende`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:57 UTC (Rejected), but the paper was screened again on 2026-10-07 17:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks a distribution volume and clearance, failing dimension checks, and is not a compartmental population pharmacokinetic model.
+> Potassium parameters using mmol/L units were rejected because the model expected mass-based units, not molar concentrations.
 
-<div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_2_dose_administration_group_extende" status="rejected" stale="true" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_2_dose_administration_group_extende" status="rejected" stale="false" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium chloride extended-release tablets and potassium citrate granules in patients with cardiovascular emergencies. Frontiers in cardiovascular medicine 12:1636090 (2025).
@@ -16,7 +16,7 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 ## Population and dosing
 
-**Population:** patients with cardiovascular emergencies · age group adult · n = &gt;=330.
+**Population:** patients with cardiovascular emergencies · age group adult.
 
 **Dosing:** 500, 1000 mg, oral, multiple.
 
@@ -43,7 +43,7 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 ### Reviewer guidance
 
-**The record lacks a distribution volume and clearance, failing dimension checks, and is not a compartmental population pharmacokinetic model.**
+**Potassium parameters using mmol/L units were rejected because the model expected mass-based units, not molar concentrations.**
 
-The paper reports only summary statistics like Cmax of 4.14 mmol/L and AUC of 106.89 mmol·h/L for potassium. It does not include distribution volume or clearance parameters, which are essential for compartmental population pharmacokinetic modeling. This omission caused a dimension mismatch on a structural parameter, leading to rejection. Extracted — potassium chloride: C0 3.56 mmol/L, tmax 6 h, Cmax 4.14 mmol/L, kabs 0.37 per hour, t1/2z 13.5 h, AUC∞ 107 mmol·h/L.
+Concentration and AUC values for potassium are reported in mmol/L and mmol·h/L, describing substance amount rather than mass. This unit mismatch caused the model to fail the dimensional consistency check for volume of distribution and clearance. The review also notes that the mmol/L unit could not be converted to standard SI mass units, preventing valid model evaluation. Extracted — potassium chloride: C0 3.56 mmol/L, tmax 6 h, Cmax 4.14 mmol/L, kabs 0.37 per hour, t1/2z 13.5 h, AUC∞ 107 mmol·h/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

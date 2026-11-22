@@ -5,11 +5,11 @@
 
 # camostat — `Camostat_Kim2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-05 16:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The GBA volume of distribution uses hours instead of liters, causing a dimension mismatch, and GBPA lacks a clearance parameter for its metabolic link.
+> The record was rejected due to a volume of distribution unit error and an orphan compartment in the GBPA/GBA model.
 
-<div class="pk-model-meta" hidden drug="camostat" model-id="Camostat_Kim2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="camostat" model-id="Camostat_Kim2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Kim G, Moon HK, Kim T, Yun SH, Yun HY, Hong JH et al. Safety Evaluation and Population Pharmacokinetics of Camostat Mesylate and Its Major Metabolites Using a Phase I Study. Pharmaceutics 15(9) (2023).
@@ -17,7 +17,7 @@ Kim G, Moon HK, Kim T, Yun SH, Yun HY, Hong JH et al. Safety Evaluation and Popu
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=15.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 100, 200, 300 mg, oral, single.
 
@@ -44,7 +44,7 @@ Kim G, Moon HK, Kim T, Yun SH, Yun HY, Hong JH et al. Safety Evaluation and Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Kim G, Moon HK, Kim T, Yun SH, Yun HY, Hong JH et al. Safety Evaluation and Popu
 
 ### Reviewer guidance
 
-**The GBA volume of distribution uses hours instead of liters, causing a dimension mismatch, and GBPA lacks a clearance parameter for its metabolic link.**
+**The record was rejected due to a volume of distribution unit error and an orphan compartment in the GBPA/GBA model.**
 
-The record lists the volume of distribution for GBA as 1046 hours, which is dimensionally incorrect for a volume parameter. Additionally, the metabolic link from camostat mesylate to GBPA does not specify a clearance parameter, leaving GBPA without an elimination rate. Extracted — GBA: t1/2z 1.01 h, Cmax 72.7 ng/mL, AUClast 152 h × ng/mL, AUC∞ 156 h × ng/mL, CL/F 142 L/h, V 1.05e+03 h.
+The volume of distribution parameter for GBA is listed with a unit of hours instead of a volume dimension, creating a structural mismatch. Additionally, the metabolite GBPA is identified as an unreachable compartment with no link from the dose to the central compartment. Extracted — GBA: t1/2z 1.01 h, Cmax 72.7 ng/mL, AUClast 152 h × ng/mL, AUC∞ 156 h × ng/mL, CL/F 142 L/h, V 1.05e+03 h.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

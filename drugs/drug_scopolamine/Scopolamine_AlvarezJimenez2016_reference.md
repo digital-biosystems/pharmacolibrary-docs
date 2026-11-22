@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;scopolamine&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/&quot;},{&quot;label&quot;:&quot;Alvarez-Jimenez_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ebert_2001_EEG_alpha_power&quot;,&quot;label&quot;:&quot;Ebert_2001 \u00b7 EEG alpha power&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Ebert_2001_EEG_alpha_power.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Adaptive_tracking&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Adaptive tracking&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Adaptive_tracking.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Body_sway&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Body sway&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Body_sway.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Finger_tapping&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Finger tapping&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Finger_tapping.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Heart_rate&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Heart rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Heart_rate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_SPV&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 SPV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_SPV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Smooth_pursuit&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Smooth pursuit&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Smooth_pursuit.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_alertness&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS alertness&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_alertness.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_external_perception&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS external perception&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_external_perception.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_feeling_high&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS feeling high&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_feeling_high.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_internal_perception&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS internal perception&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_internal_perception.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ebert_2001_EEG_alpha_power&quot;,&quot;label&quot;:&quot;Ebert_2001 \u00b7 EEG alpha power&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Ebert_2001_EEG_alpha_power.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Adaptive_tracking&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Adaptive tracking&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Adaptive_tracking.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Body_sway&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Body sway&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Body_sway.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Finger_tapping&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Finger tapping&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Finger_tapping.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Heart_rate&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Heart rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Heart_rate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_SPV&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 SPV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_SPV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Smooth_pursuit&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Smooth pursuit&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Smooth_pursuit.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_alertness&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS alertness&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_alertness.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_external_perception&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS external perception&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_external_perception.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_feeling_high&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS feeling high&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_feeling_high.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_internal_perception&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS internal perception&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_internal_perception.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # scopolamine — `Scopolamine_AlvarezJimenez2016_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="scopolamine" model-id="Scopolamine_AlvarezJimenez2016_reference" status="simulated" stale="false" population="healthy subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></div>
+> Scopolamine’s apparent central and peripheral volume of distribution, reported as 2.66 L, was held back because a second reader disputed its interpretation.
+
+<div class="pk-model-meta" hidden drug="scopolamine" model-id="Scopolamine_AlvarezJimenez2016_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Alvarez-Jimenez R, Groeneveld GJ, van Gerven JM, Goulooze SC, Baakman AC, Hay JL et al. Model-based exposure-response analysis to quantify age related differences in the response to scopolamine in healthy subjects. British journal of clinical pharmacology 82(4):1011–1021 (2016).
@@ -27,6 +29,8 @@ Alvarez-Jimenez R, Groeneveld GJ, van Gerven JM, Goulooze SC, Baakman AC, Hay JL
 <figure class="pk-models-diagram"><img src="drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference/Scopolamine_AlvarezJimenez2016_reference.svg" alt="Scopolamine_AlvarezJimenez2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | apparent central and peripheral volume of distribution | V | 2.66 | l |
@@ -34,7 +38,7 @@ Alvarez-Jimenez R, Groeneveld GJ, van Gerven JM, Goulooze SC, Baakman AC, Hay JL
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Alvarez-Jimenez R, Groeneveld GJ, van Gerven JM, Goulooze SC, Baakman AC, Hay JL
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Scopolamine’s apparent central and peripheral volume of distribution, reported as 2.66 L, was held back because a second reader disputed its interpretation.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader interpreted 2.66 L as the apparent central volume and identified an apparent peripheral volume of 62.1 L, rather than treating 2.66 L as a combined central and peripheral estimate. The cross-reader agreement was 0.5, with 0 of 1 readers agreeing. Extracted — scopolamine: V 2.66 l, CL 1.09 l min(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -117,14 +121,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=scopolamine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=scopolamine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Guaifenesin&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/&quot;},{&quot;label&quot;:&quot;Thompson_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guaifenesin_Abdelgawad2022_reference&quot;,&quot;label&quot;:&quot;Abdelgawad_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Abdelgawad2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guaifenesin_Knych2016_reference&quot;,&quot;label&quot;:&quot;Knych_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Knych2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guaifenesin_Thompson2016_reference&quot;,&quot;label&quot;:&quot;Thompson_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Thompson2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guaifenesin_Abdelgawad2022_reference&quot;,&quot;label&quot;:&quot;Abdelgawad_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Abdelgawad2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guaifenesin_Knych2016_reference&quot;,&quot;label&quot;:&quot;Knych_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Knych2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guaifenesin_Thompson2016_reference&quot;,&quot;label&quot;:&quot;Thompson_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_guaifenesin/Guaifenesin_Thompson2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Guaifenesin — `Guaifenesin_Thompson2016_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> Reconstruction failed to match reported tmax (0.5 vs 1.38 hours) and terminal half-life, as absorption rate ka was left at library defaults.
 
-<div class="pk-model-meta" hidden drug="Guaifenesin" model-id="Guaifenesin_Thompson2016_reference" status="extracted" stale="false" population="Children aged 2 to 17 years" measured-compound="Guaifenesin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Guaifenesin" model-id="Guaifenesin_Thompson2016_reference" status="needs_review" stale="false" population="Children aged 2 to 17 years" measured-compound="Guaifenesin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Thompson GA, Solomon G, Albrecht HH, Reitberg DP, Guenin E. Guaifenesin Pharmacokinetics Following Single-Dose Oral Administration in Children Aged 2 to 17 Years. Journal of clinical pharmacology 56(7):894–901 (2016).
@@ -31,6 +31,8 @@ Thompson GA, Solomon G, Albrecht HH, Reitberg DP, Guenin E. Guaifenesin Pharmaco
 <figure class="pk-models-diagram"><img src="drugs/toxin_guaifenesin/Guaifenesin_Thompson2016_reference/Guaifenesin_Thompson2016_reference.svg" alt="Guaifenesin_Thompson2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax (ng/mL) | Cmax | 1173 | ng/mL |
@@ -44,7 +46,7 @@ Thompson GA, Solomon G, Albrecht HH, Reitberg DP, Guenin E. Guaifenesin Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +54,13 @@ Thompson GA, Solomon G, Albrecht HH, Reitberg DP, Guenin E. Guaifenesin Pharmaco
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Reconstruction failed to match reported tmax (0.5 vs 1.38 hours) and terminal half-life, as absorption rate ka was left at library defaults.**
+
+Simulated tmax was 1.38 hours against the reported 0.5 hours, and the terminal half-life mismatched reported values of 0.6 to 4.0 hours. The absorption rate ka and lag time Tlag were not extracted from the source and relied on library placeholders. This lack of specific absorption parameters for guaifenesin prevented the model from accurately reproducing the observed pharmacokinetic profile. Extracted — guaifenesin: Cmax 1.17e+03 ng/mL, tmax 0.5 hours, AUC 1.73e+03 ng · h/mL, CL 57.9 L/h, CLnorm 178 L/h, V/F 50.1 L, Vnorm/F 3.2 L/kg, t1/2z 0.6 hours.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -115,6 +123,30 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 57.9 L/h |  |  | ['Thompson_2016_table_2:row8:col1', 'Thompson_2016_table_2:row8:col2', 'Thompson_2016_table_2:row8:col4'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 50.1 L |  |  | ['Thompson_2016_table_2:row12:col1', 'Thompson_2016_table_2:row12:col2', 'Thompson_2016_table_2:row12:col4'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters |  | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable |  | pass | C_central (measured=Guaifenesin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 0.0288 | 0.0004559 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.45 | 0.0004559 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.7 | 0.0004559 |  | unresolved concentration unit (exp 'hours', sim 'kg/m3') |
+| T1_t_half_beta | reference | skipped |  | 1.362 |  | non-numeric value |
+| T1_t_half_beta | reference | fail | 0.8 | 1.362 | 1.702 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 1.362 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 0.557 | 1.362 | 2.445 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.04 | 1.362 | 1.31 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 1.362 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 4 | 1.362 | 0.3405 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.5 | 1.381 | 2.763 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

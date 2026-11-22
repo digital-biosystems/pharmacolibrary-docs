@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Dilli_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Croxtall_1994_A549_cell_proliferation&quot;,&quot;label&quot;:&quot;Croxtall_1994 \u00b7 A549 cell proliferation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Croxtall_1994_A549_cell_proliferation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Montenegro_2011_vasorelaxation&quot;,&quot;label&quot;:&quot;Montenegro_2011 \u00b7 vasorelaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/pd_Montenegro_2011_vasorelaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Dilli2022_reference" status="needs_review" stale="false" population="adults with breast cancer" measured-compound="tamoxifen" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Dilli2022_reference" status="needs_review" stale="false" population="breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Dilli Batcha JS, Raju AP, Matcha S, Raj S EA, Udupa KS, Gota V et al. Factors Influencing Pharmacokinetics of Tamoxifen in Breast Cancer Patients: A Systematic Review of Population Pharmacokinetic Models. Biology 12(1) (2022).
@@ -17,15 +17,15 @@ Dilli Batcha JS, Raju AP, Matcha S, Raj S EA, Udupa KS, Gota V et al. Factors In
 
 ## Population and dosing
 
-**Population:** adults with breast cancer · condition breast cancer · age group adult.
+**Population:** breast cancer patients · condition breast cancer · age group adult.
 
 **Dosing:** 20, 160 mg, oral, single.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted, plus 1 covariate effect.  
+**Parameters:** 3 extracted, plus 1 covariate effect.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,12 +33,13 @@ Dilli Batcha JS, Raju AP, Matcha S, Raj S EA, Udupa KS, Gota V et al. Factors In
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| volume of distribution (Vd) during the steady state in the central compartment for the two-compartment model | V1 | 753 | L |
+| Tamoxifen’s volume of distribution (Vd) during the steady state in the central compartment for the two-compartment model ranged from | V1 | 753 | L |
 | the average edoxaban clearance was | CL | 32.0 | l/h |
+| sediment for | tlag | 50.0 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +51,9 @@ Dilli Batcha JS, Raju AP, Matcha S, Raj S EA, Udupa KS, Gota V et al. Factors In
 
 **This paper's disposition core is incomplete.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Bosch_2023) cannot stand in for this paper's evidence. Extracted — tamoxifen: V1 753 L, CL 32 l/h.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Bosch_2023, Jan_2000) cannot stand in for this paper's evidence. Extracted — tamoxifen: V1 753 L, CL 32 l/h, tlag 50 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tamoxifen, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tamoxifen → endoxifen (metabolism); tamoxifen → n-desmethyltamoxifen (metabolism), the second reading tamoxifen → endoxifen (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,8 +61,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| volume of distribution (Vd) during the steady state in the central compartment for the two-compartment model | `Q63` · V1 | 753 | L | 0.753 | m3 | L | boundary_compartment (0.9) | Dilli_2022:results_prose |
+| Tamoxifen’s volume of distribution (Vd) during the steady state in the central compartment for the two-compartment model ranged from | `Q63` · V1 | 753 | L | 0.753 | m3 | L | boundary_compartment (0.9) | Dilli_2022:results_prose |
 | the average edoxaban clearance was | `Q22` · CL | 32.0 | l/h | 8.889e-06 | m3/s | L/h | review_gapfill (0.7) | Bosch_2023:review |
+| sediment for | `Q83` · tlag | 50.0 | min | 3000 | s | h | review_gapfill (0.7) | Jan_2000:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,33 +72,34 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
-| label (paper) | Q-code |
-|---|---|
-| theta_q47_genotype | Q900 |
+| label (paper) | Q-code | link |
+|---|---|---|
+| Ter Heine et al. 2014 [15] | Q900 | llm |
+| theta_q319_age | Q900 |  |
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - column 'significant covariates' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'model structure' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'Ter Heine et al. 2014 [15]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row1:col4'])
 - dropped unlinked row (NIL): 'Schoell et al. 2020 [32]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row11:col4'])
 - dropped unlinked row (NIL): 'Schulze et al. 2020 [33]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row25:col4'])
 - dropped unlinked row (NIL): 'Puszkiel et al. 2021 [34]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row42:col4', 'biology-12-00051-t003:row42:col5'])
-- dropped unlinked row (NIL): 'Effect of age: −0.298' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row46:col1'])
+- dropped unlinked row (NIL): 'Effect of CYP3A4*22 genotype: 0.773' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row45:col1'])
 - dropped unlinked row (NIL): 'Dahmane et al. [35]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row74:col4'])
-- table mostly unlinked (6/7 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
-- covariate effect for Q47 has no base parameter row (kept as unattached equation-variable)
-- salvaged Q63 ('volume of distribution (Vd) during the steady state in the central compartment for the two-compartment model'=753) from results prose — parameter table was unreadable
+- table mostly unlinked (5/7 table-cell rows NIL) — likely the wrong table was located, not 2 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- salvaged Q63 ('Tamoxifen’s volume of distribution (Vd) during the steady state in the central compartment for the two-compartment model ranged from'=753) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tamoxifen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
-- pharmacogenetic covariate 'theta_q47_genotype' (genotype) — PGx domain
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0, 0]
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 0 linked by role; re-tagged endoxifen→parent ×2
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 0 linked by role; re-tagged parent→N-desmethyltamoxifen ×2
 - gap-filled Q22 (CL) from Bosch_2023's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q83 (tlag) from Jan_2000's review values (primary lacked it)
 
 **Extraction notes:**
 - table biology-12-00051-t003: ragged_grid
@@ -109,21 +112,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.0 (0/9 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['tamoxifen', 'endoxifen', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[puszkiel et al. 2021 [34]]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['tamoxifen', 'endoxifen', 'metabolism'], ['tamoxifen', 'n-desmethyltamoxifen', 'metabolism']] | [['tamoxifen', 'endoxifen', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[schoell et al. 2020 [32]]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tamoxifen’s volume of distribution (vd) during the steady state in the central compartment for the two-compartment model ranged from]` | 753 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ter heine et al. 2014 [15]]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_age]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q47_age]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q47_genotype]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q49_genotype]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution (vd) during the steady state in the central compartment for the two-compartment model]` | 753 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | tamoxifen | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | tamoxifen | unknown | mismatch |
 
 </details>
 
@@ -141,6 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bosch_2023:review'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Jan_2000:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32 | ['Bosch_2023:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 32 L/h | ['Bosch_2023:review'] |
@@ -178,4 +180,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_Dilli2022_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_Dilli2022_reference%0APaper%3A%20Dilli_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 12:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 21:48 UTC</sub>

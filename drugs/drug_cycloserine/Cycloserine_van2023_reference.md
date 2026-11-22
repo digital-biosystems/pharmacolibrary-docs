@@ -17,7 +17,7 @@ van der Laan LE, Garcia-Prats AJ, McIlleron H, Abdelwahab MT, Winckler JL, Drape
 
 ## Population and dosing
 
-**Population:** children with rifampicin-resistant tuberculosis · condition rifampicin-resistant tuberculosis · age group child · n = &gt;=.
+**Population:** children with rifampicin-resistant tuberculosis · condition rifampicin-resistant tuberculosis · age group child.
 
 **Dosed compound ≠ measured compound:** dosed terizidone, measured cycloserine.
 

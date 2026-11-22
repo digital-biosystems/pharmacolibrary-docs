@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;vecuronium&quot;,&quot;href&quot;:&quot;drugs/drug_vecuronium/&quot;},{&quot;label&quot;:&quot;Sohn_1986 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vecuronium_Xue1997_reference&quot;,&quot;label&quot;:&quot;Xue_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vecuronium/Vecuronium_Xue1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,7 +16,7 @@ Sohn YJ, Bencini AF, Scaf AH, Kersten UW, Agoston S. Comparative pharmacokinetic
 
 ## Population and dosing
 
-**Population:** anesthetized patients · condition healthy · age group adult · n = # This is an object. It should not be an integer, but the prompt demands flat YAML or JSON. The instruction says n_subjects is a plain integer. However, the override says JSON. I will use integer..
+**Population:** anesthetized patients · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed vecuronium bromide, measured vecuronium.
 

@@ -17,71 +17,7 @@ Chua L, Friedrich S, Zhang XC. Mirikizumab Pharmacokinetics in Patients with Mod
 
 ## Population and dosing
 
-**Population:** patients with moderately to severely active ulcerative colitis · condition ulcerative colitis · age group adult · n = — the modelled concentrations are mirikizumab's
-  #   metabolite_pk: a metabolite of mirikizumab is what is modelled
-  #   biomarker_turnover: the kinetic model describes an ENDOGENOUS substance
-  #     (uric acid, glucose, cholesterol, INR, platelets, a hormone …) — its
-  #     production, volume and clearance — and mirikizumab only perturbs
-  #     it (Rmax, Imax, IC50 on production or loss). Those V and CL are the
-  #     biomarker's, NOT the drug's pharmacokinetics.
-  #   exposure_response: no kinetic model; effect vs dose or concentration
-models_target_drug:  # yes or no - is mirikizumab (under ANY name: synonym, brand, code or
-                     #   abbreviation such as BCNU, ACNU, MTX, 5-FU) the dose_compound or the
-                     #   primary_analyte? 'no' when it is only a co-medication or comparator.
-final_table_hint:    # if is_poppk=yes, the table that reports the FINAL fitted PK parameter
-                     #   estimates (e.g. "Table 2" or its caption's first few words), else unknown
-software:            # NONMEM, Monolix, nlmixr, etc., or unknown
-has_control_stream:  # yes or no - is NONMEM/model code in the supplement?
-dose_compound:       # the compound the subject actually receives
-primary_analyte:     # the compound whose concentrations the model chiefly describes
-                     # NOTE: dose_compound and primary_analyte MAY DIFFER
-population:          # short label for the study population the FINAL parameters describe,
-                     #   e.g. "healthy adults", "preterm newborns", "paediatric oncology patients"
-age_class:           # one of: neonate | infant | child | adolescent | adult | elderly | mixed | unknown
-n_subjects:          # number of subjects in the analysis (a plain integer), or unknown
-condition:           # health/disease state, e.g. healthy | patent ductus arteriosus | renal impairment
-species:             # the species the data were measured in: human | rat | mouse | dog | cat |
-                     #   horse | cattle | sheep | goat | pig | rabbit | monkey | bird | fish |
-                     #   other animal (name it) | in vitro | unknown
-
-# List each compound on its own line under 'compounds', one per line, as:
-#   - name | role | dosed | measured | has_parameters
-# where role = parent | metabolite | co-administered | analyte-only | endogenous_biomarker
-#       (endogenous_biomarker = a substance the body makes, whose kinetics the model
-#        describes; it is never 'dosed')
-#       dosed = yes/no (subject receives it)
-#       measured = yes/no (its concentrations are modelled)
-#       has_parameters = yes/no (paper gives it V/CL or a compartment)
-compounds:
-  -
-
-# List each parent-&gt;metabolite (or interconversion) link on its own line under
-# 'links', one per line, as:
-#   - from | to | relation | link_parameter
-# where relation = metabolism | hydrolysis | interconversion
-#       link_parameter = Kfm | Fm | formation clearance | none
-# If there are no links, write 'links: none' on a single line.
-links:
-  -
-
-RULES:
-- dose_compound and primary_analyte may be different. Allopurinol dosed,
-  oxypurinol measured is a valid, common case. Do NOT collapse them to one name.
-- A model of an endogenous substance's turnover under the drug (uric acid under
-  allopurinol, INR under warfarin) is paper_class=biomarker_turnover with the substance
-  listed as role=endogenous_biomarker; is_poppk may still be yes for that model, but the
-  drug's own V/CL are then NOT reported.
-- population describes the group the FINAL model parameters characterise (the whole
-  analysis dataset), not a covariate subgroup. Prefer the paper's own wording.
-- species is REQUIRED whenever the paper states it (veterinary and preclinical studies
-  are common: "in cats", "Sprague-Dawley rats", "Thoroughbred horses"). Write human only when the subjects are people; do not assume it.
-- List EVERY compound, including inactive metabolites, with its role.
-- A compound measured but with has_parameters=no is mentioned but not modelled;
-  still list it.
-- Use the pipe character '|' to separate fields on the list lines.
-- Output ONLY the YAML. No prose, no code fences.
-
-OUTPUT FORMAT OVERRIDE: ignore any instruction above to answer in YAML. Return ONLY a JSON object matching the supplied schema. Put each value in its OWN named field — never repeat a field name as a value, never pack several values into one string..
+**Population:** patients with moderately to severely active ulcerative colitis · condition ulcerative colitis · age group adult.
 
 ## Model
 
@@ -197,6 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
 | T1_cmax | reference | fail | 0.0997 | 0.001237 | 0.0124 | μg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0101 | 0.001237 | 0.1224 | μg/mL→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | pass | 228 | 173 | 0.7587 | days→SI vs simulated h |

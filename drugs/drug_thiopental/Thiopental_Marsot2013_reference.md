@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;thiopental&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/&quot;},{&quot;label&quot;:&quot;Marsot_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiopental_Marsot2013_reference&quot;,&quot;label&quot;:&quot;Marsot_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Marsot2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Thiopental_Russo1997v3_reference&quot;,&quot;label&quot;:&quot;Russo_1997_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Russo1997v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_SolanaAltabella2025_reference&quot;,&quot;label&quot;:&quot;Solana-Altabella_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_SolanaAltabella2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiopental_Marsot2013_reference&quot;,&quot;label&quot;:&quot;Marsot_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Marsot2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Thiopental_Russo1997v3_reference&quot;,&quot;label&quot;:&quot;Russo_1997_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Russo1997v3_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_SolanaAltabella2025_reference&quot;,&quot;label&quot;:&quot;Solana-Altabella_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_SolanaAltabella2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Thiopental clearance and volume used abstract-only summary statistics, while bioavailability lacked a paper-specific value.
+> Thiopental's bioavailability and lag time were left at library defaults, while its central volume of 256.1 L was disputed by the second reader.
 
 <div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Marsot2013_reference" status="needs_review" stale="false" population="critically ill patients with intracranial hypertension" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Marsot A, Goirand F, Milési N, Dumas M, Boulamery A, Simon N. Interaction of th
 
 ### Reviewer guidance
 
-**Thiopental clearance and volume used abstract-only summary statistics, while bioavailability lacked a paper-specific value.**
+**Thiopental's bioavailability and lag time were left at library defaults, while its central volume of 256.1 L was disputed by the second reader.**
 
-The record relies on abstract-only data, meaning the reported parameters stand in for a fitted model. Consequently, the bioavailability parameter was left at a library placeholder, so a generic default was used rather than a value from the paper. The second reader could not confirm the central volume or absorption rate constant, leaving the extracted values unverified against the text. Extracted — thiopental: CL 5.3 L/h, V 256 l, kabs 1.68 h−1.
+The record was built from the abstract alone, so summary statistics stood in for a fitted model. Bioavailability and lag time were not reported, forcing the use of library defaults instead of paper-supported estimates. A second reader failed to confirm the central volume of 256.1 L, the absorption rate of 1.68 h⁻¹, or the total clearance of 5.3 L/h. Extracted — thiopental: CL 5.3 L/h, V 256 l, kabs 1.68 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thiopental, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -132,14 +132,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=thiopental) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=thiopental) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

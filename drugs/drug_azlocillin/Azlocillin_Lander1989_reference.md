@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;azlocillin&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/&quot;},{&quot;label&quot;:&quot;Lander_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azlocillin_Krupp1990_reference&quot;,&quot;label&quot;:&quot;Krupp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Lander RD, Henderson RP, Pyszczynski DR. Pharmacokinetic comparison of 5 g of az
 
 ## Population and dosing
 
-**Population:** healthy volunteers · age group adult · n = This study compared the multiple-dose pharmacokinetics of azlocillin using two different regimens. The text specifies that serum concentrations were fitted to a two-compartment open model. It mentions 12 healthy volunteers. Azlocillin is the drug being dosed and measured. The model is a compartmental PK model (two-compartment open) but it is described as 'fitted... by nonlinear regression' rather than explicitly a population PK model (though compartmental models are a type of PK model, the prompt asks 'is a population or compartmental PK model present'). It is a compartmental model. The paper class is drug_pk. The dose compound is azlocillin. The primary analyte is azlocillin. The population is healthy volunteers. The age class is adult (implied by healthy volunteers for such studies, usually adults). Number of subjects is 12. Condition is healthy. Species is human. The only compound is azlocillin, which is dosed, measured, and has parameters. There are no metabolites or links mentioned..
+**Population:** healthy volunteers · age group adult.
 
 ## Model
 

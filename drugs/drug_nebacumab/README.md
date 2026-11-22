@@ -16,7 +16,7 @@ Nebacumab is a monoclonal antibody intended for the treatment of sepsis.
 
 ## Start here
 
-> **Romano_1993_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> pediatric patients with sepsis syndrome or septic shock, n = .. [Run it in the simulator](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md?tab=Simulation) · [record](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md)
+> **Romano_1993_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> pediatric patients with sepsis syndrome or septic shock. [Run it in the simulator](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md?tab=Simulation) · [record](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -24,7 +24,7 @@ Nebacumab is a monoclonal antibody intended for the treatment of sepsis.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Romano_1993_reference](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of pediatrics (1993) | [10.1016/s0022-3476(09)90031-2](https://doi.org/10.1016/s0022-3476(09)90031-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Romano_1993_reference](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of pediatrics (1993) | [10.1016/s0022-3476(09)90031-2](https://doi.org/10.1016/s0022-3476(09)90031-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

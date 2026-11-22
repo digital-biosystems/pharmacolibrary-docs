@@ -5,11 +5,11 @@
 
 # ofatumumab — `Ofatumumab_Yu2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:18 UTC (Rejected), but the paper was screened again on 2026-10-07 18:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant parameter, labeled β(Vc,lwt70), lacks a valid unit, preventing standardization.
+> The equilibrium dissociation constant unit (nmol/L) conflicts with the model's mass-based dimension requirements, causing rejection of the record for ofatumumab.
 
-<div class="pk-model-meta" hidden drug="ofatumumab" model-id="Ofatumumab_Yu2022_reference" status="rejected" stale="true" population="adults with relapsing multiple sclerosis" measured-compound="ofatumumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ofatumumab" model-id="Ofatumumab_Yu2022_reference" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="ofatumumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pharmacokinetic-B Cell Modeling for Ofatumumab in Patients with Relapsing Multiple Sclerosis. CNS drugs 36(3):283–300 (2022).
@@ -46,7 +46,7 @@ Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.913). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.913). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pha
 
 ### Reviewer guidance
 
-**The elimination rate constant parameter, labeled β(Vc,lwt70), lacks a valid unit, preventing standardization.**
+**The equilibrium dissociation constant unit (nmol/L) conflicts with the model's mass-based dimension requirements, causing rejection of the record for ofatumumab.**
 
-The elimination rate constant (kel) is recorded with the non-standard unit 'Vc,lwt70' rather than a time-based rate unit. This missing unit prevents conversion to SI, resulting in a dimension mismatch for this structural parameter. Consequently, the record was rejected because the parameter lacked a valid standard value. Extracted — ofatumumab: kabs 0.157 day−1, Fab 0.685, V1 2.62 L, kel 1.2 Vc,lwt70, CL 0.34 L/day, Q 0.358 L/day, V2 2.8 L, KD 0.167 nmol/L, … (+2).
+The extracted value for KD is 0.167 nmol/L, but the model structure expects dimensions of mass over length cubed rather than substance over length cubed. This dimensional mismatch prevents the parameter from being converted to standard SI units for the model. Additionally, the second reader identified values for the additive residual error and target-mediated clearance that were missing from the primary extraction. Extracted — ofatumumab: kabs 0.157 day−1, Fab 0.685, V1 2.62 L, kel 1.2 Vc,lwt70, CL 0.34 L/day, Q 0.358 L/day, V2 2.8 L, KD 0.167 nmol/L, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ofatumumab conc. additive: this record has none, the second reading 0.0316; it also differs on 1 more field. That field does not shape the model.
 

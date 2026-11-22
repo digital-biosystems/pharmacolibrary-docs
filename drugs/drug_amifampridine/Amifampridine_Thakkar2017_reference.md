@@ -58,9 +58,9 @@ Thakkar N, Guptill JT, Aleš K, Jacobus D, Jacobus L, Peloquin C et al. Populati
 
 ### Reviewer guidance
 
-**The amifampridine–3-Ac DAP model was not simulated, leaving the 23.3 L/h metabolite clearance untested.**
+**The model was not simulated, leaving the 23.3 L/h metabolite clearance and 1.1 weight exponent untested in covariate scenarios.**
 
-The record specifies a parent-metabolite structure but the build did not exercise the defined covariates or the parent-to-metabolite link. The 23.3 L/h metabolite clearance and 52.3 L metabolite volume remain unverified in simulation. The second reader’s disagreements on metabolite parameter presence do not alter the primary non-simulation status. Extracted — amifampridine: kabs 1.1 h−1, CL/F 108 L/h, V1/F 72.6 L, Q/F 148 L/h, V2/F 902 L; 3-N-acetyl-3,4-diaminopyridine (3-Ac DAP): CL 23.3 L/h, V 52.3 L.
+The record specifies a parent-metabolite structure but no simulation was performed, resulting in a not-simulated verdict. Consequently, the defined covariate effect, a weight power of 1.1 on metabolite clearance, was never exercised. A second reader also disputed the metabolite link, disagreeing on whether the metabolism pathway and associated parameters should be included. Extracted — amifampridine: kabs 1.1 h−1, CL/F 108 L/h, V1/F 72.6 L, Q/F 148 L/h, V2/F 902 L; 3-N-acetyl-3,4-diaminopyridine (3-Ac DAP): CL 23.3 L/h, V 52.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 3,4-diaminopyridine (amifampridine) free base, the second reading 3,4-diaminopyridine (3,4-DAP) free base; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -172,14 +172,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 6 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 6 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

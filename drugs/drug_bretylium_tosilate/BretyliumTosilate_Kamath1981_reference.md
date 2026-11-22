@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Record was held because absorption and distribution rate constants were left at library defaults instead of using estimates from the paper.
+> Bretylium’s apparent volume of distribution, V/F, was recorded as 15 liters/kg from abstract-only statistics, while unreported model parameters were defaulted, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Kamath1981_reference" status="needs_review" stale="false" population="rats" measured-compound="bretylium" parameterization="apparent" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Kamath BL, Stampfli HF, Lai CM, Yacobi A. Pharmacokinetics of [14C]bretylium tos
 
 ## Population and dosing
 
-**Population:** male Charles River rats · condition healthy · age group adult · n = &gt;=8.
+**Population:** male Charles River rats · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed bretylium_tosilate, measured bretylium.
 
@@ -56,13 +56,13 @@ Kamath BL, Stampfli HF, Lai CM, Yacobi A. Pharmacokinetics of [14C]bretylium tos
 
 ### Reviewer guidance
 
-**Record was held because absorption and distribution rate constants were left at library defaults instead of using estimates from the paper.**
+**Bretylium’s apparent volume of distribution, V/F, was recorded as 15 liters/kg from abstract-only statistics, while unreported model parameters were defaulted, so the record was held back.**
 
-The source text is abstract-only, so summary statistics stand in for fitted model estimates. The model builder used defaults for the absorption rate constant, first-order depot input, and the inter-compartmental distribution rate constants. The second reader could not independently verify the extracted parameter values, recording them as unknown. Extracted — bretylium tosilate: V/F 15 liters/kg, t1/2β 5.5 hr, V1/F 1 liter/kg, CL 1.93 liters/hr/kg, CLR 1.27 liters/hr/kg, kexcr 1.24 hr-1.
+Ka, k12, and k21 use library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model, and absorption rate ka was defaulted despite not being reported. A second reader disputed the apparent parameterization and did not recognize the recorded apparent volumes, half-life, excretion rate constant, or plasma clearance. Extracted — bretylium tosilate: V/F 15 liters/kg, t1/2β 5.5 hr, V1/F 1 liter/kg, CL 1.93 liters/hr/kg, CLR 1.27 liters/hr/kg, kexcr 1.24 hr-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bretylium_tosilate, the second reading bretylium tosylate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -147,15 +147,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=bretylium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; invented_absorption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=bretylium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -26,7 +26,7 @@ Vinylbital is a barbiturate used as a sedative and hypnotic to calm the central 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Breimer_1976_reference](drugs/drug_vinylbital/Vinylbital_Breimer1976_reference.md) | — | 1-compartment (no model) | 3 | Breimer DD et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1976) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Breimer_1976_reference](drugs/drug_vinylbital/Vinylbital_Breimer1976_reference.md) | — | 1-compartment (no model) | 3 | Breimer DD et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1976) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ Vinylbital is a barbiturate used as a sedative and hypnotic to calm the central 
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

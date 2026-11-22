@@ -4,11 +4,11 @@
 
 # exenatide — `Exenatide_Cirincione2017_single_dose_model_parameter_estimat`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-22 09:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because the intrinsic clearance unit L/day caused a dimension mismatch against the mg/day Vmax unit.
+> Rejected because the intercompartmental clearance unit is dimensionally inconsistent with a volume flow, causing a structural mismatch.
 
-<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017_single_dose_model_parameter_estimat" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017_single_dose_model_parameter_estimat" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Release Formulation of Exenatide Following Single- and Multiple-Dose Administration. The AAPS journal 19(2):487–496 (2017).
@@ -47,7 +47,7 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.55). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.55). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 ### Reviewer guidance
 
-**Rejected because the intrinsic clearance unit L/day caused a dimension mismatch against the mg/day Vmax unit.**
+**Rejected because the intercompartmental clearance unit is dimensionally inconsistent with a volume flow, causing a structural mismatch.**
 
-The record defines CLint as 110 L/day and Vmax as 0.037 mg/day. A second reader also disagreed on the extraction of the dose compound, primary analyte, and weight-corrected volume of distribution. These unit inconsistencies prevented the model from being validated. Extracted — exenatide: kabs 2.98 1/day, CLint 110 L/day, V 7.03 L, Fab 1.13 %, ktr 0.0872 1/day, Km 567 pg/mL, Vmax 0.037 mg/day, Q 89.3 L/day, … (+2).
+The parameter named 'Q' is defined as the apparent intercompartmental clearance between central and peripheral compartments, which requires a volume flow dimension, yet it is listed with the unit L/day and a value of 89.3. This conflicts with the required dimension of length cubed over time. Additionally, the absolute bioavailability Fab is reported as a percentage (1.13%) rather than a dimensionless fraction, contributing to the dimensional inconsistencies identified in the review. Extracted — exenatide: kabs 2.98 1/day, CLint 110 L/day, V 7.03 L, Fab 1.13 %, ktr 0.0872 1/day, Km 567 pg/mL, Vmax 0.037 mg/day, Q 89.3 L/day, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

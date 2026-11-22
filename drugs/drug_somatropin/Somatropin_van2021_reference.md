@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record is incomplete because bioavailability and lag time were left at library defaults rather than using estimates from the paper.
+> Somatropin bioavailability and lag time lacked explicit values in the van_2021 record, preventing reliable model simulation.
 
 <div class="pk-model-meta" hidden drug="somatropin" model-id="Somatropin_van2021_reference" status="needs_review" stale="false" population="" measured-compound="somatropin" parameterization="mechanistic" topology="1C"></div>
 
@@ -39,7 +39,7 @@ van Esdonk MJ, Stevens J. The power of modelling pulsatile profiles. Journal of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,11 @@ van Esdonk MJ, Stevens J. The power of modelling pulsatile profiles. Journal of 
 
 ### Reviewer guidance
 
-**The record is incomplete because bioavailability and lag time were left at library defaults rather than using estimates from the paper.**
+**Somatropin bioavailability and lag time lacked explicit values in the van_2021 record, preventing reliable model simulation.**
 
-The clearance and volume of distribution for somatropin were extracted with values of 15.0 L/h and 65.0 L. However, the bioavailability fraction and absorption lag time were not explicitly reported in the source text. The record relies on conventional defaults for these parameters instead of paper-specific estimates. Extracted — somatropin: CL 15 L/h, V 65 L, kabs 0.95 /h.
+The record provides clearance (15.0 L/h) and volume of distribution (65.0 L), but omits explicit estimates for bioavailability and lag time. Consequently, library placeholders were used for these missing parameters instead of values derived from the paper. A second reader also disagreed on a specific extracted value, identifying an extraction gap where the record contains no data. Extracted — somatropin: CL 15 L/h, V 65 L, kabs 0.95 /h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 1, the second reading 1; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q38: this record has none, the second reading 75. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -81,19 +81,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q32]` | 1 | 1 | mismatch |
-| `gpt-oss-120b` | `values[Q335]` | 0.25 | 0.25 | mismatch |
 | `gpt-oss-120b` | `values[Q38]` |  | 75 | only_one_extracted |
 
 </details>
@@ -121,14 +119,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=somatropin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=dev_001: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=somatropin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

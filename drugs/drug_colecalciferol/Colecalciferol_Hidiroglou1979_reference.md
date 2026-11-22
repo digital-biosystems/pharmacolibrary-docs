@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;colecalciferol&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/&quot;},{&quot;label&quot;:&quot;Hidiroglou_1979 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colecalciferol_Deb2020_reference&quot;,&quot;label&quot;:&quot;Deb_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Colecalciferol_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colecalciferol_Deb2020_reference&quot;,&quot;label&quot;:&quot;Deb_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Colecalciferol_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # colecalciferol — `Colecalciferol_Hidiroglou1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 16:08 UTC (Needs review), but the paper was screened again on 2026-10-05 07:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="colecalciferol" model-id="Colecalciferol_Hidiroglou1979_reference" status="needs_review" stale="true" population="lambs with osteodystrophy" measured-compound="25-hydroxycholecalciferol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="colecalciferol" model-id="Colecalciferol_Hidiroglou1979_reference" status="needs_review" stale="false" population="lambs with osteodystrophy" measured-compound="25-hydroxycholecalciferol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hidiroglou M, Williams CJ, Ivan M. Pharmacokinetics and amounts of 25-hydroxycholecalciferol in sheep affected by osteodystrophy. Journal of dairy science 62(4):567–571 (1979).
@@ -43,7 +43,7 @@ Hidiroglou M, Williams CJ, Ivan M. Pharmacokinetics and amounts of 25-hydroxycho
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +57,7 @@ Hidiroglou M, Williams CJ, Ivan M. Pharmacokinetics and amounts of 25-hydroxycho
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Deb_2020, Hoeben_2026, Jia_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is colecalciferol's own; they describe 25-hydroxycholecalciferol. Extracted — 25-hydroxycholecalciferol: Cmax 0.6 ng/mL, t1/2z 3.1 h, CL 2.61 L/h, V 0.0636 L/kg, kabs 0.14 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has colecalciferol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has colecalciferol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -106,15 +106,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[peak 25-hydroxycholecalciferol].parameter_id` | Q32 | Q56 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | colecalciferol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | 25-hydroxycholecalciferol | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[peak 25-hydroxycholecalciferol].parameter_id` | Q32 | Q56 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | colecalciferol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 25-hydroxycholecalciferol | unknown | mismatch |
 
 </details>
 

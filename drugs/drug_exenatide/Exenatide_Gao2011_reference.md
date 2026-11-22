@@ -4,11 +4,11 @@
 
 # exenatide — `Exenatide_Gao2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-22 09:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The receptor binding association rate constant for exenatide has an invalid unit, causing a dimension mismatch.
+> Exenatide's receptor binding rate constants were rejected because their reported units were not recognized for dimensional analysis.
 
-<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Gao2011_reference" status="rejected" stale="true" population="type 2 diabetic Goto-Kakizaki rats" measured-compound="exendin-4" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Gao2011_reference" status="rejected" stale="false" population="type 2 diabetic Goto-Kakizaki rats" measured-compound="exendin-4" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gao W, Jusko WJ. Pharmacokinetic and pharmacodynamic modeling of exendin-4 in type 2 diabetic Goto-Kakizaki rats. The Journal of pharmacology and experimental therapeutics 336(3):881–890 (2011).
@@ -45,7 +45,7 @@ Gao W, Jusko WJ. Pharmacokinetic and pharmacodynamic modeling of exendin-4 in ty
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Gao W, Jusko WJ. Pharmacokinetic and pharmacodynamic modeling of exendin-4 in ty
 
 ### Reviewer guidance
 
-**The receptor binding association rate constant for exenatide has an invalid unit, causing a dimension mismatch.**
+**Exenatide's receptor binding rate constants were rejected because their reported units were not recognized for dimensional analysis.**
 
-The association rate constant is recorded with a unit value of '38', which is not a recognized pharmacokinetic unit. This invalid unit prevented the conversion to SI units, triggering a dimension mismatch check on the structural parameter. The record was rejected due to this inability to validate the parameter's physical dimensions. Extracted — exenatide: V 90.5 ml/kg, kon 0.0794 38, koff 0.015 38, kint 0.00358 38, Rtot 5.17 nM, Fab 0.507, CL 0.059 L/h, kabs 0.006 h-1.
+The association, dissociation, and internalisation rate constants list a unit code that the system does not recognize, preventing conversion to standard SI units. This caused a dimension mismatch error, meaning the values could not be validated against their physical definitions. The record also notes discrepancies in clearance and absorption parameters compared to a second reader's assessment. Extracted — exenatide: V 90.5 ml/kg, kon 0.0794 38, koff 0.015 38, kint 0.00358 38, Rtot 5.17 nM, Fab 0.507, CL 0.059 L/h, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

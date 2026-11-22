@@ -27,11 +27,11 @@ Filgotinib is a JAK inhibitor used to treat rheumatoid arthritis and ulcerative 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q19 — no SI value to build from</sub> | [Namour_2015_anova_p_value](drugs/drug_filgotinib/Filgotinib_Namour2015_anova_p_value.md) | — | parent + metabolite (no model) | 5 | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q19 — no SI value to build from</sub> | [↳ anovaa_p_value](drugs/drug_filgotinib/Filgotinib_Namour2015_anovaa_p_value.md) | — | parent + metabolite (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q19 — no SI value to build from</sub> | [↳ anovaa_p_value_tukey_s_test](drugs/drug_filgotinib/Filgotinib_Namour2015_anovaa_p_value_tukey_s_test.md) | — | parent + metabolite (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ filgotinib](drugs/drug_filgotinib/Filgotinib_Namour2015_filgotinib.md) | — | parent + metabolite (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q19 — no SI value to build from</sub> | [↳ metabolite](drugs/drug_filgotinib/Filgotinib_Namour2015_metabolite.md) | — | parent + metabolite (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q19 — no SI value to build from</sub> | [Namour_2015_anova_p_value](drugs/drug_filgotinib/Filgotinib_Namour2015_anova_p_value.md) | — | parent + metabolite (no model) | 5 | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q19 — no SI value to build from</sub> | [↳ anovaa_p_value](drugs/drug_filgotinib/Filgotinib_Namour2015_anovaa_p_value.md) | — | parent + metabolite (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q19 — no SI value to build from</sub> | [↳ anovaa_p_value_tukey_s_test](drugs/drug_filgotinib/Filgotinib_Namour2015_anovaa_p_value_tukey_s_test.md) | — | parent + metabolite (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ filgotinib](drugs/drug_filgotinib/Filgotinib_Namour2015_filgotinib.md) | — | parent + metabolite (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q19 — no SI value to build from</sub> | [↳ metabolite](drugs/drug_filgotinib/Filgotinib_Namour2015_metabolite.md) | — | parent + metabolite (no model) | 5 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [↳ estimate_rse](drugs/drug_filgotinib/Filgotinib_Namour2015_estimate_rse.md) | — | parent + metabolite (no model) | 12 (+2 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
@@ -39,24 +39,6 @@ Filgotinib is a JAK inhibitor used to treat rheumatoid arthritis and ulcerative 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Namour_2015_pSTAT1](drugs/drug_filgotinib/pd_Namour_2015_pSTAT1.md) | pSTAT1-positive cells biomarker turnover ← filgotinib and metabolite | — | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=filgotinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CES1` metabolizer, `CES2` metabolizer | DrugBank actor |
-| metabolism | small intestine | `CES2` metabolizer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: JAK1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -76,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 6  ·  extracted 0  ·  needs review 5  ·  rejected 1  ·  stale 5
+- **records:** 6  ·  extracted 0  ·  needs review 5  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

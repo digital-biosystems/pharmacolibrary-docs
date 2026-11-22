@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Folic acid clearance is recorded as 2 per month, an implausible magnitude indicating a unit extraction error, causing rejection because the unit could not be converted to SI.
 
 <div class="pk-model-meta" hidden drug="Folic acid" model-id="FolicAcid_HERBERT1962_reference" status="rejected" stale="false" population="Normal subjects" measured-compound="Folic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,7 +48,13 @@ HERBERT V, ZALUSKY R. Interrelations of vitamin B12 and folic acid metabolism: f
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Folic acid clearance is recorded as 2 per month, an implausible magnitude indicating a unit extraction error, causing rejection because the unit could not be converted to SI.**
+
+The clearance parameter for folic acid has a value of 2 with the verbatim unit 'month', which falls outside the physiological window for this drug. The reported unit 'month' could not be converted to standard SI units, preventing the calculation of a valid clearance value. Consequently, the parameter retained its original, non-standard unit definition, leading to the record's rejection due to implausible magnitude. Extracted — folic acid: CL 2 month, kel 15 1/h, V 26.7 (mL).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

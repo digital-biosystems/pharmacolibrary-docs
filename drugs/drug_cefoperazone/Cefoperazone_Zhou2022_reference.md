@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefoperazone&quot;,&quot;href&quot;:&quot;drugs/drug_cefoperazone/&quot;},{&quot;label&quot;:&quot;Zhou_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefoperazone_Soback1989_reference&quot;,&quot;label&quot;:&quot;Soback_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoperazone/Cefoperazone_Soback1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefoperazone_Zhou2022_reference&quot;,&quot;label&quot;:&quot;Zhou_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoperazone/Cefoperazone_Zhou2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefoperazone_Soback1989_reference&quot;,&quot;label&quot;:&quot;Soback_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoperazone/Cefoperazone_Soback1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefoperazone_Zhou2022_reference&quot;,&quot;label&quot;:&quot;Zhou_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefoperazone/Cefoperazone_Zhou2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.12, model 0.0157); the model does not reproduce the paper's terminal half-life (paper 4.49, model 12.4).
+> The cefoperazone model yields a terminal half-life of 12.4 h and Cmax of 0.0157 mg/L, conflicting with paper values of 4.49 h and 0.12 mg/L.
 
 <div class="pk-model-meta" hidden drug="cefoperazone" model-id="Cefoperazone_Zhou2022_reference" status="needs_review" stale="false" population="patients with hospital-acquired pneumonia" measured-compound="cefoperazone" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Zhou Y, Zhang J, Chen Y, Wu J, Guo B, Wu X et al. Combined PK/PD Index May Be a 
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.12, model 0.0157); the model does not reproduce the paper's terminal half-life (paper 4.49, model 12.4).**
+**The cefoperazone model yields a terminal half-life of 12.4 h and Cmax of 0.0157 mg/L, conflicting with paper values of 4.49 h and 0.12 mg/L.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cefoperazone: CL 4.45 L/h, V1 7.97 L, Q 12 L/h, V2 9.03 L.
+The simulated peak concentration is 0.1308 and 0.5728 times the expected values, indicating significant under-prediction. The simulated terminal half-life is 2.7593 and 6.8073 times the expected values, indicating significant over-prediction. A second reader disputed the verdict by identifying cefoperazone/sulbactam as the analyte and noting missing model links. Extracted — cefoperazone: CL 4.45 L/h, V1 7.97 L, Q 12 L/h, V2 9.03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has cefoperazone, the second reading cefoperazone/sulbactam; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -143,6 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.12 | 0.0157 | 0.1308 | mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0274 | 0.0157 | 0.5728 | mg/L→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | fail | 4.49 | 12.39 | 2.759 | h→SI vs simulated h |

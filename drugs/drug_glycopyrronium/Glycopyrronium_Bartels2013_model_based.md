@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 52.5, model 24.2).
+> Glycopyrronium bioavailability and lag time were left at library defaults rather than extracted from the Bartels paper.
 
 <div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Bartels2013_model_based" status="needs_review" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;$n_subjects&lt;/unknown.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 **Dosing:** 120, 200, 400 mg, oral, inhaled, iv, single.
 
@@ -53,13 +53,13 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 52.5, model 24.2).**
+**Glycopyrronium bioavailability and lag time were left at library defaults rather than extracted from the Bartels paper.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — glycopyrronium: CL 44.9 L/h, Vss 102 L, t1/2z 0.45 h, t1/2ka 80 h, V 22.4 L/kg.
+The record lists a systemic clearance of 44.9 L/h and a terminal half-life of 80 h, but lacks reported values for bioavailability and lag time. Consequently, the model builder applied library placeholder values for these parameters instead of using explicit estimates. A second reader disputed the record, specifically assigning a bioavailability of 1.11 and an intercompartmental clearance of 8.23 L/h, which were not present in the primary extraction. Extracted — glycopyrronium: CL 44.9 L/h, Vss 102 L, t1/2z 0.45 h, t1/2ka 80 h, V 22.4 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 1.11; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -171,11 +171,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T2_covariates |  | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable |  | pass | C_central (measured=glycopyrronium) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | fail | 52.5 | 24.18 | 0.4607 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 57.2 | 24.18 | 0.4228 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 84 | 24.18 | 0.2879 | days→SI vs simulated h |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.263, 0 of 1 reader(s) agree | 0.263 | cross-check disputed by a second reader: verdict disputed, agreement 0.263, 0 of 1 reader(s) agree |
+| T1_t_half_terminal | reference | skipped | 52.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 57.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 3.5 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -16,7 +16,7 @@ Parker SL, Frantzeskaki F, Wallis SC, Diakaki C, Giamarellou H, Koulenti D et al
 
 ## Population and dosing
 
-**Population:** critically ill patients · age group adult · n = No.
+**Population:** critically ill patients · age group adult.
 
 ## Model
 

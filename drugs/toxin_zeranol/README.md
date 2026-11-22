@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Zeranol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zeranol_Qu2024_mass_value_mg&quot;,&quot;label&quot;:&quot;Qu_2024_mass_value_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zeranol_Qu2024_value&quot;,&quot;label&quot;:&quot;Qu_2024_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zeranol_Qu2024_mass_value_mg&quot;,&quot;label&quot;:&quot;Qu_2024_mass_value_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zeranol_Qu2024_value&quot;,&quot;label&quot;:&quot;Qu_2024_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_zeranol/Zeranol_Qu2024_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Zeranol
 
@@ -35,7 +35,7 @@ Zeranol is isolated from Fusarium species. It is an anabolic agent and estrogeni
 
 ## Start here
 
-> **Qu_2024_mass_value_mg** — <span class="pk-badge pk-badge--neutral">Not simulated</span> female Dezhou donkeys, n = 4. [Run it in the simulator](drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md?tab=Simulation) · [record](drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md)
+> **Qu_2024_mass_value_mg** — <span class="pk-badge pk-badge--orange">Needs review</span> female Dezhou donkeys, n = 4. [Run it in the simulator](drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md?tab=Simulation) · [record](drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -43,7 +43,7 @@ Zeranol is isolated from Fusarium species. It is an anabolic agent and estrogeni
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Qu_2024_mass_value_mg](drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md) | ▶ model + simulator | 1-compartment, IV | 4 | Qu H et al., Toxicokinetics of Zearalenone following…, Toxins (2024) | [10.3390/toxins16010051](https://doi.org/10.3390/toxins16010051) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub> | [Qu_2024_mass_value_mg](drugs/toxin_zeranol/Zeranol_Qu2024_mass_value_mg.md) | ▶ model + simulator | 1-compartment, IV | 4 | Qu H et al., Toxicokinetics of Zearalenone following…, Toxins (2024) | [10.3390/toxins16010051](https://doi.org/10.3390/toxins16010051) |
 | <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [↳ value](drugs/toxin_zeranol/Zeranol_Qu2024_value.md) | ▶ model + simulator | 1-compartment, IV | 6 |  |  |
 | <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Qin_2026_reference](drugs/toxin_zeranol/Zeranol_Qin2026_reference.md) | — | general linear (no model) | 9 | Qin J et al., Toxicokinetics, Biotransformation, Excr…, Toxins (2026) | [10.3390/toxins18090364](https://doi.org/10.3390/toxins18090364) |
 
@@ -51,7 +51,7 @@ Zeranol is isolated from Fusarium species. It is an anabolic agent and estrogeni
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">cattle</span> | [Leporati_2012_zeranol](drugs/toxin_zeranol/pd_Leporati_2012_zeranol.md) | zeranol ← zeranol · model not identified | — | Leporati M et al., Fit-for-purpose in veterinary drug resi…, Journal of separation scien… (2012) | [10.1002/jssc.201100691](https://doi.org/10.1002/jssc.201100691) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">cattle</span> | [Leporati_2012_zeranol](drugs/toxin_zeranol/pd_Leporati_2012_zeranol.md) | zeranol ← zeranol · model not identified | — | Leporati M et al., Fit-for-purpose in veterinary drug resi…, Journal of separation scien… (2012) | [10.1002/jssc.201100691](https://doi.org/10.1002/jssc.201100691) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,7 +71,7 @@ Zeranol is isolated from Fusarium species. It is an anabolic agent and estrogeni
 
 - **PubMed hits:** 41 matched, 41 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

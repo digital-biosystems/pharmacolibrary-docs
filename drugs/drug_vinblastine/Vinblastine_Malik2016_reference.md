@@ -1,20 +1,24 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Malik_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Nelson1982_vinblastine&quot;,&quot;label&quot;:&quot;Nelson_1982_vinblastine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Nelson1982_vinblastine.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Malik2016_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Malik2016_reference" status="not_modelled" stale="false" population="Hodgkin&#39;s lymphoma patients" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00771, model 7.04e-05); the model does not reproduce the paper's time of the peak (tmax) (paper 0.66, model 0.183) (+1 more).
+
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Malik2016_reference" status="needs_review" stale="false" population="Hodgkin&#39;s lymphoma patients" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Malik MZ, Ahmad M, Muahammad S, Aamir MN. Pharmacokinetic evaluation of anticancer drugs in Hodgkin's lymphoma patients after their simultaneous administration. Pakistan journal of pharmaceutical sciences 29(6):2079–2082 (2016).
 
 ## Population and dosing
 
-**Population:** Hodgkin's lymphoma patients · condition Hodgkin's lymphoma · age group adult · n = The abstract states a pharmacokinetic study of anticancer drugs was carried out in 18 Hodgkin's lymphoma male patients..
+**Population:** Hodgkin's lymphoma patients · condition Hodgkin's lymphoma · age group adult.
+
+**Dosed compound ≠ measured compound:** dosed ABVD (Adriamycin, Bleomycin, Vinblastine, Dacarbazine), measured vinblastine.
 
 ## Model
 
@@ -26,7 +30,7 @@ Malik MZ, Ahmad M, Muahammad S, Aamir MN. Pharmacokinetic evaluation of anticanc
 <figure class="pk-models-diagram"><img src="drugs/drug_vinblastine/Vinblastine_Malik2016_reference/Vinblastine_Malik2016_reference.svg" alt="Vinblastine_Malik2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -41,7 +45,7 @@ Malik MZ, Ahmad M, Muahammad S, Aamir MN. Pharmacokinetic evaluation of anticanc
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +55,9 @@ Malik MZ, Ahmad M, Muahammad S, Aamir MN. Pharmacokinetic evaluation of anticanc
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00771, model 7.04e-05); the model does not reproduce the paper's time of the peak (tmax) (paper 0.66, model 0.183) (+1 more).**
 
-A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — vinblastine: Cmax 7.95 μg/ml, tmax 0.08 h, AUC∞ 246 μg/ml*h, kel 0.02 h-1, t1/2z 35.1 h, MRT 48.8 h, CL 45.9 ml/h, V 2.03 L/Kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -128,24 +132,27 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | note |
-|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  | no covariate effects in record |
-| T3_param_coverage |  | skipped |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations |  | pass |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 7.71 | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 4.32 | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 7.95 | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 6.51 | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 22.81 | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 4.15 | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 35.06 | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 6.8 | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 0.66 | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 0.1 | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 0.08 | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.22 | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=vinblastine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| T1_cmax | reference | fail | 0.00771 | 7.037e-05 | 0.0091 | µg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00432 | 7.037e-05 | 0.0163 | µg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00795 | 7.037e-05 | 0.0089 | µg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00651 | 7.037e-05 | 0.0108 | µg/ml→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 22.81 | 2146 | 94.08 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.15 | 2146 | 517.1 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 35.06 | 2146 | 61.21 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.8 | 2146 | 315.6 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.66 | 0.1833 | 0.2778 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.1 | 0.1833 | 1.833 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.08 | 0.1833 | 2.292 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 1.22 | 0.1833 | 0.1503 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -222,4 +229,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Malik2016_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Malik2016_reference%0APaper%3A%20Malik_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Malik2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 18:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:11 UTC</sub>

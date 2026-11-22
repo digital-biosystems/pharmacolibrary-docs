@@ -17,20 +17,11 @@ Ibritumomab tiuxetan is a radioimmunotherapy treatment and monoclonal antibody u
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Morschhauser_2018_f1](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_f1.md) | — | 1-compartment (no model) | 6 | Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018) | [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ f2](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_f2.md) | — | 1-compartment (no model) | 10 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ liver](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_liver.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ lumbar_vertebrae_l2_l4](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_lumbar_vertebrae_l2_l4.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ spleen](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_spleen.md) | — | 1-compartment (no model) | 6 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ibritumomab_tiuxetan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: MS4A1 (antibody), MS4A1 (regulator).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Morschhauser_2018_f1](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_f1.md) | — | 1-compartment (no model) | 6 | Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018) | [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ f2](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_f2.md) | — | 1-compartment (no model) | 10 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ liver](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_liver.md) | — | 1-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ lumbar_vertebrae_l2_l4](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_lumbar_vertebrae_l2_l4.md) | — | 1-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ spleen](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_spleen.md) | — | 1-compartment (no model) | 6 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +41,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 17 matched, 12 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 5  ·  extracted 0  ·  needs review 0  ·  rejected 5  ·  stale 5
+- **records:** 5  ·  extracted 0  ·  needs review 0  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

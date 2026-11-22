@@ -4,11 +4,11 @@
 
 # sumatriptan — `Sumatriptan_Ohk2022_estimate_rse`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:11 UTC (Rejected), but the paper was screened again on 2026-10-07 15:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected due to double correction of apparent clearance and volume for bioavailability, and a dimension mismatch for a rate constant.
+> Sumatriptan absorption parameters were misinterpreted as half-lives and macro-rate constants, causing double correction and dimension mismatches.
 
-<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Ohk2022_estimate_rse" status="rejected" stale="true" population="healthy Korean adults" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Ohk2022_estimate_rse" status="rejected" stale="false" population="healthy Korean adults" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex differences in the pharmacokinetics of oral sumatriptan in healthy Korean subjects using population pharmacokinetic modeling. Biopharmaceutics & drug disposition 43(1):23–32 (2022).
@@ -16,7 +16,7 @@ Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex difference
 
 ## Population and dosing
 
-**Population:** healthy Korean adults · condition healthy · age group adult · n = n_subjects (numeric or 'unknown').
+**Population:** healthy Korean adults · condition healthy · age group adult.
 
 **Dosing:** 50 mg, oral, single.
 
@@ -43,7 +43,7 @@ Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex difference
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex difference
 
 ### Reviewer guidance
 
-**Record rejected due to double correction of apparent clearance and volume for bioavailability, and a dimension mismatch for a rate constant.**
+**Sumatriptan absorption parameters were misinterpreted as half-lives and macro-rate constants, causing double correction and dimension mismatches.**
 
-Parameters CL/F, V3/F, and CLm/F are adjusted for oral bioavailability (F), which is incoherent for an oral study where apparent parameters already reflect absorption. The macro-rate constant lambda2 (0.295 h⁻¹) is assigned units that do not match its definition as a disposition rate constant. One reported parameter unit could not be converted to standard SI units, leaving the model without a valid numeric value for that parameter. Extracted — sumatriptan: CLm/F 444 L/h, CL/F 281 L/h, V3/F 68.7 L, t1/2ka 0.568 h−1, λ2 0.295 h−1, MTT 1.52 h, n_transit 6.7, Fab 0.558.
+The record lists an absorption half-life of 0.568 h but the underlying parameter is a first-order rate constant with units of h−1. Similarly, a macro-rate constant of 0.295 h−1 was mislabeled, creating a conflict between the time dimension of the value and the inverse time dimension of the unit. These inconsistencies in the absorption compartment parameters prevented the model from passing coherence and dimension checks. Extracted — sumatriptan: CLm/F 444 L/h, CL/F 281 L/h, V3/F 68.7 L, t1/2ka 0.568 h−1, λ2 0.295 h−1, MTT 1.52 h, n_transit 6.7, Fab 0.558.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sumatriptan, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

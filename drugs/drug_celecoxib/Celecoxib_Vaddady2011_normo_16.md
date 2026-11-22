@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> Celecoxib clearance was assigned to both molecules and steady-state volume was substituted for central volume, resulting in a simulated terminal half-life of 0.467 h instead of 2.08 h.
+> Celecoxib’s terminal half-life is reported as 3.44 h, but the model gives 0.467 h against the paper’s 2.08 h, prompting refusal.
 
 <div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Vaddady2011_normo_16" status="needs_review" stale="false" population="pigs in hemorrhagic shock and normotensive pigs" measured-compound="THC and celecoxib" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Vaddady PK, Mehrotra N, Zhang X, Yates CR, Moore BM, Meibohm B. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Celecoxib clearance was assigned to both molecules and steady-state volume was substituted for central volume, resulting in a simulated terminal half-life of 0.467 h instead of 2.08 h.**
+**Celecoxib’s terminal half-life is reported as 3.44 h, but the model gives 0.467 h against the paper’s 2.08 h, prompting refusal.**
 
-The record lists total clearance as 21 l/h for both THC and celecoxib, creating ambiguity about the intended elimination rate. The model builder used a steady-state volume of distribution (22.9 L) as the central distribution volume because no specific central volume was reported. Consequently, the simulated terminal half-life of 0.467 h failed to match the paper's reported value of 2.08 h. Extracted — celecoxib: Vss 22.9 L, t1/2z 3.44 h; THC and celecoxib: CL 21 l/h.
+The model does not reproduce the paper's terminal half-life (paper 2.08, model 0.467). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The model used Vss (22.9 L) as the distribution volume because no central volume was reported; this reproduced AUC and terminal half-life but not the early distribution phase. A second reader disputed the analyte and the extracted half-life and clearance values, and interpreted 22.9 as mean clearance instead. Extracted — celecoxib: Vss 22.9 L, t1/2z 3.44 h; THC and celecoxib: CL 21 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has THC and celecoxib, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=THC and celecoxib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | vss_as_v: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 2.08 | 0.4669 | 0.2244 | h→SI vs simulated h |
 
 <details class="legend">

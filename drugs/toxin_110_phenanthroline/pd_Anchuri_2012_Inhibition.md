@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a mechanistic PD model, instead reporting in vitro IC50 values of 78.8 μg/mL and 19.95 μg/mL for compounds R1 and R2 against IEC-6 cells, and in vivo doses of 2 and 4 mg/kg in an EAC model.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Anchuri_2012`
 - **model family:** `unknown`
 - **driver:** `dose_only`

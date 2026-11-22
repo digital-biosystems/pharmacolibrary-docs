@@ -44,7 +44,7 @@ Cylindrospermopsin (abbreviated to CYN, or CYL) is a cyanotoxin produced by a va
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-11 06:40 | 29:31 | 0/1/0 | 2/0/0 | 0/0/0 | 589,769/18,416 | einfracz / qwen3.8-27b | 17 | 2/15 | 17/0 | 0 |
+| 2026-11-11 06:40 | 29:31 | 0/1/0 | 5/0/0 | 0/0/0 | 589,769/18,416 | einfracz / qwen3.8-27b | 17 | 2/15 | 17/0 | 0 |
 
 ## Coverage
 

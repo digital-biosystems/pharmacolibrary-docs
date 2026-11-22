@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax); the covariate scenarios were not simulated (+2 more).
+> Ibrutinib's model simulated peak concentrations deviating by ratios of 0.5948 and 6.9343, with V2/F missing from parameter coverage.
 
 <div class="pk-model-meta" hidden drug="ibrutinib" model-id="Ibrutinib_Gisleskog2025_previous_population_pk_model" status="needs_review" stale="false" population="patients with previously untreated mantle cell lymphoma" measured-compound="ibrutinib" parameterization="apparent" topology="1C"></div>
 
@@ -62,13 +62,13 @@ Gisleskog PO, Valenzuela B, Treijtel N, Deshpande S, Henninger T, Perez-Ruixo JJ
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax); the covariate scenarios were not simulated (+2 more).**
+**Ibrutinib's model simulated peak concentrations deviating by ratios of 0.5948 and 6.9343, with V2/F missing from parameter coverage.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — ibrutinib: CL/F 1.1e+03 L/h, V2/F 436 L, Q/F 709 L/h, V3/F 8.66e+03 L, kabs 0.451 h−1, tlag 0.226 h, D1 1.29 h, V/F 7.29e+03 L.
+The simulated Cmax values produced a ratio of 0.5948 for one check and 6.9343 for the other, indicating poor agreement with reported peaks. Parameter coverage failed because V2/F was neither emitted nor defaulted, leaving only 5 of 6 parameters covered. Covariate scenarios for fed status and age were defined but not exercised in the simulation. Extracted — ibrutinib: CL/F 1.1e+03 L/h, V2/F 436 L, Q/F 709 L/h, V3/F 8.66e+03 L, kabs 0.451 h−1, tlag 0.226 h, D1 1.29 h, V/F 7.29e+03 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of alag1: this record has 0.226, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -170,7 +170,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=ibrutinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped |  | 4.431e-05 |  | non-numeric value |
 | T1_cmax | reference | fail | 7.45e-05 | 4.431e-05 | 0.5948 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 6.39e-06 | 4.431e-05 | 6.934 | ng/mL→SI vs simulated kg/m3 |

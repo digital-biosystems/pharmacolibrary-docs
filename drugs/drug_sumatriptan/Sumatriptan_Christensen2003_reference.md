@@ -4,18 +4,18 @@
 
 # sumatriptan — `Sumatriptan_Christensen2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:11 UTC (Rejected), but the paper was screened again on 2026-10-07 15:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the apparent clearance parameter for sumatriptan has a dimension mismatch.
+> Oral clearance for sumatriptan is recorded in liters instead of liters per hour, conflicting with its dimensional requirement.
 
-<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Christensen2003_reference" status="rejected" stale="true" population="adolescents with migraine" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Christensen2003_reference" status="rejected" stale="false" population="adolescents with migraine" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Christensen ML, Mottern RK, Jabbour JT, Fuseau E. Pharmacokinetics of sumatriptan nasal spray in adolescents. Journal of clinical pharmacology 43(7):721–726 (2003).
 
 ## Population and dosing
 
-**Population:** adolescents with migraine · condition migraine · age group adolescent · n = &gt;21.
+**Population:** adolescents with migraine · condition migraine · age group adolescent.
 
 ## Model
 
@@ -37,7 +37,7 @@ Christensen ML, Mottern RK, Jabbour JT, Fuseau E. Pharmacokinetics of sumatripta
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Christensen ML, Mottern RK, Jabbour JT, Fuseau E. Pharmacokinetics of sumatripta
 
 ### Reviewer guidance
 
-**The record was rejected because the apparent clearance parameter for sumatriptan has a dimension mismatch.**
+**Oral clearance for sumatriptan is recorded in liters instead of liters per hour, conflicting with its dimensional requirement.**
 
-The apparent oral clearance (CL/F) for sumatriptan is listed as 316 L, which lacks a time denominator and is dimensionally inconsistent. Although the record was derived from an abstract-only source, the specific parameter value fails a dimensional check. A second reader disputed the apparent parameterization, preferring a mechanistic classification, but the dimensional error in the clearance unit remains the primary basis for rejection. Extracted — sumatriptan: Cmax 13.9 ng/mL, AUC∞ 57.3 ng/mL.h, t1/2z 2 hours, CL/F 316 L, V/F 1.07e+03 L.
+The value 316 for oral clearance is assigned the unit L, which lacks the required time denominator. This dimensional error contradicts the parameter's definition as clearance. Additionally, the record relies on abstract-only summary statistics rather than a fitted model. Extracted — sumatriptan: Cmax 13.9 ng/mL, AUC∞ 57.3 ng/mL.h, t1/2z 2 hours, CL/F 316 L, V/F 1.07e+03 L.
 
 Independently confirmed by `gpt-oss-120b`.
 

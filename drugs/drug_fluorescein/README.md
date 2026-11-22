@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01J&quot;,&quot;href&quot;:&quot;atc/S01J.md&quot;},{&quot;label&quot;:&quot;fluorescein&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorescein_Min2015_reference&quot;,&quot;label&quot;:&quot;Min_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorescein/Fluorescein_Min2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorescein_Min2015_reference&quot;,&quot;label&quot;:&quot;Min_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorescein/Fluorescein_Min2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # fluorescein
 
@@ -17,7 +17,7 @@ Fluorescein is a synthetic dye used as a diagnostic agent to image the eyes and 
 
 ## Start here
 
-> **Min_2015_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_fluorescein/Fluorescein_Min2015_reference.md?tab=Simulation) · [record](drugs/drug_fluorescein/Fluorescein_Min2015_reference.md)
+> **Min_2015_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_fluorescein/Fluorescein_Min2015_reference.md?tab=Simulation) · [record](drugs/drug_fluorescein/Fluorescein_Min2015_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -25,21 +25,8 @@ Fluorescein is a synthetic dye used as a diagnostic agent to image the eyes and 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Min_2015_reference](drugs/drug_fluorescein/Fluorescein_Min2015_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Min T et al., Microanalysis, Pharmacokinetics and Tis…, International journal of mo… (2015) | [10.3390/ijms161024403](https://doi.org/10.3390/ijms161024403) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: cross_check_disputed</sub> | [Min_2015_reference](drugs/drug_fluorescein/Fluorescein_Min2015_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Min T et al., Microanalysis, Pharmacokinetics and Tis…, International journal of mo… (2015) | [10.3390/ijms161024403](https://doi.org/10.3390/ijms161024403) |
 | <span class="pk-rf" hidden data-species="monkey" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Tsuru_1984_reference](drugs/drug_fluorescein/Fluorescein_Tsuru1984_reference.md) | — | 1-compartment (no model) | 0 | Tsuru T et al., Endothelial wound-healing of monkey cor…, Japanese journal of ophthal… (1984) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fluorescein).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
-| distribution | lung | `ABCC1` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB11` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DNA (other), IGKV2-30 (other).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +46,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 919 matched, 176 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

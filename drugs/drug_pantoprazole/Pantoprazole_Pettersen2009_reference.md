@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;Pettersen_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Pantoprazole bioavailability uses library placeholders, and the model's terminal half-life of 11.5 h deviates from the paper's 2.0 h.
+> Pantoprazole model fails half-life check with 11.467454592833352 against expected 2.0, and bioavailability was left at library defaults.
 
 <div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_Pettersen2009_reference" status="needs_review" stale="false" population="paediatric intensive care patients" measured-compound="pantoprazole" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Pettersen G, Mouksassi MS, Théorêt Y, Labbé L, Faure C, Nguyen B et al. Popul
 
 ## Population and dosing
 
-**Population:** paediatric intensive care patients · condition upper gastrointestinal bleeding risk · age group mixed · n = &gt;=20.
+**Population:** paediatric intensive care patients · condition upper gastrointestinal bleeding risk · age group mixed.
 
 **Dosing:** 19.9, 140.6 mg/1.73 m2/day, iv, multiple, every 24 h.
 
@@ -51,7 +51,7 @@ Pettersen G, Mouksassi MS, Théorêt Y, Labbé L, Faure C, Nguyen B et al. Popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,11 +61,11 @@ Pettersen G, Mouksassi MS, Théorêt Y, Labbé L, Faure C, Nguyen B et al. Popul
 
 ### Reviewer guidance
 
-**Pantoprazole bioavailability uses library placeholders, and the model's terminal half-life of 11.5 h deviates from the paper's 2.0 h.**
+**Pantoprazole model fails half-life check with 11.467454592833352 against expected 2.0, and bioavailability was left at library defaults.**
 
-Bioavailability for pantoprazole was not extracted, so library placeholders affect the simulated profile without support from the paper. The model's terminal half-life of 11.5 h significantly exceeds the paper's reported value of 2.0 h. Additionally, defined covariate effects for age, CYP2C19 inhibitors, and hepatic dysfunction were not exercised in the simulation. Extracted — pantoprazole: CL 5.08 l h -1, V1 2.2 l, Q 1.1 l h -1, V2 2.69 l, kabs 0.325 h -1, tlag 2.5 h.
+The simulated terminal half-life of 11.467454592833352 h is 5.7337 times the expected 2.0 h from the paper. Bioavailability was not reported in the record, so library defaults were used instead of paper-specific estimates. Additionally, covariate scenarios including age, CYP2C19 inhibitor, and hepatic dysfunction effects were defined but not exercised during simulation. Extracted — pantoprazole: CL 5.08 l h -1, V1 2.2 l, Q 1.1 l h -1, V2 2.69 l, kabs 0.325 h -1, tlag 2.5 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has pantoprazole, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pantoprazole, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -132,20 +132,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (6/14 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.429 (6/14 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[age_covariate_effect].value` | 0.320 | 0.316 | mismatch |
-| `gpt-oss:120b` | `parameters[cl].value` | 5.08 | 5.28 | mismatch |
-| `gpt-oss:120b` | `parameters[hepatic_dysfunction_covariate_effect]` | 0.501 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[sirs covariate effect]` |  | 0.377 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_hepatic]` |  | 0.495 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2].value` | 2.69 | 2.73 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | pantoprazole | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | pantoprazole | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[age_covariate_effect].value` | 0.320 | 0.316 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 5.08 | 5.28 | mismatch |
+| `gpt-oss-120b` | `parameters[hepatic_dysfunction_covariate_effect]` | 0.501 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[sirs covariate effect]` |  | 0.377 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_hepatic]` |  | 0.495 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2].value` | 2.69 | 2.73 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | pantoprazole | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | pantoprazole | unknown | mismatch |
 
 </details>
 
@@ -185,7 +185,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=pantoprazole) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
 | T1_t_half_beta | reference | fail | 2 | 11.47 | 5.734 | h→SI vs simulated h |
 
 <details class="legend">

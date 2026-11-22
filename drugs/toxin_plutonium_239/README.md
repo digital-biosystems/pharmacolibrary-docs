@@ -82,7 +82,7 @@ Plutonium-239 (239 Pu or Pu-239) is an isotope of plutonium. Plutonium-239 is th
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-09 09:05 | 16:06 | 9/10/0 | 2/0/0 | 0/0/0 | 610,545/24,217 | einfracz / qwen3.8-27b | 27 | 21/2 | 1/26 | 0 |
+| 2026-11-09 09:05 | 16:06 | 9/10/0 | 3/0/0 | 0/0/0 | 610,545/24,217 | einfracz / qwen3.8-27b | 27 | 21/2 | 1/26 | 0 |
 
 ## Coverage
 

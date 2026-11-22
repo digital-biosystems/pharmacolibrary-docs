@@ -4,11 +4,11 @@
 
 # tisotumab vedotin — `TisotumabVedotin_Gibiansky2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:58 UTC (Needs review), but the paper was screened again on 2026-10-07 21:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vmax has no unit.
+> Vmax has no unit.
 
-<div class="pk-model-meta" hidden drug="tisotumab vedotin" model-id="TisotumabVedotin_Gibiansky2022_reference" status="needs_review" stale="true" population="patients with locally advanced and/or metastatic solid tumors" measured-compound="tisotumab vedotin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="tisotumab vedotin" model-id="TisotumabVedotin_Gibiansky2022_reference" status="needs_review" stale="false" population="patients with locally advanced and/or metastatic solid tumors" measured-compound="tisotumab vedotin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Gibiansky L, Passey C, Voellinger J, Gunawan R, Hanley WD, Gupta M et al. Population pharmacokinetic analysis for tisotumab vedotin in patients with locally advanced and/or metastatic solid tumors. CPT: pharmacometrics & systems pharmacology 11(10):1358–1370 (2022).
@@ -16,7 +16,7 @@ Gibiansky L, Passey C, Voellinger J, Gunawan R, Hanley WD, Gupta M et al. Popula
 
 ## Population and dosing
 
-**Population:** patients with locally advanced and/or metastatic solid tumors · condition locally advanced and/or metastatic solid tumors · age group adult · n = &gt;=399.
+**Population:** patients with locally advanced and/or metastatic solid tumors · condition locally advanced and/or metastatic solid tumors · age group adult.
 
 **Dosing:** 21, 84, 140, 154 mg, iv, multiple, every 21 h.
 
@@ -49,7 +49,7 @@ Gibiansky L, Passey C, Voellinger J, Gunawan R, Hanley WD, Gupta M et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

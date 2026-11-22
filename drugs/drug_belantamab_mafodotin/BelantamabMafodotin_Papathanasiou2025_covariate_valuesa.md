@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Clearance for belantamab mafodotin lacked an extracted value, so the model used a placeholder and was quarantined.
+> Belantamab mafodotin clearance was missing; the 0.926 L/day estimate belongs to the ADC and cys-mcMMAF, so the model was held back.
 
 <div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Papathanasiou2025_covariate_valuesa" status="model_quarantined" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin ADC and cys-mcMMAF" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -50,11 +50,11 @@ Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Populati
 
 ### Reviewer guidance
 
-**Clearance for belantamab mafodotin lacked an extracted value, so the model used a placeholder and was quarantined.**
+**Belantamab mafodotin clearance was missing; the 0.926 L/day estimate belongs to the ADC and cys-mcMMAF, so the model was held back.**
 
-The record contains a clearance estimate of 0.926 L/day, but it is attributed to the combination of belantamab_mafodotin ADC and cys-mcMMAF. Because the specific clearance for belantamab mafodotin was missing, the system defaulted to a library placeholder rather than using the combination's value. This substitution caused the model to fail validation for having unaccepted defaults, resulting in quarantine instead of publication. Extracted — belantamab_mafodotin ADC and cys-mcMMAF: V 10.8 L.
+No value for belantamab mafodotin's clearance—the extracted estimate of 0.926 L/day describes belantamab mafodotin ADC and cys-mcMMAF, not belantamab mafodotin. The model was built, but belantamab mafodotin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The parent–metabolite structure did not match the one-compartment structure used, and clearance was defaulted rather than explicitly estimated. Extracted — belantamab_mafodotin ADC and cys-mcMMAF: V 10.8 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -230,6 +230,7 @@ The record contains a clearance estimate of 0.926 L/day, but it is attributed to
 | T3_shared_parameters |  | pass | 2 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 | T1_cmax | reference | skipped | 43.7 |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.498 |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.976 |  | no simulated metric for this quantity (single reference sim) |

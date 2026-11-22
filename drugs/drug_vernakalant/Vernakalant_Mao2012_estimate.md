@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 3.45, model 8.14); the model does not reproduce the paper's peak concentration (Cmax) (paper 3.37e+03, model 0.000944).
+> The model does not reproduce the paper's terminal half-life (paper 3.45, model 8.14); the model does not reproduce the paper's peak concentration (Cmax) (paper 3.37e+03, model 0.000944) (+1 more).
 
 <div class="pk-model-meta" hidden drug="vernakalant" model-id="Vernakalant_Mao2012_estimate" status="needs_review" stale="false" population="patients with atrial fibrillation or atrial flutter and healthy volunteers" measured-compound="vernakalant" parameterization="mechanistic" topology="2C"></div>
 
@@ -45,7 +45,7 @@ Mao ZL, Townsend RW, Gao Y, Wheeler JJ, Kastrissios H, Keirns J. Population phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +55,13 @@ Mao ZL, Townsend RW, Gao Y, Wheeler JJ, Kastrissios H, Keirns J. Population phar
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 3.45, model 8.14); the model does not reproduce the paper's peak concentration (Cmax) (paper 3.37e+03, model 0.000944).**
+**The model does not reproduce the paper's terminal half-life (paper 3.45, model 8.14); the model does not reproduce the paper's peak concentration (Cmax) (paper 3.37e+03, model 0.000944) (+1 more).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — vernakalant: CL 0.2 L/h/kg, Q 2.63 L/h/kg, V1 0.51 L/kg, V2 1.04 L/kg, t1/2α 0.16 h, t1/2z 3.45 h, Cmax 4.3e+03 ng/mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 0.20, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 0.20, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,21 +125,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.308 (4/13 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.308 (4/13 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl]` | 0.20 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 4303 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution half-life]` | 0.16 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q]` | 2.63 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady‐state volume of distribution]` |  | 1.55 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic clearance]` |  | 0.35 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal half-life]` | 3.45 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` | 0.51 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vp]` | 1.04 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.20 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 4303 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution half-life]` | 0.16 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 2.63 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady‐state volume of distribution]` |  | 1.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` |  | 0.35 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | 3.45 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 0.51 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 1.04 |  | only_one_extracted |
 
 </details>
 
@@ -181,6 +181,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check agreement 0.308 is below 0.5: verdict partial, agreement 0.308, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 3371 | 0.0009436 |  | unresolved concentration unit (exp 'ng/kg', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 4012 | 0.0009436 |  | unresolved concentration unit (exp 'ng/kg', sim 'kg/m3') |
 | T1_cmax | reference | fail | 0.003904 | 0.0009436 | 0.2417 | ng/mL→SI vs simulated kg/m3 |

@@ -16,7 +16,7 @@ Head-Rapson AG, Devlin JC, Parker CJ, Hunter JM. Pharmacokinetics of the three i
 
 ## Population and dosing
 
-**Population:** healthy adults and patients with mild or moderate hepatic cirrhosis · condition healthy and hepatic cirrhosis · age group adult · n = # one of: neonate | infant | child | adolescent | adult | elderly | mixed | unknown.
+**Population:** healthy adults and patients with mild or moderate hepatic cirrhosis · condition healthy and hepatic cirrhosis · age group adult.
 
 ## Model
 

@@ -16,7 +16,7 @@ Lugo SI, Liang Z, Eddington ND. Pharmacokinetics and pharmacodynamics of mivacur
 
 ## Population and dosing
 
-**Population:** beagle dogs · condition healthy · age group adult · n = &gt;=4.
+**Population:** beagle dogs · condition healthy · age group adult.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 

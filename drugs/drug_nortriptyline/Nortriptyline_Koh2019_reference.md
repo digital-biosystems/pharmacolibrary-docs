@@ -16,7 +16,7 @@ Koh A, Pak KC, Choi HY, Ryu S, Choi SE, Kim KS et al. Quantitative Modeling Anal
 
 ## Population and dosing
 
-**Population:** healthy adult male volunteers · condition healthy · age group adult · n = &gt;&lt;/ 24.
+**Population:** healthy adult male volunteers · condition healthy · age group adult.
 
 ## Model
 

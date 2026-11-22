@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;dupilumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dupilumab_Kovalenko2020_population_estimates&quot;,&quot;label&quot;:&quot;Kovalenko_2020_population_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dupilumab_Takechi2025_reference&quot;,&quot;label&quot;:&quot;Takechi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/Dupilumab_Takechi2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2025_FEV1&quot;,&quot;label&quot;:&quot;Zhang_2025 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/pd_Zhang_2025_FEV1.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dupilumab_Kovalenko2020_population_estimates&quot;,&quot;label&quot;:&quot;Kovalenko_2020_population_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dupilumab_Takechi2025_reference&quot;,&quot;label&quot;:&quot;Takechi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/Dupilumab_Takechi2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2025_FEV1&quot;,&quot;label&quot;:&quot;Zhang_2025 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dupilumab/pd_Zhang_2025_FEV1.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # dupilumab
 
@@ -20,21 +20,15 @@ Dupilumab is a monoclonal antibody used to treat allergic conditions such as ato
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.001</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kovalenko_2020 · CL</text><circle cx="318.4" cy="30.0" r="4" fill="#ef6c00"><title>Kovalenko_2020 · CL: 0.005417 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Takechi_2025 · CL/F</text><circle cx="391.5" cy="46.0" r="4" fill="#ef6c00"><title>Takechi_2025 · CL/F: 0.01417 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kovalenko_2020 · V</text><circle cx="343.2" cy="30.0" r="4" fill="#ef6c00"><title>Kovalenko_2020 · V: 2.74 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Takechi_2025 · V/F</text><circle cx="514.2" cy="46.0" r="4" fill="#ef6c00"><title>Takechi_2025 · V/F: 8.44 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub> | [Kovalenko_2020_population_estimate_of_covariate_coefficient](drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimate_of_covariate_coe.md) | — | 1-compartment (no model) | 2 | Kovalenko P et al., Base and Covariate Population Pharmacok…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.780](https://doi.org/10.1002/cpdd.780) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): F</sub> | [↳ population_estimates](drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates.md) | ▶ model + simulator | 1-compartment, oral | 4 (+8 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Takechi_2025_reference](drugs/drug_dupilumab/Dupilumab_Takechi2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and therapy (2025) | [10.1007/s13555-025-01554-4](https://doi.org/10.1007/s13555-025-01554-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nguyen_2026_reference](drugs/drug_dupilumab/Dupilumab_Nguyen2026_reference.md) | — | 1-compartment (no model) | 0 | Nguyen JH et al., Population Pharmacokinetics of Dupiluma…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70233](https://doi.org/10.1002/cpt.70233) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Zhang_2021_reference](drugs/drug_dupilumab/Dupilumab_Zhang2021_reference.md) | — | 1-compartment (no model) | 7 (+6 cov.) | Zhang L et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12667](https://doi.org/10.1002/psp4.12667) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Takechi_2025_reference](drugs/drug_dupilumab/Dupilumab_Takechi2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and therapy (2025) | [10.1007/s13555-025-01554-4](https://doi.org/10.1007/s13555-025-01554-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Zhang_2021_reference](drugs/drug_dupilumab/Dupilumab_Zhang2021_reference.md) | — | 1-compartment (no model) | 7 (+6 cov.) | Zhang L et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12667](https://doi.org/10.1002/psp4.12667) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,15 +37,6 @@ Dupilumab is a monoclonal antibody used to treat allergic conditions such as ato
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Briggs_2023_EASI](drugs/drug_dupilumab/pd_Briggs_2023_EASI.md) | Eczema Area and Severity Index (EASI) ← dupilumab · indirect response — drug inhibits the production of Eczema Area and Severity Index (EASI) | model (no simulator) | Briggs E et al., Integrated Exposure-Response of Dupilum…, Pharmaceutical research (2023) | [10.1007/s11095-023-03616-8](https://doi.org/10.1007/s11095-023-03616-8) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Zhang_2025_FEV1](drugs/drug_dupilumab/pd_Zhang_2025_FEV1.md) | FEV1 ← dupilumab · direct Emax (saturable) effect | ▶ model + simulator | Zhang L et al., Semi-Mechanistic Population Pharmacokin…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70057](https://doi.org/10.1002/psp4.70057) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2023_IGA](drugs/drug_dupilumab/pd_Briggs_2023_IGA.md) | Investigator’s Global Assessment (IGA) ← dupilumab · indirect response — drug inhibits the production of Investigator’s Global Assessment (IGA) | model (no simulator) | Briggs E et al., Integrated Exposure-Response of Dupilum…, Pharmaceutical research (2023) | [10.1007/s11095-023-03616-8](https://doi.org/10.1007/s11095-023-03616-8) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dupilumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IL13 (antibody), IL13 (inhibitor), IL4 (antibody), IL4 (inhibitor), IL4R (antibody), IL4R (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +50,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:18 | 7:01 | 3/2/0 | 2/0/0 | 0/0/0 | 269,183/46,512 | einfracz / qwen3.8-27b | 10 | 1/9 | 10/0 | 0 |
+| 2026-10-07 08:18 | 7:01 | 2/3/0 | 2/1/0 | 0/0/0 | 269,183/46,512 | einfracz / qwen3.8-27b | 10 | 1/9 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 20 matched, 12 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 1
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

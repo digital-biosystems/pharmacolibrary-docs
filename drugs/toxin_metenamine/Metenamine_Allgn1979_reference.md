@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Record rejected because abstract-only extraction yielded only urinary excretion percentage and unquantified parameters, lacking fitted kinetic quantities like volume or clearance.
 
 <div class="pk-model-meta" hidden drug="Metenamine" model-id="Metenamine_Allgn1979_reference" status="rejected" stale="false" population="healthy volunteers; healthy pregnant women" measured-compound="Methenamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Allgén LG, Holmberg G, Persson B, Sörbo B. Biological fate of methenamine in m
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Record rejected because abstract-only extraction yielded only urinary excretion percentage and unquantified parameters, lacking fitted kinetic quantities like volume or clearance.**
+
+The model was built exclusively from an abstract, using reported summary statistics instead of a fitted PK model. While renal clearance and terminal half-life were identified, no numerical values were extracted for them. The only quantitative parameter, the fraction of dose excreted unchanged, does not constitute sufficient kinetic parameters to define a compartmental model, leading to rejection as an exposure/outcome paper. Extracted — metenamine: Ae 80 per cent of the dose given per 12 hours.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

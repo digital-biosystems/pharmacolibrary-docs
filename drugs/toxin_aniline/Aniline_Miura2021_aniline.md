@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record is rejected as an exposure-only study lacking kinetic parameters, with a unit that cannot be converted to SI units.
 
 <div class="pk-model-meta" hidden drug="Aniline" model-id="Aniline_Miura2021_aniline" status="rejected" stale="false" population="rats" measured-compound="Aniline" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,7 +53,13 @@ Miura T, Kamiya Y, Murayama N, Shimizu M, Yamazaki H. Differences in Pharmacokin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record is rejected as an exposure-only study lacking kinetic parameters, with a unit that cannot be converted to SI units.**
+
+The record reports only exposure metrics like Cmax and AUC, missing essential kinetic parameters such as volume of distribution or elimination rate constants. Although clearance values are provided, the absence of distribution parameters prevents full kinetic characterization. Additionally, a reported unit for one parameter could not be converted to standard SI units, blocking model simulation. Extracted — aniline: Fab 0.824, CLH 0.584 L/h, CLR 0.063 L/h, Cmax 2.58e+03 ng/mL, AUCt 1.96e+03 ng*h/mL, MW 93 g/mol, fu 0.539, Kp 0.906.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Hannam_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_RodriguezCruz2021_reference&quot;,&quot;label&quot;:&quot;Rodriguez-Cruz_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_RodriguezCruz2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Standing2008_reference&quot;,&quot;label&quot;:&quot;Standing_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Standing2008_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Perez_1995_relaxation&quot;,&quot;label&quot;:&quot;Perez_1995 \u00b7 relaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Perez_1995_relaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Idkaidek1998_sustained&quot;,&quot;label&quot;:&quot;Idkaidek_1998_sustained&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Idkaidek1998_sustained.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_Hannam2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:42 UTC (Rejected), but the paper was screened again on 2026-11-03 22:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. A phantom acetaminophen metabolite link created an orphan compartment, while a clearance unit mismatch prevented SI conversion.
+> The intercompartmental clearance parameter was rejected due to a unit mismatch, and the dose compound and primary analyte are unknown.
 
-<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Hannam2014_reference" status="rejected" stale="true" population="children undergoing tonsillectomy" measured-compound="diclofenac" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Hannam2014_reference" status="rejected" stale="false" population="children and adults" measured-compound="diclofenac, acetaminophen" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using diclofenac and acetaminophen in children. Paediatric anaesthesia 24(9):953–961 (2014).
@@ -17,13 +17,13 @@ Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using d
 
 ## Population and dosing
 
-**Population:** children undergoing tonsillectomy · condition postoperative pain · age group child.
+**Population:** children and adults · condition post-tonsillectomy pain · age group mixed.
 
-**Dosing:** 70 mg, oral, single.
+**Dosing:** 7, 35, 70, 140, 1400, 2800 mg, oral, single.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 7 extracted.  
 **Availability:** No model was generated from this record.
@@ -33,8 +33,9 @@ Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using d
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| T 1/2 keq A (h) | t1/2z | 0.496 | h |
-| T 1/2 kel PL (h) | kel | 2.94 | h |
+| T 1/2 keq A (h) | kel | 0.496 | h |
+| T 1/2 keq D (h) | t1/2z | 0.23 | h |
+| b (VAS À1 ) | equation variable | 0.302 | VAS À1 |
 | CL A /F (lÁh À1 Á70 kg À1 ) | CL | 10.6 | L/h/70kg |
 | V A /F (lÁ70 kg À1 ) | V/F | 62.3 | L/70kg |
 | CL D /F (lÁh À1 Á70 kg À1 ) | Q/F | 53.5 | L/h/70kg |
@@ -43,7 +44,7 @@ Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using d
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.294). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +54,11 @@ Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using d
 
 ### Reviewer guidance
 
-**A phantom acetaminophen metabolite link created an orphan compartment, while a clearance unit mismatch prevented SI conversion.**
+**The intercompartmental clearance parameter was rejected due to a unit mismatch, and the dose compound and primary analyte are unknown.**
 
-The record defines an interconversion from diclofenac to acetaminophen, a molecule not part of diclofenac pharmacokinetics, leaving the metabolite compartment unreachable. Clearance parameters were reported in units of liters per hour per 70 kilograms, which could not be converted to SI standards. A second reader found no such metabolite link and identified specific elimination rate constants missing from the extracted record. Extracted — diclofenac: t1/2z 0.496 h, kel 2.94 h, CL 10.6 L/h/70kg, V/F 62.3 L/70kg, Q/F 53.5 L/h/70kg, kabs 0.94 h À1, tlag 0 h.
+The apparent intercompartmental clearance was identified with a unit conflict, where the recorded time unit contradicted the expected reciprocal time dimension. Additionally, a second reader could not confirm whether the dose compound or primary analyte was diclofenac, acetaminophen, or an unknown substance, leaving these critical definitions unresolved. This uncertainty, combined with the dimension error, prevented validation of the model record. Extracted — diclofenac: kel 0.496 h, t1/2z 0.23 h; diclofenac, acetaminophen: CL 10.6 L/h/70kg, V/F 62.3 L/70kg, Q/F 53.5 L/h/70kg, kabs 0.94 h À1, tlag 0 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has diclofenac → acetaminophen (interconversion), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diclofenac, acetaminophen, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -65,8 +66,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| T 1/2 keq A (h) | `Q57` · t1/2z | 0.496 | h | 1786 | s | h | llm (0.6) | tab_1:row4:col1, tab_1:row4:col2 |
-| T 1/2 kel PL (h) | `Q47` · kel | 2.94 | h |  |  | h | llm_confirmed (0.6) | tab_1:row10:col1, tab_1:row10:col2 |
+| T 1/2 keq A (h) | `Q47` · kel | 0.496 | h |  |  | h | llm (0.6) | tab_1:row4:col1, tab_1:row4:col2 |
+| T 1/2 keq D (h) | `Q57` · t1/2z | 0.23 | h | 828 | s | h | llm (0.6) | tab_1:row6:col1, tab_1:row6:col2 |
+| b (VAS À1 ) | `Q900` · equation variable | 0.302 | VAS À1 |  |  | 1/vas | llm (0.6) | tab_1:row14:col1, tab_1:row14:col2 |
 | CL A /F (lÁh À1 Á70 kg À1 ) | `Q22` · CL | 10.6 | L/h/70kg | 2.944e-06 | m3/s | L/h | boundary (0.8) | Hannam_2014:discussion_prose |
 | V A /F (lÁ70 kg À1 ) | `Q76` · V/F | 62.3 | L/70kg | 0.0623 | m3 | L | space_fold (0.95) | Hannam_2014:discussion_prose |
 | CL D /F (lÁh À1 Á70 kg À1 ) | `Q69` · Q/F | 53.5 | L/h/70kg | 1.486e-05 | m3/s | L/h | space_fold (0.95) | Hannam_2014:discussion_prose |
@@ -81,33 +83,36 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Departures & gaps
 
 **Interpretation flags:**
+- column '% ppv' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped PD-category row 'E 0 (VAS 0-10)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row2:col1', 'tab_1:row2:col2'])
 - dropped PD-category row 'E MAX (VAS 0-10)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row3:col1', 'tab_1:row3:col2'])
-- dropped unlinked row (NIL): 'C 50,A (mgÁl À1 )' — extend the ontology if this is a real PK parameter (source ['tab_1:row5:col1', 'tab_1:row5:col2'])
-- dropped PD-category row 'T 1/2 keq D (h)' → Q337 (ktol, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row6:col1', 'tab_1:row6:col2'])
+- unit_dimension_mismatch: 'T 1/2 keq A (h)' → Q47 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped PD-category row 'C 50,A (mgÁl À1 )' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row5:col1', 'tab_1:row5:col2'])
 - dropped PD-category row 'C 50,D (mgÁl À1 )' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row7:col1', 'tab_1:row7:col2'])
-- dropped PD-category row 'T 1/2 keq PL (h)' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row9:col1', 'tab_1:row9:col2'])
-- unit_dimension_mismatch: 'T 1/2 kel PL (h)' → Q47 (unit '[time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'BETA PL (VAS 0-10)' — extend the ontology if this is a real PK parameter (source ['tab_1:row11:col1', 'tab_1:row11:col2'])
+- unit_dimension_mismatch: 'T 1/2 keq PL (h)' → Q47 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q47 ('T 1/2 keq PL (h)', value '2.65') — already have one for this compound
+- dropped duplicate Q57 ('T 1/2 kel PL (h)', value '2.94') — already have one for this compound
+- unit_dimension_unknown: 'VAS 0-10' (kel)
+- dropped duplicate Q47 ('BETA PL (VAS 0-10)', value '1.76') — already have one for this compound
 - dropped duplicate Q47 ('k (h À1 )', value '0.0152') — already have one for this compound
-- dropped unlinked row (NIL): 'b (VAS À1 )' — extend the ontology if this is a real PK parameter (source ['tab_1:row14:col1', 'tab_1:row14:col2'])
-- routed 'Err additive (VAS 0-10)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- unit_dimension_unknown: 'VAS À1' (equation variable)
 - salvaged Q22 ('CL A /F (lÁh À1 Á70 kg À1 )'=10.6) from results prose — parameter table was unreadable
 - salvaged Q76 ('V A /F (lÁ70 kg À1 )'=62.3) from results prose — parameter table was unreadable
 - salvaged Q69 ('CL D /F (lÁh À1 Á70 kg À1 )'=53.5) from results prose — parameter table was unreadable
-- implicit units: 'CL A /F (lÁh À1 Á70 kg À1 )' → L/h/70kg (from the popPK convention: 'The parameter represents clearance (CL/F). In population pharmacokinetic studies, clearance is conventionally expressed ')
-- implicit units: 'V A /F (lÁ70 kg À1 )' → L/70kg (from the popPK convention: 'The parameter represents volume of distribution (V/F). In population pharmacokinetics, volume is conventionally expresse')
-- implicit units: 'CL D /F (lÁh À1 Á70 kg À1 )' → L/h/70kg (from the popPK convention: "The parameter is labeled 'CL D /F' and described as an apparent intercompartmental clearance or related elimination/clea")
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=diclofenac
+- implicit units: 'CL A /F (lÁh À1 Á70 kg À1 )' → L/h/70kg (from the paper text: "The value is printed in the paper with the unit string 'lÁh À1 Á70 kg À1' immediately following the parameter name 'CL A")
+- implicit units: 'V A /F (lÁ70 kg À1 )' → L/70kg (from the paper text: "The value is printed in the paper with the unit string 'lÁ70 kg À1' immediately following the parameter name 'V A /F', w")
+- implicit units: 'CL D /F (lÁh À1 Á70 kg À1 )' → L/h/70kg (from the paper text: "The value is printed in the paper with the unit string 'lÁh À1 Á70 kg À1' immediately following the parameter name 'CL D")
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=diclofenac, acetaminophen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Kim_2016's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Idkaidek_1998's review values (primary lacked it)
 
 **Extraction notes:**
 - table tab_1: unparsed_numeric_cell
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -116,17 +121,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.583 (7/12 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.294 (5/17 fields) | 12 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['diclofenac', 'acetaminophen', 'interconversion']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[beta pl]` |  | 1.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[b].parameter_id` | Q900 | Q415 | mismatch |
+| `gpt-oss-120b` | `parameters[cl a /f]` | 10.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl a /f]` |  | 10.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl d /f]` | 53.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl d /f]` |  | 53.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k]` |  | 0.0152 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2 kel pl]` | 2.94 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2 keq pl]` |  | 2.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 keq a].parameter_id` | Q47 | Q57 | mismatch |
+| `gpt-oss-120b` | `parameters[t 1/2 keq d].parameter_id` | Q57 | Q60 | mismatch |
+| `gpt-oss-120b` | `parameters[v a /f]` | 62.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v a /f]` |  | 62.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | diclofenac, acetaminophen | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | diclofenac, acetaminophen | unknown | mismatch |
 
 </details>
 
@@ -144,14 +156,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hannam_2014:discussion_prose'] |
-| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['tab_1:row10:col1', 'tab_1:row10:col2'] |
+| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['tab_1:row4:col1', 'tab_1:row4:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Kim_2016:review'] |
-| C5_dimension_Q57 | pass | [time] |  | ['tab_1:row4:col1', 'tab_1:row4:col2'] |
+| C5_dimension_Q57 | pass | [time] |  | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Hannam_2014:discussion_prose'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Hannam_2014:discussion_prose'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Idkaidek_1998:review'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 10.6 L/h | ['Hannam_2014:discussion_prose'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 62.3 L | ['Hannam_2014:discussion_prose'] |
 
@@ -177,4 +189,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20Diclofenac_Hannam2014_reference&body=Drug%3A%20diclofenac%0ARecord%3A%20Diclofenac_Hannam2014_reference%0APaper%3A%20Hannam_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/Diclofenac_Hannam2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 22:55 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 05:01 UTC</sub>

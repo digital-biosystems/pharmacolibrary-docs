@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nicardipine&quot;,&quot;href&quot;:&quot;drugs/drug_nicardipine/&quot;},{&quot;label&quot;:&quot;Sadan_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nicardipine_Modi1993_reference&quot;,&quot;label&quot;:&quot;Modi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nicardipine_Modi1993_reference&quot;,&quot;label&quot;:&quot;Modi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nicardipine clearance (0.130 L/hr) is physiologically implausible, indicating a likely unit or scale extraction error that caused the model rejection.
+> Nicardipine central volume of distribution (0.064 L) and total clearance (0.130 L/hr) are physiologically implausible, indicating a scale error in the record.
 
 <div class="pk-model-meta" hidden drug="nicardipine" model-id="Nicardipine_Sadan2023_reference" status="rejected" stale="false" population="adults with subarachnoid hemorrhage" measured-compound="nicardipine" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Sadan O, Jeong YS, Cohen-Sadan S, Sathialingam E, Buckley EM, Kandiah PA et al. 
 
 ## Population and dosing
 
-**Population:** adults with subarachnoid hemorrhage · condition subarachnoid hemorrhage · age group adult · n = &gt;=16.
+**Population:** adults with subarachnoid hemorrhage · condition subarachnoid hemorrhage · age group adult.
 
 **Dosing:** 5 mg, intrathecal, multiple, every 6 h.
 
@@ -51,9 +51,9 @@ Sadan O, Jeong YS, Cohen-Sadan S, Sathialingam E, Buckley EM, Kandiah PA et al. 
 
 ### Reviewer guidance
 
-**Nicardipine clearance (0.130 L/hr) is physiologically implausible, indicating a likely unit or scale extraction error that caused the model rejection.**
+**Nicardipine central volume of distribution (0.064 L) and total clearance (0.130 L/hr) are physiologically implausible, indicating a scale error in the record.**
 
-The extracted total clearance of 0.130 L/hr is far below the expected physiological range for this drug, suggesting a magnitude error during data extraction. While the second reader identified the dose compound and primary analyte as unknown, the central issue remains the non-physiological clearance value. This implausible magnitude directly triggered the rejection due to the clearance falling outside the allowable physiological window. Extracted — nicardipine: V1 0.064 L, CL 0.13 L/hr, V2 0.73 L, Q 0.11 L/hr, tlag 0.55 hr.
+The extracted central volume of distribution of 0.064 L and total clearance of 0.130 L/hr fall outside physiological windows for nicardipine. These magnitudes suggest a unit or scale extraction error rather than valid pharmacokinetic estimates for adults with subarachnoid hemorrhage. The peripheral volume of 0.73 L and intercompartmental clearance of 0.11 L/hr are similarly inconsistent with typical drug behavior. Extracted — nicardipine: V1 0.064 L, CL 0.13 L/hr, V2 0.73 L, Q 0.11 L/hr, tlag 0.55 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nicardipine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

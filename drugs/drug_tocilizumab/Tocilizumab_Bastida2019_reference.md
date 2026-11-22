@@ -4,11 +4,11 @@
 
 # tocilizumab — `Tocilizumab_Bastida2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Needs review), but the paper was screened again on 2026-10-07 00:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="tocilizumab" model-id="Tocilizumab_Bastida2019_reference" status="needs_review" stale="true" population="adults with rheumatoid arthritis" measured-compound="tocilizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tocilizumab" model-id="Tocilizumab_Bastida2019_reference" status="needs_review" stale="false" population="adults with rheumatoid arthritis" measured-compound="tocilizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bastida C, Soy D, Ruiz-Esquide V, Sanmartí R, Huitema ADR. Exposure-response modeling of tocilizumab in rheumatoid arthritis using continuous composite measures and their individual components. British journal of clinical pharmacology 85(8):1710–1718 (2019).
@@ -16,7 +16,7 @@ Bastida C, Soy D, Ruiz-Esquide V, Sanmartí R, Huitema ADR. Exposure-response mo
 
 ## Population and dosing
 
-**Population:** adults with rheumatoid arthritis · condition rheumatoid arthritis · age group adult · n = 35.
+**Population:** adults with rheumatoid arthritis · condition rheumatoid arthritis · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Bastida C, Soy D, Ruiz-Esquide V, Sanmartí R, Huitema ADR. Exposure-response mo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

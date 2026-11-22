@@ -40,36 +40,13 @@ Docetaxel is a taxane chemotherapy medication used to treat cancers such as brea
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Clarke_1999_reference](drugs/drug_docetaxel/Docetaxel_Clarke1999_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Clarke SJ et al., Clinical pharmacokinetics of docetaxel, Clinical pharmacokinetics (1999) | [10.2165/00003088-199936020-00002](https://doi.org/10.2165/00003088-199936020-00002) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Launay-Iliadis_1995_reference](drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Launay-Iliadis MC et al., Population pharmacokinetics of docetaxe…, Cancer chemotherapy and pha… (1995) | [10.1007/BF00685628](https://doi.org/10.1007/BF00685628) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Launay-Iliadis_1995_reference](drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Launay-Iliadis MC et al., Population pharmacokinetics of docetaxe…, Cancer chemotherapy and pha… (1995) | [10.1007/BF00685628](https://doi.org/10.1007/BF00685628) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Yu_2020_reference](drugs/drug_docetaxel/Docetaxel_Yu2020_reference.md) | — | 1-compartment (no model) | 1 | Yu H et al., A Population Pharmacokinetic Model of O…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1532](https://doi.org/10.1002/jcph.1532) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Crombag_2019_reference](drugs/drug_docetaxel/Docetaxel_Crombag2019_reference.md) | — | 1-compartment (no model) | 0 | Crombag MBS et al., Exposure to Docetaxel in the Elderly Pa…, Pharmaceutical research (2019) | [10.1007/s11095-019-2706-4](https://doi.org/10.1007/s11095-019-2706-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Heineman_2021_reference](drugs/drug_docetaxel/Docetaxel_Heineman2021_reference.md) | — | 2-compartment (no model) | 12 | Heineman T et al., Safety and pharmacokinetics of docetaxe…, Clinical and translational… (2021) | [10.1111/cts.13041](https://doi.org/10.1111/cts.13041) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Puisset_2004_reference](drugs/drug_docetaxel/Docetaxel_Puisset2004_reference.md) | — | 1-compartment (no model) | 0 | Puisset F et al., Dexamethasone as a probe for docetaxel…, Cancer chemotherapy and pha… (2004) | [10.1007/s00280-004-0823-0](https://doi.org/10.1007/s00280-004-0823-0) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wang_2024_reference](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | — | 1-compartment (no model) | 2 | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wang_2024_reference](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | — | 1-compartment (no model) | 2 | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Wei_2022_reference](drugs/drug_docetaxel/Docetaxel_Wei2022_reference.md) | — | 2-compartment (no model) | 5 | Wei J et al., Docetaxel population pharmacokinetic mo…, Annals of translational med… (2022) | [10.21037/atm-22-2619](https://doi.org/10.21037/atm-22-2619) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=docetaxel).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCC2` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCC1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | lung | `ABCC1` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate, `SLC22A7` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLC22A7` substrate, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | lung | `CYP1B1` binder | DrugBank actor |
-| metabolism | skin | `CYP1B1` binder | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate, `ABCC2` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCC2` substrate, `ABCG2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC10 (substrate), BCL2 (unknown), NR1I2 (binder), TUBB1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -89,7 +66,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1669 matched, 185 returned
 - **screened:** 10  ·  **relevant:** 9
-- **records:** 8  ·  extracted 1  ·  needs review 2  ·  rejected 5  ·  stale 1
+- **records:** 8  ·  extracted 1  ·  needs review 2  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

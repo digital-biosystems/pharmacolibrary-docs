@@ -1,8 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;romiplostim&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/&quot;},{&quot;label&quot;:&quot;Perez-Ruixo_2012 \u00b7 PD platelet counts&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Perez_Ruixo_2012_PLT&quot;,&quot;label&quot;:&quot;Perez-Ruixo_2012 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/pd_Perez_Ruixo_2012_PLT.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# platelet counts — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+# platelet counts — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +15,7 @@
 
 **As extracted:** Romiplostim (the dose) drives platelet counts (in 10(9)/L): delayed effect through transit (transduction) compartments.
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 > The paper does not provide a full text to specify the mechanism, but the record describes a transduction model where romiplostim dose (µg/kg) stimulates platelet counts (10^9/L) with a kinetics of drug effect constant of 0.6 day^-1. The model includes a baseline platelet count of 11.1 10^9/L and two values for the romiplostim stimulatory effect: 351 %/100 µg/wk and 12 %/100 µg/wk.
 >
@@ -46,53 +45,23 @@ Perez-Ruixo JJ et al., Romiplostim dose response in patients w…, Journal of cl
 </details>
 
 
-## Exposure-response model
-
-`Romiplostim_PerezRuixo2012_PD_plt` — linear, `response = E0 + slope*exposure`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 11.1 10(9)/L | — |
-| slope | 351 %/100 µg/wk | 3.51e+11 (1)/(1) |
-
-Closed-form check points (response, SI): `at_0` = 11.1, `per_exposure_unit` = 3.51e+11
-
-Deviations:
-
-- `pd_binding_family_inferred` — the record's model family is transduction; read from the parameters: a slope and no Emax — linear
-- `pd_binding_slope_unit_assumed` — slope unit '%/100 µg/wk' read as 10(9)/L per µg/kg
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | skipped | a line has no plateau to compare |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | pass | nothing defaulted |
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | transduction | indirect_response_iii | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q320]` |  | 12 %/100 µg/wk | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 11.1 | 11.1 × 10^9/L | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q326].value` | 0.6 | 0.6 day^-1 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q335]` | 12 |  | only_one_extracted |
+| `gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
+| `gpt-oss-120b` | `model_family` | transduction | indirect_response_iii | mismatch |
+| `gpt-oss-120b` | `parameters[Q320]` |  | 12 %/100 µg/wk | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q324].value` | 11.1 | 11.1 × 10^9/L | mismatch |
+| `gpt-oss-120b` | `parameters[Q326].value` | 0.6 | 0.6 day^-1 | mismatch |
+| `gpt-oss-120b` | `parameters[Q335]` | 12 |  | only_one_extracted |
 
 </details>
 
@@ -108,52 +77,19 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_romiplostim/Romiplostim_PerezRuixo2012_PD_plt/Romiplostim_PerezRuixo2012_PD_plt_modelica.zip" download>Romiplostim_PerezRuixo2012_PD_plt_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_romiplostim/Romiplostim_PerezRuixo2012_PD_plt/Romiplostim_PerezRuixo2012_PD_plt_fmi.zip" download>Romiplostim_PerezRuixo2012_PD_plt_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_LinearSweep.fmu" download>PD_LinearSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_romiplostim/Romiplostim_PerezRuixo2012_PD_plt/Romiplostim_PerezRuixo2012_PD_plt_matlab.zip" download>Romiplostim_PerezRuixo2012_PD_plt_matlab.zip</a> <span class="pk-size">(1.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_romiplostim/Romiplostim_PerezRuixo2012_PD_plt/Romiplostim_PerezRuixo2012_PD_plt_sbml.zip" download>Romiplostim_PerezRuixo2012_PD_plt_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_romiplostim/Romiplostim_PerezRuixo2012_PD_plt/Romiplostim_PerezRuixo2012_PD_plt_cellml.zip" download>Romiplostim_PerezRuixo2012_PD_plt_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | model | `E0` | 11.1 |  |
-| input | model | `exposure_per_s` | 1e-09 |  |
-| input | model | `slope` | 3.51e+11 |  |
-| output | concentration | `response` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `Romiplostim_PerezRuixo2012_PD_plt`. <https://pharmacolibrary.github.io/#/drugs/drug_romiplostim/pd_Perez_Ruixo_2012_PLT>
-
-```bibtex
-@misc{pharmacolibrary_RomiplostimPerezRuixo2012PDplt,
-  title  = {{Pharmacolibrary model Romiplostim_PerezRuixo2012_PD_plt}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_romiplostim/pd_Perez_Ruixo_2012_PLT},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_romiplostim/Romiplostim_PerezRuixo2012_PD_plt/Romiplostim_PerezRuixo2012_PD_plt_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_romiplostim/Romiplostim_PerezRuixo2012_PD_plt/Romiplostim_PerezRuixo2012_PD_plt_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Romiplostim_PerezRuixo2012_PD_plt_params.json` · controls `Romiplostim_PerezRuixo2012_PD_plt_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

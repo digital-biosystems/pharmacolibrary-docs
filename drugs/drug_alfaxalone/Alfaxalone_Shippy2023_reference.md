@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;alfaxalone&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/&quot;},{&quot;label&quot;:&quot;Shippy_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alfaxalone_Goodchild2020_reference&quot;,&quot;label&quot;:&quot;Goodchild_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_Goodchild2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_adjusted_typical_values&quot;,&quot;label&quot;:&quot;White_2022_adjusted_typical_values&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_adjusted_typical_values.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_adjusted_typical_values_a&quot;,&quot;label&quot;:&quot;White_2022_adjusted_typical_values_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_adjusted_typical_values_a.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_Shippy2023_reference&quot;,&quot;label&quot;:&quot;Shippy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_Shippy2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Alfaxalone_White2022_female&quot;,&quot;label&quot;:&quot;White_2022_female&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_female.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_p_value&quot;,&quot;label&quot;:&quot;White_2022_p_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_p_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Goodchild_2020_BIS&quot;,&quot;label&quot;:&quot;Goodchild_2020 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/pd_Goodchild_2020_BIS.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alfaxalone_Shippy2023_reference&quot;,&quot;label&quot;:&quot;Shippy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_Shippy2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Alfaxalone_White2022_adjusted_typical_values&quot;,&quot;label&quot;:&quot;White_2022_adjusted_typical_values&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_adjusted_typical_values.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_adjusted_typical_values_a&quot;,&quot;label&quot;:&quot;White_2022_adjusted_typical_values_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_adjusted_typical_values_a.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_female&quot;,&quot;label&quot;:&quot;White_2022_female&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_female.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_White2022_p_value&quot;,&quot;label&quot;:&quot;White_2022_p_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_White2022_p_value.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfaxalone_Goodchild2020_reference&quot;,&quot;label&quot;:&quot;Goodchild_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/Alfaxalone_Goodchild2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Goodchild_2020_BIS&quot;,&quot;label&quot;:&quot;Goodchild_2020 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alfaxalone/pd_Goodchild_2020_BIS.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # alfaxalone — `Alfaxalone_Shippy2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The alfaxalone record relies on abstract-only summary statistics and assumes unit bioavailability instead of fitted model parameters.
-
-<div class="pk-model-meta" hidden drug="alfaxalone" model-id="Alfaxalone_Shippy2023_reference" status="needs_review" stale="false" population="healthy bearded dragons" measured-compound="alfaxalone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alfaxalone" model-id="Alfaxalone_Shippy2023_reference" status="simulated" stale="false" population="healthy bearded dragons" measured-compound="alfaxalone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Shippy S, Allgood H, Messenger K, Hernandez JA, Gatson B, Martin de Bustamante MG et al. Pharmacokinetics and pharmacodynamics of intramuscular alfaxalone in central bearded dragons (Pogona vitticeps): effect of injection site. Veterinary anaesthesia and analgesia 50(3):280–288 (2023).
@@ -31,8 +29,6 @@ Shippy S, Allgood H, Messenger K, Hernandez JA, Gatson B, Martin de Bustamante M
 <figure class="pk-models-diagram"><img src="drugs/drug_alfaxalone/Alfaxalone_Shippy2023_reference/Alfaxalone_Shippy2023_reference.svg" alt="Alfaxalone_Shippy2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | volume of distribution per fraction absorbed | V/F | 1.0 | L kg-1 |
@@ -42,7 +38,7 @@ Shippy S, Allgood H, Messenger K, Hernandez JA, Gatson B, Martin de Bustamante M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +48,13 @@ Shippy S, Allgood H, Messenger K, Hernandez JA, Gatson B, Martin de Bustamante M
 
 ### Reviewer guidance
 
-**The alfaxalone record relies on abstract-only summary statistics and assumes unit bioavailability instead of fitted model parameters.**
+**Every check that could be run on this record passed.**
 
-The record was built from the abstract alone, so reported summary statistics like the 9.6 L/h clearance stood in for a fitted model. The model builder defaulted the absorption lag time and assumed unit bioavailability (F=1) rather than using explicit estimates. These deviations, combined with the lack of fitted parameters, led to the record being held back for review. Extracted — alfaxalone: V/F 1 L kg-1, CL/F 9.6 L/h, kabs 2.3 minute-1, t1/2z 71.9 minutes.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -124,15 +120,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=alfaxalone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=alfaxalone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

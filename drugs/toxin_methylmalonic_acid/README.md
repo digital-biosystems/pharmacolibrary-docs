@@ -54,7 +54,7 @@ Methylmalonic acid is a malonic acid derivative which is a vital intermediate in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-11 06:42 | 25:53 | 0/1/0 | 1/1/0 | 0/0/0 | 355,388/16,507 | einfracz / qwen3.8-27b | 37 | 3/18 | 36/1 | 0 |
+| 2026-11-11 06:42 | 25:53 | 0/1/0 | 2/1/0 | 0/0/0 | 355,388/16,507 | einfracz / qwen3.8-27b | 37 | 3/18 | 36/1 | 0 |
 
 ## Coverage
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption and intercompartmental clearances were left at library placeholder values unsupported by the abstract-only source data for valdecoxib.
+> Valdecoxib’s absorption rate constant ka and distribution-rate constants k13 and k31 had no reported values and were defaulted; reported total clearance was 9.53 L·h−1·70 kg−1.
 
 <div class="pk-model-meta" hidden drug="valdecoxib" model-id="Valdecoxib_Tan2016_reference" status="needs_review" stale="false" population="children undergoing tonsillectomy +/- adenoidectomy" measured-compound="valdecoxib" parameterization="apparent" topology="3C"></div>
 
@@ -17,7 +17,7 @@ Tan L, Taylor E, Hannam JA, Salkeld L, Salman S, Anderson BJ. Pharmacokinetics a
 
 ## Population and dosing
 
-**Population:** children undergoing tonsillectomy +/- adenoidectomy · age group child · n = ... (truncated)....
+**Population:** children undergoing tonsillectomy +/- adenoidectomy · age group child.
 
 **Dosed compound ≠ measured compound:** dosed parecoxib, measured valdecoxib.
 
@@ -55,13 +55,13 @@ Tan L, Taylor E, Hannam JA, Salkeld L, Salman S, Anderson BJ. Pharmacokinetics a
 
 ### Reviewer guidance
 
-**Absorption and intercompartmental clearances were left at library placeholder values unsupported by the abstract-only source data for valdecoxib.**
+**Valdecoxib’s absorption rate constant ka and distribution-rate constants k13 and k31 had no reported values and were defaulted; reported total clearance was 9.53 L·h−1·70 kg−1.**
 
-The first-order absorption rate and intercompartmental clearances were not extracted from the paper, so library placeholders were used instead of explicit estimates. The record relies on abstract summary statistics because no fitted model was available. Additionally, the second reader disagrees on several parameter assignments and the inclusion of a metabolite link. Extracted — valdecoxib: CLnorm 19.1 L·h-1 ·70 kg-1, V1 4.2 L·70 kg-1, Q 6.29 L·h-1 ·70 kg-1, V2/F 130 L·70 kg-1, V3 2.03 L·70 kg-1, CL 9.53 L·h-1 ·70 kg-1, V 51 L·70 kg-1.
+Ka, k13, and k31 use library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by the paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; it also assumes F=1 and Fm=1, no molar correction, and first-order depot input consistent with extravascular dosing. The second reader disputed the record, with agreement 0.278, including whether parecoxib metabolism to valdecoxib and several parecoxib-labeled parameter estimates belonged in the model. Extracted — valdecoxib: CLnorm 19.1 L·h-1 ·70 kg-1, V1 4.2 L·70 kg-1, Q 6.29 L·h-1 ·70 kg-1, V2/F 130 L·70 kg-1, V3 2.03 L·70 kg-1, CL 9.53 L·h-1 ·70 kg-1, V 51 L·70 kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading parecoxib → valdecoxib (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -154,15 +154,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=valdecoxib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=valdecoxib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.278, 0 of 1 reader(s) agree | 0.278 | cross-check disputed by a second reader: verdict disputed, agreement 0.278, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

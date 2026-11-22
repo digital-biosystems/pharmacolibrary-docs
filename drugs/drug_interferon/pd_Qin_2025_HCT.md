@@ -1,8 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01A&quot;,&quot;href&quot;:&quot;atc/S01A.md&quot;},{&quot;label&quot;:&quot;interferon&quot;,&quot;href&quot;:&quot;drugs/drug_interferon/&quot;},{&quot;label&quot;:&quot;Qin_2025 \u00b7 PD hematocrit&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Qin_2025_ALT&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 ALT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_interferon/pd_Qin_2025_ALT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_AST&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 AST&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_interferon/pd_Qin_2025_AST.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_CHR&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 CHR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_interferon/pd_Qin_2025_CHR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_JAK2V617F&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 JAK2V617F&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_interferon/pd_Qin_2025_JAK2V617F.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_anemia&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 anemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_interferon/pd_Qin_2025_anemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# hematocrit — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+# hematocrit — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +15,7 @@
 
 **As extracted:** Ropeginterferon alfa-2b drives hematocrit (in %): indirect response — drug inhibits the production of hematocrit.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
 > Total serum ropeginterferon alfa-2b concentrations inhibit the zero-order production rate constant (kin) of hematocrit (HCT) via an indirect response mechanism with a linear transfer compartment. The model estimates a maximum inhibition of 59.2%, an IC50 of 137 ng mL−1, and a transfer rate constant (ktr) of 0.023 h−1, while the baseline (HCT0) and steady-state (HCTss) HCT values are 45.9% and 48.9%, respectively.
 >
@@ -47,57 +46,22 @@ Qin A et al., Population Pharmacokinetics-Pharmacodyn…, Pharmacology research 
 </details>
 
 
-## Exposure-response model
-
-`Interferon_Qin2025_PD_hct` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0.489 % | 0.00489 1 |
-| Emax | 0.592 | — |
-| EC50 | 137 ng mL−1 | 0.000137 kg/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 0.00489, `at_EC50` = 0.003443, `at_inf` = 0.001995
-
-Deviations:
-
-- `defaulted_parameters` — gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as IDR-I predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
-
-Advisory:
-
-- defaulted: gamma (convention)
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` |  | unit | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 137 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 0.592 | unit | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 0.459 | unit | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q338].value` | 0.023 | unit | mismatch |
+| `gpt-oss-120b` | `parameters[Q321]` |  | unit | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q322]` | 137 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q323].value` | 0.592 | unit | mismatch |
+| `gpt-oss-120b` | `parameters[Q324].value` | 0.459 | unit | mismatch |
+| `gpt-oss-120b` | `parameters[Q338].value` | 0.023 | unit | mismatch |
 
 </details>
 
@@ -113,33 +77,19 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_interferon/Interferon_Qin2025_PD_hct/Interferon_Qin2025_PD_hct_modelica.zip" download>Interferon_Qin2025_PD_hct_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_interferon/Interferon_Qin2025_PD_hct/Interferon_Qin2025_PD_hct_matlab.zip" download>Interferon_Qin2025_PD_hct_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_interferon/Interferon_Qin2025_PD_hct/Interferon_Qin2025_PD_hct_sbml.zip" download>Interferon_Qin2025_PD_hct_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_interferon/Interferon_Qin2025_PD_hct/Interferon_Qin2025_PD_hct_cellml.zip" download>Interferon_Qin2025_PD_hct_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `Interferon_Qin2025_PD_hct`. <https://pharmacolibrary.github.io/#/drugs/drug_interferon/pd_Qin_2025_HCT>
-
-```bibtex
-@misc{pharmacolibrary_InterferonQin2025PDhct,
-  title  = {{Pharmacolibrary model Interferon_Qin2025_PD_hct}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_interferon/pd_Qin_2025_HCT},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

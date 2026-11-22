@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment ribavirin model was rejected because the peripheral compartment was unreachable, and its parameters were mislabeled as Favipiravir.
+> Ribavirin’s peripheral-compartment volume (V2, 934.2 L) was rejected because the two-compartment model has no recorded path from the dose to that compartment.
 
 <div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Erameh2026_ribavirinparticipants" status="rejected" stale="false" population="hospitalized adults with mild-to-moderate Lassa fever" measured-compound="ribavirin" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Erameh C, Okwaraeke K, Kleist C, Edeawe O, Adedosu N, Ekata E et al. Favipiravir
 
 ### Reviewer guidance
 
-**The two-compartment ribavirin model was rejected because the peripheral compartment was unreachable, and its parameters were mislabeled as Favipiravir.**
+**Ribavirin’s peripheral-compartment volume (V2, 934.2 L) was rejected because the two-compartment model has no recorded path from the dose to that compartment.**
 
-The record defines a two-compartment structure, but no link was recorded to connect the peripheral compartment to the central one, making it an orphan compartment. Furthermore, the values for clearance (2.7 l/h) and central volume (41.5 l) are explicitly labeled as 'Favipiravir' rather than Ribavirin. Although the paper concerns Ribavirin, these mislabeled parameters indicate a compound mismatch in the extracted pharmacokinetic values. Extracted — ribavirin: CL 2.7 l h−1, V 41.5 l, V2 934 l.
+The record identifies V2 as the ribavirin peripheral-compartment volume and records a two-compartment structure with no links, leaving that compartment unreachable from the dose. A second reader disputed the recorded link representation and did not confirm the parameter values. Extracted — ribavirin: CL 2.7 l h−1, V 41.5 l, V2 934 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ribavirin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

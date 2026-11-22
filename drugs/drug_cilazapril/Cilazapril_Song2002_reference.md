@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Song_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Deget1991_reference&quot;,&quot;label&quot;:&quot;Deget_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Deget1991_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Williams1989v2_reference&quot;,&quot;label&quot;:&quot;Williams_1989_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Meredith1989_reference&quot;,&quot;label&quot;:&quot;Meredith_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cilazapril_Williams1989v2_reference&quot;,&quot;label&quot;:&quot;Williams_1989_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Williams1989v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cilazapril — `Cilazapril_Song2002_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Song2002_reference" status="simulated" stale="false" population="unknown" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
+> The second reader disputed the cilazapril record, leaving clearance and volume of distribution values unverified.
+
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Song2002_reference" status="needs_review" stale="false" population="adults" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Song JC, White CM. Clinical pharmacokinetics and selective pharmacodynamics of new angiotensin converting enzyme inhibitors: an update. Clinical pharmacokinetics 41(3):207–224 (2002).
@@ -16,8 +18,6 @@ Song JC, White CM. Clinical pharmacokinetics and selective pharmacodynamics of n
 ## Population and dosing
 
 **Population:** review reference.
-
-**Dosed compound ≠ measured compound:** dosed unknown, measured cilazapril.
 
 ## Model
 
@@ -29,14 +29,16 @@ Song JC, White CM. Clinical pharmacokinetics and selective pharmacodynamics of n
 <figure class="pk-models-diagram"><img src="drugs/drug_cilazapril/Cilazapril_Song2002_reference/Cilazapril_Song2002_reference.svg" alt="Cilazapril_Song2002_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL (L/h) | CL | 1.54 | L/h |
-| Vd (L) | V | 1.79 | L |
+| CL | CL | 1.79 | L/h |
+| Vd | V | 8.7 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,18 +48,20 @@ Song JC, White CM. Clinical pharmacokinetics and selective pharmacodynamics of n
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The second reader disputed the cilazapril record, leaving clearance and volume of distribution values unverified.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 256, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+The record lists a total clearance of 1.79 L/h and a volume of distribution of 8.7 L for cilazapril. A cross-check failed because the second reader provided no values for these parameters or associated covariates. Consequently, the record remains in a held-back state due to this disagreement. Extracted — cilazapril: CL 1.79 L/h, V 8.7 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 1.79, the second reading none; it also differs on 9 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 1.54 | L/h | 4.278e-07 | m3/s | L/h | review (0.7) | Song_2002:review |
-| Vd (L) | `Q61` · V | 1.79 | L | 0.00179 | m3 | L | review (0.7) | Song_2002:review |
+| CL | `Q22` · CL | 1.79 | L/h | 4.972e-07 | m3/s | L/h | review (0.7) | Song_2002:review |
+| Vd | `Q61` · V | 8.7 | L | 0.0087 | m3 | L | review (0.7) | Song_2002:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,27 +76,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (5/15 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.0 (0/10 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q17]` | 256 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q19]` | 0.96 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q22]` | 1.54 | 1.79 | mismatch |
-| `gpt-oss-120b` | `values[Q364]` |  | 100 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q40]` | 8.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q46]` |  | 95 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 1.79 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q26]` | 97 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 147 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q364]` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 95 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 0.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q57]` | 0.72 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q61]` | 1.79 | 8.7 | mismatch |
-| `gpt-oss-120b` | `values[Q74]` | 147 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q88]` | 1375 | 147 | mismatch |
+| `gpt-oss-120b` | `values[Q61]` | 8.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 147 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q900]` | 1070 |  | only_one_extracted |
 
 </details>
 
@@ -111,21 +115,22 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Song_2002:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Song_2002:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.54 | ['Song_2002:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.79 | ['Song_2002:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.54 L/h | ['Song_2002:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.79 L | ['Song_2002:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.79 L/h | ['Song_2002:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 8.7 L | ['Song_2002:review'] |
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cilazapril) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cilazapril) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check agreement 0.0 is below 0.5: verdict partial, agreement 0.0, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,8 +168,8 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 4.278e-07 | m3/s |
-| input | model | `VdPerKg` | 2.557e-05 | m3/kg |
+| input | model | `Cl` | 4.972e-07 | m3/s |
+| input | model | `VdPerKg` | 0.0001243 | m3/kg |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -203,4 +208,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcilazapril%5D%20Cilazapril_Song2002_reference&body=Drug%3A%20cilazapril%0ARecord%3A%20Cilazapril_Song2002_reference%0APaper%3A%20Song_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cilazapril/Cilazapril_Song2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 11:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:16 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejection resulted from biomarker kinetics substituting for drug PK and abstract-only summary statistics lacking a fitted model.
+> The record was rejected because it substitutes biomarker kinetics (APTT) for drug pharmacokinetics of ximelagatran and melagatran, using abstract-only summary statistics with default absorption parameters.
 
 <div class="pk-model-meta" hidden drug="ximelagatran" model-id="Ximelagatran_Eriksson2003_reference" status="rejected" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
@@ -53,9 +53,9 @@ Eriksson UG, Mandema JW, Karlsson MO, Frison L, Gisleskog PO, Wählby U et al. P
 
 ### Reviewer guidance
 
-**Rejection resulted from biomarker kinetics substituting for drug PK and abstract-only summary statistics lacking a fitted model.**
+**The record was rejected because it substitutes biomarker kinetics (APTT) for drug pharmacokinetics of ximelagatran and melagatran, using abstract-only summary statistics with default absorption parameters.**
 
-The record was constructed solely from the abstract, causing reported summary statistics to stand in for a fitted model. The analyte identity failed because the disposition labels reference a biomarker rather than ximelagatran or its metabolite. Absorption parameters like ka were defaulted instead of being explicitly estimated, leading to apparent parameterization. Extracted — melagatran: CLm/F 5.3 L/h, Fab 23 %, V 15.5 L; ximelagatran: CL 22.9 L/h, V/F 159 L.
+The source text is abstract-only, meaning the reported clearance and volume of distribution are summary statistics rather than fitted model parameters. The analyte identity check failed because the disposition labels refer to biomarker kinetics rather than the parent drug or metabolite. Additionally, the model builder defaulted the absorption rate constant and lag time to placeholders because they were not reported in the source. Extracted — melagatran: CLm/F 5.3 L/h, Fab 23 %, V 15.5 L; ximelagatran: CL 22.9 L/h, V/F 159 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has melagatran, ximelagatran, the second reading melagatran (SC) and ximelagatran (PO); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -151,15 +151,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | ximelagatran (or metabolite) | median population clearance (creatinine clearance 70 mL/min) ... oral | disposition label(s) name a biomarker, not ximelagatran: 'median population clearance (creatinine clearance 70 mL/min) ... oral' · the biomarker kinetics are in the PD record(s) Eriksson_2003::APTT |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=melagatran) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | ximelagatran (or metabolite) | median population clearance (creatinine clearance 70 mL/min) ... oral |  | disposition label(s) name a biomarker, not ximelagatran: 'median population clearance (creatinine clearance 70 mL/min) ... oral' · the biomarker kinetics are in the PD record(s) Eriksson_2003::APTT |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=melagatran) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

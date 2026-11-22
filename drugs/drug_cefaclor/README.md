@@ -39,22 +39,10 @@ Cefaclor belongs to the class of second-generation cephalosporins and is prescri
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Jeong_2021_estimate](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimate.md) | ▶ model + simulator | 1-compartment, oral | 4 | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2021) | [10.3390/pharmaceutics13050754](https://doi.org/10.3390/pharmaceutics13050754) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Jeong_2021_estimate](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimate.md) | ▶ model + simulator | 1-compartment, oral | 4 | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2021) | [10.3390/pharmaceutics13050754](https://doi.org/10.3390/pharmaceutics13050754) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [↳ estimates](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimates.md) | ▶ model + simulator | 1-compartment, oral | 7 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Li_2009_reference](drugs/drug_cefaclor/Cefaclor_Li2009_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Li M et al., Effects of cranberry juice on pharmacok…, Antimicrobial agents and ch… (2009) | [10.1128/AAC.00774-08](https://doi.org/10.1128/AAC.00774-08) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Jang_2024_reference](drugs/drug_cefaclor/Cefaclor_Jang2024_reference.md) | — | 1-compartment (no model) | 0 | Jang JH et al., Structure-Based Analysis of Cefaclor Ph…, International journal of mo… (2024) | [10.3390/ijms25136880](https://doi.org/10.3390/ijms25136880) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefaclor).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A8` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB11` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MPO (inducer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

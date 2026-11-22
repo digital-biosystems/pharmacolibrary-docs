@@ -147,30 +147,13 @@ Clearance, volume of distribution, absorption rate constant, and lag time for as
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_aspirin/Aspirin_Zhang2026_aspirin_i_g/Aspirin_Zhang2026_aspirin_i_g_matlab.zip" download>Aspirin_Zhang2026_aspirin_i_g_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_aspirin/Aspirin_Zhang2026_aspirin_i_g/Aspirin_Zhang2026_aspirin_i_g_matlab_simbio.zip" download>Aspirin_Zhang2026_aspirin_i_g_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_aspirin/Aspirin_Zhang2026_aspirin_i_g/Aspirin_Zhang2026_aspirin_i_g_sbml.zip" download>Aspirin_Zhang2026_aspirin_i_g_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_aspirin/Aspirin_Zhang2026_aspirin_i_g/Aspirin_Zhang2026_aspirin_i_g_cellml.zip" download>Aspirin_Zhang2026_aspirin_i_g_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Zhang Y, Qian W, Yao Y, Sun D, Ma Z, Zhang X et al. Placenta-oriented self-assembled Aspirin-RGDV nanoconjugates attenuate preeclampsia through restoration of angiogenic balance. International journal of pharmaceutics: X 11:100545 (2026). [doi:10.1016/j.ijpx.2026.100545](https://doi.org/10.1016/j.ijpx.2026.100545)
-
-**This record:** Pharmacolibrary, model `Aspirin_Zhang2026_aspirin_i_g`. <https://pharmacolibrary.github.io/#/drugs/toxin_aspirin/Aspirin_Zhang2026_aspirin_i_g>
-
-```bibtex
-@misc{pharmacolibrary_AspirinZhang2026aspirinig,
-  title  = {{Pharmacolibrary model Aspirin_Zhang2026_aspirin_i_g}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_aspirin/Aspirin_Zhang2026_aspirin_i_g},
-  note   = {Parameters from doi:10.1016/j.ijpx.2026.100545},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

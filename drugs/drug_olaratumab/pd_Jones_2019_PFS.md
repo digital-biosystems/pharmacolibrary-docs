@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olaratumab_Mo2018_base&quot;,&quot;label&quot;:&quot;Mo_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olaratumab/Olaratumab_Mo2018_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olaratumab_Mo2018_final&quot;,&quot;label&quot;:&quot;Mo_2018_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olaratumab/Olaratumab_Mo2018_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# progression-free survival — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+# progression-free survival — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -51,17 +51,17 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` |  | 82.0 (6–15) | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 82.0 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 0.571 | 0.571 (15–4) | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 8 | 8 (fixed) | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q342].value` | 0.00604 | 0.00604 (2–52) | mismatch |
+| `gpt-oss-120b` | `parameters[Q321]` |  | 82.0 (6–15) | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q322]` | 82.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q323].value` | 0.571 | 0.571 (15–4) | mismatch |
+| `gpt-oss-120b` | `parameters[Q325].value` | 8 | 8 (fixed) | mismatch |
+| `gpt-oss-120b` | `parameters[Q342].value` | 0.00604 | 0.00604 (2–52) | mismatch |
 
 </details>
 

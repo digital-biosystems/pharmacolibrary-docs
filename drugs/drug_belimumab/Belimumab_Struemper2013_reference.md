@@ -16,7 +16,7 @@ Struemper H, Chen C, Cai W. Population pharmacokinetics of belimumab following i
 
 ## Population and dosing
 
-**Population:** patients with systemic lupus erythematosus · condition systemic lupus erythematosus · age group adult · n = ?subject_count?.
+**Population:** patients with systemic lupus erythematosus · condition systemic lupus erythematosus · age group adult.
 
 ## Model
 

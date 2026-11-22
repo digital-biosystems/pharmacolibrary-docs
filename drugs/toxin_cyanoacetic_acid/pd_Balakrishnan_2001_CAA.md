@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided text does not specify the pharmacodynamic mechanism or quantitative potency parameters (e.g., IC50, Imax) linking cyanoacetic acid concentrations to chromosomal aberrations (dicentrics).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Balakrishnan_2001`
 - **model family:** `linear`
 - **driver:** `not_resolved`

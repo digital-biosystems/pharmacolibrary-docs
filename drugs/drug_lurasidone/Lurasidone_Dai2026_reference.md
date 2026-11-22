@@ -4,11 +4,11 @@
 
 # lurasidone — `Lurasidone_Dai2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:17 UTC (Rejected), but the paper was screened again on 2026-10-06 15:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks distribution volume and clearance parameters, failing structural requirements for a compartmental population pharmacokinetic model.
+> The record for lurasidone was rejected because it contains a drug interaction clearance ratio and steady-state AUC, but lacks the distribution volume and elimination clearance required for a compartmental PK model.
 
-<div class="pk-model-meta" hidden drug="lurasidone" model-id="Lurasidone_Dai2026_reference" status="rejected" stale="true" population="Chinese patients with bipolar depression" measured-compound="lurasidone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lurasidone" model-id="Lurasidone_Dai2026_reference" status="rejected" stale="false" population="Chinese patients with bipolar depression" measured-compound="lurasidone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dai C, Lin M, Xu N, Fu Y, Li X, Shi Y et al. The impact of CYP3A4 rs2242480 on oral lurasidone: A population pharmacokinetic model and exposure-efficacy analysis in Chinese bipolar depression patients. Journal of affective disorders 394(Pt B):120588 (2026).
@@ -35,7 +35,7 @@ Dai C, Lin M, Xu N, Fu Y, Li X, Shi Y et al. The impact of CYP3A4 rs2242480 on o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Dai C, Lin M, Xu N, Fu Y, Li X, Shi Y et al. The impact of CYP3A4 rs2242480 on o
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance parameters, failing structural requirements for a compartmental population pharmacokinetic model.**
+**The record for lurasidone was rejected because it contains a drug interaction clearance ratio and steady-state AUC, but lacks the distribution volume and elimination clearance required for a compartmental PK model.**
 
-The paper reports an AUCSS of 167 mg·h·L-1 and a 14.3% clearance reduction, but provides no values for volume or elimination rates. Consequently, the record cannot support a mechanistic compartmental model as it lacks the necessary structural parameters. A second reader disagreed on several fields, including the apparent clearance value and the availability of concentration measurements. Extracted — lurasidone: CL_ratio 14.3 %, AUCSS 167 mg·h·L-1.
+The parameters extracted, a clearance reduction of 14.3% and an AUC of 167 mg·h·L-1, are pharmacokinetic outcomes rather than structural parameters. The second reader identified a clear dimensional mismatch where the percentage unit for the clearance ratio conflicts with the expected dimensionless parameter value. Because the record was built from the abstract alone, it reflects summary statistics from an exposure-outcome study rather than a fitted population PK model. Extracted — lurasidone: CL_ratio 14.3 %, AUCSS 167 mg·h·L-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lurasidone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

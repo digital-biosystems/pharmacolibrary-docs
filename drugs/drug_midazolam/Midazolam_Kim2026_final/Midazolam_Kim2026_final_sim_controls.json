@@ -29,16 +29,6 @@
   "step": 1
  },
  {
-  "key": "CL1",
-  "label": "Parent clearance, other routes",
-  "unit": "L/h",
-  "scale": 3600000.0,
-  "min": 0.2,
-  "max": 3,
-  "step": 0.05,
-  "mult": true
- },
- {
   "key": "q1_m11",
   "label": "Formation of metabolite 1",
   "unit": "L/h",
@@ -103,7 +93,7 @@
   "unit": "h",
   "scale": 0.0002777777777777778,
   "min": 3.0,
-  "max": 52.0,
+  "max": 48.0,
   "step": 1.0,
   "sim": true
  }

@@ -17,7 +17,7 @@ Koh J, Khwarg J, Yu KS, Lee S, Jang IJ, Lee S. Population Pharmacokinetic and Ph
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=44.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 100 mg, oral, multiple, every 24 h.
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Rejected because the abstract-only source yielded only summary statistics, providing no fitted kinetic parameters for tris(2-chloroethyl)phosphate.
 
 <div class="pk-model-meta" hidden drug="Tris(2-chloroethyl)phosphate" model-id="Tris2ChloroethylPhosphate_Wang2020v2_reference" status="rejected" stale="false" population="humans" measured-compound="Tris(2-chloroethyl)phosphate" parameterization="mechanistic" topology="1C"></div>
 
@@ -42,7 +42,13 @@ Wang X, Liu Q, Zhong W, Yang L, Yang J, Covaci A et al. Estimating renal and hep
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Rejected because the abstract-only source yielded only summary statistics, providing no fitted kinetic parameters for tris(2-chloroethyl)phosphate.**
+
+The record relies entirely on an abstract, meaning reported summary statistics substituted for a fitted pharmacokinetic model. The single parameter listed, a renal clearance of 68.9 mL/kg/day, is mislabeled as belonging to triphenyl phosphate rather than the target drug. Consequently, the model lacks valid kinetic quantities such as rate constants or volumes of distribution for tris(2-chloroethyl)phosphate. Extracted — Tris(2-chloroethyl)phosphate: CLR 68.9 mL/kg/day.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

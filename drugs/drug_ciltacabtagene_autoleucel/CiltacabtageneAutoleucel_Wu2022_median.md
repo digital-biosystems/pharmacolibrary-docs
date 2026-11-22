@@ -4,11 +4,11 @@
 
 # ciltacabtagene autoleucel — `CiltacabtageneAutoleucel_Wu2022_median`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-07 22:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for ciltacabtagene autoleucel lacks distribution volume and clearance, failing to define a compartmental population PK model.
+> Record for ciltacabtagene autoleucel rejected: no distribution volume or clearance, and the unit for λ1 was not recognized.
 
-<div class="pk-model-meta" hidden drug="ciltacabtagene autoleucel" model-id="CiltacabtageneAutoleucel_Wu2022_median" status="rejected" stale="true" population="adults with relapsed or refractory multiple myeloma" measured-compound="ciltacabtagene autoleucel CAR transgene" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ciltacabtagene autoleucel" model-id="CiltacabtageneAutoleucel_Wu2022_median" status="rejected" stale="false" population="adults with relapsed or refractory multiple myeloma" measured-compound="ciltacabtagene autoleucel CAR transgene" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wu LS, Su Y, Li C, Zhou W, Jackson CC, Sun YN et al. Population-based cellular kinetic characterization of ciltacabtagene autoleucel in subjects with relapsed or refractory multiple myeloma. Clinical and translational science 15(12):3000–3011 (2022).
@@ -44,7 +44,7 @@ Wu LS, Su Y, Li C, Zhou W, Jackson CC, Sun YN et al. Population-based cellular k
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Wu LS, Su Y, Li C, Zhou W, Jackson CC, Sun YN et al. Population-based cellular k
 
 ### Reviewer guidance
 
-**The record for ciltacabtagene autoleucel lacks distribution volume and clearance, failing to define a compartmental population PK model.**
+**Record for ciltacabtagene autoleucel rejected: no distribution volume or clearance, and the unit for λ1 was not recognized.**
 
-Extracted parameters include lag time and mean transit time but omit volume of distribution and elimination clearance, so the record is not a compartmental model. A structural parameter also had a unit that could not be converted to standard international units, preventing its dimensional validation. Extracted — ciltacabtagene autoleucel: tlag 4.85 days, MTT 10.1 days, λ1 160 day−1, Cmax 3.42e+04, AUCt 3.71e+05, tmax 14 days.
+The paper is an exposure/outcome study for autologous CAR T-cells, reporting only Cmax (34200 copies/μg) and AUC (371000 day·copies/μg), with no volume of distribution or clearance parameters. The parameter λ1 has a value of 160 with unit day−1, which was not recognized, resulting in a dimension mismatch error. Consequently, the record is not a compartmental population PK model. Extracted — ciltacabtagene autoleucel: tlag 4.85 days, MTT 10.1 days, λ1 160 day−1, Cmax 3.42e+04, AUCt 3.71e+05, tmax 14 days.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

@@ -44,7 +44,7 @@ Chronic Inhalation: 0.01 mg/m3
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Zabrodskii_2003_T_cell_mediated_immune_reactions](drugs/toxin_lewisite/pd_Zabrodskii_2003_T_cell_mediated_immune_reactions.md) | T cell-mediated immune reactions ← lewisite · inhibition effect | — | Zabrodskii PF et al., Anticholinesterase mechanism as a facto…, Bulletin of experimental bi… (2003) | [10.1023/a:1026327225739](https://doi.org/10.1023/a:1026327225739) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">rat</span> | [Zabrodskii_2003_T_cell_mediated_immune_reactions](drugs/toxin_lewisite/pd_Zabrodskii_2003_T_cell_mediated_immune_reactions.md) | T cell-mediated immune reactions ← lewisite · inhibition effect | — | Zabrodskii PF et al., Anticholinesterase mechanism as a facto…, Bulletin of experimental bi… (2003) | [10.1023/a:1026327225739](https://doi.org/10.1023/a:1026327225739) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

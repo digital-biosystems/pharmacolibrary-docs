@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D04A&quot;,&quot;href&quot;:&quot;atc/D04A.md&quot;},{&quot;label&quot;:&quot;diphenhydramine&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/&quot;},{&quot;label&quot;:&quot;Wasfi_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diphenhydramine_Wasfi2003_reference&quot;,&quot;label&quot;:&quot;Wasfi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/Diphenhydramine_Wasfi2003_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diphenhydramine_Wasfi2003_reference&quot;,&quot;label&quot;:&quot;Wasfi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/Diphenhydramine_Wasfi2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diphenhydramine — `Diphenhydramine_Wasfi2003_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-<div class="pk-model-meta" hidden drug="diphenhydramine" model-id="Diphenhydramine_Wasfi2003_reference" status="simulated" stale="false" population="camels and horses" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></div>
+> The abstract-only record lacks a fitted model, and the second reader disagreed on the terminal half-life, clearance, and volume parameters for diphenhydramine.
+
+<div class="pk-model-meta" hidden drug="diphenhydramine" model-id="Diphenhydramine_Wasfi2003_reference" status="needs_review" stale="false" population="camels and horses" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wasfi IA, Abdel Hadi AA, Elghazali M, Alkateeri NA, Hussain MM, Hamid AM. Comparative pharmacokinetics of diphenhydramine in camels and horses after intravenous administration. Veterinary research communications 27(6):463–473 (2003).
@@ -29,6 +31,8 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Alkateeri NA, Hussain MM, Hamid AM. Compar
 <figure class="pk-models-diagram"><img src="drugs/drug_diphenhydramine/Diphenhydramine_Wasfi2003_reference/Diphenhydramine_Wasfi2003_reference.svg" alt="Diphenhydramine_Wasfi2003_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | terminal elimination half lives in camels | t1/2z | 1.58 | h |
@@ -39,7 +43,7 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Alkateeri NA, Hussain MM, Hamid AM. Compar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +53,13 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Alkateeri NA, Hussain MM, Hamid AM. Compar
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The abstract-only record lacks a fitted model, and the second reader disagreed on the terminal half-life, clearance, and volume parameters for diphenhydramine.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record relies solely on abstract summary statistics because the full paper text was not available, meaning the values stand in for a fitted model. A second reader disagreed with the primary extraction for all five parameters, including the terminal half-life of 1.58 hours and total clearance of 1.42 L/h. This disagreement resulted in a cross-check agreement score of 0.308, which falls below the 0.5 threshold required for consensus. The horse clearance value of 0.79 L/h also lacked independent agreement from the second reader. Extracted — diphenhydramine: t1/2z 1.58 h, CL 1.42 L/h, CLnorm 0.79 L/h, Vss 2.38 L/kg, V 1.58 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of terminal elimination half lives: this record has none, the second reading 1.58; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -144,14 +148,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=diphenhydramine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=diphenhydramine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check agreement 0.308 is below 0.5: verdict partial, agreement 0.308, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

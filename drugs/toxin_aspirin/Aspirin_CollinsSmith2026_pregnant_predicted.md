@@ -139,30 +139,13 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_aspirin/Aspirin_CollinsSmith2026_pregnant_predicted/Aspirin_CollinsSmith2026_pregnant_predicted_matlab.zip" download>Aspirin_CollinsSmith2026_pregnant_predicted_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_aspirin/Aspirin_CollinsSmith2026_pregnant_predicted/Aspirin_CollinsSmith2026_pregnant_predicted_matlab_simbio.zip" download>Aspirin_CollinsSmith2026_pregnant_predicted_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_aspirin/Aspirin_CollinsSmith2026_pregnant_predicted/Aspirin_CollinsSmith2026_pregnant_predicted_sbml.zip" download>Aspirin_CollinsSmith2026_pregnant_predicted_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_aspirin/Aspirin_CollinsSmith2026_pregnant_predicted/Aspirin_CollinsSmith2026_pregnant_predicted_cellml.zip" download>Aspirin_CollinsSmith2026_pregnant_predicted_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Collins-Smith A, Kammala AK, Phelps MA, Wang XM, Menon R, Costantine MM. Development of a Pregnancy-Specific Physiologically Based Pharmacokinetics (PBPK) Model for Aspirin. CPT: pharmacometrics & systems pharmacology 15(2):e70130 (2026). [doi:10.1002/psp4.70130](https://doi.org/10.1002/psp4.70130)
-
-**This record:** Pharmacolibrary, model `Aspirin_CollinsSmith2026_pregnant_predicted`. <https://pharmacolibrary.github.io/#/drugs/toxin_aspirin/Aspirin_CollinsSmith2026_pregnant_predicted>
-
-```bibtex
-@misc{pharmacolibrary_AspirinCollinsSmith2026pregnantpredicted,
-  title  = {{Pharmacolibrary model Aspirin_CollinsSmith2026_pregnant_predicted}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_aspirin/Aspirin_CollinsSmith2026_pregnant_predicted},
-  note   = {Parameters from doi:10.1002/psp4.70130},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

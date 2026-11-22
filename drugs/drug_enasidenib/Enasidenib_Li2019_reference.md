@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Enasidenib's model peak concentration is 0.0003 versus the paper's 0.011, and the drug metabolite link is missing from the structure.
+> Enasidenib's predicted peak concentration (0.0003) is far below the paper's value (0.011), and the model structure lacks the defined metabolite compartment.
 
 <div class="pk-model-meta" hidden drug="enasidenib" model-id="Enasidenib_Li2019_reference" status="rejected" stale="false" population="subjects with advanced hematologic malignancies" measured-compound="enasidenib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,9 +51,9 @@ Li Y, Connarn JN, Chen J, Tong Z, Palmisano M, Zhou S. Modeling and simulation o
 
 ### Reviewer guidance
 
-**Enasidenib's model peak concentration is 0.0003 versus the paper's 0.011, and the drug metabolite link is missing from the structure.**
+**Enasidenib's predicted peak concentration (0.0003) is far below the paper's value (0.011), and the model structure lacks the defined metabolite compartment.**
 
-The simulated maximum concentration (0.0003) is nearly forty times lower than the reported paper value (0.011). The record lists a metabolic link from cholesterol to 4β-hydroxycholesterol, which is structurally unrelated to enasidenib. Additionally, the absorption delay time and bioavailability were not explicitly estimated but instead left at default conventions. Extracted — enasidenib: kabs 22.1 1/day, V/F 97.7 L, CL/F 9.41 L/day.
+The simulated peak concentration ratio is 0.0273, indicating the model fails to reproduce the paper's Cmax. The recorded topology defines a cholesterol-to-4β-hydroxycholesterol link, but the implemented model uses a one-compartment enteral structure. A second reader disputed the identification of enasidenib as the analyte, reporting it as unknown. Extracted — enasidenib: kabs 22.1 1/day, V/F 97.7 L, CL/F 9.41 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has enasidenib, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -141,7 +141,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
 | T1_cmax | reference | fail | 0.011 | 0.0002998 | 0.0273 | ng/mL→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | skipped |  | 172.7 |  | non-numeric value |
 

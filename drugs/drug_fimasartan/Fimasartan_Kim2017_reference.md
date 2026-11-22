@@ -5,11 +5,11 @@
 
 # fimasartan — `Fimasartan_Kim2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:31 UTC (Needs review), but the paper was screened again on 2026-10-07 15:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Λ1 has no unit.
+> Λ1 has no unit.
 
-<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2017_reference" status="needs_review" stale="true" population="healthy adults and adults with hepatic impairment" measured-compound="fimasartan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2017_reference" status="needs_review" stale="false" population="healthy adults and adults with hepatic impairment" measured-compound="fimasartan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kim CO, Jeon S, Han S, Hong T, Park MS, Yoon YR et al. Decreased potency of fimasartan in liver cirrhosis was quantified using mixed-effects analysis. Translational and clinical pharmacology 25(1):43–51 (2017).
@@ -44,7 +44,7 @@ Kim CO, Jeon S, Han S, Hong T, Park MS, Yoon YR et al. Decreased potency of fima
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

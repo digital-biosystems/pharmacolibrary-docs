@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D04A&quot;,&quot;href&quot;:&quot;atc/D04A.md&quot;},{&quot;label&quot;:&quot;diphenhydramine&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/&quot;},{&quot;label&quot;:&quot;Yoo_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diphenhydramine_Wasfi2003_reference&quot;,&quot;label&quot;:&quot;Wasfi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/Diphenhydramine_Wasfi2003_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diphenhydramine_Wasfi2003_reference&quot;,&quot;label&quot;:&quot;Wasfi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/Diphenhydramine_Wasfi2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diphenhydramine — `Diphenhydramine_Yoo1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Needs review), but the paper was screened again on 2026-10-07 14:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
+> The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="diphenhydramine" model-id="Diphenhydramine_Yoo1993_reference" status="needs_review" stale="true" population="chronically instrumented pregnant sheep" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diphenhydramine" model-id="Diphenhydramine_Yoo1993_reference" status="needs_review" stale="false" population="chronically instrumented pregnant sheep" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yoo SD, Rurak DW, Taylor SM, Axelson JE. Transplacental and nonplacental clearances of diphenhydramine in the chronically instrumented pregnant sheep. Journal of pharmaceutical sciences 82(2):145–149 (1993).
@@ -41,7 +41,7 @@ Yoo SD, Rurak DW, Taylor SM, Axelson JE. Transplacental and nonplacental clearan
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Yoo SD, Rurak DW, Taylor SM, Axelson JE. Transplacental and nonplacental clearan
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
+**The clearance plausibility check could not be computed.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — diphenhydramine: fu_tissue 0.277, CL 473 mL/min, CLfm 264 mL/min, Q 82.4 mL/min, CLmp 3.34e+03 mL/min.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — diphenhydramine: fu_tissue 0.277, CL 473 mL/min, CLfm 264 mL/min, Q 82.4 mL/min, CLmp 3.34e+03 mL/min.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[free fraction of diphenhydramine determined in the fetus].parameter_id`: this record has Q413, the second reading Q46; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -16,7 +16,7 @@ Polito A, Hamitouche N, Ribot M, Polito A, Laviolle B, Bellissant E et al. Pharm
 
 ## Population and dosing
 
-**Population:** adults with septic shock · condition septic shock · age group adult · n = &gt;= 20.
+**Population:** adults with septic shock · condition septic shock · age group adult.
 
 ## Model
 

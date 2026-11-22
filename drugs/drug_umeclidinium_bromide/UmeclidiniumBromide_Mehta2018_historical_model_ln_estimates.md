@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Umeclidinium's apparent absorption rate constant is recorded as -2.95 1/h, an impossible negative value for a pharmacokinetic parameter.
+> Umeclidinium was rejected because its apparent total clearance, CL/F 5.44 L/h, fell outside the physiological window, indicating a likely unit/scale extraction error.
 
 <div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Mehta2018_historical_model_ln_estimates" status="rejected" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**Umeclidinium's apparent absorption rate constant is recorded as -2.95 1/h, an impossible negative value for a pharmacokinetic parameter.**
+**Umeclidinium was rejected because its apparent total clearance, CL/F 5.44 L/h, fell outside the physiological window, indicating a likely unit/scale extraction error.**
 
-The record lists the absorption rate constant (KA) for umeclidinium as -2.95 1/h, a magnitude that is physically impossible for drug absorption. This specific parameter error, combined with other apparent pharmacokinetic values like CL/F of 5.44 L/h, triggered the rejection due to implausible magnitudes. A secondary review confirmed the analyte was umeclidinium, isolating the error to the parameter extraction rather than the drug identification. Extracted — umeclidinium bromide: CL/F 5.44 L/h, V2/F 0.31 L, Q/F 5.59 L/h, V3/F 4.71 L, kabs -2.95 1/h.
+CL/F is total clearance following oral administration adjusted for bioavailability; the finding identifies its magnitude as implausible but gives no numerical boundary. The record names umeclidinium as the measured compound, while the dose-compound entry lists fluticasone furoate/umeclidinium/vilanterol; the second reader instead identified umeclidinium as the dose compound and spelled the primary analyte “umeclidium.” Extracted — umeclidinium bromide: CL/F 5.44 L/h, V2/F 0.31 L, Q/F 5.59 L/h, V3/F 4.71 L, kabs -2.95 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading umeclidinium; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

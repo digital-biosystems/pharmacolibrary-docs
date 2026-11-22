@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Diisobutyl phthalate&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/&quot;},{&quot;label&quot;:&quot;Koch_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiisobutylPhthalate_Koch2012_reference&quot;,&quot;label&quot;:&quot;Koch_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;DiisobutylPhthalate_PalaciosArreola2022_reference&quot;,&quot;label&quot;:&quot;Palacios-Arreola_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DiisobutylPhthalate_Koch2012_reference&quot;,&quot;label&quot;:&quot;Koch_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_Koch2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;DiisobutylPhthalate_PalaciosArreola2022_reference&quot;,&quot;label&quot;:&quot;Palacios-Arreola_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_diisobutyl_phthalate/DiisobutylPhthalate_PalaciosArreola2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Diisobutyl phthalate — `DiisobutylPhthalate_Koch2012_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Diisobutyl phthalate" model-id="DiisobutylPhthalate_Koch2012_reference" status="extracted" stale="false" population="adult male human volunteer" measured-compound="Monoisobutyl phthalate (MiBP)" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Diisobutyl phthalate" model-id="DiisobutylPhthalate_Koch2012_reference" status="simulated" stale="false" population="adult male human volunteer" measured-compound="Monoisobutyl phthalate (MiBP)" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Koch HM, Christensen KL, Harth V, Lorber M, Brüning T. Di-n-butyl phthalate (DnBP) and diisobutyl phthalate (DiBP) metabolism in a human volunteer after single oral doses. Archives of toxicology 86(12):1829–1839 (2012).
@@ -36,7 +34,7 @@ Koch HM, Christensen KL, Harth V, Lorber M, Brüning T. Di-n-butyl phthalate (Dn
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +42,13 @@ Koch HM, Christensen KL, Harth V, Lorber M, Brüning T. Di-n-butyl phthalate (Dn
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is diisobutyl phthalate's own; they describe Monoisobutyl phthalate (MiBP).
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -98,6 +102,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q57 | pass | [time] |  | ['Koch_2012:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Koch_2012:abstract'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | retainedFraction (measured=Monoisobutyl phthalate (MiBP)) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

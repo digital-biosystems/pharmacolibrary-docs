@@ -16,7 +16,7 @@ Head-Rapson AG, Devlin JC, Parker CJ, Hunter JM. Pharmacokinetics and pharmacody
 
 ## Population and dosing
 
-**Population:** adults with renal impairment · age group adult · n = condition.
+**Population:** adults with renal impairment · age group adult.
 
 ## Model
 

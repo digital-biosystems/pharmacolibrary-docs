@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefixime&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/&quot;},{&quot;label&quot;:&quot;Wang_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefixime_Edwina2023_reference&quot;,&quot;label&quot;:&quot;Edwina_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Edwina2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_AlmelaFerrer2026_reference&quot;,&quot;label&quot;:&quot;Almela-Ferrer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_AlmelaFerrer2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefixime_AlmelaFerrer2026_reference&quot;,&quot;label&quot;:&quot;Almela-Ferrer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_AlmelaFerrer2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Edwina2023_reference&quot;,&quot;label&quot;:&quot;Edwina_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Edwina2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefixime — `Cefixime_Wang2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was held back because the apparent bioavailability (F) was assumed to be 1, contradicting the apparent CL/F parameter for cefixime.
+> The paper does not study cefixime, so the extracted parameters and values are not attributable to this molecule.
 
-<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Wang2019_reference" status="needs_review" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Wang2019_reference" status="rejected" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wang D, Chen X, Xu H, Li Z. Population pharmacokinetics of tacrolimus in pediatric patients with systemic-onset juvenile idiopathic arthritis: Initial dosage recommendations. Experimental and therapeutic medicine 18(6):4653-4660 (2019).
@@ -29,7 +29,7 @@ Wang D, Chen X, Xu H, Li Z. Population pharmacokinetics of tacrolimus in pediatr
 <figure class="pk-models-diagram"><img src="drugs/drug_cefixime/Cefixime_Wang2019_reference/Cefixime_Wang2019_reference.svg" alt="Cefixime_Wang2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +39,7 @@ Wang D, Chen X, Xu H, Li Z. Population pharmacokinetics of tacrolimus in pediatr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Wang D, Chen X, Xu H, Li Z. Population pharmacokinetics of tacrolimus in pediatr
 
 ### Reviewer guidance
 
-**The record was held back because the apparent bioavailability (F) was assumed to be 1, contradicting the apparent CL/F parameter for cefixime.**
+**The paper does not study cefixime, so the extracted parameters and values are not attributable to this molecule.**
 
-The parameters are reported as apparent values (CL/F and V/F), yet the model builder substituted an assumption that bioavailability F equals 1. This assumption is incompatible with the provided total clearance estimate of 29.7 l/h, which explicitly includes the bioavailability factor. The review flagged these deviations as unacceptable, preventing publication of the model. Extracted — cefixime: CL/F 29.7 l/h, V/F 1.12e+03 l, kabs 4.48 /h.
+The record links cefixime parameters to Wang_2019, but the relevance screen rejected the paper because its title and abstract name a different drug. The second reader disagrees on a specific value (1.229) where this record holds null, but the primary cause is the incorrect drug subject. Extracted — cefixime: CL/F 29.7 l/h, V/F 1.12e+03 l, kabs 4.48 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has none, the second reading 1.229. That field does not shape the model.
 
@@ -120,15 +120,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=cefixime) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev1: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | cefixime (or metabolite) | paper about another drug |  | paper subject is not cefixime: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=cefixime) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,61 +141,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cefixime/Cefixime_Wang2019_reference/Cefixime_Wang2019_reference_modelica.zip" download>Cefixime_Wang2019_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cefixime/Cefixime_Wang2019_reference/Cefixime_Wang2019_reference_fmi.zip" download>Cefixime_Wang2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cefixime/Cefixime_Wang2019_reference/Cefixime_Wang2019_reference_matlab.zip" download>Cefixime_Wang2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cefixime/Cefixime_Wang2019_reference/Cefixime_Wang2019_reference_matlab_simbio.zip" download>Cefixime_Wang2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cefixime/Cefixime_Wang2019_reference/Cefixime_Wang2019_reference_sbml.zip" download>Cefixime_Wang2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cefixime/Cefixime_Wang2019_reference/Cefixime_Wang2019_reference_cellml.zip" download>Cefixime_Wang2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4534 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0004 | kg |
-| input | model | `Cl` | 8.25e-06 | m3/s |
-| input | model | `VdPerKg` | 0.016 | m3/kg |
-| input | model | `ka` | 0.001244 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Wang D, Chen X, Xu H, Li Z. Population pharmacokinetics of tacrolimus in pediatric patients with systemic-onset juvenile idiopathic arthritis: Initial dosage recommendations. Experimental and therapeutic medicine 18(6):4653-4660 (2019). [doi:10.3892/etm.2019.8129](https://doi.org/10.3892/etm.2019.8129)
-
-**This record:** Pharmacolibrary, model `Cefixime_Wang2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cefixime/Cefixime_Wang2019_reference>
-
-```bibtex
-@misc{pharmacolibrary_CefiximeWang2019reference,
-  title  = {{Pharmacolibrary model Cefixime_Wang2019_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_cefixime/Cefixime_Wang2019_reference},
-  note   = {Parameters from doi:10.3892/etm.2019.8129},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

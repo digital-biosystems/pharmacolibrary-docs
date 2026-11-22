@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Tseng_1996 \u00b7 c_c188&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Guay1988_reference&quot;,&quot;label&quot;:&quot;Guay_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # codeine — `Codeine_Tseng1996_c_c188`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:37 UTC (Rejected), but the paper was screened again on 2026-11-03 19:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Codeine absorption lag time was rejected because the hour unit for the 2.35 value could not be converted to SI.
+> Codeine's AUC and Cmax units use nmol, a substance unit that could not be converted to SI, causing dimension mismatches and rejection.
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Tseng1996_c_c188" status="rejected" stale="true" population="healthy Chinese adults" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Tseng1996_c_c188" status="rejected" stale="false" population="Chinese (Han) healthy adults" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine in Chinese subjects of different CYP2D6 genotypes. Clinical pharmacology and therapeutics 60(2):177–182 (1996).
@@ -17,7 +17,7 @@ Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine 
 
 ## Population and dosing
 
-**Population:** healthy Chinese adults · condition healthy · age group adult · n = ?"}.
+**Population:** healthy Chinese adults · condition healthy · age group adult.
 
 **Dosing:** 30 mg, oral, single.
 
@@ -25,7 +25,7 @@ Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine 
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted.  
+**Parameters:** 7 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -38,13 +38,12 @@ Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine 
 | Cmax (nmol/L) | Cmax | 241 | nmol/L |
 | tmax (hr) | tmax | 1.14 | hr |
 | partial clearance of codeine O-demethylation | CL | 132 | ml/min |
-| Volume of Distribution (L/kg) | V | 3.2 | L/kg |
-| Ka (hour−1) | kabs | 19.3 | hour−1 |
+| mean volume of distribution | V | 6.0 | L/kg |
 | tlapo | tlag | 2.35 | (h) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +53,9 @@ Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine 
 
 ### Reviewer guidance
 
-**Codeine absorption lag time was rejected because the hour unit for the 2.35 value could not be converted to SI.**
+**Codeine's AUC and Cmax units use nmol, a substance unit that could not be converted to SI, causing dimension mismatches and rejection.**
 
-The record reports a lag time of 2.35 hours for codeine. This specific time unit was not recognized for conversion to the standard metric system. As a result, the parameter lacked a valid SI value when the model structure was checked. This missing standard unit caused the structural parameter to fail the dimensional consistency review. Extracted — codeine: AUC 938 nmol · hr/L, t1/2z 2.3 hr, Cmax 241 nmol/L, tmax 1.14 hr, CL 132 ml/min, V 3.2 L/kg, kabs 19.3 hour−1, tlag 2.35 (h).
+The record lists codeine AUC as 938 nmol · hr/L and Cmax as 241 nmol/L. Because the unit nmol could not be converted to SI, the values lacked standard equivalents, resulting in dimensional conflicts for these parameters. Extracted — codeine: AUC 938 nmol · hr/L, t1/2z 2.3 hr, Cmax 241 nmol/L, tmax 1.14 hr, CL 132 ml/min, V 6 L/kg, tlag 2.35 (h).
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -71,8 +70,7 @@ Independently confirmed by `gpt-oss-120b`.
 | Cmax (nmol/L) | `Q32` · Cmax | 241 | nmol/L |  |  | nM/l | exact (1) | Tseng_1996_table_p4_1:row0:col4 |
 | tmax (hr) | `Q56` · tmax | 1.14 | hr | 4104 | s | h | exact (1) | Tseng_1996_table_p4_1:row0:col5 |
 | partial clearance of codeine O-demethylation | `Q22` · CL | 132 | ml/min | 2.2e-06 | m3/s | L/h | boundary (0.8) | Tseng_1996:other_prose |
-| Volume of Distribution (L/kg) | `Q61` · V | 3.2 | L/kg | 0.224 | m3 | L | review_gapfill (0.7) | Dean_2004:review |
-| Ka (hour−1) | `Q49` · kabs | 19.3 | hour−1 | 0.005361 | 1/s | 1/h | review_gapfill (0.7) | Gretler_2020:review |
+| mean volume of distribution | `Q61` · V | 6.0 | L/kg | 0.42 | m3 | L | review_gapfill (0.7) | Guay_1987:review |
 | tlapo | `Q83` · tlag | 2.35 | (h) | 8460 | s | h | review_gapfill (0.7) | Persson_1992:review |
 
 <details class="legend">
@@ -91,10 +89,9 @@ Independently confirmed by `gpt-oss-120b`.
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - population split: 'c/c188' subgroup of Tseng_1996 (paper reports 3 populations: c/c188, c/t188, t/t188)
-- gap-filled Q61 (V) from Dean_2004's review values (primary lacked it)
+- gap-filled Q61 (V) from Guay_1987's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Gretler_2020's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Persson_1992's review values (primary lacked it)
 
 **Extraction notes:**
@@ -126,16 +123,15 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | fail | [mass] / [length] ** 3 | nmol/L ([substance] / [length] ** 3) | ['Tseng_1996_table_p4_1:row0:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gretler_2020:review'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Tseng_1996_table_p4_1:row0:col5'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Tseng_1996_table_p4_1:row0:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Dean_2004:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Guay_1987:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Persson_1992:review'] |
 | C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | nmol · hr/L ([substance] * [time] / [length] ** 3) | ['Tseng_1996_table_p4_1:row0:col2'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 132 | ['Tseng_1996:other_prose'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.92 L/h | ['Tseng_1996:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 224 L | ['Dean_2004:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 420 L | ['Guay_1987:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,4 +155,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Tseng1996_c_c188&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Tseng1996_c_c188%0APaper%3A%20Tseng_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Tseng1996_c_c188%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 19:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:58 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Neff-Davis_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Davies2010_reference&quot;,&quot;label&quot;:&quot;Davies_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Davies2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ferrari2017_reference&quot;,&quot;label&quot;:&quot;Ferrari_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ferrari2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_NeffDavis1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 14:21 UTC (Needs review), but the paper was screened again on 2026-11-04 15:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; t1/2β has no unit.
+> The terminal elimination rate constant for warfarin is recorded with mass-based units (mg/kg) instead of inverse time.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_NeffDavis1981_reference" status="needs_review" stale="true" population="healthy beagle dogs" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_NeffDavis1981_reference" status="rejected" stale="false" population="healthy adult male beagle dogs" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Neff-Davis CA, Davis LE, Gillette EL. Warfarin in the dog: pharmacokinetics as related to clinical response. Journal of veterinary pharmacology and therapeutics 4(2):135–140 (1981).
@@ -17,9 +17,9 @@ Neff-Davis CA, Davis LE, Gillette EL. Warfarin in the dog: pharmacokinetics as r
 
 ## Population and dosing
 
-**Population:** healthy beagle dogs · condition healthy · age group adult · n = 6.
+**Population:** healthy adult male beagle dogs · condition healthy · age group adult · n = 6.
 
-**Dosing:** 63, 105 mg, iv, oral, multiple, every 12 h.
+**Dosing:** 105 mg, iv, single.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -31,21 +31,20 @@ Neff-Davis CA, Davis LE, Gillette EL. Warfarin in the dog: pharmacokinetics as r
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| B (µg/ml) | equation variable | 6.77 | µg/ml |
 | Vd (litres) | V | 2.34 | litres |
+| V'd (litre/kg) | Vnorm | 0.22 | litre/kg |
 | t1/2 (h) | t1/2z | 14.48 | h |
-| β h-1 | t1/2β | 0.050 | 1.5 mg/kg |
-| CL | CL | 0.348 | L/h |
+| β h-1 | kel | 0.050 | mg/kg |
 | ka (1/h) | kabs | 0.214 | 1/h |
 | Lag (h) | tlag | 1.29 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,23 +54,22 @@ Neff-Davis CA, Davis LE, Gillette EL. Warfarin in the dog: pharmacokinetics as r
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; t1/2β has no unit.**
+**The terminal elimination rate constant for warfarin is recorded with mass-based units (mg/kg) instead of inverse time.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aoyama_2022, Gomeni_2026) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (equation variable and t1/2β), so that value has no SI equivalent. Extracted — warfarin: V 2.34 litres, t1/2z 14.5 h, t1/2β 0.05 1.5 mg/kg, CL 0.348 L/h, kabs 0.214 1/h, tlag 1.29 h.
+The record lists the terminal elimination rate constant with a value of 0.050 and units of mg/kg, which is dimensionally inconsistent with a rate constant. The second reader identified the elimination rate constant value as 0.052 and suggested a different parameter identifier. Additional disagreements exist for the terminal half-life (13.17 h vs 14.48 h) and volume of distribution (2.07 L vs 2.34 L). Extracted — warfarin: V 2.34 litres, Vnorm 0.22 litre/kg, t1/2z 14.5 h, kel 0.05 mg/kg, kabs 0.214 1/h, tlag 1.29 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[b].parameter_id`: this record has Q900, the second reading Q86; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has none, the second reading 7.55; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| B (µg/ml) | `Q900` · equation variable | 6.77 | µg/ml |  |  | µg/ml | llm (0.6) | Neff-Davis_1981_table_1:row0:col3, Neff-Davis_1981_table_1:row1:col3, Neff-Davis_1981_table_1:row2:col3, Neff-Davis_1981_table_1:row3:col3, Neff-Davis_1981_table_1:row4:col3, Neff-Davis_1981_table_1:row5:col3, Neff-Davis_1981_table_1:row6:col3, Neff-Davis_1981_table_1:row7:col3 |
 | Vd (litres) | `Q61` · V | 2.34 | litres | 0.00234 | m3 | l | exact (1) | Neff-Davis_1981_table_1:row0:col4, Neff-Davis_1981_table_1:row1:col4, Neff-Davis_1981_table_1:row2:col4, Neff-Davis_1981_table_1:row3:col4, Neff-Davis_1981_table_1:row4:col4, Neff-Davis_1981_table_1:row5:col4, Neff-Davis_1981_table_1:row6:col4, Neff-Davis_1981_table_1:row7:col4 |
-| t1/2 (h) | `Q57` · t1/2z | 14.48 | h | 5.213e+04 | s | h | exact (1) | Neff-Davis_1981_table_1:row0:col6, Neff-Davis_1981_table_1:row1:col6, Neff-Davis_1981_table_1:row2:col6, Neff-Davis_1981_table_1:row3:col6, Neff-Davis_1981_table_1:row4:col6, Neff-Davis_1981_table_1:row5:col6, Neff-Davis_1981_table_1:row6:col6, Neff-Davis_1981_table_1:row7:col6 |
-| β h-1 | `Q60` · t1/2β | 0.050 | 1.5 mg/kg |  |  | 1.5mg/kg | llm (0.6) | Neff-Davis_1981_table_1:row0:col7, Neff-Davis_1981_table_1:row1:col7, Neff-Davis_1981_table_1:row2:col7, Neff-Davis_1981_table_1:row3:col7, Neff-Davis_1981_table_1:row4:col7, Neff-Davis_1981_table_1:row5:col7, Neff-Davis_1981_table_1:row6:col7, Neff-Davis_1981_table_1:row7:col7 |
-| CL | `Q22` · CL | 0.348 | L/h | 9.667e-08 | m3/s | L/h | review_gapfill (0.7) | Aoyama_2022:review |
+| V'd (litre/kg) | `Q352` · Vnorm | 0.22 | litre/kg | 0.0154 | m3 | l/kg | llm (0.6) | Neff-Davis_1981_table_1:row0:col5, Neff-Davis_1981_table_1:row1:col5, Neff-Davis_1981_table_1:row2:col5, Neff-Davis_1981_table_1:row3:col5, Neff-Davis_1981_table_1:row4:col5, Neff-Davis_1981_table_1:row5:col5, Neff-Davis_1981_table_1:row6:col5, Neff-Davis_1981_table_1:row7:col5 |
+| t1/2 (h) | `Q57` · t1/2z | 14.48 | h | 5.213e+04 | s | h | half_life_rule (0.95) | Neff-Davis_1981_table_1:row0:col6, Neff-Davis_1981_table_1:row1:col6, Neff-Davis_1981_table_1:row2:col6, Neff-Davis_1981_table_1:row3:col6, Neff-Davis_1981_table_1:row4:col6, Neff-Davis_1981_table_1:row5:col6, Neff-Davis_1981_table_1:row6:col6, Neff-Davis_1981_table_1:row7:col6 |
+| β h-1 | `Q47` · kel | 0.050 | mg/kg |  |  | mg/kg | llm (0.6) | Neff-Davis_1981_table_1:row0:col7, Neff-Davis_1981_table_1:row1:col7, Neff-Davis_1981_table_1:row2:col7, Neff-Davis_1981_table_1:row3:col7, Neff-Davis_1981_table_1:row4:col7, Neff-Davis_1981_table_1:row5:col7, Neff-Davis_1981_table_1:row6:col7, Neff-Davis_1981_table_1:row7:col7 |
 | ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Gomeni_2026:review |
 | Lag (h) | `Q83` · tlag | 1.29 | h | 4644 | s | h | review_gapfill (0.7) | Gomeni_2026:review |
 
@@ -83,23 +81,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 ## Departures & gaps
 
 **Interpretation flags:**
+- column '336' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '384' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '385' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '846' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '377' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '347' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Weight (kg)' — extend the ontology if this is a real PK parameter (source ['Neff-Davis_1981_table_1:row0:col1', 'Neff-Davis_1981_table_1:row1:col1', 'Neff-Davis_1981_table_1:row2:col1', 'Neff-Davis_1981_table_1:row3:col1', 'Neff-Davis_1981_table_1:row4:col1', 'Neff-Davis_1981_table_1:row5:col1', 'Neff-Davis_1981_table_1:row6:col1', 'Neff-Davis_1981_table_1:row7:col1'])
-- dropped duplicate Q61 ("V'd (litre/kg)", value '0.22') — already have one for this compound
-- unit_dimension_unknown: '1.5 mg/kg' (t1/2β)
+- dropped unlinked row (NIL): 'B (µg/ml)' — extend the ontology if this is a real PK parameter (source ['Neff-Davis_1981_table_1:row0:col3', 'Neff-Davis_1981_table_1:row1:col3', 'Neff-Davis_1981_table_1:row2:col3', 'Neff-Davis_1981_table_1:row3:col3', 'Neff-Davis_1981_table_1:row4:col3', 'Neff-Davis_1981_table_1:row5:col3', 'Neff-Davis_1981_table_1:row6:col3', 'Neff-Davis_1981_table_1:row7:col3'])
+- unit_dimension_mismatch: 'β h-1' → Q47 (unit '[mass]' vs ontology '1 / [time]') — route to review
 - dropped unlinked row (NIL): 'Calculated D maint. (mg/kg)' — extend the ontology if this is a real PK parameter (source ['Neff-Davis_1981_table_1:row0:col8', 'Neff-Davis_1981_table_1:row1:col8', 'Neff-Davis_1981_table_1:row2:col8', 'Neff-Davis_1981_table_1:row3:col8', 'Neff-Davis_1981_table_1:row4:col8', 'Neff-Davis_1981_table_1:row5:col8', 'Neff-Davis_1981_table_1:row6:col8', 'Neff-Davis_1981_table_1:row7:col8'])
-- implicit units: 'β h-1' — the LLM proposed '1/h', whose dimension does not fit Q60; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=warfarin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
-- gap-filled Q22 (CL) from Aoyama_2022's review values (primary lacked it)
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q49 (kabs) from Gomeni_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Gomeni_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
 - transposed table Neff-Davis_1981_table_1: logical view retains original source coordinates
 
@@ -116,12 +117,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[b].parameter_id` | Q900 | Q86 | mismatch |
-| `gpt-oss-120b` | `parameters[b].value` | 6.77 | 5.36 | mismatch |
-| `gpt-oss-120b` | `parameters[t1/2].value` | 14.48 | 10.86 | mismatch |
-| `gpt-oss-120b` | `parameters[vd].value` | 2.34 | 2.40 | mismatch |
-| `gpt-oss-120b` | `parameters[β h-1].parameter_id` | Q60 | Q68 | mismatch |
-| `gpt-oss-120b` | `parameters[β h-1].value` | 0.050 | 0.063 | mismatch |
+| `gpt-oss-120b` | `parameters[b]` |  | 7.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2].value` | 14.48 | 13.17 | mismatch |
+| `gpt-oss-120b` | `parameters[v'd]` | 0.22 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd].value` | 2.34 | 2.07 | mismatch |
+| `gpt-oss-120b` | `parameters[β h-1].parameter_id` | Q47 | Q68 | mismatch |
+| `gpt-oss-120b` | `parameters[β h-1].value` | 0.050 | 0.052 | mismatch |
 
 </details>
 
@@ -135,18 +136,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Aoyama_2022:review'] |
+| C5_dimension_Q352 | pass | [length] ** 3 |  | ['Neff-Davis_1981_table_1:row0:col5', 'Neff-Davis_1981_table_1:row1:col5', 'Neff-Davis_1981_table_1:row2:col5', 'Neff-Davis_1981_table_1:row3:col5', 'Neff-Davis_1981_table_1:row4:col5', 'Neff-Davis_1981_table_1:row5:col5', 'Neff-Davis_1981_table_1:row6:col5', 'Neff-Davis_1981_table_1:row7:col5'] |
+| C5_dimension_Q47 | fail | 1 / [time] | mg/kg ([mass]) | ['Neff-Davis_1981_table_1:row0:col7', 'Neff-Davis_1981_table_1:row1:col7', 'Neff-Davis_1981_table_1:row2:col7', 'Neff-Davis_1981_table_1:row3:col7', 'Neff-Davis_1981_table_1:row4:col7', 'Neff-Davis_1981_table_1:row5:col7', 'Neff-Davis_1981_table_1:row6:col7', 'Neff-Davis_1981_table_1:row7:col7'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gomeni_2026:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Neff-Davis_1981_table_1:row0:col6', 'Neff-Davis_1981_table_1:row1:col6', 'Neff-Davis_1981_table_1:row2:col6', 'Neff-Davis_1981_table_1:row3:col6', 'Neff-Davis_1981_table_1:row4:col6', 'Neff-Davis_1981_table_1:row5:col6', 'Neff-Davis_1981_table_1:row6:col6', 'Neff-Davis_1981_table_1:row7:col6'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Neff-Davis_1981_table_1:row0:col4', 'Neff-Davis_1981_table_1:row1:col4', 'Neff-Davis_1981_table_1:row2:col4', 'Neff-Davis_1981_table_1:row3:col4', 'Neff-Davis_1981_table_1:row4:col4', 'Neff-Davis_1981_table_1:row5:col4', 'Neff-Davis_1981_table_1:row6:col4', 'Neff-Davis_1981_table_1:row7:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gomeni_2026:review'] |
-| C5_unit_missing_Q60 | fail | [time] | 1.5 mg/kg | ['Neff-Davis_1981_table_1:row0:col7', 'Neff-Davis_1981_table_1:row1:col7', 'Neff-Davis_1981_table_1:row2:col7', 'Neff-Davis_1981_table_1:row3:col7', 'Neff-Davis_1981_table_1:row4:col7', 'Neff-Davis_1981_table_1:row5:col7', 'Neff-Davis_1981_table_1:row6:col7', 'Neff-Davis_1981_table_1:row7:col7'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.348 | ['Aoyama_2022:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.348 L/h | ['Aoyama_2022:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 2.34 L | ['Neff-Davis_1981_table_1:row0:col4', 'Neff-Davis_1981_table_1:row1:col4', 'Neff-Davis_1981_table_1:row2:col4', 'Neff-Davis_1981_table_1:row3:col4', 'Neff-Davis_1981_table_1:row4:col4', 'Neff-Davis_1981_table_1:row5:col4', 'Neff-Davis_1981_table_1:row6:col4', 'Neff-Davis_1981_table_1:row7:col4'] |
 
 <details class="legend">
@@ -159,36 +158,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_NeffDavis1981_reference/Warfarin_NeffDavis1981_reference_modelica.zip" download>Warfarin_NeffDavis1981_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_warfarin/Warfarin_NeffDavis1981_reference/Warfarin_NeffDavis1981_reference_fmi.zip" download>Warfarin_NeffDavis1981_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_NeffDavis1981_reference/Warfarin_NeffDavis1981_reference_matlab.zip" download>Warfarin_NeffDavis1981_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_warfarin/Warfarin_NeffDavis1981_reference/Warfarin_NeffDavis1981_reference_matlab_simbio.zip" download>Warfarin_NeffDavis1981_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_NeffDavis1981_reference/Warfarin_NeffDavis1981_reference_sbml.zip" download>Warfarin_NeffDavis1981_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_NeffDavis1981_reference/Warfarin_NeffDavis1981_reference_cellml.zip" download>Warfarin_NeffDavis1981_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-</div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Neff-Davis CA, Davis LE, Gillette EL. Warfarin in the dog: pharmacokinetics as related to clinical response. Journal of veterinary pharmacology and therapeutics 4(2):135–140 (1981). [doi:10.1111/j.1365-2885.1981.tb00722.x](https://doi.org/10.1111/j.1365-2885.1981.tb00722.x)
-
-**This record:** Pharmacolibrary, model `Warfarin_NeffDavis1981_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_NeffDavis1981_reference>
-
-```bibtex
-@misc{pharmacolibrary_WarfarinNeffDavis1981reference,
-  title  = {{Pharmacolibrary model Warfarin_NeffDavis1981_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_NeffDavis1981_reference},
-  note   = {Parameters from doi:10.1111/j.1365-2885.1981.tb00722.x},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -198,4 +170,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_NeffDavis1981_reference&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_NeffDavis1981_reference%0APaper%3A%20Neff-Davis_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_NeffDavis1981_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 15:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:24 UTC</sub>

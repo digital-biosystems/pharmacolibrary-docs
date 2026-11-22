@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The 0.0289 L/h clearance for erythropoietin falls outside the physiological window, rendering the model rejected due to implausible magnitude.
+> Clearance (0.0289 L/h) and volumes (0.250 L, 0.326 L) are outside physiological windows for erythropoietin in neonates.
 
 <div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Frymoyer2017_reference" status="rejected" stale="false" population="neonates with hypoxic-ischemic encephalopathy receiving hypothermia" measured-compound="erythropoietin" parameterization="mechanistic" topology="2C"></div>
 
@@ -16,7 +16,7 @@ Frymoyer A, Juul SE, Massaro AN, Bammler TK, Wu YW. High-dose erythropoietin pop
 
 ## Population and dosing
 
-**Population:** neonates with hypoxic-ischemic encephalopathy receiving hypothermia · condition hypoxic-ischemic encephalopathy · age group neonate · n = &gt;=47.
+**Population:** neonates with hypoxic-ischemic encephalopathy receiving hypothermia · condition hypoxic-ischemic encephalopathy · age group neonate.
 
 **Dosing:** 250, 500, 1000, 2500 U/kg, iv, multiple, every 48 h.
 
@@ -39,7 +39,7 @@ Frymoyer A, Juul SE, Massaro AN, Bammler TK, Wu YW. High-dose erythropoietin pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,11 @@ Frymoyer A, Juul SE, Massaro AN, Bammler TK, Wu YW. High-dose erythropoietin pop
 
 ### Reviewer guidance
 
-**The 0.0289 L/h clearance for erythropoietin falls outside the physiological window, rendering the model rejected due to implausible magnitude.**
+**Clearance (0.0289 L/h) and volumes (0.250 L, 0.326 L) are outside physiological windows for erythropoietin in neonates.**
 
-The extracted clearance value of 0.0289 L/h for erythropoietin triggers a rejection for being outside the physiological window. A second reader recorded a different clearance value of 0.0263 L/h, highlighting discrepancies in the parameter extraction. Additional disagreements exist for Q (0.0308 vs 0.0218 L/h) and the volume parameters (0.250 vs 0.230 L and 0.326 vs 0.266 L). Extracted — erythropoietin: CL 0.0289 L/h, V1 0.25 L, V2 0.326 L, Q 0.0308 L/h.
+The record was rejected because the clearance and volume of distribution values fall outside the expected physiological range, suggesting a unit or scale extraction error. Additionally, a second reader disagreed with the recorded values, citing different figures for clearance, intercompartmental clearance, and both volumes of distribution. Extracted — erythropoietin: CL 0.0289 L/h, V1 0.25 L, V2 0.326 L, Q 0.0308 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl (l/h)1].value`: this record has 0.0289, the second reading 0.0263; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl (l/h)1].value`: this record has 0.0289, the second reading 0.0263; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -103,16 +103,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl (l/h)1].value` | 0.0289 | 0.0263 | mismatch |
-| `gpt-oss:120b` | `parameters[q (l/h)4].value` | 0.0308 | 0.0218 | mismatch |
-| `gpt-oss:120b` | `parameters[v1 (l)2].value` | 0.250 | 0.230 | mismatch |
-| `gpt-oss:120b` | `parameters[v2 (l)3].value` | 0.326 | 0.266 | mismatch |
+| `gpt-oss-120b` | `parameters[cl (l/h)1].value` | 0.0289 | 0.0263 | mismatch |
+| `gpt-oss-120b` | `parameters[q (l/h)4].value` | 0.0308 | 0.0218 | mismatch |
+| `gpt-oss-120b` | `parameters[v1 (l)2].value` | 0.250 | 0.230 | mismatch |
+| `gpt-oss-120b` | `parameters[v2 (l)3].value` | 0.326 | 0.266 | mismatch |
 
 </details>
 

@@ -16,7 +16,7 @@ Morath B, Foerster KI, Chiriac U, Zaradzki M, Hoppe-Tichy T, Schrey D et al. Eff
 
 ## Population and dosing
 
-**Population:** cardiac surgery patients with postoperative atrial fibrillation · condition postoperative atrial fibrillation · age group adult · n = &gt;=33.
+**Population:** cardiac surgery patients with postoperative atrial fibrillation · condition postoperative atrial fibrillation · age group adult.
 
 ## Model
 

@@ -1,0 +1,34 @@
+{
+ "dose_source": "paper",
+ "model_id": "Lecanemab_Majid2024_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  175.0,
+  350.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 4.444444444444445e-07,
+  "F": 1.0,
+  "VdPerKg": 1.1414285714285714e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.000175,
+  "k12": 0.0014705882352941176,
+  "k21": 0.00028728606356968217,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662112
+ },
+ "reference_peaks": {
+  "central.C": 0.0007380570354654184
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -26,7 +26,7 @@ Cetirizine is a second-generation antihistamine used to treat allergic rhinitis,
 
 ## Start here
 
-> **Melander_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> breastfeeding women, n = &gt;=35. [Run it in the simulator](drugs/drug_cetirizine/Cetirizine_Melander2025_reference.md?tab=Simulation) · [record](drugs/drug_cetirizine/Cetirizine_Melander2025_reference.md)
+> **Melander_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> breastfeeding women. [Run it in the simulator](drugs/drug_cetirizine/Cetirizine_Melander2025_reference.md?tab=Simulation) · [record](drugs/drug_cetirizine/Cetirizine_Melander2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -37,9 +37,9 @@ Cetirizine is a second-generation antihistamine used to treat allergic rhinitis,
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub> | [Melander_2025_reference](drugs/drug_cetirizine/Cetirizine_Melander2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Melander E et al., Population pharmacokinetic modelling of…, Basic & clinical pharmacolo… (2025) | [10.1111/bcpt.14100](https://doi.org/10.1111/bcpt.14100) |
 | <span class="pk-rf" hidden data-species="pig" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Gupta_2006_reference](drugs/drug_cetirizine/Cetirizine_Gupta2006_reference.md) | — | 1-compartment (no model) | 2 | Gupta A et al., Stereoselective pharmacokinetics of cet…, Biopharmaceutics & drug dis… (2006) | [10.1002/bdd.509](https://doi.org/10.1002/bdd.509) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Hussein_2005_reference](drugs/drug_cetirizine/Cetirizine_Hussein2005_reference.md) | — | 1-compartment (no model) | 4 | Hussein Z et al., Retrospective population pharmacokineti…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.02242.x](https://doi.org/10.1111/j.1365-2125.2005.02242.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pitsiu_2004_reference](drugs/drug_cetirizine/Cetirizine_Pitsiu2004_reference.md) | — | 1-compartment (no model) | 2 | Pitsiu M et al., Retrospective population pharmacokineti…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.02017.x](https://doi.org/10.1046/j.1365-2125.2003.02017.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pitsiu_2004_reference](drugs/drug_cetirizine/Cetirizine_Pitsiu2004_reference.md) | — | 1-compartment (no model) | 2 | Pitsiu M et al., Retrospective population pharmacokineti…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.02017.x](https://doi.org/10.1046/j.1365-2125.2003.02017.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Simons_2005_reference](drugs/drug_cetirizine/Cetirizine_Simons2005_reference.md) | — | 1-compartment (no model) | 0 | Simons FE, Population pharmacokinetics of levoceti…, Pediatric allergy and immun… (2005) | [10.1111/j.1399-3038.2005.00240.x](https://doi.org/10.1111/j.1399-3038.2005.00240.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Urien_1999_reference](drugs/drug_cetirizine/Cetirizine_Urien1999_reference.md) | — | 1-compartment (no model) | 0 | Urien S et al., A pharmacokinetic-pharmacodynamic model…, International journal of cl… (1999) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Urien_1999_reference](drugs/drug_cetirizine/Cetirizine_Urien1999_reference.md) | — | 1-compartment (no model) | 0 | Urien S et al., A pharmacokinetic-pharmacodynamic model…, International journal of cl… (1999) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -48,24 +48,6 @@ Cetirizine is a second-generation antihistamine used to treat allergic rhinitis,
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Olsén_2008_wheal_formation](drugs/drug_cetirizine/pd_Ols_n_2008_wheal_formation.md) | histamine-induced cutaneous wheal formation ← cetirizine · direct Emax (saturable) effect | ▶ model + simulator | Olsén L et al., Cetirizine in horses: pharmacokinetics…, Veterinary journal (London,… (2008) | [10.1016/j.tvjl.2007.03.026](https://doi.org/10.1016/j.tvjl.2007.03.026) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Urien_1999_flare](drugs/drug_cetirizine/pd_Urien_1999_flare.md) | flare ← cetirizine · indirect response — drug inhibits the production of flare | model (no simulator) | Urien S et al., A pharmacokinetic-pharmacodynamic model…, International journal of cl… (1999) | — |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Urien_1999_wheal](drugs/drug_cetirizine/pd_Urien_1999_wheal.md) | wheal ← cetirizine · indirect response — drug inhibits the production of wheal | model (no simulator) | Urien S et al., A pharmacokinetic-pharmacodynamic model…, International journal of cl… (1999) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cetirizine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HRH1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,13 +61,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:51 | 6:41 | 1/5/0 | 2/0/0 | 0/0/0 | 155,884/14,652 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 4/0 | 0 |
+| 2026-10-07 22:51 | 6:41 | 1/5/0 | 3/0/0 | 0/0/0 | 155,884/14,652 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 6  ·  extracted 0  ·  needs review 1  ·  rejected 5  ·  stale 2
+- **records:** 6  ·  extracted 0  ·  needs review 1  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

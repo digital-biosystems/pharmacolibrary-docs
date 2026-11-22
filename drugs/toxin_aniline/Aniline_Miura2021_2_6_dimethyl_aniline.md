@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The aniline rat record was rejected for lacking fitted kinetic parameters like half-life or volume, leaving only observed exposure metrics and one unconvertible unit.
 
 <div class="pk-model-meta" hidden drug="Aniline" model-id="Aniline_Miura2021_2_6_dimethyl_aniline" status="rejected" stale="false" population="rats" measured-compound="Aniline" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,7 +54,13 @@ Miura T, Kamiya Y, Murayama N, Shimizu M, Yamazaki H. Differences in Pharmacokin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The aniline rat record was rejected for lacking fitted kinetic parameters like half-life or volume, leaving only observed exposure metrics and one unconvertible unit.**
+
+The review identified the model as an exposure or outcome study rather than a kinetic model because it lacked fitted kinetic quantities such as half-lives or rate constants. Although hepatic and renal clearances were listed, they were treated as observed data rather than structural model parameters. Additionally, one reported unit could not be converted to standard SI units, preventing proper integration into the system. Extracted — aniline: Fab 0.292, CLH 0.123 L/h, CLR 0.013 L/h, Cmax 3.91e+03 ng/mL, AUC 9.08e+03 h*ng/mL, MW 121 g/mol, fu 0.317, Vnorm 0.92, … (+1).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

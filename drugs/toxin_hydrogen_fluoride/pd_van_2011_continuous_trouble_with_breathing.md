@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided excerpts do not contain information regarding the pharmacodynamic mechanism, dose-response relationship, or key potency and rate parameters for hydrogen fluoride acting on continuous trouble with breathing.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `van_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

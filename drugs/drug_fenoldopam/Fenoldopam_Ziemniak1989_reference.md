@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
-> The record for fenoldopam is an exposure/outcome paper lacking distribution volume and elimination rates, with an unlinked metabolite.
+> The record contains only summary statistics and an unlinked metabolite, lacking the distribution volume and elimination parameters required for a compartmental model.
 
 <div class="pk-model-meta" hidden drug="fenoldopam" model-id="Fenoldopam_Ziemniak1989_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="fenoldopam" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -16,7 +16,7 @@ Ziemniak JA, Boppana VK, Cyronak MJ, Stote RM. A retrospective analysis of fenol
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=65.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).
 
@@ -37,7 +37,7 @@ Ziemniak JA, Boppana VK, Cyronak MJ, Stote RM. A retrospective analysis of fenol
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +47,11 @@ Ziemniak JA, Boppana VK, Cyronak MJ, Stote RM. A retrospective analysis of fenol
 
 ### Reviewer guidance
 
-**The record for fenoldopam is an exposure/outcome paper lacking distribution volume and elimination rates, with an unlinked metabolite.**
+**The record contains only summary statistics and an unlinked metabolite, lacking the distribution volume and elimination parameters required for a compartmental model.**
 
-The source was abstract-only, so summary statistics like renal plasma clearance of 129 ml/min stood in for fitted parameters. No distribution volume or elimination clearance is present to define a compartmental model. The metabolite fenoldopam-8-sulfate is structurally unlinked from the dose compartment, making it unreachable. Extracted — fenoldopam: CLR 129 ml/min, AUC 5.2 ng x hr/ml.
+The source text is abstract-only, so reported summary statistics stand in for a fitted model. The model structure lists fenoldopam-8-sulfate with no distribution volume or clearance to anchor its elimination. Consequently, the metabolite compartment is identified as an orphan with no valid path from the dose. Extracted — fenoldopam: CLR 129 ml/min, AUC 5.2 ng x hr/ml.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fenoldopam, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fenoldopam, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,19 +93,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['fenoldopam', 'fenoldopam-8-sulfate', 'metabolism'], ['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | [['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | mismatch |
-| `gpt-oss:120b` | `parameters[fenoldopam auc required to half-saturate fenoldopam renal clearance]` | 5.2 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fenoldopam auc required to half-saturate fenoldopam renal clearance]` |  | 5.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean (+/- se) renal plasma clearance]` | 129 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean (+/- se) renal plasma clearance]` |  | 129 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | fenoldopam | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | fenoldopam | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['fenoldopam', 'fenoldopam-8-sulfate', 'metabolism'], ['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | [['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[fenoldopam auc required to half-saturate fenoldopam renal clearance]` | 5.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fenoldopam auc required to half-saturate fenoldopam renal clearance]` |  | 5.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean (+/- se) renal plasma clearance]` | 129 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean (+/- se) renal plasma clearance]` |  | 129 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fenoldopam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fenoldopam | unknown | mismatch |
 
 </details>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Gliclazide record failed review because time to maximum concentration and bioavailability were not explicitly estimated, relying on default values.
+> Gliclazide’s apparent oral clearance is reported as 1.08 L/h, but the record was held for review because the second reader disputed the extracted parameter set.
 
 <div class="pk-model-meta" hidden drug="gliclazide" model-id="Gliclazide_Mim2023_reference" status="needs_review" stale="false" population="" measured-compound="gliclazide" parameterization="apparent" topology="2C"></div>
 
@@ -41,7 +41,7 @@ Mim SR, Hussein H, Vidadi S, Leisegang R, Karamchand S, Rambiritch V et al. Opti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.68). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.72). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Mim SR, Hussein H, Vidadi S, Leisegang R, Karamchand S, Rambiritch V et al. Opti
 
 ### Reviewer guidance
 
-**Gliclazide record failed review because time to maximum concentration and bioavailability were not explicitly estimated, relying on default values.**
+**Gliclazide’s apparent oral clearance is reported as 1.08 L/h, but the record was held for review because the second reader disputed the extracted parameter set.**
 
-The model builder left the time to maximum plasma concentration (Tlag) as a library placeholder instead of extracting an explicit value from the source text. Additionally, the analysis assumed unit bioavailability without molar correction, which was flagged as an unacceptable deviation. A second reader also disagreed on several parameter values, including those for weight and age, further indicating extraction inconsistencies. Extracted — gliclazide: CL/F 1.08 L/h, V/F 19.6 L, V2 8.78 L, Q 26.1 L/h, kabs 1.4 /h.
+The cross-reader agreement was 0.72, with 0 of 1 reader agreeing; the reported disagreements include conflicting or absent estimates, but cannot be assigned to named pharmacokinetic parameters from these facts. The absorption lag time, Tlag, was defaulted rather than explicitly estimated. The apparent parameterization assumed F=1 and Fm=1, with no molar correction. Extracted — gliclazide: CL/F 1.08 L/h, V/F 19.6 L, V2 8.78 L, Q 26.1 L/h, kabs 1.4 /h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 80.7; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 80.7; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -91,9 +91,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.68 (17/25 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.72 (18/25 fields) | 7 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -104,7 +104,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `values[Q322]` |  | 1.92 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q325]` | 1.13 | 1.62 | mismatch |
 | `gpt-oss-120b` | `values[Q48]` |  | 0.965 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q87]` | 0.997 | 0.997 | mismatch |
 
 </details>
 
@@ -134,15 +133,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=gliclazide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-1: Tlag default: not acceptable; dev-2: F=1/Fm=1/no molar correction: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=gliclazide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.72, 0 of 1 reader(s) agree | 0.72 | cross-check disputed by a second reader: verdict disputed, agreement 0.72, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

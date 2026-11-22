@@ -17,7 +17,7 @@ Kim TH, Shin S, Landersdorfer CB, Chi YH, Paik SH, Myung J et al. Population Pha
 
 ## Population and dosing
 
-**Population:** rats, dogs, and healthy volunteers · condition healthy · age group mixed · n = &gt;100.
+**Population:** rats, dogs, and healthy volunteers · condition healthy · age group mixed.
 
 **Dosing:** 21, 70, 210, 700, 1400, 33600 mg, intravenous, single.
 

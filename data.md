@@ -15,16 +15,16 @@ The numbers the Zenodo record states, counted by the same code as the website's 
 | Research dataset 26.11 (snapshot 2026-11-22, drugs only) | Count |
 |---|---:|
 | Drugs with a counted record | 1,799 |
-| popPK records | 3,514 |
+| popPK records | 3,515 |
 | PD records | 6,273 |
-| PGx records | 571 |
+| PGx records | 568 |
 | Papers behind them (distinct DOI) | 5,909 |
-| Parameter values of these records | 26,742 |
-| popPK records rejected | 3,137 |
+| Parameter values of these records | 26,744 |
+| popPK records rejected | 3,136 |
 | PD records rejected | 1,294 |
 | PGx records rejected | 15 |
-| Generated models (Modelica) | 3,181 |
-| Drugs with a generated model | 866 |
+| Generated models (Modelica) | 3,184 |
+| Drugs with a generated model | 867 |
 
 Cite the research dataset. The two source corpora are its supplements: each file keeps the licence of its paper, listed in `ATTRIBUTIONS.csv` and `MANIFEST.csv`. The non-commercial corpus is for non-commercial use only.
 

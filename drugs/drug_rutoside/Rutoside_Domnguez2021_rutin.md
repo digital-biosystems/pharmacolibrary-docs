@@ -5,11 +5,11 @@
 
 # rutoside — `Rutoside_Domnguez2021_rutin`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 15:05 UTC (Rejected), but the paper was screened again on 2026-10-06 22:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The relative bioavailability of rutin was rejected because its unit of mg/kg is dimensionally inconsistent with the parameter's meaning.
+> The AUC/dose parameter for rutin is rejected because its unit h/L lacks a valid physical dimension for a pharmacokinetic quantity.
 
-<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="true" population="Wistar rats" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="false" population="Wistar rats" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Domínguez Moré GP, Cardona MI, Sepúlveda PM, Echeverry SM, Oliveira Simões CM, Aragón DM. Matrix Effects of the Hydroethanolic Extract of Calyces of Physalis peruviana L. on Rutin Pharmacokinetics in Wistar Rats Using Population Modeling. Pharmaceutics 13(4) (2021).
@@ -51,7 +51,7 @@ Domínguez Moré GP, Cardona MI, Sepúlveda PM, Echeverry SM, Oliveira Simões C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,9 +61,9 @@ Domínguez Moré GP, Cardona MI, Sepúlveda PM, Echeverry SM, Oliveira Simões C
 
 ### Reviewer guidance
 
-**The relative bioavailability of rutin was rejected because its unit of mg/kg is dimensionally inconsistent with the parameter's meaning.**
+**The AUC/dose parameter for rutin is rejected because its unit h/L lacks a valid physical dimension for a pharmacokinetic quantity.**
 
-The record lists relative bioavailability (Frel) for rutin as 1.0 with units of mg/kg. This unit is dimensionally inconsistent for a ratio parameter representing the fraction of the drug reaching systemic circulation. Because this unit could not be converted to standard SI units, the parameter failed a dimensional consistency check. Extracted — rutoside: AUC∞ 1.49e+04 ng*h/mL, Vss 0.11 L/kg, CL 0.1 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, Vnorm 0.096 L/kg, AUC/dose 1.02e+04 h/L, … (+5).
+The recorded AUC/dose value of 10243.52 uses the unit h/L, which represents time per volume. A dose-normalized area under the curve requires dimensions including mass, such as mass·time/volume, so the recorded unit is physically inconsistent. Because this specific unit was not recognized as a valid pharmacokinetic measure, no standard SI value could be derived. Extracted — rutoside: AUC∞ 1.49e+04 ng*h/mL, Vss 0.11 L/kg, CL 0.1 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, Vnorm 0.096 L/kg, AUC/dose 1.02e+04 h/L, … (+5).
 
 <sub>reviewed by qwen3.8-27b</sub>
 

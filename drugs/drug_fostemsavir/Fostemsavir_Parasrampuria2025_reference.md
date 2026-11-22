@@ -4,11 +4,11 @@
 
 # fostemsavir — `Fostemsavir_Parasrampuria2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-07 17:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fostemsavir was rejected because its absorption rate constant had an unconvertible unit, causing a dimension mismatch for this parameter.
+> Temsavir’s absorption rate constant, kabs, was reported as 2.33 units, which has the wrong dimension for an inverse-time rate, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="fostemsavir" model-id="Fostemsavir_Parasrampuria2025_reference" status="rejected" stale="true" population="HIV-1-infected and healthy participants from Phase 1–3 studies" measured-compound="temsavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fostemsavir" model-id="Fostemsavir_Parasrampuria2025_reference" status="rejected" stale="false" population="HIV-1-infected and healthy participants from Phase 1–3 studies" measured-compound="temsavir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokinetics and exposure-response relationship for temsavir following fostemsavir administration in treatment-experienced HIV patients. Pharmacology research & perspectives 13(3):e70023 (2025).
@@ -42,7 +42,7 @@ Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +52,13 @@ Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokin
 
 ### Reviewer guidance
 
-**Fostemsavir was rejected because its absorption rate constant had an unconvertible unit, causing a dimension mismatch for this parameter.**
+**Temsavir’s absorption rate constant, kabs, was reported as 2.33 units, which has the wrong dimension for an inverse-time rate, so the record was rejected.**
 
-The absorption rate constant is listed with a value of 2.33 and a unit explicitly stated as 'units'. This non-standard unit prevented conversion to SI, so the parameter lacked a valid value for the model. This dimensional mismatch on a structural parameter resulted in the record being rejected. Extracted — temsavir: CLm/F 51 L/h, V1/F 257 L, Q/F 2.58 L/h, V2/F 37.4 L, kabs 2.33 units.
+The reported unit has dimensions of luminosity per length squared, whereas an absorption rate constant has units of inverse time. The unit could not be converted to SI, so no SI value was available for this parameter. Extracted — temsavir: CLm/F 51 L/h, V1/F 257 L, Q/F 2.58 L/h, V2/F 37.4 L, kabs 2.33 units.
 
 Independently confirmed by `qwen3.8-27b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

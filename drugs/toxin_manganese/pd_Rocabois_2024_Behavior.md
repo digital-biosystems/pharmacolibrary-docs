@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Manganese concentrations drive a linear, proportional stimulation of the behavioral response in a pharmacodynamic model. Specific potency (e.g., EC50) and rate parameters (e.g., ke0, kout) are not provided in the available excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Rocabois_2024`
 - **model family:** `linear`
 - **driver:** `cited_pk`

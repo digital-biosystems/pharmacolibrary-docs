@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir alafenamide&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/&quot;},{&quot;label&quot;:&quot;Beliveau_2026 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tenofovir alafenamide — `TenofovirAlafenamide_Beliveau2026_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 16:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The tenofovir diphosphate compartment is an unreachable orphan, and its parameters use non-standard units like fmol/10^6 cells/h.
+> Refusal is attributed to an orphaned tenofovir diphosphate (TFV-DP) pathway, despite the record reporting TFV-DP Km at 29.3 µg/L.
 
-<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_estimate" status="rejected" stale="true" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_estimate" status="rejected" stale="false" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Beliveau M, Chang C, Lewis L, Letsoalo MP, Karim QA, Karim SSA et al. Population pharmacokinetics of tenofovir alafenamide delivered via an annual subdermal implant in South African women. Scientific reports 16(1) (2026).
@@ -39,7 +38,7 @@ Beliveau M, Chang C, Lewis L, Letsoalo MP, Karim QA, Karim SSA et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +48,13 @@ Beliveau M, Chang C, Lewis L, Letsoalo MP, Karim QA, Karim SSA et al. Population
 
 ### Reviewer guidance
 
-**The tenofovir diphosphate compartment is an unreachable orphan, and its parameters use non-standard units like fmol/10^6 cells/h.**
+**Refusal is attributed to an orphaned tenofovir diphosphate (TFV-DP) pathway, despite the record reporting TFV-DP Km at 29.3 µg/L.**
 
-The model links tenofovir alafenamide to tenofovir and tenofovir to tenofovir diphosphate, but tenofovir diphosphate has no elimination path. Parameters for tenofovir diphosphate, including Vmax (1.44 fmol/10^6 cells/h), use units that are not standard SI. The second reader disagreed that V/F (62.6 L), kel (0.006 h^-1), Km (29.3 µg/L), and Vmax should be included, marking them as null. Extracted — tenofovir alafenamide: Frel 9.24 TAF, V/F 62.6 L; tenofovir diphosphate (TFV-DP): Km 29.3 µg/L, Vmax 1.44 fmol/106 cells/h, kel 0.006 h− 1.
+Both metabolites are listed with n_cmt 0; the finding means an orphan compartment or metabolite has no path from the dose, although the record lists metabolism links from tenofovir alafenamide to TFV and from TFV to TFV-DP. A reported unit could not be converted to SI, leaving the affected parameter without an SI value, but the record does not say which parameter; the second reader also disputes the second link’s metabolism classification and reads the parameterization as mechanistic rather than apparent. Extracted — tenofovir alafenamide: Frel 9.24 TAF, V/F 62.6 L; tenofovir diphosphate (TFV-DP): Km 29.3 µg/L, Vmax 1.44 fmol/106 cells/h, kel 0.006 h− 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tenofovir alafenamide → tenofovir (tfv) (metabolism); tenofovir (tfv) → tenofovir diphosphate (tfv-dp) (metabolism), the second reading tenofovir alafenamide → tenofovir (metabolism); tenofovir → tenofovir diphosphate (interconversion); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

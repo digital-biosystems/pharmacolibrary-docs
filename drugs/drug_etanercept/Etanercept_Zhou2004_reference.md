@@ -17,7 +17,7 @@ Zhou H, Mayer PR, Wajdula J, Fatenejad S. Unaltered etanercept pharmacokinetics 
 
 ## Population and dosing
 
-**Population:** patients with rheumatoid arthritis · condition rheumatoid arthritis · age group mixed · n = 98.
+**Population:** patients with rheumatoid arthritis · condition rheumatoid arthritis · age group mixed.
 
 ## Model
 

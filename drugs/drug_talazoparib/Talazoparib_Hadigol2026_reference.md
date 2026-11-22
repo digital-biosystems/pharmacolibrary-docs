@@ -4,11 +4,11 @@
 
 # talazoparib — `Talazoparib_Hadigol2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:35 UTC (Rejected), but the paper was screened again on 2026-10-06 21:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for talazoparib carries the incompatible unit mL/ng, causing a dimension mismatch.
+> The record was rejected because talazoparib’s absorption-rate constant kabs is 0.157 mL/ng, a unit inconsistent with inverse time.
 
-<div class="pk-model-meta" hidden drug="talazoparib" model-id="Talazoparib_Hadigol2026_reference" status="rejected" stale="true" population="patients with metastatic castration-resistant prostate cancer" measured-compound="talazoparib" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="talazoparib" model-id="Talazoparib_Hadigol2026_reference" status="rejected" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="talazoparib" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacokinetics Analysis of Talazoparib and Enzalutamide Combination Therapy for Patients With Metastatic Castration-Resistant Prostate Cancer. Journal of clinical pharmacology 66(2):e70125 (2026).
@@ -16,7 +16,7 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 
 ## Population and dosing
 
-**Population:** patients with metastatic castration-resistant prostate cancer · condition metastatic castration-resistant prostate cancer · age group adult · n = # 811.
+**Population:** patients with metastatic castration-resistant prostate cancer · condition metastatic castration-resistant prostate cancer · age group adult.
 
 **Dosing:** 0.5, 1 mg, oral, multiple, every 24 h.
 
@@ -55,7 +55,7 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,13 +65,13 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 
 ### Reviewer guidance
 
-**The absorption rate constant for talazoparib carries the incompatible unit mL/ng, causing a dimension mismatch.**
+**The record was rejected because talazoparib’s absorption-rate constant kabs is 0.157 mL/ng, a unit inconsistent with inverse time.**
 
-The record lists the talazoparib absorption rate constant with a value of 0.157 and a unit of mL/ng, which is physically inconsistent for a first-order rate constant. This unit error triggered a structural dimension mismatch, leading to the rejection of the model. Although a second reader disagreed with the extraction of the dose compound and primary analyte, the fundamental unit incompatibility remained unresolvable. Extracted — talazoparib: CL 5.08 L/h, V1/F 14.4 L, V 382 L, Q 15.6 L/h, kabs 0.157 mL/ng; enzalutamide: CL/F 0.425 L/h, V/F 25.3 L, Q/F 20.6 L/h, kabs 3.43 mL/ng, fe 1 Fixed; N-desmethyl enzalutamide: CL 0.286 L/h, V1 44.9 L, Q 9.44 L/h, V2 52.4 L, fm 0.634 Fixed.
+The reported unit could not be converted to SI, leaving no SI value for this parameter; its dimensions conflict with those of an absorption-rate constant. A second reader did not extract the 0.157 estimate. Extracted — talazoparib: CL 5.08 L/h, V1/F 14.4 L, V 382 L, Q 15.6 L/h, kabs 0.157 mL/ng; enzalutamide: CL/F 0.425 L/h, V/F 25.3 L, Q/F 20.6 L/h, kabs 3.43 mL/ng, fe 1 Fixed; N-desmethyl enzalutamide: CL 0.286 L/h, V1 44.9 L, Q 9.44 L/h, V2 52.4 L, fm 0.634 Fixed.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has talazoparib, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

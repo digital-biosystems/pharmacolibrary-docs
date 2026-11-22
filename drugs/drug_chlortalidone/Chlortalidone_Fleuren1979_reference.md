@@ -4,11 +4,11 @@
 
 # chlortalidone — `Chlortalidone_Fleuren1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:46 UTC (Rejected), but the paper was screened again on 2026-10-06 17:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="chlortalidone" model-id="Chlortalidone_Fleuren1979_reference" status="needs_review" stale="true" population="normal human volunteers" measured-compound="chlorthalidone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chlortalidone" model-id="Chlortalidone_Fleuren1979_reference" status="needs_review" stale="false" population="normal human volunteers" measured-compound="chlorthalidone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fleuren HL, Thien TA, Verwey-van Wissen CP, van Rossum JM. Absolute bioavailability of chlorthalidone in man: a cross-over study after intravenous and oral administration. European journal of clinical pharmacology 15(1):35–50 (1979).
@@ -16,7 +16,7 @@ Fleuren HL, Thien TA, Verwey-van Wissen CP, van Rossum JM. Absolute bioavailabil
 
 ## Population and dosing
 
-**Population:** normal human volunteers · condition healthy · age group adult · n = &gt;=7.
+**Population:** normal human volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Fleuren HL, Thien TA, Verwey-van Wissen CP, van Rossum JM. Absolute bioavailabil
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Fleuren HL, Thien TA, Verwey-van Wissen CP, van Rossum JM. Absolute bioavailabil
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chlortalidone: t1/2z 36.5 h, fe 65.4 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mean f from plasma concentrations: this record has none, the second reading 0.61; it also differs on 6 more fields. That field does not shape the model.
 

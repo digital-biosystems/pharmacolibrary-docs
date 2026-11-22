@@ -4,11 +4,11 @@
 
 # etilefrine — `Etilefrine_Hengstmann1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-06 09:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record failed due to a dimension mismatch and an unreachable compartment, with bioavailability and volume parameters incorrectly linked in a single-compartment model.
+> Etilefrine's volume of distribution parameter was rejected due to dimension mismatch and an unlinked compartment in the one-compartment structure.
 
-<div class="pk-model-meta" hidden drug="etilefrine" model-id="Etilefrine_Hengstmann1975_reference" status="rejected" stale="true" population="man" measured-compound="etilefrine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="etilefrine" model-id="Etilefrine_Hengstmann1975_reference" status="rejected" stale="false" population="man" measured-compound="etilefrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hengstmann JH, Weyand U, Dengler HJ. The physiological disposition of etilefrine in man. European journal of clinical pharmacology 9(2-3):179–187 (1975).
@@ -36,7 +36,7 @@ Hengstmann JH, Weyand U, Dengler HJ. The physiological disposition of etilefrine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Hengstmann JH, Weyand U, Dengler HJ. The physiological disposition of etilefrine
 
 ### Reviewer guidance
 
-**The record failed due to a dimension mismatch and an unreachable compartment, with bioavailability and volume parameters incorrectly linked in a single-compartment model.**
+**Etilefrine's volume of distribution parameter was rejected due to dimension mismatch and an unlinked compartment in the one-compartment structure.**
 
-The model structure is a single compartment, yet a parameter for the peripheral compartment's volume of distribution (160) is listed, causing a structural inconsistency and an orphan compartment error. The second reader identified the 160 value as belonging to the central volume of distribution rather than the peripheral one, highlighting a parameter misassignment. Because the data was abstract-only, summary statistics were used instead of fitted model parameters. Extracted — etilefrine: Fab 0.55, V2 160 1, t1/2z 2 hours.
+The volume of distribution value of 160 was assigned the dimensionless unit '1', conflicting with the required cubic length dimension. Additionally, the second reader disagreed on the parameter mapping, identifying the value 160 as volume of distribution rather than the specific beta phase parameter. These structural and dimensional errors, combined with the abstract-only source, led to the record's rejection. Extracted — etilefrine: Fab 0.55, V2 160 1, t1/2z 2 hours.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of vd, beta: this record has 160, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vd, beta: this record has 160, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -88,14 +88,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[vd, beta]` | 160 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 160 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd, beta]` | 160 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 160 | only_one_extracted |
 
 </details>
 

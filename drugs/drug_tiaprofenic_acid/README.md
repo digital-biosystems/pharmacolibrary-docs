@@ -21,11 +21,11 @@ It is given orally in tablets, capsules, or granules. It is available in generic
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| tiaprofenic_acid (tiaprofenic acid) | metabolite | 260.308 | C14H12O3S | DrugBank | [5468](https://pubchem.ncbi.nlm.nih.gov/compound/5468) | Nilsen_1985_2 |
+| tiaprofenic acid (tiaprofenic_acid) | parent | 260.308 | C14H12O3S | DrugBank | [5468](https://pubchem.ncbi.nlm.nih.gov/compound/5468) | Nilsen_1985_2 |
 
 ## Start here
 
-> **Nilsen_1985_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> elderly patients, n = &gt;=8. [Run it in the simulator](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md?tab=Simulation) · [record](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md)
+> **Nilsen_1985_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> elderly patients. [Run it in the simulator](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md?tab=Simulation) · [record](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,17 +33,7 @@ It is given orally in tablets, capsules, or granules. It is available in generic
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: T6_deviations</sub> | [Nilsen_1985_2_reference](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Nilsen OG et al., Steady state pharmacokinetics of tiapro…, Arzneimittel-Forschung (1985) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tiaprofenic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub> | [Nilsen_1985_2_reference](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Nilsen OG et al., Steady state pharmacokinetics of tiapro…, Arzneimittel-Forschung (1985) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

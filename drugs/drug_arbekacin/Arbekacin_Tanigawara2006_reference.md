@@ -17,7 +17,7 @@ Tanigawara Y, Sato R, Morita K, Kaku M, Aikawa N, Shimizu K. Population pharmaco
 
 ## Population and dosing
 
-**Population:** patients infected with MRSA and healthy/renally impaired volunteers · age group mixed · n = condition.
+**Population:** patients infected with MRSA and healthy/renally impaired volunteers · age group mixed.
 
 ## Model
 

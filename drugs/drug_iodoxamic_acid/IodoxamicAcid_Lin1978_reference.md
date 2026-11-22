@@ -4,11 +4,11 @@
 
 # iodoxamic acid — `IodoxamicAcid_Lin1978_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> This record was reviewed on 2026-11-07 16:26 UTC (Rejected), but the paper was screened again on 2026-10-07 22:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks volume and clearance parameters, failing to describe a compartmental model for iodoxamic acid.
+> Vmax unit mumoles/kg/min conflicts with expected mass/time, and Km unit micrometer is dimensionally invalid for a concentration parameter.
 
-<div class="pk-model-meta" hidden drug="iodoxamic acid" model-id="IodoxamicAcid_Lin1978_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="iodoxamic acid" model-id="IodoxamicAcid_Lin1978_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lin SK, Moss AA, Motson R, Riegelman S. Pharmacokinetics of iodoxamic acid in rhesus monkey: biliary excretion, plasma protein binding, and enterophepatic circulation. Journal of pharmaceutical sciences 67(7):930–934 (1978).
@@ -36,7 +36,7 @@ Lin SK, Moss AA, Motson R, Riegelman S. Pharmacokinetics of iodoxamic acid in rh
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Lin SK, Moss AA, Motson R, Riegelman S. Pharmacokinetics of iodoxamic acid in rh
 
 ### Reviewer guidance
 
-**The record lacks volume and clearance parameters, failing to describe a compartmental model for iodoxamic acid.**
+**Vmax unit mumoles/kg/min conflicts with expected mass/time, and Km unit micrometer is dimensionally invalid for a concentration parameter.**
 
-The extracted record contains only Vmax and Km, omitting the distribution volume and elimination clearance required for a structural PK model. Additionally, a dimensional mismatch was detected for the structural parameter. As the data came solely from the abstract, these summary statistics do not represent a fully fitted model. Extracted — iodoxamic acid: Vmax 1.03 mumoles/kg/min.
+The record was built from the abstract alone, so summary statistics stand in for a fitted model. A dimensionality check failed because the maximum metabolic rate unit implies substance per time, not mass per time. Additionally, the Michaelis constant unit of micrometer represents length, which does not match the required mass per volume dimension. Extracted — iodoxamic acid: Vmax 1.03 mumoles/kg/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iodoxamic acid, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

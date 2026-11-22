@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;omecamtiv mecarbil&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/&quot;},{&quot;label&quot;:&quot;Chen_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;OmecamtivMecarbil_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vu_2015_LVOTSV&quot;,&quot;label&quot;:&quot;Vu_2015 \u00b7 LVOTSV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/pd_Vu_2015_LVOTSV.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;OmecamtivMecarbil_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vu_2015_LVOTSV&quot;,&quot;label&quot;:&quot;Vu_2015 \u00b7 LVOTSV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/pd_Vu_2015_LVOTSV.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # omecamtiv mecarbil — `OmecamtivMecarbil_Chen2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="omecamtiv mecarbil" model-id="OmecamtivMecarbil_Chen2022_reference" status="simulated" stale="false" population="healthy subjects and patients with heart failure with reduced ejection fraction" measured-compound="omecamtiv mecarbil" parameterization="mechanistic" topology="1C"></div>
+> The omecamtiv mecarbil record was held for review because its reported clearance of 11.7 L/h was disputed by the second reader.
+
+<div class="pk-model-meta" hidden drug="omecamtiv mecarbil" model-id="OmecamtivMecarbil_Chen2022_reference" status="needs_review" stale="false" population="healthy subjects and patients with heart failure with reduced ejection fraction" measured-compound="omecamtiv mecarbil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chen PW, Trivedi A, Lee E, Dutta S, Ahamadi M. Population Pharmacokinetic Properties of Omecamtiv Mecarbil in Healthy Subjects and Patients With Heart Failure With Reduced Ejection Fraction. Journal of cardiovascular pharmacology 79(4):539–548 (2022).
@@ -15,7 +17,7 @@ Chen PW, Trivedi A, Lee E, Dutta S, Ahamadi M. Population Pharmacokinetic Proper
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with heart failure with reduced ejection fraction · condition heart failure with reduced ejection fraction · age group adult · n = : 4346.
+**Population:** healthy subjects and patients with heart failure with reduced ejection fraction · condition heart failure with reduced ejection fraction · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Chen PW, Trivedi A, Lee E, Dutta S, Ahamadi M. Population Pharmacokinetic Proper
 <figure class="pk-models-diagram"><img src="drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_reference/OmecamtivMecarbil_Chen2022_reference.svg" alt="OmecamtivMecarbil_Chen2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance | CL | 11.7 | L/h |
@@ -35,7 +39,7 @@ Chen PW, Trivedi A, Lee E, Dutta S, Ahamadi M. Population Pharmacokinetic Proper
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +49,13 @@ Chen PW, Trivedi A, Lee E, Dutta S, Ahamadi M. Population Pharmacokinetic Proper
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The omecamtiv mecarbil record was held for review because its reported clearance of 11.7 L/h was disputed by the second reader.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was read, so reported summary statistics stood in for a fitted model. The second reader disputed the record (agreement 0.2; 0 of 1 reader agreed), marked the dose compound and primary analyte unknown, and did not confirm the reported clearance of 11.7 L/h, volume of 275 L, or terminal half-life of 33 hours. Extracted — omecamtiv mecarbil: CL 11.7 L/h, V 275 L, t1/2z 33 hours.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has omecamtiv mecarbil, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has omecamtiv mecarbil, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -85,20 +89,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[central volume distribution]` | 275 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[central volume distribution]` |  | 275 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 11.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` |  | 11.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life]` | 33 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life]` |  | 33 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | omecamtiv mecarbil | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | omecamtiv mecarbil | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[central volume distribution]` | 275 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume distribution]` |  | 275 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 11.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 11.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 33 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` |  | 33 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | omecamtiv mecarbil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | omecamtiv mecarbil | unknown | mismatch |
 
 </details>
 
@@ -125,14 +129,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=omecamtiv mecarbil) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=omecamtiv mecarbil) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -174,30 +174,13 @@ The model builder substituted library placeholders for risperidone's bioavailabi
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Kozielska2012_reference/Risperidone_Kozielska2012_reference_matlab.zip" download>Risperidone_Kozielska2012_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Kozielska2012_reference/Risperidone_Kozielska2012_reference_matlab_simbio.zip" download>Risperidone_Kozielska2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Kozielska2012_reference/Risperidone_Kozielska2012_reference_sbml.zip" download>Risperidone_Kozielska2012_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Kozielska2012_reference/Risperidone_Kozielska2012_reference_cellml.zip" download>Risperidone_Kozielska2012_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Kozielska M, Johnson M, Pilla Reddy V, Vermeulen A, Li C, Grimwood S et al. Pharmacokinetic-pharmacodynamic modeling of the D₂ and 5-HT (2A) receptor occupancy of risperidone and paliperidone in rats. Pharmaceutical research 29(7):1932-1948 (2012). [doi:10.1007/s11095-012-0722-8](https://doi.org/10.1007/s11095-012-0722-8)
-
-**This record:** Pharmacolibrary, model `Risperidone_Kozielska2012_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_risperidone/Risperidone_Kozielska2012_reference>
-
-```bibtex
-@misc{pharmacolibrary_RisperidoneKozielska2012reference,
-  title  = {{Pharmacolibrary model Risperidone_Kozielska2012_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_risperidone/Risperidone_Kozielska2012_reference},
-  note   = {Parameters from doi:10.1007/s11095-012-0722-8},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

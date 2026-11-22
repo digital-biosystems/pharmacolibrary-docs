@@ -36,18 +36,7 @@ _not available_
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2023_SP](drugs/toxin_phenolphthalein/pd_Wang_2023_SP.md) | SP (Substance P) · model not identified | — | Wang L et al., Therapeutic effects of Bombax ceiba flo…, Pharmaceutical biology (2023) | [10.1080/13880209.2022.2157841](https://doi.org/10.1080/13880209.2022.2157841) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2023_SS](drugs/toxin_phenolphthalein/pd_Wang_2023_SS.md) | SS (Somatostatin) · model not identified | — | Wang L et al., Therapeutic effects of Bombax ceiba flo…, Pharmaceutical biology (2023) | [10.1080/13880209.2022.2157841](https://doi.org/10.1080/13880209.2022.2157841) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2023_c_Kit](drugs/toxin_phenolphthalein/pd_Wang_2023_c_Kit.md) | c-Kit expression · model not identified | — | Wang L et al., Therapeutic effects of Bombax ceiba flo…, Pharmaceutical biology (2023) | [10.1080/13880209.2022.2157841](https://doi.org/10.1080/13880209.2022.2157841) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Yalçin_2001_PHP](drugs/toxin_phenolphthalein/pd_Yal_in_2001_PHP.md) | Phenolphthalein concentration biomarker turnover ← phenolphthalein | — | Yalçin G et al., Determination of phenolphthalein and me…, Bollettino chimico farmaceu… (2001) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phenolphthalein).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `UGT1A9` unknown | DrugBank actor |
-| metabolism | liver | `UGT1A9` unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ESR1 (target), NR1I2 (unknown), NR1I3 (unknown), SHBG (unknown).</sub>
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">in vitro</span> | [Yalçin_2001_PHP](drugs/toxin_phenolphthalein/pd_Yal_in_2001_PHP.md) | Phenolphthalein concentration biomarker turnover ← phenolphthalein | — | Yalçin G et al., Determination of phenolphthalein and me…, Bollettino chimico farmaceu… (2001) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +50,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-19 15:42 | 6:39 | 0/0/0 | 0/2/0 | 0/0/0 | 126,974/6,442 | einfracz / qwen3.8-flash-next | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-19 15:42 | 6:39 | 0/0/0 | 0/11/0 | 0/0/0 | 126,974/6,442 | einfracz / qwen3.8-flash-next | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 

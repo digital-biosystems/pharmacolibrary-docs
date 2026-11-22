@@ -36,7 +36,7 @@ Adams WR, Smith JE, Green MH. Effects of N-(4-hydroxyphenyl)retinamide on vitami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Adams WR, Smith JE, Green MH. Effects of N-(4-hydroxyphenyl)retinamide on vitami
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — retinol: V 9.03.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fcrp: this record has none, the second reading 1.33; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fcrp: this record has none, the second reading 1.33; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -104,19 +104,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.417 (5/12 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.417 (5/12 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[fcrp]` |  | 1.33 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[m(2)]` |  | 41.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[m(total)]` |  | 1086 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[r(1,2)]` |  | 314 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t(1,1)]` |  | 0.750 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t(2)]` |  | 3.17 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t(sys)]` |  | 25.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fcrp]` |  | 1.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m(2)]` |  | 41.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m(total)]` |  | 1086 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[r(1,2)]` |  | 314 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t(1,1)]` |  | 0.750 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t(2)]` |  | 3.17 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t(sys)]` |  | 25.2 | only_one_extracted |
 
 </details>
 

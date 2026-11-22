@@ -1,0 +1,43 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fentanyl_Andersen1986_reference",
+ "molar_masses": {
+  "central.C": 0.3364705
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.05,
+  0.1,
+  0.2,
+  1.0,
+  4.0,
+  8.0
+ ],
+ "parameters": {
+  "Cl": 9.765e-05,
+  "F": 0.9,
+  "MM": 0.3364705,
+  "Tlag": 900.0,
+  "VdPerKg": 0.0007700000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5.0000000000000004e-08,
+  "k12": 0.0020995670995670995,
+  "k21": 0.0010041407867494823,
+  "ka": 0.0045000000000000005,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1904.609218436874
+ },
+ "reference_peaks": {
+  "central.C": 1.738282554167319e-07
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

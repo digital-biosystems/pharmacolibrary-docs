@@ -17,7 +17,7 @@ Stott KE, Beardsley J, Whalley S, Kibengo FM, Mai NTH, Tùng NLN et al. Populati
 
 ## Population and dosing
 
-**Population:** adults with cryptococcal meningitis · condition cryptococcal meningitis · age group adult · n = &gt;=42.
+**Population:** adults with cryptococcal meningitis · condition cryptococcal meningitis · age group adult.
 
 ## Model
 

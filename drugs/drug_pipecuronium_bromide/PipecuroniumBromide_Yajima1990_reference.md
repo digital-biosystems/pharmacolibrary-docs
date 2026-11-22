@@ -1,20 +1,22 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;pipecuronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/&quot;},{&quot;label&quot;:&quot;Yajima_1990 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PipecuroniumBromide_Yajima1990_reference&quot;,&quot;label&quot;:&quot;Yajima_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Yajima1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PipecuroniumBromide_Caldwell1988_reference&quot;,&quot;label&quot;:&quot;Caldwell_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PipecuroniumBromide_Caldwell1988_reference&quot;,&quot;label&quot;:&quot;Caldwell_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PipecuroniumBromide_Yajima1990_reference&quot;,&quot;label&quot;:&quot;Yajima_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Yajima1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pipecuronium bromide — `PipecuroniumBromide_Yajima1990_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Yajima1990_reference" status="simulated" stale="false" population="male patients" measured-compound="pipecuronium_bromide" parameterization="mechanistic" topology="1C"></div>
+> Second reader disputed all pipecuronium parameters, failing to identify values for clearance and half-lives, blocking publication.
+
+<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Yajima1990_reference" status="needs_review" stale="false" population="male patients" measured-compound="pipecuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yajima C, Sugai N, Hanaoka K, Numata K, Yamamoto K, Kushida Y et al. [Comparative pharmacokinetics of pipecuronium bromide, pancuronium bromide and vecuronium bromide in anesthetized man]. Masui. The Japanese journal of anesthesiology 39(7):882–889 (1990).
 
 ## Population and dosing
 
-**Population:** male patients · condition healthy · age group adult · n = : 9.
+**Population:** male patients · condition healthy · age group adult.
 
 ## Model
 
@@ -26,6 +28,8 @@ Yajima C, Sugai N, Hanaoka K, Numata K, Yamamoto K, Kushida Y et al. [Comparativ
 <figure class="pk-models-diagram"><img src="drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Yajima1990_reference/PipecuroniumBromide_Yajima1990_reference.svg" alt="PipecuroniumBromide_Yajima1990_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | distribution half-life; T1/2 alpha | t1/2α | 3.9 | min |
@@ -36,7 +40,7 @@ Yajima C, Sugai N, Hanaoka K, Numata K, Yamamoto K, Kushida Y et al. [Comparativ
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +50,13 @@ Yajima C, Sugai N, Hanaoka K, Numata K, Yamamoto K, Kushida Y et al. [Comparativ
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Second reader disputed all pipecuronium parameters, failing to identify values for clearance and half-lives, blocking publication.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, meaning summary statistics stood in for a fitted model. A second reader disagreed with the extracted values of 1.8 ml.min-1.kg-1 for clearance and 3.9 min for the distribution half-life. The second reader identified these parameters as null and could not confirm the dose compound. Extracted — pipecuronium bromide: t1/2α 3.9 min, t1/2β 102 min, V 95 ml.kg-1, Vss 264 ml.kg-1, CL 1.8 ml.min-1.kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipecuronium_bromide, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -135,14 +139,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pipecuronium_bromide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pipecuronium_bromide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

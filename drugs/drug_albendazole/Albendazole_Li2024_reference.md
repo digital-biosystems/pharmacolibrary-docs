@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02C&quot;,&quot;href&quot;:&quot;atc/P02C.md&quot;},{&quot;label&quot;:&quot;albendazole&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/&quot;},{&quot;label&quot;:&quot;Li_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Albendazole_Formentini2001_reference&quot;,&quot;label&quot;:&quot;Formentini_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Formentini2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Algorta2022_reference&quot;,&quot;label&quot;:&quot;Algorta_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Algorta2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Castro2009_reference&quot;,&quot;label&quot;:&quot;Castro_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Castro2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Chhonker2023_reference&quot;,&quot;label&quot;:&quot;Chhonker_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Fimbo2023_reference&quot;,&quot;label&quot;:&quot;Fimbo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Albendazole_Castro2009_reference&quot;,&quot;label&quot;:&quot;Castro_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Castro2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Algorta2022_reference&quot;,&quot;label&quot;:&quot;Algorta_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Algorta2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Chhonker2023_reference&quot;,&quot;label&quot;:&quot;Chhonker_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Formentini2001_reference&quot;,&quot;label&quot;:&quot;Formentini_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Formentini2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Fimbo2023_reference&quot;,&quot;label&quot;:&quot;Fimbo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Albendazole's clearance, volume of distribution, and absorption lag time lacked values, forcing placeholder defaults that quarantined the model.
+> Quarantined because albendazole's clearance, volume of distribution, and lag time were left at library defaults since all extracted parameters describe only the metabolite albendazole sulphoxide.
 
 <div class="pk-model-meta" hidden drug="albendazole" model-id="Albendazole_Li2024_reference" status="model_quarantined" stale="false" population="donkeys" measured-compound="albendazole sulphoxide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,9 +56,9 @@ Li Z, Qin X, Wang C, Liu W. Pharmacokinetics and tissue residues of albendazole 
 
 ### Reviewer guidance
 
-**Albendazole's clearance, volume of distribution, and absorption lag time lacked values, forcing placeholder defaults that quarantined the model.**
+**Quarantined because albendazole's clearance, volume of distribution, and lag time were left at library defaults since all extracted parameters describe only the metabolite albendazole sulphoxide.**
 
-All eight extracted parameters describe albendazole sulphoxide, leaving the parent compound's pharmacokinetic properties undefined. Consequently, the model builder assigned default placeholders for albendazole's clearance, volume of distribution, and absorption lag time. Additionally, a reported unit could not be converted to SI, preventing a valid numerical value from being usable. Extracted — albendazole sulphoxide (ABZSO): kel 1 1/h, kabs 1 1/h, t1/2z 0.67 h, tmax 3.01 h, Cmax 0.58 μg/mL, V/F 10.9 L/kg, AUC 12.8 μg·h/mL, CLb 0.59 L/h/kg.
+The record lists eight parameters for albendazole sulphoxide, including a clearance of 0.59 L/h/kg, but lacks any corresponding values for the parent drug albendazole. Consequently, albendazole's clearance, volume of distribution, and absorption lag time were defaulted instead of using fitted estimates. This omission, combined with the absence of a valid unit conversion for the metabolite, resulted in the model being held back from publication. Extracted — albendazole sulphoxide (ABZSO): kel 1 1/h, kabs 1 1/h, t1/2z 0.67 h, tmax 3.01 h, Cmax 0.58 μg/mL, V/F 10.9 L/kg, AUC 12.8 μg·h/mL, CLb 0.59 L/h/kg.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -143,7 +143,8 @@ All eight extracted parameters describe albendazole sulphoxide, leaving the pare
 | T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | D001: not acceptable; D002: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 | T1_cmax | reference | skipped | 0.58 |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.43 |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
@@ -171,30 +172,13 @@ All eight extracted parameters describe albendazole sulphoxide, leaving the pare
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_matlab.zip" download>Albendazole_Li2024_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_matlab_simbio.zip" download>Albendazole_Li2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_sbml.zip" download>Albendazole_Li2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_cellml.zip" download>Albendazole_Li2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Li Z, Qin X, Wang C, Liu W. Pharmacokinetics and tissue residues of albendazole sulphoxide and its metabolites in donkey after intramuscular injection. Veterinary medicine and science 10(3):e1393 (2024). [doi:10.1002/vms3.1393](https://doi.org/10.1002/vms3.1393)
-
-**This record:** Pharmacolibrary, model `Albendazole_Li2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_albendazole/Albendazole_Li2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_AlbendazoleLi2024reference,
-  title  = {{Pharmacolibrary model Albendazole_Li2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_albendazole/Albendazole_Li2024_reference},
-  note   = {Parameters from doi:10.1002/vms3.1393},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

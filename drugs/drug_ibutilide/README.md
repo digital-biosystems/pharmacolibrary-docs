@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ibutilide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Zeng_2017_QTc&quot;,&quot;label&quot;:&quot;Zeng_2017 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Zeng_2017_QTc.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tisdale_2012_QTF&quot;,&quot;label&quot;:&quot;Tisdale_2012 \u00b7 QTF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ibutilide
 
@@ -35,20 +34,8 @@ Ibutilide is a class III antiarrhythmic agent used to treat atrial fibrillation 
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">other organism</span> | [Lin_2008_HERG](drugs/drug_ibutilide/pd_Lin_2008_HERG.md) | HERG current inhibition ← ibutilide · direct Emax (saturable) effect | — | Lin C et al., Extracellular acidification and hyperka…, Cardiology (2008) | [10.1159/000111932](https://doi.org/10.1159/000111932) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [McBride_2009_IKr](drugs/drug_ibutilide/pd_McBride_2009_IKr.md) | IKr ← ibutilide · direct sigmoid Emax (Hill) effect | — | McBride BF et al., Influence of the G2677T/C3435T haplotyp…, The pharmacogenomics journal (2009) | [10.1038/tpj.2009.1](https://doi.org/10.1038/tpj.2009.1) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Zeng_2017_QTc](drugs/drug_ibutilide/pd_Zeng_2017_QTc.md) | QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Tisdale_2012_QTF](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Fridericia-corrected QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ibutilide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CACNA1C (activator), CACNA2D1 (activator), CACNB1 (activator), CACNG1 (activator), KCNH2 (inhibitor), KCNH6 (inhibitor), KCNH7 (inhibitor), KCNJ11 (inhibitor), KCNK1 (inhibitor), KCNK6 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Zeng_2017_QTc](drugs/drug_ibutilide/pd_Zeng_2017_QTc.md) | QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | — | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Tisdale_2012_QTF](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Fridericia-corrected QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | — | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

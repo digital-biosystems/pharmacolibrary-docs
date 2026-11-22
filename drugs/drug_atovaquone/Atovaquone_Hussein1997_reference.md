@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01A&quot;,&quot;href&quot;:&quot;atc/P01A.md&quot;},{&quot;label&quot;:&quot;atovaquone&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/&quot;},{&quot;label&quot;:&quot;Hussein_1997 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atovaquone_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/Atovaquone_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atovaquone_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/Atovaquone_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atovaquone — `Atovaquone_Hussein1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:00 UTC (Rejected), but the paper was screened again on 2026-10-07 05:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The extracted clearance/F value of 58.5 percent is dimensionally inconsistent with its definition as a clearance rate.
+> Record rejected because the clearance parameter for atovaquone was reported with a percentage unit, dimensionally inconsistent with volume over time.
 
-<div class="pk-model-meta" hidden drug="atovaquone" model-id="Atovaquone_Hussein1997_reference" status="rejected" stale="true" population="patients with acute Plasmodium falciparum malaria" measured-compound="atovaquone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atovaquone" model-id="Atovaquone_Hussein1997_reference" status="rejected" stale="false" population="patients with acute Plasmodium falciparum malaria" measured-compound="atovaquone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hussein Z, Eaves J, Hutchinson DB, Canfield CJ. Population pharmacokinetics of atovaquone in patients with acute malaria caused by Plasmodium falciparum. Clinical pharmacology and therapeutics 61(5):518–530 (1997).
@@ -39,7 +39,7 @@ Hussein Z, Eaves J, Hutchinson DB, Canfield CJ. Population pharmacokinetics of a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Hussein Z, Eaves J, Hutchinson DB, Canfield CJ. Population pharmacokinetics of a
 
 ### Reviewer guidance
 
-**The extracted clearance/F value of 58.5 percent is dimensionally inconsistent with its definition as a clearance rate.**
+**Record rejected because the clearance parameter for atovaquone was reported with a percentage unit, dimensionally inconsistent with volume over time.**
 
-The record lists total clearance following oral administration as 58.5 percent, which is a percentage rather than a volumetric flow rate. This dimensional mismatch prevents the parameter from being used in a pharmacokinetic model. Because the record was derived solely from the abstract, these summary statistics lack the context of a fitted model. Extracted — atovaquone: CL/F 58.5 %, Vnorm/F 7.98 L/kg, V/F 345 L, t1/2z 72.9 hours, tlag 0.147 h.
+The extracted clearance value of 58.5 for atovaquone is recorded with a unit of percent, which is dimensionless. This conflicts with the physical dimension of volume divided by time required for a clearance parameter. Additionally, the record was constructed solely from the paper's abstract, meaning these summary statistics stand in for a properly fitted model. Extracted — atovaquone: CL/F 58.5 %, Vnorm/F 7.98 L/kg, V/F 345 L, t1/2z 72.9 hours, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atovaquone, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S02A&quot;,&quot;href&quot;:&quot;atc/S02A.md&quot;},{&quot;label&quot;:&quot;boric acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BoricAcid_Usuda1998_reference&quot;,&quot;label&quot;:&quot;Usuda_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Usuda1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # boric acid
 
@@ -25,7 +25,7 @@ Boric acid is an anti-infective agent used for eye and ear conditions. It is giv
 
 ## Start here
 
-> **Jansen_1984_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy adult male volunteers, n = 8. [Run it in the simulator](drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md?tab=Simulation) · [record](drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md)
+> **Jansen_1984_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adult male volunteers, n = 8. [Run it in the simulator](drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md?tab=Simulation) · [record](drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,8 +33,8 @@ Boric acid is an anti-infective agent used for eye and ear conditions. It is giv
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Jansen_1984_reference](drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md) | ▶ model + simulator | 2-compartment, IV | 7 | Jansen JA et al., Boric acid single dose pharmacokinetics…, Archives of toxicology (1984) | [10.1007/BF00316588](https://doi.org/10.1007/BF00316588) |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Not simulated</sub> | [Usuda_1998_reference](drugs/drug_boric_acid/BoricAcid_Usuda1998_reference.md) | — | 1-compartment (no model) | 7 | Usuda K et al., Serum and urinary boron levels in rats…, Archives of toxicology (1998) | [10.1007/s002040050530](https://doi.org/10.1007/s002040050530) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Jansen_1984_reference](drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md) | ▶ model + simulator | 2-compartment, IV | 7 | Jansen JA et al., Boric acid single dose pharmacokinetics…, Archives of toxicology (1984) | [10.1007/BF00316588](https://doi.org/10.1007/BF00316588) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: cross_check_disputed</sub> | [Usuda_1998_reference](drugs/drug_boric_acid/BoricAcid_Usuda1998_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Usuda K et al., Serum and urinary boron levels in rats…, Archives of toxicology (1998) | [10.1007/s002040050530](https://doi.org/10.1007/s002040050530) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Syvänen_2012_reference](drugs/drug_boric_acid/BoricAcid_Syvnen2012_reference.md) | — | 2-compartment (no model) | 4 | Syvänen S et al., Alteration in P-glycoprotein functional…, The AAPS journal (2012) | [10.1208/s12248-011-9318-1](https://doi.org/10.1208/s12248-011-9318-1) |
 
 ## Pharmacodynamics (PD)
@@ -52,17 +52,6 @@ Boric acid is an anti-infective agent used for eye and ear conditions. It is giv
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Rolshausen_2005_inhibition_of_ascospore_germination_of_Eutypa_lata](drugs/drug_boric_acid/pd_Rolshausen_2005_inhibition_of_ascospore_germination_of_Eutyp.md) | inhibition of ascospore germination of Eutypa lata ← boric acid · inhibition effect | — | Rolshausen PE et al., Use of Boron for the Control of Eutypa…, Plant disease (2005) | [10.1094/PD-89-0734](https://doi.org/10.1094/PD-89-0734) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Rolshausen_2005_inhibition_of_mycelial_growth_of_Eutypa_lata](drugs/drug_boric_acid/pd_Rolshausen_2005_inhibition_of_mycelial_growth_of_Eutypa_lata.md) | inhibition of mycelial growth of Eutypa lata ← boric acid · inhibition effect | — | Rolshausen PE et al., Use of Boron for the Control of Eutypa…, Plant disease (2005) | [10.1094/PD-89-0734](https://doi.org/10.1094/PD-89-0734) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=boric_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -75,13 +64,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:56 | 22:40 | 2/1/0 | 6/1/0 | 0/0/0 | 685,037/20,482 | ollama / glm-5.3-flash | 23 | 1/17 | 23/0 | 0 |
+| 2026-10-07 17:56 | 22:40 | 2/1/0 | 8/2/0 | 0/0/0 | 685,037/20,482 | ollama / glm-5.3-flash | 23 | 1/17 | 23/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 106 matched, 66 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

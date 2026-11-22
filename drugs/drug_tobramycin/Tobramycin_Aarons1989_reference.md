@@ -17,7 +17,7 @@ Aarons L, Vozeh S, Wenk M, Weiss P, Follath F. Population pharmacokinetics of to
 
 ## Population and dosing
 
-**Population:** heterogenous group of patients · age group adult · n = The population pharmacokinetic model was validated against data obtained from 34 independent patients.
+**Population:** heterogenous group of patients · age group adult.
 
 ## Model
 

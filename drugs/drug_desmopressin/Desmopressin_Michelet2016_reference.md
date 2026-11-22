@@ -16,7 +16,7 @@ Michelet R, Dossche L, De Bruyne P, Colin P, Boussery K, Vande Walle J et al. Ef
 
 ## Population and dosing
 
-**Population:** children with nocturnal enuresis · condition nocturnal enuresis · age group child · n = &gt;$0.
+**Population:** children with nocturnal enuresis · condition nocturnal enuresis · age group child.
 
 **Dosing:** 0.12, 0.2 mg, oral, single.
 

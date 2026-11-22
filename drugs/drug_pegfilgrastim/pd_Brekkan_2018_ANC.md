@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;pegfilgrastim&quot;,&quot;href&quot;:&quot;drugs/drug_pegfilgrastim/&quot;},{&quot;label&quot;:&quot;Brekkan_2018 \u00b7 PD absolute neutrophil count&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# absolute neutrophil count — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+# absolute neutrophil count — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 **As extracted:** Pegfilgrastim (measured concentrations) drives absolute neutrophil count (in 10^9 cells/L): indirect response — drug stimulates the production of absolute neutrophil count.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
 > Pegfilgrastim concentrations drive the absolute neutrophil count (ANC) via a transit-chain model that stimulates both the maturation and production rates of neutrophils. The paper specifies a base ANC of 2.70 (10^9 cells/L), an EC50 of 9.24 ng/mL, a maximum effect on the maturation rate of 102, and a maximum effect on the production rate of 109, without explicitly defining the mechanistic relationship of these parameters to specific rate constants like kin or kout in the provided text.
 >
@@ -50,54 +50,19 @@ Brekkan A et al., A Population Pharmacokinetic-Pharmacody…, The AAPS journal (
 </details>
 
 
-## Exposure-response model
-
-`Pegfilgrastim_Brekkan2018_PD_anc` — turnover (indirect response type III), `response = E0*(1 + Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 2.7 10 9 cells/L | — |
-| Emax | 102 | — |
-| EC50 | 9.24 ng/mL | 9.24e-06 kg/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 2.7, `at_EC50` = 140.4, `at_inf` = 278.1
-
-Deviations:
-
-- `defaulted_parameters` — gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response rises, as IDR-III predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
-
-Advisory:
-
-- defaulted: gamma (convention)
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 0.0622 | 109 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 0.477 | 9.24 | mismatch |
+| `gpt-oss-120b` | `parameters[Q320].value` | 0.0622 | 109 | mismatch |
+| `gpt-oss-120b` | `parameters[Q321].value` | 0.477 | 9.24 | mismatch |
 
 </details>
 
@@ -113,33 +78,19 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc/Pegfilgrastim_Brekkan2018_PD_anc_modelica.zip" download>Pegfilgrastim_Brekkan2018_PD_anc_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc/Pegfilgrastim_Brekkan2018_PD_anc_matlab.zip" download>Pegfilgrastim_Brekkan2018_PD_anc_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc/Pegfilgrastim_Brekkan2018_PD_anc_sbml.zip" download>Pegfilgrastim_Brekkan2018_PD_anc_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc/Pegfilgrastim_Brekkan2018_PD_anc_cellml.zip" download>Pegfilgrastim_Brekkan2018_PD_anc_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `Pegfilgrastim_Brekkan2018_PD_anc`. <https://pharmacolibrary.github.io/#/drugs/drug_pegfilgrastim/pd_Brekkan_2018_ANC>
-
-```bibtex
-@misc{pharmacolibrary_PegfilgrastimBrekkan2018PDanc,
-  title  = {{Pharmacolibrary model Pegfilgrastim_Brekkan2018_PD_anc}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_pegfilgrastim/pd_Brekkan_2018_ANC},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

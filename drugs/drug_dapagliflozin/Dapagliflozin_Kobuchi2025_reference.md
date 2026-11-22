@@ -40,7 +40,7 @@ Kobuchi S, Sakai S, Terada R, Kato KI, Hayakawa T, Sakaeda T. Population Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Kobuchi S, Sakai S, Terada R, Kato KI, Hayakawa T, Sakaeda T. Population Pharmac
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — dapagliflozin: t1/2z 16.1 day, kabs 57.4, V/F 73.9 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[t1/2hba1c].value`: this record has 16.1, the second reading 15.3; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t1/2hba1c].value`: this record has 16.1, the second reading 15.3; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -107,15 +107,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[t1/2hba1c].value` | 16.1 | 15.3 | mismatch |
-| `gpt-oss:120b` | `parameters[θbw].parameter_id` | Q900 | Q319 | mismatch |
-| `gpt-oss:120b` | `parameters[θbw].value` | 0.41 | 0.22 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2hba1c].value` | 16.1 | 15.3 | mismatch |
+| `gpt-oss-120b` | `parameters[θbw].parameter_id` | Q900 | Q319 | mismatch |
+| `gpt-oss-120b` | `parameters[θbw].value` | 0.41 | 0.22 | mismatch |
 
 </details>
 

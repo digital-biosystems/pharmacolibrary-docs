@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;gefitinib&quot;,&quot;href&quot;:&quot;drugs/drug_gefitinib/&quot;},{&quot;label&quot;:&quot;Xiong_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gefitinib_Xiong2022_reference&quot;,&quot;label&quot;:&quot;Xiong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gefitinib/Gefitinib_Xiong2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gefitinib_Xiong2022_reference&quot;,&quot;label&quot;:&quot;Xiong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gefitinib/Gefitinib_Xiong2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gefitinib — `Gefitinib_Xiong2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The gefitinib clearance of 20.4 L/h is mislabeled as tepotinib, and the absorption rate constant is missing, so the record relies on library defaults.
+> The record is rejected because the paper studies tepotinib, making the extracted apparent clearance of 20.4 L/h incorrect for gefitinib.
 
-<div class="pk-model-meta" hidden drug="gefitinib" model-id="Gefitinib_Xiong2022_reference" status="needs_review" stale="false" population="" measured-compound="gefitinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gefitinib" model-id="Gefitinib_Xiong2022_reference" status="rejected" stale="false" population="" measured-compound="gefitinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Xiong W, Papasouliotis O, Jonsson EN, Strotmann R, Girard P. Population pharmacokinetic analysis of tepotinib, an oral MET kinase inhibitor, including data from the VISION study. Cancer chemotherapy and pharmacology 89(5):655–669 (2022).
@@ -29,7 +29,7 @@ Xiong W, Papasouliotis O, Jonsson EN, Strotmann R, Girard P. Population pharmaco
 <figure class="pk-models-diagram"><img src="drugs/drug_gefitinib/Gefitinib_Xiong2022_reference/Gefitinib_Xiong2022_reference.svg" alt="Gefitinib_Xiong2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Xiong W, Papasouliotis O, Jonsson EN, Strotmann R, Girard P. Population pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Xiong W, Papasouliotis O, Jonsson EN, Strotmann R, Girard P. Population pharmaco
 
 ### Reviewer guidance
 
-**The gefitinib clearance of 20.4 L/h is mislabeled as tepotinib, and the absorption rate constant is missing, so the record relies on library defaults.**
+**The record is rejected because the paper studies tepotinib, making the extracted apparent clearance of 20.4 L/h incorrect for gefitinib.**
 
-The apparent clearance parameter is verbatim labeled 'Apparent CL for tepotinib' despite being assigned to gefitinib, creating a compound mismatch. The absorption rate constant (ka) was not reported in the source, so library defaults were used instead of paper-specific estimates. The second reader identified a discrepancy for the clearance value, recording 16.2 L/h instead of the 20.4 L/h in this record. The apparent volume of distribution was calculated as 941.7913 L using the provided half-life. Extracted — gefitinib: CL/F 20.4 L/h, V/F 942 L.
+Gefitinib appears only as a co-medication in the tepotinib study, with no disposition parameters reported for it. The clearance value of 20.4 L/h was taken from the wrong drug's data. A second reader disagreed with the extracted values, resulting in an agreement ratio of 0.455. Extracted — gefitinib: CL/F 20.4 L/h, V/F 942 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q22: this record has none, the second reading 20.4; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -124,15 +124,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=gefitinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | gefitinib (or metabolite) | paper about another drug |  | paper subject is not gefitinib: the paper is about another drug; this one is a co-medication or covariate: This is a human tepotinib population-PK study; gefitinib is only a co-medication, with no gefitinib disposition parameters reported. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=gefitinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,61 +145,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gefitinib/Gefitinib_Xiong2022_reference/Gefitinib_Xiong2022_reference_modelica.zip" download>Gefitinib_Xiong2022_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gefitinib/Gefitinib_Xiong2022_reference/Gefitinib_Xiong2022_reference_fmi.zip" download>Gefitinib_Xiong2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gefitinib/Gefitinib_Xiong2022_reference/Gefitinib_Xiong2022_reference_matlab.zip" download>Gefitinib_Xiong2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gefitinib/Gefitinib_Xiong2022_reference/Gefitinib_Xiong2022_reference_matlab_simbio.zip" download>Gefitinib_Xiong2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_gefitinib/Gefitinib_Xiong2022_reference/Gefitinib_Xiong2022_reference_sbml.zip" download>Gefitinib_Xiong2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_gefitinib/Gefitinib_Xiong2022_reference/Gefitinib_Xiong2022_reference_cellml.zip" download>Gefitinib_Xiong2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4469 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.00025 | kg |
-| input | model | `Cl` | 5.667e-06 | m3/s |
-| input | model | `VdPerKg` | 0.01345 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Xiong W, Papasouliotis O, Jonsson EN, Strotmann R, Girard P. Population pharmacokinetic analysis of tepotinib, an oral MET kinase inhibitor, including data from the VISION study. Cancer chemotherapy and pharmacology 89(5):655–669 (2022). [doi:10.1007/s00280-022-04423-5](https://doi.org/10.1007/s00280-022-04423-5)
-
-**This record:** Pharmacolibrary, model `Gefitinib_Xiong2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_gefitinib/Gefitinib_Xiong2022_reference>
-
-```bibtex
-@misc{pharmacolibrary_GefitinibXiong2022reference,
-  title  = {{Pharmacolibrary model Gefitinib_Xiong2022_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_gefitinib/Gefitinib_Xiong2022_reference},
-  note   = {Parameters from doi:10.1007/s00280-022-04423-5},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D03A&quot;,&quot;href&quot;:&quot;atc/D03A.md&quot;},{&quot;label&quot;:&quot;hyaluronic acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HyaluronicAcid_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HyaluronicAcid_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # hyaluronic acid
 
@@ -25,7 +25,7 @@ Hyaluronic acid is a glycosaminoglycan used to treat osteoarthritis of the knee,
 
 ## Start here
 
-> **Jeon_2013_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md?tab=Simulation) · [record](drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md)
+> **Jeon_2013_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md?tab=Simulation) · [record](drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,19 +33,9 @@ Hyaluronic acid is a glycosaminoglycan used to treat osteoarthritis of the knee,
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Jeon_2013_reference](drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Jeon S et al., Saturable human neopterin response to i…, Journal of translational me… (2013) | [10.1186/1479-5876-11-240](https://doi.org/10.1186/1479-5876-11-240) |
-| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Lebel_1989_reference](drugs/drug_hyaluronic_acid/HyaluronicAcid_Lebel1989_reference.md) | — | 1-compartment (no model) | 3 | Lebel L et al., A pharmacokinetic model of intravenousl…, Pharmaceutical research (1989) | [10.1023/a:1015982204926](https://doi.org/10.1023/a:1015982204926) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Jeon_2013_reference](drugs/drug_hyaluronic_acid/HyaluronicAcid_Jeon2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Jeon S et al., Saturable human neopterin response to i…, Journal of translational me… (2013) | [10.1186/1479-5876-11-240](https://doi.org/10.1186/1479-5876-11-240) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Lebel_1989_reference](drugs/drug_hyaluronic_acid/HyaluronicAcid_Lebel1989_reference.md) | — | 1-compartment (no model) | 3 | Lebel L et al., A pharmacokinetic model of intravenousl…, Pharmaceutical research (1989) | [10.1023/a:1015982204926](https://doi.org/10.1023/a:1015982204926) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Kim_2021_reference](drugs/drug_hyaluronic_acid/HyaluronicAcid_Kim2021_reference.md) | — | 2-compartment (no model) | 5 | Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021) | [10.3390/pharmaceutics13020203](https://doi.org/10.3390/pharmaceutics13020203) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hyaluronic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ABCC5 (substrate), C1QBP (binder), CD44 (binder), CEMIP2 (substrate), HABP2 (binder), HABP4 (binder), HAPLN1 (binder), HAPLN3 (binder), HMMR (binder), ICAM1 (binder), ICAM1 (inhibitor), IMPG2 (binder), LAYN (binder), LYVE1 (modulator), NCAN (binder), STAB2 (binder), TNFAIP6 (binder), VCAN (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,7 +55,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 62 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

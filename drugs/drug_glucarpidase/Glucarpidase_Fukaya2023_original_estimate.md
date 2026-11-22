@@ -4,11 +4,11 @@
 
 # glucarpidase — `Glucarpidase_Fukaya2023_original_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:16 UTC (Rejected), but the paper was screened again on 2026-10-07 19:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model uses a Michaelis-Menten hydrolysis link from methotrexate to DAMPA, but the population is healthy volunteers and patients, not enzyme kinetics.
+> Q1 has unit μmol instead of the required volume or clearance dimension.
 
-<div class="pk-model-meta" hidden drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_original_estimate" status="rejected" stale="true" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_original_estimate" status="rejected" stale="false" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></div>
 
 ## Citation
 Fukaya Y, Kimura T, Hamada Y, Yoshimura K, Hiraga H, Yuza Y et al. Development of a population pharmacokinetics and pharmacodynamics model of glucarpidase rescue treatment after high-dose methotrexate therapy. Frontiers in oncology 13:1003633 (2023).
@@ -44,7 +44,7 @@ Fukaya Y, Kimura T, Hamada Y, Yoshimura K, Hiraga H, Yuza Y et al. Development o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Fukaya Y, Kimura T, Hamada Y, Yoshimura K, Hiraga H, Yuza Y et al. Development o
 
 ### Reviewer guidance
 
-**The model uses a Michaelis-Menten hydrolysis link from methotrexate to DAMPA, but the population is healthy volunteers and patients, not enzyme kinetics.**
+**Q1 has unit μmol instead of the required volume or clearance dimension.**
 
-The structure links methotrexate to DAMPA via a Michaelis-Menten hydrolysis parameter, which is inconsistent with the study of glucarpidase dosing in humans. The second reader disagrees, suggesting the link should be from glucarpidase to methotrexate, reflecting enzyme-substrate kinetics rather than drug-metabolite. The dimension mismatch on a structural parameter further invalidates the current setup. Extracted — glucarpidase: CL 0.059 L/h, V 0.957 L, Q 0.0778 L/h, Km 86 μmol.
+The parameter Q1 (clearance) has unit μmol, which is a unit of amount, not mass per volume. This conflicts with the parameter's role as a clearance, which should have units of volume per time or volume. Additionally, there is disagreement on the primary analyte and the metabolic link, with the second reader identifying glucarpidase as the analyte and glucarpidase as the precursor metabolite. Extracted — glucarpidase: CL 0.059 L/h, V 0.957 L, Q 0.0778 L/h, Km 86 μmol.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has methotrexate, the second reading glucarpidase; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

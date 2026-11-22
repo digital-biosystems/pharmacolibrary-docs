@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Trofinetide bioavailability and lag time were left at library placeholders instead of using values reported in the study.
+> Bioavailability and lag time were not extracted from the paper, forcing the use of library defaults for trofinetide.
 
 <div class="pk-model-meta" hidden drug="trofinetide" model-id="Trofinetide_Darwish2025v2_reference" status="needs_review" stale="false" population="healthy volunteers and pediatric and adult patients with Rett syndrome, TBI, or fragile X syndrome" measured-compound="trofinetide" parameterization="mechanistic" topology="2C"></div>
 
@@ -64,9 +64,9 @@ Darwish M, Passarell J, Maxwell K, Bradley H, Bishop KM, Youakim JM. Population 
 
 ### Reviewer guidance
 
-**Trofinetide bioavailability and lag time were left at library placeholders instead of using values reported in the study.**
+**Bioavailability and lag time were not extracted from the paper, forcing the use of library defaults for trofinetide.**
 
-The record lists an absolute bioavailability of 0.832, yet the review indicates that F and Tlag were not extracted, so library placeholders were used instead of explicit estimates. This means the simulated profile relies on generic defaults for these parameters rather than values supported by the paper. Additionally, the record defines covariate effects such as age on volume, but these scenarios were not exercised during simulation. Extracted — trofinetide: CL 11.7 L/h, V1 25 L, Q 1.42 L/h, V2 35.4 L, kabs 0.394 1/h, Fab 0.832.
+The record lists an absolute bioavailability (Fab) value of 0.832, but the review explicitly flags the use of library defaults for F and Tlag instead of paper-supported estimates. Consequently, the simulated pharmacokinetic profile relies on unverified conventions rather than data specific to this study. A second reader also failed to verify the specific covariate exponents for weight, GFR, and age on clearance and volume of distribution. Extracted — trofinetide: CL 11.7 L/h, V1 25 L, Q 1.42 L/h, V2 35.4 L, kabs 0.394 1/h, Fab 0.832.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trofinetide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -208,15 +208,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=trofinetide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  | 0.009806 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=trofinetide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.71, 0 of 1 reader(s) agree | 0.71 | cross-check disputed by a second reader: verdict disputed, agreement 0.71, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  | 0.009806 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

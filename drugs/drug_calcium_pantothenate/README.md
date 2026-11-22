@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;calcium pantothenate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumPantothenate_de2022_reference&quot;,&quot;label&quot;:&quot;de_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_pantothenate/CalciumPantothenate_de2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumPantothenate_de2022_reference&quot;,&quot;label&quot;:&quot;de_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_pantothenate/CalciumPantothenate_de2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # calcium pantothenate
 
@@ -22,26 +22,12 @@ Calcium pantothenate is a vitamin preparation indicated for osteoporosis. It is 
 |---|---|---|---|---|---|---|
 | pantothenate | parent | — (mass units only) | — | — | — | — |
 
-## Start here
-
-> **de_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_calcium_pantothenate/CalciumPantothenate_de2022_reference.md?tab=Simulation) · [record](drugs/drug_calcium_pantothenate/CalciumPantothenate_de2022_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [de_2022_reference](drugs/drug_calcium_pantothenate/CalciumPantothenate_de2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Vries LE et al., Preclinical characterization and target…, Nature communications (2022) | [10.1038/s41467-022-29688-5](https://doi.org/10.1038/s41467-022-29688-5) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wittwer_1985_reference](drugs/drug_calcium_pantothenate/CalciumPantothenate_Wittwer1985_reference.md) | — | 1-compartment (no model) | 0 | Wittwer CT et al., Metabolism of pantethine in cystinosis, The Journal of clinical inv… (1985) | [10.1172/JCI112152](https://doi.org/10.1172/JCI112152) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=calcium_pantothenate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [de_2022_reference](drugs/drug_calcium_pantothenate/CalciumPantothenate_de2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Vries LE et al., Preclinical characterization and target…, Nature communications (2022) | [10.1038/s41467-022-29688-5](https://doi.org/10.1038/s41467-022-29688-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +41,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 07:47 | 10:48 | 1/1/0 | 0/0/0 | 0/0/0 | 235,758/20,880 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 4/26 | 17/1 | 0 |
+| 2026-10-05 07:47 | 10:48 | 0/2/0 | 0/0/0 | 0/0/0 | 235,758/20,880 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 4/26 | 17/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 140 matched, 97 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

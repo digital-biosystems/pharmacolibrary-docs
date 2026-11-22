@@ -15,7 +15,7 @@ Matteo RS, Lieberman IG, Salanitre E, McDaniel DD, Diaz J. Distribution, elimina
 
 ## Population and dosing
 
-**Population:** neonates, infants, children, and adults · condition healthy · age group mixed · n = ..
+**Population:** neonates, infants, children, and adults · condition healthy · age group mixed.
 
 ## Model
 

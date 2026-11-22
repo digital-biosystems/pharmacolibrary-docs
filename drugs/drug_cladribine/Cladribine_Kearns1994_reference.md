@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/&quot;},{&quot;label&quot;:&quot;Kearns_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cladribine — `Cladribine_Kearns1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 16:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Renal clearance value of 317.9 mL/min/m² contradicts total clearance of 39.4 L/h/m², violating mass balance constraints.
+> The record was rejected because the extracted steady-state concentration value of 37.7 nM has incompatible physical dimensions.
 
-<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Kearns1994_reference" status="rejected" stale="true" population="children with acute leukemia" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Kearns1994_reference" status="rejected" stale="false" population="children with acute leukemia" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kearns CM, Blakley RL, Santana VM, Crom WR. Pharmacokinetics of cladribine (2-chlorodeoxyadenosine) in children with acute leukemia. Cancer research 54(5):1235–1239 (1994).
@@ -39,7 +39,7 @@ Kearns CM, Blakley RL, Santana VM, Crom WR. Pharmacokinetics of cladribine (2-ch
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Kearns CM, Blakley RL, Santana VM, Crom WR. Pharmacokinetics of cladribine (2-ch
 
 ### Reviewer guidance
 
-**Renal clearance value of 317.9 mL/min/m² contradicts total clearance of 39.4 L/h/m², violating mass balance constraints.**
+**The record was rejected because the extracted steady-state concentration value of 37.7 nM has incompatible physical dimensions.**
 
-The extracted renal clearance exceeds the total clearance by an order of magnitude, which is physiologically impossible for a single elimination pathway. The record was built from the abstract alone, so these summary statistics were treated as model parameters without full contextual validation. A second reader noted discrepancies in dose and renal clearance values, suggesting potential extraction errors from the sparse abstract data. Extracted — cladribine: CL 39.4 liters/h/m2, Css 37.7 nM, t1/2z 19.7 h, Vss 357 liters/m2, CLR 318 ml/min/m2, V 1.25e+03 L.
+The dimension check failed because the unit nanomolar implies molarity, which conflicts with the expected volume dimension for this parameter. Since the model was built from the abstract alone, these summary statistics stand in for a fitted model. The record incorrectly lists the concentration as a structural parameter with dimension mismatch. Extracted — cladribine: CL 39.4 liters/h/m2, Css 37.7 nM, t1/2z 19.7 h, Vss 357 liters/m2, CLR 318 ml/min/m2, V 1.25e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cladribine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

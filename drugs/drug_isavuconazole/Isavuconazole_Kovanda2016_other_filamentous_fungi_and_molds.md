@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Isavuconazole ka and Tlag are missing, forcing library defaults, while absolute bioavailability is reported as 96.9%.
+> The isavuconazole record was held back because absorption rate constant and lag time were unreported, leaving the model with no specific estimates for the absorption phase.
 
 <div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds" status="needs_review" stale="false" population="patients with invasive fungal disease" measured-compound="isavuconazole" parameterization="apparent" topology="1C"></div>
 
@@ -53,9 +53,9 @@ Kovanda LL, Desai AV, Lu Q, Townsend RW, Akhtar S, Bonate P et al. Isavuconazole
 
 ### Reviewer guidance
 
-**Isavuconazole ka and Tlag are missing, forcing library defaults, while absolute bioavailability is reported as 96.9%.**
+**The isavuconazole record was held back because absorption rate constant and lag time were unreported, leaving the model with no specific estimates for the absorption phase.**
 
-The record lists apparent clearance (2.2 L/h), volume (344.2 L), and absolute bioavailability (96.9%), but lacks estimates for absorption rate (ka) and lag time (Tlag). Consequently, the model relies on placeholder values for these absorption parameters rather than data from Kovanda_2016. The apparent parameterization combined with absolute bioavailability creates an inconsistency in the dosing assumption. Extracted — isavuconazole: CLm/F 2.2 L/h, V 344 L, Fab 96.9.
+The record provides apparent clearance (2.2 L/h), volume of distribution (344.2 L), and bioavailability (96.9%) for isavuconazole. However, the absorption rate constant and lag time are absent from the source data. Consequently, the simulation relies on generic placeholder values for absorption rather than parameters derived from this study. Extracted — isavuconazole: CLm/F 2.2 L/h, V 344 L, Fab 96.9.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -137,15 +137,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=isavuconazole) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=isavuconazole) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

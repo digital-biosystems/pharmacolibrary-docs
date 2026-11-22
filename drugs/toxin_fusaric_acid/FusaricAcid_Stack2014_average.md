@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fusaric Acid&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/&quot;},{&quot;label&quot;:&quot;Stack_2014 \u00b7 average&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusaricAcid_Stack2014_reference&quot;,&quot;label&quot;:&quot;Stack_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusaricAcid_Stack2014_reference&quot;,&quot;label&quot;:&quot;Stack_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusaric_acid/FusaricAcid_Stack2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record was refused because the Cmax of 290 µM for fusaric acid has a unit dimension incompatible with mass concentration.
 
 <div class="pk-model-meta" hidden drug="Fusaric Acid" model-id="FusaricAcid_Stack2014_average" status="rejected" stale="false" population="Male Sprague-Dawley rats" measured-compound="Fusaric Acid" parameterization="apparent" topology="2C"></div>
 
@@ -54,7 +54,13 @@ Stack BC, Ye J, Willis R, Hubbard M, Hendrickson HP. Determination of oral bioav
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record was refused because the Cmax of 290 µM for fusaric acid has a unit dimension incompatible with mass concentration.**
+
+The Cmax value of 290 µM was flagged for a unit dimension conflict, as micromolar concentration does not align with the required mass-per-volume dimension. Consequently, the unit could not be converted to SI units, preventing proper model construction. No other parameter values are cited as causes for the rejection. Extracted — fusaric acid: t1/2β 33 min, t1/2z 24 min, V 251 ml/kg, V/F 182 ml/kg, CL 5.4 ml/min/kg, tmax 19 min, Cmax 290 µM, AUC 2.64e+04 mol-min/L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

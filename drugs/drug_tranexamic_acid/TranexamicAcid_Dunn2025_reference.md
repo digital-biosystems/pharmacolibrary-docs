@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;tranexamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/&quot;},{&quot;label&quot;:&quot;Dunn_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_reference&quot;,&quot;label&quot;:&quot;Gilliot_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_2021_maximum_lysis&quot;,&quot;label&quot;:&quot;Li_2021 \u00b7 maximum lysis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Li_2021_maximum_lysis.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zufferey_2021_postoperative_blood_loss&quot;,&quot;label&quot;:&quot;Zufferey_2021 \u00b7 postoperative blood loss&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Zufferey_2021_postoperative_blood_loss.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_reference&quot;,&quot;label&quot;:&quot;Gilliot_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TranexamicAcid_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_2021_maximum_lysis&quot;,&quot;label&quot;:&quot;Li_2021 \u00b7 maximum lysis&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Li_2021_maximum_lysis.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zufferey_2021_postoperative_blood_loss&quot;,&quot;label&quot;:&quot;Zufferey_2021 \u00b7 postoperative blood loss&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/pd_Zufferey_2021_postoperative_blood_loss.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The tranexamic acid model was rejected because a compartment in the two-compartment structure has no path from the dose.
+> The two-compartment model for tranexamic acid was rejected because one compartment has no path from the dose, despite defined parameters.
 
 <div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Dunn2025_reference" status="rejected" stale="false" population="pregnant individuals" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -43,7 +43,7 @@ Dunn A, Felfeli M, Seifert SM, Gilliot S, Ducloy-Bouthors AS, Shakur-Still H et 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.467). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.467). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +53,11 @@ Dunn A, Felfeli M, Seifert SM, Gilliot S, Ducloy-Bouthors AS, Shakur-Still H et 
 
 ### Reviewer guidance
 
-**The tranexamic acid model was rejected because a compartment in the two-compartment structure has no path from the dose.**
+**The two-compartment model for tranexamic acid was rejected because one compartment has no path from the dose, despite defined parameters.**
 
-The structure describes a two-compartment model, but one compartment was identified as unreachable or orphaned. Consequently, there is no defined flow from the dose site to that compartment. The second reader's disagreements on parameter naming and the missing absorption rate constant value do not resolve this structural issue. Extracted — tranexamic acid: CLb 8.59 L/h, V1 10.7 L, Qb 28.9 L/h, V2 15 L, tlag 0.16 h.
+The review identified an unreachable or orphan compartment, meaning part of the two-compartment structure is disconnected from the administration site. The record defines central and peripheral volumes of distribution along with a blood flow rate, yet the topology fails to link all components. This structural flaw prevents valid simulation of drug distribution, leading to the rejection of the model for the pregnant population. Extracted — tranexamic acid: CLb 8.59 L/h, V1 10.7 L, Qb 28.9 L/h, V2 15 L, tlag 0.16 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -126,20 +126,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.467 (7/15 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.467 (7/15 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl b].covariate_forms` | ['linear_fractional', 'linear_fractional'] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[kaoral]` |  | 0.18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q22_weight]` |  | 0.89 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q61_weight]` |  | 0.44 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[weight_on_cl_and_q]` | 0.89 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[weight_on_vc_and_vp]` | 0.44 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | tranexamic acid | tranexamic_acid | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | tranexamic acid | tranexamic_acid | mismatch |
+| `gpt-oss-120b` | `parameters[cl b].covariate_forms` | ['linear_fractional', 'linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[kaoral]` |  | 0.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_weight]` |  | 0.89 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_weight]` |  | 0.44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_on_cl_and_q]` | 0.89 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_on_vc_and_vp]` | 0.44 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tranexamic acid | tranexamic_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tranexamic acid | tranexamic_acid | mismatch |
 
 </details>
 

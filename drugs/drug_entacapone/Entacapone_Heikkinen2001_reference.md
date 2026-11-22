@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> No absorption lag value was extracted for entacapone, so a placeholder was used in the abstract-only model.
+> Entacapone bioavailability, AUC, Cmax, and clearance were omitted from the record, causing a cross-check dispute.
 
 <div class="pk-model-meta" hidden drug="entacapone" model-id="Entacapone_Heikkinen2001_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="entacapone" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Heikkinen H, Saraheimo M, Antila S, Ottoila P, Pentikäinen PJ. Pharmacokinetics
 
 ### Reviewer guidance
 
-**No absorption lag value was extracted for entacapone, so a placeholder was used in the abstract-only model.**
+**Entacapone bioavailability, AUC, Cmax, and clearance were omitted from the record, causing a cross-check dispute.**
 
-Because only the paper's abstract was read, summary statistics like Cmax 457 ng/ml and AUC 409 mg·h/L replaced fitted model parameters. The absorption time lag (Tlag) was not extracted, leaving it at a placeholder value rather than an explicit estimate. A second reader also disagreed on whether the primary analyte was specifically 13C-entacapone. Extracted — entacapone: V 0.08 l/kg, Vss 0.27 l/kg, CL 11.7 ml/min kg(-1), AUC 409 mg·h/L, tmax 0.9 h, Cmax 457 ng/ml, fe 38.1 %, Fab 25 %, … (+1).
+The record lists bioavailability as 25%, AUC as 409 mg·h/L, Cmax as 457 ng/ml, and clearance as 11.7 ml/min kg(-1). However, the second reader noted these values were null in the review record. This discrepancy resulted in a verdict dispute with an agreement ratio of 0.182. The primary analyte was also disputed, with the second reader identifying 13C-entacapone. Extracted — entacapone: V 0.08 l/kg, Vss 0.27 l/kg, CL 11.7 ml/min kg(-1), AUC 409 mg·h/L, tmax 0.9 h, Cmax 457 ng/ml, fe 38.1 %, Fab 25 %, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has entacapone, the second reading 13C-entacapone; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -167,14 +167,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=entacapone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev1: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=entacapone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

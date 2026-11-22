@@ -49,7 +49,7 @@ Entecavir is an antiviral medication in the nucleoside reverse transcriptase inh
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:43 | 11:11 | 1/0/0 | 3/0/0 | 0/0/0 | 357,987/50,175 | openai / gpt-6-luna | 10 | 2/8 | 9/1 | 0 |
+| 2026-10-07 15:43 | 11:11 | 1/0/0 | 4/0/0 | 0/0/0 | 357,987/50,175 | openai / gpt-6-luna | 10 | 2/8 | 9/1 | 0 |
 
 ## Coverage
 

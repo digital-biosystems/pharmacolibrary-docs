@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;L-Dopa&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/&quot;},{&quot;label&quot;:&quot;Bergquist_2022 \u00b7 lcig_intestinal&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LDopa_Bergquist2022_diz101_i_v&quot;,&quot;label&quot;:&quot;Bergquist_2022_diz101_i_v&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_Bergquist2022_diz101_i_v.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_Bergquist2022_lcig_intestinal&quot;,&quot;label&quot;:&quot;Bergquist_2022_lcig_intestinal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_Bergquist2022_lcig_intestinal.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;LDopa_LeWitt2023v2_fasted&quot;,&quot;label&quot;:&quot;LeWitt_2023_2_fasted&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2023v2_fasted.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2023v2_fed&quot;,&quot;label&quot;:&quot;LeWitt_2023_2_fed&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2023v2_fed.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2023v2_sprinkled_on_applesauce&quot;,&quot;label&quot;:&quot;LeWitt_2023_2_sprinkled_on_applesauce&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2023v2_sprinkled_on_applesauce.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2022_regimen&quot;,&quot;label&quot;:&quot;LeWitt_2022_regimen&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2022_regimen.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2022_study_002&quot;,&quot;label&quot;:&quot;LeWitt_2022_study_002&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2022_study_002.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2022_study_003&quot;,&quot;label&quot;:&quot;LeWitt_2022_study_003&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2022_study_003.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2022_study_004&quot;,&quot;label&quot;:&quot;LeWitt_2022_study_004&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2022_study_004.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;LDopa_Bergquist2022_diz101_i_v&quot;,&quot;label&quot;:&quot;Bergquist_2022_diz101_i_v&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_Bergquist2022_diz101_i_v.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_Bergquist2022_lcig_intestinal&quot;,&quot;label&quot;:&quot;Bergquist_2022_lcig_intestinal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_Bergquist2022_lcig_intestinal.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;LDopa_LeWitt2022_regimen&quot;,&quot;label&quot;:&quot;LeWitt_2022_regimen&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2022_regimen.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2022_study_002&quot;,&quot;label&quot;:&quot;LeWitt_2022_study_002&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2022_study_002.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2022_study_003&quot;,&quot;label&quot;:&quot;LeWitt_2022_study_003&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2022_study_003.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2022_study_004&quot;,&quot;label&quot;:&quot;LeWitt_2022_study_004&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2022_study_004.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2023v2_fasted&quot;,&quot;label&quot;:&quot;LeWitt_2023_2_fasted&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2023v2_fasted.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2023v2_fed&quot;,&quot;label&quot;:&quot;LeWitt_2023_2_fed&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2023v2_fed.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;LDopa_LeWitt2023v2_sprinkled_on_applesauce&quot;,&quot;label&quot;:&quot;LeWitt_2023_2_sprinkled_on_applesauce&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_l_dopa/LDopa_LeWitt2023v2_sprinkled_on_applesauce.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # L-Dopa — `LDopa_Bergquist2022_lcig_intestinal`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 17, model 0.0902); the model does not reproduce the paper's peak concentration (Cmax).
 
-<div class="pk-model-meta" hidden drug="L-Dopa" model-id="LDopa_Bergquist2022_lcig_intestinal" status="extracted" stale="false" population="Patients with advanced Parkinson disease" measured-compound="Levodopa" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="L-Dopa" model-id="LDopa_Bergquist2022_lcig_intestinal" status="needs_review" stale="false" population="Patients with advanced Parkinson disease" measured-compound="Levodopa" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Bergquist F, Ehrnebo M, Nyholm D, Johansson A, Lundin F, Odin P et al. Pharmacokinetics of Intravenously (DIZ101), Subcutaneously (DIZ102), and Intestinally (LCIG) Infused Levodopa in Advanced Parkinson Disease. Neurology 99(10):e965–e976 (2022).
@@ -29,6 +29,8 @@ Bergquist F, Ehrnebo M, Nyholm D, Johansson A, Lundin F, Odin P et al. Pharmacok
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | tmax (h) median (min, max) | tmax | 4.500 | h |
@@ -36,7 +38,7 @@ Bergquist F, Ehrnebo M, Nyholm D, Johansson A, Lundin F, Odin P et al. Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +46,13 @@ Bergquist F, Ehrnebo M, Nyholm D, Johansson A, Lundin F, Odin P et al. Pharmacok
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's time of the peak (tmax) (paper 17, model 0.0902); the model does not reproduce the paper's peak concentration (Cmax).**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — l dopa: tmax 4.5 h, t1/2z 9 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -90,6 +98,27 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q56 | pass | [time] |  | ['Bergquist_2022_table_1:row1:col2'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bergquist_2022:discussion_prose'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Levodopa) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped |  | 0.9972 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.9972 |  | non-numeric value |
+| T1_cmax | reference | fail | 0.007344 | 0.9972 | 135.8 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.007133 | 0.9972 | 139.8 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.007072 | 0.9972 | 141 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped |  | 9 |  | non-numeric value |
+| T1_t_half_terminal | reference | skipped |  | 9 |  | non-numeric value |
+| T1_t_half_terminal | reference | skipped | 9 | 9 |  | unresolved time unit '% longer' |
+| T1_tmax | reference | fail | 17 | 0.09018 | 0.0053 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

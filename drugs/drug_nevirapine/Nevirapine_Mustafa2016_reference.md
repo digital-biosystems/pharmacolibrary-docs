@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and absorption lag time lack paper-derived estimates, forcing reliance on standard assumptions unsupported by the reported nevirapine clearance, absorption, and volume data.
+> Nevirapine oral bioavailability and absorption lag time were not reported, so placeholder values were used for the one-compartment model.
 
 <div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Mustafa2016_reference" status="needs_review" stale="false" population="HIV-infected Malaysian patients" measured-compound="nevirapine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Mustafa S, Yusuf WN, Woillard JB, Choon TS, Hassan NB. Population pharmacokineti
 
 ### Reviewer guidance
 
-**Bioavailability and absorption lag time lack paper-derived estimates, forcing reliance on standard assumptions unsupported by the reported nevirapine clearance, absorption, and volume data.**
+**Nevirapine oral bioavailability and absorption lag time were not reported, so placeholder values were used for the one-compartment model.**
 
-The record relies on abstract summary statistics for clearance (2.92 L/h), absorption rate (2.55 /h), and volume (78.23 L) instead of fitted model values. Bioavailability and absorption lag time were assigned generic placeholder values because no explicit estimates were extracted from the source. This creates a mismatch where key parameters remain default assumptions rather than being justified by the specific study data. Extracted — nevirapine: CL 2.92 L/h, kabs 2.55 /h, V 78.2 L.
+The record lists median clearance (2.92 L/h), absorption rate (2.55 /h), and volume (78.23 L), but lacks estimates for bioavailability and lag time. Since the source was abstract-only, these missing parameters were filled with library defaults rather than paper-specific data. A second reader disagreed with the parameter assignments and identified the dose compound as unknown. Extracted — nevirapine: CL 2.92 L/h, kabs 2.55 /h, V 78.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nevirapine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -133,14 +133,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=nevirapine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=nevirapine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

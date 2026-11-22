@@ -4,11 +4,11 @@
 
 # mangafodipir — `Mangafodipir_Hirt2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 19:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance of mangafodipir was assigned units of liters instead of liters per hour.
+> The intercompartmental clearance unit was recorded as liters instead of liters per hour, conflicting with the required dimension.
 
-<div class="pk-model-meta" hidden drug="mangafodipir" model-id="Mangafodipir_Hirt2009_reference" status="rejected" stale="true" population="patients with acute alcoholic hepatitis" measured-compound="manganese" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="mangafodipir" model-id="Mangafodipir_Hirt2009_reference" status="rejected" stale="false" population="patients with acute alcoholic hepatitis" measured-compound="manganese" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Hirt D, Richardet JP, Urien S, Poupon J, Sogni P, Batteux F et al. Pharmacokinetic-pharmacodynamic modeling of manganese after a single intravenous infusion of mangafodipir in patients with acute alcoholic hepatitis. Therapeutic drug monitoring 31(5):557–565 (2009).
@@ -40,7 +40,7 @@ Hirt D, Richardet JP, Urien S, Poupon J, Sogni P, Batteux F et al. Pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Hirt D, Richardet JP, Urien S, Poupon J, Sogni P, Batteux F et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**The intercompartmental clearance of mangafodipir was assigned units of liters instead of liters per hour.**
+**The intercompartmental clearance unit was recorded as liters instead of liters per hour, conflicting with the required dimension.**
 
-The intercompartmental clearance is recorded as 27.3 L, which is a dimension mismatch for a rate parameter. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. A second reader disagreed with the extracted values, leaving the central volume, clearance, and intercompartmental clearance null. Extracted — mangafodipir: CLm/F 23.1 L/h, V1 35.4 L, V2 1.09e+03 L, Q 27.3 L; manganese: MTT 3.8 days.
+The intercompartmental clearance between the central and peripheral compartments was reported as 27.3 L, but the parameter dimension requires volume per time. Additionally, the record relied on abstract-only summary statistics for mangafodipir and manganese, meaning the values stand in for a fitted model. Extracted — mangafodipir: CLm/F 23.1 L/h, V1 35.4 L, V2 1.09e+03 L, Q 27.3 L; manganese: MTT 3.8 days.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of central volume of distribution: this record has 35.4, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 

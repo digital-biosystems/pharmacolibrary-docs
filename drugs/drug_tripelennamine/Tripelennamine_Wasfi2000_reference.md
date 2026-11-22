@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D04A&quot;,&quot;href&quot;:&quot;atc/D04A.md&quot;},{&quot;label&quot;:&quot;tripelennamine&quot;,&quot;href&quot;:&quot;drugs/drug_tripelennamine/&quot;},{&quot;label&quot;:&quot;Wasfi_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tripelennamine_Wasfi2000_reference&quot;,&quot;label&quot;:&quot;Wasfi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tripelennamine_Wasfi2000_reference&quot;,&quot;label&quot;:&quot;Wasfi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tripelennamine — `Tripelennamine_Wasfi2000_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-<div class="pk-model-meta" hidden drug="tripelennamine" model-id="Tripelennamine_Wasfi2000_reference" status="simulated" stale="false" population="horses and camels" measured-compound="tripelennamine" parameterization="mechanistic" topology="1C"></div>
+> The second reader disputed the mapping of camel clearance and the extraction of the 1.75 L/kg central compartment volume.
+
+<div class="pk-model-meta" hidden drug="tripelennamine" model-id="Tripelennamine_Wasfi2000_reference" status="needs_review" stale="false" population="horses and camels" measured-compound="tripelennamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wasfi IA, Abdel Hadi AA, Elghazali M, Boni NS, Alkatheeri NA, Barezaig IM et al. Comparative disposition of tripelennamine in horses and camels after intravenous administration. Journal of veterinary pharmacology and therapeutics 23(3):145–152 (2000).
@@ -29,6 +31,8 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Boni NS, Alkatheeri NA, Barezaig IM et al.
 <figure class="pk-models-diagram"><img src="drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference/Tripelennamine_Wasfi2000_reference.svg" alt="Tripelennamine_Wasfi2000_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | terminal elimination half-lives (camels) | t1/2z | 2.39 | h |
@@ -39,7 +43,7 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Boni NS, Alkatheeri NA, Barezaig IM et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +53,13 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Boni NS, Alkatheeri NA, Barezaig IM et al.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The second reader disputed the mapping of camel clearance and the extraction of the 1.75 L/kg central compartment volume.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the paper's abstract, so the reported summary statistics stand in for a fitted model. The second reader disagreed with the identity of the total body clearance parameter for camels and contested the presence of the central compartment volume parameter. A second reader also assigned the value 1.75 to a different central compartment volume field, creating conflicting parameter records. Extracted — tripelennamine: t1/2z 2.39 h, CL 0.97 L/h/kg, CLb 0.84 L/h/kg, Vss 2.87 L/kg, V 1.75 L/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[total body clearances].parameter_id`: this record has Q22, the second reading Q54; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -134,14 +138,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=tripelennamine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=tripelennamine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

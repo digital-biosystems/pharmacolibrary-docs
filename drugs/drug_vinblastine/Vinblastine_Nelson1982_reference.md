@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Nelson_1982 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Nelson1982_vinblastine&quot;,&quot;label&quot;:&quot;Nelson_1982_vinblastine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Nelson1982_vinblastine.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Lu1983_reference&quot;,&quot;label&quot;:&quot;Lu_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Malik2016_reference&quot;,&quot;label&quot;:&quot;Malik_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Malik2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Nelson1982_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 14:50 UTC (Needs review), but the paper was screened again on 2026-11-04 18:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Vinblastine's clearance lacked an extracted value, so a library placeholder stood in, causing the model to be held back.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Nelson1982_reference" status="extracted" stale="true" population="patients with cancer" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Nelson1982_reference" status="model_quarantined" stale="false" population="patients with cancer" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nelson RL. The comparative clinical pharmacology and pharmacokinetics of vindesine, vincristine, and vinblastine in human patients with cancer. Medical and pediatric oncology 10(2):115–127 (1982).
@@ -23,12 +23,14 @@ Nelson RL. The comparative clinical pharmacology and pharmacokinetics of vindesi
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 9 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | k₁₂ (hr⁻¹) | k12 | 4.42 | hr⁻¹ |
@@ -43,7 +45,7 @@ Nelson RL. The comparative clinical pharmacology and pharmacokinetics of vindesi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +55,13 @@ Nelson RL. The comparative clinical pharmacology and pharmacokinetics of vindesi
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Vinblastine's clearance lacked an extracted value, so a library placeholder stood in, causing the model to be held back.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — vinblastine: k12 4.42 hr⁻¹, k21 0.829 hr⁻¹, k13 1.25 hr⁻¹, k31 0.07 hr⁻¹, ki0 0.085 hr⁻¹, V 0.328 liter/kg, t1/2α 0.077 hr, t1/2β 2.27 hr, … (+1).
+The record lists rate constants for a two-compartment model and a volume of distribution, but omits any estimate for vinblastine's systemic clearance. Because no clearance value was available, the model builder defaulted this parameter to a standard placeholder rather than using a specific number. This substitution prevented the record from meeting publication standards, resulting in its quarantine rather than rejection for incorrect values. Extracted — vinblastine: k12 4.42 hr⁻¹, k21 0.829 hr⁻¹, k13 1.25 hr⁻¹, k31 0.07 hr⁻¹, ki0 0.085 hr⁻¹, V 0.328 liter/kg, t1/2α 0.077 hr, t1/2β 2.27 hr, … (+1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vinblastine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -71,9 +73,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | k₃₁ (hr⁻¹) | `Q304` · k31 | 0.070 | hr⁻¹ | 1.944e-05 | 1/s | 1/h | exact (1) | Nelson_1982_table_2:row0:col4, Nelson_1982_table_2:row1:col4, Nelson_1982_table_2:row2:col4, Nelson_1982_table_2:row3:col4, Nelson_1982_table_2:row4:col4, Nelson_1982_table_2:row5:col4, Nelson_1982_table_2:row6:col4, Nelson_1982_table_2:row7:col4, Nelson_1982_table_2:row8:col4, Nelson_1982_table_2:row9:col4, Nelson_1982_table_2:row10:col4, Nelson_1982_table_3:row0:col4, Nelson_1982_table_3:row1:col4, Nelson_1982_table_3:row2:col4, Nelson_1982_table_3:row3:col4, Nelson_1982_table_3:row4:col4, Nelson_1982_table_3:row5:col4 |
 | k₂₀ (hr⁻¹) | `Q373` · ki0 | 0.085 | hr⁻¹ | 2.361e-05 | 1/s | 1/h | exact (1) | Nelson_1982_table_2:row0:col5, Nelson_1982_table_2:row1:col5, Nelson_1982_table_2:row2:col5, Nelson_1982_table_2:row3:col5, Nelson_1982_table_2:row4:col5, Nelson_1982_table_2:row5:col5, Nelson_1982_table_2:row6:col5, Nelson_1982_table_2:row7:col5, Nelson_1982_table_2:row8:col5, Nelson_1982_table_2:row9:col5, Nelson_1982_table_2:row10:col5, Nelson_1982_table_3:row0:col5, Nelson_1982_table_3:row1:col5, Nelson_1982_table_3:row2:col5, Nelson_1982_table_3:row3:col5, Nelson_1982_table_3:row4:col5, Nelson_1982_table_3:row5:col5 |
 | Vc (liter/kg) | `Q61` · V | 0.328 | liter/kg | 0.02296 | m3 | l/kg | exact (1) | Nelson_1982_table_2:row0:col6, Nelson_1982_table_2:row1:col6, Nelson_1982_table_2:row2:col6, Nelson_1982_table_2:row3:col6, Nelson_1982_table_2:row4:col6, Nelson_1982_table_2:row5:col6, Nelson_1982_table_2:row6:col6, Nelson_1982_table_2:row7:col6, Nelson_1982_table_2:row8:col6, Nelson_1982_table_2:row9:col6, Nelson_1982_table_2:row10:col6, Nelson_1982_table_3:row0:col6, Nelson_1982_table_3:row1:col6, Nelson_1982_table_3:row2:col6, Nelson_1982_table_3:row3:col6, Nelson_1982_table_3:row4:col6, Nelson_1982_table_3:row5:col6 |
-| t₁/₂α (hr) | `Q59` · t1/2α | 0.077 | hr | 277.2 | s | h | exact (1) | Nelson_1982_table_2:row0:col7, Nelson_1982_table_2:row1:col7, Nelson_1982_table_2:row2:col7, Nelson_1982_table_2:row3:col7, Nelson_1982_table_2:row4:col7, Nelson_1982_table_2:row5:col7, Nelson_1982_table_2:row6:col7, Nelson_1982_table_2:row7:col7, Nelson_1982_table_2:row8:col7, Nelson_1982_table_2:row9:col7, Nelson_1982_table_2:row10:col7, Nelson_1982_table_3:row0:col7, Nelson_1982_table_3:row1:col7, Nelson_1982_table_3:row2:col7, Nelson_1982_table_3:row3:col7, Nelson_1982_table_3:row4:col7, Nelson_1982_table_3:row5:col7 |
-| t₁/₂β (hr) | `Q60` · t1/2β | 2.27 | hr | 8172 | s | h | exact (1) | Nelson_1982_table_2:row0:col8, Nelson_1982_table_2:row1:col8, Nelson_1982_table_2:row2:col8, Nelson_1982_table_2:row3:col8, Nelson_1982_table_2:row4:col8, Nelson_1982_table_2:row5:col8, Nelson_1982_table_2:row6:col8, Nelson_1982_table_2:row7:col8, Nelson_1982_table_2:row8:col8, Nelson_1982_table_2:row9:col8, Nelson_1982_table_2:row10:col8, Nelson_1982_table_3:row0:col8, Nelson_1982_table_3:row1:col8, Nelson_1982_table_3:row2:col8, Nelson_1982_table_3:row3:col8, Nelson_1982_table_3:row4:col8, Nelson_1982_table_3:row5:col8 |
-| t₁/₂γ (hr) | `Q89` · t1/2γ | 85.0 | hr | 3.06e+05 | s | h | exact (1) | Nelson_1982_table_2:row0:col9, Nelson_1982_table_2:row1:col9, Nelson_1982_table_2:row2:col9, Nelson_1982_table_2:row3:col9, Nelson_1982_table_2:row4:col9, Nelson_1982_table_2:row5:col9, Nelson_1982_table_2:row6:col9, Nelson_1982_table_2:row7:col9, Nelson_1982_table_2:row8:col9, Nelson_1982_table_2:row9:col9, Nelson_1982_table_2:row10:col9, Nelson_1982_table_3:row0:col9, Nelson_1982_table_3:row1:col9, Nelson_1982_table_3:row2:col9, Nelson_1982_table_3:row3:col9, Nelson_1982_table_3:row4:col9, Nelson_1982_table_3:row5:col9 |
+| t₁/₂α (hr) | `Q59` · t1/2α | 0.077 | hr | 277.2 | s | h | half_life_rule (0.95) | Nelson_1982_table_2:row0:col7, Nelson_1982_table_2:row1:col7, Nelson_1982_table_2:row2:col7, Nelson_1982_table_2:row3:col7, Nelson_1982_table_2:row4:col7, Nelson_1982_table_2:row5:col7, Nelson_1982_table_2:row6:col7, Nelson_1982_table_2:row7:col7, Nelson_1982_table_2:row8:col7, Nelson_1982_table_2:row9:col7, Nelson_1982_table_2:row10:col7, Nelson_1982_table_3:row0:col7, Nelson_1982_table_3:row1:col7, Nelson_1982_table_3:row2:col7, Nelson_1982_table_3:row3:col7, Nelson_1982_table_3:row4:col7, Nelson_1982_table_3:row5:col7 |
+| t₁/₂β (hr) | `Q60` · t1/2β | 2.27 | hr | 8172 | s | h | half_life_rule (0.95) | Nelson_1982_table_2:row0:col8, Nelson_1982_table_2:row1:col8, Nelson_1982_table_2:row2:col8, Nelson_1982_table_2:row3:col8, Nelson_1982_table_2:row4:col8, Nelson_1982_table_2:row5:col8, Nelson_1982_table_2:row6:col8, Nelson_1982_table_2:row7:col8, Nelson_1982_table_2:row8:col8, Nelson_1982_table_2:row9:col8, Nelson_1982_table_2:row10:col8, Nelson_1982_table_3:row0:col8, Nelson_1982_table_3:row1:col8, Nelson_1982_table_3:row2:col8, Nelson_1982_table_3:row3:col8, Nelson_1982_table_3:row4:col8, Nelson_1982_table_3:row5:col8 |
+| t₁/₂γ (hr) | `Q89` · t1/2γ | 85.0 | hr | 3.06e+05 | s | h | half_life_rule (0.95) | Nelson_1982_table_2:row0:col9, Nelson_1982_table_2:row1:col9, Nelson_1982_table_2:row2:col9, Nelson_1982_table_2:row3:col9, Nelson_1982_table_2:row4:col9, Nelson_1982_table_2:row5:col9, Nelson_1982_table_2:row6:col9, Nelson_1982_table_2:row7:col9, Nelson_1982_table_2:row8:col9, Nelson_1982_table_2:row9:col9, Nelson_1982_table_2:row10:col9, Nelson_1982_table_3:row0:col9, Nelson_1982_table_3:row1:col9, Nelson_1982_table_3:row2:col9, Nelson_1982_table_3:row3:col9, Nelson_1982_table_3:row4:col9, Nelson_1982_table_3:row5:col9 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -95,13 +97,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinblastine
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Vc (liter/kg)' is the general volume)
-- base model from table(s) without population columns (Nelson_1982:discussion_prose, Nelson_1982_table_2, Nelson_1982_table_3, Nelson_1982_table_4); populations vinblastine kept as separate records
+- base model from table(s) without population columns (Nelson_1982_table_2, Nelson_1982_table_3, Nelson_1982_table_4); populations vinblastine kept as separate records
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2, 3, 4, 5
 - transposed table Nelson_1982_table_2: logical view retains original source coordinates
 - transposed table Nelson_1982_table_3: logical view retains original source coordinates
@@ -109,21 +110,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (13/13 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | vinblastine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | vinblastine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -149,6 +143,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q89 | pass | [time] |  | ['Nelson_1982_table_2:row0:col9', 'Nelson_1982_table_2:row1:col9', 'Nelson_1982_table_2:row2:col9', 'Nelson_1982_table_2:row3:col9', 'Nelson_1982_table_2:row4:col9', 'Nelson_1982_table_2:row5:col9', 'Nelson_1982_table_2:row6:col9', 'Nelson_1982_table_2:row7:col9', 'Nelson_1982_table_2:row8:col9', 'Nelson_1982_table_2:row9:col9', 'Nelson_1982_table_2:row10:col9', 'Nelson_1982_table_3:row0:col9', 'Nelson_1982_table_3:row1:col9', 'Nelson_1982_table_3:row2:col9', 'Nelson_1982_table_3:row3:col9', 'Nelson_1982_table_3:row4:col9', 'Nelson_1982_table_3:row5:col9'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 23 L | ['Nelson_1982_table_2:row0:col6', 'Nelson_1982_table_2:row1:col6', 'Nelson_1982_table_2:row2:col6', 'Nelson_1982_table_2:row3:col6', 'Nelson_1982_table_2:row4:col6', 'Nelson_1982_table_2:row5:col6', 'Nelson_1982_table_2:row6:col6', 'Nelson_1982_table_2:row7:col6', 'Nelson_1982_table_2:row8:col6', 'Nelson_1982_table_2:row9:col6', 'Nelson_1982_table_2:row10:col6', 'Nelson_1982_table_3:row0:col6', 'Nelson_1982_table_3:row1:col6', 'Nelson_1982_table_3:row2:col6', 'Nelson_1982_table_3:row3:col6', 'Nelson_1982_table_3:row4:col6', 'Nelson_1982_table_3:row5:col6'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| T1_t_half_beta | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 2.3 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -182,4 +189,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Nelson1982_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Nelson1982_reference%0APaper%3A%20Nelson_1982%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Nelson1982_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 18:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:11 UTC</sub>

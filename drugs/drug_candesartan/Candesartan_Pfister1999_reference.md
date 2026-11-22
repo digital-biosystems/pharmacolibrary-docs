@@ -17,7 +17,7 @@ Pfister M, Schaedeli F, Frey FJ, Uehlinger DE. Pharmacokinetics and haemodynamic
 
 ## Population and dosing
 
-**Population:** hypertensive patients on regular haemodialysis · condition end-stage renal disease · age group adult · n = &gt;=8.
+**Population:** hypertensive patients on regular haemodialysis · condition end-stage renal disease · age group adult.
 
 **Dosing:** 8 mg, oral, multiple, every 24 h.
 

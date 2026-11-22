@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;eflornithine&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/&quot;},{&quot;label&quot;:&quot;Boberg_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eflornithine_Jansson2008_l_eflornithine_estimate_rse&quot;,&quot;label&quot;:&quot;Jansson_2008_l_eflornithine_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_l_eflornithine_estimate_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eflornithine_Jansson2008_value_for_d_eflornithine&quot;,&quot;label&quot;:&quot;Jansson_2008_value_for_d_eflornithine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_value_for_d_eflornithine.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eflornithine_Jansson2008_value_for_l_eflornithine&quot;,&quot;label&quot;:&quot;Jansson_2008_value_for_l_eflornithine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_value_for_l_eflornithine.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eflornithine_Jansson2008_value_for_r_eflornithine_estimate_r&quot;,&quot;label&quot;:&quot;Jansson_2008_value_for_r_eflornithine_estimate_rse_iiv_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_value_for_r_eflornithine_estimate_r.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eflornithine_Boberg2025_reference&quot;,&quot;label&quot;:&quot;Boberg_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Boberg2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Eflornithine_Jansson2008_d_eflornithine_estimate_rse&quot;,&quot;label&quot;:&quot;Jansson_2008_d_eflornithine_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_d_eflornithine_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eflornithine_Jansson2008_l_eflornithine_estimate_rse&quot;,&quot;label&quot;:&quot;Jansson_2008_l_eflornithine_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_l_eflornithine_estimate_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eflornithine_Jansson2008_value_for_d_eflornithine&quot;,&quot;label&quot;:&quot;Jansson_2008_value_for_d_eflornithine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_value_for_d_eflornithine.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eflornithine_Jansson2008_value_for_l_eflornithine&quot;,&quot;label&quot;:&quot;Jansson_2008_value_for_l_eflornithine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_value_for_l_eflornithine.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eflornithine_Jansson2008_value_for_r_eflornithine_estimate_r&quot;,&quot;label&quot;:&quot;Jansson_2008_value_for_r_eflornithine_estimate_rse_iiv_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Jansson2008_value_for_r_eflornithine_estimate_r.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eflornithine_Boberg2025_reference&quot;,&quot;label&quot;:&quot;Boberg_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eflornithine/Eflornithine_Boberg2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Eflornithine record held for review because the model builder assumed full bioavailability (F=1), and the second reader disagreed on intercompartmental clearance values.
+> The second reader disputed the eflornithine record, disagreeing on parameter values including 55.0 L and 66.3 L.
 
 <div class="pk-model-meta" hidden drug="eflornithine" model-id="Eflornithine_Boberg2025_reference" status="needs_review" stale="false" population="adults with human African trypanosomiasis" measured-compound="eflornithine" parameterization="apparent" topology="2C"></div>
 
@@ -52,9 +52,9 @@ Boberg M, Na-Bangchang K, Ashton M, Jansson-Löfmark R. Pharmacokinetics of Race
 
 ### Reviewer guidance
 
-**Eflornithine record held for review because the model builder assumed full bioavailability (F=1), and the second reader disagreed on intercompartmental clearance values.**
+**The second reader disputed the eflornithine record, disagreeing on parameter values including 55.0 L and 66.3 L.**
 
-The model builder substituted an apparent parameterization assuming F=1, meaning the extracted clearance values (17.2 L/h) are not adjusted for actual bioavailability. The second reader disagreed on the value for Q/F (intercompartmental clearance), where this record lists 8.01 but the reader noted 33. The reader also identified discrepancies in peripheral volume values, such as 5.5 versus 50 L, indicating uncertainty in the central and peripheral compartment parameters. These structural and value conflicts prevent the record from being accepted without further verification of the underlying pharmacokinetic assumptions. Extracted — eflornithine: CL/F 17.2 L/h, V1/F 55 L, V2/F 66.3 L, Q/F 8.01 L/h, kabs 1.16 h -1, tlag 0.447 h.
+The review was held back because a second reader disagreed with the extracted model parameters, resulting in zero reader agreement. Discrepancies included this record having null values where the second reader identified 0.154 and 30.3. The record listed 55.0 L and 66.3 L, while the second reader identified different numeric values for related parameters. Extracted — eflornithine: CL/F 17.2 L/h, V1/F 55 L, V2/F 66.3 L, Q/F 8.01 L/h, kabs 1.16 h -1, tlag 0.447 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 0.154; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -137,15 +137,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=eflornithine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=eflornithine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bilastine record is held back because bioavailability and lag time defaulted to library placeholders rather than extracted values.
+> Bilastine bioavailability and lag time use library defaults rather than explicit estimates from Togawa_2016.
 
 <div class="pk-model-meta" hidden drug="bilastine" model-id="Bilastine_Togawa2016_japanesea" status="needs_review" stale="false" population="healthy Japanese adults" measured-compound="bilastine" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,9 +53,9 @@ Togawa M, Yamaya H, Rodríguez M, Nagashima H. Pharmacokinetics, Pharmacodynamic
 
 ### Reviewer guidance
 
-**The bilastine record is held back because bioavailability and lag time defaulted to library placeholders rather than extracted values.**
+**Bilastine bioavailability and lag time use library defaults rather than explicit estimates from Togawa_2016.**
 
-The model parameters for bioavailability and absorption lag time were not estimated from the study, so the record was refused for using default conventions. The review flagged these deviations as unacceptable because the paper provides no explicit estimates for them. As a result, the simulated profiles rely on unsupported values rather than data extracted from the record. Extracted — bilastine: CL 14.4 L/h, V1 51.2 L, Q 1.55 L/h, V2 20.2 L, kabs 1.7 h−1.
+The record lists clearance, volumes, and absorption rate, but bioavailability and lag time were left at placeholder values. These unreported parameters were not explicitly estimated in the paper. Consequently, the simulated profile relies on generic library placeholders not supported by the source data. Extracted — bilastine: CL 14.4 L/h, V1 51.2 L, Q 1.55 L/h, V2 20.2 L, kabs 1.7 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -133,16 +133,17 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=bilastine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped |  | 3.867 | non-numeric value |
-| T1_tmax | reference | skipped |  | 1.154 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=bilastine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 3.867 |  | non-numeric value |
+| T1_tmax | reference | skipped |  | 1.154 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

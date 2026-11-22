@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> The trastuzumab deruxtecan record was rejected because the simulated one-compartment model lacked the peripheral volume defined in the parameter set.
+> Model for trastuzumab deruxtecan rejected because the one-compartment structure ignores the defined metabolite link, and covariate effects were not simulated.
 
 <div class="pk-model-meta" hidden drug="trastuzumab deruxtecan" model-id="TrastuzumabDeruxtecan_Yin2021_final" status="rejected" stale="false" population="patients with HER2-positive breast cancer and other solid tumors" measured-compound="trastuzumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Yin O, Xiong Y, Endo S, Yoshihara K, Garimella T, AbuTarif M et al. Population P
 
 ## Population and dosing
 
-**Population:** patients with HER2-positive breast cancer and other solid tumors · condition HER2-positive breast cancer and other solid tumors · age group adult · n = #639.
+**Population:** patients with HER2-positive breast cancer and other solid tumors · condition HER2-positive breast cancer and other solid tumors · age group adult.
 
 **Dosing:** 56, 560 mg, iv, multiple, every 21 h.
 
@@ -63,9 +63,9 @@ Yin O, Xiong Y, Endo S, Yoshihara K, Garimella T, AbuTarif M et al. Population P
 
 ### Reviewer guidance
 
-**The trastuzumab deruxtecan record was rejected because the simulated one-compartment model lacked the peripheral volume defined in the parameter set.**
+**Model for trastuzumab deruxtecan rejected because the one-compartment structure ignores the defined metabolite link, and covariate effects were not simulated.**
 
-The parameter list specifies a peripheral volume of distribution (5.16 L) and intercompartmental clearance (0.199 L/day), implying a two-compartment system. However, the simulated model structure contained only a central compartment. This structural inconsistency prevented the model from accurately representing the drug's distribution phase. Extracted — trastuzumab deruxtecan: CL 0.421 L/day, V1 2.77 L, Q 0.199 L/day, V2 5.16 L.
+The record specifies a parent-metabolite topology for trastuzumab deruxtecan, yet the model structure is a single central compartment without a path for the released drug. Although covariate effects like body weight on clearance are defined, only the reference individual was simulated, leaving these effects unverified. A second reader also disputed the identification of the dose compound and several parameter values. Extracted — trastuzumab deruxtecan: CL 0.421 L/day, V1 2.77 L, Q 0.199 L/day, V2 5.16 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab_deruxtecan, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -193,15 +193,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | fail | Metabolite_C (measured=trastuzumab_deruxtecan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_cmin_ss | reference | skipped | 23 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | fail | Metabolite_C (measured=trastuzumab_deruxtecan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.304, 0 of 1 reader(s) agree | 0.304 | cross-check disputed by a second reader: verdict disputed, agreement 0.304, 0 of 1 reader(s) agree |
+| T1_cmin_ss | reference | skipped | 23 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

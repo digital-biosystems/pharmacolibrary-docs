@@ -4,11 +4,11 @@
 
 # fenbendazole — `Fenbendazole_Bach2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-07 10:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the oxfendazole bioavailability parameter has no extracted value, and the peripheral volume unit of milligrams is dimensionally incompatible.
+> The peripheral volume parameter V2 is assigned units of milligrams instead of volume, creating a dimensional mismatch that invalidates the model structure.
 
-<div class="pk-model-meta" hidden drug="fenbendazole" model-id="Fenbendazole_Bach2021_reference" status="rejected" stale="true" population="healthy adults" measured-compound="fenbendazole" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fenbendazole" model-id="Fenbendazole_Bach2021_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fenbendazole" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Bach T, Murry DJ, Stebounova LV, Deye G, Winokur P, An G. Population Pharmacokinetic Model of Oxfendazole and Metabolites in Healthy Adults following Single Ascending Doses. Antimicrobial agents and chemotherapy 65(4) (2021).
@@ -46,7 +46,7 @@ Bach T, Murry DJ, Stebounova LV, Deye G, Winokur P, An G. Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.68). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.68). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Bach T, Murry DJ, Stebounova LV, Deye G, Winokur P, An G. Population Pharmacokin
 
 ### Reviewer guidance
 
-**The record was rejected because the oxfendazole bioavailability parameter has no extracted value, and the peripheral volume unit of milligrams is dimensionally incompatible.**
+**The peripheral volume parameter V2 is assigned units of milligrams instead of volume, creating a dimensional mismatch that invalidates the model structure.**
 
-The parameter representing the fraction of the drug reaching the systemic circulation is defined but has no numerical value assigned. Consequently, this structural element remained at placeholder defaults, causing the record to be held back. Additionally, the unit for the peripheral volume of distribution is listed in milligrams, which is incompatible with standard volume units. Extracted — fenbendazole: CL 0.541 L/h, V2 34.7 mg, kabs 1.59 h−1, V/F 35.2 liters, fm 0.000162, kel 0.0942 h−1; oxfendazole sulfone: kfm 0.00134 h−1, fm 0.0042, kel 0.105 h−1.
+The record lists the volume of distribution of the peripheral compartment (V2) with a value of 34.7 and units of mg. Since milligrams are a unit of mass, this conflicts with the physical dimension of volume required for a distribution parameter. This unit error triggered a dimension check failure, as the system expected cubic length or volume units but received mass. Additionally, the absolute bioavailability parameter (Fab) is missing a numerical value, leaving the systemic exposure unquantified. Extracted — fenbendazole: CL 0.541 L/h, V2 34.7 mg, kabs 1.59 h−1, V/F 35.2 liters, fm 0.000162, kel 0.0942 h−1; oxfendazole sulfone: kfm 0.00134 h−1, fm 0.0042, kel 0.105 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has fenbendazole, the second reading oxfendazole; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

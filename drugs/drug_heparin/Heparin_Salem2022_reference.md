@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time values were missing, forcing the use of generic library placeholders for the unfractionated heparin model.
+> Bioavailability and absorption lag time lacked paper-derived estimates, and the second reader rejected all extracted pharmacokinetic parameter values.
 
 <div class="pk-model-meta" hidden drug="heparin" model-id="Heparin_Salem2022_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="unfractionated heparin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Salem AM, Niu T, Li C, Moffett BS, Ivaturi V, Gopalakrishnan M. Reassessing the 
 
 ### Reviewer guidance
 
-**Bioavailability and lag time values were missing, forcing the use of generic library placeholders for the unfractionated heparin model.**
+**Bioavailability and absorption lag time lacked paper-derived estimates, and the second reader rejected all extracted pharmacokinetic parameter values.**
 
-The study only provided abstract summary statistics, so no specific estimates for bioavailability or absorption lag were available. Consequently, generic placeholder values were used for these parameters instead of study-derived estimates. This results in simulated pharmacokinetic profiles that rely on unverified assumptions about drug absorption. Extracted — heparin: CL 3.28 L/h, V 8.83 L/50 kg, kabs 0.079 h -1.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Bioavailability and absorption lag time were not extracted from the paper, meaning placeholder values would have been used instead of study-specific estimates. A second reader disagreed with the extracted values for clearance, volume of distribution, and absorption rate constant, finding them null or unknown. Extracted — heparin: CL 3.28 L/h, V 8.83 L/50 kg, kabs 0.079 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has unfractionated heparin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -135,14 +135,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=unfractionated heparin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=unfractionated heparin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

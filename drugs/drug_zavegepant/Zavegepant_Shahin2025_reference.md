@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for zavegepant was held back because the absorption rate constant was left at default rather than using the 91.52 reported value.
+> Zavegepant absorption parameters were left at library defaults, while second readers identified unrecorded values of 91.52 and 91.11.
 
 <div class="pk-model-meta" hidden drug="zavegepant" model-id="Zavegepant_Shahin2025_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="zavegepant" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Shahin MH, Fisniku O, Ding D, Wan K, Dubrovin S, Matschke K et al. A Pharmacokin
 
 ### Reviewer guidance
 
-**The record for zavegepant was held back because the absorption rate constant was left at default rather than using the 91.52 reported value.**
+**Zavegepant absorption parameters were left at library defaults, while second readers identified unrecorded values of 91.52 and 91.11.**
 
-The review found that the absorption rate constant was not reported in the source and was instead set to a library default. A second reader identified values of 91.52 and 91.11 in the paper that were not extracted into this record. Consequently, the model relies on an unsupported assumption rather than the paper's actual estimates for the absorption process. Extracted — zavegepant: CL/F 294 L/h, V/F 1.23e+03 L.
+The record omits the absorption rate constant and transit time, relying on generic conventions instead of paper-specific estimates. This leaves the apparent clearance and volume of distribution unsupported by explicit absorption kinetics. Additionally, a second reader noted missing values for two model aspects, reporting 91.52 and 91.11, which contradict the null entries in this record. Extracted — zavegepant: CL/F 294 L/h, V/F 1.23e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 91.52; it also differs on 1 more field. That field does not shape the model.
 
@@ -120,15 +120,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=zavegepant) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=zavegepant) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

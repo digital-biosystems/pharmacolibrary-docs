@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Didolkar_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Middleton2000_reference&quot;,&quot;label&quot;:&quot;Middleton_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Osieka_1984_GD&quot;,&quot;label&quot;:&quot;Osieka_1984 \u00b7 GD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/pd_Osieka_1984_GD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Middleton2000_reference&quot;,&quot;label&quot;:&quot;Middleton_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Didolkar MS, Jackson AJ, Lesko LJ, Fitzpatrick JL, Buda BS, Johnston GS et al. P
 
 ## Population and dosing
 
-**Population:** adults with melanoma · age group adult · n = &gt;=0.
+**Population:** adults with melanoma · age group adult.
 
 **Dosing:** 8.8, 19 mmol, other, multiple, every 5 h.
 
@@ -132,4 +132,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdacarbazine%5D%20Dacarbazine_Didolkar1996_reference&body=Drug%3A%20dacarbazine%0ARecord%3A%20Dacarbazine_Didolkar1996_reference%0APaper%3A%20Didolkar_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dacarbazine/Dacarbazine_Didolkar1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 12:42 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:27 UTC</sub>

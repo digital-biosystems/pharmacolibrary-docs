@@ -4,11 +4,11 @@
 
 # vedolizumab — `Vedolizumab_Okamoto2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 01:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance, intercompartmental clearance, and volume parameters lacked SI units, preventing verification of dimensional consistency for vedolizumab.
+> Vedolizumab record rejected because the Vmax unit mg/day could not be converted to standard units, leaving the parameter without a valid value.
 
-<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Okamoto2021_reference" status="rejected" stale="true" population="Asian and non-Asian patients with ulcerative colitis and Crohn’s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Okamoto2021_reference" status="rejected" stale="false" population="Asian and non-Asian patients with ulcerative colitis and Crohn’s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Okamoto H, Dirks NL, Rosario M, Hori T, Hibi T. Population pharmacokinetics of vedolizumab in Asian and non-Asian patients with ulcerative colitis and Crohn's disease. Intestinal research 19(1):95–105 (2021).
@@ -16,7 +16,7 @@ Okamoto H, Dirks NL, Rosario M, Hori T, Hibi T. Population pharmacokinetics of v
 
 ## Population and dosing
 
-**Population:** Asian and non-Asian patients with ulcerative colitis and Crohn’s disease · condition ulcerative colitis and Crohn’s disease · age group mixed · n = $n$1933.
+**Population:** Asian and non-Asian patients with ulcerative colitis and Crohn’s disease · condition ulcerative colitis and Crohn’s disease · age group mixed.
 
 **Dosing:** 300 mg, iv, multiple, every 168 h.
 
@@ -48,7 +48,7 @@ Okamoto H, Dirks NL, Rosario M, Hori T, Hibi T. Population pharmacokinetics of v
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,9 +58,9 @@ Okamoto H, Dirks NL, Rosario M, Hori T, Hibi T. Population pharmacokinetics of v
 
 ### Reviewer guidance
 
-**Clearance, intercompartmental clearance, and volume parameters lacked SI units, preventing verification of dimensional consistency for vedolizumab.**
+**Vedolizumab record rejected because the Vmax unit mg/day could not be converted to standard units, leaving the parameter without a valid value.**
 
-The conversion process failed because the reported units for these structural parameters were missing from the standard unit table. Consequently, the software could not compute a comparison between the units of clearance, flow, and volume. This dimensional mismatch rendered the two-compartment model structurally invalid. Extracted — vedolizumab: CL 0.165 L/day, V1 3.16 L, V2 1.84 L, Vmax 0.238 mg/day, Q 0.161 L/day, Km 0.851 µg/mL.
+The maximum metabolic rate (Vmax) for vedolizumab is 0.238 mg/day. Since this unit was not recognized for conversion, the parameter remained without a standardized value, causing a dimension mismatch during model verification. Extracted — vedolizumab: CL 0.165 L/day, V1 3.16 L, V2 1.84 L, Vmax 0.238 mg/day, Q 0.161 L/day, Km 0.851 µg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[ava- cll].covariate_forms`: this record has ['power', 'power', 'power', 'power'], the second reading ['power', 'power', 'power']; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

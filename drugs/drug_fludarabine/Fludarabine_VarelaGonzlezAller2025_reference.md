@@ -17,7 +17,7 @@ Varela-González-Aller J, Sánchez-Salinas MA, Troconiz I, Iacoboni G, Alonso-Ma
 
 ## Population and dosing
 
-**Population:** patients receiving CAR T-cell therapy · condition relapsed/refractory large B-cell lymphoma · age group adult · n = ${56}.
+**Population:** patients receiving CAR T-cell therapy · condition relapsed/refractory large B-cell lymphoma · age group adult.
 
 **Dosing:** 25, 30 mg/m2, iv, multiple.
 

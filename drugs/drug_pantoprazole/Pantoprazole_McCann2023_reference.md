@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;McCann_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pantoprazole — `Pantoprazole_McCann2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bioavailability F for pantoprazole was left at library defaults, not supported by the paper.
+> Pantoprazole pharmacokinetics were rejected because the source paper models posaconazole, not pantoprazole, as the primary drug of interest.
 
-<div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_McCann2023_reference" status="needs_review" stale="false" population="" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_McCann2023_reference" status="rejected" stale="false" population="" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 McCann S, Sinha J, Wilson WS, McKinzie CJ, Garner LM, Gonzalez D. Population Pharmacokinetics of Posaconazole in Immune-Compromised Children and Assessment of Target Attainment in Invasive Fungal Disease. Clinical pharmacokinetics 62(7):997–1009 (2023).
@@ -29,7 +29,7 @@ McCann S, Sinha J, Wilson WS, McKinzie CJ, Garner LM, Gonzalez D. Population Pha
 <figure class="pk-models-diagram"><img src="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference.svg" alt="Pantoprazole_McCann2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +40,7 @@ McCann S, Sinha J, Wilson WS, McKinzie CJ, Garner LM, Gonzalez D. Population Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.353). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ McCann S, Sinha J, Wilson WS, McKinzie CJ, Garner LM, Gonzalez D. Population Pha
 
 ### Reviewer guidance
 
-**Bioavailability F for pantoprazole was left at library defaults, not supported by the paper.**
+**Pantoprazole pharmacokinetics were rejected because the source paper models posaconazole, not pantoprazole, as the primary drug of interest.**
 
-The record uses placeholder values for bioavailability F because no specific estimate was extracted from the McCann review. This means the simulated profile relies on generic conventions rather than data from this source. A second reader also identified discrepancies in other extracted parameter values compared to the record entries. Extracted — pantoprazole: CL 6.5 L/h, V 226 L, tlag 2.5 h, kabs 0.325 h -1.
+The paper characterizes the population pharmacokinetics of posaconazole, with pantoprazole serving only as a co-administered covariate affecting bioavailability. Consequently, the extracted parameters such as clearance and volume of distribution do not represent the intended pantoprazole model. A second reader also disputed the rejection, noting disagreements on multiple parameter values and the absence of a bioavailability estimate. Extracted — pantoprazole: CL 6.5 L/h, V 226 L, tlag 2.5 h, kabs 0.325 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q318: this record has none, the second reading 16; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q318: this record has none, the second reading 16; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -88,23 +88,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.353 (6/17 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.412 (7/17 fields) | 10 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q318]` |  | 16 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q319]` | 0.75 | 0.75 | mismatch |
-| `gpt-oss:120b` | `values[Q325]` |  | 1 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q37]` |  | 0.7 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q40]` | 75 | 0.67 | mismatch |
-| `gpt-oss:120b` | `values[Q44]` | 66.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q45]` |  | 17.6 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q46]` | 2 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q49]` | 0.325 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q57]` | 24 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q87]` |  | 66.3 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q318]` |  | 16 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q325]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` |  | 0.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 75 | 0.67 | mismatch |
+| `gpt-oss-120b` | `values[Q44]` | 66.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q45]` |  | 17.6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q46]` | 2 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` | 0.325 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 24 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` |  | 66.3 | only_one_extracted |
 
 </details>
 
@@ -132,14 +131,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pantoprazole) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | pantoprazole (or metabolite) | paper about another drug |  | paper subject is not pantoprazole: the paper is about another drug; this one is a co-medication or covariate: The study characterizes the population pharmacokinetics of posaconazole, with pantoprazole serving only as a co-administered covariate affecting bioavailability |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pantoprazole) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.412, 0 of 1 reader(s) agree | 0.412 | cross-check disputed by a second reader: verdict disputed, agreement 0.412, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,61 +151,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_modelica.zip" download>Pantoprazole_McCann2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_fmi.zip" download>Pantoprazole_McCann2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_matlab.zip" download>Pantoprazole_McCann2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_matlab_simbio.zip" download>Pantoprazole_McCann2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_sbml.zip" download>Pantoprazole_McCann2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_cellml.zip" download>Pantoprazole_McCann2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3834 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 9000 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 4e-05 | kg |
-| input | model | `Cl` | 1.806e-06 | m3/s |
-| input | model | `VdPerKg` | 0.003229 | m3/kg |
-| input | model | `ka` | 9.028e-05 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): McCann S, Sinha J, Wilson WS, McKinzie CJ, Garner LM, Gonzalez D. Population Pharmacokinetics of Posaconazole in Immune-Compromised Children and Assessment of Target Attainment in Invasive Fungal Disease. Clinical pharmacokinetics 62(7):997–1009 (2023). [doi:10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2)
-
-**This record:** Pharmacolibrary, model `Pantoprazole_McCann2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference>
-
-```bibtex
-@misc{pharmacolibrary_PantoprazoleMcCann2023reference,
-  title  = {{Pharmacolibrary model Pantoprazole_McCann2023_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference},
-  note   = {Parameters from doi:10.1007/s40262-023-01254-2},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

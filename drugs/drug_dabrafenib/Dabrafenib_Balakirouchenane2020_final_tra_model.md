@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> All six pharmacokinetic parameters describe trametinib, leaving dabrafenib’s clearance, volume, and lag time at default placeholders, so the model was quarantined.
+> Dabrafenib’s clearance had no extracted value; the reported CL/F of 5.83 L/h belongs to trametinib, leaving the model held back.
 
 <div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_final_tra_model" status="model_quarantined" stale="false" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A e
 
 ### Reviewer guidance
 
-**All six pharmacokinetic parameters describe trametinib, leaving dabrafenib’s clearance, volume, and lag time at default placeholders, so the model was quarantined.**
+**Dabrafenib’s clearance had no extracted value; the reported CL/F of 5.83 L/h belongs to trametinib, leaving the model held back.**
 
-The record lists trametinib clearance (5.83 L/h), central volume (61.9 L), and absorption rate constant (0.913 1/h), but omits values for the target drug, dabrafenib. Because dabrafenib’s clearance, volume of distribution, and absorption lag time were left at library defaults, the model was held back to prevent using invented numbers. A second reader also disagreed on whether a metabolism link to hydroxy-dabrafenib existed and which compound was the primary dose analyte. Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
+No value for dabrafenib’s clearance, volume of distribution, and absorption lag time—all 6 extracted parameters describe trametinib. The model was built, but those dabrafenib parameters had no value, so library placeholders stood in and the model was held back rather than published with invented numbers. The record describes a parent–metabolite structure, but the built structure was one-compartment enteral; its apparent parameterization assumed F=1, Fm=1, and no molar correction. A second reader disputed the included dose compound and analytes, the metabolism link, and parameter assignments; agreement was 0.583, with 0 of 1 reader agreeing. Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading dabrafenib; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -156,14 +156,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -181,30 +182,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_matlab.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_matlab_simbio.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_sbml.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_cellml.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A et al. Population Pharmacokinetics/Pharmacodynamics of Dabrafenib Plus Trametinib in Patients with BRAF-Mutated Metastatic Melanoma. Cancers 12(4) (2020). [doi:10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
-
-**This record:** Pharmacolibrary, model `Dabrafenib_Balakirouchenane2020_final_tra_model`. <https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model>
-
-```bibtex
-@misc{pharmacolibrary_DabrafenibBalakirouchenane2020finaltramodel,
-  title  = {{Pharmacolibrary model Dabrafenib_Balakirouchenane2020_final_tra_model}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model},
-  note   = {Parameters from doi:10.3390/cancers12040931},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

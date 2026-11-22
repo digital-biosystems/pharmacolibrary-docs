@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;ethambutol&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/&quot;},{&quot;label&quot;:&quot;Sundell_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethambutol_Srivastava2022v2_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Srivastava2022v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethambutol_Sundell2020_reference&quot;,&quot;label&quot;:&quot;Sundell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Sundell2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ethambutol_Tikiso2022_reference&quot;,&quot;label&quot;:&quot;Tikiso_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Tikiso2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethambutol_Sundell2020_reference&quot;,&quot;label&quot;:&quot;Sundell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Sundell2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ethambutol_Srivastava2022v2_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Srivastava2022v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethambutol_Tikiso2022_reference&quot;,&quot;label&quot;:&quot;Tikiso_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Tikiso2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ethambutol — `Ethambutol_Sundell2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Ethambutol record refused because absorption rate constant 1.61 h⁻¹ was unverifiable and lag time lacked an explicit value.
-
-<div class="pk-model-meta" hidden drug="ethambutol" model-id="Ethambutol_Sundell2020_reference" status="needs_review" stale="false" population="adult patients coinfected with tuberculosis and HIV" measured-compound="ethambutol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ethambutol" model-id="Ethambutol_Sundell2020_reference" status="simulated" stale="false" population="adult patients coinfected with tuberculosis and HIV" measured-compound="ethambutol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sundell J, Bienvenu E, Birgersson S, Äbelö A, Ashton M. Population Pharmacokinetics and Pharmacogenetics of Ethambutol in Adult Patients Coinfected with Tuberculosis and HIV. Antimicrobial agents and chemotherapy 64(2) (2020).
@@ -17,7 +15,7 @@ Sundell J, Bienvenu E, Birgersson S, Äbelö A, Ashton M. Population Pharmacokin
 
 ## Population and dosing
 
-**Population:** adult patients coinfected with tuberculosis and HIV · condition tuberculosis and HIV coinfection · age group adult · n = # This study aimed to characterize the population pharmacokinetics and pharmacogenetics of ethambutol in tuberculosis-HIV-coinfected adult patients. Ethambutol plasma concentrations, determined by liquid chromatography-tandem mass spectrometry, in 63 patients receiving ethambutol as part of rifampin-based fixed-dose combination therapy for tuberculosis were analyzed using nonlinear mixed-effects modeling. A one-compartment disposition model with first-order elimination and four transit compartments prior to first-order absorption was found to adequately describe the concentration-time profiles of ethambutol in plasma. Body weight was implemented as an allometric function on the clearance and volume parameters. Estimates of oral clearance and volume of distribution were 77.4 liters/h and 76.2 liters, respectively. A G/A mutation with regard to CYP1A2 2159 G&gt;A was associated with a 50% reduction in relative bioavailability. Simulations revealed that doses of 30 mg/kg of body weight and 50 mg/kg for G/G and G/A carriers, respectively, would result in clinically adequate exposure. The results presented here suggest that CYP1A2 polymorphism affects ethambutol exposure in this population and that current treatment guidelines may result in underexposure in patients coinfected with tuberculosis and HIV. Based on simulations, a dose increase from15 to 20 mg/kg to 30 mg/kg is suggested. However, the 50-mg/kg dose required to reach therapeutic exposure in G/A carriers may be inappropriate due to the dose-dependent toxicity of ethambutol. Additional studies are required to further investigate CYP450 polymorphism effects on ethambutol pharmacokinetics..
+**Population:** adult patients coinfected with tuberculosis and HIV · condition tuberculosis and HIV coinfection · age group adult.
 
 ## Model
 
@@ -29,8 +27,6 @@ Sundell J, Bienvenu E, Birgersson S, Äbelö A, Ashton M. Population Pharmacokin
 <figure class="pk-models-diagram"><img src="drugs/drug_ethambutol/Ethambutol_Sundell2020_reference/Ethambutol_Sundell2020_reference.svg" alt="Ethambutol_Sundell2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | oral clearance | CL/F | 77.4 | liters/h |
@@ -40,7 +36,7 @@ Sundell J, Bienvenu E, Birgersson S, Äbelö A, Ashton M. Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +46,13 @@ Sundell J, Bienvenu E, Birgersson S, Äbelö A, Ashton M. Population Pharmacokin
 
 ### Reviewer guidance
 
-**Ethambutol record refused because absorption rate constant 1.61 h⁻¹ was unverifiable and lag time lacked an explicit value.**
+**Every check that could be run on this record passed.**
 
-The second reader could not confirm the absorption rate constant of 1.61 h⁻¹, finding no corresponding value. The lag time parameter had no extracted value, meaning a library placeholder would be used instead of a specific estimate. The record was derived only from the abstract, so reported summary statistics stand in for a fitted model. Extracted — ethambutol: CL/F 77.4 liters/h, V 76.2 liters, Frel 50 %, kabs 1.61 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption constant: this record has 1.61, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -132,15 +128,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ethambutol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=ethambutol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> 2-hydroxyethyl succinimide is an orphan metabolite with no path from the dose, causing rejection.
+> The record for diroximel fumarate was rejected because both metabolite compartments lack a defined formation rate from the parent drug.
 
 <div class="pk-model-meta" hidden drug="diroximel fumarate" model-id="DiroximelFumarate_Kuchimanchi2022_reference" status="rejected" stale="false" population="healthy participants and patients with multiple sclerosis" measured-compound="monomethyl fumarate" parameterization="apparent" topology="general_linear"></div>
 
@@ -16,7 +16,7 @@ Kuchimanchi M, Bockbrader H, Dolphin N, Epling D, Quinlan L, Chapel S et al. Dev
 
 ## Population and dosing
 
-**Population:** healthy participants and patients with multiple sclerosis · condition multiple sclerosis · age group adult · n = # The paper states 389 participants, but the final analysis dataset likely has a different number (implied by 341 HV + 48 MS = 389 total mentioned, but 'final analysis dataset' has samples, not explicitly stated subject count for final model, though 389 is the total included). I will use 389 as it's the total participants across studies..
+**Population:** healthy participants and patients with multiple sclerosis · condition multiple sclerosis · age group adult.
 
 **Dosing:** 49, 980 mg, oral, multiple, every 12 h.
 
@@ -52,9 +52,9 @@ Kuchimanchi M, Bockbrader H, Dolphin N, Epling D, Quinlan L, Chapel S et al. Dev
 
 ### Reviewer guidance
 
-**2-hydroxyethyl succinimide is an orphan metabolite with no path from the dose, causing rejection.**
+**The record for diroximel fumarate was rejected because both metabolite compartments lack a defined formation rate from the parent drug.**
 
-The model structure lists 2-hydroxyethyl succinimide as a metabolite formed from diroximel fumarate, but it has no linked parent compartment for dosing, making it unreachable. This orphan compartment violates the requirement for a valid metabolic pathway. The record includes parameters for 2-hydroxyethyl succinimide, including a clearance of 3.24 L/h and absorption rate of 1.49 1/h, yet the structural link is invalid. The second reader also noted the parameterization was mechanistic, differing from the apparent classification in the record. Extracted — monomethyl fumarate: CLm/F 13.5 L/h, V 30.4 L, kabs 5.04 1/h; 2-hydroxyethyl succinimide: CL 3.24 L/h, kabs 1.49 1/h.
+Both monomethyl fumarate and 2-hydroxyethyl succinimide are identified as orphan metabolites, meaning there is no path from the administered diroximel fumarate to these entities. The metabolism links connecting the parent drug to these metabolites have an undefined rate parameter, preventing the model from computing their formation. Consequently, these compartments are unreachable in the model structure, invalidating the pharmacokinetic description of the metabolites. Extracted — monomethyl fumarate: CLm/F 13.5 L/h, V 30.4 L, kabs 5.04 1/h; 2-hydroxyethyl succinimide: CL 3.24 L/h, kabs 1.49 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diroximel fumarate, the second reading diroximel_fumarate; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 

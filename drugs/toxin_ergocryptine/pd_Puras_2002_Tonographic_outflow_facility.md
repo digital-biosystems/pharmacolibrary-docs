@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Alpha-ergocryptine inhibits tonographic outflow facility, but the underlying pharmacodynamic mechanism and specific potency or rate parameters (e.g., IC50, EC50, Imax) are not specified in the available excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Puras_2002`
 - **model family:** `unknown`
 - **driver:** `dose_only`

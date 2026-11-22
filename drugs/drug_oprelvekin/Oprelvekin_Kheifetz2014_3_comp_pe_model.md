@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time for oprelvekin lack explicit estimates in the record, forcing reliance on placeholder values unsupported by the paper.
+> Oprelvekin bioavailability and lag time parameters were left at defaults, lacking explicit estimates from the study.
 
 <div class="pk-model-meta" hidden drug="oprelvekin" model-id="Oprelvekin_Kheifetz2014_3_comp_pe_model" status="needs_review" stale="false" population="healthy males" measured-compound="oprelvekin" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,9 +55,9 @@ Kheifetz Y, Elishmereni M, Agur Z. Complex pattern of interleukin-11-induced inf
 
 ### Reviewer guidance
 
-**Bioavailability and lag time for oprelvekin lack explicit estimates in the record, forcing reliance on placeholder values unsupported by the paper.**
+**Oprelvekin bioavailability and lag time parameters were left at defaults, lacking explicit estimates from the study.**
 
-The model for oprelvekin in Kheifetz_2014 includes clearance and absorption rate but omits specific values for bioavailability and lag time, resulting in the use of generic defaults. These placeholders are not derived from the study data and therefore compromise the model's fidelity to the source. Additionally, a secondary review questioned the validity of the recorded intercompartmental and absorption rate constants. Extracted — oprelvekin: CL 14.6 l·h⁻¹, V1 4.91 l, Q 0.465 l·h⁻¹, V2 11.5 l, V3 4e+80 l, kabs 0.152 1/h.
+The record relies on library placeholders for bioavailability and lag time, meaning these values are not supported by the paper. A second reader could not verify the recorded absorption rate constant of 0.152 1/h or the equation variable of 0.025 from the source. Extracted — oprelvekin: CL 14.6 l·h⁻¹, V1 4.91 l, Q 0.465 l·h⁻¹, V2 11.5 l, V3 4e+80 l, kabs 0.152 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has 0.025, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
@@ -144,15 +144,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=oprelvekin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id=1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped |  | 10.97 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=oprelvekin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 10.97 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

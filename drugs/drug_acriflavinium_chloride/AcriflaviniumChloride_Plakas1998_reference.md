@@ -4,11 +4,11 @@
 
 # acriflavinium chloride — `AcriflaviniumChloride_Plakas1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> This record was reviewed on 2026-11-07 16:36 UTC (Rejected), but the paper was screened again on 2026-10-07 13:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Acridine concentration 0.064 microgram/g is an outcome summary, not a pharmacokinetic parameter, and no clearance exists.
+> Acriflavine’s reported Ct of 0.064 microgram/g sits in an exposure record lacking volume and clearance, with a structural unit mismatch and disconnected metabolites, so it was refused.
 
-<div class="pk-model-meta" hidden drug="acriflavinium chloride" model-id="AcriflaviniumChloride_Plakas1998_reference" status="rejected" stale="true" population="channel catfish" measured-compound="acriflavine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="acriflavinium chloride" model-id="AcriflaviniumChloride_Plakas1998_reference" status="rejected" stale="false" population="channel catfish" measured-compound="acriflavine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Plakas SM, el Said KR, Bencsath FA, Musser SM, Hayton WL. Pharmacokinetics, tissue distribution and metabolism of acriflavine and proflavine in the channel catfish (Ictalurus punctatus). Xenobiotica; the fate of foreign compounds in biological systems 28(6):605–616 (1998).
@@ -36,7 +36,7 @@ Plakas SM, el Said KR, Bencsath FA, Musser SM, Hayton WL. Pharmacokinetics, tiss
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +46,13 @@ Plakas SM, el Said KR, Bencsath FA, Musser SM, Hayton WL. Pharmacokinetics, tiss
 
 ### Reviewer guidance
 
-**Acridine concentration 0.064 microgram/g is an outcome summary, not a pharmacokinetic parameter, and no clearance exists.**
+**Acriflavine’s reported Ct of 0.064 microgram/g sits in an exposure record lacking volume and clearance, with a structural unit mismatch and disconnected metabolites, so it was refused.**
 
-The paper reports only a single muscle concentration for acriflavine (0.064 microgram/g) from an abstract-only reading. The record lacks any distribution volume or clearance, confirming it is an exposure study rather than a compartmental population PK model. Structural checks identified unreachable compartments, but the fundamental issue is that the extracted value is a static outcome, not a fitted kinetic parameter. Extracted — acriflavinium chloride: Ct 0.064 microgram/g.
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; a structural parameter’s microgram/g unit conflicts with its dimensionless designation, and the proflavine glucuronide and proflavine acetyl conjugate have no path from the dose. Extracted — acriflavinium chloride: Ct 0.064 microgram/g.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acriflavine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

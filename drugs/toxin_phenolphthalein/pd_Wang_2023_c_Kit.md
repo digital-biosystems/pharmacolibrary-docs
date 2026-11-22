@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Phenolphthalein was administered in a loperamide-induced constipation mouse model, where it decreased colonic AQP3 expression compared to the model group, while high-dose B. ceiba extract increased c-Kit expression. The paper does not provide a quantitative pharmacodynamic model, potency values, or specific rate constants for phenolphthalein's effect on these responses.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

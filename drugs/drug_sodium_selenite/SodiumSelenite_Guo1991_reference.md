@@ -15,7 +15,7 @@ Guo JA, Wang XY, Dai LM. [Pharmacokinetics of sodium selenite in human body at d
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=24.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed sodium selenite, measured selenium.
 

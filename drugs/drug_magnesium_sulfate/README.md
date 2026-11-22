@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # magnesium sulfate
 
@@ -26,7 +26,7 @@ Magnesium sulfate is a mineral supplement and osmotically acting laxative that a
 
 ## Start here
 
-> **Chuan_2001_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with preeclampsia, n = 116. [Run it in the simulator](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md?tab=Simulation) · [record](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md)
+> **Chuan_2001_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with preeclampsia, n = 116. [Run it in the simulator](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md?tab=Simulation) · [record](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -40,26 +40,16 @@ Magnesium sulfate is a mineral supplement and osmotically acting laxative that a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Chuan_2001_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Chuan FS et al., Population pharmacokinetics of magnesiu…, American journal of obstetr… (2001) | [10.1067/mob.2001.116726](https://doi.org/10.1067/mob.2001.116726) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Brookfield_2016_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2016_reference.md) | — | 1-compartment (no model) | 2 | Brookfield KF et al., Pharmacokinetics and placental transfer…, American journal of obstetr… (2016) | [10.1016/j.ajog.2015.12.060](https://doi.org/10.1016/j.ajog.2015.12.060) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd, Tlag, k12 left at base-class defaults</sub> | [Brookfield_2021_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference.md) | held back | 2-compartment, oral | 6 (+3 cov.) | Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global reports (2021) | [10.1016/j.xagr.2021.100018](https://doi.org/10.1016/j.xagr.2021.100018) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Chuan_2001_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Chuan FS et al., Population pharmacokinetics of magnesiu…, American journal of obstetr… (2001) | [10.1067/mob.2001.116726](https://doi.org/10.1067/mob.2001.116726) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd, k12 left at base-class defaults</sub> | [Du_2019_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference.md) | held back | 2-compartment, IV | 4 (+3 cov.) | Du L et al., Population Pharmacokinetic Modeling to…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1328](https://doi.org/10.1002/jcph.1328) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Rower_2017_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Rower2017_reference.md) | — | 1-compartment (no model) | 1 | Rower JE et al., Clinical pharmacokinetics of magnesium…, European journal of clinica… (2017) | [10.1007/s00228-016-2165-3](https://doi.org/10.1007/s00228-016-2165-3) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Rower_2017_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Rower2017_reference.md) | — | 1-compartment (no model) | 1 | Rower JE et al., Clinical pharmacokinetics of magnesium…, European journal of clinica… (2017) | [10.1007/s00228-016-2165-3](https://doi.org/10.1007/s00228-016-2165-3) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Deng_2024_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Deng2024_reference.md) | — | 1-compartment (no model) | 3 | Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and childbirth (2024) | [10.1186/s12884-024-06620-x](https://doi.org/10.1186/s12884-024-06620-x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Du_2019_2_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019v2_reference.md) | — | 1-compartment (no model) | 0 | Du L et al., Alternative Magnesium Sulfate Dosing Re…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1448](https://doi.org/10.1002/jcph.1448) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Lu_2002_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Lu2002_reference.md) | — | 1-compartment (no model) | 0 | Lu J et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241130-00007](https://doi.org/10.2165/00003088-200241130-00007) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Rui_1996_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_Rui1996_reference.md) | — | 1-compartment (no model) | 0 | Rui JZ et al., [Population pharmacokinetics/pharmacody…, Yao xue xue bao = Acta phar… (1996) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [da_2020_reference](drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference.md) | — | 2-compartment (no model) | 3 | da Costa TX et al., Population Pharmacokinetics of Magnesiu…, Drugs in R&D (2020) | [10.1007/s40268-020-00315-2](https://doi.org/10.1007/s40268-020-00315-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=magnesium_sulfate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA1C (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,7 +69,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 28 matched, 20 returned
 - **screened:** 10  ·  **relevant:** 10
-- **records:** 10  ·  extracted 1  ·  needs review 4  ·  rejected 5  ·  stale 1
+- **records:** 10  ·  extracted 0  ·  needs review 5  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

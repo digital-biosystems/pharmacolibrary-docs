@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper explicitly states that serum cTnI concentrations remained stable in rats subjected to isoflurane/O2 anesthesia, indicating no pharmacodynamic effect, which contradicts the record's description of isoflurane stimulating cTnI. Consequently, the provided excerpts do not describe a valid mechanistic relationship or support the recorded parameters for this drug-response pair.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Mikaelian_2013`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`

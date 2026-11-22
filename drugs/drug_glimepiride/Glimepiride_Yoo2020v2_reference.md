@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record refused because the absorption rate constant and lag time for glimepiride were not reported, so library placeholders were used instead of explicit estimates.
+> Glimepiride’s absorption-rate constant (ka) was unreported and defaulted, so the record was held back despite a reported CL/F of 45.6 L/h.
 
 <div class="pk-model-meta" hidden drug="glimepiride" model-id="Glimepiride_Yoo2020v2_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="glimepiride" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Yoo H, Kim Y, Jang IJ, Yu KS, Lee S. Pharmacokinetic/Pharmacodynamic Interaction
 
 ### Reviewer guidance
 
-**Record refused because the absorption rate constant and lag time for glimepiride were not reported, so library placeholders were used instead of explicit estimates.**
+**Glimepiride’s absorption-rate constant (ka) was unreported and defaulted, so the record was held back despite a reported CL/F of 45.6 L/h.**
 
-The source text does not provide an explicit absorption rate constant, resulting in a default value being applied to the model. Similarly, the lag time was also defaulted, meaning no specific estimate from the study was utilized. These substitutions affect the simulated concentration-time profile but are not supported by the data extracted from this paper. Extracted — glimepiride: CL/F 45.6 L/h, V/F 1.87e+03 L.
+Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. The model also defaulted Tlag and used first-order depot input with apparent parameterization, assuming F=1, Fm=1, and no molar correction. The record reports glimepiride CL/F of 45.6 L/h and V/F of 1868.3478 L. Extracted — glimepiride: CL/F 45.6 L/h, V/F 1.87e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 0.97; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -127,15 +127,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=glimepiride) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=glimepiride) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

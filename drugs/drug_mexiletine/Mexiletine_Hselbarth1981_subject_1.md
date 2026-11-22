@@ -4,11 +4,11 @@
 
 # mexiletine — `Mexiletine_Hselbarth1981_subject_1`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:09 UTC (Rejected), but the paper was screened again on 2026-10-08 19:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected due to a dimension mismatch on the mexiletine elimination rate constant, compounded by unconvertible units.
+> Mexiletine record rejected due to unit dimension mismatch on volume of distribution, listed as µg/ml/hr instead of litres.
 
-<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Hselbarth1981_subject_1" status="rejected" stale="true" population="healthy adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Hselbarth1981_subject_1" status="rejected" stale="false" population="healthy adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine in healthy subjects. Clinical pharmacology and therapeutics 29(6):729–736 (1981).
@@ -16,7 +16,7 @@ Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 200, 400, 432 mg, iv, oral, single.
 
@@ -42,7 +42,7 @@ Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,11 @@ Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine
 
 ### Reviewer guidance
 
-**Record rejected due to a dimension mismatch on the mexiletine elimination rate constant, compounded by unconvertible units.**
+**Mexiletine record rejected due to unit dimension mismatch on volume of distribution, listed as µg/ml/hr instead of litres.**
 
-The elimination rate constant is labeled k01, indicating an absorption process, yet its meaning defines it as the terminal phase parameter. The reported unit for this parameter could not be converted to standard SI units, leaving it without a valid value. Additionally, a second reader identified a conflicting lag time value not present in the initial extraction. Extracted — mexiletine: kel 2.35 1/h, tlag 0.685 hr, tmax 0.91 hr, Cmax 0.93 µg/ml, AUC∞ 7.7 µg/ml/hr, AUC 10 µg/ml/hr, V 74 L.
+The volume of distribution is recorded as 74.0 L, but the unit is misclassified as µg/ml/hr, causing a dimensional conflict with mass-volume. This unit error prevented the parameter from being processed with a standard SI value. Additionally, a second reader failed to extract Cmax, AUC, elimination rate, and lag time values. Extracted — mexiletine: kel 2.35 1/h, tlag 0.685 hr, tmax 0.91 hr, Cmax 0.93 µg/ml, AUC∞ 7.7 µg/ml/hr, AUC 10 µg/ml/hr, V 74 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0^inf: this record has 7.696, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0^inf: this record has 7.696, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -111,19 +111,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
 <details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc0^inf]` | 7.696 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc0c]` | 10.0 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 0.93 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k01 (hr)-]` | 2.345 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time 7]` |  | 0.904 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time τ]` | 0.685 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 0.91 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0^inf]` | 7.696 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0c]` | 10.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 0.93 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k01 (hr)-]` | 2.345 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time 7]` |  | 0.904 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time τ]` | 0.685 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.91 |  | only_one_extracted |
 
 </details>
 

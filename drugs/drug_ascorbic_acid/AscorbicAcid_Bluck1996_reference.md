@@ -4,11 +4,11 @@
 
 # ascorbic acid — `AscorbicAcid_Bluck1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-05 07:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ascorbic acid record lacks volume and clearance, and the AUC percentage 150.4 has an invalid unit causing dimension mismatch.
+> Ascorbic acid model lacks clearance and volume, and its AUC extrapolation parameter has a unit incompatible with its dimensionless definition.
 
-<div class="pk-model-meta" hidden drug="ascorbic acid" model-id="AscorbicAcid_Bluck1996_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ascorbic acid" model-id="AscorbicAcid_Bluck1996_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bluck LJ, Izzard AP, Bates CJ. Measurement of ascorbic acid kinetics in man using stable isotopes and gas chromatography/mass spectrometry. Journal of mass spectrometry : JMS 31(7):741–748 (1996).
@@ -36,7 +36,7 @@ Bluck LJ, Izzard AP, Bates CJ. Measurement of ascorbic acid kinetics in man usin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Bluck LJ, Izzard AP, Bates CJ. Measurement of ascorbic acid kinetics in man usin
 
 ### Reviewer guidance
 
-**Ascorbic acid record lacks volume and clearance, and the AUC percentage 150.4 has an invalid unit causing dimension mismatch.**
+**Ascorbic acid model lacks clearance and volume, and its AUC extrapolation parameter has a unit incompatible with its dimensionless definition.**
 
-The record is an exposure/outcome paper, not a compartmental population PK model, because it reports no distribution volume or clearance. The AUC%ext parameter has value 150.4 with unit 'e', which could not be converted to SI units. Consequently, the parameter reached the review without a valid SI value, triggering a dimension mismatch on this structural parameter. Extracted — ascorbic acid: AUC%ext 150 e.
+The record identifies ascorbic acid with a one-compartment structure but omits distribution volume and clearance, indicating it is an exposure/outcome paper rather than a compartmental population PK model. Additionally, the AUC extrapolation parameter is assigned a value of 150.4 with a unit that is dimensionally incompatible with its defined percentage meaning, causing a structural mismatch. Extracted — ascorbic acid: AUC%ext 150 e.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

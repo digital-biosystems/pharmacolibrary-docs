@@ -16,7 +16,7 @@ Alemtuzumab is a monoclonal antibody used to treat multiple sclerosis and chroni
 
 ## Start here
 
-> **Dong_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> paediatric and young adult patients undergoing allogeneic haematopoietic cell transplantation, n = &gt;=29. [Run it in the simulator](drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md?tab=Simulation) · [record](drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md)
+> **Dong_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> paediatric and young adult patients undergoing allogeneic haematopoietic cell transplantation. [Run it in the simulator](drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md?tab=Simulation) · [record](drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -25,8 +25,8 @@ Alemtuzumab is a monoclonal antibody used to treat multiple sclerosis and chroni
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Dong_2022_reference](drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Dong M et al., Model-informed precision dosing for ale…, British journal of clinical… (2022) | [10.1111/bcp.14955](https://doi.org/10.1111/bcp.14955) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Admiraal_2019_reference](drugs/drug_alemtuzumab/Alemtuzumab_Admiraal2019_reference.md) | — | 1-compartment (no model) | 6 | Admiraal R et al., Population Pharmacokinetics of Alemtuzu…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00782-0](https://doi.org/10.1007/s40262-019-00782-0) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Mould_2007_reference](drugs/drug_alemtuzumab/Alemtuzumab_Mould2007_reference.md) | — | 1-compartment (no model) | 4 | Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02914.x](https://doi.org/10.1111/j.1365-2125.2007.02914.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Admiraal_2019_reference](drugs/drug_alemtuzumab/Alemtuzumab_Admiraal2019_reference.md) | — | 1-compartment (no model) | 6 | Admiraal R et al., Population Pharmacokinetics of Alemtuzu…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00782-0](https://doi.org/10.1007/s40262-019-00782-0) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Mould_2007_reference](drugs/drug_alemtuzumab/Alemtuzumab_Mould2007_reference.md) | — | 1-compartment (no model) | 4 | Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02914.x](https://doi.org/10.1111/j.1365-2125.2007.02914.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -35,15 +35,6 @@ Alemtuzumab is a monoclonal antibody used to treat multiple sclerosis and chroni
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Dong_2022_ALC](drugs/drug_alemtuzumab/pd_Dong_2022_ALC.md) | absolute lymphocyte count ← alemtuzumab · direct Emax (saturable) effect | — | Dong M et al., Model-informed precision dosing for ale…, British journal of clinical… (2022) | [10.1111/bcp.14955](https://doi.org/10.1111/bcp.14955) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mould_2007_WBC](drugs/drug_alemtuzumab/pd_Mould_2007_WBC.md) | white blood cell (WBC) count ← alemtuzumab · indirect response — drug stimulates the production of white blood cell (WBC) count | model (no simulator) | Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02914.x](https://doi.org/10.1111/j.1365-2125.2007.02914.x) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2025_Tcells](drugs/drug_alemtuzumab/pd_van_2025_Tcells.md) | T cells ← alemtuzumab · indirect response — drug stimulates the loss of T cells | ▶ model + simulator | van Vugt LK et al., Alemtuzumab Exposure and T Lymphocyte D…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3714](https://doi.org/10.1002/cpt.3714) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alemtuzumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD52 (antibody), FCGR1A (binder), FCGR2A (binder), FCGR2B (binder), FCGR2C (binder), FCGR3A (binder), FCGR3B (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,7 +54,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 27 matched, 14 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 2
+- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

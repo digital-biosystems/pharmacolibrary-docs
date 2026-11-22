@@ -39,7 +39,7 @@ Doroshyenko O, Jetter A, Odenthal KP, Fuhr U. Clinical pharmacokinetics of trosp
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Doroshyenko O, Jetter A, Odenthal KP, Fuhr U. Clinical pharmacokinetics of trosp
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — trospium: Cmax 4 ng/mL, Fab 10 %, FG 26 % of the fasting area under the plasma concentration-time curve [AUC], CLR 29 L/h, CL 30 mL/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has trospium chloride, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trospium chloride, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -101,30 +101,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (3/21 fields) | 18 |
+| `gpt-oss-120b` | not confirmed | 0.143 (3/21 fields) | 18 |
 
 <details><summary>18 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[approximately 70% of total clearance]` |  | 70 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[creatinine clearance &lt; 30 ml/min]` |  | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[creatinine clearance]` | 30 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean bioavailability with food]` | 26 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean bioavailability]` | 10 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean elimination half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean elimination half-life]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean of 26% of the fasting area under the plasma concentration-time curve [auc]]` |  | 26 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean renal clearance]` | 29 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean renal clearance]` |  | 29 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean volume of distribution]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean volume of distribution]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peak plasma concentrations]` | 4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peak plasma concentrations]` |  | 4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the mean bioavailability]` |  | 10 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[time to reach cmax]` |  |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | trospium chloride | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | trospium chloride | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[approximately 70% of total clearance]` |  | 70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance &lt; 30 ml/min]` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` | 30 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean bioavailability with food]` | 26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean bioavailability]` | 10 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination half-life]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean of 26% of the fasting area under the plasma concentration-time curve [auc]]` |  | 26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean renal clearance]` | 29 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean renal clearance]` |  | 29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean volume of distribution]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean volume of distribution]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak plasma concentrations]` | 4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak plasma concentrations]` |  | 4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the mean bioavailability]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to reach cmax]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | trospium chloride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | trospium chloride | unknown | mismatch |
 
 </details>
 

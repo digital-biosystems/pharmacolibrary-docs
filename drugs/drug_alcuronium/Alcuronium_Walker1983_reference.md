@@ -16,7 +16,7 @@ Walker JS, Shanks C, Brown KF. Alcuronium kinetics and plasma concentration-effe
 
 ## Population and dosing
 
-**Population:** surgical patients · condition surgical · age group adult · n = &gt;=12.
+**Population:** surgical patients · condition surgical · age group adult.
 
 ## Model
 

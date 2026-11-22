@@ -5,11 +5,11 @@
 
 # Lumefantrine — `Lumefantrine_Ding2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:45 UTC (Not simulated), but the paper was screened again on 2026-10-07 07:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lumefantrine clearance was omitted because its reported unit could not be converted to standard SI units.
+> Lumefantrine’s mean transit time of 5.43 lacked a usable unit, and artemether’s apparent clearance of 79.3 L/h failed its comparison.
 
-<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ding2026_reference" status="needs_review" stale="true" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="lumefantrine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ding2026_reference" status="needs_review" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="lumefantrine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Population pharmacokinetics of artemether-lumefantrine plus amodiaquine in patients with uncomplicated Plasmodium falciparum malaria. British journal of clinical pharmacology 92(2):589–605 (2026).
@@ -25,10 +25,10 @@ Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Pop
 
 ## Model
 
-**Structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** CL/F, Q/F, Q2/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 25 extracted.  
-**Availability:** Model available in **Models**; browser simulation unavailable.
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -63,7 +63,7 @@ Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.435). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.435). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,13 +73,13 @@ Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Pop
 
 ### Reviewer guidance
 
-**Lumefantrine clearance was omitted because its reported unit could not be converted to standard SI units.**
+**Lumefantrine’s mean transit time of 5.43 lacked a usable unit, and artemether’s apparent clearance of 79.3 L/h failed its comparison.**
 
-The clearance for lumefantrine, reported as 4.35 L/h, failed unit conversion, causing the parameter to be excluded. This omission left eight parameters, including this clearance and bioavailability, uncovered by the model structure. The record contains no simulated results, and the second reader confirmed the presence of the 4.35 L/h value that was dropped. Extracted — lumefantrine: MTT 5.43 h, n_transit 5 LF, Fab 1, CL/F 4.35 L/h, V1/F 101 L, Q/F 1.65 L/h, V2/F 311 L; desbutyllumefantrine: CL/F 744 L/h, V1/F 8.53e+03 L, Q/F 1.1e+03 L/h; artemether: CL/F 79.3 L/h, V1/F 141 L, Q/F 21.7 L/h, V3/F 283 L; dihydroartemisinin: CL/F 255 L/h, V1/F 64.1 L; amodiaquine: kabs 1.93 1/h, CL/F 2.25e+03 L/h, Q/F 3.02e+03 L/h; desethylamodiaquine: CL/F 32.2 L/h, V1/F 1.26e+03 L, Q/F 117 L/h, V2/F 1.64e+03 L, Q2/F 37.3 L/h, V3/F 6.44e+03 L.
+The findings state that lumefantrine’s mean transit time has no usable unit, so its value cannot be converted and the model cannot use it. Artemether’s apparent clearance is 79.3 L/h, and its comparison failed at ratio 79.3. Extracted — lumefantrine: MTT 5.43 h, n_transit 5 LF, Fab 1, CL/F 4.35 L/h, V1/F 101 L, Q/F 1.65 L/h, V2/F 311 L; desbutyllumefantrine: CL/F 744 L/h, V1/F 8.53e+03 L, Q/F 1.1e+03 L/h; artemether: CL/F 79.3 L/h, V1/F 141 L, Q/F 21.7 L/h, V3/F 283 L; dihydroartemisinin: CL/F 255 L/h, V1/F 64.1 L; amodiaquine: kabs 1.93 1/h, CL/F 2.25e+03 L/h, Q/F 3.02e+03 L/h; desethylamodiaquine: CL/F 32.2 L/h, V1/F 1.26e+03 L, Q/F 117 L/h, V2/F 1.64e+03 L, Q2/F 37.3 L/h, V3/F 6.44e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemether-lumefantrine plus amodiaquine, the second reading lumefantrine; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -117,9 +117,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - table section iiv: 'Mean transit time (h)' routed out of structural estimates ('CV for IIV/ISV')
@@ -310,28 +307,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C9_phys_window_Q82 | pass | volume within physiological range | 311 L |  |  | ['bcp70301-tbl-0004:row9:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 1.64e+03 L |  |  | ['Ding_2026_table_3:row13:col1'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 20 scholar param(s) emitted or defaulted | 12 covered | neither emitted nor in defaulted[]: ['V1/F', 'V2/F', 'V1/F', 'V1/F', 'V1/F', 'kabs', 'V1/F', 'V2/F'] |
-| T3_shared_parameters |  | pass | 9 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.94 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.85 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.82 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 17.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 187 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 139 |  | no simulated metric for this quantity (single reference sim) |
-
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -346,36 +321,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference/Lumefantrine_Ding2026_reference_modelica.zip" download>Lumefantrine_Ding2026_reference_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference/Lumefantrine_Ding2026_reference_matlab.zip" download>Lumefantrine_Ding2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference/Lumefantrine_Ding2026_reference_matlab_simbio.zip" download>Lumefantrine_Ding2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference/Lumefantrine_Ding2026_reference_sbml.zip" download>Lumefantrine_Ding2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference/Lumefantrine_Ding2026_reference_cellml.zip" download>Lumefantrine_Ding2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Population pharmacokinetics of artemether-lumefantrine plus amodiaquine in patients with uncomplicated Plasmodium falciparum malaria. British journal of clinical pharmacology 92(2):589–605 (2026). [doi:10.1002/bcp.70301](https://doi.org/10.1002/bcp.70301)
-
-**This record:** Pharmacolibrary, model `Lumefantrine_Ding2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference>
-
-```bibtex
-@misc{pharmacolibrary_LumefantrineDing2026reference,
-  title  = {{Pharmacolibrary model Lumefantrine_Ding2026_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference},
-  note   = {Parameters from doi:10.1002/bcp.70301},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

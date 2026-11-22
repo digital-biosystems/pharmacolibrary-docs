@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Veliparib's metabolite M8 has zero compartments, leaving it unlinked and unreachable from the dose.
+> Veliparib metabolism to M8 lacks a defined link parameter, and the peripheral volume of 98.7 L contradicts the second reader's 48.3 L assessment.
 
 <div class="pk-model-meta" hidden drug="veliparib" model-id="Veliparib_Niu2017_reference" status="rejected" stale="false" population="patients with BRCA 1/2-mutated cancer or PARP-sensitive tumor types" measured-compound="veliparib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Niu J, Scheuerell C, Mehrotra S, Karan S, Puhalla S, Kiesel BF et al. Parent-Met
 
 ## Population and dosing
 
-**Population:** patients with BRCA 1/2-mutated cancer or PARP-sensitive tumor types · condition cancer · age group adult · n = ${71}.
+**Population:** patients with BRCA 1/2-mutated cancer or PARP-sensitive tumor types · condition cancer · age group adult.
 
 ## Model
 
@@ -46,9 +46,9 @@ Niu J, Scheuerell C, Mehrotra S, Karan S, Puhalla S, Kiesel BF et al. Parent-Met
 
 ### Reviewer guidance
 
-**Veliparib's metabolite M8 has zero compartments, leaving it unlinked and unreachable from the dose.**
+**Veliparib metabolism to M8 lacks a defined link parameter, and the peripheral volume of 98.7 L contradicts the second reader's 48.3 L assessment.**
 
-The model defines M8 with a compartment count of 0, meaning it has no volume to hold drug mass, rendering it an orphan with no path from the parent drug. Consequently, the metabolic link from veliparib to M8 is invalid because the destination compartment does not exist. This structural flaw, combined with the abstract-only source of the parameters, led to the rejection of the record. Extracted — veliparib: CL 17.3 L/h, V2 98.7 L.
+The metabolite M8 is structurally present but has no quantified metabolic clearance linking it to the parent drug. The record abstracts the abstract, substituting summary statistics for fitted parameters, which obscures the true model fit. The second reader also disputed the assignment of the 98.7 L volume parameter, suggesting it might refer to the central rather than peripheral compartment. Extracted — veliparib: CL 17.3 L/h, V2 98.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has veliparib, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

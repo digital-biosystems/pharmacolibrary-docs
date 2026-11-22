@@ -16,7 +16,7 @@ Asano K, Nakade S, Shiomi T, Nakajima T, Suzuki Y, Fukunaga K et al. Impact of p
 
 ## Population and dosing
 
-**Population:** Japanese adults with moderate to severe asthma · condition asthma · age group adult · n = , 50.
+**Population:** Japanese adults with moderate to severe asthma · condition asthma · age group adult.
 
 ## Model
 

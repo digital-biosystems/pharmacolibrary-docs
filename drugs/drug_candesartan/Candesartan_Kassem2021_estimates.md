@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The candesartan record was held back because covariate scenarios for weight and eGFR were not simulated, leaving the clearance model unverified against its defined predictors.
+> The record was held because the second reader could not identify the dose compound, resulting in a 0.818 agreement score.
 
 <div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Kassem2021_estimates" status="needs_review" stale="false" population="patients with chronic heart failure" measured-compound="candesartan" parameterization="apparent" topology="1C"></div>
 
@@ -60,9 +60,9 @@ Kassem I, Sanche S, Li J, Bonnefois G, Dubé MP, Rouleau JL et al. Population Ph
 
 ### Reviewer guidance
 
-**The candesartan record was held back because covariate scenarios for weight and eGFR were not simulated, leaving the clearance model unverified against its defined predictors.**
+**The record was held because the second reader could not identify the dose compound, resulting in a 0.818 agreement score.**
 
-The record defines covariate effects for weight (exponents 0.642 and 0.36) and eGFR (exponents 0.56 and 0.963) on apparent clearance. However, the model builder only simulated the reference individual, meaning these specific covariate relationships were never exercised. Additionally, the second reader could not confirm candesartan as the primary analyte, leaving the dose-compound link unresolved. Extracted — candesartan: CL/F 8.63 L/h, V/F 12.5 L, kabs 0.131 h -1, tlag 0.165 h.
+The record lists candesartan as the measured compound and dose compound, but the second reader marked the primary analyte as unknown. This discrepancy caused the cross-check to fail with an agreement ratio of 0.818, where 0 of 1 readers agreed on the verdict. Additionally, the model did not simulate the defined weight and eGFR covariate effects, leaving those structural components unexercised. Extracted — candesartan: CL/F 8.63 L/h, V/F 12.5 L, kabs 0.131 h -1, tlag 0.165 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has candesartan, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -160,7 +160,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=candesartan) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | pass | 6.2 | 5.291 | 0.8534 | hours→SI vs simulated h |
 
 <details class="legend">

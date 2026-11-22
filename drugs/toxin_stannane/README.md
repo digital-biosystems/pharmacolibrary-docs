@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Coco_2019_Viability](drugs/toxin_stannane/pd_Coco_2019_Viability.md) | cell viability ← bromotributyl stannane · inhibition effect | — | Coco RM et al., Acute retinal toxicity associated with…, The British journal of opht… (2019) | [10.1136/bjophthalmol-2017-311471](https://doi.org/10.1136/bjophthalmol-2017-311471) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.00).">human + animal</span> | [Coco_2019_Viability](drugs/toxin_stannane/pd_Coco_2019_Viability.md) | cell viability ← bromotributyl stannane · inhibition effect | — | Coco RM et al., Acute retinal toxicity associated with…, The British journal of opht… (2019) | [10.1136/bjophthalmol-2017-311471](https://doi.org/10.1136/bjophthalmol-2017-311471) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

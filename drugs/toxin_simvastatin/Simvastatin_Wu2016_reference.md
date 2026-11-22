@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Simvastatin&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/&quot;},{&quot;label&quot;:&quot;Wu_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Simvastatin — `Simvastatin_Wu2016_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's time of the peak (tmax).
 
-<div class="pk-model-meta" hidden drug="Simvastatin" model-id="Simvastatin_Wu2016_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="Simvastatin" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Simvastatin" model-id="Simvastatin_Wu2016_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="Simvastatin" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Wu K, Xu J, Fong R, Yao X, Xu Y, Guiney W et al. Evaluation of the safety, pharmacokinetics, pharmacodynamics, and drug-drug interaction potential of a selective Lp-PLA2 inhibitor (GSK2647544) in healthy volunteers. International journal of clinical pharmacology and therapeutics 54(12):935-949 (2016).
@@ -29,6 +29,8 @@ Wu K, Xu J, Fong R, Yao X, Xu Y, Guiney W et al. Evaluation of the safety, pharm
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax (ng/mL) | Cmax | 2.30 | ng/mL |
@@ -38,7 +40,7 @@ Wu K, Xu J, Fong R, Yao X, Xu Y, Guiney W et al. Evaluation of the safety, pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +48,13 @@ Wu K, Xu J, Fong R, Yao X, Xu Y, Guiney W et al. Evaluation of the safety, pharm
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's time of the peak (tmax).**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — simvastatin: Cmax 2.3 ng/mL, t1/2z 16 hours, V 0.56 L/kg, kabs 4.23 h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -114,6 +122,32 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Wu_2016:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 39.2 L | ['Wu_2016:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Simvastatin) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 1,882 | 0.9964 |  | unresolved concentration unit (exp '-fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.8 | 0.9964 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.9964 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.9964 |  | non-numeric value |
+| T1_t_half_terminal | reference | skipped |  | 16 |  | non-numeric value |
+| T1_t_half_terminal | reference | skipped |  | 16 |  | non-numeric value |
+| T1_t_half_terminal | reference | pass | 16 | 16 | 1 | hours→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
+| T1_tmax | reference | fail | 2 | 0.1833 | 0.0917 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 4 | 0.1833 | 0.0458 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 0.1833 | 0.0917 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 0.1833 | 0.0917 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 4 | 0.1833 | 0.0458 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 6 | 0.1833 | 0.0306 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 0.1833 | 0.0917 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

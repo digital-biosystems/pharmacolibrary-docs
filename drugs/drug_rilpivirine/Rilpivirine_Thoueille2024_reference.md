@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Rilpivirine terminal half-life mismatch and library defaults for bioavailability and lag time caused the refusal.
+> The model does not reproduce the paper's terminal half-life; f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="rilpivirine" model-id="Rilpivirine_Thoueille2024_reference" status="needs_review" stale="false" population="people with HIV in routine clinical care" measured-compound="rilpivirine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Thoueille P, Saldanha SA, Schaller F, Choong E, Veuve F, Munting A et al. Popula
 
 ### Reviewer guidance
 
-**Rilpivirine terminal half-life mismatch and library defaults for bioavailability and lag time caused the refusal.**
+**The model does not reproduce the paper's terminal half-life; f use library defaults, not estimates from this paper (+2 more).**
 
-The simulated terminal half-life of 323.89669854675725 hours exceeded the expected values of 17.0 and 240.0 hours. The record lacks explicit estimates for oral bioavailability and lag time, relying on library defaults instead. A secondary reader disagreed on the identification of the intercompartmental clearance parameter and the existence of a fourth volume parameter. Extracted — rilpivirine: Frel 65.4, D1 4 h, kabs 0.00214 h−1, V3 277 L, Q 4.08 L/h, CL 6.74 L/h, V 0.2 L/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — rilpivirine: Frel 65.4, D1 4 h, kabs 0.00214 h−1, V3 277 L, Q 4.08 L/h, CL 6.74 L/h, V 0.2 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[doral].parameter_id`: this record has Q310, the second reading Q57; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -177,7 +177,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=rilpivirine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | skipped |  | 323.9 |  | non-numeric value |
 | T1_t_half_terminal | reference | fail | 17 | 323.9 | 19.05 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 240 | 323.9 | 1.35 | h→SI vs simulated h |

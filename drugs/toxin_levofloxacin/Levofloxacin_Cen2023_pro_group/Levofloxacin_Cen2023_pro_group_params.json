@@ -12,6 +12,14 @@
  "paper_doses_mg": [
   3500.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Cen_2023:other_prose",
+    "value_si": 71.2
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "MM": 0.361373,

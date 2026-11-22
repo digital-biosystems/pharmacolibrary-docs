@@ -74,7 +74,7 @@ Intermediate Oral: 0.01 mg/kg/day
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-17 18:17 | 1:47:30 | 2/5/0 | 2/0/0 | 0/0/0 | 2,973,151/151,733 | einfracz / qwen3.8-flash-next | 93 | 22/60 | 93/0 | 0 |
+| 2026-11-17 18:17 | 1:47:30 | 2/5/0 | 4/0/0 | 0/0/0 | 2,973,151/151,733 | einfracz / qwen3.8-flash-next | 93 | 22/60 | 93/0 | 0 |
 
 ## Coverage
 

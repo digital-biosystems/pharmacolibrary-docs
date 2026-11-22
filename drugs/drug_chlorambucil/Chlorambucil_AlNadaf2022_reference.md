@@ -4,11 +4,11 @@
 
 # chlorambucil — `Chlorambucil_AlNadaf2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> This record was reviewed on 2026-11-07 16:46 UTC (Rejected), but the paper was screened again on 2026-10-07 16:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="chlorambucil" model-id="Chlorambucil_AlNadaf2022_reference" status="needs_review" stale="true" population="cats with indolent lymphoproliferative malignancies" measured-compound="chlorambucil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chlorambucil" model-id="Chlorambucil_AlNadaf2022_reference" status="needs_review" stale="false" population="cats with indolent lymphoproliferative malignancies" measured-compound="chlorambucil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Al-Nadaf S, Wittenburg LA, Skorupski KA, Burton JH. Population pharmacokinetics identifies rapid gastrointestinal absorption and plasma clearance of oral chlorambucil administered to cats with indolent lymphoproliferative malignancies. American journal of veterinary research 83(11):1–9 (2022).
@@ -16,7 +16,7 @@ Al-Nadaf S, Wittenburg LA, Skorupski KA, Burton JH. Population pharmacokinetics 
 
 ## Population and dosing
 
-**Population:** cats with indolent lymphoproliferative malignancies · condition lymphoproliferative malignancies · n = ?.
+**Population:** cats with indolent lymphoproliferative malignancies · condition lymphoproliferative malignancies.
 
 > **Species: cat.** This record comes from an animal study (cat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -37,7 +37,7 @@ Al-Nadaf S, Wittenburg LA, Skorupski KA, Burton JH. Population pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Al-Nadaf S, Wittenburg LA, Skorupski KA, Burton JH. Population pharmacokinetics 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chlorambucil: Cmax 170 ng/mL, t1/2z 1.8 hours.
 
 Independently confirmed by `gpt-oss-120b`.
 

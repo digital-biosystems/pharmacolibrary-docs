@@ -16,7 +16,7 @@ Neale MG, Brown K, Hodder RW, Auty RM. The pharmacokinetics of sodium cromoglyca
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=4.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

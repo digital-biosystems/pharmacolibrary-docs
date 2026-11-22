@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;valproic acid&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/&quot;},{&quot;label&quot;:&quot;Zang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ValproicAcid_Huo2025_reference&quot;,&quot;label&quot;:&quot;Huo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ValproicAcid_Zang2022_reference&quot;,&quot;label&quot;:&quot;Zang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/ValproicAcid_Zang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ValproicAcid_Zang2022_reference&quot;,&quot;label&quot;:&quot;Zang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/ValproicAcid_Zang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;ValproicAcid_Huo2025_reference&quot;,&quot;label&quot;:&quot;Huo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held because the apparent clearance value of 0.46 L/h lacks a specified dosing compound.
+> Second reader disagreed on apparent clearance, distribution volume, and absorption rate constant values extracted from the valproic acid abstract.
 
 <div class="pk-model-meta" hidden drug="valproic acid" model-id="ValproicAcid_Zang2022_reference" status="needs_review" stale="false" population="adult Chinese patients with bipolar disorder" measured-compound="valproic_acid" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Zang YN, Guo W, Niu MX, Bao S, Wang Q, Wang Y et al. Population pharmacokinetics
 
 ## Population and dosing
 
-**Population:** adult Chinese patients with bipolar disorder · age group adult · n = condition: bipolar disorder.
+**Population:** adult Chinese patients with bipolar disorder · age group adult.
 
 ## Model
 
@@ -50,9 +50,9 @@ Zang YN, Guo W, Niu MX, Bao S, Wang Q, Wang Y et al. Population pharmacokinetics
 
 ### Reviewer guidance
 
-**The record was held because the apparent clearance value of 0.46 L/h lacks a specified dosing compound.**
+**Second reader disagreed on apparent clearance, distribution volume, and absorption rate constant values extracted from the valproic acid abstract.**
 
-The model for valproic acid relies on abstract-only data, causing a disagreement on the dose compound. The record identifies valproic acid, but the second reader marked the dosing compound as unknown. Consequently, the deviation check failed, preventing the publication of the parameterized model. Extracted — valproic acid: allometric_exponent 0.56 exponent, kabs 0.18 h-1, CL/F 0.46 L/h, V/F 12.8 L.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disputed the extracted parameters for apparent clearance (0.46 L/h), distribution volume (12.84 L), and absorption rate constant (0.18 h-1). Additionally, the second reader could not identify the primary analyte or dose compound from the abstract. Extracted — valproic acid: allometric_exponent 0.56 exponent, kabs 0.18 h-1, CL/F 0.46 L/h, V/F 12.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has valproic_acid, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -142,15 +142,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=valproic_acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-001: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=valproic_acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

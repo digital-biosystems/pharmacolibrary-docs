@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03B&quot;,&quot;href&quot;:&quot;atc/H03B.md&quot;},{&quot;label&quot;:&quot;thiamazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiamazole_Kharouba2025_reference&quot;,&quot;label&quot;:&quot;Kharouba_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiamazole_Kharouba2025_reference&quot;,&quot;label&quot;:&quot;Kharouba_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # thiamazole
 
@@ -22,33 +22,12 @@ Thiamazole is an antithyroid medication used to treat hyperthyroidism, goiter, a
 |---|---|---|---|---|---|---|
 | methimazole (thiamazole) | parent | 114.166 | C4H6N2S | PubChem | [1349907](https://pubchem.ncbi.nlm.nih.gov/compound/1349907) | Okamura_1986 |
 
-## Start here
-
-> **Kharouba_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md?tab=Simulation) · [record](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kharouba_2025_reference](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kharouba M et al., The Impact of Augmented Renal Clearance…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70007](https://doi.org/10.1002/jcph.70007) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Kharouba_2025_reference](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kharouba M et al., The Impact of Augmented Renal Clearance…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70007](https://doi.org/10.1002/jcph.70007) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Okamura_1986_reference](drugs/drug_thiamazole/Thiamazole_Okamura1986_reference.md) | — | 1-compartment (no model) | 0 | Okamura Y et al., Pharmacokinetics of methimazole in norm…, Endocrinologia japonica (1986) | [10.1507/endocrj1954.33.605](https://doi.org/10.1507/endocrj1954.33.605) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=thiamazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `FMO3` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: TPO (inhibitor), TPO (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,13 +41,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:02 | 13:13 | 1/1/0 | 0/0/0 | 0/0/0 | 477,545/17,825 | einfracz / qwen3.8-27b | 18 | 2/14 | 18/0 | 0 |
+| 2026-10-07 10:02 | 13:13 | 0/2/0 | 0/0/0 | 0/0/0 | 477,545/17,825 | einfracz / qwen3.8-27b | 18 | 2/14 | 18/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 690 matched, 82 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -31,33 +31,17 @@ Tenofovir disoproxil is a nucleoside reverse transcriptase inhibitor used to tre
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Tlag, k12 left at base-class defaults</sub> | [Bouazza_2011_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Bouazza2011_reference.md) | held back | 2-compartment, oral | 5 | Bouazza N et al., Population pharmacokinetics of tenofovi…, Journal of acquired immune… (2011) | [10.1097/QAI.0b013e3182302ea8](https://doi.org/10.1097/QAI.0b013e3182302ea8) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Mugwanya_2025_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Mugwanya2025_reference.md) | — | 1-compartment (no model) | 1 | Mugwanya KK et al., Adherence thresholds for emtricitabine-…, PLoS medicine (2025) | [10.1371/journal.pmed.1004732](https://doi.org/10.1371/journal.pmed.1004732) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Burns_2015_base](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Burns2015_base.md) | — | parent + metabolite (no model) | 7 | Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical pharmac… (2015) | [10.1002/jcph.461](https://doi.org/10.1002/jcph.461) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Burns2015_final.md) | — | parent + metabolite (no model) | 7 (+1 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Burns_2015_base](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Burns2015_base.md) | — | parent + metabolite (no model) | 7 | Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical pharmac… (2015) | [10.1002/jcph.461](https://doi.org/10.1002/jcph.461) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Burns2015_final.md) | — | parent + metabolite (no model) | 7 (+1 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Jayachandran_2021_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Jayachandran2021_reference.md) | — | general linear (no model) | 0 | Jayachandran P et al., A Mechanistic In Vivo/Ex Vivo Pharmacok…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12583](https://doi.org/10.1002/psp4.12583) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Rungtivasuwan_2017_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Rungtivasuwan2017_reference.md) | — | 1-compartment (no model) | 1 | Rungtivasuwan K et al., Pharmacogenetics-based population pharm…, Pharmacogenomics (2017) | [10.2217/pgs-2017-0128](https://doi.org/10.2217/pgs-2017-0128) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Scott_2023_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Scott2023_reference.md) | — | general linear (no model) | 5 | Scott RK et al., Clinical trial simulation to evaluate t…, Frontiers in reproductive h… (2023) | [10.3389/frph.2023.1224580](https://doi.org/10.3389/frph.2023.1224580) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Rungtivasuwan_2017_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Rungtivasuwan2017_reference.md) | — | 1-compartment (no model) | 1 | Rungtivasuwan K et al., Pharmacogenetics-based population pharm…, Pharmacogenomics (2017) | [10.2217/pgs-2017-0128](https://doi.org/10.2217/pgs-2017-0128) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Scott_2023_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Scott2023_reference.md) | — | general linear (no model) | 5 | Scott RK et al., Clinical trial simulation to evaluate t…, Frontiers in reproductive h… (2023) | [10.3389/frph.2023.1224580](https://doi.org/10.3389/frph.2023.1224580) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jayachandran_2021_p24](drugs/drug_tenofovir_disoproxil/pd_Jayachandran_2021_p24.md) | cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) ← tenofovir-diphosphate (TFVdp) in rectal mononuclear cells (MMCs) · direct linear effect | ▶ model + simulator | Jayachandran P et al., A Mechanistic In Vivo/Ex Vivo Pharmacok…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12583](https://doi.org/10.1002/psp4.12583) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tenofovir_disoproxil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCC2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `ABCC2` substrate, `ABCC4` substrate, `SLC22A6` substrate, `SLC22A8` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCC2` substrate, `ABCC4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC10 (substrate), AK2 (substrate), AK4 (substrate), CKB (inducer), CKB (substrate), NME1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -77,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 119 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 5
-- **records:** 7  ·  extracted 0  ·  needs review 2  ·  rejected 5  ·  stale 4
+- **records:** 7  ·  extracted 0  ·  needs review 2  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

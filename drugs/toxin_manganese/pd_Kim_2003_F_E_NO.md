@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state the mechanism by which manganese acts on expired nitric oxide (FE NO), as no full text is available to clarify whether inhibition occurs via production or elimination pathways. The record indicates a log-linear model with an inhibition effect direction driven by manganese concentrations (μg/g creatinine), but no potency (IC50, EC50) or rate values (ke0, kout, kin) are provided in the excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kim_2003`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`

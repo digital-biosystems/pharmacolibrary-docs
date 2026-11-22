@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;midecamycin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midecamycin_DAgate2021_model_building&quot;,&quot;label&quot;:&quot;DAgate_2021_model_building&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midecamycin_DAgate2021_secondary_external_validation&quot;,&quot;label&quot;:&quot;DAgate_2021_secondary_external_validation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midecamycin_DAgate2021_model_building&quot;,&quot;label&quot;:&quot;DAgate_2021_model_building&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midecamycin_DAgate2021_secondary_external_validation&quot;,&quot;label&quot;:&quot;DAgate_2021_secondary_external_validation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # midecamycin
 
@@ -23,33 +23,12 @@ Midecamycin is a macrolide antibiotic used to treat systemic bacterial infection
 |---|---|---|---|---|---|---|
 | midecamycin | parent | 813.979 | C41H67NO15 | DrugBank | — | DAgate_2021 |
 
-## Start here
-
-> **DAgate_2021_model_building** — <span class="pk-badge pk-badge--neutral">Not simulated</span> model building *. [Run it in the simulator](drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md?tab=Simulation) · [record](drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [DAgate_2021_model_building](drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md) | ▶ model + simulator | 1-compartment, IV | 2 | D'Agate S et al., Simplified Dosing Regimens for Gentamic…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.624662](https://doi.org/10.3389/fphar.2021.624662) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [↳ secondary_external_validation](drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=midecamycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | prostate gland | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [DAgate_2021_model_building](drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md) | ▶ model + simulator | 1-compartment, IV | 2 | D'Agate S et al., Simplified Dosing Regimens for Gentamic…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.624662](https://doi.org/10.3389/fphar.2021.624662) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [↳ secondary_external_validation](drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,13 +42,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 11:20 | 3:50 | 2/0/0 | 0/0/0 | 0/0/0 | 48,149/11,300 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-13 11:20 | 3:50 | 0/2/0 | 0/0/0 | 0/0/0 | 48,149/11,300 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 26 matched, 24 returned
 - **screened:** 2  ·  **relevant:** 0
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;colistin&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/&quot;},{&quot;label&quot;:&quot;Ma_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colistin_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/Colistin_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colistin_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/Colistin_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # colistin — `Colistin_Ma2026_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="colistin" model-id="Colistin_Ma2026_reference" status="simulated" stale="false" population="critically ill patients with CRO infections" measured-compound="colistin sulfate" parameterization="mechanistic" topology="1C"></div>
+> The colistin sulfate clearance and volume parameters were not independently verified, leading to a disputed review verdict.
+
+<div class="pk-model-meta" hidden drug="colistin" model-id="Colistin_Ma2026_reference" status="needs_review" stale="false" population="critically ill patients with CRO infections" measured-compound="colistin sulfate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ma Y, Wang Y, Wu X, Wang J, Pang Y, Jia Y et al. Optimizing Colistin Sulfate Dosing in Severe Infections: A Population Pharmacokinetic Model-Guided Approach. Drug design, development and therapy 20:600942 (2026).
@@ -15,7 +17,7 @@ Ma Y, Wang Y, Wu X, Wang J, Pang Y, Jia Y et al. Optimizing Colistin Sulfate Dos
 
 ## Population and dosing
 
-**Population:** critically ill patients with CRO infections · condition severe infections · age group adult · n = &gt;=51.
+**Population:** critically ill patients with CRO infections · condition severe infections · age group adult.
 
 ## Model
 
@@ -27,6 +29,8 @@ Ma Y, Wang Y, Wu X, Wang J, Pang Y, Jia Y et al. Optimizing Colistin Sulfate Dos
 <figure class="pk-models-diagram"><img src="drugs/drug_colistin/Colistin_Ma2026_reference/Colistin_Ma2026_reference.svg" alt="Colistin_Ma2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Typical values of clearance (CL) | CL | 1.66 | L/h |
@@ -34,7 +38,7 @@ Ma Y, Wang Y, Wu X, Wang J, Pang Y, Jia Y et al. Optimizing Colistin Sulfate Dos
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +48,13 @@ Ma Y, Wang Y, Wu X, Wang J, Pang Y, Jia Y et al. Optimizing Colistin Sulfate Dos
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The colistin sulfate clearance and volume parameters were not independently verified, leading to a disputed review verdict.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed with the identification of the dose compound and analyte as colistin sulfate, marking them as unknown. Additionally, the second reader failed to confirm the specific parameter values for clearance (1.66 L/h) and volume (10.1 L) during the cross-check. Extracted — colistin: CL 1.66 L/h, V 10.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has colistin sulfate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -118,14 +122,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=colistin sulfate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=colistin sulfate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

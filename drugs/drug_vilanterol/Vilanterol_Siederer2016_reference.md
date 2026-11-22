@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/&quot;},{&quot;label&quot;:&quot;Siederer_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Kempsford_2014_HR&quot;,&quot;label&quot;:&quot;Kempsford_2014 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Kempsford_2014_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kempsford_2014_QTcF&quot;,&quot;label&quot;:&quot;Kempsford_2014 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Llanos_Paez_2023_FEV1&quot;,&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vilanterol clearance and volume parameters show implausible magnitudes (1 h⁻¹, 144.0 mL) due to unit/scale extraction errors.
+> Vilanterol’s recorded distribution volume, 144.0 mL, was rejected because the clearance/volume magnitude was flagged as implausible from a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="Vilanterol" model-id="Vilanterol_Siederer2016_reference" status="rejected" stale="false" population="COPD patients and healthy subjects" measured-compound="vilanterol" parameterization="mechanistic" topology="1C"></div>
 
@@ -40,7 +39,7 @@ Siederer S, Allen A, Yang S. Population Pharmacokinetics of Inhaled Fluticasone 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +49,13 @@ Siederer S, Allen A, Yang S. Population Pharmacokinetics of Inhaled Fluticasone 
 
 ### Reviewer guidance
 
-**Vilanterol clearance and volume parameters show implausible magnitudes (1 h⁻¹, 144.0 mL) due to unit/scale extraction errors.**
+**Vilanterol’s recorded distribution volume, 144.0 mL, was rejected because the clearance/volume magnitude was flagged as implausible from a unit or scale extraction error.**
 
-The elimination rate constant is recorded as 1 h⁻¹ and the volume of distribution as 144.0 mL, both falling outside physiological windows. A second reader indicated these values were likely misextracted from the source text. The record was rejected because the parameter magnitudes are implausible for the compound. Extracted — vilanterol: kabs 1 h−1, kel 1 h−1, k21 1 h−1, V 144 mL.
+The record gives a distribution volume of 144.0 mL and an elimination rate constant of 1 h−1; the finding flags the clearance/volume magnitude as outside the physiological window. The dose-normalised AUC has no recorded value. Extracted — vilanterol: kabs 1 h−1, kel 1 h−1, k21 1 h−1, V 144 mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vilanterol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vilanterol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -224,20 +223,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['', '', '']] | mismatch |
-| `gpt-oss:120b` | `parameters[100].parameter_id` | Q47 | Q49 | mismatch |
-| `gpt-oss:120b` | `parameters[200]` | 1 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[50].parameter_id` | Q49 | Q50 | mismatch |
-| `gpt-oss:120b` | `parameters[ff dosea/race1b].parameter_id` | Q189 | Q88 | mismatch |
-| `gpt-oss:120b` | `parameters[mean differences]` | 144.0 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | vilanterol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | vilanterol | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[100].parameter_id` | Q47 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[200]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[50].parameter_id` | Q49 | Q50 | mismatch |
+| `gpt-oss-120b` | `parameters[ff dosea/race1b].parameter_id` | Q189 | Q88 | mismatch |
+| `gpt-oss-120b` | `parameters[mean differences]` | 144.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | vilanterol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | vilanterol | unknown | mismatch |
 
 </details>
 

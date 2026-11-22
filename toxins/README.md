@@ -4,9 +4,9 @@ A toxin has no ATC code, so the site groups toxins by their T3DB category — on
 
 ## [Polychlorinated biphenyls](toxins/PCB.md)
 
-PCB congeners: persistent industrial organochlorines. 34 toxins, 1 with records.
+PCB congeners: persistent industrial organochlorines. 35 toxins, 1 with records.
 
-- Benzenoids — 34
+- Benzenoids — 35
 
 ## [Cigarette toxins](toxins/CIG.md)
 
@@ -276,16 +276,17 @@ Pollutants taken in with air. 133 toxins, 75 with records.
 
 ## [Industrial and workplace toxins](toxins/IND.md)
 
-Solvents, metals and process chemicals. 331 toxins, 30 with records.
+Solvents, metals and process chemicals. 341 toxins, 33 with records.
 
 - Aluminium and its compounds — 18
 - Barium and its compounds — 12
 - Benzene and substituted derivatives — 1
-- Benzenoids — 73
+- Benzenoids — 75
+- Cobalt and its compounds — 1
 - Copper and its compounds — 4
 - Homogeneous non-metal compounds — 6
 - Hydrocarbon derivatives — 6
-- Hydrocarbons — 10
+- Hydrocarbons — 15
 - Indium and its compounds — 1
 - Inorganic salts — 1
 - Iron and its compounds — 5
@@ -301,13 +302,13 @@ Solvents, metals and process chemicals. 331 toxins, 30 with records.
 - Organic nitrogen compounds — 9
 - Organic oxygen compounds — 9
 - Organic salts — 2
-- Organohalogen compounds — 11
+- Organohalogen compounds — 12
 - Organoheterocyclic compounds — 14
 - Organometallic compounds — 25
 - Organonitrogen compounds — 1
 - Organooxygen compounds — 1
 - Organosulfur compounds — 1
-- Palladium and its compounds — 3
+- Palladium and its compounds — 4
 - Phenanthrolines — 1
 - Phenylpropanoids and polyketides — 1
 - Potassium and its compounds — 1

@@ -4,11 +4,11 @@
 
 # azilsartan medoxomil — `AzilsartanMedoxomil_Webb2016_cohort_3`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-07 07:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for azilsartan medoxomil is rejected because the central clearance parameter has a body-weight unit, and a metabolite is unlinked from the dose.
+> Azilsartan medoxomil record rejected because apparent clearance was recorded with mass units instead of volumetric flow per body weight.
 
-<div class="pk-model-meta" hidden drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Webb2016_cohort_3" status="rejected" stale="true" population="children and adolescents with hypertension and healthy adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Webb2016_cohort_3" status="rejected" stale="false" population="children and adolescents with hypertension and healthy adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokinetics and safety of azilsartan medoxomil in children and adolescents with hypertension as compared to healthy adults. European journal of clinical pharmacology 72(4):447-457 (2016).
@@ -16,7 +16,7 @@ Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokin
 
 ## Population and dosing
 
-**Population:** children and adolescents with hypertension and healthy adults · condition hypertension · age group mixed · n = : 29.
+**Population:** children and adolescents with hypertension and healthy adults · condition hypertension · age group mixed.
 
 **Dosing:** 20, 40, 60, 80 mg, oral, single.
 
@@ -42,7 +42,7 @@ Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokin
 
 ### Reviewer guidance
 
-**The record for azilsartan medoxomil is rejected because the central clearance parameter has a body-weight unit, and a metabolite is unlinked from the dose.**
+**Azilsartan medoxomil record rejected because apparent clearance was recorded with mass units instead of volumetric flow per body weight.**
 
-The apparent clearance for azilsartan is reported as 0.03 L/h/kg, which is a unit typically reserved for weight-normalized volume parameters rather than clearance. Additionally, the structure defines azilsartan as a metabolite formed from azilsartan medoxomil, but it remains unlinked from the dose administration. These structural and dimensional inconsistencies prevented the model from being validated. Extracted — azilsartan: AUC∞ 2.82e+04 mg/kg, Cmax 5.24e+03 ng/mL, CLm,norm/F 0.03 L/h/kg, V2/F 0.19 L/kg; M-II: Cmax 762 ng/mL.
+The apparent clearance parameter for azilsartan is listed with the unit mg/kg, which is dimensionally incorrect for a clearance value. This unit conflict, combined with the absence of a valid conversion for the recorded unit, meant the parameter could not be standardized. Additionally, the metabolite azilsartan was not structurally linked to the parent drug in the model. Extracted — azilsartan: AUC∞ 2.82e+04 mg/kg, Cmax 5.24e+03 ng/mL, CLm,norm/F 0.03 L/h/kg, V2/F 0.19 L/kg; M-II: Cmax 762 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azilsartan_medoxomil, the second reading azilsartan medoxomil; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

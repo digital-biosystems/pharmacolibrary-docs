@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The tralokinumab model was held back because its volume of distribution and absorption lag time parameters lacked extracted values, relying on placeholders instead.
+> Tralokinumab's volume of distribution and absorption lag time were left at placeholder defaults, quarantining the model.
 
 <div class="pk-model-meta" hidden drug="tralokinumab" model-id="Tralokinumab_Soehoel2022_reference" status="model_quarantined" stale="false" population="adults with atopic dermatitis, asthma, and healthy subjects" measured-compound="tralokinumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Soehoel A, Larsen MS, Timmermann S. Population Pharmacokinetics of Tralokinumab 
 
 ## Population and dosing
 
-**Population:** adults with atopic dermatitis, asthma, and healthy subjects · age group adult · n = &gt;.
+**Population:** adults with atopic dermatitis, asthma, and healthy subjects · age group adult.
 
 **Dosing:** 45, 150, 300, 600 mg, iv, sc, multiple, every 14 h.
 
@@ -52,9 +52,9 @@ Soehoel A, Larsen MS, Timmermann S. Population Pharmacokinetics of Tralokinumab 
 
 ### Reviewer guidance
 
-**The tralokinumab model was held back because its volume of distribution and absorption lag time parameters lacked extracted values, relying on placeholders instead.**
+**Tralokinumab's volume of distribution and absorption lag time were left at placeholder defaults, quarantining the model.**
 
-The record lists a central volume of 2.71 L and a peripheral volume of 1.44 L, but no explicit total volume of distribution or absorption lag time was captured. Consequently, the model builder used library placeholders for these missing parameters rather than specific estimates. A second reader also disagreed on the extraction of an equation variable related to bioavailability, though this did not affect the primary quarantine reason. Extracted — tralokinumab: kabs 0.184 1/day, V2 2.71 L, CL 0.149 L/day, V3 1.44 L, Q 0.159 L/day, Fab 0.761 bioavailability.
+The record lists parameters for a one-compartment structure but lacks explicit values for volume of distribution and absorption lag time. Additionally, the second reader disagreed on the covariate coefficient for absorption rate, where one reader found a value of -0.519 and the other found null. Extracted — tralokinumab: kabs 0.184 1/day, V2 2.71 L, CL 0.149 L/day, V3 1.44 L, Q 0.159 L/day, Fab 0.761 bioavailability.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f ∼ dilution f: this record has none, the second reading 0.354; it also differs on 1 more field. That field does not shape the model.
 
@@ -167,13 +167,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | 1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.895, 0 of 1 reader(s) agree | 0.895 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

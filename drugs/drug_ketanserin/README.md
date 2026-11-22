@@ -42,17 +42,8 @@ Ketanserin is a serotonin antagonist used as an antihypertensive and for chronic
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Michiels_1988_reference](drugs/drug_ketanserin/Ketanserin_Michiels1988_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1988) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Hanff_2005_reference](drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Hanff LM et al., Population pharmacokinetics of ketanser…, Fundamental & clinical phar… (2005) | [10.1111/j.1472-8206.2005.00354.x](https://doi.org/10.1111/j.1472-8206.2005.00354.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q18, Q17 — no SI value to build from</sub> | [Kurowski_1985_reference](drugs/drug_ketanserin/Ketanserin_Kurowski1985_reference.md) | — | parent + metabolite (no model) | 6 | Kurowski M, Bioavailability and pharmacokinetics of…, European journal of clinica… (1985) | [10.1007/BF00544359](https://doi.org/10.1007/BF00544359) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Trenk_1983_reference](drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Trenk D et al., Pharmacokinetics and pharmacodynamics o…, Journal of cardiovascular p… (1983) | [10.1097/00005344-198311000-00018](https://doi.org/10.1097/00005344-198311000-00018) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ketanserin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: HTR2A (inverse agonist).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q18, Q17 — no SI value to build from</sub> | [Kurowski_1985_reference](drugs/drug_ketanserin/Ketanserin_Kurowski1985_reference.md) | — | parent + metabolite (no model) | 6 | Kurowski M, Bioavailability and pharmacokinetics of…, European journal of clinica… (1985) | [10.1007/BF00544359](https://doi.org/10.1007/BF00544359) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Trenk_1983_reference](drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Trenk D et al., Pharmacokinetics and pharmacodynamics o…, Journal of cardiovascular p… (1983) | [10.1097/00005344-198311000-00018](https://doi.org/10.1097/00005344-198311000-00018) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -72,7 +63,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 701 matched, 95 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 1  ·  needs review 3  ·  rejected 0  ·  stale 1
+- **records:** 4  ·  extracted 1  ·  needs review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

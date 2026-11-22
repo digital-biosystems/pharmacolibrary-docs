@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> This epidemiological cross-sectional study associates blood concentrations of 1,2-dibromoethane (ng/L) with an increased risk of diabetes mellitus (OR 7.85, 95% CI 6.59–9.37), but it does not describe a pharmacodynamic mechanism or provide potency/rate parameters such as EC50 or Imax.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

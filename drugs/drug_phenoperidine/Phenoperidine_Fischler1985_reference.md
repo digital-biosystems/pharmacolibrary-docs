@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The phenoperidine model was held back because the one-compartment structure used a steady-state volume of 5.7 L/kg to estimate clearance, ignoring the reported 2.2 min distribution phase.
+> The cross-reader agreement of 0.417 for phenoperidine parameters triggered a review hold due to conflicting label assignments.
 
 <div class="pk-model-meta" hidden drug="phenoperidine" model-id="Phenoperidine_Fischler1985_reference" status="needs_review" stale="false" population="anaesthetized patients undergoing general surgery" measured-compound="phenoperidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Fischler M, Levron JC, Trang H, Vaxelaire JF, Flaisler B, Vourc'h G. Pharmacokin
 
 ## Population and dosing
 
-**Population:** anaesthetized patients undergoing general surgery · condition general surgery · age group adult · n = The mean distribution half-life (T1/2 alpha) for the five patients was short (2.2 min); the mean elimination half-life (T1/2 beta) was 193 min. The mean whole body clearance was 22 ml min-1 kg-1 and the apparent steady state distribution volume (VSS) was 5.7 litre kg-1. Secondary concentration peaks occurred in all patients; in two patients these were substantial and occurred 80 min after injection..
+**Population:** anaesthetized patients undergoing general surgery · condition general surgery · age group adult.
 
 ## Model
 
@@ -50,9 +50,9 @@ Fischler M, Levron JC, Trang H, Vaxelaire JF, Flaisler B, Vourc'h G. Pharmacokin
 
 ### Reviewer guidance
 
-**The phenoperidine model was held back because the one-compartment structure used a steady-state volume of 5.7 L/kg to estimate clearance, ignoring the reported 2.2 min distribution phase.**
+**The cross-reader agreement of 0.417 for phenoperidine parameters triggered a review hold due to conflicting label assignments.**
 
-The record relies on abstract-only statistics, substituting Vss (5.7 L/kg) for the central volume in a one-compartment framework. This structural mismatch means the fast distribution half-life (2.2 min) is not represented by the model, which only captures the 193 min elimination phase. Additionally, the second reader identified missing doses and parameter labeling inconsistencies that were not resolved in the current record. Extracted — phenoperidine: t1/2α 2.2 min, t1/2β 193 min, CL 22 L/h, Vss 5.7 litre kg-1.
+The record was built from the abstract alone, so reported summary statistics stand in for a fitted model. A second reader disagreed on the assignment of phenoperidine values, mapping the 2.2 min distribution half-life and 193 min elimination half-life to different parameter names than the current record. This discrepancy resulted in a cross-check agreement of 0.417, which is below the 0.5 threshold required for consensus. Extracted — phenoperidine: t1/2α 2.2 min, t1/2β 193 min, CL 22 L/h, Vss 5.7 litre kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bolus dose i.v.: this record has none, the second reading 2; it also differs on 6 more fields. That field does not shape the model.
 
@@ -134,14 +134,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=phenoperidine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=phenoperidine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial, agreement 0.417, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

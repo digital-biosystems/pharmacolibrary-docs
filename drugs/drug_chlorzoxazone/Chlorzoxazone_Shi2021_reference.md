@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;chlorzoxazone&quot;,&quot;href&quot;:&quot;drugs/drug_chlorzoxazone/&quot;},{&quot;label&quot;:&quot;Shi_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlorzoxazone_Shi2021_reference&quot;,&quot;label&quot;:&quot;Shi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chlorzoxazone/Chlorzoxazone_Shi2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlorzoxazone_Shi2021_reference&quot;,&quot;label&quot;:&quot;Shi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chlorzoxazone/Chlorzoxazone_Shi2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # chlorzoxazone — `Chlorzoxazone_Shi2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-07 02:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="chlorzoxazone" model-id="Chlorzoxazone_Shi2021_reference" status="extracted" stale="true" population="" measured-compound="chlorzoxazone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chlorzoxazone" model-id="Chlorzoxazone_Shi2021_reference" status="needs_review" stale="false" population="" measured-compound="chlorzoxazone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Shi Y, Meng D, Wang S, Geng P, Xu T, Zhou Q et al. Effects of Avitinib on CYP450 Enzyme Activity in vitro and in vivo in Rats. Drug design, development and therapy 15:3661–3673 (2021).
@@ -31,6 +31,8 @@ Shi Y, Meng D, Wang S, Geng P, Xu T, Zhou Q et al. Effects of Avitinib on CYP450
 <figure class="pk-models-diagram"><img src="drugs/drug_chlorzoxazone/Chlorzoxazone_Shi2021_reference/Chlorzoxazone_Shi2021_reference.svg" alt="Chlorzoxazone_Shi2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CLz/F(L/h/kg/) | CL/F | 1.23 | L/h/kg/ |
@@ -38,7 +40,7 @@ Shi Y, Meng D, Wang S, Geng P, Xu T, Zhou Q et al. Effects of Avitinib on CYP450
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by glm-5.3-flash (partly confirmed, agreement 0.9), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by glm-5.3-flash (partly confirmed, agreement 0.9), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +50,13 @@ Shi Y, Meng D, Wang S, Geng P, Xu T, Zhou Q et al. Effects of Avitinib on CYP450
 
 ### Reviewer guidance
 
-**The model defaults absorption parameters for chlorzoxaxone, contradicting the oral dosing implied by apparent clearance and volume estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record defines apparent oral clearance and volume for chlorzoxaxone but lacks a reported elimination half-life. The builder used library defaults for absorption rate and lag time, creating an invented absorption phase. This conflicts with the apparent parameterization and results in a structural inconsistency. Extracted — chlorzoxazone: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — chlorzoxazone: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q355: this record has none, the second reading 2.02. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -120,15 +122,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=chlorzoxazone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-001: not acceptable; dev-003: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=chlorzoxazone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

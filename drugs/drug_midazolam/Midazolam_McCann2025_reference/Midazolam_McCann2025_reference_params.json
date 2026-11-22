@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 15 mg oral (N05CD08)",
  "model_id": "Midazolam_McCann2025_reference",
  "molar_masses": {
   "central.C": 0.325767
@@ -8,29 +8,25 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  2.0
- ],
  "parameters": {
   "Cl": 4.138888888888889e-06,
   "F": 0.9,
   "MM": 0.325767,
-  "Tlag": 6840.0,
+  "Tlag": 72.0,
   "VdPerKg": 8.7e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 2e-06,
+  "adminMass": 1.5e-05,
   "k12": 0.0020844736361977745,
   "k21": 0.0003679549114331723,
-  "ka": 3.888888888888889e-05,
+  "ka": 0.00014444444444444444,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 51770.74148296593
+  "central.C": 19392.38476953908
  },
  "reference_peaks": {
-  "central.C": 2.976893508333842e-06
+  "central.C": 2.986951599420568e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

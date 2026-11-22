@@ -17,7 +17,7 @@ Kirchheiner J, Bauer S, Meineke I, Rohde W, Prang V, Meisel C et al. Impact of C
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=23.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

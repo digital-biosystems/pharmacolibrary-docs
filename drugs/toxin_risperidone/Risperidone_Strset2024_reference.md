@@ -164,30 +164,13 @@ Risperidone clearance and absorption lag time lacked explicit values, so library
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Strset2024_reference/Risperidone_Strset2024_reference_matlab.zip" download>Risperidone_Strset2024_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Strset2024_reference/Risperidone_Strset2024_reference_matlab_simbio.zip" download>Risperidone_Strset2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Strset2024_reference/Risperidone_Strset2024_reference_sbml.zip" download>Risperidone_Strset2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_risperidone/Risperidone_Strset2024_reference/Risperidone_Strset2024_reference_cellml.zip" download>Risperidone_Strset2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Størset E, Bråten LS, Ingelman-Sundberg M, Johansson I, Molden E, Kringen MK. Impact of CYP2D6*2, CYP2D6*35, rs5758550, and related haplotypes on risperidone clearance in vivo. European journal of clinical pharmacology 80(10):1531-1541 (2024). [doi:10.1007/s00228-024-03721-6](https://doi.org/10.1007/s00228-024-03721-6)
-
-**This record:** Pharmacolibrary, model `Risperidone_Strset2024_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_risperidone/Risperidone_Strset2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_RisperidoneStrset2024reference,
-  title  = {{Pharmacolibrary model Risperidone_Strset2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_risperidone/Risperidone_Strset2024_reference},
-  note   = {Parameters from doi:10.1007/s00228-024-03721-6},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G03A&quot;,&quot;href&quot;:&quot;atc/G03A.md&quot;},{&quot;label&quot;:&quot;norethisterone&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/&quot;},{&quot;label&quot;:&quot;Teixeira_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Norethisterone_Clements2026_reference&quot;,&quot;label&quot;:&quot;Clements_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Clements2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Norethisterone_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Norethisterone_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Norethisterone_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Norethisterone_Nayak2026_reference&quot;,&quot;label&quot;:&quot;Nayak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Nayak2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Norethisterone_Clements2026_reference&quot;,&quot;label&quot;:&quot;Clements_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Clements2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Norethisterone_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Norethisterone_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Norethisterone_Nayak2026_reference&quot;,&quot;label&quot;:&quot;Nayak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Nayak2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Norethisterone_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_norethisterone/Norethisterone_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The review rejected the norethisterone two-compartment record because the peripheral volume parameter was flagged as an unreachable compartment.
+> Norethisterone’s peripheral-compartment volume (V2) of 0.402 L/kg was rejected because the recorded two-compartment structure leaves that compartment unreachable from the dose.
 
 <div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Teixeira2026_reference" status="rejected" stale="false" population="" measured-compound="norethisterone" parameterization="apparent" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Teixeira FEG, Lock GA, Giacomeli R, Pacheco CO, Maciel TR, Pozzato Funghetto-Rib
 
 ### Reviewer guidance
 
-**The review rejected the norethisterone two-compartment record because the peripheral volume parameter was flagged as an unreachable compartment.**
+**Norethisterone’s peripheral-compartment volume (V2) of 0.402 L/kg was rejected because the recorded two-compartment structure leaves that compartment unreachable from the dose.**
 
-The record defines a two-compartment topology with a peripheral volume of distribution (V2) of 0.402 L/kg, but this compartment was identified as unreachable or orphaned. The second reader disagreed, noting that no V2 value was present and that the model topology should be a single compartment. These contradictions between the recorded structural assumption and the second reader’s assessment led to the rejection. Extracted — norethisterone: CL/F 0.1 mL/min/kg, V/F 0.3 L/kg, V2 0.402 L/kg.
+The record reports V2 as the peripheral-compartment volume, while the finding identifies an unreachable or orphan compartment—a compartment with no path from the dose. A second reader instead records a one-compartment structure and no V2 value, disagreeing with this record’s two-compartment structure and reported value of 0.402 L/kg. Extracted — norethisterone: CL/F 0.1 mL/min/kg, V/F 0.3 L/kg, V2 0.402 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V2: this record has 0.402, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

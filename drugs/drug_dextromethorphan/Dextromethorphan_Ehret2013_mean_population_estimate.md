@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="molar_mass_missing:dextrorphan: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span>
 
-> Dextromethorphan bioavailability and clearance were left undefined, causing library placeholders to be used, while dextrorphan's elimination and formation rates were zero.
+> Dextromethorphan's bioavailability, clearance, and absorption lag time lacked values, forcing placeholder defaults that led to the model being held back from publication.
 
 <div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_mean_population_estimate" status="model_quarantined" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,9 +54,9 @@ Ehret GB, Daali Y, Chabert J, Rebsamen M, Wolff A, Forster A et al. Influence of
 
 ### Reviewer guidance
 
-**Dextromethorphan bioavailability and clearance were left undefined, causing library placeholders to be used, while dextrorphan's elimination and formation rates were zero.**
+**Dextromethorphan's bioavailability, clearance, and absorption lag time lacked values, forcing placeholder defaults that led to the model being held back from publication.**
 
-The record specifies dextromethorphan absorption and elimination rates but omits bioavailability and clearance, so default placeholders were applied instead of fitted values. Dextrorphan has a defined volume of 1700 liters, but its elimination and formation clearances are zero, meaning the metabolite compartment lacks defined kinetic outflow. Extracted — dextromethorphan: kabs 2.8 h-1, tlag 0.45 h, V 627 l; dextrorphan: kfm 0.074 h-1, kel 0.21 h-1, V 1.7e+03 l.
+The parent drug's bioavailability, clearance, and absorption lag time were not estimated, causing the system to substitute library placeholders for these critical pharmacokinetic variables. Additionally, the metabolite dextrorphan was assigned zero values for its volume of distribution, clearance, and formation rate, rendering its compartment non-functional. A cross-check was disputed by a second reader regarding the absorption lag time parameter, though the final agreement ratio was 0.909. Extracted — dextromethorphan: kabs 2.8 h-1, tlag 0.45 h, V 627 l; dextrorphan: kfm 0.074 h-1, kel 0.21 h-1, V 1.7e+03 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t1/2g].parameter_id`: this record has Q83, the second reading Q89. That field shapes the model, so the record is marked disputed.
 
@@ -150,18 +150,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_metabolite_built[dextrorphan] |  | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} | dextrorphan: V, CL, formation not set — the metabolite's compartment would be the template default |
-| T3_metabolite_output[dextrorphan] |  | skipped |  |  | the simulation recorded no per-molecule outputs |
-| T3_molar_mass[dextrorphan] |  | fail |  | {'MW': 0, 'MW_m1': 0} | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion |  | pass | k12 (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template |  | fail | parent_metabolite_hepatic → PK_3M_3C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_metabolite_built[dextrorphan] |  | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} |  | dextrorphan: V, CL, formation not set — the metabolite's compartment would be the template default |
+| T3_metabolite_output[dextrorphan] |  | skipped |  |  |  | the simulation recorded no per-molecule outputs |
+| T3_molar_mass[dextrorphan] |  | fail |  | {'MW': 0, 'MW_m1': 0} |  | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion |  | pass | k12 (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | fail | parent_metabolite_hepatic → PK_3M_3C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.909, 0 of 1 reader(s) agree | 0.909 | cross-check disputed by a second reader: verdict disputed, agreement 0.909, 0 of 1 reader(s) agree |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

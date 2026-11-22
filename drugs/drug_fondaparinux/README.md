@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;fondaparinux&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fondaparinux_Michalikov2022_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fondaparinux_Michalikov2022_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # fondaparinux
 
@@ -25,7 +25,7 @@ Fondaparinux is a direct Factor Xa inhibitor used to treat thrombosis, pulmonary
 
 ## Start here
 
-> **Michaličková_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> dialysis-dependent chronic kidney disease patients, n = ??. [Run it in the simulator](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md?tab=Simulation) · [record](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md)
+> **Michaličková_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> dialysis-dependent chronic kidney disease patients. [Run it in the simulator](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md?tab=Simulation) · [record](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,23 +33,13 @@ Fondaparinux is a direct Factor Xa inhibitor used to treat thrombosis, pulmonary
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Michaličková_2022_reference](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022) | [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Michaličková_2022_reference](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022) | [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chang_2016_coagulation_activity](drugs/drug_fondaparinux/pd_Chang_2016_coagulation_activity.md) | coagulation activity ← fondaparinux · direct sigmoid Emax (Hill) effect | — | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fondaparinux).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: F10 (inhibitor), SERPINC1 (potentiator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -69,7 +59,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 18 matched, 18 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

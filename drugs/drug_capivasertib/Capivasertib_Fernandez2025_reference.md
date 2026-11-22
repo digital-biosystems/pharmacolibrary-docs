@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The capivasertib model failed the Cmax check (model 0.000174 vs paper 0.00146) and used an unreported zero-order absorption duration of 45 hours.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00146, model 0.000174); the covariate scenarios were not simulated.
 
 <div class="pk-model-meta" hidden drug="capivasertib" model-id="Capivasertib_Fernandez2025_reference" status="needs_review" stale="false" population="patients with cancer from six Phase I–III trials" measured-compound="capivasertib" parameterization="apparent" topology="2C"></div>
 
@@ -64,13 +64,13 @@ Fernandez Teruel C, Cullberg M, González-García I, Schiavon G, Zhang L, Zhou D
 
 ### Reviewer guidance
 
-**The capivasertib model failed the Cmax check (model 0.000174 vs paper 0.00146) and used an unreported zero-order absorption duration of 45 hours.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00146, model 0.000174); the covariate scenarios were not simulated.**
 
-The simulated peak concentration was 0.000174, which differs from the paper's reported 0.00146 by a ratio of 0.1191, exceeding the tolerance. The builder substituted a zero-order absorption duration of 45 hours, a value not explicitly extracted or confirmed by a second reader. Additionally, covariate scenarios, such as the body weight effect, were not exercised during simulation. Extracted — capivasertib: kabs 0.441 1/h, CL/F 59.6 L/h, V1/F 49 L, V2/F 113 L, Q3/F 2.52 L/h, Fab 1.6 LogitF1, Q/F 23.4 L/h, V3/F 103 L, … (+2).
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Fab, equation variable and allometric_exponent), so that value has no SI equivalent. Extracted — capivasertib: kabs 0.441 1/h, CL/F 59.6 L/h, V1/F 49 L, V2/F 113 L, Q3/F 2.52 L/h, Fab 1.6 LogitF1, Q/F 23.4 L/h, V3/F 103 L, … (+2).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of duration of zero‐order absorption; hours: this record has 45, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -208,7 +208,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=capivasertib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.88, 0 of 1 reader(s) agree | 0.88 | a second reader did not contradict the extraction |
 | T1_cmax | reference | fail | 0.00146 | 0.0001739 | 0.1191 | μg/L→SI vs simulated kg/m3 |
 
 <details class="legend">

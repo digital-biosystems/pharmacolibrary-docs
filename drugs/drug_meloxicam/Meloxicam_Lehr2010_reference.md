@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meloxicam&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/&quot;},{&quot;label&quot;:&quot;Lehr_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Meloxicam_Aoyama2017_reference&quot;,&quot;label&quot;:&quot;Aoyama_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Lameness_score&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Lameness score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Lameness_score.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Overall_locomotion_variable&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Overall locomotion variable&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Overall_locomotion_variable.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Pain_score&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Pain score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Pain_score.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Skin_temperature_difference&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Skin temperature difference&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Skin_temperature_difference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Body_temperature&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Body temperature&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Body_temperature.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Toutain_2004_clinical_lameness_score&quot;,&quot;label&quot;:&quot;Toutain_2004 \u00b7 clinical lameness score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Toutain_2004_clinical_lameness_score.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Toutain_2004_stride_length&quot;,&quot;label&quot;:&quot;Toutain_2004 \u00b7 stride length&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Toutain_2004_stride_length.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Meloxicam_Aoyama2017_reference&quot;,&quot;label&quot;:&quot;Aoyama_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Lameness_score&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Lameness score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Lameness_score.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Overall_locomotion_variable&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Overall locomotion variable&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Overall_locomotion_variable.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Pain_score&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Pain score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Pain_score.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Skin_temperature_difference&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Skin temperature difference&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Skin_temperature_difference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Giraudel_2005_Body_temperature&quot;,&quot;label&quot;:&quot;Giraudel_2005 \u00b7 Body temperature&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Giraudel_2005_Body_temperature.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Toutain_2004_clinical_lameness_score&quot;,&quot;label&quot;:&quot;Toutain_2004 \u00b7 clinical lameness score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Toutain_2004_clinical_lameness_score.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Toutain_2004_stride_length&quot;,&quot;label&quot;:&quot;Toutain_2004 \u00b7 stride length&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/pd_Toutain_2004_stride_length.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # meloxicam — `Meloxicam_Lehr2010_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Lehr2010_reference" status="simulated" stale="false" population="healthy cats" measured-compound="meloxicam" parameterization="apparent" topology="1C"></div>
+> Second-reader review of meloxicam parameters disagreed on three of four values, yielding only 0.333 agreement against the 0.5 threshold.
+
+<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Lehr2010_reference" status="needs_review" stale="false" population="healthy cats" measured-compound="meloxicam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lehr T, Narbe R, Jöns O, Kloft C, Staab A. Population pharmacokinetic modelling and simulation of single and multiple dose administration of meloxicam in cats. Journal of veterinary pharmacology and therapeutics 33(3):277–286 (2010).
@@ -15,7 +17,7 @@ Lehr T, Narbe R, Jöns O, Kloft C, Staab A. Population pharmacokinetic modelling
 
 ## Population and dosing
 
-**Population:** healthy cats · condition healthy · age group adult · n = No.
+**Population:** healthy cats · condition healthy · age group adult.
 
 > **Species: cat.** This record comes from an animal study (cat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -29,6 +31,8 @@ Lehr T, Narbe R, Jöns O, Kloft C, Staab A. Population pharmacokinetic modelling
 <figure class="pk-models-diagram"><img src="drugs/drug_meloxicam/Meloxicam_Lehr2010_reference/Meloxicam_Lehr2010_reference.svg" alt="Meloxicam_Lehr2010_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | the total apparent body clearance (CL/F) | CL/F | 0.00656 | L/h/kg |
@@ -38,7 +42,7 @@ Lehr T, Narbe R, Jöns O, Kloft C, Staab A. Population pharmacokinetic modelling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +52,13 @@ Lehr T, Narbe R, Jöns O, Kloft C, Staab A. Population pharmacokinetic modelling
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Second-reader review of meloxicam parameters disagreed on three of four values, yielding only 0.333 agreement against the 0.5 threshold.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was constructed solely from the paper’s abstract, leaving lag time at library defaults. The second reader could not independently extract values for clearance (0.00656 L/h/kg), volume of distribution (0.245 L/kg), or absorption rate (1.26 1/h). These extraction mismatches reduced cross-check agreement to 0.333, failing the 0.5 minimum required for validation. Extracted — meloxicam: CL/F 0.00656 L/h/kg, V/F 0.245 L/kg, kabs 1.26 1/h, t1/2z 25.7 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption constant (k(a)): this record has none, the second reading 1.26; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -134,15 +138,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=meloxicam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=meloxicam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

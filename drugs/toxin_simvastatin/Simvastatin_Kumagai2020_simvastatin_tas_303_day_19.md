@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Simvastatin&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/&quot;},{&quot;label&quot;:&quot;Kumagai_2020 \u00b7 simvastatin_tas_303_day_19&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Kumagai2020_simvastatin_tas_303_day_19&quot;,&quot;label&quot;:&quot;Kumagai_2020_simvastatin_tas_303_day_19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Wu2016_reference&quot;,&quot;label&quot;:&quot;Wu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_simvastatin/Simvastatin_Wu2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Simvastatin — `Simvastatin_Kumagai2020_simvastatin_tas_303_day_19`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life (paper 36, model 2.41); the model does not reproduce the paper's peak concentration (Cmax) (paper 9.8e-07, model 1.86e-07) (+1 more).
 
-<div class="pk-model-meta" hidden drug="Simvastatin" model-id="Simvastatin_Kumagai2020_simvastatin_tas_303_day_19" status="extracted" stale="false" population="12 healthy participants" measured-compound="Simvastatin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Simvastatin" model-id="Simvastatin_Kumagai2020_simvastatin_tas_303_day_19" status="needs_review" stale="false" population="12 healthy participants" measured-compound="Simvastatin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kumagai Y, Fujita T, Maeda M, Sasaki Y, Nagaoka M, Huang J et al. A Drug-Drug Interaction Study to Evaluate the Effect of TAS-303 on CYP3A Activity in the Small Intestine and Liver. Journal of clinical pharmacology 60(6):702–710 (2020).
@@ -31,6 +31,8 @@ Kumagai Y, Fujita T, Maeda M, Sasaki Y, Nagaoka M, Huang J et al. A Drug-Drug In
 <figure class="pk-models-diagram"><img src="drugs/toxin_simvastatin/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19/Simvastatin_Kumagai2020_simvastatin_tas_303_day_19.svg" alt="Simvastatin_Kumagai2020_simvastatin_tas_303_day_19 diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax, ng/mL | Cmax | 1.217 | ng/mL |
@@ -44,7 +46,7 @@ Kumagai Y, Fujita T, Maeda M, Sasaki Y, Nagaoka M, Huang J et al. A Drug-Drug In
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +54,13 @@ Kumagai Y, Fujita T, Maeda M, Sasaki Y, Nagaoka M, Huang J et al. A Drug-Drug In
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (paper 36, model 2.41); the model does not reproduce the paper's peak concentration (Cmax) (paper 9.8e-07, model 1.86e-07) (+1 more).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCt and AUC∞), so that value has no SI equivalent. Extracted — simvastatin: Cmax 1.22 ng/mL, tmax 1.75 h, AUCt 4.53 ng·h/mL, AUC∞ 4.88 ng·h/mL, t1/2z 2.8 h, CL/F 1.2e+03 L/h, V/F 4.45e+03 L, kabs 4.23 h−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -115,6 +123,26 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.2e+03 L/h | ['Kumagai_2020_table_p5_1:row5:col2'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 4.45e+03 L | ['Kumagai_2020_table_p5_1:row6:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=Simvastatin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 9.8e-07 | 1.858e-07 | 0.1896 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 1.326 | 1.858e-07 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_t_half_beta | reference | fail | 36 | 2.409 | 0.0669 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 23 | 2.409 | 0.1047 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.136 | 2.409 | 2.12 | →SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | 1.136 | 2.409 |  | unresolved time unit 'null' |
+| T1_tmax | reference | pass | 1 | 0.8176 | 0.8176 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 1.75 | 0.8176 | 0.4672 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

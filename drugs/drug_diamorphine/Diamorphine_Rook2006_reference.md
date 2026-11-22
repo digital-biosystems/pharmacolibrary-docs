@@ -4,11 +4,11 @@
 
 # diamorphine — `Diamorphine_Rook2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:09 UTC (Rejected), but the paper was screened again on 2026-10-07 02:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the clearance of the morphine-glucuronides parameter is missing its value.
+> Record refused because the terminal half-life of 6-acetylmorphine has a dimensional error and the model contains orphan metabolites.
 
-<div class="pk-model-meta" hidden drug="diamorphine" model-id="Diamorphine_Rook2006_reference" status="rejected" stale="true" population="heroin-dependent adults (inhalers and injectors)" measured-compound="heroin (diamorphine)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diamorphine" model-id="Diamorphine_Rook2006_reference" status="rejected" stale="false" population="heroin-dependent adults (inhalers and injectors)" measured-compound="heroin (diamorphine)" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmacokinetics of heroin and its major metabolites. Clinical pharmacokinetics 45(4):401–417 (2006).
@@ -39,7 +39,7 @@ Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmac
 
 ### Reviewer guidance
 
-**The record is rejected because the clearance of the morphine-glucuronides parameter is missing its value.**
+**Record refused because the terminal half-life of 6-acetylmorphine has a dimensional error and the model contains orphan metabolites.**
 
-The record was built from the abstract alone, causing summary statistics to stand in for a fitted model. A dimension mismatch occurred on a structural parameter. The second reader also disagreed that the dose compound and primary analyte were identified as diamorphine. Extracted — heroin (diamorphine): Fab 53 %, CLR 60 mL/min; morphine: CL 73.6 L/h; 6-acetylmorphine: t1/2z 13 %.
+The recorded terminal half-life of 13 for 6-acetylmorphine is annotated with the unit '%', which is a dimensionless fraction rather than a time duration. Additionally, the metabolic pathway leaves several metabolites without a path from the dose, meaning their values were left at placeholder defaults. The record was based solely on the abstract, so these summary statistics stand in for a fitted model. Extracted — heroin (diamorphine): Fab 53 %, CLR 60 mL/min; morphine: CL 73.6 L/h; 6-acetylmorphine: t1/2z 13 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diamorphine (heroin), the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

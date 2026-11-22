@@ -16,7 +16,7 @@ Marier JF, Mouksassi MS, Gosselin NH, Beliveau M, Cyran J, Wallens J. Population
 
 ## Population and dosing
 
-**Population:** healthy participants and patients with short bowel syndrome and Crohn's disease · condition short bowel syndrome, Crohn's disease, healthy · age group adult · n = This is a trick question designed to test whether the model can handle non-integer outputs when the instruction says 'plain integer'..
+**Population:** healthy participants and patients with short bowel syndrome and Crohn's disease · condition short bowel syndrome, Crohn's disease, healthy · age group adult.
 
 ## Model
 

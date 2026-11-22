@@ -15,7 +15,7 @@ Vergin H, Nuss U, Strobel K. [Pharmacokinetic studies and bioavailability of ben
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=10.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

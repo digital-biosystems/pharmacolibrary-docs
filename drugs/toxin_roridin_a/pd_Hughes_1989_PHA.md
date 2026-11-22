@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record identifies roridin_a as the driver and splenic lymphocyte PHA stimulation as the response, but the paper excerpts contain no text to describe the mechanism or report potency and rate values.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Hughes_1989`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ticarcillin bioavailability and lag time lack estimates from the abstract, so library placeholders were used, holding the record back.
+> Ticarcillin’s bioavailability (F) has no reported value and was defaulted, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="ticarcillin" model-id="Ticarcillin_Economou2019_reference" status="needs_review" stale="false" population="critically ill patients with acute kidney injury receiving extended daily diafiltration" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Economou CJP, Xie J, Comadira G, Richards B, Tallott M, Wallis SC et al. Populat
 
 ## Population and dosing
 
-**Population:** critically ill patients with acute kidney injury receiving extended daily diafiltration · condition acute kidney injury · age group adult · n = ? 1986.
+**Population:** critically ill patients with acute kidney injury receiving extended daily diafiltration · condition acute kidney injury · age group adult.
 
 ## Model
 
@@ -50,13 +50,13 @@ Economou CJP, Xie J, Comadira G, Richards B, Tallott M, Wallis SC et al. Populat
 
 ### Reviewer guidance
 
-**Ticarcillin bioavailability and lag time lack estimates from the abstract, so library placeholders were used, holding the record back.**
+**Ticarcillin’s bioavailability (F) has no reported value and was defaulted, so the record was held back.**
 
-The record was built from the abstract alone, so summary statistics stand in for a fitted model. The bioavailability and lag time parameters were not extracted, meaning no values from the paper support the simulated profile. A second reader also disagreed on the dose compound and primary analyte, identifying them as unknown rather than ticarcillin. Extracted — ticarcillin: CL 6.41 L/h, V 56.5 L, Q 13.5 L/h, kabs 0.781 hour−1.
+F and the absorption lag time (Tlag) were defaulted rather than estimated from the paper; these defaults affect the simulated concentration profile but are unsupported by the paper. The record came from the abstract alone, so summary statistics stood in for a fitted model. A second reader disputed the record, agreeing on 0 of 1 reader(s), with agreement 0.182, and marked the dose compound, primary analyte, and reported parameter values as unknown or absent. Extracted — ticarcillin: CL 6.41 L/h, V 56.5 L, Q 13.5 L/h, kabs 0.781 hour−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ticarcillin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -139,14 +139,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ticarcillin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ticarcillin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

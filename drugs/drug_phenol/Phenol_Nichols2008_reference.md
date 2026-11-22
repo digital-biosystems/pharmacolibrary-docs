@@ -4,11 +4,11 @@
 
 # phenol — `Phenol_Nichols2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Needs review), but the paper was screened again on 2026-10-07 14:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; cL_ratio has no unit.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="phenol" model-id="Phenol_Nichols2008_reference" status="needs_review" stale="true" population="rainbow trout" measured-compound="phenol and phenyl glucuronide" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="phenol" model-id="Phenol_Nichols2008_reference" status="needs_review" stale="false" population="rainbow trout" measured-compound="phenol and phenyl glucuronide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Nichols JW, Hoffman AD, Fitzsimmons PN, Lien GJ, Jenson CT. Use of online microdialysis sampling to determine the in vivo rate of phenol glucuronidation in rainbow trout. Drug metabolism and disposition: the biological fate of chemicals 36(7):1406–1413 (2008).
@@ -44,7 +44,7 @@ Nichols JW, Hoffman AD, Fitzsimmons PN, Lien GJ, Jenson CT. Use of online microd
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Nichols JW, Hoffman AD, Fitzsimmons PN, Lien GJ, Jenson CT. Use of online microd
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cL_ratio has no unit.**
+**Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is phenol's own; they describe phenyl glucuronide and phenol and phenyl glucuronide. Extracted — phenyl glucuronide: fm 93 %, Cmax_ratio 3.4, CL 15.7 ml/kg/h, CL_ratio 2.6, kfm 0.049 /h; phenol and phenyl glucuronide: kabs 0.0069 min-1.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is phenol's own; they describe phenyl glucuronide and phenol and phenyl glucuronide. Extracted — phenyl glucuronide: fm 93 %, Cmax_ratio 3.4, CL 15.7 ml/kg/h, CL_ratio 2.6, kfm 0.049 /h; phenol and phenyl glucuronide: kabs 0.0069 min-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has phenol, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

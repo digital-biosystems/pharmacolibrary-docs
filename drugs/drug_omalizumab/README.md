@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;omalizumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Oh_2023_itch_severity_score&quot;,&quot;label&quot;:&quot;Oh_2023 \u00b7 itch severity score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # omalizumab
 
@@ -24,7 +23,7 @@ Omalizumab is a monoclonal antibody used to treat severe allergic asthma, urtica
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331, Q67 — no SI value to build fr…</sub> | [Oh_2023_reference](drugs/drug_omalizumab/Omalizumab_Oh2023_reference.md) | — | 1-compartment (no model) | 7 (+5 cov.) | Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12953](https://doi.org/10.1002/psp4.12953) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331, Q67 — no SI value to build fr…</sub> | [Oh_2023_reference](drugs/drug_omalizumab/Omalizumab_Oh2023_reference.md) | — | 1-compartment (no model) | 7 (+5 cov.) | Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12953](https://doi.org/10.1002/psp4.12953) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Hayashi_2007_reference](drugs/drug_omalizumab/Omalizumab_Hayashi2007_reference.md) | — | general linear (no model) | 3 | Hayashi N et al., A mechanism-based binding model for the…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2006.02803.x](https://doi.org/10.1111/j.1365-2125.2006.02803.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Li_2022_chinese_subjects](drugs/drug_omalizumab/Omalizumab_Li2022_chinese_subjects.md) | — | general linear (no model) | 8 | Li J et al., Efficacy and safety of omalizumab in pa…, Asian Pacific journal of al… (2022) | [10.12932/AP-260819-0630](https://doi.org/10.12932/AP-260819-0630) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ predominantly_caucasian_subjects](drugs/drug_omalizumab/Omalizumab_Li2022_predominantly_caucasian_subjects.md) | — | general linear (no model) | 8 |  |  |
@@ -33,20 +32,8 @@ Omalizumab is a monoclonal antibody used to treat severe allergic asthma, urtica
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Oh_2023_itch_severity_score](drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md) | weekly itch severity score ← total omalizumab · delayed effect through an effect compartment | ▶ model + simulator | Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12953](https://doi.org/10.1002/psp4.12953) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Oh_2023_itch_severity_score](drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md) | weekly itch severity score ← total omalizumab · delayed effect through an effect compartment | — | Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12953](https://doi.org/10.1002/psp4.12953) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhao_2024_CFB_UAS7](drugs/drug_omalizumab/pd_Zhao_2024_CFB_UAS7.md) | change from baseline in Urticaria Activity Score ← omalizumab · inhibition effect | — | Zhao A et al., Time-course and dose-effect of omalizum…, European journal of clinica… (2024) | [10.1007/s00228-024-03725-2](https://doi.org/10.1007/s00228-024-03725-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=omalizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: FCER1G (modulator), IGHE (antibody), IGHE (neutralizer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,7 +53,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 22 matched, 17 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

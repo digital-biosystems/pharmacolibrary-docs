@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;colistin&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/&quot;},{&quot;label&quot;:&quot;Xie_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colistin_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/Colistin_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Colistin_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_colistin/Colistin_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model for colistin sulfate was rejected because the peripheral compartment is unreachable from the dose.
+> The colistin model was rejected because the peripheral compartment was unreachable from the dose, and its clearance and volume parameters differ significantly from a second reader's estimates.
 
 <div class="pk-model-meta" hidden drug="colistin" model-id="Colistin_Xie2022_reference" status="rejected" stale="false" population="critically ill adult patients" measured-compound="colistin sulfate" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Xie YL, Jin X, Yan SS, Wu CF, Xiang BX, Wang H et al. Population pharmacokinetic
 
 ## Population and dosing
 
-**Population:** critically ill adult patients · condition critically ill · age group adult · n = &gt;=20.
+**Population:** critically ill adult patients · condition critically ill · age group adult.
 
 **Dosing:** 1, 1.5 million IU, iv, multiple, every 12 h.
 
@@ -49,9 +49,9 @@ Xie YL, Jin X, Yan SS, Wu CF, Xiang BX, Wang H et al. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**The two-compartment model for colistin sulfate was rejected because the peripheral compartment is unreachable from the dose.**
+**The colistin model was rejected because the peripheral compartment was unreachable from the dose, and its clearance and volume parameters differ significantly from a second reader's estimates.**
 
-The record defines a two-compartment structure, but the check identified the peripheral compartment as orphaned with no path from the dose. The second reader disagreed on the dose compound, leaving it unknown rather than colistin sulfate. The second reader also disagreed on all three pharmacokinetic parameter values, citing 0.69 L/h for clearance, 12.9 L for central volume, and 24.8 L for peripheral volume. Extracted — colistin: V 16.1 L, V2 50.5 L, CL 1.5 L/h.
+The record describes a two-compartment structure where the peripheral compartment (V2 = 50.5 L) has no path from the dose, rendering it an orphan compartment. Additionally, the recorded total clearance (1.50 L/h) and central volume (16.1 L) do not match the second reader's values of 0.69 L/h and 12.9 L, respectively. The peripheral volume also conflicts, with the second reader noting 24.8 L against the recorded 50.5 L. Extracted — colistin: V 16.1 L, V2 50.5 L, CL 1.5 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[tvcl].value`: this record has 1.50, the second reading 0.69; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

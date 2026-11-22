@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;eltrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/&quot;},{&quot;label&quot;:&quot;Saleh_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Farrell2014_reference&quot;,&quot;label&quot;:&quot;Farrell_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment is unreachable from the dose due to missing intercompartmental clearance in the extracted parameters.
+> The one-compartment model is structurally invalid because a second reader identified an unreachable compartment, contradicting the abstract's reported statistics.
 
 <div class="pk-model-meta" hidden drug="eltrombopag" model-id="Eltrombopag_Saleh2019_reference" status="rejected" stale="false" population="chronic hepatitis C patients" measured-compound="eltrombopag" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Saleh MI, Melhim SB, Al-Ramadhani HM, Alzubiedi S. Bayesian Population Pharmacok
 
 ## Population and dosing
 
-**Population:** chronic hepatitis C patients · condition chronic hepatitis C · age group adult · n = &gt;=483.
+**Population:** chronic hepatitis C patients · condition chronic hepatitis C · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Saleh MI, Melhim SB, Al-Ramadhani HM, Alzubiedi S. Bayesian Population Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +47,11 @@ Saleh MI, Melhim SB, Al-Ramadhani HM, Alzubiedi S. Bayesian Population Pharmacok
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment is unreachable from the dose due to missing intercompartmental clearance in the extracted parameters.**
+**The one-compartment model is structurally invalid because a second reader identified an unreachable compartment, contradicting the abstract's reported statistics.**
 
-The extracted parameter V2 is defined as the volume of distribution of the peripheral compartment, but no intercompartmental clearance or distribution rate constant appears in the record, leaving the peripheral compartment unlinked from the central compartment. The record was built from the abstract alone, so the summary statistics for clearance, volume, and lag time stand in for a fitted model. The second reader could not confirm the extraction of any parameter values, marking all three as null while the record lists values of 0.762 L/h, 12 L, and 0.947 h. Extracted — eltrombopag: CL 0.762 L/h, V2 12 L, tlag 0.947 h.
+The model builder assigned a 12 L volume to a parameter defined as the peripheral compartment distribution, which is incompatible with the recorded one-compartment structure. The second reader confirmed the dose compound was unknown and could not extract any parameter values, invalidating the abstract-derived clearance of 0.762 L/h and lag time of 0.947 h. Consequently, the record remains rejected due to the unresolvable structural contradiction and lack of verified parameter data. Extracted — eltrombopag: CL 0.762 L/h, V2 12 L, tlag 0.947 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has eltrombopag, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eltrombopag, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -88,21 +88,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption lag time]` | 0.947 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption lag time]` |  | 0.947 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distributional clearance]` | 0.762 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distributional clearance]` |  | 0.762 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution of the central and peripheral compartments]` | 12 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution of the central compartment]` |  | 12 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution of the peripheral compartment]` |  | 10.9 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | eltrombopag | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | eltrombopag | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absorption lag time]` | 0.947 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption lag time]` |  | 0.947 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distributional clearance]` | 0.762 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distributional clearance]` |  | 0.762 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the central and peripheral compartments]` | 12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment]` |  | 12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the peripheral compartment]` |  | 10.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | eltrombopag | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | eltrombopag | unknown | mismatch |
 
 </details>
 

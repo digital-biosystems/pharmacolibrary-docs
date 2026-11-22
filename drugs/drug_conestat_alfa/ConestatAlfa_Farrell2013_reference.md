@@ -4,11 +4,11 @@
 
 # conestat alfa — `ConestatAlfa_Farrell2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:46 UTC (Needs review), but the paper was screened again on 2026-10-06 01:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; vmax has no unit.
+> Vmax has no unit.
 
-<div class="pk-model-meta" hidden drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="needs_review" stale="true" population="healthy volunteers and hereditary angioedema patients" measured-compound="recombinant human C1 inhibitor" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="needs_review" stale="false" population="healthy volunteers and hereditary angioedema patients" measured-compound="recombinant human C1 inhibitor" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Farrell C, Hayes S, Relan A, van Amersfoort ES, Pijpstra R, Hack CE. Population pharmacokinetics of recombinant human C1 inhibitor in patients with hereditary angioedema. British journal of clinical pharmacology 76(6):897–907 (2013).
@@ -41,7 +41,7 @@ Farrell C, Hayes S, Relan A, van Amersfoort ES, Pijpstra R, Hack CE. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Farrell C, Hayes S, Relan A, van Amersfoort ES, Pijpstra R, Hack CE. Population 
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance; vmax has no unit.**
+**Vmax has no unit.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — conestat alfa: V 2.86 l, Vmax 1.63, Km 1.6 U ml-1.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — conestat alfa: V 2.86 l, Vmax 1.63, Km 1.6 U ml-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has recombinant human C1 inhibitor, the second reading conestat_alfa; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has recombinant human C1 inhibitor, the second reading conestat_alfa; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -109,14 +109,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.833 (10/12 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | recombinant human C1 inhibitor | conestat_alfa | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | recombinant human C1 inhibitor | conestat_alfa | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | recombinant human C1 inhibitor | conestat_alfa | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | recombinant human C1 inhibitor | conestat_alfa | mismatch |
 
 </details>
 

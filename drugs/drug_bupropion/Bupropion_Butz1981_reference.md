@@ -4,18 +4,18 @@
 
 # bupropion — `Bupropion_Butz1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 16:53 UTC (Rejected), but the paper was screened again on 2026-10-04 20:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="bupropion" model-id="Bupropion_Butz1981_reference" status="needs_review" stale="true" population="beagle dogs" measured-compound="bupropion" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bupropion" model-id="Bupropion_Butz1981_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="bupropion" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Butz RF, Schroeder DH, Welch RM, Mehta NB, Phillips AP, Findlay JW. Radioimmunoassay and pharmacokinetic profile of bupropion in the dog. The Journal of pharmacology and experimental therapeutics 217(3):602–610 (1981).
 
 ## Population and dosing
 
-**Population:** beagle dogs · condition healthy · age group adult · n = &gt;=4.
+**Population:** beagle dogs · condition healthy · age group adult.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -35,7 +35,7 @@ Butz RF, Schroeder DH, Welch RM, Mehta NB, Phillips AP, Findlay JW. Radioimmunoa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ Butz RF, Schroeder DH, Welch RM, Mehta NB, Phillips AP, Findlay JW. Radioimmunoa
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bupropion: t1/2z 1.73 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bupropion, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

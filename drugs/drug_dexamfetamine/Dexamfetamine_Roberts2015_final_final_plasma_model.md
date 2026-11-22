@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dextroamphetamine absorption parameters were missing, so library defaults replaced the paper's actual values.
+> Dexamfetamine absorption rate constant and lag time were left at library defaults, lacking explicit estimates or justification in the record.
 
 <div class="pk-model-meta" hidden drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final_final_plasma_model" status="needs_review" stale="false" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="1C"></div>
 
@@ -52,9 +52,9 @@ Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Populati
 
 ### Reviewer guidance
 
-**Dextroamphetamine absorption parameters were missing, so library defaults replaced the paper's actual values.**
+**Dexamfetamine absorption rate constant and lag time were left at library defaults, lacking explicit estimates or justification in the record.**
 
-The record omits reported values for the absorption rate constant and lag time, forcing the use of generic placeholders instead of paper-specific estimates. This substitution means the simulated absorption profile relies on unverified conventions rather than data from the source study. Extracted — dexamfetamine: k12 0.533 h−1, V/F 377 L, allometric_exponent 0.8, CL/F 28.3 L/h.
+The record specifies an apparent clearance of 28.3 L/h and volume of 377 L, yet omits the absorption rate constant and lag time. Consequently, standard library values were substituted for these missing kinetic parameters. This substitution deviates from the source, as the original paper did not report these specific absorption characteristics. Extracted — dexamfetamine: k12 0.533 h−1, V/F 377 L, allometric_exponent 0.8, CL/F 28.3 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -151,15 +151,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=dextroamphetamine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=dextroamphetamine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Langeskov_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atorvastatin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Kong2025_reference&quot;,&quot;label&quot;:&quot;Kong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Kong2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Li2024_reference&quot;,&quot;label&quot;:&quot;Li_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Li2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Malekinejad2014_reference&quot;,&quot;label&quot;:&quot;Malekinejad_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Courlet2020_reference&quot;,&quot;label&quot;:&quot;Courlet_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Courlet2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vargo_2014_LDL_C&quot;,&quot;label&quot;:&quot;Vargo_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/pd_Vargo_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Karvaly2021_reference&quot;,&quot;label&quot;:&quot;Karvaly_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Karvaly2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atorvastatin_Li2024_reference&quot;,&quot;label&quot;:&quot;Li_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Li2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Kong2025_reference&quot;,&quot;label&quot;:&quot;Kong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Kong2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Courlet2020_reference&quot;,&quot;label&quot;:&quot;Courlet_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Courlet2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vargo_2014_LDL_C&quot;,&quot;label&quot;:&quot;Vargo_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/pd_Vargo_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,7 +15,7 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;.
+**Population:** healthy adults · condition healthy · age group adult · n = 57.
 
 **Dosing:** 1500 mg, oral, single.
 
@@ -29,17 +29,17 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 <figure class="pk-models-diagram"><img src="drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference/Atorvastatin_Langeskov2022_reference.svg" alt="Atorvastatin_Langeskov2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-| label | parameter | value | unit | RSE% | IIV |
-|---|---|---|---|---|---|
-| ka (h−1) (Placebo) | kabs | 9.4 | h−1 | 12.1 | 2.03 (17.6% RSE) |
-| ktr (h−1) (Placebo) | ktr | 7.28 | h−1 | 22.2 | 1.82 (35.8% RSE) |
-| V1/F (L) a | V1/F | 1843 | L | 13.3 | 0.625 (23.3% RSE) |
-| Cl/F (L/h) a | CL/F | 620 | L/h | 5.86 | 0.151 (22.4% RSE) |
-| V2/F(L) a | V2/F | 4184 | L | 8.67 | 0.111 (22.1% RSE) |
-| Cl2/F (L/h) a | Q2/F | 873 | L/h | 15.4 |  |
-| Cl2/F (L/h) | Q/F | 199 | L/h | 9.43 |  |
-| Tlag (h) | tlag | 0.16 | h | 7.40 | 0.0586 (34.7% RSE) |
-| Θktrcovariate | Θktrcovariate | 0.791 |  |  |  |
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| ka (h−1) (Placebo) | kabs | 9.4 | h−1 | 12.1 |
+| ktr (h−1) (Placebo) | ktr | 7.28 | h−1 | 22.2 |
+| V1/F (L) a | V1/F | 1843 | L | 13.3 |
+| Cl/F (L/h) a | CL/F | 620 | L/h | 5.86 |
+| V2/F(L) a | V2/F | 4184 | L | 8.67 |
+| Cl2/F (L/h) a | Q2/F | 873 | L/h | 15.4 |
+| Cl2/F (L/h) | Q/F | 199 | L/h | 9.43 |
+| Tlag (h) | tlag | 0.16 | h | 7.40 |
+| Θkacovariate | Θkacovariate | 0.525 |  |  |
 
 ## Caveats
 
@@ -47,7 +47,7 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.737). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,27 +61,27 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl2/f: this record has 199, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl2/f: this record has 199, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| ka (h−1) (Placebo) | `Q49` · kabs | 9.4 | h−1 | 0.002611 | 1/s | 1/h | 12.1 | space_fold (0.95) | prp2962-tbl-0003:row1:col1, Langeskov_2022_table_2:row0:col1 | 2.03 (17.6% RSE) |
-| ktr (h−1) (Placebo) | `Q306` · ktr | 7.28 | h−1 | 0.002022 | 1/s | 1/h | 22.2 | space_fold (0.95) | prp2962-tbl-0003:row3:col1 | 1.82 (35.8% RSE) |
-| V1/F (L) a | `Q290` · V1/F | 1843 | L | 1.843 | m3 | l | 13.3 | llm_confirmed (0.6) | prp2962-tbl-0003:row5:col1 | 0.625 (23.3% RSE) |
-| Cl/F (L/h) a | `Q27` · CL/F | 620 | L/h | 0.0001722 | m3/s | l/h | 5.86 | llm_confirmed (0.6) | prp2962-tbl-0003:row6:col1 | 0.151 (22.4% RSE) |
-| V2/F(L) a | `Q82` · V2/F | 4184 | L | 4.184 | m3 | l | 8.67 | llm_confirmed (0.6) | prp2962-tbl-0003:row7:col1 | 0.111 (22.1% RSE) |
-| Cl2/F (L/h) a | `Q80` · Q2/F | 873 | L/h | 0.0002425 | m3/s | l/h | 15.4 | llm (0.6) | prp2962-tbl-0003:row8:col1 |  |
-| Cl2/F (L/h) | `Q69` · Q/F | 199 | L/h | 5.528e-05 | m3/s | l/h | 9.43 | special_case (0.95) | Langeskov_2022_table_2:row6:col1 |  |
-| Tlag (h) | `Q83` · tlag | 0.16 | h | 576 | s | h | 7.40 | exact (1) | Langeskov_2022_table_2:row7:col1 | 0.0586 (34.7% RSE) |
-| Θktrcovariate | `Q900` · Θktrcovariate | 0.791 |  |  |  |  |  |  |  |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| ka (h−1) (Placebo) | `Q49` · kabs | 9.4 | h−1 | 0.002611 | 1/s | 1/h | 12.1 | space_fold (0.95) | prp2962-tbl-0003:row1:col1, Langeskov_2022_table_2:row0:col1 |
+| ktr (h−1) (Placebo) | `Q306` · ktr | 7.28 | h−1 | 0.002022 | 1/s | 1/h | 22.2 | space_fold (0.95) | prp2962-tbl-0003:row3:col1 |
+| V1/F (L) a | `Q290` · V1/F | 1843 | L | 1.843 | m3 | l | 13.3 | llm_confirmed (0.6) | prp2962-tbl-0003:row5:col1 |
+| Cl/F (L/h) a | `Q27` · CL/F | 620 | L/h | 0.0001722 | m3/s | l/h | 5.86 | llm_confirmed (0.6) | prp2962-tbl-0003:row6:col1 |
+| V2/F(L) a | `Q82` · V2/F | 4184 | L | 4.184 | m3 | l | 8.67 | llm_confirmed (0.6) | prp2962-tbl-0003:row7:col1 |
+| Cl2/F (L/h) a | `Q80` · Q2/F | 873 | L/h | 0.0002425 | m3/s | l/h | 15.4 | llm (0.6) | prp2962-tbl-0003:row8:col1 |
+| Cl2/F (L/h) | `Q69` · Q/F | 199 | L/h | 5.528e-05 | m3/s | l/h | 9.43 | special_case (0.95) | Langeskov_2022_table_2:row6:col1 |
+| Tlag (h) | `Q83` · tlag | 0.16 | h | 576 | s | h | 7.40 | exact (1) | Langeskov_2022_table_2:row7:col1 |
+| Θkacovariate | `Q900` · Θkacovariate | 0.525 |  |  |  |  |  |  |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -102,10 +102,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - table section iiv: 'ω2 V2/F' routed out of structural estimates ('Between subject variablity (ω2)')
 - table section iiv: 'ω2 Tlag' routed out of structural estimates ('Between subject variablity (ω2)')
 - table section iiv: 'Residual unexplained variability (Ceps)' routed out of structural estimates ('Between subject variablity (ω2)')
-- routed 'Θkacovariate' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- kept covariate coefficient Θktrcovariate=0.791 (covariate ktrcovariate) — not an ontology parameter
+- kept covariate coefficient Θkacovariate=0.525 (covariate kacovariate) — not an ontology parameter
+- dropped duplicate Q306 ('Θktrcovariate', value '0.791') — already have one for this compound
 - dropped duplicate Q290 ('V1/F (L)', value '48.5') — already have one for this compound
-- dropped duplicate Q290 ('ΘV1/Fcovariate', value '0.0312') — already have one for this compound
+- routed 'ΘV1/Fcovariate' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped duplicate Q27 ('Cl/F (L/h)', value '25.9') — already have one for this compound
 - dropped duplicate Q82 ('V2/F (L)', value '55.4') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atorvastatin
@@ -121,17 +121,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.737 (14/19 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.7 (14/20 fields) | 6 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl2/f (l/h) a].parameter_id` | Q80 | Q30 | mismatch |
 | `gpt-oss-120b` | `parameters[cl2/f]` | 199 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka (h-1)].rse_percent` | 12.1 | 23.5 | mismatch |
 | `gpt-oss-120b` | `parameters[ka (h-1)].value` | 9.4 | 5.72 | mismatch |
 | `gpt-oss-120b` | `parameters[tlag]` | 0.16 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θktrcovariate]` | 0.791 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θkacovariate]` | 0.525 |  | only_one_extracted |
 
 </details>
 
@@ -173,6 +174,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -254,4 +256,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batorvastatin%5D%20Atorvastatin_Langeskov2022_reference&body=Drug%3A%20atorvastatin%0ARecord%3A%20Atorvastatin_Langeskov2022_reference%0APaper%3A%20Langeskov_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 12:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:56 UTC</sub>

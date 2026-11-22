@@ -17,7 +17,7 @@ Yang J, Zhang S, Zhao Z, Mei S, Feng W. Population Pharmacokinetics of Perampane
 
 ## Population and dosing
 
-**Population:** Chinese pediatric and adult patients with epilepsy · condition epilepsy · age group mixed · n = ? unknown? wait, n_subjects is integer. 125.
+**Population:** Chinese pediatric and adult patients with epilepsy · condition epilepsy · age group mixed.
 
 ## Model
 

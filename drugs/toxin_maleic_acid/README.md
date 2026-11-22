@@ -51,16 +51,7 @@ Maleic acid is an industrial raw material for the production of glyoxylic acid b
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Qutob_2022_maleic_acid](drugs/toxin_maleic_acid/pd_Qutob_2022_maleic_acid.md) | maleic_acid · model not identified | — | Qutob M et al., A review on the degradation of acetamin…, RSC advances (2022) | [10.1039/d2ra02469a](https://doi.org/10.1039/d2ra02469a) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=maleic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: GOT1 (unknown).</sub>
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.95).">other animal</span> | [Qutob_2022_maleic_acid](drugs/toxin_maleic_acid/pd_Qutob_2022_maleic_acid.md) | maleic_acid · model not identified | — | Qutob M et al., A review on the degradation of acetamin…, RSC advances (2022) | [10.1039/d2ra02469a](https://doi.org/10.1039/d2ra02469a) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

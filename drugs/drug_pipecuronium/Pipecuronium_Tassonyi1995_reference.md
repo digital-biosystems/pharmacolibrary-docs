@@ -17,7 +17,7 @@ Tassonyi E, Pittet JF, Schopfer CN, Rouge JC, Gemperle G, Wilder-Smith OH et al.
 
 ## Population and dosing
 
-**Population:** infants, children and adults · age group mixed · n = , "condition": "healthy", "species": "human", "compounds": [ { "name": "pipecuronium", "role": "parent", "dosed": "yes", "measured": "yes", "has_parameters": "yes" } ], "links": "none" }.
+**Population:** infants, children and adults · age group mixed.
 
 ## Model
 

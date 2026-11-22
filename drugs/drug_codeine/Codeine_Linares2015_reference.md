@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Linares_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Guay1988_reference&quot;,&quot;label&quot;:&quot;Guay_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # codeine — `Codeine_Linares2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Codeine clearance (0.18 ml/h) and volume of distribution (7.7 L/kg) were rejected as physiologically implausible magnitudes.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Linares2015_reference" status="rejected" stale="false" population="healthy Caucasian males with CYP2D6 polymorphisms" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Linares2015_reference" status="needs_review" stale="false" population="healthy Caucasian males" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Linares OA, Fudin J, Schiesser WE, Daly Linares AL, Boston RC. CYP2D6 phenotype-specific codeine population pharmacokinetics. Journal of pain & palliative care pharmacotherapy 29(1):4–15 (2015).
@@ -17,30 +17,30 @@ Linares OA, Fudin J, Schiesser WE, Daly Linares AL, Boston RC. CYP2D6 phenotype-
 
 ## Population and dosing
 
-**Population:** healthy Caucasian males with CYP2D6 polymorphisms · age group adult · n = ,.
+**Population:** healthy Caucasian males · condition healthy · age group adult.
 
 **Dosing:** 30 mg, oral, single.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | V L × kg⁻¹ | V | 7.7 | L/kg |
-| CL | CL | 0.18 | ml/h |
-| Ka (hour−1) | kabs | 19.3 | hour−1 |
+| V L × kg⁻¹ | V | 4.4 | L/kg |
+| CL (mL/min/kg) | CL | 15.3 | mL/min/kg |
 | tlapo | tlag | 2.35 | (h) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,21 +50,21 @@ Linares OA, Fudin J, Schiesser WE, Daly Linares AL, Boston RC. CYP2D6 phenotype-
 
 ### Reviewer guidance
 
-**Codeine clearance (0.18 ml/h) and volume of distribution (7.7 L/kg) were rejected as physiologically implausible magnitudes.**
+**This paper's disposition core is incomplete.**
 
-The extracted clearance value of 0.18 ml/h is orders of magnitude lower than typical human clearance, indicating a likely unit or scale error. Conversely, the volume of distribution of 7.7 L/kg is unusually high for a single-compartment model, further suggesting data extraction issues. A second reader also noted the absence of metabolic links to morphine and glucuronide metabolites in the model structure. Extracted — codeine: V 7.7 L/kg, CL 0.18 ml/h, kabs 19.3 hour−1, tlag 2.35 (h).
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Guay_1987, Persson_1992) cannot stand in for this paper's evidence. Extracted — codeine: V 7.7 L/kg, CL 15.3 mL/min/kg, tlag 2.35 (h); morphine: V 4.4 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading codeine → codeine-6-glucuronide (metabolism); codeine → morphine (metabolism); morphine → morphine-3-glucuronide (metabolism) …; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| V L × kg⁻¹ | `Q61` · V | 7.7 | L/kg | 0.539 | m3 | L | llm (0.6) | Linares_2015_table_2:row6:col4, Linares_2015_table_2:row9:col4, Linares_2015_table_2:row10:col4, Linares_2015_table_2:row11:col4 |
-| CL | `Q22` · CL | 0.18 | ml/h | 5e-11 | m3/s | L/h | review_gapfill (0.7) | Capparelli_2005:review |
-| Ka (hour−1) | `Q49` · kabs | 19.3 | hour−1 | 0.005361 | 1/s | 1/h | review_gapfill (0.7) | Gretler_2020:review |
+| V L × kg⁻¹ | `Q61` · V | 7.7 | L/kg | 0.539 | m3 | L | llm (0.6) | Linares_2015_table_2:row6:col4 |
+| V L × kg⁻¹ | `Q61` · V | 4.4 | L/kg | 0.308 | m3 | L | exact (1) | Linares_2015_table_2:row9:col4, Linares_2015_table_2:row10:col4, Linares_2015_table_2:row11:col4 |
+| CL (mL/min/kg) | `Q22` · CL | 15.3 | mL/min/kg | 1.785e-05 | m3/s | L/h | review_gapfill (0.7) | Guay_1987:review |
 | tlapo | `Q83` · tlag | 2.35 | (h) | 8460 | s | h | review_gapfill (0.7) | Persson_1992:review |
 
 <details class="legend">
@@ -75,12 +75,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Departures & gaps
 
 **Interpretation flags:**
-- implicit units: 'V L × kg⁻¹' → L/kg (from the paper text: "Figure 5 caption states 'V (L × kg -1)'")
+- implicit units: 'V L × kg⁻¹' → L/kg (from the paper text: "FIGURE 5 caption states: 'Units: ... V (L × kg -1 )'")
+- metabolite volume: 'V L × kg⁻¹' Q63→Q61 for morphine — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=codeine
-- gap-filled Q22 (CL) from Capparelli_2005's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Gretler_2020's review values (primary lacked it)
+- topology: 4 first-order transfer(s) across 5 compounds → general_linear
+- template fit: none — 4 metabolites — the templates hold two (site presystemic: 'Because our model lumps the dynamics of codeine absorption and first-pass liver metabolism, the sampled compartment only')
+- row roles: 3 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=compartmental; 1/1 row label(s) assigned, 4 linked by role; re-tagged parent→morphine ×3
+- gap-filled Q22 (CL) from Guay_1987's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - gap-filled Q83 (tlag) from Persson_1992's review values (primary lacked it)
 
 **Extraction notes:**
@@ -93,23 +97,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['codeine', 'codeine-6-glucuronide', 'metabolism'], ['codeine', 'morphine', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[v l × kg-]` |  | 7.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v l × kg-]` | 7.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v l × kg-]` |  | 4.4 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -121,17 +116,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Capparelli_2005:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gretler_2020:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Linares_2015_table_2:row6:col4', 'Linares_2015_table_2:row9:col4', 'Linares_2015_table_2:row10:col4', 'Linares_2015_table_2:row11:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Guay_1987:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Linares_2015_table_2:row6:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Linares_2015_table_2:row9:col4', 'Linares_2015_table_2:row10:col4', 'Linares_2015_table_2:row11:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Persson_1992:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.18 | ['Capparelli_2005:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 15.3 | ['Guay_1987:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | fail | clearance within physiological range | 0.00018 L/h | ['Capparelli_2005:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 539 L | ['Linares_2015_table_2:row6:col4', 'Linares_2015_table_2:row9:col4', 'Linares_2015_table_2:row10:col4', 'Linares_2015_table_2:row11:col4'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 64.3 L/h | ['Guay_1987:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 539 L | ['Linares_2015_table_2:row6:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 308 L | ['Linares_2015_table_2:row9:col4', 'Linares_2015_table_2:row10:col4', 'Linares_2015_table_2:row11:col4'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,9 +139,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -155,4 +161,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Linares2015_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Linares2015_reference%0APaper%3A%20Linares_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Linares2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 19:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:57 UTC</sub>

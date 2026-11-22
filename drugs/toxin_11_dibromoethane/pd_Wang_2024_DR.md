@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The study reports an epidemiological association between blood 1,2-dibromoethane levels and increased odds of diabetes retinopathy (OR 7.85), but does not describe a pharmacodynamic mechanism, potency values, or rate constants. No information is provided on the specific biological mechanism or kinetic parameters relating the compound to the binary response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

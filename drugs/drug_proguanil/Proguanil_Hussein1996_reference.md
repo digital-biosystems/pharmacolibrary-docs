@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;proguanil&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/&quot;},{&quot;label&quot;:&quot;Hussein_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # proguanil — `Proguanil_Hussein1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:19 UTC (Rejected), but the paper was screened again on 2026-10-07 07:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The proguanil record is rejected because the parameter fm, representing the fraction of drug converted to a metabolite, has an impossible value of 114.
+> Proguanil’s CL/F value of 13% is dimensionally inconsistent with clearance, and the abstract-only record substitutes summary statistics for a fitted model.
 
-<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Hussein1996_reference" status="rejected" stale="true" population="patients with acute P. falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Hussein1996_reference" status="rejected" stale="false" population="patients with acute P. falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hussein Z, Eaves CJ, Hutchinson DB, Canfield CJ. Population pharmacokinetics of proguanil in patients with acute P. falciparum malaria after combined therapy with atovaquone. British journal of clinical pharmacology 42(5):589–597 (1996).
@@ -39,7 +39,7 @@ Hussein Z, Eaves CJ, Hutchinson DB, Canfield CJ. Population pharmacokinetics of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Hussein Z, Eaves CJ, Hutchinson DB, Canfield CJ. Population pharmacokinetics of 
 
 ### Reviewer guidance
 
-**The proguanil record is rejected because the parameter fm, representing the fraction of drug converted to a metabolite, has an impossible value of 114.**
+**Proguanil’s CL/F value of 13% is dimensionally inconsistent with clearance, and the abstract-only record substitutes summary statistics for a fitted model.**
 
-The parameter fm is defined as the fraction of systemically available drug converted to a metabolite, which must be between 0 and 1, yet the record lists its value as 114. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader disagreed on several parameter values, noting that the extracted numbers did not match their reading of the source text. Extracted — proguanil: CL/F 13 %, CL 54 l h-1, V/F 562 l, fm 114, tlag 0.147 h.
+The record assigns proguanil CL/F a value of 13 with unit %, which is dimensionless rather than clearance’s volume-per-time dimension. Only the abstract was read, so reported summary statistics stand in for a fitted model; the second reader did not confirm the proguanil assignment or extracted parameter values. Extracted — proguanil: CL/F 13 %, CL 54 l h-1, V/F 562 l, fm 114, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has proguanil, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

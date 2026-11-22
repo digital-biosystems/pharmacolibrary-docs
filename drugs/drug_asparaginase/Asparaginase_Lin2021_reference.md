@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;asparaginase&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/&quot;},{&quot;label&quot;:&quot;Lin_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hoeben_2026_TV&quot;,&quot;label&quot;:&quot;Hoeben_2026 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/pd_Hoeben_2026_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hoeben_2026_TV&quot;,&quot;label&quot;:&quot;Hoeben_2026 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/pd_Hoeben_2026_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # asparaginase — `Asparaginase_Lin2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:25 UTC (Needs review), but the paper was screened again on 2026-10-07 23:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> The record was quarantined because asparaginase clearance, volume, and lag time lacked values, as all listed parameters describe JZP-458.
 
-<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2021_reference" status="extracted" stale="true" population="healthy adults" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2021_reference" status="model_quarantined" stale="false" population="healthy adults" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lin T, Dumas T, Kaullen J, Berry NS, Choi MR, Zomorodi K et al. Population Pharmacokinetic Model Development and Simulation for Recombinant Erwinia Asparaginase Produced in Pseudomonas fluorescens (JZP-458). Clinical pharmacology in drug development 10(12):1503–1513 (2021).
@@ -17,7 +17,7 @@ Lin T, Dumas T, Kaullen J, Berry NS, Choi MR, Zomorodi K et al. Population Pharm
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=24.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 12.5, 25, 37.5 mg/m2, im, iv, single.
 
@@ -25,12 +25,14 @@ Lin T, Dumas T, Kaullen J, Berry NS, Choi MR, Zomorodi K et al. Population Pharm
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | Vd, mL | V | 3030 | mL | 6.32 | 32.06 (None% RSE) |
@@ -40,7 +42,7 @@ Lin T, Dumas T, Kaullen J, Berry NS, Choi MR, Zomorodi K et al. Population Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +52,13 @@ Lin T, Dumas T, Kaullen J, Berry NS, Choi MR, Zomorodi K et al. Population Pharm
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**The record was quarantined because asparaginase clearance, volume, and lag time lacked values, as all listed parameters describe JZP-458.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. None of the extracted parameters is asparaginase's own; they describe JZP-458. Extracted — JZP-458: V 3.03e+03 mL, Fab 0.365, t1/2z 14.4 h, kabs 0.0348 h–1.
+Every extracted parameter is explicitly attributed to the compound JZP-458, not the target drug asparaginase. Consequently, the model builder defaulted the clearance, volume of distribution, and absorption lag time to library placeholders. A second reader disputed the primary analyte classification, and the model was held back rather than published with missing data. Extracted — JZP-458: V 3.03e+03 mL, Fab 0.365, t1/2z 14.4 h, kabs 0.0348 h–1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has serum asparaginase activity, the second reading serum asparaginase activity (SAA). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -132,6 +134,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['cpdd1002-tbl-0002:row2:col1', 'cpdd1002-tbl-0002:row2:col3', 'cpdd1002-tbl-0002:row2:col4', 'cpdd1002-tbl-0002:row2:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 3.03 L | ['cpdd1002-tbl-0002:row2:col1', 'cpdd1002-tbl-0002:row2:col3', 'cpdd1002-tbl-0002:row2:col4', 'cpdd1002-tbl-0002:row2:col5'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.929, 0 of 1 reader(s) agree | 0.929 | cross-check disputed by a second reader: verdict disputed, agreement 0.929, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

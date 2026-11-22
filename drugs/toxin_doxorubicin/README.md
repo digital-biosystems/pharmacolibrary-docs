@@ -115,31 +115,6 @@ Doxorubicin is only found in individuals that have used or taken this drug. It i
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=doxorubicin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate/transport, `ABCC2` substrate/transport, `ABCG2` substrate | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate/transport, `ABCC1` inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
-| distribution | lung | `ABCC1` inhibitor/substrate/transport | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
-| distribution | testis | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` inhibitor/metabolism/substrate, `NQO1` substrate, `POR` substrate, `XDH` substrate | DrugBank actor |
-| metabolism | lung | `CYP1B1` inducer/inhibitor | DrugBank actor |
-| metabolism | skin | `CYP1B1` inducer/inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/metabolism/substrate, `XDH` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inducer/inhibitor/substrate/transport, `ABCC2` substrate/transport | DrugBank actor |
-| excretion | liver | `ABCB1` inducer/inhibitor/substrate/transport, `ABCB11` substrate, `ABCC2` substrate/transport, `ABCC3` inhibitor, `ABCG2` substrate | DrugBank actor |
-| excretion | small intestine | `ABCC3` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCB4 (transport), ABCB8 (substrate), ABCC10 (inhibitor), ABCC10 (transport), ABCC5 (transport), ABCC6 (inhibitor), ABCC6 (substrate), ABCC9 (transport), AKR1A1 (substrate), AKR1B1 (substrate), AKR1B10 (substrate), AKR1C3 (substrate), AKR1C4 (substrate), CBR1 (metabolism), CBR1 (substrate), CBR3 (metabolism), CBR3 (substrate), CELF4 (target), DNA (intercalation), NDUFS2 (substrate), NDUFS3 (substrate), NDUFS7 (substrate), NOLC1 (inhibitor), NOS1 (substrate), NOS2 (substrate), NOS3 (substrate), RAC2 (target), RALBP1 (substrate), RARG (target), SLC22A16 (substrate), SLC22A17 (transport), SLC28A1 (transport), SLC28A3 (transport), TERT (other/unknown), TOP1 (inhibitor), TOP2A (inhibitor), TOP2B (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -152,7 +127,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-14 08:32 | 1:07:36 | 14/8/0 | 5/1/0 | 0/0/17 | 2,068,723/119,291 | einfracz / qwen3.8-flash-next | 72 | 2/60 | 72/0 | 0 |
+| 2026-11-14 08:32 | 1:07:36 | 14/8/0 | 7/1/0 | 0/0/17 | 2,068,723/119,291 | einfracz / qwen3.8-flash-next | 72 | 2/60 | 72/0 | 0 |
 
 ## Coverage
 

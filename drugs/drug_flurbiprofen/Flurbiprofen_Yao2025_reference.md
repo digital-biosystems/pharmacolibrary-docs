@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Yao_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was quarantined because flurbiprofen's clearance, volume, and rate constant lacked values, forcing the use of library placeholders.
+> The record was quarantined because clearance, volume of distribution, and intercompartmental clearance lacked values for flurbiprofen, while all extracted parameters describe S(+)-flurbiprofen.
 
 <div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Yao2025_reference" status="model_quarantined" stale="false" population="selective joint replacement patients with postoperative pain" measured-compound="S(+)-flurbiprofen, R(-)-flurbiprofen" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Yao H, Luo X, Yuan J, Zhang H, An H, Feng Y. Exploring the Population Pharmacoki
 
 ## Population and dosing
 
-**Population:** selective joint replacement patients with postoperative pain · condition postoperative pain · age group adult · n = ?.
+**Population:** selective joint replacement patients with postoperative pain · condition postoperative pain · age group adult.
 
 **Dosing:** 100 mg, iv, single.
 
@@ -54,9 +54,9 @@ Yao H, Luo X, Yuan J, Zhang H, An H, Feng Y. Exploring the Population Pharmacoki
 
 ### Reviewer guidance
 
-**The record was quarantined because flurbiprofen's clearance, volume, and rate constant lacked values, forcing the use of library placeholders.**
+**The record was quarantined because clearance, volume of distribution, and intercompartmental clearance lacked values for flurbiprofen, while all extracted parameters describe S(+)-flurbiprofen.**
 
-All six extracted parameters, including clearance (11.8 L·h−1) and central volume (17.0 L), explicitly describe S(+)-flurbiprofen. Consequently, no explicit values were available for the flurbiprofen enantiomers as a whole, leaving clearance, volume, and the central-to-peripheral rate constant undefined. This resulted in the model relying on default library placeholders for these critical parameters, which violated the requirement for explicit estimates. Extracted — S(+)-flurbiprofen: V1 17 L, CL 11.8 L·h−1, V2 79.1 L, Q 0.45 L·h−1, FG -2.01, allometric_exponent 1.37.
+All six extracted parameters, including S(+)-flurbiprofen clearance of 11.8 L·h−1 and central volume of 17.0 L, were assigned to the specific enantiomer rather than the drug entity. Consequently, the model builder defaulted the clearance, volume of distribution, and intercompartmental clearance for flurbiprofen to library placeholders instead of using explicit estimates. A second reader disputed the record, disagreeing with the clearance value (reading 16.7 instead of 11.8 L·h−1) and the allometric exponent (reading null instead of 1.37). Extracted — S(+)-flurbiprofen: V1 17 L, CL 11.8 L·h−1, V2 79.1 L, Q 0.45 L·h−1, FG -2.01, allometric_exponent 1.37.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen, the second reading flurbiprofen (intravenous); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -154,13 +154,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -178,30 +179,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_matlab.zip" download>Flurbiprofen_Yao2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_matlab_simbio.zip" download>Flurbiprofen_Yao2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_sbml.zip" download>Flurbiprofen_Yao2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_cellml.zip" download>Flurbiprofen_Yao2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Yao H, Luo X, Yuan J, Zhang H, An H, Feng Y. Exploring the Population Pharmacokinetic and Pharmacogenetics Characteristics of Flurbiprofen Isomers in Selective Joint Replacement Patients with Postoperative Pain. Drug design, development and therapy 19:9169–9183 (2025). [doi:10.2147/DDDT.S542722](https://doi.org/10.2147/DDDT.S542722)
-
-**This record:** Pharmacolibrary, model `Flurbiprofen_Yao2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_FlurbiprofenYao2025reference,
-  title  = {{Pharmacolibrary model Flurbiprofen_Yao2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference},
-  note   = {Parameters from doi:10.2147/DDDT.S542722},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

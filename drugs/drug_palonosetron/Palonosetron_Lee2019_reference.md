@@ -16,7 +16,7 @@ Lee S, Kim I, Pyeon T, Lee S, Song J, Rhee J et al. Population pharmacokinetics 
 
 ## Population and dosing
 
-**Population:** adult patients undergoing general anesthesia · condition postoperative nausea and vomiting prevention · age group adult · n = fifty-one.
+**Population:** adult patients undergoing general anesthesia · condition postoperative nausea and vomiting prevention · age group adult.
 
 ## Model
 

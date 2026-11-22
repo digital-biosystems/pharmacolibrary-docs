@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03B&quot;,&quot;href&quot;:&quot;atc/A03B.md&quot;},{&quot;label&quot;:&quot;atropine&quot;,&quot;href&quot;:&quot;drugs/drug_atropine/&quot;},{&quot;label&quot;:&quot;Str\u00f6m_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atropine_Strm2021_reference&quot;,&quot;label&quot;:&quot;Str\u00f6m_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atropine/Atropine_Strm2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atropine_Strm2021_reference&quot;,&quot;label&quot;:&quot;Str\u00f6m_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atropine/Atropine_Strm2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atropine — `Atropine_Strm2021_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-<div class="pk-model-meta" hidden drug="atropine" model-id="Atropine_Strm2021_reference" status="simulated" stale="false" population="horses" measured-compound="atropine" parameterization="mechanistic" topology="2C"></div>
+> Atropine's absolute bioavailability was left as a null placeholder, conflicting with the second reader's value of 0.685, causing a review dispute.
+
+<div class="pk-model-meta" hidden drug="atropine" model-id="Atropine_Strm2021_reference" status="needs_review" stale="false" population="horses" measured-compound="atropine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Ström L, Dalin F, Domberg M, Stenlund C, Bondesson U, Hedeland M et al. Topical ophthalmic atropine in horses, pharmacokinetics and effect on intestinal motility. BMC veterinary research 17(1):149 (2021).
@@ -33,6 +35,8 @@ Ström L, Dalin F, Domberg M, Stenlund C, Bondesson U, Hedeland M et al. Topical
 <figure class="pk-models-diagram"><img src="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference.svg" alt="Atropine_Strm2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | tvVc | V1 | 0.646 | L/kg | 28.03 |
@@ -49,7 +53,7 @@ Ström L, Dalin F, Domberg M, Stenlund C, Bondesson U, Hedeland M et al. Topical
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.931). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.931). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,13 +63,13 @@ Ström L, Dalin F, Domberg M, Stenlund C, Bondesson U, Hedeland M et al. Topical
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Atropine's absolute bioavailability was left as a null placeholder, conflicting with the second reader's value of 0.685, causing a review dispute.**
 
-A reported unit could not be converted (Fab), so that value has no SI equivalent.
+The absolute bioavailability parameter for atropine eye drops is recorded as null, while a second reader extracted a specific value of 0.685. This discrepancy led to a disagreement where the second reader did not agree with the primary assessment. Additionally, the absorption lag time was not explicitly estimated, so a standard default value was applied instead. Extracted — atropine: V1 0.646 L/kg, V2 1.15 L/kg, CL 1.91 L/h, Q 2.48 L/h, Fab 0.781 ilogit, eye drop, kabs 5.95 1/h, t1/2ka 0.117 h, t1/2β 0.798 h, … (+3).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bioavailability drop: this record has none, the second reading 0.685; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability drop: this record has none, the second reading 0.685; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -128,14 +132,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.931 (27/29 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.931 (27/29 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[bioavailability drop]` |  | 0.685 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tvfdrop].parameter_id` | Q40 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability drop]` |  | 0.685 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvfdrop].parameter_id` | Q40 | Q87 | mismatch |
 
 </details>
 
@@ -171,14 +175,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=atropine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=atropine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.931, 0 of 1 reader(s) agree | 0.931 | cross-check disputed by a second reader: verdict disputed, agreement 0.931, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

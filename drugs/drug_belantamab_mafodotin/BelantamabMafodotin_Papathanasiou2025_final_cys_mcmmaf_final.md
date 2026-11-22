@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Belantamab mafodotin's clearance and volume of distribution lacked values, forcing the model to use library placeholders.
+> Belantamab mafodotin’s clearance and volume have no estimates; cys-mcMMAF’s CLMMAF is 642 L/day, so the parent values are missing and the model was held back.
 
 <div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Papathanasiou2025_final_cys_mcmmaf_final" status="model_quarantined" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin ADC and cys-mcMMAF" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -63,13 +63,13 @@ Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Populati
 
 ### Reviewer guidance
 
-**Belantamab mafodotin's clearance and volume of distribution lacked values, forcing the model to use library placeholders.**
+**Belantamab mafodotin’s clearance and volume have no estimates; cys-mcMMAF’s CLMMAF is 642 L/day, so the parent values are missing and the model was held back.**
 
-The record contains clearance and volume values only for the metabolite cys-mcMMAF, leaving the parent drug without estimated parameters. Consequently, a library placeholder was used for the parent drug's clearance and volume, causing the model to be quarantined. Additionally, the defined covariate effects were not simulated, meaning only the reference individual was evaluated. Extracted — cys-mcMMAF: V 12.3 L, kfm 186 1/day, kel 5.97 1/day.
+No value for belantamab mafodotin's clearance and volume of distribution—all 3 extracted parameters describe cys-mcMMAF. The model was built, but belantamab mafodotin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The covariate scenarios were not simulated; the base model was simulated, not the covariate effects the record defines. The model used a one-compartment structure instead of the recorded parent-to-metabolite structure, defaulted clearance and volume, and included a reported unit that could not be converted to SI; a second reader disputed the analyte, metabolite link, and several parameter mappings, with agreement 0.455 and 0 of 1 reader agreeing. Extracted — cys-mcMMAF: V 12.3 L, kfm 186 1/day, kel 5.97 1/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has belantamab_mafodotin ADC and cys-mcMMAF, the second reading belantamab_mafodotin; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -298,23 +298,24 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion |  | pass | none (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 43.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.498 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.976 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 22.9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 13.0 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 16.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 19.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 13.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 17 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion |  | pass | none (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | 43.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.498 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.976 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 22.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 13.0 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 16.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 19.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 13.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 17 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

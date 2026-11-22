@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the central compartment output was not the measured loperamide, and the peripheral volume of distribution was missing from the model.
+> Record rejected because the metabolite N-desmethyl loperamide was not modeled as a distinct compartment, and the primary analyte identity was disputed by a second reader.
 
 <div class="pk-model-meta" hidden drug="loperamide" model-id="Loperamide_Valenzuela2025_m1" status="rejected" stale="false" population="healthy adults" measured-compound="loperamide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -46,7 +46,7 @@ Valenzuela B, Gisleskog PO, Cirillo I, Coenen E, Ariyawansa J, Ali SR et al. Eva
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,11 @@ Valenzuela B, Gisleskog PO, Cirillo I, Coenen E, Ariyawansa J, Ali SR et al. Eva
 
 ### Reviewer guidance
 
-**The record was rejected because the central compartment output was not the measured loperamide, and the peripheral volume of distribution was missing from the model.**
+**Record rejected because the metabolite N-desmethyl loperamide was not modeled as a distinct compartment, and the primary analyte identity was disputed by a second reader.**
 
-The model defined an output for the central compartment instead of the required measured analyte loperamide, causing a mismatch in the simulated data. A topology error occurred where a one-compartment oral absorption model was built instead of the specified two-compartment parent-metabolite structure. The parameter coverage check failed because the peripheral volume of distribution was neither explicitly emitted nor assigned a default value, leaving it undefined in the simulation. Extracted — loperamide: CL/F 52.4 L/h, V1/F 1.65e+03 L, V2/F 805 L, Q/F 96.4 L/h, Frel 1, kabs 0.258 h−1, tlag 0.162 h, D1 0.714 h.
+The model structure consisted of a single central compartment with peripheral distribution, omitting any pathway or compartment for the metabolite N-desmethyl loperamide. Consequently, the predicted output represented the parent compound loperamide, not the metabolite, while the review expected the measured analyte to be the metabolite. A second reader disagreed on the primary analyte, identifying it as an unnamed metabolite M1 rather than loperamide, and also disputed the specific identity of the metabolite link. Extracted — loperamide: CL/F 52.4 L/h, V1/F 1.65e+03 L, V2/F 805 L, Q/F 96.4 L/h, Frel 1, kabs 0.258 h−1, tlag 0.162 h, D1 0.714 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has loperamide, the second reading M1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has loperamide, the second reading M1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -152,14 +152,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.833 (10/12 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['loperamide', 'n-desmethyl loperamide', 'metabolism']] | [['loperamide', 'm1', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | loperamide | M1 | mismatch |
+| `gpt-oss-120b` | `model.links` | [['loperamide', 'n-desmethyl loperamide', 'metabolism']] | [['loperamide', 'm1', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | loperamide | M1 | mismatch |
 
 </details>
 
@@ -191,20 +191,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | fail | Metabolite_C (measured=loperamide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | -0.53 | 3.613e-06 | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 6.06 | 3.613e-06 | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
-| T1_cmax | reference | skipped | -0.76 | 3.613e-06 | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 5.46 | 3.613e-06 | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
-| T1_tmax | reference | skipped |  | 9.379 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | fail | Metabolite_C (measured=loperamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped | -0.53 | 3.613e-06 |  | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 6.06 | 3.613e-06 |  | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
+| T1_cmax | reference | skipped | -0.76 | 3.613e-06 |  | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 5.46 | 3.613e-06 |  | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
+| T1_tmax | reference | skipped |  | 9.379 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

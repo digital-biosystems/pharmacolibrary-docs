@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the apparent clearance parameter CL/F for HTB lacked a numerical value, leaving the model incomplete.
+> The record is rejected because the triflusal-to-HTB model structure does not match the reported parent-metabolite topology and the allometric unit weight/71.65 was unconvertible.
 
 <div class="pk-model-meta" hidden drug="triflusal" model-id="Triflusal_Park2014_reference" status="rejected" stale="false" population="healthy Korean male volunteers" measured-compound="HTB" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Park SM, Lee J, Seong SJ, Park JG, Gwon MR, Lim MS et al. Population pharmacokin
 
 ## Population and dosing
 
-**Population:** healthy Korean male volunteers · condition healthy · age group adult · n = &gt;=34.
+**Population:** healthy Korean male volunteers · condition healthy · age group adult.
 
 **Dosing:** 600, 900 mg, oral, multiple, every 24 h.
 
@@ -54,9 +54,9 @@ Park SM, Lee J, Seong SJ, Park JG, Gwon MR, Lim MS et al. Population pharmacokin
 
 ### Reviewer guidance
 
-**The record was rejected because the apparent clearance parameter CL/F for HTB lacked a numerical value, leaving the model incomplete.**
+**The record is rejected because the triflusal-to-HTB model structure does not match the reported parent-metabolite topology and the allometric unit weight/71.65 was unconvertible.**
 
-The parameter CL/F for the metabolite HTB is defined in the record but does not have an associated value, indicating it was not extracted. Consequently, the model builder was forced to use library defaults for Tlag and assume bioavailability and fraction metabolized were both 1. The topology was also mismatched, using a single compartment oral model instead of the required parent-metabolite structure. Extracted — HTB: CLm/F 2.7 L/h, V 17.4 L, allometric_exponent 2.7 weight/71.65, kfm 15.1 1/h.
+The single-compartment absorption structure conflicts with the reported parent-metabolite topology, and the specific weight unit could not be standardized for calculation. The second reader disagreed on the presence of the metabolite link and the allometric exponent, resulting in a low agreement score of 0.308. Additionally, the bioavailability fraction was assumed to be 1, and the transit time was left at a default value. Extracted — HTB: CLm/F 2.7 L/h, V 17.4 L, allometric_exponent 2.7 weight/71.65, kfm 15.1 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has triflusal → htb (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -179,16 +179,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=HTB) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev:defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=HTB) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check disputed by a second reader: verdict disputed, agreement 0.308, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

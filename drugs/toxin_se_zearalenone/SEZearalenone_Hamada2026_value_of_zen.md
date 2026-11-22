@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;(S,E)-Zearalenone&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/&quot;},{&quot;label&quot;:&quot;Hamada_2026 \u00b7 value_of_zen&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SeZearalenone_Buranatragool2015_reference&quot;,&quot;label&quot;:&quot;Buranatragool_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Buranatragool2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SeZearalenone_Escriv2017_reference&quot;,&quot;label&quot;:&quot;Escriv\u00e1_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Escriv2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SeZearalenone_Guerre2015_reference&quot;,&quot;label&quot;:&quot;Guerre_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Guerre2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SeZearalenone_Mukherjee2014_reference&quot;,&quot;label&quot;:&quot;Mukherjee_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Mukherjee2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SeZearalenone_Qin2026_zol&quot;,&quot;label&quot;:&quot;Qin_2026_zol&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_se_zearalenone/SeZearalenone_Qin2026_zol.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # (S,E)-Zearalenone — `SEZearalenone_Hamada2026_value_of_zen`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model was quarantined because clearance, volume of distribution, and absorption rate constant for Zearalenone were replaced by library placeholders rather than extracted values.
 
-<div class="pk-model-meta" hidden drug="(S,E)-Zearalenone" model-id="SEZearalenone_Hamada2026_value_of_zen" status="extracted" stale="false" population="Arbor Acres broiler chicks" measured-compound="Zearalenone (ZEN)" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="(S,E)-Zearalenone" model-id="SEZearalenone_Hamada2026_value_of_zen" status="model_quarantined" stale="false" population="Arbor Acres broiler chicks" measured-compound="Zearalenone (ZEN)" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hamada O, Sun H, Pan X, Suo D, Fan X, Song Z. Toxicokinetics and tissue-specific biotransformation of modified mycotoxin zearalenone-14-glucoside (ZEN-14-G) in broilers following oral administration. Poultry science 105(3):106445 (2026).
@@ -32,6 +33,8 @@ Hamada O, Sun H, Pan X, Suo D, Fan X, Song Z. Toxicokinetics and tissue-specific
 **Availability:** No model was generated from this record.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Tmax (h) | tmax | 0.625 | h |
@@ -44,7 +47,7 @@ Hamada O, Sun H, Pan X, Suo D, Fan X, Song Z. Toxicokinetics and tissue-specific
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +55,13 @@ Hamada O, Sun H, Pan X, Suo D, Fan X, Song Z. Toxicokinetics and tissue-specific
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model was quarantined because clearance, volume of distribution, and absorption rate constant for Zearalenone were replaced by library placeholders rather than extracted values.**
+
+The review notes that no explicit values were found for clearance, volume of distribution, or absorption rate constant, so the model builder substituted defaults. An absorption lag time of 5.0 minutes was incorrectly labeled as Aflatoxin B2 tRa in the source. The model uses an apparent parameterization assuming bioavailability equals one, which compounds the uncertainty from the missing primary pharmacokinetic parameters. Extracted — se zearalenone: tmax 0.625 h, Cmax 7.88 μg/ml, t1/2z 10.1 h, AUCt 48.8 μg·h/mL, CLm,norm/F 0.0066 ml/h/kg, Vm,norm/F 0.082 ml/ kg; Zearalenone (ZEN): tlag 5 min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -112,6 +121,19 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q83 | pass | [time] |  | ['Braun_2020_2:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| T1_tmax | reference | skipped | 0.5 |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 0.625 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

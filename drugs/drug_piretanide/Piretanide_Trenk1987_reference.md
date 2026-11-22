@@ -15,7 +15,7 @@ Trenk D, Wagner F, Jähnchen E, Spahn H, Mutschler E. Pharmacokinetics and bioav
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = &gt;=10.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 ## Model
 

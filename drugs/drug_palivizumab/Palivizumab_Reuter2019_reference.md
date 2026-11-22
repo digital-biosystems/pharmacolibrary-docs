@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;palivizumab&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/&quot;},{&quot;label&quot;:&quot;Reuter_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Reuter2019_reference" status="rejected" stale="false" population="preterm infants" measured-compound="palivizumab" parameterization="mechanistic" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Reuter2019_reference" status="rejected" stale="false" population="premature infants" measured-compound="palivizumab" parameterization="mechanistic" topology="manual_model_class"></div>
 
 ## Citation
 Reuter SE, Evans AM, Ward MB. Reducing Palivizumab Dose Requirements Through Rational Dose Regimen Design. CPT: pharmacometrics & systems pharmacology 8(1):26–33 (2019).
@@ -17,9 +17,9 @@ Reuter SE, Evans AM, Ward MB. Reducing Palivizumab Dose Requirements Through Rat
 
 ## Population and dosing
 
-**Population:** preterm infants · condition RSV immunoprophylaxis · age group infant.
+**Population:** premature infants · condition healthy · age group infant.
 
-**Dosing:** 1050 mg, other, multiple, every 168 h.
+**Dosing:** 1050 mg, other, multiple, every 28 h.
 
 ## Model
 
@@ -69,7 +69,7 @@ Independently confirmed by `gpt-oss-120b`.
 **Interpretation flags:**
 - control_stream: nonlinear kinetics (MM/product $DES or general ODE ADVAN) — manual_model_class, "Needs review"
 - control_stream ADVAN6: topology=manual_model_class, parameterization=mechanistic (clearance)
-- theta_crosscheck: skipped (no in-paper final table to compare)
+- theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
 - status held at "Needs review" — not promoted
 - molar mass: none found for 'palivizumab' — its concentrations stay mass-only
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
@@ -121,4 +121,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20Palivizumab_Reuter2019_reference&body=Drug%3A%20palivizumab%0ARecord%3A%20Palivizumab_Reuter2019_reference%0APaper%3A%20Reuter_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/Palivizumab_Reuter2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 06:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 11:55 UTC</sub>

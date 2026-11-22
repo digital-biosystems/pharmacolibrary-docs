@@ -138,30 +138,13 @@ Without a unit the value cannot be converted, so the model cannot use it. The ch
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_oxcarbazepine/Oxcarbazepine_Sinha2022_compound/Oxcarbazepine_Sinha2022_compound_matlab.zip" download>Oxcarbazepine_Sinha2022_compound_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_oxcarbazepine/Oxcarbazepine_Sinha2022_compound/Oxcarbazepine_Sinha2022_compound_sbml.zip" download>Oxcarbazepine_Sinha2022_compound_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_oxcarbazepine/Oxcarbazepine_Sinha2022_compound/Oxcarbazepine_Sinha2022_compound_cellml.zip" download>Oxcarbazepine_Sinha2022_compound_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Sinha J, Karatza E, Gonzalez D. Physiologically-based pharmacokinetic modeling of oxcarbazepine and levetiracetam during adjunctive antiepileptic therapy in children and adolescents. CPT: pharmacometrics & systems pharmacology 11(2):225–239 (2022). [doi:10.1002/psp4.12750](https://doi.org/10.1002/psp4.12750)
-
-**This record:** Pharmacolibrary, model `Oxcarbazepine_Sinha2022_compound`. <https://pharmacolibrary.github.io/#/drugs/toxin_oxcarbazepine/Oxcarbazepine_Sinha2022_compound>
-
-```bibtex
-@misc{pharmacolibrary_OxcarbazepineSinha2022compound,
-  title  = {{Pharmacolibrary model Oxcarbazepine_Sinha2022_compound}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_oxcarbazepine/Oxcarbazepine_Sinha2022_compound},
-  note   = {Parameters from doi:10.1002/psp4.12750},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

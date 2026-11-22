@@ -4,11 +4,11 @@
 
 # sampeginterferon beta-1a — `SampeginterferonBeta1a_Hu2015v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-06 23:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Dialysis clearance was misrecorded as a first-order rate constant, and the peripheral compartment volume lacks a defined unit.
+> Peginterferon beta-1a record rejected for absorption and dialysis parameters having inverse time units instead of time or clearance, and an unreachable peripheral compartment.
 
-<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2015v2_reference" status="rejected" stale="true" population="subjects with normal or impaired renal function" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2015v2_reference" status="rejected" stale="false" population="subjects with normal or impaired renal function" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Hu X, Seddighzadeh A, Stecher S, Zhu Y, Goyal J, Matson M et al. Pharmacokinetics, pharmacodynamics, and safety of peginterferon beta-1a in subjects with normal or impaired renal function. Journal of clinical pharmacology 55(2):179–188 (2015).
@@ -40,7 +40,7 @@ Hu X, Seddighzadeh A, Stecher S, Zhu Y, Goyal J, Matson M et al. Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Hu X, Seddighzadeh A, Stecher S, Zhu Y, Goyal J, Matson M et al. Pharmacokinetic
 
 ### Reviewer guidance
 
-**Dialysis clearance was misrecorded as a first-order rate constant, and the peripheral compartment volume lacks a defined unit.**
+**Peginterferon beta-1a record rejected for absorption and dialysis parameters having inverse time units instead of time or clearance, and an unreachable peripheral compartment.**
 
-The parameter meaning for the 0.0454 value describes clearance across a dialyzer, yet the units h⁻¹ and the 0.0448 absorption rate constant indicate a dimensional mismatch. Additionally, the 46 value for the peripheral compartment volume has no units attached, preventing conversion to standard measures. These inconsistencies in the two-compartment structure caused the record to be rejected. Extracted — peginterferon beta-1a: CL 2.12 L/h, V 229 L, t1/2ka 0.0448 h À1, CL_HD 0.0454 h À1, V2 46.
+The absorption half-life and dialysis clearance parameters are both labeled with units of h⁻¹, conflicting with their physical definitions as a duration and a clearance rate. Additionally, the model includes a second compartment that is not linked to the central compartment, making it unreachable from the dose. Extracted — peginterferon beta-1a: CL 2.12 L/h, V 229 L, t1/2ka 0.0448 h À1, CL_HD 0.0454 h À1, V2 46.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[dka].parameter_id`: this record has Q95, the second reading Q49; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

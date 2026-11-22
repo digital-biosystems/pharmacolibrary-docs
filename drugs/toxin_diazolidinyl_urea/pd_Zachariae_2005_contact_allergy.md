@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Diazolidinyl urea concentrations, expressed as percentage doses, are associated with the binary response of contact allergy. The paper excerpts do not specify a pharmacodynamic mechanism, potency parameters, or rate constants for this relationship.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Zachariae_2005`
 - **model family:** `unknown`
 - **driver:** `dose_only`

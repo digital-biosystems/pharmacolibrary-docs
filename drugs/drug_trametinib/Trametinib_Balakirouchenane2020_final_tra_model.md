@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the parent-metabolite structure with missing V2/F parameter contradicts the single-compartment absorption model.
+> Trametinib record rejected because the parent-metabolite model structure was replaced by a one-compartment model, the V2/F volume was missing, and the output did not match the measured analyte.
 
 <div class="pk-model-meta" hidden drug="trametinib" model-id="Trametinib_Balakirouchenane2020_final_tra_model" status="rejected" stale="false" population="patients with BRAF-mutated metastatic solid tumors" measured-compound="trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,9 +56,9 @@ Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A e
 
 ### Reviewer guidance
 
-**Record rejected because the parent-metabolite structure with missing V2/F parameter contradicts the single-compartment absorption model.**
+**Trametinib record rejected because the parent-metabolite model structure was replaced by a one-compartment model, the V2/F volume was missing, and the output did not match the measured analyte.**
 
-The pharmacokinetic structure requires a parent-metabolite relationship, but the model was built as a single central compartment with oral absorption, omitting the metabolite. Consequently, the output variable was defined for the central compartment rather than the measured compound, and the V2/F parameter was not emitted. Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
+The model was built as a simple one-compartment system instead of the required structure describing trametinib as a metabolite of dabrafenib. The apparent intercompartmental clearance V2/F was not extracted, leaving the second volume distribution undefined. The output variable corresponded to the central compartment rather than the measured trametinib concentration, and a second reader disagreed with the inclusion of the dabrafenib-to-hydroxy-dabrafenib link. Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading trametinib; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -162,15 +162,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=trametinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=trametinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.615, 0 of 1 reader(s) agree | 0.615 | cross-check disputed by a second reader: verdict disputed, agreement 0.615, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

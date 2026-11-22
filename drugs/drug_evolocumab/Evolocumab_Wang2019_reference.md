@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time lacked estimates from the paper, so library defaults were used instead of explicit values.
+> Absorption rate, volume of distribution, and clearance values are summary statistics from the abstract, not fitted estimates, and bioavailability defaults lack paper support.
 
 <div class="pk-model-meta" hidden drug="evolocumab" model-id="Evolocumab_Wang2019_reference" status="needs_review" stale="false" population="Caucasian and Asian populations" measured-compound="evolocumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Wang C, Zheng Q, Zhang M, Lu H. Lack of ethnic differences in the pharmacokineti
 
 ### Reviewer guidance
 
-**Bioavailability and lag time lacked estimates from the paper, so library defaults were used instead of explicit values.**
+**Absorption rate, volume of distribution, and clearance values are summary statistics from the abstract, not fitted estimates, and bioavailability defaults lack paper support.**
 
-The record was built from the abstract alone, causing summary statistics to stand in for a fitted model. Bioavailability (F) and lag time (Tlag) were not reported, leading to the use of library defaults. A second reader disagreed on the extraction of the clearance and volume parameters, noting they were missing in their reading. Extracted — evolocumab: CL 0.24 l day-1, V 2.75 l, kabs 0.245 1/day.
+The record relies on abstract-only data, using summary statistics to represent the pharmacokinetic parameters for evolocumab. The absorption rate of 0.245 day-1, volume of 2.75 L, and clearance of 0.24 L day-1 are not direct model estimates. Additionally, the second reader identified missing volume and absorption rate values, contradicting the extracted figures. Extracted — evolocumab: CL 0.24 l day-1, V 2.75 l, kabs 0.245 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.245, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
@@ -128,14 +128,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=evolocumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=evolocumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

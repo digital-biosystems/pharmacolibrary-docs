@@ -4,11 +4,11 @@
 
 # Heptanoic acid — `HeptanoicAcid_Lee2022_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> Heptanoic acid clearance and bioavailability lack fitted values, forcing library placeholders and quarantining the model.
 
-<div class="pk-model-meta" hidden drug="Heptanoic acid" model-id="HeptanoicAcid_Lee2022_reference" status="extracted" stale="false" population="healthy adult subjects and adult and pediatric subjects with long-chain fatty acid oxidation disorders (LC-FAOD)" measured-compound="Heptanoate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Heptanoic acid" model-id="HeptanoicAcid_Lee2022_reference" status="model_quarantined" stale="false" population="healthy adult subjects and adult and pediatric subjects with long-chain fatty acid oxidation disorders (LC-FAOD)" measured-compound="Heptanoate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lee SK, Gosselin NH, Jomphe C, McKeever K, Putnam W. Population Pharmacokinetics of Heptanoate in Healthy Subjects and Patients With Long-Chain Fatty Acid Oxidation Disorders Treated With Triheptanoin. Clinical pharmacology in drug development 11(11):1264–1272 (2022).
@@ -30,6 +30,8 @@ Lee SK, Gosselin NH, Jomphe C, McKeever K, Putnam W. Population Pharmacokinetics
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | F1 | fm | 0.560 |  | 1.93 |
@@ -41,7 +43,7 @@ Lee SK, Gosselin NH, Jomphe C, McKeever K, Putnam W. Population Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +51,13 @@ Lee SK, Gosselin NH, Jomphe C, McKeever K, Putnam W. Population Pharmacokinetics
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Heptanoic acid clearance and bioavailability lack fitted values, forcing library placeholders and quarantining the model.**
+
+The record indicates that clearance and bioavailability for heptanoic acid were not extracted from the source data. Consequently, these parameters retained default library placeholders rather than specific estimates derived from the pharmacokinetic analysis. This absence of fitted values for critical elimination and absorption parameters triggered the model's quarantine. Extracted — heptanoic acid: fm 0.56, kabs 0.461 1/h, tlag 3.54 h, V1 6.51 L, V 1.05 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -119,6 +127,18 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.05 L | ['Lee_2022_table_S3:row12:col1', 'Lee_2022_table_S3:row12:col4', 'Lee_2022_table_S3:row12:col5'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 6.51 L | ['Lee_2022_table_S3:row11:col1', 'Lee_2022_table_S3:row11:col4', 'Lee_2022_table_S3:row11:col5'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 195 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 1.7 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

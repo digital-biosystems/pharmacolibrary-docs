@@ -26,7 +26,7 @@ Letermovir is a direct-acting antiviral medication used to prevent cytomegalovir
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Prohn_2021_reference](drugs/drug_letermovir/Letermovir_Prohn2021_reference.md) | — | 3-compartment (no model) | 11 (+2 cov.) | Prohn M et al., Population pharmacokinetics of letermov…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12593](https://doi.org/10.1002/psp4.12593) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Prohn_2021_reference](drugs/drug_letermovir/Letermovir_Prohn2021_reference.md) | — | 3-compartment (no model) | 11 (+2 cov.) | Prohn M et al., Population pharmacokinetics of letermov…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12593](https://doi.org/10.1002/psp4.12593) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Royston_2025_reference](drugs/drug_letermovir/Letermovir_Royston2025_reference.md) | — | 1-compartment (no model) | 0 | Royston L et al., Population pharmacokinetic analysis of…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00697-25](https://doi.org/10.1128/aac.00697-25) |
 
 ## Pharmacodynamics (PD)
@@ -34,24 +34,6 @@ Letermovir is a direct-acting antiviral medication used to prevent cytomegalovir
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Giménez_2023_CMV_IE1](drugs/drug_letermovir/pd_Gim_nez_2023_CMV_IE1.md) | CMV replication (inhibition of CMV IE1 expression) ← letermovir · inhibition effect | — | Giménez E et al., In vitro assessment of the combined eff…, Revista espanola de quimiot… (2023) | [10.37201/req/016.2023](https://doi.org/10.37201/req/016.2023) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=letermovir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCC2` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inhibitor, `CYP2C9` inducer, `CYP2D6` substrate, `CYP3A4` inhibitor/substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate, `UGT1A1` substrate, `UGT1A3` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `ABCC2` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` inhibitor, `ABCC2` inhibitor, `ABCG2` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,7 +53,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 29 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

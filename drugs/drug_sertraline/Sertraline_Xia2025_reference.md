@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sertraline clearance and volume of distribution used placeholder values because no explicit estimates were extracted.
+> The cross-check was disputed because the second reader could not identify the dose compound or primary analyte for sertraline in this record.
 
 <div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Xia2025_reference" status="needs_review" stale="false" population="Chinese adolescent patients with depressive disorders" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Xia H, Deng G, Liang F, Zhang Z, Huang W, Guo Z et al. Investigating Remedial St
 
 ### Reviewer guidance
 
-**Sertraline clearance and volume of distribution used placeholder values because no explicit estimates were extracted.**
+**The cross-check was disputed because the second reader could not identify the dose compound or primary analyte for sertraline in this record.**
 
-The record lists total clearance as 59.11 L/h and volume of distribution as 1129.10 L. The model builder applied standard defaults rather than using specific fitted estimates for these parameters. A second reader disagreed, reporting values of 65.8 L/h and 1570 L instead. Extracted — sertraline: kabs 0.5 h−1, CL/F 59.1 L.h−1, V/F 1.13e+03 L.
+The primary cross-check failed with an agreement ratio of 0.714, as the second reader disagreed with the record's assignment of sertraline. The record lists sertraline as both the measured compound and the expected dose compound, but the second reader marked both fields as unknown. Consequently, the model was held back due to this disagreement on the fundamental identity of the administered and measured molecule. Extracted — sertraline: kabs 0.5 h−1, CL/F 59.1 L.h−1, V/F 1.13e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sertraline, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -130,15 +130,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=sertraline) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev_1: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=sertraline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

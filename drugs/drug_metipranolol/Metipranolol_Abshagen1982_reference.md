@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Metipranolol clearance, absorption rate constant, and lag time lacked values, so library placeholders were used, causing the model to be quarantined.
+> The model was quarantined because clearance and absorption rate constant for metipranolol were missing, forcing the use of library placeholder values.
 
 <div class="pk-model-meta" hidden drug="metipranolol" model-id="Metipranolol_Abshagen1982_reference" status="model_quarantined" stale="false" population="normal volunteers" measured-compound="deacetyl metipranolol" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Abshagen U, Betzien G, Kaufmann B, Endele G. Pharmacokinetics of metipranolol in
 
 ## Population and dosing
 
-**Population:** normal volunteers · condition healthy · age group adult · n = &gt;=47.
+**Population:** normal volunteers · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed metipranolol, measured deacetyl metipranolol.
 
@@ -56,9 +56,9 @@ Abshagen U, Betzien G, Kaufmann B, Endele G. Pharmacokinetics of metipranolol in
 
 ### Reviewer guidance
 
-**Metipranolol clearance, absorption rate constant, and lag time lacked values, so library placeholders were used, causing the model to be quarantined.**
+**The model was quarantined because clearance and absorption rate constant for metipranolol were missing, forcing the use of library placeholder values.**
 
-The record was built from the paper's abstract alone, meaning no fitted model parameters were available for the parent drug. Consequently, metipranolol's clearance, absorption rate constant, and absorption lag time were left at defaults, forcing the use of placeholder values. The model was held back to prevent publication of these invented numbers. Extracted — metipranolol: tlag 7.3 min, tmax 50 min, t1/2z 6.3 min, fe 4 % of the dose, CLm/F 1.24e+03 ml/min, CLR 149 ml/min, CLNR 1.07e+03 ml/min, V 3.5 l/kg, … (+2).
+The record was built from the abstract alone, so summary statistics stand in for a fitted model, and the second reader disputed the verdict with 0.12 agreement. The builder substituted placeholder values for the missing clearance and absorption parameters, which were not reported in the source. The apparent parameterization assumed a bioavailability of 50% and a distribution volume of 3.5 L/kg. Extracted — metipranolol: tlag 7.3 min, tmax 50 min, t1/2z 6.3 min, fe 4 % of the dose, CLm/F 1.24e+03 ml/min, CLR 149 ml/min, CLNR 1.07e+03 ml/min, V 3.5 l/kg, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metipranolol, the second reading metipranolol; deacetyl metipranolol; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -166,14 +166,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.12, 0 of 1 reader(s) agree | 0.12 | cross-check disputed by a second reader: verdict disputed, agreement 0.12, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

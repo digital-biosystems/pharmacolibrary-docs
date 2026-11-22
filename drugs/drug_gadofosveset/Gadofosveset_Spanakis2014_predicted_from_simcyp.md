@@ -16,7 +16,7 @@ Spanakis M, Marias K. In silico evaluation of gadofosveset pharmacokinetics in d
 
 ## Population and dosing
 
-**Population:** simulated virtual populations: healthy volunteers, renal and liver impairment, obese, and oncology · condition healthy, renal impairment, liver cirrhosis, obesity, and oncology · age group adult · n = 100 per population group.
+**Population:** simulated virtual populations: healthy volunteers, renal and liver impairment, obese, and oncology · condition healthy, renal impairment, liver cirrhosis, obesity, and oncology · age group adult.
 
 **Dosing:** 2100 mg, iv, single.
 

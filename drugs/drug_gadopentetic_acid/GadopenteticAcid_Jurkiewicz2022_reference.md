@@ -4,11 +4,11 @@
 
 # gadopentetic acid — `GadopenteticAcid_Jurkiewicz2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-07 17:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The second compartment of the gadopentetic acid model is structurally orphaned, rendering the model rejected.
+> Gadopentetic acid was rejected because its 2-compartment topology defines a peripheral volume with no path from the central compartment dose.
 
-<div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Jurkiewicz2022_reference" status="rejected" stale="true" population="" measured-compound="gadopentetic_acid" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Jurkiewicz2022_reference" status="rejected" stale="false" population="" measured-compound="gadopentetic_acid" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jurkiewicz E, Tsvetkova S, Grinberg A, Pasquiers B. Pharmacokinetics, Safety, and Efficacy of Gadopiclenol in Pediatric Patients Aged 2 to 17 Years. Investigative radiology 57(8):510-516 (2022).
@@ -36,7 +36,7 @@ Jurkiewicz E, Tsvetkova S, Grinberg A, Pasquiers B. Pharmacokinetics, Safety, an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.4), qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.5), qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Jurkiewicz E, Tsvetkova S, Grinberg A, Pasquiers B. Pharmacokinetics, Safety, an
 
 ### Reviewer guidance
 
-**The second compartment of the gadopentetic acid model is structurally orphaned, rendering the model rejected.**
+**Gadopentetic acid was rejected because its 2-compartment topology defines a peripheral volume with no path from the central compartment dose.**
 
-The record defines a two-compartment structure for gadopentetic acid, but the review identified the peripheral compartment as unreachable from the dose. This orphan status means the peripheral volume of distribution and inter-compartmental kinetics lack a valid path from administration, causing the model to fail structural integrity checks. Extracted — gadopentetic acid: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
+The record specifies a 2-compartment structure with a central volume of 0.12 L/kg and a peripheral volume of 0.06 L/kg. The review found the peripheral compartment unreachable, indicating no connection from the dose site to the peripheral space. Consequently, the model could not simulate the peripheral concentration, leading to rejection. Extracted — gadopentetic acid: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
 
-A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q17: this record has none, the second reading 582; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q17: this record has none, the second reading 582; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -80,15 +80,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | not confirmed | 0.4 (4/10 fields) | 6 |
+| `glm-5.3-flash` | not confirmed | 0.5 (5/10 fields) | 5 |
 | `qwen3.8-27b` | no answer | – | – (extracted nothing for this record) |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `glm-5.3-flash` | `values[Q17]` |  | 582 | only_one_extracted |
-| `glm-5.3-flash` | `values[Q22]` | 0.12 | 0.1 | mismatch |
 | `glm-5.3-flash` | `values[Q307]` |  | 12.8 | only_one_extracted |
 | `glm-5.3-flash` | `values[Q354]` |  | 0.08 | only_one_extracted |
 | `glm-5.3-flash` | `values[Q57]` | 1.29 | 1.82 | mismatch |

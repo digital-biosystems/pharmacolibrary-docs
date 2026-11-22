@@ -26,16 +26,7 @@ Cefpodoxime is a third-generation cephalosporin antibiotic used to treat infecti
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="other animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Linnehan_2024_reference](drugs/drug_cefpodoxime/Cefpodoxime_Linnehan2024_reference.md) | — | 1-compartment (no model) | 3 | Linnehan BK et al., POPULATION PHARMACOKINETICS OF CEFPODOX…, Journal of zoo and wildlife… (2024) | [10.1638/2023-0139](https://doi.org/10.1638/2023-0139) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefpodoxime).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| <span class="pk-rf" hidden data-species="other animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Linnehan_2024_reference](drugs/drug_cefpodoxime/Cefpodoxime_Linnehan2024_reference.md) | — | 1-compartment (no model) | 3 | Linnehan BK et al., POPULATION PHARMACOKINETICS OF CEFPODOX…, Journal of zoo and wildlife… (2024) | [10.1638/2023-0139](https://doi.org/10.1638/2023-0139) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +46,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

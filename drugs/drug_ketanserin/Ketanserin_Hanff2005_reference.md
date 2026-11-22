@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held because absorption parameters defaulted to library values, and the 37.9 L/h clearance value was misidentified as apparent.
+> The record relies on abstract-only statistics and invents absorption parameters, as a second reader disputed the extracted values for ketanserin.
 
 <div class="pk-model-meta" hidden drug="ketanserin" model-id="Ketanserin_Hanff2005_reference" status="needs_review" stale="false" population="pre-eclamptic patients" measured-compound="ketanserin" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Hanff LM, Visser W, Steegers EA, Vulto AG. Population pharmacokinetics of ketans
 
 ## Population and dosing
 
-**Population:** pre-eclamptic patients · condition pre-eclampsia · age group adult · n = &gt;=51.
+**Population:** pre-eclamptic patients · condition pre-eclampsia · age group adult.
 
 ## Model
 
@@ -48,9 +48,9 @@ Hanff LM, Visser W, Steegers EA, Vulto AG. Population pharmacokinetics of ketans
 
 ### Reviewer guidance
 
-**The record was held because absorption parameters defaulted to library values, and the 37.9 L/h clearance value was misidentified as apparent.**
+**The record relies on abstract-only statistics and invents absorption parameters, as a second reader disputed the extracted values for ketanserin.**
 
-The model builder substituted a first-order depot with a default absorption rate constant instead of an estimate from the study. Additionally, the 37.9 L/h value was classified as apparent metabolite clearance, conflicting with the second reader who identified it as total clearance. Extracted — ketanserin: CLm/F 37.9 L/h, V 0.544 L/kg.
+The record uses apparent parameterization with a metabolic clearance of 37.9 L/h and volume of 0.544 L/kg, but absorption parameters like ka were defaulted rather than reported. A second reader disagreed with the parameterization type and failed to identify the specific values for clearance and volume, resulting in a verdict dispute. The source text was limited to the abstract, causing summary statistics to stand in for a fitted model. Extracted — ketanserin: CLm/F 37.9 L/h, V 0.544 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -129,15 +129,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ketanserin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=ketanserin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/&quot;},{&quot;label&quot;:&quot;Goniewicz_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4Methylnitrosamino13Pyridyl1Butanol_Adams1985_reference&quot;,&quot;label&quot;:&quot;Adams_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/D_4Methylnitrosamino13Pyridyl1Butanol_Adams1985_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc&quot;,&quot;label&quot;:&quot;Goniewicz_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4Methylnitrosamino13Pyridyl1Butanol_Adams1985_reference&quot;,&quot;label&quot;:&quot;Adams_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/D_4Methylnitrosamino13Pyridyl1Butanol_Adams1985_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc&quot;,&quot;label&quot;:&quot;Goniewicz_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_methylnitrosamino_1_3_pyridyl_1_butanol/D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol — `D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol" model-id="D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc" status="extracted" stale="false" population="daily smokers and occasional smokers" measured-compound="NNAL (4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol)" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol" model-id="D_4Methylnitrosamino13Pyridyl1Butanol_Goniewicz2009_referenc" status="simulated" stale="false" population="daily smokers and occasional smokers" measured-compound="NNAL (4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol)" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Goniewicz ML, Havel CM, Peng MW, Jacob P, Dempsey D, Yu L et al. Elimination kinetics of the tobacco-specific biomarker and lung carcinogen 4-(methylnitrosamino)-1-(3-pyridyl)-1-butanol. Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology 18(12):3421–3425 (2009).
@@ -32,9 +30,13 @@ Goniewicz ML, Havel CM, Peng MW, Jacob P, Dempsey D, Yu L et al. Elimination kin
 | alpha-phase half-lives were | t1/2α | 14.3 | hours |
 | Mean renal clearance of NNAL was | CLR | 13 | mL/min |
 
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,7 +44,13 @@ Goniewicz ML, Havel CM, Peng MW, Jacob P, Dempsey D, Yu L et al. Elimination kin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is 4 methylnitrosamino 1 3 pyridyl 1 butanol's own; they describe NNAL (4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol).
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -103,6 +111,18 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q57 | pass | [time] |  | ['Goniewicz_2009:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Goniewicz_2009:abstract', 'Goniewicz_2009:abstract'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | retainedFraction (measured=NNAL (4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol)) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

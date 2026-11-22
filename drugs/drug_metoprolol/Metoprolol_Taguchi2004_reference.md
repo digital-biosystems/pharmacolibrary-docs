@@ -16,7 +16,7 @@ Taguchi M, Nozawa T, Mizumaki K, Inoue H, Tahara K, Takesono C et al. Nonlinear 
 
 ## Population and dosing
 
-**Population:** routinely treated Japanese patients · condition routinely treated · age group mixed · n = &gt;=34.
+**Population:** routinely treated Japanese patients · condition routinely treated · age group mixed.
 
 ## Model
 

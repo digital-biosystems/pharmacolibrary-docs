@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports that 110_phenanthroline administered at doses of 2 and 4 mg/kg significantly inhibited the proliferation of viable Ehrlich ascites carcinoma tumor cells in mice, but does not specify the quantitative pharmacodynamic mechanism or kinetic parameters for this in vivo response. Potency values such as IC50 are provided only for separate in vitro assays on IEC-6 cells (78.8 and 19.95 μg/mL for R1 and R2 respectively), not for the in vivo viable tumor cell response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Anchuri_2012`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -16,7 +16,7 @@ Lu T, Wang B, Gao Y, Dresser M, Graham RA, Jin JY. Semi-Mechanism-Based Populati
 
 ## Population and dosing
 
-**Population:** adults with advanced solid tumors and healthy women of nonchildbearing potential · condition advanced basal cell carcinoma · age group mixed · n = &gt;&lt;/n  225.
+**Population:** adults with advanced solid tumors and healthy women of nonchildbearing potential · condition advanced basal cell carcinoma · age group mixed.
 
 **Dosing:** 150, 270, 540 mg, oral, multiple, every 24 h.
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> Sulfadimethoxine clearance was missing, forcing a placeholder value that prevented the model from being published.
+> No value for sulfadimethoxine's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="sulfadimethoxine" model-id="Sulfadimethoxine_Chatfield2001_reference" status="model_quarantined" stale="false" population="adult camels" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Chatfield J, Jensen J, Boothe D, Herzog T, Junkins K. Disposition of sulfadimeth
 
 ## Population and dosing
 
-**Population:** adult camels · condition healthy · age group adult · n = # Number of subjects in the analysis (a plain integer), or unknown.
+**Population:** adult camels · condition healthy · age group adult.
 
 > **Species: camelid.** This record comes from an animal study (camelid), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -51,13 +51,13 @@ Chatfield J, Jensen J, Boothe D, Herzog T, Junkins K. Disposition of sulfadimeth
 
 ### Reviewer guidance
 
-**Sulfadimethoxine clearance was missing, forcing a placeholder value that prevented the model from being published.**
+**No value for sulfadimethoxine's clearance; t6_deviations (+1 more).**
 
-The record was derived solely from the paper's abstract, so summary statistics replaced fitted model parameters. Clearance lacked an explicit estimate, leaving the model with a library placeholder. Additionally, the steady-state volume of distribution was substituted for the central volume, failing to capture the early distribution phase. Extracted — sulfadimethoxine: Cmax 19.3 microg/ml, kel 0.09 /hr, t1/2z 11.7 hr, Vss 0.393 L/kg, Fab 103 %.
+The model was built, but sulfadimethoxine's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sulfadimethoxine: Cmax 19.3 microg/ml, kel 0.09 /hr, t1/2z 11.7 hr, Vss 0.393 L/kg, Fab 103 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfadimethoxine, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,13 +144,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

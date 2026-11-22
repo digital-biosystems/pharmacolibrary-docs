@@ -4,11 +4,11 @@
 
 # Samidorphan — `Samidorphan_Sun2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-06 17:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The samidorphan record was rejected because the absorption rate constant was recorded in hours, a unit not standard for this parameter type, causing a dimension mismatch.
+> The absorption rate constant for samidorphan is recorded in hours rather than inverse hours, causing a fundamental dimensional error in the two-compartment model.
 
-<div class="pk-model-meta" hidden drug="Samidorphan" model-id="Samidorphan_Sun2021_reference" status="rejected" stale="true" population="healthy subjects and patients with schizophrenia" measured-compound="samidorphan" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Samidorphan" model-id="Samidorphan_Sun2021_reference" status="rejected" stale="false" population="healthy subjects and patients with schizophrenia" measured-compound="samidorphan" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Sun L, Mills R, Sadler BM, Rege B. Population Pharmacokinetics of Olanzapine and Samidorphan When Administered in Combination in Healthy Subjects and Patients With Schizophrenia. Journal of clinical pharmacology 61(11):1430–1441 (2021).
@@ -56,7 +56,7 @@ Sun L, Mills R, Sadler BM, Rege B. Population Pharmacokinetics of Olanzapine and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.705). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.705). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,9 +66,9 @@ Sun L, Mills R, Sadler BM, Rege B. Population Pharmacokinetics of Olanzapine and
 
 ### Reviewer guidance
 
-**The samidorphan record was rejected because the absorption rate constant was recorded in hours, a unit not standard for this parameter type, causing a dimension mismatch.**
+**The absorption rate constant for samidorphan is recorded in hours rather than inverse hours, causing a fundamental dimensional error in the two-compartment model.**
 
-The absorption rate constant is typically expressed in inverse time (h⁻¹), but this record lists it in hours (h). This unit inconsistency triggered the rejection for a dimension mismatch on a structural parameter. Additionally, the second reader noted a discrepancy where a rifampin induction effect on clearance was identified but not present in this record. Extracted — samidorphan: CL/F 15.5 L/h, V1/F 656 L, V2/F 225 L, kabs 0.861 h, tlag 0.323 h, Q/F 6.15 L/h.
+The absorption rate constant is listed as 0.861 h, conflicting with the required inverse-time dimension for a first-order rate process. Because this unit could not be processed into standard SI units, the model was held back from publication. A secondary review also identified discrepancies in covariate estimates, such as the hepatic effect on clearance and the race effect on intercompartmental clearance. Extracted — samidorphan: CL/F 15.5 L/h, V1/F 656 L, V2/F 225 L, kabs 0.861 h, tlag 0.323 h, Q/F 6.15 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olanzapine and samidorphan (OLZ/SAM combination tablet), the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

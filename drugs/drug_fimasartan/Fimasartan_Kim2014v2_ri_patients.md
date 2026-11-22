@@ -5,11 +5,11 @@
 
 # fimasartan — `Fimasartan_Kim2014v2_ri_patients`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:31 UTC (Rejected), but the paper was screened again on 2026-10-07 15:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fimasartan record rejected because elimination rate constant 0.067 is recorded in hours rather than per hour, causing a dimension mismatch.
+> The elimination rate constant kel for fimasartan is recorded in hours instead of per hour, creating a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_ri_patients" status="rejected" stale="true" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_ri_patients" status="rejected" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on the pharmacokinetics of fimasartan: a single-dose, open-label, Phase I study. Drug design, development and therapy 8:1723–1731 (2014).
@@ -17,7 +17,7 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ## Population and dosing
 
-**Population:** patients with renal impairment and healthy volunteers · condition renal impairment · age group adult · n = &gt;=16.
+**Population:** patients with renal impairment and healthy volunteers · condition renal impairment · age group adult.
 
 **Dosing:** 120 mg, oral, single.
 
@@ -39,7 +39,7 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ### Reviewer guidance
 
-**Fimasartan record rejected because elimination rate constant 0.067 is recorded in hours rather than per hour, causing a dimension mismatch.**
+**The elimination rate constant kel for fimasartan is recorded in hours instead of per hour, creating a dimension mismatch.**
 
-The elimination rate constant for fimasartan is listed as 0.067 with units of hours, which is dimensionally incorrect for a rate constant. This missing conversion resulted in a structural parameter error. A second reader also disagreed on the model parameterization, suggesting missing clearance, absorption, and volume parameters were incorrectly attributed. Extracted — fimasartan: CL/F 80.2 L/h, kel 0.067 h, t1/2z 11.3 h.
+The parameter kel, representing the terminal elimination rate constant, is assigned the value 0.067 with the unit 'h'. This unit dimension conflicts with the required reciprocal time dimension for a rate constant. Additionally, the model is parameterized as an apparent one-compartment model, whereas the second reader identifies it as mechanistic with specific volume and clearance parameters. Extracted — fimasartan: CL/F 80.2 L/h, kel 0.067 h, t1/2z 11.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

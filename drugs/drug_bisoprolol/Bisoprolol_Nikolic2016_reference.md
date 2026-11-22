@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bisoprolol absorption half-life (ka) and lag time (Tlag) were not reported in the paper, leaving critical pharmacokinetic parameters at unreported defaults.
+> Bisoprolol’s absorption-rate constant (ka) was not reported and was defaulted, leaving its value unsupported and the model held back.
 
 <div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2016_reference" status="needs_review" stale="false" population="hemodialysis patients with hypertension" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Nikolic VN, Jankovic SM, Dimitrijevic ZM, Sokolovic MJ, Andric BR, Petrovic DS e
 
 ## Population and dosing
 
-**Population:** hemodialysis patients with hypertension · condition hypertension, end-stage renal disease · age group adult · n = &gt;=35.
+**Population:** hemodialysis patients with hypertension · condition hypertension, end-stage renal disease · age group adult.
 
 **Dosing:** 1.25, 10 mg, oral, multiple.
 
@@ -51,13 +51,13 @@ Nikolic VN, Jankovic SM, Dimitrijevic ZM, Sokolovic MJ, Andric BR, Petrovic DS e
 
 ### Reviewer guidance
 
-**Bisoprolol absorption half-life (ka) and lag time (Tlag) were not reported in the paper, leaving critical pharmacokinetic parameters at unreported defaults.**
+**Bisoprolol’s absorption-rate constant (ka) was not reported and was defaulted, leaving its value unsupported and the model held back.**
 
-The model assumes a first-order depot input, but the absorption rate constant (ka) and lag time (Tlag) were not extracted from the source and remain as placeholder values. These unreported defaults affect the simulated concentration profile, making the record unsuitable for publication without explicit estimates or justification. Additionally, a second reader disagreed on the identification of the creatinine clearance parameter. Extracted — bisoprolol: CL/F 0.12 l/h, V 44.8 l, CL 6.33 l/h.
+The paper does not report ka; a library default was used, so the absorption-rate value affecting the simulated profile is unsupported by the paper. The builder also defaulted Tlag and assumed first-order depot input with apparent bioavailability parameterization (F=1, Fm=1, no molar correction). A second reader disputed the dose compound, primary analyte, and clearance-parameter assignment; agreement was 0.625. Extracted — bisoprolol: CL/F 0.12 l/h, V 44.8 l, CL 6.33 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -128,15 +128,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=bisoprolol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=apparent_assumption: not acceptable; deviation_id=first-order depot input: not acceptable; deviation_id=ka: not acceptable; deviation_id=Tlag: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=bisoprolol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

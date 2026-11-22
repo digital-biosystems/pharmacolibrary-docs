@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant was defaulted, not reported, for ornithine oxoglurate.
+> Apparent clearance and volume values for ornithine oxoglurate are used with defaulted absorption parameters, so the record lacks supported kinetic inputs.
 
 <div class="pk-model-meta" hidden drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="ornithine_oxoglurate" parameterization="apparent" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Wang X, Vilchez RA. Population Pharmacokinetic Analysis to Assist Dose Selection
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Wang X, Vilchez RA. Population Pharmacokinetic Analysis to Assist Dose Selection
 
 ### Reviewer guidance
 
-**Absorption rate constant was defaulted, not reported, for ornithine oxoglurate.**
+**Apparent clearance and volume values for ornithine oxoglurate are used with defaulted absorption parameters, so the record lacks supported kinetic inputs.**
 
-The record omits absorption rate constant, leading to library defaults rather than paper estimates. This affects simulated profile accuracy. CL/F 14.9 L/h and V 33.2 L are reported. Extracted — ornithine oxoglurate: CL/F 14.9 L/h, V 33.2 L.
+The record lists apparent clearance of 14.9 L/h and volume of 33.2 L but relies on library defaults for the absorption rate constant, which were not reported in the source. The model builder substituted an apparent parameterization with bioavailability assumed to be unity, rather than using explicit estimates. This means the simulated profile depends on unreported absorption kinetics, leaving the core absorption phase unsupported by the paper’s data. Extracted — ornithine oxoglurate: CL/F 14.9 L/h, V 33.2 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q310: this record has none, the second reading 6; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has none, the second reading 6; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,14 +87,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q310]` |  | 6 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q34]` | 36 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q310]` |  | 6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q34]` | 36 |  | only_one_extracted |
 
 </details>
 
@@ -120,15 +120,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ornithine_oxoglurate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=ornithine_oxoglurate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral compartment is unreachable from the dose, and the second reader rejected the clearance values of 0.192 and 0.229.
+> Toripalimab’s peripheral-compartment volume V2 is reported as 866 mL despite a finding of an unreachable or orphan compartment, and the model was rejected.
 
 <div class="pk-model-meta" hidden drug="toripalimab" model-id="Toripalimab_Li2022_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="toripalimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Li L, Qu J, Song M, Zhao Q, Yang Y, Tan X et al. Flat dose regimen of toripalima
 
 ### Reviewer guidance
 
-**The peripheral compartment is unreachable from the dose, and the second reader rejected the clearance values of 0.192 and 0.229.**
+**Toripalimab’s peripheral-compartment volume V2 is reported as 866 mL despite a finding of an unreachable or orphan compartment, and the model was rejected.**
 
-The model structure defines a peripheral compartment that has no path from the dose administration. The second reader disagreed with the record's values for the ADA clearance covariate and renal clearance proportion, leaving them null. Additionally, the second reader identified a turnover parameter value of 30 that is missing from the current record. Extracted — toripalimab: CL 14.8 mL/h, CLR 0.229, V1 3.71e+03 mL, V2 866 mL.
+The record specifies a two-compartment structure and gives V2 as 866 mL, meaning the peripheral compartment’s volume of distribution. The rejection finding means a compartment or metabolite has no path from the dose, but does not identify which compartment or metabolite is affected. Extracted — toripalimab: CL 14.8 mL/h, CLR 0.229, V1 3.71e+03 mL, V2 866 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clada: this record has 0.192, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

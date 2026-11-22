@@ -4,11 +4,11 @@
 
 # dihydrocodeine — `Dihydrocodeine_Webb2001_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 04:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Webb JA, Rostami-Hodjegan A, Abdul-Manap R, Hofmann U, Mikus G, Kamali F. Contribution of dihydrocodeine and dihydromorphine to analgesia following dihydrocodeine administration in man: a PK-PD modelling analysis. British journal of clinical pharmacology 52(1):35–43 (2001).
@@ -16,7 +16,7 @@ Webb JA, Rostami-Hodjegan A, Abdul-Manap R, Hofmann U, Mikus G, Kamali F. Contri
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = $10.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 **Dosing:** 90 mg, oral, single.
 
@@ -38,7 +38,7 @@ Webb JA, Rostami-Hodjegan A, Abdul-Manap R, Hofmann U, Mikus G, Kamali F. Contri
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Webb JA, Rostami-Hodjegan A, Abdul-Manap R, Hofmann U, Mikus G, Kamali F. Contri
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dihydrocodeine: t1/2z 13 min, kabs 2.6 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dihydrocodeine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

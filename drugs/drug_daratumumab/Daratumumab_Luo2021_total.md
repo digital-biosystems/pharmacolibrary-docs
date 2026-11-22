@@ -16,7 +16,7 @@ Luo MM, Usmani SZ, Mateos MV, Nahi H, Chari A, San-Miguel J et al. Exposure-Resp
 
 ## Population and dosing
 
-**Population:** multiple myeloma patients · age group adult · n = ..
+**Population:** multiple myeloma patients · age group adult.
 
 **Dosing:** 16, 1800 mg; mg/kg, sc; iv, multiple.
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the peripheral compartment is unreachable from the dose, and its volume of distribution is 1.75 L.
+> The record was rejected because icatibant’s peripheral-compartment volume (V2/F, 1.75 L) is associated with an unreachable compartment.
 
 <div class="pk-model-meta" hidden drug="icatibant" model-id="Icatibant_Wang2021_typical_value" status="rejected" stale="false" population="pediatric and adult patients with hereditary angioedema and healthy adults" measured-compound="icatibant" parameterization="apparent" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Wang Y, Jomphe C, Marier JF, Martin P. Population Pharmacokinetics and Exposure-
 
 ## Population and dosing
 
-**Population:** pediatric and adult patients with hereditary angioedema and healthy adults · condition hereditary angioedema · age group mixed · n = &gt;=172.
+**Population:** pediatric and adult patients with hereditary angioedema and healthy adults · condition hereditary angioedema · age group mixed.
 
 **Dosing:** 0.4, 30 mg, subcutaneous, single.
 
@@ -38,7 +38,7 @@ Wang Y, Jomphe C, Marier JF, Martin P. Population Pharmacokinetics and Exposure-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Wang Y, Jomphe C, Marier JF, Martin P. Population Pharmacokinetics and Exposure-
 
 ### Reviewer guidance
 
-**The record was rejected because the peripheral compartment is unreachable from the dose, and its volume of distribution is 1.75 L.**
+**The record was rejected because icatibant’s peripheral-compartment volume (V2/F, 1.75 L) is associated with an unreachable compartment.**
 
-The model describes a two-compartment structure for icatibant but defines no elimination or transfer rates out of the central compartment to the peripheral one, leaving the peripheral compartment unlinked from the drug dose. Consequently, the reported peripheral volume of distribution of 1.75 L belongs to an isolated state that cannot receive the administered icatibant. A second reader could not confirm which compound was dosed or measured, though the primary failure remains the structural disconnection of the compartments. Extracted — icatibant: kabs 3.27 h–1, tlag 0.0426 h, V2/F 1.75 L.
+The rejection finding identifies an unreachable or orphan compartment; V2/F is the listed peripheral-compartment volume for icatibant, valued at 1.75 L. A second reader marked both the dose compound and primary analyte as unknown, rather than icatibant. Extracted — icatibant: kabs 3.27 h–1, tlag 0.0426 h, V2/F 1.75 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has icatibant, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has icatibant, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -100,14 +100,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | icatibant | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | icatibant | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | icatibant | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | icatibant | unknown | mismatch |
 
 </details>
 

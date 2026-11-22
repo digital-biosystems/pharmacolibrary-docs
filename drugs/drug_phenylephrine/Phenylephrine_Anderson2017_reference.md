@@ -16,7 +16,7 @@ Anderson BJ, Christensen LK, Armstead VE, Bilyeu DP, Johnson KE, Friesen RH. The
 
 ## Population and dosing
 
-**Population:** children and adults · condition healthy · age group mixed · n = : 100.
+**Population:** children and adults · condition healthy · age group mixed.
 
 ## Model
 

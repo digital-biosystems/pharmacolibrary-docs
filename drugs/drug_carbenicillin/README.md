@@ -25,7 +25,7 @@ Carbenicillin is a penicillin antibiotic used to treat urinary tract infections,
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.60).">human + animal</span><br><sub>blocking: T6_deviations</sub> | [Strydom_2024_reference](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Strydom N et al., Dose optimization of TBI-223 for enhanc…, Nature communications (2024) | [10.1038/s41467-024-50781-4](https://doi.org/10.1038/s41467-024-50781-4) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.60).">human + animal</span><br><sub>blocking: cross_check_disputed</sub> | [Strydom_2024_reference](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Strydom N et al., Dose optimization of TBI-223 for enhanc…, Nature communications (2024) | [10.1038/s41467-024-50781-4](https://doi.org/10.1038/s41467-024-50781-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fernández_2025_reference](drugs/drug_carbenicillin/Carbenicillin_Fernndez2025_reference.md) | — | 2-compartment (no model) | 3 | Fernández Rubio B et al., High-Dose Ceftriaxone in Elderly Patien…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14050508](https://doi.org/10.3390/antibiotics14050508) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Yamaoka_1979_reference](drugs/drug_carbenicillin/Carbenicillin_Yamaoka1979_reference.md) | — | 1-compartment (no model) | 0 | Yamaoka K et al., High-performance liquid chromatographic…, Journal of chromatography (1979) | [10.1016/s0021-9673(00)80708-6](https://doi.org/10.1016/s0021-9673(00)80708-6) |
 
@@ -35,17 +35,6 @@ Carbenicillin is a penicillin antibiotic used to treat urinary tract infections,
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kies_1975_Bleeding](drugs/drug_carbenicillin/pd_Kies_1975_Bleeding.md) | Bleeding ← Carbenicillin · model not identified | — | Kies BM et al., Carbenicillin in acute renal failure, South African medical journ… (1975) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Søgaard_1982_IC50](drugs/drug_carbenicillin/pd_S_gaard_1982_IC50.md) | IC50 ← carbenicillin · direct linear effect | — | Søgaard P, Resistance types in Enterobacter cloaca…, Acta pathologica, microbiol… (1982) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=carbenicillin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: PLA2G4A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

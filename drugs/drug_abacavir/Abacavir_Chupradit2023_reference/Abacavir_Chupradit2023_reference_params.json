@@ -10,7 +10,11 @@
  ],
  "paper_doses_kind": "discrete",
  "paper_doses_mg": [
-  60.0
+  60.0,
+  90.0,
+  120.0,
+  150.0,
+  180.0
  ],
  "parameters": {
   "Cl": 3.225667527993109e-05,

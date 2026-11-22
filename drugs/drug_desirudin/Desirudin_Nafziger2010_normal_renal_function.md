@@ -4,11 +4,11 @@
 
 # desirudin — `Desirudin_Nafziger2010_normal_renal_function`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-05 14:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution parameter for desirudin was rejected due to a dimension mismatch in its structural definition.
+> Desirudin's absorption rate constant was rejected because the unit h-1 could not be validated against the expected dimensional standard.
 
-<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_normal_renal_function" status="rejected" stale="true" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_normal_renal_function" status="rejected" stale="false" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impairment. Journal of clinical pharmacology 50(6):614–622 (2010).
@@ -41,7 +41,7 @@ Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impai
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impai
 
 ### Reviewer guidance
 
-**The volume of distribution parameter for desirudin was rejected due to a dimension mismatch in its structural definition.**
+**Desirudin's absorption rate constant was rejected because the unit h-1 could not be validated against the expected dimensional standard.**
 
-The record lists the volume of distribution as 24.0 L, but this structural parameter failed a dimension mismatch check. Additionally, a unit associated with the model structure was not recognized by the conversion system, preventing the calculation of an SI value. Consequently, the model record was rejected despite the presence of other estimated rate constants. Extracted — desirudin: λ1 0.63 h-1, kel 0.16 h-1, V 24 L, kabs 0.52 h-1, k12 0.04 h-1, k21 0.3 h-1.
+The record lists the absorption rate constant as 0.52 h-1, but this unit format failed the dimensional consistency check. The validation system could not confirm that this specific unit notation represented a standard reciprocal time unit, preventing SI conversion. A second reader also failed to extract any value for the absorption rate constant, though they did not dispute the other extracted parameters. Extracted — desirudin: λ1 0.63 h-1, kel 0.16 h-1, V 24 L, kabs 0.52 h-1, k12 0.04 h-1, k21 0.3 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alpha: this record has 0.63, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 

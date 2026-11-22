@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Isoflurane concentrations, modeled as minimal alveolar concentrations (MAC), exert an inhibitory effect on the Bispectral index (BIS) via a sigmoid Emax model incorporating an effect compartment. The rate constant linking the plasma concentration to the effect site (ke0) is 0.16 min⁻¹; other potency parameters such as IC50 or Imax are not specified in the provided record.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kreuer_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;blinatumomab&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/&quot;},{&quot;label&quot;:&quot;Hijazi_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Blinatumomab_Hijazi2018_reference&quot;,&quot;label&quot;:&quot;Hijazi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Blinatumomab_Kuchimanchi2019_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Kuchimanchi2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Blinatumomab_Kuchimanchi2019_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Kuchimanchi2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Blinatumomab_Hijazi2018_reference&quot;,&quot;label&quot;:&quot;Hijazi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # blinatumomab — `Blinatumomab_Hijazi2018_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="blinatumomab" model-id="Blinatumomab_Hijazi2018_reference" status="simulated" stale="false" population="adults with relapsed/refractory non-Hodgkin lymphoma" measured-compound="blinatumomab" parameterization="mechanistic" topology="1C"></div>
+> Blinatumomab’s reported total clearance of 2.25 L/h was held for review because the second reader did not agree with this value.
+
+<div class="pk-model-meta" hidden drug="blinatumomab" model-id="Blinatumomab_Hijazi2018_reference" status="needs_review" stale="false" population="adults with relapsed/refractory non-Hodgkin lymphoma" measured-compound="blinatumomab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hijazi Y, Klinger M, Kratzer A, Wu B, Baeuerle PA, Kufer P et al. Pharmacokinetic and Pharmacodynamic Relationship of Blinatumomab in Patients with Non-Hodgkin Lymphoma. Current clinical pharmacology 13(1):55–64 (2018).
@@ -27,6 +29,8 @@ Hijazi Y, Klinger M, Kratzer A, Wu B, Baeuerle PA, Kufer P et al. Pharmacokineti
 <figure class="pk-models-diagram"><img src="drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_reference/Blinatumomab_Hijazi2018_reference.svg" alt="Blinatumomab_Hijazi2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | average CL | CL | 2.25 | L/h |
@@ -34,7 +38,7 @@ Hijazi Y, Klinger M, Kratzer A, Wu B, Baeuerle PA, Kufer P et al. Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +48,13 @@ Hijazi Y, Klinger M, Kratzer A, Wu B, Baeuerle PA, Kufer P et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Blinatumomab’s reported total clearance of 2.25 L/h was held for review because the second reader did not agree with this value.**
+
+The cross-check was partial, with agreement of 0.0 and 0 of 1 reader agreeing; the second reader recorded no clearance value. On four other fields, the second reader reported 1456 and 4.5 where this record had no value, while this record listed 2.44 and 585 where the second reader had no value. Extracted — blinatumomab: CL 2.25 L/h, V 7.92 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of CL: this record has 2.25, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -111,14 +117,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=blinatumomab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=blinatumomab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check agreement 0.0 is below 0.5: verdict partial, agreement 0.0, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

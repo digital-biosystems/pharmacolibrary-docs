@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Nitrofural&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nitrofural_Nogueira2013_reference&quot;,&quot;label&quot;:&quot;Nogueira_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nitrofural/Nitrofural_Nogueira2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nitrofural_Nogueira2013_reference&quot;,&quot;label&quot;:&quot;Nogueira_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nitrofural/Nitrofural_Nogueira2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Nitrofural
 
@@ -32,7 +32,7 @@ A topical anti-infective agent effective against gram-negative and gram-positive
 
 ## Start here
 
-> **Nogueira_2013_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> Male albino rabbits, n = 15. [Run it in the simulator](drugs/toxin_nitrofural/Nitrofural_Nogueira2013_reference.md?tab=Simulation) · [record](drugs/toxin_nitrofural/Nitrofural_Nogueira2013_reference.md)
+> **Nogueira_2013_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> Male albino rabbits, n = 15. [Run it in the simulator](drugs/toxin_nitrofural/Nitrofural_Nogueira2013_reference.md?tab=Simulation) · [record](drugs/toxin_nitrofural/Nitrofural_Nogueira2013_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -40,16 +40,7 @@ A topical anti-infective agent effective against gram-negative and gram-positive
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Nogueira_2013_reference](drugs/toxin_nitrofural/Nitrofural_Nogueira2013_reference.md) | ▶ model + simulator | retention, 1 pool | 3 | Nogueira Filho MA et al., Pharmacokinetics of hydroxymethylnitrof…, Drug metabolism letters (2013) | [10.2174/18723128112069990013](https://doi.org/10.2174/18723128112069990013) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nitrofural).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `XDH` substrate | DrugBank actor |
-| metabolism | small intestine | `XDH` substrate | DrugBank actor |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Nogueira_2013_reference](drugs/toxin_nitrofural/Nitrofural_Nogueira2013_reference.md) | ▶ model + simulator | retention, 1 pool | 3 | Nogueira Filho MA et al., Pharmacokinetics of hydroxymethylnitrof…, Drug metabolism letters (2013) | [10.2174/18723128112069990013](https://doi.org/10.2174/18723128112069990013) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The cyclophosphamide-to-4-hydroxycyclophosphamide link lacks a formation clearance, and an orphan metabolite structure caused the record to be rejected.
+> The record was rejected because the metabolite 4-hydroxycyclophosphamide is orphaned, lacking a defined path from the dose of thiotepa.
 
 <div class="pk-model-meta" hidden drug="thiotepa" model-id="Thiotepa_de2004_reference" status="rejected" stale="false" population="patients receiving high-dose chemotherapy" measured-compound="thiotepa" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -16,7 +16,7 @@ de Jonge ME, Huitema AD, Rodenhuis S, Beijnen JH. Integrated Population Pharmaco
 
 ## Population and dosing
 
-**Population:** patients receiving high-dose chemotherapy · condition cancer · age group adult · n = &lt;|reserved_special_token|&gt;.
+**Population:** patients receiving high-dose chemotherapy · condition cancer · age group adult.
 
 ## Model
 
@@ -45,9 +45,9 @@ de Jonge ME, Huitema AD, Rodenhuis S, Beijnen JH. Integrated Population Pharmaco
 
 ### Reviewer guidance
 
-**The cyclophosphamide-to-4-hydroxycyclophosphamide link lacks a formation clearance, and an orphan metabolite structure caused the record to be rejected.**
+**The record was rejected because the metabolite 4-hydroxycyclophosphamide is orphaned, lacking a defined path from the dose of thiotepa.**
 
-The record lists 4-hydroxycyclophosphamide as formed from cyclophosphamide with an unknown link parameter, leaving the pathway unlinked from the dose. Although thiotepa elimination is described with a rate constant of 0.0343 hr-1 and half-life of 20 hr, the abstract-only source provided no fitted model. The inclusion of an unrelated cyclophosphamide pathway created a structural inconsistency that invalidated the model. Extracted — thiotepa: kel 0.0343 hr(-1), t1/2z 20 hr.
+The model structure defines a metabolism link from cyclophosphamide to 4-hydroxycyclophosphamide, but cyclophosphamide is not part of the dosed drug or its direct metabolites. Additionally, the record was built from the abstract alone, so the reported elimination rate constant of 0.0343 hr(-1) and half-life of 20 hr stand in for a fitted model. Extracted — thiotepa: kel 0.0343 hr(-1), t1/2z 20 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thiotepa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

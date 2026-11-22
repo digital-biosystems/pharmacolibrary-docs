@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Phenolphthalein decreases colonic AQP3 expression, quantified as integral optical density, in a loperamide-induced constipation mouse model. The paper identifies a reduction in AQP3 levels as the relevant effect but does not provide a specific pharmacodynamic model, potency values (e.g., IC50), or rate constants.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

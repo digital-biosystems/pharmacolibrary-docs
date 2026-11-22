@@ -15,7 +15,7 @@ Winkelmann BR, Leinberger H, Hertrich FF, Rapp W, Dieterich HA, Ansquer JC. Acut
 
 ## Population and dosing
 
-**Population:** stable hypoxaemic patients with chronic bronchitis and emphysema · condition chronic bronchitis and emphysema · age group adult · n = $"23".
+**Population:** stable hypoxaemic patients with chronic bronchitis and emphysema · condition chronic bronchitis and emphysema · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed almitrine bismesylate, measured almitrine.
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 5, model 3.71).
+> The propafenone model's terminal half-life is 3.71 hours, deviating from the paper's reported 5.0 hours.
 
 <div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Connolly1984_dose_150_mg_every_8_hr" status="needs_review" stale="false" population="patients with ventricular arrhythmias" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Connolly S, Lebsack C, Winkle RA, Harrison DC, Kates RE. Propafenone disposition
 
 ## Population and dosing
 
-**Population:** patients with ventricular arrhythmias · condition ventricular arrhythmias · age group adult · n = &gt;=15.
+**Population:** patients with ventricular arrhythmias · condition ventricular arrhythmias · age group adult.
 
 **Dosing:** 1, 150, 300 mg/kg, mg, iv, oral, multiple, every 8 h.
 
@@ -40,7 +40,7 @@ Connolly S, Lebsack C, Winkle RA, Harrison DC, Kates RE. Propafenone disposition
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Connolly S, Lebsack C, Winkle RA, Harrison DC, Kates RE. Propafenone disposition
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 5, model 3.71).**
+**The propafenone model's terminal half-life is 3.71 hours, deviating from the paper's reported 5.0 hours.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — propafenone: CL 11.2 ml/min/kg, V 3.6 L/kg.
+Using the extracted clearance of 11.2 ml/min/kg and volume of distribution of 3.6 L/kg, the calculated terminal half-life is 3.71 hours. This value fails to match the paper's reported half-life of 5.0 hours within the required tolerance. A second reader also disagreed on the extracted values for clearance and volume of distribution. Extracted — propafenone: CL 11.2 ml/min/kg, V 3.6 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 12: this record has none, the second reading 1.69; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 12: this record has none, the second reading 1.69; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -103,17 +103,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[12]` |  | 1.69 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[14]` |  | 1.24 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[8]` |  | 0.30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 11.2 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd]` | 3.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[12]` |  | 1.69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[14]` |  | 1.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[8]` |  | 0.30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 11.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 3.6 |  | only_one_extracted |
 
 </details>
 
@@ -146,6 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check agreement 0.444 is below 0.5: verdict partial, agreement 0.444, 0 of 1 reader(s) agree |
 | T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 10 | 3.713 | 0.3713 | hr→SI vs simulated h |

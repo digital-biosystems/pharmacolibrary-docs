@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Dabrafenib’s clearance, volume of distribution, absorption rate, and lag time were left at default placeholders because no values were extracted.
+> Dabrafenib’s reported CL/F is 13.5 L/h, but model clearance and other key parameters were left without extracted values, so placeholders led to quarantine.
 
 <div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Isberner2022_reference" status="model_quarantined" stale="false" population="patients with BRAFV600-mutant melanoma" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Isberner N, Gesierich A, Balakirouchenane D, Schilling B, Aghai-Trommeschlaeger 
 
 ### Reviewer guidance
 
-**Dabrafenib’s clearance, volume of distribution, absorption rate, and lag time were left at default placeholders because no values were extracted.**
+**Dabrafenib’s reported CL/F is 13.5 L/h, but model clearance and other key parameters were left without extracted values, so placeholders led to quarantine.**
 
-Although the record lists dabrafenib clearance of 13.5 L/h and central volume of 30.8 L, the model was built using library defaults for these parameters instead of the extracted values. The covariate scenarios defined in the record were not simulated, meaning the estimated effects were not exercised. Additionally, the model structure did not match the intended parent-metabolite topology. Extracted — dabrafenib: V1/F 30.8 L, CL/F 13.5 L/h; trametinib: Q/F 97.7 L/h.
+Although the record lists dabrafenib CL/F 13.5 L/h and V1/F 30.8 L, no value was extracted for model clearance, volume, absorption rate constant, or absorption lag time; placeholders were used, and the absorption rate was defaulted although it was not reported. The model used a one-compartment enteral structure instead of the expected parent–metabolite structure, and first-order depot input was assumed; covariate scenarios were not simulated, only the reference individual. A second reader disputed the verdict, with agreement 0.231. Extracted — dabrafenib: V1/F 30.8 L, CL/F 13.5 L/h; trametinib: Q/F 97.7 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading dabrafenib; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -161,14 +161,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -186,30 +187,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_matlab.zip" download>Dabrafenib_Isberner2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_matlab_simbio.zip" download>Dabrafenib_Isberner2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_sbml.zip" download>Dabrafenib_Isberner2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_cellml.zip" download>Dabrafenib_Isberner2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Isberner N, Gesierich A, Balakirouchenane D, Schilling B, Aghai-Trommeschlaeger F, Zimmermann S et al. Monitoring of Dabrafenib and Trametinib in Serum and Self-Sampled Capillary Blood in Patients with BRAFV600-Mutant Melanoma. Cancers 14(19) (2022). [doi:10.3390/cancers14194566](https://doi.org/10.3390/cancers14194566)
-
-**This record:** Pharmacolibrary, model `Dabrafenib_Isberner2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference>
-
-```bibtex
-@misc{pharmacolibrary_DabrafenibIsberner2022reference,
-  title  = {{Pharmacolibrary model Dabrafenib_Isberner2022_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference},
-  note   = {Parameters from doi:10.3390/cancers14194566},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

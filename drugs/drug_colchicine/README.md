@@ -26,27 +26,8 @@ Colchicine is an antigout medication primarily used to treat gout, pericarditis,
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Rochdi_1994_reference](drugs/drug_colchicine/Colchicine_Rochdi1994_reference.md) | — | 1-compartment (no model) | 7 | Rochdi M et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1994) | [10.1007/BF00194404](https://doi.org/10.1007/BF00194404) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Rochdi_1994_reference](drugs/drug_colchicine/Colchicine_Rochdi1994_reference.md) | — | 1-compartment (no model) | 7 | Rochdi M et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1994) | [10.1007/BF00194404](https://doi.org/10.1007/BF00194404) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Wright_2025_reference](drugs/drug_colchicine/Colchicine_Wright2025_reference.md) | — | 1-compartment (no model) | 3 | Wright DFB et al., The Influence of Patient Factors on the…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01551-y](https://doi.org/10.1007/s40262-025-01551-y) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=colchicine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inducer/substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP2C8` inhibitor, `CYP2E1` inducer, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inducer/substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inducer/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: TUBB (binder), TUBB (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,7 +47,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 75 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

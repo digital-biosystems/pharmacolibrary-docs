@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Intercompartmental clearance is 1.5 mL/min, making the 2-compartment structure physiologically implausible.
+> The intercompartmental clearance of 1.5 mL/min is physiologically implausible for a two-compartment model.
 
 <div class="pk-model-meta" hidden drug="methylphenidate" model-id="Methylphenidate_Giorgi2010_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="methylphenidate" parameterization="mechanistic" topology="2C"></div>
 
@@ -40,7 +40,7 @@ Giorgi M, Prise U, Soldani G, Neri D, Lavy E. Pharmacokinetics of methylphenidat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Giorgi M, Prise U, Soldani G, Neri D, Lavy E. Pharmacokinetics of methylphenidat
 
 ### Reviewer guidance
 
-**Intercompartmental clearance is 1.5 mL/min, making the 2-compartment structure physiologically implausible.**
+**The intercompartmental clearance of 1.5 mL/min is physiologically implausible for a two-compartment model.**
 
-The extracted intercompartmental clearance (Q) for methylphenidate is 1.5 mL/min, a value outside the physiological window. This low magnitude contradicts the assigned 2-compartment topology, as such a rate is insufficient for meaningful peripheral distribution. The discrepancy suggests an extraction error in scale or unit conversion for this specific parameter. Extracted — methylphenidate: CL 0.27 L/h, V 0.31 L, Q 1.5 mL/min.
+The recorded intercompartmental clearance (1.5 mL/min) is far below typical physiological values for methylphenidate, indicating a likely scale error. A second reader disagreed on the model topology, suggesting a one-compartment structure instead of the recorded two-compartment design. Additional disagreements on specific parameter values further suggest inconsistencies in the data extraction. Extracted — methylphenidate: CL 0.27 L/h, V 0.31 L, Q 1.5 mL/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 1.5, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 1.5, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -84,9 +84,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (7/14 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.571 (8/14 fields) | 6 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -94,7 +94,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `values[Q30]` | 1.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q34]` | 10 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q40]` | 19 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q57]` | 0.8 | 0.85 | mismatch |
 | `gpt-oss-120b` | `values[Q75]` | 1 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q87]` | 30 |  | only_one_extracted |
 

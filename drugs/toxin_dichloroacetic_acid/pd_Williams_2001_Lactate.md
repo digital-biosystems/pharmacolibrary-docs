@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Dichloroacetic Acid&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/&quot;},{&quot;label&quot;:&quot;Williams_2001 \u00b7 PD lactate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DichloroaceticAcid_Abbas1997_reference&quot;,&quot;label&quot;:&quot;Abbas_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/DichloroaceticAcid_Abbas1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DichloroaceticAcid_Abbas1997_reference&quot;,&quot;label&quot;:&quot;Abbas_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_dichloroacetic_acid/DichloroaceticAcid_Abbas1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lactate — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span>
@@ -17,6 +17,10 @@
 **As extracted:** Dichloroacetic_acid (measured concentrations) drives lactate (in mmol/L) (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The provided record indicates that dichloroacetic acid concentrations (mg/L) inhibit lactate (mmol/L), but the specific pharmacodynamic mechanism and key rate or potency parameters are not described. No quantitative values such as IC50, Imax, or turnover rate constants are available in the source material.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Williams_2001`
 - **model family:** `unknown`

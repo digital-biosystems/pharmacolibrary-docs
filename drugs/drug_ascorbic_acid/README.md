@@ -18,18 +18,7 @@ Ascorbic acid is a water-soluble vitamin used to prevent and treat scurvy. It is
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bluck_1996_reference](drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md) | — | 1-compartment (no model) | 1 | Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spectrometr… (1996) | [10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H](https://doi.org/10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ascorbic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: ALKBH2 (activator), ALKBH3 (activator), BBOX1 (cofactor), DBH (cofactor), DNA (cleavage), EGLN1 (cofactor), EGLN2 (cofactor), EGLN3 (cofactor), KDM5D (cofactor), OGFOD1 (cofactor), OGFOD2 (cofactor), P3H1 (cofactor), P3H2 (cofactor), P3H3 (cofactor), P4HA1 (cofactor), P4HTM (cofactor), PAM (cofactor), PHYH (cofactor), PLOD1 (cofactor), PLOD2 (cofactor), PLOD3 (cofactor), SLC23A1 (modulator), SLC23A1 (substrate), SLC23A2 (modulator), SLC23A2 (substrate), SLC2A1 (substrate), SLC2A3 (substrate), SLC2A4 (substrate), TMLHE (cofactor), TXNRD1 (substrate).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bluck_1996_reference](drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md) | — | 1-compartment (no model) | 1 | Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spectrometr… (1996) | [10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H](https://doi.org/10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +38,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 2245 matched, 70 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

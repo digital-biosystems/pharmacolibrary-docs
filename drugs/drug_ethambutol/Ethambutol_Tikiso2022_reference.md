@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;ethambutol&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/&quot;},{&quot;label&quot;:&quot;Tikiso_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethambutol_Srivastava2022v2_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Srivastava2022v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethambutol_Sundell2020_reference&quot;,&quot;label&quot;:&quot;Sundell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Sundell2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethambutol_Tikiso2022_reference&quot;,&quot;label&quot;:&quot;Tikiso_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Tikiso2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethambutol_Sundell2020_reference&quot;,&quot;label&quot;:&quot;Sundell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Sundell2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethambutol_Srivastava2022v2_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Srivastava2022v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethambutol_Tikiso2022_reference&quot;,&quot;label&quot;:&quot;Tikiso_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Tikiso2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ethambutol apparent clearance and volume of distribution were extracted from a review, and the transit lag time was not provided.
+> The ethambutol apparent clearance of 15.9 L/h was rejected by the second reader, who also disputed the apparent parameterization of the model.
 
 <div class="pk-model-meta" hidden drug="ethambutol" model-id="Ethambutol_Tikiso2022_reference" status="needs_review" stale="false" population="" measured-compound="ethambutol" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Tikiso T, McIlleron H, Abdelwahab MT, Bekker A, Hesseling A, Chabala C et al. Po
 
 ### Reviewer guidance
 
-**Ethambutol apparent clearance and volume of distribution were extracted from a review, and the transit lag time was not provided.**
+**The ethambutol apparent clearance of 15.9 L/h was rejected by the second reader, who also disputed the apparent parameterization of the model.**
 
-The clearance of 15.9 L/h and central volume of 44.3 L were taken from a secondary source rather than a primary study. The model builder assumed a lag time of zero because the value was missing, and treated the drug as fully bioavailable. A second reader identified a different parameter value and classified the model as mechanistic rather than apparent. Extracted — ethambutol: CL/F 15.9 L/h, V1 44.3 L, kabs 1.4 h−1.
+The second reader disagreed on the specific value of 15.9 L/h for apparent clearance, assigning it a null value instead. There was a conflict regarding the model parameterization, where this record used apparent values while the second reader identified it as mechanistic. A disagreement also occurred for the second volume of distribution, where the second reader provided 11.6 while the current record lacks a value. Extracted — ethambutol: CL/F 15.9 L/h, V1 44.3 L, kabs 1.4 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 15.9, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -122,15 +122,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ethambutol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviated_parameter: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=ethambutol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

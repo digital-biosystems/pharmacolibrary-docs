@@ -16,7 +16,7 @@ Kuruvilla D, Chia YL, Balic K, Yao NS, Kreitman RJ, Pastan I et al. Population p
 
 ## Population and dosing
 
-**Population:** adults with relapsed or refractory hairy cell leukaemia · condition relapsed or refractory hairy cell leukaemia · age group adult · n = &gt;=123.
+**Population:** adults with relapsed or refractory hairy cell leukaemia · condition relapsed or refractory hairy cell leukaemia · age group adult.
 
 ## Model
 

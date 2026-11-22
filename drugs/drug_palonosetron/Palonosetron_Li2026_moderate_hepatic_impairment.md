@@ -16,7 +16,7 @@ Li Q, Mai J, Wu M, Zhang H, Yang X, Huang Y et al. Pharmacokinetics, safety, and
 
 ## Population and dosing
 
-**Population:** Chinese subjects with impaired or normal liver function · condition hepatic impairment · age group adult · n = &gt;=16.
+**Population:** Chinese subjects with impaired or normal liver function · condition hepatic impairment · age group adult.
 
 **Dosing:** 0.25, 218 mg, iv, single.
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vernakalant clearance and volume of distribution parameters were recorded as negative values, making the model physiologically implausible.
+> Vernakalant clearance and volume parameters are recorded as negative values, making the pharmacokinetic model physically implausible.
 
 <div class="pk-model-meta" hidden drug="vernakalant" model-id="Vernakalant_Mao2012_parameter_estimate_se" status="rejected" stale="false" population="patients with atrial fibrillation or atrial flutter and healthy volunteers" measured-compound="vernakalant" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Mao ZL, Townsend RW, Gao Y, Wheeler JJ, Kastrissios H, Keirns J. Population phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,11 @@ Mao ZL, Townsend RW, Gao Y, Wheeler JJ, Kastrissios H, Keirns J. Population phar
 
 ### Reviewer guidance
 
-**Vernakalant clearance and volume of distribution parameters were recorded as negative values, making the model physiologically implausible.**
+**Vernakalant clearance and volume parameters are recorded as negative values, making the pharmacokinetic model physically implausible.**
 
-The record lists the central volume of distribution as -0.670 L and the clearance intercept as -1.050, both of which are negative. Additionally, the systemic clearance and steady-state volume of distribution were not extracted, leaving critical parameters missing from the model record. Extracted — vernakalant: V -0.67 L.
+The record lists the clearance intercept as -1.050 and the volume of distribution as -0.670 L. Since volume units could not be converted to standard SI units, the specific numerical magnitude remains unverified against the source. A second reader identified the systemic clearance as 0.35 and steady-state volume as 1.55, but the primary record retains the negative placeholders. Extracted — vernakalant: V -0.67 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of steady‐state volume of distribution: this record has none, the second reading 1.55; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of steady‐state volume of distribution: this record has none, the second reading 1.55; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -124,15 +124,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[steady‐state volume of distribution]` |  | 1.55 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic clearance]` |  | 0.35 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θ]` | -1.050 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady‐state volume of distribution]` |  | 1.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` |  | 0.35 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ]` | -1.050 |  | only_one_extracted |
 
 </details>
 

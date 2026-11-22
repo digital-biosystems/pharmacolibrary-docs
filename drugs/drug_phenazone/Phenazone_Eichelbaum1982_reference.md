@@ -15,7 +15,7 @@ Eichelbaum M, Ochs HR, Roberts G, Somogyi A. Pharmacokinetics and metabolism of 
 
 ## Population and dosing
 
-**Population:** healthy male volunteers (smokers and non-smokers) · age group adult · n = ... (the full paper text was not provided).
+**Population:** healthy male volunteers (smokers and non-smokers) · age group adult.
 
 ## Model
 

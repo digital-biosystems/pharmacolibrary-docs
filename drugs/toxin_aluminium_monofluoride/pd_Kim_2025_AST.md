@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a pharmacodynamic model linking aluminium monofluoride concentrations to AST levels; aluminium monofluoride was not evaluated in this study. AST was measured as a biomarker of hepatic injury in acetaminophen-induced acute liver failure and CD47-related necroptosis, without dose-response kinetic parameters or potency values reported.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kim_2025`
 - **model family:** `unknown`
 - **driver:** `dose_only`

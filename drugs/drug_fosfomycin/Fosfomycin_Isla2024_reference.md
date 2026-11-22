@@ -16,7 +16,7 @@ Isla A, Alarcia-Lacalle A, Solinís MÁ, Del Pozo-Rodríguez A, Abajo Z, Cabero 
 
 ## Population and dosing
 
-**Population:** healthy women · age group adult · n = condition.
+**Population:** healthy women · age group adult.
 
 **Dosing:** 500, 1000 mg, oral, multiple, every 8 h.
 

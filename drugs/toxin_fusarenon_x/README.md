@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Fusarenon-X&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusarenonX_Phruksawan2018_reference&quot;,&quot;label&quot;:&quot;Phruksawan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusarenon_x/FusarenonX_Phruksawan2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FusarenonX_Phruksawan2018_reference&quot;,&quot;label&quot;:&quot;Phruksawan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_fusarenon_x/FusarenonX_Phruksawan2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Fusarenon-X
 
@@ -33,7 +33,7 @@ Fusarenon-X is a trichothecene. Trichothecenes are a very large family of chemic
 
 ## Start here
 
-> **Phruksawan_2018_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> goats (Capra hircus). [Run it in the simulator](drugs/toxin_fusarenon_x/FusarenonX_Phruksawan2018_reference.md?tab=Simulation) · [record](drugs/toxin_fusarenon_x/FusarenonX_Phruksawan2018_reference.md)
+> **Phruksawan_2018_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> goats (Capra hircus). [Run it in the simulator](drugs/toxin_fusarenon_x/FusarenonX_Phruksawan2018_reference.md?tab=Simulation) · [record](drugs/toxin_fusarenon_x/FusarenonX_Phruksawan2018_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -41,7 +41,7 @@ Fusarenon-X is a trichothecene. Trichothecenes are a very large family of chemic
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="goat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span> | [Phruksawan_2018_reference](drugs/toxin_fusarenon_x/FusarenonX_Phruksawan2018_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Phruksawan W et al., Toxicokinetic profile of fusarenon-X an…, Toxicon : official journal… (2018) | [10.1016/j.toxicon.2018.08.015](https://doi.org/10.1016/j.toxicon.2018.08.015) |
+| <span class="pk-rf" hidden data-species="goat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span> | [Phruksawan_2018_reference](drugs/toxin_fusarenon_x/FusarenonX_Phruksawan2018_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Phruksawan W et al., Toxicokinetic profile of fusarenon-X an…, Toxicon : official journal… (2018) | [10.1016/j.toxicon.2018.08.015](https://doi.org/10.1016/j.toxicon.2018.08.015) |
 | <span class="pk-rf" hidden data-species="pig" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Saengtienchai_2014_reference](drugs/toxin_fusarenon_x/FusarenonX_Saengtienchai2014_reference.md) | — | 1-compartment (no model) | 0 | Saengtienchai T et al., Toxicokinetics and tissue depletion of…, Food and chemical toxicolog… (2014) | [10.1016/j.fct.2014.01.053](https://doi.org/10.1016/j.fct.2014.01.053) |
 
 <details class="legend">

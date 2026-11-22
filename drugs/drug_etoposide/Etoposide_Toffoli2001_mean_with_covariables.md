@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;etoposide&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/&quot;},{&quot;label&quot;:&quot;Toffoli_2001 \u00b7 mean_with_covariables&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean_with_covariables&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean_with_covariables&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean_with_covariables&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean_with_covariables&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # etoposide — `Etoposide_Toffoli2001_mean_with_covariables`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Toffoli2001_mean_with_covariables" status="simulated" stale="false" population="adult patients with solid tumours" measured-compound="etoposide" parameterization="mechanistic" topology="1C"></div>
+> Etoposide clearance is recorded as 1.14 L/h, but the record was held for review because a second reader marked etoposide’s dose-compound and primary-analyte identities unknown.
+
+<div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Toffoli2001_mean_with_covariables" status="needs_review" stale="false" population="adult patients with solid tumours" measured-compound="etoposide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Toffoli G, Corona G, Sorio R, Robieux I, Basso B, Colussi AM et al. Population pharmacokinetics and pharmacodynamics of oral etoposide. British journal of clinical pharmacology 52(5):511–519 (2001).
@@ -15,7 +17,7 @@ Toffoli G, Corona G, Sorio R, Robieux I, Basso B, Colussi AM et al. Population p
 
 ## Population and dosing
 
-**Population:** adult patients with solid tumours · condition solid tumours · age group adult · n = n_subjects_value.
+**Population:** adult patients with solid tumours · condition solid tumours · age group adult.
 
 **Dosing:** 50, 100 mg, oral, iv, multiple, every 24 h.
 
@@ -29,6 +31,8 @@ Toffoli G, Corona G, Sorio R, Robieux I, Basso B, Colussi AM et al. Population p
 <figure class="pk-models-diagram"><img src="drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables/Etoposide_Toffoli2001_mean_with_covariables.svg" alt="Etoposide_Toffoli2001_mean_with_covariables diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL (l h x1 ) | CL | 1.14 | L/h |
@@ -39,7 +43,7 @@ Toffoli G, Corona G, Sorio R, Robieux I, Basso B, Colussi AM et al. Population p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +53,13 @@ Toffoli G, Corona G, Sorio R, Robieux I, Basso B, Colussi AM et al. Population p
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Etoposide clearance is recorded as 1.14 L/h, but the record was held for review because a second reader marked etoposide’s dose-compound and primary-analyte identities unknown.**
+
+The second reader disagreed with identifying etoposide as both the dose compound and the primary analyte. Overall agreement was 0.8, with 0 of 1 reader agreeing. Extracted — etoposide: CL 1.14 L/h, V 6.1 l, k12 0.14 1/h, k21 0.07 1/h, Fab 0.44.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etoposide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -130,14 +136,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=etoposide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=etoposide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

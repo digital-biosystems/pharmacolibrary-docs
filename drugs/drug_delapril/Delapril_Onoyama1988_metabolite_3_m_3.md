@@ -4,11 +4,11 @@
 
 # delapril — `Delapril_Onoyama1988_metabolite_3_m_3`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 05:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because it lacks volume or clearance for delapril metabolite M-1, and its metabolism links lack rate parameters.
+> Delapril metabolism links to metabolites M-1, M-2, and M-3 lack defined rate parameters.
 
-<div class="pk-model-meta" hidden drug="delapril" model-id="Delapril_Onoyama1988_metabolite_3_m_3" status="rejected" stale="true" population="adults with normal and deteriorated kidney function" measured-compound="M-1 (CV-3317-COOH)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="delapril" model-id="Delapril_Onoyama1988_metabolite_3_m_3" status="rejected" stale="false" population="adults with normal and deteriorated kidney function" measured-compound="M-1 (CV-3317-COOH)" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Onoyama K, Nanishi F, Okuda S, Oh Y, Fujishima M, Tateno M et al. Pharmacokinetics of a new angiotensin I converting enzyme inhibitor (delapril) in patients with deteriorated kidney function and in normal control subjects. Clinical pharmacology and therapeutics 43(3):242–249 (1988).
@@ -41,7 +41,7 @@ Onoyama K, Nanishi F, Okuda S, Oh Y, Fujishima M, Tateno M et al. Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Onoyama K, Nanishi F, Okuda S, Oh Y, Fujishima M, Tateno M et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**The record is rejected because it lacks volume or clearance for delapril metabolite M-1, and its metabolism links lack rate parameters.**
+**Delapril metabolism links to metabolites M-1, M-2, and M-3 lack defined rate parameters.**
 
-The record lists only exposure metrics (Cmax, tmax, t1/2z, AUC) for M-1, omitting the distribution volume and elimination rate required for a compartmental model. The metabolism links from delapril to metabolites M-1, M-2, and M-3 have no specified rate parameters, rendering these metabolites unreachable. Additionally, a reported unit could not be converted to standard SI units, so the parameter lacked a value. Extracted — M-1 (CV-3317-COOH): Cmax 442 ng/ml, tmax 1.68 hr, t1/2z 0.84 hr, AUC 1.11e+03 ng · hr/ml.
+The model structure defines three metabolites formed from delapril, but the specific links connecting them contain no metabolic rate parameters. All three metabolites are therefore unreachable from the dose compartment because no elimination or transfer rates are assigned to these pathways. Additionally, the second reader reported the extracted pharmacokinetic values, including the AUC of 1110 ng·hr/ml, as null. This discrepancy suggests the summary statistics for the measured compound M-1 may not be validly linked to the defined model structure. Extracted — M-1 (CV-3317-COOH): Cmax 442 ng/ml, tmax 1.68 hr, t1/2z 0.84 hr, AUC 1.11e+03 ng · hr/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has delapril (cv-3317) → m-1 (cv-3317-cooh) (metabolism); delapril (cv-3317) → m-2 (dkp-cooh) (metabolism); delapril (cv-3317) → m-3 (cv-3317-(5-oh)-cooh) (metabolism), the second reading delapril → m-1 (metabolism); delapril → m-2 (metabolism); delapril → m-3 (metabolism); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

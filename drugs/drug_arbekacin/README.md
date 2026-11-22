@@ -25,7 +25,7 @@ Arbekacin is a semisynthetic aminoglycoside antibiotic used primarily to treat i
 
 ## Start here
 
-> **Suzuki_2003_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> preterm and term newborn infants, n = $40. [Run it in the simulator](drugs/drug_arbekacin/Arbekacin_Suzuki2003_reference.md?tab=Simulation) · [record](drugs/drug_arbekacin/Arbekacin_Suzuki2003_reference.md)
+> **Suzuki_2003_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> preterm and term newborn infants. [Run it in the simulator](drugs/drug_arbekacin/Arbekacin_Suzuki2003_reference.md?tab=Simulation) · [record](drugs/drug_arbekacin/Arbekacin_Suzuki2003_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -68,7 +68,7 @@ Arbekacin is a semisynthetic aminoglycoside antibiotic used primarily to treat i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:28 | 3:59 | 3/3/0 | 2/0/0 | 0/0/0 | 198,251/11,407 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
+| 2026-10-07 11:28 | 3:59 | 3/3/0 | 5/0/0 | 0/0/0 | 198,251/11,407 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
 
 ## Coverage
 

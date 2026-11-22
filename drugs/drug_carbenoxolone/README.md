@@ -28,15 +28,6 @@ _not available_
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span> | [Okada_2015_bell_shaped_outward_Cs_current](drugs/drug_carbenoxolone/pd_Okada_2015_bell_shaped_outward_Cs_current.md) | bell-shaped outward Cs+ current ← carbenoxolone · direct sigmoid Emax (Hill) effect | — | Okada Y et al., Carbenoxolone-sensitive and cesium-perm…, Biochemistry and biophysics… (2015) | [10.1016/j.bbrep.2015.09.010](https://doi.org/10.1016/j.bbrep.2015.09.010) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Ripps_2002_Cx38_hemichannel_currents](drugs/drug_carbenoxolone/pd_Ripps_2002_Cx38_hemichannel_currents.md) | Cx38 hemichannel currents ← carbenoxolone · direct sigmoid Emax (Hill) effect | — | Ripps H et al., Pharmacological enhancement of hemi-gap…, Journal of neuroscience met… (2002) | [10.1016/s0165-0270(02)00243-1](https://doi.org/10.1016/s0165-0270(02)00243-1) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=carbenoxolone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: HSD11B1 (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -49,7 +40,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 10:13 | 3:20 | 0/0/0 | 3/1/0 | 0/0/0 | 124,938/4,168 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 4/18 | 8/1 | 0 |
+| 2026-10-04 10:13 | 3:20 | 0/0/0 | 4/1/0 | 0/0/0 | 124,938/4,168 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 4/18 | 8/1 | 0 |
 
 ## Coverage
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Vet_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024_reference&quot;,&quot;label&quot;:&quot;Marques_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_fixed_effects&quot;,&quot;label&quot;:&quot;Walsh_2023_fixed_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_fixed_effects.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_random_effects&quot;,&quot;label&quot;:&quot;Walsh_2023_random_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_random_effects.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_PASS&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 PASS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_PASS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_glucose.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_tachycardia&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 tachycardia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_tachycardia.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Boger_2019_FEV1&quot;,&quot;label&quot;:&quot;Boger_2019 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Boger_2019_FEV1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Venkatasubramanian_2020_TPR&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 TPR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Venkatasubramanian_2020_TPR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Cullum_2023_Emax&quot;,&quot;label&quot;:&quot;Cullum_2023 \u00b7 Emax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Cullum_2023_Emax.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Cullum_2023_IRmax&quot;,&quot;label&quot;:&quot;Cullum_2023 \u00b7 IRmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Cullum_2023_IRmax.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_estimate&quot;,&quot;label&quot;:&quot;Marques_2024_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Heuberger2018_reference&quot;,&quot;label&quot;:&quot;Heuberger_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Heuberger2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Boger_2019_FEV1&quot;,&quot;label&quot;:&quot;Boger_2019 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Boger_2019_FEV1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Venkatasubramanian_2020_TPR&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 TPR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Venkatasubramanian_2020_TPR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model is rejected because the interconversion links from salbutamol to its enantiomers are missing, making the metabolite compartments unreachable.
+> The model structure contains unlinked metabolites R-salbutamol and S-salbutamol, making them unreachable from the parent salbutamol dose.
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Vet2020_reference" status="rejected" stale="false" population="children with refractory status asthmaticus" measured-compound="R-salbutamol, S-salbutamol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Vet2020_reference" status="rejected" stale="false" population="children with refractory status asthmaticus" measured-compound="R-salbutamol and S-salbutamol" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Vet NJ, de Winter BCM, Koninckx M, Boeschoten SA, Boehmer ALM, Verhallen JT et al. Population Pharmacokinetics of Intravenous Salbutamol in Children with Refractory Status Asthmaticus. Clinical pharmacokinetics 59(2):257–264 (2020).
@@ -17,11 +17,11 @@ Vet NJ, de Winter BCM, Koninckx M, Boeschoten SA, Boehmer ALM, Verhallen JT et a
 
 ## Population and dosing
 
-**Population:** children with refractory status asthmaticus · condition status asthmaticus · age group child · n = 19.
+**Population:** children with refractory status asthmaticus · condition refractory status asthmaticus · age group child · n = 19.
 
-**Dosing:** 0.07, 10 µg/kg/min, iv, multiple.
+**Dosing:** 0.5, 1.5 µg/kg/min, iv, multiple, every 0 h.
 
-**Dosed compound ≠ measured compound:** dosed salbutamol, measured R-salbutamol, S-salbutamol.
+**Dosed compound ≠ measured compound:** dosed salbutamol, measured R-salbutamol and S-salbutamol.
 
 ## Model
 
@@ -36,7 +36,7 @@ Vet NJ, de Winter BCM, Koninckx M, Boeschoten SA, Boehmer ALM, Verhallen JT et a
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CLR-salbutamol (L/h/70 kg) | CLR | 16.3 | L/h/70 kg |  |
-| CLS-salbutamol (L/h/70 kg) | CL | 8.82 | L/h/70 kg |  |
+| CLS-salbutamol (L/h/70 kg) | CLnorm | 8.82 | L/h/70 kg |  |
 | Vc (L/70 kg) | V1 | 12.9 | L/70 kg |  |
 | Q (L/h/70 kg) | Q | 20.4 | L/h/70 kg | 41.5 |
 | Vp (L/70 kg) | V2 | 45.5 | L/70 kg | 9.6 |
@@ -45,7 +45,7 @@ Vet NJ, de Winter BCM, Koninckx M, Boeschoten SA, Boehmer ALM, Verhallen JT et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +55,11 @@ Vet NJ, de Winter BCM, Koninckx M, Boeschoten SA, Boehmer ALM, Verhallen JT et a
 
 ### Reviewer guidance
 
-**The model is rejected because the interconversion links from salbutamol to its enantiomers are missing, making the metabolite compartments unreachable.**
+**The model structure contains unlinked metabolites R-salbutamol and S-salbutamol, making them unreachable from the parent salbutamol dose.**
 
-The interconversion relationships connecting the parent salbutamol to R-salbutamol and S-salbutamol were not extracted, resulting in orphan compartments with no path from the dose. This structural failure caused the model to fail validation checks for compartment connectivity. Additionally, the second reader disagreed on multiple parameter values, such as total clearance and central volume of distribution. Extracted — salbutamol: CLR 16.3 L/h/70 kg, CL 8.82 L/h/70 kg, V1 12.9 L/70 kg, Q 20.4 L/h/70 kg, V2 45.5 L/70 kg; R-salbutamol, S-salbutamol: kabs 0.5 h −1, tlag 1.5 h.
+The record defines interconversion links from salbutamol to both R- and S-salbutamol but lacks the corresponding rate parameters, rendering the metabolites as orphan compartments with no path from the dose. A second reader also disagreed on several parameter values, including the total clearance, which was recorded as 8.82 but identified as 37 by the reviewer. Additionally, the second reader disputed the presence of the metabolite links themselves, suggesting the model structure was misinterpreted. Extracted — salbutamol: CLR 16.3 L/h/70 kg, CLnorm 8.82 L/h/70 kg, V1 12.9 L/70 kg, Q 20.4 L/h/70 kg, V2 45.5 L/70 kg; R-salbutamol and S-salbutamol: kabs 0.5 h −1, tlag 1.5 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has salbutamol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has R-salbutamol and S-salbutamol, the second reading salbutamol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -68,7 +68,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
 | CLR-salbutamol (L/h/70 kg) | `Q26` · CLR | 16.3 | L/h/70 kg | 4.528e-06 | m3/s | l/(h·70kg) |  | llm_confirmed (0.6) | Tab2:row2:col1, Tab2:row2:col3 |
-| CLS-salbutamol (L/h/70 kg) | `Q22` · CL | 8.82 | L/h/70 kg | 2.45e-06 | m3/s | l/(h·70kg) |  | llm (0.6) | Tab2:row3:col1, Tab2:row3:col3 |
+| CLS-salbutamol (L/h/70 kg) | `Q354` · CLnorm | 8.82 | L/h/70 kg | 2.45e-06 | m3/s | l/(h·70kg) |  | llm (0.6) | Tab2:row3:col1, Tab2:row3:col3 |
 | Vc (L/70 kg) | `Q63` · V1 | 12.9 | L/70 kg | 0.0129 | m3 | l/70kg |  | exact (1) | Tab2:row4:col1, Tab2:row4:col3 |
 | Q (L/h/70 kg) | `Q30` · Q | 20.4 | L/h/70 kg | 5.667e-06 | m3/s | l/(h·70kg) | 41.5 | exact (1) | Tab2:row5:col1 |
 | Vp (L/70 kg) | `Q64` · V2 | 45.5 | L/70 kg | 0.0455 | m3 | l/70kg | 9.6 | exact (1) | Tab2:row6:col1 |
@@ -83,11 +83,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'ipv (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Baseline dose (μg)' — extend the ontology if this is a real PK parameter (source ['Tab2:row1:col1', 'Tab2:row1:col3'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=R-salbutamol, S-salbutamol
+- NIL: refused to back-fill base 'CLR' from footnote/prose loose number 16.3 (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'CL' from footnote/prose loose number 8.82 (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V1' from footnote/prose loose number 12.9 (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=R-salbutamol and S-salbutamol
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
+- molar mass: no plausible PubChem entry for 'R-salbutamol and S-salbutamol' ('R-salbutamol and S-salbutamol') — left in mass units
+- molar mass: none found for 'R-salbutamol and S-salbutamol' — its concentrations stay mass-only
 - gap-filled Q49 (kabs) from Heuberger_2018's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Heuberger_2018's review values (primary lacked it)
 
@@ -102,18 +106,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.455 (5/11 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.462 (6/13 fields) | 7 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['salbutamol', 'r-salbutamol', 'interconversion'], ['salbutamol', 's-salbutamol', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[baseline dose]` |  | 99 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clr-salbutamol].value` | 16.3 | 42 | mismatch |
+| `gpt-oss-120b` | `parameters[cls-salbutamol].parameter_id` | Q354 | Q22 | mismatch |
 | `gpt-oss-120b` | `parameters[cls-salbutamol].value` | 8.82 | 37 | mismatch |
 | `gpt-oss-120b` | `parameters[vc].value` | 12.9 | 281 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | salbutamol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | R-salbutamol, S-salbutamol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | R-salbutamol and S-salbutamol | salbutamol | mismatch |
 
 </details>
 
@@ -129,17 +134,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1', 'Tab2:row3:col3'] |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Tab2:row2:col1', 'Tab2:row2:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab2:row5:col1'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1', 'Tab2:row3:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Heuberger_2018:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row4:col1', 'Tab2:row4:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab2:row6:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Heuberger_2018:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.82 | ['Tab2:row3:col1', 'Tab2:row3:col3'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.82 L/h | ['Tab2:row3:col1', 'Tab2:row3:col3'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 12.9 L | ['Tab2:row4:col1', 'Tab2:row4:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 45.5 L | ['Tab2:row6:col1'] |
 
@@ -165,4 +168,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Vet2020_reference&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Vet2020_reference%0APaper%3A%20Vet_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Vet2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 09:13 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 03:24 UTC</sub>

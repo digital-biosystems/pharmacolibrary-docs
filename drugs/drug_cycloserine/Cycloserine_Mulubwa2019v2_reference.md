@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for cycloserine was held back because the model structure was not acceptable due to unspecified absorption lag time.
+> The record for cycloserine was held back because the second reader disagreed on multiple parameter values, including apparent volume of distribution.
 
 <div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Mulubwa2019v2_reference" status="needs_review" stale="false" population="" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
 
@@ -49,9 +49,9 @@ Mulubwa M, Mugabo P. Amount of Cycloserine Emanating from Terizidone Metabolism 
 
 ### Reviewer guidance
 
-**The record for cycloserine was held back because the model structure was not acceptable due to unspecified absorption lag time.**
+**The record for cycloserine was held back because the second reader disagreed on multiple parameter values, including apparent volume of distribution.**
 
-The apparent clearance (1.38 L/h) and volume of distribution (10.4921 L) rely on an assumption of unit bioavailability, while the absorption rate constant (0.135 h−1) was recorded without a lag time. A second reader identified significant discrepancies in extracted parameter values, including a weight estimate of 22.3 and an age estimate of 29 that were missing from this record. Extracted — cycloserine: CL/F 1.38 L/h, V/F 10.5 L, kabs 0.135 h−1.
+A cross-check showed only 0 of 1 readers agreed, resulting in an agreement ratio of 0.375, which is below the required threshold. The second reader identified value mismatches for parameters not present in the original record, such as a value of 22.3 and 29. Additionally, the model builder used default values for Tlag and assumed bioavailability (F) and metabolic fraction (Fm) were both equal to 1. Extracted — cycloserine: CL/F 1.38 L/h, V/F 10.5 L, kabs 0.135 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 22.3; it also differs on 4 more fields. That field does not shape the model.
 
@@ -124,15 +124,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=cycloserine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | D1: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=cycloserine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check agreement 0.375 is below 0.5: verdict partial, agreement 0.375, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

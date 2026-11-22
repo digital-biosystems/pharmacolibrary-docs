@@ -4,11 +4,11 @@
 
 # lisocabtagene maraleucel — `LisocabtageneMaraleucel_Ogasawara2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-06 20:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; cmax has no unit.
 
-<div class="pk-model-meta" hidden drug="lisocabtagene maraleucel" model-id="LisocabtageneMaraleucel_Ogasawara2021_reference" status="needs_review" stale="true" population="patients with relapsed/refractory large B-cell lymphoma" measured-compound="lisocabtagene_maraleucel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lisocabtagene maraleucel" model-id="LisocabtageneMaraleucel_Ogasawara2021_reference" status="needs_review" stale="false" population="patients with relapsed/refractory large B-cell lymphoma" measured-compound="lisocabtagene_maraleucel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ogasawara K, Dodds M, Mack T, Lymp J, Dell'Aringa J, Smith J. Population Cellular Kinetics of Lisocabtagene Maraleucel, an Autologous CD19-Directed Chimeric Antigen Receptor T-Cell Product, in Patients with Relapsed/Refractory Large B-Cell Lymphoma. Clinical pharmacokinetics 60(12):1621–1633 (2021).
@@ -39,7 +39,7 @@ Ogasawara K, Dodds M, Mack T, Lymp J, Dell'Aringa J, Smith J. Population Cellula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Ogasawara K, Dodds M, Mack T, Lymp J, Dell'Aringa J, Smith J. Population Cellula
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; cmax has no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — lisocabtagene maraleucel: tlag 3.27 days, Cmax 2.36e+04, t1/2α 5 days, t1/2β 352 days.
 
 Independently confirmed by `gpt-oss-120b`.
 

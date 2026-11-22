@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;alirocumab&quot;,&quot;href&quot;:&quot;drugs/drug_alirocumab/&quot;},{&quot;label&quot;:&quot;Martinez_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alirocumab_Lunven2014_reference&quot;,&quot;label&quot;:&quot;Lunven_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alirocumab/Alirocumab_Lunven2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Nolain_2022_LDL_C&quot;,&quot;label&quot;:&quot;Nolain_2022 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alirocumab/pd_Nolain_2022_LDL_C.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alirocumab_Lunven2014_reference&quot;,&quot;label&quot;:&quot;Lunven_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alirocumab/Alirocumab_Lunven2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Nolain_2022_LDL_C&quot;,&quot;label&quot;:&quot;Nolain_2022 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alirocumab/pd_Nolain_2022_LDL_C.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # alirocumab — `Alirocumab_Martinez2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:02 UTC (Needs review), but the paper was screened again on 2026-10-07 09:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vmax has no unit, so its value cannot be converted to SI, preventing model construction.
+> Alirocumab Vmax of 0.172 has no unit, preventing conversion and use of this maximum metabolic rate and leading to the record being held back.
 
-<div class="pk-model-meta" hidden drug="alirocumab" model-id="Alirocumab_Martinez2019_reference" status="needs_review" stale="true" population="healthy volunteers or hypercholesterolemic subjects" measured-compound="alirocumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alirocumab" model-id="Alirocumab_Martinez2019_reference" status="needs_review" stale="false" population="healthy volunteers or hypercholesterolemic subjects" measured-compound="alirocumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Martinez JM, Brunet A, Hurbin F, DiCioccio AT, Rauch C, Fabre D. Population Pharmacokinetic Analysis of Alirocumab in Healthy Volunteers or Hypercholesterolemic Subjects Using a Michaelis-Menten Approximation of a Target-Mediated Drug Disposition Model-Support for a Biologics License Application Submission: Part I. Clinical pharmacokinetics 58(1):101–113 (2019).
@@ -48,7 +48,7 @@ Martinez JM, Brunet A, Hurbin F, DiCioccio AT, Rauch C, Fabre D. Population Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,13 +58,13 @@ Martinez JM, Brunet A, Hurbin F, DiCioccio AT, Rauch C, Fabre D. Population Phar
 
 ### Reviewer guidance
 
-**Vmax has no unit, so its value cannot be converted to SI, preventing model construction.**
+**Alirocumab Vmax of 0.172 has no unit, preventing conversion and use of this maximum metabolic rate and leading to the record being held back.**
 
-The record lists Vmax as 0.172 with the label indicating units of mg·h/L, but no unit field is present in the extracted data. Consequently, the value cannot be converted to SI, and the model cannot use it. A second reader also disagreed on the dose compound, primary analyte, and several parameter values, leaving them unverified. Extracted — alirocumab: CL 0.0114 L/h, V2 2.66 L, kabs 0.0129 1/h, V3 1.81 L, Q 0.0156 L/h, Vmax 0.172, Km 9.49 mg/L, Fab 0.59, … (+2).
+Vmax has no unit. Without a unit the value cannot be converted, so the model cannot use it. A comparison involving central-to-peripheral intercompartmental clearance also failed, with ratio 0.0036. Extracted — alirocumab: CL 0.0114 L/h, V2 2.66 L, kabs 0.0129 1/h, V3 1.81 L, Q 0.0156 L/h, Vmax 0.172, Km 9.49 mg/L, Fab 0.59, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alirocumab, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

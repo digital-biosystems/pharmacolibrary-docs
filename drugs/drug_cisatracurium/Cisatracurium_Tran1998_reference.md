@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;cisatracurium&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/&quot;},{&quot;label&quot;:&quot;Tran_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisatracurium_Liu2012_reference&quot;,&quot;label&quot;:&quot;Liu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/Cisatracurium_Liu2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisatracurium_Tran1998_reference&quot;,&quot;label&quot;:&quot;Tran_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/Cisatracurium_Tran1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisatracurium_Liu2012_reference&quot;,&quot;label&quot;:&quot;Liu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/Cisatracurium_Liu2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisatracurium_Tran1998_reference&quot;,&quot;label&quot;:&quot;Tran_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisatracurium/Cisatracurium_Tran1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record substituted Vss (0.118 L/kg) for central volume in a one-compartment model, misrepresenting early distribution kinetics.
+> Reviewers could not agree on cisatracurium parameters extracted from abstract-only data, leaving the model record disputed.
 
 <div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Tran1998_reference" status="needs_review" stale="false" population="patients under propofol anesthesia" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Tran TV, Fiset P, Varin F. Pharmacokinetics and pharmacodynamics of cisatracuriu
 
 ## Population and dosing
 
-**Population:** patients under propofol anesthesia · condition anesthesia · age group adult · n = &gt;$0.
+**Population:** patients under propofol anesthesia · condition anesthesia · age group adult.
 
 ## Model
 
@@ -49,9 +49,9 @@ Tran TV, Fiset P, Varin F. Pharmacokinetics and pharmacodynamics of cisatracuriu
 
 ### Reviewer guidance
 
-**The record substituted Vss (0.118 L/kg) for central volume in a one-compartment model, misrepresenting early distribution kinetics.**
+**Reviewers could not agree on cisatracurium parameters extracted from abstract-only data, leaving the model record disputed.**
 
-The record was built from the paper's abstract alone, so reported summary statistics stand in for a fitted model. Because no central or total body volume was reported, the model builder used the steady-state volume of distribution (0.118 L/kg) as the sole distribution volume. This substitution allows the model to reproduce the clearance (3.7 L/h) and terminal half-life (23.9 min), but it fails to capture the early distribution phase. Extracted — cisatracurium: t1/2z 23.9 min, CL 3.7 L/h, Vss 0.118 L/kg.
+The record relies on summary statistics like 23.9 min half-life and 3.7 L/h clearance because the full model is unavailable. A second reader reported all three parameters as unknown, directly contradicting the primary extraction. This total disagreement resulted in a cross-check failure with 0 of 1 readers agreeing. Extracted — cisatracurium: t1/2z 23.9 min, CL 3.7 L/h, Vss 0.118 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cisatracurium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -133,14 +133,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=cisatracurium) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cisatracurium) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

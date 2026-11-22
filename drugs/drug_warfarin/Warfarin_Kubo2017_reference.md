@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Kubo_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Davies2010_reference&quot;,&quot;label&quot;:&quot;Davies_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Davies2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ferrari2017_reference&quot;,&quot;label&quot;:&quot;Ferrari_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ferrari2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ooi2017_reference&quot;,&quot;label&quot;:&quot;Ooi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ooi2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2009_INR&quot;,&quot;label&quot;:&quot;Sasaki_2009 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Sasaki_2009_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Kubo2017_reference" status="needs_review" stale="false" population="African Americans, Asians, and whites" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Kubo2017_reference" status="needs_review" stale="false" population="African Americans, Asians and whites" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kubo K, Ohara M, Tachikawa M, Cavallari LH, Lee MTM, Wen MS et al. Population differences in S-warfarin pharmacokinetics among African Americans, Asians and whites: their influence on pharmacogenetic dosing algorithms. The pharmacogenomics journal 17(6):494–500 (2017).
@@ -17,34 +17,35 @@ Kubo K, Ohara M, Tachikawa M, Cavallari LH, Lee MTM, Wen MS et al. Population di
 
 ## Population and dosing
 
-**Population:** African Americans, Asians, and whites · condition healthy · age group adult · n = : 378.
+**Population:** African Americans, Asians and whites · condition healthy adults · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted, plus 6 covariate effects.  
+**Parameters:** 4 extracted, plus 7 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | IIV |
-|---|---|---|---|---|
-| PK estimates: Cp(S) CL(S) (ml h -1 ) c | CL | 286 | ml h -1 | 39.9 (None% RSE) |
-| Vd (l) | V | 18.0 | l | 53.2 (None% RSE) |
-| theta_cl_age | theta_cl_age | -0.00478 |  |  |
-| theta_cl_sex | theta_cl_sex | 0.897 |  |  |
-| theta_cl_cyp2c9 | theta_cl_cyp2c9 | 0.707 |  |  |
-| theta_cl_cyp2c9 | theta_cl_cyp2c9 | 0.517 |  |  |
-| theta_cl_cyp2c9 | theta_cl_cyp2c9 | 0.665 |  |  |
-| theta_cl_race | theta_cl_race | 0.615 |  |  |
-| ka (1/h) | kabs | 0.214 | 1/h |  |
-| Lag (h) | tlag | 1.29 | h |  |
+| label | parameter | value | unit |
+|---|---|---|---|
+| PK estimates: Cp(S) CL(S) (ml h -1 ) c | CL | 286 | ml h -1 |
+| Vd (l) | V | 18.0 | l |
+| theta_cl_age | theta_cl_age | -0.00478 |  |
+| theta_cl_weight | theta_cl_weight | 0.568 |  |
+| theta_cl_sex | theta_cl_sex | 0.897 |  |
+| theta_cl_cyp2c9 | theta_cl_cyp2c9 | 0.707 |  |
+| theta_cl_cyp2c9 | theta_cl_cyp2c9 | 0.517 |  |
+| theta_cl_cyp2c9 | theta_cl_cyp2c9 | 0.665 |  |
+| theta_cl_race | theta_cl_race | 0.615 |  |
+| ka (1/h) | kabs | 0.214 | 1/h |
+| Lag (h) | tlag | 1.29 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,28 +59,29 @@ Kubo K, Ohara M, Tachikawa M, Cavallari LH, Lee MTM, Wen MS et al. Population di
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is warfarin's own; they describe S-warfarin. Extracted — S-warfarin: CL 286 ml h -1, V 18 l, kabs 0.214 1/h, tlag 1.29 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-warfarin, the second reading warfarin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-warfarin, the second reading warfarin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|
-| PK estimates: Cp(S) CL(S) (ml h -1 ) c | `Q22` · CL | 286 | ml h -1 | 7.944e-08 | m3/s | ml/h | llm_confirmed (0.6) | tab_1:row2:col1, tab_1:row2:col3 | 39.9 (None% RSE) |
-| Vd (l) | `Q61` · V | 18.0 | l | 0.018 | m3 | l | exact (1) | tab_1:row3:col1, tab_1:row3:col3 | 53.2 (None% RSE) |
-| theta_cl_age | `Q900` · theta_cl_age | -0.00478 |  |  |  |  |  | tab_1:row4:col1, tab_1:row4:col3 |  |
-| theta_cl_sex | `Q900` · theta_cl_sex | 0.897 |  |  |  |  |  | tab_1:row6:col1, tab_1:row6:col3 |  |
-| theta_cl_cyp2c9 | `Q900` · theta_cl_cyp2c9 | 0.707 |  |  |  |  |  | tab_1:row7:col1, tab_1:row7:col3 |  |
-| theta_cl_cyp2c9 | `Q900` · theta_cl_cyp2c9 | 0.517 |  |  |  |  |  | tab_1:row8:col1, tab_1:row8:col3 |  |
-| theta_cl_cyp2c9 | `Q900` · theta_cl_cyp2c9 | 0.665 |  |  |  |  |  | tab_1:row9:col1, tab_1:row9:col3 |  |
-| theta_cl_race | `Q900` · theta_cl_race | 0.615 |  |  |  |  |  | tab_1:row10:col1, tab_1:row10:col3 |  |
-| ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Gomeni_2026:review |  |
-| Lag (h) | `Q83` · tlag | 1.29 | h | 4644 | s | h | review_gapfill (0.7) | Gomeni_2026:review |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| PK estimates: Cp(S) CL(S) (ml h -1 ) c | `Q22` · CL | 286 | ml h -1 | 7.944e-08 | m3/s | ml/h | llm_confirmed (0.6) | tab_1:row2:col1, tab_1:row2:col3 |
+| Vd (l) | `Q61` · V | 18.0 | l | 0.018 | m3 | l | exact (1) | tab_1:row3:col1, tab_1:row3:col3 |
+| theta_cl_age | `Q900` · theta_cl_age | -0.00478 |  |  |  |  |  | tab_1:row4:col1, tab_1:row4:col3 |
+| theta_cl_weight | `Q900` · theta_cl_weight | 0.568 |  |  |  |  |  | tab_1:row5:col1, tab_1:row5:col3 |
+| theta_cl_sex | `Q900` · theta_cl_sex | 0.897 |  |  |  |  |  | tab_1:row6:col1, tab_1:row6:col3 |
+| theta_cl_cyp2c9 | `Q900` · theta_cl_cyp2c9 | 0.707 |  |  |  |  |  | tab_1:row7:col1, tab_1:row7:col3 |
+| theta_cl_cyp2c9 | `Q900` · theta_cl_cyp2c9 | 0.517 |  |  |  |  |  | tab_1:row8:col1, tab_1:row8:col3 |
+| theta_cl_cyp2c9 | `Q900` · theta_cl_cyp2c9 | 0.665 |  |  |  |  |  | tab_1:row9:col1, tab_1:row9:col3 |
+| theta_cl_race | `Q900` · theta_cl_race | 0.615 |  |  |  |  |  | tab_1:row10:col1, tab_1:row10:col3 |
+| ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Gomeni_2026:review |
+| Lag (h) | `Q83` · tlag | 1.29 | h | 4644 | s | h | review_gapfill (0.7) | Gomeni_2026:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -88,10 +90,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iiv: 'ω CL(S) (%)' routed out of structural estimates ('Inter-individual error')
 - table section iiv: 'ω Vd (%)' routed out of structural estimates ('Inter-individual error')
 - table section iiv: 'Residual error σ (μg ml -1 )' routed out of structural estimates ('Inter-individual error')
-- dropped unlinked row (NIL): 'Effect of weight on CL(S)' — extend the ontology if this is a real PK parameter (source ['tab_1:row5:col1', 'tab_1:row5:col3'])
-- covariate cyp2c9 for CL from footnote/prose kept as documentation only (['tab_1:footnote'])
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '65.7' (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '73.0' (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 65.7 (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 73.0 (source ['tab_1:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=S-warfarin
 - pharmacogenetic covariate 'theta_cl_cyp2c9' (cyp2c9) — PGx domain
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -112,15 +113,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.75 (9/12 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.615 (8/13 fields) | 5 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[pk estimates: cp(s) cl(s) (ml h -1 ) c].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[theta_cl_weight]` |  | 0.568 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pk estimates: cp(s) cl(s) (ml h -1 ) c].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_sex]` | 0.897 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q31_sex]` |  | 0.897 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | S-warfarin | warfarin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | S-warfarin | warfarin | mismatch |
 
 </details>
 
@@ -179,4 +182,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Kubo2017_reference&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Kubo2017_reference%0APaper%3A%20Kubo_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Kubo2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 15:04 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-19 23:20 UTC</sub>

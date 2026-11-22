@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The volume of distribution for folic acid is 26.73 mL, an implausibly small value indicating a unit or scale extraction error.
 
 <div class="pk-model-meta" hidden drug="Folic acid" model-id="FolicAcid_Lu2014_reference" status="rejected" stale="false" population="" measured-compound="folic_acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,7 +45,13 @@ Lu J, Zhao W, Huang Y, Liu H, Marquez R, Gibbs RB et al. Targeted delivery of Do
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The volume of distribution for folic acid is 26.73 mL, an implausibly small value indicating a unit or scale extraction error.**
+
+The extracted volume of distribution is 26.73 mL, which is physiologically impossible for a systemically distributed drug. This extreme deviation from expected physiological ranges led to the rejection of the record due to suspected unit or scale errors. Extracted — folic acid: CL 19.7 (mL/h), V 26.7 (mL).
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Diris_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,7 @@ Diris JH, Hermens WT, Hemker PW, Lagrand WK, Hack CE, van Dieijen-Visser MP. Pha
 
 ## Population and dosing
 
-**Population:** patients with acute myocardial infarction · condition acute myocardial infarction · age group adult · n = &gt;=22.
+**Population:** patients with acute myocardial infarction · condition acute myocardial infarction · age group adult.
 
 **Dosing:** 1.25, 2, 50, 100 U/kg, iv, multiple, every 48 h.
 
@@ -39,7 +39,7 @@ Diris JH, Hermens WT, Hemker PW, Lagrand WK, Hack CE, van Dieijen-Visser MP. Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Diris JH, Hermens WT, Hemker PW, Lagrand WK, Hack CE, van Dieijen-Visser MP. Pha
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — c1 inhibitor plasma derived: V 2.5e+03 mL, V1 2.93e+03 mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1-inhibitor, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has C1-inhibitor, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -134,21 +134,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (3/12 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
 <details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[17]` | 2929 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[1].parameter_id` | Q900 | Q63 | mismatch |
-| `gpt-oss:120b` | `parameters[2]` |  | 5144 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[5]` | 2500 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[6]` |  | 3170 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[brackertz et al16]` |  | 0.011 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[waytes et al17]` |  | 0.015 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | C1-inhibitor | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | C1-inhibitor | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[17]` | 2929 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[1].parameter_id` | Q900 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[2]` |  | 5144 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[5]` | 2500 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[6]` |  | 3170 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[brackertz et al16]` |  | 0.011 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[waytes et al17]` |  | 0.015 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | C1-inhibitor | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | C1-inhibitor | unknown | mismatch |
 
 </details>
 

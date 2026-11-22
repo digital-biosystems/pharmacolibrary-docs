@@ -34,7 +34,7 @@ Cinacalcet is a calcimimetic medication used to treat primary and secondary hype
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Schappacher-Tilp_2019_reference](drugs/drug_cinacalcet/Cinacalcet_SchappacherTilp2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Schappacher-Tilp G et al., A Multi-Compartment Model Capturing the…, Cellular physiology and bio… (2019) | [10.33594/000000148](https://doi.org/10.33594/000000148) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chen_2019_reference](drugs/drug_cinacalcet/Cinacalcet_Chen2019_reference.md) | — | 1-compartment (no model) | 6 | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chen_2019_reference](drugs/drug_cinacalcet/Cinacalcet_Chen2019_reference.md) | — | 1-compartment (no model) | 6 | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
 
 ## Pharmacodynamics (PD)
 
@@ -45,21 +45,6 @@ Cinacalcet is a calcimimetic medication used to treat primary and secondary hype
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wang_2025_PTH](drugs/drug_cinacalcet/pd_Wang_2025_PTH.md) | serum parathyroid hormone ← cinacalcet · inhibition effect | — | Wang Z et al., Pharmacodynamic Modeling of Cinacalcet…, Journal of the Endocrine So… (2025) | [10.1210/jendso/bvaf021](https://doi.org/10.1210/jendso/bvaf021) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Serra_2008_PTH](drugs/drug_cinacalcet/pd_Serra_2008_PTH.md) | parathyroid hormone ← cinacalcet · direct Emax (saturable) effect | ▶ model + simulator | Serra AL et al., Pharmacokinetics and pharmacodynamics o…, American journal of transpl… (2008) | [10.1111/j.1600-6143.2007.02136.x](https://doi.org/10.1111/j.1600-6143.2007.02136.x) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Chen_2019_iPTH](drugs/drug_cinacalcet/pd_Chen_2019_iPTH.md) | intact parathyroid hormone (iPTH) ← cinacalcet · indirect response — drug inhibits the production of intact parathyroid hormone (iPTH) | model (no simulator) | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cinacalcet).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2D6` inhibitor, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: CASR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,13 +58,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:23 | 5:01 | 1/1/0 | 2/1/0 | 0/0/0 | 260,699/15,892 | einfracz / qwen3.8-27b | 9 | 2/7 | 9/0 | 0 |
+| 2026-10-07 10:23 | 5:01 | 1/1/0 | 4/1/0 | 0/0/0 | 260,699/15,892 | einfracz / qwen3.8-27b | 9 | 2/7 | 9/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 20 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

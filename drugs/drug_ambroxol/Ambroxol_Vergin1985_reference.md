@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate was defaulted because the record lacks estimates from the abstract, and second readers could not verify the reported ambroxol pharmacokinetic values.
+> Absorption rate constant was not reported in the abstract-only source, forcing reliance on library defaults.
 
 <div class="pk-model-meta" hidden drug="ambroxol" model-id="Ambroxol_Vergin1985_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="ambroxol" parameterization="apparent" topology="1C"></div>
 
@@ -48,9 +48,9 @@ Vergin H, Bishop-Freudling GB, Miczka M, Nitsche V, Strobel K, Matzkies F. [The 
 
 ### Reviewer guidance
 
-**Absorption rate was defaulted because the record lacks estimates from the abstract, and second readers could not verify the reported ambroxol pharmacokinetic values.**
+**Absorption rate constant was not reported in the abstract-only source, forcing reliance on library defaults.**
 
-The record was built from the abstract only, so summary statistics stood in for a fitted model, forcing the use of library defaults for absorption rate and lag time. A second reader disagreed with the record by identifying the dose compound and primary analyte as unknown rather than ambroxol. Additionally, the second reader failed to extract the apparent volume of distribution (1.52 l/kg), terminal elimination half-life (3.72 h), and total plasma clearance (565 ml/min). Extracted — ambroxol: t1/2z 3.72 h, V/F 1.52 l/kg, CL 565 ml/min.
+The record uses placeholder values for absorption parameters that are not supported by the extracted paper data. A second reader failed to identify the measured compound or any of the reported pharmacokinetic parameters. Consequently, the extracted clearance, half-life, and volume values lack independent validation. Extracted — ambroxol: t1/2z 3.72 h, V/F 1.52 l/kg, CL 565 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ambroxol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -82,6 +82,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- derived CL/F=19.8255 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Vergin_1985_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -133,15 +134,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=ambroxol) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; deviation_id: invented_absorption: not acceptable; deviation_id: input_model: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=ambroxol) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -180,7 +183,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.00012 | kg |
-| input | model | `Cl` | 9.417e-06 | m3/s |
+| input | model | `Cl` | 5.507e-06 | m3/s |
 | input | model | `VdPerKg` | 0.00152 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |

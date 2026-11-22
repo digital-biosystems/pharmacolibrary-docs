@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;dostarlimab&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/&quot;},{&quot;label&quot;:&quot;Melhem_2022 \u00b7 estimate_b&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dostarlimab_Melhem2022_mean&quot;,&quot;label&quot;:&quot;Melhem_2022_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Melhem2022_mean.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dostarlimab_Shang2022_reference&quot;,&quot;label&quot;:&quot;Shang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Shang2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dostarlimab_Kuchimanchi2025_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dostarlimab_Kuchimanchi2025_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dostarlimab_Melhem2022_mean&quot;,&quot;label&quot;:&quot;Melhem_2022_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Melhem2022_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dostarlimab_Shang2022_reference&quot;,&quot;label&quot;:&quot;Shang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Shang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dostarlimab — `Dostarlimab_Melhem2022_estimate_b`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:52 UTC (Rejected), but the paper was screened again on 2026-10-07 12:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Dostarlimab clearance was rejected due to a dimension mismatch, as its reported unit could not be resolved to standard units.
+> Dostarlimab's total clearance and central volume units were recorded as generic 'units' rather than their specific pharmacokinetic dimensions.
 
-<div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Melhem2022_estimate_b" status="rejected" stale="true" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Melhem2022_estimate_b" status="rejected" stale="false" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Melhem M, Hanze E, Lu S, Alskär O, Visser S, Gandhi Y. Population pharmacokinetics and exposure-response of anti-programmed cell death protein-1 monoclonal antibody dostarlimab in advanced solid tumours. British journal of clinical pharmacology 88(9):4142–4154 (2022).
@@ -45,7 +45,7 @@ Melhem M, Hanze E, Lu S, Alskär O, Visser S, Gandhi Y. Population pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.458). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.458). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ Melhem M, Hanze E, Lu S, Alskär O, Visser S, Gandhi Y. Population pharmacokinet
 
 ### Reviewer guidance
 
-**Dostarlimab clearance was rejected due to a dimension mismatch, as its reported unit could not be resolved to standard units.**
+**Dostarlimab's total clearance and central volume units were recorded as generic 'units' rather than their specific pharmacokinetic dimensions.**
 
-The total clearance parameter (0.179) was extracted with a unit that lacked a defined metric equivalent, preventing conversion to SI. This ambiguity left the parameter without a valid physical value, triggering a structural consistency failure. Second reader disagreements on relative standard errors and missing covariate effects further complicated the record's integrity. Extracted — dostarlimab: CL 0.179 units, V1 2.98 units, Q 0.547 L d −1, V2 2.1 L, t1/2z 108 d.
+The total clearance (CL) and central volume of distribution (V1) entries both list their unit as 'units', which fails the dimensionality check against their expected physical dimensions. This ambiguity prevents the record from being converted to standard SI units, causing the structural parameters to be rejected. While other covariates like the effect of ALT on clearance have recorded values, the core compartmental units remain invalid. Extracted — dostarlimab: CL 0.179 units, V1 2.98 units, Q 0.547 L d −1, V2 2.1 L, t1/2z 108 d.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl (l d -1 ) a].rse_percent`: this record has none, the second reading 1.57; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

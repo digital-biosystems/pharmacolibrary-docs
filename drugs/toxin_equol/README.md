@@ -81,7 +81,7 @@ Equol is a metabolite of daidzein, a phytoestrogen common in the human diet and 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-10 05:21 | 27:26 | 2/17/0 | 1/0/0 | 0/0/0 | 511,743/35,206 | einfracz / qwen3.8-27b | 26 | 4/11 | 26/0 | 0 |
+| 2026-11-10 05:21 | 27:26 | 2/17/0 | 2/0/0 | 0/0/0 | 511,743/35,206 | einfracz / qwen3.8-27b | 26 | 4/11 | 26/0 | 0 |
 
 ## Coverage
 

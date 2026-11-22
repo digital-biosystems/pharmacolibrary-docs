@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 84, model 3.08e+03); the covariate scenarios were not simulated.
+> The model does not reproduce the paper's terminal half-life (paper 84, model 3.25e+03); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="benralizumab" model-id="Benralizumab_Yan2019_final" status="needs_review" stale="false" population="adult and adolescent patients with asthma" measured-compound="benralizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -62,13 +62,13 @@ Yan L, Wang B, Chia YL, Roskos LK. Population Pharmacokinetic Modeling of Benral
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 84, model 3.08e+03); the covariate scenarios were not simulated.**
+**The model does not reproduce the paper's terminal half-life (paper 84, model 3.25e+03); the covariate scenarios were not simulated (+1 more).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Fab and Frel), so that value has no SI equivalent. Extracted — benralizumab: CL 0.291 L/day, V1 3.13 L, Q 0.738 L/day, V2 2.52 L, t1/2ka 3.54 days, Fab 0.589 Model 9, Frel 0.49 Model 9.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has benralizumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -180,10 +180,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_output_variable |  | pass | C_central (measured=benralizumab) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | fail | 372 | 3082 | 8.285 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 84 | 3082 | 36.69 | days→SI vs simulated h |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
+| T1_t_half_beta | reference | fail | 372 | 3252 | 8.743 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 84 | 3252 | 38.72 | days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

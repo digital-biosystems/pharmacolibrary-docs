@@ -5,11 +5,11 @@
 
 # ajmaline — `Ajmaline_Yasuhara1987_dog_1`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 15:35 UTC (Rejected), but the paper was screened again on 2026-10-08 15:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the clearance unit ml/min/kg could not be converted, preventing a dimension consistency check.
+> Clearance value 1.81 was assigned incorrect milliliters per minute per kilogram units, conflicting with expected volume dimensions.
 
-<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_1" status="rejected" stale="true" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_1" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajmaline disposition and pharmacologic response in beagle dogs. Journal of pharmacokinetics and biopharmaceutics 15(1):39–55 (1987).
@@ -17,7 +17,7 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ## Population and dosing
 
-**Population:** healthy beagle dogs · condition healthy · age group adult · n = &gt;=4.
+**Population:** healthy beagle dogs · condition healthy · age group adult.
 
 **Dosing:** 45 mg, iv, single.
 
@@ -43,7 +43,7 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ### Reviewer guidance
 
-**The record was rejected because the clearance unit ml/min/kg could not be converted, preventing a dimension consistency check.**
+**Clearance value 1.81 was assigned incorrect milliliters per minute per kilogram units, conflicting with expected volume dimensions.**
 
-The total clearance for ajmaline is reported as 1.81 ml/min/kg. This specific unit is not recognized for conversion to standard SI units. Consequently, the system could not verify that this parameter matches the model's structural dimensions. Extracted — ajmaline: V 13.8 L/kg, λ1 0.162 min-1, k21 0.396 min-1, kel 0.0354 min-1, CL 1.81 ml/min/kg.
+The total clearance parameter is recorded with a value of 1.81 and units of ml/min/kg. This specific unit format creates a dimensional conflict with the parameter's structural requirements in the model. Consequently, the record was rejected due to this dimension mismatch on the clearance parameter. Extracted — ajmaline: V 13.8 L/kg, λ1 0.162 min-1, k21 0.396 min-1, kel 0.0354 min-1, CL 1.81 ml/min/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 

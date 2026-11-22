@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Pleconaril model was held back because abstract-only data forced apparent parameterization and used steady-state volume as central volume.
+> The record for pleconaril was held back because the second reader disputed the parameterization and could not verify the Cmax value of 1272.5 ng/ml.
 
 <div class="pk-model-meta" hidden drug="pleconaril" model-id="Pleconaril_Kearns1999_reference" status="needs_review" stale="false" population="children aged 2 to 12 years" measured-compound="pleconaril" parameterization="apparent" topology="1C"></div>
 
@@ -54,9 +54,9 @@ Kearns GL, Abdel-Rahman SM, James LP, Blowey DL, Marshall JD, Wells TG et al. Si
 
 ### Reviewer guidance
 
-**Pleconaril model was held back because abstract-only data forced apparent parameterization and used steady-state volume as central volume.**
+**The record for pleconaril was held back because the second reader disputed the parameterization and could not verify the Cmax value of 1272.5 ng/ml.**
 
-The record relied on abstract summary statistics rather than a fitted population, leading to deviations like assuming full bioavailability and substituting Vss for central volume. These substitutions allow terminal half-life reproduction but fail to capture the early distribution phase. A second reader also disputed the apparent parameterization classification and the clearance identifier. Extracted — pleconaril: Cmax 1.27e+03 ng/ml, tmax 4.1 h, tlag 0.75 h, kabs 0.75 1/h, kel 0.16 1/h, CL/F 0.81 liters/h/kg, Vss 4.68 liters/kg, t1/2z 5.7 h.
+The model builder assumed bioavailability was 1 to convert apparent clearance to mechanistic clearance, a substitution the second reader rejected in favor of an apparent parameterization. The second reader also disagreed on the identification of the clearance parameter and failed to confirm the reported Cmax, marking that value as missing. Additionally, the use of steady-state volume in a one-compartment model limits its ability to reproduce the early distribution phase of the concentration-time profile. Extracted — pleconaril: Cmax 1.27e+03 ng/ml, tmax 4.1 h, tlag 0.75 h, kabs 0.75 1/h, kel 0.16 1/h, CL/F 0.81 liters/h/kg, Vss 4.68 liters/kg, t1/2z 5.7 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -142,15 +142,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=pleconaril) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | apparent_assumption: not acceptable; vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=pleconaril) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | cross-check disputed by a second reader: verdict disputed, agreement 0.769, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

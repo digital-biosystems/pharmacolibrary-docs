@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;etomidate&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/&quot;},{&quot;label&quot;:&quot;Van_1978 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etomidate_Kaneda2011_reference&quot;,&quot;label&quot;:&quot;Kaneda_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Kaneda2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Shen2016_reference&quot;,&quot;label&quot;:&quot;Shen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Shen2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_van1983_reference&quot;,&quot;label&quot;:&quot;van_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_van1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Van1978_reference&quot;,&quot;label&quot;:&quot;Van_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Van1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ranna_2006_GABA_induced_currents&quot;,&quot;label&quot;:&quot;Ranna_2006 \u00b7 GABA-induced currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etomidate_Kaneda2011_reference&quot;,&quot;label&quot;:&quot;Kaneda_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Kaneda2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Shen2016_reference&quot;,&quot;label&quot;:&quot;Shen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Shen2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etomidate_Van1978_reference&quot;,&quot;label&quot;:&quot;Van_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_Van1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etomidate_van1983_reference&quot;,&quot;label&quot;:&quot;van_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/Etomidate_van1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ranna_2006_GABA_induced_currents&quot;,&quot;label&quot;:&quot;Ranna_2006 \u00b7 GABA-induced currents&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Etomidate's absorption and inter-compartmental rate constants were assigned placeholder values, as the paper provides no estimates for these kinetic parameters.
+> The etomidate model relies on defaulted absorption and intercompartmental rate constants rather than paper-specific estimates.
 
 <div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Van1978_reference" status="needs_review" stale="false" population="patients" measured-compound="etomidate" parameterization="apparent" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Van Hamme MJ, Ghoneim MM, Ambre JJ. Pharmacokinetics of etomidate, a new intrave
 
 ## Population and dosing
 
-**Population:** patients · condition healthy · age group adult · n = errors": "Missing required arguments: {'age_class', 'n_subjects', 'condition', 'species'}.
+**Population:** patients · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed etomidate sulfate, measured etomidate.
 
@@ -56,9 +56,9 @@ Van Hamme MJ, Ghoneim MM, Ambre JJ. Pharmacokinetics of etomidate, a new intrave
 
 ### Reviewer guidance
 
-**Etomidate's absorption and inter-compartmental rate constants were assigned placeholder values, as the paper provides no estimates for these kinetic parameters.**
+**The etomidate model relies on defaulted absorption and intercompartmental rate constants rather than paper-specific estimates.**
 
-The record is abstract-only, so reported summary statistics stand in for a fitted model. The absorption rate constant and inter-compartmental clearances were defaulted because they are not reported in the source text. A second reader could not verify the apparent elimination half-life (4.6 hours) or hepatic clearance (739 ml/min), marking these values as null. Extracted — etomidate: t1/2α 2.6 min, t1/2β 28.7 min, t1/2z 4.6 hours, V1 23.2 l, V/F 4.5 l/kg, CL 860 ml/min, CLb 754 ml/min, CLH 739 ml/min.
+Absorption rate (ka), lag time, and intercompartmental rates (k12, k21) were assigned library defaults instead of explicit estimates, a substitution not supported by the source. The second reader disputed the extracted values for all terminal half-lives, clearances, and volumes, finding them unreadable. Additionally, the record is based solely on the abstract, so its summary statistics stand in for a fitted model without individual parameter confidence. Extracted — etomidate: t1/2α 2.6 min, t1/2β 28.7 min, t1/2z 4.6 hours, V1 23.2 l, V/F 4.5 l/kg, CL 860 ml/min, CLb 754 ml/min, CLH 739 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etomidate sulfate, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -162,15 +162,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=etomidate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=etomidate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

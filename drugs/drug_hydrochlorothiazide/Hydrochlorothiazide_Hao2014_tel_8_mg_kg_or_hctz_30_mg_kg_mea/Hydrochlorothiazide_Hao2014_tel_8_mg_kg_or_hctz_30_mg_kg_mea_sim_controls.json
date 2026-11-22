@@ -57,7 +57,8 @@
   "scale": 1,
   "min": 40,
   "max": 120,
-  "step": 1
+  "step": 1,
+  "note": "Scales the volume (V = Vd per kg × weight) and nothing else."
  },
  {
   "key": "F",

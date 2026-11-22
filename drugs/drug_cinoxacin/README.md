@@ -26,19 +26,7 @@ Cinoxacin is a quinolone antibiotic used to treat urinary tract infections. It i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Barbhaiya_1982_reference](drugs/drug_cinoxacin/Cinoxacin_Barbhaiya1982_reference.md) | — | 1-compartment (no model) | 2 | Barbhaiya RH et al., Influence of urinary pH on the pharmaco…, Antimicrobial agents and ch… (1982) | [10.1128/AAC.21.3.472](https://doi.org/10.1128/AAC.21.3.472) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cinoxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DNA (intercalation), TOP2A (inhibitor), TOP2B (inhibitor).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Barbhaiya_1982_reference](drugs/drug_cinoxacin/Cinoxacin_Barbhaiya1982_reference.md) | — | 1-compartment (no model) | 2 | Barbhaiya RH et al., Influence of urinary pH on the pharmaco…, Antimicrobial agents and ch… (1982) | [10.1128/AAC.21.3.472](https://doi.org/10.1128/AAC.21.3.472) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,7 +46,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

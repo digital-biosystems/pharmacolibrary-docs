@@ -17,7 +17,7 @@ Höffken G, Tetzel H, Koeppe P, Lode H. Pharmacokinetics and serum bactericidal 
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;$10.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

@@ -156,30 +156,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_tioguanine/Tioguanine_Lu1982_reference/Tioguanine_Lu1982_reference_matlab.zip" download>Tioguanine_Lu1982_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_tioguanine/Tioguanine_Lu1982_reference/Tioguanine_Lu1982_reference_sbml.zip" download>Tioguanine_Lu1982_reference_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_tioguanine/Tioguanine_Lu1982_reference/Tioguanine_Lu1982_reference_cellml.zip" download>Tioguanine_Lu1982_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Lu K, Benvenuto JA, Bodey GP, Gottlieb JA, Rosenblum MG, Loo TL. Pharmacokinetics and metabolism of beta-2'-deoxythioguanosine and 6-thioguanine in man. Cancer chemotherapy and pharmacology 8(1):119–123 (1982). [doi:10.1007/BF00292882](https://doi.org/10.1007/BF00292882)
-
-**This record:** Pharmacolibrary, model `Tioguanine_Lu1982_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_tioguanine/Tioguanine_Lu1982_reference>
-
-```bibtex
-@misc{pharmacolibrary_TioguanineLu1982reference,
-  title  = {{Pharmacolibrary model Tioguanine_Lu1982_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_tioguanine/Tioguanine_Lu1982_reference},
-  note   = {Parameters from doi:10.1007/BF00292882},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

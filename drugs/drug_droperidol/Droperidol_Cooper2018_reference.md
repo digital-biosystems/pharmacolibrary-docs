@@ -5,11 +5,11 @@
 
 # droperidol — `Droperidol_Cooper2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-06 15:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant unit is not convertible to SI, and the intercompartmental clearance failed a structural consistency check.
+> Droperidol's intercompartmental clearance Q was rejected because its unit was extracted as 'ka' instead of a time-based unit like L/h.
 
-<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Cooper2018_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="droperidol" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Cooper2018_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="droperidol" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Cooper I, Landersdorfer CB, St John AG, Graudins A. The pharmacokinetics of intranasal droperidol in volunteers characterised via population modelling. SAGE open medicine 6:2050312118813283 (2018).
@@ -41,7 +41,7 @@ Cooper I, Landersdorfer CB, St John AG, Graudins A. The pharmacokinetics of intr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.867). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.867). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Cooper I, Landersdorfer CB, St John AG, Graudins A. The pharmacokinetics of intr
 
 ### Reviewer guidance
 
-**The absorption rate constant unit is not convertible to SI, and the intercompartmental clearance failed a structural consistency check.**
+**Droperidol's intercompartmental clearance Q was rejected because its unit was extracted as 'ka' instead of a time-based unit like L/h.**
 
-The record lists the absorption rate constant with a non-standard unit that cannot be converted to SI, preventing a valid simulation. A dimension mismatch was detected for the intercompartmental clearance parameter within the two-compartment model. A second reader identified two missing parameter values that were not extracted from the paper. Extracted — droperidol: V1 3.16 L, V2 16.9 L, Q 9.66 L/h, kabs 0.517 ka, t1/2β 2 h.
+The record lists intercompartmental clearance Q with a value of 9.66 and a unit labeled 'ka', which dimensionally conflicts with a clearance parameter. A second reader noted missing values for the central volume V1 (13.2) and an additional parameter (5.18), but the primary rejection reason remains the invalid unit for Q. Extracted — droperidol: V1 3.16 L, V2 16.9 L, Q 9.66 L/h, kabs 0.517 ka, t1/2β 2 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cvcp: this record has none, the second reading 13.2; it also differs on 1 more field. That field does not shape the model.
 

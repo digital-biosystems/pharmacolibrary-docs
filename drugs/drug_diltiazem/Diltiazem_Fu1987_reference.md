@@ -5,11 +5,11 @@
 
 # diltiazem — `Diltiazem_Fu1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:39 UTC (Rejected), but the paper was screened again on 2026-10-06 22:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Fu1987_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Fu1987_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fu M, Hung JS, Yeh SJ, Lin FC, Hsu RS, Wu D. Pharmacokinetics and pharmacodynamic effects of aqueous diltiazem in healthy humans. Journal of clinical pharmacology 27(2):106–110 (1987).
@@ -17,7 +17,7 @@ Fu M, Hung JS, Yeh SJ, Lin FC, Hsu RS, Wu D. Pharmacokinetics and pharmacodynami
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;=10.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 
@@ -36,7 +36,7 @@ Fu M, Hung JS, Yeh SJ, Lin FC, Hsu RS, Wu D. Pharmacokinetics and pharmacodynami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Fu M, Hung JS, Yeh SJ, Lin FC, Hsu RS, Wu D. Pharmacokinetics and pharmacodynami
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diltiazem: t1/2α 15.8 minutes, t1/2z 3.8 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the concentration-time curve: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

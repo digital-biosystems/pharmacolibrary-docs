@@ -4,11 +4,11 @@
 
 # triptorelin — `Triptorelin_Mller1997_group_iv`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:09 UTC (Needs review), but the paper was screened again on 2026-10-06 22:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Triptorelin clearance lacked an explicit value, so a library placeholder substituted for the parameter, quarantining the one-compartment model.
 
-<div class="pk-model-meta" hidden drug="triptorelin" model-id="Triptorelin_Mller1997_group_iv" status="extracted" stale="true" population="healthy males and males with renal or hepatic insufficiency" measured-compound="triptorelin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="triptorelin" model-id="Triptorelin_Mller1997_group_iv" status="model_quarantined" stale="false" population="healthy males and males with renal or hepatic insufficiency" measured-compound="triptorelin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. Pharmacokinetics of triptorelin after intravenous bolus administration in healthy males and in males with renal or hepatic insufficiency. British journal of clinical pharmacology 44(4):335–341 (1997).
@@ -16,7 +16,7 @@ Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. P
 
 ## Population and dosing
 
-**Population:** healthy males and males with renal or hepatic insufficiency · age group adult · n = condition.
+**Population:** healthy males and males with renal or hepatic insufficiency · age group adult.
 
 **Dosing:** 0.5 mg, iv, single.
 
@@ -24,12 +24,14 @@ Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. P
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 7 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | t 1/2, z (h) | t1/2z | 220 | h |
@@ -42,7 +44,7 @@ Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +54,11 @@ Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. P
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Triptorelin clearance lacked an explicit value, so a library placeholder substituted for the parameter, quarantining the one-compartment model.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax and Ae ), so that value has no SI equivalent. Extracted — triptorelin: t1/2z 220 h, t1/2β 50 h, Cmax 46.6 ng ml -1, MRT 10.1 h, Vss 34.7 l, Ae 144 mg, CLnorm 88.9 ml min-1.
+The record contains no estimated clearance value, leading the model builder to use a default placeholder. Additionally, the reported volume of distribution of 34.7 l was used as the primary volume, despite the structure being one-compartment. The model was not published because it relied on this unestimated clearance value rather than an explicit estimate. Extracted — triptorelin: t1/2z 220 h, t1/2β 50 h, Cmax 46.6 ng ml -1, MRT 10.1 h, Vss 34.7 l, Ae 144 mg, CLnorm 88.9 ml min-1.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -120,6 +122,17 @@ A model needs both clearance and volume; without the clearance it could only be 
 | C5_dimension_Q91 | pass | [mass] |  | ['Müller_1997_table_4:row1:col4'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q65 | pass | volume within physiological range | 34.7 L | ['Müller_1997_table_2:row21:col6'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>

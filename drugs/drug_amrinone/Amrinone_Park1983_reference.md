@@ -36,7 +36,7 @@ Park GB, Kershner RP, Angellotti J, Williams RL, Benet LZ, Edelson J. Oral bioav
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Park GB, Kershner RP, Angellotti J, Williams RL, Benet LZ, Edelson J. Oral bioav
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — amrinone: Fab 0.93, kel 0.19 hr-1, t1/2z 3.6 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.93, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 0.93, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,16 +86,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 0.93 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent first-order terminal elimination rate constant, beta]` | 0.19 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` | 0.93 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life]` | 3.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 0.93 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent first-order terminal elimination rate constant, beta]` | 0.19 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 0.93 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 3.6 |  | only_one_extracted |
 
 </details>
 

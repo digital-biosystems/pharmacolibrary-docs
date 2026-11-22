@@ -17,7 +17,7 @@ Yukawa E, Orio K, Yukawa M, Terao K, Kinoshita H. Population pharmacokinetic inv
 
 ## Population and dosing
 
-**Population:** Japanese patients · age group adult · n = &lt;|assistant|&gt;.
+**Population:** Japanese patients · age group adult.
 
 ## Model
 

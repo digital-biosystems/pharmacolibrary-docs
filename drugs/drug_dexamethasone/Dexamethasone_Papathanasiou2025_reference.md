@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the peripheral compartment is unreachable from the dose, leaving the dexamethasone model's structure disconnected despite a clearance value of 0.926 L/day.
+> Dexamethasone's two-compartment model was rejected because the peripheral compartment lacks a valid path from the dose.
 
 <div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Papathanasiou2025_reference" status="rejected" stale="false" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,9 +47,9 @@ Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Populati
 
 ### Reviewer guidance
 
-**The record was rejected because the peripheral compartment is unreachable from the dose, leaving the dexamethasone model's structure disconnected despite a clearance value of 0.926 L/day.**
+**Dexamethasone's two-compartment model was rejected because the peripheral compartment lacks a valid path from the dose.**
 
-The model is specified as a two-compartment structure, but the review found an orphan compartment with no path from the dose administration site. This topological flaw means the peripheral volume (V2) cannot be physiologically linked to the central drug elimination. Additionally, the second reader disagreed on the model structure, interpreting the paper as describing a one-compartment model rather than the two-compartment structure recorded here. Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
+The record specifies a two-compartment structure for dexamethasone but fails to link the peripheral compartment to the dosing site. Additionally, a second reviewer disagreed on the model topology, arguing for a one-compartment structure, and identified conflicting values for specific parameters. Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q37: this record has none, the second reading 2.03; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

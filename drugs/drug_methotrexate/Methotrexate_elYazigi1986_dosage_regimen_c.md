@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;el-Yazigi_1986 \u00b7 dosage_regimen_c&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Faltaos2006_reference&quot;,&quot;label&quot;:&quot;Faltaos_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Faltaos2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Gao2021_reference&quot;,&quot;label&quot;:&quot;Gao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Gao2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Mei2018_reference&quot;,&quot;label&quot;:&quot;Mei_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Mei2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Taylor2026_reference&quot;,&quot;label&quot;:&quot;Taylor_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Taylor2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Zang2019_reference&quot;,&quot;label&quot;:&quot;Zang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Zang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Zhan2022_reference&quot;,&quot;label&quot;:&quot;Zhan_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Zhan2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Iven1985_12_mg_kg&quot;,&quot;label&quot;:&quot;Iven_1985_12_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Iven1985_12_mg_kg.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Iven1985_1_33_mg_kg&quot;,&quot;label&quot;:&quot;Iven_1985_1_33_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Iven1985_1_33_mg_kg.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Iven1985_4_mg_kg&quot;,&quot;label&quot;:&quot;Iven_1985_4_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Iven1985_4_mg_kg.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lobo_2003_Nadir_body_weight_loss&quot;,&quot;label&quot;:&quot;Lobo_2003 \u00b7 % Nadir body weight loss&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/pd_Lobo_2003_Nadir_body_weight_loss.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tan_2024_DAS_28_3&quot;,&quot;label&quot;:&quot;Tan_2024 \u00b7 DAS-28-3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/pd_Tan_2024_DAS_28_3.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Faltaos2006_reference&quot;,&quot;label&quot;:&quot;Faltaos_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Faltaos2006_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Gao2021_reference&quot;,&quot;label&quot;:&quot;Gao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Gao2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Johansson2011_model_estimate_bsv_rse&quot;,&quot;label&quot;:&quot;Johansson_2011_model_estimate_bsv_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Johansson2011_model_estimate_bsv_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Mei2018_reference&quot;,&quot;label&quot;:&quot;Mei_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Mei2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Shi2020_reference&quot;,&quot;label&quot;:&quot;Shi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Shi2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Taylor2026_reference&quot;,&quot;label&quot;:&quot;Taylor_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Taylor2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Zang2019_reference&quot;,&quot;label&quot;:&quot;Zang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Zang2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Zhan2022_reference&quot;,&quot;label&quot;:&quot;Zhan_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Zhan2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lobo_2003_Nadir_body_weight_loss&quot;,&quot;label&quot;:&quot;Lobo_2003 \u00b7 % Nadir body weight loss&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/pd_Lobo_2003_Nadir_body_weight_loss.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tan_2024_DAS_28_3&quot;,&quot;label&quot;:&quot;Tan_2024 \u00b7 DAS-28-3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/pd_Tan_2024_DAS_28_3.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methotrexate — `Methotrexate_elYazigi1986_dosage_regimen_c`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 14:13 UTC (Rejected), but the paper was screened again on 2026-11-04 02:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. A dimension mismatch on the elimination rate constant and an unreachable peripheral compartment led to the rejection of the methotrexate model.
+> Methotrexate parameters Q, AUCt, and t1/2α have unit dimensions conflicting with their defined meanings, causing a dimension mismatch that led to rejection.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_elYazigi1986_dosage_regimen_c" status="rejected" stale="true" population="cancer patients" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_elYazigi1986_dosage_regimen_c" status="rejected" stale="false" population="cancer patients" measured-compound="7-OH methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and its 7-OH metabolite in cancer patients treated with different high-methotrexate dosage regimens. International journal of cancer 38(6):795–800 (1986).
@@ -17,9 +17,11 @@ el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and 
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · age group adult · n = 18.
+**Population:** cancer patients · condition cancer · age group adult.
 
-**Dosing:** 7000 mg, iv, multiple.
+**Dosing:** 1400, 2100, 7000 mg, iv, single.
+
+**Dosed compound ≠ measured compound:** dosed methotrexate, measured 7-OH methotrexate.
 
 ## Model
 
@@ -33,9 +35,10 @@ el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and 
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC, μM.hr | AUC | 1776 | μM.hr |
-| TBC, l/hr.kg | CL | 0.131 | l/hr.kg |
-| α₁, hr⁻¹ | λ1 | 2.424 | hr⁻¹ |
+| AUC, μM.hr | AUCt | 1776 | μM.hr |
+| TBC, l/hr.kg | Q | 0.131 | l/hr.kg |
+| α₁, hr⁻¹ | t1/2α | 2.424 | hr⁻¹ |
+| β₁, hr⁻¹ | λ1 | 0.1567 | hr⁻¹ |
 | V-Beta, l/kg | V | 0.989 | l/kg |
 | Vc, l/kg | V1 | 0.172 | l/kg |
 | k₁₂, hr⁻¹ | k12 | 1.031 | hr⁻¹ |
@@ -45,13 +48,12 @@ el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and 
 | tmax, hr | tmax | 9.2 | hr |
 | kd, hr | KD | 0.0861 | hr |
 | t₁/₂, hr | t1/2z | 8.05 | hr |
-| Vp | V2 | 5.72 | L |
-| ka (/day) | kabs | 0.268 | /day |
+| V2 = 5.32 L (37%) | V2 | 5.32 | L |
 | t lag,oral | tlag | 0.36 | hour |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.882). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,11 +63,11 @@ el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and 
 
 ### Reviewer guidance
 
-**A dimension mismatch on the elimination rate constant and an unreachable peripheral compartment led to the rejection of the methotrexate model.**
+**Methotrexate parameters Q, AUCt, and t1/2α have unit dimensions conflicting with their defined meanings, causing a dimension mismatch that led to rejection.**
 
-The elimination rate constant (kel) has a unit that could not be converted to SI, causing a dimension mismatch. Additionally, the model structure contains an unreachable compartment, meaning there is no path from the dose to that part of the system. A second reader disagreed on the value of the elimination rate constant and the first macro-rate constant, noting discrepancies in the extracted data. Extracted — methotrexate: AUC 1.78e+03 μM.hr, CL 0.131 l/hr.kg, λ1 2.42 hr⁻¹, V 0.989 l/kg, V1 0.172 l/kg, k12 1.03 hr⁻¹, k21 0.684 hr⁻¹, kel 0.67 hr⁻¹, … (+7).
+The apparent intercompartmental clearance Q (0.131 l/hr.kg) has a dimensional conflict with the expected volume/time dimension. The area under the curve AUCt (1776 μM.hr) and the fast phase half-life t1/2α (2.424 hr⁻¹) also exhibit dimensional inconsistencies with their respective physical meanings. The record was rejected because these structural parameter units do not match their defined dimensions, and one reported unit could not be converted to standard SI units, preventing the model from being evaluated. Extracted — methotrexate: AUCt 1.78e+03 μM.hr, Q 0.131 l/hr.kg, t1/2α 2.42 hr⁻¹, λ1 0.157 hr⁻¹, V 0.989 l/kg, V1 0.172 l/kg, k12 1.03 hr⁻¹, k21 0.684 hr⁻¹, … (+5); 7-OH methotrexate: V2 5.32 L, tlag 0.36 hour.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k10: this record has 0.6702, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 7-OH methotrexate, the second reading methotrexate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -73,9 +75,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC, μM.hr | `Q88` · AUC | 1776 | μM.hr |  |  | h·µM | llm_confirmed (0.6) | el-Yazigi_1986_table_3:row0:col2, el-Yazigi_1986_table_4:row0:col3 |
-| TBC, l/hr.kg | `Q22` · CL | 0.131 | l/hr.kg |  |  | l/(h·kg) | llm (0.6) | el-Yazigi_1986_table_3:row1:col2 |
-| α₁, hr⁻¹ | `Q67` · λ1 | 2.424 | hr⁻¹ |  |  | 1/h | llm (0.6) | el-Yazigi_1986_table_3:row2:col2 |
+| AUC, μM.hr | `Q19` · AUCt | 1776 | μM.hr |  |  | h·µM | llm_corrected (0.6) | el-Yazigi_1986_table_3:row0:col2, el-Yazigi_1986_table_4:row0:col3 |
+| TBC, l/hr.kg | `Q30` · Q | 0.131 | l/hr.kg |  |  | l/(h·kg) | llm (0.6) | el-Yazigi_1986_table_3:row1:col2 |
+| α₁, hr⁻¹ | `Q59` · t1/2α | 2.424 | hr⁻¹ |  |  | 1/h | llm (0.6) | el-Yazigi_1986_table_3:row2:col2 |
+| β₁, hr⁻¹ | `Q67` · λ1 | 0.1567 | hr⁻¹ | 4.353e-05 | 1/s | 1/h | llm (0.6) | el-Yazigi_1986_table_3:row3:col2 |
 | V-Beta, l/kg | `Q61` · V | 0.989 | l/kg | 0.06923 | m3 | l/kg | llm_corrected (0.6) | el-Yazigi_1986_table_3:row4:col2 |
 | Vc, l/kg | `Q63` · V1 | 0.172 | l/kg | 0.01204 | m3 | l/kg | exact (1) | el-Yazigi_1986_table_3:row5:col2 |
 | k₁₂, hr⁻¹ | `Q301` · k12 | 1.031 | hr⁻¹ | 0.0002864 | 1/s | 1/h | exact (1) | el-Yazigi_1986_table_3:row6:col2 |
@@ -84,9 +87,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | Cmax, μM | `Q32` · Cmax | 17.04 | μM |  |  | µM | llm_confirmed (0.6) | el-Yazigi_1986_table_4:row1:col3 |
 | tmax, hr | `Q56` · tmax | 9.2 | hr | 3.312e+04 | s | h | exact (1) | el-Yazigi_1986_table_4:row2:col3 |
 | kd, hr | `Q331` · KD | 0.0861 | hr |  |  | h | exact (1) | el-Yazigi_1986_table_4:row3:col3 |
-| t₁/₂, hr | `Q57` · t1/2z | 8.05 | hr | 2.898e+04 | s | h | exact (1) | el-Yazigi_1986_table_4:row4:col3 |
-| Vp | `Q64` · V2 | 5.72 | L | 0.00572 | m3 | L | review_gapfill (0.7) | Olivo_2024:review |
-| ka (/day) | `Q49` · kabs | 0.268 | /day | 3.102e-06 | 1/s | 1/h | review_gapfill (0.7) | Pan_2026:review |
+| t₁/₂, hr | `Q57` · t1/2z | 8.05 | hr | 2.898e+04 | s | h | half_life_rule (0.95) | el-Yazigi_1986_table_4:row4:col3 |
+| V2 = 5.32 L (37%) | `Q64` · V2 | 5.32 | L | 0.00532 | m3 | L | review_gapfill (0.7) | Blackman_2026:review |
 | t lag,oral | `Q83` · tlag | 0.36 | hour | 1296 | s | h | review_gapfill (0.7) | Tan_2024:review |
 
 <details class="legend">
@@ -97,20 +99,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'AUC, μM.hr' → Q88 (unit '[length] * [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'TBC, l/hr.kg' → Q22 (unit '[length] ** 3 * [mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'α₁, hr⁻¹' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
-- unit_dimension_mismatch: 'β₁, hr⁻¹' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
-- dropped duplicate Q67 ('β₁, hr⁻¹', value '0.1567') — already have one for this compound
+- unit_dimension_mismatch: 'AUC, μM.hr' → Q19 (unit '[length] * [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'TBC, l/hr.kg' → Q30 (unit '[length] ** 3 * [mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'α₁, hr⁻¹' → Q59 (unit '1 / [time]' vs ontology '[time]') — route to review
 - unit_dimension_mismatch: 'Cmax, μM' → Q32 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
 - unit_dimension_mismatch: 'kd, hr' → Q331 (unit '[time]' vs ontology '[mass] / [length] ** 3') — route to review
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methotrexate
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=7-OH methotrexate
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- population split: 'dosage regimen c' subgroup of el-Yazigi_1986 (paper reports 3 populations: dosage regimen a, dosage regimen b, dosage regimen c)
-- gap-filled Q64 (V2) from Olivo_2024's review values (primary lacked it)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q49 (kabs) from Pan_2026's review values (primary lacked it)
+- population split: 'dosage regimen c' subgroup of el-Yazigi_1986 (paper reports 4 populations: different dosage regimens, dosage regimen a, dosage regimen b, dosage regimen c)
+- molar mass: none of 1 PubChem candidate(s) is '7-OH methotrexate' (LLM) — left in mass units
+- molar mass: none found for '7-OH methotrexate' — its concentrations stay mass-only
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q64 (V2) from Blackman_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Tan_2024's review values (primary lacked it)
 
 **Extraction notes:**
@@ -125,19 +126,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.882 (15/17 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.571 (12/21 fields) | 9 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[k10]` | 0.6702 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[β1]` |  | 0.1567 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc, um.hr].parameter_id` | Q19 | Q88 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax, um]` | 17.04 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kd]` | 0.0861 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 8.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tbc].parameter_id` | Q30 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[tmax]` | 9.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α1].parameter_id` | Q59 | Q67 | mismatch |
+| `gpt-oss-120b` | `parameters[β1].parameter_id` | Q67 | Q68 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 7-OH methotrexate | methotrexate | mismatch |
 
 </details>
 
@@ -151,29 +159,28 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 12 |  |
+| C0_has_structural_params | pass |  | 13 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 / [time] | l/hr.kg ([length] ** 3 * [mass] / [time]) | ['el-Yazigi_1986_table_3:row1:col2'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | μM.hr ([length] * [time]) | ['el-Yazigi_1986_table_3:row0:col2', 'el-Yazigi_1986_table_4:row0:col3'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | l/hr.kg ([length] ** 3 * [mass] / [time]) | ['el-Yazigi_1986_table_3:row1:col2'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['el-Yazigi_1986_table_3:row6:col2'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['el-Yazigi_1986_table_3:row7:col2'] |
 | C5_dimension_Q32 | fail | [mass] / [length] ** 3 | μM ([length]) | ['el-Yazigi_1986_table_4:row1:col3'] |
 | C5_dimension_Q331 | fail | [mass] / [length] ** 3 | hr ([time]) | ['el-Yazigi_1986_table_4:row3:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['el-Yazigi_1986_table_3:row8:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Pan_2026:review'] |
 | C5_dimension_Q56 | pass | [time] |  | ['el-Yazigi_1986_table_4:row2:col3'] |
 | C5_dimension_Q57 | pass | [time] |  | ['el-Yazigi_1986_table_4:row4:col3'] |
+| C5_dimension_Q59 | fail | [time] | hr⁻¹ (1 / [time]) | ['el-Yazigi_1986_table_3:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['el-Yazigi_1986_table_3:row4:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['el-Yazigi_1986_table_3:row5:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Olivo_2024:review'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr⁻¹ (1 / [time]) | ['el-Yazigi_1986_table_3:row2:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Blackman_2026:review'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['el-Yazigi_1986_table_3:row3:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tan_2024:review'] |
-| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | μM.hr ([length] * [time]) | ['el-Yazigi_1986_table_3:row0:col2', 'el-Yazigi_1986_table_4:row0:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.131 | ['el-Yazigi_1986_table_3:row1:col2'] |
-| C8_topology | fail |  |  |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 69.2 L | ['el-Yazigi_1986_table_3:row4:col2'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 12 L | ['el-Yazigi_1986_table_3:row5:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 5.72 L | ['Olivo_2024:review'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 5.32 L | ['Blackman_2026:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -197,4 +204,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_elYazigi1986_dosage_regimen_c&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_elYazigi1986_dosage_regimen_c%0APaper%3A%20el-Yazigi_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_elYazigi1986_dosage_regimen_c%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-04 02:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 00:27 UTC</sub>

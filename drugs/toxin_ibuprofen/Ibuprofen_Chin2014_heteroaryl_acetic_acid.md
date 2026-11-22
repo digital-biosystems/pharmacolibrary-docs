@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Ibuprofen&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/&quot;},{&quot;label&quot;:&quot;Chin_2014 \u00b7 heteroaryl_acetic_acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Chin2014_alkanones&quot;,&quot;label&quot;:&quot;Chin_2014_alkanones&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_alkanones.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_arylpropionic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_arylpropionic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_arylpropionic_acid.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_enolic_acids&quot;,&quot;label&quot;:&quot;Chin_2014_enolic_acids&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_enolic_acids.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_heteroaryl_acetic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_heteroaryl_acetic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_heteroaryl_acetic_acid.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_indole_acetic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_indole_acetic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_indole_acetic_acid.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Yang2019_reference&quot;,&quot;label&quot;:&quot;Yang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Yang2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Chin2014_alkanones&quot;,&quot;label&quot;:&quot;Chin_2014_alkanones&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_alkanones.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_arylpropionic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_arylpropionic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_arylpropionic_acid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_enolic_acids&quot;,&quot;label&quot;:&quot;Chin_2014_enolic_acids&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_enolic_acids.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_heteroaryl_acetic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_heteroaryl_acetic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_heteroaryl_acetic_acid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ibuprofen_Chin2014_indole_acetic_acid&quot;,&quot;label&quot;:&quot;Chin_2014_indole_acetic_acid&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Chin2014_indole_acetic_acid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Yang2019_reference&quot;,&quot;label&quot;:&quot;Yang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Yang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ibuprofen/Ibuprofen_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ibuprofen — `Ibuprofen_Chin2014_heteroaryl_acetic_acid`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life (paper 50, model 1.9).
 
-<div class="pk-model-meta" hidden drug="Ibuprofen" model-id="Ibuprofen_Chin2014_heteroaryl_acetic_acid" status="extracted" stale="false" population="Female Wister rats" measured-compound="Ibuprofen" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Ibuprofen" model-id="Ibuprofen_Chin2014_heteroaryl_acetic_acid" status="needs_review" stale="false" population="Female Wister rats" measured-compound="Ibuprofen" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Chin HY, Changchien E, Lin MF, Chiang CH, Wang CJ. Concentration of non-steroidal anti-inflammatory drugs in the pelvic floor muscles: an experimental comparative rat model. Yonsei medical journal 55(4):1095–1100 (2014).
@@ -29,6 +29,8 @@ Chin HY, Changchien E, Lin MF, Chiang CH, Wang CJ. Concentration of non-steroida
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | T1/2 (hr) | t1/2z | 1.9 | hr |
@@ -36,7 +38,7 @@ Chin HY, Changchien E, Lin MF, Chiang CH, Wang CJ. Concentration of non-steroida
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +46,13 @@ Chin HY, Changchien E, Lin MF, Chiang CH, Wang CJ. Concentration of non-steroida
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (paper 50, model 1.9).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — ibuprofen: t1/2z 1.9 hr, CL 27.2 L h−1 kg−1.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -103,6 +111,19 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 27.17 | ['Yang_2019:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.9e+03 L/h | ['Yang_2019:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=Ibuprofen) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | skipped |  | 1.902 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 50 | 1.902 | 0.038 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

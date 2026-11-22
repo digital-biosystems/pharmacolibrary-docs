@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;lenalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/&quot;},{&quot;label&quot;:&quot;Hughes_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenalidomide_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Hughes2019_reference&quot;,&quot;label&quot;:&quot;Hughes_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Hughes2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenalidomide_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Hughes2019_reference&quot;,&quot;label&quot;:&quot;Hughes_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Hughes2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lenalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record incorrectly assigns creatinine clearance as a lenalidomide PK parameter and relies on abstract-only summary statistics.
+> The creatinine clearance value of 30 mL/min was incorrectly recorded as a disposition parameter for lenalidomide.
 
 <div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Hughes2019_reference" status="rejected" stale="false" population="adults with B-cell malignancies (multiple myeloma, CLL, AML, ALL)" measured-compound="lenalidomide" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Hughes JH, Phelps MA, Upton RN, Reuter SE, Gao Y, Byrd JC et al. Population phar
 
 ## Population and dosing
 
-**Population:** adults with B-cell malignancies (multiple myeloma, CLL, AML, ALL) · age group adult · n = ,.
+**Population:** adults with B-cell malignancies (multiple myeloma, CLL, AML, ALL) · age group adult.
 
 ## Model
 
@@ -50,9 +50,9 @@ Hughes JH, Phelps MA, Upton RN, Reuter SE, Gao Y, Byrd JC et al. Population phar
 
 ### Reviewer guidance
 
-**The record incorrectly assigns creatinine clearance as a lenalidomide PK parameter and relies on abstract-only summary statistics.**
+**The creatinine clearance value of 30 mL/min was incorrectly recorded as a disposition parameter for lenalidomide.**
 
-The parameter labeled 'creatinine clearance' (30 mL/min) is a biomarker, not a drug elimination rate, invalidating the model's clearance definition. Because the source text was abstract-only, the reported values for apparent clearance and volume distribution are summary statistics rather than fitted model estimates. The transit rate constant of 13.5 h-1 was used to approximate first-order absorption, introducing structural uncertainty in the input function. Extracted — lenalidomide: CL/F 12 L/h, V/F 68.8 L, ktr 13.5 h-1, CL 30 mL/min.
+The record lists a parameter named 'CL' with a meaning defining total clearance, but its label identifies it as creatinine clearance. This biomarker serves as a covariate, not a pharmacokinetic disposition parameter for the drug itself. Consequently, a second reader disputed the record, failing to identify the primary analyte or validate the extracted parameters. Extracted — lenalidomide: CL/F 12 L/h, V/F 68.8 L, ktr 13.5 h-1, CL 30 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lenalidomide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -142,15 +142,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | lenalidomide (or metabolite) | creatinine clearance | disposition label(s) name a biomarker, not lenalidomide: 'creatinine clearance' |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=lenalidomide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | lenalidomide (or metabolite) | creatinine clearance |  | disposition label(s) name a biomarker, not lenalidomide: 'creatinine clearance' |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=lenalidomide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

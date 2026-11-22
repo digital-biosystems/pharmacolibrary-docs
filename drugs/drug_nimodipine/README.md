@@ -34,21 +34,7 @@ Nimodipine is a calcium channel blocker used to prevent vasospasm following suba
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Foucher_2025_reference](drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Foucher A et al., Impact of cerebral vasospasm therapy on…, Journal of the neurological… (2025) | [10.1016/j.jns.2025.125666](https://doi.org/10.1016/j.jns.2025.125666) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Seker_2017_reference](drugs/drug_nimodipine/Nimodipine_Seker2017_reference.md) | — | 1-compartment (no model) | 3 | Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017) | [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nimodipine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: AHR (target), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1F (inhibitor), CACNA1S (inhibitor), CACNB1 (inhibitor), CACNB2 (inhibitor), CACNB3 (inhibitor), CACNB4 (inhibitor), NR3C2 (target).</sub>
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Seker_2017_reference](drugs/drug_nimodipine/Nimodipine_Seker2017_reference.md) | — | 1-compartment (no model) | 3 | Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017) | [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -68,7 +54,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 122 matched, 58 returned
 - **screened:** 11  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -4,11 +4,11 @@
 
 # levacetylmethadol — `Levacetylmethadol_Finkle1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-07 03:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Levacetylmethadol lacks distribution volume and clearance values, and nor-LAAM and dinor-LAAM have no defined elimination rates, preventing a valid compartmental model.
+> Record rejected because the nor-LAAM and dinor-LAAM metabolite compartments are unreachable from the levacetylmethadol dose.
 
-<div class="pk-model-meta" hidden drug="levacetylmethadol" model-id="Levacetylmethadol_Finkle1982_reference" status="rejected" stale="true" population="human subjects (opioid-dependent/maintenance)" measured-compound="levacetylmethadol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="levacetylmethadol" model-id="Levacetylmethadol_Finkle1982_reference" status="rejected" stale="false" population="human subjects (opioid-dependent/maintenance)" measured-compound="levacetylmethadol" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Finkle BS, Jennison TA, Chinn DM, Ling W, Holmes ED. Plasma and urine disposition of 1-alpha-acetylmethadol and its principal metabolites in man. Journal of analytical toxicology 6(2):100–105 (1982).
@@ -36,7 +36,7 @@ Finkle BS, Jennison TA, Chinn DM, Ling W, Holmes ED. Plasma and urine dispositio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Finkle BS, Jennison TA, Chinn DM, Ling W, Holmes ED. Plasma and urine dispositio
 
 ### Reviewer guidance
 
-**Levacetylmethadol lacks distribution volume and clearance values, and nor-LAAM and dinor-LAAM have no defined elimination rates, preventing a valid compartmental model.**
+**Record rejected because the nor-LAAM and dinor-LAAM metabolite compartments are unreachable from the levacetylmethadol dose.**
 
-The paper is an exposure/outcome study that reports only summary statistics from the abstract, omitting critical volume of distribution and clearance parameters. Metabolites nor-LAAM and dinor-LAAM are linked to levacetylmethadol via metabolism but lack elimination parameters, rendering them unreachable in the model structure. The second reader also disagreed on the specific nomenclature for the primary analyte and the existence of the metabolic pathways. Extracted — levacetylmethadol: t1/2α 2.4 hours, t1/2β 37.5 hours, t1/2z 38.2 hours.
+The model structure includes metabolism links from levacetylmethadol to nor-LAAM and dinor-LAAM, but these metabolite nodes have zero compartments and no path from the dosing site. Additionally, the record was built from the abstract alone, so the reported half-lives of 2.4, 37.5, and 38.2 hours are summary statistics rather than fitted parameters. A second reader disagreed on the specific drug nomenclature and the presence of any metabolic links, noting the lack of detailed structural information in the source. Extracted — levacetylmethadol: t1/2α 2.4 hours, t1/2β 37.5 hours, t1/2z 38.2 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levacetylmethadol, the second reading 1-alpha-acetylmethadol; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

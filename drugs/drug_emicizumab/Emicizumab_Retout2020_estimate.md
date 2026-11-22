@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 643, model 26.5).
+> Emicizumab model's simulated terminal half-life (26.5 h) fails to match paper values (643.2 and 38.64).
 
 <div class="pk-model-meta" hidden drug="emicizumab" model-id="Emicizumab_Retout2020_estimate" status="needs_review" stale="false" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></div>
 
@@ -41,7 +41,7 @@ Retout S, Schmitt C, Petry C, Mercier F, Frey N. Population Pharmacokinetic Anal
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +51,13 @@ Retout S, Schmitt C, Petry C, Mercier F, Frey N. Population Pharmacokinetic Anal
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 643, model 26.5).**
+**Emicizumab model's simulated terminal half-life (26.5 h) fails to match paper values (643.2 and 38.64).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — emicizumab: CL/F 0.272 L/h, V/F 10.4 L, kabs 0.536 1/h.
+The one-compartment model yields a terminal half-life of 26.495723898849477 hours, which differs from the reported values of 643.2 and 38.64. The second reader disputed the record, agreeing with the verdict on 0 of 1 items. Parameter values for clearance and absorption rate constants were contested, with null values recorded by the second reader. Extracted — emicizumab: CL/F 0.272 L/h, V/F 10.4 L, kabs 0.536 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has emicizumab, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has emicizumab, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -140,20 +140,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f]` | 0.272 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` |  | 0.272 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 0.536 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` |  | 0.536 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | 10.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` |  | 10.4 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | emicizumab | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | emicizumab | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | 0.272 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 0.272 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.536 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 0.536 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 10.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` |  | 10.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | emicizumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | emicizumab | unknown | mismatch |
 
 </details>
 
@@ -190,6 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 1 | 0.008647 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | 2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | fail | 643.2 | 26.5 | 0.0412 | days→SI vs simulated h |

@@ -5,11 +5,11 @@
 
 # lansoprazole — `Lansoprazole_Sakurai2007_2_compartment`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-10-04 09:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lansoprazole record rejected because the peripheral distribution clearance Q3 unit (L/h/kg) lacks SI conversion, causing a structural dimension mismatch.
+> The record was rejected because the unit l/kg for the peripheral distribution clearance parameter Q3 is dimensionally inconsistent with a clearance quantity.
 
-<div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_2_compartment" status="rejected" stale="true" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_2_compartment" status="rejected" stale="false" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Population pharmacokinetics and proton pump inhibitory effects of intravenous lansoprazole in healthy Japanese males. Biological & pharmaceutical bulletin 30(12):2238–2243 (2007).
@@ -17,7 +17,7 @@ Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Populati
 
 ## Population and dosing
 
-**Population:** healthy Japanese males · condition healthy · age group adult · n = &gt;=56.
+**Population:** healthy Japanese males · condition healthy · age group adult.
 
 **Dosing:** 15, 30 mg, iv, multiple, every 12 h.
 
@@ -40,7 +40,7 @@ Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Populati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Populati
 
 ### Reviewer guidance
 
-**Lansoprazole record rejected because the peripheral distribution clearance Q3 unit (L/h/kg) lacks SI conversion, causing a structural dimension mismatch.**
+**The record was rejected because the unit l/kg for the peripheral distribution clearance parameter Q3 is dimensionally inconsistent with a clearance quantity.**
 
-The record lists Q3 with a value of 0.612 and units of L/h/kg, which could not be converted to standard units. This unit mismatch prevented the validation of the two-compartment model structure. Consequently, the parameter failed the dimensionality check, leading to the record's refusal despite the presence of other parameters. Extracted — lansoprazole: Q 0.11 l/kg, Q3 0.612 L/h/kg, CL 4.9 L/h, V 11 L.
+The parameter Q3, representing the intercompartmental distribution clearance between the central and third compartments, is listed with the value 0.612 in units of l/kg. This unit dimension conflicts with the required clearance dimensions of volume per time. Consequently, the model structure could not be validated for this specific parameter. Extracted — lansoprazole: Q 0.11 l/kg, Q3 0.612 L/h/kg, CL 4.9 L/h, V 11 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lansoprazole, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

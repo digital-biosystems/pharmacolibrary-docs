@@ -4,11 +4,11 @@
 
 # ioxitalamic acid — `IoxitalamicAcid_Kees1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:45 UTC (Needs review), but the paper was screened again on 2026-10-07 17:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance plausibility check could not be computed.
+> The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="ioxitalamic acid" model-id="IoxitalamicAcid_Kees1989_reference" status="needs_review" stale="true" population="" measured-compound="ioxitalamic_acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ioxitalamic acid" model-id="IoxitalamicAcid_Kees1989_reference" status="rejected" stale="false" population="" measured-compound="ioxitalamic_acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kees F, Naber KG, Meyer GP, Grobecker H. Pharmacokinetics of ciprofloxacin in elderly patients. Arzneimittel-Forschung 39(4):523–527 (1989).
@@ -25,7 +25,7 @@ Kees F, Naber KG, Meyer GP, Grobecker H. Pharmacokinetics of ciprofloxacin in el
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -34,7 +34,7 @@ Kees F, Naber KG, Meyer GP, Grobecker H. Pharmacokinetics of ciprofloxacin in el
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--neutral" title="glm-5.3-flash, qwen3.8-27b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--neutral" title="glm-5.3-flash, qwen3.8-27b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -110,19 +110,9 @@ _No second reader extracted anything for this record; it is not cross-checked._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

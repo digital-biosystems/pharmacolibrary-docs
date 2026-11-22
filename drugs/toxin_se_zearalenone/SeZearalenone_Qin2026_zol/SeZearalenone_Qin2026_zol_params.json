@@ -1,0 +1,74 @@
+{
+ "dose_source": "paper",
+ "model_id": "SeZearalenone_Qin2026_zol",
+ "molar_masses": {
+  "retainedFraction": 0.31839999999999996
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  140.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 0.5
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 154.75
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 83.56
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 42.3
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 21.71
+   },
+   {
+    "source": "Qin_2026:other_prose",
+    "value_si": 4.16
+   },
+   {
+    "source": "Qin_2026:discussion_prose",
+    "value_si": 20.25
+   },
+   {
+    "source": "Qin_2026:discussion_prose",
+    "value_si": 3.01
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.31839999999999996,
+  "Tb[1]": 38160.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00014
+ },
+ "reference_peak_times": {
+  "retainedFraction": 519.438877755511
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9958402684488705
+ },
+ "stop_time": 259200.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

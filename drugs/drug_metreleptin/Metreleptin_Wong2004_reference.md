@@ -4,11 +4,11 @@
 
 # metreleptin — `Metreleptin_Wong2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-05 11:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The single-compartment model for r-metHuLeptin was rejected due to a dimension mismatch on the clearance parameter value of 79 ml/kg.h.
+> The clearance unit 'ml/kg.h' was incorrectly parsed as a structural volume parameter, causing a dimension mismatch that rejected the record.
 
-<div class="pk-model-meta" hidden drug="metreleptin" model-id="Metreleptin_Wong2004_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="r-metHuLeptin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metreleptin" model-id="Metreleptin_Wong2004_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="r-metHuLeptin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wong SL, DePaoli AM, Lee JH, Mantzoros CS. Leptin hormonal kinetics in the fed state: effects of adiposity, age, and gender on endogenous leptin production and clearance rates. The Journal of clinical endocrinology and metabolism 89(6):2672–2677 (2004).
@@ -36,7 +36,7 @@ Wong SL, DePaoli AM, Lee JH, Mantzoros CS. Leptin hormonal kinetics in the fed s
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Wong SL, DePaoli AM, Lee JH, Mantzoros CS. Leptin hormonal kinetics in the fed s
 
 ### Reviewer guidance
 
-**The single-compartment model for r-metHuLeptin was rejected due to a dimension mismatch on the clearance parameter value of 79 ml/kg.h.**
+**The clearance unit 'ml/kg.h' was incorrectly parsed as a structural volume parameter, causing a dimension mismatch that rejected the record.**
 
-The record was constructed from the abstract alone, meaning the reported summary statistics stand in for a fitted model. The clearance value of 79 ml/kg.h conflicts with the single-compartment topology, which is the specific cause for the rejection. Additionally, the second reader disagreed that the measured compound r-metHuLeptin could be confirmed as the primary analyte. Extracted — metreleptin: t1/2z 3.4 h, CL 79 ml/kg.h, Vss 150 ml/kg.
+The record lists a clearance value of 79 with the unit 'ml/kg.h', which physically represents flow rate rather than volume. The reviewer identified a conflict where this flow unit was applied to a volume compartment definition. Additionally, the second reader disagreed on the primary analyte and failed to extract the clearance, half-life, and volume parameters, indicating inconsistency in the data extraction from the abstract. Extracted — metreleptin: t1/2z 3.4 h, CL 79 ml/kg.h, Vss 150 ml/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has r-metHuLeptin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

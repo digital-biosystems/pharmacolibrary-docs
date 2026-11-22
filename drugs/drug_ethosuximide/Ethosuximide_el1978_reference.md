@@ -5,18 +5,18 @@
 
 # ethosuximide — `Ethosuximide_el1978_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> This record was reviewed on 2026-11-07 15:53 UTC (Needs review), but the paper was screened again on 2026-10-07 07:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="ethosuximide" model-id="Ethosuximide_el1978_reference" status="needs_review" stale="true" population="dogs" measured-compound="ethosuximide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ethosuximide" model-id="Ethosuximide_el1978_reference" status="needs_review" stale="false" population="dogs" measured-compound="ethosuximide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 el Sayed MA, Löscher W, Frey HH. Pharmacokinetics of ethosuximide in the dog. Archives internationales de pharmacodynamie et de therapie 234(2):180–192 (1978).
 
 ## Population and dosing
 
-**Population:** dogs · condition healthy · n = &gt;.
+**Population:** dogs · condition healthy.
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -39,7 +39,7 @@ el Sayed MA, Löscher W, Frey HH. Pharmacokinetics of ethosuximide in the dog. A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S02A&quot;,&quot;href&quot;:&quot;atc/S02A.md&quot;},{&quot;label&quot;:&quot;boric acid&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/&quot;},{&quot;label&quot;:&quot;Syv\u00e4nen_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BoricAcid_Usuda1998_reference&quot;,&quot;label&quot;:&quot;Usuda_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Usuda1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Boric acid clearance (32.1 mL/min) and peripheral volume (1840.0 mL) are outside physiological windows due to scale errors.
+> Boric acid’s total clearance of 32.1 mL/min was rejected because its clearance-to-volume magnitude was physiologically implausible, indicating a unit/scale extraction error.
 
 <div class="pk-model-meta" hidden drug="boric acid" model-id="BoricAcid_Syvnen2012_reference" status="rejected" stale="false" population="" measured-compound="boric_acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Syvänen S, Schenke M, van den Berg DJ, Voskuyl RA, de Lange EC. Alteration in P
 
 ### Reviewer guidance
 
-**Boric acid clearance (32.1 mL/min) and peripheral volume (1840.0 mL) are outside physiological windows due to scale errors.**
+**Boric acid’s total clearance of 32.1 mL/min was rejected because its clearance-to-volume magnitude was physiologically implausible, indicating a unit/scale extraction error.**
 
-The record lists total clearance at 32.1 mL/min and peripheral volume at 1840.0 mL, both flagged as implausible magnitudes. A second reader disagreed on the peripheral volume, suggesting 184 instead of 1840.0, and noted a missing value where 8.6 was expected. The central volume (146.0 mL) and intercompartmental clearance (66.6 mL/min) were not contested but support the two-compartment structure. Extracted — boric acid: CL 32.1 mL/min, V1 146 mL, V2 1.84e+03 mL, Q 66.6 mL/min.
+The record reports total clearance of 32.1 mL/min and central-compartment volume of 146.0 mL. The review found the clearance-to-volume magnitude outside the physiological window and attributed it to a likely unit or scale extraction error. Extracted — boric acid: CL 32.1 mL/min, V1 146 mL, V2 1.84e+03 mL, Q 66.6 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has 0.061, the second reading 0.06; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

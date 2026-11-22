@@ -5,11 +5,11 @@
 
 # risperidone — `Risperidone_Wang2024_rykindo`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:35 UTC (Rejected), but the paper was screened again on 2026-10-06 17:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartment clearance parameter was rejected because its reported unit of days is incompatible with the required volume per time dimensions.
+> The intercompartment clearance parameter Q2 has a unit of days, conflicting with the required volume/time dimension.
 
-<div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Wang2024_rykindo" status="rejected" stale="true" population="adults with schizophrenia or schizoaffective disorder" measured-compound="active moiety (risperidone + 9-OH-risperidone)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Wang2024_rykindo" status="rejected" stale="false" population="adults with schizophrenia or schizoaffective disorder" measured-compound="active moiety (risperidone + 9-OH-risperidone)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Wang W, Wang X, Dong Y, Walling DP, Liu P, Liu W et al. Population Pharmacokinetic Analysis to Support and Facilitate Switching from Risperidone Formulations to Rykindo in Patients with Schizophrenia. Neurology and therapy 13(2):355–372 (2024).
@@ -46,7 +46,7 @@ Wang W, Wang X, Dong Y, Walling DP, Liu P, Liu W et al. Population Pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Wang W, Wang X, Dong Y, Walling DP, Liu P, Liu W et al. Population Pharmacokinet
 
 ### Reviewer guidance
 
-**The intercompartment clearance parameter was rejected because its reported unit of days is incompatible with the required volume per time dimensions.**
+**The intercompartment clearance parameter Q2 has a unit of days, conflicting with the required volume/time dimension.**
 
-The apparent intercompartment clearance, valued at 0.764, is assigned the unit of days, which creates a dimension mismatch with the structural parameter's requirement. This incompatibility caused the unit to fail conversion to standard SI units. A second reviewer disagreed that this parameter was present, marking it as null while other parameters were similarly disputed. Extracted — active moiety (risperidone + 9-OH-risperidone): kabs 0.288 1/d, CL 187 l/d, Q2 0.764 d, Frel 0.148, tlag 3.47 d, D1 2.18 d, Fab 0.43.
+The parameter representing apparent intercompartment clearance is assigned a value of 0.764 with the unit day, which represents time rather than the necessary flow dimension. This dimensional conflict caused the structural check to fail and the record to be rejected. The second reader did not provide an alternative interpretation for this specific parameter error. Extracted — active moiety (risperidone + 9-OH-risperidone): kabs 0.288 1/d, CL 187 l/d, Q2 0.764 d, Frel 0.148, tlag 3.47 d, D1 2.18 d, Fab 0.43.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has risperidone (Rykindo/Consta LAI), the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -27,23 +27,13 @@ Cloxacillin is a penicillin antibiotic used to treat bacterial infections such a
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Nauta_1975_reference](drugs/drug_cloxacillin/Cloxacillin_Nauta1975_reference.md) | — | 1-compartment (no model) | 2 | Nauta EH et al., Pharmacokinetics of flucloxacillin and…, British journal of clinical… (1975) | [10.1111/j.1365-2125.1975.tb01566.x](https://doi.org/10.1111/j.1365-2125.1975.tb01566.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Nauta_1976_reference](drugs/drug_cloxacillin/Cloxacillin_Nauta1976_reference.md) | — | 1-compartment (no model) | 4 | Nauta EH et al., Dicloxacillin and cloxacillin: pharmaco…, Clinical pharmacology and t… (1976) | [10.1002/cpt197620198](https://doi.org/10.1002/cpt197620198) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Nauta_1976_reference](drugs/drug_cloxacillin/Cloxacillin_Nauta1976_reference.md) | — | 1-compartment (no model) | 4 | Nauta EH et al., Dicloxacillin and cloxacillin: pharmaco…, Clinical pharmacology and t… (1976) | [10.1002/cpt197620198](https://doi.org/10.1002/cpt197620198) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Mattie_1997_CFU](drugs/drug_cloxacillin/pd_Mattie_1997_CFU.md) | numbers of CFU ← cloxacillin · direct Emax (saturable) effect | — | Mattie H et al., Pharmacokinetic and pharmacodynamic mod…, Antimicrobial agents and ch… (1997) | [10.1128/AAC.41.10.2083](https://doi.org/10.1128/AAC.41.10.2083) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cloxacillin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A8` inhibitor/substrate | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,7 +53,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 16 matched, 16 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Pypendop_2014 \u00b7 sufentanil&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_elderly&quot;,&quot;label&quot;:&quot;Ariano_2001_elderly&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_elderly.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_young&quot;,&quot;label&quot;:&quot;Ariano_2001_young&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_young.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Grimsrud2020_reference&quot;,&quot;label&quot;:&quot;Grimsrud_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Grimsrud2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_SaizRodrguez2019_reference&quot;,&quot;label&quot;:&quot;Saiz-Rodr\u00edguez_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_SaizRodrguez2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Scholz1996v2_reference&quot;,&quot;label&quot;:&quot;Scholz_1996_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Scholz1996v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Vller2019_reference&quot;,&quot;label&quot;:&quot;V\u00f6ller_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Vller2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_EEG&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_EEG.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_SaizRodrguez2019_reference&quot;,&quot;label&quot;:&quot;Saiz-Rodr\u00edguez_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_SaizRodrguez2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_elderly&quot;,&quot;label&quot;:&quot;Ariano_2001_elderly&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_elderly.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_reference&quot;,&quot;label&quot;:&quot;Ariano_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ariano2001_young&quot;,&quot;label&quot;:&quot;Ariano_2001_young&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ariano2001_young.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Grimsrud2020_reference&quot;,&quot;label&quot;:&quot;Grimsrud_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Grimsrud2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Vller2019_reference&quot;,&quot;label&quot;:&quot;V\u00f6ller_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Vller2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Pypendop2014_sufentanil`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> This record was reviewed on 2026-11-07 14:24 UTC (Rejected), but the paper was screened again on 2026-11-03 18:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the model structure includes an orphan compartment with no dose path, and a structural rate constant has a dimension mismatch.
+> Sufentanil clearance and rate constant parameters have invalid units, and the model contains an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Pypendop2014_sufentanil" status="rejected" stale="true" population="isoflurane-anesthetized adult cats" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Pypendop2014_sufentanil" status="rejected" stale="false" population="isoflurane-anesthetized adult cats" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokinetics of fentanyl, alfentanil, and sufentanil in isoflurane-anesthetized cats. Journal of veterinary pharmacology and therapeutics 37(1):13–17 (2014).
@@ -17,7 +17,7 @@ Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokin
 
 ## Population and dosing
 
-**Population:** isoflurane-anesthetized adult cats · condition healthy · age group adult · n = 6.
+**Population:** isoflurane-anesthetized adult cats · condition anesthetized · age group adult · n = 6.
 
 > **Species: cat.** This record comes from an animal study (cat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -35,7 +35,7 @@ Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokin
 |---|---|---|---|
 | t 1/2a (min)* | t1/2α | 0.5 | min |
 | t 1/2b (min)* | t1/2β | 6 | min |
-| t 1/2c (min)* | t1/2z | 54 | min |
+| t 1/2c (min)* | t1/2γ | 54 | min |
 | V 2 (L/kg)* | V2 | 0.14 | L/kg |
 | V 3 (L/kg)* | V3 | 0.52 | L/kg |
 | Cl d1 [(mL/min)/kg)] | CL | 41.2 | 13.9-24.3 |
@@ -43,12 +43,12 @@ Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokin
 | K 13 (/min)* | k13 | 0.258 | 0.455-0.908 |
 | MRT (min)* | MRT | 45 | min |
 | V" (litre) | V | 269.7 | litre |
-| clearance, volumes and absorption rate | kabs | 1.0 | h−1 |
+| Pt Number 1 keo Three Doses | kabs | 0.27 | minute -1 |
 | t1pp ranged from | tlag | 15.0 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,11 +58,11 @@ Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokin
 
 ### Reviewer guidance
 
-**The record was rejected because the model structure includes an orphan compartment with no dose path, and a structural rate constant has a dimension mismatch.**
+**Sufentanil clearance and rate constant parameters have invalid units, and the model contains an unreachable compartment.**
 
-The review identified that the model topology contains an unreachable compartment, meaning a specific tissue phase has no connection to the administered fentanyl dose. Additionally, a structural parameter involving a first-order transfer rate constant was flagged for a dimension mismatch, indicating its value cannot physically describe the model's connectivity. The second reader disagreed on the dose compound, suggesting the paper covered fentanyl, alfentanil, and sufentanil, whereas this record isolates fentanyl. Extracted — sufentanil: t1/2α 0.5 min, t1/2β 6 min, t1/2z 54 min, V2 0.14 L/kg, V3 0.52 L/kg, CL 41.2 13.9-24.3, CLnorm 13.9 13.9-24.3, k13 0.258 0.455-0.908, … (+1); fentanyl: V 270 litre, kabs 1 h−1, tlag 15 min.
+The total and normalized clearance values for sufentanil are listed with dimensionless numeric ranges instead of volume per time units, and a transfer rate constant has a similar mismatch. The model topology was rejected because it includes an orphan compartment with no path from the dose. Extracted — sufentanil: t1/2α 0.5 min, t1/2β 6 min, t1/2γ 54 min, V2 0.14 L/kg, V3 0.52 L/kg, CL 41.2 13.9-24.3, CLnorm 13.9 13.9-24.3, k13 0.258 0.455-0.908, … (+1); fentanyl: V 270 litre, kabs 0.27 minute -1, tlag 15 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading fentanyl, alfentanil, sufentanil; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -72,7 +72,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | t 1/2a (min)* | `Q59` · t1/2α | 0.5 | min | 30 | s | min | llm (0.6) | Pypendop_2014_table_1:row6:col3 |
 | t 1/2b (min)* | `Q60` · t1/2β | 6 | min | 360 | s | min | llm (0.6) | Pypendop_2014_table_1:row7:col3 |
-| t 1/2c (min)* | `Q57` · t1/2z | 54 | min | 3240 | s | min | llm (0.6) | Pypendop_2014_table_1:row8:col3 |
+| t 1/2c (min)* | `Q89` · t1/2γ | 54 | min | 3240 | s | min | llm (0.6) | Pypendop_2014_table_1:row8:col3 |
 | V 2 (L/kg)* | `Q64` · V2 | 0.14 | L/kg | 0.0098 | m3 | l/kg | llm (0.6) | Pypendop_2014_table_1:row10:col3 |
 | V 3 (L/kg)* | `Q77` · V3 | 0.52 | L/kg | 0.0364 | m3 | l/kg | llm (0.6) | Pypendop_2014_table_1:row11:col3 |
 | Cl d1 [(mL/min)/kg)] | `Q22` · CL | 41.2 | 13.9-24.3 |  |  | 13.9-24.3 | llm_confirmed (0.6) | Pypendop_2014_table_1:row14:col3 |
@@ -80,7 +80,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | K 13 (/min)* | `Q303` · k13 | 0.258 | 0.455-0.908 |  |  | 0.455-0.908 | llm (0.6) | Pypendop_2014_table_1:row19:col3 |
 | MRT (min)* | `Q53` · MRT | 45 | min | 2700 | s | min | llm_confirmed (0.6) | Pypendop_2014_table_1:row25:col3 |
 | V" (litre) | `Q61` · V | 269.7 | litre | 0.2697 | m3 | L | review_gapfill (0.7) | Bower_1982:review |
-| clearance, volumes and absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Eleveld_2026:review |
+| Pt Number 1 keo Three Doses | `Q49` · kabs | 0.27 | minute -1 | 0.0045 | 1/s | 1/h | review_gapfill (0.7) | Torda_1997:review |
 | t1pp ranged from | `Q83` · tlag | 15.0 | min | 900 | s | h | review_gapfill (0.7) | Andersen_1986:review |
 
 <details class="legend">
@@ -101,7 +101,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - population split: 'sufentanil' subgroup of Pypendop_2014 (paper reports 3 populations: alfentanil, fentanyl, sufentanil)
 - gap-filled Q61 (V) from Bower_1982's review values (primary lacked it)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Torda_1997's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 **Extraction notes:**
@@ -116,14 +116,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.714 (10/14 fields) | 4 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[cl d2 [(ml/min)/kg)]]` | 13.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | fentanyl | fentanyl, alfentanil, sufentanil | mismatch |
+| `gpt-oss-120b` | `parameters[t 1/2c (min)*].parameter_id` | Q89 | Q57 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | fentanyl | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fentanyl | unknown | mismatch |
 
 </details>
 
@@ -143,15 +145,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | fail | [length] ** 3 / [time] | 13.9-24.3 (dimensionless) | ['Pypendop_2014_table_1:row14:col3'] |
 | C5_dimension_Q303 | fail | 1 / [time] | 0.455-0.908 (dimensionless) | ['Pypendop_2014_table_1:row19:col3'] |
 | C5_dimension_Q354 | fail | [length] ** 3 / [time] | 13.9-24.3 (dimensionless) | ['Pypendop_2014_table_1:row15:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Torda_1997:review'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Pypendop_2014_table_1:row25:col3'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Pypendop_2014_table_1:row8:col3'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Pypendop_2014_table_1:row6:col3'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Pypendop_2014_table_1:row7:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Bower_1982:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Pypendop_2014_table_1:row10:col3'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['Pypendop_2014_table_1:row11:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Andersen_1986:review'] |
+| C5_dimension_Q89 | pass | [time] |  | ['Pypendop_2014_table_1:row8:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 41.2 | ['Pypendop_2014_table_1:row14:col3'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 270 L | ['Bower_1982:review'] |
@@ -179,4 +181,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Pypendop2014_sufentanil&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Pypendop2014_sufentanil%0APaper%3A%20Pypendop_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Pypendop2014_sufentanil%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 18:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 04:33 UTC</sub>

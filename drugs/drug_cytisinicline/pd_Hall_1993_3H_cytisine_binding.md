@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;cytisinicline&quot;,&quot;href&quot;:&quot;drugs/drug_cytisinicline/&quot;},{&quot;label&quot;:&quot;Hall_1993 \u00b7 PD [3H]cytisine binding to nicotinic receptors&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# [3H]cytisine binding to nicotinic receptors — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# [3H]cytisine binding to nicotinic receptors — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -61,23 +61,23 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.0 (0/11 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.0 (0/11 fields) | 11 |
 
 <details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | [3H]cytisine | cytisine | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_direction` | unknown | stimulation | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | unknown | emax | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` |  | 147 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 250 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 0.91 +/- 0.04 | 0.95 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q329]` | 0.308 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q330]` | 0.098 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q331]` | 245 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q332].value` | 8.8 | 48 | mismatch |
+| `gpt-oss-120b` | `driver_compound` | [3H]cytisine | cytisine | mismatch |
+| `gpt-oss-120b` | `effect_direction` | unknown | stimulation | mismatch |
+| `gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss-120b` | `model_family` | unknown | emax | mismatch |
+| `gpt-oss-120b` | `parameters[Q321]` |  | 147 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q322]` | 250 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q325].value` | 0.91 +/- 0.04 | 0.95 | mismatch |
+| `gpt-oss-120b` | `parameters[Q329]` | 0.308 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q330]` | 0.098 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q331]` | 245 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q332].value` | 8.8 | 48 | mismatch |
 
 </details>
 

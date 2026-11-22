@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> Intercompartmental clearance and lag time were left at defaults, unsupported by the paper.
+> Givosiran model lacks explicit k12 and Tlag estimates, forcing reliance on library defaults for inter-compartmental clearance.
 
 <div class="pk-model-meta" hidden drug="givosiran" model-id="Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e" status="needs_review" stale="false" population="adults with acute intermittent porphyria" measured-compound="givosiran" parameterization="apparent" topology="2C"></div>
 
@@ -56,9 +56,9 @@ Sten S, Cardilin T, Antonsson M, Gennemark P. Plasma Pharmacokinetics of N-Acety
 
 ### Reviewer guidance
 
-**Intercompartmental clearance and lag time were left at defaults, unsupported by the paper.**
+**Givosiran model lacks explicit k12 and Tlag estimates, forcing reliance on library defaults for inter-compartmental clearance.**
 
-The record defines a two-compartment structure yet lists a third volume of distribution. The missing metabolic link to as(n-1)3’ givosiran was noted by a second reader. Established notes confirm the default intercompartmental clearance values affect the simulated profile without source support. Extracted — givosiran: kabs 0.157 1/h, V1/F 18.1 L, V2/F 1.34e+03 L, V3/F 100 L, CL/F 23.8 L/h, Q/F 3.02 L/h.
+The record notes that k12 and Tlag were set to defaults rather than extracted from the study. This substitution means the simulated profile depends on unverified parameters not supported by the paper's data. Additionally, a second reader disputed the model structure, identifying a missing metabolic link for givosiran. Extracted — givosiran: kabs 0.157 1/h, V1/F 18.1 L, V2/F 1.34e+03 L, V3/F 100 L, CL/F 23.8 L/h, Q/F 3.02 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading givosiran → as(n-1)3’ givosiran (metabolism). That field shapes the model, so the record is marked disputed.
 
@@ -142,16 +142,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=givosiran) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  | 1.079e-09 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=givosiran) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.938, 0 of 1 reader(s) agree | 0.938 | cross-check disputed by a second reader: verdict disputed, agreement 0.938, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  | 1.079e-09 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

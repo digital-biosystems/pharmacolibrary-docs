@@ -4,11 +4,11 @@
 
 # temocapril — `Temocapril_Luo2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 07:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record for temocapril lacks clearance and distribution volume, containing only flumazenil exposure metrics.
+> Record rejected because it lacks clearance or volume parameters, making it a non-compartmental exposure/outcome study rather than a pharmacokinetic model.
 
-<div class="pk-model-meta" hidden drug="temocapril" model-id="Temocapril_Luo2024_reference" status="rejected" stale="true" population="healthy subjects and liver cirrhosis patients (virtual populations, CP-A/B/C)" measured-compound="temocapril and temocaprilat" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="temocapril" model-id="Temocapril_Luo2024_reference" status="rejected" stale="false" population="healthy subjects and liver cirrhosis patients (virtual populations, CP-A/B/C)" measured-compound="temocapril and temocaprilat" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Luo X, Zhang Z, Mu R, Hu G, Liu L, Liu X. Simultaneously Predicting the Pharmacokinetics of CES1-Metabolized Drugs and Their Metabolites Using Physiologically Based Pharmacokinetic Model in Cirrhosis Subjects. Pharmaceutics 16(2) (2024).
@@ -39,7 +39,7 @@ Luo X, Zhang Z, Mu R, Hu G, Liu L, Liu X. Simultaneously Predicting the Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Luo X, Zhang Z, Mu R, Hu G, Liu L, Liu X. Simultaneously Predicting the Pharmaco
 
 ### Reviewer guidance
 
-**Record for temocapril lacks clearance and distribution volume, containing only flumazenil exposure metrics.**
+**Record rejected because it lacks clearance or volume parameters, making it a non-compartmental exposure/outcome study rather than a pharmacokinetic model.**
 
-The model structure includes hydrolysis links for six compounds but provides no elimination clearance or volume of distribution. Extracted parameters report flumazenil AUCt as 0.1600 μg × h/mL and Cmax as 72.1 ng/mL, which do not describe temocapril kinetics. A second reader disagreed on the primary analyte and identified additional AUCt values not present in the record. Extracted — flumazenil: AUCt 0.16 μg × h/mL, Cmax 72.1 ng/mL.
+The record contains no distribution volume or elimination clearance parameters, so it does not represent a compartmental population pharmacokinetic model. Additionally, structural links for unrelated ACE inhibitors and oseltamivir are present, and reported parameters belong to flumazenil rather than temocapril. A second reader noted that AUC and Cmax values exist for flumazenil but were not correctly associated with the primary analyte. Extracted — flumazenil: AUCt 0.16 μg × h/mL, Cmax 72.1 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has temocapril hydrochloride, the second reading temocapril; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

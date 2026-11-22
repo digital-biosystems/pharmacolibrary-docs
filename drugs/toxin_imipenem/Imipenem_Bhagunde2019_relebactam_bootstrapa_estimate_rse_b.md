@@ -157,30 +157,13 @@ All four numeric parameters (CL 7.02, V1 11.06, V2 6.43, Q 10.48) and the covari
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_imipenem/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b_matlab.zip" download>Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_imipenem/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b_matlab_simbio.zip" download>Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_imipenem/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b_sbml.zip" download>Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_imipenem/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b_cellml.zip" download>Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Bhagunde P, Patel P, Lala M, Watson K, Copalu W, Xu M et al. Population Pharmacokinetic Analysis for Imipenem-Relebactam in Healthy Volunteers and Patients With Bacterial Infections. CPT: pharmacometrics & systems pharmacology 8(10):748-758 (2019). [doi:10.1002/psp4.12462](https://doi.org/10.1002/psp4.12462)
-
-**This record:** Pharmacolibrary, model `Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b`. <https://pharmacolibrary.github.io/#/drugs/toxin_imipenem/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b>
-
-```bibtex
-@misc{pharmacolibrary_ImipenemBhagunde2019relebactambootstrapaestimaterseb,
-  title  = {{Pharmacolibrary model Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_imipenem/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b},
-  note   = {Parameters from doi:10.1002/psp4.12462},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

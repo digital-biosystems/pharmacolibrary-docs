@@ -17,7 +17,7 @@ Montazeri A, Boucaud M, Lokiec F, Pinguet F, Culine S, Déporte-Féty R et al. P
 
 ## Population and dosing
 
-**Population:** women with metastatic epithelial ovarian cancer · condition metastatic epithelial ovarian cancer · age group adult · n = The text does not explicitly state the number of subjects in the final analysis. It only mentions that data were obtained in 31 women. However, since it's a population pharmacokinetic study and the abstract is the only source, and no specific number is given for the *analyzed* subset (though 31 is the cohort size), and typically the cohort size is the analysis size unless stated otherwise. But to be strictly accurate, 'unknown' is safer if we don't know if all 31 were included in the final model fitting. Wait, standard practice in such abstracts is that the 31 women are the ones analyzed. I will use 31..
+**Population:** women with metastatic epithelial ovarian cancer · condition metastatic epithelial ovarian cancer · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed topotecan, measured total topotecan.
 

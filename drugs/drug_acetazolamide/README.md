@@ -26,8 +26,8 @@ Acetazolamide is a carbonic anhydrase inhibitor used to treat conditions includi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yano_1998_reference](drugs/drug_acetazolamide/Acetazolamide_Yano1998_reference.md) | — | 1-compartment (no model) | 1 | Yano I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1998) | [10.1007/s002280050422](https://doi.org/10.1007/s002280050422) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yue_2013_reference](drugs/drug_acetazolamide/Acetazolamide_Yue2013_reference.md) | — | 2-compartment (no model) | 8 (+1 cov.) | Yue CS et al., Population pharmacokinetic and pharmaco…, Journal of pharmacy & pharm… (2013) | [10.18433/j3qg7z](https://doi.org/10.18433/j3qg7z) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yano_1998_reference](drugs/drug_acetazolamide/Acetazolamide_Yano1998_reference.md) | — | 1-compartment (no model) | 1 | Yano I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1998) | [10.1007/s002280050422](https://doi.org/10.1007/s002280050422) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yue_2013_reference](drugs/drug_acetazolamide/Acetazolamide_Yue2013_reference.md) | — | 2-compartment (no model) | 8 (+1 cov.) | Yue CS et al., Population pharmacokinetic and pharmaco…, Journal of pharmacy & pharm… (2013) | [10.18433/j3qg7z](https://doi.org/10.18433/j3qg7z) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,18 +36,6 @@ Acetazolamide is a carbonic anhydrase inhibitor used to treat conditions includi
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Heming_2011_HCO3](drugs/drug_acetazolamide/pd_Heming_2011_HCO3.md) | serum bicarbonate ← acetazolamide · indirect response — drug inhibits the loss of serum bicarbonate | — | Heming N et al., Population pharmacodynamic model of bic…, Critical care (London, Engl… (2011) | [10.1186/cc10448](https://doi.org/10.1186/cc10448) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Heming_2014_Bicar_t](drugs/drug_acetazolamide/pd_Heming_2014_Bicar_t.md) | serum bicarbonate ← acetazolamide · indirect response — drug inhibits the production of serum bicarbonate | — | Heming N et al., Population pharmacodynamic modeling and…, PloS one (2014) | [10.1371/journal.pone.0086313](https://doi.org/10.1371/journal.pone.0086313) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yano_1998_IOP](drugs/drug_acetazolamide/pd_Yano_1998_IOP.md) | intraocular pressure ← acetazolamide · direct Emax (saturable) effect | — | Yano I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1998) | [10.1007/s002280050422](https://doi.org/10.1007/s002280050422) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=acetazolamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AQP1 (inhibitor), CA1 (inhibitor), CA12 (inhibitor), CA14 (inhibitor), CA2 (inhibitor), CA3 (inhibitor), CA4 (inhibitor), CA7 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -67,7 +55,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 52 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

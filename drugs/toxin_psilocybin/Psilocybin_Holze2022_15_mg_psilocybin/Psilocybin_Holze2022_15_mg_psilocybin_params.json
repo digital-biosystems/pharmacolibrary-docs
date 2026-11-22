@@ -8,6 +8,18 @@
  "observables": [
   "retainedFraction"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Holze_2022:other_prose",
+    "value_si": 1.8999999999999998e-06
+   },
+   {
+    "source": "Holze_2022:other_prose",
+    "value_si": 1.3e-05
+   }
+  ]
+ },
  "parameters": {
   "A[1]": 1.0,
   "MM": 0.284252,

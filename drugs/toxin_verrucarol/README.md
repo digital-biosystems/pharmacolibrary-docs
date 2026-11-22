@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Verrucarol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Verrucarol_Barel1990_reference&quot;,&quot;label&quot;:&quot;Barel_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_verrucarol/Verrucarol_Barel1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Verrucarol_Barel1990_reference&quot;,&quot;label&quot;:&quot;Barel_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_verrucarol/Verrucarol_Barel1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Verrucarol
 
@@ -31,7 +31,7 @@ Verrucarol is a trichothecene. Trichothecenes are a very large family of chemica
 
 ## Start here
 
-> **Barel_1990_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> dogs, n = 8. [Run it in the simulator](drugs/toxin_verrucarol/Verrucarol_Barel1990_reference.md?tab=Simulation) · [record](drugs/toxin_verrucarol/Verrucarol_Barel1990_reference.md)
+> **Barel_1990_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> dogs, n = 8. [Run it in the simulator](drugs/toxin_verrucarol/Verrucarol_Barel1990_reference.md?tab=Simulation) · [record](drugs/toxin_verrucarol/Verrucarol_Barel1990_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,7 +39,7 @@ Verrucarol is a trichothecene. Trichothecenes are a very large family of chemica
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Barel_1990_reference](drugs/toxin_verrucarol/Verrucarol_Barel1990_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Barel S et al., Pharmacokinetics of the trichothecene m…, Journal of pharmaceutical s… (1990) | [10.1002/jps.2600790619](https://doi.org/10.1002/jps.2600790619) |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Barel_1990_reference](drugs/toxin_verrucarol/Verrucarol_Barel1990_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Barel S et al., Pharmacokinetics of the trichothecene m…, Journal of pharmaceutical s… (1990) | [10.1002/jps.2600790619](https://doi.org/10.1002/jps.2600790619) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

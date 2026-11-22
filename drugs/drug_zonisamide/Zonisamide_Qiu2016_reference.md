@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) and lag time (Tlag) were not estimated from the paper but defaulted, and the peripheral volume (1429 L) is questionable.
+> Zonisamide’s bioavailability F was defaulted rather than estimated; the reported peripheral distribution volume of 1429 L was also disputed.
 
 <div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Qiu2016_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="zonisamide" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Qiu X, Dai Q, Sun F, Liu Y, Yang B, Xiang R et al. Population pharmacokinetics o
 
 ### Reviewer guidance
 
-**Bioavailability (F) and lag time (Tlag) were not estimated from the paper but defaulted, and the peripheral volume (1429 L) is questionable.**
+**Zonisamide’s bioavailability F was defaulted rather than estimated; the reported peripheral distribution volume of 1429 L was also disputed.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. The bioavailability fraction (F) and lag time (Tlag) were not reported, forcing the use of library defaults rather than explicit estimates. Additionally, a second reader could not verify the peripheral volume of distribution value of 1429 L found in the record. Extracted — zonisamide: CL 23.2 L/h, V1 34.5 L, Q 20.2 L/h, kabs 0.026 h(-1), V2 1.43e+03 L.
+Only the paper’s abstract was read, so its summary statistics stood in for a fitted model. F and the absorption lag time Tlag were defaulted rather than explicitly estimated; F used library defaults, not estimates from this paper, and these values affect the simulated profile but are not supported by this paper and need to be extracted or explicitly justified as conventions. The second reader did not accept the reported peripheral volume of 1429 L and disagreed on which parameter represented the central volume of distribution. Extracted — zonisamide: CL 23.2 L/h, V1 34.5 L, Q 20.2 L/h, kabs 0.026 h(-1), V2 1.43e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of peripheral volume of distribution: this record has 1429, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -133,14 +133,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=zonisamide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=zonisamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

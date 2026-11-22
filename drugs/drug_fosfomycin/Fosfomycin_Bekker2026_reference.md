@@ -16,7 +16,7 @@ Bekker A, Panjasawatwong N, Hill LF, Stohr W, Walker AS, Ellis S et al. Pharmaco
 
 ## Population and dosing
 
-**Population:** neonates with suspected sepsis · condition neonatal sepsis · age group neonate · n = — 62 neonates (48/62 [77%] preterm; 48/62 [77%] ≤7 days postnatal age [PNA]) received at least one dose of study antibiotics. Fosfomycin and flomoxef plasma concentrations were best described by a two-compartment and a one-compartment model, respectively, with postmenstrual age and PNA significantly influencing clearance. The probability of target attainment for fosfomycin was 100% for minimum inhibitory concentrations (MICs) of up to 8 mg/L, and for flomoxef, it was 100% for MICs of up to 0.5 mg/L. Adverse events (AEs) were common in this critically ill cohort. Thirteen (21%) neonates developed 19 trial antibiotic-related AEs (17 with grade ≤2, and 2 with grade 3), none of which required modification or discontinuation of allocated treatment. Seven neonates (11.6%) died. In this predominately preterm population, fosfomycin and flomoxef were safe, with drug exposures similar to published studies supporting the proposed doses for the larger, randomized NeoSep1 trial.This study is registered with ISRCTN48721236..
+**Population:** neonates with suspected sepsis · condition neonatal sepsis · age group neonate.
 
 ## Model
 

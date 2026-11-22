@@ -25,7 +25,7 @@ Roxadustat is an anti-anemia medication that treats anemia caused by chronic kid
 
 ## Start here
 
-> **Takada_2022_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> Japanese dialysis-dependent chronic kidney disease patients with anaemia, n = condition. [Run it in the simulator](drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md?tab=Simulation) · [record](drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md)
+> **Takada_2022_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> Japanese dialysis-dependent chronic kidney disease patients with anaemia. [Run it in the simulator](drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md?tab=Simulation) · [record](drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -44,7 +44,7 @@ Roxadustat is an anti-anemia medication that treats anemia caused by chronic kid
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88, Q32 — no SI value to build from</sub> | [↳ liver_cirrhosis_cp_b](drugs/drug_roxadustat/Roxadustat_Czock2022_liver_cirrhosis_cp_b.md) | — | 1-compartment (no model) | 6 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [↳ parameter_value](drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value.md) | — | 1-compartment (no model) | 6 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88, Q32 — no SI value to build from</sub> | [↳ severe_renal_impairment](drugs/drug_roxadustat/Roxadustat_Czock2022_severe_renal_impairment.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Takada_2022_2_reference](drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Takada A et al., Population pharmacokinetics of roxadust…, British journal of clinical… (2022) | [10.1111/bcp.15023](https://doi.org/10.1111/bcp.15023) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Takada_2022_2_reference](drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Takada A et al., Population pharmacokinetics of roxadust…, British journal of clinical… (2022) | [10.1111/bcp.15023](https://doi.org/10.1111/bcp.15023) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Rekić_2021_reference](drugs/drug_roxadustat/Roxadustat_Reki2021_reference.md) | — | 2-compartment (no model) | 3 | Rekić D et al., Pharmacokinetics of Roxadustat: A Popul…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00974-z](https://doi.org/10.1007/s40262-020-00974-z) |
 
 ## Pharmacodynamics (PD)
@@ -53,25 +53,6 @@ Roxadustat is an anti-anemia medication that treats anemia caused by chronic kid
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Czock_2022_EPO](drugs/drug_roxadustat/pd_Czock_2022_EPO.md) | erythropoietin (EPO) ← roxadustat · direct sigmoid Emax (Hill) effect | — | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Czock_2022_Hb](drugs/drug_roxadustat/pd_Czock_2022_Hb.md) | hemoglobin ← roxadustat · direct linear effect | — | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=roxadustat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | testis | `ABCG2` inhibitor | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `SLCO1B1` inhibitor, `UGT1A9` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A6` substrate, `SLC22A8` substrate | DrugBank actor |
-| excretion | liver | `ABCG2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: EGLN1 (inhibitor), EGLN2 (inhibitor), EGLN3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -85,7 +66,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:37 | 1:30 | 6/1/0 | 1/0/0 | 0/0/0 | 119,935/6,142 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 18:37 | 1:30 | 6/1/0 | 2/0/0 | 0/0/0 | 119,935/6,142 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 

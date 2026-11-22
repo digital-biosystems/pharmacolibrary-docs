@@ -16,7 +16,7 @@ Takesh M. Kinetic Modeling Application to (18)F-fluoroethylcholine Positron Emis
 
 ## Population and dosing
 
-**Population:** patients with primary and recurrent prostate cancer · condition prostate cancer · age group adult · n = &gt;=64.
+**Population:** patients with primary and recurrent prostate cancer · condition prostate cancer · age group adult.
 
 ## Model
 

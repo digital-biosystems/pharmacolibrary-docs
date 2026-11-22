@@ -159,30 +159,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_valproic_acid/ValproicAcid_Ma2023_final_final_model_median/ValproicAcid_Ma2023_final_final_model_median_matlab.zip" download>ValproicAcid_Ma2023_final_final_model_median_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_valproic_acid/ValproicAcid_Ma2023_final_final_model_median/ValproicAcid_Ma2023_final_final_model_median_matlab_simbio.zip" download>ValproicAcid_Ma2023_final_final_model_median_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_valproic_acid/ValproicAcid_Ma2023_final_final_model_median/ValproicAcid_Ma2023_final_final_model_median_sbml.zip" download>ValproicAcid_Ma2023_final_final_model_median_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_valproic_acid/ValproicAcid_Ma2023_final_final_model_median/ValproicAcid_Ma2023_final_final_model_median_cellml.zip" download>ValproicAcid_Ma2023_final_final_model_median_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Ma J, Ma J, Fan X, Cai X, Ji H, Li Y et al. Effect of ANKK1 Polymorphisms on Serum Valproic Acid Concentration in Chinese Han Adult Patients in the Early Postoperative Period. Neurology and therapy 12(1):197-209 (2023). [doi:10.1007/s40120-022-00419-8](https://doi.org/10.1007/s40120-022-00419-8)
-
-**This record:** Pharmacolibrary, model `ValproicAcid_Ma2023_final_final_model_median`. <https://pharmacolibrary.github.io/#/drugs/toxin_valproic_acid/ValproicAcid_Ma2023_final_final_model_median>
-
-```bibtex
-@misc{pharmacolibrary_ValproicAcidMa2023finalfinalmodelmedian,
-  title  = {{Pharmacolibrary model ValproicAcid_Ma2023_final_final_model_median}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_valproic_acid/ValproicAcid_Ma2023_final_final_model_median},
-  note   = {Parameters from doi:10.1007/s40120-022-00419-8},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

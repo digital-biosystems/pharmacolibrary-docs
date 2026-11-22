@@ -25,7 +25,7 @@ Phenoperidine is an opioid anesthetic used as a general anesthetic. It is classi
 
 ## Start here
 
-> **Fischler_1985_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> anaesthetized patients undergoing general surgery, n = The mean distribution half-life (T1/2 alpha) for the five patients was short (2.2 min); the mean elimination half-life (T1/2 beta) was 193 min. The mean whole body clearance was 22 ml min-1 kg-1 and the apparent steady state distribution volume (VSS) was 5.7 litre kg-1. Secondary concentration peaks occurred in all patients; in two patients these were substantial and occurred 80 min after injection.. [Run it in the simulator](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md?tab=Simulation) · [record](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md)
+> **Fischler_1985_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> anaesthetized patients undergoing general surgery. [Run it in the simulator](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md?tab=Simulation) · [record](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Phenoperidine is an opioid anesthetic used as a general anesthetic. It is classi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Fischler_1985_reference](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fischler M et al., Pharmacokinetics of phenoperidine in an…, British journal of anaesthe… (1985) | [10.1093/bja/57.9.872](https://doi.org/10.1093/bja/57.9.872) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Fischler_1985_reference](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fischler M et al., Pharmacokinetics of phenoperidine in an…, British journal of anaesthe… (1985) | [10.1093/bja/57.9.872](https://doi.org/10.1093/bja/57.9.872) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

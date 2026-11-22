@@ -6,9 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Mandelonitrile" model-id="Mandelonitrile_Dirikolu2003_reference" status="extracted" stale="false" population="four horses" measured-compound="Cyanide" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Mandelonitrile" model-id="Mandelonitrile_Dirikolu2003_reference" status="not_simulated" stale="false" population="four horses" measured-compound="Cyanide" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Dirikolu L, Hughes C, Harkins D, Boyles J, Bosken J, Lehner F et al. The toxicokinetics of cyanide and mandelonitrile in the horse and their relevance to the mare reproductive loss syndrome. Toxicology mechanisms and methods 13(3):199–211 (2003).
@@ -30,6 +28,8 @@ Dirikolu L, Hughes C, Harkins D, Boyles J, Bosken J, Lehner F et al. The toxicok
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | distribution (alpha) phase half-life | t1/2α | 0.74 | h |
@@ -50,7 +50,13 @@ Dirikolu L, Hughes C, Harkins D, Boyles J, Bosken J, Lehner F et al. The toxicok
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model was built but has not been simulated yet.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mandelonitrile's own; they describe Cyanide.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -117,6 +123,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q65 | pass | volume within physiological range | 155 L | ['Dirikolu_2003:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

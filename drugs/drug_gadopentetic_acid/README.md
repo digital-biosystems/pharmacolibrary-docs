@@ -28,7 +28,7 @@ Gadopentetic acid is a paramagnetic contrast agent used for magnetic resonance i
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Daldrup_1998_reference](drugs/drug_gadopentetic_acid/GadopenteticAcid_Daldrup1998_reference.md) | — | 1-compartment (no model) | 0 | Daldrup HE et al., Quantification of the extraction fracti…, Magnetic resonance in medic… (1998) | [10.1002/mrm.1910400406](https://doi.org/10.1002/mrm.1910400406) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jurkiewicz_2022_reference](drugs/drug_gadopentetic_acid/GadopenteticAcid_Jurkiewicz2022_reference.md) | — | 2-compartment (no model) | 3 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/rli.0000000000000865](https://doi.org/10.1097/rli.0000000000000865) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jurkiewicz_2022_reference](drugs/drug_gadopentetic_acid/GadopenteticAcid_Jurkiewicz2022_reference.md) | — | 2-compartment (no model) | 3 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/rli.0000000000000865](https://doi.org/10.1097/rli.0000000000000865) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Scala_2018_reference](drugs/drug_gadopentetic_acid/GadopenteticAcid_Scala2018_reference.md) | — | 2-compartment (no model) | 3 | Scala M et al., A Pharmacokinetics, Efficacy, and Safet…, Investigative radiology (2018) | [10.1097/rli.0000000000000412](https://doi.org/10.1097/rli.0000000000000412) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Steingoetter_2011_reference](drugs/drug_gadopentetic_acid/GadopenteticAcid_Steingoetter2011_reference.md) | — | 1-compartment (no model) | 6 | Steingoetter A et al., Assessing antiangiogenic therapy respon…, PloS one (2011) | [10.1371/journal.pone.0026366](https://doi.org/10.1371/journal.pone.0026366) |
 
@@ -39,16 +39,6 @@ Gadopentetic acid is a paramagnetic contrast agent used for magnetic resonance i
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Akkemik_2010_6_phosphogluconate_dehydrogenase](drugs/drug_gadopentetic_acid/pd_Akkemik_2010_6_phosphogluconate_dehydrogenase.md) | erythrocyte 6-phosphogluconate dehydrogenase activity ← gadopentetic acid · inhibition effect | — | Akkemik E et al., Effects of some drugs on human erythroc…, Journal of enzyme inhibitio… (2010) | [10.3109/14756360903257900](https://doi.org/10.3109/14756360903257900) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Beydemir_2021_PON1](drugs/drug_gadopentetic_acid/pd_Beydemir_2021_PON1.md) | PON1 activity ← gadopentetic acid · inhibition effect | — | Beydemir Ş et al., Gadolinium-based contrast agents: in vi…, Drug and chemical toxicology (2021) | [10.1080/01480545.2019.1620266](https://doi.org/10.1080/01480545.2019.1620266) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Karaman_2012_GR](drugs/drug_gadopentetic_acid/pd_Karaman_2012_GR.md) | human erythrocyte glutathione reductase enzyme activity ← gadopentetic acid · inhibition effect | — | Karaman M et al., In vitro effects of some drugs on human…, Journal of enzyme inhibitio… (2012) | [10.3109/14756366.2011.572879](https://doi.org/10.3109/14756366.2011.572879) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gadopentetic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: PGD (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -68,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 62 matched, 58 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 1
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

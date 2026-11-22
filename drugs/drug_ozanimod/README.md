@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ozanimod&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP_2&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP_3&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ozanimod
 
@@ -23,30 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Briggs_2021_QTcP](drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md) | QTcP ← Ozanimod · direct Emax (saturable) effect | ▶ model + simulator | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_2](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md) | QTcP ← CC112273 · direct Emax (saturable) effect | ▶ model + simulator | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_3](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md) | QTcP ← CC1084037 · direct Emax (saturable) effect | ▶ model + simulator | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ozanimod).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | brain | `MAOB` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `NAT2` substrate | DrugBank actor |
-| metabolism | platelet | `MAOB` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `NAT2` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADH5 (substrate), AKR1C1 (substrate), AKR1C2 (substrate), ALDH3A2 (substrate), S1PR1 (target), S1PR5 (target).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Briggs_2021_QTcP](drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md) | QTcP ← Ozanimod · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_2](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md) | QTcP ← CC112273 · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_3](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md) | QTcP ← CC1084037 · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,7 +38,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:07 | 0:31 | 0/0/0 | 1/0/0 | 0/0/0 | 23,764/2,496 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 00:07 | 0:31 | 0/0/0 | 1/2/0 | 0/0/0 | 23,764/2,496 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 

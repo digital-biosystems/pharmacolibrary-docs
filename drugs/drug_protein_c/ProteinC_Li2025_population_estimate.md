@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 population_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # protein C — `ProteinC_Li2025_population_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model does not reproduce the paper's terminal half-life (model/paper ratio 2.24).
+> This record was reviewed on 2026-11-07 15:11 UTC (Needs review), but the paper was screened again on 2026-10-05 15:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model does not reproduce the paper's terminal half-life (model/paper ratio 2.24).
 
-<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025_population_estimate" status="needs_review" stale="false" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025_population_estimate" status="needs_review" stale="true" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intravenous protein C concentrate in protein C deficiency: implications for treatment initiation and maintenance. Research and practice in thrombosis and haemostasis 9(3):102859 (2025).
@@ -17,7 +17,7 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 
 ## Population and dosing
 
-**Population:** patients with severe congenital or acquired protein C deficiency · condition protein C deficiency · age group mixed · n = &gt;=58.
+**Population:** patients with severe congenital or acquired protein C deficiency · condition protein C deficiency · age group mixed.
 
 **Dosing:** 45, 60, 80, 120 IU/kg, iv, multiple, every 12 h.
 
@@ -42,7 +42,7 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — protein c: CL 7.14 dL/h, V 60.7 dL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -119,17 +119,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.643 (9/14 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.643 (9/14 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl].rse_percent` |  | 6.76 | mismatch |
-| `gpt-oss:120b` | `parameters[effect_of_age_on_endo].rse_percent` |  | 12.7 | mismatch |
-| `gpt-oss:120b` | `parameters[theta_v_age].rse_percent` |  | -32.8 | mismatch |
-| `gpt-oss:120b` | `parameters[vd].rse_percent` |  | 5.07 | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | protein C | protein C concentrate | mismatch |
+| `gpt-oss-120b` | `parameters[cl].rse_percent` |  | 6.76 | mismatch |
+| `gpt-oss-120b` | `parameters[effect_of_age_on_endo].rse_percent` |  | 12.7 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v_age].rse_percent` |  | -32.8 | mismatch |
+| `gpt-oss-120b` | `parameters[vd].rse_percent` |  | 5.07 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | protein C | protein C concentrate | mismatch |
 
 </details>
 

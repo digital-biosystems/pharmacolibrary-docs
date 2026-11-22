@@ -4,11 +4,11 @@
 
 # quinupramine — `Quinupramine_Bouquet1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-06 23:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because it applies double correction to quinupramine parameters by including bioavailability F=0.75 alongside apparent volume and half-life.
+> Quinupramine's apparent parameters (F, V/F) cause a coherence violation by double-correcting for bioavailability in an abstract-only record.
 
-<div class="pk-model-meta" hidden drug="quinupramine" model-id="Quinupramine_Bouquet1982_reference" status="rejected" stale="true" population="healthy adults" measured-compound="quinupramine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinupramine" model-id="Quinupramine_Bouquet1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="quinupramine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bouquet S, Lefebvre MA, Girault J, Fourtillan JB. [Crossover pharmacokinetic study of quinupramine in 6 subjects]. L'Encephale 8(4):449–463 (1982).
@@ -37,7 +37,7 @@ Bouquet S, Lefebvre MA, Girault J, Fourtillan JB. [Crossover pharmacokinetic stu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Bouquet S, Lefebvre MA, Girault J, Fourtillan JB. [Crossover pharmacokinetic stu
 
 ### Reviewer guidance
 
-**The record is rejected because it applies double correction to quinupramine parameters by including bioavailability F=0.75 alongside apparent volume and half-life.**
+**Quinupramine's apparent parameters (F, V/F) cause a coherence violation by double-correcting for bioavailability in an abstract-only record.**
 
-The abstract-only source provided apparent pharmacokinetic metrics (V/F=34.2 l/kg, t1/2z=33.5 h) that inherently account for absorption. Listing absolute bioavailability F=0.75 alongside these values creates a logical inconsistency. A second reader disputed the apparent parameterization, suggesting the data may require mechanistic handling instead. Extracted — quinupramine: Fab 0.75 F, AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h.
+The record pairs absolute bioavailability (0.75) with apparent volume of distribution (34.2 l.kg-1), creating a double correction inconsistency. Because the source is abstract-only, these summary statistics stand in for a fitted model without full parameter estimation. A second reader disputed all extracted values, marking parameters as null and questioning the apparent parameterization. Extracted — quinupramine: Fab 0.75 F, AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quinupramine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 

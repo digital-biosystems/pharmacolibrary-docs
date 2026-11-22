@@ -4,11 +4,11 @@
 
 # armodafinil — `Armodafinil_Willavize2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 00:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected due to unreachable metabolites and a dimension mismatch on armodafinil's volume of distribution parameter.
+> Armodafinil’s reported steady-state AUC of 16.4% has a unit-dimension mismatch; abstract-only reporting and unlinked metabolites also contributed to rejection.
 
-<div class="pk-model-meta" hidden drug="armodafinil" model-id="Armodafinil_Willavize2017_reference" status="rejected" stale="true" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="armodafinil" model-id="Armodafinil_Willavize2017_reference" status="rejected" stale="false" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Modeling of Armodafinil and Its Major Metabolites. Journal of clinical pharmacology 57(2):255–265 (2017).
@@ -37,7 +37,7 @@ Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Model
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Model
 
 ### Reviewer guidance
 
-**Record rejected due to unreachable metabolites and a dimension mismatch on armodafinil's volume of distribution parameter.**
+**Armodafinil’s reported steady-state AUC of 16.4% has a unit-dimension mismatch; abstract-only reporting and unlinked metabolites also contributed to rejection.**
 
-The record, built from the abstract alone, lists two metabolites with no defined kinetic links from the parent drug, making them unreachable from the dose. Additionally, the central volume of distribution (Vc/F) was extracted as 45 L, causing a structural dimension mismatch in the model. A secondary review disagreed on parameter assignments, failing to recognize the recorded clearance and volume values. Extracted — armodafinil: CL/F 2.01 L/h, V1/F 45 L, t1/2ka 0.226 hours, AUCSS 16.4 %.
+The record gives AUCSS as 16.4% (dimensionless), although the required dimension is mass × time / length³. Both metabolites are listed with zero compartments, and their metabolism links have unknown parameters, leaving them without a path from the dose. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — armodafinil: CL/F 2.01 L/h, V1/F 45 L, t1/2ka 0.226 hours, AUCSS 16.4 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of armodafinil apparent oral clearance: this record has none, the second reading 2.01; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

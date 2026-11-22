@@ -5,11 +5,11 @@
 
 # paclitaxel — `Paclitaxel_Tsushima2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:25 UTC (Rejected), but the paper was screened again on 2026-09-15 20:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The three-compartment model's intercompartmental clearance Q3 (33.5 L/h) has incompatible dimensions with the one-compartment structure.
+> The record was rejected because Vmax has incompatible dimensions for a structural parameter.
 
-<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Tsushima2020_reference" status="rejected" stale="true" population="adults with metastatic solid cancer" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Tsushima2020_reference" status="rejected" stale="false" population="adults with metastatic solid cancer" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 not matched (stem Tsushima_2020)
@@ -45,7 +45,7 @@ not matched (stem Tsushima_2020)
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,9 +55,9 @@ not matched (stem Tsushima_2020)
 
 ### Reviewer guidance
 
-**The three-compartment model's intercompartmental clearance Q3 (33.5 L/h) has incompatible dimensions with the one-compartment structure.**
+**The record was rejected because Vmax has incompatible dimensions for a structural parameter.**
 
-The record lists a second peripheral compartment volume V3 (61.2 L) and distribution clearance Q3, which contradict the defined one-compartment topology. Additionally, the BSA exponent for V3 (0.957) conflicts with a second reader's finding that this parameter was missing. Since the data derives from the abstract alone, these values represent summary statistics rather than fitted model parameters. Extracted — paclitaxel: CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h, V3 61.2 L.
+The review identified a dimension mismatch where the Vmax unit of μg/mL/h conflicts with the expected mass/time dimension. Additionally, the model was built from abstract-only data, meaning reported summary statistics stood in for a fitted model. The second reader also disagreed on the presence and values of the BSA coefficients for clearance and volume. Extracted — paclitaxel: CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h, V3 61.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θbsaoncl: this record has none, the second reading 1.15; it also differs on 1 more field. That field does not shape the model.
 

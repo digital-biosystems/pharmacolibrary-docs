@@ -5,11 +5,11 @@
 
 # cobicistat — `Cobicistat_Overbeek2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:21 UTC (Needs review), but the paper was screened again on 2026-10-07 15:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; cLint has no unit.
+> This paper's disposition core is incomplete; cLint has no unit.
 
-<div class="pk-model-meta" hidden drug="cobicistat" model-id="Cobicistat_Overbeek2025_reference" status="needs_review" stale="true" population="healthy volunteers and patients with rheumatoid arthritis, cancer, or HIV infection" measured-compound="cobicistat" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cobicistat" model-id="Cobicistat_Overbeek2025_reference" status="needs_review" stale="false" population="healthy volunteers and patients with rheumatoid arthritis, cancer, or HIV infection" measured-compound="cobicistat" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Overbeek JK, van Erp NP, Burger DM, den Broeder AA, Koolen SLW, Huitema ADR et al. Population Pharmacokinetics of Cobicistat and its Effect on the Pharmacokinetics of the Anticancer Drug Olaparib. Clinical pharmacokinetics 64(3):425–435 (2025).
@@ -41,7 +41,7 @@ Overbeek JK, van Erp NP, Burger DM, den Broeder AA, Koolen SLW, Huitema ADR et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Model rejected because the metabolite formate is unlinked, lacking a defined clearance path from the cefamandole nafate dose.
+> Cefamandole was rejected because the cefamandole nafate-to-cefamandole hydrolysis-rate parameter has no reported value, leaving cefamandole without a supported path from the dose.
 
 <div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Nielsen1979_rate_constant" status="rejected" stale="false" population="dialysis patients and subjects with normal renal function" measured-compound="cefamandole" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -16,7 +16,7 @@ Nielsen RL, Wolen R, Luft FC, Ozawa T. Hydrolysis of cefamandole nafate in dialy
 
 ## Population and dosing
 
-**Population:** dialysis patients and subjects with normal renal function · condition renal impairment · age group adult · n = &gt;.
+**Population:** dialysis patients and subjects with normal renal function · condition renal impairment · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed cefamandole nafate, measured cefamandole.
 
@@ -48,13 +48,13 @@ Nielsen RL, Wolen R, Luft FC, Ozawa T. Hydrolysis of cefamandole nafate in dialy
 
 ### Reviewer guidance
 
-**Model rejected because the metabolite formate is unlinked, lacking a defined clearance path from the cefamandole nafate dose.**
+**Cefamandole was rejected because the cefamandole nafate-to-cefamandole hydrolysis-rate parameter has no reported value, leaving cefamandole without a supported path from the dose.**
 
-The record links cefamandole nafate to formate via hydrolysis but specifies no rate parameter or volume for the formate compartment, leaving it mathematically unreachable. Consequently, the formate metabolite constitutes an orphan node with no path to eliminate the substance from the system. This structural defect in the hydrolysis branch prevents valid simulation of the model. Extracted — cefamandole: Q2 0.292 L/h, V 17.9 liters.
+The record identifies cefamandole as formed from cefamandole nafate, but supplies no parameter value for the hydrolysis links to cefamandole or formate; the reported 0.292 L/h is intercompartmental clearance, not a hydrolysis rate. The second reader disputed the dose compound and measured compound and did not accept either hydrolysis link. Extracted — cefamandole: Q2 0.292 L/h, V 17.9 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefamandole nafate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -16,7 +16,7 @@ Guk J, Son H, Chae DW, Park K. Quantitative Assessment of Food Effect on the Pha
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=79.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 

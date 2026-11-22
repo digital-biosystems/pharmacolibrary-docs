@@ -4,18 +4,18 @@
 
 # fenquizone — `Fenquizone_Maggi1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:54 UTC (Rejected), but the paper was screened again on 2026-10-06 17:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="fenquizone" model-id="Fenquizone_Maggi1985_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="fenquizone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fenquizone" model-id="Fenquizone_Maggi1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="fenquizone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Maggi GC, Donati C, Gueli Alletti D. Single-dose pharmacokinetics of fenquizone in healthy volunteers. Arzneimittel-Forschung 35(6):994–998 (1985).
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = &gt;=6.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -37,7 +37,7 @@ Maggi GC, Donati C, Gueli Alletti D. Single-dose pharmacokinetics of fenquizone 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Maggi GC, Donati C, Gueli Alletti D. Single-dose pharmacokinetics of fenquizone 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fenquizone: t1/2α 1 h, t1/2β 17 h, t1/2z 18 h, CLR 220 ml/min, kabs 1.06e+03 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent distribution volume: this record has none, the second reading 686; it also differs on 3 more fields. That field does not shape the model.
 

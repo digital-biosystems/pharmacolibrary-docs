@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bicalutamide model with volume of distribution 55948 mL was held back due to unacceptable parameter deviations.
+> Bicalutamide record was held back because a second reader disputed the dose compound and primary analyte identification.
 
 <div class="pk-model-meta" hidden drug="bicalutamide" model-id="Bicalutamide_Ozaksun2025_reference" status="needs_review" stale="false" population="healthy males" measured-compound="bicalutamide" parameterization="apparent" topology="1C"></div>
 
@@ -51,9 +51,9 @@ Ozaksun NT, Incecayir T. Developing In Vitro-In Vivo Correlation for Bicalutamid
 
 ### Reviewer guidance
 
-**Bicalutamide model with volume of distribution 55948 mL was held back due to unacceptable parameter deviations.**
+**Bicalutamide record was held back because a second reader disputed the dose compound and primary analyte identification.**
 
-The record lists the apparent volume of distribution as 55948 mL and the elimination rate constant as 0.00910 h-1. Both parameters were flagged as not acceptable in the deviation check. The model builder also used a default value for the lag time instead of an explicit estimate. Extracted — bicalutamide: kabs 0.0485 1/h, kel 0.0091 1/h, V/F 5.59e+04 mL.
+The second reader identified the dose compound and primary analyte as unknown, while this record specifies both as bicalutamide. This disagreement resulted in a cross-check agreement of only 0.8, with 0 of 1 reader(s) agreeing. The model used default values for lag time and assumed full bioavailability, but the primary cause for the hold was the disputed structural identification. Extracted — bicalutamide: kabs 0.0485 1/h, kel 0.0091 1/h, V/F 5.59e+04 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bicalutamide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -139,16 +139,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
-| T3_output_variable | pass | C_central (measured=bicalutamide) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-001: not acceptable; dev-002: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=bicalutamide) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

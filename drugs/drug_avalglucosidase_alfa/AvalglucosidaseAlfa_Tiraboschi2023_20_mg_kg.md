@@ -16,7 +16,7 @@ Tiraboschi G, Marchionni D, Tuffal G, Fabre D, Martinez JM, Haack KA et al. Popu
 
 ## Population and dosing
 
-**Population:** pediatric and adult patients with Pompe disease · condition Pompe disease · age group mixed · n = &gt;=91.
+**Population:** pediatric and adult patients with Pompe disease · condition Pompe disease · age group mixed.
 
 **Dosing:** 1400, 2800 mg, iv, multiple, every 336 h.
 

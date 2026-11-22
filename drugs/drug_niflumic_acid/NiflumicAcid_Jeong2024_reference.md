@@ -4,11 +4,11 @@
 
 # niflumic acid — `NiflumicAcid_Jeong2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 01:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for niflumic acid was rejected because the kabs parameter has a clearance unit (L/h) and the metabolite link lacks a rate constant.
+> The absorption rate constant for niflumic acid has a dimension mismatch, using L/h instead of 1/h.
 
-<div class="pk-model-meta" hidden drug="niflumic acid" model-id="NiflumicAcid_Jeong2024_reference" status="rejected" stale="true" population="healthy Korean men" measured-compound="morningumate" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="niflumic acid" model-id="NiflumicAcid_Jeong2024_reference" status="rejected" stale="false" population="healthy Korean men" measured-compound="morningumate" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate in healthy Korean men: extending pharmacometrics analysis to niflumic acid, its major active metabolite. Naunyn-Schmiedeberg's archives of pharmacology 397(2):843–856 (2024).
@@ -41,7 +41,7 @@ Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +51,9 @@ Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate 
 
 ### Reviewer guidance
 
-**The record for niflumic acid was rejected because the kabs parameter has a clearance unit (L/h) and the metabolite link lacks a rate constant.**
+**The absorption rate constant for niflumic acid has a dimension mismatch, using L/h instead of 1/h.**
 
-The absorption rate constant is recorded with a value of 9.89 L/h, a unit appropriate for clearance but dimensionally incorrect for a rate constant. Furthermore, the metabolic link from morningumate to niflumic acid is defined without a specific link parameter, leaving the metabolite compartment orphaned from the parent. A secondary reader disagreed on several parameter values, including the presence of a volume of distribution adjustment and the specific absorption rate constants. Extracted — niflumic acid: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, Css_ratio 378 mL/h, kabs 9.89 L/h.
+The record lists the absorption rate constant (kabs) with a value of 9.89 and unit L/h, which conflicts with the required reciprocal time dimension. Additionally, the metabolite link from morningumate to niflumic acid was flagged as an unlinked metabolite. The Css_ratio parameter is assigned the label tvCL p /F, indicating a misidentification of a drug interaction parameter as a clearance term. Extracted — niflumic acid: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, Css_ratio 378 mL/h, kabs 9.89 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has morningumate, the second reading morni umate; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

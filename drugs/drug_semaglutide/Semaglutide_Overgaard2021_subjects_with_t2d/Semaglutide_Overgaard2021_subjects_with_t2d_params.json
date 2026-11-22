@@ -8,7 +8,7 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
+ "paper_doses_kind": "range",
  "paper_doses_mg": [
   5.0,
   10.0

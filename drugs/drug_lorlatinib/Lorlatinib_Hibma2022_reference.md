@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The lorlatinib record was held back because absorption rate constant ka and lag time Tlag were left at defaults rather than using values from Hibma_2022.
+> Lorlatinib’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.
 
 <div class="pk-model-meta" hidden drug="lorlatinib" model-id="Lorlatinib_Hibma2022_reference" status="needs_review" stale="false" population="healthy participants" measured-compound="lorlatinib" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Hibma JE, O'Gorman M, Nepal S, Pawlak S, Ginman K, Pithavala YK. Evaluation of t
 
 ### Reviewer guidance
 
-**The lorlatinib record was held back because absorption rate constant ka and lag time Tlag were left at defaults rather than using values from Hibma_2022.**
+**Lorlatinib’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.**
 
-The record provides clearance of 11.0 L/h and volume of 380.8715 L but omits explicit estimates for ka and Tlag. Consequently, the model builder applied default values for these parameters instead of using data reported in the source text. This substitution means the simulated absorption profile relies on arbitrary values unsupported by the Hibma_2022 data. Extracted — lorlatinib: CL/F 11 L/h, V/F 381 L.
+Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by this paper. Tlag was also defaulted, and first-order depot absorption was assumed with apparent parameterization (F=1, Fm=1, and no molar correction). The second reader disagreed on two other recorded values: 90 versus 97 and 97 versus 100. Extracted — lorlatinib: CL/F 11 L/h, V/F 381 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q369: this record has none, the second reading 90; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -120,15 +120,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=lorlatinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=lorlatinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;danicopan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chen_2026_AP&quot;,&quot;label&quot;:&quot;Chen_2026 \u00b7 AP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_danicopan/pd_Chen_2026_AP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # danicopan
 
@@ -23,24 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Chen_2026_AP](drugs/drug_danicopan/pd_Chen_2026_AP.md) | alternative pathway (AP) activity ← danicopan · direct Emax (saturable) effect | ▶ model + simulator | Chen J et al., Population PK-PD Modeling of Danicopan…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70209](https://doi.org/10.1002/psp4.70209) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=danicopan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CFD (inhibitor).</sub>
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Chen_2026_AP](drugs/drug_danicopan/pd_Chen_2026_AP.md) | alternative pathway (AP) activity ← danicopan · direct Emax (saturable) effect | — | Chen J et al., Population PK-PD Modeling of Danicopan…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70209](https://doi.org/10.1002/psp4.70209) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

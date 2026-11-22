@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Inter-compartmental rate constants k12 and k21 were left at library defaults, and all reported parameters are summary statistics from an abstract-only record.
+> Eperisone’s k12 and k21 lack paper-based estimates; the reported CL/F of 39.24 L/h comes from abstract-only statistics, so the model was held back.
 
 <div class="pk-model-meta" hidden drug="eperisone" model-id="Eperisone_Baek2021_reference" status="needs_review" stale="false" population="healthy Korean volunteers" measured-compound="eperisone" parameterization="apparent" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Baek IH, Back HM, Chae JW, Ha ES, Park H, Choi DH et al. Pharmacokinetics of epe
 
 ## Population and dosing
 
-**Population:** healthy Korean volunteers · condition healthy · age group adult · n = &gt;$1.0M.
+**Population:** healthy Korean volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -51,13 +51,13 @@ Baek IH, Back HM, Chae JW, Ha ES, Park H, Choi DH et al. Pharmacokinetics of epe
 
 ### Reviewer guidance
 
-**Inter-compartmental rate constants k12 and k21 were left at library defaults, and all reported parameters are summary statistics from an abstract-only record.**
+**Eperisone’s k12 and k21 lack paper-based estimates; the reported CL/F of 39.24 L/h comes from abstract-only statistics, so the model was held back.**
 
-The inter-compartmental clearance and distribution rate constants between the central and peripheral compartments were not extracted from the source text, leaving them at placeholder values. Because the record is based solely on the paper's abstract, the reported clearance, volume, and absorption values are population summary statistics rather than fitted model parameters. A second reader failed to identify the specific dose compound, primary analyte, or any of the extracted parameter values, confirming the lack of explicit data support in the source. Extracted — eperisone: t1/2z 3.81 h, CL/F 39.2 L/h, V/F 39.2 L, kabs 1.5 h-1, V1/F 86.2 L.
+K12 and k21 use library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper. Because only the abstract was read, reported summary statistics stood in for a fitted model; the record also assumes F=1 and Fm=1, with no molar correction. A second reader disputed the record, with agreement of 0.154 and no reader agreeing. Extracted — eperisone: t1/2z 3.81 h, CL/F 39.2 L/h, V/F 39.2 L, kabs 1.5 h-1, V1/F 86.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eperisone, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -153,15 +153,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=eperisone) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=eperisone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

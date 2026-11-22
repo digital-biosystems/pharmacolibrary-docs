@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record substitutes the steady-state volume of distribution for the central volume, distorting the early distribution phase of racemic etodolac.
+> The etodolac clearance and volume parameters were extracted from abstract summary statistics, leading to a 0.375 agreement disagreement.
 
 <div class="pk-model-meta" hidden drug="etodolac" model-id="Etodolac_de2017_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="R-etodolac and S-etodolac" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ de Miranda Silva C, Rocha A, Tozatto E, da Silva LM, Donadi EA, Dalla Costa T et
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = in the analysis (a plain integer), or unknown.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed racemic etodolac, measured R-etodolac and S-etodolac.
 
@@ -50,9 +50,9 @@ de Miranda Silva C, Rocha A, Tozatto E, da Silva LM, Donadi EA, Dalla Costa T et
 
 ### Reviewer guidance
 
-**The record substitutes the steady-state volume of distribution for the central volume, distorting the early distribution phase of racemic etodolac.**
+**The etodolac clearance and volume parameters were extracted from abstract summary statistics, leading to a 0.375 agreement disagreement.**
 
-The record was built from the abstract alone, so summary statistics for etodolac stood in for a fitted model. The builder replaced the central volume of distribution with the steady-state volume of distribution (14.6 L) because the central volume was not reported. This deviation means the model reproduces total clearance (2.21 L/h) and terminal half-life but fails to capture the early distribution phase. Extracted — R-etodolac and S-etodolac: CL 2.21 L/h, Vss 14.6 L.
+Because only the paper's abstract was read, the reported summary statistics stand in for a fitted model. The second reader disagreed on the specific values 2.21 L/h and 14.6 L for clearance and volume. Consequently, the cross-check failed with 0 of 1 readers agreeing. Extracted — R-etodolac and S-etodolac: CL 2.21 L/h, Vss 14.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has racemic etodolac, the second reading etodolac (racemic); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -131,14 +131,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=R-etodolac and S-etodolac) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | vss_as_v: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=R-etodolac and S-etodolac) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

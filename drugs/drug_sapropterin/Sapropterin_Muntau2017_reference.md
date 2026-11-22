@@ -5,11 +5,11 @@
 
 # sapropterin — `Sapropterin_Muntau2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:34 UTC (Rejected), but the paper was screened again on 2026-10-05 11:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sapropterin CL/F (2789 L/h) and V/F (3870 L) were rejected due to a dimension mismatch involving unconverted units.
+> Sapropterin C0 has a dimension mismatch: its unit μg/L conflicts with the required [mass]*[time]/[length]³.
 
-<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="true" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="false" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Muntau AC, Burlina A, Eyskens F, Freisinger P, De Laet C, Leuzzi V et al. Efficacy, safety and population pharmacokinetics of sapropterin in PKU patients &lt;4 years: results from the SPARK open-label, multicentre, randomized phase IIIb trial. Orphanet journal of rare diseases 12(1):47 (2017).
@@ -43,7 +43,7 @@ Muntau AC, Burlina A, Eyskens F, Freisinger P, De Laet C, Leuzzi V et al. Effica
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +53,9 @@ Muntau AC, Burlina A, Eyskens F, Freisinger P, De Laet C, Leuzzi V et al. Effica
 
 ### Reviewer guidance
 
-**Sapropterin CL/F (2789 L/h) and V/F (3870 L) were rejected due to a dimension mismatch involving unconverted units.**
+**Sapropterin C0 has a dimension mismatch: its unit μg/L conflicts with the required [mass]*[time]/[length]³.**
 
-The record lists sapropterin clearance and volume of distribution as 2789 L/h and 3870 L. One of these structural parameters used a unit that could not be converted to standard SI units. This prevented a valid dimensional check, causing the model to be rejected. Extracted — sapropterin: CL/F 2.79e+03 L/h, V/F 3.87e+03 L, kabs 0.234 1/h, tlag 0.342 h, C0 12.6 μg/L.
+The record lists C0 as 12.6 μg/L, an extrapolated concentration at time zero. The review found a dimension mismatch where the reported unit dimension conflicted with the parameter's expected dimensions. Additionally, the unit μg/L could not be converted to standard SI units, preventing further analysis. Extracted — sapropterin: CL/F 2.79e+03 L/h, V/F 3.87e+03 L, kabs 0.234 1/h, tlag 0.342 h, C0 12.6 μg/L.
 
 <sub>reviewed by qwen3.8-27b</sub>
 

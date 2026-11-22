@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> This paper's disposition core is incomplete; cL has no unit.
 
 <div class="pk-model-meta" hidden drug="Silver sulfide" model-id="SilverSulfide_Mossburg2025_reference" status="needs_review" stale="false" population="8 week-old female nude mice" measured-compound="Silver sulfide nanoparticles (Ag2S-NP)" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,7 +48,13 @@ Mossburg KJ, Shepherd SJ, Barragan D, O NH, Berkow EK, Maidment PSN et al. Towar
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**This paper's disposition core is incomplete; cL has no unit.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Kian_2026) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. None of the extracted parameters is silver sulfide's own; they describe Silver sulfide nanoparticles (Ag2S-NP). Extracted — Silver sulfide nanoparticles (Ag2S-NP): CL 24 h, V 1 L.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

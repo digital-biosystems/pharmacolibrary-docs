@@ -16,7 +16,7 @@ Kizu R, Nishimura K, Sato R, Kosaki K, Tanaka T, Tanigawara Y et al. Population 
 
 ## Population and dosing
 
-**Population:** children with hyperinsulinemic hypoglycemia · condition hyperinsulinemic hypoglycemia · age group child · n = &gt;=22.
+**Population:** children with hyperinsulinemic hypoglycemia · condition hyperinsulinemic hypoglycemia · age group child.
 
 ## Model
 

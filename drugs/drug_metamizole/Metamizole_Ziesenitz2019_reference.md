@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;Metamizole&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/&quot;},{&quot;label&quot;:&quot;Ziesenitz_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metamizole_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metamizole_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Metamizole — `Metamizole_Ziesenitz2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:13 UTC (Rejected), but the paper was screened again on 2026-10-07 06:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Metamizole record rejected: only AUC (29.9 mg/L/h) extracted; no volume or clearance, so not a compartmental PK model.
+> The record lacks distribution volume and clearance, and contains an AUC value of 29.9 mg/L/h for 4-methylaminoantipyrine instead of structural parameters.
 
-<div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Ziesenitz2019_reference" status="rejected" stale="true" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Ziesenitz2019_reference" status="rejected" stale="false" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dose evaluation of intravenous metamizole (dipyrone) in infants and children: a prospective population pharmacokinetic study. European journal of clinical pharmacology 75(11):1491–1502 (2019).
@@ -37,7 +37,7 @@ Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dos
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dos
 
 ### Reviewer guidance
 
-**Metamizole record rejected: only AUC (29.9 mg/L/h) extracted; no volume or clearance, so not a compartmental PK model.**
+**The record lacks distribution volume and clearance, and contains an AUC value of 29.9 mg/L/h for 4-methylaminoantipyrine instead of structural parameters.**
 
-The sole parameter is AUC∞ for 4-methylaminoantipyrine at 29.9 mg/L/h in children aged 2–6 years; no distribution volume or clearance is present, so the record cannot represent a compartmental population PK model. The source text is abstract-only, so summary statistics stood in for a fitted model. A second reader could not confirm the 29.9 value (returned null), leaving the extraction unverified. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
+The paper is an exposure/outcome study reporting only the area under the concentration-time curve extrapolated to infinity. No distribution volume or elimination clearance was extracted, so the record does not represent a compartmental population pharmacokinetic model. The recorded AUC value of 29.9 mg/L/h has a dimension incompatible with a structural parameter, as area units do not match volume or clearance dimensions. Additionally, the second reader disagreed on whether the AUC value was present in the record. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-inf of 4-methylaminoantipyrine in children 2-6 years: this record has 29.9, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

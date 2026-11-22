@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Household toxins&quot;,&quot;href&quot;:&quot;toxins/HOUS.md&quot;},{&quot;label&quot;:&quot;Copper(II) oxide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CopperiiOxide_Areecheewakul2022_reference&quot;,&quot;label&quot;:&quot;Areecheewakul_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_copperii_oxide/CopperiiOxide_Areecheewakul2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CopperiiOxide_Hirano1993_reference&quot;,&quot;label&quot;:&quot;Hirano_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_copperii_oxide/CopperiiOxide_Hirano1993_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # Copper(II) oxide
 
@@ -35,12 +36,18 @@ Intermediate Oral: 0.01 mg/kg/day
 | Copper(II) oxide | parent | 79.545 | CuO | PubChem | [14829](https://pubchem.ncbi.nlm.nih.gov/compound/14829) | Hirano_1993 |
 | Copper | metabolite | 63.546 | Cu | PubChem | [23978](https://pubchem.ncbi.nlm.nih.gov/compound/23978) | Areecheewakul_2022, Hirano_1993 |
 
+## Start here
+
+> **Areecheewakul_2022_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> BALB/c mice. [Run it in the simulator](drugs/toxin_copperii_oxide/CopperiiOxide_Areecheewakul2022_reference.md?tab=Simulation) · [record](drugs/toxin_copperii_oxide/CopperiiOxide_Areecheewakul2022_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Areecheewakul_2022_reference](drugs/toxin_copperii_oxide/CopperIiOxide_Areecheewakul2022_reference.md) | — | retention function (no model) | 1 | Areecheewakul S et al., Time course of pulmonary inflammation a…, Particle and fibre toxicolo… (2022) | [10.1186/s12989-022-00480-z](https://doi.org/10.1186/s12989-022-00480-z) |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Hirano_1993_reference](drugs/toxin_copperii_oxide/CopperIiOxide_Hirano1993_reference.md) | — | retention function (no model) | 1 | Hirano S et al., Pulmonary clearance and toxicity of int…, Archives of toxicology (1993) | [10.1007/BF01973701](https://doi.org/10.1007/BF01973701) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Areecheewakul_2022_reference](drugs/toxin_copperii_oxide/CopperiiOxide_Areecheewakul2022_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Areecheewakul S et al., Time course of pulmonary inflammation a…, Particle and fibre toxicolo… (2022) | [10.1186/s12989-022-00480-z](https://doi.org/10.1186/s12989-022-00480-z) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Hirano_1993_reference](drugs/toxin_copperii_oxide/CopperiiOxide_Hirano1993_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Hirano S et al., Pulmonary clearance and toxicity of int…, Archives of toxicology (1993) | [10.1007/BF01973701](https://doi.org/10.1007/BF01973701) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

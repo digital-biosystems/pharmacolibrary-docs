@@ -16,7 +16,7 @@ Hanzel J, Dreesen E, Vermeire S, Löwenberg M, Hoentjen F, Bossuyt P et al. Phar
 
 ## Population and dosing
 
-**Population:** adults with Crohn disease · condition Crohn disease · age group adult · n = &gt;$2.999.
+**Population:** adults with Crohn disease · condition Crohn disease · age group adult.
 
 **Dosing:** 300 mg, iv, multiple, every 56 h.
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;N-Butyl-Benzenesulfonamide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NButylBenzenesulfonamide_Waidyanatha2020v2_reference&quot;,&quot;label&quot;:&quot;Waidyanatha_2020_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NButylBenzenesulfonamide_Waidyanatha2020v2_reference&quot;,&quot;label&quot;:&quot;Waidyanatha_2020_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # N-Butyl-Benzenesulfonamide
 
@@ -28,7 +28,7 @@ N-Butyl benzenesulfonamide (NBBS), a plasticizer used commercially in the polyme
 
 ## Start here
 
-> **Waidyanatha_2020_2_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> HSD rats and B6C3F1 mice. [Run it in the simulator](drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md?tab=Simulation) · [record](drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md)
+> **Waidyanatha_2020_2_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> HSD rats and B6C3F1 mice. [Run it in the simulator](drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md?tab=Simulation) · [record](drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -36,7 +36,7 @@ N-Butyl benzenesulfonamide (NBBS), a plasticizer used commercially in the polyme
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Waidyanatha_2020_2_reference](drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Waidyanatha S et al., Toxicokinetics of the plasticizer, N-bu…, Toxicology reports (2020) | [10.1016/j.toxrep.2020.05.005](https://doi.org/10.1016/j.toxrep.2020.05.005) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub> | [Waidyanatha_2020_2_reference](drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Waidyanatha2020v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Waidyanatha S et al., Toxicokinetics of the plasticizer, N-bu…, Toxicology reports (2020) | [10.1016/j.toxrep.2020.05.005](https://doi.org/10.1016/j.toxrep.2020.05.005) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Kumar_2007_reference](drugs/toxin_n_butyl_benzenesulfonamide/NButylBenzenesulfonamide_Kumar2007_reference.md) | — | 1-compartment (no model) | 1 | Kumar G et al., Brain uptake, pharmacokinetics, and tis…, Toxicological sciences : an… (2007) | [10.1093/toxsci/kfm057](https://doi.org/10.1093/toxsci/kfm057) |
 
 <details class="legend">
@@ -57,7 +57,7 @@ N-Butyl benzenesulfonamide (NBBS), a plasticizer used commercially in the polyme
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

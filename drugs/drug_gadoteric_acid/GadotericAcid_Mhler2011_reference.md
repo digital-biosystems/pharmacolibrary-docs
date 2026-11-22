@@ -4,11 +4,11 @@
 
 # gadoteric acid — `GadotericAcid_Mhler2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-07 18:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="gadoteric acid" model-id="GadotericAcid_Mhler2011_reference" status="needs_review" stale="true" population="pregnant Balb/C mice at 16 days of gestation" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gadoteric acid" model-id="GadotericAcid_Mhler2011_reference" status="needs_review" stale="false" population="pregnant Balb/C mice at 16 days of gestation" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mühler MR, Clément O, Salomon LJ, Balvay D, Autret G, Vayssettes C et al. Maternofetal pharmacokinetics of a gadolinium chelate contrast agent in mice. Radiology 258(2):455–460 (2011).
@@ -39,7 +39,7 @@ Mühler MR, Clément O, Salomon LJ, Balvay D, Autret G, Vayssettes C et al. Mate
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Mühler MR, Clément O, Salomon LJ, Balvay D, Autret G, Vayssettes C et al. Mate
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is gadoteric acid's own; they describe gadolinium.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is gadoteric acid's own; they describe gadolinium. Extracted — gadolinium: t1/2α 47 minutes, t1/2β 107 hours.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading gadoterate meglumine → gadolinium (interconversion); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

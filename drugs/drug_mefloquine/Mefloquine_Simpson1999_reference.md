@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;mefloquine&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/&quot;},{&quot;label&quot;:&quot;Simpson_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mefloquine_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rattanapunya2015_reference&quot;,&quot;label&quot;:&quot;Rattanapunya_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rufener2018_reference&quot;,&quot;label&quot;:&quot;Rufener_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mefloquine_Rattanapunya2015_reference&quot;,&quot;label&quot;:&quot;Rattanapunya_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_Rufener2018_reference&quot;,&quot;label&quot;:&quot;Rufener_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mefloquine_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mefloquine — `Mefloquine_Simpson1999_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:30 UTC (Rejected), but the paper was screened again on 2026-10-07 07:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record failed due to a dimensional mismatch in the volume of distribution parameter for mefloquine, extracted from an abstract-only source.
+> The record was rejected because the 50% AUC∞ increase for mefloquine monotherapy is treated as a dimensional structural parameter.
 
-<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Simpson1999_reference" status="rejected" stale="true" population="patients with acute falciparum malaria" measured-compound="mefloquine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Simpson1999_reference" status="rejected" stale="false" population="patients with acute falciparum malaria" measured-compound="mefloquine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Simpson JA, Price R, ter Kuile F, Teja-Isavatharm P, Nosten F, Chongsuphajaisiddhi T et al. Population pharmacokinetics of mefloquine in patients with acute falciparum malaria. Clinical pharmacology and therapeutics 66(5):472–484 (1999).
@@ -40,7 +40,7 @@ Simpson JA, Price R, ter Kuile F, Teja-Isavatharm P, Nosten F, Chongsuphajaisidd
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Simpson JA, Price R, ter Kuile F, Teja-Isavatharm P, Nosten F, Chongsuphajaisidd
 
 ### Reviewer guidance
 
-**The record failed due to a dimensional mismatch in the volume of distribution parameter for mefloquine, extracted from an abstract-only source.**
+**The record was rejected because the 50% AUC∞ increase for mefloquine monotherapy is treated as a dimensional structural parameter.**
 
-The volume of distribution was reported as 8.14 L/kg, a mass-normalized unit that cannot be converted to the standard SI unit of liters. Because the record was built from the paper's abstract alone, these summary statistics stand in for a fitted model. A second reader disagreed on several parameter extractions, including the absorption rate constant and the specific AUC increase values, highlighting inconsistencies in the data capture. Extracted — mefloquine: AUC∞ 50 %, AUC ratio 20 %, V/F 8.14 L/kg, CL/F 1 L/h, kabs 0.28 h⁻¹, tlag 0.147 h.
+The record derives from the paper's abstract, so summary statistics stand in for fitted model parameters. It lists a 50% AUC∞ increase for mefloquine monotherapy and a 20% increase for combined therapy. The reviewer identified a dimension mismatch where the percentage unit of the AUC increase conflicts with a volumetric dimension. Additionally, the second reader could not locate a value for the 0.28 h⁻¹ absorption rate constant in the abstract. Extracted — mefloquine: AUC∞ 50 %, AUC ratio 20 %, V/F 8.14 L/kg, CL/F 1 L/h, kabs 0.28 h⁻¹, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 0.28, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 

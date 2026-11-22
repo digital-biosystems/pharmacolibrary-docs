@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Industrial and workplace toxins&quot;,&quot;href&quot;:&quot;toxins/IND.md&quot;},{&quot;label&quot;:&quot;Tetrabromobisphenol A&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/&quot;},{&quot;label&quot;:&quot;Schauer_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2014_reference&quot;,&quot;label&quot;:&quot;Knudsen_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2018_reference&quot;,&quot;label&quot;:&quot;Knudsen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Kang2009_reference&quot;,&quot;label&quot;:&quot;Kang_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Kang2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2014_reference&quot;,&quot;label&quot;:&quot;Knudsen_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Knudsen2018_reference&quot;,&quot;label&quot;:&quot;Knudsen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Knudsen2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetrabromobisphenolA_Kang2009_reference&quot;,&quot;label&quot;:&quot;Kang_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetrabromobisphenol_a/TetrabromobisphenolA_Kang2009_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Concentration values (103, 25, 694 µmol/L) have units incompatible with the model's required mass-based structure.
 
 <div class="pk-model-meta" hidden drug="Tetrabromobisphenol A" model-id="TetrabromobisphenolA_Schauer2006_reference" status="rejected" stale="false" population="human subjects and rats" measured-compound="Tetrabromobisphenol A" parameterization="mechanistic" topology="retention"></div>
 
@@ -49,7 +49,13 @@ Schauer UM, Völkel W, Dekant W. Toxicokinetics of tetrabromobisphenol a in huma
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Concentration values (103, 25, 694 µmol/L) have units incompatible with the model's required mass-based structure.**
+
+The record reports peak concentrations of 103, 25, and 694 µmol/L for TBBPA and its metabolites, which use molar units. This conflicts with the structural requirement for mass-based concentration units. Additionally, the model is based solely on abstract summary statistics rather than a fitted pharmacokinetic model. Extracted — tetrabromobisphenol a: Cmax 103 micromol/l, t1/2z 13 h, kabs 0.95 1/hr; TBBPA-glucuronide: Cmax 25 micromol/l; TBBPA-sulfate: Cmax 694 micromol/l.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

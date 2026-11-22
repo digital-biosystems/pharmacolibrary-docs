@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/&quot;},{&quot;label&quot;:&quot;Ward_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -55,13 +55,13 @@ Ward RM, Drover DR, Hammer GB, Stemland CJ, Kern S, Tristani-Firouzi M et al. Th
 
 ### Reviewer guidance
 
-**The methadone model record was held back because it was constructed from abstract-only statistics and simulated only the reference individual without testing defined covariate effects.**
+**Methadone’s peripheral-compartment volume V2 (75.1 L per 70 kg) was neither represented nor defaulted, leaving the record not simulated.**
 
-Because the source text contained only summary statistics rather than fitted model estimates, the extracted parameter values may not represent a true population fit. The simulation process generated results for the base model but failed to execute the covariate scenarios defined in the record, leaving those effects untested. Additionally, a second reviewer could not verify the identity of the dose compound or the existence of the metabolite formation links, disagreeing with the primary record on these structural and input elements. Extracted — methadone: V1 21.5 l.70 kg(-1), V2 75.1 l.70 kg(-1), V3 484 l.70 kg(-1), CL 9.45 l·h(-1) .70 kg(-1), Q 325 l·h(-1) .70 kg(-1), Q2 136 l·h(-1) .70 kg(-1); EDDP: CLfm 9.1 l·h(-1) .70 kg(-1), CL 40.9 l·h(-1) .70 kg(-1); EMDP: CLfm 7.4 l·h(-1) .70 kg(-1).
+The model was built but has not been simulated yet. The covariate scenarios were not simulated; the base model was simulated, not the covariate effects the record defines. V2, the peripheral-compartment volume reported as 75.1 L per 70 kg, was neither emitted nor defaulted, leaving 5 of 6 parameters covered. Only the abstract was read, so summary statistics stood in for a fitted model; the second reader disputed the methadone-to-EDDP-to-EMDP metabolism links and several parameter values. Extracted — methadone: V1 21.5 l.70 kg(-1), V2 75.1 l.70 kg(-1), V3 484 l.70 kg(-1), CL 9.45 l·h(-1) .70 kg(-1), Q 325 l·h(-1) .70 kg(-1), Q2 136 l·h(-1) .70 kg(-1); EDDP: CLfm 9.1 l·h(-1) .70 kg(-1), CL 40.9 l·h(-1) .70 kg(-1); EMDP: CLfm 7.4 l·h(-1) .70 kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methadone, the second reading unknown; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -167,13 +167,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2'] |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.042, 0 of 1 reader(s) agree | 0.042 | cross-check disputed by a second reader: verdict disputed, agreement 0.042, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

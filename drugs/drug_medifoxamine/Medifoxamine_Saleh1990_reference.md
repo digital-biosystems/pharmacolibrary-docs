@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the systemic clearance value of 1299 l/min is physiologically implausible for medifoxamine, suggesting a unit or scale extraction error.
+> Medifoxamine clearance of 1299 l/min and volume of 1321 l are physiologically implausible, causing rejection.
 
 <div class="pk-model-meta" hidden drug="medifoxamine" model-id="Medifoxamine_Saleh1990_reference" status="rejected" stale="false" population="healthy adults" measured-compound="medifoxamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,9 +47,9 @@ Saleh S, Johnston A, Edeki T, Turner P. Tolerability and kinetics of intravenous
 
 ### Reviewer guidance
 
-**The record was rejected because the systemic clearance value of 1299 l/min is physiologically implausible for medifoxamine, suggesting a unit or scale extraction error.**
+**Medifoxamine clearance of 1299 l/min and volume of 1321 l are physiologically implausible, causing rejection.**
 
-The record lists a systemic clearance of 1299 l/min, which falls outside the physiological window and indicates an extraction error. Additionally, the elimination half-life is listed as 1.2 h, and the second reader did not confirm the values for clearance, half-life, or volume of distribution. Extracted — medifoxamine: t1/2z 1.2 h, CL 1.3e+03 l/min, V 1.32e+03 l, fe 1 % of the dose.
+The record lists a systemic clearance of 1299 l/min and a volume of distribution of 1321 l for medifoxamine. These magnitudes are far outside normal human physiological limits, indicating a unit or scale extraction error. Additionally, the second reader could not locate these specific parameter values in the source text, further questioning their validity. Extracted — medifoxamine: t1/2z 1.2 h, CL 1.3e+03 l/min, V 1.32e+03 l, fe 1 % of the dose.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has medifoxamine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

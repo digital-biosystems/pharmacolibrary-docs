@@ -5,11 +5,11 @@
 
 # alemtuzumab — `Alemtuzumab_Admiraal2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:06 UTC (Rejected), but the paper was screened again on 2026-10-07 22:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Alemtuzumab model rejected because the total clearance value of 0.24 L/day lacks a defined unit conversion, preventing dimensional consistency checks.
+> Vmax (0.4 AU/day) and Km (1.48 AU/L) use arbitrary units with conflicting dimensions, and V1 lacks an extracted value, causing rejection.
 
-<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Admiraal2019_reference" status="rejected" stale="true" population="pediatric hematopoietic cell transplantation patients" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Admiraal2019_reference" status="rejected" stale="false" population="pediatric hematopoietic cell transplantation patients" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Admiraal R, Jol-van der Zijde CM, Furtado Silva JM, Knibbe CAJ, Lankester AC, Boelens JJ et al. Population Pharmacokinetics of Alemtuzumab (Campath) in Pediatric Hematopoietic Cell Transplantation: Towards Individualized Dosing to Improve Outcome. Clinical pharmacokinetics 58(12):1609–1620 (2019).
@@ -42,7 +42,7 @@ Admiraal R, Jol-van der Zijde CM, Furtado Silva JM, Knibbe CAJ, Lankester AC, Bo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Admiraal R, Jol-van der Zijde CM, Furtado Silva JM, Knibbe CAJ, Lankester AC, Bo
 
 ### Reviewer guidance
 
-**Alemtuzumab model rejected because the total clearance value of 0.24 L/day lacks a defined unit conversion, preventing dimensional consistency checks.**
+**Vmax (0.4 AU/day) and Km (1.48 AU/L) use arbitrary units with conflicting dimensions, and V1 lacks an extracted value, causing rejection.**
 
-The total clearance parameter was recorded as 0.24 in L/day, but the unit could not be mapped to a standard SI equivalent. This omission prevented the system from verifying dimensional consistency, resulting in a failed check for the structural parameter. The second reader disagreed with several parameter values, including the clearance and intercompartmental clearance, noting them as null, though the unit conversion failure remains the primary cause of rejection. Extracted — alemtuzumab: CL 0.24 L/day, V2 0.74 factor of V1, Q 0.2 L/day, D1 0.75 h, Vmax 0.4 AU/day, Km 1.48 AU/L.
+The record reports the maximum metabolic rate for alemtuzumab as 0.4 AU/day and the enzyme affinity as 1.48 AU/L, where the arbitrary unit 'AU' creates a dimensional mismatch with the expected mass-based units. Additionally, the volume of distribution for the central compartment has no extracted value, leaving it at a library placeholder. A second reader could not confirm the extracted values for clearance, infusion duration, intercompartmental clearance, peripheral volume, or the enzyme parameters. Extracted — alemtuzumab: CL 0.24 L/day, V2 0.74 factor of V1, Q 0.2 L/day, D1 0.75 h, Vmax 0.4 AU/day, Km 1.48 AU/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alemtuzumab, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

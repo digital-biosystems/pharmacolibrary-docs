@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Absolute bioavailability was set to one and the dose-compound identification remains unknown.
+> The model for atogepant was held back because the covariate effects were not simulated and the second reader disputed the primary analyte identification.
 
 <div class="pk-model-meta" hidden drug="atogepant" model-id="Atogepant_Schlachter2026_phase_2_modela" status="needs_review" stale="false" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></div>
 
@@ -62,9 +62,9 @@ Schlachter L, Stodtmann S, Voelkner A, Jonsson F, Lagraauw HM, Boinpally RR. Pop
 
 ### Reviewer guidance
 
-**Absolute bioavailability was set to one and the dose-compound identification remains unknown.**
+**The model for atogepant was held back because the covariate effects were not simulated and the second reader disputed the primary analyte identification.**
 
-The model builder assumed absolute bioavailability of 1 and no molar correction, making this assumption unacceptable. The dose compound was recorded as atogepant, but the second reader identified it as unknown. A blood-plasma ratio was not extracted, though the second reader found a value of 0.567. Extracted — atogepant: kabs 1.31 1/h, CL/F 18.2 L/h, V1/F 72.9 L, Q/F 0.771 L/h, V2 91.7 L, Q2/F 1.99 L/h, V3/F 22.3 L, tlag 0.298 h.
+The record defines weight-based covariate powers for absorption and clearance, but the simulation only exercised the reference individual, leaving these effects unverified. A second reader disagreed with the model, identifying the dose compound and primary analyte as unknown rather than atogepant. This disagreement resulted in a verdict of 'needs_review' with an agreement ratio of 0.632. Extracted — atogepant: kabs 1.31 1/h, CL/F 18.2 L/h, V1/F 72.9 L, Q/F 0.771 L/h, V2 91.7 L, Q2/F 1.99 L/h, V3/F 22.3 L, tlag 0.298 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atogepant, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -187,20 +187,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=atogepant) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped |  | 8.239e-05 | non-numeric value |
-| T1_cmax | reference | skipped | 3 | 8.239e-05 | unresolved concentration unit (exp '% decrease', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 13 | 8.239e-05 | unresolved concentration unit (exp '% increase', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 3 | 8.239e-05 | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 13 | 8.239e-05 | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=atogepant) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.632, 0 of 1 reader(s) agree | 0.632 | cross-check disputed by a second reader: verdict disputed, agreement 0.632, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  | 8.239e-05 |  | non-numeric value |
+| T1_cmax | reference | skipped | 3 | 8.239e-05 |  | unresolved concentration unit (exp '% decrease', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 13 | 8.239e-05 |  | unresolved concentration unit (exp '% increase', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3 | 8.239e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 13 | 8.239e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

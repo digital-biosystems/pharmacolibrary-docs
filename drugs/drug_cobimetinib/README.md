@@ -41,7 +41,7 @@ Cobimetinib is a MEK inhibitor used to treat melanoma and histiocytic neoplasms.
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub> | [Duong_2026_model_h_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_h_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub> | [↳ model_pk_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h.md) | ▶ model + simulator | 1-compartment, oral | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T6_deviations</sub> | [↳ model_pkpd_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pkpd_h.md) | ▶ model + simulator | 1-compartment, oral | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub> | [↳ model_pkpd_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pkpd_h.md) | ▶ model + simulator | 1-compartment, oral | 3 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Han_2015_reference](drugs/drug_cobimetinib/Cobimetinib_Han2015_reference.md) | — | 1-compartment (no model) | 0 | Han K et al., Population pharmacokinetics and dosing…, Cancer chemotherapy and pha… (2015) | [10.1007/s00280-015-2862-0](https://doi.org/10.1007/s00280-015-2862-0) |
 
 ## Pharmacodynamics (PD)
@@ -49,28 +49,6 @@ Cobimetinib is a MEK inhibitor used to treat melanoma and histiocytic neoplasms.
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Duong_2026_resp](drugs/drug_cobimetinib/pd_Duong_2026_resp.md) | instantaneous death rate ← cobimetinib · direct sigmoid Emax (Hill) effect | — | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cobimetinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` weak inhibitor | DrugBank actor |
-| distribution | blood | `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` weak inhibitor | DrugBank actor |
-| distribution | mammary gland | `ABCG2` weak inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` substrate | DrugBank actor |
-| distribution | testis | `ABCB1` substrate, `ABCG2` weak inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` unknown, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` unknown, `SLCO1B1` weak inhibitor, `SLCO1B3` inhibitor, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` unknown, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` substrate, `ABCG2` weak inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MAP2K1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

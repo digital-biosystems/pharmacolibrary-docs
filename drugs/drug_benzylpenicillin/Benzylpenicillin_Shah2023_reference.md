@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;benzylpenicillin&quot;,&quot;href&quot;:&quot;drugs/drug_benzylpenicillin/&quot;},{&quot;label&quot;:&quot;Shah_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benzylpenicillin_Shah2023_reference&quot;,&quot;label&quot;:&quot;Shah_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benzylpenicillin/Benzylpenicillin_Shah2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benzylpenicillin_Shah2023_reference&quot;,&quot;label&quot;:&quot;Shah_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benzylpenicillin/Benzylpenicillin_Shah2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # benzylpenicillin — `Benzylpenicillin_Shah2023_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="benzylpenicillin" model-id="Benzylpenicillin_Shah2023_reference" status="simulated" stale="false" population="" measured-compound="benzylpenicillin" parameterization="mechanistic" topology="2C"></div>
+> Benzylpenicillin clearance value 24.0 L/h/70 kg was disputed by a second reader who extracted 23.1.
+
+<div class="pk-model-meta" hidden drug="benzylpenicillin" model-id="Benzylpenicillin_Shah2023_reference" status="needs_review" stale="false" population="" measured-compound="benzylpenicillin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Philips BJ et al. Population Pharmacokinetic Study of Benzylpenicillin in Critically Unwell Adults. Antibiotics (Basel, Switzerland) 12(4) (2023).
@@ -27,6 +29,8 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Philips BJ et al. Populatio
 <figure class="pk-models-diagram"><img src="drugs/drug_benzylpenicillin/Benzylpenicillin_Shah2023_reference/Benzylpenicillin_Shah2023_reference.svg" alt="Benzylpenicillin_Shah2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | θCL | CL | 24.0 | L/h/70 kg |
@@ -36,7 +40,7 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Philips BJ et al. Populatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Philips BJ et al. Populatio
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Benzylpenicillin clearance value 24.0 L/h/70 kg was disputed by a second reader who extracted 23.1.**
+
+The record lists benzylpenicillin total clearance as 24.0 L/h/70 kg, but the second reader identified the value as 23.1. This discrepancy created a disagreement on the primary pharmacokinetic parameter. Consequently, the cross-check failed with an agreement ratio of 0.4, leaving the record's status unresolved. Extracted — benzylpenicillin: CL 24 L/h/70 kg, V1 15.1 L/70 kg, V2/F 9.8 L/70 kg, Q 11.1 L/h/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 24.0, the second reading 23.1; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -122,14 +128,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=benzylpenicillin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=benzylpenicillin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

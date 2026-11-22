@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Rutoside record rejected because the model structure mismatched the defined parent-metabolite topology and output compartment.
+> The model was rejected because the simulated output did not match the measured compound, and the model structure was one-compartment instead of the parent-metabolite topology.
 
 <div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="rutin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -57,9 +57,9 @@ Domínguez Moré GP, Rey DP, Valderrama IH, Ospina LF, Aragón DM. Rutin and Phy
 
 ### Reviewer guidance
 
-**Rutoside record rejected because the model structure mismatched the defined parent-metabolite topology and output compartment.**
+**The model was rejected because the simulated output did not match the measured compound, and the model structure was one-compartment instead of the parent-metabolite topology.**
 
-The model used a one-compartment structure despite the topology requiring a parent-metabolite framework. The output variable was the central compartment instead of the measured compound rutin. Additionally, the second reader disagreed on multiple parameter values, including bioavailability and rate constants. Extracted — quercetin: AUC∞ 8.27e+03 ng ·h/mL, Cmax 614 ng/mL, Frel 12 Equivalent to 7.4 mg/kg of Rutin; rutoside: kel 0.043 h−1, MRT 22.1 h, V 0.084 L/kg, CL 0.079 L/h/kg.
+The predicted concentration was generated from the wrong compartment, failing to represent the measured analyte, rutin. Additionally, the model structure did not include the necessary link for quercetin formation, instead using a simple one-compartment design. The second reader disputed the rejection, and several extracted parameters including AUC, Cmax, and clearance could not be validated. Extracted — quercetin: AUC∞ 8.27e+03 ng ·h/mL, Cmax 614 ng/mL, Frel 12 Equivalent to 7.4 mg/kg of Rutin; rutoside: kel 0.043 h−1, MRT 22.1 h, V 0.084 L/kg, CL 0.079 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -188,15 +188,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | fail | Metabolite_C (measured=rutin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped |  | 0.004077 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | fail | Metabolite_C (measured=rutin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.158, 0 of 1 reader(s) agree | 0.158 | cross-check disputed by a second reader: verdict disputed, agreement 0.158, 0 of 1 reader(s) agree |
+| T1_cmax | reference | skipped |  | 0.004077 |  | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

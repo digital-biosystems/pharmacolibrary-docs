@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Lidocaine central volume 0.312 L is outside physiological window, causing rejection.
+> The record was rejected because the central compartment volume for lidocaine was 0.312 L, an implausibly small value indicating an extraction error.
 
 <div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Bursi2017_reference" status="rejected" stale="false" population="post-herpetic neuralgia patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -44,7 +44,7 @@ Bursi R, Piana C, Grevel J, Huntjens D, Boesl I. Evaluation of the Population Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.346). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.346). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,11 @@ Bursi R, Piana C, Grevel J, Huntjens D, Boesl I. Evaluation of the Population Ph
 
 ### Reviewer guidance
 
-**Lidocaine central volume 0.312 L is outside physiological window, causing rejection.**
+**The record was rejected because the central compartment volume for lidocaine was 0.312 L, an implausibly small value indicating an extraction error.**
 
-The central compartment volume (V1) of 0.312 L is an implausibly small value for a human pharmacokinetic model. This magnitude indicates a likely unit or scale extraction error rather than a true physiological parameter. The second reader also disagreed on the metabolism link for monoethylglycinexylidide, which the record lists as formed from glycinexylidide rather than directly from lidocaine. Extracted — glycinexylidide: kfm 1.93 h−1, k31 -0.526 h−1, ki0 0.39 1/h; 2,6-xylidine: ki0 0.2 1/h; lidocaine: V1 0.312 L.
+The parameter labeled V1 is identified as the volume of distribution of the central compartment, yet it has a value of only 0.312 L. This magnitude is physiologically impossible for a systemic lidocaine model, triggering a rejection for being outside the physiological window. Additionally, there is disagreement on the metabolic pathway, with one record stating monoethylglycinexylidide forms from glycinexylidide while another reader asserts it forms directly from lidocaine. Extracted — glycinexylidide: kfm 1.93 h−1, k31 -0.526 h−1, ki0 0.39 1/h; 2,6-xylidine: ki0 0.2 1/h; lidocaine: V1 0.312 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); glycinexylidide → monoethylglycinexylidide (metabolism), the second reading lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); lidocaine → monoethylglycinexylidide (metabolism); it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); glycinexylidide → monoethylglycinexylidide (metabolism), the second reading lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); lidocaine → monoethylglycinexylidide (metabolism); it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -140,29 +140,29 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.346 (9/26 fields) | 17 |
+| `gpt-oss-120b` | not confirmed | 0.346 (9/26 fields) | 17 |
 
 <details><summary>17 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['lidocaine', '2,6-xylidine', 'metabolism'], ['lidocaine', 'glycinexylidide', 'metabolism'], ['glycinexylidide', 'monoethylglycinexylidide', 'metabolism']] | [['lidocaine', '2,6-xylidine', 'metabolism'], ['lidocaine', 'glycinexylidide', 'metabolism'], ['lidocaine', 'monoethylglycinexylidide', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[effect of alt &gt;11 on k 40]` |  | 0.229 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[effect of bil &gt;0.53 on k 30].parameter_id` | Q304 | Q48 | mismatch |
-| `gpt-oss:120b` | `parameters[effect of bil &gt;0.53 on k 30].rse_percent` | 0.148 |  | mismatch |
-| `gpt-oss:120b` | `parameters[effect of clcr ≤52.7 on k 30]` |  | -0.32 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k 23].rse_percent` | 0.175 |  | mismatch |
-| `gpt-oss:120b` | `parameters[k 30]` | 0.39 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k 40]` | 0.2 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_k31_bmi]` | 0.938 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_kcomp_bmi]` |  | 0.938 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_kel_category]` |  | 0.667 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_kel_category]` |  | 1.44 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_kel_cyp1a2]` |  | 0.852 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q47_category]` | 0.667 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q47_category]` | 1.44 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v1_category].rse_percent` | 99.5 |  | mismatch |
-| `gpt-oss:120b` | `parameters[v 1].rse_percent` | 0.0757 |  | mismatch |
+| `gpt-oss-120b` | `model.links` | [['lidocaine', '2,6-xylidine', 'metabolism'], ['lidocaine', 'glycinexylidide', 'metabolism'], ['glycinexylidide', 'monoethylglycinexylidide', 'metabolism']] | [['lidocaine', '2,6-xylidine', 'metabolism'], ['lidocaine', 'glycinexylidide', 'metabolism'], ['lidocaine', 'monoethylglycinexylidide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[effect of alt &gt;11 on k 40]` |  | 0.229 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect of bil &gt;0.53 on k 30].parameter_id` | Q304 | Q48 | mismatch |
+| `gpt-oss-120b` | `parameters[effect of bil &gt;0.53 on k 30].rse_percent` | 0.148 |  | mismatch |
+| `gpt-oss-120b` | `parameters[effect of clcr ≤52.7 on k 30]` |  | -0.32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 23].rse_percent` | 0.175 |  | mismatch |
+| `gpt-oss-120b` | `parameters[k 30]` | 0.39 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 40]` | 0.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_k31_bmi]` | 0.938 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kcomp_bmi]` |  | 0.938 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kel_category]` |  | 0.667 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kel_category]` |  | 1.44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kel_cyp1a2]` |  | 0.852 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q47_category]` | 0.667 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q47_category]` | 1.44 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_category].rse_percent` | 99.5 |  | mismatch |
+| `gpt-oss-120b` | `parameters[v 1].rse_percent` | 0.0757 |  | mismatch |
 
 </details>
 

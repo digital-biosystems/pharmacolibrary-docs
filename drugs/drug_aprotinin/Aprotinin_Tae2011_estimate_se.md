@@ -38,7 +38,7 @@ Tae YM, Kwak JG, Kim BH, Jang IJ, Kim WH. Population pharmacokinetic analysis an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Tae YM, Kwak JG, Kim BH, Jang IJ, Kim WH. Population pharmacokinetic analysis an
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — aprotinin: Q2 337 mL/h, CL 0.403, V 0.751.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ηcloiv: this record has 0.403, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ηcloiv: this record has 0.403, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -96,16 +96,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (8/12 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[ηcloiv]` | 0.403 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ηvcoiv].parameter_id` | Q61 | Q63 | mismatch |
-| `gpt-oss:120b` | `parameters[θ1]` |  | 350 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θ2].parameter_id` | Q99 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[ηcloiv]` | 0.403 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ηvcoiv].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[θ1]` |  | 350 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ2].parameter_id` | Q99 | Q61 | mismatch |
 
 </details>
 

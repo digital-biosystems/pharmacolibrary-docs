@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;clarithromycin&quot;,&quot;href&quot;:&quot;drugs/drug_clarithromycin/&quot;},{&quot;label&quot;:&quot;Shah_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clarithromycin_Shah2025_reference&quot;,&quot;label&quot;:&quot;Shah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Singh_2025_RLU&quot;,&quot;label&quot;:&quot;Singh_2025 \u00b7 RLU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clarithromycin/pd_Singh_2025_RLU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clarithromycin_Shah2025_reference&quot;,&quot;label&quot;:&quot;Shah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Singh_2025_RLU&quot;,&quot;label&quot;:&quot;Singh_2025 \u00b7 RLU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clarithromycin/pd_Singh_2025_RLU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clarithromycin — `Clarithromycin_Shah2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="clarithromycin" model-id="Clarithromycin_Shah2025_reference" status="simulated" stale="false" population="critically ill adults" measured-compound="clarithromycin" parameterization="mechanistic" topology="1C"></div>
+> The intercompartmental clearance of 62.0 L/h/70 kg for clarithromycin was disputed, and the second reader failed to extract a value for it.
+
+<div class="pk-model-meta" hidden drug="clarithromycin" model-id="Clarithromycin_Shah2025_reference" status="needs_review" stale="false" population="critically ill adults" measured-compound="clarithromycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Davidson HC et al. Intravenous Clarithromycin in Critically Ill Adults: A Population Pharmacokinetic Study. Antibiotics (Basel, Switzerland) 14(6) (2025).
@@ -15,7 +17,7 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Davidson HC et al. Intraven
 
 ## Population and dosing
 
-**Population:** critically ill adults · condition critical illness · age group adult · n = &gt;=19.
+**Population:** critically ill adults · condition critical illness · age group adult.
 
 **Dosing:** 500 mg, iv, multiple, every 12 h.
 
@@ -29,6 +31,8 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Davidson HC et al. Intraven
 <figure class="pk-models-diagram"><img src="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference.svg" alt="Clarithromycin_Shah2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | θCL (L/h/70 kg) | CL | 8.17 | L/h/70 kg | 17 |
@@ -37,7 +41,7 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Davidson HC et al. Intraven
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +51,13 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Davidson HC et al. Intraven
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The intercompartmental clearance of 62.0 L/h/70 kg for clarithromycin was disputed, and the second reader failed to extract a value for it.**
+
+A second reader disagreed with the extracted intercompartmental clearance, returning no value instead of the recorded 62.0 L/h/70 kg. Additionally, the second reader identified a volume of distribution of 60.6 L/70 kg that was absent from the current record. The overall agreement between readers was 0.727, with zero agreement on the specific parameter values. Extracted — clarithromycin: CL 8.17 L/h/70 kg, V 25.7 L/70 kg, Q 62 L/h/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θq: this record has 62.0, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -130,14 +136,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=clarithromycin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=clarithromycin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # palbociclib — `Palbociclib_Royer2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 04:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption lag time for palbociclib is assigned the unit liters instead of hours, causing a dimensional mismatch that rejected the model.
+> Palbociclib absorption lag time value 0.658 was recorded with unit L, conflicting with required time dimension.
 
-<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Royer2021_reference" status="rejected" stale="true" population="postmenopausal women with metastatic breast cancer routinely followed in a cancer center" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Royer2021_reference" status="rejected" stale="false" population="postmenopausal women with metastatic breast cancer routinely followed in a cancer center" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Royer B, Kaderbhaï C, Fumet JD, Hennequin A, Desmoulins I, Ladoire S et al. Population Pharmacokinetics of Palbociclib in aReal-World Situation. Pharmaceuticals (Basel, Switzerland) 14(3) (2021).
@@ -40,7 +40,7 @@ Royer B, Kaderbhaï C, Fumet JD, Hennequin A, Desmoulins I, Ladoire S et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Royer B, Kaderbhaï C, Fumet JD, Hennequin A, Desmoulins I, Ladoire S et al. Pop
 
 ### Reviewer guidance
 
-**The absorption lag time for palbociclib is assigned the unit liters instead of hours, causing a dimensional mismatch that rejected the model.**
+**Palbociclib absorption lag time value 0.658 was recorded with unit L, conflicting with required time dimension.**
 
-The record lists the absorption lag time as 0.658 with the unit L, whereas this parameter represents a duration and requires a time unit. Because the value was not extracted with a valid time unit, the model lacked a standard SI value for this structural parameter and was therefore held back. Extracted — palbociclib: CL/F 58.3 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 L.
+The record lists the absorption lag time as 0.658 with unit L, whereas the parameter definition requires a time unit. This unit mismatch created a dimension conflict that prevented the parameter from being converted to standard SI units. Consequently, the model record was rejected due to this structural inconsistency in the palbociclib pharmacokinetic parameters. Extracted — palbociclib: CL/F 58.3 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 L.
 
 Independently confirmed by `qwen3.8-27b`.
 

@@ -42,9 +42,9 @@ Oseltamivir is a neuraminidase inhibitor used to treat and prevent influenza. It
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Lin_2012_reference](drugs/drug_oseltamivir/Oseltamivir_Lin2012_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Lin CC et al., Chemical analysis and transplacental tr…, PloS one (2012) | [10.1371/journal.pone.0046062](https://doi.org/10.1371/journal.pone.0046062) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Pillai_2015_reference](drugs/drug_oseltamivir/Oseltamivir_Pillai2015_reference.md) | — | 1-compartment (no model) | 4 | Pillai VC et al., Population pharmacokinetics of oseltami…, British journal of clinical… (2015) | [10.1111/bcp.12691](https://doi.org/10.1111/bcp.12691) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30, Q66 — no SI value to build from</sub> | [Wang_2026_reference](drugs/drug_oseltamivir/Oseltamivir_Wang2026_reference.md) | — | parent + metabolite (no model) | 11 | Wang K et al., Oseltamivir drug-disease modelling in i…, British journal of clinical… (2026) | [10.1002/bcp.70623](https://doi.org/10.1002/bcp.70623) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30, Q66 — no SI value to build from</sub> | [Wang_2026_reference](drugs/drug_oseltamivir/Oseltamivir_Wang2026_reference.md) | — | parent + metabolite (no model) | 11 | Wang K et al., Oseltamivir drug-disease modelling in i…, British journal of clinical… (2026) | [10.1002/bcp.70623](https://doi.org/10.1002/bcp.70623) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Boianelli_2016_reference](drugs/drug_oseltamivir/Oseltamivir_Boianelli2016_reference.md) | — | parent + metabolite (no model) | 0 | Boianelli A et al., Oseltamivir PK/PD Modeling and Simulati…, Frontiers in cellular and i… (2016) | [10.3389/fcimb.2016.00060](https://doi.org/10.3389/fcimb.2016.00060) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chairat_2016_reference](drugs/drug_oseltamivir/Oseltamivir_Chairat2016_reference.md) | — | parent + metabolite (no model) | 7 | Chairat K et al., Population pharmacokinetics of oseltami…, British journal of clinical… (2016) | [10.1111/bcp.12892](https://doi.org/10.1111/bcp.12892) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chairat_2016_reference](drugs/drug_oseltamivir/Oseltamivir_Chairat2016_reference.md) | — | parent + metabolite (no model) | 7 | Chairat K et al., Population pharmacokinetics of oseltami…, British journal of clinical… (2016) | [10.1111/bcp.12892](https://doi.org/10.1111/bcp.12892) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Pai_2011_reference](drugs/drug_oseltamivir/Oseltamivir_Pai2011_reference.md) | — | general linear (no model) | 5 | Pai MP et al., Oseltamivir and oseltamivir carboxylate…, Antimicrobial agents and ch… (2011) | [10.1128/AAC.00422-11](https://doi.org/10.1128/AAC.00422-11) |
 
 ## Pharmacodynamics (PD)
@@ -55,21 +55,6 @@ Oseltamivir is a neuraminidase inhibitor used to treat and prevent influenza. It
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Boianelli_2016_S_t](drugs/drug_oseltamivir/pd_Boianelli_2016_S_t.md) | viral release / replication rate of IAV (sensitive strain V) ← Oseltamivir Carboxylate (OC) · direct Emax (saturable) effect | — | Boianelli A et al., Oseltamivir PK/PD Modeling and Simulati…, Frontiers in cellular and i… (2016) | [10.3389/fcimb.2016.00060](https://doi.org/10.3389/fcimb.2016.00060) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Checkmahomed_2020_EC50](drugs/drug_oseltamivir/pd_Checkmahomed_2020_EC50.md) | virus cytopathic effect (cell viability) ← oseltamivir carboxylate · inhibition effect | — | Checkmahomed L et al., In Vitro Combinations of Baloxavir Acid…, Viruses (2020) | [10.3390/v12101139](https://doi.org/10.3390/v12101139) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">mouse</span> | [Montaseri_2018_viral_load](drugs/drug_oseltamivir/pd_Montaseri_2018_viral_load.md) | viral load ← oseltamivir · inhibition effect | — | Montaseri G et al., PK/PD-based adaptive tailoring of oselt…, Progress in biophysics and… (2018) | [10.1016/j.pbiomolbio.2018.07.007](https://doi.org/10.1016/j.pbiomolbio.2018.07.007) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oseltamivir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | liver | `CES1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCC4` substrate, `SLC22A8` substrate | DrugBank actor |
-| excretion | liver | `ABCC4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: NEU1 (inhibitor), NEU2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -83,13 +68,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:13 | 9:46 | 3/3/0 | 3/0/0 | 0/0/0 | 442,783/31,757 | ollama / glm-5.3-flash | 8 | 0/8 | 8/0 | 0 |
+| 2026-10-07 18:13 | 9:46 | 3/3/0 | 4/0/0 | 0/0/0 | 442,783/31,757 | ollama / glm-5.3-flash | 8 | 0/8 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 115 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 6  ·  extracted 1  ·  needs review 2  ·  rejected 3  ·  stale 2
+- **records:** 6  ·  extracted 1  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

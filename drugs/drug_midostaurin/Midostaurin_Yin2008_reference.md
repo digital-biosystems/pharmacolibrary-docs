@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Midostaurin lacks distribution volume and elimination clearance, while metabolite clearances are missing from the abstract-only record.
+> Midostaurin’s record was refused because its 1.47 L/h formation clearance to CGP62221 does not provide parent clearance or a distribution volume.
 
 <div class="pk-model-meta" hidden drug="midostaurin" model-id="Midostaurin_Yin2008_reference" status="rejected" stale="false" population="diabetic patients" measured-compound="midostaurin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -45,13 +45,13 @@ Yin OQ, Wang Y, Schran H. A mechanism-based population pharmacokinetic model for
 
 ### Reviewer guidance
 
-**Midostaurin lacks distribution volume and elimination clearance, while metabolite clearances are missing from the abstract-only record.**
+**Midostaurin’s record was refused because its 1.47 L/h formation clearance to CGP62221 does not provide parent clearance or a distribution volume.**
 
-The record is derived from an abstract, so summary statistics stand in for a fitted model. It defines formation clearances for metabolites CGP62221 (1.47 L/h) and CGP52421 (0.501 L/h) but omits the parent drug's distribution volume and elimination clearance. Consequently, the metabolites are structurally unreachable because the parent compartment lacks an elimination pathway. Extracted — CGP62221: CLfm 1.47 L/h; CGP52421: CLfm 0.501 L/h.
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; its metabolite compartments have n_cmt 0 and were flagged as unreachable or orphaned despite the listed metabolism links. Extracted — CGP62221: CLfm 1.47 L/h; CGP52421: CLfm 0.501 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has midostaurin → cgp62221 (metabolism); midostaurin → cgp52421 (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

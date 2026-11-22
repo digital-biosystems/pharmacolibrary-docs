@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Hayato_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Bhagunde_2026_2_GFAP&quot;,&quot;label&quot;:&quot;Bhagunde_2026_2 \u00b7 GFAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_Bhagunde_2026_2_GFAP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hayato_2022_SUVr&quot;,&quot;label&quot;:&quot;Hayato_2022 \u00b7 SUVr&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_Hayato_2022_SUVr.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_amyloid_PET_plaque&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 amyloid PET plaque&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_van_2025_amyloid_PET_plaque.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lecanemab_Majid2024_reference&quot;,&quot;label&quot;:&quot;Majid_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/Lecanemab_Majid2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bhagunde_2026_2_GFAP&quot;,&quot;label&quot;:&quot;Bhagunde_2026_2 \u00b7 GFAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_Bhagunde_2026_2_GFAP.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hayato_2022_SUVr&quot;,&quot;label&quot;:&quot;Hayato_2022 \u00b7 SUVr&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_Hayato_2022_SUVr.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_amyloid_PET_plaque&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 amyloid PET plaque&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_van_2025_amyloid_PET_plaque.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lecanemab — `Lecanemab_Hayato2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 02:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The lecanemab record was rejected due to a dimensional mismatch on the clearance parameter, which has an unknown unit preventing conversion to SI.
+> Lecanemab clearance was recorded as 0.0181 L/h instead of the verified 2.55 L/h, causing major parameter value errors.
 
-<div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Hayato2022_reference" status="rejected" stale="true" population="adults with early Alzheimer&#39;s disease" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Hayato2022_reference" status="rejected" stale="false" population="adults with early Alzheimer&#39;s disease" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Hayato S, Takenaka O, Sreerama Reddy SH, Landry I, Reyderman L, Koyama A et al. Population pharmacokinetic-pharmacodynamic analyses of amyloid positron emission tomography and plasma biomarkers for lecanemab in subjects with early Alzheimer's disease. CPT: pharmacometrics & systems pharmacology 11(12):1578–1591 (2022).
@@ -47,7 +47,7 @@ Hayato S, Takenaka O, Sreerama Reddy SH, Landry I, Reyderman L, Koyama A et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.368). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.368). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,9 +57,9 @@ Hayato S, Takenaka O, Sreerama Reddy SH, Landry I, Reyderman L, Koyama A et al. 
 
 ### Reviewer guidance
 
-**The lecanemab record was rejected due to a dimensional mismatch on the clearance parameter, which has an unknown unit preventing conversion to SI.**
+**Lecanemab clearance was recorded as 0.0181 L/h instead of the verified 2.55 L/h, causing major parameter value errors.**
 
-The clearance value of 0.0181 L/h could not be converted to standard units because the specific unit format was missing from the library. The second reader identified discrepancies in several parameter values, including clearance (2.55 vs 0.0181) and intercompartmental clearance (8.02 vs 0.0349), suggesting extraction errors. Extracted — lecanemab: CL 0.0181 L/h, V1 3.22 L, Q 0.0349 L/h, V2 2.19 L, CL_ratio 0.792 ratio.
+The second reader identifies the total clearance value in this record (0.0181 L/h) as incorrect compared to the true value of 2.55 L/h. The intercompartmental clearance is similarly mismatched, appearing here as 0.0349 L/h but 8.02 L/h in the correct record. The female clearance ratio is also wrong at 0.792 rather than the expected 3.43, and several covariate effects on clearance and distribution are either missing or have incorrect values. Extracted — lecanemab: CL 0.0181 L/h, V1 3.22 L, Q 0.0349 L/h, V2 2.19 L, CL_ratio 0.792 ratio.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0.0181, the second reading 2.55; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

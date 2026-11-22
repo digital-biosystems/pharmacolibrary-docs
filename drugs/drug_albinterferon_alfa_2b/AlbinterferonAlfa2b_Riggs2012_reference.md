@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;albinterferon alfa-2b&quot;,&quot;href&quot;:&quot;drugs/drug_albinterferon_alfa_2b/&quot;},{&quot;label&quot;:&quot;Riggs_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlbinterferonAlfa2b_Riggs2012_reference&quot;,&quot;label&quot;:&quot;Riggs_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlbinterferonAlfa2b_Riggs2012_reference&quot;,&quot;label&quot;:&quot;Riggs_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # albinterferon alfa-2b — `AlbinterferonAlfa2b_Riggs2012_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="albinterferon alfa-2b" model-id="AlbinterferonAlfa2b_Riggs2012_reference" status="simulated" stale="false" population="adults with chronic hepatitis C virus" measured-compound="albinterferon_alfa_2b" parameterization="apparent" topology="1C"></div>
+> Cross-reader agreement failed (0.2) for albinterferon alfa 2b because the second reader omitted all pharmacokinetic parameters present in the primary record.
+
+<div class="pk-model-meta" hidden drug="albinterferon alfa-2b" model-id="AlbinterferonAlfa2b_Riggs2012_reference" status="needs_review" stale="false" population="adults with chronic hepatitis C virus" measured-compound="albinterferon_alfa_2b" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Riggs MM, Bergsma TT, Rogers JA, Gastonguay MR, Subramanian GM, Chen C et al. Population pharmacokinetics and exposure-response of albinterferon alfa-2b. Journal of clinical pharmacology 52(4):475–486 (2012).
@@ -27,6 +29,8 @@ Riggs MM, Bergsma TT, Rogers JA, Gastonguay MR, Subramanian GM, Chen C et al. Po
 <figure class="pk-models-diagram"><img src="drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference/AlbinterferonAlfa2b_Riggs2012_reference.svg" alt="AlbinterferonAlfa2b_Riggs2012_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | First-order absorption rate constant | kabs | 0.0148 | h(-1) |
@@ -35,7 +39,7 @@ Riggs MM, Bergsma TT, Rogers JA, Gastonguay MR, Subramanian GM, Chen C et al. Po
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +49,13 @@ Riggs MM, Bergsma TT, Rogers JA, Gastonguay MR, Subramanian GM, Chen C et al. Po
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Cross-reader agreement failed (0.2) for albinterferon alfa 2b because the second reader omitted all pharmacokinetic parameters present in the primary record.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The primary record lists apparent clearance (38.9 mL/h), apparent volume of distribution (11.6 L), and first-order absorption rate constant (0.0148 h^-1). The second reader disagreed by assigning null values to these three parameters, while the primary record provided explicit values. This discrepancy reduced the agreement score to 0.2, resulting in a disputed verdict for the abstract-only data. Extracted — albinterferon alfa 2b: kabs 0.0148 h(-1), CL/F 38.9 mL/h, V/F 11.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has albinterferon_alfa_2b, the second reading albinterferon alfa-2b; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -127,15 +131,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=albinterferon_alfa_2b) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=albinterferon_alfa_2b) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

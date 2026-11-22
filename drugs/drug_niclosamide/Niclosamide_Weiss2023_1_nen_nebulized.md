@@ -5,11 +5,11 @@
 
 # niclosamide — `Niclosamide_Weiss2023_1_nen_nebulized`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 09:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Niclosamide lacks distribution volume and clearance values, so this exposure record is not a compartmental population PK model.
+> Niclosamide was refused because D1, a duration parameter, is reported as 1.40 mg/kg, and the record lacks distribution volume and clearance.
 
-<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_1_nen_nebulized" status="rejected" stale="true" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_1_nen_nebulized" status="rejected" stale="false" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Single-dose pharmacokinetics and lung function of nebulized niclosamide ethanolamine in sheep. Pharmaceutical research 40(8):1915–1925 (2023).
@@ -44,7 +44,7 @@ Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Sin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +54,13 @@ Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Sin
 
 ### Reviewer guidance
 
-**Niclosamide lacks distribution volume and clearance values, so this exposure record is not a compartmental population PK model.**
+**Niclosamide was refused because D1, a duration parameter, is reported as 1.40 mg/kg, and the record lacks distribution volume and clearance.**
 
-The record defines Dose, Cmax, Tmax, AUC, and Bioavailability, but contains no distribution volume or elimination parameters. Consequently, the model structure cannot describe drug elimination from the body. Additionally, the Bioavailability parameter is missing a numeric value, leaving a key input undefined. Extracted — niclosamide: D1 1.4 mg/kg, Cmax 577 ng/mL, tmax 22.2 min, AUCt 261 ng·h/mL.
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. D1 means the duration of zero-order input, but its reported unit, mg/kg, is a dose unit rather than time and could not be converted to SI. Extracted — niclosamide: D1 1.4 mg/kg, Cmax 577 ng/mL, tmax 22.2 min, AUCt 261 ng·h/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has niclosamide (niclosamide ethanolamine), the second reading niclosamide; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

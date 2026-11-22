@@ -4,18 +4,18 @@
 
 # ubidecarenone — `Ubidecarenone_Tomono1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:59 UTC (Rejected), but the paper was screened again on 2026-10-06 11:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="ubidecarenone" model-id="Ubidecarenone_Tomono1986_reference" status="needs_review" stale="true" population="healthy male subjects" measured-compound="coenzyme Q10" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ubidecarenone" model-id="Ubidecarenone_Tomono1986_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="coenzyme Q10" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tomono Y, Hasegawa J, Seki T, Motegi K, Morishita N. Pharmacokinetic study of deuterium-labelled coenzyme Q10 in man. International journal of clinical pharmacology, therapy, and toxicology 24(10):536–541 (1986).
 
 ## Population and dosing
 
-**Population:** healthy male subjects · condition healthy · age group adult · n = &gt;=16.
+**Population:** healthy male subjects · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed deuterium-labelled coenzyme Q10, measured coenzyme Q10.
 
@@ -36,7 +36,7 @@ Tomono Y, Hasegawa J, Seki T, Motegi K, Morishita N. Pharmacokinetic study of de
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Tomono Y, Hasegawa J, Seki T, Motegi K, Morishita N. Pharmacokinetic study of de
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ubidecarenone: Cmax 1 micrograms/ml, t1/2z 33.2 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deuterium-labelled coenzyme Q10, the second reading d5-CoQ10; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

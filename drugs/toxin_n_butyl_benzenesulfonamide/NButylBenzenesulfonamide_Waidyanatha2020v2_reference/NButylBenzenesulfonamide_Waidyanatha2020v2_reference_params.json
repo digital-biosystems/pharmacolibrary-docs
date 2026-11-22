@@ -14,6 +14,306 @@
   4200.0,
   14000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.000316
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.0012
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.00344
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 15.8
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 20.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 17.2
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.00154
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.00389
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.0152
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 77.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 64.8
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 76.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 1680.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 4560.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 13400.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 84.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 67.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 4780.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 11700.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 25800.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 239.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 195.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 129.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.0007559999999999999
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.005529999999999999
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.0155
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 37.8
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 92.1
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 77.5
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.00104
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.00296
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.013699999999999999
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 52.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 49.3
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 68.5
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 1260.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 8280.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 23400.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 63.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 138.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 117.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 733.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 2830.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 18700.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 36.7
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 47.2
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 93.5
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 1.75e-05
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 2.43e-05
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 4.79e-05
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.035
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.024
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.416
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.338
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.33
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 2.67e-05
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 4.46e-05
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.000186
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.0534
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.0446
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.093
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.326
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.265
+   },
+   {
+    "source": "Waidyanatha_2020_2:other_prose",
+    "value_si": 0.572
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 5.3
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 3.1
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 1.7
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 0.7
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 3.8
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 3.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 1.5
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 1.0
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 3.9
+   },
+   {
+    "source": "Waidyanatha_2020_2:discussion_prose",
+    "value_si": 1.4
+   }
+  ]
+ },
  "parameters": {
   "Cl": 0.000505894391758442,
   "F": 1.0,

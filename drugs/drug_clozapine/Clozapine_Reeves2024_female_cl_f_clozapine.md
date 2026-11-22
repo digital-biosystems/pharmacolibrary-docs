@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the recorded clearance parameter for clozapine is negative (-0.28), which is pharmacokinetically impossible.
+> The record was rejected because clozapine’s reported CL/F estimate is −0.28, an implausible negative clearance value.
 
 <div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_female_cl_f_clozapine" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -45,13 +45,13 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 ### Reviewer guidance
 
-**The record was rejected because the recorded clearance parameter for clozapine is negative (-0.28), which is pharmacokinetically impossible.**
+**The record was rejected because clozapine’s reported CL/F estimate is −0.28, an implausible negative clearance value.**
 
-The facts show the clearance/final bioavailability parameter for clozapine is listed with a value of '-0.28'. This negative value indicates an implausible model estimate or incorrect covariate adjustment, leading to the rejection. Additionally, the second reader could not confirm the dose compound or primary analyte, marking them as unknown. Extracted — clozapine: CL/F -0.28.
+CL/F is total clearance after oral administration adjusted for bioavailability; the finding says the negative value could reflect an implausible base value or covariate shift, without specifying which. The second reader disputed whether the −0.28 estimate was present in the record. Extracted — clozapine: CL/F -0.28.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clozapine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

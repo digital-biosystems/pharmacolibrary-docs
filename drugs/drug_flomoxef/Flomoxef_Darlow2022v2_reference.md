@@ -17,7 +17,7 @@ Darlow CA, Hope W. Flomoxef for neonates: extending options for treatment of neo
 
 ## Population and dosing
 
-**Population:** neonates · condition neonatal sepsis · age group neonate · n = &gt; 146 (individual PK data), total 658 (including population-level data); final model fit to 137 babies.
+**Population:** neonates · condition neonatal sepsis · age group neonate.
 
 **Dosing:** 700, 6510 mg, iv, multiple.
 

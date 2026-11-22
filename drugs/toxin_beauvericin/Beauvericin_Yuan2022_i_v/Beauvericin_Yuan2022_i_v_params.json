@@ -13,6 +13,22 @@
   35.0,
   140.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Yuan_2022:other_prose",
+    "value_si": 0.000454
+   },
+   {
+    "source": "Yuan_2022:other_prose",
+    "value_si": 4.16e-05
+   },
+   {
+    "source": "Yuan_2022:other_prose",
+    "value_si": 1.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.788333333333333e-05,
   "F": 1.0,

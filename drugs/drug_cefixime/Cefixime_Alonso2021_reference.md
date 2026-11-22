@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefixime&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/&quot;},{&quot;label&quot;:&quot;Alonso_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefixime_Edwina2023_reference&quot;,&quot;label&quot;:&quot;Edwina_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Edwina2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_AlmelaFerrer2026_reference&quot;,&quot;label&quot;:&quot;Almela-Ferrer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_AlmelaFerrer2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefixime_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefixime_AlmelaFerrer2026_reference&quot;,&quot;label&quot;:&quot;Almela-Ferrer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_AlmelaFerrer2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Edwina2023_reference&quot;,&quot;label&quot;:&quot;Edwina_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Edwina2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefixime_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefixime_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefixime/Cefixime_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefixime — `Cefixime_Alonso2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cefixime model held back because the absorption lag time was missing and bioavailability was assumed to be 1.
+> Rejected because the paper is not about cefixime; it is a simulation study for N. gonorrhoeae that uses literature-derived cefixime parameters rather than fitting them.
 
-<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Alonso2021_reference" status="needs_review" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Alonso2021_reference" status="rejected" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Alonso R, Rodríguez-Achaerandio A, Aguirre-Quiñonero A, Artetxe A, Martínez-Ballesteros I, Rodríguez-Gascón A et al. Molecular Epidemiology, Antimicrobial Surveillance, and PK/PD Analysis to Guide the Treatment of Neisseria gonorrhoeae Infections. Pharmaceutics 13(10) (2021).
@@ -29,7 +29,7 @@ Alonso R, Rodríguez-Achaerandio A, Aguirre-Quiñonero A, Artetxe A, Martínez-B
 <figure class="pk-models-diagram"><img src="drugs/drug_cefixime/Cefixime_Alonso2021_reference/Cefixime_Alonso2021_reference.svg" alt="Cefixime_Alonso2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +39,7 @@ Alonso R, Rodríguez-Achaerandio A, Aguirre-Quiñonero A, Artetxe A, Martínez-B
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Alonso R, Rodríguez-Achaerandio A, Aguirre-Quiñonero A, Artetxe A, Martínez-B
 
 ### Reviewer guidance
 
-**Cefixime model held back because the absorption lag time was missing and bioavailability was assumed to be 1.**
+**Rejected because the paper is not about cefixime; it is a simulation study for N. gonorrhoeae that uses literature-derived cefixime parameters rather than fitting them.**
 
-The record defines oral clearance (144.0 L/h), volume of distribution (14.7 L), and absorption rate constant (1.0 h−1) for a one-compartment model. However, no value was extracted for the absorption lag time, so a placeholder would have been used. Additionally, the model builder assumed complete bioavailability and no first-pass metabolism, which were flagged as unacceptable deviations. Extracted — cefixime: CL/F 144 L/h, V 14.7 L, kabs 1 h−1.
+The source text indicates this is a PK/PD simulation for N. gonorrhoeae that utilizes literature-derived pharmacokinetic parameters for cefixime (CL/F, Vd, Ka) instead of conducting new estimations, making the record unsuitable for this model review. A second reader disputed the rejection verdict, with an agreement score of 0.667 and 0 of 1 readers agreeing. The model builder also defaulted the absorption delay (Tlag) and assumed unit bioavailability (F=1, Fm=1). Extracted — cefixime: CL/F 144 L/h, V 14.7 L, kabs 1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 10.7, the second reading 10.7; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -122,15 +122,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=cefixime) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_1: not acceptable; deviation_2: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | cefixime (or metabolite) | paper about another drug |  | paper subject is not cefixime: the paper is about another drug; this one is a co-medication or covariate: This is a PK/PD simulation study for N. gonorrhoeae that utilizes literature-derived pharmacokinetic parameters for cefixime (CL/F, Vd, Ka) rather than conducti |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=cefixime) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -142,61 +143,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cefixime/Cefixime_Alonso2021_reference/Cefixime_Alonso2021_reference_modelica.zip" download>Cefixime_Alonso2021_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cefixime/Cefixime_Alonso2021_reference/Cefixime_Alonso2021_reference_fmi.zip" download>Cefixime_Alonso2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cefixime/Cefixime_Alonso2021_reference/Cefixime_Alonso2021_reference_matlab.zip" download>Cefixime_Alonso2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cefixime/Cefixime_Alonso2021_reference/Cefixime_Alonso2021_reference_matlab_simbio.zip" download>Cefixime_Alonso2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cefixime/Cefixime_Alonso2021_reference/Cefixime_Alonso2021_reference_sbml.zip" download>Cefixime_Alonso2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cefixime/Cefixime_Alonso2021_reference/Cefixime_Alonso2021_reference_cellml.zip" download>Cefixime_Alonso2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4534 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0004 | kg |
-| input | model | `Cl` | 4e-05 | m3/s |
-| input | model | `VdPerKg` | 0.00021 | m3/kg |
-| input | model | `ka` | 0.0002778 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Alonso R, Rodríguez-Achaerandio A, Aguirre-Quiñonero A, Artetxe A, Martínez-Ballesteros I, Rodríguez-Gascón A et al. Molecular Epidemiology, Antimicrobial Surveillance, and PK/PD Analysis to Guide the Treatment of Neisseria gonorrhoeae Infections. Pharmaceutics 13(10) (2021). [doi:10.3390/pharmaceutics13101699](https://doi.org/10.3390/pharmaceutics13101699)
-
-**This record:** Pharmacolibrary, model `Cefixime_Alonso2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cefixime/Cefixime_Alonso2021_reference>
-
-```bibtex
-@misc{pharmacolibrary_CefiximeAlonso2021reference,
-  title  = {{Pharmacolibrary model Cefixime_Alonso2021_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_cefixime/Cefixime_Alonso2021_reference},
-  note   = {Parameters from doi:10.3390/pharmaceutics13101699},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

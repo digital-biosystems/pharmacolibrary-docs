@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;nemolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_nemolizumab/&quot;},{&quot;label&quot;:&quot;Sidbury_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nemolizumab_Fauchet2026_reference&quot;,&quot;label&quot;:&quot;Fauchet_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nemolizumab_Fauchet2026_reference&quot;,&quot;label&quot;:&quot;Fauchet_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nemolizumab — `Nemolizumab_Sidbury2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 16:18 UTC (Rejected), but the paper was screened again on 2026-10-07 08:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant kabs has a mismatched unit (L/day) for nemolizumab, causing a dimension mismatch in the model.
+> The absorption rate constant for nemolizumab was rejected because its unit, L/day, is dimensionally incompatible with a first-order rate constant.
 
-<div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Sidbury2022_reference" status="rejected" stale="true" population="adolescents with atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Sidbury2022_reference" status="rejected" stale="false" population="adolescents with atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sidbury R, Alpizar S, Laquer V, Dhawan S, Abramovits W, Loprete L et al. Pharmacokinetics, Safety, Efficacy, and Biomarker Profiles During Nemolizumab Treatment of Atopic Dermatitis in Adolescents. Dermatology and therapy 12(3):631–642 (2022).
@@ -42,7 +42,7 @@ Sidbury R, Alpizar S, Laquer V, Dhawan S, Abramovits W, Loprete L et al. Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,9 @@ Sidbury R, Alpizar S, Laquer V, Dhawan S, Abramovits W, Loprete L et al. Pharmac
 
 ### Reviewer guidance
 
-**The absorption rate constant kabs has a mismatched unit (L/day) for nemolizumab, causing a dimension mismatch in the model.**
+**The absorption rate constant for nemolizumab was rejected because its unit, L/day, is dimensionally incompatible with a first-order rate constant.**
 
-The record lists the absorption rate constant kabs with a value of 0.402 and a unit of L/day. Since absorption rate constants must be dimensionally reciprocal time (e.g., 1/day), this unit is incorrect. The missing standard conversion prevented the system from resolving this discrepancy, leading to the rejection of the nemolizumab record. Extracted — nemolizumab: CL 0.325 L/d, V/F 7.15 L, t1/2z 16.7 day, kabs 0.402 L/day, Cmax 5.98e+03 ng/mL, AUC∞ 111 ng·d/mL.
+The record lists the absorption rate constant with a value of 0.402 and a unit of L/day. This volumetric flow unit is dimensionally incompatible with an absorption rate constant, which must have units of inverse time. The unit could not be converted to standard SI units, preventing the calculation of a valid model parameter. Extracted — nemolizumab: CL 0.325 L/d, V/F 7.15 L, t1/2z 16.7 day, kabs 0.402 L/day, Cmax 5.98e+03 ng/mL, AUC∞ 111 ng·d/mL.
 
 Independently confirmed by `gpt-oss-120b`.
 

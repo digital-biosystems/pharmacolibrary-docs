@@ -5,11 +5,9 @@
 
 # cariprazine — `Cariprazine_Periclou2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
 
-> This record was reviewed on 2026-11-07 16:37 UTC (Not simulated), but the paper was screened again on 2026-10-06 15:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
-
-<div class="pk-model-meta" hidden drug="cariprazine" model-id="Cariprazine_Periclou2021_reference" status="extracted" stale="true" population="adults with schizophrenia or bipolar mania" measured-compound="cariprazine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="cariprazine" model-id="Cariprazine_Periclou2021_reference" status="not_simulated" stale="false" population="adults with schizophrenia or bipolar mania" measured-compound="cariprazine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Population Pharmacokinetics of Cariprazine and its Major Metabolites. European journal of drug metabolism and pharmacokinetics 46(1):53–69 (2021).
@@ -29,6 +27,8 @@ Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Popula
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Ka First-order absorption rate constant | kabs | 0.352 | h−1 |
@@ -40,7 +40,7 @@ Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Popula
 
 ### Reviewer guidance
 
-**The model record is unsimulated because apparent pharmacokinetic parameters for cariprazine were left at defaults and an unacceptable bioavailability assumption was flagged.**
+**Simulation was not executed for the cariprazine model, leaving its parameter coverage incomplete and preventing publication.**
 
-The record lacks explicit values for the cariprazine central volume, first peripheral volume, and DCAR central volume, which resulted in library placeholders being used instead of extracted data. Additionally, the model builder assumed bioavailability (F) and metabolite bioavailability (Fm) equal to one, a deviation adjudicated as not acceptable for this apparent parameterization. Consequently, the model was held back without simulation. Extracted — cariprazine: kabs 0.352 h−1, CL 21.5 l/h, V1/F 266 l, Q 0.431 l/h, V2 149 l, V1 128 l.
+The record shows the model was built but not simulated. Three of six expected parameters, including central and peripheral volumes, lacked emitted values or defaults. Consequently, the apparent volume and clearance parameters could not be validated through simulation. Extracted — cariprazine: kabs 0.352 h−1, CL 21.5 l/h, V1/F 266 l, Q 0.431 l/h, V2 149 l, V1 128 l.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -175,7 +175,8 @@ The record lacks explicit values for the cariprazine central volume, first perip
 | T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V1/F', 'V2', 'V1'] |
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 | T1_t_half_beta | reference | skipped | 10.1 |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | skipped | 5.9 |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | skipped | 19.1 |  | no simulated metric for this quantity (single reference sim) |

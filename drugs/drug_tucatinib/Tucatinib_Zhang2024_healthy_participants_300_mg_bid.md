@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Tucatinib terminal half-life check failed (expected 16.2, obtained 4.69) and absorption rate constant ka was not reported, so no value was extracted.
+> Tucatinib model terminal half-life is 4.69 h versus the paper's 16.2 h, and the absorption rate constant was not reported.
 
 <div class="pk-model-meta" hidden drug="tucatinib" model-id="Tucatinib_Zhang2024_healthy_participants_300_mg_bid" status="needs_review" stale="false" population="healthy participants and patients with HER2+ metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></div>
 
@@ -55,9 +55,9 @@ Zhang D, Taylor A, Zhao JJ, Endres CJ, Topletz-Erickson A. Population Pharmacoki
 
 ### Reviewer guidance
 
-**Tucatinib terminal half-life check failed (expected 16.2, obtained 4.69) and absorption rate constant ka was not reported, so no value was extracted.**
+**Tucatinib model terminal half-life is 4.69 h versus the paper's 16.2 h, and the absorption rate constant was not reported.**
 
-The simulated model’s terminal half-life of 4.69 hours contradicted the paper’s reported value of 16.2 hours, yielding a ratio of 0.2898. Absorption rate constant ka was not reported in the source, so no value was extracted, and a library placeholder would have been used. The record was held back due to these discrepancies and the use of unsupported default parameters for absorption. Extracted — tucatinib: AUCSS 2.56e+03 ng·h/mL, Cmax 447 ng/mL, Ctrough 84 ng/mL, AUC ratio 1.35, CL/F 117 L/h, V/F 793 L, t1/2β 9.16 h.
+The model's simulated terminal half-life of 4.69 h fails to match the reported 16.2 h, with a ratio of 0.2898 indicating a major structural or parameter mismatch. The absorption rate constant was not reported in the source and was substituted with library placeholder values rather than an estimated value. A second reader disputed the identification of the AUC ratio and apparent volume of distribution parameters, though the core half-life failure remains undisputed. Extracted — tucatinib: AUCSS 2.56e+03 ng·h/mL, Cmax 447 ng/mL, Ctrough 84 ng/mL, AUC ratio 1.35, CL/F 117 L/h, V/F 793 L, t1/2β 9.16 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[rac, auc].parameter_id`: this record has Q21, the second reading Q88; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -190,7 +190,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=tucatinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
 | T1_cmax | reference | skipped | 1.6 | 0.0002269 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 0.8 | 0.0002269 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 0.80 | 0.0002269 |  | unresolved concentration unit (exp '', sim 'kg/m3') |

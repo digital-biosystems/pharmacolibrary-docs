@@ -37,7 +37,7 @@ Marchbanks CR, Mikolich DJ, Mayer KH, Zinner SH, Dudley MN. Pharmacokinetics and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Marchbanks CR, Mikolich DJ, Mayer KH, Zinner SH, Dudley MN. Pharmacokinetics and
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL and CL/F), so that value has no SI equivalent. Extracted — enoxacin: CL 2.58 ml/min per kg, CL/F 3.01 ml/min per kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -93,16 +93,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[0]` |  | 20 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[enoxacin cl (or cl/f following oral dosing) following i.v.]` | 3.01 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[enoxacin cl]` | 2.58 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[0]` |  | 20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[enoxacin cl (or cl/f following oral dosing) following i.v.]` | 3.01 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[enoxacin cl]` | 2.58 |  | only_one_extracted |
 
 </details>
 

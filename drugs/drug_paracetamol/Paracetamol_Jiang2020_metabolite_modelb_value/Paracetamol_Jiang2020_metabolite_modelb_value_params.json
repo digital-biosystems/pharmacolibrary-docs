@@ -1,13 +1,16 @@
 {
  "dose_source": "paper",
  "model_id": "Paracetamol_Jiang2020_metabolite_modelb_value",
+ "molar_masses": {
+  "central.C": 0.254304
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "paper_doses_kind": "range",
  "paper_doses_mg": [
-  1400.0,
+  350.0,
   5600.0
  ],
  "paper_reference": {
@@ -21,19 +24,20 @@
  "parameters": {
   "Cl": 6.888888888888889e-08,
   "F": 1.0,
+  "MM": 0.254304,
   "Tlag": 252.0,
   "VdPerKg": 3.1571428571428576e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0014,
+  "adminMass": 0.00035,
   "ka": 0.002711111111111111,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 2318.51326782941
+  "central.C": 2318.47150303891
  },
  "reference_peaks": {
-  "central.C": 0.6006756786181371
+  "central.C": 0.1501691427872527
  },
  "stop_time": 115200.0,
  "template": "PK_1C_enteral",

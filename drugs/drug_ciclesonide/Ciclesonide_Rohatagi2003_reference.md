@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The ciclesonide model was quarantined because its clearance, volume of distribution, absorption rate, and lag time were defaulted placeholders, and its apparent metabolite parameters were misattributed to the parent.
+> The model was quarantined because ciclesonide's clearance, volume of distribution, absorption rate constant, and lag time were missing from the abstract-only record.
 
 <div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Rohatagi2003_reference" status="model_quarantined" stale="false" population="healthy subjects and asthmatic patients" measured-compound="ciclesonide-active principle (CIC-AP)" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -48,9 +48,9 @@ Rohatagi S, Arya V, Zech K, Nave R, Hochhaus G, Jensen BK et al. Population phar
 
 ### Reviewer guidance
 
-**The ciclesonide model was quarantined because its clearance, volume of distribution, absorption rate, and lag time were defaulted placeholders, and its apparent metabolite parameters were misattributed to the parent.**
+**The model was quarantined because ciclesonide's clearance, volume of distribution, absorption rate constant, and lag time were missing from the abstract-only record.**
 
-The record lacks specific values for ciclesonide's clearance, volume of distribution, absorption rate constant, and absorption lag time, so library defaults were used instead of fitted estimates. The extracted parameters of 396 L/h and 1190 L represent the active metabolite's apparent properties, yet the record omits any values for the parent drug itself. Additionally, a second reader disagreed that the parameterization was apparent and that the metabolite values belonged to the specific parameter slots for ciclesonide. Extracted — ciclesonide: CLm/F 396 L/h, Vm/F 1.19e+03 L.
+The record relied on abstract-only statistics, leaving key kinetic parameters as library placeholders rather than fitted values. A second reader disputed the extraction, disagreeing on the metabolite link and reporting no values for the apparent parameters. Additionally, the model structure was incorrect for a parent-metabolite system, and the builder assumed first-order absorption without source support. Extracted — ciclesonide: CLm/F 396 L/h, Vm/F 1.19e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has ciclesonide-active principle (CIC-AP), the second reading ciclesonide active principle (CIC-AP); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -129,14 +129,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

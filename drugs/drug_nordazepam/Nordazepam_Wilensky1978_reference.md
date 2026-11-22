@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;nordazepam&quot;,&quot;href&quot;:&quot;drugs/drug_nordazepam/&quot;},{&quot;label&quot;:&quot;Wilensky_1978 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nordazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nordazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nordazepam/Nordazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nordazepam's clearance, volume of distribution, and absorption parameters lacked explicit values, so the model was held back rather than published.
+> Nordazepam's clearance, volume of distribution, absorption rate constant, and lag time were missing, forcing the use of placeholder values.
 
 <div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Wilensky1978_reference" status="model_quarantined" stale="false" population="treated epileptic patients" measured-compound="desmethyldiazepam" parameterization="apparent" topology="1C"></div>
 
@@ -50,9 +50,9 @@ Wilensky AJ, Levy RH, Troupin AS, Moretti-Ojemann L. Clorazepate kinetics in tre
 
 ### Reviewer guidance
 
-**Nordazepam's clearance, volume of distribution, and absorption parameters lacked explicit values, so the model was held back rather than published.**
+**Nordazepam's clearance, volume of distribution, absorption rate constant, and lag time were missing, forcing the use of placeholder values.**
 
-The record was built from the abstract alone, leaving nordazepam's clearance, volume of distribution, absorption rate constant, and lag time without fitted values. Consequently, generic placeholders were used instead of specific estimates, causing the model to be quarantined. Additionally, the apparent parameterization assumed bioavailability of 1 for desmethyldiazepam, rather than estimating it for the intended drug. Extracted — nordazepam: t1/2α 1.28 hr, t1/2z 40.8 hr, Vm,norm/F 1.63 L/kg, CLm/F 34.4 ml/min.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Nordazepam's clearance, volume of distribution, absorption rate constant, and absorption lag time were not reported in the source. A second reader disputed the assignment of the distribution phase half-life of 1.28 hours. Extracted — nordazepam: t1/2α 1.28 hr, t1/2z 40.8 hr, Vm,norm/F 1.63 L/kg, CLm/F 34.4 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent t1/2 of the distribution phase: this record has none, the second reading 1.28; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -129,14 +129,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

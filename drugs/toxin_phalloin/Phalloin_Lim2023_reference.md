@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The phalloidin record lacks kinetic parameters like volume or clearance because it relies on abstract summary statistics rather than a fitted model.
 
 <div class="pk-model-meta" hidden drug="Phalloin" model-id="Phalloin_Lim2023_reference" status="rejected" stale="false" population="mice" measured-compound="phalloidin" parameterization="mechanistic" topology="1C"></div>
 
@@ -42,7 +42,13 @@ _No resolved parameters._
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The phalloidin record lacks kinetic parameters like volume or clearance because it relies on abstract summary statistics rather than a fitted model.**
+
+The review rejected the record because it failed the requirement for kinetic quantities, specifically noting the absence of a half-life, rate constant, volume, or clearance derived from a model fit. Although V and CL are listed, the record was built solely from the paper's abstract, meaning reported summary statistics stood in for a fitted model. This limitation prevented the extraction of valid kinetic parameters for the mice population.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 

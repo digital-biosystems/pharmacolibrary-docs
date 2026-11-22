@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sorafenib&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/&quot;},{&quot;label&quot;:&quot;Liu_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sorafenib_Altalal2023_reference&quot;,&quot;label&quot;:&quot;Altalal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Altalal2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_nexavar_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_nexavar_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_nexavar_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_parameter_estimates_relative_standard_erro&quot;,&quot;label&quot;:&quot;Huh_2021_parameter_estimates_relative_standard_error&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_100_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_100_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_100_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_150_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_150_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_150_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Jain2011_reference&quot;,&quot;label&quot;:&quot;Jain_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Jain2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Liu2018_reference&quot;,&quot;label&quot;:&quot;Liu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Liu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Choi_2021_tumor_growth_inhibition&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 tumor-growth inhibition&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/pd_Choi_2021_tumor_growth_inhibition.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sorafenib_Altalal2023_reference&quot;,&quot;label&quot;:&quot;Altalal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Altalal2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_nexavar_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_nexavar_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_nexavar_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_100_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_100_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_100_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_150_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_150_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_150_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Huh2021_syo_1644_200_mg&quot;,&quot;label&quot;:&quot;Huh_2021_syo_1644_200_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Huh2021_syo_1644_200_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sorafenib_Liu2018_reference&quot;,&quot;label&quot;:&quot;Liu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/Sorafenib_Liu2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Choi_2021_tumor_growth_inhibition&quot;,&quot;label&quot;:&quot;Choi_2021 \u00b7 tumor-growth inhibition&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sorafenib/pd_Choi_2021_tumor_growth_inhibition.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="molar_mass_missing:sorafenib N-oxide: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span>
 
-> The sorafenib N-oxide metabolite's volume, clearance, and formation parameters were not extracted, causing the model to be held back.
+> Sorafenib N-oxide’s volume, clearance, and formation clearance were each recorded as 0, leaving the metabolite unparameterized and the record held back.
 
 <div class="pk-model-meta" hidden drug="sorafenib" model-id="Sorafenib_Liu2018_reference" status="needs_review" stale="false" population="patients with acute myeloid leukemia" measured-compound="sorafenib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Liu T, Ivaturi V, Sabato P, Gobburu JVS, Greer JM, Wright JJ et al. Sorafenib Do
 
 ### Reviewer guidance
 
-**The sorafenib N-oxide metabolite's volume, clearance, and formation parameters were not extracted, causing the model to be held back.**
+**Sorafenib N-oxide’s volume, clearance, and formation clearance were each recorded as 0, leaving the metabolite unparameterized and the record held back.**
 
-The review flagged that the metabolite's volume, clearance, and formation clearance all evaluated to zero, meaning the model structure would have used generic placeholders rather than values from the study. Additionally, oral bioavailability and the absorption lag time were left at generic placeholder values instead of being explicitly justified by the paper's data. A molar mass was missing for sorafenib N-oxide, preventing the accurate conversion of mass-based elimination rates to molecule-based stoichiometry. Extracted — sorafenib: kabs 2.63 1/h, V 127 L, CL 10 L/h; sorafenib N-oxide: V 46.8 L, CL 79.8 L/h.
+The recorded parent–metabolite structure did not match the one-compartment enteral model structure; the metabolite setup reported sorafenib N-oxide volume, clearance, and formation clearance as 0, although its volume of 46.80 L and clearance of 79.80 L/h are listed in the record. Its molar mass is missing (reported as 0), so formation represents 1 mg of metabolite per mg of parent converted rather than one molecule per molecule; the second reader disputed the N-oxide parameter entries and the metabolism-link naming. F use library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The builder also defaulted Tlag, and the second-reader verdict was disputed, with agreement 0.538 and 0 of 1 readers agreeing. Extracted — sorafenib: kabs 2.63 1/h, V 127 L, CL 10 L/h; sorafenib N-oxide: V 46.8 L, CL 79.8 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has sorafenib → sorafenib n-oxide (metabolism), the second reading sorafenib → sorafenib n-oxide metabolite (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -168,17 +168,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_metabolite_built[sorafenib N-oxide] | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} | sorafenib N-oxide: V, CL, formation not set — the metabolite's compartment would be the template default |
-| T3_metabolite_output[sorafenib N-oxide] | skipped |  |  | the simulation recorded no per-molecule outputs |
-| T3_molar_mass[sorafenib N-oxide] | fail |  | {'MW': 0, 'MW_m1': 0} | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_shared_parameters | pass | 2 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_metabolite_built[sorafenib N-oxide] | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} |  | sorafenib N-oxide: V, CL, formation not set — the metabolite's compartment would be the template default |
+| T3_metabolite_output[sorafenib N-oxide] | skipped |  |  |  | the simulation recorded no per-molecule outputs |
+| T3_molar_mass[sorafenib N-oxide] | fail |  | {'MW': 0, 'MW_m1': 0} |  | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_shared_parameters | pass | 2 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | cross-check disputed by a second reader: verdict disputed, agreement 0.538, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>

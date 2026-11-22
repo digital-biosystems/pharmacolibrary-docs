@@ -37,36 +37,13 @@ Hydrocortisone is a glucocorticoid steroid hormone used to treat inflammatory co
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [↳ old_model_5_6](drugs/drug_hydrocortisone/Hydrocortisone_Rozenveld2022_old_model_5_6.md) | — | 1-compartment (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Al-Kofahi_2021_reference](drugs/drug_hydrocortisone/Hydrocortisone_AlKofahi2021_reference.md) | — | parent + metabolite (no model) | 0 | Al-Kofahi M et al., An integrated PK-PD model for cortisol…, British journal of clinical… (2021) | [10.1111/bcp.14470](https://doi.org/10.1111/bcp.14470) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Melin_2020_reference](drugs/drug_hydrocortisone/Hydrocortisone_Melin2020_reference.md) | — | 1-compartment (no model) | 1 | Melin J et al., Pharmacokinetic/Pharmacodynamic Evaluat…, The Journal of clinical end… (2020) | [10.1210/clinem/dgaa071](https://doi.org/10.1210/clinem/dgaa071) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | — | general linear (no model) | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | — | general linear (no model) | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hamitouche_2017_urinary_sodium_potassium_ratio](drugs/drug_hydrocortisone/pd_Hamitouche_2017_urinary_sodium_potassium_ratio.md) | urinary sodium/potassium ratio ← hydrocortisone · indirect response — drug inhibits the loss of urinary sodium/potassium ratio | — | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hydrocortisone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inducer/substrate, `SLCO1A2` inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inducer/substrate, `SLCO1A2` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | testis | `ABCB1` inducer/substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | lung | `CYP1B1` inducer | DrugBank actor |
-| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` inducer/substrate, `SLC22A8` substrate | DrugBank actor |
-| excretion | liver | `ABCB1` inducer/substrate | DrugBank actor |
-| — | adrenal gland | `CYP11B1` substrate | DrugBank actor |
-| — | prostate gland | `SRD5A2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AKR1D1 (substrate), ANXA1 (target), CYP11B2 (substrate), HSD11B1 (substrate), HSD11B2 (substrate), NR3C1 (target), SERPINA6 (binder), SHBG (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -80,13 +57,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:14 | 1:20 | 3/3/0 | 1/0/0 | 0/0/0 | 121,493/12,851 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 2 |
+| 2026-10-07 19:14 | 1:20 | 3/3/0 | 1/0/0 | 0/0/0 | 121,493/12,851 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 1 |
 
 ## Coverage
 
 - **PubMed hits:** 102 matched, 19 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 6  ·  extracted 0  ·  needs review 3  ·  rejected 3  ·  stale 1
+- **records:** 6  ·  extracted 0  ·  needs review 3  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

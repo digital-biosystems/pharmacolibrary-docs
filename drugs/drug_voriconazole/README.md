@@ -42,7 +42,7 @@ Voriconazole is a triazole antifungal used to treat fungal infections such as as
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Wang_2024_reference](drugs/drug_voriconazole/Voriconazole_Wang2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang J et al., Population Pharmacokinetics of Voricona…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2357](https://doi.org/10.1002/jcph.2357) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q37 — no SI value to build from</sub> | [Tilen_2022_reference](drugs/drug_voriconazole/Voriconazole_Tilen2022_reference.md) | — | 1-compartment (no model) | 3 (+7 cov.) | Tilen R et al., Pharmacogenetic Analysis of Voriconazol…, Pharmaceutics (2022) | [10.3390/pharmaceutics14061289](https://doi.org/10.3390/pharmaceutics14061289) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Yang_2021_reference](drugs/drug_voriconazole/Voriconazole_Yang2021_reference.md) | — | 1-compartment (no model) | 1 | Yang P et al., Predicting the Outcome of Voriconazole…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.711187](https://doi.org/10.3389/fphar.2021.711187) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [van_2023_reference](drugs/drug_voriconazole/Voriconazole_van2023_reference.md) | — | 1-compartment (no model) | 5 | van den Born DA et al., Voriconazole exposure is influenced by…, International journal of an… (2023) | [10.1016/j.ijantimicag.2023.106750](https://doi.org/10.1016/j.ijantimicag.2023.106750) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [van_2023_reference](drugs/drug_voriconazole/Voriconazole_van2023_reference.md) | — | 1-compartment (no model) | 5 | van den Born DA et al., Voriconazole exposure is influenced by…, International journal of an… (2023) | [10.1016/j.ijantimicag.2023.106750](https://doi.org/10.1016/j.ijantimicag.2023.106750) |
 
 ## Pharmacodynamics (PD)
 
@@ -56,22 +56,6 @@ Voriconazole is a triazole antifungal used to treat fungal infections such as as
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2021_probability_of_predicted_clinical_effectiveness_for_prevention_and_treatment_of_aspergillus_fumigatus_infection](drugs/drug_voriconazole/pd_Yang_2021_probability_of_predicted_clinical_effectiveness_fo.md) | probability of predicted clinical effectiveness for prevention and treatment of aspergillus fumigatus infection ← voriconazole · categorical (graded) response model | — | Yang P et al., Predicting the Outcome of Voriconazole…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.711187](https://doi.org/10.3389/fphar.2021.711187) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2021_probability_of_predicted_clinical_effectiveness_for_prevention_and_treatment_of_candida_infection](drugs/drug_voriconazole/pd_Yang_2021_probability_of_predicted_clinical_effectiveness_fo.md) | probability of predicted clinical effectiveness for prevention and treatment of candida infection ← voriconazole · categorical (graded) response model | — | Yang P et al., Predicting the Outcome of Voriconazole…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.711187](https://doi.org/10.3389/fphar.2021.711187) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=voriconazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor/substrate, `FMO3` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: FMO1 (substrate), PTGS1 (substrate).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -84,13 +68,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:08 | 5:56 | 3/1/0 | 2/0/0 | 0/0/0 | 217,393/28,780 | einfracz / qwen3.8-27b | 22 | 5/6 | 10/1 | 0 |
+| 2026-10-07 13:08 | 5:56 | 3/1/0 | 7/0/0 | 0/0/0 | 217,393/28,780 | einfracz / qwen3.8-27b | 22 | 5/6 | 10/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 195 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 1
+- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

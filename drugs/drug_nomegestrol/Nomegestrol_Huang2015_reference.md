@@ -4,11 +4,11 @@
 
 # nomegestrol — `Nomegestrol_Huang2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:57 UTC (Rejected), but the paper was screened again on 2026-10-07 08:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The nomegestrol acetate clearance parameter has units of h·kg, which is dimensionally incorrect.
+> Nomegestrol acetate clearance (CL) was reported as 5.58 h·kg, a unit inconsistent with clearance, so the record was rejected.
 
-<div class="pk-model-meta" hidden drug="nomegestrol" model-id="Nomegestrol_Huang2015_reference" status="rejected" stale="true" population="female Sprague-Dawley rats" measured-compound="nomegestrol acetate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nomegestrol" model-id="Nomegestrol_Huang2015_reference" status="rejected" stale="false" population="female Sprague-Dawley rats" measured-compound="nomegestrol acetate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Huang Q, Chen X, Zhu Y, Cao L, Riviere JE. Pharmacokinetics, tissue distribution, and excretion of nomegestrol acetate in female rats. European journal of drug metabolism and pharmacokinetics 40(4):435–442 (2015).
@@ -37,7 +37,7 @@ Huang Q, Chen X, Zhu Y, Cao L, Riviere JE. Pharmacokinetics, tissue distribution
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +47,13 @@ Huang Q, Chen X, Zhu Y, Cao L, Riviere JE. Pharmacokinetics, tissue distribution
 
 ### Reviewer guidance
 
-**The nomegestrol acetate clearance parameter has units of h·kg, which is dimensionally incorrect.**
+**Nomegestrol acetate clearance (CL) was reported as 5.58 h·kg, a unit inconsistent with clearance, so the record was rejected.**
 
-The record lists a clearance value of 5.58 h·kg, which fails the dimensional consistency check. The source was abstract-only, so these summary statistics stand in for a fitted model. A second reader also disagreed on the specific parameter values extracted from the text. Extracted — nomegestrol: CL 5.58 h·kg.
+The reported unit h·kg conflicts with the volume-per-time dimensions of clearance, which relates the rate of drug elimination to drug concentration. The record was built from the abstract alone, so summary statistics stood in for a fitted model; a second reader disagreed about whether the CL value and the equation-variable value of 10.8 h were present. Extracted — nomegestrol: CL 5.58 h·kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nomegestrol acetate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

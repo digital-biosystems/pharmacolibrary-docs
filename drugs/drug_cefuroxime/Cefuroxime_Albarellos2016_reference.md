@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefuroxime&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/&quot;},{&quot;label&quot;:&quot;Albarellos_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefuroxime_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/Cefuroxime_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefuroxime_Hartman2020_reference&quot;,&quot;label&quot;:&quot;Hartman_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/Cefuroxime_Hartman2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefuroxime_Gertler2018_reference&quot;,&quot;label&quot;:&quot;Gertler_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/Cefuroxime_Gertler2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefuroxime_Viberg2006_reference&quot;,&quot;label&quot;:&quot;Viberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/Cefuroxime_Viberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Thorsted_2020_bacterial_killing&quot;,&quot;label&quot;:&quot;Thorsted_2020 \u00b7 bacterial killing&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/pd_Thorsted_2020_bacterial_killing.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefuroxime_Gertler2018_reference&quot;,&quot;label&quot;:&quot;Gertler_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/Cefuroxime_Gertler2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefuroxime_Viberg2006_reference&quot;,&quot;label&quot;:&quot;Viberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/Cefuroxime_Viberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefuroxime_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/Cefuroxime_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefuroxime_Hartman2020_reference&quot;,&quot;label&quot;:&quot;Hartman_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/Cefuroxime_Hartman2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Thorsted_2020_bacterial_killing&quot;,&quot;label&quot;:&quot;Thorsted_2020 \u00b7 bacterial killing&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cefuroxime/pd_Thorsted_2020_bacterial_killing.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefuroxime — `Cefuroxime_Albarellos2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> This record was reviewed on 2026-11-07 14:41 UTC (Rejected), but the paper was screened again on 2026-10-07 11:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The cefuroxime clearance (0.011 L/h/kg) and volume (0.065 L/kg) parameters are inconsistent with the terminal half-life (1.12 h) and mean residence time (1.49 h) derived from abstract-only data.
+> Cefuroxime clearance was recorded as 0.011 L/h/kg instead of the source value 0.12 mg/kg, and the record lacks a fitted model.
 
-<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Albarellos2016_reference" status="rejected" stale="true" population="beagle dogs" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Albarellos2016_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Albarellos GA, Montoya L, Lorenzini PM, Passini SM, Lupi MP, Landoni MF. Pharmacokinetics of cefuroxime after intravenous, intramuscular, and subcutaneous administration to dogs. Journal of veterinary pharmacology and therapeutics 39(1):40–44 (2016).
@@ -17,7 +17,7 @@ Albarellos GA, Montoya L, Lorenzini PM, Passini SM, Lupi MP, Landoni MF. Pharmac
 
 ## Population and dosing
 
-**Population:** beagle dogs · condition healthy · age group adult · n = &gt;= 6.
+**Population:** beagle dogs · condition healthy · age group adult.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -46,7 +46,7 @@ Albarellos GA, Montoya L, Lorenzini PM, Passini SM, Lupi MP, Landoni MF. Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.412). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.412). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Albarellos GA, Montoya L, Lorenzini PM, Passini SM, Lupi MP, Landoni MF. Pharmac
 
 ### Reviewer guidance
 
-**The cefuroxime clearance (0.011 L/h/kg) and volume (0.065 L/kg) parameters are inconsistent with the terminal half-life (1.12 h) and mean residence time (1.49 h) derived from abstract-only data.**
+**Cefuroxime clearance was recorded as 0.011 L/h/kg instead of the source value 0.12 mg/kg, and the record lacks a fitted model.**
 
-The record was constructed solely from the paper's abstract, so summary statistics stand in for fitted model parameters. A dimensional check failed on a structural parameter, revealing that the reported clearance and volume values do not mathematically align with the terminal half-life or mean residence time. The second reader disagreed on multiple parameter extractions, including bioavailability, clearance, half-life, and mean residence time, further indicating instability in the data interpretation. Extracted — cefuroxime: Cmax 23 μg/mL, tmax 0.43 h, Fab 79.7 %, fe 77.2 %, t1/2z 1.12 h, MRT 1.49 h, Ct 12 h, CL 0.011 L/h/kg, … (+2).
+The clearance value in the record is 0.011 L/h/kg, whereas the source text label indicates a mean of 0.12 mg/kg. Because the record was built from the abstract alone, these summary statistics do not constitute a fitted pharmacokinetic model. A dimensional analysis error was also flagged for a parameter that carries time units but was expected to have mass per volume dimensions. A second reader disagreed with the extraction of clearance, half-life, and absorption rate, noting they were missing from the source. Extracted — cefuroxime: Cmax 23 μg/mL, tmax 0.43 h, Fab 79.7 %, fe 77.2 %, t1/2z 1.12 h, MRT 1.49 h, Ct 12 h, CL 0.011 L/h/kg, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has none, the second reading 79.70; it also differs on 9 more fields. That field does not shape the model.
 

@@ -75,7 +75,7 @@ Antimony tetramer is a chemical compound of antimony. Antimony is a metallic ele
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-17 15:28 | 59:05 | 3/0/0 | 3/1/0 | 0/0/0 | 1,055,082/60,573 | einfracz / qwen3.8-flash-next | 34 | 4/25 | 34/0 | 0 |
+| 2026-11-17 15:28 | 59:05 | 3/0/0 | 6/4/0 | 0/0/0 | 1,055,082/60,573 | einfracz / qwen3.8-flash-next | 34 | 4/25 | 34/0 | 0 |
 
 ## Coverage
 

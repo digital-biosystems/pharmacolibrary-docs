@@ -74,19 +74,6 @@ Quinapril is a prodrug that belongs to the angiotensin-converting enzyme (ACE) i
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mann_2001_DBP](drugs/toxin_quinapril/pd_Mann_2001_DBP.md) | diastolic pressure ← quinapril · inhibition effect | — | Mann SJ et al., Low-dose alpha/beta blockade in the tre…, American journal of hyperte… (2001) | [10.1016/s0895-7061(00)01302-9](https://doi.org/10.1016/s0895-7061(00)01302-9) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mann_2001_SBP](drugs/toxin_quinapril/pd_Mann_2001_SBP.md) | systolic pressure ← quinapril · inhibition effect | — | Mann SJ et al., Low-dose alpha/beta blockade in the tre…, American journal of hyperte… (2001) | [10.1016/s0895-7061(00)01302-9](https://doi.org/10.1016/s0895-7061(00)01302-9) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=quinapril).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CES1` substrate | DrugBank actor |
-| excretion | kidney | `SLC15A2` substrate, `SLC22A8` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACE (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -99,7 +86,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-13 05:26 | 16:13 | 7/7/0 | 2/0/0 | 0/0/0 | 306,130/29,493 | einfracz / qwen3.8-flash-next | 2 | 2/0 | 2/0 | 0 |
+| 2026-11-13 05:26 | 16:13 | 7/7/0 | 5/0/0 | 0/0/0 | 306,130/29,493 | einfracz / qwen3.8-flash-next | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 

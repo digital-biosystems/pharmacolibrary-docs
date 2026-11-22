@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models the inhibitory effect of manganese on Performance IQ scores using a Hill (sigmoid Emax) function within the Benchmark Dose Software, without specifying a mechanistic pharmacodynamic model like an effect compartment or turnover. The analysis reports benchmark concentrations for 1%, 2%, and 5% reductions in Performance IQ but does not provide specific potency (IC50, EC50) or rate constants (ke0, kout, etc.).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kullar_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

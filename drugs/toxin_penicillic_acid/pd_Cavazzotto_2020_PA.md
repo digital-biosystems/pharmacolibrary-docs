@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide any information on penicillic acid, as it describes a social-ecological exposure-response analysis of public health survey data regarding regular physical activity and demographic or environmental factors. No pharmacokinetic, pharmacodynamic, or potency parameters are reported.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Cavazzotto_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

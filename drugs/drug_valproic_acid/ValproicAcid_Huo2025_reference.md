@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;valproic acid&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/&quot;},{&quot;label&quot;:&quot;Huo_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ValproicAcid_Huo2025_reference&quot;,&quot;label&quot;:&quot;Huo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;ValproicAcid_Zang2022_reference&quot;,&quot;label&quot;:&quot;Zang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/ValproicAcid_Zang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ValproicAcid_Zang2022_reference&quot;,&quot;label&quot;:&quot;Zang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/ValproicAcid_Zang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ValproicAcid_Huo2025_reference&quot;,&quot;label&quot;:&quot;Huo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # valproic acid — `ValproicAcid_Huo2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was held back because the clearance label incorrectly references lamotrigine instead of valproic acid, and the absorption lag time was not explicitly estimated.
+> The record was rejected because the source paper models lamotrigine, not valproic acid, which was only a co-medication.
 
-<div class="pk-model-meta" hidden drug="valproic acid" model-id="ValproicAcid_Huo2025_reference" status="needs_review" stale="false" population="" measured-compound="valproic_acid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="valproic acid" model-id="ValproicAcid_Huo2025_reference" status="rejected" stale="false" population="" measured-compound="valproic_acid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Huo J, Liu Y, Yang J, Chen M, Yang L, Wang L et al. Dosing Optimization of Lamotrigine in Peripregnancy Epilepsy Through PopPK Modelling and Simulation. Drug design, development and therapy 19:10243–10258 (2025).
@@ -29,7 +29,7 @@ Huo J, Liu Y, Yang J, Chen M, Yang L, Wang L et al. Dosing Optimization of Lamot
 <figure class="pk-models-diagram"><img src="drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference/ValproicAcid_Huo2025_reference.svg" alt="ValproicAcid_Huo2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -39,7 +39,7 @@ Huo J, Liu Y, Yang J, Chen M, Yang L, Wang L et al. Dosing Optimization of Lamot
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Huo J, Liu Y, Yang J, Chen M, Yang L, Wang L et al. Dosing Optimization of Lamot
 
 ### Reviewer guidance
 
-**The record was held back because the clearance label incorrectly references lamotrigine instead of valproic acid, and the absorption lag time was not explicitly estimated.**
+**The record was rejected because the source paper models lamotrigine, not valproic acid, which was only a co-medication.**
 
-The typical clearance value is 2.42 L/h, but the source label identifies it as a value for lamotrigine rather than the measured compound. The absorption lag time was also not provided in the source, so a standard placeholder value would have been used for the model. Extracted — valproic acid: CL/F 2.42 L/h, V/F 68.8 L, kabs 1.93 h−1.
+The paper reports pharmacokinetic parameters for lamotrigine, with valproic acid mentioned only as a co-administered drug affecting lamotrigine clearance. Consequently, the extracted parameters for valproic acid, such as CL/F of 2.42 L/h and V/F of 68.8 L, actually describe the other molecule's kinetics. Additionally, the model builder applied apparent assumptions, setting bioavailability F to 1, rather than deriving values from the source text for valproic acid. Extracted — valproic acid: CL/F 2.42 L/h, V/F 68.8 L, kabs 1.93 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -114,15 +114,16 @@ _All readers agree on the compared fields of this record._
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=valproic_acid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev-1: not acceptable; dev-2: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | valproic_acid (or metabolite) | paper about another drug |  | paper subject is not valproic_acid: the paper is about another drug; this one is a co-medication or covariate: The study reports pharmacokinetic parameters for lamotrigine, with valproic acid mentioned only as a co-administered drug affecting lamotrigine clearance. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=valproic_acid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,61 +135,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference/ValproicAcid_Huo2025_reference_modelica.zip" download>ValproicAcid_Huo2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference/ValproicAcid_Huo2025_reference_fmi.zip" download>ValproicAcid_Huo2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference/ValproicAcid_Huo2025_reference_matlab.zip" download>ValproicAcid_Huo2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference/ValproicAcid_Huo2025_reference_matlab_simbio.zip" download>ValproicAcid_Huo2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference/ValproicAcid_Huo2025_reference_sbml.zip" download>ValproicAcid_Huo2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference/ValproicAcid_Huo2025_reference_cellml.zip" download>ValproicAcid_Huo2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.1442 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0015 | kg |
-| input | model | `Cl` | 6.722e-07 | m3/s |
-| input | model | `VdPerKg` | 0.0009829 | m3/kg |
-| input | model | `ka` | 0.0005361 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Huo J, Liu Y, Yang J, Chen M, Yang L, Wang L et al. Dosing Optimization of Lamotrigine in Peripregnancy Epilepsy Through PopPK Modelling and Simulation. Drug design, development and therapy 19:10243–10258 (2025). [doi:10.2147/DDDT.S541597](https://doi.org/10.2147/DDDT.S541597)
-
-**This record:** Pharmacolibrary, model `ValproicAcid_Huo2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference>
-
-```bibtex
-@misc{pharmacolibrary_ValproicAcidHuo2025reference,
-  title  = {{Pharmacolibrary model ValproicAcid_Huo2025_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_valproic_acid/ValproicAcid_Huo2025_reference},
-  note   = {Parameters from doi:10.2147/DDDT.S541597},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

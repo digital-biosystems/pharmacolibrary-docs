@@ -5,11 +5,11 @@
 
 # topotecan — `Topotecan_van1995_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:12 UTC (Rejected), but the paper was screened again on 2026-10-07 14:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_van1995_reference" status="needs_review" stale="true" population="patients with solid tumors" measured-compound="topotecan" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_van1995_reference" status="needs_review" stale="false" population="patients with solid tumors" measured-compound="topotecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 van Warmerdam LJ, Verweij J, Schellens JH, Rosing H, Davies BE, de Boer-Dennert M et al. Pharmacokinetics and pharmacodynamics of topotecan administered daily for 5 days every 3 weeks. Cancer chemotherapy and pharmacology 35(3):237–245 (1995).
@@ -35,7 +35,7 @@ van Warmerdam LJ, Verweij J, Schellens JH, Rosing H, Davies BE, de Boer-Dennert 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,9 +45,9 @@ van Warmerdam LJ, Verweij J, Schellens JH, Rosing H, Davies BE, de Boer-Dennert 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — topotecan: t1/2z 8.1 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has topotecan → topotecan metabolite (metabolism), the second reading topotecan → topotecan_open_form (interconversion); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

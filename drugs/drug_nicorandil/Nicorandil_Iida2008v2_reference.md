@@ -5,11 +5,11 @@
 
 # nicorandil — `Nicorandil_Iida2008v2_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:28 UTC (Needs review), but the paper was screened again on 2026-10-06 10:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Nicorandil's clearance, volume of distribution, and absorption parameters lacked specific values, so the model was held back from publication.
 
-<div class="pk-model-meta" hidden drug="nicorandil" model-id="Nicorandil_Iida2008v2_reference" status="extracted" stale="true" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nicorandil" model-id="Nicorandil_Iida2008v2_reference" status="model_quarantined" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Iida S, Kinoshita H, Holford NH. Population pharmacokinetic and pharmacodynamic modelling of the effects of nicorandil in the treatment of acute heart failure. British journal of clinical pharmacology 66(3):352–365 (2008).
@@ -23,12 +23,14 @@ Iida S, Kinoshita H, Holford NH. Population pharmacokinetic and pharmacodynamic 
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 2 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | R78 | V3/F | 0.257 | L |
@@ -36,7 +38,7 @@ Iida S, Kinoshita H, Holford NH. Population pharmacokinetic and pharmacodynamic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +48,13 @@ Iida S, Kinoshita H, Holford NH. Population pharmacokinetic and pharmacodynamic 
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Nicorandil's clearance, volume of distribution, and absorption parameters lacked specific values, so the model was held back from publication.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — nicorandil: V3/F 0.257 L, t1/2γ 0.957 h.
+The record shows that no estimates for nicorandil's clearance, volume of distribution, absorption rate constant, or absorption lag time were extracted from the source paper. Instead, the model builder applied generic default assumptions to these critical kinetic terms. This resulted in a model structure that could not accurately represent the drug's pharmacokinetics, leading to its quarantine. Extracted — nicorandil: V3/F 0.257 L, t1/2γ 0.957 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 14: this record has none, the second reading 6.6; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -144,6 +146,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q89 | pass | [time] |  | ['tab_2:row12:col7', 'tab_2:row12:col8', 'tab_2:row12:col10', 'tab_2:row12:col11'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped | 5.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 5.8 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -41,25 +41,8 @@ Leflunomide is an immunosuppressive disease-modifying antirheumatic drug used to
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q305 — no SI value to build from</sub> | [↳ initial_literature_estimate](drugs/drug_leflunomide/Leflunomide_Hopkins2015_initial_literature_estimate.md) | — | parent + metabolite (no model) | 13 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bohanec_2009_reference](drugs/drug_leflunomide/Leflunomide_Bohanec2009_reference.md) | — | 1-compartment (no model) | 0 | Bohanec Grabar P et al., Investigation of the influence of CYP1A…, Drug metabolism and disposi… (2009) | [10.1124/dmd.109.027482](https://doi.org/10.1124/dmd.109.027482) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chan_2005_reference](drugs/drug_leflunomide/Leflunomide_Chan2005_reference.md) | — | 1-compartment (no model) | 0 | Chan V et al., Population pharmacokinetics and associa…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.02415.x](https://doi.org/10.1111/j.1365-2125.2005.02415.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Li_2002_reference](drugs/drug_leflunomide/Leflunomide_Li2002_reference.md) | — | 1-compartment (no model) | 5 | Li J et al., Pharmacokinetics of leflunomide in Chin…, Acta pharmacologica Sinica (2002) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Li_2002_reference](drugs/drug_leflunomide/Leflunomide_Li2002_reference.md) | — | 1-compartment (no model) | 5 | Li J et al., Pharmacokinetics of leflunomide in Chin…, Acta pharmacologica Sinica (2002) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Shi_2005_reference](drugs/drug_leflunomide/Leflunomide_Shi2005_reference.md) | — | 1-compartment (no model) | 0 | Shi J et al., Population pharmacokinetics of the acti…, Journal of pharmacokinetics… (2005) | [10.1007/s10928-005-0049-8](https://doi.org/10.1007/s10928-005-0049-8) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=leflunomide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
-| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
-| distribution | testis | `ABCG2` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2C9` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | `ABCG2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AHR (target), DHODH (inhibitor), PTK2B (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -79,7 +62,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 7  ·  extracted 0  ·  needs review 3  ·  rejected 4  ·  stale 1
+- **records:** 7  ·  extracted 0  ·  needs review 3  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

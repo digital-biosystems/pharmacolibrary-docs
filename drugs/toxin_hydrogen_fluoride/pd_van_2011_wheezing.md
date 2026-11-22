@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the pharmacodynamic model mechanism, potency, or rate parameters for hydrogen fluoride on the measured wheezing response.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `van_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In EAC-bearing mice, 110_phenanthroline administered at doses of 2 and 4 mg/kg significantly reversed tumor-induced decreases in red blood cell (RBC) counts. The paper describes this protective action on the hemopoietic system but does not specify a quantitative pharmacodynamic mechanism or kinetic model parameters for this effect.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Anchuri_2012`
 - **model family:** `unknown`
 - **driver:** `dose_only`

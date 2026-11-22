@@ -4,11 +4,11 @@
 
 # chlorpromazine — `Chlorpromazine_Nielsen1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:23 UTC (Rejected), but the paper was screened again on 2026-10-06 15:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="chlorpromazine" model-id="Chlorpromazine_Nielsen1983_reference" status="needs_review" stale="true" population="neonate with in utero chlorpromazine exposure" measured-compound="chlorpromazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chlorpromazine" model-id="Chlorpromazine_Nielsen1983_reference" status="needs_review" stale="false" population="neonate with in utero chlorpromazine exposure" measured-compound="chlorpromazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nielsen HC, Wiriyathian S, Rosenfeld R, Leveno K, Garriott JC. Chlorpromazine excretion by the neonate following chronic in utero exposure. Pediatric pharmacology (New York, N.Y.) 3(1):1–5 (1983).
@@ -34,7 +34,7 @@ Nielsen HC, Wiriyathian S, Rosenfeld R, Leveno K, Garriott JC. Chlorpromazine ex
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,9 +44,9 @@ Nielsen HC, Wiriyathian S, Rosenfeld R, Leveno K, Garriott JC. Chlorpromazine ex
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chlorpromazine: t1/2α 1.46 days, t1/2z 3.19 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has chlorpromazine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

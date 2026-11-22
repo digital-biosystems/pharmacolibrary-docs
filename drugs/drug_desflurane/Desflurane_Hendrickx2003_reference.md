@@ -16,7 +16,7 @@ Hendrickx JF, Dishart MK, De Wolf AM. Isoflurane and desflurane uptake during li
 
 ## Population and dosing
 
-**Population:** patients undergoing liver resection and transplantation · condition liver resection or transplantation · age group adult · n = &gt;35.
+**Population:** patients undergoing liver resection and transplantation · condition liver resection or transplantation · age group adult.
 
 ## Model
 

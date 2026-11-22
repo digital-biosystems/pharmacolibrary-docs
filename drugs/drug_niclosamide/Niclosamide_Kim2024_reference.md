@@ -5,11 +5,11 @@
 
 # niclosamide — `Niclosamide_Kim2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 09:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Niclosamide absorption rate constant recorded in L/h instead of 1/h, causing a dimension mismatch and triggering a false clearance/volume implausibility flag.
+> Niclosamide was rejected because its absorption rate constant was reported as 0.042 L/h, although an absorption rate constant has units of inverse time.
 
-<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Kim2024_reference" status="rejected" stale="true" population="male hamsters" measured-compound="niclosamide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Kim2024_reference" status="rejected" stale="false" population="male hamsters" measured-compound="niclosamide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kim T, Jung W, Cho S, Kim G, Yun HY, Chae JW. Predicting lung exposure of intramuscular niclosamide as an antiviral agent: Power-law based pharmacokinetic modeling. Clinical and translational science 17(5):e13833 (2024).
@@ -44,7 +44,7 @@ Kim T, Jung W, Cho S, Kim G, Yun HY, Chae JW. Predicting lung exposure of intram
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,11 @@ Kim T, Jung W, Cho S, Kim G, Yun HY, Chae JW. Predicting lung exposure of intram
 
 ### Reviewer guidance
 
-**Niclosamide absorption rate constant recorded in L/h instead of 1/h, causing a dimension mismatch and triggering a false clearance/volume implausibility flag.**
+**Niclosamide was rejected because its absorption rate constant was reported as 0.042 L/h, although an absorption rate constant has units of inverse time.**
 
-The absorption rate constant has a value of 0.042 with the unit L/h, conflicting with its meaning as a first-order rate constant. This dimensional inconsistency triggered a structural validation failure for the parameter. Additionally, a separate check flagged the total clearance or volume as outside the physiological window, likely due to an extraction error or missing unit conversion. Extracted — niclosamide: V1 0.371 L, V2 1.65 L, CL 0.485 L/h, Q 0.365 L/h, kabs 0.042 L/h, Fab 0.43.
+The record assigns kabs, the absorption rate constant, a value of 0.042 L/h, which conflicts dimensionally with inverse time; that reported unit could not be converted to SI. The review also found clearance relative to volume outside the physiological window, consistent with a unit or scale extraction error, but gives no numerical comparison. Extracted — niclosamide: V1 0.371 L, V2 1.65 L, CL 0.485 L/h, Q 0.365 L/h, kabs 0.042 L/h, Fab 0.43.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

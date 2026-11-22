@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the elimination rate constant produced a model half-life of 0.975 hours, diverging from the paper's 0.6 hours, while bioavailability and lag time used library defaults.
+> The record for camostat was held because the model's terminal half-life of 0.9746047108603964 h exceeds the paper's 0.6 h and bioavailability was left at a library default.
 
 <div class="pk-model-meta" hidden drug="camostat" model-id="Camostat_Kosinsky2022_reference" status="needs_review" stale="false" population="adults" measured-compound="FOY-251" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,7 @@ Kosinsky Y, Peskov K, Stanski DR, Wetmore D, Vinetz J. Semi-Mechanistic Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,11 @@ Kosinsky Y, Peskov K, Stanski DR, Wetmore D, Vinetz J. Semi-Mechanistic Pharmaco
 
 ### Reviewer guidance
 
-**The record was held back because the elimination rate constant produced a model half-life of 0.975 hours, diverging from the paper's 0.6 hours, while bioavailability and lag time used library defaults.**
+**The record for camostat was held because the model's terminal half-life of 0.9746047108603964 h exceeds the paper's 0.6 h and bioavailability was left at a library default.**
 
-The calculated terminal half-life of 0.975 hours significantly exceeds the reported 0.6 hours, indicating a structural mismatch in elimination kinetics. Although absolute bioavailability is listed as 0.051, the record flagged bioavailability and lag time as using unreported defaults rather than paper-derived estimates. Additionally, a secondary reader disagreed on the specific dose compound and the presence of extraction values for absorption and bioavailability. Extracted — FOY-251: kabs 0.67 1/h, Fab 0.051, V 22.4 L, kel 1.22 1/h.
+The model's elimination rate constant of 1.22 1/h produces a terminal half-life of 0.9746047108603964 h, which is 1.6243 times the 0.6 h reported in the paper. The bioavailability fraction for FOY-251 was not explicitly extracted, causing the model to rely on default values rather than the 0.051 estimated in the study. A second reader disputed the dose compound identification, identifying it as camostat mesylate rather than camostat, and disagreed on the specific parameter assignments. Extracted — FOY-251: kabs 0.67 1/h, Fab 0.051, V 22.4 L, kel 1.22 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has camostat, the second reading camostat mesylate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has camostat, the second reading camostat mesylate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -100,17 +100,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[fbio]` |  | 0.051 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fbio]` | 0.051 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` |  | 0.67 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 0.67 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | camostat | camostat mesylate | mismatch |
+| `gpt-oss-120b` | `parameters[fbio]` |  | 0.051 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fbio]` | 0.051 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 0.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | camostat | camostat mesylate | mismatch |
 
 </details>
 
@@ -143,7 +143,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=FOY-251) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
 | T1_t_half_beta | reference | fail | 0.6 | 0.9746 | 1.624 | h→SI vs simulated h |
 
 <details class="legend">

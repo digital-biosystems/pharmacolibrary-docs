@@ -83,22 +83,6 @@ A glucocorticoid given, as the free alcohol or in esterified form, orally, intra
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">mouse</span> | [Silbermann_1982_35SO4](drugs/toxin_triamcinolone/pd_Silbermann_1982_35SO4.md) | 35SO4 incorporation biomarker turnover ← triamcinolone hexacetonide | — | Silbermann M et al., Studies on hormonal regulation of the g…, Journal of craniofacial gen… (1982) | — |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Slatore_2009_serum_glucose_concentration](drugs/toxin_triamcinolone/pd_Slatore_2009_serum_glucose_concentration.md) | serum glucose concentration ← triamcinolone · direct linear effect | model (no simulator) | Slatore CG et al., The association of inhaled corticostero…, The American journal of med… (2009) | [10.1016/j.amjmed.2008.09.048](https://doi.org/10.1016/j.amjmed.2008.09.048) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=triamcinolone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | blood | `BCHE` inducer | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inducer/substrate | DrugBank actor |
-| metabolism | liver | `BCHE` inducer, `CYP3A4` inducer/substrate, `CYP3A5` inducer/substrate, `CYP3A7` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` inducer/substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: NR3C1 (target), PTGS2 (inhibitor), SERPINA6 (binder).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -111,7 +95,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-13 06:54 | 35:33 | 9/15/0 | 4/0/0 | 0/0/0 | 909,744/72,890 | einfracz / qwen3.8-flash-next | 17 | 3/11 | 17/0 | 0 |
+| 2026-11-13 06:54 | 35:33 | 9/15/0 | 6/0/0 | 0/0/0 | 909,744/72,890 | einfracz / qwen3.8-flash-next | 17 | 3/11 | 17/0 | 0 |
 
 ## Coverage
 

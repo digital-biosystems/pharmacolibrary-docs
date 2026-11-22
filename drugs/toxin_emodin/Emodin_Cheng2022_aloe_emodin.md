@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Emodin&quot;,&quot;href&quot;:&quot;drugs/toxin_emodin/&quot;},{&quot;label&quot;:&quot;Cheng_2022 \u00b7 aloe_emodin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emodin_Song2022_reference&quot;,&quot;label&quot;:&quot;Song_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_emodin/Emodin_Song2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emodin_Song2022_reference&quot;,&quot;label&quot;:&quot;Song_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_emodin/Emodin_Song2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Emodin record rejected because Cmax, AUCt, and AUC∞ are in molar units without a molecular weight to convert them to mass-based SI units.
 
 <div class="pk-model-meta" hidden drug="Emodin" model-id="Emodin_Cheng2022_aloe_emodin" status="rejected" stale="false" population="rats" measured-compound="Emodin" parameterization="mechanistic" topology="retention"></div>
 
@@ -54,7 +54,13 @@ Cheng W, Wu S, Yuan Z, Hu W, Yu X, Kang N et al. Pharmacokinetics, Tissue Distri
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Emodin record rejected because Cmax, AUCt, and AUC∞ are in molar units without a molecular weight to convert them to mass-based SI units.**
+
+The parameters for emodin concentration and exposure (Cmax, AUCt, AUC∞) are recorded in nmol/L and nmol·h/L. These molar units could not be converted to the required mass-based SI dimensions because no molecular weight was available for the conversion. Extracted — emodin: Cmax 42 nmol/L, tmax 0.22 h, t1/2z 3.44 h, AUCt 27 nmol·h/L, AUC∞ 31.3 nmol·h/L, MRT 3.17 h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

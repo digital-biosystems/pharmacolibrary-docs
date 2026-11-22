@@ -4,11 +4,11 @@
 
 # tolazamide — `Tolazamide_Welling1982_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-05 04:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="tolazamide" model-id="Tolazamide_Welling1982_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="tolazamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolazamide" model-id="Tolazamide_Welling1982_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="tolazamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Welling PG, Patel RB, Patel UR, Gillespie WR, Craig WA, Albert KS. Bioavailability of tolazamide from tablets: comparison of in vitro and in vivo results. Journal of pharmaceutical sciences 71(11):1259–1263 (1982).
@@ -36,7 +36,7 @@ Welling PG, Patel RB, Patel UR, Gillespie WR, Craig WA, Albert KS. Bioavailabili
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Welling PG, Patel RB, Patel UR, Gillespie WR, Craig WA, Albert KS. Bioavailabili
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tolazamide: t1/2ka 1 hr, t1/2z 4.6 hr, Frel 1 Formulations A.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tolazamide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -17,7 +17,7 @@ Okada Y, Seo T, Ishitsu T, Wanibuchi A, Hashimoto N, Higa Y et al. Population es
 
 ## Population and dosing
 
-**Population:** Japanese epileptic patients · condition epilepsy · age group adult · n = ? 99.
+**Population:** Japanese epileptic patients · condition epilepsy · age group adult.
 
 ## Model
 

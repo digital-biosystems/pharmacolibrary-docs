@@ -17,7 +17,7 @@ Isberner N, Kraus S, Grigoleit GU, Aghai F, Kurlbaum M, Zimmermann S et al. Ruxo
 
 ## Population and dosing
 
-**Population:** patients with acute or chronic graft versus host disease · condition graft versus host disease · age group adult · n = ,.
+**Population:** patients with acute or chronic graft versus host disease · condition graft versus host disease · age group adult.
 
 ## Model
 

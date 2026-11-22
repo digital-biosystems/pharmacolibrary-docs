@@ -5,11 +5,11 @@
 
 # ketanserin — `Ketanserin_Kurowski1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:54 UTC (Rejected), but the paper was screened again on 2026-10-06 15:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
+> Only clearance was extracted — no volume; aUCSS and AUC∞ have no unit.
 
-<div class="pk-model-meta" hidden drug="ketanserin" model-id="Ketanserin_Kurowski1985_reference" status="needs_review" stale="true" population="elderly subjects" measured-compound="ketanserin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ketanserin" model-id="Ketanserin_Kurowski1985_reference" status="needs_review" stale="false" population="elderly subjects" measured-compound="ketanserin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Kurowski M. Bioavailability and pharmacokinetics of ketanserin in elderly subjects. European journal of clinical pharmacology 28(4):411–417 (1985).
@@ -17,7 +17,7 @@ Kurowski M. Bioavailability and pharmacokinetics of ketanserin in elderly subjec
 
 ## Population and dosing
 
-**Population:** elderly subjects · condition healthy · age group elderly · n = &gt;=21.
+**Population:** elderly subjects · condition healthy · age group elderly.
 
 ## Model
 
@@ -40,7 +40,7 @@ Kurowski M. Bioavailability and pharmacokinetics of ketanserin in elderly subjec
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Kurowski M. Bioavailability and pharmacokinetics of ketanserin in elderly subjec
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume; aUCSS and AUC∞ have no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketanserin: Fab 52.7 %, Frel 85.5 %, Cmax 104 ng/ml, t1/2z 17.7 h, AUCSS 666 ng X h/ml, AUC∞ 1.2e+03 ng X h/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 

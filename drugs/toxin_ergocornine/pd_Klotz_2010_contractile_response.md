@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided text states that ergocornine (measured in M) stimulates a contractile response expressed as a percentage. The specific pharmacodynamic mechanism and potency values are not given in the record.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Klotz_2010`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -4,11 +4,11 @@
 
 # coagulation factor VIII — `CoagulationFactorViii_Preijers2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 16:01 UTC (Needs review), but the paper was screened again on 2026-10-05 18:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Preijers2018_reference" status="needs_review" stale="true" population="patients with severe or moderate haemophilia A" measured-compound="FVIII" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Preijers2018_reference" status="needs_review" stale="false" population="patients with severe or moderate haemophilia A" measured-compound="FVIII" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Preijers T, van Moort I, Fijnvandraat K, Leebeek FWG, Cnossen MH, Mathôt RAA. Cross-evaluation of Pharmacokinetic-Guided Dosing Tools for Factor VIII. Thrombosis and haemostasis 118(3):514–525 (2018).
@@ -16,7 +16,7 @@ Preijers T, van Moort I, Fijnvandraat K, Leebeek FWG, Cnossen MH, Mathôt RAA. C
 
 ## Population and dosing
 
-**Population:** patients with severe or moderate haemophilia A · condition haemophilia A · n = &gt;=39.
+**Population:** patients with severe or moderate haemophilia A · condition haemophilia A.
 
 **Dosed compound ≠ measured compound:** dosed recombinant FVIII, measured FVIII.
 
@@ -37,7 +37,7 @@ Preijers T, van Moort I, Fijnvandraat K, Leebeek FWG, Cnossen MH, Mathôt RAA. C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

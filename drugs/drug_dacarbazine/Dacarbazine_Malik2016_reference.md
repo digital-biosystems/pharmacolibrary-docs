@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Malik_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Middleton2000_reference&quot;,&quot;label&quot;:&quot;Middleton_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Osieka_1984_GD&quot;,&quot;label&quot;:&quot;Osieka_1984 \u00b7 GD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/pd_Osieka_1984_GD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Middleton2000_reference&quot;,&quot;label&quot;:&quot;Middleton_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Malik2016_reference" status="needs_review" stale="false" population="Hodgkin&#39;s lymphoma patients" measured-compound="dacarbazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Malik2016_reference" status="needs_review" stale="false" population="Hodgkin&#39;s lymphoma male patients" measured-compound="dacarbazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Malik MZ, Ahmad M, Muahammad S, Aamir MN. Pharmacokinetic evaluation of anticancer drugs in Hodgkin's lymphoma patients after their simultaneous administration. Pakistan journal of pharmaceutical sciences 29(6):2079–2082 (2016).
@@ -17,8 +17,6 @@ Malik MZ, Ahmad M, Muahammad S, Aamir MN. Pharmacokinetic evaluation of anticanc
 ## Population and dosing
 
 **Population:** review reference.
-
-**Dosed compound ≠ measured compound:** dosed ABVD combination (Adriamycin, Bleomycin, Vinblastine, Dacarbazine), measured dacarbazine.
 
 ## Model
 
@@ -37,7 +35,7 @@ Malik MZ, Ahmad M, Muahammad S, Aamir MN. Pharmacokinetic evaluation of anticanc
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +49,7 @@ Malik MZ, Ahmad M, Muahammad S, Aamir MN. Pharmacokinetic evaluation of anticanc
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — dacarbazine: CL 347 ml/h, V 16.8 L/Kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q352: this record has 11.31, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 118.3, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,14 +78,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 118.3 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q352]` | 11.31 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q61]` | 16.77 | 11.31 | mismatch |
+| `gpt-oss-120b` | `values[Q88]` |  | 118.3 | only_one_extracted |
 
 </details>
 
@@ -143,4 +143,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdacarbazine%5D%20Dacarbazine_Malik2016_reference&body=Drug%3A%20dacarbazine%0ARecord%3A%20Dacarbazine_Malik2016_reference%0APaper%3A%20Malik_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dacarbazine/Dacarbazine_Malik2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 12:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 02:30 UTC</sub>

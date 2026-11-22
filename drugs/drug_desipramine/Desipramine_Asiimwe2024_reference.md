@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The total clearance for desipramine is mislabeled as 11C-MIBG and has an implausible unit of mL/min/g, triggering rejection.
+> The total clearance parameter for desipramine is implausible at 3.65 mL/min/g because its label misidentifies the compound as 11C-MIBG.
 
 <div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_Asiimwe2024_reference" status="rejected" stale="false" population="healthy adults (desipramine clinical trial dataset)" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,9 +47,9 @@ Asiimwe IG, S'fiso Ndzamba B, Mouksassi S, Pillai GC, Lombard A, Lang J. Machine
 
 ### Reviewer guidance
 
-**The total clearance for desipramine is mislabeled as 11C-MIBG and has an implausible unit of mL/min/g, triggering rejection.**
+**The total clearance parameter for desipramine is implausible at 3.65 mL/min/g because its label misidentifies the compound as 11C-MIBG.**
 
-The record lists the total clearance value as 3.65 with the specific label "11C-MIBG" and units of "mL/min/g", which is a mass-specific uptake metric not applicable to desipramine. This unit scale is physiologically incompatible with total clearance for a small molecule in human trials, indicating a likely extraction error from the source text. While the volumes of 891.995 L and 368.922 L are large, the primary cause of rejection is the incorrect magnitude and context of the clearance parameter. Extracted — desipramine: V1 892 L, V2 369 L, Q 79 L/h, CL 3.65 mL/min/g.
+The record lists the total clearance value as 3.65 with the unit mL/min/g, which is a tissue-specific metric rather than a standard physiological clearance unit. The verbatim label for this parameter reads "11C-MIBG", indicating it was extracted from a different context or compound than desipramine. This mismatch in label and unit renders the clearance magnitude outside the physiological window, leading to rejection. Extracted — desipramine: V1 892 L, V2 369 L, Q 79 L/h, CL 3.65 mL/min/g.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has desipramine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

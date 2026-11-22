@@ -16,7 +16,7 @@ Follitropin is a gonadotropin used to treat infertility. It is administered via 
 
 ## Start here
 
-> **Rose_2016_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> gonadotropin downregulated healthy women, n = &gt;24. [Run it in the simulator](drugs/drug_follitropin/Follitropin_Rose2016_reference.md?tab=Simulation) · [record](drugs/drug_follitropin/Follitropin_Rose2016_reference.md)
+> **Rose_2016_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> gonadotropin downregulated healthy women. [Run it in the simulator](drugs/drug_follitropin/Follitropin_Rose2016_reference.md?tab=Simulation) · [record](drugs/drug_follitropin/Follitropin_Rose2016_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -24,24 +24,13 @@ Follitropin is a gonadotropin used to treat infertility. It is administered via 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Rose_2016_reference](drugs/drug_follitropin/Follitropin_Rose2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Rose TH et al., Characterisation of Population Pharmaco…, Drugs in R&D (2016) | [10.1007/s40268-016-0126-z](https://doi.org/10.1007/s40268-016-0126-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Rose_2016_reference](drugs/drug_follitropin/Follitropin_Rose2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Rose TH et al., Characterisation of Population Pharmaco…, Drugs in R&D (2016) | [10.1007/s40268-016-0126-z](https://doi.org/10.1007/s40268-016-0126-z) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Taketani_2010_Time_to_dominant_follicle_18_mm](drugs/drug_follitropin/pd_Taketani_2010_Time_to_dominant_follicle_18_mm.md) | Time to dominant follicle ≥18 mm ← follitropin · time-to-event model | — | Taketani Y et al., Recombinant follicle-stimulating hormon…, Reproductive medicine and b… (2010) | [10.1007/s12522-009-0044-7](https://doi.org/10.1007/s12522-009-0044-7) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=follitropin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-
-<sub>Actors without a tissue in the table: FSHR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

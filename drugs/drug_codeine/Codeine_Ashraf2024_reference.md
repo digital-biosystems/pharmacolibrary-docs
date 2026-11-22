@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Ashraf_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Guay1987_reference&quot;,&quot;label&quot;:&quot;Guay_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Guay1988_reference&quot;,&quot;label&quot;:&quot;Guay_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Guay1988_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_KuKanich2016_reference&quot;,&quot;label&quot;:&quot;KuKanich_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_KuKanich2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Thigpen2019v2_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # codeine — `Codeine_Ashraf2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record lacks codeine absorption and clearance values, and the model assumes unit bioavailability without molar correction.
+> The record was rejected because codeine-6-glucuronide is an unlinked metabolite with no metabolic rate parameter connecting it to codeine.
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Ashraf2024_reference" status="needs_review" stale="false" population="ambulatory surgical patients" measured-compound="codeine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Ashraf2024_reference" status="rejected" stale="false" population="ambulatory surgical patients" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Ashraf MW, Poikola S, Neuvonen M, Kiiski JI, Kontinen VK, Olkkola KT et al. Population Pharmacokinetic Quantification of CYP2D6 Activity in Codeine Metabolism in Ambulatory Surgical Patients for Model-Informed Precision Dosing. Clinical pharmacokinetics 63(11):1547–1560 (2024).
@@ -17,38 +17,37 @@ Ashraf MW, Poikola S, Neuvonen M, Kiiski JI, Kontinen VK, Olkkola KT et al. Popu
 
 ## Population and dosing
 
-**Population:** ambulatory surgical patients · condition ambulatory surgery · age group adult · n = 997.
+**Population:** ambulatory surgical patients · condition surgical · age group adult · n = 997.
 
 **Dosing:** 60 mg, oral, single.
 
 ## Model
 
-**Structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 10 extracted.  
-**Availability:** Model available in **Models**; browser simulation unavailable.
+**Structure:** general linear; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 11 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | ka,cod | kabs | 8.74 | h-1 |
-| CLcod | CL/F | 110 | L/h |
-| Vc,cod | V | 427.5 | L |
-| Fcod | equation variable | 0.84 |  |
+| CLcod | CL | 110 | L/h |
+| Vc,cod | V1 | 427.5 | L |
 | CLmor | CL | 357.5 | L/h |
 | Vc,mor | V | 22.8 | L |
 | fmor | fm | 0.16 |  |
+| GENeff | kout_peripheral | 1.00 | 1/h |
 | CLC6G | CL | 7.96 | L/h |
 | Vc,C6G | V | 5.36 | L |
 | CLM3G | CL | 9.45 | L/h |
 | Vc,M3G | V | 8.47 | L |
-| εmor | equation variable | 0.149 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.824). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,11 +57,11 @@ Ashraf MW, Poikola S, Neuvonen M, Kiiski JI, Kontinen VK, Olkkola KT et al. Popu
 
 ### Reviewer guidance
 
-**The record lacks codeine absorption and clearance values, and the model assumes unit bioavailability without molar correction.**
+**The record was rejected because codeine-6-glucuronide is an unlinked metabolite with no metabolic rate parameter connecting it to codeine.**
 
-The extracted codeine absorption rate constant (8.74 h-1) and oral clearance (110 L/h) were not included in the final parameter set. Consequently, a library placeholder would have been used for these missing values instead of the reported data. The model builder also assumed bioavailability and metabolic fractions to be 1, treating the parameters as apparent rather than intrinsic. Extracted — codeine: kabs 8.74 h-1, CL/F 110 L/h, V 428 L; morphine: CL 358 L/h, V 22.8 L, fm 0.16; codeine-6-glucuronide: CL 7.96 L/h, V 5.36 L; morphine-3-glucuronide: CL 9.45 L/h, V 8.47 L.
+The link from codeine to codeine-6-glucuronide has no associated metabolic fraction or rate parameter, rendering the metabolite compartment unreachable from the dose. Additionally, the second reader identified a bioavailability fraction of 0.84 and a residual variance of 0.149 for morphine that are missing from the primary extraction. Extracted — codeine: kabs 8.74 h-1, CL 110 L/h, V1 428 L, kout_peripheral 1 1/h; morphine: CL 358 L/h, V 22.8 L, fm 0.16; codeine-6-glucuronide: CL 7.96 L/h, V 5.36 L; morphine-3-glucuronide: CL 9.45 L/h, V 8.47 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fcod: this record has none, the second reading 0.84; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -71,17 +70,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | ka,cod | `Q49` · kabs | 8.74 | h-1 | 0.002428 | 1/s | 1/h | boundary_llm_dim_refused (0.8) | Tab2:row2:col2 |
-| CLcod | `Q27` · CL/F | 110 | L/h | 3.056e-05 | m3/s | l/h | llm (0.6) | Tab2:row3:col2 |
-| Vc,cod | `Q61` · V | 427.5 | L | 0.4275 | m3 | l | llm_corrected (0.6) | Tab2:row4:col2 |
-| Fcod | `Q900` · equation variable | 0.84 |  |  |  |  | llm (0.6) | Tab2:row5:col2 |
+| CLcod | `Q22` · CL | 110 | L/h | 3.056e-05 | m3/s | l/h | llm (0.6) | Tab2:row3:col2 |
+| Vc,cod | `Q63` · V1 | 427.5 | L | 0.4275 | m3 | l | llm_confirmed (0.6) | Tab2:row4:col2 |
 | CLmor | `Q22` · CL | 357.5 | L/h | 9.931e-05 | m3/s | l/h | exact (1) | Tab2:row6:col2 |
 | Vc,mor | `Q61` · V | 22.8 | L | 0.0228 | m3 | l | exact (1) | Tab2:row7:col2 |
-| fmor | `Q45` · fm | 0.16 |  |  |  |  | exact (1) | Tab2:row8:col2 |
+| fmor | `Q45` · fm | 0.16 |  | 0.16 |  |  | exact (1) | Tab2:row8:col2 |
+| GENeff | `Q346` · kout_peripheral | 1.00 | 1/h | 0.0002778 | 1/s | 1/h | llm (0.6) | Tab2:row9:col2 |
 | CLC6G | `Q22` · CL | 7.96 | L/h | 2.211e-06 | m3/s | l/h | exact (1) | Tab2:row10:col2 |
 | Vc,C6G | `Q61` · V | 5.36 | L | 0.00536 | m3 | l | exact (1) | Tab2:row11:col2 |
 | CLM3G | `Q22` · CL | 9.45 | L/h | 2.625e-06 | m3/s | l/h | exact (1) | Tab2:row12:col2 |
 | Vc,M3G | `Q61` · V | 8.47 | L | 0.00847 | m3 | l | exact (1) | Tab2:row13:col2 |
-| εmor | `Q900` · equation variable | 0.149 |  |  |  |  | llm (0.6) | Tab2:row20:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -90,31 +88,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'GENeff' — extend the ontology if this is a real PK parameter (source ['Tab2:row9:col2'])
-- dropped duplicate Q49 ('ηka,cod', value '3.75') — already have one for this compound
-- dropped unlinked row (NIL): 'ηVc,cod' — extend the ontology if this is a real PK parameter (source ['Tab2:row15:col2'])
-- dropped unlinked row (NIL): 'ηFcod' — extend the ontology if this is a real PK parameter (source ['Tab2:row16:col2'])
-- dropped unlinked row (NIL): 'ηCLmor' — extend the ontology if this is a real PK parameter (source ['Tab2:row17:col2'])
-- dropped unlinked row (NIL): 'ηRmor' — extend the ontology if this is a real PK parameter (source ['Tab2:row18:col2'])
+- dropped unlinked row (NIL): 'Fcod' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col2'])
 - dropped unlinked row (NIL): 'εcod' — extend the ontology if this is a real PK parameter (source ['Tab2:row19:col2'])
+- dropped unlinked row (NIL): 'εmor' — extend the ontology if this is a real PK parameter (source ['Tab2:row20:col2'])
 - dropped unlinked row (NIL): 'εC6G' — extend the ontology if this is a real PK parameter (source ['Tab2:row21:col2'])
 - dropped unlinked row (NIL): 'εM3G' — extend the ontology if this is a real PK parameter (source ['Tab2:row22:col2'])
+- implicit units: 'GENeff' → 1/h (from the popPK convention: "The parameter 'GENeff' is assigned to 'kout_peripheral', described as a 'First-order rate constant for irreversible elim")
 - metabolite volume: 'Vc,mor' Q63→Q61 for morphine — it is 1-compartment, so its central volume is its only volume
 - metabolite volume: 'Vc,C6G' Q63→Q61 for codeine-6-glucuronide — it is 1-compartment, so its central volume is its only volume
 - metabolite volume: 'Vc,M3G' Q63→Q61 for morphine-3-glucuronide — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=codeine
-- topology: 3 first-order transfer(s) across 4 compounds → general_linear
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CLcod); Q63 (Vc,cod); Q22 (CLmor); Q61 (Vc,mor); Q22 (CLC6G); Q61 (Vc,C6G); Q22 (CLM3G); Q61 (Vc,M3G)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=codeine
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — 3 metabolites — the templates hold two
-- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 10 linked by role; re-tagged codeine→parent ×8, codeine→morphine ×7, codeine→codeine-6-glucuronide ×3, codeine→morphine-3-glucuronide ×3
-- molar mass: PubChem entry choice failed (JSONDecodeError)
-- molar mass: none of 2 PubChem candidate(s) is 'morphine-3-glucuronide' (LLM) — left in mass units
-- molar mass: none found for 'morphine-3-glucuronide' — its concentrations stay mass-only
+- amount-only peripheral compartment: a peripheral output rate (kout_peripheral) is present with no reported volume — model its AMOUNT; concentration is not identifiable without an assumed volume
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 10 linked by role; re-tagged codeine→parent ×8, codeine→morphine ×6, codeine→codeine-6-glucuronide ×3, codeine→morphine-3-glucuronide ×3
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -122,23 +114,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.7 (14/20 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.824 (14/17 fields) | 3 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[clcod].parameter_id` | Q27 | Q22 | mismatch |
-| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[fcod].parameter_id` | Q900 | Q40 | mismatch |
-| `gpt-oss-120b` | `parameters[vc,cod].parameter_id` | Q61 | Q63 | mismatch |
-| `gpt-oss-120b` | `parameters[εmor]` | 0.149 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fcod]` |  | 0.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geneff]` | 1.00 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[εmor]` |  | 0.149 | only_one_extracted |
 
 </details>
 
@@ -152,41 +141,29 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 10 |  |
+| C0_has_structural_params | pass |  | 11 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row6:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row10:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row12:col2'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col2'] |
+| C5_dimension_Q346 | pass | 1 / [time] |  | ['Tab2:row9:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab2:row2:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row4:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row7:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row11:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row13:col2'] |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row4:col2'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 110 | ['Tab2:row3:col2'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 110 L/h | ['Tab2:row3:col2'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 358 L/h | ['Tab2:row6:col2'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.96 L/h | ['Tab2:row10:col2'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 9.45 L/h | ['Tab2:row12:col2'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 110 L/h | ['Tab2:row3:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 428 L | ['Tab2:row4:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 22.8 L | ['Tab2:row7:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 5.36 L | ['Tab2:row11:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 8.47 L | ['Tab2:row13:col2'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=codeine) | C_central | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 9 scholar param(s) emitted or defaulted | 7 covered | neither emitted nor in defaulted[]: ['kabs', 'CL/F'] |
-| T3_shared_parameters | pass | 4 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id=apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| C9_phys_window_Q63 | pass | volume within physiological range | 428 L | ['Tab2:row4:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -198,43 +175,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_modelica.zip" download>Codeine_Ashraf2024_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_matlab.zip" download>Codeine_Ashraf2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_matlab_simbio.zip" download>Codeine_Ashraf2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_sbml.zip" download>Codeine_Ashraf2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_cellml.zip" download>Codeine_Ashraf2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-</div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Ashraf MW, Poikola S, Neuvonen M, Kiiski JI, Kontinen VK, Olkkola KT et al. Population Pharmacokinetic Quantification of CYP2D6 Activity in Codeine Metabolism in Ambulatory Surgical Patients for Model-Informed Precision Dosing. Clinical pharmacokinetics 63(11):1547–1560 (2024). [doi:10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9)
-
-**This record:** Pharmacolibrary, model `Codeine_Ashraf2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_codeine/Codeine_Ashraf2024_reference>
-
-```bibtex
-@misc{pharmacolibrary_CodeineAshraf2024reference,
-  title  = {{Pharmacolibrary model Codeine_Ashraf2024_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_codeine/Codeine_Ashraf2024_reference},
-  note   = {Parameters from doi:10.1007/s40262-024-01433-9},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Ashraf2024_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Ashraf2024_reference%0APaper%3A%20Ashraf_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Ashraf2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 19:30 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-20 08:52 UTC</sub>

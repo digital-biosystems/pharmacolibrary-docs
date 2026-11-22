@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;proguanil&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/&quot;},{&quot;label&quot;:&quot;Khwarg_2024 \u00b7 final_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # proguanil — `Proguanil_Khwarg2024_final_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:20 UTC (Rejected), but the paper was screened again on 2026-10-07 07:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The fu parameter for proguanil is dimensionless, so a dimension mismatch error occurred.
+> Proguanil’s intrinsic clearance for formation of cycloguanil, CLint 78.3 L/h, was rejected because its reported unit lacks the mass term required for metabolic clearance.
 
-<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Khwarg2024_final_model" status="rejected" stale="true" population="healthy Korean adults" measured-compound="proguanil" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Khwarg2024_final_model" status="rejected" stale="false" population="healthy Korean adults" measured-compound="proguanil" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism on the pharmacokinetics of proguanil in Korean: A semi-physiologic population pharmacokinetic approach. Clinical and translational science 17(12):e70103 (2024).
@@ -45,7 +45,7 @@ Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +55,13 @@ Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism o
 
 ### Reviewer guidance
 
-**The fu parameter for proguanil is dimensionless, so a dimension mismatch error occurred.**
+**Proguanil’s intrinsic clearance for formation of cycloguanil, CLint 78.3 L/h, was rejected because its reported unit lacks the mass term required for metabolic clearance.**
 
-The record lists fu (unbound fraction) as 0.416 with no unit. The review flagged a dimension mismatch on this structural parameter because the value lacked a unit definition. A second reader disagreed with the identification of proguanil as the primary analyte and dose compound, marking them as unknown. Extracted — proguanil: kabs 0.101 1/h, CL/F 33.5 L/h, V1/F 58.4 L, Q/F 41.4 L/h, V2/F 1.4e+03 L, CLint 78.3 L/h, fu 0.416; cycloguanil: ktr 1.03 1/h, CLfm 97 L/h.
+CLint links proguanil to cycloguanil and is defined as intrinsic metabolic ability, but 78.3 L/h has dimensions of volume per time rather than volume per mass per time. The reported unit could not be converted to SI, and the second reader supplied no CLint value. Extracted — proguanil: kabs 0.101 1/h, CL/F 33.5 L/h, V1/F 58.4 L, Q/F 41.4 L/h, V2/F 1.4e+03 L, CLint 78.3 L/h, fu 0.416; cycloguanil: ktr 1.03 1/h, CLfm 97 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has proguanil, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 

@@ -13,7 +13,7 @@
   "F": 0.9,
   "MM": 0.4514751,
   "Tlag": 0.0,
-  "VdPerKg": 0.0329,
+  "VdPerKg": 0.00047,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 4e-06,
@@ -21,12 +21,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 111852.50501002
+  "central.C": 13635.27054108216
  },
  "reference_peaks": {
-  "central.C": 1.163160566682185e-06
+  "central.C": 9.509837302237012e-06
  },
- "stop_time": 1468800.0,
+ "stop_time": 162000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

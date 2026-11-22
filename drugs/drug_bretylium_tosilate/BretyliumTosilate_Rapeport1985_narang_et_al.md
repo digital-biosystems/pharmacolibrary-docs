@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> The model incorrectly assigned a clearance of 15 ml/min to bretylium, as it actually represented creatinine clearance.
+> Bretylium’s total clearance of 15 ml/min is labeled as creatinine clearance, misclassifying a drug-disposition parameter as a biomarker.
 
 <div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Rapeport1985_narang_et_al" status="rejected" stale="false" population="adults" measured-compound="bretylium" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Rapeport WG. Clinical pharmacokinetics of bretylium. Clinical pharmacokinetics 1
 
 ### Reviewer guidance
 
-**The model incorrectly assigned a clearance of 15 ml/min to bretylium, as it actually represented creatinine clearance.**
+**Bretylium’s total clearance of 15 ml/min is labeled as creatinine clearance, misclassifying a drug-disposition parameter as a biomarker.**
 
-The record defines the clearance parameter for bretylium with a verbatim label explicitly identifying it as Creatinine clearance. Additionally, the model builder used default values for absorption rate rather than explicit estimates. The second reader could not verify the dose compound or primary analyte identity. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
+The model does not reproduce the paper's terminal half-life (paper 6, model 329). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's terminal half-life (paper 12, model 329). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The bretylium clearance parameter is labeled “Creatinine clearance (ml/min)” at 15 ml/min, although its stated meaning is total drug clearance; this biomarker label is the basis for the analyte-identity concern. The model also defaulted ka and Tlag, with ka not reported, and assumed F=1, Fm=1 and a first-order depot input; the second reader disputed apparent rather than mechanistic parameterization and did not identify the listed clearance or volume. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bretylium_tosilate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ### All parameter columns
 
@@ -149,6 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 | T1_t_half_alpha | reference | skipped | 25 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | fail | 6 | 328.9 | 54.81 | hours→SI vs simulated h |
 | T1_t_half_beta | reference | fail | 14 | 328.9 | 23.49 | hours→SI vs simulated h |

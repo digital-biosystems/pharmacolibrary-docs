@@ -26,7 +26,7 @@ This imidazole antifungal treats various fungal infections of the skin, oral muc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Mikamo_1997_reference](drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | — | 1-compartment (no model) | 3 | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Mikamo_1997_reference](drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | — | 1-compartment (no model) | 3 | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
 
 ## Pharmacodynamics (PD)
 
@@ -37,31 +37,6 @@ This imidazole antifungal treats various fungal infections of the skin, oral muc
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chen_2024_CpAdhE_2](drugs/drug_miconazole/pd_Chen_2024_CpAdhE_2.md) | CpAdhE enzyme activity (reverse reaction) ← miconazole · direct sigmoid Emax (Hill) effect | — | Chen H et al., Lower micromolar activity of the antifu…, International journal for p… (2024) | [10.1016/j.ijpddr.2024.100551](https://doi.org/10.1016/j.ijpddr.2024.100551) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chen_2024_HCT_8](drugs/drug_miconazole/pd_Chen_2024_HCT_8.md) | HCT-8 cell viability ← miconazole · direct sigmoid Emax (Hill) effect | — | Chen H et al., Lower micromolar activity of the antifu…, International journal for p… (2024) | [10.1016/j.ijpddr.2024.100551](https://doi.org/10.1016/j.ijpddr.2024.100551) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kikuchi_2005_HERG](drugs/drug_miconazole/pd_Kikuchi_2005_HERG.md) | HERG peak tail current ← miconazole · direct sigmoid Emax (Hill) effect | — | Kikuchi K et al., Blockade of HERG cardiac K+ current by…, British journal of pharmaco… (2005) | [10.1038/sj.bjp.0706095](https://doi.org/10.1038/sj.bjp.0706095) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=miconazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
-| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
-| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
-| — | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
-| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
-| — | testis | `CYP19A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CYP51A1 (inhibitor), KCND1 (inhibitor), KCNJ12 (inhibitor), KCNMA1 (inhibitor), NOS2 (inhibitor), NOS3 (inhibitor), NR1I2 (partial agonist).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -75,13 +50,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 02:10 | 12:58 | 1/0/0 | 2/0/0 | 0/0/0 | 202,829/16,407 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/3 | 4/0 | 0 |
+| 2026-10-04 02:10 | 12:58 | 1/0/0 | 5/0/0 | 0/0/0 | 202,829/16,407 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/3 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 118 matched, 55 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

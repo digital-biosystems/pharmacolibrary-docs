@@ -17,7 +17,7 @@ Kimura T, Sunakawa K, Matsuura N, Kubo H, Shimada S, Yago K. Population pharmaco
 
 ## Population and dosing
 
-**Population:** neonates · age group neonate · n = ?.
+**Population:** neonates · age group neonate.
 
 ## Model
 

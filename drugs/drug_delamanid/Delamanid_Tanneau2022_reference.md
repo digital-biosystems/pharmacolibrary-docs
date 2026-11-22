@@ -16,7 +16,7 @@ Tanneau L, Karlsson MO, Diacon AH, Shenje J, De Los Rios J, Wiesner L et al. Pop
 
 ## Population and dosing
 
-**Population:** adults with drug-resistant tuberculosis · age group adult · n = ... (truncated).
+**Population:** adults with drug-resistant tuberculosis · age group adult.
 
 ## Model
 

@@ -5,11 +5,11 @@
 
 # tianeptine — `Tianeptine_Szafarz2018_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-10-06 23:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tianeptine rejected for V1/F double correction and missing k21 value causing dimension mismatch.
+> The intercompartmental clearance parameter has units of inverse time, conflicting with its required volume-per-time dimension.
 
-<div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Szafarz2018_estimate" status="rejected" stale="true" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Szafarz2018_estimate" status="rejected" stale="false" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Szafarz M, Wencel A, Pociecha K, Fedak FA, Wlaź P, Wyska E. Pharmacokinetic study of tianeptine and its active metabolite MC5 in rats following different routes of administration using a novel liquid chromatography tandem mass spectrometry analytical method. Naunyn-Schmiedeberg's archives of pharmacology 391(2):185–196 (2018).
@@ -44,7 +44,7 @@ Szafarz M, Wencel A, Pociecha K, Fedak FA, Wlaź P, Wyska E. Pharmacokinetic stu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Szafarz M, Wencel A, Pociecha K, Fedak FA, Wlaź P, Wyska E. Pharmacokinetic stu
 
 ### Reviewer guidance
 
-**Tianeptine rejected for V1/F double correction and missing k21 value causing dimension mismatch.**
+**The intercompartmental clearance parameter has units of inverse time, conflicting with its required volume-per-time dimension.**
 
-The volume of distribution for metabolite MC5 is defined as V1/F, which conflicts with the reported absolute bioavailability of 0.694 as a double correction. The reverse elimination rate constant from the peripheral to central compartment, k21, was not extracted, resulting in a dimension mismatch on a structural parameter. Extracted — tianeptine: V1 0.761 L/kg, kel 2.79 h−1, Q 0.504 h−1, Fab 0.694; MC5: V1/F 2.97 L/kg.
+The parameter Q, representing intercompartmental clearance, is reported with units of h−1 rather than a clearance dimension like L/h. This dimensional inconsistency violates the structural requirements for a model parameter defined as a flow between compartments. Additionally, the record exhibits an apparent parameterization where bioavailability is already corrected in the volume and clearance terms, leading to a coherence violation. Extracted — tianeptine: V1 0.761 L/kg, kel 2.79 h−1, Q 0.504 h−1, Fab 0.694; MC5: V1/F 2.97 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tianeptine → mc5 (metabolism), the second reading not captured → not captured (not captured); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
